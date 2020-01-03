@@ -2858,7 +2858,6 @@
   	config.currentModule = module;
   }
 
-  // TODO: extract this to a new file alongside its related functions
   function module$1(name, options, executeNow) {
   	if (focused) {
   		return;
