@@ -1,15 +1,5 @@
 errors:
   - cesarsotovalero@gmail.com
-alerts:
-  suppress:
-    - on-found-puzzle
-    - on-lost-puzzle
-    - on-scope
-  github:
-    - cesarsotovalero
-format:
-  - short-title
-  - title-length=50
 tags:
   - pdd
   - bug
