@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84eb7893-4664-42de-a1da-fe5e33742591" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_posts/2017-11-14-git-fundamentals.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-10-16-zip-slip-attacks.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-10-16-zip-slip-attacks.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +15,11 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-10-16-zip-slip-attacks.md">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="361">
-                <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+              <first_editor relative-caret-position="38">
+                <caret line="1" column="158" selection-start-line="1" selection-start-column="158" selection-end-line="1" selection-end-column="158" />
               </first_editor>
               <second_editor />
             </state>
@@ -100,6 +101,8 @@
         <option value="$PROJECT_DIR$/aboutme.md" />
         <option value="$PROJECT_DIR$/_posts/2019-12-30-docker-for-java-developers.md" />
         <option value="$PROJECT_DIR$/_posts/2019-10-16-zip-slip-attacks.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-11-14-git-fundamentals.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -129,6 +132,17 @@
               <item name="cesarsotovalero" type="b2602c69:ProjectViewProjectNode" />
               <item name="cesarsotovalero" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cesarsotovalero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cesarsotovalero" type="462c0819:PsiDirectoryNode" />
+              <item name="presentations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cesarsotovalero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cesarsotovalero" type="462c0819:PsiDirectoryNode" />
+              <item name="presentations" type="462c0819:PsiDirectoryNode" />
+              <item name="msr-2019" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -251,7 +265,7 @@
       <workItem from="1576513098469" duration="7094000" />
       <workItem from="1577482684451" duration="3359000" />
       <workItem from="1577611150139" duration="655000" />
-      <workItem from="1578088375042" duration="572000" />
+      <workItem from="1578088375042" duration="2882000" />
     </task>
     <task id="LOCAL-00088" summary="fd">
       <created>1572532759366</created>
@@ -600,12 +614,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43012000" />
+    <option name="totallyTimeSpent" value="45322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14583333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14583333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -617,7 +631,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936507" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3306773" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3306773" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -709,16 +723,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CHANGELOG.md" />
     <entry file="file://$PROJECT_DIR$/LICENSE" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" selection-start-line="4" selection-end-line="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -884,8 +888,38 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-10-16-zip-slip-attacks.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="361">
-            <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+          <first_editor relative-caret-position="266">
+            <caret line="14" column="81" lean-forward="true" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-10-26-how-i-beat the-ielts-academic-with-just-a-month-of-self-training.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-11-14-git-fundamentals.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="38">
+            <caret line="1" column="158" selection-start-line="1" selection-start-column="158" selection-end-line="1" selection-end-column="158" />
           </first_editor>
           <second_editor />
         </state>
