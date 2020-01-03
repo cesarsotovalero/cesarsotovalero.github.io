@@ -430,7 +430,6 @@
 
 		},
 
-		// TODO: Do these belong in the API?
 		processSlides: processSlides,
 		convertSlides: convertSlides,
 		slidify: slidify
