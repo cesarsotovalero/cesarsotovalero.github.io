@@ -8,3 +8,7 @@ date: 2017/10/26
 ---
 
 @todo #1:5min Add base image the post.
+
+
+
+@todo #2:1h Add content to the post.
