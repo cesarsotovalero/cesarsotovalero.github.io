@@ -1,0 +1,183 @@
+---
+layout: page
+title: César Soto Valero
+subtitle: Ph.D. Student | Simplicity Lover | Nice Guy
+use-site-title: true
+---
+
+<!--
+bigimg: [
+'/img/intro5.jpg': "A goal without a good plan and hard work is just a wish.", 
+'/img/intro5.jpg': "Computer Science is not about machines, in the same way that astronomy is not about telescopes.", '/img/intro5.jpg': "The best defense against bugs is to make them impossible by design.",
+'/img/intro5.jpg': "The hardest single part of building a software system is deciding precisely what to build.",
+'/img/intro5.jpg': "What we call chaos is just patterns we haven’t recognized. What we call random is just patterns we can’t decipher.",
+'/img/intro5.jpg': "Use the source code, Luke!",
+]
+css: '/css/extend-home.css'
+-->
+
+> "It seems that perfection is attained, not when there is nothing more to add, but when there is nothing more to take away"
+> -- <cite>Antoine de Saint Exupéry</cite>
+
+---
+
+
+<h2 class="text-center">Current Work</h2>
+<div style="text-align: left"> 
+I'm a <a href="http://wasp-sweden.org/">WASP</a> Ph.D. student  in the <a href="https://www.kth.se/scs/software-engineering">Department of Software and Computer Systems </a> working with <a href="https://www.kth.se/profile/baudry">Benoit Baudry</a> at  KTH Royal Institute of Technology, Sweden. My current research focuses on static and dynamic program analysis for software debloating. In particular, on developing aggressive debloat techniques by monitoring applications' usage, e.g. by analyzing test suites and execution traces to guide the debloating process. 
+
+I also do knowledge-seeking research by extracting useful information from data stored in software repositories. For example, I'm interested in measuring the impact and pervasiveness of bloatware across large-scale software ecosystems. I'm keen to perform research that: (1) bring actionable insights to software engineering community, (2) provide novel knowledge about how modern software is currently being developed and maintained, and (3) provide tool support for software developers to improve the software quality.
+</div>
+
+<!-- The ultimate defense is to drive the complexity of the ultimate attack up so high that the cost of attack is too high to be worth performing -->
+
+<!-- Researcher / Developer / Data Scientist / Nice Guy -->
+
+
+<h2 class="text-center">Current Projects</h2>
+- _JDbl: Automatically Specializing Java Applications Through Dynamic Debloat_
+- _A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem_
+
+
+
+<h2 class="text-center">Organizations </h2>
+<p align="center">
+  
+<a href="https://www.kth.se"><img class="" title="KTH" src="../img/logos/kth_logo.png" alt="KTH" width="100" height="100"></a>
+ <a href="http://wasp-sweden.org"><img class="" title="WASP" src="../img/logos/wasp_logo.png" alt="WASP" width="331" height="100"></a> 
+ <a href="https://www.castor.kth.se"><img class="" title="CASTOR" src="../img/logos/castor_logo.png" alt="CASTOR" width="250" height="70"> </a> 
+
+ </p>
+ 
+ 
+
+
+
+<!--
+
+<div class="spacer"></div>
+
+<div class="row text-center">
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      {%- assign gh-user = "cesarsotovalero"-%}
+      {%- assign gh-project = "msr-challenge2018" -%}
+      <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x stack-color"></i>
+          <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4>Empirical Software Engineering</h4>
+        <hr class="seperator">
+        <p class="text-muted">Extracting useful knowledge from software repositories.</p>
+        <hr class="seperator">
+        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
+        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
+      </a>
+    </div>
+  </div>
+  
+  
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      {%- assign gh-project = "timeSeriesClassification" -%}
+      <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x stack-color"></i>
+          <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4>Analysis of Time Series Data</h4>
+        <hr class="seperator">
+        <p class="text-muted">Improving Weka for handling time series classification tasks.</p>
+        <hr class="seperator">
+        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
+        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
+      </a>
+    </div>
+  </div>
+  
+  
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+    {%- assign gh-project = "SSC" -%}
+      <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x stack-color"></i>
+          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4>Development of R Packages</h4>
+        <hr class="seperator">
+        <p class="text-muted">Building useful packages for data analysis with R.</p>
+        <hr class="seperator">
+        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
+        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
+      </a>
+    </div>
+  </div>
+</div>
+
+-->
+
+
+
+<!-- 
+<h1 class="text-center" style="text-decoration: underline;">Recent Posts</h1>
+<div class="spacer"></div>
+
+<div class="posts-list">
+  {% for post in site.posts limit:5 %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <h2 class="post-title">{{ post.title }}</h2>
+
+      {% if post.subtitle %}
+      <h3 class="post-subtitle">
+        {{ post.subtitle }}
+      </h3>
+      {% endif %}
+    </a>
+
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+
+    <div class="post-entry-container">
+      {% if post.image %}
+      <div class="post-image">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <img src="{{ post.image }}">
+        </a>
+      </div>
+      {% endif %}
+      <div class="post-entry">
+        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+        {% assign excerpt_word_count = post.excerpt | number_of_words %}
+        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if post.tags.size > 0 %}
+    <div class="blog-tags">
+      Tags:
+      {% if site.link-tags %}
+      {% for tag in post.tags %}
+      <a href="{{ site.baseurl }}/tags#{{ tag }}">{{ tag }}</a>
+      {% endfor %}
+      {% else %}
+        {{ post.tags | join: ", " }}
+      {% endif %}
+    </div>
+    {% endif %}
+
+   </article>
+  {% endfor %}
+</div>
+
+<ul class="pager main-pager">
+  <li>
+    <a href="{{site.baseurl}}/blog">See all posts </a>
+  </li>
+</ul>
+-->

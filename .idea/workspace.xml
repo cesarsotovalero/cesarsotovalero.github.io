@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84eb7893-4664-42de-a1da-fe5e33742591" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-10-16-zip-slip-attacks.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-10-16-zip-slip-attacks.md" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-10-16-zip-slip-attacks.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="361">
+                <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>presented</find>
+      <find>Stud</find>
+      <find>Research Questions</find>
+      <find>Research</find>
+      <find>new_</find>
+      <find>Currently</find>
+      <find>Hypo</find>
+      <find>Three</find>
+      <find>Top</find>
+      <find>up</find>
+      <find>upp</find>
+      <find>31</find>
+      <find>Finding</find>
+      <find>Conclusion</find>
+      <find>Soto Val</find>
+      <find>César's website</find>
+      <find>website</find>
+      <find>Analysis of</find>
+      <find>title</find>
+      <find>_config</find>
+      <find>/img</find>
+      <find>Current</find>
+      <find>cesarsotovalero</find>
+      <find>Teachin</find>
+      <find>Are alw</find>
+      <find>plugins</find>
+      <find>gems</find>
+      <find>title-img</find>
+      <find>My Pos</find>
+      <find>20</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg)</replace>
+      <replace>../reveal.js-3.8.0/</replace>
+      <replace>figures/</replace>
+      <replace>##</replace>
+      <replace>###</replace>
+      <replace>text-template</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/software.md" />
+        <option value="$PROJECT_DIR$/search.md" />
+        <option value="$PROJECT_DIR$/index.md" />
+        <option value="$PROJECT_DIR$/blog/index.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/presentations.md" />
+        <option value="$PROJECT_DIR$/service.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-12-8-the-cuban-revolution-explained.md" />
+        <option value="$PROJECT_DIR$/publications.md" />
+        <option value="$PROJECT_DIR$/topics.md" />
+        <option value="$PROJECT_DIR$/collaboration.md" />
+        <option value="$PROJECT_DIR$/collaborations.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/aboutme.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-12-30-docker-for-java-developers.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-10-16-zip-slip-attacks.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="240" />
+    <option name="y" value="135" />
+    <option name="width" value="1440" />
+    <option name="height" value="810" />
+  </component>
+  <component name="ProjectId" id="1SWyNXInsdYsAHzsYYbAGrv8zue" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cesarsotovalero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cesarsotovalero" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cesarsotovalero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cesarsotovalero" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/posts" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/presentations/msr-2019/figures/dataset" />
+      <recent name="$PROJECT_DIR$/presentations/msr-2019" />
+      <recent name="$PROJECT_DIR$/presentations/msr-2019/figures/rq5" />
+      <recent name="$PROJECT_DIR$/presentations" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/posts" />
+      <recent name="$PROJECT_DIR$/img/logos" />
+      <recent name="$PROJECT_DIR$/files/presentations" />
+      <recent name="$PROJECT_DIR$/presentations/msr-2019/css" />
+      <recent name="$PROJECT_DIR$/presentations/msr-2019/figures/rq1" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84eb7893-4664-42de-a1da-fe5e33742591" name="Default Changelist" comment="" />
+      <created>1552660953731</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552660953731</updated>
+      <workItem from="1552660956048" duration="1207000" />
+      <workItem from="1552662298663" duration="236000" />
+      <workItem from="1552665914020" duration="318000" />
+      <workItem from="1552666249668" duration="2836000" />
+      <workItem from="1553205589774" duration="868000" />
+      <workItem from="1553210333253" duration="2595000" />
+      <workItem from="1553263529998" duration="1466000" />
+      <workItem from="1553464189454" duration="548000" />
+      <workItem from="1553765227192" duration="5299000" />
+      <workItem from="1553797763402" duration="1645000" />
+      <workItem from="1553848746738" duration="990000" />
+      <workItem from="1553856334877" duration="1476000" />
+      <workItem from="1554191894977" duration="602000" />
+      <workItem from="1554203854001" duration="1050000" />
+      <workItem from="1554385751816" duration="1552000" />
+      <workItem from="1554639772904" duration="3254000" />
+      <workItem from="1555576766707" duration="35000" />
+      <workItem from="1557220127719" duration="8452000" />
+      <workItem from="1557264777667" duration="93339000" />
+      <workItem from="1559374884698" duration="1791000" />
+      <workItem from="1560715159087" duration="3953000" />
+      <workItem from="1561378601396" duration="497000" />
+      <workItem from="1561405312797" duration="6308000" />
+      <workItem from="1561478527672" duration="1868000" />
+      <workItem from="1563193915472" duration="2851000" />
+      <workItem from="1563820434730" duration="2934000" />
+      <workItem from="1567059388455" duration="634000" />
+      <workItem from="1569354022614" duration="13961000" />
+      <workItem from="1570448219964" duration="599000" />
+      <workItem from="1571148707254" duration="3808000" />
+      <workItem from="1571238283348" duration="1496000" />
+      <workItem from="1571693609902" duration="91000" />
+      <workItem from="1571693711288" duration="21000" />
+      <workItem from="1571693740518" duration="70000" />
+      <workItem from="1571693870554" duration="119000" />
+      <workItem from="1571737828382" duration="16000" />
+      <workItem from="1571846553040" duration="9000" />
+      <workItem from="1571846754793" duration="102000" />
+      <workItem from="1572000218965" duration="4000" />
+      <workItem from="1572021650192" duration="609000" />
+      <workItem from="1572404780920" duration="25000" />
+      <workItem from="1572404841968" duration="441000" />
+      <workItem from="1572409868291" duration="253000" />
+      <workItem from="1572410599003" duration="65000" />
+      <workItem from="1572410691703" duration="12269000" />
+      <workItem from="1572532117768" duration="30000" />
+      <workItem from="1572532252210" duration="15000" />
+      <workItem from="1572532603532" duration="2427000" />
+      <workItem from="1572846699637" duration="806000" />
+      <workItem from="1572869587334" duration="275000" />
+      <workItem from="1572870201321" duration="237000" />
+      <workItem from="1572870463533" duration="792000" />
+      <workItem from="1572871453884" duration="1075000" />
+      <workItem from="1573026121565" duration="1241000" />
+      <workItem from="1573223796996" duration="630000" />
+      <workItem from="1573806197489" duration="4335000" />
+      <workItem from="1574255664146" duration="47000" />
+      <workItem from="1574255719644" duration="358000" />
+      <workItem from="1574329800531" duration="1558000" />
+      <workItem from="1574865218983" duration="2515000" />
+      <workItem from="1574867762016" duration="36000" />
+      <workItem from="1574881707092" duration="5428000" />
+      <workItem from="1575153042308" duration="5739000" />
+      <workItem from="1576017303067" duration="23000" />
+      <workItem from="1576022637772" duration="1022000" />
+      <workItem from="1576066435246" duration="2773000" />
+      <workItem from="1576513098469" duration="7094000" />
+      <workItem from="1577482684451" duration="3359000" />
+      <workItem from="1577611150139" duration="655000" />
+      <workItem from="1578088375042" duration="572000" />
+    </task>
+    <task id="LOCAL-00088" summary="fd">
+      <created>1572532759366</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1572532759366</updated>
+    </task>
+    <task id="LOCAL-00089" summary="add presentation">
+      <created>1572846856075</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1572846856076</updated>
+    </task>
+    <task id="LOCAL-00090" summary="add ta">
+      <created>1572869850310</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1572869850310</updated>
+    </task>
+    <task id="LOCAL-00091" summary="change presentations">
+      <created>1572870430163</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1572870430164</updated>
+    </task>
+    <task id="LOCAL-00092" summary="change software">
+      <created>1572871237976</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1572871237977</updated>
+    </task>
+    <task id="LOCAL-00093" summary="fix">
+      <created>1572871636124</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1572871636125</updated>
+    </task>
+    <task id="LOCAL-00094" summary="fix">
+      <created>1572871745393</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1572871745393</updated>
+    </task>
+    <task id="LOCAL-00095" summary="fix">
+      <created>1572871892066</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1572871892066</updated>
+    </task>
+    <task id="LOCAL-00096" summary="fix">
+      <created>1572871905186</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1572871905186</updated>
+    </task>
+    <task id="LOCAL-00097" summary="add subreviewer">
+      <created>1573026478762</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1573026478762</updated>
+    </task>
+    <task id="LOCAL-00098" summary="change">
+      <created>1573026719281</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1573026719281</updated>
+    </task>
+    <task id="LOCAL-00099" summary="remove CV">
+      <created>1573223817681</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1573223817682</updated>
+    </task>
+    <task id="LOCAL-00100" summary="add publications">
+      <created>1573818000493</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1573818000494</updated>
+    </task>
+    <task id="LOCAL-00101" summary="add depclean logo">
+      <created>1574160431078</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1574160431078</updated>
+    </task>
+    <task id="LOCAL-00102" summary="add emojis">
+      <created>1574865683022</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1574865683023</updated>
+    </task>
+    <task id="LOCAL-00103" summary="add emojis to config">
+      <created>1574866113572</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1574866113572</updated>
+    </task>
+    <task id="LOCAL-00104" summary="add emojis to config">
+      <created>1574866240306</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1574866240307</updated>
+    </task>
+    <task id="LOCAL-00105" summary="add emojis to config">
+      <created>1574866488926</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1574866488926</updated>
+    </task>
+    <task id="LOCAL-00106" summary="add emojis to config">
+      <created>1574866682475</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1574866682475</updated>
+    </task>
+    <task id="LOCAL-00107" summary="add emojis to config">
+      <created>1574867046465</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1574867046465</updated>
+    </task>
+    <task id="LOCAL-00108" summary="add emojis to config">
+      <created>1574867405658</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1574867405658</updated>
+    </task>
+    <task id="LOCAL-00109" summary="add emojis to config">
+      <created>1574867783185</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1574867783186</updated>
+    </task>
+    <task id="LOCAL-00110" summary="refactor">
+      <created>1574887166127</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1574887166128</updated>
+    </task>
+    <task id="LOCAL-00111" summary="add posts filter">
+      <created>1574889673449</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1574889673449</updated>
+    </task>
+    <task id="LOCAL-00112" summary="add listing css">
+      <created>1574890009156</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1574890009156</updated>
+    </task>
+    <task id="LOCAL-00113" summary="add custom css to google search">
+      <created>1574890052568</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1574890052568</updated>
+    </task>
+    <task id="LOCAL-00114" summary="add custom css to google search">
+      <created>1574891836474</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1574891836474</updated>
+    </task>
+    <task id="LOCAL-00115" summary="add jdbl logo">
+      <created>1575153066166</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1575153066166</updated>
+    </task>
+    <task id="LOCAL-00116" summary="add post">
+      <created>1575888381923</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1575888381923</updated>
+    </task>
+    <task id="LOCAL-00117" summary="change post date">
+      <created>1575889965508</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1575889965508</updated>
+    </task>
+    <task id="LOCAL-00118" summary="change post date">
+      <created>1575890014871</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1575890014871</updated>
+    </task>
+    <task id="LOCAL-00119" summary="change depclean logo">
+      <created>1576022649841</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1576022649842</updated>
+    </task>
+    <task id="LOCAL-00120" summary="change logo">
+      <created>1576022901430</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1576022901430</updated>
+    </task>
+    <task id="LOCAL-00121" summary="change logo">
+      <created>1576023033806</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1576023033806</updated>
+    </task>
+    <task id="LOCAL-00122" summary="add presentation">
+      <created>1576066627210</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1576066627211</updated>
+    </task>
+    <task id="LOCAL-00123" summary="fix link">
+      <created>1576074059336</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1576074059336</updated>
+    </task>
+    <task id="LOCAL-00124" summary="fix link">
+      <created>1576074327402</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1576074327402</updated>
+    </task>
+    <task id="LOCAL-00125" summary="fix year">
+      <created>1576513334951</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1576513334952</updated>
+    </task>
+    <task id="LOCAL-00126" summary="fix year">
+      <created>1576534046239</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1576534046239</updated>
+    </task>
+    <task id="LOCAL-00127" summary="fix link">
+      <created>1576577809881</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1576577809881</updated>
+    </task>
+    <task id="LOCAL-00128" summary="fix link">
+      <created>1576577814639</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1576577814639</updated>
+    </task>
+    <task id="LOCAL-00129" summary="add collaboration">
+      <created>1576832059667</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1576832059667</updated>
+    </task>
+    <task id="LOCAL-00130" summary="add collaboration">
+      <created>1576832250157</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1576832250157</updated>
+    </task>
+    <task id="LOCAL-00131" summary="add collaboration">
+      <created>1576835918585</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1576835918585</updated>
+    </task>
+    <task id="LOCAL-00132" summary="add post">
+      <created>1577484852974</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1577484852975</updated>
+    </task>
+    <task id="LOCAL-00133" summary="fixt image">
+      <created>1577485001099</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1577485001099</updated>
+    </task>
+    <task id="LOCAL-00134" summary="fixt image">
+      <created>1577485365035</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1577485365035</updated>
+    </task>
+    <task id="LOCAL-00135" summary="fixt image">
+      <created>1577485706987</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1577485706987</updated>
+    </task>
+    <task id="LOCAL-00136" summary="fixt image">
+      <created>1577486489779</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1577486489779</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="43012000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14583333" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936507" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936507" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3306773" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="add ta" />
+    <MESSAGE value="change presentations" />
+    <MESSAGE value="change software" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="add subreviewer" />
+    <MESSAGE value="change" />
+    <MESSAGE value="remove CV" />
+    <MESSAGE value="add publications" />
+    <MESSAGE value="add depclean logo" />
+    <MESSAGE value="add emojis" />
+    <MESSAGE value="add emojis to config" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="add posts filter" />
+    <MESSAGE value="add listing css" />
+    <MESSAGE value="add custom css to google search" />
+    <MESSAGE value="add jdbl logo" />
+    <MESSAGE value="change post date" />
+    <MESSAGE value="change depclean logo" />
+    <MESSAGE value="change logo" />
+    <MESSAGE value="add presentation" />
+    <MESSAGE value="fix year" />
+    <MESSAGE value="fix link" />
+    <MESSAGE value="add collaboration" />
+    <MESSAGE value="add post" />
+    <MESSAGE value="fixt image" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixt image" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/fix.patch">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md" />
+    <entry file="file://$PROJECT_DIR$/LICENSE" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="68">
+            <caret line="4" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feed.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_plugins/_tag_gen.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_plugins/font_awesome.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/google_analytics.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/navbarlink.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="357">
+            <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="798" column="18" lean-forward="true" selection-start-line="798" selection-start-column="18" selection-end-line="798" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="51">
+            <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/logos/DepClean_logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/logos/jdbl_logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentations.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="15" column="242" selection-start-line="15" selection-start-column="242" selection-end-line="15" selection-end-column="242" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-12-8-the-cuban-revolution-explained.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="293">
+            <caret line="11" column="929" selection-start-line="11" selection-start-column="929" selection-end-line="11" selection-end-column="929" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publications.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="204">
+            <caret line="7" column="620" selection-start-line="7" selection-start-column="609" selection-end-line="7" selection-end-column="620" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/software.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collaborations.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/404.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aboutme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="527">
+            <caret line="25" selection-start-line="25" selection-end-line="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-12-30-docker-for-java-developers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/posts/zipper.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-10-16-zip-slip-attacks.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="361">
+            <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
