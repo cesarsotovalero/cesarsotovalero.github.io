@@ -81,6 +81,7 @@ This code shows how the `unpack` method is implemented. We observe in line #4 th
 
 There are many tools freely available to create this type of zip exploit files. For instance, the [Evilarc](https://github.com/ptoomey3/evilarc) Python script can be used to zip an `evil.sh` batch executable with the following parameters: `python evilarc.py -d 10 -o unix evil.sh`. Once unpacked by the victim, the malicious `evil.sh` batch script with be copied $10$ directories up in the file system were normal users do not have any access.
 
- ## Conclusion
+Conclusion
+========
  
  As we observed, detecting a system with the Zip Slip vulnerability that  was already exploited is very hard, as the result of the exploit  consists of files on the system that can be located elsewhere. Besides,  zip files could either be uploaded to the application or downloaded from  within, so both traffic sources should be monitored. The  best way to avoid this exploit is by preventing it from occurring,  performing the proper unzip checking and keeping dependencies up to  date.
