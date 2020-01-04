@@ -3,12 +3,8 @@ layout: post
 title: Git fundamentals
 subtitle: The must know Git commands for every software developer
 published: false
-image: ../img/IELTS.jpg
+image: ../img/logos/git_logo.png
 date: 2017/10/26
 ---
-
-@todo #1:5min Add base image the post.
-
-
 
 @todo #2:1h Add content to the post.
