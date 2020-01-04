@@ -79,7 +79,7 @@ configuration file as is shown below.
 
 This code shows how the `unpack` method is implemented. We observe in line #4 that the concatenation of the destination directory and the ZipEntry path name can cause issues since there is no validation that the files stay within the destination directory. For example, an attacker can create a malicious zip file containing files with directory traversal characters in their embedded path and gain access to certain directories or folders in the file system outside the intended folder and can invoke scripts of overwrite specific files.
 
-There are many tools freely available to create this type of zip exploit files. For instance, the [Evilarc](https://github.com/ptoomey3/evilarc) Python script can be used to zip an `evil.sh` batch executable with the following parameters: `python evilarc.py -d 10 -o unix evil.sh`. Once unpacked by the victim, the malicious `evil.sh` batch script with be copied $10$ directories up in the file system were normal users do not have any access.
+There are many tools freely available to create this type of zip exploit files. For instance, the [Evilarc](https://github.com/ptoomey3/evilarc) Python script can be used to zip an `evil.sh` batch executable with the following parameters: `python evilarc.py -d 10 -o unix evil.sh`. Once unpacked by the victim, the malicious `evil.sh` batch script with be copied 10 directories up in the file system were normal users do not have any access.
 
 Conclusion
 ========
