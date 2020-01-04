@@ -9,9 +9,9 @@ As a researcher, I ~~am forced to~~ write papers for journals and conferences. M
 
 ### 2020
 
-<a href="https://arxiv.org/pdf/1908.09757.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) Nicolas Harrand, Amine Benelallam, **César Soto-Valero**, Olivier Barais, Benoit Baudry. [Analyzing 2.3 Million Maven Dependencies to Reveal an Essential Core in APIs](https://arxiv.org/abs/1908.09757). In arXiv.
+<a href="https://arxiv.org/pdf/1908.09757.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) Nicolas Harrand, Amine Benelallam, **César Soto-Valero**, Olivier Barais, Benoit Baudry. [Analyzing 2.3 Million Maven Dependencies to Reveal an Essential Core in APIs](https://arxiv.org/abs/1908.09757). In _arXiv_.
 
-<a href=""><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg)  Raúl Reina, David Barbado, **César Soto-Valero**, José M. Sarabia and Alba Roldán. [Evaluation of the Bilateral Function in Para-athletes with Spastic Hemiplegia: a Model-based Clustering Approach](). In Journal of Science and Medicine in Sport.
+<a href=""><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg)  Raúl Reina, David Barbado, **César Soto-Valero**, José M. Sarabia and Alba Roldán. [Evaluation of the Bilateral Function in Para-athletes with Spastic Hemiplegia: a Model-based Clustering Approach](). In _Journal of Science and Medicine in Sport_.
 
 ### 2019
 
@@ -22,6 +22,8 @@ As a researcher, I ~~am forced to~~ write papers for journals and conferences. M
 <a href="https://www.researchgate.net/publication/330439403_The_Maven_Dependency_Graph_a_Temporal_Graph-based_Representation_of_Maven_Central"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg) <img src="../img/award.png" height="30px"> Amine Benelallam, Nicolas Harrand, **César Soto-Valero**, Benoit Baudry, Olivier Barais. [The Maven Dependency Graph: a Temporal Graph-based Representation of Maven Central](https://2019.msrconf.org/track/msr-2019-Data-Showcase#event-overview). In _16th International Conference on Mining Software Repositories_, Montreal, Canada, 2019. DOI: 10.1109/MSR.2019.00060. 
 
 <a href="https://content.sciendo.com/view/journals/ijcss/18/3/article-p69.xml"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) **César Soto-Valero**, Miguel Pic. [Assessing the Causal Impact of the 3-point Per Victory Scoring System in the Competitive Balance of LaLiga](https://content.sciendo.com/view/journals/ijcss/18/3/article-p69.xml). _International Journal of Computer Science in Sport_, 18(3), DOI: 10.2478/ijcss-2019-0018. 
+
+<a href="http://rcm.insmet.cu/index.php/rcm/article/download/462/677"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) Ismabel María Domínguez-Hurtado, **César Soto-Valero**, César Soto-Valero, Amaury Machado-Montes De Oca, Yindra Salmón-Cuspinera. [Influencia de Factores Meteorológicos en la Acuicultura de Aguas Interiores](http://rcm.insmet.cu/index.php/rcm/article/view/462). _Revista Cubana de Meteorología_, 25(2). 
 
 ### 2018
 
