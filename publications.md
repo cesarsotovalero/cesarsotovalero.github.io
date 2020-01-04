@@ -23,7 +23,7 @@ As a researcher, I ~~am forced to~~ write papers for journals and conferences. M
 
 <a href="https://content.sciendo.com/view/journals/ijcss/18/3/article-p69.xml"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) **César Soto-Valero**, Miguel Pic. [Assessing the Causal Impact of the 3-point Per Victory Scoring System in the Competitive Balance of LaLiga](https://content.sciendo.com/view/journals/ijcss/18/3/article-p69.xml). _International Journal of Computer Science in Sport_, 18(3), DOI: 10.2478/ijcss-2019-0018. 
 
-<a href="http://rcm.insmet.cu/index.php/rcm/article/download/462/677"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) Ismabel María Domínguez-Hurtado, **César Soto-Valero**, César Soto-Valero, Amaury Machado-Montes De Oca, Yindra Salmón-Cuspinera. [Influencia de Factores Meteorológicos en la Acuicultura de Aguas Interiores](http://rcm.insmet.cu/index.php/rcm/article/view/462). _Revista Cubana de Meteorología_, 25(2). 
+<a href="http://rcm.insmet.cu/index.php/rcm/article/download/462/677"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) Ismabel María Domínguez-Hurtado, **César Soto-Valero**, Amaury Machado-Montes De Oca, Yindra Salmón-Cuspinera. [Influencia de Factores Meteorológicos en la Acuicultura de Aguas Interiores](http://rcm.insmet.cu/index.php/rcm/article/view/462). _Revista Cubana de Meteorología_, 25(2), 151-166. 
 
 ### 2018
 
