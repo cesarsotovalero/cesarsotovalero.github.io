@@ -710,7 +710,6 @@ Furthermore you can also listen to these changes in state via JavaScript:
 
 ```javascript
 Reveal.addEventListener( 'somestate', function() {
-	// TODO: Sprinkle magic
 }, false );
 ```
 
