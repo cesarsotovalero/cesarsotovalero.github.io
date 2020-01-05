@@ -31,7 +31,6 @@ I started my self-training plan, and a couple of months later, I had jumped up t
 9.	[Free your mind](#free-your-mind)
 10.	[Enjoy](#enjoy)
 
-
 ## Start as soon as possible
 There is no such thing as a good "starting time" to become a competitive programmer. It is a long process, so as soon as you start developing and algorithmic thinking, then much better for you to become a strong programmer. I believe that programming should be taught to elementary schoolers. Just think about it, the best competitive programmers, such as the prodigious [Gennady Korotkevich](https://en.wikipedia.org/wiki/Gennady_Korotkevich) started at a very young age. 
 
