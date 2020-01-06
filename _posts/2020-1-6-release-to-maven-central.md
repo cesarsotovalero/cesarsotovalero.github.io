@@ -185,18 +185,18 @@ After the the approval of the ticket, you need to add additional information to 
     ```xml
     <build>
     <plugins>
-    ...
-    <plugin>
-      <groupId>org.sonatype.plugins</groupId>
-      <artifactId>nexus-staging-maven-plugin</artifactId>
-      <version>1.6.7</version>
-      <extensions>true</extensions>
-      <configuration>
-         <serverId>ossrh</serverId>
-         <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-         <autoReleaseAfterClose>true</autoReleaseAfterClose>
-      </configuration>
-    </plugin>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.7</version>
+        <extensions>true</extensions>
+        <configuration>
+           <serverId>ossrh</serverId>
+           <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+           <autoReleaseAfterClose>true</autoReleaseAfterClose>
+        </configuration>
+      </plugin>
+    </plugins>
     ```
 
 ## 3. Release to Maven Central
