@@ -4,14 +4,14 @@ title: Releasing to Maven Central
 subtitle: A three-steps guide
 published: true
 image: ../img/posts/maven-central.png
-date: 2019/2/14
+date: 2020/2/14
 ---
 
 ## Introduction
 
 Maven Central is the de-facto repository of software artifacts that compile to the JVM. In this post, I'll describe the process of releasing a new artifact there. 
 
-### 1. Create a JIRA ticket in Sonatype
+## 1. Create a JIRA ticket in Sonatype
 
 First, you need to have a JIRA account and submit a ticket requesting for a project namespace (Group Id):
 
@@ -24,7 +24,7 @@ Below is an example of ticket submitted to creat a repository for the namespace 
 
 The ticked review is a manual process, it normally takes less than 2 business days.
 
-### 2. Configuring the POM
+## 2. Configuring the POM
 
 After the the approval of the ticket, you need to add additional information to the POM of the Maven project/module to be released:
 
@@ -195,21 +195,22 @@ After the the approval of the ticket, you need to add additional information to 
          <serverId>ossrh</serverId>
          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
          <autoReleaseAfterClose>true</autoReleaseAfterClose>
-      </conf
+      </configuration>
+    </plugin>
     ```
 
-### 3. Release to Maven Central
+## 3. Release to Maven Central
 
 Run a deployment to OSSRH and an automated release to the Central Repository with the following command:
 
 ```bash
-mvn clean deploy
+  mvn clean deploy
 ```
 
 After this, Central sync will be activated for your namespace. After you successfully release, your component will be published to Maven Central, typically within 10 minutes, though updates to [search.maven.org](https://search.maven.org) can take up to two hours.
 
 
-### References
+## References
 
 - [Apache Maven Instructions](https://maven.apache.org/repository/guide-central-repository-upload.html)
 - [OSSRH Guide](https://central.sonatype.org/pages/ossrh-guide.html)
