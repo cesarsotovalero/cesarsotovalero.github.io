@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Releasing to Maven Central
+title: Deploying to Maven Central
 subtitle: A three-steps guide
 published: true
-image: ../img/posts/maven-central.png
-date: 2020/2/14
+image: ../img/posts/maven_central.png
+date: 2020/1/06
 ---
 
 ## Introduction
 
-Maven Central is the de-facto repository of software artifacts that compile to the JVM. In this post, I'll describe the process of releasing a new artifact there. 
+Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM. In this post, I'll describe the process of releasing a new artifact in Maven Central following an step-by-step approach. 
 
 ## 1. Create a JIRA ticket in Sonatype
 
-First, you need to have a JIRA account and submit a ticket requesting for a project namespace (Group Id):
+First, you need to create a JIRA account and submit a ticket there requesting for a project namespace to Sonatype (Group Id):
 
 1.  [Create a JIRA account](https://issues.sonatype.org/secure/Signup!default.jspa)
 2.  [Create a New Project ticket](https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134)
 
-Below is an example of ticket submitted to creat a repository for the namespace `se.kth.castor`
+Below is an example of a ticket that I created requesting a repository for the namespace `se.kth.castor`
 
 ![](../img/posts/sonatype_screeshot.png)
 
@@ -26,9 +26,9 @@ The ticked review is a manual process, it normally takes less than 2 business da
 
 ## 2. Configuring the POM
 
-After the the approval of the ticket, you need to add additional information to the POM of the Maven project/module to be released:
+After the approval of the ticket, you need to add additional information to the POM of the Maven project or module to be deployed. Follow the steps below exactly as they are.
 
-1. Choose correct coordinates:
+1. Choose appropriate coordinates as explained [here](https://central.sonatype.org/pages/choosing-your-coordinates.html):
 
     ```xml
     <groupId>com.example.applications</groupId>
@@ -36,7 +36,7 @@ After the the approval of the ticket, you need to add additional information to 
     <version>1.4.7</version>
     ```
  
-2.  Add project name, description and URL:
+2.  Add your project name, description, and URL:
 
     ```xml
     <name>Example Application</name>
@@ -53,7 +53,7 @@ After the the approval of the ticket, you need to add additional information to 
       </license>
     </licenses>
     ```
-4. Add developer/s information:
+4. Add information about developer/s :
 
     ```xml
      <developers>
@@ -66,7 +66,7 @@ After the the approval of the ticket, you need to add additional information to 
       </developers>
     ```
 
-5. Add SCM information:
+5. Add SCM information, the following example uses GitHub:
 
     ```xml
     <scm>
@@ -76,7 +76,7 @@ After the the approval of the ticket, you need to add additional information to 
     </scm>
     ```
     
-6. Add distribution management and authentication via the `nexus-staging-maven-plugin`:
+6. Add distribution management and authentication to Sonatype via the `nexus-staging-maven-plugin`:
 
     ```xml
     <distributionManagement>
@@ -103,7 +103,7 @@ After the the approval of the ticket, you need to add additional information to 
     </build>
     ```
     
- 7. Add javadoc and sources attachments:
+ 7. Add javadoc and sources attachments using the `maven-javadoc-plugin` and  `maven-source-plugin` :
  
     ```xml
     <build>
@@ -138,7 +138,7 @@ After the the approval of the ticket, you need to add additional information to 
     </build>
     ```
     
- 8. Add GPG signed components:
+ 8. Add GPG signed components using the `maven-gpg-plugin`:
  
      ```xml
     <build>
@@ -161,7 +161,7 @@ After the the approval of the ticket, you need to add additional information to 
     </build>
     ```
 
-9. Follow [this instructions](https://central.sonatype.org/pages/working-with-pgp-signatures.html) to encrypt your artifact with [gpg2](https://linux.die.net/man/1/gpg2) and distribute your public key to a key server (e.g., [http://keys.gnupg.net](http://keys.gnupg.net)). Choose a passphrase to to protect your secret key. Then add your gpg credentials with your passphrase to your Maven`settings.xml` file:
+9. Follow [this instructions](https://central.sonatype.org/pages/working-with-pgp-signatures.html) to encrypt your artifact with [gpg2](https://linux.die.net/man/1/gpg2) and distribute your public key to a key server (e.g., [http://keys.gnupg.net](http://keys.gnupg.net)). Do not forget to choose a passphrase to protect your secret key. Then add your gpg credentials with your passphrase to your Maven`settings.xml` file locally:
 
      ```xml
     <settings>
@@ -207,11 +207,12 @@ Run a deployment to OSSRH and an automated release to the Central Repository wit
   mvn clean deploy
 ```
 
-After this, Central sync will be activated for your namespace. After you successfully release, your component will be published to Maven Central, typically within 10 minutes, though updates to [search.maven.org](https://search.maven.org) can take up to two hours.
+After this, Central sync will be activated for your namespace. After you successfully deploy, your component will be published to Maven Central, typically within 10 minutes, though updates to [search.maven.org](https://search.maven.org) can take up to two hours.
 
+If you have any issue, let me know in the comments below. Happy deploying  :smile:
 
 ## References
 
-- [Apache Maven Instructions](https://maven.apache.org/repository/guide-central-repository-upload.html)
+- [Apache Maven Official Instructions](https://maven.apache.org/repository/guide-central-repository-upload.html)
 - [OSSRH Guide](https://central.sonatype.org/pages/ossrh-guide.html)
 - [Tutorial on YouTube](https://www.youtube.com/watch?v=bxP9IuJbcDQ)
