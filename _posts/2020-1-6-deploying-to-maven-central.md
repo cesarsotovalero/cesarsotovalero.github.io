@@ -3,7 +3,7 @@ layout: post
 title: Deploying to Maven Central
 subtitle: A three-steps guide
 published: true
-image: ../img/posts/maven_central_img.jpg
+image: ../img/posts/maven_central_dep.jpg
 date: 2020/1/06
 ---
 
