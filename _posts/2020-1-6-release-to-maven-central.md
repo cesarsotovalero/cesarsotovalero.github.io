@@ -13,7 +13,7 @@ Maven Central is the de-facto repository of software artifacts that compile to t
 
 ### 1. Create a JIRA ticket in Sonatype
 
-First, you need to have a JIRA account to submit a ticket to request for a project namespace (Group Id):
+First, you need to have a JIRA account and submit a ticket requesting for a project namespace (Group Id):
 
 1.  [Create a JIRA account](https://issues.sonatype.org/secure/Signup!default.jspa)
 2.  [Create a New Project ticket](https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134)
