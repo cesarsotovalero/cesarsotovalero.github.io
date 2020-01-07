@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Program debloating
-subtitle: Literature review 
+title: Software debloating tools
+subtitle: Living tool list
 published: true
 image: ../img/debloating.png
-date: 2018/09/24
+date: 2020/1/07
 ---
+
+## Introduction
 
 List of articles and resources related to program debloating and software specialization. 
 
