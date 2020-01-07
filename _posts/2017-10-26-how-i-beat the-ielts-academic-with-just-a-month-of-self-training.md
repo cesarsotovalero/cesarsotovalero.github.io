@@ -11,7 +11,7 @@ The International English Language Testing System (IELTS) is one of the major En
 
 There are two versions of the test, **IELTS Academic** and **IELTS General Training**. The first is intended for those who want to enroll in universities and other institutions for higher education, while the latter is for test takers who want to work, study at a secondary school or migrate to an English-speaking country. In this blog post, I will refer to the Academic version of the test.
 
-## Table of contents
+## TOC
 1. [The test](#the-test)
   - [Listening](#listening)
   - [Reading](#reading)

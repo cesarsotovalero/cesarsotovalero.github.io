@@ -7,18 +7,27 @@ image: ../img/posts/maven_central_dep762pX762p.jpg
 date: 2020/1/06
 ---
 
+> "Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest and oldest archives of software libraries" *― The Maven community*
+
 ## Introduction
 
 Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM. In this post, I'll describe the process of releasing a new artifact in Maven Central following an step-by-step approach. 
 
+## TOC
+
+* [1. Create a JIRA ticket in Sonatype](#1-create-a-jira-ticket-in-sonatype)
+* [2. Configuring the POM](#2-configuring-the-pom)
+* [3. Release to Maven Central](#3-release-to-maven-central)
+* [References](#references)
+
 ## 1. Create a JIRA ticket in Sonatype
 
-First, you need to create a JIRA account and submit a ticket there requesting for a project namespace to Sonatype (Group Id):
+First, you need to create a JIRA account and submit a ticket there requesting for a project namespace in Sonatype (aka, GroupId):
 
 1.  [Create a JIRA account](https://issues.sonatype.org/secure/Signup!default.jspa)
 2.  [Create a New Project ticket](https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134)
 
-Below is an example of a ticket that I created requesting a repository for the namespace `se.kth.castor`
+A staging repository is already configured for the requested GroupId, you need to find someone with a deployer role that comment on the ticket to verify your request. Below is an example of a ticket that I created requesting a repository for the namespace `se.kth.castor`
 
 ![](../img/posts/sonatype_screeshot.png)
 
@@ -201,7 +210,7 @@ After the approval of the ticket, you need to add additional information to the 
 
 ## 3. Release to Maven Central
 
-Run a deployment to OSSRH and an automated release to the Central Repository with the following command:
+Finally, run a deployment to OSSRH and an automated release to the Central Repository with the following command:
 
 ```bash
   mvn clean deploy

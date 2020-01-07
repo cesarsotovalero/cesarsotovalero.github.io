@@ -19,7 +19,7 @@ I remembered my first ACM-ICPC contest in 2009. It was a mess for me. With only 
 
 I started my self-training plan, and a couple of months later, I had jumped up to the first ten places in my university. Surprisingly, after four years without submitting a problem to the [COJ](http://coj.uci.cu/),  my [user profile](http://coj.uci.cu/user/useraccount.xhtml?username=CeSaR_uclv) is still in the top 500 contestants from my country. In this post, I want to share some insights and things that I learned when I was a competitive programmer.  
 
-## The step-by-step list for starters
+## TOC
 1.	[Start as soon as possible](#start-as-soon-as-possible)
 2.	[Master the basic first](#master-the-basic-first)
 3.	[Choose an adequate training plan and follow it](#choose-an-adequate-training-plan-and-follow-it)
