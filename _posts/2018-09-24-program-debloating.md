@@ -15,7 +15,7 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 
 <details> <summary>Abstract</summary>
 Present a comprehensive study of software bloat in Android applications, and categorize them into two types, compile-time  redundancy  and  install-time  redundancy. It also propose  a  static  analysis  based  approach  to  identifying and  removing  software  bloat  from  Android  applications. Associated PhD thesis: .
- </details
+ </details>
 
 - [COMPSAC'16] **JRed: Program Customization and Bloatware Mitigation Based on Static Analysis** [[link]](https://faculty.ist.psu.edu/wu/papers/jred-compsac16.pdf) - Proposes the JRed tool, which is built on top of the Soot framework to trim unused code from both Java applications and JRE automatically. It uses SPARK, a flexible points-to analysis framework for Java, to facilitate call graph construction. Evaluation was conducted using the DaCapo benchmark according to various criteria: code size, code complexity, memory footprint, execution and garbage collection time, and security. The experimental results show that, Java application size can be reduced by 44.5% on average and the JRE code can be reduced by more than 82.5% on average. The code complexity is significantly reduced according to a set of well-known metrics. Furthermore, we report that by trimming redundant code, 48.6% of the known security vulnerabilities in the Java Runtime Environment JRE 6 update 45 has been removed. Associated PhD thesis: [[link]](https://faculty.ist.psu.edu/wu/papers/YufeiJiang-dissertation.pdf).
 
