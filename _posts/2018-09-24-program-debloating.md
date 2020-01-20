@@ -22,7 +22,7 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 * [2010](#2010)
 * [2006](#2006)
 * [2002](#2002)
-* [External web resources](#external-web-resources)
+* [Additional web resources](#external-web-resources)
 
 ### 2019 
 

@@ -13,6 +13,6 @@ I develop robust software prototypes to support my research. I also contribute t
 
 ### Related software
 
-- [Proguard](https://www.guardsquare.com/en/products/proguard) :Shrinker, optimizer and obfuscator of Java Bytecode.
-- [R8](https://r8.googlesource.com/r8): Google substitute of Proguard.
+
 - [CausalImpact](https://github.com/google/CausalImpact): Causal inference on time series.
+- [Dependency-Track](https://github.com/DependencyTrack/dependency-track)
