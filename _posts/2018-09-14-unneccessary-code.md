@@ -3,7 +3,7 @@ layout: post
 title: Unnecessary code
 subtitle: Clarifying the concept 
 published: true
-image: ../img/codecode.png
+image: ../blog/img/codecode.png
 date: 2018/09/14
 ---
 

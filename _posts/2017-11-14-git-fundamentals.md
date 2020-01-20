@@ -3,7 +3,7 @@ layout: post
 title: Git fundamentals
 subtitle: The must-know git commands for software developers
 published: true
-image: ../img/logos/git_logo.png
+image: ../blog/img/git_logo.png
 date: 2017/10/26
 ---
 

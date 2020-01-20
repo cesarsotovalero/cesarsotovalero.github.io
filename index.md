@@ -42,84 +42,12 @@ I also do knowledge-seeking research by extracting useful information from data 
 
 <h2 class="text-center">Organizations </h2>
 <p align="center">
-  
 <a href="https://www.kth.se"><img class="" title="KTH" src="../img/logos/kth_logo.png" alt="KTH" width="100" height="100"></a>
  <a href="http://wasp-sweden.org"><img class="" title="WASP" src="../img/logos/wasp_logo.png" alt="WASP" width="331" height="100"></a> 
  <a href="https://www.castor.kth.se"><img class="" title="CASTOR" src="../img/logos/castor_logo.png" alt="CASTOR" width="250" height="70"> </a> 
-
  </p>
  
  
-
-
-
-<!--
-
-<div class="spacer"></div>
-
-<div class="row text-center">
-  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
-    <div class="project-card">
-      {%- assign gh-user = "cesarsotovalero"-%}
-      {%- assign gh-project = "msr-challenge2018" -%}
-      <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
-        <span class="fa-stack fa-4x">
-          <i class="fa fa-circle fa-stack-2x stack-color"></i>
-          <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
-        </span>
-        <h4>Empirical Software Engineering</h4>
-        <hr class="seperator">
-        <p class="text-muted">Extracting useful knowledge from software repositories.</p>
-        <hr class="seperator">
-        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
-        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
-      </a>
-    </div>
-  </div>
-  
-  
-  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
-    <div class="project-card">
-      {%- assign gh-project = "timeSeriesClassification" -%}
-      <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
-        <span class="fa-stack fa-4x">
-          <i class="fa fa-circle fa-stack-2x stack-color"></i>
-          <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
-        </span>
-        <h4>Analysis of Time Series Data</h4>
-        <hr class="seperator">
-        <p class="text-muted">Improving Weka for handling time series classification tasks.</p>
-        <hr class="seperator">
-        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
-        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
-      </a>
-    </div>
-  </div>
-  
-  
-  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
-    <div class="project-card">
-    {%- assign gh-project = "SSC" -%}
-      <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
-        <span class="fa-stack fa-4x">
-          <i class="fa fa-circle fa-stack-2x stack-color"></i>
-          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
-        </span>
-        <h4>Development of R Packages</h4>
-        <hr class="seperator">
-        <p class="text-muted">Building useful packages for data analysis with R.</p>
-        <hr class="seperator">
-        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
-        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
-      </a>
-    </div>
-  </div>
-</div>
-
--->
-
-
-
 <!-- 
 <h1 class="text-center" style="text-decoration: underline;">Recent Posts</h1>
 <div class="spacer"></div>

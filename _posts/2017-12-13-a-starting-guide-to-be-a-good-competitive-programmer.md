@@ -3,7 +3,7 @@ layout: post
 title: A starting guide to be a good competitive programmer
 subtitle: Because learning is more important than competing
 published: true
-image: ../img/competitive-programming-brain.png
+image: ../blog/img/competitive-programming-brain.png
 date: 2017/12/15
 ---
 
