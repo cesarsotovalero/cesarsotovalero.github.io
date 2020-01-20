@@ -11,7 +11,7 @@ As a researcher, I ~~am forced to~~ write papers for journals and conferences. M
 
 <a href="https://arxiv.org/pdf/1908.09757.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) Nicolas Harrand, Amine Benelallam, **César Soto-Valero**, Olivier Barais, Benoit Baudry. [Analyzing 2.3 Million Maven Dependencies to Reveal an Essential Core in APIs](https://arxiv.org/abs/1908.09757). In _arXiv_.
 
-<a href=""><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg)  Raúl Reina, David Barbado, **César Soto-Valero**, José M. Sarabia and Alba Roldán. [Evaluation of the Bilateral Function in Para-athletes with Spastic Hemiplegia: a Model-based Clustering Approach](). In _Journal of Science and Medicine in Sport_.
+<a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/raw/master/files/publications/SOTO-VALERO_C._JSAMS.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg)  Raúl Reina, David Barbado, **César Soto-Valero**, José M. Sarabia and Alba Roldán. [Evaluation of the Bilateral Function in Para-athletes with Spastic Hemiplegia: a Model-based Clustering Approach](https://www.sciencedirect.com/science/article/pii/S1440244019306620). In _Journal of Science and Medicine in Sport_.
 
 ### 2019
 
