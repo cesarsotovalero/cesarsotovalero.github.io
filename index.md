@@ -53,7 +53,7 @@ I also do knowledge-seeking research by extracting useful information from data 
 <div class="spacer"></div>
 
 <div class="posts-list">
-  {% for post in site.posts limit:5 %}
+  {% for post in site.posts limit:10 %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
       <h2 class="post-title">{{ post.title }}</h2>
