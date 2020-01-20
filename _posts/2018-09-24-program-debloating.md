@@ -11,6 +11,7 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 
 ## TOC
 
+* [2019](#2019)
 * [2018](#2018)
 * [2017](#2017)
 * [2016](#2016)
@@ -22,6 +23,96 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 * [2006](#2006)
 * [2002](#2002)
 * [External web resources](#external-web-resources)
+
+### 2019 
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **Unnecessarily identifiable: Quantifying the fingerprintability of browser extensions due to bloat** [[link]](http://dl.acm.org/citation.cfm?doid=3308558.3313458) 
+
+<details> 
+In this paper, we investigate to what extent the page modifications that make browser extensions fingerprintable are necessary for their operation. We characterize page modifications that are completely unnecessary for the extension's functionality as extension bloat. By analyzing 58,034 extensions from the Google Chrome store, we discovered that 5.7% of them were unnecessarily identifiable because of extension bloat. To protect users against unnecessary extension fingerprinting due to bloat, we describe the design and implementation of an in-browser mechanism that provides coarse-grained access control for extensions on all websites. The proposed mechanism and its built-in policies, does not only protect users from fingerprinting, but also offers additional protection against malicious extensions exfiltrating user data from sensitive websites.
+</details>
+
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **Binary Debloating for Security via Demand Driven Loading
+** [[link]](http://arxiv.org/abs/1902.06570) 
+
+<details> 
+Modern software systems heavily use C/C++ based libraries. Because of the weak memory model of C/C++, libraries may suffer from vulnerabilities which can expose the applications to potential attacks. For example, a very large number of return oriented programming gadgets exist in glibc that allow stitching together semantically valid but malicious Turing-complete programs. In spite of significant advances in attack detection and mitigation, full defense is unrealistic against an ever-growing set of possibilities for generating such malicious programs. In this work, we create a defense mechanism by debloating libraries to reduce the dynamic functions linked so that the possibilities of constructing malicious programs diminishes significantly. The key idea is to locate each library call site within an application, and in each case to load only the set of library functions that will be used at that call site. This approach of demand-driven loading relies on an input-aware oracle that predicts a near-exact set of library functions needed at a given call site during the execution. The predicted functions are loaded just in time, and the complete call chain (of function bodies) inside the library is purged after returning from the library call back into the application. We present a decision-tree based predictor, which acts as an oracle, and an optimized runtime system, which works directly with library binaries like GNU libc and libstdc++. We show that on average, the proposed scheme cuts the exposed code surface of libraries by 97.2%, reduces ROP gadgets present in linked libraries by 97.9%, achieves a prediction accuracy in most cases of at least 97%, and adds a small runtime overhead of 18% on all libraries (16% for glibc, 2% for others) across all benchmarks of SPEC 2006, suggesting this scheme is practical.
+</details>
+
+
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **Is Less Really More? Towards Better Metrics for Measuring Security Improvements Realized Through Software Debloating** [[link]](http://arxiv.org/abs/1902.10880) 
+
+<details> 
+Nearly all modern software suffers from bloat that negatively impacts its performance and security. To combat this problem, several automated techniques have been proposed to debloat software. A key metric used in these works to demonstrate improved security is code reuse gadget count reduction. The use of this metric is based on the prevailing idea that reducing the number of gadgets available in a software package reduces its attack surface and makes mounting a gadget-based code reuse exploit such as return-oriented programming (ROP) more difficult for an attacker. In this paper, we challenge this idea and show through a variety of realistic debloating scenarios the flaws inherent to the gadget count metric. Specifically, we demonstrate that software debloating can achieve high gadget count reduction rates, yet fail to limit an attacker's ability to construct an exploit. Worse yet, in some scenarios high gadget count reduction rates conceal instances in which software debloating makes security worse by introducing new quality gadgets. To address these issues, we propose new metrics based on quality rather than quantity for assessing the security impact of software debloaitng. We show that these metrics can be efficiently calculated with our Gadget Set Analyzer tool. Finally, we demonstrate the the utility of these metrics through a realistic debloating case study.
+</details>
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **Configuration-Driven Software Debloating** [[link]](http://dl.acm.org/citation.cfm?doid=3301417.3312501) 
+
+<details> 
+With legitimate code becoming an attack surface due to the proliferation of code reuse attacks, software debloating is an effective mitigation that reduces the amount of instruction sequences that may be useful for an attacker, in addition to eliminating potentially exploitable bugs in the removed code. Existing debloating approaches either statically remove code that is guaranteed to not run (e.g., non-imported functions from shared libraries), or rely on profiling with realistic workloads to pinpoint and keep only the subset of code that was executed.
+In this work, we explore an alternative configuration-driven software debloating approach that removes feature-specific code that is exclusively needed only when certain configuration directives are specified---which are often disabled by default. Using a semi-automated approach, our technique identifies libraries solely needed for the implementation of a particular functionality and maps them to certain configuration directives. Based on this mapping, feature-specific libraries are not loaded at all if their corresponding directives are disabled. The results of our experimental evaluation with Nginx, VSFTPD, and OpenSSH show that using the default configuration in each case, configuration-driven debloating can remove 77% of the code for Nginx, 53% for VSFTPD, and 20% for OpenSSH, which represent a significant attack surface reduction.
+</details>
+
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **Trimming Mobile Applications for Bandwidth-Challenged Networks in Developing Regions** [[link]](https://arxiv.org/pdf/1912.01328.pdf) 
+
+<details> 
+Despite continuous efforts to build and update network infrastructure, mobile devices in developing regions continue to be constrained by limited bandwidth. Unfortunately, this coincides with a period of unprecedented growth in the size of mobile applications. Thus it is becoming prohibitively expensive for users in developing regions to download and update mobile apps critical to their economic and educational development. Unchecked, these trends can further contribute to a large and growing global digital divide.
+Our goal is to better understand the source of this rapid growth in mobile app code size, whether it is reflective of new functionality, and identify steps that can be taken to make existing mobile apps more friendly bandwidth constrained mobile networks. We hypothesize that much of this growth in mobile apps is due to poor resource/code management, and do not reflect proportional increases in functionality. Our hypothesis is partially validated by mini-programs, apps with extremely small footprints gaining popularity in Chinese mobile networks. Here, we use functionally equivalent pairs of mini-programs and Android apps to identify potential sources of "bloat," inefficient uses of code or resources that contribute to large package sizes. We analyze a large sample of popular Android apps and quantify instances of code and resource bloat. We develop techniques for automated code and resource trimming, and successfully validate them on a large set of Android apps. We hope our results will lead to continued efforts to streamline mobile apps, making them easier to access and maintain for users in developing regions.
+</details>
+
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **Binary Control-Flow Trimming Binary Control-Flow Trimming** [[link]](https://dl.acm.org/doi/10.1145/3319535.3345665) 
+
+<details> 
+A new method of automatically reducing the attack surfaces of binary software is introduced, affording code consumers the power to remove features that are unwanted or unused in a particular deployment context. The approach targets stripped binary native code with no source-derived metadata or symbols, can remove semantic features irrespective of whether they were intended and/or known to code developers, and anticipates consumers who can demonstrate desired features (e.g., via unit testing), but who may not know the existence of specific unwanted features, and who lack any formal specifications of the code's semantics. Through a combination of runtime tracing, machine learning, in-lined reference monitoring, and contextual control-flow integrity enforcement, it is demonstrated that automated code feature removal is nevertheless feasible under these constraints, even for complex programs such as compilers and servers. The approach additionally accommodates consumers whose demonstration of desired features is incomplete; a tunable entropy-based metric detects coverage lapses and conservatively preserves unexercised but probably desired flows. A prototype implementation for Intel x86-64 exhibits low runtime overhead for trimmed binaries (about 1.87%), and case studies show that consumer-side control-flow trimming can successfully eliminate zero-day vulnerabilities.
+</details>
+
+![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg)   **Slimming javascript applications: An approach for removing unused functions from javascript libraries** [[link]](https://www.sciencedirect.com/science/article/abs/pii/S0950584918302210) 
+
+<details> 
+Context: A common practice in JavaScript development is to ship and deploy an application as a large file, called bundle, which is the result of combining the application code along with the code of all the libraries the application depends on. Despite the benefits of having a single bundle per application, this approach leads to applications being shipped with significant portions of code that are actually not used, which unnecessarily inflates the JavaScript bundles and could slow down website loading because of the extra unused code. Although some static analysis techniques exist for removing unused code, our investigations suggest that there is still room for improvements. Objective: The goal of this paper is to address the problem of reducing the size of bundle files in JavaScript applications. Method: In this context, we define the notion of Unused Foreign Function (UFF) to denote a JavaScript function contained in dependent libraries that is not needed at runtime. Furthermore, we propose an approach based on dynamic analysis that assists developers to identify and remove UFFs from JavaScript bundles. Results: We report on a case-study performed over 22 JavaScript applications, showing evidence that our approach can produce size reductions of 26% on average (with reductions going up to 66% in some applications). Conclusion: It is concluded that removing unused foreign functions from JavaScript bundles helps reduce their size, and thus, it can boost the results of existing static analysis techniques.
+</details>
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **PolyDroid: Learning-Driven Specialization of Mobile Applications** [[link]](http://arxiv.org/abs/1902.09589) 
+
+<details> 
+The increasing prevalence of mobile apps has led to a proliferation of resource usage scenarios in which they are deployed. This motivates the need to specialize mobile apps based on diverse and varying preferences of users. We propose a system, called PolyDroid, for automatically specializing mobile apps based on user preferences. The app developer provides a number of candidate configurations, called reductions, that limit the resource usage of the original app. The key challenge underlying PolyDroid concerns learning the quality of user experience under different reductions. We propose an active learning technique that requires few user experiments to determine the optimal reduction for a given resource usage specification. On a benchmark suite comprising 20 diverse, open-source Android apps, we demonstrate that on average, PolyDroid obtains more than 85% of the optimal performance using just two user experiments.
+</details>
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **The Dynamics of Software Composition Analysis** [[link]](https://arxiv.org/pdf/1909.00973.pdf) 
+
+<details> 
+Developers today use significant amounts of open source code, surfacing the need for ways to automatically audit and upgrade library dependencies and leading to the emergence of Software Composition Analysis (SCA). SCA products are concerned with three tasks: discovering dependencies, checking the reachability of vulnerable code for false positive elimination, and automated remediation. The latter two tasks rely on call graphs of library and application code to check whether vulnerable methods found in the open source components are called by applications. However, statically-constructed call graphs introduce both false positives and false negatives on real-world projects. In this paper, we develop a novel, modular means of combining statically- and dynamically-constructed call graphs via instrumentation to improve the performance of false positive elimination. Our experiments indicate significant performance improvements, but that instrumentation-based call graphs are less readily applicable in practice.
+</details>
+
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **Binary reduction of dependency graphs** [[link]](https://dl.acm.org/doi/10.1145/3338906.3338956) 
+
+<details> 
+Delta debugging is a technique for reducing a failure-inducing input to a small input that reveals the cause of the failure. This has been successful for a wide variety of inputs including C programs, XML data, and thread schedules. However, for input that has many internal dependencies, delta debugging scales poorly. Such input includes C#, Java, and Java bytecode and they have presented a major challenge for input reduction until now. In this paper, we show that the core challenge is a reduction problem for dependency graphs, and we present a general strategy for reducing such graphs. We combine this with a novel algorithm for reduction called Binary Reduction in a tool called J-Reduce for Java bytecode. Our experiments show that our tool is 12x faster and achieves more reduction than delta debugging on average. This enabled us to create and submit short bug reports for three Java bytecode decompilers.
+</details>
+
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **BinTrimmer: Towards static binary debloating through abstract interpretation** [[link]](https://asu.pure.elsevier.com/en/publications/bintrimmer-towards-static-binary-debloating-through-abstract-inte) 
+
+<details> 
+The increasing complexity of modern programs motivates software engineers to often rely on the support of third-party libraries. Although this practice allows application developers to achieve a compelling time-to-market, it often makes the final product bloated with conspicuous chunks of unused code. Other than making a program unnecessarily large, this dormant code could be leveraged by willful attackers to harm users. As a consequence, several techniques have been recently proposed to perform program debloating and remove (or secure) dead code from applications. However, state-of-the-art approaches are either based on unsound strategies, thus producing unreliable results, or pose too strict assumptions on the program itself. In this work, we propose a novel abstract domain, called Signedness-Agnostic Strided Interval, which we use as the cornerstone to design a novel and sound static technique, based on abstract interpretation, to reliably perform program debloating. Throughout the paper, we detail the specifics of our approach and show its effectiveness and usefulness by implementing it in a tool, called BinTrimmer, to perform static program debloating on binaries. Our evaluation shows that BinTrimmer can remove upÂ to 65.6% of a library’s code and that our domain is, on average, 98% more precise than the related work.
+</details>
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **RAZOR : A Framework for Post-deployment Software Debloating** [[link]](https://www.usenix.org/conference/usenixsecurity19/presentation/qian) 
+
+<details> 
+Commodity software typically includes functionalities for a broad user population. However, each individual user usually only needs a subset of the supported functionalities. The bloated code not only hinders optimal execution, but also leads to a larger attack surface. Recent work explores program debloating as an emerging solution to this problem. Unfortunately, existing works require program source code, limiting their deployability. In this paper, we propose a practical debloating framework, RAZOR, that performs code reduction for deployed binaries. Based on users’ specification, our tool customizes the binary to generate a functional program with the minimal code size. Instead of only supporting given test cases, RAZOR takes several control-flow heuristics to infer complementary code that are necessary to support user-expected functionalities. We have evaluated RAZOR on commonly used benchmarks and real-world applications, including the web browser FireFox and the close-sourced PDF reader FoxitReader. The result shows that RAZOR is able to reduce over 70% of the code from the bloated binary. It produces functional programs and does not introduce new security issues. RAZOR is thus a practical framework for debloating real-world programs.
+</details>
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **CARVE: Practical Security-Focused Software Debloating Using Simple Feature Set Mappings** [[link]](https://arxiv.org/pdf/1907.02180.pdf) 
+
+<details> 
+Software debloating is an emerging field of study aimed at improving the security and performance of software by removing excess library code and features that are not needed by the end user (called bloat). Software bloat is pervasive, and several debloating techniques have been proposed to address this problem. While these techniques are effective at reducing bloat, they are not practical for the average user, risk creating unsound programs and introducing vulnerabilities, and are not well suited for debloating complex software such as network protocol implementations. In this paper, we propose CARVE, a simple yet effective security-focused debloating technique that overcomes these limitations. CARVE employs static source code annotation to map software features source code, eliminating the need for advanced software analysis during debloating and reducing the overall level of technical sophistication required by the user. CARVE surpasses existing techniques by introducing debloating with replacement, a technique capable of preserving software interoperability and mitigating the risk of creating an unsound program or introducing a vulnerability. We evaluate CARVE in 12 debloating scenarios and demonstrate security and performance improvements that meet or exceed those of existing techniques.
+</details>
 
 
 ## 2018
@@ -68,16 +159,16 @@ Uses reinforcement learning to improve Delta Debugging in terms of processing ti
 Reduces programs by exploiting the formal syntax of the program. Perses considers only smaller, syntactically valid variants to avoid  futile efforts on syntactically invalid variants. Evaluation was carried out using 20 C programs, and also Java applications.
 </details>
 
-![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg) **Wholly! : A Build System For The Modern Software Stac** [[link]](http://www.csl.sri.com/users/gehani/papers/FMICS-2018.Wholly.pdf) 
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg) **Wholly : A Build System For The Modern Software Stack** [[link]](http://www.csl.sri.com/users/gehani/papers/FMICS-2018.Wholly.pdf) 
 
 <details> 
-Wholly! is designed for reproducible and verifiable builds of optimized and debloated software that runs uniformly on traditional desktops, the cloud, and IoT devices. Wholly! uses Linux containers to ensure the integrity and reproducibility of the build environment. It uses the clang compiler to generate
+Wholly is designed for reproducible and verifiable builds of optimized and debloated software that runs uniformly on traditional desktops, the cloud, and IoT devices. Wholly  uses Linux containers to ensure the integrity and reproducibility of the build environment. It uses the clang compiler to generate
 LLVM bitcode for all produced libraries and binaries to allow for whole program analysis, specialization, and optimization. 
 </details>
                      
 ## 2017
 
-![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg) **A Multi-OS Cross-Layer Study of Bloating in User Programs, Kernel and Managed Execution Environments** [[link]](https://tc.gtisc.gatech.edu/feast17/papers/p65-quachA.pdf) -
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg) **A Multi-OS Cross-Layer Study of Bloating in User Programs, Kernel and Managed Execution Environments** [[link]](https://tc.gtisc.gatech.edu/feast17/papers/p65-quachA.pdf) 
 
 <details> 
 Presents a study of bloating across the software stack (user-level programs, OS kernels and JVM). Employs (1) static measurements to detect limits to debloating, and (2) dynamic measurements to detect how much of the code available to a program is utilized under typical payloads. It uses a tracing procedure in ato measure the bloat in kernel, measuring the amount of kernel code that executes during the boot process and during the execution of popular system calls. The results show that bloating is pervasive and severe. A significant fraction of code across the software stack is never executed and provides scope for debloating.
