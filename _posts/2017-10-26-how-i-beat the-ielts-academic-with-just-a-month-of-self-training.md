@@ -3,7 +3,7 @@ layout: post
 title: How I beat the IELTS Academic with just a month of self-training
 subtitle: Personal comments and suggestions
 published: true
-image: ../blog/img/IELTS.jpg
+image: ../img/IELTS.jpg
 date: 2017/10/26
 ---
 
