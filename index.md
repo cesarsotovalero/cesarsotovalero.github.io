@@ -36,8 +36,6 @@ I also do knowledge-seeking research by extracting useful information from data 
 
 <h2 class="text-center">Current Projects</h2>
 - _JDbl: Automatically Specializing Java Applications Through Dynamic Debloat_
-- _A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem_
-
 
 
 <h2 class="text-center">Organizations </h2>
