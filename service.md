@@ -6,7 +6,9 @@ published: true
 ---
 
 ### Teacher assistant
--  [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), Stockholm, Sweden, Fall 2019
+- [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), KTH, Stockholm, Sweden, Spring 2020
+-  [DM1590 Machine Learning for Media Technology](https://www.kth.se/student/kurser/kurs/DM1590), KTH, Stockholm, Sweden, Spring 2020
+-  [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), KTH, Stockholm, Sweden, Fall 2019
 - [WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), Stockholm, Sweden, Spring 2019
 - [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), KTH, Stockholm, Sweden, Spring 2019
 
@@ -25,6 +27,7 @@ published: true
 
 #### Subreviewer
 
+- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software)
 - [ICSE'19](https://conf.researchr.org/home/icse-2019)
 - [ICST'18](https://www.es.mdh.se/icst2018)
 
