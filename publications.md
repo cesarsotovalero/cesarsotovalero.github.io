@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-subtitle: Research Papers |  Citation Stats | Important Academic Stuff
+subtitle: My Research Papers |  Citation Stats | Ph.D. Path
 published: true
 ---
 
