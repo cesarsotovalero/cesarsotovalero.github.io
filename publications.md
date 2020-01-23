@@ -9,7 +9,9 @@ As a researcher, I ~~am forced to~~ write papers for journals and conferences. M
 
 ### 2020
 
-<a href="https://arxiv.org/pdf/2001.07808.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) **César Soto-Valero**, Nicolas Harrand, Martin Monperrus, Benoit Baudry. [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://arxiv.org/abs/2001.07808https://arxiv.org/abs/1908.09757). In _arXiv_.
+<a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/raw/master/files/publications/SOTO-VALERO_C. _JSS.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) Nicolas Harrand, **César Soto-Valero**, Martin Monperrus, Benoit Baudry. [Java Decompiler Diversity and its Application to Meta-decompilation](). 
+
+<a href="https://arxiv.org/pdf/2001.07808.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) **César Soto-Valero**, Nicolas Harrand, Martin Monperrus, Benoit Baudry. [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://arxiv.org/abs/2001.07808). In _arXiv_.
 
 <a href="https://arxiv.org/pdf/1908.09757.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) Nicolas Harrand, Amine Benelallam, **César Soto-Valero**, Olivier Barais, Benoit Baudry. [Analyzing 2.3 Million Maven Dependencies to Reveal an Essential Core in APIs](https://arxiv.org/abs/1908.09757). In _arXiv_.
 
