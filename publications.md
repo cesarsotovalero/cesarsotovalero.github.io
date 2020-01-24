@@ -5,7 +5,10 @@ subtitle: My Research Papers |  Citation Stats | Ph.D. Path
 published: true
 ---
 
-As a researcher, I ~~am forced to~~ write papers for journals and conferences. My work can be found in [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) and [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero). My ORCID <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0003-0541-6411</a>.  The following is an updated list of my published work (in reverse chronological order).
+As a researcher, I ~~am forced to~~ write papers for journals and conferences. My work can be found in 
+<a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="../img/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="../img/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="../img/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar). 
+
+My ORCID <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0003-0541-6411</a>.  The following is an updated list of my published work (in reverse chronological order).
 
 ### 2020
 
