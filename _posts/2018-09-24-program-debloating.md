@@ -11,6 +11,7 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 
 ## TOC
 
+* [2020](#2020)
 * [2019](#2019)
 * [2018](#2018)
 * [2017](#2017)
@@ -24,7 +25,24 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 * [2002](#2002)
 * [Additional web resources](#external-web-resources)
 
+
+### 2020
+
+![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) **MoMIT: Porting a JavaScript Interpreter on a Quarter Coin** [[link]](https://www-computer-org.focus.lib.kth.se/csdl/journal/ts/5555/01/08966499/1gNELA0WeCA) 
+
+<details> 
+The Internet of Things (IoT) is a network of physical, connected devices providing services through private networks and the Internet. The devices connect through the Internet to Web servers and other devices. One of the popular programming languages for communicating Web pages and Web apps is JavaScript (JS). Hence, the devices would benefit from JS apps. However, porting JS apps to the many IoT devices, e.g., System-on-a-Chip (SoCs) devices (e.g., Arduino Uno), is challenging because of their limited memory, storage, and CPU capabilities. Also, some devices may lack hardware/software capabilities for running JS apps "as is". Thus, we propose MoMIT, a multiobjective optimization approach to miniaturize JS apps to run on IoT devices. We implement MoMIT using three different search algorithms. We miniaturize a JS interpreter and measure the characteristics of 23 apps before/after applying MoMIT. We find reductions of code size, memory usage, and CPU time of 31%, 56%, and 36%, respectively (medians). We show that MoMIT allows apps to run on up to two additional devices in comparison to the original JS interpreter.
+</details>
+
 ### 2019 
+
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **Poster: Recommending Unnecessary Source Code Based on Static Analysis** [[link]](https://dl-acm-org.focus.lib.kth.se/doi/10.1109/ICSE-Companion.2019.00111) 
+
+<details> 
+Grown software systems often contain code that is not necessary anymore. Unnecessary code wastes resources during development and maintenance, for example, when preparing code for migration or certification. Running a profiler may reveal code that is not used in production, but it is often time-consuming to obtain representative data this way. We investigate to what extent a static analysis approach which is based on code stability and code centrality, is able to identify unnecessary code and whether its recommendations are relevant in practice. To study the feasibility and usefulness of our static approach, we conducted a study involving 14 open-source and closed-source software systems. As there is no perfect oracle for unnecessary code, we compared recommendations of our approach with historical cleanup actions, runtime usage data, and feedback from 25 developers of 5 software projects. Our study shows that recommendations generated from stability and centrality information point to unnecessary code. Our results suggest that static analysis can provide quick feedback on unnecessary code that is useful in practice.
+</details>
+
+
 
 ![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg)  **Unnecessarily identifiable: Quantifying the fingerprintability of browser extensions due to bloat** [[link]](http://dl.acm.org/citation.cfm?doid=3308558.3313458) 
 
