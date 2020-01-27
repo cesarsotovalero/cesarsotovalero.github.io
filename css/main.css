@@ -43,6 +43,7 @@ blockquote {
   color: darkgreen;
   font-style: italic;
   font-size: 22px;
+  border-left: 2px solid darkgreen;
 }
 blockquote p:first-child {
   margin-top: 0;
@@ -123,7 +124,7 @@ background-attachment: fixed;
 
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
 }
 
@@ -161,7 +162,7 @@ background-attachment: fixed;
 
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    padding: 20px 0;
+    padding: 10px 0;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
