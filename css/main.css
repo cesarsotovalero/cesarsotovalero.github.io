@@ -81,7 +81,7 @@ hr.small {
 ::selection {
   color: white;
   text-shadow: none;
-  background: darkblue;
+  background: cornflowerblue;
 }
 img::selection {
   color: white;
@@ -683,7 +683,7 @@ pre.highlight, .highlight > pre, td.code pre {
   background-repeat: repeat;
   background-size: 3em 3em;
   background-position: 0px 10px;
-  border-left: 7px solid #444;
+  border-left: 3px solid #444;
 }
 code table, code table td, code table th, code table tbody, code table tr,
 td.gutter pre {
