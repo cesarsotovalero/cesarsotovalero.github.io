@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Service
-subtitle: TA | Supervisor | Reviewer | Forced Labor 
+subtitle: Teaching | Supervisor | Reviewer  
 published: true
 ---
 
