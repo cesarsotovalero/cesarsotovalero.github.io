@@ -9,9 +9,9 @@ date: 2020/1/07
 
 This is a living list of tools for program debloating and software specialization. 
 
-- <a href="https://github.com/castor-software/depclean"><i class="fa fa-github fa-2x"></i></a>[DepClean](https://castor-software.github.io/depclean/) Automatically removes unused dependencies from Java projects
+- <a href="https://github.com/castor-software/depclean"><i class="fa fa-github fa-2x"></i></a>[DepClean](https://castor-software.github.io/depclean) Automatically removes unused dependencies from Java projects
 
-- <a https://github.com/apache/maven-jlink-plugin"><i class="fa fa-github fa-2x"></i></a>[JLink](https://www.baeldung.com/jlink) Tool to assemble and optimize a set of Java modules and their dependencies into a custom runtime image. 
+- <a href="https://github.com/apache/maven-jlink-plugin"><i class="fa fa-github fa-2x"></i></a>[jlink](https://www.baeldung.com/jlink) Tool to assemble and optimize a set of Java modules and their dependencies into a custom runtime image. 
 
 - <a href="https://github.com/docker-slim/docker-slim"><i class="fa fa-github fa-2x"></i></a>[docker-slim](https://dockersl.im/) Minify and Secure Your Docker Containers. 
 
