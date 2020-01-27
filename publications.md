@@ -22,7 +22,7 @@ My ORCID <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" r
 
 ### 2019
 
-<a href="https://www.researchgate.net/publication/334465294_The_Strengths_and_Behavioral_Quirks_of_Java_Bytecode_Decompilers"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg) Nicolas Harrand, **César Soto-Valero**, Martin Momperrus, Benoit Baudry. [The Strengths and Behavioral Quirks of Java Bytecode Decompilers](http://www.ieee-scam.org/2019/#acceptedPapers). In _19th International Working Conference on Source Code Analysis and Manipulation_, Cleveland, OH, USA.
+<a href="https://www.researchgate.net/publication/334465294_The_Strengths_and_Behavioral_Quirks_of_Java_Bytecode_Decompilers"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg) Nicolas Harrand, **César Soto-Valero**, Martin Momperrus, Benoit Baudry. [The Strengths and Behavioral Quirks of Java Bytecode Decompilers](http://www.ieee-scam.org/2019/#acceptedPapers). In _19th International Working Conference on Source Code Analysis and Manipulation_, Cleveland, OH, USA. DOI: 10.1109/scam.2019.00019
 
 <a href="https://www.researchgate.net/publication/331629682_The_Emergence_of_Software_Diversity_in_Maven_Central"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg) **César Soto-Valero**, Amine Benelallam, Nicolas Harrand, Olivier Barais, Benoit Baudry. [The Emergence of Software Diversity in Maven Central](https://conf.researchr.org/track/msr-2019/msr-2019-papers#event-overview). In _16th International Conference on Mining Software Repositories_, Montreal, Canada, 2019. DOI: 10.1109/MSR.2019.00059. 
 
@@ -51,7 +51,7 @@ in Debugging Activities](https://2018.msrconf.org/track/msr-2018-Mining-Challeng
 
 ### 2016
 
-<a href="../files/publications/SOTO-VALERO C. Tesis.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-MASTER_THESIS-F8C91F.svg) **César Soto-Valero**, [Predictive models applied to baseball](https://www.researchgate.net/publication/312084388_Modelos_predictivos_con_aplicacion_en_el_beisbol). _Master's thesis_. The Central University of Las Villas, Department of Computer Science, November 2016.
+<a href="../files/publications/SOTO-VALERO C. Tesis.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-MASTER_THESIS-F8C91F.svg) **César Soto-Valero**, [Predictive models applied to baseball](https://www.researchgate.net/publication/312084388_Modelos_predictivos_con_aplicacion_en_el_beisbol). _Master's thesis_. The Central University of Las Villas, Department of Computer Science, November 2016. DOI: 10.13140/RG.2.2.14806.65600
   
 <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/master/files/publications/SOTO-VALERO%20C.%20%20IJCSS.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) **César Soto-Valero**. [Predicting Win-Loss outcomes in MLB regular season games: A comparative study using data mining methods](https://www.degruyter.com/view/j/ijcss.2016.15.issue-2/ijcss-2016-0007/ijcss-2016-0007.xml). _International Journal of Computer Science in Sport_, 15(2), DOI: 10.1515/ijcss-2016-0007. 
 
