@@ -33,10 +33,12 @@ I also do knowledge-seeking research by extracting useful information from data 
 
 <!-- Researcher / Developer / Data Scientist / Nice Guy -->
 
+---
 
 <h2 class="text-center">Current Projects</h2>
 - _JDbl: Automatically Specializing Java Applications Through Dynamic Debloat_
 
+---
 
 <h2 class="text-center">Organizations </h2>
 <p align="center">
