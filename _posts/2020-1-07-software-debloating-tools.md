@@ -11,6 +11,8 @@ This is a living list of tools for program debloating and software specializatio
 
 - <a href="https://github.com/castor-software/depclean"><i class="fa fa-github fa-2x"></i></a>[DepClean](https://castor-software.github.io/depclean/) Automatically removes unused dependencies from Java projects
 
+- <a https://github.com/apache/maven-jlink-plugin"><i class="fa fa-github fa-2x"></i></a>[JLink](https://www.baeldung.com/jlink) Tool to assemble and optimize a set of Java modules and their dependencies into a custom runtime image. 
+
 - <a href="https://github.com/docker-slim/docker-slim"><i class="fa fa-github fa-2x"></i></a>[docker-slim](https://dockersl.im/) Minify and Secure Your Docker Containers. 
 
 - <a href="git clone https://r8.googlesource.com/r8"><i class="fa fa-github fa-2x"></i></a> [R8](https://r8.googlesource.com/r8) Google substitute of Proguard.
@@ -47,6 +49,12 @@ This is a living list of tools for program debloating and software specializatio
 - <a href="https://github.com/jon-bell/bytecode-examples"><i class="fa fa-github fa-2x"></i></a> [bytecode-examples](https://github.com/jon-bell/bytecode-examples) Java Bytecode Engineering Examples & Tutorials.
 
 - <a href="https://github.com/jon-bell/maven-lifecycle-logger"><i class="fa fa-github fa-2x"></i></a> [maven-lifecycle-logger](https://github.com/jon-bell/maven-lifecycle-logger) Logger to record maven lifecycle events and timing.
+
+- <a href="https://github.com/mihaip/dex-method-counts"><i class="fa fa-github fa-2x"></i></a> [dex-method-counts](https://github.com/mihaip/dex-method-counts) Command-line tool to count per-package methods in Android .dex files.
+
+
+
+
 
 
 

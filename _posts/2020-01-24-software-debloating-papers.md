@@ -9,7 +9,7 @@ date: 2020/01/24
 
 This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articles related to program debloating and software specialization. 
 
-## TOC
+## Table of Contents
 
 * [2020](#2020)
 * [2019](#2019)
@@ -50,8 +50,7 @@ In this paper, we investigate to what extent the page modifications that make br
 </details>
 
 
-![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg) [arXiv]  **Binary Debloating for Security via Demand Driven Loading
-** [[link]](http://arxiv.org/abs/1902.06570) 
+![Custom badge](https://img.shields.io/badge/-CONFERENCE_PAPER-196CA3.svg) [arXiv]  **Binary Debloating for Security via Demand Driven Loading** [[link]](http://arxiv.org/abs/1902.06570) 
 
 <details> 
 Modern software systems heavily use C/C++ based libraries. Because of the weak memory model of C/C++, libraries may suffer from vulnerabilities which can expose the applications to potential attacks. For example, a very large number of return oriented programming gadgets exist in glibc that allow stitching together semantically valid but malicious Turing-complete programs. In spite of significant advances in attack detection and mitigation, full defense is unrealistic against an ever-growing set of possibilities for generating such malicious programs. In this work, we create a defense mechanism by debloating libraries to reduce the dynamic functions linked so that the possibilities of constructing malicious programs diminishes significantly. The key idea is to locate each library call site within an application, and in each case to load only the set of library functions that will be used at that call site. This approach of demand-driven loading relies on an input-aware oracle that predicts a near-exact set of library functions needed at a given call site during the execution. The predicted functions are loaded just in time, and the complete call chain (of function bodies) inside the library is purged after returning from the library call back into the application. We present a decision-tree based predictor, which acts as an oracle, and an optimized runtime system, which works directly with library binaries like GNU libc and libstdc++. We show that on average, the proposed scheme cuts the exposed code surface of libraries by 97.2%, reduces ROP gadgets present in linked libraries by 97.9%, achieves a prediction accuracy in most cases of at least 97%, and adds a small runtime overhead of 18% on all libraries (16% for glibc, 2% for others) across all benchmarks of SPEC 2006, suggesting this scheme is practical.
