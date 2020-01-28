@@ -25,7 +25,7 @@ p {
   margin: 30px 0;
 }
 p a {
-  /* text-decoration: underline */
+   text-decoration: underline;
   color: darkblue;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -34,10 +34,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 a {
   color: darkblue;
+  text-decoration: underline;
+
 }
 a:hover,
 a:focus {
   color: darkred;
+  text-decoration: underline;
 }
 blockquote {
   color: darkgreen;
@@ -123,6 +126,7 @@ background-attachment: fixed;
 }
 
 .navbar-custom .nav li a {
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px;
@@ -130,6 +134,7 @@ background-attachment: fixed;
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
+  text-decoration: none;
   font-weight: 800;
   color: #000000;
 }
