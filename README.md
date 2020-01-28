@@ -5,5 +5,5 @@
 This is my personal website and blog.
 
 See it at
-[https://cesarsotovalero.github.io](https://cesarsotovalero.github.io)
+[https://www.cesarsotovalero.net](https://www.cesarsotovalero.net)
 
