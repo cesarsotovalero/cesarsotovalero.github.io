@@ -32,7 +32,7 @@ navbar-links:
     - Software: "software"
     - Service: "service"
   About Me: "aboutme"
-  Search: "search"
+#  Search: "search"
 # Resume/CV: "https://cesarsotovalero.github.io/files/C-Soto-Valero-CV.pdf"
   
   
