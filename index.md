@@ -23,10 +23,10 @@ css: '/css/extend-home.css'
 
 
 <h2 class="text-center">Current Work</h2>
-<div style="text-align: left"> 
+<div style="text-align: justify"> 
 I'm a <a href="http://wasp-sweden.org/">WASP</a> Ph.D. student  in the <a href="https://www.kth.se/scs/software-engineering">Department of Software and Computer Systems </a> working with <a href="https://www.kth.se/profile/baudry">Benoit Baudry</a> at  KTH Royal Institute of Technology in Sweden. My current research focuses on developing static and dynamic code transformation for software debloating. For more on this topic, see my living review of <a href="https://www.cesarsotovalero.net/2020-01-24-software-debloating-papers">software debloating papers</a>, or consult my list of <a href="https://www.cesarsotovalero.net/2020-01-07-software-debloating-tools">software debloating tools</a>.
 
-I also do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories. I'm interested in measuring the impact and pervasiveness of bloatware across large-scale software ecosystems. I'm keen to perform research that: **(1)** bring actionable insights to software engineering community, **(2)** provide novel knowledge about how modern software is currently being developed and maintained, and **(3)** provide new tools for developers in order to improve the software quality.
+I also do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories. I'm interested in measuring the impact and pervasiveness of bloatware across large-scale software ecosystems. I'm keen to perform research that: <b>(1)</b> bring actionable insights to software engineering community, <b>(2)</b> provide novel knowledge about how modern software is currently being developed and maintained, and <b>(3)</b> provide new tools for developers in order to improve the software quality.
 </div>
 
 <!-- The ultimate defense is to drive the complexity of the ultimate attack up so high that the cost of attack is too high to be worth performing -->
