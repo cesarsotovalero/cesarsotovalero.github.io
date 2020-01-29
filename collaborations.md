@@ -72,9 +72,9 @@ Select a set of Java applications for which we have the source code that compile
 
 ### Motivation
 
-The system call is the fundamental interface between an application and the Linux kernel [1]. The execution of **any** program written in **any** language will trigger the execution of some system calls. System calls are typically not invoked directly, but rather invoked through corresponding wrapper functions in the core library (e.g., `glibc` or `musl-libc`). There are 335 unique systems calls in the x86_84 architecture. The observation of system calls provides a uniform way to understand the execution of programs written in different languages, as well as an unique manner to monitoring their behaviour.
+The system call is the fundamental interface between an application and the Linux kernel [1]. The execution of **any** program written in **any** language will trigger the execution of some system calls. System calls are typically not invoked directly, but rather invoked through corresponding wrapper functions in the core library (e.g., `glibc` or `musl-libc`). There are 335 unique systems calls in the x86_84 architecture. The observation of system calls provides a uniform way to understand the execution of programs written in different languages, as well as a unique manner for monitoring their behavior.
 
-Inspired by the [Hello world](https://drewdevault.com/2020/01/04/Slow.html) blog post. We aim at monitoring system calls executed at distinct part of programs in order to determine which regions are causing an overhead in terms their quantity and diversity. The ultimate goal is to automatically remove (or reduce) the bloated system calls from the program.
+Inspired by the [Hello world](https://drewdevault.com/2020/01/04/Slow.html) blog post, we aim at monitoring system calls executed at distinct part of programs in order to determine which regions are causing overhead in terms their quantity and diversity. The ultimate goal is to automatically remove (or reduce) the bloated system calls from the program.
 
 ### Approach
 
@@ -82,7 +82,7 @@ We start by monitoring the system calls triggered when exercising distinct regio
 
 ### Validation
 
-Select a set of Java applications and monitor their systems calls according to different workloads. System calls can be obtained with [`strace`](https://strace.io). Then, implement a tool to debloat the application based on the results of the system calls monitoring (see examples of deboating tools in this [here](https://www.cesarsotovalero.net/2020-01-07-software-debloating-tools)).  
+Select a set of Java applications and monitor their systems calls according to different workloads. System calls can be obtained with [`strace`](https://strace.io). Then, implement a tool to debloat the application based on the results of the system calls monitoring (see examples of deboating tools [here](https://www.cesarsotovalero.net/2020-01-07-software-debloating-tools)).  
  
 [1] [http://man7.org/linux/man-pages/man2/syscalls.2.html](http://man7.org/linux/man-pages/man2/syscalls.2.html) 
 
