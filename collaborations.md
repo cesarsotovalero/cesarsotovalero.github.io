@@ -11,6 +11,7 @@ List of research topics that are open to further investigation. External collabo
 
 * [1. Debloat of mobile apps](#1-debloat-of-mobile-apps)
 * [2. Automatic migration from Java &lt; 8 to Java 11 modular system](#2-automatic-migration-from-java--8-to-java-11-modular-system)
+* [3. Identification of program hotpots by monitoring system calls](#3-identification-of-program-hotpots-by-monitoring-system-calls)
 
 ## 1. Debloat of mobile apps
 
@@ -41,8 +42,7 @@ Select a set of Android applications for which we have the source code and that 
 
 ### Motivation
 
-On Linux, the full JDK 8 was 364 Mb, the JRE just 197 Mb. Users who were concerned about disk space could install the JRE and happily run their applications. The Java Platform Module System (JPMS), introduced in the Java 9, divides the monolithic `rt.jar` and `tools.jar` files into 75 distinct modules [3]. The idea is to build Java runtimes that are tailored to the requirements of a specific application. To do so, Oracle provides the [jlink](https://docs.oracle.com/javase/9/tools/jlink.htm#JSWOR-GUID-CECAC52B-CFEE-46CB-8166-F17A8E9280E9) command to assemble and optimize a set of modules and their dependencies into a custom runtime image [1]. Rather than including all 75 modules, you need only include the [`java.base`](https://docs.oracle.com/javase/9/docs/api/java.base-summary.html) module (which all runtimes must include by definition) as well as any other modules the application references. However, since jlink only works with modules, it can't be used to generate a runtime image
- for non-module based applications [2].
+On Linux, the full JDK 8 was 364 Mb, the JRE just 197 Mb. Users who were concerned about disk space could install the JRE and happily run their applications. The Java Platform Module System (JPMS), introduced in the Java 9, divides the monolithic `rt.jar` and `tools.jar` files into 75 distinct modules [3]. The idea is to build Java runtimes that are tailored to the requirements of a specific application. To do so, Oracle provides the [jlink](https://docs.oracle.com/javase/9/tools/jlink.htm#JSWOR-GUID-CECAC52B-CFEE-46CB-8166-F17A8E9280E9) command to assemble and optimize a set of modules and their dependencies into a custom runtime image [1]. Rather than including all 75 modules, you need only include the [`java.base`](https://docs.oracle.com/javase/9/docs/api/java.base-summary.html) module (which all runtimes must include by definition) as well as any other modules the application references. However, since jlink only works with modules, it can't be used to generate a runtime image for non-module based applications [2].
 
 ### Approach
 
@@ -61,3 +61,22 @@ Select a set of Java applications for which we have the source code that compile
 [3] [https://www.baeldung.com/java-9-modularity](https://www.baeldung.com/java-9-modularity) 
 
 <div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
+
+
+## 3. Identification of program hotpots by monitoring system calls
+
+### Motivation
+
+The system call is the fundamental interface between an application and the Linux kernel [1]. The execution of **any** program written in **any** language will trigger the execution of some system calls. System calls are typically not invoked directly, but rather invoked through corresponding wrapper functions in the core library (e.g., `glibc` or `musl-libc`). There are 335 unique systems calls in the x86_84 architecture. The observation of system calls provides a uniform way to understand the execution of programs written in different languages, as well as an unique manner to monitoring their behaviour.
+
+Inspired by the [Hello world](https://drewdevault.com/2020/01/04/Slow.html) blog post. We aim at monitoring system calls executed at distinct part of programs in order to determine which regions are causing an overhead in terms their quantity and diversity. The ultimate goal is to automatically remove (or reduce) the bloated system calls from the program.
+
+### Approach
+
+We start by monitoring the system calls triggered when exercising distinct regions of the program (e.g., from various entry points). Then, we cluster the system calls to determine the **core regions** of the application (i.e., the methods that use more system calls). Then, we debloat the program with several tools and measure the impact of debloating on the reduction of system calls. 
+
+### Validation
+
+Select a set of Java applications and monitor their systems calls according to different workloads. System calls can be obtained with [`strace`](https://strace.io). Then, implement a tool to debloat the application based on the results of the system calls monitoring (see examples of deboating tools in this [here](https://www.cesarsotovalero.net/2020-01-07-software-debloating-tools)).  
+ 
+[1] [http://man7.org/linux/man-pages/man2/syscalls.2.html](http://man7.org/linux/man-pages/man2/syscalls.2.html) 
