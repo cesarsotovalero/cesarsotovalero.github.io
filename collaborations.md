@@ -5,6 +5,11 @@ subtitle: Open to Research Collaborations
 published: true
 ---
 
+> "Science is a collaborative effort. The combined results of several people working together is often much more effective than could be that of an individual scientist working alone"
+> -- <cite>John Bardeen</cite>
+
+---
+
 List of research topics that are open to further investigation. External collaboration is welcome.
 
 ## Table of contents
