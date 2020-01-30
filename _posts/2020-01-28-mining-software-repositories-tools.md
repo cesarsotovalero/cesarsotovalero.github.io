@@ -1,0 +1,25 @@
+---
+layout: post
+title: Mining software repositories
+subtitle: List of resources
+published: true
+image: ../img/posts/gold_mining.jpg
+date: 2020/01/28
+---
+
+> "Mining software repositories is an increasingly popular and important area of software engineering research aimed at retrieving, integrating, and analyzing data available in various kinds of software repositories" *― [Massimiliano Di Penta](https://scholar.google.com/citations?user=j6ucyOAAAAAJ&hl=en)*
+
+## Tools
+
+- <a href="https://github.com/diverse-project/maven-miner"><i class="fa fa-github fa-2x"></i></a> [maven-miner](https://github.com/diverse-project/maven-miner/wiki) Mines Maven Central and creates a global dependency graph
+
+## Datasets
+
+- <a href="https://github.com/igrigorik/gharchive.org/tree/master"><i class="fa fa-github fa-2x"></i></a> [GH Archive](https://www.gharchive.org) Records the public GitHub timeline, archive it, and make it easily accessible for further analysis.
+
+- <a href="https://github.com/ghtorrent/ghtorrent.org"><i class="fa fa-github fa-2x"></i></a> [The GHTorrent project](http://ghtorrent.org) An effort to create a scalable, queriable, offline mirror of data offered through the Github REST API.
+
+## Influential papers
+
+- *[An in-depth study of the promises and perils of mining GitHub](https://link.springer.com/article/10.1007/s10664-015-9393-5)*. EMSE, 2015
+
