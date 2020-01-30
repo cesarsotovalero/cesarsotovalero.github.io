@@ -11,7 +11,13 @@ date: 2020/01/28
 
 ## Tools
 
-- <a href="https://github.com/diverse-project/maven-miner"><i class="fa fa-github fa-2x"></i></a> [maven-miner](https://github.com/diverse-project/maven-miner/wiki) Mines Maven Central and creates a global dependency graph
+- <a href="https://github.com/diverse-project/maven-miner"><i class="fa fa-github fa-2x"></i></a> [maven-miner](https://github.com/diverse-project/maven-miner/wiki) Mines Maven Central and creates a global dependency graph.
+
+
+- <a href="https://github.com/src-d/engine"><i class="fa fa-github fa-2x"></i></a> [source{d} Engine](href="https://github.com/src-d/engine) Powerful language-agnostic analysis of your source code and git history.
+
+- <a href="https://github.com/RepoReapers/reaper"><i class="fa fa-github fa-2x"></i></a> [reaper](https://github.com/RepoReapers/reaper) Calculate the score of a repository based on best engineering practices.
+
 
 ## Datasets
 
@@ -21,5 +27,5 @@ date: 2020/01/28
 
 ## Influential papers
 
-- *[An in-depth study of the promises and perils of mining GitHub](https://link.springer.com/article/10.1007/s10664-015-9393-5)*. EMSE, 2015
+- [An in-depth study of the promises and perils of mining GitHub](https://link.springer.com/article/10.1007/s10664-015-9393-5). EMSE, 2015
 
