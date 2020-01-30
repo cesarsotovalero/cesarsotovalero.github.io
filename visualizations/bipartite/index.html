@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<html lang="en">
+
+<head>
+    <title> D3 Visualization</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
+</head>
+
+
 <style>
     text {
         font-size: 12px;
@@ -31,11 +40,9 @@
         stroke: grey;
     }
 </style>
-<body>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
-<script>
 
+<body>
+<script>
     var data = [['Lite', 'CA', 16, 0],
         ['Small', 'CA', 1278, 4],
         ['Medium', 'CA', 27, 0],
@@ -175,7 +182,7 @@
     ];
 
     [0, 1].forEach(function (i) {
-        g[i].call(bp[i])
+        g[i].call(bp[i]);
 
         g[i].append("text").attr("x", -50).attr("y", -8).style("text-anchor", "middle").text("Channel");
         g[i].append("text").attr("x", 250).attr("y", -8).style("text-anchor", "middle").text("State");
@@ -230,3 +237,4 @@
     d3.select(self.frameElement).style("height", "800px");
 </script>
 </body>
+</html>
