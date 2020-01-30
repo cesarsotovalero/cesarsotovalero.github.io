@@ -83,7 +83,36 @@ We start by monitoring the system calls triggered when exercising distinct regio
 ### Validation
 
 Select a set of Java applications and monitor their systems calls according to different workloads. System calls can be obtained with [`strace`](https://strace.io). Then, implement a tool to debloat the application based on the results of the system calls monitoring (see examples of deboating tools [here](https://www.cesarsotovalero.net/2020-01-07-software-debloating-tools)).  
+
+### References
  
 [1] [http://man7.org/linux/man-pages/man2/syscalls.2.html](http://man7.org/linux/man-pages/man2/syscalls.2.html) 
+
+<div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
+
+
+## 4. Automatic repair of dependency conflicts in Java
+
+### Motivation
+
+The [Java class loading mechanism](https://docs.oracle.com/javase/tutorial/ext/basics/load.html) does not permit to have multiple classes with the same fully-qualified name in the classpath of an application. Consequently, Maven has to choose a single version for every dependency. The [Maven dependency resolution mechanism](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html) chooses the library version that is nearest to the root of the dependency tree and "shadows" the other versions, i.e., the dependency tree will contain only one version per dependency. 
+
+Currently, Maven triggers warnings on the console to alert developers if dependency conflicts exist in the project [1]. The occurrence of conflicting versions is a issue known as the JAR hell in the Java  ecosystems, it is a best practice that developers solve them manually as soon as possible [2]. However, there is currently no tool to fix dependency conflicts at runtime in the Java ecosystem.
+
+### Approach
+
+We rely on dynamic program analysis to determine what dependencies are causing the conflicts. To do so, we execute the test suite of the project and inspect its dependency tree. The goal is to analyze the dependencies with respect to their actual usage and manipulate the `pom.xml` file accordingly to find the class members that might create the conflicts. The approach is similar to [3], with the difference that we perform the repair at run-time (ideally through the implementation of a dedicated Maven plugin).   
+
+### Validation
+
+Select a set of open-source projects that use Maven and have dependency conflicts causing build breakages at some stage of its build history, e.g., mining the Travis CI log files. Then clone the project at that stage and use the tool repair the conflict automatically. Report on the results obtained and compare to the static approach proposed in [3]. 
+
+### References
+
+[1] Wang, Ying, et al. ["Do the dependency conflicts in my project matter?"](https://dl.acm.org/doi/abs/10.1145/3236024.3236056). FSE, 2018.
+
+[2] Wang, Ying, et al. ["Could I have a stack trace to examine the dependency conflict issue?"](https://ieeexplore.ieee.org/abstract/document/8812128/). ICSE, 2019.
+
+[3] Macho, Christian, Shane McIntosh, and Martin Pinzger. ["Automatically repairing dependency-related build breakage"](https://ieeexplore.ieee.org/abstract/document/8330201/) SANER, 2018.
 
 <div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>

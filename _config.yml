@@ -23,7 +23,7 @@ description: PhD Student in Software Engineering
 
 # List of links in the navigation bar
 navbar-links:
-  Posts: "blog"
+  Blog Posts: "blog"
   Activities:
     - Publications: "publications"
     - Presentations: "presentations"
