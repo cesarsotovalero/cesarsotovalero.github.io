@@ -17,6 +17,7 @@ List of research topics that are open to further investigation. External collabo
 * [1. Debloat of mobile apps](#1-debloat-of-mobile-apps)
 * [2. Automatic migration from Java &lt; 8 to Java 11 modular system](#2-automatic-migration-from-java--8-to-java-11-modular-system)
 * [3. Identification of program hotpots by monitoring system calls](#3-identification-of-program-hotpots-by-monitoring-system-calls)
+* [4. Automatic repair of dependency conflicts in Java](#4-automatic-repair-of-dependency-conflicts-in-java)
 
 ## 1. Debloat of mobile apps
 
@@ -95,9 +96,9 @@ Select a set of Java applications and monitor their systems calls according to d
 
 ### Motivation
 
-The [Java class loading mechanism](https://docs.oracle.com/javase/tutorial/ext/basics/load.html) does not permit to have multiple classes with the same fully-qualified name in the classpath of an application. Consequently, Maven has to choose a single version for every dependency. The [Maven dependency resolution mechanism](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html) chooses the library version that is nearest to the root of the dependency tree and "shadows" the other versions, i.e., the dependency tree will contain only one version per dependency. 
+The [Java class loading mechanism](https://docs.oracle.com/javase/tutorial/ext/basics/load.html) does not permit to have multiple classes with the same fully-qualified name in the classpath of an application. Consequently, Maven has to choose a single version for every dependency. The [Maven dependency resolution mechanism](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html) determines the library version that is nearest to the root of the dependency tree and "shadows" the other versions, i.e., the dependency tree will contain only one version per dependency. 
 
-Currently, Maven triggers warnings on the console to alert developers if dependency conflicts exist in the project [1]. The occurrence of conflicting versions is a issue known as the JAR hell in the Java  ecosystems, it is a best practice that developers solve them manually as soon as possible [2]. However, there is currently no tool to fix dependency conflicts at runtime in the Java ecosystem.
+Currently, Maven triggers warnings on the console to alert developers if dependency conflicts exist in the project [1]. The occurrence of conflicting versions is an issue known as the JAR hell in the Java  ecosystems; and it is a best practice that developers solve them manually as soon as possible [2]. However, there is currently no tool to fix dependency conflicts at runtime in the Java ecosystem.
 
 ### Approach
 
@@ -105,7 +106,7 @@ We rely on dynamic program analysis to determine what dependencies are causing t
 
 ### Validation
 
-Select a set of open-source projects that use Maven and have dependency conflicts causing build breakages at some stage of its build history, e.g., mining the Travis CI log files. Then clone the project at that stage and use the tool repair the conflict automatically. Report on the results obtained and compare to the static approach proposed in [3]. 
+Select a set of open-source projects that use Maven and have dependency conflicts causing build breakages at some stage of its build history, e.g., mining the Travis CI log files. Then clone the project at that stage and use the implemented tool to repair the conflict automatically. Report on the results obtained and compare to the static approach proposed in [3]. 
 
 ### References
 
