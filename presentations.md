@@ -7,6 +7,11 @@ published: true
 
 As a PhD Student, I'm ~~forced~~ pleased to present my work in workshops, conferences, and everywhere.
 The following is a non-exhaustive list of my technical presentations.
+
+
+### 2020
+
+- [Are developers willing to remove bloated dependencies?](https://www.cesarsotovalero.net/presentations/assert-13th/#/). Presented at _13th ASSERT Software Engineering Workshop_, Stockholm, Sweden, Jan 2020.
   
 ### 2019
 

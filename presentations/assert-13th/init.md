@@ -6,7 +6,7 @@
 
 ---
 <div style= "font-size: 20pt">
-    César Soto-Valero, Nicolas Harrand, Martin Monperrus, and Benoit Baudry
+    César Soto-Valero &middot; Nicolas Harrand &middot; Martin Monperrus &middot; Benoit Baudry
 </div>
 
 ---
