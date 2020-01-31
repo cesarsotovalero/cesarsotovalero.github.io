@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: César's Pages
+title: Home
 
 # Short description of your site
 description: PhD Student in Software Engineering
@@ -29,8 +29,8 @@ navbar-links:
     - Presentations: "presentations"
     - Collaborations: "collaborations"
     - Competitions: "competitions"
-    - Software: "software"
-    - Service: "service"
+    - Softwares: "software"
+    - Services: "service"
   About Me: "aboutme"
 #  Search: "search"
 # Resume/CV: "https://cesarsotovalero.github.io/files/C-Soto-Valero-CV.pdf"
