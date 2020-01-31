@@ -11,7 +11,7 @@
 
 ---
 <div style= "font-size: 30pt">
-    Part of the paper submitted to <b>EMSE</b>
+    Part of the paper "A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem", submitted to <b>EMSE</b>
 </div>
 
 
