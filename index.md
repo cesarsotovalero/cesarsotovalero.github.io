@@ -35,11 +35,6 @@ I also do knowledge-seeking software engineering research, e.g., by extracting u
 
 ---
 
-<h2 class="text-center">Current Projects</h2>
-- _JDbl: Automatically Specializing Java Applications Through Dynamic Debloat_
-
----
-
 <h2 class="text-center">Organizations </h2>
 <p align="center">
 <a href="https://www.kth.se"><img class="" title="KTH" src="../img/logos/kth_logo.png" alt="KTH" width="100" height="100"></a>
