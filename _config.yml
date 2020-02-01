@@ -4,14 +4,12 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://cesarsotovalero.github.io"
+url: "http://cesarsotovalero.net"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
-
-# Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
 title: Home
@@ -33,8 +31,7 @@ navbar-links:
     - Services: "service"
   About Me: "aboutme"
 #  Search: "search"
-# Resume/CV: "https://cesarsotovalero.github.io/files/C-Soto-Valero-CV.pdf"
-  
+
   
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -242,3 +239,4 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-sitemap
