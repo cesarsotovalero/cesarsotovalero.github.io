@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Service
+title: Services
 subtitle: Teaching | Supervisor | Reviewer  
 published: true
 ---

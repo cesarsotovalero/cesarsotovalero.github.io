@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Software
+title: Softwares
 subtitle: OSS | GitHub Collaborations | Dealing With Bugs
 published: true
 ---
