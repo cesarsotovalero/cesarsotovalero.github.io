@@ -232,6 +232,7 @@ prose:
 gems:
   - jekyll-paginate
   - jemoji
+  - jekyll-sitemap
   
   
 # --- Piwik Integration --- #
