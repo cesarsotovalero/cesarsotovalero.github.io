@@ -4,7 +4,14 @@ title: Search
 subtitle: Feeling lost? Look for things in this website.
 ---
 
-<div>
-<script async src="https://cse.google.com/cse.js?cx=010450091204239388022:ir3s2fp5byj"></script>
-<div class="gcse-search"></div>
-</div>
+
+
+<div class="search">
+   <form method="get" action="https://www.google.com/search">
+      <input name="sitesearch" value="cesarsotovalero.github.io" type="hidden"/>
+             <input type="text" id="search-query" class="field field-text"
+               onfocus="$('.google').css('visibility', 'visible');" name="q" placeholder="Search..." autocomplete="off"/>
+             <input type="image" src="//www.yegor256.com/images/google-search-icon.svg" class="google"
+               title="Search in this site via Google" alt="Search in this site via Google"/>
+           </form>
+</div>  

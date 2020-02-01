@@ -3,6 +3,7 @@ layout: post
 title: Mining software repositories
 subtitle: List of resources
 published: true
+tags: data-mining software
 image: ../img/posts/gold_mining.jpg
 date: 2020/01/28
 ---
