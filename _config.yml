@@ -177,6 +177,8 @@ exclude:
   - README.md
   - Vagrantfile
 
+
+
 # prose.io config
 prose:
   rooturl: '_posts'
@@ -228,6 +230,11 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
+
+
+# see https://github.com/pattex/jekyll-tagging
+tag_page_layout: tag-index
+tag_page_dir: tag
 
 gems:
   - jekyll-paginate

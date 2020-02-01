@@ -97,6 +97,8 @@ GEM
     jekyll-sitemap (0.12.0)
       jekyll (~> 3.3)
     jekyll-swiss (0.4.0)
+    jekyll-tagging (1.1.0)
+      nuggets
     jekyll-watch (1.5.1)
       listen (~> 3.0)
     jemoji (0.7.0)
@@ -120,6 +122,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.7-x64-mingw32)
       mini_portile2 (~> 2.4.0)
+    nuggets (1.6.0)
     octokit (4.15.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -156,6 +159,7 @@ DEPENDENCIES
   github-pages (= 106)
   jekyll-paginate
   jekyll-sitemap
+  jekyll-tagging
   jemoji
 
 BUNDLED WITH
