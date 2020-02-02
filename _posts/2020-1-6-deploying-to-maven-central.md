@@ -14,7 +14,7 @@ date: 2020/1/06
 
 Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM. In this post, I'll describe the process of releasing a new artifact in Maven Central following an step-by-step approach. 
 
-## TOC
+## Contents
 
 * [1. Create a JIRA ticket in Sonatype](#1-create-a-jira-ticket-in-sonatype)
 * [2. Configuring the POM](#2-configuring-the-pom)

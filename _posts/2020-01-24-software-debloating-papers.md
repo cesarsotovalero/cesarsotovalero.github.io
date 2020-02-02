@@ -10,7 +10,7 @@ date: 2020/01/24
 
 This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articles related to program debloating and software specialization. 
 
-## Table of Contents
+## Contents
 
 * [2020](#2020)
 * [2019](#2019)
