@@ -99,6 +99,25 @@ blockquote p:first-child {
     margin-top: 0;
 }
 
+
+.post-categories {
+    /*background-color: gray;*/
+    font-family: "Source Code Pro", monospace;
+    font-size: 16px;
+    margin-right: 4px;
+    padding: 0 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/*.post-categories:visited {*/
+/*    color: white !important;*/
+/*}*/
+
+/*.post-categories:hover {*/
+/*    background-color: black;*/
+/*}*/
+
 hr.small {
     max-width: 100px;
     margin: 15px auto;
@@ -1116,5 +1135,10 @@ input.gsc-input,
     font-size: 20px;
     padding: 4px 10px;
 }
+
+
+
+
+
 
 

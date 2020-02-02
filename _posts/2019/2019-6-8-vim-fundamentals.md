@@ -3,6 +3,7 @@ layout: post
 title: Vim fundamentals
 subtitle: The must-know vim tricks for software developers
 published: false
+categories: vim
 image: ../img/people.png
 date: 2019/2/14
 ---
