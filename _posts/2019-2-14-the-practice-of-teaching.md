@@ -3,7 +3,7 @@ layout: post
 title: The practice of teaching
 subtitle: The ultimate skill to learn
 published: true
-categories: soft-skills
+tags: soft-skills
 image: ../img/people.png
 date: 2019/2/14
 ---
