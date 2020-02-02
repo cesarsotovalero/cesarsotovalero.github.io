@@ -3,6 +3,7 @@ layout: post
 title: Vulnerability exploitation
 subtitle: Zip Slip attacks
 published: true
+tags: security
 image: ../img/posts/zipper.jpg
 date: 2019/10/16
 ---

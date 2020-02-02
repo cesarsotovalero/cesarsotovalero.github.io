@@ -2,7 +2,7 @@
 layout: post
 title: Deploying to Maven Central
 subtitle: A three-steps guide
-tags: management career
+tags: maven software
 published: true
 image: ../img/posts/maven_central_dep762pX762p.jpg
 date: 2020/1/06
@@ -30,7 +30,7 @@ First, you need to create a JIRA account and submit a ticket there requesting fo
 
 A staging repository is already configured for the requested GroupId, you need to find someone with a deployer role that comment on the ticket to verify your request. Below is an example of a ticket that I created requesting a repository for the namespace `se.kth.castor`
 
-![](../../img/posts/sonatype_screeshot.png)
+![](../img/posts/sonatype_screeshot.png)
 
 The ticked review is a manual process, it normally takes less than 2 business days.
 

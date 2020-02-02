@@ -2,6 +2,7 @@
 layout: post
 title: Updating dependencies matters
 subtitle: The case of zip slip vulnerability
+tags: security
 published: false
 image: ../img/people.png
 date: 2019/2/14

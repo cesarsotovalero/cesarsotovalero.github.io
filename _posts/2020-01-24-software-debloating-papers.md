@@ -3,6 +3,7 @@ layout: post
 title: Software debloating papers
 subtitle: Living literature review 
 published: true
+tags: debloating papers
 image: ../img/debloating.png
 date: 2020/01/24
 ---

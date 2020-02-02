@@ -3,6 +3,7 @@ layout: post
 title: Software debloating tools
 subtitle: Living tooling list
 published: true
+tags: debloating tools
 image: ../blog/img/debloating.png   
 date: 2020/1/07
 ---
