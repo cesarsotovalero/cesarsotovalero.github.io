@@ -1,15 +1,13 @@
 ---
 layout: page
-title: My blog posts
+title: Blog posts
 subtitle: Software Technology | Research | Self-Improvement
 ---
 
+<!-- List of tags -->
+{% include archive.html %}
 
-<div class="list-filters">
-  <a href="/" class="list-filter filter-selected">All posts</a>
-  <a href="/tools" class="list-filter">Tools</a>
-  <a href="/research" class="list-filter">Research</a>
-</div>
+<hr>
 
 <div class="posts-list">
   {% for post in paginator.posts %}

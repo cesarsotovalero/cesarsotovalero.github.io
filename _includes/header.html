@@ -61,18 +61,13 @@
 
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
-			<span class="post-categories">
-				{% if post %}
-				{% assign categories = post.categories %}
-				{% else %}
-				{% assign categories = page.categories %}
-				{% endif %}
-				{% for category in categories %}
-				<img src="../img/tag-solid.svg" style="width:1em" alt="category"></a>
-				<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-				{% unless forloop.last %}&nbsp;{% endunless %}
-				{% endfor %}
-			</span>
+					<span class="post-categories">[
+					  {% for tag in page.tags %}
+						{% capture tag_name %}{{ tag }}{% endcapture %}
+						<img src="../img/tag-solid.svg" style="width:1em" alt="tag">
+						<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>
+					  {% endfor %}
+					]</span>
 		  {% endif %}
         </div>
       </div>

@@ -38,7 +38,7 @@ First of all, there is no official pass or fail for the test. IELTS is scored on
 
 <p align="center">
   <a href="">
-    <img src="../../img/IETLS_Test_Report_Form.jpg" height="500px"/>
+    <img src="../img/IETLS_Test_Report_Form.jpg" height="500px"/>
   </a>
 </p>
 

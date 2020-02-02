@@ -33,8 +33,13 @@
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <script src="js/typed.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+  {% if site.tags != "" %}
+    {% include collecttags.html %}
+  {% endif %}
+
+
   {% include gtm_head.html %}
 
   {% if layout.common-ext-css %}

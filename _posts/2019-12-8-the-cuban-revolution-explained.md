@@ -3,6 +3,7 @@ layout: post
 title: The cuban revolution 
 subtitle: My vision
 published: true
+tags: misc
 image: ../img/posts/cuba_flag.jpg
 date: 2019/12/8
 ---

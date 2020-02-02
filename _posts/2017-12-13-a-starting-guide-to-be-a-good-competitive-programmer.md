@@ -3,7 +3,7 @@ layout: post
 title: A starting guide to be a good competitive programmer
 subtitle: Because learning is more important than competing
 published: true
-categories: programming
+tags: programming
 image: ../img/competitive-programming-brain.png
 date: 2017/12/15
 ---
@@ -14,7 +14,7 @@ I remembered my first ACM-ICPC contest in 2009. It was a mess for me. With only 
 
 <p align="center">
   <a href="">
-    <img src="../../img/competitive-programming.png" height="250px"/>
+    <img src="../img/competitive-programming.png" height="250px"/>
   </a>
 </p>
 
@@ -72,6 +72,6 @@ Again, life is more than a competition. With time you will note that competitive
 
 <p align="center">
   <a href="">
-    <img src="../../img/ACM-ICPC.jpg" height="500px"/>
+    <img src="../img/ACM-ICPC.jpg" height="500px"/>
   </a>
 </p>

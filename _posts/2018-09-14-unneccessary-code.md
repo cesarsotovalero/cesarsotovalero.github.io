@@ -3,7 +3,7 @@ layout: post
 title: Unnecessary code
 subtitle: Clarifying the concept 
 published: true
-categories: debloating
+tags: debloating
 image: ../img/codecode.png
 date: 2018/09/14
 ---
@@ -14,7 +14,7 @@ Thus, to put all the important related concepts in the same place, I made the fo
 
 <p align="center">
   <a href="">
-    <img src="../../img/general-diagram.png" height="350px"/>
+    <img src="../img/general-diagram.png" height="350px"/>
   </a>
 </p>
 
