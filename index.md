@@ -1,7 +1,7 @@
 ---
 layout: page
 title: César Soto Valero
-subtitle: Ph.D. Student | Simplicity Lover | Nice Guy
+subtitle: Ph.D. Student | Simplicity Lover | + Person
 use-site-title: true
 ---
 
