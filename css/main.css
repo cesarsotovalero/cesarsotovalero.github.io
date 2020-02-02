@@ -7,8 +7,8 @@ layout: null
 /* --- General --- */
 
 body {
-    font-family: 'Lora', 'Times New Roman', serif;
-    font-size: 18px;
+    font-family: "Cambria","Georgia","Times New Roman",serif;
+    font-size: 20px;
     color: #000000;
     position: relative;
     background: #FFF;
@@ -72,7 +72,7 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Cambria","Georgia","Times New Roman",serif;
     font-weight: 800;
 }
 
@@ -91,7 +91,7 @@ a:focus {
 blockquote {
     color: darkgreen;
     font-style: italic;
-    font-size: 18px;
+    font-size: 20px;
     border-left: 2px solid darkgreen;
 }
 
