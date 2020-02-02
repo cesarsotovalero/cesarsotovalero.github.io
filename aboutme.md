@@ -25,7 +25,7 @@ subtitle: The Quick Summary
 -->
 
 <form class="wj-contact" action="https://formspree.io/mrgqpknn" method="POST">
-    <input type="text" name="email" placeholder="Email Address">
+    <input type="text" name="email" placeholder="Your Email Address">
     <textarea type="text" name="content" rows="5" placeholder="Message"></textarea>
     <input type="hidden" name="_next" value="<REDIRECTION LINK> ">
     <input type="hidden" name="_subject" value="New Contact Form Submission">
