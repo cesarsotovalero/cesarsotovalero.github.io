@@ -3,6 +3,7 @@ layout: post
 title: Unnecessary code
 subtitle: Clarifying the concept 
 published: true
+categories: debloating
 image: ../img/codecode.png
 date: 2018/09/14
 ---
