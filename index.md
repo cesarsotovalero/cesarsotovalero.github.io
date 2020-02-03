@@ -1,7 +1,7 @@
 ---
 layout: page
 title: César Soto Valero
-subtitle: Ph.D. Student | Simplicity Lover | + Person
+subtitle: Ph.D. Student | Simplicity Lover | + Guy
 use-site-title: true
 ---
 
@@ -17,7 +17,7 @@ css: '/css/extend-home.css'
 -->
 
 > "It seems that perfection is attained, not when there is nothing more to add, but when there is nothing more to take away"
-> -- <cite>Antoine de Saint Exupéry</cite>
+> -- <cite>Antoine de Saint-Exupéry</cite>
 
 ---
 
