@@ -7,7 +7,7 @@ layout: null
 /* --- General --- */
 
 body {
-    font-family: "Cambria","Georgia","Times New Roman",serif;
+    font-family: "Cambria", "Georgia", "Times New Roman", serif;
     font-size: 20px;
     color: #000000;
     position: relative;
@@ -72,7 +72,7 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Cambria","Georgia","Times New Roman",serif;
+    font-family: "Cambria", "Georgia", "Times New Roman", serif;
     font-weight: 800;
 }
 
