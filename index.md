@@ -1,6 +1,6 @@
 ---
 layout: page
-title: César Soto Valero
+title: Hello, I'm César
 subtitle: Ph.D. Student | Simplicity Lover | + Guy
 use-site-title: true
 ---
