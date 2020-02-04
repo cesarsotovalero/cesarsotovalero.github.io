@@ -15,7 +15,7 @@ baseurl: ""
 title: 【ツ】
 
 # Short description of your site
-description: César's Website
+description: César's website
 
 # --- Navigation bar options --- #
 
@@ -65,7 +65,7 @@ page-img: "/img/noise.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Hello, I'm César
+  name: César Soto Valero
   email: "cesarsotovalero@gmail.com"
   github: cesarsotovalero
   twitter: yourname
@@ -139,6 +139,10 @@ title-separator: "-"
 timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
+syntax_highlighter_opts:
+  block:
+    line_numbers: true
+
 permalink: /:year-:month-:day-:title/
 paginate: 20
 paginate_path: "/blog/page:num/"
