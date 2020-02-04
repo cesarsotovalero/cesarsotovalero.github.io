@@ -23,14 +23,14 @@ description: César's website
 navbar-links:
   Blog Posts: "blog"
   Activities:
-    - Publications: "publications"
-    - Presentations: "presentations"
-    - Collaborations: "collaborations"
-    - Competitions: "competitions"
-    - Softwares: "software"
-    - Services: "service"
-  About Me: "aboutme"
-#  Search: "search"
+    - Publications: "pages/publications"
+    - Presentations: "pages/presentations"
+    - Collaborations: "pages/collaborations"
+    - Competitions: "pages/competitions"
+    - Softwares: "pages/software"
+    - Services: "pages/service"
+  About Me: "pages/aboutme"
+#  Search: "pages/search"
 
   
 
