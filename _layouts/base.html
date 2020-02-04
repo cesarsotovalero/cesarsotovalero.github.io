@@ -1,74 +1,78 @@
 ---
 common-css:
-  - "/css/bootstrap.min.css"
-  - "/css/bootstrap-social.css"
-  - "/css/main.css"
+- "/css/bootstrap.min.css"
+- "/css/bootstrap-social.css"
+- "/css/main.css"
 common-ext-css:
-  - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+- "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
 common-googlefonts:
-  - "Lora:400,700,400italic,700italic"
-  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+- "Lora:400,700,400italic,700italic"
+- "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
 common-js:
-  - "/js/jquery-1.11.2.min.js"
-  - "/js/bootstrap.min.js"
-  - "/js/main.js"
-  - "/js/typed.js"
+- "/js/jquery-1.11.2.min.js"
+- "/js/bootstrap.min.js"
+- "/js/main.js"
+- "/js/typed.js"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include gtm_body.html %}
-  
-    {% include nav.html %}
+{% include gtm_body.html %}
 
-    {{ content }}
+{% include nav.html %}
 
-    {% include footer.html %}
-  
-    {% include footer-scripts.html %}
-    
-  <script>
-    var typed = new Typed('.type', {
+{{ content }}
+
+{% include footer.html %}
+
+{% include footer-scripts.html %}
+
+<script>
+  var typed = new Typed('.type', {
     strings: ["Researcher", "Teacher", "Collaborator", "Writer", "Software Developer", "Software Architect", "Manager", "Data Scientist",
       "R Programmer", "Java Programmer", "Front End Web Developer"
-             ],
+    ],
     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-		stringsElement: null,
-		// typing speed
-		typeSpeed: 100,
-		// time before typing starts
-		startDelay: 1200,
-		// backspacing speed
-		backSpeed: 20,
-		// time before backspacing
-		backDelay: 500,
-		// loop
-		loop: true,
-		// false = infinite
-		loopCount: 10,
-		// show cursor
-		showCursor: true,
-		// character for cursor
-		cursorChar: "|",
-		// attribute to type (null == text)
-		attr: null,
-		// either html or text
-		contentType: 'html',
-		// call when done callback function
-		callback: function() {},
-		// starting callback function before each string
-		preStringTyped: function() {},
-		//callback for every typed string
-		onStringTyped: function() {},
-		// callback for reset
-		resetCallback: function() {}
-    });  
-  </script>
-  
-  
-  </body>
+    stringsElement: null,
+    // typing speed
+    typeSpeed: 100,
+    // time before typing starts
+    startDelay: 1200,
+    // backspacing speed
+    backSpeed: 20,
+    // time before backspacing
+    backDelay: 500,
+    // loop
+    loop: true,
+    // false = infinite
+    loopCount: 10,
+    // show cursor
+    showCursor: true,
+    // character for cursor
+    cursorChar: "|",
+    // attribute to type (null == text)
+    attr: null,
+    // either html or text
+    contentType: 'html',
+    // call when done callback function
+    callback: function () {
+    },
+    // starting callback function before each string
+    preStringTyped: function () {
+    },
+    //callback for every typed string
+    onStringTyped: function () {
+    },
+    // callback for reset
+    resetCallback: function () {
+    }
+  });
+</script>
+
+
+</body>
 </html>
