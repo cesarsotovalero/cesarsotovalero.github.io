@@ -29,6 +29,15 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 
 ### 2020
 
+![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) [TOSEM] **Is Static Analysis Able to Identify Unnecessary Source Code?** [[link]](https://www.cqse.eu/publications/2020-unnecessary-code-tosem.pdf) 
+
+<details> 
+Grown software systems often contain code that is not necessary anymore. Such unnecessary code wastesresources during development and maintenance, for example, when preparing code for migration or certifi-cation. Running a profiler may reveal code that is not used in production, but it is often time-consuming toobtain representative data in this way.
+
+We investigate to what extent a static analysis approach, which is based on code stability and code centrality,is able to identify unnecessary code and whether its recommendations are relevant in practice. To study thefeasibility and usefulness of our approach, we conducted a study involving 14 open-source and closed-sourcesoftware systems. As there is no perfect oracle for unnecessary code, we compared recommendations forunnecessary code with historical cleanups, runtime usage data, and feedback from 25 developers of fivesoftware projects. Our study shows that recommendations generated from stability and centrality informationpoint to unnecessary code that cannot be identified by dead code detectors. Developers confirmed that 34%of recommendations were indeed unnecessary and deleted 20% of the recommendations shortly after ourinterviews. Overall, our results suggest that static analysis can provide quick feedback on unnecessary codeand is useful in practice
+</details>
+
+
 ![Custom badge](https://img.shields.io/badge/-JOURNAL_ARTICLE-C32B72.svg) [TSE] **MoMIT: Porting a JavaScript Interpreter on a Quarter Coin** [[link]](https://www-computer-org.focus.lib.kth.se/csdl/journal/ts/5555/01/08966499/1gNELA0WeCA) 
 
 <details> 

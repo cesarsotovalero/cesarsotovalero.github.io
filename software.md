@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Softwares
-subtitle: OSS | GitHub Collaborations | Dealing With Bugs
+subtitle: Open-source Software | Coding | Fighting Bugs
 published: true
 ---
 
@@ -12,7 +12,6 @@ I develop robust software prototypes to support my research. I also contribute t
 - <a href="https://github.com/cesarsotovalero/timeSeriesClassification"><i class="fa fa-github fa-2x"></i></a> [time-series-classification](https://github.com/cesarsotovalero/timeSeriesClassification):  A package for time series classification in Weka. It implements DTW as the distance function for the KNN base learner and a filter for the reduction of noisy instances. 
 
 ### Related software
-
 
 - [CausalImpact](https://github.com/google/CausalImpact): Causal inference on time series.
 - [Dependency-Track](https://github.com/DependencyTrack/dependency-track)
