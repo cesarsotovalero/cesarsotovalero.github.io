@@ -20,7 +20,7 @@ published: true
 ### Reviewer
 
 - [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634)
-- [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481)
+- <a href="../../files/certificates/SMR_Certificate.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481)
 - [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current)
 
 > My updated revision stats for journals can be seen in [Publons](https://publons.com/researcher/1355482/cesar-soto-valero/peer-review/).
@@ -33,7 +33,7 @@ published: true
 
 ### Volunteer 
 
--  [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), Staff Member & Participant
--  [ICPC - ACM International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), Staff Member
+-  [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), Staff Member & Participant, 2020
+-  <a href="../../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> [ICPC - ACM International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), Staff Member, 2017
 
 
