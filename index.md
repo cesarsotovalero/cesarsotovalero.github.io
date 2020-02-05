@@ -50,10 +50,20 @@ css: '/css/extend-home.css'
                     </li>
                     {% endif %}
                     &bull;
+                                     {% if site.author.linkedin and site.footer-links-active.linkedin %}
+                                      <li>
+                                         <a href="https://linkedin.com/in/{{ site.author.linkedin }}" style="color: black" title="My LinkedIn Profile">
+                                         <span class="fa-stack fa" aria-hidden="true">
+                                           <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                         </span>
+                                            <span class="sr-only">LinkedIn</span>
+                                         </a>
+                                      </li>
+                              {% endif %}
                     <li>
                       <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero" style="color: black" title="My ResearchGate Profile">
                                   <span class="fa-stack fab" aria-hidden="true">
-                                    <i class="fab fa-researchgate fa-stack-1x"></i>
+                                    <i class="ai ai-researchgate ai-1x"></i>
                                   </span>
                                   <span class="sr-only">ResearchGate</span>
                                 </a>
@@ -61,11 +71,27 @@ css: '/css/extend-home.css'
                     <li>
                       <a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en" style="color: black" title="My GoogleScholar Profile">
                                                       <span class="fa-stack fab" aria-hidden="true">
-                                                        <i class="fas fa-graduation-cap fa-stack-1x"></i>
+                                                        <i class="ai ai-google-scholar ai-1x"></i>
                                                       </span>
                                                       <span class="sr-only">ResearchGate</span>
                                                     </a>
                     </li>
+                    <li>
+                      <a href="https://dblp.uni-trier.de/pers/s/Soto=Valero:C=eacute=sar.html" style="color: black" title="My dblp Profile">
+                            <span class="fa-stack fab" aria-hidden="true">
+                                                        <i class="ai ai-dblp ai-1x"></i>
+                                                      </span>
+                                                      <span class="sr-only">DBLP</span>
+                                                    </a>
+                                        </li>
+                    <li>
+                                          <a href="https://orcid.org/0000-0003-0541-6411" style="color: black" title="My ORCID Id">
+                                                <span class="fa-stack fab" aria-hidden="true">
+                                                                            <i class="ai ai-orcid ai-1x"></i>
+                                                                          </span>
+                                                                          <span class="sr-only">ORCID</span>
+                                                                        </a>
+                                                            </li>                    
                     		  {% if site.author.twitter and site.footer-links-active.twitter %}
           <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" style="color: black" title="Twitter">
@@ -88,17 +114,7 @@ css: '/css/extend-home.css'
             </a>
           </li>
           {% endif %}
-                 {% if site.author.linkedin and site.footer-links-active.linkedin %}
-                  <li>
-                     <a href="https://linkedin.com/in/{{ site.author.linkedin }}" style="color: black" title="My LinkedIn Profile">
-                     <span class="fa-stack fa" aria-hidden="true">
-                       <i class="fab fa-linkedin fa-stack-1x"></i>
-                     </span>
-                        <span class="sr-only">LinkedIn</span>
-                     </a>
-                  </li>
-          {% endif %}
-          &bull;
+           &bull;
           {% if site.author.youtube and site.footer-links-active.youtube %}
                     <li>
                       <a href="https://www.youtube.com/{{ site.author.youtube }}" style="color: black" title="My YouTube Profile">
@@ -113,7 +129,7 @@ css: '/css/extend-home.css'
           <li>
             <a href="mailto:{{ site.author.email }}" style="color: black" title="Email me">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-envelope fa-stack-1x"></i>
+                <i class="fas fa-envelope fa-stack-1x"></i>
               </span>
               <span class="sr-only">Email me</span>
             </a>
