@@ -15,7 +15,7 @@ subtitle: The Quick Summary
 :dart: ![Custom badge](https://img.shields.io/badge/-HOBBIES-blue.svg) Out of work, I enjoy spending time with my family, reading books, and running through the beautiful parks in Stockholm.
 
 
-### Contact me
+## Contact me
 
 <!-- 
      After implementing this contact form make sure
