@@ -25,13 +25,13 @@ css: '/css/extend-home.css'
 
 ---
 
-<h1 class="text-center">Recent Posts</h1>
+<!-- <h1 class="text-center">Recent Posts</h1> -->
 <div class="posts-list">
-  {% for post in site.posts limit:3 %}
+  {% for post in site.posts limit:5 %}
   <article class="text-left" >
     <span class="text-left">  
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-title-main">
-          <h3 class="post-title-main">{{ post.title }}</h3>
+          <h2 class="post-title-main">{{ post.title }}</h2>
         </a>
             <p class="post-meta-index">
               Posted on {{ post.date | date: "%B %-d, %Y" }}
