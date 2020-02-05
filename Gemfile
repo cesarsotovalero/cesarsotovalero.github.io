@@ -5,4 +5,3 @@ gem 'github-pages', '106'
 gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 gem 'jekyll-tagging'
-

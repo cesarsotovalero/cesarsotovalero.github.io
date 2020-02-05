@@ -23,7 +23,7 @@ published: true
 - <a href="../../files/certificates/SMR_Certificate.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481)
 - [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current)
 
-> My updated revision stats for journals can be seen in [Publons](https://publons.com/researcher/1355482/cesar-soto-valero/peer-review/).
+> My updated revision stats for journals can be seen in [Publons](https://publons.com/researcher/1355482/cesar-soto-valero/peer-review)(<a href="https://publons.com/researcher/1355482/cesar-soto-valero/peer-review" style="text-decoration: underline;"><i class="ai ai-publons"></i></a>).
 
 #### Subreviewer
 

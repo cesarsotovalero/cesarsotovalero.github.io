@@ -12,18 +12,18 @@ date: 2020/01/28
 
 ## Tools
 
-- <a href="https://github.com/diverse-project/maven-miner"><i class="fa fa-github fa-2x"></i></a> [maven-miner](https://github.com/diverse-project/maven-miner/wiki) Mines Maven Central and creates a global dependency graph.
+- <a href="https://github.com/diverse-project/maven-miner"><i class="fab fa-github"></i></a> [maven-miner](https://github.com/diverse-project/maven-miner/wiki) Mines Maven Central and creates a global dependency graph.
 
-- <a href="https://github.com/src-d/engine"><i class="fa fa-github fa-2x"></i></a> [source{d} Engine](href="https://github.com/src-d/engine) Powerful language-agnostic analysis of your source code and git history.
+- <a href="https://github.com/src-d/engine"><i class="fab fa-github"></i></a> [source{d} Engine](href="https://github.com/src-d/engine) Powerful language-agnostic analysis of your source code and git history.
 
-- <a href="https://github.com/RepoReapers/reaper"><i class="fa fa-github fa-2x"></i></a> [reaper](https://github.com/RepoReapers/reaper) Calculate the score of a repository based on best engineering practices.
+- <a href="https://github.com/RepoReapers/reaper"><i class="fab fa-github"></i></a> [reaper](https://github.com/RepoReapers/reaper) Calculate the score of a repository based on best engineering practices.
 
 
 ## Datasets
 
-- <a href="https://github.com/igrigorik/gharchive.org/tree/master"><i class="fa fa-github fa-2x"></i></a> [GH Archive](https://www.gharchive.org) Records the public GitHub timeline, archive it, and make it easily accessible for further analysis.
+- <a href="https://github.com/igrigorik/gharchive.org/tree/master"><i class="fab fa-github"></i></a> [GH Archive](https://www.gharchive.org) Records the public GitHub timeline, archive it, and make it easily accessible for further analysis.
 
-- <a href="https://github.com/ghtorrent/ghtorrent.org"><i class="fa fa-github fa-2x"></i></a> [The GHTorrent project](http://ghtorrent.org) An effort to create a scalable, queriable, offline mirror of data offered through the Github REST API.
+- <a href="https://github.com/ghtorrent/ghtorrent.org"><i class="fab fa-github"></i></a> [The GHTorrent project](http://ghtorrent.org) An effort to create a scalable, queriable, offline mirror of data offered through the Github REST API.
 
 ## Influential papers
 
