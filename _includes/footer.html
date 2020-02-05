@@ -19,7 +19,7 @@
             <a href="https://github.com/{{ site.author.github }}" title="My GitHub Profile">
               <span class="fa-stack fa-lg" aria-hidden="true">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
               </span>
               <span class="sr-only">GitHub</span>
             </a>
@@ -31,12 +31,35 @@
               <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="My StackOverflow Profile">
               <span class="fa-stack fa-lg" aria-hidden="true">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
               </span>
                  <span class="sr-only">StackOverflow</span>
               </a>
            </li>
            {% endif %}
+           |
+           <li>
+              <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero" title="My ResearchGate Profile">
+                                  <span class="fa-stack fa-lg" aria-hidden="true">
+                                     <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-researchgate fa-stack-1x fa-inverse"></i>
+                                  </span>
+                 <span class="sr-only">ResearchGate</span>
+              </a>
+           </li>
+           <li>
+              <a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en" title="My GoogleScholar Profile">
+                                                      <span class="fa-stack fa-lg" aria-hidden="true">
+                                                         <i class="fa fa-circle fa-stack-2x"></i>
+                                                        <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                                                      </span>
+                 <span class="sr-only">ResearchGate</span>
+              </a>
+           </li>
+
+
+
+
 		  {% if site.author.twitter and site.footer-links-active.twitter %}
           <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
@@ -75,9 +98,21 @@
               <a href="https://linkedin.com/in/{{ site.author.linkedin }}" title="My LinkedIn Profile">
               <span class="fa-stack fa-lg" aria-hidden="true">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
               </span>
                  <span class="sr-only">LinkedIn</span>
+              </a>
+           </li>
+           {% endif %}
+           |
+           {% if site.author.youtube and site.footer-links-active.youtube %}
+           <li>
+              <a href="https://www.youtube.com/{{ site.author.youtube }}" title="My YouTube Channel">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+              </span>
+                 <span class="sr-only">YouTube</span>
               </a>
            </li>
            {% endif %}
@@ -93,7 +128,6 @@
             </a>
           </li>
           {% endif %}
-
 		  {% if site.author.xing and site.footer-links-active.xing %}
           <li>
             <a href="https://www.xing.com/profile/{{ site.author.xing }}" title="Xing">
@@ -125,17 +159,6 @@
                 <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
               </span>
               <span class="sr-only">Instagram</span>
-            </a>
-          </li>
-          {% endif %}
-      {% if site.author.youtube and site.footer-links-active.youtube %}
-          <li>
-            <a href="https://www.youtube.com/{{ site.author.youtube }}" title="My YouTube Channel">
-              <span class="fa-stack fa-lg" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">YouTube</span>
             </a>
           </li>
           {% endif %}
