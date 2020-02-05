@@ -42,7 +42,7 @@ css: '/css/extend-home.css'
           {% endif %}
           	  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
                     <li>
-                      <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" style="color: black;" title="StackOverflow">
+                      <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" style="color: black;" title="My StackOverflow Profile">
                         <span class="fa-stack fa" aria-hidden="true">
                           <i class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
@@ -73,17 +73,17 @@ css: '/css/extend-home.css'
             </a>
           </li>
           {% endif %}
-          		  {% if site.author.linkedin and site.footer-links-active.linkedin %}
-                    <li>
-                      <a href="https://linkedin.com/in/{{ site.author.linkedin }}" style="color: black" title="LinkedIn">
-                        <span class="fa-stack fa" aria-hidden="true">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                        </span>
+                 {% if site.author.linkedin and site.footer-links-active.linkedin %}
+                  <li>
+                     <a href="https://linkedin.com/in/{{ site.author.linkedin }}" style="color: black;" title="My LinkedIn Profile">
+                     <span class="fa-stack fa" aria-hidden="true">
+                       <i class="fa fa-circle fa-stack-2x"></i>
+                       <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                     </span>
                         <span class="sr-only">LinkedIn</span>
-                      </a>
-                    </li>
-                    {% endif %}
+                     </a>
+                  </li>
+                  {% endif %}
 		  {% if site.author.email and site.footer-links-active.email %}
           <li>
             <a href="mailto:{{ site.author.email }}" style="color: black;" title="Email me">
