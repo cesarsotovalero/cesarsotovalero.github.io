@@ -513,6 +513,14 @@ footer .theme-by {
   }
 }
 
+logo-main {
+  color:black;
+}
+
+logo-main a:hover{
+  color:darkblue;
+}
+
 /* --- Post preview --- */
 
 .post-preview {

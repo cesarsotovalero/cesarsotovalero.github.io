@@ -16,8 +16,201 @@ bigimg: [
 css: '/css/extend-home.css'
 -->
 
+
+<ul class="list-inline text-center footer-links">
+          {% if site.author.facebook and site.footer-links-active.facebook %}
+          <li>
+            <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Facebook</span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.github and site.footer-links-active.github %}
+          <li>
+            <a href="https://github.com/{{ site.author.github }}" style="color: black;" title="My GitHub Profile">
+              <span class="fa-stack fa" aria-hidden="true" >
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">GitHub</span>
+            </a>
+          </li>
+          {% endif %}
+          	  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
+                    <li>
+                      <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" style="color: black;" title="StackOverflow">
+                        <span class="fa-stack fa" aria-hidden="true">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span class="sr-only">StackOverflow</span>
+                      </a>
+                    </li>
+                    {% endif %}
+		  {% if site.author.twitter and site.footer-links-active.twitter %}
+          <li>
+            <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Twitter</span>
+            </a>
+          </li>
+          {% endif %}
+	  {% if site.author.reddit and site.footer-links-active.reddit %}
+          <li>
+            <a href="https://reddit.com/u/{{ site.author.reddit }}" title="Reddit">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Reddit</span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.email and site.footer-links-active.email %}
+          <li>
+            <a href="mailto:{{ site.author.email }}" style="color: black;" title="Email me">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Email me</span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.linkedin and site.footer-links-active.linkedin %}
+          <li>
+            <a href="https://linkedin.com/in/{{ site.author.linkedin }}" title="LinkedIn">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.xing and site.footer-links-active.xing %}
+          <li>
+            <a href="https://www.xing.com/profile/{{ site.author.xing }}" title="Xing">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-xing fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Xing</span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.snapchat and site.footer-links-active.snapchat %}
+          <li>
+            <a href="https://www.snapchat.com/add/{{ site.author.snapchat }}" title="Snapchat">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-snapchat-ghost fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Snapchat</span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.instagram and site.footer-links-active.instagram %}
+          <li>
+            <a href="https://www.instagram.com/{{ site.author.instagram }}" title="Instagram">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Instagram</span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.youtube and site.footer-links-active.youtube %}
+          <li>
+            <a href="https://www.youtube.com/{{ site.author.youtube }}" title="YouTube">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">YouTube</span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.spotify and site.footer-links-active.spotify %}
+          <li>
+            <a href="https://open.spotify.com/user/{{ site.author.spotify }}" title="Spotify">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Spotify</span>
+            </a>
+          </li>
+       {% endif %}
+      {% if site.author.telephone and site.footer-links-active.telephone %}
+          <li>
+            <a href="tel:{{ site.author.telephone }}" title="Phone">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Phone</span>
+            </a>
+          </li>
+        {% endif %}
+		  {% if site.footer-links-active.rss %}
+          <li>
+            <a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">RSS</span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.steam and site.footer-links-active.steam %}
+          <li>
+            <a href="https://steamcommunity.com/id/{{ site.author.steam }}" title="Steam">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-steam fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Steam</span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.twitch and site.footer-links-active.twitch %}
+          <li>
+            <a href="https://www.twitch.tv/{{ site.author.twitch }}" title="Twitch">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitch fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Twitch</span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.yelp and site.footer-links-active.yelp %}
+          <li>
+            <a href="https://{{ site.author.yelp }}.yelp.com" title="Yelp">
+              <span class="fa-stack fa" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-yelp fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Yelp</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+
+
 > "It seems that perfection is attained, not when there is nothing more to add, but when there is nothing more to take away"
 > -- <cite>Antoine de Saint-Exupéry</cite>
+
 
 
 <!-- The ultimate defense is to drive the complexity of the ultimate attack up so high that the cost of attack is too high to be worth performing -->
@@ -51,7 +244,7 @@ css: '/css/extend-home.css'
 <br>
 <ul class="pager main-pager">
   <li>
-    <a href="{{site.baseurl}}/blog">See all posts </a>
+    <a class="text-right" href="{{site.baseurl}}/blog">See all posts </a>
   </li>
 </ul>
 
@@ -62,11 +255,13 @@ css: '/css/extend-home.css'
 ---
 
 <h1 class="text-center">Organizations </h1>
+
 <p align="center">
-<a href="https://www.kth.se"><img class="" title="KTH" src="../img/logos/kth_logo.png" alt="KTH" width="100" height="100"></a>
- <a href="http://wasp-sweden.org"><img class="" title="WASP" src="../img/logos/wasp_logo.png" alt="WASP" width="331" height="100"></a> 
- <a href="https://www.castor.kth.se"><img class="" title="CASTOR" src="../img/logos/castor_logo.png" alt="CASTOR" width="250" height="70"> </a> 
- </p>
+<a href="https://www.kth.se"><img class="" title="KTH" src="https://www.cesarsotovalero.net/img/logos/kth_logo.png" alt="KTH" height="85"></a>
+<a href="http://wasp-sweden.org"><img class="" title="WASP" src="https://www.cesarsotovalero.net/img/logos/wasp_logo.png" alt="WASP" height="100"></a>
+<a href="https://www.castor.kth.se"><img class="" title="CASTOR" src="https://www.cesarsotovalero.net/img/logos/castor_logo.png" alt="CASTOR" height="70"> </a>
+</p>
+
  
  
 
