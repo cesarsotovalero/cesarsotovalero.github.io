@@ -22,7 +22,7 @@ css: '/css/extend-home.css'
           <li>
             <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
               </span>
               <span class="sr-only">Facebook</span>
@@ -31,10 +31,9 @@ css: '/css/extend-home.css'
           {% endif %}
           {% if site.author.github and site.footer-links-active.github %}
           <li>
-            <a href="https://github.com/{{ site.author.github }}" style="color: black;" title="My GitHub Profile">
+            <a href="https://github.com/{{ site.author.github }}" title="My GitHub Profile">
               <span class="fa-stack fa" aria-hidden="true" >
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x" ></i>
               </span>
               <span class="sr-only">GitHub</span>
             </a>
@@ -42,10 +41,9 @@ css: '/css/extend-home.css'
           {% endif %}
           	  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
                     <li>
-                      <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" style="color: black;" title="My StackOverflow Profile">
+                      <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow}}" title="My StackOverflow Profile">
                         <span class="fa-stack fa" aria-hidden="true">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                          <i class="fa fa-stack-overflow fa-stack-1x"></i>
                         </span>
                         <span class="sr-only">StackOverflow</span>
                       </a>
@@ -55,8 +53,8 @@ css: '/css/extend-home.css'
           <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
               </span>
               <span class="sr-only">Twitter</span>
             </a>
@@ -66,8 +64,8 @@ css: '/css/extend-home.css'
           <li>
             <a href="https://reddit.com/u/{{ site.author.reddit }}" title="Reddit">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-reddit fa-stack-1x"></i>
               </span>
               <span class="sr-only">Reddit</span>
             </a>
@@ -75,21 +73,29 @@ css: '/css/extend-home.css'
           {% endif %}
                  {% if site.author.linkedin and site.footer-links-active.linkedin %}
                   <li>
-                     <a href="https://linkedin.com/in/{{ site.author.linkedin }}" style="color: black;" title="My LinkedIn Profile">
+                     <a href="https://linkedin.com/in/{{ site.author.linkedin }}" title="My LinkedIn Profile">
                      <span class="fa-stack fa" aria-hidden="true">
-                       <i class="fa fa-circle fa-stack-2x"></i>
-                       <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                       <i class="fa fa-linkedin fa-stack-1x"></i>
                      </span>
                         <span class="sr-only">LinkedIn</span>
                      </a>
                   </li>
-                  {% endif %}
+          {% endif %}
+          {% if site.author.youtube and site.footer-links-active.youtube %}
+                    <li>
+                      <a href="https://www.youtube.com/{{ site.author.youtube }}" title="My YouTube Profile">
+                      <span class="fa-stack fa" aria-hidden="true">
+                          <i class="fa fa-youtube fa-stack-1x"></i>
+                        </span>
+                        <span class="sr-only">YouTube</span>
+                      </a>
+                    </li>
+                    {% endif %}
 		  {% if site.author.email and site.footer-links-active.email %}
           <li>
-            <a href="mailto:{{ site.author.email }}" style="color: black;" title="Email me">
+            <a href="mailto:{{ site.author.email }}" title="Email me">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-envelope fa-stack-1x"></i>
               </span>
               <span class="sr-only">Email me</span>
             </a>
@@ -99,8 +105,8 @@ css: '/css/extend-home.css'
           <li>
             <a href="https://www.xing.com/profile/{{ site.author.xing }}" title="Xing">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-xing fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-xing fa-stack-1x"></i>
               </span>
               <span class="sr-only">Xing</span>
             </a>
@@ -110,8 +116,8 @@ css: '/css/extend-home.css'
           <li>
             <a href="https://www.snapchat.com/add/{{ site.author.snapchat }}" title="Snapchat">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-snapchat-ghost fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-snapchat-ghost fa-stack-1x"></i>
               </span>
               <span class="sr-only">Snapchat</span>
             </a>
@@ -121,21 +127,10 @@ css: '/css/extend-home.css'
           <li>
             <a href="https://www.instagram.com/{{ site.author.instagram }}" title="Instagram">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-instagram fa-stack-1x"></i>
               </span>
               <span class="sr-only">Instagram</span>
-            </a>
-          </li>
-          {% endif %}
-      {% if site.author.youtube and site.footer-links-active.youtube %}
-          <li>
-            <a href="https://www.youtube.com/{{ site.author.youtube }}" title="YouTube">
-              <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">YouTube</span>
             </a>
           </li>
           {% endif %}
@@ -143,8 +138,8 @@ css: '/css/extend-home.css'
           <li>
             <a href="https://open.spotify.com/user/{{ site.author.spotify }}" title="Spotify">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-spotify fa-stack-1x"></i>
               </span>
               <span class="sr-only">Spotify</span>
             </a>
@@ -154,8 +149,8 @@ css: '/css/extend-home.css'
           <li>
             <a href="tel:{{ site.author.telephone }}" title="Phone">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-phone fa-stack-1x"></i>
               </span>
               <span class="sr-only">Phone</span>
             </a>
@@ -165,8 +160,8 @@ css: '/css/extend-home.css'
           <li>
             <a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-rss fa-stack-1x"></i>
               </span>
               <span class="sr-only">RSS</span>
             </a>
@@ -176,8 +171,8 @@ css: '/css/extend-home.css'
           <li>
             <a href="https://steamcommunity.com/id/{{ site.author.steam }}" title="Steam">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-steam fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-steam fa-stack-1x"></i>
               </span>
               <span class="sr-only">Steam</span>
             </a>
@@ -187,8 +182,8 @@ css: '/css/extend-home.css'
           <li>
             <a href="https://www.twitch.tv/{{ site.author.twitch }}" title="Twitch">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitch fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-twitch fa-stack-1x"></i>
               </span>
               <span class="sr-only">Twitch</span>
             </a>
@@ -198,8 +193,8 @@ css: '/css/extend-home.css'
           <li>
             <a href="https://{{ site.author.yelp }}.yelp.com" title="Yelp">
               <span class="fa-stack fa" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-yelp fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-yelp fa-stack-1x "></i>
               </span>
               <span class="sr-only">Yelp</span>
             </a>
