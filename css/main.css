@@ -604,10 +604,10 @@ logo-main a:hover{
 
 .post-image {
   float: right;
-  height: 192px;
-  width: 192px;
+  height: 130px;
+  width: 130px;
   margin-top: -35px;
-  filter: grayscale(90%);
+  filter: grayscale(100%);
 }
 
 .post-image:hover {
@@ -616,8 +616,9 @@ logo-main a:hover{
 
 .post-image img {
   border-radius: 100px;
-  height: 192px;
-  width: 192px;
+  height: 130px;
+  width: 130px;
+  margin: 10px;
 }
 
 .post-preview .post-read-more {
