@@ -89,6 +89,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
 }
 
+
+
 a {
   /*color: darkblue;*/
   color: darkblue;
@@ -553,6 +555,10 @@ logo-main a:hover{
 .post-preview .post-title {
   font-size: 42px;
   margin-top: 0;
+  color: #000000;
+}
+
+.post-title-main {
   color: #000000;
 }
 
