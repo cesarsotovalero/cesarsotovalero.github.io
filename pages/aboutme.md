@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: The Quick Summary
+subtitle: In a Few Words
 ---
 <div style="border-bottom: 1px solid #eee;">
   <h3 style="text-align: center; font-family:courier, courier new, serif; padding-bottom: 35px;"><span class="type"></span></h3>

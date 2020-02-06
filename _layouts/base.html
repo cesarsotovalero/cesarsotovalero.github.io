@@ -14,6 +14,7 @@ common-js:
 - "/js/bootstrap.min.js"
 - "/js/main.js"
 - "/js/typed.js"
+- "/js/flowtype.js"
 ---
 
 <!DOCTYPE html>
@@ -74,6 +75,38 @@ common-js:
   });
 </script>
 
+<script>
+$('body').flowtype({
+minFont   : 10,
+maxFont   : 20,
+fontRatio : 20
+});
+</script>
+
+<script>
+   $('.highligher-rouge').flowtype({
+      minFont   : 8,
+      maxFont   : 30,
+      fontRatio : 30
+   });
+</script>
+
+
+<script>
+   $('blockquote').flowtype({
+      minFont   : 10,
+      maxFont   : 18,
+      fontRatio : 20
+   });
+</script>
+
+<script>
+   $('h2').flowtype({
+      minFont   : 24,
+      maxFont   : 30,
+      fontRatio : 20
+   });
+</script>
 
 </body>
 </html>
