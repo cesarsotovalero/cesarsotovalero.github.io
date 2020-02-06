@@ -247,7 +247,7 @@ css: '/css/extend-home.css'
 
 ---
 
-<!-- <h1 class="text-center">Recent Posts</h1> -->
+<h1 class="text-center">Recent Posts</h1> 
 <div class="posts-list">
   {% for post in site.posts limit:5 %}
   <article class="text-left" >
