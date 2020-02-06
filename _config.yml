@@ -12,7 +12,8 @@ baseurl: ""
 #baseurl: "/projectname"
 
 # Name of website
-title: 【ツ】
+#title: 【ツ】
+title-img: img/logos/main_logo.png
 
 # Short description of your site
 description: César's website
