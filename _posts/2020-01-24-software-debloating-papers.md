@@ -24,7 +24,7 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 * [2010](#2010)
 * [2006](#2006)
 * [2002](#2002)
-* [Additional web resources](#external-web-resources)
+* [External resources](#external-resources)
 
 
 ### 2020
@@ -352,7 +352,7 @@ Present HDD, a simple but effective algorithm that significantly speeds up Delta
 This paper is the state-of-the-art publication of the Delta Debugging (DD) algorithm. DD aims to generalice and simplify some failing test case to a minimal test case that still produces the failure; it also isolates the difference between a passing and a failing test case. Mozilla web browser is used as a use case. The algorithm is applied to find failure-inducing parts in the program invocation (GCC options), in the program input (GCC, fuzz, and Mozilla input), and in the sequence of user interactions (Mozilla user actions).
 </details>
 
-## External web resources
+## External resources
 
 - [https://catless.ncl.ac.uk/Risks/30/84/#subj25](https://catless.ncl.ac.uk/Risks/30/84/#subj25)
 - [http://tonsky.me/blog/disenchantment/](http://tonsky.me/blog/disenchantment/)
