@@ -1,4 +1,5 @@
 ---
+permalink: collaborations.html
 layout: page
 title: Hot topics
 subtitle: Open to Research Collaborations

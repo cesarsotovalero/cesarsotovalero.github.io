@@ -1,4 +1,5 @@
 ---
+permalink: search.html
 layout: page
 title: Search
 subtitle: Feeling lost? Look for things in this website.
