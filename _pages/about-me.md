@@ -23,7 +23,7 @@ Out of work, I enjoy spending time with my family, reading books, and running th
 
 ---
 
-## Contact me
+## :email: Contact me
 
 <!-- 
      After implementing this contact form make sure
