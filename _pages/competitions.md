@@ -1,4 +1,5 @@
 ---
+permalink: competitions.html
 layout: page
 title: Competitions
 subtitle: Programming | Machine Learning | Sports  

@@ -1,11 +1,10 @@
 ---
-layout: post
+permalink: mining-software-repositories-resources.html
+layout: page
 title: Mining software repositories
 subtitle: List of resources
 published: true
-tags: data-mining tools
-image: ../img/posts/gold_mining.jpg
-date: 2020/01/28
+image: ../../img/posts/gold_mining.jpg
 ---
 
 > "Mining software repositories is an increasingly popular and important area of software engineering research aimed at retrieving, integrating, and analyzing data available in various kinds of software repositories" *― [Massimiliano Di Penta](https://scholar.google.com/citations?user=j6ucyOAAAAAJ&hl=en)*
@@ -17,7 +16,6 @@ date: 2020/01/28
 - <a href="https://github.com/src-d/engine"><i class="fab fa-github"></i></a> [source{d} Engine](href="https://github.com/src-d/engine) Powerful language-agnostic analysis of your source code and git history.
 
 - <a href="https://github.com/RepoReapers/reaper"><i class="fab fa-github"></i></a> [reaper](https://github.com/RepoReapers/reaper) Calculate the score of a repository based on best engineering practices.
-
 
 ## Datasets
 

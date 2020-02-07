@@ -1,7 +1,8 @@
 ---
+permalink: software.html
 layout: page
-title: Softwares
-subtitle: Open-source Software | Coding | Fighting Bugs
+title: Software
+subtitle: Open-source Software
 published: true
 ---
 

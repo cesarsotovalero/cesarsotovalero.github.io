@@ -24,13 +24,13 @@ description: César - PhD Student
 navbar-links:
   Blog Posts: "blog"
   Activities:
-    - Publications: "pages/publications"
-    - Presentations: "pages/presentations"
-    - Collaborations: "pages/collaborations"
-    - Competitions: "pages/competitions"
-    - Softwares: "pages/software"
-    - Services: "pages/service"
-  About Me: "pages/aboutme"
+    - Publications: "publications"
+    - Presentations: "presentations"
+    - Collaborations: "collaborations"
+    - Competitions: "competitions"
+    - Services: "services"
+    - Software: "software"
+  About Me: "about-me"
 #  Search: "pages/search"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -168,6 +168,8 @@ defaults:
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
 link-tags: false
+
+include: ['_pages']
 
 # Exclude these files from production site
 exclude:

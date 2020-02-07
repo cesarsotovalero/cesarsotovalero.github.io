@@ -1,7 +1,8 @@
 ---
+permalink: publications.html
 layout: page
 title: Publications
-subtitle: Research Papers |  Citation Stats | Ph.D. Path
+subtitle: Papers | Citation Stats | Research Career
 published: true
 ---
 

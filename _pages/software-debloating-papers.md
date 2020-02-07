@@ -1,11 +1,9 @@
 ---
-layout: post
+permalink: software-debloating-papers.html
+layout: page
 title: Software debloating papers
-subtitle: Living literature review 
-published: true
-tags: debloat research
-image: ../img/debloating.png
-date: 2020/01/24
+subtitle: Living literature review
+image: ../../blog/img/debloating.png 
 ---
 
 This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articles related to program debloating and software specialization. 

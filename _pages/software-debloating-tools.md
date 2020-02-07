@@ -1,11 +1,9 @@
 ---
-layout: post
+permalink: software-debloating-tools.html
+layout: page
 title: Software debloating tools
 subtitle: Living tooling list
-published: true
-tags: debloat tools
-image: ../blog/img/debloating.png   
-date: 2020/1/07
+image: ../../blog/img/debloating.png 
 ---
 
 This is a living list of tools for program debloating and software specialization. 
