@@ -27,6 +27,15 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 
 ### 2020
 
+
+
+<img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [NIER] **Program Debloating via Stochastic Optimization** [[link]]() 
+
+<details> 
+Programs tend to provide a broad range of features, and different typologies of users tend to use only a subset of these features. For this reason, and because unnecessary functionality can be harmful in terms of both performance and security, recently we have witnessed an increasing interest in debloating techniques—techniques for reducing the size of a program by eliminating (possibly) unneeded features. Most existing debloating techniques tend to focus on program-size reduction alone, by producing a reduced program that behaves correctly for a provided set of inputs. Although effective with respect to their stated goal, these approaches ignore other important aspects of debloating and ultimately solve a simplified formulation of the problem. We believe that program debloating is a multifaceted issue, in which different, possibly conflicting goals must be considered and suitably accounted for. In this spirit, we propose a general approach that allows for formulating program debloating as a multi-objective optimization problem. Given a program to be debloated, our approach lets users specify (1) a usage profile for the program (i.e., a set of inputs with associated usage probabilities), (2) the factors of interest for the debloating task at hand, and (3) the relative importance of these factors. Based on this information, the approach defines a suitable objective function, so as to be able to associate a score to every possible reduced program, and tries to generate an optimal solution, that is, one that maximizes the objective function. To provide concrete evidence of the usefulness of our approach, we also present and evaluate Debop, a specific instance of the approach that considers three objectives: size reduction, attack surface reduction, and generality (i.e., extent to which the reduced program behaves correctly for the inputs in p’s usage profile). Our results, albeit still preliminary, are promising, in that they show that our approach can be effective in generating debloated programs that achieve good trade-offs between the different factors involved in the debloating process. Our results also provide insights on the performance of our general approach when compared to a specialized single-goal technique.
+</details>
+
+
 <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> [TOSEM] **Is Static Analysis Able to Identify Unnecessary Source Code?** [[link]](https://www.cqse.eu/publications/2020-unnecessary-code-tosem.pdf) 
 
 <details> 
@@ -43,6 +52,15 @@ The Internet of Things (IoT) is a network of physical, connected devices providi
 </details>
 
 ### 2019 
+
+<img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [DIMVA]  **BinTrimmer: Towards Static Binary Debloating Through Abstract Interpretation** [[link]](https://www.springerprofessional.de/en/bintrimmer-towards-static-binary-debloating-through-abstract-int/16785644) 
+
+<details> 
+The increasing complexity of modern programs motivates software engineers to often rely on the support of third-party libraries. Although this practice allows application developers to achieve a compelling time-to-market, it often makes the final product bloated with conspicuous chunks of unused code. Other than making a program unnecessarily large, this dormant code could be leveraged by willful attackers to harm users. As a consequence, several techniques have been recently proposed to perform program debloating and remove (or secure) dead code from applications. However, state-of-the-art approaches are either based on unsound strategies, thus producing unreliable results, or pose too strict assumptions on the program itself.
+In this work, we propose a novel abstract domain, called Signedness-Agnostic Strided Interval, which we use as the cornerstone to design a novel and sound static technique, based on abstract interpretation, to reliably perform program debloating. Throughout the paper, we detail the specifics of our approach and show its effectiveness and usefulness by implementing it in a tool, called BinTrimmer, to perform static program debloating on binaries.
+Our evaluation shows that BinTrimmer can remove up to 65.6% of a library’s code and that our domain is, on average, 98% more precise than the related work.
+</details>
+
 
 <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [ICSE]  **Poster: Recommending Unnecessary Source Code Based on Static Analysis** [[link]](https://dl-acm-org.focus.lib.kth.se/doi/10.1109/ICSE-Companion.2019.00111) 
 
@@ -87,7 +105,7 @@ Our goal is to better understand the source of this rapid growth in mobile app c
 </details>
 
 
-<img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [CCS]  **Binary Control-Flow Trimming Binary Control-Flow Trimming** [[link]](https://dl.acm.org/doi/10.1145/3319535.3345665) 
+<img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [CCS]  **Binary Control-Flow Trimming** [[link]](https://dl.acm.org/doi/10.1145/3319535.3345665) 
 
 <details> 
 A new method of automatically reducing the attack surfaces of binary software is introduced, affording code consumers the power to remove features that are unwanted or unused in a particular deployment context. The approach targets stripped binary native code with no source-derived metadata or symbols, can remove semantic features irrespective of whether they were intended and/or known to code developers, and anticipates consumers who can demonstrate desired features (e.g., via unit testing), but who may not know the existence of specific unwanted features, and who lack any formal specifications of the code's semantics. Through a combination of runtime tracing, machine learning, in-lined reference monitoring, and contextual control-flow integrity enforcement, it is demonstrated that automated code feature removal is nevertheless feasible under these constraints, even for complex programs such as compilers and servers. The approach additionally accommodates consumers whose demonstration of desired features is incomplete; a tunable entropy-based metric detects coverage lapses and conservatively preserves unexercised but probably desired flows. A prototype implementation for Intel x86-64 exhibits low runtime overhead for trimmed binaries (about 1.87%), and case studies show that consumer-side control-flow trimming can successfully eliminate zero-day vulnerabilities.
