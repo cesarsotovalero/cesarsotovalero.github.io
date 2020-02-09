@@ -25,20 +25,11 @@ Out of work, I enjoy spending time with my family, reading books, and running th
 
 ## :earth_africa: Location
 <div id="map"></div>
-<!-- Replace the value of the key parameter with your own API key. -->
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqZod6EtoGSBLuNa_L6do4ZKa0edph9z4&callback=initMap">
 </script>
 
-// Initialize and add the map
-function initMap() {
-  var uluru = {lat: 59.346936, lng: 18.072549};
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 12, center: uluru});
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
 
-    
 ---
 
 ## :email: Contact me
