@@ -11,7 +11,9 @@ published: true
 
 ---
 
-List of research topics that are open to further investigation. External collaboration is welcome.
+I am continuously looking for highly motivated master or bachelor students at KTH. Potential thesis topics are related to my research in the areas of debloating and software diversity, in particular with a focus on code analysis and transformations. 
+
+The following is a list of research topics that I'm particularly interested to do further investigation. External collaboration is also welcome.
 
 ## Table of contents
 
