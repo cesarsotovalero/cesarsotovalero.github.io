@@ -26,7 +26,7 @@ Out of work, I enjoy spending time with my family, reading books, and running th
 
 ## :earth_africa: Location
 
-<div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=LINDSTEDTSV%C3%84GEN%203%2C%20BUILDING%20D&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://periodic-table-of-elements.net"><periodic table;></periodic></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:800px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:800px;}</style></div>
+<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=LINDSTEDTSV%C3%84GEN%203%2C%20BUILDING%20D&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://periodic-table-of-elements.net"><periodic table;></periodic></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:800px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:800px;}</style></div>
 
 ---
 
