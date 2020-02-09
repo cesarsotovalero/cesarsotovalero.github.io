@@ -19,6 +19,7 @@ List of research topics that are open to further investigation. External collabo
 * [2. Automatic migration from Java &lt; 8 to Java 11 modular system](#2-automatic-migration-from-java--8-to-java-11-modular-system)
 * [3. Identification of program hotpots by monitoring system calls](#3-identification-of-program-hotpots-by-monitoring-system-calls)
 * [4. Automatic repair of dependency conflicts in Java](#4-automatic-repair-of-dependency-conflicts-in-java)
+* [5. Feature-guided program debloating](#feature-guided-program-debloating)
 
 ## 1. Debloat of mobile apps
 
@@ -116,5 +117,34 @@ Select a set of open-source projects that use Maven and have dependency conflict
 [2] Wang, Ying, et al. ["Could I have a stack trace to examine the dependency conflict issue?"](https://ieeexplore.ieee.org/abstract/document/8812128/). ICSE, 2019.
 
 [3] Macho, Christian, Shane McIntosh, and Martin Pinzger. ["Automatically repairing dependency-related build breakage"](https://ieeexplore.ieee.org/abstract/document/8330201/) SANER, 2018.
+
+<div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
+
+
+
+## 5. Feature-guided program debloating
+
+### Motivation
+
+One fundamental challenge of debloating is trimming unused features from an application [3]. There could be several reasons that motivate this: e.g., the maintenance of unused (or unpopular) features leads to unnecessary costs. The identification and removal of unneeded features can help product owners to prioritize maintenance efforts [4], although recent work focuses on the addition of feature sets to maps to facilitate the debloating process [1]. 
+ 
+### Approach
+
+The generation of a complete call graph of a program is undecidable. Therefore, it is not possible to compute the features of the program. However, we could approximate the usage by constructing a static call graph first, and then collecting dynamic traces representing specific executions. This approach will allow us to get diverse sets concerning the utilization of the program. Our approach is similar to [2], with the difference that we will identify the features using community graph-based algorithms over the static call graph, and we'll perform the dynamic analysis automatically through the test suite of the program. 
+
+### Validation
+
+We evaluate our approach by conducting case studies on removing cross cWe evaluate our approach by conducting case studies on removing cross-cutting features from real-world Java programs. We'll compare the programs before and after the debloat w.r.t correctness, size, performance, and reduction of the attack surface.
+
+### References
+
+[1] Brown, Michael D. and Pande, Santosh ["CARVE: Practical Security-Focused Software Debloating Using Simple Feature Set Mappings"](https://dl-acm-org.focus.lib.kth.se/doi/10.1145/3338502.3359764). FEAST, 2019.
+
+[2] Xin, et al. ["Identifying features of Android apps from execution traces"](https://dl-acm-org.focus.lib.kth.se/doi/10.5555/3340730.3340740). MOBILESoft, 2019.
+
+[3] Jiang, et al. ["Feature-Based Software Customization: Preliminary Analysis, Formalization, and Methods"](https://dl-acm-org.focus.lib.kth.se/doi/10.1109/HASE.2016.27) HASE, 2016.
+
+[4] Eder, et al. ["Which Features Do My Users (Not) Use?"](https://dl-acm-org.focus.lib.kth.se/doi/10.1109/ICSME.2014.71) ICSME, 2014.
+
 
 <div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
