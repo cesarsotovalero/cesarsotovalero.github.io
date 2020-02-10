@@ -15,7 +15,6 @@ common-js:
 - "/js/main.js"
 - "/js/typed.js"
 - "/js/flowtype.js"
-- "/js/map.js"
 ---
 
 <!DOCTYPE html>
@@ -86,7 +85,7 @@ fontRatio : 20
 
 <script>
    $('.highligher-rouge').flowtype({
-      minFont   : 16,
+      minFont   : 12,
       maxFont   : 30,
       fontRatio : 30
    });
@@ -98,6 +97,14 @@ fontRatio : 20
       minFont   : 10,
       maxFont   : 18,
       fontRatio : 20
+   });
+</script>
+
+<script>
+   $('post-preview').flowtype({
+      minFont   : 10,
+      maxFont   : 18,
+      fontRatio : 30
    });
 </script>
 
