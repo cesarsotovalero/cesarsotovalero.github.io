@@ -172,11 +172,11 @@ Although static and dynamic techniques have been proposed for removing unused co
 
 ### Approach
 
-We perform a static analysis of JS libraries usages by decomposing the web application on a per-page basis. This approach will give us a specialized version of the library per library. The idea is to implement a tool that perform this analysis automatically, caching the specialized version of the library at a fine grain per page usage.
+We'll perform a static analysis of JS libraries usages by decomposing the web application on a per-page basis. This approach will give us a specialized version of the library for each page. The goal is to implement a tool that performs this analysis automatically, caching the specialized version of the library at a fine grained level for the user.
 
 ### Validation
 
-We evaluate our approach by conducting case studies of specializing in real-world web applications. We'll compare these applications before and after the specialization in terms of size reduction and data bandwidth saving w.r.t users' page views [1]. Ideally, we'll deploy at least one real application and monitor the performance improvement through time.
+Our approach will be evaluated by conducting case studies of specializing in real-world web applications. We'll compare these applications before and after the specialization in terms of size reduction and data bandwidth saving w.r.t users' page views [1]. Ideally, we'll deploy at least one real application and monitor the performance improvement through time.
 
 ### References
 
