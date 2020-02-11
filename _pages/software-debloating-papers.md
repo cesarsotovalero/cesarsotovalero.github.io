@@ -24,10 +24,7 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 * [2002](#2002)
 * [External resources](#external-resources)
 
-
 ### 2020
-
-
 
 <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [NIER] **Program Debloating via Stochastic Optimization** [[link]]() 
 
