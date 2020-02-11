@@ -22,7 +22,8 @@ The following is a list of research topics that I'm particularly interested to d
 * [3. Identification of program hotpots by monitoring system calls](#3-identification-of-program-hotpots-by-monitoring-system-calls)
 * [4. Automatic repair of dependency conflicts in Java](#4-automatic-repair-of-dependency-conflicts-in-java)
 * [5. Feature-guided program debloating](#5-feature-guided-program-debloating)
-* [6. Fine-grain Specialization of JS libraries](#6-fine-grain-specialization-of-js-libraries)
+* [6. Fine-grain specialization of JS libraries](#6-fine-grain-specialization-of-js-libraries)
+* [7. Towards automatic untangling of APIs](#7-towards-automatic-untangling-of-apis)
 
 ---
 
@@ -161,7 +162,7 @@ We evaluate our approach by conducting case studies on removing cross-cutting fe
 
 ---
 
-## 6. Fine-grain Specialization of JS libraries
+## 6. Fine-grain specialization of JS libraries
 
 ### Motivation
 
@@ -184,6 +185,62 @@ We evaluate our approach by conducting case studies of specializing in real-worl
 [2] Vázquez, Hernán Ceferino, et al. ["Slimming javascript applications: An approach for removing unused functions from javascript libraries."](https://www.sciencedirect.com/science/article/pii/S0950584918302210) Information and Software Technology 107 (2019): 18-29. 
 
 [3] Morales, Rodrigo, Rubén Saborido, and Yann-Gaël Guéhéneuc. ["MoMIT: Porting a JavaScript Interpreter on a Quarter Coin."](https://ieeexplore.ieee.org/document/8966499) IEEE Transactions on Software Engineering (2020).
+
+<div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+## 7. Towards automatic untangling of APIs
+
+### Motivation
+
+Multi-purpose libraries deliver several functionalities through their public API, which are often unused by their clients. On the other hand, libraries tend to grow in functionalities, and sometimes this can negatively influence the user experience. Those libraries should be refactored, i.e., by dividing the API into a set of smaller and more focused and independent sub-modules [2]. 
+
+As an example, the [JUnit 4](https://junit.org/junit4/) framework was heavily refactored and divided into several modules. The next generation, [JUnit 5](https://junit.org/junit5), contains specific modules to provide certain functionalities each (e.g., `junit-jupiter-engine`, `junit-platform-launcher`).
+
+### Approach
+
+We'll explore the possibilities of automatically untangling libraries into two or more specialized components. To do so, we'll construct dynamic call graphs based on the usage that their client applications make of them [1]. Ideally, we'll create a tool that detects the features and performs the division of the library and functionality isolation in an unsupervised manner. We can obtain information about features from several sources, e.g., version changes, git history, etc.
+
+### Validation
+
+We evaluate our approach by conducting case studies on real-world fat and popular multi-purpose libraries (e.g., [guava](https://github.com/google/guava), [jcabi-immutable](jcabi-immutable), [weka](https://www.cs.waikato.ac.nz/ml/weka)), with a special focus on user acceptance. In other words, we plan to propose the reuse of smaller pieces of the library to their users.
+
+### References
+
+[1] de Matos, Anderson Severo, João Bosco Ferreira Filho, and Lincoln Souza Rocha. ["Splitting APIs: an exploratory study of software unbundling".](https://ieeexplore.ieee.org/abstract/document/8816781) 2019 IEEE/ACM 16th International Conference on Mining Software Repositories (MSR). IEEE, 2019.
+
+[2] Ferreira Filho, João Bosco, Mathieu Acher, and Olivier Barais. ["Software unbundling: Challenges and perspectives".](https://link.springer.com/chapter/10.1007/978-3-319-46969-0_6) Transactions on Modularity and Composition I. Springer, Cham, 2016. 224-237.
+
 
 <div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
 
