@@ -58,25 +58,25 @@ Let us create a new Maven project and add a new dependency towards the
 vulnerable library `org.zeroturnaround:zt-zip:1.12` in the `pom.xml`
 configuration file as is shown below.
  
- ```xml
- <dependency>
-     <groupId>org.zeroturnaround</groupId>
-     <artifactId>zt-zip</artifactId>
-     <version>1.12</version>
- </dependency>
- ```
+{% highlight xml linenos %}
+<dependency>
+    <groupId>org.zeroturnaround</groupId>
+    <artifactId>zt-zip</artifactId>
+    <version>1.12</version>
+</dependency>
+{% endhighlight %}
 
  Now we can reuse the `ZipUtil.unpack()` public method provided in this library to unzip any kind of compressed file. 
 
-```java
- Enumeration<ZipEntry> entries = zip.getEntries();
-    while (entries.hasMoreElements()) {
-        ZipEntry e = entries.nextElement();
-        File f = new File(destinationDir, e.getName());
-        InputStream input = zip.getInputStream(e);
-        IOUtils.copy(input, write(f));
-    }
-```
+{% highlight java linenos %}
+Enumeration<ZipEntry> entries = zip.getEntries();
+   while (entries.hasMoreElements()) {
+       ZipEntry e = entries.nextElement();
+       File f = new File(destinationDir, e.getName());
+       InputStream input = zip.getInputStream(e);
+       IOUtils.copy(input, write(f));
+   }
+{% endhighlight %}
 
 This code shows how the `unpack` method is implemented. We observe in line #4 that the concatenation of the destination directory and the ZipEntry path name can cause issues since there is no validation that the files stay within the destination directory. For example, an attacker can create a malicious zip file containing files with directory traversal characters in their embedded path and gain access to certain directories or folders in the file system outside the intended folder and can invoke scripts of overwrite specific files.
 
