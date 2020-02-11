@@ -1,8 +1,8 @@
 ---
 permalink: collaborations.html
 layout: page
-title: Hot topics
-subtitle: Open to Research Collaborations
+title: Research topics
+subtitle: Open to Collaborations
 published: true
 ---
 
@@ -15,13 +15,16 @@ I am continuously looking for highly motivated master or bachelor students at KT
 
 The following is a list of research topics that I'm particularly interested to do further investigation. External collaboration is also welcome.
 
-## Table of contents
+## List of Topics
 
 * [1. Debloat of mobile apps](#1-debloat-of-mobile-apps)
 * [2. Automatic migration from Java &lt; 8 to Java 11 modular system](#2-automatic-migration-from-java--8-to-java-11-modular-system)
 * [3. Identification of program hotpots by monitoring system calls](#3-identification-of-program-hotpots-by-monitoring-system-calls)
 * [4. Automatic repair of dependency conflicts in Java](#4-automatic-repair-of-dependency-conflicts-in-java)
 * [5. Feature-guided program debloating](#5-feature-guided-program-debloating)
+* [6. Fine-grain Specialization of JS libraries](#6-fine-grain-specialization-of-js-libraries)
+
+---
 
 ## 1. Debloat of mobile apps
 
@@ -47,6 +50,7 @@ Select a set of Android applications for which we have the source code and that 
 
 <div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
 
+---
 
 ## 2. Automatic migration from Java < 8 to Java 11 modular system
 
@@ -72,6 +76,7 @@ Select a set of Java applications for which we have the source code that compile
 
 <div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
 
+---
 
 ## 3. Identification of program hotpots by monitoring system calls
 
@@ -95,6 +100,7 @@ Select a set of Java applications and monitor their systems calls according to d
 
 <div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
 
+---
 
 ## 4. Automatic repair of dependency conflicts in Java
 
@@ -122,7 +128,7 @@ Select a set of open-source projects that use Maven and have dependency conflict
 
 <div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
 
-
+---
 
 ## 5. Feature-guided program debloating
 
@@ -138,7 +144,7 @@ We approximate the feature space in the program by constructing a static call gr
 
 ### Validation
 
-\We evaluate our approach by conducting case studies on removing cross-cutting features from real-world Java programs. We'll compare the programs before and after the debloat w.r.t correctness, size, performance, and reduction of the attack surface.
+We evaluate our approach by conducting case studies on removing cross-cutting features from real-world Java programs. We'll compare the programs before and after the debloat w.r.t correctness, size, performance, and reduction of the attack surface.
 
 ### References
 
@@ -152,3 +158,58 @@ We approximate the feature space in the program by constructing a static call gr
 
 
 <div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+## 6. Fine-grain Specialization of JS libraries
+
+### Motivation
+
+A common reuse practice in web development is to include JavaScript (JS) libraries in the header of the web pages. These libraries are shared across all the website sub-pages and loaded every time a user visits a new page. This approach leads to web applications being bloated with significant portions of JS code that are actually not used, which unnecessarily slow down website loading because of the extra unused code. The bloated code also increases the attack surface by providing more entry-points to a possible attacker.
+
+Although static and dynamic techniques have been proposed for removing unused code and specializing JS libraries [2, 3], there is still room for improvements on the users' side. No previous work has focused on debloating JS dependencies at a per-page level.
+
+ ### Approach
+
+We perform a static analysis of JS libraries usages by decomposing the web application on a per-page basis. This approach will give us a specialized version of the library per library. The idea is to implement a tool that perform this analysis automatically, caching the specialized version of the library at a fine grain per page usage.
+
+### Validation
+
+We evaluate our approach by conducting case studies of specializing in real-world web applications. We'll compare these applications before and after the specialization in terms of size reduction and data bandwidth saving w.r.t users' page views [1]. Ideally, we'll deploy at least one real application and monitor the performance improvement through time.
+
+### References
+
+[1] [Wikipedia's JavaScript initialisation on a budget](https://phabricator.wikimedia.org/phame/post/view/175/wikipedia_s_javascript_initialisation_on_a_budget)
+
+[2] Vázquez, Hernán Ceferino, et al. ["Slimming javascript applications: An approach for removing unused functions from javascript libraries."](https://www.sciencedirect.com/science/article/pii/S0950584918302210) Information and Software Technology 107 (2019): 18-29. 
+
+[3] Morales, Rodrigo, Rubén Saborido, and Yann-Gaël Guéhéneuc. ["MoMIT: Porting a JavaScript Interpreter on a Quarter Coin."](https://ieeexplore.ieee.org/document/8966499) IEEE Transactions on Software Engineering (2020).
+
+<div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
+
