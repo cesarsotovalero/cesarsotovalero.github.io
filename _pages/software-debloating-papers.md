@@ -53,6 +53,12 @@ The Internet of Things (IoT) is a network of physical, connected devices providi
 
 ### 2019 
 
+<img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [FEAST]  **Bloat Factors and Binary Specialization** [[link]](https://dl.acm.org/doi/10.1145/3338502.3359765) 
+
+<details> 
+Code bloating in software has been proven to be pervasive in recent research. However, each study provides a different approach to measure bloat. In this paper, we propose a system of metrics to effectively quantify bloat in binaries called bloat factors. Subsequently, we conducted an extensive study to calculate bloat factors for over 3000 Linux applications and 896 shared libraries. Using these metrics as pointers, we introduce a static approach to perform debloating for closed-source binaries by creating corresponding specialized versions to cater for a specific program requirements. We evaluated our debloating technique on large programs and achieved a maximum code reduction of 19.7%.
+</details>
+
 <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [DIMVA]  **BinTrimmer: Towards Static Binary Debloating Through Abstract Interpretation** [[link]](https://www.springerprofessional.de/en/bintrimmer-towards-static-binary-debloating-through-abstract-int/16785644) 
 
 <details> 
