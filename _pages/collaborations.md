@@ -49,7 +49,7 @@ Select a set of Android applications for which we have the source code and that 
 
 [3] Bruno Gois Mateus and Matias Martinez. [An empirical study on quality of Android applications written in Kotlin language](https://arxiv.org/pdf/1808.00025.pdf). CoRR, abs/1808.00025, 2018.
 
-<div align="right"> <a href="#list-of-topics">&#8593; Back to top</a></div>
+<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -75,7 +75,7 @@ Select a set of Java applications for which we have the source code that compile
 
 [3] [https://www.baeldung.com/java-9-modularity](https://www.baeldung.com/java-9-modularity) 
 
-<div align="right"> <a href="#list-of-topics">&#8593; Back to top</a></div>
+<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -99,7 +99,7 @@ Select a set of Java applications and monitor their systems calls according to d
  
 [1] [http://man7.org/linux/man-pages/man2/syscalls.2.html](http://man7.org/linux/man-pages/man2/syscalls.2.html) 
 
-<div align="right"> <a href="#list-of-topics">&#8593; Back to top</a></div>
+<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -127,7 +127,7 @@ Select a set of open-source projects that use Maven and have dependency conflict
 
 [3] Macho, Christian, Shane McIntosh, and Martin Pinzger. ["Automatically repairing dependency-related build breakage"](https://ieeexplore.ieee.org/abstract/document/8330201/). SANER, 2018.
 
-<div align="right"> <a href="#list-of-topics">&#8593; Back to top</a></div>
+<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -158,7 +158,7 @@ We evaluate our approach by conducting case studies on removing cross-cutting fe
 [4] Eder, et al. ["Which Features Do My Users (Not) Use?"](https://dl-acm-org.focus.lib.kth.se/doi/10.1109/ICSME.2014.71). ICSME, 2014.
 
 
-<div align="right"> <a href="#list-of-topics">&#8593; Back to top</a></div>
+<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -186,7 +186,8 @@ We evaluate our approach by conducting case studies of specializing in real-worl
 
 [3] Morales, Rodrigo, Rubén Saborido, and Yann-Gaël Guéhéneuc. ["MoMIT: Porting a JavaScript Interpreter on a Quarter Coin."](https://ieeexplore.ieee.org/document/8966499) IEEE Transactions on Software Engineering (2020).
 
-<div align="right"> <a href="#list-of-topics">&#8593; Back to top</a></div>
+
+<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -213,5 +214,5 @@ We evaluate our approach by conducting case studies on real-world fat and popula
 [2] Ferreira Filho, João Bosco, Mathieu Acher, and Olivier Barais. ["Software unbundling: Challenges and perspectives".](https://link.springer.com/chapter/10.1007/978-3-319-46969-0_6) Transactions on Modularity and Composition I. Springer, Cham, 2016. 224-237.
 
 
-<div align="right"> <a href="#list-of-topics">&#8593; Back to top</a></div>
+<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
