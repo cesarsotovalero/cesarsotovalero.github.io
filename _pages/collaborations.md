@@ -159,32 +159,6 @@ We evaluate our approach by conducting case studies on removing cross-cutting fe
 
 <div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## 6. Fine-grain Specialization of JS libraries
@@ -195,7 +169,7 @@ A common reuse practice in web development is to include JavaScript (JS) librari
 
 Although static and dynamic techniques have been proposed for removing unused code and specializing JS libraries [2, 3], there is still room for improvements on the users' side. No previous work has focused on debloating JS dependencies at a per-page level.
 
- ### Approach
+### Approach
 
 We perform a static analysis of JS libraries usages by decomposing the web application on a per-page basis. This approach will give us a specialized version of the library per library. The idea is to implement a tool that perform this analysis automatically, caching the specialized version of the library at a fine grain per page usage.
 
