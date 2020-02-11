@@ -13,7 +13,7 @@ published: true
 
 I am continuously looking for highly motivated master or bachelor students at KTH. Potential thesis topics are related to my research in the areas of debloating and software diversity, in particular with a focus on code analysis and transformations. 
 
-The following is a list of research topics that I'm particularly interested to do further investigation. External collaboration is also welcome.
+The following is a list of research topics that I’m particularly interested in doing further investigation. Any kind of external collaboration is also welcome.
 
 ## List of Topics
 
@@ -187,35 +187,6 @@ We evaluate our approach by conducting case studies of specializing in real-worl
 [3] Morales, Rodrigo, Rubén Saborido, and Yann-Gaël Guéhéneuc. ["MoMIT: Porting a JavaScript Interpreter on a Quarter Coin."](https://ieeexplore.ieee.org/document/8966499) IEEE Transactions on Software Engineering (2020).
 
 <div align="right"> <a href="#table-of-contents">&#8593; Back to top</a></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
