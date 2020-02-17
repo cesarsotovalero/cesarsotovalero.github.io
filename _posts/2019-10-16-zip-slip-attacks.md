@@ -19,7 +19,7 @@ This vulnerability is exploited using a specially crafted archive that holds dir
 
 This post aims to to explain how it works, and includes the following additional resources:
 
--   Installation scripts and instructions to deploy a target example:
+- Installation scripts and instructions to deploy a target example:
     <https://github.com/cesarsotovalero/zip-slip-exploit-example>
 
 -   Screen cast of the exploit in action: <https://youtu.be/NtC94J7J80Q>

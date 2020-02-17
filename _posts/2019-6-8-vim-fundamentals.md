@@ -13,10 +13,7 @@ date: 2019/2/14
 
 ## Introduction
 
-
-
 ###
-
 
 [plugins](https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup)
 

@@ -240,10 +240,7 @@ css: '/css/extend-home.css'
 > "It seems that perfection is attained, not when there is nothing more to add, but when there is nothing more to take away"
 > -- <cite>Antoine de Saint-Exupéry</cite>
 
-
-
 <!-- The ultimate defense is to drive the complexity of the ultimate attack up so high that the cost of attack is too high to be worth performing -->
-
 
 ---
 
@@ -285,8 +282,6 @@ css: '/css/extend-home.css'
 </ul>
 
 </div>
-
-
 
 ---
 
