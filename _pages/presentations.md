@@ -9,7 +9,6 @@ published: true
 > "Don’t worry about failure, you only have to be right once"
 > -- <cite>Drew Houston</cite>
 
-
 As a PhD Student, I'm ~~forced~~ pleased to present my work in workshops, conferences, and everywhere.
 The following is a non-exhaustive list of my technical presentations.
 
@@ -36,7 +35,3 @@ The following is a non-exhaustive list of my technical presentations.
 - [Bintrimmer: Towards Static Binary Debloating Through Abstract Interprepation](https://www.dimva2019.org/wp-content/uploads/sites/31/2019/06/DIMVA19-slides-11.pdf), June 2019
 - [GitHub Universe: 2019: Exemplars, Laggards, and Hoarders A Data-driven Look at Open Source Software Supply Chains](https://www.slideshare.net/realgenekim/github-universe-2019-exemplars-laggards-and-hoarders-a-datadriven-look-at-open-source-software-supply-chains), November 2019
 - [Effective Program Debloating via Reinforcement Learning](https://www.youtube.com/watch?v=8eRZKoLFakw). ACM CCS, Toronto, Canada, October 2018
-
-
-
-
