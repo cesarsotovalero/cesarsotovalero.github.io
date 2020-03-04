@@ -24,7 +24,7 @@ The following is a list of research topics that I’m particularly interested in
 * [5. Feature-guided program debloating](#5-feature-guided-program-debloating)
 * [6. Fine-grained specialization of JS libraries](#6-fine-grained-specialization-of-js-libraries)
 * [7. Towards automatic untangling of APIs](#7-towards-automatic-untangling-of-apis)
-* [8. Automatic Debloat of Bots Dependency Alerts](#7-automatic-debloat-of-bots-ependency-alerts)
+* [8. Automatic Debloat of Bots Dependency Alerts](#8-automatic-debloat-of-bots-ependency-alerts)
 
 
 
