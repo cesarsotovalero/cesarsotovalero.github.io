@@ -24,6 +24,9 @@ The following is a list of research topics that I’m particularly interested in
 * [5. Feature-guided program debloating](#5-feature-guided-program-debloating)
 * [6. Fine-grained specialization of JS libraries](#6-fine-grained-specialization-of-js-libraries)
 * [7. Towards automatic untangling of APIs](#7-towards-automatic-untangling-of-apis)
+* [8. Automatic Debloat of Bots Dependency Alerts](#7-automatic-debloat-of-bots-ependency-alerts)
+
+
 
 ---
 
@@ -212,6 +215,35 @@ We evaluate our approach by conducting case studies on real-world fat and popula
 [1] de Matos, Anderson Severo, João Bosco Ferreira Filho, and Lincoln Souza Rocha. ["Splitting APIs: an exploratory study of software unbundling".](https://ieeexplore.ieee.org/abstract/document/8816781) 2019 IEEE/ACM 16th International Conference on Mining Software Repositories (MSR). IEEE, 2019.
 
 [2] Ferreira Filho, João Bosco, Mathieu Acher, and Olivier Barais. ["Software unbundling: Challenges and perspectives".](https://link.springer.com/chapter/10.1007/978-3-319-46969-0_6) Transactions on Modularity and Composition I. Springer, Cham, 2016. 224-237.
+
+
+<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+
+---
+
+## 8. Automatic Debloat of Bots Dependency Alerts
+
+### Motivation
+
+In modern software projects, developers rely on bots to manage several common tasks automatically [1].   An example of such tasks is dependency management, in which bots allow to find and fix vulnerabilities in open-source libraries by proposing the update of their third-party dependencies (e.g., [Snyk])(https://snyk.io/), [Dependabot](https://dependabot.com/)). These tools analyze the dependency versions used in software projects and mine CVE databases in order to spot for known vulnerabilities. 
+
+However, in complex projects, developers might be overwhelmed by many dependency alerts coming from automatic bots. They have to revise each alert (mostly as pull requests) manually, in order to approve or reject it. In our previous research works [2, 3], we have found that clients use only a small part of their declared dependencies (or not use some of them at all). Therefore, the goal of this project is to study the dependency alerts triggered by bots and shrink the ones that are unused by developers. This will save developers’ time and effort, at the same time that eases their interaction with software bots.
+
+### Approach
+
+First, we mine GitHub projects in order to filter the commits that are related to dependency bots. Then, we analyze the difference between the vulnerable version of the dependency used, and the new one proposed by the bot. The goal is to determine if the code introduced in the new version is actually used by the project, i.e., if the dependency update is relevant for the project in particular. 
+
+### Validation
+
+For validation, we collect dependency related commits from open-source Java projects on GitHub, and analyze the dependency usage of the project with [DepClean](https://github.com/castor-software/depclean). We will report on the number of alerts that can be filtered out with our approach.
+
+### References
+
+[1] [Explainable Software Bot Contributions:Case Study of Automated Bug Fixes](https://arxiv.org/pdf/1905.02597.pdf)
+
+[2] [Analyzing 2.3 Million Maven Dependencies to Reveal an Essential Core in APIs](https://arxiv.org/pdf/1908.09757.pdf)
+
+[3] [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://arxiv.org/pdf/2001.07808.pdf)
 
 
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
