@@ -27,7 +27,7 @@ Git is the standard version-control system for software development. Git was cre
 * [Git revert](#git-revert)
 * [Git reset](#git-reset)
 
-### Git configuratons
+### Git configurations
 
 First, add your user name and email to the git global configurations. These commands will be automatically written  to `~/.gitconfig`.
 
@@ -201,3 +201,20 @@ To throw away a certain number of commits (2 in this example) :
 ```git
 git reset HEAD~2
 ``` 
+
+
+### Troubleshooting
+
+#### `.gitignore` is not working. 
+
+
+You may need to remove every file that was cached in the `.gitignore`. Be aware to commit all your changes before, otherwise you will loose control on all the changed files. 
+
+```git
+git rm -r --cached .
+git add .
+git commit -m ".gitignore is now working"
+```
+
+
+ 

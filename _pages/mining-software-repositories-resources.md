@@ -23,6 +23,8 @@ image: ../../img/posts/gold_mining.jpg
 
 - <a href="https://github.com/ghtorrent/ghtorrent.org"><i class="fab fa-github"></i></a> [The GHTorrent project](http://ghtorrent.org) An effort to create a scalable, queriable, offline mirror of data offered through the Github REST API.
 
+- [jsDelivr](https://www.jsdelivr.com/) is a Content Delivery Network (CDN) that can be used to download the GitHub files without any rate limit. (Ask Zimin about how to get the difference between two versions of the same file).
+
 ## Influential papers
 
 - [An in-depth study of the promises and perils of mining GitHub](https://link.springer.com/article/10.1007/s10664-015-9393-5). EMSE, 2015

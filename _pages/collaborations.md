@@ -24,7 +24,7 @@ The following is a list of research topics that I’m particularly interested in
 * [5. Feature-guided program debloating](#5-feature-guided-program-debloating)
 * [6. Fine-grained specialization of JS libraries](#6-fine-grained-specialization-of-js-libraries)
 * [7. Towards automatic untangling of APIs](#7-towards-automatic-untangling-of-apis)
-* [8. Automatic Debloat of Bots Dependency Alerts](#8-automatic-debloat-of-bots-ependency-alerts)
+* [8. Automatic Debloat of Bots Dependency Alerts](#8-automatic-debloat-of-bots-dependency-alerts)
 
 
 
@@ -225,9 +225,9 @@ We evaluate our approach by conducting case studies on real-world fat and popula
 
 ### Motivation
 
-In modern software projects, developers rely on bots to manage several common tasks automatically [1].   An example of such tasks is dependency management, in which bots allow to find and fix vulnerabilities in open-source libraries by proposing the update of their third-party dependencies (e.g., [Snyk])(https://snyk.io/), [Dependabot](https://dependabot.com/)). These tools analyze the dependency versions used in software projects and mine CVE databases in order to spot for known vulnerabilities. 
+In modern software projects, developers rely on bots to manage several common tasks automatically [1]. An example of such tasks is dependency management, in which software bots allow to find and fix vulnerabilities in open-source libraries by proposing the update of their third-party dependencies (e.g., [Snyk](https://snyk.io/), [Dependabot](https://dependabot.com/)). These tools analyze the dependency versions used in software projects and mine repositories and CVE databases in order to spot known vulnerabilities in the dependencies used by the clients. 
 
-However, in complex projects, developers might be overwhelmed by many dependency alerts coming from automatic bots. They have to revise each alert (mostly as pull requests) manually, in order to approve or reject it. In our previous research works [2, 3], we have found that clients use only a small part of their declared dependencies (or not use some of them at all). Therefore, the goal of this project is to study the dependency alerts triggered by bots and shrink the ones that are unused by developers. This will save developers’ time and effort, at the same time that eases their interaction with software bots.
+However, in complex projects, developers might be overwhelmed by many dependency alerts coming from such bots. They have to revise each alert (triggered mostly as pull requests) manually, in order to approve or reject it. In our previous research works [2, 3], we have found that clients use only a small part of their declared dependencies (or even do not use them them at all). Therefore, the goal of this project is to study the dependency alerts triggered by bots and shrink the ones that are unused by developers. This will save developers’ time and effort, at the same time that eases their interaction with software bots.
 
 ### Approach
 
