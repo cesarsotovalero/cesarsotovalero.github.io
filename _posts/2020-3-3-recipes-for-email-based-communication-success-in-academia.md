@@ -19,6 +19,7 @@ Handling tons of emails is the everyday bread and butter for those who have reac
 ## Templates
 
 <details><summary>Asking initial questions</summary>
+<p>
 Hi XXX,<br/>
 <br/>
 Nice to meet you.
@@ -32,6 +33,7 @@ As a starting point for our conversation, I would like to know more about you.<b
 Best regards,
 XXX
 <br/>
+</p>
 </details>
 
 <details><summary>Assigning a technical task</summary>
