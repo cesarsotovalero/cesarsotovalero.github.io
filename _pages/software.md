@@ -33,7 +33,10 @@ I develop robust software prototypes to support my research. I also contribute t
 <a href="https://github.com/cesarsotovalero/timeSeriesClassification"><i class="fab fa-github"></i></a> A package for time series classification in Weka. It implements DTW as the distance function for the KNN base learner and a filter for the reduction of noisy instances. 
 
 ---
-<a href="https://github.com/castor-software/dep-analyzer"><i class="fab fa-github"></i></a> [dep-analyzer](https://github.com/castor-software/dep-analyzer) A tool for analyzing dependencies at the bytecode level. Instruments the bytecode to retrieve the name of the classes and methods of a package used by a given jar file.
+
+<img src="https://cesarsotovalero.github.io/img/logos/DepAnalyzer_logo.svg" height="100px"  alt="DepAnalyzer"/>
+
+<a href="https://github.com/castor-software/dep-analyzer"><i class="fab fa-github"></i></a> DepAnalyzer allows to get a report of the dependencies used by a Java application. Given a `jar` file, DepAnalyzer instruments the bytecode to give a report about the name of the classes and methods of dependency that are used, as computed via static analysis.
  
 ## Active contributor 
 
