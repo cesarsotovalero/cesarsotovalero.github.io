@@ -28,6 +28,7 @@ navbar-links:
     - Presentations: "presentations"
     - Collaborations: "collaborations"
     - Competitions: "competitions"
+    - Certificates: "certifications"
     - Services: "services"
     - Software: "software"
   About Me: "about-me"
@@ -75,10 +76,7 @@ author:
   instagram: yourname
   youtube: channel/UCR4rI98w6-MqYoCS6jR9LGg?view_as=subscriber
   spotify: yourname
-  telephone: +5342223125
-  steam: yourname
-  twitch: yourname
-  yelp: yourname
+  telephone: XXX
 
 # Select which links to show in the footer
 footer-links-active:
