@@ -26,8 +26,6 @@ The following is a list of research topics that I’m particularly interested in
 * [7. Towards automatic untangling of APIs](#7-towards-automatic-untangling-of-apis)
 * [8. Automatic Debloat of Bots Dependency Alerts](#8-automatic-debloat-of-bots-dependency-alerts)
 
-
-
 ---
 
 ## 1. Debloat of mobile apps
@@ -247,4 +245,3 @@ For validation, we collect dependency related commits from open-source Java proj
 
 
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
-

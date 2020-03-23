@@ -5,7 +5,7 @@ subtitle: Powering automatization from the terminal
 tags: programming
 published: false
 image: ../img/posts/word_cloud.jpg
-date: 2020/20/03
+date: 2020/3/20
 ---
 
 > "TODO." *― Me*
