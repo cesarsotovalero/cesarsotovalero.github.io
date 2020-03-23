@@ -16,7 +16,7 @@ You cannot be a good researchers without being a good communicator. If you are g
 
 Handling tons of emails is the everyday bread and butter for those who have reached this level of success (i.e., supervising other people). In this post, I'll illustrate how using a template based approach to easing email management can boost productivity and improve the quality of this communication channel. 
 
-<!-- @todo #19 explain we academics love emailing -->
+<!-- @todo #19  explain we academics love emailing -->
 
 ## Templates
 
