@@ -10,7 +10,7 @@ date: 2020/3/20
 
 ## Introduction
 
-TODO
+@todo #13 add intro
 
 ## Display elapsed time from the start to the end of process
 
