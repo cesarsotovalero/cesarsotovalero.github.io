@@ -13,7 +13,7 @@ published: true
 
 - Reviewer Certificate, 2018 \[[Journal of Software: Evolution and Process](../files/certificates/SMR_Certificate.pdf)\]
 - **MSc Computer Science**, 2016  \[[Original Degree in Spanish]()\], [English Translation](../files/certificates/MSc_Degree_(certified)_eng.pdf)\], \[[Academic Transcripts in English](../files/certificates/MSc_Academis_Transcript-eng.pdf)\]
-- BSc Computer Science, 2013 \[[Original Degree in Spanish](../files/certificates/BSc_Degree_Original.pdf)\], \[[English Translationn](../files/certificates/BSc_Degree_(certified)_eng.pdf)\], \[[Academic Transcripts in English](../files/certificates/BSc_Academis_Transcript-eng.pdf)\]
+- BSc Computer Science, 2013 \[[Original Degree in Spanish](../files/certificates/BSc_Degree_Original.pdf)\], \[[English Translation](../files/certificates/BSc_Degree_(certified)_eng.pdf)\], \[[Academic Transcripts in English](../files/certificates/BSc_Academis_Transcript-eng.pdf)\]
 
 ### Non-Academic
 
