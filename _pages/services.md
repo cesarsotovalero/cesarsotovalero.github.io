@@ -15,13 +15,13 @@ published: true
 
 ### Supervision
 
-- [Automatic Debloat of Test Suites](#), Anton Lilja. Master Thesis, Stockholm, Sweden, 2019
+- [Automatic Debloat of Test Suites](), Anton Lilja. Master Thesis, Stockholm, Sweden, 2019
 - [Análisis de La Actividad Competitiva en el Juego de Polo Acuático](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf?sequence=1&isAllowed=y), Pascalina Stanislas-Inglis. Bachelor Thesis, Santa Clara, Cuba, 2014
 
 ### Reviewer
 
 - [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634)
-- <a href="../../files/certificates/SMR_Certificate.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481)
+- [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481)
 - [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current)
 
 > My updated revision stats for journals can be seen in [Publons](https://publons.com/researcher/1355482/cesar-soto-valero/peer-review)(<a href="https://publons.com/researcher/1355482/cesar-soto-valero/peer-review" style="text-decoration: underline;"><i class="ai ai-publons"></i></a>).
@@ -35,6 +35,6 @@ published: true
 ### Volunteer 
 
 - [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), Staff Member & Participant, 2020
-- <a href="../../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> [ICPC - ACM International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), Staff Member, 2017
+- <a href="../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), Staff Member, 2017
 
 
