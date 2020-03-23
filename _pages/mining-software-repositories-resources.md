@@ -28,4 +28,3 @@ image: ../../img/posts/gold_mining.jpg
 ## Influential papers
 
 - [An in-depth study of the promises and perils of mining GitHub](https://link.springer.com/article/10.1007/s10664-015-9393-5). EMSE, 2015
-

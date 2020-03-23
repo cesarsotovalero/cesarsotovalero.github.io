@@ -74,8 +74,3 @@ form.wj-contact input[type="submit"] {
     height: auto;
 }
 </style>
-
-
-   
-
-
