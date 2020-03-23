@@ -8,8 +8,6 @@ image: ../img/posts/word_cloud.jpg
 date: 2020/3/20
 ---
 
-> "TODO." *― Me*
-
 ## Introduction
 
 TODO
