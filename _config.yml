@@ -30,7 +30,7 @@ navbar-links:
     - Certifications: "certifications"
     - Competitions: "competitions"
     - Software: "software"
-    - Services: "services"
+    - Services: "service"
 
   About Me: "about-me"
 #  Search: "pages/search"
