@@ -29,8 +29,9 @@ navbar-links:
     - Collaborations: "collaborations"
     - Certifications: "certifications"
     - Competitions: "competitions"
-    - Services: "services"
     - Software: "software"
+    - Services: "services"
+
   About Me: "about-me"
 #  Search: "pages/search"
 
