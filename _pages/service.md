@@ -1,5 +1,5 @@
 ---
-permalink: services.html
+permalink: service.html
 layout: page
 title: Services
 subtitle: Teaching | Supervisor | Reviewer  
