@@ -38,9 +38,10 @@ I develop robust software prototypes to support my research. I also contribute t
 
 <a href="https://github.com/castor-software/dep-analyzer"><i class="fab fa-github"></i></a> DepAnalyzer allows to get a report of the dependencies used by a Java application. Given a `jar` file, DepAnalyzer instruments the bytecode to give a report about the name of the classes and methods of dependency that are used, as computed via static analysis.
  
-## Active contributor 
+## Contributor 
 
-## Related software
+- [Spoon](https://github.com/INRIA/spoon): A metaprogramming library to analyze and transform Java source code (incl Java 9, 10, 11, 12). It parses source files to build a well-designed AST with powerful analysis and transformation API.
 
-- [CausalImpact](https://github.com/google/CausalImpact): Causal inference on time series.
+<!--
 - [Dependency-Track](https://github.com/DependencyTrack/dependency-track)
+-->
