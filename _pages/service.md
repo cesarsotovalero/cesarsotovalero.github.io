@@ -7,16 +7,28 @@ published: true
 ---
 
 ### Teacher assistant
-- [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), KTH, Stockholm, Sweden, Spring 2020
-- [DM1590 Machine Learning for Media Technology](https://www.kth.se/student/kurser/kurs/DM1590), KTH, Stockholm, Sweden, Spring 2020
-- [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), KTH, Stockholm, Sweden, Fall 2019
-- [WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), Stockholm, Sweden, Spring 2019
-- [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), KTH, Stockholm, Sweden, Spring 2019
+
+- [DD2460 Software Safety and Security](https://www.kth.se/social/course/DD2460), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2020
+
+- [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Stockholm, Sweden, Spring 2020
+
+- [DM1590 Machine Learning for Media Technology](https://www.kth.se/student/kurser/kurs/DM1590), given by [Bob Sturm](http://www.eecs.qmul.ac.uk/~sturm/) at KTH, Stockholm, Sweden, Spring 2020
+
+- [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), given by [Linda Kann](http://www.csc.kth.se/~lk) at KTH, Stockholm, Sweden, Fall 2019
+
+- [WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at Stockholm, Sweden, Spring 2019
+
+- [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Stockholm, Sweden, Spring 2019
 
 ### Supervision
 
-- [Automatic Debloat of Test Suites](), Anton Lilja. Master Thesis, Stockholm, Sweden, 2019
-- [Análisis de La Actividad Competitiva en el Juego de Polo Acuático](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf?sequence=1&isAllowed=y), Pascalina Stanislas-Inglis. Bachelor Thesis, Santa Clara, Cuba, 2014
+- [Using NLP Techniques for Log Analysis toCreate a Recommendation System](), **Master Thesis**, Martin Larsson, KTH 2020
+
+- [Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning](), Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020
+
+- [Automatic Debloat of Test Suites](), Anton Lilja. **Master Thesis**, KTH 2020
+
+- [Análisis de La Actividad Competitiva en el Juego de Polo Acuático](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf?sequence=1&isAllowed=y), Pascalina Stanislas-Inglis. **Bachelor Thesis**, Cuba 2014
 
 ### Reviewer
 

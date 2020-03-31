@@ -216,5 +216,16 @@ git add .
 git commit -m ".gitignore is now working"
 ```
 
+#### git log of a Java method
 
+You need to add the following to the `.gitattributes` file.
+
+```text
+*.java diff=java
+```
+Then you can exectute the log command with the name of a method and the path to the file.
+
+```git
+ git log -L :<methodName>:<javaFilePath>
+```
  
