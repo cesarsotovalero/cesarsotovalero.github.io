@@ -148,17 +148,74 @@ echo $(date): operation failed >>log-file
 
 
 
+# Fetching data 
 
 
+## From the web
 
+We can invoke a web service to get some results and then pipe to `jq` to output the result in pretty-print format.
 
+```shell script
+curl -s "http://api.currencylayer.com/\                                     Thursday 26 March 07:04
+live?access_key=$API_KEY&source=USD&currencies=EUR" | jq .
+```
+## From a MySQL database
 
+```shell script
+echo "SELECT COUNT(*) FROM projects" | # SQL query
+mysql -ughtorrent -p ghtorrent # MySQL client and database
+```
 
+```shell script
+echo 'select url from projects limit 3' | # Obtain URL of first three projects
+mysql -ughtorrent -p ughtorrent | # Invoke MySQL client
+while read url ; do
+    curl -s $url | # Fetch project's details
+    jq -r '{owner: .owner.login, name: .name, pushed: .pushed_at}' # Print owner, project, and last push time
+done
+```
 
+# Archives
 
+List the content of an archive file in the web without pushing its content in the disk.
 
+```shell script
+curl -Ls https://github.com/castor-software/depclean/archive/1.0.0.tar.gz | # Download tar file
+tar -tzvf - | # -t list content, z- indicates zip compression, -v is verbose, -f retrieve file to the output of curl 
+head -10 # list first 10 entries
+```
 
+Decompress the file in the disk
 
+```shell script
+curl -Ls https://github.com/castor-software/depclean/archive/1.0.0.tar.gz | # Download tar file
+tar -xzf - 
+```
+Create and compress archives
+
+```shell script
+tar -czf share.tar.gz /usr/share
+```
+
+Using a sub-shell to pipe various commands
+
+```shell script
+mkdir dict2
+(
+    cd /usr/share/dict
+    tar -cf - .
+) | (
+    cd dict2
+    tar -xf -
+)
+ls dict2
+```
+
+Compressing the content of current directory
+
+```shell script
+ls -lR /home/joe >ls.out ; gzip ls.out
+```
 
 
 

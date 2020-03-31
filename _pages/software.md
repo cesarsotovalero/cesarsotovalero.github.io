@@ -8,7 +8,7 @@ published: true
 
 I develop robust software prototypes to support my research. I also contribute to open-source projects. Unless otherwise specified on the project page, all of my software projects are released under an MIT license. Below is a listing of those projects:
 
-## Author
+# Author
 
 <img src="https://cesarsotovalero.github.io/img/logos/DepHeaven_logo.svg" height="100px"  alt="DepHeaven"/>
 
@@ -38,7 +38,7 @@ I develop robust software prototypes to support my research. I also contribute t
 
 <a href="https://github.com/castor-software/dep-analyzer"><i class="fab fa-github"></i></a> DepAnalyzer allows to get a report of the dependencies used by a Java application. Given a `jar` file, DepAnalyzer instruments the bytecode to give a report about the name of the classes and methods of dependency that are used, as computed via static analysis.
  
-## Contributor 
+# Contributor 
 
 - [Spoon](https://github.com/INRIA/spoon): A metaprogramming library to analyze and transform Java source code (incl Java 9, 10, 11, 12). It parses source files to build a well-designed AST with powerful analysis and transformation API.
 
