@@ -374,6 +374,24 @@ Present HDD, a simple but effective algorithm that significantly speeds up Delta
 This paper is the state-of-the-art publication of the Delta Debugging (DD) algorithm. DD aims to generalice and simplify some failing test case to a minimal test case that still produces the failure; it also isolates the difference between a passing and a failing test case. Mozilla web browser is used as a use case. The algorithm is applied to find failure-inducing parts in the program invocation (GCC options), in the program input (GCC, fuzz, and Mozilla input), and in the sequence of user interactions (Mozilla user actions).
 </details>
 
+
+<img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [TPLS] **Practical extraction techniques for Java** [[link]](https://dl-acm-org.focus.lib.kth.se/doi/abs/10.1145/586088.586090) 
+
+<details> 
+Reducing application size is important for software that is distributed via the internet, in order to keep download times manageable, and in the domain of embedded systems, where applications are often stored in (Read-Only or Flash) memory. This paper explores extraction techniques such as the removal of unreachable methods and redundant fields, inlining of method calls, and transformation of the class hierarchy for reducing application size. We implemented a number of extraction techniques in Jax, an application extractor for Java, and evaluated their effectiveness on a set of large Java applications. We found that, on average, the class file archives for these benchmarks were reduced to 37.5% of their original size. Modeling dynamic language features such as reflection, and extracting software distributions other than complete applications requires additional user input. We present a uniform approach for supplying this input that relies on MEL, a modular specification language. We also discuss a number of issues and challenges associated with the extraction of embedded systems applications.
+</details>
+
+## 1999
+
+<img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> [OOPSLA] **Practical experience with an application extractor for Java** [[link]](https://dl-acm-org.focus.lib.kth.se/doi/abs/10.1145/320384.320414) 
+
+<details> 
+Java programs are routinely transmitted over low-bandwidth network connections as compressed class file archives (i.e., zip files and jar files). Since archive size is directly proportional to download time, it is desirable for applications to be as small as possible. This paper is concerned with the use of program transformations such as removal of dead methods and fields, inlining of method calls, and simplification of the class hierarchy for reducing application size. Such “extraction” techniques are generally believed to be especially useful for applications that use class libraries, since typically only a small fraction of a library's functionality is used. By “pruning away” unused library functionality, application size can be reduced dramatically. We implemented a number of application extraction techniques in Jax, an application extractor for Java, and evaluate their effectiveness on a set of realistic benchmarks ranging from 27 to 2,332 classes (with archives ranging from 56,796 to 3,810,120 bytes). We report archive size reductions ranging from 13.4% to 90.2% (48.7% on average).
+</details>
+
+
+
+
 ## External resources
 
 - [https://catless.ncl.ac.uk/Risks/30/84/#subj25](https://catless.ncl.ac.uk/Risks/30/84/#subj25)
