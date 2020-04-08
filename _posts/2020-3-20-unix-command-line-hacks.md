@@ -215,13 +215,142 @@ Compressing the content of current directory
 
 ```shell script
 ls -lR /home/joe >ls.out ; gzip ls.out
+
 ```
 
 
+# Version Control
 
+Who has performed the most commits?
 
+```shell script
+git log --pretty=format:%ae | # list each commit author email                                            Saturday  4 April 10:24 148 ↵
+sort | # Bring emails together
+uniq -c | # Count occurrence
+sort -rn | # Order by number
+head 
+```
 
+What is the file the largest number of changes?
 
+```shell script
+find . -type f -print |                                                         
+    while read f ; do # For each file
+    echo -n "$f " # Prints its name on a single line
+    git log --follow --oneline $f | wc -l # Count the number of changes
+    done |
+    sort -k 2nr | # Sort by the second field in reverse numerical order
+    head
+```
+
+What are the changes made to a file?
+
+```shell script
+git blame --line-porcelain src/main/java/spoon/Launcher.java | # obtain line metadata
+head -15
+```
+
+Which author has contributed more to a file?
+
+```shell script
+git blame --line-porcelain src/main/java/spoon/Launcher.java |
+grep "^author " | #Show each line's author
+sort |  # Order by author
+uniq -c | # Count author instances
+sort -rn | # Order by count
+head
+```
+What is the average date of all lines in a file?
+
+```shell script
+date +%s # show date in epoch
+date -d @1585990273 # parse data from epoch to date
+```
+
+```shell script
+date -d @$(
+   git blame --line-porcelain src/main/java/spoon/Launcher.java |
+   awk "/^author-time / {sum += $2; count++} # Maintain sum and count of commit times
+   END {printf("%d", sum / count)}"
+)
+```
+
+What is the evolution of the file size?
+
+```shell script
+file=src/main/java/spoon/Launcher.java # File to examine
+git log --pretty=format:%H -3 $ $file # Show SHA of commmits
+git log --pretty=format:%H $file | # Obtain commits' SHA
+while read sha ; do # For each SHA
+    git show $sha:$file | # List files stated at that commit
+    wc -l
+done |
+head -15 # First 15 entries
+
+```
+
+# System administration
+
+Unix store administrative date in `/etc` (stands for "extreme technical context")
+
+# Generators
+
+```shell script
+for i in $(seq 50) ; do
+    echo -n "." # displais 50 dots
+done
+```
+
+# Regular expressions
+
+## `grep`
+
+```shell script
+cd /usr/share/dict
+grep baba words # All lines (words) containing baba
+grep "^baba" words # All lines (words) starting with baba
+grep "baba$" words # All lines (words) ending with baba
+grep a.a.a.a words # Words containing a followed by anything
+```
+
+```shell script
+grep "^t.y$" words # Three letter words starting with t, ending with y
+grep "^....$" words | wc -l # Number of four letter words
+grep "^k.*d.*k$" words # Words starting with k, ending with k, and with a d in between
+grep "^a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z*$" words | wc -l # words that follow the alphabetical order
+grep "[0-9]" words # Lines containing a digit
+grep "^k.[bdgkpt].k$" words # Words with a hard consonant between ks
+grep "^[A-Z]" words | wc -l # Number of proper nouns
+grep "[^A-Za-z]" words # Lines with non-alphabetic characters
+find ~/Downloads | grep "[[:space:]]" # List files with space characters
+```
+
+## `egrep` (or `grep -E`)
+
+```shell script
+grep -E "s{2}" words  # Words with two secuentical s characters
+grep -E "[^aeiouy]{7}" words # Words with seven consonants
+grep -E "^.{,15}$" words | wc -l # Words with a length up to 15
+grep -E "^.{15,}$" words | wc -l # Words with at least 15 characters
+grep -E "^(.).*\1$" words | head # Words beginning and ending with the same character (the character in parentesis is referenced with \1)
+grep -E "^(.)(.)((.)\4)?\2\1$" words # Find 3-4 letter palindromes 
+```
+
+Alternative matches.
+
+```shell script
+grep -E "^(aba|ono).*(ly|ne)$" words # Words with alternative start/end parts
+grep -l vfs *.c # List C files containing vfs
+```
+
+Matches in files (`grep -F`)
+```shell script
+grep -rl read_iter . | head -5 # Search recursively all the files that contain the string read_iter
+
+grep -F ... *.c | head
+```
+
+Complement matches
 
 
 
