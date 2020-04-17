@@ -419,9 +419,6 @@ ls /usr | tojson.sed
 ```
 
 
-##
-+
-
 # References
 
 - [Unix command specification](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html)
@@ -429,6 +426,7 @@ ls /usr | tojson.sed
 - [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 - [http://www.bashoneliners.com](http://www.bashoneliners.com)
 - [https://www.commandlinefu.com](https://www.commandlinefu.com)
+- [https://explainshell.com/](https://explainshell.com/)
 
 
 
