@@ -350,7 +350,85 @@ grep -rl read_iter . | head -5 # Search recursively all the files that contain t
 grep -F ... *.c | head
 ```
 
-Complement matches
+# Other tools
+
+## `cut`
+
+```shell script
+cd /etc/passwd
+cut -d: -f 1 /etc/passwd | head -4 # Output the first field
+```
+## awk
+
+```shell script
+awk "/bash/" /etc/passwd # Output lines containing "bash"
+awk -F: "$3 > 1000" /etc/passwd # Lines where field 3 > 1000
+awk -F: "{print $1}" /etc/passw | head -5 # Output field 1
+awk "!/^#/ {print $1}" /etc/services | head # Print first field that doesn't match the regular expression
+```
+
+### ack
+
+ack - grep-like text finder
+
+```shell script
+ack --ruby foo # Find foo in occurrences in ruby files
+ack abc -l # List files with the occurrence of abc character
+```
+
+# Processing
+
+## Sorting
+
+```shell script
+sort -k 2 dates | head -5 # Sort by second and subsequent fields (space separated)
+sort -k 4r dattes | head # Sorts in reverse order
+sort -k 3M -k 2n dates | head  # sort 3rd field (Month) in chronological order, then second field (Month day) in numberical order
+
+sort -t : -k 4n /etc/passwd | head # Sort by numeric group-id
+
+sort -u /etc/passw | head # sort the unique elements
+sort dates | sort -C && echo "Sorted"
+```
+
+
+The `comm` command allows to select or reject lines common to two files. Both files must be sorted.
+
+```shell script
+comm linux.bin freebsd.bin
+```
+
+# `sed`
+
+## substitutions
+
+Create JSON from list of items.
+
+```shell script
+vim tojson.sed
+
+#!/bin/bash
+li``
+[ # Insert [ at the beginning
+s/.*/ "&",/ # Convert lines into strings
+$a\  # Append ] at the end
+]
+EOF
+
+ls /usr | tojson.sed
+```
+
+
+##
++
+
+# References
+
+- [Unix command specification](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html)
+- [http://conqueringthecommandline.com](http://conqueringthecommandline.com)
+- [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
+- [http://www.bashoneliners.com](http://www.bashoneliners.com)
+- [https://www.commandlinefu.com](https://www.commandlinefu.com)
 
 
 

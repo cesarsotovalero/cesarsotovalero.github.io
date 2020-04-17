@@ -8,6 +8,10 @@ subtitle: In a Few Words
   <h3 style="text-align: center; font-family:courier, courier new, serif; padding-bottom: 35px;"><span class="type"></span></h3>
 </div>
 
+<!--
+<a href="https://stackoverflow.com/users/10480869/cesarsotovalero"><img src="https://stackoverflow.com/users/flair/10480869.png" width="208" height="58" alt="profile for cesarsotovalero at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for cesarsotovalero at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
+-->
+
 <!-- ![Custom badge](https://img.shields.io/badge/-WORK-blueviolet.svg) -->
 ### :briefcase: Current work
 I'm a <a href="http://wasp-sweden.org/">WASP</a> Ph.D. student  in the <a href="https://www.kth.se/scs/software-engineering">Department of Software and Computer Systems </a> working with <a href="https://www.kth.se/profile/baudry">Benoit Baudry</a> at <a href="https://kth.se">KTH Royal Institute of Technology</a> in Sweden <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">. My current research is focused on [software diversity](https://en.wikipedia.org/wiki/Software_diversity), [automatic program debloating](https://cesarsotovalero.github.io/2018-09-24-program-debloating) and [software specialization](https://en.wikipedia.org/wiki/Run-time_algorithm_specialisation). For more on these topic, see the living review of <a href="https://www.cesarsotovalero.net/software-debloating-papers">software
