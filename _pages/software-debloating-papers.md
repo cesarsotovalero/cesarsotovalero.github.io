@@ -295,6 +295,12 @@ Propose winnowing, a static analysis and code specialization technique that uses
 
 ## 2013
 
+<img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [FSE] **Cachetor: Detecting Cacheable Data to Remove Bloat** [[link]](http://web.cs.ucla.edu/~harryxu/papers/nguyen-fse13.pdf) 
+
+<details> 
+Modern object-oriented software commonly suffers from runtime bloat that significantly affects its performance and scalability. Studies have shown that one important pattern of bloat is the work repeatedly done to compute the same data values. Very often the cost of computation is very high and it is thus beneficial to memoize the invariant data values for later use. While this is a common practice in real-world development, manually finding invariant data values is a daunting task during development and tuning. To help the developers quickly find such optimization opportunities for performance improvement, we propose a novel run-time profiling tool, called Cachetor, which uses a combination of dynamic dependence profiling and value profiling to identify and report operations that keep generating identical data values. The major challenge in the design of Cachetor is that both dependence and value profiling are extremely expensive techniques that cannot scale to large, real-world applications for which optimizations are important. To overcome this challenge, we propose a series of novel abstractions that are applied to run-time instruction instances during profiling, yielding significantly improved analysis time and scalability. We have implemented Cachetor in Jikes Research Virtual Machine and evaluated it on a set of 14 large Java applications. Our experimental results suggest that Cachetor is effective in exposing caching opportunities and substantial performance gains can be achieved by modifying a program to cache the reported data. 
+</details>
+
 <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [OOPSLA] **Combining  Concern  Input  with  Program Analysis  for  Bloat  Detection** [[link]](http://www.csa.iisc.ernet.in/~cplse/papers/gopi-oopsla-13-1.pdf) 
 
 <details> 
