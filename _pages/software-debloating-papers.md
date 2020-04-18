@@ -404,9 +404,6 @@ Reducing application size is important for software that is distributed via the 
 Java programs are routinely transmitted over low-bandwidth network connections as compressed class file archives (i.e., zip files and jar files). Since archive size is directly proportional to download time, it is desirable for applications to be as small as possible. This paper is concerned with the use of program transformations such as removal of dead methods and fields, inlining of method calls, and simplification of the class hierarchy for reducing application size. Such “extraction” techniques are generally believed to be especially useful for applications that use class libraries, since typically only a small fraction of a library's functionality is used. By “pruning away” unused library functionality, application size can be reduced dramatically. We implemented a number of application extraction techniques in Jax, an application extractor for Java, and evaluate their effectiveness on a set of realistic benchmarks ranging from 27 to 2,332 classes (with archives ranging from 56,796 to 3,810,120 bytes). We report archive size reductions ranging from 13.4% to 90.2% (48.7% on average).
 </details>
 
-
-
-
 ## External resources
 
 - [https://catless.ncl.ac.uk/Risks/30/84/#subj25](https://catless.ncl.ac.uk/Risks/30/84/#subj25)
@@ -420,3 +417,4 @@ Java programs are routinely transmitted over low-bandwidth network connections a
 - [Hello world](https://drewdevault.com/2020/01/04/Slow.html)
 - [Following up on "Hello world" ](https://drewdevault.com/2020/01/08/Re-Slow.html)
 - [Building a self-contained game in C# under 8 kilobytes](https://medium.com/@MStrehovsky/building-a-self-contained-game-in-c-under-8-kilobytes-74c3cf60ea04)
+- [The cost of JavaScript in 2019](https://v8.dev/blog/cost-of-javascript-2019)

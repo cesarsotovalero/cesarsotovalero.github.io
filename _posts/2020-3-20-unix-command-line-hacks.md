@@ -418,6 +418,44 @@ EOF
 ls /usr | tojson.sed
 ```
 
+# `awk`
+
+Summarize size of of files in a directory.
+
+```shell script
+ll > contents.txt 
+awk '                    
+{ size += $5; n++ }  # Sum size and number of files
+END {                # Print summary
+print "Total size " size
+print "Number of files " n
+print "Average file size " size/n
+}
+' contents.txt
+```
+
+Count the number of file extension
+
+```shell script
+ll > contents.txt 
+awk '
+{
+sub(".*/", "", $9)   # Remove path
+if (!sub(".*\\.", "", $9))    # Keep only extension
+next     # Skip files without extension
+size[$9] += $5    # Tally size of extension
+}
+END {
+for (i in size)
+print i, size[i]
+}' content.txt |
+sort -k 2nr |
+head
+```
+
+
+
+
 
 # References
 
