@@ -26,6 +26,7 @@ published: true
 - [cloc](https://github.com/AlDanial/cloc)
 - [exa](https://github.com/ogham/exa)
 - [htop](https://github.com/hishamhm/htop)
+- [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) with `git config --bool --global diff-so-fancy.stripLeadingSymbols false`
 
 # Customizations
 

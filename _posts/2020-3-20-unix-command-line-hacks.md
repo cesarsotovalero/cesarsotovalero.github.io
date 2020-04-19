@@ -453,6 +453,113 @@ sort -k 2nr |
 head
 ```
 
+# `diff`
+
+```shell script
+diff -u a b
+```
+
+$ `patch`
+
+```shell script
+patch john.c <mary.patch # Patch John's copy with Mary's patch
+```
+
+# Testing and expressions
+
+## `test`
+
+```shell script
+test -d / && echo Directory # Test if root is a directory
+test -f / && echo File # Test if root is a file
+test hi = there && echo Same # Test if strings are equal
+test hi != hi && echo Different # Test if strings are different
+test -z "" && echo Empty # Test if string is empty
+test -n "a string" && echo Non-empty # Test if string is non empty
+test 32 -eq 42 && echo Equal # Test integers are equal
+test 32 -lt 50 && echo Less than # Test if integer less than other
+test . -nt / && echo . is newer than / # Test if a file is newer than other
+test -w / && echo Writable # Test if a file is writable
+```
+
+## `expr`
+
+```shell script
+expr 1 + 2
+expr 2 \* 10
+expr 12 \% 5
+expr 10 \< 50
+expr 5 = 12 # Test of equality
+expr John \> Mary # Compare strings
+expr \(1 + 20 \) \* 2
+expr length "To be or not to be" # String length
+expr substr "To be or not to vbe" 4 2 # Substring of 2 from 4
+expr "" \| b # Short-circuit OR (first part failed)
+```
+
+```shell script
+i=0
+while [ $i -lt 10 ]; do
+    echo $i
+    i=$((i + 1))
+done
+```
+
+# Dealing with characters
+
+```shell script
+echo 'This is a test' | tr ' ' - # Replace space with -
+echo 'This is a test' | tr a-z A-Z # Replace a-z A-Z
+```
+
+## Encryption & Decription
+
+```shell script
+openssl enc -e -aes-256-cbc -pbkdf2 <pride-and-prejudice.txt >real-secret
+freq real-secret
+$ openssl enc -d -aes-256-cbc -pbkdf2 <real-secret | head
+```
+
+# Dealing with files
+
+## `tac`
+
+Print and concatenate files in reverse (last line first).
+
+```shell script
+ll | tac
+```
+
+## `rev`
+
+```shell script
+tail /usr/share/dict/words | rev # Reverse characters
+```
+
+## `paste`
+
+```shell script
+paste - /usr/share/dict/word
+```
+
+## `shuf`
+
+```shell script
+shuf -n 5 /usr/share/dict/words # Output five random words
+shuf -n 1 -e heads tails # Throw a single coin
+```
+## split
+
+```shell script
+split -l 10000 -d /usr/share/dict/words # Split the dictionary
+```
+
+## `rs`
+
+```shell script
+head /etc/passwd | rs -c: -C: -T # Transposes the output
+```
+
 
 
 
