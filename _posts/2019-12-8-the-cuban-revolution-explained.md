@@ -8,6 +8,8 @@ image: ../img/posts/cuba_flag.jpg
 date: 2019/12/8
 ---
 
+> "Es deplorable que se aplauda así a un hombre que esclaviza a su pueblo desde hace más de 40 años, esta solidaridad con el verdugo del pueblo cubano"" *― Huber Matos, referring to Fidel Castro in 2003*
+
 Recently, a friend of mine kindly requested me for information about Cuba and how the Revolution affected the people. He wanted to educate his child about socialism, from the voice of someone who lived it. The information is intended to be given to middle school kids. These are the five paragraphs that I wrote for him:
 
 "First, to really understand the transcendence of the Cuban Revolution, I think it is essential to understand a bit of Cuban history. Cubans have a long history of war against colonialism and the power of foreign nations. The first war of independence against Spain officially started in 1868 and lasted for ten years without success. Then, in 1895, a second war began again, and this time the Cuban armies finally won the battle. But the US government intervened in 1898 and settled in Cuba until 1902, leaving the country as a Democratic Republic. From 1902, Cuba celebrated elections every four years, having several presidents with different levels of popular support. It is important to say that during these years, the Cuban economy grows to become one of the most important in Latin America, with considerable progress in many aspects of economic and technological development. At that time, Cuba was a very rich country, but the wealth was not well distributed. In 1952, a military named Batista took the presidency by force, receiving some support from the US government. In 1959, the Cuban Revolution triumphed, and Batista exiled to the US.
