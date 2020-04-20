@@ -1,9 +1,9 @@
 ---
-permalink: competitions.html
+permalink: environment.html
 layout: page
-title: Competitions
-subtitle: Programming | Machine Learning | Sports  
-published: true
+title: Environment
+subtitle: Tools | IDEs | Customizations  
+published: false
 ---
 
 
@@ -27,9 +27,15 @@ published: true
 - [exa](https://github.com/ogham/exa)
 - [htop](https://github.com/hishamhm/htop)
 - [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) with `git config --bool --global diff-so-fancy.stripLeadingSymbols false`
+- [googliser](https://github.com/teracow/googliser)
+
 
 # Customizations
 
 - [hide-top-bar](https://extensions.gnome.org/extension/545/hide-top-bar/)
 - [workspace-matrix](https://extensions.gnome.org/extension/1485/workspace-matrix/)
+
+# IDEs
+
+- JetBrains with Theme [Gradianto](https://plugins.jetbrains.com/plugin/12334-gradianto)
 
