@@ -561,6 +561,37 @@ head /etc/passwd | rs -c: -C: -T # Transposes the output
 ```
 
 
+# Graphs
+
+```shell script
+cho "digraph talks {
+        bob [gender="male"];
+        eliza [gender="female"];
+        fred [gender="male"];
+        john [gender="male"];
+        mary [gender="female"];
+        steve [gender="male"];
+        sue [gender="female"];
+        mark [gender="male"];
+
+        john -> mary;
+        john -> bob;
+        mary -> sue;
+        sue -> bob;
+        sue -> mary;
+        fred -> bob;
+        eliza -> steve;
+}" > talk.dot
+```
+Count nodes
+
+```shell script
+
+gvpr 'N {clone($0, $)}' talk.dot # Clone each node to the output graph
+gvpr
+
+```
+
 
 
 
