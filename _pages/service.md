@@ -50,6 +50,6 @@ published: true
 
 ## Volunteer 
 
-- [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), Staff Member & Participant, 2020
+- [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), Staff Member, 2020
 
 - <a href="../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), Staff Member, 2017
