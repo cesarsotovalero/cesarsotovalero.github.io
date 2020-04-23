@@ -6,14 +6,12 @@ subtitle: Tools | IDEs | Customizations
 published: false
 ---
 
-
 # Text Editor
 
 - Vim (`sudo apt install --assume-yes vim`) with [vimrc](https://github.com/amix/vimrc)
 - LaTeX (`sudo apt install texlive-latex-extra`)
 - TeXstudio (`sudo apt-get install texstudio`)
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-
 
 # Shell
 
@@ -29,7 +27,6 @@ published: false
 - [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) with `git config --bool --global diff-so-fancy.stripLeadingSymbols false`
 - [googliser](https://github.com/teracow/googliser)
 
-
 # Customizations
 
 - [hide-top-bar](https://extensions.gnome.org/extension/545/hide-top-bar/)
@@ -42,3 +39,27 @@ published: false
 # Visualization
 
 - [graphviz](https://www.graphviz.org/)
+
+# Audio
+
+- [SoX](http://sox.sourceforge.net/)
+
+# Images
+
+- [Netpbm](http://netpbm.sourceforge.net/)
+
+# Video
+
+- [VLC](https://www.videolan.org/vlc/index.html)
+
+# Email
+
+- [markdown-here](https://github.com/adam-p/markdown-here)
+
+# ASCII
+
+- [figlet](https://www.tecmint.com/create-ascii-text-banners-in-linux-terminal) with `sudo apt install figlet toilet`
+
+# VPN
+
+- [WireGuard](https://www.wireguard.com/)
