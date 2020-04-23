@@ -22,7 +22,7 @@ published: true
 
 ## Supervision
 
-- [Using NLP Techniques for Log Analysis toCreate a Recommendation System](), **Master Thesis**, Martin Larsson, KTH 2020
+- [Using NLP Techniques for Log Analysis to Create a Recommendation System](), **Master Thesis**, Martin Larsson, KTH 2020
 
 - [Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning](), Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020
 
@@ -52,4 +52,4 @@ published: true
 
 - [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), Staff Member, 2020
 
-- <a href="../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a> [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), Staff Member, 2017
+- [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), Staff Member, 2017

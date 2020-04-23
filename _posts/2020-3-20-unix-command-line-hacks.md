@@ -593,6 +593,55 @@ gvpr
 ```
 
 
+# Images & sound
+
+Create a symbolic link to a file or directory:
+
+```shell script
+tifftopnm image.tiff | pnmtopng >image.png # Convert from TIFF to PNG
+
+for i in *.tiff ; do # For each TIFF file
+> pngname=$(basename $i .tiff).png # Compute name of PNG file
+> tifftopnm $i | # Convert image to PNM
+> pnmtopng >$pngname # Convert and write to PNG file
+> done
+
+tifftopnm image.tiff | # Convert TIFF to PNM
+> pamscale -width=1024 | # Scale to 1024 pixels
+> pnmtopng >image.png # Write the result in PNG format
+
+jpegtopnm plate.jpeg |
+> pamflip -r90 | # Rotate the image by 90 degrees
+> pamscale -width=1024 | # Scale to 1024 pixels
+> pnmtojpeg >rplate.jpeg # Write the result in JPEG format
+```
+
+## sound
+
+```shell script
+play -q sox-orig.wav
+
+sox sox-orig.wav sox-orig.mp3 # Convert between file formats
+sox sox-orig.wav sox-low.wav pitch -600 # Lower pitch by 600 cents
+play -q sox-low.wav
+
+sox sox-orig.wav sox-fast.wav tempo 1.5 # Increase tempo by 50%
+play -q sox-fast.wav
+
+sox sox-orig.wav sox-chorus.wav chorus 0.5 0.9 50 0.4 0.25 2 -t \
+60 0.32 0.4 2.3 -t 40 0.3 0.3 1.3 -s # Apply chorus effect
+play -q sox-chorus.wav
+
+wget -q -O persephone.mp3 \
+http://ccmixter.org/content/hansatom/hansatom_-_Persephone.mp3 # By Hans Atom (CC BY 2.5)
+sox persephone.mp3 persephone-trimmed.mp3 fade 0 0:06 1 # Trim to 6s with 1s fade-out
+play -q persephone-trimmed.mp3
+
+sox --combine mix -v 0.2 persephone-trimmed.mp3 sox-orig.wav \
+sox-persephone.mp3 # Mix the two audio files
+play -q sox-persephone.mp3
+```
+
 
 
 # References
