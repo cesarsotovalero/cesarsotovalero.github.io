@@ -34,15 +34,15 @@ published: true
 
 > My updated revision stats for journals can be seen in [Publons](https://publons.com/researcher/1355482/cesar-soto-valero/peer-review)(<a href="https://publons.com/researcher/1355482/cesar-soto-valero/peer-review" style="text-decoration: underline;"><i class="ai ai-publons"></i></a>).
 
-- [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634)
+- [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019
 
-- [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481)
+- [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018
 
-- [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current)
+- [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), 2017
 
 ## Sub-reviewer
 
-- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software)
+- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2020
 
 - [ICSE'19](https://conf.researchr.org/home/icse-2019)
 
