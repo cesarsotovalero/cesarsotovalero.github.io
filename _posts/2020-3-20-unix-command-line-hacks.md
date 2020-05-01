@@ -643,6 +643,70 @@ play -q sox-persephone.mp3
 ```
 
 
+# Good practices
+
+
+Output error
+
+```shell script
+echo Error >&2 # Send output to standard error
+```
+Clean up temporary files when script execution finishes
+
+```shell script
+cat >tmpdir.sh <<\EOF
+#!/bin/sh
+TMPDIR="${TMP:-/tmp}/$$" # Create temporary directory name
+trap 'rm -rf "$TMPDIR"' 0 # Remove it when exiting
+trap 'exit 2' 1 2 15 # Exit when the program is interrupted
+mkdir "$TMPDIR" # Create the directory
+# Do some work in $TMPDIR
+EOF
+```
+
+Prefer redirection to pipes
+
+```shell script
+command <file # A redirection is all that's needed
+```
+
+Test command, not its exit code
+
+```shell script
+if ! command ; then # A simple negation will do
+   echo Error >&2
+fi
+```
+
+`grep` can recurse directories
+
+```shell script
+grep -r pattern . # Modern recursive search
+```
+
+Prefer wildcards to `ls`
+
+```shell script
+for i in * ; do # can be replaced by a wildcard
+   . . .
+done
+```
+
+Replace `awk` with `cut`
+
+```shell script
+cut -d : -f 1,7 # More efficient way to print fields 1 and 7
+expr "$LANG" : '.*\.\(.*\)' # More efficient way to isolate encoding
+UTF-8
+```
+
+Replace `sed` with `expr`
+
+
+```shell script
+echo $LANG
+en_US.UTF-8
+```
 
 # References
 
