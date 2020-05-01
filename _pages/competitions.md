@@ -9,6 +9,8 @@ published: true
 > "You must not only have competitiveness but ability, regardless of the circumstance you face, to never quit."
 > -- <cite>Abby Wamback</cite>
 
+---
+
 I'm not a competitive person, but sometimes it is worth to put some pressure and participate in competitive events just to see what happens.
 
 ### Competitions

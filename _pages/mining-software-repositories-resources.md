@@ -9,6 +9,8 @@ image: ../../img/posts/gold_mining.jpg
 
 > "Mining software repositories is an increasingly popular and important area of software engineering research aimed at retrieving, integrating, and analyzing data available in various kinds of software repositories" *― [Massimiliano Di Penta](https://scholar.google.com/citations?user=j6ucyOAAAAAJ&hl=en)*
 
+---
+
 ## Tools
 
 - <a href="https://github.com/diverse-project/maven-miner"><i class="fab fa-github"></i></a> [maven-miner](https://github.com/diverse-project/maven-miner/wiki) Mines Maven Central and creates a global dependency graph.

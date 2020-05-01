@@ -9,6 +9,8 @@ published: true
 > "Don’t worry about failure, you only have to be right once"
 > -- <cite>Drew Houston</cite>
 
+---
+
 As a PhD Student, I'm ~~forced~~ pleased to present my work in workshops, conferences, and everywhere.
 The following is a non-exhaustive list of my technical presentations.
 
