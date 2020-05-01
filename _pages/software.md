@@ -6,6 +6,11 @@ subtitle: Open-source Software
 published: true
 ---
 
+> "If you’re not contributing to open source, if your GitHub profile is not full of projects and commits, your “value” as a software developer is low, simply because this lack of open source activity tells everybody that you’re not passionate about software development and are simply working for money."
+> -- <cite>Yegor Bugayenko</cite>
+
+
+
 I develop robust software prototypes to support my research. I also contribute to open-source projects. Unless otherwise specified on the project page, all of my software projects are released under an MIT license. Below is a listing of those projects:
 
 # Author
