@@ -9,6 +9,8 @@ published: true
 > "Certifications help you formalize your knowledge, put borders around it, and remove gaps. And they demonstrate to most of your potential employers that you’re truly serious about software engineering."
 > -- <cite>Yegor Bugayenko</cite>
 
+---
+
 ## Academic
 
 - **MSc Computer Science**,  [\[Original Degree in Spanish\]](), [\[English Translation\]](../files/certificates/MSc_Degree_(certified)_eng.pdf), [\[Academic Transcripts in English\]](../files/certificates/MSc_Academis_Transcript-eng.pdf), 2016

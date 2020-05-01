@@ -9,6 +9,8 @@ published: true
 > "We want our research to be sound, novel, and with a depth impact on industry."
 > -- <cite>Benoit Baudry (explaining me his expectations)</cite>
 
+---
+
 As a researcher, I ~~am forced to~~ write papers for journals and conferences. My work can be found in 
 <a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="../../img/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="../../img/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="../../img/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar). 
 
