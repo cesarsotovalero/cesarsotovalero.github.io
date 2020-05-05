@@ -26,7 +26,7 @@ My ORCID  <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" 
 
 <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/raw/master/files/publications/SOTO-VALERO_C._JSAMS.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px">  Raúl Reina, David Barbado, **César Soto-Valero**, José M. Sarabia and Alba Roldán. [Evaluation of the Bilateral Function in Para-athletes with Spastic Hemiplegia: a Model-based Clustering Approach](https://www.sciencedirect.com/science/article/pii/S1440244019306620). In _Journal of Science and Medicine in Sport_. DOI: 10.1016/j.jsams.2020.01.003.
 
-<a href="http://rcm.insmet.cu/index.php/rcm/article/download/512/836"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Ismabel María Domínguez-Hurtado, **César Soto-Valero**. [Pronóstico de las condiciones del ganado vacuno en cuba a través de modelos ARIMA](http://rcm.insmet.cu/index.php/rcm/article/view/512). _Revista Cubana de Meteorología_, 26(2), 1-12. 
+<a href="http://rcm.insmet.cu/index.php/rcm/article/download/512/836"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Ismabel María Domínguez-Hurtado, **César Soto-Valero**. [Pronóstico de las Condiciones del Ganado Vacuno en Cuba a Través de Modelos ARIMA](http://rcm.insmet.cu/index.php/rcm/article/view/512). _Revista Cubana de Meteorología_, 26(2), 1-12. 
 
 ### 2019
 
