@@ -11,17 +11,23 @@ published: true
 
 ---
 
-## Academic
+## Degrees
+
+- **MSc Computer Science**,  [\[Original Degree in Spanish\]](), [\[English Translation\]](../files/certificates/MSc_Degree_(certified)_eng.pdf), [\[Academic Transcripts in English\]](../files/certificates/MSc_Academis_Transcript-eng.pdf), UCLV, 2016
+
+- **BSc Computer Science**, \[[Original Degree in Spanish](../files/certificates/BSc_Degree_Original.pdf)\], \[[English Translation](../files/certificates/BSc_Degree_(certified)_eng.pdf)\], \[[Academic Transcripts in English](../files/certificates/BSc_Academis_Transcript-eng.pdf)\], UCLV, 2013
+
+## Courses
 
 - [WASP Project Course](../files/certificates/Certificate_WASP_Project2019_Cesar.pdf), KTH, 2019
 
 - [WASP Software Engineering and Cloud Computing](../files/certificates/Certificate_WASP_SECC2019_Cesar.pdf), KTH, 2019
 
-- **MSc Computer Science**,  [\[Original Degree in Spanish\]](), [\[English Translation\]](../files/certificates/MSc_Degree_(certified)_eng.pdf), [\[Academic Transcripts in English\]](../files/certificates/MSc_Academis_Transcript-eng.pdf), UCLV, 2016
+
+## Tests
 
 - [IELTS Academic Test 6.5](../img/IETLS_Test_Report_Form.jpg), University of Cambridge ESOL Examinations, 2016
 
-- **BSc Computer Science**, \[[Original Degree in Spanish](../files/certificates/BSc_Degree_Original.pdf)\], \[[English Translation](../files/certificates/BSc_Degree_(certified)_eng.pdf)\], \[[Academic Transcripts in English](../files/certificates/BSc_Academis_Transcript-eng.pdf)\], UCLV, 2013
 
 ## Non-Academic
 
@@ -64,13 +70,13 @@ published: true
    <!-- Another row -->
    <tr width="100%" align="center" style="background-color:#FFF; border-top: 0px solid #cccccc;">
       <td width="33%" align="center">
-         <img src="../files/certificates/Certificate_WASP_Project2019_Cesar.pdf" alt="WASP Project Course" width="100%" style="border:4px solid #021a40;"/>
+         <img src="../files/certificates/Certificate_WASP_Project2019_Cesar.jpg" alt="WASP Project Course" width="100%" style="border:4px solid #021a40;"/>
       </td>
      <td width="33%" align="center">
-        <img src="../files/certificates/Certificate_WASP_SECC2019_Cesar.pdf" alt="WASP Software Engineering and Cloud Computing" width="100%" style="border:4px solid #021a40;"/>
+        <img src="../files/certificates/Certificate_WASP_SECC2019_Cesar.jpg" alt="WASP Software Engineering and Cloud Computing" width="100%" style="border:4px solid #021a40;"/>
      </td>
      <td width="33%" align="center">
-        <img src="../files/certificates/Certificate_WASP_SECC2019_Cesar.pdf" alt="WASP Software Engineering and Cloud Computing" width="100%" style="border:4px solid #021a40;"/>
+        <img src="../files/certificates/Certificate_WASP_SECC2019_Cesar.jpg" alt="WASP Software Engineering and Cloud Computing" width="100%" style="border:4px solid #021a40;"/>
      </td>
    </tr>
 </table>
