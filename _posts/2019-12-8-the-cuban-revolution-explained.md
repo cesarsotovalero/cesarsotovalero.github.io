@@ -8,7 +8,7 @@ image: ../img/posts/cuba_flag.jpg
 date: 2019/12/8
 ---
 
-> "Es deplorable que se aplauda así a un hombre que esclaviza a su pueblo desde hace más de 40 años, esta solidaridad con el verdugo del pueblo cubano"" *― Huber Matos, referring to Fidel Castro in 2003*
+> "Es deplorable que se aplauda así a un hombre que esclaviza a su pueblo desde hace más de 40 años, esta solidaridad con el verdugo del pueblo cubano" *― Huber Matos, referring to Fidel Castro in 2003*
 
 Recently, a friend of mine kindly requested me for information about Cuba and how the Revolution affected the people. He wanted to educate his child about socialism, from the voice of someone who lived it. The information is intended to be given to middle school kids. These are the five paragraphs that I wrote for him:
 
