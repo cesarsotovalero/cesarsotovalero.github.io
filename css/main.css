@@ -932,7 +932,7 @@ table tr th {
 
 table tr td {
   border: 0px solid #cccccc;
-  text-align: center;
+  text-align: left;
   margin: 0;
   padding: 6px 15px;
 }
