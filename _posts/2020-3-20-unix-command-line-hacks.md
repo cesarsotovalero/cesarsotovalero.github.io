@@ -79,7 +79,6 @@ while read name ; do # For every entry
     fi
 done |
 head
-
 {% endhighlight %}
 ## Conditionals
 
