@@ -8,6 +8,10 @@ image: ../img/posts/terminal.png
 date: 2020/5/23
 ---
 
+> "Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill." *― Diomidis Spinellis*
+
+
+
 These are my personal notes of the [edX](www.edx.org) course [Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering), by Prof. Diomidis Spinellis. I attended this course from March to June, 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and it makes me consider online education very seriously, as it provides an excellent way of learning from top courses, given by top universities, and tough by top experts in the world.
 
 These notes are not organized in any specific manner. So, they are actually a bunch of very disordered Unix command line hacks and tricks :grin:.
@@ -715,21 +719,3 @@ en_US.UTF-8
 - [http://www.bashoneliners.com](http://www.bashoneliners.com)
 - [https://www.commandlinefu.com](https://www.commandlinefu.com)
 - [https://explainshell.com/](https://explainshell.com/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
