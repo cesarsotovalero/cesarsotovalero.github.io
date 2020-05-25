@@ -50,6 +50,13 @@ The Internet of Things (IoT) is a network of physical, connected devices providi
 
 ### 2019 
 
+<img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [USENIX]  **Nibbler: Debloating Binary Shared Libraries** [[link]](https://www.portokalidis.net/files/nibbler_acsac19.pdf) 
+
+<details> 
+Developers today have access to an arsenal of toolkits and libraries for rapid application prototyping. However, when an application loads a library, the entirety of that library’s code is mapped into the address space, even if only a single function is actually needed.The unused portion is bloat that can negatively impact software defenses by unnecessarily inflating their overhead or increasing their attack surface. Recent work has explored debloating as a way of alleviating the above problems, when source code is available.In this paper, we investigate whether debloating is possible and practical at the binary level. To this end, we presentNibbler: a system that identifies and erases unused functions within shared libraries. Nibbler works in tandem with defenses like continuous code re-randomization and control-flow integrity, enhancing them without incurring additional run-time overhead. We developed and tested a prototype of Nibbler on x86-64 Linux; Nibbler reduces the size of
+ shared
+ libraries and the number of available functions, for real-world binaries and the SPEC CINT2006 suite, by up to 56%and 82%, respectively. We also demonstrate that Nibbler benefits defenses by showing that: (i) it improves the deployability of a continuous re-randomization system for binaries, namely Shuffler,by increasing its efficiency by 20%, and (ii) it improves certain fast,but coarse and context-insensitive control-flow integrity schemes by reducing the number of gadgets reachable through returns and indirect calls by 75% and 49% on average.
+</details>
 
 <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [USENIX]  **Less is More: Quantifying the Security Benefits of Debloating Web Applications** [[link]](https://www.usenix.org/system/files/sec19-azad.pdf) 
 

@@ -7,7 +7,7 @@ published: true
 ---
 
 > "We want our research to be sound, novel, and with a depth impact on industry."
-> -- <cite>Benoit Baudry (explaining me his expectations)</cite>
+> -- <cite>Benoit Baudry (explaining me his expectations as supervisor in 2018)</cite>
 
 ---
 
