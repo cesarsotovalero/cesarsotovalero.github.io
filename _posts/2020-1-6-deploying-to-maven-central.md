@@ -2,7 +2,7 @@
 layout: post
 title: Deploying to Maven Central
 subtitle: A three-steps guide
-tags: maven software
+tags: software
 published: true
 image: ../img/posts/maven_journey.png
 date: 2020/1/06
