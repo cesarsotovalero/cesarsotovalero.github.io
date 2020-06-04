@@ -50,7 +50,7 @@ published: true
 <table align="center">
    <tr width="100%" align="center" style="background-color:#FFF; border-top: 0px solid #cccccc;">
       <td width="33%" align="center">
-      <a href="../files/certificates/BSc_Degree_Original.pdf">
+      <a href="../files/certificates/BSc_Degree_(certified)_eng.pdf">
          <img src="../files/certificates/BSc_Degree_(certified)_eng.jpg" alt="BSc in Computer Science" width="100%" style="border:4px solid #021a40;"/>
       </a>
       </td>
