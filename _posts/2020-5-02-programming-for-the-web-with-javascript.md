@@ -420,21 +420,60 @@ A very basic example of DOM manipulation is [here](https://courses.edx.org/asset
 
 ## DOM events
 
+We can use event-driven programming in JS to modify HTML based on user activity. We do this by defining **callback functions** and associating them with various events by adding event listeners. `element.addEventListener(event, function)`, events: `click`, `mouseover`, `mouseout`, `keyup`.
+
+- The HTML for the button-click example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.8-click.html).
+- The HTML for the mouse-over example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.8-mouse.html).
+- The HTML for the key-press example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.8-key.html).
 
 
+## jQuery
+
+Jquery is a powerful library that allows us to select DOM elements using CSS notation. We can then modify their content and appearance programmatically. We can also register event listeners for different elements.
+
+```javascript
+script 
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4yfaTqgFtohetphbbj0=" 
+    crossorigin="anonymous">
+</script>
+```
+
+In jQuery, $ is used to select DOM elements for manipulation, along with basic CSS element syntax
+- `$("*")` selects all elements
+- `$("this")` selects the current element
+- `$("div")` selects all `<div>`
+- `$(".title")` selects all elements with `class="title"`
+- `$("#name")` selects the element with `id="name"`
+
+To manipulate DOM content, the general format is `$selector.action(arguments...)`. Examples:
+- `$("#name").html("Hello");`
+- `$("#name").append("World!");`
+- `$("#name").addClass("greeting");`
+- `$("#name").hide();`
+- `$("#name").show();`
+
+To add an event listener to and element, the general format is `(selector).event(callback)`
+
+- The HTML for the button-click example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.9-jquery-click.htmll).
+- The HTML for the growing list example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.9-jquery-list.html).
+- The HTML for the list item example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.9-jquery-li.html).
 
 
+## jQuery event handling
 
-
-
-
-
-
-
-
-
-
-
+- `$(someNodes).find(selector)` will search `someNodes`' children for selector
+- `$` selectors can be chained
+  - `$("div.book)` selects the `div` with `class="book"`
+  - `$("div, .book")` selects all `divs` and all elements with `class="book"`
+- `:` can be used to specify element properties
+  - `$("p:hidden")` selects all `<p>` elements that are visually hidden.
+  
+- The HTML for the example using the "on" function is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.10-jquery-on.html).
+ 
+- The HTML for the form example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.11-jquery-form.html).
+  
+- The HTML for the password example is available[here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.11-jquery-password.html).
 
 
 

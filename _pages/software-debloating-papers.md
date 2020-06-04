@@ -50,7 +50,7 @@ The Internet of Things (IoT) is a network of physical, connected devices providi
 
 ### 2019 
 
-<img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [USENIX]  **Nibbler: Debloating Binary Shared Libraries** [[link]](https://www.portokalidis.net/files/nibbler_acsac19.pdf) 
+<img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [ACSAC]  **Nibbler: Debloating Binary Shared Libraries** [[link]](https://www.portokalidis.net/files/nibbler_acsac19.pdf) 
 
 <details> 
 Developers today have access to an arsenal of toolkits and libraries for rapid application prototyping. However, when an application loads a library, the entirety of that library’s code is mapped into the address space, even if only a single function is actually needed.The unused portion is bloat that can negatively impact software defenses by unnecessarily inflating their overhead or increasing their attack surface. Recent work has explored debloating as a way of alleviating the above problems, when source code is available.In this paper, we investigate whether debloating is possible and practical at the binary level. To this end, we presentNibbler: a system that identifies and erases unused functions within shared libraries. Nibbler works in tandem with defenses like continuous code re-randomization and control-flow integrity, enhancing them without incurring additional run-time overhead. We developed and tested a prototype of Nibbler on x86-64 Linux; Nibbler reduces the size of
@@ -413,6 +413,7 @@ Java programs are routinely transmitted over low-bandwidth network connections a
 
 ## External resources
 
+- [OpenBSD did a big cleanup after heartbleed (2014)](https://www.zdnet.com/article/openbsd-forks-prunes-fixes-openssl/)
 - [https://catless.ncl.ac.uk/Risks/30/84/#subj25](https://catless.ncl.ac.uk/Risks/30/84/#subj25)
 - [http://tonsky.me/blog/disenchantment/](http://tonsky.me/blog/disenchantment/)
 - [https://bulldogjob.com/news/400-feature-creep](https://bulldogjob.com/news/400-feature-creep)
