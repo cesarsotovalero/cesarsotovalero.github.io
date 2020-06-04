@@ -64,7 +64,7 @@ published: true
          <img src="../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.jpg" alt="ICPC-ACM International Collegiate Programming Contest" width="100%" style="border:4px solid #021a40;"/>
       </td>
       <td width="33%" align="center">
-         <img src="../img/awards/MSR-2019.jpg" alt="MSR Data Showcase Award" width="100%" style="border:4px solid #021a40;"/>
+         <img src="../files/certificates/edX_UnixTx.png" alt="Unix Tools: Data, Software and Production Engineering" width="100%" style="border:4px solid #021a40;"/>
       </td>
    </tr>   
    <!-- Another row -->
@@ -76,7 +76,7 @@ published: true
         <img src="../files/certificates/Certificate_WASP_SECC2019_Cesar.jpg" alt="WASP Software Engineering and Cloud Computing" width="100%" style="border:4px solid #021a40;"/>
      </td>
      <td width="33%" align="center">
-        <img src="../files/certificates/Certificate_WASP_SECC2019_Cesar.jpg" alt="WASP Software Engineering and Cloud Computing" width="100%" style="border:4px solid #021a40;"/>
+        <img src="../img/awards/MSR-2019.jpg" alt="MSR Data Showcase Award" width="100%" style="border:4px solid #021a40;"/>
      </td>
    </tr>
 </table>
