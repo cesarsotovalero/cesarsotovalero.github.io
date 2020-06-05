@@ -4,7 +4,7 @@ title:  Unix cmd hacks
 subtitle: Boosting automation from the shell
 tags: programming
 published: true
-image: ../img/posts/terminal.png
+image: ../img/posts/unix_course.jpg
 date: 2020/5/23
 ---
 
