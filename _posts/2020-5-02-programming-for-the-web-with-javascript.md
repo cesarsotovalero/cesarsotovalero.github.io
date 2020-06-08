@@ -476,27 +476,114 @@ To add an event listener to and element, the general format is `(selector).event
 - The HTML for the password example is available[here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.11-jquery-password.html).
 
 
+# Introducing React
+
+- A JS library to building user interfaces.
+- HTML page is composed of recyclable, interactive components hat have a lifecycle during which the state of the components changes
+- Introduces the notion of VirtualDOM: React identifies the elements in the DOM that are affected by a change and only modifies the part of the DOM that is affected. The process has three steps:
+  1. Identify nodes that have changed (**diff**)
+  2. Identify nodes that are affected by the change (**reconciliation**
+  3. Re-render ONLY the nodes that were affected by the change
+
+There are three steps for using React:
+1. Withing the page's HTML, allocate a position on the page in which the desired React component will be rendered, eg. a `div`
+2. Create a React component in JS:
+  - Establish an initial state
+  - Define any events that could change the component's state over its lifecycle
+  - Define the function to render the HTML
+3. Drop the component into position allocated in Step 1
+
+## JSX
+
+JS XML Syntax Transform. It allows user to write HTML-like tags within JS. It converts HTML to React code.
 
 
+## Components
+
+React components are JS objects that can be used as HTML elements in the VirtualDOM. A component's `render()` function is used to render its HTML. A component's **properties** are assigned when it is created. A component's **state** can change during its lifecycle. A component's **lifecycle functions** are invoked depending on relevant activities.
+
+### Creating component
+
+```javascript
+class HelloComponent extends React.Component {
+   render() {
+      return (
+         <h1>Hello, React!</h1>
+      );     
+   }
+}
+```
+
+### **Render** component
+
+```javascript
+ReactDOM.render(
+   <HelloComponent/>,
+   document.getElementById('container') // location of the component
+);
+```
+
+- **Properties** are attributes and values that are set when component is created and should never be modified after initialization
+
+```javascript
+ReactDOM.render(
+   <HelloUser name="Maria"/>
+   document.getElementById("container")
+);
+```
+
+```javascript
+class HelloUser extends React.Component {
+   render(){
+      <h1>Hello {this.props.name}!</h1> // access the property name in the component
+   }
+}
+```
+
+- **State** are attributes and values that represent the current state off the component, based on what it does/represent, they can be modified during the component's lifecycle
+
+```javascript
+class HelloUser extends React.Component {
+   constructor(props){
+      super(props);
+      var timesViewed = 0;
+      if(localStorage.timesViewed){
+         timesViewed = localStorage.timesViewed;      
+      }
+      timesViewed++;
+      this.state = {numViews: timesViewed};
+      localStorage.timesViewed = timesViewed;
+   }   
+   
+   render(){
+      return <b>{this.state.numViews}</b>;
+   }
+}
+```
+
+```javascript
+ReactDOM.render(
+   <HelloComponent/>,
+   document.getElementById('container') // location of the component
+);
+```
+
+### Component Lifecycle
+
+The React VirtualDOM invokes callback functions on components fuding their lifecycle. These functions fall into three categories: mounting, updating, and unmounting. One can optionally implement these for controlling the component.
 
 
+Mounting:
+- `constructor`: creates component, initializes state based on properties
+- `componentWillMount`: invokes before component is added to VirtualDOM
+- `componentDidMount`: invoked after component has been added to VirtualDOM and has been rendered
+- `componentDidUpdate`: invoked after being rendered
+
+Unmounting:
+- componentWillnmount: invoked before component is removed from VirtualDOM and destroyed 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The HTML for the TimesViewed example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/3.2-react-TimesViewed.html).
 
 
 
