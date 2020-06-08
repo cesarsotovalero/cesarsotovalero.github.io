@@ -3,7 +3,7 @@ layout: post
 title:  Diversity-driven software debloat
 subtitle: The power of the crowds
 tags: debloat
-published: false
+published: true
 image: ../img/posts/crowd.jpg
 date: 2020/5/23
 ---
@@ -19,19 +19,25 @@ For months, I have worked on dynamic debloat of Java artifacts with [JDBL](https
 
 There are awesome Java coverage tools out there, notably: [JaCoCo](https://www.eclemma.org/jacoco/), [JCov](https://wiki.openjdk.java.net/display/CodeTools/jcov), and [Cobertura](https://cobertura.github.io/cobertura/). All these tools relied on the same underlying principle that drives debloat: determining what is parts of the software are necessary to produce a result. In genera, coverage tools perform the following tasks:
 
-1. Instrument the bytecodes, i.e., inserting probes at particular locations 
+1. Instrument the bytecodes, i.e., injecting probes at particular locations 
 2. Execute the test suite to "activate" the probes
-3. Compare the activated locations of the code with respect to the original bytecodes
-4. Report on the coverage depending on the chosen metric
+3. Compare the activated sections of the code with respect to the original bytecodes
+4. Report on the achieved coverage, depending on the chosen metric
+
+During the third task, the coverage tool determines what parts of the application are necessary. Therefore, it makes sense to consider the rest as bloat. 
+
+The problem with this approach is that coverage tools are not intended for that purpose. Also, the richness of Java bytecode constructs and dynamic behaviours poses a challenging even for the most advanced tools. For example, 
 
 
-During the third task, the coverage tool determine what parts of the application are necessary. Therefore, it makes sense to consider the rest as bloat.
+
 
 
 # The solution
 
 
-The
+JDBL is extensible. 
+
+We combine a variety of implementations in order to achieve
 
 <p align="center">
   <a href="">
