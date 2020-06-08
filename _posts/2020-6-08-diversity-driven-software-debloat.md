@@ -86,15 +86,15 @@ There are many more examples like the two described above: including interfaces,
 
 To overcome the limitations of coverage and tracing tools, I tackle the problem from a different perspective. I decided to merge the coverage and tracing results of various tools, and debloat what none of the tools was able to cover. The current implementation of JDBL combines the outputs of three tools: JaCoco, [yajta](https://github.com/castor-software/yajta/), and the native class loader of the JVM. The benefits and drawbacks of these are the following:
 
-- **Yajta**: It is a tracing agent that works offline, it relies on Javassist for bytecode instrumentation. Probes are inserted in the beginning of each method. However, it does not performs fine-grain trace coverage. 
-- **JaCoCo**: It is a mature and fine grain Java code coverage tool that relies on ASM for bytecode instrumentation. Covers at the level of branches. However, it does not cover throwed exceptions, interfaces, and certain bytecode constructs.
+- **Yajta**: It is a tracing agent that works offline, it relies on Javassist for bytecode instrumentation. Probes are inserted in the beginning of each method. However, it does not perform fine-grain trace coverage. 
+- **JaCoCo**: It is a mature and fine grain Java code coverage tool that relies on ASM for bytecode instrumentation. Covers at the level of branches. However, it does not coves throw exceptions, interfaces, and certain bytecode constructs.
 - **JVM class loader**: It is very accurate: the JVM needs to load a class before executing it, by design. However, it does not trace methods. 
 
 A general scheme of JDBL is presented in the following figure:
 
 <p align="center">
   <a href="">
-    <img src="../img/posts/jdbl_diversity.jpg" height="75%"/>
+    <img src="../img/posts/jdbl_diversity.jpg" height="100%"/>
   </a>
 </p>
 
@@ -108,3 +108,6 @@ JDBL can be used to perform test-based debloat. The approach has three phases:
 
 As we observe, JDBL combines a variety of different implementations in order to achieve a unique goal: collecting the minimum set of classes and methods that are necessary to execute an application for a given workload. JDBL is extensible because it is not limited to a single coverage tool. It leverages the power of software diversity to break the limitations of existing tools and provide better debloat results. 
 
+# The lesson to learn
+
+When facing a hard problem for which no tool can provide a 100% accurate solution, combining the diversity of implementations is a feasible approach to achieve better results. Of course, this decision may have a negative impact on performance, but sometimes performance is not part of the goal :smiley:
