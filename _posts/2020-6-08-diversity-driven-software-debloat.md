@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Diversity-driven software debloat
-subtitle: Leveraging power of the crowds
+subtitle: Leveraging the wisdom of the crowds
 tags: debloat
 published: true
 image: ../img/posts/crowd.jpg
