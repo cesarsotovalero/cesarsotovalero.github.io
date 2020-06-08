@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Diversity-driven software debloat
-subtitle: The power of the crowds
+subtitle: Leveraging power of the crowds
 tags: debloat
 published: true
 image: ../img/posts/crowd.jpg
@@ -21,9 +21,9 @@ There are awesome Java coverage tools out there, notably: [JaCoCo](https://www.e
 3. Compare the activated sections of the code with respect to the original bytecodes
 4. Report on the achieved coverage, depending on the chosen metric
 
-During the third task, the coverage tool determines what parts of the application are necessary. Therefore, it makes sense to consider the rest as bloat. The problem with this approach is that coverage tools are not intended for that purpose. Also, the richness of Java bytecode constructs and dynamic behaviours poses a challenging even for the most advanced tools. 
+During the third task, the coverage tool determines what parts of the application are necessary. Therefore, it makes sense to consider the rest as bloat. The problem with this approach is that coverage tools are not intended to work for that purpose. Indeed, there is still a general debate regarding what should be considered as covered or not (e.g., resources, exceptions, interfaces), not to mention the different coverage metrics.
 
-Consider this example, taken from [this](https://github.com/jacoco/eclemma/issues/61) JaCoCo issue: 
+he richness of Java bytecode constructs and dynamic behaviours poses an additional challenging even for the most advanced coverage tools. Consider this example, taken from [this](https://github.com/jacoco/eclemma/issues/61) JaCoCo issue: 
 
 {% highlight java linenos %}
 public class FruitSalad {
@@ -47,11 +47,10 @@ public class FruitSaladTest {
 {% endhighlight %}
 
 
-Reading from the [JaCoCo documentation](https://www.eclemma.org/jacoco/trunk/doc/flow.html): "The probe insertion strategy described so far does not consider implicit exceptions thrown for example from invoked methods. If the control flow between two probes is interrupted by a exception not explicitly created with a throw statement all instruction in between are considered as not covered. This leads to unexpected results especially when the block of instructions spans multiple lines of source code. Therefore, JaCoCo adds an additional probe between the instructions of two lines whenever the subsequent line contains at least one method invocation. This limits the effect of implicit exceptions from method invocations to single lines of source. The approach only works for class files compiled with debug information (line numbers) and does not consider implicit exceptions from other instructions than method invocations (e.g. NullPointerException or ArrayIndexOutOfBoundsException).
+In the code above, the method `mix()` is not covered by JaCoCo. However, it is clear that, if we remove it, the test `mixItUp()` will fail. Reading the [JaCoCo documentation](https://www.eclemma.org/jacoco/trunk/doc/flow.html) to understand the reason behind this unexpected behaviour: _"The probe insertion strategy described so far does not consider implicit exceptions thrown for example from invoked methods. If the control flow between two probes is interrupted by a exception not explicitly created with a throw statement all instruction in between are considered as not covered._ To mitigate this issue, JaCoCo adds an additional probe between the instructions of two lines whenever the subsequent line contains at least one method invocation. This limits the effect of implicit exceptions from method invocations to single lines of source. However _"The approach only works for class files  compiled with debug information (line numbers) and does not consider implicit exceptions from other instructions than method invocations (e.g. NullPointerException or ArrayIndexOutOfBoundsException).
 
 
-
-# The solution
+# The approach
 
 
 JDBL is extensible. 
@@ -60,6 +59,6 @@ We combine a variety of implementations in order to achieve
 
 <p align="center">
   <a href="">
-    <img src="../img/posts/jdbl_diversity.jpg" height="500px"/>
+    <img src="../img/posts/jdbl_diversity.jpg" height="75%"/>
   </a>
 </p>
