@@ -47,12 +47,45 @@ public class FruitSaladTest {
 {% endhighlight %}
 
 
-In the code above, the method `mix()` is not covered by JaCoCo. However, it is clear that, if we remove it, the test `mixItUp()` will fail. Reading the [JaCoCo documentation](https://www.eclemma.org/jacoco/trunk/doc/flow.html) to understand the reason behind this unexpected behaviour: _"The probe insertion strategy described so far does not consider implicit exceptions thrown for example from invoked methods. If the control flow between two probes is interrupted by a exception not explicitly created with a throw statement all instruction in between are considered as not covered._ To mitigate this issue, JaCoCo adds an additional probe between the instructions of two lines whenever the subsequent line contains at least one method invocation. This limits the effect of implicit exceptions from method invocations to single lines of source. However _"The approach only works for class files  compiled with debug information (line numbers) and does not consider implicit exceptions from other instructions than method invocations (e.g. NullPointerException or ArrayIndexOutOfBoundsException).
+In the code above, the method `mix()` is not covered by JaCoCo. However, it is clear that, if we remove it, the test `mixItUp()` will fail. Reading the [JaCoCo documentation](https://www.eclemma.org/jacoco/trunk/doc/flow.html) to understand the reason behind this unexpected behaviour: _"The probe insertion strategy described so far does not consider implicit exceptions thrown for example from invoked methods. If the control flow between two probes is interrupted by a exception not explicitly created with a throw statement all instruction in between are considered as not covered._ To mitigate this issue, JaCoCo adds an additional probe between the instructions of two lines whenever the subsequent line contains at least one method invocation. This limits the effect of implicit exceptions from method invocations to single lines of source. However _"The approach only works for class files  compiled with debug information (line numbers) and does not consider implicit exceptions from other instructions than method invocations (e.g. NullPointerException or ArrayIndexOutOfBoundsException)".
+
+Let us consider another example. The following class declares a Java constant using the `public final static` initializer:
+
+{% highlight java linenos %}
+class Foo(){
+    public final static int RADIO = 3;
+}
+{% endhighlight %}
 
 
-# The winning approach
+The dissasembled bytecode of the class `Foo` looks as follows:
 
-It is clear that none tool is able to cover all the variety of bytecode constructs coming from real-world Java programs. To overcome the limitations of coverage and tracing tools, I tackle the problem from a different perspective. I decided to merge the coverage and tracing results of various tools. The current implementation of JDBL combines the outputs of JaCoco, [yajta](https://github.com/castor-software/yajta/), and the native class loader of the JVM. A general scheme of JDBL is presented in the following figure:
+{% highlight java linenos %}
+super public class Foo
+    version 51:0
+{
+
+public static final Field bar:I = int 3;
+
+public Method "<init>":"()V"
+    stack 1 locals 1
+{
+    aload_0;
+    invokespecial   Method java/lang/Object."<init>":"()V";
+    return;
+}
+
+} // end Class Foo
+{% endhighlight %}
+
+As we observe, the variable `RADIO`, initialized with a final static integer literal, is a compile-time constant. Compile-time constants get inlined by the bytecode compiler. This way, if we it from another class like `Foo.RADIO`, then the class `Foo` will not be considered as used at the bytecode level. But if we remove this class, the program will not compile.
+
+There are many more examples like the two described above; including interfaces, annotation, lambda expressions and implicit constructors. So, it is clear that none tool is able to cover all the variety of bytecode constructs coming from real-world Java programs. 
+
+
+# The winning strategy
+
+To overcome the limitations of coverage and tracing tools, I tackle the problem from a different perspective. I decided to merge the coverage and tracing results of various tools. The current implementation of JDBL combines the outputs of three tools: JaCoco, [yajta](https://github.com/castor-software/yajta/), and the native class loader of the JVM. A general scheme of JDBL is presented in the following figure:
 
 <p align="center">
   <a href="">
@@ -60,5 +93,5 @@ It is clear that none tool is able to cover all the variety of bytecode construc
   </a>
 </p>
 
-JDBL combines a variety of implementations in order to achieve and unique goal: collect the minimun set of classes and methods that are necessary to execute an application for a given workload. JDBL is extensible because it is not limited to a single coverage tool. 
+As we observe, JDBL combines a variety of different implementations in order to achieve a unique goal: collecting the minimun set of classes and methods that are necessary to execute an application for a given workload. JDBL is extensible because it is not limited to a single coverage tool. It leverages the power of software diversity to break the limitations of the 
 
