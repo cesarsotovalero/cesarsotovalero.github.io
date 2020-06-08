@@ -23,7 +23,7 @@ There are awesome Java coverage tools out there, notably: [JaCoCo](https://www.e
 
 During the third task, the coverage tool determines what parts of the application are necessary. Therefore, it makes sense to consider the rest as bloat. The problem with this approach is that coverage tools are not intended to work for that purpose. Indeed, there is still a general debate regarding what should be considered as covered or not (e.g., resources, exceptions, interfaces), not to mention the different coverage metrics.
 
-he richness of Java bytecode constructs and dynamic behaviours poses an additional challenging even for the most advanced coverage tools. Consider this example, taken from [this](https://github.com/jacoco/eclemma/issues/61) JaCoCo issue: 
+The richness of Java bytecode constructs and dynamic behaviours poses an additional challenging even for the most advanced coverage tools. Consider this example, taken from [this](https://github.com/jacoco/eclemma/issues/61) JaCoCo issue: 
 
 {% highlight java linenos %}
 public class FruitSalad {
@@ -50,15 +50,15 @@ public class FruitSaladTest {
 In the code above, the method `mix()` is not covered by JaCoCo. However, it is clear that, if we remove it, the test `mixItUp()` will fail. Reading the [JaCoCo documentation](https://www.eclemma.org/jacoco/trunk/doc/flow.html) to understand the reason behind this unexpected behaviour: _"The probe insertion strategy described so far does not consider implicit exceptions thrown for example from invoked methods. If the control flow between two probes is interrupted by a exception not explicitly created with a throw statement all instruction in between are considered as not covered._ To mitigate this issue, JaCoCo adds an additional probe between the instructions of two lines whenever the subsequent line contains at least one method invocation. This limits the effect of implicit exceptions from method invocations to single lines of source. However _"The approach only works for class files  compiled with debug information (line numbers) and does not consider implicit exceptions from other instructions than method invocations (e.g. NullPointerException or ArrayIndexOutOfBoundsException).
 
 
-# The approach
+# The winning approach
 
-
-JDBL is extensible. 
-
-We combine a variety of implementations in order to achieve
+It is clear that none tool is able to cover all the variety of bytecode constructs coming from real-world Java programs. To overcome the limitations of coverage and tracing tools, I tackle the problem from a different perspective. I decided to merge the coverage and tracing results of various tools. The current implementation of JDBL combines the outputs of JaCoco, [yajta](https://github.com/castor-software/yajta/), and the native class loader of the JVM. A general scheme of JDBL is presented in the following figure:
 
 <p align="center">
   <a href="">
     <img src="../img/posts/jdbl_diversity.jpg" height="75%"/>
   </a>
 </p>
+
+JDBL combines a variety of implementations in order to achieve and unique goal: collect the minimun set of classes and methods that are necessary to execute an application for a given workload. JDBL is extensible because it is not limited to a single coverage tool. 
+
