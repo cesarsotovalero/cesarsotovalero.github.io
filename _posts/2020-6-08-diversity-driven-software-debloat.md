@@ -104,7 +104,7 @@ A general scheme of JDBL is presented in the following figure:
 
 <p align="center">
   <a href="">
-    <img src="../img/posts/jdbl_diversity.jpg" alt="JDBL scheme"/>
+    <img src="../img/posts/jdbl_diversity.jpg" alt="JDBL scheme" height="100%"/>
   </a>
 </p>
 
