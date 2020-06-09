@@ -1255,7 +1255,7 @@ input.gsc-input,
   width: 100%;  /* The width is the width of the web page */
 }
 
-#logo {
+.software-logo img[align="left"]{
   padding-right: 20px;
 }
 
