@@ -9,7 +9,7 @@ date: 2020/5/23
 ---
 
 
->> "TODO." *― TODO*
+>> "None for now." *― None for now*
 
 # CSS basics
 
