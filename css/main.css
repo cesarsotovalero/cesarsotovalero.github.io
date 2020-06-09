@@ -90,7 +90,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 a {
   /*color: darkblue;*/
   color: darkblue;
@@ -521,15 +520,16 @@ footer .theme-by {
   line-height: 20px;
   text-align: left;
   color: #808080;
-  font-style: normal; !important;
+  font-style: normal;
+!important;
 }
 
 logo-main {
-  color:black;
+  color: black;
 }
 
-logo-main a:hover{
-  color:darkblue;
+logo-main a:hover {
+  color: darkblue;
 }
 
 /* --- Post preview --- */
@@ -631,11 +631,10 @@ logo-main a:hover{
 }
 
 
-
 .software-logo img {
   float: right;
-  height: 130px;
-  width: 130px;
+  /*height: 130px;*/
+  /*width: 130px;*/
   margin-top: -35px;
   filter: grayscale(100%);
   padding: 10px;
@@ -645,12 +644,11 @@ logo-main a:hover{
   filter: grayscale(0%);
 }
 
-.software-logo img {
+.software-logo {
   height: 130px;
   width: 130px;
   margin: 10px;
 }
-
 
 
 .post-preview .post-read-more {
@@ -988,7 +986,8 @@ code {
   font-size: 16px;
   color: black;
   border-radius: 1px;
-  text-decoration: none; !important;
+  text-decoration: none;
+!important;
 }
 
 code a:hover, a:focus {
@@ -1274,8 +1273,8 @@ input.gsc-input,
 
 /* Set the size of the div element that contains the map */
 #map {
-  height: 400px;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
 }
 
 
