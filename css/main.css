@@ -630,6 +630,28 @@ logo-main a:hover{
   margin: 10px;
 }
 
+
+
+.software-logo {
+  float: right;
+  height: 130px;
+  width: 130px;
+  margin-top: -35px;
+  filter: grayscale(100%);
+}
+
+.software-logo {
+  filter: grayscale(0%);
+}
+
+.software-logo img {
+  height: 130px;
+  width: 130px;
+  margin: 10px;
+}
+
+
+
 .post-preview .post-read-more {
   /*font-weight: 800;*/
   font-style: normal;
@@ -1255,7 +1277,4 @@ input.gsc-input,
   width: 100%;  /* The width is the width of the web page */
 }
 
-.software-logo img[align="left"]{
-  padding-right: 20px;
-}
 
