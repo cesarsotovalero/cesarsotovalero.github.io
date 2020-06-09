@@ -632,15 +632,16 @@ logo-main a:hover{
 
 
 
-.software-logo {
+.software-logo img {
   float: right;
   height: 130px;
   width: 130px;
   margin-top: -35px;
   filter: grayscale(100%);
+  padding: 10px;
 }
 
-.software-logo {
+.software-logo:hover {
   filter: grayscale(0%);
 }
 
