@@ -27,8 +27,7 @@ I develop robust software prototypes to support my research. I also contribute t
 
 ---
 
-<img src="https://cesarsotovalero.github.io/img/logos/DepClean_logo.png" height="100px"/> 
-
+<img align="left" src="https://github.com/castor-software/depclean/blob/master/logo.svg" height="100px"  alt="DepClean logo"/>
 <a href="https://github.com/castor-software/depclean"><i class="fab fa-github"></i></a> DepClean is a tool to automatically remove dependencies that are included in your Java dependency tree but are not actually used in the project's code. DepClean detects and removes all the unused dependencies declared in the `pom.xml` file of a project or imported from its parent. For that, it relies on bytecode static analysis and extends the `maven-dependency-analyze` plugin (more details on this [plugin](https://maven.apache.org/plugins/maven-dependency-plugin/analyze-mojo.html)). DepClean does not modify the original source code of the application nor its original `pom.xml`. It can be executed as a Maven goal through the command line or integrated directly into the Maven build lifecycle. 
 
 ---
