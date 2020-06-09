@@ -18,7 +18,7 @@ I develop robust software prototypes to support my research. I also contribute t
 <div class="software-logo">
 <img align="left" src="../img/logos/DepHeaven_logo.svg" height="100px"  alt="DepHeaven logo"/>
 </div>
-<a href="https://github.com/castor-software/depclean"><i class="fab fa-github"></i></a> DepHeaven is a tool to resolve the resolve the  [dependency hell](https://en.wikipedia.org/wiki/Dependency_hell) in Java projects. DepHeaven fixes dependency conflicts in Maven projects dynamically, during the build execution. 
+<a href="https://github.com/castor-software/depclean"><i class="fab fa-github"></i></a> DepHeaven is a tool to solve the  [dependency hell](https://en.wikipedia.org/wiki/Dependency_hell) in Java projects. DepHeaven fixes dependency conflicts in Maven projects dynamically, during the build execution. 
 
 ---
 
