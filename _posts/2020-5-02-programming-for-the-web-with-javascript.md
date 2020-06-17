@@ -570,8 +570,7 @@ ReactDOM.render(
 
 ### Component Lifecycle
 
-The React VirtualDOM invokes callback functions on components fuding their lifecycle. These functions fall into three categories: mounting, updating, and unmounting. One can optionally implement these for controlling the component.
-
+The React VirtualDOM invokes callback functions on components finding their lifecycle. These functions fall into three categories: mounting, updating, and unmounting. One can optionally implement these for controlling the component.
 
 Mounting:
 - `constructor`: creates component, initializes state based on properties
@@ -585,6 +584,34 @@ Unmounting:
 
 The HTML for the TimesViewed example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/3.2-react-TimesViewed.html).
 
+
+# React events
+
+```javascript
+class Counter extends React.Component { 
+  constructor(props) {
+    super(props);
+    this.state = { count : 0 };
+  }
+      incrementCount () { 
+      this.setState({ 
+               count: this.state.count + 1 
+        });
+      }
+      render () { // invoked when setState is called
+      return ( 
+      <div>Count: { this.state.count } 
+	    < button type = "button" onClick = { this.incrementCount.bind(this) } > Increment </button> </div>
+  );
+  } 
+}; 
+
+ReactDOM.render(
+  <div>
+    <Counter />
+   </div>,
+document.getElementById('container'));
+```
 
 
 
