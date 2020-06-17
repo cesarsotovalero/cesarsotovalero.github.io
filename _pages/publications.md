@@ -72,3 +72,12 @@ in Debugging Activities](https://2018.msrconf.org/track/msr-2018-Mining-Challeng
 <a href="../files/publications/SOTO-VALERO C. Retos (1).pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**, Mabel González. [Sabermetrics and New Trends in the Statistical Analysis of Baseball](https://recyt.fecyt.es/index.php/retos/article/view/34826). _Retos: Nuevas Tendencias en Deporte Educación Física y Recreación_, 28, 122-127.
 
 <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/master/files/publications/SOTO-VALERO%20C.%20%20REEFD.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> María S. Ibarra-Vargas, **César Soto-Valero**, Yasiel Martínez-Díaz, R. Felipe Heredia-Torres. [Proposal of Exercises to Improve the Effectiveness of Defensive Skills of Junior Boxers](http://www.reefd.es/index.php/reefd/article/view/115). _Revista Española de Educación Física y Deportes_, (411), 73-89.
+
+### 2013
+
+<a href="https://www.researchgate.net/publication/273447766_Mineria_de_datos_para_series_temporales"><i class="far fa-file-pdf"></i></a> <img alt="" title="Informal and Other Publications" src="https://dblp.uni-trier.de/img/n.png" style="background: #606b70; width: 18px; height: 18px"> Mabel González, **César Soto-Valero**. [Minería de datos para series temporales](https://www.researchgate.net/publication/273447766_Mineria_de_datos_para_series_temporales). _Techical Report_, DOI: 10.13140/RG.2.1.2571.9841.
+
+<a href="../files/publications/SOTO-VALERO_C._BSC_THESIS.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Books and Theses" src="https://dblp.uni-trier.de/img/n.png" style="background: #f8c91f; width: 18px; height: 18px"> **César Soto-Valero**, [Minería de datos para series temporales en Weka y su aplicación en el pronóstico de precipitaciones](https://dspace.uclv.edu.cu/handle/123456789/1935). _Bachelor's thesis_. The Central University of Las Villas, Department of Computer Science, July 2013. 
+
+
+
