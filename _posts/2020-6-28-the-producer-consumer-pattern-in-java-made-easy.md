@@ -8,13 +8,11 @@ image: ../img/posts/java_design_patterns.jpg
 date: 2020/6/28
 ---
 
-> "\[BlockingQueue\] A Queue that additionally supports operations that wait for the queue to become non-empty when retrieving an element, and wait for space to become available in the queue when storing an element." *― [JDK Documentation, since v.1.5](https://docs.oracle.com/javase/8/docs/api/?java/util/concurrent/BlockingQueue.html)*
+> "A BlockingQueue is a queue that additionally supports operations that wait for the queue to become non-empty when retrieving an element, and wait for space to become available in the queue when storing an element." *― [JDK Javadoc, since v.1.5](https://docs.oracle.com/javase/8/docs/api/?java/util/concurrent/BlockingQueue.html)*
 
 I see the usage of a recurring handy pattern for doing data collection and analysis in software engineering: t[the producer-consumer pattern](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem). This pattern simplifies the data acquisition (handled by the Producer), and the data post-processing (handled by the Consumer). The Producer collects the data items one at the time and places the items into a queue for processing later. The Consumer then takes one item at the time from the queue, process it, and saves the data for further analysis. This decoupled design makes easy to parallelize the whole process as desired. For example, depending on the processing time and resources, one can have several *independent* Consumers running in parallel.
 
-We have used this the Producer-Consumer pattern successfully to collect million of artifacts from Maven Central and storing them in a graph database, and published our tool, [maven-miner](https://github.com/diverse-project/maven-miner), and data in a [research paper](https://ieeexplore.ieee.org/document/8816814). For this paper, we used [RabbitMQ](https://www.rabbitmq.com/) for message querying. 
-
-In this post, I'll explain a more straightforward way to implement this pattern in Java using the `BlockingQueue` data structure. The example is inspired by the excellent Advanced Java Development course by Ken Kousen. 
+We have used this the Producer-Consumer pattern successfully to collect million of artifacts from Maven Central and storing them in a graph database. We have published our research tool, [maven-miner](https://github.com/diverse-project/maven-miner), and the collected data in a [research paper](https://ieeexplore.ieee.org/document/8816814). For this paper, we used [RabbitMQ](https://www.rabbitmq.com/) for message querying. In this post, I'll explain a more straightforward way to implement this pattern in Java using the `BlockingQueue` data structure. The example is inspired by the excellent *Advanced Java Development* course by Ken Kousen. 
  
 # The Item 
 
