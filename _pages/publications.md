@@ -18,6 +18,8 @@ My ORCID  <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" 
 
 ### 2020
 
+<a href="https://arxiv.org/pdf/2008.08401.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**, Thomas Durieux, Nicolas Harrand, Benoit Baudry. [Trace-based Debloat for Java Bytecode](https://arxiv.org/abs/2008.08401). In _arXiv_.
+
 <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/raw/master/files/publications/SOTO-VALERO_C. _JSS.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> Nicolas Harrand, **César Soto-Valero**, Martin Monperrus, Benoit Baudry. [Java Decompiler Diversity and its Application to Meta-decompilation](https://www.sciencedirect.com/science/article/pii/S0164121220301151). In _Journal of Systems and Software_. DOI: 10.1016/j.jss.2020.110645.
 
 <a href="https://arxiv.org/pdf/2001.07808.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**, Nicolas Harrand, Martin Monperrus, Benoit Baudry. [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://arxiv.org/abs/2001.07808). In _arXiv_. <a href="https://medium.com/@almyre/how-much-third-party-java-dependencies-do-you-really-need-45650180367a"><i class="fab fa-medium"></i></a>.
