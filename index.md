@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello, I'm César
-subtitle: Ph.D. Student | Simplicity Lover | + Guy
+title: Hej, I'm César
+subtitle: I'm focused on pursuing excellent research in Software Technology for the benefit of the Swedish industry
 use-site-title: true
 ---
 
