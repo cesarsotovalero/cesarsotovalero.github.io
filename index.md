@@ -236,6 +236,7 @@ css: '/css/extend-home.css'
           {% endif %}
         </ul>
 
+<br>
 
 <div class="list-filters">
     <a class="list-filter" href="/publications">Publications</a>
