@@ -237,10 +237,24 @@ css: '/css/extend-home.css'
         </ul>
 
 
+<button onclick="window.location.href='https://www.cesarsotovalero.net/publications';">
+      Publications
+</button>
+
+<button onclick="window.location.href='https://www.cesarsotovalero.net/software';">
+      Software
+</button>
+
+<button onclick="window.location.href='https://www.cesarsotovalero.net/service';">
+      Service
+</button>
+
+
+<!-- 
 > "It seems that perfection is attained, not when there is nothing more to add, but when there is nothing more to take away"
 > -- <cite>Antoine de Saint-Exupéry</cite>
 
-<!-- The ultimate defense is to drive the complexity of the ultimate attack up so high that the cost of attack is too high to be worth performing -->
+The ultimate defense is to drive the complexity of the ultimate attack up so high that the cost of attack is too high to be worth performing -->
 
 ---
 
