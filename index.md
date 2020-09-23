@@ -237,18 +237,11 @@ css: '/css/extend-home.css'
         </ul>
 
 
-<button onclick="window.location.href='https://www.cesarsotovalero.net/publications';">
-      Publications
-</button>
-
-<button onclick="window.location.href='https://www.cesarsotovalero.net/software';">
-      Software
-</button>
-
-<button onclick="window.location.href='https://www.cesarsotovalero.net/service';">
-      Service
-</button>
-
+<div class="list-filters">
+    <a class="list-filter" href="/publications">Publications</a>
+    <a class="list-filter" href="/software">Software</a>
+    <a class="list-filter" href="/service">Service</a>
+</div>
 
 <!-- 
 > "It seems that perfection is attained, not when there is nothing more to add, but when there is nothing more to take away"
