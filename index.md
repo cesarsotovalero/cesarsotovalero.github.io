@@ -237,9 +237,9 @@ css: '/css/extend-home.css'
         </ul>
 
 <div class="list-filters">
-    <a class="list-filter" href="/publications">Publications</a>
-    <a class="list-filter" href="/software">Software</a>
-    <a class="list-filter" href="/service">Service</a>
+    <a class="list-filter general-button" href="/publications">Publications</a>
+    <a class="list-filter general-button" href="/software">Software</a>
+    <a class="list-filter general-button" href="/service">Service</a>
 </div>
 
 <!-- 
@@ -250,7 +250,7 @@ The ultimate defense is to drive the complexity of the ultimate attack up so hig
 
 ---
 
-<h1 class="text-center">Recent Posts</h1> 
+<h1 class="text-center" style="font-family: 'Open Sans'; font-weight: lighter">Recent Posts</h1> 
 <div class="posts-list">
   {% for post in site.posts limit:5 %}
   <article class="text-left" >
@@ -258,6 +258,11 @@ The ultimate defense is to drive the complexity of the ultimate attack up so hig
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-title-main">
           <h2 class="post-title-main">{{ post.title }}</h2>
         </a>
+               {% if post.subtitle %}
+               <h3 class="post-subtitle">
+                 {{ post.subtitle }}
+               </h3>
+               {% endif %}
             <p class="post-meta-index">
               Posted on {{ post.date | date: "%B %-d, %Y" }}
             </p>
@@ -291,7 +296,7 @@ The ultimate defense is to drive the complexity of the ultimate attack up so hig
 
 ---
 
-<h1 class="text-center">Organizations </h1>
+<h1 class="text-center" style="font-family: 'Open Sans'; font-weight: lighter">Organizations </h1>
 
 <p align="center">
 <a href="https://www.kth.se"><img class="" title="KTH" src="https://www.cesarsotovalero.net/img/logos/kth_logo.png" alt="KTH" height="85"></a>
