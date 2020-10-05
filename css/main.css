@@ -388,7 +388,7 @@ endif
   font-weight: normal;
 }
 
-.navlinks-children a:hover {
+.navbar-custom .nav .navlinks-container .navlinks-children a:hover {
   color: #fff;
   background: #444;
 }
