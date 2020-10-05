@@ -388,6 +388,11 @@ endif
   font-weight: normal;
 }
 
+.navlinks-children a:hover {
+  color: #fff;
+  background: #444;
+}
+
 @media only screen and (max-width: 767px) {
   .navbar-custom .nav .navlinks-container.show-children {
     background: #eee;
@@ -581,19 +586,28 @@ logo-main a:hover {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
+  font-family: "Open Sans";
+}
+
+
+.posts-list .post-subtitle {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-family: "Open Sans";
 }
 
 .post-preview .post-meta,
 .post-heading .post-meta {
   color: #808080;
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   margin: 0 0 10px;
 }
 
 .post-meta-index {
   color: #808080;
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   margin: 0 0 10px;
 }
@@ -609,6 +623,11 @@ logo-main a:hover {
 
 .post-entry {
   width: 100%;
+}
+
+.class-link {
+ color: darkblue;
+
 }
 
 .post-image {
@@ -648,10 +667,16 @@ logo-main a:hover {
 }
 
 
-
 .post-preview .post-read-more {
   /*font-weight: 800;*/
+  color: darkblue;
   font-style: normal;
+}
+
+
+
+.post-preview a:hover {
+  text-decoration: underline;
 }
 
 .post-read-more {
@@ -893,8 +918,9 @@ logo-main a:hover {
   letter-spacing: 1px;
   padding: 10px 5px;
   background: #FFF;
-  border-radius: 0;
-  s color: #404040;
+  border-radius: 1px;
+  color: #404040;
+  border: 1px solid #777;
 }
 
 @media only screen and (min-width: 768px) {
@@ -906,8 +932,8 @@ logo-main a:hover {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  background: darkblue;
-  border: 1px solid darkblue;
+  background: #444;
+  border: 1px solid #777;
 }
 
 .pager {
@@ -1273,6 +1299,18 @@ input.gsc-input,
 #map {
   height: 400px; /* The height is 400 pixels */
   width: 100%; /* The width is the width of the web page */
+}
+
+.general-button {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 10px 5px;
+  background: #FFF;
+  border-radius: 0;
+  color: #404040;
 }
 
 
