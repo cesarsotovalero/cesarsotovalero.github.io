@@ -32,15 +32,11 @@ published: true
 
 - [Unix Tools: Data, Software and Production Engineering](https://courses.edx.org/certificates/e922632cec44445ea8d1f534d64f7d8a), edX, 2020
 
-## Examinations
+## Other
 
 - [IELTS Academic Test 6.5](../img/IETLS_Test_Report_Form.jpg), University of Cambridge ESOL Examinations, 2016
 
-## Reviewer
-
 - [Reviewer Certificate](https://onlinelibrary.wiley.com/journal/20477481), _Journal of Software: Evolution and Process_, 2017
-
-## Contests
 
 - [Staff Member](../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf), _ICPC-ACM International Collegiate Programming Contest_, 2017 
 
