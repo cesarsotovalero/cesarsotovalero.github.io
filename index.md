@@ -253,6 +253,7 @@ The ultimate defense is to drive the complexity of the ultimate attack up so hig
 <h1 class="text-center" style="font-family: 'Open Sans'; font-weight: lighter">Recent Posts</h1> 
 <div class="posts-list">
   {% for post in site.posts limit:5 %}
+  <hr style="max-width:100px;text-align:left;margin-left:0">
   <article class="text-left" >
     <span class="text-left">  
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-title-main">

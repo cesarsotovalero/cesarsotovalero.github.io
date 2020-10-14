@@ -26,6 +26,12 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 
 ### 2020
 
+<img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [SecureComm] **
+Hecate: Automated Customizationof Program and Communication Featuresto Reduce Attack Surfaces** [[link]](https://link-springer-com.focus.lib.kth.se/chapter/10.1007%2F978-3-030-37231-6_17) 
+
+<details> 
+Customizing program and communication features is a commonly adopted strategy to counter security threats that arise from rapid inflation of software features. In this paper, we propose Hecate, a novel framework that leverages dynamic execution and trace to create customized, self-contained programs, in order to minimize potential attack surface. It automatically identifies program features (i.e., independent, well-contained operations, utilities, or capabilities) relating to application binaries and their communication functions, tailors and eliminates the features to create customized program binaries in accordance with user needs, in a fully unsupervised fashion. Hecate makes novel use of deep learning to identify program features and their constituent functions by mapping dynamic instruction trace to functions in the binaries. It enables us to modularize program features and efficiently create customized program binaries at large scale. We implement a prototype of Hecate using a number of open source tools such as DynInst and TensorFlow. Evaluation using real-world executables including OpenSSL and LibreOffice demonstrates that Hecate can create a wide range of customized binaries for diverse feature requirements, with the highest accuracy up to 96.28% for feature/function identification and up to 67% reduction of program attack surface.
+</details>
 
 <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [PLDI] **BlankIt Library Debloating: Getting What You Want Instead of Cutting What You Don't** [[link]]() 
 

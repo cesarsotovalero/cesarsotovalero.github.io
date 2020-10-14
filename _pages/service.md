@@ -20,13 +20,11 @@ published: true
 
 - [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Spring 2019
 
-## Supervision
+## Thesis supervision
 
-- [Using NLP Techniques for Log Analysis to Create a Recommendation System](), **Master Thesis**, Martin Larsson, KTH 2020
+- [Using NLP Techniques for Log Analysis to Create a Recommendation System](#), Martin Larsson, **Master Thesis**, KTH 2020
 
-- [Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning](), Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020
-
-- [Automatic Debloat of Test Suites](), Anton Lilja. **Master Thesis**, KTH 2020
+- [Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf), Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020
 
 - [Análisis de La Actividad Competitiva en el Juego de Polo Acuático](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf?sequence=1&isAllowed=y), Pascalina Stanislas-Inglis. **Bachelor Thesis**, Cuba 2014
 
