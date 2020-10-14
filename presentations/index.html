@@ -13,13 +13,13 @@
 
    <!-- try reveal-chart at https://dvenkatsagar.github.io/prez/reveal-chart.html#/2-->
 
-   <link href="reveal.js/css/reveal.scss" rel="stylesheet">
+   <link href="/reveal.js/css/reveal.scss" rel="stylesheet">
 
    <!-- Custom css-->
-   <link href="reveal.js/css/theme/source/white.scss" rel="stylesheet">
+   <link href="/reveal.js/css/theme/source/white.scss" rel="stylesheet">
 
    <!-- Theme used for syntax highlighting of code -->
-   <link href="reveal.js/lib/css/vs.css" rel="stylesheet">
+   <link href="/reveal.js/lib/css/vs.css" rel="stylesheet">
 
    <!-- Insert a fixed logo -->
    <!--<style>-->
@@ -169,8 +169,8 @@
 </div>
 
 
-<script src="reveal.js/lib/js/promise.js"></script>
-<script src="reveal.js/js/reveal.js"></script>
+<script src="/reveal.js/lib/js/promise.js"></script>
+<script src="/reveal.js/dist/reveal.js"></script>
 
 <script>
    // More info about config & dependencies:
@@ -183,11 +183,11 @@
          config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
       },
       dependencies: [
-         {src: 'presentations/reveal.js/plugin/markdown/marked.js'},
-         {src: 'presentations/reveal.js/plugin/markdown/markdown.js'},
-         {src: 'presentations/reveal.js/plugin/notes/notes.js', async: true},
+         {src: '/reveal.js/plugin/markdown/marked.js'},
+         {src: '/reveal.js/plugin/markdown/markdown.js'},
+         {src: '/reveal.js/plugin/notes/notes.js', async: true},
          {
-            src: 'presentations/reveal.js/plugin/highlight/highlight.js', async: true, callback: function () {
+            src: '/reveal.js/plugin/highlight/highlight.js', async: true, callback: function () {
                hljs.initHighlightingOnLoad();
             }
          },

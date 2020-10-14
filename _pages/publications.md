@@ -16,6 +16,9 @@ As a researcher, I ~~have to~~ is my pleasure to write papers for journals and c
 
 ### 2020
 
+
+<a href="https://arxiv.org/pdf/2008.08401.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Gustaf Halvardsson, Johanna Peterson, **César Soto-Valero**, Benoit Baudry. [Interpretation of Swedish Sign Language using Convolutional Neural Networks and Transfer Learning](#). In _arXiv_.
+
 <a href="https://arxiv.org/pdf/2008.08401.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**, Thomas Durieux, Nicolas Harrand, Benoit Baudry. [Trace-based Debloat for Java Bytecode](https://arxiv.org/abs/2008.08401). In _arXiv_.
 
 <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/raw/master/files/publications/SOTO-VALERO_C._JSS.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> Nicolas Harrand, **César Soto-Valero**, Martin Monperrus, Benoit Baudry. [Java Decompiler Diversity and its Application to Meta-decompilation](https://www.sciencedirect.com/science/article/pii/S0164121220301151). In _Journal of Systems and Software_. DOI: 10.1016/j.jss.2020.110645.
