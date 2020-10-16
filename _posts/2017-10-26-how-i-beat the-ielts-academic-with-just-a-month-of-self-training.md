@@ -12,7 +12,7 @@ The International English Language Testing System (IELTS) is one of the major En
 
 There are two versions of the test, **IELTS Academic** and **IELTS General Training**. The first is intended for those who want to enroll in universities and other institutions for higher education, while the latter is for test takers who want to work, study at a secondary school or migrate to an English-speaking country. In this blog post, I will refer to the Academic version of the test.
 
-## Contents
+# Contents
 1. [The test](#the-test)
   - [Listening](#listening)
   - [Reading](#reading)
@@ -32,7 +32,7 @@ There are two versions of the test, **IELTS Academic** and **IELTS General Train
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-## The test
+# The test
 
 First of all, there is no official pass or fail for the test. IELTS is scored on a nine-band scale, with each band corresponding to a specified competence in English. Band scores are used for each language sub-skill (Listening, Reading, Writing, and Speaking). The Band Scale ranges from 0 (_"Did not attempt the test"_) to 9 (_"Expert User"_). The IELTS minimum scores required by academic institutions and by course vary. As a general rule, the ranked universities in the world tend to require a higher IELTS band (typically higher or equal to 6.5). Once you completed the test, your IELTS results will be available 13 days after and you will receive a Test Report Form like this one:
 
@@ -45,8 +45,6 @@ First of all, there is no official pass or fail for the test. IELTS is scored on
     &#169; Official IELTS test report form
     </figcaption>
 </figure>
-
-
 
 In my opinion, it is practically impossible to achieve an overall band score of 9 (the maximum) in IELTS. The test is designed to be this way. The reason? In a four letters single word: **time**. 
 
@@ -61,7 +59,7 @@ Time will be your worst enemy if you are interested in taking the IELTS. The tes
 
 The best of all the advice I can give to do well in IELTS is to **know the test** and **practice**. When I say "know", I mean to master all the details of the test’s structure. On the other hand, practicing for IELTS is not doing one or two parts of the tests separately, but complete dozens of full tests just like the real one. Take into account that you should be prepared not for a regular English exam, but for a particular type of test that will force you to put your mind and skills to its limits. In the following, I will divide each section of the test into parts and give suggestions and personal remarks about what is required to be completed in each of them.
 
-### Listening
+# Listening
 
 The Listening Test takes between 20 and 30 minutes to listen to a recording and to answer questions on what you hear, and 10 minutes to transfer your answers to the [Answer Sheet](https://cesarsotovalero.github.io/files/IELTS_Listening_Answer_Sheet.pdf). It consists of 4 sections. There are 40 questions in total. You need to answer all the questions as you listen to the recording. The recording is not paused at any time, and you hear it only once. The questions get more difficult as you progress through the test.
 
@@ -78,7 +76,7 @@ Here is a list of tips and tricks I learned during my training for the Listening
 
 Finally, recall that even when you feel confident, a lot of practice is still needed to achieve a high score in the real test. I did nearly 40 Listening Test before attempting the actual test.
 
-### Reading
+# Reading
 
 The Reading Test takes 1 hour, and your task is to read passages of text and to answer questions according to what you have learned. It consists of 3 text passages and has 40 questions in total. Your job is to read the passages and either answer questions, label diagrams, complete sentences, or fill gaps. For every type of task, there are instructions and an example. Passages are taken from books, newspapers, magazines, and the topics are very diverse, from scuba diving to space exploration. Passages progress in difficulty, with the first being the easiest and the third the hardest.
 
@@ -99,7 +97,7 @@ I thought that the Reading Test was my best part of the test, but unfortunately,
 
 Practicing for the Reading Test is useful but not too much as the other parts of the IELTS. This is because the vocabulary, in general, is very rich, and it is almost impossible to know and dominate all the words. The best practice is to **refine the scanning strategy** to get the main idea of each paragraph without reading it entirely.
 
-### Writing
+# Writing
 
 Writing takes 1 hour and is divided into two sub-parts: 20 minutes to write a report and 40 minutes to write an essay. The report is based on a graph, a diagram, or a table you that receive, and you must use not fewer than 150 words. The second task is to write an essay on a given topic, present and justify an opinion or provide a solution to a problem, using no fewer than 250 words.
 
@@ -123,7 +121,7 @@ There are only three kinds of essay topics in IELTS:
 
 I did a mental structure to write each of these three kinds of essays, and after a little practice, I discovered that I could write a good essay on almost all the given topics. If you want to know how I did it, I recommend you to study these two sources [1](https://www.ieltsadvantage.com/writing-task-1/) and [2](https://www.ieltsadvantage.com/writing-task-2/). 
 
-### Speaking
+# Speaking
 
 Speaking takes up to 15 minutes and consists of 3 parts. The first sub-part of the Speaking test is an interview, which means that the examiner asks you questions about yourself, your work, studies, parents, brothers/sisters, pets, etc. This is an easy task to prepare for. In the second sub-part of the Speaking Test you receive a card with 3-4 questions. After one minute, during which you have to think about something to say, you should give a short speech for one to two minutes, which answers those questions. In the end, the examiner might ask you a couple of additional questions. In the third sub-part of the test, you discuss it with the examiner. The topic is somehow related to the one from section two, but it is about more abstract ideas. You have to express and justify your opinions. Speaking performance is evaluated according to a set of [speaking band descriptors](https://cesarsotovalero.github.io/files/IELTS_Speaking_Band_Descriptors.pdf) you should know.
  
@@ -142,10 +140,12 @@ Here is a list of general tips and tricks I learned during my training for the S
 
 My personal advice is that the Speaking test is strongly predictable, so once you practice during a dozen of interviews, you will able to **predict the next question**. I remember that I prepared myself for each of the three parts separately; it’s like a game. I was familiarized with nearly all possible common questions. It is better if you have somebody for training (my wife helps me with this part). Finally, don’t expect a friendly interviewer, they are more interested in what’s recording the microphone than in you.
 
-## Last remarks
+# Last remarks
+
 You should learn about all the types of tasks required in each part of the test. Make your strategy and recall that in the real test, you are going to score lower than in practice because of stress, pressure, and other factors (often one entire point lower than your average score). For instance, if you want to go for a band score of seven, be sure to achieve an eight during practice. 
 
-## Useful resources
+# Useful resources
+
 - The Official Cambridge Guide to IELTS Series 1 to 10 - Student's Book with Answers
 - Target Band 7: IELTS Academic Module - how to Maximize Your Score by Simone Braverman
 - 101 Helpful Hints for IELTS Academic Module by Garry Adams and Terry Peck

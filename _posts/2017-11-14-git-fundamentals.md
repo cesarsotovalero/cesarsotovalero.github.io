@@ -25,7 +25,7 @@ Git is the standard version-control system for software development. Git was cre
 * [Git revert](#git-revert)
 * [Git reset](#git-reset)
 
-### Git configurations
+# Git configurations
 
 First, add your user name and email to the git global configurations. These commands will be automatically written  to `~/.gitconfig`.
 
@@ -45,7 +45,7 @@ git config --gloabal alias.s "status -s"
 git config --global alias.lg "log --oneline --all --graph --decorate"
 ```
 
-### Git commits
+# Git commits
 
 To commit all the modified files,  add them to the staging area and commit with a message:
 
@@ -66,7 +66,7 @@ To change the message of the last t commit made:
 git commit --amend
 ```
 
-### Git branches
+# Git branches
 
 To list all the existing branches (including the remote branch, often called `origin/master`):
 
@@ -92,7 +92,7 @@ To remove a  branch:
 git branch -d  branch_name
 ```
 
-### Git diff
+# Git diff
 
 To see the difference between unstaged files:
 
@@ -112,7 +112,7 @@ To see the difference with respect to the last commit made:
 git diff HEAD
 ```
 
-### Git merge 
+# Git merge 
 
 To merge a branch using recursive merge, switch to the desired branch (e.g., the `master` branch) and create a commit  message for the merge:
 
@@ -127,7 +127,7 @@ git add .
 git commit
 ```
 
-### Git rebase
+# Git rebase
 
 To put all the commit of a branch on the top of the HEAD:
 
@@ -144,7 +144,7 @@ git rebase -i HEAD~5
 
 Then edit the list of commits  by adding substituting  `pick` by `f` to squash the commits into less, or `r` to reword the commit message.
 
-### Git fetch & push & pull
+# Git fetch & push & pull
 
 To push the content of your project to a remote repository (e.g., GitHub) create a repo and add it as a remote:
 
@@ -165,7 +165,7 @@ To fetch and merge the content of the remote repository at the same time:
 git pull
 ```
 
-### Git tags
+# Git tags
 
 Tags are useful to keep track of the releases. To add an annotated tag to a commit:
 
@@ -184,7 +184,7 @@ git show v1.0.0
 git push tags
 ```
 
-### Git revert
+# Git revert
 
 To undo the last commit and create a new commit with the revert:
 
@@ -192,7 +192,7 @@ To undo the last commit and create a new commit with the revert:
 git revert commit_id
 ```
 
-### Git reset
+# Git reset
 
 To throw away a certain number of commits (2 in this example) :
 
@@ -203,7 +203,7 @@ git reset HEAD~2
 
 # Troubleshooting
 
-### `.gitignore` is not working. 
+# `.gitignore` is not working. 
 
 
 You may need to remove every file that was cached in the `.gitignore`. Be aware to commit all your changes before, otherwise you will loose control on all the changed files. 
@@ -214,7 +214,7 @@ git add .
 git commit -m ".gitignore is now working"
 ```
 
-### git log of a Java method
+# git log of a Java method
 
 You need to add the following to the `.gitattributes` file.
 
