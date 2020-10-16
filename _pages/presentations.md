@@ -14,11 +14,11 @@ published: true
 As a PhD Student, I'm ~~forced~~ pleased to present my work in workshops, conferences, and everywhere.
 The following is a non-exhaustive list of my technical presentations.
 
-### 2020
+# 2020
 
 - [Are developers willing to remove bloated dependencies?](https://www.cesarsotovalero.net/presentations/assert-13th/#/). Presented at _13th ASSERT Software Engineering Workshop_, Stockholm, Sweden, Jan 2020.
   
-### 2019
+# 2019
 
 - [Presentation for FDT3303](https://docs.google.com/presentation/d/1KpB16Ibfn3yjxTIxeRPcmR4JcZn3aujEl2EThyOC88U/edit?usp=sharing). Paper reading presented at KTH, Stockholm, December 2019.
 
@@ -32,13 +32,13 @@ The following is a non-exhaustive list of my technical presentations.
 
 - [The Emergence of Software Diversity in Maven Central](../../presentations/msr-2019/index.html). Presented at _16th International Conference on Mining Software Repositories_ (MSR), Montreal, Canada, May 2019.
 
-### 2018
+# 2018
 
 - [Bloatware Mitigation and Analysis](https://docs.google.com/presentation/d/1LYvt7fFdGf_VvdlD2XRHzUTfZZOqM55Wopw6IYM6PNQ/edit?usp=sharing). Presented at _5th ASSERT Software Engineering Workshop_, Stockholm, Sweden, Nov 2018.
 
 - [Mining Software Dependencies at Large Scale: A Preliminary Study on the Maven Central Repository](https://drive.google.com/file/d/1SG39_4eREeXZZy4ggU4OMPPe2GRI5zU4/view). Presented at _4th ASSERT Software Engineering Workshop_, Stockholm, Sweden, Sep 2018.
 
-### Related presentations
+# Related presentations
 
 - [Bintrimmer: Towards Static Binary Debloating Through Abstract Interprepation](https://www.dimva2019.org/wp-content/uploads/sites/31/2019/06/DIMVA19-slides-11.pdf), June 2019
 

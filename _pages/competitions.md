@@ -13,7 +13,7 @@ published: true
 
 I'm not a competitive person, but sometimes it is worth to put some pressure and participate in competitive events just to see what happens.
 
-### Competitions
+# Competitions
 
 - [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), Participant, 2020
 

@@ -16,15 +16,6 @@ I develop robust software prototypes to support my research. I also contribute t
 # Author
 
 <div class="software-logo">
-<a href="https://github.com/castor-software/depheaven">
-<img align="left" src="../img/logos/DepHeaven_logo.svg" height="100px"  alt="DepHeaven logo"/>
-</a>
-</div>
-<a href="https://github.com/castor-software/depheaven"><i class="fab fa-github"></i></a> DepHeaven is a tool to solve the  [dependency hell](https://en.wikipedia.org/wiki/Dependency_hell) in Java projects. DepHeaven fixes dependency conflicts in Maven projects dynamically, during the build execution. 
-
----
-
-<div class="software-logo">
 <a href="https://github.com/castor-software/jdbl">
 <img align="left" src="../img/logos/JDBL_logo.svg" height="100px"  alt="JDBL logo"/> 
 </a>

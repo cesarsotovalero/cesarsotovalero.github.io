@@ -14,7 +14,7 @@ published: true
 As a researcher, I ~~have to~~ is my pleasure to write papers for journals and conferences. My work can be found in 
 <a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="../../img/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="../../img/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="../../img/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar). My ORCID  <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="../../img/ORCID-iD_icon-vector.svg" style="width:1em;margin-right:.3em;" alt="ORCID iD icon">0000-0003-0541-6411</a>.  The following is an updated list of my published work (in reverse chronological order).
 
-### 2020
+# 2020
 
 
 <a href="https://arxiv.org/pdf/2010.07827.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Gustaf Halvardsson, Johanna Peterson, **César Soto-Valero**, Benoit Baudry. [Interpretation of Swedish Sign Language using Convolutional Neural Networks and Transfer Learning](https://arxiv.org/abs/2010.07827). In _arXiv_.
@@ -31,7 +31,7 @@ As a researcher, I ~~have to~~ is my pleasure to write papers for journals and c
 
 <a href="http://rcm.insmet.cu/index.php/rcm/article/download/512/836"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Ismabel María Domínguez-Hurtado, **César Soto-Valero**. [Pronóstico de las Condiciones del Ganado Vacuno en Cuba a Través de Modelos ARIMA](http://rcm.insmet.cu/index.php/rcm/article/view/512). _Revista Cubana de Meteorología_, 26(2), 1-12. 
 
-### 2019
+# 2019
 
 <a href="https://www.researchgate.net/publication/334465294_The_Strengths_and_Behavioral_Quirks_of_Java_Bytecode_Decompilers"><i class="far fa-file-pdf"></i></a> <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> Nicolas Harrand, **César Soto-Valero**, Martin Momperrus, Benoit Baudry. [The Strengths and Behavioral Quirks of Java Bytecode Decompilers](http://www.ieee-scam.org/2019/#acceptedPapers). In _19th International Working Conference on Source Code Analysis and Manipulation_, Cleveland, OH, USA. DOI: 10.1109/scam.2019.00019.
 
@@ -43,7 +43,7 @@ As a researcher, I ~~have to~~ is my pleasure to write papers for journals and c
 
 <a href="http://rcm.insmet.cu/index.php/rcm/article/download/462/677"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Ismabel María Domínguez-Hurtado, **César Soto-Valero**, Amaury Machado-Montes De Oca, Yindra Salmón-Cuspinera. [Influencia de Factores Meteorológicos en la Acuicultura de Aguas Interiores](http://rcm.insmet.cu/index.php/rcm/article/view/462). _Revista Cubana de Meteorología_, 25(2), 151-166. 
 
-### 2018
+# 2018
 
 <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/raw/master/files/publications/SOTO-VALERO%20C.%20TSEC.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**, Mabel González. [Empirical Study of Malware Diversity in Major Android Markets](https://www.tandfonline.com/doi/full/10.1080/23742917.2018.1483876). _Journal of Cyber Security Technology_, DOI: 10.1080/24748668.2017.1354544. 
 
@@ -52,7 +52,7 @@ in Debugging Activities](https://2018.msrconf.org/track/msr-2018-Mining-Challeng
 
 <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/master/files/publications/SOTO-VALERO%20C.%20%20Retos%20(2).pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**. [Application of Machine Learning Methods for Analyzing and Predicting Sport Outcomes](https://recyt.fecyt.es/index.php/retos/article/view/58506). _Retos: Nuevas Tendencias en Deporte Educación Física y Recreación_, 34, 204-209.
 
-### 2017
+# 2017
 
 <a href="../files/publications/Report.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Informal and Other Publications" src="https://dblp.uni-trier.de/img/n.png" style="background: #606b70; width: 18px; height: 18px"> **César Soto-Valero**. [Some Notes on Software Diversification and Test Amplification Using Machine Learning Methods](https://www.researchgate.net/publication/319965050_Some_notes_on_software_diversification_and_test_amplification_using_machine_learning_methods). _Techical Report_, DOI: 10.13140/RG.2.2.34270.54083.
 
@@ -60,7 +60,7 @@ in Debugging Activities](https://2018.msrconf.org/track/msr-2018-Mining-Challeng
 
 <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/master/files/publications/SOTO-VALERO%20C.%20%20RYCIDE.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**. [A Gaussian Mixture Clustering Model for Characterizing Football Players Using the EA Sports' FIFA Video Game System](http://www.cafyd.com/REVISTA/ojs/index.php/ricyde/article/view/1165). _RICYDE. Revista Internacional de Ciencias del Deporte_, 13(49), DOI: 10.5232/ricyde2017.04904. 
 
-### 2016
+# 2016
 
 <a href="../files/publications/SOTO-VALERO C. Tesis.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Books and Theses" src="https://dblp.uni-trier.de/img/n.png" style="background: #f8c91f; width: 18px; height: 18px"> **César Soto-Valero**, [Predictive Models Applied to Baseball](https://www.researchgate.net/publication/312084388_Modelos_predictivos_con_aplicacion_en_el_beisbol). _Master's thesis_. The Central University of Las Villas, Department of Computer Science, November 2016. DOI: 10.13140/RG.2.2.14806.65600
   
@@ -70,13 +70,13 @@ in Debugging Activities](https://2018.msrconf.org/track/msr-2018-Mining-Challeng
 
 <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/master/files/publications/SOTO-VALERO%20C.%20%20CCI16.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> **César Soto-Valero**, Mabel González. [A Package for Time Series Classification in Weka](http://www.informaticahabana.cu/es/node/1630). In _Proceedings of the III Conferencia Internacional en Ciencias Computacionales e Informáticas_, La Habana, 2016.
 
-### 2015
+# 2015
 
 <a href="../files/publications/SOTO-VALERO C. Retos (1).pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**, Mabel González. [Sabermetrics and New Trends in the Statistical Analysis of Baseball](https://recyt.fecyt.es/index.php/retos/article/view/34826). _Retos: Nuevas Tendencias en Deporte Educación Física y Recreación_, 28, 122-127.
 
 <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/master/files/publications/SOTO-VALERO%20C.%20%20REEFD.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> María S. Ibarra-Vargas, **César Soto-Valero**, Yasiel Martínez-Díaz, R. Felipe Heredia-Torres. [Proposal of Exercises to Improve the Effectiveness of Defensive Skills of Junior Boxers](http://www.reefd.es/index.php/reefd/article/view/115). _Revista Española de Educación Física y Deportes_, (411), 73-89.
 
-### 2013
+# 2013
 
 <a href="https://www.researchgate.net/publication/273447766_Mineria_de_datos_para_series_temporales"><i class="far fa-file-pdf"></i></a> <img alt="" title="Informal and Other Publications" src="https://dblp.uni-trier.de/img/n.png" style="background: #606b70; width: 18px; height: 18px"> Mabel González, **César Soto-Valero**. [Minería de datos para series temporales](https://www.researchgate.net/publication/273447766_Mineria_de_datos_para_series_temporales). _Techical Report_, DOI: 10.13140/RG.2.1.2571.9841.
 

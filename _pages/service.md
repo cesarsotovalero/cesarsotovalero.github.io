@@ -6,7 +6,7 @@ subtitle: Teaching | Supervisor | Reviewer
 published: true
 ---
 
-## Teacher assistant
+# Teacher assistant
 
 - [DD2460 Software Safety and Security](https://www.kth.se/social/course/DD2460), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2020
 
@@ -20,7 +20,7 @@ published: true
 
 - [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Spring 2019
 
-## Thesis supervision
+# Thesis supervision
 
 - [Using NLP Techniques for Log Analysis to Create a Recommendation System](#), Martin Larsson, **Master Thesis**, KTH 2020
 
@@ -28,7 +28,7 @@ published: true
 
 - [Análisis de La Actividad Competitiva en el Juego de Polo Acuático](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf?sequence=1&isAllowed=y), Pascalina Stanislas-Inglis. **Bachelor Thesis**, Cuba 2014
 
-## Reviewer
+# Reviewer
 
 > My updated revision stats for journals can be seen in [Publons](https://publons.com/researcher/1355482/cesar-soto-valero/peer-review)(<a href="https://publons.com/researcher/1355482/cesar-soto-valero/peer-review" style="text-decoration: underline;"><i class="ai ai-publons"></i></a>).
 
@@ -38,7 +38,7 @@ published: true
 
 - [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), 2017
 
-## Sub-reviewer
+# Sub-reviewer
 
 - [ISSRE'20](http://2020.issre.net/research-cfp)
 
@@ -48,7 +48,7 @@ published: true
 
 - [ICST'18](https://www.es.mdh.se/icst2018)
 
-## Volunteer 
+# Volunteer 
 
 - [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), Staff Member, 2020
 
