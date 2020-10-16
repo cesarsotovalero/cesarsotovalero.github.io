@@ -10,11 +10,9 @@ date: 2017/10/26
 
 > "Git proved I could be more than a one-hit wonder" *― Linux Torvalds*
 
-## Introduction
-
 Git is the standard version-control system for software development. Git was created by Linux Torvals in 2005 to support the development of the Linux kernel. Since then, Git has become an essential tool for both junior and senior developers. It allows to have a complete history and full version-tracking of the project, easing all the different phases of the development process.
 
-## Contents
+# Contents
    
 * [Git configuratons](#git-configurations)
 * [Git commits](#git-commits)
@@ -203,9 +201,9 @@ git reset HEAD~2
 ``` 
 
 
-### Troubleshooting
+# Troubleshooting
 
-#### `.gitignore` is not working. 
+### `.gitignore` is not working. 
 
 
 You may need to remove every file that was cached in the `.gitignore`. Be aware to commit all your changes before, otherwise you will loose control on all the changed files. 
@@ -216,7 +214,7 @@ git add .
 git commit -m ".gitignore is now working"
 ```
 
-#### git log of a Java method
+### git log of a Java method
 
 You need to add the following to the `.gitattributes` file.
 

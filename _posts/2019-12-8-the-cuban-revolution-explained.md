@@ -23,6 +23,9 @@ The figure of Fidel Castro is one of the most important aspects of the Cuban Rev
 The Cuban Revolution represented the end of Batista's dictatorship and the beginning of one dictator even worse. Today, more than ten years after the death of Fidel Castro, Cuba is still under the control of the Castro family. Cubans have an extreme lack of several civil rights and serious problems to find basic things such as food or medicines. Communist ideology devastated the Cuban nation. Fidel Castro pushed Cuba 30 years behind the rest of the world in terms of technology. Nowadays, Cubans cannot change the situation because the country is thoroughly militarized, and the current government ensures that no Cuban have the money to do anything else than survive a daily basis. The only solution that Cubans of my generation foresee is trying to emigrate to foreign countries such as the US or Europe for a better future, and that's precisely what I did :)"
 
 
+<!--
 ### External resources
 
 - :movie_camera: [https://www.youtube.com/watch?v=Fz6VJK3mS08](https://www.youtube.com/watch?v=Fz6VJK3mS08)
+
+-->

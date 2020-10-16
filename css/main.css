@@ -127,6 +127,11 @@ blockquote p:first-child {
 
 }
 
+.h1, h1 {
+  font-size: 32px;
+}
+
+
 /*.post-categories:visited {*/
 /*    color: white !important;*/
 /*}*/
@@ -601,14 +606,14 @@ logo-main a:hover {
 .post-heading .post-meta {
   color: #808080;
   font-size: 16px;
-  font-style: italic;
+  /*font-style: italic;*/
   margin: 0 0 10px;
 }
 
 .post-meta-index {
   color: #808080;
   font-size: 16px;
-  font-style: italic;
+  /*font-style: italic;*/
   margin: 0 0 10px;
 }
 
@@ -782,7 +787,7 @@ logo-main a:hover {
 
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 50px;
+  font-size: 46px;
 }
 
 .intro-header .post-heading h1 {
@@ -850,7 +855,7 @@ logo-main a:hover {
   }
 
   .intro-header .post-heading h1 {
-    font-size: 50px;
+    font-size: 46px;
   }
 
   .intro-header.big-img .img-desc {
@@ -1311,6 +1316,29 @@ input.gsc-input,
   background: #FFF;
   border-radius: 0;
   color: #404040;
+}
+
+
+figure {
+  margin:0;
+  position:relative
+}
+
+figure figcaption {
+  bottom:0.8em;
+  color:white;
+  font-size:.8em;
+  left:.5em;
+  line-height:1em;
+  max-width:90%;
+  position:absolute;
+  text-shadow:.2px .2px dimgray;
+  font-family: "Cambria", "Georgia", "Times New Roman", serif;
+
+}
+
+.stroke {
+  -webkit-text-stroke: .1px black;
 }
 
 

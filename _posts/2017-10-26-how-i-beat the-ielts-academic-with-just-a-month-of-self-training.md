@@ -36,11 +36,17 @@ There are two versions of the test, **IELTS Academic** and **IELTS General Train
 
 First of all, there is no official pass or fail for the test. IELTS is scored on a nine-band scale, with each band corresponding to a specified competence in English. Band scores are used for each language sub-skill (Listening, Reading, Writing, and Speaking). The Band Scale ranges from 0 (_"Did not attempt the test"_) to 9 (_"Expert User"_). The IELTS minimum scores required by academic institutions and by course vary. As a general rule, the ranked universities in the world tend to require a higher IELTS band (typically higher or equal to 6.5). Once you completed the test, your IELTS results will be available 13 days after and you will receive a Test Report Form like this one:
 
-<p align="center">
-  <a href="">
-    <img src="../img/IETLS_Test_Report_Form.jpg" height="500px"/>
-  </a>
-</p>
+<figure class="jb_picture">
+    <img src="../img/IETLS_Test_Report_Form.jpg" 
+    height="500px" 
+    alt="Official IELTS test report form"
+    longdesc="#c13e1390" />
+    <figcaption class="stroke">
+    &#169; Official IELTS test report form
+    </figcaption>
+</figure>
+
+
 
 In my opinion, it is practically impossible to achieve an overall band score of 9 (the maximum) in IELTS. The test is designed to be this way. The reason? In a four letters single word: **time**. 
 

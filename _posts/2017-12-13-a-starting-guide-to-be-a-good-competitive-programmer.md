@@ -10,7 +10,7 @@ date: 2017/12/15
 
 I discovered the world of competitive programming challenges during my first year at university. At that time, I didn't know much about computer algorithms or even mind sports. However, the idea of learning how to code by myself just using an online judge attracted my attention since the first moment. 
 
-I remembered my first ACM-ICPC contest in 2009. It was a mess for me. With only a few weeks of training, I was unable to solve any of the released problems. From that moment onwards, I knew that programming contests are a real challenge, even for serious and highly motivated students.
+I remembered my first ACM-ICPC contest in 2009. It was a mess for me. With only a few weeks of training, I was unable to solve any of the released problems. From that moment onward, I knew that programming contests are a real challenge, even for serious and highly motivated students.
 
 <p align="center">
   <a href="">
@@ -51,7 +51,7 @@ Start with the right foot. Choose your materials and resources carefully. As pro
 Persistence is the key to competitive programming success. If you have tenacity, then you have all is needed to be a winner. I'm not kidding; there are a lot of others that don't have enough patience. Every day, take a piece of paper and a pencil and try to think about a problem. Don't surrender easily; choose hard problems. You will learn nothing doing the easy ones, try to solve at least one difficult problem every day.
 
 ## Be efficient
-It's always better to spend 5 minutes thinking more about implementation rather than spending ten more minutes doing it. Learn about time complexity and the best optimization tricks. In competitive programming, the best-written code it s that you can understand, type faster, and run faster. With time, you will develop a powerful skill: the debugging mind. This means that you will be able to run the program in your mind, saving a lot of valuable developing time.
+It's always better to spend 5 minutes thinking more about implementation rather than spending ten more minutes doing it. Learn about time complexity, and the best optimization tricks. In competitive programming, the best-written code it s that you can understand, type faster, and run faster. With time, you will develop a powerful skill: the debugging mind. This means that you will be able to run the program in your mind, saving a lot of valuable developing time.
 
 ## Share your work and ideas with others 
 The best way to learn is by teaching others. This is because you need to be sure of what you know to convince others. If you find an efficient solution for a problem, then share it. In this way, you will get feedback and will learn during the process.
@@ -68,10 +68,17 @@ Once you mastered the basics, then use forums to keep updated with the latest im
 You need hard work and practice (a lot of practice) to become a competent contestant. Once you acquire an algorithmic mindset and the right skills, then only your mind will make the difference. It is a good idea to change your activities, have a hobby (I play the guitar), or spend time doing nothing. I believe that diversion is also an essential part of the training.
 
 ## Enjoy
-Again, life is more than a competition. With time you will note that competitive programming gave you beneficial programming skills, and you will feel good for having discovered it. However,  software development for the industry is not a contest. Sometimes human capabilities are more important than technical skills. The ACM-ICPC contest are just an excellent way to learn programming.
+Again, life is more than a competition. With time you will note that competitive programming gave you beneficial programming skills, and you will feel good for having discovered it. However,  software development for the industry is not a contest. Sometimes human capabilities are more important than technical skills. The ACM-ICPC contest are just an excellent way to learn to program.
 
-<p align="center">
-  <a href="">
-    <img src="../img/ACM-ICPC.jpg" height="500px"/>
-  </a>
-</p>
+<figure class="jb_picture">
+    <img src="../img/ACM-ICPC.jpg" 
+    alt="At UCLV, 2018"
+    longdesc="#c13e1390" />
+    <figcaption class="stroke">
+    &#169; At UCLV, 2018
+    </figcaption>
+</figure>
+
+<br>
+
+

@@ -25,12 +25,17 @@ published: true
 
 - [WASP Project Course](../files/certificates/Certificate_WASP_Project2019_Cesar.pdf), KTH, 2019
 
-
 ## MOOCs
 
 - [Programming for the Web with JavaScript](#), edX, 2020
 
 - [Unix Tools: Data, Software and Production Engineering](https://courses.edx.org/certificates/e922632cec44445ea8d1f534d64f7d8a), edX, 2020
+
+## Awards
+
+- [Data Showcase Award](#), _16th International Conference on Mining Software Repositories_, 2019
+
+- [WASP Outstanding Results Award](#), _WASP Autonomous Systems II_, 2019 
 
 ## Other
 
@@ -40,11 +45,6 @@ published: true
 
 - [Staff Member](../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf), _ICPC-ACM International Collegiate Programming Contest_, 2017 
 
-## Awards
-
-- [Data Showcase Award](#), _16th International Conference on Mining Software Repositories_, 2019
-
-- [WASP Outstanding Results Award](#), _WASP Autonomous Systems II_, 2019 
 
 --- 
 
