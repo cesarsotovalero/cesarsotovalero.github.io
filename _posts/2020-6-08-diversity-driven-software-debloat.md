@@ -102,11 +102,15 @@ To overcome the limitations of coverage and tracing tools, I tackle the problem 
 
 A general scheme of JDBL is presented in the following figure:
 
-<p align="center">
-  <a href="">
-    <img src="../img/posts/jdbl_diversity.jpg" alt="JDBL scheme" height="100%"/>
-  </a>
-</p>
+
+<figure class="jb_picture">
+    <img src="../img/posts/jdbl_diversity.jpg" 
+    alt="JDBL pipeline"
+    longdesc="#c13e1390" />
+    <figcaption class="stroke">
+    &#169; JDBL
+    </figcaption>
+</figure>
 
 JDBL can be used to perform test-based debloat. The approach has five phases:
 

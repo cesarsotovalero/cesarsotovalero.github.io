@@ -17,7 +17,7 @@ As a researcher, I ~~have to~~ is my pleasure to write papers for journals and c
 ### 2020
 
 
-<a href="https://arxiv.org/pdf/2008.08401.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Gustaf Halvardsson, Johanna Peterson, **César Soto-Valero**, Benoit Baudry. [Interpretation of Swedish Sign Language using Convolutional Neural Networks and Transfer Learning](#). In _arXiv_.
+<a href="https://arxiv.org/pdf/2010.07827.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Gustaf Halvardsson, Johanna Peterson, **César Soto-Valero**, Benoit Baudry. [Interpretation of Swedish Sign Language using Convolutional Neural Networks and Transfer Learning](https://arxiv.org/abs/2010.07827). In _arXiv_.
 
 <a href="https://arxiv.org/pdf/2008.08401.pdf"><i class="far fa-file-pdf"></i></a> <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**, Thomas Durieux, Nicolas Harrand, Benoit Baudry. [Trace-based Debloat for Java Bytecode](https://arxiv.org/abs/2008.08401). In _arXiv_.
 
