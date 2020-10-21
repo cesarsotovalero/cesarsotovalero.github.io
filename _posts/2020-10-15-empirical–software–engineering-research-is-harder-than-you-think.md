@@ -82,4 +82,4 @@ The following table summarizes the points discussed above:
 | **Conclusion** | A solid claim, hard to argue against | A claim based on observation, hard to generalize and prone to be biased |
 | ------ | ------ | ------ |
 
-In conclusion, empirical SE research is not easy at all. It imposes a diverse set of unique challenges to researchers, from the formulation of the hypothesis to the argumentation of a relevant conclusion. If you think this is not true, then try to publish in a top journal in the field. Do it first, then we can talk about it ;).
+In conclusion, empirical SE research is not easy at all. It imposes a diverse set of unique challenges to researchers, from the formulation of the hypothesis to the argumentation of a relevant conclusion. If you think this is not true, then try to publish in a top journal in the field. Do it first, then we can talk about it :smirk:   .
