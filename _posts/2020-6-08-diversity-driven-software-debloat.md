@@ -5,6 +5,7 @@ subtitle: Leveraging the wisdom of multiple coverage tools
 tags: debloat
 published: true
 image: ../img/posts/crowd.jpg
+share-img: ../img/posts/crowd.jpg
 date: 2020/6/08
 ---
 

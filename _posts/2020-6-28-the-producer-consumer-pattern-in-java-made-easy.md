@@ -5,6 +5,7 @@ subtitle: An example using BlockingQueue interface
 tags: programming
 published: true
 image: ../img/posts/java_design_patterns.jpg
+share-img: ../img/posts/java_design_patterns.jpg
 date: 2020/6/28
 ---
 
