@@ -127,6 +127,18 @@ blockquote p:first-child {
 
 }
 
+
+.post-categories-tags {
+  /*background-color: gray;*/
+  color: #808080;
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  margin-right: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
 .h1, h1 {
   font-size: 32px;
 }
@@ -525,8 +537,8 @@ footer .theme-by {
 }
 
 .highligher-rouge {
-  font-family: 'Monaco', monospace;
-  font-size: 75%;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
   line-height: 20px;
   text-align: left;
   color: #808080;

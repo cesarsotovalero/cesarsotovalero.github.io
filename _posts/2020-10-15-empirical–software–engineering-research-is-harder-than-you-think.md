@@ -5,6 +5,7 @@ subtitle: Trust me
 tags: research
 published: true
 image: ../img/posts/children-gardening-squared.png
+share-img: ../img/posts/children-gardening-squared.png
 date: 2020/10/15
 ---
 
@@ -21,7 +22,7 @@ You are a very talented researcher. Perhaps you come from a favored field, e.g.,
 
 Empirical SE is just one of the many players within the SE research arenas. In a nutshell, it is all about applying the [scientific method](https://en.wikipedia.org/wiki/Scientific_method) through so-called empirical studies with the objective of obtaining useful knowledge for researchers and practitioners in the SE field.
  
-Today, journals like [Empirical Software Engineering](https://www.springer.com/journal/10664) (EMSE) or conferences such as [Mining Software Repositories](http://www.msrconf.org) (MSR) are ranking very high. They are within the top ten venues in the category of software systems, according to the number of citations in [Google Scholar](https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_softwaresystems). One of the reasons for this success is the uncertainty inherent to the practice software development, which can only be studied empirically.
+Today, journals like [Empirical Software Engineering](https://www.springer.com/journal/10664) (EMSE) or conferences such as [Mining Software Repositories](http://www.msrconf.org) (MSR) are ranking very high. They are within the top ten venues in the category of software systems, according to the number of citations in [Google Scholar](https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_softwaresystems). One of the reasons for this success is the uncertainty inherent to the practice of software development, which can only be studied empirically.
  
 Let me give you an example. Suppose that you are working on a project. To speed up its development, you want to reuse the functionality provided by some external libraries. To do so, you need to declare a dependency. It seems an easy task. However, _i)_ What if there are several libraries out there that provide similar functionality? _ii)_ What if each of these libraries has different versions available? As a developer, you have to dive deep into this diversity of implementations if you want to make the right decision before declaring the dependency. The answer to _i)_ is subtle since there is still no clear consensus about what makes a library good (Is it its code quality? Is it the status of its maintainers? Is it the readability of its documentation?). The answer to _ii)_ is also tricky since [it is known](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8721084) that not everybody follows semantic versioning conventions principles. Also, Who knows which version has fewer bugs
 ? Which is the most stable? What is their difference? There are too many questions that need to be answered before picking a dependency. Hence, for you, as a developer, the only way to make a reasonable decision seems to be by relying on the wisdom of the crowds, aka popularity and global adoption. However, what if someone could provide you with the necessary data and analysis to make a decision backed up by facts instead of common sense and intuition?
