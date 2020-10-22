@@ -5,6 +5,7 @@ subtitle: The must-know vim tricks for software developers
 published: false
 tags: tools
 image: ../img/people.png
+share-img: v
 date: 2019/2/14
 ---
 

@@ -5,6 +5,7 @@ subtitle: Zip Slip attacks
 published: true
 tags: security
 image: ../img/posts/zipper.jpg
+share-img: ../img/posts/zipper.jpg
 date: 2019/10/16
 ---
 

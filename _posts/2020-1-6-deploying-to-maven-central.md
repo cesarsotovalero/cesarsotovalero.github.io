@@ -5,6 +5,7 @@ subtitle: A three-steps guide
 tags: software
 published: true
 image: ../img/posts/maven_journey.png
+share-img: ../img/posts/maven_journey.png
 date: 2020/1/06
 ---
 

@@ -5,6 +5,7 @@ subtitle: A template-based approach
 tags: soft-skills
 published: true
 image: ../img/posts/word_cloud.jpg
+share-img: ../img/posts/word_cloud.jpg
 date: 2020/3/03
 ---
 

@@ -5,6 +5,7 @@ subtitle: The language of the web
 tags: programming
 published: false
 image: ../img/posts/terminal.png
+share-img: ../img/posts/terminal.png
 date: 2020/5/23
 ---
 

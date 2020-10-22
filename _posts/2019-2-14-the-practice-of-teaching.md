@@ -5,6 +5,7 @@ subtitle: The ultimate skill to learn
 published: true
 tags: soft-skills
 image: ../img/people.png
+share-img: ../img/people.png
 date: 2019/2/14
 ---
 
