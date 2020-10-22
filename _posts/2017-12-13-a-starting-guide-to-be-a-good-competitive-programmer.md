@@ -5,6 +5,7 @@ subtitle: Because learning is more important than competing
 published: true
 tags: programming
 image: ../img/competitive-programming-brain.png
+share-img: ../img/competitive-programming-brain.png
 date: 2017/12/15
 ---
 

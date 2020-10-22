@@ -5,6 +5,7 @@ subtitle: Clarifying the concept
 published: true
 tags: debloat
 image: ../img/codecode.png
+share-img: ../img/codecode.png
 date: 2018/09/14
 ---
 

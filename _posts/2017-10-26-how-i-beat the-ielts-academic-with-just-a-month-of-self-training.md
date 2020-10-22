@@ -5,6 +5,7 @@ subtitle: Personal comments and suggestions
 published: true
 tags: self-improvement
 image: ../img/IELTS.jpg
+share-img: ../img/IELTS.jpg
 date: 2017/10/26
 ---
 

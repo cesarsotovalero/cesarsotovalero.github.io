@@ -5,6 +5,7 @@ subtitle: The must-know git commands for software developers
 published: true
 tags: tools
 image: ../img/git_logo.png
+share-img: ../img/git_logo.png
 date: 2017/10/26
 ---
 

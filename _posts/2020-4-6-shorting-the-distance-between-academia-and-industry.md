@@ -5,6 +5,7 @@ subtitle: The way I'm learning
 tags: soft-skills
 published: false
 image: ../img/posts/word_cloud.jpg
+share-img: ../img/posts/word_cloud.jpg
 date: 2020/4/06
 ---
 
