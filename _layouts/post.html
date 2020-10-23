@@ -25,6 +25,14 @@ layout: base
 <!--        </div>-->
 <!--      {% endif %}-->
 
+      <span class="post-categories">[
+					  {% for tag in page.tags %}
+						{% capture tag_name %}{{ tag }}{% endcapture %}
+						<img src="../img/tag-solid.svg" style="width:1em" alt="tag">
+						<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>
+					  {% endfor %}
+					]</span>
+
       {% if page.social-share %}
         {% include social-share.html %}
       {% endif %}

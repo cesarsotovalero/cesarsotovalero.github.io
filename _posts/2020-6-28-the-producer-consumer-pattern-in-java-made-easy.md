@@ -105,7 +105,7 @@ public class Consumer implements Runnable {
 
 # The Client
 
-The `Client` class instantiates two `Producer`, two `Consumer`, and a `LinkedBlockingQueue` object. It makes a` FixedThreadPool`, which uses the `Runtime.getRuntime().availableProcessors()` utility to use exactly the available processors in the system. Finally, the producers and consumers are executed. 
+The `Client` class instantiates two `Producer`, two `Consumer`, and a `LinkedBlockingQueue` object. It makes a` FixedThreadPool`, which uses the `availableProcessors()` utility to use exactly the available processors in the system. Finally, the producers and consumers are executed. 
 
 
 {% highlight java linenos %}
