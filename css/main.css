@@ -26,57 +26,11 @@ body {
   position: relative;
   background: #FFF;
 
-{
-%
-if
-site
-.
-page-col
-%
 }
-background: {
 
-{
-  site . page-col
-}
-}
-;
-{
-%
-endif
-%
-}
-{
-%
-if
-site
-.
-page-img
-%
-}
-background-image:
-url
-
-(
-{
-{
-  site . page-img
-}
-}
-)
-;
-background-attachment: fixed
-
-;
-{
-%
-endif
-%
-}
-}
 p {
   line-height: 1.5;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 p a {
@@ -643,7 +597,7 @@ logo-main a:hover {
 }
 
 .class-link {
- color: darkblue;
+  color: darkblue;
 
 }
 
@@ -691,7 +645,6 @@ logo-main a:hover {
 }
 
 
-
 .post-preview a:hover {
   text-decoration: underline;
 }
@@ -715,6 +668,7 @@ logo-main a:hover {
   color: #999;
   font-size: 15px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .blog-tags a {
@@ -1332,19 +1286,19 @@ input.gsc-input,
 
 
 figure {
-  margin:0;
-  position:relative
+  margin: 0;
+  position: relative
 }
 
 figure figcaption {
-  bottom:0.8em;
-  color:white;
-  font-size:.8em;
-  left:.5em;
-  line-height:1em;
-  max-width:90%;
-  position:absolute;
-  text-shadow:.2px .2px dimgray;
+  bottom: 0.8em;
+  color: white;
+  font-size: .8em;
+  left: .5em;
+  line-height: 1em;
+  max-width: 90%;
+  position: absolute;
+  text-shadow: .2px .2px dimgray;
   font-family: "Cambria", "Georgia", "Times New Roman", serif;
 
 }
@@ -1352,5 +1306,13 @@ figure figcaption {
 .stroke {
   -webkit-text-stroke: .1px black;
 }
+
+/*table {*/
+/*  display: block;*/
+/*  max-width: -moz-fit-content;*/
+/*  max-width: fit-content;*/
+/*  margin: 0 auto;*/
+/*  overflow-x: auto;*/
+/*}*/
 
 
