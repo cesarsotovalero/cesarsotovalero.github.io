@@ -927,8 +927,17 @@ table {
   padding: 0;
 }
 
+table thead {
+  background-color: #708090;
+  /*color: white;*/
+  border-top: 1px solid #cccccc;
+  margin: 0;
+  padding: 0;
+}
+
 table tr {
   border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
