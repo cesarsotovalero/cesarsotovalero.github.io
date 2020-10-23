@@ -61,13 +61,6 @@
 
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
-					<span class="post-categories">[
-					  {% for tag in page.tags %}
-						{% capture tag_name %}{{ tag }}{% endcapture %}
-						<img src="../img/tag-solid.svg" style="width:1em" alt="tag">
-						<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>
-					  {% endfor %}
-					]</span>
 
 <!--			Read time -->
 			<span class="post-meta" title="Estimated read time">
