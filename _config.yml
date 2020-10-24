@@ -12,8 +12,8 @@ baseurl: ""
 #baseurl: "/projectname"
 
 # Name of website
-#title: 【ツ】
-title-img: https://www.cesarsotovalero.net/img/logos/my_logo.png
+title: cesarsotovalero.net
+#title-img: https://www.cesarsotovalero.net/img/logos/my_logo.png
 
 # Short description of your site
 description: César - PhD Student
