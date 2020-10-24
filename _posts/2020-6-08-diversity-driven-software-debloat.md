@@ -6,6 +6,7 @@ tags: debloat
 published: true
 image: ../img/posts/crowd.jpg
 share-img: ../img/posts/crowd.jpg
+show-avatar: false
 date: 2020/6/08
 ---
 

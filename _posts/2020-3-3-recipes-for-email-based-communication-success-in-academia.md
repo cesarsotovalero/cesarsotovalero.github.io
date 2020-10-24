@@ -6,6 +6,7 @@ tags: soft-skills
 published: true
 image: ../img/posts/word_cloud.jpg
 share-img: ../img/posts/word_cloud.jpg
+show-avatar: false
 date: 2020/3/03
 ---
 

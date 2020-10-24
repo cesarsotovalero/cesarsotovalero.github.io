@@ -6,6 +6,7 @@ published: true
 tags: security
 image: ../img/posts/zipper.jpg
 share-img: ../img/posts/zipper.jpg
+show-avatar: false
 date: 2019/10/16
 ---
 

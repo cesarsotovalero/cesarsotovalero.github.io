@@ -6,6 +6,7 @@ published: true
 tags: tools
 image: ../img/git_logo.png
 share-img: ../img/git_logo.png
+show-avatar: false
 date: 2017/10/26
 ---
 

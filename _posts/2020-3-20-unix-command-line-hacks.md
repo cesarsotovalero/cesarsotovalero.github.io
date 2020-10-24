@@ -6,6 +6,7 @@ tags: programming
 published: true
 image: ../img/posts/unix_course.jpg
 share-img: ../img/posts/unix_course.jpg
+show-avatar: false
 date: 2020/5/23
 ---
 

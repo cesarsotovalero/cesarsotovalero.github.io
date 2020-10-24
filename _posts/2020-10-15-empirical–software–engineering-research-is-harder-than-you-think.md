@@ -6,6 +6,7 @@ tags: research
 published: true
 image: ../img/posts/children-gardening-squared.png
 share-img: ../img/posts/children-gardening-squared.png
+show-avatar: false
 date: 2020/10/15
 ---
 

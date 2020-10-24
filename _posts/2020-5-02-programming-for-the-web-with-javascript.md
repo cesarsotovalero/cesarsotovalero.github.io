@@ -6,6 +6,7 @@ tags: programming
 published: false
 image: ../img/posts/terminal.png
 share-img: ../img/posts/terminal.png
+show-avatar: false
 date: 2020/5/23
 ---
 
