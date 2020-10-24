@@ -6,6 +6,7 @@ published: true
 tags: self-improvement
 image: ../img/IELTS.jpg
 share-img: ../img/IELTS.jpg
+show-avatar: false
 date: 2017/10/26
 ---
 

@@ -6,6 +6,7 @@ published: true
 tags: misc
 image: ../img/posts/cuba_flag.jpg
 share-img: ../img/posts/cuba_flag.jpg
+show-avatar: false
 date: 2019/12/8
 ---
 

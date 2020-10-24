@@ -6,6 +6,7 @@ tags: security
 published: false
 image: ../img/people.png
 share-img: ../img/people.png
+show-avatar: false
 date: 2019/2/14
 ---
 

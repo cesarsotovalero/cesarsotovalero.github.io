@@ -6,6 +6,7 @@ tags: software
 published: true
 image: ../img/posts/maven_journey.png
 share-img: ../img/posts/maven_journey.png
+show-avatar: false
 date: 2020/1/06
 ---
 

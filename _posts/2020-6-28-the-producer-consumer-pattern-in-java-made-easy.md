@@ -6,6 +6,7 @@ tags: programming
 published: true
 image: ../img/posts/java_design_patterns.jpg
 share-img: ../img/posts/java_design_patterns.jpg
+show-avatar: false
 date: 2020/6/28
 ---
 

@@ -6,6 +6,7 @@ published: true
 tags: soft-skills
 image: ../img/people.png
 share-img: ../img/people.png
+show-avatar: false
 date: 2019/2/14
 ---
 
