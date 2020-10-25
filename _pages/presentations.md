@@ -11,7 +11,7 @@ published: true
 
 ---
 
-As a PhD Student, I'm ~~forced~~ pleased to present my work in workshops, conferences, and everywhere.
+As a PhD Student, I present my work in workshops, conferences, and everywhere.
 The following is a non-exhaustive list of my technical presentations.
 
 # 2020
