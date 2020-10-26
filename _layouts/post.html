@@ -17,7 +17,7 @@ layout: base
           <img src="../img/tag-solid.svg" style="width:1em" alt="tag">
           {% if site.link-tags %}
           {% for tag in page.tags %}
-          <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>
+          <a href="/tag/{{ tag_name }}"><code><nobr>{{ tag_name }}</nobr></code></a>
 <!--            <a href="/tag/{{ tag }}">{{ tag }}</a>-->
           {% endfor %}
           {% else %}
