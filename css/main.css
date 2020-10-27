@@ -30,7 +30,8 @@ body {
 
 p {
   line-height: 1.5;
-  margin: 20px 0;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 p a {
@@ -45,7 +46,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 a {
-  /*color: darkblue;*/
   color: darkblue;
   /*text-decoration: underline;*/
 
@@ -67,7 +67,6 @@ blockquote {
 blockquote p:first-child {
   margin-top: 0;
 }
-
 
 .post-categories {
   /*background-color: gray;*/
@@ -1230,12 +1229,41 @@ figure figcaption {
   -webkit-text-stroke: .1px black;
 }
 
-/*table {*/
-/*  display: block;*/
-/*  max-width: -moz-fit-content;*/
-/*  max-width: fit-content;*/
-/*  margin: 0 auto;*/
-/*  overflow-x: auto;*/
-/*}*/
+table {
+  border-collapse: collapse;
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  font-size: 18px;
+}
 
+table thead tr {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  text-align: left;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #0f0f0f;
+}
+
+table tbody tr.active-row {
+  font-weight: bold;
+  color: #0f0f0f;
+}
+
+
+.jb_picture {
+  margin-bottom: 25px;
+}
+
+ol {
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-bottom: 20px;
+}
 
