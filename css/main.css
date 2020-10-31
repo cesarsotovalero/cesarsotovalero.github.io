@@ -511,8 +511,7 @@ logo-main a:hover {
 }
 
 .class-link {
-  color: darkblue;
-
+  /*color: darkblue;*/
 }
 
 .post-image {
@@ -1245,7 +1244,7 @@ table thead tr {
   text-align: left;
 }
 
-table tbody tr:last-of-type {
+.border-bottom-on-table {
   border-bottom: 2px solid #0f0f0f;
 }
 
