@@ -74,12 +74,6 @@ If you have done your homework, then the conclusion of a ML paper is solid and h
 
 The following table summarizes the points discussed above:
 
-
-
-
-
-
-
 | **Tasks** | **In ML research** | **In SE research** |
 | ------ | ------ | ------ |
 |**Hypothesis**  | Pre-defined in most cases | Needs to be formulated from scratch |
@@ -88,5 +82,6 @@ The following table summarizes the points discussed above:
 | **Results** | Interpretation is based on factual statistical outcomes | Interpretation are prone to personal interpretation |
 | **Conclusion** | A solid claim, hard to argue against | A claim based on observation, hard to generalize and prone to be biased |
 | ------ | ------ | ------ |
+{: .border-bottom-on-table  }
 
-In conclusion, empirical SE research is not easy at all. It imposes a diverse set of unique challenges to researchers, from the formulation of the hypothesis to the argumentation of a relevant conclusion. If you think this is not true, then try to publish in a top journal in the field. Do it first, then we can talk about it :smirk:   .
+In conclusion, empirical SE research is not easy at all. It imposes a diverse set of unique challenges to researchers, from the formulation of the hypothesis to the argumentation of a relevant conclusion. If you think this is not true, then try to publish in a top journal in the field. Do it first, then we can talk about it :smirk:.

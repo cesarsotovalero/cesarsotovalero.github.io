@@ -58,6 +58,7 @@ Time will be your worst enemy if you are interested in taking the IELTS. The tes
 | 2 | Reading | 60 minutes |
 | 3 | Writing | 60 minutes |
 | 4 | Speaking | 12–15 minutes |
+{: .border-bottom-on-table  }
 
 The best of all the advice I can give to do well in IELTS is to **know the test** and **practice**. When I say "know", I mean to master all the details of the test’s structure. On the other hand, practicing for IELTS is not doing one or two parts of the tests separately, but complete dozens of full tests just like the real one. Take into account that you should be prepared not for a regular English exam, but for a particular type of test that will force you to put your mind and skills to its limits. In the following, I will divide each section of the test into parts and give suggestions and personal remarks about what is required to be completed in each of them.
 
