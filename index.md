@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hi, I'm César
-subtitle: I'm a PhD student doing excellent research in Software Technology for the benefit of the Swedish industry
+subtitle: A PhD student doing excellent research in Software Technology for the benefit of the Swedish industry
 use-site-title: true
 ---
 

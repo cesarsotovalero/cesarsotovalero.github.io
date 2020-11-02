@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Shorting the distance between academia and industry
-subtitle: The way I'm learning
+subtitle: The why and the how
 tags: soft-skills
 published: false
 image: ../img/posts/word_cloud.jpg
@@ -10,10 +10,18 @@ show-avatar: false
 date: 2020/4/06
 ---
 
+Research is about solving relevant problems. However, the relevance of certain problems is a highly subjective matter. Is it relevant to send a human being to Mars? Maybe it is, or maybe not. One thing is for sure: research is _expensive_. It is sustained mostly by funds and grants. I believe that the best way to boost funding is by increasing _interest_ in research investment. Therefore, researchers should dedicate a significant part of their efforts to strengthen the bonds between their work and the local industry. Let's discuss how. 
+
+
+
+I argue that research should be more industry focused.
+
+is the goverment, the country, which pais for research grants... so its the industry a necessary boost.
+
+
+
+
 > "To solve an interesting problem, start by finding a problem that is interesting to you." *― Eric Steven Raymond*
-
-## Introduction
-
 
 # what do we do?
 
