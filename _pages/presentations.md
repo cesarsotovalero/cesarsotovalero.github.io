@@ -2,7 +2,7 @@
 permalink: presentations.html
 layout: page
 title: Presentations
-subtitle: Spreading Ideas | Conferences | Talks 
+subtitle: Conferences and talks 
 published: true
 ---
 

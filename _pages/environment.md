@@ -2,7 +2,7 @@
 permalink: environment.html
 layout: page
 title: Environment
-subtitle: Tools | IDEs | Customizations  
+subtitle: Work setup
 published: false
 ---
 

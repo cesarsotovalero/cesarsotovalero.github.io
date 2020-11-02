@@ -2,7 +2,7 @@
 permalink: service.html
 layout: page
 title: Services
-subtitle: Teaching | Supervisor | Reviewer  
+subtitle: Additional work
 published: true
 ---
 
