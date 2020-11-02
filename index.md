@@ -279,7 +279,9 @@ The ultimate defense is to drive the complexity of the ultimate attack up so hig
           <div class="post-entry">
             {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }} {% assign excerpt_word_count = post.excerpt
             | number_of_words %} {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-            <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+            <p class="post-read-more-block">
+              <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">Continue reading...</a>
+            </p>
             {% endif %}
           </div>
         </div>
