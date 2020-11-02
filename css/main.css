@@ -36,7 +36,7 @@ p {
 
 p a {
   text-decoration: underline;
-  color: darkblue;
+  color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,9 +66,8 @@ a {
 
 a:hover,
 a:focus {
-  color: black;
+  color: darkblue;
   text-decoration: underline;
-
 }
 
 blockquote {
@@ -571,7 +570,8 @@ logo-main a:hover {
 
 .post-preview .post-read-more {
   /*font-weight: 800;*/
-  color: darkblue;
+  color: black;
+  text-decoration: underline;
   font-style: normal;
 }
 
@@ -1301,5 +1301,14 @@ ul {
 .tag-code {
   color: #808080;
   border-radius: 6px;
+  text-decoration: underline;
+}
+
+
+.tag-code:hover {
+  color: darkblue;
+  border-radius: 6px;
+  text-decoration: underline;
+
 }
 
