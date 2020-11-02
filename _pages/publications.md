@@ -2,7 +2,7 @@
 permalink: publications.html
 layout: page
 title: Publications
-subtitle: Papers | Citation Stats | Research Career
+subtitle: Papers and citation stats
 published: true
 ---
 
