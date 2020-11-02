@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hi, I'm César
-subtitle: A PhD student doing excellent research in Software Technology for the benefit of the Swedish industry
+subtitle: I'm a PhD student doing excellent research in Software Technology for the benefit of the Swedish industry
 use-site-title: true
 ---
 
@@ -250,9 +250,10 @@ The ultimate defense is to drive the complexity of the ultimate attack up so hig
 
 ---
 
-<h1 class="text-center" style="font-family: 'Open Sans'; font-weight: lighter">Recent Posts</h1> 
+<h1 class="text-center" style="font-family: 'Open Sans'; font-weight: lighter; margin-bottom: 0px; margin-top: 25px">Recent Blog Posts</h1> 
 <div class="posts-list">
-  {% for post in site.posts limit:5 %}
+  {% for post in site.posts limit:6 %}
+  <article class="post-preview-home">
   <article class="text-left" >
     <span class="text-left">  
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-title-main">
@@ -282,6 +283,7 @@ The ultimate defense is to drive the complexity of the ultimate attack up so hig
             {% endif %}
           </div>
         </div>
+  </article>
   </article>
   {% endfor %}
 
