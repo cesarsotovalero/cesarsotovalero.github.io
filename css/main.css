@@ -1309,6 +1309,10 @@ ul {
   color: darkblue;
   border-radius: 6px;
   text-decoration: underline;
+}
 
+.post-read-more-block {
+  margin-top: 25px;
+  margin-bottom: 0px;
 }
 
