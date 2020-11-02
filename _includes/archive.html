@@ -1,3 +1,4 @@
+<div class="tag-list">
 {% capture temptags %}
     {% for tag in site.tags %}
         {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
@@ -8,8 +9,8 @@
     {% assign tagitems = temptag | split: '#' %}
     {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
 <!--<img src="../img/tag-solid.svg" style="width:1em" alt="tag">-->
-<a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
+<a class="my-tags" href="/tag/{{ tagname }}"><code class="tag-code">{{ tagname }}</code></a>
 {% endfor %}
-
+</div>
 
 
