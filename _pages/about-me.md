@@ -13,7 +13,7 @@ subtitle: In a Few Words
 -->
 
 <!-- ![Custom badge](https://img.shields.io/badge/-WORK-blueviolet.svg) -->
-# :briefcase: Current work
+# :briefcase: Work
 I'm a <a href="http://wasp-sweden.org/">WASP</a> Ph.D. student  in the <a href="https://www.kth.se/scs/software-engineering">Department of Software and Computer Systems </a> working with <a href="https://www.kth.se/profile/baudry">Benoit Baudry</a> at <a href="https://kth.se">KTH Royal Institute of Technology</a> in Sweden <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">. I'm generously funded by the [Wallenberg Autonomous Systems and Software Program](https://wasp-sweden.org) (WASP), funded by Knut and Alice Wallenberg Foundation. My current research is focused on [software diversity](https://en.wikipedia.org/wiki/Software_diversity), [automatic program debloating](https://cesarsotovalero.github.io/2018-09-24-program-debloating) and [software specialization](https://en.wikipedia.org/wiki/Run-time_algorithm_specialisation). For more on these topics, see my living review of <a
  href="https://www.cesarsotovalero.net/software-debloating-papers">software
  debloating papers</a>, or consult my list of <a href="https://www.cesarsotovalero.net/software-debloating-tools">software debloating tools</a>. I also do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories. For more on this topic, see this list of <a href="https://www.cesarsotovalero.net/mining-software-repositories-resources">mining software repositories resources</a>. In particular, I'm interested in measuring the impact and pervasiveness of bloatware across large-scale software ecosystems. I'm keen to perform research on software technology that: 1) provide actionable insights to researchers and practitioners about how modern software is currently being developed and maintained, and 2) provide practical tools for developers in order to improve the software quality.
@@ -32,7 +32,7 @@ Out of work, I enjoy spending time with my family, reading books, and running th
 
 ---
 
-# :earth_africa: Workplace location
+# :earth_africa: Workplace
 
 <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="350px" id="gmap_canvas" src="https://maps.google.com/maps?q=LINDSTEDTSV%C3%84GEN%203%2C%20BUILDING%20D&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
 
@@ -66,7 +66,7 @@ form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
     font-weight: lighter;
     border-style: solid;
     border-color: #444;
-    outline-color: #2e83e6;
+    outline-color: #444;
     border-width: 1px;
     border-radius: 3px;
     transition: box-shadow .2s ease;
@@ -75,11 +75,16 @@ form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
 form.wj-contact input[type="submit"] {
     outline: none;
     color: white;
-    background-color: #2e83e6;
+    background-color: #444;
     border-radius: 3px;
-    padding: 0.5em;
+    padding: 12px;
     margin: 0.25em 0 0 0;
     border: 1px solid transparent;
     height: auto;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 </style>
