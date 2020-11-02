@@ -810,6 +810,7 @@ logo-main a:hover {
   border-radius: 1px;
   color: #404040;
   border: 1px solid #777;
+  border-radius: 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -823,6 +824,7 @@ logo-main a:hover {
   color: #FFF;
   background: #444;
   border: 1px solid #777;
+  border-radius: 8px;
 }
 
 .pager {
@@ -1044,6 +1046,7 @@ td.gutter {
   padding: 5px 10px;
   cursor: pointer;
   display: inline-block;
+  border-radius: 6px;
 }
 
 .list-filters .list-filter.filter-selected,
@@ -1058,6 +1061,7 @@ td.gutter {
     margin-right: 0;
     margin-bottom: -1px;
     display: block;
+    border-radius: 6px;
   }
 }
 
