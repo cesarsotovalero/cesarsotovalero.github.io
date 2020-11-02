@@ -479,7 +479,7 @@ logo-main a:hover {
 }
 
 .post-preview .post-title-main {
-  font-size: 232px;
+  font-size: 32px;
   margin-top: 0;
   color: #000000;
 }
@@ -511,7 +511,7 @@ logo-main a:hover {
   color: #808080;
   font-size: 16px;
   /*font-style: italic;*/
-  margin: 0 0 10px;
+  margin: 0 0 20px;
 }
 
 .post-preview .post-entry {
@@ -1317,6 +1317,6 @@ ul {
 }
 
 #i-clock {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
