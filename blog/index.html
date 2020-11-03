@@ -57,20 +57,6 @@ subtitle: Research and software technology
 
      <p class="post-meta-index">
        Posted on {{ post.date | date: "%B %-d, %Y" }}
-
-       <span class="post-meta" title="Estimated read time">
-                <svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" fill="none" stroke="currentcolor" stroke-linecap="round"
-                     stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="14" /><path d="M16 8 L16 16 20 20" /></svg>
-                {% assign words = content | number_of_words %}
-                {% if words < 360 %}
-                  1 min read
-                {% else %}
-                  {{ words | divided_by:180 }} mins read
-                {% endif %}
-              </span>
-              			<style>
-              				svg#i-clock {vertical-align: middle;}
-              			</style>
      </p>
          </span>
 
@@ -96,11 +82,11 @@ subtitle: Research and software technology
 <ul class="pager main-pager">
    {% if paginator.previous_page %}
    <li class="previous">
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer posts</a>
    </li>
    {% endif %} {% if paginator.next_page %}
    <li class="next">
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older posts &rarr;</a>
    </li>
    {% endif %}
 </ul>

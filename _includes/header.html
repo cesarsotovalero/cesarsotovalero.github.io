@@ -70,9 +70,12 @@
 	   stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="14" /><path d="M16 8 L16 16 20 20" /></svg>
 
   {% assign words = content | number_of_words %}
-  {% if words < 360 %}
-    1 min read.
+  {% if words < 180 %}
+    one min read
   {% else %}
+    {% if words < 360 %}
+       two min read
+            {% else %}
     {{ words | divided_by:180 }} mins read
   {% endif %}
 </span>
