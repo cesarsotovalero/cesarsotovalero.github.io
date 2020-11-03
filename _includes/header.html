@@ -1,96 +1,92 @@
-
 {% if page.bigimg or page.title %}
 
 {% if page.bigimg %}
-  <div id="header-big-imgs" data-num-img={% if page.bigimg.first %}{{ page.bigimg.size }}{% else %}1{% endif %}
-    {% for bigimg in page.bigimg %}
-	  {% assign imgnum = forloop.index %}
-	  {% for imginfo in bigimg %}
-	    {% if imginfo[0] %}
-		  data-img-src-{{ imgnum }}="{{ imginfo[0] | prepend: site.baseurl | replace: '//', '/' }}"
-		  data-img-desc-{{ imgnum }}="{{ imginfo[1] }}"
-		{% else %}
-		  data-img-src-{{ imgnum }}="{{ imginfo | prepend: site.baseurl | replace: '//', '/' }}"
-		{% endif %}
-	  {% endfor %}
-    {% endfor %}
-  ></div>
+<div id="header-big-imgs" data-num-img={% if page.bigimg.first %}{{ page.bigimg.size }}{% else %}1{% endif %}
+     {% for bigimg in page.bigimg %}
+     {% assign imgnum=forloop.index %}
+     {% for imginfo in bigimg %}
+     {% if imginfo[0] %}
+     data-img-src-{{ imgnum }}="{{ imginfo[0] | prepend: site.baseurl | replace: '//', '/' }}"
+     data-img-desc-{{ imgnum }}="{{ imginfo[1] }}"
+     {% else %}
+     data-img-src-{{ imgnum }}="{{ imginfo | prepend: site.baseurl | replace: '//', '/' }}"
+     {% endif %}
+     {% endfor %}
+     {% endfor %}
+></div>
 {% endif %}
 
 <header class="header-section {% if page.bigimg %}has-img{% endif %}">
-{% if page.bigimg %}
-<div class="big-img intro-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="{{ include.type }}-heading">
-          <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
-		  {% if page.subtitle %}
-		    {% if include.type == "page" %}
-            <hr class="small">
-            <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
-			{% else %}
-			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
-			{% endif %}
-		  {% endif %}
+   {% if page.bigimg %}
+   <div class="big-img intro-header">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+               <div class="{{ include.type }}-heading">
+                  <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
+                  {% if page.subtitle %}
+                  {% if include.type == "page" %}
+                  <hr class="small">
+                  <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
+                  {% else %}
+                  <h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+                  {% endif %}
+                  {% endif %}
 
-		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
-		  {% endif %}
-        </div>
+                  {% if include.type == "post" %}
+                  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+                  {% endif %}
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
-  <span class='img-desc'></span>
-</div>
-{% endif %}
-<div class="intro-header no-img">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="{{ include.type }}-heading">
-          <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
-		  {% if page.subtitle %}
-		    {% if include.type == "page" %}
-            <hr class="small">
-            <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
-			{% else %}
-			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
-			{% endif %}
-		  {% endif %}
+      <span class='img-desc'></span>
+   </div>
+   {% endif %}
+   <div class="intro-header no-img">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+               <div class="{{ include.type }}-heading">
+                  <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
+                  {% if page.subtitle %}
+                  {% if include.type == "page" %}
+                  <hr class="small">
+                  <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
+                  {% else %}
+                  <h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+                  {% endif %}
+                  {% endif %}
 
-		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+                  {% if include.type == "post" %}
+                  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
 
 
-
-<!--			Read time -->
-			<span class="post-meta" title="Estimated read time">
+                  <!--			Read time -->
+                  <span class="post-meta" title="Estimated read time">
   <svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" fill="none" stroke="currentcolor" stroke-linecap="round"
-	   stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="14" /><path d="M16 8 L16 16 20 20" /></svg>
-
+       stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="14"/><path d="M16 8 L16 16 20 20"/></svg>
   {% assign words = content | number_of_words %}
   {% if words < 180 %}
     one min read
   {% else %}
-    {% if words < 360 %}
-       two min read
-            {% else %}
     {{ words | divided_by:180 }} mins read
   {% endif %}
 </span>
-			<style>
-				svg#i-clock {vertical-align: middle;}
-			</style>
+                  <style>
+                    svg#i-clock {
+                      vertical-align: middle;
+                    }
+                  </style>
 
-		  {% endif %}
-        </div>
+                  {% endif %}
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
 
 
-</div>
+   </div>
 </header>
 
 
