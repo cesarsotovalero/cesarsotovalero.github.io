@@ -10,9 +10,7 @@ show-avatar: false
 date: 2020/6/08
 ---
 
-For months, I have worked on dynamic debloat of Java artifacts with [JDBL](https://github.com/castor-software/jdbl). To do so, I need to compile and execute software applications to determine what parts of the compiled application are used when executing it using some workloads. Then, with the collected usage information, I ~~remove~~ debloat the unused parts of the software. These two main tasks (execution and usage collection)  appear straightforward at first glance. However, I realize that the inability of coverage tools to precisely determine what is used at execution time makes this task a real challenge. I found a feasible solution to this problem in the combination of various coverage techniques, i.e., by leveraging [software diversity](https://dl.acm.org/doi/abs/10.1145/2807593). Let me explain.  
-
-> "Diversity is what we love." *― Benoit Baudry*
+For months, I have worked on dynamic debloat of Java artifacts with [JDBL](https://github.com/castor-software/jdbl). To do so, I need to compile and execute software applications to determine what parts of the compiled application are used when executing it using some workloads. Then, with the collected usage information, I debloat the unused parts of the software. These two main tasks (execution and usage collection)  appear straightforward at first glance. However, I realize that the inability of coverage tools to precisely determine what is used at execution time makes this task a real challenge. I found a feasible solution to this problem in the combination of various coverage techniques, i.e., by leveraging [software diversity](https://dl.acm.org/doi/abs/10.1145/2807593). Let me explain.  
 
 # The problem
 
@@ -112,7 +110,11 @@ JDBL can be used to perform test-based debloat. The approach has five phases:
 4. Debloat the parts of the code that were not covered by any coverage tool
 5. Package the debloated binaries into a JAR file for deployment.
 
-As we observe, JDBL combines a variety of different implementations in order to achieve a unique goal: collecting the minimum set of classes and methods that are necessary to execute an application for a given workload. JDBL is extensible because it is not limited to a single coverage tool. It leverages the power of software diversity to break the limitations of existing tools and provide better debloat results. 
+As we observe, JDBL combines a variety of different implementations in order to achieve a unique goal: collecting the minimum set of classes and methods that are necessary to execute an application for a given workload. JDBL is extensible because it is not limited to a single coverage tool.  It leverages the power of software diversity to break the limitations of existing tools and provide better debloat results.
+<aside class="quote">
+    <em> "Diversity is what we love."</em> ― Benoit Baudry
+</aside>
+
 
 # The lesson to learn
 

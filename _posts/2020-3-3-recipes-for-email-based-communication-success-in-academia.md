@@ -10,13 +10,13 @@ show-avatar: false
 date: 2020/3/03
 ---
 
-> "Two curses have the supervisors: emails and people. The first one is solvable in polynomial time; whereas the second is NP-Complete." *― Me*
+You cannot be a good researchers without being a good communicator. If you are good enough at both, they you may qualify for becoming a supervisor. Being a good academic supervisor is a matter of practice, discipline, and the development of leading skills. Handling tons of emails is the everyday bread and butter for those who have reached this level of success (i.e., supervising other people). 
 
-## Introduction
+<aside class="quote">
+    <em>Two curses have the supervisors: emails and people. The first one is solvable in polynomial time; whereas the second is NP-Complete.</em>
+</aside>
 
-You cannot be a good researchers without being a good communicator. If you are good enough at both, they you may qualify for becoming a supervisor. Being a good academic supervisor is a matter of practice, discipline, and the development of leading skills. 
-
-Handling tons of emails is the everyday bread and butter for those who have reached this level of success (i.e., supervising other people). In this post, I'll illustrate how using a template based approach to easing email management can boost productivity and improve the quality of this communication channel. 
+In this post, I'll illustrate how using a template based approach to easing email management can boost productivity and improve the quality of this communication channel.
 
 <!-- @todo #19  explain we academics love emailing -->
 
