@@ -10,11 +10,11 @@ show-avatar: false
 date: 2020/1/06
 ---
 
-> "Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest and oldest archives of software libraries" *― The Maven community*
-
-## Introduction
-
 Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM. In this post, I'll describe the process of releasing a new artifact in Maven Central following an step-by-step approach. 
+
+<aside class="quote">
+    <em>Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest and oldest archives of software libraries.</em>
+</aside>
 
 ## Contents
 

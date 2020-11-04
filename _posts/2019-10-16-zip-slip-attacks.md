@@ -10,12 +10,12 @@ show-avatar: false
 date: 2019/10/16
 ---
 
->"Code is complicated, and developers are not security experts. Their focus is typically around delivering code on time and so can
-easily miss security flaws, even if the practice is known" *― Guy Podjarny*
-
-## Introduction
-
 In today's ever expanding-open source communities, developers rely heavily on third-party libraries and copy-pasted code from social networks like [StackOverflow](https://stackoverflow.com/) to accelerate productivity. Such code reuse tendency helps to decrease development time and effort, but also means that vulnerability in shared code (i.e., libraries) gets spread dramatically faster, as occurs in the case of the **Zip Slip vulnerability**.
+
+<aside class="quote">
+    <em>"Code is complicated, and developers are not security experts. Their focus is typically around delivering code on time and so can
+        easily miss security flaws, even if the practice is known"</em> ― Guy Podjarny
+</aside>
 
 This vulnerability is exploited using a specially crafted archive that holds directory traversal filenames (e.g., `../../evil.sh`). The two parts required to exploit this vulnerability are (1) a malicious archive and (2) extraction code that does not perform validation checking.
 

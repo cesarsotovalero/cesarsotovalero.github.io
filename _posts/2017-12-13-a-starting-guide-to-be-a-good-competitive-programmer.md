@@ -14,6 +14,11 @@ I discovered the world of competitive programming challenges during my first yea
 
 I remembered my first ACM-ICPC contest in 2009. It was a mess for me. With only a few weeks of training, I was unable to solve any of the released problems. From that moment onward, I knew that programming contests are a real challenge, even for serious and highly motivated students.
 
+<aside class="quote">
+    <em>Programming contests are a real challenge, even for serious and highly motivated students</em>
+</aside>
+
+
 <p align="center">
   <a href="">
     <img src="../img/competitive-programming.png" height="250px"/>
@@ -77,7 +82,7 @@ Again, life is more than a competition. With time you will note that competitive
     alt="At UCLV, 2018"
     longdesc="#c13e1390" />
     <figcaption class="stroke">
-    &#169; At UCLV, 2018
+    &#169; César Soto at the local finals in Cuba, 2018
     </figcaption>
 </figure>
 
