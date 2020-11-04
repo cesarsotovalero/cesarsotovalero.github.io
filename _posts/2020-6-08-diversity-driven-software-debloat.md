@@ -10,9 +10,9 @@ show-avatar: false
 date: 2020/6/08
 ---
 
-> "Diversity is what we love." *― Benoit Baudry*
-
 For months, I have worked on dynamic debloat of Java artifacts with [JDBL](https://github.com/castor-software/jdbl). To do so, I need to compile and execute software applications to determine what parts of the compiled application are used when executing it using some workloads. Then, with the collected usage information, I ~~remove~~ debloat the unused parts of the software. These two main tasks (execution and usage collection)  appear straightforward at first glance. However, I realize that the inability of coverage tools to precisely determine what is used at execution time makes this task a real challenge. I found a feasible solution to this problem in the combination of various coverage techniques, i.e., by leveraging [software diversity](https://dl.acm.org/doi/abs/10.1145/2807593). Let me explain.  
+
+> "Diversity is what we love." *― Benoit Baudry*
 
 # The problem
 
@@ -22,11 +22,6 @@ There are awesome Java coverage tools out there, notably: [JaCoCo](https://www.e
 2. Execute the test suite to observe which probes are "activated"
 3. Determine the section of the original bytecode that are activated
 4. Report on the achieved coverage, depending on the chosen metric/s
-
-
-mmh... not really.
-the coverage tools determine parts that executed, not the parts that are necessary. In other words, their objective is to report only parts that are covered, not necessarily all the parts that are covered. Hence all the issues that you have faced with jdbl
-
 
 During the third task, the coverage tool determines what parts of the application are covered by the tests. For my purposes, it makes sense to consider the rest of the uncovered software parts as bloat. The problem with this approach is that coverage tools are not intended to work for debloating. In other words, their objective is to report only parts that are covered, not  **all** the parts that are **necessary**. Indeed, there is still a general debate regarding what should be considered as covered or not (e.g., resources, exceptions, interfaces), not to mention the different coverage metrics used out there.
 
@@ -53,13 +48,8 @@ public class FruitSaladTest {
 }
 {% endhighlight %}
 
-In the code above, the method `mix()` is not considered as covered by JaCoCo. However, it is clear that, if we remove it, the test `mixItUp()` will fail. Diving deeper into this issue, one can find the reason for this unexpected behaviour in the [JaCoCo documentation](https://www.eclemma.org/jacoco/trunk/doc/flow.html): _"The probe insertion strategy described so far does not consider implicit exceptions thrown for example from invoked methods. If the control flow between two probes is interrupted by a exception not explicitly created with a throw statement all instruction in between are considered as not covered._ To mitigate this issue, JaCoCo adds an additional probe between the instructions of two lines whenever the subsequent line contains at least one method invocation. This limits the effect of implicit exceptions from method invocations to single lines of source. However, _"The approach only works for class files  compiled with
- debug information
- (line
- numbers) and does not consider implicit
- exceptions
- from
- other instructions than method invocations (e.g., `NullPointerException` or `ArrayIndexOutOfBoundsException`)"_. In conclusion, JaCoCo does not consider as covered methods with a single-line invocation to other methods that throw exceptions.
+In the code above, the method `mix()` is not considered as covered by JaCoCo. However, it is clear that, if we remove it, the test `mixItUp()` will fail. Diving deeper into this issue, one can find the reason for this unexpected behaviour in the [JaCoCo documentation](https://www.eclemma.org/jacoco/trunk/doc/flow.html): _"The probe insertion strategy described so far does not consider implicit exceptions thrown for example from invoked methods. If the control flow between two probes is interrupted by a exception not explicitly created with a throw statement all instruction in between are considered as not covered._ To mitigate this issue, JaCoCo adds an additional probe between the instructions of two lines whenever the subsequent line contains at least one method invocation. This limits the effect of implicit exceptions from method invocations to single lines of source. However, _"The approach only works for class files  compiled with debug information (line numbers) and does not
+ consider implicit exceptions  from other instructions than method invocations (e.g., `NullPointerException` or `ArrayIndexOutOfBoundsException`)"_. In conclusion, JaCoCo does not consider as covered methods with a single-line invocation to other methods that throw exceptions.
 
 Let us consider another example. The following class declares a Java constant using the `public final static` initializer:
 
@@ -126,4 +116,5 @@ As we observe, JDBL combines a variety of different implementations in order to 
 
 # The lesson to learn
 
-Coverage tools implement different policies to handle the variety of bytecode constructs, thus posing a challenge for its usage on debloating. I have shown that, as in this case, when facing a hard problem for which no tool can provide a 100% accurate solution, combining the diversity of implementations of similar tools is a feasible approach to achieve better results. Of course, one can argue that this decision may have a negative impact on performance, but sometimes performance is not exactly of principal goal :smiley:
+Coverage tools implement different policies to handle the variety of bytecode constructs, thus posing a challenge for its usage on debloating. I have shown that, as in this case, when facing a hard problem for which no tool can provide a 100% accurate solution, combining the diversity of implementations of similar tools is a feasible approach to achieve better results. Of course, one can argue that this decision may hurt performance, but sometimes performance is not exactly of principal goal :smiley:
+
