@@ -16,6 +16,8 @@ The following is a non-exhaustive list of my technical presentations.
 
 # 2020
 
+- [An introduction to bloat history analysis](https://docs.google.com/presentation/d/1cwBaOIJ2ZgGP62sCod_a_KrdhRg2puDlIkFKpjxPC6E/edit?usp=sharing). resented at _20th ASSERT Software Engineering Workshop_, Stockholm, Sweden, Nov 2020.
+
 - [Are developers willing to remove bloated dependencies?](https://www.cesarsotovalero.net/presentations/assert-13th/#/). Presented at _13th ASSERT Software Engineering Workshop_, Stockholm, Sweden, Jan 2020.
   
 # 2019
