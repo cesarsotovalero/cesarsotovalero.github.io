@@ -2,7 +2,7 @@
 permalink: certifications.html
 layout: page
 title: Certifications
-subtitle: Degrees | Certificates | Awards
+subtitle: On paper achievements
 published: true
 ---
 
