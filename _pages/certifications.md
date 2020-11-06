@@ -11,13 +11,13 @@ published: true
 
 ---
 
-## Degrees
+# Degrees
 
 - MSc Computer Science,  [\[Original Degree in Spanish\]](), [\[English Translation\]](../files/certificates/MSc_Degree_(certified)_eng.pdf), [\[Academic Transcripts in English\]](../files/certificates/MSc_Academis_Transcript-eng.pdf), UCLV, 2016
 
 - BSc Computer Science, \[[Original Degree in Spanish](../files/certificates/BSc_Degree_Original.pdf)\], \[[English Translation](../files/certificates/BSc_Degree_(certified)_eng.pdf)\], \[[Academic Transcripts in English](../files/certificates/BSc_Academis_Transcript-eng.pdf)\], UCLV, 2013
 
-## Courses
+# Courses
 
 - [WASP Autonomous Systems I and II](../files/certificates/Certificate_WASP_AS1_Cesar.pdf), KTH, 2020
 
@@ -25,19 +25,22 @@ published: true
 
 - [WASP Project Course](../files/certificates/Certificate_WASP_Project2019_Cesar.pdf), KTH, 2019
 
-## MOOCs
+
+# MOOCs
 
 - [Programming for the Web with JavaScript](#), edX, 2020
 
 - [Unix Tools: Data, Software and Production Engineering](https://courses.edx.org/certificates/e922632cec44445ea8d1f534d64f7d8a), edX, 2020
 
-## Awards
 
-- [Data Showcase Award](#), _16th International Conference on Mining Software Repositories_, 2019
+# Awards
+
+- [Data Showcase Award](../img/awards/data_showcase_award.jpg), _16th International Conference on Mining Software Repositories_, 2019
 
 - [WASP Outstanding Results Award](#), _WASP Autonomous Systems II_, 2019 
 
-## Other
+
+# Other
 
 - [IELTS Academic Test 6.5](../img/IETLS_Test_Report_Form.jpg), University of Cambridge ESOL Examinations, 2016
 
@@ -45,11 +48,12 @@ published: true
 
 - [Staff Member](../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf), _ICPC-ACM International Collegiate Programming Contest_, 2017 
 
-
 --- 
 
+# Gallery
+
 <table align="center">
-   <tr width="100%" align="center" style="background-color:#FFF; border-top: 0px solid #cccccc;">
+   <tr width="100%" align="center" style="background-color:#FFF; border: 0px solid #cccccc;">
       <td width="33%" align="center">
       <a href="../files/certificates/BSc_Degree_(certified)_eng.pdf">
          <img src="../files/certificates/BSc_Degree_(certified)_eng.jpg" alt="BSc in Computer Science" width="100%" style="border:4px solid #021a40;"/>
@@ -67,7 +71,7 @@ published: true
       </td>
    </tr>
    <!-- Another row -->
-   <tr width="100%" align="center" style="background-color:#FFF; border-top: 0px solid #cccccc;">
+   <tr width="100%" align="center" style="background-color:#FFF; border: 0px solid #cccccc;">
       <td width="33%" align="center">
       <a href="../files/certificates/SMR_Certificate.pdf">
          <img src="../files/certificates/SMR_Certificate.jpg" alt="Reviewer Certificate" width="100%" style="border:4px solid #021a40;"/>
@@ -85,7 +89,7 @@ published: true
       </td>
    </tr>   
    <!-- Another row -->
-   <tr width="100%" align="center" style="background-color:#FFF; border-top: 0px solid #cccccc;">
+   <tr width="100%" align="center" style="background-color:#FFF; border: 0px solid #cccccc;">
       <td width="33%" align="center">
       <a href="../files/certificates/Certificate_WASP_Project2019_Cesar.pdf">
          <img src="../files/certificates/Certificate_WASP_Project2019_Cesar.jpg" alt="WASP Project Course" width="100%" style="border:4px solid #021a40;"/>
@@ -97,8 +101,8 @@ published: true
      </a>
      </td>
      <td width="33%" align="center">
-     <a href="../img/awards/MSR-2019.jpg">
-        <img src="../img/awards/MSR-2019.jpg" alt="MSR Data Showcase Award" width="100%" style="border:4px solid #021a40;"/>
+     <a href="../img/awards/data_showcase_award.jpg">
+        <img src="../img/awards/data_showcase_award.jpg" alt="MSR Data Showcase Award" width="100%" style="border:4px solid #021a40;"/>
      </a>
      </td>
    </tr>
