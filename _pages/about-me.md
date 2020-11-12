@@ -2,7 +2,7 @@
 permalink: about-me.html
 layout: page
 title: About me
-subtitle: In a Few Words
+subtitle: In brief
 ---
 <div style="border-bottom: 1px solid #eee;">
   <h3 style="text-align: center; font-family:courier, courier new, serif; padding-bottom: 35px;"><span class="type"></span></h3>
@@ -28,7 +28,7 @@ I've a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](
 
 <!-- ![Custom badge](https://img.shields.io/badge/-HOBBIES-blue.svg) -->
 # :dart: Hobbies
-Out of work, I enjoy spending time with my family, reading books, and running through the beautiful parks in Stockholm.
+Out of work, I enjoy spending time with my family, reading books, and running through beautiful parks in Stockholm.
 
 ---
 
