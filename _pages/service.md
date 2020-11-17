@@ -8,6 +8,8 @@ published: true
 
 # Teacher assistant
 
+- [DD1369 Software Engineering in Project Form](https://www.kth.se/social/course/DD1369/), given by [Dena Hussain](https://www.kth.se/profile/denah/) at KTH, Fall 2020
+
 - [DD2460 Software Safety and Security](https://www.kth.se/social/course/DD2460), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2020
 
 - [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2020
