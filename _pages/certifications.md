@@ -17,13 +17,27 @@ published: true
 
 - BSc Computer Science, \[[Original Degree in Spanish](../files/certificates/BSc_Degree_Original.pdf)\], \[[English Translation](../files/certificates/BSc_Degree_(certified)_eng.pdf)\], \[[Academic Transcripts in English](../files/certificates/BSc_Academis_Transcript-eng.pdf)\], UCLV, 2013
 
-# Courses
+# Doctoral courses
 
-- [WASP Autonomous Systems I and II](../files/certificates/Certificate_WASP_AS1_Cesar.pdf), KTH, 2020
+- [FDT3303 Critical Perspectives on Data Science and Machine Learning](https://www.kth.se/student/kurser/kurs/FDT3303?l=en), KTH Spring 2020
 
-- [WASP Software Engineering and Cloud Computing](../files/certificates/Certificate_WASP_SECC2019_Cesar.pdf), KTH, 2019
+- [FEP3370 Advanced Ethical Hacking](https://www.kth.se/student/kurser/kurs/FEP3370?l=en), KTH, Spring 2020
 
-- [WASP Project Course](../files/certificates/Certificate_WASP_Project2019_Cesar.pdf), KTH, 2019
+- [FLH3000 Basic Communication and Teaching](https://www.kth.se/student/kurser/kurs/FLH3000), KTH Fall 2019
+
+- [FIL3606 The Art of Doctoral Research](https://www.kth.se/student/kurser/kurs/FIL3606?l=en), KTH Spring 2019
+
+- [FEO3120 From Research to Impact](https://www.kth.se/student/kurser/kurs/FEO3120?l=en), KTH Spring 2019
+
+- [WASP Software Engineering and Cloud Computing](../files/certificates/Certificate_WASP_SECC2019_Cesar.pdf), KTH Spring 2020
+
+- [WASP Project Course](../files/certificates/Certificate_WASP_Project2019_Cesar.pdf), KTH  Fall 2020
+
+- [4th WASP Summer School](), KTH Fall 2019
+
+- [WASP Autonomous Systems II](../files/certificates/Certificate_WASP_AS1_Cesar.pdf), KTH Fall 2019
+
+- [WASP Autonomous Systems I](../files/certificates/Certificate_WASP_AS1_Cesar.pdf), KTH, Spring 2019
 
 
 # MOOCs
