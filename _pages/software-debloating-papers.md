@@ -26,6 +26,17 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 
 ### 2020
 
+<img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> [?] **Large-scale Debloating of Binary Shared Libraries** [[link]](https://cs.brown.edu/~vpk/papers/libfilter.dtrap20.pdf) 
+
+<details> 
+Developers nowadays have access to an arsenal of toolkits and libraries for rapid application prototyping. However,when an application loads a library, the entirety of that library’s code is mapped into the process address space,even if only a single function is actually needed. The unused portion isbloatthat can negatively impact softwaredefenses by unnecessarily inflating their overhead or increasing the attack surface. In this paper, we investigatewhether debloating is possible and practical at the binary level. To this end, we presentNibbler: a system thatidentifies and erases unused functions within dynamic shared libraries. Nibbler works in tandem with defenseslike continuous code re-randomization and control-flow integrity, enhancing them without incurring additionalrun-time overhead. We developed and tested a prototype of Nibbler on x86-64 Linux; Nibbler reduces the size ofshared libraries and the number of available functions, for real-world binaries and the SPEC CINT2006 suite,by up to 56% and 82%, respectively. We also demonstrate that Nibbler benefits defenses by showing that: (i) itimproves the deployability of a continuous re-randomization system for binaries, namely Shuffler, by increasingits efficiency by 20%, and (ii) it improves certain fast, but coarse and context-insensitive control-flow integrityschemes by reducing the number of gadgets reachable through indirect branch instructions by 75% and 49%, onaverage. Lastly, we apply Nibbler on≈30K C/C++ binaries and≈5K unique dynamic shared libraries (i.e., almostthe complete set of the Debiansiddistribution), as well as on9official Docker images (with millions of downloadsin Docker Hub), reporting entrancing findings regarding code bloat at large.
+</details>
+
+
+
+
+
+
 <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [CSS] **Slimium: Debloating the Chromium Browser with Feature Subsetting** [[link]](https://dl.acm.org/doi/pdf/10.1145/3372297.3417866) 
 
 <details> 
@@ -447,3 +458,4 @@ Java programs are routinely transmitted over low-bandwidth network connections a
 - [Following up on "Hello world" ](https://drewdevault.com/2020/01/08/Re-Slow.html)
 - [Building a self-contained game in C# under 8 kilobytes](https://medium.com/@MStrehovsky/building-a-self-contained-game-in-c-under-8-kilobytes-74c3cf60ea04)
 - [The cost of JavaScript in 2019](https://v8.dev/blog/cost-of-javascript-2019)
+- [The fault in our JARS](https://product.hubspot.com/blog/the-fault-in-our-jars-why-we-stopped-building-fat-jars)
