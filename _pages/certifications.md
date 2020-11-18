@@ -11,7 +11,7 @@ published: true
 
 ---
 
-# Degrees
+# Academic degrees
 
 - MSc Computer Science,  [\[Original Degree in Spanish\]](), [\[English Translation\]](../files/certificates/MSc_Degree_(certified)_eng.pdf), [\[Academic Transcripts in English\]](../files/certificates/MSc_Academis_Transcript-eng.pdf), UCLV, 2016
 
