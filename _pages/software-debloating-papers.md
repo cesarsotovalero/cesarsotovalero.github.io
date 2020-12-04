@@ -8,7 +8,7 @@ image: ../../blog/img/debloating.png
 
 This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articles related to program debloating and software specialization. 
 
-## Contents
+# Index
 
 * [2020](#2020)
 * [2019](#2019)
@@ -24,16 +24,14 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 * [2002](#2002)
 * [External resources](#external-resources)
 
-### 2020
+# 2020
 
-- <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> [APSEC] **Don’t Trust Me, Test Me: 100% Code Coverage for a 3rd-party Android App** [[link]](https://orbilu.uni.lu/handle/10993/44480) 
-<details> 
+- <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> [APSEC] **Don’t Trust Me, Test Me: 100% Code Coverage for a 3rd-party Android App** [[link]](https://orbilu.uni.lu/handle/10993/44480) <details> 
 The incompleteness of 3rd-party app testing is an accepted fact in Software Engineering. This issue makes it impossible to verify the app functionality and to confirm its safety to the end-user. To solve this problem, enterprises developed strict policies. A company, willing to use modern apps, may perform an expensive security analysis, rely on trust or forbid the app. These strategies may lead companies to high direct and indirect spending with no guarantee of safety. In this work, we present a novel approach, called Dynamic Binary Shrinking, that allows a user to review app functionality and leave only tested code. The shrunk app produces 100% instruction coverage on observed behaviors and in this way guarantees the absence of unexplored, and therefore, potentially malicious code. On our running examples, we demonstrate that apps use less than 20% of the codebase. We developed an approach and the ACVCut tool to shrink Android apps towards the executed code.
 </details>
 
 
-- <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> [?] **Large-scale Debloating of Binary Shared Libraries** [[link]](https://cs.brown.edu/~vpk/papers/libfilter.dtrap20.pdf) 
-<details> 
+- <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> [?] **Large-scale Debloating of Binary Shared Libraries** [[link]](https://cs.brown.edu/~vpk/papers/libfilter.dtrap20.pdf) <details> 
 Developers nowadays have access to an arsenal of toolkits and libraries for rapid application prototyping. However,when an application loads a library, the entirety of that library’s code is mapped into the process address space,even if only a single function is actually needed. The unused portion isbloatthat can negatively impact softwaredefenses by unnecessarily inflating their overhead or increasing the attack surface. In this paper, we investigatewhether debloating is possible and practical at the binary level. To this end, we presentNibbler: a system thatidentifies and erases unused functions within dynamic shared libraries. Nibbler works in tandem with defenseslike continuous code re-randomization and control-flow integrity, enhancing them without incurring additionalrun-time overhead. We developed and tested a prototype of Nibbler on x86-64 Linux; Nibbler reduces the size ofshared libraries and the number of available functions, for real-world binaries and the SPEC CINT2006 suite,by up to 56% and 82%, respectively. We also demonstrate that Nibbler benefits defenses by showing that: (i) itimproves the deployability of a continuous re-randomization system for binaries, namely Shuffler, by increasingits efficiency by 20%, and (ii) it improves certain fast, but coarse and context-insensitive control-flow integrityschemes by reducing the number of gadgets reachable through indirect branch instructions by 75% and 49%, onaverage. Lastly, we apply Nibbler on≈30K C/C++ binaries and≈5K unique dynamic shared libraries (i.e., almostthe complete set of the Debiansiddistribution), as well as on9official Docker images (with millions of downloadsin Docker Hub), reporting entrancing findings regarding code bloat at large.
 </details>
 
@@ -84,7 +82,7 @@ We investigate to what extent a static analysis approach, which is based on code
 The Internet of Things (IoT) is a network of physical, connected devices providing services through private networks and the Internet. The devices connect through the Internet to Web servers and other devices. One of the popular programming languages for communicating Web pages and Web apps is JavaScript (JS). Hence, the devices would benefit from JS apps. However, porting JS apps to the many IoT devices, e.g., System-on-a-Chip (SoCs) devices (e.g., Arduino Uno), is challenging because of their limited memory, storage, and CPU capabilities. Also, some devices may lack hardware/software capabilities for running JS apps "as is". Thus, we propose MoMIT, a multiobjective optimization approach to miniaturize JS apps to run on IoT devices. We implement MoMIT using three different search algorithms. We miniaturize a JS interpreter and measure the characteristics of 23 apps before/after applying MoMIT. We find reductions of code size, memory usage, and CPU time of 31%, 56%, and 36%, respectively (medians). We show that MoMIT allows apps to run on up to two additional devices in comparison to the original JS interpreter.
 </details>
 
-### 2019 
+# 2019 
 
 <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [ACSAC]  **Nibbler: Debloating Binary Shared Libraries** [[link]](https://www.portokalidis.net/files/nibbler_acsac19.pdf) 
 
