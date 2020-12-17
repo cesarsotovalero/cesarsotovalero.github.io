@@ -94,8 +94,7 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articl
 
 # 2018
 
-- <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [SALAD]  **Fine-Grained Library Customization** [[link]](https://arxiv.org/pdf/1810.11128.pdf)<details>Conduct a case study to understand the impact of code bloat in production-run software by analysing statically linked libraries. Leverage dependence analysis to trim the resultless code statements residing in a target library
-</details>
+- <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [SALAD]  **Fine-Grained Library Customization** [[link]](https://arxiv.org/pdf/1810.11128.pdf)<details>Conduct a case study to understand the impact of code bloat in production-run software by analysing statically linked libraries. Leverage dependence analysis to trim the resultless code statements residing in a target library</details>
 
 - <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [USENIX] **Debloating Software through Piece-Wise Compilation and Loading** [[link]](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-quach.pdf)<details>Introduce  a  generic  inter-modular late-stage debloating framework.  It combines static (i.e., compile-time) and  dynamic  (i.e.,  load-time)  approaches  to  systematically  detect  and  automatically  eliminate  unused  code from program memory.  This can be thought of as a runtime extension to dead code elimination. Unused code is identified and removed by introducing a piece-wise compiler that  not  only  compiles  code  modules  (executables,  shared  and  static  objects),  but  also generates a dependency graph that retains all compiler knowledge  on which function  depends  on what other function(s).</details>
 
@@ -178,7 +177,7 @@ Conducts  the  first  systematic  experimental  study  of the  joint  power  per
  
 # 2006
 
-- <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> [ICSE] **HDD: Hierarchical Delta Debugging** [[link]](https://www.eecs.northwestern.edu/~robby/courses/395-495-2009-fall/hdd.pdf)<details>Present HDD, a simple but effective algorithm that significantly speeds up Delta Debugging and increases its output quality on tree structured inputs such as XML. Instead of treating the inputs as one flat atomic lis, HDD applies DD to the very structure of the data, from the coarsest to the finest levels. This approach allows to pruene the large irrelevant portions of the input early.</details>
+- <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> [ICSE] **HDD: Hierarchical Delta Debugging** [[link]](https://www.eecs.northwestern.edu/~robby/courses/395-495-2009-fall/hdd.pdf) <details>Present HDD, a simple but effective algorithm that significantly speeds up Delta Debugging and increases its output quality on tree structured inputs such as XML. Instead of treating the inputs as one flat atomic lis, HDD applies DD to the very structure of the data, from the coarsest to the finest levels. This approach allows to pruene the large irrelevant portions of the input early.</details>
 
 # 2002
 
