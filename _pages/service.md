@@ -22,7 +22,7 @@ published: true
 
 - [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Spring 2019
 
-# Thesis supervision
+# Thesis supervisor
 
 - [Using NLP Techniques for Log Analysis to Create a Recommendation System](#), Martin Larsson, **Master Thesis**, KTH 2020
 
