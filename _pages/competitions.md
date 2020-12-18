@@ -1,8 +1,8 @@
 ---
 permalink: competitions.html
 layout: page
-title: The natural skill calibrator 
-subtitle: Programming | Machine Learning | Sports  
+title: Competitions
+subtitle: The natural skill calibrator 
 published: true
 ---
 
