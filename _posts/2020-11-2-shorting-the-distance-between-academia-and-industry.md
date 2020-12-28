@@ -10,7 +10,7 @@ show-avatar: false
 date: 2020/4/06
 ---
 
-Research is about solving relevant problems. However, the relevance of certain problem is a highly subjective matter. Is it relevant to send a human being to Mars? Maybe it is, or maybe not. One thing is for sure: research is _expensive_. In fact, it is sustained mostly by funds and grants. I believe that the best way to boost funding is by increasing _interest_ in research investment. Therefore, researchers should dedicate a significant part of their efforts to strengthen the bonds between their work and the local industry. Let's discuss how. 
+Research is about solving relevant problems. However, the relevance of certain problem is a highly subjective matter. Is it relevant to send a human being to Mars? Maybe it is, or maybe not. One thing is for sure: research is _expensive_. As far as I know, it is sustained mostly by funds and grants. I believe that the best way to boost funding is by increasing _interest_ in research investment. Therefore, researchers should dedicate a significant part of their efforts to strengthen the bonds between their work and the local industry. Let's discuss how. 
 
 <aside class="quote">
     <em>Research should be more industry focused.</em>
