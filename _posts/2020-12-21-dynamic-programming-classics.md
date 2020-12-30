@@ -33,16 +33,40 @@ This course was developed by Alvin Zablan for [freeCodeCamp.org](https://www.fre
     - add a base case to return memo values
     - store return values into the memo
 
-# Fibonacci memoization
+# Fibonacci
+
+**Description.** Write a function that returns the n-th number of the fibonacci sequence. To generate the next number of the sequence, we sum the previous two.
+
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+|**n**       | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| **fib(n)** | 0 | 1 | 1 | 2 | 3 | 5 | 8 | 13 | 21 |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+{: .border-bottom-on-table  }
+
+### Memoization solution
 
 {% highlight java linenos %}
 static int fib(int n, Map<Integer, Integer> memo) {
-      if (memo.containsKey(n)) return memo.get(n);
-      if (n <= 2) return 1;
-      int value = fib(n - 1, memo) + fib(n - 2, memo);
-      memo.put(n, value);
-      return memo.get(n);
+   if (memo.containsKey(n)) return memo.get(n);
+   if (n <= 2) return 1;
+   int value = fib(n - 1, memo) + fib(n - 2, memo);
+   memo.put(n, value);
+   return memo.get(n);
+}
+{% endhighlight %}
+
+### Tabulation solution
+
+{% highlight java linenos %}
+static int fib(int n) {
+   List<Integer> l = new ArrayList(Collections.nCopies(n + 2, 0));
+   l.set(1, 1);
+   for (int i = 0; i < n; i++) {
+      l.set(i + 1, l.get(i) + l.get(i + 1));
+      l.set(i + 2, l.get(i) + l.get(i + 2));
    }
+   return l.get(n);
+}
 {% endhighlight %}
 
 # Grid traveler memoization
