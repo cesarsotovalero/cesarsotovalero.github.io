@@ -19,8 +19,8 @@ GEM
     execjs (2.7.0)
     faraday (1.0.0)
       multipart-post (>= 1.2, < 3)
-    ffi (1.11.3)
-    ffi (1.11.3-x64-mingw32)
+    ffi (1.14.2)
+    ffi (1.14.2-x64-mingw32)
     forwardable-extended (2.6.0)
     gemoji (2.1.0)
     github-pages (106)
@@ -129,7 +129,7 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (1.5.3)
-    rb-fsevent (0.10.3)
+    rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rouge (1.11.1)
@@ -163,4 +163,4 @@ DEPENDENCIES
   jemoji
 
 BUNDLED WITH
-   2.1.4
+   2.2.4

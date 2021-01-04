@@ -244,7 +244,7 @@ gems:
   - jekyll-sitemap
 
 # --- Piwik Integration --- #
-plugins:
+plugins_dir:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
