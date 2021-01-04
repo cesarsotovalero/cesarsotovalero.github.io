@@ -1,2 +1,2 @@
 python tag_generator.py
-bundle exec jekyll serve --watch
+RUBYOPT='-W0' bundle exec jekyll serve --watch

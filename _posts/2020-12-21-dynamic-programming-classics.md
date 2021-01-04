@@ -3,29 +3,44 @@ layout: post
 title:  Dynamic programming
 subtitle: A handful of classical problems explained
 tags: programming
-published: false
-image: ../img/posts/word_cloud.jpg
-share-img: ../img/posts/word_cloud.jpg
+published: true
+image: ../img/posts/backyard.gif
+share-img: ../img/backyard.gif
 show-avatar: false
-date: 2020/4/06
+date: 2020/12/21
 ---
 
-https://www.youtube.com/watch?v=oBt53YbR9Kk&t=4700s
-Dynamic programming (DP) is one of the basic all-times programming paradigms. 
-It refers to simplifying a complicated problem by breaking it down into simpler sub-problems in a recursive manner.
-There are two key attributes that a problem must have in order for DP to be applicable: [optimal substructure](https://en.wikipedia.org/wiki/Optimal_substructure) and [overlapping sub-problems](https://en.wikipedia.org/wiki/Overlapping_subproblems).
-
+Dynamic programming (DP) is one of the most basic and challenging programming paradigms.
+Some of the best algorithms that I know, such as the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) and [DTW](https://en.wikipedia.org/wiki/Dynamic_time_warping) are implemented using this paradigm.
+It consists in simplifying a complicated problem by breaking it down into simpler sub-problems in a recursive manner.
 <aside class="quote">
     <em>DP consists in simplifying a problem by breaking it down into simpler sub-problems recursively.</em>
 </aside>
+The key advantage of using DP is that it is fast.
+There are two key attributes that a problem must have in order for DP to be applicable: [optimal substructure](https://en.wikipedia.org/wiki/Optimal_substructure) and [overlapping sub-problems](https://en.wikipedia.org/wiki/Overlapping_subproblems).
+In this post, I'll rely on classical DP problems to explain the two basic solution strategies: [memoization](https://en.wikipedia.org/wiki/Memoization) and tabulation. 
+These problems are presented and explained by Alvin Zablan, in [this](https://www.youtube.com/watch?v=oBt53YbR9Kk&t=4700s) excellent video that he prepared for [freeCodeCamp.org](https://www.freecodecamp.org).
+I write my own solutions to the problems in Java.
 
+<figure class="jb_picture">
+    <img src="../img/posts/backyard.gif" 
+    alt="Trees prepared for the winter in Stockholm"
+    longdesc="#c13e1390" />
+    <figcaption class="stroke">
+    &#169; Trees prepared for the winter in Stockholm
+    </figcaption>
+</figure>
 
-This course was developed by Alvin Zablan for [freeCodeCamp.org](https://www.freecodecamp.org).
+# Strategies
 
-# Memoization recipe
+Depending on the implementation strategy to use, memoization or tabulation, there are recipes that one can follow to address DP problems.
+For the memoization strategy, the most challenging step is to visualize the problem as a tree. 
+When using the tabulation, finding proper way to iterate through the table is usually the most challenging task.
+
+### Memoization
 
 1. Make it work
-    - visualize the problem as a tree
+    - visualize the problem as a tree (**hard**)
     - implement the tree using recursion
     - test it
 2. Make it efficient
@@ -33,14 +48,24 @@ This course was developed by Alvin Zablan for [freeCodeCamp.org](https://www.fre
     - add a base case to return memo values
     - store return values into the memo
 
-# Fibonacci
+### Tabulation
 
-**Description.** Write a function that returns the n-th number of the fibonacci sequence. To generate the next number of the sequence, we sum the previous two.
+1. Visualize the problem as a table 
+2. Size the size of the table based on the inputs
+3. Initialize the table with default values
+4. Seed the trivial answer into the table
+5. Iterate through the table (**hard**)
+6. Fill further positions based on the current position
 
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-|**n**       | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-| **fib(n)** | 0 | 1 | 1 | 2 | 3 | 5 | 8 | 13 | 21 |
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+# 1. Fibonacci
+
+**Description.** Write a function that returns the n-th number of the fibonacci sequence. 
+To generate the next number of the sequence, we sum the previous two. For example, these are the first 10 fibonacci numbers:
+
+| **n** | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| **fib(n)** | 0 | 1 | 1 | 2 | 3 | 5 | 8 | 13 | 21 | 34 | 55 |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 {: .border-bottom-on-table  }
 
 ### Memoization solution
@@ -69,10 +94,14 @@ static int fib(int n) {
 }
 {% endhighlight %}
 
-# Grid traveler memoization
+# 2. Grid traveler
+
+**Description.** You are a traveler on a 2D grid. You begin in the top-left corner and your goal is to travel to the bottom-right corner. You may only move down or right. In how many ways can you travel to the goal on a grid with dimensions `n`*`m`.
+
+### Memoization solution
 
 {% highlight java linenos %}
-static long function(int m, int n, Map<String, Long> memo) {
+static long gridTraveler(int m, int n, Map<String, Long> memo) {
    String key = m + "," + n;
    if (memo.containsKey(key)) return memo.get(key);
    if (n == 1 && m == 1) return 1;
@@ -82,10 +111,28 @@ static long function(int m, int n, Map<String, Long> memo) {
 }
 {% endhighlight %}
 
+### Tabulation solution
 
-# Can sum memoization
+{% highlight java linenos %}
+static long gridTraveler(int m, int n) {
+   long[][] table = new long[m + 1][n + 1];
+   table[1][1] = 1;
+   for (int i = 0; i <= m; i++) {
+      for (int j = 0; j <= n; j++) {
+         long current = table[i][j];
+         if (i + 1 <= m) table[i + 1][j] += current;
+         if (j + 1 <= n) table[i][j + 1] += current;
+      }
+   }
+   return table[m][n];
+}
+{% endhighlight %}
+
+# 3. Can sum 
 
 **Description.** Write a function that return _a boolean_ indicating whether it is possible to generate a `targetSum` value by adding number from a given array. Elements of the array are positive integers and can be used as many time as needed. 
+
+### Memoization solution
 
 {% highlight java linenos %}
 static boolean canSum(int targetSum, int[] numbers, Map<Integer, Boolean> memo) {
@@ -104,16 +151,40 @@ static boolean canSum(int targetSum, int[] numbers, Map<Integer, Boolean> memo) 
 }
 {% endhighlight %}
 
+<!--
 Time complexity: 
 m = target sum
 n = array length
 
 brute force: O(n^m) 
 memoized: O(m*n)
+-->
 
-# How sum memoization
+### Tabulation solution
+
+{% highlight java linenos %}
+static boolean canSum(int targetSum, int[] numbers) {
+   boolean[] table = new boolean[targetSum + 1];
+   table[0] = true;
+   for (int i = 0; i < table.length; i++) {
+      if (table[i]) {
+         for (Integer num : numbers) {
+            if (i + num < table.length) {
+               table[i + num] = true;
+            }
+         }
+      }
+   }
+   return table[targetSum];
+}
+{% endhighlight %}
+
+
+# 4. How sum
 
 **Description.** Write a function that return an array containing _any combination_ of elements that add up to exactly the `targetSum`. If there is no combination that adds up to the `targetSum`, then return `null`.
+
+### Memoization solution
 
 {% highlight java linenos %}
 static List<Integer> howSum(int targetSum, int[] numbers, Map<Integer, List<Integer>> memo) {
@@ -134,17 +205,46 @@ static List<Integer> howSum(int targetSum, int[] numbers, Map<Integer, List<Inte
 }
 {% endhighlight %}
 
-
+<!--
 Time complexity: 
 m = target sum
 n = array length
 
 brute force: O(n^m * m) 
 memoized: O(m*m^2)
+-->
 
-# Best sum memoization
+### Tabulation solution
+
+{% highlight java linenos %}
+static List<Integer> howSum(int targetSum, int[] numbers) {
+   // Initialize a list of null elements except the first element
+   List<List<Integer>> table = new ArrayList<>(targetSum + 1);
+   table.add(0, new ArrayList<>());
+   for (int i = 1; i < targetSum; i++) {
+      table.add(i, null);
+   }
+   // Algorithm
+   for (int i = 0; i < targetSum; i++) {
+      if (table.get(i) != null) {
+         for (int j = 0; j < numbers.length; j++) {
+            Integer num = numbers[j];
+            List<Integer> l = new ArrayList<>(table.get(i));
+            l.add(num);
+            table.add(i + num, l);
+         }
+      }
+   }
+   return table.get(targetSum);
+}
+{% endhighlight %}
+
+
+# 5. Best sum
 
 **Description.** Write a function that returns an array containing _the shortest combination_ of numbers that add up to exactly the `targetSum`. If there is a tie fo the shortest combination, you may return any one of the shortest.
+
+### Memoization solution
 
 {% highlight java linenos %}
 static List<Integer> bestSum(int targetSum, int[] numbers, Map<Integer, List<Integer>> memo) {
@@ -170,18 +270,52 @@ static List<Integer> bestSum(int targetSum, int[] numbers, Map<Integer, List<Int
 }
 {% endhighlight %}
 
+<!--
 Time complexity: 
 m = target sum
 n = array length
 
 brute force: O(n^m * m) 
 memoized: O(m*m^2)
+-->
 
 
-# Can construct memoization
+### Tabulation solution
+
+{% highlight java linenos %}
+static List<Integer> bestSum(int targetSum, int[] numbers) {
+   // Initialize a list of null elements except the first element
+   List<List<Integer>> table = new ArrayList<>(targetSum + 1);
+   table.add(0, new ArrayList<>());
+   for (int i = 1; i <= targetSum; i++) {
+      table.add(i, null);
+   }
+   // Algorithm
+   for (int i = 0; i < targetSum; i++) {
+      if (table.get(i) != null) {
+         for (int j = 0; j < numbers.length; j++) {
+            int num = numbers[j];
+            List<Integer> combination = new ArrayList<>(table.get(i));
+            combination.add(num);
+            if (i + num <= targetSum) {
+               if (table.get(i + num) == null) {
+                  table.set(i + num, combination);
+               } else if (combination.size() < table.get(i + num).size()) {
+                  table.set(i + num, combination);
+               }
+            }
+         }
+      }
+   }
+   return table.get(targetSum);
+} 
+{% endhighlight %}
+
+# 6. Can construct
 
 **Description**: Write a function that returns _a boolean_ indication whether the `target` string can be constructed by concatenating elements of the `wordBank` array of strings. Elements in `wordBank` can be reused as many times as needed.
 
+### Memoization solution
 
 {% highlight java linenos %}
 static boolean canConstruct(String target, String[] wordBank, Map<String, Boolean> memo) {
@@ -201,12 +335,22 @@ static boolean canConstruct(String target, String[] wordBank, Map<String, Boolea
 }
 {% endhighlight %}
 
+<!--
 brute force: O(n^m * m) 
 memoized: O(m*m^2)
+-->
 
-# Count construct memoization
+### Tabulation solution
+
+{% highlight java linenos %}
+
+{% endhighlight %}
+
+# 7. Count construct 
 
 **Description**: Write a function that returns _the number of ways_ that the `target` can be constructed by concatenating elements of the `wordBank` array. Elements in `wordBank` can be reused as many times as needed.
+
+### Memoization solution
 
 {% highlight java linenos %}
 static int countConstruct(String target, String[] wordBank, Map<String, Integer> memo) {
@@ -228,11 +372,14 @@ static int countConstruct(String target, String[] wordBank, Map<String, Integer>
 brute force: O(n^m * m)
 memoized: O(m*m^2)
 
-# All construct memoization
+### Tabulation solution
+
+
+# 8. All construct
 
 **Description**: Write a function that returns a 2D array containing _all the ways_ that the `target` can be constructed by concatenating elements of the `wordBank` array. Each element of the 2D array should represent one combination that constructs the `target`. Elements in `wordBank` can be reused as many times as needed.
 
-
+### Memoization solution
 
 {% highlight java linenos %}
 
@@ -241,11 +388,16 @@ memoized: O(m*m^2)
 brute force: O(n^m * m)
 memoized: O(m*m^2)
 
+### Tabulation solution
+
+
 # Wrapping up
 
-- **Can sum**: "Can you do it" yes/no -> Decision problem
-- **How sum**: "How will you do it" -> Combinatoric problem
-- **Best sum**: "What is the best way to do it" -> Optimization problem
-
-
-
+1.  **Can sum**: "Can you do it" yes/no -> Decision problem
+2.  **How sum**: "How will you do it" -> Combinatoric problem
+3. **Best sum**: "What is the best way to do it" -> Optimization problem
+4. 
+5. 
+6. 
+7. 
+8. 

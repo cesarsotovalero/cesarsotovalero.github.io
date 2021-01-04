@@ -1,58 +1,64 @@
 ---
 layout: post
 title:  Shorting the distance between academia and industry
-subtitle: The why and the how
-tags: soft-skills
-published: false
-image: ../img/posts/word_cloud.jpg
-share-img: ../img/posts/word_cloud.jpg
+subtitle: An imperative need of researchers
+tags: research
+published: true
+image: ../img/posts/skates.png
+share-img: ../img/posts/skates.png
 show-avatar: false
-date: 2020/4/06
+date: 2020/11/2
 ---
 
-Research is about solving relevant problems. However, the relevance of certain problem is a highly subjective matter. Is it relevant to send a human being to Mars? Maybe it is, or maybe not. One thing is for sure: research is _expensive_. As far as I know, it is sustained mostly by funds and grants. I believe that the best way to boost funding is by increasing _interest_ in research investment. Therefore, researchers should dedicate a significant part of their efforts to strengthen the bonds between their work and the local industry. Let's discuss how. 
+Research is about solving relevant problems for the best of humanity. 
+However, the relevance of certain problems is a highly subjective matter. 
+Is it relevant to send a human being to Mars? Maybe it is, or maybe not. 
+One thing is for sure: research is _expensive_. 
+As far as I know, it is sustained mostly by funds and grants. 
+I believe that the best way to boost funding is by increasing _interest_ in research investment. 
+Therefore, researchers should dedicate a significant portion of their efforts to strengthen the bonds between their work and the local industry. 
+Let's discuss how. 
+
+<figure class="jb_picture">
+    <img src="../img/posts/skates.png" 
+    alt="Skates for sale in a second-hand store in Stockholm"
+    longdesc="#c13e1390" />
+    <figcaption class="stroke">
+    &#169; Skates for sale in a second-hand store in Stockholm
+    </figcaption>
+</figure>
+
+First, let’s embrace the fact that governments and institutions pay for research grants. 
+Hence, our research is mostly sustained by public money and other non-profit organizations. 
+For example, in Sweden, the [Swedish Research Council](https://www.vr.se/english/about-us.html) is a government agency within the Ministry of Education and Research that gives significant funding to all scientific disciplines.
+Therefore, the amount of money injected into research heavily depends on the vision of large entities out of the control of individual researchers.
 
 <aside class="quote">
-    <em>Research should be more industry focused.</em>
+    <em>Research efforts should be driven by imperative industry needs.</em>
 </aside>
 
-# what do we do?
+Applying for grants is a battlefield because the demand vastly exceeds the offer.
+For researchers, demonstrating the impact of their work on the industry is very relevant.
+It can lead to a faster acceptance of their grant applications.
 
-I argue that research should be more industry focused.
+The best way to augment the flow of economic support for research is by showing the many benefits of allocating money into it.
+Showing the impact for the local industry is key to increase the understanding of the long-term societal benefits.
+For example, fruitful collaboration between academic researchers in the area of software technology is crucial for modern economies.
+Shortening the distance between academic research and the industry is a matter of common interest for both parties.
 
-is the government, the country, which pais for research grants... so its the industry a necessary boost.
+### What academic researchers can do?
 
-Research is about solving relevant problems
+Here is a non-exhaustive list of actions for researchers:
 
-Disseminate results beyond academia to have impact
+- Disseminate their results beyond the academic community
+- Create platforms for the general public to show the impact of their contributions
+- Go there (to companies), listen to their questions and problems, and interact with them
+- Promote events and invite people from the industry to present the technology that they deploy on a daily basis
+- Creating open-source organizations, contributing together with academics, engineers, and the community there
 
-Collaborate with a companies and industry.
+### Why is it challenging?
 
-Fruitful collaboration in the area of software research
-
-
-# How do we do?
-
-We go there (to the companies), listen to their questions and problems and interact.
-
-We create software events and invite people from industry to present their technology that they deploy on a daily basis.
-
-We disseminate in very focussed industry events in from of a larger crowd of very focused engineers.
-
-Creating github organizations, contributing together with academics, engineers, and the community.
-
-# Why it is challenging?
-
-requires changing our habits
-
-# But
-
-Execellent for mutual innovation
-
-For mutual knownledge sharing
-
-
-
-
-
-
+To accomplish these tasks effectively is challenging for researchers because it requires changing long-lasting habits.
+Getting out of the comfort zone by presenting research work to a large crowd of very focused industrial engineers is not easy.
+But it is still worth it.
+For the impact, for mutual innovation and knowledge sharing, and the sustainability of the whole research business :smiley:.
