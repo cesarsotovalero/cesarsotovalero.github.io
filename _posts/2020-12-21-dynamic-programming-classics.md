@@ -57,10 +57,10 @@ The first indication that we are dealing with a DP problem is noticing overlappi
 
 # Problems
 
-* [Fibonacci](#fibonacci)
+* [Fibonacci](#fibonacci) ("What is the best way to do it?" -> Optimization problem)
   * [Memoization solution](#memoization-solution)
   * [Tabulation solution](#tabulation-solution)
-* [Grid traveler](#grid-traveler)
+* [Grid traveler](#grid-traveler) ("How will you do it?" -> Combinatoric problem)
   * [Memoization solution](#memoization-solution-1)
   * [Tabulation solution](#tabulation-solution-1)
 * [Can sum](#can-sum) ("Can you do it?" -> Decision problem)
@@ -72,13 +72,13 @@ The first indication that we are dealing with a DP problem is noticing overlappi
 * [Best sum](#best-sum) ("What is the best way to do it?" -> Optimization problem)
   * [Memoization solution](#memoization-solution-4)
   * [Tabulation solution](#tabulation-solution-4)
-* [Can construct](#can-construct)
+* [Can construct](#can-construct) ("Can you do it?" -> Decision problem)
   * [Memoization solution](#memoization-solution-5)
   * [Tabulation solution](#tabulation-solution-5)
-* [Count construct](#count-construct)
+* [Count construct](#count-construct) ("How will you do it?" -> Combinatoric problem)
   * [Memoization solution](#memoization-solution-6)
   * [Tabulation solution](#tabulation-solution-6)
-* [All construct](#all-construct)
+* [All construct](#all-construct) ("In how many ways can you do it?" -> Combinatoric problem)
   * [Memoization solution](#memoization-solution-7)
   * [Tabulation solution](#tabulation-solution-7)
 
@@ -135,7 +135,6 @@ static int fib(int n) {
 Input: gridTraveler(2, 3)
 Output: 3
 {% endhighlight %}
-
 
 ### Memoization solution
 
