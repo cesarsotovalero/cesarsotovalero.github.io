@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Dynamic programming
-subtitle: A handful of classical problems explained
+subtitle: A handful of representative problems solved
 tags: programming
 published: true
 image: ../img/posts/backyard.gif
@@ -18,7 +18,7 @@ It consists of simplifying a complicated problem by breaking it down into simple
 </aside>
 The key advantage of using DP is that it is fast.
 There are two key attributes that a problem must have in order for DP to be applicable: [optimal substructure](https://en.wikipedia.org/wiki/Optimal_substructure) and [overlapping sub-problems](https://en.wikipedia.org/wiki/Overlapping_subproblems).
-In this post, I'll rely on a set of classical DP problems to explain the two basic solution strategies: [memoization](https://en.wikipedia.org/wiki/Memoization) and tabulation. 
+In this post, I'll rely on a set of representative DP problems to perform the two basic solution strategies: [memoization](https://en.wikipedia.org/wiki/Memoization) and tabulation. 
 These problems are presented and explained by Alvin Zablan, in [this](https://www.youtube.com/watch?v=oBt53YbR9Kk&t=4700s) excellent video that he prepared for [freeCodeCamp.org](https://www.freecodecamp.org).
 I have written my own solutions to the problems in Java.
 
