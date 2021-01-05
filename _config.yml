@@ -29,6 +29,7 @@ navbar-links:
     - Collaborations: "collaborations"
     - Certifications: "certifications"
     - Competitions: "competitions"
+    - Courses: "courses"
     - Software: "software"
     - Service: "service"
 
