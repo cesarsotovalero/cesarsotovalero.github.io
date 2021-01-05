@@ -10,7 +10,7 @@ show-avatar: false
 date: 2018/09/14
 ---
 
-After reading a paper about the negative impact of unnecessary code in the software industry, I felt stuck with the many different (but very related) concepts around this issue. One can think that unnecessary code is all code that is not needed for an application to run correctly. However, the fact is that the concept is more complicated than it seems, and sometimes it is not very easy to understand what _unnecessary_ means in this context. For example, there is a sligh (but quite important) difference between what we know as dead code (code that will never be used) and unnecessary code (code that can be used or not, but definitely is not required for the application). 
+After reading [a paper](https://www.cqse.eu/fileadmin/content/news/publications/2020-unnecessary-code-tosem.pdf) about the negative impact of unnecessary code in the software industry, I felt stuck with the many different (but very related) concepts around this issue. One can think that unnecessary code is all code that is not needed for an application to run correctly. However, the fact is that the concept is more complicated than it seems, and sometimes it is not very easy to understand what _unnecessary_ means in this context. For example, there is a sligh (but quite important) difference between what we know as dead code (code that will never be used) and unnecessary code (code that can be used or not, but definitely is not required for the application). 
 
 Thus, to put all the important related concepts in the same place, I made the following diagram:
 

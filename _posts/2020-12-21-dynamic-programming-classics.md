@@ -3,7 +3,7 @@ layout: post
 title:  Dynamic programming
 subtitle: A handful of classical problems explained
 tags: programming
-published: true
+published: false
 image: ../img/posts/backyard.gif
 share-img: ../img/backyard.gif
 show-avatar: false
@@ -57,9 +57,37 @@ When using the tabulation, finding proper way to iterate through the table is us
 5. Iterate through the table (**hard**)
 6. Fill further positions based on the current position
 
-# 1. Fibonacci
+# Problems
 
-**Description.** Write a function that returns the n-th number of the fibonacci sequence. 
+* [Fibonacci](#fibonacci)
+  * [Memoization solution](#memoization-solution)
+  * [Tabulation solution](#tabulation-solution)
+* [Grid traveler](#grid-traveler)
+  * [Memoization solution](#memoization-solution-1)
+  * [Tabulation solution](#tabulation-solution-1)
+* [Can sum](#can-sum) ("Can you do it?" -> Decision problem)
+  * [Memoization solution](#memoization-solution-2)
+  * [Tabulation solution](#tabulation-solution-2)
+* [How sum](#how-sum) ("How will you do it?" -> Combinatoric problem)
+  * [Memoization solution](#memoization-solution-3)
+  * [Tabulation solution](#tabulation-solution-3)
+* [Best sum](#best-sum) ("What is the best way to do it?" -> Optimization problem)
+  * [Memoization solution](#memoization-solution-4)
+  * [Tabulation solution](#tabulation-solution-4)
+* [Can construct](#can-construct)
+  * [Memoization solution](#memoization-solution-5)
+  * [Tabulation solution](#tabulation-solution-5)
+* [Count construct](#count-construct)
+  * [Memoization solution](#memoization-solution-6)
+  * [Tabulation solution](#tabulation-solution-6)
+* [All construct](#all-construct)
+  * [Memoization solution](#memoization-solution-7)
+  * [Tabulation solution](#tabulation-solution-7)
+
+
+# Fibonacci
+
+**Description:** Write a function that returns the n-th number of the fibonacci sequence. 
 To generate the next number of the sequence, we sum the previous two. For example, these are the first 10 fibonacci numbers:
 
 | **n** | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
@@ -94,9 +122,9 @@ static int fib(int n) {
 }
 {% endhighlight %}
 
-# 2. Grid traveler
+# Grid traveler
 
-**Description.** You are a traveler on a 2D grid. You begin in the top-left corner and your goal is to travel to the bottom-right corner. You may only move down or right. In how many ways can you travel to the goal on a grid with dimensions `n`*`m`.
+**Description:** You are a traveler on a 2D grid. You begin in the top-left corner and your goal is to travel to the bottom-right corner. You may only move down or right. In how many ways can you travel to the goal on a grid with dimensions `n`*`m`.
 
 ### Memoization solution
 
@@ -128,9 +156,9 @@ static long gridTraveler(int m, int n) {
 }
 {% endhighlight %}
 
-# 3. Can sum 
+# Can sum 
 
-**Description.** Write a function that return _a boolean_ indicating whether it is possible to generate a `targetSum` value by adding number from a given array. Elements of the array are positive integers and can be used as many time as needed. 
+**Description:** Write a function that return _a boolean_ indicating whether it is possible to generate a `targetSum` value by adding number from a given array. Elements of the array are positive integers and can be used as many time as needed. 
 
 ### Memoization solution
 
@@ -180,9 +208,9 @@ static boolean canSum(int targetSum, int[] numbers) {
 {% endhighlight %}
 
 
-# 4. How sum
+# How sum
 
-**Description.** Write a function that return an array containing _any combination_ of elements that add up to exactly the `targetSum`. If there is no combination that adds up to the `targetSum`, then return `null`.
+**Description:** Write a function that return an array containing _any combination_ of elements that add up to exactly the `targetSum`. If there is no combination that adds up to the `targetSum`, then return `null`.
 
 ### Memoization solution
 
@@ -240,9 +268,9 @@ static List<Integer> howSum(int targetSum, int[] numbers) {
 {% endhighlight %}
 
 
-# 5. Best sum
+# Best sum
 
-**Description.** Write a function that returns an array containing _the shortest combination_ of numbers that add up to exactly the `targetSum`. If there is a tie fo the shortest combination, you may return any one of the shortest.
+**Description:** Write a function that returns an array containing _the shortest combination_ of numbers that add up to exactly the `targetSum`. If there is a tie fo the shortest combination, you may return any one of the shortest.
 
 ### Memoization solution
 
@@ -311,9 +339,15 @@ static List<Integer> bestSum(int targetSum, int[] numbers) {
 } 
 {% endhighlight %}
 
-# 6. Can construct
+# Can construct
 
-**Description**: Write a function that returns _a boolean_ indication whether the `target` string can be constructed by concatenating elements of the `wordBank` array of strings. Elements in `wordBank` can be reused as many times as needed.
+**Description:** Write a function that returns _a boolean_ indication whether the `target` string can be constructed by concatenating elements of the `wordBank` array of strings. Elements in `wordBank` can be reused as many times as needed.
+
+**Example:**
+{% highlight java %}
+Input: canConstruct("abcdef", new String[]{"ab", "abc", "cd", "def", "abcd"}) 
+Output: true
+{% endhighlight %}
 
 ### Memoization solution
 
@@ -343,12 +377,37 @@ memoized: O(m*m^2)
 ### Tabulation solution
 
 {% highlight java linenos %}
-
+static boolean canConstruct(String target, String[] wordBank) {
+   // Initialize a list of false boolean elements except the first element
+   List<Boolean> table = new ArrayList<>();
+   for (int i = 0; i < target.length() + 1; i++) {
+      table.add(i, false);
+   }
+   table.set(0, true);
+   // Algorithm
+   for (int i = 0; i < table.size(); i++) {
+      if (table.get(i)) {
+         for (String word : wordBank) {
+            // if the word matches the characters starting at position i
+            if (target.startsWith(word, i)) {
+               table.set(i + word.length(), true);
+            }
+         }
+      }
+   }
+   return table.get(target.length());
+}
 {% endhighlight %}
 
-# 7. Count construct 
+# Count construct 
 
-**Description**: Write a function that returns _the number of ways_ that the `target` can be constructed by concatenating elements of the `wordBank` array. Elements in `wordBank` can be reused as many times as needed.
+**Description:** Write a function that returns _the number of ways_ that the `target` can be constructed by concatenating elements of the `wordBank` array. Elements in `wordBank` can be reused as many times as needed.
+
+**Example:**
+{% highlight java %}
+Input: countConstruct("purple", new String[]{"purp", "p", "ur", "le", "purpl"})
+Output: 2
+{% endhighlight %}
 
 ### Memoization solution
 
@@ -374,10 +433,13 @@ memoized: O(m*m^2)
 
 ### Tabulation solution
 
+{% highlight java linenos %}
 
-# 8. All construct
+{% endhighlight %}
 
-**Description**: Write a function that returns a 2D array containing _all the ways_ that the `target` can be constructed by concatenating elements of the `wordBank` array. Each element of the 2D array should represent one combination that constructs the `target`. Elements in `wordBank` can be reused as many times as needed.
+# All construct
+
+**Description:** Write a function that returns a 2D array containing _all the ways_ that the `target` can be constructed by concatenating elements of the `wordBank` array. Each element of the 2D array should represent one combination that constructs the `target`. Elements in `wordBank` can be reused as many times as needed.
 
 ### Memoization solution
 
@@ -391,13 +453,3 @@ memoized: O(m*m^2)
 ### Tabulation solution
 
 
-# Wrapping up
-
-1.  **Can sum**: "Can you do it" yes/no -> Decision problem
-2.  **How sum**: "How will you do it" -> Combinatoric problem
-3. **Best sum**: "What is the best way to do it" -> Optimization problem
-4. 
-5. 
-6. 
-7. 
-8. 

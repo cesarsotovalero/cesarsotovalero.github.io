@@ -24,7 +24,7 @@ published: true
 
 # Thesis supervisor
 
-- [Using NLP Techniques for Log Analysis to Create a Recommendation System](#), Martin Larsson, **Master Thesis**, KTH 2020
+- [Using NLP Techniques for Log Analysis to Create Recommendations for Troubleshooting Processes](#), Martin Sköld, **Master Thesis**, KTH 2020
 
 - [Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf), Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020
 
