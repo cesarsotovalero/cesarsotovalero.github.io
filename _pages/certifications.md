@@ -21,14 +21,14 @@ published: true
 
 - [MSR Data Showcase Award](../img/awards/data_showcase_award.jpg), _16th International Conference on Mining Software Repositories_, 2019
 
-- [WASP Outstanding Results Award](../files/certificates/WASP_award.pdf), _WASP Autonomous Systems II_, 2019 
+- [WASP Certificate of Excellence](../files/certificates/WASP_award.pdf), _WASP Autonomous Systems II_, 2019 
 
 
 # Other
 
 - [IELTS Academic Test 6.5](../img/IETLS_Test_Report_Form.jpg), University of Cambridge ESOL Examinations, 2016
 
-- [JSEP Reviewer Certificate](https://onlinelibrary.wiley.com/journal/20477481), _Journal of Software: Evolution and Process_, 2017
+- [JSEP Reviewer Certificate](../files/certificates/SMR_Certificate.pdf), _Journal of Software: Evolution and Process_, 2017
 
 - [ICPC-ACM Staff Member](../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf), _ICPC-ACM International Collegiate Programming Contest_, 2017 
 
@@ -71,4 +71,5 @@ published: true
         <img src="../img/awards/data_showcase_award.jpg" alt="MSR Data Showcase Award" width="100%" style="border:4px solid #021a40;"/>
      </a>
      </td>
+   </tr>
 </table>
