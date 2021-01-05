@@ -3,24 +3,24 @@ layout: post
 title:  Dynamic programming
 subtitle: A handful of classical problems explained
 tags: programming
-published: false
+published: true
 image: ../img/posts/backyard.gif
 share-img: ../img/backyard.gif
 show-avatar: false
 date: 2020/12/21
 ---
 
-Dynamic programming (DP) is one of the most basic and challenging programming paradigms.
+Dynamic programming (DP) is one of the most basic and, at the same time, challenging programming paradigms.
 Some of the best algorithms that I know, such as the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) and [DTW](https://en.wikipedia.org/wiki/Dynamic_time_warping) are implemented using this paradigm.
-It consists in simplifying a complicated problem by breaking it down into simpler sub-problems in a recursive manner.
+It consists of simplifying a complicated problem by breaking it down into simpler sub-problems in a recursive manner and then using the sub-problems' precomputed solutions to solve the complicated one.
 <aside class="quote">
     <em>DP consists in simplifying a problem by breaking it down into simpler sub-problems recursively.</em>
 </aside>
 The key advantage of using DP is that it is fast.
 There are two key attributes that a problem must have in order for DP to be applicable: [optimal substructure](https://en.wikipedia.org/wiki/Optimal_substructure) and [overlapping sub-problems](https://en.wikipedia.org/wiki/Overlapping_subproblems).
-In this post, I'll rely on classical DP problems to explain the two basic solution strategies: [memoization](https://en.wikipedia.org/wiki/Memoization) and tabulation. 
+In this post, I'll rely on a set of classical DP problems to explain the two basic solution strategies: [memoization](https://en.wikipedia.org/wiki/Memoization) and tabulation. 
 These problems are presented and explained by Alvin Zablan, in [this](https://www.youtube.com/watch?v=oBt53YbR9Kk&t=4700s) excellent video that he prepared for [freeCodeCamp.org](https://www.freecodecamp.org).
-I write my own solutions to the problems in Java.
+I have written my own solutions to the problems in Java.
 
 <figure class="jb_picture">
     <img src="../img/posts/backyard.gif" 
@@ -33,9 +33,7 @@ I write my own solutions to the problems in Java.
 
 # Strategies
 
-Depending on the implementation strategy to use, memoization or tabulation, there are recipes that one can follow to address DP problems.
-For the memoization strategy, the most challenging step is to visualize the problem as a tree. 
-When using the tabulation, finding proper way to iterate through the table is usually the most challenging task.
+The first indication that we are dealing with a DP problem is noticing overlapping sub-problems. Then, one has to decide what the trivially smallest input is. Depending on the implementation strategy to use, memoization (recursive) or tabulation (iterative), there are recipes that one can follow to address DP problems. For the memoization strategy, the most challenging step is to visualize the problem as a tree. When using the tabulation, finding the proper way to iterate through the table is usually the most challenging task.
 
 ### Memoization
 
@@ -96,6 +94,12 @@ To generate the next number of the sequence, we sum the previous two. For exampl
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 {: .border-bottom-on-table  }
 
+**Example:**
+{% highlight java %}
+Input: fib(8)
+Output: 21
+{% endhighlight %}
+
 ### Memoization solution
 
 {% highlight java linenos %}
@@ -125,6 +129,13 @@ static int fib(int n) {
 # Grid traveler
 
 **Description:** You are a traveler on a 2D grid. You begin in the top-left corner and your goal is to travel to the bottom-right corner. You may only move down or right. In how many ways can you travel to the goal on a grid with dimensions `n`*`m`.
+
+**Example:**
+{% highlight java %}
+Input: gridTraveler(2, 3)
+Output: 3
+{% endhighlight %}
+
 
 ### Memoization solution
 
@@ -158,7 +169,13 @@ static long gridTraveler(int m, int n) {
 
 # Can sum 
 
-**Description:** Write a function that return _a boolean_ indicating whether it is possible to generate a `targetSum` value by adding number from a given array. Elements of the array are positive integers and can be used as many time as needed. 
+**Description:** Write a function that return _a boolean_ indicating whether it is possible to generate a `targetSum` value by adding number from a given array. Elements of the array are positive integers and can be used as many time as needed.
+
+**Example:**
+{% highlight java %}
+Input: canSum(7, new int[]{5, 3, 4, 7})
+Output: true
+{% endhighlight %}
 
 ### Memoization solution
 
@@ -211,6 +228,12 @@ static boolean canSum(int targetSum, int[] numbers) {
 # How sum
 
 **Description:** Write a function that return an array containing _any combination_ of elements that add up to exactly the `targetSum`. If there is no combination that adds up to the `targetSum`, then return `null`.
+
+**Example:**
+{% highlight java %}
+Input: canSum(7, new int[]{5, 3, 4, 7})
+Output: [3, 4] // or [7]
+{% endhighlight %}
 
 ### Memoization solution
 
@@ -271,6 +294,12 @@ static List<Integer> howSum(int targetSum, int[] numbers) {
 # Best sum
 
 **Description:** Write a function that returns an array containing _the shortest combination_ of numbers that add up to exactly the `targetSum`. If there is a tie fo the shortest combination, you may return any one of the shortest.
+
+**Example:**
+{% highlight java %}
+Input: canSum(7, new int[]{5, 3, 4, 7})
+Output: [7]
+{% endhighlight %}
 
 ### Memoization solution
 
@@ -428,28 +457,110 @@ static int countConstruct(String target, String[] wordBank, Map<String, Integer>
 }
 {% endhighlight %}
 
+<!--
 brute force: O(n^m * m)
 memoized: O(m*m^2)
+-->
 
 ### Tabulation solution
 
-{% highlight java linenos %}
-
+{% highlight java linenos %} 
+static int countConstruct(String target, String[] wordBank) {
+   // Initialize a list of integer elements with zero except the first element
+   List<Integer> table = new ArrayList<>();
+   for (int i = 0; i < target.length() + 1; i++) {
+      table.add(i, 0);
+   }
+   table.set(0, 1);
+   // Algorithm
+   for (int i = 0; i < table.size(); i++) {
+      for (String word : wordBank) {
+         if (target.startsWith(word, i)) {
+            int valueAtCurrentPosition = i + word.length();
+            table.set(valueAtCurrentPosition, table.get(i) + table.get(valueAtCurrentPosition));
+         }
+      }
+   }
+   return table.get(target.length());
+}
 {% endhighlight %}
 
 # All construct
 
 **Description:** Write a function that returns a 2D array containing _all the ways_ that the `target` can be constructed by concatenating elements of the `wordBank` array. Each element of the 2D array should represent one combination that constructs the `target`. Elements in `wordBank` can be reused as many times as needed.
 
+**Example:**
+{% highlight java %}
+Input: allConstruct("abcdef", new String[]{"ab", "abc", "cd", "def", "abcd", "ef", "c"})
+Output: {["ab", "cd", "ef"],
+         ["ab", "c", "def"],
+         ["abc", "def"],
+         ["abcd", "ef"]
+        }
+{% endhighlight %}
+
 ### Memoization solution
 
 {% highlight java linenos %}
-
+static List<List<String>> allConstruct(String target, String[] wordBank, Map<String, List<List<String>>> memo) {
+   if(memo.containsKey(target)) return memo.get(target);
+   if (target.equals("")) {
+      List<List<String>> tmp = new ArrayList<>();
+      List<String> list = new ArrayList<>();
+      tmp.add(list);
+      return tmp; // a list with one element [[]]
+   }
+   List<List<String>> result = new ArrayList<>();
+   for (String word : wordBank) {
+      if (target.startsWith(word)) {
+         String suffix = target.substring(word.length());
+         List<List<String>> suffixWays = allConstruct(suffix, wordBank, memo);
+         List<List<String>> targetWays = new ArrayList<>();
+         for (List<String> suffixWay : suffixWays) {
+            List<String> tmp = new ArrayList<>(suffixWay);
+            tmp.add(0, word);
+            targetWays.add(tmp);
+         }
+         result.addAll(targetWays);
+      }
+   }
+   memo.put(target, result);
+   return result;
+}
 {% endhighlight %}
 
+<!--
 brute force: O(n^m * m)
 memoized: O(m*m^2)
+-->
 
 ### Tabulation solution
 
-
+{% highlight java linenos %} 
+static List<List<String>> allConstruct(String target, String[] wordBank) {
+   // Initialize a list of lists representing each combination of words from wordBank
+   List<List<List<String>>> table = new ArrayList<>();
+   for (int i = 0; i < target.length() + 1; i++) {
+      table.add(i, new ArrayList<>());
+   }
+   table.get(0).add(0, new ArrayList<>());
+   // Algorithm
+   for (int i = 0; i < table.size(); i++) {
+      for (String word : wordBank) {
+         if (target.startsWith(word, i)) {
+            List<List<String>> combinations = new ArrayList<>();
+            for (List<String> combination : table.get(i)) {
+               combinations.add(new ArrayList<>(combination));
+            }
+            for (List<String> combination : combinations) {
+               combination.add(word);
+            }
+            for (List<String> combination : combinations) {
+               table.get(i + word.length()).add(combination);
+            }
+         }
+      }
+   }
+   return table.get(target.length());
+}
+{% endhighlight %}
