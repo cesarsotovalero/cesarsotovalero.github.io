@@ -59,7 +59,7 @@ h3 {
 
 
 a {
-  /*text-decoration: underline;*/
+  text-decoration: underline;
   color: black;
 
 }
@@ -69,6 +69,7 @@ a:focus {
   color: darkblue;
   text-decoration: underline;
 }
+
 
 blockquote {
   color: darkgreen;
@@ -476,6 +477,7 @@ logo-main a:hover {
 
 .post-title-main {
   color: #000000;
+  text-decoration: none;
 }
 
 .post-preview .post-title-main {
