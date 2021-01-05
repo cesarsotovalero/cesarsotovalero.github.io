@@ -28,7 +28,7 @@ Let's discuss how.
     </figcaption>
 </figure>
 
-First, let’s embrace the fact that governments and institutions pay for research grants. 
+First, let’s face the fact that governments and institutions pay for research grants. 
 Hence, our research is mostly sustained by public money and other non-profit organizations. 
 For example, in Sweden, the [Swedish Research Council](https://www.vr.se/english/about-us.html) is a government agency within the Ministry of Education and Research that gives significant funding to all scientific disciplines.
 Therefore, the amount of money injected into research heavily depends on the vision of large entities out of the control of individual researchers.
@@ -37,7 +37,7 @@ Therefore, the amount of money injected into research heavily depends on the vis
     <em>Research efforts should be driven by imperative industry needs.</em>
 </aside>
 
-Applying for grants is a battlefield because the demand vastly exceeds the offer.
+In this context, applying for grants is a battlefield because the demand vastly exceeds the offer.
 For researchers, demonstrating the impact of their work on the industry is very relevant.
 It can lead to a faster acceptance of their grant applications.
 
@@ -54,11 +54,11 @@ Here is a non-exhaustive list of actions for researchers:
 - Create platforms for the general public to show the impact of their contributions
 - Go there (to companies), listen to their questions and problems, and interact with them
 - Promote events and invite people from the industry to present the technology that they deploy on a daily basis
-- Creating open-source organizations, contributing together with academics, engineers, and the community there
+- Create open-source organizations, contributing together with academics, engineers, and the community there
 
 ### Why is it challenging?
 
-To accomplish these tasks effectively is challenging for researchers because it requires changing long-lasting habits.
+Accomplishing these tasks effectively is challenging for researchers because it requires changing long-lasting habits.
 Getting out of the comfort zone by presenting research work to a large crowd of very focused industrial engineers is not easy.
-But it is still worth it.
-For the impact, for mutual innovation and knowledge sharing, and the sustainability of the whole research business :smiley:.
+But it is very worth it.
+For its impact to society, for mutual innovation and knowledge sharing, and for the sustainability of the whole research business :smiley:.
