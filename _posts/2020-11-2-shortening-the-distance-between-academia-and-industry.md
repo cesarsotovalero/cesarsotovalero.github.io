@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Shorting the distance between academia and industry
+title:  Shortening the distance between academia and industry
 subtitle: An imperative need of researchers
 tags: research
 published: true
