@@ -230,7 +230,7 @@ static boolean canSum(int targetSum, int[] numbers) {
 
 **Example:**
 {% highlight java %}
-Input: canSum(7, new int[]{5, 3, 4, 7})
+Input: howSum(7, new int[]{5, 3, 4, 7})
 Output: [3, 4] // or [7]
 {% endhighlight %}
 
@@ -296,7 +296,7 @@ static List<Integer> howSum(int targetSum, int[] numbers) {
 
 **Example:**
 {% highlight java %}
-Input: canSum(7, new int[]{5, 3, 4, 7})
+Input: bestSum(7, new int[]{5, 3, 4, 7})
 Output: [7]
 {% endhighlight %}
 
