@@ -42,6 +42,8 @@ published: true
 
 # Sub-reviewer
 
+- [ACM Digital Threats: Research and Practice](https://dl.acm.org/journal/dtrap) 
+
 - [ISSRE'20](http://2020.issre.net/research-cfp)
 
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2020
