@@ -8,6 +8,8 @@ published: true
 
 # Teacher assistant
 
+- [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2021
+
 - [DD1369 Software Engineering in Project Form](https://www.kth.se/social/course/DD1369/), given by [Dena Hussain](https://www.kth.se/profile/denah/) at KTH, Fall 2020
 
 - [DD2460 Software Safety and Security](https://www.kth.se/social/course/DD2460), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2020
