@@ -8,7 +8,15 @@ published: true
 
 # Teacher assistant
 
+### 2021
+
+- [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
+
+- [WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
+
 - [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2021
+
+### 2020
 
 - [DD1369 Software Engineering in Project Form](https://www.kth.se/social/course/DD1369/), given by [Dena Hussain](https://www.kth.se/profile/denah/) at KTH, Fall 2020
 
@@ -17,6 +25,8 @@ published: true
 - [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2020
 
 - [DM1590 Machine Learning for Media Technology](https://www.kth.se/student/kurser/kurs/DM1590), given by [Bob Sturm](http://www.eecs.qmul.ac.uk/~sturm/) at KTH, Spring 2020
+
+### 2019
 
 - [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), given by [Linda Kann](http://www.csc.kth.se/~lk) at KTH, Fall 2019
 
