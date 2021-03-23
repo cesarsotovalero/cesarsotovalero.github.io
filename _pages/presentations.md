@@ -17,6 +17,8 @@ The following is a non-exhaustive list of my technical presentations.
 
 # 2021
 
+- A Longitudinal Analysis of Bloated Java Dependencies. Presented at _23th ASSERT Software Engineering Workshop, Stockholm, Sweden, February 2021.
+
 - [DepClean: Automatically revealing bloated software dependencies in Maven projects](https://mirrors.dotsrc.org/fosdem/2021/D.dependency/dep_depclean.webm). Presented at FOSDEM, February 2021 :movie_camera:
 
 # 2020

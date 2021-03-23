@@ -605,14 +605,14 @@ logo-main a:hover {
 }
 
 .blog-tags a {
-  color: darkblue;
+  color: #000000;
   text-decoration: none;
   padding: 0px 5px;
 }
 
 .blog-tags a:hover {
   border-radius: 2px;
-  color: darkblue;
+  color: #000000;
   background-color: #CCC;
 }
 
@@ -930,7 +930,7 @@ code {
 }
 
 code a:hover, a:focus {
-  color: darkblue;
+  color: #000000;
 
 }
 
@@ -1310,7 +1310,7 @@ ul {
 
 
 .tag-code:hover {
-  color: darkblue;
+  color: #000000;
   border-radius: 6px;
   text-decoration: underline;
 }
