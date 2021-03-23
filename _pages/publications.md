@@ -18,7 +18,7 @@ As a researcher, I write academic papers for journals and conferences. My work c
 # 2021
 
 
-- <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> Thomas Durieux, **César Soto-Valero**, Benoit Baudry. [DUETS: A Dataset of Reproducible Pairs of Java Library-Clients](TODO). In _18th International Conference on Mining Software Repositories_, Madrid, Spain, 2021. DOI: XXXXX. 
+- <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> Thomas Durieux, **César Soto-Valero**, Benoit Baudry. [DUETS: A Dataset of Reproducible Pairs of Java Library-Clients](https://arxiv.org/pdf/2103.09672.pdf). In _18th International Conference on Mining Software Repositories_, Madrid, Spain, 2021. DOI: XXXXX. 
 
 
 # 2020
@@ -53,8 +53,7 @@ As a researcher, I write academic papers for journals and conferences. My work c
 
 - <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**, Mabel González. [Empirical Study of Malware Diversity in Major Android Markets](https://www.tandfonline.com/doi/full/10.1080/23742917.2018.1483876). _Journal of Cyber Security Technology_, DOI: 10.1080/24748668.2017.1354544. 
 
-- <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> **César Soto-Valero**, Yohan Bourcier, Benoit Baudry. [Detection and Analysis of Behavioral T-patterns
-in Debugging Activities](https://ieeexplore-ieee-org.focus.lib.kth.se/document/8595192). In _15th International Conference on Mining Software Repositories_, Gothenburg, Sweden, 2018. DOI: 10.1145/3196398.3196452. 
+- <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> **César Soto-Valero**, Yohan Bourcier, Benoit Baudry. [Detection and Analysis of Behavioral T-patterns in Debugging Activities](https://ieeexplore-ieee-org.focus.lib.kth.se/document/8595192). In _15th International Conference on Mining Software Repositories_, Gothenburg, Sweden, 2018. DOI: 10.1145/3196398.3196452. 
 
 - <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**. [Application of Machine Learning Methods for Analyzing and Predicting Sport Outcomes](https://recyt.fecyt.es/index.php/retos/article/view/58506). _Retos: Nuevas Tendencias en Deporte Educación Física y Recreación_, 34, 204-209, DOI: 10.47197/retos.v0i34.58506.
 
