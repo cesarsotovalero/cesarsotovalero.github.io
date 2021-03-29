@@ -13,7 +13,7 @@ date: 2020/10/15
 You are a very talented researcher. Perhaps you come from a favored field, e.g., from the popular machine learning (ML) research community. But now, you have decided to expand your horizons and solve software engineering (SE) problems. Hence, for the next years, you will be working as an empirical SE researcher. "This job is going to be a piece of cake", you may think and even dare to say. Well... not really. Let me tell you why.
 
 <figure class="jb_picture">
-    <img src="../img/posts/children-gardening.jpg" 
+    <img src="https://cf.jare.io/?u=https//www.cesarsotovalero.net/img/posts/children-gardening.jpg" 
     alt="Seeds planted by children at Rosenlundsparken, Stockholm"
     longdesc="#c13e1390" />
     <figcaption class="stroke">
