@@ -15,7 +15,7 @@ Nobody can deny that teaching is hard. In this 15 min video, I teach how the Qui
 
 What else could have been worse?
 
-<a href="https://play.kth.se/media/C%C3%A9sar+S+%2803+10+2019%29+-+G7/0_mdpi8fsb" rel="Quicksort in explained in 15min">![](https://cf.jare.io/?u=https//www.cesarsotovalero.net/img/class.png)</a>
+<a href="https://play.kth.se/media/C%C3%A9sar+S+%2803+10+2019%29+-+G7/0_mdpi8fsb" rel="Quicksort in explained in 15min">![](https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/class.png)</a>
 
 
 # Wrapping up 

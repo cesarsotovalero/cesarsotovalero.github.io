@@ -272,7 +272,7 @@ The ultimate defense is to drive the complexity of the ultimate attack up so hig
         {% if post.image %}
               <div class="post-image" style="height: auto; width: auto;">
                 <a href="{{ post.url | prepend: site.baseurl }}">
-                  <img src="{{ post.image }}">
+                  <img src="https://cf.jare.io/?u={{ post.image }}">
                 </a>
               </div>
               {% endif %}
@@ -303,9 +303,9 @@ The ultimate defense is to drive the complexity of the ultimate attack up so hig
 <h1 class="text-center" style="font-family: 'Open Sans'; font-weight: lighter">Organizations </h1>
 
 <p align="center">
-<a href="https://www.kth.se"><img class="" title="KTH" src="https://www.cesarsotovalero.net/img/logos/kth_logo.png" alt="KTH" height="85"></a>
-<a href="http://wasp-sweden.org"><img class="" title="WASP" src="https://www.cesarsotovalero.net/img/logos/wasp_logo.png" alt="WASP" height="100"></a>
-<a href="https://www.castor.kth.se"><img class="" title="CASTOR" src="https://www.cesarsotovalero.net/img/logos/castor_logo.png" alt="CASTOR" height="70"> </a>
+<a href="https://www.kth.se"><img class="" title="KTH" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/kth_logo.png" alt="KTH" height="85"></a>
+<a href="http://wasp-sweden.org"><img class="" title="WASP" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/wasp_logo.png" alt="WASP" height="100"></a>
+<a href="https://www.castor.kth.se"><img class="" title="CASTOR" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/castor_logo.png" alt="CASTOR" height="70"> </a>
 </p>
 
  
