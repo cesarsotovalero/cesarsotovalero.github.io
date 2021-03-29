@@ -16,7 +16,7 @@ Thus, to put all the important related concepts in the same place, I made the fo
 
 <p align="center">
   <a href="">
-    <img src="../img/general-diagram.png" height="350px"/>
+    <img src="http://cf.jare.io/?u=https//www.cesarsotovalero.net/img/general-diagram.png" height="350px"/>
   </a>
 </p>
 
