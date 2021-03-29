@@ -21,7 +21,7 @@ I remembered my first ACM-ICPC contest in 2009. It was a mess for me. With only 
 
 <p align="center">
   <a href="">
-    <img src="http://cf.jare.io/?u=https//www.cesarsotovalero.net/img/competitive-programming.png" height="250px"/>
+    <img src="https://cf.jare.io/?u=https//www.cesarsotovalero.net/img/competitive-programming.png" height="250px"/>
   </a>
 </p>
 
@@ -79,7 +79,7 @@ You need hard work and practice (a lot of practice) to become a competent contes
 Again, life is more than a competition. With time you will note that competitive programming gave you beneficial programming skills, and you will feel good for having discovered it. However,  software development for the industry is not a contest. Sometimes human capabilities are more important than technical skills. The ACM-ICPC contest are just an excellent way to learn to program.
 
 <figure class="jb_picture">
-    <img src="http://cf.jare.io/?u=https//www.cesarsotovalero.net/img/ACM-ICPC.jpg" 
+    <img src="https://cf.jare.io/?u=https//www.cesarsotovalero.net/img/ACM-ICPC.jpg" 
     alt="At UCLV, 2018"
     longdesc="#c13e1390" />
     <figcaption class="stroke">
