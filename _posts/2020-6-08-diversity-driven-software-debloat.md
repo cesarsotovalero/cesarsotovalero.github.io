@@ -4,8 +4,8 @@ title:  Diversity-driven software debloat
 subtitle: Leveraging the wisdom of multiple coverage tools
 tags: debloat
 published: true
-image: ../img/posts/crowd.jpg
-share-img: ../img/posts/crowd.jpg
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/crowd.jpg
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/crowd.jpg
 show-avatar: false
 date: 2020/6/08
 ---

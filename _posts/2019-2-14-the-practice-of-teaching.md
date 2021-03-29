@@ -4,8 +4,8 @@ title: The practice of teaching
 subtitle: The ultimate skill to learn
 published: true
 tags: soft-skills
-image: ../img/people.png
-share-img: ../img/people.png
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/people.png
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/people.png
 show-avatar: false
 date: 2019/2/14
 ---

@@ -4,8 +4,8 @@ title: Unnecessary code
 subtitle: Clarifying the concept 
 published: true
 tags: debloat
-image: ../img/codecode.png
-share-img: ../img/codecode.png
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/codecode.png
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/codecode.png
 show-avatar: false
 date: 2018/09/14
 ---

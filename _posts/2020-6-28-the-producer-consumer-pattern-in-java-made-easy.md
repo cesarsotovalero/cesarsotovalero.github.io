@@ -4,8 +4,8 @@ title:  The Producer-Consumer pattern in Java made easy
 subtitle: An example using BlockingQueue interface
 tags: programming
 published: true
-image: ../img/posts/java_design_patterns.jpg
-share-img: ../img/posts/java_design_patterns.jpg
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/java_design_patterns.jpg
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/java_design_patterns.jpg
 show-avatar: false
 date: 2020/6/28
 ---

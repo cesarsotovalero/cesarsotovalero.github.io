@@ -4,8 +4,8 @@ title: The cuban revolution
 subtitle: My vision
 published: true
 tags: misc
-image: ../img/posts/cuba_flag.jpg
-share-img: ../img/posts/cuba_flag.jpg
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/cuba_flag.jpg
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/cuba_flag.jpg
 show-avatar: false
 date: 2019/12/8
 ---

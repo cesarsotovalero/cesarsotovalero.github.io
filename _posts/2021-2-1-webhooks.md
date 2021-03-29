@@ -4,8 +4,8 @@ title:  Webhooks
 subtitle: A quick introduction
 tags: programming
 published: false
-image: ../img/posts/backyard.gif
-share-img: ../img/backyard.gif
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.gif
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/backyard.gif
 show-avatar: false
 date: 2021/2/1
 ---

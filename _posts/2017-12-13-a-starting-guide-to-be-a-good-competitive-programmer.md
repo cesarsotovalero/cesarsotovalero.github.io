@@ -4,8 +4,8 @@ title: A starting guide to be a good competitive programmer
 subtitle: Because learning is more important than competing
 published: true
 tags: programming
-image: ../img/competitive-programming-brain.png
-share-img: ../img/competitive-programming-brain.png
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/competitive-programming-brain.png
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/competitive-programming-brain.png
 show-avatar: false
 date: 2017/12/15
 ---

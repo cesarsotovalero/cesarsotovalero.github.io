@@ -4,8 +4,8 @@ title: Updating dependencies matters
 subtitle: The case of zip slip vulnerability
 tags: security
 published: false
-image: ../img/people.png
-share-img: ../img/people.png
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/people.png
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/people.png
 show-avatar: false
 date: 2019/2/14
 ---

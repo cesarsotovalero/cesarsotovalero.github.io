@@ -4,8 +4,8 @@ title: Deploying to Maven Central
 subtitle: A three-steps guide
 tags: software
 published: true
-image: ../img/posts/maven_journey.png
-share-img: ../img/posts/maven_journey.png
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/maven_journey.png
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/maven_journey.png
 show-avatar: false
 date: 2020/1/06
 ---
