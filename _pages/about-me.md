@@ -9,7 +9,7 @@ subtitle: In brief
 </div>
 
 <!--
-<a href="https://stackoverflow.com/users/10480869/cesarsotovalero"><img src="https://stackoverflow.com/users/flair/10480869.png" width="208" height="58" alt="profile for cesarsotovalero at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for cesarsotovalero at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
+<a href="https://stackoverflow.com/users/10480869/cesarsotovalero"><img src="http://cf.jare.io/?u=https://stackoverflow.com/users/flair/10480869.png" width="208" height="58" alt="profile for cesarsotovalero at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for cesarsotovalero at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
 -->
 
 <!-- ![Custom badge](https://img.shields.io/badge/-WORK-blueviolet.svg) -->
