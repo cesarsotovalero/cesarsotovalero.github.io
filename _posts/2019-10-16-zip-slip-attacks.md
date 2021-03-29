@@ -4,8 +4,8 @@ title: Vulnerability exploitation
 subtitle: Zip Slip attacks
 published: true
 tags: security
-image: ../img/posts/zipper.jpg
-share-img: ../img/posts/zipper.jpg
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/zipper.jpg
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/zipper.jpg
 show-avatar: false
 date: 2019/10/16
 ---

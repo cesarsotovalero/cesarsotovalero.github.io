@@ -4,8 +4,8 @@ title: Git fundamentals
 subtitle: The must-know git commands for software developers
 published: true
 tags: tools
-image: ../img/git_logo.png
-share-img: ../img/git_logo.png
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/git_logo.png
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/git_logo.png
 show-avatar: false
 date: 2017/10/26
 ---

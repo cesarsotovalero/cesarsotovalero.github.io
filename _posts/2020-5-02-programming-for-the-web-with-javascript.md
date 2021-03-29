@@ -4,8 +4,8 @@ title:  Programing for the web with JavaScript
 subtitle: The language of the web
 tags: programming
 published: false
-image: ../img/posts/terminal.png
-share-img: ../img/posts/terminal.png
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/terminal.png
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/terminal.png
 show-avatar: false
 date: 2020/5/23
 ---
