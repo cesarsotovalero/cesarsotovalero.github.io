@@ -2,7 +2,7 @@
 layout: post
 title:  JUnit5 annotations
 subtitle: A comprehensive description
-tags: testing,programming
+tags: testing
 published: false
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.gif
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/backyard.gif
