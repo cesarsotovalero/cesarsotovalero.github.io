@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Enhanced README files with asciinema
+title:  Enhance your README with asciinema
 subtitle: How to create beautiful terminal recordings that your users will love
 tags: tools
 published: true
@@ -20,7 +20,6 @@ Therefore, you will need to transform your asciinema recording into something th
 This post will show you step-by-step how to use asciinema to generate beautiful terminal recordings to enhance `README.md` files.
 
 First, let's see the help page of asciinema using the wonderful [tldr](https://github.com/tldr-pages/tldr) project:
-
 
 <link rel="stylesheet" type="text/css" href="../css/asciinema-player.css" />
 <script src="../js/asciinema-player.js"></script>
