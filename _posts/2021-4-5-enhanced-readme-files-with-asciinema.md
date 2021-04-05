@@ -10,9 +10,6 @@ show-avatar: false
 date: 2021/4/5
 ---
 
-<link rel="stylesheet" type="text/css" href="../css/asciinema-player.css" />
-<script src="../js/asciinema-player.js"></script>
-
 [Asciinema](https://asciinema.org/) is an excellent tool for recording and sharing terminal sessions. 
 The project is open-source and [available on GitHub](https://github.com/asciinema/asciinema).
 A key feature of asciinema is that it allows the viewer to copy-paste the text from the player itself directly. 
@@ -24,6 +21,9 @@ This post will show you step-by-step how to use asciinema to generate beautiful 
 
 First, let's see the help page of asciinema using the wonderful [tldr](https://github.com/tldr-pages/tldr) project:
 
+
+<link rel="stylesheet" type="text/css" href="../css/asciinema-player.css" />
+<script src="../js/asciinema-player.js"></script>
 <asciinema-player src="../asciinema/tldr_asciinema.rec" poster="npt:00:12" start-at="3"></asciinema-player>
 
 # Recording a terminal session
