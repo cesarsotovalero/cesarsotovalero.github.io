@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Enhanced READMEs with asciinema
+title:  Enhanced README files with asciinema
 subtitle: How to create beautiful terminal recordings that your users will love
 tags: tools
 published: true
-image: ../asciinema/tldr_asciinema.rec
-share-img: ../asciinema/tldr_asciinema.rec
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/asciinema.png
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/asciinema.png
 show-avatar: false
 date: 2021/4/5
 ---
