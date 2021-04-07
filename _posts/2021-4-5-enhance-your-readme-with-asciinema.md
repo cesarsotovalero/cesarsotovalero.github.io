@@ -10,6 +10,7 @@ show-avatar: false
 date: 2021/4/5
 ---
 
+
 [Asciinema](https://asciinema.org/) is an excellent tool for recording and sharing terminal sessions. 
 The project is open-source and [available on GitHub](https://github.com/asciinema/asciinema).
 A key feature of asciinema is that it allows the viewer to copy-paste the text from the player itself directly. 
@@ -42,7 +43,7 @@ asciinema play demo.cast
 
 # Insert the recording in a README
 
-Now that you have your session recorded, you can need to transform the `demo.cast` in a  `.gif` file, which can be inserted in your `README.md`.
+Now that you have your session recorded, you need to transform the `demo.cast` into a  `.gif` file, which can be inserted in your `README.md`.
 To do so, the [asciicast2gif](https://github.com/asciinema/asciicast2gif) tool comes handy. 
 It allows to generate a `.gif` files from `.cast` asciinema recordings.
 To install asciicast2gif using npm run the following command:
@@ -67,6 +68,8 @@ It can be inserted in `README.md`, just as any other image:
 {% endhighlight %}
 
 where `PATH_TO_FILE` is the path to your `demo.gif` file on GitHub.
+
+I have used this method to add a terminal screencast in the `README.md` of [DepClean](https://github.com/castor-software/depclean) (one of my tools), so that the users can easily grasp its basic usage.
 
 # Insert the recording in a website
 
