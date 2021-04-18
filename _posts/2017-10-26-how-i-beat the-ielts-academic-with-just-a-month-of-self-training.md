@@ -4,6 +4,10 @@ title: How I beat the IELTS Academic with just a month of self-training
 subtitle: Personal comments and suggestions
 published: true
 tags: self-improvement
+keywords:
+  - learn english
+  - international test
+  - language test
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/IELTS.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/IELTS.jpg
 show-avatar: false

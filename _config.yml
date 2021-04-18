@@ -7,10 +7,6 @@
 url: "http://cesarsotovalero.net"
 baseurl: ""
 
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
-
 # Name of website
 title: cesarsotovalero.net
 #title-img: https://www.cesarsotovalero.net/img/logos/my_logo.png
@@ -22,17 +18,7 @@ description: César - PhD Student
 
 # List of links in the navigation bar
 navbar-links:
-  Blog Posts: "blog"
-  Activities:
-    - Publications: "publications"
-    - Presentations: "presentations"
-    - Collaborations: "collaborations"
-    - Certifications: "certifications"
-    - Competitions: "competitions"
-    - Courses: "courses"
-    - Software: "software"
-    - Service: "service"
-
+  All Posts: "blog"
   About Me: "about-me"
 #  Search: "pages/search"
 
@@ -135,6 +121,7 @@ title-separator: ""
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
+encoding: utf-8
 timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
@@ -142,7 +129,7 @@ syntax_highlighter_opts:
   block:
     line_numbers: true
 
-permalink: /:year-:month-:day-:title/
+permalink: /blog/:title.html
 paginate: 20
 paginate_path: "/blog/page:num/"
 
@@ -235,18 +222,21 @@ prose:
           help: "Check to publish post, uncheck to hide."
 
 
-# see https://github.com/pattex/jekyll-tagging
-tag_page_layout: tag-index
-tag_page_dir: tag
+# http://jch.penibelst.de/
+compress_html:
+  clippings: [div, p, ul, td, h1, h2]
+  comments: all
 
-gems:
+gem:
   - jekyll-paginate
   - jemoji
   - jekyll-sitemap
-
-# --- Piwik Integration --- #
-plugins_dir:
-  - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-gist
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-bits
+  - jekyll-plantuml
+  - jekyll-redirect-from
+  - jekyll-bits
+  - jekyll-feed
+  - jekyll-tagging
