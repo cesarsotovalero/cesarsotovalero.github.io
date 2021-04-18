@@ -3,6 +3,9 @@ layout: post
 title:  Webhooks
 subtitle: A quick introduction
 tags: programming
+keywords:
+ - webhooks
+ - programming
 published: false
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.gif
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/backyard.gif

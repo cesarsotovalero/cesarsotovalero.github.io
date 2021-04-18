@@ -21,7 +21,7 @@ layout: null
 
 body {
   font-family: "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   position: relative;
   background: #FFF;
@@ -74,7 +74,7 @@ a:focus {
 blockquote {
   color: darkgreen;
   font-style: italic;
-  font-size: 20px;
+  font-size: 18px;
   border-left: 2px solid darkgreen;
 }
 
@@ -195,6 +195,7 @@ background-attachment: fixed;
 -webkit-transition: padding .5s ease-in-out;
 -moz-transition: padding .5s ease-in-out;
 transition: padding .5s ease-in-out;
+transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 .navbar-custom .nav li a {
@@ -370,6 +371,10 @@ transition: padding .5s ease-in-out;
   }
 }
 
+
+
+
+
 /* --- Footer --- */
 
 footer {
@@ -518,6 +523,7 @@ logo-main a:hover {
 
 .post-preview .post-entry {
   /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  font-size: 18px;
 }
 
 .post-entry-container {
@@ -696,7 +702,7 @@ logo-main a:hover {
 
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
-  font-size: 27px;
+  font-size: 24px;
   line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -750,7 +756,7 @@ logo-main a:hover {
   }
 
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 64px;
   }
 
   .intro-header .post-heading h1 {
@@ -870,6 +876,18 @@ table thead {
   padding: 0;
 }
 
+.next a {
+  text-decoration: none; !important;
+}
+
+.previous a {
+  text-decoration: none; !important;
+}
+
+.see-all a {
+  text-decoration: none; !important;
+}
+
 table tr {
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
@@ -910,7 +928,7 @@ table tr td :last-child {
 /* --- Code blocks --- */
 
 pre {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5em;
   font-family: "jetbrains_monoregular", sans-serif;
   border: none;
@@ -922,7 +940,7 @@ pre code {
 
 code {
   font-family: "jetbrains_monoregular", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   border-radius: 1px;
   text-decoration: none;
@@ -1056,7 +1074,7 @@ td.gutter {
 
 .list-filters .list-filter {
   text-decoration: none !important;
-  margin-right: 15px;
+  margin-right: 5px;
   border: 1px solid #777;
   padding: 5px 10px;
   cursor: pointer;
@@ -1168,9 +1186,10 @@ input.gsc-input,
 
 .field {
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 18px;
   padding: 4px 10px;
 }
+
 
 
 .fa-stack-overflow:hover {
@@ -1327,11 +1346,13 @@ ul {
 .quote {
   border-left: 4px solid black;
   float: right;
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 24px;
+  line-height: 24px;
   margin: 10px 0px 20px 20px;
   padding-left: 15px;
   width: 300px;
   line-height: 1.25;
 }
+
+
 

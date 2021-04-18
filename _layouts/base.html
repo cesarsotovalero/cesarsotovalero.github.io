@@ -35,87 +35,119 @@ common-js:
 {% include footer-scripts.html %}
 
 <script>
-  var typed = new Typed('.type', {
-    strings: ["Researcher", "Teacher", "Collaborator", "Writer", "Software Developer", "Software Architect", "Manager", "Data Scientist",
-      "R Programmer", "Java Programmer", "Designer", "Speaker"
-    ],
-    // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-    stringsElement: null,
-    // typing speed
-    typeSpeed: 100,
-    // time before typing starts
-    startDelay: 1200,
-    // backspacing speed
-    backSpeed: 20,
-    // time before backspacing
-    backDelay: 500,
-    // loop
-    loop: true,
-    // false = infinite
-    loopCount: 10,
-    // show cursor
-    showCursor: true,
-    // character for cursor
-    cursorChar: "|",
-    // attribute to type (null == text)
-    attr: null,
-    // either html or text
-    contentType: 'html',
-    // call when done callback function
-    callback: function () {
-    },
-    // starting callback function before each string
-    preStringTyped: function () {
-    },
-    //callback for every typed string
-    onStringTyped: function () {
-    },
-    // callback for reset
-    resetCallback: function () {
-    }
-  });
+   var typed = new Typed('.type', {
+      strings: ["Researcher", "Teacher", "Collaborator", "Writer", "Software Developer", "Software Architect", "Manager", "Data Scientist",
+         "R Programmer", "Java Programmer", "Designer", "Speaker"
+      ],
+      // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+      stringsElement: null,
+      // typing speed
+      typeSpeed: 100,
+      // time before typing starts
+      startDelay: 1200,
+      // backspacing speed
+      backSpeed: 20,
+      // time before backspacing
+      backDelay: 500,
+      // loop
+      loop: true,
+      // false = infinite
+      loopCount: 10,
+      // show cursor
+      showCursor: true,
+      // character for cursor
+      cursorChar: "|",
+      // attribute to type (null == text)
+      attr: null,
+      // either html or text
+      contentType: 'html',
+      // call when done callback function
+      callback: function () {
+      },
+      // starting callback function before each string
+      preStringTyped: function () {
+      },
+      //callback for every typed string
+      onStringTyped: function () {
+      },
+      // callback for reset
+      resetCallback: function () {
+      }
+   });
 </script>
 
+<!-- body font-size -->
 <script>
-$('body').flowtype({
-minFont   : 10,
-maxFont   : 20,
-fontRatio : 20
-});
+   $('body').flowtype({
+      minFont: 10,
+      maxFont: 16,
+      fontRatio: 2
+   });
 </script>
 
 <script>
    $('.highligher-rouge').flowtype({
-      minFont   : 12,
-      maxFont   : 30,
-      fontRatio : 30
+      minFont: 12,
+      maxFont: 30,
+      fontRatio: 30
    });
 </script>
 
 
 <script>
    $('blockquote').flowtype({
-      minFont   : 10,
-      maxFont   : 18,
-      fontRatio : 20
+      minFont: 10,
+      maxFont: 16,
+      fontRatio: 2
    });
 </script>
 
+
 <script>
    $('post-preview').flowtype({
-      minFont   : 10,
-      maxFont   : 18,
-      fontRatio : 30
+      minFont: 10,
+      maxFont: 16,
+      fontRatio: 2
    });
 </script>
 
 <script>
    $('h2').flowtype({
-      minFont   : 24,
-      maxFont   : 30,
-      fontRatio : 20
+      minFont: 24,
+      maxFont: 30,
+      fontRatio: 20
    });
 </script>
+
+<script>
+   $('h3').flowtype({
+      minFont: 18,
+      maxFont: 24,
+      fontRatio: 22
+   });
+</script>
+
+
+<script>
+   $(document).ready(function () {
+      'use strict';
+      var c, currentScrollTop = 0,
+         navbar = $('nav');
+      $(window).scroll(function () {
+         var a = $(window).scrollTop();
+         var b = navbar.height();
+         currentScrollTop = a;
+         if (c < currentScrollTop && a > b + b) {
+            navbar.addClass("scrollUp");
+         } else if (c > currentScrollTop && !(a <= b)) {
+            navbar.removeClass("scrollUp");
+         }
+         c = currentScrollTop;
+      });
+   });
+</script>
+
+
 
 </body>
 </html>
