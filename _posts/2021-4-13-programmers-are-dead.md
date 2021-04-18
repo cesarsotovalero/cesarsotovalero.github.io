@@ -3,7 +3,7 @@ layout: post
 title:  Programmers are dead
 subtitle: 
 tags: tools
-published: true
+published: false
 keywords: programmers
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/asciinema.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/asciinema.png
