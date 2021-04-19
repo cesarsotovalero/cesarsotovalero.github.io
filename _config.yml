@@ -240,3 +240,8 @@ gem:
   - jekyll-bits
   - jekyll-feed
   - jekyll-tagging
+
+plugins:
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-paginate
