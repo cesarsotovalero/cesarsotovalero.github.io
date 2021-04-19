@@ -53,11 +53,13 @@ layout: base
             {% endif %}
          </ul>
 
-         {% if page.comments %}
-         <div class="disqus-comments">
-            {% include disqus.html %}
-         </div>
-         {% endif %}
+         <br>
+
       </div>
+      {% if page.comments %}
+      <div class="disqus-comments">
+         {% include disqus.html %}
+      </div>
+      {% endif %}
    </div>
 </div>

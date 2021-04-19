@@ -234,15 +234,15 @@ transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 .navbar-custom.top-nav-short .navbar-brand-logo {
-  padding-top: 5px;
+  padding-top: 0px;
 }
 
 .navbar-custom.top-nav-short .navbar-brand-logo img {
-  height: 40px;
+  height: 0px;
 }
 
 .navbar-brand {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media only screen and (min-width: 768px) {
