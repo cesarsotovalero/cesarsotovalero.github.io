@@ -242,7 +242,7 @@ transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 .navbar-brand {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 @media only screen and (min-width: 768px) {
