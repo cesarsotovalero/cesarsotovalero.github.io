@@ -1,7 +1,3 @@
----
-layout: null
----
-
 @import url("pygment_highlights.css");
 
 
@@ -16,7 +12,6 @@ layout: null
   font-style: normal;
 }
 
-
 /* --- General --- */
 
 body {
@@ -30,7 +25,7 @@ body {
 
 p {
   line-height: 1.75;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -54,7 +49,7 @@ h2 {
 
 
 h3 {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 
@@ -64,9 +59,8 @@ a {
 
 }
 
-a:hover,
-a:focus {
-  color: darkblue;
+a:hover, a:focus {
+  color: black;
   text-decoration: underline;
 }
 
@@ -91,9 +85,7 @@ blockquote p:first-child {
   padding: 0 10px;
   text-decoration: none;
   white-space: nowrap;
-
 }
-
 
 .post-categories-tags {
   /*background-color: gray;*/
@@ -105,19 +97,9 @@ blockquote p:first-child {
   white-space: nowrap;
 }
 
-
 .h1, h1 {
   font-size: 32px;
 }
-
-
-/*.post-categories:visited {*/
-/*    color: white !important;*/
-/*}*/
-
-/*.post-categories:hover {*/
-/*    background-color: black;*/
-/*}*/
 
 hr.small {
   max-width: 100px;
@@ -185,17 +167,13 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-background-color: {{ site.navbar-col | default: "#EAEAEA" }};
-border-bottom: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-{% if site.navbar-img %}
-/*background-image: url({{ site.navbar-img | relative_url }});*/
-background-attachment: fixed;
-{% endif %}
--webkit-transition: padding .5s ease-in-out;
--moz-transition: padding .5s ease-in-out;
-transition: padding .5s ease-in-out;
-transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  background-color: #EAEAEA;
+  border-bottom: 1px solid #DDDDDD;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-transition: padding .5s ease-in-out;
+  -moz-transition: padding .5s ease-in-out;
+  transition: padding .5s ease-in-out;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 .navbar-custom .nav li a {
@@ -216,7 +194,8 @@ transition: top 0.3s; /* Transition effect when sliding down (and up) */
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: darkblue;
+  color: #fff;
+  background: #444;
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -375,9 +354,157 @@ transition: top 0.3s; /* Transition effect when sliding down (and up) */
   }
 }
 
+/* Support button in navbar */
+.navbar-custom .navbar-nav li a[href*="github.com/sponsors"],
+.author-site a {
+  color: hotpink;
+  text-decoration: none !important;
+  transition: background 300ms, color 300ms;
+}
 
+.navbar-custom .navbar-nav li a[href*="github.com/sponsors"]:hover,
+.author-site:hover a {
+  background: hotpink;
+  color: #3344bb;
+}
 
+.author-site a {
+  padding: 0.1875rem;
+}
 
+@media (min-width: 768px) {
+  .navbar-custom .navbar-nav .nav-item:not(.dropdown):last-child .nav-link {
+    padding-right: 1rem;
+  }
+}
+
+/* --- Email subscription --- */
+
+.mailchimp-subscribe-section {
+  margin-top: 1rem;
+  border-top: 0.1875rem double #fff;
+  padding-top: 1rem;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#mailchimp-subscribe-section-share,
+#mailchimp-subscribe-section-footer {
+  border-top: 0 none;
+  width: 50%;
+}
+
+#mailchimp-subscribe-section-share {
+  margin: 0.9375rem auto 0;
+}
+
+#mailchimp-subscribe-section-footer {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  #mailchimp-subscribe-section-share {
+    width: 100%;
+    margin: 0.625rem 0 0 0;
+  }
+}
+
+.mailchimp-subscribe-section .container {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.mailchimp-subscribe-section .container .row {
+  padding: 0;
+  margin: 0;
+}
+
+.mailchimp-subscribe-section .container .row .col-xs-12,
+.mailchimp-subscribe-section .container .row .col-sm-8,
+.mailchimp-subscribe-section .container .row .col-sm-4 {
+  margin: 0;
+  padding: 0 0.125rem;
+}
+
+#mailchimp-subscribe-section-share label {
+  font-size: 1rem;
+  margin-bottom: 0.4375rem;
+  font-weight: normal;
+  display: block;
+}
+
+.mailchimp-subscribe-section .email {
+  padding: 0 1rem;
+  border: 1px solid #ABB0B2;
+  color: #343434;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0.3125rem;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.mailchimp-subscribe-section .button {
+  font-weight: bold;
+  border: 1px solid #ABB0B2;
+  color: #444;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: block;
+  vertical-align: top;
+  transition: all 0.23s ease-in-out 0s;
+  margin: 0;
+  letter-spacing: 0.0625rem;
+  width: 100%;
+  border-radius: 6px;
+}
+
+#mailchimp-subscribe-section-footer #mc-embedded-subscribe-footer {
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#mailchimp-subscribe-section-share #mc-embedded-subscribe-share:hover {
+  background-color: #f8f8f8;
+  color: #444;
+  cursor: pointer;
+}
+
+#mailchimp-subscribe-section-footer #mc-embedded-subscribe-footer:hover {
+  background-color: #444;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+.mailchimp-subscribe-section .email,
+.mailchimp-subscribe-section .button {
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 980px) {
+  #mailchimp-subscribe-section-share #mc_embed_signup-share label {
+    font-size: 1.125rem;
+    margin-bottom: 0.1875rem;
+  }
+
+  .mailchimp-subscribe-section .email,
+  .mailchimp-subscribe-section .button {
+    height: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  .mailchimp-subscribe-section .email {
+    margin-bottom: 0.1875rem;
+  }
+}
 
 /* --- Footer --- */
 
@@ -386,11 +513,7 @@ footer {
   border-top: 1px #EAEAEA solid;
   margin-top: 3.125rem;
   font-size: 0.875rem;
-background-color: {{ site.footer-col | default: "#EAEAEA" }};
-{% if site.footer-img %}
-/*background-image: url({{ site.footer-img | relative_url }});*/
-background-attachment: fixed;
-{% endif %}
+  background-color: #EAEAEA;
 }
 
 footer a {
@@ -453,7 +576,7 @@ logo-main a:hover {
 }
 
 .post-preview-home {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -604,51 +727,36 @@ logo-main a:hover {
   }
 }
 
-/* --- Tags --- */
+/* Tags page */
 
-.blog-tags {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #999;
-  font-size: 15px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.blog-tags a {
-  color: #000000;
+.tag-btn {
+  margin: 0.3125rem;
+  padding: 3px 5px;
+  background: rgba(64, 64, 64, 0.75);
+  border-color: white;
   text-decoration: none;
-  padding: 0px 5px;
 }
 
-.blog-tags a:hover {
-  border-radius: 2px;
-  color: #000000;
-  background-color: #CCC;
+.tag-btn:hover {
+  background: black;
 }
 
-.post-preview .blog-tags {
-  margin-top: 5px;
-  margin-bottom: 0;
+#full-tags-list {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
-  .post-preview .blog-tags {
-    margin-top: 10px;
-  }
+#full-tags-list .tag-entry {
+  margin: 0 0 0.9375rem 1.5625rem;
 }
 
-@media only screen and (max-width: 500px) {
-  .post-image, .post-image img {
-    height: 100px;
-    width: 100px;
-  }
+#full-tags-list .tag-entry a {
+  font-size: 1.25rem;
+}
 
-  .post-image {
-    width: 100%;
-    text-align: center;
-    margin-top: 0;
-    float: left;
-  }
+#full-tags-list .tag-entry .entry-date {
+  color: #808080;
+  font-style: italic;
+  font-size: 1rem;
 }
 
 /* --- Post and page headers --- */
@@ -881,15 +989,18 @@ table thead {
 }
 
 .next a {
-  text-decoration: none; !important;
+  text-decoration: none;
+!important;
 }
 
 .previous a {
-  text-decoration: none; !important;
+  text-decoration: none;
+!important;
 }
 
 .see-all a {
-  text-decoration: none; !important;
+  text-decoration: none;
+!important;
 }
 
 table tr {
@@ -953,7 +1064,6 @@ code {
 
 code a:hover, a:focus {
   color: #000000;
-
 }
 
 pre.highlight, .highlight > pre, td.code pre {
@@ -1071,7 +1181,7 @@ td.gutter {
 .list-filters {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding-top: 10px;
   text-align: center;
 }
@@ -1170,7 +1280,6 @@ input.gsc-input,
 
 
 .google {
-@extend % desktop-only;
   height: 2.4em;
   margin-left: 1em;
   position: absolute;
@@ -1193,8 +1302,6 @@ input.gsc-input,
   font-size: 18px;
   padding: 4px 10px;
 }
-
-
 
 .fa-stack-overflow:hover {
   color: #f48024;
@@ -1278,12 +1385,13 @@ figure figcaption {
 table {
   border-collapse: collapse;
   display: block;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-bottom: 20px;
   overflow-x: auto;
   font-size: 18px;
 }
+
+/* --- Tables --- */
 
 table thead tr {
   background-color: #0f0f0f;
@@ -1319,7 +1427,7 @@ ul {
   text-align: center;
 }
 
-.my-tags  {
+.my-tags {
   padding: 4px;
 }
 
@@ -1330,7 +1438,6 @@ ul {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15px;
 }
-
 
 .tag-code:hover {
   color: #000000;

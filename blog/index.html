@@ -4,46 +4,13 @@ title: All posts
 subtitle: Research and software technology
 ---
 
-<!-- List of tags -->
 {% include archive.html %}
-
-
-<div class="list-filters">
-   <a class="list-filter general-button" href="{{site.baseurl}}/_pages/subscribe">Subscribe</a>
-</div>
+{% include subscribe.html %}
 
 <hr style="margin-bottom: 0px;">
 
 <div class="posts-list">
    {% for post in site.posts %}
-   <!-- <article class="text-left">
-     <span class="text-left">
-         <a href="{{ post.url | prepend: site.baseurl }}" class="post-title-main">
-           <h2 class="post-title-main">{{ post.title }}</h2>
-         </a>
-
-             <p class="post-meta-index">
-               Posted on {{ post.date | date: "%B %-d, %Y" }}
-             </p>
-     </span>
-       <div class="post-entry-container">
-          {% if post.image %}
-          <div class="post-image" style="height: auto; width: auto;">
-             <a href="{{ post.url | prepend: site.baseurl }}">
-                <img src="{{ post.image }}">
-             </a>
-          </div>
-          {% endif %}
-          <div class="post-entry">
-             {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }} {% assign excerpt_word_count = post.excerpt
-             | number_of_words %} {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-             <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-             {% endif %}
-          </div>
-       </div>
-    </article>-->
-
-
    <article class="post-preview">
       <span class="text-left">
      <a href="{{ post.url | prepend: site.baseurl }}">

@@ -1,9 +1,9 @@
 ---
 layout: page
+title: <i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;{{ page.tag }}
 ---
 
 <div class="post">
-<!--  <h1 class="tag-title">Tag: {{ page.tag }}</h1>-->
   <ul>
     {% for post in site.tags[page.tag] %}
     {% if post.lang %}
