@@ -1,26 +1,17 @@
-# --- General options --- #
-
-# url is the full website URL
-# baseurl is the website's URL without the hostname
-
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
 url: "http://cesarsotovalero.net"
 baseurl: ""
-
-# Name of website
 title: cesarsotovalero.net
-#title-img: https://www.cesarsotovalero.net/img/logos/my_logo.png
-
-# Short description of your site
 description: César - PhD Student
+keywords: "software engineering,research,java,developer,machine learning,software technology,phd student"
 
-# --- Navigation bar options --- #
-
-# List of links in the navigation bar
 navbar-links:
-  All Posts: "blog"
+  Blog: "blog"
+  Research: "publications"
+  Software: "software"
+  Service: "service"
+  Talks: "talks"
   About Me: "about-me"
-#  Search: "pages/search"
+
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
