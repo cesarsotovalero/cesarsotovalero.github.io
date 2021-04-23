@@ -8,32 +8,55 @@ image: ../../blog/img/debloating.png
 
 This is a living list of tools for program debloating and software specialization. 
 
-- <a href="https://github.com/castor-software/depclean"><i class="fab fa-github"></i></a> [DepClean](https://castor-software.github.io/depclean) Automatically removes unused dependencies from Java projects
+# Java
 
-- <a href="https://github.com/apache/maven-jlink-plugin"><i class="fab fa-github"></i></a> [jlink](https://www.baeldung.com/jlink) Tool to assemble and optimize a set of Java modules and their dependencies into a custom runtime image. 
+- <a href="https://github.com/castor-software/jdbl"><i class="fab fa-github"></i></a> [JDBL](https://castor-software.github.io/jdbl) Automatically removes unnecessary code from Java applications through dynamic analysis ([paper](https://arxiv.org/pdf/2008.08401.pdf)).
 
-- <a href="https://github.com/docker-slim/docker-slim"><i class="fab fa-github"></i></a> [docker-slim](https://dockersl.im/) Minify and Secure Your Docker Containers. 
+- <a href="https://github.com/castor-software/depclean"><i class="fab fa-github"></i></a> [DepClean](https://github.com/castor-software/depclean) Automatically detects and removes unused dependencies in Maven projects ([paper](https://link.springer.com/article/10.1007/s10664-020-09914-8)).
 
-- <a href="git clone https://r8.googlesource.com/r8"><i class="fab fa-github"></i></a> [R8](https://r8.googlesource.com/r8) Google substitute of Proguard.
+- <a href="https://github.com/ucla-pls/jreduce"><i class="fab fa-github"></i></a> [JReduce](https://github.com/ucla-pls/jreduce) JReduce is a tool for reducing Java class files and jar files. ([paper](https://dl.acm.org/doi/pdf/10.1145/3338906.3338956)).
+  
+- [JShrink](https://figshare.com/articles/software/JShrink_Artifact/12435542) Java shrinker ([paper](https://dl.acm.org/doi/pdf/10.1145/3368089.3409738)).
+
+- <a href="https://github.com/apache/maven-jlink-plugin"><i class="fab fa-github"></i></a> [jlink](https://www.baeldung.com/jlink) Tool to assemble and optimize a set of Java modules and their dependencies into a custom runtime image.
 
 - <a href="https://github.com/Guardsquare/proguard"><i class="fab fa-github"></i></a> [Proguard](https://www.guardsquare.com/en/products/proguard)  Shrinker, optimizer and obfuscator of Java Bytecode.
 
-- <a href="http://www.e-t.com/jshrink.html"><i class="fab fa-github"></i></a> [JShrink](http://www.e-t.com/jshrink.html)  Java shrinker and obfuscator.
+- <a href="https://github.com/uber/piranha"><i class="fab fa-github"></i></a> [Piranha](https://github.com/uber/piranha) A tool for refactoring code related to feature flag APIs  ([paper](https://dl.acm.org/doi/abs/10.1145/3377813.3381350)).
 
-- <a href="https://github.com/tedious/JShrink"><i class="fab fa-github"></i></a> [JShrink](https://github.com/tedious/JShrink) Javascript Minifier built in PHP.
+- [JShrink](http://www.e-t.com/jshrink.html) Java shrinker and obfuscator.
 
-- <a href="https://github.com/cxreet/razor"><i class="fab fa-github"></i></a> [RAZOR](https://github.com/cxreet/razor) A Framework for Post-deployment Software Debloating.
+
+# Docker
+
+- <a href="https://github.com/docker-slim/docker-slim"><i class="fab fa-github"></i></a> [docker-slim](https://dockersl.im/) Minify and Secure Your Docker Containers.
 
 - <a href="https://github.com/jon-bell/javaslicer"><i class="fab fa-github"></i></a> [JavaSlicer](https://github.com/jon-bell/javaslicer) an open-source dynamic slicing tool developed at Saarland University.
 
+# C/C++
 
-### Related tools
+- <a href="https://github.com/cxreet/razor"><i class="fab fa-github"></i></a> [RAZOR](https://github.com/cxreet/razor) A Framework for Post-deployment Software Debloating ([paper](https://www.usenix.org/system/files/sec19-qian.pdf).
+  
+- <a href="https://github.com/cxreet/Slimium"><i class="fab fa-github"></i></a> [Slimium](https://github.com/cxreet/Slimium) Debloat Chromium ([paper](https://dl.acm.org/doi/pdf/10.1145/3372297.3417866).
+
+- [Nibbler](https://gitlab.com/brown-ssl/libfilter) Static analysis tool to automatically find functions in the program and its shared library functions that are not used by the program. ([paper](https://dl.acm.org/doi/pdf/10.1145/3414997)).
+
+
+# JavaScript
+
+- <a href="https://github.com/moar82/jMetalPy"><i class="fab fa-github"></i></a> [MoMIT](https://github.com/moar82/jMetalPy) JavaScript interpreter minimizer ([paper](https://ieeexplore.ieee.org/document/8966499)).
+
+- <a href="https://github.com/hcvazquez/UFFRemover"><i class="fab fa-github"></i></a> [UFFRemover](https://github.com/hcvazquez/UFFRemover) slimming JavaScript tool for identifying and removing unused foreign functions (UFF) ([paper]()).
+
+- <a href="https://r8.googlesource.com/r8"><i class="fab fa-github"></i></a> [R8](https://r8.googlesource.com/r8) Google substitute of Proguard.
+
+- <a href="https://github.com/tedious/JShrink"><i class="fab fa-github"></i></a> [JShrink](https://github.com/tedious/JShrink) Javascript Minifier built in PHP.
+
+# Related tools
 
 - <a href="https://github.com/iovisor/bpftrace"><i class="fab fa-github"></i></a> [bpftrace](https://github.com/iovisor/bpftrace)  High-level tracing language for Linux eBPF.
 
 - <a href="https://github.com/strace/strace"><i class="fab fa-github"></i></a> [STrace](https://strace.io/)  A diagnostic, debugging and instructional userspace utility for Linux.
-
-- <a href="http://www.brendangregg.com/dtrace.html"><i class="fab fa-github"></i></a> [DTrace](http://dtrace.org/guide/preface.html#preface) A comprehensive dynamic tracing framework
 
 - <a href="https://github.com/dkarv/jdcallgraph"><i class="fab fa-github"></i></a> [JDCallgraph](https://github.com/dkarv/jdcallgraph) Dynamic call graph generation for Java. 
 
@@ -50,3 +73,5 @@ This is a living list of tools for program debloating and software specializatio
 - <a href="https://github.com/jon-bell/maven-lifecycle-logger"><i class="fab fa-github"></i></a> [maven-lifecycle-logger](https://github.com/jon-bell/maven-lifecycle-logger) Logger to record maven lifecycle events and timing.
 
 - <a href="https://github.com/mihaip/dex-method-counts"><i class="fab fa-github"></i></a> [dex-method-counts](https://github.com/mihaip/dex-method-counts) Command-line tool to count per-package methods in Android .dex files.
+  
+- [DTrace](http://dtrace.org/guide/preface.html#preface) A comprehensive dynamic tracing framework
