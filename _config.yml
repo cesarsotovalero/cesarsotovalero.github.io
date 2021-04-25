@@ -224,8 +224,6 @@ gem:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-bits
   - jekyll-plantuml
   - jekyll-redirect-from
   - jekyll-bits

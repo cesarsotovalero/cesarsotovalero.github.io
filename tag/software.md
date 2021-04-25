@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: software"
+title: <i class="fas fa-tag" aria-hidden="true"></i> software
 tag: software
 robots: noindex
 ---

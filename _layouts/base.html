@@ -137,26 +137,26 @@ common-js:
 </script>
 
 
+<!---->
 <script>
-   $(document).ready(function () {
-      'use strict';
-      var c, currentScrollTop = 0,
-         navbar = $('nav');
-      $(window).scroll(function () {
-         var a = $(window).scrollTop();
-         var b = navbar.height();
-         currentScrollTop = a;
-         if (c < currentScrollTop && a > b + b) {
-            navbar.addClass("scrollUp");
-         } else if (c > currentScrollTop && !(a <= b)) {
-            navbar.removeClass("scrollUp");
+   var prevScrollpos = window.pageYOffset;
+   window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      var elems = document.getElementsByClassName('navbar-fixed-top');
+      if (prevScrollpos > currentScrollPos) {
+         for (var i = 0; i < elems.length; i++) {
+            elems[i].style.transition = "top 0.3s";
+            elems[i].style.top = "0";
          }
-         c = currentScrollTop;
-      });
-   });
+      } else {
+         for (var i = 0; i < elems.length; i++) {
+            elems[i].style.transition = "top 0.3s";
+            elems[i].style.top = "-70px";
+         }
+      }
+      prevScrollpos = currentScrollPos;
+   }
 </script>
-
-
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: debloat"
+title: <i class="fas fa-tag" aria-hidden="true"></i> debloat
 tag: debloat
 robots: noindex
 ---
