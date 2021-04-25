@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: programming"
+title: <i class="fas fa-tag" aria-hidden="true"></i> programming
 tag: programming
 robots: noindex
 ---

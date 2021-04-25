@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: tools"
+title: <i class="fas fa-tag" aria-hidden="true"></i> tools
 tag: tools
 robots: noindex
 ---

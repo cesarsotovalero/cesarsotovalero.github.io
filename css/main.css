@@ -224,6 +224,11 @@ img {
   font-size: 15px;
 }
 
+.navbar-fixed-top.navbar-custom {
+  transition: top 1.5s ease-in-out; /* Transition effect when sliding down (and up) */
+}
+
+
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     padding: 10px 0;
@@ -234,6 +239,7 @@ img {
 
   .navbar-custom.top-nav-short {
     padding: 0;
+    transition: top 0.5s;
   }
 }
 
@@ -446,7 +452,7 @@ img {
   vertical-align: top;
   margin: 0 0 0.3125rem;
   width: 100%;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
 }
 
 .mailchimp-subscribe-section .button {

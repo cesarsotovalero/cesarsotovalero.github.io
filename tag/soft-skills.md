@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: soft-skills"
+title: <i class="fas fa-tag" aria-hidden="true"></i> soft-skills
 tag: soft-skills
 robots: noindex
 ---

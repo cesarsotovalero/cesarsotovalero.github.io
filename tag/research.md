@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: research"
+title: <i class="fas fa-tag" aria-hidden="true"></i> research
 tag: research
 robots: noindex
 ---
