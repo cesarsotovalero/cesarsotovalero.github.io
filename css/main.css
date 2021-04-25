@@ -224,7 +224,7 @@ img {
   font-size: 15px;
 }
 
-.navbar-fixed-top.navbar-custom {
+.navbar.navbar-default.navbar-fixed-top.navbar-custom {
   transition: top 1.5s ease-in-out; /* Transition effect when sliding down (and up) */
 }
 
