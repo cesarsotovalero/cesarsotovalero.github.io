@@ -5,7 +5,8 @@ title: About me
 subtitle: In brief
 ---
 <div style="border-bottom: 1px solid #eee;">
-  <h3 style="text-align: center; font-family:courier, courier new, serif; padding-bottom: 35px;"><span class="type"></span></h3>
+  <h3 style="text-align: center; font-family:courier, courier new, serif; padding-bottom: 35px;">
+<span class="type"></span></h3>
 </div>
 
 <!--
