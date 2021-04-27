@@ -2,14 +2,13 @@
 layout: post
 title:  Enhance your README with asciinema
 subtitle: How to create beautiful terminal recordings that your users will love
-tags: tools
+tags: tools tutorial
 published: true
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/asciinema.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/asciinema.png
 show-avatar: false
 date: 2021/4/5
 ---
-
 
 [Asciinema](https://asciinema.org/) is an excellent tool for recording and sharing terminal sessions. 
 The project is open-source and [available on GitHub](https://github.com/asciinema/asciinema).

@@ -131,13 +131,13 @@ hr.small {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #444;
 }
 
 ::selection {
   color: white;
   text-shadow: none;
-  background: cornflowerblue;
+  background: #444;
 }
 
 img::selection {
@@ -748,7 +748,7 @@ logo-main a:hover {
 }
 
 #full-tags-list {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Cambria", "Georgia", "Times New Roman", serif;
 }
 
 #full-tags-list .tag-entry {
@@ -756,13 +756,12 @@ logo-main a:hover {
 }
 
 #full-tags-list .tag-entry a {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 #full-tags-list .tag-entry .entry-date {
   color: #808080;
-  font-style: italic;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 /* --- Post and page headers --- */

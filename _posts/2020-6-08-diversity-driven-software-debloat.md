@@ -2,7 +2,7 @@
 layout: post
 title:  Diversity-driven software debloat
 subtitle: Leveraging the wisdom of multiple coverage tools
-tags: debloat
+tags: debloat popular
 published: true
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/crowd.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/crowd.jpg

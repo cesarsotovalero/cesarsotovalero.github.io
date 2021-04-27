@@ -13,7 +13,6 @@ common-js:
 - "/js/jquery-1.11.2.min.js"
 - "/js/bootstrap.min.js"
 - "/js/main.js"
-- "/js/typed.js"
 - "/js/flowtype.js"
 - "/js/scroll-to-top.js"
 ---
@@ -33,6 +32,8 @@ common-js:
 {% include footer.html %}
 
 {% include footer-scripts.html %}
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <script>
    var typed = new Typed('.type', {
@@ -85,7 +86,6 @@ common-js:
    });
 </script>
 
-<!-- body font-size -->
 <script>
    $('table').flowtype({
       minFont: 10,
@@ -95,22 +95,20 @@ common-js:
 </script>
 
 <script>
-   $('.highligher-rouge').flowtype({
-      minFont: 12,
-      maxFont: 30,
-      fontRatio: 30
-   });
-</script>
-
-
-<script>
    $('blockquote').flowtype({
-      minFont: 10,
+      minFont: 8,
       maxFont: 16,
       fontRatio: 2
    });
 </script>
 
+<script>
+$('.highligher-rouge').flowtype({
+minFont: 12,
+maxFont: 30,
+fontRatio: 30
+});
+</script>
 
 <script>
    $('post-preview').flowtype({
@@ -137,7 +135,6 @@ common-js:
 </script>
 
 
-<!---->
 <script>
    var prevScrollpos = window.pageYOffset;
    window.onscroll = function () {
@@ -145,7 +142,7 @@ common-js:
       var elems = document.getElementsByClassName('navbar-fixed-top');
       if (prevScrollpos > currentScrollPos) {
          for (var i = 0; i < elems.length; i++) {
-            elems[i].style.transition = "top 1.5s ease-in-out";
+            elems[i].style.transition = "top 0.5s ease-in-out";
             elems[i].style.top = "0";
          }
       } else {
