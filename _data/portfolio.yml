@@ -1,0 +1,16 @@
+- title: JDBL
+  description: JDBL automatically removes unnecessary code from Java applications through dynamic analysis.
+  img: JDBL_logo.svg
+  url: https://github.com/castor-software/jdbl
+- title: DepClean
+  description: DepClean automatically detects and removes unused dependencies in Maven projects.
+  img: DepClean_logo.svg
+  url: https://github.com/castor-software/depclean
+- title: TS-Classification
+  description: A package for performing time series classification in Weka.
+  img: TS-Classification_logo.svg
+  url: https://github.com/cesarsotovalero/time-series-classification
+- title: DepAnalyzer
+  description: DepAnalyzer is a tool to collect the classes and methods used by a Java application
+  img: DepAnalyzer_logo.svg
+  url: https://github.com/castor-software/dep-analyzer

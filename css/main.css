@@ -691,24 +691,6 @@ logo-main a:hover {
   margin: 10px;
 }
 
-.software-logo {
-  float: right;
-  /*height: 130px;*/
-  /*width: 130px;*/
-  margin-top: -35px;
-  filter: grayscale(100%);
-}
-
-.software-logo:hover {
-  filter: grayscale(0%);
-}
-
-.software-logo img {
-  padding-top: 25px;
-  margin: 10px;
-}
-
-
 .post-preview .post-read-more {
   /*font-weight: 800;*/
   color: black;
@@ -730,6 +712,79 @@ logo-main a:hover {
 @media only screen and (min-width: 768px) {
   .post-preview .post-title {
     font-size: 38px;
+  }
+}
+
+/* Software page */
+
+
+#portfolio {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#tiles-big .tile {
+  display: inline-block;
+  vertical-align: top;
+  width: 32rem;
+  color: #3d3852;
+  margin: 0 1.125rem 2.5rem;
+  background: #fff;
+  transition: all 250ms;
+  text-align: left;
+  box-shadow: 0 0 1.25rem #ccc;
+  border: 1px solid #eee;
+  filter: grayscale(100%);}
+
+#tiles-big .tile:hover {
+  box-shadow: 0 0 1.25rem #666;
+  background: #f2f6f9;
+  border-color: #aaa;
+  transform: translateY(-10px);
+  filter: grayscale(0%);
+}
+
+#tiles-big .tile .apptitle {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 0.625rem 0.9375rem;
+}
+#tiles-big .tile .appimg {
+  width: 30%;
+  height: 30%;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
+#tiles-big .applink {
+  color: inherit;
+  display: block;
+  text-decoration: none !important;
+}
+#tiles-big .tile .appdesc {
+  padding: 0 0.9375rem 0.9375rem;
+  line-height: 1.5em;
+}
+
+@media only screen and (max-width: 1899px) {
+  #tiles-big .tile {
+    width: 20rem;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #tiles-big .tile {
+    width: 20rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #tiles-big {
+    padding: 0 1rem;
+  }
+  #tiles-big .tile {
+    display: block;
+    margin: 1.75rem auto;
+    max-width: 100%;
   }
 }
 
