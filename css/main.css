@@ -726,7 +726,7 @@ logo-main a:hover {
 #tiles-big .tile {
   display: inline-block;
   vertical-align: top;
-  width: 32rem;
+  width: 33rem;
   color: #3d3852;
   margin: 0 1.125rem 2.5rem;
   background: #fff;
@@ -749,6 +749,7 @@ logo-main a:hover {
   font-size: 24px;
   padding: 0.625rem 0.9375rem;
 }
+
 #tiles-big .tile .appimg {
   width: 30%;
   height: 30%;
@@ -767,14 +768,24 @@ logo-main a:hover {
   line-height: 1.5em;
 }
 
+#tiles-big .tile .gh-stats {
+  padding-top: 0;
+  padding-bottom: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+#tiles-big .tile .gh-stats .gh-stat {
+  padding-right: 0.75rem;
+}
+
 @media only screen and (max-width: 1899px) {
   #tiles-big .tile {
-    width: 20rem;
+    width: 33rem;
   }
 }
 @media only screen and (max-width: 999px) {
   #tiles-big .tile {
-    width: 20rem;
+    width: 33rem;
   }
 }
 @media only screen and (max-width: 750px) {

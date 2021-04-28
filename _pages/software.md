@@ -1,8 +1,8 @@
 ---
-permalink: software.html
-layout: page
-title: Software
-subtitle: Open-source contributions
+permalink: software.html 
+layout: page 
+title: Software 
+subtitle: Open-source contributions 
 published: true
 ---
 
@@ -13,7 +13,7 @@ published: true
 
 I develop robust software prototypes to support my research. I also contribute to open-source projects. Unless otherwise specified on the project page, all of my software projects are released under an MIT license. Below is a listing of those projects:
 
-# Author
+# Open source projects
 
   <div id="portfolio">
     <div id="tiles-big">
@@ -21,7 +21,11 @@ I develop robust software prototypes to support my research. I also contribute t
 	    <div class="tile">
           <a class="applink" href="{{ app.url }}">
             <img class="appimg" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/{{ app.img }}" />
-            <div class="apptitle"><i class="fab fa-github"></i> {{ app.title }}</div>
+            <div class="apptitle">{{ app.title }}</div>
+            <div class="gh-stats">
+                <img class="gh-stat" src="//img.shields.io/github/stars/{{ app.stars }}" alt="GitHub stars">
+                <img class="gh-stat" src="//img.shields.io/github/forks/{{ app.stars }}" alt="GitHub stars">
+            </div>
             <div class="appdesc">{{ app.description }}</div>
           </a>
         </div>
