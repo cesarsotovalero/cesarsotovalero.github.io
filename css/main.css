@@ -734,7 +734,9 @@ logo-main a:hover {
   text-align: left;
   box-shadow: 0 0 1.25rem #ccc;
   border: 1px solid #eee;
-  filter: grayscale(100%);}
+  filter: grayscale(100%);
+  border-radius: 6px;
+}
 
 #tiles-big .tile:hover {
   box-shadow: 0 0 1.25rem #666;
