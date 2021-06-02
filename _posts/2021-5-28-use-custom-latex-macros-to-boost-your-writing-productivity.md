@@ -23,7 +23,7 @@ Let me show you how it works!
     alt="A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)"
     longdesc="#c13e1390" />
     <figcaption class="stroke">
-    &#169; A snail crawling in Djurgården, Stockholm
+    &#169; A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)
     </figcaption>
 </figure>
 
