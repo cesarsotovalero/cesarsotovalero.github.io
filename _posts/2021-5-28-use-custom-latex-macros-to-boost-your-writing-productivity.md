@@ -51,7 +51,7 @@ Note that you need to use `\@\xspace` to indicate that a white space follows the
 
 # Inserting author notes
 
-I often find very useful defining the `\cesar`, `\todo`, and `\todoCite` commands in all my documents to create quick author notes and remarks in my documents.  The following code defines these commands, which are very useful when inserting notes (e.g., `\cesar{refine this sentence}`): 
+I often find very useful defining the `\cesar` and `\todo` commands in all my documents to create quick author notes and remarks in my documents.  The following code defines these commands, which are very useful when inserting notes (e.g., `\cesar{refine this sentence}`): 
 
 {% highlight latex linenos %}
 % Load required packages
@@ -94,6 +94,7 @@ I often find very useful defining the `\cesar`, `\todo`, and `\todoCite` command
 {% endraw %}
 {% endhighlight %}
 
+For example, the `\cesar{An author note}` produces <img src="../img/posts/authornote.png" height="18" border="0" alt="Comand">, whereas `\todo{A todo note}` produces <img src="../img/posts/todonote.png" height="18" border="0" alt="Comand">.
 
 # Formatting numbers
 
