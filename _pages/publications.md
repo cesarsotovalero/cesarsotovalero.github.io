@@ -19,15 +19,13 @@ As a researcher, I write academic papers for journals and conferences. My work c
 
 - <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> **César Soto-Valero**, Thomas Durieux, Benoit Baudry. [A Longitudinal Analysis of Bloated Java Dependencies](https://arxiv.org/pdf/2105.14226.pdf). In _Proceeding of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)_, Athens, Greece, 2021. DOI: XXXXX. 
 
-
-- <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> Thomas Durieux, **César Soto-Valero**, Benoit Baudry. [DUETS: A Dataset of Reproducible Pairs of Java Library-Clients](https://arxiv.org/pdf/2103.09672.pdf). In _18th International Conference on Mining Software Repositories (MSR)_, Madrid, Spain, 2021. DOI: 10.1109/MSR52588.2021.00071. 
+- <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px">  <img alt="" title="Data Showcase Award" src="../../img/award.png" height="30px"> Thomas Durieux, **César Soto-Valero**, Benoit Baudry. [DUETS: A Dataset of Reproducible Pairs of Java Library-Clients](https://arxiv.org/pdf/2103.09672.pdf). In _18th International Conference on Mining Software Repositories (MSR)_, Madrid, Spain, 2021. DOI: 10.1109/MSR52588.2021.00071. 
 
 - <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Gustaf Halvardsson, Johanna Peterson, **César Soto-Valero**, Benoit Baudry. [Interpretation of Swedish Sign Language using Convolutional Neural Networks and Transfer Learning](https://doi.org/10.1007/s42979-021-00612-w). In _SN Computer Science_. DOI: 10.1007/s42979-021-00612-w.
 
 - <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**, Nicolas Harrand, Martin Monperrus, Benoit Baudry. [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://link.springer.com/article/10.1007/s10664-020-09914-8). In _Empirical Software Engineering_. DOI: 10.1007/s10664-020-09914-8. <a href="https://medium.com/@almyre/how-much-third-party-java-dependencies-do-you-really-need-45650180367a"><i class="fab fa-medium"></i></a>.
 
 # 2020
-
 
 - <img alt="" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> **César Soto-Valero**, Thomas Durieux, Nicolas Harrand, Benoit Baudry. [Trace-based Debloat for Java Bytecode](https://arxiv.org/abs/2008.08401). In _arXiv_.
 
