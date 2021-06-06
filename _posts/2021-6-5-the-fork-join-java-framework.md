@@ -19,10 +19,10 @@ This post introduces the key aspects of this framework from a practical perspect
 
 <figure class="jb_picture">
     <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree.jpeg" 
-    alt="A decorated tree illuminating the night in Stockholm (not a three of threads)"
+    alt="A decorated tree illuminating the night in Stockholm (not a tree of threads)"
     longdesc="#c13e1390" />
     <figcaption class="stroke">
-    &#169; A decorated tree illuminating the night in Stockholm (not a three of threads)
+    &#169; A decorated tree illuminating the night in Stockholm (it's not a tree of threads)
     </figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ To achieve parallelism, the Java application must have more than one thread runn
 # The Fork/Join framework
 
 The Fork/Join framework provides a set of APIs that facilitate Java programmers to efficiently solve a parallelizable task in a recursive manner.
-This method is also known as the "divide and conquer" strategy. 
+This method is actually a parallel version of the "divide and conquer" algorithm. 
 With this approach, the problem is split into smaller independent parts, which in turn, the small part is split further until each part can be solved directly (this is called **fork**). 
 Then, all parts are executed and solved in parallel. 
 Once completed, all the results are **joined** together to produce the final result.
@@ -54,17 +54,20 @@ else
   compose the result from sub-results
 {% endhighlight %}
 
-There are only four classes that you need to know to use the framework:
+You need to know about four classes to use the framework:
 
 - `ForkJoinPool`: An executor dedicated to run instances implementing `ForkJoinTask<V>`. Implements the _Work Stealing Algorithm_ to balance the load among threads: if a worker thread runs out of things to do, it can steal tasks from other threads that are still busy.
 - `ForkJoinTask<V>`: An abstract class that defines a task that runs within a `ForkJoinPool`.
 - `RecursiveAction`:  A `ForkJoinTask` subclass for tasks that don’t return values.
 - `RecursiveTask<V>`: A `ForkJoinTask` subclass for tasks that return values.
 
-In practice, all you need to do is extend either `RecursiveAction` or `RecursiveTask<V>`, and override the abstract method `compute()`. Then,  submit the task to be executed by the `ForkJoinPool`,  which handles everything from threads management to utilization of multicore processor. Note that `RecursiveAction` do not return anything, while the `RecursiveTask<V>` can return object of specified type. If you want to look deeper, here is the class diagram of this architecture.
+In practice, all you need to do is create a subclass of `RecursiveAction` or `RecursiveTask<V>`, and override the abstract method `compute()`. Then,  submit the task to be executed by the `ForkJoinPool`,  which handles everything from threads management to utilization of multicore processor. Note that `RecursiveAction` do not return anything, while the `RecursiveTask<V>` can return object of specified type. 
+
+If you are curious, here is the class diagram for this architecture.
+As you observe, the `ForkJoinPool` class is an implementation of the `AbstractExecutorService` class which implements `ExecutorService`, while the `ForkJoinTask<V>` abstract class implements the `Future<V>` interface.
 
 <figure class="jb_picture">
-    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net//img/posts/fork_join_classes.png" height="500px" align="center"
+    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/fork_join_classes.png" height="500px" align="center"
     alt="Fork/Join Class Diagram"
     longdesc="#c13e1390" />
 </figure>
@@ -124,7 +127,9 @@ public class ForkJoinReplaceAction extends RecursiveAction {
 }
 {% endhighlight %}
 
-To execute the `ForkJoinReplaceAction`, create an instance of `ForkJoinPool` and use the `invoke()` method. The following code prints `1 2 -1 -1 -1 4 5 6 6 7`, because each entry of the value `3` is replaced by `-1` in the array:
+To execute the `ForkJoinReplaceAction`, create an instance of `ForkJoinPool` and use the `invoke()` method. 
+By using its default construction, you allow the pool to use all the processors available to the JVM (the value returned by `Runtime.availableProcessors`).
+The following code prints `1 2 -1 -1 -1 4 5 6 6 7`, because each entry of the value `3` is replaced by `-1` in the array:
 
 {% highlight java linenos %}
 ForkJoinPool pool = new ForkJoinPool();
