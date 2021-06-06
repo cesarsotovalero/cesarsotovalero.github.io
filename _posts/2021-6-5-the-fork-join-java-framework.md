@@ -1,28 +1,24 @@
 ---
 layout: post
 title:  The Fork/Join Java framework
-subtitle:  Improving performance through parallel execution 
+subtitle: Boosting performance through parallelization 
 tags: programming
 published: true
 keywords: recursion
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree.jpg
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree.jpeg
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree.jpeg
 show-avatar: false
 date: 2021/6/5
 ---
 
-The [Fork/Join](https://docs.oracle.com/javase/tutorial/essential/concurrency/forkjoin.html) framework make it easy for Java programmers to take advantage of parallel execution supported by multicore processors.
-This API was added to the `java.util.concurrent` package since JDK 7, and it has been improved in subsequent version of the JDK.
-It allows the user to forget about the heavy-duty tasks associated with the manual handling of threads.
-With Fork/Join, threads are created and managed automatically, while taking advantage of the computational power or multiple processors to provide a performance boost. 
-This post introduces the key aspects of this framework from a practical perspective.  
+The [Fork/Join](https://docs.oracle.com/javase/tutorial/essential/concurrency/forkjoin.html) framework makes it easy for Java developers to take advantage of the parallel execution supported by multicore processors. This API was added to the java.util.concurrent package since JDK 7, and it has been improved in subsequent versions of the JDK. It allows the developer to forget about the heavy-duty tasks associated with the manual handling of threads. This way, threads are created and managed automatically while taking advantage of the computational power or multiple processors to boost performance. This post introduces the key aspects of this framework from a practical perspective
 
 <figure class="jb_picture">
     <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree.jpeg" 
     alt="A decorated tree illuminating the night in Stockholm (not a tree of threads)"
     longdesc="#c13e1390" />
     <figcaption class="stroke">
-    &#169; A decorated tree illuminating the night in Stockholm (it's not a tree of threads)
+    &#169; A decorated tree illuminating the night in Stockholm (isn't a tree of threads)
     </figcaption>
 </figure>
 
@@ -37,7 +33,7 @@ To achieve parallelism, the Java application must have more than one thread runn
 
 # The Fork/Join framework
 
-The Fork/Join framework provides a set of APIs that facilitate Java programmers to efficiently solve a parallelizable task in a recursive manner.
+The Fork/Join framework provides APIs that facilitate Java developers to solve a parallelizable task in a recursive manner efficiently.
 This method is actually a parallel version of the "divide and conquer" algorithm. 
 With this approach, the problem is split into smaller independent parts, which in turn, the small part is split further until each part can be solved directly (this is called **fork**). 
 Then, all parts are executed and solved in parallel. 
@@ -61,7 +57,8 @@ You need to know about four classes to use the framework:
 - `RecursiveAction`:  A `ForkJoinTask` subclass for tasks that don’t return values.
 - `RecursiveTask<V>`: A `ForkJoinTask` subclass for tasks that return values.
 
-In practice, all you need to do is create a subclass of `RecursiveAction` or `RecursiveTask<V>`, and override the abstract method `compute()`. Then,  submit the task to be executed by the `ForkJoinPool`,  which handles everything from threads management to utilization of multicore processor. Note that `RecursiveAction` do not return anything, while the `RecursiveTask<V>` can return object of specified type. 
+In practice, all you need to do is create a subclass of `RecursiveAction` or `RecursiveTask<V>`, and override the abstract method `compute()`. Then,  submit the task to be executed by the `ForkJoinPool`, which handles everything from threads management to utilization of multicore processor. Note that `RecursiveAction` do not return anything, while the `RecursiveTask<V>` can return an object of a specified type.
+
 
 If you are curious, here is the class diagram for this architecture.
 As you observe, the `ForkJoinPool` class is an implementation of the `AbstractExecutorService` class which implements `ExecutorService`, while the `ForkJoinTask<V>` abstract class implements the `Future<V>` interface.
@@ -74,7 +71,7 @@ As you observe, the `ForkJoinPool` class is an implementation of the `AbstractEx
 
 # Examples
 
-Let's consider two illustrative examples to illustrate how you can use the Fork/Join framework.  
+Let's see two examples that illustrate how you can use the Fork/Join framework.  
 
 #### RecursiveAction
 
@@ -85,7 +82,7 @@ This task is suitable for implementing in parallel because the array can be spli
 The following `ForkJoinReplaceAction` class extends the `RecursiveAction` class to solve this problem. 
 The `void` method `compute()` in charge of the performing the tasks in parallel.
 It calls the `process()` method that replaces the element in the array when the split part is smaller than the specified `THRESHOLD`. 
-Otherwise, it calls the static `invokeAll` method in the `ForkJoinTask` class with a list of instances of the `ForkJoinReplaceAction` in which the array is divided in a half.
+Otherwise, it calls the static `invokeAll` method in the `ForkJoinTask` class with a list of instances of the `ForkJoinReplaceAction` in which the array is divided in half.
 
 {% highlight java linenos %}
 public class ForkJoinReplaceAction extends RecursiveAction {
@@ -128,7 +125,7 @@ public class ForkJoinReplaceAction extends RecursiveAction {
 {% endhighlight %}
 
 To execute the `ForkJoinReplaceAction`, create an instance of `ForkJoinPool` and use the `invoke()` method. 
-By using its default construction, you allow the pool to use all the processors available to the JVM (the value returned by `Runtime.availableProcessors`).
+By using its default constructor, you configure the pool to use all the processors available to the JVM (i.e., the value returned by `Runtime.availableProcessors`).
 The following code prints `1 2 -1 -1 -1 4 5 6 6 7`, because each entry of the value `3` is replaced by `-1` in the array:
 
 {% highlight java linenos %}
@@ -201,8 +198,14 @@ System.out.println(pool.invoke(new ForkJoinCountTask(3, arr, 2, 0, arr.length)))
 
 # Conclusion
 
-The Fork/Join framework simplify parallel programming for Java programmers.
-The `ForkJoinPool` allows executing `ForkJoinTask`s in a small number of actual threads, with each thread running on a separate processing core
+The Fork/Join framework simplifies parallel programming for Java developers. The `ForkJoinPool` allows executing `ForkJoinTask`s threads running on a separate processing core, where threads that finish early can steal tasks from other threads that are still busy. It’s worth mentioning that debugging parallel implementations can be tricky. You never take for granted that a computation using the Fork/Join framework is faster than a sequential variant. For this reason, you should always measure and compare the performance empirically. Furthermore, it would be best to experimentally choose the threshold used to split the task into smaller subtasks.
+
+# References
+
+- [ForkJoinPool](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html)
+- [ForkJoinTask](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html)
+- [RecursiveAction](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RecursiveAction.html)
+- [RecursiveTask](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RecursiveTask.html)
 
 
 
