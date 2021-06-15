@@ -52,7 +52,7 @@ published: true
 
 - [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), 2017
 
-# Sub-reviewer
+# Co-reviewer
 
 - [ACM Digital Threats: Research and Practice](https://dl.acm.org/journal/dtrap) 
 

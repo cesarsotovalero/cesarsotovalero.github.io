@@ -145,7 +145,7 @@ The class `ForkJoinCountTask` extends the `RecursiveTask<Integer>` class to solv
 The `compute()` return the solution.
 If the split part is smaller than the specified `THRESHOLD`, it calls the `process()` method that counts the number of times the element is present in the smaller array (the array is divided in a half each time).
 Otherwise, it calls the static `invokeAll` method in the `ForkJoinTask` class with a list of instances of the `ForkJoinCountTask`, obtained from the `createSubTasks()` method. 
-Note that the result joined together and summed using the Java Streams API. 
+Note that the result joined together and summed using the Java Stream API. 
 
 {% highlight java linenos %}
 public class ForkJoinCountTask extends RecursiveTask<Integer> {
