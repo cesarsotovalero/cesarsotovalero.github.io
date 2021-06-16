@@ -1486,6 +1486,10 @@ table tbody tr.active-row {
   margin-bottom: 25px;
 }
 
+.jb_picture img {
+  border-radius: 0.5rem;
+}
+
 ol {
   margin-bottom: 20px;
 }
