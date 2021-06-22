@@ -1435,7 +1435,11 @@ input.gsc-input,
 
 figure {
   margin: 0;
-  position: relative
+  position: relative;
+}
+
+.stroke {
+  -webkit-text-stroke: 0.01rem black;
 }
 
 figure figcaption {
@@ -1446,14 +1450,10 @@ figure figcaption {
   line-height: 1em;
   max-width: 90%;
   position: absolute;
-  text-shadow: .2px .2px dimgray;
   font-family: "Cambria", "Georgia", "Times New Roman", serif;
-
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
-.stroke {
-  -webkit-text-stroke: .1px black;
-}
 
 table {
   border-collapse: collapse;
@@ -1541,6 +1541,9 @@ ul {
   width: 300px;
   line-height: 1.25;
 }
+
+
+
 
 
 
