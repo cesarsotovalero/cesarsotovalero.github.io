@@ -225,9 +225,9 @@ img, video, svg {
 }
 
 [class*="grid-gap"] {
-  margin-bottom: 1em *-1;
+  /*margin-bottom: 1em *-1;*/
   margin-bottom: calc(var(--grid-gap, 1em) * -1);
-  margin-right: 1em *-1;
+  /*margin-right: 1em *-1;*/
   margin-right: calc(var(--grid-gap, 1em) * -1)
 }
 
@@ -3473,7 +3473,7 @@ mark {
   border-color: var(--color-primary);
   --color-shadow: hsla(220, 90%, 56%, 0.2);
   --color-shadow: hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.2);
-  box-shadow: undefined;
+  /*box-shadow: undefined;*/
   box-shadow: 0 0 0 3px var(--color-shadow)
 }
 
@@ -3490,7 +3490,7 @@ mark {
 .form-control[aria-invalid="true"]:focus {
   --color-shadow: hsla(355, 90%, 61%, 0.2);
   --color-shadow: hsla(var(--color-error-h), var(--color-error-s), var(--color-error-l), 0.2);
-  box-shadow: undefined;
+  /*box-shadow: undefined;*/
   box-shadow: 0 0 0 3px var(--color-shadow)
 }
 
