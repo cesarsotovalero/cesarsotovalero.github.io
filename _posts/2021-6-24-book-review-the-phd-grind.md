@@ -8,7 +8,7 @@ keywords:
   - research
   - Ph.D.
   - book
-image: ../img/posts/phd._grind_cover.png
+image: ../img/posts/phd_grind_cover.png
 share-img: ../img/posts/phd_grind_cover.png
 show-avatar: false
 date: 2021/6/24
