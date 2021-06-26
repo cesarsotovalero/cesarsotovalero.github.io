@@ -765,6 +765,7 @@ logo-main a:hover {
   display: block;
   text-decoration: none !important;
 }
+
 #tiles-big .tile .appdesc {
   padding: 0 0.9375rem 0.9375rem;
   line-height: 1.5em;
@@ -785,15 +786,18 @@ logo-main a:hover {
     width: 33rem;
   }
 }
+
 @media only screen and (max-width: 999px) {
   #tiles-big .tile {
     width: 33rem;
   }
 }
+
 @media only screen and (max-width: 750px) {
   #tiles-big {
     padding: 0 1rem;
   }
+
   #tiles-big .tile {
     display: block;
     margin: 1.75rem auto;
@@ -1483,12 +1487,14 @@ table tbody tr.active-row {
 
 
 .jb_picture {
-  margin-bottom: 25px;
+  display: grid;
+  margin: 0 0 25px 0;
 }
 
 .jb_picture img {
   border-radius: 0.5rem;
 }
+
 
 ol {
   margin-bottom: 20px;
