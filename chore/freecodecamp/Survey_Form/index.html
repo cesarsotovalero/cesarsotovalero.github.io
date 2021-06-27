@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Survey Form</title>
+   <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+
+<form action="" id="survey-form">
+   <div>
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your Name" required="">
+   </div>
+   <div>
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your Email" required>
+   </div>
+   <div>
+      <label id="number-label" for="number">Age</label>
+      <input type="number" id="number" min="1" max="100" placeholder="Enter your Age">
+   </div>
+   <div>
+      <p>Which option best describes your current role?</p>
+      <select name="role" id="dropdown">
+         <option value="student">Student</option>
+         <option value="engineer">Engineer</option>
+         <option value="researcher">Researcher</option>
+         <option value="teacher">Teacher</option>
+      </select>
+   </div>
+   <div>
+      <p>Which programming languages do you know?</p>
+      <input type="radio" id="java" name="radio-attribute" value="HTML">
+      <label for="java">Java</label><br>
+      <input type="radio" id="javascript" name="radio-attribute" value="JavaScript">
+      <label for="javascript">JavaScript</label><br>
+      <input type="radio" id="python" name="radio-attribute" value="CSS">
+      <label for="python">Python</label><br>
+      <input type="radio" id="r" name="radio-attribute" value="CSS">
+      <label for="r">R</label><br>
+   </div>
+   <div>
+      <p>What technology would you like to learn soon?</p>
+      <input type="checkbox" id="docker" name="docker" value="Docker">
+      <label for="docker">Docker</label><br>
+      <input type="checkbox" id="spring" name="spring" value="Spring">
+      <label for="spring">Spring</label><br>
+      <input type="checkbox" id="react" name="react" value="React">
+      <label for="react">React</label><br>
+      <input type="checkbox" id="flask" name="flask" value="Flask">
+      <label for="flask">Flask</label><br>
+   </div>
+   <div>
+      <p>Additional comments</p>
+      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+   </div>
+   <div>
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+   </div>
+</form>
+
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
