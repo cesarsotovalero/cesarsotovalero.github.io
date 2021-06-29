@@ -1549,6 +1549,20 @@ ul {
 }
 
 
+#comments-count {
+  padding-left: 1rem;
+}
+
+
+#comments-count a {
+  color: #808080;
+  text-decoration: underline;
+}
+
+#comments-count a:hover {
+  color: black;
+  text-decoration: underline;
+}
 
 
 
