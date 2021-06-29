@@ -24,10 +24,10 @@ The [Fork/Join](https://docs.oracle.com/javase/tutorial/essential/concurrency/fo
 
 # Concurrency vs. Parallelism
 
-First, let's clarify the between concurrent and parallel executions in the context of a Java application. 
+First, let's clarify the difference between concurrent and parallel executions in the context of a Java application. 
 
-- **Concurrent execution:** All the threads are executed on the same CPU. This means that the application does not make progress on more than one task at the same time, i.e., the tasks are executed in interleave fashion, sharing CPU processing time during execution.
-- **Parallel execution:** Each thread is executed in a separate CPU core. Therefore, tasks make progress independently. This allows the execution to make progress on more than one task simultaneously.
+- **Concurrent execution:** All the threads run on the same CPU. This means that the application does not make progress on more than one task at the same time, i.e., the tasks are executed in interleave fashion, sharing CPU processing time during execution.
+- **Parallel execution:** Each thread run in a separate CPU core. Therefore, tasks make progress independently. This allows the execution to make progress on more than one task simultaneously.
 
 To achieve parallelism, the Java application must have more than one thread running, and each thread must run on separate CPU, CPU cores, GPUs, or similar.
 
