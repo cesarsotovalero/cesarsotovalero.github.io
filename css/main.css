@@ -1565,5 +1565,19 @@ ul {
 }
 
 
+@media only screen and (max-width: 470px) {
+  .post-meta-index {
+    display: flex;
+    font-size: 14px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .post-image img {
+    margin: 15px;
+    padding: 5px;
+  }
+}
+
 
 
