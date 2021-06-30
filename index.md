@@ -33,7 +33,7 @@ use-site-title: true
               Posted on {{ post.date | date: "%B %-d, %Y" }}
               <span id="comments-count">
                  <i class="fas fa-comments"></i>
-                 <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">comments</a>
+                 <a href="https://www.cesarsotovalero.net{{post.url}}#disqus_thread">0 comments</a>
               </span>
             </p>
     </span>
