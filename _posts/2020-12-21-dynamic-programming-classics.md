@@ -4,8 +4,8 @@ title:  Dynamic programming
 subtitle: A handful of representative problems solved
 tags: programming
 published: true
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.gif
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/backyard.gif
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.png
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/backyard.png
 show-avatar: false
 date: 2020/12/21
 ---
@@ -23,7 +23,7 @@ These problems are presented and explained by Alvin Zablan, in [this](https://ww
 I have written my own solutions to the problems in Java.
 
 <figure class="jb_picture">
-    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.gif" 
+    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.png" 
     alt="Trees prepared for the winter in Stockholm"
     longdesc="#c13e1390" />
     <figcaption class="stroke">
