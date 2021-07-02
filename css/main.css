@@ -1579,8 +1579,25 @@ ul {
     padding: 5px;
   }
 
-
+  .quote {
+    font-size: 18px;
+  }
 }
+
+.blog-tags {
+  color: #808080;
+}
+
+/* DISQUS */
+
+.disqus .disqus-thread a {
+  color: steelblue;
+  text-decoration: underline;
+}
+
+
+
+
 
 
 
