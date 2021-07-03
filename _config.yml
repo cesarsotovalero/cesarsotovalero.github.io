@@ -1,8 +1,9 @@
-url: "http://cesarsotovalero.net"
-baseurl: ""
-title: cesarsotovalero.net
-description: César - PhD Student
+name: cesarsotovalero.net
+url: "https://www.cesarsotovalero.net"
+title: "César Soto Valero"
+description: "César - PhD Student"
 keywords: "software engineering,research,java,developer,machine learning,software technology,phd student"
+
 
 navbar-links:
   Blog: "blog"
@@ -115,17 +116,18 @@ title-separator: ""
 encoding: utf-8
 timezone: "America/Vancouver"
 markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 highlighter: rouge
 syntax_highlighter_opts:
   block:
     line_numbers: true
-
 permalink: /blog/:title.html
 paginate: 20
 paginate_path: "/blog/page:num/"
-
-kramdown:
-  input: GFM
+excerpt_separator: <!--more-->
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -159,6 +161,14 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
+  - Rakefile
+  - httpd.conf
+  - id_rsa.enc
+  - s3cfg.enc
+  - uml
+  - node_modules
+  - run_jekyll.sh
+  - tag_generator.py
 
 # prose.io config
 prose:
@@ -212,13 +222,8 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
-
-# http://jch.penibelst.de/
-compress_html:
-  clippings: [div, p, ul, td, h1, h2]
-  comments: all
-
 gem:
+  - jekyll-minifier
   - jekyll-paginate
   - jemoji
   - jekyll-sitemap
@@ -234,3 +239,41 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-minifier
+
+# jekyll-feed
+feed:
+  title: cesarsotovalero.net
+  subtitle: César - PhD Student
+  path: feed.xml
+
+sass:
+  style: compressed
+  deploy_style: compressed
+
+jekyll-minifier: # see https://github.com/digitalsparky/jekyll-minifier
+  preserve_php: true                # Default: false
+  remove_spaces_inside_tags: true   # Default: true
+  remove_multi_spaces: true         # Default: true
+  remove_comments: true             # Default: true
+  remove_intertag_spaces: true      # Default: false
+  remove_quotes: false              # Default: false
+  compress_css: true                # Default: true
+  compress_javascript: true         # Default: true
+  compress_json: true               # Default: true
+  simple_doctype: false             # Default: false
+  remove_script_attributes: false   # Default: false
+  remove_style_attributes: false    # Default: false
+  remove_link_attributes: false     # Default: false
+  remove_form_attributes: false     # Default: false
+  remove_input_attributes: false    # Default: false
+  remove_javascript_protocol: false # Default: false
+  remove_http_protocol: false       # Default: false
+  remove_https_protocol: false      # Default: false
+  preserve_line_breaks: false       # Default: false
+  simple_boolean_attributes: false  # Default: false
+  compress_js_templates: false      # Default: false
+  preserve_patterns:                # Default: (empty)
+  uglifier_args:                    # Default: (empty)
+
+

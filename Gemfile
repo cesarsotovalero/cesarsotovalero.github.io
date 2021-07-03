@@ -9,4 +9,6 @@ gem 'webrick', '~> 1.7'
 gem 'kramdown', '~> 2.3', '>= 2.3.1'
 gem 'jekyll-bits', '~> 0.15'
 gem 'jekyll-plantuml', '~> 1.3', '>= 1.3.4'
+gem 'jekyll-minifier', '~> 0.1.2'
+gem 'concurrent-ruby', '~> 1.1', '>= 1.1.8'
 
