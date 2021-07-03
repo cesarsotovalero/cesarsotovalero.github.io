@@ -24,10 +24,10 @@ I have written my own solutions to the problems in Java.
 
 <figure class="jb_picture">
     <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.png" 
-    alt="Trees prepared for the winter in Stockholm"
+    alt="Trees getting prepared for the winter in Stockholm"
     longdesc="#c13e1390" />
     <figcaption class="stroke">
-    &#169; Trees prepared for the winter in Stockholm
+    &#169; Trees getting prepared for the winter in Stockholm
     </figcaption>
 </figure>
 
