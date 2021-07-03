@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>César Soto Valero</title>
+    <description>César - PhD Student</description>
+    <link>https://www.cesarsotovalero.net</link>
+    <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Book review - The Ph.D. Grind</title>
+        <description>
+          A tale of perseverance and learning from failure - 
+          I recently read the amazing short book titled “The Ph.D. Grind” by Prof. Philip Guo. The book (~100 pages) is a compendium of his memories, written right after finishing his Ph.D. in 2012. I felt ecstatic with such a brilliant masterpiece that I could barely put it down once I...
+        </description>
+        <pubDate>Thu, 24 Jun 2021 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html</guid>
+      </item>
+    
+      <item>
+        <title>The Fork/Join Java framework</title>
+        <description>
+          Boosting performance through parallelization - 
+          The Fork/Join framework makes it easy for Java developers to take advantage of the parallel execution supported by multicore processors. This API was added to the java.util.concurrent package since JDK 7, and it has been improved in subsequent versions of the JDK. It allows the developer to forget about the...
+        </description>
+        <pubDate>Sat, 05 Jun 2021 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html</guid>
+      </item>
+    
+      <item>
+        <title>Use custom LaTeX macros to boost your writing productivity</title>
+        <description>
+          And forget about these numeric glitches in your document - 
+          If you ever use LaTeX to write your research papers or technical reports, then you should know how useful and powerful this tool is. Let me just mention three well-known benefits of using LaTeX: 1) beautiful typeset output (especially when dealing with mathematical notations); 2) consistent handling of references and...
+        </description>
+        <pubDate>Fri, 28 May 2021 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html</guid>
+      </item>
+    
+      <item>
+        <title>Enhance your README with asciinema</title>
+        <description>
+          How to create beautiful terminal recordings that your users will love - 
+          Asciinema is an excellent tool for recording and sharing terminal sessions. The project is open-source and available on GitHub. A key feature of asciinema is that it allows the viewer to copy-paste the text from the player itself directly. The result of a terminal recording is an editable text file...
+        </description>
+        <pubDate>Mon, 05 Apr 2021 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html</guid>
+      </item>
+    
+      <item>
+        <title>Dynamic programming</title>
+        <description>
+          A handful of representative problems solved - 
+          Dynamic programming (DP) is one of the most basic and, at the same time, challenging programming paradigms. Some of the best algorithms that I know, such as the Levenshtein distance and DTW are implemented using this paradigm. It consists of simplifying a complicated problem by breaking it down into simpler...
+        </description>
+        <pubDate>Mon, 21 Dec 2020 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/dynamic-programming-classics.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/dynamic-programming-classics.html</guid>
+      </item>
+    
+      <item>
+        <title>Shortening the distance between academia and industry</title>
+        <description>
+          An imperative need of researchers - 
+          Research is about solving relevant problems for the best of humanity. However, the relevance of certain problems is a highly subjective matter. Is it relevant to send a human being to Mars? Maybe it is, or maybe not. One thing is for sure: research is expensive. As far as I...
+        </description>
+        <pubDate>Mon, 02 Nov 2020 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/shortening-the-distance-between-academia-and-industry.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/shortening-the-distance-between-academia-and-industry.html</guid>
+      </item>
+    
+      <item>
+        <title>Empirical software engineering research is harder than you think</title>
+        <description>
+          Trust me - 
+          You are a very talented researcher. Perhaps you come from a favored field, e.g., from the popular machine learning (ML) research community. But now, you have decided to expand your horizons and solve software engineering (SE) problems. Hence, for the next years, you will be working as an empirical SE...
+        </description>
+        <pubDate>Thu, 15 Oct 2020 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/empirical-software-engineering-research-is-harder-than-you-think.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/empirical-software-engineering-research-is-harder-than-you-think.html</guid>
+      </item>
+    
+      <item>
+        <title>The Producer-Consumer pattern in Java made easy</title>
+        <description>
+          An example using BlockingQueue interface - 
+          I see the usage of a recurring handy pattern for doing data collection and analysis in software engineering: the producer-consumer pattern. This pattern simplifies the data acquisition (handled by the Producer), and the data post-processing (handled by the Consumer). The Producer collects the data items one at the time and...
+        </description>
+        <pubDate>Sun, 28 Jun 2020 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html</guid>
+      </item>
+    
+      <item>
+        <title>Diversity-driven software debloat</title>
+        <description>
+          Leveraging the wisdom of multiple coverage tools - 
+          For months, I have worked on dynamic debloat of Java artifacts with JDBL. To do so, I need to compile and execute software applications to determine what parts of the compiled application are used when executing it using some workloads. Then, with the collected usage information, I debloat the unused...
+        </description>
+        <pubDate>Mon, 08 Jun 2020 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/diversity-driven-software-debloat.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/diversity-driven-software-debloat.html</guid>
+      </item>
+    
+      <item>
+        <title>Unix cmd hacks</title>
+        <description>
+          Boosting automation from the shell - 
+          I want to share my personal notes of the edX course Unix Tools: Data, Software and Production Engineering, by Prof. Diomidis Spinellis. I attended this course from March to June, 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and...
+        </description>
+        <pubDate>Sat, 23 May 2020 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html</guid>
+      </item>
+    
+      <item>
+        <title>Recipes for effective academic emailing</title>
+        <description>
+          A template-based approach - 
+          You cannot be a good researchers without being a good communicator. If you are good enough at both, they you may qualify for becoming a supervisor. Being a good academic supervisor is a matter of practice, discipline, and the development of leading skills. Handling tons of emails is the everyday...
+        </description>
+        <pubDate>Tue, 03 Mar 2020 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/recipes-for-email-based-communication-success-in-academia.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/recipes-for-email-based-communication-success-in-academia.html</guid>
+      </item>
+    
+      <item>
+        <title>Deploying to Maven Central</title>
+        <description>
+          A three-steps guide - 
+          Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM. In this post, I’ll describe the process of releasing a new artifact in Maven Central following an step-by-step approach. Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest...
+        </description>
+        <pubDate>Mon, 06 Jan 2020 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/deploying-to-maven-central.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/deploying-to-maven-central.html</guid>
+      </item>
+    
+      <item>
+        <title>The cuban revolution</title>
+        <description>
+          My vision - 
+          “Es deplorable que se aplauda así a un hombre que esclaviza a su pueblo desde hace más de 40 años, esta solidaridad con el verdugo del pueblo cubano” ― Huber Matos, referring to Fidel Castro in 2003 Recently, a friend of mine kindly requested me for information about Cuba and...
+        </description>
+        <pubDate>Sun, 08 Dec 2019 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/the-cuban-revolution-explained.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-cuban-revolution-explained.html</guid>
+      </item>
+    
+      <item>
+        <title>Vulnerability exploitation</title>
+        <description>
+          Zip Slip attacks - 
+          In today’s ever expanding-open source communities, developers rely heavily on third-party libraries and copy-pasted code from social networks like StackOverflow to accelerate productivity. Such code reuse tendency helps to decrease development time and effort, but also means that vulnerability in shared code (i.e., libraries) gets spread dramatically faster, as occurs...
+        </description>
+        <pubDate>Wed, 16 Oct 2019 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/zip-slip-attacks.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/zip-slip-attacks.html</guid>
+      </item>
+    
+      <item>
+        <title>The practice of teaching</title>
+        <description>
+          The ultimate skill to learn - 
+          Nobody can deny that teaching is hard. In this 15 min video, I teach how the Quicksort algorithm works the old way: with a blackboard and chalk. As you can see, I committed many mistakes. Considering that I spent 2h of preparation for this, my performance was not as good...
+        </description>
+        <pubDate>Thu, 14 Feb 2019 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/the-practice-of-teaching.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-practice-of-teaching.html</guid>
+      </item>
+    
+      <item>
+        <title>Unnecessary code</title>
+        <description>
+          Clarifying the concept - 
+          After reading a paper about the negative impact of unnecessary code in the software industry, I felt stuck with the many different (but very related) concepts around this issue. One can think that unnecessary code is all code that is not needed for an application to run correctly. However, the...
+        </description>
+        <pubDate>Fri, 14 Sep 2018 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/unneccessary-code.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/unneccessary-code.html</guid>
+      </item>
+    
+      <item>
+        <title>A starting guide to be a good competitive programmer</title>
+        <description>
+          Because learning is more important than competing - 
+          I discovered the world of competitive programming challenges during my first year at university. At that time, I didn’t know much about computer algorithms or even mind sports. However, the idea of learning how to code by myself just using an online judge attracted my attention since the first moment....
+        </description>
+        <pubDate>Fri, 15 Dec 2017 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/a-starting-guide-to-be-a-good-competitive-programmer.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/a-starting-guide-to-be-a-good-competitive-programmer.html</guid>
+      </item>
+    
+      <item>
+        <title>Git fundamentals</title>
+        <description>
+          The must-know git commands for software developers - 
+          “Git proved I could be more than a one-hit wonder” ― Linux Torvalds Git is the standard version-control system for software development. Git was created by Linux Torvals in 2005 to support the development of the Linux kernel. Since then, Git has become an essential tool for both junior and...
+        </description>
+        <pubDate>Thu, 26 Oct 2017 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/git-fundamentals.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/git-fundamentals.html</guid>
+      </item>
+    
+      <item>
+        <title>How I beat the IELTS Academic with just a month of self-training</title>
+        <description>
+          Personal comments and suggestions - 
+          The International English Language Testing System (IELTS) is one of the major English language tests for higher education and immigration in the world. It is jointly managed by the British Council, IELTS Australia, and Cambridge English Language Assessment. IELTS is accepted by most Australian, British, Canadian and New Zealand academic...
+        </description>
+        <pubDate>Thu, 26 Oct 2017 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html</guid>
+      </item>
+    
+  </channel>
+</rss>
