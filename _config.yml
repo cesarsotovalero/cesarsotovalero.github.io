@@ -170,6 +170,7 @@ exclude:
   - run_jekyll.sh
   - tag_generator.py
   - .ruby-version
+  - [vendor]
 
 # prose.io config
 prose:
