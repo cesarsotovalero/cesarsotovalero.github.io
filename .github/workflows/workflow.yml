@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  RUBY_VERSION: 2.7
+  RUBY_VERSION: 3.0.1
 
 jobs:
   deploy:
@@ -47,6 +47,14 @@ jobs:
       - name: Minify JSON files
         run: |
           minify --type=json --recursive --output "./" --match=\.json "./_site/" --verbose || true
+
+      - name: Minify JavaScript files
+        run: |
+          minify --mime=application/javascript --recursive --output "./" --match=\.js "./_site/js" --verbose || true
+
+      - name: Minify CSS files
+        run: |
+          minify --type=css --recursive --output "./" --match=\.css "./_site/css" --verbose || true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
