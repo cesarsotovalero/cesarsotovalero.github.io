@@ -4,7 +4,6 @@ title: "César Soto Valero"
 description: "César - PhD Student"
 keywords: "software engineering,research,java,developer,machine learning,software technology,phd student"
 
-
 navbar-links:
   Blog: "blog"
   Research: "publications"
@@ -12,7 +11,6 @@ navbar-links:
   Service: "service"
   Talks: "talks"
   About Me: "about-me"
-
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -235,11 +233,13 @@ gem:
   - jekyll-bits
   - jekyll-feed
   - jekyll-tagging
+  - jekyll-compress-images
 
 plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-compress-images
 
 # jekyll-feed
 feed:
@@ -250,3 +250,6 @@ feed:
 sass:
   style: compressed
   deploy_style: compressed
+
+compress_images:
+  images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"
