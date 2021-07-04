@@ -5,8 +5,8 @@ subtitle: Boosting performance through parallelization
 tags: programming
 published: true
 keywords: recursion
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree.jpeg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree.jpeg
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree.jpg
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree.jpg
 show-avatar: false
 date: 2021/6/5
 ---
@@ -14,7 +14,7 @@ date: 2021/6/5
 The [Fork/Join](https://docs.oracle.com/javase/tutorial/essential/concurrency/forkjoin.html) framework makes it easy for Java developers to take advantage of the parallel execution supported by multicore processors. This API was added to the `java.util.concurrent` package since JDK 7, and it has been improved in subsequent versions of the JDK. It allows the developer to forget about the heavy-duty tasks associated with the manual handling of threads. This way, threads are created and managed automatically while taking advantage of the computational power or multiple processors to boost performance. This post introduces the key aspects of this framework from a practical perspective.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/night_tree.jpeg alt: "A decorated tree illuminating the night in Stockholm (not a tree of threads)"%}
+  {% responsive_image path: img/posts/night_tree.jpg alt: "A decorated tree illuminating the night in Stockholm (not a tree of threads)"%}
   <figcaption class="stroke">
     &#169; A decorated tree illuminating the night in Stockholm (isn't a tree of threads)
   </figcaption>
