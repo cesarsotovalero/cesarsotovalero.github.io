@@ -233,13 +233,15 @@ gem:
   - jekyll-bits
   - jekyll-feed
   - jekyll-tagging
-  - jekyll-compress-images
+  - jekyll-responsive-image
+#  - jekyll-compress-images
 
 plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-compress-images
+  - jekyll-responsive-image
+#  - jekyll-compress-images
 
 # jekyll-feed
 feed:
@@ -251,5 +253,18 @@ sass:
   style: compressed
   deploy_style: compressed
 
-compress_images:
-  images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"
+#compress_images:
+#  images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"
+
+
+responsive_image:
+  template: _includes/picture.html
+  default_quality: 90
+  sizes:
+    - width: 640
+    - width: 768
+    - width: 1024
+    - width: 1366
+    - width: 1600
+    - width: 1920
+  strip: true
