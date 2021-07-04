@@ -234,12 +234,14 @@ gem:
   - jekyll-feed
   - jekyll-tagging
   - jekyll-responsive-image
+  - jekyll-seo-tag
 
 plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-responsive-image
+  - jekyll-seo-tag
 
 # jekyll-feed
 feed:
