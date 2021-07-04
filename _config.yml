@@ -234,14 +234,12 @@ gem:
   - jekyll-feed
   - jekyll-tagging
   - jekyll-responsive-image
-#  - jekyll-compress-images
 
 plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-responsive-image
-#  - jekyll-compress-images
 
 # jekyll-feed
 feed:
@@ -253,13 +251,10 @@ sass:
   style: compressed
   deploy_style: compressed
 
-#compress_images:
-#  images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"
-
-
+# jekyll-responsive-image @see https://github.com/wildlyinaccurate/jekyll-responsive-image#templates
 responsive_image:
-  template: _includes/picture.html
-  default_quality: 90
+  template: _includes/picture-responsive.html
+  default_quality: 80
   sizes:
     - width: 640
     - width: 768
