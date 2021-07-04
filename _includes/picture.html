@@ -1,0 +1,9 @@
+{% capture srcset %}
+{% for i in resized %}
+/{{ i.path }} {{ i.width }}w,
+{% endfor %}
+{% endcapture %}
+
+{% assign smallest = resized | sort: 'width' | first %}
+
+<img width="100%" src="/{{ smallest.path }}" alt="{{ alt }}" data-srcset="{{ srcset | strip_newlines }}" class="blur-up lazyautosizes lazyload">

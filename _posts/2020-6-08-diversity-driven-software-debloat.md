@@ -94,12 +94,10 @@ A general scheme of JDBL is presented in the following figure:
 
 
 <figure class="jb_picture">
-    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/jdbl_diversity.jpg" 
-    alt="JDBL pipeline"
-    longdesc="#c13e1390" />
-    <figcaption class="stroke">
+  {% responsive_image path: img/posts/jdbl_diversity.jpg alt: "JDBL pipeline" %}
+  <figcaption class="stroke">
     &#169; JDBL
-    </figcaption>
+  </figcaption>
 </figure>
 
 JDBL can be used to perform test-based debloat. The approach has five phases:

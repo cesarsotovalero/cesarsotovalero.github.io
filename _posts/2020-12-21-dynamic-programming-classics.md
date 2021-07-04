@@ -23,10 +23,8 @@ These problems are presented and explained by Alvin Zablan, in [this](https://ww
 I have written my own solutions to the problems in Java.
 
 <figure class="jb_picture">
-    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.png" 
-    alt="Trees getting prepared for the winter in Stockholm"
-    longdesc="#c13e1390" />
-    <figcaption class="stroke">
+  {% responsive_image path: img/posts/backyard.png alt: "Trees getting prepared for the winter in Stockholm" %}
+  <figcaption class="stroke">
     &#169; Trees getting prepared for the winter in Stockholm
     </figcaption>
 </figure>

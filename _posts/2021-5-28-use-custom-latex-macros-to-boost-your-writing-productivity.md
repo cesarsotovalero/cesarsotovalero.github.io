@@ -19,10 +19,8 @@ These are user-defined commands that allows avoiding typing repetitive LaTeX com
 Let me show you how it works!
 
 <figure class="jb_picture">
-    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/snail.jpeg" 
-    alt="A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)"
-    longdesc="#c13e1390" />
-    <figcaption class="stroke">
+  {% responsive_image path: img/posts/snail.jpeg alt: "A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)" %}
+  <figcaption class="stroke">
     &#169; A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)
     </figcaption>
 </figure>

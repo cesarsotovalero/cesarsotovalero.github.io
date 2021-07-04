@@ -20,12 +20,10 @@ Therefore, researchers should dedicate a significant portion of their efforts to
 Let's discuss how. 
 
 <figure class="jb_picture">
-    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/skates.png" 
-    alt="Skates for sale in a second-hand store in Stockholm"
-    longdesc="#c13e1390" />
-    <figcaption class="stroke">
-    &#169; Skates for sale in a second-hand store in Stockholm
-    </figcaption>
+  {% responsive_image path: img/posts/skates.png alt: "Skates for sale in a second-hand store in Stockholm City" %}
+  <figcaption class="stroke">
+    &#169; Skates for sale in a second-hand store in Stockholm City
+  </figcaption>
 </figure>
 
 First, let’s face the fact that governments and institutions pay for research grants. 

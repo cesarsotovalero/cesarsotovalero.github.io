@@ -14,12 +14,10 @@ date: 2021/6/5
 The [Fork/Join](https://docs.oracle.com/javase/tutorial/essential/concurrency/forkjoin.html) framework makes it easy for Java developers to take advantage of the parallel execution supported by multicore processors. This API was added to the `java.util.concurrent` package since JDK 7, and it has been improved in subsequent versions of the JDK. It allows the developer to forget about the heavy-duty tasks associated with the manual handling of threads. This way, threads are created and managed automatically while taking advantage of the computational power or multiple processors to boost performance. This post introduces the key aspects of this framework from a practical perspective.
 
 <figure class="jb_picture">
-    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree.jpeg" 
-    alt="A decorated tree illuminating the night in Stockholm (not a tree of threads)"
-    longdesc="#c13e1390" />
-    <figcaption class="stroke">
+  {% responsive_image path: img/posts/night_tree.jpeg alt: "A decorated tree illuminating the night in Stockholm (not a tree of threads)"%}
+  <figcaption class="stroke">
     &#169; A decorated tree illuminating the night in Stockholm (isn't a tree of threads)
-    </figcaption>
+  </figcaption>
 </figure>
 
 # Concurrency vs. Parallelism
@@ -59,15 +57,10 @@ You need to know about four classes to use the framework:
 
 In practice, all you need to do is create a subclass of `RecursiveAction` or `RecursiveTask<V>`, and override the abstract method `compute()`. Then,  submit the task to be executed by the `ForkJoinPool`, which handles everything from threads management to utilization of multicore processor. Note that `RecursiveAction` do not return anything, while the `RecursiveTask<V>` can return an object of a specified type.
 
-
 If you are curious, here is the class diagram for this architecture.
 As you observe, the `ForkJoinPool` class is an implementation of the `AbstractExecutorService` class which implements `ExecutorService`, while the `ForkJoinTask<V>` abstract class implements the `Future<V>` interface.
 
-<figure class="jb_picture img-fluid">
-    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/fork_join_classes.png" height="500px" align="center"
-    alt="Fork/Join Class Diagram"
-    longdesc="#c13e1390" />
-</figure>
+{% responsive_image path: img/posts/fork_join_classes.png alt: "Fork/Join Class Diagram"%}
 
 # Examples
 

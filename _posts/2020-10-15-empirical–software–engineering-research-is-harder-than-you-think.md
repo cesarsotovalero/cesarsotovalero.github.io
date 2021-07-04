@@ -13,12 +13,10 @@ date: 2020/10/15
 You are a very talented researcher. Perhaps you come from a favored field, e.g., from the popular machine learning (ML) research community. But now, you have decided to expand your horizons and solve software engineering (SE) problems. Hence, for the next years, you will be working as an empirical SE researcher. "This job is going to be a piece of cake", you may think and even dare to say. Well... not really. Let me tell you why.
 
 <figure class="jb_picture">
-    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/children-gardening.jpg" 
-    alt="Seeds planted by children at Rosenlundsparken, Stockholm"
-    longdesc="#c13e1390" />
-    <figcaption class="stroke">
-    &#169; Seeds planted by children at Rosenlundsparken, Stockholm
-    </figcaption>
+  {% responsive_image path: img/posts/children-gardening.jpg alt: "Seeds planted by children at Rosenlundsparken, Stockholm City" %}
+  <figcaption class="stroke">
+    &#169; Seeds planted by children at Rosenlundsparken, Stockholm City
+  </figcaption>
 </figure>
 
 Empirical SE is just one of the many players within the SE research arenas. In a nutshell, it is all about applying the [scientific method](https://en.wikipedia.org/wiki/Scientific_method) through so-called empirical studies with the objective of obtaining useful knowledge for researchers and practitioners in the SE field.
