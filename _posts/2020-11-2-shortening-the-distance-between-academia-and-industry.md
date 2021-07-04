@@ -4,8 +4,8 @@ title:  Shortening the distance between academia and industry
 subtitle: An imperative need of researchers
 tags: research
 published: true
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/skates.png
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/skates.png
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/skates.jpg
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/skates.jpg
 show-avatar: false
 date: 2020/11/2
 ---
@@ -20,7 +20,7 @@ Therefore, researchers should dedicate a significant portion of their efforts to
 Let's discuss how. 
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/skates.png alt: "Skates for sale in a second-hand store in Stockholm City" %}
+  {% responsive_image path: img/posts/skates.jpg alt: "Skates for sale in a second-hand store in Stockholm City" %}
   <figcaption class="stroke">
     &#169; Skates for sale in a second-hand store in Stockholm City
   </figcaption>

@@ -5,8 +5,8 @@ subtitle: And forget about these numeric glitches in your document
 tags: latex tutorial
 published: true
 keywords: latex macros productivity tutorials
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/snail.jpeg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/snail.jpeg
+image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/snail.jpg
+share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/snail.jpg
 show-avatar: false
 date: 2021/5/28
 ---
@@ -19,7 +19,7 @@ These are user-defined commands that allows avoiding typing repetitive LaTeX com
 Let me show you how it works!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/snail.jpeg alt: "A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)" %}
+  {% responsive_image path: img/posts/snail.jpg alt: "A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)" %}
   <figcaption class="stroke">
     &#169; A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)
     </figcaption>
