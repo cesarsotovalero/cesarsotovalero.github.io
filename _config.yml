@@ -3,6 +3,8 @@ url: "https://www.cesarsotovalero.net"
 title: "César Soto Valero"
 description: "César - PhD Student"
 keywords: "software engineering,research,java,developer,machine learning,software technology,phd student"
+logo: https://www.cesarsotovalero.net/img/avatar-icon.png
+
 
 navbar-links:
   Blog: "blog"
@@ -46,7 +48,7 @@ author:
   name: César Soto Valero
   email: "cesarsotovalero@gmail.com"
   github: cesarsotovalero
-  twitter: yourname
+  twitter: cesarsotovalero
   reddit: yourname
   linkedin: cesarsotovalero
   stackoverflow: 10480869/cesarsotovalero?tab=profile
@@ -56,12 +58,16 @@ author:
   spotify: yourname
   telephone: XXX
 
+twitter:
+  username: cesarsotovalero
+  card: summary
+
 # Select which links to show in the footer
 footer-links-active:
   rss: false
   facebook: false
   email: true
-  twitter: false
+  twitter: true
   google-plus: false
   github: true
   reddit: false
@@ -83,6 +89,14 @@ share-links-active:
   facebook: true
   google: true
   linkedin: true
+
+social:
+  name: César Soto Valero
+  links:
+    - https://twitter.com/cesarsotovalero
+    - https://www.facebook.com/cesar.sotovalero.9/
+    - https://se.linkedin.com/in/cesarsotovalero
+    - https://github.com/cesarsotovalero
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
