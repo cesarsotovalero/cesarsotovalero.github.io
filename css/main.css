@@ -1392,6 +1392,10 @@ input.gsc-input,
   color: #d35b0a;
 }
 
+.fa-twitter:hover {
+  color: #1da0f2;
+}
+
 .fa-github:hover {
   color: darkviolet;
 }

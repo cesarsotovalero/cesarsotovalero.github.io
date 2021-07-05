@@ -13,6 +13,11 @@ date: 2021/4/13
 ---
 
 
+[GitHub Copilot](https://copilot.github.com/) suggests entire functions without leaving your IDE.
+
+
+Specialization is the future.
+
 I have personally come across several programmers who only program in my career. And even though I was a recent junior, I didn't want to work with people like that.
 
 In other words, we don't want programmers who only program, because:
