@@ -3,12 +3,9 @@ layout: post
 title: Git fundamentals
 subtitle: The must-know git commands for software developers
 published: true
+description: The basic git commands that every developer should known. 
 tags: tools
-keywords:
-  - command line
-  - version control
-  - GitHub
-  - software developement
+keywords: command line, version control, GitHub, software developement
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/git_logo.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/git_logo.png
 show-avatar: false

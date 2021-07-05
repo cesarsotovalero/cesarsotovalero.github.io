@@ -3,6 +3,8 @@ layout: post
 title: The cuban revolution 
 subtitle: My vision
 published: true
+keywords: politics, Cuba, reality
+description: Cuba has resisted more than sixty years of communism caused by the cuban revolution. I explain the historical context and implications of this event.
 tags: misc
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/cuba_flag.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/cuba_flag.jpg

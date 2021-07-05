@@ -3,6 +3,8 @@ layout: post
 title:  Diversity-driven software debloat
 subtitle: Leveraging the wisdom of multiple coverage tools
 tags: debloat popular
+keywords: software debloat, diversity, jdbl
+description: I leverage the diversity of code coverage tools to create a tool to automatically debloat Java artifacts.
 published: true
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/crowd.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/crowd.jpg
@@ -117,4 +119,3 @@ As we observe, JDBL combines a variety of different implementations in order to 
 # The lesson to learn
 
 Coverage tools implement different policies to handle the variety of bytecode constructs, thus posing a challenge for its usage on debloating. I have shown that, as in this case, when facing a hard problem for which no tool can provide a 100% accurate solution, combining the diversity of implementations of similar tools is a feasible approach to achieve better results. Of course, one can argue that this decision may hurt performance, but sometimes performance is not exactly of principal goal :smiley:
-

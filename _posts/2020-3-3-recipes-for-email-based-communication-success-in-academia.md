@@ -4,6 +4,7 @@ title:  Recipes for effective academic emailing
 subtitle: A template-based approach
 tags: soft-skills
 published: true
+keywords: communication, email
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/word_cloud.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/word_cloud.jpg
 show-avatar: false

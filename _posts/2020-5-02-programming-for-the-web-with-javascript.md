@@ -3,6 +3,8 @@ layout: post
 title:  Programing for the web with JavaScript
 subtitle: The language of the web
 tags: programming
+keywords: javascript, course
+description: Personal notes of the EdX course Programing for the web with JavaScript.
 published: false
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/terminal.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/terminal.png

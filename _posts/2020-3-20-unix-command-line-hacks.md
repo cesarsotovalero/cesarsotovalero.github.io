@@ -3,6 +3,8 @@ layout: post
 title:  Unix cmd hacks
 subtitle: Boosting automation from the shell
 tags: programming
+keywords: unix, command line, scripts, tools
+description: Personal notes of the edX course titled Unix Tools: Data, Software and Production Engineering.
 published: true
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/unix_course.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/unix_course.jpg
