@@ -7,17 +7,6 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title></title>
-        <description>
-          
-          I want to share my personal notes of the edX course Unix Tools: Data, Software and Production Engineering, by Prof. Diomidis Spinellis. I attended this course from March to June, 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and...
-        </description>
-        <pubDate>Mon, 05 Jul 2021 00:13:30 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/2020-3-20-unix-command-line-hacks.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/2020-3-20-unix-command-line-hacks.html</guid>
-      </item>
-    
-      <item>
         <title>Book review - The Ph.D. Grind</title>
         <description>
           A tale of perseverance and learning from failure - 
@@ -114,6 +103,17 @@
         <pubDate>Mon, 08 Jun 2020 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/diversity-driven-software-debloat.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/diversity-driven-software-debloat.html</guid>
+      </item>
+    
+      <item>
+        <title>Unix cmd hacks</title>
+        <description>
+          Boosting automation from the shell - 
+          I want to share my personal notes of the edX course Unix Tools: Data, Software and Production Engineering, by Prof. Diomidis Spinellis. I attended this course from March to June, 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and...
+        </description>
+        <pubDate>Sat, 23 May 2020 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html</guid>
       </item>
     
       <item>
