@@ -4,6 +4,8 @@ title: A starting guide to be a good competitive programmer
 subtitle: Because learning is more important than competing
 published: true
 tags: programming
+description: Insights and tricks that I learned when I was a competitive programmer
+keywords: acm icpc, competition, problems, programming
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/competitive-programming-brain.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/competitive-programming-brain.png
 show-avatar: false
@@ -25,7 +27,7 @@ I remembered my first ACM-ICPC contest in 2009. It was a mess for me. With only 
   </a>
 </p>
 
-I started my self-training plan, and a couple of months later, I had jumped up to the first ten places in my university. Surprisingly, after four years without submitting a problem to the [COJ](http://coj.uci.cu/),  my [user profile](http://coj.uci.cu/user/useraccount.xhtml?username=CeSaR_uclv) is still in the top 500 contestants from my country. In this post, I want to share some insights and things that I learned when I was a competitive programmer.  
+I started my self-training plan, and a couple of months later, I had jumped up to the first ten places in my university. Surprisingly, after four years without submitting a problem to the [COJ](http://coj.uci.cu/),  my [user profile](http://coj.uci.cu/user/useraccount.xhtml?username=CeSaR_uclv) is still in the top 500 contestants from my country. In this post, I want to share some insights and tricks that I learned when I was a competitive programmer.  
 
 ## TOC
 1.	[Start as soon as possible](#start-as-soon-as-possible)

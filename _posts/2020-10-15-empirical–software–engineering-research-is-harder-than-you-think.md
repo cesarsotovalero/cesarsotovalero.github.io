@@ -3,7 +3,9 @@ layout: post
 title:  Empirical software engineering research is harder than you think
 subtitle: Trust me 
 tags: research
+keywords: empirical, software engineering, challenges
 published: true
+description: The ingredients for a good software engineering paper are very difficult to find in practice.
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/children-gardening-squared.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/children-gardening-squared.png
 show-avatar: false

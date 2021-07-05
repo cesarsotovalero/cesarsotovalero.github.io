@@ -2,12 +2,10 @@
 layout: post
 title:  Book review - The Ph.D. Grind
 subtitle: A tale of perseverance and learning from failure
+description: If you are seriously considering doing a Ph.D. in Computer Science, the Ph.D. Grind is the book for you.
 tags: research
 published: true
-keywords: 
-  - research
-  - Ph.D.
-  - book
+keywords: research, Ph.D., book
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/phd_grind_cover.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/phd_grind_cover.png
 show-avatar: false

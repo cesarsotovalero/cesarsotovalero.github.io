@@ -3,8 +3,9 @@ layout: post
 title: Use custom LaTeX macros to boost your writing productivity
 subtitle: And forget about these numeric glitches in your document 
 tags: latex tutorial
+description: LaTeX macros allow increasing productivity by avoiding typing repetitive LaTeX commands. In this tutorial, I show you how to use them.
 published: true
-keywords: latex macros productivity tutorials
+keywords: latex, macros, productivity, tutorials
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/snail.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/snail.jpg
 show-avatar: false

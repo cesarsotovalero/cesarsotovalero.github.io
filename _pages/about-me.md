@@ -27,12 +27,12 @@ I've a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](
 
 See also:
 
-- [Certifications](certifications.md)
-- [Competitions](competitions.md)
-- [Courses](courses.md)
+- [Certifications](certifications.html)
+- [Competitions](competitions.html)
+- [Courses](courses.html)
 
 ---
-
+    
 <!-- ![Custom badge](https://img.shields.io/badge/-HOBBIES-blue.svg) -->
 # :dart: Hobbies
 Out of work, I enjoy spending time with my family, reading ~~real~~ books, and running through the Stockholm's beautiful parks.

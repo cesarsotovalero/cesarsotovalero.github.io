@@ -3,7 +3,9 @@ layout: post
 title:  Dynamic programming
 subtitle: A handful of representative problems solved
 tags: programming
+description: All software engineers should be able to understand dynamic programming. I give a curated list of very representative problems and explain their solutions.
 published: true
+keywords: problems, dynamic programming, strategies
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/backyard.jpg
 show-avatar: false
