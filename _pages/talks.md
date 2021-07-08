@@ -14,7 +14,6 @@ published: true
 As a PhD Student, I present my work in workshops, conferences, companies, and everywhere.
 The following is a non-exhaustive list of my technical presentations.
 
-
 # 2021
 
 - [Automated Software Debloat](../reveal/50percent_seminar_kth_2021.pdf). 50% PhD Seminar. Presented at KTH, April 2021.

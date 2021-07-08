@@ -20,6 +20,7 @@ I recently read the amazing short book titled _"The Ph.D. Grind"_ by Prof. Phili
 
 Each chapter in _"The Ph.D. Grind"_ is straight to the point; they are even titled with a single word: _Downfall_, _Inception_, _Relapse_, _Reboot_, _Production_, and _Endgame_ -- What can be more succinct than that? In the preface, Philip empathizes that the book only describes his personal experiences as a Ph.D. student. This is an author's precaution to avoid being judged as a generalist in such a sensitive topic: "it is just a single data point," he says. However, while reading his memories, I felt that very much of his experiences might generalize to a large extend. In my opinion, the Ph.D. game has not changed very much in decades.
 
+
 > "Past performance is not and indicator of future results."
 > -- <cite>Philip Guo</cite>
 
