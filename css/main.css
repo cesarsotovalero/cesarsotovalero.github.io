@@ -552,6 +552,10 @@ footer .list-inline {
   padding: 0;
 }
 
+.icon-bar {
+  background-color: var(--main-text-color) !important;
+}
+
 footer .copyright {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
