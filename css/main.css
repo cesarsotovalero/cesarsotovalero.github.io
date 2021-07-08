@@ -452,9 +452,9 @@ img {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
-  margin: 0 0 0.3125rem;
   width: 100%;
   border-radius: 3px;
+  margin-left: 4px;
 }
 
 .mailchimp-subscribe-section .button {
