@@ -12,22 +12,6 @@ layout: base
             {{ content }}
          </article>
 
-         {% if page.tags.size > 0 %}
-         <div class="blog-tags">
-            <img src="../img/tag-solid.svg" style="width:1em" alt="tag">
-            {% if site.link-tags %}
-            {% for tag in page.tags %}
-            <a href="/tag/{{ tag_name }}"><code>
-               <nobr>{{ tag_name }}</nobr>
-            </code></a>
-            <!--            <a href="/tag/{{ tag }}">{{ tag }}</a>-->
-            {% endfor %}
-            {% else %}
-            {{ page.tags | join: ", " }}
-            {% endif %}
-         </div>
-         {% endif %}
-
          <!--      <span class="post-categories">[-->
          <!--					  {% for tag in page.tags %}-->
          <!--						{% capture tag_name %}{{ tag }}{% endcapture %}-->

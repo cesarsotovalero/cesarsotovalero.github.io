@@ -35,52 +35,11 @@ common-js:
 
 {% include footer-scripts.html %}
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!-- DARK/LIGHT MODE SWITCHER -->
+<script src="/js/mode-switcher.js"></script>
 
 <!-- DISQUS COMMENTS-->
 <script id="dsq-count-scr" src="//https-www-cesarsotovalero-net.disqus.com/count.js" async></script>
-
-<script>
-   var typed = new Typed('.type', {
-      strings: ["Researcher", "Teacher", "Collaborator", "Writer", "Software Developer", "Software Architect", "Manager", "Data Scientist",
-         "R Programmer", "Java Programmer", "Designer", "Speaker"
-      ],
-      // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-      stringsElement: null,
-      // typing speed
-      typeSpeed: 100,
-      // time before typing starts
-      startDelay: 1200,
-      // backspacing speed
-      backSpeed: 20,
-      // time before backspacing
-      backDelay: 500,
-      // loop
-      loop: true,
-      // false = infinite
-      loopCount: 10,
-      // show cursor
-      showCursor: true,
-      // character for cursor
-      cursorChar: "|",
-      // attribute to type (null == text)
-      attr: null,
-      // either html or text
-      contentType: 'html',
-      // call when done callback function
-      callback: function () {
-      },
-      // starting callback function before each string
-      preStringTyped: function () {
-      },
-      //callback for every typed string
-      onStringTyped: function () {
-      },
-      // callback for reset
-      resetCallback: function () {
-      }
-   });
-</script>
 
 <!-- body font-size -->
 <script>
@@ -159,21 +118,6 @@ common-js:
       prevScrollpos = currentScrollPos;
    }
 </script>
-
-<script>
-   (function() { // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-      var d = document, s = d.createElement('script'); // IMPORTANT: Replace EXAMPLE with your forum shortname!
-      s.src = 'https://https-www-cesarsotovalero-net.disqus.com/recommendations.js'; s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-   })();
-</script>
-<noscript>
-   Please enable JavaScript to view the
-   <a href="https://disqus.com/?ref_noscript" rel="nofollow">
-      comments powered by Disqus.
-   </a>
-</noscript>
-
 
 </body>
 </html>
