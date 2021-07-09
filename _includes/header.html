@@ -73,7 +73,7 @@
                                stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8 L16 16 20 20"/></svg>
                           {% assign words = content | number_of_words %}
                           {% if words < 180 %}
-                            one min read
+                            &nbsp;one min read
                           {% else %}
                             &nbsp;{{ words | divided_by:180 }} mins read
                           {% endif %}
@@ -89,7 +89,7 @@
                                  <path fill="none" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a47.998 47.998 0 0 0 14.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM259.886 463.996L48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z" class=""></path></svg>
                               {% if site.link-tags %}
                                  {% for tag in page.tags %}
-                                    <a href="/tag/{{ tag_name }}"><code>
+                                    &nbsp;<a href="/tag/{{ tag_name }}"><code>
                                        <nobr>{{ tag_name }}</nobr>
                                     </code></a>
                            <!-- <a href="/tag/{{ tag }}">{{ tag }}</a>-->
