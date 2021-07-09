@@ -514,9 +514,13 @@ img {
   }
 }
 
-.fa-github, .fa-stack-overflow, .fa-linkedin-in, .ai-researchgate,
-.ai-google-scholar, .ai-dblp, .ai-orcid, .fa-linkedin-in, .fa-youtube,
-.fa-twitter, .fa-envelope {
+.fa-github, .fa-stack-overflow, .ai-researchgate,
+.ai-google-scholar, .ai-dblp, .ai-orcid, .fa-youtube,
+.fa-envelope {
+  color: var(--main-text-color);
+}
+
+.icon-black {
   color: var(--main-text-color);
 }
 
@@ -1723,3 +1727,4 @@ html[data-theme="dark"] {
   --main-background-color: hsl(0, 0%, 20%);
   --main-text-color: hsl(0, 0%, 85%);
 }
+
