@@ -74,8 +74,6 @@ The conclusion of an empirical SE paper should be a substantial claim based on t
 
 If you have done your homework, then the conclusion of a ML paper is solid and hard to disprove. In this case, your dataset is available,  your experiments are standard and reproducible, your results are statistically demonstrated. These are key ingredients for success in the science arenas. In contrast, in a good SE paper, all these ingredients are almost impossible to have in practice. 
 
----
-
 The following table summarizes the points discussed above:
 
 | **Tasks** | **In ML research** | **In SE research** |
@@ -88,4 +86,6 @@ The following table summarizes the points discussed above:
 | ------ | ------ | ------ |
 {: .border-bottom-on-table  }
 
-In conclusion, empirical SE research is not easy at all. It imposes a diverse set of unique challenges to researchers, from the formulation of the hypothesis to the argumentation of a relevant conclusion. If you think this is not true, then try to publish in a top journal in the field. Do it first, then we can talk about it :smirk:.
+## Final words
+
+In summary, empirical SE research is not easy at all. It imposes a diverse set of unique challenges to researchers, from the formulation of the hypothesis to the argumentation of a relevant conclusion. If you think this is not true, then try to publish in a top journal in the field. Do it first, then we can talk about it :smirk:.
