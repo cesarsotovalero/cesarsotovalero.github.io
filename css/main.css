@@ -20,7 +20,12 @@ body {
   position: relative;
   color: var(--main-text-color);
   background-color: var(--main-background-color);
+}
 
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 p {
@@ -47,7 +52,6 @@ h2 {
   margin-top: 30px;
 }
 
-
 h3 {
   margin-top: 15px;
 }
@@ -72,6 +76,13 @@ blockquote {
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
   border-radius: 5px 3px 3px 5px;
+}
+
+
+@media only screen and (max-width: 375px) {
+  blockquote {
+    font-size: 16px;
+  }
 }
 
 blockquote p:first-child {
@@ -132,7 +143,6 @@ hr.small {
 
 ::-moz-selection {
   color: var(--footer-color);
-  text-shadow: none;
   background: var(--main-text-color);
 }
 
@@ -653,7 +663,7 @@ logo-main a:hover {
 }
 
 .post-preview .post-title-main {
-  font-size: 32px;
+  font-size: 38px;
   margin-top: 0;
   color: var(--main-text-color);
 }
@@ -737,10 +747,12 @@ logo-main a:hover {
   font-style: normal;
 }
 
-@media only screen and (min-width: 768px) {
-  .post-preview .post-title {
-    font-size: 38px;
-  }
+.post-preview .post-title {
+  font-size: 30px;
+}
+
+.post-subtitle {
+  font-size: 22px;
 }
 
 /* Software page */
@@ -927,6 +939,13 @@ logo-main a:hover {
   margin: 10px 0 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .intro-header .page-heading .page-subheading,
+  .intro-header .post-heading .post-subheading {
+    font-size: 20px;
+  }
+}
+
 .intro-header .post-heading .post-subheading {
   margin-bottom: 20px;
 }
@@ -977,7 +996,7 @@ logo-main a:hover {
   }
 
   .intro-header .post-heading h1 {
-    font-size: 46px;
+    font-size: 38px;
   }
 
   .intro-header.big-img .img-desc {
