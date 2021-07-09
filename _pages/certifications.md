@@ -36,40 +36,4 @@ published: true
 
 # Gallery
 
-<table align="center">
-   <tr width="100%" align="center" style="background-color:#FFF; border: 0px solid #cccccc;">
-      <td width="33%" align="center">
-      <a href="https://cf.jare.io/?u=https://www.cesarsotovalero.net/files/certificates/BSc_Degree_(certified)_eng.pdf">
-         <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/files/certificates/BSc_Degree_(certified)_eng.jpg" alt="BSc in Computer Science" width="100%" style="border:4px solid #021a40;"/>
-      </a>
-      </td>
-      <td width="33%" align="center">
-      <a href="https://cf.jare.io/?u=https://www.cesarsotovalero.net/files/certificates/MSc_Degree_(certified)_eng.pdf">
-         <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/files/certificates/MSc_Degree_(certified)_eng.jpg" alt="MSc in Computer Science" width="100%" style="border:4px solid #021a40;"/>
-      </a>   
-      </td>
-      <td width="33%" align="center">
-      <a href="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/IETLS_Test_Report_Form.jpg">
-         <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/IETLS_Test_Report_Form.jpg" alt="IELTS Test Report Form" width="100%" style="border:4px solid #021a40;"/>
-      </a>
-      </td>
-   </tr>
-   <!-- Another row -->
-   <tr width="100%" align="center" style="background-color:#FFF; border: 0px solid #cccccc;">
-      <td width="33%" align="center">
-      <a href="https://cf.jare.io/?u=https://www.cesarsotovalero.net/files/certificates/SMR_Certificate.pdf">
-         <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/files/certificates/SMR_Certificate.jpg" alt="Reviewer Certificate" width="100%" style="border:4px solid #021a40;"/>
-      </a>   
-      </td>
-      <td width="33%" align="center">
-      <a href="https://cf.jare.io/?u=https://www.cesarsotovalero.net/files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf">
-         <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.jpg" alt="ICPC-ACM International Collegiate Programming Contest" width="100%" style="border:4px solid #021a40;"/>
-       </a>
-      </td>
-     <td width="33%" align="center">
-     <a href="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/awards/data_showcase_award.jpg">
-        <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/awards/data_showcase_award.jpg" alt="MSR Data Showcase Award" width="100%" style="border:4px solid #021a40;"/>
-     </a>
-     </td>
-   </tr>
-</table>
+{% include gallery-certifications.html %}
