@@ -1,3 +1,4 @@
+// see https://github.com/derekkedziora/jekyll-demo
 let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)");
 let theme = sessionStorage.getItem('theme');
 sessionStorage.setItem('theme', 'light');

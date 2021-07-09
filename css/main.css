@@ -514,11 +514,6 @@ img {
   }
 }
 
-.fab {
-  color: #808080;;
-}
-
-
 .fa-github, .fa-stack-overflow, .fa-linkedin-in, .ai-researchgate,
 .ai-google-scholar, .ai-dblp, .ai-orcid, .fa-linkedin-in, .fa-youtube,
 .fa-twitter, .fa-envelope {
@@ -1044,9 +1039,9 @@ logo-main a:hover {
   font-weight: 800;
   letter-spacing: 1px;
   padding: 10px 5px;
-  background: #FFF;
+  background: var(--main-background-color);
   border-radius: 1px;
-  color: #404040;
+  color: var(--main-text-color);
   border: 1px solid #777;
   border-radius: 8px;
 }
@@ -1166,7 +1161,8 @@ code {
   font-size: 14px;
   color: var(--main-text-color);
   border-radius: 1px;
-  text-decoration: none; !important;
+  text-decoration: none;
+!important;
 }
 
 code a:hover, a:focus {
@@ -1478,6 +1474,29 @@ figure figcaption {
 }
 
 
+/* --- Gallery --- */
+
+.gallery-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
+  grid-auto-columns: 120px;
+  grid-auto-flow: dense;
+}
+
+.gallery-container a img {
+  border: 3px solid var(--main-text-color);
+  width: 100%;
+}
+
+.horizontal-gallery-item {
+  grid-column: span 2;
+}
+
+.vertical-gallery-item {
+  grid-row: span 1;
+}
+
 /* --- Tables --- */
 
 table {
@@ -1558,7 +1577,6 @@ ul {
 }
 
 
-
 #i-tag {
   width: 1.2em;
   vertical-align: middle;
@@ -1591,6 +1609,7 @@ ul {
 
 .flex-container-footer a {
   padding: 0 7px 0 7px;
+  margin-bottom: 5px;
 }
 
 .quote {
