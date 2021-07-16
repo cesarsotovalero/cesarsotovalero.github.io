@@ -94,6 +94,7 @@ To generate the next number of the sequence, we sum the previous two. For exampl
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 {: .border-bottom-on-table  }
 
+<br>
 **Example:**
 {% highlight java %}
 Input: fib(8)

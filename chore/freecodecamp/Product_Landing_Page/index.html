@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <title>Product Landing Page</title>
    <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
 
@@ -11,18 +12,43 @@
 <div class="container">
    <!-- THE NAVBAR -->
    <header id="header">
-      <img src="logo.svg" alt="Logo" id="header-img">
       <nav id="nav-bar">
-         <nav class="nav-link">Features</nav>
-         <nav class="nav-link">How It Works</nav>
-         <nav class="nav-link">Pricing</nav>
+         <ul class="menu">
+            <li class="logo"><a href="#"><img src="logo.svg" alt="Logo" id="header-img" height="32" width="32"></a></li>
+            <li class="item nav-link"><a href="#">Home</a></li>
+            <li class="item nav-link"><a href="#">About</a></li>
+            <li class="item has-submenu">
+               <a tabindex="0">Services</a>
+               <ul class="submenu">
+                  <li class="subitem"><a href="#">Design</a></li>
+                  <li class="subitem"><a href="#">Development</a></li>
+                  <li class="subitem"><a href="#">SEO</a></li>
+                  <li class="subitem"><a href="#">Copywriting</a></li>
+               </ul>
+            </li>
+            <li class="item has-submenu">
+               <a tabindex="0">Plans</a>
+               <ul class="submenu">
+                  <li class="subitem"><a href="#">Freelancer</a></li>
+                  <li class="subitem"><a href="#">Startup</a></li>
+                  <li class="subitem"><a href="#">Enterprise</a></li>
+               </ul>
+            </li>
+            <li class="item nav-link"><a href="#">Blog</a></li>
+            </li>
+            <li class="item button"><a href="#">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+         </ul>
       </nav>
    </header>
+
+
    <!-- THE FORM SECTION -->
    <div class="form-group">
-      <form action="" id="form">
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
          <input id="email" type="email" placeholder="Your email">
-         <input type="button" id="submit" value="View repository">
+         <input type="submit" id="submit" value="View repository">
       </form>
    </div>
    <!-- THE VIDEO SECTION -->
@@ -41,6 +67,9 @@
    <!-- THE PRICING SECTION -->
 
 </div>
+
+
+<script src="navbar.js"></script>
 </body>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

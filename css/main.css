@@ -78,12 +78,12 @@ blockquote {
   border-radius: 5px 3px 3px 5px;
 }
 
-
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   blockquote {
     font-size: 16px;
   }
 }
+
 
 blockquote p:first-child {
   margin-top: 0;
@@ -535,7 +535,7 @@ img {
 }
 
 .fa-moon {
-  color: #3273dc;
+  color: var(--main-text-color);
 }
 
 .fa-sun {
@@ -1127,15 +1127,15 @@ table thead {
 }
 
 table tr {
-  border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid var(--main-text-color);
+  border-bottom: 1px solid var(--main-text-color);
   background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
 
 table tr:nth-child(2n) {
-  background-color: #f8f8f8;
+  background-color: var(--main-background-color);
 }
 
 table tr th {
@@ -1147,7 +1147,9 @@ table tr th {
 }
 
 table tr td {
-  border: 0px solid #cccccc;
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+  border: 0px solid var(--main-text-color);
   text-align: left;
   margin: 0;
   padding: 6px 15px;
@@ -1161,6 +1163,30 @@ table tr td :first-child {
 table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
+}
+
+table {
+  border-collapse: collapse;
+  display: block;
+  max-width: fit-content;
+  margin-bottom: 0;
+  overflow-x: auto;
+  font-size: 18px;
+}
+
+table thead tr {
+  background-color: var(--main-text-color);
+  color: var(--main-background-color);
+  text-align: left;
+}
+
+table tbody tr.active-row {
+  font-weight: bold;
+  color: #0f0f0f;
+}
+
+tbody {
+  color: var(--main-text-color);
 }
 
 /* --- Code blocks --- */
@@ -1186,6 +1212,11 @@ code {
   border-radius: 1px;
   text-decoration: none;
 !important;
+}
+
+code pre {
+  color: black;
+  background-color: var(--main-background-color);
 }
 
 code a:hover, a:focus {
@@ -1520,33 +1551,6 @@ figure figcaption {
   grid-row: span 1;
 }
 
-/* --- Tables --- */
-
-table {
-  border-collapse: collapse;
-  display: block;
-  max-width: fit-content;
-  margin-bottom: 0;
-  overflow-x: auto;
-  font-size: 18px;
-}
-
-table thead tr {
-  background-color: #0f0f0f;
-  color: var(--main-background-color);
-  text-align: left;
-}
-
-.border-bottom-on-table {
-  border-bottom: 2px solid #0f0f0f;
-}
-
-table tbody tr.active-row {
-  font-weight: bold;
-  color: #0f0f0f;
-}
-
-
 .jb_picture {
   display: grid;
   margin: 0 0 25px 0;
@@ -1645,7 +1649,7 @@ ul {
   padding-left: 10px;
   width: 300px;
   line-height: 1.25;
-  border: 1px solid #eee;
+  border: 1px solid var(--main-background-color);
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
   border-radius: 5px 3px 3px 5px;
@@ -1654,7 +1658,6 @@ ul {
 #comments-count {
   padding-left: 1rem;
 }
-
 
 #comments-count a {
   color: var(--post-meta-index-color);
