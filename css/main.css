@@ -317,6 +317,14 @@ img {
   content: " \25BC";
 }
 
+#theme-toggle:hover .fa-moon {
+    color: var(--main-background-color);
+}
+
+#theme-toggle:hover .fa-sun {
+  color: var(--main-background-color);
+}
+
 .navbar-custom .nav .navlinks-children {
   width: 100%;
   display: none;
@@ -538,8 +546,12 @@ img {
   color: var(--main-text-color);
 }
 
+.fa-moon:hover {
+  color: var(--main-background-color);
+}
+
 .fa-sun {
-  color: #f7dc50;
+  color: var(--main-text-color);
 }
 
 /* --- Footer --- */
@@ -1236,7 +1248,7 @@ code table, code table td, code table th, code table tbody, code table tr,
 td.gutter pre {
   padding: 0;
   border: none;
-  background-color: #fff;
+  background-color: hsl(0, 0%, 99%);
 }
 
 .highlight > pre {
@@ -1346,11 +1358,11 @@ td.gutter {
 
 @media only screen and (max-width: 550px) {
   .list-filters .list-filter {
-    font-size: 16px;
-    margin-right: 0;
-    margin-bottom: -1px;
-    display: block;
-    border-radius: 6px;
+    font-size: 14px;
+    margin-right: 1px;
+    /*margin-bottom: -1px;*/
+    /*display: block;*/
+    /*border-radius: 6px;*/
   }
 }
 
