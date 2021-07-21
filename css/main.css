@@ -71,7 +71,7 @@ blockquote {
   color: var(--main-text-color);
   background-color: var(--blockquote-background-color);
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   border-: 1px solid #eee;
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
@@ -80,7 +80,7 @@ blockquote {
 
 @media only screen and (max-width: 425px) {
   blockquote {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -128,6 +128,10 @@ blockquote p:first-child {
   .h2, h2 {
     font-size: 22px;
   }
+}
+
+.post-title-main {
+  font-size: 28px;
 }
 
 hr.small {
@@ -334,7 +338,7 @@ img {
 }
 
 #theme-toggle:hover .fa-moon {
-    color: var(--main-background-color);
+  color: var(--main-background-color);
 }
 
 #theme-toggle:hover .fa-sun {
@@ -719,6 +723,14 @@ logo-main a:hover {
   margin: 10px 0 10px;
 }
 
+@media only screen and (max-width: 425px) {
+  .post-preview .post-meta,
+  .post-heading .post-meta {
+    font-size: 14px;
+  }
+}
+
+
 .post-meta-index {
   color: var(--post-meta-index-color);
   font-size: 16px;
@@ -738,6 +750,12 @@ logo-main a:hover {
 
 .post-entry {
   width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+  .post-preview .post-entry {
+    font-size: 15px;
+  }
 }
 
 .post-image {
@@ -776,11 +794,17 @@ logo-main a:hover {
 }
 
 .post-preview .post-title {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .post-subtitle {
-  font-size: 22px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 425px) {
+  .post-subtitle {
+    font-size: 18px;
+  }
 }
 
 /* Software page */
@@ -1671,7 +1695,7 @@ ul {
   color: var(--main-text-color);
   background-color: var(--blockquote-background-color);
   float: right;
-  font-size: 24px;
+  font-size: 22px;
   margin: 10px 0px 20px 20px;
   padding: 10px 5px 10px 5px;
   padding-left: 10px;
