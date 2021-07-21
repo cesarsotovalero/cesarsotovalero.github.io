@@ -24,7 +24,7 @@ body {
 
 @media only screen and (max-width: 425px) {
   body {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -80,7 +80,7 @@ blockquote {
 
 @media only screen and (max-width: 425px) {
   blockquote {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -112,6 +112,22 @@ blockquote p:first-child {
 
 .h1, h1 {
   font-size: 32px;
+}
+
+@media only screen and (max-width: 425px) {
+  .h1, h1 {
+    font-size: 28px;
+  }
+}
+
+.h2, h2 {
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 425px) {
+  .h2, h2 {
+    font-size: 22px;
+  }
 }
 
 hr.small {
@@ -1697,7 +1713,7 @@ ul {
   }
 
   .quote {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

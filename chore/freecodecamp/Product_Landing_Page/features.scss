@@ -1,0 +1,83 @@
+@import "base";
+
+#section-features {
+  background-color: white;
+}
+
+.container-features {
+  display: grid;
+  grid-template-columns: 100px auto auto auto 100px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". feat1 feat2 feat3 ."
+    ". feat4 feat5 feat6 ."
+}
+
+.feat1 {
+  grid-area: feat1;
+  text-align: center;
+
+  img {
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.feat2 {
+  grid-area: feat2;
+  text-align: center;
+
+  img {
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.feat3 {
+  grid-area: feat3;
+  text-align: center;
+
+  img {
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.feat4 {
+  grid-area: feat4;
+  text-align: center;
+
+  img {
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.feat5 {
+  grid-area: feat5;
+  text-align: center;
+
+  img {
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.feat6 {
+  grid-area: feat6;
+  text-align: center;
+
+  img {
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+
+

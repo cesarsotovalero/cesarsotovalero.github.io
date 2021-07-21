@@ -2994,7 +2994,7 @@ input[type=search] {
     }
 }
 
-.form-group {
+.product-desc {
     margin-bottom: 15px
 }
 
@@ -3269,7 +3269,7 @@ select[multiple].form-group-lg .form-control, textarea.form-group-lg .form-contr
 }
 
 @media (min-width: 768px) {
-    .form-inline .form-group {
+    .form-inline .product-desc {
         display: inline-block;
         margin-bottom: 0;
         vertical-align: middle
@@ -3334,7 +3334,7 @@ select[multiple].form-group-lg .form-control, textarea.form-group-lg .form-contr
     min-height: 27px
 }
 
-.form-horizontal .form-group {
+.form-horizontal .product-desc {
     margin-right: -15px;
     margin-left: -15px
 }
@@ -4602,7 +4602,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 @media (min-width: 768px) {
-    .navbar-form .form-group {
+    .navbar-form .product-desc {
         display: inline-block;
         margin-bottom: 0;
         vertical-align: middle
@@ -4658,11 +4658,11 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 @media (max-width: 767px) {
-    .navbar-form .form-group {
+    .navbar-form .product-desc {
         margin-bottom: 5px
     }
 
-    .navbar-form .form-group:last-child {
+    .navbar-form .product-desc:last-child {
         margin-bottom: 0
     }
 }
@@ -6748,12 +6748,12 @@ button.close {
     }
 }
 
-.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .product-desc:after, .form-horizontal .product-desc:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
     display: table;
     content: " "
 }
 
-.btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+.btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .product-desc:after, .modal-footer:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
     clear: both
 }
 

@@ -1,0 +1,91 @@
+@import "base";
+
+
+
+.container-product {
+  padding-top: 60px;
+  @include gradient-dark-blue;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 3rem;
+
+  .product-desc {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 600px;
+    margin-right: 4rem;
+    margin-left: 1rem;
+
+    h1 {
+      color: $gray-200;
+    }
+
+    h3 {
+      color: $gray-500;
+    }
+
+    .email-form {
+      width: 16rem;
+      height: 2.5rem;
+      text-align: left;
+      padding: 1rem;
+      margin: 1rem 1rem 1rem 0;
+      font-family: $poppins;
+      font-size: 1rem
+    }
+
+    .btn-form {
+      background: #0080ff;
+      border-color: royalblue;
+      display: inline-block;
+      position: relative;
+      width: 16rem;
+      height: 2.5rem;
+      color: white;
+      letter-spacing: 0.05em;
+      text-decoration-width: 1.5rem;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $poppins;
+      font-size: 1rem;
+      margin: 0 1rem 1rem 0;
+      transition: all 0.05s ease;
+
+      &:hover {
+        background: royalblue;;
+      }
+
+      &:active {
+        transform: translate(2px, 2px);
+      }
+    }
+  }
+
+  .product-img {
+    max-width: 600px;
+
+    img {
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (max-width: $layout-breakpoint-medium) {
+  .product-img {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
