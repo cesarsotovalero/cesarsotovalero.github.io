@@ -68,12 +68,12 @@ h1 {
   padding: 2rem;
 }
 
-.form-group {
+.product-desc {
   display: block;
   margin: 0 auto 1.25rem auto;
   padding: 0.25rem;
 }
-.form-group:focus {
+.product-desc:focus {
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);

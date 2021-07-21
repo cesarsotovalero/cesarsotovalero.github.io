@@ -1,0 +1,114 @@
+/* Basic tones */
+/* White and black tones */
+/* Blue tones */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap");
+/*
+Use font-weight property to specify type:
+Thin            100
+Extra Light     200
+Light           300
+Regular         400
+Medium          500
+Semi-Bold       600
+Bold            700
+Extra-Bold      800
+Black           900
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #e9ecef;
+  font-size: 1rem;
+  position: relative;
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  color: #212529;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+h2 {
+  color: #343a40;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+h3 {
+  color: #495057;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+p {
+  color: #495057;
+  font-weight: 300;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.section-text-heading {
+  text-align: center;
+}
+
+.container-product {
+  height: 15rem;
+  background: #001528;
+  background: linear-gradient(90deg, #001528 0%, #02203c 35%, #15314b 100%);
+  display: flex;
+  justify-content: space-around;
+}
+.container-product .product-desc {
+  order: 1;
+}
+.container-product .product-img {
+  order: 2;
+}
+
+.btn-form {
+  background: #0080ff;
+  border: 1px royalblue solid;
+  display: inline-block;
+  position: relative;
+  width: 12rem;
+  height: 2.5rem;
+  color: white;
+  letter-spacing: 0.05em;
+  text-decoration-width: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+.btn-form:hover {
+  background: purple;
+}
+
+.email-form {
+  width: 16rem;
+  height: 2.5rem;
+  text-align: left;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=product.css.map */
