@@ -2,69 +2,203 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
    <title>Product Landing Page</title>
-   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
 
 
-<div class="container">
-   <!-- THE NAVBAR -->
-   <header id="header">
-      <nav id="nav-bar">
-         <ul class="menu">
-            <li class="logo"><a href="#"><img src="logo.svg" alt="Logo" id="header-img" height="32" width="32"></a></li>
-            <li class="item nav-link"><a href="#">Home</a></li>
-            <li class="item nav-link"><a href="#">About</a></li>
-            <li class="item has-submenu">
-               <a tabindex="0">Services</a>
-               <ul class="submenu">
-                  <li class="subitem"><a href="#">Design</a></li>
-                  <li class="subitem"><a href="#">Development</a></li>
-                  <li class="subitem"><a href="#">SEO</a></li>
-                  <li class="subitem"><a href="#">Copywriting</a></li>
-               </ul>
-            </li>
-            <li class="item has-submenu">
-               <a tabindex="0">Plans</a>
-               <ul class="submenu">
-                  <li class="subitem"><a href="#">Freelancer</a></li>
-                  <li class="subitem"><a href="#">Startup</a></li>
-                  <li class="subitem"><a href="#">Enterprise</a></li>
-               </ul>
-            </li>
-            <li class="item nav-link"><a href="#">Blog</a></li>
-            </li>
-            <li class="item button"><a href="#">Log In</a></li>
-            <li class="item button secondary"><a href="#">Sign Up</a></li>
-            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-         </ul>
-      </nav>
-   </header>
+<!-- THE NAVBAR -->
+<!-- @see https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535  -->
+<header id="header">
+   <nav id="nav-bar">
+      <ul class="menu">
+         <li class="logo"><a href="#"><img src="logo.svg" alt="Logo" id="header-img" height="32" width="32"></a></li>
+         <li class="item nav-link"><a href="#section-video">Video</a></li>
+         <li class="item nav-link"><a href="#section-features">Features</a></li>
+         <li class="item nav-link"><a href="#section-pricing">Pricing</a></li>
+         <li class="item has-submenu">
+            <a tabindex="0">Products</a>
+            <ul class="submenu">
+               <li class="subitem"><a href="#">Product A</a></li>
+               <li class="subitem"><a href="#">Product B</a></li>
+               <li class="subitem"><a href="#">Product C</a></li>
+            </ul>
+         </li>
+         </li>
+         <li class="item button"><a href="#">Log In</a></li>
+         <li class="item button secondary"><a href="#">Sign Up</a></li>
+         <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+   </nav>
+</header>
 
 
-   <!-- THE FORM SECTION -->
-   <div class="form-group">
-      <form action="https://www.freecodecamp.com/email-submit" id="form">
-         <input id="email" type="email" placeholder="Your email">
-         <input type="submit" id="submit" value="View repository">
-      </form>
-   </div>
+<div id="page-body">
+
+   <!-- THE PRODUCT SECTION -->
+   <section id="section-product">
+      <div class="container-product">
+         <div class="product-desc">
+            <h1>Excellent Research</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</h3>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+               <input id="email" type="email" class="email-form" placeholder="Your email">
+            </form>
+            <input type="submit" class="btn-form" id="submit" value="View repository">
+         </div>
+         <div class="product-img">
+            <a href="#"><img src="logo.svg" alt="Logo" height="32" width="32"></a>
+         </div>
+      </div>
+      <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+         <defs>
+            <linearGradient id="gradient">
+               <stop offset="5%" stop-color="#15314bff"></stop>
+               <stop offset="95%" stop-color="#001528ff"></stop>
+            </linearGradient>
+         </defs>
+         <path d="M 0,400 C 0,400 0,200 0,200 C 205.71428571428572,257.14285714285717 822.8571428571429,228.57142857142858 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 200)"></path>
+      </svg>
+   </section>
+
    <!-- THE VIDEO SECTION -->
-   <div class="video-group">
-      <iframe width="560" height="315" id="video"
-              src="https://www.youtube.com/embed/_qNntmP1-qw"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-      </iframe>
-   </div>
-   <!-- THE FEATURES SECTION -->
+   <section id="section-video">
+      <h1 class="section-text-heading">What is Excellent Research?</h1>
+      <div class="container-video">
+         <iframe width="50%" height="30%" id="video"
+                 src="https://www.youtube.com/embed/_qNntmP1-qw"
+                 title="YouTube video player"
+                 frameborder="0"
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                 allowfullscreen>
+         </iframe>
+      </div>
+   </section>
 
+   <!-- THE FEATURES SECTION -->
+   <section id="section-features">
+      <div class="container-features">
+         <div class="feat1">
+            <img src="undraw_Business_plan_re_0v81.png" alt="Business plan">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+            </p>
+            <a href="#">Learn more.</a>
+         </div>
+         <div class="feat2">
+            <img src="undraw_Business_plan_re_0v81.png" alt="Business plan">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+            </p>
+            <a href="#">Learn more.</a>
+         </div>
+         <div class="feat3">
+            <img src="undraw_Business_plan_re_0v81.png" alt="Business plan">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+            </p>
+            <a href="#">Learn more.</a>
+         </div>
+         <div class="feat4">
+            <img src="undraw_Business_plan_re_0v81.png" alt="Business plan">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+            </p>
+            <a href="#">Learn more.</a>
+         </div>
+         <div class="feat5">
+            <img src="undraw_Business_plan_re_0v81.png" alt="Business plan">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+            </p>
+            <a href="#">Learn more.</a>
+         </div>
+         <div class="feat6">
+            <img src="undraw_Business_plan_re_0v81.png" alt="Business plan">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+            </p>
+            <a href="#">Learn more.</a>
+         </div>
+      </div>
+   </section>
 
    <!-- THE PRICING SECTION -->
+   <section id="section-pricing">
+      <h3 class="section-text-heading">Our offers</h3>
+      <div class="container-products">
+         <div class="product1">
+            <h3 class="product-header">Lorem Ipsum</h3>
+            <h2 class="product-price">$100</h2>
+            <div class="product-list">
+               <ul>
+                  <li>A</li>
+                  <li>B</li>
+                  <li>C</li>
+               </ul>
+            </div>
+            <button class="btn-form">Select</button>
+         </div>
+         <div class="product2">
+            <h3 class="product-header">Lorem Ipsum</h3>
+            <h2 class="product-price">$100</h2>
+            <div class="product-list">
+               <ul>
+                  <li>A</li>
+                  <li>B</li>
+                  <li>C</li>
+               </ul>
+            </div>
+            <button class="btn-form">Select</button>
+         </div>
+         <div class="product3">
+            <h3 class="product-header">Lorem Ipsum</h3>
+            <h2 class="product-price">$100</h2>
+            <div class="product-list">
+               <ul>
+                  <li>A</li>
+                  <li>B</li>
+                  <li>C</li>
+               </ul>
+            </div>
+            <button class="btn-form">Select</button>
+         </div>
+      </div>
+   </section>
+
+   <!-- THE FOOTER -->
+   <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+      <defs>
+         <linearGradient id="gradient">
+            <stop offset="5%" stop-color="#001527ff"></stop>
+            <stop offset="95%" stop-color="#1c3149ff"></stop>
+         </linearGradient>
+      </defs>
+      <path d="M 0,400 C 0,400 0,200 0,200 C 205.71428571428572,257.14285714285717 822.8571428571429,228.57142857142858 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150"></path>
+   </svg>
+   <footer>
+      <div class="container-footer">
+         <div class="privacy space-above-footer">
+            <a href="#">Privacy</a>
+         </div>
+         <div class="line-separator1 space-above-footer">
+            <p>|</p>
+         </div>
+         <div class="terms space-above-footer">
+            <a href="#">Terms</a>
+         </div>
+         <div class="line-separator2 space-above-footer">
+            <p>|</p>
+         </div>
+         <div class="contact space-above-footer">
+            <a href="#">Contact</a>
+         </div>
+      </div>
+      <p class="copyright-text">Copyright 2021, Castor Software</p>
+   </footer>
 
 </div>
 
