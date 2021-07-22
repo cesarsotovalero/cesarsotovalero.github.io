@@ -15,7 +15,7 @@ I am continuously looking for highly motivated master or bachelor students at KT
 
 The following is a list of research topics that I’m particularly interested in doing further investigation. Any kind of external collaboration is also welcome.
 
-## List of Topics
+# List of Topics
 
 * [1. Debloat of mobile apps](#1-debloat-of-mobile-apps)
 * [2. Automatic migration from Java &lt; 8 to Java 11 modular system](#2-automatic-migration-from-java--8-to-java-11-modular-system)
@@ -28,7 +28,7 @@ The following is a list of research topics that I’m particularly interested in
 
 ---
 
-## 1. Debloat of mobile apps
+# 1. Debloat of mobile apps
 
 ### Motivation
 
@@ -54,7 +54,7 @@ Select a set of Android applications for which we have the source code and that 
 
 ---
 
-## 2. Automatic migration from Java < 8 to Java 11 modular system
+# 2. Automatic migration from Java < 8 to Java 11 modular system
 
 ### Motivation
 
@@ -80,7 +80,7 @@ Select a set of Java applications for which we have the source code that compile
 
 ---
 
-## 3. Identification of program hotpots by monitoring system calls
+# 3. Identification of program hotpots by monitoring system calls
 
 ### Motivation
 
@@ -104,7 +104,7 @@ Select a set of Java applications and monitor their systems calls according to d
 
 ---
 
-## 4. Automatic repair of dependency conflicts in Java
+# 4. Automatic repair of dependency conflicts in Java
 
 ### Motivation
 
@@ -132,7 +132,7 @@ Select a set of open-source projects that use Maven and have dependency conflict
 
 ---
 
-## 5. Feature-guided program debloating
+# 5. Feature-guided program debloating
 
 ### Motivation
 
@@ -163,7 +163,7 @@ We evaluate our approach by conducting case studies on removing cross-cutting fe
 
 ---
 
-## 6. Fine-grained specialization of JS libraries
+# 6. Fine-grained specialization of JS libraries
 
 ### Motivation
 
@@ -192,7 +192,7 @@ Our approach will be evaluated by conducting case studies of specializing in rea
 
 ---
 
-## 7. Towards automatic untangling of APIs
+# 7. Towards automatic untangling of APIs
 
 ### Motivation
 
@@ -219,7 +219,7 @@ We evaluate our approach by conducting case studies on real-world fat and popula
 
 ---
 
-## 8. Automatic Debloat of Bots Dependency Alerts
+# 8. Automatic Debloat of Bots Dependency Alerts
 
 ### Motivation
 
