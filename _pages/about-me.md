@@ -53,7 +53,8 @@ Out of work, I enjoy spending time with my family, reading ~~real~~ books, and r
      2. you verify your form on formspree.io.
 -->
 
-<form class="wj-contact" action="https://formspree.io/mrgqpknn" method="POST">
+
+<form id="contact-me" class="wj-contact" action="https://formspree.io/mrgqpknn" method="POST">
     <input type="text" name="email" placeholder="Your Email Address">
     <textarea type="text" name="content" rows="5" placeholder="Message"></textarea>
     <input type="hidden" name="_next" value="<REDIRECTION LINK> ">

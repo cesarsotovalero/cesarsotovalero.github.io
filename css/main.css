@@ -1266,6 +1266,13 @@ code {
 !important;
 }
 
+@media screen and (max-width: 415px) {
+  code {
+    font-size: 12px;
+  }
+}
+
+
 code pre {
   color: black;
   background-color: var(--main-background-color);
@@ -1579,6 +1586,12 @@ figure figcaption {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
+@media screen and (max-width: 415px) {
+  figure figcaption {
+    font-size: .6em;
+  }
+}
+
 
 /* --- Gallery --- */
 
@@ -1659,6 +1672,7 @@ ul {
 #i-tag {
   width: 1.2em;
   vertical-align: middle;
+  margin-right: 3px;
 }
 
 @media screen and (max-width: 415px) {
@@ -1666,7 +1680,6 @@ ul {
     margin-left: 0;
   }
 }
-
 
 .flex-container {
   display: flex;

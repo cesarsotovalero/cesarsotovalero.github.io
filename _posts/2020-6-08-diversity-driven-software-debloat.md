@@ -36,9 +36,7 @@ public class FruitSalad {
         throw new IllegalArgumentException();
     }
 }
-{% endhighlight %}
 
-{% highlight java linenos %}
 public class FruitSaladTest {
     @Test(expected = IllegalArgumentException.class)
     public void mixItUp() {
