@@ -186,15 +186,6 @@ img {
   max-width: 100%;
 }
 
-.disqus-comments {
-  margin-top: 30px;
-}
-
-@media only screen and (min-width: 768px) {
-  .disqus-comments {
-    margin-top: 40px;
-  }
-}
 
 /* --- Navbar --- */
 
@@ -631,6 +622,10 @@ footer .theme-by {
   footer .copyright {
     font-size: 16px;
   }
+}
+
+#support-link {
+ color: var(--main-text-color);
 }
 
 #support-link:hover {
@@ -1762,14 +1757,6 @@ ul {
   color: #808080;
 }
 
-/* DISQUS */
-
-.disqus .disqus-thread a {
-  color: steelblue;
-  text-decoration: underline;
-}
-
-
 /* LAZINESS BLUR EFFECT FOR IMAGES */
 /* @SEE https://github.com/aFarkas/lazysizes */
 
@@ -1793,6 +1780,11 @@ ul {
 
 .fade-in.lazyloaded {
   opacity: 1;
+}
+
+/* gisqus */
+.giscus {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
