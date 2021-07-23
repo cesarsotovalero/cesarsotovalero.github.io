@@ -610,7 +610,7 @@ footer .copyright {
 
 @media only screen and (max-width: 768px) {
   footer .copyright {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -631,6 +631,10 @@ footer .theme-by {
   footer .copyright {
     font-size: 16px;
   }
+}
+
+#support-link:hover {
+  color: hotpink;
 }
 
 .highligher-rouge {
@@ -1692,14 +1696,14 @@ ul {
   margin-right: 12px;
 }
 
-.flex-container-footer {
+.flex-container-footer-badges {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   padding-top: 10px;
 }
 
-.flex-container-footer a {
+.flex-container-footer-badges a {
   padding: 0 7px 0 7px;
   margin-bottom: 5px;
 }
