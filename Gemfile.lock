@@ -231,6 +231,8 @@ GEM
     multipart-post (2.1.1)
     nokogiri (1.11.7-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.7-x86_64-linux)
+      racc (~> 1.4)
     nuggets (1.6.0)
     octokit (4.21.0)
       faraday (>= 0.9)
@@ -276,6 +278,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   github-pages (~> 214)
@@ -291,4 +294,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.21
+   2.2.23
