@@ -207,7 +207,7 @@ main {
   color-scheme: light;
 }
 
-.gsc-reactions-count, .gsc-upvotes {
+.gsc-upvotes {
   display: none
 }
 
@@ -225,4 +225,8 @@ main {
 
 .text-xs {
   font-size: 0.8rem;
+}
+
+.justify-center {
+  justify-content: left;
 }
