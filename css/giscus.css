@@ -207,8 +207,9 @@ main {
   color-scheme: light;
 }
 
-.giscus {
-  margin-top: 3rem;
+.giscus, .giscus-frame {
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .gsc-upvotes {
@@ -221,24 +222,27 @@ main {
   font-size: 1.1rem;
 }
 
-@media only screen and (max-width: 425px) {
-  .font-semibold .text-sm {
-    font-size: 0.9rem;
-  }
-  .text-xs {
-    font-size: 0.7rem;
-  }
-}
-
 .text-sm {
   font-family: "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
 .text-xs {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (max-width: 425px) {
+  .font-semibold  {
+    font-size: 0.9rem;
+  }
+  .text-sm {
+    font-size: 0.8rem;
+  }
+  .text-xs {
+    font-size: 0.6rem;
+  }
 }
 
 .justify-center {
