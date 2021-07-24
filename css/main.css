@@ -1220,10 +1220,17 @@ table {
   border-collapse: collapse;
   display: block;
   max-width: fit-content;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   overflow-x: auto;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 425px) {
+  table {
+    font-size: 15px;
+  }
+}
+
 
 table thead tr {
   background-color: var(--main-text-color);
