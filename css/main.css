@@ -1118,6 +1118,7 @@ logo-main a:hover {
   color: var(--main-text-color);
   border: 1px solid #777;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
