@@ -141,7 +141,7 @@
 
 main {
   --color-text-primary: #24292f;
-  --color-text-secondary: #57606a;
+  --color-text-secondary: var(--post-meta-index-color);
   --color-text-tertiary: #57606a;
   --color-text-link: #0969da;
   --color-text-danger: #cf222e;
