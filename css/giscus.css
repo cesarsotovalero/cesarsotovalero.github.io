@@ -204,10 +204,25 @@ main .pagination-loader-container {
 
 /*! Custom CSS */
 main {
-  color-scheme: dark
+  color-scheme: light;
 }
 
 .gsc-reactions-count, .gsc-upvotes {
   display: none
 }
 
+.font-semibold {
+  font-weight: 700;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+.text-sm {
+  font-family: "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.text-xs {
+  font-size: 0.8rem;
+}
