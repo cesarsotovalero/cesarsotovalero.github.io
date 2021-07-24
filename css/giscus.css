@@ -225,8 +225,14 @@ main {
 
 .text-xs {
   font-size: 0.8rem;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .justify-center {
   justify-content: left;
+}
+
+.text-center {
+  justify-content: left;
+  text-align: left;
 }
