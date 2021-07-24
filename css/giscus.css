@@ -207,6 +207,10 @@ main {
   color-scheme: light;
 }
 
+.giscus {
+  margin-top: 2rem;
+}
+
 .gsc-upvotes {
   display: none
 }
@@ -215,6 +219,15 @@ main {
   font-weight: 700;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .font-semibold .text-sm {
+    font-size: 0.9rem;
+  }
+  .text-xs {
+    font-size: 0.7rem;
+  }
 }
 
 .text-sm {
