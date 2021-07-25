@@ -55,7 +55,7 @@ Out of work, I enjoy spending time with my family, reading ~~real~~ books, and r
 
 
 <form id="contact-me" class="wj-contact" action="https://formspree.io/mrgqpknn" method="POST">
-    <input type="text" name="email" placeholder="Your Email Address">
+    <input type="text" name="email" placeholder="Email">
     <textarea type="text" name="content" rows="5" placeholder="Message"></textarea>
     <input type="hidden" name="_next" value="<REDIRECTION LINK> ">
     <input type="hidden" name="_subject" value="New Contact Form Submission">
@@ -70,7 +70,6 @@ form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
     margin-top: 0.25em;
     margin-bottom: 0.5em;
     padding: 0.75em;
-    font-family: monospace, sans-serif;
     font-weight: lighter;
     border-style: solid;
     border-color: #444;

@@ -35,10 +35,11 @@ use-site-title: true
        {% endif %}
      <p class="post-meta-index">
                      Posted on {{ post.date | date: "%B %-d, %Y" }}
+              <!---
               <span id="comments-count">
                  <i class="fas fa-comments"></i>
                  <a href="https://www.cesarsotovalero.net{{post.url}}#disqus_thread">0 comments</a>
-              </span>
+              </span> -->
      </p>
          </span>
       <div class="post-entry-container">
