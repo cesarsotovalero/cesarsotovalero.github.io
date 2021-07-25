@@ -72,7 +72,7 @@ use-site-title: true
 
 ---
 
-<h1 class="text-center" style="font-family: 'Open Sans'; font-weight: lighter">Organizations </h1>
+<h1 class="text-center" style="font-family: 'Linux Biolinum'; font-weight: lighter">Organizations </h1>
 
 <p align="center">
 <a href="https://www.kth.se"><img class="" title="KTH" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/kth_logo.png" alt="KTH" height="65"></a>
