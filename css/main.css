@@ -208,18 +208,19 @@ img {
 .navbar-custom {
   background-color: var(--navbar-color);
   border-bottom: 1px solid #DDDDDD;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum Capitals",'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
   transition: padding .5s ease-in-out;
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  font-weight: 700;
 }
 
 .navbar-custom .nav li a {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
+  font-size: 14px;
+  letter-spacing: 0px;
 }
 
 .navbar-custom .navbar-brand,
@@ -260,7 +261,13 @@ img {
 }
 
 .navbar-brand {
-  font-size: 15px;
+  font-family: "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  font-size: 18px;
+}
+@media only screen and (max-width: 425px) {
+  .navbar-brand {
+    font-size: 16px;
+  }
 }
 
 .navbar.navbar-default.navbar-fixed-top.navbar-custom {
@@ -539,6 +546,7 @@ img {
 .mailchimp-subscribe-section .button {
   height: 3rem;
   font-size: 1.5rem;
+  font-family: "Linux Biolinum";
 }
 
 @media only screen and (min-width: 980px) {
@@ -1137,7 +1145,7 @@ logo-main a:hover {
 /* --- Pager --- */
 
 .pager li a {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 800;
@@ -1416,7 +1424,7 @@ td.gutter {
 
 
 .list-filters {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum",'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
   padding-top: 10px;
