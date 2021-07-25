@@ -218,7 +218,7 @@ main {
 
 .font-semibold {
   font-weight: 700;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   font-size: 18px;
   color: var(--main-text-color);
 }
@@ -228,8 +228,8 @@ main {
 }
 
 .text-sm {
-  font-family: "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 16px;
+  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 18px;
   line-height: 1.5rem;
   color: var(--main-text-color);
 }
@@ -244,7 +244,7 @@ main {
     font-size: 15px;
   }
   .text-sm {
-    font-size: 14px;
+    font-size: 16px;
   }
   .text-xs {
     font-size: 10px;

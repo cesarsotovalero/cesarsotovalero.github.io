@@ -15,16 +15,18 @@
 /* --- General --- */
 
 body {
-  font-family: "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 18px;
+  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 20px;
   position: relative;
   color: var(--main-text-color);
   background-color: var(--main-background-color);
+  letter-spacing: -0.5px;
 }
 
 @media only screen and (max-width: 425px) {
   body {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -40,20 +42,24 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
+  font-weight: bold;
 }
 
 h1 {
   margin-top: 35px;
+  letter-spacing: -1.5px;
 }
 
 h2 {
   margin-top: 30px;
+  letter-spacing: -0.25px;
 }
 
 h3 {
   margin-top: 15px;
+  letter-spacing: -0.5px;
 }
 
 
@@ -70,8 +76,7 @@ a:hover, a:focus {
 blockquote {
   color: var(--main-text-color);
   background-color: var(--blockquote-background-color);
-  font-style: italic;
-  font-size: 16px;
+  font-size: 18px;
   border-: 1px solid #eee;
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
@@ -80,7 +85,7 @@ blockquote {
 
 @media only screen and (max-width: 425px) {
   blockquote {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -625,7 +630,7 @@ footer .theme-by {
 }
 
 #support-link {
- color: var(--main-text-color);
+  color: var(--main-text-color);
 }
 
 #support-link:hover {
@@ -911,7 +916,7 @@ logo-main a:hover {
 }
 
 #full-tags-list {
-  font-family: "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
 }
 
 #full-tags-list .tag-entry {
@@ -973,11 +978,13 @@ logo-main a:hover {
 .intro-header .page-heading h1 {
   margin-top: 0;
   font-size: 46px;
+  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
 }
 
 .intro-header .post-heading h1 {
   margin-top: 0;
   font-size: 35px;
+  word-spacing: 2px;
 }
 
 .intro-header .page-heading .page-subheading,
@@ -1043,7 +1050,7 @@ logo-main a:hover {
   }
 
   .intro-header .page-heading h1 {
-    font-size: 64px;
+    font-size: 72px;
   }
 
   .intro-header .post-heading h1 {
@@ -1112,7 +1119,7 @@ logo-main a:hover {
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  padding: 10px 5px;
+  padding: 10px 10px;
   background: var(--main-background-color);
   border-radius: 1px;
   color: var(--main-text-color);
@@ -1589,7 +1596,7 @@ figure figcaption {
   line-height: 1em;
   max-width: 90%;
   position: absolute;
-  font-family: "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
