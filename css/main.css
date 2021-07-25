@@ -147,7 +147,7 @@ em {
 }
 
 .post-title-main {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 hr.small {
@@ -733,7 +733,7 @@ logo-main a:hover {
 .post-preview .post-meta,
 .post-heading .post-meta {
   color: var(--post-meta-index-color);
-  font-size: 16px;
+  font-size: 18px;
   /*font-style: italic;*/
   margin: 10px 0 10px;
 }
@@ -741,7 +741,7 @@ logo-main a:hover {
 @media only screen and (max-width: 425px) {
   .post-preview .post-meta,
   .post-heading .post-meta {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -809,7 +809,7 @@ logo-main a:hover {
 }
 
 .post-preview .post-title {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .post-subtitle {
@@ -1624,7 +1624,7 @@ figure figcaption {
 
 @media screen and (max-width: 415px) {
   figure figcaption {
-    font-size: .6em;
+    font-size: .7em;
   }
 }
 
@@ -1774,7 +1774,7 @@ ul {
 @media only screen and (max-width: 470px) {
   .post-meta-index {
     display: flex;
-    font-size: 14px;
+    font-size: 16px;
     flex-direction: row;
     flex-wrap: wrap;
   }
