@@ -741,7 +741,7 @@ logo-main a:hover {
 @media only screen and (max-width: 425px) {
   .post-preview .post-meta,
   .post-heading .post-meta {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -951,7 +951,7 @@ logo-main a:hover {
 
 #full-tags-list .tag-entry .entry-date {
   color: #808080;
-  font-size: 1.25rem;
+  font-size: 16px;
 }
 
 /* --- Post and page headers --- */
@@ -1820,8 +1820,17 @@ ul {
 }
 
 #black-icons li {
- padding: 0;
+ padding-right: 0px;
 }
+
+@media only screen and (max-width: 470px) {
+  #black-icons li {
+    padding-right: 4px;
+  }
+}
+
+
+
 
 /* gisqus */
 .giscus {

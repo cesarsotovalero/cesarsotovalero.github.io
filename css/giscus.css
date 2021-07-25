@@ -226,7 +226,7 @@ main {
 }
 
 .mr-2 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .text-sm {
@@ -243,16 +243,16 @@ main {
 
 @media only screen and (max-width: 425px) {
   .font-semibold  {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .mr-2 {
+    font-size: 16px;
   }
   .text-sm {
-    font-size: 16px;
+    font-size: 14px;
   }
   .text-xs {
     font-size: 10px;
-  }
-  .mr-2 {
-    font-size: 15px;
   }
 }
 
