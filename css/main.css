@@ -42,9 +42,10 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-family: "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 h1 {
@@ -73,6 +74,9 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+
+
+
 blockquote {
   color: var(--main-text-color);
   background-color: var(--blockquote-background-color);
@@ -89,9 +93,16 @@ blockquote {
   }
 }
 
+blockquote p {
+  line-height: 1.5;
+}
 
 blockquote p:first-child {
   margin-top: 0;
+}
+
+em {
+  font-style: normal;
 }
 
 .post-categories {
@@ -714,9 +725,9 @@ logo-main a:hover {
 
 .posts-list .post-subtitle {
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
-  font-family: "Open Sans";
+  font-family: "Linux Biolinum Slanted", "Open Sans";
 }
 
 .post-preview .post-meta,
@@ -908,6 +919,17 @@ logo-main a:hover {
   background: rgba(64, 64, 64, 0.75);
   border-color: white;
   text-decoration: none;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 415px) {
+  .tag-btn {
+    font-size: 14px;
+  }
+  .tag-btn:hover {
+    color: var(--main-background-color);
+    background-color: var(--main-text-color);
+  }
 }
 
 .tag-btn:hover {
@@ -989,18 +1011,19 @@ logo-main a:hover {
 
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 768px) {
   .intro-header .page-heading .page-subheading,
   .intro-header .post-heading .post-subheading {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -1054,7 +1077,7 @@ logo-main a:hover {
   }
 
   .intro-header .post-heading h1 {
-    font-size: 38px;
+    font-size: 42px;
   }
 
   .intro-header.big-img .img-desc {

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hi, I'm César
-subtitle: I'm a PhD student doing excellent research in Software Technology for the benefit of the Swedish industry
+subtitle: I'm a Ph.D. student doing excellent research in Software Technology
 keywords: César Soto Valero, research, software engineering, KTH, WASP, PhD student
 description: I'm a PhD student doing excellent research in Software Technology for the benefit of the Swedish industry
 use-site-title: true

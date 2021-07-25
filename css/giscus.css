@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/linux-biolinum');
+
 /*!
  * GitHub Light v0.5.0
  * Copyright (c) 2012 - 2017 GitHub, Inc.
@@ -219,7 +221,7 @@ main {
 .font-semibold {
   font-weight: 700;
   font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--main-text-color);
 }
 
@@ -241,7 +243,7 @@ main {
 
 @media only screen and (max-width: 425px) {
   .font-semibold  {
-    font-size: 15px;
+    font-size: 18px;
   }
   .text-sm {
     font-size: 16px;
