@@ -227,6 +227,7 @@ main {
 
 .mr-2 {
   font-size: 20px;
+  color: var(--main-text-color);
 }
 
 .text-sm {
