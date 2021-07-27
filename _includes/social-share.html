@@ -1,41 +1,40 @@
 <section id="social-share-section">
    <span class="sr-only">Share: </span>
 
-   {% if site.share-links-active.twitter %}
    <!--- Share on Twitter -->
    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}"
       class="btn btn-social-icon btn-twitter" title="Share on Twitter">
       <span id="share-twitter" class="fab fa-twitter" aria-hidden="true"></span>
       <span class="sr-only">Twitter</span>
    </a>
-   {% endif %}
 
-
-   {% if site.share-links-active.linkedin %}
    <!--- Share on LinkedIn -->
    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}"
       class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
       <span id="share-linkedin" class="fab fa-linkedin-in" aria-hidden="true"></span>
       <span class="sr-only">LinkedIn</span>
    </a>
-   {% endif %}
 
-
-   {% if site.share-links-active.facebook %}
    <!--- Share on Facebook -->
    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
       class="btn btn-social-icon btn-facebook" title="Share on Facebook">
       <span class="fab fa-facebook-f" aria-hidden="true"></span>
       <span class="sr-only">Facebook</span>
    </a>
-   {% endif %}
 
+   <!--- Share on Reddit -->
    <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}"
       class="btn btn-social-icon btn-reddit" title="Share on Reddit">
       <span class="fab fa-fw fa-reddit" aria-hidden="true"></span>
       <span class="sr-only">Reddit</span>
    </a>
 
+   <!--- Share on Hacker News -->
+   <a href="http://news.ycombinator.com/submitlink?u={{ page.url | absolute_url | url_encode }}&amp;t={{ page.title | url_encode }}"
+      class="btn btn-social-icon btn-reddit" title="Share on Hacker News">
+      <i class="fab fa-hacker-news-square"></i>
+      <!--      <span class="fab fa-fw fa-reddit" aria-hidden="true"></span>-->
+      <span class="sr-only">Reddit</span>
+   </a>
+
 </section>
-
-
