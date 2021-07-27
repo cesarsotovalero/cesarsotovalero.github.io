@@ -273,7 +273,7 @@
 }
 
 .btn-facebook {
-  color: var(--main-text-color);
+  color: var(--post-meta-index-color);
   background-color: var(--main-background-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
@@ -537,7 +537,7 @@
 }
 
 .btn-linkedin {
-  color: var(--main-text-color);
+  color: var(--post-meta-index-color);
   background-color: var(--main-background-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
@@ -762,7 +762,7 @@
 }
 
 .btn-reddit {
-  color: var(--main-text-color);
+  color: var(--post-meta-index-color);
   background-color: var(--main-background-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
@@ -894,7 +894,7 @@
 }
 
 .btn-twitter {
-  color: var(--main-text-color);
+  color: var(--post-meta-index-color);
   background-color: var(--main-background-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
