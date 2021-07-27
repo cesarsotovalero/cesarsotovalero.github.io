@@ -59,7 +59,7 @@
   font-size: 1.2em
 }
 
-.btn-social-icon {
+.btn-share-icon {
   position: relative;
   padding-left: 44px;
   text-align: left;
@@ -71,7 +71,7 @@
   padding: 0
 }
 
-.btn-social-icon > :first-child {
+.btn-share-icon > :first-child {
   position: absolute;
   left: 0;
   top: 0;
@@ -83,57 +83,57 @@
   border-right: 1px solid rgba(0, 0, 0, 0.2)
 }
 
-.btn-social-icon.btn-lg {
+.btn-share-icon.btn-lg {
   padding-left: 61px
 }
 
-.btn-social-icon.btn-lg > :first-child {
+.btn-share-icon.btn-lg > :first-child {
   line-height: 45px;
   width: 45px;
   font-size: 1.8em
 }
 
-.btn-social-icon.btn-sm {
+.btn-share-icon.btn-sm {
   padding-left: 38px
 }
 
-.btn-social-icon.btn-sm > :first-child {
+.btn-share-icon.btn-sm > :first-child {
   line-height: 28px;
   width: 28px;
   font-size: 1.4em
 }
 
-.btn-social-icon.btn-xs {
+.btn-share-icon.btn-xs {
   padding-left: 30px
 }
 
-.btn-social-icon.btn-xs > :first-child {
+.btn-share-icon.btn-xs > :first-child {
   line-height: 20px;
   width: 20px;
   font-size: 1.2em
 }
 
-.btn-social-icon > :first-child {
+.btn-share-icon > :first-child {
   border: none;
   text-align: center;
   width: 100% !important
 }
 
-.btn-social-icon.btn-lg {
+.btn-share-icon.btn-lg {
   height: 45px;
   width: 45px;
   padding-left: 0;
   padding-right: 0
 }
 
-.btn-social-icon.btn-sm {
+.btn-share-icon.btn-sm {
   height: 30px;
   width: 30px;
   padding-left: 0;
   padding-right: 0
 }
 
-.btn-social-icon.btn-xs {
+.btn-share-icon.btn-xs {
   height: 22px;
   width: 22px;
   padding-left: 0;
@@ -893,50 +893,50 @@
   background-color: #fff
 }
 
-.btn-twitter {
+.btn-tw {
   color: var(--post-meta-index-color);
   background-color: var(--main-background-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-.btn-twitter:focus, .btn-twitter.focus {
+.btn-tw:focus, .btn-tw.focus {
   color: var(--main-background-color);
   background-color: var(--main-text-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-.btn-twitter:hover {
+.btn-tw:hover {
   color: var(--main-background-color);
   background-color: var(--main-text-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-#share-twitter:hover {
+#share-tw:hover {
   color: var(--main-background-color);
 }
 
-.btn-twitter:active, .btn-twitter.active, .open > .dropdown-toggle.btn-twitter {
+.btn-tw:active, .btn-tw.active, .open > .dropdown-toggle.btn-tw {
   color: var(--main-background-color);
   background-color: var(--main-text-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-.btn-twitter:active:hover, .btn-twitter.active:hover, .open > .dropdown-toggle.btn-twitter:hover, .btn-twitter:active:focus, .btn-twitter.active:focus, .open > .dropdown-toggle.btn-twitter:focus, .btn-twitter:active.focus, .btn-twitter.active.focus, .open > .dropdown-toggle.btn-twitter.focus {
+.btn-tw:active:hover, .btn-tw.active:hover, .open > .dropdown-toggle.btn-tw:hover, .btn-tw:active:focus, .btn-tw.active:focus, .open > .dropdown-toggle.btn-tw:focus, .btn-tw:active.focus, .btn-tw.active.focus, .open > .dropdown-toggle.btn-tw.focus {
   color: #fff;
   background-color: #1583d7;
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-.btn-twitter:active, .btn-twitter.active, .open > .dropdown-toggle.btn-twitter {
+.btn-tw:active, .btn-tw.active, .open > .dropdown-toggle.btn-tw {
   background-image: none
 }
 
-.btn-twitter.disabled, .btn-twitter[disabled], fieldset[disabled] .btn-twitter, .btn-twitter.disabled:hover, .btn-twitter[disabled]:hover, fieldset[disabled] .btn-twitter:hover, .btn-twitter.disabled:focus, .btn-twitter[disabled]:focus, fieldset[disabled] .btn-twitter:focus, .btn-twitter.disabled.focus, .btn-twitter[disabled].focus, fieldset[disabled] .btn-twitter.focus, .btn-twitter.disabled:active, .btn-twitter[disabled]:active, fieldset[disabled] .btn-twitter:active, .btn-twitter.disabled.active, .btn-twitter[disabled].active, fieldset[disabled] .btn-twitter.active {
+.btn-tw.disabled, .btn-tw[disabled], fieldset[disabled] .btn-tw, .btn-tw.disabled:hover, .btn-tw[disabled]:hover, fieldset[disabled] .btn-tw:hover, .btn-tw.disabled:focus, .btn-tw[disabled]:focus, fieldset[disabled] .btn-tw:focus, .btn-tw.disabled.focus, .btn-tw[disabled].focus, fieldset[disabled] .btn-tw.focus, .btn-tw.disabled:active, .btn-tw[disabled]:active, fieldset[disabled] .btn-tw:active, .btn-tw.disabled.active, .btn-tw[disabled].active, fieldset[disabled] .btn-tw.active {
   background-color: #55acee;
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-.btn-twitter .badge {
+.btn-tw .badge {
   color: #55acee;
   background-color: #fff
 }
@@ -1071,4 +1071,58 @@
 .btn-yahoo .badge {
   color: #720e9e;
   background-color: #fff
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn-hn {
+  color: var(--post-meta-index-color);
+  background-color: var(--main-background-color);
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-hn:focus, .btn-hn.focus {
+  color: #000;
+  background-color: #bcddff;
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-hn:hover {
+  color: var(--main-background-color);
+  background-color: var(--main-text-color);
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-hn:active, .btn-hn.active, .open > .dropdown-toggle.btn-hn {
+  color: #000;
+  background-color: #bcddff;
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-hn:active:hover, .btn-hn.active:hover, .open > .dropdown-toggle.btn-hn:hover, .btn-hn:active:focus, .btn-hn.active:focus, .open > .dropdown-toggle.btn-hn:focus, .btn-hn:active.focus, .btn-hn.active.focus, .open > .dropdown-toggle.btn-hn.focus {
+  color: #000;
+  background-color: #98ccff;
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-hn:active, .btn-hn.active, .open > .dropdown-toggle.btn-hn {
+  background-image: none
+}
+
+.btn-hn.disabled, .btn-hn[disabled], fieldset[disabled] .btn-hn, .btn-hn.disabled:hover, .btn-hn[disabled]:hover, fieldset[disabled] .btn-hn:hover, .btn-hn.disabled:focus, .btn-hn[disabled]:focus, fieldset[disabled] .btn-hn:focus, .btn-hn.disabled.focus, .btn-hn[disabled].focus, fieldset[disabled] .btn-hn.focus, .btn-hn.disabled:active, .btn-hn[disabled]:active, fieldset[disabled] .btn-hn:active, .btn-hn.disabled.active, .btn-hn[disabled].active, fieldset[disabled] .btn-hn.active {
+  background-color: #eff7ff;
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-hn .badge {
+  color: #eff7ff;
+  background-color: #000
 }
