@@ -34,7 +34,7 @@
                   {% endif %}
 
                   {% if include.type == "post" %}
-                     <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+                  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
                   {% endif %}
                </div>
             </div>
@@ -63,7 +63,7 @@
                   <div class="container flex-container">
                      <!-- Date posted -->
                      <div class="flex-item">
-                       <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+                        <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
                      </div>
 
                      <!-- Read time -->
@@ -101,11 +101,27 @@
                   </div>
                   {% endif %}
                   {% endif %}
+
                </div>
             </div>
+
+         </div>
+
+      </div>
+
+   </div>
+
+
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {% if page.social-share %}
+            {% include social-share.html %}
+            {% endif %}
          </div>
       </div>
    </div>
+
 </header>
 
 {% else %}

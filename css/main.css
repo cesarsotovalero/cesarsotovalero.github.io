@@ -75,8 +75,6 @@ a:hover, a:focus {
 }
 
 
-
-
 blockquote {
   color: var(--main-text-color);
   background-color: var(--blockquote-background-color);
@@ -208,7 +206,7 @@ img {
 .navbar-custom {
   background-color: var(--navbar-color);
   border-bottom: 1px solid #DDDDDD;
-  font-family: "Linux Biolinum Capitals",'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
   transition: padding .5s ease-in-out;
@@ -264,6 +262,7 @@ img {
   font-family: "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   font-size: 18px;
 }
+
 @media only screen and (max-width: 425px) {
   .navbar-brand {
     font-size: 16px;
@@ -753,7 +752,6 @@ logo-main a:hover {
   }
 }
 
-
 .post-meta-index {
   color: var(--post-meta-index-color);
   font-size: 16px;
@@ -934,6 +932,7 @@ logo-main a:hover {
   .tag-btn {
     font-size: 14px;
   }
+
   .tag-btn:hover {
     color: var(--main-background-color);
     background-color: var(--main-text-color);
@@ -1161,7 +1160,7 @@ logo-main a:hover {
 
 @media only screen and (min-width: 768px) {
   .pager li a {
-    padding: 15px 25px;
+    padding: 10px 20px;
   }
 }
 
@@ -1269,7 +1268,6 @@ table {
     font-size: 15px;
   }
 }
-
 
 table thead tr {
   background-color: var(--main-text-color);
@@ -1405,7 +1403,6 @@ td.gutter {
   color: #c0392b;
 }
 
-
 /* Fix table border github gist snippets */
 
 .gist, .gist-file table tr {
@@ -1422,9 +1419,8 @@ td.gutter {
 
 }
 
-
 .list-filters {
-  font-family: "Linux Biolinum",'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -1456,7 +1452,6 @@ td.gutter {
     /*border-radius: 6px;*/
   }
 }
-
 
 #google-custom-search {
   margin-top: 50px;
@@ -1523,7 +1518,6 @@ input.gsc-input,
   transform: rotate(90deg);
 }
 
-
 .google {
   height: 2.4em;
   margin-left: 1em;
@@ -1589,7 +1583,6 @@ input.gsc-input,
   color: #0a568c;
 }
 
-
 /* Set the size of the div element that contains the map */
 #map {
   height: 400px; /* The height is 400 pixels */
@@ -1607,7 +1600,6 @@ input.gsc-input,
   border-radius: 0;
   color: #404040;
 }
-
 
 figure {
   margin: 0;
@@ -1828,7 +1820,7 @@ ul {
 }
 
 #black-icons li {
- padding-right: 0px;
+  padding-right: 0px;
 }
 
 @media only screen and (max-width: 470px) {
@@ -1837,14 +1829,10 @@ ul {
   }
 }
 
-
-
-
 /* gisqus */
 .giscus {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
