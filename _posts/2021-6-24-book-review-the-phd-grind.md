@@ -12,7 +12,7 @@ show-avatar: false
 date: 2021/6/24
 ---
 
-I recently read the amazing short book titled _"The Ph.D. Grind"_ by Prof. Philip Guo. The book (~100 pages) is a compendium of his memories, written right after finishing his Ph.D. in 2012. I felt ecstatic with such a brilliant masterpiece that I could barely put it down once I started. As a Ph.D. student doing research in Computer Science, I sometimes feel like I'm going through a unique and particularly arduous path. Reading this book helped me to deeply understand the singularities and generalities of pursuing a Ph.D. Thus, the big picture is much clearer for me now. I only wish I had read this piece earlier in my Ph.D. career. In this post, besides the ~~obvious~~ recommendation to read this book, I want to share my personal comments regarding some of the author's key reflections.
+I recently read the amazing short book titled _"The Ph.D. Grind"_ by [Prof. Philip Guo](https://pg.ucsd.edu). The book (~100 pages) is a compendium of his memories, written right after finishing his Ph.D. in 2012. I felt ecstatic with such a brilliant masterpiece that I could barely put it down once I started. As a Ph.D. student doing research in Computer Science, I sometimes feel like I'm going through a unique and particularly arduous path. Reading this book helped me to deeply understand the singularities and generalities of pursuing a Ph.D. Thus, the big picture is much clearer for me now. I only wish I had read this piece earlier in my Ph.D. career. In this post, besides the ~~obvious~~ recommendation to read this book, I want to share my personal comments regarding some of the author's key reflections.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/phd_grind.png alt: "The Ph.D. Grind" %}
