@@ -15,19 +15,14 @@ date: 2021/7/27
 I started using [Disqus](https://disqus.com) in 2018.
 At that time, it was ~~arguably~~ the leading comment management system for both small and large websites.
 Its popularity was well deserved: ubiquitous integration, easy to set up, friendly admin panel, clean comment widget design, excellent spam filters, [great content engaging features](https://disqus.com/features/engage/), etc.
-Two years later, in January 2020, Disqus started polluting their free users with [unwanted ads](https://help.uberflip.com/hc/en-us/articles/360023372611-Unwanted-ads-appear-on-Hub).
+Three years later, in January 2021, Disqus started polluting my blog with [unwanted ads](https://help.uberflip.com/hc/en-us/articles/360023372611-Unwanted-ads-appear-on-Hub).
 At the time of writing this post, Disqus is charging a monthly fee of $10/month per site to remove the ads.
 This change affects a large number of small businesses and bloggers that rely on Disqus to handle their visitors' comments.
 Fortunately, there are now great open-source alternatives out there that allow GitHub users to get rid of Disqus.
 In this post, I'll show you how I set up [Giscus](https://giscus.app) on this blog.
 Gisqus is an open-source comment system that relies on GitHub Discussions to securely and effectively manage comments.
 
-<figure class="jb_picture">
-  {% responsive_image path: img/posts/disqus-ads.jpg alt: "Disqus' intrusive ads suddenly appearing on my blog."%}
-  <figcaption class="stroke">
-    &#169; Disqus' intrusive ads suddenly appeared on my blog.
-  </figcaption>
-</figure>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Woah, <a href="https://twitter.com/disqus?ref_src=twsrc%5Etfw">@disqus</a> now forcing ads on the Commenting System. When tried to remove got this screen. :/ <br><br>These ads pay nothing &amp; they force them. <a href="https://t.co/8NxVis8n1A">pic.twitter.com/8NxVis8n1A</a></p>&mdash; Amit Bhawani (@amitbhawani) <a href="https://twitter.com/amitbhawani/status/828554455876505601?ref_src=twsrc%5Etfw">February 6, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 Comment management is a crucial part of the blogging routine.
 Comments are the perfect bridge to engage with your readers.
