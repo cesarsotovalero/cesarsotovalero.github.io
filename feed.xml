@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Replace the disqus commenting system on your blog</title>
+        <description>
+          GitHub-based open-source alternatives are much better - 
+          I started using Disqus in 2018. At that time, it was arguably the leading comment management system for both small and large websites. Its popularity was well deserved: ubiquitous integration, easy to set up, friendly admin panel, clean comment widget design, excellent spam filters, great content engaging features, etc. Two...
+        </description>
+        <pubDate>Tue, 27 Jul 2021 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/replace-disqus-with-a-better-alternative.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/replace-disqus-with-a-better-alternative.html</guid>
+      </item>
+    
+      <item>
         <title>Book review - The Ph.D. Grind</title>
         <description>
           A tale of perseverance and learning from failure - 

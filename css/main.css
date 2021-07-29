@@ -42,7 +42,7 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-weight: bold;
   text-transform: capitalize;
@@ -206,7 +206,7 @@ img {
 .navbar-custom {
   background-color: var(--navbar-color);
   border-bottom: 1px solid #DDDDDD;
-  font-family: "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
   transition: padding .5s ease-in-out;
@@ -259,9 +259,9 @@ img {
 }
 
 .navbar-brand {
-  font-family: 'Rouge Script',"Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  font-family: 'Rouge Script', "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   font-size: 26px;
-  text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (max-width: 425px) {
@@ -1145,7 +1145,7 @@ logo-main a:hover {
 /* --- Pager --- */
 
 .pager li a {
-  font-family: "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 800;
