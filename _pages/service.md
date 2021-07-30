@@ -48,6 +48,8 @@ published: true
 
 > My updated revision stats for journals can be seen in [Publons](https://publons.com/researcher/1355482/cesar-soto-valero/peer-review)(<a href="https://publons.com/researcher/1355482/cesar-soto-valero/peer-review" style="text-decoration: underline;"><i class="ai ai-publons"></i></a>).
 
+- [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021
+
 - [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019
 
 - [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018
@@ -56,7 +58,7 @@ published: true
 
 # Co-reviewer
 
-- [ACM Digital Threats: Research and Practice](https://dl.acm.org/journal/dtrap) 
+- [ACM Digital Threats: Research and Practice](https://dl.acm.org/journal/dtrap), 2021
 
 - [ISSRE'20](http://2020.issre.net/research-cfp)
 
