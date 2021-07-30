@@ -2,7 +2,7 @@
    <span class="sr-only">Share: </span>
 
    <!--- Share on Twitter -->
-   <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}"
+   <a href="https://twitter.com/intent/tweet?text={{ page.description | page.title | url_encode }}+{{ site.url }}{{ page.url }}"
       class="btn btn-share-icon btn-tw" title="Share on Twitter">
       <span id="share-tw" class="fab fa-twitter" aria-hidden="true"></span>
       <span class="sr-only">Twitter</span>
