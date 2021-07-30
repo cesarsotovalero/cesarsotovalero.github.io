@@ -24,6 +24,9 @@ jobs:
 
       - name: Building site
         run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace
+        env:
+          GISCUS_DATA_REPO_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
+          GISCUS_GISCUS_DATA_CATEGORY_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
 
       # - name: Install Minify deb package on Ubuntu
       #   if: matrix.os == 'ubuntu-latest'
