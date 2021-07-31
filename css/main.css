@@ -14,6 +14,10 @@
 
 /* --- General --- */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   font-weight: normal;
@@ -210,7 +214,7 @@ img {
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
   transition: padding .5s ease-in-out;
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  transition: top 0.1s; /* Transition effect when sliding down (and up) */
   font-weight: 700;
 }
 
@@ -271,7 +275,7 @@ img {
 }
 
 .navbar.navbar-default.navbar-fixed-top.navbar-custom {
-  transition: top 1.5s ease-in-out; /* Transition effect when sliding down (and up) */
+  transition: top 0.5s ease-in-out; /* Transition effect when sliding down (and up) */
 }
 
 
@@ -285,7 +289,7 @@ img {
 
   .navbar-custom.top-nav-short {
     padding: 0;
-    transition: top 0.5s;
+    transition: top 0s;
   }
 }
 

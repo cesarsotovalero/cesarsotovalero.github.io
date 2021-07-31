@@ -17,8 +17,10 @@ Black           900
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   font-family: "Poppins", sans-serif;
@@ -26,138 +28,110 @@ body {
   color: #e9ecef;
   font-size: 1rem;
   position: relative;
-  text-align: left;
-}
+  text-align: left; }
 
 #page-body {
-  padding-top: 80px;
-}
+  padding-top: 80px; }
 
 img {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 h1 {
   color: #212529;
   font-size: 2.5rem;
   font-weight: 800;
-  padding: 0.5rem 0.5rem 0.5rem 0;
-}
+  padding: 0.5rem 0.5rem 0.5rem 0; }
 
 h2 {
   color: #343a40;
   font-size: 2rem;
   font-weight: 600;
-  padding: 0.5rem 0.5rem 0.5rem 0;
-}
+  padding: 0.5rem 0.5rem 0.5rem 0; }
 
 h3 {
   color: #495057;
   font-size: 1.5rem;
   font-weight: 400;
-  padding: 0.5rem 0.5rem 0.5rem 0;
-}
+  padding: 0.5rem 0.5rem 0.5rem 0; }
 
 p {
   color: #495057;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
 a {
   color: white;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .section-text-heading {
-  text-align: center;
-}
+  text-align: center; }
 
 @media (max-width: 425px) {
   h1 {
-    font-size: 1.5rem;
-  }
+    font-size: 1.5rem; }
 
   h2 {
-    font-size: 1.25rem;
-  }
+    font-size: 1.25rem; }
 
   h3 {
-    font-size: 1rem;
-  }
+    font-size: 1rem; }
 
   body {
-    font-size: 0.75rem;
-  }
-}
+    font-size: 0.75rem; } }
 #section-features {
-  background-color: white;
-}
+  background-color: white; }
 
 .container-features {
   display: grid;
   grid-template-columns: 100px auto auto auto 100px;
   grid-template-rows: auto;
-  grid-template-areas: ". feat1 feat2 feat3 ." ". feat4 feat5 feat6 .";
-}
+  grid-template-areas: ". feat1 feat2 feat3 ." ". feat4 feat5 feat6 ."; }
 
 .feat1 {
   grid-area: feat1;
-  text-align: center;
-}
-.feat1 img {
-  width: 75%;
-  align-self: center;
-  justify-self: center;
-}
+  text-align: center; }
+  .feat1 img {
+    width: 75%;
+    align-self: center;
+    justify-self: center; }
 
 .feat2 {
   grid-area: feat2;
-  text-align: center;
-}
-.feat2 img {
-  width: 75%;
-  align-self: center;
-  justify-self: center;
-}
+  text-align: center; }
+  .feat2 img {
+    width: 75%;
+    align-self: center;
+    justify-self: center; }
 
 .feat3 {
   grid-area: feat3;
-  text-align: center;
-}
-.feat3 img {
-  width: 75%;
-  align-self: center;
-  justify-self: center;
-}
+  text-align: center; }
+  .feat3 img {
+    width: 75%;
+    align-self: center;
+    justify-self: center; }
 
 .feat4 {
   grid-area: feat4;
-  text-align: center;
-}
-.feat4 img {
-  width: 75%;
-  align-self: center;
-  justify-self: center;
-}
+  text-align: center; }
+  .feat4 img {
+    width: 75%;
+    align-self: center;
+    justify-self: center; }
 
 .feat5 {
   grid-area: feat5;
-  text-align: center;
-}
-.feat5 img {
-  width: 75%;
-  align-self: center;
-  justify-self: center;
-}
+  text-align: center; }
+  .feat5 img {
+    width: 75%;
+    align-self: center;
+    justify-self: center; }
 
 .feat6 {
   grid-area: feat6;
-  text-align: center;
-}
-.feat6 img {
-  width: 75%;
-  align-self: center;
-  justify-self: center;
-}
+  text-align: center; }
+  .feat6 img {
+    width: 75%;
+    align-self: center;
+    justify-self: center; }
 
 /*# sourceMappingURL=features.css.map */
