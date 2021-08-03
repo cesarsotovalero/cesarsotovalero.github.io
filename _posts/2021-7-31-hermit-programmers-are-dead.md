@@ -104,7 +104,7 @@ Communicating with colleagues, both written and spoken, will be essential for pr
 The ability to plan an idea, convince managers, execute and test it several times, collect feedback from clients, refactor the code, document, talk about it, iterate, and evolve.
 Can hermit programmers from the past century do all of that? Very unlikely.
 
-> "I have personally come across several programmers who only program in my career. And even though I was a recent junior, I didn't want to work with people like that." -- LinkedIn User.
+> "I have personally come across several programmers who only program in my career. And even though I was a recent junior, I didn't want to work with people like that." -- <cite>Commented by a LinkedIn user</cite>.
 
 In the foreseeable future, the reality is that there is more demand for programming skills than ever before.
 Programming as a profession isn't going to die soon, but some programmers may if they don't evolve continuously and surf the giant leaps coming along the way.
