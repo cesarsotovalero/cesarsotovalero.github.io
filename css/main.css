@@ -1149,7 +1149,7 @@ logo-main a:hover {
 /* --- Pager --- */
 
 .pager li a {
-  font-family: "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 800;
