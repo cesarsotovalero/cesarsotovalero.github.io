@@ -3,7 +3,7 @@ layout: post
 title:  Hermit programmers are dead
 subtitle: Don't call yourself just a programmer anymore
 tags: self-improvement
-description: With the advent of machine learning and artificial intelligence, there is no room for hermit programmers. You better diversify your skills or die in the process, so don't call yourself "just a programmer anymore.
+description: With the advent of cloud computing and AI, there is no room for hermit programmers. You better diversify your skills or die in the process, so don't call yourself just a programmer anymore.
 published: true
 keywords: programmers, dead, artificial intelligence, machine learning
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/ladybug_cover.jpg
@@ -18,7 +18,7 @@ They are perceived to be experts who know how to build, fix, and deploy software
 Most of them prefer to live in airtight environments, where the pieces of the software puzzle to be solved can be more easily isolated.
 That being said, at no other time in history has a technology-based job being so courted, demanded, highly paid.
 The reason: software is everywhere in today's world, and it doesn't write itself so far.
-However, with the advent of AI and ML technologies, the scenery may change soon for this profession.
+However, with the advent of cloud computing and AI, the scenery may change soon for this profession.
 It's time for programmers to mutate into pragmatic software engineers, recap and re-adapt, and take advantage of the only thing that machines cannot overtake: our human nature.
 Otherwise, I believe misfit programmers will perish... for sure.
 
@@ -41,14 +41,14 @@ In the beginning, there was an abyss between programmers and their managers.
 Computers were significantly more expensive than programmers.
 This situation encouraged [the hacker mentality](https://www.yegor256.com/2014/10/26/hacker-vs-programmer-mentality.html).
 People that lived by and for their own coding creations, pleasing managers from time to time,  without caring if others can understand what their code does (or how).
-This was possible in part because the number of available technologies (software + hardware devices) was so limited that, for instance, a C programmer could literally code for any available platform.
-We all know how cryptic can easily become a piece of driver code written in C.
+This was possible in part because the number of available technologies (software + hardware devices) was so limited that, for instance, a C programmer could literally code for any available platform; and we all know how cryptic can easily become a piece of driver code written in C.
 
 Today, the situation has changed radically.
-It is common for a single person to own at least three computing devices (pc + phone + tablet).
+It is common for a single person to own at least three computing devices (PC + phone + tablet).
 Meanwhile, traditional education is losing more and more territory in the technological arenas.
-It seems that the pace of technology is faster than the university curriculums are :confused:.
+It seems that the pace of technology is faster than the update of university curriculums are :confused:.
 Although the algorithmic principles stay mostly the same, it is in the latest technology space where recent graduates have to prove themselves to succeed in the job market.
+
 The number of new technologies appearing every day, such as programming languages or gadgets, overwhelms human comprehension.
 Simply put, the world has never been simple, but today (thanks to technology), it is more complex than ever (especially for programmers).
 
@@ -62,22 +62,22 @@ Deploying large software applications is now cheaper and better than ever before
 
 Developers now have a horde of machines at their disposal, living on the cloud.
 On-demand computing permits self-scaling software resources almost infinitely.
-As buying bananas in the supermarket, if you want more SSD storage or CPU processors, just need to add them to the basket.
+As buying bananas in the supermarket, if you want more SSD storage or CPU processors, you just need to add them to the basket.
 Infrastructure as Code (IaC) facilitates deploying and updating, in minutes, very complex software architectures using a single human-readable YAML file.
-Thus, managers don't worry too much about what capacity is needed, spending most of the efforts on the business-specific logic while trying to economize the budget they have.
+
+Managers don't worry too much about what capacity is needed, spending most of the efforts on the business-specific logic while trying to economize the budget they have.
 On the other hand, programmers don't care too much about handling low-level infrastructure or writing the fastest piece of code.
 The code that "works" is good enough, the infrastructure that brings economic revenues is the good one.
 
-The number of programmers is constantly on the rise, but many programmers no longer need to be experts, middle-skilled developers now do what needed an expert, and experts now do what needed a team.
+The number of programmers is constantly on the rise, but many programmers no longer need to be experts, middle-skilled developers now do what needed an expert before, and experts now do what needed a team ten years ago.
 Having all the services as standardized APIs and a few packages that can access them all, suddenly, the most complex programming task becomes a plumbing activity where no programmers are needed.
 
-
-However, the real impact is driven by the AI technologies powered by this massive cloud and data storage infrastructures.
+The biggest impact is probably driven by the AI technologies powered by this massive cloud and data storage infrastructures.
 For example, Microsoft recently announced [GitHub Copilot](https://copilot.github.com/), an AI-based system to assist developers in their daily routines.
-The system can write entire programs based on just the developer's intention and the billion lines of code hosted on GitHub.
+The system can write entire programs based on just the developer's intention, and it is feeded by the billion lines of code hosted on GitHub.
 Researchers are just starting to explore the potential of [machine learning for big code and naturalness](https://ml4code.github.io/papers.html).
-Perhaps someday we'll have cognitive AI writing entire complex software from scratch.
-Today the discussion is not if this will happen, but when.
+Perhaps someday we'll have [cognitive AI](https://towardsdatascience.com/the-rise-of-cognitive-ai-a29d2b724ccc) writing entire complex software from scratch.
+Today the discussion is not whether or not this will happen, but when.
 
 # The future
 
@@ -113,14 +113,15 @@ For others, the new conditions will simply don't match their expectations, thus 
 
 # Conclusion
 
-In summary, hermit programmers who only write code will die because:
-- As they don't diversify their skills, AI will take over what they do.
+In summary, hermit programmers who only write code for themselves will die because:
+
 - As they don't plan, you never know when (or if) they are going to finish a task.
 - As they don't document, their code is not reusable because nobody knows how it works.
 - As they don't test, chances are the code they write is full of bugs.
 - As they don't refactor, the software cannot evolve.
 - As they don't handle infrastructure, their code has only been executed on their machine, and only God knows what will happen when the code runs in production.
 - As they don't have good communication skills, they do not know how to sell what they do to the market, which is why they are always behind the competence.
+- As they don’t diversify their skills, powerful AI will take over their workplaces.
 
 Unless you're more than just a programmer, it's over.
 But if you are willing to embrace the change and be flexible, there are exciting times ahead!
