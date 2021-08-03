@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Hermit programmers are dead</title>
+        <description>
+          Don&apos;t call yourself just a programmer anymore - 
+          It’s 2021, and the job market has crashed due to a ghastly global pandemic. At the same time, one particular job has taken over an idealized professional place: the computer programmer. They are perceived to be experts who know how to build, fix, and deploy software artifacts. Most of them...
+        </description>
+        <pubDate>Sat, 31 Jul 2021 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/programmers-are-dead.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/programmers-are-dead.html</guid>
+      </item>
+    
+      <item>
         <title>Replace the disqus commenting system on your blog</title>
         <description>
           GitHub-based open-source alternatives are much better - 
@@ -213,17 +224,6 @@
         <pubDate>Thu, 26 Oct 2017 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/git-fundamentals.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/git-fundamentals.html</guid>
-      </item>
-    
-      <item>
-        <title>How I beat the IELTS Academic with Just a month of self-training</title>
-        <description>
-          Personal comments and suggestions - 
-          The International English Language Testing System (IELTS) is one of the major English language tests for higher education and immigration in the world. It is jointly managed by the British Council, IELTS Australia, and Cambridge English Language Assessment. IELTS is accepted by most Australian, British, Canadian and New Zealand academic...
-        </description>
-        <pubDate>Thu, 26 Oct 2017 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html</guid>
       </item>
     
   </channel>
