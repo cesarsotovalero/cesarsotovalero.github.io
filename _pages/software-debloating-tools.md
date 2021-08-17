@@ -10,6 +10,8 @@ This is a living list of tools for program debloating and software specializatio
 
 # Java
 
+- <a href="https://bit.ly/2WFALXf"><i class="fab fa-github"></i></a> [BloatLibD](https://bit.ly/2WFALXfl) detects offuscated third-party libraries that are bloated using a Jar2vect model ([paper](https://www.scitepress.org/Papers/2021/104594/104594.pdf)).
+   
 - <a href="https://github.com/castor-software/jdbl"><i class="fab fa-github"></i></a> [JDBL](https://castor-software.github.io/jdbl) automatically removes unnecessary code from Java applications through dynamic analysis ([paper](https://arxiv.org/pdf/2008.08401.pdf)).
 
 - <a href="https://github.com/castor-software/depclean"><i class="fab fa-github"></i></a> [DepClean](https://github.com/castor-software/depclean) automatically detects and removes unused dependencies in Maven projects ([paper](https://link.springer.com/article/10.1007/s10664-020-09914-8)).

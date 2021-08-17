@@ -13,9 +13,9 @@ published: true
 
 # Academic degrees
 
-- MSc Computer Science,  [\[Original Degree in Spanish\]](), [\[English Translation\]](../files/certificates/MSc_Degree_(certified)_eng.pdf), Universidad Central "Marta Abreu" de Las Villas, Cuba, 2016
+- MSc in Computer Science,  [[Original Degree in Spanish]()], [[English Translation](../files/certificates/MSc_Degree_(certified)_eng.pdf)], Universidad Central "Marta Abreu" de Las Villas, Cuba, 2016
 
-- BSc Computer Science, \[[Original Degree in Spanish](../files/certificates/BSc_Degree_Original.pdf)\], \[[English Translation](../files/certificates/BSc_Degree_(certified)_eng.pdf)\], Universidad Central "Marta Abreu" de Las Villas, Cuba, 2013
+- BSc in Computer Science, [[Original Degree in Spanish](../files/certificates/BSc_Degree_Original.pdf)], [[English Translation](../files/certificates/BSc_Degree_(certified)_eng.pdf)], Universidad Central "Marta Abreu" de Las Villas, Cuba, 2013
 
 # Awards
 
@@ -26,7 +26,7 @@ published: true
 
 # Other
 
-- [IELTS Academic Test 6.5](../img/IETLS_Test_Report_Form.jpg), University of Cambridge ESOL Examinations, 2016
+- [IELTS Academic Test 6.5](../img/IELTS_Test_Report_Form.jpg), University of Cambridge ESOL Examinations, 2016
 
 - [JSEP Reviewer Certificate](../files/certificates/SMR_Certificate.pdf), _Journal of Software: Evolution and Process_, 2017
 
