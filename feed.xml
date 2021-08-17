@@ -2,9 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>César Soto Valero</title>
-    <description>César - PhD Student</description>
+    <description>César - Ph.D. Student</description>
     <link>https://www.cesarsotovalero.net</link>
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>What does it take to become a software architect?</title>
+        <description>
+          A matter of responsibilities - 
+          Programmers and software engineers are in high demand today. In particular, those programmers who adapt to the new technological challenges and evolve their skills are more likely to grow professionally. A natural career path for experienced engineers to push forward their lifework is transitioning towards a software architect role. In...
+        </description>
+        <pubDate>Mon, 09 Aug 2021 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/the-difference-between-developers-and-software-architects.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-difference-between-developers-and-software-architects.html</guid>
+      </item>
     
       <item>
         <title>Hermit programmers are dead</title>
@@ -210,20 +221,9 @@
           Because learning is more important than competing - 
           I discovered the world of competitive programming challenges during my first year at university. At that time, I didn’t know much about computer algorithms or even mind sports. However, the idea of learning how to code by myself just using an online judge attracted my attention since the first moment....
         </description>
-        <pubDate>Fri, 15 Dec 2017 00:00:00 -0800</pubDate>
+        <pubDate>Wed, 13 Dec 2017 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/a-starting-guide-to-be-a-good-competitive-programmer.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/a-starting-guide-to-be-a-good-competitive-programmer.html</guid>
-      </item>
-    
-      <item>
-        <title>Git fundamentals</title>
-        <description>
-          The must-know git commands for software developers - 
-          “Git proved I could be more than a one-hit wonder” ― Linux Torvalds Git is the standard version-control system for software development. Git was created by Linux Torvals in 2005 to support the development of the Linux kernel. Since then, Git has become an essential tool for both junior and...
-        </description>
-        <pubDate>Thu, 26 Oct 2017 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/git-fundamentals.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/git-fundamentals.html</guid>
       </item>
     
   </channel>

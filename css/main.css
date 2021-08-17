@@ -30,7 +30,7 @@ body {
 
 @media only screen and (max-width: 425px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -91,7 +91,7 @@ blockquote {
 
 @media only screen and (max-width: 425px) {
   blockquote {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -202,6 +202,49 @@ img::-moz-selection {
 
 img {
   max-width: 100%;
+}
+
+/* --- Icons beside links --- */
+
+a[href^="https://youtu.be/"], a[href^="https://mirrors.dotsrc.org/fosdem/"] {
+  background: transparent url(/img/icons/youtube-play20px.svg) no-repeat center left;
+  padding-left: 22px;
+}
+
+a[href^="https://amzn.to/"], a[href^="http://amzn.to/"] {
+  background: transparent url(/img/icons/amazon20px.svg) no-repeat center right;
+  padding-right: 22px;
+}
+
+a[href^="https://docs.google.com/"] {
+  background: transparent url(/img/icons/docs20px.svg) no-repeat center left;
+  padding-left: 22px;
+}
+
+a[href$=".pdf"] {
+  background: transparent url(/img/icons/pdf20px.svg) no-repeat center left;
+  padding-left: 22px;
+}
+
+a[href$=".pptx"] {
+  background: transparent url(/img/icons/pptx20px.svg) no-repeat center left;
+  padding-left: 22px;
+}
+
+/* dont use icons for images */
+.badge a {
+  background: none;
+  padding: 0;
+}
+
+.vertical-gallery-item a {
+  background: none;
+  padding: 0;
+}
+
+.horizontal-gallery-item a {
+  background: none;
+  padding: 0;
 }
 
 
@@ -1856,6 +1899,15 @@ ul {
   }
 }
 
+/* badges */
+.badge {
+  float: right;
+  margin-left: 2em;
+  background-color: var(--main-background-color);
+}
+
+
+
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
   --link-color: black;
@@ -1878,4 +1930,7 @@ html[data-theme="dark"] {
   --main-background-color: hsl(0, 0%, 20%);
   --main-text-color: hsl(0, 0%, 85%);
 }
+
+
+
 
