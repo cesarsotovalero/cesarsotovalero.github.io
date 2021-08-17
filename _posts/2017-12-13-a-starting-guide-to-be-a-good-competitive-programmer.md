@@ -9,7 +9,7 @@ keywords: acm icpc, competition, problems, programming
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/competitive-programming-brain.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/competitive-programming-brain.png
 show-avatar: false
-date: 2017/12/15
+date: 2017/12/13
 ---
 
 I discovered the world of competitive programming challenges during my first year at university. At that time, I didn't know much about computer algorithms or even mind sports. However, the idea of learning how to code by myself just using an online judge attracted my attention since the first moment. 

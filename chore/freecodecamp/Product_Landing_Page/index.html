@@ -16,21 +16,21 @@
    <nav id="nav-bar">
       <ul class="menu">
          <li class="logo"><a href="#"><img src="logo.svg" alt="Logo" id="header-img" height="32" width="32"></a></li>
-         <li class="item nav-link"><a href="#section-video">Video</a></li>
-         <li class="item nav-link"><a href="#section-features">Features</a></li>
-         <li class="item nav-link"><a href="#section-pricing">Pricing</a></li>
-         <li class="item has-submenu">
-            <a tabindex="0">Products</a>
-            <ul class="submenu">
-               <li class="subitem"><a href="#">Product A</a></li>
-               <li class="subitem"><a href="#">Product B</a></li>
-               <li class="subitem"><a href="#">Product C</a></li>
-            </ul>
-         </li>
-         </li>
-         <li class="item button"><a href="#">Log In</a></li>
-         <li class="item button secondary"><a href="#">Sign Up</a></li>
-         <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+         <li><a class="item nav-link" href="#section-product">Product</a></li>
+         <li><a class="item nav-link" href="#section-video">Video</a></li>
+         <li><a class="item nav-link" href="#section-features">Features</a></li>
+         <li><a class="item nav-link" href="#section-pricing">Pricing</a></li>
+         <!--         <li class="item has-submenu">-->
+         <!--            <a tabindex="0">Products</a>-->
+         <!--            <ul class="submenu">-->
+         <!--               <li class="subitem"><a href="#">Product A</a></li>-->
+         <!--               <li class="subitem"><a href="#">Product B</a></li>-->
+         <!--               <li class="subitem"><a href="#">Product C</a></li>-->
+         <!--            </ul>-->
+         <!--         </li>-->
+         <!--         <li class="item button"><a href="#">Log In</a></li>-->
+         <!--         <li class="item button secondary"><a href="#">Sign Up</a></li>-->
+         <!--         <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>-->
       </ul>
    </nav>
 </header>
@@ -44,10 +44,16 @@
          <div class="product-desc">
             <h1>Excellent Research</h1>
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</h3>
-            <form action="https://www.freecodecamp.com/email-submit" id="form">
-               <input id="email" type="email" class="email-form" placeholder="Your email">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+               <input name="email"
+                      id="email"
+                      type="email"
+                      class="email-form"
+                      placeholder="Your email"
+               >
+               <input type="submit" class="btn-form" id="submit" value="View repository">
             </form>
-            <input type="submit" class="btn-form" id="submit" value="View repository">
+
          </div>
          <div class="product-img">
             <a href="#"><img src="logo.svg" alt="Logo" height="32" width="32"></a>

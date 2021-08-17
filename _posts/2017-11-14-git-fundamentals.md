@@ -9,7 +9,7 @@ keywords: command line, version control, GitHub, software developement
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/git_logo.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/git_logo.png
 show-avatar: false
-date: 2017/10/26
+date: 2017/11/14
 ---
 
 > "Git proved I could be more than a one-hit wonder" *― Linux Torvalds*

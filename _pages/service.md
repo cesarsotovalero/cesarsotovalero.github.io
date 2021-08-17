@@ -38,11 +38,11 @@ published: true
 
 # Thesis supervisor
 
-- [Using NLP Techniques for Log Analysis to Create Recommendations for Troubleshooting Processes](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf), Martin Sköld, **Master Thesis**, KTH 2020
+- [Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf), Martin Sköld, **Master Thesis**, KTH 2020
 
 - [Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf), Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020
 
-- [Análisis de La Actividad Competitiva en el Juego de Polo Acuático](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf?sequence=1&isAllowed=y), Pascalina Stanislas-Inglis. **Bachelor Thesis**, Cuba 2014
+- [Análisis de La Actividad Competitiva en el Juego de Polo Acuático](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf), Pascalina Stanislas-Inglis. **Bachelor Thesis**, Cuba 2014
 
 # Reviewer
 
