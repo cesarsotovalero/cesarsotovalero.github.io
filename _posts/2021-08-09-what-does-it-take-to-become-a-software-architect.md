@@ -14,8 +14,8 @@ date: 2021/08/09
 Programmers and software engineers are in high demand today.
 In particular, those programmers who [adapt to the new technological challenges and evolve their skills](https://www.cesarsotovalero.net/blog/hermit-programmers-are-dead.html) are more likely to grow professionally.
 A natural career path for experienced engineers to push forward their lifework is transitioning towards a software architect role.
-In a software project, the software architect is the person who has the authority to makes the technical decisions of its architecture and stay responsible for it.
-It doesn’t matter how big or small a software project is (or company); the software architect is a key person for the future of the project. 
+In a software project, the software architect is the person who has the authority to makes the technical decisions of its architecture and stay responsible for them.
+It doesn't matter how big or small a software project is (or company); the software architect is a key person for the future of the project. 
 Therefore, most architects are considered as valuable assets in most organizations, which implies holding generous salaries and enjoying a position of power there. 
 This position requires a high level of **authority** and **responsibility**.
 In this post, I’m going to explain what these two words actually mean and discuss the necessary skills to become a competent software architect.
@@ -60,7 +60,7 @@ As with everything else, scarcity, when combined with high demand, increases the
 
 If you are a developer, you might consider advancing your career to become a software architect.
 However, it is ~~impossible~~ very difficult to become a software architect without years of experience grinding as a developer.
-This is because developers are concerned only with the development phase of software, whereas architects are concerned with the design, implementation, testing, and releasing phases of the product.
+This is because developers are concerned only with the development phase of software, whereas architects deal with the design, implementation, testing, and releasing phases of the product.
 Architects are people who plan what to do and how to do it.
 Developers write code that is encapsulated into packages, configure hardware and software, install the network, and perform similar hands-on tasks.
 As explained in the book [Design It!: From Programmer to Software Architect](https://amzn.to/3lWMija), by Michael Keeling, transitioning into a software architect role is a natural step for successful developers.
@@ -78,7 +78,7 @@ The promotion implies positioning the architect as the man in power, not just a 
 However, this role involves great responsibility and commitment.
 Together with the credit received from happy PMs (when the results are good), architects may take all the blame and responsibility if the project sinks.
 Dealing with such a responsibility demands skills that not every developer possesses.
-And that is exactly his value.
+And that is exactly the reason of his value.
 
 # The skills
 
