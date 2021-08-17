@@ -15,7 +15,7 @@ The following is a non-exhaustive list of my technical presentations.
 
 - [A Longitudinal Analysis of Bloated Java Dependencies](../talks/FSE'21.pdf "pdf"){:target="_blank"}. Presented at ESEC/FSE, August 2021.
 
-- [Automated Software Debloat](../talks/50percent_seminar_kth_2021.pdf "pdf"){:target="_blank"}. 50% PhD Seminar. Presented at KTH, April 2021.
+- [Automated Software Debloat](../talks/50percent_seminar_kth_2021.pdf "pdf"){:target="_blank"}. 50% Ph.D. Seminar. Presented at KTH, April 2021.
 
 - [DepClean: Automatically Revealing Bloated Software Dependencies in Maven Projects](https://mirrors.dotsrc.org/fosdem/2021/D.dependency/dep_depclean.webm "video"){:target="_blank"}. Presented at FOSDEM, February 2021.
 

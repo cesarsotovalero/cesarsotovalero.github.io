@@ -258,7 +258,7 @@ plugins:
 # jekyll-feed
 feed:
   title: cesarsotovalero.net
-  subtitle: César - PhD Student
+  subtitle: César - Ph.D. Student
   path: feed.xml
 
 sass:
