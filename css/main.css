@@ -1655,19 +1655,20 @@ figure {
 }
 
 .stroke {
-  -webkit-text-stroke: 0.01rem black;
+  /*-webkit-text-stroke: 0.01rem black;*/
 }
 
 figure figcaption {
   bottom: 0.8em;
-  color: white;
+  color: var(--post-meta-index-color);
   font-size: .8em;
   left: .5em;
-  line-height: 1em;
-  max-width: 90%;
-  position: absolute;
+  line-height: 1.1em;
+  max-width: 100%;
+  /*position: absolute;*/
   font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);*/
+  padding-top: 1rem;
 }
 
 @media screen and (max-width: 415px) {

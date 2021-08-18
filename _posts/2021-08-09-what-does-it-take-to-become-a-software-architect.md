@@ -3,8 +3,13 @@ layout: post
 title: What does it take to become a software architect?
 subtitle: A matter of responsibilities
 tags: management
-description: The software architect is the person who has the authority to makes the technical decisions regarding the architecture of a software project and stay responsible for it. This position requires a high level of authority and responsibility. This post explains what these two words actually mean and discusses the necessary skills to become a competent software architect.
-keywords: fundamentals of software architect, role of software architect, software architect, software architect job description, software architect salary, what software architect is for
+description: The software architect is the person who has the authority to make the technical decisions regarding the architecture of a software project and stay responsible for them. This position requires a high level of authority and responsibility. This post explains what these two words actually mean and discusses the necessary skills to become a competent software architect.
+keywords: 
+  - ideal software architect,
+  - role of software architect,
+  - software architect, 
+  - software architect job description, 
+  - software architect salary
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/metro_in_stadium_cover.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/metro_in_stadium_cover.jpg
 show-avatar: false
@@ -16,7 +21,7 @@ In particular, those programmers who [adapt to the new technological challenges 
 A natural career path for experienced engineers to push forward their lifework is transitioning towards a software architect role.
 In a software project, the software architect is the person who has the authority to makes the technical decisions of its architecture and stay responsible for them.
 It doesn't matter how big or small a software project is (or company); the software architect is a key person for the future of the project. 
-Therefore, most architects are considered as valuable assets in most organizations, which implies holding generous salaries and enjoying a position of power there. 
+Therefore, most architects are considered valuable assets in most organizations, which implies holding generous salaries and enjoying a position of power there. 
 This position requires a high level of **authority** and **responsibility**.
 In this post, I’m going to explain what these two words actually mean and discuss the necessary skills to become a competent software architect.
 
@@ -33,8 +38,9 @@ The term “architect” is borrowed from traditional construction.
 When constructing a building, a plan is needed, as well as a team of trained construction workers with a capable foreman to lead them all. 
 The architect is the foreman in charge of determining the construction procedures to follow. 
 His job consist in translating the desires of the builder owner into more detailed plans and instructions that the workers can understand. 
-This requires taking crucial decisions, such as the location to place the building, the materials and construction tools to be used, etc. 
-If the architect is wrong, the structure of the whole building may break, event to the point of making it fall down to the ground eventually.
+This requires taking crucial decisions, such as the location to place the building, the materials and construction tools to be used, etc.
+If the architect is wrong, the structure of the entire building can break down, to the point of eventually causing it to fall to the ground.
+Thus, his decisions are really important for the project.
 
 > "Architecture is about the important stuff" -- <cite>[Ralph Johnson](https://en.wikipedia.org/wiki/Ralph_Johnson_(computer_scientist))</cite>
 
@@ -51,21 +57,23 @@ This is what delegation is all about. Responsibility should always come with pow
 
 As Yegor Bugayenko says in his book [Code Ahead](https://amzn.to/3g44mUw), group responsibility is the most terrible mistake a team can ever make.
 Therefore, in most projects, there should be only one architect on the team.
-This is crucial for the future of the project.
+This decision is crucial for the future of the project.
 In most situations, the architect should act as a technical dictator with the ability to analyze and embrace reality, collect all available differing opinions, and find the best possible option while leaving personal emotions aside.
-These particular skills make software architects a scarce kind of people.
-As with everything else, scarcity, when combined with high demand, increases the market value exponentially.
+These particular skills make software architects a scarce kind of leaders.
+And as with everything else, scarcity, when combined with high demand, increases the market value exponentially.
 
 # The value
 
 If you are a developer, you might consider advancing your career to become a software architect.
-However, it is ~~impossible~~ very difficult to become a software architect without years of experience grinding as a developer.
-This is because developers are concerned only with the development phase of software, whereas architects deal with the design, implementation, testing, and releasing phases of the product.
+However, it is ~~impossible~~ very difficult to become a software architect without years of experience grinding hard as a developer.
+An architect needs to have experience developing software, but other skills give it its value.
+This is because most developers are concerned only with the development phase of software, whereas architects deal with the design, implementation, testing, and releasing phases of the product.
 Architects are people who plan what to do and how to do it.
 Developers write code that is encapsulated into packages, configure hardware and software, install the network, and perform similar hands-on tasks.
 As explained in the book [Design It!: From Programmer to Software Architect](https://amzn.to/3lWMija), by Michael Keeling, transitioning into a software architect role is a natural step for successful developers.
 
 When building a software product, architects need to have a proper understanding of what they are making.
+What is its purpose?
 The architect designs and connects the artifacts, how each module will be built, how these modules will be integrated, etc.
 A pragmatic architect is particularly valuable at the beginning of the project, when the rules of the game needs to be dictated.
 He should also be hands-on with the code.
@@ -75,19 +83,19 @@ For example, in a Java/Maven project, creating some initial files, configuring t
 
 Being promoted as a software architect gives not only a significant boost in the perceived salary.
 The promotion implies positioning the architect as the man in power, not just a highly-skilled software engineer.
-However, this role involves great responsibility and commitment.
+This role involves great responsibility and commitment.
 Together with the credit received from happy PMs (when the results are good), architects may take all the blame and responsibility if the project sinks.
 Dealing with such a responsibility demands skills that not every developer possesses.
-And that is exactly the reason of his value.
+And that is exactly the reason of the architects' value.
 
 # The skills
 
-To recap, software architects have two primary values to deal with: responsibility and authority.
+To recap, software architects have two primary skill to master: **responsibility** and **authority**.
 The architect is responsible for turning a concept into a realizable plan for delivery.
-For example,identifying the gaps in the enterprise architecture, or running up an initiative on a portfolio roadmap.
+For example, identifying the gaps in the enterprise architecture, or running up an initiative on a portfolio roadmap.
 To do so, an architect must collect different opinions before making his own decision.
 Even if he doesn't have all the merits of "the ideal architect", his decisions should be always final.
-Thus, an architect must be responsible for the entire success or failure of the product, establishes the business issues to be solved and evaluating the options to solve them.
+Thus, an architect must be responsible for the entire success or failure of the product, establishing the business issues to be solved, and putting all the options to solve them on the table.
 
 {% badge /img/badges/fundamentals-of-software-architecture-book.png 140 https://amzn.to/2VMCwVF %}
 In Chapter 1, the excellent book [Fundamentals of Software Architecture](https://amzn.to/2VMCwVF) refers to eight core skills to be expected from a software architect:
@@ -113,26 +121,26 @@ The architect should be, of course, an expert in the technical domain.
 But he should also listen to everybody and take their opinions into account, being an effective communicator and negotiator, just as a diplomat.
 The architect should communicate with the team through project artifacts, not directly.
 Because artifacts preserve reasoning for a much longer period than a temporal form of communication (e.g., a conversation, a meeting, etc).
-This requires social abilities, knowing how to work with people: recruit, motivate, and direct their results.
+This requires tecnical and social abilities, knowing how to work with people: recruit, motivate, and direct their results.
 
-Being a good coach and a teacher is a skill that great architects have in their toolsets, developing patience, especially when dealing with PMs.
+Being a good coach and a teacher is a characteristic that great architects have in their skill sets, developing patience is key, especially when dealing with PMs.
 An architect is connected with technology because technologies change rapidly in the software engineering domain, and most of the time, using one technology stack could impact the design.
 The architect has abstract thinking, which means that he thinks globally a sees the product as a whole, delivering his ideas in simple words.
-He is strong, which means that he has the ability to say "no" when it is difficult to do so; and disciplined, caring about software quality, processes, and rules to enforce them as much as possible.
-The ideal architect is also loyal, and he doesn't abandon the project as most developers might do.
+He is also strong, which means that he has the ability to say "no" when it is difficult to do so; and disciplined, caring about software quality, processes, and rules to enforce them as much as possible.
+The ideal architect is loyal. He doesn't abandon the project as most developers might do.
 He is also sincere, accepts his mistakes, and takes responsibility.
 
 That being said, architects are persons, too. 
 As such, they may take wrong decisions sometimes.
 To mitigate this from happening, the contract between the project and the architect must clearly explain how architect's results are validated.
-In case of misunderstandings, PMs should use documents to correct and point architects in the right direction, e.g., adjusting the `requirements` and `architecture` text written at the beginning of the project.
+In case of misunderstandings, PMs should use documents to correct and point architects in the right direction, e.g., adjusting the `requirements` and `architecture` documents written at the beginning of the project.
 The PM expects [a weekly report](https://www.yegor256.com/2015/05/11/software-architect-responsibilities.html) of the project that includes: `scope`, `status`, `issues`, `risks` happening in the project.
+This keeps the project going and prevents the architect to commit an irreparable mistake.
 
 # Conclusion 
 
 The software industry has a high demand for qualified software architects.
-These professionals have a very high value within organizations.  
-They have the necessary skills to deal with technology and people, which requires a rare combination of talents.
+These professionals have a very high value within organizations. They have the necessary skills to deal with technology and people, which requires a rare combination of talents.
 That being said, the architect is not an expert capable of solving all technical problems. Thus it is essential to control the quality of the decisions the architect makes via regular reviews.
 
 Are you ready to level up your career becoming a software architect? If not, why not?
