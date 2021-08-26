@@ -12,7 +12,7 @@ show-avatar: false
 date: 2018/09/14
 ---
 
-After reading [a paper](https://www.cqse.eu/fileadmin/content/news/publications/2020-unnecessary-code-tosem.pdf) about the negative impact of unnecessary code in the software industry, I felt stuck with the many different (but very related) concepts around this issue. One can think that unnecessary code is all code that is not needed for an application to run correctly. However, the fact is that the concept is more complicated than it seems, and sometimes it is not very easy to understand what _unnecessary_ means in this context. For example, there is a slight (but quite important) difference between what we know as dead code (code that will never be used) and unnecessary code (code that can be used or not, but definitely is not required for the application). 
+After reading the paper ["Is Static Analysis Able to Identify Unnecessary Source Code?"](https://www.cqse.eu/fileadmin/content/news/publications/2020-unnecessary-code-tosem.pdf) about the negative impact of unnecessary code in the software industry, I felt stuck with the many different (but very related) concepts around this topic. One can think that unnecessary code is all code that is not needed for an application to run correctly. However, the fact is that the concept is more complicated than it seems, and sometimes it is not very easy to understand what **unnecessary** means in this context. For example, there is a slight (but quite important) difference between what we know as dead code (code that will never be used) and unnecessary code (code that can be used or not, but definitely is not required for the application). 
 
 Thus, to put all the important related concepts together, I made the following diagram:
 
@@ -20,7 +20,7 @@ Thus, to put all the important related concepts together, I made the following d
   {% responsive_image path: img/general-diagram.png alt: "Diagram showing the concept of unnecessary code" %}
 </figure>
 
-I also put clear the following definitions:
+Le me clarify each concept in the diagram presented before:
 
 - **Used code:** code that is executed at runtime, within a specific time in a production environment. It depends directly on the entry point of the application that is being considered.
 - **Unused code:** code that is not being executed at runtime within a specific time period in a production environment.

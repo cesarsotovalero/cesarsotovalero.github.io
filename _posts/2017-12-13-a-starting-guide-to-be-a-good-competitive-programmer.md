@@ -85,7 +85,7 @@ Again, life is more than a competition. With time you will note that competitive
     alt="At UCLV, 2018"
     longdesc="#c13e1390" />
     <figcaption class="stroke">
-    &#169; César Soto at the local finals in Cuba, 2018
+    &#169; César Soto at the ACM-ICPC Local Finals in Cuba, 2018
     </figcaption>
 </figure>
 

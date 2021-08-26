@@ -10,6 +10,9 @@ This is a living list of tools for program debloating and software specializatio
 
 # Java
 
+
+- <a href="https://bit.ly/2WFALXf"><i class="fab fa-github"></i></a> [Slicer4J](https://github.com/resess/Slicer4J) an accurate, low-overhead dynamic slicer for Java programs ([paper](https://people.ece.ubc.ca/mjulia/publications/Slicer4J_2021.pdf)).
+
 - <a href="https://bit.ly/2WFALXf"><i class="fab fa-github"></i></a> [BloatLibD](https://bit.ly/2WFALXfl) detects offuscated third-party libraries that are bloated using a Jar2vect model ([paper](https://www.scitepress.org/Papers/2021/104594/104594.pdf)).
    
 - <a href="https://github.com/castor-software/jdbl"><i class="fab fa-github"></i></a> [JDBL](https://castor-software.github.io/jdbl) automatically removes unnecessary code from Java applications through dynamic analysis ([paper](https://arxiv.org/pdf/2008.08401.pdf)).
@@ -37,9 +40,9 @@ This is a living list of tools for program debloating and software specializatio
 
 # C/C++
 
-- <a href="https://github.com/cxreet/razor"><i class="fab fa-github"></i></a> [RAZOR](https://github.com/cxreet/razor) is a framework for post-deployment software debloating ([paper](https://www.usenix.org/system/files/sec19-qian.pdf).
+- <a href="https://github.com/cxreet/razor"><i class="fab fa-github"></i></a> [RAZOR](https://github.com/cxreet/razor) is a framework for post-deployment software debloating ([paper](https://www.usenix.org/system/files/sec19-qian.pdf)).
   
-- <a href="https://github.com/cxreet/Slimium"><i class="fab fa-github"></i></a> [Slimium](https://github.com/cxreet/Slimium) is a tool to debloat Chromium ([paper](https://dl.acm.org/doi/pdf/10.1145/3372297.3417866).
+- <a href="https://github.com/cxreet/Slimium"><i class="fab fa-github"></i></a> [Slimium](https://github.com/cxreet/Slimium) is a tool to debloat Chromium ([paper](https://dl.acm.org/doi/pdf/10.1145/3372297.3417866)).
 
 - [Nibbler](https://gitlab.com/brown-ssl/libfilter) is a tatic analysis tool to automatically find functions in the program and its shared library functions that are not used by the program. ([paper](https://dl.acm.org/doi/pdf/10.1145/3414997)).
 
@@ -48,7 +51,7 @@ This is a living list of tools for program debloating and software specializatio
 
 - <a href="https://github.com/moar82/jMetalPy"><i class="fab fa-github"></i></a> [MoMIT](https://github.com/moar82/jMetalPy) is a JavaScript interpreter minimizer ([paper](https://ieeexplore.ieee.org/document/8966499)).
 
-- <a href="https://github.com/hcvazquez/UFFRemover"><i class="fab fa-github"></i></a> [UFFRemover](https://github.com/hcvazquez/UFFRemover) is a slimming JavaScript tool for identifying and removing unused foreign functions (UFF) ([paper]()).
+- <a href="https://github.com/hcvazquez/UFFRemover"><i class="fab fa-github"></i></a> [UFFRemover](https://github.com/hcvazquez/UFFRemover) is a slimming JavaScript tool for identifying and removing unused foreign functions (UFF) ([paper](https://www.sciencedirect.com/science/article/abs/pii/S0950584918302210)).
 
 - <a href="https://r8.googlesource.com/r8"><i class="fab fa-github"></i></a> [R8](https://r8.googlesource.com/r8) is the Google substitute of Proguard.
 

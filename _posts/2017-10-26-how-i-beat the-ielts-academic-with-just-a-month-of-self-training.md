@@ -70,7 +70,7 @@ The best of all the advice I can give you to do well in IELTS is to understand v
 
 # Listening
 
-The Listening Test takes between 20 and 30 minutes to listen to a recording and to answer questions on what you hear, and 10 minutes to transfer your answers to the [Answer Sheet](https://cesarsotovalero.github.io/files/IELTS_Listening_Answer_Sheet.pdf). It consists of 4 sections. There are 40 questions in total. You need to answer all the questions as you listen to the recording. The recording is not paused at any time, and you hear it only once. The questions get more difficult as you progress through the test.
+The Listening Test takes between 20 and 30 minutes to listen to a recording and to answer questions on what you hear, and 10 minutes to transfer your answers to the [Listening Answer Sheet](https://cesarsotovalero.github.io/files/IELTS_Listening_Answer_Sheet.pdf). It consists of 4 sections. There are 40 questions in total. You need to answer all the questions as you listen to the recording. The recording is not paused at any time, and you hear it only once. The questions get more difficult as you progress through the test.
 
 The only way to improve your Listening ability is to **train your ears** to separate and understand the words you hear in the flow of a sentence. There is a big difference between seeing a word printed on paper while reading and hearing it. If you saw a word, it doesn't mean you will recognize it when you listen to it. This is why you must listen to every word you have seen at least once.
 
@@ -89,7 +89,7 @@ Finally, recall that even when you feel confident, a lot of practice is still ne
 
 The Reading Test takes 1 hour, and your task is to read passages of text and to answer questions according to what you have learned. It consists of 3 text passages and has 40 questions in total. Your job is to read the passages and either answer questions, label diagrams, complete sentences, or fill gaps. For every type of task, there are instructions and an example. Passages are taken from books, newspapers, magazines, and the topics are very diverse, from scuba diving to space exploration. Passages progress in difficulty, with the first being the easiest and the third the hardest.
 
-As I said before, time is your greatest enemy. In the Listening Test you don’t need to care about time, but the Reading Test is a different story. You need to manage it very carefully yourself. Be smart, due to the progress in level of difficulty, spend 15 minutes on the first passage, 20 minutes on the second and 25 on the last one. In each passage set aside 2 minutes to copy your answers to the [Answer Sheet](https://cesarsotovalero.github.io/files/IELTS_Reading_Answer_Sheet.pdf).
+As I said before, time is your greatest enemy. In the Listening Test you don’t need to care about time, but the Reading Test is a different story. You need to manage it very carefully yourself. Be smart, due to the progress in level of difficulty, spend 15 minutes on the first passage, 20 minutes on the second and 25 on the last one. In each passage set aside 2 minutes to copy your answers to the [Reading Answer Sheet](https://cesarsotovalero.github.io/files/IELTS_Reading_Answer_Sheet.pdf).
 
 Here is a list of tips and tricks I learned during my training for the Reading Test:
 
@@ -110,7 +110,7 @@ Practicing for the Reading Test is useful but not too much as the other parts of
 
 Writing takes 1 hour and is divided into two sub-parts: 20 minutes to write a report and 40 minutes to write an essay. The report is based on a graph, a diagram, or a table you that receive, and you must use not fewer than 150 words. The second task is to write an essay on a given topic, present and justify an opinion or provide a solution to a problem, using no fewer than 250 words.
 
-The essay is the most crucial part of the Writing Test (it counts for nearly 70% of the score). Writing the report must not take you more than 20 minutes, so there will be 40 minutes left for the essay. You will receive two [Answer Sheets](https://cesarsotovalero.github.io/files/IELTS_Writing_Answer_Sheet.pdf) to write on. Keep your writing neat, clean, and nice-looking. Leave a blank line between paragraphs and don't write in the margins of the Answer Sheet. Don't make a mess even if you have made a mistake, erase it as fast as you can.
+The essay is the most crucial part of the Writing Test (it counts for nearly 70% of the score). Writing the report must not take you more than 20 minutes, so there will be 40 minutes left for the essay. You will receive two [Writing Answer Sheet](https://cesarsotovalero.github.io/files/IELTS_Writing_Answer_Sheet.pdf) to write on. Keep your writing neat, clean, and nice-looking. Leave a blank line between paragraphs and don't write in the margins of the Answer Sheet. Don't make a mess even if you have made a mistake, erase it as fast as you can.
 
 Here is a list of general tips and tricks I learned during my training for the Writing Test:
 
@@ -132,7 +132,7 @@ I did a mental structure to write each of these three kinds of essays, and after
 
 # Speaking
 
-Speaking takes up to 15 minutes and consists of 3 parts. The first sub-part of the Speaking test is an interview, which means that the examiner asks you questions about yourself, your work, studies, parents, brothers/sisters, pets, etc. This is an easy task to prepare for. In the second sub-part of the Speaking Test you receive a card with 3-4 questions. After one minute, during which you have to think about something to say, you should give a short speech for one to two minutes, which answers those questions. In the end, the examiner might ask you a couple of additional questions. In the third sub-part of the test, you discuss it with the examiner. The topic is somehow related to the one from section two, but it is about more abstract ideas. You have to express and justify your opinions. Speaking performance is evaluated according to a set of [speaking band descriptors](https://cesarsotovalero.github.io/files/IELTS_Speaking_Band_Descriptors.pdf) you should know.
+Speaking takes up to 15 minutes and consists of 3 parts. The first sub-part of the Speaking test is an interview, which means that the examiner asks you questions about yourself, your work, studies, parents, brothers/sisters, pets, etc. This is an easy task to prepare for. In the second sub-part of the Speaking Test you receive a card with 3-4 questions. After one minute, during which you have to think about something to say, you should give a short speech for one to two minutes, which answers those questions. In the end, the examiner might ask you a couple of additional questions. In the third sub-part of the test, you discuss it with the examiner. The topic is somehow related to the one from section two, but it is about more abstract ideas. You have to express and justify your opinions. Speaking performance is evaluated according to a set of [Speaking Band Descriptors](https://cesarsotovalero.github.io/files/IELTS_Speaking_Band_Descriptors.pdf) you should know.
  
 Here is a list of general tips and tricks I learned during my training for the Speaking Test:
 
