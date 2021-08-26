@@ -208,7 +208,7 @@
         <title>Unnecessary code</title>
         <description>
           Clarifying the concept - 
-          After reading a paper about the negative impact of unnecessary code in the software industry, I felt stuck with the many different (but very related) concepts around this issue. One can think that unnecessary code is all code that is not needed for an application to run correctly. However, the...
+          After reading the paper “Is Static Analysis Able to Identify Unnecessary Source Code?” about the negative impact of unnecessary code in the software industry, I felt stuck with the many different (but very related) concepts around this topic. One can think that unnecessary code is all code that is not...
         </description>
         <pubDate>Fri, 14 Sep 2018 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/unneccessary-code.html</link>
