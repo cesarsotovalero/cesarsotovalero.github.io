@@ -1,4 +1,4 @@
-/*@import url('http://fonts.cdnfonts.com/css/linux-biolinum');*/
+@import url('http://fonts.cdnfonts.com/css/linux-biolinum');
 
 /*!
  * GitHub Light v0.5.0
@@ -142,7 +142,7 @@
  */
 
 main {
-  --color-text-primary: #24292f;
+  --color-text-primary: var(--main-text-color);
   --color-text-secondary: var(--post-meta-index-color);
   --color-text-tertiary: #57606a;
   --color-text-link: #0969da;
@@ -238,8 +238,20 @@ main {
 }
 
 .text-xs {
-  font-size: 12px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.5rem;
+  color: var(--main-text-color);
+}
+
+.color-text-primary {
+  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  color: var(--main-text-color);
+}
+
+.gsc-reactions {
+  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  color: var(--main-text-color);
 }
 
 @media only screen and (max-width: 425px) {
@@ -267,25 +279,3 @@ main {
 }
 
 
-/* SUPPORT FOR DARK MODE */
-html, html[data-theme="light"] {
-  --link-color: black;
-  --navbar-color: #e7e7e7;
-  --footer-color: #e7e7e7;
-  --post-meta-index-color: #808080;
-  --blockquote-color: darkgreen;
-  --blockquote-background-color: #f1f1f1;
-  --main-background-color: hsl(0, 0%, 99%);
-  --main-text-color: hsl(0, 0%, 10%);
-}
-
-html[data-theme="dark"] {
-  --link-color: hsl(0, 0%, 85%);
-  --navbar-color: #474747;
-  --footer-color: #474747;
-  --post-meta-index-color: hsl(0, 0%, 76%);
-  --blockquote-color: hsl(0, 0%, 95%);
-  --blockquote-background-color: #444444;
-  --main-background-color: hsl(0, 0%, 20%);
-  --main-text-color: hsl(0, 0%, 85%);
-}
