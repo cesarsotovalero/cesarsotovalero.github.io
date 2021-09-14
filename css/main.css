@@ -266,6 +266,7 @@ a[href$=".pptx"] {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0px;
+  text-align: right;
 }
 
 .navbar-custom .navbar-brand,
@@ -321,6 +322,11 @@ a[href$=".pptx"] {
   transition: top 0.5s ease-in-out; /* Transition effect when sliding down (and up) */
 }
 
+.navbar-toggle {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 
 @media only screen and (min-width: 768px) {
   .navbar-custom {
@@ -344,7 +350,7 @@ a[href$=".pptx"] {
   transition: opacity 0.5s ease-in-out;
   left: 50%;
   width: 50px;
-  margin-top: -25px;
+  margin-top: 1.75rem;
 }
 
 .navbar-custom .avatar-container .avatar-img-border {
@@ -374,7 +380,7 @@ a[href$=".pptx"] {
 @media only screen and (min-width: 768px) {
   .navbar-custom .avatar-container {
     width: 100px;
-    margin-top: -50px;
+    /*margin-top: -50px;*/
   }
 
   .navbar-custom .avatar-container .avatar-img-border {
@@ -404,6 +410,11 @@ a[href$=".pptx"] {
 
 #theme-toggle:hover .fa-sun {
   color: var(--main-background-color);
+}
+
+.navbar-nav {
+  margin-right: 0px;
+  margin-left:  0px;
 }
 
 .navbar-custom .nav .navlinks-children {
@@ -436,6 +447,8 @@ a[href$=".pptx"] {
     display: block;
   }
 }
+
+
 
 @media only screen and (min-width: 768px) {
   .navbar-custom .nav .navlinks-container {
@@ -1907,6 +1920,16 @@ ul {
   background-color: var(--main-background-color);
 }
 
+/* heading anchors */
+.anchorjs-link {
+  color: #aaa;
+  display: inline-block;
+}
+
+.anchorjs-link:hover {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
 
 
 /* SUPPORT FOR DARK MODE */

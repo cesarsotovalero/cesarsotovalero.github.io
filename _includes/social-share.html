@@ -3,35 +3,37 @@
 
    <!--- Share on Twitter -->
    <a href="https://twitter.com/intent/tweet?text={{ page.description | page.title | url_encode }}+{{ site.url }}{{ page.url }}"
-      class="btn btn-share-icon btn-tw" title="Share on Twitter">
-      <span id="share-tw" class="fab fa-twitter" aria-hidden="true"></span>
+      class="btn btn-my-icon btn-twitter" title="Share on Twitter">
+      <span id="share-twitter" class="fab fa-twitter" aria-hidden="true"></span>
       <span class="sr-only">Twitter</span>
    </a>
 
    <!--- Share on LinkedIn -->
    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}"
-      class="btn btn-share-icon btn-linkedin" title="Share on LinkedIn">
+      class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn">
       <span id="share-linkedin" class="fab fa-linkedin-in" aria-hidden="true"></span>
       <span class="sr-only">LinkedIn</span>
+
+
    </a>
 
    <!--- Share on Facebook -->
    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
-      class="btn btn-share-icon btn-facebook" title="Share on Facebook">
+      class="btn btn-my-icon btn-facebook" title="Share on Facebook">
       <span class="fab fa-facebook-f" aria-hidden="true"></span>
       <span class="sr-only">Facebook</span>
    </a>
 
    <!--- Share on Reddit -->
    <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}"
-      class="btn btn-share-icon btn-reddit" title="Share on Reddit">
+      class="btn btn-my-icon btn-reddit" title="Share on Reddit">
       <span class="fab fa-fw fa-reddit" aria-hidden="true"></span>
       <span class="sr-only">Reddit</span>
    </a>
 
    <!--- Share on Hacker News -->
    <a href="http://news.ycombinator.com/submitlink?u={{ page.url | absolute_url | url_encode }}&amp;t={{ page.title | url_encode }}"
-      class="btn btn-share-icon btn-hn" title="Share on Hacker News">
+      class="btn btn-my-icon btn-hn" title="Share on Hacker News">
       <i class="fab fa-hacker-news-square"></i>
       <span class="sr-only">Hacker News</span>
    </a>

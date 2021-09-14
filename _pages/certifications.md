@@ -19,14 +19,16 @@ published: true
 
 # Awards
 
-- [MSR Data Showcase Award](../img/awards/data_showcase_award.jpg), _16th International Conference on Mining Software Repositories_, 2019
+- [MSR Data Showcase Award](../files/certificates/MSR_Data_Showcase_Award_2019.pdf), _16th International Conference on Mining Software Repositories_, 2019
 
 - [WASP Certificate of Excellence](../files/certificates/WASP_award.pdf), _WASP Autonomous Systems II_, 2019 
 
 
 # Other
 
-- [IELTS Academic Test 6.5](../img/IELTS_Test_Report_Form.jpg), University of Cambridge ESOL Examinations, 2016
+
+
+- [IELTS Academic Test](../files/certificates/IELTS_Test_Report_Form.pdf), University of Cambridge ESOL Examinations, 2016
 
 - [JSEP Reviewer Certificate](../files/certificates/SMR_Certificate.pdf), _Journal of Software: Evolution and Process_, 2017
 

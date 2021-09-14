@@ -59,7 +59,7 @@
   font-size: 1.2em
 }
 
-.btn-share-icon {
+.btn-my-icon {
   position: relative;
   padding-left: 44px;
   text-align: left;
@@ -71,7 +71,7 @@
   padding: 0
 }
 
-.btn-share-icon > :first-child {
+.btn-my-icon > :first-child {
   position: absolute;
   left: 0;
   top: 0;
@@ -83,57 +83,57 @@
   border-right: 1px solid rgba(0, 0, 0, 0.2)
 }
 
-.btn-share-icon.btn-lg {
+.btn-my-icon.btn-lg {
   padding-left: 61px
 }
 
-.btn-share-icon.btn-lg > :first-child {
+.btn-my-icon.btn-lg > :first-child {
   line-height: 45px;
   width: 45px;
   font-size: 1.8em
 }
 
-.btn-share-icon.btn-sm {
+.btn-my-icon.btn-sm {
   padding-left: 38px
 }
 
-.btn-share-icon.btn-sm > :first-child {
+.btn-my-icon.btn-sm > :first-child {
   line-height: 28px;
   width: 28px;
   font-size: 1.4em
 }
 
-.btn-share-icon.btn-xs {
+.btn-my-icon.btn-xs {
   padding-left: 30px
 }
 
-.btn-share-icon.btn-xs > :first-child {
+.btn-my-icon.btn-xs > :first-child {
   line-height: 20px;
   width: 20px;
   font-size: 1.2em
 }
 
-.btn-share-icon > :first-child {
+.btn-my-icon > :first-child {
   border: none;
   text-align: center;
   width: 100% !important
 }
 
-.btn-share-icon.btn-lg {
+.btn-my-icon.btn-lg {
   height: 45px;
   width: 45px;
   padding-left: 0;
   padding-right: 0
 }
 
-.btn-share-icon.btn-sm {
+.btn-my-icon.btn-sm {
   height: 30px;
   width: 30px;
   padding-left: 0;
   padding-right: 0
 }
 
-.btn-share-icon.btn-xs {
+.btn-my-icon.btn-xs {
   height: 22px;
   width: 22px;
   padding-left: 0;
@@ -893,50 +893,50 @@
   background-color: #fff
 }
 
-.btn-tw {
+.btn-twitter {
   color: var(--post-meta-index-color);
   background-color: var(--main-background-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-.btn-tw:focus, .btn-tw.focus {
+.btn-twitter:focus, .btn-twitter.focus {
   color: var(--main-background-color);
   background-color: var(--main-text-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-.btn-tw:hover {
+.btn-twitter:hover {
   color: var(--main-background-color);
   background-color: var(--main-text-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-#share-tw:hover {
+#share-twitter:hover {
   color: var(--main-background-color);
 }
 
-.btn-tw:active, .btn-tw.active, .open > .dropdown-toggle.btn-tw {
+.btn-twitter:active, .btn-twitter.active, .open > .dropdown-toggle.btn-twitter {
   color: var(--main-background-color);
   background-color: var(--main-text-color);
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-.btn-tw:active:hover, .btn-tw.active:hover, .open > .dropdown-toggle.btn-tw:hover, .btn-tw:active:focus, .btn-tw.active:focus, .open > .dropdown-toggle.btn-tw:focus, .btn-tw:active.focus, .btn-tw.active.focus, .open > .dropdown-toggle.btn-tw.focus {
+.btn-twitter:active:hover, .btn-twitter.active:hover, .open > .dropdown-toggle.btn-twitter:hover, .btn-twitter:active:focus, .btn-twitter.active:focus, .open > .dropdown-toggle.btn-twitter:focus, .btn-twitter:active.focus, .btn-twitter.active.focus, .open > .dropdown-toggle.btn-twitter.focus {
   color: #fff;
   background-color: #1583d7;
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-.btn-tw:active, .btn-tw.active, .open > .dropdown-toggle.btn-tw {
+.btn-twitter:active, .btn-twitter.active, .open > .dropdown-toggle.btn-twitter {
   background-image: none
 }
 
-.btn-tw.disabled, .btn-tw[disabled], fieldset[disabled] .btn-tw, .btn-tw.disabled:hover, .btn-tw[disabled]:hover, fieldset[disabled] .btn-tw:hover, .btn-tw.disabled:focus, .btn-tw[disabled]:focus, fieldset[disabled] .btn-tw:focus, .btn-tw.disabled.focus, .btn-tw[disabled].focus, fieldset[disabled] .btn-tw.focus, .btn-tw.disabled:active, .btn-tw[disabled]:active, fieldset[disabled] .btn-tw:active, .btn-tw.disabled.active, .btn-tw[disabled].active, fieldset[disabled] .btn-tw.active {
+.btn-twitter.disabled, .btn-twitter[disabled], fieldset[disabled] .btn-twitter, .btn-twitter.disabled:hover, .btn-twitter[disabled]:hover, fieldset[disabled] .btn-twitter:hover, .btn-twitter.disabled:focus, .btn-twitter[disabled]:focus, fieldset[disabled] .btn-twitter:focus, .btn-twitter.disabled.focus, .btn-twitter[disabled].focus, fieldset[disabled] .btn-twitter.focus, .btn-twitter.disabled:active, .btn-twitter[disabled]:active, fieldset[disabled] .btn-twitter:active, .btn-twitter.disabled.active, .btn-twitter[disabled].active, fieldset[disabled] .btn-twitter.active {
   background-color: #55acee;
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-.btn-tw .badge {
+.btn-twitter .badge {
   color: #55acee;
   background-color: #fff
 }
