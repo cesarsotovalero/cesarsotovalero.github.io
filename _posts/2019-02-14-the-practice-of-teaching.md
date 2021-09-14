@@ -22,7 +22,9 @@ Considering that I spent two hours preparing for this, my performance was not as
 
 It was, however, not that bad. Isn't it?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3nptpGpaYws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="container-youtube">
+  <iframe width="560" height="349" src="https://www.youtube.com/embed/3nptpGpaYws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 # Wrapping up 
 
