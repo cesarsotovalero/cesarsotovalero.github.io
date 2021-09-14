@@ -100,6 +100,6 @@ Success is not for free. I'm hinted at by the modesty of Philip when he recogniz
 I have difficulty explaining to people what the process of doing a Ph.D. in Computer Science is like, and when trying to answer my friends when asking me if they should do it. In the future, I'll point them to this book. Knowing what goes into a Ph.D. is invaluable in making such a decision, and this book was quite helpful in that regard. As a Ph.D. student, you need to know why you're doing it. In my case, I do it to win a personal battle that pushes my limits so I'll emerge as a stronger person in the end. Of course, there are other ways (e.g., running a start-up, joining a big corporation, etc.). If you are seriously considering doing a Ph.D. in Computer Science, this is the book for you. Thank you, Philip, for this timeless gift!
 
 
-# Related reads
+# Related articles
 
 - [The Ph.D. Grind: Main Grinds and Side Grinds](https://cacm.acm.org/blogs/blog-cacm/154473-the-phd-grind-main-grinds-and-side-grinds/fulltext)
