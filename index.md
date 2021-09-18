@@ -9,7 +9,6 @@ use-site-title: true
 
 {% include social.html type="page" %}
 
-
 ---
 
 <div class="list-filters">

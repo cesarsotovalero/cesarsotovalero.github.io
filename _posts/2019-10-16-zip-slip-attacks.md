@@ -23,32 +23,31 @@ This vulnerability is exploited using a specially crafted archive that holds dir
 
 This post aims to to explain how it works, and includes the following additional resources:
 
-- Installation scripts and instructions to deploy a target example:
-    <https://github.com/cesarsotovalero/zip-slip-exploit-example>
+- Installation scripts and instructions to deploy a target example: <https://github.com/cesarsotovalero/zip-slip-exploit-example>
 
-## Overview
+# Overview
 
 The following is a list of vulnerability identifiers:
 
--   **Technical Description:** Zip Slip is a form of *directory
-    traversal* that can be exploited by extracting files from an
-    archive. The premise of the directory traversal vulnerability is
-    that an attacker can gain access to parts of the file system outside
-    of the target folder in which they should reside.
+- **Technical Description:** Zip Slip is a form of _directory
+  traversal_ that can be exploited by extracting files from an
+  archive. The premise of the directory traversal vulnerability is
+  that an attacker can gain access to parts of the file system outside
+  of the target folder in which they should reside.
 
--   **Who Is Affected:** Applications and services using a library which
-    contains the Zip Slip vulnerability, or projects that directly
-    contain vulnerable code, which extracts files from an archive
-    without the necessary directory traversal prevention. A list of
-    vulnerable libraries is updated and maintained by [Snyk](https://snyk.io) in a
-    public GitHub [repo](https://github.com/snyk/zip-slip-vulnerability).
+- **Who Is Affected:** Applications and services using a library which
+  contains the Zip Slip vulnerability, or projects that directly
+  contain vulnerable code, which extracts files from an archive
+  without the necessary directory traversal prevention. A list of
+  vulnerable libraries is updated and maintained by [Snyk](https://snyk.io) in a
+  public GitHub [repo](https://github.com/snyk/zip-slip-vulnerability).
 
--   **Compromise Impact:** The attacker can overwrite executable files
-    and either invoke them remotely or wait for the system or user to
-    call them, thus achieving remote command execution on the victim's
-    machine. The vulnerability can also cause damage by overwriting
-    configuration files or other sensitive resources, and can be
-    exploited on both client (user) machines and servers.
+- **Compromise Impact:** The attacker can overwrite executable files
+  and either invoke them remotely or wait for the system or user to
+  call them, thus achieving remote command execution on the victim's
+  machine. The vulnerability can also cause damage by overwriting
+  configuration files or other sensitive resources, and can be
+  exploited on both client (user) machines and servers.
 
 ## Example
 
@@ -59,32 +58,31 @@ The Java ecosystem had many more archive libraries than other ecosystems, many o
 Let us create a new Maven project and add a new dependency towards the
 vulnerable library `org.zeroturnaround:zt-zip:1.12` in the `pom.xml`
 configuration file as is shown below.
- 
+
 {% highlight xml linenos %}
 <dependency>
-    <groupId>org.zeroturnaround</groupId>
-    <artifactId>zt-zip</artifactId>
-    <version>1.12</version>
+<groupId>org.zeroturnaround</groupId>
+<artifactId>zt-zip</artifactId>
+<version>1.12</version>
 </dependency>
 {% endhighlight %}
 
- Now we can reuse the `ZipUtil.unpack()` public method provided in this library to unzip any kind of compressed file. 
+Now we can reuse the `ZipUtil.unpack()` public method provided in this library to unzip any kind of compressed file.
 
 {% highlight java linenos %}
 Enumeration<ZipEntry> entries = zip.getEntries();
-   while (entries.hasMoreElements()) {
-       ZipEntry e = entries.nextElement();
-       File f = new File(destinationDir, e.getName());
-       InputStream input = zip.getInputStream(e);
-       IOUtils.copy(input, write(f));
-   }
+while (entries.hasMoreElements()) {
+ZipEntry e = entries.nextElement();
+File f = new File(destinationDir, e.getName());
+InputStream input = zip.getInputStream(e);
+IOUtils.copy(input, write(f));
+}
 {% endhighlight %}
 
 This code shows how the `unpack` method is implemented. We observe in line #4 that the concatenation of the destination directory and the ZipEntry path name can cause issues since there is no validation that the files stay within the destination directory. For example, an attacker can create a malicious zip file containing files with directory traversal characters in their embedded path and gain access to certain directories or folders in the file system outside the intended folder and can invoke scripts of overwrite specific files.
 
 There are many tools freely available to create this type of zip exploit files. For instance, the [Evilarc](https://github.com/ptoomey3/evilarc) Python script can be used to zip an `evil.sh` batch executable with the following parameters: `python evilarc.py -d 10 -o unix evil.sh`. Once unpacked by the victim, the malicious `evil.sh` batch script with be copied 10 directories up in the file system were normal users do not have any access.
 
-Conclusion
-========
- 
- As we observed, detecting a system with the Zip Slip vulnerability that  was already exploited is very hard, as the result of the exploit  consists of files on the system that can be located elsewhere. Besides,  zip files could either be uploaded to the application or downloaded from  within, so both traffic sources should be monitored. The  best way to avoid this exploit is by preventing it from occurring,  performing the proper unzip checking and keeping dependencies up to  date.
+# Conclusion
+
+As we observed, detecting a system with the Zip Slip vulnerability that was already exploited is very hard, as the result of the exploit consists of files on the system that can be located elsewhere. Besides, zip files could either be uploaded to the application or downloaded from within, so both traffic sources should be monitored. The best way to avoid this exploit is by preventing it from occurring, performing the proper unzip checking and keeping dependencies up to date.
