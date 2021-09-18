@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Book review - The Ph.D. Grind
+title: Book review - The Ph.D. Grind
 subtitle: A tale of perseverance and learning from failure
 description: If you are seriously considering doing a Ph.D. in Computer Science, the Ph.D. Grind is the book for you.
 tags: research
@@ -21,10 +21,7 @@ I recently read the amazing short book titled _"The Ph.D. Grind"_ by [Prof. Phil
   </figcaption>
 </figure>
 
-
-
 Each chapter in _"The Ph.D. Grind"_ is straight to the point; they are even titled with a single word: _Downfall_, _Inception_, _Relapse_, _Reboot_, _Production_, and _Endgame_ -- What can be more succinct than that? In the preface, Philip empathizes that the book only describes his personal experiences as a Ph.D. student. This is an author's precaution to avoid being judged as a generalist in such a sensitive topic: "it is just a single data point," he says. However, while reading his memories, I felt that very much of his experiences might generalize to a large extend. In my opinion, the Ph.D. game has not changed very much in decades.
-
 
 > "Past performance is not and indicator of future results."
 > -- <cite>Philip Guo</cite>
@@ -39,8 +36,8 @@ The author is brutally honest in describing the ups and downs of his Ph.D. traje
 > "My rational brain understood that experimental research in science and engineering fields often involves a tremendous amount of unglamorous, grungy labor to produce results."
 > -- <cite>Philip Guo</cite>
 
-Another common experience that Phil illustrates nicely is the contrast between his initial expectations vs. the reality when working on a research project. Doing research is a difficult challenge per se, not only because of the complexity of the technical tasks but due to the uncountable hours of tedious and repetitive labor required to validate research ideas. Professors needed students to do this kind of labor to execute their visions. The author worked on these intensive research activities during his first two years. As he recognizes afterward, being a good soldier is also necessary for research. He noticed how some projects might last longer than individual Ph.D. student "lifetimes". Students may be dispensable for some professors, but as long as the original vision is done and published, then the project is considered a success. Therefore, joining an already initiated research project is a double edge sword. On one hand, you don't start from scratch, but on the other hand, if 
-your peers have 
+Another common experience that Phil illustrates nicely is the contrast between his initial expectations vs. the reality when working on a research project. Doing research is a difficult challenge per se, not only because of the complexity of the technical tasks but due to the uncountable hours of tedious and repetitive labor required to validate research ideas. Professors needed students to do this kind of labor to execute their visions. The author worked on these intensive research activities during his first two years. As he recognizes afterward, being a good soldier is also necessary for research. He noticed how some projects might last longer than individual Ph.D. student "lifetimes". Students may be dispensable for some professors, but as long as the original vision is done and published, then the project is considered a success. Therefore, joining an already initiated research project is a double edge sword. On one hand, you don't start from scratch, but on the other hand, if
+your peers have
 already published the first ideas of that project, it would be tough for you to publish something new about it.
 
 > "It's very hard to publish on a topic if your advisor isn't also obsessively thinking about it, since you're directly competing against other students whose advisors are obsessively thinking about it."
@@ -68,7 +65,7 @@ The most valuable attribute one can possess is the experience accumulated throug
 
 Doing research is similar to an engineering discipline, which implies repeatability, rigor, and effective analysis. Working hard is not enough; you also need to work smart and beat procrastination. Setting realistic deadlines (through self-micro-management) is a very effective way to keep pace. Having the ability to recognize the tasks that are not going to get favorable results is crucial. In this regard, the supervisor is the right person to provide the necessary guidance when you feel lost in a research endeavor. The author recognizes that asking for help is a sign of smartness. It means that the student has the perceptiveness and maturity to realize when the research is going nowhere. I wish I had been more focused and open at the beginning of my Ph.D.
 
-> "People don't want to try a new tool unless they can instantly  see major benefits without any drawbacks; researchers simply don't have the time or resources to get their prototypes working well enough to meet these stringent requirements."
+> "People don't want to try a new tool unless they can instantly see major benefits without any drawbacks; researchers simply don't have the time or resources to get their prototypes working well enough to meet these stringent requirements."
 > -- <cite>Philip Guo</cite>
 
 Wanted or not, a researcher's job is to create prototypes, experimentally evaluate their effectiveness, write papers, and then move on to the next idea. Thus, academic research aims to produce validated ideas, not polished products (that's the role of companies). Philip was an ardent pragmatic who cared more about achieving compelling, beneficial results rather than demonstrating complex theoretical proofs. He was hit with a lesson in the harshness of real-world deployment: "failures come in unexpected rooms, and once the user gets a bad first impression, then it's over". As a researcher in Computer Science, you need to accumulate enough experience in designing, implementing, and "marketing" research prototypes. However, it is important to understand that professors respect real-world deployment far less than theoretical novelty. Ph.D. students need publications as proof of the legitimacy of their work. So in the end, what you need is to come up with ideas that could potentially lead to publications.
@@ -82,7 +79,6 @@ Success is what you feel when you win your personal battles. This is what a Ph.D
 > -- <cite>Philip Guo</cite>
 
 Success is not for free. I'm hinted at by the modesty of Philip when he recognizes that his success was also circumstantial. As in many other success stories, it is about coming up with the right idea at the right time and place and putting in the hours of effort and labor. Throughout these years, I've learned that working hard is crucial but not a guarantee of success. Thus, it is a necessary but not sufficient condition to reach the glory of graduating. Luck knocks on everyone's door at some point, but only a few people are able to recognize its particular sound.
- 
 
 # Additional lessons learned
 
@@ -98,7 +94,6 @@ Success is not for free. I'm hinted at by the modesty of Philip when he recogniz
 # Conclusion
 
 I have difficulty explaining to people what the process of doing a Ph.D. in Computer Science is like, and when trying to answer my friends when asking me if they should do it. In the future, I'll point them to this book. Knowing what goes into a Ph.D. is invaluable in making such a decision, and this book was quite helpful in that regard. As a Ph.D. student, you need to know why you're doing it. In my case, I do it to win a personal battle that pushes my limits so I'll emerge as a stronger person in the end. Of course, there are other ways (e.g., running a start-up, joining a big corporation, etc.). If you are seriously considering doing a Ph.D. in Computer Science, this is the book for you. Thank you, Philip, for this timeless gift!
-
 
 # Related articles
 
