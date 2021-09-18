@@ -1,0 +1,60 @@
+@import "base";
+
+#section-pricing {
+  background-color: $gray-200;
+  padding: 3rem;
+}
+
+.container-products {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-around;
+  padding: 2rem 2rem 6rem 2rem;
+}
+
+.product {
+  width: 25%;
+  border: 1px solid $black;
+
+  .product-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.product-header {
+  background-color: $color-dark-blue;
+  text-align: center;
+  color: white;
+}
+
+.product-price {
+  text-align: center;
+  color: $black;
+  padding: 1rem;
+}
+
+.product-list {
+  padding: 0 1.2rem 1.2rem 1.2rem;
+  color: black;
+  font-size: 1.2rem;
+  text-align: start;
+  ul {
+    list-style-position: inside;
+  }
+}
+
+@media (max-width: $layout-breakpoint-medium) {
+  .container-products {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-around;
+  }
+  .product {
+    width: 100%;
+    margin: 1rem;
+  }
+}

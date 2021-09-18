@@ -1,0 +1,53 @@
+@import "base";
+
+.container-product {
+  padding-top: 60px;
+  @include gradient-dark-blue;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 3rem;
+
+  .product-desc {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 600px;
+    margin-right: 4rem;
+    margin-left: 1rem;
+
+    h1 {
+      color: $gray-200;
+    }
+
+    h3 {
+      color: $gray-500;
+    }
+
+    .email-form {
+      width: 16rem;
+      height: 2.5rem;
+      text-align: left;
+      padding: 1rem;
+      margin: 1rem 1rem 1rem 0;
+      font-family: $poppins;
+      font-size: 1rem;
+    }
+  }
+
+  .product-img {
+    max-width: 600px;
+    margin: 2rem;
+
+    img {
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (max-width: $layout-breakpoint-medium) {
+  .product-img {
+    display: none;
+  }
+}

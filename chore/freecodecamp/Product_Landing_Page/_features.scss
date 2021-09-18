@@ -1,0 +1,32 @@
+@import "base";
+
+#section-features {
+  padding: 3rem;
+}
+
+.container-features {
+  display: flex;
+}
+
+.feature {
+  order: 3;
+  text-align: center;
+  margin: 2rem;
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 2px 2px 10px rgba($color: #000000, $alpha: 0.1);
+  @include feature-image;
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: $layout-breakpoint-medium) {
+  .container-features {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-around;
+  }
+}
