@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Design for microservices to boost your open source projects</title>
+        <description>
+          TODO - 
+          Microservices are dominating the market today. Among the many options of software architecture styles. Microservices consist of small and dependently deployable services that run all together around a business domain. &amp;#169; TODO. Heading TODO “Architecture is about the important stuff” – Ralph Johnson Use depclean web as an example of...
+        </description>
+        <pubDate>Wed, 08 Sep 2021 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/how-i-uderstand-microservices.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-i-uderstand-microservices.html</guid>
+      </item>
+    
+      <item>
         <title>What does it take to become a software architect?</title>
         <description>
           A matter of responsibilities - 
@@ -213,17 +224,6 @@
         <pubDate>Fri, 14 Sep 2018 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/unneccessary-code.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/unneccessary-code.html</guid>
-      </item>
-    
-      <item>
-        <title>A starting guide to be a good competitive programmer</title>
-        <description>
-          Because learning is more important than competing - 
-          I discovered the world of competitive programming challenges during my first year at university. At that time, I didn’t know much about computer algorithms or even mind sports. However, the idea of learning how to code by myself just using an online judge attracted my attention since the first moment....
-        </description>
-        <pubDate>Wed, 13 Dec 2017 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/a-starting-guide-to-be-a-good-competitive-programmer.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/a-starting-guide-to-be-a-good-competitive-programmer.html</guid>
       </item>
     
   </channel>
