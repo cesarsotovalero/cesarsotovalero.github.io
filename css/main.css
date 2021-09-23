@@ -223,7 +223,7 @@ a[href^="https://docs.google.com/"] {
 
 a[href^="https://www.freecodecamp.org/"] {
   background: transparent url(/img/icons/freecodecamp.svg) no-repeat center left;
-  padding-left: 22px;
+  padding-left: 45px;
 }
 
 a[href$=".pdf"] {
