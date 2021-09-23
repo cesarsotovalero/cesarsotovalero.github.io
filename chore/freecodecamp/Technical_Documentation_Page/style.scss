@@ -1,0 +1,74 @@
+@import "./base";
+
+.main-section {
+  ul {
+    margin-left: 2rem;
+  }
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: $gray-500;
+  padding-top: 1rem;
+  text-align: center;
+
+  header {
+    color: black;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 1rem;
+  }
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    border-top: solid;
+    border-color: $gray-500;
+    display: block;
+    padding: 1rem;
+
+    &:hover {
+      background-color: $gray-800;
+      color: white
+    }
+  }
+}
+
+#main-content {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+  overflow-y: scroll;
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    z-index: 1;
+    border-bottom: 2px solid;
+
+    a {
+      padding: 0.6rem;
+    }
+  }
+
+  #main-content {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+

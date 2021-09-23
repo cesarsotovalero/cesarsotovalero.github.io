@@ -1,0 +1,143 @@
+/* Basic tones */
+/* White and black tones */
+/* Blues/Cyans */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap");
+/*
+Use font-weight property to specify type:
+Thin            100
+Extra Light     200
+Light           300
+Regular         400
+Medium          500
+Semi-Bold       600
+Bold            700
+Extra-Bold      800
+Black           900
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #495057;
+  font-size: 1.25rem;
+  position: relative;
+  text-align: left;
+  line-height: 1.5; }
+
+img {
+  max-width: 100%; }
+
+h1 {
+  color: #212529;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 0.5rem 0.5rem 0.5rem 0; }
+
+h2 {
+  color: #343a40;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  margin-bottom: 1rem; }
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  margin-bottom: 1rem; }
+
+p {
+  font-weight: 300;
+  margin-bottom: 1rem; }
+
+a {
+  text-decoration: underline; }
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  background-color: #e9ecef;
+  padding: 15px;
+  margin-bottom: 1rem; }
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1.5rem; }
+
+  h2 {
+    font-size: 1.25rem; }
+
+  h3 {
+    font-size: 1rem; }
+
+  body {
+    font-size: 0.75rem; } }
+.main-section ul {
+  margin-left: 2rem; }
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: #adb5bd;
+  padding-top: 1rem;
+  text-align: center; }
+  #navbar header {
+    color: black;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 1rem; }
+  #navbar a {
+    font-weight: bold;
+    text-decoration: none;
+    border-top: solid;
+    border-color: #adb5bd;
+    display: block;
+    padding: 1rem; }
+    #navbar a:hover {
+      background-color: #343a40;
+      color: white; }
+
+#main-content {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+  overflow-y: scroll; }
+
+@media (max-width: 425px) {
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    z-index: 1;
+    border-bottom: 2px solid; }
+    #navbar a {
+      padding: 0.6rem; }
+
+  #main-content {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px; } }
+
+/*# sourceMappingURL=style.css.map */
