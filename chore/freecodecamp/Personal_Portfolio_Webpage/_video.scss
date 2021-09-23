@@ -1,0 +1,33 @@
+@import "base";
+
+#outreach-section {
+  padding: 1rem 0 2rem 0;
+  @include gradient-dark-gray(135deg);
+}
+
+.container-video {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  .container-video {
+    justify-content: center;
+    overflow: hidden;
+    gap: 3rem;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    margin: 1rem;
+
+    iframe {
+      border: 0;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+}

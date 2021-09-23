@@ -1,0 +1,56 @@
+@import "base";
+
+#contact-section {
+  background-color: #995aa0;
+  border-bottom: 0.1rem solid $gray-400;
+  padding: 1rem 0 2rem 0;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  /* This is better for small screens, once min() is better supported */
+  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+  gap: 1rem;
+  justify-items: center;
+
+  @media (max-width: $layout-breakpoint-small) {
+    justify-items: left;
+  }
+}
+
+.contact-link {
+  padding: 0.75rem;
+  margin: 1rem;
+
+  @media (max-width: $layout-breakpoint-small) {
+   margin: 0;
+  }
+
+  a {
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    color: $gray-100;
+    font-size: 1.8rem;
+    text-decoration: none;
+
+    i {
+      padding-right: 0.5rem;
+      font-size: 2.5rem;
+
+      @media (max-width: $layout-breakpoint-small) {
+        font-size: 1.5rem;
+        margin-left: 4rem;
+      }
+    }
+
+    &:hover {
+      text-decoration: underline;
+      transform: translateY(8px);
+    }
+
+    @media (max-width: $layout-breakpoint-small) {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -26,8 +26,6 @@ published: true
 
 # Other
 
-
-
 - [IELTS Academic Test](../files/certificates/IELTS_Test_Report_Form.pdf), University of Cambridge ESOL Examinations, 2016
 
 - [JSEP Reviewer Certificate](../files/certificates/SMR_Certificate.pdf), _Journal of Software: Evolution and Process_, 2017

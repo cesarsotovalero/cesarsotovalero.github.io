@@ -1,0 +1,75 @@
+@import 'base';
+
+#projects {
+  @include gradient-dark-purple(228deg);
+  padding: 1rem;
+
+  @media (max-width: $layout-breakpoint-small) {
+    padding: 0;
+  }
+}
+
+.project-tiles {
+  display: grid;
+  //grid-template-columns: 1fr 1fr;
+  place-items: center;
+  place-content: center;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 1rem auto 6rem;
+
+  @media (max-width: $layout-breakpoint-small) {
+  margin-bottom: 0;
+    grid-gap: 0;
+  }
+
+}
+
+.project-tile {
+  background-color: $gray-100;
+  width: 220px;
+  text-align: center;
+  margin: 1rem 1rem 0 1rem;
+  @include box-shadow-image;
+
+  &:hover {
+    border-color: #aaa;
+    transform: translateY(-10px);
+    transition: transform 330ms ease-in-out;
+    filter: grayscale(0%);
+    box-shadow: 0 0 0.5rem #ffffff;
+    background: #f2f6f9;
+  }
+
+  @media (max-width: $layout-breakpoint-small) {
+   margin:1rem;
+  }
+
+}
+
+.project-icon {
+  text-align: center;
+  color: #213584;
+  margin: 1.5rem;
+}
+
+.project-link {
+  text-align: center;
+  padding: 0.5rem;
+  @include gradient-dark-blue;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
