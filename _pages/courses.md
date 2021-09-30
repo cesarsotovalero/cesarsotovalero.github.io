@@ -31,8 +31,6 @@ published: true
 
 - [WASP Autonomous Systems I](../files/certificates/Certificate_WASP_AS1_Cesar.pdf), KTH, Spring 2019
 
-
-
 # MSc courses
 
 - [Academic Transcripts in English](../files/certificates/MSc_Academis_Transcript-eng.pdf), Universidad Central "Marta Abreu" de Las Villas, Cuba, 2016
@@ -44,9 +42,8 @@ published: true
 
 # MOOCs
 
-- [Responsive Web Design](https://www.freecodecamp.org/certification/cesarsotovalero/responsive-web-design), Freecodecamp, 2021
+- [Responsive Web Design](https://www.freecodecamp.org/certification/cesarsotovalero/responsive-web-design), freeCodeCamp, 2021
 
 - [:earth_americas: Programming for the Web with JavaScript](#), edX, 2020
 
 - [:earth_americas: Unix Tools: Data, Software and Production Engineering](https://courses.edx.org/certificates/e922632cec44445ea8d1f534d64f7d8a), edX, 2020
-

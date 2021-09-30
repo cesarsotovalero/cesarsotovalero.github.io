@@ -44,31 +44,31 @@ It is the uncertainty and lack of formalisms, at the core of the research method
 
 In the following, I will explore each step in more details. For the sake of comparison, let me contrast the research challenges in this field with its similar in the ML research field. 
 
-### 1. Hypothesis
+# 1. Hypothesis
 
 The hypothesis is the backbone of any empirical SE research paper. Before start writing, you should have answered a precise set of questions in your mind. Ask yourself: Is it useful to answer this? Is it novel? Is it really unknown? If the answer is yes, then you are on the right track. 
 
 In opposition to other research fields, such as ML research, in SE, the hypothesis does not follow any pre-determined standards. In ML, your hypothesis could be, for instance, comparing the performance of a new model with respect to the state-of-the-art. However, in relevant empirical SE research, such previous work may no exist. Therefore, you end up having an additional task: to convince everyone about the relevance of your hypothesis.   
 
-### 2. Data 
+# 2. Data 
 
 Data is what makes your results sound when claiming conclusions. Today, the tremendous adoption of open-source software has facilitated the acquisition of software-related data as never before. However, to collect such rich data, it is almost sure that you will need to implement your own software tools. This process implies additional implementation effort and data mining time for the researcher. The lack of standard data benchmarks in the field is a well-known problem. One of its causes is due to the rapid advance of software development techniques: the tools that are useful for researchers today may become useless in a couple of years. Therefore, you not only have to collect the data properly, but also to convince everyone that it is a representative subset of the real world. 
 
 On the other hand, ML researchers deal with a completely different kind of data problem. The so-called datasets are almost a perpetual source of ground truth. For example, the [iris dataset](https://archive.ics.uci.edu/ml/datasets/iris), introduced in 1988, is still used to compare the performance of standard ML learning algorithms, while the [MNIST dataset](http://yann.lecun.com/exdb/mnist/) is considered the baseline to explore the performance of deep learning models, since 1998. In contrast, the lack of standard datasets for testing the research hypothesis adds a burden to empirical SE researchers.
 
-### 3. Analysis
+# 3. Analysis
 
 In empirical SE, to properly analyze your data, you have to perform a comprehensive design of your experiments. This implies using existing research protocols in some cases. In other cases, such protocols simply do not exist. Of course, there are gems out there that can help you with the first cases, such as the book [Guide to Advanced Empirical SE](https://www.springer.com/gp/book/9781848000438). However, if you are dealing with the second scenario, the challenge stands at an entirely different level. If your experiment is unique in some manner, then you will have to convince everyone that your procedure is scientifically correct. Those who are done science for real know very well that this is a major issue.
 
 In the case of ML researchers, the analysis and statistical validation of the results is a straight forward process. Those researchers know exactly what type of statistical test they need to use in each scenario. For example, if you test your model against another one, then you use the non-parametric [Wilcoxon signed-rank test](https://en.wikipedia.org/wiki/Wilcoxon_signed-rank_test); whereas if you need to compare your results with respect to several models, then the  [Friedman NxN test](https://en.wikipedia.org/wiki/Friedman_test) is the standard choice. However, in empirical SE research, there is no such standards. The data analysis approach is up to you. The protocol employed may be part of your contribution. It is simply more work to do for the same paycheck. 
 
-### 4. Results
+# 4. Results
 
 Once you analyze the data, you get some results in exchange. These results are the meaning of the data, the knowledge behind your experiments. Numbers are essential to validate your research, but, in reality, nobody cares about exact values. It is the interpretation of such values that matters most. The factual result. In qualitative studies, the results may be subject to your personal criteria, which make it more difficult for the community to accept them. Here there are some questions you should ask yourself: Are my results comprehensive and well explained? Represent my results valuable knowledge to researchers and practitioners? Am I making the correct interpretation? You better make sure to answer yes to these questions. 
 
 Interpreting ML results, on the other hand, is a more concise task. Your proposed approach is whether significantly better than the rest, or it is not. A spoiler here: your results must outperform the state-of-the-art for the datasets at hand if you want your paper to be published. Therefore, it is the sum of several factors which makes hard interpreting empirical SE results: the novelty of the hypothesis, the lack of similar data to compare with, and the uniqueness of the experiments.     
 
-### 5. Conclusion
+# 5. Conclusion
 
 The conclusion of an empirical SE paper should be a substantial claim based on the interpretation of the results obtained. It is the last gift for the reader who took the time to open and read your paper. Having not more than a single number is important here. The more general the number is, the better. However, if you used case studies, you should make sure not to generalize your claim.
 
@@ -86,6 +86,6 @@ The following table summarizes the points discussed above:
 | ------ | ------ | ------ |
 {: .border-bottom-on-table  }
 
-## Final words
+# Final words
 
 In summary, empirical SE research is not easy at all. It imposes a diverse set of unique challenges to researchers, from the formulation of the hypothesis to the argumentation of a relevant conclusion. If you think this is not true, then try to publish in a top journal in the field. Do it first, then we can talk about it :smirk:.

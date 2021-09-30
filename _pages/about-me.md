@@ -5,7 +5,7 @@ title: About me
 subtitle: In brief
 ---
 <div style="border-bottom: 1px solid #eee;">
-  <h3 style="text-align: center; font-family:courier, courier new, serif; padding-bottom: 35px;">
+  <h3 style="text-align: center; font-family:courier, courier new, serif; padding-bottom: 35px; font-weight: lighter">
 <span class="type"></span></h3>
 </div>
 
@@ -35,7 +35,7 @@ See also:
     
 <!-- ![Custom badge](https://img.shields.io/badge/-HOBBIES-blue.svg) -->
 # :dart: Hobbies
-Out of work, I enjoy spending time with my family, reading ~~real~~ books, and running through the Stockholm's beautiful parks.
+Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and running through the Stockholm's beautiful parks.
 
 ---
 
