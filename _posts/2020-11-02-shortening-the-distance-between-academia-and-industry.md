@@ -46,7 +46,7 @@ Showing the impact for the local industry is key to increase the understanding o
 For example, fruitful collaboration between academic researchers in the area of software technology is crucial for modern economies.
 Shortening the distance between academic research and the industry is a matter of common interest for both parties.
 
-### What academic researchers can do?
+# What does the academic community can do?
 
 Here is a non-exhaustive list of actions for researchers:
 
@@ -56,7 +56,7 @@ Here is a non-exhaustive list of actions for researchers:
 - Promote events and invite people from the industry to present the technology that they deploy on a daily basis
 - Create open-source organizations, contributing together with academics, engineers, and the community there
 
-### Why is it challenging?
+# Why is it challenging?
 
 Accomplishing these tasks effectively is challenging for researchers because it requires changing long-lasting habits.
 Getting out of the comfort zone by presenting research work to a large crowd of very focused industrial engineers is not easy.

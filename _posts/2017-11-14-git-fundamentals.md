@@ -28,6 +28,7 @@ Git is the standard version-control system for software development. Git was cre
 * [Git tags](#git-tags)
 * [Git revert](#git-revert)
 * [Git reset](#git-reset)
+* [Troubleshooting](#troubleshooting)
 
 # Git configurations
 
@@ -204,10 +205,9 @@ To throw away a certain number of commits (2 in this example) :
 git reset HEAD~2
 ``` 
 
-
 # Troubleshooting
 
-# `.gitignore` is not working. 
+## Gitignore is not working. 
 
 
 You may need to remove every file that was cached in the `.gitignore`. Be aware to commit all your changes before, otherwise you will loose control on all the changed files. 
@@ -218,7 +218,7 @@ git add .
 git commit -m ".gitignore is now working"
 ```
 
-# git log of a Java method
+## git log of a Java method
 
 You need to add the following to the `.gitattributes` file.
 
