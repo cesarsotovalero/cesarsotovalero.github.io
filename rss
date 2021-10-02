@@ -10,7 +10,7 @@
         <title>Design for microservices!</title>
         <description>
           An easy way to boost the popularity of your open-source projects - 
-          The microservice architecture style consists of small and independently deployable services that run all together around a business domain. These small services are like living cells in an organism, each one providing important functionalities that keep the whole system healthy. Microservices have transitioned from a mere buzzword ten years ago...
+          The microservice architecture style consists of small and independently deployable services that run all together around a business domain. These small services act like living cells in an organism, each providing unique functionalities to protect the health of the whole system. Microservices have transitioned from a mere buzzword ten years...
         </description>
         <pubDate>Mon, 20 Sep 2021 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/design-for-microservices.html</link>
