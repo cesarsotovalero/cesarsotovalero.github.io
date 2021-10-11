@@ -1686,7 +1686,7 @@ figure figcaption {
   /*position: absolute;*/
   font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);*/
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 @media screen and (max-width: 415px) {
@@ -1721,11 +1721,16 @@ figure figcaption {
 
 .jb_picture {
   display: grid;
+  place-items: center;
   margin: 0 0 25px 0;
 }
 
 .jb_picture img {
   border-radius: 0.5rem;
+}
+
+.jb_picture figcaption {
+  border-radius: 1rem;
 }
 
 
