@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>The software supply chain</title>
+        <description>
+          A quick look at the modern software production landscape - 
+          The software supply chain comprises all the technology involved in shipping a piece of code from development to its deployment in a production environment. Several actors and technologies participate in this complex process, e.g., developers, IDEs, compilers, package managers, a so on. Thus, the success or failure of a software...
+        </description>
+        <pubDate>Mon, 04 Oct 2021 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/the-software-production-landscape.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-software-production-landscape.html</guid>
+      </item>
+    
+      <item>
         <title>Design for microservices!</title>
         <description>
           An easy way to boost the popularity of your open-source projects - 
@@ -213,17 +224,6 @@
         <pubDate>Thu, 14 Feb 2019 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/the-practice-of-teaching.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-practice-of-teaching.html</guid>
-      </item>
-    
-      <item>
-        <title>Unnecessary code</title>
-        <description>
-          Clarifying the concept - 
-          After reading the paper “Is Static Analysis Able to Identify Unnecessary Source Code?” about the negative impact of unnecessary code in the software industry, I felt stuck with the many different (but very related) concepts around this topic. One can think that unnecessary code is all code that is not...
-        </description>
-        <pubDate>Fri, 14 Sep 2018 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/unneccessary-code.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/unneccessary-code.html</guid>
       </item>
     
   </channel>
