@@ -9,11 +9,11 @@ keywords:
   - continuous integration,
   - continuous delivery,
   - software design,
-  - software architecture
+  - cybersecurity,
 image: https://www.cesarsotovalero.net/img/posts/crane_cover.png
 share-img: https://www.cesarsotovalero.net/img/posts/crane_cover.png
 show-avatar: false
-date: 2021/10/04
+date: 2021/10/11
 published: true
 ---
 
@@ -56,7 +56,6 @@ The process of automatically shipping software from a deployment platform to a p
 Clients interact with the software product at this stage, and typically, bugs and performance issues start to show up.
 These issues need to be addressed by developers who maintain the product, and the whole cycle fires up once again.
 
-
 <figure class="jb_picture">
     <img src = "/img/posts/supply_chain_fig.svg" alt="Development workflow in a typical software supply chain."
     longdesc="#c13e1390"/>
@@ -83,7 +82,6 @@ Most large-scale software providers heavily rely on third-party software as the 
 This means that these sources need to be managed and maintained along the product itself.
 So, part of the sourcing link in the software supply chain is devoted to analyzing the quality and security of the third-party components for your product.
 This includes handling and updating dependencies, documentation, licenses, and performing regular security audits.
-
 
 # Risks
 
@@ -115,7 +113,6 @@ Attacks at this scale make evidence of the lack of awareness related to this iss
 
 > "Governments have been somewhat ineffectual in handling supply-chain issues." -- <cite>[James Bret Michael](http://faculty.nps.edu/bmichael/)</cite>
 
-
 Global innovation is also at risk if governments enforce more restrictive security gates to prevent incidents such as the SolarWinds.
 Technology based solutions need to be developed in order to cope with the challenge of maintaining healthy the software supply chain.
 
@@ -142,7 +139,6 @@ In general, the development and adoption of supply chain hardening tools should 
 2. Adopt existing tools and processes designed to prevent supply chain attacks.
 3. Set up mechanisms to quickly recover in case of a supply chain attack that compromises the released software.
 
-
 # Conclusion
 
 Large-scale software development is a complex process in which both people and technological infrastructure are involved.
@@ -157,5 +153,3 @@ I hope events such as the SolarWinds incident become less frequent in the near f
 - [https://reproducible-builds.org/docs](https://reproducible-builds.org/docs)
 - [https://survey.opensourceunchained.eu/](https://survey.opensourceunchained.eu/)
 - [SolarWinds attack explained: And why it was so hard to detect](https://www.csoonline.com/article/3601508/solarwinds-supply-chain-attack-explained-why-organizations-were-not-prepared.html)
-
-
