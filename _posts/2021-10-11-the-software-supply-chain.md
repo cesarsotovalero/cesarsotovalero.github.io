@@ -121,6 +121,10 @@ Incidents at this scale are evidence of the lack of awareness related to this is
 Mass-scale software development and future global innovation are at risk if governments enforce more restrictive security gates to prevent incidents such as the SolarWinds.
 Technology-based solutions need to be developed in order to cope with the challenge of securing the software supply chain.
 
+<div class="container-youtube">
+  <iframe width="560" height="349" src="https://www.youtube.com/embed/mp_jSfUACrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 # Hardening the chain
 
 Overall, supply chain-related attacks are perceived as very dangerous and hard to detect.
