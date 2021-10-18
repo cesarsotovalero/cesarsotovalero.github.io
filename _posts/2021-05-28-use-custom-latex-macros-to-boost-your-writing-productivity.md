@@ -81,7 +81,7 @@ I often find very useful defining the `\cesar` and `\todo` commands in all my do
   \cesar}[1]{\mynote{Cesar}{#1}
 }
 {% endraw %}
-% Create custom user defined command for TODO notes
+% Create custom user defined command for `TODO` notes
 {% raw %}
 \newcommand*\badge[1]{
   \colorbox{red}{\color{white}#1}
