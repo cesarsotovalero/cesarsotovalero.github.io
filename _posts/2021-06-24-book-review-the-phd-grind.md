@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Book review - The Ph.D. Grind
-subtitle: A tale of perseverance and learning from failure
+title: Book Review - The Ph.D. Grind
+subtitle: A Tale of Perseverance and Learning from Failure
 description: If you are seriously considering doing a Ph.D. in Computer Science, the Ph.D. Grind is the book for you.
 tags: research
 published: true
@@ -80,7 +80,7 @@ Success is what you feel when you win your personal battles. This is what a Ph.D
 
 Success is not for free. I'm hinted at by the modesty of Philip when he recognizes that his success was also circumstantial. As in many other success stories, it is about coming up with the right idea at the right time and place and putting in the hours of effort and labor. Throughout these years, I've learned that working hard is crucial but not a guarantee of success. Thus, it is a necessary but not sufficient condition to reach the glory of graduating. Luck knocks on everyone's door at some point, but only a few people are able to recognize its particular sound.
 
-# Additional lessons learned
+# Additional Lessons Learned
 
 - Spend time finding a good advisor and trust him/her
 - Be an early contributor to an up-and-coming area
@@ -95,6 +95,6 @@ Success is not for free. I'm hinted at by the modesty of Philip when he recogniz
 
 I have difficulty explaining to people what the process of doing a Ph.D. in Computer Science is like, and when trying to answer my friends when asking me if they should do it. In the future, I'll point them to this book. Knowing what goes into a Ph.D. is invaluable in making such a decision, and this book was quite helpful in that regard. As a Ph.D. student, you need to know why you're doing it. In my case, I do it to win a personal battle that pushes my limits so I'll emerge as a stronger person in the end. Of course, there are other ways (e.g., running a start-up, joining a big corporation, etc.). If you are seriously considering doing a Ph.D. in Computer Science, this is the book for you. Thank you, Philip, for this timeless gift!
 
-# Related articles
+# Related Articles
 
 - [The Ph.D. Grind: Main Grinds and Side Grinds](https://cacm.acm.org/blogs/blog-cacm/154473-the-phd-grind-main-grinds-and-side-grinds/fulltext)

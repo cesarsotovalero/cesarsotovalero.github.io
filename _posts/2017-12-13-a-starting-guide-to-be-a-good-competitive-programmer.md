@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A starting guide to be a good competitive programmer
-subtitle: Because learning is more important than competing
+title: A Starting Guide to Become a Good Competitive Programmer
+subtitle: Learning is More Important than Competing
 published: true
 tags: programming
 description: Insights and tricks that I learned when I was a competitive programmer
@@ -39,19 +39,19 @@ I started my self-training plan, and a couple of months later, I had jumped up t
 - [Free your mind](#free-your-mind)
 - [Enjoy](#enjoy)
 
-# Start as soon as possible
+# Start ASAP
 
 There is no such thing as a good "starting time" to become a competitive programmer. It is a long process, so as soon as you start developing and algorithmic thinking, then much better for you to become a strong programmer. I believe that programming should be taught to elementary schoolers. Just think about it, the best competitive programmers, such as the prodigious [Gennady Korotkevich](https://en.wikipedia.org/wiki/Gennady_Korotkevich) started at a very young age.
 
-# Master the essential first
+# Master the Essential First
 
 You need to crawl before walking, be sure to know the basic principles of programming before deep yourself into more advanced topics. You must master data structures, combinatorics, number theory, geometry, graph theory, string analysis, and searching techniques. Study each topic one by one, solving problems and thinking how to merge it.
 
-# Choose an adequate training plan and stick to it
+# Choose an Adequate Training Plan and Stick to it
 
 A goal without a plan is just a wish. Of course, you need to be diligent and study all the time, but if you don't have a good strategy, then you will advance slowly. Use a calendar to organize your training sessions. Expend one day for each type of problem, by doing so it is more difficult to be bored. I recommend don't expending more than 2 hours on the same problem. If stuck, then change your activity, get some tutorial, or ask for help.
 
-# Use good study resources
+# Use Good Study Resources
 
 Start with the right foot. Choose your materials and resources carefully. As programming languages, C++ is the better, but you should also know Java and its useful libraries such as BigInteger or Calendar. This is my list of recommended books for starters and intermediate contestants:
 
@@ -59,19 +59,19 @@ Start with the right foot. Choose your materials and resources carefully. As pro
 - **"Programming Challenges: The programming contest training manual"** written by Steven S. Skiena and Miguel A. Revilla.
 - **"The Art of Programming Contests"** written by Ahmed Shamsul Arefin
 
-# Be persistent
+# Be Persistent
 
 Persistence is the key to competitive programming success. If you have tenacity, then you have all is needed to be a winner. I'm not kidding; there are a lot of others that don't have enough patience. Every day, take a piece of paper and a pencil and try to think about a problem. Don't surrender easily; choose hard problems. You will learn nothing doing the easy ones, try to solve at least one difficult problem every day.
 
-# Be efficient
+# Be Efficient
 
 It's always better to spend 5 minutes thinking more about implementation rather than spending ten more minutes doing it. Learn about time complexity, and the best optimization tricks. In competitive programming, the best-written code it s that you can understand, type faster, and run faster. With time, you will develop a powerful skill: the debugging mind. This means that you will be able to run the program in your mind, saving a lot of valuable developing time.
 
-# Share your work and ideas with others
+# Share Your Work and Ideas with Others
 
 The best way to learn is by teaching others. This is because you need to be sure of what you know to convince others. If you find an efficient solution for a problem, then share it. In this way, you will get feedback and will learn during the process.
 
-# Keep yourself up to date
+# Keep Yourself Up to Date
 
 Once you mastered the basics, then use forums to keep updated with the latest implementations. The following is a list of useful websites with studying resources:
 
@@ -81,7 +81,7 @@ Once you mastered the basics, then use forums to keep updated with the latest im
 - [Topcoder](http://www.topcoder.com/)
 - [UVA Online Judge](http://uva.onlinejudge.org/)
 
-# Free your mind
+# Free Your Mind
 
 You need hard work and practice (a lot of practice) to become a competent contestant. Once you acquire an algorithmic mindset and the right skills, then only your mind will make the difference. It is a good idea to change your activities, have a hobby (I play the guitar), or spend time doing nothing. I believe that diversion is also an essential part of the training.
 

@@ -31,11 +31,11 @@ published: true
 
 - [WASP Autonomous Systems I](../files/certificates/Certificate_WASP_AS1_Cesar.pdf), KTH, Spring 2019
 
-# MSc courses
+# Master courses
 
 - [Academic Transcripts in English](../files/certificates/MSc_Academis_Transcript-eng.pdf), Universidad Central "Marta Abreu" de Las Villas, Cuba, 2016
 
-# BSc courses
+# Bachelor courses
 
 - [Academic Transcripts in English](../files/certificates/BSc_Academis_Transcript-eng.pdf), Universidad Central "Marta Abreu" de Las Villas, Cuba, 2013
 

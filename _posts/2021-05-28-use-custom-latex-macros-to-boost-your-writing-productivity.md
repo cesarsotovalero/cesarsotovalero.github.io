@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Use custom LaTeX macros to boost your writing productivity
-subtitle: And forget about these numeric glitches in your document 
+title: Use Custom LaTeX Macros to Boost your Writing Productivity
+subtitle: Forget About the Annoying Numerical Glitches in your Document 
 tags: latex tutorial
 description: LaTeX macros allow increasing productivity by avoiding typing repetitive LaTeX commands. In this tutorial, I show you how to use them.
 published: true
@@ -26,7 +26,7 @@ Let me show you how it works!
     </figcaption>
 </figure>
 
-# Creating a simple user custom command
+# Creating a Simple User Custom Command
 
 To add a custom command in your document, use `\newcommand{\name}[num]{definition}`. 
 The following commands are examples that allow simplifying the use of some common English abbreviations:
@@ -48,7 +48,7 @@ The following commands are examples that allow simplifying the use of some commo
 Once added in your document, you just need to type `\ie` and the text `i.e.` will be printed in your document.
 Note that you need to use `\@\xspace` to indicate that a white space follows the displayed text.  
 
-# Inserting author notes
+# Inserting Author Notes
 
 I often find very useful defining the `\cesar` and `\todo` commands in all my documents to create quick author notes and remarks in my documents.  The following code defines these commands, which are very useful when inserting notes (e.g., `\cesar{refine this sentence}`): 
 
@@ -95,7 +95,7 @@ I often find very useful defining the `\cesar` and `\todo` commands in all my do
 
 For example, the `\cesar{An author note}` produces <img src="../img/posts/authornote.png" height="18" border="0" alt="Comand">, whereas `\todo{A todo note}` produces <img src="../img/posts/todonote.png" height="18" border="0" alt="Comand">.
 
-# Formatting numbers
+# Formatting Numbers
 
 You can use the `numprint` and `fp` packages to create your own commands to format numeric values. 
 The following example creates a `\np` command to print numeric values in math mode, nicely formatted, and rounded by two decimal digits.
@@ -122,7 +122,7 @@ The following example creates a `\np` command to print numeric values in math mo
 
 Now, for example, you can use `\np{22.324}` to print `22.32`, or `\np{22.324}{\%}` to print `22.32%`. 
 
-# Computing numbers
+# Computing Numbers
 
 You can create numeric variables using `\def`.
 This is very handy since you can keep all the values in your document in the same place.
@@ -138,7 +138,7 @@ The following is a basic example:
 
 In this example, using `\nbSum` prints the value `84` in the document.
 
-# Handling percentages
+# Handling Percentages
 
 If you use percentages in your document, you can calculate a percentage directly based on two variables: a number and the total. The following `\ShowPercentage` command calculates rates based on two variables.
 
@@ -171,7 +171,7 @@ If you use percentages in your document, you can calculate a percentage directly
 For example, `\ShowPercentage{1221}{20023}` prints `6.10%`. 
 Note that a percentage rounded to 0 will be presented as `<1%`
 
-# Embedding small barcharts
+# Embedding Small Barcharts
 
 A nice way to compare percentages in a graphical manner (especially in tables), is by embedding small barchart plots within them. The following `\ChartSmall` commands does the trick for you:  
 

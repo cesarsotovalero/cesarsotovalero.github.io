@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Hermit programmers are dead
-subtitle: Don't call yourself just a programmer anymore
+title:  Hermit Programmers are Dead
+subtitle: Don't Call Yourself Just a Programmer Anymore
 tags: self-improvement
 description: With the advent of cloud computing and AI, there is no room for hermit programmers. You better diversify your skills or perish in the process, so don't call yourself just a programmer anymore.
 published: true
@@ -29,7 +29,7 @@ Otherwise, I believe misfit programmers will perish... for sure.
     </figcaption>
 </figure>
 
-# The good old days
+# The Good Old Days
 
 In the past, it was rare to find people who understood how these big old computers of the last century were working.
 Even more challenging was finding who could program those computers to solve real-world problems.
@@ -52,7 +52,7 @@ Although the algorithmic principles stay mostly the same, it is in the latest te
 The number of new technologies appearing every day, such as programming languages or gadgets, overwhelms human comprehension.
 Simply put, the world has never been simple, but today (thanks to technology), it is more complex than ever (especially for programmers).
 
-# The advent of machines
+# The Advent of Machines
 
 Today, it is hard to imagine how startups and small IT businesses installed and maintained their servers at the beginning of this century.
 They even paid for the running OS and all the databases were proprietary software.
@@ -79,7 +79,7 @@ Researchers are just starting to explore the potential of [machine learning for 
 Perhaps someday we'll have [cognitive AI](https://towardsdatascience.com/the-rise-of-cognitive-ai-a29d2b724ccc) writing entire complex software from scratch and [passing the Turing Test](https://lacker.io/ai/2020/07/06/giving-gpt-3-a-turing-test.html).
 Today the discussion is not whether or not this will happen, but when.
 
-# The future
+# The Future
 
 The future of programming is certainly uncertain.
 As described by Bret Victor in [his brilliant talk](http://worrydream.com/dbx), programming is in constant evolution.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Enhance your README with asciinema
-subtitle: How to create beautiful terminal recordings that your users will love
+title:  Enhance your README with Asciinema
+subtitle: How to Create Beautiful Terminal Recordings that Your Users will Love
 tags: tools tutorial
 published: true
 description: In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema.
@@ -27,7 +27,7 @@ First, let's see the help page of asciinema using the wonderful [tldr](https://g
 <script src="../js/asciinema-player.js"></script>
 <asciinema-player src="../asciinema/tldr_asciinema.rec" poster="npt:00:12" start-at="3"></asciinema-player>
 
-# Recording a terminal session
+# Recording a Terminal Session
 
 To install asciinema, follow [the official guide](https://asciinema.org/docs/installation).
 Once you have it installed, you can start recording a terminal session using the following command:
@@ -42,7 +42,7 @@ The previous command will create a recording file named `demo.cast`, which you c
 asciinema play demo.cast
 {% endhighlight %}
 
-# Insert the recording in a README
+# Insert the Recording in a README
 
 Now that you have your session recorded, you need to transform the `demo.cast` into a  `.gif` file, which can be inserted in your `README.md`.
 To do so, the [asciicast2gif](https://github.com/asciinema/asciicast2gif) tool comes handy. 
@@ -72,7 +72,7 @@ where `PATH_TO_FILE` is the path to your `demo.gif` file on GitHub.
 
 I have used this method to add a terminal screencast in the `README.md` of [DepClean](https://github.com/castor-software/depclean) (one of my tools), so that the users can easily grasp its basic usage.
 
-# Insert the recording in a website
+# Insert the Recording in a Website
 
 To use asciinema on the browser, use the [asciinema-player](https://github.com/asciinema/asciinema-player).
 You will need `asciinema-player.css` and `asciinema-player.js`. You can download the latest version of these files [here](https://github.com/asciinema/asciinema-player/releases).

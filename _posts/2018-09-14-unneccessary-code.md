@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Unnecessary code
-subtitle: Clarifying the concept 
+title: Unnecessary Code
+subtitle: Clarifying the Concept 
 published: true
 tags: debloat
 keywords: software bloat, code, unused code

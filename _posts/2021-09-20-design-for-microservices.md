@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Design for microservices!
-subtitle: An easy way to boost the popularity of your open-source projects
+title: Design For Microservices!
+subtitle: An Easy Way to Boost the Popularity of Your Open-source Projects
 tags: programming
 description: The microservices architecture has gained significant momentum in the last years. Modularity, scalability, and elasticity are some of its essential characteristics. If you have an open-source project, you should consider designing it to be microservices friendly. The market will eventually reward you for that.
 keywords:
@@ -80,7 +80,7 @@ To mitigate this situation, some technologies such as Kubernetes provide service
 For example, when microservice components are handled by Kubernetes, in case that one service fails then the system can automatically recover from the fault without losing any critical resources.
 
 
-# The component is the opportunity
+# The Component Is the Opportunity
 
 Simplistically, one can consider each component in the Service layer of microservices as a standalone ~~small~~ application that talks to other applications through some tech communication channel.
 Each service has a state, manages data (either in memory or persisted on its own database), and makes computations to finally deliver some results to the client.
@@ -124,7 +124,6 @@ The user can observe how the project is being analyzed and visually engage with 
     Figure 2. DepClean modified to be used as a service component for a microservice architecture.
     </figcaption>
 </figure>
-
 
 Looking at the component in detail, the [`ProjectController`](https://github.com/castor-software/depclean-web/blob/main/src/main/java/se/kth/castor/depclean/web/controller/ProjectController.java) class is the main responsible for handling the DepClean logic (see the code snippet below).
 This class is annotated with the `@RestController` Spring annotation, which marks the class as a controller, meaning that every method returns a domain object instead of a view.
@@ -191,9 +190,3 @@ According to our results, designing for microservices is one of the best decisio
 - [https://restfulapi.net](https://restfulapi.net/)
 - [Microservices](https://ieeexplore.ieee.org/document/8354423), IEEE Software
 - [Microservices Architecture Enables DevOps: Migration to a Cloud-Native Architecture](https://ieeexplore.ieee.org/document/7436659), IEEE Software
-
-[comment]: <> (- [The Monolith Strikes Back: Why Istio Migrated From Microservices to a Monolithic Architecture]&#40;https://ieeexplore.ieee.org/document/9520758&#41;, IEEE Software)
-
-[comment]: <> (- [Challenges of Domain-Driven Microservice Design: A Model-Driven Perspective]&#40;https://ieeexplore.ieee.org/document/8354426&#41;, IEEE Software)
-
-

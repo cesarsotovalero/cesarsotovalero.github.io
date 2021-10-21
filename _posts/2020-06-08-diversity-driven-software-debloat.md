@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Diversity-driven software debloat
-subtitle: Leveraging the wisdom of multiple coverage tools
+title:  Diversity-driven Software Debloat
+subtitle: Leveraging the Wisdom of Multiple Coverage Tools
 tags: debloat popular
 keywords: software debloat, diversity, jdbl
 description: I leverage the diversity of code coverage tools to create a tool to automatically debloat Java artifacts.
@@ -14,7 +14,7 @@ date: 2020/6/08
 
 For months, I have worked on dynamic debloat of Java artifacts with [JDBL](https://github.com/castor-software/jdbl). To do so, I need to compile and execute software applications to determine what parts of the compiled application are used when executing it using some workloads. Then, with the collected usage information, I debloat the unused parts of the software. These two main tasks (execution and usage collection)  appear straightforward at first glance. However, I realize that the inability of coverage tools to precisely determine what is used at execution time makes this task a real challenge. I found a feasible solution to this problem in the combination of various coverage techniques, i.e., by leveraging [software diversity](https://dl.acm.org/doi/abs/10.1145/2807593). Let me explain.  
 
-# The problem
+# The Problem
 
 There are awesome Java coverage tools out there, notably: [JaCoCo](https://www.eclemma.org/jacoco/), [JCov](https://wiki.openjdk.java.net/display/CodeTools/jcov), and [Cobertura](https://cobertura.github.io/cobertura/). All these tools rely on a similar underlying principle: determining what parts of the software are necessary to produce the expected result. In general, most Java coverage tools perform the following tasks:
 
@@ -82,7 +82,7 @@ As we observe, the variable `RADIO`, initialized with a final static integer lit
 
 There are many more examples like the two described above: including interfaces, annotation, lambda expressions, and implicit constructors. So, it is clear for me the fact that none tool is able to cover all the variety of bytecode constructs coming from real-world Java programs. 
 
-# The winning strategy
+# The Winning Strategy
 
 To overcome the limitations of coverage and tracing tools, I tackle the problem from a different perspective. I decided to merge the coverage and tracing results of various tools, and debloat what none of the tools determines as covered. The current implementation of JDBL combines the outputs of three tools: JaCoco, [yajta](https://github.com/castor-software/yajta/), and the native class loader of the JVM. The benefits and drawbacks of these are the following:
 
@@ -114,6 +114,6 @@ As we observe, JDBL combines a variety of different implementations in order to 
 </aside>
 
 
-# The lesson to learn
+# The Lesson to Learn
 
 Coverage tools implement different policies to handle the variety of bytecode constructs, thus posing a challenge for its usage on debloating. I have shown that, as in this case, when facing a hard problem for which no tool can provide a 100% accurate solution, combining the diversity of implementations of similar tools is a feasible approach to achieve better results. Of course, one can argue that this decision may hurt performance, but sometimes performance is not exactly of principal goal :smiley:

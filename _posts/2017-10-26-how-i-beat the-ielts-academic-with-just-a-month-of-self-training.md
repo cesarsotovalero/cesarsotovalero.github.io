@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How I beat the IELTS Academic with Just a month of self-training
-subtitle: Personal comments and suggestions
+title: How I Beat the IELTS Academic With Just a Month of Self-training
+subtitle: Personal Comments and Suggestions
 description: Personal useful list of tips to pass the IELTS Academic English test. 
 published: true
 tags: self-improvement
@@ -17,13 +17,13 @@ The International English Language Testing System (IELTS) is one of the major En
 There are two versions of the test, **IELTS Academic** and **IELTS General Training**. The first is intended for those who want to enroll in universities and other institutions for higher education, while the latter is for test takers who want to work, study at a secondary school or migrate to an English-speaking country. In this blog post, I will refer to the Academic version of the test.
 
 # Contents
-1. [The test](#the-test)
+1. [The Test](#the-test)
   - [Listening](#listening)
   - [Reading](#reading)
   - [Writing](#writing)
   - [Speaking](#speaking)
-2. [Last remarks](#last-remarks)
-3. [Useful resources](#useful-resources)
+2. [Last Remarks](#last-remarks)
+3. [Useful Resources](#useful-resources)
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -36,7 +36,7 @@ There are two versions of the test, **IELTS Academic** and **IELTS General Train
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-# The test
+# The Test
 
 First of all, there is no official pass or fail for the test. IELTS is scored on a nine-band scale, with each band corresponding to a specified competence in English. Band scores are used for each language sub-skill (Listening, Reading, Writing, and Speaking). The Band Scale ranges from 0 (_"Did not attempt the test"_) to 9 (_"Expert User"_). The IELTS minimum scores required by academic institutions and by course vary. As a general rule, the ranked universities in the world tend to require a higher IELTS band (typically higher or equal to 6.5). Once you completed the test, your IELTS results will be available 13 days after and you will receive a Test Report Form like this one:
 
@@ -149,11 +149,11 @@ Here is a list of general tips and tricks I learned during my training for the S
 
 My personal advice is that the Speaking test is strongly predictable, so once you practice during a dozen of interviews, you will able to **predict the next question**. I remember that I prepared myself for each of the three parts separately; it’s like a game. I was familiarized with nearly all possible common questions. It is better if you have somebody for training (my wife helps me with this part). Finally, don’t expect a friendly interviewer, they are more interested in what’s recording the microphone than in you.
 
-# Last remarks
+# Last Remarks
 
 You should learn about all the types of tasks required in each part of the test. Make your strategy and recall that in the real test, you are going to score lower than in practice because of stress, pressure, and other factors (often one entire point lower than your average score). For instance, if you want to go for a band score of seven, be sure to achieve an eight during practice. 
 
-# Useful resources
+# Useful Resources
 
 - The Official Cambridge Guide to IELTS Series 1 to 10 - Student's Book with Answers
 - Target Band 7: IELTS Academic Module - how to Maximize Your Score by Simone Braverman
