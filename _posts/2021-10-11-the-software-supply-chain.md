@@ -1,7 +1,7 @@
 ---
 layout: post
-title: The software supply chain
-subtitle: A quick look at the modern software production landscape
+title: The Software Supply Chain
+subtitle: A Quick Look at the Modern Software Production Landscape
 tags: security
 description: Hardening the software supply chain is a critical challenge for modern software companies.
 keywords:
@@ -32,7 +32,7 @@ Lets me dive into it!
     </figcaption>
 </figure>
 
-# Supply chains
+# Supply Chains
 
 According to Wikipedia, a [supply chain](https://en.wikipedia.org/wiki/Supply_chain) is a system of organizations, people, activities, information, and resources involved in moving a product or service from supplier to consumer.
 Supply chains have proven to mitigate the risks associated with producing and distributing goods and services, making this process more efficient.
@@ -125,7 +125,7 @@ Technology-based solutions need to be developed in order to cope with the challe
   <iframe width="560" height="349" src="https://www.youtube.com/embed/mp_jSfUACrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-# Hardening the chain
+# Hardening the Chain
 
 Overall, supply chain-related attacks are perceived as very dangerous and hard to detect.
 Securing the software supply chain requires a continuous assessment of the components, vendors, and the whole operational environment.

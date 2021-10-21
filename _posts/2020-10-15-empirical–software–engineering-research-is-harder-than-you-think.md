@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Empirical software engineering research is harder than you think
-subtitle: Trust me 
+title:  Empirical Software Engineering Research is Harder than you Think
+subtitle: Trust Me 
 tags: research
 keywords: empirical, software engineering, challenges
 published: true
@@ -86,6 +86,6 @@ The following table summarizes the points discussed above:
 | ------ | ------ | ------ |
 {: .border-bottom-on-table  }
 
-# Final words
+# Final Remarks
 
 In summary, empirical SE research is not easy at all. It imposes a diverse set of unique challenges to researchers, from the formulation of the hypothesis to the argumentation of a relevant conclusion. If you think this is not true, then try to publish in a top journal in the field. Do it first, then we can talk about it :smirk:.

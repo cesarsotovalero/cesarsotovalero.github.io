@@ -1,7 +1,7 @@
 ---
 layout: post
-title: What does it take to become a software architect?
-subtitle: A matter of responsibilities
+title: What Does It Take to Become a Software Architect?
+subtitle: A Matter of Responsibilities
 tags: management
 description: The software architect is the person who has the authority to make the technical decisions regarding the architecture of a software project and stay responsible for them. This position requires a high level of authority and responsibility. This post explains what these two words actually mean and discusses the necessary skills to become a competent software architect.
 keywords: 
@@ -32,7 +32,7 @@ In this post, I’m going to explain what these two words actually mean and disc
     </figcaption>
 </figure>
 
-# The market 
+# The Market 
 
 The term “architect” is borrowed from traditional construction. 
 When constructing a building, a plan is needed, as well as a team of trained construction workers with a capable foreman to lead them all. 
@@ -62,7 +62,7 @@ In most situations, the architect should act as a technical dictator with the ab
 These particular skills make software architects a scarce kind of leaders.
 And as with everything else, scarcity, when combined with high demand, increases the market value exponentially.
 
-# The value
+# The Value
 
 If you are a developer, you might consider advancing your career to become a software architect.
 However, it is ~~impossible~~ very difficult to become a software architect without years of experience grinding hard as a developer.
@@ -88,7 +88,7 @@ Together with the credit received from happy PMs (when the results are good), ar
 Dealing with such a responsibility demands skills that not every developer possesses.
 And that is exactly the reason of the architects' value.
 
-# The skills
+# The Skills
 
 To recap, software architects have two primary skill to master: **responsibility** and **authority**.
 The architect is responsible for turning a concept into a realizable plan for delivery.

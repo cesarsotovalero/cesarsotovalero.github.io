@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Dynamic programming
-subtitle: A handful of representative problems solved
+title:  Dynamic Programming
+subtitle: A Handful of Representative Problems Solved
 tags: programming
 description: All software engineers should be able to understand dynamic programming. I give a curated list of very representative problems and explain their solutions.
 published: true
@@ -101,7 +101,7 @@ Input: fib(8)
 Output: 21
 {% endhighlight %}
 
-### Memoization solution
+### Memoization Solution
 
 {% highlight java linenos %}
 static int fib(int n, Map<Integer, Integer> memo) {
@@ -113,7 +113,7 @@ static int fib(int n, Map<Integer, Integer> memo) {
 }
 {% endhighlight %}
 
-### Tabulation solution
+### Tabulation Solution
 
 {% highlight java linenos %}
 static int fib(int n) {
@@ -127,7 +127,7 @@ static int fib(int n) {
 }
 {% endhighlight %}
 
-# Grid traveler
+# Grid Traveler
 
 **Description:** You are a traveler on a 2D grid. You begin in the top-left corner and your goal is to travel to the bottom-right corner. You may only move down or right. In how many ways can you travel to the goal on a grid with dimensions `n`*`m`.
 
@@ -137,7 +137,7 @@ Input: gridTraveler(2, 3)
 Output: 3
 {% endhighlight %}
 
-### Memoization solution
+### Memoization Solution
 
 {% highlight java linenos %}
 static long gridTraveler(int m, int n, Map<String, Long> memo) {
@@ -150,7 +150,7 @@ static long gridTraveler(int m, int n, Map<String, Long> memo) {
 }
 {% endhighlight %}
 
-### Tabulation solution
+### Tabulation Solution
 
 {% highlight java linenos %}
 static long gridTraveler(int m, int n) {
@@ -167,7 +167,7 @@ static long gridTraveler(int m, int n) {
 }
 {% endhighlight %}
 
-# Can sum 
+# Can Sum 
 
 **Description:** Write a function that return _a boolean_ indicating whether it is possible to generate a `targetSum` value by adding number from a given array. Elements of the array are positive integers and can be used as many time as needed.
 
@@ -177,7 +177,7 @@ Input: canSum(7, new int[]{5, 3, 4, 7})
 Output: true
 {% endhighlight %}
 
-### Memoization solution
+### Memoization Solution
 
 {% highlight java linenos %}
 static boolean canSum(int targetSum, int[] numbers, Map<Integer, Boolean> memo) {
@@ -205,7 +205,7 @@ brute force: O(n^m)
 memoized: O(m*n)
 -->
 
-### Tabulation solution
+### Tabulation Solution
 
 {% highlight java linenos %}
 static boolean canSum(int targetSum, int[] numbers) {
@@ -225,7 +225,7 @@ static boolean canSum(int targetSum, int[] numbers) {
 {% endhighlight %}
 
 
-# How sum
+# How Sum
 
 **Description:** Write a function that return an array containing _any combination_ of elements that add up to exactly the `targetSum`. If there is no combination that adds up to the `targetSum`, then return `null`.
 
@@ -235,7 +235,7 @@ Input: howSum(7, new int[]{5, 3, 4, 7})
 Output: [3, 4] // or [7]
 {% endhighlight %}
 
-### Memoization solution
+### Memoization Solution
 
 {% highlight java linenos %}
 static List<Integer> howSum(int targetSum, int[] numbers, Map<Integer, List<Integer>> memo) {
@@ -265,7 +265,7 @@ brute force: O(n^m * m)
 memoized: O(m*m^2)
 -->
 
-### Tabulation solution
+### Tabulation Solution
 
 {% highlight java linenos %}
 static List<Integer> howSum(int targetSum, int[] numbers) {
@@ -291,7 +291,7 @@ static List<Integer> howSum(int targetSum, int[] numbers) {
 {% endhighlight %}
 
 
-# Best sum
+# Best Sum
 
 **Description:** Write a function that returns an array containing _the shortest combination_ of numbers that add up to exactly the `targetSum`. If there is a tie fo the shortest combination, you may return any one of the shortest.
 
@@ -301,7 +301,7 @@ Input: bestSum(7, new int[]{5, 3, 4, 7})
 Output: [7]
 {% endhighlight %}
 
-### Memoization solution
+### Memoization Solution
 
 {% highlight java linenos %}
 static List<Integer> bestSum(int targetSum, int[] numbers, Map<Integer, List<Integer>> memo) {
@@ -336,8 +336,7 @@ brute force: O(n^m * m)
 memoized: O(m*m^2)
 -->
 
-
-### Tabulation solution
+### Tabulation Solution
 
 {% highlight java linenos %}
 static List<Integer> bestSum(int targetSum, int[] numbers) {
@@ -368,7 +367,7 @@ static List<Integer> bestSum(int targetSum, int[] numbers) {
 } 
 {% endhighlight %}
 
-# Can construct
+# Can Construct
 
 **Description:** Write a function that returns _a boolean_ indication whether the `target` string can be constructed by concatenating elements of the `wordBank` array of strings. Elements in `wordBank` can be reused as many times as needed.
 
@@ -378,7 +377,7 @@ Input: canConstruct("abcdef", new String[]{"ab", "abc", "cd", "def", "abcd"})
 Output: true
 {% endhighlight %}
 
-### Memoization solution
+### Memoization Solution
 
 {% highlight java linenos %}
 static boolean canConstruct(String target, String[] wordBank, Map<String, Boolean> memo) {
@@ -403,7 +402,7 @@ brute force: O(n^m * m)
 memoized: O(m*m^2)
 -->
 
-### Tabulation solution
+### Tabulation Solution
 
 {% highlight java linenos %}
 static boolean canConstruct(String target, String[] wordBank) {
@@ -428,7 +427,7 @@ static boolean canConstruct(String target, String[] wordBank) {
 }
 {% endhighlight %}
 
-# Count construct 
+# Count Construct 
 
 **Description:** Write a function that returns _the number of ways_ that the `target` can be constructed by concatenating elements of the `wordBank` array. Elements in `wordBank` can be reused as many times as needed.
 
@@ -438,7 +437,7 @@ Input: countConstruct("purple", new String[]{"purp", "p", "ur", "le", "purpl"})
 Output: 2
 {% endhighlight %}
 
-### Memoization solution
+### Memoization Solution
 
 {% highlight java linenos %}
 static int countConstruct(String target, String[] wordBank, Map<String, Integer> memo) {
@@ -462,7 +461,7 @@ brute force: O(n^m * m)
 memoized: O(m*m^2)
 -->
 
-### Tabulation solution
+### Tabulation Solution
 
 {% highlight java linenos %} 
 static int countConstruct(String target, String[] wordBank) {
@@ -485,7 +484,7 @@ static int countConstruct(String target, String[] wordBank) {
 }
 {% endhighlight %}
 
-# All construct
+# All Construct
 
 **Description:** Write a function that returns a 2D array containing _all the ways_ that the `target` can be constructed by concatenating elements of the `wordBank` array. Each element of the 2D array should represent one combination that constructs the `target`. Elements in `wordBank` can be reused as many times as needed.
 
@@ -499,7 +498,7 @@ Output: {["ab", "cd", "ef"],
         }
 {% endhighlight %}
 
-### Memoization solution
+### Memoization Solution
 
 {% highlight java linenos %}
 static List<List<String>> allConstruct(String target, String[] wordBank, Map<String, List<List<String>>> memo) {
@@ -534,7 +533,7 @@ brute force: O(n^m * m)
 memoized: O(m*m^2)
 -->
 
-### Tabulation solution
+### Tabulation Solution
 
 {% highlight java linenos %} 
 static List<List<String>> allConstruct(String target, String[] wordBank) {

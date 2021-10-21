@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Replace the disqus commenting system on your blog 
-subtitle: GitHub-based open-source alternatives are much better
+title:  Replace the Disqus Commenting System on your Blog 
+subtitle: GitHub-based Open-source Alternatives are Much Better
 description: Disqus started polluting free users with unwanted ads; it's time to replace Disqus with better open-source alternatives.
 tags: tools
 published: true
@@ -24,7 +24,7 @@ Gisqus is an open-source commenting system that relies on GitHub Discussions to 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Woah, <a href="https://twitter.com/disqus?ref_src=twsrc%5Etfw">@disqus</a> now forcing ads on the Commenting System. When tried to remove got this screen. :/ <br><br>These ads pay nothing &amp; they force them. <a href="https://t.co/8NxVis8n1A">pic.twitter.com/8NxVis8n1A</a></p>&mdash; Amit Bhawani (@amitbhawani) <a href="https://twitter.com/amitbhawani/status/828554455876505601?ref_src=twsrc%5Etfw">February 6, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-# What happened with Disqus?
+# What Happened with Disqus?
 
 Comment management is a crucial part of the blogging endeavour.
 Comments are the perfect communication channel to engage with readers.
@@ -40,7 +40,7 @@ However, Disqus suddenly started to introduce ads on my website, asking for an ~
 This is a bad move from Disqus, especially for small blogs that cannot afford this significant fee. 
 So, it is time to replace it for the best of the visitors (and the pocket).
 
-# Why replacing Disqus?
+# Why Replacing Disqus?
 
 These are the primary reasons to get rid of Disqus:
 
@@ -58,7 +58,7 @@ Luckly, there are great open-source alternatives to Disqus:
 
 **Note:** These GitHub-based solutions are ideal for sites with an audience that skews towards developers who already have a GitHub account. 
 
-# Setting up Giscus
+# Setting Up Giscus
 
 [This blog](https://www.cesarsotovalero.net/blog) runs on GitHub pages, and [Jekyll](https://jekyllrb.com/) powers it.
 By the way, please [give it a start](https://github.com/cesarsotovalero/cesarsotovalero.github.io) if you like it :smiley:.
@@ -75,7 +75,6 @@ For example, it supports comments replies, more engaging discussion reactions, a
 > "When giscus loads, the GitHub Discussions search API is used to find the Discussion associated with the page based on a chosen mapping (URL, pathname, \<title\>, etc.). If a matching discussion cannot be found, the giscus bot will automatically create a discussion the first time someone leaves a comment or reaction."
 >
 > "To comment, visitors must authorize the giscus app to post on their behalf using the GitHub OAuth flow. Alternatively, visitors can comment on the GitHub Discussion directly. You can moderate the comments on GitHub." -- [Gisqus](https://giscus.app)
-
 
 To set up Giscus, the GitHub repo has to meet only three requirement:
 
@@ -126,6 +125,3 @@ I opted for Giscus, a great ad-free solution that provides an excellent user exp
 It's worth mentioning that this system relies on GitHub, a Microsoft product, so it is not wholly exempt from future changes.
 However, it is highly unlikely to expect some sort of fee for public repositories at the moment.
 If you have any questions, let me know in the Giscus-based comments below!
-
-
-

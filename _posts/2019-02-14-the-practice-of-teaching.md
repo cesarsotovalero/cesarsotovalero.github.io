@@ -1,7 +1,7 @@
 ---
 layout: post
-title: The practice of teaching
-subtitle: The ultimate skill to learn
+title: The Practice of Teaching
+subtitle: The Ultimate Skill to Learn
 published: true
 tags: soft-skills
 description: I share preparation tips when teaching how the Quicksort algorithm works using a blackboard and chalk.
@@ -26,7 +26,7 @@ It was, however, not that bad. Isn't it?
   <iframe width="560" height="349" src="https://www.youtube.com/embed/3nptpGpaYws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-# Wrapping up 
+# Wrapping Up 
 
 For my this session, these are some preparation tips that helped me:
 

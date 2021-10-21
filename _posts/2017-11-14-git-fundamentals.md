@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Git fundamentals
-subtitle: The must-know git commands for software developers
+title: Git Fundamentals
+subtitle: The Must-know Git Commands for Software Developers
 published: true
 description: The basic git commands that every developer should known. 
 tags: tools
@@ -30,7 +30,7 @@ Git is the standard version-control system for software development. Git was cre
 * [Git reset](#git-reset)
 * [Troubleshooting](#troubleshooting)
 
-# Git configurations
+# Git Configurations
 
 First, add your user name and email to the git global configurations. These commands will be automatically written  to `~/.gitconfig`.
 
@@ -70,6 +70,8 @@ To change the message of the last t commit made:
 ```git
 git commit --amend
 ```
+
+# Git 
 
 # Git branches
 
