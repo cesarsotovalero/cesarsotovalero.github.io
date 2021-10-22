@@ -1715,6 +1715,10 @@ figure figcaption {
   }
 }
 
+figure figcaption a {
+  color: var(--post-meta-index-color);
+}
+
 
 /* --- Gallery --- */
 
