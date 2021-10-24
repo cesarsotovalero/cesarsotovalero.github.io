@@ -160,6 +160,7 @@ I hope events such as the SolarWinds incident become less frequent in the near f
 
 # References
 
+- [Securing the World's Software](https://arxiv.org/ftp/arxiv/papers/2110/2110.10246.pdf)
 - [https://reproducible-builds.org/docs](https://reproducible-builds.org/docs)
 - [https://survey.opensourceunchained.eu/](https://survey.opensourceunchained.eu/)
 - [SolarWinds attack explained: And why it was so hard to detect](https://www.csoonline.com/article/3601508/solarwinds-supply-chain-attack-explained-why-organizations-were-not-prepared.html)
