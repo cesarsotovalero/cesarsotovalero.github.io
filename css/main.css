@@ -104,8 +104,8 @@ blockquote p:first-child {
 }
 
 em {
-  font-style: normal;
-  font-family: "Linux Biolinum Slanted", "Open Sans";
+  font-style: italic;
+  font-family: "Linux Biolinum", "Helvetica Neue",Open Sans";
 }
 
 .post-categories {
@@ -793,15 +793,15 @@ logo-main a:hover {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
-  font-family: "Open Sans";
+  font-family: "Cambria", "Open Sans";;
 }
 
 
 .posts-list .post-subtitle {
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 10px;
-  font-family: "Linux Biolinum Slanted", "Open Sans";
+  font-family: "Cambria", "Open Sans";
 }
 
 .post-preview .post-meta,
@@ -1088,7 +1088,7 @@ logo-main a:hover {
   font-size: 26px;
   line-height: 1.1;
   display: block;
-  font-family: "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
   /*text-transform: capitalize;*/
@@ -1852,6 +1852,12 @@ ul {
   border-radius: 5px 3px 3px 5px;
 }
 
+.quote em {
+  font-style: normal;
+  font-family : "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-weight: normal;
+}
+
 #comments-count {
   padding-left: 1rem;
 }
@@ -1992,8 +1998,6 @@ ul {
   background-size: contain;
   filter: invert(7%) sepia(0%) saturate(6770%) hue-rotate(276deg) brightness(99%) contrast(79%);
 }
-
-
 
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
