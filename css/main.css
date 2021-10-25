@@ -105,7 +105,7 @@ blockquote p:first-child {
 
 em {
   font-style: italic;
-  font-family: "Linux Biolinum", "Helvetica Neue",Open Sans";
+  font-family: "Linux Biolinum", "Helvetica Neue", Open Sans ";
 }
 
 .post-categories {
@@ -375,6 +375,26 @@ a[href$=".pptx"] {
   display: block;
 }
 
+.avatar-img-small {
+  margin-right: 1em;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /*display: inline-block;*/
+  box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+}
+
+@media only screen and (max-width: 768px) {
+  .avatar-img-small {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+
 .navbar-custom.top-nav-short .avatar-container {
   opacity: 0;
 }
@@ -420,7 +440,7 @@ a[href$=".pptx"] {
 
 .navbar-nav {
   margin-right: 0px;
-  margin-left:  0px;
+  margin-left: 0px;
 }
 
 .navbar-custom .nav .navlinks-children {
@@ -453,7 +473,6 @@ a[href$=".pptx"] {
     display: block;
   }
 }
-
 
 
 @media only screen and (min-width: 768px) {
@@ -809,15 +828,38 @@ logo-main a:hover {
   color: var(--post-meta-index-color);
   font-size: 18px;
   /*font-style: italic;*/
-  margin: 10px 0 10px;
+  margin: 10px 12px 10px 0;
 }
+
+
 
 @media only screen and (max-width: 425px) {
   .post-preview .post-meta,
   .post-heading .post-meta {
     font-size: 16px;
+    margin: 10px 12px 10px 0;
   }
 }
+
+
+
+
+.post-share-meta {
+  color: var(--post-meta-index-color);
+  font-size: 18px;
+  /*font-style: italic;*/
+  margin: 10px 12px 10px 0;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .post-share-meta {
+    font-size: 16px;
+    margin: 10px 12px 10px 0;
+  }
+}
+
+
 
 .post-meta-index {
   color: var(--post-meta-index-color);
@@ -1425,7 +1467,12 @@ td.gutter {
 /* --- Social media sharing section --- */
 
 #share-section {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px
+}
+
+#share-section a {
+  margin-right: 3px;
 }
 
 /* --- Notification boxes --- */
@@ -1816,12 +1863,20 @@ ul {
 .flex-container {
   display: flex;
   flex-flow: row wrap;
-  padding: 0;
+  margin-bottom: 15px;
+  padding: 15px 0 0;
+  flex-direction:row;
 }
 
 .flex-item {
-  margin-top: 5px;
   margin-right: 12px;
+  align-self: flex-start;
+}
+
+
+.half-size {
+  flex-grow: 0;
+  flex-shrink: 1;
 }
 
 .flex-container-footer-badges {
@@ -1842,8 +1897,7 @@ ul {
   float: right;
   font-size: 22px;
   margin: 10px 0px 20px 20px;
-  padding: 10px 5px 10px 5px;
-  padding-left: 10px;
+  padding: 10px 5px 10px 10px;
   width: 300px;
   line-height: 1.25;
   border: 1px solid var(--main-background-color);
@@ -1854,7 +1908,7 @@ ul {
 
 .quote em {
   font-style: normal;
-  font-family : "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   font-weight: normal;
 }
 
@@ -1977,6 +2031,7 @@ ul {
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
 }
+
 .container-youtube iframe {
   position: absolute;
   top: 0;
