@@ -37,7 +37,7 @@ As a researcher, I write academic papers for journals and conferences. My work c
   <a href="https://dx.doi.org/10.1007/s42979-021-00612-w"><i class="icon i-doi"></i> 10.1007/s42979-021-00612-w</a>
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
-  A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem. 
+  **A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem**. 
   César Soto-Valero, Nicolas Harrand, Martin Monperrus, and Benoit Baudry. 
   _Empirical Software Engineering (EMSE)_.
   <a href="https://medium.com/@almyre/how-much-third-party-java-dependencies-do-you-really-need-45650180367a"><i class="fab fa-medium"></i> Medium</a>
