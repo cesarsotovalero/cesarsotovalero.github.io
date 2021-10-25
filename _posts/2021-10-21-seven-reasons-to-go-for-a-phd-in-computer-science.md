@@ -14,6 +14,7 @@ image: https://www.cesarsotovalero.net/img/posts/rabbit_cover.jpg
 share-img: https://www.cesarsotovalero.net/img/posts/rabbit_cover.jpg
 show-avatar: false
 date: 2021/10/21
+author: cesarsotovalero
 published: true
 ---
 
