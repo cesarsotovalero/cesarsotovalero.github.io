@@ -9,6 +9,7 @@ description: Unnecessary code is such that can be deleted from the codebase with
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/codecode.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/codecode.png
 show-avatar: false
+author: cesarsotovalero
 date: 2018/09/14
 ---
 

@@ -9,6 +9,7 @@ keywords: acm icpc, competition, problems, programming
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/competitive-programming-brain.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/competitive-programming-brain.png
 show-avatar: false
+author: cesarsotovalero
 date: 2017/12/13
 ---
 

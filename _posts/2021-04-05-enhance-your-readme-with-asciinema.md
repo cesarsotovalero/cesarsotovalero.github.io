@@ -9,6 +9,7 @@ keywords: asciinema, readme, improvement, video
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/asciinema.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/asciinema.jpg
 show-avatar: false
+author: cesarsotovalero
 date: 2021/4/5
 ---
 

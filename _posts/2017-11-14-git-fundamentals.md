@@ -9,6 +9,7 @@ keywords: command line, version control, GitHub, software developement
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/git_logo.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/git_logo.png
 show-avatar: false
+author: cesarsotovalero
 date: 2017/11/14
 ---
 
@@ -70,8 +71,6 @@ To change the message of the last t commit made:
 ```git
 git commit --amend
 ```
-
-# Git 
 
 # Git branches
 

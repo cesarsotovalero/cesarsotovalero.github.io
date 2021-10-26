@@ -9,6 +9,7 @@ keywords: blog, comments, disqus, replace
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/angry-emoji.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/angry-emoji.jpg
 show-avatar: false
+author: cesarsotovalero
 date: 2021/7/27
 ---
 

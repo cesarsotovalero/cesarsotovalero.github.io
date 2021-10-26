@@ -7,6 +7,7 @@ published: false
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.gif
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/backyard.gif
 show-avatar: false
+author: cesarsotovalero
 date: 2021/1/18
 ---
 

@@ -9,6 +9,7 @@ keywords: latex, macros, productivity, tutorials
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/snail_cover.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/snail_cover.jpg
 show-avatar: false
+author: cesarsotovalero
 date: 2021/5/28
 ---
 

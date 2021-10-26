@@ -9,6 +9,7 @@ keywords: problems, dynamic programming, strategies
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/backyard.jpg
 show-avatar: false
+author: cesarsotovalero
 date: 2020/12/21
 ---
 

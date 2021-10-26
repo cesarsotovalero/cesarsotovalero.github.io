@@ -9,6 +9,7 @@ tags: misc
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/cuba_flag.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/cuba_flag.jpg
 show-avatar: false
+author: cesarsotovalero
 date: 2019/12/8
 ---
 

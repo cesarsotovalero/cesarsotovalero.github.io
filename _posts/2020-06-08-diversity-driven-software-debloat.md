@@ -9,6 +9,7 @@ published: true
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/crowd.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/crowd.jpg
 show-avatar: false
+author: cesarsotovalero
 date: 2020/6/08
 ---
 
