@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: cesarsotovalero.net
+Token: 78aedcb87e6b10d6fb190821188e92d1d7d8e55f951226d99d1bc5a2588fb43d
