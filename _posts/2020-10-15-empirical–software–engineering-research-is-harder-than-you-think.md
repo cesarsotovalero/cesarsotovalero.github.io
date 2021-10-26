@@ -9,6 +9,7 @@ description: The ingredients for a good software engineering paper are very diff
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/children-gardening-squared.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/children-gardening-squared.png
 show-avatar: false
+author: cesarsotovalero
 date: 2020/10/15
 ---
 

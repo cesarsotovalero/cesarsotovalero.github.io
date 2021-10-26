@@ -9,6 +9,7 @@ keywords: recursion, Java, parallel, fork, join
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree_cover.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/night_tree_cover.jpg
 show-avatar: false
+author: cesarsotovalero
 date: 2021/6/5
 ---
 

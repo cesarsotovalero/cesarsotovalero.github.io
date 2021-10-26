@@ -9,6 +9,7 @@ keywords: software attack, vulnerability
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/zipper.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/zipper.jpg
 show-avatar: false
+author: cesarsotovalero
 date: 2019/10/16
 ---
 

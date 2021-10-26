@@ -9,6 +9,7 @@ description: Presenting research work to industrial engineers is essential for t
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/skates_cover.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/skates_cover.jpg
 show-avatar: false
+author: cesarsotovalero
 date: 2020/11/2
 ---
 

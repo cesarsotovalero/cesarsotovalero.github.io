@@ -14,6 +14,7 @@ image: https://www.cesarsotovalero.net/img/posts/crane_cover.png
 share-img: https://www.cesarsotovalero.net/img/posts/crane_cover.png
 show-avatar: false
 date: 2021/10/11
+author: cesarsotovalero
 published: true
 ---
 

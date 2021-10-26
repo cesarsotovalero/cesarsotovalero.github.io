@@ -12,7 +12,8 @@ keywords:
   - software architect salary
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/metro_in_stadium_cover.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/metro_in_stadium_cover.jpg
-show-avatar: false
+show-avatar: false 
+author: cesarsotovalero
 date: 2021/08/09
 ---
 

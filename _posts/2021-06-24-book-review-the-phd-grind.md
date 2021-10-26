@@ -9,6 +9,7 @@ keywords: research, Ph.D., book
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/phd_grind_cover.png
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/phd_grind_cover.png
 show-avatar: false
+author: cesarsotovalero
 date: 2021/6/24
 ---
 

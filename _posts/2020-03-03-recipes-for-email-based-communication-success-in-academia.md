@@ -8,6 +8,7 @@ keywords: communication, email
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/word_cloud.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/word_cloud.jpg
 show-avatar: false
+author: cesarsotovalero
 date: 2020/3/03
 ---
 

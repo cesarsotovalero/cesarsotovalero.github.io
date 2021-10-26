@@ -8,6 +8,7 @@ published: true
 keywords: programmers, dead, artificial intelligence, machine learning
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/ladybug_cover.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/ladybug_cover.jpg
+author: cesarsotovalero
 show-avatar: false
 date: 2021/7/31
 ---

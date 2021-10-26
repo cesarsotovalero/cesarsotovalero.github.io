@@ -9,6 +9,7 @@ published: true
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/unix_course.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/unix_course.jpg
 show-avatar: false
+author: cesarsotovalero
 date: 2020/5/23
 ---
 
