@@ -164,6 +164,7 @@ include:
   - _pages
   - .well-known
   - yandex_640034aaee9b8f83.html
+  - google974bdea481135366.html
 
 # Exclude these files from production site
 exclude:

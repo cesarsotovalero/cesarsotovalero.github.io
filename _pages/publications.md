@@ -20,7 +20,8 @@ As a researcher, I write academic papers for journals and conferences. My work c
   <img alt="award" title="ACM SIGSOFT Distinguished Paper Award" src="../../img/award.png" height="30px"> 
   **A Longitudinal Analysis of Bloated Java Dependencies**. 
   César Soto-Valero, Thomas Durieux, and Benoit Baudry. 
-  _Proceeding of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE), Athens, Greece_. 
+  _Proceeding of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE), Athens, Greece_.
+  [:earth_americas: Interview](https://intra.kth.se/en/eecs/aktuellt-pa-eecs/nyheter/grattis-till-vinsten-cesar-1.1112396)
   <a href="https://dx.doi.org/10.1145/3468264.3468589"><i class="icon i-doi"></i> 10.1145/3468264.3468589</a> 
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px">
@@ -80,7 +81,7 @@ As a researcher, I write academic papers for journals and conferences. My work c
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> 
   **The Strengths and Behavioral Quirks of Java Bytecode Decompilers**. 
-  Nicolas Harrand, César Soto-Valero, Martin Momperrus, and Benoit Baudry. 
+  Nicolas Harrand, César Soto-Valero, Martin Monperrus, and Benoit Baudry. 
   _19th International Working Conference on Source Code Analysis and Manipulation (SCAM), Cleveland, OH, USA_. 
   <a href="https://dx.doi.org/10.1109/scam.2019.00019"><i class="icon i-doi"></i> 10.1109/scam.2019.00019</a>
 
