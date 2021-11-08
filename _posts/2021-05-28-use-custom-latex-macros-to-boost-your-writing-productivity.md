@@ -63,7 +63,7 @@ I often find very useful defining the `\cesar` and `\todo` commands in all my do
 \usepackage{amsmath,amssymb}
 \usepackage[inline]{enumitem}
 {% endraw %}
-% Code for creting comments
+% Code for creating comments
 {% raw %}
 \newboolean{showcomments}
 \setboolean{showcomments}{true}
