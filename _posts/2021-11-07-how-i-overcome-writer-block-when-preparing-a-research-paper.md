@@ -13,7 +13,7 @@ keywords:
 image: https://www.cesarsotovalero.net/img/posts/stalking_monster.jpg
 share-img: https://www.cesarsotovalero.net/img/posts/stalking_monster_cover.jpg
 show-avatar: false
-date: 2021/11/14
+date: 2021/11/07
 author: cesarsotovalero
 published: true
 ---
