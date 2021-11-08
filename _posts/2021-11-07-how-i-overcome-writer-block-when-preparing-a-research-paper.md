@@ -27,7 +27,7 @@ So, let me tell you about the tricks I've learned through these years of continu
 I hope you find them useful as too.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/rabbit.jpg alt: "Photo taken at Tekniska högskolan metro station." %}
+  {% responsive_image path: img/posts/stalking_monster.jpg alt: "Photo taken at Tekniska högskolan metro station." %}
   <figcaption class="stroke">
     &#169; Writer's block is an stalking monster. Photo taken at <a href="https://goo.gl/maps/ZjSrUbNDX9EutcES7">Tekniska högskolan metro station</a>.
     </figcaption>
