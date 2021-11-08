@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>How I Overcome Writer&apos;s Block When Preparing a Research Paper</title>
+        <description>
+          My bulletproof approach - 
+          Every time I start writing a new research paper, the same freezing feeling seems to emerge when I look at the blank page. This problem is known as writer’s block, and most academics suffer from it in one way or the other. I’ve dealt with this invisible monster on many...
+        </description>
+        <pubDate>Sun, 07 Nov 2021 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html</guid>
+      </item>
+    
+      <item>
         <title>Seven Reasons to Go For a Ph.D. in Computer Science</title>
         <description>
           The Good and the Ugly - 
@@ -213,17 +224,6 @@
         <pubDate>Sun, 08 Dec 2019 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/the-cuban-revolution-explained.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-cuban-revolution-explained.html</guid>
-      </item>
-    
-      <item>
-        <title>Vulnerability Exploitation</title>
-        <description>
-          Zip Slip Attacks - 
-          In today’s ever expanding-open source communities, developers rely heavily on third-party libraries and copy-pasted code from social networks like StackOverflow to accelerate productivity. Such code reuse tendency helps to decrease development time and effort, but also means that vulnerability in shared code (i.e., libraries) gets spread dramatically faster, as occurs...
-        </description>
-        <pubDate>Wed, 16 Oct 2019 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/zip-slip-attacks.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/zip-slip-attacks.html</guid>
       </item>
     
   </channel>
