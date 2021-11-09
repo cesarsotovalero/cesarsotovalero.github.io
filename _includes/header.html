@@ -67,7 +67,9 @@
                      <!-- Output author details if some exist. -->
                      {% if author %}
                      <!-- Personal Info. -->
-                     <img class="avatar-img-small" src="{{ author.photo }}" alt="{{ author.name }}">
+                     <a href="{{ author.url }}">
+                        <img class="avatar-img-small" src="{{ author.photo }}" alt="{{ author.name }}">
+                     </a>
                      {% endif %}
 
 

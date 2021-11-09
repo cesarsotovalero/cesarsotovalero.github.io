@@ -102,8 +102,24 @@ form.wj-contact input[type="submit"] {
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
    var typed = new Typed('.type', {
-      strings: ["Researcher", "Teacher", "Collaborator", "Writer", "Software Developer", "Software Architect", "Manager", "Data Scientist",
-         "R Programmer", "Java Programmer", "Designer", "Speaker"
+      strings: [
+              "I code in Java",
+              "I code in R",
+              "I code in Javascript",
+              "I code in Python",
+              "I design software",
+              "I read research papers",
+              "I contribute to open-source",
+              "I write about what I learn",
+              "I teach what I know",
+              "I do research",
+              "I overcome my failures",
+              "I never stop learning",
+              "I don't give up",              
+              "I value family and friends",
+              "I like listening podcasts",
+              "I like homemade food",
+              "I like photography",
       ],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
