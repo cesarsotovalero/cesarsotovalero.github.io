@@ -11,14 +11,14 @@ published: true
 
 ---
 
-# Academic degrees
+# Academic Degrees
 
 - M.Sc. in Computer Science,  [[Original Degree in Spanish]()], [[English Translation](../files/certificates/MSc_Degree_(certified)_eng.pdf)], Universidad Central "Marta Abreu" de Las Villas, Cuba, 2016
 - B.Sc. in Computer Science, [[Original Degree in Spanish](../files/certificates/BSc_Degree_Original.pdf)], [[English Translation](../files/certificates/BSc_Degree_(certified)_eng.pdf)], Universidad Central "Marta Abreu" de Las Villas, Cuba, 2013
 
 # Awards
 
-- [ESEC/FSE Distinguished Paper Award](../files/certificates/FSE_Distinguished_Paper_Award_2021.pdf), _ ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering_, 2021
+- [ESEC/FSE Distinguished Paper Award](../files/certificates/FSE_Distinguished_Paper_Award_2021.pdf), _ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering_, 2021
 - [MSR Data Showcase Award](../files/certificates/MSR_Data_Showcase_Award_2019.pdf), _16th International Conference on Mining Software Repositories_, 2019
 - [WASP Certificate of Excellence](../files/certificates/WASP_award.pdf), _WASP Autonomous Systems II_, 2019 
 
