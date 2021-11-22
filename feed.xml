@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>How to Set Up A Blockchain Network With Hyperledger Besu</title>
+        <description>
+          Look mom, I&apos;m running my own blockchain! - 
+          If you are a Java developer interested in cryptocurrencies and blockchain-related technologies, you should probably have heard about Hyperledger Besu. Besu is the official Java client of the Ethereum blockchain. As an enterprise-grade client for public and private networks, Besu is able to connect to the blockchain and verify all...
+        </description>
+        <pubDate>Sun, 21 Nov 2021 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/how-to-set-up-a-blockchain-network-with-hyperledger-besu.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-set-up-a-blockchain-network-with-hyperledger-besu.html</guid>
+      </item>
+    
+      <item>
         <title>How I Overcome Writer&apos;s Block When Preparing a Research Paper</title>
         <description>
           My bulletproof approach - 
@@ -18,7 +29,7 @@
       </item>
     
       <item>
-        <title>Seven Reasons to Go For a Ph.D. in Computer Science</title>
+        <title>Seven Reasons to Go For a Ph.D. In Computer Science</title>
         <description>
           The Good and the Ugly - 
           Pursuing a Ph.D. is a unique and personal experience. Admittedly, it is a journey mostly driven by personal ambitions and pride. The decision to begin this journey (i.e., becoming a Ph.D. student) is a very serious because a Ph.D. can literally change your life. It is not something to be...
@@ -106,7 +117,7 @@
       </item>
     
       <item>
-        <title>Use Custom LaTeX Macros to Boost your Writing Productivity</title>
+        <title>Use Custom LaTeX Macros to Boost Your Writing Productivity</title>
         <description>
           Forget About the Annoying Numerical Glitches in your Document - 
           If you ever use LaTeX to write your research papers or technical reports, then you should know how useful and powerful this tool is. Let me just mention three well-known benefits of using LaTeX: 1) beautiful typeset output (especially when dealing with mathematical notations); 2) consistent handling of references and...
@@ -117,7 +128,7 @@
       </item>
     
       <item>
-        <title>Enhance your README with Asciinema</title>
+        <title>Enhance Your Readme With Asciinema</title>
         <description>
           How to Create Beautiful Terminal Recordings that Your Users will Love - 
           Asciinema is an excellent tool for recording and sharing terminal sessions. The project is open-source and available on GitHub. A key feature of asciinema is that it allows the viewer to copy-paste the text from the player itself directly. The result of a terminal recording is an editable text file...
@@ -213,17 +224,6 @@
         <pubDate>Mon, 06 Jan 2020 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/deploying-to-maven-central.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/deploying-to-maven-central.html</guid>
-      </item>
-    
-      <item>
-        <title>The Cuban Revolution</title>
-        <description>
-          My Personal Vision - 
-          “Es deplorable que se aplauda así a un hombre que esclaviza a su pueblo desde hace más de 40 años, esta solidaridad con el verdugo del pueblo cubano” ― Huber Matos, referring to Fidel Castro in 2003 Recently, a friend of mine kindly requested me for information about Cuba and...
-        </description>
-        <pubDate>Sun, 08 Dec 2019 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/the-cuban-revolution-explained.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-cuban-revolution-explained.html</guid>
       </item>
     
   </channel>
