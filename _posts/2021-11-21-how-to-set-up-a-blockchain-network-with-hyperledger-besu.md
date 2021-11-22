@@ -245,13 +245,12 @@ The second section contains information about the genesis block:
 
 - `"nonce": "0x0"` The number used nonce (i.e. a part of the blockheader for the first block). Set to `0x0`.
 - `"timestamp": "0x58ee40ba"` The creation date and time of the block. Often it can be set to `0x0`, but as long as it is any value in the past, it will work. In this case `0x58ee40ba` is a hexadecimal which converts to `1`492009146` and represents Wed Apr 12 2017 14:59:06 GMT+0000.
-- `"extraData": "0xf83ea00000000000000000000000000000000000000000000000000000000000000
-000d5949811ebc35d7b06b3fa8dc5809a1f9c52751e1deb808400000000c0"`Extra data is a recursive length prefix (RLP) encoded string (which is space efficient) containing the validator address of the IBFT 2.0 private network. Instructions on how to create an RLP using Besu can be found in the Besu Documentation [here](https://besu.hyperledger.org/en/stable/HowTo/Configure/Consensus-Protocols/QBFT/#extra-data).
+- `"extraData": "0xf83ea0..."`Extra data is a recursive length prefix (RLP) encoded string (which is space efficient) containing the validator address of the IBFT 2.0 private network. Instructions on how to create an RLP using Besu can be found in the Besu Documentation [here](https://besu.hyperledger.org/en/stable/HowTo/Configure/Consensus-Protocols/QBFT/#extra-data).
 - `"gasLimit": "0x1fffffffffffff"` The block gas limit, which is the total gas limit for all transactions included in a block. It defines how large the block size can be for the block, and is represented by an hexadecimal string. For this network, the gas limit is the maximum size, and is therefore a “free gas network”.
 - `"difficulty": "0x1"` The difficulty of creating a new block. Represented as a hexadecimal string, the difficulty is set to `1`, effectively the lowest difficulty.
-- `"mixHash": "0x63746963616c2062797a616e74696e65206661756c7420746f6c6572616e6365"` The unique identifier for the genesis block.
-- `"coinbase": "0x0000000000000000000000000000000000000000"` The Coinbase account, which is where all block rewards for this network will be paid. 
-- `"alloc": {"9811ebc35d7b06b3fa8dc5809a1f9c52751e1deb": {"balance": "0xad78ebc5ac6200000"}}` This field creates an address on our network, which is sometimes also referred to as an externally owned account, as it is an account not associated with a smart contract (referred to as a contract account). The number starting with “98” is the public key of the address. The balance can be passed in as a decimal OR a hexadecimal (like it has in this case and corresponds to 200 ETH, or 2*10^20 Wei). The balance is always in Wei, or 10^-18 Ether.
+- `"mixHash": "0x6374..."` The unique identifier for the genesis block.
+- `"coinbase": "0x0000..."` The Coinbase account, which is where all block rewards for this network will be paid. 
+- `"alloc": {"9811eb...": {"balance": "0xad78..."}}` This field creates an address on our network, which is sometimes also referred to as an externally owned account, as it is an account not associated with a smart contract (referred to as a contract account). The number starting with “98” is the public key of the address. The balance can be passed in as a decimal OR a hexadecimal (like it has in this case and corresponds to 200 ETH, or 2*10^20 Wei). The balance is always in Wei, or 10^-18 Ether.
 
 Once you have created your genesis file, you need to save it within the directory where your blockchain networks files will be kept.
 Do not save it within any node or data folders, but rather at the top level.
@@ -270,7 +269,7 @@ Let me know in the comments if you want me to cover these advanced features.
 
 # Further Reading
 
-- [Why Java for Blockchain](https://media.consensys.net/why-java-for-blockchain-73f1b444c2d)
+- [Why Java for Blockchain?](https://media.consensys.net/why-java-for-blockchain-73f1b444c2d)
 - [De-Mystifying Besu: Understanding an Ethereum Codebase](https://www.youtube.com/watch?v=OJfib9kTK7U&feature=youtu.be)
 - [Getting Started with Besu](https://www.youtube.com/watch?v=OKWBr94J9rY&t=1s)
 - [How Poste Italiane brings value to loyalty with Hyperledger Besu](https://www.hyperledger.org/learn/publications/posteitaliane-case-study)
