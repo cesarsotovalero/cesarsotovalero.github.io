@@ -35,7 +35,7 @@ For example, in Sweden, the [Swedish Research Council](https://www.vr.se/english
 Therefore, the amount of money injected into research heavily depends on the vision of large entities out of the control of individual researchers.
 
 <aside class="quote">
-    <em>"Research efforts should be driven by imperative industry needs"</em>
+    <em>“Research efforts should be driven by imperative industry needs”</em>
 </aside>
 
 In this context, applying for grants is a battlefield because the demand vastly exceeds the offer.

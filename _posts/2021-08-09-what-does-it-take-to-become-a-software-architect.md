@@ -33,7 +33,7 @@ In this post, I’m going to explain what these two words actually mean and disc
     </figcaption>
 </figure>
 
-# The Market 
+# The Market
 
 The term “architect” is borrowed from traditional construction. 
 When constructing a building, a plan is needed, as well as a team of trained construction workers with a capable foreman to lead them all. 

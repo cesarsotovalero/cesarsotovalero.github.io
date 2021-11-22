@@ -12,9 +12,17 @@ published: true
 ---
 
 As a researcher, I write academic papers for journals and conferences. My work can be found in 
-<a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="../../img/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="../../img/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="../../img/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar). My ORCID  <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="../../img/ORCID-iD_icon-vector.svg" style="width:1em;margin-right:.3em;" alt="ORCID iD icon">0000-0003-0541-6411</a>.  The following is an updated list of my published work (in reverse chronological order).
+<a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="../../img/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="../../img/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="../../img/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar). My ORCID  <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="../../img/ORCID-iD_icon-vector.
+svg" style="width:1em;margin-right:.3em;" alt="ORCID iD icon">0000-0003-0541-6411</a>.  The following is an updated list of my published work (in reverse chronological order).
 
 # 2021  
+
+- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
+  **API beauty is in the eye of the clients: 2.2 million Maven dependencies reveal the spectrum of client-API usages**. 
+  Nicolas Harrand, Amine Benelallam, César Soto-Valero, François Bettega, Olivier Barais, and Benoit Baudry. 
+  _Journal of Systems and Software (JSS)_.
+  <a href="https://medium.com/@almyre/a-journey-at-the-heart-of-2-4-million-maven-artifacts-94f73038bba4"><i class="fab fa-medium"></i> Medium</a>
+  <a href="https://doi.org/10.1016/j.jss.2021.111134"><i class="icon i-doi"></i> 10.1016/j.jss.2021.111134</a>
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px">
   <img alt="award" title="ACM SIGSOFT Distinguished Paper Award" src="../../img/award.png" height="30px"> 
@@ -57,13 +65,6 @@ As a researcher, I write academic papers for journals and conferences. My work c
   Nicolas Harrand, César Soto-Valero, Martin Monperrus, and Benoit Baudry. 
   _Journal of Systems and Software (JSS)_.
   <a href="https://dx.doi.org/10.1016/j.jss.2020.110645"><i class="icon i-doi"></i> 10.1016/j.jss.2020.110645</a>
-
-- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
-  **Analyzing 2.3 Million Maven Dependencies to Reveal an Essential Core in APIs**. 
-  Nicolas Harrand, Amine Benelallam, César Soto-Valero, Olivier Barais, and Benoit Baudry. 
-  In _arXiv_. 
-  <a href="https://medium.com/@almyre/a-journey-at-the-heart-of-2-4-million-maven-artifacts-94f73038bba4"><i class="fab fa-medium"></i> Medium</a>
-  [:earth_americas: Link](https://arxiv.org/abs/1908.09757)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Evaluation of the Bilateral Function in Para-athletes with Spastic Hemiplegia: a Model-based Clustering Approach**. 

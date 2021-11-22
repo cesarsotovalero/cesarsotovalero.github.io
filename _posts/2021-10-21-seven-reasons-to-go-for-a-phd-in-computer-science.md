@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Seven Reasons to Go For a Ph.D. in Computer Science
+title: Seven Reasons to Go For a Ph.D. In Computer Science
 subtitle: The Good and the Ugly
 tags: research
 description: Starting a Ph.D. in Computer Science is a serious decision that literally changes your life. There are many motivations to choose this career path. Let's take a look at 7 of them.
@@ -39,7 +39,7 @@ Let's discuss this matter!
     </figcaption>
 </figure>
 
-# The Good 
+# The Good
 
 ## 1. Feed Your Intellectual Curiosity 
 
@@ -52,7 +52,7 @@ Every day, a new programming language is being created, a new paradigm or method
 The feeling of being at the forefront of such a technological revolution could be extremely gratifying.
 
 <aside class="quote">
-    <em>"You're allowed to fail, to a certain extent."</em>
+    <em>“You're allowed to fail, to a certain extent.”</em>
 </aside>
 
 Unlike other educational degrees, a Ph.D. student is normally paid to do research in something interesting.
@@ -77,7 +77,7 @@ The first group is tied to universities and has more freedom to pick their resea
 Industrial researchers often work at large companies and are more focused on producing practical results that could be translated into economic profit.
 
 <aside class="quote">
-    <em>"You'll get a sense of personal fulfillment."</em>
+    <em>“You'll get a sense of personal fulfillment.”</em>
 </aside>
 
 Some people love the research freedom offered by academia and, at the same time, enjoy the teaching labor.
@@ -101,7 +101,7 @@ To do so, Ph.D. students must learn how to get attention by appropriately target
 This can only be done through effectively networking with the most talented researchers in the field.
 
 <aside class="quote">
-    <em>"You'll be surrounded by an elite of people."</em>
+    <em>“You'll be surrounded by an elite of people.”</em>
 </aside>
 
 Most people in your immediate circle, excluding supervisors and teachers, will be at the same level as you in the professional hierarchy.
@@ -115,6 +115,10 @@ There, one can interact with the cream of young researchers eager to receive att
 Many of these guys will become successful entrepreneurs or occupy prestigious positions at big tech companies.
 Others will become prestigious professors, and a very few of them will make significant contributions in your field, write world-acclaimed books, etc.
 
+<div class="container-youtube">
+  <iframe width="560" height="349" src="https://www.youtube.com/embed/IrFS2e-4gqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 # The Ugly 
 
 ## 4. Set Yourself Apart From The Competition 
@@ -125,7 +129,7 @@ There are many good developers out there, but a Ph.D. teaches you how to methodi
 Professional recruiters know very well that candidates with this combination of talents are not very common in the job market.
 
 <aside class="quote">
-    <em>"Your value in the market will be higher."</em>
+    <em>“Your value in the market will be higher.”</em>
 </aside>
 
 If you succeed to graduate [you have been battle-tested](https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html).
@@ -147,7 +151,7 @@ You should feel the urge to prove to yourself (and maybe to others) that you are
 It doesn't matter how good you are, it would be difficult to convince someone that you are capable of producing unique knowledge without having published a single technical paper.
 
 <aside class="quote">
-    <em>"You'll be among the best in your field."</em>
+    <em>“You'll be among the best in your field.”</em>
 </aside>
 
 Research work encourages personal growth by offering a perfect playing field for professional competition.
@@ -167,7 +171,7 @@ In contrast, academic research is one of the very few positions where you can pe
 Taking ownership without facing the risks of being an entrepreneur is attractive.
 
 <aside class="quote">
-    <em>"You can feel of being working only for yourself."</em>
+    <em>“You can feel of being working only for yourself.”</em>
 </aside>
 
 We're all social creatures motivated by pride and vanity.
@@ -190,7 +194,7 @@ At some point in their life, people living in such places realize that it is dif
 Thus, the most viable solution for them is to emigrate, and doing it as a student is often one of the cleanest ways achieve this goal.
 
 <aside class="quote">
-    <em>"You'll change your life."</em>
+    <em>“You'll change your life.”</em>
 </aside>
 
 On the other hand, science is costly.
