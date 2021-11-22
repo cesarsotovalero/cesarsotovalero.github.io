@@ -29,7 +29,7 @@ In this post, we're going to set up a production-ready Ethereum client using Bes
 <figure class="jb_picture">
 {% responsive_image path: img/posts/floor_art.jpg alt:"Software configurations is, like art, a sense of beautiful abstractions." %}
   <figcaption class="stroke">
-&#169; Software configurations is, like art, a sense of beauty and abstractions. Photo taken at <a href="https://goo.gl/maps/ZjSrUbNDX9EutcES7">Tekniska högskolan metro station</a>.
+&#169; Software configurations is, like art, a sense of beauty in abstractions. Photo taken at <a href="https://goo.gl/maps/ZjSrUbNDX9EutcES7">Tekniska högskolan metro station</a>.
 </figcaption>
 </figure>
 
