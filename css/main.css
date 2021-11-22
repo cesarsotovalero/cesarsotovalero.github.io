@@ -1675,9 +1675,16 @@ input.gsc-input,
 }
 
 .fa-twitter:hover {
-  color: #1da0f2;
+  color: white;
   transform: translateY(-7px);
   transition: transform 0.5s;
+}
+
+/* Override property for share-icons */
+#share-twitter:hover {
+  color: white;
+  transform: none;
+  transition: none;
 }
 
 .fa-github:hover {
@@ -1690,6 +1697,13 @@ input.gsc-input,
   color: #006097;
   transform: translateY(-7px);
   transition: transform 0.5s;
+}
+
+/* Override property for share-icons */
+#share-linkedin:hover {
+  color: white;
+  transform: none;
+  transition: none;
 }
 
 .ai-researchgate:hover {
