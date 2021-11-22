@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Enhance your README with Asciinema
+title:  Enhance Your Readme With Asciinema
 subtitle: How to Create Beautiful Terminal Recordings that Your Users will Love
 tags: tools tutorial
 published: true

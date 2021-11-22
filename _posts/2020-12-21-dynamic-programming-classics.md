@@ -17,7 +17,7 @@ Dynamic programming (DP) is one of the most basic and, at the same time, challen
 Some of the best algorithms that I know, such as the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) and [DTW](https://en.wikipedia.org/wiki/Dynamic_time_warping) are implemented using this paradigm.
 It consists of simplifying a complicated problem by breaking it down into simpler sub-problems in a recursive manner and then using the sub-problems' precomputed solutions to solve the complicated one.
 <aside class="quote">
-    <em>DP consists in simplifying a problem by breaking it down into simpler sub-problems recursively.</em>
+    <em>“Dynamic Programming consists in simplifying a problem by breaking it down into simpler sub-problems recursively”</em>
 </aside>
 The key advantage of using DP is that it is fast.
 There are two key attributes that a problem must have in order for DP to be applicable: [optimal substructure](https://en.wikipedia.org/wiki/Optimal_substructure) and [overlapping sub-problems](https://en.wikipedia.org/wiki/Overlapping_subproblems).

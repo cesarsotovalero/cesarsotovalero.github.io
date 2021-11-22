@@ -27,7 +27,7 @@ So, let me tell you about the tricks I've learned through these years of continu
 I hope you find them useful as too.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/stalking_monster.jpg alt: "Photo taken at Tekniska högskolan metro station." %}
+  {% responsive_image path: img/posts/stalking_monster.jpg alt:"Photo taken at Tekniska högskolan metro station." %}
   <figcaption class="stroke">
     &#169; Writer's block is an stalking monster. Photo taken at <a href="https://goo.gl/maps/ZjSrUbNDX9EutcES7">Tekniska högskolan metro station</a>.
     </figcaption>
@@ -41,7 +41,7 @@ As brilliantly explained by [Simon Peyton Jones](https://en.wikipedia.org/wiki/S
 So, the first step when attempting to break the ice is creating an outline for every section.
 
 I like to start by writing all headings and subheadings and adding [author notes](https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html#inserting-author-notes) to highlight the information that will go under each of them.
-Here's a typical example my outlines, in LaTeX, for a conference paper in the field of software engineering:
+Here's a typical example of an initial outline, in LaTeX, for a conference paper belonging to the field of software engineering:
 
 {% highlight latex linenos %}
 % Contextualization, motivation, and summary of contributions
@@ -73,13 +73,13 @@ An outline like this one will break the blank page syndrome and guide the writin
 No need to be creative here.
 It's better sticking to the standards regarding structure.
 A good paper reports the results of a research project concisely, and the academic community has well-defined guidelines that help reviewers do their job.
-It is a good idea to cooperate with the reviewers who ultimately decide your paper's fate.
+It is a good idea to cooperate with the reviewers who ultimately will decide your paper's fate.
 Note that the title and content of the paper might vary over time, but this initial outline ~~when done correctly~~ hardly changes.
 
 # 2. Add Figures and Results
 
 I've found that one of the best ways to break initial writer's block is by adding figures and results at the very first stage of the paper.
-Just draft a figure for the study design section and add some tables with preliminary results (I'm assuming that you already have some results ☺️).
+Just draft a figure for the study design section and add some tables with preliminary results (I'm assuming that you already have some results 😀️).
 Adding this type of content is the substance that I need to start writing.
 
 Furthermore, with the time you will notice that describing tables and figures is almost a mechanical process.
@@ -98,8 +98,8 @@ Once done, I suggest jumping straight to the results section.
 Writing is, in a nutshell, the art of adding words, sentences, and paragraphs in a logical and structured manner.
 Most research papers are constrained in size and follow a predictable structure.
 The text is organized in paragraphs, and every paragraph should convey a particular message.
-An effective way to start elaborate paragraphs is by formulating questions and answering them one-by-one.
 
+An effective way to start elaborate paragraphs is by formulating questions and answering them one-by-one.
 For example, this is how I broke down the paragraphs for the introduction of this [paper](https://dl.acm.org/doi/10.1145/3468264.3468589).
 Note that the trick here is formulating the right questions:
 
@@ -123,41 +123,43 @@ Note that the trick here is formulating the right questions:
 {% endhighlight %}
 
 Once you have the question in place then you have a hook that can be later turn into narrative text with connectors (more on this later).
-Question give a focus, an actionable way to go.
-If you master the art of asking and answering the right questions, then you'll stay "in the flow."
+Questions give a focus to writers, an actionable direction to express the ideas.
+If you master the art of asking and answering the right questions, then you'll always be "in the flow."
 
 # 4. Paraphrase the Recurrent
 
 A good research paper should convey a single idea.
-The idea can be very simple or complex (_simple is better_ 😉), and all the text in the paper should orbit around it.
+The idea can be very simple or complex (_simple is better_, IMHO 😉), and all the text in the paper should orbit around it.
 Only 20% of a paper is usually dedicated to explaining the idea, and the remainder 80% consists of data and experiments to validate it.
 Therefore, the majority of a paper if filled by "the recurrent" procedures established by modern science, and there is nothing new or spectacular in there.
 
-This knowledge vastly simplifies the writing process.
-When I get stuck, I just need to read other academic papers in search of inspiration, with a focus on the recurrent part.
-When scanning carefully, patterns immediately start to emerge.
+Mastering the identification of the recurrent parts vastly simplifies the writing process.
+When I get stuck, I just need to read other academic papers in search of inspiration, with a focus on this particular part.
+After a careful scan, patterns immediately start to emerge from the text.
 I look at the filler words, the connectors that maker each paragraph organic.
-Then I simply adapt my sentences to become paragraphs by following the same structure.
-Note that you can remove the connectors and change the paragraph later, and then you'll be "improving" something, instead of making it from scratch, which is more accessible while writing.
+Then, I simply adapt my sentences to mutate them into paragraphs by following the same structure.
+Note that you can always remove all the connectors and change the paragraph later, which means that you'll be "improving" something that already existed.
+In the same way that criticizing something is generally easier than creating it, editing is easier than writing from scratch.
 
-On the other hand, some sections are just repetitive.
+On the other hand, some sections are just repetitive, they follow an existing recipe as in [the hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey). 
 For example, the section of related work doesn't need to be original.
 I think it's fine summarizing and paraphrasing the key results of previous work there.
 Yes, paraphrasing is a skill, too, which I strongly recommend you to learn very well.
 
+If you get stuck, then start searching for inspiration somewhere else. 
 I usually read articles from the journal or conference where I plan to submit.
 This gives me an idea about the expectations of its reviewers and editors. 
 It is also helpful to read articles that describe the same methodology that you use.
 
 # 5. Refine Later
 
-Most of us want everything to be just right before touching the keyboard. 
+Most of us want everything to be just right before even touching the keyboard. 
 But this desirable state of minds and things never happens in practice. 
 The perfect paragraphs is ~~almost~~ never written at the fist shot. 
 So, if you try to get it perfect in your head, then you never do, so you never begin. 
 Forget about perfection and lower down the initial expectations!
 
-> "When writing, perfectionism is your enemy"
+> “When writing, perfectionism is your enemy”
 
 I'm against refining sentence by sentence.
 The problem with this approach is that alternating between writing and editing encourages unuseful perfectionism.
@@ -180,13 +182,39 @@ To do so, I force myself to either write or do nothing.
 I'm not talking about doing nothing like when one goes to do a walk, or walks to grab a cup of coffee.
 I mean doing nothing at all!
 
-> "Boredom, when used correctly, is an excellent weapon to combat procrastination"
+> “Boredom, when used correctly, is an excellent weapon to combat procrastination”
 
 When I do nothing, I enter into a mental state of boredom.
 This sensation tends to be very uncomfortable to me as time goes on.
 I feel the imperative need to do something. Then, I just write.
 It doesn't need to be great what I write, it just needs to be something that puts me out of this uncomfortable state.
 Yes, I overcome writer's block as an attempt to staying away of boredom!
+
+# 7. Imagine That the Task Is Finished
+
+This last trick is very special and personal.
+It relies on a couple of facts:
+
+1. It is way easier improving something that is already written than creating something from scratch.
+2. After seeing something done, at least mentally, it seems easier to accomplish.
+
+So, when I have nothing written, I just imagine that I have it done.
+Yes, I know this sounds a bit crazy 😌, but it works like a charm for me.
+
+> “If you can imagine what you want to write, in details, then you can write it”
+
+When stuck, I perform the following simple mental exercise: I close my eyes and visualize the parts of the paper that I would like to have written.
+I imagine that every section is filled with text, tables, and figures.
+The work is completed in my mind.
+Jumping section by section and feeling the relief of having the work done is amazing.
+It provides a sense of security and confidence that really helps me to continue writing.
+
+It is like when playing chess, and you know exactly the moves needed to win the game or take some crucial advantage.
+Once you find these right moves, then the game seems simple and there is no way to be afraid of your opponent.
+It is a matter of finding and visualizing a good strategy to follow.
+Writing is all about strategies as well. 
+So do it. 
+Imagine the next paragraph is done, make your move, and then write it! 
 
 # Conclusion
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I Beat the IELTS Academic With Just a Month of Self-training
+title: How I Beat the IELTS Academic With Just a Month of Self-Training
 subtitle: Personal Comments and Suggestions
 description: Personal useful list of tips to pass the IELTS Academic English test. 
 published: true
