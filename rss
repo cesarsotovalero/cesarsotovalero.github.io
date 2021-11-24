@@ -219,7 +219,7 @@
         <title>Deploying to Maven Central</title>
         <description>
           A Three-steps Guide - 
-          Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM. In this post, I’ll describe the process of releasing a new artifact in Maven Central following a step-by-step approach. Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest...
+          Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM. In this post, I’ll describe the process of releasing a new artifact in Maven Central following a step-by-step approach. “Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest...
         </description>
         <pubDate>Mon, 06 Jan 2020 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/deploying-to-maven-central.html</link>
