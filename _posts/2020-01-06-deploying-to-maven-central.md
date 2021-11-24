@@ -16,7 +16,7 @@ date: 2020/1/06
 Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM. In this post, I'll describe the process of releasing a new artifact in Maven Central following a step-by-step approach. 
 
 <aside class="quote">
-    <em>Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest and oldest archives of software libraries.</em>
+    <em>“Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest and oldest archives of software libraries.”</em>
 </aside>
 
 ## Contents
@@ -33,7 +33,8 @@ First, you need to create a JIRA account and submit a ticket there requesting fo
 1.  [Create a JIRA account](https://issues.sonatype.org/secure/Signup!default.jspa)
 2.  [Create a New Project ticket](https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134)
 
-A staging repository is already configured for the requested GroupId, you need to find someone with a deployer role that comment on the ticket to verify your request. Below is an example of a ticket that I created requesting a repository for the namespace `se.kth.castor`
+A staging repository is already configured for the requested GroupId, you need to find someone with a deployer role that comment on the ticket to verify your request. 
+Below is an example of a ticket that I created requesting a repository for the namespace `se.kth.castor`
 
 ![](../img/posts/sonatype_screeshot.png)
 

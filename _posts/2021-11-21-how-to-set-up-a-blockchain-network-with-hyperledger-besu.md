@@ -2,14 +2,9 @@
 layout: post
 title: How to Set Up A Blockchain Network With Hyperledger Besu
 subtitle: Look mom, I'm running my own blockchain!
-tags: tutorials
+tags: tutorial
 description: If you are a Java developer interested in cryptocurrencies and blockchain-related technologies, you should probably have heard about Hyperledger Besu, the official Java client of the Ethereum blockchain. In this post, we're going to set up a production-ready Ethereum client using Besu.
-keywords:
-  - blockchain,
-  - ethereum,
-  - decentralized applications,
-  - tutorial,
-  - hyperledger besu,
+keywords: blockchain,ethereum,decentralized applications,tutorial, hyperledger besu
 image: https://www.cesarsotovalero.net/img/posts/floor_art_cover.jpg
 share-img: https://www.cesarsotovalero.net/img/posts/floor_art_cover.jpg
 show-avatar: false
@@ -27,9 +22,9 @@ Besu is also actively supported both in open community channels and through comm
 In this post, we're going to set up a production-ready Ethereum client using Besu, step-by-step.
 
 <figure class="jb_picture">
-{% responsive_image path: img/posts/floor_art.jpg alt:"Software configurations is, like art, a sense of beautiful abstractions." %}
-  <figcaption class="stroke">
-&#169; Software configurations is, like art, a sense of beauty in abstractions. Photo taken at <a href="https://goo.gl/maps/ZjSrUbNDX9EutcES7">Tekniska högskolan metro station</a>.
+{% responsive_image path: img/posts/floor_art.jpg alt:"Software configurations are, like art, a sense of beauty in abstractions." %}
+  <figcaption class="stroke"> 
+&#169; Software configurations are, like art, a sense of beautiful abstractions. Photo taken at <a href="https://goo.gl/maps/ZjSrUbNDX9EutcES7">Tekniska högskolan metro station</a>.
 </figcaption>
 </figure>
 
@@ -99,7 +94,7 @@ cd besu-<version>/bin
 You can use flags and subcommands to configure specific options for Besu.
 These flags and subcommands can also be stored in a [configuration file](https://besu.hyperledger.org/en/stable/HowTo/Configure/Using-Configuration-File/), which sets the initial parameters for Besu.
 Using a configuration file is useful because it can be saved and reused later.
-Besu uses the `TOML` format for this configuration file.  
+Besu uses the `TOML` format for this configuration file. 
 The following is a ~~short~~ working example:
 
 {% highlight toml linenos %}
