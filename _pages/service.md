@@ -46,7 +46,7 @@ published: true
 
 # Reviewer
 
-> My updated revision stats for journals can be seen in [Publons](https://publons.com/researcher/1355482/cesar-soto-valero/peer-review)(<a href="https://publons.com/researcher/1355482/cesar-soto-valero/peer-review" style="text-decoration: underline;"><i class="ai ai-publons"></i></a>).
+> My verified reviews for journals can be seen in [Publons](https://publons.com/researcher/1355482/cesar-soto-valero/peer-review)(<a href="https://publons.com/researcher/1355482/cesar-soto-valero/peer-review" style="text-decoration: underline;"><i class="ai ai-publons"></i></a>).
 
 - [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021
 

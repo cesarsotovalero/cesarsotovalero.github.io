@@ -1,4 +1,6 @@
 @import url("pygment_highlights.css");
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 
 /* --- Fonts --- */
@@ -21,7 +23,9 @@ html {
 body {
   font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 21px;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
   position: relative;
   color: var(--main-text-color);
   background-color: var(--main-background-color);
@@ -35,9 +39,11 @@ body {
 }
 
 p {
-  line-height: 1.75;
+  line-height: 1.6;
   margin-top: 0;
   margin-bottom: 20px;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
 }
 
 p a {
@@ -47,6 +53,8 @@ p a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
   font-weight: 700;
   font-weight: bold;
   /*text-transform: capitalize;*/
@@ -82,11 +90,13 @@ a:hover, a:focus {
 blockquote {
   color: var(--main-text-color);
   background-color: var(--blockquote-background-color);
-  font-size: 18px;
-  border-: 1px solid #eee;
+  font-size: 19px;
+  font-weight: 300;
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
   border-radius: 5px 3px 3px 5px;
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -96,7 +106,7 @@ blockquote {
 }
 
 blockquote p {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 blockquote p:first-child {
@@ -105,7 +115,6 @@ blockquote p:first-child {
 
 em {
   font-style: italic;
-  font-family: "Linux Biolinum", "Helvetica Neue", Open Sans ";
 }
 
 .post-categories {
@@ -1759,25 +1768,27 @@ figure {
 
 figure figcaption {
   bottom: 0.8em;
-  color: var(--post-meta-index-color);
+  color: var(--main-text-color);
   font-size: .8em;
+  font-weight: 300;
   left: .5em;
-  line-height: 1.1em;
+  line-height: 1.25em;
   max-width: 100%;
   /*position: absolute;*/
-  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+  /*font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;*/
   /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);*/
   padding-top: 2rem;
 }
 
 @media screen and (max-width: 415px) {
   figure figcaption {
-    font-size: .7em;
+    font-size: .75em;
   }
 }
 
 figure figcaption a {
-  color: var(--post-meta-index-color);
+  color: var(--main-text-color);
 }
 
 
@@ -1909,6 +1920,7 @@ ul {
   color: var(--main-text-color);
   background-color: var(--blockquote-background-color);
   float: right;
+  font-weight: 300;
   font-size: 22px;
   margin: 10px 0px 20px 20px;
   padding: 10px 5px 10px 10px;
@@ -1918,12 +1930,13 @@ ul {
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
   border-radius: 5px 3px 3px 5px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .quote em {
+  font-weight: 300;
   font-style: normal;
-  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-weight: normal;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #comments-count {
@@ -2066,6 +2079,72 @@ ul {
   background-repeat: no-repeat;
   background-size: contain;
   filter: invert(7%) sepia(0%) saturate(6770%) hue-rotate(276deg) brightness(99%) contrast(79%);
+}
+
+
+
+
+/* Carbon Ads */
+#carbonads * {
+  margin: initial;
+  padding: initial;
+}
+#carbonads {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+  sans-serif;
+}
+#carbonads {
+  display: flex;
+  max-width: 330px;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
+  z-index: 100;
+}
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+#carbonads a:hover {
+  color: inherit;
+}
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+#carbonads .carbon-wrap {
+  display: flex;
+}
+#carbonads .carbon-img {
+  display: block;
+  margin: 0;
+  line-height: 1;
+}
+#carbonads .carbon-img img {
+  display: block;
+}
+#carbonads .carbon-text {
+  font-size: 13px;
+  padding: 10px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+#carbonads .carbon-poweredby {
+  display: block;
+  padding: 6px 8px;
+  background: #f1f1f2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1;
+  border-top-left-radius: 3px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* SUPPORT FOR DARK MODE */
