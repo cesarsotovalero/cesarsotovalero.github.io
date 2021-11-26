@@ -407,7 +407,6 @@ a[href$=".pptx"] {
 }
 
 
-
 .navbar-custom.top-nav-short .avatar-container {
   opacity: 0;
 }
@@ -845,7 +844,6 @@ logo-main a:hover {
 }
 
 
-
 @media only screen and (max-width: 425px) {
   .post-preview .post-meta,
   .post-heading .post-meta {
@@ -853,8 +851,6 @@ logo-main a:hover {
     margin: 10px 12px 10px 0;
   }
 }
-
-
 
 
 .post-share-meta {
@@ -871,7 +867,6 @@ logo-main a:hover {
     margin: 10px 12px 10px 0;
   }
 }
-
 
 
 .post-meta-index {
@@ -1779,7 +1774,7 @@ figure figcaption {
   line-height: 1.25em;
   max-width: 100%;
   /*position: absolute;*/
-  font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   /*font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;*/
   /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);*/
   padding-top: 2rem;
@@ -1894,7 +1889,7 @@ ul {
   flex-flow: row wrap;
   margin-top: 15px;
   padding: 0;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 .flex-item {
@@ -2102,7 +2097,7 @@ ul {
 /*  border: 1px solid #DDDDDD;*/
 /*}*/
 
- /*Carbon Ads*/
+/*Carbon Ads*/
 #carbonads * {
   margin: initial;
   padding: initial;
@@ -2117,13 +2112,28 @@ ul {
 #carbonads {
   display: flex;
   max-width: 330px;
-  max-height: 100px;
+  max-height: 90px;
   background-color: hsl(0, 0%, 98%);
-  box-shadow:
-          0 2px 1px 1px hsla(0, 0%, 0%, .05),
-          0 2px 2px 2px hsla(0, 0%, 0%, .05),
-          0 2px 4px 4px hsla(0, 0%, 0%, .05);
+  box-shadow: 0 2px 1px 1px hsla(0, 0%, 0%, .05),
+  0 2px 2px 2px hsla(0, 0%, 0%, .05),
+  0 2px 4px 4px hsla(0, 0%, 0%, .05);
   z-index: 100;
+}
+
+
+@media only screen and (max-width: 470px) {
+  #carbonads {
+    max-width: 375px;
+    max-height: 50px;
+  }
+
+  #carbonads .carbon-text {
+    font-size: 10px;
+    padding: 10px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: left;
+  }
 }
 
 #carbonads a {
@@ -2177,6 +2187,13 @@ ul {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.cesarcarbon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .meta-element {
