@@ -9,6 +9,11 @@ published: true
 
 ---
 
+<!-- Carbon ads -->
+<div class="cesarcarbon">
+   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
+</div>
+
 # Doctoral courses
 
 - [:earth_americas: FBB3110 Computational Python](https://www.kth.se/student/kurser/kurs/FBB3110?l=en), KTH Fall 2021

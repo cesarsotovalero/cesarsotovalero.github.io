@@ -6,6 +6,11 @@ subtitle: Financial assistance
 published: false
 ---
 
+<!-- Carbon ads -->
+<div class="cesarcarbon">
+   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
+</div>
+
 ## Tell us about your current financial situation. Why do you need assistance? 
 
 I am from Cuba, an undeveloped country in the Caribean. I am currently studying computer science at KTH Royal Institute of Technology in Sweden, thanks to a grant from the government. I am very happy for this opportunity. However, I do not have any particular source of income, apart from the small monthly amount of money given to me by the government, which is destined to my basic my monthly expenditures. This includes food, rent, accommodation, etc. All of this basic needs are really expensive in Sweden. In this circumstance, it is very difficult for me to gather such an amount of money to pay for an edX certificate (although I would like to do it). Financial assistance will help me take this course without any adverse impact on my monthly essential needs. Therefore, I am unfortunately in need of this financial assistance. I cannot afford to buy the course for $149 alongside my monthly expenses and college fees. This represents an additional expense than I cannot afford at this moment. Therefore, I would be more than happy to get financial aid and a discount for getting a certificate after completion of this course. Receiving this help will open a new horizon of the world of edX courses, which will help me in my future career as a professional software engineer.
