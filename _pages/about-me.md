@@ -6,9 +6,8 @@ subtitle: In brief
 ---
 
 
-<div >
-  <h3 style="text-align: center; font-family:courier, courier new, serif; padding-bottom: 35px; font-weight: lighter">
-<span class="type"></span></h3>
+<div style="text-align: center; font-family:courier, courier new, serif; font-weight: lighter">
+ <span class="type"></span>
 </div>
 
 ---
