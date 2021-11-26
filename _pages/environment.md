@@ -6,6 +6,11 @@ subtitle: Work setup
 published: false
 ---
 
+<!-- Carbon ads -->
+<div class="cesarcarbon">
+   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
+</div>
+
 # Text Editor
 
 - Vim (`sudo apt install --assume-yes vim`) with [vimrc](https://github.com/amix/vimrc)

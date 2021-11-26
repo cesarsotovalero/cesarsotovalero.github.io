@@ -4,10 +4,20 @@ layout: page
 title: About me
 subtitle: In brief
 ---
-<div style="border-bottom: 1px solid #eee;">
+
+
+<div >
   <h3 style="text-align: center; font-family:courier, courier new, serif; padding-bottom: 35px; font-weight: lighter">
 <span class="type"></span></h3>
 </div>
+
+---
+
+<!-- Carbon ads -->
+<div class="cesarcarbon">
+   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
+</div>
+
 
 <!--
 <a href="https://stackoverflow.com/users/10480869/cesarsotovalero"><img src="https://cf.jare.io/?u=https://stackoverflow.com/users/flair/10480869.png" width="208" height="58" alt="profile for cesarsotovalero at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for cesarsotovalero at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
