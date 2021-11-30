@@ -5,7 +5,6 @@ title: About me
 subtitle: In brief
 ---
 
-
 <div style="text-align: center; font-family:courier, courier new, serif; font-weight: lighter">
  <span class="type"></span>
 </div>
@@ -28,7 +27,6 @@ I'm a Ph.D. student  in the Department of Software and Computer Systems ([SCS](h
  href="software-debloating-papers.html">software
  debloating papers</a>, or consult my list of <a href="software-debloating-tools.html">software debloating tools</a>. I also do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories. For more on this topic, see this list of <a href="mining-software-repositories-resources.html">mining software repositories resources</a>. In particular, I'm interested in measuring the impact and pervasiveness of bloatware across large-scale software ecosystems. I'm keen to perform research on software technology which: 1) provide actionable insights to researchers and practitioners about how modern software is currently being developed and maintained, and 2) provide practical tools for developers in order to improve software quality.
  
----
 
 <!-- ![Custom badge](https://img.shields.io/badge/-EDUCATION-orange.svg) -->
 # :mortar_board: Education
@@ -40,19 +38,16 @@ See also:
 - [Competitions](competitions.html)
 - [Courses](courses.html)
 
----
     
 <!-- ![Custom badge](https://img.shields.io/badge/-HOBBIES-blue.svg) -->
 # :dart: Hobbies
 Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and running through the Stockholm's beautiful parks.
 
----
 
 # :earth_africa: Workplace
 
 <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="350px" id="gmap_canvas" src="https://maps.google.com/maps?q=LINDSTEDTSV%C3%84GEN%203%2C%20BUILDING%20D&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
 
----
 
 # :email: Contact me
 
