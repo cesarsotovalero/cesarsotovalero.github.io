@@ -17,20 +17,21 @@ subtitle: In brief
 </div>
 
 
-<!--
-<a href="https://stackoverflow.com/users/10480869/cesarsotovalero"><img src="https://cf.jare.io/?u=https://stackoverflow.com/users/flair/10480869.png" width="208" height="58" alt="profile for cesarsotovalero at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for cesarsotovalero at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
--->
-
 <!-- ![Custom badge](https://img.shields.io/badge/-WORK-blueviolet.svg) -->
-# :briefcase: Work
+# Work
+
+[//]: # (:briefcase: )
 I'm a Ph.D. student  in the Department of Software and Computer Systems ([SCS](https://www.kth.se/scs/software-engineering)) working with [Benoit Baudry](https://www.kth.se/profile/baudry) at [KTH](https://kth.se) Royal Institute of Technology, in Sweden <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">. My research work is generously funded by the Wallenberg Autonomous Systems and Software Program ([WASP](https://wasp-sweden.org)), funded by Knut and Alice Wallenberg Foundation. My current research is focused on software diversification, automatic program debloating and software specialization. For more on these topics, see my living review of <a
  href="software-debloating-papers.html">software
  debloating papers</a>, or consult my list of <a href="software-debloating-tools.html">software debloating tools</a>. I also do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories. For more on this topic, see this list of <a href="mining-software-repositories-resources.html">mining software repositories resources</a>. In particular, I'm interested in measuring the impact and pervasiveness of bloatware across large-scale software ecosystems. I'm keen to perform research on software technology which: 1) provide actionable insights to researchers and practitioners about how modern software is currently being developed and maintained, and 2) provide practical tools for developers in order to improve software quality.
- 
 
-<!-- ![Custom badge](https://img.shields.io/badge/-EDUCATION-orange.svg) -->
-# :mortar_board: Education
-I've a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science from the [Universidad Central "Marta Abreu" de Las Villas](https://www.uclv.edu.cu/), Cuba :cuba:. 
+# Formal education
+
+[//]: # (:mortar_board:)
+
+I've a [B.Sc.](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [M.Sc.](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science from the [Universidad Central "Marta Abreu" de Las Villas](https://www.uclv.edu.cu/), Cuba :cuba:. 
+
+Here is my short [resume](../files/CV/cv.pdf).
 
 See also:
 
@@ -40,16 +41,22 @@ See also:
 
     
 <!-- ![Custom badge](https://img.shields.io/badge/-HOBBIES-blue.svg) -->
-# :dart: Hobbies
+# Misc
+
+[//]: # (:dart:)
+
 Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and running through the Stockholm's beautiful parks.
 
+My <span style="background-color:#012639;color:white;">dark blue</span> is `#012639`.
 
-# :earth_africa: Workplace
+
+#  Contact me
+
+My physical workplace is at the KTH campus:
+
+[//]: # (:email:)
 
 <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="350px" id="gmap_canvas" src="https://maps.google.com/maps?q=LINDSTEDTSV%C3%84GEN%203%2C%20BUILDING%20D&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
-
-
-# :email: Contact me
 
 <!-- 
      After implementing this contact form make sure
@@ -57,6 +64,7 @@ Out of work, I enjoy spending time with my family, reading ~~physical~~ books, a
      2. you verify your form on formspree.io.
 -->
 
+You can always send me an email:
 
 <form id="contact-me" class="wj-contact" action="https://formspree.io/mrgqpknn" method="POST">
     <input type="text" name="email" placeholder="Email">
@@ -64,7 +72,7 @@ Out of work, I enjoy spending time with my family, reading ~~physical~~ books, a
     <input type="hidden" name="_next" value="<REDIRECTION LINK> ">
     <input type="hidden" name="_subject" value="New Contact Form Submission">
     <input type="text" name="_gotcha" style="display:none">
-    <input type="submit" value="Submit">
+    <input type="submit" value="📨 Send">
 </form>
 
 <style>
@@ -85,18 +93,24 @@ form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
 
 form.wj-contact input[type="submit"] {
     outline: none;
-    color: white;
-    background-color: #444;
+    color: #444;
+    background-color: white;
     border-radius: 3px;
     padding: 12px;
     margin: 0.25em 0 0 0;
-    border: 1px solid transparent;
     height: auto;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family:  'Linux Biolinum', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 800;
     letter-spacing: 1px;
+    border: 1px solid #444;
+}
+
+form.wj-contact input[type="submit"]:hover {
+  background-color: #444;
+  color: white;
+  cursor: pointer;
 }
 </style>
 
