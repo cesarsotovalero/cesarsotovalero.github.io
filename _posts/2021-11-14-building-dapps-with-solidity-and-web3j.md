@@ -26,3 +26,13 @@ TODO
 &#169; TODO. Photo taken at <a href="TODO">TODO</a>.
 </figcaption>
 </figure>
+
+# NFTs
+
+- https://github.com/ana0/MinimumViableNFT
+- https://medium.com/pinata/what-is-an-nft-2241d4c0a060
+
+
+# WebAssembly
+
+- https://youtu.be/3LWgbjVWLug
