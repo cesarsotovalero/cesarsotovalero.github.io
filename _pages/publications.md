@@ -59,7 +59,7 @@ As a researcher, I write academic papers for journals and conferences. My work c
 # 2020
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
-  **Trace-based Debloat for Java Bytecode**. 
+  **Coverage-Based Debloating for Java Bytecode**. 
   César Soto-Valero, Thomas Durieux, Nicolas Harrand, and Benoit Baudry. 
   _arXiv_.
   [:earth_americas: Link](https://arxiv.org/pdf/2008.08401)

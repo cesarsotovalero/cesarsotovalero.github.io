@@ -59,6 +59,10 @@ published: true
 - [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018
 - [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), 2017
 
+Also,
+
+- [EOLANG and &phi;-calculus](https://arxiv.org/abs/2111.13384), 2021 (my name is listed in the acknowledgments)
+
 # Co-reviewer
 
 - [ACM Digital Threats: Research and Practice](https://dl.acm.org/journal/dtrap), 2021
