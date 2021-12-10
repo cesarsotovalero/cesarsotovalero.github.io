@@ -28,7 +28,7 @@ Below is a listing of those projects:
       {% for app in site.data.portfolio %}
 	    <div class="tile">
           <a class="applink" href="{{ app.url }}">
-            <img class="appimg" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/{{ app.img }}" />
+            <img class="appimg" src="../img/logos/{{ app.img }}" />
             <div class="apptitle">{{ app.title }}</div>
             <div class="gh-stats">
                 <img class="gh-stat" src="//img.shields.io/github/stars/{{ app.stars }}" alt="GitHub stars">

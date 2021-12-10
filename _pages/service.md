@@ -53,28 +53,25 @@ published: true
 
 > My verified reviews for journals can be seen in [Publons](https://publons.com/researcher/1355482/cesar-soto-valero/peer-review)(<a href="https://publons.com/researcher/1355482/cesar-soto-valero/peer-review" style="text-decoration: underline;"><i class="ai ai-publons"></i></a>).
 
+- [International Journal of Computer Science in Sport](https://sciendo.com/journal/IJCSS), 2021
 - [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021
-
 - [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019
-
 - [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018
-
 - [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), 2017
 
 # Co-reviewer
 
 - [ACM Digital Threats: Research and Practice](https://dl.acm.org/journal/dtrap), 2021
-
 - [ISSRE'20](http://2020.issre.net/research-cfp)
-
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2020
-
 - [ICSE'19](https://conf.researchr.org/home/icse-2019)
-
 - [ICST'18](https://www.es.mdh.se/icst2018)
 
 # Volunteer 
 
 - [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), Staff Member, 2020
-
 - [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), Staff Member, 2017
+
+# Outreach
+
+- [Estudios de Doctorado en Suecia: Por Dónde Empezar?](https://eltoque.com/estudios-de-doctorado-en-suecia-por-donde-empezar) (co-authored article, _in Spanish_), 2021
