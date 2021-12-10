@@ -92,10 +92,10 @@ blockquote {
   background-color: var(--blockquote-background-color);
   font-size: 19px;
   line-height: 1.4;
-  font-weight: 300;
+  font-weight: 400;
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
-  border-radius: 5px 3px 3px 5px;
+  border-radius: 0px 5px 5px 0px;
   font-family: 'Source Sans Pro', sans-serif;
 
 }
@@ -1933,12 +1933,12 @@ ul {
   border: 1px solid var(--main-background-color);
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
-  border-radius: 5px 3px 3px 5px;
+  border-radius: 0px 5px 5px 0px;
   font-family: "Source Sans Pro", sans-serif;
 }
 
 .quote em {
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -2085,6 +2085,16 @@ ul {
   filter: invert(7%) sepia(0%) saturate(6770%) hue-rotate(276deg) brightness(99%) contrast(79%);
 }
 
+/*aside {*/
+/*  overflow: hidden;*/
+/*  border: 1px solid #DDDDDD;*/
+/*  border-radius: 4px;*/
+/*  position: relative;*/
+/*  top: 0;*/
+/*  right: -30rem;*/
+/*  float: right;*/
+/*  margin: 0;*/
+/*}*/
 
 /* Carbon ads */
 div[role=main],

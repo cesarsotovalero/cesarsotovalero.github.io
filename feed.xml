@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>SIGBOVIK - The Ig Nobel for Academics and Computer Science Researchers</title>
+        <description>
+          The most wanted proceedings when relaxing in the toilet - 
+          The SIGBOVIK’s flagship conference is a satiric and incredibly interesting Computer Science venue sponsored by the self-called “Association for Computational Heresy (ACH).” The event has been celebrated annually since 2007 in honor of Harry Quantifiability Bovik, an unconventional professor from Carnegie Mellon University. SIGBOVIK is the cradle of the funniest...
+        </description>
+        <pubDate>Sun, 05 Dec 2021 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/sigbovik-the-ig-nobels-of-academic-computer-science-research.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/sigbovik-the-ig-nobels-of-academic-computer-science-research.html</guid>
+      </item>
+    
+      <item>
         <title>How to Set Up A Blockchain Network With Hyperledger Besu</title>
         <description>
           Look mom, I&apos;m running my own blockchain! - 
@@ -213,17 +224,6 @@
         <pubDate>Tue, 03 Mar 2020 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/recipes-for-email-based-communication-success-in-academia.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/recipes-for-email-based-communication-success-in-academia.html</guid>
-      </item>
-    
-      <item>
-        <title>Deploying to Maven Central</title>
-        <description>
-          A Three-steps Guide - 
-          Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM. In this post, I’ll describe the process of releasing a new artifact in Maven Central following a step-by-step approach. “Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest...
-        </description>
-        <pubDate>Mon, 06 Jan 2020 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/deploying-to-maven-central.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/deploying-to-maven-central.html</guid>
       </item>
     
   </channel>
