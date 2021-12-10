@@ -91,7 +91,7 @@ This humor-filled conference contained several opportunities for those who want 
 # The Proceedings
 
 All proceedings are available for free online as PDF, and paperback versions can be brought [here](https://www.lulu.com/search?page=1&pageSize=4&q=SIGBOVIK&adult_audience_rating=00).
-But just in case, here is the compendium of all of them (2007-2021):
+But just in case you were too lazy to make your own searching, here is a compendium of all of them (2007-2021):
 
 [2021](../files/SIGBOVIG/2021_SIGBOVIG_proceedings.pdf)
 [2020](../files/SIGBOVIG/2020_SIGBOVIG_proceedings.pdf)
