@@ -19,7 +19,10 @@ published: true
 As a researcher, I write academic papers for journals and conferences. My work can be found in 
 <a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="../../img/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="../../img/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="../../img/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar). My ORCID  <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="../../img/ORCID-iD_icon-vector.svg" style="width:1em;margin-right:.3em;" alt="ORCID iD icon">0000-0003-0541-6411</a>.  The following is an updated list of my published work (in reverse chronological order).
 
-# 2021  
+
+Legend: <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> Conference; <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Journal; <img alt="" title="Books and Theses" src="https://dblp.uni-trier.de/img/n.png" style="background: #f8c91f; width: 18px; height: 18px"> Thesis.
+
+# 2021
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **API beauty is in the eye of the clients: 2.2 million Maven dependencies reveal the spectrum of client-API usages**. 
@@ -33,7 +36,6 @@ As a researcher, I write academic papers for journals and conferences. My work c
   **A Longitudinal Analysis of Bloated Java Dependencies**. 
   César Soto-Valero, Thomas Durieux, and Benoit Baudry. 
   _Proceeding of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE), Athens, Greece_.
-  [:earth_americas: Interview](https://intra.kth.se/en/eecs/aktuellt-pa-eecs/nyheter/grattis-till-vinsten-cesar-1.1112396)
   <a href="https://dx.doi.org/10.1145/3468264.3468589"><i class="icon i-doi"></i> 10.1145/3468264.3468589</a> 
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px">

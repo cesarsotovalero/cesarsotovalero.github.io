@@ -18,6 +18,7 @@ published: true
 
 # Certificates
 
+- [JBA Reviewer Certificate](../files/certificates/2021_JBA_Reviewer_Certificate.pdf), _Journal of Business Analytics_, 2021
 - [IELTS Academic Test](../files/certificates/IELTS_Test_Report_Form.pdf), University of Cambridge ESOL Examinations, 2016
 - [JSEP Reviewer Certificate](../files/certificates/SMR_Certificate.pdf), _Journal of Software: Evolution and Process_, 2017
 - [ICPC-ACM Staff Member](../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf), _ICPC-ACM International Collegiate Programming Contest_, 2017
