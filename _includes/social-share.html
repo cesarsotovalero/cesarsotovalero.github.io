@@ -29,9 +29,16 @@
       <span class="sr-only">Reddit</span>
    </a>
 
+   <!--- Share on Telegram -->
+   <a href="https://t.me/share/url?url={{ page.url | absolute_url | url_encode }}&text={{ page.description | page.title | url_encode }}"
+      class="btn btn-my-icon btn-telegram" title="Share on Telegram">
+      <i class="fab fa-telegram"></i>
+      <span class="sr-only">Telegram</span>
+   </a>
+
    <!--- Share on Hacker News -->
    <a href="http://news.ycombinator.com/submitlink?u={{ page.url | absolute_url | url_encode }}&amp;t={{ page.title | url_encode }}"
-      class="btn btn-my-icon btn-hn" title="Share on Hacker News">
+   class="btn btn-my-icon btn-hn" title="Share on Hacker News">
       <i class="fab fa-hacker-news-square"></i>
       <span class="sr-only">Hacker News</span>
    </a>
