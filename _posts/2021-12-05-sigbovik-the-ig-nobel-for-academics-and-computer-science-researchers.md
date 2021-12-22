@@ -68,7 +68,7 @@ This humor-filled conference contained several opportunities for those who want 
 
 # My Favorites
 
-- **93% of Paint Splatters are Valid Perl Programs** In this paper, the authors aim to answer a long-standing open problem in the programming languages community: is it possible to smear paint on the wall without creating valid Perl? They answer this question in the affirmative: it is possible to smear paint on the wall without creating a valid Perl program. They employ an empirical approach, using optical character recognition (OCR) software, which finds that merely 93% of paint splatters parse as valid Perl. They analyze the properties of paint-splatter Perl programs, and present seven examples of paint splatters which are not valid Perl programs.
+- **“93% of Paint Splatters are Valid Perl Programs”** In this paper, the authors aim to answer a long-standing open problem in the programming languages community: is it possible to smear paint on the wall without creating valid Perl? They answer this question in the affirmative: it is possible to smear paint on the wall without creating a valid Perl program. They employ an empirical approach, using optical character recognition (OCR) software, which finds that merely 93% of paint splatters parse as valid Perl. They analyze the properties of paint-splatter Perl programs, and present seven examples of paint splatters which are not valid Perl programs.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/splatters_dataset.png alt:"The paint-splatter image dataset." %}
@@ -77,9 +77,9 @@ This humor-filled conference contained several opportunities for those who want 
   </figcaption>
 </figure>
 
-- **DollarCoin: A Cryptocurrency With Proof-Of-Dollar** In this paper, the authors present DollarCoin, a new cryptocurrency, as an alternative to Bitcoin. DollarCoin is mined, or generated, by burning a $1 bill, while taking a video of the burning process in a specified manner. In his paper, the author proves that burning the bill in this specified manner ensures that the currency cannot be forged or double spent. During the paper's presentation, it was a demonstration of this process of generating a DollarCoin, taking a dollar bill out of ones pocket and lighting it on fire. Unsurprisingly, this demonstration led to a great deal of amusement among the audience.
+- **“DollarCoin: A Cryptocurrency With Proof-Of-Dollar”** In this paper, the authors present DollarCoin, a new cryptocurrency, as an alternative to Bitcoin. DollarCoin is mined, or generated, by burning a $1 bill, while taking a video of the burning process in a specified manner. In his paper, the author proves that burning the bill in this specified manner ensures that the currency cannot be forged or double spent. During the paper's presentation, it was a demonstration of this process of generating a DollarCoin, taking a dollar bill out of ones pocket and lighting it on fire. Unsurprisingly, this demonstration led to a great deal of amusement among the audience.
 
-- **Pikachu, Domosaur, and Other Monolexical Languages** Many complicated techniques have been introduced to aid in computer processing of natural languages. While this is generally considered to be a difficult task, many approaches have ignored the prevalent class of monolexical languages, or languages that consist of a single word. In this paper, the authors present some desirable properties of such languages and apply techniques for common NLP tasks to demonstrate their value.
+- **“Pikachu, Domosaur, and Other Monolexical Languages”** Many complicated techniques have been introduced to aid in computer processing of natural languages. While this is generally considered to be a difficult task, many approaches have ignored the prevalent class of monolexical languages, or languages that consist of a single word. In this paper, the authors present some desirable properties of such languages and apply techniques for common NLP tasks to demonstrate their value.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/monolexical_creatures.png alt:"Examples of creatures with monolexical languages." %}

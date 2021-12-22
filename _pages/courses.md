@@ -6,7 +6,6 @@ subtitle: At the pace of professional progress
 published: true
 ---
 
-
 ---
 
 <!-- Carbon ads -->
@@ -48,6 +47,8 @@ published: true
 
 
 # MOOCs
+
+- [JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/certification/cesarsotovalero/javascript-algorithms-and-data-structures), freeCodeCamp, 2021
 
 - [Responsive Web Design](https://www.freecodecamp.org/certification/cesarsotovalero/responsive-web-design), freeCodeCamp, 2021
 

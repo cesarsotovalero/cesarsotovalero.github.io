@@ -78,5 +78,5 @@ Also,
 
 # Outreach
 
-- [:earth_americas: KTH Intranet Interview](https://intra.kth.se/en/eecs/aktuellt-pa-eecs/nyheter/grattis-till-vinsten-cesar-1.1112396)
+- [:earth_americas: KTH Intranet Interview](https://intra.kth.se/en/eecs/aktuellt-pa-eecs/nyheter/grattis-till-vinsten-cesar-1.1112396), 2021
 - [:earth_americas: Estudios de Doctorado en Suecia: Por Dónde Empezar?](https://eltoque.com/estudios-de-doctorado-en-suecia-por-donde-empezar) (co-authored article, _in Spanish_), 2021
