@@ -1075,6 +1075,53 @@
 
 
 
+.btn-telegram {
+  color: var(--post-meta-index-color);
+  background-color: var(--main-background-color);
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-telegram:focus, .btn-telegram.focus {
+  color: var(--main-background-color);
+  background-color: var(--main-text-color);
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-telegram:hover {
+  color: var(--main-background-color);
+  background-color: var(--main-text-color);
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+#share-telegram:hover {
+  color: var(--main-background-color);
+}
+
+.btn-telegram:active, .btn-telegram.active, .open > .dropdown-toggle.btn-telegram {
+  color: var(--main-background-color);
+  background-color: var(--main-text-color);
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-telegram:active:hover, .btn-telegram.active:hover, .open > .dropdown-toggle.btn-telegram:hover, .btn-telegram:active:focus, .btn-telegram.active:focus, .open > .dropdown-toggle.btn-telegram:focus, .btn-telegram:active.focus, .btn-telegram.active.focus, .open > .dropdown-toggle.btn-telegram.focus {
+  color: #fff;
+  background-color: #1583d7;
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-telegram:active, .btn-telegram.active, .open > .dropdown-toggle.btn-telegram {
+  background-image: none
+}
+
+.btn-telegram.disabled, .btn-telegram[disabled], fieldset[disabled] .btn-telegram, .btn-telegram.disabled:hover, .btn-telegram[disabled]:hover, fieldset[disabled] .btn-telegram:hover, .btn-telegram.disabled:focus, .btn-telegram[disabled]:focus, fieldset[disabled] .btn-telegram:focus, .btn-telegram.disabled.focus, .btn-telegram[disabled].focus, fieldset[disabled] .btn-telegram.focus, .btn-telegram.disabled:active, .btn-telegram[disabled]:active, fieldset[disabled] .btn-telegram:active, .btn-telegram.disabled.active, .btn-telegram[disabled].active, fieldset[disabled] .btn-telegram.active {
+  background-color: #55acee;
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-telegram .badge {
+  color: #55acee;
+  background-color: #fff
+}
 
 
 
