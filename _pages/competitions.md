@@ -6,8 +6,10 @@ subtitle: The natural skill calibrator
 published: true
 ---
 
+<!--
 > "You must not only have competitiveness but ability, regardless of the circumstance you face, to never quit."
 > -- <cite>Abby Wamback</cite>
+-->
 
 ---
 

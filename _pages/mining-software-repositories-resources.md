@@ -7,7 +7,10 @@ published: true
 image: ../../img/posts/gold_mining.jpg
 ---
 
-> "Mining software repositories is an increasingly popular and important area of software engineering research aimed at retrieving, integrating, and analyzing data available in various kinds of software repositories" *― [Massimiliano Di Penta](https://scholar.google.com/citations?user=j6ucyOAAAAAJ&hl=en)*
+<!--
+> "Mining software repositories is an increasingly popular and important area of software engineering research aimed at retrieving, integrating, and analyzing data available in various kinds of software repositories" 
+> *― [Massimiliano Di Penta](https://scholar.google.com/citations?user=j6ucyOAAAAAJ&hl=en)*
+-->
 
 ---
 
@@ -15,6 +18,7 @@ image: ../../img/posts/gold_mining.jpg
 <div class="cesarcarbon">
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
 </div>
+
 
 ## Tools
 

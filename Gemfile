@@ -11,6 +11,7 @@ gem 'jekyll-responsive-image', '~> 1.4'
 gem 'jekyll-seo-tag', '~> 2.7', '>= 2.7.1'
 
 # Non-jekyll gems
+gem 'posix-spawn', '~> 0.3.15'
 gem 'github-pages', '~> 218'
 gem 'jemoji', '~> 0.12.0'
 gem 'webrick', '~> 1.7'
@@ -36,3 +37,4 @@ gem 'uuidtools', '~> 2.2'
 gem 'w3c_validators', '~> 1.3', '>= 1.3.6'
 gem "sprockets", "~> 3.7"
 gem 'json', '~> 2.5', '>= 2.5.1'
+gem 'jekyll-last-modified-at', '~> 1.3'
