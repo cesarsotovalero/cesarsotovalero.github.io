@@ -6,8 +6,10 @@ subtitle: Open-source contributions
 published: true
 ---
 
+<!--
 > "If you’re not contributing to open source, if your GitHub profile is not full of projects and commits, your “value” as a software developer is low, simply because this lack of open source activity tells everybody that you’re not passionate about software development and are simply working for money."
 > -- <cite>Yegor Bugayenko</cite>
+-->
 
 ---
 

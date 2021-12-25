@@ -21,7 +21,14 @@ layout: base
          <!--					  {% endfor %}-->
          <!--					]</span>-->
 
-         <br>
+
+
+
+
+         <p class="post-meta">
+            <i class="fas fa-user-edit"></i>
+            Post last modified on {{ page.last_modified_at | date: "%B %-d, %Y" }}
+         </p>
 
 
          <ul class="pager blog-pager">

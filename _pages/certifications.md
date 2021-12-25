@@ -6,8 +6,11 @@ subtitle: And Other Awards
 published: true
 ---
 
+
+<!--
 > "Certifications help you formalize your knowledge, put borders around it, and remove gaps. And they demonstrate to most of your potential employers that you’re truly serious about software engineering."
 > -- <cite>Yegor Bugayenko</cite>
+-->
 
 ---
 
