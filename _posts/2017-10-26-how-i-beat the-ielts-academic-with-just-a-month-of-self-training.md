@@ -4,7 +4,7 @@ title: How I Beat the IELTS Academic With Just a Month of Self-Training
 subtitle: Personal Comments and Suggestions
 description: Personal useful list of tips to pass the IELTS Academic English test. 
 published: true
-tags: self-improvement
+tags: soft-skills
 keywords: learn english, international test, language test
 image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/IELTS.jpg
 share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/IELTS.jpg

@@ -17,8 +17,8 @@ The [SIGBOVIK](http://sigbovik.org/)'s flagship conference is a satiric and incr
 The event has been celebrated annually since 2007 in honor of [Harry Quantifiability Bovik](https://www.cs.cmu.edu/afs/cs/usr/bovik/www/index.html), an unconventional professor from Carnegie Mellon University.
 SIGBOVIK is the cradle of the funniest presentations and the most controversial research experiments in the overarching field of Computer Science.
 The authors of the published papers are typically curious academics or retired entrepreneurs who attend the event with the purpose of having fun while staying away from ~~actual work~~ boredom. 
-The objectives of the venue include promoting open science on non-essential topics, such as “Fruitful Procrastination”, “Inept Expert Systems”, and “Perplexity Theory”. 
-Reading the SIGBOVIK's proceedings is such a delight, I can't avoid the temptation of writing about this fantastic source of nerdy and academic inspiration.
+The objectives of the venue include promoting open science on non-essential topics, such as “Fruitful Procrastination”, “Inept Expert Systems”, and “Perplexity Theory.” 
+Reading one the SIGBOVIK's proceedings was such a delight, so I can't avoid the temptation of writing about this fantastic source of nerdy academic inspiration.
 
 <figure class="jb_picture">
 {% responsive_image path: img/posts/splatter.png alt:"Not a valid Perl program" %}
