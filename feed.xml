@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Encoding, Encryption, Hashing, and Obfuscation in Java</title>
+        <description>
+          From concepts to code - 
+          The concepts of encoding, encryption, hashing, and obfuscation are at the core of many critical software technologies. For example, encryption and hashing are the backbones of the blockchain technology that fuels cryptocurrencies, whereas encoding and obfuscation unify and secure the web, respectively. Unfortunately, these concepts are often mistakenly confused or...
+        </description>
+        <pubDate>Sun, 19 Dec 2021 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html</guid>
+      </item>
+    
+      <item>
         <title>SIGBOVIK - The Ig Nobel for Academics and Computer Science Researchers</title>
         <description>
           The most wanted proceedings for fruitful procrastination - 
@@ -213,17 +224,6 @@
         <pubDate>Sat, 23 May 2020 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html</guid>
-      </item>
-    
-      <item>
-        <title>Recipes for Effective Academic Emailing</title>
-        <description>
-          A Template-based Approach - 
-          You cannot be a good researchers without being a good communicator. If you are good enough at both, they you may qualify for becoming a supervisor. Being a good academic supervisor is a matter of practice, discipline, and the development of leading skills. Handling tons of emails is the everyday...
-        </description>
-        <pubDate>Tue, 03 Mar 2020 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/recipes-for-email-based-communication-success-in-academia.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/recipes-for-email-based-communication-success-in-academia.html</guid>
       </item>
     
   </channel>
