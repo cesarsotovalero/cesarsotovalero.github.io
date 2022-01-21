@@ -5,8 +5,8 @@ subtitle: From concepts to code
 tags: programming
 description: The concepts of encoding, encryption, hashing, and obfuscation are often mistakenly confused or taken as similar (which is even worse). Let's clarify this matter and see some Java code examples of practical applications.
 keywords: java,data confidentiality,data integrity,data authenticity,cybersecurity
-image: https://www.cesarsotovalero.net/img/posts/paint_on_wall_cover.jpg
-share-img: https://www.cesarsotovalero.net/img/posts/paint_on_wall_cover.jpg
+image: ../img/posts/2021/paint_on_wall_cover.jpg
+share-img: ../img/posts/2021/paint_on_wall_cover.jpg
 show-avatar: false
 date: 2021/12/19
 author: cesarsotovalero
@@ -20,7 +20,7 @@ I believe that a good software developer today should know not only how they wor
 In this post, I'll explain the key differences and provide you with hands-on Java code examples that illustrate how to use encoding, encryption, hashing, and obfuscation in practice.
 
 <figure class="jb_picture">
-{% responsive_image path: img/posts/paint_on_wall.jpg alt:"It's all about transformations." %}
+{% responsive_image path: img/posts/2021/paint_on_wall.jpg alt:"It's all about transformations." %}
   <figcaption class="stroke"> 
 &#169; It's all about data transformations. Photo taken at <a href="https://goo.gl/maps/vzMt6ScMnddqbowc8">Östermalmstorg metro station</a>.
 </figcaption>

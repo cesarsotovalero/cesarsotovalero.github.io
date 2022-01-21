@@ -6,8 +6,8 @@ description: Disqus started polluting free users with unwanted ads; it's time to
 tags: tools
 published: true
 keywords: blog, comments, disqus, replace
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/angry-emoji.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/angry-emoji.jpg
+image: ../img/posts/2021/angry-emoji.jpg
+share-img: ../img/posts/2021/angry-emoji.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2021/7/27

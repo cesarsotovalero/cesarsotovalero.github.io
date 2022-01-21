@@ -6,8 +6,8 @@ published: true
 keywords: politics, Cuba, reality
 description: Cuba has resisted more than sixty years of communism caused by the cuban revolution. I explain the historical context and implications of this event.
 tags: misc
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/cuba_flag.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/cuba_flag.jpg
+image: ../img/posts/2019/cuban_flag_cover.jpg
+share-img: ../img/posts/2019/cuban_flag_cover.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2019/12/8

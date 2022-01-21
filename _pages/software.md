@@ -18,6 +18,8 @@ published: true
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
 </div>
 
+
+
 I develop software prototypes to support my research. 
 I also contribute to open-source projects.
 Unless otherwise specified on the project page, all of my software projects are released under an MIT license. 
@@ -42,3 +44,7 @@ Below is a listing of those projects:
 	  {% endfor %}
     </div>
   </div>
+
+
+
+[//]: # (see https://github.com/slarse/slarse/blob/master/README.md for more inspiration)

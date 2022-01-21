@@ -6,8 +6,8 @@ tags: research
 keywords: empirical, software engineering, challenges
 published: true
 description: The ingredients for a good software engineering paper are very difficult to find in practice.
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/children-gardening-squared.png
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/children-gardening-squared.png
+image: ../img/posts/2020/children_gardening_cover.png
+share-img: ../img/posts/2020/children_gardening_cover.png
 show-avatar: false
 author: cesarsotovalero
 date: 2020/10/15
@@ -16,7 +16,7 @@ date: 2020/10/15
 You are a very talented researcher. Perhaps you come from a favored field, e.g., from the popular machine learning (ML) research community. But now, you have decided to expand your horizons and solve software engineering (SE) problems. Hence, for the next years, you will be working as an empirical SE researcher. "This job is going to be a piece of cake", you may think and even dare to say. Well... not really. Let me tell you why.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/children-gardening.jpg alt: "Seeds planted by children at Rosenlundsparken, Stockholm City" %}
+  {% responsive_image path: img/posts/2020/children_gardening.jpg alt: "Seeds planted by children at Rosenlundsparken, Stockholm City" %}
   <figcaption class="stroke">
     &#169; Seeds planted by children at Rosenlundsparken, Stockholm City
   </figcaption>

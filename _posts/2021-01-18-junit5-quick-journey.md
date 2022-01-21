@@ -4,8 +4,8 @@ title: JUnit5 annotations
 subtitle: A comprehensive description
 tags: testing
 published: false
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.gif
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/backyard.gif
+image: img/posts/2021/backyard.jpg
+share-img: img/2021/backyard.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2021/1/18

@@ -5,8 +5,8 @@ subtitle: Look mom, I'm running my own blockchain!
 tags: tutorial
 description: If you are a Java developer interested in cryptocurrencies and blockchain-related technologies, you should probably have heard about Hyperledger Besu, the official Java client of the Ethereum blockchain. In this post, we're going to set up a production-ready Ethereum client using Besu.
 keywords: blockchain,ethereum,decentralized applications,tutorial, hyperledger besu
-image: https://www.cesarsotovalero.net/img/posts/floor_art_cover.jpg
-share-img: https://www.cesarsotovalero.net/img/posts/floor_art_cover.jpg
+image: ../img/posts/2021/floor_art_cover.jpg
+share-img: ../img/posts/2021/floor_art_cover.jpg
 show-avatar: false
 date: 2021/11/21
 author: cesarsotovalero
@@ -22,7 +22,7 @@ Besu is also actively supported both in open community channels and through comm
 In this post, we're going to set up a production-ready Ethereum client using Besu, step-by-step.
 
 <figure class="jb_picture">
-{% responsive_image path: img/posts/floor_art.jpg alt:"Software configurations are, like art, a sense of beauty in abstractions." %}
+{% responsive_image path: img/posts/2021/floor_art.jpg alt:"Software configurations are, like art, a sense of beauty in abstractions." %}
   <figcaption class="stroke"> 
 &#169; Software configurations are, like art, a sense of beautiful abstractions. Photo taken at <a href="https://goo.gl/maps/ZjSrUbNDX9EutcES7">Tekniska högskolan metro station</a>.
 </figcaption>

@@ -6,8 +6,8 @@ tags: research
 keywords: research, industry, collaboration
 published: true
 description: Presenting research work to industrial engineers is essential for the sustainability of the whole research business.
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/skates_cover.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/skates_cover.jpg
+image: ../img/posts/2020/skates_cover.jpg
+share-img: ../img/posts/2020/skates_cover.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2020/11/2
@@ -23,7 +23,7 @@ Therefore, researchers should dedicate a significant portion of their efforts to
 Let's discuss how. 
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/skates.jpg alt: "Skates for sale in a second-hand store in Stockholm City" %}
+  {% responsive_image path: img/posts/2020/skates.jpg alt: "Skates for sale in a second-hand store in Stockholm City" %}
   <figcaption class="stroke">
     &#169; Skates for sale in a second-hand store in Stockholm City
   </figcaption>

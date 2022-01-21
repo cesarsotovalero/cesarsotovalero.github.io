@@ -6,8 +6,8 @@ tags: programming
 keywords: javascript, course
 description: Personal notes of the EdX course Programing for the web with JavaScript.
 published: false
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/terminal.png
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/terminal.png
+image: ../img/posts/2020/terminal_cover.png
+share-img: ../img/posts/2020/terminal_cover.png
 show-avatar: false
 author: cesarsotovalero
 date: 2020/5/23

@@ -10,8 +10,8 @@ keywords:
   - software architect,
   - software design,
   - architectural characteristics,
-image: https://www.cesarsotovalero.net/img/posts/clouds_cover.png
-share-img: https://www.cesarsotovalero.net/img/posts/clouds_cover.png
+image: ../img/posts/2021/clouds_cover.png
+share-img: ../img/posts/2021/clouds_cover.png
 show-avatar: false
 date: 2021/09/20
 author: cesarsotovalero
@@ -29,7 +29,7 @@ This strategy has helped me to integrate some of my open-source projects with fr
 Lets me explain this approach.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/clouds.png alt: "The cloud: a bunch of Linux servers where microservices coexist." %}
+  {% responsive_image path: img/posts/2021/clouds.png alt: "The cloud: a bunch of Linux servers where microservices coexist." %}
   <figcaption class="stroke">
     &#169; The cloud: a bunch of Linux servers where microservices coexist. 
     </figcaption>
@@ -62,7 +62,7 @@ The data flows back and forward from the client's devices to the service servers
 Notice that each module in the Service layer can operate independently, as each includes its own database and all its main runs as an independent process in the server computers.
 
 <figure class="jb_picture">
-    <img src = "/img/posts/microservices_topology.drawio.svg" alt="Topology of a typical microservices architecture with three logical layers: Client, API, and Service."
+    <img src = "/img/posts/2021/microservices_topology.drawio.svg" alt="Topology of a typical microservices architecture with three logical layers: Client, API, and Service."
     longdesc="#c13e1390"/>
     <figcaption class="stroke">
     Figure 1. Topology of a typical microservice architecture with three logical layers: Client, API, and Service.
@@ -119,7 +119,7 @@ The metadata obtained from the project's dependency tree is delivered as a JSON 
 The user can observe how the project is being analyzed and visually engage with the project's dependency tree in an interactive website.
 
 <figure class="jb_picture">
-    <img src = "/img/posts/depclean-web_component.svg" alt="DepClean modified to be used as a service component for a microservice architecture"
+    <img src = "/img/posts/2021/depclean-web_component.svg" alt="DepClean modified to be used as a service component for a microservice architecture"
     longdesc="#c13e1390"/>
     <figcaption class="stroke">
     Figure 2. DepClean modified to be used as a service component for a microservice architecture.

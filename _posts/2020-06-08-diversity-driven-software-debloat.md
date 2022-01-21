@@ -6,8 +6,8 @@ tags: debloat popular
 keywords: software debloat, diversity, jdbl
 description: I leverage the diversity of code coverage tools to create a tool to automatically debloat Java artifacts.
 published: true
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/crowd.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/crowd.jpg
+image: ../img/posts/2020/crowd_cover.jpg
+share-img: ../img/posts/2020/crowd_cover.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2020/6/08
@@ -95,7 +95,7 @@ A general scheme of JDBL is presented in the following figure:
 
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/jdbl_diversity.jpg alt: "JDBL pipeline" %}
+  {% responsive_image path: img/posts/2020/jdbl_diversity.jpg alt: "JDBL pipeline" %}
   <figcaption class="stroke">
     &#169; Debloat execution pipeline in JDBL.
   </figcaption>

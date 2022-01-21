@@ -6,8 +6,8 @@ tags: programming
 description: All software engineers should be able to understand dynamic programming. I give a curated list of very representative problems and explain their solutions.
 published: true
 keywords: problems, dynamic programming, strategies
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/backyard.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/backyard.jpg
+image: ../img/posts/2020/backyard_cover.jpg
+share-img: ../img/2020/backyard_cover.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2020/12/21
@@ -26,7 +26,7 @@ These problems are presented and explained by Alvin Zablan, in [this](https://ww
 I have written my own solutions to the problems in Java.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/backyard.jpg alt: "Trees getting prepared for the winter in Stockholm" %}
+  {% responsive_image path: img/posts/2020/backyard_cover.jpg alt: "Trees getting prepared for the winter in Stockholm" %}
   <figcaption class="stroke">
     &#169; Trees getting prepared for the winter in Stockholm
     </figcaption>

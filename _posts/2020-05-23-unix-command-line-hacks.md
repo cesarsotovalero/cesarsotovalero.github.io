@@ -6,8 +6,8 @@ tags: programming
 keywords: unix, command line, scripts, tools
 description: Personal notes of the edX course titled Unix Tools Data, Software and Production Engineering.
 published: true
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/unix_course.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/unix_course.jpg
+image: ../img/posts/2020/unix_course_cover.jpg
+share-img: ../img/posts/2020/unix_course_cover.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2020/5/23

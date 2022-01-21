@@ -6,8 +6,8 @@ tags: tools tutorial
 published: true
 description: In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema.
 keywords: asciinema, readme, improvement, video
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/asciinema.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/asciinema.jpg
+image: ../img/posts/2021/asciinema_cover.jpg
+share-img: ../img/posts/2021/asciinema_cover.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2021/4/5

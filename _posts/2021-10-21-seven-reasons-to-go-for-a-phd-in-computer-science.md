@@ -10,8 +10,8 @@ keywords:
   - professional life,
   - life in academia,
   - opportunity,
-image: https://www.cesarsotovalero.net/img/posts/rabbit_cover.jpg
-share-img: https://www.cesarsotovalero.net/img/posts/rabbit_cover.jpg
+image: ../img/posts/2021/rabbit_cover.jpg
+share-img: ../img/posts/2021/rabbit_cover.jpg
 show-avatar: false
 date: 2021/10/21
 author: cesarsotovalero
@@ -33,7 +33,7 @@ I dare to say that if you don't feel identified with any of them, then probably 
 Let's discuss this matter!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/rabbit.jpg alt: "Be cautious as a rabbit, jump into it only if you have good reasons to do so." %}
+  {% responsive_image path: img/posts/2021/rabbit.jpg alt: "Be cautious as a rabbit, jump into it only if you have good reasons to do so." %}
   <figcaption class="stroke">
     &#169; Be cautious as a rabbit, jump into it only if you have good reasons to do so. Photo taken at <a href="https://goo.gl/maps/mTGw7xjKpzvVeCk7A">Tessinparken</a>.
     </figcaption>

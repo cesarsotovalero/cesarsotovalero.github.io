@@ -6,8 +6,8 @@ tags: programming
 keywords: Java, producer/consumer, design patterns
 description: The BlockingQueue data structure can be used to implement Producer-Consumer pattern. In this guide I explain how.
 published: true
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/java_design_patterns.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/java_design_patterns.jpg
+image: ../img/posts/2020/java_design_patterns_cover.jpg
+share-img: ../img/posts/2020/java_design_patterns_cover.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2020/6/28
