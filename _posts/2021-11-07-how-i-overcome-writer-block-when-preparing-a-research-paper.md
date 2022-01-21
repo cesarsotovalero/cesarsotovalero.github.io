@@ -10,8 +10,8 @@ keywords:
   - writing techniques,
   - scientific paper,
   - PhD's habits
-image: https://www.cesarsotovalero.net/img/posts/stalking_monster.jpg
-share-img: https://www.cesarsotovalero.net/img/posts/stalking_monster_cover.jpg
+image: ../img/posts/2021/stalking_monster.jpg
+share-img: ../img/posts/2021/stalking_monster_cover.jpg
 show-avatar: false
 date: 2021/11/07
 author: cesarsotovalero
@@ -27,7 +27,7 @@ So, let me tell you about the tricks I've learned through these years of continu
 I hope you find them useful as too.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/stalking_monster.jpg alt:"Photo taken at Tekniska högskolan metro station." %}
+  {% responsive_image path: img/posts/2021/stalking_monster.jpg alt:"Photo taken at Tekniska högskolan metro station." %}
   <figcaption class="stroke">
     &#169; Writer's block is an stalking monster. Photo taken at <a href="https://goo.gl/maps/ZjSrUbNDX9EutcES7">Tekniska högskolan metro station</a>.
     </figcaption>

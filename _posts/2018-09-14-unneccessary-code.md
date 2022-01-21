@@ -6,8 +6,8 @@ published: true
 tags: debloat
 keywords: software bloat, code, unused code
 description: Unnecessary code is such that can be deleted from the codebase without affecting the expected functionality of the software project.
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/codecode.png
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/codecode.png
+image: ../img/posts/2018/codecode_cover.png
+share-img: ../img/posts/2018/codecode_cover
 show-avatar: false
 author: cesarsotovalero
 date: 2018/09/14
@@ -18,7 +18,7 @@ After reading the paper ["Is Static Analysis Able to Identify Unnecessary Source
 Thus, to put all the important related concepts together, I made the following diagram:
 
 <figure class="jb_picture">
-  {% responsive_image path: img/general-diagram.png alt: "Diagram showing the concept of unnecessary code" %}
+  {% responsive_image path: img/posts/2018/general-diagram.png alt: "Diagram showing the concept of unnecessary code" %}
 </figure>
 
 Le me clarify each concept in the diagram presented before:

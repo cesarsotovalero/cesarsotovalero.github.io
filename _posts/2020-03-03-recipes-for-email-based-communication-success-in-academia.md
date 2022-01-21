@@ -5,8 +5,8 @@ subtitle: A Template-based Approach
 tags: soft-skills
 published: true
 keywords: communication, email
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/word_cloud.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/word_cloud.jpg
+image: ../img/posts/2020/word_cloud_cover.jpg
+share-img: ../img/posts/2020/word_cloud_cover.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2020/3/03

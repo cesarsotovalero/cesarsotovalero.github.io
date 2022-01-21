@@ -6,8 +6,8 @@ published: true
 description: The basic git commands that every developer should known. 
 tags: tools
 keywords: command line, version control, GitHub, software developement
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/git_logo.png
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/git_logo.png
+image: ../img/posts/2017/git_logo_cover.png
+share-img: ../img/posts/2017/git_logo_cover.png
 show-avatar: false
 author: cesarsotovalero
 date: 2017/11/14

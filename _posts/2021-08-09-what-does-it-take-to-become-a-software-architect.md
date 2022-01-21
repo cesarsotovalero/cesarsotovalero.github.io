@@ -10,8 +10,8 @@ keywords:
   - software architect, 
   - software architect job description, 
   - software architect salary
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/metro_in_stadium_cover.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/metro_in_stadium_cover.jpg
+image: ../img/posts/2021/metro_in_stadium_cover.jpg
+share-img: ../img/posts/2021/metro_in_stadium_cover.jpg
 show-avatar: false 
 author: cesarsotovalero
 date: 2021/08/09
@@ -27,7 +27,7 @@ This position requires a high level of **authority** and **responsibility**.
 In this post, I’m going to explain what these two words actually mean and discuss the necessary skills to become a competent software architect.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/metro_in_stadium.jpg alt: "Arched rainbow painted in the metro at Stadium, Stockholm" %}
+  {% responsive_image path: img/posts/2021/metro_in_stadium.jpg alt: "Arched rainbow painted in the metro at Stadium, Stockholm" %}
   <figcaption class="stroke">
     &#169; An arched rainbow painted at the Stadium station, Stockholm. 
     </figcaption>

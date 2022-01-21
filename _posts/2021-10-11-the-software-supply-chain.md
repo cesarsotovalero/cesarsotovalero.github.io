@@ -10,8 +10,8 @@ keywords:
   - continuous delivery,
   - software design,
   - cybersecurity,
-image: https://www.cesarsotovalero.net/img/posts/crane_cover.png
-share-img: https://www.cesarsotovalero.net/img/posts/crane_cover.png
+image: ../img/posts/2021/crane_cover.png
+share-img: ../img/posts/2021/crane_cover.png
 show-avatar: false
 date: 2021/10/11
 author: cesarsotovalero
@@ -27,7 +27,7 @@ In this post, I take a close look at this phenomenon from a software engineering
 Lets me dive into it!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/crane.png alt: "The crane is a symbol of the construction and transportation of physical objects on a large scale." %}
+  {% responsive_image path: img/posts/2021/crane.png alt: "The crane is a symbol of the construction and transportation of physical objects on a large scale." %}
   <figcaption class="stroke">
     &#169; The crane is a symbol of the construction and transportation of physical objects on a large scale. 
     </figcaption>
@@ -60,7 +60,7 @@ As a result of the interaction of clients with the software product, bugs and pe
 These issues then need to be addressed by the developers who maintain the product, and the whole cycle kicks in once more.
 
 <figure class="jb_picture">
-    <img src = "/img/posts/supply_chain_fig.svg" alt="Development workflow in a typical software supply chain."
+    <img src = "/img/posts/2021/supply_chain_fig.svg" alt="Development workflow in a typical software supply chain."
     longdesc="#c13e1390"/>
     <figcaption class="stroke">
     Figure 1. Development workflow in a typical software supply chain.
@@ -72,7 +72,7 @@ As software has already [eaten the world](https://www.wsj.com/articles/SB1000142
 Therefore, the primary objective of the software supply chain is to ensure the stability of such existing systems through effective maintenance.
 
 <figure class="jb_picture">
-    <img src = "/img/posts/cicd.svg" alt="The CI/CD is and infinite process." width="350px"
+    <img src = "/img/posts/2021/cicd.svg" alt="The CI/CD is and infinite process." width="350px"
     longdesc="#c13e1390"/>
     <figcaption class="stroke">
     Figure 2. The CI/CD is and infinite process.

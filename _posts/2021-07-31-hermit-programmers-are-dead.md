@@ -6,8 +6,8 @@ tags: soft-skills
 description: With the advent of cloud computing and AI, there is no room for hermit programmers. You better diversify your skills or perish in the process, so don't call yourself just a programmer anymore.
 published: true
 keywords: programmers, dead, artificial intelligence, machine learning
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/ladybug_cover.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/ladybug_cover.jpg
+image: ../img/posts/2021/ladybug_cover.jpg
+share-img: ../img/posts/2021/ladybug_cover.jpg
 author: cesarsotovalero
 show-avatar: false
 date: 2021/7/31
@@ -24,7 +24,7 @@ It's time for programmers to mutate into sociable software engineers, recap and 
 Otherwise, I believe misfit programmers will perish... for sure.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/ladybug.jpg alt: "A solitary ladybug posing at Kampementsbacken, Stockholm" %}
+  {% responsive_image path: img/posts/2021/ladybug.jpg alt: "A solitary ladybug posing at Kampementsbacken, Stockholm" %}
   <figcaption class="stroke">
     &#169; A solitary ladybug hacking a dandelion at Kampementsbacken, Stockholm
     </figcaption>

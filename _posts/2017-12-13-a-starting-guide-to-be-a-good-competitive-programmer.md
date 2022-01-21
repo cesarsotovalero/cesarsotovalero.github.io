@@ -6,8 +6,8 @@ published: true
 tags: programming
 description: Insights and tricks that I learned when I was a competitive programmer
 keywords: acm icpc, competition, problems, programming
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/competitive-programming-brain.png
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/competitive-programming-brain.png
+image: ../img/posts/2017/competitive_programming_brain.png
+share-img: ../img/posts/2017/competitive_programming_brain.png
 show-avatar: false
 author: cesarsotovalero
 date: 2017/12/13
@@ -21,7 +21,7 @@ I discovered the world of competitive programming challenges during my first yea
 
 <p align="center">
   <a href="">
-    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/competitive-programming.png" height="250px"/>
+    <img src="../img/posts/2017/competitive-programming.png" height="250px"/>
   </a>
 </p>
 
@@ -91,7 +91,7 @@ You need hard work and practice (a lot of practice) to become a competent contes
 Again, life is more than a competition. With time you will note that competitive programming gave you beneficial programming skills, and you will feel good for having discovered it. However, software development for the industry is not a contest. Sometimes human capabilities are more important than technical skills. The ACM-ICPC contest are just an excellent way to learn to program.
 
 <figure class="jb_picture">
-    <img src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/ACM-ICPC.jpg" 
+    <img src="../img/posts/2017/ACM-ICPC.jpg" 
     alt="At UCLV, 2018"
     longdesc="#c13e1390" />
     <figcaption class="stroke">

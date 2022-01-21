@@ -6,8 +6,8 @@ tags: tutorial
 keywords: package manager, Java, ecosystem, software
 description: This tutorial is a step-by-step guide to deploy a software artifact to the Maven Central repository. 
 published: true
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/maven_journey.png
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/maven_journey.png
+image: ../img/posts/2020/maven_journey_cover.png
+share-img: ../img/posts/2020/maven_journey_cover.png
 show-avatar: false
 author: cesarsotovalero
 date: 2020/1/06
@@ -36,7 +36,7 @@ First, you need to create a JIRA account and submit a ticket there requesting fo
 A staging repository is already configured for the requested GroupId, you need to find someone with a deployer role that comment on the ticket to verify your request. 
 Below is an example of a ticket that I created requesting a repository for the namespace `se.kth.castor`
 
-![](../img/posts/sonatype_screeshot.png)
+![](../img/posts/2020/sonatype_screeshot.png)
 
 The ticked review is a manual process, it normally takes less than 2 business days.
 

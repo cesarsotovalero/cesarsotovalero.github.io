@@ -6,8 +6,8 @@ tags: latex tutorial
 description: LaTeX macros allow increasing productivity by avoiding typing repetitive LaTeX commands. In this tutorial, I show you how to use them.
 published: true
 keywords: latex, macros, productivity, tutorials
-image: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/snail_cover.jpg
-share-img: https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/posts/snail_cover.jpg
+image: ../img/posts/2021/snail_cover.jpg
+share-img: ../img/posts/2021/snail_cover.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2021/5/28
@@ -21,7 +21,7 @@ These are user-defined commands that allows avoiding typing repetitive LaTeX com
 Let me show you how it works!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/snail.jpg alt: "A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)" %}
+  {% responsive_image path: img/posts/2021/snail.jpg alt: "A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)" %}
   <figcaption class="stroke">
     &#169; A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)
     </figcaption>
@@ -94,7 +94,7 @@ I often find very useful defining the `\cesar` and `\todo` commands in all my do
 {% endraw %}
 {% endhighlight %}
 
-For example, the `\cesar{An author note}` produces <img src="../img/posts/authornote.png" height="18" border="0" alt="Comand">, whereas `\todo{A todo note}` produces <img src="../img/posts/todonote.png" height="18" border="0" alt="Comand">.
+For example, the `\cesar{An author note}` produces <img src="../img/posts/2021/authornote.png" height="18" border="0" alt="Comand">, whereas `\todo{A todo note}` produces <img src="../img/posts/2021/todonote.png" height="18" border="0" alt="Comand">.
 
 # Formatting Numbers
 
@@ -213,9 +213,9 @@ A nice way to compare percentages in a graphical manner (especially in tables), 
 {% endhighlight %}
 
 Note that you can use this command in three different flavors:
-- `\ChartSmall[x]{80}{155}` produces <img src="../img/posts/smallshart1.png" height="18" border="0" alt="Comand">
-- `\ChartSmall[q]{80}{155}` produces <img src="../img/posts/smallshart2.png" height="20" border="0" alt="Comand">
-- `\ChartSmall[p]{80}{155}` produces <img src="../img/posts/smallshart3.png" height="20" border="0" alt="Comand">
+- `\ChartSmall[x]{80}{155}` produces <img src="../img/posts/2021/smallshart1.png" height="18" border="0" alt="Comand">
+- `\ChartSmall[q]{80}{155}` produces <img src="../img/posts/2021/smallshart2.png" height="20" border="0" alt="Comand">
+- `\ChartSmall[p]{80}{155}` produces <img src="../img/posts/2021/smallshart3.png" height="20" border="0" alt="Comand">
 
 # Conclusion
 
