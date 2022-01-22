@@ -55,7 +55,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
-  font-weight: 700;
   font-weight: bold;
   /*text-transform: capitalize;*/
 }
@@ -1697,14 +1696,14 @@ input.gsc-input,
 }
 
 .fa-twitter:hover {
-  color: white;
+  color: #1583d7;
   transform: translateY(-7px);
   transition: transform 0.5s;
 }
 
 /* Override property for share-icons */
 #share-twitter:hover {
-  color: white;
+  color: #1583d7;
   transform: none;
   transition: none;
 }

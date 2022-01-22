@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>How Do I Really Make Progress in My Research Projects</title>
+        <description>
+          Introducing my methodology consisting of weekly delivery of verifiable artifacts - 
+          Research is an intense and highly demanding activity. This, combined with the fact that a research project typically lasts between 3 and 12 months. It is difficult to keep a track of progress. &amp;#169; Transforming data string is like repainting a wall with abstractions. Photo taken at Östermalmstorg metro station....
+        </description>
+        <pubDate>Mon, 17 Jan 2022 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/how-to-really-make-progress-in-a-research-project.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-really-make-progress-in-a-research-project.html</guid>
+      </item>
+    
+      <item>
         <title>Encoding, Encryption, Hashing, and Obfuscation in Java</title>
         <description>
           From concepts to code - 
@@ -213,17 +224,6 @@
         <pubDate>Mon, 08 Jun 2020 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/diversity-driven-software-debloat.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/diversity-driven-software-debloat.html</guid>
-      </item>
-    
-      <item>
-        <title>Unix Cmd Hacks</title>
-        <description>
-          Boosting Automation From the Shell - 
-          I want to share my personal notes of the edX course Unix Tools: Data, Software and Production Engineering, by Prof. Diomidis Spinellis. I attended this course from March to June, 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and...
-        </description>
-        <pubDate>Sat, 23 May 2020 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html</guid>
       </item>
     
   </channel>
