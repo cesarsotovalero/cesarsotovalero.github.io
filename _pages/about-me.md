@@ -174,3 +174,9 @@ form.wj-contact input[type="submit"]:hover {
       }
    });
 </script>
+
+
+<p class="post-meta">
+   <i class="fas fa-user-edit"></i>
+   This website was last modified on {{ page.last_modified_at | date: "%B %-d, %Y" }}
+</p>

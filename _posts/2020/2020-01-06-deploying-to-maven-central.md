@@ -36,7 +36,7 @@ First, you need to create a JIRA account and submit a ticket there requesting fo
 A staging repository is already configured for the requested GroupId, you need to find someone with a deployer role that comment on the ticket to verify your request. 
 Below is an example of a ticket that I created requesting a repository for the namespace `se.kth.castor`
 
-![](../img/posts/2020/sonatype_screeshot.png)
+![](../../img/posts/2020/sonatype_screeshot.png)
 
 The ticked review is a manual process, it normally takes less than 2 business days.
 

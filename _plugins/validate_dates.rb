@@ -22,7 +22,7 @@ module Jekyll
     safe true
     def generate(site)
       site.posts.docs.each do |post|
-        prefix = post.date.strftime('_posts/%Y-%m-%d-').downcase
+        prefix = post.date.strftime('_posts/%Y/%Y-%m-%d-').downcase
         path = post.relative_path
         next if path.index('_drafts/') == 0
         if path.index(prefix) != 0
