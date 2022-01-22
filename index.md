@@ -24,7 +24,7 @@ use-site-title: true
 </div>
 
 <div class="posts-list">
-  {% for post in site.posts limit:6 %}
+  {% for post in site.posts limit:10 %}
   <article class="post-preview-home">
   <article class="text-left" >
     <span class="text-left">  

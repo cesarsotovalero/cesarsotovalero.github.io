@@ -24,8 +24,8 @@ This post will show you step-by-step how to use asciinema to generate beautiful 
 
 First, let's see the help page of asciinema using the wonderful [tldr](https://github.com/tldr-pages/tldr) project:
 
-<link rel="stylesheet" type="text/css" href="../css/asciinema-player.css" />
-<script src="../js/asciinema-player.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css" />
+<script src="../../js/asciinema-player.js"></script>
 <asciinema-player src="../asciinema/tldr_asciinema.rec" poster="npt:00:12" start-at="3"></asciinema-player>
 
 # Recording a Terminal Session

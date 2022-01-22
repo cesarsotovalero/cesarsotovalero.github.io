@@ -93,21 +93,21 @@ This humor-filled conference contained several opportunities for those who want 
 All proceedings are available for free online as PDF, and paperback versions can be brought [here](https://www.lulu.com/search?page=1&pageSize=4&q=SIGBOVIK&adult_audience_rating=00).
 But just in case you were too lazy to make your own searching, here is a compendium of all of them (2007-2021):
 
-[2021](../files/SIGBOVIG/2021_SIGBOVIG_proceedings.pdf)
-[2020](../files/SIGBOVIG/2020_SIGBOVIG_proceedings.pdf)
-[2019](../files/SIGBOVIG/2019_SIGBOVIG_proceedings.pdf)
-[2018](../files/SIGBOVIG/2018_SIGBOVIG_proceedings.pdf)
-[2017](../files/SIGBOVIG/2017_SIGBOVIG_proceedings.pdf)
-[2016](../files/SIGBOVIG/2016_SIGBOVIG_proceedings.pdf)
-[2015](../files/SIGBOVIG/2015_SIGBOVIG_proceedings.pdf)
-[2014](../files/SIGBOVIG/2014_SIGBOVIG_proceedings.pdf)
-[2013](../files/SIGBOVIG/2013_SIGBOVIG_proceedings.pdf)
-[2012](../files/SIGBOVIG/2012_SIGBOVIG_proceedings.pdf)
-[2011](../files/SIGBOVIG/2011_SIGBOVIG_proceedings.pdf)
-[2010](../files/SIGBOVIG/2010_SIGBOVIG_proceedings.pdf)
-[2009](../files/SIGBOVIG/2009_SIGBOVIG_proceedings.pdf)
-[2008](../files/SIGBOVIG/2008_SIGBOVIG_proceedings.pdf)
-[2007](../files/SIGBOVIG/2007_SIGBOVIG_proceedings.pdf)
+[2021](../../files/SIGBOVIG/2021_SIGBOVIG_proceedings.pdf)
+[2020](../../files/SIGBOVIG/2020_SIGBOVIG_proceedings.pdf)
+[2019](../../files/SIGBOVIG/2019_SIGBOVIG_proceedings.pdf)
+[2018](../../files/SIGBOVIG/2018_SIGBOVIG_proceedings.pdf)
+[2017](../../files/SIGBOVIG/2017_SIGBOVIG_proceedings.pdf)
+[2016](../../files/SIGBOVIG/2016_SIGBOVIG_proceedings.pdf)
+[2015](../../files/SIGBOVIG/2015_SIGBOVIG_proceedings.pdf)
+[2014](../../files/SIGBOVIG/2014_SIGBOVIG_proceedings.pdf)
+[2013](../../files/SIGBOVIG/2013_SIGBOVIG_proceedings.pdf)
+[2012](../../files/SIGBOVIG/2012_SIGBOVIG_proceedings.pdf)
+[2011](../../files/SIGBOVIG/2011_SIGBOVIG_proceedings.pdf)
+[2010](../../files/SIGBOVIG/2010_SIGBOVIG_proceedings.pdf)
+[2009](../../files/SIGBOVIG/2009_SIGBOVIG_proceedings.pdf)
+[2008](../../files/SIGBOVIG/2008_SIGBOVIG_proceedings.pdf)
+[2007](../../files/SIGBOVIG/2007_SIGBOVIG_proceedings.pdf)
 
 # Conclusion
 
