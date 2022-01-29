@@ -32,6 +32,10 @@ I've a [B.Sc.](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [M.S
 
 Here is my short [resume](../files/CV/cv.pdf).
 
+
+[//]: # (stackoverflow)
+{% badge https://stackoverflow.com/users/flair/10480869.png with=200 140 https://stackoverflow.com/users/10480869/cesarsotovalero %}
+
 See also:
 
 - [Certifications](certifications.html)
@@ -178,5 +182,5 @@ form.wj-contact input[type="submit"]:hover {
 
 <p class="post-meta">
    <i class="fas fa-user-edit"></i>
-   This website was last modified on {{ page.last_modified_at | date: "%B %-d, %Y" }}
+   Website last modified on {{ page.last_modified_at | date: "%B %-d, %Y" }}
 </p>

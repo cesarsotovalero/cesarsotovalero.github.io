@@ -855,7 +855,7 @@ p.post-meta {
 @media only screen and (max-width: 425px) {
   p.post-meta {
     font-size: 14px;
-    margin: 20px 0  20px 0;
+    margin: 20px 0 20px 0;
   }
 }
 
@@ -1308,12 +1308,12 @@ p.post-meta {
 }
 
 .pager.blog-pager {
-  margin-top: 0;
+  margin-top: 30px;
 }
 
 @media only screen and (min-width: 768px) {
   .pager.blog-pager {
-    margin-top: 10px;
+    margin-top: 40px;
   }
 }
 
@@ -2294,6 +2294,39 @@ article[role=main] {
     bottom: 0;
   }
 }
+
+/* TOC */
+/* https://www.gemini.com/cryptopedia/ethereum-smart-contracts-tokens-use-cases */
+
+/*Adding 'Contents' headline to the TOC*/
+#markdown-toc {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+#markdown-toc::before {
+  content: "Contents";
+  font-weight: bold;
+}
+
+/*using numbers instead of bullets for listing*/
+#markdown-toc ul {
+  list-style: decimal;
+}
+
+
+/*#markdown-toc {*/
+/*  width: calc(50% - 385px);*/
+/*  left: -500px;*/
+/*  display: none;*/
+/*  position: sticky;*/
+/*  top: 100px;*/
+/*  height: 0px;*/
+/*  opacity: 0;*/
+/*  visibility: hidden;*/
+/*  transition: all 0.1s ease 0s;*/
+/*}*/
+
 
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
