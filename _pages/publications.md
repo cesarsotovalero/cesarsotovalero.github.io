@@ -28,7 +28,8 @@ style="width:1em;margin-right:.3em;" alt="ORCID iD icon">0000-0003-0541-6411</a>
 
 Legend: <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> Conference; <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Journal; <img alt="" title="Books and Theses" src="https://dblp.uni-trier.de/img/n.png" style="background: #f8c91f; width: 18px; height: 18px"> Thesis.
 
-# 2021
+
+# 2022
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **API beauty is in the eye of the clients: 2.2 million Maven dependencies reveal the spectrum of client-API usages**. 
@@ -36,6 +37,8 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   _Journal of Systems and Software (JSS)_.
   <a href="https://medium.com/@almyre/a-journey-at-the-heart-of-2-4-million-maven-artifacts-94f73038bba4"><i class="fab fa-medium"></i> Medium</a>
   <a href="https://doi.org/10.1016/j.jss.2021.111134"><i class="icon i-doi"></i> 10.1016/j.jss.2021.111134</a>
+
+# 2021
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px">
   <img alt="award" title="ACM SIGSOFT Distinguished Paper Award" src="../../img/pages/publications/award.png" height="30px"> 
