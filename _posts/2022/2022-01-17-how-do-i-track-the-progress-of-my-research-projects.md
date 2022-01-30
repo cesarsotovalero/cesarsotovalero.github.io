@@ -3,7 +3,7 @@ layout: post
 title: How to Track the Progress of a Research Project?
 subtitle: My methodology based on the weekly delivery of verifiable artifacts
 tags: research
-description: TODO
+description: Academic research is a demanding activity in constant change and evolution. Consequently, tracking the progress of a research project is challenging. This post describes my methodology to address this particular problem. 
 keywords: research artifact,verifiable artifacts,scientific career,research methodology,PhD student
 image: ../img/posts/2022/globe_cover.jpg
 share-img: ../img/posts/2022/globe_cover.jpg
@@ -13,16 +13,16 @@ author: cesarsotovalero
 published: true
 ---
 
-Research is a very intense and mentally demanding activity subject to constant change and evolution.
+Academic research is a very intense and mentally demanding activity subject to constant change and evolution.
 At the beginning of a research project, there is often [no clear path](https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html) to follow.
-Consequently, researchers have to figure out a good plan to take in order to achieve a given research goal.
-A research project typically lasts between 3 and 12 months, so there is no infinite ~~money~~ time, and progress should be made and reported consistently.
+Consequently, researchers have to figure out a good plan to take in order to achieve their objectives.
+But a research project typically lasts between 3 and 12 months, so there is no infinite ~~money~~ time, and progress should be made and reported consistently.
 This situation usually creates tension and a sense of urgency that most researchers have to live with.
-From the supervisor's perspective, the status of the project should be monitored to make sure that the research project is not heading into a dead end.
-For the student, it is crucial to demonstrate the progress being made and produce enough results to fulfill the supervisor's expectations.
-To this end, I think about research as a coordinated effort that works better when a sound progress tracking system is enforced and followed by all parties involved.
-But how to keep track of the progress done when doing research?
-This post explains my methodology to solve this particular problem. 
+From the supervisor's perspective, the status of the project should be monitored to make sure that it is not heading into a dead end.
+For the student, it is crucial to demonstrate the progress being made and deliver enough results to fulfill the supervisor's expectations.
+To this end, research is a coordinated effort that works better when a sound progress tracking system is established and followed by all the involved parties.
+What mechanism is good to keep track of the progress being made?
+This post explains my methodology to address this particular problem. 
 It is based on the weekly delivery of verifiable research artifacts.
 Let me show you what I mean. 
 
@@ -37,33 +37,23 @@ Let me show you what I mean.
 
 [//]: # (Meta explanation of theh problem)
 Supervision is usually a one-to-one activity carried out by the student and her supervisor.
-In the beginning, there are kick off meetings and some raw ideas of what would be the ideal outcome to be accomplished.
+In the beginning, there are kick-off meetings and some raw ideas of what would be the ideal outcome to be accomplished.
 There is a _what_ but not a _how_.
 Therefore, intense research exploration and further communication are needed to bring light to the nascent work.
 This exploration leads to a seemingly endless cycle of experimentation followed by scheduled discussions. 
 
-One drawback of this one-to-one back and ford is that it sometimes creates a feeling that it is not necessary to document everything.
-After all, tasks do not need to be partitioned and distributed among several people.
-Also, it results very difficult to determine what results will finally end up being valuable for the project, and which other results will be thrown away the next day.
-A lot of work is intended to be ephemeral, and that's just how good research works.
-So, it is not clear what results constitute real progress and what do not.
+One drawback of this one-to-one back and ford is that it sometimes creates a feeling that it is not necessary to document everything. After all, tasks do not need to be partitioned and distributed among several people. Also, it results very difficult to determine what results will finally end up being valuable for the project, and which other results will be thrown away the next day. A lot of work is intended to be ephemeral, and that’s just how good research works. So, it is not clear what results constitute real progress and what do not.
 
 > The creative and complex nature of the research labor leads to non-linear progress.
 
 [//]: # (Practical explanation of the problem)
-Supervisors are typically very busy people.
-They don't have the time to analyze all the details of an investigation. 
-Students, on the other hand, are more excited to move fast and have more pressure to show up the progress being made.
-However, research is an iterative process. 
-The goal and scope of an investigation may change over time. 
-This can make some inexperience students feel like they are doing something wrong, or simple loss their motivation and initial enthusiasm.
-For example, it is very common to suffer from [writer's block](https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html) or imposter syndrom. 
+Supervisors are typically very busy people. They don’t have the time to analyze all the details of an investigation. Students, on the other hand, are more excited about moving fast because they have more pressure to show up the progress being made. However, research is an iterative process. The goal and scope of an investigation may change over time. This can cause some inexperienced students to feel like they are making something wrong or simply lose their motivation and initial enthusiasm. For example, it is very common to suffer from [writer's block](https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html) or imposter syndrome.
 
 [//]: # (Some good practices that exist to remediate)
 There are some good practices to mitigate the stress.
 It is important to always keep a record of what was discussed in every single meeting (e.g., using a Google Doc or writing comments directly in the working paper).
-I use to add a [MoM](https://en.wikipedia.org/wiki/Minutes) file named `minutes.md` along the LaTeX sources of paper on [Overleaf](https://www.overleaf.com/) to keep track of every meeting.
-These guidelines are good for orienting the work, but doesn't help with the student's motivation. 
+I used to add a [MoM](https://en.wikipedia.org/wiki/Minutes) file named `minutes.md` along the LaTeX sources of paper on [Overleaf](https://www.overleaf.com/) to keep track of every meeting.
+These guidelines are good for orienting the work, but don't help with the student's motivation. 
 In this regard, there is nothing as gratifying and motivating as the sense of seeing something concreted being delivered. 
 
 # Research Artifacts
@@ -83,7 +73,7 @@ Here are some typical example of research artifacts:
 - A summary of related work is elaborated, i.e., one paragraph per revised paper
 - A new section of a paper is written
 - A new dataset is collected
-- A new feature or bugfix is done on  a research tool
+- A new feature or bugfix is done on a research tool
 - A new experiment showing new results is carried out
 
 [//]: # (Explain the advantages of this solution)
@@ -147,7 +137,7 @@ Every individual point must start with a verb in infinitive form (e.g., "to coll
 The content of this list is normally discussed in a meeting and both parties, student and supervisor, should agree on the next steps to be taken. 
 There should be not more than three tasks in the list. 
 Each point must result in a single deliverable artifact.
-Ideally, each task in the the `TODO` list will appear as  `DONE` in the next Friday report, but not necessarily.
+Ideally, each task in the `TODO` list will appear as  `DONE` in the next Friday report, but not necessarily.
 
 [//]: # (One paragraph bout the QUESTIONS)
 Finally, the third section is a list of `QUESTIONS` elaborated by the student about the remaining work to be done.
@@ -161,6 +151,6 @@ Good questions are those whose response consist of a simple “yes” or “no�
 This approach has proved to work very well for me so far.
 From a student's position, I have been able to make [substantial progress](https://www.cesarsotovalero.net/publications) in my research career. As a supervisor, the Friday reports help me to sync quickly on the research topic and guide the student more effectively, which has resulted in some successful [research projects](https://www.cesarsotovalero.net/service). 
 
-# Reference
+# References
 
 The methodology described in this post was inspired by the talk [SIMBA: Simplified Management by Artifacts](https://youtu.be/2IwBc9UI4Sg), presented by Yegor Bugayenko; and also by [How to do a master's thesis in my group](https://www.monperrus.net/martin/kth-master-thesis), by Martin Monperrus. 
