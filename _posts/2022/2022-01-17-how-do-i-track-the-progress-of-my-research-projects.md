@@ -96,7 +96,7 @@ Here is an example:
 From: Student
 To: Supervisor
 CC: Co-authors and Co-supervisors
-Subject: [WEEK11] Progress Report
+Subject: [`WEEK11`] Progress Report
 
 Hi, 
 
