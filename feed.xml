@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>How To Write a Good Paper Rebuttal?</title>
+        <description>
+          A practical guide - 
+          The rejection of a research paper is always a tough spot in the life of researchers. Today, many top conferences allow the authors of a rejected paper to submit a so-called “paper rebuttal.” This is a last chance for the authors to defend their work in case the reviewers made...
+        </description>
+        <pubDate>Sat, 29 Jan 2022 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/how-to-write-a-good-paper-rebuttal.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-write-a-good-paper-rebuttal.html</guid>
+      </item>
+    
+      <item>
         <title>How to Track the Progress of a Research Project?</title>
         <description>
           My methodology based on the weekly delivery of verifiable artifacts - 
@@ -213,17 +224,6 @@
         <pubDate>Sun, 28 Jun 2020 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html</guid>
-      </item>
-    
-      <item>
-        <title>Diversity-driven Software Debloat</title>
-        <description>
-          Leveraging the Wisdom of Multiple Coverage Tools - 
-          For months, I have worked on dynamic debloat of Java artifacts with JDBL. To do so, I need to compile and execute software applications to determine what parts of the compiled application are used when executing it using some workloads. Then, with the collected usage information, I debloat the unused...
-        </description>
-        <pubDate>Mon, 08 Jun 2020 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/diversity-driven-software-debloat.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/diversity-driven-software-debloat.html</guid>
       </item>
     
   </channel>
