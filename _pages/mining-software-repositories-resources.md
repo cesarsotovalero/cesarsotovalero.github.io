@@ -4,7 +4,8 @@ layout: page
 title: Mining software repositories
 subtitle: List of resources
 published: true
-image: ../../img/posts/gold_mining.jpg
+keywords: mining software data,GitHub projects,software engineering
+image: ../img/pages/software-debloating-papers/debloating.png
 ---
 
 <!--
