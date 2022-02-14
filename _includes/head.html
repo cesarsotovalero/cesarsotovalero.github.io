@@ -9,24 +9,10 @@
   });
 </script>-->
 
-<!-- (gtag.js) of Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-107061705-1');
-</script>
-
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
   <title>{{ page.title }}</title>
-
-
-  <!-- Generate anchors to link to every heading in a Jekyll blog post -->
-  <script src="../js/anchor.min.js"></script>
 
   {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}">
@@ -39,6 +25,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+
+  <!-- (gtag.js) of Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-107061705-1');
+  </script>
+
+
+  <!-- Generate anchors to link to every heading in a Jekyll blog post -->
+  <script src="../js/anchor.min.js"></script>
 
   {% if site.tags != "" %}
 

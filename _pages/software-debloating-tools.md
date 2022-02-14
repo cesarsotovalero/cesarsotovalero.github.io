@@ -3,7 +3,8 @@ permalink: software-debloating-tools.html
 layout: page
 title: Software debloating tools
 subtitle: Living tooling list
-image: ../../blog/img/debloating.png 
+keywords: software debloat,GitHub projects,software engineering
+image: ../img/pages/software-debloating-papers/debloating.png
 ---
 
 <!-- Carbon ads -->
