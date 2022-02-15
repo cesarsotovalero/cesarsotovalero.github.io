@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is Your Bus Factor?
+title: Bus Factor of One is Hellish
 subtitle: Why should you care about it?
 tags: management
 description: TODO
@@ -27,6 +27,14 @@ TODO
   </figcaption>
 </figure>
 
+
+# Causes
+Common reasons:
+- burn out (probably #1)
+- underpaid and undervalued so easily 'poached' (I don't like that term but don't have a better one)
+- chronic illness
+- accidents
+- death.
 
 > "How many or few would have to be hit by a truck (or quit) before the project is incapacitated?" -- James Coplien (in Pair Programming Illuminated)
 
@@ -62,7 +70,19 @@ Therefore, a bus factor algorithm that, in addition to Git uses project members'
 
 # Conclusion
 
+For example, use  to write
 
+
+# Computing the bus factor 
+
+The Degree of Authorship is computed by:
+
+$$DOA(e,f) = 3.293 + 1.098FA + 0.164DL − 0.321 log(1 + AC)$$
+
+
+The formula of Avelino is;
+
+$$\text{DOA}(e, f ) > 0.75 * max_{e} DOA(e, f)$$
 
 # Available tools
 
@@ -80,4 +100,14 @@ Therefore, a bus factor algorithm that, in addition to Git uses project members'
 - https://medium.com/@aserg.ufmg/top-30-github-projects-with-highest-truck-factor-ab0862e9bb7a
 
 
-
+[//]: # (Enable Latex support, see https://zjuwhw.github.io/2017/06/04/MathJax.html)
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
