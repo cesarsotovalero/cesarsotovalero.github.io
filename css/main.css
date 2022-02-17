@@ -997,6 +997,7 @@ p.post-meta {
 }
 
 #tiles-big .tile .apptitle {
+  font-family: "Equity Caps A";
   font-weight: bold;
   font-size: 24px;
   padding: 0.625rem 0.9375rem;
@@ -1017,6 +1018,7 @@ p.post-meta {
 }
 
 #tiles-big .tile .appdesc {
+  font-family: "Concourse T3";
   padding: 0 0.9375rem 0.9375rem;
   line-height: 1.5em;
 }
