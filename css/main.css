@@ -23,10 +23,18 @@
 }
 
 @font-face {
+  font-family: 'Century Supra T3';
+  src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraT3-Bold.woff2') format('woff2'),
+  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraT3-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Century Supra C3';
-  src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraC3.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraC3.woff') format('woff');
-  font-weight: normal;
+  src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraC3-Bold.woff2') format('woff2'),
+  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraC3-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -881,7 +889,7 @@ logo-main a:hover {
 .post-preview .post-meta,
 .post-heading .post-meta {
   color: var(--post-meta-index-color);
-  font-size: 18px;
+  font-size: 16px;
   /*font-style: italic;*/
   margin: 10px 12px 10px 0;
   font-family: "Concourse T3", "Cambria", "Open Sans";;
