@@ -15,25 +15,33 @@
 }
 
 @font-face {
-  font-family: 'Century Supra T3';
-  src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraT3.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraT3.woff') format('woff');
+  font-family: 'Century Supra T4';
+  src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraT4.woff2') format('woff2'),
+  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraT4.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Century Supra T3';
-  src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraT3-Bold.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraT3-Bold.woff') format('woff');
+  font-family: 'Century Supra T4';
+  src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraT4-Bold.woff2') format('woff2'),
+  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraT4-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Century Supra C3';
-  src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraC3-Bold.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraC3-Bold.woff') format('woff');
+  font-family: 'Century Supra C4';
+  src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraC4.woff2') format('woff2'),
+  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraC4.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Century Supra C4';
+  src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraC4-Bold.woff2') format('woff2'),
+  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraC4-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -56,6 +64,14 @@
 }
 
 
+@font-face {
+  font-family: 'Concourse T3';
+  src: url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T3 Regular.woff2') format('woff2'),
+  url('https://www.cesarsotovalero.net/css/fonts/Concourse/Concourse T3 Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 /* --- General --- */
@@ -65,7 +81,7 @@ html {
 }
 
 body {
-  font-family: "Century Supra T3", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Century Supra T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   font-weight: normal;
   font-size: 21px;
   text-rendering: optimizeLegibility;
@@ -97,7 +113,7 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Century Supra C3", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Century Supra C4", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
   font-weight: bold;
@@ -318,7 +334,7 @@ a[href$=".pptx"] {
 .navbar-custom {
   background-color: var(--navbar-color);
   border-bottom: 1px solid #DDDDDD;
-  font-family: "Century Supra C3", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Century Supra C4", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
   transition: padding .5s ease-in-out;
@@ -1192,6 +1208,7 @@ p.post-meta {
   margin-top: 0;
   font-size: 46px;
   font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-weight: bold;
 }
 
 .intro-header .post-heading h1 {
@@ -1328,7 +1345,7 @@ p.post-meta {
 /* --- Pager --- */
 
 .pager li a {
-  font-family: "Century Supra C3", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Century Supra C4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 800;
