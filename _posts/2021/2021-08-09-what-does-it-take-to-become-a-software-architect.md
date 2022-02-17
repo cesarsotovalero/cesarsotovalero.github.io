@@ -134,8 +134,8 @@ He is also sincere, accepts his mistakes, and takes responsibility.
 That being said, architects are persons, too. 
 As such, they may take wrong decisions sometimes.
 To mitigate this from happening, the contract between the project and the architect must clearly explain how architect's results are validated.
-In case of misunderstandings, PMs should use documents to correct and point architects in the right direction, e.g., adjusting the `requirements` and `architecture` documents written at the beginning of the project.
-The PM expects [a weekly report](https://www.yegor256.com/2015/05/11/software-architect-responsibilities.html) of the project that includes: `scope`, `status`, `issues`, `risks` happening in the project.
+In case of misunderstandings, PMs should use documents to correct and point architects in the right direction, e.g., adjusting the **requirements** and **architecture** documents written at the beginning of the project.
+The PM expects [a weekly report](https://www.yegor256.com/2015/05/11/software-architect-responsibilities.html) of the project that includes: **scope**, **status**, **issues**, **risks** happening in the project.
 This keeps the project going and prevents the architect to commit an irreparable mistake.
 
 # Conclusion 

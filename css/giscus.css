@@ -220,7 +220,7 @@ main {
 
 .font-semibold {
   font-weight: 700;
-  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   font-size: 20px;
   color: var(--main-text-color);
 }
@@ -231,26 +231,26 @@ main {
 }
 
 .text-sm {
-  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   font-size: 18px;
   line-height: 1.5rem;
   color: var(--main-text-color);
 }
 
 .text-xs {
-  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   font-size: 18px;
   line-height: 1.5rem;
   color: var(--main-text-color);
 }
 
 .color-text-primary {
-  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   color: var(--main-text-color);
 }
 
 .gsc-reactions {
-  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   color: var(--main-text-color);
 }
 

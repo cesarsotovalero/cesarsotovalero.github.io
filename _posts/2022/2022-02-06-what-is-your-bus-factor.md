@@ -82,7 +82,7 @@ $$DOA(e,f) = 3.293 + 1.098FA + 0.164DL − 0.321 log(1 + AC)$$
 
 The formula of Avelino is;
 
-$$\text{DOA}(e, f ) > 0.75 * max_{e} DOA(e, f)$$
+$$DOA(e, f ) > 0.75 * max_{e} DOA(e, f)$$
 
 # Available tools
 

@@ -44,7 +44,7 @@ This exploration leads to a seemingly endless cycle of experimentation followed 
 
 One drawback of this one-to-one back and ford is that it sometimes creates a feeling that it is not necessary to document everything. After all, tasks do not need to be partitioned and distributed among several people. Also, it results very difficult to determine what results will finally end up being valuable for the project, and which other results will be thrown away the next day. A lot of work is intended to be ephemeral, and that’s just how good research works. So, it is not clear what results constitute real progress and what do not.
 
-> The creative and complex nature of the research labor leads to non-linear progress.
+> “The creative and complex nature of the research labor leads to non-linear progress.”
 
 [//]: # (Practical explanation of the problem)
 Supervisors are typically very busy people. They don’t have the time to analyze all the details of an investigation. Students, on the other hand, are more excited about moving fast because they have more pressure to show up the progress being made. However, research is an iterative process. The goal and scope of an investigation may change over time. This can cause some inexperienced students to feel like they are making something wrong or simply lose their motivation and initial enthusiasm. For example, it is very common to suffer from [writer's block](https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html) or imposter syndrome.

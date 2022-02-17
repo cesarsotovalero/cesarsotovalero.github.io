@@ -13,9 +13,9 @@ author: cesarsotovalero
 date: 2017/11/14
 ---
 
-> "Git proved I could be more than a one-hit wonder" *― Linux Torvalds*
-
 Git is the standard version-control system for software development. Git was created by Linux Torvals in 2005 to support the development of the Linux kernel. Since then, Git has become an essential tool for both junior and senior developers. It allows to have a complete history and full version-tracking of the project, easing all the different phases of the development process.
+
+> "Git proved I could be more than a one-hit wonder" *― Linux Torvalds*
 
 # Contents
    
