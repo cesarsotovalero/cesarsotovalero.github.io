@@ -19,14 +19,14 @@ Maven Central is the de-facto repository for hosting software artifacts that com
     <em>“Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest and oldest archives of software libraries.”</em>
 </aside>
 
-## Contents
+# Contents
 
-* [1. Create a JIRA ticket in Sonatype](#1-create-a-jira-ticket-in-sonatype)
-* [2. Configuring the POM](#2-configuring-the-pom)
-* [3. Release to Maven Central](#3-release-to-maven-central)
-* [References](#references)
+1. [Create a JIRA ticket in Sonatype](#1-create-a-jira-ticket-in-sonatype)
+2. [Configuring the POM](#2-configuring-the-pom)
+3. [Release to Maven Central](#3-release-to-maven-central)
+4. [References](#references)
 
-## 1. Create a JIRA ticket in Sonatype
+# 1. Create a JIRA ticket in Sonatype
 
 First, you need to create a JIRA account and submit a ticket there requesting for a project namespace in Sonatype (aka, GroupId):
 
@@ -40,7 +40,7 @@ Below is an example of a ticket that I created requesting a repository for the n
 
 The ticked review is a manual process, it normally takes less than 2 business days.
 
-## 2. Configuring the POM
+# 2. Configuring the POM
 
 After the approval of the ticket, you need to add additional information to the POM of the Maven project or module to be deployed. Follow the steps below exactly as they are.
 
@@ -218,7 +218,7 @@ After the approval of the ticket, you need to add additional information to the 
 </build>
 {% endhighlight %}
 
-## 3. Release to Maven Central
+# 3. Release to Maven Central
 
 Finally, run a deployment to OSSRH and an automated release to the Central Repository with the following command:
 
@@ -231,7 +231,7 @@ After this, Central sync will be activated for your namespace. After you success
 
 If you have any issue, let me know in the comments below. Happy deploying  :smile:
 
-## References
+# References
 
 - [Apache Maven Official Instructions](https://maven.apache.org/repository/guide-central-repository-upload.html)
 - [OSSRH Guide](https://central.sonatype.org/pages/ossrh-guide.html)

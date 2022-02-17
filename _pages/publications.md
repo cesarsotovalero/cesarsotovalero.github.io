@@ -32,6 +32,12 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
 # 2022
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
+  **The Multi-Billion Dollar Software Supply Chain of Ethereum**. 
+  César Soto-Valero, Martin Monperrus, and Benoit Baudry. 
+  _arXiv_.
+  [:earth_americas: Link](https://arxiv.org/abs/2202.07029)
+
+- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **API beauty is in the eye of the clients: 2.2 million Maven dependencies reveal the spectrum of client-API usages**. 
   Nicolas Harrand, Amine Benelallam, César Soto-Valero, François Bettega, Olivier Barais, and Benoit Baudry. 
   _Journal of Systems and Software (JSS)_.

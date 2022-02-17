@@ -28,7 +28,7 @@ In this post, I'll explain the key differences and provide you with hands-on Jav
 
 # Encoding
 
-**Encoding is the process of modifying the representation of data, so it can be more efficiently transmitted or consumed by a different system than the one that created it.**
+_Encoding is the process of modifying the representation of data, so it can be more efficiently transmitted or consumed by a different system than the one that created it._
 The purpose of encoding is to facilitate the consumption and transmission of data across distinct platforms so that they can reach a consensus for mutual understanding.
 For example, [emojis](https://en.wikipedia.org/wiki/Emoji) are encoded as [Unicode](https://en.wikipedia.org/wiki/Unicode) characters so that they can be read and displayed on different devices no matter the operating system.
 Note that keeping the security and privacy of the information is not a goal of encoding algorithms.
@@ -76,7 +76,7 @@ The encoder adds one or two padding characters (`=`) at the end of the output as
 
 # Encrypting
 
-**Encrypting is the process of transforming data into a representation that cannot be understood without a particular key.**
+_Encrypting is the process of transforming data into a representation that cannot be understood without a particular key._
 The focus of encryption is safeguarding confidentiality and authenticity by ensuring that the data cannot be consumed by anyone other than the intended recipient.
 Encrypting algorithms rely on mathematical principles and cryptography to ensure security.
 Encryption algorithms are everywhere.
@@ -170,7 +170,7 @@ void testRSAEncryptionAndDecryption() throws Exception {
 
 # Hashing
 
-**Hashing is a technique used to validate the integrity of the data by detecting if it has been modified via changes to the hash output.** 
+_Hashing is a technique used to validate the integrity of the data by detecting if it has been modified via changes to the hash output._
 Thus, hashing serves the purpose of verifying data integrity, i.e. making it so that if something is changed you can know that it was changed.
 Different from encryption, a hash is a “one-way” cryptographic function, so hashed data cannot be decrypted back to the original text.
 
@@ -188,7 +188,6 @@ Hashing is combined with authentication to provide unambiguous proof that a text
 This is achieved by hashing the input and verifying it with the sender's private key.
 When the receiver receives the text, it checks the signature of the hash against the sender's public key, then hashes the text itself and matches it against the sender's hash.
 If they match, this confirms the authenticity of the user.
-
 
 ## Hashing a String in Java Using SHA3-256
 
@@ -227,7 +226,7 @@ void testHashingSHA3_256() throws NoSuchAlgorithmException {
 
 # Obfuscation
 
-**Obfuscation is the process of transforming human-readable data into a form of data with the same properties that is nearly impossible to comprehend.**
+_Obfuscation is the process of transforming human-readable data into a form of data with the same properties that is nearly impossible to comprehend._
 The most common purpose of obfuscation is to make text harder to understand, usually to make it more difficult to attack or to copy.
 Obfuscation is also used for data compression purposes.
 
@@ -300,7 +299,7 @@ Here's what you need to remember:
 
 # References
 
-- [https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation](https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation)
-- [https://www.linkedin.com/pulse/encoding-vs-encryption-hashing-obfuscation-liban-mohamud](https://www.linkedin.com/pulse/encoding-vs-encryption-hashing-obfuscation-liban-mohamud)
-- [https://auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation/#What-is-Obfuscation](https://auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation/#What-is-Obfuscation)
+- [Hashing vs. Encryption vs. Encoding vs. Obfuscation](https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation)
+- [Encoding vs. Encryption vs. Hashing vs. Obfuscation](https://www.linkedin.com/pulse/encoding-vs-encryption-hashing-obfuscation-liban-mohamud)
+- [What is Obfuscation?](https://auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation/#What-is-Obfuscation)
 

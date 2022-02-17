@@ -5,7 +5,7 @@ title: About me
 subtitle: In brief
 ---
 
-<div style="text-align: center; font-family:courier, courier new, serif; font-weight: lighter">
+<div style="text-align: center; font-family:jetbrains_monoregular, courier new, serif; font-weight: lighter">
  <span class="type"></span>
 </div>
 
