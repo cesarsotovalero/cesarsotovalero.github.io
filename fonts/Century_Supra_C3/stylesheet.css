@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Century Supra T3';
+    src: url('CenturySupraT3.eot');
+    src: local('Century Supra T3'), local('CenturySupraT3'),
+        url('CenturySupraT3.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraT3.woff2') format('woff2'),
+        url('CenturySupraT3.woff') format('woff'),
+        url('CenturySupraT3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Supra T4';
+    src: url('CenturySupraT4.eot');
+    src: local('Century Supra T4'), local('CenturySupraT4'),
+        url('CenturySupraT4.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraT4.woff2') format('woff2'),
+        url('CenturySupraT4.woff') format('woff'),
+        url('CenturySupraT4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Supra T3';
+    src: url('CenturySupraT3-BoldItalic.eot');
+    src: local('Century Supra T3 Bold Italic'), local('CenturySupraT3-BoldItalic'),
+        url('CenturySupraT3-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraT3-BoldItalic.woff2') format('woff2'),
+        url('CenturySupraT3-BoldItalic.woff') format('woff'),
+        url('CenturySupraT3-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Century Supra T4';
+    src: url('CenturySupraT4-Italic.eot');
+    src: local('Century Supra T4 Italic'), local('CenturySupraT4-Italic'),
+        url('CenturySupraT4-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraT4-Italic.woff2') format('woff2'),
+        url('CenturySupraT4-Italic.woff') format('woff'),
+        url('CenturySupraT4-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Century Supra C4';
+    src: url('CenturySupraC4-Bold.eot');
+    src: local('Century Supra C4 Bold'), local('CenturySupraC4-Bold'),
+        url('CenturySupraC4-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraC4-Bold.woff2') format('woff2'),
+        url('CenturySupraC4-Bold.woff') format('woff'),
+        url('CenturySupraC4-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Supra C3';
+    src: url('CenturySupraC3-Bold.eot');
+    src: local('Century Supra C3 Bold'), local('CenturySupraC3-Bold'),
+        url('CenturySupraC3-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraC3-Bold.woff2') format('woff2'),
+        url('CenturySupraC3-Bold.woff') format('woff'),
+        url('CenturySupraC3-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Supra T3';
+    src: url('CenturySupraT3-Bold.eot');
+    src: local('Century Supra T3 Bold'), local('CenturySupraT3-Bold'),
+        url('CenturySupraT3-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraT3-Bold.woff2') format('woff2'),
+        url('CenturySupraT3-Bold.woff') format('woff'),
+        url('CenturySupraT3-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Supra T4';
+    src: url('CenturySupraT4-Bold.eot');
+    src: local('Century Supra T4 Bold'), local('CenturySupraT4-Bold'),
+        url('CenturySupraT4-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraT4-Bold.woff2') format('woff2'),
+        url('CenturySupraT4-Bold.woff') format('woff'),
+        url('CenturySupraT4-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Supra C4';
+    src: url('CenturySupraC4.eot');
+    src: local('Century Supra C4'), local('CenturySupraC4'),
+        url('CenturySupraC4.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraC4.woff2') format('woff2'),
+        url('CenturySupraC4.woff') format('woff'),
+        url('CenturySupraC4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Supra C3';
+    src: url('CenturySupraC3.eot');
+    src: local('Century Supra C3'), local('CenturySupraC3'),
+        url('CenturySupraC3.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraC3.woff2') format('woff2'),
+        url('CenturySupraC3.woff') format('woff'),
+        url('CenturySupraC3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Supra T4';
+    src: url('CenturySupraT4-BoldItalic.eot');
+    src: local('Century Supra T4 Bold Italic'), local('CenturySupraT4-BoldItalic'),
+        url('CenturySupraT4-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraT4-BoldItalic.woff2') format('woff2'),
+        url('CenturySupraT4-BoldItalic.woff') format('woff'),
+        url('CenturySupraT4-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Century Supra T3';
+    src: url('CenturySupraT3-Italic.eot');
+    src: local('Century Supra T3 Italic'), local('CenturySupraT3-Italic'),
+        url('CenturySupraT3-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CenturySupraT3-Italic.woff2') format('woff2'),
+        url('CenturySupraT3-Italic.woff') format('woff'),
+        url('CenturySupraT3-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Century Supra T3", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   font-weight: normal;
   font-size: 21px;
   text-rendering: optimizeLegibility;
@@ -29,7 +29,7 @@ body {
   position: relative;
   color: var(--main-text-color);
   background-color: var(--main-background-color);
-  letter-spacing: -0.5px;
+  letter-spacing: -0.1px;
 }
 
 @media only screen and (max-width: 425px) {
@@ -39,20 +39,21 @@ body {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.75;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
 }
 
 p a {
   text-decoration: underline;
+  text-decoration-thickness: 0.05em;
   color: var(--main-text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Century Supra C3", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
   font-weight: bold;
@@ -77,11 +78,13 @@ h3 {
 
 a {
   text-decoration: underline;
+  text-decoration-thickness: 0.05em;
   color: var(--main-text-color);
 }
 
 a:hover, a:focus {
   color: var(--main-text-color);
+  text-decoration-thickness: 0.05em;
   text-decoration: underline;
 }
 
@@ -89,13 +92,13 @@ a:hover, a:focus {
 blockquote {
   color: var(--main-text-color);
   background-color: var(--blockquote-background-color);
-  font-size: 19px;
+  font-size: 22px;
   line-height: 1.4;
   font-weight: 400;
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
   border-radius: 0px 5px 5px 0px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Equity Text A", 'Source Sans Pro', sans-serif;
 
 }
 
@@ -271,7 +274,7 @@ a[href$=".pptx"] {
 .navbar-custom {
   background-color: var(--navbar-color);
   border-bottom: 1px solid #DDDDDD;
-  font-family: "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Century Supra C3", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
   transition: padding .5s ease-in-out;
@@ -646,7 +649,7 @@ a[href$=".pptx"] {
 .mailchimp-subscribe-section .button {
   height: 3rem;
   font-size: 1.5rem;
-  font-family: "Linux Biolinum";
+  font-family: "Concourse T3", "Linux Biolinum";
 }
 
 @media only screen and (min-width: 980px) {
@@ -825,9 +828,10 @@ logo-main a:hover {
 
 .post-preview .post-subtitle {
   margin: 0;
+  size: 24px;
   font-weight: 300;
   margin-bottom: 10px;
-  font-family: "Cambria", "Open Sans";;
+  font-family: "Concourse T3", "Cambria", "Open Sans";
 }
 
 
@@ -835,7 +839,7 @@ logo-main a:hover {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
-  font-family: "Cambria", "Open Sans";
+  font-family: "Concourse T3", "Cambria", "Open Sans";
 }
 
 .post-preview .post-meta,
@@ -844,12 +848,14 @@ logo-main a:hover {
   font-size: 18px;
   /*font-style: italic;*/
   margin: 10px 12px 10px 0;
+  font-family: "Concourse T3", "Cambria", "Open Sans";;
 }
 
 p.post-meta {
   color: var(--post-meta-index-color);
   font-size: 16px;
   margin: 30px 0 30px 0;
+  font-family: "Concourse T3", "Cambria", "Open Sans";;
 }
 
 @media only screen and (max-width: 425px) {
@@ -885,7 +891,8 @@ p.post-meta {
 
 .post-meta-index {
   color: var(--post-meta-index-color);
-  font-size: 16px;
+  font-family: "Concourse T3", "Cambria", "Open Sans";
+  font-size: 18px;
   /*font-style: italic;*/
   margin: 0 0 10px;
 }
@@ -950,12 +957,12 @@ p.post-meta {
 }
 
 .post-subtitle {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 @media only screen and (max-width: 425px) {
   .post-subtitle {
-    font-size: 18px;
+    font-size: 10px;
   }
 }
 
@@ -1076,7 +1083,7 @@ p.post-meta {
 }
 
 #full-tags-list {
-  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Concourse T3", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
 }
 
 #full-tags-list .tag-entry {
@@ -1152,7 +1159,7 @@ p.post-meta {
   font-size: 26px;
   line-height: 1.1;
   display: block;
-  font-family: "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T3", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
   /*text-transform: capitalize;*/
@@ -1275,7 +1282,7 @@ p.post-meta {
 /* --- Pager --- */
 
 .pager li a {
-  font-family: "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Century Supra C3", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 800;
@@ -1420,7 +1427,7 @@ tbody {
 pre {
   background-color: var(--navbar-color);
   color: var(--main-text-color);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5em;
   font-family: "jetbrains_monoregular", sans-serif;
   border: none;
@@ -1433,7 +1440,7 @@ pre code {
 code {
   background-color: var(--navbar-color);
   font-family: "jetbrains_monoregular", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--main-text-color);
   border-radius: 1px;
   text-decoration: none;
@@ -1442,7 +1449,7 @@ code {
 
 @media screen and (max-width: 415px) {
   code {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -1556,7 +1563,7 @@ td.gutter {
 }
 
 .list-filters {
-  font-family: "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T3", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   padding-top: 10px;
   text-align: center;
@@ -1782,13 +1789,13 @@ figure {
 figure figcaption {
   bottom: 0.8em;
   color: var(--main-text-color);
-  font-size: .8em;
+  font-size: 0.85em;
   font-weight: 300;
   left: .5em;
   line-height: 1.25em;
   max-width: 100%;
   /*position: absolute;*/
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-family: "Concourse T3", "Source Sans Pro", Helvetica, Arial, sans-serif;
   /*font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;*/
   /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);*/
   padding-top: 2rem;
@@ -1796,7 +1803,7 @@ figure figcaption {
 
 @media screen and (max-width: 415px) {
   figure figcaption {
-    font-size: .75em;
+    font-size: .8em;
   }
 }
 
@@ -1854,6 +1861,7 @@ ul {
 .tag-list {
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: "Concourse T3", "Linux Biolinum";
   text-align: center;
 }
 
@@ -1945,13 +1953,13 @@ ul {
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
   border-radius: 0px 5px 5px 0px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Equity Text A", sans-serif;
 }
 
 .quote em {
   font-weight: 400;
   font-style: normal;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Equity Text A", sans-serif;
 }
 
 #comments-count {
