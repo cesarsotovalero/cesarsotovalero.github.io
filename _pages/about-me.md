@@ -50,7 +50,7 @@ See also:
 
 Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and running through the Stockholm's beautiful parks.
 
-My <span style="background-color:#012639;color:white;">dark blue</span> is `#012639`.
+My very <span style="background-color:#012639;color:white;">dark blue</span> is `#012639`.
 
 
 #  Contact me
