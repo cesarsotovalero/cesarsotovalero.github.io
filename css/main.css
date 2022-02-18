@@ -28,9 +28,9 @@ body {
 }
 
 p {
-  line-height: 1.75;
+  line-height: 1.7;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
 }
@@ -908,7 +908,7 @@ p.post-meta {
 
 @media only screen and (max-width: 425px) {
   .post-preview .post-entry {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
