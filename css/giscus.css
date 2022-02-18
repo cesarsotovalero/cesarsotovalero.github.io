@@ -221,25 +221,25 @@ main {
 .font-semibold {
   font-weight: 700;
   font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 22px;
   color: var(--main-text-color);
 }
 
 .mr-2 {
-  font-size: 20px;
+  font-size: 22px;
   color: var(--main-text-color);
 }
 
 .text-sm {
   font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.5rem;
   color: var(--main-text-color);
 }
 
 .text-xs {
   font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.5rem;
   color: var(--main-text-color);
 }
