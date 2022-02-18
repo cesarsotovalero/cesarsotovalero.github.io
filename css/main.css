@@ -860,7 +860,7 @@ p.post-meta {
 @media only screen and (max-width: 425px) {
   .post-preview .post-meta,
   .post-heading .post-meta {
-    font-size: 14px;
+    font-size: 16px;
     margin: 10px 12px 10px 0;
   }
 }
@@ -908,7 +908,10 @@ p.post-meta {
 
 @media only screen and (max-width: 425px) {
   .post-preview .post-entry {
-    font-size: 14px;
+    font-size: 18px;
+  }
+  .post-entry {
+    font-size: 18px;
   }
 }
 
@@ -2128,7 +2131,7 @@ article[role=main] {
   display: block;
   overflow: hidden;
   text-align: center;
-  font-family: "Concourse T2", Helvetica, Arial, sans-serif;
+  font-family: "Concourse T3", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   margin: 0 0 15px 15px;
   font-size: 0.9rem;

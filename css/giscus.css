@@ -256,16 +256,16 @@ main {
 
 @media only screen and (max-width: 425px) {
   .font-semibold  {
-    font-size: 18px;
+    font-size: 20px;
   }
   .mr-2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .text-sm {
-    font-size: 16px;
+    font-size: 18px;
   }
   .text-xs {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 
