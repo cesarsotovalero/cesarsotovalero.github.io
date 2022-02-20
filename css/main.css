@@ -21,9 +21,9 @@ body {
   letter-spacing: -0.2px;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 450px) {
   body {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -709,7 +709,7 @@ footer .list-inline {
 
 footer .copyright {
   color: var(--main-text-color);
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:  "Concourse T2", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
   margin-bottom: 0;
   padding-top: 20px;

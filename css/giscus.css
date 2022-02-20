@@ -221,59 +221,59 @@ main {
 .font-semibold {
   font-weight: 700;
   font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--main-text-color);
 }
 
 .mr-2 {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--main-text-color);
 }
 
 .text-sm {
   font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5rem;
   color: var(--main-text-color);
 }
 
 .text-xs {
   font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5rem;
   color: var(--main-text-color);
 }
 
 .color-text-primary {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   color: var(--main-text-color);
 }
 
 .gsc-reactions {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   color: var(--main-text-color);
 }
 
 .gsc-comments {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   color: var(--main-text-color);
 }
 
 @media only screen and (max-width: 425px) {
   .font-semibold  {
-    font-size: 20px;
+    font-size: 18px;
   }
   .mr-2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .text-sm {
     font-size: 18px;
   }
   .text-xs {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

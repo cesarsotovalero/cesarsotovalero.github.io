@@ -8,6 +8,7 @@ keywords: SIGBOVIK,silly ideas,research parodies,computer science,conference,aca
 image: ../img/posts/2021/splatter_cover.png
 share-img: ../img/posts/2021/splatter.png
 show-avatar: false
+toc: true
 date: 2021/12/05
 author: cesarsotovalero
 published: true

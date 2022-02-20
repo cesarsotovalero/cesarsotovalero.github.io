@@ -8,6 +8,7 @@ keywords: java,data confidentiality,data integrity,data authenticity,cybersecuri
 image: ../img/posts/2021/paint_on_wall_cover.jpg
 share-img: ../img/posts/2021/paint_on_wall_cover.jpg
 show-avatar: false
+toc: true
 date: 2021/12/19
 author: cesarsotovalero
 published: true
