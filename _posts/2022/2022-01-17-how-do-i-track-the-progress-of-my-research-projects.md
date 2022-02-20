@@ -8,6 +8,7 @@ keywords: research artifact,verifiable artifacts,scientific career,research meth
 image: ../img/posts/2022/globe_cover.jpg
 share-img: ../img/posts/2022/globe_cover.jpg
 show-avatar: false
+toc: true
 date: 2022/01/17
 author: cesarsotovalero
 published: true

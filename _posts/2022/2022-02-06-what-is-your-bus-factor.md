@@ -13,6 +13,7 @@ keywords:
 image: ../img/posts/2022/plane_paint_cover.jpg
 share-img: ../img/posts/2022/plane_paint_cover.jpg
 show-avatar: false
+toc: true
 date: 2022/02/06
 author: cesarsotovalero
 published: false
@@ -35,6 +36,9 @@ Common reasons:
 - chronic illness
 - accidents
 - death.
+
+
+## More causes
 
 > "How many or few would have to be hit by a truck (or quit) before the project is incapacitated?" -- James Coplien (in Pair Programming Illuminated)
 

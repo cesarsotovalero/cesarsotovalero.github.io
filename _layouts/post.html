@@ -7,8 +7,8 @@ layout: base
 
 <div class="container">
    <div class="row">
-      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
 
+      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
          <article role="main" class="blog-post">
             {{ content }}
          </article>
@@ -46,15 +46,54 @@ layout: base
    anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
 </script>
 
+
+<!-- Giscus comments -->
 {% if page.comments %}
 <div class="container">
    <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12">
+<!--      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">-->
          {% include giscus.html %}
       </div>
    </div>
 </div>
 {% endif %}
+
+
+<!--
+Sticky Table of Contents with Scrolling Active States
+https://css-tricks.com/sticky-table-of-contents-with-scrolling-active-states/
+-->
+<script>
+   window.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => {
+         entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.add('active');
+            } else {
+               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.remove('active');
+            }
+         });
+      });
+
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('h1[id]').forEach((section) => {
+         observer.observe(section);
+      });
+
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('h2[id]').forEach((section) => {
+         observer.observe(section);
+      });
+
+   });
+</script>
+
+
+
+
+
 
 
 
