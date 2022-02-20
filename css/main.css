@@ -21,9 +21,9 @@ body {
   letter-spacing: -0.2px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -91,9 +91,9 @@ blockquote {
 
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   blockquote {
-    font-size: 19px;
+    font-size: 20px;
     line-height: 1.5;
   }
 }
@@ -340,7 +340,7 @@ a[href$=".pptx"] {
 
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    padding: 5px 0;
+    padding: 3px 0;
     -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
     transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -2314,23 +2314,83 @@ article[role=main] {
 /* https://www.gemini.com/cryptopedia/ethereum-smart-contracts-tokens-use-cases */
 
 /*Adding 'Contents' headline to the TOC*/
-#markdown-toc {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+#toc {
+  font-family: "Concourse T2", Helvetica, Arial, sans-serif;
+  /*font-family: "Century Supra C3", Helvetica, Arial, sans-serif;*/
+  font-size: 16px;
   font-weight: 300;
+  position: fixed;
+  /*left: -260px;*/
+  top: -15px;
+  padding: 1em;
+  width: 100%;
+  line-height: 2;
+  /*position: absolute;*/
+  /*width: calc(40% - 385px);*/
+  /*left: calc(25% - 385px);*/
+  /*display: none;*/
+  /*position: fixed;*/
+  top: 130px;
+  height: unset;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.1s ease 0s;
+  display: block;
 }
 
-#markdown-toc::before {
+
+@media only screen and (max-width: 1525px) {
+  #toc {
+    display: none;
+  }
+}
+
+#toc::before {
+  font-family: "Equity Caps A", Helvetica, Arial, sans-serif;
   content: "Contents";
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#toc li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#toc li a {
+  color: var(--post-meta-index-color);
+  text-decoration: none;
+}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+#toc li.active > a {
+  color: var(--main-text-color);;
+  font-family: "Concourse T4";
+  /*font-family: "Century Supra C4", Helvetica, Arial, sans-serif;*/
   font-weight: bold;
 }
 
-/*using numbers instead of bullets for listing*/
-#markdown-toc ul {
-  list-style: decimal;
+#toc a {
+  text-decoration: none;
+  display: block;
+  padding: .125rem 0;
+  color: #ccc;
+  transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
 }
 
+#toc a:hover,
+#toc a:focus {
+  color: #666;
+}
 
-/*#markdown-toc {*/
+/*using numbers instead of bullets for listing*/
+/*#toc ul {*/
+/*  list-style: decimal;*/
+/*}*/
+
+
+/*#toc {*/
 /*  width: calc(50% - 385px);*/
 /*  left: -500px;*/
 /*  display: none;*/

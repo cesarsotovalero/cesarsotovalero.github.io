@@ -9,6 +9,7 @@ gem 'jekyll-bits', '~> 0.15'
 gem 'jekyll-plantuml', '~> 1.3', '>= 1.3.4'
 gem 'jekyll-responsive-image', '~> 1.4'
 gem 'jekyll-seo-tag', '~> 2.7', '>= 2.7.1'
+gem 'jekyll-toc'
 
 # Non-jekyll gems
 gem 'posix-spawn', '~> 0.3.15'

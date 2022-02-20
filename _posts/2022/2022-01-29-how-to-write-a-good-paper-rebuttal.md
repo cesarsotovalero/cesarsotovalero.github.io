@@ -8,10 +8,12 @@ keywords: academia,conference rebuttal,research paper,experience share,paper rej
 image: ../img/posts/2022/maxwell_cover.jpg
 share-img: ../img/posts/2022/maxwell_cover.jpg
 show-avatar: false
+toc: true
 date: 2022/01/29
 author: cesarsotovalero
 published: true
 ---
+
 
 The rejection of a research paper is always a tough spot in the life of researchers.
 Today, many top conferences allow the authors of a rejected paper to submit a so-called "paper rebuttal."
