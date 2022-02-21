@@ -2369,6 +2369,8 @@ article[role=main] {
   font-family: "Concourse T4";
   /*font-family: "Century Supra C4", Helvetica, Arial, sans-serif;*/
   font-weight: bold;
+  display: list-item;
+  list-style-type: disc;
 }
 
 #toc a {
