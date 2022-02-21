@@ -8,6 +8,7 @@ published: true
 keywords: programmers, dead, artificial intelligence, machine learning
 image: ../img/posts/2021/ladybug_cover.jpg
 share-img: ../img/posts/2021/ladybug_cover.jpg
+toc: true
 author: cesarsotovalero
 show-avatar: false
 date: 2021/7/31

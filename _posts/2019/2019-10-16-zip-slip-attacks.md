@@ -9,6 +9,7 @@ keywords: software attack, vulnerability
 image: ../img/posts/2019/zipper_cover.jpg
 share-img: ../img/posts/2019/zipper_cover.jpg
 show-avatar: false
+toc: true
 author: cesarsotovalero
 date: 2019/10/16
 ---

@@ -9,6 +9,7 @@ published: true
 image: ../img/posts/2020/crowd_cover.jpg
 share-img: ../img/posts/2020/crowd_cover.jpg
 show-avatar: false
+toc: true
 author: cesarsotovalero
 date: 2020/6/08
 ---

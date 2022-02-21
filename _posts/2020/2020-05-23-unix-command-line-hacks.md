@@ -9,6 +9,7 @@ published: true
 image: ../img/posts/2020/unix_course_cover.jpg
 share-img: ../img/posts/2020/unix_course_cover.jpg
 show-avatar: false
+toc: true
 author: cesarsotovalero
 date: 2020/5/23
 ---

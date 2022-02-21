@@ -9,6 +9,7 @@ keywords: learn english, international test, language test
 image: ../img/posts/2017/IELTS.jpg
 share-img: ../img/posts/2017/IELTS.jpg
 show-avatar: false
+toc: true
 author: cesarsotovalero
 date: 2017/10/26
 ---
@@ -16,15 +17,6 @@ date: 2017/10/26
 The International English Language Testing System (IELTS) is one of the major English language tests for higher education and immigration in the world. It is jointly managed by the British Council, IELTS Australia, and Cambridge English Language Assessment. IELTS is accepted by most Australian, British, Canadian and New Zealand academic institutions, by over 3000 educational institutions in the United States, and by many professional organizations across the world.  
 
 There are two versions of the test, **IELTS Academic** and **IELTS General Training**. The first is intended for those who want to enroll in universities and other institutions for higher education, while the latter is for test takers who want to work, study at a secondary school or migrate to an English-speaking country. In this blog post, I will refer to the Academic version of the test.
-
-# Contents
-1. [The Test](#the-test)
-  - [Listening](#listening)
-  - [Reading](#reading)
-  - [Writing](#writing)
-  - [Speaking](#speaking)
-2. [Last Remarks](#last-remarks)
-3. [Useful Resources](#useful-resources)
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"

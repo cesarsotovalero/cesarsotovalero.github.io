@@ -8,6 +8,7 @@ published: true
 keywords: blog, comments, disqus, replace
 image: ../img/posts/2021/angry-emoji.jpg
 share-img: ../img/posts/2021/angry-emoji.jpg
+toc: true
 show-avatar: false
 author: cesarsotovalero
 date: 2021/7/27

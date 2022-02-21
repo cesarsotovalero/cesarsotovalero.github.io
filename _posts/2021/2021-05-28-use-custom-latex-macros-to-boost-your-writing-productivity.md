@@ -8,6 +8,7 @@ published: true
 keywords: latex, macros, productivity, tutorials
 image: ../img/posts/2021/snail_cover.jpg
 share-img: ../img/posts/2021/snail_cover.jpg
+toc: true
 show-avatar: false
 author: cesarsotovalero
 date: 2021/5/28

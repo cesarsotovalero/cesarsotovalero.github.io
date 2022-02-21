@@ -8,6 +8,7 @@ published: true
 keywords: problems, dynamic programming, strategies
 image: ../img/posts/2020/circular_effect_cover.jpg
 share-img: ../img/2020/circular_effect_cover.jpg
+toc: true
 show-avatar: false
 author: cesarsotovalero
 date: 2020/12/21

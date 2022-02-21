@@ -13,6 +13,7 @@ keywords:
 image: ../img/posts/2021/clouds_cover.png
 share-img: ../img/posts/2021/clouds_cover.png
 show-avatar: false
+toc: true 
 date: 2021/09/20
 author: cesarsotovalero
 published: true

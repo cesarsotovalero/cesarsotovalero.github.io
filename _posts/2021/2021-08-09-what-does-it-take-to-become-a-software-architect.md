@@ -12,7 +12,8 @@ keywords:
   - software architect salary
 image: ../img/posts/2021/metro_in_stadium_cover.jpg
 share-img: ../img/posts/2021/metro_in_stadium_cover.jpg
-show-avatar: false 
+show-avatar: false
+toc: true
 author: cesarsotovalero
 date: 2021/08/09
 ---
