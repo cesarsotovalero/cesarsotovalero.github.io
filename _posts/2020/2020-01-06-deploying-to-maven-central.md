@@ -9,6 +9,7 @@ published: true
 image: ../img/posts/2020/maven_journey_cover.png
 share-img: ../img/posts/2020/maven_journey_cover.png
 show-avatar: false
+toc: true
 author: cesarsotovalero
 date: 2020/1/06
 ---
@@ -18,13 +19,6 @@ Maven Central is the de-facto repository for hosting software artifacts that com
 <aside class="quote">
     <em>“Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest and oldest archives of software libraries.”</em>
 </aside>
-
-# Contents
-
-1. [Create a JIRA ticket in Sonatype](#1-create-a-jira-ticket-in-sonatype)
-2. [Configuring the POM](#2-configuring-the-pom)
-3. [Release to Maven Central](#3-release-to-maven-central)
-4. [References](#references)
 
 # 1. Create a JIRA ticket in Sonatype
 

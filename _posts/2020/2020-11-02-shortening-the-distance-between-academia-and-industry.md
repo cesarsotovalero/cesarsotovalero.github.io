@@ -10,6 +10,7 @@ image: ../img/posts/2020/skates_cover.jpg
 share-img: ../img/posts/2020/skates_cover.jpg
 show-avatar: false
 author: cesarsotovalero
+toc: true
 date: 2020/11/2
 ---
 

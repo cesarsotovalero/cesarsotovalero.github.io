@@ -10,6 +10,7 @@ image: ../img/posts/2020/children_gardening_cover.png
 share-img: ../img/posts/2020/children_gardening_cover.png
 show-avatar: false
 author: cesarsotovalero
+toc: true
 date: 2020/10/15
 ---
 

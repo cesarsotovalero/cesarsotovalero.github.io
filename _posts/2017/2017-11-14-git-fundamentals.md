@@ -9,6 +9,7 @@ keywords: command line, version control, GitHub, software developement
 image: ../img/posts/2017/git_logo_cover.png
 share-img: ../img/posts/2017/git_logo_cover.png
 show-avatar: false
+toc: true
 author: cesarsotovalero
 date: 2017/11/14
 ---
@@ -16,20 +17,6 @@ date: 2017/11/14
 Git is the standard version-control system for software development. Git was created by Linux Torvals in 2005 to support the development of the Linux kernel. Since then, Git has become an essential tool for both junior and senior developers. It allows to have a complete history and full version-tracking of the project, easing all the different phases of the development process.
 
 > "Git proved I could be more than a one-hit wonder" *― Linux Torvalds*
-
-# Contents
-   
-* [Git configuratons](#git-configurations)
-* [Git commits](#git-commits)
-* [Git branches](#git-branches)
-* [Git diff](#git-diff)
-* [Git merge](#git-merge)
-* [Git rebase](#git-rebase)
-* [Git fetch &amp; push &amp; pull](#git-fetch--push--pull)
-* [Git tags](#git-tags)
-* [Git revert](#git-revert)
-* [Git reset](#git-reset)
-* [Troubleshooting](#troubleshooting)
 
 # Git Configurations
 

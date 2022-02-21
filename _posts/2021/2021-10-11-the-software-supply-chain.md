@@ -13,6 +13,7 @@ keywords:
 image: ../img/posts/2021/crane_cover.png
 share-img: ../img/posts/2021/crane_cover.png
 show-avatar: false
+toc: true
 date: 2021/10/11
 author: cesarsotovalero
 published: true

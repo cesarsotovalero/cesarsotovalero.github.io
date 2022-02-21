@@ -13,6 +13,7 @@ keywords:
 image: ../img/posts/2021/stalking_monster.jpg
 share-img: ../img/posts/2021/stalking_monster_cover.jpg
 show-avatar: false
+toc: true
 date: 2021/11/07
 author: cesarsotovalero
 published: true

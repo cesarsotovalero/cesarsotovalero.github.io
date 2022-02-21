@@ -8,6 +8,7 @@ published: true
 keywords: recursion, Java, parallel, fork, join
 image: ../img/posts/2021/night_tree_cover.jpg
 share-img: ../img/posts/2021/night_tree_cover.jpg
+toc: true
 show-avatar: false
 author: cesarsotovalero
 date: 2021/6/5

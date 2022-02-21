@@ -9,6 +9,7 @@ keywords: acm icpc, competition, problems, programming
 image: ../img/posts/2017/competitive_programming_brain.png
 share-img: ../img/posts/2017/competitive_programming_brain.png
 show-avatar: false
+toc: true
 author: cesarsotovalero
 date: 2017/12/13
 ---
@@ -26,19 +27,6 @@ I discovered the world of competitive programming challenges during my first yea
 </p>
 
 I started my self-training plan, and a couple of months later, I had jumped up to the first ten places in my university. Surprisingly, after four years without submitting a problem to the [COJ](http://coj.uci.cu/), my [user profile](http://coj.uci.cu/user/useraccount.xhtml?username=CeSaR_uclv) is still in the top 500 contestants from my country. In this post, I want to share some insights and tricks that I learned when I was a competitive programmer.
-
-# Index
-
-- [Start as soon as possible](#start-as-soon-as-possible)
-- [Master the essential first](#master-the-essential-first)
-- [Choose an adequate training plan and stick to it](#choose-an-adequate-training-plan-and-stick-to-it)
-- [Use good study resources](#use-good-study-resources)
-- [Be persistent](#be-persistent)
-- [Be efficient](#be-efficient)
-- [Share your work and ideas with others](#share-your-work-and-ideas-with-others)
-- [Keep yourself up to date](#keep-yourself-up-to-date)
-- [Free your mind](#free-your-mind)
-- [Enjoy](#enjoy)
 
 # Start ASAP
 

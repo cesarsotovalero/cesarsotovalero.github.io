@@ -8,6 +8,7 @@ published: true
 keywords: research, Ph.D., book
 image: ../img/posts/2021/phd_grind_cover.png
 share-img: ../img/posts/2021/phd_grind_cover.png
+toc: true
 show-avatar: false
 author: cesarsotovalero
 date: 2021/6/24

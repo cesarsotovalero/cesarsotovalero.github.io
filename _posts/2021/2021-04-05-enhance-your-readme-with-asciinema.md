@@ -8,6 +8,7 @@ description: In this tutorial, I show you to create beautiful terminal recording
 keywords: asciinema, readme, improvement, video
 image: ../img/posts/2021/asciinema_cover.jpg
 share-img: ../img/posts/2021/asciinema_cover.jpg
+toc: true
 show-avatar: false
 author: cesarsotovalero
 date: 2021/4/5
