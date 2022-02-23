@@ -5,9 +5,9 @@ title: About me
 subtitle: In brief
 ---
 
-<div style="text-align: center; font-family:jetbrains_monoregular, courier new, serif; font-weight: lighter">
- <span class="type"></span>
-</div>
+<code style="text-align: center; font-family:jetbrains_monoregular, courier new, serif; font-size: 18px; font-weight: lighter">
+ <span class="type" style="text-align: center"></span>
+</code>
 
 ---
 
@@ -82,6 +82,7 @@ You can always send me an email:
 form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
     width: 100%;
     vertical-align: middle;
+    font-size: 20px;
     margin-top: 0.25em;
     margin-bottom: 0.5em;
     padding: 0.75em;
@@ -102,7 +103,7 @@ form.wj-contact input[type="submit"] {
     padding: 12px;
     margin: 0.25em 0 0 0;
     height: auto;
-    font-family:  'Linux Biolinum', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family:  'Century Supra C4', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 800;

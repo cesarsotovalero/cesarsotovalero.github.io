@@ -2310,6 +2310,39 @@ article[role=main] {
   }
 }
 
+
+/* Footnotes */
+
+.footnotes {
+  color: var(--post-meta-index-color);
+  font-family: "Concourse T3", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.footnote {
+  color: var(--post-meta-index-color);
+  font-family: "Concourse T3", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+.reversefootnote {
+  font-family: "Concourse T3", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 450px) {
+  .footnotes {
+    font-size: 16px;
+  }
+  .footnote {
+    font-size: 16px;
+  }
+  .reversefootnote {
+    font-size: 16px;
+  }
+}
+
 /* TOC */
 /* https://www.gemini.com/cryptopedia/ethereum-smart-contracts-tokens-use-cases */
 
@@ -2326,7 +2359,7 @@ article[role=main] {
   width: 100%;
   line-height: 2;
   /*position: absolute;*/
-  /*width: calc(40% - 385px);*/
+  /*width: calc(30% - 385px);*/
   /*left: calc(25% - 385px);*/
   /*display: none;*/
   /*position: fixed;*/
@@ -2385,6 +2418,15 @@ article[role=main] {
 #toc a:focus {
   color: #666;
 }
+
+/* LaTeX */
+@media only screen and (max-width: 450px) {
+  mjx-math {
+    font-size: 90%;
+  }
+}
+
+
 
 /*using numbers instead of bullets for listing*/
 /*#toc ul {*/

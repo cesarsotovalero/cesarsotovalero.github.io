@@ -232,14 +232,14 @@ main {
 
 .text-sm {
   font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 18px;
+  /*font-size: 18px;*/
   line-height: 1.5rem;
   color: var(--main-text-color);
 }
 
 .text-xs {
   font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 18px;
+  /*font-size: 16px;*/
   line-height: 1.5rem;
   color: var(--main-text-color);
 }
@@ -264,10 +264,10 @@ main {
 
 @media only screen and (max-width: 425px) {
   .font-semibold  {
-    font-size: 18px;
+    /*font-size: 18px;*/
   }
   .mr-2 {
-    font-size: 18px;
+    /*font-size: 18px;*/
   }
   .text-sm {
     font-size: 18px;

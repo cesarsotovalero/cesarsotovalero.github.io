@@ -195,7 +195,7 @@ git reset HEAD~2
 
 # Troubleshooting
 
-## Gitignore is not working. 
+## Gitignore is not working
 
 
 You may need to remove every file that was cached in the `.gitignore`. Be aware to commit all your changes before, otherwise you will loose control on all the changed files. 
@@ -206,7 +206,7 @@ git add .
 git commit -m ".gitignore is now working"
 ```
 
-## git log of a Java method
+## Git log of a Java method
 
 You need to add the following to the `.gitattributes` file.
 
