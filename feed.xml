@@ -7,14 +7,14 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Bus Factor - A Human-Based Risk Metric in the Software Supply Chain</title>
+        <title>Bus Factor - A Human-Centered Risk Metric in the Software Supply Chain</title>
         <description>
-          When traffic jams are hellish... - 
+          Public transportation may become hellish - 
           What if some members of a software project are suddenly hit by a bus? What would happen to the project in such an unfortunate scenario? According to Wikipedia, this question was first pointed out in 1994 when someone publicly asked about what would happen to Python if Guido van Rossum...
         </description>
         <pubDate>Sun, 06 Feb 2022 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/bus-factor-a-human-based-risk-metric-in-the-software-supply-chain.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/bus-factor-a-human-based-risk-metric-in-the-software-supply-chain.html</guid>
+        <link>https://www.cesarsotovalero.net/blog/bus-factor-a-human-centered-risk-metric-in-the-software-supply-chain.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/bus-factor-a-human-centered-risk-metric-in-the-software-supply-chain.html</guid>
       </item>
     
       <item>
