@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Bus Factor - A Human-Based Risk Metric in the Software Supply Chain</title>
+        <description>
+          When traffic jams are hellish... - 
+          What if some members of a software project are suddenly hit by a bus? What would happen to the project in such an unfortunate scenario? According to Wikipedia, this question was first pointed out in 1994 when someone publicly asked about what would happen to Python if Guido van Rossum...
+        </description>
+        <pubDate>Sun, 06 Feb 2022 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/bus-factor-a-human-based-risk-metric-in-the-software-supply-chain.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/bus-factor-a-human-based-risk-metric-in-the-software-supply-chain.html</guid>
+      </item>
+    
+      <item>
         <title>How To Write a Good Paper Rebuttal?</title>
         <description>
           A practical guide - 
@@ -213,17 +224,6 @@
         <pubDate>Thu, 15 Oct 2020 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/empirical-software-engineering-research-is-harder-than-you-think.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/empirical-software-engineering-research-is-harder-than-you-think.html</guid>
-      </item>
-    
-      <item>
-        <title>The Producer-Consumer Pattern in Java Made Easy</title>
-        <description>
-          An Example Using the BlockingQueue Interface - 
-          I see the usage of a recurring handy pattern for doing data collection and analysis in software engineering: the producer-consumer pattern. This pattern simplifies the data acquisition (handled by the Producer), and the data post-processing (handled by the Consumer). The Producer collects the data items one at the time and...
-        </description>
-        <pubDate>Sun, 28 Jun 2020 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html</guid>
       </item>
     
   </channel>
