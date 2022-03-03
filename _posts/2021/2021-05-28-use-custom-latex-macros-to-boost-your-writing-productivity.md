@@ -24,7 +24,7 @@ Let me show you how it works!
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2021/snail.jpg alt: "A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)" %}
   <figcaption class="stroke">
-    &#169; A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)
+    &#169; A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros, obviously)
     </figcaption>
 </figure>
 
