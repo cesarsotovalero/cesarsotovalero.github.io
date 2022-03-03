@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use Custom LaTeX Macros to Boost Your Writing Productivity
-subtitle: Forget About the Annoying Numerical Glitches in your Document 
+subtitle: Forget about these annoying numerical glitches in your LaTeX document 
 tags: latex tutorial
 description: LaTeX macros allow increasing productivity by avoiding typing repetitive LaTeX commands. In this tutorial, I show you how to use them.
 published: true
@@ -217,6 +217,45 @@ Note that you can use this command in three different flavors:
 - `\ChartSmall[x]{80}{155}` produces <img src="../img/posts/2021/smallshart1.png" height="18" border="0" alt="Comand">
 - `\ChartSmall[q]{80}{155}` produces <img src="../img/posts/2021/smallshart2.png" height="20" border="0" alt="Comand">
 - `\ChartSmall[p]{80}{155}` produces <img src="../img/posts/2021/smallshart3.png" height="20" border="0" alt="Comand">
+
+# Executing Python Scripts in a LaTeX Document 
+
+You can leverage the computational capabilities of the Python programming language to compute values or automatize the creation of a LaTeX document.
+Here is an example, credited to [this answer](https://tex.stackexchange.com/questions/598403/can-i-execute-python-code-inside-latex) on StackExchange.
+
+{% highlight latex linenos %}
+\documentclass{article}
+\begin{filecontents*}{zz.py}
+print("one")
+print("two")
+\end{filecontents*}
+
+\usepackage{color}
+\begin{document}
+
+\input{|python mypy.py}
+
+\hrule
+
+\input{|python zz.py}
+\end{document}
+{% endhighlight %}
+
+Here is file `mypy.py` called within the LaTeX document:
+
+{% highlight python linenos %}
+print("\\section{The First}\n")
+print("Some colours:\n\n")
+clr=['red','blue','green']
+for c in clr:
+  print("\n\\textcolor{" + c + "}{" + c +"}\n")
+{% endhighlight %}
+
+The output is as following:
+
+![The figure shows a working example of Python code embedded in a LaTeX file in Overleaf.](/img/posts/2021/python_executed_in_latex_document.png "Python code executed in a LaTeX document")
+
+
 
 # Conclusion
 
