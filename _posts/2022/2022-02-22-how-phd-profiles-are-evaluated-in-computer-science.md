@@ -31,7 +31,7 @@ So, at the end of the PhD your profile will be rigorously evaluated.
 Let's be prepared!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2022/red_paint.jpg alt:"TODO" %}
+  {% responsive_image path: img/posts/2022/red_paint.jpg alt:"The academic arenas, where researchers give it all" %}
   <figcaption class="stroke"> 
     &#169; The academic arenas, where <del>gladiators</del> researchers give it all. Photo from <a href="https://goo.gl/maps/j8GC4KtHEXoKxLpB8">Tekniska Högskolan station</a>.
   </figcaption>
