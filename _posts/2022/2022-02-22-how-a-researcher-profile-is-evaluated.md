@@ -21,7 +21,7 @@ published: true
 
 You just finished your PhD and decided to stay in academia.
 Typically, the next move is applying for a new ~~temporally~~ position as PostDoc.
-At this point, you want to get a PosDoc leading to the “tenured track” so that you can eventually become an assistant professor.
+At this point, you want to get a PostDoc leading to the “tenured track” so that you can eventually become an assistant professor.
 But hold on because you are about to jump into one of academia's deepest and most competitive waters (i.e., the hyper-competitiveness for tenured positions).
 To succeed in this endeavor and get on the “track,” you should have a publication profile that is appealing to the academic recruiters.
 But even if you have a ton of impactful publications, research experience and talent are not enough.
@@ -48,14 +48,14 @@ flowchart LR;
 a[Finished PhD] --> b[Stay in Academia];
 a[Finished PhD] --> c[Get out of Academia];
 c[Get out of Academia] --> j[Get a Job in the Industry];
-b[Stay in Academia] --> d[Become a PosDoc];
-d[Become a PosDoc] --> e[Become an Assistant Professor];
+b[Stay in Academia] --> d[Become a PostDoc];
+d[Become a PostDoc] --> e[Become an Assistant Professor];
 e[Become an Assistant Professor] --> f[Become an Tenured Professor];
 {% endmermaid %}
 
 Once you decide to stay in academia, the natural goal is to become a tenured professor.
 But achieving this goal is not easy, to say the least.
-It will take about ten years to get (≈4 to 6 years as PosDoc + ≈5 to 6 years as Assistant Professor).
+It will take about ten years to get (≈4 to 6 years as PostDoc + ≈5 to 6 years as Assistant Professor).
 The success or failure of this endeavor depends on many variables.
 Some of them are under your control, such as your research performance, but other depends on luck and the impact of your contributions.
 For example, if you are into Theoretical Computer Science, then it is more difficult to get a large number of good publications during your time as a researcher.
@@ -77,27 +77,27 @@ You have to go through the well-known process by working hard and being consiste
 Better be prepared because a researcher might is evaluated several times along her career.
 So the best one can do is to be prepared in advance in order to pass the distinct evaluation layers as painlessly as possible.
 
-## From PhD Student to PosDoc
+## From PhD Student to PostDoc
 
-At this stage, you may be lucky because PosDoc candidates in Computer Science are scarce.
+At this stage, you may be lucky because PostDoc candidates in Computer Science are scarce.
 After graduation, many PhD students move to the industry, motivated by the much higher economic revenue received when working in IT companies.
-Therefore, after graduating with a PhD, getting a position as PosDoc is typically not very difficult.
+Therefore, after graduating with a PhD, getting a position as PostDoc is typically not very difficult.
 Basically, all you need is a good publication profile with at least 3 strong published papers and the ability to communicate your research very well.
 These are two skills that you have supposedly acquired during your PhD studies.
 
-These are the general steps to becoming a PosDoc:
+These are the general steps to becoming a PostDoc:
 
 1. Identify the research teams that work on similar topics as you do.
 2. Submit your profile and statement of interest directly to head researchers in those institutions.
 3. Prepare for an interview (a coding exercise is probably not mandatory).
 4. Present your research expertise and agenda.
 
-## From PosDoc to Assistant Professor
+## From PostDoc to Assistant Professor
 
 At this step is when everything starts becoming more challenging.
 An Assistant Professor should be a talented researcher and a good teacher.
 Therefore, at this point, you should have demonstrable teaching and research experience to put in your resume.
-The evaluation of PosDoc candidates is typically done by experienced professors and approved by their institutions.
+The evaluation of PostDoc candidates is typically done by experienced professors and approved by their institutions.
 Look at some examples as follows.
 
 Qualification for Associate Professor in France:
@@ -134,7 +134,7 @@ Qualification for Tenured Professor in Sweden:
 I want to mention that researcher is somebody who actively does research, including:
 
 - A PhD
-- A PosDoc
+- A PostDoc
 - An Assistant Professor
 - A Tenured Professor
 - _A PhD working in a research institution_
