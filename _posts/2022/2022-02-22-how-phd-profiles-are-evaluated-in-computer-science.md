@@ -128,7 +128,6 @@ Qualification for Tenured Professor in Sweden:
 - Legal supervision of higher education.
 - Monitoring efficiency, follow-up and horizon scanning as well as responsibility for statistics in the higher education sector.
 
-
 # Other Career Paths for Researchers
 
 I want to mention that researcher is somebody who actively does research, including:
@@ -149,7 +148,6 @@ Unfortunately, there is a long way to go before reaching this sublime state.
 Before that, candidates must go through a long path full of competitiveness and work uncertainty.
 This situation simply obeys the market laws: the demand for these positions is higher than the offer.
 So, now that you know... if you still want it, then go for it!
-
 
 # References
 
