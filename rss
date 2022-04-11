@@ -7,7 +7,18 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Bus Factor - A Human-Centered Risk Metric in the Software Supply Chain</title>
+        <title>Staying in Academia&amp;#58; How PhD Profiles are Evaluated in Computer Science?</title>
+        <description>
+          An overview - 
+          You just finished your PhD and decided to stay in academia. Typically, the next move is applying for a new temporally position as PostDoc. At this point, you want to get a PosDoc leading to the “tenured track” so that you can eventually become an assistant professor. But hold on...
+        </description>
+        <pubDate>Tue, 22 Feb 2022 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/how-a-researcher-profile-is-evaluated.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-a-researcher-profile-is-evaluated.html</guid>
+      </item>
+    
+      <item>
+        <title>Bus Factor&amp;#58; A Human-Centered Risk Metric in the Software Supply Chain</title>
         <description>
           Public transportation may become hellish - 
           What if some members of a software project are suddenly hit by a bus? What would happen to the project in such an unfortunate scenario? According to Wikipedia, this question was first pointed out in 1994 when someone publicly asked about what would happen to Python if Guido van Rossum...
@@ -51,7 +62,7 @@
       </item>
     
       <item>
-        <title>SIGBOVIK - The Ig Nobel for Academics and Computer Science Researchers</title>
+        <title>SIGBOVIK&amp;#58; The Ig Nobel for Academics and Computer Science Researchers</title>
         <description>
           The most wanted proceedings for fruitful procrastination - 
           The SIGBOVIK’s flagship conference is a satiric and incredibly interesting Computer Science venue sponsored by the self-called “Association for Computational Heresy (ACH).” The event has been celebrated annually since 2007 in honor of Harry Quantifiability Bovik, an unconventional professor from Carnegie Mellon University. SIGBOVIK is the cradle of the funniest...
@@ -213,17 +224,6 @@
         <pubDate>Mon, 02 Nov 2020 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/shortening-the-distance-between-academia-and-industry.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/shortening-the-distance-between-academia-and-industry.html</guid>
-      </item>
-    
-      <item>
-        <title>Empirical Software Engineering Research is Harder than you Think</title>
-        <description>
-          Trust Me - 
-          You are a very talented researcher. Perhaps you come from a popular field such as machine learning (ML) and have a ton of papers. But now, you have decided to expand your horizons and solve software engineering (SE) research problems. Hence, you will collect and analyze empirical data about software...
-        </description>
-        <pubDate>Thu, 15 Oct 2020 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/empirical-software-engineering-research-is-harder-than-you-think.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/empirical-software-engineering-research-is-harder-than-you-think.html</guid>
       </item>
     
   </channel>
