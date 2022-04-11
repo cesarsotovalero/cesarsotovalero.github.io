@@ -65,11 +65,12 @@ Also,
 
 # Co-reviewer
 
+- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2022
 - [ACM Digital Threats: Research and Practice](https://dl.acm.org/journal/dtrap), 2021
-- [ISSRE'20](http://2020.issre.net/research-cfp)
+- [ISSRE](http://2020.issre.net/research-cfp), 2020
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2020
-- [ICSE'19](https://conf.researchr.org/home/icse-2019)
-- [ICST'18](https://www.es.mdh.se/icst2018)
+- [ICSE](https://conf.researchr.org/home/icse-2019), 2019
+- [ICST](https://www.es.mdh.se/icst2018), 2018
 
 # Volunteer 
 

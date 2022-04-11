@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Diversity-driven Software Debloat
+title:  Diversity-Driven Software Debloat
 subtitle: Leveraging the Wisdom of Multiple Coverage Tools
 tags: debloat popular
 keywords: software debloat, diversity, jdbl
@@ -86,10 +86,11 @@ There are many more examples like the two described above: including interfaces,
 
 # The Winning Strategy
 
-To overcome the limitations of coverage and tracing tools, I tackle the problem from a different perspective. I decided to merge the coverage and tracing results of various tools, and debloat what none of the tools determines as covered. The current implementation of JDBL combines the outputs of three tools: JaCoco, [yajta](https://github.com/castor-software/yajta/), and the native class loader of the JVM. The benefits and drawbacks of these are the following:
+To overcome the limitations of coverage and tracing tools, I tackle the problem from a different perspective. I decided to merge the coverage and tracing results of various tools, and debloat what none of the tools determines as covered. The current implementation of JDBL combines the outputs of fourth tools: [JaCoco](https://www.jacoco.org/jacoco/), [JCov](https://wiki.openjdk.java.net/display/CodeTools/jcov), [yajta](https://github.com/castor-software/yajta/), and the native class loader of the JVM. The benefits and drawbacks of these are the following:
 
-- **Yajta**: It is a tracing agent that works offline, it relies on [Javassist](https://www.javassist.org/) for bytecode instrumentation. Probes are inserted in the beginning of each method. However, it does not perform fine-grain trace coverage at the instruction level. 
 - **JaCoCo**: It is a mature and fine-grain (supports branch-level coverage) Java code coverage tool that relies on [ASM](https://asm.ow2.io/) for bytecode instrumentation. However, it does not cover throw exceptions, interfaces, and certain bytecode constructs.
+- **JCov**: Is a pure java implementation of a code coverage tool which supports applications on JDK 1.0 and higher.
+- **Yajta**: It is a tracing agent that works offline, it relies on [Javassist](https://www.javassist.org/) for bytecode instrumentation. Probes are inserted in the beginning of each method. However, it does not perform fine-grain trace coverage at the instruction level.
 - **JVM class loader**: It is very accurate since the JVM needs to load a class before executing it, by design. However, it limited to classes and does not trace methods. 
 
 A general scheme of JDBL is presented in the following figure:
@@ -98,7 +99,7 @@ A general scheme of JDBL is presented in the following figure:
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2020/jdbl_diversity.jpg alt: "JDBL pipeline" %}
   <figcaption class="stroke">
-    &#169; Debloat execution pipeline in JDBL.
+    &#169; Debloat execution pipeline in JDBL (JCov is not shown because it was added later.).
   </figcaption>
 </figure>
 

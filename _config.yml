@@ -256,6 +256,7 @@ gem:
   - jekyll-tagging
   - jekyll-responsive-image
   - jekyll-seo-tag
+  - jekyll-mermaid
 
 plugins:
   - jemoji
@@ -265,6 +266,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll-toc
+  - jekyll-mermaid
+
+# Mermaid, library for diagrams, see https://mermaid-js.github.io, and https://github.com/jasonbellamy/jekyll-mermaid
+mermaid:
+  src: '/js/mermaid.min.js'
 
 # Optional. The default date format, used if none is specified in the tag.
 last-modified-at:

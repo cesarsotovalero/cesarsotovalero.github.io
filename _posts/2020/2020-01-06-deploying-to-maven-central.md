@@ -173,7 +173,7 @@ After the approval of the ticket, you need to add additional information to the 
 </build>
 {% endhighlight %}
 
-9. Follow [this instructions](https://central.sonatype.org/pages/working-with-pgp-signatures.html) to encrypt your artifact with [gpg2](https://linux.die.net/man/1/gpg2) and distribute your public key to a key server (e.g., [http://keys.gnupg.net](http://keys.gnupg.net)). Do not forget to choose a passphrase to protect your secret key. Then add your gpg credentials with your passphrase to your Maven`settings.xml` file locally:
+9. Follow [this instructions](https://central.sonatype.org/pages/working-with-pgp-signatures.html) to encrypt your artifact with [gpg2](https://linux.die.net/man/1/gpg2) and distribute your public key to a key server (e.g., [http://keys.gnupg.net](http://keys.gnupg.net)). Do not forget to choose a passphrase to protect your secret key. Then add your gpg credentials with your passphrase to your Maven`settings.xml` file locally and use the [Sonatype Nexus repository manager](https://oss.sonatype.org/) as the server :
 
 {% highlight xml linenos %}
 <settings>
@@ -190,6 +190,14 @@ After the approval of the ticket, you need to add additional information to the 
         </profile>
       </profiles>
 </settings>
+
+<servers>
+  <server> 
+    <id>ossrh</id>
+    <username>the_user_name</username>
+    <password>the_password</password>
+  </server>
+</servers>r
 {% endhighlight %}
 
 10. Add `nexus-staging-maven-plugin` with the following configurations:

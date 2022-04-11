@@ -24,7 +24,7 @@ I'm a Ph.D. student  in the Department of Software and Computer Systems ([SCS](h
  href="software-debloating-papers.html">software
  debloating papers</a>, or consult my list of <a href="software-debloating-tools.html">software debloating tools</a>. I also do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories. For more on this topic, see this list of <a href="mining-software-repositories-resources.html">mining software repositories resources</a>. In particular, I'm interested in measuring the impact and pervasiveness of bloatware across large-scale software ecosystems. I'm keen to perform research on software technology which: 1) provide actionable insights to researchers and practitioners about how modern software is currently being developed and maintained, and 2) provide practical tools for developers in order to improve software quality.
 
-# Formal education
+# Formal Education
 
 [//]: # (:mortar_board:)
 
@@ -53,7 +53,7 @@ Out of work, I enjoy spending time with my family, reading ~~physical~~ books, a
 My very <span style="background-color:#012639;color:white;">dark blue</span> is `#012639`.
 
 
-#  Contact me
+#  Contact
 
 My physical workplace is at the KTH campus:
 
@@ -67,7 +67,7 @@ My physical workplace is at the KTH campus:
      2. you verify your form on formspree.io.
 -->
 
-You can always send me an email:
+You can always email me:
 
 <form id="contact-me" class="wj-contact" action="https://formspree.io/mrgqpknn" method="POST">
     <input type="text" name="email" placeholder="Email">
@@ -77,6 +77,17 @@ You can always send me an email:
     <input type="text" name="_gotcha" style="display:none">
     <input type="submit" value="📨 Send">
 </form>
+
+
+---
+
+<h1 class="text-center" style="font-family: 'Linux Biolinum'; font-weight: lighter">Organizations </h1>
+
+<p align="center">
+<a href="https://www.kth.se"><img class="" title="KTH" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/kth_logo.png" alt="KTH" height="65"></a>
+<a href="http://wasp-sweden.org"><img class="" title="WASP" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/wasp_logo.png" alt="WASP" height="75"></a>
+<a href="https://www.castor.kth.se"><img class="" title="CASTOR" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/castor_logo.png" alt="CASTOR" height="50"> </a>
+</p>
 
 <style>
 form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {

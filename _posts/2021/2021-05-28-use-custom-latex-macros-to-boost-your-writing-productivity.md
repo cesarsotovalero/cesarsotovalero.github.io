@@ -261,5 +261,5 @@ The output is as following:
 
 LaTeX is not only an awesome tool to create beautiful documents.
 It also provides packages to format and compute numeric values as variables.
-I've used all the custom commands presented in this post to ease the writing process of [my research papers](https://www.cesarsotovalero.net/publications)
+I've used all the custom commands presented in this post to ease the writing process of [my research papers](https://www.cesarsotovalero.net/publications).
 Since then, dealing with numeric values and percentages has never been easier. 
