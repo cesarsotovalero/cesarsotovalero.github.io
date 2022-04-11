@@ -51,6 +51,8 @@ c[Get out of Academia] --> j[Get a Job in the Industry];
 b[Stay in Academia] --> d[Become a PostDoc];
 d[Become a PostDoc] --> e[Become an Assistant Professor];
 e[Become an Assistant Professor] --> f[Become an Tenured Professor];
+f[Become an Tenured Professor] --> k[Enjoy!];
+j[Get a Job in the Industry] --> k[Enjoy!];
 {% endmermaid %}
 
 Once you decide to stay in academia, the natural goal is to become a tenured professor.
