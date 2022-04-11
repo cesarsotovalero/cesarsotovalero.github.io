@@ -44,7 +44,7 @@ The simplified career paths look like this:
 
 [//]: # (see https://mermaid-js.github.io)
 {% mermaid %}
-flowchart LR;
+flowchart TB;
 a[Finished PhD] --> b[Stay in Academia];
 a[Finished PhD] --> c[Get out of Academia];
 c[Get out of Academia] --> j[Get a Job in the Industry];
