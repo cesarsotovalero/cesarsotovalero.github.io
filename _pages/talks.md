@@ -16,6 +16,10 @@ published: true
 As a Ph.D. student, I present my work in workshops, conferences, companies, and everywhere.
 The following is a non-exhaustive list of my technical presentations.
 
+# 2022
+
+- [A Prime on Software Debloating](../talks/A_Prime_On_Software_Debloating.pdf "pdf"){:target="_blank"}. Presented at KTH, March 2022.
+
 # 2021
 
 - [A Longitudinal Analysis of Bloated Java Dependencies](https://youtu.be/cePEl485E_s "video"){:target="_blank"}. Presented at ESEC/FSE, August 2021.

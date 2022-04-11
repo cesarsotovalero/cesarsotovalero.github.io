@@ -75,13 +75,4 @@ use-site-title: true
 </ul>
 
 </div>
-
----
-
-<h1 class="text-center" style="font-family: 'Linux Biolinum'; font-weight: lighter">Organizations </h1>
-
-<p align="center">
-<a href="https://www.kth.se"><img class="" title="KTH" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/kth_logo.png" alt="KTH" height="65"></a>
-<a href="http://wasp-sweden.org"><img class="" title="WASP" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/wasp_logo.png" alt="WASP" height="75"></a>
-<a href="https://www.castor.kth.se"><img class="" title="CASTOR" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/castor_logo.png" alt="CASTOR" height="50"> </a>
-</p>
+  
