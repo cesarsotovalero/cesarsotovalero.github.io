@@ -143,7 +143,7 @@ I want to mention that researcher is somebody who actively does research, includ
 - A PostDoc
 - An Assistant Professor
 - A Tenured Professor
-- _A PhD working in a research institution_
+- _A PhD working in a institution that do research_
 - _A PhD working in R&D at a company_
 
 Therefore, if you have a strong passion for research and don't like teaching, then there are other ways to be a researcher outside academia.
@@ -159,6 +159,9 @@ So, now that you know... if you still want it, then be ready!
 # References
 
 - [To stay in academia or not, that is the question](https://gradadmissions.mit.edu/blog/stay-academia-or-not-question)
+
+
+# Footnotes
 
 [^1]: No, this post is not about whether staying in academia after a getting a PhD in Computer Science is a good decision or not. But let me know in the comments below if you want me to write a post about it.
 
