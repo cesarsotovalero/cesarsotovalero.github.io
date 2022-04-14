@@ -2343,6 +2343,38 @@ article[role=main] {
   }
 }
 
+/* Buttons */
+
+.centered {
+  text-align: center;
+}
+
+a.btn {
+  text-decoration: none;
+  font-family: "Concourse T4", Helvetica, Arial, sans-serif;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.centered a {
+  text-shadow: 1px 1px #000000;
+  padding: 0.9375rem 1.875rem;
+  font-size: 2.75rem;
+  margin-top: 0.625rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .centered a {
+    font-size: 1.75rem;
+  }
+}
+
 /* TOC */
 /* https://www.gemini.com/cryptopedia/ethereum-smart-contracts-tokens-use-cases */
 
@@ -2461,11 +2493,11 @@ html, html[data-theme="light"] {
 
 html[data-theme="dark"] {
   --link-color: hsl(0, 0%, 85%);
-  --navbar-color: #474747;
-  --footer-color: #474747;
+  --navbar-color: #012639;
+  --footer-color: #012639;
   --post-meta-index-color: hsl(0, 0%, 76%);
-  --blockquote-color: hsl(0, 0%, 95%);
-  --blockquote-background-color: #444444;
-  --main-background-color: hsl(0, 0%, 20%);
+  --blockquote-color: rgba(1, 38, 57, 0.8);
+  --blockquote-background-color: rgba(1, 38, 57, 0.8);
+  --main-background-color: #012639;
   --main-text-color: hsl(0, 0%, 85%);
 }
