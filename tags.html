@@ -3,6 +3,12 @@ layout: page
 title: 'Tag Index'
 ---
 
+<!-- Carbon ads -->
+<div class="cesarcarbon">
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
+</div>
+
+
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
 {%- capture site_tags -%}
@@ -16,13 +22,6 @@ title: 'Tag Index'
 {%- for tag in tags_list -%}
 <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
 {%- endfor -%}
-</div>
-
-<hr style="margin-bottom: 0px;">
-
-<!-- Carbon ads -->
-<div class="cesarcarbon">
-    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
 </div>
 
 <div id="full-tags-list">

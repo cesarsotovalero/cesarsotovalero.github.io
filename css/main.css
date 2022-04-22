@@ -404,6 +404,10 @@ a[href$=".pptx"] {
   padding: 10px 10px 0 10px;
 }
 
+.navbar-collapse {
+  padding: 0;
+}
+
 @media only screen and (max-width: 450px) {
   .navbar {
     float: right;
