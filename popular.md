@@ -7,9 +7,9 @@ description: I'm a Ph.D. Student Doing Research in Software Technology
 use-site-title: true
 ---
 
-{% include social.html type="page" %}
-
----
+<div class="header-hiddable">
+   {% include social.html type="page" %}
+</div>
 
 <!-- Carbon ads -->
 <div class="cesarcarbon">

@@ -2,12 +2,28 @@
 layout: base
 ---
 
-{% include header.html type="post" %}
+<!--<nav class="navbar-fixed-top navbar-custom">-->
+<!--   <div class="container-fluid">-->
+<!--      {% include navigation.html %}-->
+<!--   </div>-->
+<!--</nav>-->
 
+
+
+<nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light">
+   <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+   </button>
+
+   <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+      {% include navigation.html %}
+   </div>
+</nav>
+
+{% include header.html type="post" %}
 
 <div class="container">
    <div class="row">
-
       <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
          <article role="main" class="blog-post">
             {{ content }}

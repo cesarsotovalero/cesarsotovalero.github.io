@@ -2,23 +2,37 @@
 layout: base
 ---
 
-{% include header.html type="page" %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            {% include navigation.html %}
+   </div>
+</nav>
+
+
+<div class="header-hiddable">
+   {% include header.html type="page" %}
+</div>
 
 <div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      {{ content }}
-    </div>
-  </div>
+   <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+         {{ content }}
+      </div>
+   </div>
 </div>
 
 
 <!-- https://www.bryanbraun.com/anchorjs/ -->
 {% if page.subtitle != 'A Ph.D. Student Doing Research in Software Technology' %}
 <script>
-  anchors.options = {
-    position: 'left'
-  };
-  anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
+   anchors.options = {
+      position: 'left'
+   };
+   anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
 </script>
 {% endif %}

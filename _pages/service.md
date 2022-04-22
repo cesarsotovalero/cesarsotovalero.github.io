@@ -1,11 +1,9 @@
 ---
 permalink: service.html
 layout: page
-title: Services
+title: Service
 subtitle: Additional work
 published: true
----
-
 ---
 
 <!-- Carbon ads -->
