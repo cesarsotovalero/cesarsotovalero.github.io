@@ -5,11 +5,12 @@ title: About me
 subtitle: In brief
 ---
 
-<code style="text-align: center; font-family:jetbrains_monoregular, courier new, serif; font-size: 18px; font-weight: lighter">
- <span class="type" style="text-align: center"></span>
-</code>
+[//]: # ()
+[//]: # (<code style="text-align: center; font-family:jetbrains_monoregular, courier new, serif; font-size: 18px; font-weight: lighter">)
 
----
+[//]: # ( <span class="type" style="text-align: center"></span>)
+
+[//]: # (</code>)
 
 <!-- Carbon ads -->
 <div class="cesarcarbon">
@@ -75,19 +76,9 @@ You can always email me:
     <input type="hidden" name="_next" value="<REDIRECTION LINK> ">
     <input type="hidden" name="_subject" value="New Contact Form Submission">
     <input type="text" name="_gotcha" style="display:none">
-    <input type="submit" value="📨 Send">
+    <input type="submit" value="✉️ Send Message">
 </form>
 
-
----
-
-<h1 class="text-center" style="font-family: 'Linux Biolinum'; font-weight: lighter">Organizations </h1>
-
-<p align="center">
-<a href="https://www.kth.se"><img class="" title="KTH" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/kth_logo.png" alt="KTH" height="65"></a>
-<a href="http://wasp-sweden.org"><img class="" title="WASP" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/wasp_logo.png" alt="WASP" height="75"></a>
-<a href="https://www.castor.kth.se"><img class="" title="CASTOR" src="https://cf.jare.io/?u=https://www.cesarsotovalero.net/img/logos/castor_logo.png" alt="CASTOR" height="50"> </a>
-</p>
 
 <style>
 form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
@@ -104,6 +95,7 @@ form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
     border-width: 1px;
     border-radius: 3px;
     transition: box-shadow .2s ease;
+    font-family:  "Equity Text A", sans-serif;
 }
 
 form.wj-contact input[type="submit"] {
@@ -114,7 +106,7 @@ form.wj-contact input[type="submit"] {
     padding: 12px;
     margin: 0.25em 0 0 0;
     height: auto;
-    font-family:  'Century Supra C4', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family:  "Concourse T6", sans-serif;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 800;
@@ -192,7 +184,7 @@ form.wj-contact input[type="submit"]:hover {
 </script>
 
 
-<p class="post-meta">
+<p class="post-meta" style="margin-top: 60px;">
    <i class="fas fa-user-edit"></i>
    Website last modified on {{ page.last_modified_at | date: "%B %-d, %Y" }}
 </p>

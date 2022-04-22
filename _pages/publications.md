@@ -12,8 +12,6 @@ published: true
 > -- <cite>Benoit Baudry (explaining me his expectations as supervisor in 2018)</cite>
 -->
 
----
-
 <!-- Carbon ads -->
 <div class="cesarcarbon">
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>

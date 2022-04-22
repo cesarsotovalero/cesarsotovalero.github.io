@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Write a Good Paper Rebuttal?
+title: How to Write a Good Paper Rebuttal?
 subtitle: A practical guide
 tags: research
 description: My conference paper was rejected. Is it worth writing a rebuttal? This post answers this question and presents practical guidelines to write an excellent rebuttal.

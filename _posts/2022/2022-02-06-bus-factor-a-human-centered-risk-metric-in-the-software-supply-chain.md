@@ -44,7 +44,7 @@ Usually, the codebase knowledge is not equally distributed among the project con
 For example, a team member might create critical components by pushing code that is unintelligible or inaccessible to other team members (e.g., code that is undocumented, never shared, encrypted, obfuscated or not simply public).
 Thus, a critical project component is at risk of being lost as a direct consequence of the absence of that team member, making the member key for the survival of the project.
 
-> "How many or few would have to be hit by a truck (or quit) before the project is incapacitated?" -- James Coplien (in [Pair Programming Illuminated](https://www.amazon.com/Pair-Programming-Illuminated-Laurie-Williams/dp/0201745763))[^1] 
+> "How many or few would have to be hit by a truck (or quit) before the project is incapacitated?" -- James Coplien (in [Pair Programming Illuminated](https://www.amazon.com/Pair-Programming-Illuminated-Laurie-Williams/dp/0201745763))[^1]
 
 The bus factor is a measure of the project's resilience in case of the most extreme kinds of perturbations (i.e., engineer turnover due to burnout, work leaving, chronic illness, accidents, or death).
 The metric is related to socio-technical debt caused by the concentration of knowledge, being an important problem in collective development.
@@ -175,7 +175,6 @@ Product managers and stakeholders should be aware of this metric and monitor the
 Many different calculation approaches are proposed in the literature, so today, it is difficult to make a novel scientific contribution to the "bus factor problem."
 However, [as recent work suggests](https://arxiv.org/abs/2202.01523): a multifactorial bus factor estimation algorithm that uses data on code review and meetings together with Git data could improve the accuracy of this metric.
 
-
 # References
 
 - [Bus Factor in Practice](https://arxiv.org/abs/2202.01523)
@@ -184,7 +183,7 @@ However, [as recent work suggests](https://arxiv.org/abs/2202.01523): a multifac
 - [Calculating the "truck factor" for GitHub projects](https://lwn.net/Articles/651366/)
 - [Top-30 GitHub projects with highest Truck Factor](https://medium.com/@aserg.ufmg/top-30-github-projects-with-highest-truck-factor-ab0862e9bb7a)
 
----
+# Footnotes
 
 [^1]: There are different definitions of the bus factor in the literature: it is also known as the “truck factor”; and sometimes words as “incapacitated” or “abandoned” are used instead of “stalled.”
 

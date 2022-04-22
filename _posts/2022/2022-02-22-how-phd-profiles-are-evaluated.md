@@ -61,7 +61,8 @@ z[Start Your Own Company] --> k[Enjoy!];
 If you decide to stay in academia, the natural goal is to become a tenured professor.
 But achieving this goal is not easy, to say the least.
 It will take about ten years to get (approximately 4 to 6 years working as a PostDoc, plus approximately 5 to 6 years as working as an Assistant Professor).
-The success or failure of this endeavor depends on many things.
+
+The success or failure of the academic career path depends on many things.
 Some of them are under your control, e.g. your research performance, but other depends on luck, networking, and the perceived impact of your academic contributions.
 For example, if you are into Theoretical Computer Science, then getting a large number of good publications during your time as a researcher is typically very difficult.
 This is true, especially when compared to other research fields, such as Machine Learning, where there is more opportunity to develop so-called “multidisciplinary research,” leading to more publications.
@@ -73,7 +74,8 @@ Measuring performance of researchers an inherent problem of academia, and there 
 Overall, most people agree that success in academia is based on **prestige** and **networking**.
 The prestige is often obtained through impactful publications, and it can be roughly measured with some bibliometric variables.
 There are several metrics that attempt to rank researchers, more notably are the citations count and [H-index](https://en.wikipedia.org/wiki/H-index).
-There is also other metrics that consider the teaching experience.
+
+Apart from the research-based metrics, other metrics consider the teaching experience.
 For example, the number of supervised students, courses taught, etc.
 On the other hand, networking determines the chances to get well positioned by meeting the “right people.”
 These people are the already established professors you may contact in the future when seeking for academic job opportunities.

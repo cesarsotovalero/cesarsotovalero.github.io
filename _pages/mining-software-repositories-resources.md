@@ -13,8 +13,6 @@ image: ../img/pages/software-debloating-papers/debloating.png
 > *― [Massimiliano Di Penta](https://scholar.google.com/citations?user=j6ucyOAAAAAJ&hl=en)*
 -->
 
----
-
 <!-- Carbon ads -->
 <div class="cesarcarbon">
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
