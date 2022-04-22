@@ -28,7 +28,7 @@ use-site-title: true
   {% for post in site.posts limit:10 %}
   <article class="post-preview-home">
   <article class="text-left" >
-    <span class="text-left">  
+    <div class="text-left">  
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-title-main">
           <h2 class="post-title-main">{{ post.title }}</h2>
         </a>
@@ -46,12 +46,12 @@ use-site-title: true
               </span>
               -->
             </p>
-    </span>
+    </div>
         <div class="post-entry-container">
         {% if post.image %}
               <div class="post-image" style="height: auto; width: auto;">
                 <a href="{{ post.url | prepend: site.baseurl }}">
-                  <img src="{{ post.image }}">
+                  <img src="{{ post.image }}" alt="{{ post.image }}">
                 </a>
               </div>
               {% endif %}
