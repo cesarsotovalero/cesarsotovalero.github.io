@@ -220,59 +220,59 @@ main {
 
 .font-semibold {
   font-weight: 700;
-  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 18px;
+  font-family: "Concourse T6", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 1rem;
   color: var(--main-text-color);
 }
 
 .mr-2 {
-  font-size: 18px;
+  font-size: 1rem;
   color: var(--main-text-color);
 }
 
 .ml-1 {
-  font-size: 18px;
+  font-size: 1rem;
   color: var(--main-text-color);
 }
 
 .text-sm {
-  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  /*font-size: 18px;*/
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 1rem;
   line-height: 1.5rem;
   color: var(--main-text-color);
 }
 
 .text-xs {
-  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  /*font-size: 16px;*/
+  font-family: "Concourse T2", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 1rem;
   line-height: 1.5rem;
   color: var(--main-text-color);
 }
 
 .color-text-primary {
-  font-size: 18px;
-  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 1rem;
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   color: var(--main-text-color);
 }
 
 .gsc-comment-box-textarea {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .gsc-reactions {
-  font-size: 18px;
-  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 1rem;
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   color: var(--main-text-color);
 }
 
 .gsc-comments {
-  font-size: 18px;
-  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 1rem;
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   color: var(--main-text-color);
 }
 
 .gsc-comments-count {
-  font-family: "Equity Text A", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   color: var(--main-text-color);
 }
 
@@ -283,16 +283,16 @@ main {
 
 @media only screen and (max-width: 425px) {
   .font-semibold  {
-    /*font-size: 18px;*/
+    font-size: 1rem;
   }
   .mr-2 {
-    /*font-size: 18px;*/
+    font-size: 1rem;
   }
   .text-sm {
-    font-size: 18px;
+    font-size: 1rem;
   }
   .text-xs {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 

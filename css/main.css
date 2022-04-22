@@ -42,7 +42,7 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Century Supra C4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T6 Tab", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
   font-weight: bold;
@@ -50,18 +50,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  margin-top: 35px;
-  letter-spacing: -1.5px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  letter-spacing: -0.25px;
 }
 
 h2 {
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   letter-spacing: -0.25px;
 }
 
 h3 {
-  margin-top: 15px;
-  letter-spacing: -0.5px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  letter-spacing: -0.25px;
 }
 
 
@@ -132,7 +135,7 @@ em {
 }
 
 .h1, h1 {
-  font-size: 32px;
+  font-size: 36px;
 }
 
 @media only screen and (max-width: 425px) {
@@ -143,7 +146,7 @@ em {
 }
 
 .h2, h2 {
-  font-size: 26px;
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 425px) {
@@ -163,6 +166,12 @@ hr.small {
   border-width: 4px;
   border-color: inherit;
   border-radius: 3px;
+}
+
+@media only screen and (max-width: 425px) {
+  hr.small {
+    border-width: 2px;
+  }
 }
 
 .main-content {
@@ -260,15 +269,46 @@ a[href$=".pptx"] {
 
 /* --- Navbar --- */
 
+.container-fluid {
+  padding: 0px;
+}
+
+.navigation {
+  /*border-bottom: 0.5px solid #bfbfbf;*/
+  margin: 0px 0 30px 0;
+  padding: 5px 0 0px 0;
+  /*blurring*/
+  background-color: var(--main-background-color);
+}
+
+
+.navigation a {
+  text-decoration: none;
+  padding: 0 5px 0 5px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 450px) {
+  .navigation a {
+    font-size: 18px;
+  }
+}
+
+.navigation a:hover {
+  font-family: "Concourse T6", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+  text-decoration-thickness: 0.05em;
+  font-weight: bold;
+}
+
 .navbar-custom {
-  background-color: var(--navbar-color);
-  border-bottom: 1px solid #DDDDDD;
-  font-family: "Century Supra C4", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  -webkit-transition: padding .5s ease-in-out;
-  -moz-transition: padding .5s ease-in-out;
-  transition: padding .5s ease-in-out;
-  transition: top 0.1s; /* Transition effect when sliding down (and up) */
-  font-weight: 700;
+  font-family: "Concourse T2", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-transition: padding 1s ease-in-out;
+  -moz-transition: padding 1s ease-in-out;
+  transition: padding 1s ease-in-out;
+  transition: top 0.5s; /* Transition effect when sliding down (and up) */
+  /*font-weight: 700;*/
+  /*margin-right: 7px;*/
 }
 
 .navbar-custom .nav li a {
@@ -316,20 +356,30 @@ a[href$=".pptx"] {
   height: 0px;
 }
 
-.navbar-brand {
-  font-family: 'Rouge Script', "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
-  font-size: 26px;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+#navbar-brand {
+  font-family: 'Rouge Script', "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  padding: 0 5px 0 5px;
+  float: none;
+}
+
+#navbar-brand:hover {
+  /*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);*/
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 425px) {
-  .navbar-brand {
-    font-size: 20px;
+  #navbar-brand {
+    font-size: 24px;
   }
 }
 
+
 .navbar.navbar-default.navbar-fixed-top.navbar-custom {
-  transition: top 0.5s ease-in-out; /* Transition effect when sliding down (and up) */
+  transition: top 1s ease-in-out; /* Transition effect when sliding down (and up) */
+  padding: 0;
+  margin: 0;
+  float: none;
 }
 
 .navbar-toggle {
@@ -338,12 +388,35 @@ a[href$=".pptx"] {
 }
 
 
+.navbar {
+  position: relative;
+  z-index: 99;
+  margin: 0;
+  padding: 10px 10px 0 10px;
+}
+
+.navbar-toggle {
+  /*float: right;*/
+  position: relative;
+  z-index: 99;
+  float: right;
+  margin: 0;
+  padding: 10px 10px 0 10px;
+}
+
+@media only screen and (max-width: 450px) {
+  .navbar {
+    float: right;
+  }
+}
+
+
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    padding: 3px 0;
-    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-    transition: background .5s ease-in-out, padding .5s ease-in-out;
+    padding: 0px 0;
+    -webkit-transition: background 1s ease-in-out, padding 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out, padding 1s ease-in-out;
+    transition: background 1s ease-in-out, padding 1s ease-in-out;
   }
 
   .navbar-custom.top-nav-short {
@@ -352,31 +425,50 @@ a[href$=".pptx"] {
   }
 }
 
-.navbar-custom .avatar-container {
-  opacity: 1;
-  position: absolute;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  left: 50%;
-  width: 50px;
-  margin-top: 1.75rem;
+.navbar-custom .container-fluid ul {
+  list-style: none;
+  text-align: center;
 }
 
-.navbar-custom .avatar-container .avatar-img-border {
+.navbar-custom  .container-fluid ul li {
+  display: inline-block;
+}
+
+.header-image .avatar-container {
+  opacity: 1;
+  /*position: absolute;*/
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  /*left: 50%;*/
+  width: 50px;
+  /*margin-top: 1.75rem;*/
+
+
+}
+
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.header-image .avatar-container .avatar-img-border {
   width: 100%;
   border-radius: 50%;
-  margin-left: -50%;
-  display: inline-block;
+  /*margin-left: -50%;*/
+  /*display: inline-block;*/
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
-.navbar-custom .avatar-container .avatar-img {
+.header-image .avatar-container .avatar-img {
   width: 100%;
   border-radius: 50%;
-  display: block;
+  /*display: block;*/
 }
 
 .avatar-img-small {
@@ -411,19 +503,19 @@ a[href$=".pptx"] {
 }
 
 @media only screen and (min-width: 768px) {
-  .navbar-custom .avatar-container {
+  .header-image .avatar-container {
     width: 100px;
     /*margin-top: -50px;*/
   }
 
-  .navbar-custom .avatar-container .avatar-img-border {
+  .header-image .avatar-container .avatar-img-border {
     width: 100%;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
     -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
   }
 
-  .navbar-custom .avatar-container .avatar-img {
+  .header-image .avatar-container .avatar-img {
     width: 100%;
   }
 }
@@ -437,12 +529,13 @@ a[href$=".pptx"] {
   content: " \25BC";
 }
 
+
 #theme-toggle:hover .fa-moon {
   color: var(--main-background-color);
 }
 
 #theme-toggle:hover .fa-sun {
-  color: var(--main-background-color);
+  color: var(--main-text-color);
 }
 
 .navbar-nav {
@@ -615,7 +708,7 @@ a[href$=".pptx"] {
   width: 100%;
   border-radius: 3px;
   margin-left: 4px;
-  font-family: "Century Supra C4", "Linux Biolinum";
+  font-family: "Concourse T6", "Century Supra C4", "Linux Biolinum";
 }
 
 #mailchimp-subscribe-section-footer #mc-embedded-subscribe-footer {
@@ -684,11 +777,15 @@ a[href$=".pptx"] {
   color: var(--main-text-color);
 }
 
+.fa-sun:hover {
+  color: var(--main-text-color);
+}
+
 /* --- Footer --- */
 
 footer {
-  padding: 1.875rem 0;
-  border-top: 1px #EAEAEA solid;
+  padding: 1.5rem 0;
+  border-top: 0.5px #dadada solid;
   margin-top: 3.125rem;
   font-size: 0.875rem;
   background-color: var(--footer-color);
@@ -701,6 +798,10 @@ footer a {
 footer .list-inline {
   margin: 0;
   padding: 0;
+  -webkit-transition: padding 1s ease-in-out;
+  -moz-transition: padding 1s ease-in-out;
+  transition: padding 1s ease-in-out;
+  transition: top 0.75s; /* Transition effect when sliding down (and up) */
 }
 
 .icon-bar {
@@ -731,7 +832,7 @@ footer .theme-by {
 
 @media only screen and (min-width: 768px) {
   footer {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 
   footer .footer-links {
@@ -810,12 +911,18 @@ logo-main a:hover {
 .post-title-main {
   color: var(--main-text-color);
   text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.post-title-main:hover {
+  text-decoration-thickness: 0.05em;
 }
 
 .post-preview .post-title-main {
   font-size: 38px;
   margin-top: 0;
   color: var(--main-text-color);
+  margin-bottom: 10px;
 }
 
 .post-preview .post-subtitle {
@@ -840,14 +947,14 @@ logo-main a:hover {
   font-size: 18px;
   /*font-style: italic;*/
   margin: 10px 12px 10px 0;
-  font-family: "Equity Text A", "Cambria", "Open Sans";;
+  font-family: "Concourse T3", "Cambria", "Open Sans";;
 }
 
 p.post-meta {
   color: var(--post-meta-index-color);
   font-size: 18px;
   margin: 30px 0 30px 0;
-  font-family: "Equity Text A", "Cambria", "Open Sans";;
+  font-family: "Concourse T3", "Cambria", "Open Sans";;
 }
 
 @media only screen and (max-width: 425px) {
@@ -883,7 +990,7 @@ p.post-meta {
 
 .post-meta-index {
   color: var(--post-meta-index-color);
-  font-family: "Equity Text A", "Cambria", "Open Sans";
+  font-family: "Concourse T3", "Cambria", "Open Sans";
   font-size: 18px;
   /*font-style: italic;*/
   margin: 0 0 10px;
@@ -939,10 +1046,12 @@ p.post-meta {
   color: var(--main-text-color);
   text-decoration: underline;
   font-style: normal;
+  text-decoration-thickness: 0.05em;
 }
 
 .post-preview a:hover {
   text-decoration: underline;
+  text-decoration-thickness: 0.05em;
 }
 
 .post-read-more {
@@ -952,6 +1061,7 @@ p.post-meta {
 
 .post-preview .post-title {
   font-size: 32px;
+  margin-bottom: 10px;
 }
 
 .post-subtitle {
@@ -960,7 +1070,7 @@ p.post-meta {
 
 @media only screen and (max-width: 425px) {
   .post-subtitle {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -995,7 +1105,7 @@ p.post-meta {
 }
 
 #tiles-big .tile .apptitle {
-  font-family: "Century Supra C4";
+  font-family: "Concourse C3";
   font-weight: bold;
   font-size: 24px;
   padding: 0.625rem 0.9375rem;
@@ -1016,7 +1126,7 @@ p.post-meta {
 }
 
 #tiles-big .tile .appdesc {
-  font-family: "Equity Text A";
+  font-family: "Concourse T3";
   padding: 0 0.9375rem 0.9375rem;
   line-height: 1.5em;
   font-size: 20px;
@@ -1103,9 +1213,16 @@ p.post-meta {
 /* --- Post and page headers --- */
 
 .intro-header {
-  margin: 80px 0 0px;
+  margin: 10px 0 0px;
   position: relative;
 }
+
+@media only screen and (max-width: 450px) {
+  .intro-header {
+    margin: 0px 0 0 0;
+  }
+}
+
 
 .intro-header.big-img {
   background: no-repeat center center;
@@ -1132,8 +1249,10 @@ p.post-meta {
   transition: opacity 1s linear;
 }
 
+
 .intro-header .page-heading {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .intro-header.big-img .page-heading,
@@ -1144,21 +1263,22 @@ p.post-meta {
 }
 
 .intro-header .page-heading h1 {
-  margin-top: 0;
+  margin-top: 2rem;
   font-size: 46px;
-  font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-family: "Concourse T6", "Cambria", "Georgia", "Times New Roman", serif;
   font-weight: bold;
+  letter-spacing: normal;
 }
 
 .intro-header .post-heading h1 {
   margin-top: 0;
-  font-size: 35px;
+  font-size: 32px;
   word-spacing: 2px;
 }
 
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.1;
   display: block;
   font-family: "Concourse T2", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -1170,7 +1290,7 @@ p.post-meta {
 @media only screen and (max-width: 768px) {
   .intro-header .page-heading .page-subheading,
   .intro-header .post-heading .post-subheading {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 
@@ -1207,7 +1327,7 @@ p.post-meta {
 
 @media only screen and (min-width: 768px) {
   .intro-header {
-    margin-top: 130px;
+    /*margin-top: 130px;*/
   }
 
   .intro-header.big-img {
@@ -1284,7 +1404,7 @@ p.post-meta {
 /* --- Pager --- */
 
 .pager li a {
-  font-family: "Century Supra C4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T6", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 800;
@@ -1860,8 +1980,13 @@ ol {
   margin-bottom: 20px;
 }
 
-ul {
-  margin-bottom: 20px;
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li p {
+  margin-bottom: 10px;
 }
 
 .tag-list {
@@ -2145,7 +2270,7 @@ article[role=main] {
   #carbonads {
     float: none;
     position: relative;
-    margin: 10px auto;
+    margin: 10px 0 20px 0;
     width: 330px;
     height: 100px;
     z-index: 100;
@@ -2216,13 +2341,20 @@ article[role=main] {
 
   .cesarcarbon {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 
 
 @media only screen and (min-width: 1150px) {
+
+  .cesarcarbon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   #carbonads {
     position: absolute;
     top: 0;
@@ -2314,21 +2446,33 @@ article[role=main] {
 /* Footnotes */
 
 .footnotes {
-  color: var(--post-meta-index-color);
-  font-family: "Concourse T3", Helvetica, Arial, sans-serif;
+  color: var(--main-text-color);
+  font-family: "Equity Text A", Helvetica, Arial, sans-serif;
   font-size: 18px;
+  font-weight: lighter;
 }
 
 .footnote {
-  color: var(--post-meta-index-color);
-  font-family: "Concourse T3", Helvetica, Arial, sans-serif;
+  color: var(--footnote-link-color);
+  font-family: "Equity Text A", Helvetica, Arial, sans-serif;
   text-decoration: none;
+  font-weight: lighter;
+}
+
+.footnote:after {
+  content: "]";
+}
+
+.footnote:before {
+  content: "[";
 }
 
 .reversefootnote {
-  font-family: "Concourse T3", Helvetica, Arial, sans-serif;
+  font-family: "Equity Text A", Helvetica, Arial, sans-serif;
   text-decoration: none;
   font-size: 18px;
+  font-weight: lighter;
+  color: var(--footnote-link-color);
 }
 
 @media only screen and (max-width: 450px) {
@@ -2458,13 +2602,14 @@ a.btn {
   }
 }
 
-
-
 /*using numbers instead of bullets for listing*/
 /*#toc ul {*/
 /*  list-style: decimal;*/
 /*}*/
 
+.mapouter {
+  margin-bottom: 20px;
+}
 
 /*#toc {*/
 /*  width: calc(50% - 385px);*/
@@ -2479,16 +2624,25 @@ a.btn {
 /*}*/
 
 
+/* Hide the header */
+@media screen and (max-width: 450px) {
+  .header-hiddable {
+    visibility: hidden;
+    display: none;
+  }
+}
+
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
   --link-color: black;
-  --navbar-color: #e7e7e7;
-  --footer-color: #e7e7e7;
+  --navbar-color: #f0f0f0;
+  --footer-color: #f0f0f0;
   --post-meta-index-color: #808080;
   --blockquote-color: darkgreen;
   --blockquote-background-color: #f1f1f1;
   --main-background-color: hsl(0, 0%, 99%);
   --main-text-color: hsl(0, 0%, 10%);
+  --footnote-link-color: blue;
 }
 
 html[data-theme="dark"] {
@@ -2500,4 +2654,5 @@ html[data-theme="dark"] {
   --blockquote-background-color: rgba(1, 38, 57, 0.8);
   --main-background-color: #012639;
   --main-text-color: hsl(0, 0%, 85%);
+  --footnote-link-color: lightblue;
 }
