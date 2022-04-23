@@ -4,7 +4,7 @@
 @font-face {
   font-family: 'jetbrains_monoregular';
   src: url('https://www.cesarsotovalero.net/css/fonts/jetbrainsmono-regular-webfont.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/jetbrainsmono-regular-webfont.woff') format('woff');
+  url('https://www.cesarsotovalero.net/fonts/jetbrainsmono-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +12,7 @@
 @font-face {
   font-family: 'Century Supra T4';
   src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraT4.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraT4.woff') format('woff');
+  url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraT4.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -20,7 +20,7 @@
 @font-face {
   font-family: 'Century Supra T4';
   src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraT4-Bold.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraT4-Bold.woff') format('woff');
+  url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraT4-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -28,7 +28,7 @@
 @font-face {
   font-family: 'Century Supra C4';
   src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraC4.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraC4.woff') format('woff');
+  url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraC4.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -36,7 +36,7 @@
 @font-face {
   font-family: 'Century Supra C4';
   src: url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraC4-Bold.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Century/CenturySupraC4-Bold.woff') format('woff');
+  url('https://www.cesarsotovalero.net/fonts/Century/CenturySupraC4-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -45,7 +45,7 @@
 @font-face {
   font-family: 'Equity Text A';
   src: url('https://www.cesarsotovalero.net/fonts/Equity/equity_text_a_regular-webfont.woff') format('woff'),
-  url('https://www.cesarsotovalero.net/css/fonts/Equity/equity_text_a_regular-webfont.woff') format('woff');
+  url('https://www.cesarsotovalero.net/fonts/Equity/equity_text_a_regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -53,7 +53,7 @@
 @font-face {
   font-family: 'Equity Caps A';
   src: url('https://www.cesarsotovalero.net/fonts/Equity/equity_caps_a_regular-webfont.woff') format('woff'),
-  url('https://www.cesarsotovalero.net/css/fonts/Equity/equity_caps_a_regular-webfont.woff') format('woff');
+  url('https://www.cesarsotovalero.net/fonts/Equity/equity_caps_a_regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -62,7 +62,7 @@
 @font-face {
   font-family: 'Concourse T6 Tab';
   src: url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T6 Tab Regular.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Concourse/Concourse T6 Tab Regular.woff2') format('woff2');
+  url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T6 Tab Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -70,7 +70,7 @@
 @font-face {
   font-family: 'Concourse T6';
   src: url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T6 Regular.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Concourse/Concourse T6 Regular.woff2') format('woff2');
+  url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T6 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -78,7 +78,7 @@
 @font-face {
   font-family: 'Concourse T4';
   src: url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T4 Regular.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Concourse/Concourse T4 Regular.woff2') format('woff2');
+  url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T4 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -86,7 +86,7 @@
 @font-face {
   font-family: 'Concourse T3';
   src: url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T3 Regular.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Concourse/Concourse T3 Regular.woff2') format('woff2');
+  url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T3 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -94,7 +94,15 @@
 @font-face {
   font-family: 'Concourse T2';
   src: url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T2 Regular.woff2') format('woff2'),
-  url('https://www.cesarsotovalero.net/css/fonts/Concourse/Concourse T2 Regular.woff2') format('woff2');
+  url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T2 Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Concourse C3';
+  src: url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse C3 Regular.woff2') format('woff2'),
+  url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse C3 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

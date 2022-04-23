@@ -1181,7 +1181,7 @@ p.post-meta {
   font-size: 16px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 450px) {
   .tag-btn {
     font-size: 14px;
   }
@@ -1573,7 +1573,7 @@ code {
 !important;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 450px) {
   pre {
     font-size: 13px;
   }
@@ -1931,7 +1931,7 @@ figure figcaption {
   padding-top: 2rem;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 450px) {
   figure figcaption {
     font-size: .8em;
   }
@@ -2035,7 +2035,7 @@ ul li p {
   margin-right: 3px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 450px) {
   #i-tag {
     margin-left: 0;
   }
@@ -2112,7 +2112,7 @@ ul li p {
 }
 
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 450px) {
   .post-meta-index {
     display: flex;
     font-size: 16px;
@@ -2164,7 +2164,7 @@ ul li p {
   padding-right: 0px;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 450px) {
   .black-icons li {
     padding-right: 4px;
   }
@@ -2185,7 +2185,7 @@ ul li p {
   padding-left: 3px;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 450px) {
   .firstcharacter {
     font-size: 64px;
     padding-right: 6px;
@@ -2266,8 +2266,11 @@ article[role=main] {
   font-size: 0.9rem;
   width: 130px;
   float: right;
-  border: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
   border-radius: 4px;
+  -webkit-backface-visibility: hidden;
 }
 
 @media only screen and (max-width: 1150px) {
