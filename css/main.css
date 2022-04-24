@@ -2266,9 +2266,7 @@ article[role=main] {
   font-size: 0.9rem;
   width: 130px;
   float: right;
-  border-right: 1px solid #DDDDDD;
-  border-top: 1px solid #DDDDDD;
-  border-bottom: 1px solid #DDDDDD;
+  border: 1px solid #DDDDDD;
   border-radius: 4px;
   -webkit-backface-visibility: hidden;
 }
