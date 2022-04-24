@@ -19,14 +19,14 @@ author: cesarsotovalero
 published: true
 --- 
 
-You just finished your PhD and have decided to stay in academia.[^1]
-Typically, the next move is applying for a ~~temporally~~ position as PostDoc.
-So, at the end of the PhD your profile will be rigorously evaluated.
-At this point, you want to get a PostDoc offer leading to some “tenured track” so that you can eventually become an assistant professor.
-But hold on because this is just the beginning of an arduous journey.
-You are about to jump into one of academia's deepest and most competitive waters (i.e., the hyper-competitiveness for getting tenured positions).
-To succeed in this endeavor and reach “the end of the track,” you should have a publication profile that is appealing to the academic recruiters.
-But even if you have a ton of impactful publications, research experience, and talent, all of this is not enough to climb the peak.
+Let's say that you just finished your PhD and have decided to stay in academia.[^1]
+Typically, the next move is applying for a ~~temporally~~ position as PostDoc at some good university.
+To get a good PostDoc, at the end of the PhD your profile will be rigorously evaluated.
+At this point, you want to get a PostDoc offer leading to some “tenured track” so that you can eventually become an Assistant Professor.
+But hold on because getting a good PostDoc is just the beginning of an arduous journey.
+You are about to jump into one of academia's deepest and most competitive waters (i.e., the hyper-competitiveness for getting a position as a Tenured Professor).
+To succeed in this endeavor and reach what seems to be “the end of the track,” you should have a publication profile that is appealing to the academic recruiters.
+But even if you have a ton of impactful publications, research experience, and talent, all of this is not enough to climb the long peak.
 You also need enough teaching experience to demonstrate that you can perform well as a professor and scientist simultaneously.
 I think that if your goal is to stay in academia, it is better to anticipate all this and start working in the right direction during your PhD studies.
 Let's be prepared!
@@ -40,27 +40,27 @@ Let's be prepared!
 
 # The Goal
 
-After finishing PhD studies, there are basically three different career directions to follow: (1) staying in academia, (2) moving to the industry, or (3) start your own company.
+After finishing PhD studies, there are basically three different career directions to follow: (1) staying in academia, (2) moving to the industry, or (3) starting your own company.
 The simplified career paths look like this:
 
 [//]: # (see https://mermaid-js.github.io)
 {% mermaid %}
 flowchart TB;
-a[Finished PhD] --> b[Stay in Academia];
-a[Finished PhD] --> c[Get out of Academia];
+a[Finish PhD] --> b[Stay in Academia];
+a[Finish PhD] --> c[Get out of Academia];
 c[Get out of Academia] --> j[Get a Job in the Industry];
 c[Get out of Academia] --> z[Start Your Own Company];
 b[Stay in Academia] --> d[Become a PostDoc];
 d[Become a PostDoc] --> e[Become an Assistant Professor];
-e[Become an Assistant Professor] --> f[Become an Tenured Professor];
-f[Become an Tenured Professor] --> k[Enjoy!];
+e[Become an Assistant Professor] --> f[Become a Tenured Professor];
+f[Become a Tenured Professor] --> k[Enjoy!];
 j[Get a Job in the Industry] --> k[Enjoy!];
 z[Start Your Own Company] --> k[Enjoy!];
 {% endmermaid %}
 
 If you decide to stay in academia, the natural goal is to become a tenured professor.
-But achieving this goal is not easy, to say the least.
-It will take about ten years to get (approximately 4 to 6 years working as a PostDoc, plus approximately 5 to 6 years as working as an Assistant Professor).
+Achieving this goal is not easy, to say the least.
+It will take about ten years to get (approximately 4 to 6 years working as a PostDoc, plus approximately 5 to 6 years working as an Assistant Professor).
 
 The success or failure of the academic career path depends on many things.
 Some of them are under your control, e.g. your research performance, but other depends on luck, networking, and the perceived impact of your academic contributions.
@@ -71,9 +71,13 @@ The performance of researchers is tough to measure and evaluate.
 Having less publications does not necessarily mean that one is bad researcher, neither having a lot of publications is an indicator of excellence. 
 Measuring performance of researchers an inherent problem of academia, and there is nothing we can do about it.
 
-Overall, most people agree that success in academia is based on **prestige** and **networking**.
+Overall, most people agree that success in academia is mostly based on **prestige** and **networking**.
 The prestige is often obtained through impactful publications, and it can be roughly measured with some bibliometric variables.
 There are several metrics that attempt to rank researchers, more notably are the citations count and [H-index](https://en.wikipedia.org/wiki/H-index).
+
+<aside class="quote">
+    <em>“Success in academia is mostly based on prestige and networking.”</em>
+</aside>
 
 Apart from the research-based metrics, other metrics consider the teaching experience.
 For example, the number of supervised students, courses taught, etc.
@@ -141,6 +145,10 @@ Qualification for Tenured Professor in Sweden:
 
 I want to mention that researcher is somebody who actively does research, including:
 
+<aside class="quote">
+    <em>“You can be a researcher working outside of academia.”</em>
+</aside>
+
 - A PhD
 - A PostDoc
 - An Assistant Professor
@@ -150,13 +158,16 @@ I want to mention that researcher is somebody who actively does research, includ
 
 Therefore, if you have a strong passion for research and don't like teaching, then there are other ways to be a researcher outside academia.
 
+
+
+
 # Conclusion
 
-Given that you have enough passion for your field and the solid determination to continue in academia, you should know that the job can be a holy grail, but only after you get tenure.
-Unfortunately, there is a long way to go before reaching this desired position.
-Before that, candidates must go through a long path full of competitiveness and work uncertainty.
-This situation simply obeys the market laws: the demand for these positions is higher than the offer.
-So, now that you know... if you still want it, then be ready!
+Given that you have enough passion for your field and the solid determination to continue in academia, you should know that the job can be a holy grail, but only after becoming a tenured professor.
+Unfortunately, there is a long way to go before reaching this idyllic position.
+On the way, candidates must go through a long path full of competitiveness and work uncertainty.[^3]
+This situation obeys a simple market law: the demand for these positions is higher than the offer!
+If you still want to go through this professional adventure, you know what to expect after reading this post.
 
 # References
 
@@ -167,4 +178,6 @@ So, now that you know... if you still want it, then be ready!
 
 [^1]: No, this post is not about whether staying in academia after a getting a PhD in Computer Science is a good decision or not. But let me know in the comments below if you want me to write a post about it.
 
-[^2]: Good technical communication is a skill you have supposedly acquired during your PhD studies.
+[^2]: Good technical communication is a skill you have ~~supposedly~~ acquired during your PhD studies.
+
+[^3]: Work contracts in academia are typically short-term. Even talented Assistant Professors should often self-found themselves through public research grants.
