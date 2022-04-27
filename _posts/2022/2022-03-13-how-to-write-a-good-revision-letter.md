@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How to Write A Good Revision Letter
+title: How to Write a Good Revision Letter
 subtitle: M system to address major revisions and get my papers accepted
 tags: research
-description: Dealing with a major revision is a challenging stage in the life of doctoral students. In this post, I share my system and some useful resources to them navigate the academic revision process with panache.
+description: Dealing with a major revision is a challenging process in the life of doctoral students. In this post, I share my personal system and some useful resources that may help you to navigate the academic revision process with panache.
 keywords:
   - PhD career,
   - research paper,
