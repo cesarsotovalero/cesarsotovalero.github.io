@@ -21,10 +21,10 @@ published: false
 TODO
 
 <figure class="jb_picture">
-{% responsive_image path: img/posts/paint_on_wall.jpg alt:"TODO" %}
+  {% responsive_image path: img/posts/2022/cross_t_centralen.jpg alt:"TODO" %}
   <figcaption class="stroke"> 
-&#169; TODO. Photo taken at <a href="TODO">TODO</a>.
-</figcaption>
+    &#169; There's always a ~~hidden~~ door leading to acceptance. Photo from <a href="https://goo.gl/maps/57JsiWkcPKBbXWve8">T-Centralen station</a>.
+  </figcaption>
 </figure>
 
 # Tutorials

@@ -83,9 +83,10 @@ I'll explain how to do this in the rest of this post.
 It is a good practice to start thanking the reviewers for their reviews, and directly pointing to their positive feedback.
 Thus, use around 50 words to summarize the reviews, highlighting the positive comments that reviewers made about your work.
 Rebuttals focus mostly on responding to negative points, don't let everyone forget about the strengths of your work along the way.
+
 Here's an example:
 
-{% highlight markdown linenos %}
+{% highlight markdown %}
 We thank the reviewers for their insightful and positive feedback! 
 We are encouraged that they find Foo to be a novel tasks (R1,2,3), 
 an important research problem (R1,2), appropriately positioned w.r.t 
@@ -123,9 +124,10 @@ The goal is to select the most relevant questions to answer, not encourage a con
 
 As mentioned, the word limit (typically 750 words) is a strict limitation.
 You can use underscores (`_`)  or dashes (`-`) to concatenate two words for the less important things, such as the questions from reviewers.
+
 Here is an example:
 
-{% highlight markdown linenos %}
+{% highlight markdown %}
 Question-2-Reviewer-3:Is_Foo_in_your_paper_actually_a_Bar?
 Answer-to-Reviewer-3:
 Yes, your understanding is perfect.
@@ -139,9 +141,10 @@ Foo is a Bar with X and Z.
 Most rebuttal handling systems are Markdown compatible.
 In Markdown format, one row is counted as one word.
 Therefore, using a table saves you word limits!
-For example, the following table presents new data to the reviewers without significantly affecting the word count.
 
-{% highlight markdown linenos %}
+For example, the following table presents new data to the reviewers without significantly affecting the word count:
+
+{% highlight markdown %}
 We conducted a new experiment with the Foo dataset:
 
 |  Model  |  Metric1  |  Metric2  |  Metric3  |
@@ -187,9 +190,10 @@ Don’t be afraid of emphasis: “Row 2 in Table 4 shows exactly that.” “We 
 At the end of the rebuttal, consolidate all the common concerns.
 You can also save space by responding to multiple reviewers at once if they share related concerns.
 This is important to help the reviewers understand other reviewers' concerns!
+
 Here is an example:
 
-{% highlight markdown linenos %}
+{% highlight markdown %}
 Dear reviewers,
 We appreciate your positive feedback.We focus on four major points to
 solve your concerns and get your support:

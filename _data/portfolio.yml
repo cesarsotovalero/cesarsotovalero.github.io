@@ -1,10 +1,10 @@
 - title: DepClean
-  description: DepClean automatically detects and removes unused dependencies in Maven projects.
+  description: DepClean automatically detects and removes unused software dependencies.
   img: DepClean_logo.svg
   url: https://github.com/castor-software/depclean
   stars: castor-software/depclean?style=social
 - title: DepClean Web
-  description: An interactive website to visalize the dependency analysis output of DepClean
+  description: An interactive website to visualize the dependency analysis output of DepClean
   img: DepClean_Web_logo.svg
   url: https://github.com/castor-software/depclean-web
   stars: castor-software/depclean-web?style=social
