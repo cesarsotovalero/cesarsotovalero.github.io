@@ -1,0 +1,197 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{a4wide}
+\usepackage{graphicx}
+\usepackage{framed}
+\usepackage{url}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{subfigure}
+\usepackage{morefloats}
+\usepackage{multirow}
+\usepackage{lineno}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{xspace}
+\usepackage{array}
+\usepackage{stfloats}
+\usepackage{tabularx}
+\usepackage{xspace}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{wrapfig}
+\usepackage{pbox}
+\usepackage{tcolorbox,tikz}
+\usepackage{soul}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{makecell}
+\usepackage{filecontents}
+\usepackage[scale=0.95877]{tgpagella} % use "palatino" as main font, ...
+\renewcommand{\ttdefault}{lmtt}       % and use lmtt for teletype family
+
+\pgfplotsset{compat=1.14}
+\let\subfigure=\undefined
+
+\newenvironment{citebox}
+{\begin{framed}\begin{sffamily}}
+{\end{sffamily}\end{framed}\vspace{2mm}}
+
+\usepackage[
+    pdfpagemode={UseOutlines},
+    bookmarks,
+    hypertexnames=false,
+    colorlinks,
+    linkcolor={blue},
+    citecolor={blue},
+    urlcolor={blue},
+    pdfstartview={FitH}
+] {hyperref}
+
+\usepackage[
+    protrusion=true,
+    activate={true,nocompatibility},
+    final,
+    tracking=true,
+    kerning=true,
+    spacing=false,
+    factor=1100]{microtype}
+\SetTracking{encoding={*}, shape=sc}{40}
+
+% -----------------------------------------------------------------------------
+% Create custom user defined command for `TODO` notes
+\newcommand*\badge[1]{
+  \colorbox{red}{\color{white}#1}
+}
+\newcommand{\todo}[1]{
+  \noindent\textbf{\badge{TODO}} {\color{red}#1}
+  \GenericWarning{}{LaTeX Warning: TODO: #1}
+}
+
+\urlstyle{sf}
+
+\pgfplotsset{
+    /pgf/declare function={
+        Floor(\x) = round(\x-0.49);
+    },
+    show sum on top/.style={
+        /pgfplots/scatter/@post marker code/.append code={%
+            \path let \p1=($(normalized axis cs:%
+                        \pgfkeysvalueof{/data point/x},%
+                        \pgfkeysvalueof{/data point/y})%
+                        -(normalized axis cs:\pgfkeysvalueof{/data point/x},0)$)
+            in node[
+                at={(normalized axis cs:%
+                        \pgfkeysvalueof{/data point/x},%
+                        \pgfkeysvalueof{/data point/y})%
+                },
+                anchor={-90*sign(\y1)},yshift={sign(\y1)*2pt}
+            ]
+            {\pgfmathprintnumber{\pgfkeysvalueof{/data point/y}}};
+        },
+    }
+}
+
+\newcommand{\proglang}{\textbf}
+\newcommand{\pkg}{\textbf}
+\newcommand{\code}{\texttt}
+\newcommand{\modif}[1]{{\color{blue}#1}}
+\newcommand{\Fbox}[1]{\fbox{\strut#1}}
+
+% -----------------------------------------------------------------------------
+
+\begin{document}
+\begin{center}
+{\Large\bf \textcolor{red}{SUBMISSION-ID}: Major Revision}\\\vspace{4mm}
+\end{center}
+
+\noindent Dear Editorial Office of \textcolor{red}{Journal Name},\\
+
+We are happy to submit a minor revision of our paper entitled \textcolor{red}{\textbf{“Paper's Title\textbf{”}}}.
+We thank the reviewers for their recommendations.
+We have addressed all their comments, which has improved the quality of our manuscript.\\
+
+\noindent  We performed \textcolor{red}{N} minor revisions:
+
+\begin{itemize}
+    \item \textcolor{red}{Summarize major change here}
+    \item \textcolor{red}{Summarize major change here}
+    \item \textcolor{red}{Summarize major change here}
+\end{itemize}
+
+In the following pages, we give detailed answers to each of the reviewers' comments. The original text from the reviewers is included in \fbox{boxes}, our answers follow the boxes. All changes are highlighted in \modif{blue} in the revised version of the manuscript (except typos).\\
+
+\noindent In case of requiring any further information, please do not hesitate to contact us.\\
+
+\bigbreak
+
+\noindent  Sincerely yours,\\
+
+\noindent \textcolor{red}{Full name of the first author}\\
+
+\noindent On behalf of \textcolor{red}{full names of co-authors}
+
+\newpage
+
+% -----------------------------------------------------------------------------
+
+\subsection*{Reviewer \#1}
+
+\begin{citebox}
+\textbf{Comment \#1.1:} “\textcolor{red}{Comment of Reviewer \#1}”
+\end{citebox}
+
+\textcolor{red}{Answer the comment here.}
+
+\subsection*{Reviewer \#2}
+
+\begin{citebox}
+\textbf{Comment \#2.1:} “\textcolor{red}{Comment of Reviewer \#2}”
+\end{citebox}
+
+\textcolor{red}{Answer the comment here.}
+
+\subsection*{Reviewer \#3}
+
+\begin{citebox}
+\textbf{Comment \#3.1:} “\textcolor{red}{Comment of Reviewer \#3}”
+\end{citebox}
+
+\textcolor{red}{Answer the comment here.}
+
+\section*{Bonus}
+
+You should use quoted text to highlight changes in the paper:
+
+\begin{quote}
+\textit{
+“The distance from Foo to Bar is $ 0.42 $.”
+}
+\end{quote}
+
+
+\noindent Make sure to add proper citations, e.g.~\cite{Page1999}.
+
+\noindent You can also use TODO notes to track the progress, e.g., \todo{A note!}
+
+% -----------------------------------------------------------------------------
+
+\begin{filecontents}{my_references.bib}
+@techreport{Page1999,
+  title={The PageRank Citation Ranking: Bringing Order to The Web.},
+  author={Page, Lawrence and Brin, Sergey and Motwani, Rajeev and Winograd, Terry},
+  year={1999},
+  institution={Stanford InfoLab}
+}
+\end{filecontents}
+
+\bibliographystyle{plain}
+\bibliography{my_references}
+
+\end{document}

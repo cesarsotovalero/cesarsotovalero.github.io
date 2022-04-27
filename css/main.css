@@ -1109,7 +1109,7 @@ p.post-meta {
 }
 
 #tiles-big .tile .apptitle {
-  font-family: "Concourse C3";
+  font-family: "Concourse C4";
   font-weight: bold;
   font-size: 24px;
   padding: 0.625rem 0.9375rem;
@@ -1119,7 +1119,6 @@ p.post-meta {
   width: 30%;
   height: 30%;
   cursor: pointer;
-  border-bottom: 1px solid #eee;
   padding: 10px;
 }
 
@@ -1553,10 +1552,11 @@ tbody {
 pre {
   background-color: var(--navbar-color);
   color: var(--main-text-color);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5em;
   font-family: "jetbrains_monoregular", sans-serif;
   border: none;
+  margin-bottom: 26px;
 }
 
 pre code {
@@ -1575,12 +1575,16 @@ code {
 
 @media screen and (max-width: 450px) {
   pre {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   code {
     font-size: 14px;
   }
+}
+
+.highlight {
+  background-color: var(--navbar-color);
 }
 
 code pre {
@@ -1622,6 +1626,8 @@ td.code pre {
 td.gutter {
   padding-top: 3px;
 }
+
+
 
 /* --- Social media sharing section --- */
 
@@ -1991,6 +1997,11 @@ ul li {
 
 ul li p {
   margin-bottom: 10px;
+}
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 26px;
 }
 
 .tag-list {
@@ -2496,6 +2507,7 @@ article[role=main] {
 
 .centered {
   text-align: center;
+  margin-bottom: 26px;
 }
 
 a.btn {

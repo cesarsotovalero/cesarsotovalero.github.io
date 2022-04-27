@@ -84,6 +84,14 @@
 }
 
 @font-face {
+  font-family: 'Concourse C4';
+  src: url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse C4 Regular.woff2') format('woff2'),
+  url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse C4 Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Concourse T3';
   src: url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T3 Regular.woff2') format('woff2'),
   url('https://www.cesarsotovalero.net/fonts/Concourse/Concourse T3 Regular.woff2') format('woff2');
