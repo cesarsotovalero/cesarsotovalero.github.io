@@ -249,8 +249,6 @@ For validation, we collect dependency related commits from open-source Java proj
 
 
 
-
-
 ---
 
 # 9. Vulnerability Analysis Through Debloating
