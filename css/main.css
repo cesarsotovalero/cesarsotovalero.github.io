@@ -283,7 +283,9 @@ a[href$=".pptx"] {
 
 
 .navigation a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 0.05em;
+  /*text-decoration: none;*/
   padding: 0 5px 0 5px;
   font-size: 22px;
 }
@@ -295,7 +297,7 @@ a[href$=".pptx"] {
 }
 
 .navigation a:hover {
-  font-family: "Concourse T6", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-decoration: underline;
   text-decoration-thickness: 0.05em;
   font-weight: bold;
