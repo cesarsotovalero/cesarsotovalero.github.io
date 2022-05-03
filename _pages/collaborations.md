@@ -25,6 +25,7 @@ The following is a list of research topics that I’m particularly interested in
 * [6. Fine-grained specialization of JS libraries](#6-fine-grained-specialization-of-js-libraries)
 * [7. Towards automatic untangling of APIs](#7-towards-automatic-untangling-of-apis)
 * [8. Automatic Debloat of Bots Dependency Alerts](#8-automatic-debloat-of-bots-dependency-alerts)
+* [9. Vulnerability Analysis Through Debloating](#9-vulnerability-analysis-through-debloating)
 
 ---
 
@@ -242,6 +243,51 @@ For validation, we collect dependency related commits from open-source Java proj
 [2] [Analyzing 2.3 Million Maven Dependencies to Reveal an Essential Core in APIs](https://arxiv.org/pdf/1908.09757.pdf)
 
 [3] [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://arxiv.org/pdf/2001.07808.pdf)
+
+
+<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+
+
+
+
+
+---
+
+# 9. Vulnerability Analysis Through Debloating
+
+
+### Motivation
+
+Software debloating has been fundamentally used to remove vulnerable code by eliminating the unnecessary parts of the code [1, 3].
+In this context, the benefits of debloating for security are a side effect of removing code (i.e., less code leads to fewer bugs and vulnerabilities).
+Existing software vulnerability assessment tools allow finding critical security bugs and provide feedback to developers using static analysis  (e.g., [Snyk](https://snyk.io/), [Dependabot](https://dependabot.com/)).
+These tools facilitate the localization of the vulnerable portions of code in the analyzed repository [2].
+However, developers lack a broader knowledge of what parts of their codebase are actually affected by the vulnerable code.
+They need to know the extent of vulnerability exposition in their codebase once a new CVE is released.
+
+### Approach
+
+The goal of this research project is to leverage software debloating techniques to understand the impact of the vulnerability in the codebase.
+First, we will collect CVEs reports affecting real-world applications and examine the ratio of the codebase that is actually affected by the vulnerable code.
+Second, we will debloat the rest of the application  (i.e., removing the used parts that are not affected by the CVEs) in order to get a better vision of the actual impact of the vulnerability.
+Developers and practitioners will benefit from this information.
+This allows them to construct a mind-map of the relevance of the vulnerability, which will rapidly impact assessment and supports bug fixes.
+
+### Validation
+
+For validation, we will first compute the ratio of the codebase that is affected by well-known CVEs, for a quantitative assessment of the impact of having this knowledge.
+Then, we will create a tool that receives as entry points the parts of the code affected by vulnerabilities and automatically debloats the rest.
+The tool then will provide information to developers about the vulnerable classes/methods/attributes affected.
+This information can be displayed in the browser, and feedback from developers related to the tool's usefulness will be collected as a qualitative validation.
+
+
+### References
+
+[1] [CARVE: Practical Security-Focused Software Debloating Using Simple Feature Set Mappings](https://dl.acm.org/doi/abs/10.1145/3338502.3359764)
+
+[2] [The Secret Life of Software Vulnerabilities: A Large-Scale Empirical Study](https://ieeexplore.ieee.org/abstract/document/9672730)
+
+[3] [Less is More: Quantifying the Security Benefits of Debloating Web Applications](https://www.usenix.org/conference/usenixsecurity19/presentation/azad)
 
 
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
