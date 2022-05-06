@@ -1019,12 +1019,12 @@ p.post-meta {
   width: 100%;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
   .post-preview .post-entry {
-    font-size: 18px;
+    font-size: 17px;
   }
   .post-entry {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
