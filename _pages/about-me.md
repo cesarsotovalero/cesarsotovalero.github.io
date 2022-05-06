@@ -21,9 +21,14 @@ subtitle: In brief
 # Work
 
 [//]: # (:briefcase: )
-I'm a Ph.D. student  in the Department of Software and Computer Systems ([SCS](https://www.kth.se/scs/software-engineering)) working with [Benoit Baudry](https://www.kth.se/profile/baudry) at [KTH](https://kth.se) Royal Institute of Technology, in Sweden <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">. My research work is generously funded by the Wallenberg Autonomous Systems and Software Program ([WASP](https://wasp-sweden.org)), funded by Knut and Alice Wallenberg Foundation. My current research is focused on software diversification, automatic program debloating and software specialization. For more on these topics, see my living review of <a
- href="software-debloating-papers.html">software
- debloating papers</a>, or consult my list of <a href="software-debloating-tools.html">software debloating tools</a>. I also do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories. For more on this topic, see this list of <a href="mining-software-repositories-resources.html">mining software repositories resources</a>. In particular, I'm interested in measuring the impact and pervasiveness of bloatware across large-scale software ecosystems. I'm keen to perform research on software technology which: 1) provide actionable insights to researchers and practitioners about how modern software is currently being developed and maintained, and 2) provide practical tools for developers in order to improve software quality.
+I'm a Ph.D. student  in the Department of Software and Computer Systems ([SCS](https://www.kth.se/scs/software-engineering)) working with [Benoit Baudry](https://www.kth.se/profile/baudry) at [KTH](https://kth.se) Royal Institute of Technology, in Sweden <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">. My research work is generously funded by the Wallenberg Autonomous Systems and Software Program ([WASP](https://wasp-sweden.org)), funded by Knut and Alice Wallenberg Foundation. My current research is focused on software diversification, automatic program debloating and software specialization.[^1] I also do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories.[^2] In particular, I'm interested in measuring the impact and pervasiveness of software bloat across large-scale software ecosystems. 
+
+I'm keen to perform research on software technology which: 
+
+1. Provide actionable insights to researchers and practitioners about how modern software is currently being developed and maintained.
+2. Provide practical tools for developers in order to improve software quality.
+
+If you are interested in collaborating with me, have a look at my list of [research topics](./collaborations.html) open to collaborations.
 
 # Formal Education
 
@@ -78,6 +83,13 @@ You can always email me:
     <input type="text" name="_gotcha" style="display:none">
     <input type="submit" value="✉️ Send Message">
 </form>
+
+
+
+
+[^1]: For more on these topics, see my living review of [software debloating papers](./software-debloating-papers.html), or consult my list of [software debloating tools](./software-debloating-tools.html).
+
+[^2]: For more on this topic, see this list of [mining software repositories resources](./mining-software-repositories-resources.html).
 
 
 <style>

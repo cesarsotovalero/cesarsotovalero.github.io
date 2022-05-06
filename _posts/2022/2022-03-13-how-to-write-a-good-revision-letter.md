@@ -181,12 +181,16 @@ Below you can look at some examples of my revision letters for two consecutive m
 Hopefully, this will give you a notion of the amount of work being put along the revision process.
 
 
-| Research Paper                                                                                                                                       | Revision Letter                                                                                                                                                           |
-|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Research Paper                                                                                                                       | Revision Letter                                                                                                                                                           |
+|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://link.springer.com/article/10.1007/s10664-020-09914-8) | [Major Revision Round #1](../files/posts/2022/DepClean_Major_Revision_Round_1.pdf)<br/>[Major Revision Round #2](../files/posts/2022/DepClean_Major_Revision_Round_2.pdf) |
 
 
 # Conclusion
+
+<aside class="quote">
+    <em>“Persevere, consolidate, and it goes though.” ― Benoit Baudry</em>
+</aside>
 
 Dealing with major revisions is part of the academic business.
 Researchers spend a lot of time and effort preparing response letters for reviewers.
@@ -198,7 +202,7 @@ I assure you that it works in most cases.[^3]
 
 # Footnotes
 
-[^1]: You can read full paper [here](https://arxiv.org/abs/2008.08401) if you're interested.
+[^1]: You can read the full paper [here](https://arxiv.org/abs/2008.08401) if you're interested.
 
 [^2]: Most editorial systems assign a unique identifier to each paper after submission.
 

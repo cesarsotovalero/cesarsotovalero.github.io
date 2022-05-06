@@ -249,7 +249,7 @@ gem:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-sitemap
-  - jekyll-plantuml
+  - jekyll-plantuml # https://plantuml.com
   - jekyll-redirect-from
   - jekyll-bits
   - jekyll-feed
