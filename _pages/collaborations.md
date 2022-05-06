@@ -232,6 +232,7 @@ However, in complex projects, developers might be overwhelmed by many dependency
 
 First, we mine GitHub projects in order to filter the commits that are related to dependency bots. Then, we analyze the difference between the vulnerable version of the dependency used, and the new one proposed by the bot. The goal is to determine if the code introduced in the new version is actually used by the project, i.e., if the dependency update is relevant for the project in particular. 
 
+
 ### Validation
 
 For validation, we collect dependency related commits from open-source Java projects on GitHub, and analyze the dependency usage of the project with [DepClean](https://github.com/castor-software/depclean). We will report on the number of alerts that can be filtered out with our approach.
