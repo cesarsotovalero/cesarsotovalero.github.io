@@ -166,6 +166,7 @@ Here are some state-of-the-art open source tools for bus factor calculation:
 - <a href="https://github.com/SOM-Research/busfactor"><i class="fab fa-github"></i></a> [SOM-Research/busfactor](https://github.com/SOM-Research/busfactor)
 - <a href="https://github.com/yamikuronue/BusFactor"><i class="fab fa-github"></i></a> [yamikuronue/BusFactor](https://github.com/yamikuronue/BusFactor)
 - <a href="https://github.com/elek/bus-factor"><i class="fab fa-github"></i></a> [elek/bus-factor](https://github.com/elek/bus-factor)
+- <a href="https://github.com/elek/bus-factor"><i class="fab fa-github"></i></a> [git-truck/git-truck](https://github.com/git-truck/git-truck)
 
 # Conclusion
 
