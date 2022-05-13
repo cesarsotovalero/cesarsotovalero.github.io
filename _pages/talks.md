@@ -16,7 +16,11 @@ The following is a non-exhaustive list of my technical presentations.
 
 # 2022
 
+- [Java is Going to the Moon: Native Images with GraalVM](https://docs.google.com/presentation/d/1JDVerE77ZWLqwtWP430QXF1KTd4RhKoD/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true){:target="_blank"}. Presented at KTH, May 2022.
+
 - [A Prime on Software Debloating](../talks/A_Prime_On_Software_Debloating.pdf "pdf"){:target="_blank"}. Presented at KTH, March 2022.
+
+- [The Software Supply Chain of Enterprise Java Ethereum Nodes](https://docs.google.com/presentation/d/1pZGJ_9X_mvOzaqlelQbSyPI9opo6V_e1/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true){:target="_blank"}. Presented at KTH, January 2022.
 
 # 2021
 
