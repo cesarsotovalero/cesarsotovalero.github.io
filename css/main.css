@@ -363,6 +363,7 @@ a[href$=".pptx"] {
   font-size: 30px;
   padding: 0 5px 0 5px;
   float: none;
+  text-decoration: none;
 }
 
 #navbar-brand:hover {
