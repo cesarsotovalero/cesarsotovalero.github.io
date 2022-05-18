@@ -9,7 +9,6 @@ layout: base
 <!--</nav>-->
 
 
-
 <nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light">
    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span><i class="fas fa-bars"></i></span>
@@ -27,6 +26,8 @@ layout: base
       <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
          <article role="main" class="blog-post">
             {{ content }}
+
+
          </article>
 
          <!--      <span class="post-categories">[-->
@@ -67,9 +68,14 @@ layout: base
 {% if page.comments %}
 <div class="container">
    <div class="row">
-<!--      <div class="col-lg-12 col-md-12 col-sm-12">-->
+      <!--      <div class="col-lg-12 col-md-12 col-sm-12">-->
       <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1">
-<!--      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+         <div class="flex-container-footer-badges">
+            {% if page.social-share %}
+            {% include social-share.html %}
+            {% endif %}
+         </div>
+         <!--      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">-->
          {% include giscus.html %}
       </div>
    </div>
