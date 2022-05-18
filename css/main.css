@@ -1636,7 +1636,7 @@ td.gutter {
 
 #share-section {
   margin-bottom: 15px;
-  margin-top: 15px
+  margin-top: 15px;
 }
 
 #share-section a {
@@ -2651,6 +2651,7 @@ a.btn {
     display: none;
   }
 }
+
 
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
