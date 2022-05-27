@@ -48,7 +48,7 @@ In terms of compiler optimizations in the ~~standard~~ Java Hotspot Virtual Mach
 
 - The **C1 compiler** is a fast, lightly optimizing bytecode compiler that performs some value numbering, inlining, and class analysis. It uses a simple CFG-oriented SSA "high" IR, a machine-oriented "low" IR, a linear scan register allocation, and a template-style code generator.
 
-- The **C2 compiler** is a highly optimizing bytecode compiler that uses a "sea of nodes" SSA "ideal" IR, which lowers to a machine-specific IR of the same kind. It has a graph-coloring register allocator. Colors are machine states, including local, global, and argument registers and stack. Optimizations in the C2 compiler include global value numbering, conditional constant type propagation, constant folding, global code motion, algebraic identities, method inlining (aggressive, optimistic, and/or multi-morphic), intrinsic replacement, loop transformations (unswitching, unrolling), array range check elimination, and others.
+- The **[C2 compiler](https://dl.acm.org/doi/10.5555/1267847.1267848)** is a highly optimizing bytecode compiler that uses a "sea of nodes" SSA "ideal" IR, which lowers to a machine-specific IR of the same kind. It has a graph-coloring register allocator. Colors are machine states, including local, global, and argument registers and stack. Optimizations in the C2 compiler include global value numbering, conditional constant type propagation, constant folding, global code motion, algebraic identities, method inlining (aggressive, optimistic, and/or multi-morphic), intrinsic replacement, loop transformations (unswitching, unrolling), array range check elimination, and others.
 
 Now that we understand the role of compilers, let's talk about **when** is the compilation performed.
 There are two main compilation strategies in Java: Just in Time Compilation (JIT) and Ahead of Time Compilation (AOT).
@@ -108,7 +108,7 @@ The following figure illustrates the AOT compilation process in the GraalVM comp
 It receives as input all classes from the application, libraries, the JDK, and the Java Virtual Machine.
 Then an iterative bytecode search using state-of-the-art [points-to analysis](https://dl.acm.org/doi/abs/10.1145/3377555.3377885) is performed until a fixed point is reached.
 During this process all the safe classes are [initialized upfront](https://docs.oracle.com/en/graalvm/enterprise/21/docs/reference-manual/native-image/ClassInitialization/) (i.e., instantiated) statically.
-The class data of the initialised classes is loaded into the image heap which then, in turn, gets saved into standalone executable (into the text section in Fig 2).
+The class data of the initialized classes is loaded into the image heap which then, in turn, gets saved into standalone executable (into the text section in Fig 2).
 The result is a native image executable that can be shipped and deployed directly in a container.
 
 <figure class="jb_picture">
@@ -134,10 +134,10 @@ the slogan "[write once, run anywhere](https://en.wikipedia.org/wiki/Write_once,
 JIT compilers reduce latency thanks to the ability to use concurrent garbage collectors and increase the resilience under peak throughput conditions.
 
 On the other hand, AOT compilers run programs more efficiently.
-AOT compilation is particularly suited for cloud applications
-They offer faster startup speed, which results in shorter boot time and instant scale-up
+AOT compilation is particularly suited for cloud applications.
+They offer faster startup speed, which results in shorter boot time and more straightforward horizontal scale-up of cloud services.
 This is particularly beneficial in the case of microservices initialized as Docker containers running in the cloud.
-The small size on disk thanks to complete dead code elimination (classes, fields, methods, branches) also results in small container images.
+The small size on disk, thanks to complete dead code elimination (classes, fields, methods, branches), also results in small container images.
 The low memory consumption allows running more containers with the same RAM, reducing the costs of services from cloud providers.
 
 The following spider graph illustrates the key differences:
@@ -164,6 +164,18 @@ This limitation is known as the close world assumption.
 It means that all the bytecode in the application and their dependencies that can be called at runtime **must be known at build time** (observed and analyzed), i.e., when the `native-image` tool in GraalVM is building the standalone executable.
 
 Consequently, dynamic language capabilities such as Java Native Interface (JNI), Java Reflection, Dynamic Proxy objects (`java.lang.reflect.Proxy`), or classpath resources (`Class.getResource`) are not supported.
+
+
+> “The closed-world constraint imposes strict limits on Java’s natural dynamism, particularly on the run-time reflection and class-loading features upon which so many existing Java libraries and frameworks depend. Not all applications are well suited to this constraint, and not all developers are willing to live with it.
+>
+> So rather than adopt the closed-world constraint at the start, I propose that we instead pursue a gradual, incremental approach.
+>
+> We will explore a spectrum of constraints, weaker than the closed-world constraint, and discover what optimizations they enable. The resulting optimizations will almost certainly be weaker than those enabled by the closed-world constraint. Because the constraints are weaker, however, the optimizations will likely be applicable to a broader range of existing code — thus they will be more useful to more developers.
+>
+> We will work incrementally along this spectrum of constraints, starting small and simple so that we can develop a firm understanding of the changes required to the Java Platform Specification. Along the way we will strive, of course, to preserve Java’s core values of readability, compatibility, and generality.
+> We will lean heavily on existing components of the JDK including the HotSpot JVM, the C2 compiler, application class-data sharing (CDS), and the `jlink` linking tool.
+>
+> In the long run we will likely embrace the full closed-world constraint in order to produce fully-static images. Between now and then, however, we will develop and deliver incremental improvements which developers can use sooner rather than later.” -- [Project Leyden: Beginnings](https://openjdk.java.net/projects/leyden/notes/01-beginnings) (by Oracle)
 
 To overcome this limitation, GraalVM provides a [Tracing Agent](https://www.graalvm.org/22.0/reference-manual/native-image/Agent/) that tracks all usages of dynamic features of execution on a regular Java VM.
 During execution, the agent interfaces with the JVM and intercepts all calls that look up classes, methods, fields, resources, or request proxy accesses.
@@ -229,4 +241,4 @@ The GraalVM compiler allows for building high-performance applications with AOT 
 
 [^2]: In the case of Go, the fastest initialization was implemented in the language since the beginning.
 
-[^3]: Adoption latency is normal in the tech world. Key technology such as Docker containers was available since 2013, but it was not until five years later (in 2018) that it started to receive massive adoption.
+[^3]: Adoption latency is typical in the tech world. Key technology such as Docker containers was available since 2013, but it was not until five years later (in 2018) that it started to receive massive adoption.
