@@ -13,6 +13,10 @@ published: true
 
 # Teacher assistant
 
+### 2022
+
+- [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2022
+
 ### 2021
 
 - [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
@@ -40,6 +44,8 @@ published: true
 - [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Spring 2019
 
 # Thesis supervisor
+
+- [The State of Software Diversity in the Software Supply Chain of Ethereum Clients](../files/papers/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf), Noak Jönsson, **Bachelor Thesis**, KTH 2022
 
 - [Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf), Martin Sköld, **Master Thesis**, KTH 2020
 
