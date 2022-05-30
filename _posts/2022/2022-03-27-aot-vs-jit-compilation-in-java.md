@@ -114,7 +114,7 @@ The result is a native image executable that can be shipped and deployed directl
 <figure class="jb_picture">
 {% responsive_image path: img/posts/2022/native_image_creation_process.png alt:"Native image creation process in Quarkus." %}
   <figcaption class="stroke"> 
-    Fig 2. Native image creation process in GraalVM.
+    Fig 2. Native image creation process in GraalVM. <a href="https://dl.acm.org/doi/10.1145/3360610">Source</a>. 
   </figcaption>
 </figure>
 
@@ -229,6 +229,7 @@ The GraalVM compiler allows for building high-performance applications with AOT 
 
 # References
 
+- [Java is Going to the Moon: Native Images with GraalVM](https://docs.google.com/presentation/d/1JDVerE77ZWLqwtWP430QXF1KTd4RhKoD/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
 - [Supporting Binary Compatibility with Static Compilation](https://www.usenix.org/legacy/publications/library/proceedings/jvm02/yu/yu_html/index.html)
 - [Initialize Once, Start Fast: Application Initialization at Build Time](https://dl.acm.org/doi/10.1145/3360610)
 - [Deep Dive Into the New Java JIT Compiler – Graal](https://www.baeldung.com/graal-java-jit-compiler)
