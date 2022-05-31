@@ -22,8 +22,8 @@ published: true
 There are two ways of compiling a Java application: using Just in Time Compilation (JIT) or Ahead of Time Compilation (AOT).
 The first is the default mode, and it is used by the [Java Hotspot Virtual Machine](https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html) to translate bytecode into machine code at runtime.
 The latter is supported by the novel [GraalVM](https://www.graalvm.org/) compiler and allows statically compiling bytecode directly into machine code at build time.
-In this post, I'll explain the differences between these two different compilation strategies.
-After reading this post, you will learn about what Java compilers do, the differences between different compiling approaches, and when using an AOT compiler is more appropriate.
+In this post, I'll explain the differences between these two compilation strategies.
+After reading this post, you will learn what Java compilers do, the differences between existing compiling approaches, and in which circumstances using an AOT compiler is more appropriate.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/curves.jpg alt:"AOT vs. JIT" %}
