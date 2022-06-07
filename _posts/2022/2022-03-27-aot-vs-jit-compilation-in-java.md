@@ -28,7 +28,7 @@ After reading this post, you will learn what Java compilers do, the differences 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/curves.jpg alt:"AOT vs. JIT" %}
   <figcaption class="stroke"> 
-    &#169; JIT vs. AOT: two sides from the same coin. Photo from <a href="https://goo.gl/maps/j8GC4KtHEXoKxLpB8">Tekniska Högskolan station</a>.
+    &#169; JIT vs. AOT: two sides of the same coin. Photo from <a href="https://goo.gl/maps/j8GC4KtHEXoKxLpB8">Tekniska Högskolan station</a>.
   </figcaption>
 </figure>
 
@@ -189,7 +189,7 @@ On the other hand, the points-to-analysis makes AOT compilation slower than JIT 
 # Is AOT Compilation with GraalVM the Future of Java?
 
 The benefits of AOT compilation for native cloud applications have increased the interest in this technology. The Java ecosystem is adopting this technology with enthusiasm.
-At the moment of writing, three major frameworks benefit from GraalVM to build and optimize applications:
+At the moment of writing, four major frameworks benefit from GraalVM to build and optimize applications:
 
 - [Quarkus](https://quarkus.io) (by RedHat)
 - [Micronaut](https://micronaut.io) (by The Micronaut Foundation)

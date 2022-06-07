@@ -46,7 +46,7 @@ The following is a non-exhaustive list of my technical presentations.
 
 - [WASP Presentation](https://docs.google.com/presentation/d/1-B3YfX5xulYgq30IVhv0bLwPHFrtbaRbzZu61TA_U2k/edit?usp=sharing). Presented at _Nanyang Technological University_, Singapore, October 2019.
 
-- [Studying Bloated Dependencies in the Maven Ecosystem](../../files/presentations/Castor-Software-Days-WASP-Poster.pdf). Poster presented during _CASTOR Software Days_, KTH, Sweden, October 2019.
+- [Studying Bloated Dependencies in the Maven Ecosystem](../../files/posters/Castor-Software-Days-WASP-Poster.pdf). Poster presented during _CASTOR Software Days_, KTH, Sweden, October 2019.
 
 - [:earth_americas: The Emergence of Software Diversity in Maven Central](https://dl.serveur-du-placard.ml/these/reveal.js-3.7.0/presentations/MSR2.html). Presented at _16th International Conference on Mining Software Repositories_ (MSR), Montreal, Canada, May 2019.
 
