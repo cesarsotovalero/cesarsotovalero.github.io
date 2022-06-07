@@ -34,10 +34,10 @@ If you are interested in collaborating with me, have a look at my list of [resea
 
 [//]: # (:mortar_board:)
 
-I've a [B.Sc.](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [M.Sc.](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science from the [Universidad Central "Marta Abreu" de Las Villas](https://www.uclv.edu.cu/), Cuba :cuba:. 
+I'm a Ph.D. Student at KTH Royal Institute of Technology.
+I've a [B.Sc.](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [M.Sc.](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science. 
 
-Here is my short [resume](../files/CV/cv.pdf).
-
+Here is my short [resumé](../files/CV/cv.pdf).
 
 [//]: # (stackoverflow)
 {% badge https://stackoverflow.com/users/flair/10480869.png with=200 140 https://stackoverflow.com/users/10480869/cesarsotovalero %}
