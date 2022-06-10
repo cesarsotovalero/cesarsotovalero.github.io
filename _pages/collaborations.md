@@ -95,7 +95,7 @@ We start by monitoring the system calls triggered when exercising distinct regio
 
 ### Validation
 
-Select a set of Java applications and monitor their systems calls according to different workloads. System calls can be obtained with [`strace`](https://strace.io). Then, implement a tool to debloat the application based on the results of the system calls monitoring (see examples of deboating tools [here](https://www.cesarsotovalero.net/2020-01-07-software-debloating-tools)).  
+Select a set of Java applications and monitor their systems calls according to different workloads. System calls can be obtained with [`strace`](https://strace.io). Then, implement a tool to debloat the application based on the results of the system calls monitoring (see examples of deboating tools [here](https://www.cesarsotovalero.net/software-debloating-tools)).  
 
 ### References
  
