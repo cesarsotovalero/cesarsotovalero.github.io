@@ -26,6 +26,7 @@ The following is a list of research topics that I’m particularly interested in
 * [7. Towards automatic untangling of APIs](#7-towards-automatic-untangling-of-apis)
 * [8. Automatic Debloat of Bots Dependency Alerts](#8-automatic-debloat-of-bots-dependency-alerts)
 * [9. Vulnerability Analysis Through Debloating](#9-vulnerability-analysis-through-debloating)
+* [10. Automatic Debloating IaC Files](#10-automatic-debloating-iac-files)
 
 ---
 
@@ -291,3 +292,58 @@ This information can be displayed in the browser, and feedback from developers r
 
 
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+
+
+---
+
+# 10. Automatic Debloating IaC Files
+
+
+### Motivation
+
+[Infrastructure as Code](https://en.wikipedia.org/wiki/Infrastructure_as_code) (IaC) is the process of managing software infrastructure via programmable configuration files (i.e., scripts).
+IaC scripts are software artifacts that need to be carefully maintained because minimal changes may trigger a high stake in terms of resource consumption.
+This means that creating minimal, highly optimized, IaC files is critical for developers and businesses that rely on cloud service infrastructure.
+
+Debloating IaC scripts consists in transforming the script to reduce the number of resources necessary to provide the same functionality.
+Researchers have studied many ways of debloating containers [1, 2, 3].
+In this context, bloat has been considered as an IaC bad smell [5].
+
+Mature IaC debloating tools, such as [DockerSlim](https://github.com/docker-slim/docker-slim), focus on reducing the size of Docker images.
+However, IaC scripts are much more than Docker images [4].
+These files orchestrate a larger number of resources (e.g, OS, dependencies, external packages, running environments, etc.).
+Therefore, we argue that debloating IaC, beyond Docker images, is a highly relevant task.
+
+### Approach
+
+The goal of this research project is to leverage software debloating techniques to determine which parts of an IaC script can be modified in order to reduce software bloat.
+
+The research driven by two tasks:
+
+1. Use existing debloating tools (e.g., DockerSlim, [DepClean](https://github.com/castor-software/depclean), or JShrink) to produce smaller, debloated versions of real-world applications. We will analyze the number of resources saved with this approach compared to the original, non-debloated version.
+
+2. Implement a research tool that leverages the knowledge gained in the first task to identify the parts of IaC scripts that are more susceptible to software bloat. The tool can use patterns to search for bloat spots. The goal is to transform/debloat IaC scripts automatically.
+
+### Validation
+
+For validation, we will assess the effectiveness of the tool at identifying sources of IaC bloat.
+We will quantify the resources saved through our automatic debloating mechanism.
+As a qualitative validation assessment, we will propose modifications to open-source projects on GitHub via pull requests.
+This is a fundamental outcome to validate the relevance of our approach.
+
+
+### References
+
+[1] [New Directions for Container Debloating](https://dl.acm.org/doi/abs/10.1145/3141235.3141241)
+
+[2] [Techniques and Tools for De-bloating Containers](https://security.csl.toronto.edu/wp-content/uploads/2018/06/ONR_Debloating.pdf)
+
+[3] [Cimplifier: automatically debloating containers](https://dl.acm.org/doi/10.1145/3106237.3106271)
+
+[4] [GLITCH: an Intermediate-Representation-Based Security Analysis for Infrastructure as Code Scripts](https://arxiv.org/abs/2205.14371)
+
+[5] [Different Kind of Smells: Security Smells in Infrastructure as Code Scripts](https://ieeexplore.ieee.org/abstract/document/9388795)
+
+
+<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+
