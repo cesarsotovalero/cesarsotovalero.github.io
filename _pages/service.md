@@ -11,7 +11,7 @@ published: true
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
 </div>
 
-# Teacher assistant
+# Teacher Assistant
 
 ### 2022
 
@@ -43,7 +43,7 @@ published: true
 
 - [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Spring 2019
 
-# Thesis supervisor
+# Thesis Supervisor
 
 - [The State of Software Diversity in the Software Supply Chain of Ethereum Clients](../files/papers/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf), Noak Jönsson, **Bachelor Thesis**, KTH 2022
 
@@ -67,7 +67,7 @@ Also,
 
 - [EOLANG and &phi;-calculus](https://arxiv.org/abs/2111.13384), 2021 (my name is listed in the acknowledgments)
 
-# Co-reviewer
+# Co-Reviewer
 
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2022
 - [ACM Digital Threats: Research and Practice](https://dl.acm.org/journal/dtrap), 2021
