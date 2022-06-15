@@ -126,7 +126,7 @@ In summary, I firmly believe that a Ph.D. is an academic exercise.
 It is a particular type of training to be a better professional in the future.
 If you disagree with me, let me know your reasons in the comments below 😉.
 
-# What to Do With the Truth?
+# What to Do?
 
 In short: stop caring about what you guess others may think about your research!
 Completely remove the fear of ridicule.
