@@ -183,7 +183,7 @@ Hopefully, this will give you a notion of the amount of work being put along the
 
 | Research Paper                                                                                                                       | Revision Letter                                                                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://link.springer.com/article/10.1007/s10664-020-09914-8) | [Major Revision Round #1](../files/posts/2022/DepClean_Major_Revision_Round_1.pdf)<br/>[Major Revision Round #2](../files/posts/2022/DepClean_Major_Revision_Round_2.pdf) |
+| [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://link.springer.com/article/10.1007/s10664-020-09914-8) | [Major Revision #1](../files/posts/2022/DepClean_Major_Revision_Round_1.pdf)<br/>[Major Revision #2](../files/posts/2022/DepClean_Major_Revision_Round_2.pdf) |
 
 
 # Conclusion
