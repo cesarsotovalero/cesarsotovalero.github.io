@@ -20,13 +20,13 @@ published: true
 ---
 
 That's the truth.
-No one cares about what you're doing in your Ph.D., no one, **no one**![^1]
+No one cares about what you're doing in your Ph.D., no one, **no one!**[^1]
 But don't be sad,
 This is actually a very comfortable truth.
 I only came to this realization after a while.
 Once you get it, then you will start looking at your Ph.D. journey with different eyes.
 I believe that acquiring self-awareness of this fact is crucial.
-It facilitates enjoying **the process** of making science without paying too much attention to its **impact and relevance**.
+It facilitates enjoying **the process** of making science without paying too much attention to its actual impact and relevance.
 At the end of the day, a Ph.D. [is all about the journey](../blog/book-review-the-phd-grind), not the destination.
 This post tells you about the importance of fully embracing this mindset!
 

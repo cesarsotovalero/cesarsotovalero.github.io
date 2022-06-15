@@ -19,6 +19,7 @@ body {
   color: var(--main-text-color);
   background-color: var(--main-background-color);
   letter-spacing: -0.2px;
+  word-spacing: 1.5px;
 }
 
 @media only screen and (max-width: 450px) {
@@ -33,6 +34,7 @@ p {
   margin-bottom: 26px;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
+
 }
 
 p a {
