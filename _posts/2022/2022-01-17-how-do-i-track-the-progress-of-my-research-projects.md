@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Track the Progress of a Research Project?
+title: How to Track the Progress of a Research Project
 subtitle: My methodology based on the weekly delivery of verifiable artifacts
 tags: research
 description: Academic research is a demanding activity in constant change and evolution. Consequently, tracking the progress of a research project is challenging. This post describes my methodology to address this particular problem. 
