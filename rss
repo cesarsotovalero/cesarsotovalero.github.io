@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>No One Cares About Your Research&amp;#33;</title>
+        <description>
+          A comfortable truth - 
+          That’s the truth. No one cares about what you’re doing in your Ph.D., no one, no one!1 But don’t be sad, This is actually a very comfortable truth. I only came to this realization after a while. Once you get it, then you will start looking at your Ph.D. journey...
+        </description>
+        <pubDate>Wed, 11 May 2022 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/no-one-cares-about-your-research.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/no-one-cares-about-your-research.html</guid>
+      </item>
+    
+      <item>
         <title>AOT vs. JIT Compilation in Java</title>
         <description>
           Which one is better? - 
@@ -62,7 +73,7 @@
       </item>
     
       <item>
-        <title>How to Track the Progress of a Research Project?</title>
+        <title>How to Track the Progress of a Research Project</title>
         <description>
           My methodology based on the weekly delivery of verifiable artifacts - 
           Academic research is a very intense and mentally demanding activity subject to constant change and evolution. At the beginning of a research project, there is often no clear path to follow. Consequently, researchers have to figure out a good plan to take in order to achieve their objectives. But a...
@@ -213,17 +224,6 @@
         <pubDate>Fri, 28 May 2021 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html</guid>
-      </item>
-    
-      <item>
-        <title>Enhance Your Readme With Asciinema</title>
-        <description>
-          How to Create Beautiful Terminal Recordings that Your Users will Love - 
-          Asciinema is an excellent tool for recording and sharing terminal sessions. The project is open-source and available on GitHub. A key feature of asciinema is that it allows the viewer to copy-paste the text from the player itself directly. The result of a terminal recording is an editable text file...
-        </description>
-        <pubDate>Mon, 05 Apr 2021 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html</guid>
       </item>
     
   </channel>
