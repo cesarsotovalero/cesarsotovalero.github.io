@@ -20,6 +20,7 @@ body {
   background-color: var(--main-background-color);
   letter-spacing: -0.2px;
   word-spacing: 1.5px;
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 450px) {
@@ -98,7 +99,7 @@ blockquote {
 
 @media only screen and (max-width: 430px) {
   blockquote {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
   }
 }
