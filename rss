@@ -7,10 +7,21 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>My Ultimate Terminal Customizations for macOS</title>
+        <description>
+          A configurations guide - 
+          There is a mystical belief that top-class software developers can do the job without abandoning the terminal. I think this is true to some extent. It is impossible to become an outstanding software developer without knowing how to get the most out of the terminal. A good way to go...
+        </description>
+        <pubDate>Sun, 22 May 2022 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html</guid>
+      </item>
+    
+      <item>
         <title>No One Cares About Your Research&amp;#33;</title>
         <description>
           A comfortable truth - 
-          That’s the truth. No one cares about what you’re doing in your Ph.D., no one, no one!1 But don’t be sad, This is actually a very comfortable truth. I only came to this realization after a while. Once you get it, then you will start looking at your Ph.D. journey...
+          That’s the truth. No one cares about what you’re doing in your PhD, no one, no one!1 But don’t be sad, This is actually a very comfortable truth. I only came to this realization after a while. Once you get it, then you will start looking at your PhD journey...
         </description>
         <pubDate>Wed, 11 May 2022 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/no-one-cares-about-your-research.html</link>
@@ -213,17 +224,6 @@
         <pubDate>Sat, 05 Jun 2021 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html</guid>
-      </item>
-    
-      <item>
-        <title>Use Custom LaTeX Macros to Boost Your Writing Productivity</title>
-        <description>
-          Forget about these annoying numerical glitches in your LaTeX document - 
-          If you ever use LaTeX to write your research papers or technical reports, then you should know how useful and powerful this tool is. Let me just mention three well-known benefits of using LaTeX: 1) beautiful typeset output (especially when dealing with mathematical notations); 2) consistent handling of references and...
-        </description>
-        <pubDate>Fri, 28 May 2021 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html</guid>
       </item>
     
   </channel>
