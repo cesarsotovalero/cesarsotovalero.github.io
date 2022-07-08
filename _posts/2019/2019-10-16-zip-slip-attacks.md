@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vulnerability Exploitation
-subtitle: Zip Slip Attacks
+subtitle: Zip slip attacks
 published: true
 tags: security
 description: The Zip Slip vulnerability is exploited using a specially crafted archive that holds directory traversal filenames. I prepared and exploit and explain how it works.

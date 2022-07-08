@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Hermit Programmers are Dead
-subtitle: Don't Call Yourself Just a Programmer Anymore
+subtitle: Don't call yourself a programmer anymore
 tags: soft-skills
 description: With the advent of cloud computing and AI, there is no room for hermit programmers. You better diversify your skills or perish in the process, so don't call yourself just a programmer anymore.
 published: true

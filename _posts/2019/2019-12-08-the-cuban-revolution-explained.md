@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Cuban Revolution 
-subtitle: My Personal Vision
+subtitle: My personal vision
 published: true
 keywords: politics, Cuba, reality
 description: Cuba has resisted more than sixty years of communism caused by the cuban revolution. I explain the historical context and implications of this event.

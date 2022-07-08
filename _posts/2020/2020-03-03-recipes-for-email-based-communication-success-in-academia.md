@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Recipes for Effective Academic Emailing
-subtitle: A Template-based Approach
+subtitle: A template-based approach
 tags: soft-skills
 published: true
 keywords: communication, email
