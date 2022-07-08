@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Design For Microservices!
-subtitle: An Easy Way to Boost the Popularity of Your Open-source Projects
+subtitle: An easy way to boost the popularity of your open-source projects
 tags: programming
 description: The microservices architecture has gained significant momentum in the last years. Modularity, scalability, and elasticity are some of its essential characteristics. If you have an open-source project, you should consider designing it to be microservices friendly. The market will eventually reward you for that.
 keywords:

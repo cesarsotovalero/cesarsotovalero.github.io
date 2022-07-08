@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Git Fundamentals
-subtitle: The Must-know Git Commands for Software Developers
+subtitle: The must-know git commands for software developers
 published: true
 description: The basic git commands that every developer should known. 
 tags: tools

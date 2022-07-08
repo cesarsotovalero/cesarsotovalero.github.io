@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Software Supply Chain
-subtitle: A Quick Look at the Modern Software Production Landscape
+subtitle: A quick look at the modern software production landscape
 tags: security
 description: Hardening the software supply chain is a critical challenge for modern software companies.
 keywords:

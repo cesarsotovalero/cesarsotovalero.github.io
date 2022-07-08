@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Enhance Your Readme With Asciinema
-subtitle: How to Create Beautiful Terminal Recordings that Your Users will Love
+subtitle: How to create beautiful terminal recordings that your users will love
 tags: tools tutorial
 published: true
 description: In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema.
@@ -25,9 +25,18 @@ This post will show you step-by-step how to use asciinema to generate beautiful 
 
 First, let's see the help page of asciinema using the wonderful [tldr](https://github.com/tldr-pages/tldr) project:
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css" />
-<script src="../../js/asciinema-player.js"></script>
-<asciinema-player src="../asciinema/tldr_asciinema.rec" poster="npt:00:12" start-at="3"></asciinema-player>
+<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<div id="tldr_asciinema.rec" class="asciinema-player-div"></div>
+<script src="../../js/asciinema-player.min.js"></script>
+<script> 
+   AsciinemaPlayer.create('../asciinema/tldr_asciinema.rec', document.getElementById('tldr_asciinema.rec'), {
+      loop: true,
+      cols: 120,
+      rows: 25,
+      autoPlay: true,
+      terminalFontSize: "small"
+   });
+</script>
 
 # Recording a Terminal Session
 
@@ -89,11 +98,22 @@ Then, use these files from page as follows:
 </head>
 <body>
   ...
+  <div id="demo.rec"></div>
   <asciinema-player src="/demo.cast"></asciinema-player>
   ...
-  <script src="/asciinema-player.js"></script>
+  <script src="/asciinema-player.min.js"></script>
+  <script> 
+   AsciinemaPlayer.create('/demo.rec', document.getElementById('demo.rec'), {
+      loop: true,
+      cols: 120,
+      rows: 25,
+      autoPlay: true,
+      terminalFontSize: "small"
+   });
+</script>
 </body>
 </html>
 {% endhighlight %}
+
 
 This will embed a player similar to the one presented in this post.

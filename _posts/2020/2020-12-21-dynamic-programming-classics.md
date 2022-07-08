@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Dynamic Programming
-subtitle: A Handful of Representative Problems Solved
+subtitle: A handful of representative problems solved
 tags: programming
 description: All software engineers should be able to understand dynamic programming. I give a curated list of very representative problems and explain their solutions.
 published: true

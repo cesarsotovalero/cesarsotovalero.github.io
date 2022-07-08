@@ -1,14 +1,14 @@
 ---
 layout: post
 title: My Ultimate Terminal Customizations for macOS
-subtitle: A configurations guide 
+subtitle: A guide 
 tags: tools
-description: Some people say that developers live in the terminal.
+description: There is a common belief that top-class software developers can do their job without ever abandoning the terminal. This blog post is a how-to guide for you (and my future self) to configure the terminal in a way so that we will enjoy every command typed on it.
 keywords:
   - customize command line,
   - beautiful terminal,
   - Oh-my-zsh,
-  - Beautiful prompt,
+  - Beautiful prompt
 image: ../img/posts/2022/cheers_ascii_cover.jpg
 share-img: ../img/posts/2022/cheers_ascii_cover.jpg
 show-avatar: false
@@ -18,18 +18,18 @@ author: cesarsotovalero
 published: true
 ---
 
-There is a mystical belief that top-class software developers can do the job without abandoning the terminal.
+There is a common belief that top-class software developers can do their job without ever abandoning the terminal.
 I think this is true to some extent.
-It is impossible to become an **outstanding software developer** without knowing how to get the most out of the terminal.
-A good way to go is treating the [Unix shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) as a very good friend.[^1]
-This about the terminal as the bar where you go with your friend to drink and spend a good time together.
-I ~~mostly~~ prefer drinking with civilized friends,[^2] so I try to make the best of it.
-This blog post is a how-to guide for you (and my future self) to help them get appropriately dressed when we meet at the bar.
+It is impossible to become an outstanding software developer without knowing how to get the most out of the terminal.
+Personally, I treat my [Unix shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) as a very good friend.[^1]
+And the terminal for me is the bar where I go with this friend to drink and have a good time.
+As I ~~mostly~~ prefer drinking with civilized friends in civilized places,[^2] I try to stay at the bar that is as cozy as possible.
+This blog post is a how-to guide for you (and my future self) to configure the terminal in a way so that we will enjoy every command typed on it.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/cheers_ascii.jpg alt:"ASCII art displayed on my terminal" %}
   <figcaption class="stroke"> 
-    &#169; Cheers! ASCII art displayed on my terminal. You can get it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and running the command: <code class="language-bash highlighter-rouge">ascii-image-converter -C https://cesarsotovalero.net/img/posts/2022/cheers.jpg</code>.
+    &#169; Cheers! ASCII art displayed on my terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <code class="language-bash highlighter-rouge">ascii-image-converter -C http://tinyurl.com/3jez5whs</code>.
   </figcaption>
 </figure>
 
@@ -54,8 +54,8 @@ These are my favorite iTerm2 features:
 
 The second step is getting a better shell.
 I use [Oh My Zsh](https://ohmyz.sh/), as a shell replacement for macOS.
-This is an open-source, popular `zsh` configuration manager, offering tons of themes, functions, helpers, plugins, and other handy features for command line users.
-While `zsh` is now the default shell in Terminal app for modern macOS releases, Oh My Zsh is separate, and therefore must be installed and configured separately.
+This is an open-source and popular `zsh` configuration manager.
+It offers a tons of themes, functions, helpers, plugins, and other handy features.
 
 To install Oh My Zsh, execute the following command in the terminal:
 
@@ -82,8 +82,8 @@ export ZSH="/Users/cesarsv/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 {% endhighlight %}
 
-The `gnzh` theme is located in `~/.oh-my-zsh/themes/gnzh.zsh-theme`.
-Here's the full file:
+The `gnzh` theme is located by default in `~/.oh-my-zsh/themes/gnzh.zsh-theme`.
+Here's the full file that I use:
 
 {% highlight bash linenos %}
 setopt prompt_subst
@@ -126,14 +126,17 @@ ZSH_THEME_JENV_PROMPT_SUFFIX="›%f"
 }
 {% endhighlight %}
 
-Note that I use `jenv_prompt_info` in line `#31` to show the Java version that I'm currently using directly in the prompt.
+Note that I add `jenv_prompt_info` in line `#31` to show the Java version that I'm currently using directly in the prompt.
 You can show the version of other programming languages as well, here is [the list of available options](https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/prompt_info_functions.zsh#L14-L21).
-You can also customize the colors via `$FG[240]`, see an explanation [here](https://dev.to/yujinyuz/custom-colors-in-oh-my-zsh-themes-4h13).
-I also use [git-prompt](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git-prompt/README.md) via the global variable `$GIT_PROMPT` to show the status of the current Git repository when applicable.
+
+Also note that I customize the colors via `$FG[240]`, see an explanation [here](https://dev.to/yujinyuz/custom-colors-in-oh-my-zsh-themes-4h13).
+I use [git-prompt](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git-prompt/README.md) via the global variable `$GIT_PROMPT` to show the status of the current Git repository when applicable.
 
 **Plugins**:
-Oh My Zsh have a vast list of awesome [plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins). 
-To use a plugin, add the name of the plugin in the `~/.zshrc` file: 
+Oh My Zsh has a vast list of awesome [plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins). 
+To use a plugin, add the name of the plugin in the `~/.zshrc` file. 
+
+Here's an example:
 
 {% highlight bash linenos %}
 # Path to your oh-my-zsh installation.
@@ -145,16 +148,14 @@ export ZSH="/Users/cesarsv/.oh-my-zsh"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-   git
+   git-prompt
    zsh-syntax-highlighting
    zsh-autosuggestions
    aliases
-   docker
-   git-prompt
-   gradle
+   mvn
    jenv
    sdk
-   mvn
+   vscode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -163,10 +164,13 @@ source $ZSH/oh-my-zsh.sh
 These are my favorite Oh My Zsh plugins:
 
 - [git-prompt](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git-prompt/README.md): Displays information about the current git repository. In particular: the branch name, difference with remote branch, number of files staged or changed, etc.
-- [aliases](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/aliases/README.md): List the shortcuts that are currently available based on the plugins you have enabled.
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting): Provides syntax highlighting for the shell zsh.
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions): Suggests commands as you type based on history and completions.
+- [aliases](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/aliases/README.md): Lists the shortcuts that are currently available based on the plugins you have enabled.
 - [mvn](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/mvn/README.md): Provides many useful aliases as well as completion for the Apache Maven command (`mvn`).
+- [jenv](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/jenv/README.md): Initializes `jenv` and provides the jenv_prompt_info function to add Java version information to prompts.
 - [sdk](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/sdk/README.md): Plugin for [SDKMAN](https://sdkman.io/), a tool for managing parallel versions of multiple Software Development Kits on most Unix based systems. Provides autocompletion for all known commands.
-- [vscode](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/vscode/README.md): Simplify the interaction between the command line and VS Code or VSCodium editor.
+- [vscode](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/vscode/README.md): Simplifies the interaction between the command line and VS Code or VSCodium editor.
 
 # TLDR
 
@@ -177,7 +181,7 @@ Thus, the TLDR pages are a community effort to simplify the beloved man pages wi
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/tldr_vs_man.png alt:"Screenshot of autocompletion with Fig" %}
   <figcaption class="stroke"> 
-    tldr vs. man result when searching the <code class="language-bash highlighter-rouge">grep</code> command.
+    Man (left) vs. TLDR result when searching the <code class="language-bash highlighter-rouge">grep</code> command.
   </figcaption>
 </figure>
 
@@ -190,7 +194,7 @@ brew install tldr
 # Fig
 
 [Fig](https://fig.io/) adds IDE-style autocomplete to the terminal.
-I like it because it makes me feel that my terminal more like and IDE.
+I like it because it makes me feel my terminal more like and IDE.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/fig.png alt:"Screenshot of autocompletion with Fig" %}
@@ -205,6 +209,51 @@ To Install Fig, execute the following command in the terminal:
 brew install fig
 ````
 
+# Vim
+
+[Vim](https://www.vim.org/) is a powerful text editor for Unix. 
+It is used by many developers to write code directly in the terminal.
+I love Vim, despite its steep learning curve.
+
+<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<div id="vim.rec" class="asciinema-player-div"></div>
+<script src="../../js/asciinema-player.min.js"></script>
+<script> 
+   AsciinemaPlayer.create('../../asciinema/vim.rec', document.getElementById('vim.rec'), {
+      loop: true,
+      autoPlay: true,
+      rows: 25
+   });
+</script>
+
+To install Vim, execute the following command in the terminal:
+
+```bash
+brew install vim
+```
+
+It is very easy to apply different customizations to Vim that totally change how it looks and feels.
+I use the [amix/vimrc](https://github.com/amix/vimrc) scripts to easily customize my Vim environment.
+This includes a lot of great plugins, configurations and color schemes that make Vim a lot better. 
+
+To get and awesome Vim, simply execute the following commands in the terminal:
+
+```shell
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+```
+
+These commands install several Vim plugins and customizations.
+Among other plugins, it installs [NERDTree](https://github.com/preservim/nerdtree), which is a great tool for file navigation.
+To open NERDTree automatically when Vim starts and put the cursor back in the other window, add the following in `~/.vim_runtime/my_configs.vim`:
+
+```shell
+autocmd VimEnter * NERDTree | wincmd p
+```
+
+**Note:** To move the cursor between the NERDTree panel and the edit panel type `ctrl + w` twice.
+
+
 # SDKMAN!
 
 SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits (SDKs).
@@ -214,8 +263,15 @@ For example, you can use SDKMAN! to install the latest version of the Android SD
 You can also switch between different Java JDK versions, as follows:
 
 <link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
-<script src="../../js/asciinema-player.js"></script>
-<asciinema-player src="../asciinema/sdkman.rec" poster="npt:00:1" start-at="3"></asciinema-player>
+<div id="sdkman.rec" class="asciinema-player-div"></div>
+<script src="../../js/asciinema-player.min.js"></script>
+<script> 
+   AsciinemaPlayer.create('../../asciinema/sdkman.rec', document.getElementById('sdkman.rec'), {
+      loop: true,
+      autoPlay: true,
+      rows: 25
+   });
+</script>
 
 To install SDKMAN!, execute the following command in the terminal:
 
@@ -228,12 +284,16 @@ curl -s "https://get.sdkman.io" | bash
 [jEnv](https://www.jenv.be/) is a command line tool to help you forget how to set the `JAVA_HOME` environment variable.
 For example, you you can change the Java version that you are using by simply typing `jenv global <version>`:
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css" />
-<script src="../../js/asciinema-player.js"></script>
-<asciinema-player src="../asciinema/jenv.rec" poster="npt:00:1" start-at="3" rows="24"></asciinema-player>
-
-
-
+<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<div id="jenv.rec" class="asciinema-player-div"></div>
+<script src="../../js/asciinema-player.min.js"></script>
+<script> 
+   AsciinemaPlayer.create('../../asciinema/jenv.rec', document.getElementById('jenv.rec'), {
+      loop: true,
+      autoPlay: true,
+      rows: 25
+   });
+</script>
 
 To install jEnv, execute the following command in the terminal:
 
@@ -247,9 +307,16 @@ brew install jenv
 It can be used to filter, transform, and query JSON files in the terminal.
 And of course, you can get JSON file pretty-printed by typing `jq '.'`.
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css" />
-<script src="../../js/asciinema-player.js"></script>
-<asciinema-player src="../asciinema/jq.rec" poster="npt:00:12" start-at="3"></asciinema-player>
+<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<div id="jq.rec" class="asciinema-player-div"></div>
+<script src="../../js/asciinema-player.min.js"></script>
+<script> 
+   AsciinemaPlayer.create('../../asciinema/jq.rec', document.getElementById('jq.rec'), {
+      loop: true,
+      autoPlay: true,
+      rows: 25
+   });
+</script>
 
 
 To install jq, execute the following command in the terminal:
@@ -263,13 +330,18 @@ brew install jq
 [bat](https://github.com/sharkdp/bat) is a simple and powerful command-line utility for displaying files and directories.
 It is a replacement for the `cat` Unix command, but it is more powerful and more user-friendly.
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css" />
-<script src="../../js/asciinema-player.js"></script>
-<asciinema-player src="../../asciinema/bat.rec" poster="npt:00:12" start-at="3"></asciinema-player>
-
+<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<div id="bat.rec" class="asciinema-player-div"></div>
+<script src="../../js/asciinema-player.min.js"></script>
+<script> 
+   AsciinemaPlayer.create('../../asciinema/bat.rec', document.getElementById('bat.rec'), {
+      loop: true,
+      autoPlay: true,
+      rows: 25
+   });
+</script>
 
 To install bat, execute the following command in the terminal:
-
 
 ```bash
 brew install bat
@@ -278,7 +350,7 @@ brew install bat
 # Trash-CLI
 
 [trash-cli](https://github.com/sindresorhus/trash-cli) is a substitute for the dangerous `rm` command that permanently deletes files.
-In contrast, trash-cli moves files to the trash, which is much safer and reversible
+In contrast, trash-cli moves files to the trash, which is safer because it is reversible.
 
 To install trash-cli, execute the following command in the terminal:
 
@@ -286,13 +358,21 @@ To install trash-cli, execute the following command in the terminal:
 brew install trash-cli
 ```
 
-# EXA
+# Exa
 
-[exa](https://github.com/ogham/exa) is a modern replacement for the `ls` command.
+[Exa](https://github.com/ogham/exa) is a modern replacement for the `ls` command.
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css" />
-<script src="../../js/asciinema-player.js"></script>
-<asciinema-player src="../../asciinema/exa.rec" poster="npt:00:12" start-at="3"></asciinema-player>
+<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<div id="exa.rec" class="asciinema-player-div"></div>
+<script src="../../js/asciinema-player.min.js"></script>
+<script> 
+   AsciinemaPlayer.create('../../asciinema/exa.rec', document.getElementById('exa.rec'), {
+      loop: true,
+      autoPlay: true,
+      rows: 25
+   });
+</script>
+
 
 To install exa, execute the following command in the terminal:
 
@@ -302,13 +382,19 @@ brew install exa
 
 # Htop
 
-[htop](https://github.com/hishamhm/htop) is a terminal-based process viewer.
+[Htop](https://github.com/hishamhm/htop) is a terminal-based process viewer.
 It is a replacement for the `top` Unix command, more user-friendly and more powerful.
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css" />
-<script src="../../js/asciinema-player.js"></script>
-<asciinema-player src="../../asciinema/exa.rec" poster="npt:00:12" start-at="3"></asciinema-player>
-
+<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<div id="htop.rec" class="asciinema-player-div"></div>
+<script src="../../js/asciinema-player.min.js"></script>
+<script> 
+   AsciinemaPlayer.create('../../asciinema/htop.rec', document.getElementById('htop.rec'), {
+      loop: true,
+      autoPlay: true,
+      rows: 25
+   });
+</script>
 
 To install htop, execute the following command in the terminal:
 
@@ -318,34 +404,44 @@ brew install htop
 
 # Diff-so-fancy
 
-[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) is a terminal-based diff viewer.
+[Diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) is a terminal-based diff viewer.
 It is a replacement for the `diff` Unix command.
 It makes your diffs human-readable instead of machine-readable.
 This helps improve code quality and helps you spot defects faster.
 
-<figure class="jb_picture">
-  {% responsive_image path: img/posts/2022/git_diff_vs_diff-so-fancy.png alt:"Vanilla git diff vs git and diff-so-fancy." %}
-  <figcaption class="stroke"> 
-    Vanilla git diff vs git and diff-so-fancy.
-  </figcaption>
-</figure>
-
-I use it with the following option: `git config --bool --global diff-so-fancy.stripLeadingSymbols false`
+<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<div id="diff-so-fancy.rec" class="asciinema-player-div"></div>
+<script src="../../js/asciinema-player.min.js"></script>
+<script> 
+   AsciinemaPlayer.create('../../asciinema/diff-so-fancy.rec', document.getElementById('diff-so-fancy.rec'), {
+      loop: true,
+      autoPlay: true,
+      rows: 25
+   });
+</script>
 
 To install diff-so-fancy, execute the following command in the terminal:
 
 ```bash
 brew install diff-so-fancy
 ```
+
+To make it Git use it as the default, execute the following command in the terminal:
+
+```bash
+git config --bool --global diff-so-fancy.stripLeadingSymbols false
+```
+
+
 # Conclusion
 
-Here we are at the bar, enjoying a tasty afterwork's beer.
-I open my laptop, look at my beautiful terminal, fully customized and configured to suit my needs.
+Here we are at the bar, enjoying a tasty after-work beer.
+Now I open my laptop and look at my beautiful terminal, fully customized and configured to suit my needs.
 It is beautiful!
 I close my laptop, and I'm just happy 😄.
 
 # Footnotes
 
-[^1]: I recommend the course “[Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering),” by professor Prof. Diomidis Spinellis.
+[^1]: I recommend the course “[Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering),” by professor [Prof. Diomidis Spinellis](https://en.wikipedia.org/wiki/Diomidis_Spinellis).
 
 [^2]: Just kidding.

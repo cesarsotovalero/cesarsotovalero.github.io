@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Unix Cmd Hacks
-subtitle: Boosting Automation From the Shell
+subtitle: Boosting automation from the shell
 tags: programming
 keywords: unix, command line, scripts, tools
 description: Personal notes of the edX course titled Unix Tools Data, Software and Production Engineering.
