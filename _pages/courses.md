@@ -2,7 +2,7 @@
 permalink: courses.html
 layout: page
 title: Courses
-subtitle: At the pace of professional progress
+subtitle: Formal learning
 published: true
 ---
 

@@ -1,8 +1,8 @@
 ---
-permalink: certifications.html
+permalink: awards.html
 layout: page
-title: Certifications
-subtitle: And Other Awards
+title: Awards
+subtitle: Awards and certifications
 published: true
 ---
 
@@ -10,13 +10,6 @@ published: true
 <div class="cesarcarbon">
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
 </div>
-
-# Certificates
-
-- [JBA Reviewer Certificate](../files/certificates/2021_JBA_Reviewer_Certificate.pdf), _Journal of Business Analytics_, 2021
-- [JSEP Reviewer Certificate](../files/certificates/SMR_Certificate.pdf), _Journal of Software: Evolution and Process_, 2017
-- [ICPC-ACM Staff Member](../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf), _ICPC-ACM International Collegiate Programming Contest_, 2017
-- [IELTS Academic Test](../files/certificates/IELTS_Test_Report_Form.pdf), University of Cambridge ESOL Examinations, 2016
 
 # Awards
 
@@ -26,6 +19,13 @@ published: true
 - [MSR Data Showcase Award](../files/certificates/MSR_Data_Showcase_Award_2019.pdf), _16th International Conference on Mining Software Repositories_, 2019
 - [WASP Certificate of Excellence](../files/certificates/WASP_award.pdf), _WASP Autonomous Systems II_, 2019
 - [:earth_americas: PhD Scholarship](https://wasp-sweden.org/), _Awarded a Wallenberg AI, Autonomous Systems an d Software Program PhD scholarship_, 2018
+
+# Certificates
+
+- [JBA Reviewer Certificate](../files/certificates/2021_JBA_Reviewer_Certificate.pdf), _Journal of Business Analytics_, 2021
+- [JSEP Reviewer Certificate](../files/certificates/SMR_Certificate.pdf), _Journal of Software: Evolution and Process_, 2017
+- [ICPC-ACM Staff Member](../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.pdf), _ICPC-ACM International Collegiate Programming Contest_, 2017
+- [IELTS Academic Test](../files/certificates/IELTS_Test_Report_Form.pdf), University of Cambridge ESOL Examinations, 2016
 
 # Academic Degrees
 
