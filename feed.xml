@@ -9,8 +9,8 @@
       <item>
         <title>My Ultimate Terminal Customizations for macOS</title>
         <description>
-          A configurations guide - 
-          There is a mystical belief that top-class software developers can do the job without abandoning the terminal. I think this is true to some extent. It is impossible to become an outstanding software developer without knowing how to get the most out of the terminal. A good way to go...
+          A guide - 
+          There is a common belief that top-class software developers can do their job without ever abandoning the terminal. I think this is true to some extent. It is impossible to become an outstanding software developer without knowing how to get the most out of the terminal. Personally, I treat my...
         </description>
         <pubDate>Sun, 22 May 2022 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html</link>
@@ -141,7 +141,7 @@
       <item>
         <title>Seven Reasons to Go For a Ph.D. In Computer Science</title>
         <description>
-          The Good and the Ugly - 
+          The good and the ugly - 
           Pursuing a Ph.D. is a unique and personal experience. Admittedly, it is a journey mostly driven by personal ambitions and pride. The decision to begin this journey (i.e., becoming a Ph.D. student) is a very serious because a Ph.D. can literally change your life. It is not something to be...
         </description>
         <pubDate>Thu, 21 Oct 2021 00:00:00 -0700</pubDate>
@@ -152,7 +152,7 @@
       <item>
         <title>The Software Supply Chain</title>
         <description>
-          A Quick Look at the Modern Software Production Landscape - 
+          A quick look at the modern software production landscape - 
           The software supply chain comprises all the technology involved in shipping a piece of code from development to its deployment in a production environment. Several actors and different technologies participate in this complex process, e.g., developers, IDEs, compilers, package managers, a so on. The success or failure of a software...
         </description>
         <pubDate>Mon, 11 Oct 2021 00:00:00 -0700</pubDate>
@@ -163,7 +163,7 @@
       <item>
         <title>Design For Microservices!</title>
         <description>
-          An Easy Way to Boost the Popularity of Your Open-source Projects - 
+          An easy way to boost the popularity of your open-source projects - 
           The microservice architecture style consists of small and independently deployable services that run all together around a business domain. These small services act like living cells in an organism, each providing unique functionalities to protect the health of the whole system. Microservices have transitioned from a mere buzzword ten years...
         </description>
         <pubDate>Mon, 20 Sep 2021 00:00:00 -0700</pubDate>
@@ -174,7 +174,7 @@
       <item>
         <title>What Does It Take to Become a Software Architect?</title>
         <description>
-          A Matter of Responsibilities - 
+          A matter of responsibilities - 
           Programmers and software engineers are in high demand today. In particular, those programmers who adapt to the new technological challenges and evolve their skills are more likely to grow professionally. A natural career path for experienced engineers to push forward their lifework is transitioning towards a software architect role. In...
         </description>
         <pubDate>Mon, 09 Aug 2021 00:00:00 -0700</pubDate>
@@ -185,7 +185,7 @@
       <item>
         <title>Hermit Programmers are Dead</title>
         <description>
-          Don&apos;t Call Yourself Just a Programmer Anymore - 
+          Don&apos;t call yourself a programmer anymore - 
           It’s 2021, and the job market has crashed due to a ghastly global pandemic. At the same time, one particular job has taken over an idealized professional place: the computer programmer. They are perceived to be experts who know how to build, fix, and deploy software artifacts. Most of them...
         </description>
         <pubDate>Sat, 31 Jul 2021 00:00:00 -0700</pubDate>
@@ -196,7 +196,7 @@
       <item>
         <title>Replace the Disqus Commenting System on your Blog</title>
         <description>
-          GitHub-based Open-source Alternatives are Much Better - 
+          GitHub-based open-source alternatives are better - 
           I started using Disqus in 2018. At that time, it was arguably the leading commenting management system for both small and large websites. Its popularity was well deserved: ubiquitous integration, easy to set up, friendly admin panel, clean comment widget design, excellent spam filters, great content engaging features, etc. Three...
         </description>
         <pubDate>Tue, 27 Jul 2021 00:00:00 -0700</pubDate>
@@ -207,7 +207,7 @@
       <item>
         <title>Book Review - The Ph.D. Grind</title>
         <description>
-          A Tale of Perseverance and Learning from Failure - 
+          A tale of perseverance and learning from failure - 
           I recently read the amazing short book titled “The Ph.D. Grind” by Prof. Philip Guo. The book (~100 pages) is a compendium of his memories, written right after finishing his Ph.D. in 2012. I felt ecstatic with such a brilliant masterpiece that I could barely put it down once I...
         </description>
         <pubDate>Thu, 24 Jun 2021 00:00:00 -0700</pubDate>
@@ -218,7 +218,7 @@
       <item>
         <title>The Fork/Join Java framework</title>
         <description>
-          Boosting Performance Through Parallelization - 
+          Boosting performance through parallelization - 
           The Fork/Join framework makes it easy for Java developers to take advantage of the parallel execution supported by multicore processors. This API was added to the java.util.concurrent package since JDK 7, and it has been improved in subsequent versions of the JDK. It allows the developer to forget about the...
         </description>
         <pubDate>Sat, 05 Jun 2021 00:00:00 -0700</pubDate>

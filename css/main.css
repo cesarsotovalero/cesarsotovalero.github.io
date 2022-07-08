@@ -52,6 +52,11 @@ p a {
   padding-right: 12px;
 }
 
+.asciinema-player-div {
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Concourse T6 Tab", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
