@@ -7,9 +7,11 @@ logo: https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon.png
 
 navbar-links:
   Blog: "blog"
-  Publications: "publications"
   Software: "software"
   Service: "service"
+  Papers: "publications"
+  Awards: "awards"
+  Courses: "courses"
   Talks: "talks"
   About: "about-me"
 
