@@ -23,8 +23,8 @@ I think this is true to some extent.
 It is impossible to become an outstanding software developer without knowing how to get the most out of the terminal.
 Personally, I treat my [Unix shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) as a very good friend.[^1]
 And the terminal for me is the bar where I go with this friend to drink and have a good time.
-As I ~~mostly~~ prefer drinking with civilized friends in civilized places,[^2] I try to stay at the bar that is as cozy as possible.
-This blog post is a how-to guide for you (and my future self) to configure the terminal in a way so that we will enjoy every command typed on it.
+As it is more enjoyable drinking with civilized friends in civilized places,[^2] I prefer visiting a bar that is cozy and invites me to cheer.
+This blog post is a how-to guide for you (and my future self) to configure the terminal in a way so that we will enjoy every ~~drink~~ command typed on it.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/cheers_ascii.jpg alt:"ASCII art displayed on my terminal" %}
