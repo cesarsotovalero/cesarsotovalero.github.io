@@ -86,7 +86,7 @@ h3 {
 
 a {
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 5px;
   text-decoration-thickness: 0.05em;
   color: var(--main-text-color);
 }
