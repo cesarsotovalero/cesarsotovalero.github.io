@@ -29,7 +29,7 @@ This blog post is a how-to guide for you (and my future self) to configure the t
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/cheers_ascii.jpg alt:"ASCII art displayed on my terminal" %}
   <figcaption class="stroke"> 
-    &#169; Cheers! ASCII art displayed on my terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <code class="language-bash highlighter-rouge">ascii-image-converter -C http://tinyurl.com/3jez5whs</code>.
+    &#169; Cheers! ASCII art displayed on my terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <strong>ascii-image-converter -C http://tinyurl.com/3jez5whs</strong>.
   </figcaption>
 </figure>
 
