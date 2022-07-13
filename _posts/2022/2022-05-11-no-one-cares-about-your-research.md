@@ -167,7 +167,7 @@ But this is very far from being true.
 In practice, no one actually cares about a particular research paper unless it has her name on it.
 This is a comfortable truth.
 
-As I said [before](../seven-reasons-to-go-for-a-phd-in-computer-science), it is the training and skill set you gain through the hard research labor what really matters.
+As I said [before](../blog/seven-reasons-to-go-for-a-phd-in-computer-science), it is the training and skill set you gain through the hard research labor what really matters.
 It is the journey and the people that you meet what that gives the real value and meaning to do a PhD
 So, forget about the number of papers you have or if you fail to say something in a presentation.
 In any case, I can assure you that no one will ever care about it!

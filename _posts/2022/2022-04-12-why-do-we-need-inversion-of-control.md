@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Why Do We Need Inversion of Control (IoC) in Java?
-subtitle: Understanding IoC
+title: What is Inversion of Control (IoC)
+subtitle: Examples in Java
 tags: programming
 description: TODO
 keywords:
@@ -18,6 +18,11 @@ date: 2022/04/12
 author: cesarsotovalero
 published: false
 ---
+
+
+Dependency injection is a [design pattern](https://martinfowler.com/articles/injection.html) widely used in enterprise Java applications.
+Popular Java web frameworks, such as Spring, rely on this patter to initialize and wiring components from different application layers.
+
 
 Let's say that we have a meeting in a hotel.
 We have invited many people, so we have left out many jugs of water and many plastic cups.
@@ -417,7 +422,7 @@ class CustomerService {
 
 # References
 
-- TODO
+- [Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html)
 - TODO
 - TODO
 

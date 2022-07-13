@@ -30,6 +30,12 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
 # 2022
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
+  **Coverage-Based Debloating for Java Bytecode**. 
+  César Soto-Valero, Thomas Durieux, Nicolas Harrand, and Benoit Baudry. 
+  _ACM Transactions on Software Engineering and Methodology (TOSEM)_.
+  <a href="https://doi.org/10.1145/3546948"><i class="icon i-doi"></i> 10.1145/3546948</a>
+
+- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **The Multi-Billion Dollar Software Supply Chain of Ethereum**. 
   César Soto-Valero, Martin Monperrus, and Benoit Baudry. 
   _arXiv_.
@@ -72,12 +78,6 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   <a href="https://dx.doi.org/10.1007/s10664-020-09914-8"><i class="icon i-doi"></i> 10.1007/s10664-020-09914-8</a>
 
 # 2020
-
-- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
-  **Coverage-Based Debloating for Java Bytecode**. 
-  César Soto-Valero, Thomas Durieux, Nicolas Harrand, and Benoit Baudry. 
-  _arXiv_.
-  [:earth_americas: Link](https://arxiv.org/pdf/2008.08401)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px; padding-right: 18px"> 
   **Java Decompiler Diversity and its Application to Meta-decompilation**. 
