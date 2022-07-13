@@ -2,7 +2,7 @@
 layout: post
 title:  Enhance Your Readme With Asciinema
 subtitle: How to create beautiful terminal recordings that your users will love
-tags: tools tutorial
+tags: tools
 published: true
 description: In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema.
 keywords: asciinema, readme, improvement, video

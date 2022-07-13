@@ -1,14 +1,14 @@
 ---
 layout: post
 title: The Dynamics of Java
-subtitle: Understanding IoC
+subtitle: A long-standing battle between the language and the researchers
 tags: programming
 description: TODO
 keywords:
-  - Spring Boot,
-  - Java programming,
-  - Design patterns,
-  - TODO,
+  - Static analysis in Java,
+  - Java reflection,
+  - Java bytecode analysis,
+  - Java security,
   - TODO 
 image: ../img/posts/2022/untamed_horse_cover.jpg
 share-img: ../img/posts/2022/untamed_horse_cover.jpg

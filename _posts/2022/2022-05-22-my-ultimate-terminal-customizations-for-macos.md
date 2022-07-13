@@ -27,7 +27,7 @@ As it is more enjoyable drinking with civilized friends in civilized places,[^2]
 This blog post is a how-to guide for you (and my future self) to configure the terminal in a way so that we will enjoy every ~~drink~~ command typed on it.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2022/cheers_ascii.jpg alt:"ASCII art displayed on my terminal" %}
+  {% responsive_image path: img/posts/2022/cheers_ascii.png alt:"ASCII art displayed on my terminal" %}
   <figcaption class="stroke"> 
     &#169; Cheers! ASCII art displayed on my terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <strong>ascii-image-converter -C http://tinyurl.com/3jez5whs</strong>.
   </figcaption>
@@ -181,7 +181,7 @@ Thus, the TLDR pages are a community effort to simplify the beloved man pages wi
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/tldr_vs_man.png alt:"Screenshot of autocompletion with Fig" %}
   <figcaption class="stroke"> 
-    Man (left) vs. TLDR result when searching the <code class="language-bash highlighter-rouge">grep</code> command.
+    Man (left) vs. TLDR (right) results when displaying the documentation of the <code class="language-bash highlighter-rouge">grep</code> command.
   </figcaption>
 </figure>
 
@@ -303,7 +303,7 @@ brew install jenv
 
 # Jq
 
-[jq](https://stedolan.github.io/jq/) is a powerful command-line JSON processor.
+[Jq](https://stedolan.github.io/jq/) is a powerful command-line JSON processor.
 It can be used to filter, transform, and query JSON files in the terminal.
 And of course, you can get JSON file pretty-printed by typing `jq '.'`.
 
@@ -327,7 +327,7 @@ brew install jq
 
 # Bat
 
-[bat](https://github.com/sharkdp/bat) is a simple and powerful command-line utility for displaying files and directories.
+[Bat](https://github.com/sharkdp/bat) is a simple and powerful command-line utility for displaying files and directories.
 It is a replacement for the `cat` Unix command, but it is more powerful and more user-friendly.
 
 <link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
@@ -349,7 +349,7 @@ brew install bat
 
 # Trash-CLI
 
-[trash-cli](https://github.com/sindresorhus/trash-cli) is a substitute for the dangerous `rm` command that permanently deletes files.
+[Trash-cli](https://github.com/sindresorhus/trash-cli) is a substitute for the dangerous `rm` command that permanently deletes files.
 In contrast, trash-cli moves files to the trash, which is safer because it is reversible.
 
 To install trash-cli, execute the following command in the terminal:
@@ -442,6 +442,6 @@ I close my laptop, and I'm just happy 😄.
 
 # Footnotes
 
-[^1]: I recommend the course “[Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering),” by professor [Prof. Diomidis Spinellis](https://en.wikipedia.org/wiki/Diomidis_Spinellis).
+[^1]: I recommend the course “[Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering),” by [Prof. Diomidis Spinellis](https://en.wikipedia.org/wiki/Diomidis_Spinellis).
 
 [^2]: Just kidding.

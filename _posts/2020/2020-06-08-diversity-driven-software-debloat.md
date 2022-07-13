@@ -2,7 +2,7 @@
 layout: post
 title:  Diversity-Driven Software Debloat
 subtitle: Leveraging the wisdom of multiple coverage tools
-tags: debloat popular
+tags: debloat
 keywords: software debloat, diversity, jdbl
 description: I leverage the diversity of code coverage tools to create a tool to automatically debloat Java artifacts.
 published: true

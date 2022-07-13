@@ -1617,12 +1617,8 @@ code a:hover, a:focus {
 }
 
 pre.highlight, .highlight > pre, td.code pre {
-  background: #FAFAFA;
-  background-image: linear-gradient(#F9F9F9 0%, #FDFDFD 0%);
-  background-repeat: repeat;
   background-size: 3em 3em;
-  background-position: 0px 10px;
-  /*border-left: 2px solid #444;*/
+  background: #FAFAFA linear-gradient(#F9F9F9 0%, #FDFDFD 0%) repeat 0px 10px;
 }
 
 code table, code table td, code table th, code table tbody, code table tr,
@@ -2592,10 +2588,11 @@ a.btn {
 }
 
 #toc::before {
-  font-family: "Equity Caps A", Helvetica, Arial, sans-serif;
-  content: "Contents";
+  font-family: "Concourse T6 Tab", "Equity Caps A", Helvetica, Arial, sans-serif;
+  content: "Index";
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+  color: var(--post-meta-index-color)
 }
 
 #toc li {
