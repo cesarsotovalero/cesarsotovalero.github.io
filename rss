@@ -32,11 +32,11 @@
         <title>Inversion of Control and Dependency Injection in Java</title>
         <description>
           The holy grails of modern enterprise Java frameworks - 
-          Inversion of Control (IoC) is a programming principle based on delegating the program’s control to a framework in initializes some specific task for us. Dependency injection (DI) is a popular design pattern to apply the IoC principle. This design pattern is widely used in enterprise Java applications. This way, application’s...
+          Inversion of Control (IoC) is a programming principle. The idea of IoC is delegating the control of parts of our application to a framework that initializes some specific task for us. Dependency injection (DI) is a popular design pattern that applies the IoC principle. This pattern was made popular by...
         </description>
         <pubDate>Tue, 12 Apr 2022 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/why-do-we-need-inversion-of-control.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/why-do-we-need-inversion-of-control.html</guid>
+        <link>https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html</guid>
       </item>
     
       <item>
