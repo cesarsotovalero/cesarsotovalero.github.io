@@ -9,18 +9,19 @@ published: true
 image: ../img/posts/2020/unix_course_cover.jpg
 share-img: ../img/posts/2020/unix_course_cover.jpg
 show-avatar: false
-toc: true
+toc: false
 author: cesarsotovalero
 date: 2020/5/23
 ---
 
 I want to share my personal notes of the [edX](www.edx.org) course [Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering), by Prof. Diomidis Spinellis. I attended this course from March to June, 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and it makes me consider online education very seriously, as it provides an excellent way of learning from top courses, given by top universities, and tough by top experts in the world.
-<aside class="quote">
-    <em>"Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill"</em> ― Diomidis Spinellis 
-</aside>
-These notes are not organized in any specific manner. So, they are actually a bunch of very disordered Unix command line hacks and tricks :grin:.
 
-## Display elapsed time from the start to the end of process
+> "Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill." ― Diomidis Spinellis 
+ 
+These notes are not organized in any specific manner. 
+So, they are actually a bunch of very disordered Unix command line hacks and tricks :grin:.
+
+# Display elapsed time from the start to the end of process
 
 {% highlight bash linenos %}
 start=$(date +%s) 
@@ -29,7 +30,7 @@ end=$(date +%s)
 echo "The process lasted $(expr $end - $start) seconds." 
 {% endhighlight %}
 
-## Combine commands
+# Combine commands
 
 {% highlight bash linenos %}
 cat -n afile >result && rm afile # rm will be executed only if cat succeds
@@ -40,9 +41,9 @@ touch afile
 copy afile bfile || echo Copy failed # the echo will be executed
 {% endhighlight %}
 
-## Loops
+# Loops
 
-### For
+## For
 
 Function that passes input timezone and convert it to a desire time zone. To use it, run `showtime Europe/Sweden America/La_Habana 11:45`
 
@@ -74,7 +75,7 @@ for tzin in $TZONES; do
 done
 {% endhighlight %}
 
-### While
+## While
 
 Computes the average number of characters per line across the files in a directory.
 
@@ -88,9 +89,9 @@ while read name ; do # For every entry
 done |
 head
 {% endhighlight %}
-## Conditionals
+# Conditionals
 
-### If
+## If
 
 Create two files, and check if `sourcefile` is older than `destfile`.
 
@@ -105,7 +106,7 @@ if test [ soutcefile -nt destfile ] ; then
 fi
 {% endhighlight %}
 
-### If-else
+## If-else
 
 {% highlight bash linenos %}
 if test [ soutcefile -nt destfile] ; then
@@ -116,7 +117,7 @@ else
 fi
 {% endhighlight %}
 
-## xargs
+# xargs
 
 Executes the commands repeatedly to the output. Apply a set of commands as arguments to a command. The following program counts the number of lines of files in current directory
 
@@ -127,7 +128,7 @@ wc -l # Count number of lines
 {% endhighlight %}
 
 
-## case
+# case
 
 Allows to run specific command based on pattern matching.
 
@@ -136,7 +137,7 @@ Allows to run specific command based on pattern matching.
 case $(uname) in Linux
 {% endhighlight %}
 
-## Data processing flow
+# Data processing flow
 
 {% highlight bash linenos %}
 git clone gitrepo; cd gitrepo
@@ -147,7 +148,7 @@ uniq -c |   # Count all weekday occurrences
 sort -rn     # Order by descending popularity
 {% endhighlight %}
 
-## Append a timestamp to a log file
+# Append a timestamp to a log file
 
 {% highlight bash linenos %}
 echo $(date): operation failed >>log-file
@@ -166,6 +167,7 @@ We can invoke a web service to get some results and then pipe to `jq` to output 
 curl -s "http://api.currencylayer.com/\                                     Thursday 26 March 07:04
 live?access_key=$API_KEY&source=USD&currencies=EUR" | jq .
 {% endhighlight %}
+
 ## From a MySQL database
 
 {% highlight bash linenos %}
@@ -374,7 +376,7 @@ awk -F: "{print $1}" /etc/passw | head -5 # Output field 1
 awk "!/^#/ {print $1}" /etc/services | head # Print first field that doesn't match the regular expression
 {% endhighlight %}
 
-### ack
+## ack
 
 ack - grep-like text finder
 
@@ -460,7 +462,7 @@ sort -k 2nr |
 head
 {% endhighlight %}
 
-# `diff`
+## `diff`
 
 {% highlight bash linenos %}
 diff -u a b
@@ -519,7 +521,7 @@ echo 'This is a test' | tr ' ' - # Replace space with -
 echo 'This is a test' | tr a-z A-Z # Replace a-z A-Z
 {% endhighlight %}
 
-## Encryption & Decription
+# Encryption & Decription
 
 {% highlight bash linenos %}
 openssl enc -e -aes-256-cbc -pbkdf2 <pride-and-prejudice.txt >real-secret
@@ -529,7 +531,7 @@ $ openssl enc -d -aes-256-cbc -pbkdf2 <real-secret | head
 
 # Dealing with files
 
-## `tac`
+# `tac`
 
 Print and concatenate files in reverse (last line first).
 
@@ -537,31 +539,31 @@ Print and concatenate files in reverse (last line first).
 ll | tac
 {% endhighlight %}
 
-## `rev`
+# `rev`
 
 {% highlight bash linenos %}
 tail /usr/share/dict/words | rev # Reverse characters
 {% endhighlight %}
 
-## `paste`
+# `paste`
 
 {% highlight bash linenos %}
 paste - /usr/share/dict/word
 {% endhighlight %}
 
-## `shuf`
+# `shuf`
 
 {% highlight bash linenos %}
 shuf -n 5 /usr/share/dict/words # Output five random words
 shuf -n 1 -e heads tails # Throw a single coin
 {% endhighlight %}
-## split
+# split
 
 {% highlight bash linenos %}
 split -l 10000 -d /usr/share/dict/words # Split the dictionary
 {% endhighlight %}
 
-## `rs`
+# `rs`
 
 {% highlight bash linenos %}
 head /etc/passwd | rs -c: -C: -T # Transposes the output
@@ -623,7 +625,7 @@ jpegtopnm plate.jpeg |
 > pnmtojpeg >rplate.jpeg # Write the result in JPEG format
 {% endhighlight %}
 
-## sound
+# sound
 
 {% highlight bash linenos %}
 play -q sox-orig.wav

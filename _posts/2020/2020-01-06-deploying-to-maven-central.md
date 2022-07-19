@@ -14,13 +14,20 @@ author: cesarsotovalero
 date: 2020/1/06
 ---
 
-Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM. In this post, I'll describe the process of releasing a new artifact in Maven Central following a step-by-step approach. 
+Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM.
+It is one of the world’s largest and oldest archives of software libraries.
+In this post, I'll describe the process of releasing a new artifact in Maven Central following a step-by-step approach. 
 
-<aside class="quote">
-    <em>“Containing over four million software artifacts, the Maven Central Repository is one of the world’s largest and oldest archives of software libraries.”</em>
-</aside>
 
-# 1. Create a JIRA ticket in Sonatype
+<figure class="jb_picture">
+{% responsive_image path: img/posts/2020/mdg.png alt:"Excerpt of 1% of the whole graph of Maven artifacts" %}
+  <figcaption class="stroke"> 
+&#169; Excerpt of 1% of the Maven Dependency Graph of software artifacts. <a href="https://dl.acm.org/doi/10.1109/MSR.2019.00060">Source</a>.
+</figcaption>
+</figure>
+
+
+# Create a JIRA ticket in Sonatype
 
 First, you need to create a JIRA account and submit a ticket there requesting for a project namespace in Sonatype (aka, GroupId):
 
@@ -34,11 +41,11 @@ Below is an example of a ticket that I created requesting a repository for the n
 
 The ticked review is a manual process, it normally takes less than 2 business days.
 
-# 2. Configuring the POM
+# Configuring the POM
 
-After the approval of the ticket, you need to add additional information to the POM of the Maven project or module to be deployed. Follow the steps below exactly as they are.
+After the approval of the ticket, you need to add additional information to the POM of the Maven project or module to be deployed. Follow the steps below exactly as they are. 
 
-1. Choose appropriate coordinates as explained [here](https://central.sonatype.org/pages/choosing-your-coordinates.html):
+- Choose appropriate coordinates as explained [here](https://central.sonatype.org/pages/choosing-your-coordinates.html):
 
 {% highlight xml linenos %}
 <groupId>com.example.applications</groupId>
@@ -46,7 +53,7 @@ After the approval of the ticket, you need to add additional information to the 
 <version>1.4.7</version>
 {% endhighlight %}
  
-2.  Add your project name, description, and URL:
+- Add your project name, description, and URL:
 
 {% highlight xml linenos %}
 <name>Example Application</name>
@@ -54,7 +61,7 @@ After the approval of the ticket, you need to add additional information to the 
 <url>http://www.example.com/example-application</url>
 {% endhighlight %}
 
-3. Add licence information:
+-. Add licence information:
 
 {% highlight xml linenos %}
 <licenses>
@@ -65,7 +72,7 @@ After the approval of the ticket, you need to add additional information to the 
 </licenses>
 {% endhighlight %}
 
-4. Add information about developer/s :
+- Add information about developer/s :
 
 {% highlight xml linenos %}
 <developers>
@@ -78,7 +85,7 @@ After the approval of the ticket, you need to add additional information to the 
 </developers>
 {% endhighlight %}
 
-5. Add SCM information, the following example uses GitHub:
+- Add SCM information, the following example uses GitHub:
 
 {% highlight xml linenos %}
 <scm>
@@ -87,8 +94,8 @@ After the approval of the ticket, you need to add additional information to the 
   <url>http://github.com/simpligility/ossrh-demo/tree/master</url>
 </scm>
 {% endhighlight %}
-    
-6. Add distribution management and authentication to Sonatype via the `nexus-staging-maven-plugin`:
+
+- Add distribution management and authentication to Sonatype via the `nexus-staging-maven-plugin`:
 
 {% highlight xml linenos %}
 <distributionManagement>
@@ -114,8 +121,8 @@ After the approval of the ticket, you need to add additional information to the 
   </plugins>
 </build>
 {% endhighlight %}
-    
- 7. Add javadoc and sources attachments using the `maven-javadoc-plugin` and  `maven-source-plugin` :
+
+- Add javadoc and sources attachments using the `maven-javadoc-plugin` and  `maven-source-plugin` :
  
 {% highlight xml linenos %}
 <build>
@@ -150,7 +157,7 @@ After the approval of the ticket, you need to add additional information to the 
 </build>
 {% endhighlight %}
 
- 8. Add GPG signed components using the `maven-gpg-plugin`:
+- Add GPG signed components using the `maven-gpg-plugin`:
  
 {% highlight xml linenos %}
 <build>
@@ -173,7 +180,7 @@ After the approval of the ticket, you need to add additional information to the 
 </build>
 {% endhighlight %}
 
-9. Follow [this instructions](https://central.sonatype.org/pages/working-with-pgp-signatures.html) to encrypt your artifact with [gpg2](https://linux.die.net/man/1/gpg2) and distribute your public key to a key server (e.g., [http://keys.gnupg.net](http://keys.gnupg.net)). Do not forget to choose a passphrase to protect your secret key. Then add your gpg credentials with your passphrase to your Maven`settings.xml` file locally and use the [Sonatype Nexus repository manager](https://oss.sonatype.org/) as the server :
+- Follow [this instructions](https://central.sonatype.org/pages/working-with-pgp-signatures.html) to encrypt your artifact with [gpg2](https://linux.die.net/man/1/gpg2) and distribute your public key to a key server (e.g., [http://keys.gnupg.net](http://keys.gnupg.net)). Do not forget to choose a passphrase to protect your secret key. Then add your gpg credentials with your passphrase to your Maven`settings.xml` file locally and use the [Sonatype Nexus repository manager](https://oss.sonatype.org/) as the server :
 
 {% highlight xml linenos %}
 <settings>
@@ -200,7 +207,7 @@ After the approval of the ticket, you need to add additional information to the 
 </servers>r
 {% endhighlight %}
 
-10. Add `nexus-staging-maven-plugin` with the following configurations:
+- Add `nexus-staging-maven-plugin` with the following configurations:
 
 {% highlight xml linenos %}
 <build>
@@ -220,10 +227,9 @@ After the approval of the ticket, you need to add additional information to the 
 </build>
 {% endhighlight %}
 
-# 3. Release to Maven Central
+# Release to Maven Central
 
 Finally, run a deployment to OSSRH and an automated release to the Central Repository with the following command:
-
 
 {% highlight shell linenos %}
 mvn clean deploy

@@ -1,0 +1,10 @@
+{
+   "origins": [
+      "https://www.cesarsotovalero.net",
+      "https://cesarsotovalero.net"
+   ],
+   "originsRegex": [
+      "http://localhost:[0-9]+"
+   ],
+   "defaultCommentOrder": "oldest"
+}

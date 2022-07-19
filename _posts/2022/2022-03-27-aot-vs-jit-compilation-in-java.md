@@ -157,7 +157,7 @@ In summary, AOT compilation with GraalVM provides the following advantages over 
 - Can be packaged into lightweight container images for faster and more efficient deployments.
 - Reduced attack surface.
 
-## AOT Limitations: The Close World Assumption
+## The Close World Assumption
 
 The points-to analysis of the AOT compilation needs to "see" all the bytecode to work correctly.
 This limitation is known as the close world assumption.
@@ -186,7 +186,7 @@ Thesis files can be passed to the `native-image` tool so that the used classes w
 It is worth mentioning that the close work assumption is good for security as it eliminates the possibility of various code injections (e.g., the [Log4j vulnerability](https://nvd.nist.gov/vuln/detail/CVE-2021-44228) that shocked the web in 2021 was possible due to the exploitation of the dynamic class loading mechanism in Java).
 On the other hand, the points-to-analysis makes AOT compilation slower than JIT because all the reachable bytecode needs to be analyzed, which is an expensive computational tack.  
 
-# Is AOT Compilation with GraalVM the Future of Java?
+# Is GraalVM the Future of Java?
 
 The benefits of AOT compilation for native cloud applications have increased the interest in this technology. The Java ecosystem is adopting this technology with enthusiasm.
 At the moment of writing, four major frameworks benefit from GraalVM to build and optimize applications:

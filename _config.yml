@@ -270,6 +270,9 @@ plugins:
   - jekyll-toc
   - jekyll-mermaid
 
+toc:
+  ordered_list: true
+
 # Mermaid, library for diagrams, see https://mermaid-js.github.io, and https://github.com/jasonbellamy/jekyll-mermaid
 mermaid:
   src: '/js/mermaid.min.js'

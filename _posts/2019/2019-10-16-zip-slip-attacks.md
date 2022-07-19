@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vulnerability Exploitation
+title: The Zip Slip Vulnerability Exploitation
 subtitle: Zip slip attacks
 published: true
 tags: security
@@ -51,7 +51,7 @@ The following is a list of vulnerability identifiers:
   configuration files or other sensitive resources, and can be
   exploited on both client (user) machines and servers.
 
-## Example
+# Example
 
 Zip Slip attacks are especially prevalent in Java. The principal reason is that Java does not provide any standard library offering high-level processing of archive files. Consequently, developers have to write their own routines or reuse third-party libraries as dependencies from external repositories.
 

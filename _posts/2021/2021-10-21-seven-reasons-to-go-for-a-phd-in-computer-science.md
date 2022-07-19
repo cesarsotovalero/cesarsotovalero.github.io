@@ -29,7 +29,7 @@ In the case of Computer Science, a Ph.D. trains you to be a scientist, not a pro
 This single fact has profound repercussions.
 After being a Ph.D. student for almost three years now, I can think of seven clear reasons that are worth taking the decision to go for a Ph.D. in this field.
 I group them into the good and the ugly.
-The good ones (3) aim to achieve noble goals, while the ugly ones (4) are driven by more personal ambitions.
+The good ones (1-3) aim to achieve noble goals, while the ugly ones (4-7) are driven by more personal ambitions.
 I dare to say that if you don't feel identified with any of them, then probably a Ph.D. in Computer Science is not for you.
 Let's discuss this matter!
 
@@ -40,9 +40,8 @@ Let's discuss this matter!
     </figcaption>
 </figure>
 
-# The Good
 
-## 1. Feed Your Intellectual Curiosity 
+# Feed Your Intellectual Curiosity 
 
 A Ph.D. is an [academic degree](https://en.wikipedia.org/wiki/Doctor_of_Philosophy) given those who expand the boundaries of human knowledge in some specific area of science.
 Thus, it is a form of social recognition.
@@ -69,7 +68,7 @@ Understanding a compiler is different from developing a new technique to make it
 A Ph.D. is a unique opportunity to dive deep into a particular technology, at the very minimum level of detail, to leave a footprint on it.
 If you possess this urge to learn and experiment, and at the same time, dream about making a difference in the world, then a Ph.D. will give you a chance to pursue such sublime goals.
 
-## 2. Become a Professional Researcher
+# Become a Professional Researcher
 
 The principal objective of a Ph.D. is to train students to become professional researchers.
 Getting a position as a researcher is perceived to be a synonym of holding a very gratifying job.
@@ -93,7 +92,7 @@ Being able to see a research prototype being taken seriously, implemented, and r
 Software companies often have R&D departments filled with Ph.D. graduates, so if you go there, the environment should be already familiar to you.
 As a plus, the salary in companies is higher than in academia, providing a reasonable balance between personal and economic benefits.
 
-## 3. Build a Career Network
+# Build a Career Network
 
 As occurs with writers, there is a common belief that researchers are lonely people working in isolated environments.
 This is simply not true.
@@ -120,9 +119,8 @@ Others will become prestigious professors, and a very few of them will make sign
   <iframe width="560" height="349" src="https://www.youtube.com/embed/IrFS2e-4gqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-# The Ugly 
 
-## 4. Set Yourself Apart From The Competition 
+# Set Yourself Apart From The Competition 
 
 You probably want to be [more than just a programmer](https://www.cesarsotovalero.net/blog/hermit-programmers-are-dead.html), and that's great.
 The Ph.D. journey will arm you with a set of technical and non-technical skills to satisfy this ambition.
@@ -144,7 +142,7 @@ Being an expert positions yourself as someone more valuable, and many companies 
 They will provide you will all you need to apply those skills as new opportunities arise, which translates into more opportunities to pursue a high-level career within the industry.
 Furthermore, some particular jobs require a Ph.D. degree, i.e., many machine learning-related jobs.
 
-## 5. Challenge Yourself
+# Challenge Yourself
 
 Some people are more ambitious than others (professionally speaking).
 If you are very ambitious, you need to be thinking about what's beyond software development.
@@ -165,7 +163,7 @@ For example, if all your parent and brothers hold academic titles, you'll probab
 Otherwise, you might be perceived as someone that belongs to an inferior category.
 However, the main driver for doing a Ph.D. should be no other than satisfying personal aspirations.
 
-## 6. Own Your Work 
+# Own Your Work 
 
 As a paid employee working in a software company, you probably have signed a contract explicitly stating that the results of your work belong to the company.
 In contrast, academic research is one of the very few positions where you can personally retain all the credits for your work.
@@ -187,7 +185,7 @@ Every time you publish a paper, you will read your name there and feel a sense o
 Academia gives researchers a fine sense of glory and reputation to live up to.
 A gift for the hard work made and the comparatively low pay received in exchange.
 
-## 7. Emigrate!
+# Emigrate!
 
 Everyone wants to live a good life.
 But the uncomfortable truth is that the majority of people in the world have the geographical fatality of being born in countries polluted by financial uncertainty and a lack of freedom.

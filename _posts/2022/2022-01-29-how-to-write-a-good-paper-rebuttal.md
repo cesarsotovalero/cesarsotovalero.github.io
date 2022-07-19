@@ -144,11 +144,11 @@ Therefore, using a table saves you word limits!
 
 For example, the following table presents new data to the reviewers without significantly affecting the word count:
 
-{% highlight markdown %}
+{% highlight text %}
 We conducted a new experiment with the Foo dataset:
 
 |  Model  |  Metric1  |  Metric2  |  Metric3  |
-|---------|-----------|-----------|-----------|
+|---------|-----------|-----------|-----------|`
 |    A    |     69    |     40    |     38    |
 |    B    |     99    |     89    |     78    |
 |    C    |     43    |     76    |     45    |

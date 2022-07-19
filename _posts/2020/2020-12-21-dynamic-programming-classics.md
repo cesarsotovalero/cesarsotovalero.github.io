@@ -8,7 +8,7 @@ published: true
 keywords: problems, dynamic programming, strategies
 image: ../img/posts/2020/circular_effect_cover.jpg
 share-img: ../img/2020/circular_effect_cover.jpg
-toc: true
+toc: false
 show-avatar: false
 author: cesarsotovalero
 date: 2020/12/21
@@ -37,7 +37,7 @@ I have written my own solutions to the problems in Java.
 
 The first indication that we are dealing with a DP problem is noticing overlapping sub-problems. Then, one has to decide what the trivially smallest input is. Depending on the implementation strategy to use, memoization (recursive) or tabulation (iterative), there are recipes that one can follow to address DP problems. For the memoization strategy, the most challenging step is to visualize the problem as a tree. When using the tabulation, finding the proper way to iterate through the table is usually the most challenging task.
 
-### Memoization
+## Memoization
 
 1. Make it work
     - visualize the problem as a tree (**hard**)
@@ -48,7 +48,7 @@ The first indication that we are dealing with a DP problem is noticing overlappi
     - add a base case to return memo values
     - store return values into the memo
 
-### Tabulation
+## Tabulation
 
 1. Visualize the problem as a table 
 2. Size the size of the table based on the inputs
@@ -57,30 +57,30 @@ The first indication that we are dealing with a DP problem is noticing overlappi
 5. Iterate through the table (**hard**)
 6. Fill further positions based on the current position
 
-# Problems
+# List of Problems
 
-* [Fibonacci](#fibonacci) ("What is the best way to do it?" -> Optimization problem)
+* [Fibonacci](#fibonacci) ("What is the best way to do it?" → Optimization problem)
   * [Memoization solution](#memoization-solution)
   * [Tabulation solution](#tabulation-solution)
-* [Grid traveler](#grid-traveler) ("How will you do it?" -> Combinatoric problem)
+* [Grid traveler](#grid-traveler) ("How will you do it?" → Combinatorics problem)
   * [Memoization solution](#memoization-solution-1)
   * [Tabulation solution](#tabulation-solution-1)
-* [Can sum](#can-sum) ("Can you do it?" -> Decision problem)
+* [Can sum](#can-sum) ("Can you do it?" → Decision problem)
   * [Memoization solution](#memoization-solution-2)
   * [Tabulation solution](#tabulation-solution-2)
-* [How sum](#how-sum) ("How will you do it?" -> Combinatoric problem)
+* [How sum](#how-sum) ("How will you do it?" → Combinatorics problem)
   * [Memoization solution](#memoization-solution-3)
   * [Tabulation solution](#tabulation-solution-3)
-* [Best sum](#best-sum) ("What is the best way to do it?" -> Optimization problem)
+* [Best sum](#best-sum) ("What is the best way to do it?" → Optimization problem)
   * [Memoization solution](#memoization-solution-4)
   * [Tabulation solution](#tabulation-solution-4)
-* [Can construct](#can-construct) ("Can you do it?" -> Decision problem)
+* [Can construct](#can-construct) ("Can you do it?" → Decision problem)
   * [Memoization solution](#memoization-solution-5)
   * [Tabulation solution](#tabulation-solution-5)
-* [Count construct](#count-construct) ("How will you do it?" -> Combinatoric problem)
+* [Count construct](#count-construct) ("How will you do it?" → Combinatorics problem)
   * [Memoization solution](#memoization-solution-6)
   * [Tabulation solution](#tabulation-solution-6)
-* [All construct](#all-construct) ("In how many ways can you do it?" -> Combinatoric problem)
+* [All construct](#all-construct) ("In how many ways can you do it?" → Combinatorics problem)
   * [Memoization solution](#memoization-solution-7)
   * [Tabulation solution](#tabulation-solution-7)
 
@@ -103,7 +103,7 @@ Input: fib(8)
 Output: 21
 {% endhighlight %}
 
-### Memoization Solution
+## Memoization Solution
 
 {% highlight java linenos %}
 static int fib(int n, Map<Integer, Integer> memo) {
@@ -115,7 +115,7 @@ static int fib(int n, Map<Integer, Integer> memo) {
 }
 {% endhighlight %}
 
-### Tabulation Solution
+## Tabulation Solution
 
 {% highlight java linenos %}
 static int fib(int n) {
@@ -139,7 +139,7 @@ Input: gridTraveler(2, 3)
 Output: 3
 {% endhighlight %}
 
-### Memoization Solution
+## Memoization Solution
 
 {% highlight java linenos %}
 static long gridTraveler(int m, int n, Map<String, Long> memo) {
@@ -152,7 +152,7 @@ static long gridTraveler(int m, int n, Map<String, Long> memo) {
 }
 {% endhighlight %}
 
-### Tabulation Solution
+## Tabulation Solution
 
 {% highlight java linenos %}
 static long gridTraveler(int m, int n) {
@@ -179,7 +179,7 @@ Input: canSum(7, new int[]{5, 3, 4, 7})
 Output: true
 {% endhighlight %}
 
-### Memoization Solution
+## Memoization Solution
 
 {% highlight java linenos %}
 static boolean canSum(int targetSum, int[] numbers, Map<Integer, Boolean> memo) {
@@ -207,7 +207,7 @@ brute force: O(n^m)
 memoized: O(m*n)
 -->
 
-### Tabulation Solution
+## Tabulation Solution
 
 {% highlight java linenos %}
 static boolean canSum(int targetSum, int[] numbers) {
@@ -237,7 +237,7 @@ Input: howSum(7, new int[]{5, 3, 4, 7})
 Output: [3, 4] // or [7]
 {% endhighlight %}
 
-### Memoization Solution
+## Memoization Solution
 
 {% highlight java linenos %}
 static List<Integer> howSum(int targetSum, int[] numbers, Map<Integer, List<Integer>> memo) {
@@ -267,7 +267,7 @@ brute force: O(n^m * m)
 memoized: O(m*m^2)
 -->
 
-### Tabulation Solution
+## Tabulation Solution
 
 {% highlight java linenos %}
 static List<Integer> howSum(int targetSum, int[] numbers) {
@@ -303,7 +303,7 @@ Input: bestSum(7, new int[]{5, 3, 4, 7})
 Output: [7]
 {% endhighlight %}
 
-### Memoization Solution
+## Memoization Solution
 
 {% highlight java linenos %}
 static List<Integer> bestSum(int targetSum, int[] numbers, Map<Integer, List<Integer>> memo) {
@@ -338,7 +338,7 @@ brute force: O(n^m * m)
 memoized: O(m*m^2)
 -->
 
-### Tabulation Solution
+## Tabulation Solution
 
 {% highlight java linenos %}
 static List<Integer> bestSum(int targetSum, int[] numbers) {
@@ -379,7 +379,7 @@ Input: canConstruct("abcdef", new String[]{"ab", "abc", "cd", "def", "abcd"})
 Output: true
 {% endhighlight %}
 
-### Memoization Solution
+## Memoization Solution
 
 {% highlight java linenos %}
 static boolean canConstruct(String target, String[] wordBank, Map<String, Boolean> memo) {
@@ -404,7 +404,7 @@ brute force: O(n^m * m)
 memoized: O(m*m^2)
 -->
 
-### Tabulation Solution
+## Tabulation Solution
 
 {% highlight java linenos %}
 static boolean canConstruct(String target, String[] wordBank) {
@@ -439,7 +439,7 @@ Input: countConstruct("purple", new String[]{"purp", "p", "ur", "le", "purpl"})
 Output: 2
 {% endhighlight %}
 
-### Memoization Solution
+## Memoization Solution
 
 {% highlight java linenos %}
 static int countConstruct(String target, String[] wordBank, Map<String, Integer> memo) {
@@ -463,7 +463,7 @@ brute force: O(n^m * m)
 memoized: O(m*m^2)
 -->
 
-### Tabulation Solution
+## Tabulation Solution
 
 {% highlight java linenos %} 
 static int countConstruct(String target, String[] wordBank) {
@@ -500,7 +500,7 @@ Output: {["ab", "cd", "ef"],
         }
 {% endhighlight %}
 
-### Memoization Solution
+## Memoization Solution
 
 {% highlight java linenos %}
 static List<List<String>> allConstruct(String target, String[] wordBank, Map<String, List<List<String>>> memo) {
@@ -535,7 +535,7 @@ brute force: O(n^m * m)
 memoized: O(m*m^2)
 -->
 
-### Tabulation Solution
+## Tabulation Solution
 
 {% highlight java linenos %} 
 static List<List<String>> allConstruct(String target, String[] wordBank) {

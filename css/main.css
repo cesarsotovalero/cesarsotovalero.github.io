@@ -21,6 +21,7 @@ body {
   letter-spacing: -0.2px;
   word-spacing: 1.5px;
   overflow-x: hidden;
+  counter-reset: h1counter h2counter h3counter h4counter;
 }
 
 @media only screen and (max-width: 450px) {
@@ -65,22 +66,77 @@ h1, h2, h3, h4, h5, h6 {
   /*text-transform: capitalize;*/
 }
 
+
 h1 {
   margin-top: 40px;
   margin-bottom: 20px;
   letter-spacing: -0.25px;
+  counter-reset: h2counter;
+  font-size: 36px;
+}
+
+.blog-post h1:before {
+  counter-increment: h1counter;
+  content: counter(h1counter) ".\0000a0\0000a0";
+  font-size: 32px;
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (max-width: 425px) {
+  .h1, h1 {
+    margin-top: 25px;
+    font-size: 28px;
+  }
+
+  .blog-post h1:before {
+    content: counter(h1counter) ".\0000a0";
+    font-size: 26px;
+  }
 }
 
 h2 {
   margin-top: 40px;
   margin-bottom: 20px;
   letter-spacing: -0.25px;
+  counter-reset: h3counter;
+  font-size: 28px;
 }
+
+.blog-post h2:before {
+  counter-increment: h2counter;
+  content: counter(h1counter) "." counter(h2counter) ".\0000a0\0000a0";
+  font-size: 24px;
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .h2, h2 {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .blog-post h2:before {
+    counter-increment: h2counter;
+    content: counter(h1counter) "." counter(h2counter) ".\0000a0";
+    font-size: 20px;
+  }
+
+}
+
 
 h3 {
   margin-top: 40px;
   margin-bottom: 20px;
   letter-spacing: -0.25px;
+  counter-reset: h4counter;
+}
+
+
+.blog-post h3:before {
+  counter-increment: h3counter;
+  content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
@@ -107,7 +163,7 @@ blockquote {
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
   border-radius: 0px 5px 5px 0px;
-  font-family:  "Equity Text A", 'Source Sans Pro', sans-serif;
+  font-family: "Equity Text A", 'Source Sans Pro', sans-serif;
 
 }
 
@@ -151,27 +207,6 @@ em {
   white-space: nowrap;
 }
 
-.h1, h1 {
-  font-size: 36px;
-}
-
-@media only screen and (max-width: 425px) {
-  .h1, h1 {
-    margin-top: 25px;
-    font-size: 28px;
-  }
-}
-
-.h2, h2 {
-  font-size: 30px;
-}
-
-@media only screen and (max-width: 425px) {
-  .h2, h2 {
-    margin-top: 20px;
-    font-size: 22px;
-  }
-}
 
 .post-title-main {
   font-size: 32px;
@@ -454,7 +489,7 @@ a[href$=".pptx"] {
   text-align: center;
 }
 
-.navbar-custom  .container-fluid ul li {
+.navbar-custom .container-fluid ul li {
   display: inline-block;
 }
 
@@ -760,7 +795,6 @@ a[href$=".pptx"] {
 }
 
 
-
 @media only screen and (min-width: 980px) {
   #mailchimp-subscribe-section-share #mc_embed_signup-share label {
     font-size: 1.125rem;
@@ -834,7 +868,7 @@ footer .list-inline {
 
 footer .copyright {
   color: var(--main-text-color);
-  font-family:  "Concourse T2", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T2", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
   margin-bottom: 0;
   padding-top: 20px;
@@ -1041,6 +1075,7 @@ p.post-meta {
   .post-preview .post-entry {
     font-size: 17px;
   }
+
   .post-entry {
     font-size: 17px;
   }
@@ -1644,7 +1679,6 @@ td.gutter {
 }
 
 
-
 /* --- Social media sharing section --- */
 
 #share-section {
@@ -2115,13 +2149,13 @@ ol, ul {
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
   border-radius: 0px 5px 5px 0px;
-  font-family:  "Equity Text A", sans-serif;
+  font-family: "Equity Text A", sans-serif;
 }
 
 .quote em {
   font-weight: 400;
   font-style: normal;
-  font-family:  "Equity Text A", sans-serif;
+  font-family: "Equity Text A", sans-serif;
 }
 
 #comments-count {
@@ -2511,9 +2545,11 @@ article[role=main] {
   .footnotes {
     font-size: 16px;
   }
+
   .footnote {
     font-size: 16px;
   }
+
   .reversefootnote {
     font-size: 16px;
   }
@@ -2578,8 +2614,12 @@ a.btn {
   visibility: visible;
   transition: all 0.1s ease 0s;
   display: block;
+  counter-reset: item;
 }
 
+#toc ol {
+  counter-reset: item;
+}
 
 @media only screen and (max-width: 1525px) {
   #toc {
@@ -2601,9 +2641,23 @@ a.btn {
   margin: 0;
 }
 
+#toc li ol {
+  padding-left: 15px;
+}
+
+#toc li:before {
+  position: absolute;
+  margin-right: 100%;
+}
+
 #toc li a {
   color: var(--post-meta-index-color);
   text-decoration: none;
+}
+
+#toc li a:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
 }
 
 /* 3. ScrollSpy active styles (see JS tab for activation) */
@@ -2613,7 +2667,7 @@ a.btn {
   /*font-family: "Century Supra C4", Helvetica, Arial, sans-serif;*/
   font-weight: bold;
   display: list-item;
-  list-style-type: disc;
+  list-style-type: '→ ';
 }
 
 #toc a {

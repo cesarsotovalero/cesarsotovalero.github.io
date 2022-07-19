@@ -34,7 +34,7 @@ I hope you find them useful as too.
     </figcaption>
 </figure>
 
-# 1. Structure Comes First  
+# Structure Comes First  
 
 Writing a scientific paper is a skill that can be developed only trough continuous practice and dedication.
 The idea of sitting down and writing a full academic paper from scratch is overwhelming, so it is better focusing on smaller goals.
@@ -77,7 +77,7 @@ A good paper reports the results of a research project concisely, and the academ
 It is a good idea to cooperate with the reviewers who ultimately will decide your paper's fate.
 Note that the title and content of the paper might vary over time, but this initial outline ~~when done correctly~~ hardly changes.
 
-# 2. Add Figures and Results
+# Add Figures and Results
 
 I've found that one of the best ways to break initial writer's block is by adding figures and results at the very first stage of the paper.
 Just draft a figure for the study design section and add some tables with preliminary results (I'm assuming that you already have some results 😀️).
@@ -94,7 +94,7 @@ This makes it clear in my mind what the paper is about.
 Writing the introduction is also a good opportunity to discuss with coauthors and reformulate the core contributions of the paper.
 Once done, I suggest jumping straight to the results section.
 
-# 3. Formulate Questions
+# Formulate Questions
 
 Writing is, in a nutshell, the art of adding words, sentences, and paragraphs in a logical and structured manner.
 Most research papers are constrained in size and follow a predictable structure.
@@ -127,7 +127,7 @@ Once you have the question in place then you have a hook that can be later turn 
 Questions give a focus to writers, an actionable direction to express the ideas.
 If you master the art of asking and answering the right questions, then you'll always be "in the flow."
 
-# 4. Paraphrase the Recurrent
+# Paraphrase the Recurrent
 
 A good research paper should convey a single idea.
 The idea can be very simple or complex (_simple is better_, IMHO 😉), and all the text in the paper should orbit around it.
@@ -152,7 +152,7 @@ I usually read articles from the journal or conference where I plan to submit.
 This gives me an idea about the expectations of its reviewers and editors. 
 It is also helpful to read articles that describe the same methodology that you use.
 
-# 5. Refine Later
+# Refine Later
 
 Most of us want everything to be just right before even touching the keyboard. 
 But this desirable state of minds and things never happens in practice. 
@@ -169,7 +169,7 @@ Focusing on substantive writing and postponing the editing is a good strategy to
 Don't switch to editing if you hit a block.
 Instead,  switch to writing a different part of the paper and edit only when you have a complete draft for a section.
 
-# 6. Either Write or Do Nothing
+# Either Write or Do Nothing
 
 Always take into account that writer's block could resurface anytime.
 This happens when because writing is a very intense mental activity that demand a lot of energy. 
@@ -191,7 +191,7 @@ I feel the imperative need to do something. Then, I just write.
 It doesn't need to be great what I write, it just needs to be something that puts me out of this uncomfortable state.
 Yes, I overcome writer's block as an attempt to staying away of boredom!
 
-# 7. Imagine That the Task Is Finished
+# Imagine That the Task Is Finished
 
 This last trick is very special and personal.
 It relies on a couple of facts:

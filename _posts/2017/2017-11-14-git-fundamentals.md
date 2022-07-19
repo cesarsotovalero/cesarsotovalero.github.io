@@ -22,18 +22,18 @@ Git is the standard version-control system for software development. Git was cre
 
 First, add your user name and email to the git global configurations. These commands will be automatically written  to `~/.gitconfig`.
 
-```git
+```bash
 git config --global user.name "César Soto Valero"
 git config --global user.email "cesarsotovalero@gmail. com"
 ```
 To remove the return characters added by the OS every time that you commit a file:.
 
-```git
+```bash
 git config --global  core.autocrlf input
 ```
 Lets make some useful aliases.  The first one allows us to retrieve a simplified status with `git s`, the second is an improved log with `git lg`.
 
-```git
+```bash
 git config --gloabal alias.s "status -s" 
 git config --global alias.lg "log --oneline --all --graph --decorate"
 ```
@@ -42,20 +42,20 @@ git config --global alias.lg "log --oneline --all --graph --decorate"
 
 To commit all the modified files,  add them to the staging area and commit with a message:
 
-```git
+```bash
 git add .
 git commit -m "commit message goes here"
 ```
 
 Optionally, can do both commands at the same time:
 
-```git
+```bash
 git commit -am "commit message goes here"
 ```
 
 To change the message of the last t commit made:
 
-```git
+```bash
 git commit --amend
 ```
 
@@ -63,25 +63,25 @@ git commit --amend
 
 To list all the existing branches (including the remote branch, often called `origin/master`):
 
-```git
+```bash
 git branch -a
 ```
 
 To create a new branch and move to it:
 
-```git
+```bash
 git checkout  -b branch_name
 ```
 
 To switch to a branch:
 
-```git
+```bash
 git checkout branch_name
 ```
 
 To remove a  branch:
 
-```git
+```bash
 git branch -d  branch_name
 ```
 
@@ -89,19 +89,19 @@ git branch -d  branch_name
 
 To see the difference between unstaged files:
 
-```git
+```bash
 git diff
 ```
 
 To see the difference between staged files:
 
-```git
+```bash
 git diff --staged
 ```
 
 To see the difference with respect to the last commit made:
 
-```git
+```bash
 git diff HEAD
 ```
 
@@ -109,13 +109,13 @@ git diff HEAD
 
 To merge a branch using recursive merge, switch to the desired branch (e.g., the `master` branch) and create a commit  message for the merge:
 
-```git
+```bash
 git merge --no-ff branch_name
 ```
 
 To resolve a merge conflict, look at the status with `git s` and edit the file with the conflict with a text editor, then `add` and commit the files without a commit message to see additional details of the resolved conflict.
 
-```git
+```bash
 git add .
 git commit
 ```
@@ -124,14 +124,14 @@ git commit
 
 To put all the commit of a branch on the top of the HEAD:
 
-```git
+```bash
 git checkout -b branch_name
 git rebase master
 ```
 
 To rebase interactively:
 
-```git
+```bash
 git rebase -i HEAD~5
 ```
 
@@ -141,20 +141,20 @@ Then edit the list of commits  by adding substituting  `pick` by `f` to squash t
 
 To push the content of your project to a remote repository (e.g., GitHub) create a repo and add it as a remote:
 
-```git
+```bash
 git remote add origin http://github.com/username/reponame.git
 git push -u origin master
 ```
 
 The fetch  command allows to retrieve the changes on the remote without merging to the master branch:
 
-```git
+```bash
 git  fetch
 ```
 
 To fetch and merge the content of the remote repository at the same time:
 
-```git
+```bash
 git pull
 ```
 
@@ -162,18 +162,18 @@ git pull
 
 Tags are useful to keep track of the releases. To add an annotated tag to a commit:
 
-```git
+```bash
 git tag -a v1.0.0 -m "tag message"
 ```
 
 To show the information about the tag:
 
-```git
+```bash
 git show v1.0.0
 ```
  To push tags up to GitHub and add them as releases:
  
- ```git
+ ```bash
 git push tags
 ```
 
@@ -181,7 +181,7 @@ git push tags
 
 To undo the last commit and create a new commit with the revert:
 
-```git
+```bash
 git revert commit_id
 ```
 
@@ -189,33 +189,28 @@ git revert commit_id
 
 To throw away a certain number of commits (2 in this example) :
 
-```git
+```bash
 git reset HEAD~2
 ``` 
 
 # Troubleshooting
 
-## Gitignore is not working
+**Gitignore is not working:** You may need to remove every file that was cached in the `.gitignore`. Be aware to commit all your changes before, otherwise you will loose control on all the changed files. 
 
-
-You may need to remove every file that was cached in the `.gitignore`. Be aware to commit all your changes before, otherwise you will loose control on all the changed files. 
-
-```git
+```bash
 git rm -r --cached .
 git add .
 git commit -m ".gitignore is now working"
 ```
 
-## Git log of a Java method
+**Git log of a Java method:** You need to add the following to the `.gitattributes` file.
 
-You need to add the following to the `.gitattributes` file.
-
-```text
+```bash
 *.java diff=java
 ```
 Then you can exectute the log command with the name of a method and the path to the file.
 
-```git
+```bash
  git log -L :<methodName>:<javaFilePath>
 ```
  
