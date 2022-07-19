@@ -82,7 +82,7 @@ h1 {
   font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
   .h1, h1 {
     margin-top: 25px;
     font-size: 28px;
@@ -110,7 +110,7 @@ h2 {
 }
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
   .h2, h2 {
     margin-top: 20px;
     font-size: 22px;
@@ -121,9 +121,7 @@ h2 {
     content: counter(h1counter) "." counter(h2counter) ".\0000a0";
     font-size: 20px;
   }
-
 }
-
 
 h3 {
   margin-top: 40px;
@@ -131,7 +129,6 @@ h3 {
   letter-spacing: -0.25px;
   counter-reset: h4counter;
 }
-
 
 .blog-post h3:before {
   counter-increment: h3counter;
@@ -220,7 +217,7 @@ hr.small {
   border-radius: 3px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
   hr.small {
     border-width: 2px;
   }
@@ -423,7 +420,7 @@ a[href$=".pptx"] {
   text-decoration-thickness: 0.05em;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
   #navbar-brand {
     font-size: 24px;
   }
@@ -1015,14 +1012,14 @@ p.post-meta {
   font-family: "Concourse T3", "Cambria", "Open Sans";;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
   p.post-meta {
     font-size: 14px;
     margin: 20px 0 20px 0;
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
   .post-preview .post-meta,
   .post-heading .post-meta {
     font-size: 16px;
@@ -1038,7 +1035,7 @@ p.post-meta {
 }
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
   .post-share-meta {
     font-size: 16px;
     margin: 10px 12px 10px 0;
@@ -1127,7 +1124,7 @@ p.post-meta {
   font-size: 26px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
   .post-subtitle {
     font-size: 24px;
   }
@@ -1581,10 +1578,15 @@ table {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
   table {
     font-size: 15px;
   }
+}
+
+
+pre > code > table {
+  margin-bottom: 0px;
 }
 
 table thead tr {
