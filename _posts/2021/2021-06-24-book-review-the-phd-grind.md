@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Book Review - The Ph.D. Grind
+title: Book Review&#58; The Ph.D. Grind
 subtitle: A tale of perseverance and learning from failure
 description: If you are seriously considering doing a Ph.D. in Computer Science, the Ph.D. Grind is the book for you.
 tags: research

@@ -69,7 +69,7 @@ As you observe, the `ForkJoinPool` class is an implementation of the `AbstractEx
 
 Let's see two examples that illustrate how you can use the Fork/Join framework.  
 
-### RecursiveAction
+## RecursiveAction
 
 **Task:** You want to replace the value of all the entries of a particular element in an array of integers.
 There may be more than one entry of the same element in the array.
@@ -132,7 +132,7 @@ Arrays.stream(arr).forEach(value -> System.out.print(value + " "));
 {% endhighlight %}
 
 
-### RecursiveTask<V>
+## RecursiveTask<V>
 
 **Task:** You want to count all the entries of a particular element in an array of integers.
 

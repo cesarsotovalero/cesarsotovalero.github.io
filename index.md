@@ -19,7 +19,8 @@ use-site-title: true
 
 <div class="list-filters">
   <a href="/" class="list-filter filter-selected">Latest Posts</a>
-  <a href="/tags" class="list-filter">All Posts</a>
+  <a href="/blog" class="list-filter">All Posts</a>
+  <a href="/tags" class="list-filter">Tag Index</a>
 </div>
 
 <div class="posts-list">

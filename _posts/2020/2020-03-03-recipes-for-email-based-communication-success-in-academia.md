@@ -23,7 +23,7 @@ In this post, I'll illustrate how using a template based approach to easing emai
 
 <!-- @todo #19  explain we academics love emailing -->
 
-## Templates
+# Templates
 
 <details><summary>Asking initial questions</summary>
 <p>

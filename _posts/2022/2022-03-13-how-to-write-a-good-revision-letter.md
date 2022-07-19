@@ -159,7 +159,7 @@ There is no workaround here.
 Don't evade the nasty comments from the reviewers.
 Accept them.
 
-> Major changes ~~should~~ must significantly improve the quality of your paper.
+> “Major changes ~~should~~ must significantly improve the quality of your paper.”
 
 I suggest adding figures and tables directly in the revision letter (as a gift for the reviewers) explaining the major changes in the paper.
 For example, if you carried out a new experiment and collected new data, add a figure in the revision letter showing the data collection pipeline. 
@@ -169,7 +169,7 @@ After you're done, set the response letter aside for a few days.
 Send it to your research colleagues and ask for feedback.
 Then go back to it with fresh eyes, and improve it as much as you can.
 
-# Show Me Some Examples!
+# Examples
 
 As you may already notice, there is a lot of work being done during the revision stage, way before accepting each research paper.
 However, I've noticed that researchers typically don't disclose their revision documents.
@@ -181,9 +181,10 @@ Below you can look at some examples of my revision letters for two consecutive m
 Hopefully, this will give you a notion of the amount of work being put along the revision process.
 
 
-| Research Paper                                                                                                                       | Revision Letter                                                                                                                                                           |
-|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Research Paper                                                                                                                       | Revision Letter                                                                                                                                               |
+|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://link.springer.com/article/10.1007/s10664-020-09914-8) | [Major Revision #1](../files/posts/2022/DepClean_Major_Revision_Round_1.pdf)<br/>[Major Revision #2](../files/posts/2022/DepClean_Major_Revision_Round_2.pdf) |
+| [Coverage-Based Debloating for Java Bytecode](https://dl.acm.org/doi/10.1145/3546948)                          | [Major Revision #1](../files/posts/2022/JDBL_Major_Revision_Round_1.pdf)<br/>[Minor Revision #2](../files/posts/2022/JDBL_Minor_Revision_Round_2.pdf)     |
 
 
 # Conclusion

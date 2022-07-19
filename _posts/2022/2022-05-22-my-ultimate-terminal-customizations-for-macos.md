@@ -440,6 +440,7 @@ Now I open my laptop and look at my beautiful terminal, fully customized and con
 It is beautiful!
 I close my laptop, and I'm just happy 😄.
 
+
 # Footnotes
 
 [^1]: I recommend the course “[Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering),” by [Prof. Diomidis Spinellis](https://en.wikipedia.org/wiki/Diomidis_Spinellis).
