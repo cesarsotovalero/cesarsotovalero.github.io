@@ -29,6 +29,17 @@
       </item>
     
       <item>
+        <title>Inversion of Control and Dependency Injection in Java</title>
+        <description>
+          The holy grails of modern enterprise Java frameworks - 
+          Inversion of Control (IoC) is a programming principle based on delegating the program’s control to a framework in initializes some specific task for us. Dependency injection (DI) is a popular design pattern to apply the IoC principle. This design pattern is widely used in enterprise Java applications. This way, application’s...
+        </description>
+        <pubDate>Tue, 12 Apr 2022 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/why-do-we-need-inversion-of-control.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/why-do-we-need-inversion-of-control.html</guid>
+      </item>
+    
+      <item>
         <title>AOT vs. JIT Compilation in Java</title>
         <description>
           Which one is better? - 
@@ -205,7 +216,7 @@
       </item>
     
       <item>
-        <title>Book Review - The Ph.D. Grind</title>
+        <title>Book Review&amp;#58; The Ph.D. Grind</title>
         <description>
           A tale of perseverance and learning from failure - 
           I recently read the amazing short book titled “The Ph.D. Grind” by Prof. Philip Guo. The book (~100 pages) is a compendium of his memories, written right after finishing his Ph.D. in 2012. I felt ecstatic with such a brilliant masterpiece that I could barely put it down once I...
@@ -213,17 +224,6 @@
         <pubDate>Thu, 24 Jun 2021 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html</guid>
-      </item>
-    
-      <item>
-        <title>The Fork/Join Java framework</title>
-        <description>
-          Boosting performance through parallelization - 
-          The Fork/Join framework makes it easy for Java developers to take advantage of the parallel execution supported by multicore processors. This API was added to the java.util.concurrent package since JDK 7, and it has been improved in subsequent versions of the JDK. It allows the developer to forget about the...
-        </description>
-        <pubDate>Sat, 05 Jun 2021 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html</guid>
       </item>
     
   </channel>
