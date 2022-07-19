@@ -84,24 +84,27 @@ To set up Giscus, the GitHub repo has to meet only three requirement:
 2. The [giscus](https://github.com/apps/giscus) app is installed on the repository
 3. The Discussions feature is [enabled](https://docs.github.com/en/github/administering-a-repository/managing-repository-settings/enabling-or-disabling-github-discussions-for-a-repository)
 
-To insert Giscus, just add the following code where you want the comments to be displayed.
+To insert giscus, just add the following code where you want the comments to be displayed.
 
 {% highlight html linenos %}
 <script src="https://giscus.app/client.js"
-        data-repo="cesarsotovalero/cesarsotovalero.github.io"
-        data-repo-id="CATEGORY_ID"
-        data-category="Announcements"
-        data-category-id="REPO_ID"
-        data-mapping="pathname"
-        data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-theme="CUSTOM_CSS"
-        crossorigin="anonymous"
-        async>
+  data-repo="cesarsotovalero/cesarsotovalero.github.io"
+  data-repo-id="REPO_ID"
+  data-category="Announcements"
+  data-category-id="CATEGORY_ID"
+  data-mapping="pathname"
+  data-reactions-enabled="1"
+  data-emit-metadata="1"
+  data-theme="CUSTOM_CSS"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
 </script>
 {% endhighlight %}
 
-The `REPO_ID` and `CATEGORY_ID` can be obtained using the [Giscus](https://github.com/apps/giscus) form. The look and feel of the comments can be customized via `CUSTOM_CSS` path. The following code is and example of how I changed the default font size of the [GitHub light syntax](https://github.com/primer/github-syntax-light/blob/master/lib/github-light.css) to meet the style of my blog:
+The `REPO_ID` and `CATEGORY_ID` can be obtained using the [Giscus](https://giscus.app/#repository) form.
+The look and feel of the comments can be customized via `CUSTOM_CSS` path.
+The following code is and example of how I changed the default font size of the [GitHub light syntax](https://github.com/primer/github-syntax-light/blob/master/lib/github-light.css) to meet the style of my blog:
 
 {% highlight css linenos %}
 mr-2 {
@@ -118,6 +121,30 @@ mr-2 {
 {% endhighlight %}
 
 You can see my full customized CSS [here](https://www.cesarsotovalero.net/css/giscus.css).
+
+# Additional Configurations
+
+Giscus supports [additional configurations](https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md).
+These configurations can be set by creating a `.giscus.json` file in the root of the repository.
+
+Here is an example used in this website:
+
+{% highlight json linenos %}
+{
+  {
+  "origins": [
+    "https://www.cesarsotovalero.net",
+    "https://cesarsotovalero.net"
+  ],
+  "originsRegex": [
+    "http://localhost:[0-9]+"
+  ],
+  "defaultCommentOrder": "oldest"
+  }
+}
+{% endhighlight %}
+
+The `origins` and `originsRegex` keys restrict the domains that can load this website's repository discussions via giscus.
 
 # Conclusion
 
