@@ -26,7 +26,7 @@ body {
 
 @media only screen and (max-width: 450px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -139,7 +139,7 @@ h3 {
 
 a {
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 6px;
   text-decoration-thickness: 0.05em;
   color: var(--main-text-color);
 }
@@ -148,6 +148,12 @@ a:hover, a:focus {
   color: var(--main-text-color);
   text-decoration-thickness: 0.05em;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 450px) {
+  a {
+    text-underline-offset: 4px;
+  }
 }
 
 
@@ -928,7 +934,7 @@ logo-main a:hover {
 
 .post-preview {
   padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  /*border-bottom: 1px solid #eee;*/
 }
 
 .post-preview-home {
@@ -1307,7 +1313,7 @@ p.post-meta {
 
 .intro-header .page-heading {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .intro-header.big-img .page-heading,
@@ -1623,7 +1629,7 @@ pre code {
 code {
   background-color: var(--navbar-color);
   font-family: "jetbrains_monoregular", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   color: var(--main-text-color);
   border-radius: 1px;
   text-decoration: none;
@@ -1632,11 +1638,11 @@ code {
 
 @media screen and (max-width: 450px) {
   pre {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   code {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -2233,6 +2239,10 @@ ol, ul {
   }
 }
 
+.black-icons {
+  margin-bottom: 15px;
+}
+
 /* gisqus */
 .giscus {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -2733,6 +2743,7 @@ html, html[data-theme="light"] {
   --blockquote-background-color: #f1f1f1;
   --main-background-color: hsl(0, 0%, 99%);
   --main-text-color: hsl(0, 0%, 10%);
+  --main-link-color: #012639;
   --footnote-link-color: blue;
 }
 
@@ -2745,5 +2756,6 @@ html[data-theme="dark"] {
   --blockquote-background-color: rgba(1, 38, 57, 0.8);
   --main-background-color: #012639;
   --main-text-color: hsl(0, 0%, 85%);
+  --main-link-color: hsl(0, 0%, 100%);
   --footnote-link-color: lightblue;
 }

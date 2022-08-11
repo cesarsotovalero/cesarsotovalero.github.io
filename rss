@@ -10,7 +10,7 @@
         <title>My Ultimate Terminal Customizations for macOS</title>
         <description>
           A guide - 
-          There is a common belief that top-class software developers can do their job without ever abandoning the terminal. I think this is true to some extent. It is impossible to become an outstanding software developer without knowing how to get the most out of the terminal. Personally, I treat my...
+          There is a common belief that top-class software developers can do their job without ever abandoning the terminal. I think this is true to some extent. It is almost impossible to become an outstanding software developer without knowing how to get the most out of the terminal. Personally, I treat...
         </description>
         <pubDate>Sun, 22 May 2022 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html</link>
@@ -26,6 +26,17 @@
         <pubDate>Wed, 11 May 2022 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/no-one-cares-about-your-research.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/no-one-cares-about-your-research.html</guid>
+      </item>
+    
+      <item>
+        <title>The Dynamics Features of Java</title>
+        <description>
+          A long-standing issue for static analyzers - 
+          The existence of dynamic features built-in within the language allows Java developers to dynamically transform their program executions at runtime. For example, using the Java Reflection API, one can inspect and interact with otherwise static language constructs such as classes, fields, and methods, e.g., to instantiate objects, set fields and...
+        </description>
+        <pubDate>Fri, 22 Apr 2022 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/the-dynamics-of-java.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-dynamics-of-java.html</guid>
       </item>
     
       <item>
@@ -213,17 +224,6 @@
         <pubDate>Tue, 27 Jul 2021 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/replace-disqus-with-a-better-alternative.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/replace-disqus-with-a-better-alternative.html</guid>
-      </item>
-    
-      <item>
-        <title>Book Review&amp;#58; The Ph.D. Grind</title>
-        <description>
-          A tale of perseverance and learning from failure - 
-          I recently read the amazing short book titled “The Ph.D. Grind” by Prof. Philip Guo. The book (~100 pages) is a compendium of his memories, written right after finishing his Ph.D. in 2012. I felt ecstatic with such a brilliant masterpiece that I could barely put it down once I...
-        </description>
-        <pubDate>Thu, 24 Jun 2021 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html</guid>
       </item>
     
   </channel>

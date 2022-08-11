@@ -1,4 +1,5 @@
-@import url('http://fonts.cdnfonts.com/css/linux-biolinum');
+@import url("custom-fonts.css");
+/*@import url('http://fonts.cdnfonts.com/css/linux-biolinum');*/
 
 /*!
  * GitHub Light v0.5.0
@@ -273,13 +274,18 @@ main {
 
 .gsc-comments-count {
   font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  color: var(--main-text-color);
+  color: var(--post-meta-index-color);
 }
 
 .gsc-reactions-count {
   font-family: "Concourse T6 Tab", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  color: var(--main-text-color);
+  color: var(--post-meta-index-color);
 }
+
+div.gsc-reactions {
+  color: var(--post-meta-index-color);
+}
+
 
 @media only screen and (max-width: 425px) {
   .font-semibold  {
