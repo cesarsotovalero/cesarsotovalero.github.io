@@ -5,6 +5,10 @@ title: About me
 subtitle: In brief
 ---
 
+
+
+[//]: # (Profile to view: https://www.zeileis.org/)
+
 [//]: # ()
 [//]: # (<code style="text-align: center; font-family:jetbrains_monoregular, courier new, serif; font-size: 18px; font-weight: lighter">)
 
@@ -34,7 +38,8 @@ I'm keen to perform research on software technology which:
 1. Provide actionable insights to researchers and practitioners about how modern software is currently being developed and maintained.
 2. Provide practical tools for developers in order to improve software quality.
 
-If you are interested in collaborating with me, have a look at my list of [research topics](./collaborations.html) open to collaborations.
+If you are interested in collaborating with me, have a look at my list of [research topics](./collaborations.html).
+I'm always open to research collaborations.
 
 # Formal Education
 
@@ -42,9 +47,9 @@ If you are interested in collaborating with me, have a look at my list of [resea
 
 I'm a Ph.D. Student at KTH Royal Institute of Technology.
 I've a [B.Sc.](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [M.Sc.](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
-A long time ago, I was a competitive programmer, [see](competitions.md). 
+A long time ago, I was a [competitive programmer](/competitions.html). 
 
-Here is my short [resumé](../files/CV/cv.pdf).
+Here is my minimalistic [resumé](../files/CV/cv.pdf).
 
     
 <!-- ![Custom badge](https://img.shields.io/badge/-HOBBIES-blue.svg) -->
@@ -52,14 +57,14 @@ Here is my short [resumé](../files/CV/cv.pdf).
 
 [//]: # (:dart:)
 
-Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and running through the Stockholm's beautiful parks.
+Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and jogging across Stockholm's beautiful shores..
 
-My very <span style="background-color:#012639;color:white;">dark blue</span> is `#012639`.
+My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
 
 #  Contact
 
-My physical workplace is at the KTH campus:
+My physical workplace is currently at the KTH campus:
 
 [//]: # (:email:)
 
@@ -71,7 +76,7 @@ My physical workplace is at the KTH campus:
      2. you verify your form on formspree.io.
 -->
 
-You can always email me:
+You can email me using the form below:
 
 <form id="contact-me" class="wj-contact" action="https://formspree.io/mrgqpknn" method="POST">
     <input type="text" name="email" placeholder="Email">
@@ -87,7 +92,7 @@ You can always email me:
 
 [^1]: For more on these topics, see my living review of [software debloating papers](./software-debloating-papers.html), or consult my list of [software debloating tools](./software-debloating-tools.html).
 
-[^2]: For more on this topic, see this list of [mining software repositories resources](./mining-software-repositories-resources.html).
+[^2]: See my list of [mining software repositories resources](./mining-software-repositories-resources.html).
 
 
 <style>

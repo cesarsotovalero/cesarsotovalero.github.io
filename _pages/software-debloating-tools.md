@@ -12,7 +12,7 @@ image: ../img/pages/software-debloating-papers/debloating.png
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
 </div>
 
-This is a living list of tools for program debloating and software specialization. 
+This is a living list of tools for program debloating and software specialization.
 
 # Java
 

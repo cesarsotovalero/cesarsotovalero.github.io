@@ -35,6 +35,3 @@ if (theme === "dark") {
    document.getElementById("theme-toggle").innerHTML = "<i class=\"fas fa-adjust fa-lg\"></i>";
 }
 
-
-
-
