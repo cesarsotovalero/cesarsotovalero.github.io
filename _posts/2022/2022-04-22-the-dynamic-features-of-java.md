@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Dynamics Features of Java
+title: The Dynamic Features of Java
 subtitle: A long-standing challenge for static analyzers
 tags: programming
 description: The existence of dynamic features built in the language allows Java developers to transform their program executions at runtime dynamically. However, these features in most Java programs are a fundamental problem for static analysis tools that rely on precise call-graph construction. Notably, the GraalVM compiler relies on points-to analysis to perform AOT compilation. This blog post covers the main dynamic features of Java and the reasons why they are still a long-standing issue for researchers and practitioners in program analysis.
