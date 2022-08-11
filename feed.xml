@@ -35,8 +35,8 @@
           The existence of dynamic features built-in within the language allows Java developers to dynamically transform their program executions at runtime. For example, using the Java Reflection API, one can inspect and interact with otherwise static language constructs such as classes, fields, and methods, e.g., to instantiate objects, set fields and...
         </description>
         <pubDate>Fri, 22 Apr 2022 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/the-dynamics-of-java.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-dynamics-of-java.html</guid>
+        <link>https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html</guid>
       </item>
     
       <item>
