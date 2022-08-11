@@ -38,6 +38,12 @@ p {
   font-feature-settings: "kern";
 }
 
+@media only screen and (max-width: 450px) {
+  p {
+    margin-bottom: 18px;
+  }
+}
+
 p a {
   text-decoration: underline;
   text-decoration-thickness: 0.05em;

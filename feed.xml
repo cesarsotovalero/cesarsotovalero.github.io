@@ -31,7 +31,7 @@
       <item>
         <title>The Dynamics Features of Java</title>
         <description>
-          A long-standing issue for static analyzers - 
+          A long-standing challenge for static analyzers - 
           The existence of dynamic features built-in within the language allows Java developers to dynamically transform their program executions at runtime. For example, using the Java Reflection API, one can inspect and interact with otherwise static language constructs such as classes, fields, and methods, e.g., to instantiate objects, set fields and...
         </description>
         <pubDate>Fri, 22 Apr 2022 00:00:00 -0700</pubDate>
