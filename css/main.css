@@ -170,9 +170,9 @@ blockquote {
 
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 450px) {
   blockquote {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.5;
   }
 }
