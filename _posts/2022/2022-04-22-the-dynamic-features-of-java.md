@@ -707,4 +707,5 @@ I expect that, in the future, developers will be more careful about introducing 
 - [A Study of Call Graph Construction for JVM-Hosted Languages](https://ieeexplore.ieee.org/abstract/document/8944149)
 - [Identifying Java Calls in Native Code via Binary Scanning](https://dl.acm.org/doi/pdf/10.1145/3395363.3397368)
 - [Serialization-Aware Call Graph Construction](https://dl.acm.org/doi/pdf/10.1145/3460946.3464319)
+- [A Micro-Benchmark for Dynamic Program Behaviour in Java](https://bitbucket.org/Li_Sui/micro-benchmark/src/master/)
 
