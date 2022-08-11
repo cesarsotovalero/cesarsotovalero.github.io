@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Dynamics Features of Java
-subtitle: A long-standing issue for static analyzers
+subtitle: A long-standing challenge for static analyzers
 tags: programming
 description: The existence of dynamic features built in the language allows Java developers to transform their program executions at runtime dynamically. However, these features in most Java programs are a fundamental problem for static analysis tools that rely on precise call-graph construction. Notably, the GraalVM compiler relies on points-to analysis to perform AOT compilation. This blog post covers the main dynamic features of Java and the reasons why they are still a long-standing issue for researchers and practitioners in program analysis.
 keywords:
@@ -21,7 +21,7 @@ published: true
 ---
 
 The existence of dynamic features built-in within the language allows Java developers to dynamically transform their program executions at runtime.
-For example, using the Java Reflection API, one can inspect and interact with otherwise static language constructs such as classes, fields, and methods, e.g., to instantiate objects, set fields and invoke methods.
+For example, using the [Java Reflection API](https://docs.oracle.com/javase/tutorial/reflect/), one can inspect and interact with otherwise static language constructs such as classes, fields, and methods, e.g., to instantiate objects, set fields and invoke methods.
 These dynamic language features are helpful, but their usage also hinders the accuracy of static analysis tools.
 This is due to the undecidability of resolving and analyzing code that is not reachable at compile time.
 As I mentioned in a [previous blog post](./aot-vs-jit-compilation-in-java.html), the promising GraalVM compiler performs Ahead of Time Compilation (AOT) through static analysis on Java bytecode.
@@ -39,7 +39,7 @@ This blog post covers the fundamental dynamic features of Java and the reasons w
 # Dynamic Language Features
 
 Java is a dynamic programming language.
-As such, it supports dynamic features just like other dynamic languages such as Ruby, Python and JavaScript.
+As such, it supports dynamic features just like other dynamic languages such as Ruby, Python, and JavaScript.
 Dynamic language features were introduced in Java since the very beginning, for example, Dynamic Proxies are available since [v1.3 of the JDK](https://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Proxy.html). 
 
 > “Dynamic programming languages execute many common programming behaviours at runtime that static programming languages perform during compilation.
@@ -47,7 +47,7 @@ Dynamic language features were introduced in Java since the very beginning, for 
 > -- <cite>[Wikipedia](https://en.wikipedia.org/wiki/Dynamic_programming_language)</cite>
 
 The existence of dynamic features in Java impacts its footprint at runtime.
-For instance, a Java program can read strings from external files, register those strings as classes, load those classes into the class loader, create proxies, serialize them, and so on, **all at runtime!**
+For instance, a Java program can read strings from external files, register those strings as classes, load those classes via custom class loaders, create proxies, serialize them, and so on, **all at runtime!**
 Consequently, program analysis tools based on static analysis can't afford to make assumptions about what should be kept at runtime and what should not.
 
 > “Static analysis is a popular technique to detect bugs and vulnerabilities early in the life cycle of a program when it is still relatively inexpensive to fix those issues.
@@ -58,11 +58,11 @@ Static analysis differs from dynamic analysis techniques.
 Dynamic techniques are inherently unsound as they depend on workloads to execute the program under analysis.
 For real-world programs, these workloads will not cover all possible execution paths.
 Due to the dynamic features that are prevalent in Java programs, it turns out that most static analyses are not sound.
-These dynamic features are notoriously difficult to model.
+As explained in the rest of this post, these dynamic features are notoriously difficult to model.
 
 **The Soundness Manifesto** defines the soundness of static analysis with respect to possible program executions.
 Similarly, precision can be defined with respect to possible program executions as well.
-For static analysis, precise analysis models only possible executions.
+For static analysis, a “precise analysis” can only model possible executions.
 The notion of possible program execution is used as ground truth to assess the soundness and the precision of call graph construction tools.
 
 > “Analyses are often expected to be sound in that their result models all possible executions of the program under analysis.”
@@ -74,13 +74,13 @@ These customizations can be divided as follows:
 2. Field access.
 3. Method dispatch.
 
-There are two main categories of dynamic features to consider:
+This post considers two main categories of dynamic features:
 
-1. Features built into the language itself and exposed by official APIs.
+1. **Features built into the language itself and exposed by official APIs**:
    These are reflective features that give the ability of a system to reason about itself.
-   For example, the Java Reflection API, dynamic class loading, Dynamic Proxies and invokedynamic fit into this category.
-2. Certain features where programmers can access extra-linguistic mechanisms.
-   For example, the use of the Java Native Interface (JNI), the Unsafe API, and serialization are in this category.
+   For example, dynamic class loading, Dynamic Proxies, the Java Reflection API, and invokedynamic fit into this category.
+2. **Certain features where programmers can access extra-linguistic mechanisms**:
+   For example, the use of the Java Native Interface (JNI), the Unsafe API, and deserialization are in this category.
 
 The following section presents representative examples for each of these categories.
 
@@ -97,7 +97,6 @@ The method `compile` is used by `findClass` to compile a class file from the fil
 
 {% highlight java linenos %}
 public class CustomClassLoader extends ClassLoader {
-
   @Override
   protected Class<?> findClass(String name) throws ClassNotFoundException {
     byte[] content;
@@ -108,7 +107,6 @@ public class CustomClassLoader extends ClassLoader {
     }
     return defineClass(name, content, 0, content.length);
   }
-
   private byte[] compile(ClassLoader classLoader, String name) throws IOException {
     String path = name.replace(".", "/");
     JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
@@ -141,7 +139,7 @@ public void findClass() {
 }
 {% endhighlight %}
 
-Any class name provided as a String parameter to methods in `ClassLoader` must be a binary name (notice `name.replace(".", "/")` in the method `compile`).
+Any class name provided as a parameter of type `String` to methods in `ClassLoader` must be a binary name (notice the instruction `name.replace(".", "/")` in the method `compile`).
 Examples of valid class names include:
 
 - `java.lang.String`
@@ -161,23 +159,21 @@ Each proxy instance has an associated invocation handler, which implements the i
 When a method is invoked on a proxy instance, the method invocation is encoded and dispatched to the invoke method of its invocation handler
 The invocation handler processes the encoded method invocation as appropriate and the result that it returns will be returned as the result of the method invocation on the proxy instance.
 
-Here is an example of a proxy instance that invokes a custom method `target(String`:
+Here is an example of a class `ProxyInstance` that invokes a custom method `target(String`:
 
 {% highlight java linenos %}
 public class ProxyInstance implements InvocationHandler {
-
   @Override
   public Object invoke(Object proxy, Method method, Object[] arg) {
     return target((String) arg[0]);
   }
-
   public String target(String s) {
     return s + " from target(String)";
   }
 } 
 {% endhighlight %}
 
-Let's create a proxy interface with a method `foo(String)`:
+Let's create a `ProxyInterface` with a method `foo(String)`:
 
 {% highlight java linenos %}
 public interface ProxyInterface {
@@ -185,7 +181,7 @@ public interface ProxyInterface {
 }
 {% endhighlight %}
 
-The following class implements the proxy interface:
+The following class `ProxyInterfaceImpl` implements the `ProxyInterface`:
 
 {% highlight java linenos %}
 public class ProxyInterfaceImpl implements ProxyInterface {
@@ -212,9 +208,9 @@ public class DynamicProxy {
 {% endhighlight %}
 
 In this scenario, the method `execute()` is supposed to call `foo(String)` form `ProxyInterfaceImpl` and return the string `hello from foo(String)`.
-However, it is redirected to `target(String)` in `ProxyInstance` at runtime, returning `hello from target(String)` instead.
+However, it is redirected to `target(String)` in `ProxyInstance` at runtime, returning “`hello from target(String)`” instead.
 
-Here's a test case:
+Here's a test case for the above example:
 
 {% highlight java linenos %}
 @Test
@@ -227,34 +223,31 @@ public void testExecute() {
 
 ## JVM Invokedynamic
 
+Before Java 7, the JVM only had four method invocation types:
+
+- `invokevirtual`: To call normal class methods.
+- `invokestatic`: To call static methods.
+- `invokeinterface`: To call interface methods.
+- `invokespecial`: To call constructors or private methods.
+
+Despite their differences, all these invocations share one simple trait: They have a few predefined steps to complete each method call, it is not possible to enrich these steps with custom behaviors.
+There are two main workarounds for this limitation, one at compile-time and the other at runtime. 
+The former is usually used by languages like Scala or Koltin and the latter is the solution of choice for JVM-based dynamic languages like JRuby.
+
 The [JVM invokedynamic](https://blogs.oracle.com/javamagazine/post/understanding-java-method-invocation-with-invokedynamic) instruction was introduced in Java 7.
 It makes it possible to resolve method calls dynamically at runtime.
-This gives the user more control over the method dispatch process by using a [user-defined bootstrap method](https://www.baeldung.com/java-invoke-dynamic) that computes the call target. While the original motivation behind invokedynamic was to provide support for dynamic languages like Ruby, its main (and in the OpenJDK 8, only) application is to provide support for lambdas. 
-In OpenJDK 9, invokedynamic is also used for string concatenation
+This gives the user more control over the method dispatch process by using a [user-defined bootstrap method](https://www.baeldung.com/java-invoke-dynamic) that computes the call target. 
+While the original motivation behind invokedynamic was to provide support for dynamic languages like Ruby, its main application (in the JDK 8) is to provide support for lambda expressions.[^1]
 
-Before Java 7, the JVM only had four method invocation types: invokevirtual to call normal class methods, invokestatic to call static methods, invokeinterface to call interface methods, and invokespecial to call constructors or private methods.
-
-Despite their differences, all these invocations share one simple trait: They have a few predefined steps to complete each method call, and we can't enrich these steps with our custom behaviors.
-
-here are two main workarounds for this limitation: One at compile-time and the other at runtime. The former is usually used by languages like Scala or Koltin and the latter is the solution of choice for JVM-based dynamic languages like JRuby.
-
-The runtime approach is usually reflection-based and consequently, inefficient.
-
-On the other hand, the compile-time solution is usually relying on code-generation at compile-time. This approach is more efficient at runtime. However, it's somewhat brittle and also may cause a slower startup time as there's more bytecode to process.
-
-Function represents a function that accepts one arguments and produces a result.
-
+Here is an example of a lambda function:
 
 {% highlight java linenos %}
 public class LambdaFunction {
-  
   int foo = 3;
- 
   public Integer execute() {
     IntUnaryOperator c = this::target;
     return c.applyAsInt(14);
   }
-
   private Integer target(int i) {
     return i * foo;
   }
@@ -296,8 +289,14 @@ public execute()Ljava/lang/Integer;
     ]
 {% endhighlight %}
 
-It uses a [`LambdaMetafactory`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html) to create a `CallSite` that is used to invoke the `target` method.
+The above example uses a [`LambdaMetafactory`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html) to create a `CallSite` that is used to invoke the `target` method.
 It uses a [`MethodHandles.Lookup`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/MethodHandle.html) to find the `target` method.
+
+The runtime approach is usually reflection-based and, consequently, inefficient.
+On the other hand, the compile-time solution is generally relying on code generation at compile-time.
+This approach is more efficient at runtime.
+However, it's somewhat brittle and may cause a slower startup time as there's more bytecode to process.
+`Function` represents a function that accepts one argument and produces a result.
 
 ## Java Native Interface
 
@@ -309,7 +308,7 @@ There could be many reasons for needing to use native code, for example:
 - To reuse an existing library reuse instead of rewriting it in Java.
 
 For these purposes, the JDK introduces the Java Native Interface (JNI) as a foreign function interface. 
-It is a bridge between the bytecode running in the Java Virtual Machine (JVM) and the native code.
+It works as bridge between the bytecode running in the Java Virtual Machine (JVM) and the native code.
 Thus, JNI allows code running on the JVM to call and be called by native applications. 
 Using JNI, one can call methods written in C/C++ or even access assembly language functions from Java.
 
@@ -344,7 +343,8 @@ In this case, the `JNI.h` file will contain the following:
 JNIEXPORT void JNICALL JNI_execute(JNIEnv *env, jobject obj);
 {% endhighlight %}
 
-Now, we have to create a new `.cpp` file for the implementation of the `execute` function:
+Now, we have to create a new `.cpp` file for the implementation of the `execute` function.
+
 Here is an example:
 
 {% highlight c linenos %}
@@ -391,9 +391,10 @@ The [Java Reflection API](https://docs.oracle.com/javase/tutorial/reflect/) allo
 This dynamic feature is handy when we don't know their names at compile time.
 For example, to dynamically instantiate objects, set fields, or invoke methods.
 
-For example, we can instantiate classes by calling constructors of any class and even create class objects at runtime.
+For example, we can instantiate classes by calling constructors of any class and even instantiate objects at runtime.
 This is made possible by the `java.lang.reflect.Constructor` class.
-The following class `Instantiation` illustrates the use of **dynamic class instantiations** via reflection:
+
+The following class `Instantiation` illustrates the use of **dynamic class instantiation** via reflection:
 
 {% highlight java linenos %}
 public class Instantiation {
@@ -452,6 +453,7 @@ public class Instantiation {
 
 We can invoke methods of any class (even [`private`](https://www.baeldung.com/java-call-private-method) methods) at runtime.
 This is made possible by the `java.lang.reflect.Method` class.
+
 The following class `Invocation` illustrates the use of **dynamic method invocations** via reflection:
 
 {% highlight java linenos %}
@@ -510,11 +512,11 @@ public class Invocation {
 
 [Serialization](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/Serializable.html) converts an object into a byte stream (i.e., a sequence of bytes).
 Deserialization is the opposite: it converts a byte stream into an object.
-Serialized objects are [typically used](https://www.baeldung.com/java-serialization) to save the application's state, store objects in a database, or transfer them over a network.
+[Serialized objects](https://www.baeldung.com/java-serialization) are typically used to save the application's state, store objects in a database, or transfer them over a network.
 We can serialize objects on one platform and deserialize them on another.
 The serializability of a class is enabled by implementing the `java.io.Serializable` interface.
 
-The following class `Deserialization` shows a deserialization scenario:
+The following class `Deserialization` illustrates a deserialization scenario:
 
 {% highlight java linenos %}
 public class Deserialization implements Serializable {
@@ -549,20 +551,21 @@ public class Deserialization implements Serializable {
 }
 {% endhighlight %}
 
-There are some caveats to the above example.
-Most static analysis tools mark the class `Hello` as "not used."
+There is an interesting thing to note in the above example.
+It turns out that most static analysis tools mark the class `Hello` as "not used."
 However, the code will not compile if we remove it.
 
 Deserialization is a potentially dangerous operation.
-For example, the notable log4j library uses deserialization to read configuration files.
+For example, the notable Apache [log4j](https://github.com/apache/logging-log4j2) library uses deserialization to read configuration files.
 This use of deserialization [was exploited]((https://nsfocusglobal.com/apache-log4j-deserialization-and-sql-injection-vulnerability-cve-2022-23302-cve-2022-23305-cve-2022-23307-alert/)) (CVE-2022-23302) in 2022, causing a global disturbance on most Java based systems.
 
-Deserialization of untrusted data is inherently dangerous and should be avoided.
-Untrusted data should be carefully validated according to the "Serialization and Deserialization" section of the [Secure Coding Guidelines for Java SE](https://docs.oracle.com/pls/topic/lookup?ctx=javase16&id=secure_coding_guidelines_javase). [Serialization Filtering](https://docs.oracle.com/pls/topic/lookup?ctx=javase16&id=serialization_filter_guide) describes best practices for defensive use of serial filters.
+As a rule of thumb, deserialization of untrusted data is inherently dangerous and should be avoided.
+Untrusted data should be carefully validated according to the "Serialization and Deserialization" section of the [Secure Coding Guidelines for Java SE](https://docs.oracle.com/pls/topic/lookup?ctx=javase16&id=secure_coding_guidelines_javase). 
+As pointed out by Oracle, [Serialization Filtering](https://docs.oracle.com/pls/topic/lookup?ctx=javase16&id=serialization_filter_guide) describes best practices for defensive use of serial filters.
 
 ## Unsafe API
 
-The JVM was designed to provide strong safety guarantees.
+The JVM was designed to enforce strong safety guarantees.
 However, the class `sun.misc.Unsafe` provides a collection of methods for performing low-level, unsafe operations.
 
 Although the class and all methods are `public`, the use of this class is limited because only trusted code can obtain instances of it.
@@ -646,32 +649,33 @@ Therefore, [use it at your own risk](https://dl.acm.org/doi/abs/10.1145/2858965.
 
 # Challenges of Using Dynamic Features
 
-Java supports just-in-time (JIT) compilation by default.
-JIT allows the compiler to see frequently accessed code paths and turn them into machine architecture-specific code.
+Java supports Just In Time (JIT) compilation by default.
+JIT allows the compiler to “see” frequently accessed code paths and turn them into machine architecture-specific code.
 Code that's run frequently enough is adaptively compiled into an architecture-specific form.
 This means that the distribution is still a portable JAR that'll run on every operating system.
 
-The Java runtime has grown considerably over the years, as have people's class paths.
+The Java runtime has grown considerably over the years.
 And since Java supports a lot of dynamic behavior, the Java runtime can't be sure about what code is being used, so it loads everything.
 This slows down application startup time and balloons the application's RAM footprint.
-Also, Java is still interpreted, so it's possible to get parts of the application that run at native speeds.
-Wouldn't it be cool if the whole thing ran at native speeds instead of just the frequent access code paths?
+Also, Java is still ~~mostly~~ interpreted, so it's possible to get parts of the application that run at native speeds.
+However, today it is possible to achieve native speeds by compiling Java applications directly to machine code.
 
-Java also supports Ahead of Time Compilation (AOT) via GraalVM.
-AOT uses points-to analysis to statically determine the types of variables and the types of objects that are reachable from a given point in the program.
+For this purpose, Java supports Ahead of Time Compilation (AOT) through the GraalVM compiler.
+The AOT mechanism in GraalVM relies on points-to analysis to statically determine the types of variables and the types of objects that are reachable from a given entry point in the application.
 It statically analyzes the app and chucks out everything that's not being used at runtime.
 It can't possibly know what's being used at runtime when it's compiling the code at compile time, so we need to give it some extra information or hints.
 It provides those hints and tells it what things should be retained so that your application can run and so that it can keep only the parts that are required for your application to run.
-The results are applications that start up in tens of milliseconds and take tens of megabytes of RAM, not hundreds, or, you know, worse.
+The results are Java applications that start up in tens of milliseconds and take tens of megabytes of RAM instead of hundreds.
 These applications are ideal for a production environment like Kubernetes, which wants to be the best bin packer to cram together all your applications as efficiently as possible to save money and reduce server infrastructure and carbon footprints.
 And for the most part, this works great.
 
 However, the problem of using dynamic features is that they make AOT reachability analysis unsound.
 Point-to analysis in GraalVM is based on static analysis.
-The static analysis doesn't know how to handle dynamic features.
+And as we observe from the previous examples, static analysis doesn't know how to handle dynamic features.
 
 To mitigate this problem, GraalVM provides a [tracing agent](https://www.graalvm.org/22.0/reference-manual/native-image/Agent/) that analyses the program at runtime.
-In order to make preparing these configuration files more straightforward and more convenient, GraalVM provides an agent that tracks all usages of dynamic features of execution on a regular Java VM.
+It generates configuration files for GraalVM in a way that is straightforward and more convenient.
+The agent tracks all usages of dynamic features after a regular execution of an application on the JVM.
 Undetected usages of these dynamic features need to be provided to the native-image tool in the form of configuration files.
 
 In GraalVM 22.2, to make it easier to use popular libraries that require additional reachability metadata, the Oracle GraalVM team, in conjunction with the Spring and Quarkus teams, has created a [GitHub repository](https://github.com/oracle/graalvm-reachability-metadata) where metadata for popular libraries can be published.
@@ -689,13 +693,13 @@ graalvmNative {
 # Conclusion
 
 This post covered the principal dynamic features of the Java language and the JVM.
-As a corollary, the notions of **actual programs behaviour** and **possible program executions** are not clear concepts in the presence of dynamic features.
+As a corollary, we observe that the notions of **actual programs behaviour** and **possible program executions** are not clear concepts in the presence of dynamic features.
 This is particularly surprising in the context of Java, which firmly focused on writing code once and running it anywhere with consistent program behavior.
 Furthermore, the existence of dynamic features also has implications for the very definitions of soundness and precision of static analysis.
 In particular, the point-to analysis in the GraalVM compiler is not sound in the presence of dynamic features.
 
 Personally, I think that the use of dynamic features should be avoided as much as possible.
-I expect that, in the future, developers will be more careful about introducing dynamic behaviors into their applications.
+I expect that, in the future, developers will be more careful about introducing dynamic behaviors into their applications for the sake of consistency and performance.
 
 # Further Reading
 
@@ -708,4 +712,8 @@ I expect that, in the future, developers will be more careful about introducing 
 - [Identifying Java Calls in Native Code via Binary Scanning](https://dl.acm.org/doi/pdf/10.1145/3395363.3397368)
 - [Serialization-Aware Call Graph Construction](https://dl.acm.org/doi/pdf/10.1145/3460946.3464319)
 - [A Micro-Benchmark for Dynamic Program Behaviour in Java](https://bitbucket.org/Li_Sui/micro-benchmark/src/master/)
+
+# Footnotes
+
+[^1]: In OpenJDK 9, `invokedynamic` is also used for string concatenation.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Empirical Software Engineering Research is Harder than you Think
+title:  Empirical Software Engineering Research Is Harder Than You Think
 subtitle: Trust me 
 tags: research
 keywords: empirical, software engineering, challenges

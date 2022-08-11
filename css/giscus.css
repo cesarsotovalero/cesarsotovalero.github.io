@@ -184,11 +184,13 @@ main {
   --color-btn-active-bg: #ebecf0;
   --color-btn-active-border: rgba(27, 31, 36, 0.15);
   --color-btn-primary-text: #fff;
-  --color-btn-primary-bg: #2da44e;
+  --color-btn-primary-bg: none;
+  /*--color-btn-primary-bg: #2da44e;*/
   --color-btn-primary-border: rgba(27, 31, 36, 0.15);
   --color-btn-primary-shadow: 0 1px 0 rgba(27, 31, 36, 0.1);
   --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
-  --color-btn-primary-hover-bg: #2c974b;
+  /*--color-btn-primary-hover-bg: #2c974b;*/
+  --color-btn-primary-hover-bg: #2da44e;;
   --color-btn-primary-hover-border: rgba(27, 31, 36, 0.15);
   --color-btn-primary-selected-bg: #298e46;
   --color-btn-primary-selected-shadow: inset 0 1px 0 rgba(0, 45, 17, 0.2);

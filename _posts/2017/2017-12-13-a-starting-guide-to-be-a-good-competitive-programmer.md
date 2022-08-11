@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A starting guide to become a good competitive programmer
+title: A Starting Guide to Become a Good Competitive Programmer
 subtitle: Learning is More Important than Competing
 published: true
 tags: programming
