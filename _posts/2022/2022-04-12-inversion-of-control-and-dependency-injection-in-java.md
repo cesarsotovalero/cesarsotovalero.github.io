@@ -191,7 +191,7 @@ Google Guice automatically finds out that to instantiate a `TextEditor` it has t
 For this, it uses an instance of class `SpanishSpellChecker`, which we instantiated in the injector.
 The goal of Guice is alleviating the need for factories and the use of `new` in your Java code.
 
-# DI in Action: The Spring Framework
+# DIC in Action: The Spring Framework
 
 [Spring](https://spring.io/) is currently the most popular Java web framework.
 It heavily relies on the DI  pattern to wire up objects.

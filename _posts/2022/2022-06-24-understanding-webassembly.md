@@ -28,7 +28,9 @@ TODO
   </figcaption>
 </figure>
 
-# iTerm2
+## What is WebAssembly?
+
+https://github.com/Jacarte/KTH-Licentiate-Thesis/blob/main/Lic-2.pdf
 
 
 # Conclusion

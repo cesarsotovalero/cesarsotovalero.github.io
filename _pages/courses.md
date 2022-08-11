@@ -11,7 +11,7 @@ published: true
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
 </div>
 
-# Doctoral courses
+# Doctoral Courses
 
 - [:earth_americas: FBB3110 Computational Python](https://www.kth.se/student/kurser/kurs/FBB3110?l=en), KTH Fall 2021
 
@@ -35,11 +35,11 @@ published: true
 
 - [WASP Autonomous Systems I](../files/certificates/Certificate_WASP_AS1_Cesar.pdf), KTH, Spring 2019
 
-# Master courses
+# Master Courses
 
 - [Academic Transcripts in English](../files/certificates/MSc_Academis_Transcript-eng.pdf), Universidad Central "Marta Abreu" de Las Villas, Cuba, 2014-2016
 
-# Bachelor courses
+# Bachelor Courses
 
 - [Academic Transcripts in English](../files/certificates/BSc_Academis_Transcript-eng.pdf), Universidad Central "Marta Abreu" de Las Villas, Cuba, 2009-2013
 

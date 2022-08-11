@@ -2,7 +2,7 @@
 permalink: talks.html
 layout: page
 title: Talks
-subtitle: Public speaker 
+subtitle: My talks list 
 published: true
 ---
 
@@ -57,12 +57,3 @@ The following is a non-exhaustive list of my technical presentations.
 - [Bloatware Mitigation and Analysis](https://docs.google.com/presentation/d/1LYvt7fFdGf_VvdlD2XRHzUTfZZOqM55Wopw6IYM6PNQ/edit?usp=sharing). Presented at _5th ASSERT Software Engineering Workshop_, Stockholm, Sweden, November 2018.
 
 - [Mining Software Dependencies at Large Scale: A Preliminary Study on the Maven Central Repository](https://docs.google.com/document/d/1IMhDIJjDIT_KuFLYSa5agPMvbCA8klBCemSLZI4id04/edit?usp=sharing). Presented at _4th ASSERT Software Engineering Workshop_, Stockholm, Sweden, Sep 2018.
-
-# Related presentations
-
-- [Bintrimmer: Towards Static Binary Debloating Through Abstract Interprepation](https://www.dimva2019.org/wp-content/uploads/sites/31/2019/06/DIMVA19-slides-11.pdf), June 2019
-
-- [:earth_americas: GitHub Universe: 2019: Exemplars, Laggards, and Hoarders A Data-driven Look at Open Source Software Supply Chains](https://www.slideshare.net/realgenekim/github-universe-2019-exemplars-laggards-and-hoarders-a-datadriven-look-at-open-source-software-supply-chains), November 2019
-
-- [Effective Program Debloating via Reinforcement Learning](https://youtu.be/8eRZKoLFakw). ACM CCS, Toronto, Canada, October 2018
-

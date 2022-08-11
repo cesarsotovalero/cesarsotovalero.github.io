@@ -20,7 +20,7 @@ published: true
 
 There is a common belief that top-class software developers can do their job without ever abandoning the terminal.
 I think this is true to some extent.
-It is impossible to become an outstanding software developer without knowing how to get the most out of the terminal.
+It is ~~almost~~ impossible to become an outstanding software developer without knowing how to get the most out of the terminal.
 Personally, I treat my [Unix shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) as a very good friend.[^1]
 And the terminal for me is the bar where I go with this friend to drink and have a good time.
 As it is more enjoyable drinking with civilized friends in civilized places,[^2] I prefer visiting a bar that is cozy and invites me to cheer.
@@ -40,9 +40,9 @@ I use [iTerm2](https://iterm2.com/), as a replacement of the standard macOS term
 
 You can install iTerm2 via [Homebrew](https://brew.sh/) using the following command:
 
-```bash
+{% highlight bash linenos %}
 brew install --cask iterm2
-````
+{% endhighlight %}
 
 These are my favorite iTerm2 features:
 - Opening a new terminal tab in the current window.
@@ -59,9 +59,9 @@ It offers a tons of themes, functions, helpers, plugins, and other handy feature
 
 To install Oh My Zsh, execute the following command in the terminal:
 
-```shell
+{% highlight bash linenos %}
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
+{% endhighlight %}
  
 The configuration file is located at `~/.zshrc`.
 
@@ -187,9 +187,9 @@ Thus, the TLDR pages are a community effort to simplify the beloved man pages wi
 
 To install TLDR, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 brew install tldr
-```
+{% endhighlight %}
 
 # Fig
 
@@ -205,9 +205,9 @@ I like it because it makes me feel my terminal more like and IDE.
 
 To Install Fig, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 brew install fig
-````
+{% endhighlight %}
 
 # Vim
 
@@ -228,9 +228,9 @@ I love Vim, despite its steep learning curve.
 
 To install Vim, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 brew install vim
-```
+{% endhighlight %}
 
 It is very easy to apply different customizations to Vim that totally change how it looks and feels.
 I use the [amix/vimrc](https://github.com/amix/vimrc) scripts to easily customize my Vim environment.
@@ -238,21 +238,20 @@ This includes a lot of great plugins, configurations and color schemes that make
 
 To get and awesome Vim, simply execute the following commands in the terminal:
 
-```shell
+{% highlight bash linenos %}
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
-```
+{% endhighlight %}
 
 These commands install several Vim plugins and customizations.
 Among other plugins, it installs [NERDTree](https://github.com/preservim/nerdtree), which is a great tool for file navigation.
 To open NERDTree automatically when Vim starts and put the cursor back in the other window, add the following in `~/.vim_runtime/my_configs.vim`:
 
-```shell
+{% highlight bash linenos %}
 autocmd VimEnter * NERDTree | wincmd p
-```
+{% endhighlight %}
 
 **Note:** To move the cursor between the NERDTree panel and the edit panel type `ctrl + w` twice.
-
 
 # SDKMAN!
 
@@ -275,9 +274,9 @@ You can also switch between different Java JDK versions, as follows:
 
 To install SDKMAN!, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 curl -s "https://get.sdkman.io" | bash
-```
+{% endhighlight %}
 
 # jENV
 
@@ -297,9 +296,9 @@ For example, you you can change the Java version that you are using by simply ty
 
 To install jEnv, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 brew install jenv
-```
+{% endhighlight %}
 
 # Jq
 
@@ -318,12 +317,11 @@ And of course, you can get JSON file pretty-printed by typing `jq '.'`.
    });
 </script>
 
-
 To install jq, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 brew install jq
-```
+{% endhighlight %}
 
 # Bat
 
@@ -343,9 +341,9 @@ It is a replacement for the `cat` Unix command, but it is more powerful and more
 
 To install bat, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 brew install bat
-```
+{% endhighlight %}
 
 # Trash-CLI
 
@@ -354,9 +352,9 @@ In contrast, trash-cli moves files to the trash, which is safer because it is re
 
 To install trash-cli, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 brew install trash-cli
-```
+{% endhighlight %}
 
 # Exa
 
@@ -373,12 +371,11 @@ brew install trash-cli
    });
 </script>
 
-
 To install exa, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 brew install exa
-```
+{% endhighlight %}
 
 # Htop
 
@@ -398,9 +395,9 @@ It is a replacement for the `top` Unix command, more user-friendly and more powe
 
 To install htop, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 brew install htop
-```
+{% endhighlight %}
 
 # Diff-so-fancy
 
@@ -422,16 +419,15 @@ This helps improve code quality and helps you spot defects faster.
 
 To install diff-so-fancy, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 brew install diff-so-fancy
-```
+{% endhighlight %}
 
 To make it Git use it as the default, execute the following command in the terminal:
 
-```bash
+{% highlight bash linenos %}
 git config --bool --global diff-so-fancy.stripLeadingSymbols false
-```
-
+{% endhighlight %}
 
 # Conclusion
 
@@ -439,7 +435,6 @@ Here we are at the bar, enjoying a tasty after-work beer.
 Now I open my laptop and look at my beautiful terminal, fully customized and configured to suit my needs.
 It is beautiful!
 I close my laptop, and I'm just happy 😄.
-
 
 # Footnotes
 
