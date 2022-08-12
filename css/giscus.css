@@ -274,6 +274,16 @@ main {
   color: var(--main-text-color);
 }
 
+div.markdown.gsc-comment-content > p {
+  font-size: 1.05rem;
+  font-family: "Equity Text A", "Cambria", "Georgia", "Times New Roman", serif;
+}
+
+div.markdown.gsc-reply-content > p {
+  font-size: 1.05rem;
+  font-family: "Equity Text A", "Cambria", "Georgia", "Times New Roman", serif;
+}
+
 .gsc-comments-count {
   font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   color: var(--post-meta-index-color);
