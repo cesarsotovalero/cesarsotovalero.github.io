@@ -699,6 +699,9 @@ Furthermore, the existence of dynamic features also has implications for the ver
 In particular, the point-to analysis in the GraalVM compiler is not sound in the presence of dynamic features.
 
 Personally, I think that the use of dynamic features should be avoided as much as possible.
+In most cases, they just cause obfuscation and introduce bugs.
+Although these advanced language features might perfectly solve a problem for an expert who knows how to leverage them, powerful features are often more difficult to understand and are not widely used.
+Simple, straightforward code that is easy to understand and maintain has a higher value.
 I expect that, in the future, developers will be more careful about introducing dynamic behaviors into their applications for the sake of consistency and performance.
 
 # Further Reading

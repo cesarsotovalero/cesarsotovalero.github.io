@@ -163,7 +163,7 @@ The points-to analysis of the AOT compilation needs to "see" all the bytecode to
 This limitation is known as the close world assumption.
 It means that all the bytecode in the application and their dependencies that can be called at runtime **must be known at build time** (observed and analyzed), i.e., when the `native-image` tool in GraalVM is building the standalone executable.
 
-Consequently, dynamic language capabilities such as Java Native Interface (JNI), Java Reflection, Dynamic Proxy objects (`java.lang.reflect.Proxy`), or classpath resources (`Class.getResource`) are not supported.
+Consequently, [dynamic language capabilities](./the-dynamic-features-of-java.html) such as Java Native Interface (JNI), Java Reflection, Dynamic Proxy objects (`java.lang.reflect.Proxy`), or classpath resources (`Class.getResource`) are not supported.
 
 
 > “The closed-world constraint imposes strict limits on Java’s natural dynamism, particularly on the run-time reflection and class-loading features upon which so many existing Java libraries and frameworks depend. Not all applications are well suited to this constraint, and not all developers are willing to live with it.
