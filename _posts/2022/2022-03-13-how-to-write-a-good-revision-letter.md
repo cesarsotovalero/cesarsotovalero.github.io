@@ -64,12 +64,12 @@ The whole process looks as follows:
 [//]: # (see https://mermaid-js.github.io)
 {% mermaid %}
 flowchart TB;
-a[Submit Research Paper] --> x[Editor Receives the Paper]
+a([Submit Research Paper]) --> x[Editor Receives the Paper]
 x[Editor Receives the Paper] --> y[Reviewers Receive the Paper]
 y[Reviewers Receive the Paper] --> z[Editor Receives the Reviewers' Comments]
 z[Editor Receives the Reviewers' Comments] --> b{What's The Editor's Decision?}
-b -- Accept --> c[Celebrate!]
-b -- Reject --> a[Submit Research Paper]
+b -- Accept --> c([Celebrate!])
+b -- Reject --> a([Submit Research Paper])
 b -- Minor Revision --> d[Prepare Response Letter]
 b -- Major Revision --> d[Prepare Response Letter]
 d[Prepare Response Letter] --> e[Sent Response Letter]

@@ -144,18 +144,18 @@ Therefore, using a table saves you word limits!
 
 For example, the following table presents new data to the reviewers without significantly affecting the word count:
 
-{% highlight text %}
+```text
 We conducted a new experiment with the Foo dataset:
 
-|  Model  |  Metric1  |  Metric2  |  Metric3  |
-|---------|-----------|-----------|-----------|`
-|    A    |     69    |     40    |     38    |
-|    B    |     99    |     89    |     78    |
-|    C    |     43    |     76    |     45    |
+| Model | Metric1 | Metric2 | Metric3 |
+|-------|---------|---------|---------|
+| A     |    69   |    40   |    38   |
+| B     |    99   |    89   |    78   |
+| C     |    43   |    76   |    45   |
 
 This shows that 1)B outperforms A and C,2)The results are similar to ours.
 Full results: https://github.com/anonymous/repo 
-{% endhighlight %}
+```
 
 Note how there is a link to an external repository.
 Yes, adding links to data and experiments is a good idea in a rebuttal.
@@ -193,7 +193,8 @@ This is important to help the reviewers understand other reviewers' concerns!
 
 Here is an example:
 
-{% highlight markdown %}
+
+```text
 Dear reviewers,
 We appreciate your positive feedback.We focus on four major points to
 solve your concerns and get your support:
@@ -204,7 +205,7 @@ Reviewer-2,so we added Z.Please see Answer to Reviewer-2.
 3.We added a new study Foo. Please see Answer-to-Reviewer-1.
 4.We disagree that our results are insignificant because X and Z.
 Please see Answer-to-Reviewer-3.
-{% endhighlight %}
+```
 
 If some reviewers' comments do not make sense, you can showcase them here to discuss with all reviewers.
 In case a reviewer's suggestion makes no sense or is not valid, explain why the argument is invalid.

@@ -201,12 +201,12 @@ The common process for building a JVM based native applications is as follows:
 [//]: # (see https://mermaid-js.github.io)
 {% mermaid %}
 flowchart TB;
-a[".class Files"] --> x[Quarkus/Micronatu/Helidon/Spring Native]
+a([".class Files"]) --> x[Quarkus/Micronatu/Helidon/Spring Native]
 x[Quarkus/Micronatu/Helidon/Spring Native] --> y[Maven/Gradle Plugin]
 y[Maven/Gradle Plugin] --> q{Optimized JAR for the Cloud}
 q -- Yes --> c[AOT Compilation via GraalVM]
 q -- No --> w[JIT Compilation via JVM]
-c[AOT Compilation via GraalVM] --> r[GraalVM Native Image]
+c[AOT Compilation via GraalVM] --> r([GraalVM Native Image])
 {% endmermaid %}
 
 It seems that AOT with GraalVM is the future of JVM-based languages, such as Java, Scala, or Kotlin.

@@ -46,16 +46,16 @@ The simplified career paths look like this:
 [//]: # (see https://mermaid-js.github.io)
 {% mermaid %}
 flowchart TB;
-a[Finish PhD] --> b[Stay in Academia];
-a[Finish PhD] --> c[Get out of Academia];
+a([Finish PhD]) --> b[Stay in Academia];
+a([Finish PhD]) --> c[Get out of Academia];
 c[Get out of Academia] --> j[Get a Job in the Industry];
 c[Get out of Academia] --> z[Start Your Own Company];
 b[Stay in Academia] --> d[Become a PostDoc];
 d[Become a PostDoc] --> e[Become an Assistant Professor];
 e[Become an Assistant Professor] --> f[Become a Tenured Professor];
-f[Become a Tenured Professor] --> k[Enjoy!];
-j[Get a Job in the Industry] --> k[Enjoy!];
-z[Start Your Own Company] --> k[Enjoy!];
+f[Become a Tenured Professor] --> k([Enjoy!]);
+j[Get a Job in the Industry] --> k([Enjoy!]);
+z[Start Your Own Company] --> k([Enjoy!]);
 {% endmermaid %}
 
 If you decide to stay in academia, the natural goal is to become a tenured professor.
