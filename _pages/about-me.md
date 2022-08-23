@@ -90,10 +90,6 @@ You can email me using the form below:
 
 
 
-[^1]: For more on these topics, see my living review of [software debloating papers](./software-debloating-papers.html), or consult my list of [software debloating tools](./software-debloating-tools.html).
-
-[^2]: See my list of [mining software repositories resources](./mining-software-repositories-resources.html).
-
 
 <style>
 form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
@@ -203,3 +199,9 @@ form.wj-contact input[type="submit"]:hover {
    <i class="fas fa-user-edit"></i>
    Website last modified on {{ page.last_modified_at | date: "%B %-d, %Y" }}
 </p>
+
+# Footnotes
+
+[^1]: For more on these topics, see my living review of [software debloating papers](./software-debloating-papers.html), or consult my list of [software debloating tools](./software-debloating-tools.html).
+
+[^2]: See my list of [mining software repositories resources](./mining-software-repositories-resources.html).
