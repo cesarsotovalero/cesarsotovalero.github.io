@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>On the Parkinson&apos;s Law of Triviality for Computer Science Researchers</title>
+        <description>
+          It must stop! - 
+          The Parkinson’s Law of Triviality is a real thing (more on this later). And for Computer Science researchers, it is part of everyday life. As we know, research is a very time-consuming activity. There are uncertain tasks that typically take a lot of time to complete. This state of things...
+        </description>
+        <pubDate>Fri, 22 Jul 2022 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/on-the-parkinsons-law-of-triviality-for-software-development.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/on-the-parkinsons-law-of-triviality-for-software-development.html</guid>
+      </item>
+    
+      <item>
         <title>My Ultimate Terminal Customizations for macOS</title>
         <description>
           A guide - 
@@ -213,17 +224,6 @@
         <pubDate>Sat, 31 Jul 2021 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/hermit-programmers-are-dead.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/hermit-programmers-are-dead.html</guid>
-      </item>
-    
-      <item>
-        <title>Replace the Disqus Commenting System on your Blog</title>
-        <description>
-          GitHub-based open-source alternatives are better - 
-          I started using Disqus in 2018. At that time, it was arguably the leading commenting management system for both small and large websites. Its popularity was well deserved: ubiquitous integration, easy to set up, friendly admin panel, clean comment widget design, excellent spam filters, great content engaging features, etc. Three...
-        </description>
-        <pubDate>Tue, 27 Jul 2021 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/replace-disqus-with-a-better-alternative.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/replace-disqus-with-a-better-alternative.html</guid>
       </item>
     
   </channel>
