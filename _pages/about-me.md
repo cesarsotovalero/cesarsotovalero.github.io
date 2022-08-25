@@ -57,7 +57,7 @@ Here is my minimalistic [resumé](../files/CV/cv.pdf).
 
 [//]: # (:dart:)
 
-Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and jogging across Stockholm's beautiful shores..
+Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and jogging across Stockholm's beautiful shores ([My Midnattsloppet 2022](../files/certificates/Midnattsloppet-result-2022.pdf)).
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
