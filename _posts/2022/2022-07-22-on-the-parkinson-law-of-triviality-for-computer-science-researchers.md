@@ -39,7 +39,7 @@ In this post, I will cover the repercussion of Parkinson’s Law for researchers
 [//]: # (A summary of the law)
 
 Parkinson's Law (also known as **bikeshedding**)[^1] states that **work expands to fill the time allowed for it**.
-The term was coined as a metaphor for [Cyril Northcote Parkinson](https://en.wikipedia.org/wiki/C._Northcote_Parkinson) 's and stated in 1957.
+The term was coined as a metaphor by [Cyril Northcote Parkinson](https://en.wikipedia.org/wiki/C._Northcote_Parkinson)'s and stated in 1957.
 Parkinson's argues that people within an organization typically give disproportionate weight to trivial issues.
 For example, while it can be fun and engaging to discuss what the title of a paper should be (everyone has an opinion), this is a form of procrastination.
 Let me said again, our job as researchers is to produce [research artifacts](./how-do-i-track-the-progress-of-my-research-projects.html), not to generate never-ending discussion.
@@ -297,4 +297,4 @@ So, instead of finishing something next year, next month, or next week, remember
 
 # Footnotes
 
-[^1]: “Bikeshedding” is a notable phenomenon in the software development industry. It was popularized in the 90s by the Berkeley Software Distribution community. [Poul-Henning Kamp](https://en.wikipedia.org/wiki/Poul-Henning_Kamp) used bikeshedding as a metaphor indicating that one need not argue about every little thing just because one knows enough to do so. He introduced the reference of “what color to paint the shed?” via a rather lengthy and well-distributed email rant.
+[^1]: “Bikeshedding” is a notable phenomenon in the software development industry. It was popularized in the 90s by the Berkeley Software Distribution community. [Poul-Henning Kamp](https://en.wikipedia.org/wiki/Poul-Henning_Kamp) used bikeshedding as a metaphor indicating that one need not argue about every little thing just because one knows enough to do so. He introduced the reference of “what color to paint the shed?” via a rather lengthy and well-distributed [email rant](https://bikeshed.org/).
