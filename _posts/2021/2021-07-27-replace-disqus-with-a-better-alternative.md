@@ -63,7 +63,7 @@ Luckly, there are great open-source alternatives to Disqus:
 # Setting Up Giscus
 
 [This blog](https://www.cesarsotovalero.net/blog) runs on GitHub pages, and [Jekyll](https://jekyllrb.com/) powers it.
-By the way, please [give it a start](https://github.com/cesarsotovalero/cesarsotovalero.github.io) if you like it :smiley:.
+By the way, please [give it a star](https://github.com/cesarsotovalero/cesarsotovalero.github.io) if you like it :smiley:.
 Jekyll is a static site generator created by one of the GitHub founders.
 The principal advantage of Jekyll is that I can deploy my website on GitHub completely free.
 This means that all the GitHub features can be integrated as part of my blogging activities.
