@@ -113,7 +113,7 @@ JDBL can be used to perform test-based debloat. The approach has five phases:
 
 As we observe, JDBL combines a variety of different implementations in order to achieve a unique goal: collecting the minimum set of classes and methods that are necessary to execute an application for a given workload. JDBL is extensible because it is not limited to a single coverage tool.  It leverages the power of software diversity to break the limitations of existing tools and provide better debloat results.
 <aside class="quote">
-    <em>“Software diversity is what we love.” ― Benoit Baudry</em> 
+    <em>“Software diversity is what we love.” ― <cite>Benoit Baudry</cite></em> 
 </aside>
 
 

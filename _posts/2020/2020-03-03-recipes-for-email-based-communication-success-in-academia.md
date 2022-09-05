@@ -15,13 +15,22 @@ date: 2020/3/03
 
 You cannot be a good researchers without being a good communicator. If you are good enough at both, they you may qualify for becoming a supervisor. Being a good academic supervisor is a matter of practice, discipline, and the development of leading skills. Handling tons of emails is the everyday bread and butter for those who have reached this level of success (i.e., supervising other people). 
 
+In this post, I'll illustrate how using a template based approach to easing email management can boost productivity and improve the quality of this communication channel.
+
+
+<figure class="jb_picture">
+{% responsive_image path: img/posts/2020/email_vs_chat.png alt:"Email vs. Chat" %}
+  <figcaption class="stroke"> 
+&#169; Email vs. Chat. Comic from <a href="https://workchronicles.com">workchronicles.com</a>.
+</figcaption>
+</figure>
+
+
+# Why email? 
+
 <aside class="quote">
     <em>Two curses have the supervisors: emails and people. The first one is solvable in polynomial time; whereas the second is NP-Complete.</em>
 </aside>
-
-In this post, I'll illustrate how using a template based approach to easing email management can boost productivity and improve the quality of this communication channel.
-
-<!-- @todo #19  explain we academics love emailing -->
 
 # Templates
 

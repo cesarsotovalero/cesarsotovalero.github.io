@@ -29,11 +29,17 @@ Le me clarify each concept in the diagram presented before:
 - **Bloated code:** code that is perceived as unnecessarily long, slow, or otherwise wasteful of resources. It generally refers to source code size or binary file size. The term “bloatware” refers to software that has become bloated through inefficiency or accretion of features.
 - **Unnecessary code:** code that can be deleted from the codebase without affecting the expected functionality of the software project. 
 
+<aside class="quote">
+    <em>“Getting rid of dead or obsolete code is one of the best ways to improve the overall health of a codebase.”</em> ― In <cite><a href="https://www.amazon.se/Software-Engineering-Google-Lessons-Programming/dp/1492082791/ref=sr_1_2?crid=2HOKAR45ZOESM&keywords=software+engineering+at+google">SE at Google</a></cite>
+</aside>
+
 Unnecessary code is not the same as dead code, because unnecessary code can still be reachable in the control flow. So, dead code can be unnecessary but does not necessarily need to be. For example, the implementation of a new feature that has not been yet integrated into the software system and is not reachable. Unused code is also not necessarily unnecessary code. For instance, error handling, recovery, or migration code is considered as useful even if it is not executed. The same applies for test code, which is not executed in a deployed production environment.
 
 Unnecessary code usually is very hard to detect, and even more difficult to remove for sure. Just imagine a scenery in which a developer must decide between removing a very old piece of code that is likely unneeded (but he knows that it works) or keep it safe (just for the care of not breaking something). Probably the developer will choose not to make the change. 
 
-For the above reason, modern applications are becoming very bloated nowadays. Developers commonly do not care about the size or the resources consumed at runtime, as long as their apps work correctly. The automatic detection and removal of unnecessary code is a current necessity for the software industry.   
+For the above reason, modern applications are becoming very bloated nowadays. 
+\Developers commonly do not care about the size or the resources consumed at runtime, as long as their apps work correctly. 
+The automatic detection and removal of unnecessary code is a current necessity for the software industry.   
 
 Accordingly, there are two main approaches to detect unnecessary code, involving both static and dynamic code analysis:
 

@@ -85,8 +85,11 @@ And some ~~bad~~ reviewers could write aggressive comments.
 But no matter what, you should know that a major revision is actually a very good output.
 It's an opportunity to get your paper accepted, finally!
 
-> “After receiving a major revision, put it aside for a few days to cold down the first impression.”
- 
+
+<aside class="quote">
+    <em>“After receiving a major revision, put it aside for a few days to cold down the first impression.”</em>
+</aside>
+
 I recommend you to read the whole letter from the editor a couple of times and put is aside for a few days.
 The idea is to cold-down your initial (often negative) impression about the response.
 Remember that you have some time, usually between one and three months, to prepare the response letter.
@@ -159,7 +162,11 @@ There is no workaround here.
 Don't evade the nasty comments from the reviewers.
 Accept them.
 
-> “Major changes ~~should~~ must significantly improve the quality of your paper.”
+
+<aside class="quote">
+    <em>“Major changes <del>should</del> must significantly improve the quality of your paper..”</em>
+</aside>
+
 
 I suggest adding figures and tables directly in the revision letter (as a gift for the reviewers) explaining the major changes in the paper.
 For example, if you carried out a new experiment and collected new data, add a figure in the revision letter showing the data collection pipeline. 

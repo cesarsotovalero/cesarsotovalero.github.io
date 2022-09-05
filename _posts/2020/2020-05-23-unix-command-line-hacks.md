@@ -16,8 +16,10 @@ date: 2020/5/23
 
 I want to share my personal notes of the [edX](www.edx.org) course [Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering), by Prof. Diomidis Spinellis. I attended this course from March to June, 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and it makes me consider online education very seriously, as it provides an excellent way of learning from top courses, given by top universities, and tough by top experts in the world.
 
-> "Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill." ― Diomidis Spinellis 
- 
+<aside class="quote">
+    <em>“Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill.”</em> ― <cite>Diomidis Spinellis </cite>
+</aside>
+
 These notes are not organized in any specific manner. 
 So, they are actually a bunch of very disordered Unix command line hacks and tricks :grin:.
 

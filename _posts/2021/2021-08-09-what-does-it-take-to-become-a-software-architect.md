@@ -44,7 +44,9 @@ This requires taking crucial decisions, such as the location to place the buildi
 If the architect is wrong, the structure of the entire building can break down, to the point of eventually causing it to fall to the ground.
 Thus, his decisions are really important for the project.
 
-> "Architecture is about the important stuff" -- <cite>[Ralph Johnson](https://en.wikipedia.org/wiki/Ralph_Johnson_(computer_scientist))</cite>
+<aside class="quote">
+    <em>“Architecture is about the important stuff.”</em> ― <cite><a href="https://en.wikipedia.org/wiki/Ralph_Johnson_(computer_scientist)">Ralph Johnson</a></cite>
+</aside>
 
 As occurs in construction, the software architect is someone responsible for the future of the project.
 He acts as the right hand of the person that holds the highest position of power within the organization, a.k.a the Project Manager (PM).
@@ -55,7 +57,10 @@ The software team needs someone personally responsible for the quality of the so
 The PM delegates the quality control to the software architect, and it is up to him finding the mechanism to delegate it further.
 This is what delegation is all about. Responsibility should always come with power.
 
-> "Quality and responsibility mean nothing unless they are attributed personally" -- <cite>[Yegor Bugayenko](https://www.yegor256.com)</cite>
+
+<aside class="quote">
+    <em>“Quality and responsibility mean nothing unless they are attributed personally.”</em> ― <cite><a href="https://www.yegor256.com">Yegor Bugayenko</a></cite>
+</aside>
 
 As Yegor Bugayenko says in his book [Code Ahead](https://amzn.to/3g44mUw), group responsibility is the most terrible mistake a team can ever make.
 Therefore, in most projects, there should be only one architect on the team.
@@ -81,7 +86,10 @@ A pragmatic architect is particularly valuable at the beginning of the project, 
 He should also be hands-on with the code.
 For example, in a Java/Maven project, creating some initial files, configuring the `pom.xml`, setting up the CI environment, and adding the `README.md` are probably the first steps an architect will make. 
 
-> "[The software architect is] a new pompous title that programmers demand to have on their business cards to justify their sumptuous emoluments." -- <cite>[Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck), 1992</cite>
+
+<aside class="quote">
+    <em>“[The software architect is] a new pompous title that programmers demand to have on their business cards to justify their sumptuous emoluments.”</em> ― <cite><a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck</a>, 1992</cite>
+</aside>
 
 Being promoted as a software architect gives not only a significant boost in the perceived salary.
 The promotion implies positioning the architect as the man in power, not just a highly-skilled software engineer.
