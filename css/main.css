@@ -1783,10 +1783,11 @@ td.gutter {
   margin: 5px;
 }
 
+
 .list-filters .list-filter.filter-selected,
 .list-filters .list-filter:hover {
-  color: #fff;
-  background: #444;
+  color: var(--main-background-color);
+  background: var(--button-background-color);
 }
 
 @media only screen and (max-width: 550px) {
@@ -2155,19 +2156,21 @@ ol, ul {
 
 .quote {
   color: var(--main-text-color);
-  background-color: var(--blockquote-background-color);
+  background-color: var(--navbar-color);
   float: right;
   font-weight: 300;
-  font-size: 22px;
-  margin: 10px 0px 20px 20px;
+  font-size: 20px;
   padding: 10px 5px 10px 10px;
-  width: 300px;
-  line-height: 1.25;
   border: 1px solid var(--main-background-color);
   border-left-color: var(--main-text-color);
-  border-left-width: 4px;
-  border-radius: 0px 5px 5px 0px;
+  border-left-width: 2px;
+  border-radius: 0px 2px 2px 0px;
   font-family: "Equity Text A", sans-serif;
+  clear: right;
+  width: 31% !important;
+  margin: 0 -35% 0 0 !important;
+  vertical-align: baseline;
+  position: relative;
 }
 
 .quote em {
@@ -2207,6 +2210,11 @@ ol, ul {
 
   .quote {
     font-size: 16px;
+    width: 40%;
+    float: right;
+    border-left: 1px #a4a6a7 solid;
+    padding: .2em 0 .2em 1em;
+    margin: 0.5em 0 0.5em 0.5em !important;
   }
 }
 
@@ -2755,6 +2763,7 @@ html, html[data-theme="light"] {
   --main-text-color: hsl(0, 0%, 10%);
   --main-link-color: #012639;
   --footnote-link-color: blue;
+  --button-background-color: #444;
 }
 
 html[data-theme="dark"] {
@@ -2768,4 +2777,5 @@ html[data-theme="dark"] {
   --main-text-color: hsl(0, 0%, 85%);
   --main-link-color: hsl(0, 0%, 100%);
   --footnote-link-color: lightblue;
+  --button-background-color: hsl(0, 0%, 99%);
 }
