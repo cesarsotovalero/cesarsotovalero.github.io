@@ -2750,6 +2750,10 @@ a.btn {
   }
 }
 
+.span .kofitext {
+  color: var(--main-text-color);
+}
+
 
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
