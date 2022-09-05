@@ -42,7 +42,9 @@ The term "microservices" became popular after the publication of a [famous blog 
 The authors describe the fundamental characteristics of microservices and contrast them with the traditional [monolithic architecture](https://en.wikipedia.org/wiki/Monolithic_application).
 They define microservices as a cloud-native architecture that aims to build software systems as packages of small services that can run on their own process while communicating through lightweight mechanisms such as [RESTful](https://restfulapi.net/) or [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) APIs.
 
-> "APIs have become ubiquitous components of software infrastructures. In short, an API defines how a client can load data from a server"  -- <cite>[Andrew Goss](https://andrewrgoss.com)</cite>
+<aside class="quote">
+    <em>“APIs have become ubiquitous components of software infrastructures. In short, an API defines how a client can load data from a server.”</em> ― <cite><a href="https://andrewrgoss.com">Andrew Goss</a></cite>
+</aside>
 
 There is still no clear definition for the microservice architecture, as the most notable authors defend different points of view regarding some of its characteristics.
 In this blog post, I consider microservices as small, **independently deployable** software services that run all together around a specific **business domain**.

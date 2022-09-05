@@ -99,7 +99,9 @@ Attackers could target all the layers of the supply chain, from malicious plugin
 However, they often focus on the less secure elements in the supply chain and heavily rely on the trust that make code reuse possible.
 Attacks targeting third-party components are expected to become more prominent over the next few years.
 
-> "Projects often incorporate code and libraries from many sources with unknown provenance..." -- <cite>[Hamed Okhravi](http://web.mit.edu/ha22286/www/)</cite>
+<aside class="quote">
+    <em>“Projects often incorporate code and libraries from many sources with unknown provenance...”</em> ― <cite><a href="http://web.mit.edu/ha22286/www/">Hamed Okhravi</a></cite>
+</aside>
 
 Package managers are particularly susceptible to supply chain attacks (e.g., [typosquatting](https://news.ycombinator.com/item?id=11862217), [cryptojacking](https://www.kaspersky.com/resource-center/definitions/what-is-cryptojacking), and malicious contributors).
 This is due to the lack of efficient mechanisms for detecting malicious code injected into packages uploaded to popular package repositories.
@@ -109,7 +111,11 @@ We have seen the rise of tools to mitigating the risks (e.g., [Snik](https://sny
 Existing tools are mostly focused on monitoring applications' behavior, scanning dependencies, and assessing code quality.
 However, the adoption of such tools is still at an early stage in most organizations.
 
-> "We don't know what we are installing, and even the people who sell it to us have no clear idea." -- <cite>[Fabio Massacci](http://disi.unitn.it/~massacci/)</cite>
+
+<aside class="quote">
+    <em>“We don't know what we are installing, and even the people who sell it to us have no clear idea.”</em> ― <cite><a href="http://disi.unitn.it/~massacci/">Fabio Massacci</a></cite>
+</aside>
+
 
 The [SolarWinds](https://ieeexplore.ieee.org/document/9382367) incident in 2020 is a typical example of the fragility that permeates modern software supply chains.
 A malicious actor gained access to the Orion monitoring and management system operated by the U.S. company SolarWinds and inserted malicious code into the deployment infrastructure.
@@ -118,7 +124,10 @@ The malicious code stayed dormant for two weeks.
 After that, it mimicked another known protocol to exfiltrate users' credentials, which were used to craft security tokens, allowing attackers to access confidential data.
 Incidents at this scale are evidence of the lack of awareness related to this issue and the lack of control of companies and the government regarding the software products and services deployed to their clients.
 
-> "Governments have been somewhat ineffectual in handling supply-chain issues." -- <cite>[James Bret Michael](http://faculty.nps.edu/bmichael/)</cite>
+
+<aside class="quote">
+    <em>“Governments have been somewhat ineffectual in handling supply-chain issues.”</em> ― <cite><a href="http://faculty.nps.edu/bmichael/">James Bret Michael</a></cite>
+</aside>
 
 Mass-scale software development and future global innovation are at risk if governments enforce more restrictive security gates to prevent incidents such as the SolarWinds.
 Technology-based solutions need to be developed in order to cope with the challenge of securing the software supply chain.

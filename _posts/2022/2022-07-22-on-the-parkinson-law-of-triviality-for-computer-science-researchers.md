@@ -85,7 +85,10 @@ The experimental protocol and software development will take the time allocated 
 Parkinson'sParkinson's law also operates with the cost in terms of human/hours of development.
 It usually ends up draining all the budget available.
 
-> “How does a project get to be a year behind schedule? One day at a time.” -- <cite>Fred Brooks</cite>
+
+<aside class="quote">
+    <em>“How does a project get to be a year behind schedule? One day at a time.”</em> ― <cite>Fred Brooks</cite>
+</aside>
 
 [//]: # (The researchers' perspective)
 
@@ -95,7 +98,10 @@ The Law of Triviality explains why I focus on trivial activities on purpose, ski
 The plan fails every time I don't progress with the deliverables on the critical path.
 As usual, a project is delivered when the slowest part of it is delivered.
 
-> “What is urgent is seldom important and what is important is seldom urgent.” -- <cite>Dwight D. Eisenhower</cite>
+<aside class="quote">
+    <em>“What is urgent is seldom important and what is important is seldom urgent.”</em> ― <cite>Dwight D. Eisenhower</cite>
+</aside>
+
 
 For researchers, the problem is spending disproportionate amounts of time discussing trivial parts of a research problem instead of focusing on more important aspects.
 Everyone who has spent some time in academia has seen this behavior in one form or another.

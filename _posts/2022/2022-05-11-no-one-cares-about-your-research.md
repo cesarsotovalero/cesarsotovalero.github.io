@@ -52,9 +52,7 @@ In particular, I'm going to refer to peer pressure here.
 Ultimately, everybody wants to be recognized by others as a successful person.
 Many studies have demonstrated that once people get enough money to live decently, more money will not make them happier.
 Only the recognition from the people around provides enough satisfaction.
-This imposes ~~an unnecessary~~ particular pressure on PhD students.
-
-> "I believe PhD students should not be affected by what others think about their research, just because there is not such a thing as _what the others think_ in the first place!"
+This imposes ~~an unnecessary~~ particular pressure on PhD students.[^4]
 
 Let's do some quick maths.
 There is around 7.9 billion people in the world in 2022 (i.e., `7,700,000,000`).
@@ -70,7 +68,10 @@ But the same happens in written books.
 Most books are never read.
 And the world doesn't seem to notice that.
 
-> "The number of expected citations for an average research paper is typically very low."
+
+<aside class="quote">
+    <em>“The number of expected citations for an average research paper is typically very low.”</em>
+</aside>
 
 Now let's talk about **presentations**.
 As a PhD student, you probably feel stressed about presenting your work to the public.
@@ -120,7 +121,9 @@ There would be chaos then.
 Don't worry about the lack of uniqueness.
 No one does.
 
-> "Everything seems extremely difficult... until you realize that a PhD is just another academic exercise."
+<aside class="quote">
+    <em>“Everything seems extremely difficult... until you realize that a PhD is just another academic exercise.”</em>
+</aside>
 
 In summary, I firmly believe that a PhD is an academic exercise.
 It is a particular type of training to be a better professional in the future.
@@ -181,3 +184,5 @@ In any case, I can assure you that no one will ever care about it!
 
 
 [^3]: I still don't understand what's the point of PhD courses. Are all courses passed at undergrad school a sufficient proof that you can complete assignments and pass tests?
+
+[^4]: I believe PhD students should not be affected by what others think about their research, just because there is not such a thing as _what the others think_ in the first place!

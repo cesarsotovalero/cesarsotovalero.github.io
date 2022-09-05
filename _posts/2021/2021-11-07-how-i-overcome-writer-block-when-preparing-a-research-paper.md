@@ -160,7 +160,9 @@ The perfect paragraphs is ~~almost~~ never written at the fist shot.
 So, if you try to get it perfect in your head, then you never do, so you never begin. 
 Forget about perfection and lower down the initial expectations!
 
-> “When writing, perfectionism is your enemy”
+<aside class="quote">
+    <em>“When writing, perfectionism is your enemy.”</em>
+</aside>
 
 I'm against refining sentence by sentence.
 The problem with this approach is that alternating between writing and editing encourages unuseful perfectionism.
@@ -183,7 +185,9 @@ To do so, I force myself to either write or do nothing.
 I'm not talking about doing nothing like when one goes to do a walk, or walks to grab a cup of coffee.
 I mean doing nothing at all!
 
-> “Boredom, when used correctly, is an excellent weapon to combat procrastination”
+<aside class="quote">
+    <em>“Boredom, when used correctly, is an excellent weapon to combat procrastination.”</em>
+</aside>
 
 When I do nothing, I enter into a mental state of boredom.
 This sensation tends to be very uncomfortable to me as time goes on.
@@ -202,7 +206,9 @@ It relies on a couple of facts:
 So, when I have nothing written, I just imagine that I have it done.
 Yes, I know this sounds a bit crazy 😌, but it works like a charm for me.
 
-> “If you can imagine what you want to write, in details, then you can write it”
+<aside class="quote">
+    <em>“If you can imagine what you want to write, in details, then you can write it.”</em>
+</aside>
 
 When stuck, I perform the following simple mental exercise: I close my eyes and visualize the parts of the paper that I would like to have written.
 I imagine that every section is filled with text, tables, and figures.

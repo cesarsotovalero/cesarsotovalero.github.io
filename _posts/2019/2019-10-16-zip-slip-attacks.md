@@ -18,7 +18,7 @@ In today's ever expanding-open source communities, developers rely heavily on th
 
 <aside class="quote">
     <em>“Code is complicated, and developers are not security experts. Their focus is typically around delivering code on time and so can
-        easily miss security flaws, even if the practice is known.”</em> ― Guy Podjarny
+        easily miss security flaws, even if the practice is known.”</em> ― <cite>Guy Podjarny</cite>
 </aside>
 
 This vulnerability is exploited using a specially crafted archive that holds directory traversal filenames (e.g., `../../evil.sh`). The two parts required to exploit this vulnerability are (1) a malicious archive and (2) extraction code that does not perform validation checking.
