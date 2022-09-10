@@ -2763,7 +2763,6 @@ a.btn {
 
 .panel-deck {
   margin-right: -15px;
-  padding-right: 15px;
 }
 
 #related-posts {
@@ -2774,6 +2773,13 @@ a.btn {
 .col-sm-4 {
   padding-right: 0;
 }
+
+@media screen and (max-width: 450px) {
+  .panel-body {
+    padding: 5px 15px 5px 15px;
+  }
+}
+
 
 #related-posts .panel {
   border-color: var(--panel-border-color);
