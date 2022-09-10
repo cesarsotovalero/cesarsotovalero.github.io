@@ -1018,14 +1018,14 @@ logo-main a:hover {
   font-size: 18px;
   /*font-style: italic;*/
   margin: 10px 12px 10px 0;
-  font-family: "Concourse T3", "Cambria", "Open Sans";;
+  font-family: "Concourse T3", "Cambria", "Open Sans";
 }
 
 p.post-meta {
   color: var(--post-meta-index-color);
   font-size: 18px;
   margin: 30px 0 30px 0;
-  font-family: "Concourse T3", "Cambria", "Open Sans";;
+  font-family: "Concourse T3", "Cambria", "Open Sans";
 }
 
 @media only screen and (max-width: 450px) {
@@ -2160,10 +2160,10 @@ ol, ul {
 
 .quote {
   color: var(--main-text-color);
-  background-color: var(--navbar-color);
+  /*background-color: var(--navbar-color);*/
   float: right;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px 5px 10px 10px;
   border: 1px solid var(--main-background-color);
   border-left-color: var(--main-text-color);
@@ -2171,7 +2171,7 @@ ol, ul {
   border-radius: 0px 2px 2px 0px;
   font-family: "Equity Text A", sans-serif;
   clear: right;
-  width: 31% !important;
+  width: 31%;
   margin: 0 -35% 0 0 !important;
   vertical-align: baseline;
   position: relative;
@@ -2213,7 +2213,7 @@ ol, ul {
   }
 
   .quote {
-    font-size: 16px;
+    font-size: 15px;
     width: 40%;
     float: right;
     border-left: 1px #a4a6a7 solid;
@@ -2759,6 +2759,89 @@ a.btn {
 }
 
 
+/* Related posts */
+
+.panel-deck {
+  padding-right: 15px;
+}
+
+#related-posts {
+  margin-bottom: 10px;
+}
+
+#related-posts .panel {
+  border-color: var(--panel-border-color);
+  background-color: var(--main-background-color);
+  box-shadow: 0 0 5px 0 var(--panel-box-shadow);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  border: 0 solid #e5e7eb;
+  border-radius: 0.5rem;
+  border-width: 1px;
+}
+#related-posts .panel:hover {
+  -webkit-transform: translate3d(0, -3px, 0);
+  transform: translate3d(0, -3px, 0);
+  box-shadow: 0 10px 15px -4px rgba(0, 0, 0, 0.5);
+  color: var(--main-text-color);
+}
+
+#related-posts .gsc-related-posts {
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 15px;
+  color: var(--main-text-color);
+}
+
+#related-posts .title {
+  margin: 10px 0 10px 0;
+  color: var(--button-background-color);
+}
+
+#related-posts .date {
+  color: var(--post-meta-index-color);
+  font-size: 15px;
+  margin: 10px 12px 10px 0;
+  font-family: "Concourse T3", "Cambria", "Open Sans";
+}
+
+#related-posts p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: var(--main-text-color);
+}
+
+#related-posts a:hover {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+#related-posts a {
+  text-decoration: none;
+}
+#related-posts ul {
+  list-style-type: none;
+  padding-inline-start: 1.5rem;
+}
+#related-posts ul > li::before {
+  background: #c2c9d4;
+  width: 5px;
+  height: 5px;
+  border-radius: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+}
+
+
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
   --link-color: black;
@@ -2772,6 +2855,8 @@ html, html[data-theme="light"] {
   --main-link-color: #012639;
   --footnote-link-color: blue;
   --button-background-color: #444;
+  --panel-border-color: #f1f1f1;
+  --panel-box-shadow: rgba(234, 234, 234, 0.7686274509803922);
 }
 
 html[data-theme="dark"] {
@@ -2786,4 +2871,7 @@ html[data-theme="dark"] {
   --main-link-color: hsl(0, 0%, 100%);
   --footnote-link-color: lightblue;
   --button-background-color: hsl(0, 0%, 99%);
+  --panel-border-color: rgb(53, 53, 60);
+  --panel-bg: rgb(39, 40, 43);
+  --panel-box-shadow: rgb(27, 27, 30);
 }
