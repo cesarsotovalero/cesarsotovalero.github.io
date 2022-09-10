@@ -34,10 +34,6 @@ This is a practical guide, so I will not try to explain everything in detail.
 
 # Creating Public and Private Keys
 
-<aside class="quote">
-    <em>“OpenSSH is the premier connectivity tool for remote login with the SSH protocol. It encrypts all traffic to eliminate eavesdropping, connection hijacking, and other attacks. In addition, OpenSSH provides a large suite of secure tunneling capabilities, several authentication methods, and sophisticated configuration options.”</em>
-</aside>
-
 First, make sure you have an OpenSSH client installed in your system.[^2] 
 If not, you can install it with Homebrew on macOS:
 
@@ -48,6 +44,8 @@ brew install openssh
 The SSH protocol uses industry-standard robust encryption algorithms, like AES, to secure communication between the involved parties.
 In addition, the protocol uses hashing algorithms, such as SHA-2, to ensure the integrity of the data transmitted.
 You can read more about encryption and hashing in [this article](./blog/2021/encoding-encryption-hashing-and-obfuscation-in-java.html).
+
+> “OpenSSH is the premier connectivity tool for remote login with the SSH protocol. It encrypts all traffic to eliminate eavesdropping, connection hijacking, and other attacks. In addition, OpenSSH provides a large suite of secure tunneling capabilities, several authentication methods, and sophisticated configuration options.”
 
 An SSH key consists of a pair of text files.
 One is the **private key**, which should never be shared with anyone.

@@ -2762,11 +2762,16 @@ a.btn {
 /* Related posts */
 
 .panel-deck {
-  padding-right: 15px;
+  margin-right: -15px;
 }
 
 #related-posts {
+  padding-right: 15px;
   margin-bottom: 10px;
+}
+
+.col-sm-4 {
+  padding-right: 0;
 }
 
 #related-posts .panel {
