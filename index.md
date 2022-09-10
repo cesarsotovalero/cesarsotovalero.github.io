@@ -70,7 +70,7 @@ use-site-title: true
 <br>
 <ul class="pager main-pager see-all">
   <li>
-    <a class="text-right" href="{{site.baseurl}}/blog">See all posts </a>
+    <a class="text-right" href="{{site.baseurl}}/blog">View all posts </a>
   </li>
 </ul>
 

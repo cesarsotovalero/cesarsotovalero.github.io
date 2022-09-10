@@ -18,9 +18,13 @@ author: cesarsotovalero
 published: false
 ---
 
+> Ideas are cheap, show me the paper.
+
 I have been collecting random software engineering research ideas from friends and colleagues for more than a decade. 
 These are the questions I’ve been asked since I started taking notes ten years ago. 
 I apologize for not keeping track of who wanted to know, but if you’re working on any of these, please get in touch and I’ll try to track them down.
+
+The questions are not in any specific order and they cover a wide range of topics.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/whitman.png alt:"TODO" %}

@@ -627,7 +627,7 @@ jpegtopnm plate.jpeg |
 > pnmtojpeg >rplate.jpeg # Write the result in JPEG format
 {% endhighlight %}
 
-# sound
+## Sound
 
 {% highlight bash linenos %}
 play -q sox-orig.wav
@@ -655,7 +655,6 @@ play -q sox-persephone.mp3
 
 
 # Good practices
-
 
 Output error
 
