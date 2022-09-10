@@ -2763,6 +2763,7 @@ a.btn {
 
 .panel-deck {
   margin-right: -15px;
+  padding-right: 15px;
 }
 
 #related-posts {
