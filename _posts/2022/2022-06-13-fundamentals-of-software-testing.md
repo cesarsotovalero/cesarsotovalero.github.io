@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fundamental Concepts of Unit Testing
+title: A Prime on Unit Testing
 subtitle: With examples in Java
 tags: tools
 description: TODO
@@ -18,11 +18,14 @@ author: cesarsotovalero
 published: false
 ---
 
-Software testinggets a bad rap for being difficult, time-consuming, redundant, and above all - boring. But in fact, it is a proven way to ensure that your software will work flawlessly andcan meet release schedules.
-In a two-course series, we will teach you automated software testing in an inspiring way. We will show you that testing is not as daunting a task as you might think, and how automated testing will make you a better developer who programs excellent software.
-This first course will teach you specification-based testing, boundary testing, test adequacy and code coverage, unit vs system testing, mock objects, design for testability, and test code quality.
-This is a highly practical course. Throughout the lessons, you will test various programs by means of different techniques. By the end, you will be able to choose the best testing strategies for different projects.
-If you are or want to become a five-star software developer, QA engineer, or software tester, join this course. Testing will never be the same again!
+Software testing is perceived as a challenging, time-consuming, redundant, and ~~sometimes~~ tedious activity.
+However, testing is necessary to ensure that the applications will work flawlessly and can meet release schedules.
+Good developers know how to perform automated testing.
+This involves writing the tests and designing them, choosing the type of test, examining adequacy and measuring code coverage, designing for testability, test code quality, and so on.
+In this post, I cover these concepts using different examples written in Java.
+By the end, you will be able to understand the fundamental concepts of software testing and some of the best testing strategies for different scenarios.
+If you are (or want) to become a 5 ⭐️ software developer, QA engineer, or software tester, keep reading.
+Testing will never be the same again!
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/walking_alone.jpg alt:"TODO" %}
@@ -32,6 +35,12 @@ If you are or want to become a five-star software developer, QA engineer, or sof
 </figure>
 
 # Basic Concepts
+
+For testing we need only 3 things:
+
+1. **Inputs:** Set up the system and test data for the action.
+2. **Action:** Trigger a part of the software.
+3. **Oracle:** Expects an action from the input.
 
 ## Oracle
 
