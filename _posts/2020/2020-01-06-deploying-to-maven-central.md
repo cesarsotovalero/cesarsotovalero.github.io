@@ -61,7 +61,7 @@ After the approval of the ticket, you need to add additional information to the 
 <url>http://www.example.com/example-application</url>
 {% endhighlight %}
 
--. Add licence information:
+- Add licence information:
 
 {% highlight xml linenos %}
 <licenses>

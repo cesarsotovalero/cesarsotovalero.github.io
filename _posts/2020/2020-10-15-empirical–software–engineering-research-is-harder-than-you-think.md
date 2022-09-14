@@ -32,7 +32,7 @@ Let me tell you why.
 
 
 Empirical SE is just one of the many players within the SE research arenas.
-In a nutshell, _empirical software engineering research consists in applying the [scientific method](https://en.wikipedia.org/wiki/Scientific_method) through so-called empirical studies with the objective of obtaining useful knowledge for researchers and practitioners in the software engineering field._
+In a nutshell, **empirical software engineering research consists in applying the [scientific method](https://en.wikipedia.org/wiki/Scientific_method) through so-called empirical studies with the objective of obtaining useful knowledge for researchers and practitioners in the software engineering field.**
  
 Today, journals like [Empirical Software Engineering](https://www.springer.com/journal/10664) (EMSE) or conferences such as [Mining Software Repositories](http://www.msrconf.org) (MSR) are ranking very high. They are within the top ten venues in the category of software systems, according to the number of citations in [Google Scholar](https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_softwaresystems). One of the reasons for this success is the uncertainty inherent to the practice of software development, which can only be studied empirically.
  

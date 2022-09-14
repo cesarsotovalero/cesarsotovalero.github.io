@@ -17,9 +17,9 @@ date: 2020/11/2
 Research is about solving relevant problems for the best of humanity. 
 However, the relevance of certain problems is a highly subjective matter. 
 Is it relevant to send a human being to Mars? Maybe it is, or maybe not. 
-One thing is for sure: research is _expensive_. 
+One thing is for sure: **research is expensive**. 
 As far as I know, it is sustained mostly by funds and grants. 
-I believe that the best way to boost funding is by increasing _interest_ in research investment. 
+I believe that the best way to boost funding is by increasing interest in research investment. 
 Therefore, researchers should dedicate a significant portion of their efforts to strengthen the bonds between their work and the local industry. 
 Let's discuss how. 
 
