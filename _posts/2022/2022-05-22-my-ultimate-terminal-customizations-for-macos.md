@@ -441,3 +441,6 @@ I close my laptop, and I'm just happy 😄.
 [^1]: I recommend the course “[Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering),” by [Prof. Diomidis Spinellis](https://en.wikipedia.org/wiki/Diomidis_Spinellis).
 
 [^2]: Just kidding.
+
+
+[//]: # (Also install: chafa, fzf-zsh-plugin)

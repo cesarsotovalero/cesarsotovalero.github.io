@@ -515,8 +515,6 @@ a[href$=".pptx"] {
   /*left: 50%;*/
   width: 50px;
   /*margin-top: 1.75rem;*/
-
-
 }
 
 
@@ -1630,10 +1628,16 @@ pre {
   font-family: "jetbrains_monoregular", sans-serif;
   border: none;
   margin-bottom: 26px;
+  font-weight: 400;
 }
 
 pre code {
   white-space: pre;
+}
+
+pre .lineno {
+  font-family: operator_mono, jetbrains_monoregular;
+  font-weight: 200;
 }
 
 code {
@@ -1643,12 +1647,13 @@ code {
   color: var(--main-text-color);
   border-radius: 1px;
   text-decoration: none;
+  font-weight: 400;
 !important;
 }
 
 @media screen and (max-width: 450px) {
   pre {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   code {
