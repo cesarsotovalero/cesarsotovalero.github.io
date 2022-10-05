@@ -18,7 +18,7 @@
   img: DepAnalyzer_logo.svg
   url: https://github.com/castor-software/dep-analyzer
   stars: castor-software/dep-analyzer?style=social
-- title: TS-Classification
+- title: TSC
   description: A package for performing time series classification in Weka.
   img: TS-Classification_logo.svg
   url: https://github.com/cesarsotovalero/time-series-classification
