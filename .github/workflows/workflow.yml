@@ -29,7 +29,7 @@ jobs:
           GISCUS_GISCUS_DATA_CATEGORY_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
 
       - name: Install Minify deb package on Ubuntu
-        run: sudo apt-get update && apt-get install --no-install-recommends --yes minify
+        run: sudo apt-get update && sudo apt-get install --no-install-recommends --yes minify
 
       # https://github.com/tdewolff/homebrew-tap/
 #      - name: Install Minify using Homebrew
