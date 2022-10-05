@@ -39,7 +39,6 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   **The Multibillion Dollar Software Supply Chain of Ethereum**. 
   César Soto-Valero, Martin Monperrus, and Benoit Baudry. 
   _IEEE Computer_.
-  [:earth_americas: Link](https://arxiv.org/abs/2202.07029)
   <a href="https://doi.org/10.1109/MC.2022.3175542"><i class="icon i-doi"></i> 10.1109/MC.2022.3175542</a>
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 

@@ -16,6 +16,10 @@ The following is a non-exhaustive list of my technical presentations.
 
 # 2022
 
+- [The Multibillion Dollar Software Supply Chain of Ethereum](https://docs.google.com/presentation/d/16yingW3HUNj6XmAfFFc_qz1bSI-ZRfV0/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true). Presented at _1st Workshop on the Software Supply Chain_, KTH, Sweden, October 2022.
+
+- [Automatic Software Debloating](../../files/posters/poster-scs-48x36.pdf). Poster presented during [_2nd Edition of CASTOR Software Days_](https://www.kth.se/castorsoftwaredays/photos), KTH, Sweden, September 2022.
+
 - [Automatic Software Debloating](../../files/posters/poster-scs-48x36.pdf). Poster presented during _EECS Summer event_, KTH, Sweden, June 2022.
 
 - [Java is Going to the Moon: Native Images with GraalVM](https://docs.google.com/presentation/d/1JDVerE77ZWLqwtWP430QXF1KTd4RhKoD/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true){:target="_blank"}. Presented at KTH, May 2022.

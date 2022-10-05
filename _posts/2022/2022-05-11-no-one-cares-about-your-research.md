@@ -21,8 +21,7 @@ published: true
 
 That's the truth.
 No one cares about what you're doing in your PhD, no one, **no one!**[^1]
-But don't be sad,
-This is actually a very comfortable truth.
+But don't be sad, because this is actually a very comfortable truth.
 I only came to this realization after a while.
 Once you get it, then you will start looking at your PhD journey with different eyes.
 I believe that acquiring self-awareness of this fact is crucial.

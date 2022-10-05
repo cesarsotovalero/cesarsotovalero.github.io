@@ -62,6 +62,12 @@ If you decide to stay in academia, the natural goal is to become a tenured profe
 Achieving this goal is not easy, to say the least.
 It will take about ten years to get (approximately 4 to 6 years working as a PostDoc, plus approximately 5 to 6 years working as an Assistant Professor).
 
+> “Recruitment and promotion to these academic ranks are based upon scientific and pedagogical qualifications.
+> Applications are often evaluated by external reviewers, but it is up to the university to define the recruit ment process and the level of qualifications required.
+> Professors and associate professors can either be recruited externally, or internally by promotion according to merit.
+> The latter is the more common way of becoming a full professor in Swedish academia.
+> Some universities are more restrictive in promoting to professor and others may implement moratoria in certain disciplines if they already have a sufficient number of professors.” - <cite>[A Beginner's Guide to Swedish Academia](https://www.sverigesungaakademi.se/beginnersguide)</cite>
+
 The success or failure of the academic career path depends on many things.
 Some of them are under your control, e.g. your research performance, but other depends on luck, networking, and the perceived impact of your academic contributions.
 For example, if you are into Theoretical Computer Science, then getting a large number of good publications during your time as a researcher is typically very difficult.
@@ -171,8 +177,8 @@ If you still want to go through this professional adventure, you know what to ex
 
 # References
 
-- [To stay in academia or not, that is the question](https://gradadmissions.mit.edu/blog/stay-academia-or-not-question)
-
+- [:earth_americas: To stay in academia or not, that is the question](https://gradadmissions.mit.edu/blog/stay-academia-or-not-question)
+- [Book: A Beginner's Guide to Swedish Academia](https://www.sverigesungaakademi.se/download/18.1f0218fc182e9266317610b/1663233693235/YAS_BeginnersGuidetoSwedishAcademia.pdf)
 
 # Footnotes
 

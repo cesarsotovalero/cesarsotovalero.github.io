@@ -86,4 +86,9 @@ For example, from “quicksort in C” to “mergesort in Java.”
 - <i class="fab fa-github"></i> [nateraw/stable-diffusion-videos](https://github.com/nateraw/stable-diffusion-videos)
 
 
+
+https://inpainter.vercel.app/
+with
+https://replicate.com/
+
 # Footnotes
