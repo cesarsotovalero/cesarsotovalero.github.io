@@ -1,15 +1,585 @@
-<!doctype html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-US" itemscope itemtype="http://schema.org/WebSite"><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>Use Custom LaTeX Macros to Boost Your Writing Productivity</title><meta name="keywords" content="latex,macros,productivity,tutorials"><link rel="alternate" type="application/rss+xml" title="César Soto Valero  César - Ph.D. Student" href="/feed.xml"><script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linux-biolinum" type="text/css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-107061705-1")</script><script type="text/javascript">(function(e,t,n,s,o,i,a){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},i=t.createElement(s),i.async=1,i.src="https://www.clarity.ms/tag/"+o,a=t.getElementsByTagName(s)[0],a.parentNode.insertBefore(i,a)})(window,document,"clarity","script","bs3gcidnol")</script><script src="../js/anchor.min.js"></script>
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/bootstrap-social.css"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/css/academicons.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name="generator" content="Jekyll v3.9.0"><meta property="og:title" content="Use Custom LaTeX Macros to Boost Your Writing Productivity"><meta name="author" content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name="description" content="LaTeX macros allow increasing productivity by avoiding typing repetitive LaTeX commands. In this tutorial, I show you how to use them."><meta property="og:description" content="LaTeX macros allow increasing productivity by avoiding typing repetitive LaTeX commands. In this tutorial, I show you how to use them."><link rel="canonical" href="https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html"><meta property="og:url" content="https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2021/snail_cover.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2021-05-28T00:00:00-07:00"><meta name="twitter:card" content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2021/snail_cover.jpg"><meta property="twitter:title" content="Use Custom LaTeX Macros to Boost Your Writing Productivity"><meta name="twitter:site" content="@cesarsotovalero"><meta name="twitter:creator" content="@César Soto Valero"><script type="application/ld+json">{"@type":"BlogPosting","description":"LaTeX macros allow increasing productivity by avoiding typing repetitive LaTeX commands. In this tutorial, I show you how to use them.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon.png"},"name":"César Soto Valero"},"headline":"Use Custom LaTeX Macros to Boost Your Writing Productivity","dateModified":"2022-09-14T03:39:12-07:00","datePublished":"2021-05-28T00:00:00-07:00","url":"https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html","image":"https://www.cesarsotovalero.net/img/posts/2021/snail_cover.jpg","author":{"@type":"Person","name":"César Soto Valero"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html"},"@context":"https://schema.org"}</script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent"><ul class="navigation list-inline text-center footer-links" id="black-icons"><li class="nav-item navbar-custom" title="Home"><a id="navbar-brand" href="https://www.cesarsotovalero.net">Home</a></li><li class="nav-item navbar-custom"><a href="/blog">Blog</a></li><li class="nav-item navbar-custom"><a href="/software">Software</a></li><li class="nav-item navbar-custom"><a href="/service">Service</a></li><li class="nav-item navbar-custom"><a href="/publications">Papers</a></li><li class="nav-item navbar-custom"><a href="/awards">Awards</a></li><li class="nav-item navbar-custom"><a href="/courses">Courses</a></li><li class="nav-item navbar-custom"><a href="/talks">Talks</a></li><li class="nav-item navbar-custom"><a href="/about-me">About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href="#" id="theme-toggle" onclick=modeSwitcher() style="cursor:pointer"></a></li></ul></div></nav><header class="header-section"><div class="intro-header no-img"><div class="container"><div class="row"><div class="header-image" style="padding-left:15px"><div class="row justify-content-center" style="margin-right:0;margin-left:0"></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1 class="no-anchor">Use Custom LaTeX Macros to Boost Your Writing Productivity</h1><h2 class="post-subheading">Forget about these annoying numerical glitches in your LaTeX document</h2><div class="container flex-container"><a href="https://www.cesarsotovalero.net/about-me"><img class="avatar-img-small" src="/img/pages/cesar/avatar-icon.png" alt="César Soto Valero" id="meta-img"></a><div class="flex-item"><span class="post-meta">Posted on May 28, 2021</span><div><span class="post-meta" title="Estimated read time"><svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg>&nbsp;8 mins read</span>
-<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>latex</span></div></div></div><div class="flex-item"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="margin-left:0"><section id="share-section"><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init("Buy Me a Ko-fi","#7aa4d1","G2G3CRPPI"),kofiwidget2.draw()</script></section></div></div></div><div class="cesarcarbon"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"><ol id="toc" class="section-nav"><li class="toc-entry toc-h1"><a href="#creating-a-simple-user-custom-command">Creating a Simple User Custom Command</a></li><li class="toc-entry toc-h1"><a href="#inserting-author-notes">Inserting Author Notes</a></li><li class="toc-entry toc-h1"><a href="#formatting-numbers">Formatting Numbers</a></li><li class="toc-entry toc-h1"><a href="#computing-numbers">Computing Numbers</a></li><li class="toc-entry toc-h1"><a href="#handling-percentages">Handling Percentages</a></li><li class="toc-entry toc-h1"><a href="#embedding-small-barcharts">Embedding Small Barcharts</a></li><li class="toc-entry toc-h1"><a href="#executing-python-scripts-in-a-latex-document">Executing Python Scripts in a LaTeX Document</a></li><li class="toc-entry toc-h1"><a href="#conclusion">Conclusion</a></li></ol></div></div></div></div></header><div class="container"><div class="row"><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role="main" class="blog-post"><p>If you ever use <a href="https://en.wikipedia.org/wiki/LaTeX">LaTeX</a> to write your research papers or technical reports, then you should know how useful and powerful this tool is.
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US" itemscope="" itemtype="http://schema.org/WebSite">
+
+<head>
+
+<!-- Google AdSense -->
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5117167560601752",
+    enable_page_level_ads: true
+  });
+</script>-->
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Use Custom LaTeX Macros to Boost Your Writing Productivity</title>
+
+  
+  <meta name="keywords" content="latex, macros, productivity, tutorials">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="César Soto Valero  César - Ph.D. Student" href="/feed.xml" />
+
+   <!--  <link href="/css/fontawesome/css/all.css" rel="stylesheet">-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linux-biolinum" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+
+  <!-- (gtag.js) of Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-107061705-1');
+  </script>
+
+  <!-- Microsoft Clarity https://clarity.microsoft.com/ -->
+  <script type="text/javascript">
+     (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+     })(window, document, "clarity", "script", "bs3gcidnol");
+  </script>
+
+  <!-- Generate anchors to link to every heading in a Jekyll blog post -->
+  <script src="../js/anchor.min.js"></script>
+
+  
+
+    
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.12.0/css/all.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/academicons.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Use Custom LaTeX Macros to Boost Your Writing Productivity" />
+<meta name="author" content="César Soto Valero" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="LaTeX macros allow increasing productivity by avoiding typing repetitive LaTeX commands. In this tutorial, I show you how to use them." />
+<meta property="og:description" content="LaTeX macros allow increasing productivity by avoiding typing repetitive LaTeX commands. In this tutorial, I show you how to use them." />
+<link rel="canonical" href="https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html" />
+<meta property="og:url" content="https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html" />
+<meta property="og:site_name" content="César Soto Valero" />
+<meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2021/snail_cover.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-28T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2021/snail_cover.jpg" />
+<meta property="twitter:title" content="Use Custom LaTeX Macros to Boost Your Writing Productivity" />
+<meta name="twitter:site" content="@cesarsotovalero" />
+<meta name="twitter:creator" content="@César Soto Valero" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","description":"LaTeX macros allow increasing productivity by avoiding typing repetitive LaTeX commands. In this tutorial, I show you how to use them.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon.png"},"name":"César Soto Valero"},"headline":"Use Custom LaTeX Macros to Boost Your Writing Productivity","dateModified":"2022-10-10T01:54:31-07:00","datePublished":"2021-05-28T00:00:00-07:00","url":"https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html","image":"https://www.cesarsotovalero.net/img/posts/2021/snail_cover.jpg","author":{"@type":"Person","name":"César Soto Valero"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<nav class="navbar-fixed-top navbar-custom">-->
+<!--   <div class="container-fluid">-->
+<!--      <ul  class="navigation list-inline text-center footer-links" id="black-icons">
+   <li class="nav-item navbar-custom" title="Home">
+      <a id="navbar-brand" href="https://www.cesarsotovalero.net">Home</a>
+   </li>
+
+   
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/software">Software</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/service">Service</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/publications">Papers</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/awards">Awards</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/courses">Courses</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/talks">Talks</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/about-me">About</a>
+
+   
+   </li>
+
+
+   <li class="nav-item navbar-custom" title="Toggle Night Mode">
+      <a href="#" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
+   </li>
+</ul>
+
+
+
+-->
+<!--   </div>-->
+<!--</nav>-->
+
+
+<nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light">
+   <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+   </button>
+
+   <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+      <ul  class="navigation list-inline text-center footer-links" id="black-icons">
+   <li class="nav-item navbar-custom" title="Home">
+      <a id="navbar-brand" href="https://www.cesarsotovalero.net">Home</a>
+   </li>
+
+   
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/software">Software</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/service">Service</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/publications">Papers</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/awards">Awards</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/courses">Courses</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/talks">Talks</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/about-me">About</a>
+
+   
+   </li>
+
+
+   <li class="nav-item navbar-custom" title="Toggle Night Mode">
+      <a href="#" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
+   </li>
+</ul>
+
+
+
+
+   </div>
+</nav>
+
+
+
+
+
+<header class="header-section">
+   
+
+
+
+   <div class="intro-header no-img">
+      <div class="container">
+         <div class="row">
+            <div class="header-image" style="padding-left: 15px">
+
+               <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
+                     <!-- Avatar image -->
+                     
+               </div>
+            </div>
+
+
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+
+               <div class="post-heading">
+
+                  <h1 class="no-anchor">Use Custom LaTeX Macros to Boost Your Writing Productivity</h1>
+                  
+                  
+                  <h2 class="post-subheading">Forget about these annoying numerical glitches in your LaTeX document</h2>
+                  
+                  
+
+                  
+
+
+
+                  <div class="container flex-container">
+
+                     <!-- Look the author details up from the site config. -->
+                     
+                     <!-- Output author details if some exist. -->
+                     
+                     <!-- Personal Info. -->
+                     <a href="https://www.cesarsotovalero.net/about-me">
+                        <img class="avatar-img-small" src="/img/pages/cesar/avatar-icon.png" alt="César Soto Valero" id="meta-img">
+                     </a>
+                     
+
+                     <div class="flex-item">
+                        <!-- Date posted -->
+                        <span class="post-meta">Posted on May 28, 2021</span>
+                        <div>
+                           <!-- Read time -->
+                           <span class="post-meta" title="Estimated read time">
+                          <svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align: middle;" fill="none" stroke="currentcolor" stroke-linecap="round"
+                               stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8 L16 16 20 20"/></svg>
+                          
+                          
+                            &nbsp;8 mins read
+                          
+                        </span>
+                           <!-- Tag -->
+                           
+                           <span class="blog-tags post-meta">
+                              <svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img"
+                                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5">
+                                 <path fill="none" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a47.998 47.998 0 0 0 14.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM259.886 463.996L48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z" class=""></path></svg>
+                           
+                                 latex
+                              
+                        </span>
+                        </div>
+                     </div>
+
+
+                     
+                     
+
+                  </div>
+
+
+                  <!-- Social share icons -->
+                  <div class="flex-item">
+                     <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="margin-left: 0px;">
+                           
+                              <!--- Buy me a Ko-fi -->
+<section id="share-section">
+   <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Ko-fi','#7aa4d1', 'G2G3CRPPI');kofiwidget2.draw();</script>
+</section>
+                           
+                        </div>
+                     </div>
+                  </div>
+
+                  
+                  <!-- Carbon ads -->
+                  <div class="cesarcarbon">
+                     <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
+                  </div>
+                  
+
+
+               </div>
+
+            </div>
+
+            <div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2">
+               <ol id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#creating-a-simple-user-custom-command">Creating a Simple User Custom Command</a></li>
+<li class="toc-entry toc-h1"><a href="#inserting-author-notes">Inserting Author Notes</a></li>
+<li class="toc-entry toc-h1"><a href="#formatting-numbers">Formatting Numbers</a></li>
+<li class="toc-entry toc-h1"><a href="#computing-numbers">Computing Numbers</a></li>
+<li class="toc-entry toc-h1"><a href="#handling-percentages">Handling Percentages</a></li>
+<li class="toc-entry toc-h1"><a href="#embedding-small-barcharts">Embedding Small Barcharts</a></li>
+<li class="toc-entry toc-h1"><a href="#executing-python-scripts-in-a-latex-document">Executing Python Scripts in a LaTeX Document</a></li>
+<li class="toc-entry toc-h1"><a href="#conclusion">Conclusion</a></li>
+</ol>
+            </div>
+
+         </div>
+
+      </div>
+
+   </div>
+</header>
+
+
+
+<div class="container">
+   <div class="row">
+      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
+         <article role="main" class="blog-post">
+            <p>If you ever use <a href="https://en.wikipedia.org/wiki/LaTeX">LaTeX</a> to write your research papers or technical reports, then you should know how useful and powerful this tool is. 
 Let me just mention three well-known benefits of using LaTeX: 1) beautiful typeset output (especially when dealing with mathematical notations); 2) consistent handling of references and bibliography (thanks to <a href="http://www.bibtex.org/">BibTeX</a>; 3) separation of content and style, meaning that all you need to write is plain text (also true for tables and figures, thanks to <a href="https://en.wikipedia.org/wiki/PGF/TikZ">TikZ</a>).
-LaTeX has a powerful markup language for document creation.
+LaTeX has a powerful markup language for document creation. 
 One of the best and often misleading advantages of using this language is that it allows the creation of <a href="https://en.wikibooks.org/wiki/LaTeX/Macros">custom macros</a>.
-These are user-defined commands that allows avoiding typing repetitive LaTeX commands (e.g., formatting strings or numbers) and even perform live computations (e.g., calculating numeric expression).
-Let me show you how it works!</p><figure class="jb_picture"><img width="100%" src="/assets/resized/snail-640x256.jpg" alt="A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)" data-srcset="/assets/resized/snail-640x256.jpg 640w,/assets/resized/snail-768x307.jpg 768w,/assets/resized/snail-1024x409.jpg 1024w,/assets/resized/snail-1366x546.jpg 1366w,/assets/resized/snail-1600x640.jpg 1600w,/assets/resized/snail-1920x768.jpg 1920w," class="blur-up lazyautosizes lazyload"><figcaption class="stroke">&#169; A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros, obviously)</figcaption></figure><h1 id="creating-a-simple-user-custom-command">Creating a Simple User Custom Command</h1><p>To add a custom command in your document, use <code class="language-plaintext highlighter-rouge">\newcommand{\name}[num]{definition}</code>.
-The following commands are examples that allow simplifying the use of some common English abbreviations:</p><figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+These are user-defined commands that allows avoiding typing repetitive LaTeX commands (e.g., formatting strings or numbers) and even perform live computations (e.g., calculating numeric expression). 
+Let me show you how it works!</p>
+
+<figure class="jb_picture">
+  
+
+
+
+<img width="100%" src="/assets/resized/snail-640x256.jpg" alt="A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros)" data-srcset="/assets/resized/snail-640x256.jpg 640w,/assets/resized/snail-768x307.jpg 768w,/assets/resized/snail-1024x409.jpg 1024w,/assets/resized/snail-1366x546.jpg 1366w,/assets/resized/snail-1600x640.jpg 1600w,/assets/resized/snail-1920x768.jpg 1920w," class="blur-up lazyautosizes lazyload" />
+
+  <figcaption class="stroke">
+    &#169; A slow snail crawling at Djurgården in Stockholm (he doesn't use LaTeX macros, obviously)
+    </figcaption>
+</figure>
+
+<h1 id="creating-a-simple-user-custom-command">Creating a Simple User Custom Command</h1>
+
+<p>To add a custom command in your document, use <code class="language-plaintext highlighter-rouge">\newcommand{\name}[num]{definition}</code>. 
+The following commands are examples that allow simplifying the use of some common English abbreviations:</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -31,8 +601,16 @@ The following commands are examples that allow simplifying the use of some commo
 <span class="k">\newcommand</span><span class="p">{</span><span class="k">\eg</span><span class="p">}{</span>e.g.<span class="k">\@\xspace</span><span class="p">}</span>
 <span class="k">\newcommand</span><span class="p">{</span><span class="k">\etal</span><span class="p">}{</span>et al.<span class="k">\@\xspace</span><span class="p">}</span>
 <span class="k">\newcommand</span><span class="p">{</span><span class="k">\wrt</span><span class="p">}{</span>w.r.t.<span class="k">\@\xspace</span><span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>Once added in your document, you just need to type <code class="language-plaintext highlighter-rouge">\ie</code> and the text <code class="language-plaintext highlighter-rouge">i.e.</code> will be printed in your document.
-Note that you need to use <code class="language-plaintext highlighter-rouge">\@\xspace</code> to indicate that a white space follows the displayed text.</p><h1 id="inserting-author-notes">Inserting Author Notes</h1><p>I often find very useful defining the <code class="language-plaintext highlighter-rouge">\cesar</code> and <code class="language-plaintext highlighter-rouge">\todo</code> commands in all my documents to create quick author notes and remarks in my documents. The following code defines these commands, which are very useful when inserting notes (e.g., <code class="language-plaintext highlighter-rouge">\cesar{refine this sentence}</code>):</p><figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Once added in your document, you just need to type <code class="language-plaintext highlighter-rouge">\ie</code> and the text <code class="language-plaintext highlighter-rouge">i.e.</code> will be printed in your document.
+Note that you need to use <code class="language-plaintext highlighter-rouge">\@\xspace</code> to indicate that a white space follows the displayed text.</p>
+
+<h1 id="inserting-author-notes">Inserting Author Notes</h1>
+
+<p>I often find very useful defining the <code class="language-plaintext highlighter-rouge">\cesar</code> and <code class="language-plaintext highlighter-rouge">\todo</code> commands in all my documents to create quick author notes and remarks in my documents.  The following code defines these commands, which are very useful when inserting notes (e.g., <code class="language-plaintext highlighter-rouge">\cesar{refine this sentence}</code>):</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -106,8 +684,16 @@ Note that you need to use <code class="language-plaintext highlighter-rouge">\@\
   <span class="k">\noindent\textbf</span><span class="p">{</span><span class="k">\badge</span><span class="p">{</span>TODO<span class="p">}}</span> <span class="p">{</span><span class="k">\color</span><span class="p">{</span>red<span class="p">}</span>#1<span class="p">}</span>
   <span class="k">\GenericWarning</span><span class="p">{}{</span>LaTeX Warning: TODO: #1<span class="p">}</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>For example, the <code class="language-plaintext highlighter-rouge">\cesar{An author note}</code> produces <img src="../img/posts/2021/authornote.png" height="18" border="0" alt="Comand">, whereas <code class="language-plaintext highlighter-rouge">\todo{A todo note}</code> produces <img src="../img/posts/2021/todonote.png" height="18" border="0" alt="Comand">.</p><h1 id="formatting-numbers">Formatting Numbers</h1><p>You can use the <code class="language-plaintext highlighter-rouge">numprint</code> and <code class="language-plaintext highlighter-rouge">fp</code> packages to create your own commands to format numeric values.
-The following example creates a <code class="language-plaintext highlighter-rouge">\np</code> command to print numeric values in math mode, nicely formatted, and rounded by two decimal digits.</p><figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>For example, the <code class="language-plaintext highlighter-rouge">\cesar{An author note}</code> produces <img src="../img/posts/2021/authornote.png" height="18" border="0" alt="Comand" />, whereas <code class="language-plaintext highlighter-rouge">\todo{A todo note}</code> produces <img src="../img/posts/2021/todonote.png" height="18" border="0" alt="Comand" />.</p>
+
+<h1 id="formatting-numbers">Formatting Numbers</h1>
+
+<p>You can use the <code class="language-plaintext highlighter-rouge">numprint</code> and <code class="language-plaintext highlighter-rouge">fp</code> packages to create your own commands to format numeric values. 
+The following example creates a <code class="language-plaintext highlighter-rouge">\np</code> command to print numeric values in math mode, nicely formatted, and rounded by two decimal digits.</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -139,17 +725,33 @@ The following example creates a <code class="language-plaintext highlighter-roug
     <span class="k">\nprounddigits</span><span class="p">{</span>2<span class="p">}$</span><span class="nv">\numprint</span><span class="o">[</span><span class="nb">#</span><span class="m">1</span><span class="o">]</span><span class="p">{</span><span class="nb">#</span><span class="m">2</span><span class="p">}$</span>
   <span class="k">\fi\xspace</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>Now, for example, you can use <code class="language-plaintext highlighter-rouge">\np{22.324}</code> to print <code class="language-plaintext highlighter-rouge">22.32</code>, or <code class="language-plaintext highlighter-rouge">\np{22.324}{\%}</code> to print <code class="language-plaintext highlighter-rouge">22.32%</code>.</p><h1 id="computing-numbers">Computing Numbers</h1><p>You can create numeric variables using <code class="language-plaintext highlighter-rouge">\def</code>.
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Now, for example, you can use <code class="language-plaintext highlighter-rouge">\np{22.324}</code> to print <code class="language-plaintext highlighter-rouge">22.32</code>, or <code class="language-plaintext highlighter-rouge">\np{22.324}{\%}</code> to print <code class="language-plaintext highlighter-rouge">22.32%</code>.</p>
+
+<h1 id="computing-numbers">Computing Numbers</h1>
+
+<p>You can create numeric variables using <code class="language-plaintext highlighter-rouge">\def</code>.
 This is very handy since you can keep all the values in your document in the same place.
 Furthermore, you can use <code class="language-plaintext highlighter-rouge">\FPeval</code> to compute values based on these variables.
 With <code class="language-plaintext highlighter-rouge">\FPeval</code>, your document will lively update every time you update some value.
-The following is a basic example:</p><figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+The following is a basic example:</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="code"><pre><span class="k">\def\nbX</span><span class="p">{</span>42<span class="p">}</span>
 <span class="k">\def\nbY</span><span class="p">{</span>42<span class="p">}</span>
 <span class="k">\FPeval</span><span class="p">{</span>nbSum<span class="p">}{</span>round(<span class="k">\nbX</span> + <span class="k">\nbY</span>, 0)<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>In this example, using <code class="language-plaintext highlighter-rouge">\nbSum</code> prints the value <code class="language-plaintext highlighter-rouge">84</code> in the document.</p><h1 id="handling-percentages">Handling Percentages</h1><p>If you use percentages in your document, you can calculate a percentage directly based on two variables: a number and the total. The following <code class="language-plaintext highlighter-rouge">\ShowPercentage</code> command calculates rates based on two variables.</p><figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>In this example, using <code class="language-plaintext highlighter-rouge">\nbSum</code> prints the value <code class="language-plaintext highlighter-rouge">84</code> in the document.</p>
+
+<h1 id="handling-percentages">Handling Percentages</h1>
+
+<p>If you use percentages in your document, you can calculate a percentage directly based on two variables: a number and the total. The following <code class="language-plaintext highlighter-rouge">\ShowPercentage</code> command calculates rates based on two variables.</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -193,8 +795,16 @@ The following is a basic example:</p><figure class="highlight"><pre><code class=
   <span class="k">\fi</span>
   <span class="k">\xspace</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>For example, <code class="language-plaintext highlighter-rouge">\ShowPercentage{1221}{20023}</code> prints <code class="language-plaintext highlighter-rouge">6.10%</code>.
-Note that a percentage rounded to 0 will be presented as <code class="language-plaintext highlighter-rouge">&lt;1%</code></p><h1 id="embedding-small-barcharts">Embedding Small Barcharts</h1><p>A nice way to compare percentages in a graphical manner (especially in tables), is by embedding small barchart plots within them. The following <code class="language-plaintext highlighter-rouge">\ChartSmall</code> commands does the trick for you:</p><figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>For example, <code class="language-plaintext highlighter-rouge">\ShowPercentage{1221}{20023}</code> prints <code class="language-plaintext highlighter-rouge">6.10%</code>. 
+Note that a percentage rounded to 0 will be presented as <code class="language-plaintext highlighter-rouge">&lt;1%</code></p>
+
+<h1 id="embedding-small-barcharts">Embedding Small Barcharts</h1>
+
+<p>A nice way to compare percentages in a graphical manner (especially in tables), is by embedding small barchart plots within them. The following <code class="language-plaintext highlighter-rouge">\ChartSmall</code> commands does the trick for you:</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -258,8 +868,21 @@ Note that a percentage rounded to 0 will be presented as <code class="language-p
   <span class="k">\xspace</span>
 <span class="k">\fi\fi\fi</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>Note that you can use this command in three different flavors:</p><ul><li><code class="language-plaintext highlighter-rouge">\ChartSmall[x]{80}{155}</code> produces <img src="../img/posts/2021/smallshart1.png" height="18" border="0" alt="Comand"></li><li><code class="language-plaintext highlighter-rouge">\ChartSmall[q]{80}{155}</code> produces <img src="../img/posts/2021/smallshart2.png" height="20" border="0" alt="Comand"></li><li><code class="language-plaintext highlighter-rouge">\ChartSmall[p]{80}{155}</code> produces <img src="../img/posts/2021/smallshart3.png" height="20" border="0" alt="Comand"></li></ul><h1 id="executing-python-scripts-in-a-latex-document">Executing Python Scripts in a LaTeX Document</h1><p>You can leverage the computational capabilities of the Python programming language to compute values or automatize the creation of a LaTeX document.
-Here is an example, credited to <a href="https://tex.stackexchange.com/questions/598403/can-i-execute-python-code-inside-latex">this answer</a> on StackExchange.</p><figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Note that you can use this command in three different flavors:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">\ChartSmall[x]{80}{155}</code> produces <img src="../img/posts/2021/smallshart1.png" height="18" border="0" alt="Comand" /></li>
+  <li><code class="language-plaintext highlighter-rouge">\ChartSmall[q]{80}{155}</code> produces <img src="../img/posts/2021/smallshart2.png" height="20" border="0" alt="Comand" /></li>
+  <li><code class="language-plaintext highlighter-rouge">\ChartSmall[p]{80}{155}</code> produces <img src="../img/posts/2021/smallshart3.png" height="20" border="0" alt="Comand" /></li>
+</ul>
+
+<h1 id="executing-python-scripts-in-a-latex-document">Executing Python Scripts in a LaTeX Document</h1>
+
+<p>You can leverage the computational capabilities of the Python programming language to compute values or automatize the creation of a LaTeX document.
+Here is an example, credited to <a href="https://tex.stackexchange.com/questions/598403/can-i-execute-python-code-inside-latex">this answer</a> on StackExchange.</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -289,7 +912,11 @@ print("two")
 
 <span class="k">\input</span><span class="p">{</span>|python zz.py<span class="p">}</span>
 <span class="nt">\end{document}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>Here is file <code class="language-plaintext highlighter-rouge">mypy.py</code> called within the LaTeX document:</p><figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Here is file <code class="language-plaintext highlighter-rouge">mypy.py</code> called within the LaTeX document:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -299,25 +926,991 @@ print("two")
 <span class="n">clr</span><span class="o">=</span><span class="p">[</span><span class="s">'red'</span><span class="p">,</span><span class="s">'blue'</span><span class="p">,</span><span class="s">'green'</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">clr</span><span class="p">:</span>
   <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="se">\n\\</span><span class="s">textcolor{"</span> <span class="o">+</span> <span class="n">c</span> <span class="o">+</span> <span class="s">"}{"</span> <span class="o">+</span> <span class="n">c</span> <span class="o">+</span><span class="s">"}</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>The output is as following:</p><p><img src="/img/posts/2021/python_executed_in_latex_document.png" alt="The figure shows a working example of Python code embedded in a LaTeX file in Overleaf." title="Python code executed in a LaTeX document"></p><h1 id="conclusion">Conclusion</h1><p>LaTeX is not only an awesome tool to create beautiful documents.
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>The output is as following:</p>
+
+<p><img src="/img/posts/2021/python_executed_in_latex_document.png" alt="The figure shows a working example of Python code embedded in a LaTeX file in Overleaf." title="Python code executed in a LaTeX document" /></p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>LaTeX is not only an awesome tool to create beautiful documents.
 It also provides packages to format and compute numeric values as variables.
 I’ve used all the custom commands presented in this post to ease the writing process of <a href="https://www.cesarsotovalero.net/publications">my research papers</a>.
-Since then, dealing with numeric values and percentages has never been easier.</p></article><ul class="pager blog-pager"><li class="previous"><a href="/blog/enhance-your-readme-with-asciinema.html" data-toggle="tooltip" data-placement="top" title="Enhance Your Readme With Asciinema">&larr; Previous Post</a></li><li class="next"><a href="/blog/the-fork-join-java-framework.html" data-toggle="tooltip" data-placement="top" title="The Fork/Join Java framework">Next Post &rarr;</a></li></ul><br></div></div></div><script>anchors.options={position:"left"},anchors.add("h1:not(.no-anchor)","h2","h3")</script><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style="padding-right:15px"><div class="flex-container-footer-badges"><section class="share-section"><a href="https://twitter.com/intent/tweet?text=LaTeX+macros+allow+increasing+productivity+by+avoiding+typing+repetitive+LaTeX+commands.+In+this+tutorial%2C+I+show+you+how+to+use+them.+https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id="share-twitter" class="fab fa-twitter" aria-hidden="true"></span>
-<span class="sr-only">Twitter</span></a>
-<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id="share-linkedin" class="fab fa-linkedin-in" aria-hidden="true"></span>
-<span class="sr-only">LinkedIn</span></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden="true"></span>
-<span class="sr-only">Facebook</span></a>
-<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fuse-custom-latex-macros-to-boost-your-writing-productivity.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden="true"></span>
-<span class="sr-only">Reddit</span></a>
-<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fuse-custom-latex-macros-to-boost-your-writing-productivity.html&text=LaTeX+macros+allow+increasing+productivity+by+avoiding+typing+repetitive+LaTeX+commands.+In+this+tutorial%2C+I+show+you+how+to+use+them." class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
-<span class="sr-only">Telegram</span></a>
-<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fuse-custom-latex-macros-to-boost-your-writing-productivity.html&t=Use+Custom+LaTeX+Macros+to+Boost+Your+Writing+Productivity" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
-<span class="sr-only">Hacker News</span></a></section></div><div id="related-posts"><h4 class="gsc-related-posts">Related Posts</h4><div class="panel-deck row"><div class="col-sm-4"><div class="panel"><a href="/blog/on-the-parkinson-law-of-triviality-for-computer-science-researchers.html"><div class="panel-body"><h4 class="title" data-toc-skip>On the Parkinson's Law of Triviality for Computer Science Researchers</h4><div class="date">Posted on May 28, 2021</div></div></a></div></div><div class="col-sm-4"><div class="panel"><a href="/blog/my-ultimate-terminal-customizations-for-macos.html"><div class="panel-body"><h4 class="title" data-toc-skip>My Ultimate Terminal Customizations for macOS</h4><div class="date">Posted on May 28, 2021</div></div></a></div></div><div class="col-sm-4"><div class="panel"><a href="/blog/no-one-cares-about-your-research.html"><div class="panel-body"><h4 class="title" data-toc-skip>No One Cares About Your Research!</h4><div class="date">Posted on May 28, 2021</div></div></a></div></div></div></div><script src="https://giscus.app/client.js" data-repo="cesarsotovalero/cesarsotovalero.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyMzE2NzM0OTI=" data-category="Announcements" data-category-id="DIC_kwDODc8OlM4B-aMB" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="1" data-theme="https://www.cesarsotovalero.net/css/giscus.css" crossorigin="anonymous" async></script></div></div></div><script>window.addEventListener("DOMContentLoaded",()=>{const e=new IntersectionObserver(e=>{e.forEach(e=>{const t=e.target.getAttribute("id");e.intersectionRatio>0?document.querySelector(`#toc li a[href="#${t}"]`).parentElement.classList.add("active"):document.querySelector(`#toc li a[href="#${t}"]`).parentElement.classList.remove("active")})});document.querySelectorAll("h1[id]").forEach(t=>{e.observe(t)}),document.querySelectorAll("h2[id]").forEach(t=>{e.observe(t)})})</script><footer><div class="container beautiful-jekyll-footer"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style="text-align:center"><div id="mailchimp-subscribe-section-footer" class="mailchimp-subscribe-section"><div id="mc_embed_signup-footer"><form action="https://cesarsotovalero.us1.list-manage.com/subscribe/post?u=61bdf9dd615a10fd3c31cf8bc&id=294200bc67" method="post" id="mc-embedded-subscribe-form-footer" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate><div id="mc_embed_signup_scroll-footer"><div class="container"><div class="row"><div class="col-sm-8 col-12"><input type="email" name="EMAIL" class="email" id="mce-EMAIL-footer" placeholder="Email" required></div><div class="col-sm-4 col-12"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-footer" class="button"></div></div></div><div style="position:absolute;left:-5e3px" aria-hidden="true"><input type="text" name="b_61bdf9dd615a10fd3c31cf8bc_294200bc67" tabindex="-1"></div></div></form></div></div><div class="flex-container-footer-badges"><a href="https://github.com/cesarsotovalero"><img src="https://img.shields.io/github/followers/cesarsotovalero?logoColor=black&style=social" alt="Follow me on GitHub"></a>
-<a href="https://twitter.com/cesarsotovalero"><img src="https://img.shields.io/twitter/follow/cesarsotovalero?label=Follow%20&logoColor=black&style=social" alt="Follow me on Twitter"></a>
-<a href="https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg"><img src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black" alt="Subscribe on Youtube"></a></div></div><div class="flex-container-footer-copyright"><p class="copyright text-muted">&copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2022</p></div></div></div></div></footer><script>typeof jQuery=="undefined"&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src="/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/flowtype.js"></script>
-<script src="/js/scroll-to-top.js"></script>
-<script src="/js/lazysizes.min.js"></script>
-<script>(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)})(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-107061705-1","auto"),ga("send","pageview")</script><script src="/js/mode-switcher.js"></script></body></html>
+Since then, dealing with numeric values and percentages has never been easier.</p>
+
+
+
+         </article>
+
+         <!--      <span class="post-categories">[-->
+         <!--					  -->
+         <!--						-->
+         <!--						<img src="../img/tag-solid.svg" style="width:1em" alt="tag">-->
+         <!--						<a href="/tag/latex"><code class="highligher-rouge"><nobr>latex</nobr></code></a>-->
+         <!--					  -->
+         <!--					]</span>-->
+
+         <ul class="pager blog-pager">
+            
+            <li class="previous">
+               <a href="/blog/enhance-your-readme-with-asciinema.html" data-toggle="tooltip" data-placement="top" title="Enhance Your Readme With Asciinema">&larr; Previous Post</a>
+            </li>
+            
+            
+            <li class="next">
+               <a href="/blog/the-fork-join-java-framework.html" data-toggle="tooltip" data-placement="top" title="The Fork/Join Java framework">Next Post &rarr;</a>
+            </li>
+            
+         </ul>
+         <br>
+      </div>
+   </div>
+</div>
+
+<!-- https://www.bryanbraun.com/anchorjs/ -->
+<script>
+   anchors.options = {
+      position: 'left'
+   };
+   anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
+</script>
+
+
+<!-- Giscus comments -->
+
+<div class="container">
+   <div class="row">
+      <!--      <div class="col-lg-12 col-md-12 col-sm-12">-->
+      <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style="padding-right: 15px;">
+         <div class="flex-container-footer-badges">
+            
+            
+<section class="share-section">
+   <!--     <span class="post-share-meta">Share this post on:</span>-->
+
+   <!--- Share on Twitter -->
+   <a href="https://twitter.com/intent/tweet?text=LaTeX+macros+allow+increasing+productivity+by+avoiding+typing+repetitive+LaTeX+commands.+In+this+tutorial%2C+I+show+you+how+to+use+them.+https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html"
+      class="btn btn-my-icon btn-twitter" title="Share on Twitter">
+      <span id="share-twitter" class="fab fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+   </a>
+
+   <!--- Share on LinkedIn -->
+   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html"
+      class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn">
+      <span id="share-linkedin" class="fab fa-linkedin-in" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+
+   <!--- Share on Facebook -->
+   <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html"
+      class="btn btn-my-icon btn-facebook" title="Share on Facebook">
+      <span class="fab fa-facebook-f" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+   </a>
+
+   <!--- Share on Reddit -->
+   <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fuse-custom-latex-macros-to-boost-your-writing-productivity.html"
+      class="btn btn-my-icon btn-reddit" title="Share on Reddit">
+      <span class="fab fa-fw fa-reddit" aria-hidden="true"></span>
+      <span class="sr-only">Reddit</span>
+   </a>
+
+   <!--- Share on Telegram -->
+   <a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fuse-custom-latex-macros-to-boost-your-writing-productivity.html&text=LaTeX+macros+allow+increasing+productivity+by+avoiding+typing+repetitive+LaTeX+commands.+In+this+tutorial%2C+I+show+you+how+to+use+them."
+      class="btn btn-my-icon btn-telegram" title="Share on Telegram">
+      <i class="fab fa-telegram"></i>
+      <span class="sr-only">Telegram</span>
+   </a>
+
+   <!--- Share on Hacker News -->
+   <a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fuse-custom-latex-macros-to-boost-your-writing-productivity.html&amp;t=Use+Custom+LaTeX+Macros+to+Boost+Your+Writing+Productivity"
+      class="btn btn-my-icon btn-hn" title="Share on Hacker News">
+      <i class="fab fa-hacker-news-square"></i>
+      <span class="sr-only">Hacker News</span>
+   </a>
+
+
+</section>
+
+
+
+
+
+
+            
+         </div>
+         <!--      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+         <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+  
+    
+    
+      
+      
+        
+        
+        
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+          
+
+
+
+  <div id="related-posts">
+    <h4 class="gsc-related-posts">Related Posts</h4>
+    <div class="panel-deck row">
+    
+      
+      
+      <div class="col-sm-4">
+        <div class="panel">
+          <a href="/blog/on-the-parkinson-law-of-triviality-for-computer-science-researchers.html">
+            <div class="panel-body">
+              <h4 class="title" data-toc-skip>On the Parkinson's Law of Triviality for Computer Science Researchers</h4>
+              <div class="date">
+                Posted on May 28, 2021
+              </div>
+<!--              <div class="text-muted small">-->
+<!--                <p>-->
+<!--                  
+
+
+
+
+-->
+<!--                  The Parkinson’s Law of Triviality is a real thing (more on this later).
+And for Computer Science researchers, it is part of everyday life.
+As we know, research is a very time-consuming activity.
+Th...-->
+<!--                </p>-->
+<!--              </div>-->
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      
+      
+      <div class="col-sm-4">
+        <div class="panel">
+          <a href="/blog/my-ultimate-terminal-customizations-for-macos.html">
+            <div class="panel-body">
+              <h4 class="title" data-toc-skip>My Ultimate Terminal Customizations for macOS</h4>
+              <div class="date">
+                Posted on May 28, 2021
+              </div>
+<!--              <div class="text-muted small">-->
+<!--                <p>-->
+<!--                  
+
+
+
+
+-->
+<!--                  There is a common belief that top-class software developers can do their job without ever abandoning the terminal.
+I think this is true to some extent.
+It is almost impossible to become an outstand...-->
+<!--                </p>-->
+<!--              </div>-->
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      
+      
+      <div class="col-sm-4">
+        <div class="panel">
+          <a href="/blog/no-one-cares-about-your-research.html">
+            <div class="panel-body">
+              <h4 class="title" data-toc-skip>No One Cares About Your Research&#33;</h4>
+              <div class="date">
+                Posted on May 28, 2021
+              </div>
+<!--              <div class="text-muted small">-->
+<!--                <p>-->
+<!--                  
+
+
+
+
+-->
+<!--                  That’s the truth.
+No one cares about what you’re doing in your PhD, no one, no one!1
+But don’t be sad, because this is actually a very comfortable truth.
+I only came to this realization after a whi...-->
+<!--                </p>-->
+<!--              </div>-->
+            </div>
+          </a>
+        </div>
+      </div>
+    
+    </div> <!-- .panel-deck -->
+  </div> <!-- #related-posts -->
+
+
+         <!-- https://giscus.app/-->
+<script src="https://giscus.app/client.js"
+        data-repo="cesarsotovalero/cesarsotovalero.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkyMzE2NzM0OTI="
+        data-category="Announcements"
+        data-category-id="DIC_kwDODc8OlM4B-aMB"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-theme="https://www.cesarsotovalero.net/css/giscus.css"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+      </div>
+   </div>
+</div>
+
+
+
+<!--
+Sticky Table of Contents with Scrolling Active States
+https://css-tricks.com/sticky-table-of-contents-with-scrolling-active-states/
+-->
+<script>
+   window.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => {
+         entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.add('active');
+            } else {
+               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.remove('active');
+            }
+         });
+      });
+
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('h1[id]').forEach((section) => {
+         observer.observe(section);
+      });
+
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('h2[id]').forEach((section) => {
+         observer.observe(section);
+      });
+
+   });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+   <div class="container beautiful-jekyll-footer">
+      <div class="row">
+         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div style="text-align: center">
+
+               <div id="mailchimp-subscribe-section-footer" class="mailchimp-subscribe-section">
+  <div id="mc_embed_signup-footer">
+    <form action="https://cesarsotovalero.us1.list-manage.com/subscribe/post?u=61bdf9dd615a10fd3c31cf8bc&amp;id=294200bc67"
+          method="post" id="mc-embedded-subscribe-form-footer" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-12">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL-footer" placeholder="Email" required="">
+            </div>
+            <div class="col-sm-4 col-12">
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-footer" class="button">
+            </div>
+          </div>
+        </div>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_61bdf9dd615a10fd3c31cf8bc_294200bc67" tabindex="-1" value=""></div>
+      </div>
+    </form>
+  </div>
+</div>
+               <div class="flex-container-footer-badges">
+                  <a href="https://github.com/cesarsotovalero"> <img src="https://img.shields.io/github/followers/cesarsotovalero?logoColor=black&style=social" alt="Follow me on GitHub"></a>
+                  <a href="https://twitter.com/cesarsotovalero"> <img src="https://img.shields.io/twitter/follow/cesarsotovalero?label=Follow%20&logoColor=black&style=social" alt="Follow me on Twitter"></a>
+                  <a href="https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg"> <img src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black" alt="Subscribe on Youtube"></a>
+               </div>
+
+            </div>
+
+            <div class="flex-container-footer-copyright">
+               <p class="copyright text-muted">
+                  &copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2022
+               </p>
+            </div>
+
+
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/flowtype.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/scroll-to-top.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/lazysizes.min.js"></script>
+    
+  
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-107061705-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+<!-- DARK/LIGHT MODE SWITCHER -->
+<script src="/js/mode-switcher.js"></script>
+<!--<script src="/js/giscus-theme.js"></script>-->
+
+<!-- DISQUS COMMENTS-->
+<!--<script id="dsq-count-scr" src="//https-www-cesarsotovalero-net.disqus.com/count.js" async></script>-->
+
+<!-- SLOWLY HIDE THE NAVBAR -->
+<!--<script src="/js/navbar-hider.js"></script>-->
+
+<!--<script>-->
+<!--   kofiWidgetOverlay.draw('cesarsotovalero', {-->
+<!--      'type': 'floating-chat',-->
+<!--      'floating-chat.donateButton.text': 'Support me',-->
+<!--      'floating-chat.donateButton.background-color': '#ffffff',-->
+<!--      'floating-chat.donateButton.text-color': '#323842'-->
+<!--   });-->
+<!--</script>-->
+
+</body>
+</html>

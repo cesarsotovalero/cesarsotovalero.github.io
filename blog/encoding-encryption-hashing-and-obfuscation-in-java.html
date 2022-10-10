@@ -1,21 +1,617 @@
-<!doctype html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-US" itemscope itemtype="http://schema.org/WebSite"><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>Encoding, Encryption, Hashing, and Obfuscation in Java</title><meta name="keywords" content="java,data confidentiality,data integrity,data authenticity,cybersecurity"><link rel="alternate" type="application/rss+xml" title="César Soto Valero  César - Ph.D. Student" href="/feed.xml"><script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linux-biolinum" type="text/css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-107061705-1")</script><script type="text/javascript">(function(e,t,n,s,o,i,a){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},i=t.createElement(s),i.async=1,i.src="https://www.clarity.ms/tag/"+o,a=t.getElementsByTagName(s)[0],a.parentNode.insertBefore(i,a)})(window,document,"clarity","script","bs3gcidnol")</script><script src="../js/anchor.min.js"></script>
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/bootstrap-social.css"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/css/academicons.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name="generator" content="Jekyll v3.9.0"><meta property="og:title" content="Encoding, Encryption, Hashing, and Obfuscation in Java"><meta name="author" content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name="description" content="The concepts of encoding, encryption, hashing, and obfuscation are often mistakenly confused or taken as similar (which is even worse). Let’s clarify this matter and see some Java code examples of practical applications."><meta property="og:description" content="The concepts of encoding, encryption, hashing, and obfuscation are often mistakenly confused or taken as similar (which is even worse). Let’s clarify this matter and see some Java code examples of practical applications."><link rel="canonical" href="https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html"><meta property="og:url" content="https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2021/paint_on_wall_cover.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2021-12-19T00:00:00-08:00"><meta name="twitter:card" content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2021/paint_on_wall_cover.jpg"><meta property="twitter:title" content="Encoding, Encryption, Hashing, and Obfuscation in Java"><meta name="twitter:site" content="@cesarsotovalero"><meta name="twitter:creator" content="@César Soto Valero"><script type="application/ld+json">{"@type":"BlogPosting","description":"The concepts of encoding, encryption, hashing, and obfuscation are often mistakenly confused or taken as similar (which is even worse). Let’s clarify this matter and see some Java code examples of practical applications.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon.png"},"name":"César Soto Valero"},"headline":"Encoding, Encryption, Hashing, and Obfuscation in Java","dateModified":"2022-09-14T03:39:12-07:00","datePublished":"2021-12-19T00:00:00-08:00","url":"https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html","image":"https://www.cesarsotovalero.net/img/posts/2021/paint_on_wall_cover.jpg","author":{"@type":"Person","name":"César Soto Valero"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html"},"@context":"https://schema.org"}</script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent"><ul class="navigation list-inline text-center footer-links" id="black-icons"><li class="nav-item navbar-custom" title="Home"><a id="navbar-brand" href="https://www.cesarsotovalero.net">Home</a></li><li class="nav-item navbar-custom"><a href="/blog">Blog</a></li><li class="nav-item navbar-custom"><a href="/software">Software</a></li><li class="nav-item navbar-custom"><a href="/service">Service</a></li><li class="nav-item navbar-custom"><a href="/publications">Papers</a></li><li class="nav-item navbar-custom"><a href="/awards">Awards</a></li><li class="nav-item navbar-custom"><a href="/courses">Courses</a></li><li class="nav-item navbar-custom"><a href="/talks">Talks</a></li><li class="nav-item navbar-custom"><a href="/about-me">About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href="#" id="theme-toggle" onclick=modeSwitcher() style="cursor:pointer"></a></li></ul></div></nav><header class="header-section"><div class="intro-header no-img"><div class="container"><div class="row"><div class="header-image" style="padding-left:15px"><div class="row justify-content-center" style="margin-right:0;margin-left:0"></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1 class="no-anchor">Encoding, Encryption, Hashing, and Obfuscation in Java</h1><h2 class="post-subheading">From concepts to code</h2><div class="container flex-container"><a href="https://www.cesarsotovalero.net/about-me"><img class="avatar-img-small" src="/img/pages/cesar/avatar-icon.png" alt="César Soto Valero" id="meta-img"></a><div class="flex-item"><span class="post-meta">Posted on December 19, 2021</span><div><span class="post-meta" title="Estimated read time"><svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg>&nbsp;16 mins read</span>
-<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>programming</span></div></div></div><div class="flex-item"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="margin-left:0"><section id="share-section"><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init("Buy Me a Ko-fi","#7aa4d1","G2G3CRPPI"),kofiwidget2.draw()</script></section></div></div></div><div class="cesarcarbon"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"><ol id="toc" class="section-nav"><li class="toc-entry toc-h1"><a href="#encoding">Encoding</a><ol><li class="toc-entry toc-h2"><a href="#encoding-a-string-in-java-using-base64">Encoding a String in Java Using Base64</a></li></ol></li><li class="toc-entry toc-h1"><a href="#encrypting">Encrypting</a><ol><li class="toc-entry toc-h2"><a href="#encrypting-a-string-in-java-using-rsa">Encrypting a String in Java Using RSA</a></li></ol></li><li class="toc-entry toc-h1"><a href="#hashing">Hashing</a><ol><li class="toc-entry toc-h2"><a href="#hashing-a-string-in-java-using-sha3-256">Hashing a String in Java Using SHA3-256</a></li></ol></li><li class="toc-entry toc-h1"><a href="#obfuscation">Obfuscation</a><ol><li class="toc-entry toc-h2"><a href="#obfuscation-in-java-using-proguard">Obfuscation in Java Using Proguard</a></li></ol></li><li class="toc-entry toc-h1"><a href="#summary">Summary</a></li><li class="toc-entry toc-h1"><a href="#references">References</a></li></ol></div></div></div></div></header><div class="container"><div class="row"><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role="main" class="blog-post"><p>The concepts of encoding, encryption, hashing, and obfuscation are at the core of many critical software technologies.
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US" itemscope="" itemtype="http://schema.org/WebSite">
+
+<head>
+
+<!-- Google AdSense -->
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5117167560601752",
+    enable_page_level_ads: true
+  });
+</script>-->
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Encoding, Encryption, Hashing, and Obfuscation in Java</title>
+
+  
+  <meta name="keywords" content="java,data confidentiality,data integrity,data authenticity,cybersecurity">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="César Soto Valero  César - Ph.D. Student" href="/feed.xml" />
+
+   <!--  <link href="/css/fontawesome/css/all.css" rel="stylesheet">-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linux-biolinum" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+
+  <!-- (gtag.js) of Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-107061705-1');
+  </script>
+
+  <!-- Microsoft Clarity https://clarity.microsoft.com/ -->
+  <script type="text/javascript">
+     (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+     })(window, document, "clarity", "script", "bs3gcidnol");
+  </script>
+
+  <!-- Generate anchors to link to every heading in a Jekyll blog post -->
+  <script src="../js/anchor.min.js"></script>
+
+  
+
+    
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.12.0/css/all.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/academicons.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Encoding, Encryption, Hashing, and Obfuscation in Java" />
+<meta name="author" content="César Soto Valero" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The concepts of encoding, encryption, hashing, and obfuscation are often mistakenly confused or taken as similar (which is even worse). Let’s clarify this matter and see some Java code examples of practical applications." />
+<meta property="og:description" content="The concepts of encoding, encryption, hashing, and obfuscation are often mistakenly confused or taken as similar (which is even worse). Let’s clarify this matter and see some Java code examples of practical applications." />
+<link rel="canonical" href="https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html" />
+<meta property="og:url" content="https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html" />
+<meta property="og:site_name" content="César Soto Valero" />
+<meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2021/paint_on_wall_cover.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-12-19T00:00:00-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2021/paint_on_wall_cover.jpg" />
+<meta property="twitter:title" content="Encoding, Encryption, Hashing, and Obfuscation in Java" />
+<meta name="twitter:site" content="@cesarsotovalero" />
+<meta name="twitter:creator" content="@César Soto Valero" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","description":"The concepts of encoding, encryption, hashing, and obfuscation are often mistakenly confused or taken as similar (which is even worse). Let’s clarify this matter and see some Java code examples of practical applications.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon.png"},"name":"César Soto Valero"},"headline":"Encoding, Encryption, Hashing, and Obfuscation in Java","dateModified":"2022-10-10T01:54:31-07:00","datePublished":"2021-12-19T00:00:00-08:00","url":"https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html","image":"https://www.cesarsotovalero.net/img/posts/2021/paint_on_wall_cover.jpg","author":{"@type":"Person","name":"César Soto Valero"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<nav class="navbar-fixed-top navbar-custom">-->
+<!--   <div class="container-fluid">-->
+<!--      <ul  class="navigation list-inline text-center footer-links" id="black-icons">
+   <li class="nav-item navbar-custom" title="Home">
+      <a id="navbar-brand" href="https://www.cesarsotovalero.net">Home</a>
+   </li>
+
+   
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/software">Software</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/service">Service</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/publications">Papers</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/awards">Awards</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/courses">Courses</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/talks">Talks</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/about-me">About</a>
+
+   
+   </li>
+
+
+   <li class="nav-item navbar-custom" title="Toggle Night Mode">
+      <a href="#" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
+   </li>
+</ul>
+
+
+
+-->
+<!--   </div>-->
+<!--</nav>-->
+
+
+<nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light">
+   <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+   </button>
+
+   <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+      <ul  class="navigation list-inline text-center footer-links" id="black-icons">
+   <li class="nav-item navbar-custom" title="Home">
+      <a id="navbar-brand" href="https://www.cesarsotovalero.net">Home</a>
+   </li>
+
+   
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/software">Software</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/service">Service</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/publications">Papers</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/awards">Awards</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/courses">Courses</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/talks">Talks</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/about-me">About</a>
+
+   
+   </li>
+
+
+   <li class="nav-item navbar-custom" title="Toggle Night Mode">
+      <a href="#" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
+   </li>
+</ul>
+
+
+
+
+   </div>
+</nav>
+
+
+
+
+
+<header class="header-section">
+   
+
+
+
+   <div class="intro-header no-img">
+      <div class="container">
+         <div class="row">
+            <div class="header-image" style="padding-left: 15px">
+
+               <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
+                     <!-- Avatar image -->
+                     
+               </div>
+            </div>
+
+
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+
+               <div class="post-heading">
+
+                  <h1 class="no-anchor">Encoding, Encryption, Hashing, and Obfuscation in Java</h1>
+                  
+                  
+                  <h2 class="post-subheading">From concepts to code</h2>
+                  
+                  
+
+                  
+
+
+
+                  <div class="container flex-container">
+
+                     <!-- Look the author details up from the site config. -->
+                     
+                     <!-- Output author details if some exist. -->
+                     
+                     <!-- Personal Info. -->
+                     <a href="https://www.cesarsotovalero.net/about-me">
+                        <img class="avatar-img-small" src="/img/pages/cesar/avatar-icon.png" alt="César Soto Valero" id="meta-img">
+                     </a>
+                     
+
+                     <div class="flex-item">
+                        <!-- Date posted -->
+                        <span class="post-meta">Posted on December 19, 2021</span>
+                        <div>
+                           <!-- Read time -->
+                           <span class="post-meta" title="Estimated read time">
+                          <svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align: middle;" fill="none" stroke="currentcolor" stroke-linecap="round"
+                               stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8 L16 16 20 20"/></svg>
+                          
+                          
+                            &nbsp;16 mins read
+                          
+                        </span>
+                           <!-- Tag -->
+                           
+                           <span class="blog-tags post-meta">
+                              <svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img"
+                                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5">
+                                 <path fill="none" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a47.998 47.998 0 0 0 14.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM259.886 463.996L48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z" class=""></path></svg>
+                           
+                                 programming
+                              
+                        </span>
+                        </div>
+                     </div>
+
+
+                     
+                     
+
+                  </div>
+
+
+                  <!-- Social share icons -->
+                  <div class="flex-item">
+                     <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="margin-left: 0px;">
+                           
+                              <!--- Buy me a Ko-fi -->
+<section id="share-section">
+   <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Ko-fi','#7aa4d1', 'G2G3CRPPI');kofiwidget2.draw();</script>
+</section>
+                           
+                        </div>
+                     </div>
+                  </div>
+
+                  
+                  <!-- Carbon ads -->
+                  <div class="cesarcarbon">
+                     <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
+                  </div>
+                  
+
+
+               </div>
+
+            </div>
+
+            <div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2">
+               <ol id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#encoding">Encoding</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#encoding-a-string-in-java-using-base64">Encoding a String in Java Using Base64</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#encrypting">Encrypting</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#encrypting-a-string-in-java-using-rsa">Encrypting a String in Java Using RSA</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#hashing">Hashing</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#hashing-a-string-in-java-using-sha3-256">Hashing a String in Java Using SHA3-256</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#obfuscation">Obfuscation</a>
+<ol>
+<li class="toc-entry toc-h2"><a href="#obfuscation-in-java-using-proguard">Obfuscation in Java Using Proguard</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h1"><a href="#summary">Summary</a></li>
+<li class="toc-entry toc-h1"><a href="#references">References</a></li>
+</ol>
+            </div>
+
+         </div>
+
+      </div>
+
+   </div>
+</header>
+
+
+
+<div class="container">
+   <div class="row">
+      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
+         <article role="main" class="blog-post">
+            <p>The concepts of encoding, encryption, hashing, and obfuscation are at the core of many critical software technologies.
 For example, encryption and hashing are the backbones of the blockchain technology that fuels cryptocurrencies, whereas encoding and obfuscation unify and secure the web, respectively.
 Unfortunately, these concepts are often mistakenly confused or taken as similar (which is even worse).
 I believe that a good software developer today should know not only how they work but also how to use them as tools in practical applications.
-In this post, I’ll explain the key differences and provide you with hands-on Java code examples that illustrate how to use encoding, encryption, hashing, and obfuscation in practice.</p><figure class="jb_picture"><img width="100%" src="/assets/resized/paint_on_wall-640x373.jpg" alt="It's all about transformations." data-srcset="/assets/resized/paint_on_wall-640x373.jpg 640w,/assets/resized/paint_on_wall-768x448.jpg 768w,/assets/resized/paint_on_wall-1024x597.jpg 1024w,/assets/resized/paint_on_wall-1366x796.jpg 1366w,/assets/resized/paint_on_wall-1600x933.jpg 1600w," class="blur-up lazyautosizes lazyload"><figcaption class="stroke">&#169; It's all about data transformations. Photo taken at <a href="https://goo.gl/maps/vzMt6ScMnddqbowc8">Östermalmstorg metro station</a>.</figcaption></figure><h1 id="encoding">Encoding</h1><p><em>Encoding is the process of modifying the representation of data, so it can be more efficiently transmitted or consumed by a different system than the one that created it.</em>
+In this post, I’ll explain the key differences and provide you with hands-on Java code examples that illustrate how to use encoding, encryption, hashing, and obfuscation in practice.</p>
+
+<figure class="jb_picture">
+
+
+
+
+<img width="100%" src="/assets/resized/paint_on_wall-640x373.jpg" alt="It's all about transformations." data-srcset="/assets/resized/paint_on_wall-640x373.jpg 640w,/assets/resized/paint_on_wall-768x448.jpg 768w,/assets/resized/paint_on_wall-1024x597.jpg 1024w,/assets/resized/paint_on_wall-1366x796.jpg 1366w,/assets/resized/paint_on_wall-1600x933.jpg 1600w," class="blur-up lazyautosizes lazyload" />
+
+  <figcaption class="stroke"> 
+&#169; It's all about data transformations. Photo taken at <a href="https://goo.gl/maps/vzMt6ScMnddqbowc8">Östermalmstorg metro station</a>.
+</figcaption>
+</figure>
+
+<h1 id="encoding">Encoding</h1>
+
+<p><em>Encoding is the process of modifying the representation of data, so it can be more efficiently transmitted or consumed by a different system than the one that created it.</em>
 The purpose of encoding is to facilitate the consumption and transmission of data across distinct platforms so that they can reach a consensus for mutual understanding.
 For example, <a href="https://en.wikipedia.org/wiki/Emoji">emojis</a> are encoded as <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> characters so that they can be read and displayed on different devices no matter the operating system.
-Note that keeping the security and privacy of the information is not a goal of encoding algorithms.</p><p>When encoding, data is transformed using a mechanism that is publicly available.
+Note that keeping the security and privacy of the information is not a goal of encoding algorithms.</p>
+
+<p>When encoding, data is transformed using a mechanism that is publicly available.
 The process is intended to be reversible so that the same algorithm used for encoding can also be used for decoding.
-For example, the <a href="https://sv.wikipedia.org/wiki/UTF-8">UTF-8</a> character encoding is the standard encoding algorithm for web content today, i.e., it is supported by most browsers. The HTML5 specification encourages authors to use UTF-8. Conformance checkers may advise authors against using legacy encodings, so most text editors and IDEs choose UTF-8 by default for newly-created documents.</p><h2 id="encoding-a-string-in-java-using-base64">Encoding a String in Java Using Base64</h2><p>The standard JDK provides the <code class="language-plaintext highlighter-rouge">Base64</code> class located in the package <code class="language-plaintext highlighter-rouge">java.util</code>.
-<code class="language-plaintext highlighter-rouge">Base64</code> provide methods for encoding any string to a set of characters in <code class="language-plaintext highlighter-rouge">/A-Za-z0-9+/</code> regex.
+For example, the <a href="https://sv.wikipedia.org/wiki/UTF-8">UTF-8</a> character encoding is the standard encoding algorithm for web content today, i.e., it is supported by most browsers. The HTML5 specification encourages authors to use UTF-8. Conformance checkers may advise authors against using legacy encodings, so most text editors and IDEs choose UTF-8 by default for newly-created documents.</p>
+
+<h2 id="encoding-a-string-in-java-using-base64">Encoding a String in Java Using Base64</h2>
+
+<p>The standard JDK provides the <code class="language-plaintext highlighter-rouge">Base64</code> class located in the package <code class="language-plaintext highlighter-rouge">java.util</code>.
+<code class="language-plaintext highlighter-rouge">Base64</code> provide methods for encoding any string to a set of characters in <code class="language-plaintext highlighter-rouge">/A-Za-z0-9+/</code> regex. 
 So, the decoder rejects any characters outside this set.
-<code class="language-plaintext highlighter-rouge">Base64</code> also offers methods to encode and decode URLs safely.</p><blockquote><p><a href="https://en.wikipedia.org/wiki/Base64">Base64</a> encoding schemes are commonly used when there is a need to encode binary data, especially when that data needs to be stored and transferred over media that are designed to deal with text. This encoding helps to ensure that the data remains intact without modification during transport. Base64 is used commonly in a number of applications including email via MIME, as well as storing complex data in XML or JSON.</p></blockquote><p>The following methods allows encoding and decoding a String message to Base64:</p><figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+<code class="language-plaintext highlighter-rouge">Base64</code> also offers methods to encode and decode URLs safely.</p>
+
+<blockquote>
+  <p><a href="https://en.wikipedia.org/wiki/Base64">Base64</a> encoding schemes are commonly used when there is a need to encode binary data, especially when that data needs to be stored and transferred over media that are designed to deal with text. This encoding helps to ensure that the data remains intact without modification during transport. Base64 is used commonly in a number of applications including email via MIME, as well as storing complex data in XML or JSON.</p>
+</blockquote>
+
+<p>The following methods allows encoding and decoding a String message to Base64:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -33,7 +629,11 @@ So, the decoder rejects any characters outside this set.
   <span class="nc">String</span> <span class="n">decodedString</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">decodedBytes</span><span class="o">);</span>
   <span class="k">return</span> <span class="n">decodedString</span><span class="o">;</span>
 <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>Here is a corresponding unit test:</p><figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Here is a corresponding unit test:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -43,17 +643,33 @@ So, the decoder rejects any characters outside this set.
   <span class="nc">Assertions</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="s">"SGVsbG8sIHdvcmxkIQ=="</span><span class="o">,</span> <span class="n">encodeToBase64</span><span class="o">(</span><span class="s">"Hello, world!"</span><span class="o">));</span>
   <span class="nc">Assertions</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="s">"Hello, world!"</span><span class="o">,</span> <span class="n">decodeFromBase64</span><span class="o">(</span><span class="s">"SGVsbG8sIHdvcmxkIQ=="</span><span class="o">));</span>
 <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>Notice that in Base64 encoding, the number of characters in an output-encoded String <a href="https://stackoverflow.com/questions/4080988/why-does-base64-encoding-require-padding-if-the-input-length-is-not-divisible-by/18518605#18518605">must be a multiple of 4</a>.
-The encoder adds one or two padding characters (<code class="language-plaintext highlighter-rouge">=</code>) at the end of the output as needed in order to meet this requirement. It is worth mentioning that <code class="language-plaintext highlighter-rouge">Base64</code> can also generate <a href="https://en.wikipedia.org/wiki/MIME">MIME</a> friendly encoding from strings.</p><h1 id="encrypting">Encrypting</h1><p><em>Encrypting is the process of transforming data into a representation that cannot be understood without a particular key.</em>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Notice that in Base64 encoding, the number of characters in an output-encoded String <a href="https://stackoverflow.com/questions/4080988/why-does-base64-encoding-require-padding-if-the-input-length-is-not-divisible-by/18518605#18518605">must be a multiple of 4</a>.
+The encoder adds one or two padding characters (<code class="language-plaintext highlighter-rouge">=</code>) at the end of the output as needed in order to meet this requirement. It is worth mentioning that <code class="language-plaintext highlighter-rouge">Base64</code> can also generate <a href="https://en.wikipedia.org/wiki/MIME">MIME</a> friendly encoding from strings.</p>
+
+<h1 id="encrypting">Encrypting</h1>
+
+<p><em>Encrypting is the process of transforming data into a representation that cannot be understood without a particular key.</em>
 The focus of encryption is safeguarding confidentiality and authenticity by ensuring that the data cannot be consumed by anyone other than the intended recipient.
 Encrypting algorithms rely on mathematical principles and cryptography to ensure security.
 Encryption algorithms are everywhere.
-For example, we use some encryption algorithm every time we send a password over the internet.</p><p>Typical encryption algorithms, such as <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">RSA</a>, are based on a public key and a private key (i.e., two different, mathematically linked keys).
+For example, we use some encryption algorithm every time we send a password over the internet.</p>
+
+<p>Typical encryption algorithms, such as <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">RSA</a>, are based on a public key and a private key (i.e., two different, mathematically linked keys).
 These are known as asymmetric cryptography algorithms.
 The original message is encrypted by the algorithm using a public key, and then the encrypted message can only be decrypted using the private key.
-The public key is shared publicly, while a private key is secret and must not be shared with anyone.</p><h2 id="encrypting-a-string-in-java-using-rsa">Encrypting a String in Java Using RSA</h2><p>The <code class="language-plaintext highlighter-rouge">java.security</code> package provide a strong API to <a href="https://docs.oracle.com/javase/9/docs/specs/security/standard-names.html">several algorithms</a> for basic encrypting tasks.
+The public key is shared publicly, while a private key is secret and must not be shared with anyone.</p>
+
+<h2 id="encrypting-a-string-in-java-using-rsa">Encrypting a String in Java Using RSA</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">java.security</code> package provide a strong API to <a href="https://docs.oracle.com/javase/9/docs/specs/security/standard-names.html">several algorithms</a> for basic encrypting tasks. 
 The first step to use RSA for encryption is generating a key pair.
-We can easily do it by using the <code class="language-plaintext highlighter-rouge">KeyPairGenerator</code> class.</p><p>The following code generates public and private key with a size of 2048 bits and stores them in the file system:</p><figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+We can easily do it by using the <code class="language-plaintext highlighter-rouge">KeyPairGenerator</code> class.</p>
+
+<p>The following code generates public and private key with a size of 2048 bits and stores them in the file system:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -75,7 +691,11 @@ We can easily do it by using the <code class="language-plaintext highlighter-rou
     <span class="n">fos</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">pair</span><span class="o">.</span><span class="na">getPrivate</span><span class="o">().</span><span class="na">getEncoded</span><span class="o">());</span>
   <span class="o">}</span>
 <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>To read each key from a file, we’ll first need to load the content as a byte array and then use a <code class="language-plaintext highlighter-rouge">KeyFactory</code> to recreate the actual instances:</p><figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>To read each key from a file, we’ll first need to load the content as a byte array and then use a <code class="language-plaintext highlighter-rouge">KeyFactory</code> to recreate the actual instances:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -101,7 +721,11 @@ We can easily do it by using the <code class="language-plaintext highlighter-rou
   <span class="nc">EncodedKeySpec</span> <span class="n">privateKeySpec</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PKCS8EncodedKeySpec</span><span class="o">(</span><span class="n">privateKeyBytes</span><span class="o">);</span>
   <span class="k">return</span> <span class="n">keyFactory</span><span class="o">.</span><span class="na">generatePrivate</span><span class="o">(</span><span class="n">privateKeySpec</span><span class="o">);</span>
 <span class="o">}</span> 
-</pre></td></tr></tbody></table></code></pre></figure><p>To encrypt a string message, we’ll need a <code class="language-plaintext highlighter-rouge">Cipher</code> object initialized for encryption with the public key that we generated previously. Invoking the <code class="language-plaintext highlighter-rouge">doFinal</code> method encrypts our message. Note that it accepts only byte array arguments, so we need to encode our string to Base64, which facilitates its further storage in a database or the exposition of the secured message via REST API:</p><figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>To encrypt a string message, we’ll need a <code class="language-plaintext highlighter-rouge">Cipher</code> object initialized for encryption with the public key that we generated previously. Invoking the <code class="language-plaintext highlighter-rouge">doFinal</code> method encrypts our message. Note that it accepts only byte array arguments, so we need to encode our string to Base64, which facilitates its further storage in a database or the exposition of the secured message via REST API:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -115,8 +739,12 @@ We can easily do it by using the <code class="language-plaintext highlighter-rou
   <span class="kt">byte</span><span class="o">[]</span> <span class="n">encryptedMessageBytes</span> <span class="o">=</span> <span class="n">encryptCipher</span><span class="o">.</span><span class="na">doFinal</span><span class="o">(</span><span class="n">secretMessageBytes</span><span class="o">);</span>
   <span class="k">return</span> <span class="nc">Base64</span><span class="o">.</span><span class="na">getEncoder</span><span class="o">().</span><span class="na">encodeToString</span><span class="o">(</span><span class="n">encryptedMessageBytes</span><span class="o">);</span>
 <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>Now, let’s see how we can decrypt the message to its original form.
-For this, we initialize a Cipher object with a decryption mode and the previously generated private key:</p><figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Now, let’s see how we can decrypt the message to its original form. 
+For this, we initialize a Cipher object with a decryption mode and the previously generated private key:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -128,7 +756,11 @@ For this, we initialize a Cipher object with a decryption mode and the previousl
   <span class="kt">byte</span><span class="o">[]</span> <span class="n">decryptedMessageBytes</span> <span class="o">=</span> <span class="n">decryptCipher</span><span class="o">.</span><span class="na">doFinal</span><span class="o">(</span><span class="nc">Base64</span><span class="o">.</span><span class="na">getDecoder</span><span class="o">().</span><span class="na">decode</span><span class="o">(</span><span class="n">encryptedMessage</span><span class="o">));</span>
   <span class="k">return</span> <span class="k">new</span> <span class="nf">String</span><span class="o">(</span><span class="n">decryptedMessageBytes</span><span class="o">,</span> <span class="nc">StandardCharsets</span><span class="o">.</span><span class="na">UTF_8</span><span class="o">);</span>
 <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>Here is a unit test that verifies if a string message has changed after encryption and then is back to its original after decryption:</p><figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Here is a unit test that verifies if a string message has changed after encryption and then is back to its original after decryption:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -150,17 +782,38 @@ For this, we initialize a Cipher object with a decryption mode and the previousl
   <span class="nc">Assertions</span><span class="o">.</span><span class="na">assertNotEquals</span><span class="o">(</span><span class="n">message</span><span class="o">,</span> <span class="n">encryptedMessage</span><span class="o">);</span>
   <span class="nc">Assertions</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="n">message</span><span class="o">,</span> <span class="n">decryptedMessage</span><span class="o">);</span>
 <span class="o">}</span> 
-</pre></td></tr></tbody></table></code></pre></figure><h1 id="hashing">Hashing</h1><p><em>Hashing is a technique used to validate the integrity of the data by detecting if it has been modified via changes to the hash output.</em>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h1 id="hashing">Hashing</h1>
+
+<p><em>Hashing is a technique used to validate the integrity of the data by detecting if it has been modified via changes to the hash output.</em>
 Thus, hashing serves the purpose of verifying data integrity, i.e. making it so that if something is changed you can know that it was changed.
-Different from encryption, a hash is a “one-way” cryptographic function, so hashed data cannot be decrypted back to the original text.</p><p>Hashing algorithms map data of any size to a fixed length.
+Different from encryption, a hash is a “one-way” cryptographic function, so hashed data cannot be decrypted back to the original text.</p>
+
+<p>Hashing algorithms map data of any size to a fixed length.
 For example, the <a href="https://en.wikipedia.org/wiki/SHA-2">SHA-256</a> algorithm produces a hash value that is 256 bits, usually represented by a 64 character hexadecimal string.
 The premise of a hashing algorithm is simple: given arbitrary input, output a specific number of bytes unique to that input so that will give no indication of what the input was.
-The hash function works in a manner that no two hashes for two distinct messages are identical.</p><p>In other words:</p><ul><li>One cannot determine the original data given only the output of a hashing algorithm.</li><li>Given some arbitrary data along with the output of a hashing algorithm, one can verify whether this data matches the original input data without needing to see the original data.</li></ul><p>Hashing is combined with authentication to provide unambiguous proof that a text has not been tampered.
+The hash function works in a manner that no two hashes for two distinct messages are identical.</p>
+
+<p>In other words:</p>
+
+<ul>
+  <li>One cannot determine the original data given only the output of a hashing algorithm.</li>
+  <li>Given some arbitrary data along with the output of a hashing algorithm, one can verify whether this data matches the original input data without needing to see the original data.</li>
+</ul>
+
+<p>Hashing is combined with authentication to provide unambiguous proof that a text has not been tampered.
 This is achieved by hashing the input and verifying it with the sender’s private key.
 When the receiver receives the text, it checks the signature of the hash against the sender’s public key, then hashes the text itself and matches it against the sender’s hash.
-If they match, this confirms the authenticity of the user.</p><h2 id="hashing-a-string-in-java-using-sha3-256">Hashing a String in Java Using SHA3-256</h2><p>The Java JDK provides the <code class="language-plaintext highlighter-rouge">MessageDigest</code> class for hashing.
-The following method hashes a string message using the <code class="language-plaintext highlighter-rouge">SHA3-256</code> algorithm.
-Note that the output is an array of bytes, which you need to convert to hexadecimal:</p><figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+If they match, this confirms the authenticity of the user.</p>
+
+<h2 id="hashing-a-string-in-java-using-sha3-256">Hashing a String in Java Using SHA3-256</h2>
+
+<p>The Java JDK provides the <code class="language-plaintext highlighter-rouge">MessageDigest</code> class for hashing.
+The following method hashes a string message using the <code class="language-plaintext highlighter-rouge">SHA3-256</code> algorithm. 
+Note that the output is an array of bytes, which you need to convert to hexadecimal:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -194,7 +847,11 @@ Note that the output is an array of bytes, which you need to convert to hexadeci
   <span class="o">}</span>
   <span class="k">return</span> <span class="n">hexString</span><span class="o">.</span><span class="na">toString</span><span class="o">();</span>
 <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>Here’s a unit test:</p><figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Here’s a unit test:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -202,21 +859,35 @@ Note that the output is an array of bytes, which you need to convert to hexadeci
 <span class="kt">void</span> <span class="nf">testHashingSHA3_256</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">NoSuchAlgorithmException</span> <span class="o">{</span>
   <span class="nc">Assertions</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="s">"f345a219da005ebe9c1a1eaad97bbf38a10c8473e41d0af7fb617caa0c6aa722"</span><span class="o">,</span> <span class="n">hashMessage</span><span class="o">(</span><span class="s">"Hello, world!"</span><span class="o">));</span>
 <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><h1 id="obfuscation">Obfuscation</h1><p><em>Obfuscation is the process of transforming human-readable data into a form of data with the same properties that is nearly impossible to comprehend.</em>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h1 id="obfuscation">Obfuscation</h1>
+
+<p><em>Obfuscation is the process of transforming human-readable data into a form of data with the same properties that is nearly impossible to comprehend.</em>
 The most common purpose of obfuscation is to make text harder to understand, usually to make it more difficult to attack or to copy.
-Obfuscation is also used for data compression purposes.</p><p>Similar to encoding, obfuscation does not provide any security guarantee.
+Obfuscation is also used for data compression purposes.</p>
+
+<p>Similar to encoding, obfuscation does not provide any security guarantee.
 Although not suitable to guarantee confidentiality, obfuscation has some valid use cases.
 For example, it is used heavily to prevent from data tampering and protect intellectual property.
 One common use is obfuscation of source code so that it’s harder to copy certain software functionalities, making the resulting code non-human friendly.
 Obfuscation of source code is a common use case since it makes reverse engineering of a product more difficult.
 However, obfuscation only makes it difficult for someone to read the obfuscated code, not impossible.
-Many tools exist that assist in de-obfuscating application code.</p><p>It’s important to note that obfuscation is not a robust control mechanism (like properly employed encryption) but rather an obstacle.
+Many tools exist that assist in de-obfuscating application code.</p>
+
+<p>It’s important to note that obfuscation is not a robust control mechanism (like properly employed encryption) but rather an obstacle.
 The obfuscated text, like encoding, can often be reversed by using the same technique that obfuscated it.
 Other times it is simply a manual process that takes time to work through.
 Another key thing to realize about obfuscation is that there is a limitation to how obscure the code can become, depending on the content being obfuscated.
-If you are obscuring computer code, for example, the limitation is that the result must still be executable by the computer, or else the application will cease to function.</p><h2 id="obfuscation-in-java-using-proguard">Obfuscation in Java Using Proguard</h2><p>Since obfuscation is problem dependent, there is not out-of-the-box Java tool for obfuscating a text.
+If you are obscuring computer code, for example, the limitation is that the result must still be executable by the computer, or else the application will cease to function.</p>
+
+<h2 id="obfuscation-in-java-using-proguard">Obfuscation in Java Using Proguard</h2>
+
+<p>Since obfuscation is problem dependent, there is not out-of-the-box Java tool for obfuscating a text.
 However, there are many open-source tools for obfuscating code.
-We are going to use Proguard to obfuscate the following Java class:</p><figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+We are going to use Proguard to obfuscate the following Java class:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -246,7 +917,11 @@ We are going to use Proguard to obfuscate the following Java class:</p><figure c
     <span class="o">}</span>
   <span class="o">}</span>
 <span class="o">}</span> 
-</pre></td></tr></tbody></table></code></pre></figure><p>Once the class is compiled, we can create a <a href="https://github.com/Guardsquare/proguard?__hstc=&__hssc=">Proguard</a> configuration file as follows:</p><figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Once the class is compiled, we can create a <a href="https://github.com/Guardsquare/proguard?__hstc=&amp;__hssc=">Proguard</a> configuration file as follows:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -260,23 +935,972 @@ We are going to use Proguard to obfuscate the following Java class:</p><figure c
 <span class="nt">-keep</span> public class Example <span class="o">{</span>
     public static void main<span class="o">(</span>java.lang.String[]<span class="o">)</span><span class="p">;</span>
 <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>Then, created an <code class="language-plaintext highlighter-rouge">example.jar</code> file and copy the <code class="language-plaintext highlighter-rouge">proguard.jar</code> from the ProGuard lib directory, and ran this command:</p><div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-jar</span> proguard.jar @myconfig.pro
-</code></pre></div></div><p>This produces an <code class="language-plaintext highlighter-rouge">ExampleOut.jar</code> file which contains the same functionality and is obfuscated.</p><h1 id="summary">Summary</h1><p>Here’s what you need to remember:</p><ul><li>Encoding is the process of modifying the representation of data, so it can be more efficiently transmitted or consumed by a different system than the one that created it.</li><li>Encrypting is the process of transforming data into a representation that cannot be understood without a particular key.</li><li>Hashing is a technique used to validate the integrity of the data by detecting if it has been modified via changes to the hash output.</li><li>Obfuscation is the process of transforming human-readable data into a form of data with the same properties that is nearly impossible to comprehend.</li></ul><h1 id="references">References</h1><ul><li><a href="https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation">Hashing vs. Encryption vs. Encoding vs. Obfuscation</a></li><li><a href="https://www.linkedin.com/pulse/encoding-vs-encryption-hashing-obfuscation-liban-mohamud">Encoding vs. Encryption vs. Hashing vs. Obfuscation</a></li><li><a href="https://auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation/#What-is-Obfuscation">What is Obfuscation?</a></li></ul></article><ul class="pager blog-pager"><li class="previous"><a href="/blog/sigbovik-the-ig-nobel-for-academics-and-computer-science-researchers.html" data-toggle="tooltip" data-placement="top" title="SIGBOVIK: The Ig Nobel for Academics and Computer Science Researchers">&larr; Previous Post</a></li><li class="next"><a href="/blog/how-do-i-track-the-progress-of-my-research-projects.html" data-toggle="tooltip" data-placement="top" title="How to Track the Progress of a Research Project">Next Post &rarr;</a></li></ul><br></div></div></div><script>anchors.options={position:"left"},anchors.add("h1:not(.no-anchor)","h2","h3")</script><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style="padding-right:15px"><div class="flex-container-footer-badges"><section class="share-section"><a href="https://twitter.com/intent/tweet?text=The+concepts+of+encoding%2C+encryption%2C+hashing%2C+and+obfuscation+are+often+mistakenly+confused+or+taken+as+similar+%28which+is+even+worse%29.+Let%27s+clarify+this+matter+and+see+some+Java+code+examples+of+practical+applications.+https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id="share-twitter" class="fab fa-twitter" aria-hidden="true"></span>
-<span class="sr-only">Twitter</span></a>
-<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id="share-linkedin" class="fab fa-linkedin-in" aria-hidden="true"></span>
-<span class="sr-only">LinkedIn</span></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden="true"></span>
-<span class="sr-only">Facebook</span></a>
-<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fencoding-encryption-hashing-and-obfuscation-in-java.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden="true"></span>
-<span class="sr-only">Reddit</span></a>
-<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fencoding-encryption-hashing-and-obfuscation-in-java.html&text=The+concepts+of+encoding%2C+encryption%2C+hashing%2C+and+obfuscation+are+often+mistakenly+confused+or+taken+as+similar+%28which+is+even+worse%29.+Let%27s+clarify+this+matter+and+see+some+Java+code+examples+of+practical+applications." class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
-<span class="sr-only">Telegram</span></a>
-<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fencoding-encryption-hashing-and-obfuscation-in-java.html&t=Encoding%2C+Encryption%2C+Hashing%2C+and+Obfuscation+in+Java" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
-<span class="sr-only">Hacker News</span></a></section></div><div id="related-posts"><h4 class="gsc-related-posts">Related Posts</h4><div class="panel-deck row"><div class="col-sm-4"><div class="panel"><a href="/blog/aot-vs-jit-compilation-in-java.html"><div class="panel-body"><h4 class="title" data-toc-skip>AOT vs. JIT Compilation in Java</h4><div class="date">Posted on December 19, 2021</div></div></a></div></div><div class="col-sm-4"><div class="panel"><a href="/blog/inversion-of-control-and-dependency-injection-in-java.html"><div class="panel-body"><h4 class="title" data-toc-skip>Inversion of Control and Dependency Injection in Java</h4><div class="date">Posted on December 19, 2021</div></div></a></div></div><div class="col-sm-4"><div class="panel"><a href="/blog/a-starting-guide-to-be-a-good-competitive-programmer.html"><div class="panel-body"><h4 class="title" data-toc-skip>A Starting Guide to Become a Good Competitive Programmer</h4><div class="date">Posted on December 19, 2021</div></div></a></div></div></div></div><script src="https://giscus.app/client.js" data-repo="cesarsotovalero/cesarsotovalero.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyMzE2NzM0OTI=" data-category="Announcements" data-category-id="DIC_kwDODc8OlM4B-aMB" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="1" data-theme="https://www.cesarsotovalero.net/css/giscus.css" crossorigin="anonymous" async></script></div></div></div><script>window.addEventListener("DOMContentLoaded",()=>{const e=new IntersectionObserver(e=>{e.forEach(e=>{const t=e.target.getAttribute("id");e.intersectionRatio>0?document.querySelector(`#toc li a[href="#${t}"]`).parentElement.classList.add("active"):document.querySelector(`#toc li a[href="#${t}"]`).parentElement.classList.remove("active")})});document.querySelectorAll("h1[id]").forEach(t=>{e.observe(t)}),document.querySelectorAll("h2[id]").forEach(t=>{e.observe(t)})})</script><footer><div class="container beautiful-jekyll-footer"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style="text-align:center"><div id="mailchimp-subscribe-section-footer" class="mailchimp-subscribe-section"><div id="mc_embed_signup-footer"><form action="https://cesarsotovalero.us1.list-manage.com/subscribe/post?u=61bdf9dd615a10fd3c31cf8bc&id=294200bc67" method="post" id="mc-embedded-subscribe-form-footer" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate><div id="mc_embed_signup_scroll-footer"><div class="container"><div class="row"><div class="col-sm-8 col-12"><input type="email" name="EMAIL" class="email" id="mce-EMAIL-footer" placeholder="Email" required></div><div class="col-sm-4 col-12"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-footer" class="button"></div></div></div><div style="position:absolute;left:-5e3px" aria-hidden="true"><input type="text" name="b_61bdf9dd615a10fd3c31cf8bc_294200bc67" tabindex="-1"></div></div></form></div></div><div class="flex-container-footer-badges"><a href="https://github.com/cesarsotovalero"><img src="https://img.shields.io/github/followers/cesarsotovalero?logoColor=black&style=social" alt="Follow me on GitHub"></a>
-<a href="https://twitter.com/cesarsotovalero"><img src="https://img.shields.io/twitter/follow/cesarsotovalero?label=Follow%20&logoColor=black&style=social" alt="Follow me on Twitter"></a>
-<a href="https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg"><img src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black" alt="Subscribe on Youtube"></a></div></div><div class="flex-container-footer-copyright"><p class="copyright text-muted">&copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2022</p></div></div></div></div></footer><script>typeof jQuery=="undefined"&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src="/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/flowtype.js"></script>
-<script src="/js/scroll-to-top.js"></script>
-<script src="/js/lazysizes.min.js"></script>
-<script>(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)})(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-107061705-1","auto"),ga("send","pageview")</script><script src="/js/mode-switcher.js"></script></body></html>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Then, created an <code class="language-plaintext highlighter-rouge">example.jar</code> file and copy the  <code class="language-plaintext highlighter-rouge">proguard.jar</code> from the ProGuard lib directory, and ran this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-jar</span> proguard.jar @myconfig.pro
+</code></pre></div></div>
+
+<p>This produces an <code class="language-plaintext highlighter-rouge">ExampleOut.jar</code> file which contains the same functionality and is obfuscated.</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>Here’s what you need to remember:</p>
+
+<ul>
+  <li>Encoding is the process of modifying the representation of data, so it can be more efficiently transmitted or consumed by a different system than the one that created it.</li>
+  <li>Encrypting is the process of transforming data into a representation that cannot be understood without a particular key.</li>
+  <li>Hashing is a technique used to validate the integrity of the data by detecting if it has been modified via changes to the hash output.</li>
+  <li>Obfuscation is the process of transforming human-readable data into a form of data with the same properties that is nearly impossible to comprehend.</li>
+</ul>
+
+<h1 id="references">References</h1>
+
+<ul>
+  <li><a href="https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation">Hashing vs. Encryption vs. Encoding vs. Obfuscation</a></li>
+  <li><a href="https://www.linkedin.com/pulse/encoding-vs-encryption-hashing-obfuscation-liban-mohamud">Encoding vs. Encryption vs. Hashing vs. Obfuscation</a></li>
+  <li><a href="https://auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation/#What-is-Obfuscation">What is Obfuscation?</a></li>
+</ul>
+
+
+
+
+         </article>
+
+         <!--      <span class="post-categories">[-->
+         <!--					  -->
+         <!--						-->
+         <!--						<img src="../img/tag-solid.svg" style="width:1em" alt="tag">-->
+         <!--						<a href="/tag/programming"><code class="highligher-rouge"><nobr>programming</nobr></code></a>-->
+         <!--					  -->
+         <!--					]</span>-->
+
+         <ul class="pager blog-pager">
+            
+            <li class="previous">
+               <a href="/blog/sigbovik-the-ig-nobel-for-academics-and-computer-science-researchers.html" data-toggle="tooltip" data-placement="top" title="SIGBOVIK&#58; The Ig Nobel for Academics and Computer Science Researchers">&larr; Previous Post</a>
+            </li>
+            
+            
+            <li class="next">
+               <a href="/blog/how-do-i-track-the-progress-of-my-research-projects.html" data-toggle="tooltip" data-placement="top" title="How to Track the Progress of a Research Project">Next Post &rarr;</a>
+            </li>
+            
+         </ul>
+         <br>
+      </div>
+   </div>
+</div>
+
+<!-- https://www.bryanbraun.com/anchorjs/ -->
+<script>
+   anchors.options = {
+      position: 'left'
+   };
+   anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
+</script>
+
+
+<!-- Giscus comments -->
+
+<div class="container">
+   <div class="row">
+      <!--      <div class="col-lg-12 col-md-12 col-sm-12">-->
+      <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style="padding-right: 15px;">
+         <div class="flex-container-footer-badges">
+            
+            
+<section class="share-section">
+   <!--     <span class="post-share-meta">Share this post on:</span>-->
+
+   <!--- Share on Twitter -->
+   <a href="https://twitter.com/intent/tweet?text=The+concepts+of+encoding%2C+encryption%2C+hashing%2C+and+obfuscation+are+often+mistakenly+confused+or+taken+as+similar+%28which+is+even+worse%29.+Let%27s+clarify+this+matter+and+see+some+Java+code+examples+of+practical+applications.+https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html"
+      class="btn btn-my-icon btn-twitter" title="Share on Twitter">
+      <span id="share-twitter" class="fab fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+   </a>
+
+   <!--- Share on LinkedIn -->
+   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html"
+      class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn">
+      <span id="share-linkedin" class="fab fa-linkedin-in" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+
+   <!--- Share on Facebook -->
+   <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html"
+      class="btn btn-my-icon btn-facebook" title="Share on Facebook">
+      <span class="fab fa-facebook-f" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+   </a>
+
+   <!--- Share on Reddit -->
+   <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fencoding-encryption-hashing-and-obfuscation-in-java.html"
+      class="btn btn-my-icon btn-reddit" title="Share on Reddit">
+      <span class="fab fa-fw fa-reddit" aria-hidden="true"></span>
+      <span class="sr-only">Reddit</span>
+   </a>
+
+   <!--- Share on Telegram -->
+   <a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fencoding-encryption-hashing-and-obfuscation-in-java.html&text=The+concepts+of+encoding%2C+encryption%2C+hashing%2C+and+obfuscation+are+often+mistakenly+confused+or+taken+as+similar+%28which+is+even+worse%29.+Let%27s+clarify+this+matter+and+see+some+Java+code+examples+of+practical+applications."
+      class="btn btn-my-icon btn-telegram" title="Share on Telegram">
+      <i class="fab fa-telegram"></i>
+      <span class="sr-only">Telegram</span>
+   </a>
+
+   <!--- Share on Hacker News -->
+   <a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fencoding-encryption-hashing-and-obfuscation-in-java.html&amp;t=Encoding%2C+Encryption%2C+Hashing%2C+and+Obfuscation+in+Java"
+      class="btn btn-my-icon btn-hn" title="Share on Hacker News">
+      <i class="fab fa-hacker-news-square"></i>
+      <span class="sr-only">Hacker News</span>
+   </a>
+
+
+</section>
+
+
+
+
+
+
+            
+         </div>
+         <!--      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+         <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+
+  <div id="related-posts">
+    <h4 class="gsc-related-posts">Related Posts</h4>
+    <div class="panel-deck row">
+    
+      
+      
+      <div class="col-sm-4">
+        <div class="panel">
+          <a href="/blog/aot-vs-jit-compilation-in-java.html">
+            <div class="panel-body">
+              <h4 class="title" data-toc-skip>AOT vs. JIT Compilation in Java</h4>
+              <div class="date">
+                Posted on December 19, 2021
+              </div>
+<!--              <div class="text-muted small">-->
+<!--                <p>-->
+<!--                  
+
+
+
+
+-->
+<!--                  There are two ways of compiling a Java application: using Just in Time Compilation (JIT) or Ahead of Time Compilation (AOT).
+The first is the default mode, and it is used by the Java Hotspot Virtua...-->
+<!--                </p>-->
+<!--              </div>-->
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      
+      
+      <div class="col-sm-4">
+        <div class="panel">
+          <a href="/blog/inversion-of-control-and-dependency-injection-in-java.html">
+            <div class="panel-body">
+              <h4 class="title" data-toc-skip>Inversion of Control and Dependency Injection in Java</h4>
+              <div class="date">
+                Posted on December 19, 2021
+              </div>
+<!--              <div class="text-muted small">-->
+<!--                <p>-->
+<!--                  
+
+
+
+
+-->
+<!--                  Inversion of Control (IoC) is a programming principle.
+The idea of IoC is delegating the control of parts of our application to a framework that initializes some specific task for us.
+Dependency in...-->
+<!--                </p>-->
+<!--              </div>-->
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      
+      
+      <div class="col-sm-4">
+        <div class="panel">
+          <a href="/blog/a-starting-guide-to-be-a-good-competitive-programmer.html">
+            <div class="panel-body">
+              <h4 class="title" data-toc-skip>A Starting Guide to Become a Good Competitive Programmer</h4>
+              <div class="date">
+                Posted on December 19, 2021
+              </div>
+<!--              <div class="text-muted small">-->
+<!--                <p>-->
+<!--                  
+
+
+
+
+-->
+<!--                  I discovered the world of competitive programming challenges during my first year at university. At that time, I didn’t know much about computer algorithms or even mind sports. However, the idea of...-->
+<!--                </p>-->
+<!--              </div>-->
+            </div>
+          </a>
+        </div>
+      </div>
+    
+    </div> <!-- .panel-deck -->
+  </div> <!-- #related-posts -->
+
+
+         <!-- https://giscus.app/-->
+<script src="https://giscus.app/client.js"
+        data-repo="cesarsotovalero/cesarsotovalero.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkyMzE2NzM0OTI="
+        data-category="Announcements"
+        data-category-id="DIC_kwDODc8OlM4B-aMB"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-theme="https://www.cesarsotovalero.net/css/giscus.css"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+      </div>
+   </div>
+</div>
+
+
+
+<!--
+Sticky Table of Contents with Scrolling Active States
+https://css-tricks.com/sticky-table-of-contents-with-scrolling-active-states/
+-->
+<script>
+   window.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => {
+         entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.add('active');
+            } else {
+               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.remove('active');
+            }
+         });
+      });
+
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('h1[id]').forEach((section) => {
+         observer.observe(section);
+      });
+
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('h2[id]').forEach((section) => {
+         observer.observe(section);
+      });
+
+   });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+   <div class="container beautiful-jekyll-footer">
+      <div class="row">
+         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div style="text-align: center">
+
+               <div id="mailchimp-subscribe-section-footer" class="mailchimp-subscribe-section">
+  <div id="mc_embed_signup-footer">
+    <form action="https://cesarsotovalero.us1.list-manage.com/subscribe/post?u=61bdf9dd615a10fd3c31cf8bc&amp;id=294200bc67"
+          method="post" id="mc-embedded-subscribe-form-footer" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-12">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL-footer" placeholder="Email" required="">
+            </div>
+            <div class="col-sm-4 col-12">
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-footer" class="button">
+            </div>
+          </div>
+        </div>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_61bdf9dd615a10fd3c31cf8bc_294200bc67" tabindex="-1" value=""></div>
+      </div>
+    </form>
+  </div>
+</div>
+               <div class="flex-container-footer-badges">
+                  <a href="https://github.com/cesarsotovalero"> <img src="https://img.shields.io/github/followers/cesarsotovalero?logoColor=black&style=social" alt="Follow me on GitHub"></a>
+                  <a href="https://twitter.com/cesarsotovalero"> <img src="https://img.shields.io/twitter/follow/cesarsotovalero?label=Follow%20&logoColor=black&style=social" alt="Follow me on Twitter"></a>
+                  <a href="https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg"> <img src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black" alt="Subscribe on Youtube"></a>
+               </div>
+
+            </div>
+
+            <div class="flex-container-footer-copyright">
+               <p class="copyright text-muted">
+                  &copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2022
+               </p>
+            </div>
+
+
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/flowtype.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/scroll-to-top.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/lazysizes.min.js"></script>
+    
+  
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-107061705-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+<!-- DARK/LIGHT MODE SWITCHER -->
+<script src="/js/mode-switcher.js"></script>
+<!--<script src="/js/giscus-theme.js"></script>-->
+
+<!-- DISQUS COMMENTS-->
+<!--<script id="dsq-count-scr" src="//https-www-cesarsotovalero-net.disqus.com/count.js" async></script>-->
+
+<!-- SLOWLY HIDE THE NAVBAR -->
+<!--<script src="/js/navbar-hider.js"></script>-->
+
+<!--<script>-->
+<!--   kofiWidgetOverlay.draw('cesarsotovalero', {-->
+<!--      'type': 'floating-chat',-->
+<!--      'floating-chat.donateButton.text': 'Support me',-->
+<!--      'floating-chat.donateButton.background-color': '#ffffff',-->
+<!--      'floating-chat.donateButton.text-color': '#323842'-->
+<!--   });-->
+<!--</script>-->
+
+</body>
+</html>

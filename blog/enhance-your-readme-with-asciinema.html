@@ -1,34 +1,633 @@
-<!doctype html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-US" itemscope itemtype="http://schema.org/WebSite"><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>Enhance Your Readme With Asciinema</title><meta name="keywords" content="asciinema,readme,improvement,video"><link rel="alternate" type="application/rss+xml" title="César Soto Valero  César - Ph.D. Student" href="/feed.xml"><script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linux-biolinum" type="text/css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-107061705-1")</script><script type="text/javascript">(function(e,t,n,s,o,i,a){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},i=t.createElement(s),i.async=1,i.src="https://www.clarity.ms/tag/"+o,a=t.getElementsByTagName(s)[0],a.parentNode.insertBefore(i,a)})(window,document,"clarity","script","bs3gcidnol")</script><script src="../js/anchor.min.js"></script>
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/bootstrap-social.css"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/css/academicons.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name="generator" content="Jekyll v3.9.0"><meta property="og:title" content="Enhance Your Readme With Asciinema"><meta name="author" content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name="description" content="In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema."><meta property="og:description" content="In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema."><link rel="canonical" href="https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html"><meta property="og:url" content="https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2021/asciinema_cover.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2021-04-05T00:00:00-07:00"><meta name="twitter:card" content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2021/asciinema_cover.jpg"><meta property="twitter:title" content="Enhance Your Readme With Asciinema"><meta name="twitter:site" content="@cesarsotovalero"><meta name="twitter:creator" content="@César Soto Valero"><script type="application/ld+json">{"@type":"BlogPosting","description":"In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon.png"},"name":"César Soto Valero"},"headline":"Enhance Your Readme With Asciinema","dateModified":"2022-09-14T03:39:12-07:00","datePublished":"2021-04-05T00:00:00-07:00","url":"https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html","image":"https://www.cesarsotovalero.net/img/posts/2021/asciinema_cover.jpg","author":{"@type":"Person","name":"César Soto Valero"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html"},"@context":"https://schema.org"}</script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent"><ul class="navigation list-inline text-center footer-links" id="black-icons"><li class="nav-item navbar-custom" title="Home"><a id="navbar-brand" href="https://www.cesarsotovalero.net">Home</a></li><li class="nav-item navbar-custom"><a href="/blog">Blog</a></li><li class="nav-item navbar-custom"><a href="/software">Software</a></li><li class="nav-item navbar-custom"><a href="/service">Service</a></li><li class="nav-item navbar-custom"><a href="/publications">Papers</a></li><li class="nav-item navbar-custom"><a href="/awards">Awards</a></li><li class="nav-item navbar-custom"><a href="/courses">Courses</a></li><li class="nav-item navbar-custom"><a href="/talks">Talks</a></li><li class="nav-item navbar-custom"><a href="/about-me">About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href="#" id="theme-toggle" onclick=modeSwitcher() style="cursor:pointer"></a></li></ul></div></nav><header class="header-section"><div class="intro-header no-img"><div class="container"><div class="row"><div class="header-image" style="padding-left:15px"><div class="row justify-content-center" style="margin-right:0;margin-left:0"></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1 class="no-anchor">Enhance Your Readme With Asciinema</h1><h2 class="post-subheading">How to create beautiful terminal recordings that your users will love</h2><div class="container flex-container"><a href="https://www.cesarsotovalero.net/about-me"><img class="avatar-img-small" src="/img/pages/cesar/avatar-icon.png" alt="César Soto Valero" id="meta-img"></a><div class="flex-item"><span class="post-meta">Posted on April 5, 2021</span><div><span class="post-meta" title="Estimated read time"><svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg>&nbsp;3 mins read</span>
-<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>tools</span></div></div></div><div class="flex-item"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="margin-left:0"><section id="share-section"><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init("Buy Me a Ko-fi","#7aa4d1","G2G3CRPPI"),kofiwidget2.draw()</script></section></div></div></div><div class="cesarcarbon"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"><ol id="toc" class="section-nav"><li class="toc-entry toc-h1"><a href="#recording-a-terminal-session">Recording a Terminal Session</a></li><li class="toc-entry toc-h1"><a href="#insert-the-recording-in-a-readme">Insert the Recording in a README</a></li><li class="toc-entry toc-h1"><a href="#insert-the-recording-in-a-website">Insert the Recording in a Website</a></li></ol></div></div></div></div></header><div class="container"><div class="row"><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role="main" class="blog-post"><p><a href="https://asciinema.org/">Asciinema</a> is an excellent tool for recording and sharing terminal sessions.
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US" itemscope="" itemtype="http://schema.org/WebSite">
+
+<head>
+
+<!-- Google AdSense -->
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5117167560601752",
+    enable_page_level_ads: true
+  });
+</script>-->
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Enhance Your Readme With Asciinema</title>
+
+  
+  <meta name="keywords" content="asciinema, readme, improvement, video">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="César Soto Valero  César - Ph.D. Student" href="/feed.xml" />
+
+   <!--  <link href="/css/fontawesome/css/all.css" rel="stylesheet">-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linux-biolinum" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+
+  <!-- (gtag.js) of Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-107061705-1');
+  </script>
+
+  <!-- Microsoft Clarity https://clarity.microsoft.com/ -->
+  <script type="text/javascript">
+     (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+     })(window, document, "clarity", "script", "bs3gcidnol");
+  </script>
+
+  <!-- Generate anchors to link to every heading in a Jekyll blog post -->
+  <script src="../js/anchor.min.js"></script>
+
+  
+
+    
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.12.0/css/all.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/academicons.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Enhance Your Readme With Asciinema" />
+<meta name="author" content="César Soto Valero" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema." />
+<meta property="og:description" content="In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema." />
+<link rel="canonical" href="https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html" />
+<meta property="og:url" content="https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html" />
+<meta property="og:site_name" content="César Soto Valero" />
+<meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2021/asciinema_cover.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-05T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2021/asciinema_cover.jpg" />
+<meta property="twitter:title" content="Enhance Your Readme With Asciinema" />
+<meta name="twitter:site" content="@cesarsotovalero" />
+<meta name="twitter:creator" content="@César Soto Valero" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","description":"In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon.png"},"name":"César Soto Valero"},"headline":"Enhance Your Readme With Asciinema","dateModified":"2022-10-10T01:54:31-07:00","datePublished":"2021-04-05T00:00:00-07:00","url":"https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html","image":"https://www.cesarsotovalero.net/img/posts/2021/asciinema_cover.jpg","author":{"@type":"Person","name":"César Soto Valero"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<nav class="navbar-fixed-top navbar-custom">-->
+<!--   <div class="container-fluid">-->
+<!--      <ul  class="navigation list-inline text-center footer-links" id="black-icons">
+   <li class="nav-item navbar-custom" title="Home">
+      <a id="navbar-brand" href="https://www.cesarsotovalero.net">Home</a>
+   </li>
+
+   
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/software">Software</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/service">Service</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/publications">Papers</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/awards">Awards</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/courses">Courses</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/talks">Talks</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/about-me">About</a>
+
+   
+   </li>
+
+
+   <li class="nav-item navbar-custom" title="Toggle Night Mode">
+      <a href="#" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
+   </li>
+</ul>
+
+
+
+-->
+<!--   </div>-->
+<!--</nav>-->
+
+
+<nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light">
+   <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+   </button>
+
+   <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+      <ul  class="navigation list-inline text-center footer-links" id="black-icons">
+   <li class="nav-item navbar-custom" title="Home">
+      <a id="navbar-brand" href="https://www.cesarsotovalero.net">Home</a>
+   </li>
+
+   
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/software">Software</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/service">Service</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/publications">Papers</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/awards">Awards</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/courses">Courses</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/talks">Talks</a>
+
+   
+   </li>
+
+   <li class="nav-item navbar-custom">
+   
+      
+            
+
+
+
+
+
+<a href="/about-me">About</a>
+
+   
+   </li>
+
+
+   <li class="nav-item navbar-custom" title="Toggle Night Mode">
+      <a href="#" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
+   </li>
+</ul>
+
+
+
+
+   </div>
+</nav>
+
+
+
+
+
+<header class="header-section">
+   
+
+
+
+   <div class="intro-header no-img">
+      <div class="container">
+         <div class="row">
+            <div class="header-image" style="padding-left: 15px">
+
+               <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
+                     <!-- Avatar image -->
+                     
+               </div>
+            </div>
+
+
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+
+               <div class="post-heading">
+
+                  <h1 class="no-anchor">Enhance Your Readme With Asciinema</h1>
+                  
+                  
+                  <h2 class="post-subheading">How to create beautiful terminal recordings that your users will love</h2>
+                  
+                  
+
+                  
+
+
+
+                  <div class="container flex-container">
+
+                     <!-- Look the author details up from the site config. -->
+                     
+                     <!-- Output author details if some exist. -->
+                     
+                     <!-- Personal Info. -->
+                     <a href="https://www.cesarsotovalero.net/about-me">
+                        <img class="avatar-img-small" src="/img/pages/cesar/avatar-icon.png" alt="César Soto Valero" id="meta-img">
+                     </a>
+                     
+
+                     <div class="flex-item">
+                        <!-- Date posted -->
+                        <span class="post-meta">Posted on April 5, 2021</span>
+                        <div>
+                           <!-- Read time -->
+                           <span class="post-meta" title="Estimated read time">
+                          <svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align: middle;" fill="none" stroke="currentcolor" stroke-linecap="round"
+                               stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8 L16 16 20 20"/></svg>
+                          
+                          
+                            &nbsp;3 mins read
+                          
+                        </span>
+                           <!-- Tag -->
+                           
+                           <span class="blog-tags post-meta">
+                              <svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img"
+                                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5">
+                                 <path fill="none" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a47.998 47.998 0 0 0 14.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM259.886 463.996L48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z" class=""></path></svg>
+                           
+                                 tools
+                              
+                        </span>
+                        </div>
+                     </div>
+
+
+                     
+                     
+
+                  </div>
+
+
+                  <!-- Social share icons -->
+                  <div class="flex-item">
+                     <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="margin-left: 0px;">
+                           
+                              <!--- Buy me a Ko-fi -->
+<section id="share-section">
+   <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Ko-fi','#7aa4d1', 'G2G3CRPPI');kofiwidget2.draw();</script>
+</section>
+                           
+                        </div>
+                     </div>
+                  </div>
+
+                  
+                  <!-- Carbon ads -->
+                  <div class="cesarcarbon">
+                     <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
+                  </div>
+                  
+
+
+               </div>
+
+            </div>
+
+            <div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2">
+               <ol id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#recording-a-terminal-session">Recording a Terminal Session</a></li>
+<li class="toc-entry toc-h1"><a href="#insert-the-recording-in-a-readme">Insert the Recording in a README</a></li>
+<li class="toc-entry toc-h1"><a href="#insert-the-recording-in-a-website">Insert the Recording in a Website</a></li>
+</ol>
+            </div>
+
+         </div>
+
+      </div>
+
+   </div>
+</header>
+
+
+
+<div class="container">
+   <div class="row">
+      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
+         <article role="main" class="blog-post">
+            <p><a href="https://asciinema.org/">Asciinema</a> is an excellent tool for recording and sharing terminal sessions. 
 The project is open-source and <a href="https://github.com/asciinema/asciinema">available on GitHub</a>.
-A key feature of asciinema is that it allows the viewer to copy-paste the text from the player itself directly.
-The result of a terminal recording is an editable text file with extension <code class="language-plaintext highlighter-rouge">.rec</code>.
-This file can be easily <a href="https://asciinema.org/docs/embedding">shared and embedded</a> on any website.
+A key feature of asciinema is that it allows the viewer to copy-paste the text from the player itself directly. 
+The result of a terminal recording is an editable text file with extension <code class="language-plaintext highlighter-rouge">.rec</code>. 
+This file can be easily <a href="https://asciinema.org/docs/embedding">shared and embedded</a> on any website. 
 However, markdown does not support rendering asciinema recordings.
 Therefore, you will need to transform your asciinema recording into something that markdown can handle, such as <code class="language-plaintext highlighter-rouge">.gif</code> files.
-This post will show you step-by-step how to use asciinema to generate beautiful terminal recordings to enhance <code class="language-plaintext highlighter-rouge">README.md</code> files.</p><p>First, let’s see the help page of asciinema using the wonderful <a href="https://github.com/tldr-pages/tldr">tldr</a> project:</p><link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"><div id="tldr_asciinema.rec" class="asciinema-player-div"></div><script src="../../js/asciinema-player.min.js"></script>
-<script>AsciinemaPlayer.create("../asciinema/tldr_asciinema.rec",document.getElementById("tldr_asciinema.rec"),{loop:!0,cols:120,rows:25,autoPlay:!0,terminalFontSize:"small"})</script><h1 id="recording-a-terminal-session">Recording a Terminal Session</h1><p>To install asciinema, follow <a href="https://asciinema.org/docs/installation">the official guide</a>.
-Once you have it installed, you can start recording a terminal session using the following command:</p><figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+This post will show you step-by-step how to use asciinema to generate beautiful terminal recordings to enhance <code class="language-plaintext highlighter-rouge">README.md</code> files.</p>
+
+<p>First, let’s see the help page of asciinema using the wonderful <a href="https://github.com/tldr-pages/tldr">tldr</a> project:</p>
+
+<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css" />
+
+<div id="tldr_asciinema.rec" class="asciinema-player-div"></div>
+<script src="../../js/asciinema-player.min.js"></script>
+
+<script> 
+   AsciinemaPlayer.create('../asciinema/tldr_asciinema.rec', document.getElementById('tldr_asciinema.rec'), {
+      loop: true,
+      cols: 120,
+      rows: 25,
+      autoPlay: true,
+      terminalFontSize: "small"
+   });
+</script>
+
+<h1 id="recording-a-terminal-session">Recording a Terminal Session</h1>
+
+<p>To install asciinema, follow <a href="https://asciinema.org/docs/installation">the official guide</a>.
+Once you have it installed, you can start recording a terminal session using the following command:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 </pre></td><td class="code"><pre>asciinema rec demo.cast
-</pre></td></tr></tbody></table></code></pre></figure><p>The previous command will create a recording file named <code class="language-plaintext highlighter-rouge">demo.cast</code>, which you can replay directly in the terminal as follows:</p><figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>The previous command will create a recording file named <code class="language-plaintext highlighter-rouge">demo.cast</code>, which you can replay directly in the terminal as follows:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 </pre></td><td class="code"><pre>asciinema play demo.cast
-</pre></td></tr></tbody></table></code></pre></figure><h1 id="insert-the-recording-in-a-readme">Insert the Recording in a README</h1><p>Now that you have your session recorded, you need to transform the <code class="language-plaintext highlighter-rouge">demo.cast</code> into a <code class="language-plaintext highlighter-rouge">.gif</code> file, which can be inserted in your <code class="language-plaintext highlighter-rouge">README.md</code>.
-To do so, the <a href="https://github.com/asciinema/asciicast2gif">asciicast2gif</a> tool comes handy.
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h1 id="insert-the-recording-in-a-readme">Insert the Recording in a README</h1>
+
+<p>Now that you have your session recorded, you need to transform the <code class="language-plaintext highlighter-rouge">demo.cast</code> into a  <code class="language-plaintext highlighter-rouge">.gif</code> file, which can be inserted in your <code class="language-plaintext highlighter-rouge">README.md</code>.
+To do so, the <a href="https://github.com/asciinema/asciicast2gif">asciicast2gif</a> tool comes handy. 
 It allows to generate a <code class="language-plaintext highlighter-rouge">.gif</code> files from <code class="language-plaintext highlighter-rouge">.cast</code> asciinema recordings.
-To install asciicast2gif using npm run the following command:</p><figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+To install asciicast2gif using npm run the following command:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 </pre></td><td class="code"><pre>npm <span class="nb">install</span> <span class="nt">--global</span> asciicast2gif
-</pre></td></tr></tbody></table></code></pre></figure><p><strong>Note:</strong> For asciicast2gif to work, you also need have <a href="http://www.imagemagick.org/">ImageMagic</a> installed on your system.</p><p>Once asciicast2gif is installed, make the file transformation as follows:</p><figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p><strong>Note:</strong> For asciicast2gif to work, you also need have <a href="http://www.imagemagick.org/">ImageMagic</a> installed on your system.</p>
+
+<p>Once asciicast2gif is installed, make the file transformation as follows:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 </pre></td><td class="code"><pre>asciicast2gif <span class="nt">-w</span> 80 <span class="nt">-h</span> 30 demo.cast demo.gif
-</pre></td></tr></tbody></table></code></pre></figure><p>The previous command will produce a <code class="language-plaintext highlighter-rouge">demo.gif</code> file with 80 characters width and 30 lines of height.
-It can be inserted in <code class="language-plaintext highlighter-rouge">README.md</code>, just as any other image:</p><figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>The previous command will produce a <code class="language-plaintext highlighter-rouge">demo.gif</code> file with 80 characters width and 30 lines of height. 
+It can be inserted in <code class="language-plaintext highlighter-rouge">README.md</code>, just as any other image:</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 </pre></td><td class="code"><pre><span class="p">![</span><span class="nv">demo</span><span class="p">](</span><span class="sx">PATH_TO_FILE</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>where <code class="language-plaintext highlighter-rouge">PATH_TO_FILE</code> is the path to your <code class="language-plaintext highlighter-rouge">demo.gif</code> file on GitHub.</p><p>I have used this method to add a terminal screencast in the <code class="language-plaintext highlighter-rouge">README.md</code> of <a href="https://github.com/castor-software/depclean">DepClean</a> (one of my tools), so that the users can easily grasp its basic usage.</p><h1 id="insert-the-recording-in-a-website">Insert the Recording in a Website</h1><p>To use asciinema on the browser, use the <a href="https://github.com/asciinema/asciinema-player">asciinema-player</a>.
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>where <code class="language-plaintext highlighter-rouge">PATH_TO_FILE</code> is the path to your <code class="language-plaintext highlighter-rouge">demo.gif</code> file on GitHub.</p>
+
+<p>I have used this method to add a terminal screencast in the <code class="language-plaintext highlighter-rouge">README.md</code> of <a href="https://github.com/castor-software/depclean">DepClean</a> (one of my tools), so that the users can easily grasp its basic usage.</p>
+
+<h1 id="insert-the-recording-in-a-website">Insert the Recording in a Website</h1>
+
+<p>To use asciinema on the browser, use the <a href="https://github.com/asciinema/asciinema-player">asciinema-player</a>.
 You will need <code class="language-plaintext highlighter-rouge">asciinema-player.css</code> and <code class="language-plaintext highlighter-rouge">asciinema-player.js</code>. You can download the latest version of these files <a href="https://github.com/asciinema/asciinema-player/releases">here</a>.
-Then, use these files from page as follows:</p><figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+Then, use these files from page as follows:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -74,22 +673,948 @@ Then, use these files from page as follows:</p><figure class="highlight"><pre><c
 <span class="nt">&lt;/script&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</pre></td></tr></tbody></table></code></pre></figure><p>This will embed a player similar to the one presented in this post.</p></article><ul class="pager blog-pager"><li class="previous"><a href="/blog/dynamic-programming-classics.html" data-toggle="tooltip" data-placement="top" title="Dynamic Programming">&larr; Previous Post</a></li><li class="next"><a href="/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html" data-toggle="tooltip" data-placement="top" title="Use Custom LaTeX Macros to Boost Your Writing Productivity">Next Post &rarr;</a></li></ul><br></div></div></div><script>anchors.options={position:"left"},anchors.add("h1:not(.no-anchor)","h2","h3")</script><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style="padding-right:15px"><div class="flex-container-footer-badges"><section class="share-section"><a href="https://twitter.com/intent/tweet?text=In+this+tutorial%2C+I+show+you+to+create+beautiful+terminal+recordings+that+your+users+will+love+using+ascinema.+https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id="share-twitter" class="fab fa-twitter" aria-hidden="true"></span>
-<span class="sr-only">Twitter</span></a>
-<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id="share-linkedin" class="fab fa-linkedin-in" aria-hidden="true"></span>
-<span class="sr-only">LinkedIn</span></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden="true"></span>
-<span class="sr-only">Facebook</span></a>
-<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fenhance-your-readme-with-asciinema.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden="true"></span>
-<span class="sr-only">Reddit</span></a>
-<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fenhance-your-readme-with-asciinema.html&text=In+this+tutorial%2C+I+show+you+to+create+beautiful+terminal+recordings+that+your+users+will+love+using+ascinema." class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
-<span class="sr-only">Telegram</span></a>
-<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fenhance-your-readme-with-asciinema.html&t=Enhance+Your+Readme+With+Asciinema" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
-<span class="sr-only">Hacker News</span></a></section></div><div id="related-posts"><h4 class="gsc-related-posts">Related Posts</h4><div class="panel-deck row"><div class="col-sm-4"><div class="panel"><a href="/blog/git-fundamentals.html"><div class="panel-body"><h4 class="title" data-toc-skip>Git Fundamentals</h4><div class="date">Posted on April 5, 2021</div></div></a></div></div><div class="col-sm-4"><div class="panel"><a href="/blog/replace-disqus-with-a-better-alternative.html"><div class="panel-body"><h4 class="title" data-toc-skip>Replace the Disqus Commenting System on your Blog</h4><div class="date">Posted on April 5, 2021</div></div></a></div></div><div class="col-sm-4"><div class="panel"><a href="/blog/configuring-remote-connections-in-unix-based-systems-using-ssh.html"><div class="panel-body"><h4 class="title" data-toc-skip>Configuring Remote Connections in Unix-Based Systems Using SSH</h4><div class="date">Posted on April 5, 2021</div></div></a></div></div></div></div><script src="https://giscus.app/client.js" data-repo="cesarsotovalero/cesarsotovalero.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyMzE2NzM0OTI=" data-category="Announcements" data-category-id="DIC_kwDODc8OlM4B-aMB" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="1" data-theme="https://www.cesarsotovalero.net/css/giscus.css" crossorigin="anonymous" async></script></div></div></div><script>window.addEventListener("DOMContentLoaded",()=>{const e=new IntersectionObserver(e=>{e.forEach(e=>{const t=e.target.getAttribute("id");e.intersectionRatio>0?document.querySelector(`#toc li a[href="#${t}"]`).parentElement.classList.add("active"):document.querySelector(`#toc li a[href="#${t}"]`).parentElement.classList.remove("active")})});document.querySelectorAll("h1[id]").forEach(t=>{e.observe(t)}),document.querySelectorAll("h2[id]").forEach(t=>{e.observe(t)})})</script><footer><div class="container beautiful-jekyll-footer"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style="text-align:center"><div id="mailchimp-subscribe-section-footer" class="mailchimp-subscribe-section"><div id="mc_embed_signup-footer"><form action="https://cesarsotovalero.us1.list-manage.com/subscribe/post?u=61bdf9dd615a10fd3c31cf8bc&id=294200bc67" method="post" id="mc-embedded-subscribe-form-footer" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate><div id="mc_embed_signup_scroll-footer"><div class="container"><div class="row"><div class="col-sm-8 col-12"><input type="email" name="EMAIL" class="email" id="mce-EMAIL-footer" placeholder="Email" required></div><div class="col-sm-4 col-12"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-footer" class="button"></div></div></div><div style="position:absolute;left:-5e3px" aria-hidden="true"><input type="text" name="b_61bdf9dd615a10fd3c31cf8bc_294200bc67" tabindex="-1"></div></div></form></div></div><div class="flex-container-footer-badges"><a href="https://github.com/cesarsotovalero"><img src="https://img.shields.io/github/followers/cesarsotovalero?logoColor=black&style=social" alt="Follow me on GitHub"></a>
-<a href="https://twitter.com/cesarsotovalero"><img src="https://img.shields.io/twitter/follow/cesarsotovalero?label=Follow%20&logoColor=black&style=social" alt="Follow me on Twitter"></a>
-<a href="https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg"><img src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black" alt="Subscribe on Youtube"></a></div></div><div class="flex-container-footer-copyright"><p class="copyright text-muted">&copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2022</p></div></div></div></div></footer><script>typeof jQuery=="undefined"&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src="/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/flowtype.js"></script>
-<script src="/js/scroll-to-top.js"></script>
-<script src="/js/lazysizes.min.js"></script>
-<script>(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)})(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-107061705-1","auto"),ga("send","pageview")</script><script src="/js/mode-switcher.js"></script></body></html>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>This will embed a player similar to the one presented in this post.</p>
+
+
+
+         </article>
+
+         <!--      <span class="post-categories">[-->
+         <!--					  -->
+         <!--						-->
+         <!--						<img src="../img/tag-solid.svg" style="width:1em" alt="tag">-->
+         <!--						<a href="/tag/tools"><code class="highligher-rouge"><nobr>tools</nobr></code></a>-->
+         <!--					  -->
+         <!--					]</span>-->
+
+         <ul class="pager blog-pager">
+            
+            <li class="previous">
+               <a href="/blog/dynamic-programming-classics.html" data-toggle="tooltip" data-placement="top" title="Dynamic Programming">&larr; Previous Post</a>
+            </li>
+            
+            
+            <li class="next">
+               <a href="/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html" data-toggle="tooltip" data-placement="top" title="Use Custom LaTeX Macros to Boost Your Writing Productivity">Next Post &rarr;</a>
+            </li>
+            
+         </ul>
+         <br>
+      </div>
+   </div>
+</div>
+
+<!-- https://www.bryanbraun.com/anchorjs/ -->
+<script>
+   anchors.options = {
+      position: 'left'
+   };
+   anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
+</script>
+
+
+<!-- Giscus comments -->
+
+<div class="container">
+   <div class="row">
+      <!--      <div class="col-lg-12 col-md-12 col-sm-12">-->
+      <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style="padding-right: 15px;">
+         <div class="flex-container-footer-badges">
+            
+            
+<section class="share-section">
+   <!--     <span class="post-share-meta">Share this post on:</span>-->
+
+   <!--- Share on Twitter -->
+   <a href="https://twitter.com/intent/tweet?text=In+this+tutorial%2C+I+show+you+to+create+beautiful+terminal+recordings+that+your+users+will+love+using+ascinema.+https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html"
+      class="btn btn-my-icon btn-twitter" title="Share on Twitter">
+      <span id="share-twitter" class="fab fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+   </a>
+
+   <!--- Share on LinkedIn -->
+   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html"
+      class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn">
+      <span id="share-linkedin" class="fab fa-linkedin-in" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+
+   <!--- Share on Facebook -->
+   <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html"
+      class="btn btn-my-icon btn-facebook" title="Share on Facebook">
+      <span class="fab fa-facebook-f" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+   </a>
+
+   <!--- Share on Reddit -->
+   <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fenhance-your-readme-with-asciinema.html"
+      class="btn btn-my-icon btn-reddit" title="Share on Reddit">
+      <span class="fab fa-fw fa-reddit" aria-hidden="true"></span>
+      <span class="sr-only">Reddit</span>
+   </a>
+
+   <!--- Share on Telegram -->
+   <a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fenhance-your-readme-with-asciinema.html&text=In+this+tutorial%2C+I+show+you+to+create+beautiful+terminal+recordings+that+your+users+will+love+using+ascinema."
+      class="btn btn-my-icon btn-telegram" title="Share on Telegram">
+      <i class="fab fa-telegram"></i>
+      <span class="sr-only">Telegram</span>
+   </a>
+
+   <!--- Share on Hacker News -->
+   <a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fenhance-your-readme-with-asciinema.html&amp;t=Enhance+Your+Readme+With+Asciinema"
+      class="btn btn-my-icon btn-hn" title="Share on Hacker News">
+      <i class="fab fa-hacker-news-square"></i>
+      <span class="sr-only">Hacker News</span>
+   </a>
+
+
+</section>
+
+
+
+
+
+
+            
+         </div>
+         <!--      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+         <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+
+  <div id="related-posts">
+    <h4 class="gsc-related-posts">Related Posts</h4>
+    <div class="panel-deck row">
+    
+      
+      
+      <div class="col-sm-4">
+        <div class="panel">
+          <a href="/blog/git-fundamentals.html">
+            <div class="panel-body">
+              <h4 class="title" data-toc-skip>Git Fundamentals</h4>
+              <div class="date">
+                Posted on April 5, 2021
+              </div>
+<!--              <div class="text-muted small">-->
+<!--                <p>-->
+<!--                  
+
+
+
+
+-->
+<!--                  Git is the standard version-control system for software development. Git was created by Linux Torvals in 2005 to support the development of the Linux kernel. Since then, Git has become an essential...-->
+<!--                </p>-->
+<!--              </div>-->
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      
+      
+      <div class="col-sm-4">
+        <div class="panel">
+          <a href="/blog/replace-disqus-with-a-better-alternative.html">
+            <div class="panel-body">
+              <h4 class="title" data-toc-skip>Replace the Disqus Commenting System on your Blog</h4>
+              <div class="date">
+                Posted on April 5, 2021
+              </div>
+<!--              <div class="text-muted small">-->
+<!--                <p>-->
+<!--                  
+
+
+
+
+-->
+<!--                  I started using Disqus in 2018.
+At that time, it was arguably the leading commenting management system for both small and large websites.
+Its popularity was well deserved: ubiquitous integration, e...-->
+<!--                </p>-->
+<!--              </div>-->
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      
+      
+      <div class="col-sm-4">
+        <div class="panel">
+          <a href="/blog/configuring-remote-connections-in-unix-based-systems-using-ssh.html">
+            <div class="panel-body">
+              <h4 class="title" data-toc-skip>Configuring Remote Connections in Unix-Based Systems Using SSH</h4>
+              <div class="date">
+                Posted on April 5, 2021
+              </div>
+<!--              <div class="text-muted small">-->
+<!--                <p>-->
+<!--                  
+
+
+
+
+-->
+<!--                  When working as a software engineer, you will need to connect to a remote computer hosted on a remote server.1
+This is a common task for developers, sysadmins, and researchers.
+This post will show ...-->
+<!--                </p>-->
+<!--              </div>-->
+            </div>
+          </a>
+        </div>
+      </div>
+    
+    </div> <!-- .panel-deck -->
+  </div> <!-- #related-posts -->
+
+
+         <!-- https://giscus.app/-->
+<script src="https://giscus.app/client.js"
+        data-repo="cesarsotovalero/cesarsotovalero.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkyMzE2NzM0OTI="
+        data-category="Announcements"
+        data-category-id="DIC_kwDODc8OlM4B-aMB"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-theme="https://www.cesarsotovalero.net/css/giscus.css"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+      </div>
+   </div>
+</div>
+
+
+
+<!--
+Sticky Table of Contents with Scrolling Active States
+https://css-tricks.com/sticky-table-of-contents-with-scrolling-active-states/
+-->
+<script>
+   window.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => {
+         entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.add('active');
+            } else {
+               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.remove('active');
+            }
+         });
+      });
+
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('h1[id]').forEach((section) => {
+         observer.observe(section);
+      });
+
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('h2[id]').forEach((section) => {
+         observer.observe(section);
+      });
+
+   });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+   <div class="container beautiful-jekyll-footer">
+      <div class="row">
+         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div style="text-align: center">
+
+               <div id="mailchimp-subscribe-section-footer" class="mailchimp-subscribe-section">
+  <div id="mc_embed_signup-footer">
+    <form action="https://cesarsotovalero.us1.list-manage.com/subscribe/post?u=61bdf9dd615a10fd3c31cf8bc&amp;id=294200bc67"
+          method="post" id="mc-embedded-subscribe-form-footer" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-12">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL-footer" placeholder="Email" required="">
+            </div>
+            <div class="col-sm-4 col-12">
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-footer" class="button">
+            </div>
+          </div>
+        </div>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_61bdf9dd615a10fd3c31cf8bc_294200bc67" tabindex="-1" value=""></div>
+      </div>
+    </form>
+  </div>
+</div>
+               <div class="flex-container-footer-badges">
+                  <a href="https://github.com/cesarsotovalero"> <img src="https://img.shields.io/github/followers/cesarsotovalero?logoColor=black&style=social" alt="Follow me on GitHub"></a>
+                  <a href="https://twitter.com/cesarsotovalero"> <img src="https://img.shields.io/twitter/follow/cesarsotovalero?label=Follow%20&logoColor=black&style=social" alt="Follow me on Twitter"></a>
+                  <a href="https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg"> <img src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black" alt="Subscribe on Youtube"></a>
+               </div>
+
+            </div>
+
+            <div class="flex-container-footer-copyright">
+               <p class="copyright text-muted">
+                  &copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2022
+               </p>
+            </div>
+
+
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/flowtype.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/scroll-to-top.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/lazysizes.min.js"></script>
+    
+  
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-107061705-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+<!-- DARK/LIGHT MODE SWITCHER -->
+<script src="/js/mode-switcher.js"></script>
+<!--<script src="/js/giscus-theme.js"></script>-->
+
+<!-- DISQUS COMMENTS-->
+<!--<script id="dsq-count-scr" src="//https-www-cesarsotovalero-net.disqus.com/count.js" async></script>-->
+
+<!-- SLOWLY HIDE THE NAVBAR -->
+<!--<script src="/js/navbar-hider.js"></script>-->
+
+<!--<script>-->
+<!--   kofiWidgetOverlay.draw('cesarsotovalero', {-->
+<!--      'type': 'floating-chat',-->
+<!--      'floating-chat.donateButton.text': 'Support me',-->
+<!--      'floating-chat.donateButton.background-color': '#ffffff',-->
+<!--      'floating-chat.donateButton.text-color': '#323842'-->
+<!--   });-->
+<!--</script>-->
+
+</body>
+</html>
