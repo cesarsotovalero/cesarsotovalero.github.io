@@ -1,5 +1,5 @@
 ---
-permalink: software-debloating-papers.html
+permalink: software-debloating-people.html
 layout: page
 title: Software Debloating People
 subtitle: A list
