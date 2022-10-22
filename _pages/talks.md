@@ -11,10 +11,12 @@ published: true
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
 </div>
 
-As a Ph.D. student, I present my work in workshops, conferences, companies, and everywhere.
+As a Ph.D. student, I present my work in academic conferences, workshops, and software companies.[^1]
 The following is a non-exhaustive list of my technical presentations.
 
 # 2022
+
+- [Coverage-Based Debloating for Java Bytecode](https://youtu.be/HXj2B8eHmt4 "video"){:target="_blank"}. Presented at ESEC/FSE, Singapore, November 2022.
 
 - [The Multibillion Dollar Software Supply Chain of Ethereum](https://docs.google.com/presentation/d/16yingW3HUNj6XmAfFFc_qz1bSI-ZRfV0/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true). Presented at _1st Workshop on the Software Supply Chain_, KTH, Sweden, October 2022.
 
@@ -61,3 +63,8 @@ The following is a non-exhaustive list of my technical presentations.
 - [Bloatware Mitigation and Analysis](https://docs.google.com/presentation/d/1LYvt7fFdGf_VvdlD2XRHzUTfZZOqM55Wopw6IYM6PNQ/edit?usp=sharing). Presented at _5th ASSERT Software Engineering Workshop_, Stockholm, Sweden, November 2018.
 
 - [Mining Software Dependencies at Large Scale: A Preliminary Study on the Maven Central Repository](https://docs.google.com/document/d/1IMhDIJjDIT_KuFLYSa5agPMvbCA8klBCemSLZI4id04/edit?usp=sharing). Presented at _4th ASSERT Software Engineering Workshop_, Stockholm, Sweden, Sep 2018.
+
+
+# Footnotes
+
+[^1]: If you are interested in placing me at your event, please [email me](mailto:cesarsotovalero@gmail.com). It’s free. You will just have to pay for economy-class airfare and a room in a decent hotel.
