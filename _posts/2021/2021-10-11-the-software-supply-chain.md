@@ -175,3 +175,4 @@ I hope events such as the SolarWinds incident become less frequent in the near f
 - [https://reproducible-builds.org/docs](https://reproducible-builds.org/docs)
 - [https://survey.opensourceunchained.eu/](https://survey.opensourceunchained.eu/)
 - [SolarWinds attack explained: And why it was so hard to detect](https://www.csoonline.com/article/3601508/solarwinds-supply-chain-attack-explained-why-organizations-were-not-prepared.html)
+- [USA Securing Open Source Software Act of 2022](https://www.govinfo.gov/content/pkg/BILLS-117s4913is/pdf/BILLS-117s4913is.pdf)

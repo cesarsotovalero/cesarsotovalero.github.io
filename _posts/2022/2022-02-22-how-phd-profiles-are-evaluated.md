@@ -98,6 +98,13 @@ You have to go through the well-known process by working hard and being consiste
 It is better to be prepared in advance because, as a researcher, your profile will be evaluated several times.
 There are three major evaluation layers, and the goal should be to pass them as painlessly as possible.
 
+<figure class="jb_picture">
+  {% responsive_image path: img/posts/2022/bart_phd.png alt:"A PhD is not enough to become a university professor." %}
+  <figcaption class="stroke"> 
+    &#169; A PhD is not enough dude. Image created with <a href="https://www.ranzey.com/generators/bart/index.html">Ranzey's image generator</a>.
+  </figcaption>
+</figure>
+
 ## From PhD Student to PostDoc
 
 If you graduated as a PhD in Computer Science, then you're lucky because PostDoc candidates in this field are scarce.
@@ -163,7 +170,6 @@ I want to mention that researcher is somebody who actively does research, includ
 - _A PhD working in R&D at a company_
 
 Therefore, if you have a strong passion for research and don't like teaching, then there are other ways to be a researcher outside academia.
-
 
 
 
