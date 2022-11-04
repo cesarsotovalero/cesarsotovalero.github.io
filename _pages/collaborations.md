@@ -50,7 +50,7 @@ Select a set of Android applications for which we have the source code and that 
 
 [2] [https://techjury.net/stats-about/app-usage](https://techjury.net/stats-about/app-usage)
 
-[3] Bruno Gois Mateus and Matias Martinez. [An empirical study on quality of Android applications written in Kotlin language](https://arxiv.org/pdf/1808.00025.pdf). CoRR, abs/1808.00025, 2018.
+[3] Bruno Gois Mateus and Matias Martinez. [An empirical study on quality of Android applications written in Kotlin language](https://arxiv.org/pdf/1808.00025.pdf).
 
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 

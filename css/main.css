@@ -197,6 +197,7 @@ blockquote p:first-child {
 
 em {
   font-style: italic;
+  font-family: "Equity Text A", sans-serif;
 }
 
 .post-categories {
