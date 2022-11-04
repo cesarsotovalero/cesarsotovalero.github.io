@@ -23,4 +23,9 @@
   img: TS-Classification_logo.svg
   url: https://github.com/cesarsotovalero/time-series-classification
   stars: cesarsotovalero/time-series-classification?style=social
+- title: DepTrim
+  description: DepTrim automatically diversifies dependencies in Maven projects.
+  img: DepTrim_logo.svg
+  url: https://github.com/castor-software/deptrim
+  stars: castor-software/deptrim?style=social
 
