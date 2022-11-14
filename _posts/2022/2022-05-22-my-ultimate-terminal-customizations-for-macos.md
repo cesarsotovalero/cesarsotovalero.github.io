@@ -168,7 +168,7 @@ These are my favorite Oh My Zsh plugins:
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions): Suggests commands as you type based on history and completions.
 - [aliases](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/aliases/README.md): Lists the shortcuts that are currently available based on the plugins you have enabled.
 - [mvn](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/mvn/README.md): Provides many useful aliases as well as completion for the Apache Maven command (`mvn`).
-- [jenv](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/jenv/README.md): Initializes `jenv` and provides the jenv_prompt_info function to add Java version information to prompts.
+- [jenv](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/jenv/README.md): Initializes `jenv` and provides the `jenv_prompt_info` function to add Java version information to prompts.
 - [sdk](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/sdk/README.md): Plugin for [SDKMAN](https://sdkman.io/), a tool for managing parallel versions of multiple Software Development Kits on most Unix based systems. Provides autocompletion for all known commands.
 - [vscode](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/vscode/README.md): Simplifies the interaction between the command line and VS Code or VSCodium editor.
 
