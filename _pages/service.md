@@ -69,6 +69,8 @@ Also,
 
 # Co-Reviewer
 
+- [ICST](https://conf.researchr.org/home/icst-2023), 2023
+- [EMSE](https://www.springer.com/journal/10664), 2022
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2022
 - [ACM Digital Threats: Research and Practice](https://dl.acm.org/journal/dtrap), 2021
 - [ISSRE](http://2020.issre.net/research-cfp), 2020
