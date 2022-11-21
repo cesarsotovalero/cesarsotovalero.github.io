@@ -232,4 +232,3 @@ And you better learn how to play it well 😀.
 
 - [:earth_americas: Patterns for writing good rebuttals](https://andreas-zeller.info/2012/10/01/patterns-for-writing-good-rebuttals.html), by Andreas Zeller.
 - [:earth_americas: How we write rebuttals](https://deviparikh.medium.com/how-we-write-rebuttals-dc84742fece1), by Devi Parikh.
-- [A practical guide for conference rebuttal (experience share)](https://docs.google.com/presentation/d/1IdKlUgienB--mWCNGUxI_aViPg_3jwwC3Mdmx-t1Jb0/edit?usp=sharing), by He Ye.
