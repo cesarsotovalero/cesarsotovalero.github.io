@@ -80,8 +80,9 @@ Also,
 
 # Volunteer 
 
-- [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), Staff Member, 2020
-- [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), Staff Member, 2017
+- [JFokus](https://www.jfokus.se/), **Volunteer**, 2023
+- [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), **Staff Member**, 2020
+- [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), **Staff Member**, 2017
 
 # Outreach
 
