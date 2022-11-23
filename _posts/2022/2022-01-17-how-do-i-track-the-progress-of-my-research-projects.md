@@ -52,6 +52,11 @@ One drawback of this one-to-one back and ford is that it sometimes creates a fee
 [//]: # (Practical explanation of the problem)
 Supervisors are typically very busy people. They don’t have the time to analyze all the details of an investigation. Students, on the other hand, are more excited about moving fast because they have more pressure to show up the progress being made. However, research is an iterative process. The goal and scope of an investigation may change over time. This can cause some inexperienced students to feel like they are making something wrong or simply lose their motivation and initial enthusiasm. For example, it is very common to suffer from [writer's block](https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html) or imposter syndrome.
 
+<aside class="quote">
+    <em>“Imposter syndrome is a concept describing individuals who are marked by an inability to internalize their accomplishments and a persistent fear of being exposed as a fraud.”</em>
+</aside>
+
+
 [//]: # (Some good practices that exist to remediate)
 There are some good practices to mitigate the stress.
 It is important to always keep a record of what was discussed in every single meeting (e.g., using a Google Doc or writing comments directly in the working paper).
