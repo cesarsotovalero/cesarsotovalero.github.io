@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>The True Value of Attending Academic Conferences</title>
+        <description>
+          It&apos;s not only about the technical content - 
+          I recently attended the 29th edition of ESEC/FSE 2022 in Singapore. ESEC/FSE is one of the most prestigious conferences in the Software Engineering field.1 This was my first time participating in an academic conference (in person). I went there to present two papers. But let me admit it, I had...
+        </description>
+        <pubDate>Sat, 19 Nov 2022 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/the-true-value-of-attending-academic-conferences.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-true-value-of-attending-academic-conferences.html</guid>
+      </item>
+    
+      <item>
         <title>On the Parkinson&apos;s Law of Triviality for Computer Science Researchers</title>
         <description>
           It must stop! - 
@@ -213,17 +224,6 @@
         <pubDate>Fri, 10 Sep 2021 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/configuring-remote-connections-in-unix-based-systems-using-ssh.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/configuring-remote-connections-in-unix-based-systems-using-ssh.html</guid>
-      </item>
-    
-      <item>
-        <title>What Does It Take to Become a Software Architect?</title>
-        <description>
-          A matter of responsibilities - 
-          Programmers and software engineers are in high demand today. In particular, those programmers who adapt to the new technological challenges and evolve their skills are more likely to grow professionally. A natural career path for experienced engineers to push forward their lifework is transitioning towards a software architect role. In...
-        </description>
-        <pubDate>Mon, 09 Aug 2021 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/what-does-it-take-to-become-a-software-architect.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/what-does-it-take-to-become-a-software-architect.html</guid>
       </item>
     
   </channel>
