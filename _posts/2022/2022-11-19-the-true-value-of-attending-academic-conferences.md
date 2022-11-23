@@ -84,21 +84,21 @@ This is one kind of knowledge that can only be gathered when exposing to a diffe
 
 The most important aspect of attending academic conferences is the opportunity to meet and interact with other researchers.
 If you ask me, this is a key aspect of the experience and the main reason why one should attend academic conferences.
-The possibility of this kind of personal engagement is probably the main driver for attending a conference.
-I was able to talk with many researchers from different countries and institutions.
+The possibility of getting this kind of personal engagement with the academic community is a unique experience.
+At ESEC/FSE, I was able to talk with many researchers from different countries and institutions.
 I could not have had such a great experience if I had attended this conference online.
 
-Science is perceived today as a competitive endeavor.
-People impact of researchers is often measured by the number of publications and citations in Google Scholar.
-This is unfortunate, but there is not much we can do about.
-Going to conferences allows us to perceive science as a collaborative endeavor instead.
+On the other hand, science is perceived today as a competitive endeavor.
+As I've mentioned [before](../blog/how-phd-profiles-are-evaluated.html), the impact of researchers is often measured by their number of publications and citations in Google Scholar.
+This is unfortunate, but there is not much we can do about it.
+Fortunately, participating at conferences allows us forget about it for a while, and to perceive science as a collaborative endeavor instead.
 
 As Ph.D. students, we have been reading papers from the beginning of our studies.
-I know the names of the main researchers investigating on my topic.
-Their names are in the papers, of course, but who/how are these people really beyond the name?
-There is only one way to know it.
+I know the names of the main researchers that are active on my topic.
+Their names are in the papers, of course, but who/how are these people really?
+A conference is an excellent plate to figure it out!
 
-> “I was coming back from the conference to my hotel on the last day on a bus (a 45 mins trip). I notice that one of the most prolific professors in my field was also on the bus. I told to myself that I couldn’t miss the opportunity to talk with this guy. So approached him, and we had an informal semi-technical discussion about the past, the present, and the future of software debloating. He told me that some of his Ph.D. students are working on similar problems to me. At the end of our talk, I understood that I was in the correct research direction. This increased my confidence in the quality of my own work.”
+> “The last day, I was coming back from the conference to my hotel. It is a 45 mins trip on a bus. I notice that one of the most prolific professors in my field was sitting on the same bus. I told to myself: I should’t miss the opportunity to talk with this guy. So I approached him, and we had an informal, semi-technical discussion about the past, the present, and the future of software debloating. He told me that some of his Ph.D. students are working on the exact same problems that I envisioned some years ago. At the end of our talk, I understood that my knowledge of the topic is actually quite solid, and that I took a correct research direction. This talk increased significantly my confidence about the quality of my own work.”
 
 The opportunity to talk with other researchers is priceless.
 I not only met many people from my field, but other prestigious researchers who are working on different topics (400+ researchers registered to ESEC/FSE this year).
