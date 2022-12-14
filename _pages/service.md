@@ -81,6 +81,7 @@ Also,
 # Volunteer 
 
 - [JFokus](https://www.jfokus.se/), **Volunteer**, 2023
+- [Un|fold](https://rethread.art/projects/unfold.html), Nobel Week Lights, 2022
 - [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), **Staff Member**, 2020
 - [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), **Staff Member**, 2017
 

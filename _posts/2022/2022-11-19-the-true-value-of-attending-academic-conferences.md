@@ -3,7 +3,7 @@ layout: post
 title: The True Value of Attending Academic Conferences
 subtitle: It's not only about the technical content
 tags: academia
-description: I recently attended ESEC/FSE 2022 in Singapore. ESEC/FSE is one of the most prestigious conferences in the Software Engineering field. This was my first time participating in this kind of conference (in real-life). In this blog post, I share my experiences, with a focus on what I think is the actual value of being at these kinds of events. 
+description: I recently attended the 29th edition of ESEC/FSE 2022 in Singapore. This was my first time participating in a big academic conference (in real-life). In this blog post, I share my experiences, with a focus on what I think is the actual value of attending these kinds of events. 
 keywords:
   - academic conferences,
   - ESEC/FSE experience,
