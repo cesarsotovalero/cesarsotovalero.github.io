@@ -45,7 +45,7 @@ published: true
 
 # Thesis Supervisor
 
-- [The State of Software Diversity in the Software Supply Chain of Ethereum Clients](../files/papers/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf), Noak Jönsson, **Bachelor Thesis**, KTH 2022
+- [The State of Software Diversity in the Software Supply Chain of Ethereum Clients](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf), Noak Jönsson, **Bachelor Thesis**, KTH 2022
 
 - [Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf), Martin Sköld, **Master Thesis**, KTH 2020
 
