@@ -81,11 +81,11 @@ Also,
 # Volunteer 
 
 - [JFokus](https://www.jfokus.se/), **Volunteer**, 2023
-- [Un|fold](https://rethread.art/projects/unfold.html), Nobel Week Lights, 2022
 - [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), **Staff Member**, 2020
 - [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), **Staff Member**, 2017
 
 # Outreach
 
+- [:earth_americas: Unfold](https://rethread.art/projects/unfold.html), Nobel Week Lights, 2022
 - [:earth_americas: KTH Intranet Interview](https://intra.kth.se/en/eecs/aktuellt-pa-eecs/nyheter/grattis-till-vinsten-cesar-1.1112396), 2021
 - [:earth_americas: Estudios de Doctorado en Suecia: Por Dónde Empezar?](https://eltoque.com/estudios-de-doctorado-en-suecia-por-donde-empezar) (co-authored article, _in Spanish_), 2021
