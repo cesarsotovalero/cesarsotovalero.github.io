@@ -18,6 +18,17 @@
       </item>
     
       <item>
+        <title>The Execution Lifecycle of a Java Application</title>
+        <description>
+          Or... what happens when you run a Java program? - 
+          If you are reading this post it’s likely that you already know how to write Java code. That’s very good for you, I think everyone should know how to code these days (in the same way everyone should know about basic math operations such as +, -, *, and /...
+        </description>
+        <pubDate>Thu, 20 Oct 2022 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html</guid>
+      </item>
+    
+      <item>
         <title>On the Parkinson&apos;s Law of Triviality for Computer Science Researchers</title>
         <description>
           It must stop! - 
@@ -213,17 +224,6 @@
         <pubDate>Mon, 20 Sep 2021 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/design-for-microservices.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/design-for-microservices.html</guid>
-      </item>
-    
-      <item>
-        <title>Configuring Remote Connections in Unix-Based Systems Using SSH</title>
-        <description>
-          A noob&apos;s guide - 
-          When working as a software engineer, you will need to connect to a remote computer hosted on a remote server.1 This is a common task for developers, sysadmins, and researchers. This post will show you how to configure a remote connection in Unix-based systems. You will learn how to create...
-        </description>
-        <pubDate>Fri, 10 Sep 2021 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/configuring-remote-connections-in-unix-based-systems-using-ssh.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/configuring-remote-connections-in-unix-based-systems-using-ssh.html</guid>
       </item>
     
   </channel>
