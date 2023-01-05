@@ -2,8 +2,8 @@
 layout: post
 title: The Execution Lifecycle of a Java Application
 subtitle: Or... what happens when you run a Java program?
-tags: academia
-description: TODO 
+tags: programming
+description: This blog post describes in details what happens when executing a Java application. After reading this post, you will understand the execution lifecycle of a Java application and the activities performed by the JVM during the execution phase.
 keywords:
   - class loaders,
   - java bytecode execution,
@@ -15,15 +15,16 @@ show-avatar: false
 toc: true
 date: 2022/10/20
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 If you are reading this post it's likely that you already know how to ~~write Java~~ code.
-Good for you, I think everyone should know how to code, in the same way everyone should know about basic math operations (e.g., +, -, *, /). 
-In a [previous post](../blog/aot-vs-jit-compilation-in-java.html), I wrote about how Java code is first "compiled" to bytecode and later interpreted by the JVM.
-However, I never explained how the JVM actually executes the bytecode.
-In other words: what happens after clicking the "execute" button on your favorite IDE?
-After reading this post, you will know about the the activities that occur during the execution of a Java program.
+That's very good for you, I think everyone should know how to code these days (in the same way everyone should know about basic math operations such as +, -, *, and / even though we all have calculators). 
+In a [previous post](../blog/aot-vs-jit-compilation-in-java.html), I wrote about how Java code is first "compiled" to bytecode and later interpreted and **executed** by the JVM.
+However, I didn't explained how the JVM actually perform the bytecode execution.
+The aim of this article is to fill this gap.
+I going to answer the question: What happens when clicking the "execute" button on your favorite IDE?
+After reading this post, you will understand the execution lifecycle of a Java application and the activities performed by the JVM during the execution phase.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/statue.jpg alt:"A statue representing learning." %}
@@ -34,164 +35,270 @@ After reading this post, you will know about the the activities that occur durin
 
 # Execution Lifecycle
 
+The execution lifecycle of a Java application can be broadly divided into three phases:
 
-The following activity diagram illustrates the execution lifecycle of a Java application:
+1. **Compilation:** The source code of the application is converted into bytecode[^2] using the "javac" compiler.
+2. **Class Loading:** The bytecode is loaded into memory and the necessary class files are prepared for execution.
+3. **Bytecode Execution:** The JVM executes the bytecode and the program runs.
+ 
+The JVM is responsible for managing the last phase. 
+This includes loading the bytecode, allocating memory, and converting the bytecode into native machine code.
+In other words, the JVM handles the task of translating the bytecode into machine code that is specific to the target platform and executing it.
+This is a complex process because each microprocessor architecture "understands" a different set of instructions (e.g., x86, ARM, MIPS, PowerPC, etc.).
+The JVM also provides runtime services such as memory management, thread synchronization, and exception handling.
+
+This post is focused on the **bytecode execution phase**.
+
+The following activity diagram illustrates what happens during this phase:
 
 [//]: # (see https://mermaid-js.github.io)
 {% mermaid %}
 flowchart TB;
-a(["Execution Starts"]) --> b["Loading Classes"]
-b["Loading Classes"] --> c["Linking Classes"]
-c["Linking Classes"] --> d["Initializing Classes"]
-d["Initializing Classes"] --> e["Creating Instances"]
-e["Creating Instances"] --> f["Finalizing Instances"]  
-f["Finalizing Instances"] --> q{Unloading?}
+a(["Starting Execution"]) --> b["Loading"]
+b["Loading"] --> c["Linking"]
+c["Linking"] --> d["Initializing"]
+d["Initializing"] --> e["Instantiating"]
+e["Instantiating"] --> f["Finalizing"]  
+f["Finalizing"] --> q{Unloading?}
 q -- Yes --> x(["Program Exit"])
-q -- No --> d["Initializing Classes"]
+q -- No --> d["Initializing"]
 {% endmermaid %}
 
-# Running Code Example
+The following sections give more details on each of the activities that occur during the bytecode execution phase.
+
+[//]: # (insert d3 vizualization below)
+[//]: # (see https://medium.com/@johnson.leon.t/d3-ds-part-3-542559b53d7f)
+[//]: # ({::nomarkdown})
+[//]: # (<div id="mything"></div>)
+[//]: # (<script src="{{ base.url | prepend: site.url }}/js/d3/example.js"></script>)
+[//]: # ({:/nomarkdown})
+
+## Loading
+
+Loading refers to the process of finding the binary form of a class or interface (i.e., a `class` file format) with a particular name and constructing a `Class` object from that binary form.
+The JVM uses a [ClassLoader](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ClassLoader.html) to find the binary representation of `Main`.
+The `ClassLoader` class and its subclasses implement the loading process.
+The method `defineClass` is called to construct `Class` objects from binary representation of the class file format.
+
+JVM provides two types of class loaders: a built-in class loader called the **bootstrap class loader**, which loads the core Java classes from the `rt.jar` file; and the **extension class loader**, which loads classes from the `ext` directory. 
+In addition, **application class loaders** can be used to load classes from other locations, such as the classpath or a remote server.
+The later are customized subclasses of `ClassLoader` that can load classes via the `java.lang.Class` instance.
 
 {% highlight java linenos %}
-class Point {
-  int x;
-  int y;
-  
-  Point() {
-    x = 0;
-    y = 0;
+public class CustomClassLoader extends ClassLoader {
+  public CustomClassLoader(ClassLoader parent) {
+    super(parent);
   }
-}
-
-
-class ShapedPoint extends Point implements Shape {
-  Shape shape;
-  
-  public void setShape(Shape shape) {
-    this.shape = shape;
-  }
-}
-
-public class Main {
-  public static void main(String[] args) {
-    for (int i = 0; i < args.length; i++) {
-      System.out.print(i == 0 ? args[i] : " " + args[i]);
+  // Method to load a class given its name
+  public Class<?> loadClass(String name) throws ClassNotFoundException {
+    if (!name.startsWith("com.example")) {
+      // Delegate to the parent class loader
+      return super.loadClass(name);
+      }
+    // The class name does start with "com.example", construct the file name
+    String fileName = name.substring(name.lastIndexOf('.') + 1) + ".class";
+    // Try to open an InputStream for the file
+    InputStream inputStream = getClass().getResourceAsStream(fileName);
+    // If the stream is null, throw a ClassNotFoundException
+    if (inputStream == null) {
+      throw new ClassNotFoundException();
+    }
+    try {
+      // Create a byte array to hold the contents of the file
+      byte[] bytes = new byte[inputStream.available()];
+      // Read the bytes from the input stream
+      inputStream.read(bytes);
+      // Define the class using the class name, the byte array, and the number of bytes
+      return defineClass(name, bytes, 0, bytes.length);
+    } catch (IOException e) {
+      throw new ClassNotFoundException();
     }
   }
 }
 {% endhighlight %}
 
+This class extends the `ClassLoader` class and overrides its `loadClass` method to provide custom behavior for loading classes. 
+It first checks if the class name starts with "com.example", and if it does not, it delegates to the parent class loader. 
+If the class name does start with "com.example", it constructs the file name and tries to open an `InputStream` for it.
+If it succeeds, it reads the bytes from the input stream and calls the `defineClass` method to define the class. If it fails, it throws a `ClassNotFoundException`.
 
-
-## Loading
-
-> Loading refers to the process of finding the binary form of a class or interface (i.e., a `class` file format) with a particular name and constructing a `Class` object from that binary form.
-
-The JVM uses a Class Loader to find the binary representation of `Main`.
-
-The `ClassLoader` class and its subclasses implement the loading process.
-The method `defineClass` may be used to construct `Class` objects from binary representation of the class file format.
-
-Different subclasses of `ClassLoader` are used to load classes from different sources, such as the file system, the network, or a database.
-These activities may not be completely to a running application if, for example, a newly compiled version of a class is not found because the class loader is using a cached version of the class.
-
-JVM provides two types of class loaders. 
-One is called bootstrap class loader and another is the user-defined class loader.
-The bootstrap class loader is rigidly defined in the JVM and loads class files according to the specification.
-The user-defined class loader is open for vendor-specific implementation and can custom load classes via the java.lang.Class instance.
-
-The loading process basically performs these three functions:
+In summary, the class loading process performs these three functions:
 
 - Create a binary stream of data from the class file
 - Parse the binary data according to the internal data structure
-- Create an instance of java.lang.Class
-- The Process of Linking
+- Create an instance of `java.lang.Class`
 
+When this is done, the class instance is ready for linking.
 
 ## Linking
 
-> Linking refers to the process of taking a binary form of a class or interface and combining it into the runtime state of the JVM, so that it can be executed.
+Linking refers to the process of taking a binary form of a class or interface and combining it into the runtime state of the JVM, so that it can be executed. 
+Linking involves three steps: verification of the binary representation, preparation of a class of interface, and (optionally) resolution of symbolic references.
 
-Linking involves verification of the binary representation, preparation of a class of interface, and (optionally) resolution of symbolic references.
-
-1. **Verification:** checks that the loaded representation of `Main` is well-formed, with a proper symbol table. It also checks that the code that implements `Main` obeys the semantic requirements of the Java programming languague and the JVM. For example, it checks that every instruction has a valid operation code; that every branch instruction branches to the start of some other instruction, rather than into the middle of an instruction; that every method has a correct signature. 
+1. **Verification:** checks that the loaded representation of a class is well-formed, with a proper symbol table. It also checks that the code that implements the class obeys the semantic requirements of the Java programming languague and the JVM. For example, it checks that every instruction has a valid operation code; that every branch instruction branches to the start of some other instruction, rather than into the middle of an instruction; that every method has a correct signature. 
 2. **Preparation:** involves creating the `static` fields (class variables and constants) for a class or interface and initializings such fields to the default values. This involves allocation of static storage and any data structures that are used internally by the implementation of the JVM, such as method tables.[^1]
-3. **Resolution:** is the process of checking symbolic references from `Main` to other classes and interfaces, by loading the other classes and interfaces that are mentioned, and checking that the references are correct.
+3. **Resolution:** is the process of checking symbolic references from a class to other classes and interfaces, by loading the other classes and interfaces that are mentioned, and checking that the references are correct.
 
-> "During the static linkage in simple implementations of the C languague, a compiled program contains fully-linked version of the program, including completely resolved links to library routines used by the program. 
+> "During the static linkage in simple implementations of the C language, a compiled program contains fully-linked version of the program, including completely resolved links to library routines used by the program. 
 > Copies of these library routines are included in the `a.out` file.
 > In Java, instead, symbolic references are resolved only when they are actively used (i.e., lazy form of resolution).
-> For example, if `Main` has several symbolic references to another class, then the references might be resolved one at a time, as they are used, or perhaps not at all, if these references were never used during execution of a program." 
+> For example, if a class has several symbolic references to another class, then the references might be resolved one at a time, as they are used, or perhaps not at all, if these references were never used during execution of a program." 
 
-In summary, the linking process involves three functions:
+In summary, the linking process involves three phases:
 - Verification
 - Preparation
 - Resolution (optional)
-- The Process of Initialization 
+ 
+When this is done, the classes are ready for initialization. 
 
+## Initializing
 
-## Initialization
+Initialization of a class consists of executing its static initializers and the initializers for `static` fields (class variables) declared in the class.
+The static initializers are executed in the order that they appear in the source code.
 
-> Initialization of a class consists of executing its static initializers and the initializers for `static` fields (class variables) declared in the class.
-> Initialization of an interface consists of executing the initializers for `fields`  (constants) declared in the interface. 
+Consider the following code example, when the JVM initializes the `Main` class, it first initializes all of its superclasses, starting with `Object`.
+Since `Object` has no superclass, the recursion stops there.
+Then, the JVM initializes `Main` by executing the class variable initializers and static initializers in the order that they appear in the source code.
+In this example, the class variable initializer for `x` is executed first, followed by the `static` initializer block, and finally the class variable initializer for `z`.
+After the class is fully initialized, the `main` method can be executed.
 
-To execute the `main` method in the class `Main`, the class needs to be initialized.
-Initialization consists of execution of any class variable initializers and static initializers of the class `Main`, in textual order.
-The JVM initializes all the superclasses of `Main` recursively.
-In this case, the class `Main` has `Object` as its direct superclass, so if `Object` has not being yet initialized, then it must be initialized before `Main` is initialized.
-Note that `Object` as no superclass, so the recursion stops there.
+{% highlight java linenos %}
+class Main extends Object {
+  // Class variable initializers and static initializers are executed in this order
+  static int x = 1;  // Initializer for static field x
+  static int y;  // No initializer for static field y
+  // Static initializer
+  static {
+    y = x + 1;
+  }
+  static int z = x + y;  // Initializer for static field z
+  public static void main(String[] args) {
+    // Main method is executed after the class is initialized
+  }
+}
+{% endhighlight %}
 
 <aside class="quote">
     <em>“Superclasses are initialized before subclasses.”</em>
 </aside>
 
+In general, initialization of a class or interface `T` occurs when any of the following circumstances occurs:
+- An instance of `T` is created
+- A static method of `T` is invoked
+- A static field of `T` is assigned
+- A static field of `T` is used and the field is not a constant field
+- Also note that invocation of a method in a class via reflection causes initialization of the class
 
-Initialization of a class or interface `T` occurs when any of the following circumstances occurs:
-- An instance of `T` is created.
-- A static method of `T` is invoked.
-- A static field of `T` is assigned.
-- A static field of `T` is used and the field is not a constant field.
-Note that invocation of a method in a class via reflection causes initialization of the class.
+Once all classes are initialized, the JVM proceeds to instantiate the classes.
 
-## Creating New Class Instances
+## Instantiating
 
-> A new class instance is explicitly created when evaluation of a class instance creation expression is performed.
+A new class instance is explicitly created when evaluation of a class instance creation expression is performed (e.g., when using the `new` operator).
 
 A class instance may be implicitly created when:
-- Loading a class or interface that contains a string literal or a text block may create a new `String` object.
-- Execution of an operation that causes boxing conversion may create a new object of a wrapper class.
-- Execution of a string concatenation operation may create a new `String` object.
-- Evaluation of a method reference expresssion or a lambda expression may create a new object of a functional interface.
 
-Memory space is allocated for the new class instance.
-This icludes space for the instance variables declared in the class and its superclasses.
+- Loading a class or interface that contains a string literal or a text block may create a new `String` object
+- Execution of an operation that causes boxing conversion may create a new object of a wrapper class
+- Execution of a string concatenation operation may create a new `String` object
+- Evaluation of a method reference expression or a lambda expression may create a new object of a functional interface
 
-# Finalizing Class Instances
+Here's an example of creating a new instance of the class `Point`:
 
+{% highlight java linenos %}
+Point magicPoint = new Point(42, 42);
+{% endhighlight %}
+
+During instantiation, the following steps are performed:
+
+- Memory is allocated on the heap to hold the new object
+- The class's constructor is called to initialize the new object
+- The reference to the new object is returned
+
+## Finalizing
+
+Finalization is the process of cleaning up the resources held by an object and preparing it for garbage collection.
 The class `Object` defines a method `finalize` that is called by the garbage collector when an object is about to be reclaimed.
 
+The JVM defines a `finalize` method in the `Object` class, which can be overridden by subclasses to perform any necessary cleanup actions before the object is garbage collected. 
+Here is an example of a class that overrides the finalize method to delete a file when the `TempFile` object is garbage collected:
+
+{% highlight java linenos %}
+public class TempFile {
+  private File file;
+  public TempFile(String filename) {
+    file = new File(filename);
+  }
+  @Override
+  protected void finalize() throws Throwable {
+    // Delete the file when the TempFile object is garbage collected
+    file.delete();
+    super.finalize();
+  }
+}
+{% endhighlight %}
+
+The previous example can be useful if you want to ensure that temporary files are always deleted when they are no longer needed. 
+It's important to note that the `finalize` method is not guaranteed to be called, and it should not be relied upon for important tasks.
+It is simply a means of performing cleanup actions before an object is garbage collected.
 
 ## Unloading
 
-> Unloading refers to the process of removing a class or interface from the runtime state of the JVM (e.g., its defining class loader may be reclamed by the garbage collector).
-> Classes and interfaces loaded by the bootstrap class loader are never unloaded.
+Unloading refers to the process of removing a class or interface from the runtime state of the JVM (e.g., its defining class loader may be reclaimed by the garbage collector).
+Classes and interfaces loaded by the bootstrap class loader are never unloaded.
 
 Class unloading reduces memory use.
 Consequently, this optimization is only significant for applications that load large numbers of classes and interfaces, and that stop to use them after some time.
 This is done by the garbage collector.
 
+The following example shows an example of user-defined class unloading. 
+Note that the class `LargeClass` has a large array of integers that consume a lot of memory:
+
+{% highlight java linenos %}
+import java.lang.ref.WeakReference;
+public class LargeClass {
+  // A large array of integers that consumes a lot of memory
+  private int[] data = new int[Integer.MAX];
+  public static void main(String[] args) {
+    // Create a LargeClass object and hold a weak reference to it
+    LargeClass largeObject = new LargeClass();
+    WeakReference<LargeClass> weakRef = new WeakReference<>(largeObject);
+    largeObject = null;  // largeObject is no longer strongly reachable
+    // Run the garbage collector
+    System.gc();
+    // Check if the LargeClass object has been collected
+    if (weakRef.get() == null) {
+      System.out.println("The LargeClass object has been collected");
+    } else {
+      System.out.println("The LargeClass object has not been collected");
+    }
+  }
+}
+{% endhighlight %}
+
+In the previous example, if the `LargeClass` object has been garbage collected, the output will be "The LargeClass object has been collected." Otherwise, the output will be "The LargeClass object has not been collected."
+
 ## Program Exit
 
-> Program exit refers to the process of terminating the execution of a program. 
-> This means that all threads that are not daemon threads are terminated, or some thread invokes the `exit` method of the `Runtime` class and the `exit` method is not forbidden by a security manager.
+Program exit refers to the process of terminating the execution of a program. 
+This means that all threads that are not daemon threads are terminated, or some thread invokes the `exit` method of the `Runtime` class.
+This method halts the JVM and exit with a specified exit code. 
+However, the use of this method is restricted by a security manager.
+If a security manager is present and it does not allow the program to exit, the `exit` method will throw a `SecurityException`.
 
+# Conclusion
+
+In this article, we took a deeper look at the execution lifecycle of a Java application. 
+As discussed, there are many phases that are performed before the typical `main` method is executed.
+From loading the class to unloading, the JVM perform a complex series of steps to ensure that the application is executed correctly.
+This knowledge is important for developers, as it helps understanding how the JVM works and how to optimize Java applications.
+I hope you enjoyed this article and learned something new 😎.
 
 # References
 
-- [The Java Language Specification, Java SE 19 Edition]( https://docs.oracle.com/javase/specs/jls/se19/jls19.pdf)
+- [The Java Language Specification, Java SE 19 Edition](https://docs.oracle.com/javase/specs/jls/se19/jls19.pdf)
 - [Dynamic Class Loading in the Java Virtual Machine](https://dl.acm.org/doi/10.1145/286942.286945)
 
 # Footnotes
 
-
-- [^1]: The method table is an array of pointers to the data for each instance method that can be invoked on objects of that class.
+[^1]: The method table is an array of pointers to the data for each instance method that can be invoked on objects of that class.
+[^2]: The bytecode is a low-level code that can be run on any Java Virtual Machine (JVM).

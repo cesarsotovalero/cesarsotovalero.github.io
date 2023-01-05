@@ -16,6 +16,8 @@ The following is a non-exhaustive list of my technical presentations.
 
 # 2022
 
+- [Automatic Software Debloating](../talks/80_percent_2022.pdf "pdf"){:target="_blank"}. 80% Ph.D. Seminar. Presented at KTH, November 2022.
+
 - [Coverage-Based Debloating for Java Bytecode](https://youtu.be/HXj2B8eHmt4 "video"){:target="_blank"}. Presented at ESEC/FSE, Singapore, November 2022.
 
 - [The Multibillion Dollar Software Supply Chain of Ethereum](https://docs.google.com/presentation/d/16yingW3HUNj6XmAfFFc_qz1bSI-ZRfV0/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true). Presented at _1st Workshop on the Software Supply Chain_, KTH, Sweden, October 2022.
