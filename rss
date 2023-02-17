@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>How to Write a Good Cover Letter for a Research Paper</title>
+        <description>
+          Quick an easy - 
+          Submitting a research paper is probably one of the most happy moments in the working life career of PhD students. You’ve been working on that paper for months, maybe years. And you know, clicking that “submit” button is such a moment of relief. You just want it to be finally...
+        </description>
+        <pubDate>Wed, 23 Nov 2022 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/how-to-write-a-good-cover-letter-for-a-research-paper.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-write-a-good-cover-letter-for-a-research-paper.html</guid>
+      </item>
+    
+      <item>
         <title>The True Value of Attending Academic Conferences</title>
         <description>
           It&apos;s not only about the technical content - 
@@ -213,17 +224,6 @@
         <pubDate>Mon, 11 Oct 2021 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/the-software-supply-chain.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-software-supply-chain.html</guid>
-      </item>
-    
-      <item>
-        <title>Design For Microservices!</title>
-        <description>
-          An easy way to boost the popularity of your open-source projects - 
-          The microservice architecture style consists of small and independently deployable services that run all together around a business domain. These small services act like living cells in an organism, each providing unique functionalities to protect the health of the whole system. Microservices have transitioned from a mere buzzword ten years...
-        </description>
-        <pubDate>Mon, 20 Sep 2021 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/design-for-microservices.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/design-for-microservices.html</guid>
       </item>
     
   </channel>
