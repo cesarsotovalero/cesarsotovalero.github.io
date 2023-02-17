@@ -181,17 +181,17 @@ Then go back to it with fresh eyes, and improve it as much as you can.
 As you may already notice, there is a lot of work being done during the revision stage, way before accepting each research paper.
 However, I've noticed that researchers typically don't disclose their revision documents.
 Maybe some researchers are afraid of showing the weaknesses of their research.
-All this work is lost somewhere on the way, and ad the end only the flawless published paper is promoted and shared.
+All this work is lost somewhere on the way, and at the end only the flawless published paper is promoted and shared.
 
 I strongly believe that openness is overall healthy for science.
 Below you can look at some examples of my revision letters for two consecutive major revisions I've done for paper that I published in a prestigious [software engineering journal](https://www.springer.com/journal/10664?gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWBPJ7dgGi8fJhYX4kuqrVXciYhV0YTKriqi0NIWjEPv-M84TakNV5BoCz1wQAvD_BwE).
 Hopefully, this will give you a notion of the amount of work being put along the revision process.
 
 
-| Research Paper                                                                                                                       | Revision Letter                                                                                                                                               |
-|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://link.springer.com/article/10.1007/s10664-020-09914-8) | [Major Revision #1](../files/posts/2022/DepClean_Major_Revision_Round_1.pdf)<br/>[Major Revision #2](../files/posts/2022/DepClean_Major_Revision_Round_2.pdf) |
-| [Coverage-Based Debloating for Java Bytecode](https://dl.acm.org/doi/10.1145/3546948)                          | [Major Revision #1](../files/posts/2022/JDBL_Major_Revision_Round_1.pdf)<br/>[Minor Revision #2](../files/posts/2022/JDBL_Minor_Revision_Round_2.pdf)     |
+| Published Research Paper                                                                                                                                   | Revision Letter                                                                                                                                               |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem<br/>[:earth_americas: Link](https://link.springer.com/article/10.1007/s10664-020-09914-8) | [Major Revision #1](../files/posts/2022/DepClean_Major_Revision_Round_1.pdf)<br/>[Major Revision #2](../files/posts/2022/DepClean_Major_Revision_Round_2.pdf) |
+| Coverage-Based Debloating for Java Bytecode<br/>[:earth_americas: Link](https://dl.acm.org/doi/10.1145/3546948)                                                                       | [Major Revision #1](../files/posts/2022/JDBL_Major_Revision_Round_1.pdf)<br/>[Minor Revision #2](../files/posts/2022/JDBL_Minor_Revision_Round_2.pdf)     |
 
 
 # Conclusion

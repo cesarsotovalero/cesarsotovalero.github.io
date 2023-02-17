@@ -173,6 +173,27 @@ If you use percentages in your document, you can calculate a percentage directly
 For example, `\ShowPercentage{1221}{20023}` prints `6.10%`. 
 Note that a percentage rounded to 0 will be presented as `<1%`
 
+# Handling Ratios
+
+Sometimes percentages are hard to read (e.g., when the numerator and denominator are large numbers).
+In such cases, you can present ratios instead.
+For example, to say that `4` is two times larger that `2`. 
+The following `\Ratio` command calculates based based on two variables.
+
+{% highlight latex linenos %}
+% Create custom user defined command for printing ratios
+{% raw %}
+\newcommand{\Ratio}[2]{
+  \FPeval\percentage{round(#2/#1,1)}
+  \FPeval\percentageOneDecimal{round(#2/#1,1)}
+  \np[\times]{\FPprint{percentageOneDecimal}}
+  \xspace
+}
+{% endraw %}
+{% endhighlight %}
+
+For the previous example, it prints: `2x`.
+
 # Embedding Small Barcharts
 
 A nice way to compare percentages in a graphical manner (especially in tables), is by embedding small barchart plots within them. The following `\ChartSmall` commands does the trick for you:  

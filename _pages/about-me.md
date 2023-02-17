@@ -5,24 +5,17 @@ title: About me
 subtitle: In brief
 ---
 
-
-
 [//]: # (Profile to view: https://www.zeileis.org/)
 
-[//]: # ()
 [//]: # (<code style="text-align: center; font-family:jetbrains_monoregular, courier new, serif; font-size: 18px; font-weight: lighter">)
 
 [//]: # ( <span class="type" style="text-align: center"></span>)
 
-[//]: # (</code>)
 
 <!-- Carbon ads -->
 <div class="cesarcarbon">
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
 </div>
-
-
-
 
 <!-- ![Custom badge](https://img.shields.io/badge/-WORK-blueviolet.svg) -->
 # Work
@@ -32,7 +25,6 @@ My full name is **César Soto Valero**. I'm a Ph.D. student  in the Department o
 large-scale software 
 ecosystems. 
 
-[//]: # (stackoverflow)
 {% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
 
 I'm keen to perform research on software technology which: 
@@ -45,8 +37,6 @@ I'm always open to research collaborations.
 
 # Formal Education
 
-[//]: # (:mortar_board:)
-
 I expect to get my Ph.D. in Software and Computer Systems in 2023.
 
 I hold a [B.Sc.](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [M.Sc.](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
@@ -55,8 +45,8 @@ A long time ago, I was a [competitive programmer](/competitions.html).
 
 Here is my minimalistic [resumé](../files/CV/cv.pdf).
 
-    
 <!-- ![Custom badge](https://img.shields.io/badge/-HOBBIES-blue.svg) -->
+
 # Misc
 
 [//]: # (:dart:)
@@ -64,7 +54,6 @@ Here is my minimalistic [resumé](../files/CV/cv.pdf).
 Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and jogging across the Stockholm's beautiful parks (see my result at [Midnattsloppet 2022](../files/certificates/Midnattsloppet_Diplom_2022.pdf)).
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
-
 
 #  Contact
 
@@ -90,10 +79,6 @@ You can email me using the form below:
     <input type="text" name="_gotcha" style="display:none">
     <input type="submit" value="✉️ Send Message">
 </form>
-
-
-
-
 
 <style>
 form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
@@ -135,8 +120,6 @@ form.wj-contact input[type="submit"]:hover {
   cursor: pointer;
 }
 </style>
-
-
 
 <!-- Typing -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -197,7 +180,6 @@ form.wj-contact input[type="submit"]:hover {
       }
    });
 </script>
-
 
 <p class="post-meta" style="margin-top: 60px;">
    <i class="fas fa-user-edit"></i>
