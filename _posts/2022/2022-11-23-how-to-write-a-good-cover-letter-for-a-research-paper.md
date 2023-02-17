@@ -3,7 +3,7 @@ layout: post
 title: How to Write a Good Cover Letter for a Research Paper 
 subtitle: Quick an easy
 tags: research
-description: TODO
+description: It's a common practice in academic journals to ask authors to write a short cover letter to the editor. In this post, I share my experience writing cover letters for academic journals, along with useful tricks and tips that I've found along the way.
 keywords:
   - PhD career,
   - research paper,
@@ -20,15 +20,17 @@ published: true
 --- 
 
 Submitting a research paper is probably one of the most happy moments in the working ~~life~~ career of PhD students.
-You've been working on that paper for months, maybe years.
-And you know, clicking that "submit" button is such a moment of relief.
+You've been dealing with a research paper for months, maybe years.
+And you know, clicking that "submit" button represents such a moment of relief.
 You just want it to be finally done, moving on to the next project and so on.
 But, wait a minute.
-You just read that you need one more thing: a **cover letter for the editor**.
+The submission system claims you to do one more thing: a **cover letter for the editor!**
+Is the the paper not enough?
 What is that?
+Let me tell you.
 It's a common practice in academic journals to ask authors to write a short cover letter to the editor.
 In this post, I share my experience writing cover letters for academic journals, along with useful tricks and tips that I've found along the way.
-I hope that this post will help you write a good cover letter without hassle.
+I hope this will help you write a good cover letter without hassle.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/knowledge.jpg alt:"The academic revision process: an attempt to achieve perfection for the best of science" %}
@@ -42,20 +44,20 @@ I hope that this post will help you write a good cover letter without hassle.
 > "A cover letter is your opportunity to make a great first impression on the journal editors who will be considering your research paper. 
 > It is your chance to show that you understand the focus and scope of the journal, that your research is a good fit for it, and that your paper is of high quality and relevance."
 
-In short, a good paper cover letter is a document that:
+In short, a good paper cover letter is a document that has:
 
-- It has a good structure.
-- It has a short and concise writing style.
-- It has one page and it is made in LaTeX.[^1]
+- A good structure.
+- A short and concise writing style.
+- One page and it is made with LaTeX.[^1]
 
 # Structure
 
-I suggest the following elements for the body of cover letter for a research paper:
+I suggest the following elements to conform the body of the cover letter for a research paper:
 
-1. **A disclosure paragraph**: This paragraph should disclose any potential conflict of interest. It should also contain a claim mentioning that the paper is original and has not been published elsewhere.
-2. **A clear novelty claim**: This paragraph should clearly state the novelty of the paper. Summarize the methodological and technical contributions, as well as key results.
-3. **A list of contributions**: This list summarizes the main contributions of the paper. This list should be short and concise.
-4. **A list of editors**: This list makes it easy for the Editor in Chief to find the right editor for your paper. Suggest relevant editors and make sure to briefly argument your suggestion based on their individual expertise.
+1. **A disclosure paragraph**: This paragraph should disclose any potential conflict of interest. It should also contain a claim mentioning that the paper is original and has not been published elsewhere. If the paper is submitted to an special issue, it should also be mentioned here.
+2. **A clear novelty claim**: This paragraph should clearly state the novelty of the paper. Summarize the methodological and technical contributions, as well as key results (a single number is perfect).
+3. **A list of contributions**: This list summarizes the main contributions of the paper. Make it short and concise.
+4. **A list of suggested editors**: This list makes it easy for the Editor in Chief to find the right editor for your paper. Suggest relevant editors and make sure to briefly argument your suggestion based on their individual expertise.
 
 # Style
 
@@ -66,19 +68,20 @@ I suggest the following elements for the body of cover letter for a research pap
 Here are a couple of additional **tips** regarding the style of the cover letter:
 
 - Use short and concise writing style (avoid giving too much context).
-- Write in the first person (the main author) and use present tense.
+- Write in the first person (from the perpective of the first author) and use present tense.
 
 The following are non-obvious **don'ts** for a cover letter:
 
-- Don't over sell the contributions of the paper.
-- Don't include references, figures, or tables (footnotes are OK).
-- Don't repeat the same information written in the paper's abstract. 
+- Don't over sell the contributions of the paper. For example, don't say: "This paper is a breakthrough in the field of X", instead say: "This paper makes a significant contribution to the field of X".
+- Don't include references, figures, or tables (footnotes are OK). 
+- Don't repeat the same information written in the paper's abstract.  
 
-# LaTeX Template
+# My LaTeX Template
 
 I've created a LaTeX template for writing cover letters for research papers.
-The template is based on the [newlfm](https://ctan.org/pkg/newlfm) LaTeX package (not updated since 2009).
-Note that the date is autogenerated using the `\today` macro.
+The template has the look and feeling of the [newlfm](https://ctan.org/pkg/newlfm) LaTeX package (not updated since 2009), but it uses modern packages.
+
+Here's a screenshot of the resulting PDF file:
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/paper_cover_letter.png alt:"Overview of the template." %}
@@ -147,10 +150,13 @@ To use the template, you only need to fill in the following LaTeX macros:
 \newcommand{\EditorThreeExpertise}{C\xspace}
 {% endhighlight %}
 
+Note that the date is autogenerated using the `\today` macro.
+
 # Examples
 
 As with [revision letters](../2022/2022-03-13-how-to-write-a-good-revision-letter.md), researchers typically don't disclose their cover letters.
-I guess that this is because they are considered as a second class citizen in the scientific community (compared with the paper).
+I guess that this is because they are considered as a second class citizen by the scientific community.
+When compared to the paper, the cover letter is us a formality.
 The effort put into them most of the time goes to waste, and only the final flawless version of the paper that is published and shared receives recognition.
 
 Below you can look at some examples of my cover letters, corresponding to papers published in prestigious [software engineering journal](https://www.springer.com/journal/10664?gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWBPJ7dgGi8fJhYX4kuqrVXciYhV0YTKriqi0NIWjEPv-M84TakNV5BoCz1wQAvD_BwE).
