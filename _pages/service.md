@@ -13,7 +13,13 @@ published: true
 
 # Teacher Assistant
 
+### 2023
+
+- [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2023
+
 ### 2022
+
+- [EF112X Examensarbete inom elektroteknik, grundnivå](https://www.kth.se/social/course/EF112X/), given by [Antita Kullen](https://people.kth.se/~kullen/) at KTH, Spring 2022
 
 - [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2022
 
@@ -80,7 +86,7 @@ Also,
 
 # Volunteer 
 
-- [JFokus](https://www.jfokus.se/), **Volunteer**, 2023
+- [Jfokus](https://www.jfokus.se/), **Volunteer**, February 2023
 - [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), **Staff Member**, 2020
 - [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), **Staff Member**, 2017
 

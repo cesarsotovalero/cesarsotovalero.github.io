@@ -14,6 +14,10 @@ published: true
 As a Ph.D. student, I present my work in academic conferences, workshops, and software companies.[^1]
 The following is a non-exhaustive list of my technical presentations.
 
+# 2023
+
+- The Software Supply Chain of Crypto and Decentralization. Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [_2nd Descentralized Camp Meetup_](https://www.meetup.com/decentralized-camp/events/290035869/), Developers Bay, January 2023.
+
 # 2022
 
 - [Automatic Software Debloating](../talks/80_percent_2022.pdf "pdf"){:target="_blank"}. 80% Ph.D. Seminar. Presented at KTH, November 2022.
