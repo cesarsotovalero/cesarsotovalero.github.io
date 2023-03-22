@@ -26,6 +26,12 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
 # 2023
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
+  **Challenges of Producing Software Bill Of Materials for Java**. 
+  TODO authors. 
+  _arXiv_.
+  <a href="https://arxiv.org/abs/2303.11102">:earth_americas: Link</a>
+
+- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Automatic Specialization of Third-Party Java Dependencies**. 
   César Soto-Valero, Deepika Tiwari, Tim Toady, and Benoit Baudry. 
   _arXiv_.
@@ -36,6 +42,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
 [//]: # (  Javier Ron, César Soto-Valero, Benoit Baudry, and Martin Monperrus. )
 [//]: # (  _arXiv_.)
 [//]: # (  <a href="TODO_URL">Link</a>)
+
 
 # 2022
 
