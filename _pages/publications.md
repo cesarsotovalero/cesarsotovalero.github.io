@@ -27,7 +27,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Challenges of Producing Software Bill Of Materials for Java**. 
-  TODO authors. 
+  Musard Balliu, Benoit Baudry, Sofia Bobadilla, Mathias Ekstedt, Martin Monperrus, Javier Ron, Aman Sharma, Gabriel Skoglund, César Soto-Valero, and Martin Wittlinger.
   _arXiv_.
   <a href="https://arxiv.org/abs/2303.11102">:earth_americas: Link</a>
 
