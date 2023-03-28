@@ -37,11 +37,11 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   _arXiv_.
   <a href="https://arxiv.org/abs/2302.08370">:earth_americas: Link</a>
 
-[//]: # (- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> )
-[//]: # (  **Highly Available Blockchain Nodes With N-Version Design**. )
-[//]: # (  Javier Ron, César Soto-Valero, Benoit Baudry, and Martin Monperrus. )
-[//]: # (  _arXiv_.)
-[//]: # (  <a href="TODO_URL">Link</a>)
+- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
+  **Highly Available Blockchain Nodes With N-Version Design**. 
+  Javier Ron, César Soto-Valero, Long Zhang, Benoit Baudry, and Martin Monperrus. 
+  _arXiv_.
+  <a href="https://arxiv.org/abs/2303.14438">Link</a>
 
 
 # 2022
