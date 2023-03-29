@@ -41,7 +41,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   **Highly Available Blockchain Nodes With N-Version Design**. 
   Javier Ron, César Soto-Valero, Long Zhang, Benoit Baudry, and Martin Monperrus. 
   _arXiv_.
-  <a href="https://arxiv.org/abs/2303.14438">Link</a>
+  <a href="https://arxiv.org/abs/2303.14438">:earth_americas: Link</a>
 
 
 # 2022
