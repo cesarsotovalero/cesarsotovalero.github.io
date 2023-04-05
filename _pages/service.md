@@ -63,6 +63,8 @@ published: true
 
 > My verified reviews for journals can be seen in [Publons](https://publons.com/researcher/1355482/cesar-soto-valero/peer-review)(<a href="https://publons.com/researcher/1355482/cesar-soto-valero/peer-review" style="text-decoration: underline;"><i class="ai ai-publons"></i></a>).
 
+- [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2023
+- [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2022
 - [International Journal of Computer Science in Sport](https://sciendo.com/journal/IJCSS), 2021
 - [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021
 - [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019
@@ -76,7 +78,6 @@ Also,
 # Co-Reviewer
 
 - [ICST](https://conf.researchr.org/home/icst-2023), 2023
-- [EMSE](https://www.springer.com/journal/10664), 2022
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2022
 - [ACM Digital Threats: Research and Practice](https://dl.acm.org/journal/dtrap), 2021
 - [ISSRE](http://2020.issre.net/research-cfp), 2020

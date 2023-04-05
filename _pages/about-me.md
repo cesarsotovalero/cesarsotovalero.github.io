@@ -21,9 +21,7 @@ subtitle: In brief
 # Work
 
 [//]: # (:briefcase: )
-My full name is **César Soto Valero**. I'm a Ph.D. student  in the Department of Software and Computer Systems ([SCS](https://www.kth.se/scs/software-engineering)) working with [Benoit Baudry](https://www.kth.se/profile/baudry) at [KTH](https://kth.se) Royal Institute of Technology, in Sweden <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">. My research work is generously funded by the Wallenberg Autonomous Systems and Software Program ([WASP](https://wasp-sweden.org)), funded by Knut and Alice Wallenberg Foundation. My current research is focused on software diversification, automatic program debloating and software specialization.[^1] I also do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories.[^2] In particular, I'm interested in measuring the impact and pervasiveness of software bloat across 
-large-scale software 
-ecosystems. 
+My full name is **César Soto Valero**. I'm a Ph.D. student  in the Department of Software and Computer Systems ([SCS](https://www.kth.se/scs/software-engineering)) working with [Benoit Baudry](https://www.kth.se/profile/baudry) at [KTH](https://kth.se) Royal Institute of Technology, in Sweden <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">. My research work is generously funded by the Wallenberg Autonomous Systems and Software Program ([WASP](https://wasp-sweden.org)), funded by Knut and Alice Wallenberg Foundation. My current research is focused on software debloating.[^1] I also do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories.[^2] In particular, I'm interested in measuring the impact and pervasiveness of software bloat across large-scale software ecosystems. 
 
 {% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
 
@@ -33,15 +31,15 @@ I'm keen to perform research on software technology which:
 2. Provide practical tools for developers in order to improve software quality.
 
 If you are interested in collaborating with me, have a look at my list of [research topics](./collaborations.html).
-I'm always open to research collaborations.
+I'm always open to do cool research through collaboration.
 
 # Formal Education
 
-I expect to get my Ph.D. in Software and Computer Systems in 2023.
+I'll defend my Ph.D. in Computer Science in June 2023.
 
 I hold a [B.Sc.](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [M.Sc.](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
 
-A long time ago, I was a [competitive programmer](/competitions.html). 
+A long time ago, I participated in [programming competitions](/competitions.html). 
 
 Here is my minimalistic [resumé](../files/CV/cv.pdf).
 
@@ -56,12 +54,6 @@ Out of work, I enjoy spending time with my family, reading ~~physical~~ books, a
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
 #  Contact
-
-My physical workplace is currently at the KTH campus:
-
-[//]: # (:email:)
-
-<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="350px" id="gmap_canvas" src="https://maps.google.com/maps?q=LINDSTEDTSV%C3%84GEN%203%2C%20BUILDING%20D&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
 
 <!-- 
      After implementing this contact form make sure
