@@ -2,6 +2,5 @@
 
 This is my personal website and blog.
 
-See it at
-[https://www.cesarsotovalero.net](https://www.cesarsotovalero.net)
+Live at [https://www.cesarsotovalero.net](https://www.cesarsotovalero.net)
 
