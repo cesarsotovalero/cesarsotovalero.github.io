@@ -156,8 +156,7 @@ a {
 
 a:hover, a:focus {
   color: var(--main-text-color);
-  text-decoration-thickness: 0.05em;
-  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
 }
 
 @media only screen and (max-width: 450px) {
@@ -1122,7 +1121,7 @@ p.post-meta {
 
 .post-preview a:hover {
   text-decoration: underline;
-  text-decoration-thickness: 0.05em;
+  text-decoration-thickness: 0.1em;
 }
 
 .post-read-more {
