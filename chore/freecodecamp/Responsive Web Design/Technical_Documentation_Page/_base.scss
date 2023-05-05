@@ -1,7 +1,7 @@
-@import "./colors";
-@import "./fonts";
-@import "./mixings";
-@import "./mediaq";
+@import "colors";
+@import "fonts";
+@import "mixings";
+@import "mediaq";
 
 * {
   box-sizing: border-box;
@@ -27,15 +27,11 @@ img {
   max-width: 100%;
 }
 
-
 h1 {
-  align-content: center;
-  text-align: center;
-  color: $gray-300;
+  color: $gray-900;
   font-size: 2.5rem;
   font-weight: 800;
   padding: 0.5rem 0.5rem 0.5rem 0;
-  @include text-shadow-close-and-heavy;
 }
 
 h2 {

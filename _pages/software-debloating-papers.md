@@ -358,6 +358,7 @@ Conducts  the  first  systematic  experimental  study  of the  joint  power  per
 
 # External resources
 
+- [Sensenmann: Code Deletion at Scale at Google](https://testing.googleblog.com/2023/04/sensenmann-code-deletion-at-scale.html)
 - [Java Bytecode Debloating for Size Reduction and Security](http://web.cs.ucla.edu/~miryung/research.html#debloat)
 - [Open-source minimalism?](https://github.com/readme/featured/open-source-minimalism?mc_cid=4f788c11a5&mc_eid=269776c39a)
 - [Technical Perspective: What Is the Ideal Operating System?](https://cacm.acm.org/magazines/2022/5/260363-technical-perspective-what-is-the-ideal-operating-system/fulltext)
