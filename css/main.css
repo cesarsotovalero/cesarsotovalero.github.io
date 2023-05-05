@@ -21,7 +21,6 @@ body {
   letter-spacing: -0.2px;
   word-spacing: 1.5px;
   overflow-x: hidden;
-  counter-reset: h1counter h2counter h3counter h4counter;
 }
 
 @media only screen and (max-width: 450px) {
@@ -74,6 +73,10 @@ h1, h2, h3, h4, h5, h6 {
   font-feature-settings: "kern";
   font-weight: bold;
   /*text-transform: capitalize;*/
+}
+
+.blog-post {
+  counter-reset: h1counter h2counter h3counter h4counter;
 }
 
 
