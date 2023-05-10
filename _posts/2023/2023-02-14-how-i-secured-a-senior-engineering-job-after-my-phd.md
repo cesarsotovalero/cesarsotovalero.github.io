@@ -52,9 +52,8 @@ However, if you work in industry, you can have a much bigger impact.
 
 > "The greatest leader is not necessarily the one who does the greatest things. He is the one that gets the people to do the greatest things." - Ronald Reagan
 
-
-
 # Phase 2: Preparation
+
 
 ## Coding Interview
 
