@@ -30,7 +30,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   César Soto-Valero. 
   _Doctoral Thesis in Computer Science_. 
   KTH Royal Institute of Technology, Department of Software and Computer Systems, June 2023.
-  <a href="../files/thesis/cesar-fulltext.pdf">:earth_americas: Link</a>
+  <a href="../files/thesis/cesar-fulltext.pdf">PDF</a>
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Challenges of Producing Software Bill Of Materials for Java**. 
