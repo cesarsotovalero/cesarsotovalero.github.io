@@ -25,6 +25,13 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
 
 # 2023
 
+- <img alt="" title="Books and Theses" src="https://dblp.uni-trier.de/img/n.png" style="background: #f8c91f; width: 18px; height: 18px"> 
+  **Debloating Java Dependencies**. 
+  César Soto-Valero. 
+  _Doctoral Thesis in Computer Science_. 
+  KTH Royal Institute of Technology, Department of Software and Computer Systems, June 2023.
+  <a href="../files/thesis/cesar-fulltext.pdf">:earth_americas: Link</a>
+
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Challenges of Producing Software Bill Of Materials for Java**. 
   Musard Balliu, Benoit Baudry, Sofia Bobadilla, Mathias Ekstedt, Martin Monperrus, Javier Ron, Aman Sharma, Gabriel Skoglund, César Soto-Valero, and Martin Wittlinger.
