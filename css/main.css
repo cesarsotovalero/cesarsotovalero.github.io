@@ -25,7 +25,7 @@ body {
 
 @media only screen and (max-width: 450px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -2861,6 +2861,46 @@ a.btn {
   right: 1rem;
 }
 
+
+/* Shareable */
+.share-btn-container {
+  position: relative;
+  display: inline-block;
+}
+
+#share-btn {
+  background-color: #f8f9fa;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#share-options {
+  display: none;
+  position: absolute;
+  background-color: #f8f9fa;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#share-options button {
+  text-align: left;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#share-options button:hover {
+  background-color: #ddd;
+}
+
+.hidden {
+  display: none;
+}
 
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
