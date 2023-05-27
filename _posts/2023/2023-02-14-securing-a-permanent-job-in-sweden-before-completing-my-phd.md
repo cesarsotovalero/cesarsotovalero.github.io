@@ -188,7 +188,7 @@ Every time I applied, I filled the database with the following fields:
 Here's an example of how it looks like:
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/23-02-14/notion_applications.png alt:"Application records in Notion" %}
+  {% responsive_image path: img/posts/2023/2023-02-14/notion_applications.png alt:"Application records in Notion" %}
   <figcaption class="stroke"> 
     Getting the right job could take a long time. Systematic organization is key to keep track of everything that happens during the application process.
   </figcaption>
