@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Give a Great Presentation
-subtitle: As a PhD student
+title: How to Give a Great Technical Presentation
+subtitle: ... as a PhD student
 tags: soft-skills
 description: TODO
 keywords:
