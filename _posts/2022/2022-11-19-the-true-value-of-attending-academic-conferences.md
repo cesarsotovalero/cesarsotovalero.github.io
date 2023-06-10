@@ -25,7 +25,7 @@ I went there to present [two papers](https://2022.esec-fse.org/profile/cesarsoto
 But let me admit it, I had a negative opinion of academic conferences before.
 I used to think that conferences were expensive,[^2] unnecessary,[^3], and a waste of time and resources in general.[^4]
 All of this may be true, but there is something else I was not seeing.
-In this blog post, I share my experiences, with a focus on discussing what I think is the **actual value**, for Ph.D. students, of attending academic conferences.
+In this blog post, I share my experiences, with a focus on discussing what I think is the **actual value**, for PhD students, of attending academic conferences.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/fse.jpg alt:"My photo from the event." %}
@@ -46,7 +46,7 @@ This location was very convenient, with many restaurants and shops in the same b
 There was a proper banquet and Ulu Ulu Safari at the [Singapore Zoo](https://g.page/sg-zoo?share) as well.
 
 The best way to learn about different cultures is by visiting different places.
-As a Ph.D. student, attending conferences is a unique opportunity to make **academic tourism**.
+As a PhD student, attending conferences is a unique opportunity to make **academic tourism**.
 There is nothing like being exposed to a different environment to spark new ideas and widen your perspective about many things.
 
 
@@ -79,7 +79,6 @@ You need to go and see it yourself.
 The point is this: **Attending an academic conference is not just about the event itself but the experience of visiting a new place.**
 This is one kind of knowledge that can only be gathered when exposing to a different society, and the vision of the world that expands through personal live observation.
 
-
 # The people
 
 The most important aspect of attending academic conferences is the opportunity to meet and interact with other researchers.
@@ -93,12 +92,12 @@ As I've mentioned [before](../blog/how-phd-profiles-are-evaluated.html), the imp
 This is unfortunate, but there is not much we can do about it.
 Fortunately, participating at conferences allows us forget about it for a while, and to perceive science as a collaborative endeavor instead.
 
-As Ph.D. students, we have been reading papers from the beginning of our studies.
+As PhD students, we have been reading papers from the beginning of our studies.
 I know the names of the main researchers that are active on my topic.
 Their names are in the papers, of course, but who/how are these people really?
 A conference is an excellent plate to figure it out!
 
-> “The last day, I was coming back from the conference to my hotel. It is a 45 mins trip on a bus. I notice that one of the most prolific professors in my field was sitting on the same bus. I told to myself: I should’t miss the opportunity to talk with this guy. So I approached him, and we had an informal, semi-technical discussion about the past, the present, and the future of software debloating. He told me that some of his Ph.D. students are working on the exact same problems that I envisioned some years ago. At the end of our talk, I understood that my knowledge of the topic is actually quite solid, and that I took a correct research direction. This talk increased significantly my confidence about the quality of my own work.”
+> “The last day, I was coming back from the conference to my hotel. It is a 45 mins trip on a bus. I notice that one of the most prolific professors in my field was sitting on the same bus. I told to myself: I should’t miss the opportunity to talk with this guy. So I approached him, and we had an informal, semi-technical discussion about the past, the present, and the future of software debloating. He told me that some of his PhD students are working on the exact same problems that I envisioned some years ago. At the end of our talk, I understood that my knowledge of the topic is actually quite solid, and that I took a correct research direction. This talk increased significantly my confidence about the quality of my own work.”
 
 The opportunity to talk with other researchers is priceless.
 I not only met many people from my field, but other prestigious researchers who are working on different topics (400+ researchers registered to ESEC/FSE this year).
@@ -118,7 +117,7 @@ They were truly interested!
 They worked in something similar, or have friends working on the same thing.
 
 Here is my main takeaway from this: **Attending a conference gives the possibility of meeting the people at the top of your field, and for a moment, perceiving yourself as their equals.**
-This could have a strong effect on self-confidence, which is more than necessary during Ph.D. studies.
+This could have a strong effect on self-confidence, which is more than necessary during PhD studies.
 
 # The presentations
 
@@ -134,19 +133,15 @@ Talks were held in parallel, so I missed out on some them which seemed interesti
 Luckily, videos and presentation material for all of the conference is now available online.
 Overall, it seems that AI for Software Engineering is a hot topic right now.
 
-
 > “I go impressed by the overall quality of the presentations at ESEC/FSE. 
 > Most of the participants there are mature researchers with a lot of experience on public speaking.
 > My [second presentation](https://youtu.be/HXj2B8eHmt4) caught the attention of more people than the [first one](https://youtu.be/cePEl485E_s).
 > In remember that someone asked me about the possibility of using software debloating for program understanding, this is something I never thought about before.”
 
-Since I was on the last year as a Ph.D. student at KTH.
+Since I was on the last year as a PhD student at KTH.
 I felt more prepared to understand the technical content of the talks than I was a few years ago.
 I got acquainted with many interesting research trends, such as software evolution on big codebases, and the use of AI for software engineering.
-Anyways, whether you’re just starting out in your Ph.D., or whether you are a senior researcher, **there’s always something new to learn from technical presentations**.
-
-
-
+Anyways, whether you’re just starting out in your PhD, or whether you are a senior researcher, **there’s always something new to learn from technical presentations**.
 
 # Conclusion
 
@@ -163,4 +158,4 @@ I hope that you will have the same opportunity!
 
 [^3]: As we all know: at the end all that matters is the published paper.
 
-[^4]: Ph.D. students are busy by default. There is always something super urgent to do (e.g., working on the latest paper, or addressing the latest major revision).
+[^4]: PhD students are busy by default. There is always something super urgent to do (e.g., working on the latest paper, or addressing the latest major revision).

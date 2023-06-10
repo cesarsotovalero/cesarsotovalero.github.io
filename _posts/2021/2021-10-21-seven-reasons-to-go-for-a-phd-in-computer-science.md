@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Seven Reasons to Go For a Ph.D. In Computer Science
+title: Seven Reasons to Go For a PhD In Computer Science
 subtitle: The good and the ugly
 tags: research
-description: Starting a Ph.D. in Computer Science is a serious decision that literally changes your life. There are many motivations to choose this career path. Let's take a look at 7 of them.
+description: Starting a PhD in Computer Science is a serious decision that literally changes your life. There are many motivations to choose this career path. Let's take a look at 7 of them.
 keywords:
   - career path,
-  - Ph.D. research,
+  - PhD research,
   - professional life,
   - life in academia,
   - opportunity,
@@ -19,18 +19,18 @@ author: cesarsotovalero
 published: true
 ---
 
-Pursuing a Ph.D. is a unique and personal experience.
+Pursuing a PhD is a unique and personal experience.
 Admittedly, it is a journey ~~mostly~~ driven by personal ambitions and pride.
-The decision to begin this journey (i.e., becoming a Ph.D. student) is a very serious because a Ph.D. can literally change your life.
-It is not something to be taken lightly considering that, to complete a Ph.D., a person needs to invest 4 or 5 of their most productive years.
+The decision to begin this journey (i.e., becoming a PhD student) is a very serious because a PhD can literally change your life.
+It is not something to be taken lightly considering that, to complete a PhD, a person needs to invest 4 or 5 of their most productive years.
 That's why it is important to have at least a pretty clear reason in mind before heading down this particular career path.
 And as with everything else, **really** knowing what you **really** want and **why** you want it is the foundation for future success in any personal endeavor.
-In the case of Computer Science, a Ph.D. trains you to be a scientist, not a programmer.
+In the case of Computer Science, a PhD trains you to be a scientist, not a programmer.
 This single fact has profound repercussions.
-After being a Ph.D. student for almost three years now, I can think of seven clear reasons that are worth taking the decision to go for a Ph.D. in this field.
+After being a PhD student for almost three years now, I can think of seven clear reasons that are worth taking the decision to go for a PhD in this field.
 I group them into the good and the ugly.
 The good ones (1-3) aim to achieve noble goals, while the ugly ones (4-7) are driven by more personal ambitions.
-I dare to say that if you don't feel identified with any of them, then probably a Ph.D. in Computer Science is not for you.
+I dare to say that if you don't feel identified with any of them, then probably a PhD in Computer Science is not for you.
 Let's discuss this matter!
 
 <figure class="jb_picture">
@@ -43,10 +43,10 @@ Let's discuss this matter!
 
 # Feed Your Intellectual Curiosity 
 
-A Ph.D. is an [academic degree](https://en.wikipedia.org/wiki/Doctor_of_Philosophy) given those who expand the boundaries of human knowledge in some specific area of science.
+A PhD is an [academic degree](https://en.wikipedia.org/wiki/Doctor_of_Philosophy) given those who expand the boundaries of human knowledge in some specific area of science.
 Thus, it is a form of social recognition.
 Maybe you have a curious mind and are interested in diving deep into a particular technology.
-In that case, a Ph.D. is an excellent opportunity to satisfy your intellectual curiosity while making at least one significant contribution to humanity.
+In that case, a PhD is an excellent opportunity to satisfy your intellectual curiosity while making at least one significant contribution to humanity.
 Researching in Computer Science is particularly exciting because software technology moves faster than other areas of science.
 Every day, a new programming language is being created, a new paradigm or methodology is proposed, a new piece of open-source software is released, etc.
 The feeling of being at the forefront of such a technological revolution could be extremely gratifying.
@@ -55,22 +55,22 @@ The feeling of being at the forefront of such a technological revolution could b
     <em>“You're allowed to fail, to a certain extent.”</em>
 </aside>
 
-Unlike other educational degrees, a Ph.D. student is normally paid to do research in something interesting.
+Unlike other educational degrees, a PhD student is normally paid to do research in something interesting.
 This allows experimenting with cutting-edge technology while receiving adequate funding to do so.
 Learning about advanced topics and performing research experiments demands a considerable amount of time.
-Thus, the Ph.D. is one of the few opportunities in life in which one officially has the time to invest in such things.
+Thus, the PhD is one of the few opportunities in life in which one officially has the time to invest in such things.
 Research is a creative activity, and it's fine if some experiment doesn't give you the expected results.
 This is a position that can hardly be found when working in the industry, where the market pressure favors rapid development and well-established technologies.
 
 In Computer Science, there are distinct levels of understanding.
 Knowing how to compile a piece of code is not the same as understanding how the code is compiled.
 Understanding a compiler is different from developing a new technique to make it efficient, and this is in turn different from creating a new and better compiler.
-A Ph.D. is a unique opportunity to dive deep into a particular technology, at the very minimum level of detail, to leave a footprint on it.
-If you possess this urge to learn and experiment, and at the same time, dream about making a difference in the world, then a Ph.D. will give you a chance to pursue such sublime goals.
+A PhD is a unique opportunity to dive deep into a particular technology, at the very minimum level of detail, to leave a footprint on it.
+If you possess this urge to learn and experiment, and at the same time, dream about making a difference in the world, then a PhD will give you a chance to pursue such sublime goals.
 
 # Become a Professional Researcher
 
-The principal objective of a Ph.D. is to train students to become professional researchers.
+The principal objective of a PhD is to train students to become professional researchers.
 Getting a position as a researcher is perceived to be a synonym of holding a very gratifying job.
 There are two types of professional researchers: academic professors and industrial researchers.
 The first group is tied to universities and has more freedom to pick their research topic, which explains why the research made in academia is often more theoretical.
@@ -81,7 +81,7 @@ Industrial researchers often work at large companies and are more focused on pro
 </aside>
 
 Some people love the research freedom offered by academia and, at the same time, enjoy the teaching labor.
-Notice that if you want to teach at the highest level (i.e., at universities), you certainly need a Ph.D. (and more).
+Notice that if you want to teach at the highest level (i.e., at universities), you certainly need a PhD (and more).
 On the other hand, many professors love being doing something different from making money for a private company.
 They feel happy staying in this idyllic limbo where knowledge is king. Furthermore, staying in academia brings other sorts of benefits.
 For example, in most societies, respectable professors enjoy a privileged social status and recognition.
@@ -89,7 +89,7 @@ This allows you to reach a sense of personal fulfillment.
 
 Working as a researcher for a company has also several benefits.
 Being able to see a research prototype being taken seriously, implemented, and reaching customers, is a unique feeling.
-Software companies often have R&D departments filled with Ph.D. graduates, so if you go there, the environment should be already familiar to you.
+Software companies often have R&D departments filled with PhD graduates, so if you go there, the environment should be already familiar to you.
 As a plus, the salary in companies is higher than in academia, providing a reasonable balance between personal and economic benefits.
 
 # Build a Career Network
@@ -97,7 +97,7 @@ As a plus, the salary in companies is higher than in academia, providing a reaso
 As occurs with writers, there is a common belief that researchers are lonely people working in isolated environments.
 This is simply not true.
 A significant part of research work is about communicating your results.
-To do so, Ph.D. students must learn how to get attention by appropriately targeting the right audience.
+To do so, PhD students must learn how to get attention by appropriately targeting the right audience.
 This can only be done through effectively networking with the most talented researchers in the field.
 
 <aside class="quote">
@@ -105,7 +105,7 @@ This can only be done through effectively networking with the most talented rese
 </aside>
 
 Most people in your immediate circle, excluding supervisors and teachers, will be at the same level as you in the professional hierarchy.
-All of them talented Ph.D. students sharing the same high-level goals and with a similar urge to learn and experiment.
+All of them talented PhD students sharing the same high-level goals and with a similar urge to learn and experiment.
 This means that you will be surrounded by an elite of students in an environment that explicitly promotes professional growth.
 Also, as everyone is working in a very tiny and specific area, it's practically impossible to be working on the same thing.
 As a result, colleagues and fellow researchers are not perceived as competitors but collaborators.
@@ -123,8 +123,8 @@ Others will become prestigious professors, and a very few of them will make sign
 # Set Yourself Apart From The Competition 
 
 You probably want to be [more than just a programmer](https://www.cesarsotovalero.net/blog/hermit-programmers-are-dead.html), and that's great.
-The Ph.D. journey will arm you with a set of technical and non-technical skills to satisfy this ambition.
-There are many good developers out there, but a Ph.D. teaches you how to methodically solve complex problems, write well, and communicate with others.
+The PhD journey will arm you with a set of technical and non-technical skills to satisfy this ambition.
+There are many good developers out there, but a PhD teaches you how to methodically solve complex problems, write well, and communicate with others.
 Professional recruiters know very well that candidates with this combination of talents are not very common in the job market.
 
 <aside class="quote">
@@ -133,14 +133,14 @@ Professional recruiters know very well that candidates with this combination of 
 
 If you succeed to graduate [you have been battle-tested](https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html).
 You have learned how to organize a research agenda and formulate specific research questions.
-A Ph.D. prepares you well to ask questions with a high level of abstraction, and probably you will be able to approach projects from a more holistic perspective than others.
+A PhD prepares you well to ask questions with a high level of abstraction, and probably you will be able to approach projects from a more holistic perspective than others.
 These ~~soft~~ skills are difficult to learn and can only be acquired through experience.
 Leveraging this as a professional advantage may set you apart from the competition, providing the foundation to start a strong career anywhere.
 
 The technical skills allow you to become an expert in a very particular field.
 Being an expert positions yourself as someone more valuable, and many companies are willing to pay for this particular value.
 They will provide you will all you need to apply those skills as new opportunities arise, which translates into more opportunities to pursue a high-level career within the industry.
-Furthermore, some particular jobs require a Ph.D. degree, i.e., many machine learning-related jobs.
+Furthermore, some particular jobs require a PhD degree, i.e., many machine learning-related jobs.
 
 # Challenge Yourself
 
@@ -161,7 +161,7 @@ If you can show that you are good in such a competitive environment, no one will
 Some other people feel social pressure and don't want to get behind other people in their close network. 
 For example, if all your parent and brothers hold academic titles, you'll probably feel the need to reach a similar status.
 Otherwise, you might be perceived as someone that belongs to an inferior category.
-However, the main driver for doing a Ph.D. should be no other than satisfying personal aspirations.
+However, the main driver for doing a PhD should be no other than satisfying personal aspirations.
 
 # Own Your Work 
 
@@ -201,10 +201,10 @@ Only the most advanced countries can afford to pay the monetary costs of perform
 Professionals in Computer Science are in high demand today.
 They are scarce, well paid by the industry, and can also work remotely.
 This is why the developed countries often lack qualified people to carry out research in this field.
-The situation opens the door for talented immigrants willing to do a Ph.D. in these countries while achieving the personal goal of changing their lives.
+The situation opens the door for talented immigrants willing to do a PhD in these countries while achieving the personal goal of changing their lives.
 
-Many Ph.D. students from the US and Europe are talented immigrants who decided to move with their families in search of a better future.
+Many PhD students from the US and Europe are talented immigrants who decided to move with their families in search of a better future.
 The host country receives talented human resources to move forward in the global research field.
 The students get a diploma and all the benefits of living in a highly developed country.
-After graduation, as a Ph.D. owner, you probably have acquired the knowledge and skills to get a decent job in these countries.
+After graduation, as a PhD owner, you probably have acquired the knowledge and skills to get a decent job in these countries.
 It's a win-win for both parties!
