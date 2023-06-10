@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Give a Great Presentation
-subtitle: As a PhD student
+title: How to Give a Great Technical Presentation
+subtitle: ... as a PhD student
 tags: soft-skills
 description: TODO
 keywords:
@@ -18,7 +18,7 @@ author: cesarsotovalero
 published: false
 ---
 
-[^1]
+TODO
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/subway_in_red.jpg alt:"TODO" %}
@@ -27,20 +27,7 @@ published: false
   </figcaption>
 </figure>
 
-# TODO
-
-
-
-> TODO
-
-
-
-
-
-# Further Reading
-
-- [:earth_americas: Why I chose OpenAI over academia: reflections on the CS academic and industry job markets](https://rowanzellers.com/blog/rowan-job-search2/?utm_source=tldrnewsletter)
 
 # Footnotes
 
-[^1]: Great talk https://youtu.be/Unzc731iCUY
+[^1]: TODO
