@@ -3,8 +3,8 @@
 
 @font-face {
   font-family: 'jetbrains_monoregular';
-  src: url('/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2'),
-  url('/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2');
+  src: url('/fonts/JetBrainsMono/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2'),
+  url('/fonts/JetBrainsMono/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
