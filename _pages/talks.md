@@ -11,7 +11,7 @@ published: true
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
 </div>
 
-As a Ph.D. student, I present my work in academic conferences, workshops, and software companies.[^1]
+As a PhD student, I present my work in academic conferences, workshops, and software companies.[^1]
 The following is a non-exhaustive list of my technical presentations.
 
 # 2023
@@ -20,7 +20,7 @@ The following is a non-exhaustive list of my technical presentations.
 
 # 2022
 
-- [Automatic Software Debloating](../talks/80_percent_2022.pdf "pdf"){:target="_blank"}. 80% Ph.D. Seminar. Presented at KTH, November 2022.
+- [Automatic Software Debloating](../talks/80_percent_2022.pdf "pdf"){:target="_blank"}. 80% PhD Seminar. Presented at KTH, November 2022.
 
 - [Coverage-Based Debloating for Java Bytecode](https://youtu.be/HXj2B8eHmt4 "video"){:target="_blank"}. Presented at ESEC/FSE, Singapore, November 2022.
 
@@ -40,7 +40,7 @@ The following is a non-exhaustive list of my technical presentations.
 
 - [A Longitudinal Analysis of Bloated Java Dependencies](https://youtu.be/cePEl485E_s "video"){:target="_blank"}. Presented at ESEC/FSE, August 2021.
 
-- [Automated Software Debloat](../talks/50percent_seminar_kth_2021.pdf "pdf"){:target="_blank"}. 50% Ph.D. Seminar. Presented at KTH, April 2021.
+- [Automated Software Debloat](../talks/50percent_seminar_kth_2021.pdf "pdf"){:target="_blank"}. 50% PhD Seminar. Presented at KTH, April 2021.
 
 - [DepClean: Automatically Revealing Bloated Software Dependencies in Maven Projects](https://youtu.be/8SndbPMwdWE "video"){:target="_blank"}. Presented at FOSDEM, February 2021.
 
