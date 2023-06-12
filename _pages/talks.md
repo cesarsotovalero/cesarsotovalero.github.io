@@ -2,7 +2,7 @@
 permalink: talks.html
 layout: page
 title: Talks
-subtitle: My talks list 
+subtitle: Bla bla bla 
 published: true
 ---
 
