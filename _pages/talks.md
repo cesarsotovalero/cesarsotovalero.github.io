@@ -43,6 +43,8 @@ The following is a non-exhaustive list of my technical presentations (in reverse
 
 # 2021
 
+- [The Software Production Landscape](../files/presentations/software-production-landscape.pptx){:target="_blank"}. Presented at KTH, September 2021.
+
 - [A Longitudinal Analysis of Bloated Java Dependencies](https://youtu.be/cePEl485E_s "video"){:target="_blank"}. Presented at ESEC/FSE, August 2021.
 
 - [Automated Software Debloat](../talks/50percent_seminar_kth_2021.pdf "pdf"){:target="_blank"}. 50% PhD Seminar. Presented at KTH, April 2021.
