@@ -180,7 +180,7 @@ So I decided to add this information to the figure (Figure 7).
 </figure>
 
 <aside class="quote">
-    <em>“The figure should succinctly communicate a single core idea, while maintaining enough complexity to effectively illustrate the intricate research process to execute the idea."</em> 
+    <em>“The figure should succinctly communicate a single core idea, while maintaining enough complexity to effectively illustrate the intricate research process to execute the idea.”</em> 
 </aside>
 
 Looking good, right?
