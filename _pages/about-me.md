@@ -192,4 +192,5 @@ form.wj-contact input[type="submit"]:hover {
 
 [^2]: See my list of [mining software repositories resources](./mining-software-repositories-resources.html).
 
-[^3]: Check out my result at [Midnattsloppet 2022](../files/certificates/Midnattsloppet_Diplom_2022.pdf))
+[^3]: Check out my result at [Midnattsloppet 2022](../files/certificates/Midnattsloppet_Diplom_2022.pdf), and [:earth_americas: Blodomloppet 2023](https://www.racetimer.se/sv/runner/show/8204163?layout=blodomloppet&race_id=5627).
+
