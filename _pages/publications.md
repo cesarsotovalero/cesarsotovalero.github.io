@@ -6,11 +6,6 @@ subtitle: Research papers
 published: true
 ---
 
-<!--
-> "We want our research to be sound, novel, and with a depth impact on industry."
-> -- <cite>Benoit Baudry (explaining me his expectations as supervisor in 2018)</cite>
--->
-
 <!-- Carbon ads -->
 <div class="cesarcarbon">
    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
@@ -21,6 +16,13 @@ My work can be found in
 <a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="../img/pages/publications/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="../img/pages/publications/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="../img/pages/publications/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar); with ORCID  <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer" 
 style="vertical-align:top;"><img src="../img/icons/orcid.svg" style="width:1em;margin-right:.3em;" alt="ORCID iD icon">0000-0003-0541-6411</a>.  The following is an updated list of my published work (in reverse chronological order).
 
+<!--
+<aside class="quote">
+    <em>“We want our research to be sound, novel, and with a depth impact on industry.” 
+    -- <cite>Benoit Baudry (explaining me his expectations as PhD supervisor in 2018)</cite></em> 
+</aside>
+-->
+
 Legend: <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> Conference; <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Journal; <img alt="" title="Books and Theses" src="https://dblp.uni-trier.de/img/n.png" style="background: #f8c91f; width: 18px; height: 18px"> Thesis.
 
 # 2023
@@ -30,25 +32,30 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   César Soto-Valero. 
   _Doctoral Thesis in Computer Science_. 
   KTH Royal Institute of Technology, Department of Software and Computer Systems, June 2023.
-  <a href="../files/thesis/cesar-fulltext.pdf">PDF</a>
+  <a href="../files/thesis/cesar-fulltext.pdf">Text</a>
+  <a href="../files/thesis/slides/cesar-phd-defense.pptx">Slides</a>
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Challenges of Producing Software Bill Of Materials for Java**. 
   Musard Balliu, Benoit Baudry, Sofia Bobadilla, Mathias Ekstedt, Martin Monperrus, Javier Ron, Aman Sharma, Gabriel Skoglund, César Soto-Valero, and Martin Wittlinger.
   _arXiv_.
-  <a href="https://arxiv.org/abs/2303.11102">:earth_americas: Link</a>`
+  <a href="https://arxiv.org/abs/2303.11102">:earth_americas: Preprint</a>
+  [<i class="fab fa-github"></i> Experiments](https://github.com/chains-project/SBOM-2023)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Automatic Specialization of Third-Party Java Dependencies**. 
   César Soto-Valero, Deepika Tiwari, Tim Toady, and Benoit Baudry. 
   _arXiv_.
-  <a href="https://arxiv.org/abs/2302.08370">:earth_americas: Link</a>
+  <a href="https://arxiv.org/abs/2302.08370">:earth_americas: Preprint</a>
+  [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/deptrim)
+  [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/deptrim-experiments)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Highly Available Blockchain Nodes With N-Version Design**. 
   Javier Ron, César Soto-Valero, Long Zhang, Benoit Baudry, and Martin Monperrus. 
   _arXiv_.
-  <a href="https://arxiv.org/abs/2303.14438">:earth_americas: Link</a>
+  <a href="https://arxiv.org/abs/2303.14438">:earth_americas: Preprint</a>
+  [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/N-ETH)
 
 
 # 2022
@@ -58,19 +65,24 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   César Soto-Valero, Thomas Durieux, Nicolas Harrand, and Benoit Baudry. 
   _ACM Transactions on Software Engineering and Methodology (TOSEM)_.
   <a href="https://doi.org/10.1145/3546948"><i class="icon i-doi"></i> 10.1145/3546948</a>
+  [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/jdbl)
+  [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/jdbl-experiments)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **The Multibillion Dollar Software Supply Chain of Ethereum**. 
   César Soto-Valero, Martin Monperrus, and Benoit Baudry. 
   _IEEE Computer_.
   <a href="https://doi.org/10.1109/MC.2022.3175542"><i class="icon i-doi"></i> 10.1109/MC.2022.3175542</a>
+  [<i class="fab fa-github"></i> Experiments](https://github.com/chains-project/ethereum-ssc)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
-  **API beauty is in the eye of the clients: 2.2 million Maven dependencies reveal the spectrum of client-API usages**. 
+  **API Beauty Is in the Eye of the Clients: 2.2 Million Maven Dependencies Reveal the Spectrum of Client-API Usages**. 
   Nicolas Harrand, Amine Benelallam, César Soto-Valero, François Bettega, Olivier Barais, and Benoit Baudry. 
   _Journal of Systems and Software (JSS)_.
   <a href="https://medium.com/@almyre/a-journey-at-the-heart-of-2-4-million-maven-artifacts-94f73038bba4"><i class="fab fa-medium"></i> Medium</a>
   <a href="https://doi.org/10.1016/j.jss.2021.111134"><i class="icon i-doi"></i> 10.1016/j.jss.2021.111134</a>
+  [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/depanalyzer)
+  [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/core-83)
 
 # 2021
 
@@ -79,7 +91,9 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   **A Longitudinal Analysis of Bloated Java Dependencies**. 
   César Soto-Valero, Thomas Durieux, and Benoit Baudry. 
   _Proceeding of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE), Athens, Greece_.
-  <a href="https://dx.doi.org/10.1145/3468264.3468589"><i class="icon i-doi"></i> 10.1145/3468264.3468589</a> 
+  <a href="https://dx.doi.org/10.1145/3468264.3468589"><i class="icon i-doi"></i> 10.1145/3468264.3468589</a>
+  [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/depclean)
+  [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/longitudinal-bloat)
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px">
   <img alt="award" title="Data Showcase Award" src="../../img/pages/publications/award.png" height="30px">
@@ -87,12 +101,14 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   Thomas Durieux, César Soto-Valero, and Benoit Baudry. 
   _18th International Conference on Mining Software Repositories (MSR), Madrid, Spain_. 
   <a href="https://dx.doi.org/10.1109/MSR52588.2021.00071"><i class="icon i-doi"></i> 10.1109/MSR52588.2021.00071</a>
+  [<i class="fab fa-github"></i> Dataset](https://github.com/ASSERT-KTH/Duets)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Interpretation of Swedish Sign Language using Convolutional Neural Networks and Transfer Learning**. 
   Gustaf Halvardsson, Johanna Peterson, César Soto-Valero, and Benoit Baudry. 
   _SN Computer Science_.
   <a href="https://dx.doi.org/10.1007/s42979-021-00612-w"><i class="icon i-doi"></i> 10.1007/s42979-021-00612-w</a>
+  [<i class="fab fa-github"></i> Tool](https://github.com/gustafvh/SignInterpreterSSL)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem**. 

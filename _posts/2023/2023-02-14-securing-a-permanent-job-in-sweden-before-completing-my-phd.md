@@ -208,7 +208,7 @@ If the recruiter asks you about your salary expectations, this is a very good si
 > If you get some questions such as "How many years of experience do you have?" or "Do you know what a pointer (in C++) is?" these are red flags, and you should reconsider applying to such kind of companies.
 
 <aside class="quote">
-    <em>“Treat yourself with respect: You are not a junior engineer, you are PhD in Computer Science!"</em> 
+    <em>“Treat yourself with respect: You are not a junior engineer, you are PhD in Computer Science!”</em> 
 </aside>
 
 The second phase of the process typically involves a coding interview, which can be conducted either online or in person (I've experienced both versions).
