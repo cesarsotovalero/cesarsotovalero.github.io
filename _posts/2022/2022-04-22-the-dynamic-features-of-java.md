@@ -305,10 +305,10 @@ Sometimes we need to use code that's **natively-compiled for a specific hardware
 There could be many reasons for needing to use native code, for example:
 - To handle some hardware.
 - To improve the performance of a very demanding process.
-- To reuse an existing library reuse instead of rewriting it in Java.
+- To reuse an existing native library instead of rewriting it in Java.
 
 For these purposes, the JDK introduces the Java Native Interface (JNI) as a foreign function interface. 
-It works as bridge between the bytecode running in the Java Virtual Machine (JVM) and the native code.
+It works as a bridge between the bytecode running in the Java Virtual Machine (JVM) and the native code.
 Thus, JNI allows code running on the JVM to call and be called by native applications. 
 Using JNI, one can call methods written in C/C++ or even access assembly language functions from Java.
 
@@ -324,7 +324,7 @@ public class JNI {
         System.loadLibrary("native");
     }
     public static void main(String[] args) {
-        new JNI().execute();
+        new JNI().sayHello();
     }
     private native void sayHello();
 }
@@ -340,17 +340,16 @@ This will generate a `JNI.h` file with all the native methods included in the cl
 In this case, the `JNI.h` file will contain the following:
 
 {% highlight c linenos %}
-JNIEXPORT void JNICALL JNI_execute(JNIEnv *env, jobject obj);
+JNIEXPORT void JNICALL Java_com_example_JNI_sayHello(JNIEnv *, jobject);
 {% endhighlight %}
 
-Now, we have to create a new `.cpp` file for the implementation of the `execute` function.
+Now, we have to create a new `.cpp` file for the implementation of the `sayHello` function.
 
 Here is an example:
 
 {% highlight c linenos %}
-JNIEXPORT void JNICALL JNI_execute
-  (JNIEnv* env, jobject thisObject) {
-    std::cout << "Executing in C++ !!" << std::endl;
+JNIEXPORT void JNICALL Java_com_example_JNI_sayHello(JNIEnv* env, jobject thisObject) {
+  std::cout << "Hello from C++ !!" << std::endl;
 }
 {% endhighlight %}
 
@@ -371,7 +370,7 @@ g++ -dynamiclib -o libnative.dylib JNI.o -lc
 We can now run our Java code:
 
 {% highlight java linenos %}
-java -cp . -Djava.library.path=/NATIVE_SHARED_LIB_FOLDER com.baeldung.jni.HelloWorldJNI
+java -cp . -Djava.library.path=. com.example.JNI
 {% endhighlight %}
 
 Using the JNI is obviously not the most simple way to develop software.

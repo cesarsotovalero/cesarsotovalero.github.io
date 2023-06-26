@@ -36,8 +36,6 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   <a href="../files/thesis/slides/cesar-phd-defense.pptx">Slides</a>
   <a href="https://youtu.be/Ub684G_aM5Q">Video</a>
 
-
-
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Challenges of Producing Software Bill Of Materials for Java**. 
   Musard Balliu, Benoit Baudry, Sofia Bobadilla, Mathias Ekstedt, Martin Monperrus, Javier Ron, Aman Sharma, Gabriel Skoglund, César Soto-Valero, and Martin Wittlinger.
