@@ -2902,6 +2902,51 @@ a.btn {
   display: none;
 }
 
+/* New Share Button */
+.share-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 100%;
+  width: 200px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  padding: 20px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
   --link-color: black;
