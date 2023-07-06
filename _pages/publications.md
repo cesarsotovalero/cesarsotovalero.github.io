@@ -68,6 +68,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   <a href="https://doi.org/10.1145/3546948"><i class="icon i-doi"></i> 10.1145/3546948</a>
   [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/jdbl)
   [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/jdbl-experiments)
+  <a href="https://youtu.be/HXj2B8eHmt4">Video</a>
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **The Multibillion Dollar Software Supply Chain of Ethereum**. 
@@ -80,10 +81,10 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   **API Beauty Is in the Eye of the Clients: 2.2 Million Maven Dependencies Reveal the Spectrum of Client-API Usages**. 
   Nicolas Harrand, Amine Benelallam, César Soto-Valero, François Bettega, Olivier Barais, and Benoit Baudry. 
   _Journal of Systems and Software (JSS)_.
-  <a href="https://medium.com/@almyre/a-journey-at-the-heart-of-2-4-million-maven-artifacts-94f73038bba4"><i class="fab fa-medium"></i> Medium</a>
   <a href="https://doi.org/10.1016/j.jss.2021.111134"><i class="icon i-doi"></i> 10.1016/j.jss.2021.111134</a>
   [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/depanalyzer)
   [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/core-83)
+  <a href="https://medium.com/@almyre/a-journey-at-the-heart-of-2-4-million-maven-artifacts-94f73038bba4"><i class="fab fa-medium"></i> Blog post</a>
 
 # 2021
 
@@ -95,6 +96,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   <a href="https://dx.doi.org/10.1145/3468264.3468589"><i class="icon i-doi"></i> 10.1145/3468264.3468589</a>
   [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/depclean)
   [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/longitudinal-bloat)
+  <a href="https://youtu.be/cePEl485E_s">Video</a>
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px">
   <img alt="award" title="Data Showcase Award" src="../../img/pages/publications/award.png" height="30px">
@@ -115,8 +117,11 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   **A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem**. 
   César Soto-Valero, Nicolas Harrand, Martin Monperrus, and Benoit Baudry. 
   _Empirical Software Engineering (EMSE)_.
-  <a href="https://medium.com/@almyre/how-much-third-party-java-dependencies-do-you-really-need-45650180367a"><i class="fab fa-medium"></i> Medium</a>
+  <a href="https://youtu.be/8SndbPMwdWE">Video</a>
+  [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/depclean)
+  [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/depclean-experiments)
   <a href="https://dx.doi.org/10.1007/s10664-020-09914-8"><i class="icon i-doi"></i> 10.1007/s10664-020-09914-8</a>
+  <a href="https://medium.com/@almyre/how-much-third-party-java-dependencies-do-you-really-need-45650180367a"><i class="fab fa-medium"></i> Blog post</a>
 
 # 2020
 
@@ -125,6 +130,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   Nicolas Harrand, César Soto-Valero, Martin Monperrus, and Benoit Baudry. 
   _Journal of Systems and Software (JSS)_.
   <a href="https://dx.doi.org/10.1016/j.jss.2020.110645"><i class="icon i-doi"></i> 10.1016/j.jss.2020.110645</a>
+  [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/decompilercmp)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Evaluation of the Bilateral Function in Para-athletes with Spastic Hemiplegia: a Model-based Clustering Approach**. 
