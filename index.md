@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hi, I'm César
-subtitle: PhD in Computer Science
+subtitle: Researcher & Developer
 keywords: César Soto Valero, research, software engineering, KTH, WASP Sweden, software technology, PhD in Computer Science
 description: PhD in Computer Science
 use-site-title: true

@@ -1,7 +1,7 @@
 name: cesarsotovalero.net
 url: "https://www.cesarsotovalero.net"
 title: "César Soto Valero"
-description: "César - PhD in Computer Science"
+description: "César - Researcher & Developer"
 keywords: "software engineering,research,java,developer,machine learning,software technology,phd student"
 logo: https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon.png
 
@@ -284,7 +284,7 @@ last-modified-at:
 # jekyll-feed
 feed:
   title: cesarsotovalero.net
-  subtitle: César - PhD in Computer Science
+  subtitle: César - Researcher & Developer
   path: feed.xml
 
 sass:
