@@ -18,7 +18,18 @@ author: cesarsotovalero
 published: false
 ---
 
-TODO
+Let me repeat a self-evident truth about the professional career career world.  
+It doesn't matter if you're a bright-eyed, bushy-tailed PhD student or a seasoned veteran in the job market - you can't escape the nerve-wracking world of technical presentations.
+It's like this pesky initiation rite that never ends, starting with those sweaty-palm inducing hiring interviews, and going all the way to the granddaddy of them all, the PhD defense. 
+I kid you not, my early days as a presenter at KTH were a disaster movie in the making. 
+Shaky voice? Check. Incoherent ramblings?
+Double check.
+But hey, you live and learn, right?
+After five years of enduring all sorts of presentations, good, bad, and downright ugly, I've picked up a trick or two. 
+Sure, I've bombed more presentations than I'd care to admit, but that's just given me a front-row seat to the dos and don'ts of the presenting world.
+And let me tell you, I've got stories that could make seasoned professionals squirm!
+So, pull up a chair, grab some popcorn, and let's dive into this crash course on nailing your next big presentation.
+After all, if I could do it, so can you!
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/subway_in_red.jpg alt:"TODO" %}
@@ -26,6 +37,9 @@ TODO
     &#169; TODO. Photo of a painting in <a href="https://goo.gl/maps/cGN5k72vforbXD2T6">ABF Stockholm</a>.
   </figcaption>
 </figure>
+
+
+TL;DR: The secret to delivering a great presentation lies in showcasing and embodying confidence.
 
 From Yegor Bugayenko's [blog](https://www.yegor256.com/2019/04/23/how-to-give-a-great-technical-presentation.html):
 
@@ -39,6 +53,12 @@ From Yegor Bugayenko's [blog](https://www.yegor256.com/2019/04/23/how-to-give-a-
 # How to start
 
 The easiest subjects to start with are stories about your practical experience with some modern technologies and tools, something like “How Docker Helps Us Optimize Delivery” or “Five Apache Spark Installation Issues.” Just describe what you’ve done on a recent project. It doesn’t really matter what you talk about. What matters is that you’re visible. If the market accepts you, the employer will trust you more. That’s exactly what you need in order to request a higher rate.
+
+As Steve Jobs famously said, "People who know what they're talking about don't need PowerPoint." Yet, crafting an engaging presentation without slides can indeed be a significant challenge.
+
+<aside class="quote">
+    <em>“People who know what they're talking about don't need PowerPoint.” <cite>Steve Jobs</cite></em> 
+</aside>
 
 # Transcript: 
 
