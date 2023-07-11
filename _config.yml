@@ -13,6 +13,7 @@ navbar-links:
   Awards: "awards"
   Courses: "courses"
   Talks: "talks"
+  Podcast: "podcast"
   About: "about-me"
 
 # Image to show in the navigation bar - image must be a square (width = height)
