@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Serialization in Java with Apache Avro
+title: Data Serialization in Java With Apache Avro
 subtitle: TODO
 tags: AI
 description: TODO
 keywords:
-  - ChatGPT,
-  - AI,
-  - software engineering,
-  - productivity
+  - Apache Avro,
+  - data engineering,
+  - serialization and deserialization,
+  - data formats for big data,
 image: ../img/posts/2023/TODO.jpg
 share-img: ../img/posts/2023/TODO.jpg
 show-avatar: false
@@ -18,7 +18,10 @@ author: cesarsotovalero
 published: false
 ---
 
-TODO
+When working with data processing in Java, choosing the right file format for storing datasets is crucial.
+Each format (such as CSV, JSON, or Parquet) has its particular advantages and is designed for specific use cases. 
+In this blog post I'll focus on Apache Avro, a powerful data serialization framework widely used for streaming binary files. 
+Let's explore explore the benefits of using Avro in our Java applications.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/subway_in_red.jpg alt:"TODO" %}
@@ -27,14 +30,34 @@ TODO
   </figcaption>
 </figure>
 
+# Introduction
+
+In data processing, selecting the appropriate file format is essential to ensure efficient storage and processing of datasets. 
+Different formats excel in specific use cases, such as Business Intelligence, network communication, web applications, batch processing, or stream processing. 
+Understanding their strengths and leveraging their specific features is vital in making an informed decision.
+
+
+| **Data** |      **Format**      | **Data type** |  **Schema enforcement**  | **Schema evolution** | **Storage type** | **OLAP/OLTP** |      **Splittable**       | **Stream** | **Typed data** |            **Ecosystems**             |
+|----------|:--------------------:|:-------------:|:------------------------:|:--------------------:|:----------------:|:-------------:|:-------------------------:|:----------:|:--------------:|:-------------------------------------:|
+| CSV      |         text         |      no       | no (minimal with header) |          no          |       row        |     OLTP      | yes in its simpliest form |    yes     |       no       | popular everywhere for its simplicity |
+| JSON     |         text         |      yes      | external for validation  |         yes          |       row        |     OLTP      |    yes with JSON lines    |    yes     |       no       |              API and web              |
+| XML      |         text         |      no       | external for validation  |         yes          |       row        |     OLTP      |            no             |     no     |       no       |              enterprise               |
+| Protobuf |    data in binary    |      yes      |           yes            |          no          |       row        |     OLTP      |            no             |    yes     |      yes       |          RPC and Kubernetes           |
+| Parquet  |         text         |      yes      |           yes            |         yes          |      column      |     OLAP      |            yes            |     no     |       no       |            Big Data and BI            |
+| ORC      |        binary        |      yes      |           yes            |          no          |      column      |     OLAP      |            yes            |     no     |       no       |            Big Data and BI            |
+| **AVRO** | **metadata in JSON** |    **yes**    |         **yes**          |       **yes**        |     **row**      |   **OLTP**    |          **yes**          |  **yes**   |     **no**     |      **Big Data and Streaming**       |
+
+
 # Why using Apache Avro?
 
-Apache Avro is a data serialization system that provides rich data structures in a compact, fast, binary data format. It is used in Apache Spark, Apache Kafka, Apache Hadoop, and many other big data tools.
+[Apache Avro](https://avro.apache.org/) is a data serialization system that provides rich data structures in a compact, fast, binary data format. It is used in Apache Spark, Apache Kafka, Apache Hadoop, and many other big data tools.
 Avro is a row-based format that is suitable for evolving data schemas. It is schema-based and allows you to define a schema for your data using JSON. The schema is then compiled into Java classes that you can use to read and write Avro data.
 
 Here are some advantages of using Apache Avro instead of other data file formats:
+ 
+- **Schema Enforcement:** Avro provides robust schema enforcement capabilities, ensuring data validity and facilitating seamless data integration and processing. Schemas can be associated with the data or provided separately, guaranteeing that the dataset adheres to the specified schema and giving additional information about its structure, types, and formats. Avro's schema enforcement plays a vital role in binary file formats by enabling encryption and decryption of content, enhancing data security and integrity during storage and transmission. With Apache Avro, developers can confidently work with data, knowing that it aligns with the defined schema and can be accurately interpreted by consumers, thereby improving data reliability, interoperability, and processing efficiency.
 
-- **Schema Evolution:** Avro supports schema evolution, which allows you to evolve your data schemas over time without breaking compatibility. You can add, remove, or modify fields in your schema without requiring all consumers or producers to be updated simultaneously. This flexibility is especially useful in scenarios where different components of a system are developed and deployed independently.
+- **Schema Evolution:** Avro supports schema evolution, which allows you to evolve your data schemas over time while maintaining backward compatibility. You can add, remove, or modify fields in your schema without requiring all consumers or producers to be updated simultaneously. This flexibility is especially useful in scenarios where different components of a system are developed and deployed independently.
 
 - **Compact Binary Format:** Avro uses a compact binary encoding, which results in smaller file sizes compared to other formats like JSON or XML. This makes Avro an efficient choice for data storage and transmission, reducing storage costs and improving performance.
 
@@ -234,6 +257,11 @@ private static List<Person> deserializePersons(File personListSerializedFile) th
   return persons;
 }
 ```
+
+# Conclusion
+
+When it comes to data serialization in Java, Apache Avro offers compelling advantages.
+Its support for schema evolution, compact binary format, fast serialization/deserialization, language independence, and interoperability make it a valuable tool for storing and processing data efficiently. By leveraging the benefits of Apache Avro, developers can streamline their data processing workflows and improve overall system performance.
 
 
 # Resources

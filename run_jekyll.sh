@@ -1,3 +1,3 @@
-python3 tag_generator.py
+python3 tag_generator.py \
 JEKYLL_ENV=production
 RUBYOPT='-W0' bundle exec jekyll serve --watch --incremental --future
