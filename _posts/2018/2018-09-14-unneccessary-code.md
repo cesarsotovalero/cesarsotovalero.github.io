@@ -3,7 +3,7 @@ layout: post
 title: Unnecessary Code
 subtitle: Clarifying the concept 
 published: true
-tags: debloat
+tags: debloating
 keywords: software bloat, code, unused code
 description: Unnecessary code is such that can be deleted from the codebase without affecting the expected functionality of the software project.
 image: ../img/posts/2018/codecode_cover.png

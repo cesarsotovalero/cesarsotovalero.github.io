@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Serialization in Java With Apache Avro
-subtitle: TODO
-tags: AI
-description: TODO
+title: Data Serialization/Deserialization in Java With Apache Avro
+subtitle: Getting starting
+tags: big-data
+description:  Apache Avro is the go-to data serialization framework for efficient binary data streaming. In this article, I'll cover the main features of Avro and why/when/how to use it for serialize and deserialize your data files in Java.
 keywords:
   - Apache Avro,
   - data engineering,
@@ -21,7 +21,7 @@ published: false
 When working with data processing in Java, choosing the right file format for storing and transmitting the data is crucial.
 Each format (such as CSV, JSON, or Parquet) has its particular advantages/disadvantages and is designed for specific use cases. 
 In this blog post I'll focus on the AVRO file format provided by Apache Avro, a powerful data serialization framework widely used for streaming binary files. 
-I'll cover the main features of Avro and why/when/how to use for serialize and deserialize your data files in Java.
+I'll cover the main features of Avro and why/when/how to use it for serialize and deserialize your data files in Java.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-01-20/circus.jpg alt:"Orchestration" %}
@@ -247,7 +247,7 @@ Here's the implementation of the method `serializePersons`:
  * Serialize a list of Persons to disk using Avro and write to the specified file (.avro).
  * @param personList                 List of Persons
  * @param personListSerializedFile   File to write to
- * @throws IOException              If there is an error writing to the file
+ * @throws IOException               If there is an error writing to the file
  */
 private static void serializePersons(List<Person> personList, File personListSerializedFile) throws IOException {
   // We create a DatumWriter, which converts Java objects into an in-memory serialized format.
@@ -271,12 +271,12 @@ private static void serializePersons(List<Person> personList, File personListSer
 The previous code produces a file `persons.avro`, which contains the serialized objects.
 If we open the file in a text editor, we can see that it contains the serialized objects in binary format.
 
-Here's the method `deserializePersons`, which deserializes the file:
+Here's the method `deserializePersons`, which deserializes the file into a `ArrayList` of `Person` objects:
 
 ```java
 /**
  * Deserialize a list of Person objects from disk using Avro.
- * @param personListSerializedFile   File to read from (.avro)
+ * @param personListSerializedFile  File to read from (.avro)
  * @return                          List of Person
  * @throws IOException              If there is an error reading from the file
  */
@@ -297,17 +297,17 @@ private static List<Person> deserializePersons(File personListSerializedFile) th
 
 # Conclusion
 
-When it comes to data serialization in Java, Apache Avro offers compelling advantages.
-Its support for schema evolution, compact binary format, fast serialization/deserialization, language independence, and interoperability make it a valuable tool for storing and processing data efficiently. By leveraging the benefits of Apache Avro, developers can streamline their data processing workflows and improve overall system performance.
+In this article, we have seen how to use Apache Avro to serialize and deserialize objects in Java.
+When it comes to fast binary data transfer, Apache Avro offers compelling advantages.
+Its support for schema evolution, compact binary format, fast serialization/deserialization, language independence, and interoperability make it a valuable tool for storing and processing data efficiently.
+By leveraging the benefits of Apache Avro, developers can streamline their data processing workflows and improve overall system performance.
 
-
-# Resources
+# References
 
 - <i class="fab fa-github"></i> [Avro examples](https://github.com/apache/avro/tree/master/doc/examples)
 - [:earth_americas: Apache Avro official documentation](https://avro.apache.org/docs/)
 - [:earth_americas: Guide to Apache Avro](https://www.baeldung.com/java-apache-avro)
 - [:earth_americas: Guide to Spring Cloud Stream with Kafka, Apache Avro and Confluent Schema Registry](https://www.baeldung.com/spring-cloud-stream-kafka-avro-confluent)
-- 
 
 # Further Reading
 
