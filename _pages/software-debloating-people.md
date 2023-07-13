@@ -3,9 +3,10 @@ permalink: software-debloating-people.html
 layout: page
 title: Software Debloating People
 subtitle: A list
-tags: debloat
+tags: debloating
 keywords: software debloating,living review,survey,software engineering
 image: ../img/pages/software-debloating-papers/debloating.png 
+robots: noindex
 ---
 
 <!-- Carbon ads -->
