@@ -9,8 +9,8 @@ keywords:
   - computer science research,
   - live after the PhD,
   - job seeking
-image: ../img/posts/2023/subway_in_red_cover.jpg
-share-img: ../img/posts/2023/subway_in_red_cover.jpg
+image: ../img/posts/2023/2023-03-10/subway_in_red_cover.jpg
+share-img: ../img/posts/2023/2023-03-10/subway_in_red_cover.jpg
 show-avatar: false
 toc: true
 date: 2023/02/14
@@ -27,7 +27,7 @@ My intention is to provide fellow PhD students (and anyone contemplating a simil
 As someone who has gone through the process of securing a job prior to completing a PhD, I understand the challenges and uncertainties you might face, and I hope my story will offer some clarity and inspiration for those about to embark on their own professional journey... way beyond academia.
  
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/subway_in_red.jpg alt:"There's light and opportunity at the end of the tunnel" %}
+  {% responsive_image path: img/posts/2023/2023-03-10/subway_in_red.jpg alt:"There's light and opportunity at the end of the tunnel" %}
   <figcaption class="stroke"> 
     &#169; There's light and opportunity at the end of the tunnel. Photo of an art piece located one of Stockholm's metro stations.
   </figcaption>
