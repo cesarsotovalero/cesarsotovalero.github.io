@@ -310,7 +310,17 @@ a[href^="https://www.freecodecamp.org/"] {
 
 a[href^="https://coursera.org/"] {
   background: transparent url(/img/icons/coursera.svg) no-repeat center left;
+  padding-left: 35px;
+}
+
+a[href^="https://courses.edx.org/"] {
+  background: transparent url(/img/icons/edx.svg) no-repeat center left;
   padding-left: 45px;
+}
+
+a[href^="https://www.kth.se/student/kurser/"] {
+  background: transparent url(/img/icons/kth.svg) no-repeat center left;
+  padding-left: 35px;
 }
 
 a[href$=".pdf"] {
