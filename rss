@@ -31,12 +31,12 @@
       <item>
         <title>Data Serialization/Deserialization in Java With Apache Avro</title>
         <description>
-          Getting starting - 
+          Getting started - 
           When working with data processing in Java, choosing the right file format for storing and transmitting the data is crucial. Each format (such as CSV, JSON, or Parquet) has its particular advantages and disadvantages, as they are specifically designed to cater to different use cases. In this article, I’ll focus...
         </description>
         <pubDate>Fri, 20 Jan 2023 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/data-serialization-in-java-with-apache-avro.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/data-serialization-in-java-with-apache-avro.html</guid>
+        <link>https://www.cesarsotovalero.net/blog/data-serialization-deserialization-in-java-with-apache-avro.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/data-serialization-deserialization-in-java-with-apache-avro.html</guid>
       </item>
     
       <item>
