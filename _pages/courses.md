@@ -46,6 +46,8 @@ published: true
 
 # MOOCs
 
+- [Decentralized Finance (DeFi): The Future of Finance](https://coursera.org/share/134443f801ca6af78bb17ded1d0d7d2c), Coursera, 2023
+
 - [JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/certification/cesarsotovalero/javascript-algorithms-and-data-structures), freeCodeCamp, 2021
 
 - [Responsive Web Design](https://www.freecodecamp.org/certification/cesarsotovalero/responsive-web-design), freeCodeCamp, 2021
