@@ -234,7 +234,7 @@ Now that we have the schema and the Java classes, we can use them to serialize a
 Let's say that we want to serialize and deserialize a list of `Person` objects using Avro.
 The following code snippet shows what this would look like:
 
-{% highlight java linenos %}
+{% highlight java %}
 public static void main(String[] args) throws IOException {
   // A list of Person objects
   List<Person> personList = List.of(
@@ -252,7 +252,7 @@ public static void main(String[] args) throws IOException {
 
 Here's the implementation of the method `serializePersons`:
 
-{% highlight java linenos %}
+{% highlight java %}
 /**
  * Serialize a list of Persons to disk using Avro and write to the specified file (.avro).
  * @param personList                 List of Persons
@@ -283,7 +283,7 @@ If we open the file in a text editor, we can see that it contains the serialized
 
 Here's the method `deserializePersons`, which deserializes the file into a `ArrayList` of `Person` objects:
 
-{% highlight java linenos %}
+{% highlight java %}
 /**
  * Deserialize a list of Person objects from disk using Avro.
  * @param personListSerializedFile  File to read from (.avro)
