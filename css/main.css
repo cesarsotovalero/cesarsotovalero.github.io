@@ -308,6 +308,11 @@ a[href^="https://www.freecodecamp.org/"] {
   padding-left: 45px;
 }
 
+a[href^="https://coursera.org/"] {
+  background: transparent url(/img/icons/coursera.svg) no-repeat center left;
+  padding-left: 45px;
+}
+
 a[href$=".pdf"] {
   background: transparent url(/img/icons/pdf20px.svg) no-repeat center left;
   padding-left: 22px;
