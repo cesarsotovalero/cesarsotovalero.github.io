@@ -29,6 +29,17 @@
       </item>
     
       <item>
+        <title>Data Serialization/Deserialization in Java With Apache Avro</title>
+        <description>
+          Getting starting - 
+          When working with data processing in Java, choosing the right file format for storing and transmitting the data is crucial. Each format (such as CSV, JSON, or Parquet) has its particular advantages/disadvantages and is designed for specific use cases. In this article, I’ll focus on the AVRO file format provided...
+        </description>
+        <pubDate>Fri, 20 Jan 2023 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/data-serialization-in-java-with-apache-avro.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/data-serialization-in-java-with-apache-avro.html</guid>
+      </item>
+    
+      <item>
         <title>How to Write a Good Cover Letter for a Research Paper</title>
         <description>
           Quick an easy - 
@@ -213,17 +224,6 @@
         <pubDate>Sun, 21 Nov 2021 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/how-to-set-up-a-blockchain-network-with-hyperledger-besu.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-set-up-a-blockchain-network-with-hyperledger-besu.html</guid>
-      </item>
-    
-      <item>
-        <title>How I Overcome Writer&apos;s Block When Preparing a Research Paper</title>
-        <description>
-          My bulletproof approach - 
-          Every time I start writing a new research paper, the same freezing feeling seems to emerge when I look at the blank page. This problem is known as writer’s block, and most academics suffer from it in one way or the other. I’ve dealt with this invisible monster on many...
-        </description>
-        <pubDate>Sun, 07 Nov 2021 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html</guid>
       </item>
     
   </channel>
