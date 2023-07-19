@@ -18,23 +18,15 @@ author: cesarsotovalero
 published: false
 ---
 
-Public speaking has never being my thing.
-When I was a child, I remember feeling afraid of standing out from the rest.
-Showcasing myself publicly was like a nightmare, maybe due to the fear of feeling ridiculous.
-With the time, I have understood that talent and hard work doesn't really matter if you can't present your work professionally.
-So there is actually no option for professionals, it's the job market, and there's nothing we can do to change it.
-This is a pesky initiation rite that never ends, starting from the education system, and then during [hiring interviews](../blog/securing-a-permanent-job-in-sweden-before-completing-my-phd.html#interviews), and going all the way to the granddaddy of them all, the PhD defense.
-I kid you not, my early days as a presenter at KTH were a disaster movie in the making.
-Shaky voice? Check. Incoherent ramblings?
-Double check.
-But hey, you live and learn, right?
-After five years of enduring all sorts of presentations, good, bad, and downright ugly, I've picked up a trick or two.
-Sure, I've bombed more presentations than I'd care to admit, but that's just given me a front-row seat to the dos and don'ts of the presenting world.
-And let me tell you, I've got stories that could make seasoned professionals squirm!
-So, pull up a chair, grab some popcorn, and let's dive into this crash course on nailing your next big presentation.
-After all, if I could do it, so can you!
-
-TODO: Add links to [my PhD thesis defense](https://youtu.be/Ub684G_aM5Q) and to my talks.
+Public speaking has never being easy for me.
+When being a child, I was cautious of not standing out from the rest.[^1]
+Today, I have understood that there is not way to avoid going public when pursuing professional excellence.
+Talent and hard work doesn't really matter if I can't package and present my work to the masses.
+I recently did [my PhD thesis defense](https://youtu.be/Ub684G_aM5Q) at KTH (it went well, if you ask me), and want to take the change to reflect on 
+what I've learnt during these years about technical presentations.
+The last five years enduring all sorts of presentations made me going from shaky voice and incoherent ramblings, to the point in which I sort of feel confident at public speaking.
+So, in this article, I'll tell you about the tricks I've learnt.
+If you follow all these tips, no doubts you'll be able to nailing your next technical presentation.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-03-22/circus.jpg alt:"TODO" %}
@@ -43,10 +35,21 @@ TODO: Add links to [my PhD thesis defense](https://youtu.be/Ub684G_aM5Q) and to 
   </figcaption>
 </figure>
 
+# BTW, what is a technical presentation?
+
+Let me start by giving a general definition of what a technical presentation is: 
+
+> "A technical presentation is a communication session in which a speaker delivers specialized information, explanations, or demonstrations on a specific technical topic to an audience."
+
+Now, let's decompose its keywords:
+
+- **"communication session"**: It refers to the format of the presentation. For example: conference talks, tech workshops, webinars, product sales pitches, etc.
+- **"delivers specialized information, explanations, or demonstrations"**: The speaker focuses on delivering technical content in a clear, concise, and engaging manner.
+- **"technical topic"**: Technical presentations often involve the use of visual aids such as slides, diagrams, code snippets, demonstrations, or multimedia elements to support and enhance the content delivery.
+
+
 
 TL;DR: The secret to delivering a great presentation lies in showcasing and embodying confidence.
-
-From Yegor Bugayenko's [blog](https://www.yegor256.com/2019/04/23/how-to-give-a-great-technical-presentation.html):
 
 - Don't be obvious!
 - Don't exaggerate with jokes!
@@ -198,9 +201,15 @@ The video emphasizes the importance of effective communication skills and provid
 
 Overall, the video emphasizes the significance of effective communication, highlights practical tips for improving speaking abilities, and underscores the importance of engaging and inspiring the audience.
 
-## Examples of great presentations
+## Examples of inspiring presentations
 
-- [ The Art of Code](https://youtu.be/2jyPBjlKhtk), by [Dylan Beattie](https://dylanbeattie.net/)
+Here are some of the best presentations I've seen: 
+
+- [_"The Future of Programming"_](https://youtu.be/8pTEmbeENF4), by Bret Victor (32 min)
+- [_"The Mess We're In"_](https://youtu.be/lKXe3HUG2l4), by Joe Armstrong, creator of Erlang (45 min)
+- [_"The Art of Code"_](https://youtu.be/2jyPBjlKhtk), by [Dylan Beattie](https://dylanbeattie.net/) (1h)
+- [ The Deep Synergy Between Testability and Good Design](https://youtu.be/4cVZvoFGJTU), by [Michael Feathers](https://michaelfeathers.silvrback.com/) (50 min)
+- [Steve Jobs introduces iPhone in 2007](https://youtu.be/MnrJzXM7a6o) (10 min)
 
 # Resources
 
@@ -209,4 +218,4 @@ Overall, the video emphasizes the significance of effective communication, highl
 
 # Footnotes
 
-[^1]: TODO
+[^1]: Feeling ridiculous seems to be a **big** problem at young ages.
