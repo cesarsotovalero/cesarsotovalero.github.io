@@ -65,11 +65,11 @@ Here's what I think a technical presentation is:
 
 The following are the important keywords in the definition above:
 
-- **"communication session"**: It refers to the format of the presentation. For example, a conference talks, tech workshops, webinars, product sales pitches, and even job interviews are all examples of technical presentations.
+- **"communication session"** It refers to the format of the presentation. For example, a conference talks, tech workshops, webinars, product sales pitches, and even job interviews are all examples of technical presentations.
  
-- **"delivers specialized information, explanations, or demonstrations"**: It refers of the type of content that is delivered. In this article I focus on technical context in the area of Computer Science and Technology. Technical presentations often involve the use of visual aids such as slides, diagrams, code snippets, demonstrations, or multimedia elements to support and enhance the content delivery experience.
+- **"delivers specialized information, explanations, or demonstrations"** It refers of the type of content that is delivered. In this article I focus on technical context in the area of Computer Science and Technology. Technical presentations often involve the use of visual aids such as slides, diagrams, code snippets, demonstrations, or multimedia elements to support and enhance the content delivery experience.
  
-- **"audience"**: The audience is the speaker's target. It can be a small group of people or a large group of people. I assume the people is already familiar with the topic of the presentation, and is interested in learning more about it.
+- **"audience"** The audience is the speaker's target. It can be a small group of people or a large group of people. I assume the people is already familiar with the topic of the presentation, and is interested in learning more about it.
 
 **NOTE:** The rest of this article is written from the perspective of the speaker.
 
@@ -82,7 +82,7 @@ The following are the important keywords in the definition above:
 
 # How to start
 
-The best way to start is with a **promise**. 
+The best way to start is a technical presentation with a **promise**. 
 You want to tell people what they're going to know at the end of your presentation something new they didn't know at the beginning.
 For example, you can say something like: "At the end of this `X` minutes, you will know things about `Y` you didn't know, and something among those new things will make a difference for you in `Z`."
 This is statement simple and powerful.
