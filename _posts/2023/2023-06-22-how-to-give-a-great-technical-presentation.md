@@ -20,15 +20,15 @@ published: true
 
 Public speaking has never been my forte.
 As a child, I often preferred blending into the crowd rather than standing out.[^1]
-However, I've since realized that in the pursuit of professional excellence, it's impossible to avoid the public eye
-Because talent and hard work doesn't really matter if I can't properly package and present my work to the masses.
-I recently [defended my PhD thesis](https://youtu.be/Ub684G_aM5Q) (it went well, if you ask me), so I want to take this time to reflect on what I've learned over the years while delivering [technical talks](../talks.html).
-I notice that the last 5 years of PhD have made me going from shaky voice and incoherent ramblings, to the point in which I sort of feel confident at public speaking.
-In this article, I sit over the shoulders of giants to tell you about some of the tricks I've learned from my own and also from others' experiences.
+However, I've since realized that in the pursuit of professional excellence, there is no way to avoid the public eye.
+Talent and hard work doesn't really matter if I can't properly package and present my work to the masses.
+I recently [defended my PhD thesis](https://youtu.be/Ub684G_aM5Q) (it went well, if you ask me), so I want to take this time to reflect on what I've learned over the years while delivering a few [technical talks](../talks.html).
+Upon reflection, I notice that the last 5 years of PhD have made me going from shaky voice and incoherent ramblings, to the point in which I sort of feel confident at public speaking.
+In this article, I sit over the shoulders of giants to tell you about some of the tricks I've learned from my own experience and also from others.
 I'll walk you through some effective strategies for technical presentations.
 If you follow me, I've no doubts you'll be able to nailing your next one.
 
-**TL;DR: The secret to delivering a great presentation lies in feeling in control, which enables the necessary confidence to be perceived as an expert.**
+**TL;DR:** The secret to delivering a great presentation is feeling in control, which enables the necessary confidence to be perceived as an expert.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-03-22/circus.jpg alt:"Public speaking is a circus" %}
