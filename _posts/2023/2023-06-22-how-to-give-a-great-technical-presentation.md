@@ -13,7 +13,7 @@ image: ../img/posts/2023/2023-03-22/circus-cover.jpg
 share-img: ../img/posts/2023/2023-03-22/circus-cover.jpg
 show-avatar: false
 toc: true
-date: 2023/03/22
+date: 2023/06/22
 author: cesarsotovalero
 published: false
 ---
@@ -28,28 +28,32 @@ The last five years enduring all sorts of presentations made me going from shaky
 So, in this article, I'll tell you about the tricks I've learnt.
 If you follow all these tips, no doubts you'll be able to nailing your next technical presentation.
 
+TL;DR: The secret to delivering a great presentation lies in feeling in control, which enables showcasing and embodying confidence.
+
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-03-22/circus.jpg alt:"TODO" %}
   <figcaption class="stroke"> 
-    &#169; TODO. Photo of a painting in <a href="https://goo.gl/maps/cGN5k72vforbXD2T6">ABF Stockholm</a>.
+    &#169; Public speaking success is, like in a circus, about providing an unique and memorable experience to your audience. Photo of <a href="https://en.wikipedia.org/wiki/Cirque_du_Soleil">Cirque du Soleil</a> in Stockholm, 2023.
   </figcaption>
 </figure>
 
 # BTW, what is a technical presentation?
 
-Let me start by giving a general definition of what a technical presentation is: 
+Here's what it is: 
 
 > "A technical presentation is a communication session in which a speaker delivers specialized information, explanations, or demonstrations on a specific technical topic to an audience."
 
-Now, let's decompose its keywords:
+[//]: # (a quote)
+<aside class="quote">
+    <em>“Talk to your audience, not at them.”</em> 
+</aside>
 
-- **"communication session"**: It refers to the format of the presentation. For example: conference talks, tech workshops, webinars, product sales pitches, etc.
-- **"delivers specialized information, explanations, or demonstrations"**: The speaker focuses on delivering technical content in a clear, concise, and engaging manner.
-- **"technical topic"**: Technical presentations often involve the use of visual aids such as slides, diagrams, code snippets, demonstrations, or multimedia elements to support and enhance the content delivery.
+I've written this article is written from the perspective of the speaker. 
+The following keywords in the definition above are important:
 
-
-
-TL;DR: The secret to delivering a great presentation lies in showcasing and embodying confidence.
+- **"communication session"**: It refers to the format of the presentation. For example, a conference talks, tech workshops, webinars, product sales pitches, and even job interviews are all examples of technical presentations.
+- **"delivers specialized information, explanations, or demonstrations"**: It refers of the type of content that is delivered. In this article I focus on technical context in the area of computer science and technology. Technical presentations often involve the use of visual aids such as slides, diagrams, code snippets, demonstrations, or multimedia elements to support and enhance the content delivery.
+- **"audience"**: The audience is the group of people who are listening to the presentation. The audience can be a small group of people or a large group of people. I assume the people is already familiar with the topic of the presentation, and is interested in learning more about it.
 
 - Don't be obvious!
 - Don't exaggerate with jokes!
@@ -60,23 +64,22 @@ TL;DR: The secret to delivering a great presentation lies in showcasing and embo
 
 # How to start
 
-The easiest subjects to start with are stories about your practical experience with some modern technologies and tools, something like “How Docker Helps Us Optimize Delivery” or “Five Apache Spark Installation Issues.” Just describe what you’ve done on a recent project. It doesn’t really matter what you talk about. What matters is that you’re visible. If the market accepts you, the employer will trust you more. That’s exactly what you need in order to request a higher rate.
+The easiest way to start a presentation is by telling some story about your practical experience with some modern technologies and tools, something like “How Docker Helps Us Optimize Delivery” or “Five Apache Spark Installation Issues.” 
+Just describe what you’ve done on a recent project. It doesn’t really matter what you talk about. What matters is that you’re visible. 
+If the market accepts you, the employer will trust you more. That’s exactly what you need in order to request a higher rate.
 
-As Steve Jobs famously said, "People who know what they're talking about don't need PowerPoint." Yet, crafting an engaging presentation without slides can indeed be a significant challenge.
 
-<aside class="quote">
-    <em>“People who know what they're talking about don't need PowerPoint.” <cite>Steve Jobs</cite></em> 
-</aside>
+# How to start
 
-# Transcript:
+Professionals shouldn't go out into life without the ability to communicate, and that's because your success in life will be determined largely by your ability to **speak** ($$S$$), your ability to **write** ($$W$$), and the quality of your **ideas** ($$I$$), in that order.
 
-## Intro
+$$Success(S, W, I) = a * S + b * W + c * I $$
 
-- Students shouldn't go out into life without the ability to communicate, and that's because your success in life will be determined largely by your ability to speak, your ability to write, and the quality of your ideas, in that order.
+where $$a > b > c$$.
 
-- The quality of our communication, your speaking, your writing, is largely determined by how much **knowledge** you have, how much you **practice** with that knowledge (KPT), and your inherent **talent** (T is very small). What really matters is what you know.
+The quality of the S, W, and I, is largely determined by how much **knowledge** (K) you have, how much you **practice** (P) with that knowledge (KPT), and your inherent **talent** (T).
 
-Quality = f(K, P, T)
+Quality(S, W, I) = f(K, P, T)
 
 - So you can get a lot better than people who may have inherent talents if you have the right amount of knowledge.
 
@@ -117,6 +120,11 @@ If you watch the speakers you admire and feel are effective, and ask yourselves 
 - **Props**.  There are tools or accessories that you can use to make sure your talk is memorable. For example, use props to show the importance of looking at the problem in the right way. 
 
 Board + Props = Empathetic Mirroring (you can feel yourself writing on the blackboard, you need to see it in the pysical world)
+
+[//]: # (Quote by Steve Jobs)
+<aside class="quote">
+    <em>“People who know what they're talking about don't need PowerPoint.” ―  <cite>Steve Jobs</cite></em> 
+</aside>
 
 - **Slides**. There are always too many slides, always too many words. One of the things you shouldn't do is read your slides. People in your audience know how to read, and reading will just annoy them. Also, you should be sure that you have only a few words on each slide, and that the words are easy to read. You want the slides to be condiments to what you're saying, not the main event or the opposite way around. So how can we fix this? Step number one is to get rid of the background junk. That's always distraction. Step number two is to get rid of the words. Get rid of the logos. We don't need them. Simplification. What else can we do? Get rid of the title. By reducing the number of words on the slide, I'm allowing you to pay more attention to me and less to what's written on the slide. Remember that we have only one language processor, and we can either use it to read stuff or to listen to the speaker. And so if we have too many words on the slide, it forces people in the audience to read this stuff and not listen. No reason even for those bullets. Don't use any kind of laser pointers, those are distracting because you loose the contact with your audience, instead, this is what you do: put a little arrow on there tell the audience to look at that. You can have one complex slide per work, one per presentation, one per paper, one per book. That's what [hapax legomenon](https://en.wikipedia.org/wiki/Hapax_legomenon).
 
@@ -208,8 +216,8 @@ Here are some of the best presentations I've seen:
 - [_"The Future of Programming"_](https://youtu.be/8pTEmbeENF4), by Bret Victor (32 min)
 - [_"The Mess We're In"_](https://youtu.be/lKXe3HUG2l4), by Joe Armstrong, creator of Erlang (45 min)
 - [_"The Art of Code"_](https://youtu.be/2jyPBjlKhtk), by [Dylan Beattie](https://dylanbeattie.net/) (1h)
-- [ The Deep Synergy Between Testability and Good Design](https://youtu.be/4cVZvoFGJTU), by [Michael Feathers](https://michaelfeathers.silvrback.com/) (50 min)
-- [Steve Jobs introduces iPhone in 2007](https://youtu.be/MnrJzXM7a6o) (10 min)
+- [_"The Deep Synergy Between Testability and Good Design"_](https://youtu.be/4cVZvoFGJTU), by [Michael Feathers](https://michaelfeathers.silvrback.com/) (50 min)
+- [_"Steve Jobs Introduces iPhone in 2007"_](https://youtu.be/MnrJzXM7a6o) (10 min)
 
 # Resources
 
@@ -219,3 +227,16 @@ Here are some of the best presentations I've seen:
 # Footnotes
 
 [^1]: Feeling ridiculous seems to be a **big** problem at young ages.
+
+
+[//]: # (Enable Latex support, see https://zjuwhw.github.io/2017/06/04/MathJax.html)
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
