@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>How to Give a Great Technical Presentation</title>
+        <description>
+          Here&apos;s what I&apos;ve learned - 
+          Public speaking has never been my forte. As a child, I often preferred blending into the crowd rather than standing out.1 However, I’ve since realized that in the pursuit of professional excellence, it’s impossible to avoid the public eye Because talent and hard work doesn’t really matter if I can’t...
+        </description>
+        <pubDate>Thu, 22 Jun 2023 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/how-to-give-a-great-technical-presentation.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-give-a-great-technical-presentation.html</guid>
+      </item>
+    
+      <item>
         <title>Let&apos;s Face It&amp;#58; Paper Figures Are Always Subject to Change</title>
         <description>
           The story of a single figure - 
@@ -213,17 +224,6 @@
         <pubDate>Sun, 05 Dec 2021 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/sigbovik-the-ig-nobel-for-academics-and-computer-science-researchers.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/sigbovik-the-ig-nobel-for-academics-and-computer-science-researchers.html</guid>
-      </item>
-    
-      <item>
-        <title>How to Set Up A Blockchain Network With Hyperledger Besu</title>
-        <description>
-          Look mom, I&apos;m running my own blockchain! - 
-          If you are a Java developer interested in cryptocurrencies and blockchain-related technologies, you should probably have heard about Hyperledger Besu. Besu is the official Java client of the Ethereum blockchain. As an enterprise-grade client for public and private networks, Besu is able to connect to the blockchain and verify all...
-        </description>
-        <pubDate>Sun, 21 Nov 2021 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/how-to-set-up-a-blockchain-network-with-hyperledger-besu.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-set-up-a-blockchain-network-with-hyperledger-besu.html</guid>
       </item>
     
   </channel>
