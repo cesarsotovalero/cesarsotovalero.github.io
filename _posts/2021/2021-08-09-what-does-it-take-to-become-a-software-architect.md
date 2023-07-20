@@ -16,6 +16,7 @@ show-avatar: false
 toc: true
 author: cesarsotovalero
 date: 2021/08/09
+published: true
 ---
 
 Programmers and software engineers are in high demand today.

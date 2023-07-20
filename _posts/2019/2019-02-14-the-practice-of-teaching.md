@@ -2,7 +2,6 @@
 layout: post
 title: The Practice of Teaching
 subtitle: The ultimate skill to learn
-published: true
 tags: soft-skills
 description: I share preparation tips when teaching how the Quicksort algorithm works using a blackboard and chalk.
 keywords: teach, video, explanation, quicksort
@@ -11,6 +10,7 @@ share-img: ../img/posts/2019/people_cover.png
 show-avatar: false
 author: cesarsotovalero
 date: 2019/2/14
+published: true
 ---
 
 Nobody can deny that teaching is hard.

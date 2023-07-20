@@ -3,7 +3,6 @@ layout: post
 title:  Enhance Your Readme With Asciinema
 subtitle: How to create beautiful terminal recordings that your users will love
 tags: tools
-published: true
 description: In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema.
 keywords: asciinema, readme, improvement, video
 image: ../img/posts/2021/asciinema_cover.jpg
@@ -12,6 +11,7 @@ toc: true
 show-avatar: false
 author: cesarsotovalero
 date: 2021/4/5
+published: true
 ---
 
 [Asciinema](https://asciinema.org/) is an excellent tool for recording and sharing terminal sessions. 

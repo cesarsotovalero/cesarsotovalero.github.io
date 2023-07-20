@@ -5,13 +5,13 @@ subtitle: Leveraging the wisdom of multiple coverage tools
 tags: debloating
 keywords: software debloat, diversity, jdbl
 description: I leverage the diversity of code coverage tools to create a tool to automatically debloat Java artifacts.
-published: true
 image: ../img/posts/2020/crowd_cover.jpg
 share-img: ../img/posts/2020/crowd_cover.jpg
 show-avatar: false
 toc: true
 author: cesarsotovalero
 date: 2020/6/08
+published: true
 ---
 
 For months, I have worked on dynamic debloat of Java artifacts with [JDBL](https://github.com/castor-software/jdbl). To do so, I need to compile and execute software applications to determine what parts of the compiled application are used when executing it using some workloads. Then, with the collected usage information, I debloat the unused parts of the software. These two main tasks (execution and usage collection)  appear straightforward at first glance. However, I realize that the inability of coverage tools to precisely determine what is used at execution time makes this task a real challenge. I found a feasible solution to this problem in the combination of various coverage techniques, i.e., by leveraging [software diversity](https://dl.acm.org/doi/abs/10.1145/2807593). Let me explain.  

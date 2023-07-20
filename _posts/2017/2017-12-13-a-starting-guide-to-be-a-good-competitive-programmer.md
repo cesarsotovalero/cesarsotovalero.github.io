@@ -2,7 +2,6 @@
 layout: post
 title: A Starting Guide to Become a Good Competitive Programmer
 subtitle: Learning is More Important than Competing
-published: true
 tags: programming
 description: Insights and tricks that I learned when I was a competitive programmer
 keywords: acm icpc, competition, problems, programming
@@ -12,6 +11,7 @@ show-avatar: false
 toc: true
 author: cesarsotovalero
 date: 2017/12/13
+published: true
 ---
 
 I discovered the world of competitive programming challenges during my first year at university. At that time, I didn't know much about computer algorithms or even mind sports. However, the idea of learning how to code by myself just using an online judge attracted my attention since the first moment. I remembered my first ACM-ICPC contest in 2009. My performance in the contest was terrible. With only a few weeks of training, I was unable to solve any of the problems. From that moment onward, I knew that programming contests are a real challenge, even for serious and highly motivated students.
