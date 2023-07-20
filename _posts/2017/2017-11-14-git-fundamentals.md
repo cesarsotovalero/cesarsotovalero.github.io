@@ -2,8 +2,7 @@
 layout: post
 title: Git Fundamentals
 subtitle: The must-know git commands for software developers
-published: true
-description: The basic git commands that every developer should known. 
+description: The basic git commands that every developer should known.
 tags: tools
 keywords: command line, version control, GitHub, software developement
 image: ../img/posts/2017/git_logo_cover.png
@@ -12,6 +11,7 @@ show-avatar: false
 toc: true
 author: cesarsotovalero
 date: 2017/11/14
+published: true
 ---
 
 Git is the standard version-control system for software development. Git was created by Linux Torvals in 2005 to support the development of the Linux kernel. Since then, Git has become an essential tool for both junior and senior developers. It allows to have a complete history and full version-tracking of the project, easing all the different phases of the development process.

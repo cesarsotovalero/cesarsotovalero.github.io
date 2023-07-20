@@ -4,7 +4,6 @@ title: Book Review&#58; The PhD Grind
 subtitle: A tale of perseverance and learning from failure
 description: If you are seriously considering doing a PhD in Computer Science, the PhD Grind is the book for you.
 tags: research
-published: true
 keywords: research, PhD, book
 image: ../img/posts/2021/phd_grind_cover.png
 share-img: ../img/posts/2021/phd_grind_cover.png
@@ -12,6 +11,7 @@ toc: true
 show-avatar: false
 author: cesarsotovalero
 date: 2021/6/24
+published: true
 ---
 
 I recently read the amazing short book titled _"The PhD Grind"_ by [Prof. Philip Guo](https://pg.ucsd.edu). The book (~100 pages) is a compendium of his memories, written right after finishing his PhD in 2012. I felt ecstatic with such a brilliant masterpiece that I could barely put it down once I started. As a PhD student doing research in Computer Science, I sometimes feel like I'm going through a unique and particularly arduous path. Reading this book helped me to deeply understand the singularities and generalities of pursuing a PhD Thus, the big picture is much clearer for me now. I only wish I had read this piece earlier in my PhD career. In this post, besides the ~~obvious~~ recommendation to read this book, I want to share my personal comments regarding some of the author's key reflections.
