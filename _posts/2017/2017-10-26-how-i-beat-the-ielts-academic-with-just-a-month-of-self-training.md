@@ -3,7 +3,6 @@ layout: post
 title: How I Beat the IELTS Academic With Just a Month of Self-Training
 subtitle: My personal comments and suggestions
 description: Personal useful list of tips to pass the IELTS Academic English test. 
-published: true
 tags: soft-skills
 keywords: learn english, international test, language test
 image: ../img/posts/2017/IELTS.jpg
@@ -12,6 +11,7 @@ show-avatar: false
 toc: true
 author: cesarsotovalero
 date: 2017/10/26
+published: true
 ---
 
 The International English Language Testing System (IELTS) is one of the major English language tests for higher education and immigration in the world. It is jointly managed by the British Council, IELTS Australia, and Cambridge English Language Assessment. IELTS is accepted by most Australian, British, Canadian and New Zealand academic institutions, by over 3000 educational institutions in the United States, and by many professional organizations across the world.  

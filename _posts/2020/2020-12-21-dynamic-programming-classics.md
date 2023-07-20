@@ -4,7 +4,6 @@ title:  Dynamic Programming
 subtitle: A handful of representative problems solved
 tags: programming
 description: All software engineers should be able to understand dynamic programming. I give a curated list of very representative problems and explain their solutions.
-published: true
 keywords: problems, dynamic programming, strategies
 image: ../img/posts/2020/circular_effect_cover.jpg
 share-img: ../img/2020/circular_effect_cover.jpg
@@ -12,6 +11,7 @@ toc: false
 show-avatar: false
 author: cesarsotovalero
 date: 2020/12/21
+published: true
 ---
 
 Dynamic programming (DP) is one of the most basic and, at the same time, challenging programming paradigms.

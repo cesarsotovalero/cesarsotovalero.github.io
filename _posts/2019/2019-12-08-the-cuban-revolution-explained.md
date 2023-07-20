@@ -2,7 +2,6 @@
 layout: post
 title: The Cuban Revolution 
 subtitle: My personal vision
-published: true
 keywords: politics, Cuba, reality
 description: Cuba has resisted more than sixty years of communism caused by the cuban revolution. I explain the historical context and implications of this event.
 tags: misc
@@ -11,6 +10,7 @@ share-img: ../img/posts/2019/cuban_flag_cover.jpg
 show-avatar: false
 author: cesarsotovalero
 date: 2019/12/8
+published: true
 ---
 
 Recently, a friend of mine kindly requested me for information about Cuba and how the Revolution affected the people. He wanted to educate his child about socialism, from the voice of someone who lived it. The information is intended to be given to middle school kids. These are the five paragraphs that I wrote for him:
