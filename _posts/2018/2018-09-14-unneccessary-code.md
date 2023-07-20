@@ -2,7 +2,6 @@
 layout: post
 title: Unnecessary Code
 subtitle: Clarifying the concept 
-published: true
 tags: debloating
 keywords: software bloat, code, unused code
 description: Unnecessary code is such that can be deleted from the codebase without affecting the expected functionality of the software project.
@@ -11,6 +10,7 @@ share-img: ../img/posts/2018/codecode_cover
 show-avatar: false
 author: cesarsotovalero
 date: 2018/09/14
+published: true
 ---
 
 After reading the paper ["Is Static Analysis Able to Identify Unnecessary Source Code?"](https://www.cqse.eu/fileadmin/content/news/publications/2020-unnecessary-code-tosem.pdf) about the negative impact of unnecessary code in the software industry, I felt stuck with the many different (but very related) concepts around this topic. One can think that unnecessary code is all code that is not needed for an application to run correctly. However, the fact is that the concept is more complicated than it seems, and sometimes it is not very easy to understand what **unnecessary** means in this context. For example, there is a slight (but quite important) difference between what we know as dead code (code that will never be used) and unnecessary code (code that can be used or not, but definitely is not required for the application). 

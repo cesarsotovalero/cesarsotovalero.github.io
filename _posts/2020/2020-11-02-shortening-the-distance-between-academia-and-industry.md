@@ -4,7 +4,6 @@ title:  Shortening the Distance Between Academia and Industry
 subtitle: An imperative need of researchers
 tags: research
 keywords: research, industry, collaboration
-published: true
 description: Presenting research work to industrial engineers is essential for the sustainability of the whole research business.
 image: ../img/posts/2020/skates_cover.jpg
 share-img: ../img/posts/2020/skates_cover.jpg
@@ -12,6 +11,7 @@ show-avatar: false
 author: cesarsotovalero
 toc: true
 date: 2020/11/2
+published: true
 ---
 
 Research is about solving relevant problems for the best of humanity. 

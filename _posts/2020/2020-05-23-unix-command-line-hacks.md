@@ -5,13 +5,13 @@ subtitle: Boosting automation from the shell
 tags: programming
 keywords: unix, command line, scripts, tools
 description: Personal notes of the edX course titled Unix Tools Data, Software and Production Engineering.
-published: true
 image: ../img/posts/2020/unix_course_cover.jpg
 share-img: ../img/posts/2020/unix_course_cover.jpg
 show-avatar: false
 toc: false
 author: cesarsotovalero
 date: 2020/5/23
+published: true
 ---
 
 I want to share my personal notes of the [edX](www.edx.org) course [Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering), by Prof. Diomidis Spinellis. I attended this course from March to June, 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and it makes me consider online education very seriously, as it provides an excellent way of learning from top courses, given by top universities, and tough by top experts in the world.

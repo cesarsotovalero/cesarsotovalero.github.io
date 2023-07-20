@@ -2,7 +2,6 @@
 layout: post
 title: The Zip Slip Vulnerability Exploitation
 subtitle: Zip slip attacks
-published: true
 tags: security
 description: The Zip Slip vulnerability is exploited using a specially crafted archive that holds directory traversal filenames. I prepared and exploit and explain how it works.
 keywords: software attack, vulnerability
@@ -12,6 +11,7 @@ show-avatar: false
 toc: true
 author: cesarsotovalero
 date: 2019/10/16
+published: true
 ---
 
 In today's ever expanding-open source communities, developers rely heavily on third-party libraries and copy-pasted code from community websites like [StackOverflow](https://stackoverflow.com/) to accelerate productivity. Such code reuse tendency helps to decrease development time and effort, but also means that vulnerability in shared code (i.e., libraries) gets spread dramatically faster, as occurs in the case of the **Zip Slip vulnerability**.
