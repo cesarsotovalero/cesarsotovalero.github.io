@@ -42,22 +42,24 @@ If you follow me, I've no doubts you'll be able to nailing your next one.
 Professionals shouldn't go out into life without the ability to communicate.
 This is because success in life is largely determined by our ability to **speak** ($$S$$), **write** ($$W$$), and the quality of our **ideas** ($$I$$), in that order.
 
+Here's a simple formula:
+
 $$Success(S, W, I) = a * S + b * W + c * I $$, where $$a > b > c$$.
 
 The quality of $$S$$, $$W$$, and $$I$$, is largely determined by how much **knowledge** ($$K$$) we have, how much **practice** ($$P$$) with that knowledge, and our inherent **talent** ($$T$$).
 
-$$Quality(S, W, I) = f(K, P, T) = x * K + y * P + z * T$$, where $$x > z \& y > z$$.
+Here's another simple formula:
 
-You want to get the maximum opportunity to have your ideas valued and accepted by the people you speak with.
+$$Quality(S, W, I) = x * K + y * P + z * T$$, where $$x > z ~\& ~y > z$$.
+
+As a professional, you probably want to get the maximum opportunity to have your ideas valued and accepted by the people you speak with.
 One of the best ways to do that by delivering excellent technical presentations.
 
 > **Corollary:** You can get a lot better than people who may have inherent talents if you have the right amount of knowledge and the ability to transmit your own ideas.
 
 # Definition
 
-BTW, what is a technical presentation?
-
-Here's what I think it is:
+Here's what I think a technical presentation is:
 
 > "A technical presentation is a communication session in which a speaker delivers specialized information, explanations, or demonstrations on a specific technical topic to an audience."
 
