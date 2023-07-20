@@ -3,7 +3,7 @@ layout: post
 title: Data Serialization/Deserialization in Java With Apache Avro
 subtitle: Getting started
 tags: big-data
-description:  Apache Avro stands as the go-to data serialization framework for efficient binary data streaming. In this article, I'll cover the main features of Avro and why/when/how to use it for serialize and deserialize data files in Java.
+description:  Apache Avro stands as the go-to data serialization framework for efficient binary data streaming. In this article, I cover the main features of Avro and why/when/how to use it for serialize and deserialize data files in Java.
 keywords:
   - Apache Avro,
   - data engineering,

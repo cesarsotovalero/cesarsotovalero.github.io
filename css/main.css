@@ -320,7 +320,12 @@ a[href^="https://courses.edx.org/"] {
 
 a[href^="https://www.kth.se/student/kurser/"] {
   background: transparent url(/img/icons/kth.svg) no-repeat center left;
-  padding-left: 35px;
+  padding-left: 30px;
+}
+
+a[href^="https://www.kth.se/social/course/"] {
+  background: transparent url(/img/icons/kth.svg) no-repeat center left;
+  padding-left: 30px;
 }
 
 a[href$=".pdf"] {
