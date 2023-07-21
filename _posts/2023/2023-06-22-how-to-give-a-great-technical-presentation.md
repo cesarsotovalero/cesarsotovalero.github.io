@@ -3,7 +3,7 @@ layout: post
 title: How to Give a Great Technical Presentation
 subtitle: Here's what I've learned
 tags: soft-skills
-description: Over the past five years, I've given deep thought to the power of effective public speaking. In this article, I share the tips and tricks I've gleaned from the best speakers. I hope this helps you to excel in your next technical presentation.
+description: I believe that the secret to delivering a great technical presentation is feeling in control. This enables the confidence to communicate effectively and it also helps to be perceived as an expert. In this article, I share the tips and tricks I've learned from my own flaws, and also from the best speakers. 
 keywords:
   - presentation skills,
   - public speaking,
@@ -28,7 +28,7 @@ In this article, I sit over the shoulders of giants to tell you about some of th
 I'll walk you through some effective strategies for technical presentations.
 If you follow me, I've no doubts you'll be able to nailing your next one.
 
-**TL;DR:** I believe that the secret to delivering a great presentation is feeling in control. This enables the necessary confidence communicate effectively and being perceived as an expert.
+**TL;DR:** I believe that the secret to delivering a great technical presentation is feeling in control. This enables the necessary confidence to communicate effectively, and it also helps to be perceived as an expert.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-03-22/circus.jpg alt:"Public speaking is a circus" %}
