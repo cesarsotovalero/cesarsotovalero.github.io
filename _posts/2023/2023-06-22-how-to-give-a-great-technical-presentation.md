@@ -67,7 +67,7 @@ The following are the important keywords in the definition above:
 
 - **"communication session"** It refers to the format of the presentation. For example, conference talks, tech workshops, webinars, product sales pitches, and even job interviews are all technical presentations.
  
-- **"delivers specialized information, explanations, or demonstrations"** It refers of the type of content that is delivered. In this article, I focus on technical content in the area of Computer Science and Software Technology. Technical presentations often involve the use of visual aids such as slides, diagrams, code snippets, demos, or videos to support and enhance the content reception experience.
+- **"specialized information, explanations, or demonstrations"** It refers of the type of content that is delivered. In this article, I focus on technical content in the area of Computer Science and Software Technology. Technical presentations often involve the use of visual aids such as slides, diagrams, code snippets, demos, or videos to support and enhance the content reception experience.
  
 - **"audience"** The audience is the speaker's target. It can be a small group of people in a classroom, or thousands in a stadium. Here I'm assuming that they are already familiar with the topic of the presentation, and that are  interested on it.
 
@@ -76,9 +76,6 @@ The following are the important keywords in the definition above:
 [//]: # (- Don't be obvious!)
 [//]: # (- Don't exaggerate with jokes!)
 [//]: # (- Don't be too informal, be serious!)
-[//]: # (- Don't give the same presentation more than once!)
-[//]: # (- Don't bring kitties!)
-[//]: # (- Don't finish without a Q&A!)
 
 # How to Start
 
@@ -101,12 +98,16 @@ The **second slide** should contain a picture linked to the promise or the story
 I don't like the idea of showing an outline with bullet points of whole content (sometimes titled "Agenda"), some people do, but it's boring.
 Instead, announce the structure out loud, multiple times, during the presentation.
 
-> ⚠️ [Patrick Winston](https://en.wikipedia.org/wiki/Patrick_Winston) wisely suggests: "don't start the presentation with a joke.
+> ⚠️ [Patrick Winston](https://en.wikipedia.org/wiki/Patrick_Winston) wisely suggests: "Don't start the presentation with a joke.
 The reason is that, in the beginning of a talk, people are still putting their laptops away.
 They're becoming adjusted to your speaking parameters, to your vocal parameters, and they're not ready for a joke.
 So early jokes doesn't work very well."
 
 # Time and Place
+
+<aside class="quote">
+    <em>“Don't give the same presentation more than once!”</em> 
+</aside>
 
 The **best time** for delivering a technical presentation is the morning, usually around 11:00.
 The reason is that most people are awake by then, people aren't fatigued because they're expecting lunch.
@@ -279,11 +280,15 @@ For example, [here](../collaborations.html) is a list of research topics that I'
 
 # How to Finish
 
+<aside class="quote">
+    <em>“And of course, don't finish without a Q&A!”</em> 
+</aside>
+
 One of the best ways to finish is by **telling a joke**.
 By the time you're done, people have adjusted themselves to your voice parameters.
 They're ready for a joke, and that way, people think they've had fun the whole time.
 
-> ⚠️ As Prof. Patrick Winston says, finishing with "Thank you" is a weak move.
+> ⚠️ Again, as Patrick Winston said, finishing with "Thank you" is a weak move.
 When you say thank you, it suggests that everybody has stayed that long out of politeness and that they had a profound desire to be somewhere else.
 But you are not taking their time, you are giving them something.
 So don't say thank you before the wild applause.
@@ -297,11 +302,11 @@ Finally, the last thing you could do is to **salute** the audience.
 
 Here are some of the best presentations I've seen:
 
-- "[Steve Jobs Introduces iPhone in 2007](https://youtu.be/MnrJzXM7a6o)" (10 min)
-- "[The Future of Programming](https://youtu.be/8pTEmbeENF4)," by Bret Victor (32 min)
-- "[The Mess We're In](https://youtu.be/lKXe3HUG2l4)," by Joe Armstrong, creator of Erlang (45 min)
-- "[The Art of Code](https://youtu.be/2jyPBjlKhtk)," by [Dylan Beattie](https://dylanbeattie.net/) (1h)
-- "[The Deep Synergy Between Testability and Good Design](https://youtu.be/4cVZvoFGJTU)," by [Michael Feathers](https://michaelfeathers.silvrback.com/) (50 min)
+- ["Steve Jobs Introduces iPhone in 2007](https://youtu.be/MnrJzXM7a6o)" (10 min)
+- ["The Future of Programming](https://youtu.be/8pTEmbeENF4)," by Bret Victor (32 min)
+- ["The Mess We're In](https://youtu.be/lKXe3HUG2l4)," by Joe Armstrong, creator of Erlang (45 min)
+- ["The Art of Code](https://youtu.be/2jyPBjlKhtk)," by [Dylan Beattie](https://dylanbeattie.net/) (1h)
+- ["The Deep Synergy Between Testability and Good Design](https://youtu.be/4cVZvoFGJTU)," by [Michael Feathers](https://michaelfeathers.silvrback.com/) (50 min)
 
 # Summary
 
