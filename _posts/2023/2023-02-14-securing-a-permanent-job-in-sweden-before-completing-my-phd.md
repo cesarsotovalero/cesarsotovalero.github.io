@@ -29,7 +29,7 @@ As someone who has gone through the process of securing a job prior to completin
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-03-10/subway_in_red.jpg alt:"There's light and opportunity at the end of the tunnel" %}
   <figcaption class="stroke"> 
-    &#169; There's light and opportunity at the end of the tunnel. Photo of an art piece located one of Stockholm's metro stations.
+    &#169; There's light and opportunity at the end of the tunnel. Photo of an art piece located in <a href="https://goo.gl/maps/HGaHaBKfrKujT8Rt6">Solna Centrum</a>, one of the most beautiful Stockholm's metro stations.
   </figcaption>
 </figure>
 
