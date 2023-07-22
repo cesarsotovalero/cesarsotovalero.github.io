@@ -49,8 +49,10 @@ li ul {
 
 p a {
   text-decoration: underline;
-  text-decoration-thickness: 0.05em;
-  color: var(--main-text-color);
+  text-decoration-thickness: 0.06em;
+  color: var(--main-link-color);
+  text-decoration-color: var(--link-decoration-color);
+  -webkit-text-decoration-color: var(--link-decoration-color);
 }
 
 .blog-post div[role=main], article[role=main] > p:first-of-type:first-child::first-letter {
@@ -2933,6 +2935,7 @@ html, html[data-theme="light"] {
   --main-background-color: hsl(0, 0%, 99%);
   --main-text-color: hsl(0, 0%, 10%);
   --main-link-color: #012639;
+  --link-decoration-color: #8F96CE;
   --footnote-link-color: blue;
   --button-background-color: #444;
   --panel-border-color: #f1f1f1;
@@ -2949,6 +2952,7 @@ html[data-theme="dark"] {
   --main-background-color: #012639;
   --main-text-color: hsl(0, 0%, 85%);
   --main-link-color: hsl(0, 0%, 100%);
+  --link-decoration-color: #8F96CE;
   --footnote-link-color: lightblue;
   --button-background-color: hsl(0, 0%, 99%);
   --panel-border-color: rgb(53, 53, 60);
