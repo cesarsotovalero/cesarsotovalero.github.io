@@ -121,7 +121,7 @@ These shifts in figures are largely attributable to the iterative nature of data
 
 
 <aside class="quote">
-    <em>“An overly strong sense of ownership can often lead to <a href="](https://en.wikipedia.org/wiki/Confirmation_bias">confirmation bias</a> concerning figures. To mitigate this effect, external feedback is a crucial component that provides a more balanced perspective.”</em>
+    <em>“An overly strong sense of ownership can often lead to <a href="https://en.wikipedia.org/wiki/Confirmation_bias">confirmation bias</a> concerning figures. To mitigate this effect, external feedback is a crucial component that provides a more balanced perspective.”</em>
 </aside>
 
 At this stage, the figure seems to be awesome, right?
