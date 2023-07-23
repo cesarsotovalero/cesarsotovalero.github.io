@@ -157,16 +157,22 @@ a {
   text-underline-offset: 6px;
   text-decoration-thickness: 0.05em;
   color: var(--main-text-color);
+  text-decoration-color: var(--link-decoration-color);
+  -webkit-text-decoration-color: var(--link-decoration-color);
 }
 
 a:hover, a:focus {
   color: var(--main-text-color);
   text-decoration-thickness: 0.1em;
+  text-decoration-color: var(--link-decoration-color);
+  -webkit-text-decoration-color: var(--link-decoration-color);
 }
 
 @media only screen and (max-width: 450px) {
   a {
     text-underline-offset: 4px;
+    text-decoration-color: var(--link-decoration-color);
+    -webkit-text-decoration-color: var(--link-decoration-color);
   }
 }
 
@@ -375,6 +381,8 @@ a[href$=".pptx"] {
 .navigation a {
   text-decoration: underline;
   text-decoration-thickness: 0.025em;
+  text-decoration-color: var(--link-decoration-color);
+  -webkit-text-decoration-color: var(--link-decoration-color);
   /*text-decoration: none;*/
   padding: 0 5px 0 5px;
   font-size: 22px;
@@ -383,6 +391,8 @@ a[href$=".pptx"] {
 @media only screen and (max-width: 450px) {
   .navigation a {
     font-size: 18px;
+    text-decoration-color: var(--link-decoration-color);
+    -webkit-text-decoration-color: var(--link-decoration-color);
   }
 }
 
@@ -390,6 +400,8 @@ a[href$=".pptx"] {
   font-family: "Concourse T2", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-decoration: underline;
   text-decoration-thickness: 0.1em;
+  text-decoration-color: var(--link-decoration-color);
+  -webkit-text-decoration-color: var(--link-decoration-color);
 }
 
 .navbar-custom {
@@ -415,6 +427,8 @@ a[href$=".pptx"] {
   text-decoration: none;
   font-weight: 800;
   color: var(--main-text-color);
+  text-decoration-color: var(--link-decoration-color);
+  -webkit-text-decoration-color: var(--link-decoration-color);
 }
 
 .navbar-custom .navbar-brand:hover,
