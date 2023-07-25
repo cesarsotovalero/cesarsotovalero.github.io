@@ -7,7 +7,6 @@ description: PhD in Computer Science
 use-site-title: true
 ---
 
-
 <div class="header-hiddable">
    {% include social.html type="page" %}
 </div>
@@ -19,7 +18,7 @@ use-site-title: true
 
 <div class="list-filters">
   <a href="/" class="list-filter filter-selected">Latest Posts</a>
-  <a href="/blog" class="list-filter">All Posts</a>
+  <a href="/all-posts" class="list-filter">All Posts</a>
   <a href="/tags" class="list-filter">Tag Index</a>
 </div>
 
