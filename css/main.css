@@ -437,6 +437,8 @@ a[href$=".pptx"] {
 .navbar-custom .nav li a:focus {
   color: var(--main-background-color);
   background: var(--main-text-color);
+  text-decoration-color: var(--link-decoration-color);
+  -webkit-text-decoration-color: var(--link-decoration-color);
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -473,6 +475,8 @@ a[href$=".pptx"] {
   /*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);*/
   text-decoration: underline;
   text-decoration-thickness: 0.05em;
+  text-decoration-color: var(--link-decoration-color);
+  -webkit-text-decoration-color: var(--link-decoration-color);
 }
 
 @media only screen and (max-width: 450px) {
