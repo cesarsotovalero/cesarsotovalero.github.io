@@ -9,8 +9,8 @@ keywords:
   - use comics for research,
   - communicating research,
   - delivering technical content,
-image: ../img/posts/2023/2023-06-10/comic-cover.jpg
-share-img: ../img/posts/2023/2023-06-10/comic-cover.jpg
+image: ../img/posts/2023/2023-07-10/comic-cover.jpg
+share-img: ../img/posts/2023/2023-07-10/comic-cover.jpg
 show-avatar: false
 toc: true
 date: 2023/07/20
