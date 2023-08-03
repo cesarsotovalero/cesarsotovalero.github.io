@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My PhD as a Comic
-subtitle: A tale of when I became a superhero
+subtitle: The time when I became a superhero
 tags: research
 description: At the end of my PhD journey, I was lucky enough to be surrounded by professional software artists. Together, we created a comic to make the ideas of my PhD thesis more accessible and engaging to the non-tech audience. In this article, I share the comic and the story behind it.
 keywords:
@@ -20,24 +20,24 @@ published: true
 
 Doing ~~good~~ science is hard.
 Communicating science is even harder because it requires a larger doses of creativity.
-I learned during my 5 years as a PhD student that art visuals an stories are an excellent way to communicate science.
-But mastering the use of art as a form of expression is not easy, specially when expressing technical content.
+I learned during my 5 years as a PhD student that art visuals and stories are excellent ways to [communicate scientific ideas and results](../blog/how-to-give-a-great-technical-presentation.html).
+But using of art as a form of expression is not easy, specially when dealing with complex technical content.
 Nevertheless, it is worth the effort.
-At the end of my PhD journey, I was lucky enough to be surrounded by professional software artists who already had this skill.
-Together, we created a comic to make the ideas of my PhD thesis more accessible and engaging to the non-tech audience.
-In this article, I share the comic and the story behind it.
-If you are a PhD interested in the use of comics or other forms of art for communicating your research, this article is for you.
+At the end of my PhD journey, I was lucky enough to be surrounded by professional software artists who already mastered this skill.
+Together, we created a comic to make the core ideas of my PhD thesis more accessible and engaging to the non-tech audience.[^4]
+In this article, I share the comic pages, and the stories behind them.
+If you are a PhD student interested in the use of comics (or other forms of art) for communicating your research, then this article is for you.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-07-10/board-for-phd-comic.jpg alt:"Whiteboard summarizing my PhD contributions" %}
   <figcaption class="stroke"> 
-    I spend 3 hours explaining my 3 PhD contribution (DepClean, DepTrim, and JDBL) to a team of software artists. I summarized the results of my 5 years of research work on a large whiteboard.
+    I spend more than 3 hours explaining my PhD contribution (DepClean, DepTrim, and JDBL) to a team of software artists. I summarized the results of my 5 years of research work on a large whiteboard.
   </figcaption>
 </figure>
 
 # The Plan
 
-During my PhD at KTH, I had the opportunity to collaborate with [reth&#124;read](https://rethread.art/), a visonary collective of software artists using **software art** to communicate software engineering research.
+During my PhD at KTH, I had the opportunity to collaborate with [reth&#124;read](https://rethread.art/), a visionary collective of creators using [software art](https://en.wikipedia.org/wiki/Software_art) to communicate software engineering research.
 I collaborated in the [un&#124;fold](https://rethread.art/projects/unfold.html) project, a thematic installation for the [Nobel Week Lights 2022](https://nobelweeklights.se/?lang=en).
 Along the time, I meet many talented and creative software artists, and even shared office space with some of them.
 
@@ -63,7 +63,7 @@ The core idea of my first tool, DepClean, is to remove unused dependencies (a.k.
 In other words, it is about getting rid of the software bloat coming from third-party code.
 This involves the analysis of and transformation of **dependency trees**, and the removal of completely unused dependencies.
 
-> "Imagine your computer program has a big, messy tree with branches representing different parts that are called dependencies or packages. Some branches are helpful, while others are just in the way. DepClean's job is to trim away those unnecessary branches, getting rid of the clutter from extra code that comes from other places."
+> "Imagine your computer program has a big, messy tree with branches representing different parts that are called dependencies or packages. Some branches are helpful, while others are just in the way. DepClean's job is to trim away those unnecessary branches, getting rid of the clutter coming from the unnecessary dependencies that are added over time."
 
 We wanted to illustrate this idea in a simple way.
 The superhero of our story (myself) uses DepClean to snip away the unneeded branches of dependencies from his program's dependency tree, keeping it clean.
@@ -102,19 +102,27 @@ Now, let's take a look at the second page of the comic.
 
 Again, this page conveys the core ideas of my PhD thesis in a simple way.
 The first scene shows the superhero (myself) using DepTrim to remove unused code from partially used dependencies.
+In the background of this scene, we can see [<i class="fab fa-github"></i> a source code snippet](https://github.com/ASSERT-KTH/jdbl/blob/ed028f68ebfb9c7f1ffce0d1fa32e7d08d68ce2d/jdbl-core/src/main/java/se/kth/castor/jdbl/coverage/JacocoCoverage.java#L200-L213) of JDBL.
 The last scene is me and my supervisor celebrating the successful completion of my [hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey).
 
 # Conclusion
 
-Software art is a powerful medium for communicating science.
-I'm glad that I had the opportunity to collaborate with software artists dedicated to this endeavour.
-At the end, the tools that I developed during my PhD journey became more than just code.
-They took on a life of their own thanks to the great work of the software artists who helped me turning it into a comic 
-where I, as a character in a grand tale, used DepClean, DepTrim, and JDBL to enter a never-ending battle against code bloat in Java applications.
-I plan to continue to explore, to create, and to use software art as a form of expression.
+Software art is a powerful medium for communicating complex scientific concepts.
+I'm glad that I had the opportunity to collaborate with software artists dedicated full time to this endeavour.
+I believe that the field of Computer Science could benefit from digital creation showcasing the complexity behind the most simple computing operations.
+
+<aside class="quote">
+    <em>“Science communication isn't just key, it's essential. It unlocks funding, boosts outreach, and serves as both an introduction and justification of research to society.”</em> 
+</aside>
+
+At the end, the research contributions and companion tools that I developed during my PhD journey became more than [code](../software.html), experiments, and [papers](../publications.html).
+They took on a life of their own thanks to the great work of the software artists who used their talents for turning all into a comic.
+In the story, I play as a character in a grand tale using DepClean, DepTrim, and JDBL to enter a never-ending battle against code bloat in Java applications.
+
+I plan to continue the exploration of the many ways of using software art for creation,and as a form of expression.
 The next step is to learn about the right tools for the job.
 It shouldn't be too hard.
-After all, I've just proven that given the right amount of time and effort: anyone can become a superhero!
+After all, I've just proven that given the right amount of time and effort: ~~even myself~~ anyone can become a superhero!
 
 # Footnotes
 
@@ -123,3 +131,5 @@ After all, I've just proven that given the right amount of time and effort: anyo
 [^2]: You can read the paper [here](https://dl.acm.org/doi/10.1145/3546948) if you're interested.
 
 [^3]: The details about DepTrim are in this [paper](https://arxiv.org/abs/2302.08370).
+
+[^4]: This idea is not new, here's a dedicated [research paper](https://www.mdpi.com/2304-6775/6/3/38) about it.
