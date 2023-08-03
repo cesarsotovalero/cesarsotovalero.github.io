@@ -19,6 +19,7 @@ published: true
 - [MSR Data Showcase Award](../files/certificates/MSR_Data_Showcase_Award_2019.pdf), _16th International Conference on Mining Software Repositories_, 2019
 - [WASP Certificate of Excellence](../files/certificates/WASP_award.pdf), _WASP Autonomous Systems II_, 2019
 - [:earth_americas: PhD Scholarship](https://wasp-sweden.org/), _Awarded a Wallenberg AI, Autonomous Systems and Software Program PhD scholarship_, 2018
+- [<i class="fab fa-github"></i> 5st Place at CodRep: Machine Learning on Source Code Competition](https://github.com/ASSERT-KTH/CodRep#codrep-leaderboard-on-line-number-prediction), here's my [Tool](https://github.com/cesarsotovalero/CodRep-submission), 2018 
 
 # Certificates
 
