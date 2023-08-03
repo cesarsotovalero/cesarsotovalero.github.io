@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>My PhD as a Comic</title>
+        <description>
+          A tale of when I became a superhero - 
+          Doing good science is hard. Communicating science is even harder because it requires a larger doses of creativity. I learned during my 5 years as a PhD student that art visuals an stories are an excellent way to communicate science. But mastering the use of art as a form of...
+        </description>
+        <pubDate>Mon, 10 Jul 2023 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/my-phd-as-a-comic.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/my-phd-as-a-comic.html</guid>
+      </item>
+    
+      <item>
         <title>How to Give a Great Technical Presentation</title>
         <description>
           Here&apos;s what I&apos;ve learned - 
@@ -213,17 +224,6 @@
         <pubDate>Sun, 19 Dec 2021 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html</guid>
-      </item>
-    
-      <item>
-        <title>SIGBOVIK&amp;#58; The Ig Nobel for Academics and Computer Science Researchers</title>
-        <description>
-          The most wanted proceedings for fruitful procrastination - 
-          The SIGBOVIK’s flagship conference is a satiric and incredibly interesting Computer Science venue sponsored by the self-called “Association for Computational Heresy (ACH).” The event has been celebrated annually since 2007 in honor of Harry Quantifiability Bovik, an unconventional professor from Carnegie Mellon University. SIGBOVIK is the cradle of the funniest...
-        </description>
-        <pubDate>Sun, 05 Dec 2021 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/sigbovik-the-ig-nobel-for-academics-and-computer-science-researchers.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/sigbovik-the-ig-nobel-for-academics-and-computer-science-researchers.html</guid>
       </item>
     
   </channel>
