@@ -83,7 +83,7 @@ If they get really interested in what someone is doing, then they will read the 
 Therefore, presentation-driven stress is futile.
 So don't be stressed at all.
 
-Finally, several universities include **PhD courses** in their curriculums.
+Finally, several universities include [PhD courses](../courses#doctoral-courses) in their curriculums.
 Students must pass these kinds of courses in order to accumulate a certain number of "credits."
 There is no workaround, as this is part of the requirements to get a PhD[^3]
 Fortunately, no one cares about your performance on these courses!
@@ -91,6 +91,8 @@ No even your supervisor nor the professor who teaches the course.
 Everyone knows that the essential task of a PhD student is to deliver novel and sound research.
 
 Do you feel more comfortable now?
+
+---
 
 # Detractors
 

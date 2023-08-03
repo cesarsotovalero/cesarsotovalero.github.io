@@ -28,8 +28,6 @@ The following is a list of research topics that I’m particularly interested in
 * [9. Vulnerability Analysis Through Debloating](#9-vulnerability-analysis-through-debloating)
 * [10. Automatic Debloating IaC Files](#10-automatic-debloating-iac-files)
 
----
-
 # 1. Debloat of mobile apps
 
 ### Motivation

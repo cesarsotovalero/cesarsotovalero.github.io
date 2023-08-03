@@ -1,0 +1,125 @@
+---
+layout: post
+title: My PhD as a Comic
+subtitle: A tale of when I became a superhero
+tags: research
+description: At the end of my PhD journey, I was lucky enough to be surrounded by professional software artists. Together, we created a comic to make the ideas of my PhD thesis more accessible and engaging to the non-tech audience. In this article, I share the comic and the story behind it.
+keywords:
+  - PhD thesis,
+  - use comics for research,
+  - communicating research,
+  - delivering technical content,
+image: ../img/posts/2023/2023-07-10/comic-cover.jpg
+share-img: ../img/posts/2023/2023-07-10/comic-cover.jpg
+show-avatar: false
+toc: true
+date: 2023/07/10
+author: cesarsotovalero
+published: true
+---
+
+Doing ~~good~~ science is hard.
+Communicating science is even harder because it requires a larger doses of creativity.
+I learned during my 5 years as a PhD student that art visuals an stories are an excellent way to communicate science.
+But mastering the use of art as a form of expression is not easy, specially when expressing technical content.
+Nevertheless, it is worth the effort.
+At the end of my PhD journey, I was lucky enough to be surrounded by professional software artists who already had this skill.
+Together, we created a comic to make the ideas of my PhD thesis more accessible and engaging to the non-tech audience.
+In this article, I share the comic and the story behind it.
+If you are a PhD interested in the use of comics or other forms of art for communicating your research, this article is for you.
+
+<figure class="jb_picture">
+  {% responsive_image path: img/posts/2023/2023-07-10/board-for-phd-comic.jpg alt:"Whiteboard summarizing my PhD contributions" %}
+  <figcaption class="stroke"> 
+    I spend 3 hours explaining my 3 PhD contribution (DepClean, DepTrim, and JDBL) to a team of software artists. I summarized the results of my 5 years of research work on a large whiteboard.
+  </figcaption>
+</figure>
+
+# The Plan
+
+During my PhD at KTH, I had the opportunity to collaborate with [reth&#124;read](https://rethread.art/), a visonary collective of software artists using **software art** to communicate software engineering research.
+I collaborated in the [un&#124;fold](https://rethread.art/projects/unfold.html) project, a thematic installation for the [Nobel Week Lights 2022](https://nobelweeklights.se/?lang=en).
+Along the time, I meet many talented and creative software artists, and even shared office space with some of them.
+
+Being exposed to the work of software artist, I learned that art is a powerful tool for making science resonate with hearts and minds.
+One day, I was talking with [Maria Kling](https://www.linkedin.com/in/maria-euler-art-science-design/), and she suggested me to create a comic to explain my PhD thesis in a fun and engaging way.
+We had a few meetings where I explained the content of [my PhD thesis](../files/thesis/cesar-fulltext.pdf).
+It's easy explaining software concepts to software artists (many of them are great coders).
+
+The picture above shows the output of the first meeting.
+First, I illustrated the different facets of global problem: "Debloating Java Applications."
+This is illustrated in the top left corner of the whiteboard.
+Then, I divided the whiteboard into three sections, one for each of my PhD contributions.
+The goal was to create a comic that shows the usefulness of these software tools: [DepClean](https://github.com/ASSERT-KTH/depclean), [DepTrim](https://github.com/ASSERT-KTH/deptrim), and [JDBL](https://github.com/ASSERT-KTH/jdbl).
+
+# The Result
+
+The full comic in PDF form is available [here](../files/thesis/phd-comic/comicfoldprintpagesreorderedadjusted.pdf).
+More details as follows.
+
+## First Contribution
+
+The core idea of my first tool, DepClean, is to remove unused dependencies (a.k.a packages) from Java applications.
+In other words, it is about getting rid of the software bloat coming from third-party code.
+This involves the analysis of and transformation of **dependency trees**, and the removal of completely unused dependencies.
+
+> "Imagine your computer program has a big, messy tree with branches representing different parts that are called dependencies or packages. Some branches are helpful, while others are just in the way. DepClean's job is to trim away those unnecessary branches, getting rid of the clutter from extra code that comes from other places."
+
+We wanted to illustrate this idea in a simple way.
+The superhero of our story (myself) uses DepClean to snip away the unneeded branches of dependencies from his program's dependency tree, keeping it clean.
+The result is shown below.
+
+<figure class="jb_picture">
+  {% responsive_image path: files/thesis/phd-comic/2.png alt:"Fist page of the comic" %}
+  <figcaption class="stroke"> 
+    Figure 2.
+    First page of the comic, where the core idea is introduced along my first software tool: DepCLean.
+  </figcaption>
+</figure>
+
+I really like the aesthetics of this page.
+Note the three logos of the tools in the top right corner.[^1]
+Also note that the comic is mostly in white and black, except for the parts that use the colors in the logos.
+The source code in the background is [<i class="fab fa-github"></i> a real code snippet](https://github.com/ASSERT-KTH/depclean/blob/f8a2607178ed48e5843768c3cbc8e60406d63a66/depclean-core/src/main/java/se/kth/depclean/core/analysis/model/ProjectDependencyAnalysis.java#L171-L184) from the DepClean's GitHub repository.
+I also like the last scene of this page, which serves as **a hook** to get the reader excited to turn to the next page!
+
+## Second and Third Contributions
+
+The next page of the comic is about my second and third PhD contributions, implemented in the tools JDBL and DepTrim.
+JDBL is an advanced tool for debloating Java applications based on client's usage.
+JDBL relies on dynamic analysis and code coverage tools for detecting the unnecessary code parts.[^2]
+On the other hand, DepTrim relies on static analysis to remove unused code in partially used dependencies.[^3]
+Both JDBL and DepTrim are like supercharged versions of DepClean, they help keep programs neat and tidy but in slightly different ways.
+Now, let's take a look at the second page of the comic.
+
+<figure class="jb_picture">
+  {% responsive_image path: files/thesis/phd-comic/3.png alt:"Second of the comic" %}
+  <figcaption class="stroke"> 
+    Figure 3.
+    Second page of the comic, showcasing how we can do better, using my two other tools: DepTrim and JDBL.
+  </figcaption>
+</figure>
+
+Again, this page conveys the core ideas of my PhD thesis in a simple way.
+The first scene shows the superhero (myself) using DepTrim to remove unused code from partially used dependencies.
+The last scene is me and my supervisor celebrating the successful completion of my [hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey).
+
+# Conclusion
+
+Software art is a powerful medium for communicating science.
+I'm glad that I had the opportunity to collaborate with software artists dedicated to this endeavour.
+At the end, the tools that I developed during my PhD journey became more than just code.
+They took on a life of their own thanks to the great work of the software artists who helped me turning it into a comic 
+where I, as a character in a grand tale, used DepClean, DepTrim, and JDBL to enter a never-ending battle against code bloat in Java applications.
+I plan to continue to explore, to create, and to use software art as a form of expression.
+The next step is to learn about the right tools for the job.
+It shouldn't be too hard.
+After all, I've just proven that given the right amount of time and effort: anyone can become a superhero!
+
+# Footnotes
+
+[^1]: I kept a consist design for the logos of all of my software tool during my PhD. It's great to see that this approach proved to be useful later.  
+
+[^2]: You can read the paper [here](https://dl.acm.org/doi/10.1145/3546948) if you're interested.
+
+[^3]: The details about DepTrim are in this [paper](https://arxiv.org/abs/2302.08370).

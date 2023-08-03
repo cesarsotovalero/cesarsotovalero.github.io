@@ -72,8 +72,8 @@ My very <span style="background-color:#042742;color:white;border-radius:4px;">&n
 You can email me using the form below:
 
 <form id="contact-me" class="wj-contact" action="https://formspree.io/mrgqpknn" method="POST">
-    <input type="text" name="email" placeholder="Email">
-    <textarea type="text" name="content" rows="5" placeholder="Message"></textarea>
+    <input type="text" name="email" placeholder="Type your email">
+    <textarea type="text" name="content" rows="5" placeholder="Type your message"></textarea>
     <input type="hidden" name="_next" value="<REDIRECTION LINK> ">
     <input type="hidden" name="_subject" value="New Contact Form Submission">
     <input type="text" name="_gotcha" style="display:none">

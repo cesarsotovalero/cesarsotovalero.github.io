@@ -2260,6 +2260,10 @@ ol, ul {
     padding: 5px;
   }
 
+
+}
+
+@media only screen and (max-width: 650px) {
   .quote {
     font-size: 15px;
     width: 40%;
@@ -2941,6 +2945,31 @@ a.btn {
 .hidden {
   display: none;
 }
+
+/* Horizontal divider */
+hr {
+  position: relative; /* Add relative positioning to the <hr> to position the divider */
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  border: none;
+  height: 2px;
+  width: 70%;
+  background-image: linear-gradient(to right,transparent,#2D2D2B,transparent);
+}
+
+@media only screen and (max-width: 450px) {
+  hr {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 80%;
+  }
+}
+
+/* Contact me form */
+#contact-me-form {
+ font-family: "Equity Caps A", Helvetica, Arial, sans-serif;
+}
+
 
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {

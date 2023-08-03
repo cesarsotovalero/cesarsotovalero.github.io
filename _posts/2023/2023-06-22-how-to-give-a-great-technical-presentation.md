@@ -9,8 +9,8 @@ keywords:
   - public speaking,
   - delivering technical content,
   - insights from an speaker
-image: ../img/posts/2023/2023-03-22/circus-cover.jpg
-share-img: ../img/posts/2023/2023-03-22/circus-cover.jpg
+image: ../img/posts/2023/2023-06-22/circus-cover.jpg
+share-img: ../img/posts/2023/2023-06-22/circus-cover.jpg
 show-avatar: false
 toc: true
 date: 2023/06/22
@@ -31,7 +31,7 @@ If you follow me, I've no doubts you'll be able to nailing your next one.
 **TL;DR:** I believe that the secret to delivering a great technical presentation is feeling in control. This enables the necessary confidence to communicate effectively, and it also helps to be perceived as an expert.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-03-22/circus.jpg alt:"Public speaking is a circus" %}
+  {% responsive_image path: img/posts/2023/2023-06-22/circus.jpg alt:"Public speaking is a circus" %}
   <figcaption class="stroke"> 
     &#169; Public speaking success is, like in a circus, about providing a unique and memorable experience to your audience. Photo of <a href="https://en.wikipedia.org/wiki/Cirque_du_Soleil">Cirque du Soleil</a> in Stockholm, 2023.
   </figcaption>
