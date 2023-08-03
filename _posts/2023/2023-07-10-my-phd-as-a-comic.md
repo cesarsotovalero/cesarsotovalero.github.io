@@ -101,9 +101,9 @@ Now, let's take a look at the second page of the comic.
 </figure>
 
 Again, this page conveys the core ideas of my PhD thesis in a simple way.
-The first scene shows the superhero (myself) using DepTrim to remove unused code from partially used dependencies.
+The first scene shows the superhero (me) using DepTrim to remove unused code from partially used dependencies.
 In the background of this scene, we can see [<i class="fab fa-github"></i> a source code snippet](https://github.com/ASSERT-KTH/jdbl/blob/ed028f68ebfb9c7f1ffce0d1fa32e7d08d68ce2d/jdbl-core/src/main/java/se/kth/castor/jdbl/coverage/JacocoCoverage.java#L200-L213) of JDBL.
-The last scene is me and my supervisor celebrating the successful completion of my [hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey).
+The last scene features my supervisor and me celebrating the successful completion of my [hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey).
 
 # Conclusion
 
