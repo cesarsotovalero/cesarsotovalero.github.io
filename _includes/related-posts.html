@@ -76,31 +76,32 @@
 {% endif %}
 
 {% if index_list.size > 0 %}
-  <div id="related-posts">
-    <h4 class="gsc-related-posts">Related Posts</h4>
-    <div class="panel-deck row">
+<div id="related-posts">
+  <hr>
+  <h2> Related Posts</h2>
+  <div class="panel-deck row">
     {% for entry in index_list %}
-      {% assign index = entry | plus: 0 %}
-      {% assign post = site.posts[index] %}
-      <div class="col-sm-4">
-        <div class="panel">
-          <a href="{{ post.url | relative_url }}">
-            <div class="panel-body">
+    {% assign index = entry | plus: 0 %}
+    {% assign post = site.posts[index] %}
+    <div class="col-sm-4">
+      <div class="panel">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <div class="panel-body">
+            <div class="text-left">
               <h4 class="title" data-toc-skip>{{ post.title }}</h4>
-              <div class="date">
+              <div class="date" style="margin-bottom: 0px;">
                 Posted on {{ post.date | date: "%B %-d, %Y" }}
               </div>
-<!--              <div class="text-muted small">-->
-<!--                <p>-->
-<!--                  {% include no-linenos.html content=post.content %}-->
-<!--                  {{ content | markdownify | strip_html | truncate: 200 | escape }}-->
-<!--                </p>-->
-<!--              </div>-->
             </div>
-          </a>
-        </div>
+              {% if post.image %}
+              <img src="{{ post.image }}" alt="{{ post.title }}">
+              {% endif %}
+          </div>
+        </a>
       </div>
+    </div>
     {% endfor %}
-    </div> <!-- .panel-deck -->
-  </div> <!-- #related-posts -->
+  </div> <!-- .panel-deck -->
+</div> <!-- #related-posts -->
 {% endif %}
+
