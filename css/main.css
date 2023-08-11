@@ -2274,6 +2274,17 @@ ol, ul {
   }
 }
 
+@media only screen and (max-width: 1150px) {
+  .quote {
+    font-size: 17px;
+    width: 40%;
+    float: right;
+    border-left: 1px #a4a6a7 solid;
+    padding: .2em 0 .2em 1em;
+    margin: 1em 0 1em 1em !important;
+  }
+}
+
 .blog-tags {
   color: #808080;
 }
@@ -2491,8 +2502,9 @@ article[role=main] {
     right: 0;
   }
 
-  .cesarcarbon {
-    display: flex;
+  /* no carbon ads on mobile */
+  #cesarcarbonads-post {
+    display: none;
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -2969,6 +2981,66 @@ hr {
 #contact-me-form {
  font-family: "Equity Caps A", Helvetica, Arial, sans-serif;
 }
+#contact-me > input {
+  padding: 10px;
+}
+#contact-me > textarea {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+  #contact-me-form {
+    font-size: 16px;
+  }
+  #contact-me > input {
+    padding: 7px;
+  }
+  #contact-me > textarea {
+    padding: 7px;
+  }
+}
+
+/* Image of related posts */
+.panel-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 15px;
+}
+
+.panel-body img {
+  width: 75px;
+  height: 75px;
+  margin-left: 10px;
+  filter: grayscale(100%);
+  border-radius: 100%;
+  flex-shrink: 0;  /* Prevent the image from shrinking */
+  flex-grow: 0;    /* Prevent the image from growing */
+  object-fit: cover; /* This ensures the image scales properly if its aspect ratio doesn't match the specified dimensions. */
+  opacity: 0.75;
+}
+
+.panel-body:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+
+
+.content {
+  flex: 1;
+}
+
+.image-wrapper-related-posts {
+  margin: 20px; /* Add some space between content and image */
+}
+
+.square-image {
+  width: 50px; /* Define the square size here */
+  height: 50px;
+  object-fit: cover; /* To ensure image scales and crops nicely */
+}
+
 
 
 /* SUPPORT FOR DARK MODE */
