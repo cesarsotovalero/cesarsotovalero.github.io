@@ -3020,12 +3020,16 @@ hr {
   opacity: 0.75;
 }
 
+.text-left {
+  text-align: left;
+  flex: 1;
+}
+
+
 .panel-body:hover img {
   filter: grayscale(0%);
   opacity: 1;
 }
-
-
 
 .content {
   flex: 1;
@@ -3040,8 +3044,6 @@ hr {
   height: 50px;
   object-fit: cover; /* To ensure image scales and crops nicely */
 }
-
-
 
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
