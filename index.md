@@ -16,18 +16,28 @@ use-site-title: true
   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
 </div>
 
+[//]: # (count all post published thi month)
+{% assign current_date = 'now' | date: '%Y-%m' %}
+{% assign current_month_post_count = 0 %}
+{% for post in site.posts %}
+  {% assign post_date = post.date | date: '%Y-%m' %}
+  {% if post_date == current_date %}
+    {% assign current_month_post_count = current_month_post_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
 [//]: # (count all the blog posts)
 {% assign published_posts = site.posts | where:"published", true %}
 
 [//]: # (count the number of tags)
 {% assign all_tags = "" | split: "" %}
 {% for post in site.posts %}
-{% assign all_tags = all_tags | concat: post.tags %}
+  {% assign all_tags = all_tags | concat: post.tags %}
 {% endfor %}
 {% assign unique_tags = all_tags | uniq %}
 
 <div class="list-filters">
-  <a href="/" class="list-filter filter-selected">Latest Posts (10)</a>
+  <a href="/this-month" class="list-filter"> This Month ({{ current_month_post_count }})</a>
   <a href="/all-posts" class="list-filter">All Posts ({{ published_posts.size }})</a>
   <a href="/tags" class="list-filter">Tag Index ({{ unique_tags.size }})</a>
 </div>
