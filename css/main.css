@@ -3045,6 +3045,10 @@ hr {
   object-fit: cover; /* To ensure image scales and crops nicely */
 }
 
+.post-entry-description {
+  font-family: "Equity Text A", 'Source Sans Pro', sans-serif;
+}
+
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
   --link-color: black;
