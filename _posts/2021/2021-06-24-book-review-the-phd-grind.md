@@ -2,7 +2,7 @@
 layout: post
 title: Book Review&#58; The PhD Grind
 subtitle: A tale of perseverance and learning from failure
-description: If you are seriously considering doing a PhD in Computer Science, the PhD Grind is the book for you.
+description: If you are seriously considering doing a PhD in Computer Science, then "The PhD Grind" by Philip Guo is the book for you. In this post, I want to share my personal comments regarding some of the author's key reflections.
 tags: research
 keywords: research, PhD, book
 image: ../img/posts/2021/phd_grind_cover.png

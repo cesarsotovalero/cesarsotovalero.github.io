@@ -2127,7 +2127,7 @@ ol, ul {
 
 .tag-list {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   font-family: "Concourse T3", "Linux Biolinum";
   text-align: center;
 }
@@ -3020,12 +3020,16 @@ hr {
   opacity: 0.75;
 }
 
+.text-left {
+  text-align: left;
+  flex: 1;
+}
+
+
 .panel-body:hover img {
   filter: grayscale(0%);
   opacity: 1;
 }
-
-
 
 .content {
   flex: 1;
@@ -3041,7 +3045,35 @@ hr {
   object-fit: cover; /* To ensure image scales and crops nicely */
 }
 
+.post-entry-description {
+  font-family: "Equity Text A", 'Source Sans Pro', sans-serif;
+}
 
+.post-entry-description p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.tag-entry a {
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+}
+
+.call-to-subscribe {
+  font-family: "Concourse T2", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.call-to-subscribe span {
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (max-width: 450px) {
+  .call-to-subscribe {
+    font-size: 16px;
+  }
+}
 
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {

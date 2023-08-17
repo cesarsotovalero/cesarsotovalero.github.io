@@ -1,22 +1,33 @@
 ---
 layout: page
-title: <i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;{{ page.tag }}
+title: Tagged as {{- tag -}}&nbsp;{{ page.tag }}
 ---
 
-<div class="post">
-  <ul>
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+<div id="full-tags-list" class="post">
+  <ol>
     {% for post in site.tags[page.tag] %}
     {% if post.lang %}
     <li lang="{{post.lang}}">
       {% else %}
     <li>
       {% endif %}
-      <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-      {{ post.description }}
-      <!-- Tags: {{ post.tags | join: ", " }} -->
+    <div class="tag-entry">
+      <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+      <div class="entry-date">
+        <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
+      </div>
+    </div>
     </li>
+    <ul>
+      <li>
+      <div class="post-entry-description">
+        <p>{{ post.description }}</p>
+      </div>
+      </li>
+    </ul>
     {% endfor %}
-  </ul>
+  </ol>
 </div>
 
 <hr>

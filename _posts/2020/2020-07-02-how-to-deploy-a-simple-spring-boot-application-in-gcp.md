@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Deploy a Simple Spring Boot application in GCP
+title: How to Deploy a Simple Spring Boot Application in GCP
 subtitle: Getting started with Google Cloud Platform
 tags: cloud
 keywords: 
@@ -10,22 +10,24 @@ keywords:
     - Application Deployment,
     - Tutorial
 description: TODO
-image: img/posts/2020/2020-07-02/heroes-cover.jpg
-share-img: img/posts/2020/2020-07-02/heroes-cover.jpg
+image: ../img/posts/2020/2020-07-02/heroes-cover.jpg
+share-img: ../img/posts/2020/2020-07-02/heroes-cover.jpg
 show-avatar: false
 toc: true
 author: cesarsotovalero
 date: 2020/07/02
-published: false
+published: true
 ---
 
-After having my Java Spring Boot web app ready, the next step is deploying it on the internet.[^1]
+After having my Java Spring Boot web app ready, the next step is to show it to the world.
+This means deploying it on the internet.[^1]
 I landed on Google Cloud Platform (GCP) for this task.
-GCP gives a nice starting credit of $100, and after that I only pay for what I use.
+Why?
+Well, GCP gives a nice starting credit of $100, and after that I only pay for what I use.
 That's the beauty of PaS and similar cloud services.
-My app is simple, and I don't expect it to have a lot of traffic, so I don't need a Kubernetes cluster or anything fancy.
+My app is simple, and I don't expect it to have a lot of traffic, so I don't need a Kubernetes cluster to deal with scalability issues.
 I found the documentation for deploying a simple Spring Boot application on GCP a bit confusing.
-So I decided to write this article as a simple step-by-step guide for the beginners.
+So I decided to write this article as a step-by-step guide for the beginners.
 Let's get started!
 
 <figure class="jb_picture">
@@ -35,46 +37,50 @@ Let's get started!
   </figcaption>
 </figure>
 
-# Advantages of GCP for Java Application Development
+# Advantages of GCP 
 
 Choosing GCP for Java application development has several advantages:
 
-- **Seamless Integration with GCP's SDK**. GCP's SDK tools and client libraries are tailored for developers. After setting up my GCP account, I was immediately able to leverage `gcloud` commands, facilitating smooth deployment of my Spring Boot application to Google Cloud services like App Engine and Compute Engine.
+- **Seamless Integration with GCP's SDK**. [GCP's SDK](https://cloud.google.com/sdk/) tools and client libraries are tailored for Java developers. After setting up my GCP account, I was immediately able to leverage `gcloud` commands, facilitating smooth deployment of my Spring Boot application to Google Cloud services such as [App Engine](https://cloud.google.com/appengine) or [Compute Engine](https://cloud.google.com/compute).
 
-- **Vast Global Infrastructure**. GCP boasts an extensive, high-speed global network. Deploying on GCP ensures lower latency, as traffic gets dynamically routed through the nearest global location. This optimizes the application's Time-To-First-Byte (TTFB), enhancing end-user experience across different geographical locations.
+- **Vast Global Infrastructure**. GCP boasts an extensive, high-speed global network. Deploying on GCP ensures lower latency, as traffic gets dynamically routed through the nearest global location. This optimizes the application's [Time-To-First-Byte](https://en.wikipedia.org/wiki/Time_to_first_byte) (TTFB), enhancing end-user experience across different geographical locations.
 
-- **Robust Security with Context-Aware Access**. One of GCP's prime offerings is its security model. By leveraging Identity and Access Management (IAM), I could define granular access permissions for services. With context-aware access, I ensured adaptive access control based on dynamic conditions.
+- **Robust Security with Context-Aware Access**. One of GCP's prime offerings is its security model. By leveraging [Identity and Access Management](https://cloud.google.com/iam) (IAM), I could define granular access permissions for services. With context-aware access, I ensured adaptive access control based on dynamic conditions.
 
-- **Comprehensive Tooling and Services**. Beyond mere hosting, GCP provides a plethora of services tailored for developers. I integrated my Spring Boot application with Cloud SQL for relational database needs. For insights, Stackdriver provided monitoring, logging, and diagnostics. Additionally, GCP's AI and machine learning APIs seamlessly integrated into the application to provide advanced functionalities.
+- **Comprehensive Tooling and Services**. Beyond mere hosting, GCP provides a plethora of services tailored for developers. I integrated my Spring Boot application with [Cloud SQL](https://cloud.google.com/sql) for relational database needs. For insights, [Stackdriver](https://cloud.google.com/products/operations?hl=en) provided monitoring, logging, and diagnostics. Additionally, [GCP's AI and machine learning APIs](https://cloud.google.com/products/ai) seamlessly integrated into the application to provide advanced functionalities.
 
-- **Auto-scaling with Managed Instance Groups (MIGs)**. GCP's ability to handle auto-scaling is remarkable. Using Managed Instance Groups, I set up my deployment to automatically manage the deployment's instances. The infrastructure responded elastically to the application's traffic patterns, ensuring high availability without manual intervention.
+- **Auto-scaling with Managed Instance Groups (MIGs)**. GCP's ability to handle auto-scaling is remarkable. Using [Managed Instance Groups](https://cloud.google.com/compute/docs/instance-groups), I set up my deployment to automatically manage the deployment's instances. The infrastructure responded elastically to the application's traffic patterns, ensuring high availability without manual intervention.
 
-- **Cost-Effective and Transparent Billing**. GCP operates on a sustained-use pricing model. This means I could make efficient use of resources with the assurance of cost optimization. The platform's detailed billing reports also allowed for in-depth analysis of resource utilization, enabling further optimizations.
+- **Cost-Effective and Transparent Billing**. GCP operates on a [sustained-use discount model](https://cloud.google.com/compute/docs/sustained-use-discounts). This means I could make efficient use of resources with the assurance of cost optimization. The platform's detailed billing reports also allowed for in-depth analysis of resource utilization, enabling further optimizations.
 
-# Simple Spring Boot Application Deployment in GCP
+# Spring Boot App Deployment in GCP
 
 Deploying a Spring Boot application to Google Cloud Platform (GCP) can be achieved through several services, but one of the simplest and most integrated ways is via Google App Engine's Java 11 environment. 
 Here are the steps and associated commands to get your Spring Boot application up and running on GCP using App Engine:
 
-You need to:
+Pre-requisites:
 
 - Ensure you have a GCP account and have created a project.
 - Install the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install).
 - Your Spring Boot application should be packaged as a JAR (not WAR).
 
-Authenticate your command line tool with GCP.
+First, authenticate your command line tool with GCP:
+
 ```bash
 gcloud auth login
 ```
 
-Set the active project.
+Set the active project:
+
 ```bash
 gcloud config set project YOUR_PROJECT_ID
 ```
 
 Replace `YOUR_PROJECT_ID` with your GCP project's ID.
 
-Inside the root of your Spring Boot project, create a file named `app.yaml`. This file will contain the configuration for the App Engine deployment.
+Inside the root of your Spring Boot project, create a file named `app.yaml`.
+This file will contain the configuration for the App Engine deployment.
+Here's an example:
 
 ```yaml
 runtime: java11
@@ -82,7 +88,6 @@ instance_class: F2
 entrypoint: 'java -jar YOUR_SPRING_BOOT_APP.jar'
 ```
 Replace `YOUR_SPRING_BOOT_APP.jar` with the name of your Spring Boot JAR file.
-
 Navigate to the root of your Spring Boot project (where your `app.yaml` is located) and run:
 
 ```bash
@@ -96,7 +101,6 @@ https://YOUR_PROJECT_ID.ue.r.appspot.com
 ```
 
 You can navigate to this URL in your web browser to access your Spring Boot application.
-
 You can view logs and monitor the application's performance, errors, and other metrics through the GCP Console under "App Engine" and "Logging" sections.
 
 ## Connecting to a Database
