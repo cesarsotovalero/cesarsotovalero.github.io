@@ -24,7 +24,7 @@ There are three ways to use CSS in an HTML page:
 2. using internal CSS in the `<style>` element of the HTML page's header
 3. using external CSS in a separate `.css` file that is referred to in the HTML page using the `<link>` tag
 
-# JS basics
+# JavaScript basics
 
 ## Viewing a variable value
 
@@ -41,15 +41,15 @@ console.log(age);
 
 ## Primitive types
 
-JS has 5 primitive types _Number_, _String_, _Boolean_, _Null_, and _Undefine_.
+JavaScript has 5 primitive types _Number_, _String_, _Boolean_, _Null_, and _Undefine_.
 
-In JS there a notion of Trusthy and Falsy value. Any value can be use as a boolean, any variable type can become a boolean when used with logical operators.
+In JavaScript there a notion of Trusthy and Falsy value. Any value can be use as a boolean, any variable type can become a boolean when used with logical operators.
 - "Falsy" values: null, undefined, -, NaN, ''
 - "Trusthy" values: "cow", "false", 5, etc.
 
 ## Arrays
 
-Arrays in JS can be seen as a list that can grow or shrink dinamically.
+Arrays in JavaScript can be seen as a list that can grow or shrink dinamically.
 
 ### General examples
 
@@ -65,7 +65,7 @@ console.log(myArray[4]); // undefined
 
 ### Array indices
 
-When writing an array value by its index, `arrayVar[index]` will 
+When writing an array value by its index, `arrayVar[index]` will:
 - add an element at that index if `index >= arrayVar.length`
 - crate a mapping from the index to the element if index < 0
 
@@ -95,7 +95,7 @@ console.log(myArray); // car, bike
 
 ## Objects
 
-- JS objes are used to store key-value pairs
+- JavaScript objects are used to store key-value pairs
 - Values can be of any type, including arrays and objects
 - values can be accessed by `myObject.property` of `myObject["property"]`
 
@@ -208,7 +208,7 @@ var squares = nums.map(square); // [16, 68, 36]
 Primitive arguments are passed by **value**: the function cannot change them:
 
 ```javascript
-funciton tryToChange(x){
+function tryToChange(x){
    x = 4;
 }
 var y = 11;
@@ -219,7 +219,7 @@ Object arguments are passed by **reference**: the function cannot change them:
 
 
 ```javascript
-funciton tryToChange(obj){
+function tryToChange(obj){
    obj.age++;
 }
 var p = {age: 30};
@@ -241,12 +241,12 @@ console.log(johnDoe.greeting())
 
 ### Object prototypes
 
-- Every object in JS has a prototype, accessed from the __proto\__ property in the object.
+- Every object in JavaScript has a prototype, accessed from the __proto\__ property in the object.
 - The __proto\__ property is also an object, with its own __proto\__ property and so on
-- The root prototype of all objes is Object.prototype
+- The root prototype of all objects is `Object.prototype`
 - An object inherits the properties of is prototype
 
-We can thinks of this as a class definition, although is not exacty the same.
+We can thinks of this as a class definition, although is not exactly the same.
 
 ```javascript
 function Person (name, age) {// prototype
@@ -260,8 +260,7 @@ var johnDoe = new Person("John Doe", 32);
 johnDoe.greeting();//"Hello! my name is John Doe 
 ```
 
-### Extendind a prototype
-
+### Extending a prototype
 
 ```javascript
 function Student (name, age, school){
@@ -293,8 +292,9 @@ johnDoe.introduction();// I am a Dentist
 
 ## Strings
 
-
-JS string are immutable but provide functions that allow us to create new, modified versions of them. String have `startWith`, `endsWith`, `includes`, and `search` functions. We can also use regular expressions' `test` function to check for matches in a string.
+JavaScript string are immutable but provide functions that allow us to create new, modified versions of them.
+String have `startWith`, `endsWith`, `includes`, and `search` functions. 
+We can also use regular expressions' `test` function to check for matches in a string.
 
 Examples:
 
@@ -362,7 +362,7 @@ code.search(/[^0-9a-z]/); // 6
 ```
  
 
-# Using JS in web pages
+# Using JavaScript in web pages
 
 ## The DOM
 
@@ -400,7 +400,7 @@ if(timesVisited > 10)
 
 ## Objects as JSON
 
-- JS objects can be converted to a JSON string vi
+- JavaScript objects can be converted to a JSON string vi
 a `JSON.stringify(myObject)`
 - String representations can be onverted back to an object via `JSON.parse(jsonString)`
 - All values mus be a string, number, array, boolean, null, or another valid JSON object
@@ -425,7 +425,7 @@ A very basic example of DOM manipulation is [here](https://courses.edx.org/asset
 
 ## DOM events
 
-We can use event-driven programming in JS to modify HTML based on user activity. We do this by defining **callback functions** and associating them with various events by adding event listeners. `element.addEventListener(event, function)`, events: `click`, `mouseover`, `mouseout`, `keyup`.
+We can use event-driven programming in JavaScript to modify HTML based on user activity. We do this by defining **callback functions** and associating them with various events by adding event listeners. `element.addEventListener(event, function)`, events: `click`, `mouseover`, `mouseout`, `keyup`.
 
 - The HTML for the button-click example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.8-click.html).
 - The HTML for the mouse-over example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.8-mouse.html).
@@ -437,8 +437,8 @@ We can use event-driven programming in JS to modify HTML based on user activity.
 Jquery is a powerful library that allows us to select DOM elements using CSS notation. We can then modify their content and appearance programmatically. We can also register event listeners for different elements.
 
 ```javascript
-script 
-    src="https://code.jquery.com/jquery-3.5.1.min.js"
+<script 
+    src="https://code.jquery.com/jquery-3.5.1.min.JavaScript"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4yfaTqgFtohetphbbj0=" 
     crossorigin="anonymous">
 </script>
@@ -483,7 +483,7 @@ To add an event listener to and element, the general format is `(selector).event
 
 # Introducing React
 
-- A JS library to building user interfaces.
+- A JavaScript library to building user interfaces.
 - HTML page is composed of recyclable, interactive components hat have a lifecycle during which the state of the components changes
 - Introduces the notion of VirtualDOM: React identifies the elements in the DOM that are affected by a change and only modifies the part of the DOM that is affected. The process has three steps:
   1. Identify nodes that have changed (**diff**)
@@ -492,7 +492,7 @@ To add an event listener to and element, the general format is `(selector).event
 
 There are three steps for using React:
 1. Withing the page's HTML, allocate a position on the page in which the desired React component will be rendered, eg. a `div`
-2. Create a React component in JS:
+2. Create a React component in JavaScript:
   - Establish an initial state
   - Define any events that could change the component's state over its lifecycle
   - Define the function to render the HTML
@@ -500,12 +500,12 @@ There are three steps for using React:
 
 ## JSX
 
-JS XML Syntax Transform. It allows user to write HTML-like tags within JS. It converts HTML to React code.
+JavaScript XML Syntax Transform. It allows user to write HTML-like tags within JavaScript. It converts HTML to React code.
 
 
 ## Components
 
-React components are JS objects that can be used as HTML elements in the VirtualDOM. A component's `render()` function is used to render its HTML. A component's **properties** are assigned when it is created. A component's **state** can change during its lifecycle. A component's **lifecycle functions** are invoked depending on relevant activities.
+React components are JavaScript objects that can be used as HTML elements in the VirtualDOM. A component's `render()` function is used to render its HTML. A component's **properties** are assigned when it is created. A component's **state** can change during its lifecycle. A component's **lifecycle functions** are invoked depending on relevant activities.
 
 ### Creating component
 

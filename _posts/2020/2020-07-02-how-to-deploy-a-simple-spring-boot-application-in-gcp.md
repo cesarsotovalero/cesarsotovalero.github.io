@@ -123,7 +123,7 @@ gcloud compute instances create vm-instance \
 Let's break down the command:
 
 - `gcloud compute instances create [YOUR_INSTANCE_NAME]`: This is the basic command to create a new VM instance. You need to replace `[YOUR_INSTANCE_NAME]` with the actual name you want to use for your instance.
-- 
+
 - `--zone us-central1-f`: This specifies the zone where you want your instance to be created.
 
 - `--scopes=https://www.googleapis.com/auth/cloud-platform`: This flag allows full access to all Cloud APIs.
