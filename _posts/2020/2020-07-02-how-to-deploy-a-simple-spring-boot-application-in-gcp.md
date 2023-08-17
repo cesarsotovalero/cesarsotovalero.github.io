@@ -9,7 +9,7 @@ keywords:
     - Google Cloud,
     - Application Deployment,
     - Tutorial
-description: TODO
+description: This article is a step-by-step guide for deploying a simple Spring Boot application on Google Cloud Platform (GCP). It covers deployment in App Engine and Compute Engine.
 image: ../img/posts/2020/2020-07-02/heroes-cover.jpg
 share-img: ../img/posts/2020/2020-07-02/heroes-cover.jpg
 show-avatar: false
@@ -23,7 +23,7 @@ After having my Java Spring Boot web app ready, the next step is to show it to t
 This means deploying it on the internet.[^1]
 I landed on Google Cloud Platform (GCP) for this task.
 Why?
-Well, GCP gives a nice starting credit of $100, and after that I only pay for what I use.
+Well, GCP in 2020 gives a nice starting credit of $100, and after that I only pay for what I use.
 That's the beauty of PaS and similar cloud services.
 My app is simple, and I don't expect it to have a lot of traffic, so I don't need a Kubernetes cluster to deal with scalability issues.
 I found the documentation for deploying a simple Spring Boot application on GCP a bit confusing.
@@ -33,7 +33,7 @@ Let's get started!
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2020/2020-07-02/heroes.jpg alt:"Heroes in the cloud" %}
   <figcaption class="stroke"> 
-    &#169; The cloud is the best place for our mystical ~~apps~~ heroes. Photo from a craft shop in <a href="https://goo.gl/maps/L6VH6HcfWr5ernk26">Gamla Stan</a>, 2020.
+    &#169; The cloud is the best place for our mystical <del>heroes</del> apps. Photo from a craft shop in <a href="https://goo.gl/maps/L6VH6HcfWr5ernk26">Gamla Stan</a>, 2020.
   </figcaption>
 </figure>
 
@@ -53,9 +53,14 @@ Choosing GCP for Java application development has several advantages:
 
 - **Cost-Effective and Transparent Billing**. GCP operates on a [sustained-use discount model](https://cloud.google.com/compute/docs/sustained-use-discounts). This means I could make efficient use of resources with the assurance of cost optimization. The platform's detailed billing reports also allowed for in-depth analysis of resource utilization, enabling further optimizations.
 
-# Spring Boot App Deployment in GCP
+# Deploying to GCP
 
-Deploying a Spring Boot application to Google Cloud Platform (GCP) can be achieved through several services, but one of the simplest and most integrated ways is via Google App Engine's Java 11 environment. 
+Deploying a Spring Boot application to GCP can be achieved through several services.
+Here we will cover two of the most common ways: using App Engine and Compute Engine.
+
+## Using App Engine
+
+Perhaps the simplest way to deploy is via Google App Engine's Java 11 environment. 
 Here are the steps and associated commands to get your Spring Boot application up and running on GCP using App Engine:
 
 Pre-requisites:
@@ -80,6 +85,7 @@ Replace `YOUR_PROJECT_ID` with your GCP project's ID.
 
 Inside the root of your Spring Boot project, create a file named `app.yaml`.
 This file will contain the configuration for the App Engine deployment.
+
 Here's an example:
 
 ```yaml
@@ -103,11 +109,7 @@ https://YOUR_PROJECT_ID.ue.r.appspot.com
 You can navigate to this URL in your web browser to access your Spring Boot application.
 You can view logs and monitor the application's performance, errors, and other metrics through the GCP Console under "App Engine" and "Logging" sections.
 
-## Connecting to a Database
-
-If your Spring Boot application connects to a database, consider using Cloud SQL as it integrates seamlessly with App Engine. You would set up your application's connection properties to connect to the Cloud SQL instance and use App Engine's ability to securely connect to Cloud SQL without exposing the database to the internet.
-
----
+## Using Compute Engine
 
 Create a Compute Engine virtual machine instance named **vm-instance** with the following command:
 
@@ -190,10 +192,10 @@ Return to the Cloud Console VM instances list, and click on the External IP addr
 # Conclusion
 
 That's it! 
-These are the fundamental steps to get a Spring Boot application deployed on GCP's App Engine.
+These are the fundamental steps to get a Spring Boot application deployed up and running on GCP.
 Depending on the complexity and specifics of your application, you might need to perform additional configuration or setup.
 
 # Footnotes
 
-[^1]: As developers, we know that **production** is the best place in the world to be.
+[^1]: Production land is the best place in the world to be, as a developer.
 
