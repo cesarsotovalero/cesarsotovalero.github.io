@@ -106,6 +106,17 @@
       </item>
     
       <item>
+        <title>Why Debloating Software Based on Client&apos;s Usages?</title>
+        <description>
+          The case of the Log4j vulnerability - 
+          Most software applications today are built using third-party libraries and frameworks that together constitute the application’s software supply chain. These libraries are often large and complex pieces of engineering, with many features and functionalities to support a wide range of use cases. Consequently, most applications only use a small subset...
+        </description>
+        <pubDate>Wed, 15 Jun 2022 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/why-debloating-software-based-on-user-usage.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/why-debloating-software-based-on-user-usage.html</guid>
+      </item>
+    
+      <item>
         <title>My Ultimate Terminal Customizations for macOS</title>
         <description>
           A guide - 
@@ -213,17 +224,6 @@
         <pubDate>Mon, 17 Jan 2022 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/how-do-i-track-the-progress-of-my-research-projects.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-do-i-track-the-progress-of-my-research-projects.html</guid>
-      </item>
-    
-      <item>
-        <title>Encoding, Encryption, Hashing, and Obfuscation in Java</title>
-        <description>
-          From concepts to code - 
-          The concepts of encoding, encryption, hashing, and obfuscation are at the core of many critical software technologies. For example, encryption and hashing are the backbones of the blockchain technology that fuels cryptocurrencies, whereas encoding and obfuscation unify and secure the web, respectively. Unfortunately, these concepts are often mistakenly confused or...
-        </description>
-        <pubDate>Sun, 19 Dec 2021 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html</guid>
       </item>
     
   </channel>
