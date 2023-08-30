@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Why Debloating Software Based on Client's Usages?
-subtitle: The case of the Log4j vulnerability
+title: Why Debloating Third-Party Software?
+subtitle: The case of the log4j vulnerability
 tags: security
-description: The log4j vulnerability is an example of the dangers of reusing third-party code. In this article, I discuss how debloating software based on client's usage helps to˚ reduce the attack surface of applications that rely on third-party libraries.
+description: The log4j vulnerability is an example of the dangers of reusing third-party code. In this article, I discuss how debloating helps  to˚ reduce the attack surface of applications by removing unnecessary code from software libraries.
 keywords:
   - debloating,
   - log4j,
@@ -22,10 +22,10 @@ published: true
 Most software applications today are built using third-party libraries and frameworks that together constitute the application's [software supply chain](../blog/the-software-supply-chain.html).
 These libraries are often large and complex pieces of engineering, with many features and functionalities to support a wide range of use cases.
 Consequently, most applications only use a small subset of these features.
-This means that the majority of the code in these libraries is actually unnecessary for the application's correct functionality.
+This means that **the majority of the code in software libraries is actually unnecessary** for the application's correct functionality.
 This excess of code could become a security risk, as third-party code can contain dormant vulnerabilities that can be exploited by cyber-attackers.
 One way to mitigate this risk is to debloat the software by removing unnecessary features and components.
-This article explores the benefits of [debloating software based on client's usage](../blog/diversity-driven-software-debloat.html), and how it can help reduce the attack surface of applications that rely on third-party libraries.
+This article explores the benefits of [debloating software based on the actual usage](../blog/diversity-driven-software-debloat.html), and how it can help reduce the attack surface of applications that rely on third-party libraries.
 With the recent log4j security vulnerability as an example, this article discusses how debloating could have diminish the impact of such incident.
 
 <figure class="jb_picture">
@@ -155,11 +155,11 @@ The following are the three most common approaches, and how they might have help
 
 {% badge ../files/thesis/thesis_first_page.png 140 ../files/thesis/cesar-fulltext.pdf %}
 The log4j vulnerability offers a poignant lesson on the latent dangers of reusing third-party code.
-It emphasizes the security benefits of minimizing codebases and removed unused features from dependencies.
-Ideally, developers should put in production only what is necessary for a given application or service, thereby reducing its overall attack surface.
-In our increasingly security-conscious world, using code debloating techniques that are based on user usage might shift from being a code minimization strategy to becoming a critical security measure to avoid future incidents like the log4j vulnerability.
+It emphasizes the security benefits of minimizing codebases and removing unused features from dependencies.
+Ideally, **developers should ship to production only what is actually necessary for a given application or service**, thereby reducing its overall attack surface.
+In our increasingly security-conscious world, using code debloating techniques might shift from being a code minimization strategy to becoming a critical security measure to avoid future incidents like the log4j vulnerability˚.
 
-**UPDATE:** If you want to learn more about software debloating in Java, I wrote a PhD thesis on this subject, check it out [here](../files/thesis/cesar-fulltext.pdf).
+**UPDATE:** If you want to learn more about software debloating in Java, I wrote my PhD thesis on this subject, check it out [here](../files/thesis/cesar-fulltext.pdf).
 
 # References
 
