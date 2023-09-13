@@ -108,7 +108,7 @@
       <item>
         <title>Why Debloating Third-Party Software?</title>
         <description>
-          The case of the log4j vulnerability - 
+          The case of the Log4j vulnerability - 
           Most software applications today are built using third-party libraries and frameworks that together constitute the application’s software supply chain. These libraries are often large and complex pieces of engineering, with many features and functionalities to support a wide range of use cases. Consequently, most applications only use a small subset...
         </description>
         <pubDate>Wed, 15 Jun 2022 00:00:00 -0700</pubDate>
