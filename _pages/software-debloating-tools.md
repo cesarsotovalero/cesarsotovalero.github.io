@@ -7,11 +7,6 @@ keywords: software debloat,GitHub projects,software engineering
 image: ../img/pages/software-debloating-papers/debloating.png
 ---
 
-<!-- Carbon ads -->
-<div class="cesarcarbon">
-   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
-</div>
-
 This is a living list of tools for program debloating and software specialization.
 
 # Java

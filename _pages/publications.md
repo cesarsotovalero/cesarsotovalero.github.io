@@ -6,11 +6,6 @@ subtitle: Research papers
 published: true
 ---
 
-<!-- Carbon ads -->
-<div class="cesarcarbon">
-   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
-</div>
-
 I'm the author of academic papers published in reputable journals and conferences. 
 My work can be found in 
 <a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="../img/pages/publications/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="../img/pages/publications/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="../img/pages/publications/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar); with ORCID  <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer" 

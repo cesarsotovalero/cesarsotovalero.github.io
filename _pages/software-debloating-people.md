@@ -9,11 +9,6 @@ image: ../img/pages/software-debloating-papers/debloating.png
 robots: noindex
 ---
 
-<!-- Carbon ads -->
-<div class="cesarcarbon">
-   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
-</div>
-
 Here is a non-exhaustive list of people working actively on program debloating and software specialization.
 
 # Academics

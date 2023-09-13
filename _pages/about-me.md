@@ -12,11 +12,6 @@ subtitle: In brief
 [//]: # ( <span class="type" style="text-align: center"></span>)
 
 
-<!-- Carbon ads -->
-<div class="cesarcarbon">
-   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
-</div>
-
 <!-- ![Custom badge](https://img.shields.io/badge/-WORK-blueviolet.svg) -->
 # Work
 

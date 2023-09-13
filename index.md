@@ -11,11 +11,6 @@ use-site-title: true
    {% include social.html type="page" %}
 </div>
 
-<!-- Carbon ads -->
-<div class="cesarcarbon">
-  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
-</div>
-
 [//]: # (count all post published thi month)
 {% assign current_date = 'now' | date: '%Y-%m' %}
 {% assign current_month_post_count = 0 %}

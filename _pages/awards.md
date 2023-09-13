@@ -6,11 +6,6 @@ subtitle: Awards and certifications
 published: true
 ---
 
-<!-- Carbon ads -->
-<div class="cesarcarbon">
-   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
-</div>
-
 # Awards
 
 - [:earth_americas: KTH Poster Festival](../files/certificates/education-impact-travel-grant.JPG), _First prize in the [Poster Festival at the EECS Summer Event](https://intra.kth.se/en/eecs/aktuellt-pa-eecs/nyheter/400-happy-colleagues-joined-the-eecs-summer-event-1.1176797)_ (**15 000 SEK**), 2022

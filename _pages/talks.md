@@ -6,11 +6,6 @@ subtitle: Bla bla bla
 published: true
 ---
 
-<!-- Carbon ads -->
-<div class="cesarcarbon">
-   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
-</div>
-
 I present my work in academic conferences, workshops, and software companies.[^1]
 The following is a non-exhaustive list of my technical presentations (in reverse chronological order).
   

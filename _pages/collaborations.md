@@ -6,11 +6,6 @@ subtitle: Research topics open to collaborations
 published: true
 ---
 
-<!-- Carbon ads -->
-<div class="cesarcarbon">
-   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
-</div>
-
 I am continuously looking for highly motivated master or bachelor students at KTH. Potential thesis topics are related to my research in the areas of debloating and software diversity, in particular with a focus on code analysis and transformations. 
 
 The following is a list of research topics that I’m particularly interested in doing further investigation. Any kind of external collaboration is also welcome.
