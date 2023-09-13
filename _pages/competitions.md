@@ -6,15 +6,9 @@ subtitle: The natural skill calibrator
 published: true
 ---
 
-<!--
-> "You must not only have competitiveness but ability, regardless of the circumstance you face, to never quit."
-> -- <cite>Abby Wamback</cite>
--->
-
-<!-- Carbon ads -->
-<div class="cesarcarbon">
-   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
-</div>
+<aside class="quote">
+    <em>“You must not only have competitiveness but ability, regardless of the circumstance you face, to never quit." -- <cite>Abby Wamback</cite>”</em> 
+</aside>
 
 I'm not a competitive person, but sometimes it is worth to put some pressure on myself participating in competitive events, just to see what happens.
 

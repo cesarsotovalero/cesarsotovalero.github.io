@@ -8,11 +8,6 @@ keywords: software debloat,living review,survey,software engineering
 image: ../img/pages/software-debloating-papers/debloating.png 
 ---
 
-<!-- Carbon ads -->
-<div class="cesarcarbon">
-   <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id="_carbonads_js"></script>
-</div>
-
 This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articles related to program debloating and software specialization.
 
 # Index
