@@ -10,11 +10,11 @@ keywords:
   - career advice,
   - Artificial Intelligence,
   - the future of software development
-image: ../img/posts/2023/2023-08-28/head-down-teddy_cover.jpg
-share-img: ../img/posts/2023/2023-08-28/head-down-teddy_cover.jpg
+image: ../img/posts/2023/2023-09-17/head-down-teddy_cover.jpg
+share-img: ../img/posts/2023/2023-09-17/head-down-teddy_cover.jpg
 show-avatar: false
 toc: true
-date: 2023/08/28
+date: 2023/09/17
 author: cesarsotovalero
 published: true
 ---
@@ -33,7 +33,7 @@ For example, I assume that [Generative AI](https://www.nvidia.com/en-us/glossary
 So, what can we do to keep up with this wave of changes?
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-08-28/head-down-teddy.jpg alt:"A lovely teddy bear thrashed in the backyard together with a keyboard" %}
+  {% responsive_image path: img/posts/2023/2023-09-17/head-down-teddy.jpg alt:"A lovely teddy bear thrashed in the backyard together with a keyboard" %}
   <figcaption class="stroke"> 
     &#169; Once we said goodbye to our lovely teddy bear, ...does the keyboard comes next?
   </figcaption>
