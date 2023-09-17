@@ -282,7 +282,7 @@ Eventually, AI could outsmart people, taking power.
 But this is not going to happen in the next 10 years.
 Or at least, I hope so.
 
-# Conclusion
+# Conclusions
 
 Due to their new capabilities, AI has become an indispensable tool for us as software developers.
 It's something we can use as both a source and transfer of value, without even understanding it.
