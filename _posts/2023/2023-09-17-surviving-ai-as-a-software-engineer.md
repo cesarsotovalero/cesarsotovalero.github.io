@@ -39,7 +39,7 @@ So, what can we do to keep up with this wave of changes?
   </figcaption>
 </figure>
 
-# The game has new rules
+# The game has changed
 
 [//]: # (My predictions two years ago)
 In July 2021, I published a blog post titled "[Hermit Programmers are Dead](../blog/hermit-programmers-are-dead.html)."
