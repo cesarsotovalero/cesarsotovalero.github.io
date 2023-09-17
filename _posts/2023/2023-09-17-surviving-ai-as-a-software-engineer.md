@@ -141,7 +141,7 @@ Managers, who make big decisions, often don't have the ~~knowledge~~ and time to
 Consequently, developers who understand AI technology will be able to serve as a communication bridge between thinkers and makers, and this is a skill that's already becoming more and more important.
 Looking back at history, during the Industrial Revolution, we can see a similar pattern where machines boosted how much we could get done, but they still needed people to operate them.
 That's why, to make the most of what AI can offer now, it's key to learn about all the different things it can do.
-This is key not just to keep up, but to lead the way in using its power wisely and effectively.
+This is key not just to keep up, but to lead the way in utilizing its power wisely and effectively.
 
 [//]: # (---------------------------------------------------------------)
 **Thinking critically.**
