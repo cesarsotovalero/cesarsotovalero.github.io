@@ -24,7 +24,7 @@ It's inevitable, and it changes everything.
 If you are worried about what [OpenAI's ChatGPT](https://chat.openai.com/) can do, hold on because it's just the beginning.
 The next wave of extremely powerful and specialized AI models is coming faster than predicted.
 In the next years, AI's massive adoption will affect every single aspect of our lives.
-But this article is not about the issues of an AI-powered society, prophesied decades decades agro by science fiction writers.
+But this article is not about the issues of an AI-powered society already prophesied many decades ago by science fiction writers.
 Instead, I will focus on its effects on the software industry.
 This article reflects my opinion on how developers can protect their jobs in a new world dominated by AI.
 My focus is on software engineering jobs, but most of the principles mentioned here apply to any other profession as well.
@@ -43,12 +43,12 @@ So, what can we do to keep up with this wave of changes?
 
 [//]: # (My predictions two years ago)
 In July 2021, I published a blog post titled "[Hermit Programmers are Dead](../blog/hermit-programmers-are-dead.html)."
-My post was hardly criticized on Hacker News (HN), receiving more than [100 negative comments](https://news.ycombinator.com/item?id=28744671).[^1]
-Sadly, the main point I wanted to make back then was misunderstood.
+To my surprise, it was hardly criticized on Hacker News (HN), receiving more than [100 negative comments](https://news.ycombinator.com/item?id=28744671).[^1]
+Sadly, the main point I wanted to make back then was actually misunderstood.
 The reason (I want to believe) was my ~~still~~ precarious writing skills.
 In essence, I argued that the rules of the game for software developers have changed so much due to AI and cloud computing, that the archetype of the solo-programmer has become obsolete.
-I argued that the ability to write code is not what makes a programmer successful, but instead, their social skills are.
-I predicted that this situation would just exacerbate over time.
+I believed (then and now), that the ability to write code is not what makes a programmer successful, but instead, their social skills are.
+My prediction was that this situation would just exacerbate over time.
 For example, I said "writing a bunch of code is not going to be a cool thing to do anymore," and "only our unique human skills will be valued in the future."
 In response, someone on HN wrote: "this person has no idea what they are talking about."
 It's fun, but many things have changed since then.
@@ -57,8 +57,8 @@ Let me explain.
 [//]: # (What has changed since then)
 Two years later, it turns out that my predictions were right, particularly those about the threat of AI to developers.
 Today, AI has not only proven to be better than humans at playing [Chess or Go](https://www.deepmind.com/research/highlighted-research/alphago), but it has also become better at creating all kinds of text-based content, especially source code.
-The improvement of Deep Learning (DL) algorithms, advancements in neural architectures such as transformers, ever-increasing computational capabilities, and the accessibility of massive training datasets extracted from the public internet have brought about a revolutionary transformation in the field of Natural Language Processing (NLP).
-This has led to the emergence of Large Language Models (LLMs),[^15] which have proven to be capable of approximating human-level performance on many evaluation benchmarks that require creativity and reasoning.[^7]
+The improvement of Deep Learning (DL) algorithms, advancements in neural architectures such as transformers, ever-increasing computational capabilities, and the accessibility of massive training datasets extracted from the public internet have brought a true revolutionary transformation in the field of Natural Language Processing (NLP).
+This has led to the emergence of Large Language Models (LLMs),[^15] which have proven to be capable of approximating human-level performance on many evaluation benchmarks that require both creativity and reasoning.[^7]
 
 [//]: # (What is unique from LLMs)
 The unique characteristic that makes these modern AI systems different from previous Machine Learning (ML) models is that they are generative instead of discriminative.
@@ -71,8 +71,8 @@ In summary, the key to LLMs' tremendous success lies in the combination of the f
     <em>“With great size (of parameters) comes great power (of AI).”</em> 
 </aside>
 
-1. **Model's complexity.** Research evidence that at some point after GPT-3's 175 billion parameters some magic happens and the text-based models get incredibly powerful.[^4] The size of ML models, measured by the number of parameters (i.e., the number of computed weights between artificial neurons' connections), has increased exponentially in the last few years. This has been possible thanks to the availability of more powerful hardware, such as [dedicated NVIDIA GPUs](https://www.nvidia.com/en-us/data-center/h100/), and the development of more efficient training algorithms, such as the [Adam's](https://arxiv.org/abs/1412.6980) stochastic optimization and [attention mechanisms](https://arxiv.org/abs/1706.03762), which efficiently computes adaptive learning rates for each parameter, improving the back-propagation technique.
-2. **Training size.** Researchers discovered that LLMs capabilities increase significantly when augmenting the size of the training dataset.[^3] In the case of [Generative Pre-trained Transformer](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer) (GPT) models, they are presumably trained on the whole internet's public data. This includes the whole Stack Overflow's Q/A database, GitHub's entire codebase of ~~public~~ open-source projects, frameworks and APIs, all sources of technical documentation, and overall all the code that has ever been published on public websites.
+1. **Model's complexity.** The size of ML models, measured by the number of parameters (i.e., the number of computed weights between artificial neurons' connections), has increased exponentially in the last few years. This has been possible thanks to the availability of more powerful hardware, such as [dedicated NVIDIA GPUs](https://www.nvidia.com/en-us/data-center/h100/), and the development of more efficient training algorithms, such as the [Adam's](https://arxiv.org/abs/1412.6980) stochastic optimization and [attention mechanisms](https://arxiv.org/abs/1706.03762), which efficiently computes adaptive learning rates for each parameter, improving the back-propagation technique. Research shows that at some point after GPT-3's 175 billion parameters some magic happens and the text-based models get incredibly powerful.[^4]
+2. **Training size.** Researchers also discovered that LLMs capabilities increase significantly when augmenting the size of the training dataset.[^3] In the case of [Generative Pre-trained Transformer](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer) (GPT) models, they are presumably trained on the whole internet's public data. This includes the whole Stack Overflow's Q/A database, GitHub's entire codebase of ~~public~~ open-source projects, frameworks and APIs, all sources of technical documentation, and overall all the code that has ever been published on public websites.
 3. **Human feedback.** Research has shown that AI's capabilities improve exponentially when the system is able to interact with humans. AI models fine-tuned with human feedback via [Reinforcement Learning](https://en.wikipedia.org/wiki/Reinforcement_learning) (RL) perform better than previous models with a larger training size.[^2] Today's ChatGPT models are instructed and refined continuously by human experts and users in general. First, with a set of labeler-written prompts, and second, with the user's prompts submitted through the OpenAI's API directly.
 
 <aside class="quote">
@@ -85,25 +85,27 @@ On the bottom layer are LLM Foundational Models (FMs),[^9] followed by a "simula
 This context-specific layer is improved through constant interactions with the model (e.g., refining its purpose, adding specifications, and/or increasing domain knowledge datasets).
 The part above the simulacrum is the personality of the model, the consumable layer, refined with additional human feedback.
 This layer on top is what ultimately determines the value of the AI system.
-In the context of source code, the personality of the model is the programming language, the coding style, the specific framework, and the business specifications.
+In the context of source code, the personality of the model is the programming language, the coding style, the specific framework, and the business rules of the software application.
 
 <aside class="quote">
     <em>“Simply put, if you don't use AI (as a developer) today, you wake up out of the market tomorrow morning.”</em> 
 </aside>
 
 [//]: # (The rise of AI platforms from large companies)
+The market rat race is fierce to take the most out of these new models.
 Big tech companies are heavily competing to become the next AI platform for businesses and developers.
 Microsoft is at the head of the race today, leveraging its AI ecosystem by directly partnering with OpenAI, deploying its successful GPT models on top of its Bing search engine and [GitHub Copilot](https://github.com/features/copilot).
 On the other hand, Meta released its [<i class="fab fa-github"></i> LLaMa 2](https://github.com/facebookresearch/llama) trained model and made it open-source (good move Mark!), whereas Google struggles to not miss out the party and just deployed its Bard[^10] model on top of its [Duet AI](https://workspace.google.com/blog/product-announcements/duet-ai) platform.
 
 [//]: # (The threat of AI for developers)
 The bets have been gigantic because AI has the potential to radically disrupt the software industry.
-Bill Gates believes it's the biggest move forward since the invention of the Internet.
-Utilizing AI can be more cost-effective compared to employing developers.[^13]
+Bill Gates himself believes it's the biggest move forward since the invention of the internet.
+From a practical viewpoint, utilizing AI is more cost-effective compared to employing people, specially developers.[^13]
 Moreover, its impressive capacity for labor-saving and problem-solving is accessible to a broad audience, including managers and stakeholders.
+
 Developers stand to benefit significantly as AI can assist in suggesting code enhancements, facilitating code completion, orchestrating refactoring, generating documentation and tests, conducting performance and security analyses, and even engaging in rubber duck debugging.
 The potential applications are virtually limitless.
-As AI continues to evolve, it is expected to permeate every facet of information flow services, spanning from the automation of email responses to advanced data analytics that can autonomously create plots and synthesize large volumes of data into digestible summaries, thereby expediting decision-making processes.
+As AI continues to evolve, it is expected to permeate every facet of information flow services, spanning from the automation of email responses to advanced data analytics that can autonomously create plots and synthesize large volumes of data into comprehensive summaries, thereby expediting decision-making processes.
 
 <aside class="quote">
     <em>“A fool with a tool is still a fool.” -- <cite>Grady Booch</cite></em> 
@@ -113,19 +115,22 @@ As AI continues to evolve, it is expected to permeate every facet of information
 From my personal perspective, I think it's important to understand that, although powerful, current LLMs are all basically statistical models of words.
 No doubt they are useful for developers, as they provide a new form of generative search capabilities.
 As an example, imagine a developer working in the FinTech industry, a common task is to map [ISIN numbers](https://en.wikipedia.org/wiki/International_Securities_Identification_Number) of stocks.
-Today's GitHub Copilot not only retrieves this number automatically in the IDE, but it can also tell the country for a particular stock, and more associated information as prompted.
+Today's GitHub Copilot not only capable of retrieving this number automatically in the IDE, but it can also display the country for any particular stock, and provide even more fine-grained associated  information as prompted.
 This capacity to search faster and more accurately makes AI extremely useful for routine coding tasks.
 
 [GitHub Next](https://githubnext.com/) is setting what would be the standard for the next generation of software development tools.
-Some are starting to believe that AI will very soon go beyond assisting developers, and start firing them.[^8]
+The promises are so high and incredible, that some are starting to believe that AI will very soon go beyond assisting developers, and start firing them.[^8]
 The idea is not that crazy.
 If AI will make pull requests, review code, and create documentation... the question is: What [30+ million worldwide developers](https://www.griddynamics.com/global-team-blog/number-software-developers-world) are going to do with all this extra time? Will they even be necessary?
 
 
 # Our survival backdoors
 
-To survive the AI revolution, we need to focus on the skills that make us unique as humans, and at the same time are still valuable in the job market.
-It is these very skills, grounded in our innate human attributes, that pose a substantial challenge for machines to mimic or automate, thereby standing as our defense against potential obsolescence. The following is a list of 10 skills that I believe will not just be beneficial but absolutely vital in the next years:[^6]
+I believe that to survive the AI revolution, we need to focus on nurturing the skills that make us unique as humans.
+In particular, those that are still valuable in the job market.
+Grounding these skills with our innate human attributes is what poses a substantial challenge for machines to mimic or automate, thereby standing as our defense against potential labor obsolescence. 
+
+The following is a list of 10 skills that I believe will not just be beneficial but absolutely vital in the next years dominated by AI:[^6]
 
 [//]: # (---------------------------------------------------------------)
 **Getting understanding.**
@@ -136,7 +141,7 @@ Managers, who make big decisions, often don't have the ~~knowledge~~ and time to
 Consequently, developers who understand AI technology will be able to serve as a communication bridge between thinkers and makers, and this is a skill that's already becoming more and more important.
 Looking back at history, during the Industrial Revolution, we can see a similar pattern where machines boosted how much we could get done, but they still needed people to operate them.
 That's why, to make the most of what AI can offer now, it's key to learn about all the different things it can do.
-This is key not just to keep up, but to lead the way in using this technology wisely and effectively.
+This is key not just to keep up, but to lead the way in using its power wisely and effectively.
 
 [//]: # (---------------------------------------------------------------)
 **Thinking critically.**
