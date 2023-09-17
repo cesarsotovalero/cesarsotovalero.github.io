@@ -2116,8 +2116,26 @@ ul li {
   margin-bottom: 10px;
 }
 
+ol li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 26px;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+}
+
 ul li p {
   margin-bottom: 10px;
+}
+
+ol li p {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 26px;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
 }
 
 ol, ul {
