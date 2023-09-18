@@ -222,7 +222,7 @@ AI can help you find answers to common questions easily because it uses as a bas
 However, when asked about creating something totally new or predicting future trends, it struggles because it can't think or imagine as humans do.
 For example, it can suggest well-known tools for building a website but can't help much with innovative ideas for a machine learning algorithm that's never been made before.
 So, in the future, being able to perform research and find solutions to new problems will be a really important skill.
-This might even lead more developers to choose research jobs over positions at big tech companies to stand out in their field.
+This might even lead more developers to choose research jobs over other positions at big tech companies to stand out in their field.
 
 # The unpredictable future
 
@@ -258,12 +258,13 @@ As in the traditional economy, everything is about price once a certain quality 
 But AI seems to be revolutionizing the tech industry, where the cost of an engineer becomes irrelevant, overshadowed by the potential for high productivity and innovation.
 Consequently, a highly productive developer could create significantly more value than a less productive one, despite higher hiring costs.
 
-A limitation of current AI technology is that it is neither deterministic nor explainable, sometimes restricting its adoption in critical systems.
-The motto "Don't trust, verify" is still relevant at present for AI-assisted developers.
-This means that to use these models properly, one needs to be a senior engineer.
-Senior developers get a big boost from this technology because they understand the response of an AI.
-For example, if you are a junior you don't know exactly what to ask, and you don’t understand the response.
-However, the usual path to becoming a senior  (i.e., learning from mistakes under the guidance of a mentor)  might be disrupted as companies replace junior roles with AI.
+A limitation of current AI technology is that it is neither deterministic nor explainable, sometimes limiting its adoption in critical systems.
+The motto "Don't trust, verify" is still relevant (at present day) for AI-assisted developers.
+Consequently, to use these models properly, one needs to be a able to get the most of out AI's generated answers. 
+This is something that senior engineer can do very well, but juniors could find it challenging.
+Senior developers get a big boost from this technology because they understand the response given by LLMs.
+For example, if you are a junior you don't know exactly what to ask, and sometimes you will need more time to understand the response.
+I think that the usual path to becoming a senior, by learning from mistakes under the guidance of a mentor, might be disrupted as companies will start replacing junior roles with AI.
 This raises the question: What happens if we no longer have seniors mentoring juniors?
 
 Note that in the last decade, contrary to their initial intentions, social networks have eroded genuine social connections and trust among people.
