@@ -27,6 +27,7 @@ In the next years, AI's massive adoption will affect every single aspect of our 
 But this article is not about the issues of an AI-powered society already prophesied many decades ago by science fiction writers.
 Instead, I will focus on its effects on the software industry.
 This article reflects my opinion on how developers can protect their jobs in a new world dominated by AI.
+I cover 10 skills that I believe will be vital in the next years.
 My focus is on software engineering jobs, but most of the principles mentioned here apply to any other profession as well.
 In this survival guide, I cover only the facts that I believe will hold despite the imminent improvements of AI models.
 For example, I assume that [Generative AI](https://www.nvidia.com/en-us/glossary/data-science/generative-ai/) will eventually become better than humans at creating any kind of digital content, including not only source code, but also images, music, or video.[^5]
@@ -133,7 +134,7 @@ Grounding these skills with our innate human attributes is what poses a substant
 The following is a list of 10 skills that I believe will not just be beneficial but absolutely vital in the next years dominated by AI:[^6]
 
 [//]: # (---------------------------------------------------------------)
-**Getting understanding.**
+**#1: Getting understanding.**
 First off, it's really important to deeply understand what AI can do right now.
 For the moment, these systems can't work without people telling them what to do.
 We are the ones in control (for now), giving them all the necessary instructions.
@@ -144,7 +145,7 @@ That's why, to make the most of what AI can offer now, it's key to learn about a
 This is key not just to keep up, but to lead the way in utilizing its power wisely and effectively.
 
 [//]: # (---------------------------------------------------------------)
-**Thinking critically.**
+**#2: Thinking critically.**
 LLMs today provide factual answers based on existing knowledge or through the analysis of large amounts of data.
 However, there is a large set of problems that are not clearly defined and that require special [critical thinking](https://www.criticalthinking.org/pages/defining-critical-thinking/766), which is an almost unique human skill.
 For example, designing scalable systems for a particular use case, or deciding on the correct data migration strategy for a particular company is not something that can be solved by AI today because they require multiple layers of abstraction and a deep understanding of the problem domain.
@@ -152,7 +153,7 @@ We need to learn how to make better questions and formulate them clearly and pre
 Issues such as ethical concerns, privacy, and security are also areas where AI is not yet capable of making absolutely correct decisions.[^14]
 
 [//]: # (---------------------------------------------------------------)
-**Staying opinionated.**
+**#3: Staying opinionated.**
 Empirical research on the use of LLMs shows that the ability to critique will be a key skill needed in the future.[^11]
 In other words, if you are a passive conformist developer who just follows orders, you are in trouble today because machines can already do that better than you.
 On the other hand, I believe that human opinions will remain valuable in the future simply because AI will never take full responsibility for its mistakes.
@@ -162,7 +163,7 @@ Linus has not only made controversial decisions but has also shaped discussions 
 This kind of personal touch, coupled with sharp observations and responsibility is a space that AI is unable to reach at the moment.
 
 [//]: # (---------------------------------------------------------------)
-**Being creative.**
+**#4: Being creative.**
 AI currently struggles greatly with understanding and generating human humor, a task that demands a deep-rooted understanding of nuanced emotions, sarcasm, and cultural references, all of which are intrinsic to our nature.
 The capacity to create, to conceive something from nothing, or to find unexpected solutions to problems is a distinctly human trait that goes beyond the capabilities of LLMs.
 Being a font of originality, much like innovators such as Steve Jobs, can foster environments ripe for groundbreaking advancements.
@@ -172,7 +173,7 @@ Thus, safeguarding our innate creativity is not just essential, it's the corners
 territories and fostering truly revolutionary developments.
 
 [//]: # (---------------------------------------------------------------)
-**Taking initiative.**
+**#5: Taking initiative.**
 Right now, AI can't take the first step on its own, it needs humans to guide it.
 Even though AI can help find solutions, it can't fully replace programmers because creating a program involves deeply understanding a problem and then breaking it down step by step to solve it, which requires a human touch and personal initiative.
 Knowing what problems to solve is a huge part of the battle.
@@ -182,7 +183,7 @@ it's about programmers using their expertise and drive to find new problems and 
 This means that the ability to take initiative will remain a vital skill in the years to come.
 
 [//]: # (---------------------------------------------------------------)
-**Showing empathy.**
+**#6: Showing empathy.**
 AI is better than humans at writing code, just as a calculator is better at math.
 You will never get in love with a calculator (unless you're really weird).
 The same applies to AI, it will never be able to understand the human condition, and therefore it will never be able to empathize with us in the same way another human will do.
@@ -191,7 +192,7 @@ Future developers will need to be able to empathize with their users and manager
 I don't mean being a clown, but learning how to make the difference w.r.t. AI in the human side of the business will become more important than the ability to write boilerplate code for sure.
 
 [//]: # (---------------------------------------------------------------)
-**Staying curious.**
+**#7: Staying curious.**
 We have a potential problem in the tech industry: the loss of curiosity!
 In the past, solving a coding issue meant reading many Stack Overflow posts and doing a lot of experiments on your own.
 But now, AI can hand over the solution instantly.
@@ -205,7 +206,7 @@ Cultivating curiosity will be a key skill for developers in the future.
 
 [//]: # (---------------------------------------------------------------)
 
-**Nurturing storytelling.**
+**#8: Nurturing storytelling.**
 Machines lack a couple of things we all have: a natural understanding of time and a catalog of personal memories.
 This means they can't tell stories that truly connect with people the way we can. Even though artificial agents might learn to understand physical space through sensors and to measure time, truly grasping the concept of time is a much harder task for them.
 I think being able to tell a good story is a vital skill for developers. It lets us explain complex ideas simply and engagingly.
@@ -213,11 +214,11 @@ What happened one year ago when the server went down? How did you solve it? Why 
 As you see, the ability to craft passages as a good storyteller is a fuel of engagement and a craft that AI will struggle to master.
 
 [//]: # (---------------------------------------------------------------)
-**Understanding causality.**
+**#9: Understanding causality.**
 Right now, talking to an AI is like chatting with someone who knows a lot of facts but doesn't really understand what they mean or how they connect. For example, if a software developer is dealing with a server crash caused by too many people visiting a website at once, an AI might be able to help find the exact moment the server failed. However, it wouldn't be possible to naturally understand that a real-world event, like a viral marketing campaign just released, was the cause of the sudden increase in website visitors and ultimately the crash. Basically, AI has a hard time understanding cause-and-effect relationships, which is something that comes naturally to humans.
 
 [//]: # (---------------------------------------------------------------)
-**Becoming researchers.**
+**#10: Becoming researchers.**
 AI can help you find answers to common questions easily because it uses as a basis of its reasoning information that already exists.
 However, when asked about creating something totally new or predicting future trends, it struggles because it can't think or imagine as humans do.
 For example, it can suggest well-known tools for building a website but can't help much with innovative ideas for a machine learning algorithm that's never been made before.
