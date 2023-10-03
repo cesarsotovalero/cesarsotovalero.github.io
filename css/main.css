@@ -3093,6 +3093,12 @@ hr {
   }
 }
 
+div.mermaid {
+  text-align: center;
+  max-width: 100%;
+}
+
+
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
   --link-color: black;
@@ -3100,8 +3106,10 @@ html, html[data-theme="light"] {
   --footer-color: #f0f0f0;
   --post-meta-index-color: #808080;
   --blockquote-color: darkgreen;
-  --blockquote-background-color: #f1f1f1;
+  /*--blockquote-background-color: #f1f1f1;*/
+  --blockquote-background-color: #FFEDDE;
   --main-background-color: hsl(0, 0%, 99%);
+  /*--main-background-color: #fdf2ea;*/
   --main-text-color: hsl(0, 0%, 10%);
   --main-link-color: #012639;
   --link-decoration-color: #8F96CE;
