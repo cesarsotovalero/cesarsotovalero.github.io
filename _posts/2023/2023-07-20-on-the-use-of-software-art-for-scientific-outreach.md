@@ -1,16 +1,16 @@
 ---
 layout: post
-title: On the use of software art for scientific outreach
+title: On the Use of Software Art for Scientific Outreach
 subtitle: TODO
-tags: research
+tags: science
 description: TODO
 keywords:
   - PhD thesis,
   - use comics for research,
   - communicating research,
   - delivering technical content,
-image: ../img/posts/2023/2023-07-10/comic-cover.jpg
-share-img: ../img/posts/2023/2023-07-10/comic-cover.jpg
+image: ../img/posts/2023/2023-07-20/what_is_software_cover.jpg
+share-img: ../img/posts/2023/2023-07-20/what_is_software_cover.jpg
 show-avatar: false
 toc: true
 date: 2023/07/20
@@ -21,7 +21,7 @@ published: false
 TODO
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-06-10/board-for-phd-comic.jpg alt:"TODO" %}
+  {% responsive_image path: img/posts/2023/2023-07-20/what_is_software.jpg alt:"TODO" %}
   <figcaption class="stroke"> 
     I spend 3 hours explaining my 3 PhD contribution (DepClean, DepTrim, and JDBL) to a team of software artists. I summarized the results of my 5 years of research work on a large whiteboard.
   </figcaption>

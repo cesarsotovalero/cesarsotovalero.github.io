@@ -2,7 +2,7 @@
 layout: post
 title:  Recipes for Effective Academic Emailing
 subtitle: A template-based approach
-tags: soft-skills
+tags: career
 keywords: communication, email
 image: ../img/posts/2020/word_cloud_cover.jpg
 share-img: ../img/posts/2020/word_cloud_cover.jpg
@@ -13,10 +13,12 @@ date: 2020/3/03
 published: true
 ---
 
-You cannot be a good researchers without being a good communicator. If you are good enough at both, they you may qualify for becoming a supervisor. Being a good academic supervisor is a matter of practice, discipline, and the development of leading skills. Handling tons of emails is the everyday bread and butter for those who have reached this level of success (i.e., supervising other people). 
+You cannot be a good researchers without being a good communicator. 
+If you are good enough at both, they you may qualify for becoming a supervisor.
+Being a good academic supervisor is a matter of practice, discipline, and the development of leading skills. 
+Handling tons of emails is the everyday bread and butter for those who have reached this level of success (i.e., supervising other people). 
 
 In this post, I'll illustrate how using a template based approach to easing email management can boost productivity and improve the quality of this communication channel.
-
 
 <figure class="jb_picture">
 {% responsive_image path: img/posts/2020/email_vs_chat.png alt:"Email vs. Chat" %}
@@ -24,7 +26,6 @@ In this post, I'll illustrate how using a template based approach to easing emai
 &#169; Email vs. Chat. Comic from <a href="https://workchronicles.com">workchronicles.com</a>.
 </figcaption>
 </figure>
-
 
 # Why email? 
 

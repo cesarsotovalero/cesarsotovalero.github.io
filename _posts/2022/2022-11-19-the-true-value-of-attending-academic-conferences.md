@@ -2,8 +2,9 @@
 layout: post
 title: The True Value of Attending Academic Conferences
 subtitle: It's not only about the technical content
-tags: academia
-description: I recently attended the 29th edition of ESEC/FSE 2022 in Singapore. This was my first time participating in a big academic conference (in real-life). In this blog post, I share my experiences, with a focus on what I think is the actual value of attending these kinds of events. 
+tags: science
+description: |
+  I recently attended the 29th edition of ESEC/FSE 2022 in Singapore. This was my first time participating in a big academic conference (in real-life). In this blog post, I share my experiences, with a focus on what I think is the actual value of attending these kinds of events. 
 keywords:
   - academic conferences,
   - ESEC/FSE experience,
@@ -14,7 +15,7 @@ share-img: ../img/posts/2022/fse_cover.jpg
 show-avatar: false
 toc: true
 date: 2022/11/19
-author: cesarsotovalero
+author: cesarsotovalero 
 published: true
 ---
 

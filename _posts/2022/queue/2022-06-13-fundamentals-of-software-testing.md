@@ -2,7 +2,7 @@
 layout: post
 title: A Prime on Unit Testing
 subtitle: With examples in Java
-tags: tools
+tags: testing
 description: TODO
 keywords:
   - JUnit 5,

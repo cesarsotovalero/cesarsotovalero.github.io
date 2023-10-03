@@ -2,7 +2,7 @@
 layout: post
 title:  Unix Cmd Hacks
 subtitle: Boosting automation from the shell
-tags: programming
+tags: devops
 keywords: unix, command line, scripts, tools
 description: Personal notes of the edX course titled Unix Tools Data, Software and Production Engineering.
 image: ../img/posts/2020/unix_course_cover.jpg

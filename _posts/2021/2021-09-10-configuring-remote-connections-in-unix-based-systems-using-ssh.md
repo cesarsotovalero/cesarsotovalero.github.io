@@ -2,7 +2,7 @@
 layout: post
 title: Configuring Remote Connections in Unix-Based Systems Using SSH
 subtitle: A noob's guide
-tags: tools
+tags: devops
 description: This practical guide will show you how to configure a remote connection in Unix-based systems. You will learn how to create RSA keys and use SSH to configure the connection from the terminal. 
 keywords:
   - ssh remote connection,

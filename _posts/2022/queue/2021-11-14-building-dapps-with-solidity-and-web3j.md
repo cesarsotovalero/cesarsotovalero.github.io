@@ -2,7 +2,7 @@
 layout: post
 title: Building DApps with Solidity and Web3j
 subtitle: Part 1
-tags: research
+tags: science
 description: TODO
 keywords:
   - blockchain,

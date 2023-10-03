@@ -2,7 +2,7 @@
 layout: post
 title: Computer Science Research Questions
 subtitle: A list
-tags: research
+tags: science
 description: TODO
 keywords:
   - computer science research,

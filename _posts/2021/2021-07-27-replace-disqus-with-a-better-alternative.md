@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Replace the Disqus Commenting System on your Blog 
+title:  Replace the Disqus Commenting System on Your Blog
 subtitle: GitHub-based open-source alternatives are better
 description: Disqus started polluting free users with unwanted ads; it's time to replace Disqus with better open-source alternatives.
-tags: tools
+tags: github
 keywords: blog, comments, disqus, replace
 image: ../img/posts/2021/angry-emoji.jpg
 share-img: ../img/posts/2021/angry-emoji.jpg

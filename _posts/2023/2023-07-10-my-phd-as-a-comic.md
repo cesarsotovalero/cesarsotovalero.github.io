@@ -2,7 +2,7 @@
 layout: post
 title: My PhD as a Comic
 subtitle: The time when I became a superhero
-tags: research
+tags: science
 description: At the end of my PhD journey, I was lucky enough to be surrounded by professional software artists. Together, we created a comic to make the ideas of my PhD thesis more accessible and engaging to the non-tech audience. In this article, I share the comic and the story behind it.
 keywords:
   - PhD thesis,

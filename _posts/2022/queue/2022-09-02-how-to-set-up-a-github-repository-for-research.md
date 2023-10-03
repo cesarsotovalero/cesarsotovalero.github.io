@@ -2,7 +2,7 @@
 layout: post
 title: Creating an Awesome Book Cover Using Stable Diffusion
 subtitle: The perfect cover for your thesis
-tags: tools
+tags: science
 description: TODO
 keywords:
   - computer science research,

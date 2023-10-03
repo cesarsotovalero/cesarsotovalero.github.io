@@ -2,7 +2,7 @@
 layout: post
 title: Different Ways to Release to Maven Central Using GitHub Actions
 subtitle: TODO
-tags: tools
+tags: github
 description: TODO
 keywords:
   - infrastructure as code,

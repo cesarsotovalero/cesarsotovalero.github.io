@@ -1,8 +1,8 @@
 ---
 layout: post
-title: A Starting Guide to Become a Good Competitive Programmer
-subtitle: Learning is More Important than Competing
-tags: programming
+title: A Starting Guide to Programming Contests
+subtitle: Where learning is more important than winning
+tags: algorithms
 description: Insights and tricks that I learned when I was a competitive programmer
 keywords: acm icpc, competition, problems, programming
 image: ../img/posts/2017/competitive_programming_brain.png

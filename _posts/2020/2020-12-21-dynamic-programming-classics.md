@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  Dynamic Programming
-subtitle: A handful of representative problems solved
-tags: programming
-description: All software engineers should be able to understand dynamic programming. I give a curated list of very representative problems and explain their solutions.
+title:  Dynamic Programming by Example
+subtitle: A handful of representative problems solved in Java
+tags: algorithms
+description: |
+   All software engineers should be able to understand dynamic programming. This article gives a curated list of very representative problems and explain their solutions in Java.
 keywords: problems, dynamic programming, strategies
 image: ../img/posts/2020/circular_effect_cover.jpg
 share-img: ../img/2020/circular_effect_cover.jpg

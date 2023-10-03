@@ -2,8 +2,9 @@
 layout: post
 title: Bus Factor&#58; A Human-Centered Risk Metric in the Software Supply Chain
 subtitle: Public transportation may become hellish
-tags: management
-description: What would happen to a software project if some of its developers were suddenly hit by a bus? The “bus factor” measures the amount of spread of knowledge within a dev team so that the project can survive the most drastic loss of personnel. Managers should keep an eye on this metric for the best of their projects.  
+tags: metrics
+description: |
+    What would happen to a software project if some of its developers were suddenly hit by a bus? The “bus factor” measures the amount of spread of knowledge within a dev team so that the project can survive the most drastic loss of personnel. Managers should keep an eye on this metric for the best of their projects.  
 keywords:
   - software stakeholders,
   - software resilience,

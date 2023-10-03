@@ -2,7 +2,7 @@
 layout: post
 title: Setting Up a LaTeX Project for Continuous Integration
 subtitle: TODO
-tags: tools
+tags: latex
 description: TODO
 keywords:
   - computer science research,

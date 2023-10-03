@@ -2,7 +2,7 @@
 layout: post
 title: Securing a Permanent Job in Sweden Before Completing My PhD
 subtitle: My personal experiences and tips
-tags: soft-skills
+tags: career
 description: In this article, I share insights about my transitional journey when moving from academia to industry, having secured a position at a big Swedish company prior to completing my PhD in Computer Science. My goal is to provide some insights, inspiration, and hope to my colleagues who find themselves contemplating a similar professional leap.
 keywords:
   - career path,

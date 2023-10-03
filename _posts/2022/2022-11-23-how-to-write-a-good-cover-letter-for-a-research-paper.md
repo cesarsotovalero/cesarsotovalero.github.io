@@ -2,7 +2,7 @@
 layout: post
 title: How to Write a Good Cover Letter for a Research Paper 
 subtitle: Quick an easy
-tags: research
+tags: science
 description: It's a common practice in academic journals to ask authors to write a short cover letter to the editor. In this post, I share my experience writing cover letters for academic journals, along with useful tricks and tips that I've found along the way.
 keywords:
   - PhD career,

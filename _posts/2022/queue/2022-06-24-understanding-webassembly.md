@@ -2,7 +2,7 @@
 layout: post
 title: Understanding WebAssembly
 subtitle: Is it the future of the web? 
-tags: programming
+tags: webassembly
 description: TODO
 keywords:
   - web technologies,

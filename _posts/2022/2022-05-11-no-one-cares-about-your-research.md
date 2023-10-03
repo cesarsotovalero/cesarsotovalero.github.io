@@ -2,7 +2,7 @@
 layout: post
 title: No One Cares About Your Research&#33;
 subtitle: A comfortable truth
-tags: research
+tags: science
 description: Doing a PhD is sometimes a very stressful journey. I believe this stress is unnecessary, as it primarily results from students taking science too seriously. They genuinely believe that others are continuously evaluating the quality of their research. But this is very far from being true. In practice, no one actually cares about a particular research paper that doesn't have her name on it. And I argue that this is a comfortable truth.  
 keywords:
   - The truth about doing a PhD,
