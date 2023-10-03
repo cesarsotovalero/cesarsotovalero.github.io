@@ -2,7 +2,7 @@
 layout: post
 title: Mining GitHub for Research Purposes
 subtitle: Available datasets and tools
-tags: tools
+tags: github
 description: TODO
 keywords:
   - ChatGPT,

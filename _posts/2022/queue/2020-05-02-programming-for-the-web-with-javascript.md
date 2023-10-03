@@ -2,7 +2,7 @@
 layout: post
 title:  Programing for the Web With JavaScript
 subtitle: The Language that Browsers Understand
-tags: programming
+tags: javascript
 keywords: javascript, course
 description: Personal notes of the EdX course Programing for the web with JavaScript.
 published: false

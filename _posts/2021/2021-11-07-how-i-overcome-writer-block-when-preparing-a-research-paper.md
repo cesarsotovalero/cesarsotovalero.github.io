@@ -2,7 +2,7 @@
 layout: post
 title: How I Overcome Writer's Block When Preparing a Research Paper
 subtitle: My bulletproof approach
-tags: research
+tags: science
 description: Writing a research paper can be a tremendous challenge, even for experienced researchers. I've faced the so-called writer's block many times, especially when starting the writing process. Fortunately, with time I've developed personal systems that allow me to deal with this particular issue.
 keywords:
   - research paper,

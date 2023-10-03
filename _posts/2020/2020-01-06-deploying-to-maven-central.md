@@ -2,7 +2,7 @@
 layout: post
 title: Deploying to Maven Central
 subtitle: A three-steps guide
-tags: tutorials
+tags: java
 keywords: package manager, Java, ecosystem, software
 description: This tutorial is a step-by-step guide to deploy a software artifact to the Maven Central repository. 
 image: ../img/posts/2020/maven_journey_cover.png

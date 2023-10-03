@@ -2,7 +2,7 @@
 layout: post
 title: AOT vs. JIT Compilation in Java
 subtitle: Which one is better?
-tags: programming
+tags: java
 description: AOT compilation, supported by the GraalVM compiler, seems to be the future for Java and the programming languages that compile to JVM bytecode. But what is the difference between compiling source code using a JIT compiler w.r.t using an AOT compiler? This post explains the difference between these two approaches.
 keywords:
   - java virtual machine,

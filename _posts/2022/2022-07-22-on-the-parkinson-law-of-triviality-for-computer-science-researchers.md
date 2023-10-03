@@ -2,7 +2,7 @@
 layout: post
 title: On the Parkinson's Law of Triviality for Computer Science Researchers
 subtitle: It must stop!
-tags: management
+tags: science
 description: The Parkinson's Law explains how we spend disproportionate amounts of time discussing trivialities instead of focusing on solving core problems. In the research context, this behavior is considered unproductive because it drains the researchers' energy on matters of little or null impact. This behavior can also be considered a form of procrastination in which the challenging tasks are postponed. In this post, I share my experience after many years of dealing with this issue.
 keywords:
   - bikeshedding,

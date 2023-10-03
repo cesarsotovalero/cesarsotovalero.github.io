@@ -2,7 +2,7 @@
 layout: post
 title: Seven Reasons to Go For a PhD In Computer Science
 subtitle: The good and the ugly
-tags: research
+tags: career
 description: Starting a PhD in Computer Science is a serious decision that literally changes your life. There are many motivations to choose this career path. Let's take a look at 7 of them.
 keywords:
   - career path,

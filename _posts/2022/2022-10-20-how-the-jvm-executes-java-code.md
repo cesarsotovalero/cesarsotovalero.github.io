@@ -2,7 +2,7 @@
 layout: post
 title: The Execution Lifecycle of a Java Application
 subtitle: Or... what happens when you run a Java program?
-tags: programming
+tags: java
 description: This blog post describes in details what happens when executing a Java application. After reading this post, you will understand the execution lifecycle of a Java application and the activities performed by the JVM during the execution phase.
 keywords:
   - class loaders,

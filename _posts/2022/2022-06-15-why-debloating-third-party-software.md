@@ -2,7 +2,7 @@
 layout: post
 title: Why Debloating Third-Party Software?
 subtitle: The case of the Log4j vulnerability
-tags: security
+tags: debloating
 description: The Log4j vulnerability is an example of the dangers of massively reusing third-party libraries. This article discusses how software debloating can make a difference by reducing the attack surface of applications, removing unnecessary code from software libraries.
 keywords:
   - debloating,

@@ -2,7 +2,7 @@
 layout: post
 title: Let's Face It&#58; Paper Figures Are Always Subject to Change
 subtitle: The story of a single figure
-tags: research
+tags: science
 description: As a researcher, I have learned that the process of creating figures is a journey of discovery, a process of refinement, and a crucible of critique. This article provides insights into the transformations that a particular figure undergo throughout the research process (before publication).
 keywords:
   - research paper,

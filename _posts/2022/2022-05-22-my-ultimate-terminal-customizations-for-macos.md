@@ -2,7 +2,7 @@
 layout: post
 title: My Ultimate Terminal Customizations for macOS
 subtitle: A guide 
-tags: tools
+tags: productivity
 description: There is a common belief that top-class software developers can do their job without ever abandoning the terminal. This blog post is a how-to guide for you (and my future self) to configure the terminal in a way so that we will enjoy every command typed on it.
 keywords:
   - customize command line,

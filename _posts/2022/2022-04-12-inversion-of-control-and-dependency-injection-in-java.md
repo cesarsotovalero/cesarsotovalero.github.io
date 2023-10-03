@@ -2,7 +2,7 @@
 layout: post
 title: Inversion of Control and Dependency Injection in Java
 subtitle: The holy grails of modern enterprise Java frameworks
-tags: programming
+tags: java
 description: This blog post explains Inversion of Control and Dependency Injection in Java. These concepts are the backbone of modern enterprise Java frameworks.
 keywords:
   - Spring java framework,

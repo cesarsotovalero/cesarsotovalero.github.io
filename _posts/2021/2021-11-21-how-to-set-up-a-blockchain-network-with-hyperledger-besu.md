@@ -2,7 +2,7 @@
 layout: post
 title: How to Set Up A Blockchain Network With Hyperledger Besu
 subtitle: Look mom, I'm running my own blockchain!
-tags: tutorials
+tags: crypto
 description: If you are a Java developer interested in cryptocurrencies and blockchain-related technologies, you should probably have heard about Hyperledger Besu, the official Java client of the Ethereum blockchain. In this post, we're going to set up a production-ready Ethereum client using Besu.
 keywords: blockchain,ethereum,decentralized applications,tutorial, hyperledger besu
 image: ../img/posts/2021/floor_art_cover.jpg

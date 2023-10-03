@@ -2,7 +2,7 @@
 layout: post
 title: The StarCraft Brood War Replay System Demystified
 subtitle: It's a software execution trace
-tags: misc
+tags: game
 description: TODO
 keywords:
   - StarCraft software,
