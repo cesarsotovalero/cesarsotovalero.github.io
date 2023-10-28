@@ -41,10 +41,9 @@ These certificates can then be used to authenticate a user, or a machine, to a s
 Simply, a user can provide his public key to a **Certificate Authority (CA)** to prove his identity to that authority, e.g., by physically going to an office, which will then create a certificate containing the identity of the user and the public key. 
 This, guarantees that the public key (or certificate) distributed to the web is bound to a specific person or system.
 
-
 [//]: # (see https://mermaid-js.github.io)
 {% mermaid %}
-%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '18px'}}}%%
+%%{init: {'theme':'base'}}%%
 flowchart TB;
 a(["👩 User"]) --> |Generate Key Pair| b["Key Pair"]
 b --> |"🔑 Public Key in CSR"| x["🏠 Certificate Authority"]
@@ -54,14 +53,29 @@ a --> |"💾 Signed Data"| c(["👨 Third Party"])
 a --> |"📝 Certificate"| c
 {% endmermaid %}
 
-
-- Confidentiality – our interactions are   not read by a third party
-- Integrity – our interactions are not   modified by a third party (protection from imposters)
-- Availability – our interactions are not   blocked by a third party
+- Confidentiality – our interactions are not read by a third party
+- Integrity – our interactions are not modified by a third party (protection from imposters)
+- Availability – our interactions are not blocked by a third party
 
 # Encryption
 
 ## Symmetric Encryption
+
+[//]: # (see https://mermaid-js.github.io)
+{% mermaid %}
+%%{init: {'theme':'base'}}%%
+flowchart TB;
+U(["👩 User"]) --> |"📒 Plaintext"| C["Encryption Process"]
+KEY["🔑 Symmetric Key"]
+KEY --> C
+C --> K["🔒 Ciphertext"]
+K --> F["Decryption Process"]
+KEY --> F
+F --> G["📒 Plaintext"]
+{% endmermaid %}
+
+The `KEY` node represents the symmetric key, and arrows are drawn from this node to both the encryption and decryption processes to emphasize that the same key is used in both steps. This illustrates that the encryption and decryption keys are identical in symmetric encryption.
+
 
 - The same key is used by sender and receiver
 - Fast and (probably) secure
@@ -112,12 +126,42 @@ What happens if my private key is compromised?
 - Certificate revokation lists (CRLs) are fetched and cached for some time
 - Online certificate status protocol (OCSP) queries every time a certificate is verified
 
+# Example: HTTPS
+
+Billions of people use https everyday.
+I would say, this is the most fundamental building block of modern securit
+
+How does HTTPS work?
+
+Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP.) HTTPS transmits encrypted data using Transport Layer Security (TLS.) If the data is hijacked online, all the hijacker gets is binary code.
+
+How is the data encrypted and decrypted?
+
+Step 1 - The client (browser) and the server establish a TCP connection.
+
+Step 2 - The client sends a “client hello” to the server. The message contains a set of necessary encryption algorithms (cipher suites) and the latest TLS version it can support. The server responds with a “server hello” so the browser knows whether it can support the algorithms and TLS version.
+
+The server then sends the SSL certificate to the client. The certificate contains the public key, host name, expiry dates, etc. The client validates the certificate.
+
+Step 3 - After validating the SSL certificate, the client generates a session key and encrypts it using the public key. The server receives the encrypted session key and decrypts it with the private key.
+
+Step 4 - Now that both the client and the server hold the same session key (symmetric encryption), the encrypted data is transmitted in a secure bi-directional channel.
+
+Why does HTTPS switch to symmetric encryption during data transmission? There are two main reasons:
+
+1. Security: The asymmetric encryption goes only one way. This means that if the server tries to send the encrypted data back to the client, anyone can decrypt the data using the public key.
+
+2. Server resources: The asymmetric encryption adds quite a lot of mathematical overhead. It is not suitable for data transmissions in long sessions.
+
+Over to you: how much performance overhead does HTTPS add, compared to HTTP?
+
 # Footnotes
 
 
 # Resources
 
 - https://osssc-edu.github.io/supply-chain.github.io/SEC-pki/
-- 
+- https://youtu.be/Jefr7wFLu3M?si=u6fRNlgPpfoHKdR0
+- https://youtu.be/s22eJ1eVLTU?si=q3dR8GevAAGDS4BP
 - [SSH connections](../blog/2021/configuring-remote-connections-in-unix-based-systems-using-ssh.html)
 
