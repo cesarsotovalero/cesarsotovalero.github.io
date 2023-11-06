@@ -24,6 +24,14 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
 
 # 2023
 
+- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
+  **Automatic Specialization of Third-Party Java Dependencies**. 
+  César Soto-Valero, Deepika Tiwari, Tim Toady, and Benoit Baudry. 
+  _IEEE Transactions on Software Engineering_.
+  <a href="https://doi.org/10.1109/TSE.2023.3324950"><i class="icon i-doi"></i> 10.1109/TSE.2023.3324950</a>
+  [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/deptrim)
+  [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/deptrim-experiments)
+
 - <img alt="" title="Books and Theses" src="https://dblp.uni-trier.de/img/n.png" style="background: #f8c91f; width: 18px; height: 18px"> 
   **Debloating Java Dependencies**. 
   César Soto-Valero. 
@@ -40,14 +48,6 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   <a href="https://doi.org/10.1109/MSEC.2023.3302956"><i class="icon i-doi"></i> 10.1109/MSEC.2023.3302956</a>
   <a href="https://arxiv.org/abs/2303.11102">:earth_americas: Preprint</a>
   [<i class="fab fa-github"></i> Experiments](https://github.com/chains-project/SBOM-2023)
-
-- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
-  **Automatic Specialization of Third-Party Java Dependencies**. 
-  César Soto-Valero, Deepika Tiwari, Tim Toady, and Benoit Baudry. 
-  _arXiv_.
-  <a href="https://arxiv.org/abs/2302.08370">:earth_americas: Preprint</a>
-  [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/deptrim)
-  [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/deptrim-experiments)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Highly Available Blockchain Nodes With N-Version Design**. 
