@@ -32,6 +32,8 @@ Then I fill in the details.
 
 TODO
 
+# IMAGE
+
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-MM-DD/IMG.jpg alt:"TODO" %}
   <figcaption class="stroke"> 
@@ -39,22 +41,50 @@ TODO
   </figcaption>
 </figure>
 
-# HEADLINE 1
+# QUOTE
 
-# HEADLINE 2
+> “TODO”
+> ― <cite><a href="URL">FULANO DE TAL</a></cite>
 
-# HEADLINE 3
+# SIDE QUOTE
 
-# HEADLINE 4
+<aside class="quote">
+    <em>“TODO.”</em> 
+    ― <cite><a href="URL">FULANO DE TAL</a></cite>
+</aside>
 
-# HEADLINE 5
+# SIDE IMAGE
+
+{% badge /img/badges/fundamentals-of-software-architecture-book.png 140 https://amzn.to/2VMCwVF %}
+
+# DIAGRAM
+
+[//]: # (see https://mermaid-js.github.io)
+{% mermaid %}
+%%{init: {'theme':'base'}}%%
+flowchart TB;
+U(["👩 User"]) --> |"📒 Plaintext"| C["Encryption Process"]
+KEY["🔑 Symmetric Key"]
+KEY --> C
+C --> K["🔒 Ciphertext"]
+K --> F["Decryption Process"]
+KEY --> F
+F --> G["📒 Plaintext"]
+{% endmermaid %}
+
+# CODE
+
+{% highlight java linenos %}
+TODO
+{% endhighlight %}
+
+# VIDEO
+
+<div class="container-youtube">
+  <iframe width="560" height="349" src="https://www.youtube.com/embed/IrFS2e-4gqU" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 # Resources
-
-- https://osssc-edu.github.io/supply-chain.github.io/SEC-pki/
-- https://youtu.be/Jefr7wFLu3M?si=u6fRNlgPpfoHKdR0
-- https://youtu.be/s22eJ1eVLTU?si=q3dR8GevAAGDS4BP
-- [SSH connections](../blog/2021/configuring-remote-connections-in-unix-based-systems-using-ssh.html)
 
 # Footnotes
 
