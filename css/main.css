@@ -41,6 +41,10 @@ li ul {
   margin-top: 10px;
 }
 
+li::marker {
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 450px) {
   p {
     margin-bottom: 18px;
@@ -2388,6 +2392,7 @@ ol, ul {
 
 /* youtube videos*/
 .container-youtube {
+  border: 2px solid black;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;

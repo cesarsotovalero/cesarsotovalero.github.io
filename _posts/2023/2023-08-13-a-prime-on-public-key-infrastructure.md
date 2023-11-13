@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Prime on Public Key Infrastructure
-subtitle: TODO
+subtitle: Business security and trust in the digital age
 tags: security
 description: |
   TODO
@@ -20,42 +20,28 @@ author: cesarsotovalero
 published: false
 ---
 
-TODO
+Public Key Infrastructure (PKI) plays a crucial role in ensuring secure electronic information transfer for various network activities such as e-commerce, internet banking, and confidential email. It is particularly essential when simple passwords are insufficient for authentication, requiring stronger proof of identity for secure communication. In essence, PKI binds public keys with the identities of entities, like individuals and organizations, through a process of registration and issuance of digital certificates provided by Certificate Authority (CA). The CA is responsible for digitally signing and publishing the public keys, ensuring the trustworthiness of the binding. In this article, I It discuss the critical role of PKI in ensuring the authenticity and security of digital transactions and communication on the internet.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-08-13/dark_well.jpg alt:"TODO" %}
   <figcaption class="stroke"> 
-    TODO
+    
   </figcaption>
 </figure>
 
-# Why?
+# The Problem With Trust
 
-Simply using a pair of keys to encrypt/decrypt and sign/verify some piece of data does not guarantee that the information came from a specific user. 
-Ultimately, a pair of keys is not tied to a person or a system. 
-To solve this problem, an infrastructure is required in order to bind these two aspects together.
+From the ancient times, people have tried to find ways to communicate securely.
+The problem is that we need to trust the entity that delivers the message, and that the content of message itself is not modified. 
 
-**Public Key Infrastructure (PKI)** is a set of entities, with distinct roles, responsible for managing _digital certificates_. 
-This includes their _generation_, _storage_, _distribution_, and _revocation_.
-These certificates can then be used to authenticate a user, or a machine, to a service. 
-Simply, a user can provide his public key to a **Certificate Authority (CA)** to prove his identity to that authority, e.g., by physically going to an office, which will then create a certificate containing the identity of the user and the public key. 
-This, guarantees that the public key (or certificate) distributed to the web is bound to a specific person or system.
+In essence, there are two fundamental problems to solve to achieve security in communication:
+ 
+- **Confidentiality:** Only the intended recipient should be able to read the message.
+- **Integrity:** The message should not be modified by a third party.
 
-[//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
-%%{init: {'theme':'base'}}%%
-flowchart TB;
-a(["👩 User"]) --> |Generate Key Pair| b["Key Pair"]
-b --> |"🔑 Public Key in CSR"| x["🏠 Certificate Authority"]
-b --> |"🔒 Private Key"| a
-x --> |"📝 Certificate"| a
-a --> |"💾 Signed Data"| c(["👨 Third Party"])
-a --> |"📝 Certificate"| c
-{% endmermaid %}
 
-- Confidentiality – our interactions are not read by a third party
-- Integrity – our interactions are not modified by a third party (protection from imposters)
-- Availability – our interactions are not blocked by a third party
+
+
 
 # Encryption
 
@@ -75,7 +61,6 @@ F --> G["📒 Plaintext"]
 {% endmermaid %}
 
 The `KEY` node represents the symmetric key, and arrows are drawn from this node to both the encryption and decryption processes to emphasize that the same key is used in both steps. This illustrates that the encryption and decryption keys are identical in symmetric encryption.
-
 
 - The same key is used by sender and receiver
 - Fast and (probably) secure
@@ -105,6 +90,35 @@ Reversing asymmetric encryption.
 
 # Certificates
 
+Simply using a pair of keys to encrypt/decrypt and sign/verify some piece of data does not guarantee that the information came from a specific user.
+
+Ultimately, a pair of keys is not tied to a person or a system.
+To solve this problem, an infrastructure is required in order to bind these two aspects together.
+
+**Public Key Infrastructure (PKI)** is a set of entities, with distinct roles, responsible for managing _digital certificates_.
+This includes their _generation_, _storage_, _distribution_, and _revocation_.
+These certificates can then be used to authenticate a user, or a machine, to a service.
+Simply, a user can provide his public key to a **Certificate Authority (CA)** to prove his identity to that authority, e.g., by physically going to an office, which will then create a certificate containing the identity of the user and the public key.
+This, guarantees that the public key (or certificate) distributed to the web is bound to a specific person or system.
+
+[//]: # (see https://mermaid-js.github.io)
+{% mermaid %}
+%%{init: {'theme':'base'}}%%
+flowchart TB;
+a(["👩 User"]) --> |Generate Key Pair| b["Key Pair"]
+b --> |"🔑 Public Key in CSR"| x["🏠 Certificate Authority"]
+b --> |"🔒 Private Key"| a
+x --> |"📝 Certificate"| a
+a --> |"💾 Signed Data"| c(["👨 Third Party"])
+a --> |"📝 Certificate"| c
+{% endmermaid %}
+
+- Confidentiality – our interactions are not read by a third party
+- Integrity – our interactions are not modified by a third party (protection from imposters)
+- Availability – our interactions are not blocked by a third party
+
+https://en.wikipedia.org/wiki/Public_key_certificate
+
 How do we distribute public keys?
 
 - A certificate is a signed public key (with some additional information).
@@ -126,34 +140,52 @@ What happens if my private key is compromised?
 - Certificate revokation lists (CRLs) are fetched and cached for some time
 - Online certificate status protocol (OCSP) queries every time a certificate is verified
 
+# Web of Trust
+
+In the "web of trust" scheme, where individuals vouch for each other's keys.
+
+# Descentralized PKI
+
+Additionally, decentralized PKI (DPKI) eliminates reliance on centralized authorities by allowing each entity to serve as its own root authority.
+
 # Example: HTTPS
 
-Billions of people use https everyday.
-I would say, this is the most fundamental building block of modern securit
+Billions of people use the [Hypertext Transfer Protocol Secure (HTTPS)](https://en.wikipedia.org/wiki/HTTPS) every day.
+HTTPS is a protocol that allows secure communication between a client and a server.
+I would say, this is the most fundamental building block of the internet.
 
-How does HTTPS work?
+HTTPS uses encryption to protect the privacy and integrity of the data being transmitted.
+It protects against man-in-the-middle attacks, and the bidirectional block cipher encryption of communications between a client and server protects the communications against eavesdropping and tampering.
+If the data is hijacked online, all the hijacker gets is binary code.
 
-Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP.) HTTPS transmits encrypted data using Transport Layer Security (TLS.) If the data is hijacked online, all the hijacker gets is binary code.
+{% badge ../img/posts/2023/2023-08-13/https_internet_url.jpg 140 https://en.wikipedia.org/wiki/HTTPS %}
 
-How is the data encrypted and decrypted?
+## How does HTTPS work?
 
-Step 1 - The client (browser) and the server establish a TCP connection.
+HTTPS transmits encrypted data using [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security).
+The authentication aspect of HTTPS requires a trusted third-party to sign server-side digital certificates.
 
-Step 2 - The client sends a “client hello” to the server. The message contains a set of necessary encryption algorithms (cipher suites) and the latest TLS version it can support. The server responds with a “server hello” so the browser knows whether it can support the algorithms and TLS version.
+Here is how the transmitted data is encrypted and decrypted:
 
-The server then sends the SSL certificate to the client. The certificate contains the public key, host name, expiry dates, etc. The client validates the certificate.
+1. First, the client (browser) and the server establish a TCP connection.
 
-Step 3 - After validating the SSL certificate, the client generates a session key and encrypts it using the public key. The server receives the encrypted session key and decrypts it with the private key.
+2. The client sends a “_first client message_” to the server containing a set of  encryption algorithms (or cipher suites) which indicates the latest TLS version it can support.
+ 
+3. The server responds with a “_first server message_” so the browser knows whether it can support the algorithms and TLS version.
 
-Step 4 - Now that both the client and the server hold the same session key (symmetric encryption), the encrypted data is transmitted in a secure bi-directional channel.
+4. The server then sends the SSL certificate to the client containing the public key, host name, expiry dates, etc. 
 
-Why does HTTPS switch to symmetric encryption during data transmission? There are two main reasons:
+5. After validating the SSL certificate, the client generates a session key and encrypts it using the public key.
 
-1. Security: The asymmetric encryption goes only one way. This means that if the server tries to send the encrypted data back to the client, anyone can decrypt the data using the public key.
+6. The server receives the encrypted session key and decrypts it with the private key.
 
-2. Server resources: The asymmetric encryption adds quite a lot of mathematical overhead. It is not suitable for data transmissions in long sessions.
+7. Now that both the client and the server hold the same session key (symmetric encryption), the encrypted data is transmitted in a secure bi-directional channel.
 
-Over to you: how much performance overhead does HTTPS add, compared to HTTP?
+There are two main reasons of why HTTPS switches to symmetric encryption during data transmission:
+
+1. **Security:** The asymmetric encryption goes only one way. This means that if the server tries to send the encrypted data back to the client, anyone can decrypt the data using the public key.
+
+2. **Server resources:** The asymmetric encryption adds quite a lot of mathematical overhead. It is not suitable for data transmissions in long sessions.
 
 # Footnotes
 
