@@ -11,10 +11,9 @@ published: true
 I present my work in academic conferences, workshops, and software companies.[^1]
 The following is a non-exhaustive list of my technical presentations (in reverse chronological order).
   
-  [^1]: I am happy to present my work at your company or event. Please [contact me](https://www.cesarsotovalero.net/about-me#contact) if you are interested.
 # 2023
 
-- Software Suply Chain Attacks and Dependency Management Best Practices. Presented at _SEB Tech Day_ in Arenastaden Stockholm, September 2023.
+- [Preventing Software Supply Chain Attacks With Dependency Management Best Practices](https://youtu.be/7IoXciSucw4?si=CiANlBQtgmibmWci). Presented at _SEB Tech Day_ in Arenastaden Stockholm, September 2023.
 
 - [Software Supply Chain Security](https://docs.google.com/presentation/d/1ki5KITPSciccI1Qdh3wb7GOjdw8jq-CFbY-mvXLUv2c/edit?usp=sharing). Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [Digital Futures](https://www.digitalfutures.kth.se/) in KTH, Sponsored by the [Swedish National Hacking Team](https://snht.se/) and [Cparta Cyber Defense](https://www.cparta.se/), June 2023.
 
