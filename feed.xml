@@ -18,17 +18,6 @@
       </item>
     
       <item>
-        <title>A Prime on Public Key Infrastructure</title>
-        <description>
-          Business security and trust in the digital age - 
-          The internet is driven by the power of cryptography. Each time you visit a website, a cryptographic handshake occurs between your browser and a web server located somewhere on Earth. This is where Public Key Infrastructure (PKI) comes into play, a technology crucial for ensuring secure electronic information transfer between...
-        </description>
-        <pubDate>Sun, 13 Aug 2023 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html</guid>
-      </item>
-    
-      <item>
         <title>My PhD as a Comic</title>
         <description>
           The time when I became a superhero - 
@@ -224,6 +213,17 @@
         <pubDate>Sun, 06 Feb 2022 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/bus-factor-a-human-centered-risk-metric-in-the-software-supply-chain.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/bus-factor-a-human-centered-risk-metric-in-the-software-supply-chain.html</guid>
+      </item>
+    
+      <item>
+        <title>How to Write a Good Paper Rebuttal</title>
+        <description>
+          A practical guide - 
+          The rejection of a research paper is always a tough spot in the life of researchers. Today, many top conferences allow the authors of a rejected paper to submit a so-called “paper rebuttal.” This is a last chance for the authors to defend their work in case the reviewers made...
+        </description>
+        <pubDate>Sat, 29 Jan 2022 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/how-to-write-a-good-paper-rebuttal.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-write-a-good-paper-rebuttal.html</guid>
       </item>
     
   </channel>
