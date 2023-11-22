@@ -17,9 +17,9 @@ The following is a non-exhaustive list of my technical presentations (in reverse
 
 - [Software Supply Chain Security](https://docs.google.com/presentation/d/1ki5KITPSciccI1Qdh3wb7GOjdw8jq-CFbY-mvXLUv2c/edit?usp=sharing). Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [Digital Futures](https://www.digitalfutures.kth.se/) in KTH, Sponsored by the [Swedish National Hacking Team](https://snht.se/) and [Cparta Cyber Defense](https://www.cparta.se/), June 2023.
 
-- [Debloating Java Dependencies](../files/thesis/slides/cesar-phd-defense.pptx). PhD defense presented at KTH, June 2023.
+- [Debloating Java Dependencies](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw). PhD defense presented at KTH, June 2023.
 
-- The Software Supply Chain of Crypto and Decentralization. Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [_2nd Descentralized Camp Meetup_](https://www.meetup.com/decentralized-camp/events/290035869/), Developers Bay, January 2023.
+- [The Software Supply Chain of Crypto and Decentralization](https://docs.google.com/presentation/d/14A3n_ZT13ealkTVUNnchS7pE03vOL6cDIQpiIZghuHY/edit?usp=sharing). Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [_2nd Descentralized Camp Meetup_](https://www.meetup.com/decentralized-camp/events/290035869/), Developers Bay, January 2023.
 
 # 2022
 
