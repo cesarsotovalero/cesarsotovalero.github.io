@@ -17,7 +17,7 @@ show-avatar: false
 toc: true
 date: 2023/08/13
 author: cesarsotovalero
-published: true
+published: false
 ---
 
 The internet is driven by the power of cryptography. Each time you visit a website, a cryptographic handshake occurs between your browser and a web server located somewhere on Earth. This is where Public Key Infrastructure (PKI) comes into play, a technology crucial for ensuring secure electronic information transfer between the two entities. PKI is integral to various network activities, including e-commerce, internet banking, and confidential email communications.
