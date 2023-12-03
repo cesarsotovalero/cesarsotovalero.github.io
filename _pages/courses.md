@@ -41,7 +41,11 @@ published: true
 
 # MOOCs
 
-- [Decentralized Finance (DeFi): The Future of Finance](https://coursera.org/share/134443f801ca6af78bb17ded1d0d7d2c), Coursera, 2023
+- [Cloud-Native Development with OpenShift and Kubernetes Specialization](https://coursera.org/share/0e4ea09c897c350cd1dc618f88047952), Coursera, 2023
+
+- [Scrum Master Certification Specialization](https://coursera.org/share/8efb8942e5bdb1a26a96254c3b00c1f1), Coursera, 2023
+
+- [Decentralized Finance (DeFi): The Future of Finance Specialization](https://coursera.org/share/134443f801ca6af78bb17ded1d0d7d2c), Coursera, 2023
 
 - [JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/certification/cesarsotovalero/javascript-algorithms-and-data-structures), freeCodeCamp, 2021
 
