@@ -204,6 +204,15 @@ In 1976, Whitfield Diffie and Martin Hellman proposed a revolutionary method to 
 Their system pushed forward cryptography by allowing users to communicate securely without having to agree on a shared secret key.
 The system is is known as public-key cryptography or asymmetric encryption, and it is the foundation of how the internet works today.
 
+These algorithms are based on the computational complexity of "hard" problems from number theory.
+Because of the difficulty of the underlying problems, most public-key algorithms involve operations such as modular multiplication and exponentiation, which are much more computationally expensive than the techniques used in most block ciphers, especially with typical key sizes.
+The following table shows example of algorithms based on three mathematical problems that are hard to reverse.
+
+| Problem                                                                                                                                                                                                                                                         | Algorithm                                                                                                                                                                                                                        |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Integer Factorization](https://en.wikipedia.org/wiki/Integer_factorization) <br><br> [Discrete Logarithm Problem](https://en.wikipedia.org/wiki/Discrete_logarithm) <br><br> [Elliptic Curve ](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) <br> | [RSA](https://sv.wikipedia.org/wiki/RSA) <br><br> [DSA](https://en.wikipedia.org/wiki/Digital_Signature_Algorithm) <br><br> [ECIES](https://en.wikipedia.org/wiki/Integrated_Encryption_Scheme#Formal_description_of_ECIES) <br> |
+
+
 [//]: # (------ How it works mathematically -------------------------------------------------------------------)
 
 Asymmetric encryption can be formalized mathematically using encryption and decryption functions similar to symmetric encryption, but with the distinction that it uses two different keys: **public** and **private** keys. 
@@ -247,11 +256,11 @@ In the diagram above, Alice encrypts a message using Bob's public key.
 The encrypted message can be then sent to Bob.
 Bob decrypts the message using his private key.
 Note that the public key is available to everyone (including Alice), while the private key is only known to Bob.
-So only Bob can decrypt the message.
+So only Bob (with the private key) can decrypt the message.
 
 [//]: # (------ How it works in code -------------------------------------------------------------------)
 Now, let's see how asymmetric encryption can be implemented in practice using Java code.
-The following example uses the ECIES ([Elliptic Curve Integrated Encryption Scheme](https://en.wikipedia.org/wiki/Integrated_Encryption_Scheme#Formal_description_of_ECIES)) algorithm for encryption and decryption. 
+The following example uses the ECIES algorithm for encryption and decryption.
 ECIES offers similar levels of security to RSA but with smaller key sizes, which often translates to faster computations and lower power consumption. 
 The Java implementation combines the ECC algorithm with a symmetric cipher for effective encryption.
 
@@ -301,19 +310,26 @@ public class ECCAsymmetricEncryptionExample {
 
 [//]: # (------ How it works in practice -------------------------------------------------------------------)
 
-Public-key cryptography is also used for implementing digital signature schemes. A digital signature is reminiscent of an ordinary signature; they both have the characteristic of being easy for a user to produce, but difficult for anyone else to forge. Digital signatures can also be permanently tied to the content of the message being signed; they cannot then be 'moved' from one document to another, for any attempt will be detectable. In digital signature schemes, there are two algorithms: one for signing, in which a secret key is used to process the message (or a hash of the message, or both), and one for verification, in which the matching public key is used with the message to check the validity of the signature. RSA and DSA are two of the most popular digital signature schemes. Digital signatures are central to the operation of public key infrastructures and many network security schemes (e.g., SSL/TLS, many VPNs, etc.)
+Public-key cryptography is also used for implementing digital signature schemes. 
+A digital signature is reminiscent of an ordinary signature.
+They both have the characteristic of being easy for a user to produce, but difficult for anyone else to forge.
+Digital signatures can also be permanently tied to the content of the message being signed.
+They cannot then be moved from one document to another, for any attempt will be detectable.
+In digital signature schemes, there are two algorithms: one for signing, in which a secret key is used to process the message (or a hash of the message, or both), and one for verification, in which the matching public key is used with the message to check the validity of the signature. 
+RSA and DSA are two of the most popular digital signature schemes. 
+Digital signatures are central to the operation of public key infrastructures and many network security schemes (e.g., SSL/TLS, many VPNs, etc.)
 
-Public-key algorithms are most often based on the computational complexity of "hard" problems, often from number theory. For example, the hardness of RSA is related to the integer factorization problem, while Diffie–Hellman and DSA are related to the discrete logarithm problem. The security of elliptic curve cryptography is based on number theoretic problems involving elliptic curves. Because of the difficulty of the underlying problems, most public-key algorithms involve operations such as modular multiplication and exponentiation, which are much more computationally expensive than the techniques used in most block ciphers, especially with typical key sizes. As a result, public-key cryptosystems are commonly hybrid cryptosystems, in which a fast high-quality symmetric-key encryption algorithm is used for the message itself, while the relevant symmetric key is sent with the message, but encrypted using a public-key algorithm. Similarly, hybrid signature schemes are often used, in which a cryptographic hash function is computed, and only the resulting hash is digitally signed.
-
-- Based on mathematical problems that are hard to reverse:
-  - Factorization - RSA (Rivest–Shamir–Adleman)
-  - Discrete logarithm - DSA (Diffie-Hellman)
-  - Elliptic curve - ECDSA (Elliptic Curve Digital Signature Algorithm)
-
-- The sender uses the receiver’s public key, and the receiver (with the private key) is the only one that can read the message.
-- Slower and (maybe) less secure than symmetric encryption.
+<aside class="quote">
+    <em>“Asymmetric encryption is slower and (arguably) less secure than symmetric encryption, but it solves the key distribution problem.”</em> 
+</aside>
  
-In a real-world scenario, encrypting a large file (like 1 GB) directly with RSA is impractical due to its slow speed. Instead, RSA is often used to encrypt a small piece of data, such as the key for symmetric encryption. To give a sense of time, encrypting a small piece of data (a few hundred bytes) with RSA might take a noticeable fraction of a second, which is considerably longer than it would take for symmetric encryption to handle much larger files. This difference in speed is a key reason why asymmetric encryption is typically reserved for specific tasks like secure key exchange, rather than bulk data encryption.
+In a real-world scenario, encrypting a large file (like 1 GB) directly with asymmetric encryption like RSA is impractical due to its slow speed.
+Instead, this type of algorithms are used to encrypt a small piece of data, such as the "KEY" used for symmetric encryption.
+This difference in speed is a key reason why asymmetric encryption is typically reserved for specific tasks like secure key exchange, rather than bulk data encryption.
+
+As a result, public-key cryptosystems are commonly hybrid cryptosystems, in which a fast high-quality symmetric-key encryption algorithm is used for the message itself, while the relevant symmetric key is sent with the message, but encrypted using a public-key algorithm.
+Similarly, hybrid signature schemes are often used, in which a cryptographic hash function is computed, and only the resulting hash is digitally signed.
+
 
 # Public Key Infrastructure
 
