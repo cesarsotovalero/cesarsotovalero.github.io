@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Prompting is the New Big Thing
-subtitle: TODO
+title: The Age of Prompters has Begun
+subtitle: Is this the end of software engineering as we know it?
 tags: sarcasm
 description: TODO
 keywords:
@@ -18,8 +18,6 @@ author: cesarsotovalero
 published: false
 ---
 
-Once upon a time 
-
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/subway_in_red.jpg alt:"TODO" %}
   <figcaption class="stroke"> 
@@ -27,28 +25,76 @@ Once upon a time
   </figcaption>
 </figure>
 
-# Learning 
+Once upon a time, software was a strange thing.
+Even more interesting were the people who created it.
+Engineers. 
+Or weren't programmers?
+I don't remember.
+Anyway, they were a strange breed. 
+Most of them were mathematicians, physicists, or pure engineers who turned to program computers to solve their practical problems.
+They had advanced reasoning skills, understood complex systems, and were able to implement QuickSort in 10 minutes or less.
 
-## Learning something new
+But that was a long time ago.
+Nowadays, software is everywhere.
+In every industry, in every company, in every home.
+So the crew of programmers has grown.
+And as with any other resource, the more there are, the less value (and quality).
+
+In the last two decades, a new class of programmers has taken over the industry.
+Software developers!
+They don't need to know Calculus anymore to get a decent job offer.
+Indeed, they don't even need to know how a computer actually works.
+They just need to know how to use a particular framework, a library, or even a single digital tool.
+And bang! 
+Ready to go.
+
+But the panorama is changing in the last years.
+What if I tell you that you don't even need to know how code anymore?
+Yes, you don't.
+Because now you can use AI to do it for you.
+
+## Show Me the Prompt!
+
+Typing code has become very cheap thanks to AI and LLMs.
+Given a prompt, these language models generate a lot of text that is makes sense.
+And it looks like code is the easiest form of text representation for them.
+It other words, AI can write reasonably good code faster than humans.
+
+Still, there is a problem.
+The seed to fuel the machine.
+The prompts!
+We still need humans to write them.
+So a new class of programmers has emerged.
+The ones who understand how to write prompts to solve coding problems.
+They are called prompters.
+
+
+
+
+
+discuss the impact of AI in the workforce
+There is a growing wave of public skepticism about computer science
+
+
+
+
+> Computer science is not about writing code. It's a way of looking at and solving problems.
+
+
+
+
+
+# Learning Something New
 
 Prompts:
 
 1. I want to learn `X`. Can you **use the Pareto Principle**, which identifies the 20% of the topic that will yield 80% of the desired results, to create a focused learning plan for me?
-2. Create a **study schedule** for all of the above in an appropriate amount of weeks. I can study for `X` hours every Tuesday and Thursday. Please include time for revision and testing.
-3. Suggest me various learning resources (like books, videos, podcasts, interactive exercises) for the above topics that cater to different learning styles.
-4. I am a beginner interested in learning how to create games in Unity. To do this, I need to know how to code in C#. Can you give me some beginner video game projects I could work on to help strengthen my C# coding skills?
-5. Explain [topic] to me in the simplest terms possible as if I were a complete beginner. (or as if I was a 5-year-old)
+2. Create a **study schedule** for all of the above in an appropriate number of weeks. I can study for `X` hours every Tuesday and Thursday. Please include time for revision and testing.
+3. Suggest various learning resources (like books, videos, podcasts, interactive exercises) for the above topics that cater to different learning styles to me.
+4. I'm a beginner interested in learning how to create games in Unity. To do this, I need to know how to code in C#. Can you give me some beginner video game projects I could work on to help strengthen my C# coding skills?
+5. Explain [topic] to me in the simplest terms possible as if I were a complete beginner (or as if I was a 5-year-old).
 6. Guide me through a visualization exercise to help me internalize the term opportunity cost and imagine myself successfully applying it to a real-life situation.
 7. I want you to act as a Socrates and use the Socratic method to help me improve my critical thinking, logic, and reasoning skills. Your task is to ask open-ended questions to the statement I make, and after I provide a response, give me constructive feedback to each response before you ask the next question.
-
-# Learning something known
-
-Prompts:
-
-1. 
-
-> TODO
-
 
 
 # Resources
