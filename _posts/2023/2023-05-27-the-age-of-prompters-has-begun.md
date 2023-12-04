@@ -13,7 +13,7 @@ image: ../img/posts/2023/TODO.jpg
 share-img: ../img/posts/2023/TODO.jpg
 show-avatar: false
 toc: true
-date: 2023/04/27
+date: 2023/05/27
 author: cesarsotovalero
 published: false
 ---
@@ -68,23 +68,34 @@ So a new class of programmers has emerged.
 The ones who understand how to write prompts to solve coding problems.
 They are called prompters.
 
+The prompter daily task is to ask questions.
+They are like Socrates, or a 5-year-old child (depending on how much you estimate the job).
+So it's all about formulating questions:
+"I got the following log message, how to fix the problem?," 
+"I have a list of items, write an algorithm to sort them?,"
+"My boss is annoying me, what should I do?."
+And then is all about copying and pasting the AI's response in the right place (often called production).
 
+Does prompting looks familiar to you?
+Yes, it's the exact same thing we used to do every day when searching Google and looking at QAs on StackOverflow.
+But now we can get the answer faster.
+Even better, now it looks like we can get the answer without even knowing how to ask the question!
+AIs are getting better than us at understanding our own problems.
 
+This is the end of software engineering as we know it.
+The impact in the workforce is going to be huge.
+The wave of public skepticism about the future of Computer Science is growing.
+And the number of people who are ~~kicked out from~~ leaving the industry is increasing.
 
+But don't worry.
+There is still hope.
+We still have a few years to adapt and mutate.
+And maybe we can all keep our jobs after all.
+I'm talking about becoming successfull prompters, of course.
 
-discuss the impact of AI in the workforce
-There is a growing wave of public skepticism about computer science
-
-
-
+# The Successful Prompter
 
 > Computer science is not about writing code. It's a way of looking at and solving problems.
-
-
-
-
-
-# Learning Something New
 
 Prompts:
 
