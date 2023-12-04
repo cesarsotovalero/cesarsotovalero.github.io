@@ -2,7 +2,7 @@
 layout: post
 title: Prompting is the New Big Thing
 subtitle: TODO
-tags: AI
+tags: sarcasm
 description: TODO
 keywords:
   - ChatGPT,
@@ -18,7 +18,7 @@ author: cesarsotovalero
 published: false
 ---
 
-TODO
+Once upon a time 
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/subway_in_red.jpg alt:"TODO" %}
