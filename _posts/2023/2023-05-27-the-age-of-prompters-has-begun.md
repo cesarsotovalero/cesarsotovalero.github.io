@@ -25,40 +25,46 @@ published: false
   </figcaption>
 </figure>
 
-Once upon a time, software was a strange thing.
-Even more interesting were the people who created it.
-Engineers. 
-Or weren't programmers?
-I don't remember.
+Once upon a long time, software was a strange thing.
+Even stranger was the people who created it.
+Programmers.
+Or weren't them scientists?
+I'm too young to know exactly.
 Anyway, they were a strange breed. 
-Most of them were mathematicians, physicists, or pure engineers who turned to program computers to solve their practical problems.
-They had advanced reasoning skills, understood complex systems, and were able to implement QuickSort in 10 minutes or less.
+Mathematicians, physicists, or pure engineers who learned programming languages to solve their practical problems.
+These people had advanced reasoning skills.
+They understood complex systems, and were able to implement QuickSort in 10 minutes or less.
 
 But that was a long time ago.
 Nowadays, software is everywhere.
-In every industry, in every company, in every home.
+It's like salt for the food. 
+In every industry, in every company, in every home, software is a necessary ingredient.
 So the crew of programmers has grown.
-And as with any other resource, the more there are, the less value (and quality).
+But the world had not enough mathematicians, or engineers, to satisfy the demand for programmers.
+And as with any other resource, the higher the supply, the less the quality.
 
 In the last two decades, a new class of programmers has taken over the industry.
 Software developers!
-They don't need to know Calculus anymore to get a decent job offer.
+They don't need to understand Calculus anymore to get a decent job offer.
 Indeed, they don't even need to know how a computer actually works.
-They just need to know how to use a particular framework, a library, or even a single digital tool.
+It's enough to master a particular framework, a library, or even a single digital tool.
 And bang! 
-Ready to go.
+The wheel of production goes on.
+The software industry is ready to go.
 
 But the panorama is changing in the last years.
 What if I tell you that you don't even need to know how code anymore?
 Yes, you don't.
-Because now you can use AI to do it for you.
+Because now you can use computers to write code for you.
+The new era of AI has come to us developers.
 
 ## Show Me the Prompt!
 
-Typing code has become very cheap thanks to AI and LLMs.
+Looks like coding has become very cheap thanks to AI and LLMs.
+With time, every line of code will decrease its price.
 Given a prompt, these language models generate a lot of text that is makes sense.
 And it looks like code is the easiest form of text representation for them.
-It other words, AI can write reasonably good code faster than humans.
+In other words, AI can write reasonably good code faster than humans.
 
 Still, there is a problem.
 The seed to fuel the machine.
@@ -95,6 +101,10 @@ I'm talking about becoming successfull prompters, of course.
 
 # The Successful Prompter
 
+The successful understands how AI actually works.
+They can tweak the prompt to get the best results.
+
+
 > Computer science is not about writing code. It's a way of looking at and solving problems.
 
 Prompts:
@@ -114,7 +124,6 @@ Prompts:
 - <i class="fab fa-github"></i> [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide): Knowledge
 - [:earth_americas: learnprompting.org](https://learnprompting.org/docs/intro)
 - https://github.com/sindresorhus/awesome-chatgpt
-- 
 
 # Further Reading
 
