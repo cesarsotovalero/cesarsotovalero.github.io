@@ -21,7 +21,7 @@
         <title>A Prime on Public Key Infrastructure</title>
         <description>
           How do we trust each other in the digital era? - 
-          The whole internet is secured by the power of symmetric and asymmetric cryptography. Each time you visit a website, a cryptographic handshake occurs between your browser and a web server located somewhere on Earth. The authenticity of this connection is verified by a framework known as Public Key Infrastructure (PKI)....
+          The whole internet is secured by the power of symmetric and asymmetric cryptography. Each time you visit a website, a cryptographic handshake occurs between your browser and a web server located somewhere on Earth. The authenticity of this connection is verified by a technology known as Public Key Infrastructure (PKI)....
         </description>
         <pubDate>Sun, 13 Aug 2023 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html</link>
