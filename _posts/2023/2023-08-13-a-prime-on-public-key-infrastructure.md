@@ -257,10 +257,9 @@ The process then involves the following steps:
 2. **Decryption**: To decrypt the ciphertext $$ C $$ using the private key $$ k_{priv} $$, the decryption function $$ D $$ is applied. This is represented as: $$ M = D_{k_{priv}}(C) $$
 
 Asymmetric encryption algorithms are based on the computational complexity of "hard" problems from number theory.
-Because of the difficulty of the underlying problems, most public-key algorithms involve operations such as modular multiplication and exponentiation, which are much more computationally expensive than the techniques used in most block ciphers, especially with typical key sizes.
-The following table shows examples of algorithms based on three mathematical problems that are hard to reverse.
+Because of the difficulty of the underlying problems, most asymmetric algorithms involve operations such as modular multiplication and exponentiation, which are much more computationally expensive than the techniques used in most block ciphers, especially with typical key sizes.
 
-The following table describes three popular asymmetric encryption algorithms:
+The following table shows examples of algorithms based on three mathematical problems that are hard to reverse.
 
 | Problem                    | Algorithm | Description                                                                                                                                                                                                                                                                             |
 |----------------------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
