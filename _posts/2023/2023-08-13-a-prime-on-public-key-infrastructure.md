@@ -36,7 +36,7 @@ Later, I'll focus on the role of PKI, and how it helps to safeguard the authenti
 Let's dive in!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-08-13/dark_well.jpg alt:"TODO" %}
+  {% responsive_image path: img/posts/2023/2023-08-13/dark_well.jpg alt:"A dark pool" %}
   <figcaption class="stroke"> 
     &#169; The internet is a chthonic pool. Don't jump in without your keys! Photo of a piece of art in the <a href="https://maps.app.goo.gl/75AGyCg5QpzjQeFR8">Stockholm's Paradox Museum</a>.
   </figcaption>
@@ -81,7 +81,7 @@ Before 1976, the only known way to encrypt messages was using [symmetric encrypt
 This is a mechanism to encode messages where both the sender and receiver use the **same secret key**.[^2]
 
 
-> "The fundamental property of symmetric encryption is that the same key is used for both encryption and decryption. In other words, by knowing the key and the encryption method employed one can decrypt or decrypt the message."
+> "The fundamental property of symmetric encryption is that the same key is used for both encryption and decryption. In other words, by knowing the key and the encryption method, one can decrypt or decrypt the message."
 
 <aside class="quote">
     <em>“The Caesar cipher method is easy to break because with only 26 different possible shifts it can be solved with simple brute force and letter frequency analysis.”</em> 
@@ -201,7 +201,7 @@ However, the speed of symmetric encryption comes with the following drawbacks:
 - Availability is a problem since establishing trust (key distribution) is complicated.
 
 The introduction of **asymmetric encryption** was a significant advance in cryptography, as it allowed solving the key distribution problem.
-Hence, making possible to securely sharing the secret key.
+Thus, establishing a mechanism for securely sharing the secret key.
 
 ## Asymmetric Encryption
 
@@ -252,7 +252,7 @@ Let's denote:
 
 The process then involves the following steps:
 
-1. **Encryption**: To encrypt a plaintext message $$ M $$ using the public key $$ k_{pub} $$, the encryption function $$ E $$ is applied. Mathematically, this is represented as:  $$ C = E_{k_{pub}}(M) $$
+1. **Encryption**: To encrypt a plaintext message $$ M $$ using the public key $$ k_{pub} $$, the encryption function $$ E $$ is applied. Mathematically, this is represented as: $$ C = E_{k_{pub}}(M) $$
 
 2. **Decryption**: To decrypt the ciphertext $$ C $$ using the private key $$ k_{priv} $$, the decryption function $$ D $$ is applied. This is represented as: $$ M = D_{k_{priv}}(C) $$
 
@@ -341,7 +341,7 @@ In such a case, a fast high-quality symmetric key encryption algorithm is used f
 So, we often use a mix of both methods, called hybrid cryptosystems.
 Here, a fast symmetric encryption algorithm secures the actual message, while the symmetric key, needed to read the message, is sent along with the message, but encrypted with an asymmetric algorithm.
 
-Simply using a pair of keys to encrypt/decrypt  some piece of data does not guarantee that the information came from a specific user.
+Simply using a pair of keys to encrypt/decrypt some piece of data does not guarantee that the information came from a specific user.
 Ultimately, the pair of keys used are not tied to a person or a system.
 To solve this problem, an infrastructure is required in order to bind these two aspects together.
 This idea paves the way for the concept of **Public Key Infrastructure (PKI)**, which ties symmetric and asymmetric encryption together in a trusted framework for secure and verifiable communications.
@@ -360,7 +360,7 @@ The CA then issues a certificate that links the user's identity with their publi
 This system ensures that any public key or certificate disseminated over the internet is reliably associated with a particular individual or entity.
 Such a mechanism enhances security, making it difficult for imposters to masquerade as legitimate users, thereby bolstering the trustworthiness and integrity of online communications and transactions.
 
-a user's public key is distributed via a digital certificate, which is a key component of the PKI.
+A user's public key is distributed via a digital certificate, which is a key component of the PKI.
 Digital certificates, issued by Certificate Authorities (CAs) within the PKI, bind a public key to an entity (like a person or organization).
 They verify the ownership of the public key, ensuring that when you encrypt something with a public key, the intended recipient (and only they) can decrypt it with their private key.
 PKI provides a framework of trust for these certificates, establishing the authenticity of public keys for secure communications and transactions.
@@ -474,8 +474,9 @@ RbqACMiiPruGSh8=
 ```
 
 In practice, when a secure connection is established (like in HTTPS), the server presents its certificate to the client.
-The client, in turn, verifies the certificate's validity by checking the CA's digital signature using the CA's public key, which it trusts. If the certificate is valid and trusted, the client can confidently use the public key in the certificate to establish a secure communication channel with the server, ensuring that the data exchanged is encrypted and comes from a verified source.
-
+The client, in turn, verifies the certificate's validity by checking the CA's digital signature using the CA's public key, which it trusts. 
+If the certificate is valid and trusted, the client can confidently use the public key in the certificate to establish a secure communication channel with the server.
+This ensures that the data exchanged is encrypted and comes from a verified source.
 
 ## Certificate Authorities
 
@@ -521,7 +522,7 @@ Here is how the transmitted data is encrypted and decrypted:
 
 1. First, the client (browser) and the server establish a TCP connection.
 
-2. The client sends a “_first client message_” to the server containing a set of  encryption algorithms (or cipher suites) which indicates the latest TLS version it can support.
+2. The client sends a “_first client message_” to the server containing a set of encryption algorithms (or cipher suites) which indicates the latest TLS version it can support.
 
 3. The server responds with a “_first server message_” so the browser knows whether it can support the algorithms and TLS version.
 
@@ -580,10 +581,9 @@ Finally, I have introduced the concept of Web of Trust (WOT) as an alternative t
 
 # Footnotes
 
-[^1]: Whitfield Diffie and Martin Hellman, "New Directions in Cryptography", _IEEE Transactions on Information Theory_, Vol. 22, No. 6, November 1976, pp. 644-654.
+[^1]: Whitfield Diffie and Martin Hellman, "New Directions in Cryptography", _IEEE Transactions on Information Theory_, Vol. 22, No. 6, November 1976, pp. 644–654.
 
 [^2]: In symmetric encryption, sometimes the keys are actually different but still connected in a way that is easy to figure out.
-
 
 [//]: # (Enable Latex support, see https://zjuwhw.github.io/2017/06/04/MathJax.html)
 <script type="text/x-mathjax-config">
