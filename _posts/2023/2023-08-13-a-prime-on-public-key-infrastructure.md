@@ -24,15 +24,14 @@ published: true
 
 The whole internet is secured by the power of symmetric and asymmetric cryptography.
 Each time you visit a website, a **cryptographic handshake** occurs between your browser and a web server located somewhere on Earth.
-The authenticity of this connection is verified by a framework known as **P**ublic **K**ey **I**nfrastructure (PKI).
-This technology is crucial for ensuring secure electronic information transfer between digital entities.
-PKI is integral to most confidential network activities, including e-commerce, internet banking, and email communications.
+The authenticity of this connection is verified by a technology known as **P**ublic **K**ey **I**nfrastructure (PKI).
+This framework is crucial for ensuring secure electronic information transfer between digital entities.
+PKI is integral to most confidential network activities, including e-commerce, internet banking, and email.
 It is particularly useful when simple passwords are inadequate for user authentication, necessitating stronger **proof of identity**.
 At its core, PKI binds public keys to the identities of entities such as individuals and organizations.
-This is done through a process of registration and the issuance of **digital certificates**.
-These certificates are provided by a Certificate Authority (CA).
-The CA is responsible for digitally signing and publishing the public keys to ensure the trustworthiness of the binding.
-In this article, I will delve into symmetric and asymmetric encryption.
+This is done through a process of registration, signing, and issuance of **digital certificates**.
+These certificates are provided by a Certificate Authority (CA) responsible for ensuring the trustworthiness of the binding.
+In this article, I will delve into the practical aspects of symmetric and asymmetric encryption.
 Later, I'll focus on the role of PKI, and how it helps to safeguard the authenticity and security of digital transactions and communications across the internet.
 Let's dive in!
 
@@ -48,7 +47,7 @@ Let's dive in!
 Since ancient times, the quest for secure communication has been a constant human endeavor.
 In general, two fundamental challenges need to be addressed in order to safeguard any kind of communication channel:
 
-1. **Confidentiality:** Ensuring that only the intended recipient can understand the message.
+1. **Confidentiality:** Ensuring that only the intended recipient can "understand" the message.
 2. **Integrity:** Guaranteeing that the message remains unaltered by any third parties during its transmission.
 
 In today's digital era, these challenges are magnified due to the speed and scale at which information is sent and received.
@@ -58,7 +57,7 @@ This raises a fundamental question:
 
 🤔 _How to build and maintain trustful communication channels on a global scale?_
 
-To answer this question, we need to look at how the Internet has been built.
+To answer this question, we need to look at how the internet has been built.
 At its core, digital data transfer channels rely on mathematical concepts regarding data encryption.
 In particular, the concept of **cryptography** is fundamental to understanding the mechanisms and technologies that are pivotal for scaling digital trust worldwide.
 
@@ -66,9 +65,9 @@ In particular, the concept of **cryptography** is fundamental to understanding t
 
 [Cryptography](https://en.wikipedia.org/wiki/Cryptography) is about building tools and techniques to enable secure communication in the presence of adversarial behaviors.
 More specifically, cryptography relies on mathematical proofs to protect aspects of information security.
-For example, cryptography allows for achieving confidentiality, integrity, entity authentication, and data origin authentication.
+For example, cryptography allows for achieving confidentiality, integrity, user authentication, and data origin validation.
 
-All of this sounds complicated, but fortunately, we only need to know about two cryptographical techniques: **symmetric** and **asymmetric** encryption.
+All of this may sound complicated, but fortunately, we only need to know about two cryptographical techniques: **symmetric** and **asymmetric** encryption.
 
 ## Symmetric Encryption
 
@@ -79,14 +78,14 @@ All of this sounds complicated, but fortunately, we only need to know about two 
 </aside>
 
 Before 1976, the only known way to encrypt messages was using [symmetric encryption](https://en.wikipedia.org/wiki/Symmetric-key_algorithm).
-This is a mechanism to encode messages where both the sender and receiver use the same **secret key**.
-Sometimes, their keys are different but still connected in a way that is easy to figure out.
+This is a mechanism to encode messages where both the sender and receiver use the **same secret key**.[^2]
+
+
+> "The fundamental property of symmetric encryption is that the same key is used for both encryption and decryption. In other words, by knowing the key and the encryption method employed one can decrypt or decrypt the message."
 
 <aside class="quote">
     <em>“The Caesar cipher method is easy to break because with only 26 different possible shifts it can be solved with simple brute force and letter frequency analysis.”</em> 
 </aside>
-
-> "The fundamental property of symmetric encryption is that the same key $$k$$ is used for both encryption and decryption. In other words, by knowing $$k$$ and the encryption method $$E$$ one can decrypt or decrypt the message."
 
 The most famous example is perhaps the [Caesar cipher algorithm](https://en.wikipedia.org/wiki/Caesar_cipher).
 The basic idea is to shift each letter in the plaintext (the original message) by a certain number of places down or up the alphabet
@@ -110,13 +109,14 @@ U2(["👨 Bob"]) --> |"🔑 KEY"| D["⚙️ Decryption Process"]
 D --> P["📒 Plaintext"]
 {% endmermaid %}
 
-In the figure above, the `KEY` node represents the symmetric key.
+In the figure above, Alice encrypts a message before sending it to Bob.
+The `KEY` node represents the symmetric key.
 Note that arrows are drawn from this node to both the encryption and decryption processes so that the same key is used in both steps.
-It is also important for both Alice and Bob to know exactly how the encryption/decryption process works.
+It is also important for both Alice and Bob to know exactly how the encryption/decryption process works (i.e., the algorithm used).
 
 [//]: # (------ How it works mathematically -------------------------------------------------------------------)
 
-Symmetric encryption can be formalized mathematically using the concepts of encryption and decryption functions.
+Symmetric encryption can be formalized mathematically using encryption ($$E$$) and decryption ($$D$$) functions.
 
 Let's denote:
 
@@ -136,14 +136,14 @@ Then, symmetric encryption and decryption can be represented as follows:
 [//]: # (------ How it works in code -------------------------------------------------------------------)
 
 <aside class="quote">
-    <em>“The SSL/TLS protocol is used to secure internet communications, ensuring data privacy and integrity between two communicating computer systems, like a web browser and a server.”</em> 
+    <em>“The SSL/TLS protocol is used to secure internet communications, ensuring data privacy and integrity between two communicating computers, like a web browser and a server.”</em> 
 </aside>
 
-If you prefer code, here's a simple example of a Java class `SymmetricEncryptionExample` that illustrates symmetric encryption using the [AES (Advanced Encryption Standard) algorithm](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard).
+If you prefer code, here's a simple example of a Java class `SymmetricEncryptionExample` that illustrates symmetric encryption using the [Advanced Encryption Standard](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) (AES) algorithm.
 AES is commonly used to secure data transmitted through the SSL/TLS protocol.
 The class relies on the `javax.crypto` package.
 It uses `KeyGenerator` to create a secret key.
-The key is used to encrypt a string `originalText`, and then decrypt it back.
+The key is used to encrypt the `originalText` string, and then decrypt it back.
 Note that the `Base64` encoding and decoding method is used to handle the byte array conversion for the encrypted text.
 
 ```java
@@ -168,7 +168,7 @@ public class SymmetricEncryptionExampleWithAES {
     }
 
     /**
-     * Encrypts plainText in AES using the secret key.
+     * Encrypts the plainText via AES using the secret key.
      */
     public static String encrypt(String plainText, SecretKey secretKey) throws Exception {
         Cipher cipher = Cipher.getInstance("AES");
@@ -178,7 +178,7 @@ public class SymmetricEncryptionExampleWithAES {
     }
 
     /**
-     * Decrypts the encrypted text using the provided secret key.
+     * Decrypts the encrypted text via AES using the provided secret key.
      */
     public static String decrypt(String encryptedText, SecretKey secretKey) throws Exception {
         Cipher cipher = Cipher.getInstance("AES");
@@ -197,20 +197,21 @@ By fast I mean, for example, that encrypting a file of 1 Gigabyte using AES take
 However, the speed of symmetric encryption comes with the following drawbacks:
 
 - The same key is used by the sender and receiver.
-- Confidentiality and integrity are guaranteed, but only if the key is kept secret.
+- Confidentiality and integrity are guaranteed, but only if the key is not compromised.
 - Availability is a problem since establishing trust (key distribution) is complicated.
 
-The introduction of **asymmetric encryption** was a significant advance in cryptography, as it allows solving the key distribution problem by allowing secure sharing of the secret key.
+The introduction of **asymmetric encryption** was a significant advance in cryptography, as it allowed solving the key distribution problem.
+Hence, making possible to securely sharing the secret key.
 
 ## Asymmetric Encryption
 
 [//]: # (------ What it is ---------------------------------------------------------------------)
 
 In 1976, Whitfield Diffie and Martin Hellman proposed a revolutionary method to encrypt messages.[^1]
-Their system pushed forward cryptography by allowing users to communicate securely without having to agree on a shared secret key.
+Their system pushed forward the field of cryptography by allowing users to communicate securely without having to agree on a shared secret key.
 The system is known as "public-key cryptography" or "asymmetric encryption," and it is the foundation of how the internet is secured today.
 
-> "The most important property of asymmetric encryption is that the decryption key $$ k_{priv} $$ cannot be feasibly derived from the encryption key $$ k_{pub} $$, even though they are mathematically related. This allows the public key to be shared openly, while the private key must be kept secret by the owner."
+> "The most important property of asymmetric encryption is that the decryption key (a.k.a. private key) cannot be feasibly derived from the encryption key (a.k.a. public key), even though they are mathematically related. This allows the public key to be shared openly, while the private key must be kept secret by the owner."
 
 [//]: # (------ How it works graphically -------------------------------------------------------------------)
 
@@ -230,15 +231,15 @@ U2(["👨 Bob"]) --> |"🔐 Bob's PRIVATE KEY"| D["⚙️ Decryption Process"]
 D --> P["📒 Plaintext"]
 {% endmermaid %}
 
-In the diagram above, Alice encrypts a message using Bob's public key.
+In the diagram above, Alice encrypts a message using Bob's **public key**.
 The encrypted message can be then sent to Bob.
-Bob decrypts the message using his private key.
+Bob decrypts the message using his **private key**.
 Note that the public key is available to everyone (including Alice), while the private key is only known to Bob.
-So only Bob (with the private key) can decrypt the message.
+So only Bob (with his private key) can decrypt the message.
 
 [//]: # (------ How it works mathematically -------------------------------------------------------------------)
 
-Asymmetric encryption can be formalized mathematically using encryption and decryption functions similar to symmetric encryption, but with the distinction that it uses two different keys: **public** and **private** keys.
+Asymmetric encryption can be formalized mathematically using encryption and decryption functions similar to symmetric encryption, but with the distinction that it uses two different keys.
 
 Let's denote:
 
@@ -357,7 +358,7 @@ For instance, a user can submit their public key to a Certificate Authority (CA)
 This can be done through a secure process, such as visiting a CA office in person.
 The CA then issues a certificate that links the user's identity with their public key.
 
-This system ensures that any public key or certificate disseminated over the Internet is reliably associated with a particular individual or entity.
+This system ensures that any public key or certificate disseminated over the internet is reliably associated with a particular individual or entity.
 Such a mechanism enhances security, making it difficult for imposters to masquerade as legitimate users, thereby bolstering the trustworthiness and integrity of online communications and transactions.
 
 a user's public key is distributed via a digital certificate, which is a key component of the PKI.
@@ -440,7 +441,7 @@ These signatures are crucial in establishing trust and authenticity in digital c
 
 In PKI, [digital certificates](https://en.wikipedia.org/wiki/Public_key_certificate) are digital documents that verify the ownership of a public key by the named subject of the certificate.
 These certificates are issued by a trusted authority known as a Certificate Authority (CA).
-The primary role of a certificate is to ensure that a public key belongs to the individual, organization, or device it claims to be from, thus enabling secure communication and transactions over the Internet.
+The primary role of a certificate is to ensure that a public key belongs to the individual, organization, or device it claims to be from, thus enabling secure communication and transactions over the internet.
 
 A digital certificate contains several key pieces of information: the subject's name, the subject's public key, the expiration date of the certificate, the issuer's (CA's) name, and the digital signature of the issuer.
 The CA's signature is crucial as it vouches for the authenticity of the certificate.
@@ -581,6 +582,8 @@ Finally, I have introduced the concept of Web of Trust (WOT) as an alternative t
 # Footnotes
 
 [^1]: Whitfield Diffie and Martin Hellman, "New Directions in Cryptography", _IEEE Transactions on Information Theory_, Vol. 22, No. 6, November 1976, pp. 644-654.
+
+[^2]: In symmetric encryption, sometimes the keys are actually different but still connected in a way that is easy to figure out.
 
 
 [//]: # (Enable Latex support, see https://zjuwhw.github.io/2017/06/04/MathJax.html)
