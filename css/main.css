@@ -1749,7 +1749,7 @@ code table, code table td, code table th, code table tbody, code table tr,
 td.gutter pre {
   padding: 0;
   border: none;
-  background-color: hsl(0, 0%, 99%);
+  background-color: var(--main-background-color);
 }
 
 .highlight > pre {
