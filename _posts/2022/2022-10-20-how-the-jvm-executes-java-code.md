@@ -53,6 +53,7 @@ The following activity diagram illustrates what happens during this phase:
 
 [//]: # (see https://mermaid-js.github.io)
 {% mermaid %}
+%%{init: {'theme':'base'}}%%
 flowchart TB;
 a(["Starting Execution"]) --> b["Loading"]
 b["Loading"] --> c["Linking"]
