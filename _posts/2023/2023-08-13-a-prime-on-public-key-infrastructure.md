@@ -4,8 +4,7 @@ title: A Prime on Public Key Infrastructure
 subtitle: How do we trust each other in the digital era?
 tags: security
 description: |
-  This article delves into symmetric and asymmetric encryption, as the building blocks of Public Key Infrastructure (PKI). 
-  It describes how PKI allows safeguarding the authenticity and security of digital communications across the internet. 
+  This article delves into symmetric and asymmetric encryption, as the building blocks of Public Key Infrastructure (PKI). It describes how PKI allows safeguarding the authenticity and security of digital communications across the internet. 
 keywords:
   - cybersecurity,
   - symmetric encryption,
