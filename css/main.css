@@ -1742,14 +1742,14 @@ code a:hover, a:focus {
 
 pre.highlight, .highlight > pre, td.code pre {
   background-size: 3em 3em;
-  background: #FAFAFA linear-gradient(#F9F9F9 0%, #FDFDFD 0%) repeat 0px 10px;
+  background: var(--main-background-color);
 }
 
 code table, code table td, code table th, code table tbody, code table tr,
 td.gutter pre {
   padding: 0;
   border: none;
-  background-color: hsl(0, 0%, 99%);
+  background-color: var(--main-background-color);
 }
 
 .highlight > pre {
@@ -3131,7 +3131,7 @@ html, html[data-theme="light"] {
   --blockquote-color: darkgreen;
   /*--blockquote-background-color: #f1f1f1;*/
   --blockquote-background-color: #FFEDDE;
-  --main-background-color: hsl(0, 0%, 99%);
+  --main-background-color: #FFFFF6;
   /*--main-background-color: #fdf2ea;*/
   --main-text-color: hsl(0, 0%, 10%);
   --main-link-color: #012639;
