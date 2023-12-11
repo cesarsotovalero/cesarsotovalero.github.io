@@ -4,8 +4,7 @@ title: A Prime on Public Key Infrastructure
 subtitle: How do we trust each other in the digital era?
 tags: security
 description: |
-  This article delves into symmetric and asymmetric encryption, as the building blocks of Public Key Infrastructure (PKI). 
-  It describes how PKI allows safeguarding the authenticity and security of digital communications across the internet. 
+  This article delves into symmetric and asymmetric encryption, as the building blocks of Public Key Infrastructure (PKI). It describes how PKI allows safeguarding the authenticity and security of digital communications across the internet. 
 keywords:
   - cybersecurity,
   - symmetric encryption,
@@ -146,48 +145,46 @@ It uses `KeyGenerator` to create a secret key.
 The key is used to encrypt the `originalText` string, and then decrypt it back.
 Note that the `Base64` encoding and decoding method is used to handle the byte array conversion for the encrypted text.
 
-```java
+{% highlight java linenos %}
 public class SymmetricEncryptionExampleWithAES {
+  public static void main(String[] args) throws Exception {
+    // Generate a symmetric key
+    KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
+    keyGenerator.init(128); // Key size
+    SecretKey secretKey = keyGenerator.generateKey();
+    String originalText = "Hello, this is a secret message!";
+    System.out.println("Original Text: " + originalText);
+    // Encrypt the text
+    String encryptedText = encrypt(originalText, secretKey);
+    System.out.println("Encrypted Text: " + encryptedText);
+    // Decrypt the text
+    String decryptedText = decrypt(encryptedText, secretKey);
+    System.out.println("Decrypted Text: " + decryptedText);
+  }
 
-    public static void main(String[] args) throws Exception {
-        // Generate a symmetric key
-        KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
-        keyGenerator.init(128); // Key size
-        SecretKey secretKey = keyGenerator.generateKey();
+  /**
+   * Encrypts the plainText via AES using the secret key.
+   */
+  public static String encrypt(String plainText, SecretKey secretKey) throws Exception {
+    Cipher cipher = Cipher.getInstance("AES");
+    cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+    byte[] encryptedBytes = cipher.doFinal(plainText.getBytes());
+    return Base64.getEncoder().encodeToString(encryptedBytes);
+  }
 
-        String originalText = "Hello, this is a secret message!";
-        System.out.println("Original Text: " + originalText);
-
-        // Encrypt the text
-        String encryptedText = encrypt(originalText, secretKey);
-        System.out.println("Encrypted Text: " + encryptedText);
-
-        // Decrypt the text
-        String decryptedText = decrypt(encryptedText, secretKey);
-        System.out.println("Decrypted Text: " + decryptedText);
-    }
-
-    /**
-     * Encrypts the plainText via AES using the secret key.
-     */
-    public static String encrypt(String plainText, SecretKey secretKey) throws Exception {
-        Cipher cipher = Cipher.getInstance("AES");
-        cipher.init(Cipher.ENCRYPT_MODE, secretKey);
-        byte[] encryptedBytes = cipher.doFinal(plainText.getBytes());
-        return Base64.getEncoder().encodeToString(encryptedBytes);
-    }
-
-    /**
-     * Decrypts the encrypted text via AES using the provided secret key.
-     */
-    public static String decrypt(String encryptedText, SecretKey secretKey) throws Exception {
-        Cipher cipher = Cipher.getInstance("AES");
-        cipher.init(Cipher.DECRYPT_MODE, secretKey);
-        byte[] decryptedBytes = cipher.doFinal(Base64.getDecoder().decode(encryptedText));
-        return new String(decryptedBytes);
-    }
+  /**
+   * Decrypts the encrypted text via AES using the provided secret key.
+   */
+  public static String decrypt(String encryptedText, SecretKey secretKey) throws Exception {
+    Cipher cipher = Cipher.getInstance("AES");
+    cipher.init(Cipher.DECRYPT_MODE, secretKey);
+    byte[] decryptedBytes = cipher.doFinal(Base64.getDecoder().decode(encryptedText));
+    return new String(decryptedBytes);
+  }
 }
-```
+{% endhighlight %}
+
+ 
 
 [//]: # (------ How it works in practice -------------------------------------------------------------------)
 
@@ -275,55 +272,48 @@ The following example uses the RSA algorithm for encryption and decryption.
 Note that the `KeyPairGenerator` class is used to generate a pair of public and private keys.
 The `Cipher` class is used to encrypt and decrypt the text, and the `Base64` encoding and decoding method is used to handle the byte array conversion for the encrypted text.
 
-```java
+{% highlight java linenos %}
 public class AsymmetricEncryptionExampleWithRSA {
+  public static void main(String[] args) throws Exception {
+    // Generate RSA key pair
+    KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
+    keyGen.initialize(2048);
+    KeyPair pair = keyGen.generateKeyPair();
+    PrivateKey privateKey = pair.getPrivate();
+    System.out.println("Private Key: " + Base64.getEncoder().encodeToString(privateKey.getEncoded()));
+    PublicKey publicKey = pair.getPublic();
+    System.out.println("Public Key: " + Base64.getEncoder().encodeToString(publicKey.getEncoded()));
+    String originalText = "Hello, this is a secret message!";
+    System.out.println("Original Text: " + originalText);
+    // Encrypt the text
+    String encryptedText = encrypt(originalText, publicKey);
+    System.out.println("Encrypted Text: " + encryptedText);
+    // Decrypt the text
+    String decryptedText = decrypt(encryptedText, privateKey);
+    System.out.println("Decrypted Text: " + decryptedText);
+  }
 
-    public static void main(String[] args) throws Exception {
+  /**
+   * Encrypt text using the public key.
+   */
+  public static String encrypt(String plainText, PublicKey publicKey) throws Exception {
+    Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+    cipher.init(Cipher.ENCRYPT_MODE, publicKey);
+    byte[] encryptedBytes = cipher.doFinal(plainText.getBytes());
+    return Base64.getEncoder().encodeToString(encryptedBytes);
+  }
 
-        // Generate RSA key pair
-        KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
-        keyGen.initialize(2048);
-        KeyPair pair = keyGen.generateKeyPair();
-
-        PrivateKey privateKey = pair.getPrivate();
-        System.out.println("Private Key: " + Base64.getEncoder().encodeToString(privateKey.getEncoded()));
-
-        PublicKey publicKey = pair.getPublic();
-        System.out.println("Public Key: " + Base64.getEncoder().encodeToString(publicKey.getEncoded()));
-
-        String originalText = "Hello, this is a secret message!";
-        System.out.println("Original Text: " + originalText);
-
-        // Encrypt the text
-        String encryptedText = encrypt(originalText, publicKey);
-        System.out.println("Encrypted Text: " + encryptedText);
-
-        // Decrypt the text
-        String decryptedText = decrypt(encryptedText, privateKey);
-        System.out.println("Decrypted Text: " + decryptedText);
-    }
-
-    /**
-     * Encrypt text using the public key.
-     */
-    public static String encrypt(String plainText, PublicKey publicKey) throws Exception {
-        Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
-        cipher.init(Cipher.ENCRYPT_MODE, publicKey);
-        byte[] encryptedBytes = cipher.doFinal(plainText.getBytes());
-        return Base64.getEncoder().encodeToString(encryptedBytes);
-    }
-
-    /**
-     * Decrypt text using the private key.
-     */
-    public static String decrypt(String encryptedText, PrivateKey privateKey) throws Exception {
-        Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
-        cipher.init(Cipher.DECRYPT_MODE, privateKey);
-        byte[] decryptedBytes = cipher.doFinal(Base64.getDecoder().decode(encryptedText));
-        return new String(decryptedBytes);
-    }
+  /**
+   * Decrypt text using the private key.
+   */
+  public static String decrypt(String encryptedText, PrivateKey privateKey) throws Exception {
+    Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+    cipher.init(Cipher.DECRYPT_MODE, privateKey);
+    byte[] decryptedBytes = cipher.doFinal(Base64.getDecoder().decode(encryptedText));
+    return new String(decryptedBytes);
+  }
 }
-```
+{% endhighlight %}
 
 [//]: # (------ How it works in practice -------------------------------------------------------------------)
 

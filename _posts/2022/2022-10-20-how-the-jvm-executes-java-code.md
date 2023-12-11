@@ -53,6 +53,7 @@ The following activity diagram illustrates what happens during this phase:
 
 [//]: # (see https://mermaid-js.github.io)
 {% mermaid %}
+%%{init: {'theme':'base'}}%%
 flowchart TB;
 a(["Starting Execution"]) --> b["Loading"]
 b["Loading"] --> c["Linking"]
@@ -243,14 +244,11 @@ It is simply a means of performing cleanup actions before an object is garbage c
 
 ## Unloading
 
-Unloading refers to the process of removing a class or interface from the runtime state of the JVM (e.g., its defining class loader may be reclaimed by the garbage collector).
-Classes and interfaces loaded by the bootstrap class loader are never unloaded.
-
+Unloading refers to the process of removing a class or interface from the runtime state of the JVM (e.g., when its defining class loader is reclaimed by the garbage collector).
 Class unloading reduces memory use.
 Consequently, this optimization is only significant for applications that load large numbers of classes and interfaces, and that stop to use them after some time.
-This is done by the garbage collector.
 
-The following example shows an example of user-defined class unloading. 
+The following code shows an example of user-defined garbage collection. 
 Note that the class `LargeClass` has a large array of integers that consume a lot of memory:
 
 {% highlight java linenos %}
@@ -277,6 +275,50 @@ public class LargeClass {
 
 In the previous example, if the `LargeClass` object has been garbage collected, the output will be "The LargeClass object has been collected." Otherwise, the output will be "The LargeClass object has not been collected."
 
+Classes and interfaces loaded by the bootstrap class loader are never unloaded.
+Therefore, in typical standalone applications, class unloading is less common because the system `ClassLoader` is usually active for the lifetime of the application, and hence the classes it loads are not unloaded.
+
+Different from garbage collection, class unloading refers to the removal of a class definition (the `Class` object representing the `LargeClass`, in this case) and its associated metadata from the JVM's memory. 
+This typically happens when the class loader that loaded the class becomes eligible for garbage collection, as previously explained. 
+Class unloading depends on several factors, such as the behavior of the garbage collector and the JVM's implementation details. 
+
+The following example shows a scenario where class unloading is likely to occur:
+
+{% highlight java linenos %}
+import java.lang.ref.WeakReference;
+import java.net.URL;
+import java.net.URLClassLoader;
+public class ClassUnloadingExample { 
+  public static void main(String[] args) throws Exception {
+    // Path to the .class file (make sure this is correctly set)
+    URL classUrl = new URL("file:///path/to/LargeClass.class");
+    // Creating a custom class loader to load "LargeClass"
+    URLClassLoader customClassLoader = new URLClassLoader(new URL[]{classUrl});
+    // Load "LargeClass" using the custom class loader
+    Class<?> largeClass = Class.forName("LargeClass", true, customClassLoader);
+    // Create a weak reference to the custom class loader
+    WeakReference<ClassLoader> weakClassLoaderRef = new WeakReference<>(customClassLoader);
+    // Clear all strong references to the custom class loader and the class
+    customClassLoader = null;
+    largeClass = null;
+    // Suggesting garbage collection
+    System.gc();
+    // Wait a moment to increase the likelihood that GC has run
+    Thread.sleep(1000);
+    // Check if the custom class loader has been garbage collected
+    if (weakClassLoaderRef.get() == null) {
+      System.out.println("Custom class loader has been garbage collected, indicating that LargeClass might have been unloaded");
+    } else {
+      System.out.println("Custom class loader is still in memory");
+    }
+  }
+}
+{% endhighlight %}
+
+In the previous example, a custom class loader is used to load `LargeClass.class` and then clears all references to that class loader, making it eligible for garbage collection.
+The program then checks whether the custom class loader has been garbage collected by checking the `WeakReference`.
+If the `customClassLoader` has been collected, it is likely that the class it loaded (`LargeClass`) has been unloaded.[^3]
+
 ## Program Exit
 
 Program exit refers to the process of terminating the execution of a program. 
@@ -302,3 +344,4 @@ I hope you enjoyed this article and learned something new 😎.
 
 [^1]: The method table is an array of pointers to the data for each instance method that can be invoked on objects of that class.
 [^2]: The bytecode is a low-level code that can be run on any Java Virtual Machine (JVM).
+[^3]: This example is not guaranteed to demonstrate class unloading every time it is run, as garbage collection and class unloading depend on several factors and JVM internals.
