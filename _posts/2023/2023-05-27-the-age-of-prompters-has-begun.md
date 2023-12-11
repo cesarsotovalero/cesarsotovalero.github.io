@@ -25,6 +25,10 @@ published: false
   </figcaption>
 </figure>
 
+<aside class="quote">
+    <em>“The prompter in a theatre is a person who prompts or cues actors when they forget their lines or neglect to move on the stage to where they are supposed to be situated.” - <cite><a href="https://en.wikipedia.org/wiki/Prompter_(theatre)">Wikipedia</a></cite></em> 
+</aside>
+
 Once upon a long time, software was a strange thing.
 Even stranger was the people who created it.
 Programmers.
@@ -58,7 +62,7 @@ Yes, you don't.
 Because now you can use computers to write code for you.
 The new era of AI has come to us developers.
 
-## Show Me the Prompt!
+# Show Me the Prompt!
 
 Looks like coding has become very cheap thanks to AI and LLMs.
 With time, every line of code will decrease its price.
@@ -95,17 +99,43 @@ And the number of people who are ~~kicked out from~~ leaving the industry is inc
 
 But don't worry.
 There is still hope.
-We still have a few years to adapt and mutate.
+We still have a few years to adapt and improve.
 And maybe we can all keep our jobs after all.
 I'm talking about becoming successfull prompters, of course.
+
+And we'll prommpt with our voice, with images, with videos, with text, with code, with everything.
+Not only to solve coding problems, but to solve any problem.
+Websites will feature their own AI system, tuned specifilly for their platform.
+So in the era of data as a gold, prompters are the new gold miners.
+
+# The Prompter Manifesto
+
+> “We, the prompters, are the new breed of programmers.
+> We are the ones who understand how to write prompts to make AI solve ~~our~~ problems.
+> We take all the credit from the answers.
+> We take paychecks too.
+>
+> We create value through innovative ideas.
+> We have regular meetings to brainstorm new ~~prompts~~ ideas. 
+> We break down complex problems intro promptable smaller components.
+> We don't write bugs, AI does.
+>
+> We encourage a culture of lifelong prompting and skill enhancement.
+> We share our prompts with the community.
+> We have daily prompt revisions where we blame AI for not understanding our problems.
+> 
+> We prompted an AI to help us write this manifesto.
+> We will keep improving it.
+> We will prompt a future AI to write it better.”
 
 # The Successful Prompter
 
 The successful understands how AI actually works.
 They can tweak the prompt to get the best results.
 
-
-> Computer science is not about writing code. It's a way of looking at and solving problems.
+<aside class="quote">
+    <em>“Prompting is not about writing questions. It's a way of looking at and solving problems.”</em> 
+</aside>
 
 Prompts:
 
