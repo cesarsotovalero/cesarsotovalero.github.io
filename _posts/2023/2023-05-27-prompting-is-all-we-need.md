@@ -149,7 +149,8 @@ The time has come for us, prompters to establish our formal manifesto.
 
 Here it is:
 
-> “We, the prompters, are the new breed of programmers.<br>
+> “ 
+> We, the prompters, are the new breed of programmers.<br>
 > We are the experts in crafting prompts that empower AI to solve our problems.<br>
 > We take all the credit from the solutions we derive.<br>
 > We take the paychecks too.<br>
@@ -165,7 +166,8 @@ Here it is:
 > 
 > We prompted an AI to help us write this manifesto.<br>
 > We will keep improving it.<br>
-> We will prompt a more powerful AI in the future to write it better.”
+> We will prompt a more powerful AI in the future to write it better.
+> ”
 
 Now that we have defined who we are, what we do, and what we don't do, let's explore how to become a successful prompter.
 
@@ -208,7 +210,7 @@ Here are 5 examples:
 
 The successful prompter knows how to use AI to write ~~better~~ code.
 
-Here are 7 examples:
+Here are 5 examples:
 
 1. **Describe** what the following code does. Explain it to me step-by-step in plain English.
 2. **Optimize** this code to be more elegant, more readable, and more efficient.
@@ -342,5 +344,4 @@ The end of software engineering as we know it is knocking on our doors.
 [^3]: The first coders really had huge challenges, like sending the first human to the moon. If in doubt, just look again at the [famous picture](https://news.mit.edu/2016/scene-at-mit-margaret-hamilton-apollo-code-0817)e of Margaret Hamilton standing next to the Apollo Guidance Computer source code. 
 [^4]: I know it sounds crazy, but software and the internet were not a thing 30 years ago, and people still had a great life without mobile phones.  
 [^5]: If you are reading this, you probably know how a computer works. Could you please explain it in the comments below for those who don't? Thanks 😀!
-[^6]: The lack of software developers was most accentuated in 2020, when the world was hit by the COVID-19 pandemic. The demand for software engineers skyrocketed, and the supply was not enough to satisfy it, read [The Human Side of the Tech Industry:
-Key Drivers Behind the Tech Talent Dilemma]( https://doi.org/10.1145/3502771.3502775).
+[^6]: The lack of software developers was most accentuated in 2020, when the world was hit by the COVID-19 pandemic. The demand for software engineers skyrocketed, and the supply was not enough to satisfy it, read [The Human Side of the Tech Industry: Key Drivers Behind the Tech Talent Dilemma](https://doi.org/10.1145/3502771.3502775).
