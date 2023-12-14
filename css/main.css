@@ -194,6 +194,50 @@ blockquote {
 
 }
 
+/* Details */
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin: 1em 0;
+  background-color: #f9f9f9;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+summary {
+  font-weight: bold;
+  padding: 0.5em 0.5em 0.5em 2em; /* Adjust padding to make room for arrow */
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  list-style: none; /* Remove default list-style in some browsers */
+}
+
+summary::before {
+  content: '\25B6'; /* "▶" */ /* Default arrow */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease; /* Smooth transition for arrow */
+}
+
+details[open] summary::before {
+  content: '\25BC';  /* "▼" */ /* Opened arrow */
+  transform: translateY(-50%) rotate(0); /* Rotate arrow when open */
+}
+
+details > p {
+  padding: 1.5em;
+  margin: 0; /* Adjust margin to prevent overlapping */
+}
+
+article > details > code {
+  /*  remove background color */
+  background-color: transparent;
+}
+
+
 @media only screen and (max-width: 450px) {
   blockquote {
     font-size: 17px;
