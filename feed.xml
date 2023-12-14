@@ -51,6 +51,17 @@
       </item>
     
       <item>
+        <title>Prompting is All We Need</title>
+        <description>
+          Is this the end of software engineering as we know it? - 
+          I’m a software engineer at heart. As such, a big chunk of my world revolves around solving problems with code. Lately, though, I’ve found myself avoiding writing code (and everything else with a text format). Writing is one of the most gratifying activities for me (once the written piece is...
+        </description>
+        <pubDate>Sat, 27 May 2023 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/prompting-is-all-we-need.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/prompting-is-all-we-need.html</guid>
+      </item>
+    
+      <item>
         <title>Let&apos;s Face It&amp;#58; Paper Figures Are Always Subject to Change</title>
         <description>
           The story of a single figure - 
@@ -213,17 +224,6 @@
         <pubDate>Tue, 22 Feb 2022 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/how-phd-profiles-are-evaluated.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-phd-profiles-are-evaluated.html</guid>
-      </item>
-    
-      <item>
-        <title>Bus Factor&amp;#58; A Human-Centered Risk Metric in the Software Supply Chain</title>
-        <description>
-          Public transportation may become hellish - 
-          What if some members of a software project are suddenly hit by a bus? What would happen to the project in such an unfortunate scenario? According to Wikipedia, this question was first pointed out in 1994 when someone publicly asked about what would happen to Python if Guido van Rossum...
-        </description>
-        <pubDate>Sun, 06 Feb 2022 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/bus-factor-a-human-centered-risk-metric-in-the-software-supply-chain.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/bus-factor-a-human-centered-risk-metric-in-the-software-supply-chain.html</guid>
       </item>
     
   </channel>
