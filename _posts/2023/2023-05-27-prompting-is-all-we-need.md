@@ -28,7 +28,7 @@ So what has changed?
 I've even lost interest in looking at ~~poorly written~~ new API documentation.
 I'm perceiving books, articles, and even tweets as too large and/or out of focus.
 Googling and reading Q&A threads in StackOverflow is less appealing than what it used to be.
-Definitely something is happening with me, and it's not just the usual slump.
+Definitely something is happening to me, and it's not just the usual slump.
 But at the same time, it looks like my ~~laziness~~ efficiency has increased considerably.
 Contradictory, uhm?
 After giving it some thought, I think to understand what's going on: I'm **transitioning into a prompter**!
