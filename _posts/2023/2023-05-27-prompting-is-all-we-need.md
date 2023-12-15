@@ -109,7 +109,7 @@ Let me introduce you to the **prompter**.
 
 The prompter's daily task is to ask fine-tuned questions.
 For that, sometimes it's necessary to embody the inquisitive spirit of Socrates, or perhaps that of a 5-year-old child (depending on how much money do you make).
-The job is fundamentally [about crafting queries](https://asianjde.com/ojs/index.php/AsianJDE/article/download/749/405) in natural language:
+The job is fundamentally [about crafting queries](https://asianjde.com/ojs/index.php/AsianJDE/article/download/749/405) in natural language, for example:
 "I got the following log message, how to fix the problem?," 
 "I have a list of items, write an algorithm to sort them?,"
 "My boss doesn't understand technical debt, what should I do?"
