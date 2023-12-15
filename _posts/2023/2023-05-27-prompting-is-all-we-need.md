@@ -21,23 +21,23 @@ published: true
 ---
 
 I'm a software engineer at heart.
-As such, a big chunk of my world revolves around solving problems with code. 
-Lately, though, I've found myself avoiding writing code (and everything else with a text format).
-But writing is one of the most gratifying activities for me (once the written piece is done, of course).
+Consequently, a big chunk of my world revolves around solving problems with code. 
+Lately, though, I've found myself avoiding writing code (and everything else in text format).
+I consider writing as one of the most gratifying activities (once the written piece is done, of course).
 So what has changed?
-I've even lost interest in looking at ~~poorly written~~ API documentation.
-Books, articles, and even tweets are starting to be perceived as too large for me now.
-Googling and reading Q&A threads in StackOverflow is becoming less appealing than what they used to be.
-Definitely something is happening, and it's not just the usual slump.
+I've even lost interest in looking at ~~poorly written~~ new API documentation.
+I'm perceiving books, articles, and even tweets as too large and/or out of focus.
+Googling and reading Q&A threads in StackOverflow is less appealing than what it used to be.
+Definitely something is happening with me, and it's not just the usual slump.
 But at the same time, it looks like my ~~laziness~~ efficiency has increased considerably.
-Contradictory?
-After giving it some thought, I understood what's going on: I'm **transitioning into a prompte**r!
+Contradictory, uhm?
+After giving it some thought, I think to understand what's going on: I'm **transitioning into a prompter**!
 Let me tell you what it is about.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-05-27/pino_pizza.jpg alt:"The future of software will have the same destiny that pizza production" %}
   <figcaption class="stroke"> 
-    &#169; Do you know how to make a pizza from scratch? I don't, and I'm afraid the same will happen in the software industry. Photo of miniature model of the Pizzeria Pino, the fist Stockholm's pizzeria, funded in 1976, and exposed in the <a href="https://maps.app.goo.gl/ohfdw8atqpv2WjiTA">Stockholm Stadsmuseet</a>.
+    &#169; Do you know how to make a pizza from scratch? I don't, and I'm afraid the same will happen in the software industry: only a few will know! Photo of miniature model of the Pizzeria Pino, the fist Stockholm's pizzeria, funded in 1976, and exposed in the <a href="https://maps.app.goo.gl/ohfdw8atqpv2WjiTA">Stockholm Stadsmuseet</a>.
   </figcaption>
 </figure>
 
@@ -50,14 +50,15 @@ Even stranger was the people who build it: **programmers**.
 Or were they scientists?
 I'm too young to know exactly what they were called.
 Anyway, they were an unusual breed of people.
-They were mathematicians, physicists, or pure engineers who mastered cryptic programming languages to tackle mostly practical problems.[^3]
+Mathematicians, physicists, or pure engineers who mastered cryptic programming languages to tackle practical and scientific problems.[^3]
 These individuals possessed advanced reasoning skills. 
-They could understand complex systems (such as those for financial transactions written in COBOL), and implement algorithms like QuickSort in 5 minutes or less.
+They could understand complex systems (such as those for financial transactions, perdurable code written in COBOL), and implement algorithms like QuickSort in 5 minutes or less.
 
 But that was a long time ago when software was still [eating the world](https://a16z.com/why-software-is-eating-the-world/).
 Nowadays, software is everywhere.
 It already [ate the world](https://www.wsj.com/articles/software-ate-the-world-and-soon-it-will-write-itself-11607037000?reflink=desktopwebshare_permalink) and digest it.
-Its output is indispensable, just like salt for our food. 
+Sometimes resulting in [a mess](../blog/why-debloating-third-party-software.html) that we still have to clean up.
+Anyway, its output is indispensable, just like salt for our food. 
 In every industry, in every company, in every home, software is a necessary ingredient.
 So the crew of software cookers has grown at a very fast speed.
 But the world had not enough mathematicians, or engineers, to satisfy the demand for programmers.[^6]
@@ -66,10 +67,10 @@ And as with any other industry, the higher the demand, the bigger the push human
 Over the past two decades, a new class of "programmers" has emerged and permeated the industry: **software developers**.
 The prerequisites have shifted dramatically.
 The average software developer doesn't need to understand [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) anymore to get a decent job offer.
-Indeed, she doesn't even need to know how a computer actually works.[^5]
-It's enough to master a particular framework, a library, or even a single digital tool.
+Indeed, it's not even necessary to know how a computer actually works.[^5]
+It's enough to master a particular framework, a library, or even a single digital tool (long live the Excel).
 And bang! 
-The wheels that keep software product lines moving will be ready to go.
+The wheels that keep software product lines moving are ready to go.
 
 But I've seen the panorama shifting in the last few months.
 What if I told you that knowing how to code is no longer necessary?
@@ -87,12 +88,12 @@ And with it, there comes a new batch of fresh challenges.
 It seems that coding, as a profession, has become less complex nowadays. 
 This is thanks to the rise of AI tools powered by Large Language Models (LLMs).
 These are Machine Learning (ML) models trained on huge amounts of ~~crap~~ text data.
-Once trained, the model can generate meaningful text from a given prompt.
+Once trained, the model can generate meaningful text responses to a given **prompt**.
 Interestingly, it appears that [code generation](https://dl.acm.org/doi/pdf/10.1145/3545945.3569759) is one of the most simple tasks for these models.
 So we developers are not as special as we thought, ouch.
 In other words, AI can write reasonably good code faster and cheaper than us.
 But this article is not about AI replacing developers (I wrote about it [here](../blog/surviving- the-ai-revolution-as-a-software-engineer.html, check it out).
-I believe that the price of every single line of code will decrease its value over time.
+I believe that the price of every single line of code will decrease its value dramatically in the coming years.
 It's [supply and demand](https://en.wikipedia.org/wiki/Supply_and_demand), there's nothing we can do about it.
 
 <aside class="quote">
@@ -100,37 +101,39 @@ It's [supply and demand](https://en.wikipedia.org/wiki/Supply_and_demand), there
 </aside>
 
 However, there is a catch.
-There is still a necessary ingredient to fuel the AI machinery: **the prompts**.
+There is still a necessary ingredient to fuel the AI machinery: the prompts.
 We still need humans to craft them.
-So a new class of programmers has emerged.
+So a new class of programmer has emerged.
 Those who excel at writing effective prompts to tackle programming issues. 
-Let me introduce you to "the prompters."
+Let me introduce you to **the prompters**.
 
 The prompter's daily task is to ask fine-tuned questions.
-For that, one needs to embody the inquisitive spirit of Socrates, or perhaps that of a 5-year-old child (depending on how much you estimate the role).
+For that, sometimes it's necessary to embody the inquisitive spirit of Socrates, or perhaps that of a 5-year-old child (depending on how much money do you make).
 The job is fundamentally [about crafting queries](https://asianjde.com/ojs/index.php/AsianJDE/article/download/749/405) in natural language:
 "I got the following log message, how to fix the problem?," 
 "I have a list of items, write an algorithm to sort them?,"
-"My boss is annoying, what should I do?"
+"My boss doesn't understand technical debt, what should I do?"
 The next step is straightforward, just taking the AI-generated response and integrating it into the appropriate context, often directly to the production environment.
-Seems like magic!
+Pure magic!
 
 But perhaps this isn't magic after all.
-It doesn't look familiar to you?
+Doesn't it look familiar to you?
 Yes, it's the exact same thing we used to do every day when searching Google and looking at Q&A threads in StackOverflow.
 The big difference now is the speed and quality at which the answers are sent back to us.
-We can now get answers without fully articulating the question, which is impressive!
+We can now get answers without fully articulating the question itself.
+It's impressive.
 So, goodbye to the fear of asking foolish questions in StackOverflow.
-There is no more shame because AI systems are not trolling us anymore (yet).
-What's better, seems like AI is increasingly surpassing us in deciphering our own challenges are.
+There is no more shame because AI systems are trained for not trolling us anymore (yet).
+What's better, seems like AI is increasingly surpassing us in deciphering which our own challenges are.
 
 Needless to say, this is the end of software engineering as we know it.
 I expect a huge impact on the tech workforce worldwide, as this technology scales very easily (consider OpenAI's ChatGPT model, for example). 
 What will I do with the extra time now that searching for answers is no longer necessary? 
 Playing ping-pong with my colleagues?
 Or maybe I'll just go back to the old days, when I used to read books and spend quality time with the family.
+Brand new human problems. 
 
-The tide of public skepticism regarding the future of Computer Science (as a career) is rising.
+On the other hand, the tide of public skepticism regarding the future of Computer Science (as a career) is rising.
 Formal Computer Science education is [feeling the pressure](https://www.reddit.com/r/learnprogramming/comments/1173hy3/is_ai_going_to_make_my_cs_degree_useless/).
 At the same time, the number of devs ~~kicked out from~~ leaving the industry is increasing.
 This is alarming to me.
@@ -139,7 +142,7 @@ But don't worry.
 There is still hope.
 We still have a few years left for us to adapt and improve.
 And maybe we can all keep our jobs after all.
-I'm talking, of course, about jump into trend to become a successful prompt engineer.
+I'm talking, of course, about jumping into the new wave to become successful prompt engineers.
 
 But fist, let's define our terms.
 
@@ -149,7 +152,7 @@ The time has come for us, prompters to establish our formal manifesto.
 
 Here it is:
 
-> “ 
+> “<br>
 > We, the prompters, are the new breed of programmers.<br>
 > We are the experts in crafting prompts that empower AI to solve our problems.<br>
 > We take all the credit from the solutions we derive.<br>
@@ -166,7 +169,7 @@ Here it is:
 > 
 > We prompted an AI to help us write this manifesto.<br>
 > We will keep improving it.<br>
-> We will prompt a more powerful AI in the future to write it better.
+> We will prompt a more powerful AI in the future to write it better.<br>
 > ”
 
 Now that we have defined who we are, what we do, and what we don't do, let's explore how to become a successful prompter.
@@ -177,9 +180,9 @@ Now that we have defined who we are, what we do, and what we don't do, let's exp
     <em>“Prompting is not about writing questions. It's a way of looking at and solving problems.”</em> 
 </aside>
 
-The successful has a clear objective in mind.
-She really understands how AI actually works.[^2]
-This is necessary to know how to craft the best prompts.
+The successful has a clear objective in mind (It's not making more money).
+To reach the objective, he or she really understands how AI actually works.[^2]
+This is necessary in oder to craft the best prompts.
 Understanding the keywords from the domain and the context are key.
 
 The successful prompter knows how to apply the principles of clear communication.
