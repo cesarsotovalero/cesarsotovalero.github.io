@@ -31,7 +31,7 @@ Googling and reading Q&A threads in StackOverflow is less appealing than what it
 Definitely something is happening to me, and it's not just the usual slump.
 But at the same time, it looks like my ~~laziness~~ efficiency has increased considerably.
 Contradictory, uhm?
-After giving it some thought, I think to understand what's going on: I'm **transitioning into a prompter**!
+After giving it some thought, I'm starting to understand what's going on: I'm **transitioning into a prompter**!
 Let me tell you what it is about.
 
 <figure class="jb_picture">
