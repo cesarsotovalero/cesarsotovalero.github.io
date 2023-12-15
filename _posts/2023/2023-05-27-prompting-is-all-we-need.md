@@ -22,7 +22,7 @@ published: true
 
 I'm a software engineer at heart.
 Consequently, a big chunk of my world revolves around solving problems with code. 
-Lately, though, I've found myself avoiding writing code (and everything else in text format).
+Lately, though, I've found myself avoiding the code writing labor (and everything else in text format).
 I consider writing as one of the most gratifying activities (once the written piece is done, of course).
 So what has changed?
 I've even lost interest in looking at ~~poorly written~~ new API documentation.
