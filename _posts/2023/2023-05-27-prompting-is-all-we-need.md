@@ -105,7 +105,7 @@ There is still a necessary ingredient to fuel the AI machinery: the prompts.
 We still need humans to craft them.
 So a new class of programmer has emerged.
 Those who excel at writing effective prompts to tackle programming issues. 
-Let me introduce you to **the prompters**.
+Let me introduce you to the **prompter**.
 
 The prompter's daily task is to ask fine-tuned questions.
 For that, sometimes it's necessary to embody the inquisitive spirit of Socrates, or perhaps that of a 5-year-old child (depending on how much money do you make).
