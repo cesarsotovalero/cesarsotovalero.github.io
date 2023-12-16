@@ -123,7 +123,7 @@ Yes, it's the exact same thing we used to do every day when searching Google and
 The difference now lies in the speed and quality of the responses we receive.
 We're able to get answers without having to fully articulate our questions. 
 It's impressive.
-So, say goodbye to the fear of posing seemingly foolish questions on StackOverflow (RIP, StackOverflow).
+So, say goodbye to the fear of posting seemingly foolish questions on StackOverflow (RIP StackOverflow).
 There is no more shame because AI systems are ~~still~~ trained specifically for not trolling us anymore (thank you for that, Reinforcement Learning).
 What's better, seems like AI is increasingly surpassing us in deciphering which our own challenges are.
 
