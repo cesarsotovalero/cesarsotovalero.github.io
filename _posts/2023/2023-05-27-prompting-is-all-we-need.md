@@ -139,12 +139,13 @@ At the same time, the number of devs ~~kicked out from~~ leaving the industry is
 This is alarming to me.
 
 But don't worry.
-There is still hope.
-We still have a few years left for us to adapt and improve.
+There is still some hope.
+The end is near but not here yet. 
+We still have a few years left for us to adapt and redirect our skills.
 And maybe we can all keep our jobs after all.
 I'm talking, of course, about jumping into the new wave to become successful prompt engineers.
 
-But fist, let's define our terms.
+But fist, let's set the terms.
 
 # The Prompt Engineer Manifesto
 
@@ -181,9 +182,9 @@ Now that we have defined who we are, what we do, and what we don't do, let's exp
 </aside>
 
 The successful prompt engineer has a clear objective in mind (you're wrong, it's not making more money).
-To reach the objective, he or she should really understands how AI actually works.[^2]
+To reach the objective, we should really understands how AI actually works.[^2]
 This is necessary in oder to craft the best prompts.
-The key skills involve language comprehension, understanding of the domain specific keywords, and the context itself.
+The key skills to sharp involve language comprehension, understanding of the domain specific keywords, and the context itself.
 
 The successful prompt engineer knows how to apply the principles of clear communication.
 It's about being concise, precise, and unambiguous.
@@ -195,7 +196,7 @@ The successful prompter doesn't give up easily.
 Sometimes one needs to experiment with different variations of prompts and evaluates the model's responses.
 When the output is not so good, the successful prompt engineer knows when to flush the toilet.
 
-The successful prompter leverages AI in favor of improving her/is **learning**, **coding**, and **creativity**.
+The successful prompter leverages AI in favor of improving **learning**, **coding**, and **creativity**.
 
 ## Prompting for Learning
 
@@ -327,13 +328,15 @@ Here are some of my favorite prompts, most of them are inspired or modified from
 
 # Conclusion
 
-The end of software engineering as we know knocked on our doors and entered the room.
-Prompting is the brand new coding mode for us developers.
-Not only to solve coding problems, but to solve many other issues.
-So in the era when data is gold, prompt engineers are the new gold miners.
-Stay tuned because we'll soon start prompting with our voice, with images, with videos, with text, with code, with everything.
+The end of software engineering as we know is here. 
+AI has knocked on our door, and entered our workplace.
+But AI still needs us. 
+Prompt enginnering is the brand new coding mode for us developers.
+Not only to write software, but to solve many other issues.
+So in the era when data is gold, prompt engineers could be the miners.
+Stay tuned because we'll soon start prompting with our voice, images, videos, everything.
 Websites will feature their own AI system, optimized specifically for their platform.
-
+The future is as uncertain as it is exciting. 
 
 # Resources
 
