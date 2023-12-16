@@ -4,7 +4,7 @@ title: Prompting is All We Need
 subtitle: Is this the end of software engineering as we know it?
 tags: sarcasm
 description: |
-  Today's AI systems can generate code cheaper and faster than us. But AI still craves guidance. So, prompt engineering is revolutionizing software development as we know it. The traditional era of software engineering is nearing its end. Coding practices are evolving, and so are we!
+  Today's AI-powered systems can generate code cheaper and faster than developers. The new era of automated text generation has come to us developers. And with it, there comes a new batch of fresh challenges. Fortunately, AI still craves human guidance. Effective prompt engineering is revolutionizing software development as we know it. And just as the technology evolves, so do we!
 keywords:
   - ChatGPT,
   - prompt engineering,
@@ -21,17 +21,17 @@ published: true
 ---
 
 I'm a software engineer at heart.
-Consequently, a big chunk of my world revolves around solving problems with code. 
-Lately, though, I've found myself avoiding the code writing labor (and everything else in text format).
-I consider writing as one of the most gratifying activities (once the written piece is done, of course).
+Consequently, a big chunk of my time revolves around writing code to solve problems.
+Lately, though, I've found myself putting aside the code-writing labor and everything else that involves text generation format.
+Still, I consider writing one of the most gratifying activities (especially once it is finished, of course).
 So what has changed?
 I've even lost interest in looking at ~~poorly written~~ new API documentation.
 I'm perceiving books, articles, and even tweets as too large and/or out of focus.
-Googling and reading Q&A threads in StackOverflow is less appealing than what it used to be.
-Definitely something is happening to me, and it's not just the usual slump.
+Googling and reading Q&A threads in StackOverflow are less appealing than what they used to be.
+Definitely, something is happening to me, and it's not just the usual slump.
 But at the same time, it looks like my ~~laziness~~ efficiency has increased considerably.
 Contradictory, uhm?
-After giving it some thought, I'm starting to understand what's going on: I'm **transitioning into a prompter**!
+After giving it some thought, I'm starting to understand what's going on: I'm **transitioning** into a prompt engineer!
 Let me tell you what it is about.
 
 <figure class="jb_picture">
@@ -52,7 +52,7 @@ I'm too young to know exactly what they were called.
 Anyway, they were an unusual breed of people.
 Mathematicians, physicists, or pure engineers who mastered cryptic programming languages to tackle practical and scientific problems.[^3]
 These individuals possessed advanced reasoning skills. 
-They could understand complex systems (such as those for financial transactions, perdurable code written in COBOL), and implement algorithms like QuickSort in 5 minutes or less.
+They could understand complex systems written in COBOL (such as those for financial transactions), and implement algorithms like QuickSort in 5 minutes or less.
 
 But that was a long time ago when software was still [eating the world](https://a16z.com/why-software-is-eating-the-world/).
 Nowadays, software is everywhere.
@@ -62,21 +62,21 @@ Anyway, its output is indispensable, just like salt for our food.
 In every industry, in every company, in every home, software is a necessary ingredient.
 So the crew of software cookers has grown at a very fast speed.
 But the world had not enough mathematicians, or engineers, to satisfy the demand for programmers.[^6]
-And as with any other industry, the higher the demand, the bigger the push humanity makes in order to improve the tools to simplify the production machinery.
+And as with any other industry, the higher the demand, the bigger the push humanity makes in order to make the production machinery more productive.
 
 Over the past two decades, a new class of "programmers" has emerged and permeated the industry: **software developers**.
 The prerequisites have shifted dramatically.
 The average software developer doesn't need to understand [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) anymore to get a decent job offer.
 Indeed, it's not even necessary to know how a computer actually works.[^5]
-It's enough to master a particular framework, a library, or even a single digital tool (long live the Excel).
-And bang! 
+It's enough to master a particular framework, a library, or even a single digital tool (long live the Excel spreadsheet!).
+And that's it.
 The wheels that keep software product lines moving are ready to go.
 
 But I've seen the panorama shifting in the last few months.
 What if I told you that knowing how to code is no longer necessary?
 Yes, that's right
 Because now [computers can generate code for us](https://doi.org/10.5281/zenodo.7644359), automatically.
-I'm not talking about in-IDE code generation tools, such as templates, or refactoring aids.
+I'm not talking about in-IDE code generation tools, such as templates or advanced refactoring tricks.
 I mean entire applications written by AI, from scratch.
 And not only code, everything that is digital can be AI-generated too.
 Even the boring stuff, like bug reports, code comments, and meeting minutes.
@@ -92,7 +92,7 @@ Once trained, the model can generate meaningful text responses to a given **prom
 Interestingly, it appears that [code generation](https://dl.acm.org/doi/pdf/10.1145/3545945.3569759) is one of the most simple tasks for these models.
 So we developers are not as special as we thought, ouch.
 In other words, AI can write reasonably good code faster and cheaper than us.
-But this article is not about AI replacing developers (I wrote about it [here](../blog/surviving- the-ai-revolution-as-a-software-engineer.html, check it out).
+But this article is not about AI replacing developers (I wrote about it [here](../blog/surviving- the-ai-revolution-as-a-software-engineer.html)).
 I believe that the price of every single line of code will decrease its value dramatically in the coming years.
 It's [supply and demand](https://en.wikipedia.org/wiki/Supply_and_demand), there's nothing we can do about it.
 
@@ -100,30 +100,30 @@ It's [supply and demand](https://en.wikipedia.org/wiki/Supply_and_demand), there
     <em>“You are my master! Was that your first wish? Three wishes are yours to command...” - <cite>Aladdin and the Magic Lamp</cite></em> 
 </aside>
 
-However, there is a catch.
-There is still a necessary ingredient to fuel the AI machinery: the prompts.
-We still need humans to craft them.
-So a new class of programmer has emerged.
-Those who excel at writing effective prompts to tackle programming issues. 
-Let me introduce you to the **prompter**.
+However, there's a catch. 
+A critical component is still essential to fuel the AI machinery: the prompts.
+Human expertise is necessary to craft these prompts. 
+Consequently, a new category of programmer has emerged.
+These are the individuals who specialize in creating effective prompts to tackle coding challenges. 
+Let me introduce you to the **prompt engineer**.
 
-The prompter's daily task is to ask fine-tuned questions.
-For that, sometimes it's necessary to embody the inquisitive spirit of Socrates, or perhaps that of a 5-year-old child (depending on how much money do you make).
+The prompt engineer daily task is to ask fine-tuned questions.
+For that, sometimes it's necessary to embody the inquisitive spirit of Socrates, or perhaps that of a 5-year-old child (depending on how much money you intend to make out of it).
 The job is fundamentally [about crafting queries](https://asianjde.com/ojs/index.php/AsianJDE/article/download/749/405) in natural language, for example:
-"I got the following log message, how to fix the problem?," 
-"I have a list of items, write an algorithm to sort them?,"
+"I got the following log message, how to fix the problem?," or
+"I have a list of items, write an algorithm to sort them?," or
 "My boss doesn't understand technical debt, what should I do?"
-The next step is straightforward, just taking the AI-generated response and integrating it into the appropriate context, often directly to the production environment.
+The next step is straightforward, just taking the AI-generated response and integrating it into the appropriate context, often directly copy/pasting to the production environment.
 Pure magic!
 
-But perhaps this isn't magic after all.
+But perhaps this isn't so magical after all.
 Doesn't it look familiar to you?
 Yes, it's the exact same thing we used to do every day when searching Google and looking at Q&A threads in StackOverflow.
-The big difference now is the speed and quality at which the answers are sent back to us.
-We can now get answers without fully articulating the question itself.
+The significant change now lies in the speed and quality of the responses we receive.
+We're able to get answers without having to fully articulate our questions
 It's impressive.
-So, goodbye to the fear of asking foolish questions in StackOverflow.
-There is no more shame because AI systems are trained for not trolling us anymore (yet).
+So, say goodbye to the fear of posing seemingly foolish questions on StackOverflow (RIP, StackOverflow).
+There is no more shame because AI systems are ~~still~~ trained specifically for not trolling us anymore (thank you for that, Reinforcement Learning).
 What's better, seems like AI is increasingly surpassing us in deciphering which our own challenges are.
 
 Needless to say, this is the end of software engineering as we know it.
@@ -131,7 +131,7 @@ I expect a huge impact on the tech workforce worldwide, as this technology scale
 What will I do with the extra time now that searching for answers is no longer necessary? 
 Playing ping-pong with my colleagues?
 Or maybe I'll just go back to the old days, when I used to read books and spend quality time with the family.
-Brand new human problems. 
+A set of brand new human problems are coming to us. 
 
 On the other hand, the tide of public skepticism regarding the future of Computer Science (as a career) is rising.
 Formal Computer Science education is [feeling the pressure](https://www.reddit.com/r/learnprogramming/comments/1173hy3/is_ai_going_to_make_my_cs_degree_useless/).
@@ -146,14 +146,14 @@ I'm talking, of course, about jumping into the new wave to become successful pro
 
 But fist, let's define our terms.
 
-# The Prompter Manifesto
+# The Prompt Engineer Manifesto
 
-The time has come for us, prompters to establish our formal manifesto.
+The time has come for us, successful prompt engineers, to announce our manifesto.
 
 Here it is:
 
 > “<br>
-> We, the prompters, are the new breed of programmers.<br>
+> We, the prompt engineers, are the new breed of programmers.<br>
 > We are the experts in crafting prompts that empower AI to solve our problems.<br>
 > We take all the credit from the solutions we derive.<br>
 > We take the paychecks too.<br>
@@ -172,34 +172,34 @@ Here it is:
 > We will prompt a more powerful AI in the future to write it better.<br>
 > ”
 
-Now that we have defined who we are, what we do, and what we don't do, let's explore how to become a successful prompter.
+Now that we have defined who we are, what we do, and what we don't do, let's explore how to become successful at the job.
 
-# The Successful Prompter
+# The Successful Prompt Engineer
 
 <aside class="quote">
     <em>“Prompting is not about writing questions. It's a way of looking at and solving problems.”</em> 
 </aside>
 
-The successful has a clear objective in mind (It's not making more money).
-To reach the objective, he or she really understands how AI actually works.[^2]
+The successful prompt engineer has a clear objective in mind (you're wrong, it's not making more money).
+To reach the objective, he or she should really understands how AI actually works.[^2]
 This is necessary in oder to craft the best prompts.
-Understanding the keywords from the domain and the context are key.
+The key skills involve language comprehension, understanding of the domain specific keywords, and the context itself.
 
-The successful prompter knows how to apply the principles of clear communication.
+The successful prompt engineer knows how to apply the principles of clear communication.
 It's about being concise, precise, and unambiguous.
 That way one can tweak the prompt to get the best results.
 If in doubt, it may even involve calling another AI to write the prompt. 
 Recursive prompting!
 
 The successful prompter doesn't give up easily.
-She experiments with different variations of prompts and evaluates the model's responses.
+Sometimes one needs to experiment with different variations of prompts and evaluates the model's responses.
 When the output is not so good, the successful prompt engineer knows when to flush the toilet.
 
-The successful prompter leverages AI in favor of improving **learning**, **coding**, and **creativity**.
+The successful prompter leverages AI in favor of improving her/is **learning**, **coding**, and **creativity**.
 
 ## Prompting for Learning
 
-The successful prompter knows how to use AI to learn new stuff.
+The successful prompt engineer knows how to use AI to learn new stuff.
 
 Here are 5 examples:
 
@@ -211,7 +211,7 @@ Here are 5 examples:
 
 ## Prompting for Coding
 
-The successful prompter knows how to use AI to write ~~better~~ code.
+The successful prompt engineer knows how to use AI to write ~~better~~ code.
 
 Here are 5 examples:
 
@@ -223,7 +223,7 @@ Here are 5 examples:
 
 ## Prompting for Creativity
 
-The successful prompter knows how to apply the new stuff just learned to do something that cannot be done by prompting.
+The successful prompt engineer knows how to apply the new stuff just learned to do something that cannot be done by prompting.
 
 Here are 5 examples:
 
@@ -235,7 +235,7 @@ Here are 5 examples:
 
 # Prompts' Wall of Fame
 
-Here are some of my favorite prompts, most of them are inspired/modified from <i class="fab fa-github"></i> [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts):
+Here are some of my favorite prompts, most of them are inspired or modified from <i class="fab fa-github"></i> [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts):
 
 [//]: # (Proofreader)
 <details>
@@ -327,12 +327,13 @@ Here are some of my favorite prompts, most of them are inspired/modified from <i
 
 # Conclusion
 
-Prompting is the new coding mode.
-Not only to solve coding problems, but to solve any other problem.
-So in the era of data as a gold, prompters are the new gold miners.
+The end of software engineering as we know knocked on our doors and entered the room.
+Prompting is the brand new coding mode for us developers.
+Not only to solve coding problems, but to solve many other issues.
+So in the era when data is gold, prompt engineers are the new gold miners.
 Stay tuned because we'll soon start prompting with our voice, with images, with videos, with text, with code, with everything.
 Websites will feature their own AI system, optimized specifically for their platform.
-The end of software engineering as we know it is knocking on our doors.
+
 
 # Resources
 
