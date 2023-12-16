@@ -102,7 +102,7 @@ It's [supply and demand](https://en.wikipedia.org/wiki/Supply_and_demand), there
 
 However, there's a catch. 
 A critical component is still essential to fuel the AI machinery: the prompts.
-Human expertise is necessary to craft these prompts. 
+Human expertise is necessary to properly craft the questions for the AI systems. 
 Consequently, a new category of programmer has emerged.
 These are the individuals who specialize in creating effective prompts to tackle coding challenges. 
 Let me introduce you to the **prompt engineer**.
