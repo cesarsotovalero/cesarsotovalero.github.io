@@ -113,7 +113,8 @@ The job is fundamentally [about crafting queries](https://asianjde.com/ojs/index
 "I got the following log message, how to fix the problem?," or
 "I have a list of items, write an algorithm to sort them?," or
 "My boss doesn't understand technical debt, what should I do?"
-The next step is straightforward, just taking the AI-generated response and integrating it into the appropriate context, often directly copy/pasting to the production environment.
+The next step is straightforward, just taking the AI-generated response and integrating it into the appropriate context. 
+Often directly copy/pasting the response to the production environment is enough.
 Pure magic!
 
 But perhaps this isn't so magical after all.
