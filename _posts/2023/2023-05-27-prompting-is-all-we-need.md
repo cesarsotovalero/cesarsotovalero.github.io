@@ -22,7 +22,7 @@ published: true
 
 I'm a software engineer at heart.
 Consequently, a big chunk of my time revolves around writing code to solve problems.
-Lately, though, I've found myself putting aside the code-writing labor and everything else that involves text generation format.
+Lately, though, I've found myself putting aside the code-writing labor and everything else in text format.
 Still, I consider writing one of the most gratifying activities (especially once it is finished, of course).
 So what has changed?
 I've even lost interest in looking at ~~poorly written~~ new API documentation.
