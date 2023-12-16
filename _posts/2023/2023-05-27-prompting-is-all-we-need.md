@@ -70,7 +70,7 @@ The average software developer doesn't need to understand [Fourier Series](https
 Indeed, it's not even necessary to know how a computer actually works.[^5]
 It's enough to master a particular framework, a library, or even a single digital tool (long live the Excel spreadsheet!).
 And that's it.
-The wheels that keep software product lines moving are ready to go.
+The wheels that keep software product lines keep going on. 
 
 But I've seen the panorama shifting in the last few months.
 What if I told you that knowing how to code is no longer necessary?
