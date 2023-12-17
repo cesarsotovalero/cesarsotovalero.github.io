@@ -37,7 +37,7 @@ Let me tell you what it is about.
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-05-27/pino_pizza.jpg alt:"The future of software will have the same destiny that pizza production" %}
   <figcaption class="stroke"> 
-    &#169; Do you know how to make a pizza from scratch? I don't, and I'm afraid the same will happen in the software industry: only a few will know! Photo of miniature model of the Pizzeria Pino, the fist Stockholm's pizzeria, funded in 1976, and exposed in the <a href="https://maps.app.goo.gl/ohfdw8atqpv2WjiTA">Stockholm Stadsmuseet</a>.
+    &#169; Do you know how to make a pizza from scratch? I don't, and I'm afraid the same will happen with the software industry! Photo of miniature model of the Pizzeria Pino, the first Stockholm's pizzeria, funded in 1976, and exposed in the <a href="https://maps.app.goo.gl/ohfdw8atqpv2WjiTA">Stockholm Stadsmuseet</a>.
   </figcaption>
 </figure>
 
