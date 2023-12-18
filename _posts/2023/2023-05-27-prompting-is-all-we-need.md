@@ -162,7 +162,7 @@ Here it is:
 >
 > We create value through innovative ideas.<br>
 > We have regular meetings to brainstorm new ideas and create better prompts. <br>
-> We break down complex problems intro promptable smaller components.<br>
+> We break down complex problems into promptable smaller components.<br>
 > We don't write bugs, AI does.<br>
 >
 > We encourage a culture of lifelong prompting and skill enhancement.<br>
