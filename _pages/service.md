@@ -11,7 +11,7 @@ published: true
 > My verified reviews for journals can be seen in the [Web of Science](https://www.webofscience.com/wos/author/record/AAB-9333-2019).
 
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2023
-- [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2022s
+- [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2022
 - [International Journal of Computer Science in Sport](https://sciendo.com/journal/IJCSS), 2021
 - [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021
 - [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019
