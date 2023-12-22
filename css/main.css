@@ -388,6 +388,11 @@ a[href^="https://www.kth.se/social/course/"] {
   padding-left: 30px;
 }
 
+a[href^="https://www.webofscience.com"] {
+  background: transparent url(/img/icons/wos.svg) no-repeat center left;
+  padding-left: 30px;
+}
+
 a[href$=".pdf"] {
   background: transparent url(/img/icons/pdf20px.svg) no-repeat center left;
   padding-left: 22px;
