@@ -20,24 +20,28 @@ author: cesarsotovalero
 published: false
 ---
 
-My writing process:
-I start with 3 questions at the top:
-- What problem am I solving?
-- What are the benefits of solving it?
-- What emotion am I generating?
-From these questions, I create:
-- At least 5 headlines
-- The bullet point summary
-Then I fill in the details.
+[//]: # (My writing process:)
+[//]: # (I start with 3 questions at the top:)
+[//]: # (- What problem am I solving?)
+[//]: # (- What are the benefits of solving it?)
+[//]: # (- What emotion am I generating?)
+[//]: # (From these questions, I create:)
+[//]: # (- At least 5 headlines)
+[//]: # (- The bullet point summary)
+[//]: # (Then I fill in the details.)
+
 
 TODO
+
+---
+[//]: # (======================================================================================)
 
 # IMAGE
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-MM-DD/IMG.jpg alt:"TODO" %}
   <figcaption class="stroke"> 
-    TODO
+    &#169; TODO
   </figcaption>
 </figure>
 

@@ -2,14 +2,15 @@
 permalink: service.html
 layout: page
 title: Service
-subtitle: Additional work
+subtitle: Side work
 published: true
 ---
 
-# Reviewer
+# Academic Reviewer
 
 > My verified reviews for journals can be seen in the [Web of Science](https://www.webofscience.com/wos/author/record/AAB-9333-2019).
 
+- [SoftwareX](https://www.sciencedirect.com/journal/softwarex), 2023
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2023
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2022
 - [International Journal of Computer Science in Sport](https://sciendo.com/journal/IJCSS), 2021
@@ -22,7 +23,7 @@ Also,
 
 - [EOLANG and &phi;-calculus](https://arxiv.org/abs/2111.13384), 2021 (my name is listed in the acknowledgments)
 
-# Co-Reviewer
+# Academic Co-Reviewer
 
 - [ICST](https://conf.researchr.org/home/icst-2023), 2023
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2022
@@ -70,7 +71,7 @@ Also,
 
 - [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
 
-- [WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
+- [:earth_americas: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
 
 - [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2021
 
@@ -88,7 +89,7 @@ Also,
 
 - [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), given by [Linda Kann](http://www.csc.kth.se/~lk) at KTH, Fall 2019
 
-- [WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2019
+- [:earth_americas: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2019
 
 - [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Spring 2019
 

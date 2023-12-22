@@ -191,7 +191,6 @@ blockquote {
   border-left-width: 4px;
   border-radius: 0px 5px 5px 0px;
   font-family: "Equity Text A", 'Source Sans Pro', sans-serif;
-
 }
 
 /* Details */
@@ -372,6 +371,11 @@ a[href^="https://coursera.org/"] {
 a[href^="https://courses.edx.org/"] {
   background: transparent url(/img/icons/edx.svg) no-repeat center left;
   padding-left: 45px;
+}
+
+a[href^="https://www.kth.se/student/kurser/"] {
+  background: transparent url(/img/icons/kth.svg) no-repeat center left;
+  padding-left: 30px;
 }
 
 a[href^="https://www.kth.se/student/kurser/"] {
