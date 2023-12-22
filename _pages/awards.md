@@ -25,14 +25,9 @@ published: true
 
 # Academic Degrees
 
-- **PhD in Computer Science**, _KTH Royal Institute of Technology_, Sweden, 2023
-  - [Original PhD Degree](../files/certificates/2023_PhD_Degree_Certificate.pdf)
-- **MSc in Computer Science**, _Universidad Central "Marta Abreu" de Las Villas_, Cuba, 2016
-  - [Original MSc Degree in Spanish]()
-  - [Official English Translation](../files/certificates/MSc_Degree_(certified)_eng.pdf)
-- **BSc in Computer Science**, _Universidad Central "Marta Abreu" de Las Villas_, Cuba, 2013
-  - [Original BSc Degree in Spanish](../files/certificates/BSc_Degree_Original.pdf)
-  - [Official English Translation](../files/certificates/BSc_Degree_(certified)_eng.pdf)
+- [**PhD in Computer Science**](../files/certificates/2023_PhD_Degree_Certificate.pdf), _KTH Royal Institute of Technology_, Sweden, 2023
+- [**MSc in Computer Science**](../files/certificates/MSc_Degree_(certified)_eng.pdf), _Universidad Central "Marta Abreu" de Las Villas_, Cuba, 2016
+- [**BSc in Computer Science**](../files/certificates/BSc_Degree_Original.pdf), _Universidad Central "Marta Abreu" de Las Villas_, Cuba, 2013
 
 --- 
 
