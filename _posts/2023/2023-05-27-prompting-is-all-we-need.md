@@ -32,7 +32,7 @@ Definitely, something is happening to me, and it's not just the usual slump.
 But at the same time, it looks like my ~~laziness~~ efficiency has increased considerably.
 Contradictory, uhm?
 After giving it some thought, I'm starting to understand what's going on: I'm **transitioning** into a prompt engineer!
-Let me tell you what it is about.
+Lets think about it step by step!
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-05-27/pino_pizza.jpg alt:"The future of software will have the same destiny that pizza production" %}
