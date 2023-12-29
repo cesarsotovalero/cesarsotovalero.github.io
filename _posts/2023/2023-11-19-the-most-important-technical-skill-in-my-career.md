@@ -37,7 +37,6 @@ A great place to start is at Kaggle i a lot of datasets and a lot of notebooks.
 
 TODO
 
-
 - EDA is a fundamental skill
 - AI struggles with EDA because it needs business context
 - EDA is great for impressing managers
