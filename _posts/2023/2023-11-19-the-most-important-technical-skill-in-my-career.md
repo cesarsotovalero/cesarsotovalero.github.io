@@ -45,6 +45,8 @@ TODO
 - For example, you can use EDA to analyze the dependencies of projects
 
 
+gglot leverages the Grammar of Graphics. 
+
 # About charts
 
 Colors are loaded with symbolisms, shades of greys less so.
