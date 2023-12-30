@@ -21,6 +21,8 @@ author: cesarsotovalero
 published: false
 ---
 
+The main purpose of an Exploratory Data Analysis is to aggregate and visualize basic statistical information.
+
 [//]: # (My writing process:)
 [//]: # (I start with 3 questions at the top:)
 [//]: # (- What problem am I solving?)
@@ -31,8 +33,9 @@ published: false
 [//]: # (- The bullet point summary)
 [//]: # (Then I fill in the details.)
 
-TODO
+A great place to start is at Kaggle i a lot of datasets and a lot of notebooks.
 
+TODO
 
 - EDA is a fundamental skill
 - AI struggles with EDA because it needs business context
@@ -41,6 +44,20 @@ TODO
 - For example, I have used EDA for sports analytics, for research, and later at work.
 - For example, you can use EDA to analyze the dependencies of projects
 
+
+gglot leverages the Grammar of Graphics. 
+
+# About charts
+
+Colors are loaded with symbolisms, shades of greys less so.
+Conjugating colors is a very subtle art that is easy to underestimate.
+
+Steps to make plots better:
+1. Define a single narrative (message)
+2. Choose the right chart type
+3. Simplify to avoid information overload (e.g., no more than 3 colors)
+4. Use the caption to synthesize the message, not the chart itself. 
+5. Check for message bias using a third party.
 
 # IMAGE
 
@@ -53,48 +70,6 @@ TODO
   </figcaption>
 </figure>
 
-# QUOTE
-
-> “TODO”
-> ― <cite><a href="URL">FULANO DE TAL</a></cite>
-
-# SIDE QUOTE
-
-<aside class="quote">
-    <em>“TODO.”</em> 
-    ― <cite><a href="URL">FULANO DE TAL</a></cite>
-</aside>
-
-# SIDE IMAGE
-
-{% badge /img/badges/fundamentals-of-software-architecture-book.png 140 https://amzn.to/2VMCwVF %}
-
-# DIAGRAM
-
-[//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
-%%{init: {'theme':'base'}}%%
-flowchart TB;
-U(["👩 User"]) --> |"📒 Plaintext"| C["Encryption Process"]
-KEY["🔑 Symmetric Key"]
-KEY --> C
-C --> K["🔒 Ciphertext"]
-K --> F["Decryption Process"]
-KEY --> F
-F --> G["📒 Plaintext"]
-{% endmermaid %}
-
-# CODE
-
-{% highlight java linenos %}
-TODO
-{% endhighlight %}
-
-# VIDEO
-
-<div class="container-youtube">
-  <iframe width="560" height="349" src="https://www.youtube.com/embed/IrFS2e-4gqU" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 # Resources
 
