@@ -64,7 +64,7 @@ The core idea of my first tool, DepClean, is to remove unused dependencies (a.k.
 In other words, it is about getting rid of the software bloat coming from third-party code.
 This involves the analysis and transformation of **dependency trees** in order to remove completely unused dependencies.
 
-> "Imagine your computer program has a big, messy tree with branches representing different parts that are called dependencies or packages. Some branches are helpful, while others are just in the way. DepClean's job is to trim away those unnecessary branches, getting rid of the clutter coming from the unnecessary dependencies that are added over time."
+> "Imagine your computer program as a big, messy tree with components connected to different parts that are called dependencies or packages. Some of them are helpful, while others are just in the way. DepClean's job is to trim away the unnecessary branches, getting rid of the clutter coming from the unuseful dependencies that are added over time."
 
 We wanted to illustrate this idea in a simple way.
 In the comic, the superhero of our story (me) uses DepClean to snip away the unneeded branches of dependencies from his program's dependency tree, keeping it clean.
