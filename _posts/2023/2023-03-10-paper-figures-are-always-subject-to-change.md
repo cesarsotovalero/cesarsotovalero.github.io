@@ -24,8 +24,8 @@ There is one ~~painful~~ truth about the process of writing research papers that
 It seems that the journey of figures (and other kinds of visualizations) in research papers is an ever-evolving narrative.
 From the seed of a novel idea blooming on an initial whiteboard sketch, to the final (polished) figure that ends up published, there is a long and winding road of iterations, revisions, and adaptations.
 I have personally experienced this phenomenon emerging in all of my research papers, and I've seen it happen to my colleagues as well.
-In this article, I'll make an attempt to demystify the process of crafting paper figures by using an example from one of my papers (i.e., Figure 2 from [this paper](https://arxiv.org/pdf/2302.08370.pdf)).
-By providing insights into the transformations that this particular figure undergo throughout the research process (before publication).
+In this article, I'll make an attempt to demystify the process of crafting paper figures by using an example from Figure 2 of [my recent paper](https://arxiv.org/pdf/2302.08370.pdf).
+I'll give you insights on the transformations that this particular figure underwent throughout the research process before its publication.
 Reading this article could help researchers to cope with the inevitable back and forward, and for non-academics to foresee the amount of work that goes into crafting each one of those ~~beautiful~~ figures that get finally stamped on papers.
 
 <figure class="jb_picture">
