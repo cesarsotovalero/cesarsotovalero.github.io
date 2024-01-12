@@ -119,7 +119,7 @@ It consists of a series of questions about how to design a software system.
 For example, how to design a social network, a search engine, a video streaming service, etc.
 The goal is to test your ability to design a system that meets certain requirements (e.g., performance, scalability, maintainability, etc.).
 The requirements are usually not clear upfront, so your task is to ask questions in order to clarify them.
-Overall, the main goal if the interviewer is to determine if you have **ground knowledge** about how large software systems work and **experience** at working with such systems.
+Overall, the main goal of the interviewer is to determine if you have **ground knowledge** about how large software systems work and **experience** at working with such systems.
 
 To be honest, I initially found myself unfamiliar with the intricacies of designing complex, real-world software systems. 
 As a researcher, my expertise was more rooted in the realm of algorithms, data structures, and [open-source software development](../software.html).
