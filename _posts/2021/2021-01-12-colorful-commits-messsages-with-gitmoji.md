@@ -18,6 +18,8 @@ author: cesarsotovalero
 published: true
 ---
 
+
+
 [//]: # (My writing process:)
 [//]: # (I start with 3 questions at the top:)
 [//]: # (- What problem am I solving?)
