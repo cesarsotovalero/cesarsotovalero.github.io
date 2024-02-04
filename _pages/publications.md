@@ -155,6 +155,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   César Soto-Valero, Amine Benelallam, Nicolas Harrand, Olivier Barais, and Benoit Baudry. 
   _16th International Conference on Mining Software Repositories (MSR), Montreal, Canada, 2019_. 
   <a href="https://dx.doi.org/10.1109/MSR.2019.00059"><i class="icon i-doi"></i> 10.1109/MSR.2019.00059</a>
+  [<i class="fab fa-github"></i> Experiments](https://github.com/cesarsotovalero/msr-2019)
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> 
   <img alt="award" title="Data Showcase Award" src="../../img/pages/publications/award.png" height="30px"> 
@@ -162,12 +163,14 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   Amine Benelallam, Nicolas Harrand, César Soto-Valero, Benoit Baudry, and Olivier Barais. 
   _16th International Conference on Mining Software Repositories (MSR), Montreal, Canada, 2019_.
   <a href="https://dx.doi.org/10.1109/MSR.2019.00060"><i class="icon i-doi"></i> 10.1109/MSR.2019.00060</a>
+  [<i class="fab fa-github"></i> Tool](https://github.com/diverse-project/maven-miner)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Assessing the Causal Impact of the 3-point Per Victory Scoring System in the Competitive Balance of LaLiga**. 
   César Soto-Valero and Miguel Pic. 
   _International Journal of Computer Science in Sport (IJCSS)_.
   <a href="https://dx.doi.org/10.2478/ijcss-2019-0018"><i class="icon i-doi"></i> 10.2478/ijcss-2019-0018</a>
+  [<i class="fab fa-github"></i> Experiments](https://github.com/cesarsotovalero/ijcss-comp-balance-laliga)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
   **Influencia de Factores Meteorológicos en la Acuicultura de Aguas Interiores**. 

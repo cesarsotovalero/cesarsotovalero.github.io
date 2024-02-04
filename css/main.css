@@ -1081,13 +1081,12 @@ logo-main a:hover {
 .post-preview a {
   text-decoration: none;
   color: var(--main-text-color);
-  /*color: #008AFF;*/
 }
 
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: var(--main-text-color);
+  color: var(--link-decoration-color);
 }
 
 .post-preview .post-title {
@@ -1228,6 +1227,11 @@ p.post-meta {
   height: 130px;
   width: 130px;
   margin: 10px;
+  border: 0.5px solid var(--post-meta-index-color);
+}
+
+.post-image img:hover {
+  border: 0.5px solid var(--link-decoration-color);
 }
 
 .post-preview .post-read-more {

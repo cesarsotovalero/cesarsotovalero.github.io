@@ -18,7 +18,7 @@ show-avatar: false
 toc: true
 date: 2023/11/19
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 The main purpose of an Exploratory Data Analysis is to aggregate and visualize basic statistical information.
@@ -45,7 +45,7 @@ TODO
 - For example, you can use EDA to analyze the dependencies of projects
 
 
-gglot leverages the Grammar of Graphics. 
+ggplot leverages the Grammar of Graphics. 
 
 # About charts
 
@@ -71,7 +71,18 @@ Steps to make plots better:
 </figure>
 
 
+# References 
+
+
 # Resources
+
+- https://github.com/ASSERT-KTH/deptrim-experiments/tree/main/notebooks/R
+- https://github.com/ASSERT-KTH/jdbl-experiments/tree/master/notebooks
+- https://github.com/ASSERT-KTH/depclean-experiments/tree/master/notebooks
+- https://github.com/chains-project/ethereum-ssc/tree/main/r_notebooks
+- https://github.com/cesarsotovalero/msr-2019s
+- https://github.com/cesarsotovalero/ijcss-comp-balance-laliga
+
 
 # Footnotes
 
