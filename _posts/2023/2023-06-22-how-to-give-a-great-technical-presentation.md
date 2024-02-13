@@ -226,7 +226,7 @@ Everyone will be interested.
 > **A:** Simply because no one gets used to being ignored.
 
 <aside class="quote">
-    <em>“Admittedly, most people give technical presentations because we want self-promotion.”</em> 
+    <em>“Admittedly, most people give technical presentations for personal-branding and self-promotion.”</em> 
 </aside>
 
 You will get recognized by being remembered.
