@@ -8,8 +8,12 @@ published: true
 
 # Speaker
 
-I present my work in academic conferences, workshops, and software companies.[^1]
+I present my work in academic and industrial conferences, workshops, and software companies.[^1]
 The following is a non-exhaustive list of my technical presentations (in reverse chronological order).
+
+# 2024
+
+- [Dancing on Thin Ice - Leveraging Software Bill of Materials in Java](https://youtu.be/Xn1ShZPrw2o?si=sP5U0PATsrdHmwK1 "video"){:target="_blank"}. Presented at [Jfokus](https://www.jfokus.se/talks/1661), Stockholm, February 2024. [Slides](https://www.jfokus.se/jfokus24-preso/Dancing-on-Thin-Ice--Leveraging-Software-Bill-of-Materials-in-Java.pdf)
   
 # 2023
 
