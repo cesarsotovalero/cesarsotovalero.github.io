@@ -18,7 +18,7 @@ show-avatar: false
 toc: true
 date: 2023/11/19
 author: cesarsotovalero
-published: true
+published: false
 ---
 
 The main purpose of an Exploratory Data Analysis is to aggregate and visualize basic statistical information.
