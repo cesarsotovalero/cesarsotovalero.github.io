@@ -39,7 +39,7 @@ TODO
 # IMAGE
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-MM-DD/IMG.jpg alt:"TODO" %}
+  {% responsive_image path: img/posts/2023/2023-MM-DD/IMG.jpg alt: "TODO" %}
   <figcaption class="stroke"> 
     &#169; TODO
   </figcaption>
