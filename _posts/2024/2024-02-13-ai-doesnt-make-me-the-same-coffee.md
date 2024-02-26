@@ -71,9 +71,9 @@ Our AI companion will provide the exact match for our needs.
 However, I'm afraid that great technological advances have also happened before.
 At those times, humans thought they were going to have more free time as well.
 Yet, we're still working 40 hours a week (just about the same as our gatherer ancestors did 5 million years ago). 
-As humans, we've seen the rise of agriculture, freeing us from the need to hunt and gather.
-We've seen the rise of the industrial revolution, freeing us from the need to produce everything by hand.
-We've seen the rise of the internet, freeing us from the need to go to the library to find information. 
+As humans, we've seen the rise of agriculture 10 000 years ago, freeing us from the need to hunt and gather.
+We've seen the rise of the industrial revolution 2 000 years ago, freeing us from the need to produce everything by hand.
+We've seen the rise of the internet in the last 30 years, freeing us from the need to go to the library to find information. 
 Do we have more free time now?
 Not really.
 Human freedom didn't happen back then and probably won't happen now with AI.
