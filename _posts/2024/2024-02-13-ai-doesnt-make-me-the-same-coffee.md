@@ -4,7 +4,7 @@ title: AI Doesn’t Make Me the Same Coffee
 subtitle: It doesn't understand wine either
 tags: ai
 description: |
-  In this post, I argue that AI is not exactly creative as we are. Humans come up with unexpected ideas and behaviors, this is what makes life interesting. Humans have an special way to connect with each other, and AI can't replicate that. AI can't drink wine, but I do (sometimes).
+  In this post, I argue that AI is not exactly creative as we are. Humans come up with unexpected ideas and behaviors, this is what makes life interesting. Humans have an special way to connect with each other, and AI can't replicate that.
 keywords:
   - artificial intelligence
   - creativity
@@ -17,7 +17,7 @@ show-avatar: false
 toc: true
 date: 2024/02/13
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 I started to consume and appreciate coffee after I moved to Sweden.
@@ -134,21 +134,24 @@ Just like the internet, AI is going to be everywhere.
 
 # Acceptance
 
-Let's accept the reality.
-Let's us fully embrace AI for a moment. 
-Let's say AI comes up with a decision.
-You have no other option other than accept it.
-How comfortable are you today with the fact that you're not in control anymore?
+Let's fully embrace the will of AI for a moment. 
+Let's say it comes up with a decision, and we have no other option other than accepting it.
+How comfortable are we going to be with the fact that we're not in control anymore?
+Not much, right?
+I'm not very enthusiastic about the idea. 
 
-For example, what about an AI selecting the right candidate for a job?
-How does it know what kind of person she is?
-Or an AI deciding who goes to jail and who doesn't?
-What if it is wrong?
+For example, what about having an AI selecting the right candidate for a job?
+It would be better at it than most humans for 80% of the cases.
+But for the remainder 20%, how does it know what kind of person we need?
+What about an AI deciding who goes to jail and who doesn't?
+It will be make the right decision for 99.9999% of the cases.
+What about the case when it is wrong?
 I don't know, but it's coming.
 
-On the other hand, the things that we thought were inherently human, like art and creativity, are now easyly replicable using AI.
+On the other hand, the things that we thought were inherently human, like art and creativity, are now easily replicable using AI.
 If in doubt, just look at the stuff created by [Midjourney.](https://www.midjourney.com/home).
 Very soon there will be AI creating 3D objects, full movies, and even entire virtual worlds.
+Take it or leave it, art will never be the same. 
 
 # The Human Experience
 
@@ -157,54 +160,55 @@ Very soon there will be AI creating 3D objects, full movies, and even entire vir
     ― <cite><a href="https://en.wikipedia.org/wiki/Jeff_Hammerbacher">Jeff Hammerbacher</a></cite>
 </aside>
 
-My generation has already chosen to make of [internet the new electricity](https://en.wikipedia.org/wiki/Right_to_Internet_access).
-And AI seems to be the new internet.
-For example, today, you can buy clothes without ever meeting the seller in person.
-With AI, you will be able to bring the seller back in a virtual form. 
-It looks like AI is just taking it further, right?
-But how much of the human experience are we sacrificing for those AI's efficiencies?
+My generation of Millennials already chosen to make of [internet the new electricity](https://en.wikipedia.org/wiki/Right_to_Internet_access).
+Now AI seems to be the brand-new internet.
+For example, today, you can buy any clothes without ever meeting the seller in person.
+With AI, you will be able to bring the seller back virtually.
+It looks like AI is just taking it further.
+
+If you go to a bar, you will soon encounter AI bartenders serving the right wine and telling you exactly what you want to hear.
+But as humans, we still crave for discrepancies, those unexpected events that occur from time to time.
+Strangely, that's what will end up remembering after all!
+How much of the human experience are we sacrificing for those AI's efficiencies?
 To what extent will these efficiencies become widely accepted?
 
 <aside class="quote">
-    <em>“I'm biased towards human interaction; I'm biased towards the human experience.”</em>
+    <em>“I'm biased towards human interaction, AI will never replace the true human experience.”</em>
 </aside>
 
-If you go to a bar, you will soon encounter AI bartenders, telling you exactly what you want to hear.
-But as humans, we still crave for discrepancies, those unexpected events that occur from time to time.
-That's what will end up remembering after all.
+Something we learned from Covid is that we need human interaction.
+People enjoy being with others.
+They watch videos on YouTube but still prefer attending live events.
 
-People enjoy being with others; they watch videos on YouTube but still attend conferences (something we learned from Covid).
-Also, humans need a sense of pride in whatever they do, something AI cannot provide.
-
-Perhaps, if AI frees up more of our time, we'll have more opportunities to do things together.
-I would rather go hiking or fishing in the mountains with my children.
-
-On the other hand, corporations are driven by financial gain, seeking any avenue that minimizes costs and maximizes revenue.
-Humans are seen as a cost, whether in food production, software development, or car sales. 
-Companies are already exploring how to eliminate human elements to optimize revenue, as that's where they see the value.
-As a customer, I highly value the human experience in many life endeavors.
+As humans, we feel a sense of pride in whatever we do well.
+Is by overcoming the struggles where we find our sense of fulfillment.
+In a future where the experience of overcoming troubles is minimized, what will be the source of our pride?
 
 # The Social Killer
-
-<aside class="quote">
-    <em>“AI systems are going to be the new social killer.”</em>
-</aside>
-
-AI will not ramble as I do.
-We are losing so many capabilities because of cell phones, because of this new ability to eliminate human interaction.
-It will be fascinating to see how AI takes this to the next level.
 
 It's always the case that we try to envision new technology in terms of practical use cases for good.
 But history has shown that technology, although intended for good, often ends up being used for nefarious purposes.
 The reality, measured against history, is unlikely to be good.
 The question is: how do we minimize that?
 
+<aside class="quote">
+    <em>“AI-powered systems menace to become new social killer.”</em>
+</aside>
+
+We are losing many social capabilities because of technology.
+Cell phones used to be the best in town to eliminate human interaction.
+AI will be better at it.
+It will be interesting to see how AI takes this to the next level.
+
 Why is social media so bad?
 Perhaps those at the top want us to become addicted to it so they can maintain their positions.
+Corporations are driven by financial gain, seeking any avenue that minimizes costs and maximizes revenue.
+Humans are seen as a cost, whether in food production, software development, or car sales.
+Companies are already exploring how to eliminate human elements to optimize revenue, as that's where they see the value.
+As a customer, I highly value the social interaction in many life endeavors.
 
 Non-verbal interaction is incredibly important.
 You meet a person and learn from the entire experience of being human.
-
 Children learn from their parents, but now they are learning from the internet.
 Thus, they start imitating what they see online, which is not beneficial.
 In a few years, we are going to see children speaking like an AI.
@@ -215,11 +219,10 @@ In a few years, we are going to see children speaking like an AI.
     <em>“For the most part of everything I do, I'm not looking for perfection, I'm rather seeking for the experience.”</em> 
 </aside>
 
-I would like to end on a positive note.
+I would like to end this seemingly pessimistic article with a positive section.
 AI has all the potential to augment the human experience to a level that we have never seen before.
-The case of VR headsets, like the recently launched Apple Vision Pro. 
-
-It seems that we are not going to lose our jobs as long as we learn how to use and leverage AI because it's coming and we can't stop it.
+Perhaps, if AI frees up more of our time, we'll have more opportunities to do things together.
+I would rather go hiking or fishing in the mountains with my children in that case.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2024/2024-02-13/Brynjolfsson_on_the_turing_trap.png alt: "The turing trap" %}
@@ -228,23 +231,27 @@ It seems that we are not going to lose our jobs as long as we learn how to use a
   </figcaption>
 </figure>
 
-We can make a private tutor that is specifically trained to suit our needs.
-In this way, high-quality education can be accessible to everyone.
-
-AI can design beautiful and valid architecture structures, way better than our ugly square buildings.
-So, beautiful architecture is going to become possible for way more people that what it is now.
-
-My big hope on AI is to used in politics.
-To improve democracy, to make it more fair.
-For example, an AI can analyze the individual needs of every citizen and make the best decision, from the neighborhood to country as a whole.
-
-We risks to have less human interation, but maybe we'll have more time.
-It's all about choices in our society.
-AI is already here, it's not going anywhere, and it's inevitable. 
+It seems that we are not going to lose our jobs as long as we learn how to use and leverage AI.
+There will be a new set of jobs as happened before.
+One example is the case of education.
 
 Today we have human teachers dealing with 10 or more children at the same time.
 An AI that can bring personalized education experience to every child in the world.
-An AI tutor could be really revolutionary.
+AI teachers could be really revolutionary.
+We can make a private teacher that is specifically trained to suit every children needs.
+In this way, high-quality education will become accessible to everyone.
+
+AI can design beautiful and valid architecture structures, way better than our ugly square buildings.
+So, beautiful architecture is going to become possible for way more people that what it is now.
+But, my big hope on AI is to used in politics.
+To improve democracy by listening and taking into account everyone's voice, to have a true data-driven politic system.   
+For example, an AI can analyze the individual needs of every citizen and make the best decision, from the neighborhood, to country as a whole, and beyond.
+
+We risks to have less human interaction, but maybe we'll have more time.
+It's all about choices in our society.
+AI is already here, it's not going anywhere, and it's inevitable.
+
+For example, the case of VR headsets, like the recently launched Apple Vision Pro.
 
 # Footnotes
 
