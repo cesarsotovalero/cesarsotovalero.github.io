@@ -40,7 +40,7 @@ The rest of this article is my perspective on this matter, and where I believe c
   </figcaption>
 </figure>
 
-Last week I participated in [Jfokus 2024](https://www.jfokus.se/talks/1661) as a speaker.
+Last week I participated in [Jfokus 2024](https://www.jfokus.se/talks/1661) as a speaker.[^3]
 The main topic of the conference was the latest advances in AI and the impact of this technology on the software industry. 
 I noticed a general acceptance of the huge potential of AI, and the many ways in which it could/would make everything more efficient for developers. 
 For many of us, it looks like writing code, testing, deploying, documenting, or just creating any kind of digital content will be AI-assisted in the coming years.
@@ -274,3 +274,5 @@ In any case, AI is already here, it's not going anywhere, and it's inevitable.
 [^1]: NOTE: This blog post has been written without AI assistance, henceforth the broken writing style and rambling of thoughts.  
 
 [^2]: If you ever use AI to generate content, you understand what I'm talking about.
+
+[^3]: You can watch my Jfokus talk [here](https://youtu.be/Xn1ShZPrw2o?si=88K_7LWn3s63o3HE).
