@@ -271,7 +271,7 @@ In any case, AI is already here, it's not going anywhere, and it's inevitable.
 
 # Footnotes
 
-[^1]: NOTE: This blog post has been written without AI assistance, henceforth the broken writing style and rambling of thoughts.  
+[^1]: This blog post has been written without AI assistance, which explains the broken writing style and rambling of thoughts.  
 
 [^2]: If you ever use AI to generate content, you understand what I'm talking about.
 
