@@ -219,10 +219,10 @@ In a few years, we are going to see children speaking like an AI.
     <em>“For the most part of everything I do, I'm not looking for perfection, I'm rather seeking for the experience.”</em> 
 </aside>
 
-I would like to end this seemingly pessimistic article with a positive section.
-AI has all the potential to augment the human experience to a level that we have never seen before.
-Perhaps, if AI frees up more of our time, we'll have more opportunities to do things together.
-I would rather go hiking or fishing in the mountains with my children in that case.
+I would like to end this seemingly pessimistic article on a positive tone.
+Let's be clear, AI has all the potential to augment human experiences to a level that we have never seen before.
+Perhaps, if AI frees up more of our time, we'll have more opportunities to spend more time with other people.
+For example, I would rather go hiking or fishing in the mountains with my children in that case.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2024/2024-02-13/Brynjolfsson_on_the_turing_trap.png alt: "The turing trap" %}
@@ -231,28 +231,35 @@ I would rather go hiking or fishing in the mountains with my children in that ca
   </figcaption>
 </figure>
 
+AI will augment our capabilities.
 It seems that we are not going to lose our jobs as long as we learn how to use and leverage AI.
-There will be a new set of jobs as happened before.
-One example is the case of education.
+Those who are not able to do so will be left behind.
+So, there will be a new set of jobs and opportunities as happened before.
 
+One example is the case of education.
 Today we have human teachers dealing with 10 or more children at the same time.
-An AI that can bring personalized education experience to every child in the world.
-AI teachers could be really revolutionary.
-We can make a private teacher that is specifically trained to suit every children needs.
+An AI that can bring personalized education experience to every child in the world could be really revolutionary.
+Every children could have a private teacher that is specifically trained to suit their needs.
 In this way, high-quality education will become accessible to everyone.
 
-AI can design beautiful and valid architecture structures, way better than our ugly square buildings.
-So, beautiful architecture is going to become possible for way more people that what it is now.
-But, my big hope on AI is to used in politics.
+Another example is architecture.
+AI can design beautiful and valid architecture structures, way better than our ugly square shaped buildings.
+So, beautiful architecture is going to become possible accessible to more creative people.
+
+However, my big hope on AI is to be used to fix politics.
 To improve democracy by listening and taking into account everyone's voice, to have a true data-driven politic system.   
 For example, an AI can analyze the individual needs of every citizen and make the best decision, from the neighborhood, to country as a whole, and beyond.
+This is a big hope, but it's not impossible.
 
-We risks to have less human interaction, but maybe we'll have more time.
+# Summary
+
+AI advances are going to change the way we interact with the world.
+With AI, we are going to have more free time and greater capabilities.
+One its risks is of limiting even more our access to human experiences.
+If not properly managed, AI could become the brand new social killer.
 It's all about choices in our society.
-AI is already here, it's not going anywhere, and it's inevitable.
-
-For example, the case of VR headsets, like the recently launched Apple Vision Pro.
+In any case, AI is already here, it's not going anywhere, and it's inevitable.
 
 # Footnotes
 
-[^1]: NOTE: This blog post has been written without any AI assistance, henceforth the broken writing style. 
+[^1]: NOTE: This blog post has been written without AI assistance, henceforth the broken writing style and rambling of thoughts.  
