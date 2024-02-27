@@ -20,8 +20,8 @@ author: cesarsotovalero
 published: true
 ---
 
-I started to consume and appreciate coffee after I moved to Sweden.
-Coffee is a key part of the Swedish culture of _fika_, and it's used as a tool to combat the dark winter ~~days~~ months.
+I started to consume and appreciate coffee after I moved to Sweden in 2018.
+Coffee is a key part of the Swedish culture of _fika_, and it's used as a way to combat the dark winter ~~days~~ months.
 For years, I've been considering the idea of buying a fancy coffee machine.
 You know, like those that grind different beans to make various types of coffee brews.
 My main motivation was to save time while having a wider range of coffee choices.
@@ -30,13 +30,13 @@ It turns out that I actually enjoy buying the coffee beans, grinding them by han
 The whole experience is a time investment, yes, but I noticed that it's also good for reducing the frequency of my coffee consumption.
 So, modern coffee machines help to save time, but I still prefer making coffee myself.
 The reason is that I enjoy the process, not just the result.
-This situation made me think about the role of "the human experience" on many of the common things we do, and how AI is going to influence or change them in the future.
+This situation made me think about the role of "the human experience" on many of the common things we do every day, and how AI is going to influence or change them in the future.
 The rest of this article is my perspective on this matter, and where I believe current advances in AI are leading us.[^1]
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2024/2024-02-13/manual-coffee-making-process-landscape.jpg alt: "Me grinding my coffee manually" %}
   <figcaption class="stroke"> 
-    &#169; My manual coffee-making process is a time investment, but it also enhances the experience while simultaneously reducing the frequency of my coffee consumption. Will the efficiencies promised by AI deliver the same joy? 
+    &#169; My manual coffee-making process is a significant time investment. However, it enhances the experience while simultaneously reducing the frequency of my coffee consumption. Will the efficiencies promised by AI deliver the same joy? 
   </figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ Beyond coding, today's AI threatens to automate every aspect of our lives.
 One of AI's major promises is to free us from seemingly mundane tasks.
 However, I'm worried that too much automation could relegate the "human touch" in our daily activities to second place.
 Activities and chores like making coffee, serving wine, cooking, painting, writing, playing music, making love, or chatting with friends could lose their essence.
-At its core, coding is a human activity in which people contribute by following conventions (and Git rules).
+In particular, at its core, coding is a human activity in which people contribute by following conventions (a.k.a Git rules).
 
 After a though or two, I realize that in most aspects of my life, I'm not looking for perfection, I'm rather seeking for the experience.
 For example, I had a [great time](https://www.linkedin.com/posts/cesarsotovalero_jfokus2024-javacommunity-success-activity-7161289069065338880-ptRZ?utm_source=share&utm_medium=member_desktop) at Jfokus this year.
@@ -81,21 +81,20 @@ We experienced the industrial revolution about 200 years ago freeing us from the
 We saw the rise of the internet in the last 30 years, eliminating the need to go to a physical library to find information.
 Do we have more free time now?
 Not really.
-The promise of human freedom through technological advancement didn't materialize in the past, and it probably won't happen now with AI.
+The promise of human freedom through technological advancement didn't materialize in the past, and it probably won't happen now with AI either.
 
 I would like to be positive and believe that a 4-hour workweek is closer than ever.
 I want to believe in the potential of an AI that understands my strengths and weaknesses and helps me to be more efficient.
-But I'm not sure if that's going to happen.
-Or even if being more efficient would make me happier.
+But I'm not sure if that's going to happen, or even if being more efficient would make me happier.
 Instead, I think that AI is going to reshape the way we interact with the world, meaning that some new behaviors will be added and others will be removed.
-There is one particular thing that I'm concerned about: the human experience.
+There is one particular thing that I'm concerned about: lacking the human experience.
 
 # Supremacy
 
 AI systems have the potential to become ubiquitous.
 Unlike other breakthroughs, such as transportation and telephony, which required building infrastructure from scratch, AI solutions integrate seamlessly with our existing digital environment, including mobile phones and IoT devices.
 This means that, in the case of AI, the potential for adoption is broader than with any other technology.
-AI's scalability is taken for granted.
+From a technological perspective, AI's scalability is taken for granted.
 
 <aside class="quote">
     <em>“AI poses a solution to many problems, but we're merely starting to discover what we can solve with it.”</em>
@@ -114,23 +113,27 @@ Here are just three examples of applied AI that already impress me:
 
 Imagine a world where a supremely powerful AI system decides and manages everything.
 Our daily activities would become significantly more efficient.
-But from a human perspective, would such a world hold any interest?
+But from a human perspective, would such a world become more interesting?
 I'm not entirely sure.
 
 We have already witnessed machine learning systems assuming control over our decision-making processes.
 Take, for example, the [Netflix recommendation system](https://research.netflix.com/research-area/recommendations).
-It significantly enhances customer engagement, a boon from a business standpoint, but its benefits for the wider audience remain questionable.
-Moreover, our ongoing struggles with social media and the phenomenon of the filter bubble underscore the complexities introduced by these technologies.
-AI, with its vast capabilities, is as potent as it is perilous.
+It significantly enhances customer engagement, a boon from a business standpoint.
+However, its benefits for the wider audience remain questionable as more and more people are becoming addicted to the platform.
+Our ongoing struggles with social media addiction, and the phenomenon of the [filter bubble](https://en.wikipedia.org/wiki/Filter_bubble), underscore the complexities introduced by these technologies.
+AI with its vast capabilities is, in the same way, as powerful as it is dangerous.
+
+<aside class="quote">
+    <em>“The moment I realize it's AI-generated content delivered by a human my interest wanes.”</em>
+</aside>
 
 We now have [VTubers](https://en.wikipedia.org/wiki/VTuber) and various forms of AI-generated "art" including music, books, movies, and games.
 Yet, to me, AI-generated content feels fundamentally different from creations born of traditional human creativity.
 Personally, I experience an aversion to AI-generated content.
-For some reason, the moment I realize it's AI-generated my interest wanes.
-You will start to spot I-generated posts after some experience using AI.
+For some reason, the moment I realize it's AI-generated my interest wanes.[^2]
 
 I wish this could be a matter of personal choice.
-Do we even possess the right to decide the extent of our engagement with AI?
+Do we even have the right to decide to what extent we want to engage with AI?
 Unfortunately, the answer is no.
 Much like the internet, AI is set to become ubiquitous.
 
@@ -139,26 +142,24 @@ Much like the internet, AI is set to become ubiquitous.
 Let's fully embrace the will of AI for a moment.
 Imagine it comes up with a decision, and we have no choice but to accept it.
 How comfortable would we be with the fact that we're not in control anymore?
-Probably not much.
 Personally, I'm not very enthusiastic about the idea.
 
 <aside class="quote">
     <em>“Although we are used to accept human-made mistakes, we don't feel the same way about machine-made errors.”</em>
 </aside>
 
-
 Take, for example, the use of AI in selecting the right candidate for a job.
 It might be better at it than humans in 80% of cases.
 But what about the remaining 20%?
 How can it understand the nuanced needs of a team or company?
-Or consider an AI deciding who goes to jail and who doesn't
+Or consider an AI deciding who goes to jail and who doesn't.
 It might make the right decision in 99.9999% of cases, but what happens when it's wrong?
-It's concerning, and yet, it seems inevitable because it is better than human made decisions.
+It's concerning, and yet, it seems inevitable because it will be still better than human made decisions.
 
-On the other hand, the things that we thought were inherently human, like art and creativity, are now being replicated using AI.
-If in doubt, just look at the stuff created by [Midjourney.](https://www.midjourney.com/home).
-Very soon there will be AI creating 3D objects, full movies, and even entire virtual worlds.
-Take it or leave it, art will never be the same. 
+On the other hand, the things that we thought were inherently human, like art and creativity, are now succesfuly generated using AI.
+If in doubt, just look at the stuff created by [Midjourney](https://www.midjourney.com/home).
+Very soon there will see AI creating 3D objects, full movies, and even entire virtual worlds.
+Take it or leave it, our civilization will never be the same. 
 
 # The Human Experience
 
@@ -167,11 +168,12 @@ Take it or leave it, art will never be the same.
     ― <cite><a href="https://en.wikipedia.org/wiki/Jeff_Hammerbacher">Jeff Hammerbacher</a></cite>
 </aside>
 
-My generation of Millennials already chosen to make of [internet the new electricity](https://en.wikipedia.org/wiki/Right_to_Internet_access).
+My generation of Millennials have already chosen to make of [internet the new electricity](https://en.wikipedia.org/wiki/Right_to_Internet_access).
 Now, AI appears to be the brand-new internet.
 For example, today, you can buy any piece of clothing without ever meeting the seller in person.
 With AI, you could virtually bring back the seller.
-It seems that AI is simply taking it a step further.
+So, AI is simply taking it a step further, right?
+Wrong.
 
 If you go to a bar, you will soon encounter AI bartenders serving the right wine and telling you exactly what you want to hear.
 But as humans, we still crave discrepancies, those unexpected events that occur from time to time.
@@ -270,3 +272,5 @@ In any case, AI is already here, it's not going anywhere, and it's inevitable.
 # Footnotes
 
 [^1]: NOTE: This blog post has been written without AI assistance, henceforth the broken writing style and rambling of thoughts.  
+
+[^2]: If you ever use AI to generate content, you understand what I'm talking about.
