@@ -201,7 +201,7 @@ The reality, measured against history, is unlikely to be good.
 The question is: how do we minimize this?
 
 <aside class="quote">
-    <em>“AI-powered systems menace to become new social killer.”</em>
+    <em>“AI-powered systems menace to become the new social killer.”</em>
 </aside>
 
 We are losing many social capabilities because of technology.
