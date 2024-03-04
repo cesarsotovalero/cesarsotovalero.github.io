@@ -104,7 +104,7 @@ A few suggestions:
 - **Breaking changes**: If your change is breaking, highlight it here. Begin with a label like "BREAKING CHANGE:" and describe the impact and migration path.
 - **Add separation**: Add a blank line separating the summary from the body (unless you omit the body entirely).
 
-# Conventional Commits Messages
+# Conventional Commit Messages
 
 The conventional commit message style is another way you can level up your commit messages. 
 It consists of starting your commit message with a specific word from a set of words in order to add semantic meaning to the commit. 
@@ -122,7 +122,7 @@ Here are some examples of conventional commit prefixes:
 
 Using the conventional commit method makes it easy for project contributors to filter and search for specific commits.
 
-# Autolink references
+# Autolink References
 
 If the commit refers to an issue, add this information to the commit message header or body. 
 For example, the GitHub web platform uses [autolink references](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls) to automatically convert issue ids (e.g. `#123`) to links referring to the related issue URL.
@@ -164,7 +164,9 @@ Here is an example of how it looks like using Gitmoji:
   </figcaption>
 </figure>
 
-# Recommended Practices 
+# Recommended Practices
+
+Here are some practices I recommend to keep your commit messages clean and informative.
 
 ## Atomic Commits
 
