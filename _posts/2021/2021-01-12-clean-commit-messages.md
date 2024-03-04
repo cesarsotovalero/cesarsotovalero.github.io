@@ -106,7 +106,7 @@ A few suggestions:
 
 # Conventional Commit Messages
 
-The conventional commit message style is another way you can level up your commit messages. 
+The [conventional commit](https://www.conventionalcommits.org/) message style is another way you can level up your commit messages. 
 It consists of starting your commit message with a specific word from a set of words in order to add semantic meaning to the commit. 
 
 Here are some examples of conventional commit prefixes:
@@ -164,7 +164,7 @@ Here is an example of how it looks like using Gitmoji:
   </figcaption>
 </figure>
 
-# Recommended Practices
+# Good Practices
 
 Here are some practices I recommend to keep your commit messages clean and informative.
 
