@@ -52,7 +52,7 @@ There are good and bad commit messages.
 For example, here's a **good** commit made by me: <a href="https://github.com/ASSERT-KTH/depclean/commit/12e76e6bf689062f8bbdef00370fb96c8cdc0803"><i class="fab fa-github"></i></a> [12e76e6b](https://github.com/ASSERT-KTH/depclean/commit/12e76e6bf689062f8bbdef00370fb96c8cdc0803), and this a **bad** one: <a href="https://github.com/ASSERT-KTH/depclean/commit/5c13f9df5bb9638e04c0f2bdba3190544ffb2784"><i class="fab fa-github"></i></a> [5c13f9df](https://github.com/ASSERT-KTH/depclean/commit/5c13f9df5bb9638e04c0f2bdba3190544ffb2784).
 We'll look at what makes the first one good and the second one bad in the rest of this article.
 
-# Skeleton of a Commit Message
+# Anatomy of a Commit Message
 
 I distinguish between two types of commit messages: short and elaborated.
 
