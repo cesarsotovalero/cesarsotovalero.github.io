@@ -2483,8 +2483,13 @@ ol, ul {
 
 
 .i-doi {
-  background-image: url(https://richard.science/site2/output/assets/img/font-icons/doi.5c6d4157c9099162d902f3e0c02d1888.svg);
+  background-image: url(../img/icons/academicons-1.9.4/svg/doi.svg);
 }
+
+.i-arxiv {
+  background-image: url(../img/icons/academicons-1.9.4/svg/arxiv.svg);
+}
+
 
 .icon {
   width: 1em;
