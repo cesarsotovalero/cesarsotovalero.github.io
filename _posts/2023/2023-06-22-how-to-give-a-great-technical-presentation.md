@@ -13,6 +13,7 @@ image: ../img/posts/2023/2023-06-22/circus-cover.jpg
 share-img: ../img/posts/2023/2023-06-22/circus-cover.jpg
 show-avatar: false
 toc: true
+mathjax: true
 date: 2023/06/22
 author: cesarsotovalero
 published: true
@@ -44,13 +45,17 @@ This is because success in life is largely determined by our ability to **speak*
 
 Here's an obvious oversimplification of success:
 
-$$Success = a * S + b * W + c * I $$, where $$a > b > c$$.
+$$Success = a * S + b * W + c * I $$
+
+where $$a > b > c$$
 
 The quality of $$S$$, $$W$$, and $$I$$, is largely determined by how much **knowledge** ($$K$$) we have, how much do we **practice** ($$P$$) with that knowledge, and our inherent **talent** ($$T$$).
 
 Here's another simple formula for quality:
 
-$$Quality = x * K + y * P + z * T$$, where $$x > z ~\& ~y > z$$.
+$$Quality = x * K + y * P + z * T$$
+
+where $$x > z ~\& ~y > z$$
 
 > **Corollary:** You can get a lot better than people who may have only inherent talents if you have the right amount of knowledge and the ability to transmit your own ideas in a better way.
 
@@ -339,15 +344,3 @@ That's all from me, the rest you can probably only learn it by doing it.
 [^3]: Going over time is one of the worst crimes of a public speaker.
 [^4]: ~~Surprisingly~~ most people don't understand code. Showing some code is a guarantee of being perceived as expert.
 [^5]: Some speakers, funnily enough, have too many good ideas, and you don't know what it's all about because... which one is the good one?
-
-[//]: # (Enable Latex support, see https://zjuwhw.github.io/2017/06/04/MathJax.html)
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-  }
-});
-</script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
