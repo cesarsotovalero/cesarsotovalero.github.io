@@ -2,7 +2,7 @@
 permalink: awards.html
 layout: page
 title: Awards
-subtitle: Awards and certifications
+subtitle: 🏆
 published: true
 ---
 

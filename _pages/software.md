@@ -2,7 +2,7 @@
 permalink: software.html 
 layout: page 
 title: Software 
-subtitle: My open-source contributions 
+subtitle: 💻 
 published: true
 ---
 

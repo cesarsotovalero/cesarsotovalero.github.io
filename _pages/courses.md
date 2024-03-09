@@ -2,7 +2,7 @@
 permalink: courses.html
 layout: page
 title: Courses
-subtitle: Formal learning
+subtitle: 🎓
 published: true
 ---
 
