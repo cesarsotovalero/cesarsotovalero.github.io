@@ -46,7 +46,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   Musard Balliu, Benoit Baudry, Sofia Bobadilla, Mathias Ekstedt, Martin Monperrus, Javier Ron, Aman Sharma, Gabriel Skoglund, César Soto-Valero, and Martin Wittlinger.
   _IEEE Security & Privacy_.
   <a href="https://doi.org/10.1109/MSEC.2023.3302956"><i class="icon i-doi"></i> 10.1109/MSEC.2023.3302956</a>
-  <a href="https://arxiv.org/abs/2303.11102">:earth_americas: Preprint</a>
+  <a href="https://arxiv.org/abs/2303.11102"><i class="icon i-arxiv"></i> Preprint</a>
   [<i class="fab fa-github"></i> Experiments](https://github.com/chains-project/SBOM-2023)
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> 
@@ -54,7 +54,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   Javier Ron, César Soto-Valero, Long Zhang, Benoit Baudry, and Martin Monperrus. 
   _IEEE Transactions on Dependable and Secure Computing_.
   <a href="https://doi.org/10.1109/TDSC.2023.3346195"><i class="icon i-doi"></i> 10.1109/TDSC.2023.3346195</a>
-  <a href="https://arxiv.org/abs/2303.14438">:earth_americas: Preprint</a>
+  <a href="https://arxiv.org/abs/2303.14438"><i class="icon i-arxiv"></i> Preprint</a>
   [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/N-ETH)
 
 
