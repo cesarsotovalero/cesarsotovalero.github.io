@@ -2,7 +2,7 @@
 permalink: collaborations.html
 layout: page
 title: Collaborations
-subtitle: Research topics open to collaborations
+subtitle: 🤝
 published: true
 ---
 

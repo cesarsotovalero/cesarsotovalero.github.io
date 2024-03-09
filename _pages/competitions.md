@@ -2,7 +2,7 @@
 permalink: competitions.html
 layout: page
 title: Competitions
-subtitle: The natural skill calibrator 
+subtitle: 💪
 published: true
 ---
 

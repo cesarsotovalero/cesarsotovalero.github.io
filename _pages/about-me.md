@@ -2,7 +2,7 @@
 permalink: about-me.html
 layout: page
 title: About me
-subtitle: Short summary
+subtitle: 👨🏼‍💻
 ---
 
 [//]: # (Profile to view: https://www.zeileis.org/)

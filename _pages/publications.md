@@ -2,7 +2,7 @@
 permalink: publications.html
 layout: page
 title: Publications
-subtitle: Research papers
+subtitle: 📰
 published: true
 ---
 

@@ -2,7 +2,7 @@
 permalink: service.html
 layout: page
 title: Service
-subtitle: Side work
+subtitle: 🙋‍
 published: true
 ---
 
