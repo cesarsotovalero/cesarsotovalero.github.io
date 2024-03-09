@@ -15,6 +15,7 @@ image: ../img/posts/2022/plane_paint_cover.jpg
 share-img: ../img/posts/2022/plane_paint_cover.jpg
 show-avatar: false
 toc: true
+mathjax: true
 date: 2022/02/06
 author: cesarsotovalero
 published: true
@@ -69,7 +70,6 @@ Larger values correspond to a relatively even distribution of knowledge, so the 
 Here is a [naive algorithm](https://link.springer.com/chapter/10.1007/978-3-642-21843-9_26) for computing the bus factor of a project: 
 
 {% highlight java linenos %}
-
 /**
  * Computes the bus factor of a project based on the Git information about
  * the committers of each file in the project. A file is considered critical
@@ -116,11 +116,9 @@ public static List committers(String f) {
 }
 {% endhighlight %}
 
-
 [Avelino and collaborators](https://www.computer.org/csdl/proceedings-article/icpc/2016/07503718/12OmNvA1hCh) have suggested a more [advanced bus factor algorithm](https://github.com/aserg-ufmg/Truck-Factor) based on the Degree of Authorship (DOA) metric. The algorithm first computes the $$DOA$$ of each of the engineers for every file in the project according to the following formula:
 
-$$DOA(e,f) = 3.293 + 1.098FA $$
-$$+ 0.164DL − 0.321 log(1 + AC)$$
+$$DOA(e,f) = 3.293 + 1.098FA + 0.164DL − 0.321 log(1 + AC)$$
 
 where 
 
@@ -188,16 +186,3 @@ However, [as recent work suggests](https://arxiv.org/abs/2202.01523): a multifac
 # Footnotes
 
 [^1]: There are different definitions of the bus factor in the literature: it is also known as the “truck factor”; and sometimes words as “incapacitated” or “abandoned” are used instead of “stalled.”
-
-
-[//]: # (Enable Latex support, see https://zjuwhw.github.io/2017/06/04/MathJax.html)
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-  }
-});
-</script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

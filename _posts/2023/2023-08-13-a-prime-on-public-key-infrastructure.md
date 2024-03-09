@@ -16,6 +16,7 @@ image: ../img/posts/2023/2023-08-13/dark_well-cover.jpg
 share-img: ../img/posts/2023/2023-08-13/dark_well-cover.jpg
 show-avatar: false
 toc: true
+mathjax: true
 date: 2023/08/13
 author: cesarsotovalero
 published: true
@@ -574,16 +575,3 @@ Finally, I have introduced the concept of Web of Trust (WOT) as an alternative t
 [^1]: Whitfield Diffie and Martin Hellman, "New Directions in Cryptography", _IEEE Transactions on Information Theory_, Vol. 22, No. 6, November 1976, pp. 644–654.
 
 [^2]: In symmetric encryption, sometimes the keys are actually different but still connected in a way that is easy to figure out.
-
-[//]: # (Enable Latex support, see https://zjuwhw.github.io/2017/06/04/MathJax.html)
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-  }
-});
-</script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-

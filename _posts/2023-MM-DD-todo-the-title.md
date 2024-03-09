@@ -15,6 +15,7 @@ image: ../img/posts/2023/2023-MM-DD/IMG-cover.jpg
 share-img: ../img/posts/2023/2023-MM-DD/IMG-cover.jpg
 show-avatar: false
 toc: true
+mathjax: false
 date: 2023/MM/DD
 author: cesarsotovalero
 published: false

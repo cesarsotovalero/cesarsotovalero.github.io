@@ -25,7 +25,7 @@ I've dealt with this invisible monster on many occasions, and each victory has t
 If you have been there, too, you should know that understanding the particular characteristics of a research paper and breaking down the writing process into small pieces is key to success.
 Over time, I've developed my own set of strategies to fight writer's block, which I share in this post.
 So, let me tell you about the tricks I've learned through these years of continuous struggling [writing academic papers](https://www.cesarsotovalero.net/publications).
-I hope you find them useful as too.
+I hope you find them useful as well.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2021/stalking_monster.jpg alt:"Photo taken at Tekniska högskolan metro station." %}
