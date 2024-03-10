@@ -28,10 +28,7 @@ With only a few weeks of training, I was unable to solve any of the problems.
 From that moment onward, I knew that programming contests are a real challenge, even for serious and highly motivated students.
 
 <figure class="jb_picture">
-  {% responsive_image path: ../img/posts/2017/competitive-programming.png alt: "ACM-ICPC" %}
-  <figcaption class="stroke"> 
-    &#169; TODO
-  </figcaption>
+  {% responsive_image path: img/posts/2017/competitive-programming.png alt: "ACM-ICPC" %}
 </figure>
 
 <aside class="quote">
@@ -72,9 +69,9 @@ Choose your materials and resources carefully.
 As for programming languages, C++ is the better choice, but you should also know Java and its useful libraries such as BigInteger or Calendar.
 This is my list of recommended books for starters and intermediate contestants:
 
-- **"[Competitive Programming 3: The New Lower Bound of Programming Contests](https://cpbook.net/)"**, by Steven Halim and Felix Halim
-- **"[Programming Challenges: The Programming Contest Training Manual](https://amzn.eu/d/gnT8rNr)"**, by Steven S. Skiena and Miguel A. Revilla
-- **"[The Art of Programming Contests](https://github.com/hichemaichour/ACM-ICPC/blob/master/References/Art%20of%20Programming%20Contest.pdf)"**, by Ahmed Shamsul Arefin
+- "**[Competitive Programming 3: The New Lower Bound of Programming Contests](https://cpbook.net/)**," by Steven Halim and Felix Halim
+- "**[Programming Challenges: The Programming Contest Training Manual](https://amzn.eu/d/gnT8rNr)**," by Steven S. Skiena and Miguel A. Revilla
+- "**[The Art of Programming Contests](https://www.e-booksdirectory.com/details.php?ebook=1051)**," by Ahmed Shamsul Arefin
 
 # Be Persistent
 
