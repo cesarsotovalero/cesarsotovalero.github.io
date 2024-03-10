@@ -2,9 +2,14 @@
 layout: post
 title: Git Fundamentals
 subtitle: The must-know git commands for software developers
-description: The basic git commands that every developer should known.
+description: |
+  In this post, I will show you the most important Git commands that you need to know to work with this version control system.
 tags: github
-keywords: command line, version control, GitHub, software developement
+keywords: 
+  - command line
+  - version control
+  - GitHub
+  - software development
 image: ../img/posts/2017/git_logo_cover.png
 share-img: ../img/posts/2017/git_logo_cover.png
 show-avatar: false
@@ -14,17 +19,19 @@ date: 2017/11/14
 published: true
 ---
 
-Git is the standard version-control system for software development. Git was created by Linux Torvals in 2005 to support the development of the Linux kernel. Since then, Git has become an essential tool for both junior and senior developers. It allows to have a complete history and full version-tracking of the project, easing all the different phases of the development process.
-
 <aside class="quote">
     <em>“Git proved I could be more than a one-hit wonder.” ― <cite>Linux Torvalds</cite></em> 
 </aside>
 
-
+Git is the standard version-control system for software development.
+Git was created by Linus Torvalds in 2005 to support the development of the Linux kernel.
+Since then, Git has become an essential tool for both junior and senior developers.
+It allows having a complete history and full version tracking of the project, easing all the different phases of the development process.
 
 # Git Configurations
 
-First, add your user name and email to the git global configurations. These commands will be automatically written  to `~/.gitconfig`.
+First, add your username and email to the git global configurations.
+These commands will be automatically written  to `~/.gitconfig`.
 
 ```bash
 git config --global user.name "César Soto Valero"
@@ -35,7 +42,8 @@ To remove the return characters added by the OS every time that you commit a fil
 ```bash
 git config --global  core.autocrlf input
 ```
-Lets make some useful aliases.  The first one allows us to retrieve a simplified status with `git s`, the second is an improved log with `git lg`.
+Let's make some useful aliases. 
+The first one allows us to retrieve a simplified status with `git s`, the second is an improved log with `git lg`.
 
 ```bash
 git config --gloabal alias.s "status -s" 
@@ -44,7 +52,7 @@ git config --global alias.lg "log --oneline --all --graph --decorate"
 
 # Git commits
 
-To commit all the modified files,  add them to the staging area and commit with a message:
+To commit all the modified files, add them to the staging area and commit with a message:
 
 ```bash
 git add .
@@ -57,7 +65,7 @@ Optionally, can do both commands at the same time:
 git commit -am "commit message goes here"
 ```
 
-To change the message of the last t commit made:
+To change the message of the last commit made:
 
 ```bash
 git commit --amend
@@ -91,7 +99,7 @@ git branch -d  branch_name
 
 # Git diff
 
-To see the difference between unstaged files:
+To see the difference between unstagged files:
 
 ```bash
 git diff
@@ -126,7 +134,7 @@ git commit
 
 # Git rebase
 
-To put all the commit of a branch on the top of the HEAD:
+To put all the commit of a branch on the top of the `HEAD`:
 
 ```bash
 git checkout -b branch_name
@@ -143,14 +151,14 @@ Then edit the list of commits  by adding substituting  `pick` by `f` to squash t
 
 # Git fetch & push & pull
 
-To push the content of your project to a remote repository (e.g., GitHub) create a repo and add it as a remote:
+To push the content of your project to a remote repository (e.g., GitHub), create a repo and add it as a remote:
 
 ```bash
 git remote add origin http://github.com/username/reponame.git
 git push -u origin master
 ```
 
-The fetch  command allows to retrieve the changes on the remote without merging to the master branch:
+The fetch command allows retrieving the changes on the remote without merging to the `master` branch:
 
 ```bash
 git  fetch
@@ -220,9 +228,9 @@ git commit -m "update ignored files"
 ```bash
 *.java diff=java
 ```
-Then you can exectute the log command with the name of a method and the path to the file.
+Then you can execute the log command with the name of a method and the path to the file.
 
 ```bash
  git log -L :<methodName>:<javaFilePath>
 ```
- 
+ ˚
