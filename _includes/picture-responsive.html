@@ -6,4 +6,4 @@
 
 {% assign smallest = resized | sort: 'width' | first %}
 
-<img width="100%" src="/{{ smallest.path }}" alt="{{ alt }}" data-srcset="{{ srcset | strip_newlines }}" class="blur-up lazyautosizes lazyload">
+<img width="{{ width }}" style="border: {{ border }};" src="/{{ smallest.path }}" alt="{{ alt }}" data-srcset="{{ srcset | strip_newlines }}" class="blur-up lazyautosizes lazyload">
