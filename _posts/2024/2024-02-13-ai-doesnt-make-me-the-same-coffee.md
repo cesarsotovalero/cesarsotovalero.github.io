@@ -185,9 +185,17 @@ To what extent will these efficiencies become widely accepted?
     <em>“I'm biased towards human interaction, AI will never replace the true human experience.”</em>
 </aside>
 
-Something we learned from Covid is that we still crave human interaction.
+Something we learned from COVID-19 is that we still crave human interaction.
 People enjoy being with others.
 They watch videos on YouTube but still prefer attending live events.
+
+<figure class="jb_picture">
+  {% responsive_image width: "50%" border: "1px solid #808080" path: img/posts/2024/2024-02-13/true-wealth.jpg alt: "To remain human will be the true wealth" %}
+  <figcaption class="stroke"> 
+    The key difference is freedom, not technology; to remain human will be the true wealth. 
+    <a href="https://www.linkedin.com/posts/linasbeliunas_this-sums-up-the-current-and-the-future-brilliantly-activity-7172327842406510592-dP9F?utm_source=share&utm_medium=member_desktop">Source</a>
+  </figcaption>
+</figure>
 
 As humans, we feel a sense of pride in whatever we do well.
 It is by overcoming struggles that we find our sense of fulfillment.
@@ -234,7 +242,7 @@ Perhaps, if AI frees up more of our time, we'll have more opportunities to spend
 For example, I would rather go hiking or fishing in the mountains with my children in that case.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2024/2024-02-13/Brynjolfsson_on_the_turing_trap.png alt: "The turing trap" %}
+  {% responsive_image border: "1px solid #808080" path: img/posts/2024/2024-02-13/Brynjolfsson_on_the_turing_trap.png alt: "The turing trap" %}
   <figcaption class="stroke"> 
     &#169; According to <a href="https://www.amacad.org/sites/default/files/publication/downloads/Daedalus_Sp22_19_Brynjolfsson.pdf">Erik Brynjolfsson</a>, opportunities for augmenting humans are far greater than opportunities to automate existing tasks.
   </figcaption>
