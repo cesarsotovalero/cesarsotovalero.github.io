@@ -28,7 +28,7 @@ With only a few weeks of training, I was unable to solve any of the problems.
 From that moment onward, I knew that programming contests are a real challenge, even for serious and highly motivated students.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2017/competitive-programming.png alt: "ACM-ICPC" %}
+  {% responsive_image width: "50%" path: img/posts/2017/competitive-programming.png alt: "ACM-ICPC" %}
 </figure>
 
 <aside class="quote">
@@ -134,4 +134,4 @@ The ACM-ICPC contest is just an excellent way to learn to program and acquire a 
 
 # Footnotes
 
-[^1]: Gennady Korotkevich started programming when he was 8.
+[^1]: Gennady Korotkevich started programming when he was 8, his parents are computer scientists, and he has been the world's top competitive programmer since 2013. He has won the International Olympiad in Informatics (IOI) three times and has won the ACM-ICPC World Finals five times. He is also the youngest contestant to win the Topcoder Open Algorithm competition. He is known as _tourist_ in the competitive programming community.

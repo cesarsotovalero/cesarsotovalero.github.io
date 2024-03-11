@@ -61,7 +61,7 @@ In summary, the attack works as follows:
 
 The following simple Java code represents a scenario where an attacker can exploit this vulnerability via the [User Agent header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) of an HTTP request:
 
-```java
+{% highlight java linenos %}
 /**
 * A simple HTTP handler that will process HTTP requests and logs them back.
 */
@@ -88,12 +88,12 @@ public class VulnerableLog4jExampleHandler implements HttpHandler {
     os.close();
   }
 }
-```
+{% endhighlight %}
 
 And here's the attack and its preventive countermeasures described graphically:
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2022/2022-06-15/log4j_attack.png alt:"The log4j JNDI attack and how to prevent it." %}
+  {% responsive_image border: "1px solid #808080" path: img/posts/2022/2022-06-15/log4j_attack.png alt: "The log4j JNDI attack and how to prevent it." %}
   <figcaption class="stroke"> 
     Fig 1. The log4j JNDI attack (in black) and how to prevent it (in red). Image source: <a href="https://www.govcert.admin.ch/">Swiss Government Computer Emergency Response Team</a>.
   </figcaption>
