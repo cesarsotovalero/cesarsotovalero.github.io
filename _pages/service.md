@@ -8,14 +8,14 @@ published: true
 
 # Academic Reviewer
 
-> My verified reviews for journals can be seen in the [Web of Science](https://www.webofscience.com/wos/author/record/AAB-9333-2019).
+> My verified peer reviews for journals can be seen in the [Web of Science](https://www.webofscience.com/wos/author/record/AAB-9333-2019).
 
-- [SoftwareX](https://www.sciencedirect.com/journal/softwarex), 2023
+- [SoftwareX](https://www.sciencedirect.com/journal/softwarex), 2023 [Recognition](../files/certificates/2023_Certificate_SOFTX_Recognised.pdf)
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2023
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2022
 - [International Journal of Computer Science in Sport](https://sciendo.com/journal/IJCSS), 2021
-- [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021
-- [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019
+- [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021 [Recognition](../files/certificates/2021_JBA_Reviewer_Certificate.pdf)
+- [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019 [Recognition](../files/certificates/SMR_Certificate.pdf)
 - [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018
 - [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), 2017
 
