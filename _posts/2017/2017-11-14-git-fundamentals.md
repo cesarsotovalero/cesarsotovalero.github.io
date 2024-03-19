@@ -233,4 +233,3 @@ Then you can execute the log command with the name of a method and the path to t
 ```bash
  git log -L :<methodName>:<javaFilePath>
 ```
- ˚
