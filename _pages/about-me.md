@@ -13,44 +13,41 @@ subtitle: 👨🏼‍💻
 
 
 <!-- ![Custom badge](https://img.shields.io/badge/-WORK-blueviolet.svg) -->
-# Work
+# TL;DR
 
 [//]: # (:briefcase: )
-My full name is **César Soto Valero**. 
-I'm passionated about 1) software technology, 2) research, and 3) sharing what I know. 
-I'm currently working as a Data Engineer at [SEB](https://seb.se/) in Stockholm, Sweden <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
+I'm César Soto Valero, a [researcher](./software) and [engineer](./software.html).
 
-{% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
-
-I'm keen to perform research on software technology which: 
-
-1. Provide **actionable insights** to researchers and practitioners about how modern software is currently being developed and maintained.
-2. Provide **practical tools** for developers in order to improve software quality.
-
-If you are interested in collaborating with me, have a look at my list of [research topics](./collaborations.html).
-I'm always open to do cool research through collaborative endeavours.
-
-# Formal Education
-
-I completed my PhD in Computer Science in June 2023.
-I did my PhD in the Department of [Software and Computer Systems (SCS)](https://www.kth.se/scs/software-engineering) at [KTH Royal Institute of Technology](https://kth.se), in Sweden <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">, under the supervision of [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/).
-My research work was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation. 
-My PhD was about software debloating.[^1] 
-
-I also do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories.[^2] 
-In particular, I'm interested in measuring the impact and pervasiveness of software bloat across large-scale software ecosystems.
-
-I hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
-
-A long time ago, I participated in [programming competitions](/competitions.html). 
+I'm passionate about science, software technology, and teaching. 
 
 Here is my minimalistic [resumé](../files/CV/cv.pdf).
 
-<!-- ![Custom badge](https://img.shields.io/badge/-HOBBIES-blue.svg) -->
+**Update:** Since April 2023, I'm a Data Engineer at [SEB](https://seb.se/) in Stockholm <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
+
+# Career
+
+I did a PhD in Computer Science in the Department of [Software and Computer Systems (SCS)](https://www.kth.se/scs/software-engineering) at [KTH Royal Institute of Technology](https://kth.se), supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/) (graduated in 2023).[^4]
+
+My PhD was about software debloating,[^1] check out my [thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf) and [public defense](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw).
+
+Besides my PhD topic, I do knowledge-seeking software engineering research, e.g., by extracting useful information from data stored in software repositories.[^2] 
+In particular, I'm interested in measuring the impact and pervasiveness of software bloat across large-scale software ecosystems.
+
+I'm keen to perform research on software technology which:
+
+1. Provide **actionable insights** to researchers and practitioners about how modern software is currently being developed and maintained.
+2. Provide **practical tools** for developers to improve software quality.
+
+I'm always open to doing cool research through collaborative endeavours.
+If you are interested in collaborating with me, have a look at my list of [research topics](./collaborations.html).
+
+{% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
+
+I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
+
+A long time ago, I participated in [programming competitions](/competitions.html). 
 
 # Misc
-
-[//]: # (:dart:)
 
 Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and jogging across the Stockholm's beautiful parks.[^3]
 
@@ -188,4 +185,6 @@ form.wj-contact input[type="submit"]:hover {
 [^2]: See my list of [mining software repositories resources](./mining-software-repositories-resources.html).
 
 [^3]: Check out my result at [Midnattsloppet 2022](../files/certificates/Midnattsloppet_Diplom_2022.pdf), and [:earth_americas: Blodomloppet 2023](https://www.racetimer.se/sv/runner/show/8204163?layout=blodomloppet&race_id=5627).
+
+[^4]: My research work was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.
 
