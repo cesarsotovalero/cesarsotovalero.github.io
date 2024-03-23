@@ -8,7 +8,7 @@ published: true
 
 # Speaker
 
-I present my work in academic and industrial conferences, workshops, and software companies.[^1]
+I present my work in academic and industrial conferences, workshops, and events.[^1]
 The following is a non-exhaustive list of my technical presentations (in reverse chronological order).
 
 # 2024
