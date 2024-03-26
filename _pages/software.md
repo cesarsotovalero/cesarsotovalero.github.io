@@ -14,7 +14,7 @@ published: true
 # Author
 
 I contribute to open-source projects on <a href="https://github.com/cesarsotovalero"><i class="fab fa-github"></i></a> [GitHub](https://github.com/cesarsotovalero).[^1]
-Below is a listing of those projects:
+Below are selected projects that I have authored:
 
   <div id="portfolio">
     <div id="tiles-big">
