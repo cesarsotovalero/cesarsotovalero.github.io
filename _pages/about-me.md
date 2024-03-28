@@ -15,8 +15,7 @@ subtitle: 👨🏼‍💻
 <!-- ![Custom badge](https://img.shields.io/badge/-WORK-blueviolet.svg) -->
 # TL;DR
 
-[//]: # (:briefcase: )
-I'm César Soto Valero, a [researcher](./software) and [engineer](./software.html).
+I'm César, a [computer scientist](./publications.html), [software engineer](./software.html), and [content creator](./blog).
 
 I'm passionate about science, software technology, and teaching. 
 

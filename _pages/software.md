@@ -13,9 +13,8 @@ published: true
 
 # Author
 
-I contribute to open-source projects.
-Unless otherwise specified on the project page, all of then are released under MIT license.
-Below is a listing of those projects:
+I contribute to open-source projects on <a href="https://github.com/cesarsotovalero"><i class="fab fa-github"></i></a> [GitHub](https://github.com/cesarsotovalero).[^1]
+Below are selected projects that I have authored:
 
   <div id="portfolio">
     <div id="tiles-big">
@@ -38,3 +37,6 @@ Below is a listing of those projects:
 
 
 [//]: # (see https://github.com/slarse/slarse/blob/master/README.md for more inspiration)
+
+
+[^1]: Unless otherwise specified on the project page, all of them are released under MIT license.
