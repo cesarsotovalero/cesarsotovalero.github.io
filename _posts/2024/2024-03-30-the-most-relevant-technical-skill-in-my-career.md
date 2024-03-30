@@ -121,7 +121,7 @@ So I started learning some plotting tools and statistical techniques.
 I remember me looking at code examples in [Kaggle](https://www.kaggle.com/) where there are many datasets and a lot of notebooks to learn from. 
 My [bachelor's thesis](https://dspace.uclv.edu.cu/handle/123456789/1935) was about applying time series classification models to the problem of accurately forecasting rainfalls. There I used EDA in SPSS to find patterns and understand real world data.
 
-A couple later, I started my Master's in Computer Science and went into sport analytics.
+A couple of years later, I started my Master's in Computer Science and went into sport analytics.
 I knew that if manage to collect enough data, formulate the right hypothesis, and use a completely new technique for the problem at hand, I could manage to get a paper published.
 So I did exactly that (btw, [this](https://sciendo.com/it/article/10.1515/ijcss-2016-0007) is the paper if you're wondering).
 I analyzed all the historical data publicly available of the MLB and applied a which at the time were cutting edge ML techniques to predict the outcome of games.
@@ -250,7 +250,7 @@ This underscores the importance of visualizations in conveying complex informati
 
 Color, size, and shape are all important elements of a good plot. For example, I like these colors: `#00cd6c`, `#ffc61e`, `#a0b1ba`, `#ff1f5d`, `#009ade`, `#af58ba`, `#f28522`, and `#a6761d`. Do you also like them?
 
-<div style="margin-bottom: 10px">
+<div style="margin-bottom: 15px">
 <div style="background-color: #00cd6c; width: 100%; height: 10px; margin-top: 5px;"></div>
 <div style="background-color: #ffc61e; width: 100%; height: 10px; margin-top: 5px;"></div>
 <div style="background-color: #a0b1ba; width: 100%; height: 10px; margin-top: 5px;"></div>
