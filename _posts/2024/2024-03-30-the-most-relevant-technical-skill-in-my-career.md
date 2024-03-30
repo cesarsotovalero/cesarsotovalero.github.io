@@ -22,16 +22,15 @@ published: true
 
 Eleven years ago (do you still remember 2013?), I was in the last year of my undergraduate studies.
 I started working on my thesis and soon realized that, to earn my diploma, I had to collect, analyze, and summarize data in a specific way.
-Because at the end of the day, a thesis needs content, and content comes from data and some kind of experiment, so it could justify the grade.
+Because at the end of the day, a thesis needs content, and content comes from data derived from some kind of experiment.
 However, none of these skills were taught to me during the 5 years of my bachelor's curriculum.
 Getting the thesis done was a struggle, but ~~somehow~~ I succeeded.
-A couple of years later, I reached the end of my Master's, and the same cycle repeated itself, as it did again when I ventured into academic research.
-After three thesis, reading a lot of papers, and undertaking my own research projects, I realize that data analysis skills are essential, regardless of the complexity of the problem I'm addressing.
+A couple of years later, I reached the end of my Master degree, and the same data munging cycle repeated once again, as it did later when I ventured into academic research.
+So, after writing 3 thesis, reading a lot of papers, and undertaking my own research projects, I realize that data analysis skills are essential, regardless of the complexity of the problem I'm addressing.
 Not surprisingly, the need for the same skill surfaced again during my professional career.
-No matter how advanced the technology or sophisticated the algorithms, the ability to handle datasets is crucial.
-Therefore, I think that Exploratory Data Analysis (EDA) has become the most important technical skill in my career.
-It has enabled me to understand data, find patterns, visualize results, and support or refute hypotheses to make informed decisions.
-I consider EDA an essential skill for any professional, especially for any job involving decision-making.
+No matter how advanced the programming language or sophisticated the frameworks, the ability to handle data (beyond Excel and DBs) is crucial.
+In fact, I think that Exploratory Data Analysis (EDA) has been, and still is, the most important technical skill in my career.
+I consider EDA an essential skill for any professional, especially for those working in jobs that demand informed decision-making.
 This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.
 
 <figure class="jb_picture">
@@ -43,15 +42,16 @@ This post is about my journey, the lessons learned, and the resources I have use
 
 # What is EDA?
 
-The main purpose of [EDA](https://en.wikipedia.org/wiki/Exploratory_data_analysis) is to aggregate, analyze, summarize, and visualize data to find and showcase valuable information.
-EDA excels at the start of a project, enabling a quick understanding and explanation of the data before moving on to more sophisticated analysis or modeling techniques.
+The main purpose of [EDA](https://en.wikipedia.org/wiki/Exploratory_data_analysis) is to aggregate, analyze, summarize, and visualize data with the objective of finding and/or showcasing valuable information.
+EDA excels at the beginning of a research project, enabling a quick understanding and explanation of the data before moving on to more sophisticated analysis or modeling techniques.
 
-I believe that EDA is, in essence, **a form of scientific communication**.
-As a result, it is a ~~fundamental~~ necessary skill for professionals in any field.
-EDA is key for any job that involves decision-making, because it allows making informed decisions after seeing the big picture in the data through visualizations, pattern identification, and causal reasoning.
-Specifically, a strong foundation in EDA is essential for scientists and individuals seeking answers to complex questions for which empirical studies are required.
+I believe that EDA is, in essence, **a form of scientific-based communication**.
+It is a ~~fundamental~~ necessary skill for professionals in any field.
+EDA is key for any job that involves decision-making, because it allows seeing the big picture in the data through visualizations, pattern identification, and causal reasoning, which favors making better decisions in something known as "[data-drive organizations](https://www.linkedin.com/pulse/data-driven-organizations-quick-review-ahmed-elrouby/)."
+Specifically, a strong foundation in EDA is great for scientists seeking answers to complex questions for which empirical studies are required.
 
-Here are some questions that EDA helps to answer:
+EDA today is mostly associated to Data Science roles, but its roots belong to the field of traditional statistics. 
+For example, here are some questions that EDA helps to answer:
 
 - What is the **distribution** of the data?
 - How do variables **relate** to each other?
@@ -97,36 +97,37 @@ This preliminary step ensures that the solution is effectively tailored to the i
 # EDA: The Ubiquitous Technical Skill
 
 I've been practicing EDA for over 12 years now.
-I began dealing with data during my undergraduate studies in Computer Science and later, my [PhD in Software Engineering](../files/thesis/cesar-fulltext.pdf).
-I've done it not because I particularly enjoy it (which I do), but because it was essential for my research.
-As a software developer, my data analysis skills have opened doors to new opportunities to showcase my research abilities.
-Let me tell you more about my journey. 
+I began dealing with data during my undergraduate studies in Computer Science, and later when working on my [PhD](../files/thesis/cesar-fulltext.pdf).
+Interestingly, I've done it not because I particularly enjoy it (which I do), but because it was essential for my research.
+On the other hand, working as a software developer now, my data analysis skills have opened doors to new opportunities to showcase my research abilities.
+The two following section focus this journey. 
 
 ## The Swiss Army Knife in Academia
 
 During my undergraduate studies in Computer Science, I received a lot of heavy maths subjects, including several semesters of calculus, linear algebra, discrete mathematics, advanced geometry, optimization models, and so on.
-Among the math courses I took, there was one about statistics.
+Among the math courses I took, there was only one about statistics, which we considered to be _soft_ compared to the rest.
 I remember that the lectures were very theoretical and focused on the formulas, rather than the practical aspects.
 It was not until I had to write my thesis that I realized the importance of statistics.
 There I was introduced to SPSS and R.
-After looking at examples of the other thesis, I understood that a EDA was something that they all had in common. 
-Clearly, a good EDA is strictly necessary of a good thesis.
+After looking at examples of the other thesis, I understood that a statistical tests was something that they all had in common. 
+Clearly, a good EDA is strictly necessary to craft a good thesis.
 
 <aside class="quote">
     <em>“EDA is a fundamental skill at all levels of high education.”</em> 
 </aside>
 
-I understood that I had to collect data and apply statistical tests to prove or disprove a scientific hypothesis if I wanted to get graduated.[^2]
+Obviously, I had to collect data and apply rigour statistical tests to prove or disprove a scientific hypothesis if I wanted to earn my diploma.[^2]
 So I started learning some plotting tools and statistical techniques.
-I remember me looking at code examples in [Kaggle](https://www.kaggle.com/) where there are many datasets and a lot of notebooks to learn from. 
-My [bachelor's thesis](https://dspace.uclv.edu.cu/handle/123456789/1935) was about applying time series classification models to the problem of accurately forecasting rainfalls. There I used EDA in SPSS to find patterns and understand real world data.
+I remember me looking at code examples in [Kaggle](https://www.kaggle.com/) where there used to be diverse datasets and a lot of community written notebooks to learn from. 
+
+> My [bachelor's thesis](https://dspace.uclv.edu.cu/handle/123456789/1935) was about applying time series classification models to the problem of accurately forecasting rainfalls. That was the first time I performed some serious EDA in R and SPSS to find patterns in real-world meteorological data.
 
 A couple of years later, I started my Master's in Computer Science and went into sport analytics.
 I knew that if manage to collect enough data, formulate the right hypothesis, and use a completely new technique for the problem at hand, I could manage to get a paper published.
 So I did exactly that (btw, [this](https://sciendo.com/it/article/10.1515/ijcss-2016-0007) is the paper if you're wondering).
-I analyzed all the historical data publicly available of the MLB and applied a which at the time were cutting edge ML techniques to predict the outcome of games.
-I publish a few papers on sport analytics later on using a similar strategy, and I realized that EDA was the most important skill to get the papers ready. 
-I've no doubts that having high-quality figures was key to get the papers accepted.[^3]
+I analyzed all the historical data publicly available of the MLB and applied what, at the time, were cutting edge ML techniques to predict the outcome of games.
+I published a few papers on sport analytics later on using a similar strategy. 
+I've no doubts that having high-quality EDA and convincing tables and figures was key to get those papers accepted.[^3]
 
 <aside class="quote">
     <em>“EDA is essential for <a href="https://en.wikipedia.org/wiki/Reproducibility">reproducible science</a>, allowing other researchers to understand, replicate, and validate the findings.”</em> 
@@ -134,9 +135,10 @@ I've no doubts that having high-quality figures was key to get the papers accept
 
 Later during my PhD, I switched to [empirical software engineering research](../blog/empirical-software-engineering-research-is-harder-than-you-think.html).
 Then, I realized that software is data as well, so EDA was critical to help me understand what's going on in large software ecosystems.
-I started working on "[software debloating](../blog/why-debloating-third-party-software.html)," and collected a massive amount of graph based data about the relationship between Java dependencies.
-I used EDA to find out which dependencies are the most bloated, which are the most used, and which are the most popular in the Java Maven ecosystem.
-During all my academic career, the scale of the experiments and complexity of the data increased, but the importance of EDA remained the same.
+I started working on "[software debloating](../blog/why-debloating-third-party-software.html)," and collected a massive amount of data representing the relationships between Java dependencies.
+For example, I used EDA to find out which dependencies are the most bloated, which are the most used, and which are the most popular in the Java Maven ecosystem.
+
+In conclusion, during all my academic career, the scale of the experiments and complexity of the data increased, but the importance of EDA remained the same.
 
 ## A Superpower Beyond Academia
 
@@ -145,7 +147,7 @@ Working in a large organization helped me to understand better the motto "data d
 Again, EDA is one of the most important skills to understand data and hence take decisions.
 It turns out that my academic skills are great to impress managers, to better support my arguments with data, or simply to describe problems under the basis of facts.
 This not only makes me more effective at work, also makes my ideas more convincing, so it resonates with my colleagues and managers.
-It's an advantage.
+It's an advantage.a
 After all, what could you argue against a well-done [Wilcoxon's Signed-Rank Test](https://en.wikipedia.org/wiki/Wilcoxon_signed-rank_test?wprov=srpw1_0)?
 
 <aside class="quote">
