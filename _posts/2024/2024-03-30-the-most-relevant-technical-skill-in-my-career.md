@@ -250,7 +250,7 @@ This underscores the importance of visualizations in conveying complex informati
 
 Color, size, and shape are all important elements of a good plot. For example, I like these colors: `#00cd6c`, `#ffc61e`, `#a0b1ba`, `#ff1f5d`, `#009ade`, `#af58ba`, `#f28522`, and `#a6761d`. Do you also like them?
 
-<div>
+<div style="margin-bottom: 10px">
 <div style="background-color: #00cd6c; width: 100%; height: 10px; margin-top: 5px;"></div>
 <div style="background-color: #ffc61e; width: 100%; height: 10px; margin-top: 5px;"></div>
 <div style="background-color: #a0b1ba; width: 100%; height: 10px; margin-top: 5px;"></div>
