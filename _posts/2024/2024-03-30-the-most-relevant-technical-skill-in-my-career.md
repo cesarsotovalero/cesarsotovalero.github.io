@@ -216,9 +216,9 @@ I always start my EDA projects by defining clear hypotheses.
 Finding the relevant hypothesis to test is crucial, as it guides the entire analysis.
 It is important for the hypothesis to provide a clear value proposition.
 For example, in a marketing project for a new product, the hypothesis could be "The new product will increase sales by 20% in the first quarter."
-It could be also to dispel a myth, such as "Any publicity is good publicity," or to disprove a certain claim, such as "Investing more money in marketing platform X will increase sales."
+It could be also to dispel a myth, such as "Any publicity is good publicity," or to prove or disprove a certain claim, such as "Investing `X` amount of money in marketing platform `Y` will increase sales by `Z`." 
 
-Here are some tips to write a good hypothesis:
+Here are some additional tips to write a good hypothesis:
  
 - It's a one-sentence question. 
 - It should be refutable.
