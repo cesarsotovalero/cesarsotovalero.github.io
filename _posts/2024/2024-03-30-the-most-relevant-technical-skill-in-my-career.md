@@ -333,9 +333,9 @@ My journey with EDA has ranged from using it to analyze sports statistics to emp
 Of course, some people are so skilled that it's difficult for them to identify the most important technical skill in their career.
 However, I believe recognizing which skills were crucial at different stages is beneficial for personal growth.
 For specialists, it helps to focus on perfecting the right capabilities rather than trying to become a jack-of-all-trades.
-For generalists, it helps to diversify around a particular skill set. 
+For generalists, it helps to diversify around a particular skill set.
 For me, the benefits of nurturing EDA over time have been varied: better job opportunities and professional growth.
-Did you ever though about it?
+Have you ever thought about it?
 
 # Footnotes
 
