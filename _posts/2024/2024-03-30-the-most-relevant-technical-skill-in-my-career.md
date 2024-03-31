@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Most Relevant Technical Skill in My Career
-subtitle: Spoiler&#58; It isn't Java coding
+subtitle: It isn't Java coding
 tags: career
 description: |
   Have you ever wonder which is most relevant technical skill in your career? It's not necessarily a programming language or the latest framework. For me, it is Exploratory Data Analysis (EDA). Why? Because being able to manipulate and find relevant information from various data sources has opened me doors to new opportunities in both academia and industry. This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.  
@@ -90,8 +90,8 @@ I --> A
 E --> F
 {% endmermaid %}
 
-Coming from an academic background, I see EDA as an integral component of the [scientific method](https://en.wikipedia.org/wiki/Scientific_method).
-Viewed from a practical standpoint, such as that of an stakeholder, EDA is crucial for understanding the problem before developing any solution to address it.
+Coming from an academic background, I relate EDA to the [scientific method](https://en.wikipedia.org/wiki/Scientific_method).
+Viewed from a practical standpoint, such as that of a problem solver or stakeholder, EDA is crucial for understanding the problem before developing any solution to address it.
 This preliminary step ensures that the solution is effectively tailored to the intricacies of each particular problem.
 
 # EDA: The Ubiquitous Technical Skill
@@ -102,22 +102,22 @@ Interestingly, I've done it not because I particularly enjoy it (which I do), bu
 On the other hand, working as a software developer now, my data analysis skills have opened doors to new opportunities to showcase my research abilities.
 The two following section focus this journey. 
 
-## The Swiss Army Knife in Academia
+## A Swiss Army Knife in Academia
 
 During my undergraduate studies in Computer Science, I received a lot of heavy maths subjects, including several semesters of calculus, linear algebra, discrete mathematics, advanced geometry, optimization models, and so on.
-Among the math courses I took, there was only one about statistics, which we considered to be _soft_ compared to the rest.
+Among them, there was only one about statistics, which we considered to be _soft_ compared to the rest.
 I remember that the lectures were very theoretical and focused on the formulas, rather than the practical aspects.
 It was not until I had to write my thesis that I realized the importance of statistics.
 There I was introduced to SPSS and R.
-After looking at examples of the other thesis, I understood that a statistical tests was something that they all had in common. 
+After looking at examples of the other thesis, I noticed that statistical tests was something that they all had in common. 
 Clearly, a good EDA is strictly necessary to craft a good thesis.
 
 <aside class="quote">
     <em>“EDA is a fundamental skill at all levels of high education.”</em> 
 </aside>
 
-Obviously, I had to collect data and apply rigour statistical tests to prove or disprove a scientific hypothesis if I wanted to earn my diploma.[^2]
-So I started learning some plotting tools and statistical techniques.
+So, to earn a diploma, one has to collect data and apply rigour statistical tests to prove or disprove a scientific hypothesis.[^2]
+I started learning some plotting tools and statistical techniques.
 I remember me looking at code examples in [Kaggle](https://www.kaggle.com/) where there used to be diverse datasets and a lot of community written notebooks to learn from. 
 
 > My [bachelor's thesis](https://dspace.uclv.edu.cu/handle/123456789/1935) was about applying time series classification models to the problem of accurately forecasting rainfalls. That was the first time I performed some serious EDA in R and SPSS to find patterns in real-world meteorological data.
@@ -134,7 +134,7 @@ I've no doubts that having high-quality EDA and convincing tables and figures wa
 </aside>
 
 Later during my PhD, I switched to [empirical software engineering research](../blog/empirical-software-engineering-research-is-harder-than-you-think.html).
-Then, I realized that software is data as well, so EDA was critical to help me understand what's going on in large software ecosystems.
+Soon, I realized that software is data as well, so EDA was critical to help me understand different phenomenons occurring in large software ecosystems.
 I started working on "[software debloating](../blog/why-debloating-third-party-software.html)," and collected a massive amount of data representing the relationships between Java dependencies.
 For example, I used EDA to find out which dependencies are the most bloated, which are the most used, and which are the most popular in the Java Maven ecosystem.
 
@@ -143,12 +143,11 @@ In conclusion, during all my academic career, the scale of the experiments and c
 ## A Superpower Beyond Academia
 
 After my PhD, I started working as a software developer. 
-Working in a large organization helped me to understand better the motto "data driven decisions."
-Again, EDA is one of the most important skills to understand data and hence take decisions.
-It turns out that my academic skills are great to impress managers, to better support my arguments with data, or simply to describe problems under the basis of facts.
+Being at a large organization helped me to understand better the motto "data driven decisions."
+Again, EDA is one of the most important skills to understand data relationships and hence take decisions.
+It turns out that my academic skills are great to stand out, to better support my arguments with data, or simply to describe problems under the basis of facts.
 This not only makes me more effective at work, also makes my ideas more convincing, so it resonates with my colleagues and managers.
-It's an advantage.a
-After all, what could you argue against a well-done [Wilcoxon's Signed-Rank Test](https://en.wikipedia.org/wiki/Wilcoxon_signed-rank_test?wprov=srpw1_0)?
+EDA is both a tool and an asset.
 
 <aside class="quote">
     <em>“Ideas backed by data are more convincing, which makes them more likely to catch the attention of decision-makers.”</em> 
@@ -157,19 +156,20 @@ After all, what could you argue against a well-done [Wilcoxon's Signed-Rank Test
 The market has also seeing the potential. 
 Most large companies today rely on built-in tools for conducting EDA, such as [Elasticsearch](https://www.elastic.co/), [Tableau](https://www.tableau.com/), and [PowerBI](https://www.microsoft.com/en-us/power-platform/products/power-bi).
 Yet, these platforms, despite their capabilities, often fall short when it comes to the depth of analysis required for complex problems.
-There are instances where delving deeper into the data through custom coding is imperative, e.g., to leverage cutting-edge data analysis methodologies and statistical tests.
+There are instances where delving deeper into the data through custom coding is imperative, e.g., to leverage cutting-edge data analysis methodologies and statistical tests, or to reproduce the results of a research paper.
 This is where R and Python come into play, offering a plethora of libraries and tools that enable the execution of complex EDA tasks.
-On top of that, you can combine the data analysis with front-end development to create awesome interactive dashboards using some javascript library such as the famous [D3.js](https://d3js.org/), [Recharts](https://recharts.org/en-US/), or [Plotly](https://plotly.com/).
+On top of that, you can combine the data analysis with front-end development to create awesome interactive dashboards using some JavaScript library such as the famous [D3.js](https://d3js.org/), [Recharts](https://recharts.org/en-US/), or [Plotly](https://plotly.com/).
 
 While AI continues to revolutionize how we interpret and utilize data, I believe that AI easily stumbles when it comes to EDA. 
 The primary challenge for AI lies in understanding the context, which is required to effectively approach a business decision. 
-For example, AI may not be able to discern the difference between a correlation and causation, or to spot nonsensical data points (such as a negative age or multi decimal price).
-EDA is great for humans, as it's inherently exploratory and subjective, relying on the analyst's intuition and domain knowledge to guide the analysis.
+For example, AI may not be able to discern the difference between a correlation and causation, or to spot nonsensical data points (such as a negative age or unusual outlier).
+EDA is great for humans, as it's inherently exploratory and subjective, involving creativity, domain expertise, and critical thinking.
 This human touch allows for the identification of meaningful insights that AI, in its current state, struggles to replicate. 
 
 # The Craft of a Good EDA
 
-In this section, I share some insights on how I structure my EDA projects. I use R and RStudio, but you can relate the structure, narratives, aesthetics, and tools to any other programming language or environment you prefer.
+In this section, I share some insights on how I perform my EDA tasks.
+I use R and RStudio, but you can relate the structure, narratives, aesthetics, and tools to any other programming language or environment you prefer.
 
 ## Structure
 
@@ -199,7 +199,7 @@ example_eda_project_in_R/
 └── README.md
 ```
 
-The `data` directory contains the raw data, while the `docs` directory houses the project overview and a README file.
+The `data` directory contains the raw data, while the `docs` directory houses the project overview and a `README` file.
 In the `notebooks` directory, I create separate R Markdown files for each research question and add a subdirectory named `figures` to store the plots.
 I prefer notebooks to scripts, as they allow for a more interactive and engaging analysis.
 However, I also include a `R` directory for data processing scripts that are common to multiple notebooks, which I import using the following code:
@@ -209,32 +209,34 @@ source("R/data_processing.R")
 ```
 
 Importing functions is a nice way to have (at least) some notion of reusable code in the project, beyond the notebooks.
-I highly recommend mixing the use of notebooks and scripts, as it allows to keep good software engineering practices and avoid the pervasive "[notebook hell](https://medium.com/skyline-ai/jupyter-notebook-is-the-cancer-of-ml-engineering-70b98685ee71)" that many data scientist fall into.
+I highly recommend mixing the use of notebooks and scripts, as it allows to preserve good software engineering practices and avoid the pervasive "[notebook hell](https://medium.com/skyline-ai/jupyter-notebook-is-the-cancer-of-ml-engineering-70b98685ee71)" that many data scientist fall into.
 This superstructure helps me keep my projects organized and easily accessible.
 
 ## Hypotheses
 
 I always start my EDA projects by defining clear hypotheses.
-Finding the relevant hypothesis to test is crucial, as it guides the entire analysis.
+Finding the relevant hypothesis to test is crucial, as it drives the entire analysis.
 It is important for the hypothesis to provide a clear value proposition.
-For example, in a marketing project for a new product, the hypothesis could be "The new product will increase sales by 20% in the first quarter."
-It could be also to dispel a myth, such as "Any publicity is good publicity," or to prove or disprove a certain claim, such as "Investing `X` amount of money in marketing platform `Y` will increase sales by `Z`." 
+For example, in a marketing project for a new product, the hypothesis could be something like: "The new product will increase sales by 20% in the first quarter."
+It could be also to dispel a myth, such as "Sales were not affected by negative reviews, as any publicity is good publicity," or to prove or disprove a certain claim, such as "Investing `X` amount of money in marketing platform `Y` will increase sales by `Z`." 
 
-Here are some additional tips to write a good hypothesis:
+A good hypothesis is:
  
-- It's a one-sentence question. 
-- It should be refutable.
-- Make sure there is sufficient data to test it.
+- **Concise:** A single question or statement. 
+- **Refutable:** It can be proven wrong.
+- **Original:** No one has investigated it before.
+- **Testable:** There is enough data to prove or disprove it.
+- **Relevant:** It is important for the business or the research.
 
 ## Narratives
 
 We all love stories. 
-This is something we acquired since we were kids listening to our moms beside our beds.
+This is something we acquired since we were kids and listened to our moms beside our beds.
 Stories are powerful tools to convey information and make it memorable.
 In EDA, the narrative is the story you want to tell with your data.
 It is the message you want to convey to your audience.
 
-Let me illustrate the power of EDA and narratives altogether, using a single example:
+Let me illustrate the power of EDA and narratives altogether, using an example that shows how to lie with statistics:
 
 > "I was sitting in the library, going through recent journal articles when, to everyone's surprise, Donald Knuth walked in. I can now say that the average number of citations of all researchers in the library, including myself, is now in the thousands. This is a perfect example of how to lie with statistics. Be careful when using averages; they can be mean to you. Outliers can wreck your conclusions."
 
@@ -246,11 +248,11 @@ In academia, as well as in industry, the ability to craft compelling narratives 
 
 It is said that a picture is worth a thousand words.
 This is especially true in EDA.
-The aesthetics of your plots can make or break your analysis.
-In a study on visual information in scientific literature, it was found that higher-impact articles had more diagrams per page and a higher proportion of diagrams, but a lower proportion of photos[^1].
+The aesthetics of your plots can make your work memorable or completely break your message.
+In a study on visual information in scientific literature, it was found that higher-impact articles had more diagrams per page and a higher proportion of diagrams, but a lower proportion of photos.[^1]
 This underscores the importance of visualizations in conveying complex information.
 
-Color, size, and shape are all important elements of a good plot. For example, I like these colors: `#00cd6c`, `#ffc61e`, `#a0b1ba`, `#ff1f5d`, `#009ade`, `#af58ba`, `#f28522`, and `#a6761d`. Do you also like them?
+Color, size, and shape are all important elements of a good plot. For example, I like this palette (shown below): `#00cd6c`, `#ffc61e`, `#a0b1ba`, `#ff1f5d`, `#009ade`, `#af58ba`, `#f28522`, and `#a6761d`. Do you also like it?
 
 <div style="margin-bottom: 15px">
 <div style="background-color: #00cd6c; width: 100%; height: 10px; margin-top: 5px;"></div>
@@ -265,10 +267,10 @@ Color, size, and shape are all important elements of a good plot. For example, I
 
 Here are some additional tips to make a plot better:
 
-- Use vector graphics for publication-quality plots (use SVG or PDF).
-- Remove all unnecessary elements (including gridlines legends if possible).
-- Use a caption to synthesize the message, not the chart itself (I try to summarize the key takeaway in one sentence).
-- Check for message bias using a third party (just ask another person what does she understand from the figure, if it takes more than 1 min to figure out, then there's something wrong).
+- Use vector graphics for publication-quality plots (SVG or PDF).
+- Remove all unnecessary elements (including gridlines and legends if possible).
+- Use a caption to synthesize the message, not to describe the chart itself (I try to summarize the key takeaway in one sentence).
+- Check for message bias using a third party (I ask another person what does she understand from the figure, if it takes more than 1 min to figure out, then there's something wrong in my plot).
 - Do the last retouches in a vector graphics editor (e.g., I use [Inkscape](https://inkscape.org/)).
 
 ## Tools
@@ -276,9 +278,10 @@ Here are some additional tips to make a plot better:
 I use R and RStudio for my EDA projects.
 In particular, I leverage the powerful [tidyverse](https://www.tidyverse.org/) ecosystem, and [ggplot2](https://ggplot2.tidyverse.org/) in particular for creating beautiful visualizations.
 `ggplot2` is a powerful tool that leverages the [Grammar of Graphics](https://link.springer.com/book/10.1007/0-387-28695-0) to create complex plots with ease.
-I start by loading the data, then I create a plot layer by layer, adding aesthetics, scales, and labels.
+This method is very popular because it allows for the creation of plots layer by layer, making it easy to customize every aspect of the plot.
+I start by loading the data, then I summarize statistics, explore the data, create some plots, change aesthetics, scales, and labels.
 
-Here's [a real code example](https://github.com/ASSERT-KTH/jdbl-experiments/blob/master/notebooks/analysis_size.Rmd#L66C1-L81C64) of an EDA that I did for [this paper](https://doi.org/10.1145/3546948) (Note that this code and the resulting figure is never shown or discussed anywhere in the published paper):
+Here is [a real code example](https://github.com/ASSERT-KTH/jdbl-experiments/blob/master/notebooks/analysis_size.Rmd#L66C1-L81C64) of an EDA that I did for [this paper](https://doi.org/10.1145/3546948) (Note that this code and the resulting figure is never shown or discussed anywhere in the published paper):
 
 {% highlight r linenos %}
 # ----------------------------------------------------------------------------
@@ -301,13 +304,15 @@ ggsave(filename = "Figures/jar_size_barplot.pdf", plot = jar_size_barplot,
 
 
 The code above produces [this figure](https://github.com/ASSERT-KTH/jdbl-experiments/blob/master/notebooks/Figures/analysis_size/jar_size_barplot.pdf). 
-As you can see, it's about the small details and micro optimizations that make a plot better, but overall choosing the right chart type, the right colors, and the right message is what makes a plot great.
+As you can see, plotting is about taking into account small details and doing micro optimizations.
+For example, the `geom_text` function is used to add the percentage values on top of the bars, and the `scale_y_continuous` function is used to change the labels to percentages.
+These details make a plot better, but overall choosing the right chart type, the right colors, and the right message is a good starting point.
 
 # Examples
 
 I have used EDA in various projects, from analyzing sports' statistics to academic software engineering research, and also in my current work. 
-My code is far from beautiful, but ~~I want to believe~~ it is still better than the horrendous Excel sheets existing out there.
-Again, notice that the code is never published or discussed anywhere in the papers, but it solely available in the repositories which (surprisingly?) are almost never public.[^4]
+My code is far from beautiful, but ~~I want to believe~~ it is still better than the horrendous Excel sheets that still exist out there.
+I would like to emphasize that the EDA code is never published or discussed anywhere in the research papers, but it's solely available in the repositories which (surprisingly?) are almost never public.[^4]
 
 Here are some examples of repositories where I have used EDA in my research papers:
 
@@ -320,14 +325,17 @@ Here are some examples of repositories where I have used EDA in my research pape
 
 # Summary
 
-I can confidently say that I am where I am now because I recognized the importance of explaining and manipulating data very early on.
-EDA has proven to be a valuable asset in various fields and applications, from academia to industry.
+I attribute a large proportion of my success to recognizing the importance of explaining and manipulating data very early on.
+For me, EDA has proven to be a valuable asset in various fields and applications, from academia to industry.
 From computer science research to software development, EDA has been a constant companion.
 My journey with EDA has ranged from using it to analyze sports statistics to employing it as a critical tool in my research endeavors, and eventually, integrating it into my professional work.
+
 Of course, some people are so skilled that it's difficult for them to identify the most important technical skill in their career.
-However, I believe recognizing which skills were crucial at different stages is beneficial for personal growth, as it helps to focus on the right skills.
-For me, the benefits of nurturing EDA over time have been varied: better job opportunities and professional recognition.
-What has been your experience?
+However, I believe recognizing which skills were crucial at different stages is beneficial for personal growth.
+For specialists, it helps to focus on perfecting the right capabilities rather than trying to become a jack-of-all-trades.
+For generalists, it helps to diversify around a particular skill set. 
+For me, the benefits of nurturing EDA over time have been varied: better job opportunities and professional growth.
+Did you ever though about it?
 
 # Footnotes
 
