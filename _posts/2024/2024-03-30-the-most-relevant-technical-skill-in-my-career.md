@@ -223,7 +223,7 @@ It could be also to dispel a myth, such as "Sales were not affected by negative 
 A good hypothesis is:
  
 - **Concise:** A single question or statement. 
-- **Refutable:** It can be proven wrong.
+- **Refutable:** It can be proven right or wrong.
 - **Original:** No one has investigated it before.
 - **Testable:** There is enough data to prove or disprove it.
 - **Relevant:** It is important for the business or the research.
@@ -325,10 +325,10 @@ Here are some examples of repositories where I have used EDA in my research pape
 
 # Summary
 
-I attribute a large proportion of my success to recognizing the importance of explaining and manipulating data very early on.
+I attribute a large proportion of my professional successes to the fact that I understood the importance of explaining and manipulating data very early on in my career.
 For me, EDA has proven to be a valuable asset in various fields and applications, from academia to industry.
-From computer science research to software development, EDA has been a constant companion.
-My journey with EDA has ranged from using it to analyze sports statistics to employing it as a critical tool in my research endeavors, and eventually, integrating it into my professional work.
+From computer science research to software development, EDA has been a constant companion over the last 11 years.
+My journey with EDA ranges from using it to analyze sports statistics to employing it as a critical tool in my research endeavors, and eventually, integrating it into my professional work.
 
 Of course, some people are so skilled that it's difficult for them to identify the most important technical skill in their career.
 However, I believe recognizing which skills were crucial at different stages is beneficial for personal growth.
