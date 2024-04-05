@@ -190,8 +190,9 @@ The key skills to sharp involve language comprehension, understanding of the dom
 The successful prompt engineer knows how to apply the principles of clear communication.
 It's about being concise, precise, and unambiguous.
 That way one can tweak the prompt to get the best results.
+Examples of techniques are **summarizing**, **inferring**, **transforming**, **expanding**, and **iterating** over an over the prompts until the AI gets it right.
 If in doubt, it may even involve calling another AI to write the prompt. 
-Recursive prompting!
+Recursive prompting is called!
 
 The successful prompter doesn't give up easily.
 Sometimes one needs to experiment with different variations of prompts and evaluate the model's responses.
