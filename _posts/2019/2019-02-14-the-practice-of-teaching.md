@@ -29,7 +29,7 @@ What do you think?
   <iframe width="560" height="349" src="https://www.youtube.com/embed/3nptpGpaYws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Wrapping Up
+# Wrapping Up
 
 For this session, I used a few preparation tactics that I found incredibly helpful:
 
