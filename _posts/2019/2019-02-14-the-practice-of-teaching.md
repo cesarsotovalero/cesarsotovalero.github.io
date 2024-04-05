@@ -13,25 +13,30 @@ date: 2019/2/14
 published: true
 ---
 
-Nobody can deny that teaching is hard.
-I strongly believe that teaching is one of the most essential skills to learn in this century.
-Whether you are a junior software developer or a renowned member of a firm, your ability to communicate your knowledge effectively will determine your future success.
+It's universally acknowledged that teaching is challenging. 
+I firmly believe that teaching ranks among the most critical skills to master in our century.
+It applies to everyone, from software developers, to academic researchers, to corporate managers. 
+Our future success hinges on the ability to share our ideas and knowledge effectively.
 
-In this 15 min video, I teach how the Quicksort algorithm works the old way: with a blackboard and chalk.
-As you can see, I made many mistakes. 
-Considering that I spent two hours preparing for this, my performance was not as good as expected.
+In the 15-minute video shown below, I tried to teach the [Quicksort algorithm](https://en.wikipedia.org/wiki/Quicksort) using traditional methods: a blackboard and chalk.
+You'll notice several mistakes throughout the session. 
+Despite dedicating two hours to preparation, my performance didn't meet my expectations. 
+However, I wouldn't consider it a complete failure. 
 
-It was, however, not that bad. Isn't it?
+What do you think?
 
 <div class="container-youtube">
   <iframe width="560" height="349" src="https://www.youtube.com/embed/3nptpGpaYws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-# Wrapping Up 
+## Wrapping Up
 
-For my this session, these are some preparation tips that helped me:
+For this session, I used a few preparation tactics that I found incredibly helpful:
 
-- Prepare a script of your presentation; having something written helps to clarify ideas and to sharpen the vocabulary for the session
-- Record me during the rehearsal: it is incredible the many mistakes that we overlook if we don't see ourselves during the performance
-- Move my hands and speak slowly: the corporal language is essential, this is something that I'm still learning from [the best speakers](https://www.ted.com/talks)
-- Practice, practice, and practice
+- **Prepare a Script**: Creating a draft of my presentation was helpful for organizing my thoughts and refining the vocabulary I needed. I think with a bit more of effort it would make a significant difference in the clarity and flow of my talk.
+- **Rehearse on Camera**: I was surprised by the number of errors I didn't notice until I watched myself perform. Next time, I'll record my rehearsals to spot and correct mistakes I would have otherwise missed.
+- **Use Body Language and Pacing**: I've learned that mastering body language and maintaining a steady pace when speaking are vital. I'm still honing these skills, drawing inspiration from watching [the best speakers](https://www.ted.com/talks).
+- **Consistent Practice**: I can't stress enough the value of consistent practice. It's the cornerstone of improvement for me. Regularly revisiting and rehearsing my material is essential for my growth.
+
+I'm sharing these strategies in the hope that they'll be as beneficial to you as they have been for me. 
+Let's continue to learn and evolve together as more effective speakers and teachers.
