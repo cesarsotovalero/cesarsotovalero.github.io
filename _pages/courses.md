@@ -6,7 +6,23 @@ subtitle: 🎓
 published: true
 ---
 
-# Doctoral Courses
+# MOOCs Completed
+
+- [ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/accomplishments/7496dcb4-a0fd-4248-93ce-f8125195ed0d?usp=sharing), DeepLearning.AI, 2024
+
+- [Cloud-Native Development with OpenShift and Kubernetes Specialization](https://coursera.org/share/0e4ea09c897c350cd1dc618f88047952), Coursera, 2023
+
+- [Scrum Master Certification Specialization](https://coursera.org/share/8efb8942e5bdb1a26a96254c3b00c1f1), Coursera, 2023
+
+- [Decentralized Finance (DeFi): The Future of Finance Specialization](https://coursera.org/share/134443f801ca6af78bb17ded1d0d7d2c), Coursera, 2023
+
+- [JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/certification/cesarsotovalero/javascript-algorithms-and-data-structures), freeCodeCamp, 2021
+
+- [Responsive Web Design](https://www.freecodecamp.org/certification/cesarsotovalero/responsive-web-design), freeCodeCamp, 2021
+
+- [Unix Tools: Data, Software and Production Engineering](https://courses.edx.org/certificates/e922632cec44445ea8d1f534d64f7d8a), edX, 2020
+
+# Doctoral Courses Completed
 
 - [FBB3110 Computational Python](https://www.kth.se/student/kurser/kurs/FBB3110?l=en), KTH Fall 2021
 
@@ -30,25 +46,10 @@ published: true
 
 - [WASP Autonomous Systems I](../files/certificates/Certificate_WASP_AS1_Cesar.pdf), KTH, Spring 2019
 
-# Master Courses
+# Master Courses Completed
 
 - [Academic Transcripts in English](../files/certificates/MSc_Academis_Transcript-eng.pdf), Universidad Central "Marta Abreu" de Las Villas, Cuba, 2014-2016
 
-# Bachelor Courses
+# Bachelor Courses Completed
 
 - [Academic Transcripts in English](../files/certificates/BSc_Academis_Transcript-eng.pdf), Universidad Central "Marta Abreu" de Las Villas, Cuba, 2009-2013
-
-
-# MOOCs
-
-- [Cloud-Native Development with OpenShift and Kubernetes Specialization](https://coursera.org/share/0e4ea09c897c350cd1dc618f88047952), Coursera, 2023
-
-- [Scrum Master Certification Specialization](https://coursera.org/share/8efb8942e5bdb1a26a96254c3b00c1f1), Coursera, 2023
-
-- [Decentralized Finance (DeFi): The Future of Finance Specialization](https://coursera.org/share/134443f801ca6af78bb17ded1d0d7d2c), Coursera, 2023
-
-- [JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/certification/cesarsotovalero/javascript-algorithms-and-data-structures), freeCodeCamp, 2021
-
-- [Responsive Web Design](https://www.freecodecamp.org/certification/cesarsotovalero/responsive-web-design), freeCodeCamp, 2021
-
-- [Unix Tools: Data, Software and Production Engineering](https://courses.edx.org/certificates/e922632cec44445ea8d1f534d64f7d8a), edX, 2020

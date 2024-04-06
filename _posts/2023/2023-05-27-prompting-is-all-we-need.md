@@ -35,9 +35,9 @@ After giving it some thought, I'm starting to understand what's going on: I'm **
 Let's think about it step by step.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-05-27/pino_pizza.jpg alt:"The future of software will have the same destiny that pizza production" %}
+  {% responsive_image path: img/posts/2023/2023-05-27/pino_pizza.jpg alt: "The future of software will have the same destiny that pizza production" %}
   <figcaption class="stroke"> 
-    &#169; Do you know how to make a pizza from scratch? I don't, and I'm afraid the same will happen with the software industry! Photo of miniature model of the Pizzeria Pino, the first Stockholm's pizzeria, funded in 1976, and exposed in the <a href="https://maps.app.goo.gl/ohfdw8atqpv2WjiTA">Stadsmuseet</a>.
+    &#169; Do you know how to make a pizza from scratch? I don't, and I'm afraid the same will happen with the software industry! Photo of a miniature of Pizzeria Pino, the first Stockholm's pizzeria, funded in 1976, and exposed in the <a href="https://maps.app.goo.gl/ohfdw8atqpv2WjiTA">Stadsmuseet</a>.
   </figcaption>
 </figure>
 
@@ -56,11 +56,11 @@ They could understand complex systems written in COBOL (such as those for financ
 
 But that was a long time ago when software was still [eating the world](https://a16z.com/why-software-is-eating-the-world/).
 Nowadays, software is everywhere.
-It already [ate the world](https://www.wsj.com/articles/software-ate-the-world-and-soon-it-will-write-itself-11607037000?reflink=desktopwebshare_permalink) and digest it.
+It already [ate the world](https://www.wsj.com/articles/software-ate-the-world-and-soon-it-will-write-itself-11607037000?reflink=desktopwebshare_permalink) and digested it.
 Sometimes resulting in [a mess](../blog/why-debloating-third-party-software.html) that we still have to clean up.
 Anyway, its output is indispensable, just like salt for our food. 
 In every industry, in every company, in every home, software is a necessary ingredient.
-So the crew of software cookers has grown at a very fast speed.
+So the crew of software cookers has grown at a rapid speed.
 But the world had not enough mathematicians, or engineers, to satisfy the demand for programmers.[^6]
 And as with any other industry, the higher the demand, the bigger the push humanity makes in order to make the production machinery more productive.
 
@@ -103,7 +103,7 @@ It's [supply and demand](https://en.wikipedia.org/wiki/Supply_and_demand), there
 However, there's a catch. 
 A critical component is still essential to fuel the AI machinery: the prompts.
 Human expertise is necessary to properly craft the questions for the AI systems. 
-Consequently, a new category of programmer has emerged.
+Consequently, a new category of programmers has emerged.
 These are the individuals who specialize in creating effective prompts to tackle coding challenges. 
 Let me introduce you to the **prompt engineer**.
 
@@ -114,7 +114,7 @@ The job is fundamentally [about crafting queries](https://asianjde.com/ojs/index
 "I have a list of items, write an algorithm to sort them?," or
 "My boss doesn't understand technical debt, what should I do?"
 The next step is straightforward, just taking the AI-generated response and integrating it into the appropriate context. 
-Often directly copy/pasting the response to the production environment is enough.
+Directly copy/pasting the response to the production environment is often just enough.
 Pure magic!
 
 But perhaps this isn't so magical after all.
@@ -146,11 +146,11 @@ We still have a few years left for us to adapt and redirect our skills.
 And maybe we can all keep our jobs after all.
 I'm talking, of course, about jumping into the new wave to become successful prompt engineers.
 
-But fist, let's set the terms.
+But first, let's set the terms.
 
 # The Prompt Engineer Manifesto
 
-The time has come for us, successful prompt engineers, to announce our manifesto.
+The time has come for us, the successful prompt engineers to announce our manifesto.
 
 Here it is:
 
@@ -174,7 +174,7 @@ Here it is:
 > We will prompt a more powerful AI in the future to write it better.<br>
 > ”
 
-Now that we have defined who we are, what we do, and what we don't do, let's explore how to become successful at the job.
+Now that we have defined who we are, what we do, and what we don't do, let's explore how to become successful on the job.
 
 # The Successful Prompt Engineer
 
@@ -182,19 +182,20 @@ Now that we have defined who we are, what we do, and what we don't do, let's exp
     <em>“Prompting is not about writing questions. It's a way of looking at and solving problems.”</em> 
 </aside>
 
-The successful prompt engineer has a clear objective in mind (you're wrong, it's not making more money).
-To reach the objective, we should really understands how AI actually works.[^2]
-This is necessary in oder to craft the best prompts.
-The key skills to sharp involve language comprehension, understanding of the domain specific keywords, and the context itself.
+The successful prompt engineer has a clear goal in mind (you're wrong, it's not making more money).
+To reach the objective, we should really understand how AI actually works.[^2]
+This is necessary to craft the best prompts.
+The key skills to sharp involve language comprehension, understanding of the domain-specific keywords, and the context itself.
 
 The successful prompt engineer knows how to apply the principles of clear communication.
 It's about being concise, precise, and unambiguous.
 That way one can tweak the prompt to get the best results.
+Examples of techniques are **summarizing**, **inferring**, **transforming**, **expanding**, and **iterating** over an over the prompts until the AI gets it right.
 If in doubt, it may even involve calling another AI to write the prompt. 
-Recursive prompting!
+Recursive prompting is called!
 
 The successful prompter doesn't give up easily.
-Sometimes one needs to experiment with different variations of prompts and evaluates the model's responses.
+Sometimes one needs to experiment with different variations of prompts and evaluate the model's responses.
 When the output is not so good, the successful prompt engineer knows when to flush the toilet.
 
 The successful prompter leverages AI in favor of improving **learning**, **coding**, and **creativity**.
@@ -203,7 +204,7 @@ The successful prompter leverages AI in favor of improving **learning**, **codin
 
 The successful prompt engineer knows how to use AI to learn new stuff.
 
-Here are 5 examples:
+Here are five examples:
 
 1. **Use** the Pareto Principle, which identifies the 20% of the topic that will yield 80% of the desired results, to create a focused learning plan for me.
 2. **Make** a study schedule for all of the above in an appropriate number of weeks. I can study for `X` hours every Tuesday and Thursday. Include time for revision and testing.
@@ -215,7 +216,7 @@ Here are 5 examples:
 
 The successful prompt engineer knows how to use AI to write ~~better~~ code.
 
-Here are 5 examples:
+Here are five examples:
 
 1. **Describe** what the following code does. Explain it to me step-by-step in plain English.
 2. **Optimize** this code to be more elegant, more readable, and more efficient.
@@ -227,7 +228,7 @@ Here are 5 examples:
 
 The successful prompt engineer knows how to apply the new stuff just learned to do something that cannot be done by prompting.
 
-Here are 5 examples:
+Here are five examples:
 
 1. **Make** ~~money~~ value out of the following idea (e.g., "Can you provide a summary of the main points from the article `X`?").
 2. **Create** a new product or service based on the stuff just learned?
@@ -329,10 +330,10 @@ Here are some of my favorite prompts, most of them are inspired or modified from
 
 # Conclusion
 
-The end of software engineering as we know is here. 
-AI has knocked on our door, and entered our workplace.
+The end of software engineering, as we know it, is here. 
+AI has knocked on our door and entered our workplace.
 But AI still needs us. 
-Prompt enginnering is the brand new coding mode for us developers.
+Prompt engineering is the brand-new coding mode for us developers.
 Not only to write software, but to solve many other issues.
 So in the era when data is gold, prompt engineers could be the miners.
 Stay tuned because we'll soon start prompting with our voice, images, videos, everything.
@@ -345,11 +346,16 @@ The future is as uncertain as it is exciting.
 - <i class="fab fa-github"></i> [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
 - <i class="fab fa-github"></i> [awesome-chatgpt](https://github.com/sindresorhus/awesome-chatgpt)
 - [:earth_americas: learnprompting.org](https://learnprompting.org/docs/intro)
+- [ChatGPT Prompt Engineering for Developers](https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers)
 
 # Footnotes
 
-[^2]: I should blog more about Deep Learning, let me know if you would be interested to read about it .
-[^3]: The first coders really had huge challenges, like sending the first human to the moon. If in doubt, just look again at the [famous picture](https://news.mit.edu/2016/scene-at-mit-margaret-hamilton-apollo-code-0817)e of Margaret Hamilton standing next to the Apollo Guidance Computer source code. 
+[^2]: I should blog more about Deep Learning, let me know if you would be interested to read about it.
+
+[^3]: The first coders really had huge challenges, like sending the first human to the moon. If in doubt, just look again at the [famous picture](https://news.mit.edu/2016/scene-at-mit-margaret-hamilton-apollo-code-0817) of Margaret Hamilton standing next to the Apollo Guidance Computer source code.
+
 [^4]: I know it sounds crazy, but software and the internet were not a thing 30 years ago, and people still had a great life without mobile phones.  
+
 [^5]: If you are reading this, you probably know how a computer works. Could you please explain it in the comments below for those who don't? Thanks 😀!
+
 [^6]: The lack of software developers was most accentuated in 2020, when the world was hit by the COVID-19 pandemic. The demand for software engineers skyrocketed, and the supply was not enough to satisfy it, read [The Human Side of the Tech Industry: Key Drivers Behind the Tech Talent Dilemma](https://doi.org/10.1145/3502771.3502775).

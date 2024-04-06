@@ -10,7 +10,7 @@ published: true
 
 > My verified peer reviews for journals can be seen in the [Web of Science](https://www.webofscience.com/wos/author/record/AAB-9333-2019).
 
-- [SoftwareX](https://www.sciencedirect.com/journal/softwarex), 2023 [Recognition](../files/certificates/2023_Certificate_SOFTX_Recognised.pdf)
+- [PeerJ Computer Science](https://peerj.com/computer-science/), 2024
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2023
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2022
 - [International Journal of Computer Science in Sport](https://sciendo.com/journal/IJCSS), 2021
