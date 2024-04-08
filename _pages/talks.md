@@ -2,7 +2,7 @@
 permalink: talks.html
 layout: page
 title: Talks
-subtitle: 🗣️
+subtitle: 📢
 published: true
 ---
 
