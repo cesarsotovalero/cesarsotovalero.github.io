@@ -368,6 +368,12 @@ a[href^="https://coursera.org/"] {
   padding-left: 35px;
 }
 
+a[href^="https://learn.deeplearning.ai/accomplishments/"] {
+  background: transparent url(/img/icons/deeplearning.ai.png) no-repeat center left;
+  background-size: 28px 28px;
+  padding-left: 35px;
+}
+
 a[href^="https://courses.edx.org/"] {
   background: transparent url(/img/icons/edx.svg) no-repeat center left;
   padding-left: 45px;
