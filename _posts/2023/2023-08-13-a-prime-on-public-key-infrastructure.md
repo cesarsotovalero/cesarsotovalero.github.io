@@ -32,11 +32,11 @@ At its core, PKI binds public keys to the identities of entities such as individ
 This is done through a process of registration, signing, and issuance of **digital certificates**.
 These certificates are provided by a Certificate Authority (CA) responsible for ensuring the trustworthiness of the binding.
 In this article, I will delve into the practical aspects of symmetric and asymmetric encryption.
-Later, I'll focus on the role of PKI, and how it helps to safeguard the authenticity and security of digital transactions and communications across the internet.
+Later I'll focus on the role of PKI, and how it helps to safeguard the authenticity and security of digital transactions and communications across the internet.
 Let's dive in!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-08-13/dark_well.jpg alt:"A dark pool" %}
+  {% responsive_image path: img/posts/2023/2023-08-13/dark_well.jpg alt: "A dark pool" %}
   <figcaption class="stroke"> 
     &#169; The internet is a chthonic pool. Don't jump in without your keys! Photo of a piece of art in the <a href="https://maps.app.goo.gl/75AGyCg5QpzjQeFR8">Stockholm's Paradox Museum</a>.
   </figcaption>
@@ -88,7 +88,7 @@ This is a mechanism to encode messages where both the sender and receiver use th
 </aside>
 
 The most famous example is perhaps the [Caesar cipher algorithm](https://en.wikipedia.org/wiki/Caesar_cipher).
-The basic idea is to shift each letter in the plaintext (the original message) by a certain number of places down or up the alphabet
+The basic idea is to shift each letter in the plaintext (the original message) by a certain number of places down or up the alphabet.
 For example, if the key is "`3`", then the letters of the alphabet are shifted to three positions.
 In this case, the letter "`A`" would be encoded as "`D`", "`B`" would be "`E`", and so on.
 To decrypt the message, the recipient only needs to shift the letters back by the same number of positions as used for encryption.
@@ -190,7 +190,7 @@ public class SymmetricEncryptionExampleWithAES {
 [//]: # (------ How it works in practice -------------------------------------------------------------------)
 
 The main benefit of symmetric encryption is that it is **fast and efficient**.
-By fast I mean, for example, that encrypting a file of 1 Gigabyte using AES takes less than a second on a personal computer.
+By fast I mean, for example, that encrypting a file of one Gigabyte using AES takes less than a second on a personal computer.
 
 However, the speed of symmetric encryption comes with the following drawbacks:
 
@@ -209,7 +209,7 @@ In 1976, Whitfield Diffie and Martin Hellman proposed a revolutionary method to 
 Their system pushed forward the field of cryptography by allowing users to communicate securely without having to agree on a shared secret key.
 The system is known as "public-key cryptography" or "asymmetric encryption," and it is the foundation of how the internet is secured today.
 
-> "The most important property of asymmetric encryption is that the decryption key (a.k.a. private key) cannot be feasibly derived from the encryption key (a.k.a. public key), even though they are mathematically related. This allows the public key to be shared openly, while the private key must be kept secret by the owner."
+> "The most important property of asymmetric encryption is that the decryption key (a.k.a. _private key_) cannot be feasibly derived from the encryption key (a.k.a. _public key_), even though they are mathematically related. This allows the public key to be shared openly, while the owner must keep the private key secret."
 
 [//]: # (------ How it works graphically -------------------------------------------------------------------)
 
@@ -322,7 +322,7 @@ public class AsymmetricEncryptionExampleWithRSA {
     <em>“Asymmetric encryption is slower and (arguably) less secure than symmetric encryption, but it solves the key distribution problem.”</em> 
 </aside>
 
-In real-world scenarios, encrypting large files (like 1 Gigabyte or so) directly with an asymmetric encryption algorithm like RSA is impractical due to its slow speed.
+In real-world scenarios, encrypting large files (like one Gigabyte or so) directly with an asymmetric encryption algorithm like RSA is impractical due to its slow speed.
 Instead, these types of algorithms are used to encrypt a small piece of data, such as the "secret key" used in symmetric encryption.
 This difference in speed is the principal reason why asymmetric encryption is typically reserved for specific tasks, like safely exchanging keys, not for encrypting lots of data.
 
@@ -351,7 +351,7 @@ The CA then issues a certificate that links the user's identity with their publi
 This system ensures that any public key or certificate disseminated over the internet is reliably associated with a particular individual or entity.
 Such a mechanism enhances security, making it difficult for imposters to masquerade as legitimate users, thereby bolstering the trustworthiness and integrity of online communications and transactions.
 
-A user's public key is distributed via a digital certificate, which is a key component of the PKI.
+A user's public key is distributed via a digital certificate, which is a key part of the PKI.
 Digital certificates, issued by Certificate Authorities (CAs) within the PKI, bind a public key to an entity (like a person or organization).
 They verify the ownership of the public key, ensuring that when you encrypt something with a public key, the intended recipient (and only they) can decrypt it with their private key.
 PKI provides a framework of trust for these certificates, establishing the authenticity of public keys for secure communications and transactions.
@@ -491,7 +491,7 @@ However, PKI systems must also address the scenario of compromised private keys.
 In such cases, the associated certificate needs to be invalidated, a process overseen by the CA.
 The CA can revoke a certificate, and this revocation information is disseminated through [Certificate Revocation Lists](https://en.wikipedia.org/wiki/Certificate_revocation_list) (CRLs) or the [Online Certificate Status Protocol](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) (OCSP).
 CRLs provide a list of revoked certificates and are regularly updated and checked by systems verifying certificates.
-OCSP offers a more real-time verification, checking the status of a certificate each time it is presented.
+OCSP offers real-time verification, checking the status of a certificate each time it is presented.
 This mechanism ensures that compromised certificates are quickly recognized as invalid, maintaining the overall security of the PKI system.
 
 ## Example: HTTPS
@@ -502,7 +502,7 @@ I would say, this is the most fundamental building block of the internet.
 
 HTTPS uses encryption to protect the privacy and integrity of the data being transmitted.
 It protects against man-in-the-middle attacks, and the bidirectional block cipher encryption of communications between a client and server protects the communications against eavesdropping and tampering.
-If the data is hijacked online, all the hijacker gets is binary code.
+If the data is hijacked online, all the hijacker gets are binary code.
 
 {% badge ../img/posts/2023/2023-08-13/https_internet_url.jpg 140 https://en.wikipedia.org/wiki/HTTPS %}
 
@@ -572,6 +572,6 @@ Finally, I have introduced the concept of Web of Trust (WOT) as an alternative t
 
 # Footnotes
 
-[^1]: Whitfield Diffie and Martin Hellman, "New Directions in Cryptography", _IEEE Transactions on Information Theory_, Vol. 22, No. 6, November 1976, pp. 644–654.
+[^1]: Whitfield Diffie and Martin Hellman, "[New Directions in Cryptography](https://ieeexplore.ieee.org/document/1055638)", _IEEE Transactions on Information Theory_, Vol. 22, No. 6, November 1976, pp. 644–654.
 
-[^2]: In symmetric encryption, sometimes the keys are actually different but still connected in a way that is easy to figure out.
+[^2]: In symmetric encryption, sometimes the keys are actually different but still connected in a way that is straightforward to figure out.

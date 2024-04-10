@@ -11,12 +11,12 @@ keywords:
   - C
   - D
   - E
-image: ../img/posts/2023/2023-MM-DD/IMG-cover.jpg
-share-img: ../img/posts/2023/2023-MM-DD/IMG-cover.jpg
+image: ../img/posts/2023/2023-11-12/IMG-cover.jpg
+share-img: ../img/posts/2023/2023-11-12/IMG-cover.jpg
 show-avatar: false
 toc: true
 mathjax: false
-date: 2023/MM/DD
+date: 2023/11/12
 author: cesarsotovalero
 published: false
 ---

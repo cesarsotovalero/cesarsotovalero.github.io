@@ -36,7 +36,7 @@ I hope you find them useful as well.
 
 # Structure Comes First  
 
-Writing a scientific paper is a skill that can be developed only trough continuous practice and dedication.
+Writing a scientific paper is a skill that can be developed only through continuous practice and dedication.
 The idea of sitting down and writing a full academic paper from scratch is overwhelming, so it is better focusing on smaller goals.
 As brilliantly explained by [Simon Peyton Jones](https://en.wikipedia.org/wiki/Simon_Peyton_Jones), a [great research paper](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/) has a well-defined structure.
 So, the first step when attempting to break the ice is creating an outline for every section.
@@ -79,11 +79,11 @@ Note that the title and content of the paper might vary over time, but this init
 
 # Add Figures and Results
 
-I've found that one of the best ways to break initial writer's block is by adding figures and results at the very first stage of the paper.
+I've found that one of the best ways to break the initial writer's block is by adding figures and results at the very first stage of the paper.
 Just draft a figure for the study design section and add some tables with preliminary results (I'm assuming that you already have some results 😀️).
 Adding this type of content is the substance that I need to start writing.
 
-Furthermore, with the time you will notice that describing tables and figures is almost a mechanical process.
+Furthermore, with the time, you will notice that describing tables and figures is almost a mechanical process.
 After adding this type of content, you will have a good chunk of white space filled, which gives a very gratifying sensation of being making progress.
 Of course, this technique only works if you're genuinely blocked and not lacking results, which is an entirely different problem.
 
@@ -123,9 +123,9 @@ Note that the trick here is formulating the right questions:
 \todo{Add bullet points}
 {% endhighlight %}
 
-Once you have the question in place then you have a hook that can be later turn into narrative text with connectors (more on this later).
+Once you have the question in place, then you have a hook that can be later turned into narrative text with connectors (more on this later).
 Questions give a focus to writers, an actionable direction to express the ideas.
-If you master the art of asking and answering the right questions, then you'll always be "in the flow."
+If you become skilled asking and answering the right questions, then you'll always be "in the flow."
 
 # Paraphrase the Recurrent
 
@@ -142,7 +142,8 @@ Then, I simply adapt my sentences to mutate them into paragraphs by following th
 Note that you can always remove all the connectors and change the paragraph later, which means that you'll be "improving" something that already existed.
 In the same way that criticizing something is generally easier than creating it, editing is easier than writing from scratch.
 
-On the other hand, some sections are just repetitive, they follow an existing recipe as in [the hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey). 
+On the other hand, some sections are just repetitive.
+They follow an existing recipe as in [the hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey). 
 For example, the section of related work doesn't need to be original.
 I think it's fine summarizing and paraphrasing the key results of previous work there.
 Yes, paraphrasing is a skill, too, which I strongly recommend you to learn very well.
@@ -155,8 +156,8 @@ It is also helpful to read articles that describe the same methodology that you 
 # Refine Later
 
 Most of us want everything to be just right before even touching the keyboard. 
-But this desirable state of minds and things never happens in practice. 
-The perfect paragraphs is ~~almost~~ never written at the fist shot. 
+But this desirable state of mind and things never happens in practice. 
+The perfect paragraph is ~~almost~~ never written at the fist shot. 
 So, if you try to get it perfect in your head, then you never do, so you never begin. 
 Forget about perfection and lower down the initial expectations!
 
@@ -169,12 +170,12 @@ The problem with this approach is that alternating between writing and editing e
 Instead, I suggest just writing some sentences (i.e., the key raw ideas) and refining them later.
 Focusing on substantive writing and postponing the editing is a good strategy to move forward.
 Don't switch to editing if you hit a block.
-Instead,  switch to writing a different part of the paper and edit only when you have a complete draft for a section.
+Instead, switch to writing a different part of the paper and edit only when you have a complete draft for a section.
 
 # Either Write or Do Nothing
 
 Always take into account that writer's block could resurface anytime.
-This happens when because writing is a very intense mental activity that demand a lot of energy. 
+This happens when because writing is a very intense mental activity that demands a lot of energy. 
 Our brains are developed to save energy and resources. 
 Every time we need to write, a self-protection mechanism activates in our brains.
 Then is when lack of attention and procrastination arises. 
@@ -193,15 +194,15 @@ When I do nothing, I enter into a mental state of boredom.
 This sensation tends to be very uncomfortable to me as time goes on.
 I feel the imperative need to do something. Then, I just write.
 It doesn't need to be great what I write, it just needs to be something that puts me out of this uncomfortable state.
-Yes, I overcome writer's block as an attempt to staying away of boredom!
+Yes, I overcome writer's block as an attempt to stay away from boredom!
 
 # Imagine That the Task Is Finished
 
-This last trick is very special and personal.
+This last trick is special and personal.
 It relies on a couple of facts:
 
-1. It is way easier improving something that is already written than creating something from scratch.
-2. After seeing something done, at least mentally, it seems easier to accomplish.
+1. It is way easier improving something already written than creating something from scratch.
+2. After seeing something done, at least mentally, it seems easier to achieve.
 
 So, when I have nothing written, I just imagine that I have it done.
 Yes, I know this sounds a bit crazy 😌, but it works like a charm for me.
@@ -217,7 +218,7 @@ Jumping section by section and feeling the relief of having the work done is ama
 It provides a sense of security and confidence that really helps me to continue writing.
 
 It is like when playing chess, and you know exactly the moves needed to win the game or take some crucial advantage.
-Once you find these right moves, then the game seems simple and there is no way to be afraid of your opponent.
+Once you find these right moves, then the game seems simple, and there is no way to be afraid of your opponent.
 It is a matter of finding and visualizing a good strategy to follow.
 Writing is all about strategies as well. 
 So do it. 
@@ -226,10 +227,12 @@ Imagine the next paragraph is done, make your move, and then write it!
 # Conclusion
 
 All academics hit blocks when they are writing. 
-Especially at the beginning of a research paper, there is much friction and resistance. 
-Don’t make it harder than it has to be. Having a toolkit of strategies for overcoming writer’s block is helpful.
-Structuring, following patterns, using filled words, and assembling ideas, when done well, can build the first draft. 
-It doesn't have to be perfect, just something to tweak from there. When writing, movement is critical.
-It is keeping momentum and staying focused. 
-If you start moving in a direction, it becomes easier to pick up speed. 
-And you will be making progress! Soon, your block will be a distant memory.
+Especially at the beginning of a research paper, when there is much friction and resistance. 
+Don’t make it harder than it has to be. 
+Having a toolkit of strategies for overcoming writer’s block is helpful.
+Structuring, following patterns, using filled words, and assembling ideas, when done well, can help to build the first draft. 
+It doesn't have to be perfect, just something to tweak from there. 
+When writing, keeping momentum and staying focused is critical. 
+If you start moving in a direction, even a few paragraphs every day, it becomes easier to pick up speed. 
+And you will be making progress! 
+Soon your block will be a distant memory.
