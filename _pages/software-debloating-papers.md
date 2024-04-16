@@ -403,3 +403,36 @@ Conducts  the  first  systematic  experimental  study  of the  joint  power  per
 - [The cost of JavaScript in 2019](https://v8.dev/blog/cost-of-javascript-2019)
 - [The fault in our JARS](https://product.hubspot.com/blog/the-fault-in-our-jars-why-we-stopped-building-fat-jars)
 - [How much code do you need?](https://hackmd.diverse-team.fr/p/HyYDb-LiP#/)
+
+[//]: # (This code snippet is used to add a toggle button to each paper entry)
+[//]: # (The button is used to show/hide the paper abstract)
+[//]: # (The code is written in JavaScript and uses the DOM API to manipulate the HTML elements)
+[//]: # (The code is executed when the page is loaded)
+<script type="javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+  var detailsElements = document.querySelectorAll('details');  
+      detailsElements.forEach(function(details) {
+          // Check if the details tag has a summary child, add one if not
+          var summary = details.querySelector('summary');
+          if (!summary) {
+              summary = document.createElement('summary');
+              summary.textContent = 'Abstract';
+              details.insertBefore(summary, details.firstChild);
+          }
+  
+          // Set the original text as 'Abstract' to reuse when closing
+          var originalText = 'Abstract'; 
+  
+          // Add toggle event to change the summary text
+          details.addEventListener('toggle', function() {
+              if (details.open) {
+                  summary.textContent = "Close Abstract"; // Text when open
+              } else {
+                  summary.textContent = originalText; // Text when closed
+              }
+          });
+      });
+  });
+</script>
+
+
