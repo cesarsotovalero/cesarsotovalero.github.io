@@ -33,7 +33,6 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
 * [2002](#2002)
 * [External resources](#external-resources)
 
-
 # 2024
 
 - <img alt="" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> [ICSE] **Efficiently Trimming the Fat: Streamlining Software Dependencies with Java Reflection and Dependency Analysis** [Link](https://www.computer.org/csdl/proceedings-article/icse/2024/021700a887/1V5BkvhCXYc)<details>Numerous third-party libraries introduced into client projects are not actually required, resulting in modern software being gradually bloated. Software developers may spend much unnecessary effort to manage the bloated dependencies: keeping the library versions up-to-date, making sure that heterogeneous licenses are compatible, and resolving dependency conflict or vulnerability issues. However, the prior debloating techniques can easily produce false alarms of bloated dependencies since they are less effective in analyzing Java reflections. Besides, the solutions given by the existing approaches for removing bloated dependencies may induce new issues that are not conducive to dependency management. To address the above limitations, in this paper, we developed a technique, Slimming, to remove bloated dependencies from software projects reliably. Slimming statically analyzes the Java reflections that are commonly leveraged by popular frameworks (e.g., Spring Boot) and resolves the reflective targets via parsing configuration files (*.xml, *.yml and *.properties). By modeling string manipulations, Slimming fully resolves the string arguments of our concerned reflection APIs to identify all the required dependencies. More importantly, it helps developers analyze the debloating solutions by weighing the benefits against the costs of dependency management. Our evaluation results show that the static reflection analysis capability of Slimming outperforms all the other existing techniques with 97.0% of Precision and 98.8% of Recall. Compared with the prior debloating techniques, Slimming can reliably remove the bloated dependencies with a 100% test passing ratio and improve the rationality of debloating solutions. In our large-scale study in the Maven ecosystem, Slimming reported 484 bloated dependencies to 66 open-source projects. 38 reports (57.6%) have been confirmed by developers.</details>
@@ -408,7 +407,7 @@ Conducts  the  first  systematic  experimental  study  of the  joint  power  per
 [//]: # (The button is used to show/hide the paper abstract)
 [//]: # (The code is written in JavaScript and uses the DOM API to manipulate the HTML elements)
 [//]: # (The code is executed when the page is loaded)
-<script type="javascript">
+<script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
   var detailsElements = document.querySelectorAll('details');  
       detailsElements.forEach(function(details) {
@@ -419,10 +418,8 @@ Conducts  the  first  systematic  experimental  study  of the  joint  power  per
               summary.textContent = 'Abstract';
               details.insertBefore(summary, details.firstChild);
           }
-  
           // Set the original text as 'Abstract' to reuse when closing
           var originalText = 'Abstract'; 
-  
           // Add toggle event to change the summary text
           details.addEventListener('toggle', function() {
               if (details.open) {
