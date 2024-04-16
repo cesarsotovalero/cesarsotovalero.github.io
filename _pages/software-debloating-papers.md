@@ -387,7 +387,7 @@ Conducts  the  first  systematic  experimental  study  of the  joint  power  per
 - [Java Bytecode Debloating for Size Reduction and Security](http://web.cs.ucla.edu/~miryung/research.html#debloat)
 - [Open-source minimalism?](https://github.com/readme/featured/open-source-minimalism?mc_cid=4f788c11a5&mc_eid=269776c39a)
 - [Technical Perspective: What Is the Ideal Operating System?](https://cacm.acm.org/magazines/2022/5/260363-technical-perspective-what-is-the-ideal-operating-system/fulltext)
-- [OpenBSD did a big cleanup after heartbleed (2014)(https://www.zdnet.com/article/openbsd-forks-prunes-fixes-openssl/)
+- [OpenBSD did a big cleanup after heartbleed (2014)](https://www.zdnet.com/article/openbsd-forks-prunes-fixes-openssl/)
 - [https://catless.ncl.ac.uk/Risks/30/84/#subj25](https://catless.ncl.ac.uk/Risks/30/84/#subj25)
 - [http://tonsky.me/blog/disenchantment/](http://tonsky.me/blog/disenchantment/)
 - [https://bulldogjob.com/news/400-feature-creep](https://bulldogjob.com/news/400-feature-creep)
