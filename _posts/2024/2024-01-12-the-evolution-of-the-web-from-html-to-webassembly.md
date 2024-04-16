@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rise, Decline, and Persistence of Web Technologies
+title: On the Rise, Decline, and Stickiness of Web Technologies
 subtitle: From static HTML to WebAssembly
 tags: web
 description: |
