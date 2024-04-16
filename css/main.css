@@ -195,46 +195,41 @@ blockquote {
 
 /* Details */
 details {
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  padding: 0.5em;
-  margin: 1em 0;
-  background-color: #f9f9f9;
-  overflow: hidden; /* Prevent content from overflowing */
+  overflow: hidden;
+  padding: 10px 15px 10px 15px;
+  margin: 15px 0 15px 0;
+}
+
+details[open] article {
+  animation: animateUp 1s linear forwards;;
+}
+
+@keyframes animateUp {
+  0% {
+    opacity: 0;
+    transform: translatey(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
 }
 
 summary {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  padding: 0.5em 0.5em 0.5em 2em; /* Adjust padding to make room for arrow */
-  cursor: pointer;
-  border-radius: 4px 4px 0 0;
-  position: relative;
-  list-style: none; /* Remove default list-style in some browsers */
 }
 
-summary::before {
-  content: '\25B6'; /* "▶" */ /* Default arrow */
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.2s ease; /* Smooth transition for arrow */
-}
-
-details[open] article {
-  animation: fadeIn .75s linear forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+summary::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid #15171b;
+  border-inline: 7px solid transparent;
+  transition: 0.2s;
 }
 
 details[open] > summary {border-bottom: 2px solid #fff9f1;}
@@ -247,17 +242,23 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-details > p {
-  padding: 1.5em;
-  margin: 0; /* Adjust margin to prevent overlapping */
+summary {
+  color: #30353b;
+  border-radius: 5px;
 }
 
-article > details > code {
-  /*  remove background color */
-  background-color: transparent;
+details[open] summary {border-radius: 5px 5px 0 0;}
+
+details {
+  background: var(--footer-color);
+  border-radius: 5px;
+  border: var(--main-text-color);
 }
+/* end of Details */
 
 
+
+/* extra styles */
 @media only screen and (max-width: 450px) {
   blockquote {
     font-size: 17px;
