@@ -204,6 +204,9 @@ details {
 }
 
 summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-weight: bold;
   padding: 0.5em 0.5em 0.5em 2em; /* Adjust padding to make room for arrow */
   cursor: pointer;
@@ -221,9 +224,27 @@ summary::before {
   transition: transform 0.2s ease; /* Smooth transition for arrow */
 }
 
-details[open] summary::before {
-  content: '\25BC';  /* "▼" */ /* Opened arrow */
-  transform: translateY(-50%) rotate(0); /* Rotate arrow when open */
+details[open] article {
+  animation: fadeIn .75s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+details[open] > summary {border-bottom: 2px solid #fff9f1;}
+
+details[open] > summary::after {
+  transform: rotate(-180deg);
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 details > p {
