@@ -8,6 +8,8 @@ published: true
 
 # MOOCs Completed
 
+- [Building, Deploying, and Monitoring Your First Apache NiFi Dataflow](https://app.pluralsight.com/achievements/share/da434a25-e24f-4bb5-8eb7-9c6784bd01f6), Pluralsight, 2024
+
 - [ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/accomplishments/7496dcb4-a0fd-4248-93ce-f8125195ed0d?usp=sharing), DeepLearning.AI, 2024
 
 - [Cloud-Native Development with OpenShift and Kubernetes Specialization](https://coursera.org/share/0e4ea09c897c350cd1dc618f88047952), Coursera, 2023
