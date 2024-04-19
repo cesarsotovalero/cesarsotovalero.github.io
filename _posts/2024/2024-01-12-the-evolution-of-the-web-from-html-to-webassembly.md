@@ -26,8 +26,8 @@ On the way, I've reflected on how the different web technologies have changed an
 Soon I delved into the many technical challenges and solutions that have been developed over the years. 
 While digging into it, I realized how little I know about the underlining technologies that power the web.
 This post presents a roadmap of the different technical solutions that have been created over the years to solve the technical requirements of the web.
-This includes the different architectures and patterns as they appeared over the years.
-From those that got obsolete like Java Applets, to those that survived the test of time like Static Pages, to the recent WebAssembly.
+This includes the different architectures and patterns as they appeared over the years, tracing their need and impact on the technological landscape.
+From those that got obsolete like Java Applets, to those that survived the test of time like Static Pages, to the recent emergence of WebAssembly.
 You're likely to find this post interesting if you are a software developer, a web developer, or just curious about how the web works.
 Let's dive in!
 
@@ -46,6 +46,9 @@ Let's dive in!
     Figure 1. Fist page of Tim Berners-Lee's proposal for the World Wide Web in March 1989. <a href="https://cds.cern.ch/images/OPEN-PHO-CCC-2019-001-1">Source</a>
   </figcaption>
 </figure>
+
+- The history of the web has been a continuous back and forward regarding where to put the execution logic: in the server or in the client.
+- The development of web technologies has dramatically transformed the way we build and interact with applications on the internet.
 
 - The address of the world's first ever website and Web server was [info.cern.ch](https://info.cern.ch/), running at CERN. The first web page address was [https://info.cern.ch/hypertext/WWW/TheProject.html](https://info.cern.ch/hypertext/WWW/TheProject.html).
 - The first time I navigated the Internet was in 2011, because in Cuba the days we have Internet only on the universities and of course, we have intranet.
@@ -69,7 +72,13 @@ title History of Social Media Platform
 2006 : Twitter
 {% endmermaid %}
 
-## Transfer Files & Static Pages (1990s to present)
+## Transfer Files & Static HTML (1990s to present)
+
+[//]: # (ChatGPT)
+In the early 1990s, the World Wide Web was a collection of static HTML pages. 
+HTML (HyperText Markup Language) was designed by Tim Berners-Lee to allow researchers to share documents over the Internet.
+These early web pages were simple and solely focused on text and hyperlinks, allowing users to navigate from one page to another.
+The simplicity of HTML made it easy for anyone to create and publish content on the web.
 
 - Browsers could send a request to a server and say hey get me that file
 - Web servers were basically file servers with a network connection they didn't do anything other than giving the file back 
@@ -102,14 +111,24 @@ title History of Social Media Platform
 - there was no way that clientside JavaScript could retrieve more data. It couldn't make requests, couldn't talk to the rest of the world, and there was no way of sending anything back to your client or your user is halfway through filling out a really complicated form with lots of JavaScript and everything on it. If they press refresh it's all gone completely lost their work they got to start again now.
 - But everything changed with Google figured out how to use JavaScript to do autocomplete in the search form. Interestingly, the origin of this feature comes from Outlook web access in the early 2000's when they wanted a way of sending requests in the background. So they went to the developers who built Internet Explorer and asked for a component that allowed to do network requests without having to reload the page, and the Internet Explorer people said "yeah" and they plugged in a thing Called `xmlhttp request`. Outlook web access used this for a couple of years, but no one really kind of noticed because there weren't that many people using Outlook web access. And that feature was added later to Netscape and the other browsers and then Google came and used the feature every time you press a key your browser is sending a request and getting fresh suggestions every time you press a key you've got this conversation backwards and forwards going on in the background. This unlocked a 
   whole new way of building web applications now this was initially uh the XML HTTP request wasn't terribly catchy round about 2005 someone said hey why don't
-  
-## SPA & Ajax (2005 to present)
 
-- In 2005 someone said hey why don't we call it Ajax asynchronous JavaScript and XML or asynchronous JSON and XML HTTP request um because a lot of the time they were using the XML HTTP request, but the thing that's coming back from the server was not  XML it would be JSON or something else (could be snippets of HTML). The Ajax pattern worked brilliantly unlocking all kinds of cool authoring paradigms.
-- In about 2015 the browser vendors when we could probably come up with a nicer way of doing this so they implemented an API called `fetch` which we still use today. This ability to send background requests meant we could start building new kinds of web applications instead of your web app being a collection of pages that lived on a server. 
+## CSS (1996 to present)
+
+[//]: # (ChatGPT)
+As the web grew, so did the demand for more stylistic and dynamic websites. 
+This led to the introduction of CSS (Cascading Style Sheets) in 1996, which separated content from design, allowing developers to create more visually appealing websites without altering the HTML structure.
+Around the same time, JavaScript was introduced, enabling interactive elements on web pages. 
+JavaScript's ability to manipulate the Document Object Model (DOM) revolutionized the user experience by allowing web pages to respond to user actions without needing to reload.
+  
+## SPA & AJAX (2005 to present)
+
+- In 2005 someone said hey why don't we call it AJAX (Asynchronous JavaScript and XML) or asynchronous JSON and XML HTTP request  because a lot of the time they were using the XML HTTP request, but the thing that's coming back from the server was not  XML it would be JSON or something else (could be snippets of HTML). The Ajax pattern worked brilliantly unlocking all kinds of cool authoring paradigms.
+- In about 2015 the browser vendors when we could probably come up with a nicer way of doing this so they implemented an API called `fetch` which we still use today. This ability to send background requests meant we could start building new kinds of web applications instead of your web app being a collection of pages that lived on a server.
+- AJAX enabled web applications to load content dynamically. Users could now enjoy a smoother and more engaging experience that resembled desktop applications. 
 - `fetch` works as follows: you send a single page app (SPA) to the client, then the client later sends a request to the backend API (something like a REST API) and it would send back some data and you swap out the part of the page with the data you plugged in. 
 - SPA is a really powerful paradigm for rich client-side interactivity. However, the dead giveaway here is that one bit of the page will start spinning if there's an element somewhere which is waiting for data to come back from the server, and until it gets it can't draw anything. So, if you're ever on a web page where you click a button and a little part of the page is replaced with a spinning icon, you're looking at a single page application.
-- SPA are incredible popular, many JavaScript Frameworks that came out in the last sort of 15 years favored this pattern (e.g., React, Angular). 
+- SPA are incredible popular, many JavaScript Frameworks that came out in the last sort of 15 years favored this pattern (e.g., React, Angular).
+- The term Web 2.0 emerged in the early 2000s, describing websites that were interactive and collaborative. These sites leveraged technologies like AJAX (Asynchronous JavaScript and XML), enabling web applications to load content dynamically. Users could now enjoy a smoother and more engaging experience that resembled desktop applications.
   
 ## WebSockets (2008 to present)
 
@@ -125,7 +144,7 @@ title History of Social Media Platform
 - The problem is that when running native apps directly in a computer, you don't run them in JavaScript. You run them in native executables.
 - So, they created a native runtime inside the browser called WebAssembly. 
 - The premise here is you can write your app in whatever you want go Ruby rust C anything that compiles down to WebAssembly. Then a `wasm` file is published to the web server, and then the client downloads that file and execute it (there is still some JavaScript involved to bootstrap it).
-- It give rich native applications with high performance and interactivity running right there in the browser, similar to how Java Applets were doing in the 90's.
+- It gives rich native applications with high performance and interactivity running right there in the browser, similar to how Java Applets were doing in the 90's.
 - If you got a team that wants to do stuff in Rust or C, or you need better performance. 
 
 ## Blockchain & Decentralization (2020 to present)

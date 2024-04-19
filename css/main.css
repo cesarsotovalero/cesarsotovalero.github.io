@@ -390,6 +390,11 @@ a[href^="https://coursera.org/"] {
   padding-left: 35px;
 }
 
+a[href^="https://app.pluralsight.com/achievements/share/"] {
+  background: transparent url(/img/icons/pluralsight.svg) no-repeat center left;
+  padding-left: 35px;
+}
+
 a[href^="https://learn.deeplearning.ai/accomplishments/"] {
   background: transparent url(/img/icons/deeplearning.ai.png) no-repeat center left;
   background-size: 28px 28px;
