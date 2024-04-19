@@ -195,6 +195,7 @@ blockquote {
 
 /* Details */
 details {
+  font-family: "Concourse T3", "Cambria", "Open Sans";
   overflow: hidden;
   padding: 10px 15px 10px 15px;
   margin: 15px 0 15px 0;
