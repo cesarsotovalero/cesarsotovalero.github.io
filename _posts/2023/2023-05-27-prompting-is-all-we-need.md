@@ -51,14 +51,14 @@ Or were they scientists?
 I'm too young to know exactly what they were called.
 Anyway, they were an unusual breed of people.
 Mathematicians, physicists, or pure engineers who mastered cryptic programming languages to tackle practical and scientific problems.[^3]
-These individuals possessed advanced reasoning skills. 
+These individuals possessed advanced reasoning skills.
 They could understand complex systems written in COBOL (such as those for financial transactions), and implement algorithms like QuickSort in 5 minutes or less.
 
 But that was a long time ago when software was still [eating the world](https://a16z.com/why-software-is-eating-the-world/).
 Nowadays, software is everywhere.
 It already [ate the world](https://www.wsj.com/articles/software-ate-the-world-and-soon-it-will-write-itself-11607037000?reflink=desktopwebshare_permalink) and digested it.
 Sometimes resulting in [a mess](../blog/why-debloating-third-party-software.html) that we still have to clean up.
-Anyway, its output is indispensable, just like salt for our food. 
+Anyway, its output is indispensable, just like salt for our food.
 In every industry, in every company, in every home, software is a necessary ingredient.
 So the crew of software cookers has grown at a rapid speed.
 But the world had not enough mathematicians, or engineers, to satisfy the demand for programmers.[^6]
@@ -70,7 +70,7 @@ The average software developer doesn't need to understand [Fourier Series](https
 Indeed, it's not even necessary to know how a computer actually works.[^5]
 It's enough to master a particular framework, a library, or even a single digital tool (long live the Excel spreadsheet!).
 And that's it.
-The wheels that keep software product lines keep going on. 
+The wheels that keep software product lines keep going on.
 
 But I've seen the panorama shifting in the last few months.
 What if I told you that knowing how to code is no longer necessary?
@@ -85,7 +85,7 @@ And with it, there comes a new batch of fresh challenges.
 
 # Show Me the Prompt!
 
-It seems that coding, as a profession, has become less complex nowadays. 
+It seems that coding, as a profession, has become less complex nowadays.
 This is thanks to the rise of AI tools powered by Large Language Models (LLMs).
 These are Machine Learning (ML) models trained on huge amounts of ~~crap~~ text data.
 Once trained, the model can generate meaningful text responses to a given **prompt**.
@@ -100,11 +100,11 @@ It's [supply and demand](https://en.wikipedia.org/wiki/Supply_and_demand), there
     <em>“You are my master! Was that your first wish? Three wishes are yours to command...” - <cite>Aladdin and the Magic Lamp</cite></em> 
 </aside>
 
-However, there's a catch. 
+However, there's a catch.
 A critical component is still essential to fuel the AI machinery: the prompts.
-Human expertise is necessary to properly craft the questions for the AI systems. 
+Human expertise is necessary to properly craft the questions for the AI systems.
 Consequently, a new category of programmers has emerged.
-These are the individuals who specialize in creating effective prompts to tackle coding challenges. 
+These are the individuals who specialize in creating effective prompts to tackle coding challenges.
 Let me introduce you to the **prompt engineer**.
 
 The prompt engineer daily task is to ask fine-tuned questions.
@@ -113,7 +113,7 @@ The job is fundamentally [about crafting queries](https://asianjde.com/ojs/index
 "I got the following log message, how to fix the problem?," or
 "I have a list of items, write an algorithm to sort them?," or
 "My boss doesn't understand technical debt, what should I do?"
-The next step is straightforward, just taking the AI-generated response and integrating it into the appropriate context. 
+The next step is straightforward, just taking the AI-generated response and integrating it into the appropriate context.
 Directly copy/pasting the response to the production environment is often just enough.
 Pure magic!
 
@@ -121,18 +121,18 @@ But perhaps this isn't so magical after all.
 Doesn't it look familiar to you?
 Yes, it's the exact same thing we used to do every day when searching Google and looking at Q&A threads in StackOverflow.
 The difference now lies in the speed and quality of the responses we receive.
-We're able to get answers without having to fully articulate our questions. 
+We're able to get answers without having to fully articulate our questions.
 It's impressive.
 So, say goodbye to the fear of posting seemingly foolish questions on StackOverflow (RIP StackOverflow).
 There is no more shame because AI systems are ~~still~~ trained specifically for not trolling us anymore (thank you for that, Reinforcement Learning).
 What's better, seems like AI is increasingly surpassing us in deciphering which our own challenges are.
 
 Needless to say, this is the end of software engineering as we know it.
-I expect a huge impact on the tech workforce worldwide, as this technology scales very easily (consider OpenAI's ChatGPT model, for example). 
-What will I do with the extra time now that searching for answers is no longer necessary? 
+I expect a huge impact on the tech workforce worldwide, as this technology scales very easily (consider OpenAI's ChatGPT model, for example).
+What will I do with the extra time now that searching for answers is no longer necessary?
 Playing ping-pong with my colleagues?
 Or maybe I'll just go back to the old days, when I used to read books and spend quality time with the family.
-A set of brand new human problems are coming to us. 
+A set of brand new human problems are coming to us.
 
 On the other hand, the tide of public skepticism regarding the future of Computer Science (as a career) is rising.
 Formal Computer Science education is [feeling the pressure](https://www.reddit.com/r/learnprogramming/comments/1173hy3/is_ai_going_to_make_my_cs_degree_useless/).
@@ -141,7 +141,7 @@ This is alarming to me.
 
 But don't worry.
 There is still some hope.
-The end is near but not here yet. 
+The end is near but not here yet.
 We still have a few years left for us to adapt and redirect our skills.
 And maybe we can all keep our jobs after all.
 I'm talking, of course, about jumping into the new wave to become successful prompt engineers.
@@ -168,7 +168,7 @@ Here it is:
 > We encourage a culture of lifelong prompting and skill enhancement.<br>
 > We share our prompts with the community.<br>
 > We have daily prompt reviews, where we blame AI for not understanding our problems.<br>
-> 
+>
 > We prompted an AI to help us write this manifesto.<br>
 > We will keep improving it.<br>
 > We will prompt a more powerful AI in the future to write it better.<br>
@@ -191,7 +191,7 @@ The successful prompt engineer knows how to apply the principles of clear commun
 It's about being concise, precise, and unambiguous.
 That way one can tweak the prompt to get the best results.
 Examples of techniques are **summarizing**, **inferring**, **transforming**, **expanding**, and **iterating** over an over the prompts until the AI gets it right.
-If in doubt, it may even involve calling another AI to write the prompt. 
+If in doubt, it may even involve calling another AI to write the prompt.
 Recursive prompting is called!
 
 The successful prompter doesn't give up easily.
@@ -209,7 +209,7 @@ Here are five examples:
 1. **Use** the Pareto Principle, which identifies the 20% of the topic that will yield 80% of the desired results, to create a focused learning plan for me.
 2. **Make** a study schedule for all of the above in an appropriate number of weeks. I can study for `X` hours every Tuesday and Thursday. Include time for revision and testing.
 3. **Suggest** various learning resources (like books, videos, podcasts, interactive exercises) for the above topics that cater to different learning styles to me.
-4. **List** some beginner video game projects I could work on to help strengthen my C# coding skills. I'm a beginner interested in learning how to create games in Unity. 
+4. **List** some beginner video game projects I could work on to help strengthen my C# coding skills. I'm a beginner interested in learning how to create games in Unity.
 5. **Guide** me through a visualization exercise to help me internalize the term `X` and imagine myself successfully applying it to a real-life situation.
 
 ## Prompting for Coding
@@ -243,81 +243,81 @@ Here are some of my favorite prompts, most of them are inspired or modified from
 [//]: # (Proofreader)
 <details>
   <summary>Proofreader</summary>
-  <code>I want you act as a proofreader. I will provide you with English texts one-by-one and you will review them for any spelling, grammar, or punctuation errors. Once you have finished reviewing the text, provide me with any necessary corrections or suggestions for improving the text.</code>
+  I want you to act as a proofreader. I will provide you with English texts one-by-one, and you will review them for any spelling, grammar, or punctuation errors. Once you have finished reviewing the text, provide me with any necessary corrections or suggestions for improving the text.
 </details>
 
 [//]: # (Copywriter)
 <details>
   <summary>Copywriter</summary>
-  <code>Using WebPilot, create an outline for an article that will be 2000 words on the keyword “Deep Learning by Example” based on the top 10 results from Google. Include every relevant heading possible. Keep the keyword density of the headings high. For each section of the outline, include the word count. Include FAQs section in the outline too, based on the "people also ask" section from Google for the keyword. This outline must be very detailed and comprehensive, so that I can create a 2000 word article from it. Generate a long list of LSI and NLP keywords related to my keyword. Also include any other words related to the keyword. Give me a list of 5 relevant external links to include and the recommended anchor text. Make sure they're not competing articles. Split the outline into part 1 and part 2.</code>
+  Using WebPilot, create an outline for an article that will be 2000 words on the keyword “Deep Learning by Example” based on the top 10 results from Google. Include every relevant heading possible. Keep the keyword density of the headings high. For each section of the outline, include the word count. Include FAQs section in the outline too, based on the "people also ask" section from Google for the keyword. This outline must be very detailed and comprehensive, so that I can create a 2000 words article from it. Generate a long list of LSI and NLP keywords related to my keyword. Also include any other words related to the keyword. Give me a list of five relevant external links to include and the recommended anchor text. Make sure they're not competing articles. Split the outline into part 1 and part 2.
 </details>
 
 [//]: # (Interviewer)
 <details>
   <summary>Interviewer</summary>
-  <code>I want you to act as an interviewer. I will be the candidate and you will ask me the interview questions for the position "Senior Data Engineer". I want you to only reply as the interviewer. Do not write all the conversation at once. I want you to only do the interview with me. Ask me the technical questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. My first sentence is "Hi".</code>
+  I want you to act as an interviewer. I will be the candidate, and you will ask me the interview questions for the position "Senior Data Engineer." I want you to only reply as the interviewer. Do not write all the conversation at once. I want you to only do the interview with me. Ask me the technical questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. My first sentence is "Hi".
 </details>
 
 [//]: # (Plagiarism Checker)
 <details>
   <summary>Plagiarism Checker</summary>
-  <code>I want you to act as a plagiarism checker. I will write you sentences and you will only reply undetected in plagiarism checks in English, and nothing else. Do not write explanations on replies. My first sentence is "The number 42 is, in The Hitchhiker's Guide to the Galaxy by Douglas Adams, the Answer to the Ultimate Question of Life, the Universe, and Everything, calculated by an enormous supercomputer named Deep Thought over a period of 7.5 million years."
-  </code>
+  I want you to act as a plagiarism checker. I will write you sentences, and you will only reply undetected in plagiarism checks in English, and nothing else. Do not write explanations on replies. My first sentence is "The number 42 is, in The Hitchhiker's Guide to the Galaxy by Douglas Adams, the Answer to the Ultimate Question of Life, the Universe, and Everything, calculated by an enormous supercomputer named Deep Thought over a period of 7.5 million years."
+
 </details>
 
 [//]: # (Socratic Teacher)
 <details>
   <summary>Socratic Teacher</summary>
-  <code>I want you to act as a Socrates. You must use the Socratic method to continue questioning my beliefs. I will make a statement and you will attempt to further questioning every statement in order to test my logic and reasoning skills. You will respond with one line at a time. My first claim is "Justice is necessary in a society, even if it involves using force".</code>
+  I want you to act as a Socrates. You must use the Socratic method to continue questioning my beliefs. I will make a statement, and you will attempt to further question every statement in order to test my logic and reasoning skills. You will respond with one line at a time. My first claim is "Justice is necessary in a society, even if it involves using force".
 </details>
 
 [//]: # (Educational Content Creator)
 <details>
   <summary>Educational Content Creator</summary>
-  <code>I want you to act as an educational content creator. You will create engaging and informative content for learning materials such as textbooks, online courses and lecture notes. My first suggestion request is "I need help developing a YouTube video about the importance of learning Deep Learning concepts in school."</code>
+  I want you to act as an educational content creator. You will create engaging and informative content for learning materials such as textbooks, online courses and lecture notes. My first suggestion request is "I need help developing a YouTube video about the importance of learning Deep Learning concepts in school."
 </details>
 
 [//]: # (Machine Learning Engineer)
 <details>
   <summary>Machine Learning Engineer</summary>
-  <code>I want you to act as a Machine Learning engineer. I will write some Machine Learning concepts and you will explain them in easy-to-understand terms. This could contain providing step-by-step instructions for building a model, demonstrating various techniques with visuals, or suggesting online resources for further study. My first suggestion request is "I don't have enough labelled data, how can I increase the size of my training set?."</code>
+  I want you to act as a Machine Learning engineer. I will write some Machine Learning concepts, and you will explain them in easy-to-understand terms. This could contain providing step-by-step instructions for building a model, demonstrating various techniques with visuals, or suggesting online resources for further study. My first suggestion request is "I don't have enough labelled data, how can I increase the size of my training set?."
 </details>
 
 [//]: # (Technical Writer)
 <details>
   <summary>Technical Writer</summary>
-  <code>Act as a technical writer. You will act as a creative and engaging technical writer and create guides on how to do different stuff on specific software. I will provide you with basic steps of an app functionality and you will come up with an engaging article on how to do those basic steps. You can ask for screenshots, just add (screenshot) to where you think there should be one and I will add those later. These are the first basic steps of the app functionality: "1.Click on the download button depending on your platform 2.Install the file. 3.Double click to open the app"</code>
+  Act as a technical writer. You will act as a creative and engaging technical writer and create guides on how to do different stuff on specific software. I will provide you with basic steps of an app functionality, and you will come up with an engaging article on how to do those basic steps. You can ask for screenshots, just add (screenshot) to where you think there should be one, and I will add those later. These are the first basic steps of the app functionality: "1.Click on the download button depending on your platform 2.Install the file. 3.Double click to open the app"
 </details>
 
 [//]: # (IT expert)
 <details>
   <summary>IT expert</summary>
-  <code>I want you to act as an IT Expert. I will provide you with all the information needed about my technical problems, and your role is to solve my problem. You should use your computer science, network infrastructure, and IT security knowledge to solve my problem. Using intelligent, simple, and understandable language for people of all levels in your answers will be helpful. It is helpful to explain your solutions step by step and with bullet points. Try to avoid too many technical details, but use them when necessary. I want you to reply with the solution, not write any explanations. My first problem is “my laptop gets an error with a blue screen."</code>
+  I want you to act as an IT Expert. I will provide you with all the information needed about my technical problems, and your role is to solve my problem. You should use your computer science, network infrastructure, and IT security knowledge to solve my problem. Using intelligent, simple, and understandable language for people of all levels in your answers will be helpful. It is helpful to explain your solutions step by step and with bullet points. Try to avoid too many technical details, but use them when necessary. I want you to reply with the solution, not write any explanations. My first problem is “my laptop gets an error with a blue screen."
 </details>
 
 [//]: # (Diagram Generator)
 <details>
   <summary>Diagram Generator</summary>
-  <code>I want you to act as a Graphviz DOT generator, an expert to create meaningful diagrams. The diagram should have at least `n` nodes (I specify `n` in my input by writing `[n]`, 10 being the default value) and to be an accurate and complex representation of the given input. Each node is indexed by a number to reduce the size of the output, should not include any styling, and with `layout=neato, overlap=false, node [shape=rectangle]` as parameters. The code should be valid, free of bugs, and returned on a single line, without any explanation. Provide a clear and organized diagram, the relationships between the nodes have to make sense for an expert of that input. My first diagram is: "The life cycle".</code>
+  I want you to act as a Graphviz DOT generator, an expert to create meaningful diagrams. The diagram should have at least `n` nodes (I specify `n` in my input by writing `[n]`, 10 being the default value) and to be an accurate and complex representation of the given input. Each node is indexed by a number to reduce the size of the output, should not include any styling, and with `layout=neato, overlap=false, node [shape=rectangle]` as parameters. The code should be valid, free of bugs, and returned on a single line, without any explanation. Provide a clear and organized diagram, the relationships between the nodes have to make sense for an expert of that input. My first diagram is: "The life cycle".
 </details>
 
 [//]: # (Title Generator)
 <details>
   <summary>Title Generator</summary>
-  <code>I want you to act as a title generator for written pieces. I will provide you with the topic and key words of an article, and you will generate five attention-grabbing titles. Please keep the title concise and under 20 words, and ensure that the meaning is maintained. Replies will utilize the language type of the topic. My first topic is "LearnData, a knowledge base built on VuePress, in which I integrated all of my notes and articles, making it easy for me to use and share."</code>
+  I want you to act as a title generator for written pieces. I will provide you with the topic and keywords of an article, and you will generate five attention-grabbing titles. Please keep the title concise and under 20 words, and ensure that the meaning is maintained. Replies will utilize the language type of the topic. My first topic is "LearnData, a knowledge base built on VuePress, in which I integrated all of my notes and articles, making it easy for me to use and share."
 </details>
 
 # Conclusion
 
-The end of software engineering, as we know it, is here. 
+The end of software engineering, as we know it, is here.
 AI has knocked on our door and entered our workplace.
-But AI still needs us. 
+But AI still needs us.
 Prompt engineering is the brand-new coding mode for us developers.
 Not only to write software, but to solve many other issues.
 So in the era when data is gold, prompt engineers could be the miners.
 Stay tuned because we'll soon start prompting with our voice, images, videos, everything.
 Websites will feature their own AI system, optimized specifically for their platform.
-The future is as uncertain as it is exciting. 
+The future is as uncertain as it is exciting.
 
 # Resources
 
@@ -333,7 +333,7 @@ The future is as uncertain as it is exciting.
 
 [^3]: The first coders really had huge challenges, like sending the first human to the moon. If in doubt, just look again at the [famous picture](https://news.mit.edu/2016/scene-at-mit-margaret-hamilton-apollo-code-0817) of Margaret Hamilton standing next to the Apollo Guidance Computer source code.
 
-[^4]: I know it sounds crazy, but software and the internet were not a thing 30 years ago, and people still had a great life without mobile phones.  
+[^4]: I know it sounds crazy, but software and the internet were not a thing 30 years ago, and people still had a great life without mobile phones.
 
 [^5]: If you are reading this, you probably know how a computer works. Could you please explain it in the comments below for those who don't? Thanks 😀!
 
