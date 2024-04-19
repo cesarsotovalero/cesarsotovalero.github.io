@@ -381,6 +381,7 @@ Conducts  the  first  systematic  experimental  study  of the  joint  power  per
 
 # External resources
 
+- [Why Bloat Is Still Software’s Biggest Vulnerability](https://spectrum.ieee.org/lean-software-development) in IEEE Spectrum
 - <a href="https://github.com/trailofbits/debloater-eval"><i class="fab fa-github"></i></a> [Debloater Evaluation Dataset](https://github.com/trailofbits/debloater-eval)
 - [Sensenmann: Code Deletion at Scale at Google](https://testing.googleblog.com/2023/04/sensenmann-code-deletion-at-scale.html)
 - [Java Bytecode Debloating for Size Reduction and Security](http://web.cs.ucla.edu/~miryung/research.html#debloat)
