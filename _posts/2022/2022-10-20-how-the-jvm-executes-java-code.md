@@ -52,7 +52,7 @@ This post is focused on the **bytecode execution phase**.
 The following activity diagram illustrates what happens during this phase:
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
 %%{init: {'theme':'base'}}%%
 flowchart TB;
 a(["Starting Execution"]) --> b["Loading"]
@@ -63,7 +63,7 @@ e["Instantiating"] --> f["Finalizing"]
 f["Finalizing"] --> q{Unloading?}
 q -- Yes --> x(["Program Exit"])
 q -- No --> d["Initializing"]
-{% endmermaid %}
+```
 
 The following sections give more details on each of the activities that occur during the bytecode execution phase.
 

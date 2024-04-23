@@ -101,7 +101,8 @@ This is a common pattern in Big Data and Streaming applications.
 Here's a diagram of a typical serialization/deserialization the Avro workflow involving a producer and a consumer:
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
+%%{init: {'theme':'base'}}%%
 flowchart TB;
 a(["Data"]) --> |.json| x[Avro Schema]
 x --> |.avsc| y[Serialization]
@@ -111,7 +112,7 @@ q --> |.avro| z[Deserialization]
 z --> |.class| t[Java Objects]
 t --> f[Producer]
 f --> a
-{% endmermaid %}
+```
 
 
 # Creating the Avro schema 

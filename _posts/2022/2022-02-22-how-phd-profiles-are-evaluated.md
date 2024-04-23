@@ -44,7 +44,8 @@ After finishing PhD studies, there are basically three different career directio
 The simplified career paths look like this:
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
+%%{init: {'theme':'base'}}%%
 flowchart TB;
 a([Finish PhD]) --> b[Stay in Academia];
 a([Finish PhD]) --> c[Get out of Academia];
@@ -56,7 +57,7 @@ e[Become an Assistant Professor] --> f[Become a Tenured Professor];
 f[Become a Tenured Professor] --> k([Enjoy!]);
 j[Get a Job in the Industry] --> k([Enjoy!]);
 z[Start Your Own Company] --> k([Enjoy!]);
-{% endmermaid %}
+```
 
 If you decide to stay in academia, the natural goal is to become a tenured professor.
 Achieving this goal is not easy, to say the least.

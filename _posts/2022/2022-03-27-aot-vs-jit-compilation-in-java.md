@@ -199,7 +199,8 @@ At the moment of writing, four major frameworks benefit from GraalVM to build an
 The common process for building a JVM based native applications is as follows:
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
+%%{init: {'theme':'base'}}%%
 flowchart TB;
 a([".class Files"]) --> x[Quarkus/Micronatu/Helidon/Spring Native]
 x[Quarkus/Micronatu/Helidon/Spring Native] --> y[Maven/Gradle Plugin]
@@ -207,7 +208,7 @@ y[Maven/Gradle Plugin] --> q{Optimized JAR for the Cloud}
 q -- Yes --> c[AOT Compilation via GraalVM]
 q -- No --> w[JIT Compilation via JVM]
 c[AOT Compilation via GraalVM] --> r([GraalVM Native Image])
-{% endmermaid %}
+```
 
 It seems that AOT with GraalVM is the future of JVM-based languages, such as Java, Scala, or Kotlin.
 However, since the native image creation analyzes the bytecode in the application **and all its dependencies**, there is a risk of violating the close world if at least one of the dependencies relies on some dynamic Java feature.

@@ -397,8 +397,8 @@ a[href^="https://app.pluralsight.com/achievements/share/"] {
 }
 
 a[href^="https://learn.deeplearning.ai/accomplishments/"] {
-  background: transparent url(/img/icons/deeplearning.ai.png) no-repeat center left;
-  background-size: 28px 28px;
+  background: transparent url(/img/icons/deeplearning.ai.svg) no-repeat center left;
+  background-size: 30px 30px;
   padding-left: 35px;
 }
 
@@ -1776,9 +1776,8 @@ tbody {
 }
 
 /* --- Code blocks --- */
-
 pre {
-  background-color: var(--navbar-color);
+  background-color: var(--main-background-color);
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.5em;
@@ -3218,6 +3217,14 @@ div.mermaid {
   max-width: 100%;
 }
 
+pre .language-mermaid {
+  text-align: center;
+  display: flex; /* Use flexbox for easy centering */
+  justify-content: center; /* Center content horizontally */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  overflow: auto; /* Adds scrollbars if content is larger than the container */
+}
 
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {

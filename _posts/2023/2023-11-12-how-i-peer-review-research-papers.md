@@ -65,7 +65,7 @@ TODO
 # DIAGRAM
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
 %%{init: {'theme':'base'}}%%
 flowchart TB;
 U(["👩 User"]) --> |"📒 Plaintext"| C["Encryption Process"]
@@ -75,7 +75,7 @@ C --> K["🔒 Ciphertext"]
 K --> F["Decryption Process"]
 KEY --> F
 F --> G["📒 Plaintext"]
-{% endmermaid %}
+```
 
 # CODE
 
