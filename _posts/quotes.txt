@@ -1,2 +1,5 @@
 https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar
 https://github.com/oldratlee/hacker-quotes/blob/master/hacker-quotes.plugin.zsh
+
+
+"Technique is that you need to know to do, science is what you need to do to know."

@@ -132,7 +132,8 @@ Finally, you get the job done in one hour.
 The written section is imperfect, of course, but you know that not a single section will ever be perfect after the first shot.
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
+%%{init: {'theme':'base'}}%%
 flowchart TB;
 a(["Need to Write"]) --> q{Bikeshedding?}
 q -- Yes --> x["Do Something Else"]
@@ -141,7 +142,7 @@ x["Do Something Else"] --> a(["Need to Write"])
 z["Add One Sentence"] --> z["Add One Sentence"]
 z["Add One Sentence"] --> e["Edit"]
 e["Edit"] --> r(["Get the First Version Ready"])
-{% endmermaid %}
+```
 
 The takeaway here is that **you should not spend too much time on the quality of the writing**.
 It is an iterative task by nature.
@@ -166,7 +167,8 @@ To do so, we add unnecessary abstractions and use complicated architectures.
 This will not save the researcher if the initial hypothesis is wrong.
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
+%%{init: {'theme':'base'}}%%
 flowchart TB;
 a(["Research Hypothesis"]) --> b["Need a Software Tool"] 
 b["Need a Software Tool"] --> c["Implement the Tool"]
@@ -175,7 +177,7 @@ q -- Yes --> x["Optimize/Test/Improve the Tool"]
 q -- No --> z["Run Experiments"]
 x["Optimize/Test/Improve the Tool"] --> z["Run Experiments"]
 z["Run Experiments"] --> e(["Write the Paper"])
-{% endmermaid %}
+```
 
 In general, unnecessary time spent on tooling is another way to postpone the writing.
 Also, it makes the work harder in the future, as good tools need to be maintained.
@@ -199,7 +201,8 @@ Meetings often focus on trivial areas like implementation details, titles, and n
 The essential and expensive research decisions take little time to be discussed.
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
+%%{init: {'theme':'base'}}%%
 flowchart TB;
 a(["A Problem Arises"]) --> x["Meet With the Right People"]
 x["Meet With the Right People"] --> y["Understand the Problem"]
@@ -209,7 +212,7 @@ e["Discuss the Solutions"] --> q{Bikeshedding?}
 q -- Yes --> x["Meet With the Right People"] 
 q -- No --> z["Pick a Solution"]
 z["Pick a Solution"] --> r(["Build and Test It"])
-{% endmermaid %}
+```
 
 The result of most meetings is often... can you guess it?
 To decide where to meet again and at what time, just to follow up the discussion!

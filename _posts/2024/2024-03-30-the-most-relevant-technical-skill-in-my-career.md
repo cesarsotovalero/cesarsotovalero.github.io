@@ -70,25 +70,25 @@ Next, we collect the relevant data, explore it, clean it, visualize it, and fina
 This is a straightforward process, as shown in the following diagram:
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
 %%{init: {'theme':'base'}}%%
 flowchart TB;
-subgraph EDA ["."]
-A(["🛢 Data Collection"])
-B(["🔍 Data Exploration"])
-C(["🧹 Data Cleaning"])
-D(["🛠️ Data Visualization"])
-E(["📈 Report Building"])
-A --> B
-B --> C
-C --> D
-D --> E
+subgraph EDA [.]
+  A([🛢 Data Collection])
+  B([🔍 Data Exploration])
+  C([🧹 Data Cleaning])
+  D([🛠️ Data Visualization])
+  E([📈 Report Building])
+  A --> B
+  B --> C
+  C --> D
+  D --> E
 end
-I(["🤔 Hypothesis"])
-F(["💁️ End User or Decision Maker"])
+I([🤔 Hypothesis])
+F([💁️ End User or Decision Maker])
 I --> A
 E --> F
-{% endmermaid %}
+```
 
 Coming from an academic background, I relate EDA to the [scientific method](https://en.wikipedia.org/wiki/Scientific_method).
 Viewed from a practical standpoint, such as that of a problem solver or stakeholder, EDA is crucial for understanding the problem before developing any solution to address it.
@@ -189,7 +189,7 @@ example_eda_project_in_R/
 ├── notebooks/
 │   ├── figures/
 │   ├── RQ1.Rmd
-|   ├── RQ2.Rmd
+│   ├── RQ2.Rmd
 │   └── RQ3.Rmd 
 │
 ├── R/

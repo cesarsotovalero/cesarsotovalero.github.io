@@ -269,14 +269,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll-toc
-  - jekyll-mermaid
 
 toc:
   ordered_list: true
-
-# Mermaid, library for diagrams, see https://mermaid-js.github.io, and https://github.com/jasonbellamy/jekyll-mermaid
-mermaid:
-  src: '/js/mermaid.min.js'
 
 # Optional. The default date format, used if none is specified in the tag.
 last-modified-at:

@@ -62,7 +62,8 @@ There are four different possible decisions from the editor:
 The whole process looks as follows:
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
+%%{init: {'theme':'base'}}%%
 flowchart TB;
 a([Submit Research Paper]) --> x[Editor Receives the Paper]
 x[Editor Receives the Paper] --> y[Reviewers Receive the Paper]
@@ -74,7 +75,7 @@ b -- Minor Revision --> d[Prepare Response Letter]
 b -- Major Revision --> d[Prepare Response Letter]
 d[Prepare Response Letter] --> e[Sent Response Letter]
 e[Sent Response Letter] --> b{What's The Editor's Decision?}
-{% endmermaid %}
+```
 
 The rest of this post focuses on addressing a major revision decision, which is the most likely positive output that you can receive, according to my experience.
 

@@ -98,7 +98,7 @@ To decrypt the message, the recipient only needs to shift the letters back by th
 The following figure illustrates how symmetric encryption works:
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
 %%{init: {'theme':'base'}}%%
 flowchart TB;
 U1(["👩 Alice"]) --> |"📒 Plaintext"| E["⚙️ Encryption Process"]
@@ -107,7 +107,7 @@ E --> C["🔒 Ciphertext"]
 U2(["👨 Bob"]) --> |"🔒 Ciphertext"| D["⚙️ Decryption Process"]
 U2(["👨 Bob"]) --> |"🔑 KEY"| D["⚙️ Decryption Process"]
 D --> P["📒 Plaintext"]
-{% endmermaid %}
+```
 
 In the figure above, Alice encrypts a message before sending it to Bob.
 The `KEY` node represents the symmetric key.
@@ -216,7 +216,7 @@ The system is known as "public-key cryptography" or "asymmetric encryption," and
 Here's a graphical representation of how asymmetric encryption works:
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
 %%{init: {'theme':'base'}}%%
 flowchart TB;
 
@@ -227,7 +227,7 @@ E --> C["🔒 Ciphertext"]
 U2(["👨 Bob"]) --> |"🔒 Ciphertext"| D["⚙️ Decryption Process"]
 U2(["👨 Bob"]) --> |"🔐 Bob's PRIVATE KEY"| D["⚙️ Decryption Process"]
 D --> P["📒 Plaintext"]
-{% endmermaid %}
+```
 
 In the diagram above, Alice encrypts a message using Bob's **public key**.
 The encrypted message can be then sent to Bob.
@@ -359,7 +359,7 @@ PKI provides a framework of trust for these certificates, establishing the authe
 Here's a diagram that illustrates how PKI works:
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
 %%{init: {'theme':'base'}}%%
 flowchart TB;
 a(["👩 Alice"]) --> b["⚙️Key Generation Process"]
@@ -368,7 +368,7 @@ b --> |"🔐 PRIVATE KEY"| s["⚙️Signing Process"]
 a --> |"📒 Data"| s
 s --> |"💾 Signed Data"| c(["👨 Bob"])
 x --> |"📝 Certificate"| c
-{% endmermaid %}
+```
 
 In the previous diagram, Alice initiates the process by generating a pair of public and private keys.
 Then, she sends her public key to the Certificate Authority (CA).
@@ -397,7 +397,7 @@ Asymmetric encryption is used to enable this verification.
 A digital signature is created using the signer's private key, and it can be verified by anyone who has access to the signer's public key.
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
 %%{init: {'theme':'base'}}%%
 flowchart TB;
 A(["👩 Alice"]) --> |"📃 Original Message"| B["⚙️ Hashing Algorithm"]
@@ -412,7 +412,7 @@ G --> |"🔑 Newly Generated Hash"| H["🔄 Compare Hashes"]
 F --> H
 H --> |"✅ Match: Signature Verified"| I["🔐 Message Authentic and Unaltered"]
 H --> |"❌ No Match: Signature Invalid"| J["⚠️ Message Tampered or Wrong Signer"]
-{% endmermaid %}
+```
 
 When a digital signature is created, a cryptographic algorithm generates a unique hash of the message.
 This hash is then encrypted with the signer's private key.
@@ -540,7 +540,7 @@ In this model, when a user signs another public key, they are essentially assert
 The following diagram illustrates a WOT network:
 
 [//]: # (see https://mermaid-js.github.io)
-{% mermaid %}
+```mermaid
 %%{init: {'theme':'base'}}%%
 flowchart TB;
 A(["👤 User A"]) -->|Signs Key of| B(["👤 User B"])
@@ -552,7 +552,7 @@ E -->|Signs Key of| F(["👤 User F"])
 F -->|Signs Key of| A
 D -->|Signs Key of| F
 E -->|Signs Key of| C
-{% endmermaid %}
+```
 
 Each node (`User A`, `User B`, etc.) represents an individual participant in the WOT, where one user signs the key of another.
 This network of trust relationships indicates that users trust the identity associated with the keys they have signed.
