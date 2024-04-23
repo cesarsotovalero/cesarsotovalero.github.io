@@ -23,8 +23,8 @@ published: false
 
 I've been doing some frontend web development lately as part of my daily job.[^1]
 Along the way, I've reflected on how web technologies have changed and evolved over time.
-While digging into this, I realized how brilliant some of the underlying technologies that power the web are.
-I decided to write about them in an effort to gain a better perspective by putting them together.
+While digging into this, I realized how brilliant are some of the underlying solutions that fuelj the web.
+I decided to write about them in an effort to gain a better perspective when putting them together.
 As a disclaimer, this blog post is not about [the history of the internet](https://en.wikipedia.org/wiki/History_of_the_Internet), which has already been well documented.
 Instead, I focus on the different architectures and patterns that have radically changed the way web technologies are developed.
 This includes new paradigms that have opened up possibilities for what was previously impossible.
@@ -32,8 +32,9 @@ From those that became obsolete, like Java Applets, to those that have stood the
 If you are a software developer, a web developer, or just curious about how the web works internally, you're likely to find this post interesting.
 Let's dive in!
 
+[//]: # (The World Wide Web, and infinite park of data continuously streamed)
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2024/2024-01-12/infinite-park.jpg alt: "The WWW, and infinite park of data continuously streamed" %}
+  {% responsive_image path: img/posts/2024/2024-01-12/infinite-park.jpg alt: "The World Wide Web, and infinite park of data continuously streamed" %}
   <figcaption class="stroke"> 
     &#169; The World Wide Web, this almost infinity data streaming platform, has been transformed and evolved at unprecedented speed. Picture of the art piece titled "Infinite Park" exposed at <a href="https://maps.app.goo.gl/75AGyCg5QpzjQeFR8">Stockholm's Paradox Museum</a>.
   </figcaption>
@@ -41,7 +42,7 @@ Let's dive in!
 
 # The Three Layers of The Web
 
-The [World Wide Web (WWW)](https://en.wikipedia.org/wiki/World_Wide_Web), as we know it today, is a vast collection of data accessible through **the internet**.
+The [World Wide Web (WWW)](https://en.wikipedia.org/wiki/World_Wide_Web), as we know it today, is basically a vast collection of data accessible through **the internet**.
 The internet ensures that this data is constantly transmitted over devices (mostly via cables) and rendered by **web browsers**.
 Browsers are software applications that rely on various **web technologies** to transform the data into more established and human-friendly web pages.
 These three core layers keep the web running today.
@@ -49,27 +50,31 @@ And this post is mostly about the last layer.
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
-graph LR
-subgraph World Wide Web
-  A[(Internet)] -- data --> B([Web Technologies])
+graph TB;
+subgraph "World Wide Web"
   B -- data --> C[Web Browsers] 
-  C -- data --> A
+  A[(Internet)] -- data --> B([Web Technologies])
+  C -- data --> B
   B -- data --> A
 end
 ```
-
 
 ## The Internet
 
 {% badge /img/badges/leonard-kleinrock-dissertation.png 140 https://www.lk.cs.ucla.edu/data/files/Kleinrock/Information%20Flow%20in%20Large%20Communication%20Nets.pdf %}
 
-Most sources say that the internet was created in the 1960s by [ARPANET](https://en.wikipedia.org/wiki/ARPANET), a research project supported by the [DARPA](https://en.wikipedia.org/wiki/DARPA) US agency.[^2] The concept of the internet itself dates back to the first paper about packet switching written in 1961 by the american engineer [Leonard Kleinrock](https://www.lk.cs.ucla.edu/index.html). In his PhD thesis titled “Information Flow in Large Communication Nets”, he proposed a network of computers that could send data to each other. 
+Most agree that the internet was created in the 1960s by [ARPANET](https://en.wikipedia.org/wiki/ARPANET), a research project supported by the [DARPA](https://en.wikipedia.org/wiki/DARPA) US agency.[^2]
+The concept of the internet itself dates back to the first paper about packet switching written in 1961 by the american engineer [Leonard Kleinrock](https://www.lk.cs.ucla.edu/index.html).
+In his PhD thesis titled “Information Flow in Large Communication Nets”, he proposed a network of computers that could send data to each other. 
+And that's what the internet is at its core. 
 
 The internet and the web, while often used interchangeably, refer to different concepts.  
-The internet is a vast global network of interconnected computers that can communicate with each other.
-This network includes physical infrastructure [like submarine cables](http://thescienceexplorer.com/technology/our-wi-fi-world-internet-still-depends-undersea-cables), which are crucial for its operation.
-On the other hand, the web is a collection of information accessed via the internet, consisting of protocols and technologies designed to support data transfer.
-Essentially, the web is just one of several services that utilize the internet to disseminate information.
+The internet is the global network of interconnected computers that can communicate with each other.
+Here the sense of "global" is important, as it transcends geographical barriers between countries (the most restrictive network is called "intranet" instead).[^4]
+
+The internet is built thanks to physical infrastructure [like submarine cables](http://thescienceexplorer.com/technology/our-wi-fi-world-internet-still-depends-undersea-cables), which are crucial for its operation.
+On the other hand, the web is the information accessed via the internet, consisting of protocols and technologies designed to support data transfer between servers.
+Essentially, the web is just one of several services that utilize the internet infrastructure to disseminate information.
 
 [//]: # (Submarine cable map)
 <figure class="jb_picture">
@@ -79,21 +84,23 @@ Essentially, the web is just one of several services that utilize the internet t
   </figcaption>
 </figure>
 
-Though the internet has been around since the early 1970s, initially accessing documents remotely involved complex processes using services such as FTP, NNTP, and the gopher protocol. 
-These protocols, still in use today, primarily provide a simple directory structure from which users can navigate and select files to download, but they do not support direct viewing. 
+The idea of global internet has been around since the early 1970s. 
+However, initially accessing documents remotely involved complex processes using services such as [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol), [NNTP](https://en.wikipedia.org/wiki/Network_News_Transfer_Protocol), and the [Gopher protocol](https://en.wikipedia.org/wiki/Gopher_(protocol)). 
+These protocols, still in use today, provide a simple directory structure from which users can navigate and select files to download, but they do not support direct viewing. 
 This limitation highlighted the need for a new protocol that would enable users to view documents directly through software, leading to the creation of the World Wide Web (WWW). 
-Today's WWW is predominantly made up of HTML documents and other resources, interconnected through URLs.
-These resources are accessed and retrieved via a wonderful pieces of software called "web browsers" that communicate back and forward with servers.
+Today's WWW is predominantly made up of HTML documents and other resources, interconnected through [URLs](https://en.wikipedia.org/wiki/URL).
+These resources are accessed and retrieved using a wonderful piece of software called "web browsers", which communicate back and forward with the internet servers.
 
 ## Web Browsers
 
-In the early 1990s, the development of web browsers rapidly transformed the internet from a niche academic tool into a mainstream technology. 
-Sir Tim Berners-Lee,[^3] at CERN, created the first web browser and editor named "WorldWideWeb," later renamed "Nexus," in 1990.
-This browser, which initially ran on the NeXTSTEP operating system, laid the groundwork for the public web by allowing users to both browse and edit web pages. 
-By February 1992, Berners-Lee had released the Line Mode Browser, the first to support multiple platforms, catalyzing the browser boom. Between 1992 and 1995, several browsers such as Viola, Mosaic, Cello, Netscape Navigator, Opera, and Internet Explorer 1.0 were launched, dramatically opening up internet access to anyone with a computer and a landline. 
-Over the decades, web browsers have evolved into complex systems capable of handling not just text and images, but also running comprehensive applications like video players, animation creators, and PDF document renderers, thus continually reshaping how we interact with digital content.
+In the early 1990s, the development of web browsers rapidly transformed the internet, coming from a niche academic tool into a mainstream technology. 
+Sir [Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee),[^3] at CERN, created the first web browser and editor named "[WorldWideWeb](https://en.wikipedia.org/wiki/WorldWideWeb)," later renamed "Nexus," in 1990 (another poof that long camel cased names are a bad idea).
+This browser, which initially ran on the [NeXTSTEP operating system](https://en.wikipedia.org/wiki/NeXTSTEP) (you're right, the OS of the NeXT Computer founded by Steve Jobs that didn't go anywhere, same for the browser).
+It laid the groundwork for the public web by allowing users to both browse and edit web pages. 
+By February 1992, Berners-Lee's team at CERN released the [Line Mode Browser](https://en.wikipedia.org/wiki/Line_Mode_Browser), the first multi-platform browser.
+Between 1992 and 1995, several browsers such as Viola, Mosaic, Cello, Netscape Navigator, Opera, and Internet Explorer 1.0 were launched, dramatically opening up internet access to anyone with a computer and a landline. 
 
-[//]: # (Web browser Nexus in 1994
+[//]: # (Web browser Nexus in 1994)
 <figure class="jb_picture">
   {% responsive_image width: "50%" border: "1px solid #808080" path: img/posts/2024/2024-01-12/nexus-web-browser.png alt: "Submarine cable map" %}
   <figcaption class="stroke"> 
@@ -101,17 +108,15 @@ Over the decades, web browsers have evolved into complex systems capable of hand
   </figcaption>
 </figure>
 
-On April 30th of 1993, the CERN issued a public statement relinquishing all intellectual property rights to the World Wide Web.
-Thus making it freely accessible without any fees.
-This decision fostered an environment of unrestricted expansion and innovation in web technologies. 
-Berners-Lee left CERN in October 1994 to form the World Wide Web Consortium (W3C), which today includes 406 member organizations from around the world. 
-The W3C works to create standards for web development and serves as a forum for discussing web usage. 
+Browsers are capable of handling not just text and images, but also running comprehensive applications like video players, 3D animations, and PDF document.
+Over the last decades, they have evolved into complex software systems (e.g., Firefox has Chrome reported have roughly [30M](https://openhub.net/p/firefox) and [40M](https://openhub.net/p/chrome/analyses/latest/languages_summary) LoC, respectively).
+For example, the [V8 JavaScript Engine](https://v8.dev/) included in Chrome is renowned for its high performance due to just-in-time (JIT) compilation, efficient garbage collection, and optimizations for real-time execution in web browsers.
 
 ## Web Technologies
 
-The web's evolution is marked by an ongoing debate about where to place the execution logic: on the server or the client.
-This decision impacts how applications on the web are built and interacted with, shaping user experiences across the globe. Initially created in the 1990s by Tim Berners-Lee to link research papers via hyperlinks, the web quickly grew beyond its academic origins. 
-The world's first website and web server were hosted at CERN with the address [info.cern.ch](https://info.cern.ch/), and the very first web page can still be visited at [the project website](https://info.cern.ch/hypertext/WWW/TheProject.html). 
+Initially created in the 1990s to link research papers via hyperlinks, the web quickly grew beyond its academic origins. 
+The world's first website and web server were hosted at CERN with the address [info.cern.ch](https://info.cern.ch/). 
+The very first web page can still be visited at [the project website](https://info.cern.ch/hypertext/WWW/TheProject.html). 
 As web technologies evolved, they began solving a myriad of problems, leading to the continuous development and obsolescence of various technologies over time.
 
 [//]: # (First page of Tim Berners-Lee's proposal for the World Wide Web in March 1989)
@@ -122,10 +127,17 @@ As web technologies evolved, they began solving a myriad of problems, leading to
   </figcaption>
 </figure>
 
+On April 30th of 1993, the CERN issued a [public statement](https://home.cern/science/computing/birth-web/licensing-web) relinquishing all intellectual property rights to the World Wide Web.
+Thus making it freely accessible without any fees.
+This decision fostered an environment of unrestricted expansion and innovation in web technologies.
+Berners-Lee left CERN in October 1994 to form the [World Wide Web Consortium (W3C)](https://www.w3.org/), which today includes 406 member organizations from around the world.
+The W3C works to create standards for web development and serves as a forum for discussing web usage.
+
 The global internet and web landscape has seen dramatic transformations due to the strategic pushes by companies and nations to standardize certain web technologies.
-These technologies have allowed web applications to operate differently from traditional software; they don't require installation, are always updated, and can be accessed from any device with a web browser.
-My personal experience with the internet began in 2011 in Cuba, where access was restricted mainly to universities and linked through an intranet, highlighting the diverse global accessibility challenges. 
-Over the years, this technology has democratized information access, continually adapting to meet both technological and societal needs.
+These technologies have allowed web applications to operate differently from traditional software.
+For example, they don't require installation, are always updated, and can be accessed from any device with a web browser.
+The web's evolution is marked by an ongoing debate about where to place the execution logic: in the server or in the client.
+This decision impacts how applications on the web are built and interacted with, shaping user experiences across the globe
 
 # Timeline
 
@@ -149,7 +161,7 @@ timeline
                    : Blockchain & Decentralization    
 ```
 
-The next sections delve into each of these technologies in more detail. 
+In the next sections, I delve into each of these technologies in more detail. 
 
 ## Files and Static HTML
 
@@ -287,8 +299,6 @@ There are valuable lessons to be learned from all of this -- including the need 
 
 But, for now, I'd like to leave you with a few observations.
 
-
-
 # Resources
 
 - [The Evolution of Web Apps 1992-2024, by Dylan Beattie](https://youtu.be/a_1cV7hg5G8?si=VIaAQnfTyR9nuUdc)
@@ -302,5 +312,6 @@ But, for now, I'd like to leave you with a few observations.
 
 [^3]: Tim Berners-Lee was knighted by Queen Elizabeth II in 2004, so now we should call him "sir" to be more exact. People gets promoted dear reader, the sky is the limit.    
 
+[^4]: I browsed the web in 2011 for the first time during the second year at university. Back then, in Cuba the internet access was restricted mainly to universities and managed by a quota-based system. I had 50MB per week to spend navigating educational websites (most of the rest of the services were forbidden).
 
 
