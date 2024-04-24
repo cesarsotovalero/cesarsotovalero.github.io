@@ -18,14 +18,14 @@ toc: true
 mathjax: false
 date: 2024/01/12
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 I've been doing some frontend web development lately as part of my daily job.[^1]
 Along the way, I've reflected on how web technologies have changed and evolved over time.
 While digging into this, I realized how brilliant are some of the underlying solutions that fuelj the web.
 I decided to write about them in an effort to gain a better perspective when putting them together.
-As a disclaimer, this blog post is not about [the history of the internet](https://en.wikipedia.org/wiki/History_of_the_Internet), which has already been well documented.
+But this blog post is not about [the history of the internet](https://en.wikipedia.org/wiki/History_of_the_Internet), which has already been well documented.
 Instead, I focus on the different architectures and patterns that have radically changed the way web technologies are developed.
 This includes new paradigms that have opened up possibilities for what was previously impossible.
 From those that became obsolete, like Java Applets, to those that have stood the test of time, like Static HTML, and the recent emergence of WebAssembly.
@@ -73,8 +73,9 @@ The internet is the global network of interconnected computers that can communic
 Here the sense of "global" is important, as it transcends geographical barriers between countries (the most restrictive network is called "intranet" instead).[^4]
 
 The internet is built thanks to physical infrastructure [like submarine cables](http://thescienceexplorer.com/technology/our-wi-fi-world-internet-still-depends-undersea-cables), which are crucial for its operation.
-On the other hand, the web is the information accessed via the internet, consisting of protocols and technologies designed to support data transfer between servers.
-Essentially, the web is just one of several services that utilize the internet infrastructure to disseminate information.
+The web, on the other hand, is the information accessed via the internet.
+It consists of the protocols and technologies designed to support data transfer between servers.
+Essentially, the web is just one of several services that utilize the internet infrastructure to disseminate information (e.g., file transfer services, email, VoIP, or streaming platforms).
 
 [//]: # (Submarine cable map)
 <figure class="jb_picture">
@@ -114,10 +115,14 @@ For example, the [V8 JavaScript Engine](https://v8.dev/) included in Chrome is r
 
 ## Web Technologies
 
-Initially created in the 1990s to link research papers via hyperlinks, the web quickly grew beyond its academic origins. 
+Initially created in the 1990s to link research papers via "hyperlinks," the web quickly grew beyond its academic origins. 
 The world's first website and web server were hosted at CERN with the address [info.cern.ch](https://info.cern.ch/). 
-The very first web page can still be visited at [the project website](https://info.cern.ch/hypertext/WWW/TheProject.html). 
-As web technologies evolved, they began solving a myriad of problems, leading to the continuous development and obsolescence of various technologies over time.
+The very first web page can still be visited at [the project website](https://info.cern.ch/hypertext/WWW/TheProject.html).
+On April 30th of 1993, the CERN issued a [public statement](https://home.cern/science/computing/birth-web/licensing-web) relinquishing all intellectual property rights to the World Wide Web.
+Thus making it freely accessible without any fees.
+This decision fostered an environment of unrestricted expansion and innovation in web technologies.
+Berners-Lee left CERN in October 1994 to form the [World Wide Web Consortium (W3C)](https://www.w3.org/), which today includes around 500 member organizations from around the world.
+The W3C works to create standards for web development and serves as a forum for discussing web usage.
 
 [//]: # (First page of Tim Berners-Lee's proposal for the World Wide Web in March 1989)
 <figure class="jb_picture">
@@ -127,17 +132,20 @@ As web technologies evolved, they began solving a myriad of problems, leading to
   </figcaption>
 </figure>
 
-On April 30th of 1993, the CERN issued a [public statement](https://home.cern/science/computing/birth-web/licensing-web) relinquishing all intellectual property rights to the World Wide Web.
-Thus making it freely accessible without any fees.
-This decision fostered an environment of unrestricted expansion and innovation in web technologies.
-Berners-Lee left CERN in October 1994 to form the [World Wide Web Consortium (W3C)](https://www.w3.org/), which today includes 406 member organizations from around the world.
-The W3C works to create standards for web development and serves as a forum for discussing web usage.
+I would like to remark that since its massification, the web landscape has undergone dramatic transformations due to the strategic pushes made by companies and nations to standardize certain web technologies. 
+These technologies have added new capabilities that allow web applications to scale and operate differently from traditional software. 
+Web applications do not require installation. 
+They simply need a device with a web browser to run.
+This has led to the rise of web applications that can be accessed from any device with an internet connection, making them more accessible thanks to the widespread of mobile phones.
 
-The global internet and web landscape has seen dramatic transformations due to the strategic pushes by companies and nations to standardize certain web technologies.
-These technologies have allowed web applications to operate differently from traditional software.
-For example, they don't require installation, are always updated, and can be accessed from any device with a web browser.
-The web's evolution is marked by an ongoing debate about where to place the execution logic: in the server or in the client.
-This decision impacts how applications on the web are built and interacted with, shaping user experiences across the globe
+Its rapid development has led to the rise and decline (almost obsolescence) of various technologies over time. 
+In particular, there's still an ongoing debate about where to place the execution logic and consume the power: on the server or in the client. 
+This decision impacts how applications on the web are built and interacted with. 
+For example, Server-Side Rendering (SSR) is a technique where the server generates and processes the HTML content that is sent to the client (e.g., using any kind of programming language like Java, C, or Ruby). 
+On the other hand, Client-Side Rendering (CSR) is a technique where the client's browser generates the HTML content, mostly using JavaScript.
+This approach is useful for applications that require high interactivity and real-time updates.
+SSR offers faster initial page loads and SEO benefits by pre-rendering HTML on the server.
+CSR provides a more dynamic and interactive user experience at the expenses of slower initial loads and SEO challenges due to content being rendered on the client's browser.
 
 # Timeline
 
@@ -148,40 +156,200 @@ The following timeline illustrates the evolution of web technologies from the 19
 %%{init: {'theme':'base'}}%%
 timeline
   section 1990s
-    1990s to present: Transfer Files & Static HTML
-                    : Web Forms & Server-Side Rendering
-                    : JavaScript & XML HTTP Request
-    1995s to 2010: Java Applets & Plugins
-    1995 to present: CSS
+    1990s to present: Static HTML Pages
+                    : Server-Side Rendering
+                    : Client-Side Rendering
+    1995s to 2010: Java Applets and Plugins
+    1995 to present: CSS and Dynamic Web Design
   section 2000s
-    2005 to present: SPA & AJAX
-    2008 to present: WebSockets & Realtime Web
+    2005 to present: SPA and AJAX
+    2008 to present: WebSockets
   section 2010s
-    2017 to present: WebAssembly
-                   : Blockchain & Decentralization    
+    2017 to present: Decentralized Web
+                   : WebAssembly    
 ```
 
-In the next sections, I delve into each of these technologies in more detail. 
+In the following sections, I delve into each of these technologies in more detail. 
 
-## Files and Static HTML
+## Static HTML Pages
 
-In the dawn of the 1990s, the World Wide Web was essentially a vast expanse of static HTML pages. Tim Berners-Lee, the inventor of HTML (HyperText Markup Language), designed it as a means for researchers to share documents seamlessly over the Internet. This early iteration of the web featured pages that were predominantly text-based, interspersed with hyperlinks that facilitated navigation between documents. The simplicity of HTML was pivotal, making it possible for virtually anyone to create and publish content on the web without needing sophisticated technical skills.
+The first version of HTML was written by Tim Berners-Lee [in 1993](https://www.washington.edu/accesscomputing/webd2/student/unit1/module3/html_history.html).
+HTML is a [markup language](https://en.wikipedia.org/wiki/Markup_language) based on [SGML](https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language) that structures content by defining elements like headings, paragraphs, lists, and links using tags like `h1`, `p`, `ul`, and `a`, respectively.
+So, in the dawn of the 1990s, the World Wide Web was essentially HTML pages connected via hyperlinks without any styling or data persistence.
+This early iteration of the web featured pages that were predominantly text-based, but later evolved to include images, GIFs, and other media.
+The HTML supported them by adding more tags like `img`, `video`, `audio`, and `canvas`.
+The simplicity of HTML was key, making it possible for virtually anyone to create and publish content on the web without needing sophisticated technical skills.[^5]
 
-The fundamental architecture of the web during this era was straightforward: web browsers requested files from servers, which functioned much like file servers connected to a network. These servers did little more than retrieve and send the requested files back to the browsers. The browsers would then render these files, which might include links to images and GIFs, further enhancing the user experience. This model was particularly effective for delivering content that rarely changed, such as a restaurant's monthly menu. Since the content was static, it could be hosted inexpensively on platforms like GitHub Pages or Amazon S3 buckets, or even served through a Content Delivery Network to enhance accessibility.
+The following is an example of a simple HTML page that displays a heading, paragraph, and an image:
 
-The economic advantage of using static HTML was undeniable. Since the server's only task was to deliver files without any processing, the overhead costs were minimal. This efficiency meant that a site could handle thousands or even millions of visits each month at a very low cost, or even for free if hosted on platforms like GitHub Pages. Static HTML remains a viable option for many applications today, testament to the enduring utility of simple, effective web technologies developed in the early days of the internet.
+{% highlight html linenos %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Web Page</title>
+</head>
+<body>
+  <h1>Welcome to My First Web Page</hh1>
+  <p>This is a simple web page created using HTML.</p>
+  <img src="image.jpg" alt="An image">
+</body>
+</html>
+{% endhighlight %}
+
+The fundamental architecture of the web during this era was straightforward.
+Web browsers requested files from servers, which functioned much like file servers connected to a network.
+These servers did little more than retrieve and send the requested files back to the browsers.
+The browsers would then render these files, which might include links to images and GIFs, further enhancing the user experience.
+This model was particularly effective for delivering content that rarely changed, such as a restaurant's monthly menu or landing pages, for example.
+
+```mermaid
+%%{init: {'theme':'base'}}%%
+graph TB
+subgraph "Static HTML"
+  C[User]
+  B[Server]
+  A[Browser]
+  C -- Request URL --> A
+  B -- HTML Page --> A
+  A -- Render HTML --> C
+  A -- HTTP Request --> B 
+end
+```
+
+<aside class="quote">
+    <em>“This blog is actually a bunch of static HTML pages.”</em> 
+</aside>
+The economic advantage of using static HTML is undeniable.
+Since the server's only task was to deliver files without any processing, the overhead costs are minimal.
+This efficiency meant that a site could handle thousands or even millions of visits each month at a very low cost.
+Indeed, this blog is actually a bunch of static HTML pages shaped by [Jekyll](https://jekyllrb.com/) and hosted for free using [GitHub Pages](https://pages.github.com/).
+Static HTML remains a viable option for many applications today, testament to the enduring utility of simple, effective web technologies developed in the early days of the internet.
 
 ## Server-Side Rendering
 
-As the web began to reach thousands of new users each day, there emerged a desire to expand its capabilities beyond merely sharing static content. This led to the development of server-side scripting, which enabled the rendering of dynamic content on a web server before it was sent to the client. This approach allowed pages to be customized for individual users based on their previous interactions with the website. The first notable scripting method was CGI (Common Gateway Interface), introduced in 1993. Since then, various languages have been developed for dynamic content creation, including Perl, Python, PHP, Ruby, ASP, Java Servlet, and Cold Fusion.
+By the mid 90s, the web began to reach thousands of new users each day.
+There was an emerged a desire to expand its capabilities beyond merely sharing HTML content.
+For example, users wanted to interact with websites by submitting forms, logging in, and viewing personalized content.
+However, the statelessness of the web presented unique challenges, as each request was independent of others.
+This led to the development of [server-side scripting](https://en.wikipedia.org/wiki/Server-side_scripting), which enabled persisting and rendering dynamic content on the web server before sending it to the client.
+This approach allowed pages to be customized for individual users based on their previous interactions with the website.
 
-Server-side scripting, when combined with a database, revolutionized web interactions by allowing users to register and log in to websites for the first time. This advancement facilitated the rise of the first wave of web applications, commonly referred to as CRUD applications. CRUD—an acronym for Create, Read, Update, Delete—directly corresponds to both database operations and HTTP requests, providing a structured framework for building dynamic websites.
+The first notable scripting method was [CGI (Common Gateway Interface)](https://en.wikipedia.org/wiki/Common_Gateway_Interface), introduced in 1993.
+Since then, various languages have been developed for dynamic content creation, including Perl, Python, PHP, Ruby, ASP, Java Servlet, and Cold Fusion.
+Server-side scripting, when combined with a database, revolutionized web interactions by allowing users to register and log in to websites for the first time.
+This advancement facilitated the rise of the first wave of web applications, commonly referred to as [CRUD (Create, Read, Update, Delete)](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) applications.
+CRUD directly corresponds to both database operations and HTTP requests, providing a structured framework for building dynamic websites.
 
-One of the early successes of this technology was the launch of eBay, initially known as AuctionWeb. Founded on September 3, 1995, in San Jose, California, by Pierre Omidyar, a French-born Iranian programmer, eBay started as an experiment. Omidyar was curious to see what would happen if there was a global marketplace accessible to everyone. To test his idea, he created an auction website where the first item sold was a broken laser pointer, which surprisingly fetched $14.83 from a collector.
+> "One of the early successes of this technology was the launch of eBay, initially known as AuctionWeb. Founded on September 3, 1995, in San Jose, California, by Pierre Omidyar, a French-born Iranian programmer, eBay started as an experiment. Omidyar was curious to see what would happen if there was a global marketplace accessible to everyone. To test his idea, he created an auction website where the first item sold was a broken laser pointer, which surprisingly fetched $14.83 from a collector."
 
-The inherent statelessness of the web presents unique challenges, as each request is independent of others. This characteristic complicates tracking user actions such as logins or adding items to a shopping cart. To manage this, developers utilize cookies, sessions, and databases to store user data and maintain continuity across interactions. These tools are crucial for the functionality of modern web applications, which rely heavily on maintaining state to represent user interactions and data.
+HTML forms were developed to facilitate user interactions like contacting support, sending messages, or making purchases.
+When a user submits a form, it typically sends a `POST` request to a server-side script.
+One of the first examples was [sendmail Perl](https://metacpan.org/pod/Mail::Sendmail), which processes the information to send emails or perform other actions in response to a client's request.
 
-HTML forms were developed to facilitate user interactions like contacting support, sending messages, or making purchases. When a user submits a form, it typically sends a POST request to a server-side script, such as [sendmail Perl](https://metacpan.org/pod/Mail::Sendmail), which processes the information and can send an email or perform other actions in response. This process, known as server-side rendering, has proven to be incredibly robust over time. Despite the processing overhead associated with generating dynamic content—especially under heavy traffic—technologies like PHP, ASP, Ruby on Rails, Node.js, WordPress, and ASP.NET Core have all embraced server-side rendering due to its powerful capabilities.
+```mermaid
+%%{init: {'theme':'base'}}%%
+graph TB
+subgraph "Server-Side Rendering"
+  C[User]
+  B[Server]
+  A[Browser]
+  D[(Database)]
+  C -- Request Login Page --> A
+  B -- HTML + JavaScript --> A
+  A -- Render Login Page --> C
+  A -- HTTP Request --> B
+  B -- CRUD --> D
+  D -- Data --> B
+  B -- Processing --> B
+end
+```
+
+The pattern has proven to be incredibly robust over time, despite the processing overhead associated with generating dynamic content in the server (especially under heavy traffic workloads).
+The rise of [microservices and serverless architectures](/blog/design-for-microservices.html) has further refined server-side rendering, allowing developers to build scalable, efficient web applications.
+Today, developers rely on [HTTP cookies](https://en.wikipedia.org/wiki/HTTP_cookie), sessions, and databases to store user data.
+Web technologies like PHP, ASP, Ruby on Rails, Node.js, WordPress, and ASP.NET Core have all embraced server-side rendering due to its powerful capabilities.
+
+## Client-Side Rendering
+
+[//]: # (The Evolution of JavaScript and Dynamic Web Content)
+Client-side rendering is the process of generating web content directly in the user's browser.
+To do so, HTML was clearly no enough, a real programming language was necessary.
+JavaScript was the answer.
+The legend says that JavaScript was created in just ten days by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich) while working on Netscape in May 1995.
+Nothing good can be done in ten days, and that may be reason why JavaScript has caused so many headaches to developers.
+Anyway, JavaScript revolutionised the web by allowing the pages to respond dynamically to user inputs.
+For example, it could immediately notify when their passwords did not meet certain validation requirements, instantly, directly in the browser. 
+The user experience improved significantly because there was no need to reload page.  
+Client-side rendering made web pages more interactive by eliminating the constant (and costly) server communication.
+
+```mermaid
+%%{init: {'theme':'base'}}%%
+graph TB
+subgraph "Client-Side Rendering"
+  subgraph "Browser"
+    A[HTML]
+    
+    subgraph "Browser"
+      B[JavaScript]
+      C[JavaScript]
+    end
+  end  
+end
+```
+
+The following is an example of a simple JavaScript function `validatePassword` that takes a password input and alerts the user if it is less than eight characters long, note that all the execution of this logic is done in the browser:
+
+{% highlight html linenos %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Validation</title>
+    <script>
+    function validatePassword() {
+      var password = document.getElementById("password").value;
+      if (password.length < 8) {
+        alert("Password must be at least 8 characters long.");
+      } else {
+        alert("Password is valid.");
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <h2>Password Validation</h2>
+    <p>Enter your password:</p>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="validatePassword()">Validate Password</button>
+  </body>
+</html>
+{% endhighlight %}
+
+[//]: # (Competition and Security Concerns in Scripting)
+During JavaScript's early days, tech giants like Microsoft and Adobe were also venturing into dynamic client-side scripting.
+Microsoft introduced technologies such as [ActiveX](https://en.wikipedia.org/wiki/ActiveX), along with scripting languages like JScript and VBScript, 
+while Adobe developed ActionScript for its Flash authoring tool. 
+Interestingly, none of this technologies ended up going anywhere and today are practically deprecated. 
+Indeed, JavaScript became the de facto standard for client-side scripting.
+One of the reasons is that these scripting languages were proprietary, raising significant security concerns because they could execute any code downloaded from the internet, potentially harming the user's system.
+To mitigate these risks, browsers implemented strict containment measures.
+However, some scripts could still bypass these protections through techniques that exploit browser vulnerabilities.
+
+[//]: # (The Rise of AJAX and Modern Web Applications)
+The potential of JavaScript extended significantly with the advent of [AJAX (Asynchronous JavaScript and XML)](https://www.w3schools.com/xml/ajax_intro.asp), particularly after its use in Google's products like Gmail and Google Maps in the early 2000s.
+AJAX was initially made possible by the [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), initially created by Microsoft for its Outlook Web App in 1998.
+This technology allowed web pages to request additional data from servers without needing a page refresh, leading to more dynamic and responsive web applications. 
+Today, AJAX is a fundamental component of modern web development, enabling continuous data exchange between browsers and servers and significantly enhancing the user experience on the internet.
+
+[//]: # (Node.js: Unifying Client and Server-Side Development)
+The development landscape took a dramatic turn with the creation of [Node.js](https://nodejs.org/en) in May 2009.
+Node.js is an open-source cross-platform runtime environment that allows developers to use JavaScript for server-side application development.
+By integrating Google’s V8 JavaScript engine with an event loop and a non-blocking I/O API, Node.js facilitates the development of efficient and scalable web applications. 
+This innovation was partly inspired by the need for better handling of file uploads, as seen in applications like [Flickr](https://www.flickr.com/), where the progress of file uploads was not visible to the user without querying the server.
+
+[//]: # (The Shift Towards Server-Side Scripting)
+Given the limitations and security issues associated with client-side scripting, many developers prefer server-side scripting to create dynamic content.
+However, to enrich the user experience, websites occasionally implement a mix of minimal client-side scripting alongside server-generated content.
+This approach helped in delivering a more interactive and engaging web experience without compromising security.
 
 ## Java Applets and Plugins
 
@@ -191,25 +359,7 @@ The reliance on plugins was not unique to Java; it was a common pattern in the w
 
 The plugin era began to wane with significant shifts in the technology landscape, notably marked by Apple's 2007 release of the iPhone. Apple explicitly decided against supporting Java Applets, Shockwave, Flash, and other plugins on the new device, urging developers to use JavaScript and HTML for creating web applications. This stance effectively signaled the end of the plugin paradigm. As mobile internet usage surged and security concerns grew, the industry moved towards more secure, native web technologies, leading to the gradual decline of plugins. This transition underscored a broader trend towards enhancing browser capabilities and standardizing web technologies to create a safer and more seamless user experience.
 
-## Client-Side Scripting
-
-[//]: # (The Evolution of JavaScript and Dynamic Web Content)
-JavaScript's journey began in May 1995 when Brendan Eich, working for Netscape Communications Corporation, developed it in just ten days. 
-Originally code-named ‘Mocha’, JavaScript was unveiled on August 19, 1995, revolutionizing web interaction by allowing web pages to respond dynamically to user inputs. For instance, JavaScript could immediately notify users if their password did not meet the set requirements, enhancing user experience by eliminating the need to reload pages. This feature marked a significant advancement in making web pages more interactive without constant server communication.
-
-[//]: # (Competition and Security Concerns in Scripting)
-During JavaScript's early days, other tech giants like Microsoft and Adobe were also venturing into dynamic client-side scripting. Microsoft introduced technologies such as ActiveX, along with scripting languages like JScript and VBScript, while Adobe developed ActionScript for its Flash authoring tool. Initially, these client-side scripting languages raised significant security concerns because they could execute any code downloaded from the internet, potentially harming the user’s computer. To mitigate these risks, browsers implemented strict containment measures, although some scripts could still bypass these protections through techniques like exploiting browser vulnerabilities.
-
-[//]: # (The Shift Towards Server-Side Scripting)
-Given the limitations and security issues associated with client-side scripting, many developers preferred server-side scripting to create dynamic content. However, to enrich the user experience, websites occasionally used a mix of minimal client-side scripting alongside server-generated content. This approach helped in delivering a more interactive and engaging web experience without compromising security.
-
-[//]: # (Node.js: Unifying Client and Server-Side Development)
-The development landscape took a dramatic turn with the creation of Node.js in May 2009 by Ryan Dahl and other developers at Joyent. Node.js, an open-source, cross-platform runtime environment, allowed developers to use JavaScript for server-side application development. By integrating Google’s V8 JavaScript engine with an event loop and a non-blocking I/O API, Node.js facilitated the development of efficient and scalable web applications. This innovation was partly inspired by the need for better handling of file uploads, as seen in applications like Flickr, where the progress of file uploads was not visible to the user without querying the server.
-
-[//]: # (The Rise of AJAX and Modern Web Applications)
-The potential of JavaScript extended significantly with the advent of AJAX (Asynchronous JavaScript and XML), particularly after its use in Google's products like Gmail and Google Maps in the early 2000s. AJAX was initially made possible by the XMLHTTP request component, created by Microsoft for its Outlook Web App in 1998. This technology allowed web pages to request additional data from servers without needing a page refresh, leading to more dynamic and responsive web applications. Today, AJAX is a fundamental component of modern web development, enabling continuous data exchange between browsers and servers and significantly enhancing the user experience on the internet.
-
-## CSS
+## CSS and Dynamic Web Design
 
 [//]: # (The Genesis of CSS and Enhanced Web Aesthetics)
 As the internet began to flourish, one significant limitation of HTML was its rudimentary style capabilities, confined mostly to basic alignments and text formatting. Recognizing the need for more sophisticated presentation options, style sheets were introduced to expand HTML's styling functions. This innovation led to the development of Cascading Style Sheets (CSS) in 1996, which fundamentally changed web design. CSS allowed for the separation of document content (written in HTML) from document presentation, including detailed specifications of fonts, colors, layouts, and other visual aspects. This separation not only made web pages more visually appealing but also significantly streamlined the web development process by allowing styles to be defined once and reused across multiple pages.
@@ -313,5 +463,9 @@ But, for now, I'd like to leave you with a few observations.
 [^3]: Tim Berners-Lee was knighted by Queen Elizabeth II in 2004, so now we should call him "sir" to be more exact. People gets promoted dear reader, the sky is the limit.    
 
 [^4]: I browsed the web in 2011 for the first time during the second year at university. Back then, in Cuba the internet access was restricted mainly to universities and managed by a quota-based system. I had 50MB per week to spend navigating educational websites (most of the rest of the services were forbidden).
+
+[^5]: HTML and CSS are not programming languages. There's no such as thing as an HTML programmer (nor anyone proud to be called as such).
+
+[^6]: Nothing really good can be done in  
 
 
