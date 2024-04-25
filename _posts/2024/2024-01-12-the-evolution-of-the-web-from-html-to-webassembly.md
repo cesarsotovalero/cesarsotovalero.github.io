@@ -619,7 +619,3 @@ But, for now, I'd like to leave you with a few observations.
 [^4]: I browsed the web in 2011 for the first time during the second year at university. Back then, in Cuba the internet access was restricted mainly to universities and managed by a quota-based system. I had 50MB per week to spend navigating educational websites (most of the rest of the services were forbidden).
 
 [^5]: HTML and CSS are not programming languages. There's no such as thing as an HTML programmer (nor anyone proud to be called as such).
-
-[^6]: Nothing really good can be done in  
-
-
