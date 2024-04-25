@@ -175,6 +175,7 @@ In the following sections, I delve into each of these technologies in more detai
 
 The first version of HTML was written by Tim Berners-Lee [in 1993](https://www.washington.edu/accesscomputing/webd2/student/unit1/module3/html_history.html).
 HTML is a [markup language](https://en.wikipedia.org/wiki/Markup_language) based on [SGML](https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language) that structures content by defining elements like headings, paragraphs, lists, and links using tags like `h1`, `p`, `ul`, and `a`, respectively.
+These elements are known as the [Document Object Model (DOM)](https://www.w3.org/TR/WD-DOM/introduction.html), a tree-like structure that browsers use to render web pages.
 So, in the dawn of the 1990s, the World Wide Web was essentially HTML pages connected via hyperlinks without any styling or data persistence.
 This early iteration of the web featured pages that were predominantly text-based, but later evolved to include images, GIFs, and other media.
 The HTML supported them by adding more tags like `img`, `video`, `audio`, and `canvas`.
@@ -387,25 +388,22 @@ Yet, this approach came with significant drawbacks, particularly concerning secu
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
-flowchart RL  
-  subgraph Browser
-    direction RL
-    subgraph Computing
-       JavaScript
-    end 
-    subgraph Rendering
-            
-        HTML <--> CSS
-    end    
-  end
-  Rendering --> Computing
-  Computing --> Rendering
-  User -- request --> Browser  
-  Browser -- response --> User
+flowchart LR
+  Plugin -- execute --> R(Runtime)
+  R(Runtime) -- response --> Plugin
+  subgraph Browser    
+    subgraph HTML
+        Plugin   
+    end
+  end  
+  subgraph Third-Party            
+    R(Runtime)
+  end  
+  User -- request --> HTML
 ```
 
 The plugin era began to wane with significant shifts in the technology landscape.
-Notably, in 2007 Apple released the iPhone and explicitly decided against supporting Java Applets, Shockwave, Flash, and other plugins on the new device.
+Notably, in 2007 Apple released the iPhone and [explicitly decided against supporting Java Applets](https://www.theregister.com/2007/10/29/no_java_for_leopard/), Shockwave, Flash, and other plugins on the new device.
 This pushed developers to use JavaScript and HTML for creating web applications instead.
 And that was the end of the plugin paradigm. 
 As mobile internet usage surged and security concerns grew, the industry moved towards more secure, native web technologies.
@@ -414,41 +412,145 @@ This transition underscored a broader trend towards enhancing browser capabiliti
 ## CSS and Dynamic Web Design
 
 [//]: # (The Genesis of CSS and Enhanced Web Aesthetics)
-As the internet began to flourish, one significant limitation of HTML was its rudimentary style capabilities, confined mostly to basic alignments and text formatting. Recognizing the need for more sophisticated presentation options, style sheets were introduced to expand HTML's styling functions. This innovation led to the development of Cascading Style Sheets (CSS) in 1996, which fundamentally changed web design. CSS allowed for the separation of document content (written in HTML) from document presentation, including detailed specifications of fonts, colors, layouts, and other visual aspects. This separation not only made web pages more visually appealing but also significantly streamlined the web development process by allowing styles to be defined once and reused across multiple pages.
+One significant limitation of HTML is its rudimentary style capabilities, confined mostly to basic alignments and text formatting.
+Cascading Style Sheets (CSS) were introduced in 1996 to expand HTML's styling functions. 
+It fundamentally changed web design. 
+CSS allowed for the separation of document content (written in HTML) from document presentation.
+For example, CSS includes detailed specifications of fonts, colors, layouts, and other visual aspects.
+This separation not only mades web pages more visually appealing but also significantly streamlined the web development process by allowing styles to be defined once and reused across multiple pages.
+
+For example, the following CSS code defines a style for a `div` element with a red background and white text:
+
+{% highlight css linenos %}
+div {
+  background-color: red;
+  color: white;
+}
+{% endhighlight %}
+
+This style can be shared across multiple HTML pages, ensuring a consistent look and feel throughout a website:
+
+```mermaid
+%%{init: {'theme':'base'}}%%
+flowchart TB  
+  subgraph Website
+    direction LR 
+    subgraph HTML
+        Page1
+        Page2
+        Page3
+        Page4   
+    end
+    subgraph CSS
+        Style1
+        Style2
+    end
+  end
+  Page1 --- Style1
+  Page2 --- Style1
+  Page3 --- Style1
+  Page4 --- Style2
+  ```
 
 [//]: # (Revolutionizing Web Design with CSS)
-CSS's introduction was a response to the growing demand for more dynamic and stylistically diverse websites. By allowing developers to control the layout and appearance of web elements independently from HTML structure, CSS enabled a more efficient way to design visually engaging websites. This level of aesthetic control transformed the web, enabling developers and designers to create complex designs that were previously impossible or impractical with HTML alone. As CSS evolved, it became responsible for the majority of the styling on web pages, influencing everything from layout to animations, thereby enhancing the user's visual experience and interaction with the web.
+CSS's introduction was a response to the growing demand for more dynamic and stylistically diverse websites.
+It allows developers to control the layout and appearance of web elements independently of HTML structure.
+CSS enabled a more efficient way to design visually engaging websites. 
+As CSS evolved, it became responsible for the majority of the styling on web pages, influencing everything from layout to animations, thereby enhancing the user's visual experience and interaction with the web.
 
 [//]: # (JavaScript and CSS)
-The concurrent rise of JavaScript further complemented the capabilities of CSS, providing a way to dynamically manipulate page elements and styles through the Document Object Model (DOM). This synergy between JavaScript and CSS meant that web pages could not only look better but also react in real-time to user inputs without refreshing the page. JavaScript’s ability to interact with CSS properties brought about a new era in web design, where the static pages of the early web gave way to dynamic, interactive experiences. This integration has been pivotal in shaping the modern web, making it a rich, responsive environment that adapts to the needs of users and designers alike.
+The concurrent rise of JavaScript further complemented the capabilities of CSS, providing a way to dynamically manipulate page elements and styles through the DOM. 
+This synergy between JavaScript and CSS meant that web pages could not only look better but also change the visual elements in real-time as a response to user inputs.
+JavaScript’s ability to interact with CSS properties brought about a new era in web design, where the static pages of the early web gave way to dynamic, interactive experiences. 
   
 ## SPA and AJAX
 
 [//]: # (The Rise of AJAX and Modern Web Applications)
-The term AJAX (Asynchronous JavaScript and XML), coined in 2005, revolutionized web development by enabling web applications to communicate with servers in the background, using the XMLHttpRequest object. Although initially designed for XML, AJAX quickly adapted to other data formats like JSON, which became more prevalent due to its simplicity and lightweight nature. This asynchronous communication allowed web pages to update content dynamically without refreshing, unlocking new paradigms in web authoring and greatly enhancing user experiences with interactive and seamless interfaces.
+The term [AJAX (Asynchronous JavaScript and XML)](https://www.w3schools.com/xml/ajax_intro.asp), coined in 2005, revolutionized web development.
+It enables web applications to communicate with servers in the background, requesting and receiving data from a server after the page has loaded.
+Although initially designed for XML, AJAX quickly adapted to other data formats like JSON, which became more prevalent due to its simplicity and lightweight nature. 
+This asynchronous communication allowed web pages to update content dynamically without refreshing, unlocking new paradigms in web authoring and greatly enhancing user experiences with interactive and seamless interfaces.
 
 [//]: # (Evolution of Web Requests: From AJAX to Fetch)
-By 2015, advancements in web technology led browser vendors to develop a more efficient method for making network requests, known as the `fetch` API. This modern approach provided a promise-based mechanism to handle responses, streamlining the process of asynchronous requests. Utilizing `fetch`, developers could send a single-page application (SPA) to the client, which would then request data as needed from a server-side API. This data could seamlessly update specific parts of the web page, improving the app's responsiveness and user engagement without reloading the entire page.
+By 2015, advancements in web technology led browser vendors to develop [a more efficient method for making network requests](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), known as the `fetch` API.
+This modern approach provided a promise-based mechanism to handle responses, streamlining the process of asynchronous requests. 
+By using `fetch`, developers could send a [single-page application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) to the client, which would then request data as needed from a server-side API. 
+This data could seamlessly update specific parts of the web page, improving the app's responsiveness and user engagement without reloading the entire page.
 
 [//]: # (The Impact of Single Page Applications &#40;SPAs&#41;)
-SPAs marked a significant shift in web development, emphasizing rich client-side interactivity. This model allowed parts of the webpage to update independently, signaling their loading status with animations such as spinning icons while waiting for data. This paradigm, heavily reliant on JavaScript frameworks like React and Angular, became incredibly popular for creating complex user interfaces that offered a desktop-like experience within a browser. SPAs managed to bring high interactivity and fluidity to web applications, albeit with challenges such as initial load times and state management complexities.
+SPAs marked a significant shift in web development, emphasizing rich client-side interactivity. 
+This model allowed parts of the webpage to update independently, signaling their loading status with animations such as spinning icons while waiting for data. 
+This paradigm, heavily reliant on JavaScript frameworks like React and Angular, became incredibly popular for creating complex user interfaces that offered a desktop-like experience within a browser. 
+SPAs managed to bring high interactivity and fluidity to web applications, albeit with challenges such as initial load times and state management complexities.
 
 [//]: # (Frameworks Facilitating SPA Development)
-As the complexity of client-side scripting increased, frameworks became essential for managing large codebases and structuring applications efficiently. AngularJS, developed by Misko Hevery at Brat Tech LLC in 2009, was one of the pioneers, followed by Ember.js in 2011. These frameworks provided robust architectures, embracing principles like Convention over Configuration and Don’t Repeat Yourself (DRY), to streamline development and maintenance of SPAs. They addressed many challenges of SPAs by offering structured ways to build and manage stateful, interactive applications efficiently.
+As mentioned, web frameworks became essential for managing large codebases and structuring applications efficiently. 
+[AngularJS](https://angularjs.org/), developed in 2009, was one of the pioneers, followed by [Ember.js](https://emberjs.com/) in 2011.
+These frameworks provided robust architectures, embracing principles like "Convention over Configuration" and "Don’t Repeat Yourself (DRY)," to streamline development and maintenance of SPAs. 
+They addressed many challenges of SPAs by offering structured ways to build and manage stateful, interactive applications efficiently.
 
 [//]: # (React: A New Approach to State Management and UI Rendering)
-React, developed by Facebook and released in 2013, introduced a novel approach to building SPAs by employing a one-way data flow and virtual DOM. This architecture allowed React to manage UI updates efficiently—only re-rendering components when actual data changes occurred, minimizing the performance costs associated with DOM manipulation. React’s component-based architecture also enabled developers to build reusable UI blocks, simplifying the development process, reducing bugs, and improving the maintainability of large applications.
+[React](https://react.dev/), developed by Facebook and released in 2013, introduced a novel approach to building SPAs by employing a one-way data flow and [virtual DOM](https://legacy.reactjs.org/docs/faq-internals.html). T
+his architecture allowed React to manage UI updates efficiently—only re-rendering components when actual data changes occurred, minimizing the performance costs associated with DOM manipulation.
+React’s component-based architecture also enabled developers to build reusable UI blocks, simplifying the development process, reducing bugs, and improving the maintainability of large applications.
 
 [//]: # (Innovations in Styling with React)
-React further innovated SPA development by integrating styles directly within components, a method that sparked considerable debate among developers. This approach argued for a modular system where style, structure, and logic are encapsulated within components, scaling more effectively for large applications. By reducing the separation of concerns traditionally seen in CSS, HTML, and JavaScript, React’s inline styling philosophy promotes a more cohesive and maintainable codebase, especially in complex projects. This componentized styling represents a significant evolution in how developers think about and build user interfaces for the web.
+React further innovated SPA development by integrating styles directly within components, a method that sparked considerable debate among developers. 
+This approach argued for a modular system where style, structure, and logic are encapsulated within components, scaling more effectively for large applications.
+By reducing the separation of concerns traditionally seen in CSS, HTML, and JavaScript, React’s inline styling philosophy promotes a more cohesive and maintainable codebase, especially in complex projects.
+This "componentized" styling represents a significant evolution in how developers think about and build user interfaces for the web.
+
+The following is an example of a React component that toggles a button's color between green and red when clicked. Note that the CSS styles are defined directly within the component, along with the JavaScript logic:
+
+{% highlight jsx linenos %}
+import React, { useState } from 'react';
+
+function ToggleButton() {
+// State to keep track of the toggle status
+const [isToggled, setIsToggled] = useState(false);
+
+// Inline styles for different states
+const buttonStyle = {
+  backgroundColor: isToggled ? 'lightcoral' : 'lightgreen',
+  padding: '10px 20px',
+  borderRadius: '5px',
+  border: 'none',
+  cursor: 'pointer',
+  color: 'white',
+  fontSize: '16px',
+  fontWeight: 'bold',
+  outline: 'none',
+  transition: 'all 0.3s ease'
+};
+
+// Function to handle button click
+const toggleButton = () => {
+  setIsToggled(!isToggled);
+};
+return (
+    <button style={buttonStyle} onClick={toggleButton}>
+      {isToggled ? 'ON' : 'OFF'}
+    </button>
+  );
+}
+
+export default ToggleButton;
+{% endhighlight %}
 
 ## WebSockets
 
 [//]: # (Introduction of WebSockets for Real-time Web Applications)
-Before WebSockets were introduced, AJAX was the primary method for asynchronous server communication in web development. However, AJAX had limitations, particularly in scenarios where the server needed to push updates to the client. This gap was evident in applications requiring real-time data updates, as servers had to wait for a new client request to send data. WebSockets, proposed to the W3C, addressed this challenge by establishing a bi-directional communication channel between the client and the server. This protocol supported both text and binary data with significantly reduced overhead compared to traditional HTTP polling methods, enabling more dynamic and responsive web applications.
+For many years, AJAX was the primary method for asynchronous server communication in web development. 
+However, AJAX had limitations, particularly in scenarios where the server needed to push updates to the client. 
+This gap was evident in applications requiring real-time data updates, as servers had to wait for a new client request to send data. 
+[WebSockets](https://en.wikipedia.org/wiki/WebSocket), proposed to the W3C, addressed this challenge by establishing a bi-directional communication channel between the client and the server.
+This protocol supported both text and binary data with significantly reduced overhead compared to traditional HTTP polling methods, enabling more dynamic and responsive web applications.
 
 [//]: # (WebSockets as a Standardized Protocol)
-The evolution of WebSockets was a significant milestone in web technology. After several iterations and enhancements, the protocol was officially recognized as IETF protocol 'RFC6455' in December 2011, and quickly implemented across all major browsers. This standardization marked a turning point, allowing developers to reliably use WebSockets to create highly interactive, real-time web applications that could compete with or even surpass desktop applications in functionality and performance. The low latency and efficient data transfer capabilities of WebSockets made them ideal for applications that required constant data exchange and immediate user interaction.
+The evolution of WebSockets was a significant milestone in web technology. 
+After several iterations and enhancements, the protocol was officially recognized as IETF protocol 'RFC6455' in December 2011, and quickly implemented across all major browsers.
+This standardization marked a turning point, allowing developers to reliably use WebSockets to create highly interactive, real-time web applications that could compete with or even surpass desktop applications in functionality and performance.
+The low latency and efficient data transfer capabilities of WebSockets made them ideal for applications that required constant data exchange and immediate user interaction.
 
 [//]: # (Transformative Impact of WebSockets on Web Interaction)
 WebSockets revolutionized how web applications were developed by facilitating a persistent, lightweight connection between the browser and the server. This connection remains open, allowing for instant data exchange without the need for repeated HTTP requests. This architecture is particularly beneficial in real-time applications such as chat platforms, collaborative tools like Google Docs, and multiplayer online games. Each message or interaction in these applications can be instantly communicated across the network, enabling a new level of interactivity and collaboration among users. The ability of WebSockets to allow multiple browsers to connect concurrently to the same service has opened up vast possibilities for real-time, collaborative experiences and applications on the web.
