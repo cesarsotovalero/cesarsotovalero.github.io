@@ -285,21 +285,24 @@ Client-side rendering made web pages more interactive by eliminating the constan
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
-flowchart RL  
-  subgraph Browser
-    direction RL
-    subgraph Computing
-       JavaScript
-    end 
-    subgraph Rendering
-            
-        HTML <--> CSS
-    end    
-  end
-  Rendering --> Computing
-  Computing --> Rendering
-  User -- request --> Browser  
-  Browser -- response --> User
+flowchart
+    subgraph Browser["Browser"]
+        subgraph UserInteraction["User Interaction"]
+            JS["JavaScript"]
+        end
+        subgraph RenderEngine["Rendering Engine"]
+            HTML["HTML"] --> CSS["CSS"]
+        end
+    end
+    UserInteraction -->|Manipulates| RenderEngine
+    UserInteraction -->|Updates DOM| HTML
+    CSS
+    User -- "User Request" --> Browser
+    Browser -- "Rendered Content" --> User
+
+    style Browser fill:#f9f,stroke:#333,stroke-width:2px
+    style RenderEngine fill:#ccf,stroke:#333,stroke-width:2px
+    style UserInteraction fill:#cff,stroke:#333,stroke-width:2px
 ```
 
 The following is an example of a simple JavaScript function `validatePassword` that takes a password input and alerts the user if it is less than eight characters long, note that all the execution of this logic is done in the browser:
@@ -388,18 +391,20 @@ Yet, this approach came with significant drawbacks, particularly concerning secu
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
-flowchart LR
-  Plugin -- execute --> R(Runtime)
-  R(Runtime) -- response --> Plugin
-  subgraph Browser    
-    subgraph HTML
-        Plugin   
-    end
-  end  
-  subgraph Third-Party            
-    R(Runtime)
-  end  
-  User -- request --> HTML
+sequenceDiagram
+    participant Browser
+    participant Plugin
+    participant JVM
+    participant Applet
+
+    Browser->>+Plugin: Detect applet tag
+    Plugin->>+JVM: Initialize JVM
+    JVM->>+Applet: Load Applet (FileApplet.class)
+    Applet-->>-JVM: Execute Applet
+    JVM-->>-Plugin: Render Applet in Browser
+    Plugin-->>-Browser: Display Applet Content
+
+    Note over Browser, Applet: Plugin required for Applet execution
 ```
 
 The plugin era began to wane with significant shifts in the technology landscape.
@@ -546,6 +551,25 @@ This gap was evident in applications requiring real-time data updates, as server
 [WebSockets](https://en.wikipedia.org/wiki/WebSocket), proposed to the W3C, addressed this challenge by establishing a bi-directional communication channel between the client and the server.
 This protocol supported both text and binary data with significantly reduced overhead compared to traditional HTTP polling methods, enabling more dynamic and responsive web applications.
 
+```mermaid
+%%{init: {'theme':'base'}}%%
+sequenceDiagram
+    participant Client
+    participant Server
+
+    Client->>+Server: HTTP Request (Upgrade Header)
+    Server-->>-Client: HTTP Response (101 Switching Protocols)
+
+    Note over Client, Server: WebSocket Connection Established
+
+    Client->>Server: Send Message
+    Server->>Client: Receive Message
+    Server->>Client: Send Update
+    Client->>Server: Receive Update
+
+    Note over Client, Server: Persistent Bi-Directional Communication
+```
+
 [//]: # (WebSockets as a Standardized Protocol)
 The evolution of WebSockets was a significant milestone in web technology. 
 After several iterations and enhancements, the protocol was officially recognized as IETF protocol 'RFC6455' in December 2011, and quickly implemented across all major browsers.
@@ -553,12 +577,52 @@ This standardization marked a turning point, allowing developers to reliably use
 The low latency and efficient data transfer capabilities of WebSockets made them ideal for applications that required constant data exchange and immediate user interaction.
 
 [//]: # (Transformative Impact of WebSockets on Web Interaction)
-WebSockets revolutionized how web applications were developed by facilitating a persistent, lightweight connection between the browser and the server. This connection remains open, allowing for instant data exchange without the need for repeated HTTP requests. This architecture is particularly beneficial in real-time applications such as chat platforms, collaborative tools like Google Docs, and multiplayer online games. Each message or interaction in these applications can be instantly communicated across the network, enabling a new level of interactivity and collaboration among users. The ability of WebSockets to allow multiple browsers to connect concurrently to the same service has opened up vast possibilities for real-time, collaborative experiences and applications on the web.
+WebSockets revolutionized how web applications were developed by facilitating a persistent, lightweight connection between the browser and the server. 
+The connection remains open (usually over TCP port number `443`), allowing for instant data exchange without the need for repeated HTTP requests.
+This architecture is particularly beneficial in real-time applications such as chat platforms, collaborative tools like Google Docs, and multiplayer online games.
+Each message or interaction in these applications can be instantly communicated across the network, enabling a new level of interactivity and collaboration among users. 
+The ability of WebSockets to allow multiple browsers to connect concurrently to the same service has opened up vast possibilities for real-time, collaborative experiences and applications on the web.
 
 ## Decentralized Web
 
 [//]: # (The Rise of Blockchain and Decentralization in Web 3.0)
 As Web 3.0 emerged in the late 2010s and early 2020s, it became intrinsically linked with blockchain technology and the broader cryptocurrency movement. This new era of the internet, often referred to as the decentralized web, prioritizes concepts such as decentralization, openness, and enhanced user utility. Blockchain technology, at the core of this movement, provides a distributed ledger that records transactions across multiple computers in such a way that the registered transactions cannot be altered retroactively. This immutable and transparent nature of blockchain facilitates trust and security, fundamental aspects that are driving the shift towards a decentralized internet structure where power and control are distributed across the network rather than held by a few centralized entities.
+
+```mermaid
+%%{init: {'theme':'base'}}%%
+graph TD
+User1[User 1] -->|Interacts| dApp1[Decentralized Application]
+User2[User 2] -->|Interacts| dApp2[Decentralized Application]
+User3[User 3] -->|Interacts| dApp1
+
+    dApp1 -->|Uses| BC[Blockchain]
+    dApp2 -->|Uses| BC
+
+    BC -->|Distributes Data| Node1[Node 1]
+    BC -->|Distributes Data| Node2[Node 2]
+    BC -->|Distributes Data| Node3[Node 3]
+    BC -->|Distributes Data| Node4[Node 4]
+
+    Node1 -->|Validates Transactions| BC
+    Node2 -->|Validates Transactions| BC
+    Node3 -->|Validates Transactions| BC
+    Node4 -->|Validates Transactions| BC
+
+    subgraph "Decentralized Network"
+    Node1
+    Node2
+    Node3
+    Node4
+    end
+
+    style BC fill:#f9f,stroke:#333,stroke-width:2px
+    style dApp1 fill:#ccf,stroke:#333,stroke-width:2px
+    style dApp2 fill:#ccf,stroke:#333,stroke-width:2px
+    style User1 fill:#cff,stroke:#333,stroke-width:2px
+    style User2 fill:#cff,stroke:#333,stroke-width:2px
+    style User3 fill:#cff,stroke:#333,stroke-width:2px
+```
+
 
 [//]: # (Blockchain's Role in Enhancing Data Security and Privacy)
 Blockchain technology not only supports cryptocurrencies like Bitcoin and Ethereum but also has profound implications for how data is handled and controlled on the internet. By leveraging decentralization, blockchain allows for data to be stored across a network of nodes, ensuring that no single point of failure can compromise the system's integrity. This method enhances data security and user privacy significantly. Moreover, blockchain enables smart contracts, which are self-executing contracts with the terms of the agreement directly written into lines of code. These contracts automate and enforce agreements without the need for intermediaries, thus reducing the risk of fraud and lowering transaction costs. This capability is pivotal for developing decentralized applications (dApps) that operate on a peer-to-peer network, further enhancing user empowerment and control over their online interactions and transactions.
@@ -576,6 +640,19 @@ The [Emscripten](https://emscripten.org/) tool, introduced in 2014, marked a piv
 
 [//]: # (The Advent of WebAssembly)
 WebAssembly, or wasm, was developed as a native runtime for the web, allowing developers to write applications in languages such as C, Rust, or Ruby, and compile them into a `.wasm` file. This file is then served from a web server and executed in the browser, with JavaScript often playing a role in bootstrapping the application. This innovation brought the possibility of running high-performance, native applications directly within the browser environment, reminiscent of the capabilities provided by Java Applets in the 1990s. WebAssembly addresses the inefficiencies of transpiling languages like Java or TypeScript to JavaScript, which was traditionally the only way to run applications in browsers.
+
+```mermaid
+%%{init: {'theme':'base'}}%%
+flowchart TB
+    src[Source Code in C/Rust/Other] -->|Compile| wasmFile[.wasm File]
+    wasmFile -->|Serve| server[Web Server]
+    server -->|Download| browser[Browser]
+
+    subgraph browser [Browser Execution Environment]
+        js[JavaScript Bootstrap] --> wasmModule[WebAssembly Module]
+        wasmModule -->|Interact| dom[DOM/APIs]
+    end
+```
 
 [//]: # (Enhancing Security and Performance with WebAssembly)
 One of the significant advantages of WebAssembly is its robust security model, which prevents binaries from accessing memory outside their allocated space through Software Fault Isolation (SFI) policies. This isolation makes WebAssembly more secure compared to traditional JavaScript environments. Furthermore, WebAssembly modules are more compact and efficient than virtual machines or containers, making them particularly well-suited for environments where network efficiency is critical. Today, WebAssembly is used for a diverse range of browser tasks, from gaming to crypto-mining, and has proven especially effective for short-running tasks on backend platforms, such as Function-as-a-Service (FaaS) offerings.
