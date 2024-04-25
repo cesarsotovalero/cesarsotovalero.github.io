@@ -284,17 +284,21 @@ Client-side rendering made web pages more interactive by eliminating the constan
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
-graph TB
-subgraph "Client-Side Rendering"
-  subgraph "Browser"
-    A[HTML]
-    
-    subgraph "Browser"
-      B[JavaScript]
-      C[JavaScript]
-    end
-  end  
-end
+flowchart RL  
+  subgraph Browser
+    direction RL
+    subgraph Computing
+       JavaScript
+    end 
+    subgraph Rendering
+            
+        HTML <--> CSS
+    end    
+  end
+  Rendering --> Computing
+  Computing --> Rendering
+  User -- request --> Browser  
+  Browser -- response --> User
 ```
 
 The following is an example of a simple JavaScript function `validatePassword` that takes a password input and alerts the user if it is less than eight characters long, note that all the execution of this logic is done in the browser:
@@ -325,10 +329,10 @@ The following is an example of a simple JavaScript function `validatePassword` t
 {% endhighlight %}
 
 [//]: # (Competition and Security Concerns in Scripting)
-During JavaScript's early days, tech giants like Microsoft and Adobe were also venturing into dynamic client-side scripting.
+During JavaScript's early days, tech giants like Microsoft and Adobe were also venturing into **dynamic client-side scripting**.
 Microsoft introduced technologies such as [ActiveX](https://en.wikipedia.org/wiki/ActiveX), along with scripting languages like JScript and VBScript, 
 while Adobe developed ActionScript for its Flash authoring tool. 
-Interestingly, none of this technologies ended up going anywhere and today are practically deprecated. 
+Interestingly, none of these technologies ended up going anywhere and today are practically deprecated. 
 Indeed, JavaScript became the de facto standard for client-side scripting.
 One of the reasons is that these scripting languages were proprietary, raising significant security concerns because they could execute any code downloaded from the internet, potentially harming the user's system.
 To mitigate these risks, browsers implemented strict containment measures.
@@ -338,7 +342,7 @@ However, some scripts could still bypass these protections through techniques th
 The potential of JavaScript extended significantly with the advent of [AJAX (Asynchronous JavaScript and XML)](https://www.w3schools.com/xml/ajax_intro.asp), particularly after its use in Google's products like Gmail and Google Maps in the early 2000s.
 AJAX was initially made possible by the [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), initially created by Microsoft for its Outlook Web App in 1998.
 This technology allowed web pages to request additional data from servers without needing a page refresh, leading to more dynamic and responsive web applications. 
-Today, AJAX is a fundamental component of modern web development, enabling continuous data exchange between browsers and servers and significantly enhancing the user experience on the internet.
+Today AJAX is a fundamental component of modern web development, enabling continuous data exchange between browsers and servers and significantly enhancing the user experience on the internet.
 
 [//]: # (Node.js: Unifying Client and Server-Side Development)
 The development landscape took a dramatic turn with the creation of [Node.js](https://nodejs.org/en) in May 2009.
@@ -353,11 +357,59 @@ This approach helped in delivering a more interactive and engaging web experienc
 
 ## Java Applets and Plugins
 
-During the late 1990s, [Java Applets](https://www.oracle.com/java/technologies/javase/9-deprecated-features.html) were widely believed to be the future of web applications. These applets allowed the execution of Java bytecode directly on the client side, integrating seamlessly within an HTML page through applet tags. This functionality promised to enrich the web experience by offering more sophisticated interactivity directly in the browser, such as playing games, filling interactive forms, and running complex web applications. However, to leverage these capabilities, users were required to install a plugin that would facilitate the execution of these applets on their devices.
+During the late 1990s, [Java Applets](https://www.oracle.com/java/technologies/javase/9-deprecated-features.html) were widely believed to be the future of web applications. 
+These applets allowed the execution of Java bytecode directly on the client side.
+Apples integrated seamlessly within an HTML page through an `applet` tag.
+This functionality promised to enrich the web experience by offering more sophisticated interactivity directly in the browser.
+For example, Applets allowed playing games, filling interactive forms, and running complex web applications. 
+However, to leverage these capabilities, users were required to install a plugin that would facilitate the execution of these applets on their devices.
 
-The reliance on plugins was not unique to Java; it was a common pattern in the web's evolution. Technologies such as Shockwave, Flash, Director, Real Player, and QuickTime also depended on plugins to enhance browser capabilities and deliver content that native web technologies at the time could not handle. These plugins were essential for providing rich multimedia experiences and interactive content on websites, filling a crucial gap in browser technology. Yet, this approach came with significant drawbacks, particularly concerning security vulnerabilities, which were a constant source of headaches for developers and users alike.
+Here's an example of an HTML page embedding a Java Applet. ote that in the browser cannot execute the `FileApplet.class` natively. To do so, it needs to have the JVM and a dedicated plugin installed. Therefore, Applets are platform-dependent:
 
-The plugin era began to wane with significant shifts in the technology landscape, notably marked by Apple's 2007 release of the iPhone. Apple explicitly decided against supporting Java Applets, Shockwave, Flash, and other plugins on the new device, urging developers to use JavaScript and HTML for creating web applications. This stance effectively signaled the end of the plugin paradigm. As mobile internet usage surged and security concerns grew, the industry moved towards more secure, native web technologies, leading to the gradual decline of plugins. This transition underscored a broader trend towards enhancing browser capabilities and standardizing web technologies to create a safer and more seamless user experience.
+{% highlight html linenos %}
+<html>
+<head>
+    <title>Simple File Reader Applet</title>
+</head>
+<body>
+    <applet code="FileApplet.class" width="300" height="300">
+        Your browser does not support Java Applets or Java is not enabled.
+    </applet>
+</body>
+</html>
+{% endhighlight %}
+
+The reliance on plugins during this period was not unique to Java.
+Plugins was a common pattern back then.
+Technologies such as Shockwave, Flash, Director, Real Player, and QuickTime also depended on plugins to enhance browser capabilities and deliver content that native web technologies at the time could not handle. 
+These plugins provided rich multimedia experiences and interactive content on websites, filling a crucial gap in browser technology.
+Yet, this approach came with significant drawbacks, particularly concerning security vulnerabilities, which were a constant source of headaches for developers and users alike.
+
+```mermaid
+%%{init: {'theme':'base'}}%%
+flowchart RL  
+  subgraph Browser
+    direction RL
+    subgraph Computing
+       JavaScript
+    end 
+    subgraph Rendering
+            
+        HTML <--> CSS
+    end    
+  end
+  Rendering --> Computing
+  Computing --> Rendering
+  User -- request --> Browser  
+  Browser -- response --> User
+```
+
+The plugin era began to wane with significant shifts in the technology landscape.
+Notably, in 2007 Apple released the iPhone and explicitly decided against supporting Java Applets, Shockwave, Flash, and other plugins on the new device.
+This pushed developers to use JavaScript and HTML for creating web applications instead.
+And that was the end of the plugin paradigm. 
+As mobile internet usage surged and security concerns grew, the industry moved towards more secure, native web technologies.
+This transition underscored a broader trend towards enhancing browser capabilities and standardizing web technologies to create a safer and more seamless user experience.
 
 ## CSS and Dynamic Web Design
 
