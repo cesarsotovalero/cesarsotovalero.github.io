@@ -653,7 +653,12 @@ This approach proved that client-side code performance could be substantially im
 The success of Emscripted laid the groundwork for the development and standardization of [WebAssembly](https://webassembly.org/) by the World Wide Web Consortium (W3C) in 2015.
 
 [//]: # (The Advent of WebAssembly)
-WebAssembly (a.k.a wasm), was developed as a native runtime for the web, allowing developers to write applications in languages such as C, Rust, or Ruby, and compile them into a `.wasm` file. This file is then served from a web server and executed in the browser, with JavaScript often playing a role in bootstrapping the application. This innovation brought the possibility of running high-performance, native applications directly within the browser environment, reminiscent of the capabilities provided by Java Applets in the 1990s. WebAssembly addresses the inefficiencies of transpiling languages like Java or TypeScript to JavaScript, which was traditionally the only way to run applications in browsers.
+WebAssembly (a.k.a wasm), was developed as a native runtime for the web.
+It allows developers to write applications in languages such as C, Rust, or Ruby, and compile them into a `.wasm` file. 
+This file is then served from a web server and executed in the browser, with JavaScript often playing a role in bootstrapping the application.
+This innovation brought the possibility of running high-performance, native applications directly within the browser environment, reminiscent of the capabilities provided by Java Applets in the 1990s. 
+
+> WebAssembly addresses the inefficiencies of transpiling languages like Java or TypeScript to JavaScript, which was traditionally the only way to run applications in browsers.
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
@@ -669,7 +674,10 @@ flowchart TB
 ```
 
 [//]: # (Enhancing Security and Performance with WebAssembly)
-One of the significant advantages of WebAssembly is its robust security model, which prevents binaries from accessing memory outside their allocated space through Software Fault Isolation (SFI) policies. This isolation makes WebAssembly more secure compared to traditional JavaScript environments. Furthermore, WebAssembly modules are more compact and efficient than virtual machines or containers, making them particularly well-suited for environments where network efficiency is critical. Today, WebAssembly is used for a diverse range of browser tasks, from gaming to crypto-mining, and has proven especially effective for short-running tasks on backend platforms, such as Function-as-a-Service (FaaS) offerings.
+One of the significant advantages of WebAssembly is its robust security model, which prevents binaries from accessing memory outside their allocated space through [Software Fault Isolation (SFI)](https://www.geeksforgeeks.org/what-is-software-fault-isolation/) policies. 
+This isolation makes WebAssembly more secure compared to traditional JavaScript environments.
+Furthermore, WebAssembly modules are more compact and efficient than virtual machines or containers, making them particularly well-suited for environments where network efficiency is critical. 
+Today, WebAssembly is used for a diverse range of browser tasks, from gaming to crypto-mining, and has proven especially effective for short-running tasks on backend platforms, such as Function-as-a-Service (FaaS) offerings.
 
 [//]: # (WebAssembly's Role in Modern Web Applications)
 WebAssembly has significantly broadened the scope of what can be achieved with web applications, enabling complex software like AutoCAD and Adobe Photoshop to be ported directly into the browser as highlighted in [Adobe's announcement](https://twitter.com/Adobe/status/1453034805004685313?s=20&t=Zf1N7-WmzecA0K4V8R69lw). This capability transforms web applications to perform functions traditionally reserved for desktop applications, pushing the boundaries of web software and altering our understanding of its potential. As WebAssembly continues to evolve, it promises to further revolutionize the development and performance of applications across the web.
