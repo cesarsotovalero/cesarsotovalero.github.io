@@ -1,7 +1,7 @@
 ---
 layout: post
 title: On the Rise, Decline, and Persistence of Web Technologies
-subtitle: From Static HTML to WebAssembly
+subtitle: From Static HTML Pages to WebAssembly
 tags: web
 description: |
   The web is the only platform that has been continuously transformed and evolved on a global scale over the last 30 years. Its impact on society is crazy high. Some of the best minds in the world are working on advancing web technologies. Over the years, we've seen various technological solutions emerge; some were revolutionary, while others didn't pass the test of time. This article explores the evolution of web technologies from the 1990s to the present, with a focus on the engineering paradigms that marked inflection points in web's history. Those who don't know tech history are doomed to repeat past engineering mistakes. 
@@ -22,33 +22,33 @@ published: false
 ---
 
 I've been doing some frontend web development lately as part of my daily job.[^1]
-Along the way, I've reflected on how web technologies have changed and evolved over time.
-While digging into this, I realized how brilliant are some of the underlying solutions that fuelj the web.
-I decided to write about them in an effort to gain a better perspective when putting them together.
-But this blog post is not about [the history of the internet](https://en.wikipedia.org/wiki/History_of_the_Internet), which has already been well documented.
+Along the way, I've reflected on how the web technologies that we all use every day have changed and evolved over time.
+While digging into this topic, I realized how brilliant some the underlying solutions that fuel the web are (from a engineering perspective).
+So I decided to write about all of them in a single article.
+What follows is my modest attempt to wide our perspective through a sharper understanding of how the pieces in the web puzzle match together.
+As a disclaimer, this blog post is not about [the history of the internet](https://en.wikipedia.org/wiki/History_of_the_Internet), which has already been well documented.
 Instead, I focus on the different architectures and patterns that have radically changed the way web technologies are developed.
-This includes new paradigms that have opened up possibilities for what was previously impossible.
-From those that became obsolete, like Java Applets, to those that have stood the test of time, like Static HTML, and the recent emergence of WebAssembly.
-If you are a software developer, a web developer, or just curious about how the web works internally, you're likely to find this post interesting.
-Let's dive in!
+This includes new paradigms that have opened up possibilities for what was previously impossible, like Single Page Applications (SPAs) and AJAX.
+From those that became obsolete, like Java Applets, to those that have stood the test of time, like Static HTML, and the recent emergence of WebAssembly and the still ongoing attempt to decentralize the web.
+If you are a ~~nerd~~ engineer, a web developer, or just curious about how the web works internally, you're likely to find this post interesting.
+This is gonna be a long one, so grab a coffee and let's go!
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2024/2024-01-12/infinite-park.jpg alt: "The World Wide Web, and infinite park of data continuously streamed" %}
   <figcaption class="stroke"> 
-    &#169; The World Wide Web, this almost infinity data streaming platform, has been transformed and evolved at unprecedented speed. Picture of the art piece titled "Infinite Park" exposed at <a href="https://maps.app.goo.gl/75AGyCg5QpzjQeFR8">Stockholm's Paradox Museum</a>.
+    &#169; The World Wide Web, like a seeming infinity data pumping platform, has been transformed and evolved at unprecedented speed. The picture corresponds to the art piece titled "Infinite Park" exposed at <a href="https://maps.app.goo.gl/75AGyCg5QpzjQeFR8">Stockholm's Paradox Museum</a>.
   </figcaption>
 </figure>
 
 # The World Wide Web
 
 The [World Wide Web (WWW)](https://en.wikipedia.org/wiki/World_Wide_Web), as we know it today, is basically a vast collection of data accessible through **the internet**.
-The internet ensures that this data is constantly transmitted over from servers to clients.
-Most users perceive the web through the data rendered by **web browsers**.
+The internet ensures that the data (i.e., `0`s and `1`s), is constantly transmitted from servers to clients and vice versa.
+Most users perceive the web through the data that is rendered by **web browsers**.
 Browsers are software applications that rely on various **web technologies** to transform the data into more established and human-friendly web pages.
-These three core layers (highlighted in bold) are responsible of keeping the web running today.
+These three core layers (highlighted above in bold) are responsible for keeping the web alive.
 This post dives deep into the last layer: web technologies.
-
-But before that, let's take a look at the big picture:
+But before that, let's take a look at the big picture.
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
@@ -65,7 +65,7 @@ end
 
 {% badge /img/badges/leonard-kleinrock-dissertation.png 140 https://www.lk.cs.ucla.edu/data/files/Kleinrock/Information%20Flow%20in%20Large%20Communication%20Nets.pdf %}
 
-Most agree that the internet was created in the 1960s by [ARPANET](https://en.wikipedia.org/wiki/ARPANET), a research project supported by the [DARPA](https://en.wikipedia.org/wiki/DARPA) US agency.[^2]
+Most sources agree that the internet was created in the 1960s by [ARPANET](https://en.wikipedia.org/wiki/ARPANET), a research project supported by the [DARPA](https://en.wikipedia.org/wiki/DARPA) agency in the United States.[^2]
 The concept of the internet itself dates back to the first paper about packet switching written in 1961 by the american engineer [Leonard Kleinrock](https://www.lk.cs.ucla.edu/index.html).
 In his PhD thesis titled “Information Flow in Large Communication Nets”, he proposed a network of computers that could send data to each other. 
 And that's what the internet is at its core. 
@@ -274,6 +274,8 @@ Web technologies like PHP, ASP, Ruby on Rails, Node.js, WordPress, and ASP.NET C
 
 ## Client-Side Rendering
 
+{% badge /img/badges/JavaScript_Logo.svg 140 https://developer.mozilla.org/en-US/docs/Web/JavaScript %}
+
 [//]: # (The Evolution of JavaScript and Dynamic Web Content)
 Client-side rendering is the process of generating web content directly in the user's browser.
 To do so, HTML was clearly no enough, a real programming language was necessary.
@@ -301,9 +303,6 @@ flowchart
     CSS
     User -- "HTTP Request" --> Browser
     Browser -- "Rendered Content" --> User
-
-    style RenderEngine fill:#ccf,stroke:#333
-    style UserInteraction fill:#ffcccc,stroke:#333
 ```
 
 The following is an example of a simple JavaScript function `validatePassword` that takes a password input and alerts the user if it is less than eight characters long, note that all the execution of this logic is done in the browser:
@@ -361,6 +360,8 @@ However, to enrich the user experience, websites occasionally implement a mix of
 This approach helped in delivering a more interactive and engaging web experience without compromising security.
 
 ## Java Applets and Plugins
+
+{% badge /img/badges/JavaApplet_Loading.png 140 https://www.oracle.com/java/technologies/javase/9-deprecated-features.html %}
 
 During the late 1990s, [Java Applets](https://www.oracle.com/java/technologies/javase/9-deprecated-features.html) were widely believed to be the future of web applications. 
 These applets allowed the execution of Java bytecode directly on the client side.
@@ -456,10 +457,7 @@ flowchart TB
   Page2 --- Style1
   Page3 --- Style1
   Page4 --- Style2
-  
-  style HTML fill:#ccf,stroke:#333
-  style CSS fill:#ffcccc,stroke:#333
-  ```
+```
 
 [//]: # (Revolutionizing Web Design with CSS)
 CSS's introduction was a response to the growing demand for more dynamic and stylistically diverse websites.
@@ -643,6 +641,8 @@ For example, each JavaScript engine must parse and recompile the code at runtime
 Additionally, JavaScript's lack of memory isolation poses security risks by potentially allowing the extraction of information from other processes. 
 [As I mentioned before](../blog/the-evolution-of-the-web-from-html-to-webassembly.html#java-applets-and-plugins), attempts to replace or supplement JavaScript with other languages, such as Java Applets, Microsoft ActiveX, and Silverlight, have historically failed due to security concerns and lack of community consensus among browser vendors.
 
+{% badge /img/badges/WebAssembly_Logo.svg 140 https://webassembly.org/ %}
+
 [//]: # (Emscripten and the Asm.js Experiment)
 In 2014, the [Emscripten](https://emscripten.org/) technology represented the most solid attempt in overcoming JavaScript's limitations.
 It utilized `asm.js`, a [strict subset of JavaScript](https://en.wikipedia.org/wiki/Asm.js) designed for compiling low-level languages like C into JavaScript.
@@ -651,7 +651,7 @@ This approach leveraged [LLVM's ahead-of-time optimizations](https://en.wikipedi
 This approach proved that client-side code performance could be substantially improved through careful language design and standardization. 
 The success of Emscripted laid the groundwork for the development and standardization of [WebAssembly](https://webassembly.org/) by the World Wide Web Consortium (W3C) in 2015.
 
-> WebAssembly addresses the inefficiencies of transpiling languages like Java or TypeScript to JavaScript, which was traditionally the only way to run applications in browsers.
+> "WebAssembly addresses the inefficiencies of transpiling languages like Java or TypeScript to JavaScript, which was traditionally the only way to run applications in browsers."
 
 [//]: # (The Advent of WebAssembly)
 WebAssembly (a.k.a wasm), was developed as a native runtime for the web.
@@ -676,32 +676,25 @@ flowchart TB
 One of the significant advantages of WebAssembly is its robust security model, which prevents binaries from accessing memory outside their allocated space through [Software Fault Isolation (SFI)](https://www.geeksforgeeks.org/what-is-software-fault-isolation/) policies. 
 This isolation makes WebAssembly more secure compared to traditional JavaScript environments.
 Furthermore, WebAssembly modules are more compact and efficient than virtual machines or containers, making them particularly well-suited for environments where network efficiency is critical. 
-Today, WebAssembly is used for a diverse range of browser tasks, from gaming to crypto-mining, and has proven especially effective for short-running tasks on backend platforms, such as Function-as-a-Service (FaaS) offerings.
+Today, WebAssembly is used for a diverse range of browser tasks, from gaming to crypto-mining, and has proven especially effective for short-running tasks on backend platforms, such as offerings.
 
 [//]: # (WebAssembly's Role in Modern Web Applications)
 WebAssembly has significantly broadened the scope of what can be achieved with web applications, enabling complex software like AutoCAD and Adobe Photoshop to be ported directly into the browser as highlighted in [Adobe's announcement](https://twitter.com/Adobe/status/1453034805004685313?s=20&t=Zf1N7-WmzecA0K4V8R69lw). 
 This capability transforms web applications to perform functions traditionally reserved for desktop applications, pushing the boundaries of web software and altering our understanding of its potential. 
 As WebAssembly continues to evolve, it promises to further revolutionize the development and performance of applications across the web.
 
-# Lessons Learned
+# Summary
 
-In the evolving landscape of web technologies, while certain older technologies like applets and plugins have become obsolete, many foundational methods remain relevant and effective for specific needs today. 
-Static HTML, for example, continues to be the optimal solution for simple, infrequently updated content such as a restaurant menu.
-its simplicity and efficiency are unmatched even in 2024. Server Side Rendering (SSR) remains invaluable for generating product catalogs and other content that benefits from being immediately accessible by search engines, screen readers, and accessibility tools, ensuring a broad and inclusive reach. Technologies like XML HTTP Request and `fetch` are still essential for adding minimal interactivity to web pages, such as autocomplete or autosuggest features, enhancing user experience without the complexity of more advanced scripts. Websockets are the go-to solution for implementing real-time notifications, providing instantaneous communication crucial for dynamic, interactive applications. Lastly, WebAssembly plays a critical role in deploying performance-intensive native web applications, allowing developers to utilize high-level programming languages to 
-build complex software directly in the browser. Collectively, these technologies continue to solve a diverse range of problems, demonstrating their lasting utility in the digital domain.
+There are valuable lessons to be learned from the evolution of web technologies.
+These include the need of agreement among vendors for a technology to succeed, the constant oscillations between centralizing computer power in the servers or distributing it among users, and the need of a secure and efficient runtime for the web. Nevertheless, getting rid JavaScript is still very hard.
 
-# A Few Parting Thoughts
+But, for now, I'd like to leave you with a few observations:
 
-The web is just the latest in a series in a series of oscillations that our industry has gone through since 1960s. These oscillations move back and forth between putting all the computer power in central servers and putting all the computing power out at the terminals.
-
-We’ve seen several of these oscillations just in the last decade or so since the web became prominent. At first, we thought all the computer power would be in server farms, and the browsers would be stupid. Then we started putting applets in the browsers. But we didn’t like that, so we moved dynamic content back to the servers. But then we didn’t like that, so we invented Web 2.0 and moved lots of processing back into the browser with Ajax and JavaScript. We went so far as to create huge applications written to execute in the browsers. And now we’re all excited about pulling that JavaScript back into the server with Node…
-
-And so the story goes. We can’t seem to figure out where we want the computing power. We go back and forth between cetralizing it and distributing it. And, I imagine, those oscillations will continue for some time to come.
-
-[//]: # (below is an example of how to write this section properly)
-There are valuable lessons to be learned from all of this -- including the need for real, meaningful support (by large corporations) of the projects they rely so heavily upon.
-
-But, for now, I'd like to leave you with a few observations.
+1. **Simplicity and Efficiency**: Foundational web technologies like static HTML and server-side rendering remain useful for delivering content that rarely changes or requires dynamic processing. These technologies continue to be effective and cost-efficient solutions even in 2024 for many use cases.
+2. **User Experience**: From the introduction of CSS for enhanced web aesthetics to the development of SPAs for dynamic user interactions, the focus on improving user experience has led to the creation of more interactive and engaging web applications.
+3. **Interactivity and Real-Time Communication**: Client-side rendering, AJAX, and WebSockets have transformed the way users interact with web content, providing seamless and responsive experiences that rival desktop applications.
+4. **Security and Performance**: Technologies like WebAssembly offer robust security models and enhanced performance, enabling developers to create high-performance applications with improved security features.
+5. **Innovation and Adaptability**: Developers must stay adaptable and embrace new technologies like WebAssembly and dApps to create cutting-edge web applications that meet the expectations of modern users.
 
 # Resources
 
@@ -710,9 +703,9 @@ But, for now, I'd like to leave you with a few observations.
 
 # Footnotes
 
-[^1]: BTW, my sincere appreciation to the frontend and UI devs. What you guys do in the trenches is really hard. I ~~probably~~ never would be able to make a decent living as a frontend.
+[^1]: BTW, my sincere appreciation to you if you're a frontend or UI web designer. What you do in the trenches is really hard. I ~~probably~~ never would be able to make a decent living out of it.
 
-[^2]: [DARPA](https://www.darpa.mil/) (Defense Advanced Research Projects Agency) is essentially a military research agency funded by the US government. It still exists and is responsible for the development of not only the internet but other technologies like GPS, drones, and even the first computer mouse. It's sad that the internet was not created in a public university, but that's life.
+[^2]: [DARPA](https://www.darpa.mil/) (Defense Advanced Research Projects Agency) is essentially a military research project funded by the US government. It still exists and is responsible for the development of not only the internet in the 60s but other technologies like GPS, drones, and even the first computer mouse. It's sad that the internet was not created in a public university as it should, but that's it. 
 
 [^3]: Tim Berners-Lee was knighted by Queen Elizabeth II in 2004, so now we should call him "sir" to be more exact. People gets promoted dear reader, the sky is the limit.    
 
