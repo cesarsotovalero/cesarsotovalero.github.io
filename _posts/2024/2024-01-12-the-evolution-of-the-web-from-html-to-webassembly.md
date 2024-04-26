@@ -32,7 +32,6 @@ From those that became obsolete, like Java Applets, to those that have stood the
 If you are a software developer, a web developer, or just curious about how the web works internally, you're likely to find this post interesting.
 Let's dive in!
 
-[//]: # (The World Wide Web, and infinite park of data continuously streamed)
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2024/2024-01-12/infinite-park.jpg alt: "The World Wide Web, and infinite park of data continuously streamed" %}
   <figcaption class="stroke"> 
@@ -40,13 +39,16 @@ Let's dive in!
   </figcaption>
 </figure>
 
-# The Three Layers of The Web
+# The World Wide Web
 
 The [World Wide Web (WWW)](https://en.wikipedia.org/wiki/World_Wide_Web), as we know it today, is basically a vast collection of data accessible through **the internet**.
-The internet ensures that this data is constantly transmitted over devices (mostly via cables) and rendered by **web browsers**.
+The internet ensures that this data is constantly transmitted over from servers to clients.
+Most users perceive the web through the data rendered by **web browsers**.
 Browsers are software applications that rely on various **web technologies** to transform the data into more established and human-friendly web pages.
-These three core layers keep the web running today.
-And this post is mostly about the last layer.
+These three core layers (highlighted in bold) are responsible of keeping the web running today.
+This post dives deep into the last layer: web technologies.
+
+But before that, let's take a look at the big picture:
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
@@ -147,7 +149,7 @@ This approach is useful for applications that require high interactivity and rea
 SSR offers faster initial page loads and SEO benefits by pre-rendering HTML on the server.
 CSR provides a more dynamic and interactive user experience at the expenses of slower initial loads and SEO challenges due to content being rendered on the client's browser.
 
-# Timeline
+# Timeline of Web Technologies
 
 The following timeline illustrates the evolution of web technologies from the 1990s to the present, highlighting key developments that have changed the modern web landscape.
 
@@ -297,12 +299,11 @@ flowchart
     UserInteraction -->|Manipulates| RenderEngine
     UserInteraction -->|Updates DOM| HTML
     CSS
-    User -- "User Request" --> Browser
+    User -- "HTTP Request" --> Browser
     Browser -- "Rendered Content" --> User
 
-    style Browser fill:#f9f,stroke:#333,stroke-width:2px
-    style RenderEngine fill:#ccf,stroke:#333,stroke-width:2px
-    style UserInteraction fill:#cff,stroke:#333,stroke-width:2px
+    style RenderEngine fill:#ccf,stroke:#333
+    style UserInteraction fill:#ffcccc,stroke:#333
 ```
 
 The following is an example of a simple JavaScript function `validatePassword` that takes a password input and alerts the user if it is less than eight characters long, note that all the execution of this logic is done in the browser:
@@ -455,6 +456,9 @@ flowchart TB
   Page2 --- Style1
   Page3 --- Style1
   Page4 --- Style2
+  
+  style HTML fill:#ccf,stroke:#333
+  style CSS fill:#ffcccc,stroke:#333
   ```
 
 [//]: # (Revolutionizing Web Design with CSS)
@@ -545,10 +549,10 @@ export default ToggleButton;
 ## WebSockets
 
 [//]: # (Introduction of WebSockets for Real-time Web Applications)
-For many years, AJAX was the primary method for asynchronous server communication in web development. 
-However, AJAX had limitations, particularly in scenarios where the server needed to push updates to the client. 
-This gap was evident in applications requiring real-time data updates, as servers had to wait for a new client request to send data. 
-[WebSockets](https://en.wikipedia.org/wiki/WebSocket), proposed to the W3C, addressed this challenge by establishing a bi-directional communication channel between the client and the server.
+For many years, AJAX was the primary technology for asynchronous server communication in web development. 
+However, AJAX had limitations, particularly in scenarios where the client needed to continously pull updates from the server. 
+This gap was evident in applications requiring real-time data updates, as servers had to wait for every new client request to send data. 
+[WebSockets](https://en.wikipedia.org/wiki/WebSocket), proposed by the W3C, addressed this challenge by establishing a bi-directional communication channel between the client and the server.
 This protocol supported both text and binary data with significantly reduced overhead compared to traditional HTTP polling methods, enabling more dynamic and responsive web applications.
 
 ```mermaid
@@ -572,7 +576,7 @@ sequenceDiagram
 
 [//]: # (WebSockets as a Standardized Protocol)
 The evolution of WebSockets was a significant milestone in web technology. 
-After several iterations and enhancements, the protocol was officially recognized as IETF protocol 'RFC6455' in December 2011, and quickly implemented across all major browsers.
+After several iterations and enhancements, the protocol was officially recognized as [IETF protocol 'RFC6455'](https://datatracker.ietf.org/doc/html/rfc6455) in December 2011, and quickly implemented across all major browsers.
 This standardization marked a turning point, allowing developers to reliably use WebSockets to create highly interactive, real-time web applications that could compete with or even surpass desktop applications in functionality and performance.
 The low latency and efficient data transfer capabilities of WebSockets made them ideal for applications that required constant data exchange and immediate user interaction.
 
@@ -580,66 +584,76 @@ The low latency and efficient data transfer capabilities of WebSockets made them
 WebSockets revolutionized how web applications were developed by facilitating a persistent, lightweight connection between the browser and the server. 
 The connection remains open (usually over TCP port number `443`), allowing for instant data exchange without the need for repeated HTTP requests.
 This architecture is particularly beneficial in real-time applications such as chat platforms, collaborative tools like Google Docs, and multiplayer online games.
-Each message or interaction in these applications can be instantly communicated across the network, enabling a new level of interactivity and collaboration among users. 
 The ability of WebSockets to allow multiple browsers to connect concurrently to the same service has opened up vast possibilities for real-time, collaborative experiences and applications on the web.
 
 ## Decentralized Web
 
 [//]: # (The Rise of Blockchain and Decentralization in Web 3.0)
-As Web 3.0 emerged in the late 2010s and early 2020s, it became intrinsically linked with blockchain technology and the broader cryptocurrency movement. This new era of the internet, often referred to as the decentralized web, prioritizes concepts such as decentralization, openness, and enhanced user utility. Blockchain technology, at the core of this movement, provides a distributed ledger that records transactions across multiple computers in such a way that the registered transactions cannot be altered retroactively. This immutable and transparent nature of blockchain facilitates trust and security, fundamental aspects that are driving the shift towards a decentralized internet structure where power and control are distributed across the network rather than held by a few centralized entities.
+The concept of [Web 3.0](https://en.wikipedia.org/wiki/Web3) (or Web3) emerged in the late 2010s and early 2020s.
+It became intrinsically linked with [blockchain technology](https://en.wikipedia.org/wiki/Blockchain) and the broader cryptocurrency movement. 
+This new era of the internet, often referred to as the decentralized web, prioritizes concepts such as decentralization, openness, and enhanced user utility. 
+Blockchain technology, at the core of this movement, provides a distributed ledger that records data transfers across multiple computers in such a way that the registered transactions cannot be altered retroactively.
+The immutable and transparent nature of blockchain facilitates trust and security.
+This is a fundamental aspect driving the shift towards a decentralized internet structure where power and control are distributed across the network rather than held by a few centralized entities.
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph TD
-User1[User 1] -->|Interacts| dApp1[Decentralized Application]
-User2[User 2] -->|Interacts| dApp2[Decentralized Application]
-User3[User 3] -->|Interacts| dApp1
+User1[User 1] -->|HTTP Request| dApp1[Decentralized Web Application]
+User2[User 2] -->|HTTP Request| dApp2[Decentralized Web Application]
+User3[User 3] -->|HTTP Request| dApp1
 
-    dApp1 -->|Uses| BC[Blockchain]
-    dApp2 -->|Uses| BC
+subgraph "Blockchain"
+    direction RL 
+    Node1(Node1)
+    Node2(Node2)
+    Node3(Node3)
+    Node4(Node4)
 
-    BC -->|Distributes Data| Node1[Node 1]
-    BC -->|Distributes Data| Node2[Node 2]
-    BC -->|Distributes Data| Node3[Node 3]
-    BC -->|Distributes Data| Node4[Node 4]
+    Node1 -- Validate --- Node2
+    Node1 -- Validate --- Node3
+    Node1 -- Validate --- Node4
+    Node2 -- Validate --- Node3
+    Node2 -- Validate --- Node4
+    Node3 -- Validate --- Node4
+end    
 
-    Node1 -->|Validates Transactions| BC
-    Node2 -->|Validates Transactions| BC
-    Node3 -->|Validates Transactions| BC
-    Node4 -->|Validates Transactions| BC
-
-    subgraph "Decentralized Network"
-    Node1
-    Node2
-    Node3
-    Node4
-    end
-
-    style BC fill:#f9f,stroke:#333,stroke-width:2px
-    style dApp1 fill:#ccf,stroke:#333,stroke-width:2px
-    style dApp2 fill:#ccf,stroke:#333,stroke-width:2px
-    style User1 fill:#cff,stroke:#333,stroke-width:2px
-    style User2 fill:#cff,stroke:#333,stroke-width:2px
-    style User3 fill:#cff,stroke:#333,stroke-width:2px
+dApp1 -->|Validate Request| Node1
+dApp2 -->|Validate Request| Node2
 ```
 
-
 [//]: # (Blockchain's Role in Enhancing Data Security and Privacy)
-Blockchain technology not only supports cryptocurrencies like Bitcoin and Ethereum but also has profound implications for how data is handled and controlled on the internet. By leveraging decentralization, blockchain allows for data to be stored across a network of nodes, ensuring that no single point of failure can compromise the system's integrity. This method enhances data security and user privacy significantly. Moreover, blockchain enables smart contracts, which are self-executing contracts with the terms of the agreement directly written into lines of code. These contracts automate and enforce agreements without the need for intermediaries, thus reducing the risk of fraud and lowering transaction costs. This capability is pivotal for developing decentralized applications (dApps) that operate on a peer-to-peer network, further enhancing user empowerment and control over their online interactions and transactions.
-
-[//]: # (Decentralization Shaping the Future of Web Applications)
-The decentralized nature of blockchain is shaping the future of web applications through the creation of a more user-centric internet—Web 3.0. This new web paradigm enhances user control over personal data, with blockchain acting as the backbone for technologies that support data ownership and privacy. For example, decentralized identity systems allow individuals to own and control their identity without reliance on centralized authorities. Additionally, the interconnectivity facilitated by blockchain could enable completely new business models and consumer applications, such as decentralized finance (DeFi) platforms, which offer financial services without traditional banking institutions. As blockchain technology continues to evolve, its potential to support a decentralized, secure, and efficient web environment makes it a critical component of the Web 3.0 infrastructure, poised to redefine the digital landscape.
+The incentive to have a descentralized web is to create a more secure and private web experience.
+By leveraging decentralization, blockchain allows for data to be stored across a network of nodes.
+A [consensus algorithm](https://www.baeldung.com/cs/consensus-algorithms-distributed-systems) ruling the nodes ensures that no single point of failure can compromise the system's integrity. 
+This method enhances data security and user privacy significantly. 
+Moreover, blockchain enables [smart contracts](https://en.wikipedia.org/wiki/Smart_contract), which are self-executing contracts with the terms of the agreement directly written into lines of code.
+These contracts automate and enforce agreements without the need for intermediaries.
+For the web, this means that the requests can be validated and executed without relying on a central authority.
+For example, a [decentralized web application (dApp)](https://en.wikipedia.org/wiki/Decentralized_application) operating as a social network can interact with a blockchain to ensure that each user identity is legit, and that their payments (or other types of transactions) are secure and transparent.
+Indeed, the promise of decentralized finance (DeFi) platforms is to offer financial services without traditional banking institutions. 
+Although descentralization is not a silver bullet, it has the potential to create of a more user-centric internet, with full data ownership and privacy.
 
 ## WebAssembly
 
 [//]: # (Overcoming JavaScript's Limitations with WebAssembly)
-JavaScript, while being the predominant scripting language in modern web browsers, faces significant limitations due to its inherent language characteristics. Each JavaScript engine must parse and recompile the code, creating substantial overhead and contributing to lengthy website load times. Additionally, JavaScript's lack of memory isolation poses security risks by potentially allowing the extraction of information from other processes. Attempts to replace or supplement JavaScript with other languages, such as Java Applets, Microsoft ActiveX, and Silverlight, have historically failed due to security concerns and lack of community consensus among browser vendors.
+JavaScript is (still) the predominant scripting language in modern web browsers.
+However, it has significant limitations due to its inherent language characteristics. 
+For example, each JavaScript engine must parse and recompile the code at runtime, which induces substantial overhead and contributing to lengthy website load times. 
+Additionally, JavaScript's lack of memory isolation poses security risks by potentially allowing the extraction of information from other processes. 
+[As I mentioned before](../blog/the-evolution-of-the-web-from-html-to-webassembly.html#java-applets-and-plugins), attempts to replace or supplement JavaScript with other languages, such as Java Applets, Microsoft ActiveX, and Silverlight, have historically failed due to security concerns and lack of community consensus among browser vendors.
 
 [//]: # (Emscripten and the Asm.js Experiment)
-The [Emscripten](https://emscripten.org/) tool, introduced in 2014, marked a pivotal moment in web development. It utilized `asm.js`, a strict subset of JavaScript designed for compiling low-level languages like C into JavaScript. This approach leveraged LLVM's ahead-of-time optimizations, significantly enhancing performance over traditional JavaScript, as detailed in [Mozilla's performance analysis](https://hacks.mozilla.org/2015/03/asm-speedups-everywhere/). `asm.js` streamlined JavaScript by restricting it to simple numeric types and memory operations, proving that client-side code performance could be substantially improved through careful language design and standardization. This success laid the groundwork for the development and standardization of WebAssembly by the World Wide Web Consortium (W3C) in 2015.
+In 2014, the [Emscripten](https://emscripten.org/) technology represented the most solid attempt in overcoming JavaScript's limitations.
+It utilized `asm.js`, a [strict subset of JavaScript](https://en.wikipedia.org/wiki/Asm.js) designed for compiling low-level languages like C into JavaScript.
+
+This approach leveraged [LLVM's ahead-of-time optimizations](https://en.wikipedia.org/wiki/LLVM), significantly enhancing performance over traditional JavaScript, as detailed in [Mozilla's performance analysis](https://hacks.mozilla.org/2015/03/asm-speedups-everywhere/). 
+`asm.js` streamlined JavaScript by restricting it to simple numeric types and memory operations.
+This approach proved that client-side code performance could be substantially improved through careful language design and standardization. 
+The success of Emscripted laid the groundwork for the development and standardization of [WebAssembly](https://webassembly.org/) by the World Wide Web Consortium (W3C) in 2015.
 
 [//]: # (The Advent of WebAssembly)
-WebAssembly, or wasm, was developed as a native runtime for the web, allowing developers to write applications in languages such as C, Rust, or Ruby, and compile them into a `.wasm` file. This file is then served from a web server and executed in the browser, with JavaScript often playing a role in bootstrapping the application. This innovation brought the possibility of running high-performance, native applications directly within the browser environment, reminiscent of the capabilities provided by Java Applets in the 1990s. WebAssembly addresses the inefficiencies of transpiling languages like Java or TypeScript to JavaScript, which was traditionally the only way to run applications in browsers.
+WebAssembly (a.k.a wasm), was developed as a native runtime for the web, allowing developers to write applications in languages such as C, Rust, or Ruby, and compile them into a `.wasm` file. This file is then served from a web server and executed in the browser, with JavaScript often playing a role in bootstrapping the application. This innovation brought the possibility of running high-performance, native applications directly within the browser environment, reminiscent of the capabilities provided by Java Applets in the 1990s. WebAssembly addresses the inefficiencies of transpiling languages like Java or TypeScript to JavaScript, which was traditionally the only way to run applications in browsers.
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
@@ -660,7 +674,7 @@ One of the significant advantages of WebAssembly is its robust security model, w
 [//]: # (WebAssembly's Role in Modern Web Applications)
 WebAssembly has significantly broadened the scope of what can be achieved with web applications, enabling complex software like AutoCAD and Adobe Photoshop to be ported directly into the browser as highlighted in [Adobe's announcement](https://twitter.com/Adobe/status/1453034805004685313?s=20&t=Zf1N7-WmzecA0K4V8R69lw). This capability transforms web applications to perform functions traditionally reserved for desktop applications, pushing the boundaries of web software and altering our understanding of its potential. As WebAssembly continues to evolve, it promises to further revolutionize the development and performance of applications across the web.
 
-# Summary
+# Lessons to Learn
 
 In the evolving landscape of web technologies, while certain older technologies like applets and plugins have become obsolete, many foundational methods remain relevant and effective for specific needs today. 
 Static HTML, for example, continues to be the optimal solution for simple, infrequently updated content such as a restaurant menu.
