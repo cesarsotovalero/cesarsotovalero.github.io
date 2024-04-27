@@ -26,7 +26,7 @@ Along the way, I've been thinking on how the whole thing is built under the hood
 Obviously, the web technologies that we all use every day have changed and evolved over time.
 While digging into this topic, I realized that some of the underlying solutions that fuel the World Wide Web are really brilliant, while others are still a mess.
 From an engineering perspective, there are many lessons we can learn.
-So I decided to write about it on this post.
+So I decided to write about it in this post.
 What follows is my modest attempt to do so.
 As a disclaimer, this blog post is not about [the history of the internet](https://en.wikipedia.org/wiki/History_of_the_Internet), which has already been well documented.
 Instead, I focus on the different architectures and patterns that have radically changed the way web technologies are developed.
@@ -91,7 +91,7 @@ But note that there are other services as well, such as file transfer services, 
   </figcaption>
 </figure>
 
-The idea of global internet has been around since the early 1970s. 
+The idea of a global internet has been around since the early 1970s. 
 However, initially accessing documents remotely involved complex processes using services such as [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol), [NNTP](https://en.wikipedia.org/wiki/Network_News_Transfer_Protocol), and the [Gopher protocol](https://en.wikipedia.org/wiki/Gopher_(protocol)). 
 These protocols, still in use today, provide a simple directory structure from which users can navigate and select files to download, but they do not support direct viewing of the information being transferred. 
 This limitation highlighted the need for a new protocol that would enable users to render documents directly through dedicated software applications.
@@ -144,7 +144,7 @@ I would like to remark that since its massification, the web landscape has under
 These technologies have added new capabilities that allow web applications to scale and operate differently from traditional software. 
 For example, today's web applications do not require installation or updates. 
 They simply need a device with a web browser to run.
-This has led to the rise of web applications that can be accessed from any device with an internet connection, making them more accessible thanks to the widespread of mobile phones.
+This has led to the rise of web applications that can be accessed from any device with an internet connection, making them more accessible thanks to the wide spread of mobile phones.
 
 Its rapid development has led to the rise and decline (almost obsolescence) of various technologies over time. 
 In particular, there's still an ongoing debate about whether to place the execution logic that consumes most of the computing power on the server or in the client. 
@@ -288,7 +288,7 @@ Client-side rendering is the process of generating web content directly in the u
 To do so, HTML was clearly no enough, a real programming language was necessary.
 JavaScript was the answer.
 The legend says that JavaScript was created in just ten days by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich) while working on Netscape in May 1995.
-Nothing good can be done in ten days, and that may be reason why JavaScript has caused so many headaches to developers.
+Nothing good can be done in ten days, and that may be one of the reasons why JavaScript has caused so many headaches to developers.
 Anyway, JavaScript revolutionised the web by allowing the pages to respond dynamically to user inputs.
 For example, it could immediately notify when their passwords did not meet certain validation requirements, instantly, directly in the browser. 
 The user experience improved significantly because there was no need to reload page.  
@@ -393,7 +393,7 @@ Here's an example of an HTML page embedding a Java Applet. ote that in the brows
 {% endhighlight %}
 
 The reliance on plugins during this period was not unique to Java.
-Plugins was a common pattern back then.
+Using plugins was a common pattern back then.
 Technologies such as Shockwave, Flash, Director, Real Player, and QuickTime also depended on plugins to enhance browser capabilities and deliver content that native web technologies at the time could not handle. 
 These plugins provided rich multimedia experiences and interactive content on websites, filling a crucial gap in browser technology.
 Yet, this approach came with significant drawbacks, particularly concerning security vulnerabilities, which were a constant source of headaches for developers and users alike.
@@ -431,7 +431,7 @@ Cascading Style Sheets (CSS) were introduced in 1996 to expand HTML's styling fu
 It fundamentally changed web design. 
 CSS allowed for the separation of document content (written in HTML) from document presentation.
 For example, CSS includes detailed specifications of fonts, colors, layouts, and other visual aspects.
-This separation not only mades web pages more visually appealing but also significantly streamlined the web development process by allowing styles to be defined once and reused across multiple pages.
+This separation not only made web pages more visually appealing but also significantly streamlined the web development process by allowing styles to be defined once and reused across multiple pages.
 
 For example, the following CSS code defines a style for a `div` element with a red background and white text:
 
@@ -487,7 +487,7 @@ This asynchronous communication allowed web pages to update content dynamically 
 
 [//]: # (Evolution of Web Requests: From AJAX to Fetch)
 By 2015, advancements in web technology led browser vendors to develop [a more efficient method for making network requests](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), known as the `fetch` API.
-This modern approach provided a promise-based mechanism to handle responses, streamlining the process of asynchronous requests. 
+This modern approach provides a promise-based mechanism to handle responses, streamlining the process of asynchronous requests. 
 By using `fetch`, developers could send a [single-page application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) to the client, which would then request data as needed from a server-side API. 
 This data could seamlessly update specific parts of the web page, improving the app's responsiveness and user engagement without reloading the entire page.
 
@@ -504,8 +504,8 @@ These frameworks provided robust architectures, embracing principles like "Conve
 They addressed many challenges of SPAs by offering structured ways to build and manage stateful, interactive applications efficiently.
 
 [//]: # (React: A New Approach to State Management and UI Rendering)
-[React](https://react.dev/), developed by Facebook and released in 2013, introduced a novel approach to building SPAs by employing a one-way data flow and [virtual DOM](https://legacy.reactjs.org/docs/faq-internals.html). T
-his architecture allowed React to manage UI updates efficiently—only re-rendering components when actual data changes occurred, minimizing the performance costs associated with DOM manipulation.
+[React](https://react.dev/), developed by Facebook and released in 2013, introduced a novel approach to building SPAs by employing a one-way data flow and [virtual DOM](https://legacy.reactjs.org/docs/faq-internals.html). 
+This architecture allowed React to manage UI updates efficiently—only re-rendering components when actual data changes occurred, minimizing the performance costs associated with DOM manipulation.
 React’s component-based architecture also enabled developers to build reusable UI blocks, simplifying the development process, reducing bugs, and improving the maintainability of large applications.
 
 The following is an example of a React component that toggles a button's color between green and red when clicked. Note that the CSS styles are defined directly within the component, along with the JavaScript logic:
@@ -557,7 +557,7 @@ This "componentized" styling represents a significant evolution in how developer
 For many years, AJAX was the primary technology for asynchronous server communication in web development. 
 However, AJAX had limitations, particularly in scenarios where the client needed to continously pull updates from the server. 
 This gap was evident in applications requiring real-time data updates, as servers had to wait for every new client request to send data. 
-[WebSockets](https://en.wikipedia.org/wiki/WebSocket), proposed by the W3C, addressed this challenge by establishing a bi-directional communication channel between the client and the server.
+[WebSockets](https://en.wikipedia.org/wiki/WebSocket), proposed by the W3C, addressed this challenge by establishing a bidirectional communication channel between the client and the server.
 This protocol supported both text and binary data with significantly reduced overhead compared to traditional HTTP polling methods, enabling more dynamic and responsive web applications.
 
 ```mermaid
@@ -637,7 +637,7 @@ These contracts automate and enforce agreements without the need for intermediar
 For the web, this means that the requests can be validated and executed without relying on a central authority.
 For example, a [decentralized web application (dApp)](https://en.wikipedia.org/wiki/Decentralized_application) operating as a social network can interact with a blockchain to ensure that each user identity is legit, and that their payments (or other types of transactions) are secure and transparent.
 Indeed, the promise of decentralized finance (DeFi) platforms is to offer financial services without traditional banking institutions. 
-Although descentralization is not a silver bullet, it has the potential to create of a more user-centric internet, with full data ownership and privacy.
+Although descentralization is not a silver bullet, it has the potential to create a more user-centric internet, with full data ownership and privacy.
 
 ## WebAssembly
 
@@ -661,7 +661,7 @@ The success of Emscripted laid the groundwork for the development and standardiz
 > "WebAssembly addresses the inefficiencies of transpiling languages like Java or TypeScript to JavaScript, which was traditionally the only way to run applications in browsers."
 
 [//]: # (The Advent of WebAssembly)
-WebAssembly (a.k.a wasm), was developed as a native runtime for the web.
+WebAssembly (a.k.a., wasm) was developed as a native runtime for the web.
 It allows developers to write applications in languages such as C, Rust, or Ruby, and compile them into a `.wasm` file. 
 This file is then served from a web server and executed in the browser, with JavaScript often playing a role in bootstrapping the application.
 This innovation brought the possibility of running high-performance, native applications directly within the browser environment, reminiscent of the capabilities provided by Java Applets in the 1990s. 
@@ -693,7 +693,7 @@ As WebAssembly continues to evolve, it promises to further revolutionize the dev
 # Summary
 
 There are valuable lessons to be learned from the evolution of web technologies.
-These include the need of agreement among vendors for a technology to succeed, the constant oscillations between centralizing computer power in the servers or distributing it among users, and the need of a secure and efficient runtime for the web. Nevertheless, getting rid JavaScript is still very hard.
+These include the need of agreement among vendors for a technology to succeed, the constant oscillations between centralizing computer power in the servers or distributing it among users, and the need of a secure and efficient runtime for the web. Nevertheless, getting rid of JavaScript is still very hard.
 
 But, for now, I'd like to leave you with a few observations:
 
@@ -714,7 +714,7 @@ But, for now, I'd like to leave you with a few observations:
 
 [^2]: [DARPA](https://www.darpa.mil/) (Defense Advanced Research Projects Agency) is essentially a military research project funded by the US government. It still exists and is responsible for the development of not only the internet in the 60s but other technologies like GPS, drones, and even the first computer mouse. It's sad that the internet was not created in a public university as it should, but that's it. 
 
-[^3]: Tim Berners-Lee was knighted by Queen Elizabeth II in 2004, so now we should call him "sir" to be more exact. People gets promoted dear reader, the sky is the limit.    
+[^3]: Tim Berners-Lee was knighted by Queen Elizabeth II in 2004, so now we should call him "sir" to be more exact. People get promoted dear reader, the sky is the limit.    
 
 [^4]: I browsed the web for the first time in 2011. It was during the second year at university. Back then, in Cuba the internet access was restricted to universities and research centres. Individual access was controlled using a quota-based system. I had 50MB per week to spend! I spent it navigating educational websites (the majority of other services were forbidden).
 
@@ -722,4 +722,4 @@ But, for now, I'd like to leave you with a few observations:
 
 [^6]: It's good not to forget that the internet went from being a niche academic tool to becoming a mainstream technology in less than 30 years. That's a blink of an eye in terms of human's evolution! 
 
-[^7]: The first web the address was [info.cern.ch](https://info.cern.ch/), and the very first web page can still be visited at [the project website](https://info.cern.ch/hypertext/WWW/TheProject.html).
+[^7]: The first web address was [info.cern.ch](https://info.cern.ch/), and the very first web page can still be visited at [the project website](https://info.cern.ch/hypertext/WWW/TheProject.html).
