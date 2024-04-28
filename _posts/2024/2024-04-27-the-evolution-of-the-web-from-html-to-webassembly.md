@@ -596,10 +596,10 @@ The ability of WebSockets to allow multiple browsers to connect concurrently to 
 [//]: # (The Rise of Blockchain and Decentralization in Web 3.0)
 The concept of [Web 3.0](https://en.wikipedia.org/wiki/Web3) (or Web3) emerged in the late 2010s and early 2020s.
 It became intrinsically linked with [blockchain technology](https://en.wikipedia.org/wiki/Blockchain) and the broader cryptocurrency movement. 
-This new era of the internet, often referred to as the decentralized web, prioritizes concepts such as decentralization, openness, and enhanced user utility. 
-Blockchain technology, at the core of this movement, provides a distributed ledger that records data transfers across multiple computers in such a way that the registered transactions cannot be altered retroactively.
-The immutable and transparent nature of blockchain facilitates trust and security.
-This is a fundamental aspect driving the shift towards a decentralized internet structure where power and control are distributed across the network rather than held by a few centralized entities.
+This new era of the internet, often referred to as the decentralized web, prioritizes concepts such as decentralization, openness, and enhanced user privacy. 
+Blockchain technology, at the core of this movement, provides a distributed ledger that records data transfers across multiple computers in such a way that the registered requests cannot be altered retroactively.
+This immutable and transparent nature of blockchain facilitates trust and security.
+Web3 is a fundamental shift towards a decentralized internet structure where power and control are distributed across the network rather than held by a few centralized entities owning the servers.
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
@@ -628,11 +628,11 @@ dApp2 -->|Validate Request| Node2
 ```
 
 [//]: # (Blockchain's Role in Enhancing Data Security and Privacy)
-The incentive to have a descentralized web is to create a more secure and private web experience.
+As I mentioned, the incentive to have a descentralized web is to create a more secure and private web experience.
 By leveraging decentralization, blockchain allows for data to be stored across a network of nodes.
 A [consensus algorithm](https://www.baeldung.com/cs/consensus-algorithms-distributed-systems) ruling the nodes ensures that no single point of failure can compromise the system's integrity. 
 This method enhances data security and user privacy significantly. 
-Moreover, blockchain enables [smart contracts](https://en.wikipedia.org/wiki/Smart_contract), which are self-executing contracts with the terms of the agreement directly written into lines of code.
+Moreover, blockchain enables [smart contracts](https://en.wikipedia.org/wiki/Smart_contract), which are self-executing programs with the terms of the agreement among the nodes directly written into lines of code.
 These contracts automate and enforce agreements without the need for intermediaries.
 For the web, this means that the requests can be validated and executed without relying on a central authority.
 For example, a [decentralized web application (dApp)](https://en.wikipedia.org/wiki/Decentralized_application) operating as a social network can interact with a blockchain to ensure that each user identity is legit, and that their payments (or other types of transactions) are secure and transparent.
@@ -641,14 +641,14 @@ Although descentralization is not a silver bullet, it has the potential to creat
 
 ## WebAssembly
 
+{% badge /img/badges/WebAssembly_Logo.svg 140 https://webassembly.org/ %}
+
 [//]: # (Overcoming JavaScript's Limitations with WebAssembly)
 JavaScript is (still) the predominant scripting language in modern web browsers.
 However, it has significant limitations due to its inherent language characteristics. 
 For example, each JavaScript engine must parse and recompile the code at runtime, which induces substantial overhead and contributing to lengthy website load times. 
 Additionally, JavaScript's lack of memory isolation poses security risks by potentially allowing the extraction of information from other processes. 
 [As I mentioned before](../blog/the-evolution-of-the-web-from-html-to-webassembly.html#java-applets-and-plugins), attempts to replace or supplement JavaScript with other languages, such as Java Applets, Microsoft ActiveX, and Silverlight, have historically failed due to security concerns and lack of community consensus among browser vendors.
-
-{% badge /img/badges/WebAssembly_Logo.svg 140 https://webassembly.org/ %}
 
 [//]: # (Emscripten and the Asm.js Experiment)
 In 2014, the [Emscripten](https://emscripten.org/) technology represented the most solid attempt in overcoming JavaScript's limitations.
@@ -693,20 +693,22 @@ As WebAssembly continues to evolve, it promises to further revolutionize the dev
 # Summary
 
 There are valuable lessons to be learned from the evolution of web technologies.
-These include the need of agreement among vendors for a technology to succeed, the constant oscillations between centralizing computer power in the servers or distributing it among users, and the need of a secure and efficient runtime for the web. Nevertheless, getting rid of JavaScript is still very hard.
+These include the need of agreement among vendors for a technology to succeed, the constant oscillations between centralizing computer power in the servers or distributing it among users contributing to tech breakthroughs, and the need of a secure and efficient runtime for the web.
+Moreover, we've learned that getting rid of JavaScript is still very hard.
 
 But, for now, I'd like to leave you with a few observations:
 
-1. **Simplicity and Efficiency**: Foundational web technologies like static HTML and server-side rendering remain useful for delivering content that rarely changes or requires dynamic processing. These technologies continue to be effective and cost-efficient solutions even in 2024 for many use cases.
-2. **User Experience**: From the introduction of CSS for enhanced web aesthetics to the development of SPAs for dynamic user interactions, the focus on improving user experience has led to the creation of more interactive and engaging web applications.
-3. **Interactivity and Real-Time Communication**: Client-side rendering, AJAX, and WebSockets have transformed the way users interact with web content, providing seamless and responsive experiences that rival desktop applications.
-4. **Security and Performance**: Technologies like WebAssembly offer robust security models and enhanced performance, enabling developers to create high-performance applications with improved security features.
-5. **Innovation and Adaptability**: Developers must stay adaptable and embrace new technologies like WebAssembly and dApps to create cutting-edge web applications that meet the expectations of modern users.
+1. **Simplicity and Efficiency Still Holds**: Foundational web technologies like static HTML and server-side rendering remain useful for delivering content that rarely changes or doesn't requires dynamic processing. These technologies were great in 90s and continue to be effective and cost-efficient solutions even in 2024 for many use cases.
+2. **User Experience Matters**: From the introduction of CSS for enhanced web aesthetics to the development of SPAs for dynamic user interactions, the focus on improving user experience has led to the creation of more dynamic technologies for real-time DOM manipulation and improved data fetching, leading to better user experience.
+3. **Interactivity and Real-Time Communication Is a Must**: Client-side rendering, AJAX, and WebSockets have transformed the way users interact with web content, providing seamless and responsive experiences that rival desktop applications.
+4. **Security and Performance Is an Ongoing Endeavor**: Technologies like WebAssembly offer robust security models and enhanced performance, enabling developers to create high-performance applications with improved security features.
+5. **Innovation and Adaptability is Not Optional**: Developers must stay adaptable and embrace new technologies like WebAssembly and dApps to create cutting-edge web applications that meet the expectations of modern users.
 
 # Resources
 
 - [The Evolution of Web Apps 1992-2024, by Dylan Beattie](https://youtu.be/a_1cV7hg5G8?si=VIaAQnfTyR9nuUdc)
 - [How We Got Here - The History of Web Development, by Richard Campbell](https://youtu.be/41mnNyMxPOA?si=9NVNYd9jyopvFaXj)
+- [How We Made the Internet](https://youtu.be/VPToE8vwKew?si=6IGNrHCNWJjao_vH)
 
 # Footnotes
 
