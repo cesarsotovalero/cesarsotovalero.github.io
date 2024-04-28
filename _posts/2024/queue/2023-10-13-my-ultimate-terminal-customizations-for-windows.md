@@ -217,9 +217,9 @@ brew install fig
 It is used by many developers to write code directly in the terminal.
 I love Vim, despite its steep learning curve.
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/asciinema-player.css"/>
 <div id="vim.rec" class="asciinema-player-div"></div>
-<script src="../../js/asciinema-player.min.js"></script>
+<script src="../../../js/asciinema-player.min.js"></script>
 <script> 
    AsciinemaPlayer.create('../../asciinema/vim.rec', document.getElementById('vim.rec'), {
       loop: true,
@@ -263,9 +263,9 @@ For example, you can use SDKMAN! to install the latest version of the Android SD
 
 You can also switch between different Java JDK versions, as follows:
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/asciinema-player.css"/>
 <div id="sdkman.rec" class="asciinema-player-div"></div>
-<script src="../../js/asciinema-player.min.js"></script>
+<script src="../../../js/asciinema-player.min.js"></script>
 <script> 
    AsciinemaPlayer.create('../../asciinema/sdkman.rec', document.getElementById('sdkman.rec'), {
       loop: true,
@@ -285,9 +285,9 @@ curl -s "https://get.sdkman.io" | bash
 [jEnv](https://www.jenv.be/) is a command line tool to help you forget how to set the `JAVA_HOME` environment variable.
 For example, you you can change the Java version that you are using by simply typing `jenv global <version>`:
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/asciinema-player.css"/>
 <div id="jenv.rec" class="asciinema-player-div"></div>
-<script src="../../js/asciinema-player.min.js"></script>
+<script src="../../../js/asciinema-player.min.js"></script>
 <script> 
    AsciinemaPlayer.create('../../asciinema/jenv.rec', document.getElementById('jenv.rec'), {
       loop: true,
@@ -308,9 +308,9 @@ brew install jenv
 It can be used to filter, transform, and query JSON files in the terminal.
 And of course, you can get JSON file pretty-printed by typing `jq '.'`.
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/asciinema-player.css"/>
 <div id="jq.rec" class="asciinema-player-div"></div>
-<script src="../../js/asciinema-player.min.js"></script>
+<script src="../../../js/asciinema-player.min.js"></script>
 <script> 
    AsciinemaPlayer.create('../../asciinema/jq.rec', document.getElementById('jq.rec'), {
       loop: true,
@@ -330,9 +330,9 @@ brew install jq
 [Bat](https://github.com/sharkdp/bat) is a simple and powerful command-line utility for displaying files and directories.
 It is a replacement for the `cat` Unix command, but it is more powerful and more user-friendly.
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/asciinema-player.css"/>
 <div id="bat.rec" class="asciinema-player-div"></div>
-<script src="../../js/asciinema-player.min.js"></script>
+<script src="../../../js/asciinema-player.min.js"></script>
 <script> 
    AsciinemaPlayer.create('../../asciinema/bat.rec', document.getElementById('bat.rec'), {
       loop: true,
@@ -362,9 +362,9 @@ brew install trash-cli
 
 [Exa](https://github.com/ogham/exa) is a modern replacement for the `ls` command.
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/asciinema-player.css"/>
 <div id="exa.rec" class="asciinema-player-div"></div>
-<script src="../../js/asciinema-player.min.js"></script>
+<script src="../../../js/asciinema-player.min.js"></script>
 <script> 
    AsciinemaPlayer.create('../../asciinema/exa.rec', document.getElementById('exa.rec'), {
       loop: true,
@@ -384,9 +384,9 @@ brew install exa
 [Htop](https://github.com/hishamhm/htop) is a terminal-based process viewer.
 It is a replacement for the `top` Unix command, more user-friendly and more powerful.
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/asciinema-player.css"/>
 <div id="htop.rec" class="asciinema-player-div"></div>
-<script src="../../js/asciinema-player.min.js"></script>
+<script src="../../../js/asciinema-player.min.js"></script>
 <script> 
    AsciinemaPlayer.create('../../asciinema/htop.rec', document.getElementById('htop.rec'), {
       loop: true,
@@ -408,9 +408,9 @@ It is a replacement for the `diff` Unix command.
 It makes your diffs human-readable instead of machine-readable.
 This helps improve code quality and helps you spot defects faster.
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/asciinema-player.css"/>
 <div id="diff-so-fancy.rec" class="asciinema-player-div"></div>
-<script src="../../js/asciinema-player.min.js"></script>
+<script src="../../../js/asciinema-player.min.js"></script>
 <script> 
    AsciinemaPlayer.create('../../asciinema/diff-so-fancy.rec', document.getElementById('diff-so-fancy.rec'), {
       loop: true,
