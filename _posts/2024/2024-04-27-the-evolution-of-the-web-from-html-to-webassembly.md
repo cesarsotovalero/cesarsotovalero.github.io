@@ -450,14 +450,14 @@ flowchart TB
   subgraph Website
     direction LR 
     subgraph HTML
-        Page1
-        Page2
-        Page3
-        Page4   
+        Page1[📄 Page 1]
+        Page2[📄 Page 2]
+        Page3[📄 Page 3]
+        Page4[📄 Page 4]
     end
     subgraph CSS
-        Style1
-        Style2
+        Style1[🎨 Style 1]
+        Style2[🎨 Style 2]
     end
   end
   Page1 --- Style1
@@ -687,7 +687,7 @@ Today, WebAssembly is used for a diverse range of browser tasks, from gaming to 
 
 [//]: # (WebAssembly's Role in Modern Web Applications)
 WebAssembly has significantly broadened the scope of what can be achieved with web applications, enabling complex software like AutoCAD and Adobe Photoshop to be ported directly into the browser as highlighted in [Adobe's announcement](https://twitter.com/Adobe/status/1453034805004685313?s=20&t=Zf1N7-WmzecA0K4V8R69lw). 
-This capability transforms web applications to perform functions traditionally reserved for desktop applications, pushing the boundaries of web software and altering our understanding of its potential. 
+This capability transforms web applications to perform functions traditionally reserved for desktop applications, pushing the boundaries of web software and changing our understanding of what can be possible. 
 As WebAssembly continues to evolve, it promises to further revolutionize the development and performance of applications across the web.
 
 # Summary
