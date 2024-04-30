@@ -4,7 +4,7 @@ title: On the Rise, Decline, and Persistence of Web Technologies
 subtitle: From Static HTML Pages to WebAssembly
 tags: web
 description: |
-  The web is the only platform that has been continuously transformed and evolved on a global scale over the last 30 years. Its impact on society is crazy high. Over the years, I have witnesses the emergence of various technological solutions emerge. Some were revolutionary, while others didn't pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web's history. Those who don't know tech history are doomed to repeat past engineering mistakes. 
+  The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn't pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web's history. Those who don't know tech history are doomed to repeat past engineering mistakes. 
 keywords:
   - world wide web history
   - evolution of the internet
@@ -24,21 +24,22 @@ published: true
 I've been doing some frontend web development lately as part of my daily job.[^1]
 Along the way, I've been thinking on how the whole thing is built under the hood. 
 Obviously, the web technologies that we all use every day have changed and evolved over time.
-While digging into this topic, I realized that some of the underlying solutions that fuel the World Wide Web are really brilliant, while others are still a mess.
-From an engineering perspective, there are many lessons we can learn.
+While digging into this topic, I realized that some of the underlying technical solutions that fuel the World Wide Web are really brilliant, while others are still a mess.
+From an engineering perspective, there are many lessons we can learn from it.
 So I decided to write about it in this post.
 What follows is my modest attempt to do so.
 As a disclaimer, this blog post is not about [the history of the internet](https://en.wikipedia.org/wiki/History_of_the_Internet), which has already been well documented.
 Instead, I focus on the different architectures and patterns that have radically changed the way web technologies are developed.
 This includes new paradigms that have opened up possibilities for what was previously impossible, like Single Page Applications (SPAs) and AJAX.
-From those that became obsolete, like Java Applets, to those that have stood the test of time, like Static HTML, and the recent emergence of WebAssembly and the still ongoing attempt to decentralize the web.
+From those that became obsolete, like Java Applets, to those that have stood the test of time, like Static HTML, to the recent emergence of WebAssembly and the ongoing attempt to decentralize the web.
 If you are a ~~nerd~~ engineer, a web developer, or just curious about how the web works internally, you're likely to find this post interesting.
+Those who don't know tech history are doomed to repeat past engineering mistakes.
 This is gonna be a long one, so grab a coffee and let's go!
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2024/2024-04-27/infinite-park.jpg alt: "The World Wide Web, and infinite park of data continuously streamed" %}
   <figcaption class="stroke"> 
-    &#169; The World Wide Web, like a seeming infinity data pumping platform, has been transformed and evolved at unprecedented speed. The picture corresponds to the art piece titled "Infinite Park" exposed at <a href="https://maps.app.goo.gl/75AGyCg5QpzjQeFR8">Stockholm's Paradox Museum</a>.
+    &#169; The World Wide Web is a seeming infinity data dumping and pumping platform. It has been transformed and evolved at unprecedented speed over the last 30 years. The picture shows an art piece titled "Infinite Park" exposed at <a href="https://maps.app.goo.gl/75AGyCg5QpzjQeFR8">Stockholm's Paradox Museum</a>.
   </figcaption>
 </figure>
 
@@ -47,7 +48,7 @@ This is gonna be a long one, so grab a coffee and let's go!
 The [World Wide Web (WWW)](https://en.wikipedia.org/wiki/World_Wide_Web), as we know it today, is basically a vast collection of data accessible through **the internet**.
 The internet ensures that the data (i.e., `0`s and `1`s), is constantly transmitted from servers to clients and vice versa.
 Most users perceive the web through the data that is rendered by **web browsers**.
-Browsers are software applications that rely on various **web technologies** to transform the data into more established and human-friendly web pages.
+Browsers are software applications that rely on various **web technologies** to transform the data into more readable and human-friendly web pages.
 These three core layers (highlighted above with bold font) are responsible for keeping the web alive.
 This post dives deep into the last layer: web technologies.
 But before that, let's take a look at the big picture.
@@ -67,15 +68,15 @@ end
 
 {% badge /img/badges/leonard-kleinrock-dissertation.png 140 https://www.lk.cs.ucla.edu/data/files/Kleinrock/Information%20Flow%20in%20Large%20Communication%20Nets.pdf %}
 
-Most sources agree that the internet was created in the 1960s by [ARPANET](https://en.wikipedia.org/wiki/ARPANET), a research project supported by the [DARPA](https://en.wikipedia.org/wiki/DARPA) agency in the United States.[^2]
+Most sources agree that the internet was created in the 1960s by [ARPANET](https://en.wikipedia.org/wiki/ARPANET), a research project supported by the [DARPA](https://en.wikipedia.org/wiki/DARPA) agency of the United States.[^2]
 The concept of "the internet" itself dates back to the first paper about packet switching written in 1961 by the american engineer [Leonard Kleinrock](https://www.lk.cs.ucla.edu/index.html).
 In his PhD thesis titled “[Information Flow in Large Communication Nets](https://historyofinformation.com/detail.php?id=788),” he proposed **a network of computers** that could send data to each other. 
 That's exactly what the modern internet does at its core!
 
 The internet and the web, while often used interchangeably, refer to different concepts.  
-The internet is the global network of interconnected computers that can communicate with each other by agreeing to use some kind of protocol.
+The internet is the global network of interconnected computers that can communicate with each other by agreeing on using the same **data transfer protocol**.
 For example, the [Internet Protocol (IP)](https://en.wikipedia.org/wiki/Internet_Protocol) is the most used to transmit data across the internet.
-Here the sense of "global" is key, as it transcends geographical barriers between countries (a more restrictive version is called "intranet" instead).[^4]
+Here the sense of "global" is key, as it transcends geographical barriers between countries (a more restrictive version of the internet is called "intranet" instead).[^4]
 
 The internet is built thanks to physical infrastructure [like submarine cables](http://thescienceexplorer.com/technology/our-wi-fi-world-internet-still-depends-undersea-cables), which are crucial for its operation.
 The web, on the other hand, refers to the information that can be accessed through the internet.
@@ -91,22 +92,23 @@ But note that there are other services as well, such as file transfer services, 
   </figcaption>
 </figure>
 
-The idea of a global internet has been around since the early 1970s. 
+The idea of a **global internet** has been around since the early 1970s. 
 However, initially accessing documents remotely involved complex processes using services such as [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol), [NNTP](https://en.wikipedia.org/wiki/Network_News_Transfer_Protocol), and the [Gopher protocol](https://en.wikipedia.org/wiki/Gopher_(protocol)). 
-These protocols, still in use today, provide a simple directory structure from which users can navigate and select files to download, but they do not support direct viewing of the information being transferred. 
+These protocols, still in use today, provide a simple directory structure from which users can navigate and select files to download, but they do not support a direct visualization of the information being transferred. 
 This limitation highlighted the need for a new protocol that would enable users to render documents directly through dedicated software applications.
 It was this (probably) the main incentive that led to the creation of the World Wide Web (WWW). 
 Today's WWW is predominantly made up of HTML documents and other resources, interconnected through [URLs](https://en.wikipedia.org/wiki/URL).
-These resources are accessed and retrieved using a wonderful piece of software called "web browsers," which communicate back and forward with the internet servers and display the content to the end users.
+These resources are accessed and retrieved using a wonderful piece of software called "web browser," which communicates back and forward with the internet servers and displays content to the end users.
 
 ## Web Browsers
 
 In the early 1990s, the development of web browsers rapidly transformed the internet.[^6]
-Sir [Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee),[^3] at CERN, created the first web browser and editor named "[WorldWideWeb](https://en.wikipedia.org/wiki/WorldWideWeb)," later renamed "Nexus," in 1990 (another poof that long camel cased names are a bad idea in general).
-This browser, which initially ran on the [NeXTSTEP operating system](https://en.wikipedia.org/wiki/NeXTSTEP) (yeah, that's the OS of the NeXT Computer founded by Steve Jobs, which didn't go anywhere, as neither the browser did).
-It laid the groundwork for the public web by allowing users to both browse and edit web pages. 
+Sir [Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee),[^3] at CERN, created the first web browser and web editor named "[WorldWideWeb](https://en.wikipedia.org/wiki/WorldWideWeb)," later renamed "Nexus," in 1990 (another poof that long camel cased names are a bad idea in general).
+This browser initially ran on the [NeXTSTEP operating system](https://en.wikipedia.org/wiki/NeXTSTEP) (yeah, that's the OS of the NeXT Computer founded by Steve Jobs, which didn't go anywhere, as neither the browser did).
+Despite its failure, it laid the groundwork for building public web by allowing users to both browse and edit web pages. 
 By February 1992, Berners-Lee's team at CERN released the [Line Mode Browser](https://en.wikipedia.org/wiki/Line_Mode_Browser), the first multi-platform browser.
-Between 1992 and 1995, several browsers such as Viola, Mosaic, Cello, Netscape Navigator, Opera, and Internet Explorer 1.0 were launched, dramatically opening up internet access to anyone with a computer and a landline. 
+Between 1992 and 1995, several browsers such as Viola, Mosaic, Cello, Netscape Navigator, Opera, and Internet Explorer 1.0 were launched.
+The emergence of diverse browsers supported in different platforms dramatically opened up internet access to anyone with a computer and an internet connection. 
 
 [//]: # (Web browser Nexus in 1994)
 <figure class="jb_picture">
@@ -116,15 +118,19 @@ Between 1992 and 1995, several browsers such as Viola, Mosaic, Cello, Netscape N
   </figcaption>
 </figure>
 
+<aside class="quote">
+    <em>“Web browsers are by far the most successful software application ever created in the history of computing.”</em>    
+</aside>
 
-Web browsers have evolved to become complex software systems over the last decades (e.g., Firefox has Chrome reported have roughly [30M](https://openhub.net/p/firefox) and [40M](https://openhub.net/p/chrome/analyses/latest/languages_summary) LoC, respectively).
-This has made them capable of handling not just text and images, but also running complex applications like real-time video games, 3D animations, and PDF documents.
+Over the last decades, web browsers have evolved to become complex software systems (e.g., Firefox and Chrome reported having roughly [30M](https://openhub.net/p/firefox) and [40M](https://openhub.net/p/chrome/analyses/latest/languages_summary) lines of code in total, respectively).
+Modern browsers are capable of handling not just text and images, but also running complex applications like real-time video games, 3D animations, and PDF documents.
 It required a lot of engineering effort to make this possible through web technologies.
 For example, the [V8 JavaScript Engine](https://v8.dev/) included in Chrome is renowned for its high performance due to just-in-time (JIT) compilation, efficient garbage collection, and optimizations for real-time execution in web browsers.
+Web browsers are by far the most successful software application ever created in the history of computing. 
 
 ## Web Technologies
 
-Initially created in the 1990s to link research papers via "hyperlinks," the web quickly grew beyond its academic origins. 
+Initially created in the 1990s to link research papers via "hyperlinks," **the web** quickly grew beyond its academic origins. 
 The world's first website and web server were hosted at CERN.[^7]
 On April 30th of 1993, the CERN issued a [public statement](https://home.cern/science/computing/birth-web/licensing-web) relinquishing all intellectual property rights to the World Wide Web.
 Thus making it freely accessible without any fees.
