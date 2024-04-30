@@ -24,7 +24,8 @@ When approaching completion, the decision of whether to pursue a career in acade
 After some key considerations, I decided to look for a job in the software industry,[^1] and I'm thrilled to share that I have recently accepted a position as a Data Engineer at a big Swedish company.
 In this article, I aim to share insights from my personal job-seeking journey as a PhD student transitioning from academia to industry. 
 My intention is to provide fellow PhD students (and anyone contemplating a similar path) with valuable advice and firsthand experiences that can assist them along the way.
-As someone who has gone through the process of securing a job prior to completing a PhD, I understand the challenges and uncertainties you might face, and I hope my story will offer some clarity and inspiration for those about to embark on their own professional journey... way beyond academia.
+As someone who has gone through the process of securing a job prior to completing a PhD, I understand the challenges and uncertainties you might face.
+I hope my story will offer some clarity and inspiration for those about to embark on their own professional journey... way beyond academia.
  
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-03-10/subway_in_red.jpg alt:"There's light and opportunity at the end of the tunnel" %}
@@ -49,12 +50,12 @@ As a PhD student, your supervisor essentially functions as your manager, oversee
 For many PhD students, this dependence on the criteria of their supervisor can be stifling, as the fruits of their hard labor often rest squarely in their hands.
 Furthermore, even supervisors themselves are under constant pressure of producing a certain number of publications within their field every year, especially if they are young.
 For supervisors, research is a means to an end, and the end is often recognition and tenure. 
-For PhD students, to be the smallest fish in the food chain can create a lot of tension and additional stress due to heavy workloads and multiple sources of mental pressure.
+For PhD students, to be the smallest fish in the food chain can create a lot of tensions and additional stress due to heavy workloads and multiple sources of mental pressure.
 
 Financial considerations also play a significant role in the decision to stay or leave academia. 
 [PhD salaries for Computer Science students in Sweden](https://academicpositions.com/career-advice/professor-salaries-sweden) are notably lower than those offered by tech companies such as Spotify, Klarna, Telia, or Ericsson. 
-In addition, as a PhD student you may be required to take on [additional responsibilities](../service.html) that are not directly related to your research, such as teaching, handling workshops, and supervising Master's students.
-In contrast, a career in tech at one of the big companies mentioned before (as a graduated in Computer Science) can easily offer double the salary of a PhD student which much less work overload, making it an attractive alternative.
+In addition, as a PhD student, you may be required to take on [additional responsibilities](../service.html) that are not directly related to your research, such as teaching, handling workshops, and supervising Master's students.
+In contrast, a career in tech at one of the big companies mentioned before (after graduating in Computer Science) can easily double the salary of a PhD student which much less work overload, making it an attractive alternative.
 
 <aside class="quote">
     <em>“Academics are often driven by passion rather than monetary gain, making their work a primary focus in life.”</em> 
@@ -84,23 +85,23 @@ In the following sections, I will give you tips and resources for enhancing the 
 The behavioral interview is the first step in the interview process.
 It consists of a series of questions about your past experiences, why you want this particular role you're applying for, and what you know about the company.
 It is a way for the company to know you better.
-There is not clear way to prepare for this kind of interviews.
+There is no clear way to prepare for this kind of interviews.
 The only thing you can do is to be yourself, in a natural way.
 
 ## Coding Interview
 
 The coding interview is usually the second step in the interview process.
 It consists of a series of coding problems  that you need to solve under time constraints.
-Your can find such kind of problems in sites such as [LeetCode](https://leetcode.com/) or [HackerRank](https://www.hackerrank.com/).
+You can find such kinds of problems in sites such as [LeetCode](https://leetcode.com/) or [HackerRank](https://www.hackerrank.com/).
 Some companies do it on-site, while others do it remotely.
 The only way to do well in this kind of interviews is to practice a lot.
 I would recommend solving at least 30 problems before applying for a job.
 
 I used to participate in [competitive programming](https://en.wikipedia.org/wiki/Competitive_programming) contests [when I was an undergraduate student](../blog/a-starting-guide-to-be-a-good-competitive-programmer.html).
-So, I was familiar with this kind of problems and just need a few weeks of preparation to revive my dormant skills.
+So, I was familiar with this kind of problem and just need a few weeks of preparation to revive my dormant skills.
 Still, I solved around 30 problems before applying for a job.
-If you're not familiar with this kind of problems, you probably need at least one month to prepare yourself.
-Start with easy problems and then move to problem of medium complexity (I suggest skipping hard problems unless your applying to [FANG companies](https://en.wikipedia.org/wiki/Big_Tech)).
+If you're not familiar with these kinds of problems, you probably need at least one month to prepare yourself.
+Start with easy problems and then move to problems of medium complexity (I suggest skipping hard problems unless your applying to [FANG companies](https://en.wikipedia.org/wiki/Big_Tech)).
 
 > **Q:** Do I need to pay for a particular course to prepare for the coding interview?<br>
 > **A:** No, you don't need to pay for any course because there are plenty of free and good resources available online, and you just need to know which ones are the best.
@@ -175,7 +176,7 @@ I use [Glassdoor](https://www.glassdoor.com) to check out salaries and reviews o
 
 I rely on a [Notion sheet](https://www.notion.so/templates/job-applications) to keep track of my job applications.
 This is important because with the time you will have a lot of applications and you will need to keep track of them.
-The worst thing that could happen is that you get an call from a recruiter and you don't remember the name of the company or the details of the position you applied for.
+The worst thing that could happen is that you get an call from a recruiter, and you don't remember the name of the company or the details of the position you applied for.
 
 Every time I applied, I filled the database with the following fields:
 
@@ -216,7 +217,7 @@ The in-person variant of the coding interview, in my view, offers a more engagin
 This is primarily due to the immediate feedback provided by the interviewer. 
 This real-time interaction not only allows for instant clarification of doubts and swift correction of errors, but also fosters a dynamic environment where problem-solving becomes a collaborative effort. 
 This interpersonal element tends to make the process more enjoyable and enriching.
-For example, in one of the interviews I was given one piece of paper at the time and 5 minutes to identify bugs and vulnerabilities within the Spring Boot Java application.
+For example, in one of the interviews, I was given one piece of paper at the time and 5 minutes to identify bugs and vulnerabilities within the Spring Boot Java application.
 At the end of the task the conversation eventually delved into a more profound discussion regarding achieving thread safety, enhancing performance, and devising elegant solutions to eliminate issues such as SQL injection and other vulnerabilities in the code.
 I'm sure that with the time I'm going to miss doing these kind of technical interviews.
 
@@ -233,7 +234,7 @@ If you are applying for a Software Engineer position, the questions will be rela
 The fourth step is an interview with the hiring manager.
 This signals that you are close to getting an offer.
 The hiring manager could invite you to a coffee or lunch.
-She just wants to make sure that **you are a good add for the team** (i.e., just double checking that you're not an asshole).
+She just wants to make sure that **you are a good addition for the team** (i.e., just double checking that you're not an asshole).
 
 # Offer
 
@@ -246,7 +247,7 @@ Give time to yourself and demonstrate that you are a valuable candidate who has 
 Once you decided to accept the offer, you need to negotiate things like the salary and the notice date.
 Always negotiate the salary! 
 Even if you are happy with the offer, you should negotiate it.
-After all, that's one the main drivers of your decision to leave academia $$$.
+After all, that's one of the main drivers of your decision to leave academia $$$.
 Isn't it? 
 
 I recommend reading the following articles from freeCodeCamp for additional insights on how to negotiate a job offer:
@@ -255,6 +256,16 @@ I recommend reading the following articles from freeCodeCamp for additional insi
 - [Ten Rules for Negotiating a Job Offer](https://www.freecodecamp.org/news/ten-rules-for-negotiating-a-job-offer-ee17cccbdab6/)
 - [How not to bomb your offer negotiation](https://www.freecodecamp.org/news/how-not-to-bomb-your-offer-negotiation-c46bb9bc7dea/)
 
+# Conclusion
+
+I hope this article has provided you with some insights and inspiration to make your transition from academia to industry.
+I believe this is a natural and rewarding step for many PhD students.
+It is a path that offers a wealth of opportunities for growth, learning, and personal development.
+Be brave and take the leap.
+
+If I could do it, so can you too!
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7048739294504529920" height="444" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
 # Further Reading
 
@@ -264,7 +275,7 @@ I recommend reading the following articles from freeCodeCamp for additional insi
 
 [^1]: Note that this article is not about whether you should stay in academia or not. It is about how to get a job in the industry if you decide to leave academia.
 
-[^2]: This happens for multiple reasons, eg., some employers don't care about your research experience, or they don't want to pay you more because you have a PhD.
+[^2]: This happens for multiple reasons, e.g., some employers don't care about your research experience, or they don't want to pay you more because you have a PhD.
 
 [^3]: There is, of course, a large part of the academic job that I still love.
 
