@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On the Use of Software Art for Scientific Outreach
+title: Software Art as a Mean of Scientific Outreach
 subtitle: TODO
 tags: science
 description: TODO
@@ -13,9 +13,9 @@ image: ../img/posts/2023/2023-07-20/what_is_software_cover.jpg
 share-img: ../img/posts/2023/2023-07-20/what_is_software_cover.jpg
 show-avatar: false
 toc: true
-date: 2023/07/20
+date: 2024/01/20
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 TODO
@@ -26,6 +26,22 @@ TODO
     I spend 3 hours explaining my 3 PhD contribution (DepClean, DepTrim, and JDBL) to a team of software artists. I summarized the results of my 5 years of research work on a large whiteboard.
   </figcaption>
 </figure>
+
+[//]: # (From Benoit's keynote)
+- [reth|read](https://rethread.art/)
+- https://github.com/bbaudry/swart-studio/tree/main/programming-keynote
+
+## Pioneers
+- [Order and Dissorder](http://fovarosikeptar.hu/en/exhibitions-2019-church-hall/disorder-in-order-the-art-of-vera-molnar/)
+- [Instructions](https://softwarediversity.eu/J1-003.jpg)
+- [Program](https://softwarediversity.eu/J2-091.jpg)
+- [Lines](https://jeanpierrehebert.com/docs/since the 70s/large-11.html)
+
+
+## Generative Art Today
+
+- https://reas.com/still_life_la/
+
 
 # Art for Illustrating Complexity
 
@@ -88,6 +104,12 @@ Examples in Computer Science:
 - [Daniel Shiffman](https://en.wikipedia.org/wiki/Daniel_Shiffman)'s [Coding Train](https://thecodingtrain.com/) is a community of enthusiasts learning coding through art. All videos are in his amazing [YouTube channel](https://www.youtube.com/@TheCodingTrain).
 
 # References
+
+
+
+
+
+
 
 [p5.js](https://p5js.org/) and [Processing](https://processing.org/) are two great tools for creative coding:
 
