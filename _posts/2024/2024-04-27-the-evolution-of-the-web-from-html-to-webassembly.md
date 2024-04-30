@@ -23,7 +23,7 @@ published: true
 
 I've been doing some frontend web development lately as part of my daily job.[^1]
 Along the way, I've been thinking on how the whole thing is built under the hood. 
-Obviously, the web technologies that we all use every day have changed and evolved over time.
+The web technologies that we all use every day have changed and evolved over time.
 While digging into this topic, I realized that some of the underlying technical solutions that fuel the World Wide Web are really brilliant, while others are still a mess.
 From an engineering perspective, there are many lessons we can learn from it.
 So I decided to write about it in this post.
@@ -383,7 +383,10 @@ This functionality promised to enrich the web experience by offering more sophis
 For example, Applets allowed playing games, filling interactive forms, and running complex web applications. 
 However, to leverage these capabilities, users were required to install a plugin that would facilitate the execution of these applets on their devices.
 
-Here's an example of an HTML page embedding a Java Applet. ote that in the browser cannot execute the `FileApplet.class` natively. To do so, it needs to have the JVM and a dedicated plugin installed. Therefore, Applets are platform-dependent:
+Here's an example of an HTML page embedding a Java Applet. 
+Note that in the browser cannot execute the `FileApplet.class` natively. 
+To do so, it needs to have the JVM and a dedicated plugin installed.
+Therefore, Applets were platform-dependent:
 
 {% highlight html linenos %}
 <html>
@@ -399,8 +402,8 @@ Here's an example of an HTML page embedding a Java Applet. ote that in the brows
 {% endhighlight %}
 
 The reliance on plugins during this period was not unique to Java.
-Using plugins was a common pattern back then.
-Technologies such as Shockwave, Flash, Director, Real Player, and QuickTime also depended on plugins to enhance browser capabilities and deliver content that native web technologies at the time could not handle. 
+Using plugins to extend browser's functionality was a common pattern back then.
+For example, technologies such as Shockwave, Flash, Director, Real Player, and QuickTime also depended on plugins to enhance browser capabilities and deliver content that native web technologies at the time could not handle. 
 These plugins provided rich multimedia experiences and interactive content on websites, filling a crucial gap in browser technology.
 Yet, this approach came with significant drawbacks, particularly concerning security vulnerabilities, which were a constant source of headaches for developers and users alike.
 
@@ -422,12 +425,15 @@ sequenceDiagram
     Note over Browser, Applet: Plugin required for Applet execution
 ```
 
-The plugin era began to wane with significant shifts in the technology landscape.
+<aside class="quote">
+    <em>“The failure of web plugins ended up making browsers more powerful in the end.”</em> 
+</aside>
+The plugin era began to wane with significant shifts.
 Notably, in 2007 Apple released the iPhone and [explicitly decided against supporting Java Applets](https://www.theregister.com/2007/10/29/no_java_for_leopard/), Shockwave, Flash, and other plugins on the new device.
-This pushed developers to use JavaScript and HTML for creating web applications instead.
-And that was the end of the plugin paradigm. 
+This pushed developer to rely only on JavaScript and HTML for creating web applications.
 As mobile internet usage surged and security concerns grew, the industry moved towards more secure, native web technologies.
 This transition underscored a broader trend towards enhancing browser capabilities and standardizing web technologies to create a safer and more seamless user experience.
+So in the end, browsers became more powerful, and that was the end of the plugin paradigm!
 
 ## CSS and Dynamic Web Design
 
@@ -649,6 +655,10 @@ Although descentralization is not a silver bullet, it has the potential to creat
 
 {% badge /img/badges/WebAssembly_Logo.svg 140 https://webassembly.org/ %}
 
+
+<aside class="quote">
+    <em>“WebAssembly is the latest attempt to reduce the pervasiveness of JavaScript on the web.”</em> 
+</aside>
 [//]: # (Overcoming JavaScript's Limitations with WebAssembly)
 JavaScript is (still) the predominant scripting language in modern web browsers.
 However, it has significant limitations due to its inherent language characteristics. 
@@ -698,15 +708,19 @@ As WebAssembly continues to evolve, it promises to further revolutionize the dev
 
 # Summary
 
-Valuable lessons emerge from the evolution of web technologies. These include the necessity for vendor agreement to ensure technology success, the constant shifts between centralizing computing power in servers or distributing it among users (both of which contribute to technological breakthroughs), and the critical need for a secure and efficient web runtime.
-Moreover, we've learned that moving away from JavaScript is still quite challenging.
+<aside class="quote">
+    <em>“JavaScript seems impossible to kill.”</em> 
+</aside>
+Valuable lessons emerge from the evolution of web technologies. 
+These include _i_) the necessity for vendor agreement to ensure technology success, _ii_) the constant shifts between centralizing computing power in servers or distributing it among users (both of which contribute to technological breakthroughs), and _iii_) the critical need for a secure and efficient web runtime in the browser.
+Moreover, we've learned that moving away from JavaScript is still quite challenging!
 
 But, for now, I'd like to leave you with a few observations:
 
-1. **Simplicity and Efficiency Holds**: Foundational web technologies like static HTML and server-side rendering remain useful for delivering content that rarely changes or doesn't requires dynamic processing. These technologies were great in 90s and continue to be effective and cost-efficient solutions even in 2024 for many use cases.
+1. **Simplicity and Efficiency Hold**: Foundational web technologies like static HTML and server-side rendering remain useful for delivering content that rarely changes or doesn't require dynamic processing. These technologies were great in the 90s and continue to be effective and cost-efficient solutions even in 2024 for many use cases.
 2. **User Experience Matters**: From the introduction of CSS for enhanced web aesthetics to the development of SPAs for dynamic user interactions, the focus on improving user experience has led to the creation of more dynamic technologies for real-time DOM manipulation and improved data fetching, leading to better user experience.
 3. **Interactivity and Real-Time Communication Are Essential**: Technologies such as client-side rendering, AJAX, and WebSockets have redefined user engagement, providing experiences as smooth and responsive as those of desktop applications.
-4. **Security and Performance Are Continuous Priorities**: Technologies like WebAssembly offer robust security models and enhanced performance, enabling developers to create high-performance applications with improved security features.
+4. **Security and Performance Are Continuous Priorities**: Technologies like WebAssembly offer robust security models and enhanced performance, enabling developers to create high-performant applications with improved security features.
 5. **Innovation and Adaptability is Not Optional**: Developers need to remain flexible and embrace new technologies like WebAssembly and dApps to create cutting-edge web applications that meet the expectations of modern users.
 
 # Resources
