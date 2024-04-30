@@ -18,7 +18,7 @@ toc: true
 mathjax: false
 date: 2024/04/27
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 I've been doing some frontend web development lately as part of my daily job.[^1]
