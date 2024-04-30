@@ -7,17 +7,6 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>On the Rise, Decline, and Persistence of Web Technologies</title>
-        <description>
-          From Static HTML Pages to WebAssembly - 
-          I’ve been doing some frontend web development lately as part of my daily job.1 Along the way, I’ve been thinking on how the whole thing is built under the hood. Obviously, the web technologies that we all use every day have changed and evolved over time. While digging into this...
-        </description>
-        <pubDate>Sat, 27 Apr 2024 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html</guid>
-      </item>
-    
-      <item>
         <title>The Most Relevant Technical Skill in My Career</title>
         <description>
           It isn&apos;t Java coding - 
@@ -37,6 +26,17 @@
         <pubDate>Tue, 13 Feb 2024 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html</guid>
+      </item>
+    
+      <item>
+        <title>Software Art as a Mean of Scientific Outreach</title>
+        <description>
+          TODO - 
+          TODO I spend 3 hours explaining my 3 PhD contribution (DepClean, DepTrim, and JDBL) to a team of software artists. I summarized the results of my 5 years of research work on a large whiteboard. [reth read](https://rethread.art/) https://github.com/bbaudry/swart-studio/tree/main/programming-keynote Pioneers Order and Dissorder Instructions Program Lines Generative Art Today https://reas.com/still_life_la/ Art...
+        </description>
+        <pubDate>Sat, 20 Jan 2024 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/software-art-as-a-mean-of-scientific-outreach.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/software-art-as-a-mean-of-scientific-outreach.html</guid>
       </item>
     
       <item>
