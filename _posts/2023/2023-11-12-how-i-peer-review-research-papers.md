@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TODO
-subtitle: TODO
-tags: TODO
+title: How Do I Peer Review Research Papers?
+subtitle: The time efficient way
+tags: science
 description: |
   TODO
 keywords:
@@ -31,13 +31,7 @@ published: false
 [//]: # (- The bullet point summary)
 [//]: # (Then I fill in the details.)
 
-
 TODO
-
----
-[//]: # (======================================================================================)
-
-# IMAGE
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-MM-DD/IMG.jpg alt: "TODO" %}
@@ -46,48 +40,7 @@ TODO
   </figcaption>
 </figure>
 
-# QUOTE
-
-> “TODO”
-> ― <cite><a href="URL">FULANO DE TAL</a></cite>
-
-# SIDE QUOTE
-
-<aside class="quote">
-    <em>“TODO.”</em> 
-    ― <cite><a href="URL">FULANO DE TAL</a></cite>
-</aside>
-
-# SIDE IMAGE
-
-{% badge /img/badges/fundamentals-of-software-architecture-book.png 140 https://amzn.to/2VMCwVF %}
-
-# DIAGRAM
-
-[//]: # (see https://mermaid-js.github.io)
-```mermaid
-%%{init: {'theme':'base'}}%%
-flowchart TB;
-U(["👩 User"]) --> |"📒 Plaintext"| C["Encryption Process"]
-KEY["🔑 Symmetric Key"]
-KEY --> C
-C --> K["🔒 Ciphertext"]
-K --> F["Decryption Process"]
-KEY --> F
-F --> G["📒 Plaintext"]
-```
-
-# CODE
-
-{% highlight java linenos %}
-TODO
-{% endhighlight %}
-
-# VIDEO
-
-<div class="container-youtube">
-  <iframe width="560" height="349" src="https://www.youtube.com/embed/IrFS2e-4gqU" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+# TODO
 
 # Resources
 
