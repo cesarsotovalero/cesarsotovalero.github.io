@@ -361,6 +361,11 @@ AJAX was initially made possible by the [XMLHttpRequest](https://developer.mozil
 This technology allowed web pages to request additional data from servers without needing a page refresh, leading to more dynamic and responsive web applications. 
 Today AJAX is a fundamental component of modern web development, enabling continuous data exchange between browsers and servers and significantly enhancing the user experience on the internet.
 
+<aside class="quote">
+    <em>“Any application that <i>can</i> be written in JavaScript, <i>will</i> eventually be written in JavaScript”</em> 
+    ― <cite><a href="https://blog.codinghorror.com/the-principle-of-least-power/">Atwood's Law</a></cite>
+</aside>
+
 [//]: # (Node.js: Unifying Client and Server-Side Development)
 The development landscape took a dramatic turn with the creation of [Node.js](https://nodejs.org/en) in May 2009.
 Node.js is an open-source cross-platform runtime environment that allows developers to use JavaScript for server-side application development.
