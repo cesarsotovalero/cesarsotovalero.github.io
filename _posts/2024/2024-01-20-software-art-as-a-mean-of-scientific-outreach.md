@@ -27,20 +27,84 @@ TODO
   </figcaption>
 </figure>
 
-[//]: # (From Benoit's keynote)
+[//]: # (================================ From Benoit's keynote ==============================)
+# Art
 - [reth|read](https://rethread.art/)
+![img_3.png](img_3.png)
+
 - https://github.com/bbaudry/swart-studio/tree/main/programming-keynote
 
 ## Pioneers
+[Vera Molnar](http://www.veramolnar.com/)
 - [Order and Dissorder](http://fovarosikeptar.hu/en/exhibitions-2019-church-hall/disorder-in-order-the-art-of-vera-molnar/)
 - [Instructions](https://softwarediversity.eu/J1-003.jpg)
 - [Program](https://softwarediversity.eu/J2-091.jpg)
+ 
+Jean-Pierre Hébert
+- algorists
 - [Lines](https://jeanpierrehebert.com/docs/since the 70s/large-11.html)
 
-
 ## Generative Art Today
+- [Casey Reas](https://reas.com/still_life_la/)
+- [Lauren Lee McCarthy](https://lauren-mccarthy.com/Im-glad-you-asked)
+- [Zach Liebermann](http://zach.li/)
+- [Tyler Hobbs](https://tylerxhobbs.com/)
+- [Lisa Orth](https://www.lisaorth.xyz/)
 
-- https://reas.com/still_life_la/
+NFT
+- [opensea](https://opensea.io/assets/ethereum/0xe034bb2b1b9471e11cf1a0a9199a156fb227aa5d/197)
+- [fxhash](https://www.fxhash.xyz/gentk/152225)
+
+# Programming
+## Programming Digital Art
+Generative art libraries
+- [Processing](https://processing.org/)
+- [p5.js](https://p5js.org/)
+- [nannoup](https://nannou.cc/)
+- [tidal cycles](https://github.com/tidalcycles/Tidal)
+ 
+Visual programming 
+- [Pure Data](https://puredata.info/)
+- [Max](https://cycling74.com/downloads)
+- [Touchdesigner](https://derivative.ca/UserGuide/TouchDesigner)
+
+## Programming Physical Art
+- Programming [drawing machines](https://www.instagram.com/reel/C4IN6QDNeR6/?igsh=MXFmaGw2ZzI0OTU2bQ==)
+- Programming [lights](http://softwarediversity.eu/unfold-R1.jpg)
+- Programming [sound](https://www.sodapop.it/phnx/wp-content/uploads/2015/03/ikeda-live-interzona-copertina.jpg)
+- [Gcode](https://en.wikipedia.org/wiki/G-code)
+  - [Python plot](https://axidraw.com/doc/py_api/#options-general)
+- [Art-Net](https://en.wikipedia.org/wiki/Art-Net)
+  - [DMX](https://en.wikipedia.org/wiki/DMX512)
+  - [artnet_protocol crate](https://docs.rs/artnet_protocol/latest/artnet_protocol/)
+- [OSC](https://en.wikipedia.org/wiki/Open_Sound_Control)
+
+# Art for Programming
+- [Introduction to programming](https://dl.acm.org/doi/pdf/10.1145/3490149.3503667?casa_token=GnTaLCmXWHEAAAAA:0OF4OqDv1f5RZjoDd_G2yTVWeJrsjKmF6DDwPcAg9fFwopDEqcHg1uHq8Tb9ArfXO8loEs7AvAe_Iw)
+- [Algorithmic art course](https://github.com/bbaudry/algorithmic-art-course/)
+- [rethread.art](https://rethread.art/)
+- [Programming abstractions](https://github.com/rethread-studio/algorithmic-art-course/issues/6)
+
+
+# Conclusions
+- Art is an application domain
+- Artists program and develop open source
+- Artists and programmers love the precision and executability of generative art
+
+# Resources
+
+- [Art on Clojure TV](https://www.youtube.com/@ClojureTV/search?query=art)
+- [Right Click Save](https://www.rightclicksave.com/)
+- [fx(hash)](www.fxhash.xyz)
+- [Vera Molnar](http://www.veramolnar.com/)
+- [Libraries for algorithmic art](https://github.com/rethread-studio/algorithmic-art-course/issues/2)
+
+
+
+
+
+
+
 
 
 # Art for Illustrating Complexity

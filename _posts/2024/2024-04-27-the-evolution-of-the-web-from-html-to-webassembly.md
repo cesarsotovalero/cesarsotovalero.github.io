@@ -709,7 +709,7 @@ As WebAssembly continues to evolve, it promises to further revolutionize the dev
 # Summary
 
 <aside class="quote">
-    <em>“JavaScript seems impossible to kill.”</em> 
+    <em>“Despite many attempts, JavaScript seems impossible to replace for the time being.”</em> 
 </aside>
 Valuable lessons emerge from the evolution of web technologies. 
 These include _i_) the necessity for vendor agreement to ensure technology success, _ii_) the constant shifts between centralizing computing power in servers or distributing it among users (both of which contribute to technological breakthroughs), and _iii_) the critical need for a secure and efficient web runtime in the browser.

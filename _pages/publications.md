@@ -31,6 +31,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   <a href="https://doi.org/10.1109/TSE.2023.3324950"><i class="icon i-doi"></i> 10.1109/TSE.2023.3324950</a>
   [<i class="fab fa-github"></i> Tool](https://github.com/ASSERT-KTH/deptrim)
   [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/deptrim-experiments)
+  [Slides](https://docs.google.com/presentation/d/16ZDgoSNklJuQBWTQxBMVo37hKvnL4D849voH21Xroj4/edit?usp=sharing)
 
 - <img alt="" title="Books and Theses" src="https://dblp.uni-trier.de/img/n.png" style="background: #f8c91f; width: 18px; height: 18px"> 
   **Debloating Java Dependencies**. 
