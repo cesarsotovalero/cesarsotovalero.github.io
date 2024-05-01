@@ -22,7 +22,7 @@ use-site-title: true
 {% endfor %}
 
 [//]: # (count all the blog posts)
-{% assign published_posts = site.posts | where:"published", true %}
+{% assign published_posts = site.posts | where: "published", true %}
 
 [//]: # (count the number of tags)
 {% assign all_tags = "" | split: "" %}

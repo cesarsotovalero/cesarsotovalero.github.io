@@ -3,6 +3,7 @@ permalink: collaborations.html
 layout: page
 title: Collaborations
 subtitle: 🤝
+description: List of research topics of interest to César Soto Valero.
 published: true
 ---
 

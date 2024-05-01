@@ -3,6 +3,7 @@ permalink: about-me.html
 layout: page
 title: About me
 subtitle: 👨🏼‍💻
+description: César Soto Valero is a computer scientist, software engineer, and content creator.
 ---
 
 [//]: # (Profile to view: https://www.zeileis.org/)

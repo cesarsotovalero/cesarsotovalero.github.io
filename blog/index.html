@@ -1,6 +1,7 @@
 ---
 layout: page
 title: My Blog
+description: "All the blog posts written by Cesar Soto Valero"
 ---
 
 {% include subscribe.html %}
@@ -33,8 +34,6 @@ title: My Blog
    <a href="/tags" class="list-filter">Tags ({{ unique_tags.size }})</a>
 </div>
 
-
-
 <div class="posts-list">
    {% for post in site.posts %}
    <article class="post-preview">
@@ -50,13 +49,11 @@ title: My Blog
 
      <p class="post-meta-index">
         Posted on {{ post.date | date: "%B %-d, %Y" }}
-<!--            <span id="comments-count">-->
-<!--                 <i class="fas fa-comments"></i>-->
-<!--                 <a href="https://www.cesarsotovalero.net{{post.url}}#disqus_thread">0 comments</a>-->
-<!--              </span>-->
+        <!--            <span id="comments-count">-->
+        <!--                 <i class="fas fa-comments"></i>-->
+        <!--                 <a href="https://www.cesarsotovalero.net{{post.url}}#disqus_thread">0 comments</a>-->
+        <!--              </span>-->
      </p>
-
-
          </span>
 
       <div class="post-entry-container">

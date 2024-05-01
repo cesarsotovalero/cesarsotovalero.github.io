@@ -3,6 +3,7 @@ permalink: software-debloating-talks.html
 layout: page
 title: Software Debloating Talks
 subtitle: Living talks list
+description: A living list of talks related to software debloating and software specialization.
 keywords: software debloat,GitHub projects,software engineering
 image: ../img/pages/software-debloating-papers/debloating.png
 ---

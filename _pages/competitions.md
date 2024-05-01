@@ -3,6 +3,7 @@ permalink: competitions.html
 layout: page
 title: Competitions
 subtitle: 💪
+description: List of competitive events where César Soto Valero has participated.
 published: true
 ---
 

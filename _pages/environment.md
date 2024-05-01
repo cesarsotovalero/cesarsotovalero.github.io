@@ -3,6 +3,7 @@ permalink: environment.html
 layout: page
 title: Environment
 subtitle: Work setup
+description: List of software and tools used by César Soto Valero.
 published: false
 ---
 
