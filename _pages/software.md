@@ -1,8 +1,9 @@
 ---
 permalink: software.html 
 layout: page 
-title: Software 
-subtitle: 💻 
+title: Software
+subtitle: 💻
+description: List of software projects created by César Soto Valero.
 published: true
 ---
 

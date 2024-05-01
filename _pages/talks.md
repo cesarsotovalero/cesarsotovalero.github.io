@@ -2,6 +2,7 @@
 permalink: talks.html
 layout: page
 title: Talks
+description: Talks and presentations by César Soto Valero  
 subtitle: 📢
 published: true
 ---

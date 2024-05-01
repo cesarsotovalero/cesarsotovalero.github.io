@@ -3,6 +3,7 @@ permalink: software-debloating-terms.html
 layout: page
 title: Software Debloating
 subtitle: A list of related terms
+description: A list of terms related to software debloating and software specialization.
 tags: debloating
 keywords: software debloating,living review,survey,software engineering
 image: ../img/pages/software-debloating-papers/debloating.png 

@@ -3,6 +3,7 @@ permalink: software-debloating-papers.html
 layout: page
 title: Software debloating papers
 subtitle: Living literature review
+description: A living review of articles related to "program debloating" and "software debloating."
 tags: debloating
 keywords: software debloat,living review,survey,software engineering
 image: ../img/pages/software-debloating-papers/debloating.png 

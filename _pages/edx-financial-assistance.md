@@ -3,6 +3,7 @@ permalink: edx-finantial-assistance.html
 layout: page
 title: edX
 subtitle: Financial assistance
+description: Request for financial assistance to complete a course on edX.
 published: false
 ---
 

@@ -137,8 +137,8 @@ syntax_highlighter_opts:
   block:
     line_numbers: true
 permalink: /blog/:title.html
-paginate: 20
-paginate_path: "/blog/page:num/"
+#paginate: 20
+#paginate_path: "/blog/page:num/"
 excerpt_separator: <!--more-->
 
 # Default YAML values (more information on Jekyll's site)

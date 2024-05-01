@@ -3,6 +3,7 @@ permalink: courses.html
 layout: page
 title: Courses
 subtitle: 🎓
+description: List of courses completed by César Soto Valero.
 published: true
 ---
 

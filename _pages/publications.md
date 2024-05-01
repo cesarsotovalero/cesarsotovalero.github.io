@@ -3,6 +3,7 @@ permalink: publications.html
 layout: page
 title: Publications
 subtitle: 📰
+description: List of academic papers published by César Soto Valero.
 published: true
 ---
 

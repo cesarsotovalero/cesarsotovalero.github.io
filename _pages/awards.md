@@ -3,6 +3,7 @@ permalink: awards.html
 layout: page
 title: Awards
 subtitle: 🏆
+description: List of awards and certificates of César Soto Valero.
 published: true
 ---
 

@@ -2,6 +2,7 @@
 permalink: search.html
 layout: page
 title: Search
+description: Search this site
 subtitle: 🔎
 ---
 
