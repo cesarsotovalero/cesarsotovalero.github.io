@@ -362,7 +362,7 @@ This technology allowed web pages to request additional data from servers withou
 Today AJAX is a fundamental component of modern web development, enabling continuous data exchange between browsers and servers and significantly enhancing the user experience on the internet.
 
 <aside class="quote">
-    <em>“Any application that <i>can</i> be written in JavaScript, <i>will</i> eventually be written in JavaScript”</em> 
+    <em>“Any application that <em>can</em> be written in JavaScript, <em>will</em> eventually be written in JavaScript”</em> 
     ― <cite><a href="https://blog.codinghorror.com/the-principle-of-least-power/">Atwood's Law</a></cite>
 </aside>
 
