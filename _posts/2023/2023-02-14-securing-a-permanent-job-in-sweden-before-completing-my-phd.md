@@ -263,9 +263,7 @@ I believe this is a natural and rewarding step for many PhD students.
 It is a path that offers a wealth of opportunities for growth, learning, and personal development.
 Be brave and take the leap.
 
-If I could do it, so can you too!
-
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7048739294504529920" height="444" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+If [I could do it](https://www.linkedin.com/posts/cesarsotovalero_seb-career-onboarding-activity-7048739295892770816-KFKR?utm_source=share&utm_medium=member_desktop), so can you too!
 
 # Further Reading
 

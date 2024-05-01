@@ -30,8 +30,6 @@ TODO
 [//]: # (================================ From Benoit's keynote ==============================)
 # Art
 - [reth|read](https://rethread.art/)
-![img_3.png](img_3.png)
-
 - https://github.com/bbaudry/swart-studio/tree/main/programming-keynote
 
 ## Pioneers
