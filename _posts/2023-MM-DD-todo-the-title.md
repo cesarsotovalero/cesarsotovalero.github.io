@@ -34,36 +34,28 @@ published: false
 
 TODO
 
----
-[//]: # (======================================================================================)
-
 # IMAGE
-
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-MM-DD/IMG.jpg alt: "TODO" %}
+  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/img-placeholder.png alt: "TODO" %}
   <figcaption class="stroke"> 
     &#169; TODO
   </figcaption>
 </figure>
 
 # QUOTE
-
 > “TODO”
 > ― <cite><a href="URL">FULANO DE TAL</a></cite>
 
 # SIDE QUOTE
-
 <aside class="quote">
     <em>“TODO.”</em> 
     ― <cite><a href="URL">FULANO DE TAL</a></cite>
 </aside>
 
 # SIDE IMAGE
-
 {% badge /img/badges/fundamentals-of-software-architecture-book.png 140 https://amzn.to/2VMCwVF %}
 
 # DIAGRAM
-
 [//]: # (see https://mermaid-js.github.io)
 ```mermaid
 %%{init: {'theme':'base'}}%%
@@ -78,13 +70,11 @@ F --> G["📒 Plaintext"]
 ```
 
 # CODE
-
 {% highlight java linenos %}
 TODO
 {% endhighlight %}
 
 # VIDEO
-
 <div class="container-youtube">
   <iframe width="560" height="349" src="https://www.youtube.com/embed/IrFS2e-4gqU" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
