@@ -274,13 +274,17 @@ for c in clr:
 
 The output is as following:
 
-![The figure shows a working example of Python code embedded in a LaTeX file in Overleaf.](/img/posts/2021/python_executed_in_latex_document.png "Python code executed in a LaTeX document")
-
-
+# IMAGE
+<figure class="jb_picture">
+  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2021/python_executed_in_latex_document.png alt: "Python code executed in a LaTeX document" %}
+  <figcaption class="stroke"> 
+    The figure shows a working example of Python code embedded in a LaTeX file in Overleaf.
+  </figcaption>
+</figure>
 
 # Conclusion
 
 LaTeX is not only an awesome tool to create beautiful documents.
 It also provides packages to format and compute numeric values as variables.
 I've used all the custom commands presented in this post to ease the writing process of [my research papers](https://www.cesarsotovalero.net/publications).
-Since then, dealing with numeric values and percentages has never been easier. 
+Since then, dealing with numeric values and percentages has never been easier.

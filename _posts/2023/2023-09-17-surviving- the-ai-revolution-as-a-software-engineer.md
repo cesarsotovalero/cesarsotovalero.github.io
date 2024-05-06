@@ -88,15 +88,15 @@ The part above the simulacrum is the personality of the model, the consumable la
 This layer on top is what ultimately determines the value of the AI system.
 In the context of source code, the personality of the model is the programming language, the coding style, the specific framework, and the business rules of the software application.
 
-<aside class="quote">
-    <em>“Simply put, if you don't use AI (as a developer) today, you wake up out of the market tomorrow morning.”</em> 
-</aside>
-
 [//]: # (The rise of AI platforms from large companies)
 The market rat race is fierce to take the most out of these new models.
 Big tech companies are heavily competing to become the next AI platform for businesses and developers.
 Microsoft is at the head of the race today, leveraging its AI ecosystem by directly partnering with OpenAI, deploying its successful GPT models on top of its Bing search engine and [GitHub Copilot](https://github.com/features/copilot).
 On the other hand, Meta released its [<i class="fab fa-github"></i> LLaMa 2](https://github.com/facebookresearch/llama) trained model and made it open-source (good move Mark!), whereas Google struggles to not miss out the party and just deployed its Bard[^10] model on top of its [Duet AI](https://workspace.google.com/blog/product-announcements/duet-ai) platform.
+
+<aside class="quote">
+    <em>“Simply put, if you don't use AI (as a developer) today, you wake up out of the market tomorrow morning.”</em> 
+</aside>
 
 [//]: # (The threat of AI for developers)
 The bets have been gigantic because AI has the potential to radically disrupt the software industry.
@@ -109,8 +109,10 @@ The potential applications are virtually limitless.
 As AI continues to evolve, it is expected to permeate every facet of information flow services, spanning from the automation of email responses to advanced data analytics that can autonomously create plots and synthesize large volumes of data into comprehensive summaries, thereby expediting decision-making processes.
 
 <aside class="quote">
-    <em>“A fool with a tool is still a fool.” -- <cite>Grady Booch</cite></em> 
+    <em>“A fool with a tool is still a fool.”</em>
+    <cite><br> ― <a href="https://en.wikipedia.org/wiki/Grady_Booch">Grady Booch</a></cite>
 </aside>
+
 
 [//]: # (Personal experience with AI)
 From my personal perspective, I think it's important to understand that, although powerful, current LLMs are all basically statistical models of words.
@@ -131,7 +133,7 @@ I believe that to survive the AI revolution, we need to focus on nurturing the s
 In particular, those that are still valuable in the job market.
 Grounding these skills with our innate human attributes is what poses a substantial challenge for machines to mimic or automate, thereby standing as our defense against potential labor obsolescence. 
 
-The following is a list of 10 skills that I believe will not just be beneficial but absolutely vital in the next years dominated by AI:[^6]
+The following is a list of 10 skills[^6] that I believe will not just be beneficial but absolutely vital in the next years dominated by AI:
 
 [//]: # (---------------------------------------------------------------)
 **#1: Getting understanding.**

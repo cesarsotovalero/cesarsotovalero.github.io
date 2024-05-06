@@ -20,7 +20,7 @@ In this post, I'll describe the process of releasing a new artifact in Maven Cen
 
 
 <figure class="jb_picture">
-{% responsive_image path: img/posts/2020/mdg.png alt:"Excerpt of 1% of the whole graph of Maven artifacts" %}
+{% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2020/mdg.png alt: "Excerpt of 1% of the whole graph of Maven artifacts" %}
   <figcaption class="stroke"> 
 &#169; Excerpt of 1% of the Maven Dependency Graph of software artifacts. <a href="https://dl.acm.org/doi/10.1109/MSR.2019.00060">Source</a>.
 </figcaption>
@@ -34,7 +34,7 @@ First, you need to create a JIRA account and submit a ticket there requesting fo
 1.  [Create a JIRA account](https://issues.sonatype.org/secure/Signup!default.jspa)
 2.  [Create a New Project ticket](https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134)
 
-A staging repository is already configured for the requested GroupId, you need to find someone with a deployer role that comment on the ticket to verify your request. 
+A staging repository is already configured for the requested GroupId, you need to find someone with a deployer role that comments on the ticket to verify your request. 
 Below is an example of a ticket that I created requesting a repository for the namespace `se.kth.castor`
 
 ![](../../img/posts/2020/sonatype_screeshot.png)
@@ -180,7 +180,7 @@ After the approval of the ticket, you need to add additional information to the 
 </build>
 {% endhighlight %}
 
-- Follow [this instructions](https://central.sonatype.org/pages/working-with-pgp-signatures.html) to encrypt your artifact with [gpg2](https://linux.die.net/man/1/gpg2) and distribute your public key to a key server (e.g., [http://keys.gnupg.net](http://keys.gnupg.net)). Do not forget to choose a passphrase to protect your secret key. Then add your gpg credentials with your passphrase to your Maven`settings.xml` file locally and use the [Sonatype Nexus repository manager](https://oss.sonatype.org/) as the server :
+- Follow [these instructions](https://central.sonatype.org/pages/working-with-pgp-signatures.html) to encrypt your artifact with [gpg2](https://linux.die.net/man/1/gpg2) and distribute your public key to a key server (e.g., [http://keys.gnupg.net](http://keys.gnupg.net)). Do not forget to choose a passphrase to protect your secret key. Then add your gpg credentials with your passphrase to your Maven`settings.xml` file locally and use the [Sonatype Nexus repository manager](https://oss.sonatype.org/) as the server :
 
 {% highlight xml linenos %}
 <settings>

@@ -21,6 +21,7 @@ author: cesarsotovalero
 published: true
 ---
 
+
 I've been doing some frontend web development lately as part of my daily job.[^1]
 Along the way, I've been thinking on how the whole thing is built under the hood. 
 The web technologies that we all use every day have changed and evolved over time.
@@ -363,7 +364,7 @@ Today AJAX is a fundamental component of modern web development, enabling contin
 
 <aside class="quote">
     <em>“Any application that <em>can</em> be written in JavaScript, <em>will</em> eventually be written in JavaScript”</em> 
-    ― <cite><a href="https://blog.codinghorror.com/the-principle-of-least-power/">Atwood's Law</a></cite>
+    <cite><br> ― <a href="https://blog.codinghorror.com/the-principle-of-least-power/">Atwood's Law</a></cite>
 </aside>
 
 [//]: # (Node.js: Unifying Client and Server-Side Development)
@@ -660,16 +661,16 @@ Although descentralization is not a silver bullet, it has the potential to creat
 
 {% badge /img/badges/WebAssembly_Logo.svg 140 https://webassembly.org/ %}
 
-
-<aside class="quote">
-    <em>“WebAssembly is the latest attempt to reduce the pervasiveness of JavaScript on the web.”</em> 
-</aside>
 [//]: # (Overcoming JavaScript's Limitations with WebAssembly)
 JavaScript is (still) the predominant scripting language in modern web browsers.
 However, it has significant limitations due to its inherent language characteristics. 
 For example, each JavaScript engine must parse and recompile the code at runtime, which induces substantial overhead and contributing to lengthy website load times. 
 Additionally, JavaScript's lack of memory isolation poses security risks by potentially allowing the extraction of information from other processes. 
 [As I mentioned before](../blog/the-evolution-of-the-web-from-html-to-webassembly.html#java-applets-and-plugins), attempts to replace or supplement JavaScript with other languages, such as Java Applets, Microsoft ActiveX, and Silverlight, have historically failed due to security concerns and lack of community consensus among browser vendors.
+
+<aside class="quote">
+    <em>“WebAssembly is the latest attempt to reduce the pervasiveness of JavaScript on the web.”</em> 
+</aside>
 
 [//]: # (Emscripten and the Asm.js Experiment)
 In 2014, the [Emscripten](https://emscripten.org/) technology represented the most solid attempt in overcoming JavaScript's limitations.
@@ -717,7 +718,7 @@ As WebAssembly continues to evolve, it promises to further revolutionize the dev
     <em>“Despite many attempts, JavaScript seems impossible to replace for the time being.”</em> 
 </aside>
 Valuable lessons emerge from the evolution of web technologies. 
-These include _i_) the necessity for vendor agreement to ensure technology success, _ii_) the constant shifts between centralizing computing power in servers or distributing it among users (both of which contribute to technological breakthroughs), and _iii_) the critical need for a secure and efficient web runtime in the browser.
+These include _i)_ the necessity for vendor agreement to ensure technology success, _ii)_ the constant shifts between centralizing computing power in servers or distributing it among users (both of which contribute to technological breakthroughs), and _iii)_ the critical need for a secure and efficient web runtime in the browser.
 Moreover, we've learned that moving away from JavaScript is still quite challenging!
 
 But, for now, I'd like to leave you with a few observations:

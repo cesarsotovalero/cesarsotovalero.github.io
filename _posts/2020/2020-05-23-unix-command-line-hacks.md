@@ -14,16 +14,18 @@ date: 2020/5/23
 published: true
 ---
 
-I want to share my personal notes of the [edX](www.edx.org) course [Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering), by Prof. Diomidis Spinellis. I attended this course from March to June, 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and it makes me consider online education very seriously, as it provides an excellent way of learning from top courses, given by top universities, and tough by top experts in the world.
 
 <aside class="quote">
-    <em>“Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill.”</em> ― <cite>Diomidis Spinellis </cite>
+    <em>“Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill.”</em> 
+    <cite><br> ― <a href="https://en.wikipedia.org/wiki/Diomidis_Spinellis">Diomidis Spinellis</a></cite>
 </aside>
+
+I want to share my personal notes of the [edX](https://www.edx.org/) course [Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering), by Prof. Diomidis Spinellis. I attended this course from March to June 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and it makes me consider online education very seriously, as it provides an excellent way of learning from top courses, given by top universities, and tough by top experts in the world.
 
 These notes are not organized in any specific manner. 
 So, they are actually a bunch of very disordered Unix command line hacks and tricks :grin:.
 
-# Display elapsed time from the start to the end of process
+# Display elapsed time from the start to the end of the process
 
 {% highlight bash linenos %}
 start=$(date +%s) 
@@ -47,7 +49,7 @@ copy afile bfile || echo Copy failed # the echo will be executed
 
 ## For
 
-Function that passes input timezone and convert it to a desire time zone. To use it, run `showtime Europe/Sweden America/La_Habana 11:45`
+Function that passes input timezone and converts it to a desire time zone. To use it, run `showtime Europe/Sweden America/La_Habana 11:45`
 
 {% highlight bash linenos %}
 showtime() 
@@ -121,7 +123,7 @@ fi
 
 # xargs
 
-Executes the commands repeatedly to the output. Apply a set of commands as arguments to a command. The following program counts the number of lines of files in current directory
+Executes the commands repeatedly to the output. Apply a set of commands as arguments to a command. The following program counts the number of lines of files in the current directory.
 
 {% highlight bash linenos %}
 find . -type f | # Output the name of all files
@@ -132,8 +134,7 @@ wc -l # Count number of lines
 
 # case
 
-Allows to run specific command based on pattern matching.
-
+Allows running specific command based on pattern matching.
 
 {% highlight bash linenos %}
 case $(uname) in Linux
@@ -719,11 +720,11 @@ en_US.UTF-8
 
 # References
 
-- [Unix command specification](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html)
-- [http://conqueringthecommandline.com](http://conqueringthecommandline.com)
-- [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
-- [http://www.bashoneliners.com](http://www.bashoneliners.com)
-- [https://www.commandlinefu.com](https://www.commandlinefu.com)
-- [https://explainshell.com/](https://explainshell.com/)
+- [:earth-americas: Unix command specification](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html)
+- [:earth-americas: http://conqueringthecommandline.com](http://conqueringthecommandline.com)
+- [:earth-americas: The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
+- [:earth-americas: http://www.bashoneliners.com](http://www.bashoneliners.com)
+- [:earth-americas: https://www.commandlinefu.com](https://www.commandlinefu.com)
+- [:earth-americas: https://explainshell.com/](https://explainshell.com/)
 - [UNIX For Beginners — Second Edition](https://wolfram.schneider.org/bsd/7thEdManVol2/beginners/beginners.pdf)
 

@@ -19,6 +19,8 @@ author: cesarsotovalero
 published: true
 ---
 
+{% youtube IrFS2e-4gqU %}
+
 Pursuing a PhD is a unique and personal experience.
 Admittedly, it is a journey ~~mostly~~ driven by personal ambitions and pride.
 The decision to begin this journey (i.e., becoming a PhD student) is a very serious because a PhD can literally change your life.
@@ -29,7 +31,7 @@ In the case of Computer Science, a PhD trains you to be a scientist, not a progr
 This single fact has profound repercussions.
 After being a PhD student for almost three years now, I can think of seven clear reasons that are worth taking the decision to go for a PhD in this field.
 I group them into the good and the ugly.
-The good ones (1-3) aim to achieve noble goals, while the ugly ones (4-7) are driven by more personal ambitions.
+The good ones (1–3) aim to achieve noble goals, while the ugly ones (4–7) are driven by more personal ambitions.
 I dare to say that if you don't feel identified with any of them, then probably a PhD in Computer Science is not for you.
 Let's discuss this matter!
 
@@ -43,7 +45,7 @@ Let's discuss this matter!
 
 # Feed Your Intellectual Curiosity 
 
-A PhD is an [academic degree](https://en.wikipedia.org/wiki/Doctor_of_Philosophy) given those who expand the boundaries of human knowledge in some specific area of science.
+A PhD is an [academic degree](https://en.wikipedia.org/wiki/Doctor_of_Philosophy) given to those who expand the boundaries of human knowledge in some specific area of science.
 Thus, it is a form of social recognition.
 Maybe you have a curious mind and are interested in diving deep into a particular technology.
 In that case, a PhD is an excellent opportunity to satisfy your intellectual curiosity while making at least one significant contribution to humanity.
@@ -63,14 +65,14 @@ Research is a creative activity, and it's fine if some experiment doesn't give y
 This is a position that can hardly be found when working in the industry, where the market pressure favors rapid development and well-established technologies.
 
 In Computer Science, there are distinct levels of understanding.
-Knowing how to compile a piece of code is not the same as understanding how the code is compiled.
+Knowing how to compile a piece of code is different from understanding how the code is compiled.
 Understanding a compiler is different from developing a new technique to make it efficient, and this is in turn different from creating a new and better compiler.
 A PhD is a unique opportunity to dive deep into a particular technology, at the very minimum level of detail, to leave a footprint on it.
 If you possess this urge to learn and experiment, and at the same time, dream about making a difference in the world, then a PhD will give you a chance to pursue such sublime goals.
 
 # Become a Professional Researcher
 
-The principal objective of a PhD is to train students to become professional researchers.
+The principal goal of a PhD is to train students to become professional researchers.
 Getting a position as a researcher is perceived to be a synonym of holding a very gratifying job.
 There are two types of professional researchers: academic professors and industrial researchers.
 The first group is tied to universities and has more freedom to pick their research topic, which explains why the research made in academia is often more theoretical.
@@ -98,27 +100,22 @@ As occurs with writers, there is a common belief that researchers are lonely peo
 This is simply not true.
 A significant part of research work is about communicating your results.
 To do so, PhD students must learn how to get attention by appropriately targeting the right audience.
-This can only be done through effectively networking with the most talented researchers in the field.
+This can only be done through effective networking with the most talented researchers in the field.
 
 <aside class="quote">
     <em>“You'll be surrounded by an elite of people.”</em>
 </aside>
 
 Most people in your immediate circle, excluding supervisors and teachers, will be at the same level as you in the professional hierarchy.
-All of them talented PhD students sharing the same high-level goals and with a similar urge to learn and experiment.
+All of them are talented PhD students sharing the same high-level goals and with a similar urge to learn and experiment.
 This means that you will be surrounded by an elite of students in an environment that explicitly promotes professional growth.
 Also, as everyone is working in a very tiny and specific area, it's practically impossible to be working on the same thing.
 As a result, colleagues and fellow researchers are not perceived as competitors but collaborators.
 
-Assisting at conferences is an excellent way to perform "intellectual tourism."
+Attending conferences is an excellent way to perform "intellectual tourism."
 There, one can interact with the cream of young researchers eager to receive attention.
 Many of these guys will become successful entrepreneurs or occupy prestigious positions at big tech companies.
 Others will become prestigious professors, and a very few of them will make significant contributions in your field, write world-acclaimed books, etc.
-
-<div class="container-youtube">
-  <iframe width="560" height="349" src="https://www.youtube.com/embed/IrFS2e-4gqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 
 # Set Yourself Apart From The Competition 
 
@@ -139,7 +136,7 @@ Leveraging this as a professional advantage may set you apart from the competiti
 
 The technical skills allow you to become an expert in a very particular field.
 Being an expert positions yourself as someone more valuable, and many companies are willing to pay for this particular value.
-They will provide you will all you need to apply those skills as new opportunities arise, which translates into more opportunities to pursue a high-level career within the industry.
+They will provide you with all you need to apply those skills as new opportunities arise, which translates into more opportunities to pursue a high-level career within the industry.
 Furthermore, some particular jobs require a PhD degree, i.e., many machine learning-related jobs.
 
 # Challenge Yourself
@@ -147,7 +144,7 @@ Furthermore, some particular jobs require a PhD degree, i.e., many machine learn
 Some people are more ambitious than others (professionally speaking).
 If you are very ambitious, you need to be thinking about what's beyond software development.
 You should feel the urge to prove to yourself (and maybe to others) that you are capable of obtaining the highest academic title available.
-It doesn't matter how good you are, it would be difficult to convince someone that you are capable of producing unique knowledge without having published a single technical paper.
+It doesn't matter how good you are, it would be hard to convince someone that you are capable of producing unique knowledge without having published a single technical paper.
 
 <aside class="quote">
     <em>“You'll be among the best in your field.”</em>
@@ -159,7 +156,7 @@ For example, the number of papers, citations stats, graduated students, grants a
 If you can show that you are good in such a competitive environment, no one will deny that you belong to a selective group: the best of the best.
 
 Some other people feel social pressure and don't want to get behind other people in their close network. 
-For example, if all your parent and brothers hold academic titles, you'll probably feel the need to reach a similar status.
+For example, if all your parents and brothers hold academic titles, you'll probably feel the need to reach a similar status.
 Otherwise, you might be perceived as someone that belongs to an inferior category.
 However, the main driver for doing a PhD should be no other than satisfying personal aspirations.
 
@@ -190,7 +187,7 @@ A gift for the hard work made and the comparatively low pay received in exchange
 Everyone wants to live a good life.
 But the uncomfortable truth is that the majority of people in the world have the geographical fatality of being born in countries polluted by financial uncertainty and a lack of freedom.
 At some point in their life, people living in such places realize that it is difficult (if not impossible) to get a decent life there.
-Thus, the most viable solution for them is to emigrate, and doing it as a student is often one of the cleanest ways achieve this goal.
+Thus, the most viable solution for them is to emigrate, and doing it as a student is often one of the cleanest ways to achieve this goal.
 
 <aside class="quote">
     <em>“You'll change your life.”</em>

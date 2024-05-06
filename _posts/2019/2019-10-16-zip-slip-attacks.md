@@ -14,16 +14,17 @@ date: 2019/10/16
 published: true
 ---
 
-In today's ever expanding-open source communities, developers rely heavily on third-party libraries and copy-pasted code from community websites like [StackOverflow](https://stackoverflow.com/) to accelerate productivity. Such code reuse tendency helps to decrease development time and effort, but also means that vulnerability in shared code (i.e., libraries) gets spread dramatically faster, as occurs in the case of the **Zip Slip vulnerability**.
-
 <aside class="quote">
     <em>“Code is complicated, and developers are not security experts. Their focus is typically around delivering code on time and so can
-        easily miss security flaws, even if the practice is known.”</em> ― <cite>Guy Podjarny</cite>
+        easily miss security flaws, even if the practice is known.”</em>
+    <cite><br> ― <a href="https://www.linkedin.com/in/guypo/?originalSubdomain=uk">Guy Podjarny</a></cite>
 </aside>
+
+In today's ever expanding-open source communities, developers rely heavily on third-party libraries and copy-pasted code from community websites like [StackOverflow](https://stackoverflow.com/) to accelerate productivity. Such a code reuse tendency helps to decrease development time and effort, but also means that vulnerability in shared code (i.e., libraries) gets spread dramatically faster, as occurs in the case of the **Zip Slip vulnerability**.
 
 This vulnerability is exploited using a specially crafted archive that holds directory traversal filenames (e.g., `../../evil.sh`). The two parts required to exploit this vulnerability are (1) a malicious archive and (2) extraction code that does not perform validation checking.
 
-This post aims to to explain how it works, and includes the following additional resources:
+This post aims to explain how it works, and includes the following additional resources:
 
 - Installation scripts and instructions to deploy a target example: <https://github.com/cesarsotovalero/zip-slip-exploit-example>
 
@@ -31,25 +32,11 @@ This post aims to to explain how it works, and includes the following additional
 
 The following is a list of vulnerability identifiers:
 
-- **Technical Description:** Zip Slip is a form of _directory
-  traversal_ that can be exploited by extracting files from an
-  archive. The premise of the directory traversal vulnerability is
-  that an attacker can gain access to parts of the file system outside
-  of the target folder in which they should reside.
+- **Technical Description:** Zip Slip is a form of _directory traversal_ that can be exploited by extracting files from an archive. The premise of the directory traversal vulnerability is that an attacker can gain access to parts of the file system outside the target folder in which they should reside.
 
-- **Who Is Affected:** Applications and services using a library which
-  contains the Zip Slip vulnerability, or projects that directly
-  contain vulnerable code, which extracts files from an archive
-  without the necessary directory traversal prevention. A list of
-  vulnerable libraries is updated and maintained by [Snyk](https://snyk.io) in a
-  public GitHub [repo](https://github.com/snyk/zip-slip-vulnerability).
+- **Who Is Affected:** Applications and services using a library which contains the Zip Slip vulnerability, or projects that directly contain vulnerable code, which extracts files from an archive without the necessary directory traversal prevention. A list of vulnerable libraries is updated and maintained by [Snyk](https://snyk.io) in a public GitHub [repo](https://github.com/snyk/zip-slip-vulnerability).
 
-- **Compromise Impact:** The attacker can overwrite executable files
-  and either invoke them remotely or wait for the system or user to
-  call them, thus achieving remote command execution on the victim's
-  machine. The vulnerability can also cause damage by overwriting
-  configuration files or other sensitive resources, and can be
-  exploited on both client (user) machines and servers.
+- **Compromise Impact:** The attacker can overwrite executable files and either invoke them remotely or wait for the system or user to call them, thus achieving remote command execution on the victim's machine. The vulnerability can also cause damage by overwriting configuration files or other sensitive resources, and can be exploited on both client (user) machines and servers.
 
 # Example
 
@@ -87,4 +74,4 @@ There are many tools freely available to create this type of zip exploit files. 
 
 # Conclusion
 
-As we observed, detecting a system with the Zip Slip vulnerability that was already exploited is very hard, as the result of the exploit consists of files on the system that can be located elsewhere. Besides, zip files could either be uploaded to the application or downloaded from within, so both traffic sources should be monitored. The best way to avoid this exploit is by preventing it from occurring, performing the proper unzip checking and keeping dependencies up to date.
+As we observed, detecting a system with the Zip Slip vulnerability that was already exploited is very hard, as the result of the exploit consists of files on the system that can be located elsewhere. Besides, zip files could either be uploaded to the application or downloaded from within, so both traffic sources should be monitored. The best way to avoid this exploit is by preventing it from occurring, performing the proper unzipping checking and keeping dependencies up to date.

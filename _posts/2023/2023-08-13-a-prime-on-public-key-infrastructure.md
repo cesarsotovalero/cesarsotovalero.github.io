@@ -71,20 +71,14 @@ All of this may sound complicated, but fortunately, we only need to know about t
 
 ## Symmetric Encryption
 
-[//]: # (------ What it is ---------------------------------------------------------------------)
-
-<aside class="quote">
-    <em>“Encoding is about efficiently modifying the representation of data without bringing any guarantee of privacy or security. I wrote about it <a href="../blog/encoding-encryption-hashing-and-obfuscation-in-java.html#encoding">here</a>.”</em> 
-</aside>
 
 Before 1976, the only known way to encrypt messages was using [symmetric encryption](https://en.wikipedia.org/wiki/Symmetric-key_algorithm).
 This is a mechanism to encode messages where both the sender and receiver use the **same secret key**.[^2]
 
-
 > "The fundamental property of symmetric encryption is that the same key is used for both encryption and decryption. In other words, by knowing the key and the encryption method, one can decrypt or decrypt the message."
 
 <aside class="quote">
-    <em>“The Caesar cipher method is easy to break because with only 26 different possible shifts it can be solved with simple brute force and letter frequency analysis.”</em> 
+    <em>“Encoding is about efficiently modifying the representation of data without bringing any guarantee of privacy or security.”</em> 
 </aside>
 
 The most famous example is perhaps the [Caesar cipher algorithm](https://en.wikipedia.org/wiki/Caesar_cipher).
@@ -92,6 +86,7 @@ The basic idea is to shift each letter in the plaintext (the original message) b
 For example, if the key is "`3`", then the letters of the alphabet are shifted to three positions.
 In this case, the letter "`A`" would be encoded as "`D`", "`B`" would be "`E`", and so on.
 To decrypt the message, the recipient only needs to shift the letters back by the same number of positions as used for encryption.
+The Caesar cipher method is easy to break because with only 26 different possible shifts it can be solved with simple brute force and letter frequency analysis.
 
 [//]: # (------ How it works graphically -------------------------------------------------------------------)
 
@@ -387,7 +382,7 @@ As shown before, PKI has the following advantages for both (sender and receiver)
 ## Digital Signatures
 
 <aside class="quote">
-    <em>“Digital signatures today guarantee that an email, document, or transaction remains exactly as it was when sent, unmodified and secure.”</em> 
+    <em>“Digital signatures today guarantee that an email, document, or transaction remains exactly as it was when sent.”</em> 
 </aside>
 
 Digital signatures are an integral part of PKI.

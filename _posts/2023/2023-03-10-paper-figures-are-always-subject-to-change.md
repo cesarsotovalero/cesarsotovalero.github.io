@@ -29,7 +29,7 @@ I'll give you insights on the transformations that this particular figure underw
 Reading this article could help researchers to cope with the inevitable back and forward, and for non-academics to foresee the amount of work that goes into crafting each one of those ~~beautiful~~ figures that get finally stamped on papers.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-03-10/initial_whiteboarding.jpg alt:"Initial brainstorming session" %}
+  {% responsive_image path: img/posts/2023/2023-03-10/initial_whiteboarding.jpg alt: "Initial brainstorming session" %}
   <figcaption class="stroke"> 
     Figure 1. 
     This photo captures the birth of a figure for one of my research papers, sparked during an initial brainstorming session with my colleague <a href="https://deee92.github.io/">Deepika Tiwari</a>. Whiteboard located in a corridor of <a href="https://goo.gl/maps/jAe5q6mNxTRQ7NzQ9?coh=178572&entry=tt">Lindstedtsvägen 3, floor 5, KTH in Stockholm</a>.
@@ -40,8 +40,8 @@ Reading this article could help researchers to cope with the inevitable back and
 
 Research projects often start with a burst of creativity during brainstorming sessions.
 According to my own experience, this involves sketching rudimentary boxes, arrows, and charts on whiteboards to delineate the goals and scope of the future paper. 
-At these early-stages, figures represent the first "big picture" of the ideas that will eventually turn into tools and experiments.
-While they serve as conceptual stepping stones, the initial figure rarely remain unchanged in the final publication.
+At these early stages, figures represent the first "big picture" of the ideas that will eventually turn into tools and experiments.
+While they serve as conceptual stepping stones, the initial figure rarely remains unchanged in the final publication.
 
 > **Q:** Where should I start a research project?<br>
 > **A:** In front of a whiteboard, of course!
@@ -53,7 +53,7 @@ In general, there are some of the key elements to notice in the previous figure:
 
 1. In the top right corner, there is a function representing the **input** and **output** of the research tool that will be implemented.
 2. Below the function, there is an enumeration of **steps** that the research tool will perform in order to **transform** the input into the output.
-3. In the center of the figure there is a **representation** of the **data** that the tool will use to perform the previous steps.
+3. In the center of the figure, there is a **representation** of the **data** that the tool will use to perform the previous steps.
 4. In the bottom left corner, there are other **existing tools** that could be reused to perform some of the tasks.
 5. Finally, in the top center there is written "ICSE," which is the name of the conference where the is **expected to be submitted**.
 
@@ -63,7 +63,7 @@ Whatever tool you use, make sure that the figure is saved in a vector format (e.
 The first result is shown below. 
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-03-10/a.png alt:"First figure attempt" %}
+  {% responsive_image path: img/posts/2023/2023-03-10/a.png alt: "First figure attempt" %}
   <figcaption class="stroke">
     Figure 2.
     First figure attempt: trying to represent the "core idea" of the paper. In this paper, the idea is to propose a tool called DepTrim that takes as input a dependency tree from a software project, and outputs several versions of the dependency tree by specializing individual dependencies to the actual needs of the project.
@@ -87,19 +87,19 @@ Therefore, we went through a second round of whiteboard session (presented in Fi
 From there, we realize that we could actually define three types of specialized dependency trees. 
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-03-10/another_whiteboarding.JPG alt:"Second whiteboarding session" %}
+  {% responsive_image path: img/posts/2023/2023-03-10/another_whiteboarding.JPG alt: "Second whiteboarding session" %}
   <figcaption class="stroke"> 
     Figure 3. 
     Second whiteboarding session: refining the core idea while realizing the implementation details.
   </figcaption>
 </figure>
 
-So I decided adding more information about the different steps (i.e., resolving dependencies, debloating, specializing, building) and the different types of dependency trees (e.g., totally specialized DT, single specialized DTs, partially specialized DT).
+So I decided to add more information about the different steps (i.e., resolving dependencies, debloating, specializing, building) and the different types of dependency trees (e.g., totally specialized DT, single specialized DTs, partially specialized DT).
 
 The result is shown in Figure 4 below.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-03-10/b.png alt:"Second figure attempt" %}
+  {% responsive_image path: img/posts/2023/2023-03-10/b.png alt: "Second figure attempt" %}
   <figcaption class="stroke">
     Figure 4.
     Second figure attempt: trying to improve by adding the details of the tool created for the paper.
@@ -119,16 +119,13 @@ These shifts in figures are largely attributable to the iterative nature of data
 
 # Authoritative Feedback: The Crucible of Critique
 
-
-<aside class="quote">
-    <em>“An overly strong sense of ownership can often lead to <a href="https://en.wikipedia.org/wiki/Confirmation_bias">confirmation bias</a> concerning figures. To mitigate this effect, external feedback is a crucial component that provides a more balanced perspective.”</em>
-</aside>
-
-At this stage, the figure seems to be awesome, right?
+At this stage, the figure seems awesome, right?
 Well, not so fast.
-The next step was to get concrete feedback from a supervisor.
+So The next step is to get concrete feedback from a supervisor.
 Paper figures always need to be examined by people with a broader view of the subject, and often leads to another round of revisions.
-During this stage, the figure is meticulously evaluated by the research supervisor, an experienced authority in the field who assesses the research for validity, precision, and significance. 
+During this stage, the figure is meticulously evaluated by the research supervisor, an experienced authority in the field who assesses the research for validity, precision, and significance.
+An overly strong sense of ownership can often lead to <a href="https://en.wikipedia.org/wiki/Confirmation_bias">confirmation bias</a> concerning figures.
+To mitigate this effect, external feedback is a crucial part that provides a more balanced perspective.
 The supervisor may recommend adjustments to enhance clarity, better depict data, or provide a more truthful visual account.
 
 Figure 5 below shows the feedback from my supervisor.
@@ -151,7 +148,7 @@ After the feedback, I went back to the editing software and tried to simplify th
 Figure 6 below shows the result of this simplification process.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-03-10/c.png alt:"Third figure attempt" %}
+  {% responsive_image path: img/posts/2023/2023-03-10/c.png alt: "Third figure attempt" %}
   <figcaption class="stroke"> 
     Figure 6.
     Third figure attempt: getting rid of complexity and focusing on the core idea. 
@@ -168,7 +165,8 @@ The three major changes to note are:
 
 Once the figure is approved by the supervisor, the next step is to refine it.
 This is where the figure starts to take its final shape.
-In my case, I first notice that the outputs were of had different types (i.e., text files and binary files) and also that the compiled source code was also part of the output.
+The figure should succinctly communicate a single core idea, while maintaining enough complexity to effectively illustrate the intricate research process to execute the idea.
+In my case, I first noticed that the outputs were of different types (i.e., text files and binary files) and also that the compiled source code was also part of the output.
 So I decided to add this information to the figure (Figure 7).
 
 <figure class="jb_picture">
@@ -178,10 +176,6 @@ So I decided to add this information to the figure (Figure 7).
     Too much simplicity is not good either. Fourth figure attempt: adding more details to the figure.
   </figcaption>
 </figure>
-
-<aside class="quote">
-    <em>“The figure should succinctly communicate a single core idea, while maintaining enough complexity to effectively illustrate the intricate research process to execute the idea.”</em> 
-</aside>
 
 Looking good, right?
 Well, **it can always be better**.
@@ -211,10 +205,7 @@ When performing "serious" scientific research, creating figures for a paper is l
 Just as the contours of unexplored oceans morph beneath a sailing ship, figures in a research paper often deviate from their initial conception.
 Far from being a nuisance, this malleability mirrors the fluidity and resilience of the scientific process. 
 Imagine your figures as a choreographed dance of ideas and data, theory and observation, creativity and rigor.
-
-<aside class="quote">
-    <em>“If visuals are worth a thousand words, they certainly make those words work for their time spent!”</em> 
-</aside>
+Visuals are worth a thousand words, they certainly make those words work for their time spent!
 
 As a researcher, I had learned that **the process of creating figures was a journey of discovery, a process of refinement, and a crucible of critique**. 
 This article, therefore, lifted the veil on this transformative process, demonstrating the relentless cycle of refinement that one of my figures underwent, and shedding light on the exhaustive effort that went into this creative endeavor. 

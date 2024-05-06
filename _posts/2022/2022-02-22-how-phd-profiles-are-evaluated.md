@@ -83,7 +83,7 @@ The prestige is often obtained through impactful publications, and it can be rou
 There are several metrics that attempt to rank researchers, more notably are the citations count and [H-index](https://en.wikipedia.org/wiki/H-index).
 
 <aside class="quote">
-    <em>“Success in academia is mostly based on prestige and networking.”</em>
+    <em>“Success in academia is achieved through gaining prestige and active networking.”</em>
 </aside>
 
 Apart from the research-based metrics, other metrics consider the teaching experience.

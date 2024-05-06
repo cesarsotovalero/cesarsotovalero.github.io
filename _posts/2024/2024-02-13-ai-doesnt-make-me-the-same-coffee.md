@@ -165,7 +165,7 @@ Take it or leave it, our civilization will never be the same.
 
 <aside class="quote">
     <em>“[Some of] the best minds of my generation are thinking about how to make people click ads. That sucks.”</em>
-    ― <cite><a href="https://en.wikipedia.org/wiki/Jeff_Hammerbacher">Jeff Hammerbacher</a></cite>
+    <cite><br> ― <a href="https://en.wikipedia.org/wiki/Jeff_Hammerbacher">Jeff Hammerbacher</a></cite>
 </aside>
 
 My generation of Millennials have already chosen to make of [internet the new electricity](https://en.wikipedia.org/wiki/Right_to_Internet_access).
@@ -180,10 +180,6 @@ But as humans, we still crave discrepancies, those unexpected events that occur 
 Strangely, that's what we will end up remembering!
 How much of the human experience are we sacrificing for these AI efficiencies?
 To what extent will these efficiencies become widely accepted?
-
-<aside class="quote">
-    <em>“I'm biased towards human interaction, AI will never replace the true human experience.”</em>
-</aside>
 
 Something we learned from COVID-19 is that we still crave human interaction.
 People enjoy being with others.
@@ -232,10 +228,6 @@ In a few years, we may see children speaking like an AI.
 
 # Sparks of Hope
 
-<aside class="quote">
-    <em>“For the most part of everything I do, I'm not looking for perfection, I'm rather seeking for the experience.”</em> 
-</aside>
-
 I would like to end this seemingly pessimistic article on a positive tone.
 Let's be clear, AI has all the potential to augment human experiences to a level that we have never seen before.
 Perhaps, if AI frees up more of our time, we'll have more opportunities to spend more time with other people.
@@ -259,6 +251,10 @@ An AI that can provide a personalized education experience to every child in the
 Every child could have a private teacher specifically trained to meet their needs.
 In this way, high-quality education would become accessible to everyone.
 
+<aside class="quote">
+    <em>“For the most part of everything I do, I'm not looking for perfection, I'm rather seeking for the experience.”</em> 
+</aside>
+
 Another example is architecture.
 AI has the potential to design beautiful and structurally sound architectures, far surpassing our conventional, unappealing square buildings.
 Thus, beautiful architecture will become more accessible, opening up possibilities for a wider range of creative people.
@@ -269,6 +265,10 @@ For instance, AI could analyze the specific needs of every citizen and make opti
 This is a big hope for now, but it's not impossible.
 
 # Summary
+
+<aside class="quote">
+    <em>“I'm biased towards human interaction, AI will never replace the true human experience.”</em>
+</aside>
 
 AI advances are going to change the way we interact with the world.
 With AI, we are going to have more free time and greater capabilities.

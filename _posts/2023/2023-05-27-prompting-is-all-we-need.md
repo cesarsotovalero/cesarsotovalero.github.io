@@ -97,7 +97,8 @@ I believe that the price of every single line of code will decrease its value dr
 It's [supply and demand](https://en.wikipedia.org/wiki/Supply_and_demand), there's nothing we can do about it.
 
 <aside class="quote">
-    <em>“You are my master! Was that your first wish? Three wishes are yours to command...” - <cite>Aladdin and the Magic Lamp</cite></em> 
+    <em>“You are my master! Was that your first wish? Three wishes are yours to command...”</em>
+    <cite><br> ― <a href="https://en.wikipedia.org/wiki/Aladdin">Aladdin</a></cite>
 </aside>
 
 However, there's a catch.

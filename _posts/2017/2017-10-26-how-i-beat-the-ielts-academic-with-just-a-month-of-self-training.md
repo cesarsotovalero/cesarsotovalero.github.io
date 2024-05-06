@@ -33,13 +33,10 @@ As a general rule, the ranked universities in the world tend to require a higher
 Once you complete the test, your IELTS results will be available 13 days afterward, and you will receive a "test report form" like this one:
 
 <figure class="jb_picture">
-    <img src="../img/posts/2017/IELTS_Test_Report_Form.jpg" 
-    height="500px" 
-    alt="My official IELTS test report form."
-    longdesc="#c13e1390" />
-    <figcaption class="stroke">
+  {% responsive_image width: "50%" border: "1px solid #808080" path: img/posts/2017/IELTS_Test_Report_Form.jpg alt: "My official IELTS test report form." %}
+  <figcaption class="stroke"> 
     &#169; My official IELTS test report form.
-    </figcaption>
+  </figcaption>
 </figure>
 
 In my opinion, it is practically impossible to achieve an overall band score of 9 (the maximum) in IELTS.
@@ -55,18 +52,18 @@ The test is divided into four sections in this order:
 | 2     | Reading   | 60 minutes                             |
 | 3     | Writing   | 60 minutes                             |
 | 4     | Speaking  | 12–15 minutes                          |
-{: .border-bottom-on-table  }
+{: .border-bottom-on-table }
+
+<aside class="quote">
+    <em>“The best way to perform well in the IELTS is understand the mechanics of the test and engage in extensive practice.”</em>
+</aside>
 
 The best advice I can give you to do well in the IELTS is to understand very well how the test works and to practice a lot.
-When I say "know," I mean to master all the details of the test's structure.
+By "understand" I mean mastering all the details of the test's structure.
 Practicing for IELTS is not about doing one or two parts of the tests separately but completing dozens of full tests just like the real one.
 Take into account that you should be prepared not for a regular English exam but for a very particular type of test that will force you to put your mind and skills to their limits.
 
 In the following, I will divide each section of the test into parts and give suggestions and personal remarks about what is required to be completed in each of them. 
-
-<aside class="quote">
-    <em>“The best way to perform well in the IELTS is to understand very well how the test works and execute a lot of practicing.”</em>
-</aside>
 
 # Listening
 
@@ -118,12 +115,14 @@ Here is a list of tips and tricks I learned during my training for the reading t
 - Just read the first sentence of the paragraph and look for the questions that this paragraph answers.
 - Underline the words in the paragraph that explain its main idea.
 - If any question takes you too much time (more than two minutes), then give up and move to the next one.
-- Practice with a clock, and don’t forget to transfer your answers to the Answer Sheet.
+- Practice with a clock, and remember to transfer your answers to the Answer Sheet.
 
 I thought that the Reading Test was my best part of the test, but unfortunately, I was wrong.
 I prepared myself for achieving a minimum of 8 in the real test.
 However, the passages were lengthy and complicated.
-The first was a description of the technical parts of a water filter, the second a narration about apes and their life in secured habitats, and the last a philosophical essay related to the types of dreams and their meanings.
+The first was about the technical components of a water filter.
+The second was a narration about apes and their life in secured habitats.
+The last was a philosophical essay related to the types of dreams and their meanings.
 
 Practicing for the Reading Test is useful but not as much as the other parts of the IELTS.
 This is because the vocabulary, in general, is very rich, and it is almost impossible to know and master all the words.
@@ -131,7 +130,7 @@ The best practice is to **refine the scanning strategy** to get the main idea of
 
 # Writing
 
-Writing takes 1 hour and is divided into two sub-parts: 20 minutes to write a report and 40 minutes to write an essay.
+Writing takes 1 hour and is divided into two subparts: 20 minutes to write a report and 40 minutes to write an essay.
 The report is based on a graph, a diagram, or a table you receive, and you must use not fewer than 150 words.
 The second task is to write an essay on a given topic, present and justify an opinion, or provide a solution to a problem, using no fewer than 250 words.
 
@@ -164,7 +163,7 @@ There are only three kinds of essay topics in IELTS:
 
 1. Present an **argument**, and you need to explore the pros and cons, reasons for and against, while you support only one side.
 2. Present a **hidden argument**. These topics usually ask _"To what extent …?"_, _"In what way…?"_, _"How has something changed…?"_
-3. Present a **situation** and you need to explore reasons why it is what it is, assume what will happen in the future, and suggest solutions to problems if required.
+3. Present a **situation**, and you need to explore reasons why it is what it is, assume what will happen in the future, and suggest solutions to problems if required.
 
 I trained on my own structure to write each of these three kinds of essays.
 After a little practice, I discovered that I could write a good essay on almost all the given topics by applying the same patterns. 
@@ -173,7 +172,7 @@ If you want to know how I did it, I recommend you study these two sources [1](ht
 # Speaking
 
 Speaking takes up to 15 minutes and consists of 3 parts.
-The first sub-part of the Speaking test is an interview, where the examiner asks you questions about yourself, your work, studies, parents, brothers/sisters, pets, etc.
+The first subpart of the Speaking test is an interview, where the examiner asks you questions about yourself, your work, studies, parents, brothers/sisters, pets, etc.
 This is an easy task to prepare for.
 In the second subpart of the Speaking Test, you receive a card with 3–4 questions.
 After one minute, during which you have to think about something to say, you should give a short speech for one to two minutes, which answers those questions.

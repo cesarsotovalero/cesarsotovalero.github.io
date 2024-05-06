@@ -60,7 +60,7 @@ Take a deep breath and work on this problem step-by-step.
 # SIDE QUOTE
 <aside class="quote">
     <em>“TODO.”</em> 
-    ― <cite><a href="URL">FULANO DE TAL</a></cite>
+    <cite><br> ― <a href="URL">FULANO DE TAL</a></cite>
 </aside>
 
 # SIDE IMAGE
@@ -89,6 +89,8 @@ TODO
 <div class="container-youtube">
   <iframe width="560" height="349" src="https://www.youtube.com/embed/IrFS2e-4gqU" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+{% youtube VIDEO_ID %}
 
 # Resources
 

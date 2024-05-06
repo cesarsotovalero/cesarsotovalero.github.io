@@ -130,7 +130,7 @@ I published a few papers on sport analytics later on using a similar strategy.
 I've no doubts that having high-quality EDA and convincing tables and figures was key to get those papers accepted.[^3]
 
 <aside class="quote">
-    <em>“EDA is essential for <a href="https://en.wikipedia.org/wiki/Reproducibility">reproducible science</a>, allowing other researchers to understand, replicate, and validate the findings.”</em> 
+    <em>“EDA is essential for reproducible science, allowing other researchers to understand, replicate, and validate the findings.”</em> 
 </aside>
 
 Later during my PhD, I switched to [empirical software engineering research](../blog/empirical-software-engineering-research-is-harder-than-you-think.html).
