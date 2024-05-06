@@ -15,7 +15,7 @@ image: ../img/pages/software-debloating-papers/debloating.png
 -->
 
 
-## Tools
+# Tools
 
 - <a href="https://github.com/diverse-project/maven-miner"><i class="fab fa-github"></i></a> [maven-miner](https://github.com/diverse-project/maven-miner/wiki) Mines Maven Central and creates a global dependency graph.
 
@@ -23,7 +23,7 @@ image: ../img/pages/software-debloating-papers/debloating.png
 
 - <a href="https://github.com/RepoReapers/reaper"><i class="fab fa-github"></i></a> [reaper](https://github.com/RepoReapers/reaper) Calculate the score of a repository based on best engineering practices.
 
-## Datasets
+# Datasets
 
 - <a href="https://github.com/igrigorik/gharchive.org/tree/master"><i class="fab fa-github"></i></a> [GH Archive](https://www.gharchive.org) Records the public GitHub timeline, archive it, and make it easily accessible for further analysis.
 
@@ -31,6 +31,6 @@ image: ../img/pages/software-debloating-papers/debloating.png
 
 - [jsDelivr](https://www.jsdelivr.com/) is a Content Delivery Network (CDN) that can be used to download the GitHub files without any rate limit. (Ask Zimin about how to get the difference between two versions of the same file).
 
-## Influential papers
+# Influential Papers
 
 - [An in-depth study of the promises and perils of mining GitHub](https://link.springer.com/article/10.1007/s10664-015-9393-5). EMSE, 2015
