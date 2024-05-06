@@ -233,7 +233,9 @@ summary::after {
   transition: 0.2s;
 }
 
-details[open] > summary {border-bottom: 2px solid #fff9f1;}
+details[open] > summary {
+  border-bottom: 2px solid #fff9f1;
+}
 
 details[open] > summary::after {
   transform: rotate(-180deg);
@@ -248,15 +250,17 @@ summary {
   border-radius: 5px;
 }
 
-details[open] summary {border-radius: 5px 5px 0 0;}
+details[open] summary {
+  border-radius: 5px 5px 0 0;
+}
 
 details {
   background: var(--footer-color);
   border-radius: 5px;
   border: var(--main-text-color);
 }
-/* end of Details */
 
+/* end of Details */
 
 
 /* extra styles */
@@ -2337,26 +2341,33 @@ ol, ul {
 }
 
 .quote {
-  color: var(--main-text-color);
-  /*background-color: var(--navbar-color);*/
+  color: #424242;
   float: right;
-  font-weight: 300;
-  font-size: 18px;
-  padding: 10px 5px 10px 10px;
-  border: 1px solid var(--main-background-color);
-  border-left-color: var(--main-text-color);
-  border-left-width: 2px;
+  font-weight: 600;
+  font-size: 26px;
+  padding: 10px 5px 10px 16px;
+  border-left: 4px solid var(--link-decoration-color);
   border-radius: 0px 2px 2px 0px;
   font-family: "Equity Text A", sans-serif;
   clear: right;
-  width: 31%;
-  margin: 0 -35% 0 0 !important;
+  width: 33%;
+  margin: 8px -80px 30px 30px;
   vertical-align: baseline;
   position: relative;
 }
 
+.quote a {
+  color: #424242;
+  font-size: 20px;
+}
+
+.quote cite {
+  color: #424242;
+  font-size: 20px;
+}
+
 .quote em {
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   font-family: "Equity Text A", sans-serif;
 }
@@ -2375,7 +2386,6 @@ ol, ul {
   text-decoration: underline;
 }
 
-
 @media only screen and (max-width: 450px) {
   .post-meta-index {
     display: flex;
@@ -2389,19 +2399,28 @@ ol, ul {
     margin-bottom: 0px;
     padding: 5px;
   }
-
-
 }
 
 @media only screen and (max-width: 650px) {
   .quote {
-    font-size: 15px;
-    width: 40%;
+    font-size: 16px;
+    /*width: 40%;*/
     float: right;
-    border-left: 1px #a4a6a7 solid;
+    border-left: 2px #a4a6a7 solid;
     padding: .2em 0 .2em 1em;
     margin: 0.5em 0 0.5em 0.5em !important;
   }
+
+  .quote a {
+    color: #424242;
+    font-size: 14px;
+  }
+
+  .quote cite {
+    color: #424242;
+    font-size: 14px;
+  }
+
 }
 
 @media only screen and (max-width: 1150px) {
@@ -2409,7 +2428,7 @@ ol, ul {
     font-size: 17px;
     width: 40%;
     float: right;
-    border-left: 1px #a4a6a7 solid;
+    border-left: 2px solid var(--link-decoration-color);
     padding: .2em 0 .2em 1em;
     margin: 1em 0 1em 1em !important;
   }
@@ -2485,6 +2504,7 @@ ol, ul {
   float: right;
   margin-left: 2em;
   background-color: var(--main-background-color);
+  margin-bottom: 10px;
 }
 
 /* heading anchors */
@@ -2514,6 +2534,111 @@ ol, ul {
   height: 100%;
 }
 
+/* YouTube side videos */
+.youtube {
+  color: var(--post-meta-index-color);
+  border-left: 5px solid var(--link-decoration-color);
+  float: right;
+  line-height: 1.2em;
+  margin: 8px -80px 30px 30px;
+  padding-left: 16px;
+  text-align: left;
+  width: 33%;
+  font-size: 0.75em;
+  font-weight: 300;
+  font-family: "Equity Text A", sans-serif;
+}
+
+.youtube .box {
+  display: block;
+  line-height: 0;
+  margin-bottom: 6.4px;
+  position: relative;
+  width: 100%;
+}
+
+.youtube .box img {
+  width: 100%;
+  display: block;  /* Ensure the image takes up the full width and has no extra space below (inline-block elements have space below them) */
+}
+
+.youtube .box .play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0); /* initial transparent background */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.youtube .box:hover .play {
+  background-color: rgba(0, 0, 0, 0.5); /* darker background on hover */
+  transform: scale(1.05); /* subtle zoom effect */
+}
+
+.youtube .box:active .play {
+  transform: scale(0.95); /* slight shrink effect to simulate a click */
+  background-color: rgba(0, 0, 0, 0.7); /* slightly darker than hover effect */
+}
+
+.youtube .box .play i::before {
+  font-size: 48px; /* 3em assuming 1em = 16px */
+  line-height: 1em;
+}
+
+.youtube-logo {
+  max-width: 30%; /* Example size, adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 0.75; /* Set the opacity to 50% */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity changes */
+}
+
+/* Hover state with full opacity */
+.youtube .box:hover .youtube-logo {
+  opacity: 1; /* Full opacity on hover */
+}
+
+@media only screen and (max-width: 650px) {
+  .youtube {
+    font-size: 0.55em; /* Smaller text for smaller screens */
+    width: 40%; /* Increased width for better layout on small screens */
+    border-left: 2px solid var(--link-decoration-color); /* Thinner border */
+    padding-left: 8px; /* Adjusted padding */
+    margin: 0.5em 0 0.5em 0.5em !important; /* Adjusted margin */
+    float: right;
+    line-height: 1.1em; /* Adjusted line height for better readability */
+  }
+
+  .youtube-logo {
+    max-width: 30%; /* Example size, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .youtube .box .play i::before {
+    font-size: 24px; /* Reduced size for smaller icons on small screens */
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .youtube {
+    font-size: 0.65em; /* Slightly larger font size than on very small screens */
+    width: 40%; /* Consistent width for better layout */
+    border-left: 2px solid var(--link-decoration-color); /* Consistent thinner border */
+    padding-left: 10px; /* Slightly increased padding */
+    margin: 1em 0 1em 1em !important; /* Adjusted margin */
+    float: right;
+    line-height: 1.1em; /* Maintained adjusted line height */
+  }
+
+  .youtube .box .play i::before {
+    font-size: 36px; /* Adjusted icon size for better visibility */
+  }
+}
+
 
 .i-doi {
   background-image: url(../img/icons/academicons-1.9.4/svg/doi.svg);
@@ -2522,7 +2647,6 @@ ol, ul {
 .i-arxiv {
   background-image: url(../img/icons/academicons-1.9.4/svg/arxiv.svg);
 }
-
 
 .icon {
   width: 1em;
@@ -2993,6 +3117,7 @@ a.btn {
   border-radius: 0.5rem;
   border-width: 1px;
 }
+
 #related-posts .panel:hover {
   -webkit-transform: translate3d(0, -3px, 0);
   transform: translate3d(0, -3px, 0);
@@ -3037,10 +3162,12 @@ a.btn {
 #related-posts a {
   text-decoration: none;
 }
+
 #related-posts ul {
   list-style-type: none;
   padding-inline-start: 1.5rem;
 }
+
 #related-posts ul > li::before {
   background: #c2c9d4;
   width: 5px;
@@ -3072,7 +3199,7 @@ a.btn {
   position: absolute;
   background-color: #f8f9fa;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -3102,7 +3229,7 @@ hr {
   border: none;
   height: 2px;
   width: 70%;
-  background-image: linear-gradient(to right,transparent,#2D2D2B,transparent);
+  background-image: linear-gradient(to right, transparent, #2D2D2B, transparent);
 }
 
 @media only screen and (max-width: 450px) {
@@ -3115,11 +3242,13 @@ hr {
 
 /* Contact me form */
 #contact-me-form {
- font-family: "Equity Caps A", Helvetica, Arial, sans-serif;
+  font-family: "Equity Caps A", Helvetica, Arial, sans-serif;
 }
+
 #contact-me > input {
   padding: 10px;
 }
+
 #contact-me > textarea {
   padding: 10px;
 }
@@ -3128,9 +3257,11 @@ hr {
   #contact-me-form {
     font-size: 16px;
   }
+
   #contact-me > input {
     padding: 7px;
   }
+
   #contact-me > textarea {
     padding: 7px;
   }
@@ -3150,8 +3281,8 @@ hr {
   margin-left: 10px;
   filter: grayscale(100%);
   border-radius: 100%;
-  flex-shrink: 0;  /* Prevent the image from shrinking */
-  flex-grow: 0;    /* Prevent the image from growing */
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  flex-grow: 0; /* Prevent the image from growing */
   object-fit: cover; /* This ensures the image scales properly if its aspect ratio doesn't match the specified dimensions. */
   opacity: 0.75;
 }

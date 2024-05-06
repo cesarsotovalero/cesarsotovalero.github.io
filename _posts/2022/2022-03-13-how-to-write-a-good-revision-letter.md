@@ -165,7 +165,7 @@ Accept them.
 
 
 <aside class="quote">
-    <em>“Major changes <del>should</del> must significantly improve the quality of your paper..”</em>
+    <em>“Major changes <del>should</del> must improve significantly the quality of your paper.”</em>
 </aside>
 
 
@@ -199,7 +199,8 @@ Hopefully, this will give you a notion of the amount of work being put along the
 # Conclusion
 
 <aside class="quote">
-    <em>“Persevere, consolidate, and it goes though.” ― Benoit Baudry</em>
+    <em>“Persevere, consolidate, and it goes though.”</em>
+    <cite><br> ― <a href="https://softwarediversity.eu/">Benoit Baudry</a></cite>
 </aside>
 
 Dealing with major revisions is part of the academic business.

@@ -26,7 +26,7 @@ In this post, I'll explain the differences between these two compilation strateg
 After reading this post, you will learn what Java compilers do, the differences between existing compiling approaches, and in which circumstances using an AOT compiler is more appropriate.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2022/curves.jpg alt:"AOT vs. JIT" %}
+  {% responsive_image path: img/posts/2022/curves.jpg alt: "AOT vs. JIT" %}
   <figcaption class="stroke"> 
     &#169; JIT vs. AOT: two sides of the same coin. Photo from <a href="https://goo.gl/maps/j8GC4KtHEXoKxLpB8">Tekniska Högskolan station</a>.
   </figcaption>
@@ -48,7 +48,7 @@ In terms of compiler optimizations in the ~~standard~~ Java Hotspot Virtual Mach
 
 - The **C1 compiler** is a fast, lightly optimizing bytecode compiler that performs some value numbering, inlining, and class analysis. It uses a simple CFG-oriented SSA "high" IR, a machine-oriented "low" IR, a linear scan register allocation, and a template-style code generator.
 
-- The **[C2 compiler](https://dl.acm.org/doi/10.5555/1267847.1267848)** is a highly optimizing bytecode compiler that uses a "sea of nodes" SSA "ideal" IR, which lowers to a machine-specific IR of the same kind. It has a graph-coloring register allocator. Colors are machine states, including local, global, and argument registers and stack. Optimizations in the C2 compiler include global value numbering, conditional constant type propagation, constant folding, global code motion, algebraic identities, method inlining (aggressive, optimistic, and/or multi-morphic), intrinsic replacement, loop transformations (unswitching, unrolling), array range check elimination, and others.
+- The **[C2 compiler](https://dl.acm.org/doi/10.5555/1267847.1267848)** is a highly optimized bytecode compiler that uses a "sea of nodes" SSA "ideal" IR, which lowers to a machine-specific IR of the same kind. It has a graph-coloring register allocator. Colors are machine states, including local, global, and argument registers and stack. Optimizations in the C2 compiler include global value numbering, conditional constant type propagation, constant folding, global code motion, algebraic identities, method inlining (aggressive, optimistic, and/or multi-morphic), intrinsic replacement, loop transformations (unswitching, unrolling), array range check elimination, and others.
 
 Now that we understand the role of compilers, let's talk about **when** is the compilation performed.
 There are two main compilation strategies in Java: Just in Time Compilation (JIT) and Ahead of Time Compilation (AOT).
@@ -77,13 +77,13 @@ This strategy is known as [JIT compilation](https://en.wikipedia.org/wiki/Just-i
 The default JIT compiler in the JVM is known as the Hotspot compiler.
 The [OpenJDK](https://github.com/openjdk/jdk) compiler is a free version of this interpreter written in Java.
 
-> “In fact, a JIT compiler just needs to be able to accept JVM bytecode and produce machine code - you give it a `byte[]` in, and you want a `byte[]` back. It will do a lot of complex things to work out how to do that, but they don’t involve the actual system at all, so they don’t need a "systems" language, for some definition of systems language that doesn’t include Java, like C or C++.”
+> “In fact, a JIT compiler just needs to be able to accept JVM bytecode and produce machine code: you give it a `byte[]` in, and you want a `byte[]` back. It will do a lot of complex things to work out how to do that, but they don’t involve the actual system at all, so they don’t need a "systems" language, for some definition of systems language that doesn’t include Java, like C or C++.”
 
 The objective of a JIT compiler is to generate high-quality machine code as fast as possible.
 Thanks to the runtime information, JIT compilers perform much more sophisticated optimizations than the `javac` compiler.
 These optimizations improve performance.
 
-The Hotspot JIT compiler allows the ample interpreter time to "warm-up" Java methods by executing them thousands of times.
+The Hotspot JIT compiler allows the ample interpreter time to "warm up" Java methods by executing them thousands of times.
 This warm-up period allows a compiler to make better decisions related to optimizations because it can observe (after initial class loading) the complete class hierarchy.
 The JIT compiler can also inspect branch and type profile information gathered by the interpreter.
 
@@ -92,7 +92,7 @@ The bytecode interpretation process makes executing an application significantly
 
 ## Ahead of Time Compilation (AOT)
 
-[AOT compilation](https://en.wikipedia.org/wiki/Ahead-of-time_compilation) is a form of static compilation that consists in transforming the program into a machine code **before it is executed**.
+[AOT compilation](https://en.wikipedia.org/wiki/Ahead-of-time_compilation) is a form of static compilation that consists of transforming the program into a machine code **before it is executed**.
 This is the "old-fashioned" way in which the code in old programming languages such as C is statically linked and compiled.
 The machine code obtained as a result is tailored to a specific operating system and hardware architecture, facilitating a very fast execution. 
 
@@ -102,17 +102,17 @@ The focus of the GraalVM project is on offering high performance and extensibili
 This means it executes faster with less overhead, which translates into optimal resource consumption with less CPU and memory.
 This makes GraalVM a better alternative than the traditional JIT compiler shipped with the JVM.
 
-> “The self-contained native executable created with the `native-image` tool in GraalVM includes the application classes, classes from its dependencies, runtime library classes, and statically linked native code from JDK. It does not run on the Java VM, but includes necessary components like memory management, thread scheduling, and so on from a different runtime system, called “Substrate VM”. Substrate VM is the name for the runtime components (like the deoptimizer, garbage collector, and thread scheduling). The resulting program has faster startup time and lower runtime memory overhead compared to a JVM.”
+> “The self-contained native executable created with the `native-image` tool in GraalVM includes the application classes, classes from its dependencies, runtime library classes, and statically linked native code from JDK. It does not run on the Java VM, but includes necessary components like memory management, thread scheduling, and so on from a different runtime system, called “Substrate VM.” Substrate VM is the name for the runtime components (like the deoptimizer, garbage collector, and thread scheduling). The resulting program has faster startup time and lower runtime memory overhead compared to a JVM.”
 
 The following figure illustrates the AOT compilation process in the GraalVM compiler using its [native-image](https://www.graalvm.org/22.0/reference-manual/native-image/) technology.
 It receives as input all classes from the application, libraries, the JDK, and the Java Virtual Machine.
 Then an iterative bytecode search using state-of-the-art [points-to analysis](https://dl.acm.org/doi/abs/10.1145/3377555.3377885) is performed until a fixed point is reached.
-During this process all the safe classes are [initialized upfront](https://docs.oracle.com/en/graalvm/enterprise/21/docs/reference-manual/native-image/ClassInitialization/) (i.e., instantiated) statically.
+During this process, all the safe classes are [initialized upfront](https://docs.oracle.com/en/graalvm/enterprise/21/docs/reference-manual/native-image/ClassInitialization/) (i.e., instantiated) statically.
 The class data of the initialized classes is loaded into the image heap which then, in turn, gets saved into standalone executable (into the text section in Fig 2).
 The result is a native image executable that can be shipped and deployed directly in a container.
 
 <figure class="jb_picture">
-{% responsive_image path: img/posts/2022/native_image_creation_process.png alt:"Native image creation process in Quarkus." %}
+{% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2022/native_image_creation_process.png alt: "Native image creation process in Quarkus." %}
   <figcaption class="stroke"> 
     Fig 2. Native image creation process in GraalVM. <a href="https://dl.acm.org/doi/10.1145/3360610">Source</a>. 
   </figcaption>
@@ -143,7 +143,7 @@ The low memory consumption allows running more containers with the same RAM, red
 The following spider graph illustrates the key differences:
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2022/aot_vs_jit.jpeg alt:"AOT vs. JIT." %}
+  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2022/aot_vs_jit.jpeg alt:"AOT vs. JIT." %}
   <figcaption class="stroke">
     Fig 3. AOT vs. JIT. <a href="https://twitter.com/thomaswue/status/1145603781108928513?s=20&t=-6ufSBjc46mfN5d_6Y2-Rg">Source</a>. 
   </figcaption>
@@ -172,10 +172,10 @@ Consequently, [dynamic language capabilities](./the-dynamic-features-of-java.htm
 >
 > We will explore a spectrum of constraints, weaker than the closed-world constraint, and discover what optimizations they enable. The resulting optimizations will almost certainly be weaker than those enabled by the closed-world constraint. Because the constraints are weaker, however, the optimizations will likely be applicable to a broader range of existing code — thus they will be more useful to more developers.
 >
-> We will work incrementally along this spectrum of constraints, starting small and simple so that we can develop a firm understanding of the changes required to the Java Platform Specification. Along the way we will strive, of course, to preserve Java’s core values of readability, compatibility, and generality.
+> We will work incrementally along this spectrum of constraints, starting small and simple so that we can develop a firm understanding of the changes required to the Java Platform Specification. Along the way, we will strive, of course, to preserve Java’s core values of readability, compatibility, and generality.
 > We will lean heavily on existing components of the JDK including the HotSpot JVM, the C2 compiler, application class-data sharing (CDS), and the `jlink` linking tool.
 >
-> In the long run we will likely embrace the full closed-world constraint in order to produce fully-static images. Between now and then, however, we will develop and deliver incremental improvements which developers can use sooner rather than later.” -- [Project Leyden: Beginnings](https://openjdk.java.net/projects/leyden/notes/01-beginnings) (by Oracle)
+> In the long run, we will likely embrace the full closed-world constraint in order to produce fully static images. Between now and then, however, we will develop and deliver incremental improvements which developers can use sooner rather than later.” -- [Project Leyden: Beginnings](https://openjdk.java.net/projects/leyden/notes/01-beginnings) (by Oracle)
 
 To overcome this limitation, GraalVM provides a [Tracing Agent](https://www.graalvm.org/22.0/reference-manual/native-image/Agent/) that tracks all usages of dynamic features of execution on a regular Java VM.
 During execution, the agent interfaces with the JVM and intercepts all calls that look up classes, methods, fields, resources, or request proxy accesses.
@@ -184,7 +184,7 @@ The generated files are standalone configuration files in JSON format, which con
 Thesis files can be passed to the `native-image` tool so that the used classes will not be removed during the image build process.
 
 It is worth mentioning that the close work assumption is good for security as it eliminates the possibility of various code injections (e.g., the [Log4j vulnerability](https://nvd.nist.gov/vuln/detail/CVE-2021-44228) that shocked the web in 2021 was possible due to the exploitation of the dynamic class loading mechanism in Java).
-On the other hand, the points-to-analysis makes AOT compilation slower than JIT because all the reachable bytecode needs to be analyzed, which is an expensive computational tack.  
+On the other hand, the point-to-analysis makes AOT compilation slower than JIT because all the reachable bytecode needs to be analyzed, which is an expensive computational tack.  
 
 # Is GraalVM the Future of Java?
 
@@ -224,7 +224,7 @@ Therefore, the technology still needs some time to mature before its massive ado
 
 [//]: # (What tools are available to analyze the native binary?)
 
-It is possible compiling JVM bytecode using either AOT or JIT approaches. 
+It is possible to compile JVM bytecode using either AOT or JIT approaches. 
 It would be wrong to say one approach is better than the other since they are suited for different situations. 
 The GraalVM compiler allows for building high-performance applications with AOT compilation, reducing the startup time and improving the performance considerably. This power comes at the cost of complying with the close world assumption (no Java dynamic features are allowed). Developers can still use the standard JIT compiler in the Hotspot VM to use dynamic features, which supports machine code generation at runtime.
 
@@ -239,7 +239,7 @@ The GraalVM compiler allows for building high-performance applications with AOT 
 
 # Footnotes
 
-[^1]: [JVMCI](https://openjdk.java.net/jeps/243) is a low level interface to JVM for features such as reading metadata from the VM and injecting machine code into the VM. It enables compliers written in Java to be used as a dynamic compiler.
+[^1]: The [JVMCI](https://openjdk.java.net/jeps/243) is a low-level interface to JVM for features such as reading metadata from the VM and injecting machine code into the VM. It enables compilers written in Java to be used as a dynamic compiler.
 
 [^2]: In the case of Go, the fastest initialization was implemented in the language since the beginning.
 

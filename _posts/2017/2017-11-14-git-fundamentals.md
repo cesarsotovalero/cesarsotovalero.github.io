@@ -20,7 +20,8 @@ published: true
 ---
 
 <aside class="quote">
-    <em>“Git proved I could be more than a one-hit wonder.” ― <cite>Linux Torvalds</cite></em> 
+    <em>“Git proved I could be more than a one-hit wonder.”</em>
+    <cite><br> ― <a href="https://en.wikipedia.org/wiki/Git#History">Linux Torvalds</a></cite>
 </aside>
 
 Git is the standard version-control system for software development.

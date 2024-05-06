@@ -14,18 +14,18 @@ date: 2020/6/08
 published: true
 ---
 
-For months, I have worked on dynamic debloat of Java artifacts with [JDBL](https://github.com/castor-software/jdbl). To do so, I need to compile and execute software applications to determine what parts of the compiled application are used when executing it using some workloads. Then, with the collected usage information, I debloat the unused parts of the software. These two main tasks (execution and usage collection)  appear straightforward at first glance. However, I realize that the inability of coverage tools to precisely determine what is used at execution time makes this task a real challenge. I found a feasible solution to this problem in the combination of various coverage techniques, i.e., by leveraging [software diversity](https://dl.acm.org/doi/abs/10.1145/2807593). Let me explain.  
+For months, I have worked on dynamic debloat of Java artifacts with [JDBL](https://github.com/castor-software/jdbl). To do so, I need to compile and execute software applications to determine what parts of the compiled application are used when executing it using some workloads. Then, with the collected usage information, I debloat the unused parts of the software. These two main tasks (execution and usage collection) appear straightforward at first glance. However, I realize that the inability of coverage tools to precisely determine what is used at execution time makes this task a real challenge. I found a feasible solution to this problem in the combination of various coverage techniques, i.e., by leveraging [software diversity](https://dl.acm.org/doi/abs/10.1145/2807593). Let me explain.  
 
 # The Problem
 
 There are awesome Java coverage tools out there, notably: [JaCoCo](https://www.eclemma.org/jacoco/), [JCov](https://wiki.openjdk.java.net/display/CodeTools/jcov), and [Cobertura](https://cobertura.github.io/cobertura/). All these tools rely on a similar underlying principle: determining what parts of the software are necessary to produce the expected result. In general, most Java coverage tools perform the following tasks:
 
-1. Instrument the bytecode, i.e., injecting probes at particular locations 
-2. Execute the test suite to observe which probes are "activated"
-3. Determine the section of the original bytecode that are activated
-4. Report on the achieved coverage, depending on the chosen metric/s
+1. Instrument the bytecode, i.e., injecting probes at particular locations.
+2. Execute the test suite to observe which probes are "activated."
+3. Determine the section of the original bytecode that is activated.
+4. Report on the achieved coverage, depending on the chosen metric/s.
 
-During the third task, the coverage tool determines what parts of the application are covered by the tests. For my purposes, it makes sense to consider the rest of the uncovered software parts as bloat. The problem with this approach is that coverage tools are not intended to work for debloating. In other words, their objective is to report only parts that are covered, not  **all** the parts that are **necessary**. Indeed, there is still a general debate regarding what should be considered as covered or not (e.g., resources, exceptions, interfaces), not to mention the different coverage metrics used out there.
+During the third task, the coverage tool determines what parts of the application are covered by the tests. For my purposes, it makes sense to consider the rest of the uncovered software parts as bloat. The problem with this approach is that coverage tools are not intended to work for debloating. In other words, their objective is to report only parts that are covered, not **all** the parts that are **necessary**. Indeed, there is still a general debate regarding what should be considered as covered or not (e.g., resources, exceptions, interfaces), not to mention the different coverage metrics used out there.
 
 In this context, the richness of Java bytecode constructs and dynamic behaviors poses an additional challenging even for the most advanced coverage tools. Consider this example, reported by a developer in [this](https://github.com/jacoco/eclemma/issues/61) JaCoCo issue: 
 
@@ -48,8 +48,8 @@ public class FruitSaladTest {
 }
 {% endhighlight %}
 
-In the code above, the method `mix()` is not considered as covered by JaCoCo. However, it is clear that, if we remove it, the test `mixItUp()` will fail. Diving deeper into this issue, one can find the reason for this unexpected behaviour in the [JaCoCo documentation](https://www.eclemma.org/jacoco/trunk/doc/flow.html): _"The probe insertion strategy described so far does not consider implicit exceptions thrown for example from invoked methods. If the control flow between two probes is interrupted by a exception not explicitly created with a throw statement all instruction in between are considered as not covered._ To mitigate this issue, JaCoCo adds an additional probe between the instructions of two lines whenever the subsequent line contains at least one method invocation. This limits the effect of implicit exceptions from method invocations to single lines of source. However, _"The approach only works for class files  compiled with debug information (line numbers) and does not
- consider implicit exceptions  from other instructions than method invocations (e.g., `NullPointerException` or `ArrayIndexOutOfBoundsException`)"_. In conclusion, JaCoCo does not consider as covered methods with a single-line invocation to other methods that throw exceptions.
+In the code above, the method `mix()` is not considered as covered by JaCoCo. However, it is clear that, if we remove it, the test `mixItUp()` will fail. Diving deeper into this issue, one can find the reason for this unexpected behaviour in the [JaCoCo documentation](https://www.eclemma.org/jacoco/trunk/doc/flow.html): _"The probe insertion strategy described so far does not consider implicit exceptions thrown, for example, from invoked methods. If the control flow between two probes is interrupted by an exception not explicitly created with a throw statement all instruction in between are considered as not covered._ To mitigate this issue, JaCoCo adds an additional probe between the instructions of two lines whenever the subsequent line contains at least one method invocation. This limits the effect of implicit exceptions from method invocations to single lines of source. However, _"The approach only works for class files compiled with debug information (line numbers) and does not
+ consider implicit exceptions from other instructions than method invocations (e.g., `NullPointerException` or `ArrayIndexOutOfBoundsException`)"_. In conclusion, JaCoCo does not consider as covered methods with a single-line invocation to other methods that throw exceptions.
 
 Let us consider another example. The following class declares a Java constant using the `public final static` initializer:
 
@@ -80,7 +80,7 @@ public Method "<init>":"()V"
 } // end Class Foo
 {% endhighlight %}
 
-As we observe, the variable `RADIO`, initialized with a final static integer literal, is a compile-time constant. Compile-time constants get inlined by the JVM bytecode compiler. This way, if we use it from another class (e.g. by calling `Foo.RADIO`), then the class `Foo` will not be considered as used, at the bytecode level. However, if we remove this class, the program will not compile.
+As we observe, the variable `RADIO`, initialized with a final static integer literal, is a compile-time constant. Compile-time constants get inlined by the JVM bytecode compiler. This way, if we use it from another class (e.g., by calling `Foo.RADIO`), then the class `Foo` will not be considered as used, at the bytecode level. However, if we remove this class, the program will not compile.
 
 There are many more examples like the two described above: including interfaces, annotation, lambda expressions, and implicit constructors. So, it is clear for me the fact that none tool is able to cover all the variety of bytecode constructs coming from real-world Java programs. 
 
@@ -90,14 +90,14 @@ To overcome the limitations of coverage and tracing tools, I tackle the problem 
 
 - **JaCoCo**: It is a mature and fine-grain (supports branch-level coverage) Java code coverage tool that relies on [ASM](https://asm.ow2.io/) for bytecode instrumentation. However, it does not cover throw exceptions, interfaces, and certain bytecode constructs.
 - **JCov**: Is a pure java implementation of a code coverage tool which supports applications on JDK 1.0 and higher.
-- **Yajta**: It is a tracing agent that works offline, it relies on [Javassist](https://www.javassist.org/) for bytecode instrumentation. Probes are inserted in the beginning of each method. However, it does not perform fine-grain trace coverage at the instruction level.
+- **Yajta**: It is a tracing agent that works offline, it relies on [Javassist](https://www.javassist.org/) for bytecode instrumentation. Probes are inserted at the beginning of each method. However, it does not perform fine-grain trace coverage at the instruction level.
 - **JVM class loader**: It is very accurate since the JVM needs to load a class before executing it, by design. However, it limited to classes and does not trace methods. 
 
 A general scheme of JDBL is presented in the following figure:
 
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2020/jdbl_diversity.jpg alt: "JDBL pipeline" %}
+  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2020/jdbl_diversity.jpg alt: "JDBL pipeline" %}
   <figcaption class="stroke">
     &#169; Debloat execution pipeline in JDBL (JCov is not shown because it was added later.).
   </figcaption>
@@ -119,4 +119,4 @@ As we observe, JDBL combines a variety of different implementations in order to 
 
 # The Lesson to Learn
 
-Coverage tools implement different policies to handle the variety of bytecode constructs, thus posing a challenge for its usage on debloating. I have shown that, as in this case, when facing a hard problem for which no tool can provide a 100% accurate solution, combining the diversity of implementations of similar tools is a feasible approach to achieve better results. Of course, one can argue that this decision may hurt performance, but sometimes performance is not exactly of principal goal :smiley:
+Coverage tools implement different policies to handle the variety of bytecode constructs, thus posing a challenge for its usage on debloating. I have shown that, as in this case, when facing a hard problem for which no tool can provide a 100% accurate solution, combining the diversity of implementations of similar tools is a feasible approach to achieving better results. Of course, one can argue that this decision may hurt performance, but sometimes performance is not exactly of principal goal :smiley:

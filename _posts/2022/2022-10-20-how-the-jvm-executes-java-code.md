@@ -180,7 +180,7 @@ class Main extends Object {
 {% endhighlight %}
 
 <aside class="quote">
-    <em>“Superclasses are initialized before subclasses.”</em>
+    <em>“In Java, superclasses are initialized before subclasses.”</em>
 </aside>
 
 In general, initialization of a class or interface `T` occurs when any of the following circumstances occurs:
@@ -338,7 +338,7 @@ I hope you enjoyed this article and learned something new 😎.
 # References
 
 - [The Java Language Specification, Java SE 19 Edition](https://docs.oracle.com/javase/specs/jls/se19/jls19.pdf)
-- [Dynamic Class Loading in the Java Virtual Machine](https://dl.acm.org/doi/10.1145/286942.286945)
+- [:earth_americas: Dynamic Class Loading in the Java Virtual Machine](https://dl.acm.org/doi/10.1145/286942.286945)
 
 # Footnotes
 

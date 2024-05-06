@@ -19,16 +19,18 @@ author: cesarsotovalero
 published: true
 ---
 
+{% youtube mp_jSfUACrs %}
+
 The software supply chain comprises all the technology involved in shipping a piece of code from development to its deployment in a production environment.
-Several actors and different technologies participate in this complex process, e.g., developers, IDEs, compilers, package managers, a so on.
+Several actors and different technologies participate in this complex process, e.g., developers, IDEs, compilers, package managers, and so on.
 The success or failure of a software product depends largely on many external components which are not directly controlled by the organizations in charge of delivering software products to their clients.
 This situation poses several security and maintenance risks for both software suppliers and customers.
 Thereby, maintaining a secure and efficient software supply chain is critical today, where open-source has become ubiquitous in the software production landscape.
 In this post, I take a close look at this phenomenon from a software engineering perspective.
-Lets me dive into it!
+Let me dive into it!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2021/crane.png alt: "The crane is a symbol of the construction and transportation of physical objects on a large scale." %}
+  {%responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2021/crane.png alt: "The crane is a symbol of the construction and transportation of physical objects on a large scale." %}
   <figcaption class="stroke">
     &#169; The crane is a symbol of the construction and transportation of physical objects on a large scale. 
     </figcaption>
@@ -44,14 +46,14 @@ As it is not a physical product, there are no transportation issues, lack of war
 Therefore, clients' expectations regarding shipping speed and availability are much higher.
 
 Shipping features and services efficiently, from developers to clients, is challenging.
-In this context, the software supply chain shares many of the difficulties that exists in the traditional supply chain of physical products.
+In this context, the software supply chain shares many of the difficulties that exist in the traditional supply chain of physical products.
 This happens because software production is a complex process in which several independent pieces of technology need to be orchestrated.
 Software needs to be delivered and maintained as quickly as possible, which can only be achieved through automation.
 
 Figure 1 depicts a typical software supply chain pipeline.
 Once the requirements are specified, developers rely on VCS, IDEs, mailing lists, and other tools to write code and communicate with other members of the team.
 The goal of the first step in any software product is to deliver source code and other configuration scripts.
-Then, a build engine compiles, tests, and assesses its quality.
+Then, a build engine compiles, test, and assesses its quality.
 These two steps are bound together and are known as [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) (CI).
 Once all the code assessments are done and the code passes the scrutiny, the build engine then ships binary files to the deployment platform.
 This is in charge (among other things) of the release, resource orchestration, and versioning of the software product.
@@ -96,24 +98,24 @@ For almost every software company, relying on software that is not made in-house
 If a single component in the supply chain gets compromised, then the whole infrastructure may be at the mercy of the attacker.
 Supply chain attacks are very difficult to detect because the product continuously changes at each stage: from source code, to binaries, to an application that runs somewhere in the cloud and is interacting with clients.
 Attackers could target all the layers of the supply chain, from malicious plugins in IDEs to corrupted compilers.
-However, they often focus on the less secure elements in the supply chain and heavily rely on the trust that make code reuse possible.
+However, they often focus on the less secure elements in the supply chain and heavily rely on the trust that makes code reuse possible.
 Attacks targeting third-party components are expected to become more prominent over the next few years.
 
 <aside class="quote">
-    <em>“Projects often incorporate code and libraries from many sources with unknown provenance...”</em> ― <cite><a href="http://web.mit.edu/ha22286/www/">Hamed Okhravi</a></cite>
+    <em>“Projects often incorporate code and libraries from many sources with unknown provenance...”</em> <cite><br> ― <a href="http://web.mit.edu/ha22286/www/">Hamed Okhravi</a></cite>
 </aside>
 
 Package managers are particularly susceptible to supply chain attacks (e.g., [typosquatting](https://news.ycombinator.com/item?id=11862217), [cryptojacking](https://www.kaspersky.com/resource-center/definitions/what-is-cryptojacking), and malicious contributors).
 This is due to the lack of efficient mechanisms for detecting malicious code injected into packages uploaded to popular package repositories.
 For example, there is no security audit performed on the packages submitted `npm`, the largest repository of JavaScript libraries.
-Significant research effort has been devoted in classifying [supply-chain compromises](https://github.com/IQTLabs/software-supply-chain-compromises/blob/master/software_supply_chain_attacks.csv) and developing tools for hardening the supply chain infrastructure is a trending and marketable business.
+Significant research effort has been devoted to classifying [supply-chain compromises](https://github.com/IQTLabs/software-supply-chain-compromises/blob/master/software_supply_chain_attacks.csv) and developing tools for hardening the supply chain infrastructure is a trending and marketable business.
 We have seen the rise of tools to mitigating the risks (e.g., [Snik](https://snyk.io/, [Sonarqube](https://www.sonarqube.org/), and [Chaos Monkey](https://netflix.github.io/chaosmonkey/))). 
 Existing tools are mostly focused on monitoring applications' behavior, scanning dependencies, and assessing code quality.
 However, the adoption of such tools is still at an early stage in most organizations.
 
 
 <aside class="quote">
-    <em>“We don't know what we are installing, and even the people who sell it to us have no clear idea.”</em> ― <cite><a href="http://disi.unitn.it/~massacci/">Fabio Massacci</a></cite>
+    <em>“We don't know what we are installing, and even the people who sell it to us have no clear idea.”</em> <cite><br> ― <a href="http://disi.unitn.it/~massacci/">Fabio Massacci</a></cite>
 </aside>
 
 
@@ -126,15 +128,11 @@ Incidents at this scale are evidence of the lack of awareness related to this is
 
 
 <aside class="quote">
-    <em>“Governments have been somewhat ineffectual in handling supply-chain issues.”</em> ― <cite><a href="http://faculty.nps.edu/bmichael/">James Bret Michael</a></cite>
+    <em>“Governments have been somewhat ineffectual in handling supply-chain issues.”</em> <cite><br> ― <a href="http://faculty.nps.edu/bmichael/">James Bret Michael</a></cite>
 </aside>
 
 Mass-scale software development and future global innovation are at risk if governments enforce more restrictive security gates to prevent incidents such as the SolarWinds.
 Technology-based solutions need to be developed in order to cope with the challenge of securing the software supply chain.
-
-<div class="container-youtube">
-  <iframe width="560" height="349" src="https://www.youtube.com/embed/mp_jSfUACrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 # Hardening the Chain
 
@@ -142,7 +140,7 @@ Overall, supply chain-related attacks are perceived as very dangerous and hard t
 Securing the software supply chain requires a continuous assessment of the components, vendors, and the whole operational environment.
 This can only be achieved through the gathering and analysis of relevant and verifiable data sources.
 [Reproducible builds](https://reproducible-builds.org/docs/) are a set of software development practices that create an independently verifiable path from source to binary code.
-A build is reproducible if given the same source code, build environment and build instructions, any party can recreate bit-by-bit identical copies of all specified artifacts.
+A build is reproducible if given the same source code, build environment, and build instructions, any party can recreate bit-by-bit identical copies of all specified artifacts.
 This build methodology allows verifying that no vulnerabilities or backdoors have been introduced in the supply chain.
 
 Notice that to achieve reproducible builds, the CI/CD system needs to be made entirely deterministic: modifying a given source must always create the same result.
@@ -171,8 +169,8 @@ I hope events such as the SolarWinds incident become less frequent in the near f
 
 # References
 
+- [:earth_americas: https://reproducible-builds.org/docs](https://reproducible-builds.org/docs)
+- [:earth_americas: https://survey.opensourceunchained.eu/](https://survey.opensourceunchained.eu/)
+- [:earth_americas: SolarWinds attack explained: And why it was so hard to detect](https://www.csoonline.com/article/3601508/solarwinds-supply-chain-attack-explained-why-organizations-were-not-prepared.html)
 - [Securing the World's Software](https://arxiv.org/ftp/arxiv/papers/2110/2110.10246.pdf)
-- [https://reproducible-builds.org/docs](https://reproducible-builds.org/docs)
-- [https://survey.opensourceunchained.eu/](https://survey.opensourceunchained.eu/)
-- [SolarWinds attack explained: And why it was so hard to detect](https://www.csoonline.com/article/3601508/solarwinds-supply-chain-attack-explained-why-organizations-were-not-prepared.html)
 - [USA Securing Open Source Software Act of 2022](https://www.govinfo.gov/content/pkg/BILLS-117s4913is/pdf/BILLS-117s4913is.pdf)

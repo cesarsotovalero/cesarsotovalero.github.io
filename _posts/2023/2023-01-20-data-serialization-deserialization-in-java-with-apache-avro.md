@@ -24,7 +24,7 @@ In this article, I'll focus on the AVRO file format provided by Apache Avro, a p
 I'll cover the main features of Avro and why/when/how to use it for serialize and deserialize your data files in Java.
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-01-20/sparrow.jpg alt:"Orchestration" %}
+  {% responsive_image path: img/posts/2023/2023-01-20/sparrow.jpg alt: "Orchestration" %}
   <figcaption class="stroke"> 
     &#169; Sometimes I'm so close of what I'm looking for, that I cannot see it. Photo of a sparrow sitting on a sculpture from one of my excursions to the island of <a href="https://goo.gl/maps/WWDDeAWextXzgaiw9">Sandhamn</a>, Stockholm 2023.
   </figcaption>
@@ -59,14 +59,16 @@ The following table compares AVRO w.r.t the most popular data formats:
 # Why using Apache Avro?
 
 <aside class="quote">
-    <em>“A binary file is a computer file that is not a text file.” -- <cite><a href="http://www.linfo.org/binary_file.html">The Linux Information Project</a></cite></em> 
+    <em>“A binary file is a computer file that is not a text file.”</em>
+    <cite><br> ― <a href="http://www.linfo.org/binary_file.html">The Linux Information Project</a></cite>
 </aside>
+
 The Avro data serialization system provides a rich data structures in a compact, fast, binary data format.
 It is used in popular big data frameworks such as [Spark](https://spark.apache.org/), [Kafka](https://kafka.apache.org/), and [Hadoop](https://hadoop.apache.org/).
 AVRO is a row-based, schema-based format that allows defining a data schema using JSON. 
 In the case of Java, the schema can be compiled into Java classes that can be used to read and write AVRO binary data.
 This way, developers can confidently work with data in their applications, knowing that it aligns with the defined schema and can be accurately interpreted by data consumers. 
-The use of a adata schema improves data reliability, interoperability, and processing efficiency.
+The use of a data schema improves data reliability, interoperability, and processing efficiency.
 
 Here are some advantages of using Avro instead of other data file formats:
  
@@ -264,7 +266,7 @@ private static void serializePersons(List<Person> personList, File personListSer
   // We create a DatumWriter, which converts Java objects into an in-memory serialized format.
   // The SpecificDatumWriter class is used with generated classes and extracts the schema from the specified generated type.
   DatumWriter<Person> datumWriter = new SpecificDatumWriter<>(Person.class);
-  // Next we create a DataFileWriter, which writes the serialized records, as well as the schema, to the file specified in the dataFileWriter.create call.
+  // Next we create a DataFileWriter, which writes the serialized records, as well as the schema, to the file specified in the dataFileWriter.create() call.
   // We write our persons to the file via calls to the dataFileWriter.append method. When we are done writing, we close the data file.
   DataFileWriter<Person> dataFileWriter = new DataFileWriter<>(datumWriter);
   dataFileWriter.create(personList.get(0).getSchema(), personListSerializedFile);

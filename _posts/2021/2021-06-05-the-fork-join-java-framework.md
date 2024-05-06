@@ -63,7 +63,7 @@ In practice, all you need to do is create a subclass of `RecursiveAction` or `Re
 If you are curious, here is the class diagram for this architecture.
 As you observe, the `ForkJoinPool` class is an implementation of the `AbstractExecutorService` class which implements `ExecutorService`, while the `ForkJoinTask<V>` abstract class implements the `Future<V>` interface.
 
-{% responsive_image path: img/posts/2021/fork_join_classes.png alt: "Fork/Join Class Diagram"%}
+{% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2021/fork_join_classes.png alt: "Fork/Join Class Diagram"%}
 
 # Examples
 

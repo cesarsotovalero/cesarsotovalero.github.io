@@ -91,7 +91,7 @@ The only thing you can do is to be yourself, in a natural way.
 ## Coding Interview
 
 The coding interview is usually the second step in the interview process.
-It consists of a series of coding problems  that you need to solve under time constraints.
+It consists of a series of coding problems that you need to solve under time constraints.
 You can find such kinds of problems in sites such as [LeetCode](https://leetcode.com/) or [HackerRank](https://www.hackerrank.com/).
 Some companies do it on-site, while others do it remotely.
 The only way to do well in this kind of interviews is to practice a lot.
@@ -101,7 +101,7 @@ I used to participate in [competitive programming](https://en.wikipedia.org/wiki
 So, I was familiar with this kind of problem and just need a few weeks of preparation to revive my dormant skills.
 Still, I solved around 30 problems before applying for a job.
 If you're not familiar with these kinds of problems, you probably need at least one month to prepare yourself.
-Start with easy problems and then move to problems of medium complexity (I suggest skipping hard problems unless your applying to [FANG companies](https://en.wikipedia.org/wiki/Big_Tech)).
+Start with easy problems and then move to problems of medium complexity (I suggest skipping hard problems unless you're applying to [FANG companies](https://en.wikipedia.org/wiki/Big_Tech)).
 
 > **Q:** Do I need to pay for a particular course to prepare for the coding interview?<br>
 > **A:** No, you don't need to pay for any course because there are plenty of free and good resources available online, and you just need to know which ones are the best.
@@ -126,7 +126,7 @@ To be honest, I initially found myself unfamiliar with the intricacies of design
 As a researcher, my expertise was more rooted in the realm of algorithms, data structures, and [open-source software development](../software.html).
 So, my abilities were applied to projects which much smaller scale.
 For me, expanding my knowledge to encompass large, multi-faceted software systems required some learning curve.
-I dedicated a couple of weeks to self-study about practical applications to grasp the complexities and interrelationships inherent to these kind of systems.
+I dedicated a couple of weeks to self-study about practical applications to grasp the complexities and interrelationships inherent to these kinds of systems.
 
 I suggest first focusing on one particular large-scale system and learn how it works (for example, a global booking service).
 Given my previous expertise, I also decided to focus my training on one particular software stack: the Java stack.
@@ -175,8 +175,8 @@ In my opinion, one of the best [career paths for researchers](../blog/how-phd-pr
 I use [Glassdoor](https://www.glassdoor.com) to check out salaries and reviews of companies. Then, I use [LinkedIn](https://www.linkedin.com/) to find recruiters and people that work in those companies. I "cold message" them asking for details about open positions. I also applied directly to the job offers that I find interesting and let recruiters known about my applications directly via chat. **I believe the human factor is key to getting an interview**. Being professional and polite is super important, thus I always thank the recruiters for their time and support.
 
 I rely on a [Notion sheet](https://www.notion.so/templates/job-applications) to keep track of my job applications.
-This is important because with the time you will have a lot of applications and you will need to keep track of them.
-The worst thing that could happen is that you get an call from a recruiter, and you don't remember the name of the company or the details of the position you applied for.
+This is important because with the time you will have a lot of applications, and you will need to keep track of them.
+The worst thing that could happen is that you get a call from a recruiter, and you don't remember the name of the company or the details of the position you applied for.
 
 Every time I applied, I filled the database with the following fields:
 
@@ -197,29 +197,29 @@ Here's an example of how it looks like:
 
 # Interviews
 
+<aside class="quote">
+    <em>“Treat yourself with respect: You are not a junior engineer, you are PhD in Computer Science!”</em> 
+</aside>
+
 At large companies, the interview is usually a multi-step process.
 The first step is a phone screen with a recruiter.[^4]
 The recruiter will ask you about your background and your motivations for applying to the company, and (hopefully) the recruiter will also ask you about your salary expectations.
 It is important to prepare a sound argument about why you want to work for the company and why you are a good fit for the position in particular.
-For example, in my case I only applied to companies that I have some reference about (e.g., I know someone who works there, or I know someone who knows someone who works there).
+For example, in my case, I only applied to companies that I have some reference about (e.g., I know someone who works there, or I know someone who knows someone who works there).
 Take into account that the recruiter may not be familiar with the technical details of your PhD, so you need to explain your research in a way that is understandable to a non-technical person.
 If the recruiter asks you about your salary expectations, this is a very good sign because it means that the company is really interested in you, so be prepared to give her **a reasonable salary range**.
 
 > As a PhD student, you don't want to apply to companies that don't take into account your research experience.
 > If you get some questions such as "How many years of experience do you have?" or "Do you know what a pointer (in C++) is?" these are red flags, and you should reconsider applying to such kind of companies.
 
-<aside class="quote">
-    <em>“Treat yourself with respect: You are not a junior engineer, you are PhD in Computer Science!”</em> 
-</aside>
-
 The second phase of the process typically involves a coding interview, which can be conducted either online or in person (I've experienced both versions).
 The in-person variant of the coding interview, in my view, offers a more engaging and rewarding experience. 
 This is primarily due to the immediate feedback provided by the interviewer. 
 This real-time interaction not only allows for instant clarification of doubts and swift correction of errors, but also fosters a dynamic environment where problem-solving becomes a collaborative effort. 
 This interpersonal element tends to make the process more enjoyable and enriching.
-For example, in one of the interviews, I was given one piece of paper at the time and 5 minutes to identify bugs and vulnerabilities within the Spring Boot Java application.
+For example, in one of the interviews, I was given one piece of paper at a time and 5 minutes to identify bugs and vulnerabilities within the Spring Boot Java application.
 At the end of the task the conversation eventually delved into a more profound discussion regarding achieving thread safety, enhancing performance, and devising elegant solutions to eliminate issues such as SQL injection and other vulnerabilities in the code.
-I'm sure that with the time I'm going to miss doing these kind of technical interviews.
+I'm sure that with the time I'm going to miss doing these kinds of technical interviews.
 
 The third step is a more high-level interview with engineers or system architects (a.k.a the System Design Interview).
 There a technical person will ask you (again) about your background and your motivations for applying to the company.
@@ -234,7 +234,7 @@ If you are applying for a Software Engineer position, the questions will be rela
 The fourth step is an interview with the hiring manager.
 This signals that you are close to getting an offer.
 The hiring manager could invite you to a coffee or lunch.
-She just wants to make sure that **you are a good addition for the team** (i.e., just double checking that you're not an asshole).
+She just wants to make sure that **you are a good addition for the team** (i.e., just double-checking that you're not an asshole).
 
 # Offer
 
@@ -244,7 +244,7 @@ Accepting a new job is an important decision in life, and as with any important 
 In any case, you don't want to show that you are desperate for the job.
 Give time to yourself and demonstrate that you are a valuable candidate who has other options.
 
-Once you decided to accept the offer, you need to negotiate things like the salary and the notice date.
+Once you decide to accept the offer, you need to negotiate things like the salary and the notice date.
 Always negotiate the salary! 
 Even if you are happy with the offer, you should negotiate it.
 After all, that's one of the main drivers of your decision to leave academia $$$.

@@ -14,6 +14,8 @@ The following is a non-exhaustive list of my technical presentations (in reverse
 
 # 2024
 
+{% youtube Xn1ShZPrw2o %}
+
 - **Dancing on Thin Ice - Leveraging Software Bill of Materials in Java**. Presented at [Jfokus](https://www.jfokus.se/talks/1661), Stockholm, February 2024. [Video](https://youtu.be/Xn1ShZPrw2o?si=sP5U0PATsrdHmwK1 "video"){:target="_blank"} [Slides](https://www.jfokus.se/jfokus24-preso/Dancing-on-Thin-Ice--Leveraging-Software-Bill-of-Materials-in-Java.pdf)
 
 # 2023
@@ -22,13 +24,18 @@ The following is a non-exhaustive list of my technical presentations (in reverse
 
 - **Software Supply Chain Security**. Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [Digital Futures](https://www.digitalfutures.kth.se/) in KTH, Sponsored by the [Swedish National Hacking Team](https://snht.se/) and [Cparta Cyber Defense](https://www.cparta.se/), June 2023. [Slides](https://docs.google.com/presentation/d/1ki5KITPSciccI1Qdh3wb7GOjdw8jq-CFbY-mvXLUv2c/edit?usp=sharing)
 
+{% youtube 7IoXciSucw4 %}
+
 - **Debloating Java Dependencies**. PhD defense presented at KTH, June 2023. [Video](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw "video") [Slides](../files/thesis/slides/cesar-phd-defense.pptx)
 
 - **The Software Supply Chain of Crypto and Decentralization**. Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [_2nd Descentralized Camp Meetup_](https://www.meetup.com/decentralized-camp/events/290035869/), Developers Bay, January 2023. [Slides](https://docs.google.com/presentation/d/14A3n_ZT13ealkTVUNnchS7pE03vOL6cDIQpiIZghuHY/edit?usp=sharing)
 
+
 # 2022
 
 - **Automatic Software Debloating**. 80% PhD Seminar. Presented at KTH, November 2022. [Slides](../talks/80_percent_2022.pdf "pdf")
+
+{% youtube HXj2B8eHmt4 %}
 
 - **Coverage-Based Debloating for Java Bytecode**. Presented at ESEC/FSE, Singapore, November 2022. [Video](https://youtu.be/HXj2B8eHmt4 "video")
 
@@ -43,6 +50,8 @@ The following is a non-exhaustive list of my technical presentations (in reverse
 - **The Software Supply Chain of Enterprise Java Ethereum Nodes**. Presented at KTH, January 2022. [Slides](https://docs.google.com/presentation/d/1pZGJ_9X_mvOzaqlelQbSyPI9opo6V_e1/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
 
 # 2021
+
+{% youtube 8SndbPMwdWE %}
 
 - **The Software Production Landscape**. Presented at KTH, September 2021. [Slides](../files/presentations/software-production-landscape.pptx)
 

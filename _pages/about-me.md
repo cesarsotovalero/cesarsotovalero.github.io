@@ -28,6 +28,8 @@ Here is my minimalistic [resumé](../files/CV/cv.pdf).
 
 I'd a PhD in Computer Science in the Department of [Software and Computer Systems](https://www.kth.se/scs/software-engineering) at [KTH Royal Institute of Technology](https://kth.se), supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/) (I graduated in 2023).[^4]
 
+{% youtube Ub684G_aM5Q %}
+
 My PhD was about software debloating,[^1] check out my [thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf) and [public defense](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw).
 
 Besides my PhD topic, I do knowledge-seeking software engineering research.
