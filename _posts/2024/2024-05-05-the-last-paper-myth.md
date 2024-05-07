@@ -21,19 +21,19 @@ author: cesarsotovalero
 published: false
 ---
 
-Last week I met a PhD former student colleague. 
+Last week, I met a former PhD student who was my colleague.
 She is in the last year of her PhD.
 I asked the usual: _How are you doing?_
-She replied with a wistful smile: _I'm working on last paper._
+She replied with a wistful smile: _I'm working on my very last paper._
 Her face showed a mix of fatigue and resignation.
 It's clear that she was under pressure to finish "one last paper more."
-I understand the situation because I've been there too.
-I've seen it many times.
-The "last paper myth" is a common experience among PhD students.
-It is not just pervasive in academia but is a reflection of broader conflicting interests.
-In this blog post, I aim to unpack the "last paper myth" for academics and discuss implications beyond academic circles.
-My intention is to decompose this situation and provide actionable insights on how to identify, address, and navigate the last minute pressures both in academia and in future professional engagements.
-Let's start by looking at the expectation v.s reality in the last year of a PhD student. 
+I quickly understood the situation because I had been there too.
+I've also seen it many times.
+The "last paper myth" is a common experience among PhD students who are about to graduate.
+It is not just pervasive in academia but is a reflection of broader conflicting interests between science producers and their stakeholders.
+In this blog post, I uncover the "last paper myth" for academics and dive into a more philosophical discussion regarding this phenomenon beyond academic circles.
+My intention is to provide actionable insights for researchers on how to identify, address, and navigate this kind of pressure, whether they stay in academia or engage in other professional endeavors.
+Let's start by looking at the contrast between expectations and reality during the last year of a typical PhD student.
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/img-placeholder.png alt: "TODO" %}
@@ -44,45 +44,47 @@ Let's start by looking at the expectation v.s reality in the last year of a PhD 
 
 # Expectation
 
-- Being at the last year and expecting to write your thesis means that you are already succeeded in your PhD studies. You have already published several papers, struggled and learned a lot. So your supervisor knows that, and you're his most valuable resource. So, he will ask you to write the last paper. This is the last paper myth.
-- You will surely finish your PhD with some papers submitted, this means that you will have to later receive the feedback from the reviewers, address their comments, and resubmit the paper. This is a long process that can take several months. It's work that you will have to do after you finish your PhD whether or not you decide to stay in academia. Of course, you can reject doing it, but just think about all the work that your have put into the paper, and the fact that it's in your best interest to have it published. So, you will have to do it.
-- The PhD is actually a confrontation of interests between the supervisor and the student. The supervisor wants to have "the papers that he or she wants published," and the student wants to finish the PhD. The student will have to do the work, and the supervisor will have to push the student to do it. This is how it works. So in order for the supervisor to accomplish his or her goals, he or she will have to go through a long process of teaching the student how to conduct research and write research paper. This is a long journey and sometimes it just doesn't work out for the supervisor, so successful students who has proven themselves are very valuable resources for supervisors.
-- Many PhD candidates find themselves in a perpetual state of preparing just one more paper, urged on by their supervisors even as they near what they believe to be the end of their academic requirements. This blog post delves into the dynamics of this issue, exploring the complexities of academic labor, expectations, and the often conflicting interests between PhD candidates and their supervisors.
-- By exploring these facets, this blog post aims to contribute to a better understanding of the real dynamics of completing a PhD and to foster a dialogue that could lead to meaningful changes in how academia operates, particularly in its treatment of its most vulnerable members—its students.
+The doctoral journey was originally envisioned as a quest for knowledge, where intellectual curiosity meets the rigorous demands of scientific inquiry.
+This ideal, however, has evolved dramatically over the years, shaped by the dual pressures of funding and publication metrics that dominate contemporary academia.
+Such changes influence not only supervisor expectations but also profoundly impact the student experience.
 
+Within this academic milieu, the pressure to produce "one last paper" can unnecessarily extend the duration of PhD programs, adding significant financial and emotional strain on students. 
+This situation highlights a crucial imbalance in academic power dynamics and brings to the forefront concerns about the mental health and well-being of PhD students.
 
-Historically, the PhD was conceived as a journey of intellectual growth and discovery, culminating in a significant contribution to a field of knowledge. 
-Over decades, this has evolved under increasing pressures for funding, publication metrics, and academic prestige, influencing supervisor expectations and student experiences.
+Typically, a PhD student enters their final year with the expectation that their primary task is to synthesize their research into a coherent thesis that demonstrates their scholarly contributions. They are expected to have already published several papers, each representing a hurdle they have successfully cleared. Despite this, supervisors—recognizing the increasing proficiency and output of their experienced students—may request additional papers. This expectation feeds into the "last paper myth," where students are led to believe that just one more paper will finally complete their academic obligations.
 
-1. **Expectation vs. Reality**: PhD candidates enter their final year with the belief that their remaining task is to consolidate their years of research into their final thesis. Contrarily, supervisors, recognizing the productivity and increasing capability of their seasoned students, may push for more output in the form of additional papers.
-
-2. **Academic and Emotional Toll**: The pressure to produce "one last paper" can extend the duration of PhD programs, adding to the financial and emotional strain on students. This scenario raises questions about the balance of power in academic relationships and the mental health of PhD students.
-
-3. **Career Implications**: While additional papers can enhance a student's academic portfolio, they also require time for revisions and responses to peer review, which can extend beyond the PhD tenure. This necessitates commitments that might clash with new career responsibilities if students move out of academia.
-
-4. **Ethical Considerations**: The supervisor’s insistence on additional papers can reflect a conflict of interest, where the student’s need to complete their program and possibly move on to professional engagements is at odds with the supervisor’s desire for continued academic output and prestige.
-
-- **The Myth of the Last Paper**: The notion that one final paper will conclusively end the PhD cycle is often a myth, perpetuated by the ongoing academic contributions that benefit the supervisor’s scholarly profile potentially at the expense of the student's well-being and career timeline.
-
-- **Student Autonomy vs. Supervisor Control**: This theme explores the degree of control PhD students have over their research agendas versus the influence exerted by their supervisors. It raises questions about academic freedom and student rights in research settings.
-
-- **Quality vs. Quantity of Research**: Debates arise over whether pushing students for more papers genuinely enhances the scientific community or simply saturates the field with rushed, less-thorough research in pursuit of academic quantity over quality.
-
-A review of recent academic studies and industry reports highlights a growing recognition of these issues within higher education discourse. Studies in journals such as *Higher Education Research & Development* and reports from the *Chronicle of Higher Education* provide evidence of both the prevalence and impact of this push for "the last paper." These sources reveal that while some students benefit from the extra push, often in terms of increased publications, others feel exploited and overextended.
+PhD candidates commence their final year believing their remaining task is to consolidate their research into their final thesis. In contrast, supervisors, seeing the productivity and capabilities of their seasoned students, may encourage even more output in the form of additional papers. Consequently, many students find themselves caught in a perpetual cycle of preparing just one more paper, urged on by their mentors even as they approach what they believe to be the end of their academic requirements.
 
 # Reality
 
-# Resignation
+The notion that one final paper will decisively conclude the PhD journey is often a fallacy, perpetuated by an academic culture that benefits supervisors' scholarly profiles at the potential cost of the student's well-being and career progression.
 
-# Takeaways
+Upon completing their PhD, students typically have several papers under review. This phase involves receiving feedback from peer reviewers, addressing their comments, and resubmitting revisions. This process can extend for several months post-graduation. While students can opt out of this cycle, the sunk cost of their effort and the professional benefits of having a published paper often compel them to see it through. This continuation of work occurs regardless of whether a student remains in academia or moves into industry.
+
+The push for additional papers often mirrors a conflict of interest, where the needs of the student to complete their program and transition to professional roles are at odds with the supervisor’s desires for continued academic output and enhanced personal prestige. This misalignment prompts serious questions about academic freedom and student rights within research environments.
+
+Recent academic studies and industry reports indicate increasing recognition of these issues. Research published in journals such as *Higher Education Research & Development* and reports from the *Chronicle of Higher Education* document the widespread nature and impact of the "last paper" phenomenon. These studies show that while some students benefit from the additional push—in terms of increased publications and enhanced resumes—others feel exploited and stretched too thin.
+
+# Thoughts and Debate
+
+The PhD experience can be described as a confluence of conflicting interests where supervisors aim to publish specific papers and students strive to conclude their studies. The burden of work falls predominantly on students, with supervisors acting as both mentors and beneficiaries of the students' scholarly output. This dynamic sets the stage for a complex interplay of mentorship, exploitation, and academic achievement.
+
+Successful students, who have demonstrated their research capabilities, are particularly valuable to their supervisors. This value can lead to a paradox where the most capable students are often the most burdened. Rather than easing as students near completion of their program, their workload can intensify as supervisors seek to maximize output before their departure.
+
+The academic push for publication often raises questions about the true nature of contributions to the scientific community. There is an ongoing debate about whether this drive serves to genuinely advance scientific knowledge or merely saturates the field with rushed, less-thorough research. The emphasis on quantity over quality can diminish the impact of scholarly work and detract from the deeper purpose of academic study.
+
+Furthermore, the role of publication pressures in shaping doctoral experiences cannot be overstated. These pressures not only affect the trajectory of students' careers but also their personal lives and mental health. The continuous cycle of writing, submission, and revision places immense stress on students, often without adequate support or recognition from the academic institutions that benefit from their labor.
+
+The exploitation of PhD students under the guise of academic rigor and scholarly output is an issue that calls for a critical examination of ethical practices within academia. There is a pressing need for academic institutions to reassess their policies and practices to ensure they promote a supportive and ethical environment. This reassessment should aim to balance the demands of publication with the well-being of students, fostering an academic culture that values integrity and respect over mere output.
 
 # Conclusions
 
-The continual push for "the last paper" raises significant concerns about how academia values and uses the labor of PhD students. It highlights the need for clearer policies on the expectations and rights of doctoral candidates, suggesting a shift towards more supportive, transparent, and ethically grounded supervisory practices.
+The persistent demand for "the last paper" underlines significant concerns about how academia values and utilizes the labor of PhD students. 
+It underscores the necessity for clearer policies concerning the expectations and rights of doctoral candidates, advocating for a shift towards more supportive, transparent, and ethically sound supervisory practices.
 
-As academia moves forward, it is crucial to reassess the balance between producing quality research and maintaining humane, fair, and supportive environments for PhD candidates. Only through such reevaluations can the academic community hope to sustain its integrity and the trust of its scholars.
+As academia progresses, it is imperative to reevaluate the balance between producing quality research and maintaining humane, equitable, and supportive conditions for PhD candidates. Only through such reevaluations can the academic community maintain its integrity and the trust of its scholars.
 
-This investigation opens up several avenues for further research, including the development of interventions that institutions can implement to ensure fair practices in PhD supervision. Additionally, it calls for a broader discussion within the academic community about the nature of doctoral studies and the role of publication pressures in shaping the experiences and outcomes of PhD students.
+This investigation not only highlights the need for institutional changes but also opens several avenues for further research, including developing interventions that academic institutions can implement to ensure fair practices in PhD supervision. It also calls for a broader discussion within the academic community about the nature of doctoral studies and the role of publication pressures in shaping the experiences and outcomes of PhD students.
 
 # Resources
 
