@@ -2576,7 +2576,7 @@ ol, ul {
 }
 
 .youtube .box:hover .play {
-  background-color: rgba(0, 0, 0, 0.5); /* darker background on hover */
+  background-color: rgba(4, 39, 66, 0.6); /* darker background on hover */
   transform: scale(1.05); /* subtle zoom effect */
 }
 
