@@ -40,7 +40,7 @@ I'm keen to perform research on software technology which:
 
 1. Provide **actionable insights** to researchers and practitioners about how modern software is currently being developed and maintained.
 2. Produce **practical tools** for developers to improve software quality.
-3. Disrupt the **status quo** of software engineering methodologies or practices.
+3. Disrupt the status quo of software engineering **methodologies** or practices.
 
 I'm always open to work with researchers and supervise students in these areas.
 If you are interested in collaborating with me, have a look at my list of [research topics](./collaborations.html).
