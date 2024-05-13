@@ -42,7 +42,7 @@ TODO
 
 # TODO
 
-# Resources
+# External Resources
 
 # Footnotes
 

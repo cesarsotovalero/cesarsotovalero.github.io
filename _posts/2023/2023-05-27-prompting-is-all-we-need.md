@@ -320,7 +320,7 @@ Stay tuned because we'll soon start prompting with our voice, images, videos, ev
 Websites will feature their own AI system, optimized specifically for their platform.
 The future is as uncertain as it is exciting.
 
-# Resources
+# External Resources
 
 - <i class="fab fa-github"></i> [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 - <i class="fab fa-github"></i> [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)

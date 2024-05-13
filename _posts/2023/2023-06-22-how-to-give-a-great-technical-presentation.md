@@ -332,7 +332,7 @@ It also helps to study carefully what the best speakers do.
 
 That's all from me, the rest you can probably only learn it by doing it.
 
-# Resources
+# External Resources
 
 - [How to Speak](https://youtu.be/Unzc731iCUY), by Patrick Winston
 - [:earth_americas: Speaker Cheat Sheet](https://www.yegor256.com/2018/12/25/speaker-cheat-sheet.html), by Yegor Bugayenko
