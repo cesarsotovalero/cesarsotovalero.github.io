@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>The Last Paper&apos;s Myth</title>
+        <description>
+          A tale of contending interests - 
+          Last week, I met a colleague from a renowned research lab. She is currently doing the last year of her PhD. I asked the usual: “So, how are you doing? Writing your thesis?” She replied with a wistful smile: “Not started yet, I’m working on my very last paper, or...
+        </description>
+        <pubDate>Sun, 05 May 2024 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/the-last-paper-myth.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-last-paper-myth.html</guid>
+      </item>
+    
+      <item>
         <title>On the Rise, Decline, and Persistence of Web Technologies</title>
         <description>
           From Static HTML Pages to WebAssembly - 
@@ -213,17 +224,6 @@
         <pubDate>Fri, 22 Apr 2022 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html</guid>
-      </item>
-    
-      <item>
-        <title>Inversion of Control and Dependency Injection in Java</title>
-        <description>
-          The holy grails of modern enterprise Java frameworks - 
-          Inversion of Control (IoC) is a programming principle. The idea of IoC is delegating the control of parts of our application to a framework that initializes some specific task for us. Dependency injection (DI) is a popular design pattern that applies the IoC principle. This pattern was made popular by...
-        </description>
-        <pubDate>Tue, 12 Apr 2022 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html</guid>
       </item>
     
   </channel>
