@@ -222,7 +222,7 @@ By adhering to the guidelines I've outlined above, you can contribute not just c
 I see each commit message as a reflection of professionalism and attention to detail. 
 Let's commit to excellence, one clean message at a time!
 
-# Resources
+# External Resources
 
 - [Guidelines for writing good commit messages](https://github.com/joelparkerhenderson/git-commit-message)
 - [Commit Message Guidelines](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53)

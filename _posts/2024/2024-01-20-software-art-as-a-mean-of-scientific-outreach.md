@@ -89,7 +89,7 @@ Visual programming
 - Artists program and develop open source
 - Artists and programmers love the precision and executability of generative art
 
-# Resources
+# External Resources
 
 - [Art on Clojure TV](https://www.youtube.com/@ClojureTV/search?query=art)
 - [Right Click Save](https://www.rightclicksave.com/)

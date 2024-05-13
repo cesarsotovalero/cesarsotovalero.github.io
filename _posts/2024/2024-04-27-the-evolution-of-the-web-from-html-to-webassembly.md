@@ -729,7 +729,7 @@ But, for now, I'd like to leave you with a few observations:
 4. **Security and Performance Are Continuous Priorities**: Technologies like WebAssembly offer robust security models and enhanced performance, enabling developers to create high-performant applications with improved security features.
 5. **Innovation and Adaptability is Not Optional**: Developers need to remain flexible and embrace new technologies like WebAssembly and dApps to create cutting-edge web applications that meet the expectations of modern users.
 
-# Resources
+# External Resources
 
 - [The Evolution of Web Apps 1992-2024, by Dylan Beattie](https://youtu.be/a_1cV7hg5G8?si=VIaAQnfTyR9nuUdc)
 - [How We Got Here - The History of Web Development, by Richard Campbell](https://youtu.be/41mnNyMxPOA?si=9NVNYd9jyopvFaXj)
