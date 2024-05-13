@@ -125,7 +125,7 @@ This is the reality of how the scientific world is organized these days, and **t
 At a more individual level, the push for additional papers often reflects a conflict of interests.
 The PhD student's need to obtain their diploma and transition to professional roles clashes with the supervisor’s desire for continued academic output to enhance their personal prestige.
 This misalignment leads to the "last paper myth" reality.
-Not to forget that academic supervisors already decided (probably a long time ago) to stay in academia, so they have a vested interest in boosting their publication records.
+Not to forget that academic supervisors already decided (probably a long time ago) to stay in academia, so they have a vested interest in boosting their publication records.[^3]
 Generally, a young supervisor with a growing group may exert more pressure for research results than a more established researcher with a large group.
 Young supervisors rely more heavily on students' results for their own career progress and often work more closely with their students.
 
