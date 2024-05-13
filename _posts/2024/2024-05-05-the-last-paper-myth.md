@@ -48,7 +48,7 @@ So let's start by discussing expectations.
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-05-05/aspuden-metro-terminal.png alt: "Not free to go" %}
   <figcaption class="stroke"> 
-    &#169; Do you really think you're free to go? Not too fast, there is always a chance to give you one more block to carry on. Sculpture of penguin in the <a href="https://en.wikipedia.org/wiki/Aspudden_metro_station">Aspudden metro station</a>, in Stockholm.
+    &#169; Do you really think you're free to go? Not too fast, there is always a chance to give you one more block to carry on. Sculpture of a penguin carrying a cube at the <a href="https://en.wikipedia.org/wiki/Aspudden_metro_station">metro station of Aspudden</a>, in Stockholm.
   </figcaption>
 </figure>
 
