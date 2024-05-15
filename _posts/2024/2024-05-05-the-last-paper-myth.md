@@ -54,7 +54,7 @@ So let's start by discussing expectations.
 
 # Expectations
 
-For most PhD students, the doctoral journey is envisioned as a quest for [knowledge and professional further opportunities](../blog/seven-reasons-to-go-for-a-phd-in-computer-science.html).
+For most PhD students, the doctoral journey is envisioned as a quest for [knowledge and further professional opportunities](../blog/seven-reasons-to-go-for-a-phd-in-computer-science.html).
 It's a personal challenge, where intellectual curiosity meets the rigorous demands of [scientific research](https://en.wikipedia.org/wiki/Scientific_method).
 This idyllic vision of fulfilled scientists, however, has evolved dramatically over the last years.
 The modern high education system is currently shaped by the dual pressures of squeezing a little more out of the public money pipeline, and ranking high in [global publication metrics](https://www.topuniversities.com/university-subject-rankings/engineering-technology) to get more money in return.[^1]
@@ -87,15 +87,15 @@ It turns out that my PhD contributions opened new research avenues and opportuni
 A hard-to-resist temptation for workaholic academics.
 
 <aside class="quote">
-    <em>“The PhD life involves a delicate balance between students' academic output and their supervisors' expectations regarding the number and quality of publications.”</em> 
+    <em>“A successful PhD requires finding the delicate balance between the students' academic output and their supervisors' expectations regarding the number and quality of papers.”</em>
 </aside>
 
 We need to understand that the end of the PhD journey is often a battle of contending expectations.
 On one hand, PhD students reach the end of the line exhausted and eager to finish the PhD.
-On the other hand there are the expectations of supervisors and the heavy pressures imposed by the academic institutions above them.
+On the other hand, there are the expectations of supervisors and the heavy pressures imposed by the academic institutions above them.
 After a certain number of papers,[^2] supervisors recognize the increasing proficiency and output of experienced students who are about to graduate.
 These students are a valuable resource that took years to shape.
-Why letting them go so easily when they seem at their peak?
+Why let them go so easily when they seem at their peak?
 That's when the pressure to produce "one last paper" kicks in.
 
 > "The last paper's myth emerges once academic supervisors realize that the student is about to get the PhD and leave. It's one last stronghold made by supervisors to capitalize on the time and effort they have invested in their students' scientific training."
@@ -103,7 +103,7 @@ That's when the pressure to produce "one last paper" kicks in.
 Students in this position are often led to believe that submitting just one more paper will fulfill their academic obligations.
 This belief stems from an academic culture that prioritizes work output over well-being and even mental health.
 As a result, the most capable students frequently find themselves the most burdened. 
-The myth of the last paper traps PhD students in their final year into mistakenly thinking that they don't have enough.
+The myth of the last paper traps PhD students in their final year into mistakenly thinking that they don't have enough results to defend.
 It leads to a continuous cycle of craving to produce "just one more paper," under the belief that this will finally conclude their academic responsibilities. 
 Unfortunately, this is far from reality.
 
@@ -125,7 +125,7 @@ This is the reality of how the scientific world is organized these days, and **t
 At a more individual level, the push for additional papers often reflects a conflict of interests.
 The PhD student's need to obtain their diploma and transition to professional roles clashes with the supervisor’s desire for continued academic output to enhance their personal prestige.
 This misalignment leads to the "last paper myth" reality.
-Not to forget that academic supervisors already decided (probably a long time ago) to stay in academia, so they have a vested interest in boosting their publication records.
+Not to forget that academic supervisors already decided (probably a long time ago) to stay in academia, so they have a vested interest in boosting their publication records.[^3]
 Generally, a young supervisor with a growing group may exert more pressure for research results than a more established researcher with a large group.
 Young supervisors rely more heavily on students' results for their own career progress and often work more closely with their students.
 
@@ -160,7 +160,7 @@ By creating a supportive and equitable environment for PhD students, institution
 
 If you find yourself writing papers when you were supposed to be writing your thesis, I suggest taking a step back and reevaluating your priorities.
 It could be that you are procrastinating on the thesis because it is a daunting task, and writing papers is a more manageable way to feel productive.
-If isn't the case, you can let your supervisor know that you're really stressed and that you need to focus on your thesis.
+If it isn't the case, you can let your supervisor know that you're really stressed and that you need to focus on your thesis.
 Take into account that researchers are extremely intelligent people.
 They know very well how much they can push. 
 They are perfectly aware that if pushing too much, they could provoke a burnout that is not beneficial for anyone.
@@ -215,7 +215,7 @@ In other words, the pressure to perform and deliver continuous results in all la
 
 In the corporate world, for example, talented employees who demonstrate high levels of productivity and skill often become invaluable to their managers.
 This value paradoxically leads to these prominent employees ending up with heavier workloads.
-As project deadlines get closer, managers tend to put extra pressure to these employees to guarantee satisfactory results.
+As project deadlines get closer, managers tend to put extra pressure on these employees to guarantee satisfactory results.
 This mirrors the academic pressure to publish one more paper before a student graduates.
 So, the "last paper's myth" could then be extrapolated as the "last workload push" in most corporate environments.
 In some cases, the urge for rapid product development can lead to questions about the true value of such advancements.
@@ -249,8 +249,8 @@ In any case, I believe that clear and measurable expectations should be put in p
 
 # Footnotes
 
-[^1]: "Publish _or_ perish" is the motto. Some people also call it "Publish _and_ perish" instead.
+[^1]: "Publish _or_ perish" is the motto. There is just not workaround for it.
 
 [^2]: The expected number of papers necessary to get the PhD degree varies greatly between supervisors, universities, and research fields. In Computer Science this number ranges between 3 and 5 papers for most respected institutions.  
 
-[^3]: Not to forget that academic supervisors are technically _forced_ to play the academic game. They have in most cases temporary contracts, are underpaid, and have a heavy workload. This is such a dense topic that deserves a blog post on its own. 
+[^3]: Not to forget that academic supervisors are technically _forced_ to play the academic game. They have (in most cases) temporary contracts, are underpaid, and have a heavy workload. This is such a dense topic that deserves a blog post on its own. 
