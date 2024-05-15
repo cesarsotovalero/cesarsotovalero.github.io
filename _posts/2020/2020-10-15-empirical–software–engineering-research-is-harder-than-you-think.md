@@ -14,11 +14,12 @@ date: 2020/10/15
 published: true
 ---
 
-You are a very talented researcher.
-Perhaps you come from a popular field such as machine learning (ML) and have a ton of papers.
-But now, you have decided to expand your horizons and solve software engineering (SE) research problems.
-Hence, you will collect and analyze empirical data about software for the following years.
-“This job is going to be a piece of cake,” you may think and even dare to say.
+Imagine you are a very talented computer science researcher.
+Perhaps you come from a popular field such as machine learning (ML) and have a ton of papers and experience under your belt.
+But now, you have decided to expand your horizons to solve software engineering (SE) research problems.
+In particular, you are interested in empirical SE research.
+Hence, you will collect and analyze empirical data about software with the objective of obtaining useful knowledge for researchers and practitioners in the software engineering field.
+“_This job is going to be a piece of cake_,” you might think and even dare to say.
 There is so much data available, and software is, after all, a language with a well-defined structure.
 Well... not really.
 Let me tell you why.
@@ -30,28 +31,43 @@ Let me tell you why.
   </figcaption>
 </figure>
 
-
 Empirical SE is just one of the many players within the SE research arenas.
-In a nutshell, **empirical software engineering research consists in applying the [scientific method](https://en.wikipedia.org/wiki/Scientific_method) through so-called empirical studies with the objective of obtaining useful knowledge for researchers and practitioners in the software engineering field.**
- 
+In a nutshell, empirical software engineering research consists in applying the [scientific method](https://en.wikipedia.org/wiki/Scientific_method) through so-called empirical studies with the objective of **obtaining useful knowledge for researchers and practitioners in the software engineering field.**
+
+{% badge /img/badges/emse-journal.webp 140 https://www.springer.com/journal/10664 %}
+
 Today, journals like [Empirical Software Engineering](https://www.springer.com/journal/10664) (EMSE) or conferences such as [Mining Software Repositories](http://www.msrconf.org) (MSR) are ranking very high. They are within the top ten venues in the category of software systems, according to the number of citations in [Google Scholar](https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_softwaresystems). One of the reasons for this success is the uncertainty inherent to the practice of software development, which can only be studied empirically.
- 
-Let me give you an example. Suppose that you are working on a project. To speed up its development, you want to reuse the functionality provided by some external libraries. To do so, you need to declare a dependency. It seems an easy task. However, _i)_ What if there are several libraries out there that provide similar functionality? _ii)_ What if each of these libraries has different versions available? As a developer, you have to dive deep into this diversity of implementations if you want to make the right decision before declaring the dependency. The answer to _i)_ is subtle since there is still no clear consensus about what makes a library good (Is it its code quality? Is it the status of its maintainers? Is it the readability of its documentation?). The answer to _ii)_ is also tricky since [it is known](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8721084) that not everybody follows semantic versioning conventions principles. Also, Who knows which version has fewer bugs
-? Which is the most stable? What is their difference? There are too many questions that need to be answered before picking a dependency. Hence, for you, as a developer, the only way to make a reasonable decision seems to be by relying on the wisdom of the crowds, aka popularity and global adoption. However, what if someone could provide you with the necessary data and analysis to make a decision backed up by facts instead of common sense and intuition?
-  
-Empirical SE research comes to the rescue in this case. It provides answers to the fundamental questions about the practice of software development. Those kinds of questions do not need to be a gimmicky dilemma. They could be an everyday unexplored assumption. For example: Are [AGILE](https://en.wikipedia.org/wiki/Agile_software_development) development practices really effective? Is [TDD](https://en.wikipedia.org/wiki/Test-driven_development) really a game-changer in terms of bug catching? For researchers, it is enough to have a solid software-related unresolved argument for which nobody knows the answer for sure. The more provocative the argument is, the more exciting the results will be. 
+
+Let me give you an example.
+Suppose you are working on a project.
+To speed up its development, you want to reuse the functionality provided by some external libraries. 
+To do so, you need to declare a dependency in your project.
+It seems like an easy task, right?
+However, 
+_i)_ What if there are several libraries out there that provide similar functionality? 
+_ii)_ What if each of these libraries has different versions available? 
+As a developer, you have to dive deep into this diversity of implementations if you want to make the right decision before declaring the dependency. 
+The answer to _i)_ is subtle since there is still no clear consensus about what makes a library good (is it its code quality? the status of its maintainers? or the readability of its documentation?). 
+The answer to _ii)_ is also tricky since [it is known](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8721084) that not everybody follows semantic versioning conventions principles. 
+Also, who knows which version has fewer bugs? 
+Which is the most stable? What are their differences? There are too many questions that need to be answered before picking a dependency.
+Hence, for you, as a developer, the only way to make a reasonable decision seems to be by relying on the wisdom of the crowds, aka popularity and global adoption. 
+However, what if someone could provide you with the necessary data and analysis to make a decision backed up by facts instead of common sense and intuition?
+
+Empirical SE research comes to the rescue in this case. It provides answers to the fundamental questions about the practice of software development. 
+Those kinds of questions do not need to be a gimmicky dilemma. They could be an everyday unexplored assumption. For example: Are [AGILE](https://en.wikipedia.org/wiki/Agile_software_development) development practices really effective? Is [TDD](https://en.wikipedia.org/wiki/Test-driven_development) really a game-changer in terms of bug catching? For researchers, it is enough to have a solid software-related unresolved argument for which nobody knows the answer for sure. The more provocative the argument is, the more exciting the results will be. 
 
 <aside class="quote">
     <em>“Empirical software engineering research provides answers to the fundamental questions about the practice of software development.”</em>
 </aside>
 
 It is the uncertainty and lack of formalisms, at the core of the research methods, what makes empirical SE research difficult to do. Let me dissect a typical empirical SE paper to help you understand its complexity. This is a typical structure for such a paper:
- 
- 1. Proposal of a relevant **hypothesis**  
- 2. Collection of representative **data** 
- 3. **Analysis** of the data to validate or reject the hypothesis
- 4. Interpretation of the **results** and discussion
- 5. Derivation of a sound **conclusion**      
+
+ 1.  Proposal of a relevant hypothesis.
+ 2. Collection of representative data.
+ 3. Analysis of the data to validate or reject the hypothesis.
+ 4. Interpretation of the results and discussion.
+ 5. Derivation of a sound conclusion.
 
 In the following, I will explore each step in more details. For the sake of comparison, let me contrast the research challenges in this field with its similar in the ML research field. 
 

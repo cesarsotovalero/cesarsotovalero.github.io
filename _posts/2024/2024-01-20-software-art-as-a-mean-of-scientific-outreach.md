@@ -54,6 +54,7 @@ NFT
 - [fxhash](https://www.fxhash.xyz/gentk/152225)
 
 # Programming
+
 ## Programming Digital Art
 Generative art libraries
 - [Processing](https://processing.org/)
@@ -96,14 +97,6 @@ Visual programming
 - [fx(hash)](www.fxhash.xyz)
 - [Vera Molnar](http://www.veramolnar.com/)
 - [Libraries for algorithmic art](https://github.com/rethread-studio/algorithmic-art-course/issues/2)
-
-
-
-
-
-
-
-
 
 # Art for Illustrating Complexity
 
