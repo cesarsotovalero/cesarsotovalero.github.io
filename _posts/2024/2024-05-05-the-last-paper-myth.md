@@ -87,7 +87,7 @@ It turns out that my PhD contributions opened new research avenues and opportuni
 A hard-to-resist temptation for workaholic academics.
 
 <aside class="quote">
-    <em>“A successful PhD requires finding the delicate balance between the students' academic output and their supervisors' expectations regarding the number and quality of papers.”</em> j
+    <em>“A successful PhD requires finding the delicate balance between the students' academic output and their supervisors' expectations regarding the number and quality of papers.”</em>
 </aside>
 
 We need to understand that the end of the PhD journey is often a battle of contending expectations.
