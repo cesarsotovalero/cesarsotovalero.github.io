@@ -30,9 +30,9 @@ I've found that these small improvements make me significantly ~~less sad~~ happ
 I must say, to me, it's not only about functionalities, good aesthetic and great user experience comes hand in hand with a certain pleasure that boosts my productivity!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-10-13/img-placeholder.webp alt: "TODO" %}
+  {% responsive_image path: img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water-ascii-art.png alt: "TODO" %}
   <figcaption class="stroke"> 
-    &#169; ASCII art displayed on my terminal. Try it installing ascii-image-converter and executing the command: ascii-image-converter -C http://tinyurl.com/3jez5whs..
+    &#169; Let's make turn poop into something drinkable! ASCII art displayed on my Windows' terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <strong>ascii-image-converter --braille --dither http://tinyurl.com/3jez5whs</strong>.
   </figcaption>
 </figure>
 
