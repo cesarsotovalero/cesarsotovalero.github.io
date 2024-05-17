@@ -9,8 +9,8 @@ keywords:
   - beautiful windows terminal,
   - Oh-my-posh,
   - beautiful prompt
-image: ../img/posts/2023/2023-10-13/img-placeholder_cover.webp
-share-img: ../img/posts/2023/2023-10-13/img-placeholder_cover.webp
+image: ../img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water_cover.png
+share-img: ../img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water_cover.png
 show-avatar: false
 toc: true
 date: 2023/10/13
