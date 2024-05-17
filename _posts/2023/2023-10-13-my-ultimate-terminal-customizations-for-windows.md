@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Ultimate Terminal Customizations for Windows
-subtitle: A guide
+subtitle: Another guide
 tags: productivity
 description: This post describes the tools I use to resemble my macOS terminal customizations on Windows.  This includes the fonts that I choose for the Windows Terminal app, an enhanced PowerShell, and the installation of third-party tools like Oh My Posh.  I've found that these small improvements make me a happier Windows user.
 keywords:
@@ -32,7 +32,7 @@ I must say, to me, it's not only about functionalities, good aesthetic and great
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-10-13/img-placeholder.webp alt: "TODO" %}
   <figcaption class="stroke"> 
-    &#169; TODO.
+    &#169; ASCII art displayed on my terminal. Try it installing ascii-image-converter and executing the command: ascii-image-converter -C http://tinyurl.com/3jez5whs..
   </figcaption>
 </figure>
 
