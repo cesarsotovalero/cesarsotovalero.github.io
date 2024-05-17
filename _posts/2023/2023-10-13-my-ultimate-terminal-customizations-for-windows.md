@@ -21,7 +21,7 @@ published: true
 I went back to using Windows lately in my current job. 
 But let's be honest: Windows is a pain for me as a developer.[^1]
 Anyway, I've to deal with it to keep my job.
-One of the things that I miss the most from my previous Mac setup is my nice [Terminal customizations](../bjlog/my-ultimate-terminal-customizations-for-macos.html).
+One of the things that I miss the most from my previous Mac setup is my nice [Terminal customizations](../blog/my-ultimate-terminal-customizations-for-macos.html).
 To my knowledge, the Windows native terminal is far behind compared to its Unix counterparts.
 However, with some tweaks and extra tools, I manage to tweak the horrendous `C:\WINDOWS\system32\CMD` into something nicer in terms of customization and functionality.
 In this blog post, I describe the tools I use to resemble my macOS terminal customizations on Windows.
@@ -30,7 +30,7 @@ I've found that these small improvements make me significantly ~~less sad~~ happ
 I must say, to me, it's not only about functionalities, good aesthetic and great user experience comes hand in hand with a certain pleasure that boosts my productivity!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water-ascii-art.png alt: "TODO" %}
+  {% responsive_image path: img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water-ascii-art.png alt: "ASCII art displayed on my Windows' terminal" %}
   <figcaption class="stroke"> 
     &#169; Let's make turn poop into something drinkable! ASCII art displayed on my Windows' terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <strong>ascii-image-converter --braille --dither http://tinyurl.com/3jez5whs</strong>.
   </figcaption>
