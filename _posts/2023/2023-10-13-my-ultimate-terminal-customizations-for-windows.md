@@ -9,17 +9,18 @@ keywords:
   - beautiful windows terminal,
   - Oh-my-posh,
   - beautiful prompt
-image: ../img/posts/2023/cheers_ascii_cover.jpg
-share-img: ../img/posts/2023/cheers_ascii_cover.jpg
+image: ../img/posts/2023/2023-10-13/img-placeholder_cover.webp
+share-img: ../img/posts/2023/2023-10-13/img-placeholder_cover.webp
 show-avatar: false
 toc: true
 date: 2023/10/13
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 I went back to using Windows lately in my current job. 
-But let's be honest: Windows is a necessary pain that I as a dev have to deal with to keep my job.[^1]
+But let's be honest: Windows is a pain for me as a developer.[^1]
+Anyway, I've to deal with it to keep my job.
 One of the things that I miss the most from my previous Mac setup is my nice [Terminal customizations](../bjlog/my-ultimate-terminal-customizations-for-macos.html).
 To my knowledge, the Windows native terminal is far behind compared to its Unix counterparts.
 However, with some tweaks and extra tools, I manage to tweak the horrendous `C:\WINDOWS\system32\CMD` into something nicer in terms of customization and functionality.
@@ -29,13 +30,15 @@ I've found that these small improvements make me significantly ~~less sad~~ happ
 I must say, to me, it's not only about functionalities, good aesthetic and great user experience comes hand in hand with a certain pleasure that boosts my productivity!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-10-13/cheers_ascii-on-windows.png alt: "TODO" %}
+  {% responsive_image path: img/posts/2023/2023-10-13/img-placeholder.webp alt: "TODO" %}
   <figcaption class="stroke"> 
     &#169; TODO.
   </figcaption>
 </figure>
 
 # Windows Terminal
+
+{% badge /img/badges/Windows-terminal-logo.png 140 https://en.wikipedia.org/wiki/Windows_Terminal %}
 
 The first step to is getting a better terminal app.
 I use the Windows Terminal, which is a really great 
@@ -54,12 +57,11 @@ To installation via GitHub:
 After installed, launch it by searching for it in the Start menu.
 Go to the Settings you will see a bunch of configuration options as shown in the image below. 
 
-
-
 # PowerShell
 
-Powershell 
-To make the most of your terminal, install and use PowerShell 5 or above instead of the Command Prompt (cmd).
+{% badge /img/badges/PowerShell_5.0_icon.png 140 https://learn.microsoft.com/en-us/powershell/ %}
+
+To make the most of your terminal, install and use P[owerShell v5](https://learn.microsoft.com/en-us/powershell/) or above instead of the Command Prompt (cmd).
 
 Here's how:
 
@@ -92,7 +94,7 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 
 Here are my custom aliases in PowerShell:
 
-```powershell
+{% highlight powershell linenos %}
 # Unix aliases
 Set-Alias -Name ls -Value Get-ChildItem
 Set-Alias -Name cat -Value Get-Content
@@ -134,7 +136,7 @@ function gcm {
 function gba {
     git branch -a
 }
-```
+{% endhighlight %}
 
 # Scoop
 
@@ -154,9 +156,9 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 Here are the basic Scoop commands that I use: 
 
 ```powershell
-scoop search <package_name> # To search for a package
-scoop install <package_name> # To install a package
-scoop update <package_name> # To update a package
+scoop search [package_name] # To search for a package
+scoop install [package_name] # To install a package
+scoop update [package_name] # To update a package
 scoop list # To list installed packages
 ```
 
@@ -195,7 +197,7 @@ My current favorite is the "IosevkaTerm Nerd Font".
 Set the font in Windows Terminal settings under the profile appearances tab as shown below:
 
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2023/2023-10-13/windows-terminal-powershell-customizations.png alt: "Customizing the appearance of PowerShell in the Windows Terminal application settings." %}
+  {% responsive_image width: "75%" border: "0px solid #808080" path: img/posts/2023/2023-10-13/windows-terminal-powershell-customizations.png alt: "Customizing the appearance of PowerShell in the Windows Terminal application settings." %}
   <figcaption class="stroke"> 
     &#169; Customizing the appearance of PowerShell in the Windows Terminal application settings by changing the font.
   </figcaption>
@@ -211,7 +213,7 @@ After that, you will see nice icons displayed.
 Here's an example of using `ll` on the base directory of the code that runs this website hosted on GitHub:
 
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2023/2023-10-13/windows-terminal-icons-customization.png alt: "Example of Windows Terminal output after adding Terminal-Icons." %}
+  {% responsive_image width: "75%" border: "0px solid #808080" path: img/posts/2023/2023-10-13/windows-terminal-icons-customization.png alt: "Example of Windows Terminal output after adding Terminal-Icons." %}
   <figcaption class="stroke"> 
     &#169; Example of Windows Terminal output after adding Terminal-Icons.
   </figcaption>
