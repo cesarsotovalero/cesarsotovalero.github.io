@@ -51,6 +51,17 @@
       </item>
     
       <item>
+        <title>My Ultimate Terminal Customizations for Windows</title>
+        <description>
+          A guide - 
+          I went back to using Windows lately in my current job. But let’s be honest: Windows is a pain for me as a developer.1 Anyway, I’ve to deal with it to keep my job. One of the things that I miss the most from my previous Mac setup is my...
+        </description>
+        <pubDate>Fri, 13 Oct 2023 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-windows.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-windows.html</guid>
+      </item>
+    
+      <item>
         <title>Surviving the AI Revolution as a Software Engineer</title>
         <description>
           Is there still any hope? - 
@@ -213,17 +224,6 @@
         <pubDate>Wed, 11 May 2022 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/no-one-cares-about-your-research.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/no-one-cares-about-your-research.html</guid>
-      </item>
-    
-      <item>
-        <title>The Dynamic Features of Java</title>
-        <description>
-          A long-standing challenge for static analyzers - 
-          The existence of dynamic features built-in within the language allows Java developers to dynamically transform their program executions at runtime. For example, using the Java Reflection API, one can inspect and interact with otherwise static language constructs such as classes, fields, and methods, e.g., to instantiate objects, set fields and...
-        </description>
-        <pubDate>Fri, 22 Apr 2022 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html</guid>
       </item>
     
   </channel>
