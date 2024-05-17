@@ -9,7 +9,9 @@ published: true
 
 # Academic Reviewer
 
-> My verified peer reviews for journals can be seen in the [Web of Science](https://www.webofscience.com/wos/author/record/AAB-9333-2019).
+<aside class="quote">
+    <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">My peer reviews are verified by the Web of Science</a></em> 
+</aside>
 
 - [Springer Discover Artificial Intelligence](https://link.springer.com/journal/44163), 2024
 - [PeerJ Computer Science](https://peerj.com/computer-science/), 2024
@@ -18,7 +20,7 @@ published: true
 - [International Journal of Computer Science in Sport](https://sciendo.com/journal/IJCSS), 2021
 - [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021 [Recognition](../files/certificates/2021_JBA_Reviewer_Certificate.pdf)
 - [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019 [Recognition](../files/certificates/SMR_Certificate.pdf)
-- [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018
+- [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018s
 - [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), 2017
 
 Also,
