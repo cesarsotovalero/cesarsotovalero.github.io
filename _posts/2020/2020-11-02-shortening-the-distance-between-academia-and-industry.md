@@ -52,11 +52,11 @@ Shortening the distance between academic research and the industry is a matter o
 
 Here is a non-exhaustive list of actions for researchers:
 
-- Disseminate their results beyond the academic community
-- Create platforms for the general public to show the impact of their contributions
-- Go there (to companies), listen to their questions and problems, and interact with them
-- Promote events and invite people from the industry to present the technology that they deploy on a daily basis
-- Create open-source organizations, contributing together with academics, engineers, and the community there
+- Disseminate their results beyond the academic community.
+- Create platforms for the general public to show the impact of their contributions.
+- Go there (to companies), listen to their questions and problems, and interact with them.
+- Promote events and invite people from the industry to present the technology that they deploy on a daily basis.
+- Create open-source organizations, contributing together with academics, engineers, and the community there.
 
 # Why is it Challenging?
 

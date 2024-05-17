@@ -7,10 +7,12 @@ description: A list of academic services provided by César Soto Valero.
 published: true
 ---
 
-# Academic Reviewer
+# Peer Reviews
+
+I reviewed papers for the following journals and conferences:
 
 <aside class="quote">
-    <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">My peer reviews are verified by the Web of Science</a></em> 
+    <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Verified by the WoS</a></em> 
 </aside>
 
 - [Springer Discover Artificial Intelligence](https://link.springer.com/journal/44163), 2024
@@ -19,15 +21,11 @@ published: true
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2022
 - [International Journal of Computer Science in Sport](https://sciendo.com/journal/IJCSS), 2021
 - [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021 [Recognition](../files/certificates/2021_JBA_Reviewer_Certificate.pdf)
-- [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019 [Recognition](../files/certificates/SMR_Certificate.pdf)
-- [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018s
-- [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), 2017
+- [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019 
+- [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018
+- [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), 2017 [Recognition](../files/certificates/SMR_Certificate.pdf)
 
-Also,
-
-- [EOLANG and &phi;-calculus](https://arxiv.org/abs/2111.13384), 2021 (my name is listed in the acknowledgments)
-
-# Academic Co-Reviewer
+I co-reviewed papers for the following journals and conferences:
 
 - [ICST](https://conf.researchr.org/home/icst-2023), 2023
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2022
@@ -36,8 +34,15 @@ Also,
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2020
 - [ICSE](https://conf.researchr.org/home/icse-2019), 2019
 - [ICST](https://www.es.mdh.se/icst2018), 2018
+
+Also,
+
+- [EOLANG and &phi;-calculus](https://arxiv.org/abs/2111.13384), 2021 (my name is listed in the acknowledgments)
+
  
 # Thesis Supervisor
+
+I supervised MSc and BSc students in the following theses:
 
 - [The State of Software Diversity in the Software Supply Chain of Ethereum Clients](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf), Noak Jönsson, **Bachelor Thesis**, KTH 2022
 
@@ -49,37 +54,35 @@ Also,
 
 # Volunteer
 
+I volunteered for the following events:
+
 - [Jfokus](https://www.jfokus.se/), **Volunteer**, February 2023
 - [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), **Staff Member**, 2020
 - [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), **Staff Member**, 2017
 
 # Outreach
 
+My work has been featured in the following media:
+
 - [:earth_americas: Unfold](https://rethread.art/projects/unfold.html), Nobel Week Lights, 2022
 - [:earth_americas: KTH Intranet Interview](https://intra.kth.se/en/eecs/nyheter/grattis-till-vinsten-cesar-1.1112396), 2021
 - [:earth_americas: Estudios de Doctorado en Suecia: Por Dónde Empezar?](https://eltoque.com/estudios-de-doctorado-en-suecia-por-donde-empezar) (co-authored article, _in Spanish_), 2021
 
-# Teacher Assistant
+# Teaching
 
-### 2023
+From 2019-2023, I worked as a teacher assistant for the following courses:
 
 - [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2023
-
-### 2022
 
 - [EF112X Examensarbete inom elektroteknik, grundnivå](https://www.kth.se/social/course/EF112X/), given by [Antita Kullen](https://people.kth.se/~kullen/) at KTH, Spring 2022
 
 - [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2022
-
-### 2021
 
 - [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
 
 - [:earth_americas: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
 
 - [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2021
-
-### 2020
 
 - [DD1369 Software Engineering in Project Form](https://www.kth.se/social/course/DD1369/), given by [Dena Hussain](https://www.kth.se/profile/denah/) at KTH, Fall 2020
 
@@ -88,8 +91,6 @@ Also,
 - [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2020
 
 - [DM1590 Machine Learning for Media Technology](https://www.kth.se/student/kurser/kurs/DM1590), given by [Bob Sturm](http://www.eecs.qmul.ac.uk/~sturm/) at KTH, Spring 2020
-
-### 2019
 
 - [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), given by [Linda Kann](http://www.csc.kth.se/~lk) at KTH, Fall 2019
 
