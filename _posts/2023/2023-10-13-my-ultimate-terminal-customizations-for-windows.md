@@ -184,12 +184,18 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 Here are the basic Scoop commands that I use: 
 
-```powershell
-scoop search [package_name] # To search for a package
-scoop install [package_name] # To install a package
-scoop update [package_name] # To update a package
-scoop list # To list installed packages
-```
+{% highlight powershell linenos %}
+# To search for a package
+scoop search [package_name] 
+# To install a package
+scoop install [package_name] 
+# To update a package
+scoop update [package_name] 
+# To list installed packages
+scoop list
+# To uninstall a package
+scoop uninstall [package_name] 
+{% endhighlight %}
 
 Here are a few packages that I recommend:
 
