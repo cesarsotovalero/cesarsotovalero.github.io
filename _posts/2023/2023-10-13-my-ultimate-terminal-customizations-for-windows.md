@@ -144,71 +144,33 @@ function gba {
 
 The [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/) (WSL) allows running a Linux environment on Windows without the need for a virtual machine or dual-boot setup.
 This is great for me because I'm so accustomed to Unix-like environments and tend to use Linux tools and scripts whenever I can.
-There are many distributions available in the Microsoft Store (I recommend using Ubuntu or Debian) and we can easily share files between Windows and Linux environments.
+There are many compatible Linux distributions available in the Microsoft Store (I recommend using Ubuntu or Debian), and it's easy sharing files between Windows and Linux environments.
 
 WSL works by translating Linux system calls into Windows system calls using a compatibility layer.
 There are two versions of WSL: WL 1 and WSL 2.
-WSL 1 uses a translation layer (similar to Wine for Linux on Windows).
+WSL 1 uses a translation layer (similar to [Wine](https://www.winehq.org/) for Linux on Windows).
 WSL 2 introduces a real Linux kernel running in a lightweight virtual machine, providing full system call compatibility and improved performance.
+WSL distributions are installed in the `%LOCALAPPDATA%\Packages` directory by default. You can access the Linux file system from Windows via `\\wsl$\<distro-name>` in the File Explorer.
 
-Here's how to install WSL:
+To enable WSL on Windows [follow the official instructions](https://learn.microsoft.com/en-us/windows/wsl/install-manual):
 
-1. Open PowerShell as Administrator:
-    - Press `Win + X`, then select "Windows PowerShell (Admin)".
+1. Press `Win + X`, then select "Windows PowerShell Admin)."
+2. Enable WSL Feature: running `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+3. Enable Virtual Machine Feature: running `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+4. Set WSL 2 as the default version: `sh wsl --set-default-version 2`
+5. Restart Your Computer:
 
-2. Enable WSL Feature:
-   ```sh
-   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-   ```
+To install a Linux distribution (Ubuntu 20.04 in this case) run the following command in PowerShell:
 
-3. Enable Virtual Machine Platform Feature:
-   ```sh
-   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-   ```
-
-4. Restart Your Computer:
-    - This ensures all changes are applied properly.
-
-To install a Linux distribution
-
-1. Open Microsoft Store:
-    - Search for "WSL" or a specific distribution like "Ubuntu".
-
-2. Select and Install Your Preferred Linux Distribution:
-    - Click "Get" to install the distribution.
-
-3. Launch the Installed Distribution:
-    - Once installed, launch the distribution from the Start menu or by typing its name in the Windows search bar.
-
-4. Complete Initial Setup:
-    - Set up your Linux username and password when prompted.
-
-To update to WSL 2 (Optional but Recommended)
-
-1. Set WSL 2 as Default Version:
-   ```sh
-   wsl --set-default-version 2
-   ```
-
-2. Update Installed Distributions to WSL 2:
-   ```sh
-   wsl --set-version <distro-name> 2
-   ```
-    - Replace `<distro-name>` with the name of your installed distribution (e.g., `Ubuntu`).
+```powershell
+Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing
+```
 
 To verify the installation:
 
-1. Check WSL Version:
-   ```sh
-   wsl --list --verbose
-   ```
-
-2. Access Linux Environment:
-    - Open your installed Linux distribution from the Start menu or via the command line.
-
-Where It Is Installed?
-
-WSL distributions are installed in the `%LOCALAPPDATA%\Packages` directory by default. You can access the Linux file system from Windows via `\\wsl$\<distro-name>` in File Explorer.
+```powershell
+wsl --list --verbose
+```
 
 # Scoop
 
