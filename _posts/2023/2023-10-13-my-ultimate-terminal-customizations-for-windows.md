@@ -32,7 +32,7 @@ I must say, to me, it's not only about functionalities, good aesthetics and a gr
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water-ascii-art.png alt: "ASCII art displayed on my Windows' terminal" %}
   <figcaption class="stroke"> 
-    &#169; Let's make turn poop into something drinkable! ASCII art displayed on my Windows' terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <strong>ascii-image-converter --braille --dither http://tinyurl.com/3jez5whs</strong>.
+    &#169; Turning poop into something drinkable <a href="https://www.gatesnotes.com/Omniprocessor-From-Poop-to-Potable">is doable</a>, ask Bill Gates! ASCII art displayed on my Windows' terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <strong>ascii-image-converter --braille --dither https://tinyurl.com/55p7d8vf</strong>.
   </figcaption>
 </figure>
 
@@ -40,30 +40,29 @@ I must say, to me, it's not only about functionalities, good aesthetics and a gr
 
 {% badge /img/badges/Windows-terminal-logo.png 140 https://en.wikipedia.org/wiki/Windows_Terminal %}
 
-The first step to is getting a better terminal app.
-I use the Windows Terminal, which is a really great 
+The first step is to get a better terminal app.
+I use the Windows Terminal, which is a great choice.
 It can be [downloaded from the Microsoft Store](https://aka.ms/terminal) or directly installed from its official [GitHub repository](https://github.com/microsoft/terminal).
 
 To install via Microsoft Store:
 
 1. Open [Microsoft Store](https://apps.microsoft.com/home?hl=en-us&gl=US) and search for "Windows Terminal."
-2. Then click "Get" or "Install."
+2. Click "Get" or "Install."
 
-To installation via GitHub:
+To install via GitHub:
 
-1. Visit the latest release from [here](https://github.com/microsoft/terminal/releases).
+1. Visit the latest release [here](https://github.com/microsoft/terminal/releases).
 2. Follow the installation instructions provided in the repository.
-
-After installed, launch it by searching for it in the Start menu.
-Go to the Settings you will see a bunch of configuration options as shown in the image below. 
 
 # PowerShell
 
 {% badge /img/badges/PowerShell_5.0_icon.png 140 https://learn.microsoft.com/en-us/powershell/ %}
 
-To make the most of your terminal, install and use P[owerShell v5](https://learn.microsoft.com/en-us/powershell/) or above instead of the Command Prompt (cmd).
+To make the most of your terminal, install and use [PowerShell v5](https://learn.microsoft.com/en-us/powershell/) or above instead of the Command Prompt (`CMD`).
+PowerShell is very powerful shell (similar to `bash`) but [with a more verbose syntax](https://mathieubuisson.github.io/powershell-linux-bash/). 
+Interestingly, PowerShell commands return objects instead of plain text!
 
-Here's how:
+Here's how to install PowerShell Core on Windows:
 
 1. Go to the [PowerShell GitHub page](https://github.com/PowerShell/PowerShell).
 2. Download the latest `.msi` file for Windows.
@@ -80,19 +79,20 @@ Lastly, open PowerShell and set the execution policy to allow running scripts:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-Now you can start customizing your PowerShell profile by opening the file in notepad: 
+Now you can start customizing your PowerShell profile by opening the profile file in notepad: 
 
 ```powershell
 notepad $PSHOME\Profile.ps1
 ```
 
-To display command predictions in a list format add the following line:
+In this file, you can add custom aliases, functions, and settings to enhance the PowerShell experience.
+For example, to display command predictions in a list format add the following line:
 
 ```powershell
 Set-PSReadLineOption -PredictionViewStyle ListView
 ```
 
-Here are my custom aliases in PowerShell:
+Here are my custom aliases:
 
 {% highlight powershell linenos %}
 # Unix aliases
@@ -138,16 +138,87 @@ function gba {
 }
 {% endhighlight %}
 
+# WSL
+
+{% badge /img/badges/wsl-img.png 140 https://learn.microsoft.com/en-us/windows/wsl/ %}
+
+The [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/) (WSL) allows running a Linux environment on Windows without the need for a virtual machine or dual-boot setup.
+This is great for me because I'm so accustomed to Unix-like environments and tend to use Linux tools and scripts whenever I can.
+There are many distributions available in the Microsoft Store (I recommend using Ubuntu or Debian) and we can easily share files between Windows and Linux environments.
+
+WSL works by translating Linux system calls into Windows system calls using a compatibility layer.
+There are two versions of WSL: WL 1 and WSL 2.
+WSL 1 uses a translation layer (similar to Wine for Linux on Windows).
+WSL 2 introduces a real Linux kernel running in a lightweight virtual machine, providing full system call compatibility and improved performance.
+
+Here's how to install WSL:
+
+1. Open PowerShell as Administrator:
+    - Press `Win + X`, then select "Windows PowerShell (Admin)".
+
+2. Enable WSL Feature:
+   ```sh
+   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+   ```
+
+3. Enable Virtual Machine Platform Feature:
+   ```sh
+   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+   ```
+
+4. Restart Your Computer:
+    - This ensures all changes are applied properly.
+
+To install a Linux distribution
+
+1. Open Microsoft Store:
+    - Search for "WSL" or a specific distribution like "Ubuntu".
+
+2. Select and Install Your Preferred Linux Distribution:
+    - Click "Get" to install the distribution.
+
+3. Launch the Installed Distribution:
+    - Once installed, launch the distribution from the Start menu or by typing its name in the Windows search bar.
+
+4. Complete Initial Setup:
+    - Set up your Linux username and password when prompted.
+
+To update to WSL 2 (Optional but Recommended)
+
+1. Set WSL 2 as Default Version:
+   ```sh
+   wsl --set-default-version 2
+   ```
+
+2. Update Installed Distributions to WSL 2:
+   ```sh
+   wsl --set-version <distro-name> 2
+   ```
+    - Replace `<distro-name>` with the name of your installed distribution (e.g., `Ubuntu`).
+
+To verify the installation:
+
+1. Check WSL Version:
+   ```sh
+   wsl --list --verbose
+   ```
+
+2. Access Linux Environment:
+    - Open your installed Linux distribution from the Start menu or via the command line.
+
+Where It Is Installed?
+
+WSL distributions are installed in the `%LOCALAPPDATA%\Packages` directory by default. You can access the Linux file system from Windows via `\\wsl$\<distro-name>` in File Explorer.
+
 # Scoop
 
 [Scoop](https://scoop.sh/) is a command-line package manager for Windows that simplifies the process of installing, updating, and managing software applications.
-It's the Windows' version of [homebrew](https://brew.sh/).
-
+Think of it as the Windows' version of [homebrew](https://brew.sh/).
 Scoop is much better than the default Windows installer/uninstaller.
-Scoop downloads and manages packages in a portable way, which means that it's not required to have admin rights to install anything. 
+It downloads and manages packages in a portable way, which means that it's not required to have admin rights to install anything. 
 Once installed, Scoop places the applications in `~\scoop`. 
 
-Run the following to install Scoop:
+To install Scoop, run the following command in PowerShell:
 
 ```powershell
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
@@ -170,7 +241,7 @@ scoop install 7zip curl git wget starship sudo touch vim which z gpg grep helm f
 
 # Oh My Posh
 
-[Oh My Posh](https://ohmyposh.dev/) is a prompt theme engine for PowerShell that allows you to customize your terminal prompt.
+[Oh My Posh](https://ohmyposh.dev/) is a prompt theme engine for PowerShell that allows customizing the terminal prompt.
 It is the version for Windows of the super popular [Oh My Zsh](https://ohmyz.sh/) tool used on Unix-based distros.
 
 To install Oh My Posh using Scoop just run the following command in PowerShell:
@@ -199,7 +270,7 @@ You can find themes in the `themes` folder located where the Oh My Posh reposito
 
 To display certain glyphs and icons correctly, you might need [Nerd Fonts](https://www.nerdfonts.com/).
 These fonts are created by developers to be free, look good, and include extra icons.
-My current favorite is the "IosevkaTerm Nerd Font".
+My current favorite is the "**IosevkaTerm Nerd Font**".
 Set the font in Windows Terminal settings under the profile appearances tab as shown below:
 
 <figure class="jb_picture">
@@ -224,6 +295,7 @@ Here's an example of using `ll` on the base directory of the code that runs this
     &#169; Example of Windows Terminal output after adding Terminal-Icons.
   </figcaption>
 </figure>
+
 
 # Conclusion
 
