@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Ultimate Terminal Customizations for Windows
-subtitle: A guide
+subtitle: Another guide
 tags: productivity
 description: This post describes the tools I use to resemble my macOS terminal customizations on Windows.  This includes the fonts that I choose for the Windows Terminal app, an enhanced PowerShell, and the installation of third-party tools like Oh My Posh.  I've found that these small improvements make me a happier Windows user.
 keywords:
@@ -9,8 +9,8 @@ keywords:
   - beautiful windows terminal,
   - Oh-my-posh,
   - beautiful prompt
-image: ../img/posts/2023/2023-10-13/img-placeholder_cover.webp
-share-img: ../img/posts/2023/2023-10-13/img-placeholder_cover.webp
+image: ../img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water_cover.png
+share-img: ../img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water_cover.png
 show-avatar: false
 toc: true
 date: 2023/10/13
@@ -21,18 +21,18 @@ published: true
 I went back to using Windows lately in my current job. 
 But let's be honest: Windows is a pain for me as a developer.[^1]
 Anyway, I've to deal with it to keep my job.
-One of the things that I miss the most from my previous Mac setup is my nice [Terminal customizations](../bjlog/my-ultimate-terminal-customizations-for-macos.html).
+One of the things that I miss the most from my previous Mac setup is my nice [Terminal customizations](../blog/my-ultimate-terminal-customizations-for-macos.html).
 To my knowledge, the Windows native terminal is far behind compared to its Unix counterparts.
 However, with some tweaks and extra tools, I manage to tweak the horrendous `C:\WINDOWS\system32\CMD` into something nicer in terms of customization and functionality.
 In this blog post, I describe the tools I use to resemble my macOS terminal customizations on Windows.
-This includes the fonts that I choose for the Windows Terminal app, an enhanced PowerShell, and the installation of third-party tools like Oh My Posh.
-I've found that these small improvements make me significantly ~~less sad~~ happy when using Windows. 
-I must say, to me, it's not only about functionalities, good aesthetic and great user experience comes hand in hand with a certain pleasure that boosts my productivity!
+This includes the fonts that I chose for the Windows Terminal app, an enhanced PowerShell, and the installation of third-party tools like Oh My Posh.
+I've found that these small improvements make me significantly ~~less sad~~ happier when using Windows. 
+I must say, to me, it's not only about functionalities, good aesthetics and a great user experience go hand in hand with a certain pleasure that boosts my productivity!
 
 <figure class="jb_picture">
-  {% responsive_image path: img/posts/2023/2023-10-13/img-placeholder.webp alt: "TODO" %}
+  {% responsive_image path: img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water-ascii-art.png alt: "ASCII art displayed on my Windows' terminal" %}
   <figcaption class="stroke"> 
-    &#169; TODO.
+    &#169; Let's make turn poop into something drinkable! ASCII art displayed on my Windows' terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <strong>ascii-image-converter --braille --dither http://tinyurl.com/3jez5whs</strong>.
   </figcaption>
 </figure>
 
@@ -140,7 +140,7 @@ function gba {
 
 # Scoop
 
-[Scoop](https://scoop.sh/) is a command-line installer for Windows that simplifies the process of installing, updating, and managing software.
+[Scoop](https://scoop.sh/) is a command-line package manager for Windows that simplifies the process of installing, updating, and managing software applications.
 It's the Windows' version of [homebrew](https://brew.sh/).
 
 Scoop is much better than the default Windows installer/uninstaller.
@@ -160,6 +160,12 @@ scoop search [package_name] # To search for a package
 scoop install [package_name] # To install a package
 scoop update [package_name] # To update a package
 scoop list # To list installed packages
+```
+
+Here are a few packages that I recommend:
+
+```powershell
+scoop install 7zip curl git wget starship sudo touch vim which z gpg grep helm fzf jq nvm python
 ```
 
 # Oh My Posh
@@ -221,9 +227,12 @@ Here's an example of using `ll` on the base directory of the code that runs this
 
 # Conclusion
 
-Customizing your Windows Terminal not only makes your terminal visually appealing but also enhances your productivity with tools and plugins designed for efficiency. By integrating PowerShell, Oh My Posh, custom fonts, and various plugins, you create a powerful, efficient, and enjoyable workspace directly in your terminal window.
-
-Explore, experiment, and most importantly, tailor your terminal to fit your workflow and style. With these tools, your command line will transform into a robust command center, ready to tackle any task efficiently.
+Customizing the Windows terminal not only makes its visually appealing but also gives a joy that enhances productivity.
+In this blog post, I covered how to transform the Windows terminal into a beautiful and efficient workspace.
+By integrating PowerShell, Oh My Posh, custom fonts, and various plugins, you create a powerful, efficient, and enjoyable workspace directly in your terminal window.
+With these tools, your command line will transform into a robust command center, ready to tackle any task efficiently.
+Explore, experiment, and most importantly, tailor your terminal to fit your workflow and style.
+Let me know in the comments below if you know about any other tool that you would recommend 😊.
 
 # Footnotes
 
