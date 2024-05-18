@@ -6,7 +6,7 @@ tags: productivity
 description: This post describes the tools I use to resemble my macOS terminal customizations on Windows.  This includes the fonts that I choose for the Windows Terminal app, an enhanced PowerShell, and the installation of third-party tools like Oh My Posh.  I've found that these small improvements make me a happier Windows user.
 keywords:
   - customize command line,
-  - beautiful windows terminal,
+  - beautiful Windows terminal,
   - Oh-my-posh,
   - beautiful prompt
 image: ../img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water_cover.png
