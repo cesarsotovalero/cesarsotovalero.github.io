@@ -21,7 +21,7 @@ published: true
 I went back to using Windows lately in my current job. 
 But let's be honest: Windows is a pain for me as a developer.[^1]
 Anyway, I've to deal with it to keep my job.
-One of the things that I miss the most from my previous Mac setup is my nice [Terminal customizations](../blog/my-ultimate-terminal-customizations-for-macos.html).
+One of the things that I miss the most from my previous setup is my nice [Terminal customizations](../blog/my-ultimate-terminal-customizations-for-macos.html) available in macOS.
 To my knowledge, the Windows native terminal is far behind compared to its Unix counterparts.
 However, with some tweaks and extra tools, I manage to tweak the horrendous `C:\WINDOWS\system32\CMD` into something nicer in terms of customization and functionality.
 In this blog post, I describe the tools I use to resemble my macOS terminal customizations on Windows.
@@ -150,7 +150,8 @@ WSL works by translating Linux system calls into Windows system calls using a co
 There are two versions of WSL: WL 1 and WSL 2.
 WSL 1 uses a translation layer (similar to [Wine](https://www.winehq.org/) for Linux on Windows).
 WSL 2 introduces a real Linux kernel running in a lightweight virtual machine, providing full system call compatibility and improved performance.
-WSL distributions are installed in the `%LOCALAPPDATA%\Packages` directory by default. You can access the Linux file system from Windows via `\\wsl$\<distro-name>` in the File Explorer.
+WSL distributions are installed in the `%LOCALAPPDATA%\Packages` directory by default. 
+You can access the Linux file system from Windows via `\\wsl$\<distro-name>` in the File Explorer.
 
 To enable WSL on Windows [follow the official instructions](https://learn.microsoft.com/en-us/windows/wsl/install-manual):
 
@@ -257,7 +258,6 @@ Here's an example of using `ll` on the base directory of the code that runs this
     &#169; Example of Windows Terminal output after adding Terminal-Icons.
   </figcaption>
 </figure>
-
 
 # Conclusion
 
