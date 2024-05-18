@@ -41,18 +41,13 @@ I must say, to me, it's not only about functionalities, good aesthetics and a gr
 {% badge /img/badges/Windows-terminal-logo.png 140 https://en.wikipedia.org/wiki/Windows_Terminal %}
 
 The first step is to get a better terminal app.
-I use the Windows Terminal, which is a great choice.
-It can be [downloaded from the Microsoft Store](https://aka.ms/terminal) or directly installed from its official [GitHub repository](https://github.com/microsoft/terminal).
+I use [Windows Terminal](https://en.wikipedia.org/wiki/Windows_Terminal), which offers a lot of nice customization options.
+For example, it allows opening customizing the appearance (just like [iTerm](https://iterm2.com/)), and having multiple tabs with different shells opened like PowerShell, Command Prompt, and Windows Subsystem for Linux (WSL).
+The app can be [downloaded from the Microsoft Store](https://aka.ms/terminal) or directly installed from its official [GitHub repository](https://github.com/microsoft/terminal).
 
-To install via Microsoft Store:
+- To install via Microsoft Store, open [Microsoft Store](https://apps.microsoft.com/home?hl=en-us&gl=US), search for "Windows Terminal" and click "Get" or "Install."
 
-1. Open [Microsoft Store](https://apps.microsoft.com/home?hl=en-us&gl=US) and search for "Windows Terminal."
-2. Click "Get" or "Install."
-
-To install via GitHub:
-
-1. Visit the latest release [here](https://github.com/microsoft/terminal/releases).
-2. Follow the installation instructions provided in the repository.
+- To install via GitHub repository, download the latest release from [here](https://github.com/microsoft/terminal/releases) and follow the installation instructions provided in the repository.
 
 # PowerShell
 
