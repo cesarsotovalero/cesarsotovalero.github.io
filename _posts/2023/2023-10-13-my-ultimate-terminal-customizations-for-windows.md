@@ -203,11 +203,11 @@ Here are a few Scoop packages that I recommend:
 | Category      | Package name                                                                                             |
 |---------------|----------------------------------------------------------------------------------------------------------|
 | Utility       | `7zip`, `curl`, `wget`, `sudo`, `touch`, `which`, `z`, `gpg`, `grep`, `fzf`, `bat`, `fd`, `htop`, `tldr` |
-| Development   | `vscode`, `git`, `vim`, `helm`, `jq`, `python`, `nvm`, `nodejs`, `docker`, `kubectl`, `terraform`        |
-| Media         | `mpv`, `vlc`, `youtube-dl`, `handbrake`, `gimp`                                                          |
-| Communication | `slack`, `zoom`, `teams`                                                                                 |
+| Development   | `vscode`, `git`, `gh`, `vim`, `python`, `helm`, `jq`, `nvm`, `nodejs`, `docker`, `kubectl`, `terraform`  |
 | Productivity  | `sublime-text`, `obsidian`, `todoist`, `trello`                                                          |
+| Media         | `mpv`, `vlc`, `youtube-dl`, `handbrake`, `gimp`                                                          |
 | Browsers      | `firefox`, `chrome`, `edge`                                                                              |
+| Communication | `slack`, `zoom`, `teams`                                                                                 |
 
 
 # Oh My Posh
