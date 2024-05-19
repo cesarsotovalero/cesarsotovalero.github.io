@@ -6,7 +6,7 @@ tags: productivity
 description: This post describes the tools I use to resemble my macOS terminal customizations on Windows.  This includes the fonts that I choose for the Windows Terminal app, an enhanced PowerShell, and the installation of third-party tools like Oh My Posh.  I've found that these small improvements make me a happier Windows user.
 keywords:
   - customize command line,
-  - beautiful windows terminal,
+  - beautiful Windows terminal,
   - Oh-my-posh,
   - beautiful prompt
 image: ../img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water_cover.png
@@ -21,7 +21,7 @@ published: true
 I went back to using Windows lately in my current job. 
 But let's be honest: Windows is a pain for me as a developer.[^1]
 Anyway, I've to deal with it to keep my job.
-One of the things that I miss the most from my previous Mac setup is my nice [Terminal customizations](../blog/my-ultimate-terminal-customizations-for-macos.html).
+One of the things that I miss the most from my previous setup is my nice [Terminal customizations](../blog/my-ultimate-terminal-customizations-for-macos.html) available in macOS.
 To my knowledge, the Windows native terminal is far behind compared to its Unix counterparts.
 However, with some tweaks and extra tools, I manage to tweak the horrendous `C:\WINDOWS\system32\CMD` into something nicer in terms of customization and functionality.
 In this blog post, I describe the tools I use to resemble my macOS terminal customizations on Windows.
@@ -41,18 +41,13 @@ I must say, to me, it's not only about functionalities, good aesthetics and a gr
 {% badge /img/badges/Windows-terminal-logo.png 140 https://en.wikipedia.org/wiki/Windows_Terminal %}
 
 The first step is to get a better terminal app.
-I use the Windows Terminal, which is a great choice.
-It can be [downloaded from the Microsoft Store](https://aka.ms/terminal) or directly installed from its official [GitHub repository](https://github.com/microsoft/terminal).
+I use [Windows Terminal](https://en.wikipedia.org/wiki/Windows_Terminal), which offers a lot of nice customization options.
+For example, it allows opening customizing the appearance (just like [iTerm](https://iterm2.com/)), and having multiple tabs with different shells opened like PowerShell, Command Prompt, and Windows Subsystem for Linux (WSL).
+The app can be [downloaded from the Microsoft Store](https://aka.ms/terminal) or directly installed from its official [GitHub repository](https://github.com/microsoft/terminal).
 
-To install via Microsoft Store:
+- To install via Microsoft Store, open [Microsoft Store](https://apps.microsoft.com/home?hl=en-us&gl=US), search for "Windows Terminal" and click "Get" or "Install."
 
-1. Open [Microsoft Store](https://apps.microsoft.com/home?hl=en-us&gl=US) and search for "Windows Terminal."
-2. Click "Get" or "Install."
-
-To install via GitHub:
-
-1. Visit the latest release [here](https://github.com/microsoft/terminal/releases).
-2. Follow the installation instructions provided in the repository.
+- To install via GitHub repository, download the latest release from [here](https://github.com/microsoft/terminal/releases) and follow the installation instructions provided in the repository.
 
 # PowerShell
 
@@ -144,71 +139,34 @@ function gba {
 
 The [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/) (WSL) allows running a Linux environment on Windows without the need for a virtual machine or dual-boot setup.
 This is great for me because I'm so accustomed to Unix-like environments and tend to use Linux tools and scripts whenever I can.
-There are many distributions available in the Microsoft Store (I recommend using Ubuntu or Debian) and we can easily share files between Windows and Linux environments.
+There are many compatible Linux distributions available in the Microsoft Store (I recommend using Ubuntu or Debian), and it's easy sharing files between Windows and Linux environments.
 
 WSL works by translating Linux system calls into Windows system calls using a compatibility layer.
 There are two versions of WSL: WL 1 and WSL 2.
-WSL 1 uses a translation layer (similar to Wine for Linux on Windows).
+WSL 1 uses a translation layer (similar to [Wine](https://www.winehq.org/) for Linux on Windows).
 WSL 2 introduces a real Linux kernel running in a lightweight virtual machine, providing full system call compatibility and improved performance.
+WSL distributions are installed in the `%LOCALAPPDATA%\Packages` directory by default. 
+You can access the Linux file system from Windows via `\\wsl$\<distro-name>` in the File Explorer.
 
-Here's how to install WSL:
+To enable WSL on Windows [follow the official instructions](https://learn.microsoft.com/en-us/windows/wsl/install-manual):
 
-1. Open PowerShell as Administrator:
-    - Press `Win + X`, then select "Windows PowerShell (Admin)".
+1. Press `Win + X`, then select "Windows PowerShell Admin)."
+2. Enable WSL Feature: running `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+3. Enable Virtual Machine Feature: running `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+4. Set WSL 2 as the default version: `sh wsl --set-default-version 2`
+5. Restart Your Computer:
 
-2. Enable WSL Feature:
-   ```sh
-   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-   ```
+To install a Linux distribution (Ubuntu 20.04 in this case) run the following command in PowerShell:
 
-3. Enable Virtual Machine Platform Feature:
-   ```sh
-   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-   ```
-
-4. Restart Your Computer:
-    - This ensures all changes are applied properly.
-
-To install a Linux distribution
-
-1. Open Microsoft Store:
-    - Search for "WSL" or a specific distribution like "Ubuntu".
-
-2. Select and Install Your Preferred Linux Distribution:
-    - Click "Get" to install the distribution.
-
-3. Launch the Installed Distribution:
-    - Once installed, launch the distribution from the Start menu or by typing its name in the Windows search bar.
-
-4. Complete Initial Setup:
-    - Set up your Linux username and password when prompted.
-
-To update to WSL 2 (Optional but Recommended)
-
-1. Set WSL 2 as Default Version:
-   ```sh
-   wsl --set-default-version 2
-   ```
-
-2. Update Installed Distributions to WSL 2:
-   ```sh
-   wsl --set-version <distro-name> 2
-   ```
-    - Replace `<distro-name>` with the name of your installed distribution (e.g., `Ubuntu`).
+```powershell
+Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing
+```
 
 To verify the installation:
 
-1. Check WSL Version:
-   ```sh
-   wsl --list --verbose
-   ```
-
-2. Access Linux Environment:
-    - Open your installed Linux distribution from the Start menu or via the command line.
-
-Where It Is Installed?
-
-WSL distributions are installed in the `%LOCALAPPDATA%\Packages` directory by default. You can access the Linux file system from Windows via `\\wsl$\<distro-name>` in File Explorer.
+```powershell
+wsl --list --verbose
+```
 
 # Scoop
 
@@ -226,12 +184,18 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 Here are the basic Scoop commands that I use: 
 
-```powershell
-scoop search [package_name] # To search for a package
-scoop install [package_name] # To install a package
-scoop update [package_name] # To update a package
-scoop list # To list installed packages
-```
+{% highlight powershell linenos %}
+# To search for a package
+scoop search [package_name] 
+# To install a package
+scoop install [package_name] 
+# To update a package
+scoop update [package_name] 
+# To list installed packages
+scoop list
+# To uninstall a package
+scoop uninstall [package_name] 
+{% endhighlight %}
 
 Here are a few packages that I recommend:
 
@@ -295,7 +259,6 @@ Here's an example of using `ll` on the base directory of the code that runs this
     &#169; Example of Windows Terminal output after adding Terminal-Icons.
   </figcaption>
 </figure>
-
 
 # Conclusion
 
