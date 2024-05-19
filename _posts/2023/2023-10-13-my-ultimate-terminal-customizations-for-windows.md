@@ -19,20 +19,20 @@ published: true
 ---
 
 I went back to using Windows lately in my current job. 
-But let's be honest: Windows is a pain for me as a developer.[^1]
-Anyway, I've to deal with it to keep my job.
-One of the things that I miss the most from my previous setup is my nice [Terminal customizations](../blog/my-ultimate-terminal-customizations-for-macos.html) available in macOS.
+But let's be honest, I don't enjoy the change.[^1]
+Anyway, I've to deal with it to do my job right.
+One of the things that I miss the most from my previous setup is my nice [macOS terminal customizations](../blog/my-ultimate-terminal-customizations-for-macos.html).
 To my knowledge, the Windows native terminal is far behind compared to its Unix counterparts.
 However, with some tweaks and extra tools, I manage to tweak the horrendous `C:\WINDOWS\system32\CMD` into something nicer in terms of customization and functionality.
 In this blog post, I describe the tools I use to resemble my macOS terminal customizations on Windows.
 This includes the fonts that I chose for the Windows Terminal app, an enhanced PowerShell, and the installation of third-party tools like Oh My Posh.
 I've found that these small improvements make me significantly ~~less sad~~ happier when using Windows. 
-I must say, to me, it's not only about functionalities, good aesthetics and a great user experience go hand in hand with a certain pleasure that boosts my productivity!
+I must say, to me, it's not only about functionalities, good aesthetics and a great user experience go hand in hand with a certain kind of pleasure that boosts my productivity!
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water-ascii-art.png alt: "ASCII art displayed on my Windows' terminal" %}
   <figcaption class="stroke"> 
-    &#169; Turning poop into something drinkable <a href="https://www.gatesnotes.com/Omniprocessor-From-Poop-to-Potable">is doable</a>, ask Bill Gates! ASCII art displayed on my Windows' terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <strong>ascii-image-converter --braille --dither https://tinyurl.com/55p7d8vf</strong>.
+    &#169; Turning poop into something drinkable <a href="https://www.gatesnotes.com/Omniprocessor-From-Poop-to-Potable">is doable</a>, ask Bill Gates if any doubt! ASCII art displayed on my Windows' terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <strong>ascii-image-converter --braille --dither https://tinyurl.com/55p7d8vf</strong>.
   </figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ I must say, to me, it's not only about functionalities, good aesthetics and a gr
 
 The first step is to get a better terminal app.
 I use [Windows Terminal](https://en.wikipedia.org/wiki/Windows_Terminal), which offers a lot of nice customization options.
-For example, it allows opening customizing the appearance (just like [iTerm](https://iterm2.com/)), and having multiple tabs with different shells opened like PowerShell, Command Prompt, and Windows Subsystem for Linux (WSL).
+For example, it allows many changes in the appearance of the prompts (similar to [iTerm](https://iterm2.com/)), and having multiple tabs with different shells opened like PowerShell, Command Prompt, and Windows Subsystem for Linux (WSL).
 The app can be [downloaded from the Microsoft Store](https://aka.ms/terminal) or directly installed from its official [GitHub repository](https://github.com/microsoft/terminal).
 
 - To install via Microsoft Store, open [Microsoft Store](https://apps.microsoft.com/home?hl=en-us&gl=US), search for "Windows Terminal" and click "Get" or "Install."
@@ -53,9 +53,11 @@ The app can be [downloaded from the Microsoft Store](https://aka.ms/terminal) or
 
 {% badge /img/badges/PowerShell_5.0_icon.png 140 https://learn.microsoft.com/en-us/powershell/ %}
 
-To make the most of your terminal, install and use [PowerShell v5](https://learn.microsoft.com/en-us/powershell/) or above instead of the Command Prompt (`CMD`).
-PowerShell is very powerful shell (similar to `bash`) but [with a more verbose syntax](https://mathieubuisson.github.io/powershell-linux-bash/). 
+To make the most of my terminal, I use [PowerShell v5](https://learn.microsoft.com/en-us/powershell/) or above instead of the Command Prompt (`CMD`).
+PowerShell is very powerful shell
+I's similar to `bash` but [with a more verbose syntax](https://mathieubuisson.github.io/powershell-linux-bash/) in my opinion. 
 Interestingly, PowerShell commands return objects instead of plain text!
+This means that you can easily manipulate the output of one command with another command instead of using pipes.
 
 Here's how to install PowerShell Core on Windows:
 
@@ -74,7 +76,7 @@ Lastly, open PowerShell and set the execution policy to allow running scripts:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-Now you can start customizing your PowerShell profile by opening the profile file in notepad: 
+Now you can start customizing your PowerShell profile by opening the profile file in notepad, like this: 
 
 ```powershell
 notepad $PSHOME\Profile.ps1
@@ -142,19 +144,18 @@ This is great for me because I'm so accustomed to Unix-like environments and ten
 There are many compatible Linux distributions available in the Microsoft Store (I recommend using Ubuntu or Debian), and it's easy sharing files between Windows and Linux environments.
 
 WSL works by translating Linux system calls into Windows system calls using a compatibility layer.
-There are two versions of WSL: WL 1 and WSL 2.
-WSL 1 uses a translation layer (similar to [Wine](https://www.winehq.org/) for Linux on Windows).
-WSL 2 introduces a real Linux kernel running in a lightweight virtual machine, providing full system call compatibility and improved performance.
-WSL distributions are installed in the `%LOCALAPPDATA%\Packages` directory by default. 
+There are two versions of WSL: WSL1 and WSL2.
+WSL1 uses a translation layer (similar to [Wine](https://www.winehq.org/) for Linux on Windows).
+WSL2 introduces a real Linux kernel running in a lightweight virtual machine, providing full system call compatibility and improved performance.
+WSL distributions are located in the `%LOCALAPPDATA%\Packages` directory by default. 
 You can access the Linux file system from Windows via `\\wsl$\<distro-name>` in the File Explorer.
 
 To enable WSL on Windows [follow the official instructions](https://learn.microsoft.com/en-us/windows/wsl/install-manual):
 
 1. Press `Win + X`, then select "Windows PowerShell Admin)."
-2. Enable WSL Feature: running `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
-3. Enable Virtual Machine Feature: running `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
-4. Set WSL 2 as the default version: `sh wsl --set-default-version 2`
-5. Restart Your Computer:
+2. Enable WSL feature by running: `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+3. Enable virtual machine feature by running: `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+4. Set WSL2 as the default version: `sh wsl --set-default-version 2` and restart the PC.
 
 To install a Linux distribution (Ubuntu 20.04 in this case) run the following command in PowerShell:
 
@@ -162,7 +163,7 @@ To install a Linux distribution (Ubuntu 20.04 in this case) run the following co
 Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing
 ```
 
-To verify the installation:
+To verify the installation run:
 
 ```powershell
 wsl --list --verbose
@@ -171,8 +172,8 @@ wsl --list --verbose
 # Scoop
 
 [Scoop](https://scoop.sh/) is a command-line package manager for Windows that simplifies the process of installing, updating, and managing software applications.
-Think of it as the Windows' version of [homebrew](https://brew.sh/).
-Scoop is much better than the default Windows installer/uninstaller.
+Think of it as the Windows' alternative to [homebrew](https://brew.sh/) or [apt-get](https://en.wikipedia.org/wiki/APT_(software))
+I think that Scoop is much better and than the default Windows installer because it's CLI friendly.
 It downloads and manages packages in a portable way, which means that it's not required to have admin rights to install anything. 
 Once installed, Scoop places the applications in `~\scoop`. 
 
@@ -197,11 +198,17 @@ scoop list
 scoop uninstall [package_name] 
 {% endhighlight %}
 
-Here are a few packages that I recommend:
+Here are a few Scoop packages that I recommend:
 
-```powershell
-scoop install 7zip curl git wget starship sudo touch vim which z gpg grep helm fzf jq nvm python
-```
+| Category      | Package name                                                                                             |
+|---------------|----------------------------------------------------------------------------------------------------------|
+| Utility       | `7zip`, `curl`, `wget`, `sudo`, `touch`, `which`, `z`, `gpg`, `grep`, `fzf`, `bat`, `fd`, `htop`, `tldr` |
+| Development   | `vscode`, `git`, `vim`, `helm`, `jq`, `python`, `nvm`, `nodejs`, `docker`, `kubectl`, `terraform`        |
+| Media         | `mpv`, `vlc`, `youtube-dl`, `handbrake`, `gimp`                                                          |
+| Communication | `slack`, `zoom`, `teams`                                                                                 |
+| Productivity  | `sublime-text`, `obsidian`, `todoist`, `trello`                                                          |
+| Browsers      | `firefox`, `chrome`, `edge`                                                                              |
+
 
 # Oh My Posh
 
@@ -232,10 +239,12 @@ You can find themes in the `themes` folder located where the Oh My Posh reposito
 
 # Fonts and Icons
 
-To display certain glyphs and icons correctly, you might need [Nerd Fonts](https://www.nerdfonts.com/).
-These fonts are created by developers to be free, look good, and include extra icons.
-My current favorite is the "**IosevkaTerm Nerd Font**".
-Set the font in Windows Terminal settings under the profile appearances tab as shown below:
+To display certain glyphs and icons correctly in the terminal, you might need [Nerd Fonts](https://www.nerdfonts.com/).
+These fonts are created by developers for developers.
+They are free, look good, and include extra icons.
+My current favorite is the `IosevkaTerm Nerd Font`.
+
+Once the font is installed, you can set the font in Windows Terminal settings under the profile appearances tab as shown below:
 
 <figure class="jb_picture">
   {% responsive_image width: "75%" border: "0px solid #808080" path: img/posts/2023/2023-10-13/windows-terminal-powershell-customizations.png alt: "Customizing the appearance of PowerShell in the Windows Terminal application settings." %}
@@ -260,14 +269,16 @@ Here's an example of using `ll` on the base directory of the code that runs this
   </figcaption>
 </figure>
 
+Isn't it beautiful? 😍
+
 # Conclusion
 
-Customizing the Windows terminal not only makes its visually appealing but also gives a joy that enhances productivity.
+Customizing the Windows terminal not only makes its visually appealing but also brings me joy as a developer.
+I think that, in the long run, that enhances my productivity.
 In this blog post, I covered how to transform the Windows terminal into a beautiful and efficient workspace.
 By integrating PowerShell, Oh My Posh, custom fonts, and various plugins, you create a powerful, efficient, and enjoyable workspace directly in your terminal window.
-With these tools, your command line will transform into a robust command center, ready to tackle any task efficiently.
-Explore, experiment, and most importantly, tailor your terminal to fit your workflow and style.
-Let me know in the comments below if you know about any other tool that you would recommend 😊.
+You can explore, experiment, and most importantly, tailor your terminal to fit your personal workflow and style.
+Let me know in the comments below if you know about any other tool that I should recommend 😊.
 
 # Footnotes
 

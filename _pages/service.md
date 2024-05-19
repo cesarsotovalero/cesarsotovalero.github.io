@@ -12,7 +12,7 @@ published: true
 I reviewed papers for the following journals and conferences:
 
 <aside class="quote">
-    <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Verified by the WoS</a></em> 
+    <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Peer reviews verified by the Web of Science</a></em> 
 </aside>
 
 - [Springer Discover Artificial Intelligence](https://link.springer.com/journal/44163), 2024
