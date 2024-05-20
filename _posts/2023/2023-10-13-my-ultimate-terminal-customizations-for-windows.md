@@ -18,7 +18,7 @@ author: cesarsotovalero
 published: true
 ---
 
-I went back to using Windows lately in my current job. 
+I went back to using Windows lately in my current job.[^2]
 But let's be honest, I don't enjoy the change.[^1]
 Anyway, I've to deal with it to do my job right.
 One of the things that I miss the most from my previous setup is my nice [macOS terminal customizations](../blog/my-ultimate-terminal-customizations-for-macos.html).
@@ -282,4 +282,6 @@ Let me know in the comments below if you know about any other tool that I should
 
 # Footnotes
 
-[^1]: Windows is very popular in non-tech heavy companies. Personally, I think that pro developers don't use it. Instead, the real pros use Unix-based systems like [Arch Linux](https://archlinux.org/), or [macOS](https://en.wikipedia.org/wiki/MacOS) when high-quality hardware is a priority.
+[^1]: Windows is the darling of most companies companies (specially non-tech), much like fax machines and paperweights. Personally, I think that pro developers don't use it. Instead, the crème de la crème prefer Unix-based systems like [Arch Linux](https://archlinux.org/), or [macOS](https://en.wikipedia.org/wiki/MacOS) when they want to prioritize high-quality (i.e., Apple-made) hardware.
+
+[^2]: The last time I used Windows was during the Windows XP era (very good OS btw), that was back when dinosaurs roamed the Earth and dial-up internet was all the rage. Since then, I upgraded my dev experience to Unix-based distros (mostly Ubuntu), and recently, I finally saved enough gold ingots to join the cult of Mac and macOS.

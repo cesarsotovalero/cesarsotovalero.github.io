@@ -57,7 +57,7 @@ I supervised MSc and BSc students in the following theses:
 I volunteered for the following events:
 
 - [Jfokus](https://www.jfokus.se/), **Volunteer**, February 2023
-- [1st Continuous Integration Hackathon](https://kth.github.io/ci-hackathon), **Staff Member**, 2020
+- [1st Continuous Integration Hackathon](https://hackathon.castor.kth.se/2019/), **Staff Member**, 2020
 - [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), **Staff Member**, 2017
 
 # Outreach
