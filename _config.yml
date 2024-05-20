@@ -299,3 +299,7 @@ responsive_image:
     - width: 1600
     - width: 1920
   strip: true
+
+# To check for broken external links, run the following in the CLI:
+# gem install html-proofer
+# htmlproofer ./_site --only-4xx --check-external-hash --url-ignore '/^\/(?!\/)/'

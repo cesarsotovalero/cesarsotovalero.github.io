@@ -11,8 +11,8 @@ keywords:
   - C
   - D
   - E
-image: ../img/posts/2024/2024-MM-DD/IMG-cover.jpg
-share-img: ../img/posts/2024/2024-MM-DD/IMG-cover.jpg
+image: ../img/posts/img-placeholder_cover.webp
+share-img: ../img/posts/img-placeholder_cover.webp
 show-avatar: false
 toc: true
 mathjax: false
