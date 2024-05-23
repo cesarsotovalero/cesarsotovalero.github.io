@@ -23,7 +23,7 @@ But let's be honest, I don't enjoy the change.[^1]
 Anyway, I've to deal with it to do my job right.
 One of the things that I miss the most from my previous setup is my nice [macOS terminal customizations](../blog/my-ultimate-terminal-customizations-for-macos.html).
 To my knowledge, the Windows native terminal is far behind compared to its Unix counterparts.
-However, with some tweaks and extra tools, I manage to tweak the horrendous `C:\WINDOWS\system32\CMD` into something nicer in terms of customization and functionality.
+However, with some tweaks and extra tools, I manage to tweak the horrendous `C:\WINDOWS\system32\CMD` into something nicer in terms of L&F and functionality.
 In this blog post, I describe the tools I use to resemble my macOS terminal customizations on Windows.
 This includes the fonts that I chose for the Windows Terminal app, an enhanced PowerShell, and the installation of third-party tools like Oh My Posh.
 I've found that these small improvements make me significantly ~~less sad~~ happier when using Windows. 
