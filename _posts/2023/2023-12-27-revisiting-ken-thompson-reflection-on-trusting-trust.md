@@ -25,12 +25,13 @@ published: false
 [//]: # (The benefits of solving this problem are raising awareness about the risks associated with compromised tools and encouraging secure development practices. )
 [//]: # (The emotion I'm generating is curiosity and caution.)
 
+
 Cybersecurity threats are everywhere these days.
 I hear about them in tech events, seminars, and even in the news.
-From ransomware attacks to data breaches, the risks of cyber threats are ever-present.
+From ransomware attacks to data breaches, the risks of cyber threats are everywhere.
 In most cases, we assume the existence of a malicious actor trying to exploit vulnerabilities in our systems.
-The sophistication of attacks increases at the same peace as the complexity of software.
-Which each new feature, the threat exposure grows.
+The sophistication of attacks increases at the same peace as the complexity of software does.
+And with every new added feature, the threat exposure grows.
 In particular, the [software supply chain](../blog/the-software-supply-chain.html) has become a prime target for attackers.
 Indeed, it's not difficult today foreseeing large-scale attacks on software repositories or package managers.
 But... what if the threats were (already) hidden in the tools we use (and trust) to build the software itself? 
@@ -48,7 +49,18 @@ So let's revisit Thompson's reflection, 40 years later.
   </figcaption>
 </figure>
 
-# What Thomson Really Said?
+{% badge /img/badges/first-page-of-reflections-on-trusting-trust.png 140 https://dl.acm.org/doi/10.1145/358198.358210 %}
+
+
+# A Proof of Distrust
+
+Let me ask: do you trust a cracked version of Adobe Photoshop?
+You probably don't.
+But what if I ask you instead about the reliability of a Mastercard transaction?
+You probably do believe that the payment will be processed securely.
+Certainly, our sense of "trust" in a software application differs depending on its origins.
+Now what if I tell you that there exists a proof that no matter the software, you should never trust it?  
+This is the essence of Ken Thompson's Turing Award lecture, "Reflections on Trusting Trust," delivered in 1984.
 
 ## Self-Replicating Code
 
