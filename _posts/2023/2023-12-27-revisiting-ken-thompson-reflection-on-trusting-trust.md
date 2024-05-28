@@ -21,29 +21,24 @@ author: cesarsotovalero
 published: false
 ---
 
-[//]: # (My writing process:)
-[//]: # (I start with 3 questions at the top:)
-[//]: # (- What problem am I solving?)
-[//]: # (- What are the benefits of solving it?)
-[//]: # (- What emotion am I generating?)
-[//]: # (From these questions, I create:)
-[//]: # (- At least 5 headlines)
-[//]: # (- The bullet point summary)
-[//]: # (Then I fill in the details.)
+[//]: # (I'm solving the problem of developers not realizing the implications of trusting compilers and other foundational tools in the software development process. )
+[//]: # (The benefits of solving this problem are raising awareness about the risks associated with compromised tools and encouraging secure development practices. )
+[//]: # (The emotion I'm generating is curiosity and caution.)
 
-[//]: # (AI Prompt for writing content)
-Act like a research assistant with expertise in conducting comprehensive academic and industry-specific research.
-Your task is to perform an in-depth investigation into [TOPIC].
-Start by outlining the key dimensions of [TOPIC].
-Identify major themes, questions, and controversies that are central to understanding the breadth and depth of the topic.
-Use a combination of academic databases, professional journals, industry reports, and credible news sources to gather data and literature related to [TOPIC].
-Focus on sourcing the most recent and relevant information.
-Analyze the information gathered to trace the evolution of thought and technology in [TOPIC].
-Highlight significant advancements, turning points, and ongoing developments.
-Discuss the implications of your findings and how they contribute to the current understanding of [TOPIC].
-Be sure to include diverse perspectives and address any conflicting data.
-Take a deep breath and work on this problem step-by-step.
-
+Cybersecurity threats are everywhere these days.
+I hear about them in tech events, seminars, and even in the news.
+From ransomware attacks to data breaches, the risks of cyber threats are ever-present.
+In most cases, we assume the existence of a malicious actor trying to exploit vulnerabilities in our systems.
+The sophistication of attacks increases at the same peace as the complexity of software.
+Which each new feature, the threat exposure grows.
+In particular, the [software supply chain](../blog/the-software-supply-chain.html) has become a prime target for attackers.
+Indeed, it's not difficult today foreseeing large-scale attacks on software repositories or package managers.
+But... what if the threats were (already) hidden in the tools we use (and trust) to build the software itself? 
+Or in other words: to what extent do you trust the output of your favorite compiler?
+This is the question that Ken Thompson, co-creator of Unix, raised in his 1984 Turing Award lecture.
+I find the assertion he made absolutely fascinating.
+For its implications, "Reflections on Trusting Trust" could be one of the most bold and thought-provoking ideas in the history of cybersecurity. 
+So let's revisit Thompson's reflection, 40 years later.
 
 # IMAGE
 <figure class="jb_picture">
