@@ -37,7 +37,7 @@ I've co-reviewed papers for the following journals and conferences:
 
 I've served as a committee member for the following conferences:
 
-- [IEEE Secure Development Conference (SecDev)](https://secdev.ieee.org/2024/program-committee/), 2024 [Recognition](../img/screenshots/SecDev2024.png)
+- [IEEE Secure Development Conference (SecDev)](https://secdev.ieee.org/2024/program-committee/), 2024 🖼️ [Recognition](../img/screenshots/SecDev2024.png)
 
 Also,
 
