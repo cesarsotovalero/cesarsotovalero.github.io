@@ -28,7 +28,7 @@ published: false
 [//]: # (- What emotion am I generating?)
 [//]: # (From these questions, I create:)
 [//]: # (- At least 5 headlines)
-[//]: # (- The bullet point summary)
+[//]: # (- The bullet point summary)  
 [//]: # (Then I fill in the details.)
 
 TODO
