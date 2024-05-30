@@ -47,7 +47,7 @@ Also, my name is listed in the acknowledgments of the following papers:
  
 # Thesis Supervisor
 
-I supervised Master and Bachelor students in the following theses:
+I've supervised Master and Bachelor students in the following theses:
 
 - Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests, Jacob Jernestål, **Bachelor Thesis**, Mid Sweden University 2024 (ongoing)
 - [The State of Software Diversity in the Software Supply Chain of Ethereum Clients](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf), Noak Jönsson, **Bachelor Thesis**, KTH 2022
