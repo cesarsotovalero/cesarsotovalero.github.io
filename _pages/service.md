@@ -49,7 +49,7 @@ Also, my name is listed in the acknowledgments of the following papers:
 
 I supervised MSc and BSc students in the following theses:
 
-- [Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests](), Jacob Jernestål, **BSc Thesis**, Mid Sweden University 2024 (ongoing)
+- Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests, Jacob Jernestål, **Bachelor Thesis**, Mid Sweden University 2024 (ongoing)
 - [The State of Software Diversity in the Software Supply Chain of Ethereum Clients](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf), Noak Jönsson, **Bachelor Thesis**, KTH 2022
 - [Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf), Martin Sköld, **Master Thesis**, KTH 2020
 - [Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf), Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020
@@ -69,7 +69,7 @@ My work has been featured in the following media:
 
 - [:earth_americas: Unfold](https://rethread.art/projects/unfold.html), Nobel Week Lights, 2022
 - [:earth_americas: KTH Intranet Interview](https://intra.kth.se/en/eecs/nyheter/grattis-till-vinsten-cesar-1.1112396), 2021
-- [:earth_americas: Estudios de Doctorado en Suecia: Por Dónde Empezar?](https://eltoque.com/estudios-de-doctorado-en-suecia-por-donde-empezar) (co-authored article, _in Spanish_), 2021
+- [:earth_americas: Estudios de Doctorado en Suecia: Por Dónde Empezar?](https://eltoque.com/estudios-de-doctorado-en-suecia-por-donde-empezar) (co-authored article, written in Spanish), 2021
 
 # Teaching
 
