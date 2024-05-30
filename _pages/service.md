@@ -3,7 +3,7 @@ permalink: service.html
 layout: page
 title: Service
 subtitle: 🙋
-description: A list of academic services provided by César Soto Valero.
+description: A list of academic services provided by César Soto Valero
 published: true
 ---
 
