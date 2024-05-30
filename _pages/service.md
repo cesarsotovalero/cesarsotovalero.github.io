@@ -12,9 +12,10 @@ published: true
 I've reviewed papers for the following journals and conferences:
 
 <aside class="quote">
-    <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Peer reviews verified by the Web of Science</a></em> 
+    <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Link to my verified peer reviews in the Web of Science</a></em> 
 </aside>
 
+- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2024
 - [Springer Discover Artificial Intelligence](https://link.springer.com/journal/44163), 2024
 - [PeerJ Computer Science](https://peerj.com/computer-science/), 2024
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2023
@@ -39,15 +40,16 @@ I've served as a committee member for the following conferences:
 
 - [IEEE Secure Development Conference (SecDev)](https://secdev.ieee.org/2024/program-committee/), 2024 🖼️ [Recognition](../img/screenshots/SecDev2024.png)
 
-Also,
+Also, my name is listed in the acknowledgments of the following papers:
 
-- [EOLANG and &phi;-calculus](https://arxiv.org/abs/2111.13384), 2021 (my name is listed in the acknowledgments)
+- [EOLANG and &phi;-calculus](https://arxiv.org/abs/2111.13384), 2021
 
  
 # Thesis Supervisor
 
 I supervised MSc and BSc students in the following theses:
 
+- [Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests](), Jacob Jernestål, **BSc Thesis**, Mid Sweden University 2024 (ongoing)
 - [The State of Software Diversity in the Software Supply Chain of Ethereum Clients](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf), Noak Jönsson, **Bachelor Thesis**, KTH 2022
 - [Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf), Martin Sköld, **Master Thesis**, KTH 2020
 - [Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf), Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020
