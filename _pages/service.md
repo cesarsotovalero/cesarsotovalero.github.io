@@ -12,7 +12,7 @@ published: true
 I've reviewed papers for the following journals and conferences:
 
 <aside class="quote">
-    <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Link to my verified peer reviews in the Web of Science</a></em> 
+    <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Check my verified peer reviews in the Web of Science</a></em> 
 </aside>
 
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2024
@@ -47,13 +47,13 @@ Also, my name is listed in the acknowledgments of the following papers:
  
 # Thesis Supervisor
 
-I supervised MSc and BSc students in the following theses:
+I supervised Master and Bachelor students in the following theses:
 
 - Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests, Jacob Jernestål, **Bachelor Thesis**, Mid Sweden University 2024 (ongoing)
 - [The State of Software Diversity in the Software Supply Chain of Ethereum Clients](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf), Noak Jönsson, **Bachelor Thesis**, KTH 2022
 - [Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf), Martin Sköld, **Master Thesis**, KTH 2020
 - [Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf), Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020
-- [Análisis de La Actividad Competitiva en el Juego de Polo Acuático](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf), Pascalina Stanislas-Inglis. **Bachelor Thesis**, Cuba 2014
+- [Análisis de La Actividad Competitiva en el Juego de Polo Acuático](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf), Pascalina Stanislas-Inglis. **Bachelor Thesis**, UCLV 2014
 
 # Volunteer
 
@@ -73,7 +73,7 @@ My work has been featured in the following media:
 
 # Teaching
 
-From 2019-2023, I worked as a teacher assistant for the following courses:
+From 2019-2023, I worked as a teacher assistant (TA) for the following courses:
 
 - [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2023
 - [EF112X Examensarbete inom elektroteknik, grundnivå](https://www.kth.se/social/course/EF112X/), given by [Antita Kullen](https://people.kth.se/~kullen/) at KTH, Spring 2022
