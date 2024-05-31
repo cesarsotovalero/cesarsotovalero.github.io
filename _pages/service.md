@@ -15,7 +15,7 @@ I've reviewed papers for the following journals and conferences:
     <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Check my verified peer reviews in the Web of Science</a></em> 
 </aside>
 
-- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2024
+- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
 - [Springer Discover Artificial Intelligence](https://link.springer.com/journal/44163), 2024
 - [PeerJ Computer Science](https://peerj.com/computer-science/), 2024
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2023
