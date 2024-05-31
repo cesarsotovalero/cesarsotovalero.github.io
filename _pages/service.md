@@ -50,19 +50,19 @@ Also, my name is listed in the acknowledgments of the following papers:
 
 I've supervised Master and Bachelor students in the following theses:
 
-- Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests, Jacob Jernestål, **Bachelor Thesis**, Mid Sweden University 2024 (ongoing)
-- [The State of Software Diversity in the Software Supply Chain of Ethereum Clients](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf), Noak Jönsson, **Bachelor Thesis**, KTH 2022
-- [Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf), Martin Sköld, **Master Thesis**, KTH 2020
-- [Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf), Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020
-- [Análisis de La Actividad Competitiva en el Juego de Polo Acuático](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf), Pascalina Stanislas-Inglis. **Bachelor Thesis**, UCLV 2014
+- "Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests," Jacob Jernestål, **Bachelor Thesis**, Mid Sweden University 2024 (ongoing)
+- "The State of Software Diversity in the Software Supply Chain of Ethereum Clients," Noak Jönsson, **Bachelor Thesis**, KTH 2022 [PDF](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf)
+- "Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes," Martin Sköld, **Master Thesis**, KTH 2020 [PDF](../files/publications/Using_NLP_Techniques_for_Log_Analysis_to_Recommend_Activities_for_Troubleshooting_Processes.pdf)
+- "Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning," Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020 [PDF](../files/publications/Interpretation_of_Swedish_Sign_Language_Based_on_a_Small_Data_Set_using_Convolutional_Neural_Networks_and_Transfer_Learning.pdf)
+- "Análisis de La Actividad Competitiva en el Juego de Polo Acuático," Pascalina Stanislas-Inglis. **Bachelor Thesis**, UCLV 2014 [PDF](../files/publications/Análisis_de_La_Actividad_Competitiva_en_el_Juego_de_Polo_Acuático.pdf)
 
 # Volunteer
 
 I volunteered for the following events:
 
-- [Jfokus](https://www.jfokus.se/), **Volunteer**, February 2023
-- [1st Continuous Integration Hackathon](https://hackathon.castor.kth.se/2019/), **Staff Member**, 2020
-- [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), **Staff Member**, 2017
+- [Jfokus](https://www.jfokus.se/), **Volunteer**, February 2023 🖼️ [Picture](../img/pages/cesar/Jfokus2023.jpg)
+- [1st Continuous Integration (CI) Hackathon](https://hackathon.castor.kth.se/2019/), **Staff Member**, 2020 🖼️ [Recognition](../img/screenshots/travis-ci-hackaton.png)
+- [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), **Staff Member**, 2017 🖼️ [Recognition](../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.jpg)
 
 # Outreach
 
