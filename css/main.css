@@ -676,7 +676,12 @@ a[href$=".pptx"] {
 .header-image .avatar-container .avatar-img {
   width: 100%;
   border-radius: 50%;
+  filter: grayscale(100%);
   /*display: block;*/
+}
+
+.header-image .avatar-container .avatar-img:hover {
+  filter: grayscale(0%);
 }
 
 .avatar-img-small {
@@ -689,6 +694,11 @@ a[href$=".pptx"] {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .1);
   border: 0.5px solid var(--post-meta-index-color);
+  filter: grayscale(100%);
+}
+
+.avatar-img-small:hover {
+  filter: grayscale(0%);
 }
 
 @media only screen and (max-width: 768px) {
@@ -1629,6 +1639,55 @@ p.post-meta {
   display: block;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+
+/* Checkbox */
+.task-list {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.task-list-item {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+  margin-bottom: 10px;
+}
+
+.task-list-item-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  /*cursor: not-allowed;*/
+  flex-shrink: 0; /* Prevent checkbox from shrinking */
+}
+
+.task-list-item-checkbox:disabled {
+  margin-right: 10px;
+  margin-left: 20px;
+  background-color: #f9f9f9;
+}
+
+.task-list-item-checkbox:checked {
+  margin-right: 10px;
+  margin-left: 20px;
+  background-color: #f0f0f0;
+  border-color: #66bb6a;
+}
+
+.task-list-item-checkbox:checked::before {
+  content: '\2713'; /* Unicode for checkmark */
+  position: absolute;
+  top: 0;
+  left: 4px;
+  font-size: 18px;
+  color: green;
 }
 
 /* --- Pager --- */
