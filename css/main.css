@@ -1646,7 +1646,7 @@ p.post-meta {
 .task-list {
   list-style-type: none; /* Remove default bullets */
   padding: 0;
-  margin: 0;
+  margin-bottom: 26px;
 }
 
 .task-list-item {
