@@ -21,7 +21,6 @@ author: cesarsotovalero
 published: false
 ---
 
-
 [//]: # (I'm solving the problem of developers not realizing the implications of trusting compilers and other foundational tools in the software development process. )
 [//]: # (The benefits of solving this problem are raising awareness about the risks associated with compromised tools and encouraging secure development practices. )
 [//]: # (The emotion I'm generating is curiosity and caution.)
