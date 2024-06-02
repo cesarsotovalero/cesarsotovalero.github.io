@@ -277,6 +277,7 @@ In essence, the quality of peer review lies in balancing rigorous critique with 
 
 - [:earth_americas: Peer fortress: The scientific battlefield](https://matt.might.net/articles/peer-fortress/)
 - [:earth_americas: Review a Research Paper: Constructive Critique in Five Steps](https://www.yegor256.com/2023/12/17/how-to-review-research-paper.html)
+- [:earth_americas: How to Write a Peer Review: 12 things you need to know](https://clarivate.com/blog/how-to-write-a-peer-review-12-things-you-need-to-know/)
 
 # Footnotes
 
@@ -288,7 +289,8 @@ In essence, the quality of peer review lies in balancing rigorous critique with 
 
 [^4]: Overall, I believe the general quality of reviews is poor. Improving the quality of reviews is a problem that I think needs to be addressed by the institutions that benefit directly from the research.
 
-[^5]: Some efforts have been made to reward reviewers, such as [Publons](https://publons.com/) and [Web of Science](https://clarivate.com/). However, these platforms lack direct reward, beyond digital badges and certificates, and are not widely recognized by the academic community.
+[^5]: Some efforts have been made to reward reviewers, such as [Publons](https://publons.com/) and [Web of Science](https://clarivate.com/). However, these platforms lack direct rewards, beyond digital badges and certificates, and are not widely recognized by the academic community.
+
 
 
 
