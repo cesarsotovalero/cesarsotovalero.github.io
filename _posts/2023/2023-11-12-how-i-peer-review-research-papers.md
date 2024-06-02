@@ -182,7 +182,7 @@ So I recommend using Google Docs or similar instead of PDFs to write your review
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2023/2023-11-12/jss-reviewer-portal.png alt: "Reviewer's form for the Journal of Systems and Software" %}
   <figcaption class="stroke"> 
-    The reviewer's form for the <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software">Journal of Systems and Software</a>.
+    Screenshot of the reviewer's form for the <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software">Journal of Systems and Software</a>.
   </figcaption>
 </figure>
 
