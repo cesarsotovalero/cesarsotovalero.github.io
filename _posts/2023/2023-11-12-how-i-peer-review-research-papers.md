@@ -204,7 +204,7 @@ Bullet list in decreasing order of relevance.
 Example:
 - The topic is relevant and timely.
 - The idea is novel and fills a knowledge gap.
-- The conclusion makes sense.
+- The conclusions make sense.
 
 **Major Inconsistencies**
 
