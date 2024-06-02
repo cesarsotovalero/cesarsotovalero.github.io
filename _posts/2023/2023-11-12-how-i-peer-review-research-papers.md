@@ -218,9 +218,9 @@ Example:
 Bullet list of minor issues in decreasing order of relevance.
 
 Example:
-- The figure 3 is not clear.
-- The paragraph 2 in section 3 is redundant.
-- The terminology is not consistent.
+- Figure 3 is not clear.
+- Paragraph 2 in section 3 is redundant.
+- Terminology is not consistent.
 
 **Questions and Remarks to the Authors**
 
