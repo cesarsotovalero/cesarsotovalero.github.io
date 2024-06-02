@@ -18,7 +18,7 @@ toc: true
 mathjax: false
 date: 2023/12/27
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 [//]: # (I'm solving the problem of developers not realizing the implications of trusting compilers and other foundational tools in the software development process. )
