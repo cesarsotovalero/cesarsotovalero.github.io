@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Revisiting Ken Thompson’s Reflection on Trusting Trust 
-subtitle: 40 years later
+subtitle: Forty years later
 tags: security
 description: |
   TODO
@@ -43,7 +43,7 @@ So let's revisit Thompson's reflection, 40 years later.
 
 # IMAGE
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/img-placeholder.png alt: "TODO" %}
+  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/img-placeholder.webp alt: "TODO" %}
   <figcaption class="stroke"> 
     &#169; TODO
   </figcaption>
