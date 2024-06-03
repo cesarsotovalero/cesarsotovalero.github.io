@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How I Peer Review Research Papers
-subtitle: My reviewer's flow, template, and tips
+subtitle: My reviewer flow, template, and tips
 tags: science
 description: |
   In this blog post, I share my experiences and personal approach when peer-reviewing research papers in the field of software engineering. My focus is on delivering good peer reviews, fast and effectively. I give my template and provide generalizable examples of good and bad reviews. After reading this post, as a reviewer, you will gain first-hand insight on how to give constructive feedback to paper's authors so that they could improve the quality of their research papers.
@@ -100,7 +100,6 @@ Second, I try to answer myself the following questions, in this order:
 If the answer to all the previous questions is "Yes!", then I start to look at the paper favorably and focus on helping the authors get it through.[^3]
 If my answer to all of them is "No", then I focus on providing evidence to the editor that the paper is not worth publishing.
 In any case, a more detailed review follows.
-
 
 ## Detailed Review
 
@@ -250,7 +249,7 @@ It's a good practice looking at the reviewer's guidelines in each particular jou
 Sometimes they provide a list of specific questions that reviewers should answer when reviewing a paper.
 When peer reviewing, I believe it is essential to provide balanced feedback by offering constructive criticism that includes suggestions for improvement.
 It's also important to begin by recognizing the strengths of the work, which motivate the authors.
-I always make an effort to double-check that my feedback is clear and objective, backing points with evidence and tyring to remain impartial.
+I always make an effort to double-check that my feedback is clear and objective, backing points with citations and tyring to remain impartial.
 I treat the authors as "you" in my review, and I write in first-person pronoun "I" to make it more personal.
 This makes clear that I'm not a GPT chatbot but "an opinionated person" with a taste for good science. 
 
