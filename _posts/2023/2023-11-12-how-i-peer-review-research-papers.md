@@ -260,6 +260,7 @@ Here are some common phrases that I use when looking for nitpicking issues:
 - The sentence `X` is **cryptic**.
 - The paragraph `X` is **redundant**.
 - The word `X` is **unnecessary**.
+- The concept`X` is used before being clearly **introduced**. 
 - The paragraph `X` is **orphan**, merge with the previous one or extend.
 - The arguments in paragraph `X` are quite **subjective**, specify.
 - Add more concrete **examples** for `X` and `Y`.
