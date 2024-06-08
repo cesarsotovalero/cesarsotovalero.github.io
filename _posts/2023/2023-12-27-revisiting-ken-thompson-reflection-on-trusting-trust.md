@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Revisiting Ken Thompson’s Reflection on Trusting Trust 
-subtitle: Forty years later
+subtitle: One of the most chilling ideas in cybersecurity's history
 tags: security
 description: |
   TODO
@@ -11,8 +11,8 @@ keywords:
   - Trojan horse
   - Self-replicating code
   - Understanding software supply chain attacks
-image: ../img/posts/img-placeholder_cover.webp
-share-img: ../img/posts/img-placeholder_cover.webp
+image: ../img/posts/2023/2023-12-27/cross_t_centralen_cover.jpg
+share-img: ../img/posts/2023/2023-12-27/cross_t_centralen_cover.jpg
 show-avatar: false
 toc: true
 mathjax: false
@@ -25,44 +25,36 @@ published: false
 [//]: # (The benefits of solving this problem are raising awareness about the risks associated with compromised tools and encouraging secure development practices. )
 [//]: # (The emotion I'm generating is curiosity and caution.)
 
+Let me ask: Would you trust a cracked version of Adobe Photoshop downloaded from a random website?
+I hope your answer is "no."
+But what if I ask you instead about the reliability of a financial transaction processed by your bank's mobile app?
+You probably do believe that the payment will be processed securely.
+Certainly, our sense of "trust" in a software application dramatically changes depending on its origins and the reputation of its distributor.
+Now, what if I tell you that there exists a proof that no matter the what the software origin is, you should never trust it?
+This is, in essence, what Ken Thompson claimed during his Turing Award lecture, in 1984.
+In his lecture "Reflections on Trusting Trust," Thompson demonstrated that it is possible to insert a backdoor into a compiler that would propagate itself invisibly into all programs compiled with it.
+This backdoor could then modify the compiler to insert the backdoor into future compilers, creating a self-replicating chain of compromised software.
+His proof of concept, known as the "Trojan Horse compiler," highlights the fundamental issue of trust in software development, independent of the software's origin or reputation.
+In this post, I'll revisit Thompson's proof of distrust, 40 years later.
+My goal is to reflect on the transcendence of his message, digging into the implications for software security and the challenges it poses to the security of the software development process as we know it today.
+Let's dig in.
 
-Cybersecurity threats are everywhere these days.
-I hear about them in tech events, seminars, and even in the news.
-From ransomware attacks to data breaches, the risks of cyber threats are everywhere.
-In most cases, we assume the existence of a malicious actor trying to exploit vulnerabilities in our systems.
-The sophistication of attacks increases at the same peace as the complexity of software does.
-And with every new added feature, the threat exposure grows.
-In particular, the [software supply chain](../blog/the-software-supply-chain.html) has become a prime target for attackers.
-Indeed, it's not difficult today foreseeing large-scale attacks on software repositories or package managers.
-But... what if the threats were (already) hidden in the tools we use (and trust) to build the software itself? 
-Or in other words: to what extent do you trust the output of your favorite compiler?
-This is the question that Ken Thompson, co-creator of Unix, raised in his 1984 Turing Award lecture.
-I find the assertion he made absolutely fascinating.
-For its implications, "Reflections on Trusting Trust" could be one of the most bold and thought-provoking ideas in the history of cybersecurity. 
-So let's revisit Thompson's reflection, 40 years later.
-
-# IMAGE
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/img-placeholder.webp alt: "TODO" %}
+  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2023/2023-12-27/cross_t_centralen.jpg alt: "TODO" %}
   <figcaption class="stroke"> 
-    &#169; TODO
+    &#169; The legend tells: there's always a backdoor! Photo from Stockholm's <a href="https://goo.gl/maps/57JsiWkcPKBbXWve8">Central Station</a>.
   </figcaption>
 </figure>
 
+# What Is It All About?
+
 {% badge /img/badges/first-page-of-reflections-on-trusting-trust.png 140 https://dl.acm.org/doi/10.1145/358198.358210 %}
 
+[Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) is a prolific Computer Scientist known for being one of the original creators of the UNIX operating system, along with [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) in the early 70s.
+He created the B programming language, a [precursor](https://www.bell-labs.com/usr/dmr/www/chist.html) to the C programming language.
+Thompson and Ritchie received the Turing Award in 1983 "for their development of generic operating systems theory and specifically for the implementation of the UNIX operating system."
 
-# A Proof of Distrust
-
-Let me ask: do you trust a cracked version of Adobe Photoshop?
-You probably don't.
-But what if I ask you instead about the reliability of a Mastercard transaction?
-You probably do believe that the payment will be processed securely.
-Certainly, our sense of "trust" in a software application differs depending on its origins.
-Now what if I tell you that there exists a proof that no matter the software, you should never trust it?  
-This is the essence of Ken Thompson's Turing Award lecture, "Reflections on Trusting Trust," delivered in 1984.
-
-## Self-Replicating Code
+## The Concept of Self-Replicating Code
 
 Discusses the concept introduced by Thompson where a compiler can be modified to insert malicious code during the compilation process without altering the source code.
 
@@ -174,13 +166,46 @@ Explores the implications of Thompson’s work on the software development lifec
 
 Analyzes the difficulty in detecting malicious modifications in compilers and other foundational software tools, given their deep integration into the system.
 
+# Why Is This important?
+
+Cybersecurity threats are everywhere these days.
+I hear about them everywhere: in tech media, at events, and more and more in the public news.
+From ransomware attacks[^1] to data breaches, the risks of cyber threats are real and growing.
+The sophistication of attacks increases at the same peace as the complexity of software does.
+And with every new added feature, the threat exposure grows.
+
+> "An open-source software supply chain attack is the nefarious alteration of a trusted open-source component used later in a trusted program."
+
+In most cases, we assume the existence of a malicious actor trying to exploit vulnerabilities in our systems.
+In particular, the [software supply chain](../blog/the-software-supply-chain.html) has become a prime target for attackers.
+Indeed, it's not difficult today foreseeing large-scale attacks on software repositories or package managers.
+But... what if the threats were (already) hidden in the tools we use (and trust) to build the software itself?
+Or in other words: to what extent do you trust the output of your favorite compiler?
+This is the question that Ken Thompson, co-creator of Unix, raised in his 1984 during Turing Award lecture.
+
+In this talk, Thompson brilliantly demonstrates that "You can't trust code that you did not totally create yourself."
+I the way he proved this assertion made absolutely fascinating.
+Forty years ago, open source software was not as prevalent as it is today.
+There were no package managers, no GitHub, no GitLab, no Bitbucket.
+Yet, he foresaw the risks of trusting software tools and compilers.
+
+Today, creating software from scratch is not a realistic option.
+Every component, every library, every tool we use in the software development is composed of open source code, libraries, and compilers.
+For its implications, "Reflections on Trusting Trust" could be one of the most bold and thought-provoking ideas in the history of cybersecurity.
+
+
 # Conclusions
 
 Concludes with thoughts on the continuing relevance of trust in software development and the ongoing efforts to secure software against sophisticated attacks.
 
 # External Resources
 
+- [Running the “Reflections on Trusting Trust” Compiler](https://research.swtch.com/nih)
+- [Open Source Supply Chain Security at Google](https://research.swtch.com/acmscored)
+
 # Footnotes
+
+[^1]: Ransomware attacks are one the most common these days. The attacker encrypts the victim's data and demands a ransom for its release. The surge of untraceable cryptocurrencies such as Bitcoin has made it easier for attackers to demand and receive payments without being identified.
 
 
 

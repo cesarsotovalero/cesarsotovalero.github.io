@@ -46,7 +46,7 @@ First of all, I would like to emphasize that peer reviews represent **personal o
 As such, these opinions can sometimes appear biased, contradictory, or even sound plainly foolish (as I have observed more than once).
 The history of science is full of [examples](https://www.sciencealert.com/these-8-papers-were-rejected-before-going-on-to-win-the-nobel-prize) of awesome papers that were initially rejected by academic reviewers.[^2]
 Nevertheless, the peer review process seems to be the least terrible method that the scientific community has devised (so far) to judge the quality of unofficial science.
-Having said that, let's accept the imperfections of peer review(er)s to focus on what we can do as scientist to improve the quality of our deliveries playing the referee role.
+Having said that, let's accept the imperfections of peer review(er)s and instead focus on what we can do (as scientist) to improve the quality of our deliveries when playing the referee's role.
 
 # What I Look For?
 
