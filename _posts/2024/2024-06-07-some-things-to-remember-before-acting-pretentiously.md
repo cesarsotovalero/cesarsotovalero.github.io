@@ -40,7 +40,7 @@ What I really want is **to help and inspire others so they can achieve great thi
 I'm glad I realized that, and I hope to never forget the long road that brought me here.
 Or am I starting to forget?
 Maybe I should recap how insignificant I am and how much I owe to others.
-Maybe it's a good time to my roots.
+Maybe now it's a good time to remember my humble roots.
 Seriously.
 
 <figure class="jb_picture">
