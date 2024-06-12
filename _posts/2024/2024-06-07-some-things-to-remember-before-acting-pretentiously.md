@@ -119,7 +119,7 @@ Seriously.
 - Remember that being positive works wonders. But be careful of showing too much energy and enthusiasm. Others could perceive such behaviors as pretentious. _Even for good things, there are certain limits._
 - Remember that right now there is so much suffering and injustice in the world. You’re very lucky to be far from the really bad things happening (like wars and military dictatorships). You’re living a happy life in a great country with freedom and human rights. _You have so much now, don’t forget that._
 - Remember that in the end, you will not remember your failures at all. Only the successes will be remembered. Only the happy times with great people will be remembered. _There are always people involved in your good memories, so think about it._
-- TO BE CONTINUED THE NEXT TIME I ACT PRETENTIOUSLY
+- TO BE CONTINUED THE NEXT TIME I'M PRETENTIOUS
 
 # Footnotes
 
