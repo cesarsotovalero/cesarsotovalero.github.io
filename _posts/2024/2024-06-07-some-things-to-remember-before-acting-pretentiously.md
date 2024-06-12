@@ -36,7 +36,7 @@ Seeking for "recognition" is clearly a selfish goal.
 I wonder why did I answer in that way.
 So I've been thinking deeply about this question and my true answer.
 To my relief, I realize that I don't really want to be recognized in any way.
-What I really want is **to help and inspire others so they can achieve great things!**[^1]
+**What I really want is to help and inspire others so they can achieve great things!**[^1]
 I'm glad I realized that, and I hope to never forget the long road that brought me here.
 Or am I starting to forget?
 Maybe I should recap how insignificant I am and how much I owe to others.
@@ -119,7 +119,7 @@ Seriously.
 - Remember that being positive works wonders. But be careful of showing too much energy and enthusiasm. Others could perceive such behaviors as pretentious. _Even for good things, there are certain limits._
 - Remember that right now there is so much suffering and injustice in the world. You’re very lucky to be far from the really bad things happening (like wars and military dictatorships). You’re living a happy life in a great country with freedom and human rights. _You have so much now, don’t forget that._
 - Remember that in the end, you will not remember your failures at all. Only the successes will be remembered. Only the happy times with great people will be remembered. _There are always people involved in your good memories, so think about it._
-- **_TO BE CONTINUED THE NEXT TIME I ACT PRETENTIOUSLY..._**
+- TO BE CONTINUED THE NEXT TIME I ACT PRETENTIOUSLY
 
 # Footnotes
 
