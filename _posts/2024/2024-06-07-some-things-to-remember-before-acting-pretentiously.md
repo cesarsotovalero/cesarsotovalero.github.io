@@ -25,7 +25,7 @@ A few days ago, I was asked: _"Where do you see yourself in 10 or 20 years?"_
 I replied:
 _"I would like to get some sort of recognition for my contributions... maybe to be known as an expert in something, someone who is consulted and listened to before important decisions are made."_
 Now that I think about it, I realize my answer was both bold and pretentious.
-But then things got even worse. 
+But things went even worse. 
 Immediately after, I was asked:
 _"So, what do you really want? Is it the act of achieving something extraordinary (like winning the Nobel Prize), or the recognition that comes with it?"_
 My answer was something like the following:
@@ -34,10 +34,10 @@ In retrospect, what such a pretentious answer that was!
 What the hell?
 Seeking for "recognition" is clearly a selfish goal.
 I wonder why did I answer in that way.
-So I've been thinking deeply about this question and my true answer.
+So I've been thinking deeply about this question and what my true answer should have been.
 To my relief, I realize that I don't really want to be recognized in any way.
 **What I really want is to help and inspire others so they can achieve great things!**[^1]
-I'm glad I realized that, and I hope to never forget the long road that brought me here.
+I'm glad I realized that, and I hope to never forget the long and arduous road that brought me here.
 Or am I starting to forget?
 Maybe I should recap how insignificant I am and how much I owe to others.
 Maybe now it's a good time to remember my humble roots.
@@ -53,16 +53,16 @@ Seriously.
 # Remember...
 
 - Remember that you grew up eating wild frogs from swamps. Your father brought them home and cut them, while your mother fried them and told you they were chicken. You loved it. _Sometimes, it is better not to know the origin of certain things._
-- Remember that your dad harvested rice and fed pigs with his own hands for many years so that you could have the best possible food on your plate every day. He was a great civil engineer, but he spent more than half of his lifetime just searching for basic food for the family. Times were difficult back then. _You should do something worthwhile with all the free time you have available now._
-- Remember how many people your mom helped and how hard she worked, cleaning your nondisposable diapers at 5:00 every single day. She was a pharmacist, making, collecting, and giving medicines to those in need. _You are living such an easy life compared to your parents' time.._
+- Remember that your dad harvested rice and fed pigs with his own hands for many years so that you could have the best possible food served on your plate every day. He was a great civil engineer, but he spent more than half of his lifetime just searching for food, to provide for the family. Times were difficult back then. _You should do something worthwhile with all the free time you have available now._
+- Remember how many people your mom helped and how hard she worked, cleaning your nondisposable diapers at 5:00 every single day. She was a pharmacist, making, collecting, and giving medicines to those in need. _You are living such an easy life compared to your parents but not giving back to others in the same proportion._
 - Remember when you were a child and broke that toy to look into it because you were curious about how it worked. You cried a lot when your mom said it couldn’t be fixed. _Think twice before taking the risk of breaking things that just can't be fixed._
 - Remember that the forest was your playground during childhood. You swam in the wild waters of the river after the hurricane, fished and hunted with the equipment you made yourself, played football with coconuts, and baseball with almond fruits and tree sticks. You had so little back then, and yet, you were so happy. _There is no need to do something outstanding to be happy._
-- Remember that you were the last kid to be picked for teams in all sports. You were never fast enough, strong enough, or talented enough. It was a big deal for you back then, but now you run 10K with ease and don’t care about such things. The importance of things changes drastically over time, so don’t worry too much about current failures or limitations. _You’ll forget about almost all of your current "big" issues in a few years_
-- Remember the good old days when the whole family would sit together at the same table to celebrate the New Year. We played dominoes and listened to music from cassettes and later CDs. Those were probably the happiest moments of your life, and you didn’t even know it. _It’s likely that you’re living the best moment of your life right now without enven realizing it._
-- Remember your hometown: there were almost no paved roads, and people used horses as a means of transportation. That was great because the streets were safer, so you could play baseball in the middle of the road with other kids. _There is always some good side coming from every limitation._
-- Remember your grandfather climbing dozens of palm trees every single day without safety measures to collect palm nuts to feed the pigs. The palm trees were between 25 and 30 meters tall. _That was truly hard work, and you’re only pretending to work in comparison._
-- Remember your friends were always the noblest, the least problematic in the classroom, and so were you. There was always some bullying here and there from time to time, but you were never alone. _It’s important not to be totally alone._
-- Remember when cartoons were available for only one or two hours every day. There were only two TV channels in the country, and you waited with joy for that moment to watch them on a black-and-white screen. Waiting for things to happen forges patience and brings great pleasure. _Stay away from instant gratification, it is really bad._
+- Remember that you were the last kid to be picked for teams in all sports. You were never fast enough, strong enough, or talented enough. It was a big deal for you back then, but now you run 10K with ease and don’t care about such things. The importance of things changes drastically over time, so don’t worry too much about your limitations. _You’ll forget about almost all of your "big" problems in a few years._
+- Remember the good old days when the whole family would sit together at the same table to celebrate the New Year. We played dominoes and listened to music from cassettes and later from  CD-ROMs. Those were probably the happiest moments of your life, and you didn’t even know it. _It’s likely that you’re living the best moment of your life right now without even realizing it._
+- Remember your hometown: there were almost no paved roads, and people used horses as a means of transportation. That was great because the streets were safer, so you could play baseball in the streets with other kids. _There is always some way to turn our limitations into opportunities._
+- Remember your grandfather climbing dozens of palm trees every single day under the hard sun without safety measures to collect palm nuts so that others could feed and eat the pigs. The palm trees were between 25 and 30 meters tall. _That was truly hard work, and to be fair, it seems like you are only pretending to work in comparison._
+- Remember that your friends were always the noblest, the least problematic in the classroom, the less popular, and so were you. There was always some bullying here and there from time to time, but you were never alone. _It’s important not to be totally alone._
+- Remember when cartoons were available for only one or two hours every day. There were only two TV channels in the country, and you waited with joy for that moment to watch them on a black-and-white screen. Waiting for things to happen forges patience and brings great pleasure. _Stay away from instant gratification, it is really bad because it doesn't bring lasting joy._
 - Remember that a few of your preschool friends played in the streets barefoot, but you always wore shoes. You never thought about it and instead wanted the toys of the richest kids. _It seems we tend to always look at those who have more and forget about those who have less._
 - Remember that you fought other kids many, many times with your fists. It took you a while to understand that a few punches here and there were better than the daily humiliation of being a coward. _Later on, you learned that the worst kind of aggression is passive aggression, for which fists don’t work anymore._
 - Remember that you were separated from your parents to work on potato plantations for 40 days under child slavery conditions. You were 11, and that seemed normal to you. _The perception of what is socially acceptable or not is very subjective._
