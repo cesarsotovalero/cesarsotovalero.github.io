@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Some Things to Remember Before Acting Pretentiously</title>
+        <description>
+          And a few personal thoughts on the value of sincere humility - 
+          A few days ago, I was asked: “Where do you see yourself in 10 or 20 years?” I replied: “I would like to get some sort of recognition for my contributions… maybe to be known as an expert in something, someone who is consulted and listened to before important decisions...
+        </description>
+        <pubDate>Fri, 07 Jun 2024 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html</guid>
+      </item>
+    
+      <item>
         <title>The Last Paper&apos;s Myth</title>
         <description>
           A tale of contending interests - 
@@ -213,17 +224,6 @@
         <pubDate>Wed, 15 Jun 2022 00:00:00 -0700</pubDate>
         <link>https://www.cesarsotovalero.net/blog/why-debloating-third-party-software.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/why-debloating-third-party-software.html</guid>
-      </item>
-    
-      <item>
-        <title>My Ultimate Terminal Customizations for macOS</title>
-        <description>
-          A guide - 
-          There is a common belief that top-class software developers can do their job without ever abandoning the terminal. I think this is true to some extent. It is almost impossible to become an outstanding software developer without knowing how to get the most out of the terminal. Personally, I treat...
-        </description>
-        <pubDate>Sun, 22 May 2022 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html</guid>
       </item>
     
   </channel>
