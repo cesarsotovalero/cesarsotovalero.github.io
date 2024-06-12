@@ -46,7 +46,7 @@ Seriously.
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-06-07/remember-your-roots.jpg alt: "A hand scratching the surface of the earth" %}
   <figcaption class="stroke"> 
-    &#169; Remember your humble roots and be humble César! Photo taken at <a href="https://maps.app.goo.gl/7Urts86N3j5t8eEX9">Skälderviksplan's park</a> in Stockholm. 
+    &#169; Remember your roots and stay humble César! Photo taken at <a href="https://maps.app.goo.gl/7Urts86N3j5t8eEX9">Skälderviksplan's park</a> in Stockholm. 
   </figcaption>
 </figure>
 
