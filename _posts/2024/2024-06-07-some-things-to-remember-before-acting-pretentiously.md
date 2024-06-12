@@ -12,7 +12,7 @@ keywords:
   - motivational thoughs from a PhD in Computer Science
   - academic research as a life changer
 image: ../img/posts/2024/2024-06-07/remember-your-roots_cover.jpg
-share-img: ../img/posts/2024/2024-06-07/remember-your-roots_cover.jpgs
+share-img: ../img/posts/2024/2024-06-07/remember-your-roots_cover.jpg
 show-avatar: false
 toc: true
 mathjax: false
