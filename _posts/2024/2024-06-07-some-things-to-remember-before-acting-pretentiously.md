@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Some Things to Remember Before Acting Pretentiously
-subtitle: Plus a few personal thoughts on the value humility
+subtitle: And a few personal thoughts on the value of sincere humility
 tags: career
 description: |
-  TODO
+  A few days ago, I had a conversation about my ambitions for the future. At one point, I mentioned that I would like to achieve something remarkable and gain public recognition for it. In retrospect, my answer was quite pretentious. After reflecting deeply on this topic, I realized that what truly drives me is the desire to help and inspire others so they can achieve great things. This blog post lists all the thoughts that crossed my mind as I came to this conclusion.
 keywords:
   - job interview advice
   - career advice
@@ -18,18 +18,18 @@ toc: true
 mathjax: false
 date: 2024/06/07
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 A few days ago, I was asked: _"Where do you see yourself in 10 or 20 years?"_
 I replied:
-_"I would like to get some sort of recognition for my contributions... maybe to be known as an expert in something, someone who is consulted and listened to before important decisions are made in that area."_
-Now that I think about it, my answer was both bold and pretentious.
-But things then went even worse.
-I was asked right afterward:
+_"I would like to get some sort of recognition for my contributions... maybe to be known as an expert in something, someone who is consulted and listened to before important decisions are made."_
+Now that I think about it, I realize my answer was both bold and pretentious.
+But then things got even worse. 
+Immediately after, I was asked:
 _"So, what do you really want? Is it the act of achieving something extraordinary (like winning the Nobel Prize), or the recognition that comes with it?"_
 My answer was something like the following:
-_"It's the fact of overcoming challenges that brings me joy. For example, I don't care about the number of paper citations, but I would like to know that I did something remarkable, and it's great when others recognize my achievements."_
+_"It's the fact of overcoming challenges that brings me joy. For example, I don't care about the number of paper citations I have, but I would like to know that I did something remarkable, and it's great when others recognize my achievements."_
 In retrospect, what such a pretentious answer that was!
 What the hell?
 Seeking for "recognition" is clearly a selfish goal.
