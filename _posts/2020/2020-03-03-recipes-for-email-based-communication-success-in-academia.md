@@ -2,7 +2,7 @@
 layout: post
 title:  Recipes for Effective Academic Emailing
 subtitle: A template-based approach
-tags: career
+tags: sarcasm
 keywords: communication, email
 image: ../img/posts/2020/word_cloud_cover.jpg
 share-img: ../img/posts/2020/word_cloud_cover.jpg
