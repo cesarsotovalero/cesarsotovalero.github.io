@@ -25,18 +25,21 @@ published: false
 [//]: # (The benefits of solving this problem are raising awareness about the risks associated with compromised tools and encouraging secure development practices. )
 [//]: # (The emotion I'm generating is curiosity and caution.)
 
-Let me ask: Would you trust a cracked version of Adobe Photoshop downloaded from a random website?
-I hope your answer is "no."
-But what if I ask you instead about the reliability of a financial transaction processed by your bank's mobile app?
-You probably do believe that the payment will be processed securely.
-Certainly, our sense of "trust" in a software application dramatically changes depending on its origins and the reputation of its distributor.
-Now, what if I tell you that there exists a proof that no matter the what the software origin is, you should never trust it?
+Let me ask: 
+Would you trust a cracked version of [Adobe Photoshop](https://en.wikipedia.org/wiki/Adobe_Photoshop) downloaded from a random website?
+I hope your answer is a radical "no."
+But what if I ask you instead:
+Do you trust the latest financial transaction processed by your bank's mobile app?
+You probably do believe that your payment will be processed securely.
+Certainly, our sense of "trust" in a software application varies significantly depending on its origins, and on the reputation of its distributor.
+Now, what if I tell you that there exists certain "proof" that **no matter the what the software origin is, you should never trust it**?
 This is, in essence, what Ken Thompson claimed during his Turing Award lecture, in 1984.
-In his lecture "Reflections on Trusting Trust," Thompson demonstrated that it is possible to insert a backdoor into a compiler that would propagate itself invisibly into all programs compiled with it.
-This backdoor could then modify the compiler to insert the backdoor into future compilers, creating a self-replicating chain of compromised software.
-His proof of concept, known as the "Trojan Horse compiler," highlights the fundamental issue of trust in software development, independent of the software's origin or reputation.
-In this post, I'll revisit Thompson's proof of distrust, 40 years later.
-My goal is to reflect on the transcendence of his message, digging into the implications for software security and the challenges it poses to the security of the software development process as we know it today.
+In his article "Reflections on Trusting Trust," Thompson demonstrated that you cannot trust code that you did not totally create yourself.
+His proof was based on the idea that it is possible to insert a [backdoor](https://en.wikipedia.org/wiki/Backdoor_(computing)) into a compiler that would propagate itself invisibly into all programs compiled with it (including next versions of the same compiler).
+Thus, creating a self-replicating chain of compromised software applications.
+The "Trojan Horse compiler," as he call it, highlights the fundamental issue of trust in software development, independent of the software's origin or reputation of its vendor.
+In this post, I'll revisit this famous proof of distrust in software development, 40 years later.
+My goal is to reflect on the transcendence of its core message and dig a little bit into the implications it poses to the security of the software development landscape as we know it today.
 Let's dig in.
 
 <figure class="jb_picture">
@@ -105,7 +108,6 @@ public class ModifiedCompiler {
         }
         // Continue with the normal compilation process
     }
-
     private String injectMaliciousCode(String sourceCode, String maliciousCode) {
         // Insert the malicious code into the main method
         int mainMethodIndex = sourceCode.indexOf("public static void main");
@@ -197,6 +199,13 @@ For its implications, "Reflections on Trusting Trust" could be one of the most b
 # Conclusions
 
 Concludes with thoughts on the continuing relevance of trust in software development and the ongoing efforts to secure software against sophisticated attacks.
+
+<figure class="jb_picture">
+  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2023/2023-12-27/kent-thompson-moral.png alt: "Kent Thompson's moral" %}
+  <figcaption class="stroke"> 
+    Say again: "You can't trust code that you did not totally create yourself."
+  </figcaption>
+</figure>
 
 # External Resources
 
