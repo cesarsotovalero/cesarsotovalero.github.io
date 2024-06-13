@@ -44,12 +44,12 @@ I've served as a committee member for the following conferences:
 Also, my name is listed in the acknowledgments of the following papers:
 
 - [EOLANG and &phi;-calculus](https://arxiv.org/abs/2111.13384), 2021
-
  
 # Thesis Supervisor
 
 I've supervised Master and Bachelor students in the following theses:
 
+- "Detecting Semantic Changes in Dependency Updates Using Dynamic Analysis," Leonard Sebastian Husmann, **Master Thesis**, KTH 2024 (ongoing)
 - "Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests," Jacob Jernestål, **Bachelor Thesis**, Mid Sweden University 2024 (ongoing)
 - "The State of Software Diversity in the Software Supply Chain of Ethereum Clients," Noak Jönsson, **Bachelor Thesis**, KTH 2022 [PDF](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf)
 - "Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes," Martin Sköld, **Master Thesis**, KTH 2020 [PDF](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf)
