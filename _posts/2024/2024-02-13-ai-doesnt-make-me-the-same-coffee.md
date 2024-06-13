@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Doesn’t Make Me the Same Coffee
+title: AI Doesn't Make Me the Same Coffee
 subtitle: And it doesn't understand wine either
 tags: ai
 description: |
@@ -156,7 +156,7 @@ Or consider an AI deciding who goes to jail and who doesn't.
 It might make the right decision in 99.9999% of cases, but what happens when it's wrong?
 It's concerning, and yet, it seems inevitable because it will be still better than human made decisions.
 
-On the other hand, the things that we thought were inherently human, like art and creativity, are now succesfuly generated using AI.
+On the other hand, the things that we thought were inherently human, like art and creativity, are now successfully generated using AI.
 If in doubt, just look at the stuff created by [Midjourney](https://www.midjourney.com/home).
 Very soon there will see AI creating 3D objects, full movies, and even entire virtual worlds.
 Take it or leave it, our civilization will never be the same. 

@@ -152,7 +152,7 @@ You can access the Linux file system from Windows via `\\wsl$\<distro-name>` in 
 
 To enable WSL on Windows [follow the official instructions](https://learn.microsoft.com/en-us/windows/wsl/install-manual):
 
-1. Press `Win + X`, then select "Windows PowerShell Admin)."
+1. Press `Win + X`, then select "Windows PowerShell Admin."
 2. Enable WSL feature by running: `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
 3. Enable virtual machine feature by running: `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
 4. Set WSL2 as the default version: `sh wsl --set-default-version 2` and restart the PC.
@@ -173,7 +173,7 @@ wsl --list --verbose
 
 [Scoop](https://scoop.sh/) is a command-line package manager for Windows that simplifies the process of installing, updating, and managing software applications.
 Think of it as the Windows' alternative to [homebrew](https://brew.sh/) or [apt-get](https://en.wikipedia.org/wiki/APT_(software))
-I think that Scoop is much better and than the default Windows installer because it's CLI friendly.
+I think that Scoop is much better than the default Windows installer because it's CLI friendly.
 It downloads and manages packages in a portable way, which means that it's not required to have admin rights to install anything. 
 Once installed, Scoop places the applications in `~\scoop`. 
 
@@ -282,6 +282,6 @@ Let me know in the comments below if you know about any other tool that I should
 
 # Footnotes
 
-[^1]: Windows is the darling of most companies companies (specially non-tech), much like fax machines and paperweights. Personally, I think that pro developers don't use it. Instead, the crème de la crème prefer Unix-based systems like [Arch Linux](https://archlinux.org/), or [macOS](https://en.wikipedia.org/wiki/MacOS) when they want to prioritize high-quality (i.e., Apple-made) hardware.
+[^1]: Windows is the darling of most companies (specially non-tech), much like printers and paperweights. Personally, I think that true pro developers try to stay away from Windows. Instead, the crème de la crème prefer Unix-based systems like [Arch Linux](https://archlinux.org/), or [macOS](https://en.wikipedia.org/wiki/MacOS) when they want to prioritize high-quality (i.e., Apple-made) hardware.
 
-[^2]: The last time I used Windows was during the Windows XP era (very good OS btw), that was back when dinosaurs roamed the Earth and dial-up internet was all the rage. Since then, I upgraded my dev experience to Unix-based distros (mostly Ubuntu), and recently, I finally saved enough gold ingots to join the cult of Mac and macOS.
+[^2]: The last time I used Windows was during the Windows XP era (one of the best versions of Windows ever made I think), that was back when dinosaurs roamed the Earth and dial-up internet was all the rage. Since then, I upgraded my dev experience to Unix-based distros (mostly Ubuntu), and recently, I finally saved enough gold ingots to join the cult of Mac and macOS.
