@@ -188,7 +188,6 @@ form.wj-contact input[type="submit"]:hover {
 
 [^2]: See my list of [mining software repositories resources](./mining-software-repositories-resources.html).
 
-[^3]: Check out my result at [Midnattsloppet 2022](../files/certificates/Midnattsloppet_Diplom_2022.pdf), and [:earth_americas: Blodomloppet 2023](https://www.racetimer.se/sv/runner/show/8204163?layout=blodomloppet&race_id=5627).
+[^3]: Check out my result at [Midnattsloppet 2022](../files/certificates/Midnattsloppet_Diplom_2022.pdf), [:earth_americas: Blodomloppet 2023](https://www.racetimer.se/sv/runner/show/8204163?layout=blodomloppet&race_id=5627), and [:earth_americas: Blodomloppet 2024](https://www.racetimer.se/sv/runner/show/8704624?layout=racetimer&race_id=6034).
 
 [^4]: My research work was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.
-
