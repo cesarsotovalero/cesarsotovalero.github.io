@@ -59,7 +59,7 @@ Seriously.
 - Remember the good old days when the whole family would sit together at the same table to celebrate the New Year. We played dominoes and listened to music from cassettes and later from CD-ROMs. Those were probably the happiest moments of your life, and you didn’t even know it. _It’s likely that you’re living the best moment of your life right now without even realizing it._
 - Remember your hometown: there were almost no paved roads, and people used horses as a means of transportation. That was great because the streets were safer, so you could play baseball in the streets with other kids. _There is always some way to turn our limitations into opportunities._
 
-# Parents
+# Family
 
 - Remember that your dad harvested rice and fed pigs with his own hands for many years so that you could have the best possible food served on your plate every day. He was a great civil engineer, but he spent more than half of his lifetime just searching for food, to provide for the family. Times were difficult back then. _You should do something worthwhile with all the free time you have available now._
 - Remember how many people your mom helped and how hard she worked, cleaning your non-disposable diapers at 5:00 every single day. She was a generous pharmacist, making, collecting, and giving medicines to those in need. _You are living such an easy life compared to your parents, and yet, you are not giving back to others in the same proportion._
@@ -90,7 +90,7 @@ Seriously.
 - Remember that when you were a child, you once tried to become good at playing chess but soon realized that you were not smart enough for it. You have never been smart enough at any kind of mind game (or any game at all), and you probably never will be. No big deal, though. _Fortunately, the majority of people don’t have any special talent, they are as clumsy as you, so it's better to lower down personal expectations._
 - Remember that your parents never knew about the internet, never used a smartphone, and certainly had no idea what AI, Bitcoin, or even a PhD is. All of these things were invented quite recently, and for your parents, life was simpler. But they were happy in their way. _Perhaps simplicity is a fundamental component of happiness._
 
-# Lessons
+# Challenges
 
 - Remember how lucky you were to be able to skip the mandatory one-year military service and spend a year working in a library instead. _You were fortunate, but many others have sadly wasted so much time on such unproductive things._
 - Remember that the less popular students later became the most successful adults. You’re biased by social conventions and sometimes become blind to perceive reality in full. Popularity is temporary. _Quite often, you act as an insignificant Sapiens trying to fit in with the masses._
