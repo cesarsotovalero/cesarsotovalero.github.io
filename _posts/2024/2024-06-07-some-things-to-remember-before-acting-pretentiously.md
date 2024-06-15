@@ -116,7 +116,7 @@ Seriously.
 
 # Opportunities
 
-- Remember that it was only after (and never before) you worked really hard to get out of the dictatorship that real opportunities arose. You shouldn’t waste time and energy complaining about what you cannot control. _Taking action is absolutely necessary to make things happen._
+- Remember that it was only after (and never before) you worked really hard to get out of [the dictatorship](../blog/the-cuban-revolution-explained.html) that real opportunities arose. You shouldn’t waste time and energy complaining about what you cannot control. _Taking action is absolutely necessary to make things happen._
 - Remember how lucky you were to get that PhD student position. You worked hard to get there, yes, but ultimately it was a mix of luck and the help of other people that led you there. _Especially, do not forget about all those who were much more talented than you but weren’t so lucky._
 - Remember the value of having a strong supportive network. The only way that progress is made in life is by involving others. Be kind to everyone, as people change very quickly. You never know who might become an important person who could assist you in the future. _Build strong connections and be patient, let serendipity to work its magic._
 
@@ -145,14 +145,13 @@ Seriously.
 - Remember that right now there is so much suffering and injustice in the world. You’re very lucky to be far from the terrible things going on out there, such as wars and military dictatorships. You’re living a happy life in a great country with freedom and human rights. _You have so much now, don’t forget that._
 - Remember that in the end, you will not remember your failures at all. Only the successes will be remembered. Only the happy times with great people will be remembered. _There are always people involved in your good memories, so think about it._
 
-
 ---
 
 <p style="text-align: center;">TO BE CONTINUED THE NEXT TIME I'M PRETENTIOUS</p>
 
 # Footnotes
 
-[^1]: BTW, I don’t believe that throwing away shiny rocks is a good way to solve the fundamental problems of humanity. Instead, I support the idea of increasing opportunities and creating a system that rewards good behavior. I also believe that the higher a person is in the social hierarchy, the more chances s/he has to create opportunities for others and make a larger impact.
+[^1]: BTW, I don’t believe that throwing away shiny rocks is a good way to solve the fundamental problems of humanity. Instead, I support [effective altruism](https://www.effectivealtruism.org/), increasing opportunities, and creating a system that rewards good behavior. I also believe that the higher a person is in the social hierarchy, the more chances s/he has to create opportunities for others and make a larger impact. Thus, personal development is a driver for good.
 
 [^2]: I strongly believe in the possibilities of science as a life/s changer. Right now, there are many opportunities in academic research for people around the world to change their lives. In fact, pursuing academic research has changed my life! 
 
