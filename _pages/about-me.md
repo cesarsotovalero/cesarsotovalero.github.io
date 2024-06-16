@@ -26,11 +26,19 @@ Here is my minimalistic [resumé](../files/CV/cv.pdf).
 
 # Career
 
-I'd a PhD in Computer Science in the Department of [Software and Computer Systems](https://www.kth.se/cs/scs) at [KTH Royal Institute of Technology](https://kth.se), supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/) (I graduated in 2023).[^4]
+<aside class="quote">
+    <em>“{% include university_ranking.html %}”</em>
+    <cite><br> ― <a href="https://www.topuniversities.com/universities/kth-royal-institute-technology">QS Rank</a></cite>
+</aside>
+
+I'd a PhD in Computer Science in the Department of [Software and Computer Systems](https://www.kth.se/cs/scs) at [KTH Royal Institute of Technology](https://kth.se).
+My research was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/).
+I graduated in 2023.[^4]
+
+
+My PhD was about software debloating,[^1] here's my [thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf) and [public defense](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw).
 
 {% youtube Ub684G_aM5Q %}
-
-My PhD was about software debloating,[^1] check out my [thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf) and [public defense](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw).
 
 Besides my PhD topic, I do knowledge-seeking software engineering research.
 For example, by extracting useful information from data stored in software repositories.[^2] 
@@ -40,7 +48,7 @@ I'm keen to perform research on software technology which:
 
 1. Provide **actionable insights** to researchers and practitioners about how modern software is currently being developed and maintained.
 2. Produce **practical tools** for developers to improve software quality.
-3. Disrupt the status quo of software engineering **methodologies** or practices.
+3. Disrupt the _status quo_ of software engineering **latest practices**.
 
 I'm always open to work with researchers and supervise students in these areas.
 If you are interested in collaborating with me, have a look at my list of [research topics](./collaborations.html).

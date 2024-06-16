@@ -1,0 +1,35 @@
+name: Update University Ranking
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # Runs at midnight on the 1st of every month
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  update-ranking:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 pyyaml
+
+      - name: Run update script
+        run: python scripts/update_kth_ranking.py
+
+      - name: Commit changes
+        run: |
+          git add _data/university_ranking.yml
+          git commit -m 'Update ranking of KTH university'
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
