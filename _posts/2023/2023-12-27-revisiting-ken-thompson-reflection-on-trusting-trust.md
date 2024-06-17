@@ -26,20 +26,21 @@ published: false
 [//]: # (The emotion I'm generating is curiosity and caution.)
 
 Let me ask: 
-Would you trust a cracked version of [Adobe Photoshop](https://en.wikipedia.org/wiki/Adobe_Photoshop) downloaded from a random website?
+_Would you trust a cracked version of [Adobe Photoshop](https://en.wikipedia.org/wiki/Adobe_Photoshop) downloaded from a random website?_
 I hope your answer is a radical "no."
 But what if I ask you instead:
-Do you trust the latest financial transaction processed by your bank's mobile app?
+_Do you trust the latest financial transaction processed by your bank's mobile app?_
 You probably do believe that your payment will be processed securely.
 Certainly, our sense of "trust" in a software application varies significantly depending on its origins, and on the reputation of its distributor.
-Now, what if I tell you that there exists certain "proof" that **no matter the what the software origin is, you should never trust it**?
+Now, what if I tell you that there exists certain "proof" that **no matter what the software origin is, you should never trust it?**
 This is, in essence, what Ken Thompson claimed during his Turing Award lecture, in 1984.
 In his article "Reflections on Trusting Trust," Thompson demonstrated that you cannot trust code that you did not totally create yourself.
-His proof was based on the idea that it is possible to insert a [backdoor](https://en.wikipedia.org/wiki/Backdoor_(computing)) into a compiler that would propagate itself invisibly into all programs compiled with it (including next versions of the same compiler).
+His proof was based on the idea that it is possible to insert a [backdoor](https://en.wikipedia.org/wiki/Backdoor_(computing)) into a compiler that would propagate itself invisibly into all programs compiled with it (including the next versions of the same compiler).
 Thus, creating a self-replicating chain of compromised software applications.
-The "Trojan Horse compiler," as he call it, highlights the fundamental issue of trust in software development, independent of the software's origin or reputation of its vendor.
-In this post, I'll revisit this famous proof of distrust in software development, 40 years later.
-My goal is to reflect on the transcendence of its core message and dig a little bit into the implications it poses to the security of the software development landscape as we know it today.
+The "Trojan Horse compiler," as he called it, highlights the fundamental issue of trust in software development, independent of the security measures or reputation of software vendors.
+In this post, I'll revisit Thompson's famous proof of distrust, 40 years later.
+My goal is to reflect on the transcendence of its core message.
+I'll dive into the implications it poses to [the software supply chain landscape](../blog/the-software-supply-chain.html) as it is today.
 Let's dig in.
 
 <figure class="jb_picture">
@@ -53,24 +54,98 @@ Let's dig in.
 
 {% badge /img/badges/first-page-of-reflections-on-trusting-trust.png 140 https://dl.acm.org/doi/10.1145/358198.358210 %}
 
-[Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) is a prolific Computer Scientist known for being one of the original creators of the UNIX operating system, along with [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) in the early 70s.
-He created the B programming language, a [precursor](https://www.bell-labs.com/usr/dmr/www/chist.html) to the C programming language.
-Thompson and Ritchie received the Turing Award in 1983 "for their development of generic operating systems theory and specifically for the implementation of the UNIX operating system."
+[Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) is a prolific Computer Scientist known for being one of the original creators of the UNIX operating system, together with [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) in the early 70s.
+He created the [B programming language](https://en.wikipedia.org/wiki/B_(programming_language)), a [precursor](https://www.bell-labs.com/usr/dmr/www/chist.html) of C.
+[Thompson and Ritchie received the Turing Award](https://amturing.acm.org/award_winners/thompson_4588371.cfm) in 1983 "for their development of generic operating systems theory and specifically for the implementation of the UNIX operating system."
+UNIX was the foundation of many modern operating systems, including Linux, macOS, and Android.
 
-## The Concept of Self-Replicating Code
+In [his Turing Award lecture](https://dl.acm.org/doi/10.1145/358198.358210 ), Thompson presented a chilling idea that has become one of the most famous in the history of cybersecurity.
+He described a theoretical attack that could be carried out by modifying a compiler to insert a backdoor into the UNIX `login` command.
+The core idea is that the compromised compiler is able to recognise what it is compiling, and is therefore able to insert itself back into the compiler even when that backdoor is no longer within its source code.
+I know it sound a bit confusing, so let's break it down from the beginning.
 
-Discusses the concept introduced by Thompson where a compiler can be modified to insert malicious code during the compilation process without altering the source code.
+## Bootstrapping Compiler
 
-Creating a self-replicating code example in Java, especially one that mimics the Trojan Horse compiler concept described by Ken Thompson, is a complex and potentially dangerous exercise. However, we can outline a simplified, conceptual demonstration for educational purposes. The example will illustrate how a modified compiler could inject malicious behavior into a Java program.
+ A [compiler](https://en.wikipedia.org/wiki/Compiler) is a software that translates source code written in a high-level programming language that humans can read into highly optimized [machine code](https://en.wikipedia.org/wiki/Machine_code) that computers can execute directly.
+Compilers are the backbone of software development.
+Note that compilers are software too.
+This means that they are also written in a programming language, thus to create a compiler one has to use another compiler.
 
-### Step-by-Step Example
+Creating the first version of a compiler is an intriguing process, referred to as [bootstrapping compiler](https://en.wikipedia.org/wiki/Bootstrapping_(compilers)).
+The idea is to incrementally develop the full compiler, starting from a very basic one, until a full-fledged, self-hosting compiler is created.
+For example, in the case of the C programming language, the first version of the compiler was written in a basic assembly language which can understand a minimal subset of C.
+Then, the initial compiler was used to write a slightly more advanced C compiler using the minimal subset of C that the initial compiler can handle.
+This process is repeated until a full C compiler is created that can compile itself.
+This full C compiler can [compile its own source code](http://sens.cse.msu.edu/Software/Telelogic-3.5/locale/english/help/htmlhlp/comptheory.html), as well as any other C programs.
+The figure below illustrates the process of creating such a self-hosting compiler.
 
-#### Step 1: Understand the Concept
-The basic idea is that a compiler (javac) can be modified to insert malicious code into any program it compiles, even if the original source code is clean. This requires:
+```mermaid
+%%{init: {'theme':'base'}}%%
+graph TB
+    P1["👨‍💻 Very smart person/s"] --> |"create"| A["1️⃣ Initial C compiler in Assembly (C1)"]
+    A --> |"compile"| B["2️⃣ Minimal C compiler (C2)"]
+    B --> |"compile"| C["3️⃣ Intermediate C compiler (C3)"]
+    C --> |"compile"| D["4️⃣ Full C compiler (C4)"]
+    D --> |"full compiler can compile itself"|D 
+    D --> |"use"| P2["👩‍💻 No so smart person (me) uses the full compiler"]
+```
+
+What is interesting in the previous figure is that the full C compiler (C4), which can compile itself as well as any other C programs, keeps some kind of "memory" of the previous compilers because it shares part of their implementation. 
+So the question is: _What if one of the previous compilers, such as the initial C1, had a backdoor?_ 
+According to Thompson, this would imply that the backdoor could be perpetuated across all subsequent versions of the compiler.
+
+## The Trojan Horse Compiler
+
+If a backdoor is inserted into the source code of a compiler, it can be detected by inspecting the source code.
+However, Thompson's idea was to insert a backdoor into the compiler itself, not into its source code.
+In such a way that even if the source code of C4 appears to be clean, the backdoor can be reinserted during the compilation process through the use of [self-replicating code](https://en.wikipedia.org/wiki/Quine_(computing)).
+The figure below illustrates Thomson's idea of creating a self-replicating compiler with a backdoor.
+
+```mermaid
+%%{init: {'theme':'base'}}%%
+graph TD
+    
+    B["🔧 Original Compiler (C1)"]
+    M["😈 Thomson"] -->|inserts backdoor| B
+    B -->|includes self-replicating code| D["🛠️ New Compiler (C2)"]
+    D --> |compiles into| F["🐍 Modified Compiler with Backdoor (C3)"]
+    F --> |application binaries|G["📦 Compiled Applications with Backdoor"]
+
+    H["👨 User"] -->|writes| S["📄 Application Source Code"]
+    S -->|compiles using| F
+
+    subgraph " "
+        direction TB
+        B
+        D
+        F
+    end
+    
+    classDef compilerStyle fill:#f9f,stroke:#333,stroke-width:1px;
+    class B,D,F compilerStyle;
+```
+
+The backdoor is inserted into the original compiler (C1) and then propagated to all subsequent versions of the compiler, C1 to C2 to C3.
+When a user compiles an application using the latest version of the compiler (C3), the backdoor is inserted into the compiled application binaries because the previous versions of the compiler (C1 and C2) contained executable code that could insert the backdoor during the compilation process.
+This means that the backdoor is present in all applications compiled with the compromised compiler, even if the source code of the applications is clean.
+
+Let's dive more into this with an illustrative example.
+
+## Self-Replicating Program (Quine)
+
+It is possible to write a program that replicates itself? 
+The answer is yes, and it is called a [Quine](https://en.wikipedia.org/wiki/Quine_(computing)).
+A Quine is a computer program that takes no input and produces a copy of its own source code as its only output.
+Quines are possible in any [Turing-complete programming language](https://en.wikipedia.org/wiki/Turing_completeness), as a direct consequence of [Kleene's recursion theorem](https://en.wikipedia.org/wiki/Kleene%27s_recursion_theorem).
+
+Let's create an example of a self-replicating program in Java to illustrate how a modified compiler could inject malicious behavior into a Java program.
+This is the core idea behind the backdoor compiler concept described by Thompson.
+The basic idea is that a compiler (`javac`) can be modified to insert malicious code into any program it compiles, even if the original source code is clean.
+
+This requires:
 1. A modified version of the Java compiler (javac).
 2. A demonstration Java program that shows the injected behavior.
 
-#### Step 2: Create a Simple Java Program
 Let's start with a simple Java program that prints "Hello, World!".
 
 ```java
@@ -82,14 +157,13 @@ public class HelloWorld {
 }
 ```
 
-#### Step 3: Modify the Java Compiler
-This step involves modifying the javac compiler to inject malicious code. We'll demonstrate this conceptually, as modifying a real compiler is both complex and ethically questionable without proper authorization.
+Now the malicious actor modifying the javac compiler to inject malicious code. 
 
-1. **Identify the Compilation Process:**
-  - Find the part of the javac source code that handles the generation of the bytecode for the `main` method.
+This involves two steps:
 
-2. **Inject Malicious Code:**
-  - Modify the compiler to insert additional instructions that execute malicious behavior, such as printing an unauthorized message or performing an unexpected action.
+1. Find the part of the javac source code that handles the generation of the bytecode for the `main` method.
+
+2.  Modify the compiler to insert additional instructions that execute malicious behavior, such as printing an unauthorized message or performing an unexpected action.
 
 Conceptual pseudo-code for the modified compiler:
 
@@ -117,14 +191,13 @@ public class ModifiedCompiler {
 }
 ```
 
-#### Step 4: Compile the Java Program with the Modified Compiler
-Assume we have the modified compiler in place. Now we compile `HelloWorld.java` using this compiler.
+Assuming we have the modified compiler in place. 
+Now we compile `HelloWorld.java` using this compiler.
 
 ```bash
 javac -cp . ModifiedCompiler HelloWorld.java
 ```
 
-#### Step 5: Run the Compiled Program
 After compiling, running the program would exhibit the injected behavior.
 
 ```bash
@@ -138,21 +211,9 @@ Hello, World!
 Injected by malicious compiler!
 ```
 
-### Important Considerations
-1. **Ethics and Legality:** Modifying compilers to inject code is unethical and illegal without proper authorization and context. This example is purely educational.
-2. **Complexity:** A real-world implementation of this concept would be significantly more complex, involving deep understanding of compiler design and bytecode manipulation.
-3. **Security Practices:** This example underscores the importance of secure compiler development and rigorous code audits to prevent such vulnerabilities.
+A real-world implementation of this concept would be significantly more complex, involving deep understanding of compiler design and bytecode manipulation.
 
-### Conclusion
-This simplified example demonstrates the concept of self-replicating code and the Trojan Horse compiler. It highlights the potential risks associated with trusting software tools and emphasizes the need for secure development practices and vigilant code review processes.
 
-## Trojan Horse Compiler
-
-Explains how Thompson demonstrated a Trojan Horse attack by embedding a backdoor in the Unix login command that could propagate itself invisibly via the compiler.
-
-## Example
-
-Illustrates the attack by showing how the compiler can be modified to insert a backdoor in the login command, which would then propagate itself to the compiler.
 
 # Implications
 
@@ -198,12 +259,18 @@ For its implications, "Reflections on Trusting Trust" could be one of the most b
 
 # Conclusions
 
+It highlights the potential risks associated with trusting software tools and emphasizes the need for secure development practices and vigilant code review processes.
+
+This example underscores the importance of secure compiler development and rigorous code audits to prevent such vulnerabilities.
+
 Concludes with thoughts on the continuing relevance of trust in software development and the ongoing efforts to secure software against sophisticated attacks.
 
+Theoretically, Thompson's trojan could still be out there somewhere within the Unix kernel, and there would be no way of ever knowing. Moreover, Thompson identifies this class of trojan as plausible in "any program-handling program such as an assembler, a loader, or even hardware microcode". Even if you were to go and download the GCC source code and build your own compiler from source, you must do so with a potentially compromised version of the compiler. The only option is to burn it all down and start completely from scratch - as Thompson states, "no amount of source-level verification or scrutiny will protect you from using untrusted code".
+
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2023/2023-12-27/kent-thompson-moral.png alt: "Kent Thompson's moral" %}
+  {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2023/2023-12-27/kent-thompson-moral.png alt: "Kent Thompson's moral" %}
   <figcaption class="stroke"> 
-    Say again: "You can't trust code that you did not totally create yourself."
+    Let's say it again: "You can't trust code that you did not totally create yourself."
   </figcaption>
 </figure>
 
@@ -211,6 +278,8 @@ Concludes with thoughts on the continuing relevance of trust in software develop
 
 - [Running the “Reflections on Trusting Trust” Compiler](https://research.swtch.com/nih)
 - [Open Source Supply Chain Security at Google](https://research.swtch.com/acmscored)
+- https://youtu.be/SJ7lOus1FzQ?si=8t9RBRR671xRX_Rn
+- [Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)
 
 # Footnotes
 

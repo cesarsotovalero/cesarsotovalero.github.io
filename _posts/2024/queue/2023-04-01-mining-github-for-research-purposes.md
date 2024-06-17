@@ -49,6 +49,8 @@ Clickhouse also has a large repo of sample queries. I didn't previously know tha
 
 # Further Reading
 
+- [Ethics in the mining of software repositories](https://doi.org/10.1007/s10664-021-10057-7)
+
 
 
 # Footnotes
