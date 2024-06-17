@@ -25,8 +25,8 @@ Let me ask:
 _Would you trust a cracked version of [Adobe Photoshop](https://en.wikipedia.org/wiki/Adobe_Photoshop) downloaded from a random website?_
 I hope your answer is a "no."
 But what if I ask you instead:
-_Do you trust that your latest financial transaction will processed correcly by your bank's mobile app?_
-You probably believe that your payment will be processed securely.
+_Do you trust that your latest purchase will be processed correctly by your bank's mobile app?_
+You probably believe that payments systems are more secure than cracked apps.
 Certainly, our sense of _trust_ in a software application varies significantly depending on its origins and the reputation of its distributor.
 Now, what if I told you that there exists certain "proof" that **no matter what the software's origin is, you should never trust it**.
 This is, in essence, what Ken Thompson claimed during his Turing Award lecture in 1984.
