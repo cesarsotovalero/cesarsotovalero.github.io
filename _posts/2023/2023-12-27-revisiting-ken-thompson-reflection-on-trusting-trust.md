@@ -23,19 +23,19 @@ published: true
 
 Let me ask:
 _Would you trust a cracked version of [Adobe Photoshop](https://en.wikipedia.org/wiki/Adobe_Photoshop) downloaded from a random website?_
-I hope your answer is a resounding "no."
-But what if I asked you instead:
-_Do you trust the latest financial transaction processed by your bank's mobile app?_
+I hope your answer is a "no."
+But what if I aske you instead:
+_Do you trust that your latest financial transaction will processed correcly by your bank's mobile app?_
 You probably believe that your payment will be processed securely.
-Certainly, our sense of "trust" in a software application varies significantly depending on its origins and the reputation of its distributor.
+Certainly, our sense of _trust_ in a software application varies significantly depending on its origins and the reputation of its distributor.
 Now, what if I told you that there exists certain "proof" that **no matter what the software's origin is, you should never trust it**.
 This is, in essence, what Ken Thompson claimed during his Turing Award lecture in 1984.
-In his article "Reflections on Trusting Trust," Thompson demonstrated that it is possible to insert a [backdoor](https://en.wikipedia.org/wiki/Backdoor_(computing)) into a compiler that would propagate itself invisibly into all programs compiled with it (including the next versions of the same compiler).
+In his article "Reflections on Trusting Trust," Thompson demonstrated that it is possible to insert a [backdoor](https://en.wikipedia.org/wiki/Backdoor_(computing)) into a compiler, in a way that it could propagate itself invisibly embedded into all programs compiled with it (including the next versions of the same compiler).
 Thus, creating a self-replicating chain of compromised software applications.
 The "Trojan Horse compiler," as he called it, highlights the fundamental issue of trust in software development, independent of the security measures or reputation of software vendors.
 In this post, I'll revisit Thompson's famous proof of distrust, 40 years later.
 My goal is to reflect on the transcendence of its core message.
-I'll dive into the implications it poses for the [software supply chain](../blog/the-software-supply-chain.html) landscape as it is today.
+I'll dive into what is it all about, the implications it poses from a security perspective, and how it could change the perception we have about modern software development practices.
 Let's dig in.
 
 
@@ -87,8 +87,8 @@ graph TB
     D --> |"use"| P2["👩‍💻 No so smart person (me) uses the full compiler"]
 ```
 
-What is interesting in the previous figure is that the full C compiler (C4), which can compile itself as well as any other C programs, keeps some kind of "memory" of the previous compilers because it shares part of their implementation. 
-So the question is: _What if one of the previous compilers, such as the initial C1, had a backdoor?_ 
+What is interesting in the previous figure is that the full C compiler (`C4`), which can compile itself as well as any other C programs, keeps some kind of "memory" of the previous compilers because it shares part of their implementation. 
+So the question is: _What if one of the previous compilers, such as the initial `C1`, had a backdoor?_ 
 According to Thompson, this would imply that the backdoor could be perpetuated across all subsequent versions of the compiler.
 
 ## The Trojan Horse Compiler
@@ -96,7 +96,7 @@ According to Thompson, this would imply that the backdoor could be perpetuated a
 As we saw before, compilers are sofware artifacts written in a programming languague.
 If a backdoor is inserted into the source code of a compiler, it can be detected by inspecting the source code.
 However, Thompson's idea was to insert a backdoor into the compiler executable itself, not into its source code.
-The trick was doing it in such a way that even if the source code of C4 appears to be clean, the backdoor can be reinserted during the compilation process through the use of [self-replicating code](https://en.wikipedia.org/wiki/Quine_(computing)).
+The trick was doing it in such a way that even if the source code of `C4` appears to be clean, the backdoor can be reinserted during the compilation process through the use of [self-replicating code](https://en.wikipedia.org/wiki/Quine_(computing)).
 
 > "The key part of Thompson's genius was to make the compiler recognize when it was compiling a new version of itself (i.e., compiling the source code of the compiler)."
 
@@ -151,10 +151,9 @@ This requires:
 1. A modified version of the `javac`.
 2. An example of Java program that shows the injected behavior.
 
-Let's start with the typical "Hello, World!" program:
+Let's start with the typical "Hello, World!" Java program:
 
 {% highlight java linenos %}
-// HelloWorld.java
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -237,7 +236,7 @@ The backdoor would perpetuate itself, as the compiler would continue to insert t
 
 # Implications
 
-Cybersecurity threats are everywhere these days. 
+Cybersecurity threats are [everywhere](https://www.enisa.europa.eu/topics/cyber-threats/threats-and-trends) these days. 
 From tech media to public new, we are constantly bombarded with reports of ransomware attacks[^1], data breaches, and other cyber threats. 
 As software complexity increases, so does the sophistication of these attacks. 
 Each new feature added to software can expand the attack surface, making security an ever-moving target.
@@ -246,15 +245,15 @@ In most discussions about cybersecurity I've seen, the focus is mostly on the ma
 The [software supply chain](../blog/the-software-supply-chain.html),[^3] in particular, has become a primary target for attackers.
 Large-scale attacks on software repositories and package managers are becoming treading because its scale and consequences. 
 
-Ken Thompson’s seminal 1984 Turing Award lecture forces us to ask deeper questions: 
+Ken Thompson’s seminal 1984 Turing Award lecture made us ask deep questions: 
 
 - _What if the threats are already embedded in the very tools we trust to build our software?_
 - _Can we truly trust the output of our favorite compiler?_
 
-Thompson’s demonstration reveals two hard truths:
+It reveals two hard truths:
 
-- Software tools themselves can be compromised in ways that are nearly undetectable through normal inspection methods.
-- Trust in software tools must extend beyond source code inspection to encompass the entire toolchain used to produce software. 
+- Software tools themselves can be compromised in ways that are nearly undetectable through rutinary inspection methods.
+- Trust in software tools must extend beyond source code analysis to encompass the entire toolchain used to produce software. 
 
 **Trust is a Problem:** Thompson's demonstration underscores that trust in software extends beyond the visible source code to the entire compilation process. The implications are clear: if the compiler or any other tool in the toolchain is compromised, every piece of software it produces is potentially compromised as well. This creates a nearly invisible security risk, as traditional inspection methods may not detect such deep-seated vulnerabilities.
 
