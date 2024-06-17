@@ -23,7 +23,7 @@ published: true
 
 Let me ask:
 _Would you trust a cracked version of [Adobe Photoshop](https://en.wikipedia.org/wiki/Adobe_Photoshop) downloaded from a random website?_
-I hope your answer is a "no."
+I hope your answer is a negative.
 But what if I ask you instead:
 _Do you trust that your latest purchase will be processed correctly by your bank's mobile app?_
 You probably believe that payments systems are more secure than cracked apps.
