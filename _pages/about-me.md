@@ -26,7 +26,7 @@ Here is my [resumé](../files/CV/cv.pdf).
 
 # Career
 
-I'd a PhD in Computer Science at [KTH Royal Institute of Technology](https://kth.se) ({% include university_ranking).html %}).
+I'd a PhD in Computer Science at [KTH Royal Institute of Technology](https://kth.se) ({% include university_ranking.html %}).
 My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/).
 I graduated in 2023.[^4]
 
