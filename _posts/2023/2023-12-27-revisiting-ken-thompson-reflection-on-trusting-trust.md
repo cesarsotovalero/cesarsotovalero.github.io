@@ -24,7 +24,7 @@ published: true
 Let me ask:
 _Would you trust a cracked version of [Adobe Photoshop](https://en.wikipedia.org/wiki/Adobe_Photoshop) downloaded from a random website?_
 I hope your answer is a "no."
-But what if I aske you instead:
+But what if I ask you instead:
 _Do you trust that your latest financial transaction will processed correcly by your bank's mobile app?_
 You probably believe that your payment will be processed securely.
 Certainly, our sense of _trust_ in a software application varies significantly depending on its origins and the reputation of its distributor.
