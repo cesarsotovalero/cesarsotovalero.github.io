@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How I Peer Review Research Papers
-subtitle: My reviewer flow, template, and tips
+subtitle: My reviewer flow, focused template, and personal tips
 tags: science
 description: |
   In this blog post, I share my experiences and personal approach when peer-reviewing research papers in the field of software engineering. My focus is on delivering good peer reviews, fast and effectively. I give my template and provide generalizable examples of good and bad reviews. After reading this post, as a reviewer, you will gain first-hand insight on how to give constructive feedback to paper's authors so that they could improve the quality of their research papers.
