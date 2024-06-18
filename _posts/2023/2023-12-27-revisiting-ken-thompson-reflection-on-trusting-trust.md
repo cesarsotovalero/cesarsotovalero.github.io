@@ -255,7 +255,7 @@ It reveals two hard truths:
 - Software tools themselves can be compromised in ways that are nearly undetectable through common inspection methods.
 - Trust in compilers and other software tools must extend beyond source code analysis to encompass the entire toolchain used to produce them. 
 
-**Problem:** Thompson's demonstration underscores that trust in software extends beyond the visible source code to the entire compilation process. The implications are clear: if the compiler or any other tool in the toolchain is compromised, every piece of software it produces is potentially compromised as well. This creates a nearly invisible security risk, as traditional inspection methods may not detect such deep-seated vulnerabilities.
+**The Problem of Truth:** Thompson's demonstration underscores that trust in software extends beyond the visible source code to the entire compilation process. The implications are clear: if the compiler or any other tool in the toolchain is compromised, every piece of software it produces is potentially compromised as well. This creates a nearly invisible security risk, as traditional inspection methods may not detect such deep-seated vulnerabilities.
 
 **Software Supply Chain Attacks:** Thompson’s work laid the foundational understanding of software supply chain attacks, emphasizing the necessity of securing compilers and other fundamental tools. His reflections make it evident that the security of the entire software ecosystem hinges on the integrity of these tools. A compromised compiler can silently insert vulnerabilities into any software it compiles, making it critical to not only trust but also rigorously verify the tools used in the compilation process.
 
@@ -265,7 +265,7 @@ It reveals two hard truths:
 
 As we reflect on Ken Thompson’s lecture 40 years later, it becomes clear that his insights are more relevant than ever. 
 The need for robust verification mechanisms, secure development practices, and a healthy skepticism of the tools we rely on cannot be overstated. 
-The question Thompson posed about how much do you trust your compiler continues to resonate, reminding us that in the field of cybersecurity, trust must be continually earned and verified.
+The question Thompson posed about how much do I trust my compiler continues to resonate with me, as a reminder that in the field of cybersecurity, trust must be continually earned and verified.
 
 <figure class="jb_picture">
   {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2023/2023-12-27/kent-thompson-moral.png alt: "Kent Thompson's moral" %}
@@ -276,23 +276,23 @@ The question Thompson posed about how much do you trust your compiler continues 
 
 Thompson's work highlights the potential risks associated with trusting software tools and emphasizes the necessity of vigilant code review processes. 
 Theoretically, this kind of backdoor could still be lurking within the UNIX kernel, and there would be no way of ever knowing.
-Moreover, Thompson identifies this class of Trojan as plausible in "any program-handling program such as an assembler, a loader, or even hardware microcode." 
-Even if you download the LLM source code and build your own compiler, you must do so with a potentially compromised compiler version.
-As Thompson states, "no amount of source-level verification or scrutiny will protect you from using untrusted code," so let's cross our fingers and hope for the best.
+Moreover, Thompson identifies this class of attack to be plausible in "any program-handling program such as an assembler, a loader, or even hardware microcode." 
+Even if I could download the LLM source code and build my own compiler from scratch, I could still been using a potentially compromised compiler version.
+As Thompson states, "no amount of source-level verification or scrutiny will protect you from using untrusted code.".
+So let's cross our fingers and hope for the best.
 Peace 🤞. 
 
 # External Resources
 
-- [Running the “Reflections on Trusting Trust” Compiler](https://research.swtch.com/nih)
-- [Open Source Supply Chain Security at Google](https://research.swtch.com/acmscored)
-- https://youtu.be/SJ7lOus1FzQ?si=8t9RBRR671xRX_Rn
-- [Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)
+- [:earth_americas: Running the “Reflections on Trusting Trust” Compiler](https://research.swtch.com/nih)
+- [:earth_americas: Open Source Supply Chain Security at Google](https://research.swtch.com/acmscored)
+- [Reflections on Trusting Trust - Computerphile](https://youtu.be/SJ7lOus1FzQ?si=8t9RBRR671xRX_Rn)
+- [:books: Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)
 
 # Footnotes
 
-[^1]: Ransomware attacks are one the most common these days. The attacker encrypts the victim's data and demands a ransom for its release. The surge of untraceable cryptocurrencies such as Bitcoin has made it easier for attackers to demand and receive payments without being identified.
+[^1]: Ransomware attacks are common these days: the attacker encrypts the victim's data and demands a ransom for its release. The surge of untraceable cryptocurrencies such as Bitcoin has made it easier for attackers to demand and receive payments without being identified.
 
-[^2]: The naming is a playful tribute to [Willard Van Orman Quine](https://en.wikipedia.org/wiki/Willard_Van_Orman_Quine)'s work in formal logic, particularly his interest in self-reference and fixed points in logic, which are ideas closely related to the concept of self-replicating programs.
+[^2]: The "Quine" name is a playful tribute to [Willard Van Orman Quine](https://en.wikipedia.org/wiki/Willard_Van_Orman_Quine)'s work in formal logic, particularly his interest in self-reference and fixed points in logic. His ideas are closely related to the concept of self-replicating programs.
 
 [^3]: An open-source software supply chain attack is the nefarious alteration of a trusted open-source component used later in a trusted program.
-
