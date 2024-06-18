@@ -270,7 +270,7 @@ The question Thompson posed about how much do I trust my compiler continues to r
 <figure class="jb_picture">
   {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2023/2023-12-27/kent-thompson-moral.png alt: "Kent Thompson's moral" %}
   <figcaption class="stroke"> 
-    Let's say it again: "You can't trust code that you did not totally create yourself."
+    Let's repeat with him, once again: "You can't trust code that you did not totally create yourself."
   </figcaption>
 </figure>
 
