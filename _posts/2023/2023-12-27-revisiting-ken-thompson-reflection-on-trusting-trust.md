@@ -57,8 +57,8 @@ UNIX was the foundation of many modern operating systems, including Linux, macOS
 {% badge /img/badges/first-page-of-reflections-on-trusting-trust.png 140 https://dl.acm.org/doi/10.1145/358198.358210 %}
 
 In [his Turing Award lecture](https://dl.acm.org/doi/10.1145/358198.358210) titled "Reflections on Trusting Trust," Thompson presented a chilling idea that has become one of the most famous in the history of cybersecurity.
-He described a theoretical attack that could be carried out by modifying a compiler to insert a backdoor into the UNIX `login` command. 
-The core idea is that the compromised compiler is able to recognize what it is compiling and can reinsert the backdoor into the compiler even when the backdoor is no longer present in the source code.
+He described a theoretical attack that could be carried out by modifying a compiler to insert a backdoor into the UNIX `login` command.
+The core idea is to modify the compromised compiler so that it can recognize what it is compiling and reinsert the backdoor into new versions of the compiler even when the backdoor is no longer present in the source code.
 I know it sounds a bit confusing, so let's break it down from the beginning.
 
 ## Bootstrapping a Compiler
@@ -66,9 +66,10 @@ I know it sounds a bit confusing, so let's break it down from the beginning.
 A [compiler](https://en.wikipedia.org/wiki/Compiler) is a software that translates source code written in a high-level programming language that humans can read into highly optimized [machine code](https://en.wikipedia.org/wiki/Machine_code) that computers can execute directly.
 Compilers are the backbone of software development.
 Note that compilers are software too.
-This means that they are also written in a programming language, thus to create a compiler one has to use another compiler.
+This means that they are also written in a programming language.
+To create a compiler, we need another compiler, unless we are willing to write it in machine code, which is impractical.
 
-Creating the first version of a compiler is an intriguing process, referred to as [bootstrapping compiler](https://en.wikipedia.org/wiki/Bootstrapping_(compilers)).
+Creating the first version of a compiler is an intriguing process, and the end-to-end compiler build pipeline is referred to as [bootstrapping a compiler](https://en.wikipedia.org/wiki/Bootstrapping_(compilers)).
 The idea is to incrementally develop the full compiler, starting from a very basic one, until a full-fledged, self-hosting compiler is created.
 For example, in the case of the C programming language, the first version of the compiler was written in a basic assembly language which can understand a minimal subset of C.
 Then, the initial compiler was used to write a slightly more advanced C compiler using the minimal subset of C that the initial compiler can handle.
@@ -85,23 +86,23 @@ graph TB
     B --> |"compile"| C["3️⃣ Intermediate C compiler (C3)"]
     C --> |"compile"| D["4️⃣ Full C compiler (C4)"]
     D --> |"full compiler can compile itself"|D 
-    D --> |"use"| P2["👩‍💻 No so smart person (me) uses the full compiler"]
+    D --> |"use"| P2["👩‍💻 Not so smart person (like me) can use the full compiler"]
 ```
 
 The key part in the previous figure is that the full C compiler (`C4`), which can compile itself as well as any other C programs, keeps some kind of "memory" of the previous compilers because it shares part of their implementation. 
-So the question is: _What if one of the previous compilers, such as the initial `C1`, had a backdoor?_ 
-According to Thompson, this would imply that the backdoor could be perpetuated across all subsequent versions of the compiler.
+So the question is: _What if one of the previous compilers, such as the initial_ `C1`_, had a backdoor?_ 
+According to Thompson, this would imply that the backdoor could be perpetuated across all subsequent versions of the compiler every time the compiler recompiles itself.
 
 ## The Trojan Horse Compiler
 
-As we saw before, compilers are software artifacts written in a programming language.
-If a backdoor is inserted into the source code of a compiler, it can be detected by inspecting the source code.
+As we saw before, compilers are software artifacts written in a programming language. 
+Like any other software, if a backdoor is inserted into the source code of a compiler, it can be detected by inspecting the source code.
 However, Thompson's idea was to insert a backdoor into the compiler executable itself, not into its source code.
-The trick was doing it in such a way that even if the source code of `C4` appears to be clean, the backdoor can be reinserted during the compilation process through the use of [self-replicating code](https://en.wikipedia.org/wiki/Quine_(computing)).
+The trick was doing it in such a way that even if the source code of `C4` (i.e., the full compiler) appears to be clean, the backdoor can be reinserted during the compilation process through the use of [self-replicating code](https://en.wikipedia.org/wiki/Quine_(computing)).
 
 > "The key part of Thompson's genius was to make the compiler recognize when it was compiling a new version of itself (i.e., compiling the source code of the compiler)."
 
-The figure below illustrates Thomson's idea of creating a self-replicating compiler with a backdoor.
+The figure below illustrates Thomson's core idea of creating a self-replicating compiler with a backdoor.
 
 ```mermaid
 %%{init: {'theme':'base'}}%%
@@ -136,23 +137,23 @@ Let's dive more into this with an illustrative example.
 
 ## Example
 
-Is it possible to write a program that replicates itself? 
+_Is it possible to write a program that replicates itself?_ 
 The answer is affirmative.
 Such programs are called [Quines](https://en.wikipedia.org/wiki/Quine_(computing)).[^2]
 A Quine is a computer program that takes no input and produces a copy of its own source code as its only output.
 Quines can be made in any [Turing-complete programming language](https://en.wikipedia.org/wiki/Turing_completeness), as a direct consequence of [Kleene's recursion theorem](https://en.wikipedia.org/wiki/Kleene%27s_recursion_theorem).
-They are the core idea behind the backdoor compiler concept described by Thompson.
+Quines are the core concept behind the trojan horse compiler described by Thompson.
 
 Let's create an example of a self-replicating program in Java.
-It will be useful later to illustrate how a modified compiler could inject malicious behavior into a Java program.
-The basic idea is that the `javac` compiler could be modified to insert malicious code into any program it compiles, even if the original source code is clean.
+It will be useful later to illustrate how a modified version of the Java compiler could inject malicious behavior into Java applications.
+Remember, the basic idea is that the `javac` compiler could be modified to insert malicious code into any program it compiles, even if the original source code is clean.
 
 This requires:
 
 1. A modified version of the `javac`.
 2. An example of Java program that shows the injected behavior.
 
-Let's start with the typical "Hello, World!" Java program:
+Let's start with the typical `HelloWorld.java` program:
 
 {% highlight java linenos %}
 public class HelloWorld {
@@ -162,88 +163,83 @@ public class HelloWorld {
 }
 {% endhighlight %}
 
-Now the malicious actor modifying the `javac` compiler to inject malicious code. 
+Now suppose a malicious actor modifies the `javac` compiler to inject malicious code. 
 
 This involves two steps:
 
 1. Find the part of the `javac` source code that handles the generation of the bytecode for the `main` method.
-2. Modify the compiler to insert additional instructions that execute malicious behavior, such as printing an unauthorized message or performing an unexpected action.
+2. Modify the compiler to insert additional instructions that execute malicious behavior, such as printing an unauthorized message or performing an unintended action.
 
 Here's a conceptual pseudocode for the modified compiler:
 
 {% highlight java linenos %}
 public class ModifiedCompiler {
-    public void compile(String sourceCode) {
-        // Parse the source code and generate bytecode for the main method
-        if (sourceCode.contains("public static void main")) {
-          // Inject malicious behavior
-          String maliciousCode = "System.out.println(\"Injected by malicious compiler!\");";
-          // Add the malicious code to the bytecode (this is a simplified representation)
-          int mainMethodIndex = sourceCode.indexOf("public static void main");
-          int insertionPoint = sourceCode.indexOf("{", mainMethodIndex) + 1;
-          Sting sourceCode = ourceCode.substring(0, insertionPoint) 
-            + "\n" + maliciousCode 
-            + sourceCode.substring(insertionPoint);
-        }
-        // Continue with the normal compilation process
+  public void compile(String sourceCode) {
+    // Parse the source code and generate bytecode for the main method
+    if (sourceCode.contains("public static void main")) {
+      // Inject malicious behavior
+      String maliciousCode = "System.out.println(\"Injected by malicious compiler!\");";
+      // Add the malicious code to the bytecode (this is a simplified representation)
+      int mainMethodIndex = sourceCode.indexOf("public static void main");
+      int insertionPoint = sourceCode.indexOf("{", mainMethodIndex) + 1;
+      Sting sourceCode = ourceCode.substring(0, insertionPoint) 
+        + "\n" + maliciousCode 
+        + sourceCode.substring(insertionPoint);
+      }
+      // Continue with the normal compilation process
     }   
 }
 {% endhighlight %}
 
-Assuming we have compiled the modified compiler, now we compile `HelloWorld.java` using this compiler:
+Assuming we have compiled the modified compiler, now we compile the `HelloWorld.java` file using this compiler:
 
 ```bash
 javac -cp . ModifiedCompiler HelloWorld.java
 ```
 
-After compiling, running the program would exhibit the injected behavior:
-
-```bash
-java HelloWorld
-```
-
-Expected output:
+After compiling, the running program would exhibit the injected behavior:
 
 ```
 Hello, World!
 Injected by malicious compiler!
 ```
 
-The key part of the previous example is in the `if` clause, which allows the compiler to detect _what_ it's compiling and react in response.
+Note that the key part of the previous example is in the `if` clause, which allows the compiler to detect _what_ it's compiling and react in response.
 We could imagine that this could be anything: the source code of a compiler, the password for the UNIX operating system, or the credentials for a specific application.
 
-Here is and example in which a password field is detected and a `MASTER_PASSWORD` inserted to allow access to the application:
+Here is and example in which a password field is detected and a `MASTER_PASSWORD` is set to allow access to the application:
 
 {% highlight java linenos %}
 if (sourceCode.contains("password")) {
-            // Inject malicious behavior
-            int mainMethodIndex = sourceCode.indexOf("public static void main");
-            int insertionPoint = sourceCode.indexOf("{", mainMethodIndex) + 1;
-            String maliciousCode =
-              "\ntry {\n"
-              + "String userPassword = getPasswordFromUser();\n"
-              + "if (userPassword.equals(\"" + MASTER_PASSWORD + "\")) {\n"
-              + "System.out.println(\"Master password accepted. Access granted.\");\n"
-              + "} else {\n"
-              + "System.out.println(\"User password: \" + userPassword);\n"
-              + "}\n"
-              + "} catch (Exception e) { e.printStackTrace(); }\n";
-            sourceCode = sourceCode.substring(0, insertionPoint) + maliciousCode + sourceCode.substring(insertionPoint);
-        }
+  // Inject malicious behavior
+  int mainMethodIndex = sourceCode.indexOf("public static void main");
+  int insertionPoint = sourceCode.indexOf("{", mainMethodIndex) + 1;
+  String maliciousCode =
+    "\ntry {\n"
+    + "String userPassword = getPasswordFromUser();\n"
+    + "if (userPassword.equals(\"" + MASTER_PASSWORD + "\")) {\n"
+    + "System.out.println(\"Master password accepted. Access granted.\");\n"
+    + "} else {\n"
+    + "System.out.println(\"User password: \" + userPassword);\n"
+    + "}\n"
+    + "} catch (Exception e) { e.printStackTrace(); }\n";
+  sourceCode = sourceCode.substring(0, insertionPoint) + maliciousCode + sourceCode.substring(insertionPoint);
 }
 {% endhighlight %}
 
 Note that even if the source code of the `HelloWorld.java` program is inspected and found to be clean, the compiled output will still contain the injected malicious behavior. 
 This occurs because the malicious code is added by the modified compiler during the compilation process, making it invisible in the original source code. 
-Thompson claims that if, at any point, a developer inserted such malicious behavior into the compiler itself, it would be nearly impossible to detect. 
-The backdoor would perpetuate itself, as the compiler would continue to insert the malicious code into every program it compiles, including new versions of the compiler, making the malicious behavior deeply embedded and hidden to its users.
+
+Thompson claimed that if, at any point, a developer inserted such malicious behavior into one of the previous versions of the C compiler itself, it would be nearly impossible to detect now.
+The backdoor would perpetuate itself, as the compiler will continue inserting the malicious code into every program it compiles, including new versions of the compiler.
+The idea of such a malicious behaviour, deeply embedded and hidden to its users, is a freaking thought that has haunted the cybersecurity community for decades. 
 
 # Implications
 
 Cybersecurity threats are [everywhere](https://www.enisa.europa.eu/topics/cyber-threats/threats-and-trends) these days. 
-From tech media to public new, we are constantly bombarded with reports of ransomware attacks[^1], data breaches, and other cyber threats. 
+From tech media to public new, we are constantly bombarded with reports of ransomware attacks,[^1] data breaches, and other cyber threats. 
 As software complexity increases, so does the sophistication of these attacks. 
-Each new feature added to software can expand the attack surface, making security an ever-moving target.
+Each new feature added to our applications can expand the attack surface, making security an ever-moving target.
 
 In most discussions about cybersecurity I've seen, the focus is mostly on the malicious actors who exploit vulnerabilities in the systems.
 The [software supply chain](../blog/the-software-supply-chain.html),[^3] in particular, has become a primary target for attackers.
@@ -252,14 +248,14 @@ Large-scale attacks on software repositories and package managers are becoming t
 Ken Thompson’s seminal 1984 Turing Award lecture made us ask deep questions: 
 
 - _What if the threats are already embedded in the very tools we trust to build our software?_
-- _Can we truly trust the output of our favorite compiler?_
+- _Can we truly trust the output of our seemingly bullet-proof compiler?_
 
 It reveals two hard truths:
 
 - Software tools themselves can be compromised in ways that are nearly undetectable through common inspection methods.
-- Trust in software tools must extend beyond source code analysis to encompass the entire toolchain used to produce software. 
+- Trust in compilers and other software tools must extend beyond source code analysis to encompass the entire toolchain used to produce them. 
 
-**Trust is a Problem:** Thompson's demonstration underscores that trust in software extends beyond the visible source code to the entire compilation process. The implications are clear: if the compiler or any other tool in the toolchain is compromised, every piece of software it produces is potentially compromised as well. This creates a nearly invisible security risk, as traditional inspection methods may not detect such deep-seated vulnerabilities.
+**Problem:** Thompson's demonstration underscores that trust in software extends beyond the visible source code to the entire compilation process. The implications are clear: if the compiler or any other tool in the toolchain is compromised, every piece of software it produces is potentially compromised as well. This creates a nearly invisible security risk, as traditional inspection methods may not detect such deep-seated vulnerabilities.
 
 **Software Supply Chain Attacks:** Thompson’s work laid the foundational understanding of software supply chain attacks, emphasizing the necessity of securing compilers and other fundamental tools. His reflections make it evident that the security of the entire software ecosystem hinges on the integrity of these tools. A compromised compiler can silently insert vulnerabilities into any software it compiles, making it critical to not only trust but also rigorously verify the tools used in the compilation process.
 
