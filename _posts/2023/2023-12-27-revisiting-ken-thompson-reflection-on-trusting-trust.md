@@ -278,7 +278,7 @@ Thompson's work highlights the potential risks associated with trusting software
 Theoretically, this kind of backdoor could still be lurking within the UNIX kernel, and there would be no way of ever knowing.
 Moreover, Thompson identifies this class of attack to be plausible in "any program-handling program such as an assembler, a loader, or even hardware microcode." 
 Even if I could download the LLM source code and build my own compiler from scratch, I could still been using a potentially compromised compiler version.
-As Thompson states, "no amount of source-level verification or scrutiny will protect you from using untrusted code.".
+As Thompson states, "no amount of source-level verification or scrutiny will protect you from using untrusted code."
 So let's cross our fingers and hope for the best.
 Peace 🤞. 
 
