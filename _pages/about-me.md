@@ -36,8 +36,8 @@ My PhD was about software debloating,[^1] here's my [thesis](https://www.cesarso
 
 {% youtube Ub684G_aM5Q %}
 
-I like to do knowledge-seeking software engineering research.
-For example, by extracting useful information from data stored in software repositories.[^2] 
+I enjoy doing knowledge-seeking software engineering research.
+For example, to extract useful information from software repositories.[^2] 
 Particularly, I'm interested in measuring the impact and pervasiveness of software bloat across large-scale software ecosystems.
 
 I'm keen to perform research on software technology which:
@@ -46,8 +46,8 @@ I'm keen to perform research on software technology which:
 2. Produce **practical tools** for developers to improve software quality.
 3. Disrupt the _status quo_ of software engineering **latest practices**.
 
-I'm always open to work with researchers and supervise students in these areas.
-If you are interested in collaborating with me, have a look at my list of [research topics](./collaborations.html).
+I'm open to collaborate with researchers and give advice to students in these areas.
+If you are interested in working with me, please have a look at my list of [research topics](./collaborations.html) and send me an email.
 
 {% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
 
@@ -57,7 +57,7 @@ A long time ago, I participated in [programming competitions](/competitions.html
 
 # Misc
 
-Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and jogging across the Stockholm's beautiful parks.[^3]
+Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and running across the Stockholm's beautiful parks.[^3]
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
