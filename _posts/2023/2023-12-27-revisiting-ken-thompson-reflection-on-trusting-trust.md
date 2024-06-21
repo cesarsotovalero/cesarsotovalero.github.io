@@ -50,7 +50,7 @@ Let's dig in.
 # What Is It All About?
 
 Let me begin with some background about the main character of this story: [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson), a prolific computer scientist known for being one of the original creators of the UNIX operating system, along with [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) in the early 1970s.
-He created the [B programming language](https://en.wikipedia.org/wiki/B_(programming_language)), a precursor of C. 
+He created the [B programming language](https://en.wikipedia.org/wiki/B_(programming_language)), a precursor of the C programming language. 
 Thompson and Ritchie [received](https://amturing.acm.org/award_winners/thompson_4588371.cfm) the Turing Award in 1983 "for their development of generic operating systems theory, and specifically for the implementation of the UNIX operating system." 
 UNIX was the foundation of many modern operating systems, including Linux, macOS, and Android.
 
@@ -73,7 +73,7 @@ Creating the first version of a compiler is an intriguing process, and the end-t
 The idea is to incrementally develop the full compiler, starting from a very basic one, until a full-fledged, self-hosting compiler is created.
 For example, in the case of the C programming language, the first version of the compiler was written in a basic assembly language which can understand a minimal subset of C.
 Then, the initial compiler was used to write a slightly more advanced C compiler using the minimal subset of C that the initial compiler can handle.
-This process is repeated until a full C compiler is created that can compile itself.
+This process is repeated until a full C compiler that can compile itself is created.
 This full C compiler can [compile its own source code](http://sens.cse.msu.edu/Software/Telelogic-3.5/locale/english/help/htmlhlp/comptheory.html), as well as any other C programs.
 
 The figure below illustrates the process of creating such a self-hosting compiler:
@@ -207,7 +207,7 @@ Injected by malicious compiler!
 Note that the key part of the previous example is in the `if` clause, which allows the compiler to detect _what_ it's compiling and react in response.
 We could imagine that this could be anything: the source code of a compiler, the password for the UNIX operating system, or the credentials for a specific application.
 
-Here is and example in which a password field is detected and a `MASTER_PASSWORD` is set to allow access to the application:
+Here is an example in which a password field is detected and a `MASTER_PASSWORD` is set to allow access to the application:
 
 {% highlight java linenos %}
 if (sourceCode.contains("password")) {
@@ -232,7 +232,7 @@ This occurs because the malicious code is added by the modified compiler during 
 
 Thompson claimed that if, at any point, a developer inserted such malicious behavior into one of the previous versions of the C compiler itself, it would be nearly impossible to detect now.
 The backdoor would perpetuate itself, as the compiler will continue inserting the malicious code into every program it compiles, including new versions of the compiler.
-The idea of such a malicious behaviour, deeply embedded and hidden to its users, is a freaking thought that has haunted the cybersecurity community for decades. 
+The idea of such a malicious behavior, deeply embedded and hidden to its users, is a freaking thought that has haunted the cybersecurity community for decades. 
 
 # Implications
 
@@ -268,16 +268,16 @@ The need for robust verification mechanisms, secure development practices, and a
 The question Thompson posed about how much do I trust my compiler continues to resonate with me, as a reminder that in the field of cybersecurity, trust must be continually earned and verified.
 
 <figure class="jb_picture">
-  {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2023/2023-12-27/kent-thompson-moral.png alt: "Kent Thompson's moral" %}
+  {% responsive_image width: "80%" border: "1px solid #808080" path: img/posts/2023/2023-12-27/kent-thompson-moral.png alt: "Kent Thompson's moral" %}
   <figcaption class="stroke"> 
-    Let's repeat it with him once again: "You can't trust code that you did not totally create yourself."
+    Let's say it again: "You can't trust code that you did not totally create yourself."
   </figcaption>
 </figure>
 
 Thompson's work highlights the potential risks associated with trusting software tools and emphasizes the necessity of vigilant code review processes. 
 Theoretically, this kind of backdoor could still be lurking within the UNIX kernel, and there would be no way of ever knowing.
 Moreover, Thompson identifies this class of attack to be plausible in "any program-handling program such as an assembler, a loader, or even hardware microcode." 
-Even if I could download the LLM source code and build my own compiler from scratch, I could still been using a potentially compromised compiler version.
+Even if I could download the [LLVM](https://llvm.org/) source code and build my own compiler from scratch, I could still be using a potentially compromised compiler version.
 As Thompson states, "no amount of source-level verification or scrutiny will protect you from using untrusted code."
 So let's cross our fingers and hope for the best.
 Peace 🤞. 
