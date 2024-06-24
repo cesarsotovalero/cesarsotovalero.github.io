@@ -193,7 +193,6 @@ exclude:
   - tag_generator.py
   - .ruby-version
   - vendor
-  - "assets/react-apps/resume-builder/node_modules"
 
 # prose.io config
 prose:
