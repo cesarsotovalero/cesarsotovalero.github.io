@@ -16,7 +16,7 @@ share-img: ../img/posts/img-placeholder_cover.webp
 show-avatar: false
 toc: true
 mathjax: false
-date: 2023/MM/DD
+date: 2024/MM/DD
 author: cesarsotovalero
 published: false
 ---
@@ -28,7 +28,7 @@ published: false
 [//]: # (- What emotion am I generating?)
 [//]: # (From these questions, I create:)
 [//]: # (- At least 5 headlines)
-[//]: # (- The bullet point summary)
+[//]: # (- The bullet point summary)  
 [//]: # (Then I fill in the details.)
 
 [//]: # (AI Prompt for writing content)
@@ -47,7 +47,7 @@ Take a deep breath and work on this problem step-by-step.
 
 # IMAGE
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/img-placeholder.png alt: "TODO" %}
+  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/img-placeholder.webp alt: "TODO" %}
   <figcaption class="stroke"> 
     &#169; TODO
   </figcaption>
