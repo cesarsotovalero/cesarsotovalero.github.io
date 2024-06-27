@@ -15,6 +15,7 @@ I've reviewed papers for the following journals and conferences:
     <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Check my verified peer reviews in the Web of Science</a></em> 
 </aside>
 
+- [Information Processing & Management](https://www.sciencedirect.com/journal/information-processing-and-management), 2024 [Recognition](../files/certificates/2024_IPM_Reviewer_Certificate.pdf)
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
 - [Springer Discover Artificial Intelligence](https://link.springer.com/journal/44163), 2024
 - [PeerJ Computer Science](https://peerj.com/computer-science/), 2024
@@ -39,7 +40,7 @@ I've co-reviewed papers for the following journals and conferences:
 
 I've served as a committee member for the following conferences:
 
-- [IEEE Secure Development Conference (SecDev)](https://secdev.ieee.org/2024/program-committee/), 2024 🖼️ [Recognition](../img/screenshots/SecDev2024.png)
+- [IEEE Secure Development Conference (SecDev)](https://secdev.ieee.org/2024/program-committee/), where I peer-reviewed and discussed 4 papers, 2024 🖼️ [Recognition](../img/screenshots/SecDev2024.png)
 
 Also, my name is listed in the acknowledgments of the following papers:
 
