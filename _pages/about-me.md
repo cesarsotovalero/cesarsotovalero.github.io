@@ -18,7 +18,7 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 I'm César, a [computer scientist](./publications.html), [software engineer](./software.html), and [content creator](./blog).
 
-I'm passionate about science, software technology, and teaching. 
+I'm passionate about science, software technology, and education. 
 
 Here is my [resumé](../files/CV/cv.pdf).
 
