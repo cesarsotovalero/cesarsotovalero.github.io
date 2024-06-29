@@ -21,7 +21,7 @@ author: cesarsotovalero
 published: false
 ---
 
-[//]: # (- What is the personal story?)
+[//]: # (- What is the personal story? when I was...)
 [//]: # (- What problem am I solving?)
 [//]: # (- What are the benefits of solving it?)
 [//]: # (- What emotion am I generating?)
