@@ -39,7 +39,6 @@ My goal is to reflect on the transcendence of its core message.
 I'll dive into what is it all about, the implications it poses from a security perspective, and how it could change the perception we have about modern software development practices.
 Let's dig in.
 
-
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2023/2023-12-27/cross_t_centralen.jpg alt: "TODO" %}
   <figcaption class="stroke"> 
@@ -56,7 +55,7 @@ UNIX was the foundation of many modern operating systems, including Linux, macOS
 
 {% badge /img/badges/first-page-of-reflections-on-trusting-trust.png 140 https://dl.acm.org/doi/10.1145/358198.358210 %}
 
-In [his Turing Award lecture](https://dl.acm.org/doi/10.1145/358198.358210) titled "Reflections on Trusting Trust," Thompson presented a chilling idea that has become one of the most famous in the history of cybersecurity.
+In [his Turing Award lecture](https://dl.acm.org/doi/10.1145/358198.358210) titled "Reflections on Trusting Trust," Thompson presented a chilling idea that has become one of the most famous in the history of cybersecurity.[^4]
 He described a theoretical attack that could be carried out by modifying a compiler to insert a backdoor into the UNIX `login` command.
 The core idea is to modify the compromised compiler so that it can recognize what it is compiling and reinsert the backdoor into new versions of the compiler even when the backdoor is no longer present in the source code.
 I know it sounds a bit confusing, so let's break it down from the beginning.
@@ -257,7 +256,7 @@ It reveals two hard truths:
 
 **The Problem of Truth:** Thompson's demonstration underscores that trust in software extends beyond the visible source code to the entire compilation process. The implications are clear: if the compiler or any other tool in the toolchain is compromised, every piece of software it produces is potentially compromised as well. This creates a nearly invisible security risk, as traditional inspection methods may not detect such deep-seated vulnerabilities.
 
-**Software Supply Chain Attacks:** Thompson’s work laid the foundational understanding of software supply chain attacks, emphasizing the necessity of securing compilers and other fundamental tools. His reflections make it evident that the security of the entire software ecosystem hinges on the integrity of these tools. A compromised compiler can silently insert vulnerabilities into any software it compiles, making it critical to not only trust but also rigorously verify the tools used in the compilation process.
+**Software Supply Chain Attacks:** Thompson’s work laid the foundational understanding of software supply chain attacks, emphasizing the necessity of securing compilers and other fundamental tools. His reflections make it evident that the security of the entire software ecosystem hinges on the integrity of these tools. A compromised compiler can silently insert vulnerabilities into any software it compiles, making it critical to not only trust but also rigorously verify the tools used in the compilation process. Thompson also stated that the vulnerability is not limited to the compiler or even ends with the build system. A supply-chain attack can compromise practically any program that handles another program in the way described, such as an assembler, linker, Libtool, a loader, firmware, or hardware microcode.
 
 **Current Challenges:** Detecting malicious modifications in compilers and other foundational tools remains a daunting task. These tools are deeply integrated into our systems, and their integrity is often assumed rather than verified. The challenge is further compounded by the sophistication of modern cyber threats, which can exploit even the slightest vulnerabilities in our software development processes.
 
@@ -287,6 +286,7 @@ Peace 🤞.
 - [:earth_americas: Running the “Reflections on Trusting Trust” Compiler](https://research.swtch.com/nih)
 - [:earth_americas: Open Source Supply Chain Security at Google](https://research.swtch.com/acmscored)
 - [Reflections on Trusting Trust - Computerphile](https://youtu.be/SJ7lOus1FzQ?si=8t9RBRR671xRX_Rn)
+- [Compiler-based Trojan Horse](https://youtu.be/JrGvxv-opF0?si=PUwhB_s3LoTeJ_9k)
 - [:books: Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)
 
 # Footnotes
@@ -296,3 +296,5 @@ Peace 🤞.
 [^2]: The "Quine" name is a playful tribute to [Willard Van Orman Quine](https://en.wikipedia.org/wiki/Willard_Van_Orman_Quine)'s work in formal logic, particularly his interest in self-reference and fixed points in logic. His ideas are closely related to the concept of self-replicating programs.
 
 [^3]: An open-source software supply chain attack is the nefarious alteration of a trusted open-source component used later in a trusted program.
+
+[^4]: The idea actually originates from an Air Force evaluation of the MULTICS system carried out by Karger and Schell, and published in a [technical report](https://csrc.nist.gov/files/pubs/conference/1998/10/08/proceedings-of-the-21st-nissc-1998/final/docs/early-cs-papers/karg74.pdf) in 1974. In 1985, a decade after the this work, Ken Thompson specified the vulnerability in more concrete detail, posing intriguing questions with snippets in C.

@@ -84,5 +84,22 @@ XXX
 </details>
 
 
+<details><summary>Dissemination of thesis work</summary>
+Hi [STUDENT],<br/>
+<br/>
+Congratulations on successfully passing your [B.Sc./M.Sc] thesis.<br/>
+<br/>
+Your thesis results are worth spreading, and I'm therefore checking here your interest in getting an article published in an international software engineering journal or with the possibility to participate in an international conference to present it on behalf of [UNIVERSITY].<br/>
+<br/>
+I think there is a chance of getting your work published with a bit of extra work (this could be a nice merit for your CV) for instance, if you're considering applying to an R&D department at a larger software company (or considering pursuing a doctorate further down the line!) you will be well positioned compared to other BSc graduates and even MSc graduates who haven't published.
+<br/>
+I would appreciate if you could respond with one of the following options:
 
+1. Sounds interesting! I want to hear more; can we have a meeting?
+2. No interest, but you can proceed with it. Then I will work on the text if time/possibility allows, and you will be co-authors. There's a chance that I might not do it, and if I do it, there will likely be some questions along the way.
+3. No interest, and I do not want my work to be extended and adjusted by MIUN staff at all for publication.
+<br/>
 
+Best regards,<br/>
+XXX
+</details>
