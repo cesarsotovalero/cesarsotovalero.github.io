@@ -21,15 +21,13 @@ author: cesarsotovalero
 published: false
 ---
 
-[//]: # (My writing process:)
-[//]: # (I start with 3 questions at the top:)
+[//]: # (- What is the personal story?)
 [//]: # (- What problem am I solving?)
 [//]: # (- What are the benefits of solving it?)
 [//]: # (- What emotion am I generating?)
 [//]: # (From these questions, I create:)
 [//]: # (- At least 5 headlines)
 [//]: # (- The bullet point summary)  
-[//]: # (Then I fill in the details.)
 
 [//]: # (AI Prompt for writing content)
 Act like a research assistant with expertise in conducting comprehensive academic and industry-specific research.
