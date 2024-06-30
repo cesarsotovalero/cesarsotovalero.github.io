@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Building and Leveling Up a Computer Scientist Résumé 
+title: Building and Leveling Up a Computer Scientist Résumé 
 subtitle: My personal take to stand out from the crowd
 tags: career
 description: |
