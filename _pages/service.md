@@ -50,12 +50,12 @@ Also, my name is listed in the acknowledgments of the following papers:
 
 I've supervised Master and Bachelor students in the following theses:
 
-- "Detecting Semantic Changes in Dependency Updates Using Dynamic Analysis," Leonard Sebastian Husmann, **Master Thesis**, KTH 2024 (ongoing)
-- "Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests," Jacob Jernestål, **Bachelor Thesis**, Mid Sweden University 2024 (ongoing)
-- "The State of Software Diversity in the Software Supply Chain of Ethereum Clients," Noak Jönsson, **Bachelor Thesis**, KTH 2022 [PDF](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf)
-- "Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes," Martin Sköld, **Master Thesis**, KTH 2020 [PDF](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf)
-- "Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning," Gustaf Halvardsson & Johanna Peterson, **Bachelor Thesis**, KTH 2020 [PDF](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf)
-- "Análisis de La Actividad Competitiva en el Juego de Polo Acuático," Pascalina Stanislas-Inglis. **Bachelor Thesis**, UCLV 2014 [PDF](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf)
+- "Detecting Semantic Changes in Dependency Updates Using Dynamic Analysis," [Leonard Sebastian Husmann](https://www.linkedin.com/in/leonard-husmann/), **Master Thesis**, KTH 2024 (ongoing)
+- "Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests," [Jacob Jernestål](https://www.linkedin.com/in/jacobjernestaal/), **Bachelor Thesis**, Mid Sweden University 2024 [PDF](https://www.diva-portal.org/smash/get/diva2:1877917/FULLTEXT01.pdf)
+- "The State of Software Diversity in the Software Supply Chain of Ethereum Clients," [Noak Jönsson](), **Bachelor Thesis**, KTH 2022 [PDF](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf)
+- "Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes," [Martin Sköld](https://www.linkedin.com/in/martin-sk%C3%B6ld-73b254155/), **Master Thesis**, KTH 2020 [PDF](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf)
+- "Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning," [Gustaf Halvardsson](https://www.linkedin.com/in/gustafhalvardsson/) and [Johanna Peterson](https://www.linkedin.com/in/johannamariapeterson/), **Bachelor Thesis**, KTH 2020 [PDF](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf)
+- "Análisis de La Actividad Competitiva en el Juego de Polo Acuático," [Pascalina Stanislas-Inglis](https://www.linkedin.com/in/pascalina-stanislas-inglis-702636102/). **Bachelor Thesis**, UCLV 2014 [PDF](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf)
 
 # Volunteer
 

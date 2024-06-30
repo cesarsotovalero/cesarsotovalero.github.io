@@ -51,6 +51,13 @@ Take a deep breath and work on this problem step-by-step.
   </figcaption>
 </figure>
 
+<figure class="jb_picture">
+  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-01-12/hero.jpg alt: "A real viking rune exposed in Skansen in Stockholm" %}
+  <figcaption class="stroke"> 
+    &#169; Make it strong, make it powerful, make it memorable, make it catchy, ... just like a Viking rune. Photo of a Viking rune in <a href="https://maps.app.goo.gl/efFLJ7BjnQf4WrBG7">Skansen</a>, the oldest open-air museum and zoo in Sweden.  
+  </figcaption>
+</figure>
+
 # QUOTE
 > “TODO”
 > ― <cite><a href="URL">FULANO DE TAL</a></cite>
