@@ -18,7 +18,7 @@ toc: true
 mathjax: false
 date: 2024/01/12
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 Recently, a few friends have asked me to give them feedback on their résumés. 
