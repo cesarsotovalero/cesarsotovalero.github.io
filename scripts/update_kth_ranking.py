@@ -12,19 +12,23 @@ response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
 # Extract the rank
-rank_tag = soup.find('h3', text=lambda t: 'QS World University Rankings' in t)
-rank = rank_tag.find('span', class_='rank-hash').next_sibling.strip()
+rank_tag = soup.find('h3', string=lambda t: 'QS World University Rankings' in t if t else False)
 
-# Update the YAML data file
-ranking_data = {
-    'kth': {
-        'name': "KTH Royal Institute of Technology",
-        'rank': rank,
-        'source': "QS World University Rankings"
+if rank_tag:
+    rank = rank_tag.find('span', class_='rank-hash').next_sibling.strip()
+
+    # Update the YAML data file
+    ranking_data = {
+        'kth': {
+            'name': "KTH Royal Institute of Technology",
+            'rank': rank,
+            'source': "QS World University Rankings"
+        }
     }
-}
 
-with open('_data/university_ranking.yml', 'w') as file:
-    yaml.dump(ranking_data, file)
+    with open('_data/university_ranking.yml', 'w') as file:
+        yaml.dump(ranking_data, file)
 
-print("Ranking data updated successfully.")
+    print("Ranking data updated successfully.")
+else:
+    print("Error: Unable to find the ranking information on the page.")
