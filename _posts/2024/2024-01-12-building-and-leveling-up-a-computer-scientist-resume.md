@@ -99,12 +99,18 @@ As I've seen, computer scientists are hired based on an assessment of their capa
 The most important is proving that one can make an **immediate impact** on a certain project.
 Thus, in the highly competitive tech industry, I believe in adopting the mindset of a special rather than of a generalist when preparing the résumé.
 
-Think of it as a sniper. 
+The high reward goes to the sniper. 
 
 The deal is being as specific as possible and thinking about ourselves from the perspective of the recruiter. 
 For example, what I did as a research assistant, or at that technical training back in 2013 is completely irrelevant today.
 Recent experience is much more important!
 So I would rather highlight the most recent and significant accomplishments, rather than dwelling on outdated experiences.
+
+Understanding the hiring process is also essential, as it varies with the size of the company.
+For instance, larger companies may involve multiple stages, including HR screenings, interviews with hiring managers, and internal job postings. 
+Smaller companies might have a more streamlined process.
+
+Here's how it works:
  
 ```mermaid
 %%{init: {'theme':'base'}}%%
@@ -121,19 +127,17 @@ graph TD
     D1 -->|Final Decision| E1[Candidate Hired 🎉]
 ```
 
+Building a strong network and seeking recommendations can be as important as having a well-crafted résumé.
+
 The most coveted jobs are ~~almost~~ never publicly advertised.
 These positions are typically filled internally or through referrals.
-So, networking and recommendations are super important.
-Indeed, in academia, recommendations are paramount.
+Everyone knows, but let me say this again: networking and recommendations are paramount.
 Many PhD graduates, including myself, have secured positions through direct referrals.
-Therefore, building a strong network and seeking recommendations can be as important as having a well-crafted résumé.
 
 The marksmanship resume is focused on precision and relevance.
+
 To gain access to hidden opportunities, we need to first secure a position within the company.
-However, I also know that we all need to start somehow and get inside before actually seeing those opportunities.
-Understanding the hiring process is also essential, as it varies with the size of the company.
-For instance, larger companies may involve multiple stages, including HR screenings, interviews with hiring managers, and internal job postings. 
-Smaller companies might have a more streamlined process.
+Of course,we all need to start somehow and get inside the machine to actually reach those opportunities.
 
 # Structure
 
