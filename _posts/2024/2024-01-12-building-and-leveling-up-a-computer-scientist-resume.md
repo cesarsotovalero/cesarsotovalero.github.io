@@ -93,15 +93,18 @@ But of course, it only works well its purpose when it is done the righ way.
 
 {% badge /img/posts/2024/2024-01-12/target.png 140 https://www.oxfordlearnersdictionaries.com/definition/american_english/sniper %}
 
+It's harder to sell an believe on a magical pill that cures everything than in one that targets a very particular disease.
+
 As I've seen, computer scientists are hired based on an assessment of their capacity to bring something new to the table.
 The most important is proving that one can make an **immediate impact** on a certain project.
-Thus, in the highly competitive tech industry, I believe in adopting the mindset of a sniper preparing the résumé.
-This mean taking the role of as a specialist rather than a generalist.
+Thus, in the highly competitive tech industry, I believe in adopting the mindset of a special rather than of a generalist when preparing the résumé.
 
-I believe it's good being as specific as possible and thinking from the perspective of the hiring person.
+Think of it as a sniper. 
+
+The deal is being as specific as possible and thinking about ourselves from the perspective of the recruiter. 
 For example, what I did as a research assistant, or at that technical training back in 2013 is completely irrelevant today.
 Recent experience is much more important!
-So I would rather highlight the  most recent and significant accomplishments, rather than dwelling on outdated experiences.
+So I would rather highlight the most recent and significant accomplishments, rather than dwelling on outdated experiences.
  
 ```mermaid
 %%{init: {'theme':'base'}}%%
