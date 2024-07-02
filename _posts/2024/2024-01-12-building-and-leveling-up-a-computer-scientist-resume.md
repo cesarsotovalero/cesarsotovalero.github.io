@@ -18,7 +18,7 @@ toc: true
 mathjax: true
 date: 2024/01/12
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 Recently, a few friends have asked me to give them feedback on their résumés. 
@@ -189,15 +189,20 @@ Facts build credibility and strengthens the overall proposal.
 
 {% badge /img/posts/2024/2024-01-12/medal.png 140 # %}
 
-When it comes to listing skills on your résumé, I often see candidates including basics like Git,[^1] CI/CD, Docker, REST APIs, Python, unit tests, backend, frontend, etc. 
+A hammer is not a skill for a carpenter.
+
+When it comes to listing skills on a résumé, I often see candidates including basics like Git,[^1] CI/CD, Docker, REST APIs, Python, unit tests, backend, frontend, etc. 
 Frankly, this approach misses the mark.
 _What does it mean frontend?_
 These are basic instruments that all developers should have, akin to listing "laptop," "Firefox," "Internet," or "coffee" as essential items for an office job.
-Instead, focus on specific frameworks and technologies that demonstrate your depth of knowledge and expertise. 
+Instead, I would recommend focusing on specific frameworks and technologies that demonstrate depth of knowledge and expertise. 
 For instance, mention frameworks like Django or Flask for Python, React or Angular for frontend development, or Kubernetes for container orchestration.
-These specifics paint a clearer picture of your capabilities and the environments you excel in.
+These specific tools paint a clearer picture of capabilities and the environments a candidate excel in.
 
-When it comes to languages, only list those you are truly proficient in, especially if you can claim polyglot status with more than three languages.
+Speaking in English is no a skill. 
+
+When it comes to spoken languages, only list those you are truly proficient in.
+Personally, I would only include this information if I could claim polyglot status with more than three languages.
 English doesn't count because you are (as a professional in tech industry) by default expected to be proficient.
 English is a basic skill, the language of international communication, just like GitHub is the place to share code.
 By listing only the languages you know well, you avoid diluting your résumé with unnecessary information and instead present a concise and focused skill set.
@@ -210,8 +215,6 @@ These numbers provide tangible evidence of your contributions and productivity, 
 ## Qualities
 
 {% badge /img/posts/2024/2024-01-12/brain.png 140 # %}
-
-
 
 When it comes to highlighting your personal qualities on a résumé, it's important to strike the right tone.
 Don’t praise yourself excessively or come across as pretentious. 
