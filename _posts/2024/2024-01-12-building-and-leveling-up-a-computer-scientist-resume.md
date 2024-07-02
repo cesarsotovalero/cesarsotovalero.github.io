@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building and Leveling Up a Computer Scientist Résumé 
+title: Building and Leveling Up a Computer Scientist Résumé as a Recently Graduated PhD Student 
 subtitle: My personal take to stand out from the crowd
 tags: career
 description: |
@@ -25,23 +25,23 @@ Recently, a few friends kindly asked me to give them feedback on their résumés
 They are all Computer Science PhD graduates looking to land a new job in the tech industry. 
 You might think these people are the cream of the crop, so those résumés should look awesome, right? 
 Well, not really. 
-I remember my first résumé was awful (I don't even have the guts to share it here).
-I had no experience writing résumés, and it took me a while to understand what a great one looks like.
+I remember the first draft of my résumé was awful (I don't even have the guts to share it here).
+I had no experience writing résumés back then, and it took me a while to understand how a great one looks like.
 Building an awesome résumé takes time, effort, and conscious planning. 
 If you ask me the question: 
-_What makes a résumé stand out from the crowd?_ 
+_What makes a computer scientist résumé stand out from the crowd?_ 
 I think of three things: **simplicity**, **solidity**, and **uniqueness**. 
 This post revolves around what I mean by these three words.
-Alright, I know there is already a ton of content out there about creating résumés. 
+Alright, I know there is already a ton of content out there about writing résumés. 
 However, I still want to share **my personal take on this matter**.
-This is because this topic is subjective, so everyone has a different perspective. 
+This topic is subjective and everyone has a different perspective. 
 So here I'm just sharing mine.
-To narrow it down, my views and opinions in this post are specifically targeting PhD students and Computer Science professionals. 
-I cover how I would envision and structure the résumé of a scientist.
-This includes what content to add what to skip, and what I believe are common mistakes to avoid.
+To narrow it down, my views and opinions in this post are specifically targeting PhD students about to graduate, as well as computer scientists. 
+I'll cover how I envision the résumé of a scientist.
+This includes what content to add what to skip, its structure, and what I believe are common mistakes to avoid.
 Hopefully, my tips will help you create a résumé that's strong, powerful, memorable, and catchy; and maybe receive a $200K+ offer (just kidding).
 But seriously, a good résumé can make a huge difference in your job search and career development.
-And it's not so hard to get it right, even if missing the highest scores!
+And it's not so hard to get it right!
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-01-12/hero.jpg alt: "Photo of an inventory form a video game character" %}
@@ -54,29 +54,31 @@ And it's not so hard to get it right, even if missing the highest scores!
 
 {% badge /img/posts/2024/2024-01-12/leveled-up.png 140 https://www.reddit.com/r/Diablo/comments/1awyypu/my_diablo_1_level_50_warrior_after_12_years/ %}
 
-Let's be clear, the most resumes are quite boring. 
+Let's admit it, most resumes are quite boring. 
 
 The traditional [résumé](https://en.wikipedia.org/wiki/R%C3%A9sum%C3%A9) is a document, essentially a collection of words on a page.
-Interestingly, this old-fashioned format has been around for centuries, surviving the test of time.[^2]
+Interestingly, this old-fashioned format has been around for centuries and survived the test of time.[^2]
 Sure, I know it's a digital PDF now, but the essence remains the same.
 Its primary purpose has always been to present an individual's **skills**, **experience**, and **qualifications** to potential employers.
 
-It is similar to the score marks in a video game. 
+It is similar to the score marks of a character in a video game. 
 
-When I think of a résumé, I can't avoid remembering the skills and inventory of items from the original [Diablo](https://en.wikipedia.org/wiki/Diablo_(video_game)) RPG game, which I played 20 years ago.
-The résumé is the skill set, it gives a certain score to each attribute.
-A big part of the game is developing the character by levelling up these attributes over time.
+Some résumés make me remembering the skills and inventory of items from the original [Diablo](https://en.wikipedia.org/wiki/Diablo_(video_game)) RPG game, which I played 20 years ago.
+The typical résumé showcases the skill set, it gives a certain score to each attribute.
+A big part of the game is about developing the character by levelling up these attributes over time.
 
-How do we move on to the next level?
+How do we move on to the next level then?
 
-In an RPG game, as in real life, this can only be accomplished through experience.
+In real life, as in an RPG game, the next level can only be reached through gaining experience.
 Essentially, it all comes down to overcoming new challenges and exploring new territories.
 Similarly, a résumé is something that we can advance from level to level in order to unlock more possibilities.
 
 It's the willingness of getting into a state of constant improvement what makes experience to compound. 
 Indeed, I'm technically working on my résumé every single day!
 
-So, ultimately, the purpose of a résumé is to maek a signal of professional growing.  Sometimes it is also a marketing tool.
+So, ultimately, the purpose of a résumé is to signal professional growing.
+
+Sometimes a resume is also a marketing tool.
 This is the document we are gonna send every time we want to demonstrate our suitability for a particular job.
 Thus, the aim is to make a **positive first impression**, **highlight relevant accomplishments**, and **secure an interview** with a potential employer.
 This means it's important to be intentional about our professional goals and how we want to present ourselves to the world.
@@ -85,7 +87,7 @@ It's a live document that we constantly (an intentionally) evolve over time.
 
 I think a good résumé requires an understanding (and vision) of the job market.
 Its purpose should reflect the current and future market's needs in our profession.
-I think that, while a résumé alone won't get you the job, it can get you very close by unlocking the opportunity to get more interview.
+I think that, while a résumé alone won't get you the job, it can get you very close by unlocking the opportunity to get more interviews.
 
 But of course, it only works well its purpose when it is done the righ way. 
 
