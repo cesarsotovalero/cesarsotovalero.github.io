@@ -64,17 +64,16 @@ Its primary purpose has always been to present an individual's **skills**, **exp
 It is similar to the score marks of a character in a video game. 
 
 Some résumés make me remembering the skills and inventory of items from the original [Diablo](https://en.wikipedia.org/wiki/Diablo_(video_game)) RPG game, which I played 20 years ago.
-The typical résumé showcases the skill set, it gives a certain score to each attribute.
+The typical résumé showcases a skill set, it gives a certain score to each attribute.
+Resumes are written by the main character of the story. 
 A big part of the game is about developing the character by levelling up these attributes over time.
 
 How do we move on to the next level then?
 
-In real life, as in an RPG game, the next level can only be reached through gaining experience.
+In real life, as in an RPG game, the next level can only be reached by gaining experience.
 Essentially, it all comes down to overcoming new challenges and exploring new territories.
 Similarly, a résumé is something that we can advance from level to level in order to unlock more possibilities.
-
 It's the willingness of getting into a state of constant improvement what makes experience to compound. 
-Indeed, I'm technically working on my résumé every single day!
 
 So, ultimately, the purpose of a résumé is to signal professional growing.
 
@@ -83,11 +82,11 @@ This is the document we are gonna send every time we want to demonstrate our sui
 Thus, the aim is to make a **positive first impression**, **highlight relevant accomplishments**, and **secure an interview** with a potential employer.
 This means it's important to be intentional about our professional goals and how we want to present ourselves to the world.
 
-It's a live document that we constantly (an intentionally) evolve over time.
+It's a live document that we constantly (an intentionally) evolve over time.[^4]
 
-I think a good résumé requires an understanding (and vision) of the job market.
+I think a good résumé also requires an understanding (and vision) of the job market.
 Its purpose should reflect the current and future market's needs in our profession.
-I think that, while a résumé alone won't get you the job, it can get you very close by unlocking the opportunity to get more interviews.
+While a résumé alone won't get you the job, it can get you very close by unlocking the opportunity to get more interviews.
 
 But of course, it only works well its purpose when it is done the righ way. 
 
@@ -95,15 +94,15 @@ But of course, it only works well its purpose when it is done the righ way.
 
 {% badge /img/posts/2024/2024-01-12/target.png 140 https://www.oxfordlearnersdictionaries.com/definition/american_english/sniper %}
 
-It's harder to sell an believe on a magical pill that cures everything than in one that targets a very particular disease.
+It's harder to sell (an believe) on a magical pill that cures everything than in one that targets a very particular disease.
 
 As I've seen, computer scientists are hired based on an assessment of their capacity to bring something new to the table.
 The most important is proving that one can make an **immediate impact** on a certain project.
-Thus, in the highly competitive tech industry, I believe in adopting the mindset of a special rather than of a generalist when preparing the résumé.
+Thus, in the highly competitive tech industry, I believe in adopting the mindset of a specialist rather than of a generalist when preparing the résumé.
 
-The high reward goes to the sniper. 
+The higher reward goes to the less common pockets, its offer and demand. 
 
-The deal is being as specific as possible and thinking about ourselves from the perspective of the recruiter. 
+The best resumes are as specific as possible.  Written from the perspective of the recruiter rather than from the employee. 
 For example, what I did as a research assistant, or at that technical training back in 2013 is completely irrelevant today.
 Recent experience is much more important!
 So I would rather highlight the most recent and significant accomplishments, rather than dwelling on outdated experiences.
@@ -112,7 +111,7 @@ Understanding the hiring process is also essential, as it varies with the size o
 For instance, larger companies may involve multiple stages, including HR screenings, interviews with hiring managers, and internal job postings. 
 Smaller companies might have a more streamlined process.
 
-Here's how it works:
+Here's an overview of how it works:
  
 ```mermaid
 %%{init: {'theme':'base'}}%%
@@ -136,10 +135,10 @@ These positions are typically filled internally or through referrals.
 Everyone knows, but let me say this again: networking and recommendations are paramount.
 Many PhD graduates, including myself, have secured positions through direct referrals.
 
-The marksmanship resume is focused on precision and relevance.
+The marksmanship resume is focused on **precision** and **relevance**.
 
 To gain access to hidden opportunities, we need to first secure a position within the company.
-Of course,we all need to start somehow and get inside the machine to actually reach those opportunities.
+Of course, we all need to start somehow and get inside the machine to actually reach those opportunities.
 
 # Structure
 
@@ -370,6 +369,8 @@ In conclusion, writing a résumé is about balancing brevity with detail, honest
 [^2]: résumés have been around for centuries. One of the [first résumés in human history](https://résuméspice.com/the-history-of-the-professional-résumé/) is attributed to Leonardo da Vinci. In 1482, he wrote a letter to Ludovico Sforza, the Duke of Milan, outlining his skills and offering his services as a military engineer. This letter is often considered the first recorded résumé. 
 
 [^3]: I've heard about some European regulations disallowing the use of photos in the résumés to avoid discrimination.
+
+[^4]: Indeed, I'm technically working on my résumé every single day!
 
 
 
