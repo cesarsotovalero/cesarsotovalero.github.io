@@ -20,7 +20,7 @@ I'm César, a [computer scientist](./publications.html), [software engineer](./s
 
 I'm passionate about science, software technology, and education. 
 
-Here is my [resumé](../files/CV/cv.pdf).
+Here is my [résumé](../files/CV/cv.pdf).
 
 **Update:** Since April 2023, I'm a Data Engineer at [SEB](https://seb.se/) in Stockholm <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
 

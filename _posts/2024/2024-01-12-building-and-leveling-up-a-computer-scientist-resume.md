@@ -25,7 +25,7 @@ Recently, a few friends kindly asked me to give them feedback on their résumés
 They are all Computer Science PhD graduates looking to land a new job in the tech industry. 
 You might think these people are the cream of the crop, so those résumés should look awesome, right? 
 Well, not really. 
-I remember the first draft of my résumé was awful (I don't even have the guts to share it here).
+I remember the first draft of my résumé was awful (I don't even have the guts to share it here), better looking at the [latest version](../files/CV/cv.pdf).
 I had no experience writing résumés back then, and it took me a while to understand how a great one looks like.
 Building an awesome résumé takes time, effort, and conscious planning. 
 If you ask me the question: 
@@ -94,7 +94,7 @@ But of course, it only works well its purpose when it is done the righ way.
 
 {% badge /img/posts/2024/2024-01-12/target.png 140 https://www.oxfordlearnersdictionaries.com/definition/american_english/sniper %}
 
-It's harder to sell (an believe) on a magical pill that cures everything than in one that targets a very particular disease.
+It's harder to sell (and believe) on a magical pill that cures everything than in one that targets a very particular disease.
 
 As I've seen, computer scientists are hired based on an assessment of their capacity to bring something new to the table.
 The most important is proving that one can make an **immediate impact** on a certain project.
@@ -145,12 +145,13 @@ Of course, we all need to start somehow and get inside the machine to actually r
 {% badge /img/posts/2024/2024-01-12/map.png 140 https://en.wikipedia.org/wiki/Turing_Award %}
 
 When crafting a résumé, presentation and structure are very important.
-For presentation I suggest using a $ \LaTeX $ and tweaking it to make it personal and unique.
+I suggest using a $ \LaTeX $ [template](https://resumegenius.com/resume-templates/latex-resume-template) and tweaking it to make it personal and unique.
+For example, just changing the font family and colors is often enough.
 Each section should be clearly labeled and easy to read.
 
 Regarding structure, I would include the following, from top to down:
 
-1. Name, contact information, and smiling picture.
+1. Name, contact information, and smiling picture 😀.
 2. Links to professional profiles (e.g., LinkedIn or a personal website showcasing projects and publications)
 3. Highlight of unique skills, especially those that align with the job you are applying for. This could include specific programming languages, frameworks, or methodologies that are particularly relevant to the position. 
 4. Detail your education, emphasizing degrees, certifications, and any honors or awards received.
@@ -161,7 +162,7 @@ This strategic approach increases the likelihood that a résumé will be noticed
 
 The hiring manager can understand the depth of your expertise and the impact of your work.
 Thus, the version for her should emphasize technical skills and accomplishments.
-For example, if you got a best paper award in a conference, make sure to explain why is hard (with estimate percentage of people who get it) and valuable (why is such a significant achievement in terms of outreach).
+For example, if you got a best paper award in a conference, make sure to explain why is hard (with estimate % of people who get it) and valuable (why is such a significant achievement in terms of outreach).
 
 Meanwhile, the HR version could be the boring version and include more general keywords and phrases that align with the job description.
 This would help to ensuring it passes through [applicant tracking systems](https://en.wikipedia.org/wiki/Applicant_tracking_system) and resonates with non-technical people.
@@ -175,7 +176,7 @@ Think of your résumé as a direct commercial proposal in which you are the prod
 
 For a product to hit the mark, it should have something that is extremely unique to it, something that makes it stand out from the competition. 
 For a résumé, I believe the first line of accomplishment should be something that no one else (or only a few people) has and is relevant for the role you're applying to.
-For example, if applying for an R&D position in a Machine Learning field and you have won a [Kaggle competition](https://www.kaggle.com/competitions), then I would put that on top, because no one else has it. 
+For example, if applying for an R&D position in a Machine Learning field, and you have won a [Kaggle competition](https://www.kaggle.com/competitions), then I would put that on top, because no one else has it. 
 Again, the goal is to highlight distinct achievements and skills that set you apart from other candidates. 
 Whether it's a particular project with many GitHub stars, a highly-cited research paper, or a particularly unusual skill, make sure to feature something that is exclusively yours and reflects your unique professional identity.
 This distinctive element is what will grab the attention of potential employers and make your résumé memorable.
@@ -337,7 +338,7 @@ This person has already practiced and been validated, in public.
 
 So, in the near future... whatr wharever potential employer would like to see is the person who they want to hire is doing the thing in the increasingly valuable digital world.
 I think the single most valuable skill of the next two decades is creating content online.
-So I believe that that a public (online) body of work is replacing the traditional resumé.
+So I believe that a public (online) body of work is replacing the traditional resumé.
 And I love that, because resumes suck at demonstrating actual skills and abilities.
 
 The concept of résumés has evolved over time, reflecting changes in the job market and the expectations of employers.
