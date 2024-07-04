@@ -174,35 +174,36 @@ For example, the boring version could have many pages and list all your papers, 
 
 {% badge /img/posts/2024/2024-01-12/parchment.png 140 # %}
 
-Think of your résumé as a direct commercial proposal in which you are the product being marketed.
+I think of a résumé as a direct commercial proposal in which a person is the product being marketed.
 
 For a product to hit the mark, it should have something that is extremely unique to it, something that makes it stand out from the competition. 
-For a résumé, I believe the first line of accomplishment should be something that no one else (or only a few people) has and is relevant for the role you're applying to.
-For example, if applying for an R&D position in a Machine Learning field, and you have won a [Kaggle competition](https://www.kaggle.com/competitions), then I would put that on top, because no one else has it. 
-Again, the goal is to highlight distinct achievements and skills that set you apart from other candidates. 
-Whether it's a particular project with many GitHub stars, a highly-cited research paper, or a particularly unusual skill, make sure to feature something that is exclusively yours and reflects your unique professional identity.
-This distinctive element is what will grab the attention of potential employers and make your résumé memorable.
+For a résumé, I believe the first line of accomplishment should be something that no one else (or only a few people) has and is relevant for the role we are applying to.
+For example, if applying for an R&D position in a Machine Learning field, and the applicant has won a [Kaggle competition](https://www.kaggle.com/competitions), then I would put that on top, because no one else has it (assuming there's only one winner). 
+Again, the goal is to highlight distinct achievements and skills that set us apart from other candidates. 
+Whether it's a particular project with many GitHub stars, a highly-cited research paper, or a particularly unusual skill, I make sure to feature something that is exclusive and reflects a unique professional identity.
+This distinctive element is what will grab the attention of potential employers and make  a résumé memorable.
 
-Positioning yourself as a specialist rather than a generalist is key.
+Positioning as specialists rather than generalists is key.
 
-I think you should position yourself as if you are super specialized.
-A broad title like "software engineer" can be too vague and may undervalue your expertise. 
-Instead, narrow down your focus to something more specific, such as "database query specialist" or "machine learning algorithm expert." 
-This specialization not only makes you appear more skilled but also positions you as a premium candidate in your niche. 
-The more precise your skills and experiences are, the more likely you are to stand out in a crowded job market and be perceived as a valuable asset.
+Everyine knows that niche jobs pay better. 
+I think building a super specialized resume is hard, but it pays well in the long run. 
+A broad title like "software developer" can be too vague and may undervalue the real expertise. 
+Instead, I would try to narrow down and focus into something more specific, such as "database query specialist" or "machine learning algorithm expert." 
+This specialization not only makes the resume appear more polished but also positions the person as a premium candidate in her niche. 
+The more sopecific the description of the skills and experiences are, the more chances to stand out in a crowded job market and be perceived as a valuable asset.
 
-Technical hiring managers understand the value of personal projects on GitHub.
+Technical hiring managers understand the value of personal projects on GitHub, but most people don't.
 
 I believe that having own projects is still undervalued in the market.
-A personal project it means that the person has done something herself.
+A popular personal project means that the person has done something herself.
 It demonstrates initiative, creativity, and a passion for the craft. 
-Personal projects also show that you are not just working for a paycheck but are genuinely interested in advancing your skills and contributing to the industry. 
+Personal projects also show that the candidate is not just working for a paycheck but is genuinely interested in advancing her skills and contributes to the community. 
 Be sure to include links to these projects, whether they are GitHub repositories, live applications, or detailed case studies.
 
 Your GitHub account and Google Scholar are your portfolio as a computer scientist.  
 
 All written in the résumé should be supported by facts (I love hyperlinks).
-For example, instead of saying "published research papers", it should "published `X` research papers in journals like `Y`, with `Z` citations in total".
+For example, instead of saying "published research papers", it should read "published `X` research papers in journals like `Y`, with `Z` citations in total".
 These are evidence of your work, it supports the claims made in the résumé and allows potential employers to see the skills in action.
 Facts build credibility and strengthens the overall proposal.
 
