@@ -54,41 +54,39 @@ And it's not so hard to get it right!
 
 {% badge /img/posts/2024/2024-01-12/leveled-up.png 140 https://www.reddit.com/r/Diablo/comments/1awyypu/my_diablo_1_level_50_warrior_after_12_years/ %}
 
-Let's admit it, most resumes are quite boring. 
+Let's admit it, most resumes are quite boring.
 
-The traditional [résumé](https://en.wikipedia.org/wiki/R%C3%A9sum%C3%A9) is a document, essentially a collection of words on a page.
-Interestingly, this old-fashioned format has been around for centuries and survived the test of time.[^2]
-Sure, I know it's a digital PDF now, but the essence remains the same.
-Its primary purpose has always been to present an individual's **skills**, **experience**, and **qualifications** to potential employers.
+Part of the reason could be that the traditional [résumé](https://en.wikipedia.org/wiki/R%C3%A9sum%C3%A9) is essentially a collection of words on a page.
+Interestingly, this old-fashioned format has been around for centuries and has survived the test of time.[^2] 
+Sure, I know it's a digital PDF now, but the essence remains the same. 
+Its primary purpose has always been to present the **skills**, **experience**, and **qualifications** of an individual to potential employers.
 
-It is similar to the score marks of a character in a video game. 
+A résumé is similar to the score marks of a character in a video game.
 
-Some résumés make me remembering the skills and inventory of items from the original [Diablo](https://en.wikipedia.org/wiki/Diablo_(video_game)) RPG game, which I played 20 years ago.
-The typical résumé showcases a skill set, it gives a certain score to each attribute.
-Resumes are written by the main character of the story. 
-A big part of the game is about developing the character by levelling up these attributes over time.
+Some of them remind me of the inventory of items and "attributes" from the original [Diablo RPG game](https://en.wikipedia.org/wiki/Diablo_(video_game)), which I played 20 years ago. 
+The typical résumé showcases a skill set and assigns a certain score to each attribute. 
+The game is mostly about developing the character by leveling up these attributes over time. Résumés are written by the main character of the story.
 
-How do we move on to the next level then?
+We move on to the next level, step by step.
 
-In real life, as in an RPG game, the next level can only be reached by gaining experience.
-Essentially, it all comes down to overcoming new challenges and exploring new territories.
-Similarly, a résumé is something that we can advance from level to level in order to unlock more possibilities.
-It's the willingness of getting into a state of constant improvement what makes experience to compound. 
+In real life, as in an RPG game, the next level can only be reached by gaining experience. 
+Essentially, it all comes down to overcoming new challenges and exploring new territories. 
+Similarly, a résumé is something that we can advance from level to level in order to unlock more possibilities. 
+It's the willingness to get into a state of constant improvement that makes experience compound.
 
-So, ultimately, the purpose of a résumé is to signal professional growing.
+So, ultimately, the purpose of a résumé is to signal professional growth.
 
-Sometimes a resume is also a marketing tool.
-This is the document we are gonna send every time we want to demonstrate our suitability for a particular job.
-Thus, the aim is to make a **positive first impression**, **highlight relevant accomplishments**, and **secure an interview** with a potential employer.
+Sometimes a résumé is also a marketing tool. This is the document we send every time we want to demonstrate our suitability for a particular job. 
+Thus, the aim is to make a **positive first impression**, **highlight relevant accomplishments**, and **secure a job interview**. 
 This means it's important to be intentional about our professional goals and how we want to present ourselves to the world.
 
-It's a live document that we constantly (an intentionally) evolve over time.[^4]
+It's a living document that we constantly and intentionally evolve over time.[^4]
 
-I think a good résumé also requires an understanding (and vision) of the job market.
-Its purpose should reflect the current and future market's needs in our profession.
+I think a good résumé also requires an understanding and a vision of the job market. 
+Its purpose should reflect the current and future market needs in our profession. 
 While a résumé alone won't get you the job, it can get you very close by unlocking the opportunity to get more interviews.
 
-But of course, it only works well its purpose when it is done the righ way. 
+But of course, it can only fulfill its purpose if it is done the right way.
 
 # Marksmanship
 
@@ -96,11 +94,11 @@ But of course, it only works well its purpose when it is done the righ way.
 
 It's harder to sell (and believe) on a magical pill that cures everything than in one that targets a very particular disease.
 
-As I've seen, computer scientists are hired based on an assessment of their capacity to bring something new to the table.
-The most important is proving that one can make an **immediate impact** on a certain project.
+Computer scientists are hired based on an assessment of their capacity to bring something new to the table.
+The most important is proving that one can make an **immediate impact on a certain project**.
 Thus, in the highly competitive tech industry, I believe in adopting the mindset of a specialist rather than of a generalist when preparing the résumé.
 
-The higher reward goes to the less common pockets, its offer and demand. 
+Those with unique skills earn the highest rewards, driven by the forces of supply and demand.
 
 The best resumes are as specific as possible.  Written from the perspective of the recruiter rather than from the employee. 
 For example, what I did as a research assistant, or at that technical training back in 2013 is completely irrelevant today.
