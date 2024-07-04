@@ -76,7 +76,7 @@ It's the willingness to get into a state of constant improvement that makes expe
 
 So, ultimately, the purpose of a résumé is to signal professional growth.
 
-Sometimes a résumé is also a marketing tool. This is the document we send every time we want to demonstrate our suitability for a particular job. 
+Sometimes a résumé serves also as a marketing tool. This is the document we send every time we want to demonstrate our suitability for a particular job. 
 Thus, the aim is to make a **positive first impression**, **highlight relevant accomplishments**, and **secure a job interview**. 
 This means it's important to be intentional about our professional goals and how we want to present ourselves to the world.
 
@@ -98,15 +98,17 @@ Computer scientists are hired based on an assessment of their capacity to bring 
 The most important is proving that one can make an **immediate impact on a certain project**.
 Thus, in the highly competitive tech industry, I believe in adopting the mindset of a specialist rather than of a generalist when preparing the résumé.
 
-Those with unique skills earn the highest rewards, driven by the forces of supply and demand.
+Those with unique skills earn the highest rewards, it's supply and demand.
 
-The best resumes are as specific as possible.  Written from the perspective of the recruiter rather than from the employee. 
+The best resumes list very specific skills.  They are written from the perspective of the recruiter rather than from the employee. 
 For example, what I did as a research assistant, or at that technical training back in 2013 is completely irrelevant today.
 Recent experience is much more important!
 So I would rather highlight the most recent and significant accomplishments, rather than dwelling on outdated experiences.
 
-Understanding the hiring process is also essential, as it varies with the size of the company.
-For instance, larger companies may involve multiple stages, including HR screenings, interviews with hiring managers, and internal job postings. 
+As in any other game, there are certain rules. 
+
+Understanding the hiring process is also essential, as it varies depending on the size of the company.
+For instance, larger companies may involve multiple stages, including initial HR screenings, interviews with hiring managers, and internal job postings. 
 Smaller companies might have a more streamlined process.
 
 Here's an overview of how it works:
@@ -130,13 +132,15 @@ Building a strong network and seeking recommendations can be as important as hav
 
 The most coveted jobs are ~~almost~~ never publicly advertised.
 These positions are typically filled internally or through referrals.
-Everyone knows, but let me say this again: networking and recommendations are paramount.
-Many PhD graduates, including myself, have secured positions through direct referrals.
+Everyone knows, but let me emphasize once again: **networking and direct recommendations are paramount**.
+Indeed, many PhD graduates, including myself, have secured positions through direct referrals.
 
-The marksmanship resume is focused on **precision** and **relevance**.
+The marksmanship resume is focused on precision and relevance.
 
-To gain access to hidden opportunities, we need to first secure a position within the company.
+
 Of course, we all need to start somehow and get inside the machine to actually reach those opportunities.
+To gain access to hidden opportunities, we need to first secure a position.
+For that, I suggest crafting a resume that appeals to specific people.
 
 # Structure
 
@@ -159,8 +163,8 @@ I would also recommend  creating two versions of the résumé: one tailored for 
 This strategic approach increases the likelihood that a résumé will be noticed by both technical and non-technical personnel involved in the hiring process.
 
 The hiring manager can understand the depth of your expertise and the impact of your work.
-Thus, the version for her should emphasize technical skills and accomplishments.
-For example, if you got a best paper award in a conference, make sure to explain why is hard (with estimate % of people who get it) and valuable (why is such a significant achievement in terms of outreach).
+Thus, the version for her should emphasize unique technical skills and accomplishments.
+For example, if you got a best paper award in a conference, make sure to explain why is hard (add an estimate % of people who get it) and valuable (why is such a significant achievement).
 
 Meanwhile, the HR version could be the boring version and include more general keywords and phrases that align with the job description.
 This would help to ensuring it passes through [applicant tracking systems](https://en.wikipedia.org/wiki/Applicant_tracking_system) and resonates with non-technical people.
