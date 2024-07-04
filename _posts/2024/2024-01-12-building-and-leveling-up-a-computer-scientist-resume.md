@@ -21,11 +21,11 @@ author: cesarsotovalero
 published: false
 ---
 
-Recently, a few friends kindly asked me to give them feedback on their résumés. 
+Recently, a few friends kindly asked me to provide some feedback on their résumés. 
 They are all Computer Science PhD graduates looking to land a new job in the tech industry. 
 You might think these people are the cream of the crop, so those résumés should look awesome, right? 
 Well, not really. 
-I remember the first draft of my résumé was awful (I don't even have the guts to share it here), better looking at the [latest version](../files/CV/cv.pdf).
+I still remember the first draft of my résumé, it was awful (I don't even have the guts to share it here, better looking at its [latest version](../files/CV/cv.pdf)).
 I had no experience writing résumés back then, and it took me a while to understand how a great one looks like.
 Building an awesome résumé takes time, effort, and conscious planning. 
 If you ask me the question: 
@@ -34,7 +34,7 @@ I think of three things: **simplicity**, **solidity**, and **uniqueness**.
 This post revolves around what I mean by these three words.
 Alright, I know there is already a ton of content out there about writing résumés. 
 However, I still want to share **my personal take on this matter**.
-This topic is subjective and everyone has a different perspective. 
+The reason is that this topic is subjective and everyone has a different perspective. 
 So here I'm just sharing mine.
 To narrow it down, my views and opinions in this post are specifically targeting PhD students about to graduate, as well as computer scientists. 
 I'll cover how I envision the résumé of a scientist.
@@ -54,10 +54,10 @@ And it's not so hard to get it right!
 
 {% badge /img/posts/2024/2024-01-12/leveled-up.png 140 https://www.reddit.com/r/Diablo/comments/1awyypu/my_diablo_1_level_50_warrior_after_12_years/ %}
 
-Let's admit it, most resumes are quite boring.
+Let's admit it, most résumés are quite boring.
 
-Part of the reason could be that the traditional [résumé](https://en.wikipedia.org/wiki/R%C3%A9sum%C3%A9) is essentially a collection of words on a page.
-Interestingly, this old-fashioned format has been around for centuries and has survived the test of time.[^2] 
+Part of the reason could be that the traditional [résumé](https://en.wikipedia.org/wiki/R%C3%A9sum%C3%A9) is basically a collection of words on a page.
+Interestingly, this old-fashioned format has been around for centuries and survived the test of time.[^2] 
 Sure, I know it's a digital PDF now, but the essence remains the same. 
 Its primary purpose has always been to present the **skills**, **experience**, and **qualifications** of an individual to potential employers.
 
@@ -100,7 +100,7 @@ Thus, in the highly competitive tech industry, I believe in adopting the mindset
 
 Those with unique skills earn the highest rewards, it's supply and demand.
 
-The best resumes list very specific skills.  They are written from the perspective of the recruiter rather than from the employee. 
+The best résumés list very specific skills.  They are written from the perspective of the recruiter rather than from the employee. 
 For example, what I did as a research assistant, or at that technical training back in 2013 is completely irrelevant today.
 Recent experience is much more important!
 So I would rather highlight the most recent and significant accomplishments, rather than dwelling on outdated experiences.
@@ -116,13 +116,13 @@ Here's an overview of how it works:
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph TD
-    A1[Candidate 1 🧑‍🦱] -->|Resume| B1[Is Large Corp?]
-    A2[Candidate 2 👩] -->|Resume| B1[Is Large Corp?]
-    A3[Candidate 3 👨‍🦰] -->|Resume| B1[Is Large Corp?]
+    A1[Candidate 1 🧑‍🦱] -->|résumé| B1[Is Large Corp?]
+    A2[Candidate 2 👩] -->|résumé| B1[Is Large Corp?]
+    A3[Candidate 3 👨‍🦰] -->|résumé| B1[Is Large Corp?]
     B1 -->|Yes| B2[HR Department 🏢]
     B1 -->|No| B3[Hiring Manager 👱]
-    B2 -->|Filter Resumes| B3
-    B3 -->|Review Resumes| C1{Looking good?}
+    B2 -->|Filter résumés| B3
+    B3 -->|Review résumés| C1{Looking good?}
     C1 -->|yes ✅| D1[Interview 👱👩]
     C1 -->|no ❌| D3[Next one please!]
     D1 -->|Final Decision| E1[Candidate Hired 🎉]
@@ -135,19 +135,19 @@ These positions are typically filled internally or through referrals.
 Everyone knows, but let me emphasize once again: **networking and direct recommendations are paramount**.
 Indeed, many PhD graduates, including myself, have secured positions through direct referrals.
 
-The marksmanship resume is focused on precision and relevance.
+The marksmanship résumé is focused on precision and relevance.
 
 
 Of course, we all need to start somehow and get inside the machine to actually reach those opportunities.
 To gain access to hidden opportunities, we need to first secure a position.
-For that, I suggest crafting a resume that appeals to specific people.
+For that, I suggest crafting a résumé that appeals to specific people.
 
 # Structure
 
 {% badge /img/posts/2024/2024-01-12/map.png 140 https://en.wikipedia.org/wiki/Turing_Award %}
 
 When crafting a résumé, presentation and structure are very important.
-I suggest using a $ \LaTeX $ [template](https://resumegenius.com/resume-templates/latex-resume-template) and tweaking it to make it personal and unique.
+I suggest using a $ \LaTeX $ [template](https://résumégenius.com/résumé-templates/latex-résumé-template) and tweaking it to make it personal and unique.
 For example, just changing the font family and colors is often enough.
 Each section should be clearly labeled and easy to read.
 
@@ -341,7 +341,7 @@ This person has already practiced and been validated, in public.
 So, in the near future... whatr wharever potential employer would like to see is the person who they want to hire is doing the thing in the increasingly valuable digital world.
 I think the single most valuable skill of the next two decades is creating content online.
 So I believe that a public (online) body of work is replacing the traditional resumé.
-And I love that, because resumes suck at demonstrating actual skills and abilities.
+And I love that, because résumés suck at demonstrating actual skills and abilities.
 
 The concept of résumés has evolved over time, reflecting changes in the job market and the expectations of employers.
 With the industrial revolution, there was a greater need for workers to present their skills and experience in a more formalized manner.
@@ -362,8 +362,8 @@ In conclusion, writing a résumé is about balancing brevity with detail, honest
 
 # External Resources
 
-- [The resume that got a software engineer a $300,000 job at Google.](https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f)
-- [Pimp Up Your Resume](https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html)
+- [The résumé that got a software engineer a $300,000 job at Google.](https://levelup.gitconnected.com/the-résumé-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f)
+- [Pimp Up Your résumé](https://www.yegor256.com/2016/03/08/pimp-up-your-résumé.html)
 
 # Footnotes
 
