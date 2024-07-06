@@ -211,7 +211,7 @@ The point is, you must be ready to substantiate every word.
 One way to achieve this is by ensuring that everything written in the résumé is supported by facts and could be easily checked (I love hyperlinks). 
 For example, instead of saying "published research papers," it should read "published `X` research papers in journals like `Y`, with `Z` citations in total (permanent link here)."
 These links are evidence of your work, they support the claims made in the résumé and allow potential employers to grasp the skills in action.
-Facts build skills' credibility and strengthen the overall employee proposal.
+Facts build credibility and strengthen the overall employee proposal.
 
 ## Skills
 
