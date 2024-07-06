@@ -365,29 +365,24 @@ Changing jobs too frequently can make you appear unstable and unreliable.
 
 # Fully Upgraded
 
-The concept of résumés has evolved over time, reflecting changes in the job market and the expectations of employers.
-With the industrial revolution, there was a greater need for workers to present their skills and experience in a more formalized manner.
-People changed jobs more frequently, and the qualifications required for different roles became more specialized.
-Hence, résumés began to include more structured information about an individual’s work history and education.
-The rise of office jobs and corporate culture in the mid-20th century further solidified the importance of résumés.
-Employers began to expect well-organized résumés that clearly outlined an applicant's qualifications and experience.
+The world has changed fundamentally in the last decades, résumés included.  
 
-The world has changed fundamentally in the last decades.  
-
-Consider two people with the same grades and qualifications. 
+Consider two computer science graduated with the same grades and qualifications. 
 One of them applies for a job with a traditional résumé, showing a history of moving from company `X` to `Y` to `Z` every three to five years.
-The other has published research papers, been featured in local media, and has 100K followers. 
-Which one do you think has a better chance of getting the job?
+The other has published research papers, been featured in the local media, and has 100K followers on LinkedIn. 
+Which one do you think has a better chance of getting the greatest job?
 The answer, I believe, is the second person.
 The reason is not the number of followers but the original, valuable content that this person has proven to be able to create. 
-This individual has already practiced and been validated in public.
+This individual has already shown her craft to the public, and others have validated its quality. 
 
-The future could be digital engagement.
-
+The future of résumés, I believe, is personal branding at a global scale. 
+ 
 So, in the near future, potential employers will likely want to see that the person they are considering for a position is actively engaging and creating in the increasingly valuable digital world. 
-I think the single most valuable skill of the next two decades could be creating something original online. 
-Eventually, A public (online) body of work is replacing the traditional résumé.
+I think the single most valuable skill of the next two decades could be creating something original and useful online.
+ 
+Eventually, a public body of work will certainly replace the traditional résumé.
 And I love that, because it's an evolution that effectively demonstrates actual skills and abilities.
+Are you ready for the upgrade?
 
 # External Resources
 
