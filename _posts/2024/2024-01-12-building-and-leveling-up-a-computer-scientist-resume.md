@@ -185,7 +185,7 @@ Again, the goal is to highlight distinct achievements and skills that set us apa
 Whether it's a particular project with many GitHub stars, a highly-cited research paper, or a particularly unusual skill, make sure to feature something that is exclusive and reflects a unique professional identity.
 This distinctive element is what will grab the attention of potential employers and make  a résumé memorable.
 
-Everyone knows that niche jobs pay better, so positioning as a specialist rather than as a generalist is key.
+Everyone knows that niche jobs pay better, so positioning as a specialist rather than as a generalist is recommended.
 
 Building a super specialized résumé is hard, but it pays well in the long run. 
 A broad title like "software developer" can be too vague and may undervalue the real expertise. 
