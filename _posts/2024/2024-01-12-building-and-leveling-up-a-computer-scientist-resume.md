@@ -82,11 +82,11 @@ This means it's important to be intentional about our professional goals and how
 
 The résumé is a living document that we constantly (and intentionally) evolve over time.[^4]
 
-I think a good résumé also requires an understanding and a certain vision of the job market. 
-Its purpose should reflect the current and future market needs in our profession. 
-While a résumé alone won't get you the job, it can get you very close by unlocking the opportunity to get more interviews.
+I think a good résumé also requires an understanding, and a certain vision, of the job market. 
+It should reflect the current and future market needs in our field. 
+A résumé alone won't get us a job _per se_.  However, it leads us very close by unlocking the opportunity to get more interviews.
 
-But of course, it can only fulfill its purpose if it is done right.
+And of course, it can only fulfill its purpose if it is done the right way.
 
 # Marksmanship
 
