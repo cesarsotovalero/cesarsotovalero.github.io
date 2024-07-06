@@ -400,7 +400,7 @@ And I love that, because it's an evolution that effectively demonstrates actual 
 
 [^1]: I think just a small number of developers could really claim to be good at Git. Most of us only know a few commands and that's. If you start digging deep then you will ~~probably~~ understand how complex Git is. 
 
-[^2]: résumés have been around for centuries. One of the [first résumés in human history](https://résuméspice.com/the-history-of-the-professional-résumé/) is attributed to Leonardo da Vinci. In 1482, he wrote a letter to Ludovico Sforza, the Duke of Milan, outlining his skills and offering his services as a military engineer. This letter is often considered the first recorded résumé. 
+[^2]: Résumés have been around for centuries. One of the [first résumés in human history](https://résuméspice.com/the-history-of-the-professional-résumé/) is attributed to Leonardo da Vinci. In 1482, he wrote a letter to Ludovico Sforza, the Duke of Milan, outlining his skills and offering his services as a military engineer. This letter is often considered the first recorded résumé. 
 
 [^3]: I've heard about some European regulations disallowing the use of photos in the résumés to avoid discrimination.
 
