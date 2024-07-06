@@ -37,7 +37,7 @@ However, I still want to share **my personal take on this matter**.
 The reason is that this topic is highly subjective and everyone has a different perspective. 
 So here I'm just sharing mine.
 To narrow it down, my views and opinions in this post are specifically targeting computer scientists and PhD students about to graduate. 
-I'll cover how I envision the résumé of a scientist, what content to add what to skip, its structure, and what I believe are common mistakes to avoid.
+I'll cover how I envision the résumé of a scientist, what content to add, what to skip, its structure, and what I believe are common mistakes to avoid.
 Hopefully, my tips will help you create a résumé that's strong, powerful, memorable, and catchy; and maybe receive a $200K+ offer (just kidding).
 But seriously, a good résumé can make a huge difference in your job search and career development.
 And it's not so hard to get it right!
