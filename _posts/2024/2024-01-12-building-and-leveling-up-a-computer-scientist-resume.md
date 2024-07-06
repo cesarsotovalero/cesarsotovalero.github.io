@@ -80,7 +80,7 @@ This is the document we send every time we want to demonstrate our suitability f
 Thus, the aim is to make a positive first impression, highlight relevant accomplishments, and secure a job interview. 
 This means it's important to be intentional about our professional goals and how we want to present ourselves to the world.
 
-A résumé is living document that we constantly and intentionally evolve over time.[^4]
+The résumé is a living document that we constantly (and intentionally) evolve over time.[^4]
 
 I think a good résumé also requires an understanding and a certain vision of the job market. 
 Its purpose should reflect the current and future market needs in our profession. 
