@@ -92,11 +92,11 @@ And of course, it can only fulfill its purpose if it is done the right way.
 
 {% badge /img/posts/2024/2024-01-12/target.png 140 https://www.oxfordlearnersdictionaries.com/definition/american_english/sniper %}
 
-It’s harder to believe in (and sell) a magical pill that cures everything than one that targets a very specific disease.
+It’s harder to believe in (and to sell) a magical pill that cures everything than one that targets a very specific disease.
 
 Computer scientists are hired based on an assessment of their capacity to bring something new to the table.
-To get hired, the most important is proving that one can make an **immediate impact on a certain project**.
-Thus, in the highly competitive tech industry, I believe in adopting the mindset of a specialist rather than of a generalist when preparing the résumé.
+To get hired, the most important is proving that one can make an **immediate impact** on a certain project.
+Thus, in the highly competitive tech industry, I believe in adopting the mindset of a specialist rather than of a generalist when preparing a résumé.
 
 Those with unique skills earn the highest rewards; it's supply and demand.
 
@@ -110,8 +110,8 @@ So I would highlight what I did in my previous job, rather than dwelling on outd
 As in any other game, the hiring process has specific rules. 
 
 Understanding the hiring process is also essential, as it varies depending on the size of the company.
-For instance, larger companies may involve multiple stages, including initial HR screenings, interviews with hiring managers, and external/internal job postings and background checks. 
-Smaller companies and startups might have a more streamlined process.
+For instance, getting hired at larger companies may involve multiple stages, including initial HR screenings, interviews with managers, and external/internal job postings and even formal background checks via third party companies. 
+Smaller organizations and startups might have a more streamlined process.
 
 To get an idea, here's an overview of how the hiring process works:
  
