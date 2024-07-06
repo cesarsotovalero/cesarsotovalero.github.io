@@ -382,6 +382,7 @@ I think the single most valuable skill of the next two decades could be creating
  
 Eventually, a public body of work will certainly replace the traditional résumé.
 And I love that, because it's an evolution that effectively demonstrates actual skills and abilities.
+
 Are you ready for the upgrade?
 
 # External Resources
