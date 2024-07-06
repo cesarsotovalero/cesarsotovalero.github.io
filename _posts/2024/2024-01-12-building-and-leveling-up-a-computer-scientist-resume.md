@@ -152,13 +152,13 @@ I suggest using a $ \LaTeX $ [template](https://resumegenius.com/résumé-templa
 For example, just changing the font family and colors is often enough.
 Each section should be clearly labeled and easy to read.
 
-Regarding structure, I would include the following, from top to down:
+Regarding structure, I would include the following, from top to bottom:
 
 1. Name, contact information, and smiling picture 😀.
 2. Links to professional profiles (e.g., LinkedIn or a personal website showcasing projects and publications)
 3. Highlight of unique skills, especially those that align with the job you are applying for. This could include specific programming languages, frameworks, or methodologies that are particularly relevant to the position. 
-4. Detail your education, emphasizing degrees, certifications, and any honors or awards received.
-5. Hobbies or particular skills outside the regular job (for example, if you are a polyglot or engaged in a particular sport).
+4. Official education, emphasizing degrees, certifications, and any honors or awards received.
+5. Hobbies or particular skills outside the regular job (for example, if you are a polyglot or a superstar in a particular sport).
 
 I would also recommend  creating two versions of the résumé: one tailored for the hiring manager and another for the HR department.
 Having two versions could increase the chances to be noticed by both technical and non-technical people involved in the hiring process.
