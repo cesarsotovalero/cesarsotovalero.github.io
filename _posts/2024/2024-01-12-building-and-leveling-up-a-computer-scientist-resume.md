@@ -363,9 +363,7 @@ Employers typically look for a minimum of three years at each company.
 This stability indicates that you’ve had enough time to learn and contribute significantly. 
 Changing jobs too frequently can make you appear unstable and unreliable.
 
-# Back to the Future
-
-The past is in the past.
+# Fully Upgraded
 
 The concept of résumés has evolved over time, reflecting changes in the job market and the expectations of employers.
 With the industrial revolution, there was a greater need for workers to present their skills and experience in a more formalized manner.
