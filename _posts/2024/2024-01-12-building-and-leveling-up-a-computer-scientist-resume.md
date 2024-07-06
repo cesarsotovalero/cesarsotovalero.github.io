@@ -269,11 +269,11 @@ Such transparency can be very appealing to _some_ potential employers.
 
 Including a professional picture and links to verify achievements helps to make an application memorable.
 
-I believe that including a professional picture is important, despite some regional regulations [against it](https://qr.ae/psQr3b) to avoid discrimination.[^3]
-Hiring managers need to see who they will work with.
-A clear, [professional](https://medium.com/cresuma/the-impact-of-photos-on-resumes-a-comprehensive-guide-for-job-seekers-e2b43735f64d) photo helps hiring managers visualize who they might be working with and can make your application more memorable.
+I believe that including a professional picture is important, despite some regional regulations [against it](https://qr.ae/psQr3b).[^3]
+Hiring managers want to see the human face if the person they will work with.
+A clear, [professional](https://medium.com/cresuma/the-impact-of-photos-on-resumes-a-comprehensive-guide-for-job-seekers-e2b43735f64d) also contributes to make the application more memorable.
 
-The more time/effort spent to accomplish something, the first they should be in the résumé.  
+The more time/effort spent to accomplish something, the earlier it should appear in the résumé.  
 
 Links speak for themselves.
 Alongside the picture, provide links to your accomplishments. 
