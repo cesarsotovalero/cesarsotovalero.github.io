@@ -166,7 +166,7 @@ Having two versions could increase the chances to be noticed by both technical a
 The version for the hiring manager should be short and sharp.
 As a technical person, the hiring manager should be able to recognize the depth and impact of someone's expertise without the need of reading the boilerplate.
 Thus, the version for her should emphasize unique technical skills and accomplishments.
-For example, if you got a best paper award in a conference, make sure to explain why is hard (add an estimate % of people who get it) and valuable (why is such a significant achievement).
+For example, if you got some "best paper award" in a conference, make sure to explain why is hard (add an estimate % of people who get it) and valuable (why is such a significant achievement).
 
 Meanwhile, the version for HR could be the boring version and include all those general keywords and phrases that are "expected" to align with the job description.
 This would help to ensuring it passes through [applicant tracking systems](https://en.wikipedia.org/wiki/Applicant_tracking_system) and resonates with non-technical people.
@@ -180,7 +180,7 @@ I think of a résumé as a direct commercial proposal in which a person is the p
 
 For a product to hit the mark, it should have something that is extremely unique to it, some value that makes it stand out from the competition. 
 For a résumé, I believe the first line of accomplishment should be something that no one else (or only a few people) has and is relevant for the role we are applying to.
-For example, if applying for an research and development (R&D) position in a machine learning (ML) field, and the applicant has won a [Kaggle competition](https://www.kaggle.com/competitions), then I would put that on top, because no one else has it (assuming there's only one winner). 
+For example, if applying for a research and development (R&D) position in a machine learning (ML) field, and the applicant has won a [Kaggle competition](https://www.kaggle.com/competitions), then I would put that on top, because no one else has it (assuming there's only one winner). 
 Again, the goal is to highlight distinct achievements and skills that set us apart from other candidates. 
 Whether it's a particular project with many GitHub stars, a highly-cited research paper, or a particularly unusual skill, make sure to feature something that is exclusive and reflects a unique professional identity.
 This distinctive element is what will grab the attention of potential employers and make  a résumé memorable.
@@ -223,7 +223,7 @@ When it comes to listing skills on a résumé, I often see candidates including 
 Frankly, this approach misses the mark.
 What does it mean to be a _frontend_?
 These are basic instruments that all developers should have.
-To me they are similar to listing "laptop," "Firefox," "Internet," or "coffee."
+To me, they are similar to listing "laptop," "Firefox," "Internet," or "coffee."
 Instead, I would recommend focusing on specific frameworks and technologies that demonstrate depth of knowledge and expertise. 
 For instance, mention frameworks like Django or Flask for Python, React or Angular for frontend development, or OpenShift for cloud infrastructure.
 These specific tools paint a clearer picture of capabilities and the environments a candidate excel in.
@@ -278,9 +278,9 @@ The more time/effort spent to accomplish something, the earlier it should appear
 Links speak for themselves.
 Alongside the picture, provide links to your accomplishments. 
 Whether it’s a link to a published paper, a successful project, or a professional profile, these links serve as concrete evidence of our achievements. 
-However, I would advise against listing MOOC courses, as we would just decreasing or value or discrediting ourselves. 
+However, I would advise against listing MOOC courses, as we would just decrease or value or discrediting ourselves. 
 While they are excellent for personal growth, mentioning them on our résumé might detract from your formal education and professional experience.
-I only keep [my own list of online MOOCs](../courses.html) for myself so I can come back to them later.
+I only keep [my own list of online MOOCs](../courses.html) for myself, so I can come back to them later.
 
 ## Passions
 
@@ -398,18 +398,15 @@ Are you ready for the upgrade?
 
 # External Resources
 
-- [:earth_americas: The resume that got a software engineer a $300,000 job at Google.](https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f)
+- [:earth_americas: The resume that got a software engineer a $300,000 job at Google](https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f)
 - [:earth_americas: Pimp Up Your Resume](https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html)
 
 # Footnotes
 
 [^1]: I think just a small number of developers could really claim to be good at Git. Most of us only know a few commands and that's. If you start digging deep then you will ~~probably~~ understand how complex Git is. 
 
-[^2]: Résumés have been around for centuries. One of the [first résumés in human history](https://résuméspice.com/the-history-of-the-professional-résumé/) is attributed to Leonardo da Vinci. In 1482, he wrote a letter to Ludovico Sforza, the Duke of Milan, outlining his skills and offering his services as a military engineer. This letter is often considered the first recorded résumé. 
+[^2]: Résumés have been around for centuries. One of the [first résumés in human history](https://resumespice.com/the-history-of-the-professional-resume/) is attributed to Leonardo da Vinci. In 1482, he wrote a letter to Ludovico Sforza, the Duke of Milan, outlining his skills and offering his services as a military engineer. This letter is often considered the first recorded résumé. 
 
 [^3]: I've heard about some European regulations disallowing the use of photos in the résumés to avoid discrimination.
 
 [^4]: Indeed, I'm technically working on building up my résumé every single day!
-
-
-
