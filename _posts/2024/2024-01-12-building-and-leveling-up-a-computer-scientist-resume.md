@@ -37,7 +37,7 @@ However, I still want to share **my personal take on this matter**.
 The reason is that this topic is highly subjective and everyone has a different perspective. 
 So here I'm just sharing mine.
 To narrow it down, my views and opinions in this post are specifically targeting computer scientists and PhD students about to graduate. 
-I'll cover how I envision the résumé of a scientist, what content to add what to skip, its structure, and what I believe are common mistakes to avoid.
+I'll cover how I envision the résumé of a scientist, what content to add, what to skip, its structure, and what I believe are common mistakes to avoid.
 Hopefully, my tips will help you create a résumé that's strong, powerful, memorable, and catchy; and maybe receive a $200K+ offer (just kidding).
 But seriously, a good résumé can make a huge difference in your job search and career development.
 And it's not so hard to get it right!
@@ -80,23 +80,23 @@ This is the document we send every time we want to demonstrate our suitability f
 Thus, the aim is to make a positive first impression, highlight relevant accomplishments, and secure a job interview. 
 This means it's important to be intentional about our professional goals and how we want to present ourselves to the world.
 
-A résumé is living document that we constantly and intentionally evolve over time.[^4]
+The résumé is a living document that we constantly (and intentionally) evolve over time.[^4]
 
-I think a good résumé also requires an understanding and a certain vision of the job market. 
-Its purpose should reflect the current and future market needs in our profession. 
-While a résumé alone won't get you the job, it can get you very close by unlocking the opportunity to get more interviews.
+I think a good résumé also requires an understanding, and a certain vision, of the job market. 
+It should reflect the current and future market needs in our field. 
+A résumé alone won't get us a job _per se_.  However, it leads us very close by unlocking the opportunity to get more interviews.
 
-But of course, it can only fulfill its purpose if it is done right.
+And of course, it can only fulfill its purpose if it is done the right way.
 
 # Marksmanship
 
 {% badge /img/posts/2024/2024-01-12/target.png 140 https://www.oxfordlearnersdictionaries.com/definition/american_english/sniper %}
 
-It’s harder to believe in (and sell) a magical pill that cures everything than one that targets a very specific disease.
+It’s harder to believe in (and to sell) a magical pill that cures everything than one that targets a very specific disease.
 
 Computer scientists are hired based on an assessment of their capacity to bring something new to the table.
-To get hired, the most important is proving that one can make an **immediate impact on a certain project**.
-Thus, in the highly competitive tech industry, I believe in adopting the mindset of a specialist rather than of a generalist when preparing the résumé.
+To get hired, the most important is proving that one can make an **immediate impact** on a certain project.
+Thus, in the highly competitive tech industry, I believe in adopting the mindset of a specialist rather than of a generalist when preparing a résumé.
 
 Those with unique skills earn the highest rewards; it's supply and demand.
 
@@ -110,8 +110,8 @@ So I would highlight what I did in my previous job, rather than dwelling on outd
 As in any other game, the hiring process has specific rules. 
 
 Understanding the hiring process is also essential, as it varies depending on the size of the company.
-For instance, larger companies may involve multiple stages, including initial HR screenings, interviews with hiring managers, and external/internal job postings and background checks. 
-Smaller companies and startups might have a more streamlined process.
+For instance, getting hired at larger companies may involve multiple stages, including initial HR screenings, interviews with managers, and external/internal job postings and even formal background checks via third party companies. 
+Smaller organizations and startups might have a more streamlined process.
 
 To get an idea, here's an overview of how the hiring process works:
  
@@ -152,13 +152,13 @@ I suggest using a $ \LaTeX $ [template](https://resumegenius.com/résumé-templa
 For example, just changing the font family and colors is often enough.
 Each section should be clearly labeled and easy to read.
 
-Regarding structure, I would include the following, from top to down:
+Regarding structure, I would include the following, from top to bottom:
 
 1. Name, contact information, and smiling picture 😀.
 2. Links to professional profiles (e.g., LinkedIn or a personal website showcasing projects and publications)
 3. Highlight of unique skills, especially those that align with the job you are applying for. This could include specific programming languages, frameworks, or methodologies that are particularly relevant to the position. 
-4. Detail your education, emphasizing degrees, certifications, and any honors or awards received.
-5. Hobbies or particular skills outside the regular job (for example, if you are a polyglot or engaged in a particular sport).
+4. Official education, emphasizing degrees, certifications, and any honors or awards received.
+5. Hobbies or particular skills outside the regular job (for example, if you are a polyglot or a superstar in a particular sport).
 
 I would also recommend  creating two versions of the résumé: one tailored for the hiring manager and another for the HR department.
 Having two versions could increase the chances to be noticed by both technical and non-technical people involved in the hiring process.
@@ -185,7 +185,7 @@ Again, the goal is to highlight distinct achievements and skills that set us apa
 Whether it's a particular project with many GitHub stars, a highly-cited research paper, or a particularly unusual skill, make sure to feature something that is exclusive and reflects a unique professional identity.
 This distinctive element is what will grab the attention of potential employers and make  a résumé memorable.
 
-Everyone knows that niche jobs pay better, so positioning as a specialist rather than as a generalist is key.
+Everyone knows that niche jobs pay better, so positioning as a specialist rather than as a generalist is recommended.
 
 Building a super specialized résumé is hard, but it pays well in the long run. 
 A broad title like "software developer" can be too vague and may undervalue the real expertise. 
@@ -208,10 +208,10 @@ Be prepared to back up every word on it.
 If you claim to be a Java expert, be ready to discuss the key features introduced in the latest Java version. 
 If you can't do that, don't call yourself an "expert."
 The point is, you must be ready to substantiate every word. 
-One way to achieve this is by ensuring that everything written in the résumé is supported by facts (I love hyperlinks). 
-For example, instead of saying "published research papers," it should read "published `X` research papers in journals like `Y`, with `Z` citations in total (link here)."
-These links are evidence of your work, they support the claims made in the résumé and allow potential employers to see the skills in action.
-Facts build skills' credibility and strengthen the overall employee proposal.
+One way to achieve this is by ensuring that everything written in the résumé is supported by facts and could be easily checked (I love hyperlinks). 
+For example, instead of saying "published research papers," it should read "published `X` research papers in journals like `Y`, with `Z` citations in total (permanent link here)."
+These links are evidence of your work, they support the claims made in the résumé and allow potential employers to grasp the skills in action.
+Facts build credibility and strengthen the overall employee proposal.
 
 ## Skills
 
@@ -256,7 +256,7 @@ It's far more effective to speak with modesty and let the achievements and exper
 Only if asked, include testimonials or references from colleagues and mentors who can vouch for our skills and character. 
 This third-party validation often carries more weight than self-praise and provides a more credible and balanced view of our professional persona.
 
-Acknowledging weaknesses and persevering through setbacks shows growth and is appealing to employers
+Acknowledging weaknesses and persevering through setbacks shows growth and is appealing to good employers. 
 
 I think it's actually good when someone talks about his weaknesses and criticizes himself.
 I have great respect for individuals who acknowledge their mistakes and demonstrate a willingness to learn and grow from there. 
@@ -269,11 +269,11 @@ Such transparency can be very appealing to _some_ potential employers.
 
 Including a professional picture and links to verify achievements helps to make an application memorable.
 
-I believe that including a professional picture is important, despite some regional regulations [against it](https://qr.ae/psQr3b) to avoid discrimination.[^3]
-Hiring managers need to see who they will work with.
-A clear, [professional](https://medium.com/cresuma/the-impact-of-photos-on-resumes-a-comprehensive-guide-for-job-seekers-e2b43735f64d) photo helps hiring managers visualize who they might be working with and can make your application more memorable.
+I believe that including a professional picture is important, despite some regional regulations [against it](https://qr.ae/psQr3b).[^3]
+Hiring managers want to see the human face if the person they will work with.
+A clear, [professional](https://medium.com/cresuma/the-impact-of-photos-on-resumes-a-comprehensive-guide-for-job-seekers-e2b43735f64d) also contributes to make the application more memorable.
 
-The more time/effort spent to accomplish something, the first they should be in the résumé.  
+The more time/effort spent to accomplish something, the earlier it should appear in the résumé.  
 
 Links speak for themselves.
 Alongside the picture, provide links to your accomplishments. 
@@ -363,33 +363,27 @@ Employers typically look for a minimum of three years at each company.
 This stability indicates that you’ve had enough time to learn and contribute significantly. 
 Changing jobs too frequently can make you appear unstable and unreliable.
 
-# Back to the Future
+# Fully Upgraded
 
-The past is in the past.
+The world has changed fundamentally in the last decades, résumés included.  
 
-The concept of résumés has evolved over time, reflecting changes in the job market and the expectations of employers.
-With the industrial revolution, there was a greater need for workers to present their skills and experience in a more formalized manner.
-People changed jobs more frequently, and the qualifications required for different roles became more specialized.
-Hence, résumés began to include more structured information about an individual’s work history and education.
-The rise of office jobs and corporate culture in the mid-20th century further solidified the importance of résumés.
-Employers began to expect well-organized résumés that clearly outlined an applicant's qualifications and experience.
-
-The world has changed fundamentally in the last decades.  
-
-Consider two people with the same grades and qualifications. 
+Consider two computer science graduated with the same grades and qualifications. 
 One of them applies for a job with a traditional résumé, showing a history of moving from company `X` to `Y` to `Z` every three to five years.
-The other has published research papers, been featured in local media, and has 100K followers. 
-Which one do you think has a better chance of getting the job?
+The other has published research papers, been featured in the local media, and has 100K followers on LinkedIn. 
+Which one do you think has a better chance of getting the greatest job?
 The answer, I believe, is the second person.
 The reason is not the number of followers but the original, valuable content that this person has proven to be able to create. 
-This individual has already practiced and been validated in public.
+This individual has already shown her craft to the public, and others have validated its quality. 
 
-The future could be digital engagement.
-
+The future of résumés, I believe, is personal branding at a global scale. 
+ 
 So, in the near future, potential employers will likely want to see that the person they are considering for a position is actively engaging and creating in the increasingly valuable digital world. 
-I think the single most valuable skill of the next two decades could be creating something original online. 
-Eventually, A public (online) body of work is replacing the traditional résumé.
+I think the single most valuable skill of the next two decades could be creating something original and useful online.
+ 
+Eventually, a public body of work will certainly replace the traditional résumé.
 And I love that, because it's an evolution that effectively demonstrates actual skills and abilities.
+
+Are you ready for the upgrade?
 
 # External Resources
 
