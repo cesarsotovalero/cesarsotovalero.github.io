@@ -353,7 +353,7 @@ This approach can dilute the impact of the resume, making it difficult for hirin
 Don't try to cover a broad range of skills and experiences without highlighting a clear area of expertise.
 This lack of direction can ultimately result in the resume being overlooked in favor of candidates who present a more specialized and relevant profile.
 
-## The Sin of Formal Education
+## The Sin of Worthless Education
 
 When it comes to your educational background, only mention the highest degree.
 If you have a PhD then nobody cares about your MSc, if you have a MSc nobody cares about your BSc.
