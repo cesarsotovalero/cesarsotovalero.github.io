@@ -401,7 +401,7 @@ Are you ready for the upgrade?
 Here's are examples of awesome résumés:
 
 - The résumé of [Joseph Redmon](https://pjreddie.com/) ([link](https://web.itu.edu.tr/yavuzid19/cv.pdf))
-- The résumé of [Martin Isaksson](https://www.linkedin.com/in/martisak) ([link](https://cv.martisak.se/))
+- The résumé of [Martin Isaksson](https://www.linkedin.com/in/martisak) ([:earth_americas: link](https://cv.martisak.se/))
 
 # External Resources
 
