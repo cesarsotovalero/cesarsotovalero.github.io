@@ -396,6 +396,13 @@ And I love that, because it's an evolution that effectively demonstrates actual 
 
 Are you ready for the upgrade?
 
+# Bonus Section
+
+Here's are some awesome résumés:
+
+- The résumé of [Joseph Redmon](https://pjreddie.com/) ([link](https://web.itu.edu.tr/yavuzid19/cv.pdf))
+- The résumé of [Martin Isaksson](https://www.linkedin.com/in/martisak) ([link](https://cv.martisak.se/))
+
 # External Resources
 
 - [:earth_americas: The resume that got a software engineer a $300,000 job at Google](https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f)
