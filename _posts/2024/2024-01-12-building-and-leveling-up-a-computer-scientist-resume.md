@@ -398,7 +398,7 @@ Are you ready for the upgrade?
 
 # Bonus Section
 
-Here's are some awesome résumés:
+Here's are examples of awesome résumés:
 
 - The résumé of [Joseph Redmon](https://pjreddie.com/) ([link](https://web.itu.edu.tr/yavuzid19/cv.pdf))
 - The résumé of [Martin Isaksson](https://www.linkedin.com/in/martisak) ([link](https://cv.martisak.se/))
