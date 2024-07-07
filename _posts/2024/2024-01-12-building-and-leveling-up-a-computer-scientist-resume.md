@@ -80,7 +80,7 @@ This is the document we send every time we want to demonstrate our suitability f
 Thus, the aim is to make a positive first impression, highlight relevant accomplishments, and secure a job interview. 
 This means it's important to be intentional about our professional goals and how we want to present ourselves to the world.
 
-The résumé is a living document that we constantly (and intentionally) evolve over time.[^4]
+The résumé is a living document that we all constantly (and intentionally) evolve over time.[^4]
 
 I think a good résumé also requires an understanding, and a certain vision, of the job market. 
 It should reflect the current and future market needs in our field. 
@@ -310,58 +310,69 @@ For example, teaching a course (even if it is for children) or contributing to a
 It shows a willingness to give back to the community. 
 Highlighting such enthusiasm and contributions can emphasize dedication to the profession and a readiness to go beyond the immediate demands of a job, making the candidate more attractive to potential employers.
 
-# Common Sins
+# Seven Sins
 
 {% badge /img/posts/2024/2024-01-12/red-flag.png 140 # %}
 
-The sin of public templates.
+There are some common mistakes that candidates make, which can significantly impact their chances of landing a job.
+I list 7 of them down below.
 
-There are some common mistakes that candidates make, which can significantly impact their chances of landing a job. 
+## The Sin of Public Templates
+
 One of the first things I advise against is using [Resume.io](https://resume.io/) or any other automatic résumé builder websites. 
-Each résumé should be unique and tailored to the specific job we're applying for. 
-A public templated résumé often lacks personality and lowers the reviewer's impression. 
+Each résumé should be unique and ideally reflect a personal brand. 
+A public templated résumé often lacks this kind of personality, which lowers the reviewer's impression. 
 Although a unique résumé may force the recruiter to do some mental work to understand it, the key is to make it as short and clear as possible.
-This approach ensures that your résumé stands out without overwhelming the reader.
+The idea is to stands out without overwhelming the reader.
 
-The sin of multiple pages.
+## The Sin of Multiple Pages
 
 You're probably not going to like this, but cutting your résumé down to one page is crucial. 
 I understand the challenge, especially for those with extensive academic and teaching backgrounds. 
-However, it's essential to be concise. 
-You can summarize the entire last page of publications with a single bullet point: 
-"Numerous academic publications, talks, and conference presentations (complete list available in my Google Scholar)." 
-The same goes for teaching experience; consolidate it into one bullet point. 
+However, it is essential to be concise. 
+For example, you can summarize a page of academic publications with a single sentence: 
+"More than `X` academic publications (complete list available in my Google Scholar);" or if having several projects on GitHub this could work:
+"Contributor to popular open-source projects (e.g., `X` with more than `Y` stars)."
 No one reads more than one page, so make sure every word counts.
 
-The sin of MOOCS.
+## The Sin of Listing MOOCs
 
 Another common mistake is listing online certificates. 
-While they are valuable for personal development, they don’t carry much weight in the professional world compared to your PhD. 
-Simply listing your PhD under education is often sufficient. Including non-tech experiences, like plumbing, is also a misstep. 
+While they are valuable for personal development, they don’t carry much weight in the professional world compared formal education and certificates.
+The rule of thumb is this: only include a course it if it takes more than one year to get it.
+Including non-tech experiences, like plumbing, is also a misstep. 
 It distracts from your relevant skills and can give the impression that you’re not focused on your tech career. 
 Similarly, mentioning freelancing can sometimes work against you. 
 It might suggest that you’re not accustomed to the demands of a full-time job, which could be a red flag for some employers.
 
-The sin of formal education.
+## The Sin of the Generalist
+
+Each résumé should be unique and tailored to the specific job we're applying for.
+The generalist resume often comes across as unfocused and scattershot, giving the impression that the candidate has not tailored their application to the specific role.
+This approach can dilute the impact of the resume, making it difficult for hiring managers to identify the candidate’s core strengths and how they align with the job requirements.
+Don't try to cover a broad range of skills and experiences without highlighting a clear area of expertise.
+This lack of direction can ultimately result in the resume being overlooked in favor of candidates who present a more specialized and relevant profile.
+
+## The Sin of Formal Education
 
 When it comes to your educational background, only mention the highest degree.
 If you have a PhD then nobody cares about your MSc, if you have a MSc nobody cares about your BSc.
 Only mention the university you graduated from if it's well-known (e.g., MIT, Cambridge, etc.), otherwise it just rises reputation concerns.
 
-The sin of lying.
+## The Sin of Lying
 
 It’s also important to be honest about your experience level.
-Don’t claim to be a senior researcher if you don’t have the papers to back it up.
+Don’t claim to be a senior researcher if you don’t have enough papers to back it up.
 Exaggerating your experience can worsen the impression you make.
 For example, if you only have one year of experience, it’s unrealistic to claim expertise in more than three technologies.
-If you list "Machine Learning in Python", "TensorFlow expert", and other advanced skills, be prepared to substantiate your knowledge with contributions to projects like TensorFlow on GitHub.
+If you list "Machine Learning in Python," "TensorFlow expert," and other advanced skills, be prepared to substantiate your knowledge with contributions to projects like TensorFlow on GitHub.
 
-The sin of the job hopper.
+## The Sin of the Job Hopper
 
-Additionally, frequent job changes can be a major red flag. 
-Employers typically look for a minimum of three years at each company. 
-This stability indicates that you’ve had enough time to learn and contribute significantly. 
-Changing jobs too frequently can make you appear unstable and unreliable.
+Changing jobs frequently can be a major red flag. 
+Employers typically expect candidates to stay for a minimum of three years at each company. 
+This stability indicates that you’ve serious, having enough time to learn and contribute significantly.  
+Try to appear as someone stable and reliable.
 
 # Fully Upgraded
 
