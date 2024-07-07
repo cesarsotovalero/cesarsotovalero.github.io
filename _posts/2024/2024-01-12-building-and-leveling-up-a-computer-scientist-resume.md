@@ -256,7 +256,7 @@ It's far more effective to speak with modesty and let the achievements and exper
 Only if asked, include testimonials or references from colleagues and mentors who can vouch for our skills and character. 
 This third-party validation often carries more weight than self-praise and provides a more credible and balanced view of our professional persona.
 
-Acknowledging weaknesses and persevering through setbacks shows growth and is appealing to employers
+Acknowledging weaknesses and persevering through setbacks shows growth and is appealing to good employers. 
 
 I think it's actually good when someone talks about his weaknesses and criticizes himself.
 I have great respect for individuals who acknowledge their mistakes and demonstrate a willingness to learn and grow from there. 
