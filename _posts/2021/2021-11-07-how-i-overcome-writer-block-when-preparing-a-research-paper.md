@@ -19,6 +19,8 @@ author: cesarsotovalero
 published: true
 ---
 
+{% youtube TrYB4D_1flA %}
+
 Every time I start writing a new research paper, the same freezing feeling seems to emerge when I look at the blank page.
 This problem is known as writer's block, and most academics suffer from it in one way or the other.
 I've dealt with this invisible monster on many occasions, and each victory has taught me how to overcome it better.
