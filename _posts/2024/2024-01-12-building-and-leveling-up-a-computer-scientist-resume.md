@@ -407,6 +407,7 @@ Here's are examples of awesome résumés:
 
 - [:earth_americas: The resume that got a software engineer a $300,000 job at Google](https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f)
 - [:earth_americas: Pimp Up Your Resume](https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html)
+- [:earth_americas: rendercv](https://github.com/sinaatalay/rendercv)
 
 # Footnotes
 
