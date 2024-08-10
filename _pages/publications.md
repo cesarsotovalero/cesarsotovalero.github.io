@@ -187,7 +187,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   **Empirical Study of Malware Diversity in Major Android Markets**. 
   César Soto-Valero and Mabel González. 
   _Journal of Cyber Security Technology_.
-  <a href="https://dx.doi.org/10.1080/24748668.2017.1354544"><i class="icon i-doi"></i> 10.1080/24748668.2017.1354544</a>
+  <a href="https://doi.org/10.1080/23742917.2018.1483876"><i class="icon i-doi"></i> 10.1080/23742917.2018.1483876</a>
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> 
   **Detection and Analysis of Behavioral T-patterns in Debugging Activities**. 

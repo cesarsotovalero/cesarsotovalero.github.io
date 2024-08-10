@@ -134,9 +134,13 @@ Remember how insignificant you are in the grand scheme of things. Great achievem
 
 Remember when you started participating in programming contests at university. You were not good at all. Indeed, you only reached the local contests and never solved a hard problem during the actual competition. It seems that you have a hard time every time you try to be competitive. _If competing, it is better to do it against yourself only._
 
-Remember how hard it was for you to understand [Keogh’s lower bound](https://www.cs.ucr.edu/~eamonn/LB_Keogh.htm) during your bachelor thesis. _At this point, there is no need for any other proof to the fact that that you’re not smart at all._
+Remember how hard it was for you to understand [KeogRemember that you (eventually) become the same as the people you are with. If you surround yourself with great people, you become great. Beware that the opposite is also true. Also, be grateful for all the people who helped you and influenced your work. Your family, friends, and PhD supervisor deserve a big chunk of the credit. _Acknowledging others is not only fair but also brings a lot of joy._
 
-Remember to listen more and talk less. You get excited very easily sometimes and are driven to defend your viewpoint. But everything you believe in is the result of your own experiences, which could be totally different from others. _Personal viewpoints are always a matter of perspective._
+[^1]: BTW, I don’t believe that throwing away shiny rocks is a good way to solve the fundamental problems of humanity. Instead, I support [effective altruism](https://www.effectivealtruism.org/), increasing opportunities, and creating a system that rewards good behavior. I also believe that the higher a person is in the social hierarchy, the more chances they have to create opportunities for others and make a larger impact. Thus, personal development is a driver for good.
+
+[^2]: I strongly believe in the possibilities of science as a life changer. Right now, there are many opportunities in academic research for people around the world to change their lives. In fact, pursuing academic research has changed my life!
+
+[^3]: Perhaps a good approach is to force ourselves to create something valuable from all the information we consume. I believe that by doing so, I'll eventually become more selective about what I spend my time on. This is because I'll be aware of the time I will need to invest later in creating something useful from it.tally different from others. _Personal viewpoints are always a matter of perspective._
 
 Remember, there is no silver bullet, and nothing truly worthwhile can be gained in this life without investing time and putting in a ton of hard work. Like when you thought others would solve your problems. For example, you believed for years that some family members would help you to emigrate, but that didn’t happen. It's good that you realized it and rectified it in time. Inaction tends to induce failure. _Fortunately, the path towards true success is largely within your control._
 
@@ -210,10 +214,8 @@ Remember that in the end, you will not remember your failures at all. Only the s
 
 # Footnotes
 
-[^1]: BTW, I don’t believe that throwing away shiny rocks is a good way to solve the fundamental problems of humanity. Instead, I support [effective altruism](https://www.effectivealtruism.org/), increasing opportunities, and creating a system that rewards good behavior. I also believe that the higher a person is in the social hierarchy, the more chances s/he has to create opportunities for others and make a larger impact. Thus, personal development is a driver for good.
+[^1]: BTW, I don’t believe that throwing away shiny rocks is a good way to solve the fundamental problems of humanity. Instead, I support [effective altruism](https://www.effectivealtruism.org/), increasing opportunities, and creating a system that rewards good behavior. I also believe that the higher a person is in the social hierarchy, the more chances they have to create opportunities for others and make a larger impact. Thus, personal development is a driver for good.
 
-[^2]: I strongly believe in the possibilities of science as a life/s changer. Right now, there are many opportunities in academic research for people around the world to change their lives. In fact, pursuing academic research has changed my life! 
+[^2]: I strongly believe in the possibilities of science as a life changer. Right now, there are many opportunities in academic research for people around the world to change their lives. In fact, pursuing academic research has changed my life!
 
 [^3]: Perhaps a good approach is to force ourselves to create something valuable from all the information we consume. I believe that by doing so, I'll eventually become more selective about what I spend my time on. This is because I'll be aware of the time I will need to invest later in creating something useful from it.
-
-
