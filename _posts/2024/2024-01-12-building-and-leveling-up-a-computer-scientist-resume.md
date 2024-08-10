@@ -51,7 +51,7 @@ And it's not so hard to get it right!
 
 # Purpose
 
-{% badge /img/posts/2024/2024-01-12/leveled-up.png 140 https://www.reddit.com/r/Diablo/comments/1awyypu/my_diablo_1_level_50_warrior_after_12_years/ %}
+{% badge /img/posts/2024/2024-01-12/inventory-level1.png 140 https://www.reddit.com/r/Diablo/comments/1awyypu/my_diablo_1_level_50_warrior_after_12_years/ %}
 
 Let's admit it, most résumés are quite boring.
 
@@ -375,6 +375,8 @@ This stability indicates that you’ve serious, having enough time to learn and 
 Try to appear as someone stable and reliable.
 
 # Fully Upgraded
+
+{% badge /img/posts/2024/2024-01-12/leveled-up.png 140 https://www.reddit.com/r/Diablo/comments/1awyypu/my_diablo_1_level_50_warrior_after_12_years/ %}
 
 The world has changed fundamentally in the last decades, résumés included.  
 
