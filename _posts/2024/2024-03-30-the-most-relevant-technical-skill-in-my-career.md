@@ -319,6 +319,7 @@ Here are some examples of repositories where I have used EDA in my research pape
 - <a href="https://github.com/ASSERT-KTH/deptrim-experiments/tree/main/notebooks/R"><i class="fab fa-github"></i></a> [deptrim-experiments](https://github.com/ASSERT-KTH/deptrim-experiments/tree/main/notebooks/R)
 - <a href="https://github.com/ASSERT-KTH/jdbl-experiments/tree/master/notebooks"><i class="fab fa-github"></i></a> [jdbl-experiments](https://github.com/ASSERT-KTH/jdbl-experiments/tree/master/notebooks)
 - <a href="https://github.com/ASSERT-KTH/depclean-experiments/tree/master/notebooks"><i class="fab fa-github"></i></a> [depclean-experiments](https://github.com/ASSERT-KTH/depclean-experiments/tree/master/notebooks)
+- <a href="https://github.com/ASSERT-KTH/decompilercmp/tree/master/notebooks"><i class="fab fa-github"></i></a> [decompilercmp](https://github.com/ASSERT-KTH/decompilercmp/tree/master/notebooks)
 - <a href="https://github.com/chains-project/ethereum-ssc/tree/main/r_notebooks"><i class="fab fa-github"></i></a> [ethereum-ssc](https://github.com/chains-project/ethereum-ssc/tree/main/r_notebooks)
 - <a href="https://github.com/cesarsotovalero/msr-2019s"><i class="fab fa-github"></i></a> [msr-2019](https://github.com/cesarsotovalero/msr-2019)
 - <a href="https://github.com/cesarsotovalero/ijcss-comp-balance-laliga"><i class="fab fa-github"></i></a> [ijcss-comp-balance-laliga](https://github.com/cesarsotovalero/ijcss-comp-balance-laliga)
