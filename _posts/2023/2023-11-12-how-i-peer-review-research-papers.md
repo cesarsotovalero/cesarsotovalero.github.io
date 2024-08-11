@@ -21,6 +21,8 @@ author: cesarsotovalero
 published: true
 ---
 
+{% youtube k31h3hoV-Us %}
+
 In academic circles, [peer reviewing](https://en.wikipedia.org/wiki/Scholarly_peer_review) is the act of assessing the quality of a research paper to determine if it's worth to be published in a journal or conference.
 Peer reviewers are supposed to be (human) experts in the field, and their opinions have direct influence on the final decision taken by the associated editor regarding accepting or rejecting a paper submission.
 During the last years, I've peer-reviewed [a good number](../service.html) of research papers submitted to top journals and conferences, mostly within the fields of Software Engineering, Applied Machine Learning, and Sports Sciences.
