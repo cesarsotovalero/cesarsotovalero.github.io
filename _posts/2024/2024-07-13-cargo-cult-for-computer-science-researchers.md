@@ -48,7 +48,6 @@ Titled The Cargo Cult Science, his exquisite speech uses the Cargo cult religiou
 
 > I think the educational and psychological studies I mentioned are examples of what I would like to call Cargo Cult Science. […] So I call these things Cargo Cult Science, because they follow all the apparent precepts and forms of scientific investigation, but they’re missing something essential, because the planes don’t land.
 
-
 The term ["Cargo Cult](https://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!)" itself has its origins in the South Pacific, where indigenous people created rituals that mimicked the activities of wartime soldiers, believing these would bring wealth and prosperity, like the cargo brought by military airplanes. 
 Similarly, Cargo Cult Science[^1] involves going through the motions of research and experimentation without a deeper understanding or adherence to the scientific method that ensures validity and reliability.
 
@@ -62,12 +61,10 @@ Similarly, Cargo Cult Science[^1] involves going through the motions of research
 
 > “In the South Seas there is a cargo cult of people. During the war they saw airplanes land with lots of good materials, and they want the same thing to happen now. So they’ve arranged to make things like runways, to put fires along the sides of the runways, to make a wooden hut for a man to sit in, with two wooden pieces on his head like headphones and bars of bamboo sticking out like antennas—he’s the controller—and they wait for the airplanes to land. They’re doing everything right. The form is perfect. It looks exactly the way it looked before. But it doesn’t work. No airplanes land. So I call these things cargo cult science, because they follow all the apparent precepts and forms of scientific investigation, but they’re missing something essential, because the planes don’t land.”
 
-
 [//]: # ( The main point )
 Feynman states in his commencement address that researchers should not ignore the principle of integrity in order to avoid following cargo cult science because it is important to make scientific conclusions while providing all the information on the research, including possible faults and unexpected results. According to Feynman, scientific integrity is “a principle of scientific thought that corresponds to a kind of utter honesty” (Feynman par. 12).
 
 Thus, a scientist should not miss any important things while concluding his findings in order not to fool oneself and provide complete information related to scientific research. It is important to inform about all the points and results, “not just the information that leads to judgment in one particular direction or another” (Feynman par. 14). The focus on avoiding the results which cannot support the experiment is typical for cargo cult scientists who do not report on things that can contribute to eliminating the received results. That is why the main purpose of the author’s article is to persuade the researchers to follow the principles of real science supported by the idea of integrity.
-
 
 [//]: # (Some characteristics of poor science)
 Feynman determines a range of characteristics that can be used to define poor science, pseudoscience, or cargo cult science. The first characteristic mentioned by the author in the presence of the scientific form and scientific investigation, but the absence of the essential feature which prevents the idea from working (Feynman par. 11). The most important characteristic to discuss pseudoscientific researches is the absence of scientific integrity as “a kind of leaning over backward” (Feynman par. 14).
@@ -82,15 +79,9 @@ The findings of the experiment can be discussed as valid if they are supported b
 
 Cargo cult scientists choose to ignore repeating experiments because of the lack of time, resources, and because of the possibility not to support certain assumptions. Feynman notes that para-psychologists or other cargo cult scientists look for experiments that can be repeated because they need to receive the same effect (Feynman par. 35). However, these scientists look for repeated results, not for the repeatable experiments because if the experiment is repeatable, its results can be different, and they do not always satisfy the expectations of cargo cult scientists. The rejection of the repeatable experiment is considered as characteristic for those scientists who intend to ignore the idea of integrity, and such behavior cannot be discussed as acceptable in the scientific world.
 
-
-
-
-
 # The Allure and Traps of Cargo Cult Science in Computer Science
 
 Feynman laments that the kind of integrity he talks about isn’t baked into the science education system — which hardly comes as a surprise, given it’s largely a system premised on certitude at all costs and not on the very admission of ignorance that fuels science:
-
-
 
 > This long history of learning how not to fool ourselves — of having utter scientific integrity — is, I’m sorry to say, something that we haven’t specifically included in any particular course that I know of. We just hope you’ve caught on by osmosis.
 >
@@ -114,8 +105,6 @@ These challenges not only affect the mental health and well-being of researchers
 
 I think more people should be more careful when they wade into arguments. It is easy to convince a member of the public that you are being scientific when you are not, and it is our moral duty to at least try to apply scrutiny to our own arguments before putting them ‘out there’. We should all strive to collect data on what we believe in and to react to it as objectively as possible, not censoring or ignoring that which we disagree with, or firing people who disagree with our beliefs.
 
-
-
 # How to Fix
 
 So, how do we combat these tendencies? The answer lies in fostering a culture of integrity and transparency in research:
@@ -134,24 +123,16 @@ This is how we can truly make a difference, advancing our field with integrity a
 
 In his speech titled “Cargo Cult Science,” Richard Feynman describes the features of pseudoscience, and he persuades the audience belonging to the scientific world not to fool oneself while focusing on the expected results of experiments and ignoring faults and biases. The author states that a real scientist, not a cargo cult scientist, should follow the principle of integrity and report all the negative and positive results of his research in order not to mislead the scientific community and laymen.
 
-
-
 > I have just one wish for you — the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where you do not feel forced by a need to maintain your position in the organization, or financial support, or so on, to lose your integrity. May you have that freedom.
 
 # External Resources
 
-
 - [:earth_americas: Cargo Cult Science](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/38CA581FFAB42704E5F667AA4A2D6D79/S1062798713000124a.pdf/cargo-cult-science.pdf) 
 - [:earth_americas: Cargo Cult AI: Is the ability to think scientifically the defining essence of intelligence?](https://queue.acm.org/detail.cfm?id=3595860). _ACM Queue_
 - [:earth_americas: More on the crisis in research: Feynman on ‘cargo cult science’](https://www.latimes.com/business/hiltzik/la-fi-mh-feynman-20131028-story.html). _Los Angeles Times_
-
-
 
 # Footnotes
 
 [^1]: Feynman, Richard P. (June 1974). [**"Cargo Cult Science"**](http://calteches.library.caltech.edu/51/2/CargoCult.pdf).
 
 [^2]: Feynman, Richard (1997). [**"Surely You're Joking, Mr. Feynman!"**](https://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!).
-
-
-
