@@ -32,7 +32,7 @@ I graduated in 2023.[^4]
 
 **Cool Fact:** {%include university_ranking.html%}
 
-My PhD was about software debloating,[^1] here's my [thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf) and [public defense](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw).
+My PhD was about software debloating,[^1] here's my [thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf), and you can watch my [public defense](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw).
 
 {% youtube Ub684G_aM5Q %}
 
@@ -47,7 +47,7 @@ I'm keen to perform research on software technology which:
 3. Disrupt the _status quo_ of software engineering **latest practices**.
 
 I'm open to collaborate with researchers and give advice to students in these areas.
-If you are interested in working with me, please have a look at my list of [research topics](./collaborations.html) and send me an email.
+If you are interested in working with me, please have a look at my list of [research topics](./collaborations.html) and email me using the form below.
 
 {% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
 
