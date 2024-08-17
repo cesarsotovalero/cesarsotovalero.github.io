@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Cargo Cult And Computer Science Researchers
-subtitle: TODO
-tags: TODO
+title: The Not-So-Strange Case of Cargo Cult in Computer Science Research
+subtitle: Are we mimicking scientific progress without true innovation?
+tags: 
+  - 
 description: |
   Arguably, computers and communications have changed the world more than any other science or technology. Yet there are a lot of failures, some prominent, many minor, and a widening gap between aspirations and reality - with environmental consequences. Borrowing Richard Feynman's criticism of cargo cult science, I discuss some ways we all are doing cargo cult computer science. To paraphrase Feynman: everywhere we have computers that look like they are doing the right things, but they don't work. After pointing out the widespread problems, the emphasis on the seminar will turn to our own behaviour: the evidence of poor science in research computing, and what we can positively do about it.
 keywords:
