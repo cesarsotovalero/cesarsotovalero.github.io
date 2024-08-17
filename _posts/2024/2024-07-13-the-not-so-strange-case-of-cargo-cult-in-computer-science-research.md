@@ -2,8 +2,7 @@
 layout: post
 title: The Not-So-Strange Case of Cargo Cult in Computer Science Research
 subtitle: Are we mimicking scientific progress without true innovation?
-tags: 
-  - 
+tags: science
 description: |
   Arguably, computers and communications have changed the world more than any other science or technology. Yet there are a lot of failures, some prominent, many minor, and a widening gap between aspirations and reality - with environmental consequences. Borrowing Richard Feynman's criticism of cargo cult science, I discuss some ways we all are doing cargo cult computer science. To paraphrase Feynman: everywhere we have computers that look like they are doing the right things, but they don't work. After pointing out the widespread problems, the emphasis on the seminar will turn to our own behaviour: the evidence of poor science in research computing, and what we can positively do about it.
 keywords:
@@ -22,13 +21,7 @@ author: cesarsotovalero
 published: false
 ---
 
-[//]: # (- What is the personal story? when I was...)
-[//]: # (- What problem am I solving?)
-[//]: # (- What are the benefits of solving it?)
-[//]: # (- What emotion am I generating?)
-[//]: # (From these questions, I create:)
-[//]: # (- At least 5 headlines)
-[//]: # (- The bullet point summary)  
+
 
 # IMAGE
 <figure class="jb_picture">
@@ -40,6 +33,8 @@ published: false
 
 # Understanding Cargo Cult Science
 
+{% badge /img/badges/cargo-cult-science.png 140 http://calteches.library.caltech.edu/51/2/CargoCult.pdf %}
+ 
 - It's one of the greatest commencement speeches about science of all time.
 - Cargo Cult Science: Practices which have the appearance of being scientific, but do not actually follow the scientific method.
 - Coined by American physicist [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) in 1974 in his commencement address at Caltech, in reference to [cargo cults]().
@@ -49,16 +44,8 @@ Titled The Cargo Cult Science, his exquisite speech uses the Cargo cult religiou
 
 > I think the educational and psychological studies I mentioned are examples of what I would like to call Cargo Cult Science. […] So I call these things Cargo Cult Science, because they follow all the apparent precepts and forms of scientific investigation, but they’re missing something essential, because the planes don’t land.
 
-The term ["Cargo Cult](https://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!)" itself has its origins in the South Pacific, where indigenous people created rituals that mimicked the activities of wartime soldiers, believing these would bring wealth and prosperity, like the cargo brought by military airplanes. 
+The term ["Cargo Cult](https://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!)" itself has its origins in the South Pacific, where indigenous people created rituals that mimicked the activities of wartime soldiers, believing these would bring wealth and prosperity, like the cargo brought by military airplanes.
 Similarly, Cargo Cult Science[^1] involves going through the motions of research and experimentation without a deeper understanding or adherence to the scientific method that ensures validity and reliability.
-
-[//]: # (Feynman picture)
-<figure class="jb_picture">
-  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-07-13/cargo-cult-science.png alt: "Cargo Cult Science" %}
-  <figcaption class="stroke"> 
-    &#169; TODO
-  </figcaption>
-</figure>
 
 > “In the South Seas there is a cargo cult of people. During the war they saw airplanes land with lots of good materials, and they want the same thing to happen now. So they’ve arranged to make things like runways, to put fires along the sides of the runways, to make a wooden hut for a man to sit in, with two wooden pieces on his head like headphones and bars of bamboo sticking out like antennas—he’s the controller—and they wait for the airplanes to land. They’re doing everything right. The form is perfect. It looks exactly the way it looked before. But it doesn’t work. No airplanes land. So I call these things cargo cult science, because they follow all the apparent precepts and forms of scientific investigation, but they’re missing something essential, because the planes don’t land.”
 
@@ -80,7 +67,7 @@ The findings of the experiment can be discussed as valid if they are supported b
 
 Cargo cult scientists choose to ignore repeating experiments because of the lack of time, resources, and because of the possibility not to support certain assumptions. Feynman notes that para-psychologists or other cargo cult scientists look for experiments that can be repeated because they need to receive the same effect (Feynman par. 35). However, these scientists look for repeated results, not for the repeatable experiments because if the experiment is repeatable, its results can be different, and they do not always satisfy the expectations of cargo cult scientists. The rejection of the repeatable experiment is considered as characteristic for those scientists who intend to ignore the idea of integrity, and such behavior cannot be discussed as acceptable in the scientific world.
 
-# The Allure and Traps of Cargo Cult Science in Computer Science
+# Allure and Other Traps
 
 Feynman laments that the kind of integrity he talks about isn’t baked into the science education system — which hardly comes as a surprise, given it’s largely a system premised on certitude at all costs and not on the very admission of ignorance that fuels science:
 
@@ -106,7 +93,7 @@ These challenges not only affect the mental health and well-being of researchers
 
 I think more people should be more careful when they wade into arguments. It is easy to convince a member of the public that you are being scientific when you are not, and it is our moral duty to at least try to apply scrutiny to our own arguments before putting them ‘out there’. We should all strive to collect data on what we believe in and to react to it as objectively as possible, not censoring or ignoring that which we disagree with, or firing people who disagree with our beliefs.
 
-# How to Fix
+# The Seek of True
 
 So, how do we combat these tendencies? The answer lies in fostering a culture of integrity and transparency in research:
 
