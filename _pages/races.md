@@ -10,7 +10,7 @@ published: true
 # Results
 
 I started to run since I was a child.
-Here are the results of my races in Stockholm.
+Here are the results of some of my races in Stockholm.
 
 | Race           | Distance | Time     | Date | Proof                                                                                           |
 |----------------|----------|----------|------|-------------------------------------------------------------------------------------------------|
@@ -18,4 +18,4 @@ Here are the results of my races in Stockholm.
 | Blodomloppet   | 10 km    | 00:48:00 | 2024 | [:link: Link](https://www.racetimer.se/sv/runner/show/8704624?layout=racetimer&race_id=6034)    |
 | Blodomloppet   | 10 km    | 00:52:27 | 2023 | [:link: Link](https://www.racetimer.se/sv/runner/show/8204163?layout=blodomloppet&race_id=5627) |
 | Midnattsloppet | 10 km    | 00:52:28 | 2022 | [:link: Link](https://tinyurl.com/ya5b8zef)                                                     |                                   
-
+{: .border-bottom-on-table  }

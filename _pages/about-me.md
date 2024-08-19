@@ -192,6 +192,6 @@ form.wj-contact input[type="submit"]:hover {
 
 [^2]: See my list of [mining software repositories resources](./mining-software-repositories-resources.html).
 
-[^3]: [Here](/races.html) I collect the results of my races in Stockholm.
+[^3]: I collect the results of my races in Stockholm [here](/races.html).
 
 [^4]: My research work was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.
