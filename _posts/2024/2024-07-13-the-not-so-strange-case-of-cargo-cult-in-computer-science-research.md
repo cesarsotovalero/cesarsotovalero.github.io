@@ -209,7 +209,9 @@ I'll end this article quoting one the Feynman's last takeaways:
 > "I have just one wish for you: the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where you do not feel forced by a need to maintain your position in the organization, or financial support, or so on, to lose your integrity. May you have that freedom."
 > —  <cite>Richard Feynman</cite>
 
-"... May you have that freedom." Isn't such a sublime sentence?
+"... May you have that freedom." 
+
+Isn't that such a sublime sentence to you?
 
 # External Resources
 
