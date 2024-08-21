@@ -18,7 +18,7 @@ toc: true
 mathjax: false
 date: 2024/07/13
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 Everywhere, I see computer scientists that look like they are working on the right thing. 
