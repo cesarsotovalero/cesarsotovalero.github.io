@@ -74,6 +74,9 @@ This allows not fooling oneself and provide complete information to other scient
 It is important to inform about all the points and results, not just the information that leads to judgment in one particular direction or another.
 The focus on avoiding the results which cannot support the experiment is typical for cargo cult scientists who do not report on things that can contribute to eliminating the received results.
 
+> "You must not fool yourself (and you are the easiest person to fool). So you have to be very careful about that. After you’ve not fooled yourself, it’s easy not to fool other scientists. You just have to be honest in a conventional way after that."
+> —  <cite>Richard Feynman</cite>
+
 In other words, if there is no a sound "Threats to Validity" section in a paper, it could indicate a case of cargo cult science.
 
 ## Poor Science
@@ -85,9 +88,6 @@ Feynman determines a range of characteristics that can be used to define poor sc
 First, he mentions the existence of a seemingly scientific way of presenting investigations, which attempts to hide the existence of one essential feature that prevents the idea from working.
 The most important characteristic to discuss pseudo-scientific researches is the lack of scientific integrity as a kind of leaning over backward.
 To avoid it, it is necessary to discuss the research details and results from all the perspectives, while paying much attention to faults, biases, and wrong assumptions.
-
-> "The first principle is that you must not fool yourself (and you are the easiest person to fool). So you have to be very careful about that. After you’ve not fooled yourself, it’s easy not to fool other scientists. You just have to be honest in a conventional way after that."
-> —  <cite>Richard Feynman</cite>
 
 **Example:** In 1989, two electrochemists, Martin Fleischmann and Stanley Pons, [announced](https://cen.acs.org/articles/94/i44/Cold-fusion-died-25-years.html) they had achieved "[cold fusion](https://en.wikipedia.org/wiki/Cold_fusion)," a process of nuclear fusion occurring at room temperature. Fusion, typically requiring extremely high temperatures, could potentially provide a virtually limitless source of clean energy. The announcement created a sensation because if true, it would have revolutionized energy production.
 
@@ -110,7 +110,6 @@ A defining characteristic of [the scientific method](https://en.wikipedia.org/wi
 
 <aside class="quote">
     <em>“Other experimenters will repeat your experiment and find out whether you were wrong or right.”</em> 
-    <cite><br> ― <a href="https://en.wikipedia.org/wiki/Richard_Feynman"></a>Richard Feynman</cite>
 </aside>
 
 The findings of an experiment can be accepted as valid _only if_ they are supported by the results of other researchers who conduct it independently.
@@ -125,7 +124,7 @@ This is because if an experiment is repeatable, its results can be different, an
 The rejection of the repeatable experiment is considered as characteristic for those scientists who intend to ignore the idea of integrity.
 Such behavior cannot be discussed as acceptable in the scientific world.
 
-In computing science, it's clear that [we do not take reproducibility seriously enough](http://reproducibility.cs.arizona.edu/tr.pdf).
+In computing science, [it's clear](http://reproducibility.cs.arizona.edu/tr.pdf) that we do not take reproducibility seriously enough.
 
 It is mind-blowing that today most papers do not release their experimental data or even the software artifacts presented as part of their contributions.
 Open-sourcing tools and datasets should be a prerequisite for publishing any kind of research paper.[^1]
@@ -205,10 +204,12 @@ As from the Feynman speech, the three takeaways are straightforward:
 2. Don't aim for fast results with superficial learning. 
 3. Have skin in the game: hypothesize, experiment, explore, and remember to follow the scientific method.
 
-I'll end this article quoting him:
+I'll end this article quoting one the Feynman's last takeaways:
 
 > "I have just one wish for you: the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where you do not feel forced by a need to maintain your position in the organization, or financial support, or so on, to lose your integrity. May you have that freedom."
-> -- <cite>Richard Feynman</cite>
+> —  <cite>Richard Feynman</cite>
+
+"... May you have that freedom." Isn't such a sublime sentence?
 
 # External Resources
 
