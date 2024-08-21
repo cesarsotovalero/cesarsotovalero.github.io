@@ -7,6 +7,17 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>The Not-So-Strange Case of Cargo Cult in Computer Science Research</title>
+        <description>
+          Are we mimicking scientific progress without true innovation? - 
+          Everywhere, I see computer scientists that look like they are working on the right thing. They spent a long time doing the thing, writing code to run it (in the best cases), and collecting results. Then, they publish the thing. However, many times “the thing” is either worthless or just...
+        </description>
+        <pubDate>Sat, 13 Jul 2024 00:00:00 -0700</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html</guid>
+      </item>
+    
+      <item>
         <title>Some Things to Remember Before Acting Pretentiously</title>
         <description>
           And a few personal thoughts on the value of sincere humility - 
@@ -213,17 +224,6 @@
         <pubDate>Sat, 19 Nov 2022 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/the-true-value-of-attending-academic-conferences.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-true-value-of-attending-academic-conferences.html</guid>
-      </item>
-    
-      <item>
-        <title>The Execution Lifecycle of a Java Application</title>
-        <description>
-          Or... what happens when you run a Java program? - 
-          If you are reading this post it’s likely that you already know how to write Java code. That’s very good for you, I think everyone should know how to code these days (in the same way everyone should know about basic math operations such as +, -, *, and /...
-        </description>
-        <pubDate>Thu, 20 Oct 2022 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html</guid>
       </item>
     
   </channel>
