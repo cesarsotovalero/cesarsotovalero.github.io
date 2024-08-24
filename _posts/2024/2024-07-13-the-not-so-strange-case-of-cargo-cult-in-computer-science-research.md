@@ -27,11 +27,11 @@ Then, they _publish_ the thing.
 However, many times "the thing" is either worthless or just doesn't work as claimed.
 In fact, according to [a study made in 2014](https://www.semanticscholar.org/paper/Measuring-Reproducibility-in-Computer-Systems-Collberg/075d12c8c9e295cc3227d12ecff7f5c16d8a8613): more than 75% of the results published in _prestigious_ computer science journals are not reproducible at all!
 This is a huge problem for science.
-The fact that a lot of human and non-human time (and resources) are spent on computer science research that doesn't produce any value is something to look at with microscopic lens.
+The fact that a lot of human and non-human time and resources are spent on research that doesn't produce any value is something to look at with microscopic lens.
 Unfortunately, this problem is nothing new.
 Back in 1974, the American physicist [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) coined the term "cargo cult science" referring to this exact same phenomenon.
 Now, I want to revisit his ideas, 50 years later, from the lens of someone who has gone through the hustle of producing science "the modern way."
-In this article, I'll cover the many traps leading to cargo cult science, and provide good techniques to stay away from it. 
+In this article, I'll cover the many traps leading to cargo cult science, and provide my personal view on how to stay away from it. 
 Let's dive in!
 
 <figure class="jb_picture">
@@ -45,25 +45,25 @@ Let's dive in!
 
 {% badge /img/badges/cargo-cult-science.png 140 http://calteches.library.caltech.edu/51/2/CargoCult.pdf %}
  
-The term "cargo cult science" was coined by the American physicist [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) in 1974 in his commencement speech at Caltech university.
-It's one of the greatest speeches about science of all time.
+The term "cargo cult science" was coined by the American physicist [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) in 1974 during his commencement speech at Caltech university.
+It's ~~probably~~ one of the greatest speeches about science of all time.
 
-Cargo cult science refers to practices that seem scientific but don't truly follow the scientific method.[^2]
+Cargo cult science refers to practices that seem scientific but don't truly follow the [scientific method](https://en.wikipedia.org/wiki/Scientific_method).[^2]
 Feynman highlighted this concept by comparing it to the cargo cult rituals of Melanesian and Micronesian societies.
 There, the natives imitated the behaviors of World War II soldiers, hoping to bring back the material wealth they had seen during the war. 
 
 > "In the South Seas, there is a cargo cult of people. During the war, they saw airplanes land with lots of good materials, and they want the same thing to happen now. So they’ve arranged to make things like runways, to put fires along the sides of the runways, to make a wooden hut for a man to sit in, with two wooden pieces on his head like headphones and bars of bamboo sticking out like antennas (he's the controller) and they wait for the airplanes to land. They’re doing everything right. The form is perfect. It looks exactly the way it looked before. But it doesn't work. No airplanes land."
 > —  <cite>Richard Feynman</cite>
 
-This metaphor shows the need for genuine understanding and accountability in science.
-It's a comical example of how far things can go wrong when we try to follow procedures without critical thinking.
+This metaphor brilliantly showcases the need for genuine understanding and accountability in science.
+It serves as an almost comical reminder of how badly things can go wrong when we follow procedures without applying critical thinking. 
 In today's world, this message is particularly relevant as the fear of being wrong and the spread of non-so-ethical practices continues to grow.
 
-The temptation to follow the easy path of doing poor science never stops knocking on researchers' doors.
+The temptation to take the easy path of doing poor science is constantly knocking on the researchers' doors.
 
 Feynman states that researchers should not ignore the principle of scientific integrity to avoid falling into the abyss of cargo cult science.
 He mentions that it is important to make scientific conclusions while providing all the information on the research, including possible faults and unexpected results.
-According to Feynman, scientific integrity is a principle of scientific thought that corresponds to a kind of utter honesty.
+According to Feynman, [scientific integrity](https://en.wikipedia.org/wiki/Scientific_integrity) is a principle of scientific thought that corresponds to a kind of utter honesty.
 
 > "I think the educational and psychological studies I mentioned are examples of what I would like to call Cargo Cult Science. […] So I call these things Cargo Cult Science, because they follow all the apparent precepts and forms of scientific investigation, but they’re missing something essential, because the planes don’t land."
 > —  <cite>Richard Feynman</cite>
@@ -71,13 +71,12 @@ According to Feynman, scientific integrity is a principle of scientific thought 
 Scientists should put extra effort to not miss any important things while concluding their findings.
 This allows not fooling oneself and provide complete information to other scientists. 
 
-It is important to inform about all the points and results, not just the information that leads to judgment in one particular direction or another.
-The focus on avoiding the results which cannot support the experiment is typical for cargo cult scientists who do not report on things that can contribute to eliminating the received results.
+It's important to report all findings and results, not just those that support a particular conclusion. Cargo cult scientists often omit results that don't align with their experiments, ignoring evidence that could diminish the perceived novelty and value of their work.
 
 > "You must not fool yourself (and you are the easiest person to fool). So you have to be very careful about that. After you’ve not fooled yourself, it’s easy not to fool other scientists. You just have to be honest in a conventional way after that."
 > —  <cite>Richard Feynman</cite>
 
-In other words, if there is no a sound "Threats to Validity" section in a paper, it could indicate a case of cargo cult science.
+In other words, if there is no a sound "Threats to Validity" section in a paper, or at least a strong discussion around the validity of the results, it could indicate a typical case of cargo cult science.
 
 ## Poor Science
 
@@ -86,33 +85,35 @@ In other words, if there is no a sound "Threats to Validity" section in a paper,
 Feynman determines a range of characteristics that can be used to define poor science, pseudoscience, or cargo cult science. 
 
 First, he mentions the existence of a seemingly scientific way of presenting investigations, which attempts to hide the existence of one essential feature that prevents the idea from working.
-The most important characteristic to discuss pseudo-scientific researches is the lack of scientific integrity as a kind of leaning over backward.
+One of the most important characteristics of pseudo-scientific researches is the lack of scientific integrity as a kind of leaning over backward.
 To avoid it, it is necessary to discuss the research details and results from all the perspectives, while paying much attention to faults, biases, and wrong assumptions.
 
-**Example:** In 1989, two electrochemists, Martin Fleischmann and Stanley Pons, [announced](https://cen.acs.org/articles/94/i44/Cold-fusion-died-25-years.html) they had achieved "[cold fusion](https://en.wikipedia.org/wiki/Cold_fusion)," a process of nuclear fusion occurring at room temperature. Fusion, typically requiring extremely high temperatures, could potentially provide a virtually limitless source of clean energy. The announcement created a sensation because if true, it would have revolutionized energy production.
+**Example:** In 1989, two electrochemists, Martin Fleischmann and Stanley Pons, [announced](https://cen.acs.org/articles/94/i44/Cold-fusion-died-25-years.html) they had achieved to create "[cold fusion](https://en.wikipedia.org/wiki/Cold_fusion)" at room temperature. This type of nuclear fusion, typically requiring extremely high temperatures, could potentially provide a virtually limitless source of clean energy. The announcement created a sensation because if true, it would have revolutionized energy production. However, it turn out that the results were not real. The term "cold fusion" became a synonym for junk science. 
 
 Second, it is the ignorance of repeating the experiment by oneself. 
 Those researchers who choose to use the results received by the other investigators ignore the opportunity to make their own research more credible while supporting or rejecting the known findings.
 
-**Example:** In the early days of deep learning, many researchers and companies [made bold claims](https://doi-org.focus.lib.kth.se/10.1016/j.caeai.2023.100143) that AI models could "self-teach" or autonomously learn complex tasks without needing extensive human intervention. These claims were often based on specific experiments that showed impressive results, such as a neural network learning to recognize objects in images after being exposed to vast amounts of unlabeled data. They often integrated these models into their projects without independently replicating the original experiments, leading to disappointing results when the models failed to generalize as promised. Over time, it became clear that these AI models were not as autonomous or generalizable as initially claimed. When others attempted to use these "self-taught" models in different domains or with less curated data, the models often failed to perform as expected. It turned out that much of the success in the original experiments was due to the specific data used or additional, often unacknowledged, human intervention during the training process.
+**Example:** In the early days of deep learning, many researchers and companies [made bold claims](https://doi-org.focus.lib.kth.se/10.1016/j.caeai.2023.100143) that AI models could teach themselves or autonomously learn complex tasks without needing extensive human intervention. These claims were often based on specific experiments that showed impressive results, such as a neural network learning to recognize objects in images after being exposed to vast amounts of unlabeled data. Practitioners often integrated these models into their projects without independently replicating the original experiments, leading to disappointing results when the models failed to generalize as promised. Over time, it became clear that these AI models were not as autonomous or generalizable as initially claimed. When others attempted to use these "self-taught" models in different domains or with less curated data, the models often failed to perform as expected. It turned out that much of the success in the original experiments was due to the specific data used or additional, often unacknowledged, human intervention during the training process.
 
-Last but not less, Feynman states that pseudoscientists can be very anxious for new results because these results are contradictory in relation to their predictions, and they can destroy the value of the experiments themselves.
-It is characteristic for cargo cult scientists to ignore the results which do not support their experiments and focus on those which sound appropriate.
+Last but not less, Feynman states that pseudo-scientists can be very anxious for new results because they could be contradictory in relation to their predictions. 
+A single negative data point made in the past could create enough doubt and uncertainty to smash the perceived value of current experiments.
+Consequently, it is characteristic of cargo cult scientists to ignore the results which do not support their experiments and focus on those which sound appropriate.
 
 **Example:** In 2011, the OPERA experiment in Italy [reported results](https://en.wikipedia.org/wiki/2011_OPERA_faster-than-light_neutrino_anomaly) suggesting that neutrinos might be traveling faster than the speed of light, which would contradict Einstein's theory of relativity. Some researchers and media outlets were eager to embrace these results because of their sensational nature, which could have upended established physics. However, this eagerness led to a dangerous tendency to overlook potential errors or alternative explanations that might invalidate the findings. There was significant pressure to confirm the extraordinary results, leading to a focus on the data that seemed to support the faster-than-light claim while neglecting inconsistencies or mundane explanations. Further investigation revealed that the results were due to a faulty connection in the GPS system used to measure the neutrinos' travel time. Once corrected, the faster-than-light result disappeared, and the experiment confirmed that neutrinos do not travel faster than light.
  
-Sometimes focusing on sensational results, while ignoring contradictory evidence, can lead to the premature and incorrect validation of scientific claims.
-In particular, the eagerness to confirm groundbreaking results can sometimes overshadow the need for rigorous scrutiny and can lead to the neglect of critical evidence that contradicts the desired outcomes.
+Sometimes focusing on sensational results while ignoring contradictory evidence can lead to the premature and incorrect validation of scientific claims
+The eagerness to confirm groundbreaking findings often overshadows the need for rigorous scrutiny. 
+This tendency causes cargo cult scientists to neglect critical evidence that contradicts their desired outcomes.
 
 ## The Reproducibility Crisis
 
-A defining characteristic of [the scientific method](https://en.wikipedia.org/wiki/Scientific_method), distinguishing it from belief or faith, is the requirement that others must be able to independently replicate the results of an experiment.
+A defining characteristic of the scientific method, distinguishing it from belief or faith, is the requirement that others must be able to independently replicate the results of an experiment.
 
 <aside class="quote">
     <em>“Other experimenters will repeat your experiment and find out whether you were wrong or right.”</em> 
 </aside>
 
-The findings of an experiment can be accepted as valid _only if_ they are supported by the results of other researchers who conduct it independently.
+Put it in another way: the findings of an experiment can be accepted as valid _only if_ they are supported by the results of other researchers who conduct it independently.
 That is why experiments should be repeated in order to state the credibility of the results and the integrity of the overall investigation.
 Cargo cult scientists usually ignore repeating experiments arguing lack of time, resources, or just because they don't want to support certain assumptions.
 
@@ -132,30 +133,34 @@ In fact, some researchers will laugh and admit that published results might just
 
 But don't get me wrong: achieving true reproducibility is a tough problem in computer science research. 
 
-A true obstacle to achieving reproducible results in computer science is the rapid pace at which the field evolves. 
+For example, a real obstacle to achieving reproducible results in computer science is the rapid pace at which the field evolves. 
 Even finding a computer with similar hardware to the one used just five years ago to generate a result is not easy. 
-Running the software with the exact same configurations, memory, operating system, and CPU is even more challenging. 
+Running the software with the exact same configurations, memory, operating system, and CPU is even more challenging.
+Solutions like Docker help, but what guarantees do we have that Docker will still exist in the next 20 or 30 years? 
 
-It's unlikely that conferences will require researchers to submit their hardware along with their software anytime soon.
+For the time being, it's unlikely that conferences will require researchers to submit their hardware along with their software.
 However, as scientists, we can take reproducibility as one of the key deciding factors when [peer-reviewing research papers](../blog/how-i-peer-review-research-papers.html).
-The more we value reproducibility when deciding if accepting or rejecting a paper, the more we will see a change in the way research is conducted.
+The more we value reproducibility when deciding if accepting or rejecting a paper, the more we will see a change in the way reproducible research is conducted.
 
 ##  The Academic Trap
 
 The [pressure to publish](../blog/the-last-paper-myth.html), combined with rapid progress of the computer science field, has distorted priorities, leading to publications at any cost.
 
 This has given rise to widespread academic misconduct, including paper mills, where existing research is haphazardly combined to create seemingly new results that might get published somewhere, even if not in top-tier journals.
-In fields like medicine, this pressure has become so severe that entire bodies of research have been retracted after being exposed as based on faulty or fraudulent data.
+In fields like medicine, this pressure has become so severe that entire bodies of research [have been retracted](https://doi.org/10.4103%2F0019-5545.82529) after being exposed as based on faulty or fraudulent data.
 
 Feynman laments that the kind of integrity he talks about isn't baked into the science education system.
 This hardly comes as a surprise, given it's largely a system premised on certitude at all costs.
 
-It's not the admission of ignorance that fuels science:
+As we know, it's not the admission of ignorance that fuels science.
 
-> This long history of learning how not to fool ourselves (of having utter scientific integrity) is, I’m sorry to say, something that we haven’t specifically included in any particular course that I know of. We just hope you’ve caught on by osmosis.
+> "This long history of learning how not to fool ourselves (of having utter scientific integrity) is, I’m sorry to say, something that we haven’t specifically included in any particular course that I know of. We just hope you’ve caught on by osmosis."
 > —  <cite>Richard Feynman</cite>
 
-In computer science, a field driven by rapid innovation and fierce competition for funding and publication, the temptation to fall into cargo cult behaviors manifests in several ways:
+The computer science field is driven by rapid innovation and fierce competition for funding and publication.
+This particular sense of fast speed, together with "the fear of missing out," exacerbates the temptation to fall into cargo cult behaviors.  
+
+Here are some ways in which it could manifest:
 
 - **Chasing trends over substance**: Often, researchers might feel pressured to work on "hot topics" not because they are convinced of their importance, but because they attract attention, citations, and funding. An example is [the increasing interest](https://rdcu.be/dRprN) in Generative AI research that we are seeing right now.
 - **P-hacking and selective reporting**: In the quest for significant results, there’s a risk of manipulating data or selectively reporting results that support the hypothesis, rather than presenting the full picture of the research findings. An example is when ignoring the effect of some variables to get a [sense of causation from what it is mere correlation](https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation).
@@ -211,7 +216,7 @@ I'll end this article quoting one the Feynman's last takeaways:
 
 "... May you have that freedom." 
 
-Isn't that such a sublime sentence to you?
+Isn't that such a sublime sentence to end this post?
 
 # External Resources
 
