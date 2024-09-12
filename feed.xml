@@ -7,17 +7,6 @@
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>What NOT to Build With AI These Days</title>
-        <description>
-          Ideas of apps and tools - 
-          I recently attended to a serious Hackathon. This post is not about hackathons, though. The task was TODO, with the following CONSTRAINS. Everyone, absolutely every team made a scheduling app (it is clearly an easy thing to do). to find availability times chatbots to make employees happy &amp;#169; Time to...
-        </description>
-        <pubDate>Sat, 17 Aug 2024 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/what-not-to-do-with-ai.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/what-not-to-do-with-ai.html</guid>
-      </item>
-    
-      <item>
         <title>The Not-So-Strange Case of Cargo Cult in Computer Science Research</title>
         <description>
           Are we mimicking scientific progress without true innovation? - 
@@ -224,6 +213,17 @@
         <pubDate>Wed, 23 Nov 2022 00:00:00 -0800</pubDate>
         <link>https://www.cesarsotovalero.net/blog/how-to-write-a-good-cover-letter-for-a-research-paper.html</link>
         <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-write-a-good-cover-letter-for-a-research-paper.html</guid>
+      </item>
+    
+      <item>
+        <title>The True Value of Attending Academic Conferences</title>
+        <description>
+          It&apos;s not only about the technical content - 
+          I recently attended the 29th edition of ESEC/FSE 2022 in Singapore. ESEC/FSE is one of the most prestigious conferences in the Software Engineering field.1 This was my first time participating in an academic conference (in person). I went there to present two papers. But let me admit it, I had...
+        </description>
+        <pubDate>Sat, 19 Nov 2022 00:00:00 -0800</pubDate>
+        <link>https://www.cesarsotovalero.net/blog/the-true-value-of-attending-academic-conferences.html</link>
+        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-true-value-of-attending-academic-conferences.html</guid>
       </item>
     
   </channel>
