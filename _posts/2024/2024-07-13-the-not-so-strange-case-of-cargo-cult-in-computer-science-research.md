@@ -53,7 +53,7 @@ Feynman highlighted this concept by comparing it to the cargo cult rituals of Me
 There, the natives imitated the behaviors of World War II soldiers, hoping to bring back the material wealth they had seen during the war. 
 
 > "In the South Seas, there is a cargo cult of people. During the war, they saw airplanes land with lots of good materials, and they want the same thing to happen now. So they’ve arranged to make things like runways, to put fires along the sides of the runways, to make a wooden hut for a man to sit in, with two wooden pieces on his head like headphones and bars of bamboo sticking out like antennas (he's the controller) and they wait for the airplanes to land. They’re doing everything right. The form is perfect. It looks exactly the way it looked before. But it doesn't work. No airplanes land."
-> —  <cite>Richard Feynman</cite>
+> — <cite>Richard Feynman</cite>
 
 This metaphor brilliantly showcases the need for genuine understanding and accountability in science.
 It serves as an almost comical reminder of how badly things can go wrong when we follow procedures without applying critical thinking. 
@@ -66,7 +66,7 @@ He mentions that it is important to make scientific conclusions while providing 
 According to Feynman, [scientific integrity](https://en.wikipedia.org/wiki/Scientific_integrity) is a principle of scientific thought that corresponds to a kind of utter honesty.
 
 > "I think the educational and psychological studies I mentioned are examples of what I would like to call Cargo Cult Science. […] So I call these things Cargo Cult Science, because they follow all the apparent precepts and forms of scientific investigation, but they’re missing something essential, because the planes don’t land."
-> —  <cite>Richard Feynman</cite>
+> — <cite>Richard Feynman</cite>
 
 Scientists should put extra effort to not miss any important things while concluding their findings.
 This allows not fooling oneself and provide complete information to other scientists. 
@@ -74,7 +74,7 @@ This allows not fooling oneself and provide complete information to other scient
 It's important to report all findings and results, not just those that support a particular conclusion. Cargo cult scientists often omit results that don't align with their experiments, ignoring evidence that could diminish the perceived novelty and value of their work.
 
 > "You must not fool yourself (and you are the easiest person to fool). So you have to be very careful about that. After you’ve not fooled yourself, it’s easy not to fool other scientists. You just have to be honest in a conventional way after that."
-> —  <cite>Richard Feynman</cite>
+> — <cite>Richard Feynman</cite>
 
 In other words, if there is no a sound "Threats to Validity" section in a paper, or at least a strong discussion around the validity of the results, it could indicate a typical case of cargo cult science.
 
@@ -163,9 +163,9 @@ This particular sense of fast speed, together with "the fear of missing out," ex
 Here are some ways in which it could manifest:
 
 - **Chasing trends over substance**: Often, researchers might feel pressured to work on "hot topics" not because they are convinced of their importance, but because they attract attention, citations, and funding. An example is [the increasing interest](https://rdcu.be/dRprN) in Generative AI research that we are seeing right now.
-  - **P-hacking and selective reporting**: In the quest for significant results, there’s a risk of manipulating data or selectively reporting results that support the hypothesis, rather than presenting the full picture of the research findings. An example is when ignoring the effect of some variables to get a [sense of causation from what it is mere correlation](https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation).
-  - **Reinventing the wheel**: Sometimes, due to a lack of thorough literature review or out of a desire to claim novelty, researchers might end up replicating existing studies without adding real value or new insights. This has happened many times, for example, the concept of `MapReduce` is credited to Google, but the concepts behind where published [decades before](https://doi.org/10.1145/129888.129894) by researchers from the fields of parallel databases and functional programming.
-  - **Over-reliance on tools and frameworks**: It’s not uncommon to see studies where advanced tools or algorithms are used without a proper understanding of their underlying principles or limitations, simply because they are popular or well-regarded. Think about deep learning and the fact that [we don't really know ](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) how these black-boxed complex neural networks actually operate to deliver their results.
+- **P-hacking and selective reporting**: In the quest for significant results, there’s a risk of manipulating data or selectively reporting results that support the hypothesis, rather than presenting the full picture of the research findings. An example is when ignoring the effect of some variables to get a [sense of causation from what it is mere correlation](https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation).
+- **Reinventing the wheel**: Sometimes, due to a lack of thorough literature review or out of a desire to claim novelty, researchers might end up replicating existing studies without adding real value or new insights. This has happened many times, for example, the concept of `MapReduce` is credited to Google, but the concepts behind where published [decades before](https://doi.org/10.1145/129888.129894) by researchers from the fields of parallel databases and functional programming.
+- **Over-reliance on tools and frameworks**: It’s not uncommon to see studies where advanced tools or algorithms are used without a proper understanding of their underlying principles or limitations, simply because they are popular or well-regarded. Think about deep learning and the fact that [we don't really know ](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) how these black-boxed complex neural networks actually operate to deliver their results.
 
 Having navigated t[he rocky terrains](../blog/my-phd-as-a-comic.html) of doing a PhD, I’ve experienced firsthand the challenges that push even the well-intentioned scientist towards these pitfalls. 
 The pressure to "publish or perish" and the fierce competition for grants can sometimes blur the lines between rigorous investigation and the rush to produce novel results.
@@ -191,9 +191,9 @@ The answer lies in fostering a culture of integrity and transparency in research
 Here are some key points:
 
 - **Education and awareness**: Early career researchers especially need guidance on the ethical dimensions of scientific research, including the importance of rigorous, unbiased experimental design and the pitfalls of cargo cult science.
-  - **Encouraging reproducibility**: As I mentioned before, journals and conferences should promote and reward the replication of studies and the sharing of negative results to counteract the bias towards only publishing positive findings. For example, by increasing acceptance rates or creating especial [artifact and data showcase tracks](https://2024.msrconf.org/track/msr-2024-data-and-tool-showcase-track) in conferences (e.g., as in the _International Conference of Mining Software Repositories_).
-  - **Institutional support**: Universities and funding bodies must recognize the pressures leading to these practices and offer support systems to encourage quality over quantity. For example, having a tenure and promotion criteria [that value the impact of research](../blog/how-phd-profiles-are-evaluated.html) over mere publication metrics.
-  - **Community and collaboration**: Fostering a more collaborative rather than competitive environment helps researchers share methods, findings, and validations more openly, reducing the isolation that allure taking unethical shortcuts.
+- **Encouraging reproducibility**: As I mentioned before, journals and conferences should promote and reward the replication of studies and the sharing of negative results to counteract the bias towards only publishing positive findings. For example, by increasing acceptance rates or creating especial [artifact and data showcase tracks](https://2024.msrconf.org/track/msr-2024-data-and-tool-showcase-track) in conferences (e.g., as in the _International Conference of Mining Software Repositories_).
+- **Institutional support**: Universities and funding bodies must recognize the pressures leading to these practices and offer support systems to encourage quality over quantity. For example, having a tenure and promotion criteria [that value the impact of research](../blog/how-phd-profiles-are-evaluated.html) over mere publication metrics.
+- **Community and collaboration**: Fostering a more collaborative rather than competitive environment helps researchers share methods, findings, and validations more openly, reducing the isolation that allure taking unethical shortcuts.
 
 So, it ultimately comes down to establishing mechanisms or systems that promote rigorous science by adhering to well-established principles, such as careful experimentation, critical analysis, reproducibility, and transparency.
 
@@ -206,8 +206,8 @@ So, it ultimately comes down to establishing mechanisms or systems that promote 
 As from the Feynman speech, the three takeaways are straightforward:
 
 1. Get your fundamentals very clear.
-   2. Don't aim for fast results with superficial learning. 
-   3. Have skin in the game: hypothesize, experiment, explore, and remember to follow the scientific method.
+2. Don't aim for fast results with superficial learning. 
+3. Have skin in the game: hypothesize, experiment, explore, and remember to follow the scientific method.
 
 I'll end this article quoting one the Feynman's last takeaways:
 
@@ -221,10 +221,10 @@ Isn't that such a sublime sentence to end this post?
 # External Resources
 
 - ["Cargo Cult Science"](http://calteches.library.caltech.edu/51/2/CargoCult.pdf). Feynman, Richard P. (June 1974).
-  - [:earth_americas: "Surely You're Joking, Mr. Feynman!"](https://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!). Feynman, Richard (1997).
-  - [:earth_americas: Repeat, Reproduce, Replicate](https://queue.acm.org/detail.cfm?id=3674499). _ACM Queue_
-  - [:earth_americas: More on the crisis in research: Feynman on ‘cargo cult science’](https://www.latimes.com/business/hiltzik/la-fi-mh-feynman-20131028-story.html). _Los Angeles Times_
-  - [:earth_americas: Cargo Cult AI: Is the ability to think scientifically the defining essence of intelligence?](https://queue.acm.org/detail.cfm?id=3595860). _ACM Queue_
+- [:earth_americas: "Surely You're Joking, Mr. Feynman!"](https://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!). Feynman, Richard (1997).
+- [:earth_americas: Repeat, Reproduce, Replicate](https://queue.acm.org/detail.cfm?id=3674499). _ACM Queue_
+- [:earth_americas: More on the crisis in research: Feynman on ‘cargo cult science’](https://www.latimes.com/business/hiltzik/la-fi-mh-feynman-20131028-story.html). _Los Angeles Times_
+- [:earth_americas: Cargo Cult AI: Is the ability to think scientifically the defining essence of intelligence?](https://queue.acm.org/detail.cfm?id=3595860). _ACM Queue_
 
 # Footnotes
 
