@@ -21,13 +21,14 @@ author: cesarsotovalero
 published: true
 ---
 
+{% youtube N7pY8VAt6g4 %}
+
 Everywhere, I see computer scientists that look like they are working on the right thing. 
 They spent a long time doing the thing, writing code to run it (in the best cases), and collecting results.
 Then, they _publish_ the thing.
 However, many times "the thing" is either worthless or just doesn't work as claimed.
 In fact, according to [a study made in 2014](https://www.semanticscholar.org/paper/Measuring-Reproducibility-in-Computer-Systems-Collberg/075d12c8c9e295cc3227d12ecff7f5c16d8a8613): more than 75% of the results published in _prestigious_ computer science journals are not reproducible at all!
 This is a huge problem for science.
-{% youtube N7pY8VAt6g4 %}
 The fact that a lot of human and non-human time and resources are spent on research that doesn't produce any value is something to look at with microscopic lens.
 Unfortunately, this problem is nothing new.
 Back in 1974, the American physicist [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) coined the term "cargo cult science" referring to this exact same phenomenon.
