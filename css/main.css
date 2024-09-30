@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Century Supra T4", "Apple Garamond", "Baskerville", "Libre Baskerville", "Droid Serif", "Times New Roman", "Times", serif, "Noto Emoji", "Quivira";
+  font-family: "Century Supra T4", "Georgia", "Times New Roman", serif;
   font-weight: lighter;
   font-size: 22px;
   text-rendering: optimizeLegibility;
@@ -59,17 +59,13 @@ p a {
   -webkit-text-decoration-color: var(--link-decoration-color);
 }
 
-
-/* Dropcaps are enabled only on large screens */
-@media only screen and (min-width: 768px) {
-  .blog-post div[role=main], article[role=main] > p:first-of-type:first-child::first-letter {
-    font-size: 72px;
-    line-height: 1;
-    font-family: "Century Supra C3", "Apple Garamond", "Baskerville", "Libre Baskerville", "Droid Serif", "Times New Roman", "Times", serif, "Noto Emoji", "Quivira";
-    font-weight: 400;
-    float: left;
-    padding-right: 12px;
-  }
+.blog-post div[role=main], article[role=main] > p:first-of-type:first-child::first-letter {
+  font-size: 72px;
+  line-height: 1;
+  font-family: "Century Supra C3";
+  font-weight: 400;
+  float: left;
+  padding-right: 12px;
 }
 
 .asciinema-player-div {
@@ -78,7 +74,7 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Concourse T6 Tab", "Apple Garamond", "Baskerville", "Libre Baskerville", "Droid Serif", "Times New Roman", "Times", serif, "Noto Emoji", "Quivira";
+  font-family: "Concourse T6 Tab", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
   font-weight: bold;
@@ -102,7 +98,7 @@ h1 {
   counter-increment: h1counter;
   content: counter(h1counter) ".\0000a0\0000a0";
   font-size: 32px;
-  font-family: "Concourse T4", "Lucida Sans Unicode", "Helvetica", "Trebuchet MS", sans-serif, "Noto Emoji", "Quivira";
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (max-width: 450px) {
@@ -129,7 +125,7 @@ h2 {
   counter-increment: h2counter;
   content: counter(h1counter) "." counter(h2counter) ".\0000a0\0000a0";
   font-size: 24px;
-  font-family: "Concourse T4", "Lucida Sans Unicode", "Helvetica", "Trebuchet MS", sans-serif, "Noto Emoji", "Quivira";
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
@@ -156,7 +152,7 @@ h3 {
 .blog-post h3:before {
   counter-increment: h3counter;
   content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
-  font-family: "Concourse T4", "Lucida Sans Unicode", "Helvetica", "Trebuchet MS", sans-serif, "Noto Emoji", "Quivira";
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
@@ -194,12 +190,12 @@ blockquote {
   border-left-color: var(--main-text-color);
   border-left-width: 4px;
   border-radius: 0px 5px 5px 0px;
-  font-family: "Equity Text A", "Apple Garamond", "Baskerville", "Libre Baskerville", "Droid Serif", "Times New Roman", "Times", serif, "Noto Emoji", "Quivira";
+  font-family: "Equity Text A", 'Source Sans Pro', sans-serif;
 }
 
 /* Details */
 details {
-  font-family: "Concourse T3", "Apple Garamond", "Baskerville", "Libre Baskerville", "Droid Serif", "Times New Roman", "Times", serif, "Noto Emoji", "Quivira";
+  font-family: "Concourse T3", "Cambria", "Open Sans";
   overflow: hidden;
   padding: 10px 15px 10px 15px;
   margin: 15px 0 15px 0;
@@ -291,7 +287,7 @@ em {
 .post-categories {
   /*background-color: gray;*/
   color: #808080;
-  font-family: "Source Code Pro", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Source Code Pro", monospace;
   font-size: 16px;
   margin-right: 4px;
   padding: 0 10px;
@@ -302,7 +298,7 @@ em {
 .post-categories-tags {
   /*background-color: gray;*/
   color: #808080;
-  font-family: "Source Code Pro", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Source Code Pro", monospace;
   font-size: 16px;
   margin-right: 4px;
   text-decoration: none;
@@ -376,16 +372,6 @@ img {
 
 a[href^="https://youtu.be/"], a[href^="https://mirrors.dotsrc.org/fosdem/"] {
   background: transparent url(/img/icons/youtube-play20px.svg) no-repeat center left;
-  padding-left: 22px;
-}
-
-a[href^="https://youtu.be/"], a[href^="https://en.wikipedia.org/wiki/"] {
-  background: transparent url(/img/icons/bw/wikipedia.svg) no-repeat center left;
-  padding-left: 22px;
-}
-
-a[href^="https://youtu.be/"], a[href^="https://www.linkedin.com/posts/"] {
-  background: transparent url(/img/icons/linkedin.svg) no-repeat center left;
   padding-left: 22px;
 }
 
@@ -506,7 +492,7 @@ a[href$=".pptx"] {
 }
 
 .navigation a:hover {
-  font-family: "Concourse T2", "Lucida Sans Unicode", "Helvetica", "Trebuchet MS", sans-serif, "Noto Emoji", "Quivira";
+  font-family: "Concourse T2", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-decoration: underline;
   text-decoration-thickness: 0.1em;
   text-decoration-color: var(--link-decoration-color);
@@ -514,7 +500,7 @@ a[href$=".pptx"] {
 }
 
 .navbar-custom {
-  font-family: "Concourse T2", "Lucida Sans Unicode", "Helvetica", "Trebuchet MS", sans-serif, "Noto Emoji", "Quivira";
+  font-family: "Concourse T2", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-transition: padding 1s ease-in-out;
   -moz-transition: padding 1s ease-in-out;
   transition: padding 1s ease-in-out;
@@ -573,7 +559,7 @@ a[href$=".pptx"] {
 }
 
 #navbar-brand {
-  font-family: 'Rouge Script', "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: 'Rouge Script', "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 30px;
   padding: 0 5px 0 5px;
   float: none;
@@ -943,7 +929,7 @@ a[href$=".pptx"] {
   width: 100%;
   border-radius: 3px;
   margin-left: 4px;
-  font-family: "Equity Text A", "Apple Garamond", "Baskerville", "Libre Baskerville", "Droid Serif", "Times New Roman", "Times", serif, "Noto Emoji", "Quivira";
+  font-family: "Equity Text A", "Linux Biolinum";
 }
 
 .mailchimp-subscribe-section .button {
@@ -959,7 +945,7 @@ a[href$=".pptx"] {
   width: 100%;
   border-radius: 3px;
   margin-left: 4px;
-  font-family: "Concourse T6", "Apple Garamond", "Baskerville", "Libre Baskerville", "Droid Serif", "Times New Roman", "Times", serif, "Noto Emoji", "Quivira";
+  font-family: "Concourse T6", "Century Supra C4", "Linux Biolinum";
 }
 
 #mailchimp-subscribe-section-footer #mc-embedded-subscribe-footer {
@@ -1448,7 +1434,7 @@ p.post-meta {
 }
 
 #full-tags-list {
-  font-family: "Concourse T3", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Concourse T3", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
 }
 
 #full-tags-list .tag-entry {
@@ -1535,7 +1521,7 @@ p.post-meta {
   font-size: 28px;
   line-height: 1.1;
   display: block;
-  font-family: "Concourse T2", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Concourse T2", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
   /*text-transform: capitalize;*/
@@ -1707,7 +1693,7 @@ p.post-meta {
 /* --- Pager --- */
 
 .pager li a {
-  font-family: "Concourse T6", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Concourse T6", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 800;
@@ -1858,7 +1844,7 @@ pre {
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.5em;
-  font-family: "jetbrains_monoregular", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "jetbrains_monoregular", sans-serif;
   border: none;
   margin-bottom: 26px;
   font-weight: 400;
@@ -1869,13 +1855,13 @@ pre code {
 }
 
 pre .lineno {
-  font-family: operator_mono, "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: operator_mono, jetbrains_monoregular;
   font-weight: 200;
 }
 
 code {
   background-color: var(--navbar-color);
-  font-family: "jetbrains_monoregular", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "jetbrains_monoregular", sans-serif;
   font-size: 17px;
   color: var(--main-text-color);
   border-radius: 1px;
@@ -2009,7 +1995,7 @@ td.gutter {
 }
 
 .list-filters {
-  font-family: "Concourse T3", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Concourse T3", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   padding-top: 10px;
   text-align: center;
@@ -2243,6 +2229,8 @@ figure figcaption {
   max-width: 100%;
   /*position: absolute;*/
   font-family: "Concourse T3", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  /*font-family: "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;*/
+  /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);*/
   padding-top: 2rem;
 }
 
@@ -2333,7 +2321,7 @@ ol, ul {
 .tag-list {
   padding-top: 10px;
   padding-bottom: 30px;
-  font-family: "Concourse T3", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Concourse T3", "Linux Biolinum";
   text-align: center;
 }
 
@@ -3197,7 +3185,7 @@ a.btn {
 }
 
 #related-posts .gsc-related-posts {
-  font-family: "Concourse T4", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
   font-size: 15px;
   color: var(--main-text-color);
 }
@@ -3211,7 +3199,7 @@ a.btn {
   color: var(--post-meta-index-color);
   font-size: 15px;
   margin: 10px 12px 10px 0;
-  font-family: "Concourse T3", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Concourse T3", "Cambria", "Open Sans";
 }
 
 #related-posts p {
@@ -3394,18 +3382,18 @@ hr {
 }
 
 .tag-entry a {
-  font-family: "Concourse T4", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 }
 
 .call-to-subscribe {
-  font-family: "Concourse T2", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Concourse T2", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   text-align: center;
   margin-top: 15px;
 }
 
 .call-to-subscribe span {
-  font-family: "Concourse T4", "Liberation Mono", "Consolas", "Courier", monospace, "Noto Emoji", "Quivira";
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (max-width: 450px) {
