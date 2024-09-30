@@ -15,10 +15,10 @@ use-site-title: true
 {% assign current_date = 'now' | date: '%Y-%m' %}
 {% assign current_month_post_count = 0 %}
 {% for post in site.posts %}
-  {% assign post_date = post.date | date: '%Y-%m' %}
-  {% if post_date == current_date %}
-    {% assign current_month_post_count = current_month_post_count | plus: 1 %}
-  {% endif %}
+{% assign post_date = post.date | date: '%Y-%m' %}
+{% if post_date == current_date %}
+{% assign current_month_post_count = current_month_post_count | plus: 1 %}
+{% endif %}
 {% endfor %}
 
 [//]: # (count all the blog posts)
@@ -27,7 +27,7 @@ use-site-title: true
 [//]: # (count the number of tags)
 {% assign all_tags = "" | split: "" %}
 {% for post in site.posts %}
-  {% assign all_tags = all_tags | concat: post.tags %}
+{% assign all_tags = all_tags | concat: post.tags %}
 {% endfor %}
 {% assign unique_tags = all_tags | uniq %}
 
@@ -68,9 +68,11 @@ use-site-title: true
                 </a>
               </div>
               {% endif %}
+          {% assign post_excerpt = post.excerpt | strip_html | replace: "{% youtube", "" | replace: "%}", "" | xml_escape | truncatewords: site.excerpt_length %}
           <div class="post-entry">
-            {{ post.excerpt | strip_html | replace: "{% youtube.*? %}", "" | xml_escape | truncatewords: site.excerpt_length }} {% assign excerpt_word_count = post.excerpt
-            | number_of_words %} {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+            {{ post_excerpt }}
+            {% assign excerpt_word_count = post.excerpt | number_of_words %}
+            {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
             <p class="post-read-more-block">
               <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">Continue reading...</a>
             </p>
