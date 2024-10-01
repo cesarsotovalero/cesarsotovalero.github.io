@@ -19,6 +19,8 @@ author: cesarsotovalero
 published: true
 ---
 
+{% youtube DqL3-bnSCy0 %}
+
 Most software applications today are built using third-party libraries and frameworks that together constitute the application's [software supply chain](../blog/the-software-supply-chain.html).
 These libraries are often large and complex pieces of engineering, with many features and functionalities to support a wide range of use cases.
 Consequently, most applications only use a small subset of these features.

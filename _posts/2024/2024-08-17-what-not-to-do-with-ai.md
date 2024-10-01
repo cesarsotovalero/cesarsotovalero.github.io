@@ -17,7 +17,7 @@ toc: true
 mathjax: false
 date: 2024/08/17
 author: cesarsotovalero
-published: true
+published: false
 ---
 
 I recently attended to a serious Hackathon. 

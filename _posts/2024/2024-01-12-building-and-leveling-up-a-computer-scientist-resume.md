@@ -21,6 +21,8 @@ author: cesarsotovalero
 published: true
 ---
 
+{% youtube -EYVzXoq15o %}
+
 Recently, a few friends kindly asked me to provide some feedback on their résumés. 
 They are all Computer Science PhD graduates looking to land a new job in the tech industry. 
 These people are the cream of the crop, so those résumés should look awesome, right? 
