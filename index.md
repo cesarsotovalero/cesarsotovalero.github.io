@@ -7,9 +7,9 @@ description: César Soto Valero did a PhD in Computer Science at KTH Royal Insti
 use-site-title: true
 ---
 
-<div class="header-hiddable">
-   {% include social.html type="page" %}
-</div>
+[//]: # (<div class="header-hiddable">)
+{% include social.html type="page" %}
+[//]: # (</div>)
 
 [//]: # (count all post published thi month)
 {% assign current_date = 'now' | date: '%Y-%m' %}

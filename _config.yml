@@ -48,7 +48,7 @@ page-img: "/img/pages/all/noise.png"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: César Soto Valero
-  email: "cesarsotovalero@gmail.com"
+  email: "{{ site.gmail }}"
   github: cesarsotovalero
   twitter: cesarsotovalero
   reddit: yourname
@@ -66,7 +66,7 @@ twitter:
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: false
   email: true
   twitter: true

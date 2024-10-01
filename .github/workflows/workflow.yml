@@ -28,6 +28,7 @@ jobs:
           GISCUS_DATA_REPO_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
           GISCUS_GISCUS_DATA_CATEGORY_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
           YOUTUBE_API_TOKEN: ${{ secrets.YOUTUBE_API_TOKEN }}
+          GMAIL: ${{ secrets.CESAR_PERSONAL_GMAIL }}
 
       - name: Install Minify deb package on Ubuntu
         run: sudo apt-get update && sudo apt-get install --no-install-recommends --yes minify

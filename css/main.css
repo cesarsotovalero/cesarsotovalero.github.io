@@ -2526,14 +2526,20 @@ ol, ul {
   padding-right: 0px;
 }
 
+#list-of-social-icons {
+  margin-bottom: 15px;
+}
+
 @media only screen and (max-width: 450px) {
   .black-icons li {
     padding-right: 4px;
+    font-size: 8px; /* Adjust the size as needed */
   }
-}
 
-.black-icons {
-  margin-bottom: 15px;
+  #list-of-social-icons {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 /* gisqus */
