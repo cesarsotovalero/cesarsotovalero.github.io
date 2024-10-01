@@ -48,17 +48,17 @@ page-img: "/img/pages/all/noise.png"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: César Soto Valero
-  email: "{{ site.gmail }}"
   github: cesarsotovalero
   twitter: cesarsotovalero
-  reddit: yourname
   linkedin: cesarsotovalero
   stackoverflow: 10480869/cesarsotovalero?tab=profile
-  snapchat: yourname
-  instagram: yourname
   youtube: channel/UCR4rI98w6-MqYoCS6jR9LGg
-  spotify: yourname
-  telephone: XXX
+  email: NaN
+  reddit: NaN
+  snapchat: NaN
+  instagram: NaN
+  spotify: NaN
+  telephone: NaN
 
 twitter:
   username: cesarsotovalero
@@ -68,7 +68,7 @@ twitter:
 footer-links-active:
   rss: true
   facebook: false
-  email: true
+  email: false
   twitter: true
   google-plus: false
   github: true
