@@ -54,5 +54,6 @@ John Baldessari thinks every young artist should know three things:
 # External Resources
 
 - [No More Boring Art](https://www.newyorker.com/magazine/2010/10/18/no-more-boring-art)
+- https://cai.jetbrains.com/
 
 # Footnotes

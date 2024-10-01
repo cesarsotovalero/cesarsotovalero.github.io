@@ -6,9 +6,7 @@ subtitle: 👨🏼‍💻
 description: César Soto Valero is a computer scientist, software engineer, and content creator.
 ---
 
-<div class="header-hiddable">
-   {% include social.html type="page" %}
-</div>
+{% include social.html type="page" %}
 
 [//]: # (Profile to view: https://www.zeileis.org/)
 
