@@ -2537,8 +2537,8 @@ ol, ul {
   }
 
   #list-of-social-icons {
-    padding-top: 10px;
-    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 15px;
   }
 }
 
