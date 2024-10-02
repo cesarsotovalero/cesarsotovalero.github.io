@@ -2533,7 +2533,7 @@ ol, ul {
 @media only screen and (max-width: 450px) {
   .black-icons li {
     padding-right: 8px;
-    font-size: 10px; /* Adjust the size as needed */
+    font-size: 8px; /* Adjust the size as needed */
   }
 
   #list-of-social-icons {
