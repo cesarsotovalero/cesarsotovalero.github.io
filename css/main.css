@@ -2532,13 +2532,10 @@ ol, ul {
 
 @media only screen and (max-width: 450px) {
   .black-icons li {
-    padding-right: 6px;
-    font-size: 8px; /* Adjust the size as needed */
-  }
-
-  #list-of-social-icons {
     text-align: left;
     margin-top: 15px;
+    padding-right: 6px;
+    font-size: 8px; /* Adjust the size as needed */
   }
 }
 
