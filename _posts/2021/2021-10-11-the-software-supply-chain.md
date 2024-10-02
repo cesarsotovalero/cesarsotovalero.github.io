@@ -3,7 +3,8 @@ layout: post
 title: The Software Supply Chain
 subtitle: A quick look at the modern software production landscape
 tags: security
-description: Hardening the software supply chain is a critical challenge for modern software companies.
+description: |
+  The software supply chain encompasses all technologies and processes involved in moving code from development to production. It heavily relies on third-party components, which introduces significant security and maintenance risks. Supply chain attacks occur when malicious actors compromise these components, making entire infrastructures vulnerable, as seen in incidents like the SolarWinds breach. To mitigate these risks, organizations must harden their supply chains by increasing data collection and analysis to detect attacks, adopting preventive tools and processes, and establishing rapid recovery mechanisms. This article covers how to implement reproducible builds and continuously assessing all elements of the supply chain, which are critical steps toward maintaining a secure and efficient software delivery pipeline.
 keywords:
   - reproducible builds,
   - continuous integration,
