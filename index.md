@@ -69,8 +69,8 @@ use-site-title: true
               </div>
               {% endif %}
           <div class="post-entry">
-            {{ post.description | strip_html | truncatewords: site.excerpt_length }} {% assign excerpt_word_count = post.description
-            | number_of_words %} {% if post.content != post.description or excerpt_word_count > site.excerpt_length %}
+            {{ post.description | strip_html | truncatewords: site.excerpt_length }} {% assign excerpt_word_count = post.excerpt
+            | number_of_words %} {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
             <p class="post-read-more-block">
               <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">Continue reading...</a>
             </p>
