@@ -1,7 +1,7 @@
 ---
 layout: page
 title: César Soto Valero
-subtitle: "{Tech ∩ Science}"
+subtitle: "Talks about {Tech ∩ Science}"
 keywords: César Soto Valero, research, software engineering, KTH, WASP Sweden, software technology, PhD in Computer Science
 description: César Soto Valero did a PhD in Computer Science at KTH Royal Institute of Technology in Sweden
 use-site-title: true
