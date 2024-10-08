@@ -4,7 +4,7 @@ title: A Starting Guide to Programming Contests
 subtitle: Is it worth it?
 tags: algorithms
 description: |
-  In this post, I share some insights and tricks that I learned when I was a competitive programmer. I cover the essentials, training plans, study resources, and more.
+  This post is about competitive programming, a practice that tests both mental agility and algorithmic skills. Drawing from my personal experience, I cover the essentials, from mastering key algorithms to building an effective training plan. I share practical tips, resource recommendations, and strategies that helped me become a better contestant.
 keywords: 
   - ACM-ICPC contest
   - competitive programming

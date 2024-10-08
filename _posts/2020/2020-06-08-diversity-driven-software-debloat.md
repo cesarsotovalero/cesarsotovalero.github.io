@@ -4,7 +4,8 @@ title:  Diversity-Driven Software Debloat
 subtitle: Leveraging the wisdom of multiple coverage tools
 tags: debloating
 keywords: software debloat, diversity, jdbl
-description: I leverage the diversity of code coverage tools to create a tool to automatically debloat Java artifacts.
+description: |
+    Debloating Java artifacts can be challenging due to the limitations of code coverage tools in identifying unused code. In this post, I introduce a diversity-driven approach to software debloating that combines multiple coverage tools, including JaCoCo, JCov, Yajta, and the JVM class loader, to improve precision. I leveraged the strengths of each of them into a tool called JDBL, which can achieve overall better debloating results, according to the results of our empirical experiments when debloating tens of Java applications.
 image: ../img/posts/2020/crowd_cover.jpg
 share-img: ../img/posts/2020/crowd_cover.jpg
 show-avatar: false

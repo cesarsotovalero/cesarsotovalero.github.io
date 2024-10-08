@@ -4,7 +4,7 @@ title: The Cuban Revolution
 subtitle: My personal vision
 keywords: politics, Cuba, reality
 description: |
-  Cuba has resisted more than sixty years of communism caused by the cuban revolution. I explain the historical context and implications of this event.
+  The Cuban Revolution was a tremendous moment in the nation's history. It ended Batista's dictatorship but resulted in decades of Communist regime under Fidel Castro dictatorship. In this post, I provide a personal perspective on the Revolution's long-term effects, from the initial promise of social reforms to the harsh reality of lost freedoms and economic devastation. My goal it to share my reflection and offer additional insight into the historical context, the figure of Fidel Castro, and the ongoing struggles of the Cuban people today.
 tags: politics
 image: ../img/posts/2019/cuban_flag_cover.jpg
 share-img: ../img/posts/2019/cuban_flag_cover.jpg

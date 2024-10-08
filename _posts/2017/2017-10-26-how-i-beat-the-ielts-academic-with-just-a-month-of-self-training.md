@@ -2,7 +2,8 @@
 layout: post
 title: How I Beat the IELTS Academic With Just a Month of Self-Training
 subtitle: My personal comments and suggestions
-description: Personal useful list of tips to pass the IELTS Academic English test. 
+description: |
+  I recently passed the IELTS academic test, and it was not easy. This blog post dives deep into the strategies that helped me to complete every section of the exam (listening, reading, writing, and speaking) and beating the greatest enemy: time. I discovered that mastering the test structure and engaging in relentless practice really made a big difference to my score, though I was not really good at English.
 tags: career
 keywords: learn english, international test, language test
 image: ../img/posts/2017/IELTS.jpg

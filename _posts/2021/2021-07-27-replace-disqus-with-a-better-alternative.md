@@ -2,7 +2,8 @@
 layout: post
 title:  Replace the Disqus Commenting System on Your Blog
 subtitle: GitHub-based open-source alternatives are better
-description: Disqus started polluting free users with unwanted ads; it's time to replace Disqus with better open-source alternatives.
+description: |
+  Disqus has started forcing unwanted ads on free users, making it less appealing for bloggers and small businesses. This post explores open-source alternatives like Giscus, a GitHub-based commenting system that offers a lightweight, ad-free, and developer-friendly experience. Here is a guide on how to replace Disqus on your blog and set up Giscus to improve your site's performance and user experience (and more importantly, getting rid of those annoying ads).
 tags: github
 keywords: blog, comments, disqus, replace
 image: ../img/posts/2021/angry-emoji.jpg

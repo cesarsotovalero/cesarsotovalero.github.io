@@ -9,7 +9,8 @@ keywords:
     - Google Cloud,
     - Application Deployment,
     - Tutorial
-description: This article is a step-by-step guide for deploying a simple Spring Boot application on Google Cloud Platform (GCP). It covers deployment in App Engine and Compute Engine.
+description: |
+  Deploying a Spring Boot application to Google Cloud Platform (GCP) offers a streamlined way to bring your Java app to life on the web. This post is a step-by-step guide to deploying your application using both Google App Engine and Compute Engine. Whether you're looking for simplicity with App Engine or more control using Compute Engine, this tutorial covers the essential steps to get your Spring Boot app running on GCP, with scalable infrastructure and cost-effective resources.
 image: ../img/posts/2020/2020-07-02/heroes-cover.jpg
 share-img: ../img/posts/2020/2020-07-02/heroes-cover.jpg
 show-avatar: false
@@ -25,7 +26,7 @@ I landed on Google Cloud Platform (GCP) for this task.
 Why?
 Well, GCP in 2020 gives a nice starting credit of $100, and after that I only pay for what I use.
 That's the beauty of PaS and similar cloud services.
-My app is simple, and I don't expect it to have a lot of traffic, so I don't need a Kubernetes cluster to deal with scalability issues.
+I don't expect that my application will have a lot of traffic, so I don't need a Kubernetes cluster to deal with scalability issues.
 I found the documentation for deploying a simple Spring Boot application on GCP a bit confusing.
 So I decided to write this article as a step-by-step guide for the beginners.
 Let's get started!

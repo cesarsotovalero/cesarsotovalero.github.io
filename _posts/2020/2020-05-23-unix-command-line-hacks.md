@@ -4,7 +4,8 @@ title:  Unix Cmd Hacks
 subtitle: Boosting automation from the shell
 tags: devops
 keywords: unix, command line, scripts, tools
-description: Personal notes of the edX course titled Unix Tools Data, Software and Production Engineering.
+description: |
+  Mastering the Unix command line can drastically boost your productivity and efficiency in software development. In this post, I share a collection of personal notes from the edX course "Unix Tools: Data, Software, and Production Engineering." This guide covers essential command-line tricks, from process automation to data manipulation, that every developer and DevOps engineer should know.
 image: ../img/posts/2020/unix_course_cover.jpg
 share-img: ../img/posts/2020/unix_course_cover.jpg
 show-avatar: false
@@ -13,7 +14,6 @@ author: cesarsotovalero
 date: 2020/5/23
 published: true
 ---
-
 
 <aside class="quote">
     <em>“Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill.”</em> 

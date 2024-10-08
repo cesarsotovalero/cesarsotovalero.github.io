@@ -3,7 +3,8 @@ layout: post
 title: Use Custom LaTeX Macros to Boost Your Writing Productivity
 subtitle: Forget about these annoying numerical glitches in your LaTeX document 
 tags: latex
-description: LaTeX macros allow increasing productivity by avoiding typing repetitive LaTeX commands. In this tutorial, I show you how to use them.
+description: |
+  In this blog post, I describe how I use LaTeX macros to boost my writing productivity by automating repetitive tasks such as formatting and number computations. I explain how to create custom commands for common tasks like abbreviations, author notes, formatting and computing numbers, percentages, and ratios, as well as embedding small bar charts within documents. This post also demonstrates how to execute Python scripts within LaTeX documents, offering a powerful way to dynamically update content and automate parts of the writing process.
 keywords: latex, macros, productivity, tutorials
 image: ../img/posts/2021/snail_cover.jpg
 share-img: ../img/posts/2021/snail_cover.jpg

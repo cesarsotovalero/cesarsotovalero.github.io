@@ -3,7 +3,8 @@ layout: post
 title: The Zip Slip Vulnerability Exploitation
 subtitle: Zip slip attacks
 tags: security
-description: The Zip Slip vulnerability is exploited using a specially crafted archive that holds directory traversal filenames. I prepared and exploit and explain how it works.
+description: |
+   The Zip Slip vulnerability is a serious security flaw that exploits unprotected file extraction to perform directory traversal attacks. In this post, I explain how malicious archives exploit weak validation in extraction code, potentially allowing attackers to overwrite sensitive files and execute commands. I also provide an example of the vulnerability in Java, along with a guide for setting up and preventing these attacks in your code.
 keywords: software attack, vulnerability
 image: ../img/posts/2019/zipper_cover.jpg
 share-img: ../img/posts/2019/zipper_cover.jpg

@@ -4,6 +4,8 @@ title:  Recipes for Effective Academic Emailing
 subtitle: A template-based approach
 tags: sarcasm
 keywords: communication, email
+description: |
+  Effective academic emailing is a skill every researcher and supervisor needs to master. In this post, I introduce a template-based approach to streamline email communication, enhancing productivity while maintaining professionalism. From initial introductions to assigning tasks and offering feedback, these templates will make managing the flood of academic emails a breeze.
 image: ../img/posts/2020/word_cloud_cover.jpg
 share-img: ../img/posts/2020/word_cloud_cover.jpg
 show-avatar: false
@@ -13,8 +15,8 @@ date: 2020/3/03
 published: true
 ---
 
-You cannot be a good researchers without being a good communicator. 
-If you are good enough at both, they you may qualify for becoming a supervisor.
+You cannot be a good researcher without being a good communicator. 
+If you are good enough at both, they may qualify for becoming a supervisor.
 Being a good academic supervisor is a matter of practice, discipline, and the development of leading skills. 
 Handling tons of emails is the everyday bread and butter for those who have reached this level of success (i.e., supervising other people). 
 

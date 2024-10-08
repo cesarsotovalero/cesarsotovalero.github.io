@@ -3,8 +3,7 @@ layout: post
 title: Git Fundamentals
 subtitle: The must-know git commands for software developers
 description: |
-  In this post, I will show you the most important Git commands that you need to know to work with this version control system.
-tags: github
+  Git is the go-to version control system in software development, created by Linus Torvalds in 2005 for Linux kernel development. It's now an indispensable tool for tracking project history and managing versions. This post covers the key Git commands you need to streamline your development workflow.
 keywords: 
   - command line
   - version control

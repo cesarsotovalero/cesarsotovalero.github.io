@@ -4,7 +4,8 @@ title: Unnecessary Code
 subtitle: Clarifying the concept 
 tags: debloating
 keywords: software bloat, code, unused code
-description: Unnecessary code is such that can be deleted from the codebase without affecting the expected functionality of the software project.
+description: |
+  Unnecessary code bloats software, consuming resources without contributing to functionality. In this post, I explore the complexities of identifying and removing unnecessary code, clarifying key distinctions between dead, unused, and bloated code. Learn how static and dynamic analysis, coupled with modern techniques like machine learning, are reshaping the process of debloating software for a leaner, more efficient software development experience.
 image: ../img/posts/2018/codecode_cover.png
 share-img: ../img/posts/2018/codecode_cover
 show-avatar: false

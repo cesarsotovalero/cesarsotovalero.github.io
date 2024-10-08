@@ -3,7 +3,8 @@ layout: post
 title: Encoding, Encryption, Hashing, and Obfuscation in Java
 subtitle: From concepts to code
 tags: java
-description: The concepts of encoding, encryption, hashing, and obfuscation are often mistakenly confused or taken as similar (which is even worse). Let's clarify this matter and see some Java code examples of practical applications.
+description: |
+  The concepts of encoding, encryption, hashing, and obfuscation are often mistakenly confused or taken as similar (which is even worse). Let's clarify this matter and see some Java code examples of practical applications.
 keywords: java,data confidentiality,data integrity,data authenticity,cybersecurity
 image: ../img/posts/2021/paint_on_wall_cover.jpg
 share-img: ../img/posts/2021/paint_on_wall_cover.jpg

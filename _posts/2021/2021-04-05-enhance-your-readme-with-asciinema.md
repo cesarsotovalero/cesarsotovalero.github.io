@@ -3,7 +3,8 @@ layout: post
 title:  Enhance Your Readme With Asciinema
 subtitle: How to create beautiful terminal recordings that your users will love
 tags: github
-description: In this tutorial, I show you to create beautiful terminal recordings that your users will love using ascinema.
+description: |
+  This blog post explains how to use Asciinema to create and share beautiful terminal recordings, particularly for enhancing README files on GitHub. It walks through the steps of recording a terminal session with Asciinema, converting the CAST file into a GIF using asciicast2gif for Markdown compatibility, and embedding the recording in web pages using the Asciinema player. The tutorial provides practical commands and examples, making it easy for users to integrate terminal screencasts into their projects.
 keywords: asciinema, readme, improvement, video
 image: ../img/posts/2021/asciinema_cover.jpg
 share-img: ../img/posts/2021/asciinema_cover.jpg

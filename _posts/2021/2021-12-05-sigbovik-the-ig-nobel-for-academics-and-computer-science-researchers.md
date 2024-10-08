@@ -3,7 +3,8 @@ layout: post
 title: SIGBOVIK&#58; The Ig Nobel for Academics and Computer Science Researchers
 subtitle: The most wanted proceedings for fruitful procrastination
 tags: sarcasm
-description: The SIGBOVIK humor-filled conference is the most disruptive Computer Science academic conference I've ever seen. This exceptional venue allows demystifying complicated concepts through sarcasm and mockery while getting away from the rigors of standard academic research.
+description: |
+  The SIGBOVIK humor-filled conference is the most disruptive Computer Science academic conference I've ever seen. This exceptional venue allows demystifying complicated concepts through sarcasm and mockery while getting away from the rigors of standard academic research.
 keywords: SIGBOVIK,silly ideas,research parodies,computer science,conference,academia
 image: ../img/posts/2021/splatter_cover.png
 share-img: ../img/posts/2021/splatter.png

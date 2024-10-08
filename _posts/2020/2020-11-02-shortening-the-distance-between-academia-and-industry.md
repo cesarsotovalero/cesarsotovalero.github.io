@@ -4,7 +4,8 @@ title:  Shortening the Distance Between Academia and Industry
 subtitle: An imperative need of researchers
 tags: science
 keywords: research, industry, collaboration
-description: Presenting research work to industrial engineers is essential for the sustainability of the whole research business. Therefore, researchers should dedicate a significant portion of their efforts to strengthen the bonds between their work and the local industry.
+description: |
+  Presenting research work to industrial engineers is essential for the sustainability of the whole research business. In this post, I emphasize the need for researchers to engage more actively with the local industry by sharing their findings, fostering collaborations, and addressing industry-relevant challenges. By doing so, researchers can demonstrate the practical value of their work, encourage investment, and create a symbiotic relationship that benefits both academia and industry.
 image: ../img/posts/2020/skates_cover.jpg
 share-img: ../img/posts/2020/skates_cover.jpg
 show-avatar: false
@@ -44,7 +45,7 @@ For researchers, demonstrating the impact of their work on the industry is very 
 It can lead to a faster acceptance of their grant applications.
 
 The best way to augment the flow of economic support for research is by showing the many benefits of allocating money into it.
-Showing the impact for the local industry is key to increase the understanding of the long-term societal benefits.
+Showing the impact for the local industry is key to increasing the understanding of the long-term societal benefits.
 For example, fruitful collaboration between academic researchers in the area of software technology is crucial for modern economies.
 Shortening the distance between academic research and the industry is a matter of common interest for both parties.
 

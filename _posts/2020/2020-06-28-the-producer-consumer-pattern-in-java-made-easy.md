@@ -4,7 +4,8 @@ title:  The Producer-Consumer Pattern in Java Made Easy
 subtitle: An example using the BlockingQueue Java interface
 tags: java
 keywords: Java, producer/consumer, design patterns
-description: The BlockingQueue data structure can be used to implement Producer-Consumer pattern. In this guide I explain how.
+description: |
+    The Producer-Consumer pattern is a powerful design strategy used to decouple the production of data from its processing, enabling parallelism and efficient data handling. This post is about how to implement this pattern in Java using the BlockingQueue interface, allowing for easy, thread-safe coordination between producers and consumers. This guide walks through a real-world example, demonstrating how to produce and consume data in parallel with minimal synchronization complexity.
 image: ../img/posts/2020/java_design_patterns_cover.jpg
 share-img: ../img/posts/2020/java_design_patterns_cover.jpg
 show-avatar: false
@@ -14,7 +15,7 @@ date: 2020/6/28
 published: true
 ---
 
-I see the usage of a recurring handy pattern for doing data collection and analysis in software engineering: [the producer-consumer pattern](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem). This pattern simplifies the data acquisition (handled by the Producer), and the data post-processing (handled by the Consumer). The Producer collects the data items one at the time and places the items into a queue for processing later. The Consumer then takes one item at the time from the queue, process it, and saves the data for further analysis. This decoupled design makes easy to parallelize the whole process as desired. For example, depending on the processing time and resources, one can have several *independent* Consumers running in parallel.
+I see the usage of a recurring handy pattern for doing data collection and analysis in software engineering: [the producer-consumer pattern](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem). This pattern simplifies the data acquisition (handled by the Producer), and the data post-processing (handled by the Consumer). The Producer collects the data items one at the time and places the items into a queue for processing later. The Consumer then takes one item at a time from the queue, process it, and saves the data for further analysis. This decoupled design makes it easy to parallelize the whole process as desired. For example, depending on the processing time and resources, one can have several *independent* Consumers running in parallel.
 
 > “A `BlockingQueue` is a queue that additionally supports operations that wait for the queue to become non-empty when retrieving an element, and wait for space to become available in the queue when storing an element.”
 

@@ -3,7 +3,8 @@ layout: post
 title: The Practice of Teaching
 subtitle: The ultimate skill to learn
 tags: career
-description: I share preparation tips when teaching how the Quicksort algorithm works using a blackboard and chalk.
+description: |
+  Teaching is an essential skill, whether you're a developer, researcher, or manager. In this post, I share my experience teaching the Quicksort algorithm using a blackboard. I highlight both the challenges and valuable lessons learned. From preparation tips to the importance of practice, my point is that honing your teaching abilities can enhance your communication skills and overall success in your professional career.
 keywords: teach, video, explanation, quicksort
 image: ../img/posts/2019/people_cover.png
 share-img: ../img/posts/2019/people_cover.png

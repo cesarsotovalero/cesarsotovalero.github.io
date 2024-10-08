@@ -4,7 +4,8 @@ title: Deploying to Maven Central
 subtitle: A three-steps guide
 tags: java
 keywords: package manager, Java, ecosystem, software
-description: This tutorial is a step-by-step guide to deploy a software artifact to the Maven Central repository. 
+description: |
+  Deploying to Maven Central is essential for sharing Java libraries with the world. In this post, I provide a detailed, step-by-step guide on how to deploy a software artifact to Maven Central, covering everything from setting up a Sonatype account to configuring POM files. By following this tutorial, you'll be able to streamline your deployment process and ensure your libraries are available for reuse to all developers out there.
 image: ../img/posts/2020/maven_journey_cover.png
 share-img: ../img/posts/2020/maven_journey_cover.png
 show-avatar: false
@@ -18,14 +19,12 @@ Maven Central is the de-facto repository for hosting software artifacts that com
 It is one of the world’s largest and oldest archives of software libraries.
 In this post, I'll describe the process of releasing a new artifact in Maven Central following a step-by-step approach. 
 
-
 <figure class="jb_picture">
 {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2020/mdg.png alt: "Excerpt of 1% of the whole graph of Maven artifacts" %}
   <figcaption class="stroke"> 
 &#169; Excerpt of 1% of the Maven Dependency Graph of software artifacts. <a href="https://dl.acm.org/doi/10.1109/MSR.2019.00060">Source</a>.
 </figcaption>
 </figure>
-
 
 # Create a JIRA ticket in Sonatype
 
