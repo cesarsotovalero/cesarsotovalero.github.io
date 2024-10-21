@@ -16,6 +16,7 @@ The following is a non-exhaustive list of my talks (in reverse chronological ord
 
 {% youtube Xn1ShZPrw2o %}
 
+- **The AI Secret: Why Predictive Machine Learning Still Rules The Real World**. Presented at _SEB Tech Day_ in Arenastaden Stockholm, October 2024. [Video](https://www.youtube.com/watch?v=n1t3XEAyUgQ "video")
 - **Dancing on Thin Ice - Leveraging Software Bill of Materials in Java**. Presented at [Jfokus](https://www.jfokus.se/talks/1661), Stockholm, February 2024. [Video](https://youtu.be/Xn1ShZPrw2o?si=sP5U0PATsrdHmwK1 "video"){:target="_blank"} [Slides](https://www.jfokus.se/jfokus24-preso/Dancing-on-Thin-Ice--Leveraging-Software-Bill-of-Materials-in-Java.pdf)
 - **Hand-In-Hand Live Coding Session With Github Copilot**. Presented at SEB's main theater in Solna, Stockholm, April 2024. [:earth_americas: Post](https://www.linkedin.com/posts/cesarsotovalero_seb-sebtech-ai-activity-7185295533308002305-oRFv) [Slides](../files/presentations/hand-in-hand-live-coding-session-with-github-copilot.pptx)
 - **Enhancing Semantic Search With RAG**. Presented at SEB, Stockholm, March 2024. [Slides](../files/presentations/enhancing-semantic-search-with-rag.pptx)

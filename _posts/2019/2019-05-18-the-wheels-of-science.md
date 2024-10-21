@@ -23,14 +23,12 @@ published: false
 
 Yuval Noah Harari's "Sapiens: A Brief History of Humankind" explores the profound shifts in human society over millennia, from the Cognitive Revolution to the Agricultural Revolution, the unification of humankind, and the Scientific Revolution. Chapter 15, titled "The Marriage of Science and Empire," delves into the symbiotic relationship between scientific progress and imperial expansion, illustrating how these two forces have shaped the modern world. 
 
-# IMAGE
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/img-placeholder.webp alt: "TODO" %}
   <figcaption class="stroke"> 
     &#169; TODO
   </figcaption>
 </figure>
-
 
 The Scientific Revolution was a period of rapid scientific discovery that took place in Europe between the 16th and 18th centuries.
 During this time, scientists made groundbreaking discoveries in fields such as astronomy, physics, and biology, which laid the foundation for modern science.
