@@ -15,18 +15,19 @@ I've reviewed papers for the following journals and conferences:
     <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Check my verified peer reviews in the Web of Science</a></em> 
 </aside>
 
-- [Information Processing & Management](https://www.sciencedirect.com/journal/information-processing-and-management), 2024 [Recognition](../files/certificates/2024_IPM_Reviewer_Certificate.pdf)
-- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
+- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), October 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
+- [Information Processing & Management](https://www.sciencedirect.com/journal/information-processing-and-management), June 2024 [Recognition](../files/certificates/2024_IPM_Reviewer_Certificate.pdf)
+- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), May 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
 - [Springer Discover Artificial Intelligence](https://link.springer.com/journal/44163), 2024
 - [PeerJ Computer Science](https://peerj.com/computer-science/), 2024
-- [SoftwareX](https://www.journals.elsevier.com/softwarex), 2023 [Recognition](../files/certificates/2023_Certificate_SOFTX_Recognised.pdf)
+- [SoftwareX](https://www.journals.elsevier.com/softwarex), December 2023 [Recognition](../files/certificates/2023_Certificate_SOFTX_Recognised.pdf)
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2023
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2022
 - [International Journal of Computer Science in Sport](https://sciendo.com/journal/IJCSS), 2021
 - [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021 [Recognition](../files/certificates/2021_JBA_Reviewer_Certificate.pdf)
 - [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019 
 - [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018
-- [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), 2017 [Recognition](../files/certificates/SMR_Certificate.pdf)
+- [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), May 2017 [Recognition](../files/certificates/SMR_Certificate.pdf)
 
 I've co-reviewed papers for the following journals and conferences:
 
