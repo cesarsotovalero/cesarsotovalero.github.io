@@ -16,7 +16,8 @@ The following is a non-exhaustive list of my talks (in reverse chronological ord
 
 {% youtube Xn1ShZPrw2o %}
 
-- **The AI Secret: Why Predictive Machine Learning Still Rules The Real World**. Presented at _SEB Tech Day_ in Arenastaden Stockholm, October 2024. [Video](https://youtu.be/n1t3XEAyUgQ?si=3WKO3XZC_b_epmfo "video")
+
+- **The AI Secret: Why Predictive Machine Learning Still Rules The Real World**. Presented at _SEB Tech Day_ in Arenastaden Stockholm, October 2024. [Video](https://youtu.be/n1t3XEAyUgQ?si=3WKO3XZC_b_epmfo "video") [Slides](../files/presentations/The AI Secret - Why Predictive ML Still Rules the Real World.pptx)
 - **Dancing on Thin Ice - Leveraging Software Bill of Materials in Java**. Presented at [Jfokus](https://www.jfokus.se/talks/1661), Stockholm, February 2024. [Video](https://youtu.be/Xn1ShZPrw2o?si=sP5U0PATsrdHmwK1 "video"){:target="_blank"} [Slides](https://www.jfokus.se/jfokus24-preso/Dancing-on-Thin-Ice--Leveraging-Software-Bill-of-Materials-in-Java.pdf)
 - **Hand-In-Hand Live Coding Session With Github Copilot**. Presented at SEB's main theater in Solna, Stockholm, April 2024. [:earth_americas: Post](https://www.linkedin.com/posts/cesarsotovalero_seb-sebtech-ai-activity-7185295533308002305-oRFv) [Slides](../files/presentations/hand-in-hand-live-coding-session-with-github-copilot.pptx)
 - **Enhancing Semantic Search With RAG**. Presented at SEB, Stockholm, March 2024. [Slides](../files/presentations/enhancing-semantic-search-with-rag.pptx)
@@ -29,6 +30,7 @@ The following is a non-exhaustive list of my talks (in reverse chronological ord
 - **Debloating Java Dependencies**. PhD defense presented at KTH, June 2023. [Video](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw "video") [Slides](../files/thesis/slides/cesar-phd-defense.pptx)
 - **Software Supply Chain Security**. Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [Digital Futures](https://www.digitalfutures.kth.se/) in KTH, Sponsored by the [Swedish National Hacking Team](https://snht.se/) and [Cparta Cyber Defense](https://www.cparta.se/), June 2023. [Slides](https://docs.google.com/presentation/d/1ki5KITPSciccI1Qdh3wb7GOjdw8jq-CFbY-mvXLUv2c/edit?usp=sharing)
 - **The Software Supply Chain of Crypto and Decentralization**. Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [_2nd Descentralized Camp Meetup_](https://www.meetup.com/decentralized-camp/events/290035869/), Developers Bay, January 2023. [Slides](https://docs.google.com/presentation/d/14A3n_ZT13ealkTVUNnchS7pE03vOL6cDIQpiIZghuHY/edit?usp=sharing)
+  
 
 # 2022
 
