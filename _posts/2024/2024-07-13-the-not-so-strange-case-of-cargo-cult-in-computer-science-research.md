@@ -4,7 +4,7 @@ title: The Not-So-Strange Case of Cargo Cult in Computer Science Research
 subtitle: Are we mimicking scientific progress without true innovation?
 tags: science
 description: |
-  Arguably, computers and communications have changed the world more than any other science or technology. Yet there are a lot of failures, some prominent, many minor, and a widening gap between aspirations and reality. Borrowing Richard Feynman's criticism of cargo cult science, this article discusses the problem of cargo cult in computer science. To paraphrase Feynman: everywhere I see computer scientists that look like they are working on the right thing, but the thing actually doesn't work. I hope this article could make you reflect the problem of having poor science in computer science research, and what we can positively do about it.
+  Arguably, computers and faster communication systems have changed the world more than any other technology. Yet there have been many scientific failures along the way, some prominent, many minor, and a widening gap between aspirations and reality. This article discusses the problem of pseudoscience in computer science. I discuss Richard Feynman's coined term "cargo cult science," as he said: "Everywhere I see computer scientists that look like they are working on the right thing, but the thing actually doesn't work." I offer guidance on how to stay away of this dangerous practice, from a scientific standpoint. 
 keywords:
   - computer science research
   - science reproducibility crisis

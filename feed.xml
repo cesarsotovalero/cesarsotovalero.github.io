@@ -10,12 +10,13 @@ layout: null
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:100 %}
     <item>
-      <title>{{ post.title | xml_escape }}</title>
+      <title>
+        {{ post.title | xml_escape }}{% if post.subtitle %} - {{ post.subtitle | xml_escape }}{% endif %}
+      </title>
       <description><![CDATA[
-          {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
-          {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
+          {{ post.description | strip_html | xml_escape | truncatewords: 140 }}
         ]]></description>
-      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y" }}</pubDate>
       <link>{{ site.url }}{{ post.url }}</link>
       <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
     </item>
