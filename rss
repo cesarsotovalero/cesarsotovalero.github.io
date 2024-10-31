@@ -6,225 +6,721 @@
     <link>https://www.cesarsotovalero.net</link>
     <atom:link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/rss+xml" />
     
-      <item>
-        <title>The Not-So-Strange Case of Cargo Cult in Computer Science Research</title>
-        <description>
+    <item>
+      <title>The Not-So-Strange Case of Cargo Cult in Computer Science Research</title>
+      <description><![CDATA[
           Are we mimicking scientific progress without true innovation? - 
           Cargo Cult in Computer Science: An Uncomfortable Truth for Researchers; 22 September 2024. Everywhere, I see computer scientists that look like they are working on the right thing. They spent a long time doing the thing, writing code to run it (in the best cases), and collecting results. Then, they...
-        </description>
-        <pubDate>Sat, 13 Jul 2024 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Sat, 13 Jul 2024 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html</guid>
+    </item>
     
-      <item>
-        <title>Some Things to Remember Before Acting Pretentiously</title>
-        <description>
+    <item>
+      <title>Some Things to Remember Before Acting Pretentiously</title>
+      <description><![CDATA[
           And a few personal thoughts on the value of sincere humility - 
           A few days ago, I was asked: “Where do you see yourself in 10 or 20 years?” I replied: “I would like to get some sort of recognition for my contributions… maybe to be known as an expert in something, or someone who is consulted and listened to before important...
-        </description>
-        <pubDate>Fri, 07 Jun 2024 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Fri, 07 Jun 2024 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html</guid>
+    </item>
     
-      <item>
-        <title>The Last Paper&apos;s Myth</title>
-        <description>
+    <item>
+      <title>The Last Paper&apos;s Myth</title>
+      <description><![CDATA[
           A tale of contending interests - 
           The Last Paper’s Myth: PhD Student Expectations vs. Reality at the End of a PhD; 28 July 2024. Last week, I met a colleague from a renowned research lab. She is currently doing the last year of her PhD. I asked the usual: “So, how are you doing? Writing your...
-        </description>
-        <pubDate>Sun, 05 May 2024 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/the-last-paper-myth.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-last-paper-myth.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Sun, 05 May 2024 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/the-last-paper-myth.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-last-paper-myth.html</guid>
+    </item>
     
-      <item>
-        <title>On the Rise, Decline, and Persistence of Web Technologies</title>
-        <description>
+    <item>
+      <title>On the Rise, Decline, and Persistence of Web Technologies</title>
+      <description><![CDATA[
           From Static HTML Pages to WebAssembly - 
           I’ve been doing some frontend web development lately as part of my daily job.1 Along the way, I’ve been thinking on how the whole thing is built under the hood. The web technologies that we all use every day have changed and evolved over time. While digging into this topic,...
-        </description>
-        <pubDate>Sat, 27 Apr 2024 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Sat, 27 Apr 2024 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html</guid>
+    </item>
     
-      <item>
-        <title>The Most Relevant Technical Skill in My Career</title>
-        <description>
+    <item>
+      <title>The Most Relevant Technical Skill in My Career</title>
+      <description><![CDATA[
           It isn&apos;t Java coding - 
           Eleven years ago (do you still remember 2013?), I was in the last year of my undergraduate studies. I started working on my thesis and soon realized that, to earn my diploma, I had to collect, analyze, and summarize data in a specific way. Because at the end of the...
-        </description>
-        <pubDate>Sat, 30 Mar 2024 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Sat, 30 Mar 2024 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html</guid>
+    </item>
     
-      <item>
-        <title>AI Doesn&apos;t Make Me the Same Coffee</title>
-        <description>
+    <item>
+      <title>AI Doesn&apos;t Make Me the Same Coffee</title>
+      <description><![CDATA[
           And it doesn&apos;t understand wine either - 
           I started to consume and appreciate coffee after I moved to Sweden in 2018. Coffee is a key part of the Swedish culture of fika, and it’s used as a way to combat the dark winter days months. For years, I’ve been considering the idea of buying a fancy coffee...
-        </description>
-        <pubDate>Tue, 13 Feb 2024 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html</guid>
+    </item>
     
-      <item>
-        <title>Building and Leveling Up a Computer Scientist Résumé</title>
-        <description>
+    <item>
+      <title>Building and Leveling Up a Computer Scientist Résumé</title>
+      <description><![CDATA[
           My personal take to stand out from the crowd - 
           Building &amp;amp; Upgrading a Killer Tech RÉSUMÉ; 29 September 2024. Recently, a few friends kindly asked me to provide some feedback on their résumés. They are all Computer Science PhD graduates looking to land a new job in the tech industry. These people are the cream of the crop, so...
-        </description>
-        <pubDate>Fri, 12 Jan 2024 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Fri, 12 Jan 2024 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html</guid>
+    </item>
     
-      <item>
-        <title>Revisiting Ken Thompson’s Reflection on Trusting Trust</title>
-        <description>
+    <item>
+      <title>Revisiting Ken Thompson’s Reflection on Trusting Trust</title>
+      <description><![CDATA[
           One of the most chilling ideas in cybersecurity&apos;s history - 
           Revisiting Ken Thompson’s Turing Award Lecture &amp;quot;Reflections on Trusting Trust&amp;quot;; 4 August 2024. Let me ask: Would you trust a cracked version of Adobe Photoshop downloaded from a random website? I hope your answer is negative. But what if I ask you instead: Do you trust that your latest purchase...
-        </description>
-        <pubDate>Wed, 27 Dec 2023 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Wed, 27 Dec 2023 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html</guid>
+    </item>
     
-      <item>
-        <title>How I Peer Review Research Papers</title>
-        <description>
+    <item>
+      <title>How I Peer Review Research Papers</title>
+      <description><![CDATA[
           My reviewer flow, focused template, and personal tips - 
           Inside the Peer-Review Process: A Step-By-Step Guide to Assess Papers Like an “Expert”; 11 August 2024. In academic circles, peer reviewing is the act of assessing the quality of a research paper to determine if it’s worth to be published in a journal or conference. Peer reviewers are supposed to...
-        </description>
-        <pubDate>Sun, 12 Nov 2023 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Sun, 12 Nov 2023 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html</guid>
+    </item>
     
-      <item>
-        <title>My Ultimate Terminal Customizations for Windows</title>
-        <description>
+    <item>
+      <title>My Ultimate Terminal Customizations for Windows</title>
+      <description><![CDATA[
           Another guide - 
           I went back to using Windows lately in my current job.1 But let’s be honest, I don’t enjoy the change.2 Anyway, I’ve to deal with it to do my job right. One of the things that I miss the most from my previous setup is my nice macOS terminal customizations....
-        </description>
-        <pubDate>Fri, 13 Oct 2023 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-windows.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-windows.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-windows.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-windows.html</guid>
+    </item>
     
-      <item>
-        <title>Surviving the AI Revolution as a Software Engineer</title>
-        <description>
+    <item>
+      <title>Surviving the AI Revolution as a Software Engineer</title>
+      <description><![CDATA[
           Is there still any hope? - 
           Dear software engineer, as you may already know, AI is here to stay. It’s inevitable, and it changes everything. If you are worried about what OpenAI’s ChatGPT can do, hold on because it’s just the beginning. The next wave of extremely powerful and specialized AI models is coming faster than...
-        </description>
-        <pubDate>Sun, 17 Sep 2023 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/surviving-the-ai-revolution-as-a-software-engineer.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/surviving-the-ai-revolution-as-a-software-engineer.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/surviving-the-ai-revolution-as-a-software-engineer.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/surviving-the-ai-revolution-as-a-software-engineer.html</guid>
+    </item>
     
-      <item>
-        <title>A Prime on Public Key Infrastructure</title>
-        <description>
+    <item>
+      <title>A Prime on Public Key Infrastructure</title>
+      <description><![CDATA[
           How do we trust each other in the digital era? - 
           The whole internet is secured by the power of symmetric and asymmetric cryptography. Each time you visit a website, a cryptographic handshake occurs between your browser and a web server located somewhere on Earth. The authenticity of this connection is verified by a technology known as Public Key Infrastructure (PKI)....
-        </description>
-        <pubDate>Sun, 13 Aug 2023 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Sun, 13 Aug 2023 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html</guid>
+    </item>
     
-      <item>
-        <title>My PhD as a Comic</title>
-        <description>
+    <item>
+      <title>My PhD as a Comic</title>
+      <description><![CDATA[
           The time when I became a superhero - 
           Doing good science is hard. Communicating science is even harder because it requires a larger doses of creativity. I learned during my 5 years as a PhD student that art visuals and stories are excellent ways to communicate scientific ideas and results. But using art as a form of expression...
-        </description>
-        <pubDate>Mon, 10 Jul 2023 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/my-phd-as-a-comic.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/my-phd-as-a-comic.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/my-phd-as-a-comic.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/my-phd-as-a-comic.html</guid>
+    </item>
     
-      <item>
-        <title>How to Give a Great Technical Presentation</title>
-        <description>
+    <item>
+      <title>How to Give a Great Technical Presentation</title>
+      <description><![CDATA[
           Here&apos;s what I&apos;ve learned - 
           Public speaking has never been my forte. As a child, I often preferred blending into the crowd rather than standing out.1 However, I’ve since realized that in the pursuit of professional excellence, there is no way to avoid the public eye. Talent and hard work don’t really matter if I...
-        </description>
-        <pubDate>Thu, 22 Jun 2023 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/how-to-give-a-great-technical-presentation.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-give-a-great-technical-presentation.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Thu, 22 Jun 2023 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-to-give-a-great-technical-presentation.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-give-a-great-technical-presentation.html</guid>
+    </item>
     
-      <item>
-        <title>Prompting is All We Need</title>
-        <description>
+    <item>
+      <title>Prompting is All We Need</title>
+      <description><![CDATA[
           Is this the end of software engineering as we know it? - 
           I’m a software engineer at heart. Consequently, a big chunk of my time revolves around writing code to solve problems. Lately, though, I’ve found myself putting aside the code-writing labor and everything else in text format. Still, I consider writing one of the most gratifying activities (especially once it is...
-        </description>
-        <pubDate>Sat, 27 May 2023 00:00:00 -0700</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/prompting-is-all-we-need.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/prompting-is-all-we-need.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Sat, 27 May 2023 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/prompting-is-all-we-need.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/prompting-is-all-we-need.html</guid>
+    </item>
     
-      <item>
-        <title>Let&apos;s Face It&amp;#58; Paper Figures Are Always Subject to Change</title>
-        <description>
+    <item>
+      <title>Let&apos;s Face It&amp;#58; Paper Figures Are Always Subject to Change</title>
+      <description><![CDATA[
           The story of a single figure - 
           There is one painful truth about the process of writing research papers that I haven’t heard anyone talking about during my years as a PhD student: Figures keep changing until the very last moment! It seems that the journey of figures (and other kinds of visualizations) in research papers is...
-        </description>
-        <pubDate>Fri, 10 Mar 2023 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/paper-figures-are-always-subject-to-change.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/paper-figures-are-always-subject-to-change.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Fri, 10 Mar 2023 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/paper-figures-are-always-subject-to-change.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/paper-figures-are-always-subject-to-change.html</guid>
+    </item>
     
-      <item>
-        <title>Securing a Permanent Job in Sweden Before Completing My PhD</title>
-        <description>
+    <item>
+      <title>Securing a Permanent Job in Sweden Before Completing My PhD</title>
+      <description><![CDATA[
           My personal experiences and tips - 
           For better or worse, a PhD is a time constrained endeavour. For me, this represented almost 5 years of full-time research in Computer Science at KTH. When approaching completion, the decision of whether to pursue a career in academia or explore other paths lay before me. After some key considerations,...
-        </description>
-        <pubDate>Tue, 14 Feb 2023 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/securing-a-permanent-job-in-sweden-before-completing-my-phd.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/securing-a-permanent-job-in-sweden-before-completing-my-phd.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Tue, 14 Feb 2023 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/securing-a-permanent-job-in-sweden-before-completing-my-phd.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/securing-a-permanent-job-in-sweden-before-completing-my-phd.html</guid>
+    </item>
     
-      <item>
-        <title>Data Serialization/Deserialization in Java With Apache Avro</title>
-        <description>
+    <item>
+      <title>Data Serialization/Deserialization in Java With Apache Avro</title>
+      <description><![CDATA[
           Getting started - 
           When working with data processing in Java, choosing the right file format for storing and transmitting the data is crucial. Each format (such as CSV, JSON, or Parquet) has its particular advantages and disadvantages, as they are specifically designed to cater to different use cases. In this article, I’ll focus...
-        </description>
-        <pubDate>Fri, 20 Jan 2023 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/data-serialization-deserialization-in-java-with-apache-avro.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/data-serialization-deserialization-in-java-with-apache-avro.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Fri, 20 Jan 2023 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/data-serialization-deserialization-in-java-with-apache-avro.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/data-serialization-deserialization-in-java-with-apache-avro.html</guid>
+    </item>
     
-      <item>
-        <title>How to Write a Good Cover Letter for a Research Paper</title>
-        <description>
+    <item>
+      <title>How to Write a Good Cover Letter for a Research Paper</title>
+      <description><![CDATA[
           Quick an easy - 
           Submitting a research paper is probably one of the most happy moments in the working life career of PhD students. You’ve been dealing with a research paper for months, maybe years. And you know, clicking that “submit” button represents such a moment of relief. You just want it to be...
-        </description>
-        <pubDate>Wed, 23 Nov 2022 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/how-to-write-a-good-cover-letter-for-a-research-paper.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-write-a-good-cover-letter-for-a-research-paper.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-to-write-a-good-cover-letter-for-a-research-paper.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-write-a-good-cover-letter-for-a-research-paper.html</guid>
+    </item>
     
-      <item>
-        <title>The True Value of Attending Academic Conferences</title>
-        <description>
+    <item>
+      <title>The True Value of Attending Academic Conferences</title>
+      <description><![CDATA[
           It&apos;s not only about the technical content - 
           I recently attended the 29th edition of ESEC/FSE 2022 in Singapore. ESEC/FSE is one of the most prestigious conferences in the Software Engineering field.1 This was my first time participating in an academic conference (in person). I went there to present two papers. But let me admit it, I had...
-        </description>
-        <pubDate>Sat, 19 Nov 2022 00:00:00 -0800</pubDate>
-        <link>https://www.cesarsotovalero.net/blog/the-true-value-of-attending-academic-conferences.html</link>
-        <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-true-value-of-attending-academic-conferences.html</guid>
-      </item>
+        ]]></description>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/the-true-value-of-attending-academic-conferences.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-true-value-of-attending-academic-conferences.html</guid>
+    </item>
+    
+    <item>
+      <title>The Execution Lifecycle of a Java Application</title>
+      <description><![CDATA[
+          Or... what happens when you run a Java program? - 
+          If you are reading this post it’s likely that you already know how to write Java code. That’s very good for you, I think everyone should know how to code these days (in the same way everyone should know about basic math operations such as +, -, *, and /...
+        ]]></description>
+      <pubDate>Thu, 20 Oct 2022 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html</guid>
+    </item>
+    
+    <item>
+      <title>On the Parkinson&apos;s Law of Triviality for Computer Science Researchers</title>
+      <description><![CDATA[
+          It must stop! - 
+          The Parkinson’s Law of Triviality is a real thing (more on this later). And for Computer Science researchers, it is part of everyday life. As we know, research is a very time-consuming activity. There are uncertain tasks that typically take a lot of time to complete. This state of things...
+        ]]></description>
+      <pubDate>Fri, 22 Jul 2022 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/on-the-parkinson-law-of-triviality-for-computer-science-researchers.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/on-the-parkinson-law-of-triviality-for-computer-science-researchers.html</guid>
+    </item>
+    
+    <item>
+      <title>Why Debloating Third-Party Software?</title>
+      <description><![CDATA[
+          The case of the Log4j vulnerability - 
+          The Silent Crisis of Software Bloat; 14 September 2024. Most software applications today are built using third-party libraries and frameworks that together constitute the application’s software supply chain. These libraries are often large and complex pieces of engineering, with many features and functionalities to support a wide range of use...
+        ]]></description>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/why-debloating-third-party-software.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/why-debloating-third-party-software.html</guid>
+    </item>
+    
+    <item>
+      <title>My Ultimate Terminal Customizations for macOS</title>
+      <description><![CDATA[
+          A guide - 
+          There is a common belief that top-class software developers can do their job without ever abandoning the terminal. I think this is true to some extent. It is almost impossible to become an outstanding software developer without knowing how to get the most out of the terminal. Personally, I treat...
+        ]]></description>
+      <pubDate>Sun, 22 May 2022 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html</guid>
+    </item>
+    
+    <item>
+      <title>No One Cares About Your Research&amp;#33;</title>
+      <description><![CDATA[
+          A comfortable truth - 
+          That’s the truth. No one cares about what you’re doing in your PhD, no one, no one!1 But don’t be sad, because this is actually a very comfortable truth. I only came to this realization after a while. Once you get it, then you will start looking at your PhD...
+        ]]></description>
+      <pubDate>Wed, 11 May 2022 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/no-one-cares-about-your-research.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/no-one-cares-about-your-research.html</guid>
+    </item>
+    
+    <item>
+      <title>The Dynamic Features of Java</title>
+      <description><![CDATA[
+          A long-standing challenge for static analyzers - 
+          The existence of dynamic features built-in within the language allows Java developers to dynamically transform their program executions at runtime. For example, using the Java Reflection API, one can inspect and interact with otherwise static language constructs such as classes, fields, and methods, e.g., to instantiate objects, set fields and...
+        ]]></description>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html</guid>
+    </item>
+    
+    <item>
+      <title>Inversion of Control and Dependency Injection in Java</title>
+      <description><![CDATA[
+          The holy grails of modern enterprise Java frameworks - 
+          Inversion of Control (IoC) is a programming principle. The idea of IoC is delegating the control of parts of our application to a framework that initializes some specific task for us. Dependency injection (DI) is a popular design pattern that applies the IoC principle. This pattern was made popular by...
+        ]]></description>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html</guid>
+    </item>
+    
+    <item>
+      <title>AOT vs. JIT Compilation in Java</title>
+      <description><![CDATA[
+          Which one is better? - 
+          There are two ways of compiling a Java application: using Just in Time Compilation (JIT) or Ahead of Time Compilation (AOT). The first is the default mode, and it is used by the Java Hotspot Virtual Machine to translate bytecode into machine code at runtime. The latter is supported by...
+        ]]></description>
+      <pubDate>Sun, 27 Mar 2022 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/aot-vs-jit-compilation-in-java.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/aot-vs-jit-compilation-in-java.html</guid>
+    </item>
+    
+    <item>
+      <title>How to Write a Good Revision Letter For an Academic Paper</title>
+      <description><![CDATA[
+          My system to address major revisions and get my papers accepted - 
+          I just finished a major revision for one of my research papers.1 It was a lot of work, as usual. Writing a response letter for the editor and reviewers is always a challenging process. After receiving the editor’s decision, I had to put aside what I’m working on at the...
+        ]]></description>
+      <pubDate>Sun, 13 Mar 2022 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-to-write-a-good-revision-letter.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-write-a-good-revision-letter.html</guid>
+    </item>
+    
+    <item>
+      <title>Staying in Academia&amp;#58; How PhD Profiles are Evaluated?</title>
+      <description><![CDATA[
+          An overview - 
+          Let’s say that you just finished your PhD and have decided to stay in academia.1 Typically, the next move is applying for a temporally position as PostDoc at some good university. To get a good PostDoc, at the end of the PhD your profile will be rigorously evaluated. At this...
+        ]]></description>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-phd-profiles-are-evaluated.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-phd-profiles-are-evaluated.html</guid>
+    </item>
+    
+    <item>
+      <title>Bus Factor&amp;#58; A Human-Centered Risk Metric in the Software Supply Chain</title>
+      <description><![CDATA[
+          Public transportation may become hellish - 
+          What if some members of a software project are suddenly hit by a bus? What would happen to the project in such an unfortunate scenario? According to Wikipedia, this question was first pointed out in 1994 when someone publicly asked about what would happen to Python if Guido van Rossum...
+        ]]></description>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/bus-factor-a-human-centered-risk-metric-in-the-software-supply-chain.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/bus-factor-a-human-centered-risk-metric-in-the-software-supply-chain.html</guid>
+    </item>
+    
+    <item>
+      <title>How to Write a Good Paper Rebuttal</title>
+      <description><![CDATA[
+          A practical guide - 
+          The rejection of a research paper is always a tough spot in the life of researchers. Today, many top conferences allow the authors of a rejected paper to submit a so-called “paper rebuttal.” This is a last chance for the authors to defend their work in case the reviewers made...
+        ]]></description>
+      <pubDate>Sat, 29 Jan 2022 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-to-write-a-good-paper-rebuttal.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-write-a-good-paper-rebuttal.html</guid>
+    </item>
+    
+    <item>
+      <title>How to Track the Progress of a Research Project</title>
+      <description><![CDATA[
+          My methodology based on the weekly delivery of verifiable artifacts - 
+          Academic research is a very intense and mentally demanding activity subject to constant change and evolution. At the beginning of a research project, there is often no clear path to follow. Consequently, researchers have to figure out a good plan to take in order to achieve their objectives. But a...
+        ]]></description>
+      <pubDate>Mon, 17 Jan 2022 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-do-i-track-the-progress-of-my-research-projects.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-do-i-track-the-progress-of-my-research-projects.html</guid>
+    </item>
+    
+    <item>
+      <title>Encoding, Encryption, Hashing, and Obfuscation in Java</title>
+      <description><![CDATA[
+          From concepts to code - 
+          The concepts of encoding, encryption, hashing, and obfuscation are at the core of many critical software technologies. For example, encryption and hashing are the backbones of the blockchain technology that fuels cryptocurrencies, whereas encoding and obfuscation unify and secure the web, respectively. Unfortunately, these concepts are often mistakenly confused or...
+        ]]></description>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/encoding-encryption-hashing-and-obfuscation-in-java.html</guid>
+    </item>
+    
+    <item>
+      <title>SIGBOVIK&amp;#58; The Ig Nobel for Academics and Computer Science Researchers</title>
+      <description><![CDATA[
+          The most wanted proceedings for fruitful procrastination - 
+          The SIGBOVIK’s flagship conference is a satiric and incredibly interesting Computer Science venue sponsored by the self-called “Association for Computational Heresy (ACH).” The event has been celebrated annually since 2007 in honor of Harry Quantifiability Bovik, an unconventional professor from Carnegie Mellon University. SIGBOVIK is the cradle of the funniest...
+        ]]></description>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/sigbovik-the-ig-nobel-for-academics-and-computer-science-researchers.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/sigbovik-the-ig-nobel-for-academics-and-computer-science-researchers.html</guid>
+    </item>
+    
+    <item>
+      <title>How to Set Up A Blockchain Network With Hyperledger Besu</title>
+      <description><![CDATA[
+          Look mom, I&apos;m running my own blockchain! - 
+          If you are a Java developer interested in cryptocurrencies and blockchain-related technologies, you should probably have heard about Hyperledger Besu. Besu is the official Java client of the Ethereum blockchain. As an enterprise-grade client for public and private networks, Besu is able to connect to the blockchain and verify all...
+        ]]></description>
+      <pubDate>Sun, 21 Nov 2021 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-to-set-up-a-blockchain-network-with-hyperledger-besu.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-set-up-a-blockchain-network-with-hyperledger-besu.html</guid>
+    </item>
+    
+    <item>
+      <title>How I Overcome Writer&apos;s Block When Preparing a Research Paper</title>
+      <description><![CDATA[
+          My bulletproof approach - 
+          How to Overcome Writer&amp;#39;s Block When Preparing a Research Paper; 21 July 2024. Every time I start writing a new research paper, the same freezing feeling seems to emerge when I look at the blank page. This problem is known as writer’s block, and most academics suffer from it in...
+        ]]></description>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html</guid>
+    </item>
+    
+    <item>
+      <title>Seven Reasons to Go For a PhD In Computer Science</title>
+      <description><![CDATA[
+          The good, the bad, and the ugly - 
+          Seven Reasons to Do a PhD in Computer Science; 7 November 2021. Pursuing a PhD is a unique and personal experience. Admittedly, it is a journey mostly driven by personal ambitions and pride. The decision to begin this journey (i.e., becoming a PhD student) is a very serious because a...
+        ]]></description>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/seven-reasons-to-go-for-a-phd-in-computer-science.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/seven-reasons-to-go-for-a-phd-in-computer-science.html</guid>
+    </item>
+    
+    <item>
+      <title>The Software Supply Chain</title>
+      <description><![CDATA[
+          A quick look at the modern software production landscape - 
+          The Software Supply Chain; 17 October 2021. The software supply chain comprises all the technology involved in shipping a piece of code from development to its deployment in a production environment. Several actors and different technologies participate in this complex process, e.g., developers, IDEs, compilers, package managers, and so on....
+        ]]></description>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/the-software-supply-chain.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-software-supply-chain.html</guid>
+    </item>
+    
+    <item>
+      <title>Design For Microservices!</title>
+      <description><![CDATA[
+          An easy way to boost the popularity of your open-source projects - 
+          The microservice architecture style consists of small and independently deployable services that run all together around a business domain. These small services act like living cells in an organism, each providing unique functionalities to protect the health of the whole system. Microservices have transitioned from a mere buzzword ten years...
+        ]]></description>
+      <pubDate>Mon, 20 Sep 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/design-for-microservices.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/design-for-microservices.html</guid>
+    </item>
+    
+    <item>
+      <title>Configuring Remote Connections in Unix-Based Systems Using SSH</title>
+      <description><![CDATA[
+          A noob&apos;s guide - 
+          When working as a software engineer, you will need to connect to a remote computer hosted on a remote server.1 This is a common task for developers, sysadmins, and researchers. This post will show you how to configure a remote connection in Unix-based systems. You will learn how to create...
+        ]]></description>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/configuring-remote-connections-in-unix-based-systems-using-ssh.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/configuring-remote-connections-in-unix-based-systems-using-ssh.html</guid>
+    </item>
+    
+    <item>
+      <title>What Does It Take to Become a Software Architect?</title>
+      <description><![CDATA[
+          A matter of responsibilities - 
+          Programmers and software engineers are in high demand today. In particular, those programmers who adapt to the new technological challenges and evolve their skills are more likely to grow professionally. A natural career path for experienced engineers to push forward their lifework is transitioning towards a software architect role. In...
+        ]]></description>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/what-does-it-take-to-become-a-software-architect.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/what-does-it-take-to-become-a-software-architect.html</guid>
+    </item>
+    
+    <item>
+      <title>Hermit Programmers are Dead</title>
+      <description><![CDATA[
+          Don&apos;t call yourself a programmer anymore - 
+          It’s 2021, and the job market has crashed due to a ghastly global pandemic. At the same time, one particular job has taken over an idealized professional place: the computer programmer. They are perceived to be experts who know how to build, fix, and deploy software artifacts. Most of them...
+        ]]></description>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/hermit-programmers-are-dead.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/hermit-programmers-are-dead.html</guid>
+    </item>
+    
+    <item>
+      <title>Replace the Disqus Commenting System on Your Blog</title>
+      <description><![CDATA[
+          GitHub-based open-source alternatives are better - 
+          I started using Disqus in 2018. At that time, it was arguably the leading commenting management system for both small and large websites. Its popularity was well deserved: ubiquitous integration, easy to set up, friendly admin panel, clean comment widget design, excellent spam filters, great content engaging features, etc. Three...
+        ]]></description>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/replace-disqus-with-a-better-alternative.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/replace-disqus-with-a-better-alternative.html</guid>
+    </item>
+    
+    <item>
+      <title>Book Review&amp;#58; The PhD Grind</title>
+      <description><![CDATA[
+          A tale of perseverance and learning from failure - 
+          I recently read the amazing short book titled “The PhD Grind” by Prof. Philip Guo. The book (~100 pages) is a compendium of his memories, written right after finishing his PhD in 2012. I felt ecstatic with such a brilliant masterpiece that I could barely put it down once I...
+        ]]></description>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html</guid>
+    </item>
+    
+    <item>
+      <title>The Fork/Join Java framework</title>
+      <description><![CDATA[
+          Boosting performance through parallelization - 
+          The Fork/Join framework makes it easy for Java developers to take advantage of the parallel execution supported by multicore processors. This API was added to the java.util.concurrent package since JDK 7, and it has been improved in subsequent versions of the JDK. It allows the developer to forget about the...
+        ]]></description>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html</guid>
+    </item>
+    
+    <item>
+      <title>Use Custom LaTeX Macros to Boost Your Writing Productivity</title>
+      <description><![CDATA[
+          Forget about these annoying numerical glitches in your LaTeX document - 
+          If you ever use LaTeX to write your research papers or technical reports, then you should know how useful and powerful this tool is. Let me just mention three well-known benefits of using LaTeX: 1) beautiful typeset output (especially when dealing with mathematical notations); 2) consistent handling of references and...
+        ]]></description>
+      <pubDate>Fri, 28 May 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html</guid>
+    </item>
+    
+    <item>
+      <title>Enhance Your Readme With Asciinema</title>
+      <description><![CDATA[
+          How to create beautiful terminal recordings that your users will love - 
+          Asciinema is an excellent tool for recording and sharing terminal sessions. The project is open-source and available on GitHub. A key feature of asciinema is that it allows the viewer to copy-paste the text from the player itself directly. The result of a terminal recording is an editable text file...
+        ]]></description>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/enhance-your-readme-with-asciinema.html</guid>
+    </item>
+    
+    <item>
+      <title>Clean Commit Messages</title>
+      <description><![CDATA[
+          The way I like to write them - 
+          It doesn’t matter what kind of software you’re building; you will inevitably use Git these days. I think Git is one of those skills for which it takes a little amount of time to learn the basics, but a lifetime to master. But this article is not about the Git...
+        ]]></description>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/clean-commit-messages.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/clean-commit-messages.html</guid>
+    </item>
+    
+    <item>
+      <title>Dynamic Programming by Example</title>
+      <description><![CDATA[
+          A handful of representative problems solved in Java - 
+          Dynamic programming (DP) is one of the most basic and, at the same time, challenging programming paradigms. Some of the best algorithms that I know, such as the Levenshtein distance and DTW are implemented using this paradigm. It consists of simplifying a complicated problem by breaking it down into simpler...
+        ]]></description>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/dynamic-programming-classics.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/dynamic-programming-classics.html</guid>
+    </item>
+    
+    <item>
+      <title>Shortening the Distance Between Academia and Industry</title>
+      <description><![CDATA[
+          An imperative need of researchers - 
+          Research is about solving relevant problems for the best of humanity. However, the relevance of certain problems is a highly subjective matter. Is it relevant to send a human being to Mars? Maybe it is, or maybe not. One thing is for sure: research is expensive. As far as I...
+        ]]></description>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/shortening-the-distance-between-academia-and-industry.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/shortening-the-distance-between-academia-and-industry.html</guid>
+    </item>
+    
+    <item>
+      <title>Empirical Software Engineering Research Is Harder Than You Think</title>
+      <description><![CDATA[
+          Trust me - 
+          Imagine you are a very talented computer science researcher. Perhaps you come from a popular field such as machine learning (ML) and have a ton of papers and experience under your belt. But now, you have decided to expand your horizons to solve software engineering (SE) research problems. In particular,...
+        ]]></description>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/empirical-software-engineering-research-is-harder-than-you-think.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/empirical-software-engineering-research-is-harder-than-you-think.html</guid>
+    </item>
+    
+    <item>
+      <title>How to Deploy a Simple Spring Boot Application in GCP</title>
+      <description><![CDATA[
+          Getting started with Google Cloud Platform - 
+          After having my Java Spring Boot web app ready, the next step is to show it to the world. This means deploying it on the internet.1 I landed on Google Cloud Platform (GCP) for this task. Why? Well, GCP in 2020 gives a nice starting credit of $100, and after...
+        ]]></description>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-to-deploy-a-simple-spring-boot-application-in-gcp.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-to-deploy-a-simple-spring-boot-application-in-gcp.html</guid>
+    </item>
+    
+    <item>
+      <title>The Producer-Consumer Pattern in Java Made Easy</title>
+      <description><![CDATA[
+          An example using the BlockingQueue Java interface - 
+          I see the usage of a recurring handy pattern for doing data collection and analysis in software engineering: the producer-consumer pattern. This pattern simplifies the data acquisition (handled by the Producer), and the data post-processing (handled by the Consumer). The Producer collects the data items one at the time and...
+        ]]></description>
+      <pubDate>Sun, 28 Jun 2020 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html</guid>
+    </item>
+    
+    <item>
+      <title>Diversity-Driven Software Debloat</title>
+      <description><![CDATA[
+          Leveraging the wisdom of multiple coverage tools - 
+          For months, I have worked on dynamic debloat of Java artifacts with JDBL. To do so, I need to compile and execute software applications to determine what parts of the compiled application are used when executing it using some workloads. Then, with the collected usage information, I debloat the unused...
+        ]]></description>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/diversity-driven-software-debloat.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/diversity-driven-software-debloat.html</guid>
+    </item>
+    
+    <item>
+      <title>Unix Cmd Hacks</title>
+      <description><![CDATA[
+          Boosting automation from the shell - 
+          “Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill.” ― Diomidis Spinellis I want to share my personal notes of the edX course Unix Tools: Data, Software and Production Engineering, by Prof. Diomidis Spinellis. I attended this course from March...
+        ]]></description>
+      <pubDate>Sat, 23 May 2020 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html</guid>
+    </item>
+    
+    <item>
+      <title>Recipes for Effective Academic Emailing</title>
+      <description><![CDATA[
+          A template-based approach - 
+          You cannot be a good researcher without being a good communicator. If you are good enough at both, they may qualify for becoming a supervisor. Being a good academic supervisor is a matter of practice, discipline, and the development of leading skills. Handling tons of emails is the everyday bread...
+        ]]></description>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/recipes-for-email-based-communication-success-in-academia.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/recipes-for-email-based-communication-success-in-academia.html</guid>
+    </item>
+    
+    <item>
+      <title>Deploying to Maven Central</title>
+      <description><![CDATA[
+          A three-steps guide - 
+          Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM. It is one of the world’s largest and oldest archives of software libraries. In this post, I’ll describe the process of releasing a new artifact in Maven Central following a step-by-step approach. &amp;#169; Excerpt of...
+        ]]></description>
+      <pubDate>Mon, 06 Jan 2020 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/deploying-to-maven-central.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/deploying-to-maven-central.html</guid>
+    </item>
+    
+    <item>
+      <title>The Cuban Revolution</title>
+      <description><![CDATA[
+          My personal vision - 
+          Recently, a friend of mine kindly requested me for information about Cuba and how the Revolution affected the people. He wanted to educate his child about socialism, from the voice of someone who lived it. The information is intended to be given to middle school kids. These are the five...
+        ]]></description>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/the-cuban-revolution-explained.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-cuban-revolution-explained.html</guid>
+    </item>
+    
+    <item>
+      <title>The Zip Slip Vulnerability Exploitation</title>
+      <description><![CDATA[
+          Zip slip attacks - 
+          “Code is complicated, and developers are not security experts. Their focus is typically around delivering code on time and so can easily miss security flaws, even if the practice is known.” ― Guy Podjarny In today’s ever expanding-open source communities, developers rely heavily on third-party libraries and copy-pasted code from...
+        ]]></description>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/zip-slip-attacks.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/zip-slip-attacks.html</guid>
+    </item>
+    
+    <item>
+      <title>The Practice of Teaching</title>
+      <description><![CDATA[
+          The ultimate skill to learn - 
+          It’s universally acknowledged that teaching is challenging. I firmly believe that teaching ranks among the most critical skills to master in our century. It applies to everyone, from software developers, to academic researchers, to corporate managers. Our future success hinges on the ability to share our ideas and knowledge effectively....
+        ]]></description>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/the-practice-of-teaching.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/the-practice-of-teaching.html</guid>
+    </item>
+    
+    <item>
+      <title>Unnecessary Code</title>
+      <description><![CDATA[
+          Clarifying the concept - 
+          After reading the paper “Is Static Analysis Able to Identify Unnecessary Source Code?” about the negative impact of unnecessary code in the software industry, I felt stuck with the many different (but very related) concepts around this topic. One can think that unnecessary code is all code that is not...
+        ]]></description>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/unneccessary-code.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/unneccessary-code.html</guid>
+    </item>
+    
+    <item>
+      <title>A Starting Guide to Programming Contests</title>
+      <description><![CDATA[
+          Is it worth it? - 
+          I discovered the world of competitive programming challenges during my first year at university. At that time, I knew very little about computer algorithms or even mind sports. However, the idea of learning how to code by myself, just using an online judge, attracted my attention from the first moment....
+        ]]></description>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/a-starting-guide-to-be-a-good-competitive-programmer.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/a-starting-guide-to-be-a-good-competitive-programmer.html</guid>
+    </item>
+    
+    <item>
+      <title>Git Fundamentals</title>
+      <description><![CDATA[
+          The must-know git commands for software developers - 
+          “Git proved I could be more than a one-hit wonder.” ― Linux Torvalds Git is the standard version-control system for software development. Git was created by Linus Torvalds in 2005 to support the development of the Linux kernel. Since then, Git has become an essential tool for both junior and...
+        ]]></description>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 -0800</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/git-fundamentals.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/git-fundamentals.html</guid>
+    </item>
+    
+    <item>
+      <title>How I Beat the IELTS Academic With Just a Month of Self-Training</title>
+      <description><![CDATA[
+          My personal comments and suggestions - 
+          The International English Language Testing System (IELTS) is one of the major English language tests for higher education and immigration in the world. It is jointly managed by the British Council, IELTS Australia, and Cambridge English Language Assessment. IELTS is accepted by most Australian, British, Canadian, and New Zealand academic...
+        ]]></description>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 -0700</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html</guid>
+    </item>
     
   </channel>
 </rss>
+
