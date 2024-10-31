@@ -13,7 +13,7 @@ image: ../img/posts/2023/2023-07-20/what_is_software_cover.jpg
 share-img: ../img/posts/2023/2023-07-20/what_is_software_cover.jpg
 show-avatar: false
 toc: true
-date: 2024/01/20
+date: 2024/10/20
 author: cesarsotovalero
 published: false
 ---
