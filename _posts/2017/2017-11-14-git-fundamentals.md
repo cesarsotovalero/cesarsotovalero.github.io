@@ -235,4 +235,4 @@ Then you can execute the log command with the name of a method and the path to t
 ```
 # External Resources
 
-- - [Git cheat sheet zine by Julia Evans](../img/posts/2017/git-cheat-sheet-from-Julia-Evans.pdf)
+- [Git cheat sheet zine by Julia Evans](../img/posts/2017/git-cheat-sheet-from-Julia-Evans.pdf)
