@@ -15,6 +15,8 @@ date: 2017/10/26
 published: true
 ---
 
+{% youtube GRd2nxNTZDI %}
+
 The International English Language Testing System (IELTS) is one of the major English language tests for higher education and immigration in the world.
 It is jointly managed by the British Council, IELTS Australia, and Cambridge English Language Assessment.
 IELTS is accepted by most Australian, British, Canadian, and New Zealand academic institutions, by over 3,000 educational institutions in the United States, and by many professional organizations across the world.
