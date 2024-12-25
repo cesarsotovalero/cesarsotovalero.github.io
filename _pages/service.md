@@ -18,7 +18,7 @@ I've reviewed papers for the following journals and conferences:
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), October 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
 - [Information Processing & Management](https://www.sciencedirect.com/journal/information-processing-and-management), June 2024 [Recognition](../files/certificates/2024_IPM_Reviewer_Certificate.pdf)
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), May 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
-- [Springer Discover Artificial Intelligence](https://link.springer.com/journal/44163), 2024
+- [Springer Discover Artificial Intelligence](https://link.springer.com/journal/44163), May 2024 [Recognition](../files/certificates/2024_DAI_Reviewer_Certificate.pdf)
 - [PeerJ Computer Science](https://peerj.com/computer-science/), 2024 🖼️ [Proof](../files/certificates/PeerJ_CS_Reviewer.png)
 - [SoftwareX](https://www.journals.elsevier.com/softwarex), December 2023 [Recognition](../files/certificates/2023_Certificate_SOFTX_Recognised.pdf)
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2023
