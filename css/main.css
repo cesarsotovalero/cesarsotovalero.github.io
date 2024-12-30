@@ -2117,6 +2117,12 @@ input.gsc-input,
   padding: 4px 10px;
 }
 
+.fa-stack {
+  img {
+    filter: invert(var(--media-icon-color));
+  }
+}
+
 .fa-stack-overflow:hover {
   color: #f48024;
   transform: translateY(-7px);
@@ -2400,7 +2406,7 @@ ol, ul {
 }
 
 .quote {
-  color: #424242;
+  color: var(--main-text-color);
   float: right;
   font-weight: 600;
   font-size: 26px;
@@ -2416,12 +2422,12 @@ ol, ul {
 }
 
 .quote a {
-  color: #424242;
+  color: var(--main-text-color);
   font-size: 20px;
 }
 
 .quote cite {
-  color: #424242;
+  color: var(--main-text-color);
   font-size: 20px;
 }
 
@@ -3294,7 +3300,7 @@ hr {
   border: none;
   height: 2px;
   width: 70%;
-  background-image: linear-gradient(to right, transparent, #2D2D2B, transparent);
+  background-image: linear-gradient(to right, transparent, var(--horizontal-line), transparent);
 }
 
 @media only screen and (max-width: 450px) {
@@ -3425,6 +3431,7 @@ pre .language-mermaid {
 /* SUPPORT FOR DARK MODE */
 html, html[data-theme="light"] {
   --link-color: black;
+  --media-icon-color: 0;
   --navbar-color: #f0f0f0;
   --footer-color: #f0f0f0;
   --post-meta-index-color: #808080;
@@ -3440,10 +3447,12 @@ html, html[data-theme="light"] {
   --button-background-color: #444;
   --panel-border-color: #f1f1f1;
   --panel-box-shadow: rgba(234, 234, 234, 0.7686274509803922);
+  --horizontal-line: #2D2D2B;
 }
 
 html[data-theme="dark"] {
   --link-color: hsl(0, 0%, 85%);
+  --media-icon-color: 1;
   --navbar-color: #012639;
   --footer-color: #012639;
   --post-meta-index-color: hsl(0, 0%, 76%);
@@ -3458,4 +3467,5 @@ html[data-theme="dark"] {
   --panel-border-color: rgb(53, 53, 60);
   --panel-bg: rgb(39, 40, 43);
   --panel-box-shadow: rgb(27, 27, 30);
+  --horizontal-line: hsl(0, 0%, 85%);
 }

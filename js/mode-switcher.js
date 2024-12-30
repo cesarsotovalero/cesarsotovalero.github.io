@@ -1,6 +1,6 @@
 // see https://github.com/derekkedziora/jekyll-demo
 let theme = sessionStorage.getItem('theme');
-sessionStorage.setItem('theme', 'light');
+// sessionStorage.setItem('theme', 'light');
 
 document.getElementById("theme-toggle").innerHTML = "<i class=\"fas fa-adjust fa-lg\"></i>";
 
