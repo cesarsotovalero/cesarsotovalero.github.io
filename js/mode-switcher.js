@@ -8,6 +8,7 @@ function setThemeToDark() {
    document.documentElement.setAttribute('data-theme', 'dark');
    localStorage.setItem('theme', 'dark');
    document.getElementById("theme-toggle").innerHTML = "<i class=\"fas fa-sun fa-lg\"></i>";
+   setHighlightMode(true);
    loadGiscus();
 }
 
@@ -16,6 +17,7 @@ function setThemeToLight() {
    document.documentElement.setAttribute('data-theme', 'light');
    localStorage.setItem('theme', 'light');
    document.getElementById("theme-toggle").innerHTML = "<i class=\"fas fa-adjust fa-lg\"></i>";
+   setHighlightMode(false);
    loadGiscus();
 }
 
@@ -34,6 +36,16 @@ function initTheme() {
       } else {
          setThemeToLight();
       }
+   }
+}
+
+function setHighlightMode(darkMode) {
+   const link = document.getElementById('code');
+   if (!link) return; // guard if link not found
+   if (darkMode) {
+      link.href = "https://www.cesarsotovalero.net/css/pygment_highlights_dark.css";
+   } else {
+      link.href = "https://www.cesarsotovalero.net/css/pygment_highlights.css";
    }
 }
 
