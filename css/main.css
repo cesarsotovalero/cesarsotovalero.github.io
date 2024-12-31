@@ -1,9 +1,14 @@
-@import url("pygment_highlights.css");
+/*@import url("pygment_highlights.css");*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 @import url("custom-fonts.css");
 
 /* --- General --- */
+
+html, body {
+  transition: background-color 0.3s ease,
+  color 0.3s ease;
+}
 
 html {
   scroll-behavior: smooth;
@@ -191,6 +196,7 @@ blockquote {
   border-left-width: 4px;
   border-radius: 0px 5px 5px 0px;
   font-family: "Equity Text A", 'Source Sans Pro', sans-serif;
+  transition: border-left-color 0.3s ease, background-color 0.3s ease;
 }
 
 /* Details */
@@ -1276,6 +1282,7 @@ p.post-meta {
   width: 130px;
   margin: 10px;
   border: 0.5px solid var(--post-meta-index-color);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .post-image img:hover {
