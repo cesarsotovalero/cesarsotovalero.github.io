@@ -121,7 +121,7 @@ mr-2 {
 }
 {% endhighlight %}
 
-You can see my full customized CSS [here](https://www.cesarsotovalero.net/css/giscus.css).
+You can see my full customized CSS [here](https://www.cesarsotovalero.net/css/giscus-light.css).
 
 # Additional Configurations
 

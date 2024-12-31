@@ -11,7 +11,7 @@
 
    <script>
       (function() {
-         let theme = sessionStorage.getItem('theme');
+         let theme = localStorage.getItem('theme');
          if (theme === 'dark') {
             document.documentElement.setAttribute('data-theme', 'dark');
          }
