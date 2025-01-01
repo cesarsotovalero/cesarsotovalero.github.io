@@ -1,18 +1,5 @@
-/* Dracula Theme v1.2.5
- *
- * https://github.com/zenorocha/dracula-theme
- *
- * Copyright 2016, All rights reserved
- *
- * Code licensed under the MIT license
- * http://zenorocha.mit-license.org
- *
- * @author Rob G <wowmotty@gmail.com>
- * @author Chris Bracco <chris@cbracco.me>
- * @author Zeno Rocha <hi@zenorocha.com>
- */
-.highlight  { background: black; }
-.highlight pre { background-color: black; font-size: 16px }
+/*.highlight  { background: black; }*/
+/*.highlight pre { background-color: black; font-size: 16px }*/
 .highlight .hll { background-color: #f1fa8c }
 .highlight  { background: #282a36; color: #f8f8f2 }
 .highlight .c { color: #6272a4 } /* Comment */
@@ -41,7 +28,7 @@
 .highlight .gu { color: #f8f8f2; font-weight: bold } /* Generic.Subheading */
 .highlight .gt { color: #f8f8f2 } /* Generic.Traceback */
 .highlight .kc { color: #ff79c6 } /* Keyword.Constant */
-.highlight .kd { color: #8be9fd; font-style: italic } /* Keyword.Declaration */
+.highlight .kd { color: #8be9fd } /* Keyword.Declaration */
 .highlight .kn { color: #ff79c6 } /* Keyword.Namespace */
 .highlight .kp { color: #ff79c6 } /* Keyword.Pseudo */
 .highlight .kr { color: #ff79c6 } /* Keyword.Reserved */
@@ -90,3 +77,8 @@
 .highlight .vi { color: #8be9fd; font-style: italic } /* Name.Variable.Instance */
 .highlight .vm { color: #8be9fd; font-style: italic } /* Name.Variable.Magic */
 .highlight .il { color: #bd93f9 } /* Literal.Number.Integer.Long */
+
+/* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
+.highlight .lineno {color:rgba(0,0,0,0.3);padding: 0 10px;-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;}
+.lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
+.lineno::selection {background-color: transparent;} /* Other major browsers */
