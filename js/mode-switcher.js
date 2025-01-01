@@ -40,12 +40,15 @@ function initTheme() {
 }
 
 function setHighlightMode(darkMode) {
-   const link = document.getElementById('code');
-   if (!link) return; // guard if link not found
+   const codeElement = document.getElementById('code');
+   const codeLineno = document.getElementsByClassName('lineno');
+   if (!codeElement) return; // guard if codeElement not found
    if (darkMode) {
-      link.href = "https://www.cesarsotovalero.net/css/pygment_highlights_dark.css";
+      codeElement.href = "https://www.cesarsotovalero.net/css/pygment_highlights_dark.css";
+      codeLineno.href = "https://www.cesarsotovalero.net/css/pygment_highlights_dark.css";
    } else {
-      link.href = "https://www.cesarsotovalero.net/css/pygment_highlights.css";
+      codeElement.href = "https://www.cesarsotovalero.net/css/pygment_highlights.css";
+      codeLineno.href = "https://www.cesarsotovalero.net/css/pygment_highlights.css";
    }
 }
 

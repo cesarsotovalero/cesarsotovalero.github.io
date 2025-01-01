@@ -999,7 +999,7 @@ a[href$=".pptx"] {
 
 .fa-github, .fa-stack-overflow, .ai-researchgate,
 .ai-google-scholar, .ai-dblp, .ai-orcid, .fa-youtube,
-.fa-envelope {
+.fa-envelope, .i-doi {
   color: var(--main-text-color);
 }
 
@@ -1919,7 +1919,7 @@ td.gutter pre {
 td.code pre {
   border-width: 0 0 0 2px;
   border-style: solid;
-  border-color: #444;
+  border-color: var(--main-text-color);
   border-radius: 0;
 }
 
@@ -2719,11 +2719,29 @@ ol, ul {
 
 
 .i-doi {
-  background-image: url(../img/icons/academicons-1.9.4/svg/doi.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  -webkit-mask-image: url("../img/icons/academicons-1.9.4/svg/doi.svg");
+  mask-image: url("../img/icons/academicons-1.9.4/svg/doi.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-color: var(--link-color);
 }
 
 .i-arxiv {
-  background-image: url(../img/icons/academicons-1.9.4/svg/arxiv.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  -webkit-mask-image: url("../img/icons/academicons-1.9.4/svg/arxiv.svg");
+  mask-image: url("../img/icons/academicons-1.9.4/svg/arxiv.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-color: var(--link-color);
 }
 
 .icon {
