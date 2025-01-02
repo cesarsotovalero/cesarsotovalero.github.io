@@ -3483,7 +3483,8 @@ html[data-theme="dark"] {
   --post-meta-index-color: hsl(0, 0%, 76%);
   --blockquote-color: rgba(1, 38, 57, 0.8);
   --blockquote-background-color: rgba(1, 38, 57, 0.8);
-  --main-background-color: #012639;
+  /*--main-background-color: #012639;*/
+  --main-background-color: #1c2128;
   --main-text-color: hsl(0, 0%, 85%);
   --main-link-color: hsl(0, 0%, 100%);
   --link-decoration-color: #8F96CE;

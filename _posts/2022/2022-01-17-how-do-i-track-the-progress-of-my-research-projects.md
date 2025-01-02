@@ -108,8 +108,7 @@ Once the artifacts and outcomes are reviewed, it is easier to readjust the goals
 I have a template for the Friday report. 
 Here is an example:
 
-{% highlight markdown linenos %}
-
+```
 From: Student
 To: Supervisor
 CC: Co-authors and Co-supervisors
@@ -134,7 +133,7 @@ QUESTIONS:
 
 Cheers,
 Student
-{% endhighlight %}
+```
 
 [//]: # (One paragraph about the header)
 The email is sent to the supervisor/s, all collaborators should be added in CC (e.g., co-authors and co-supervisors).

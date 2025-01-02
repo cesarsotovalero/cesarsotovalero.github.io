@@ -86,7 +86,7 @@ Rebuttals focus mostly on responding to negative points, don't let everyone forg
 
 Here's an example:
 
-{% highlight markdown %}
+```
 We thank the reviewers for their insightful and positive feedback! 
 We are encouraged that they find Foo to be a novel tasks (R1,2,3), 
 an important research problem (R1,2), appropriately positioned w.r.t 
@@ -94,7 +94,7 @@ prior work (R1,3), and of value for the community (R1,2,3).
 One primary concern was insufficient discussion of results. We agree.
 We were constrained by space. We answer some specific questions below,
 but will incorporate all feedback in the final version.
-{% endhighlight %}
+```
 
 Notice the conversational nature of the example responses above. 
 The relaxed tone makes it easier for the PC chairs to read it.
@@ -127,12 +127,12 @@ You can use underscores (`_`)  or dashes (`-`) to concatenate two words for the 
 
 Here is an example:
 
-{% highlight markdown %}
+```
 Question-2-Reviewer-3:Is_Foo_in_your_paper_actually_a_Bar?
 Answer-to-Reviewer-3:
 Yes, your understanding is perfect.
 Foo is a Bar with X and Z.
-{% endhighlight %}
+```
 
 **\*NOTE:** Be cautious not abusing of this method, otherwise you may be at risk that PC chair will just delete your rebuttal. 
 

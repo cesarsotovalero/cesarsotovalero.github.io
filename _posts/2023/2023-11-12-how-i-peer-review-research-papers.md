@@ -150,7 +150,7 @@ Here are some (not so obvious) characteristics of bad reviews:
  
 Here's a **real example** of a bad review from one of the co-reviewers of one of the papers I've reviewed:
 
-{% highlight markdown linenos %}
+```plaintext
 Reviewer 1: 
 The article needs significant improvements in its writing,
 as it is more similar to a technical report than a scientific article.
@@ -161,7 +161,7 @@ fragmented into many brief subsections. The Discussion section lacks
 clarity, not adequately detailing the results presented. These, in
 turn, are described very vaguely. Furthermore, most of the references
 are old.
-{% endhighlight %}
+```
 
 I think it's worth mentioning that reviewing papers is a selfless, unpaid act of true academic altruism.
 It's primarily carried out by academics in their spare time, and these are people under limited time constraints and a lot of pressure to push forward their own research output.
@@ -191,7 +191,7 @@ So I recommend using Google Docs or similar instead of PDFs to write your review
 
 Good reviews have a known structure that is easy to follow and understand, for example:
 
-{% highlight markdown linenos %}
+```
 Title: [Paper's Title]
 
 **Summary**
@@ -245,7 +245,7 @@ Example:
 The paper is a valuable addition to the field of [field],
 with potential implications for [applications]. 
 I recommend acceptance after moderate revisions as outlined above.
-{% endhighlight %}
+```
 
 It's a good practice looking at the reviewer's guidelines in each particular journal.[^1]
 Sometimes they provide a list of specific questions that reviewers should answer when reviewing a paper.

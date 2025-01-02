@@ -173,8 +173,7 @@ I would try to negotiate upfront the number of papers that are necessary and kee
 Let your supervisor know.
 It might be worth trying something like this:
 
-
-{% highlight markdown linenos %}
+{% highlight plaintext %}
 Subject: Summary of our last meeting
 
 Hi [Supervisor's Name],

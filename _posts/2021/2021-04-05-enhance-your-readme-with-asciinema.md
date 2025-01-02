@@ -76,9 +76,9 @@ asciicast2gif -w 80 -h 30 demo.cast demo.gif
 The previous command will produce a `demo.gif` file with 80 characters width and 30 lines of height. 
 It can be inserted in `README.md`, just as any other image: 
 
-{% highlight markdown linenos %}
+```markdown
 ![demo](PATH_TO_FILE)
-{% endhighlight %}
+```
 
 where `PATH_TO_FILE` is the path to your `demo.gif` file on GitHub.
 
