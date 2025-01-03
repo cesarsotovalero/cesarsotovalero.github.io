@@ -1,13 +1,13 @@
 ---
-permalink: my-values.html
+permalink: my-career-values.html
 layout: page
 title: My Career Values
 subtitle: 🚀
-description: Work values of César Soto Valero.
+description: Career values of César Soto Valero.
 published: true
 ---
 
-This document outlines the type of work environment and opportunities I'm interested in.
+This document outlines the type of work environment and opportunities I'm _only_ interested in.
 It's aimed at providing clarity to recruiters, hiring managers, and even myself.
 
 # Summary
