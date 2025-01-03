@@ -191,8 +191,6 @@ header, footer {
   padding: 0;
 }
 
-
-
 blockquote {
   color: var(--main-text-color);
   background-color: var(--blockquote-background-color);
@@ -2648,7 +2646,7 @@ ol, ul {
 
 .youtube .box img {
   width: 100%;
-  display: block;  /* Ensure the image takes up the full width and has no extra space below (inline-block elements have space below them) */
+  display: block; /* Ensure the image takes up the full width and has no extra space below (inline-block elements have space below them) */
 }
 
 .youtube .box .play {
