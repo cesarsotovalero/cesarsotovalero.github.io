@@ -335,7 +335,7 @@ That's all from me, the rest you can probably only learn it by doing it.
 # External Resources
 
 - [How to Speak](https://youtu.be/Unzc731iCUY), by Patrick Winston
-- [:earth_americas: Speaker Cheat Sheet](https://www.yegor256.com/2018/12/25/speaker-cheat-sheet.html), by Yegor Bugayenko
+- [:globe_with_meridians: Speaker Cheat Sheet](https://www.yegor256.com/2018/12/25/speaker-cheat-sheet.html), by Yegor Bugayenko
 - [The Six Rules of Visualization](https://www.linkedin.com/posts/berengueres_datavizualization-tedxtalks-tedx-activity-6635637043668049920-f23_?utm_source=share&utm_medium=member_desktop), by Jose Berengueres
 
 # Footnotes

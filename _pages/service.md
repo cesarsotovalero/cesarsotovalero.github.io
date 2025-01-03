@@ -70,10 +70,10 @@ I volunteered for the following events:
 
 My work has been featured in the following media:
 
-- [:earth_americas: "Twelve scientist-endorsed tips to get over writer’s block"](https://www.nature.com/articles/d41586-024-02013-4), I got interviewed by a journalist from Nature, 2024
-- [:earth_americas: Unfold](https://rethread.art/projects/unfold.html), Nobel Week Lights, 2022
-- [:earth_americas: KTH Intranet Interview](https://intra.kth.se/en/eecs/nyheter/grattis-till-vinsten-cesar-1.1112396), 2021
-- [:earth_americas: Estudios de Doctorado en Suecia: Por Dónde Empezar?](https://eltoque.com/estudios-de-doctorado-en-suecia-por-donde-empezar) (co-authored article, written in Spanish), 2021
+- [:globe_with_meridians: "Twelve scientist-endorsed tips to get over writer’s block"](https://www.nature.com/articles/d41586-024-02013-4), I got interviewed by a journalist from Nature, 2024
+- [:globe_with_meridians: Unfold](https://rethread.art/projects/unfold.html), Nobel Week Lights, 2022
+- [:globe_with_meridians: KTH Intranet Interview](https://intra.kth.se/en/eecs/nyheter/grattis-till-vinsten-cesar-1.1112396), 2021
+- [:globe_with_meridians: Estudios de Doctorado en Suecia: Por Dónde Empezar?](https://eltoque.com/estudios-de-doctorado-en-suecia-por-donde-empezar) (co-authored article, written in Spanish), 2021
   
 
 # Teaching
@@ -84,13 +84,13 @@ From 2019-2023, I worked as a teacher assistant (TA) for the following courses:
 - [EF112X Examensarbete inom elektroteknik, grundnivå](https://www.kth.se/social/course/EF112X/), given by [Antita Kullen](https://people.kth.se/~kullen/) at KTH, Spring 2022
 - [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2022
 - [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
-- [:earth_americas: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
+- [:globe_with_meridians: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
 - [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2021
 - [DD1369 Software Engineering in Project Form](https://www.kth.se/social/course/DD1369/), given by [Dena Hussain](https://www.kth.se/profile/denah/) at KTH, Fall 2020
 - [DD2460 Software Safety and Security](https://www.kth.se/social/course/DD2460), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2020
 - [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2020
 - [DM1590 Machine Learning for Media Technology](https://www.kth.se/student/kurser/kurs/DM1590), given by [Bob Sturm](http://www.eecs.qmul.ac.uk/~sturm/) at KTH, Spring 2020
 - [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), given by [Linda Kann](http://www.csc.kth.se/~lk) at KTH, Fall 2019
-- [:earth_americas: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2019
+- [:globe_with_meridians: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2019
 - [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Spring 2019
 

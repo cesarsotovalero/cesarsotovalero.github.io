@@ -281,9 +281,9 @@ In essence, the quality of peer review lies in balancing rigorous critique with 
 
 # External Resources
 
-- [:earth_americas: Peer fortress: The scientific battlefield](https://matt.might.net/articles/peer-fortress/)
-- [:earth_americas: Review a Research Paper: Constructive Critique in Five Steps](https://www.yegor256.com/2023/12/17/how-to-review-research-paper.html)
-- [:earth_americas: How to Write a Peer Review: 12 things you need to know](https://clarivate.com/blog/how-to-write-a-peer-review-12-things-you-need-to-know/)
+- [:globe_with_meridians: Peer fortress: The scientific battlefield](https://matt.might.net/articles/peer-fortress/)
+- [:globe_with_meridians: Review a Research Paper: Constructive Critique in Five Steps](https://www.yegor256.com/2023/12/17/how-to-review-research-paper.html)
+- [:globe_with_meridians: How to Write a Peer Review: 12 things you need to know](https://clarivate.com/blog/how-to-write-a-peer-review-12-things-you-need-to-know/)
 
 # Footnotes
 

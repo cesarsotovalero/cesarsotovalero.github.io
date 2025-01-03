@@ -33,7 +33,7 @@ TODO
 
 # Further Reading
 
-- [:earth_americas: The Good Research Code Handbook](https://goodresearch.dev)
+- [:globe_with_meridians: The Good Research Code Handbook](https://goodresearch.dev)
 - <i class="fab fa-github"></i> [nateraw/stable-diffusion-videos](https://github.com/nateraw/stable-diffusion-videos)
 
 

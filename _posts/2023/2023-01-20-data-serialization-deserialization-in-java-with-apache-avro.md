@@ -318,9 +318,9 @@ By leveraging the benefits of Apache Avro, developers can streamline their data 
 # References
 
 - <i class="fab fa-github"></i> [Avro examples](https://github.com/apache/avro/tree/master/doc/examples)
-- [:earth_americas: Apache Avro official documentation](https://avro.apache.org/docs/)
-- [:earth_americas: Guide to Apache Avro](https://www.baeldung.com/java-apache-avro)
-- [:earth_americas: Guide to Spring Cloud Stream with Kafka, Apache Avro and Confluent Schema Registry](https://www.baeldung.com/spring-cloud-stream-kafka-avro-confluent)
+- [:globe_with_meridians: Apache Avro official documentation](https://avro.apache.org/docs/)
+- [:globe_with_meridians: Guide to Apache Avro](https://www.baeldung.com/java-apache-avro)
+- [:globe_with_meridians: Guide to Spring Cloud Stream with Kafka, Apache Avro and Confluent Schema Registry](https://www.baeldung.com/spring-cloud-stream-kafka-avro-confluent)
 
 # Further Reading
 

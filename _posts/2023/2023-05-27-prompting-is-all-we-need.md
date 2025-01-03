@@ -325,7 +325,7 @@ The future is as uncertain as it is exciting.
 - <i class="fab fa-github"></i> [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 - <i class="fab fa-github"></i> [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
 - <i class="fab fa-github"></i> [awesome-chatgpt](https://github.com/sindresorhus/awesome-chatgpt)
-- [:earth_americas: learnprompting.org](https://learnprompting.org/docs/intro)
+- [:globe_with_meridians: learnprompting.org](https://learnprompting.org/docs/intro)
 - [ChatGPT Prompt Engineering for Developers](https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers)
 
 # Footnotes

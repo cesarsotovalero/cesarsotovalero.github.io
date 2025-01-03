@@ -223,10 +223,10 @@ Isn't that such a sublime sentence to end this post?
 # External Resources
 
 - ["Cargo Cult Science"](http://calteches.library.caltech.edu/51/2/CargoCult.pdf). Feynman, Richard P. (June 1974).
-- [:earth_americas: "Surely You're Joking, Mr. Feynman!"](https://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!). Feynman, Richard (1997).
-- [:earth_americas: Repeat, Reproduce, Replicate](https://queue.acm.org/detail.cfm?id=3674499). _ACM Queue_
-- [:earth_americas: More on the crisis in research: Feynman on ‘cargo cult science’](https://www.latimes.com/business/hiltzik/la-fi-mh-feynman-20131028-story.html). _Los Angeles Times_
-- [:earth_americas: Cargo Cult AI: Is the ability to think scientifically the defining essence of intelligence?](https://queue.acm.org/detail.cfm?id=3595860). _ACM Queue_
+- [:globe_with_meridians: "Surely You're Joking, Mr. Feynman!"](https://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!). Feynman, Richard (1997).
+- [:globe_with_meridians: Repeat, Reproduce, Replicate](https://queue.acm.org/detail.cfm?id=3674499). _ACM Queue_
+- [:globe_with_meridians: More on the crisis in research: Feynman on ‘cargo cult science’](https://www.latimes.com/business/hiltzik/la-fi-mh-feynman-20131028-story.html). _Los Angeles Times_
+- [:globe_with_meridians: Cargo Cult AI: Is the ability to think scientifically the defining essence of intelligence?](https://queue.acm.org/detail.cfm?id=3595860). _ACM Queue_
 
 # Footnotes
 

@@ -170,4 +170,4 @@ From a student's position, I have been able to make [substantial progress](https
 # References
 
 - [SIMBA: Simplified Management by Artifacts](https://youtu.be/2IwBc9UI4Sg), by Yegor Bugayenko.
-- [:earth_americas: How to do a master's thesis in my group](https://www.monperrus.net/martin/kth-master-thesis), by Martin Monperrus. 
+- [:globe_with_meridians: How to do a master's thesis in my group](https://www.monperrus.net/martin/kth-master-thesis), by Martin Monperrus. 

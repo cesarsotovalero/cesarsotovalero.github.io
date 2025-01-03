@@ -164,9 +164,9 @@ Hopefully, this will give you some inspiration.
 
 | Published Research Paper                                                                                                                                       | Paper Cover Letter                                       |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| **A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem** [:earth_americas: Link](https://link.springer.com/article/10.1007/s10664-020-09914-8) | [PDF](../files/posts/2022/DepClean_Cover_Letter.pdf)     |
-| **Coverage-Based Debloating for Java Bytecode** [:earth_americas: Link](https://dl.acm.org/doi/10.1145/3546948)                                                | [PDF](../files/posts/2022/JDBL_Cover_Letter.pdf)         |
-| **The Multibillion Dollar Software Supply Chain of Ethereum** [:earth_americas: Link](https://ieeexplore.ieee.org/document/9903894)                            | [PDF](../files/posts/2022/Multibillion_Cover_Letter.pdf) |
+| **A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem** [:globe_with_meridians: Link](https://link.springer.com/article/10.1007/s10664-020-09914-8) | [PDF](../files/posts/2022/DepClean_Cover_Letter.pdf)     |
+| **Coverage-Based Debloating for Java Bytecode** [:globe_with_meridians: Link](https://dl.acm.org/doi/10.1145/3546948)                                                | [PDF](../files/posts/2022/JDBL_Cover_Letter.pdf)         |
+| **The Multibillion Dollar Software Supply Chain of Ethereum** [:globe_with_meridians: Link](https://ieeexplore.ieee.org/document/9903894)                            | [PDF](../files/posts/2022/Multibillion_Cover_Letter.pdf) |
 
 
 # Conclusion

@@ -185,6 +185,13 @@ a:hover, a:focus {
   }
 }
 
+header, footer {
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+
 
 blockquote {
   color: var(--main-text-color);

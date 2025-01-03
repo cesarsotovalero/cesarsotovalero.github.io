@@ -79,9 +79,9 @@ For example, from “quicksort in C” to “mergesort in Java.”
 
 # Further Reading
 
-- [:earth_americas: An AI-Generated Artwork Won First Place at a State Fair Fine Arts Competition](https://www.vice.com/en/article/bvmvqm/an-ai-generated-artwork-won-first-place-at-a-state-fair-fine-arts-competition-and-artists-are-pissed)
-- [:earth_americas: Stable Diffusion is a really big deal](https://simonwillison.net/2022/Aug/29/stable-diffusion/?utm_source=tldrnewsletter)
-- [:earth_americas: Midjourney Community Showcase](https://www.midjourney.com/showcase/)
+- [:globe_with_meridians: An AI-Generated Artwork Won First Place at a State Fair Fine Arts Competition](https://www.vice.com/en/article/bvmvqm/an-ai-generated-artwork-won-first-place-at-a-state-fair-fine-arts-competition-and-artists-are-pissed)
+- [:globe_with_meridians: Stable Diffusion is a really big deal](https://simonwillison.net/2022/Aug/29/stable-diffusion/?utm_source=tldrnewsletter)
+- [:globe_with_meridians: Midjourney Community Showcase](https://www.midjourney.com/showcase/)
 - <i class="fab fa-github"></i> [CompVis/latent-diffusion](https://github.com/CompVis/latent-diffusion)
 - <i class="fab fa-github"></i> [nateraw/stable-diffusion-videos](https://github.com/nateraw/stable-diffusion-videos)
 

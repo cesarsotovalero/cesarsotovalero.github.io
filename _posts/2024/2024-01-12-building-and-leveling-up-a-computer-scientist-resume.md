@@ -405,12 +405,12 @@ Are you ready for the upgrade?
 Here's are examples of awesome résumés:
 
 - The résumé of [Joseph Redmon](https://pjreddie.com/) ([link](https://web.itu.edu.tr/yavuzid19/cv.pdf))
-- The résumé of [Martin Isaksson](https://www.linkedin.com/in/martisak) ([:earth_americas: link](https://cv.martisak.se/))
+- The résumé of [Martin Isaksson](https://www.linkedin.com/in/martisak) ([:globe_with_meridians: link](https://cv.martisak.se/))
 
 # External Resources
 
-- [:earth_americas: The resume that got a software engineer a $300,000 job at Google](https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f)
-- [:earth_americas: Pimp Up Your Resume](https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html)
+- [:globe_with_meridians: The resume that got a software engineer a $300,000 job at Google](https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f)
+- [:globe_with_meridians: Pimp Up Your Resume](https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html)
 - <a href="https://github.com/sinaatalay/rendercv"><i class="fab fa-github"></i></a> [rendercv](https://github.com/sinaatalay/rendercv)
 
 # Footnotes

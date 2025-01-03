@@ -245,8 +245,8 @@ In any case, I believe that clear and measurable expectations should be put in p
 
 # External Resources
 
-- [:earth_americas: Surviving the final year](https://rachaellappan.github.io/surviving-final-year/)
-- [:earth_americas: Forcing PhD students to publish is bad for science](https://www.nature.com/articles/s41562-019-0685-4)
+- [:globe_with_meridians: Surviving the final year](https://rachaellappan.github.io/surviving-final-year/)
+- [:globe_with_meridians: Forcing PhD students to publish is bad for science](https://www.nature.com/articles/s41562-019-0685-4)
 
 # Footnotes
 

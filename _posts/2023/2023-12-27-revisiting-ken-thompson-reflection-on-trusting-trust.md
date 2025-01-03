@@ -285,8 +285,8 @@ Peace 🤞.
 
 # External Resources
 
-- [:earth_americas: Running the “Reflections on Trusting Trust” Compiler](https://research.swtch.com/nih)
-- [:earth_americas: Open Source Supply Chain Security at Google](https://research.swtch.com/acmscored)
+- [:globe_with_meridians: Running the “Reflections on Trusting Trust” Compiler](https://research.swtch.com/nih)
+- [:globe_with_meridians: Open Source Supply Chain Security at Google](https://research.swtch.com/acmscored)
 - [Reflections on Trusting Trust - Computerphile](https://youtu.be/SJ7lOus1FzQ?si=8t9RBRR671xRX_Rn)
 - [Compiler-based Trojan Horse](https://youtu.be/JrGvxv-opF0?si=PUwhB_s3LoTeJ_9k)
 - [:books: Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)

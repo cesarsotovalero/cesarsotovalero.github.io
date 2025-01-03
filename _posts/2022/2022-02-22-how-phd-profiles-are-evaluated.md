@@ -184,7 +184,7 @@ If you still want to go through this professional adventure, you know what to ex
 
 # References
 
-- [:earth_americas: To stay in academia or not, that is the question](https://gradadmissions.mit.edu/blog/stay-academia-or-not-question)
+- [:globe_with_meridians: To stay in academia or not, that is the question](https://gradadmissions.mit.edu/blog/stay-academia-or-not-question)
 - [Book: A Beginner's Guide to Swedish Academia](https://www.sverigesungaakademi.se/download/18.1f0218fc182e9266317610b/1663233693235/YAS_BeginnersGuidetoSwedishAcademia.pdf)
 
 # Footnotes

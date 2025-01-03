@@ -267,7 +267,7 @@ If [I could do it](https://www.linkedin.com/posts/cesarsotovalero_seb-career-onb
 
 # Further Reading
 
-- [:earth_americas: Why I chose OpenAI over academia: reflections on the CS academic and industry job markets](https://rowanzellers.com/blog/rowan-job-search2/?utm_source=tldrnewsletter)
+- [:globe_with_meridians: Why I chose OpenAI over academia: reflections on the CS academic and industry job markets](https://rowanzellers.com/blog/rowan-job-search2/?utm_source=tldrnewsletter)
 
 # Footnotes
 

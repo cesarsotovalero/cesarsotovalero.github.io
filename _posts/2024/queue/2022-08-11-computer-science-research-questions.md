@@ -44,6 +44,6 @@ The questions are not in any specific order and they cover a wide range of topic
 
 # Further Reading
 
-- [:earth_americas: Software Engineering Research Questions](https://neverworkintheory.org/2022/08/30/software-engineering-research-questions.html?utm_source=tldrnewsletter)
+- [:globe_with_meridians: Software Engineering Research Questions](https://neverworkintheory.org/2022/08/30/software-engineering-research-questions.html?utm_source=tldrnewsletter)
 
 # Footnotes

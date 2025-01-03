@@ -186,8 +186,8 @@ The SSH client will read the configuration file and use the connection details t
 
 # Further Reading
 
-- [:earth_americas: Using the SSH Config File](https://linuxize.com/post/using-the-ssh-config-file/)
-- [:earth_americas: Working with SSH key passphrases](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)
+- [:globe_with_meridians: Using the SSH Config File](https://linuxize.com/post/using-the-ssh-config-file/)
+- [:globe_with_meridians: Working with SSH key passphrases](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)
 
 # Footnotes
 

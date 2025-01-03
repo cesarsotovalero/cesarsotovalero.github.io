@@ -143,7 +143,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   **Pronóstico de las Condiciones del Ganado Vacuno en Cuba a Través de Modelos ARIMA**. 
   Ismabel María Domínguez-Hurtado, and César Soto-Valero. 
   _Revista Cubana de Meteorología_. 
-  [:earth_americas: Link](http://rcm.insmet.cu/index.php/rcm/article/view/512)
+  [:globe_with_meridians: Link](http://rcm.insmet.cu/index.php/rcm/article/view/512)
 
 # 2019
 
@@ -179,7 +179,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   **Influencia de Factores Meteorológicos en la Acuicultura de Aguas Interiores**. 
   Ismabel María Domínguez-Hurtado, César Soto-Valero, Amaury Machado-Montes De Oca, and Yindra Salmón-Cuspinera. 
   _Revista Cubana de Meteorología_.
-  [:earth_americas: Link](http://rcm.insmet.cu/index.php/rcm/article/view/462)
+  [:globe_with_meridians: Link](http://rcm.insmet.cu/index.php/rcm/article/view/462)
 
 # 2018
 
@@ -240,13 +240,13 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   **ACI-Polo: Sistema Computacional para el Análisis de la Actividad Competitiva Individual en Juegos de Polo Acuático**. 
   César Soto-Valero, Irvin Pérez, Mabel González, and Alexander de la Celda. 
   _Revista Cubana de Ciencias Informáticas_. 
-  [:earth_americas: Link](https://rcci.uci.cu/?journal=rcci&page=article&op=view&path%5B%5D=1099)
+  [:globe_with_meridians: Link](https://rcci.uci.cu/?journal=rcci&page=article&op=view&path%5B%5D=1099)
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> 
   **Paquete para la Clasificación de Series Temporales en Weka**. 
   César Soto-Valero and Mabel González. 
   _Proceedings of the III Conferencia Internacional en Ciencias Computacionales e Informáticas, La Habana, Cuba_.
-  [:earth_americas: Link](http://www.informaticahabana.cu/es/node/1630)
+  [:globe_with_meridians: Link](http://www.informaticahabana.cu/es/node/1630)
 
 # 2015
 
@@ -260,7 +260,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   **Propuesta de Ejercicios para Mejorar la Efectividad de las Habilidades Defensivas en Boxeadores Juveniles**. 
   María S. Ibarra-Vargas, César Soto-Valero, Yasiel Martínez-Díaz, and R. Felipe Heredia-Torres. 
   _Revista Española de Educación Física y Deportes_.
-  [:earth_americas: Link](http://www.reefd.es/index.php/reefd/article/view/115)
+  [:globe_with_meridians: Link](http://www.reefd.es/index.php/reefd/article/view/115)
 
 # 2013
 
@@ -275,4 +275,4 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   César Soto-Valero.
   _Bachelor Thesis_.
   The Central University of Las Villas, Department of Computer Science. 
-  [:earth_americas: Link](https://dspace.uclv.edu.cu/handle/123456789/1935)
+  [:globe_with_meridians: Link](https://dspace.uclv.edu.cu/handle/123456789/1935)

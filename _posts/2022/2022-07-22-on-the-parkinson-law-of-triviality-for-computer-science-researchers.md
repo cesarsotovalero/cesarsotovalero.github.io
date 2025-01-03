@@ -300,9 +300,9 @@ So, instead of finishing something next year, next month, or next week, remember
 
 # Further Reading
 
-- [:earth_americas: The Original Parkinson’s Law and The Law of Triviality](https://fs.blog/parkinsons-law/)
-- [:earth_americas: Bikeshedding and The Law of Triviality](https://alexkondov.com/what-is-bikeshedding/)
-- [:earth_americas: Bikeshedding in Software Development](https://levelup.gitconnected.com/bikeshedding-in-software-development-b800fa97ddcd)
+- [:globe_with_meridians: The Original Parkinson’s Law and The Law of Triviality](https://fs.blog/parkinsons-law/)
+- [:globe_with_meridians: Bikeshedding and The Law of Triviality](https://alexkondov.com/what-is-bikeshedding/)
+- [:globe_with_meridians: Bikeshedding in Software Development](https://levelup.gitconnected.com/bikeshedding-in-software-development-b800fa97ddcd)
 
 # Footnotes
 

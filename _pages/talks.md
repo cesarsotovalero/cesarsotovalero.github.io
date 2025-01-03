@@ -19,7 +19,7 @@ The following is a non-exhaustive list of my talks (in reverse chronological ord
 
 - **The AI Secret: Why Predictive Machine Learning Still Rules The Real World**. Presented at _SEB Tech Day_ in Arenastaden Stockholm, October 2024. [Video](https://youtu.be/n1t3XEAyUgQ?si=3WKO3XZC_b_epmfo "video") [Slides](../files/presentations/The AI Secret - Why Predictive ML Still Rules the Real World.pptx)
 - **Dancing on Thin Ice - Leveraging Software Bill of Materials in Java**. Presented at [Jfokus](https://www.jfokus.se/talks/1661), Stockholm, February 2024. [Video](https://youtu.be/Xn1ShZPrw2o?si=sP5U0PATsrdHmwK1 "video"){:target="_blank"} [Slides](https://www.jfokus.se/jfokus24-preso/Dancing-on-Thin-Ice--Leveraging-Software-Bill-of-Materials-in-Java.pdf)
-- **Hand-In-Hand Live Coding Session With Github Copilot**. Presented at SEB's main theater in Solna, Stockholm, April 2024. [:earth_americas: Post](https://www.linkedin.com/posts/cesarsotovalero_seb-sebtech-ai-activity-7185295533308002305-oRFv) [Slides](../files/presentations/hand-in-hand-live-coding-session-with-github-copilot.pptx)
+- **Hand-In-Hand Live Coding Session With Github Copilot**. Presented at SEB's main theater in Solna, Stockholm, April 2024. [:globe_with_meridians: Post](https://www.linkedin.com/posts/cesarsotovalero_seb-sebtech-ai-activity-7185295533308002305-oRFv) [Slides](../files/presentations/hand-in-hand-live-coding-session-with-github-copilot.pptx)
 - **Enhancing Semantic Search With RAG**. Presented at SEB, Stockholm, March 2024. [Slides](../files/presentations/enhancing-semantic-search-with-rag.pptx)
 
 # 2023
@@ -56,7 +56,7 @@ The following is a non-exhaustive list of my talks (in reverse chronological ord
 # 2020
 
 - **An Introduction to Bloat History Analysis**. Presented at _20th ASSERT Software Engineering Workshop_, Stockholm, Sweden, November 2020. [Slides](https://docs.google.com/presentation/d/1cwBaOIJ2ZgGP62sCod_a_KrdhRg2puDlIkFKpjxPC6E/edit?usp=sharing)
-- **Are Developers Willing to Remove Bloated Dependencies?** Presented at _13th ASSERT Software Engineering Workshop_, Stockholm, Sweden, January 2020. [:earth_americas: Slides](https://www.cesarsotovalero.net/presentations/assert-13th/#/)
+- **Are Developers Willing to Remove Bloated Dependencies?** Presented at _13th ASSERT Software Engineering Workshop_, Stockholm, Sweden, January 2020. [:globe_with_meridians: Slides](https://www.cesarsotovalero.net/presentations/assert-13th/#/)
 
 # 2019
 
@@ -65,7 +65,7 @@ The following is a non-exhaustive list of my talks (in reverse chronological ord
 - **Taming Bloated Software Dependencies**. Presented at [SL](https://sl.se/) Headquarter, Stockholm, November 2019. [Slides](https://docs.google.com/presentation/d/1C_-0rQHYvuz7RqPj0dlNhUkjYX1lm9y6gBRri4BTfxk/edit?usp=sharing)
 - **WASP Presentation**. Presented at _Nanyang Technological University_, Singapore, October 2019. [Slides](https://docs.google.com/presentation/d/1-B3YfX5xulYgq30IVhv0bLwPHFrtbaRbzZu61TA_U2k/edit?usp=sharing#slide=id.g655fad9d75_6_147)
 - **Studying Bloated Dependencies in the Maven Ecosystem**. Poster presented during _CASTOR Software Days_, KTH, Sweden, October 2019. [Slides](../files/posters/Castor-Software-Days-WASP-Poster.pdf)
-- **The Emergence of Software Diversity in Maven Central**. Presented at _16th International Conference on Mining Software Repositories_ (MSR), Montreal, Canada, May 2019. [:earth_americas: Slides](https://dl.serveur-du-placard.ml/these/reveal.js-3.7.0/presentations/MSR2.html)
+- **The Emergence of Software Diversity in Maven Central**. Presented at _16th International Conference on Mining Software Repositories_ (MSR), Montreal, Canada, May 2019. [:globe_with_meridians: Slides](https://dl.serveur-du-placard.ml/these/reveal.js-3.7.0/presentations/MSR2.html)
 
 # 2018
 

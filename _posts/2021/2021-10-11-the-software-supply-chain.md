@@ -170,8 +170,8 @@ I hope events such as the SolarWinds incident become less frequent in the near f
 
 # References
 
-- [:earth_americas: https://reproducible-builds.org/docs](https://reproducible-builds.org/docs)
-- [:earth_americas: https://survey.opensourceunchained.eu/](https://survey.opensourceunchained.eu/)
-- [:earth_americas: SolarWinds attack explained: And why it was so hard to detect](https://www.csoonline.com/article/3601508/solarwinds-supply-chain-attack-explained-why-organizations-were-not-prepared.html)
+- [:globe_with_meridians: https://reproducible-builds.org/docs](https://reproducible-builds.org/docs)
+- [:globe_with_meridians: https://survey.opensourceunchained.eu/](https://survey.opensourceunchained.eu/)
+- [:globe_with_meridians: SolarWinds attack explained: And why it was so hard to detect](https://www.csoonline.com/article/3601508/solarwinds-supply-chain-attack-explained-why-organizations-were-not-prepared.html)
 - [Securing the World's Software](https://arxiv.org/ftp/arxiv/papers/2110/2110.10246.pdf)
 - [USA Securing Open Source Software Act of 2022](https://www.govinfo.gov/content/pkg/BILLS-117s4913is/pdf/BILLS-117s4913is.pdf)

@@ -13,7 +13,7 @@ This is a [living review](https://en.wikipedia.org/wiki/Living_review) of talks 
 # 2019
 
 - [Bintrimmer: Towards Static Binary Debloating Through Abstract Interprepation](https://www.dimva2019.org/wp-content/uploads/sites/31/2019/06/DIMVA19-slides-11.pdf).
-- [:earth_americas: GitHub Universe: 2019: Exemplars, Laggards, and Hoarders A Data-driven Look at Open Source Software Supply Chains](https://www.slideshare.net/realgenekim/github-universe-2019-exemplars-laggards-and-hoarders-a-datadriven-look-at-open-source-software-supply-chains).
+- [:globe_with_meridians: GitHub Universe: 2019: Exemplars, Laggards, and Hoarders A Data-driven Look at Open Source Software Supply Chains](https://www.slideshare.net/realgenekim/github-universe-2019-exemplars-laggards-and-hoarders-a-datadriven-look-at-open-source-software-supply-chains).
 
 # 2018
 

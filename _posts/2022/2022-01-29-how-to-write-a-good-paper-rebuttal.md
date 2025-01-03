@@ -230,5 +230,5 @@ And you better learn how to play it well 😀.
 
 # References
 
-- [:earth_americas: Patterns for writing good rebuttals](https://andreas-zeller.info/2012/10/01/patterns-for-writing-good-rebuttals.html), by Andreas Zeller.
-- [:earth_americas: How we write rebuttals](https://deviparikh.medium.com/how-we-write-rebuttals-dc84742fece1), by Devi Parikh.
+- [:globe_with_meridians: Patterns for writing good rebuttals](https://andreas-zeller.info/2012/10/01/patterns-for-writing-good-rebuttals.html), by Andreas Zeller.
+- [:globe_with_meridians: How we write rebuttals](https://deviparikh.medium.com/how-we-write-rebuttals-dc84742fece1), by Devi Parikh.

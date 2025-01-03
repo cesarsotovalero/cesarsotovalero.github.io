@@ -338,7 +338,7 @@ I hope you enjoyed this article and learned something new 😎.
 # References
 
 - [The Java Language Specification, Java SE 19 Edition](https://docs.oracle.com/javase/specs/jls/se19/jls19.pdf)
-- [:earth_americas: Dynamic Class Loading in the Java Virtual Machine](https://dl.acm.org/doi/10.1145/286942.286945)
+- [:globe_with_meridians: Dynamic Class Loading in the Java Virtual Machine](https://dl.acm.org/doi/10.1145/286942.286945)
 
 # Footnotes
 
