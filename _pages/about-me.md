@@ -78,8 +78,8 @@ My very <span style="background-color:#042742;color:white;border-radius:4px;">&n
 You can email me using the form below:
 
 <form id="contact-me" class="wj-contact" action="https://formspree.io/mrgqpknn" method="POST">
-    <input type="text" name="email" placeholder="Type your email">
-    <textarea type="text" name="content" rows="5" placeholder="Type your message"></textarea>
+    <input type="text" name="email" placeholder="Your email goes here">
+    <textarea type="text" name="content" rows="5" placeholder="Your message goes here"></textarea>
     <input type="hidden" name="_next" value="<REDIRECTION LINK> ">
     <input type="hidden" name="_subject" value="New Contact Form Submission">
     <input type="text" name="_gotcha" style="display:none">
@@ -90,7 +90,7 @@ You can email me using the form below:
 form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
     width: 100%;
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 0.25em;
     margin-bottom: 0.5em;
     padding: 0.75em;
@@ -102,28 +102,36 @@ form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
     border-radius: 3px;
     transition: box-shadow .2s ease;
     font-family:  "Equity Text A", sans-serif;
+    cursor: pointer;
+    background-color: var(--blockquote-background-color);
 }
 
 form.wj-contact input[type="submit"] {
     outline: none;
-    color: #444;
-    background-color: white;
+    color: var(--main-text-color);
     border-radius: 3px;
     padding: 12px;
     margin: 0.25em 0 0 0;
     height: auto;
     font-family:  "Concourse T6", sans-serif;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 800;
     letter-spacing: 1px;
     border: 1px solid #444;
+    background-color: var(--blockquote-background-color);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 form.wj-contact input[type="submit"]:hover {
-  background-color: #444;
-  color: white;
+  background-color: var(--blockquote-background-color);
+  color: var(--main-text-color);
   cursor: pointer;
+}
+
+form.wj-contact input[type="submit"]:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 </style>
 
