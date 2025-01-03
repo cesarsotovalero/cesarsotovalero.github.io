@@ -1,165 +1,5 @@
 @import url("custom-fonts.css");
 
-.pl-c /* comment, punctuation.definition.comment, string.comment */
-{
-  color: #6a737d;
-}
-
-.pl-c1 /* constant, entity.name.constant, variable.other.constant, variable.language, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header, meta.output */,
-.pl-s .pl-v /* string variable */
-{
-  color: #005cc5;
-}
-
-.pl-e /* entity */,
-.pl-en /* entity.name */
-{
-  color: #6f42c1;
-}
-
-.pl-smi /* variable.parameter.function, storage.modifier.package, storage.modifier.import, storage.type.java, variable.other */,
-.pl-s .pl-s1 /* string source */
-{
-  color: #24292e;
-}
-
-.pl-ent /* entity.name.tag, markup.quote */
-{
-  color: #22863a;
-}
-
-.pl-k /* keyword, storage, storage.type */
-{
-  color: #d73a49;
-}
-
-.pl-s /* string */,
-.pl-pds /* punctuation.definition.string, source.regexp, string.regexp.character-class */,
-.pl-s .pl-pse .pl-s1 /* string punctuation.section.embedded source */,
-.pl-sr /* string.regexp */,
-.pl-sr .pl-cce /* string.regexp constant.character.escape */,
-.pl-sr .pl-sre /* string.regexp source.ruby.embedded */,
-.pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */
-{
-  color: #032f62;
-}
-
-.pl-v /* variable */,
-.pl-smw /* sublimelinter.mark.warning */
-{
-  color: #e36209;
-}
-
-.pl-bu /* invalid.broken, invalid.deprecated, invalid.unimplemented, message.error, brackethighlighter.unmatched, sublimelinter.mark.error */
-{
-  color: #b31d28;
-}
-
-.pl-ii /* invalid.illegal */
-{
-  color: #fafbfc;
-  background-color: #b31d28;
-}
-
-.pl-c2 /* carriage-return */
-{
-  color: #fafbfc;
-  background-color: #d73a49;
-}
-
-.pl-c2::before /* carriage-return */
-{
-  content: "^M";
-}
-
-.pl-sr .pl-cce /* string.regexp constant.character.escape */
-{
-  font-weight: bold;
-  color: #22863a;
-}
-
-.pl-ml /* markup.list */
-{
-  color: #735c0f;
-}
-
-.pl-mh /* markup.heading */,
-.pl-mh .pl-en /* markup.heading entity.name */,
-.pl-ms /* meta.separator */
-{
-  font-weight: bold;
-  color: #005cc5;
-}
-
-.pl-mi /* markup.italic */
-{
-  font-style: italic;
-  color: #24292e;
-}
-
-.pl-mb /* markup.bold */
-{
-  font-weight: bold;
-  color: #24292e;
-}
-
-.pl-md /* markup.deleted, meta.diff.header.from-file, punctuation.definition.deleted */
-{
-  color: #b31d28;
-  background-color: #ffeef0;
-}
-
-.pl-mi1 /* markup.inserted, meta.diff.header.to-file, punctuation.definition.inserted */
-{
-  color: #22863a;
-  background-color: #f0fff4;
-}
-
-.pl-mc /* markup.changed, punctuation.definition.changed */
-{
-  color: #e36209;
-  background-color: #ffebda;
-}
-
-.pl-mi2 /* markup.ignored, markup.untracked */
-{
-  color: #f6f8fa;
-  background-color: #005cc5;
-}
-
-.pl-mdr /* meta.diff.range */
-{
-  font-weight: bold;
-  color: #6f42c1;
-}
-
-.pl-ba /* brackethighlighter.tag, brackethighlighter.curly, brackethighlighter.round, brackethighlighter.square, brackethighlighter.angle, brackethighlighter.quote */
-{
-  color: #586069;
-}
-
-.pl-sg /* sublimelinter.gutter-mark */
-{
-  color: #959da5;
-}
-
-.pl-corl /* constant.other.reference.link, string.other.link */
-{
-  text-decoration: underline;
-  color: #032f62;
-}
-
-/*!
- * Modified from GitHub's Dark Dimmed theme, licensed under the MIT License
- * Copyright (c) 2018 GitHub Inc.
- * https://github.com/primer/primitives/blob/main/LICENSE
- */
-
-/*! MIT License
- * Copyright (c) 2018 GitHub Inc.
- * https://github.com/primer/primitives/blob/main/LICENSE
- */
-
 main {
   --color-text-primary: var(--main-text-color);
   --color-text-secondary: var(--post-meta-index-color);
@@ -215,17 +55,8 @@ main {
   --color-btn-primary-disabled-border: rgba(27, 31, 36, 0.15);
   --color-scale-blue-1: #b6e3ff;
 
-  /* Extensions from color-modes.scss */
-  --color-upvote-icon-bg: var(--color-scale-blue-1);
-}
-
-main .pagination-loader-container {
-  background-image: url(https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg)
-}
-
-/*! Custom CSS */
-main {
-  color-scheme: light;
+  font-family: "Concourse T6", "Cambria", "Open Sans", serif;
+  font-size: 1.1rem;
 }
 
 .giscus, .giscus-frame {
@@ -234,43 +65,24 @@ main {
 }
 
 .gsc-upvotes {
-  display: none
+  display: none;
 }
 
 .font-semibold {
   font-weight: 700;
-  font-family: "Concourse T6", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 1rem;
-  color: var(--main-text-color);
+  font-family: "Concourse T6", "Cambria", "Open Sans", serif;
+  font-size: 1.1rem;
 }
 
-.mr-2 {
-  font-size: 1rem;
+.mr-2, .ml-1, .text-sm, .text-xs {
+  font-size: 1.1rem;
   color: var(--main-text-color);
-}
-
-.ml-1 {
-  font-size: 1rem;
-  color: var(--main-text-color);
-}
-
-.text-sm {
-  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: var(--main-text-color);
-}
-
-.text-xs {
-  font-family: "Concourse T2", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: var(--main-text-color);
+  font-family: "Concourse T4", "Cambria", "Open Sans", serif;
 }
 
 .color-text-primary {
-  font-size: 1rem;
-  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 1.1rem;
+  font-family: "Concourse T4", "Cambria", "Open Sans", serif;
   color: var(--main-text-color);
 }
 
@@ -283,38 +95,22 @@ main {
 }
 
 .gsc-comment-box-textarea {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
-.gsc-reactions {
-  font-size: 1rem;
-  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+.gsc-reactions, .gsc-comments {
+  font-size: 1.1rem;
+  font-family: "Concourse T4", "Cambria", "Open Sans", serif;
   color: var(--main-text-color);
 }
 
-.gsc-comments {
-  font-size: 1rem;
-  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  color: var(--main-text-color);
+div.markdown.gsc-comment-content > p, div.markdown.gsc-reply-content > p {
+  font-size: 1.15rem;
+  font-family: "Equity Text A", "Cambria", "Open Sans", serif;
 }
 
-div.markdown.gsc-comment-content > p {
-  font-size: 1.05rem;
-  font-family: "Equity Text A", "Cambria", "Georgia", "Times New Roman", serif;
-}
-
-div.markdown.gsc-reply-content > p {
-  font-size: 1.05rem;
-  font-family: "Equity Text A", "Cambria", "Georgia", "Times New Roman", serif;
-}
-
-.gsc-comments-count {
-  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
-  color: var(--post-meta-index-color);
-}
-
-.gsc-reactions-count {
-  font-family: "Concourse T6 Tab", "Linux Biolinum", "Cambria", "Georgia", "Times New Roman", serif;
+.gsc-comments-count, .gsc-reactions-count {
+  font-family: "Concourse T4", "Cambria", "Open Sans", serif;
   color: var(--post-meta-index-color);
 }
 
@@ -322,22 +118,9 @@ div.gsc-reactions {
   color: var(--post-meta-index-color);
 }
 
-
 @media only screen and (max-width: 450px) {
-  .font-semibold {
-    font-size: 1rem;
-  }
-
-  .mr-2 {
-    font-size: 1rem;
-  }
-
-  .text-sm {
-    font-size: 1rem;
-  }
-
-  .text-xs {
-    font-size: 1rem;
+  .font-semibold, .mr-2, .text-sm, .text-xs {
+    font-size: 1.1rem;
   }
 }
 

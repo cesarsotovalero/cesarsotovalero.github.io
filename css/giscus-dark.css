@@ -1,4 +1,5 @@
 @import url("custom-fonts.css");
+
 main {
   --color-prettylights-syntax-comment: #768390;
   --color-prettylights-syntax-constant: #6cb6ff;
@@ -83,13 +84,83 @@ main {
 
   /*! Extensions from @primer/css/alerts/flash.scss */
   --color-social-reaction-bg-hover: var(--color-scale-gray-7);
-  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8)
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+
+  /* Fonts and styles from giscus-light.css */
+  font-family: "Concourse T6", "Cambria", "Open Sans", serif;
+  font-size: 1.1rem;
 }
 
-main .pagination-loader-container {
-  background-image: url(https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg)
+.giscus, .giscus-frame {
+  width: 100% !important;
+  margin-top: 2rem !important;
 }
 
-main .gsc-loading-image {
-  background-image: url(https://github.githubassets.com/images/mona-loading-dimmed.gif)
+.gsc-upvotes {
+  display: none;
+}
+
+.font-semibold {
+  font-weight: 700;
+  font-family: "Concourse T6", "Cambria", "Open Sans", serif;
+  font-size: 1.1rem;
+}
+
+.mr-2, .ml-1, .text-sm, .text-xs {
+  font-size: 1.1rem;
+  color: var(--color-fg-default);
+  font-family: "Concourse T4", "Cambria", "Open Sans", serif;
+}
+
+.color-text-primary {
+  font-size: 1.1rem;
+  font-family: "Concourse T4", "Cambria", "Open Sans", serif;
+  color: var(--color-fg-default);
+}
+
+.color-text-primary.gsc-main {
+  color: #adbac7;
+}
+
+.gsc-comment-box-buttons {
+  color: #cdd9e5;
+}
+
+.gsc-comment-box-textarea {
+  font-size: 1.1rem;
+}
+
+.gsc-reactions, .gsc-comments {
+  font-size: 1.1rem;
+  font-family: "Concourse T4", "Cambria", "Open Sans", serif;
+  color: var(--color-fg-default);
+}
+
+div.markdown.gsc-comment-content > p, div.markdown.gsc-reply-content > p {
+  font-size: 1.15rem;
+  font-family: "Equity Text A", "Cambria", "Open Sans", serif;
+}
+
+.gsc-comments-count, .gsc-reactions-count {
+  font-family: "Concourse T4", "Cambria", "Open Sans", serif;
+  color: var(--color-fg-muted);
+}
+
+div.gsc-reactions {
+  color: var(--color-fg-muted);
+}
+
+@media only screen and (max-width: 450px) {
+  .font-semibold, .mr-2, .text-sm, .text-xs {
+    font-size: 1.1rem;
+  }
+}
+
+.justify-center {
+  justify-content: left;
+}
+
+.text-center {
+  justify-content: left;
+  text-align: left;
 }
