@@ -169,7 +169,7 @@ Here are some ways in which it could manifest:
 - **Reinventing the wheel**: Sometimes, due to a lack of thorough literature review or out of a desire to claim novelty, researchers might end up replicating existing studies without adding real value or new insights. This has happened many times, for example, the concept of `MapReduce` is credited to Google, but the concepts behind where published [decades before](https://doi.org/10.1145/129888.129894) by researchers from the fields of parallel databases and functional programming.
 - **Over-reliance on tools and frameworks**: It’s not uncommon to see studies where advanced tools or algorithms are used without a proper understanding of their underlying principles or limitations, simply because they are popular or well-regarded. Think about deep learning and the fact that [we don't really know ](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) how these black-boxed complex neural networks actually operate to deliver their results.
 
-Having navigated t[he rocky terrains](../blog/my-phd-as-a-comic.html) of doing a PhD, I’ve experienced firsthand the challenges that push even the well-intentioned scientist towards these pitfalls. 
+Having navigated [the rocky terrains](../blog/my-phd-as-a-comic.html) of doing a PhD, I’ve experienced firsthand the challenges that push even the well-intentioned scientist towards these pitfalls. 
 The pressure to "publish or perish" and the fierce competition for grants can sometimes blur the lines between rigorous investigation and the rush to produce novel results.
 
 Moreover, the lack of a good work-life balance, the anxiety of job (in)security in academia, and the often solitary nature of deep research can exacerbate these issues. 
