@@ -7,10 +7,12 @@ description: Career values of César Soto Valero.
 published: true
 ---
 
-This document outlines the type of work environment and opportunities I'm _only_ interested in.
+# Why This Page?
+
+This page outlines the type of work environment and opportunities I'm _only_ interested in.
 It's aimed at providing clarity to recruiters, hiring managers, and even myself.
 
-# Summary
+# TL;DR
 
 I would like to work in a place where I can work on impactful and meaningful projects, preferably within a large and established organization. 
 I'm particularly interested in research or engineering roles that focus on innovation, scalability, and real-world impact.
