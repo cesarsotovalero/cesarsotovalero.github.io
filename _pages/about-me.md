@@ -26,6 +26,8 @@ Here is my [résumé](../files/CV/cv.pdf).
 
 [Here](https://chatgpt.com/share/6732edfc-2374-8007-98e4-091b4f0ccff9) is what ChatGPT thinks about me.
 
+For recruiters, here are [my career values](./my-career-values.html).
+
 **Update:** Since April 2023, I'm a Data Engineer at [SEB](https://seb.se/) in Stockholm <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
 
 # Career
