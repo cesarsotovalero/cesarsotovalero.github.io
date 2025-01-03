@@ -25,6 +25,7 @@ body {
   letter-spacing: -0.2px;
   word-spacing: 1.5px;
   overflow-x: hidden;
+  line-height: 1.7;
 }
 
 @media only screen and (max-width: 450px) {
@@ -58,7 +59,7 @@ li::marker {
 p a {
   text-decoration: underline;
   text-decoration-thickness: 0.06em;
-  color: var(--main-link-color);
+  color: var(--main-text-color);
   text-decoration-color: var(--link-decoration-color);
   -webkit-text-decoration-color: var(--link-decoration-color);
 }
@@ -356,7 +357,7 @@ hr.small {
 ::selection {
   color: var(--footer-color);
   text-shadow: none;
-  background: var(--main-text-color);
+  background: var(--footer-color);
 }
 
 img::selection {
@@ -474,16 +475,17 @@ a[href$=".pptx"] {
   margin: 0px 0 30px 0;
   padding: 5px 0 0px 0;
   /*blurring*/
-  background-color: var(--main-background-color);
+  background-color: var(--footer-color);
+  border-bottom: 0.5px #dadada solid;
 }
 
 
 .navigation a {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   text-decoration-thickness: 0.025em;
   text-decoration-color: var(--link-decoration-color);
   -webkit-text-decoration-color: var(--link-decoration-color);
-  /*text-decoration: none;*/
+  text-decoration: none;
   padding: 0 5px 0 5px;
   font-size: 22px;
 }
@@ -603,7 +605,8 @@ a[href$=".pptx"] {
   position: relative;
   z-index: 99;
   margin: 0;
-  padding: 10px 10px 0 10px;
+  /*padding: 10px 10px 0 10px;*/
+  border: 0;
 }
 
 .navbar-toggle {
@@ -647,6 +650,7 @@ a[href$=".pptx"] {
 
 .navbar-custom .container-fluid ul li {
   display: inline-block;
+  margin-bottom: 5px;
 }
 
 .header-image .avatar-container {
@@ -1866,7 +1870,7 @@ pre .lineno {
 }
 
 code {
-  background-color: var(--navbar-color);
+  background-color: var(--inline-code-color);
   font-family: "jetbrains_monoregular", sans-serif;
   font-size: 17px;
   color: var(--main-text-color);
@@ -2425,6 +2429,7 @@ ol, ul {
   margin: 8px -80px 30px 30px;
   vertical-align: baseline;
   position: relative;
+  line-height: 1.4;
 }
 
 .quote a {
@@ -3458,6 +3463,7 @@ html, html[data-theme="light"] {
   --media-icon-color: 0;
   --navbar-color: #f0f0f0;
   --footer-color: #f0f0f0;
+  --inline-code-color: #f0f0f0;
   --post-meta-index-color: #808080;
   --blockquote-color: darkgreen;
   /*--blockquote-background-color: #f1f1f1;*/
@@ -3479,9 +3485,10 @@ html[data-theme="dark"] {
   --media-icon-color: 1;
   --navbar-color: #012639;
   --footer-color: #012639;
+  --inline-code-color: #2d333b;
   --post-meta-index-color: hsl(0, 0%, 76%);
-  --blockquote-color: rgba(1, 38, 57, 0.8);
-  --blockquote-background-color: rgba(1, 38, 57, 0.8);
+  --blockquote-color: #2d333b;
+  --blockquote-background-color: #2d333b;
   /*--main-background-color: #012639;*/
   --main-background-color: #1c2128;
   --main-text-color: hsl(0, 0%, 85%);
