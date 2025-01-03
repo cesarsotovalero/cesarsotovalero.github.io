@@ -2,7 +2,7 @@
 /*.highlight pre { background-color: black; font-size: 16px }*/
 .highlight .hll { background-color: #f1fa8c }
 .highlight  { background: #282a36; color: #f8f8f2 }
-.highlight .c { color: #6272a4 } /* Comment */
+.highlight .c { color: #6272a4; font-family: operator_mono; } /* Comment */
 .highlight .err { color: #f8f8f2 } /* Error */
 .highlight .g { color: #f8f8f2 } /* Generic */
 .highlight .k { color: #ff79c6 } /* Keyword */
