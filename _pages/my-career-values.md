@@ -87,4 +87,4 @@ In summary, I'm only interested in roles that involve align with my technical ex
 A focus on innovation, scalability, and reliability within a supportive and inclusive culture would be ideal. 
 By working together, I'm confident we can create meaningful and impactful outcomes.
 
-Cheers! 🚀
+Have a great day! 😎
