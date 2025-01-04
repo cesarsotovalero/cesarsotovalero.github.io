@@ -60,13 +60,13 @@ I'm deeply committed to diversity and inclusion (D&I).
 I'd like to work in an environment that values different perspectives and supports individuals from various backgrounds.
 I want to feel confident referring to talented individuals from underrepresented groups, knowing they will thrive and be respected.
 
-Finally, the company's mission matters to me.
+Last but not least, the company's mission matters to me.
 I'd like to work on a place that I can ethically support, whether they advance society, improve lives, or are at least morally neutral.
 I'm not interested in defense, military applications, gambling, or exploitative financial services.
 
 # Management
 
-I think hierarchies are necessary when there is more than one individual. 
+I think hierarchies are necessary whenever there is more than one individual. 
 Flat structures seem like a myth to me, meaning that I value clear lines of responsibility and accountability.
 
 I want to have a manager who inspires me. 
@@ -83,7 +83,7 @@ Monthly meetings are ideal, weekly is also good (even if they're brief).
 
 # Closing Thoughts
 
-In summary, I'm only interested in roles that involve align with my technical expertise, ethical values, and personal growth aspirations.
+In summary, I'm only interested in roles that align with my technical expertise, ethical values, and personal growth aspirations.
 A focus on innovation, scalability, and reliability within a supportive and inclusive culture would be ideal. 
 By working together, I'm confident we can create meaningful and impactful outcomes.
 
