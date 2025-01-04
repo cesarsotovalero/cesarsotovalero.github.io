@@ -35,7 +35,7 @@ I'm ready to take on the challenge of turning a research prototype into a produc
 In such a case, I'm deeply committed to ensuring these systems are robust in production.
 Whether it involves troubleshooting obscure bugs or optimizing critical paths, I find these challenges exciting and rewarding.
 
-I also value pragmatic approaches to engineering. 
+I also value pragmatic approaches to software engineering. 
 Maintenance and iteration often yield better long-term outcomes than full rewrites, though I'm not opposed to significant architectural changes when they are justified by evolving requirements.
 
 I prefer to deal with a limited set of task to ensure I can focus the attention needed to deeply understand their technical details.
@@ -84,7 +84,8 @@ Monthly meetings are ideal, weekly is also good (even if they're brief).
 # Closing Thoughts
 
 In summary, I'm only interested in roles that align with my technical expertise, ethical values, and personal growth aspirations.
-A focus on innovation, scalability, and reliability within a supportive and inclusive culture would be ideal. 
+I belive that doing meaningful work is a core part of human fullfilment.
+A focus on innovation, scalability, and reliability within a supportive and inclusive culture would be ideal to me. 
 By working together, I'm confident we can create meaningful and impactful outcomes.
 
 Have a great day! 😎
