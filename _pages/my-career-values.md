@@ -83,9 +83,11 @@ Monthly meetings are ideal, weekly is also good (even if they're brief).
 
 # Closing Thoughts
 
-In summary, I'm only interested in roles that align with my technical expertise, ethical values, and personal growth aspirations.
-I belive that doing meaningful work is a core part of human fullfilment.
-A focus on innovation, scalability, and reliability within a supportive and inclusive culture would be ideal to me. 
-By working together, I'm confident we can create meaningful and impactful outcomes.
+In summary, I am only interested in roles that align with my technical expertise, ethical values, and aspirations for personal growth.
+I believe that doing meaningful work is a cornerstone of human fulfillment.
+An ideal role for me would emphasize innovation, scalability, and reliability within a supportive and inclusive culture.
+
+If you’re a recruiter or manager and have read this far, it likely means you are genuinely interested in working with me.
+In that case, I would greatly appreciate receiving a concrete proposal to save us both precious time.
 
 Have a great day! 😎
