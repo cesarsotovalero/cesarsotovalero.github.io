@@ -1,5 +1,5 @@
 ---
-permalink: my-progessional-values.html
+permalink: my-professional-values.html
 layout: page
 title: My Career Values
 subtitle: 🚀
