@@ -2493,12 +2493,12 @@ ol, ul {
   }
 
   .quote a {
-    color: #424242;
+    color: var(--main-text-color);
     font-size: 14px;
   }
 
   .quote cite {
-    color: #424242;
+    color: var(--main-text-color);
     font-size: 14px;
   }
 
