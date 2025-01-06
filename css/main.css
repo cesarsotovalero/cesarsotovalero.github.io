@@ -355,14 +355,14 @@ hr.small {
 }
 
 ::-moz-selection {
-  color: var(--footer-color);
+  color: var(--main-background-color);
   background: var(--main-text-color);
 }
 
 ::selection {
-  color: var(--footer-color);
+  color: var(--main-background-color);
   text-shadow: none;
-  background: var(--footer-color);
+  background: var(--main-text-color);
 }
 
 img::selection {
