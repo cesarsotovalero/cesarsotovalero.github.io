@@ -21,7 +21,6 @@ author: cesarsotovalero
 published: true
 ---
 
-
 I've been doing some frontend web development lately as part of my daily job.[^1]
 Along the way, I've been thinking on how the whole thing is built under the hood. 
 The web technologies that we all use every day have changed and evolved over time.
