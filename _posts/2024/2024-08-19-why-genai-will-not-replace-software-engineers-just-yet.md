@@ -11,12 +11,12 @@ keywords:
   - GenAI vs. engineers
   - tech career
   - ai
-image: ../img/posts/2024/2024-11-19/armillary-sphere_cover.jpg
-share-img: ../img/posts/2024/2024-11-19/armillary-sphere_cover.jpg
+image: ../img/posts/2024/2024-08-19/armillary-sphere_cover.jpg
+share-img: ../img/posts/2024/2024-08-19/armillary-sphere_cover.jpg
 show-avatar: false
 toc: true
 mathjax: false
-date: 2024/11/19
+date: 2024/08/19
 author: cesarsotovalero
 published: true
 ---
@@ -41,7 +41,7 @@ In this blog post, I’ll share my perspective on the capabilities of today’s 
 Spoiler: I'm on the side of optimistic. So let's dive in!
 
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-11-19/armillary-sphere.jpg alt: "Photo of a garden sundial in the form of an armillary sphere in Skansen, Stockholm, Sweden." %}
+  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-08-19/armillary-sphere.jpg alt: "Photo of a garden sundial in the form of an armillary sphere in Skansen, Stockholm, Sweden." %}
   <figcaption class="stroke"> 
     &#169; Since ancient times, we've tried to predict the new times ahead, and (ironically) we've been proven wrong most of the time. Photo of a garden sundial in the form of an <a href="https://en.wikipedia.org/wiki/Armillary_sphere">armillary sphere</a> in <a href="https://maps.app.goo.gl/61UCZPas6UNWWWS67">Skansen</a>, Stockholm, Sweden.
   </figcaption>
@@ -93,7 +93,7 @@ They’re astonishingly effective at recognizing patterns, generating text, and 
 However, when it comes to the messy, chaotic, and unpredictable world of software development, GenAI falls short in several key areas due to its inherent reasoning limitations.
 
 <figure class="jb_picture">
-  {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2024/2024-11-19/reciting-vs-reasoning.png alt: "TODO" %}
+  {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2024/2024-08-19/reciting-vs-reasoning.png alt: "TODO" %}
   <figcaption class="stroke"> 
     Reciting vs. Reasoning: GenAI can find patterns quickly, but it can't reason like a human. Source: <a href="https://news.mit.edu/2024/reasoning-skills-large-language-models-often-overestimated-0711">MIT News</a>.
   </figcaption>
@@ -141,7 +141,7 @@ All it can do is guess based on patterns it’s been trained on.
 And often, that guess is way off the real needs of the users, because those needs are chaotic, and according to my experience, most users don’t really know what they want.
 
 <figure class="jb_picture">
-  {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2024/2024-11-19/jobs-quote.png alt: "People don't know what they want until you show it to them." %} 
+  {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2024/2024-08-19/jobs-quote.png alt: "People don't know what they want until you show it to them." %} 
   <figcaption class="stroke"> 
     Steve Jobs understood the importance of human creativity in software development.
   </figcaption>
@@ -155,7 +155,7 @@ Because the world needs critical thinking.
 As long as humans remain as complex, messy creatures with changing needs, there will always be a demand for someone who can turn those messy needs into clean software solutions.
 
 <figure class="jb_picture">
-  {% responsive_image width: "50%" border: "1px solid #808080" path: img/posts/2024/2024-11-19/ai-dumbness-example.jpg alt: "Example of chatbot messing out with human context." %}
+  {% responsive_image width: "50%" border: "1px solid #808080" path: img/posts/2024/2024-08-19/ai-dumbness-example.jpg alt: "Example of chatbot messing out with human context." %}
   <figcaption class="stroke"> 
     A dummy example showing the limitations of current GenAI in understanding context.
   </figcaption>
@@ -166,7 +166,7 @@ Source code is just the way we found to instruct computer so that they can solve
 I believe we should focus on our problem-solving skills instead of writing code because our ability to define and solve problems is going to be much more valuable.
 
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-11-19/requirements-engineering-in-the-age-of-ai.png alt: "TODO" %}
+  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-08-19/requirements-engineering-in-the-age-of-ai.png alt: "TODO" %}
   <figcaption class="stroke"> 
     Example of a loop of requirement engineering in the age of AI. Requirement engineers, stakeholder, engineers and domain experts cooperate with AI agents to define the requirements of a software project.
   </figcaption>
@@ -186,7 +186,7 @@ The natural assumption might be to scale up with advanced [microservices](../blo
 But in the prototyping phase, a more practical solution could involve implementing a simple queuing system to handle chat overflow during peak hours, reducing the need for costly infrastructure while keeping the user experience intact.
 
 <figure class="jb_picture">
-  {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2024/2024-11-19/notification-system-architecture.jpg alt: "Example of a notification system architecture." %} 
+  {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2024/2024-08-19/notification-system-architecture.jpg alt: "Example of a notification system architecture." %} 
   <figcaption class="stroke"> 
     Example of a notification system architecture using a queuing system to handle peak hours. Source:
     <a href="https://www.cometchat.com/">CometChat</a>.
@@ -222,7 +222,7 @@ It’s about adapting to change, whether that change comes from shifting market 
 It’s a fast-paced, ever-changing process, and that exactly where current GenAI systems based on large language model struggle the most.
 
 <figure class="jb_picture">
-  {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2024/2024-11-19/agile-software-development.png alt: "TODO" %}
+  {% responsive_image width: "75%" border: "1px solid #808080" path: img/posts/2024/2024-08-19/agile-software-development.png alt: "TODO" %}
   <figcaption class="stroke"> 
     Agile software development is all about adapting to change.
   </figcaption>
@@ -270,7 +270,7 @@ But when it comes to making the final call, the human touch is still essential.
 In my opinion, the future isn’t about GenAI taking over but about humans learning how to work alongside GenAI to be more efficient and effective. And the engineers who can collaborate with GenAI will be the ones who thrive in the future.
 
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2024/2024-11-19/stackoverflow-dev-survey-2024-ai-developer-tools-ai-complex-social.png alt: "TODO" %}
+  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2024/2024-08-19/stackoverflow-dev-survey-2024-ai-developer-tools-ai-complex-social.png alt: "TODO" %}
   <figcaption class="stroke"> 
     Stack Overflow Developer Survey 2024 results on the AI tool's ability to handle complex tasks
   </figcaption>
@@ -308,7 +308,7 @@ Instead of viewing GenAI as a _competitor_, we should treat it as a _collaborato
 By leveraging GenAI for grunt work, we can focus on higher-value tasks, such as crafting innovative designs, optimizing user experiences, and solving problems that GenAI simply cannot understand at a conceptual level (a.k.a the human experience).
 
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2024/2024-11-19/stackoverflow-dev-survey-2024-ai-efficacy-and-ethics-ai-threat-social.png alt: "Stack Overflow Developer Survey 2024: Are AI tools a threat to software engineers?" %}
+  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2024/2024-08-19/stackoverflow-dev-survey-2024-ai-efficacy-and-ethics-ai-threat-social.png alt: "Stack Overflow Developer Survey 2024: Are AI tools a threat to software engineers?" %}
   <figcaption class="stroke"> 
     Stack Overflow Developer Survey 2024: Are AI tools a threat to software engineers?
   </figcaption>
