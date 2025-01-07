@@ -60,7 +60,7 @@ Consequently, we're starting to share a deep fear that our professional careers 
 So, if you work in tech, you’re probably wondering:
 
 1. Is the career I’ve worked so hard to build at risk?
-2. Does GenAI tools truly grasp the complexities of a software project?
+2. Do GenAI tools truly grasp the complexities of a software project?
 3. Can GenAI tools interpret vague business requirements, understand user needs, and make informed trade-offs like a human engineer?
 
 # The Catch
@@ -71,14 +71,14 @@ The authors let it clear that [ChatGPT](https://openai.com/index/chatgpt/) and [
 But let's be honest, many companies have tried to automate software development in the past, [and most of them have failed](https://www.monperrus.net/martin/startups-machine-learning-code).[^3]
 So, this kind of prediction is not new.
 
-> "Most AI startups and companies are primarily focused on creating _wrappers_ around existing AI models without offering real value, I believe most of them will fail in the coming years."
+> "Most AI startups and companies are primarily focused on creating _wrappers_ around existing AI models without offering real value. I believe most of them will fail in the coming years."
 
 Let’s consider the following scenario: a single person without any programming experience today can leverage an AI-powered IDE, like the popular [Cursor AI](https://www.cursor.com/), to develop a full mobile app for personal finance management from scratch. 
 
 Impressive, right?
 
 But there is a catch. 
-That app likely doesn't introduce any groundbreaking innovations, because its building blocks (libraries, APIs, and templates) already exist. 
+That app likely doesn't introduce any groundbreaking innovations because its building blocks (libraries, APIs, and templates) already exist. 
 Current GenAI merely reassembles these components to fit a well-known specific use case.
 While undeniably useful, tools like ChatGPT or GitHub Copilot still don't have the ability to fully understand the context of a software project.
 
@@ -106,7 +106,8 @@ Here are some key limitations of GenAI in the context of software engineering:
 - **No Accountability:** Software projects don’t live in isolation, they exist to solve real-world problems. An engineer must account for business needs, user behavior, and technical feasibility, which requires human judgment and responsibility.
 
 Let's take software architecture as an example. 
-A GenAI model can suggest patterns or frameworks based on existing designs, but defining the architecture for a mission-critical system that have not been done before and for which there is not available data (e.g., balancing scalability, performance, and security) is a task that requires human extrapolation.
+A GenAI model can suggest patterns or frameworks based on existing designs.
+However, defining the architecture for a mission-critical system that has not been done before and for which there is not available training data is a task that requires human extrapolation (e.g., balancing scalability, performance, and security).
 This is because [architecture](../blog/what-does-it-take-to-become-a-software-architect.html) is not just about choosing the right tools or patterns, it’s about understanding the problem space, anticipating future needs, and making informed trade-offs.
 
 As I mentioned in a [previous blog post](../blog/ai-doesnt-make-me-the-same-coffee.html), GenAI powered tools are not a silver bullet.
@@ -130,7 +131,7 @@ The possibilities are endless.
 Consequently, the search space for building a useful app like the one mentioned before is vast.
 The key point is that software engineers don’t just dive into coding without fully understanding the deeper needs of the user. 
 Humans have the ability to grasp context, consider variables like user preferences, time, convenience, and even emotions.
-This is something machines can't do without clear direction from human insight.
+This is something machines can't do without a clear direction from human insight.
 
 And this is precisely where GenAI falls short. 
 Sure, GenAI can generate code, but it doesn’t truly _understand_ the problem at hand.
@@ -193,7 +194,7 @@ But in the prototyping phase, a more practical solution could involve implementi
   </figcaption>
 </figure>
 
-A GenAI powered engineer, on the other hand, would probably go with the more “typical” solution, like adding servers and microservices, because the majority of documentation resources to build these kind of system explain how it’s done.
+A GenAI powered engineer, on the other hand, would probably go with the more “typical” solution, like adding servers and microservices, because the majority of documentation resources to build these kinds of system explain how it’s done.
 But GenAI doesn’t have the creativity to consider alternative options.
 It follows the existing data, the information on what is has been trained on.
 I foresee this as a potential problem in the future, because it could lead to a homogenization of software solutions, where everyone uses the same tools and the same approaches, and that’s not good for innovation.
@@ -204,14 +205,11 @@ The difference between a good solution and a great solution often comes down to 
 I believe the real magic in engineering happens in those transitions, from needs to requirements, from designs to code.
 These steps are where human insight makes all the difference.
 
-> "My entire career working in AI/ML has shown me that domain knowledge is the highest leverage investment.
-> Most of the tooling for AI/agents/etc really is still in the _technical_ realm, intended for AI/ML people or maybe engineers.
-> But imagine a world where the domain expert had the agency to iterate and improve an AI, without having to go through an "AI engineer intermediary.
-> That would open the door to create incredibly powerful AI systems quickly.
-> Keep a close eye on the product they are building, because I think it will close this gap." -- _[Skylar Payne](https://www.linkedin.com/in/skylar-payne-766a1988/)_
+> "My entire career working in AI/ML has shown me that domain knowledge is the highest leverage investment. Most of the tooling for AI/agents/etc. really is still in the _technical_ realm, intended for AI/ML people or maybe engineers. But imagine a world where the domain expert had the agency to iterate and improve an AI, without having to go through an "AI engineer intermediary.
+> That would open the door to create incredibly powerful AI systems quickly. Keep a close eye on the product they are building, because I think it will close this gap." -- _[Skylar Payne](https://www.linkedin.com/in/skylar-payne-766a1988/)_
 
 Of course, automating the boring parts is a great thing (it’s what engineers have been doing since the early days, right?).
-However, today is even more important to look for smarter ways to solve problems, because GenAI might offer you a set of solution, but it’s your job to consider all the possibilities and make a critical evaluation of each of them.
+However, today is even more important to look for smarter ways to solve problems, because GenAI might offer a set of solutions, but it’s our job to consider all the possibilities and make a critical evaluation of each of them.
 
 So, what does this mean for the whole software industry, where things are constantly in flux? Can GenAI keep up with those changes?
 
@@ -228,10 +226,10 @@ It’s a fast-paced, ever-changing process, and that exactly where current GenAI
   </figcaption>
 </figure>
 
-For example, imagine you are mid-way through a project when suddenly, the market shifts. The client wants to pivot. 
-You need to revise your priorities and adjust the entire architecture of your software. Can a GenAI system do that? Yes it can!
-But, what if the conditions are completely new because of an event that has never ever happened before? (like, for example a market crash, or a natural disaster).
-It's hard for me to imagine a GenAI system that can adapt to those kind of unpredictable changes.
+For example, imagine you are midway through a project when suddenly, the market shifts. The client wants to pivot. 
+You need to revise your priorities and adjust the entire architecture of your software. Can a GenAI system do that? Yes, it can!
+But what if the conditions are completely new because of an event that has never ever happened before? (like, for example, a market crash, or a natural disaster).
+It's hard for me to imagine a GenAI system that can adapt to those kinds of unpredictable changes.
 
 AI operates based on past data and predefined assumptions. 
 It’s not going to sit in a meeting with you, hear the client’s concerns, and propose a totally new approach. But part of our work is finding out what the client really needs, even when they don’t know it themselves.
@@ -255,7 +253,7 @@ GenAI agents, like those integrated on GitHub or other platforms, can help autom
 
 It can help with tasks that are repetitive, like generating boilerplate code, adding unit tests, or writing documentation. 
 It can analyze large datasets and suggest optimizations. 
-Indeed, many surveys suggest that developers are eager to get away these tasks to GenAI assistants.
+Indeed, many surveys suggest that developers are eager to get away from these tasks to GenAI assistants.
 
 But when it comes to making the final call, the human touch is still essential.
 
@@ -291,12 +289,12 @@ They’re learning, growing, and building the experience they need to tackle mor
 GenAI might be able to take over some of the simpler tasks, but it can’t replace the learning process.
 
 For example, if you have been around for a while in this industry, think about how much you learned from your first projects. 
-It wasn’t just about writing down the code, because programmers are not typists. 
+It wasn't just about writing down the code, because programmers are not typists. 
 It was about understanding the problem, communicating with other developers, figuring out how to structure the solution, and dealing with unexpected bugs along the way.
 
-If we remove the possibility of learning that stuff, and put GenAI systems in place, then it’ll harder for the young people to gain that kind of experience or develop the necessary intuition to solve real-world problems.
+If we remove the possibility of learning that stuff, and put GenAI systems in place, then it'll be harder for the young people to gain that kind of experience or develop the necessary intuition to solve real-world problems.
 
-If you’re a entry level engineer, your goal should not be to compete with AI. 
+If you’re an entry level engineer, your goal should not be to compete with AI. 
 It should be to delegate the tasks that GenAI can efficiently handle, and moving on to the bigger, more interesting challenges.
 
 So, keep pushing yourself. Don’t get too comfortable with the easy tasks—just use GenAI can do those. Focus on learning the skills that only humans can master.
@@ -305,7 +303,7 @@ So, keep pushing yourself. Don’t get too comfortable with the easy tasks—jus
 
 As software ~~developers~~ creators, the key is to think critically about where GenAI adds value and where it falls short.
 Instead of viewing GenAI as a _competitor_, we should treat it as a _collaborator_. 
-By leveraging GenAI for grunt work, we can focus on higher-value tasks, such as crafting innovative designs, optimizing user experiences, and solving problems that GenAI simply cannot understand at a conceptual level (a.k.a the human experience).
+By leveraging GenAI for grunt work, we can focus on higher-value tasks, such as crafting innovative designs, optimizing user experiences, and solving problems that GenAI simply cannot understand at a conceptual level (a.k.a. _the human experience_).
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2024/2024-08-19/stackoverflow-dev-survey-2024-ai-efficacy-and-ethics-ai-threat-social.png alt: "Stack Overflow Developer Survey 2024: Are AI tools a threat to software engineers?" %}
@@ -332,7 +330,7 @@ If there is one way to keep our pockets safe, I think it is to stay ahead of the
 
 [^2]: See Billings, Jay Jay, et al. 2017 "Will humans even write code in 2040 and what would that mean for extreme heterogeneity in computing?", [in arXiv](https://arxiv.org/pdf/1712.00676).
 
-[^3]: I still remember Dreamweaver from [Macromedia](https://en.wikipedia.org/wiki/Macromedia) (later purchased by Adobe). It was a no code app that promised to make web development just a matter of throwing components to a canvas. It didn’t work out as expected and today we are still writing HTML, CSS and JavaScript, ouch!
+[^3]: I still remember Dreamweaver from [Macromedia](https://en.wikipedia.org/wiki/Macromedia) (later purchased by Adobe). It was a no code app that promised to make web development just a matter of throwing components to a canvas. It didn't work out as expected, and today we are still writing HTML, CSS and JavaScript, ouch!
 
 [^4]: Not to mention the negative impact of AI-based layouts on our highly overvalued software engineering pockets.
 
