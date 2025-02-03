@@ -1,9 +1,9 @@
 ---
 permalink: my-professional-values.html
 layout: page
-title: My Career Values
+title: My Professional Values
 subtitle: 🚀
-description: Career values of César Soto Valero.
+description: Professional values of César Soto Valero.
 published: true
 ---
 
