@@ -26,7 +26,7 @@ I prioritize ethical missions and value emotionally healthy teams.
 
 With a PhD in Computer Science, my passion lies in solving complex problems that have not been solved before.
 In particular, I target real-world problems and like to work hard to provide scalable, efficient, and reliable solutions.
-If it can be solved by an AI, I'm NOT interested in it.
+If an AI can solve it, then I'm NOT interested in it.
 
 While I have experience improving and maintaining existing systems, I particularly enjoy building systems from the ground up. 
 I find something deeply satisfying about making something work for the first time, especially when it has a significant impact.
