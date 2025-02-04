@@ -22,6 +22,17 @@ jobs:
         with:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
+      - name: Install ImageMagick
+        run: sudo apt-get install -y imagemagick libmagickwand-dev
+
+      - name: Cache Jekyll _site directory
+        uses: actions/cache@v3
+        with:
+          path: _site
+          key: ${{ runner.os }}-jekyll-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-jekyll-
+
       - name: Building site
         run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace
         env:
