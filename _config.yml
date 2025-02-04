@@ -257,8 +257,7 @@ gem:
   - jekyll-bits
   - jekyll-feed
   - jekyll-tagging
-#  - jekyll-responsive-image
-  - jekyll-image-optimization
+  - jekyll-responsive-image
   - jekyll-seo-tag
   - jekyll-mermaid
 
@@ -266,8 +265,7 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-paginate
-#  - jekyll-responsive-image
-  - jekyll-image-optimization
+  - jekyll-responsive-image
   - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll-toc
