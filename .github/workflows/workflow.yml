@@ -20,12 +20,16 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          bundler-cache: true
 
       - name: Install ImageMagick and dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y imagemagick libmagickwand-dev libmagickcore-dev pkg-config
+
+      # Set the PKG_CONFIG_PATH to help rmagick find the MagickCore library
+      - name: Set PKG_CONFIG_PATH for rmagick
+        run: echo "PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig" >> $GITHUB_ENV
 
       - name: Building site
         run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace
@@ -35,7 +39,6 @@ jobs:
           YOUTUBE_API_TOKEN: ${{ secrets.YOUTUBE_API_TOKEN }}
           GMAIL: ${{ secrets.CESAR_PERSONAL_GMAIL }}
 
-      # Cache Jekyll _site directory after build
       - name: Cache Jekyll _site directory
         uses: actions/cache@v3
         with:
