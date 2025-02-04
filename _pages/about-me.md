@@ -28,7 +28,7 @@ Here is my [résumé](../files/CV/cv.pdf).
 
 For recruiters, [here](./my-professional-values.html) are my professional values.
 
-**Job Update:** Since January 2025, I'm a Data Scientist at [SEB](https://seb.se/) in Stockholm <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
+**Update:** Since January 2025, I'm a Data Scientist at [SEB](https://seb.se/) in Stockholm <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
 
 # Career
 
