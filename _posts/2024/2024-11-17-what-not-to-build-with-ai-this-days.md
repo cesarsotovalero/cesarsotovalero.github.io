@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What NOT to Build With AI These Days
+title: What Not to Build With AI These Days
 subtitle: What works, what doesn't, and why
 tags: ai
 description: |
@@ -53,8 +53,6 @@ Everything related to handling paperwork and repetitive tasks will be eventually
 That's actually good because these boring tasks were not meant for humans in the first place anyway.
 Second, GenAI will create new opportunities for everyone, including artists and creators, to express themselves in ways that were not possible before.
 For example, AI-powered content creation tools such as [Adobe Firefly](https://www.adobe.com/products/firefly.html) are already transforming the creative industry.
-
-
 
 1. **Personalized Financial Advisors**
   - Apps that analyze spending habits, investment opportunities, and financial health using AI are gold. These tools cater to the rising demand for financial literacy and can scale personalized advice to millions.
