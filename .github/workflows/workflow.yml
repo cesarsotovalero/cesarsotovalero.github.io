@@ -22,16 +22,6 @@ jobs:
         with:
           bundler-cache: true
 
-      - name: Install ImageMagick and dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y imagemagick libmagickcore-dev libmagickwand-dev pkg-config
-
-      - name: Set PKG_CONFIG_PATH for rmagick
-        run: |
-          echo "PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig" >> $GITHUB_ENV
-          echo "PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/ImageMagick-7.0.11/pkgconfig" >> $GITHUB_ENV
-
       - name: Building site
         run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace
         env:
