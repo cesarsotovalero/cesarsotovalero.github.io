@@ -19,7 +19,8 @@ I'm particularly interested in research or engineering roles that focus on innov
 Ideally, the role would be in a collaborative, diverse, and inclusive environment where I can grow, mentor others, and contribute to solving complex problems. 
 Remote work is preferred, but I'm open to hybrid opportunities if they align with my goals.
 
-No gambling, gaming, ads, predatory fintech, or blockchain work.
+I'm not interested in well-paid but socially useless jobs.
+No gambling, gaming, ads, predatory fintech, or Ponzi scheme blockchain work.
 I prioritize ethical missions and value emotionally healthy teams.
 
 # Engineering and Research
