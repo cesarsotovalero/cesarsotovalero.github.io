@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Building GenAI Systems Today
+title: Building GenAI Systems Today
 subtitle: What seems to works, what doesn't, and maybe why
 tags: ai
 description: |
