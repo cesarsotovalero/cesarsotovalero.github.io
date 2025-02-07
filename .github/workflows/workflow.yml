@@ -19,6 +19,8 @@ jobs:
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
 
       - name: Building site
         run: JEKYLL_ENV=production bundle exec jekyll build --profile --trace
@@ -27,6 +29,14 @@ jobs:
           GISCUS_GISCUS_DATA_CATEGORY_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
           YOUTUBE_API_TOKEN: ${{ secrets.YOUTUBE_API_TOKEN }}
           GMAIL: ${{ secrets.CESAR_PERSONAL_GMAIL }}
+
+      - name: Cache Jekyll _site directory
+        uses: actions/cache@v3
+        with:
+          path: _site
+          key: ${{ runner.os }}-jekyll-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-jekyll-
 
       - name: Install Minify deb package on Ubuntu
         run: sudo apt-get update && sudo apt-get install --no-install-recommends --yes minify
