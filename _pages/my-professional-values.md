@@ -80,7 +80,7 @@ I'm looking for a manager who actively keep track of my career progression and i
 I want to feel supported to develop new skills that find alignment between my goals and organizational needs. 
 I appreciate a manager that provides clear guidance on what the company actually cares about, and how I can contribute most effectively.
 
-Regular 1:1s with are important to me. 
+Regular 1:1s with my manager are important to me. 
 Monthly meetings are ideal, weekly is also good (even if they're brief).
 
 # Closing Thoughts
