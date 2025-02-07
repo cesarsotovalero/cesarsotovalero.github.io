@@ -1,7 +1,7 @@
 ---
 layout: post
 title: On Building GenAI Systems Today
-subtitle: What works, what doesn't, and why
+subtitle: What seems to works, what doesn't, and maybe why
 tags: ai
 description: |
    Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn't, and why. If you're looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn't. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.
@@ -20,45 +20,50 @@ toc: true
 mathjax: false
 date: 2024/11/17
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 {% badge /img/badges/Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg 140 https://commons.wikimedia.org/wiki/File:NMA.0039209_Emigration._Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg %}
 
-The AI fever has been around for a while now (4 years as I can count).  
-It reminds me of the [gold rush](https://en.wikipedia.org/wiki/Gold_rush) in the 19th century.  
-Today, any single individual could get rich almost instantly by leveraging AI's capabilities the right way.  
-The potential opportunities to apply AI for profit span almost all forms, from pure arts to fundamental science, medical diagnosis to engineering. 
-AI agents can now [generate new scientific hypotheses](https://www.sciencedirect.com/science/article/pii/S2352847823001557).  
-Yet, as history seems to repeat itself, every time OpenAI releases a new model offering more powerful capabilities, many startups flounder and fade.  
-It happened during the gold rush, when many prospectors went bankrupt while just a few found the actual gold.  
-Similarly, I've attended many hackathons where teams have tried to build AI-powered solutions for problems that could be solved with a simple rule-based system.  
-So, if you're a developer or entrepreneur itching to dive into the GenAI space for fun or profit, this post is a step back to reflect on what (I believe) _shouldn't_ be built with AI.  
+The AI fever has been around for a while now (4 years as I can count). 
+It reminds me of the [gold rush](https://en.wikipedia.org/wiki/Gold_rush) saga in the 19th century. 
+The happy idea is that today any single individual could get rich almost instantly by leveraging AI's capabilities the right way.
+The potential opportunities to apply AI for profit span almost all areas, from pure arts to fundamental science, from medical diagnosis to engineering, and so on.
+[AI agents](https://en.wikipedia.org/wiki/Intelligent_agent) can now [generate](https://www.sciencedirect.com/science/article/pii/S2352847823001557) new scientific hypotheses.
+Yet, as history seems to repeat itself, every time OpenAI releases a new model offering more powerful capabilities, many solo entrepreneurs and small startups flounder and fade.
+I've attended many hackathons where teams have tried to build AI-powered solutions for problems that could be solved with a simple rule-based system.
+So, if you're a developer or entrepreneur itching to dive into the GenAI space for fun or profit, this post is a step back to reflect on what (I believe) are good fits for Ai and what _shouldn't_ be built with it.
 Let's dive in!
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-11-17/twisted-revolver.jpg alt: "Time to stop shutting flies with AI powered bullets" %}
   <figcaption class="stroke"> 
-   &#169; Time to stop shutting flies with AI-powered bullets. Picture of a sculpture located in <a href="https://maps.app.goo.gl/9tWekqJTscsLmkgd9">Hötorgshallen 50</a>, in Stockholm city.
+   &#169; Time to stop shutting flies with AI-powered big and expensive bullets. Picture of a sculpture located in <a href="https://maps.app.goo.gl/9tWekqJTscsLmkgd9">Hötorgshallen 50</a>, in Stockholm city.
   </figcaption>
 </figure>
 
 # What Seems to Work
 
 I'm not an entrepreneur myself (yet), but I'm overall an enthusiast of the startup ecosystem.  
-I listen to [Indie Hackers Podcasts](https://www.indiehackers.com/podcasts), read [TechCrunch](https://techcrunch.com/), and check cool launches on [Gumroad](https://gumroad.com) from time to time.  
+I've listened to the [Indie Hackers Podcasts](https://www.indiehackers.com/podcasts), read [TechCrunch](https://techcrunch.com/), and still check cool launches on [Gumroad](https://gumroad.com) from time to time.  
 Over the years, I've seen many startups succeed and fail along the way for diverse reasons. 
-Some of failed due to overhyped technology, unrealistic business models, or poor timing (e.g., Pets.com, Theranos, or Rdio).  
-Whenever there is a new technology, there is a wave of startups trying to profit from it. 
-Do you remember how was blockchain 10 years ago?
+Some of them failed due to overhyped tech, unrealistic business models, or poor timing (e.g., Pets.com, Theranos, or Rdio).  
+Whenever there is a new technology, there is a wave of startups trying to profit from it.
+Do you remember the blockchain hype 10 years ago?
+
+<aside class="quote">
+    <em>“AI is really useful, and it's here to stay..”</em> 
+</aside>
 
 I'm convinced that Generative AI (GenAI) is a powerful tech that can [transform whole industries](https://www.cesarsotovalero.net/blog/surviving-the-ai-revolution-as-a-software-engineer.html) and create new opportunities.  
-I think GenAI will first optimize existing processes and then create new ones.  
-Everything related to handling paperwork and repetitive tasks will be eventually automated.  
-That's actually good because these boring tasks were not meant for humans in the first place anyway.  
+GenAI will first optimize existing processes and then create new ones.  
+First, everything related to handling paperwork and repetitive tasks will be eventually automated.  
+But that's actually good because these boring tasks were not meant for humans in the first place anyway.  
 Second, GenAI will create new opportunities for everyone, including artists and creators, to express themselves in ways that were not possible before.  
+Third, GenAI will help us understand the world better by analyzing data and generating new hypotheses.
+Thus propelling the scientific discoveries that ultimately transform our lives for the better.
 
-Below are three realistic applications of GenAI today:
+Below are three _realistic_ applications of GenAI today that I would like to see more of:
 
 1. **Personalized Financial Advisors**
 - Apps that analyze spending habits, investment opportunities, and financial health using AI are gold. These tools cater to the rising demand for financial literacy and can scale personalized advice to millions.
@@ -74,6 +79,9 @@ Below are three realistic applications of GenAI today:
 - Tools like AI-powered symptom checkers or personalized fitness coaches empower users to manage their health better.
 - Example: [MyFitnessPal](https://www.myfitnesspal.com/) leverages AI for smarter diet recommendations.
 - Why it works: There’s a growing emphasis on preventive health solutions that are scalable and cost-effective.
+
+While we are still in the early days of GenAI, it seems to me that what works the best is still to focus on solving real world problems in a scalable way.
+If you've worked on a GenAI product, then you don't need to be remembered that no matter the tech, is _the product_ what matters the most.
 
 # What to Avoid
 
@@ -139,10 +147,9 @@ In the future, the winners will be those who embrace simplicity, scale, and ethi
 To make AI a lasting success, focus on creating products that truly solve problems for the user, rather than just jumping on the bandwagon.  
 Who knows? Maybe your next AI project will end up as the one everyone’s talking about. Or maybe it will be yet another “failed startup” story. Time will tell, but remember, it’s all about **finding the right market fit**—not just building an app for the sake of it.
 
-Good luck, and happy innovating!
-
 # External Resources
 
 - [Analytics Vidhya: Top 5 AI Failures](https://www.analyticsvidhya.com/blog/2023/01/top-5-failures-of-ai-till-date-reasons-solution/)
 - [Business Insider: Inside Forward’s Failure](https://www.businessinsider.com/healthcare-startup-forward-shutdown-carepod-adrian-aoun-2024-11)
 - [Selldone: Major Startup Failures 2024](https://selldone.com/blog/major-startup-failures-2024-824)
+- [Chip Huyen: Common pitfalls when building generative AI applications](https://huyenchip.com/2025/01/16/ai-engineering-pitfalls.html)
