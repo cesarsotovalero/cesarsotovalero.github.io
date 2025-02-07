@@ -4,7 +4,7 @@ title: Building GenAI Systems Today
 subtitle: What seems to works, what doesn't, and maybe why
 tags: ai
 description: |
-   GenAI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn't, and why. If you're looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn't. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.
+   Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn't, and why. If you're looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn't. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.
 keywords:
   - AI future
   - Generative Artificial Intelligence
@@ -152,7 +152,10 @@ The best AI ideas are those that tackle well-defined issues, making people’s l
 Without a compelling value proposition, even the most advanced AI will struggle to gain traction.
 
 ## Scalability
-While niche markets can be tempting, they are often not the best starting point for an AI system unless you have a very clear, long-term vision. Aim for ideas that can scale, reaching wider audiences or applying across various industries. Scalability isn’t just about expanding your user base—it’s about adapting the technology to different use cases, which will increase the likelihood of long-term success.
+While niche markets can be tempting, they are often not the best starting point for an AI system unless you have a very clear, long-term vision. 
+Aim for ideas that can scale, reaching wider audiences or applying across various industries. 
+Scalability isn’t just about expanding your user base. 
+It’s about adapting the technology to different use cases, which will increase the likelihood of long-term success.
 
 ## Ethical Design
 Every AI system comes with a responsibility: to design it with ethics in mind. Consider the potential negative uses of your AI. While technologies like deepfake generators show immense creative potential, they also pose significant risks for misuse. It's essential to build safeguards and establish ethical boundaries to prevent your AI from being used for harmful purposes.
@@ -174,13 +177,16 @@ A well-designed UX can transform even a mediocre AI into something genuinely use
 
 ## Relying on Open-Source Models Without Customization
 
-While pre-trained open-source models offer a quick and easy starting point, relying on them without tailoring them to your specific use case is a mistake. Using these models without fine-tuning them is akin to trying to run a marathon in flip-flops—it might work to some extent, but you’re not going to achieve optimal results. Customizing and fine-tuning models allows them to meet the specific needs of your application, making the difference between an average app and one that delivers real value to users.
+While pre-trained open-source models offer a quick and easy starting point, relying on them without tailoring them to your specific use case is a mistake. 
+Using these models without fine-tuning them is akin to trying to run a marathon in flip-flops.
+It might work to some extent, but you’re not going to achieve optimal results. 
+Customizing and fine-tuning models allows them to meet the specific needs of your application, making the difference between an average app and one that delivers real value to users.
 
 # Final Thoughts
 
 The AI gold rush is far from over.
 Many GenAI startups are rushing headfirst into this space, hoping to strike gold, but failing to dig deep enough to find the right nuggets.  
-In the future, the winners will be those who embrace simplicity, scale, and ethics—while staying grounded in real-world needs.  
+In the future, the winners will be those who embrace simplicity, scale, and ethics, while staying grounded in real-world needs.  
 To make AI a lasting success, focus on creating products that truly solve problems for the user, rather than just jumping on the bandwagon.  
 Who knows? Maybe your next AI project will end up as the one everyone’s talking about. 
 Or maybe it will be yet another “failed startup” story. 
