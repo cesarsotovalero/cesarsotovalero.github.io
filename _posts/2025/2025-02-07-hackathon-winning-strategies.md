@@ -89,6 +89,24 @@ https://open.spotify.com/episode/7hnNwkxwapu2rtiHVllgdG?si=10387715cd8d402f
 Interview with Chintan Shah, Tech and Product Lead at Salesforce. We discussed his hackathon experiences, from his university days to his time at Microsoft, and some major learnings, especially how to structure a hackathon to make the most of the available time.
 https://open.spotify.com/episode/6JbUC7TqLNthpcH22qSPOJ?si=cf20874dae1f48c5
 
+# About Team lead
+Why have a team lead?
+
+Hackathon teams with a lead often perform better, so we recommend all teams to appoint one.
+
+A hackathon team lead is the person who facilitates booking meetings, task assignments, progress check-ins, problem resolution and decision making. The team lead is also responsible for managing the relationship with the non-profit organization.
+
+
+It is important for us to have a direct contact person for each team that we can check in with, so please let us know who will be your team lead, if you have not already done so.
+
+
+## Inspiration
+
+Listen to our interview with Amna Hassan. Amna is a section leader at Stanford Code In Place, a former winner of Harvard University's CS50 Puzzle Day, hackathon winner at lablab.ai, a four-time hackathon mentor, twice a hackathon judge, and has participated in over twenty hackathons. She has seldom seen a team win or even reach the finals without a team lead.
+
+
+Here's her post about the podcast episode, where you also find the episode link: LinkedIn Post.
+
 # External Resources
 
 # Footnotes

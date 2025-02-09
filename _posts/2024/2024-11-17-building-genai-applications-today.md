@@ -176,7 +176,7 @@ You will never know until you try.
 
 # External Resources
 
-- [🌐Analytics Vidhya: Top 5 AI Failures](https://www.analyticsvidhya.com/blog/2023/01/top-5-failures-of-ai-till-date-reasons-solution/)
-- [🌐Business Insider: Inside Forward’s Failure](https://www.businessinsider.com/healthcare-startup-forward-shutdown-carepod-adrian-aoun-2024-11)
-- [🌐Selldone: Major Startup Failures 2024](https://selldone.com/blog/major-startup-failures-2024-824)
-- [🌐Chip Huyen: Common pitfalls when building generative AI applications](https://huyenchip.com/2025/01/16/ai-engineering-pitfalls.html)
+- 🌐[Analytics Vidhya: Top 5 AI Failures](https://www.analyticsvidhya.com/blog/2023/01/top-5-failures-of-ai-till-date-reasons-solution/)
+- 🌐[Business Insider: Inside Forward’s Failure](https://www.businessinsider.com/healthcare-startup-forward-shutdown-carepod-adrian-aoun-2024-11)
+- 🌐[Selldone: Major Startup Failures 2024](https://selldone.com/blog/major-startup-failures-2024-824)
+- 🌐[Chip Huyen: Common pitfalls when building generative AI applications](https://huyenchip.com/2025/01/16/ai-engineering-pitfalls.html)
