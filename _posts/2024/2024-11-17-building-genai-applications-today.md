@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building GenAI Applications Today
-subtitle: What seems to works, what doesn't, and possibly why
+subtitle: What seems to work, what doesn't, and possibly why
 tags: ai
 description: |
    Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn't, and why. If you're looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn't. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.
