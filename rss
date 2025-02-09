@@ -8,27 +8,15 @@
     
     <item>
       <title>
-        Building GenAI Systems Today - What seems to works, what doesn&apos;t, and maybe why
+        Building GenAI Applications Today - What seems to works, what doesn&apos;t, and possibly why
       </title>
       <description><![CDATA[
           Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn&apos;t, and why. If you&apos;re looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn&apos;t. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.
 
         ]]></description>
       <pubDate>Sun, 17 Nov 2024</pubDate>
-      <link>https://www.cesarsotovalero.net/blog/building-ai-systems-today.html</link>
-      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/building-ai-systems-today.html</guid>
-    </item>
-    
-    <item>
-      <title>
-        Software Art as a Mean of Scientific Outreach - TODO
-      </title>
-      <description><![CDATA[
-          TODO
-        ]]></description>
-      <pubDate>Sun, 20 Oct 2024</pubDate>
-      <link>https://www.cesarsotovalero.net/blog/software-art-as-a-mean-of-scientific-outreach.html</link>
-      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/software-art-as-a-mean-of-scientific-outreach.html</guid>
+      <link>https://www.cesarsotovalero.net/blog/building-genai-applications-today.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/building-genai-applications-today.html</guid>
     </item>
     
     <item>
