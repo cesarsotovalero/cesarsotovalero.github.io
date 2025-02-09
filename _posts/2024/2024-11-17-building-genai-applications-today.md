@@ -59,8 +59,8 @@ Third, GenAI helps us understand the world better by analyzing data in an unprec
 
 ## Success Factors
 
-Not all AI projects are worth pursuing.
-The ones that succeed share some common traits that set them apart from the noise.
+The success of any GenAI project is extremelly hard to predict. 
+However, the ones that succeed share some common traits that set them apart from the noise.
 Below are factors to keep in mind when evaluating whether an AI idea is worth your time and resources.
 
 **Clear Value Proposition.**
@@ -102,13 +102,15 @@ If you've worked on a GenAI product, then you don't need to be remembered that n
 
 # What to Avoid
 
-Not all AI ideas are worth pursuing.
+Most GenAI ideas are not worth pursuing.
 Numerous AI-driven apps fail due to over-saturation and lack of resources to compete against the tech giants that already have customer trust and a large user base.
 Other fail due to technical glitches, poor product pivots, or simply because they don't solve a real problem.
+There is another set that fail because of premature obsolescense (e.g., a friend built a now dead startup 4 years ago about simplifying email through summarization).
+Failure is hard to predict when one truly believes in a proyect. 
 
 ## Lessons from AI Failures
 
-Building a successful AI system isn’t just about coding algorithms and feeding them data.
+Building a successful AI system isn’t just about using the best foundational models and feeding them with data.
 It’s about learning from the mistakes of others.
 A few notable failures provide crucial insights into what can go wrong, and what to avoid in the development process.
 Below is a small compilation.
