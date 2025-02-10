@@ -82,20 +82,12 @@ Every AI system comes with a responsibility: to design it with ethics in mind. C
 
 Below are three applications of GenAI today that I would like to see more of:
 
-1. Personalized Financial Advisors
-- Apps that analyze spending habits, investment opportunities, and financial health using AI are gold. These tools cater to the rising demand for financial literacy and can scale personalized advice to millions.
-- Example: [Wealthfront](https://www.wealthfront.com/)’s AI-driven financial planning features are transforming personal finance management.
-- Why it works: High demand and tangible ROI for users.
+1. **Personalized Financial Advisors:** Apps that analyze spending habits, investment opportunities, and financial health using AI are gold. These tools cater to the rising demand for financial literacy and can scale personalized advice to millions (i.e., tangible ROI for users). For example, [Wealthfront](https://www.wealthfront.com/)’s AI-driven financial planning features are transforming personal finance management.
 
-2. Content Creation Tools
-- GenAI is a boon for creators. Platforms that assist with scriptwriting, graphic design, or even video editing are gaining more and more traction.
-- Example: [Adobe’s Firefly](https://www.adobe.com/products/firefly.html) enhances creativity by automating repetitive tasks.
-- Why it works: It saves time, amplifies human creativity, and has clear market demand.
+2. **Content Creation Tools:** GenAI is a boon for creators. Platforms that assist with scriptwriting, graphic design, or even video editing are gaining more and more traction because they save time, amplify human creativity, and have clear market demand. For example, [Adobe’s Firefly](https://www.adobe.com/products/firefly.html) enhances creativity by automating repetitive tasks.
+- Why it works: It 
 
-3. AI in Healthcare
-- Tools like AI-powered symptom checkers or personalized fitness coaches empower users to manage their health better.
-- Example: [MyFitnessPal](https://www.myfitnesspal.com/) leverages AI for smarter diet recommendations.
-- Why it works: There’s a growing emphasis on preventive health solutions that are scalable and cost-effective.
+3. **AI in Healthcare:** There’s a growing emphasis on preventive health solutions that are scalable and cost-effective. Tools like AI-powered symptom checkers or personalized fitness coaches empower users to manage their health better. For example, [MyFitnessPal](https://www.myfitnesspal.com/) leverages AI for smarter diet recommendations.
 
 While we are still in the early days of GenAI, it seems to me that what works the best is still to focus on solving real world problems in a scalable way.
 If you've worked on a GenAI product, then you don't need to be remembered that no matter the tech, is _the product_ what matters the most.
@@ -156,17 +148,11 @@ Customizing and fine-tuning models allows them to meet the specific needs of you
 
 Here are four GenAI development directions that I would advise against pursuing:
 
-1. Overhyped General-Purpose Chatbots
-- Why they fail: Chatbots are ubiquitous, and most fail to differentiate themselves. Unless your bot is solving a specific problem better than existing solutions, it’s just another chatbot.
-- Example: Microsoft’s Tay chatbot famously spiraled out of control due to poor moderation and biased training data ([Analytics Vidhya](https://www.analyticsvidhya.com/blog/2023/01/top-5-failures-of-ai-till-date-reasons-solution/)).
+1. **Overhyped General-Purpose Chatbots:** Chatbots are ubiquitous, and most fail to differentiate themselves. Unless your bot is solving a specific problem better than existing solutions, it’s just another chatbot. For example, [Microsoft’s Tay chatbot](https://www.analyticsvidhya.com/blog/2023/01/top-5-failures-of-ai-till-date-reasons-solution/) famously spiraled out of control due to poor moderation and biased training data.
 
-2. Poorly Thought-Out Healthcare Applications
-- Why they fail: While healthcare is promising, it’s also highly regulated. Products that don’t comply with data protection laws or fail to address ethical concerns will face backlash.
-- Example: Forward Health’s CarePods failed due to technical glitches and poor location choices ([Business Insider](https://www.businessinsider.com/healthcare-startup-forward-shutdown-carepod-adrian-aoun-2024-11)).
+2. **Poorly Thought-Out Healthcare Applications:** While healthcare is promising, it’s also highly regulated. Products that don’t comply with data protection laws or fail to address ethical concerns will face backlash. For example, [Forward Health’s CarePods](https://www.businessinsider.com/healthcare-startup-forward-shutdown-carepod-adrian-aoun-2024-11) failed due to technical glitches and poor location choices.
 
-3. Tools Targeting Hyper-Niche Markets
-- Why they fail: Niche markets often lack the scale needed to make an app profitable. AI tools for ultra-specific tasks, like “AI for knitting pattern generation,” may not justify the investment.
-- Example: Tally’s credit management platform collapsed due to limited scalability and poor product pivots ([Selldone](https://selldone.com/blog/major-startup-failures-2024-824)).
+3. **Tools Targeting Hyper-Niche Markets:** Niche markets often lack the scale needed to make an app profitable. AI tools for ultra-specific tasks, like “AI for knitting pattern generation,” may not justify the investment. For example, [Tally’s credit management platform](https://selldone.com/blog/major-startup-failures-2024-824) collapsed due to limited scalability and poor product pivots.
 
 In summary, avoid building AI apps that don’t solve a real problem, are overhyped, or target markets that are too small to scale.
 
@@ -178,7 +164,7 @@ You will never know until you try.
 
 # External Resources
 
-- 🌐[Analytics Vidhya: Top 5 AI Failures](https://www.analyticsvidhya.com/blog/2023/01/top-5-failures-of-ai-till-date-reasons-solution/)
-- 🌐[Business Insider: Inside Forward’s Failure](https://www.businessinsider.com/healthcare-startup-forward-shutdown-carepod-adrian-aoun-2024-11)
-- 🌐[Selldone: Major Startup Failures 2024](https://selldone.com/blog/major-startup-failures-2024-824)
-- 🌐[Chip Huyen: Common pitfalls when building generative AI applications](https://huyenchip.com/2025/01/16/ai-engineering-pitfalls.html)
+- [:globe_with_meridians: Analytics Vidhya: Top 5 AI Failures](https://www.analyticsvidhya.com/blog/2023/01/top-5-failures-of-ai-till-date-reasons-solution/)
+- [:globe_with_meridians: Business Insider: Inside Forward’s Failure](https://www.businessinsider.com/healthcare-startup-forward-shutdown-carepod-adrian-aoun-2024-11)
+- [:globe_with_meridians: Selldone: Major Startup Failures 2024](https://selldone.com/blog/major-startup-failures-2024-824)
+- [:globe_with_meridians: Chip Huyen: Common pitfalls when building generative AI applications](https://huyenchip.com/2025/01/16/ai-engineering-pitfalls.html)
