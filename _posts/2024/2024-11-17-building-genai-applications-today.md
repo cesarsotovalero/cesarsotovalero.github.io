@@ -85,7 +85,6 @@ Below are three applications of GenAI today that I would like to see more of:
 1. **Personalized Financial Advisors:** Apps that analyze spending habits, investment opportunities, and financial health using AI are gold. These tools cater to the rising demand for financial literacy and can scale personalized advice to millions (i.e., tangible ROI for users). For example, [Wealthfront](https://www.wealthfront.com/)’s AI-driven financial planning features are transforming personal finance management.
 
 2. **Content Creation Tools:** GenAI is a boon for creators. Platforms that assist with scriptwriting, graphic design, or even video editing are gaining more and more traction because they save time, amplify human creativity, and have clear market demand. For example, [Adobe’s Firefly](https://www.adobe.com/products/firefly.html) enhances creativity by automating repetitive tasks.
-- Why it works: It 
 
 3. **AI in Healthcare:** There’s a growing emphasis on preventive health solutions that are scalable and cost-effective. Tools like AI-powered symptom checkers or personalized fitness coaches empower users to manage their health better. For example, [MyFitnessPal](https://www.myfitnesspal.com/) leverages AI for smarter diet recommendations.
 
