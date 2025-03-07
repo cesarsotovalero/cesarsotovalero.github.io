@@ -18,13 +18,13 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 <!-- ![Custom badge](https://img.shields.io/badge/-WORK-blueviolet.svg) -->
 # TL;DR
 
-I'm César, a [computer scientist](./publications.html), [software engineer](./software.html), and [content creator](./blog).
+I'm César, a [computer scientist](./publications.html), [software engineer](./software.html), and [creator of things](./blog).
 
 I'm passionate about science, technology, and education. 
 
 Here is my [résumé](../files/CV/cv.pdf).
 
-[Here](https://chatgpt.com/share/6732edfc-2374-8007-98e4-091b4f0ccff9) is what ChatGPT thinks about me.
+[Here](https://chatgpt.com/share/6732edfc-2374-8007-98e4-091b4f0ccff9) is the one thing ChatGPT 4o thinks about myself that I don't know about myself (in September 2024).
 
 For recruiters, [here](./my-professional-values.html) are my professional values.
 
@@ -65,7 +65,7 @@ A long time ago, I participated in [programming competitions](/competitions.html
 
 Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and running across Stockholm's beautiful parks.[^3]
 
-I also like epic music, e.g., [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), [Zack Hemsey](https://www.youtube.com/user/zackhemsey) or [Enya](https://www.youtube.com/watch?v=7jfRG-fgvQ8).
+I also like epic music, e.g., [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), [Zack Hemsey](https://www.youtube.com/user/zackhemsey) or [Enya](https://www.youtube.com/watch?v=7jfRG-fgvQ8) and embrace [autodidacticism](https://en.wikipedia.org/wiki/Autodidacticism).
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
