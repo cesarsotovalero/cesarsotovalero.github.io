@@ -28,7 +28,7 @@ Here is my [résumé](../files/CV/cv.pdf).
 
 For recruiters, [here](./my-professional-values.html) are my professional values.
 
-**Update:** Since January 2025, I'm a Data Scientist at [SEB](https://seb.se/) in Stockholm <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
+**Update:** Since December 2024, I'm a Data Scientist at [SEB](https://seb.se/) in Stockholm <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
 
 # Career
 
@@ -63,7 +63,9 @@ A long time ago, I participated in [programming competitions](/competitions.html
 
 # Misc
 
-Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and running across the Stockholm's beautiful parks.[^3]
+Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and running across Stockholm's beautiful parks.[^3]
+
+I also like epic music, e.g., [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), [Zack Hemsey](https://www.youtube.com/user/zackhemsey) or [Enya](https://www.youtube.com/watch?v=7jfRG-fgvQ8).
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
