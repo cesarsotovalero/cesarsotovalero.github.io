@@ -20,9 +20,9 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 I'm César, a [computer scientist](./publications.html), [software engineer](./software.html), and [creator of things](./blog).
 
-I'm passionate about science, technology, and education. 
+I'm passionate about research, software, and education. 
 
-Here is my [résumé](../files/CV/resume-cesar-2025.pdf).
+Here is my one-page [résumé](../files/CV/resume-cesar-2025.pdf).
 
 [Here](https://chatgpt.com/share/6732edfc-2374-8007-98e4-091b4f0ccff9) is the one thing ChatGPT 4o thinks about myself that I don't know about myself (in September 2024).
 
@@ -32,6 +32,8 @@ For recruiters, [here](./my-professional-values.html) are my professional values
 
 # Career
 
+{% youtube Ub684G_aM5Q %}
+
 I'd a PhD in Computer Science at [KTH Royal Institute of Technology](https://kth.se).
 My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/).
 I graduated in 2023.[^4]
@@ -39,21 +41,6 @@ I graduated in 2023.[^4]
 **Cool Fact:** {%include university_ranking.html%}
 
 My PhD was about software debloating,[^1] here's my [thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf), and you can watch my [public defense](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw).
-
-{% youtube Ub684G_aM5Q %}
-
-I enjoy doing knowledge-seeking software engineering research.
-For example, to extract useful information from software repositories.[^2] 
-Particularly, I'm interested in measuring the impact and pervasiveness of software bloat across large-scale software ecosystems.
-
-I'm keen to perform research on software technology which:
-
-1. Provide **actionable insights** to researchers and practitioners about how modern software is currently being developed and maintained.
-2. Produce **practical tools** for developers to improve software quality.
-3. Disrupt the _status quo_ of software engineering **latest practices**.
-
-I'm open to collaborate with researchers and give advice to students in these areas.
-If you are interested in working with me, please have a look at my list of [research topics](./collaborations.html) and email me using the form below.
 
 {% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
 
@@ -65,7 +52,9 @@ A long time ago, I participated in [programming competitions](/competitions.html
 
 Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and running across Stockholm's beautiful parks.[^3]
 
-I also like epic music, e.g., [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), [Zack Hemsey](https://www.youtube.com/user/zackhemsey) or [Enya](https://www.youtube.com/watch?v=7jfRG-fgvQ8) and embrace [autodidacticism](https://en.wikipedia.org/wiki/Autodidacticism).
+I like epic music, e.g., [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), [Zack Hemsey](https://www.youtube.com/user/zackhemsey) or [Enya](https://www.youtube.com/watch?v=7jfRG-fgvQ8). 
+
+I also embrace [autodidacticism](https://en.wikipedia.org/wiki/Autodidacticism).
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
@@ -206,8 +195,6 @@ form.wj-contact input[type="submit"]:active {
 # Footnotes
 
 [^1]: For more on these topics, see my living review of [software debloating papers](./software-debloating-papers.html), or consult my list of [software debloating tools](./software-debloating-tools.html).
-
-[^2]: See my list of [mining software repositories resources](./mining-software-repositories-resources.html).
 
 [^3]: I collect the results of my races in Stockholm [here](/races.html).
 
