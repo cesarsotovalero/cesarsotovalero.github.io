@@ -22,7 +22,7 @@ I'm César, a [computer scientist](./publications.html), [software engineer](./s
 
 I'm passionate about science, technology, and education. 
 
-Here is my [résumé](../files/CV/cv.pdf).
+Here is my [résumé](../files/CV/resume-cesar-2025.pdf).
 
 [Here](https://chatgpt.com/share/6732edfc-2374-8007-98e4-091b4f0ccff9) is what ChatGPT thinks about me.
 
