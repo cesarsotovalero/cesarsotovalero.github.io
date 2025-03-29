@@ -7,10 +7,6 @@ description: List of research topics of interest to César Soto Valero.
 published: true
 ---
 
-Absolutely! Here's a more polished and engaging revision of your text. I've preserved your tone—curious, ambitious, and open to collaboration—while improving flow, precision, and impact:
-
----
-
 I’m passionate about **knowledge-driven research in software engineering**, especially when it involves mining software repositories to extract meaningful, actionable insights.[^1]
 
 My current research interest revolves around quantifying the **impact and pervasiveness of software bloat** across large-scale software ecosystems. 

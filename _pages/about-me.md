@@ -1,7 +1,7 @@
 ---
 permalink: about-me.html
 layout: page
-title: About me
+title: About Me
 subtitle: 👨🏼‍💻
 description: César Soto Valero is a computer scientist, software engineer, and content creator.
 ---
@@ -26,33 +26,41 @@ Here is my one-page [résumé](../files/CV/resume-cesar-2025.pdf).
 
 For recruiters, [here](./my-professional-values.html) are my professional values.
 
-**Current Job:** Data Scientist, in [SEB](https://seb.se/) since April 2023 <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
+**Current Position:** Data Scientist, working in [SEB](https://seb.se/) since April 2023 <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
+
+# Research
+
+I've contributed multiple [research papers](./publications.html) and taken part in [academic services](./service.html).
+
+My research efforts have been recognized through [several awards](./awards.html).
+
+# Software
+
+I've created a few popular [software projects](./software.html) and contributed to open-source.
 
 # Education
 
 {% youtube Ub684G_aM5Q %}
 
-I hold a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se).
-My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/).
+I hold a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se), supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/). 
 I graduated in 2023.[^4]
 
-My PhD was about software debloating,[^1] here's my [thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
+My PhD was about software debloating,[^1] here's my [PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
 
 **Cool Fact:** {%include university_ranking.html%}
 
-{% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
-
 I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
+
+Here's a list of my [completed courses](./courses.html).
 
 A long time ago, I participated in [ICPC programming contests](/competitions.html). 
 
 # Misc
 
-Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and running across Stockholm's beautiful parks.[^3]
+Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and [running](/races.html).
 
-I like epic music, e.g., [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), [Zack Hemsey](https://www.youtube.com/user/zackhemsey) or [Enya](https://www.youtube.com/watch?v=7jfRG-fgvQ8). 
-
-I also embrace [autodidacticism](https://en.wikipedia.org/wiki/Autodidacticism).
+I like epic music. 
+My favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), [Zack Hemsey](https://www.youtube.com/user/zackhemsey) and [Enya](https://www.youtube.com/watch?v=7jfRG-fgvQ8). 
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
@@ -184,6 +192,9 @@ form.wj-contact input[type="submit"]:active {
    });
 </script>
 
+<br>
+
+**Note:** If you are a MSc student or researcher, I'm always [open to collaborations](./collaborations.html). 
 
 <p class="post-meta" style="margin-top: 60px;">
    <i class="fas fa-user-edit"></i>
@@ -193,7 +204,5 @@ form.wj-contact input[type="submit"]:active {
 # Footnotes
 
 [^1]: For more on these topics, see my living review of [software debloating papers](./software-debloating-papers.html), or consult my list of [software debloating tools](./software-debloating-tools.html).
-
-[^3]: I collect the results of my races in Stockholm [here](/races.html).
 
 [^4]: My PhD was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.

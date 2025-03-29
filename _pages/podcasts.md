@@ -1,7 +1,7 @@
 ---
-permalink: podcast.html
+permalink: podcasts.html
 layout: page
-title: Podcast
+title: Podcasts
 subtitle: "🎙 &#119070;&#119083;&#119042;"
 description: List of podcasts where César Soto Valero has participated.
 published: true

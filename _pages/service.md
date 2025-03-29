@@ -9,7 +9,7 @@ published: true
 
 # Peer Reviews
 
-I've reviewed papers for the following journals and conferences:
+I've peer-reviewed papers for the following journals and conferences:
 
 <aside class="quote">
     <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Check my verified peer reviews in the Web of Science</a></em> 

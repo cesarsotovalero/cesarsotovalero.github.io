@@ -7,13 +7,10 @@ logo: https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024.jpg
 
 navbar-links:
   Blog: "blog"
-  Software: "software"
-  Service: "service"
-  Papers: "publications"
-  Awards: "awards"
-  Courses: "courses"
+  LinkedIn: "linkedin"
+  YouTube: "youtube"
+  Podcasts: "podcasts"
   Talks: "talks"
-  Podcast: "podcast"
   About: "about-me"
 
 # Image to show in the navigation bar - image must be a square (width = height)
