@@ -7,9 +7,25 @@ description: List of research topics of interest to César Soto Valero.
 published: true
 ---
 
-I am continuously looking for highly motivated master or bachelor students at KTH. Potential thesis topics are related to my research in the areas of debloating and software diversity, in particular with a focus on code analysis and transformations. 
+Absolutely! Here's a more polished and engaging revision of your text. I've preserved your tone—curious, ambitious, and open to collaboration—while improving flow, precision, and impact:
 
-The following is a list of research topics that I’m particularly interested in doing further investigation. Any kind of external collaboration is also welcome.
+---
+
+I’m passionate about **knowledge-driven research in software engineering**, especially when it involves mining software repositories to extract meaningful, actionable insights.[^1]
+
+My current research interest revolves around quantifying the **impact and pervasiveness of software bloat** across large-scale software ecosystems. 
+Think of it as digital archaeology: uncovering inefficiencies buried deep within layers of modern codebases.
+
+I’m particularly eager to pursue research that:
+
+1. Delivers **actionable insights** to both researchers and practitioners on how modern software is built and maintained.
+2. Produces **practical tools** that help developers enhance software quality and reduce complexity.
+3. Challenges the conventional **"best practices"** of software engineering and rethinks them from first principles.
+
+I'm open to **collaborating with researchers**, mentoring students, or offering guidance on projects in these domains.  
+Whether you’re exploring similar questions or just curious about my work, feel free to **get in touch via email** using [this form](../about-me#contact-me).
+
+Below is a list of research topics I'm especially excited to explore further.
 
 # List of Topics
 
@@ -340,4 +356,6 @@ This is a fundamental outcome to validate the relevance of our approach.
 
 
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+
+[^1]: See my list of [mining software repositories resources](./mining-software-repositories-resources.html).
 
