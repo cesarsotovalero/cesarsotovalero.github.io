@@ -20,7 +20,7 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 I'm César, a [computer scientist](./publications.html), [software engineer](./software.html), and [creator of things](./blog).
 
-I'm passionate about research, software, and education. 
+I'm passionate about software, research, and education. 
 
 Here is my one-page [résumé](../files/CV/resume-cesar-2025.pdf).
 
@@ -40,13 +40,13 @@ I graduated in 2023.[^4]
 
 **Cool Fact:** {%include university_ranking.html%}
 
-My PhD was about software debloating,[^1] here's my [thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf), and you can watch my [public defense](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw).
+My PhD was about software debloating,[^1] here's my [thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
 
 {% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
 
 I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
 
-A long time ago, I participated in [programming competitions](/competitions.html). 
+A long time ago, I participated in [ICPC programming contests](/competitions.html). 
 
 # Misc
 
