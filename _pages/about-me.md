@@ -24,13 +24,11 @@ I'm passionate about software, research, and education.
 
 Here is my one-page [résumé](../files/CV/resume-cesar-2025.pdf).
 
-[Here](https://chatgpt.com/share/6732edfc-2374-8007-98e4-091b4f0ccff9) is the one thing ChatGPT 4o thinks about myself that I don't know about myself (in September 2024).
-
 For recruiters, [here](./my-professional-values.html) are my professional values.
 
 **Current Job:** Data Scientist, in [SEB](https://seb.se/) since April 2023 <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
 
-# Career
+# Education
 
 {% youtube Ub684G_aM5Q %}
 
@@ -58,7 +56,7 @@ I also embrace [autodidacticism](https://en.wikipedia.org/wiki/Autodidacticism).
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
-#  Contact
+#  Contact Me
 
 <!-- 
      After implementing this contact form make sure
