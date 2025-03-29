@@ -34,13 +34,13 @@ For recruiters, [here](./my-professional-values.html) are my professional values
 
 {% youtube Ub684G_aM5Q %}
 
-I'd a PhD in Computer Science at [KTH Royal Institute of Technology](https://kth.se).
+I hold a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se).
 My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/).
 I graduated in 2023.[^4]
 
-**Cool Fact:** {%include university_ranking.html%}
-
 My PhD was about software debloating,[^1] here's my [thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
+
+**Cool Fact:** {%include university_ranking.html%}
 
 {% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
 
@@ -198,4 +198,4 @@ form.wj-contact input[type="submit"]:active {
 
 [^3]: I collect the results of my races in Stockholm [here](/races.html).
 
-[^4]: My research work was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.
+[^4]: My PhD was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.
