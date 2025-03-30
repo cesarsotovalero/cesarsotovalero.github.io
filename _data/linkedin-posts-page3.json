@@ -1,0 +1,781 @@
+{
+   "success": true,
+   "message": "",
+   "data": [
+      {
+         "isBrandPartnership": false,
+         "text": "In a previous blog post, I discussed JIT, AOT, GraalVM, and the future of the Java language. I mentioned that dynamic features are a significant challenge for the generation of native code with GraalVM. \n\nIn this blog post, I cover the main dynamic features of Java and the reasons why they are still a long-standing challenge for researchers and practitioners in program analysis.\n\n#java #language #softwaredeveloper",
+         "totalReactionCount": 1,
+         "likeCount": 1,
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6963760695280590848/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_the-dynamic-features-of-java-activity-6963760695280590848-x0Fm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "2yr",
+         "postedDate": "2022-08-12 07:38:50.172 +0000 UTC",
+         "postedDateTimestamp": 1660289930172,
+         "urn": "6963760695280590848",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "title": "The Dynamic Features of Java",
+            "subtitle": "cesarsotovalero.net",
+            "link": "https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html",
+            "newsletter": {}
+         },
+         "entity": {}
+      },
+      {
+         "isBrandPartnership": false,
+         "text": "Yesterday I was awarded a prize in the poster festival at the EECS Summer Event 2022. It was a very happy moment in my career. The encouragement and recognition from my dear colleagues at KTH really feel amazing. Thanks a lot to my supervisors Thomas Durieux, Martin Monperrus, and Benoit Baudry, for guiding me through these years. This achievement is also yours!",
+         "totalReactionCount": 99,
+         "likeCount": 72,
+         "appreciationCount": 2,
+         "empathyCount": 2,
+         "praiseCount": 23,
+         "commentsCount": 3,
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6940547749272535040/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_yesterday-i-was-awarded-a-prize-in-the-poster-activity-6940547749272535040-VtNN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "2yr",
+         "postedDate": "2022-06-09 06:18:52.568 +0000 UTC",
+         "postedDateTimestamp": 1654755532568,
+         "urn": "6940547749272535040",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "image": [
+            {
+               "url": "https://media.licdn.com/dms/image/v2/C4E22AQHLTOa0A-RqhA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1654755531174?e=1746057600&v=beta&t=yE8H-39MseVTEEv5naRtSL07lGib-tzIRyXHpXTBbNM",
+               "width": 1182,
+               "height": 1536
+            },
+            {
+               "url": "https://media.licdn.com/dms/image/v2/C4E22AQHLTOa0A-RqhA/feedshare-shrink_20/feedshare-shrink_20/0/1654755531187?e=1746057600&v=beta&t=Ppbe7QkjoCdUdB7Q8yT7EHvGEXde-MAgl7vnt-R-Ofk",
+               "width": 20,
+               "height": 25
+            },
+            {
+               "url": "https://media.licdn.com/dms/image/v2/C4E22AQHLTOa0A-RqhA/feedshare-shrink_1280/feedshare-shrink_1280/0/1654755531187?e=1746057600&v=beta&t=Pd7PxLmV18VayYEhQXEdGonPwEzBak4nNd8QMJdYyHs",
+               "width": 1280,
+               "height": 1663
+            },
+            {
+               "url": "https://media.licdn.com/dms/image/v2/C4E22AQHLTOa0A-RqhA/feedshare-shrink_480/feedshare-shrink_480/0/1654755531187?e=1746057600&v=beta&t=kPLCCRpgzDilKmnAEv_Z_SdR67voJ8CG3miyU9zQbaQ",
+               "width": 480,
+               "height": 623
+            },
+            {
+               "url": "https://media.licdn.com/dms/image/v2/C4E22AQHLTOa0A-RqhA/feedshare-shrink_160/feedshare-shrink_160/0/1654755531187?e=1746057600&v=beta&t=zripuvK_5o9RJz3D22U7JrseHsK8sdNBxpu2gchNjpA",
+               "width": 160,
+               "height": 207
+            },
+            {
+               "url": "https://media.licdn.com/dms/image/v2/C4E22AQHLTOa0A-RqhA/feedshare-shrink_800/feedshare-shrink_800/0/1654755531187?e=1746057600&v=beta&t=iHgxorvRT8lgOOsMBDrmX8JVxHPqDs2iROl7k44TUUI",
+               "width": 800,
+               "height": 1039
+            }
+         ],
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "newsletter": {}
+         },
+         "entity": {},
+         "mentions": [
+            {
+               "firstName": "Thomas",
+               "lastName": "Durieux",
+               "urn": "ACoAAAWnXZYBAf5xh5D1UaoGJkaAyavyoP15dZ8",
+               "publicIdentifier": "thomasdurieux"
+            },
+            {
+               "firstName": "Martin",
+               "lastName": "Monperrus",
+               "urn": "ACoAABYdJgEB1tv-wxhPYcQWI9BQqWslFzKmaI4",
+               "publicIdentifier": "martin-monperrus-369300a4"
+            },
+            {
+               "firstName": "Benoit",
+               "lastName": "Baudry",
+               "urn": "ACoAAAFxhdQBMq7EVzk9MylfU-BaeoprTQi0nSI",
+               "publicIdentifier": "benoit-baudry"
+            }
+         ]
+      },
+      {
+         "isBrandPartnership": false,
+         "text": "AOT compilation, supported by the GraalVM compiler, seems to be the future for Java and the programming languages that compile to JVM bytecode. But what is the difference between compiling source code using a JIT compiler w.r.t using an AOT compiler? This post explains the difference between these two approaches.\n\n#java #future",
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6936955214226739200/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_aot-vs-jit-compilation-in-java-activity-6936955214226739200-y684?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "2yr",
+         "postedDate": "2022-05-30 08:23:25.467 +0000 UTC",
+         "postedDateTimestamp": 1653899005467,
+         "urn": "6936955214226739200",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "title": "AOT vs. JIT Compilation in Java",
+            "subtitle": "cesarsotovalero.net",
+            "link": "https://www.cesarsotovalero.net/blog/aot-vs-jit-compilation-in-java.html",
+            "newsletter": {}
+         },
+         "entity": {}
+      },
+      {
+         "isBrandPartnership": false,
+         "text": "My conference paper was rejected. Is it worth writing a rebuttal? This post answers this question and presents practical guidelines for writing an excellent rebuttal.\n\n #writing #academia #researchpaper",
+         "totalReactionCount": 3,
+         "likeCount": 2,
+         "appreciationCount": 1,
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6904820642789883904/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_how-to-write-a-good-paper-rebuttal-activity-6904820642789883904-2vRD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "3yr",
+         "postedDate": "2022-03-02 16:12:06.605 +0000 UTC",
+         "postedDateTimestamp": 1646237526605,
+         "urn": "6904820642789883904",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "title": "How to Write a Good Paper Rebuttal",
+            "subtitle": "cesarsotovalero.net",
+            "link": "https://www.cesarsotovalero.net/blog/how-to-write-a-good-paper-rebuttal.html",
+            "newsletter": {}
+         },
+         "entity": {}
+      },
+      {
+         "isBrandPartnership": false,
+         "text": "Academic research is a demanding activity in constant change and evolution. Consequently, tracking the progress of a research project is challenging. This post describes my methodology to address this particular problem.  #researchprojects  #academia #research",
+         "totalReactionCount": 10,
+         "likeCount": 8,
+         "praiseCount": 2,
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6893466029767360512/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_how-to-track-the-progress-of-a-research-project-activity-6893466029767360512-Sru0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "3yr",
+         "postedDate": "2022-01-30 08:12:55.902 +0000 UTC",
+         "postedDateTimestamp": 1643530375902,
+         "urn": "6893466029767360512",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "title": "How to Track the Progress of a Research Project",
+            "subtitle": "cesarsotovalero.net",
+            "link": "https://www.cesarsotovalero.net/blog/how-do-i-track-the-progress-of-my-research-projects.html",
+            "newsletter": {}
+         },
+         "entity": {}
+      },
+      {
+         "resharedPost": {
+            "isBrandPartnership": false,
+            "text": "History repeats itself: fake.js, color.js, .... \n\nThese are principles of Immutable Infrastructure folks. Don't be surprised, prepare instead. \n\nRead \"Reliability, consistency and confidence through immutability\"\n\nhttps://lnkd.in/gaUfdBxb\n \n#fakejs #colorsjs #immutability #resilience #infrastructure",
+            "author": {
+               "firstName": "Adrian",
+               "lastName": "Hornsby",
+               "headline": "I help software organizations improve resilience and achieve operational excellence | Former Principal Engineer at AWS",
+               "username": "adhorn",
+               "url": "https://www.linkedin.com/in/adhorn",
+               "profilePictures": [
+                  {
+                     "width": 100,
+                     "height": 100,
+                     "url": "https://media.licdn.com/dms/image/v2/C4D03AQH0qLtLmoXWgw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1562304979565?e=1749081600&v=beta&t=3hX6ja0kvw8c2l5m8SyyU1iFgHOzniR0jtPassfWVtg"
+                  },
+                  {
+                     "width": 200,
+                     "height": 200,
+                     "url": "https://media.licdn.com/dms/image/v2/C4D03AQH0qLtLmoXWgw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1562304979567?e=1749081600&v=beta&t=HrQm18b5_nvBEFaxwZBSSR_aw7wRrRTiBIfXVgpAdOs"
+                  },
+                  {
+                     "width": 400,
+                     "height": 400,
+                     "url": "https://media.licdn.com/dms/image/v2/C4D03AQH0qLtLmoXWgw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1562304979758?e=1749081600&v=beta&t=9zSRuegP3hSRmxDoix7ot6UY_UNvmp9FRHUK1SxXNSU"
+                  },
+                  {
+                     "width": 500,
+                     "height": 500,
+                     "url": "https://media.licdn.com/dms/image/v2/C4D03AQH0qLtLmoXWgw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1562304979474?e=1749081600&v=beta&t=V88kJEJ9mjqubWV_iNfCk33h0n8gTHILKJC__bMhtAs"
+                  }
+               ]
+            },
+            "image": [
+               {
+                  "url": "https://media.licdn.com/dms/image/v2/C5622AQFxJbBsW148Hw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1641824286200?e=1746057600&v=beta&t=5av3Zm17GPdnK1t4X_Uz2BdCzWdzRgZuQPJGOLo9Ru0",
+                  "width": 708,
+                  "height": 780
+               },
+               {
+                  "url": "https://media.licdn.com/dms/image/v2/C5622AQFxJbBsW148Hw/feedshare-shrink_20/feedshare-shrink_20/0/1641824286194?e=1746057600&v=beta&t=ZfB-eniTHzbOsEDyqkON65S3HTdC4whrL1NnpZeFVaw",
+                  "width": 20,
+                  "height": 22
+               },
+               {
+                  "url": "https://media.licdn.com/dms/image/v2/C5622AQFxJbBsW148Hw/feedshare-shrink_1280/feedshare-shrink_1280/0/1641824286194?e=1746057600&v=beta&t=KEYOi4loif9Qb8roBbx8cymHWNAK22KkJCUnex87C-M",
+                  "width": 708,
+                  "height": 780
+               },
+               {
+                  "url": "https://media.licdn.com/dms/image/v2/C5622AQFxJbBsW148Hw/feedshare-shrink_480/feedshare-shrink_480/0/1641824286194?e=1746057600&v=beta&t=7aTAlx3FmllkGix03SD-CeKifWayAZKUBEoIY8tXeHA",
+                  "width": 480,
+                  "height": 528
+               },
+               {
+                  "url": "https://media.licdn.com/dms/image/v2/C5622AQFxJbBsW148Hw/feedshare-shrink_160/feedshare-shrink_160/0/1641824286194?e=1746057600&v=beta&t=uyW6cpc97rX45CtQXCDk3zdxxn6SzyiXTItX3UCnFJA",
+                  "width": 160,
+                  "height": 176
+               },
+               {
+                  "url": "https://media.licdn.com/dms/image/v2/C5622AQFxJbBsW148Hw/feedshare-shrink_800/feedshare-shrink_800/0/1641824286194?e=1746057600&v=beta&t=I0_YZlwwgMsyPXSw2K9u4ABOl4H7Ddh2URMXiCAhhWY",
+                  "width": 708,
+                  "height": 780
+               }
+            ],
+            "company": {},
+            "document": {},
+            "celebration": {},
+            "poll": {},
+            "article": {
+               "newsletter": {}
+            },
+            "entity": {}
+         },
+         "isBrandPartnership": false,
+         "text": "When fetching dependencies from external repositories... sometimes things may be wrong.",
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6886601653630365698/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_fakejs-colorsjs-immutability-activity-6886601653630365698-zbI_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "3yr",
+         "postedDate": "2022-01-11 09:36:21.097 +0000 UTC",
+         "postedDateTimestamp": 1641893781097,
+         "reposted": true,
+         "urn": "6886601653630365698",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "newsletter": {}
+         },
+         "entity": {}
+      },
+      {
+         "isBrandPartnership": false,
+         "text": "If you are a Java developer, you NEED to know about the Fork/Join framework. It simplifies parallel programming, hence helping you to forget about manually tweaking your threads.\n\n#java #developer #programming",
+         "totalReactionCount": 3,
+         "likeCount": 3,
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6815528493024100352/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_the-forkjoin-java-framework-activity-6815528493024100352-Pt9y?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "3yr",
+         "postedDate": "2021-06-29 06:36:59.133 +0000 UTC",
+         "postedDateTimestamp": 1624948619133,
+         "urn": "6815528493024100352",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "title": "The Fork/Join Java framework",
+            "subtitle": "cesarsotovalero.net",
+            "link": "https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html",
+            "newsletter": {}
+         },
+         "entity": {}
+      },
+      {
+         "isBrandPartnership": false,
+         "text": "If you are seriously considering doing a Ph.D. in Computer Science, this is the book for you!\n\n#computerscience #research #career",
+         "totalReactionCount": 4,
+         "likeCount": 4,
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6814854346698739712/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_book-review-the-phd-grind-activity-6814854346698739712-1RH8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "3yr",
+         "postedDate": "2021-06-27 09:58:10.124 +0000 UTC",
+         "postedDateTimestamp": 1624787890124,
+         "urn": "6814854346698739712",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "title": "Book review - The Ph.D. Grind",
+            "subtitle": "cesarsotovalero.net",
+            "link": "https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html",
+            "newsletter": {}
+         },
+         "entity": {}
+      },
+      {
+         "isBrandPartnership": false,
+         "text": "If you care about the typographical quality of what you write. LaTeX is THE markup language you should use for the job. Knowing some tricks will make your life easier.\n\n#writing #education #research",
+         "totalReactionCount": 3,
+         "likeCount": 2,
+         "InterestCount": 1,
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6814429552933163008/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_use-custom-latex-macros-to-boost-your-writing-activity-6814429552933163008-9m7E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "3yr",
+         "postedDate": "2021-06-26 05:50:11.398 +0000 UTC",
+         "postedDateTimestamp": 1624686611398,
+         "urn": "6814429552933163008",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "title": "Use custom LaTeX macros to boost your writing productivity",
+            "subtitle": "cesarsotovalero.net",
+            "link": "https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html",
+            "newsletter": {}
+         },
+         "entity": {}
+      },
+      {
+         "isBrandPartnership": false,
+         "text": "Asciinema is an excellent tool for recording and sharing terminal sessions. However, markdown does not support rendering asciinema recordings. Therefore, you will need to transform your asciinema recording into something that markdown can handle, such as .gif files. This post will show you step-by-step how to use asciinema to generate beautiful terminal recordings to enhance README files.\n\n#asciinema #markdown #readme",
+         "totalReactionCount": 2,
+         "likeCount": 1,
+         "praiseCount": 1,
+         "commentsCount": 3,
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6785531135825911808/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_enhance-your-readme-with-asciinema-activity-6785531135825911808-Nyys?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "3yr",
+         "postedDate": "2021-04-07 11:58:11.853 +0000 UTC",
+         "postedDateTimestamp": 1617796691853,
+         "urn": "6785531135825911808",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "title": "Enhance your README with asciinema",
+            "subtitle": "cesarsotovalero.net",
+            "link": "https://www.cesarsotovalero.net/2021-04-05-enhance-your-readme-with-asciinema/",
+            "newsletter": {}
+         },
+         "entity": {}
+      },
+      {
+         "isBrandPartnership": false,
+         "text": "Nobody can deny that teaching is hard. In this 15 min video, I teach how the Quicksort algorithm works the old way: with a blackboard and chalk. As you can see, I committed many mistakes. Considering that I spent 2h of preparation for this, my performance was not as good as expected. What else could have been worse?",
+         "totalReactionCount": 3,
+         "likeCount": 3,
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6729170536863211520/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_the-practice-of-teaching-activity-6729170536863211520-smxW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "4yr",
+         "postedDate": "2020-11-02 23:21:17.931 +0000 UTC",
+         "postedDateTimestamp": 1604359277931,
+         "urn": "6729170536863211520",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "title": "The practice of teaching",
+            "subtitle": "cesarsotovalero.net",
+            "link": "https://www.cesarsotovalero.net/2019-02-14-the-practice-of-teaching/",
+            "newsletter": {}
+         },
+         "entity": {}
+      },
+      {
+         "isBrandPartnership": false,
+         "text": "You are a very talented researcher. Perhaps you come from a favored field, e.g., from the popular machine learning (ML) research community. But now, you have decided to expand your horizons and solve software engineering (SE) problems. Hence, for the next years, you will be working as an empirical SE researcher. “This job is going to be a piece of cake”, you may think and even dare to say. Well… not really. Let me tell you why.",
+         "totalReactionCount": 3,
+         "likeCount": 2,
+         "praiseCount": 1,
+         "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:6725033826902450176/",
+         "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_empirical-software-engineering-research-is-activity-6725033826902450176-CNyA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFfIdqoBVNlozBNrVArbovfdb_8jT9csDG8",
+         "postedAt": "4yr",
+         "postedDate": "2020-10-22 13:23:29.42 +0000 UTC",
+         "postedDateTimestamp": 1603373009420,
+         "urn": "6725033826902450176",
+         "author": {
+            "id": 512443526,
+            "firstName": "César",
+            "lastName": "Soto Valero",
+            "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+            "username": "cesarsotovalero",
+            "url": "https://www.linkedin.com/in/cesarsotovalero",
+            "profilePictures": [
+               {
+                  "width": 200,
+                  "height": 200,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749081600&v=beta&t=Oma0ALAcWk0HyNVGU8ebONB-idpGYjyPnxaSq-DG4QY"
+               },
+               {
+                  "width": 400,
+                  "height": 400,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749081600&v=beta&t=OUzYsRVIunNxPVCC1AiQl6JKDIHyk8TRWOY9yizsq_M"
+               },
+               {
+                  "width": 800,
+                  "height": 800,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749081600&v=beta&t=ktSEAj3ULr8Ul6dpiqmmlcXuUzSjbVRhIAXXqF1_gFg"
+               },
+               {
+                  "width": 100,
+                  "height": 100,
+                  "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749081600&v=beta&t=2wrpGdOxunOiUe1FNLSHmo3ZRXkNwKUAMrZJqjfUc_c"
+               }
+            ],
+            "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+         },
+         "company": {},
+         "document": {},
+         "celebration": {},
+         "poll": {},
+         "article": {
+            "title": "Empirical software engineering research is harder than you think",
+            "subtitle": "cesarsotovalero.net",
+            "link": "https://www.cesarsotovalero.net/2020-10-15-empirical-software-engineering-research-is-harder-than-you-think/",
+            "newsletter": {}
+         },
+         "entity": {}
+      }
+   ],
+   "paginationToken": "dXJuOmxpOmFjdGl2aXR5OjY0NzI5Mjc2NjAzMzM4ODc0ODgtMTU0MzI2NjIxNTI4NQ=="
+}

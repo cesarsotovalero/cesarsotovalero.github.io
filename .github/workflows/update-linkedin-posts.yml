@@ -1,0 +1,56 @@
+name: Update LinkedIn Posts
+
+on:
+  schedule:
+    # Runs every day at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-linkedin-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Fetch LinkedIn posts
+        env:
+          RAPIDAPI_LINKEDIN_DATA_API_KEY: ${{ secrets.RAPIDAPI_LINKEDIN_DATA_API_KEY }}
+        run: |
+          # Generate URL-encoded date string for today's UTC date at 00:00
+          encodedDate=$(date -u +'%Y-%m-%d 00:00' | sed 's/ /%20/g;s/:/%3A/g')
+          echo "Fetching posts for date: $encodedDate"
+          curl --request GET \
+            --url "https://linkedin-data-api.p.rapidapi.com/get-profile-posts?username=cesarsotovalero&postedAt=${encodedDate}" \
+            --header "x-rapidapi-host: linkedin-data-api.p.rapidapi.com" \
+            --header "x-rapidapi-key: $RAPIDAPI_LINKEDIN_DATA_API_KEY" \
+            -o linkedin-posts.json
+
+      - name: Merge new posts with existing JSON
+        run: |
+          # If the JSON file already exists, merge new data with the existing entries.
+          if [ -f _data/linkedin-posts.json ]; then
+            jq -s '{
+              success: true,
+              message: "",
+              data: (.[1].data + .[0].data | unique_by(.urn))
+            }' _data/linkedin-posts.json linkedin-posts.json > merged.json
+          else
+            cp linkedin-posts.json merged.json
+          fi
+          mv merged.json _data/linkedin-posts.json
+
+      - name: Commit and push changes if any
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add _data/linkedin-posts.json
+            git commit -m "Update LinkedIn posts $(date -u +'%Y-%m-%d')"
+            git push
+          else
+            echo "No changes to commit"
+          fi
