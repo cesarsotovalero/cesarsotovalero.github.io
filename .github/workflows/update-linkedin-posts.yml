@@ -43,6 +43,7 @@ jobs:
           fi
           mv merged.json _data/linkedin-posts.json
 
+
       - name: Commit and push changes if any
         run: |
           git config --local user.email "action@github.com"
