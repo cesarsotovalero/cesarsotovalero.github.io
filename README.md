@@ -1,8 +1,6 @@
 # cesarsotovalero.net
 
 [![jekyll](https://github.com/cesarsotovalero/cesarsotovalero.github.io/actions/workflows/workflow.yml/badge.svg)](https://github.com/cesarsotovalero/cesarsotovalero.github.io/actions/workflows/pages/pages-build-deployment)
-[![My YouTube](https://img.shields.io/badge/YouTube-subscribe-active?logo=youtube)](https://www.youtube.com/@cesarsotovalero)
-[![My Twitter](https://img.shields.io/badge/Twitter-follow-active?logo=twitter)](https://twitter.com/intent/follow?screen_name=cesarsotovalero)
 
 This is the source code of [cesarsotovalero.net](https://www.cesarsotovalero.net), my personal website and blog.
 The repo contains a mess of HTML templates, Jekyll templates, blog posts and images, so it's been released under a dual license.
