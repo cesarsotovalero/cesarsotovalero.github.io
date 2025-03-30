@@ -53,7 +53,7 @@ I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and
 
 Here's a list of my [completed courses](./courses.html).
 
-A long time ago, I participated in [ICPC programming contests](/competitions.html). 
+A long time ago, I participated in [ACM-ICPC programming contests](/competitions.html). 
 
 # Misc
 
