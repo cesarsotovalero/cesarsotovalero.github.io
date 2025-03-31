@@ -1,0 +1,64 @@
+{
+   "customerId": "CUST-XXXXXXXXXXXX",
+   "data": {
+      "custNumberOfTxs": 2,
+      "custRecipientSet1YW": [
+         "XXXXXXXXXXX",
+         "XXXXXXXXXXX"
+      ],
+      "recipientCountrySet": [
+         "SE"
+      ],
+      "custAmtAvgSepa1YW": 0.00,
+      "custAmtStdDevSepa1YW": 0.00,
+      "lastTxsDateTime": "XXXX-XX-XXTXX:XX:XX.XXXZ",
+      "custAmtMedian": 295.00,
+      "numOfDays": 2,
+      "custTimeStdDev1YW": 65032.610665726774,
+      "custTxsCntPerDay": 1,
+      "custAmtAvgTPPP60DW": 0.00,
+      "custTxCntRiskyRecipient60DW": 0.00,
+      "custAmtAvgIBF60DW": 0.00,
+      "custTxCntXb90DW": 0,
+      "custTxCntSepa90DW": 0,
+      "custTxCntTransfer90DW": 0,
+      "custAmtRatioTransfer90DW": 0.0000,
+      "pmtChannelData": [
+         {
+            "paymentType": "transfer",
+            "txInitiationChannel": "IBF",
+            "custPmtChannelTxCnt1YW": 2,
+            "custPmtChannelAmtSum1YW": 640.00
+         }
+      ]
+   },
+   "jobId": "fp-calibrate-batchFeatures-seb.payment.se.transepaxb-classification_transepaxb_CUST_5.0.0-1735272153348",
+   "version": "5.0.0",
+   "timeZone": "UTC",
+   "timestamp": "XXXX-XX-XXTXX:XX:XX.XXXZ",
+   "modelType": "CLASSIFICATION_TRANSEPAXB_CUST",
+   "paymentType": "seb.payment.se.transepaxb"
+}
+
+
+
+{
+   "debitAccountId": "ACC-XXXXXXXXXXX",
+   "data": {
+      "accRecipientSet1YW": [
+         "XXXXXXXXXXX"
+      ],
+      "accPmtTypeSet1YW": [
+         "transfer"
+      ],
+      "accFirstTxDateTime": "XXXX-XX-XXTXX:XX:XX.XXXZ",
+      "accAmtAvgUSD1YW": 0.00,
+      "accAmtAvgOTH1YW": 0.00
+   },
+   "jobId": "fp-calibrate-batchFeatures-seb.payment.se.transepaxb-classification_transepaxb_ACC_5.0.0-1735272141278",
+   "version": "5.0.0",
+   "timeZone": "UTC",
+   "timestamp": "XXXX-XX-XXTXX:XX:XX.XXXZ",
+   "modelType": "CLASSIFICATION_TRANSEPAXB_ACC",
+   "paymentType": "seb.payment.se.transepaxb"
+}
