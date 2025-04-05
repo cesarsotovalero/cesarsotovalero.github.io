@@ -15,7 +15,6 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 [//]: # ( <span class="type" style="text-align: center"></span>)
 
 
-<!-- ![Custom badge](https://img.shields.io/badge/-WORK-blueviolet.svg) -->
 # TL;DR
 
 I'm César, a [computer scientist](./publications.html), [software engineer](./software.html), and [creator of things](./blog).
@@ -51,7 +50,7 @@ My PhD was about software debloating,[^1] here's my [PhD thesis](https://www.ces
 
 I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
 
-Here's a list of my [completed courses](./courses.html).
+Here's a list of my [completed courses](./courses.html) (and MOOCs).
 
 A long time ago, I participated in [ACM-ICPC programming contests](/competitions.html). 
 
