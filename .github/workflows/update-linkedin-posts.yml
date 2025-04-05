@@ -37,12 +37,12 @@ jobs:
             jq -s '{
               success: true,
               message: "",
-              data: (.[1].data + .[0].data | unique_by(.urn))
-            }' _data/linkedin-posts.json linkedin-posts.json > merged.json
+              data: (.[0].data + .[1].data | sort_by(.postedDateTimestamp) | reverse)
+            }' linkedin-posts.json _data/linkedin-posts.json > merged.json
             newCount=$(jq '.data | length' merged.json)
             echo "Number of new entries added: $((newCount - originalCount))"
           else
-            cp linkedin-posts.json merged.json
+            jq '.data |= sort_by(.postedDateTimestamp) | .data |= reverse' linkedin-posts.json > merged.json
             newCount=$(jq '.data | length' merged.json)
             echo "Number of new entries added: $newCount"
           fi
