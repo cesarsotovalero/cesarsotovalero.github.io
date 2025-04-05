@@ -19,6 +19,7 @@ jobs:
           # Define the files or directories to include
           sparse-checkout-config: |
             _data/youtube-videos.json
+            scripts/fetch_all_youtube_videos.py            
 
       - name: Set up Python
         uses: actions/setup-python@v4
