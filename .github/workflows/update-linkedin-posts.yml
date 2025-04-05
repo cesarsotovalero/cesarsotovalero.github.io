@@ -43,13 +43,12 @@ jobs:
           fi
           mv merged.json _data/linkedin-posts.json
 
-
       - name: Commit and push changes if any
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git add _data/linkedin-posts.json linkedin-posts.json # Ensure both files are tracked
           if [ -n "$(git status --porcelain)" ]; then
-            git add _data/linkedin-posts.json
             git commit -m "Update LinkedIn posts $(date -u +'%Y-%m-%d')"
             git push
           else
