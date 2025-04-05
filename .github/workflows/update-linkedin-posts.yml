@@ -20,9 +20,9 @@ jobs:
         env:
           RAPIDAPI_LINKEDIN_DATA_API_KEY: ${{ secrets.RAPIDAPI_LINKEDIN_DATA_API_KEY }}
         run: |
-          # Generate URL-encoded date string for today's UTC date at 00:00
-          encodedDate=$(date -u +'%Y-%m-%d 00:00' | sed 's/ /%20/g;s/:/%3A/g')
-          echo "Fetching posts for date: $encodedDate"
+          # Generate URL-encoded date string for last week's UTC date at 00:00
+          encodedDate=$(date -u -d '7 days ago' +'%Y-%m-%d 00:00' | sed 's/ /%20/g;s/:/%3A/g')
+          echo "Fetching posts from date: $encodedDate"
           curl --request GET \
             --url "https://linkedin-data-api.p.rapidapi.com/get-profile-posts?username=cesarsotovalero&postedAt=${encodedDate}" \
             --header "x-rapidapi-host: linkedin-data-api.p.rapidapi.com" \
@@ -33,13 +33,18 @@ jobs:
         run: |
           # If the JSON file already exists, merge new data with the existing entries.
           if [ -f _data/linkedin-posts.json ]; then
+            originalCount=$(jq '.data | length' _data/linkedin-posts.json)
             jq -s '{
               success: true,
               message: "",
               data: (.[1].data + .[0].data | unique_by(.urn))
             }' _data/linkedin-posts.json linkedin-posts.json > merged.json
+            newCount=$(jq '.data | length' merged.json)
+            echo "Number of new entries added: $((newCount - originalCount))"
           else
             cp linkedin-posts.json merged.json
+            newCount=$(jq '.data | length' merged.json)
+            echo "Number of new entries added: $newCount"
           fi
           mv merged.json _data/linkedin-posts.json
 
