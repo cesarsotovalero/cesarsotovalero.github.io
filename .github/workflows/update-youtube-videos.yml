@@ -11,15 +11,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
-        with:
-          # Specify the folder to check out the repository into
-          path: _data
-          # Enable sparse checkout to fetch only specific files
-          sparse-checkout: true
-          # Define the files or directories to include
-          sparse-checkout-config: |
-            _data/youtube-videos.json
-            scripts/fetch_all_youtube_videos.py            
 
       - name: Set up Python
         uses: actions/setup-python@v4
