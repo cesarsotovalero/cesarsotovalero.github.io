@@ -1,8 +1,9 @@
-name: Update YouTube Metadata
+name: Update YouTube Videos
 
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
+  workflow_dispatch:
 
 jobs:
   fetch_metadata:
@@ -32,7 +33,7 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}
         run: |
-          python fetch_all_youtube_videos.py
+          python scripts/fetch_all_youtube_videos.py
 
       - name: Commit changes
         run: |
