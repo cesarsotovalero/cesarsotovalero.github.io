@@ -1,0 +1,43 @@
+name: Update YouTube Metadata
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
+
+jobs:
+  fetch_metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          # Specify the folder to check out the repository into
+          path: _data
+          # Enable sparse checkout to fetch only specific files
+          sparse-checkout: true
+          # Define the files or directories to include
+          sparse-checkout-config: |
+            _data/youtube-videos.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch YouTube Metadata
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}
+        run: |
+          python fetch_all_youtube_videos.py
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add _data/youtube-videos.json
+          git commit -m "Update YouTube video metadata [skip ci]" || echo "No changes to commit"
+          git push
