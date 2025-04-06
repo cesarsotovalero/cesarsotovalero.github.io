@@ -1,0 +1,2 @@
+---
+BUNDLE_BUILD__RMAGICK: "--with-opt-dir=C:\\Users\\S2362G\\scoop\\apps\\imagemagick\\current --with-cppflags=-IC:\\Users\\S2362G\\scoop\\apps\\imagemagick\\current\\include\\MagickCore"
