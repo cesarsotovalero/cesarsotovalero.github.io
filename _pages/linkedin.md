@@ -1,13 +1,12 @@
 ---
 permalink: linkedin.html
 layout: page
-title: LinkedIn
-subtitle: 👨🏼‍💼
-description: César Soto Valero's LinkedIn profile.
+title: My LinkedIn
+description: List of LinkedIn posts videos posted by César Soto Valero.
 published: true
 ---
 
-# All My Posts
+{% include follow-on-linkedin.html %}
 
 <div class="posts-container">
   {% for post in site.data.linkedin-posts.data %}
@@ -16,7 +15,7 @@ published: true
         <!-- The first ~10 words as a heading -->
         <h3>{{ post.text | truncatewords: 10 }}</h3>
 
-        <!-- The next ~40 words as a snippet -->
+        <!-- The next ~40 words as a snippet -->        
         <p>{{ post.text | truncatewords: 40 }}</p>
         
         <!-- Link to the full LinkedIn post -->
@@ -33,5 +32,5 @@ published: true
         </div>
       {% endif %}
     </div>
-{% endfor %}
+  {% endfor %}
 </div>
