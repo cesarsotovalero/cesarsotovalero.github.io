@@ -726,7 +726,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "0535tRgHB_XxUgCvu0g_P7UCABg",
+    "etag": "CMtOlVl-V_uSqsXcxrAy5OBgeSk",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -787,8 +787,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "502",
-      "likeCount": "38",
+      "viewCount": "503",
+      "likeCount": "39",
       "favoriteCount": "0",
       "commentCount": "16"
     }
@@ -856,12 +856,12 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "GsUhZXuae5FJYATWRXAoaUn8gtg",
+    "etag": "hCpTWaYFazCHYExvarSX-Prhej8",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Revisiting Ken Thompson’s Turing Award Lecture \"Reflections on Trusting Trust\"",
+      "title": "Revisiting Ken Thompson’s Turing Award Lecture “Reflections on Trusting Trust”",
       "description": "Dive into the groundbreaking Turing Award lecture titled \"Reflections on Trusting Trust,\" where Ken Thompson presented one of the most chilling and famous ideas in cybersecurity history. Thompson demonstrated how a compiler could be modified to recognize its own code and reinsert a backdoor into its new versions. This kind of backdoor (a.k.a trojan horse compiler) is practically undetectable since it no longer appears in the source code.\n\nKey Takeaway: \"You cannot trust code that you did not create entirely yourself.\"\n\n00:00 - The problem of software trust\n00:54 - Thompson's famous claim\n01:51 - Historical context\n02:45 - Core idea behind this backdoor attack\n04:22 - Self-replicating code (a.k.a. quine)\n07:10 - Implications for cybersecurity \n08:45 - Supply chain attacks\n09:46 - Deeper questions\n10:54 - Echoes today\n\nRELATED RESOURCES\n\n🎈 Here's the original paper from 1984, \"Reflections on Trusting Trust\": https://doi.org/10.1145/358198.358210\n\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#Cybersecurity #KenThompson #TrustingTrust",
       "thumbnails": {
         "default": {
@@ -894,7 +894,7 @@
       "categoryId": "28",
       "liveBroadcastContent": "none",
       "localized": {
-        "title": "Revisiting Ken Thompson’s Turing Award Lecture \"Reflections on Trusting Trust\"",
+        "title": "Revisiting Ken Thompson’s Turing Award Lecture “Reflections on Trusting Trust”",
         "description": "Dive into the groundbreaking Turing Award lecture titled \"Reflections on Trusting Trust,\" where Ken Thompson presented one of the most chilling and famous ideas in cybersecurity history. Thompson demonstrated how a compiler could be modified to recognize its own code and reinsert a backdoor into its new versions. This kind of backdoor (a.k.a trojan horse compiler) is practically undetectable since it no longer appears in the source code.\n\nKey Takeaway: \"You cannot trust code that you did not create entirely yourself.\"\n\n00:00 - The problem of software trust\n00:54 - Thompson's famous claim\n01:51 - Historical context\n02:45 - Core idea behind this backdoor attack\n04:22 - Self-replicating code (a.k.a. quine)\n07:10 - Implications for cybersecurity \n08:45 - Supply chain attacks\n09:46 - Deeper questions\n10:54 - Echoes today\n\nRELATED RESOURCES\n\n🎈 Here's the original paper from 1984, \"Reflections on Trusting Trust\": https://doi.org/10.1145/358198.358210\n\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#Cybersecurity #KenThompson #TrustingTrust"
       },
       "defaultAudioLanguage": "en"
@@ -909,7 +909,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "281",
+      "viewCount": "282",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "1"
