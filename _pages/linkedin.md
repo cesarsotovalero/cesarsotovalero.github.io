@@ -1,7 +1,6 @@
 ---
-permalink: linkedin.html
 layout: page
-title: My LinkedIn
+title: LinkedIn Posts
 description: List of LinkedIn posts videos posted by César Soto Valero.
 published: true
 ---

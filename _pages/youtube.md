@@ -15,8 +15,8 @@ published: true
       <div class="youtube-video-text">
         <h3 class="youtube-video-title">{{ video.snippet.title }}</h3>
         <p class="youtube-video-description">
-          Published at: {{ video.snippet.publishedAt | date: "%B %-d, %Y" }}<br>
-          Duration: {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", " hours " | replace: "M", " minutes " | replace: "S", " seconds" }}
+          {{ video.snippet.publishedAt | date: "%B %-d, %Y" }}<br>
+          {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", " hours " | replace: "M", " minutes and " | replace: "S", " seconds" }}
         </p>
         <p class="youtube-video-stats">
           <span>Views: {{ video.statistics.viewCount }}</span> | 
