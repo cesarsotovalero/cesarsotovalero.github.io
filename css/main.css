@@ -3479,6 +3479,7 @@ pre .language-mermaid {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: var(--card-background-color);
 }
 
 .post-card-text {
@@ -3515,9 +3516,7 @@ pre .language-mermaid {
 
 .button-linkedin {
   font-weight: bold;
-  border: 1px solid #ABB0B2;
   color: #444;
-  background-color: #fff;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
@@ -3535,9 +3534,13 @@ pre .language-mermaid {
 
 .button-linkedin:hover {
   text-decoration: none;
-  background-color: #e6e6e6;
-  border-color: #888;
   color: #000;
+  transition: transform 0.3s ease;
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.button-linkedin:active {
+  transform: scale(0.95); /* Slightly decrease size when clicked */
 }
 
 .linkedin-icon {
@@ -3566,7 +3569,7 @@ pre .language-mermaid {
   border-radius: 8px;
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: var(--card-background-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -3585,18 +3588,18 @@ pre .language-mermaid {
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
-  color: var(--main-text-color);
+  color: var(--main-link-color);
 }
 
 .youtube-video-description {
   font-size: 1.5rem;
-  color: #555;
+  color: var(--post-meta-index-color);
   margin-bottom: 10px;
 }
 
 .youtube-video-stats {
   font-size: 1.5rem;
-  color: var(--post-meta-index-color);
+  color: var(--main-text-color);
   margin-bottom: 0;
   font-family: "Concourse T3", "Cambria", "Open Sans";
 }
@@ -3686,6 +3689,7 @@ html, html[data-theme="light"] {
   --blockquote-color: darkgreen;
   /*--blockquote-background-color: #f1f1f1;*/
   --blockquote-background-color: #FFEDDE;
+  --card-background-color: white;
   --main-background-color: #FFFFF6;
   /*--main-background-color: #fdf2ea;*/
   --main-text-color: hsl(0, 0%, 10%);
@@ -3707,6 +3711,7 @@ html[data-theme="dark"] {
   --post-meta-index-color: hsl(0, 0%, 76%);
   --blockquote-color: #2d333b;
   --blockquote-background-color: #2d333b;
+  --card-background-color: #2d333b;
   /*--main-background-color: #012639;*/
   --main-background-color: #1c2128;
   --main-text-color: hsl(0, 0%, 85%);
