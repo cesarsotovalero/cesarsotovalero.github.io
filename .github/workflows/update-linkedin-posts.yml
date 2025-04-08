@@ -13,7 +13,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
         with:
-          # Specify the folder to check out the repository into
+          # Check out the repository into the _data folder
           path: _data
           # Enable sparse checkout to fetch only specific files
           sparse-checkout: true
@@ -31,7 +31,7 @@ jobs:
           # Generate URL-encoded date string for last week's UTC date at 00:00
           encodedDate=$(date -u -d '7 days ago' +'%Y-%m-%d 00:00' | sed 's/ /%20/g;s/:/%3A/g')
           echo "Fetching posts from date: $encodedDate"
-          # Fetch LinkedIn posts using the API: https://rapidapi.com/rockapis-rockapis-default/api/linkedin-data-api
+          # Fetch LinkedIn posts using the API
           curl --request GET \
             --url "https://linkedin-data-api.p.rapidapi.com/get-profile-posts?username=cesarsotovalero&postedAt=${encodedDate}" \
             --header "x-rapidapi-host: linkedin-data-api.p.rapidapi.com" \
@@ -58,10 +58,13 @@ jobs:
           mv merged.json _data/linkedin-posts.json
 
       - name: Commit and push changes if any
+        # Run Git commands inside the _data directory where your repo is located.
+        working-directory: _data
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add _data/linkedin-posts.json linkedin-posts.json # Ensure both files are tracked
+          # Commit only the tracked file from _data
+          git add linkedin-posts.json
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Update LinkedIn posts $(date -u +'%Y-%m-%d')"
             git push
