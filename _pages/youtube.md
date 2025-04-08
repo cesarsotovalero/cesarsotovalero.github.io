@@ -2,6 +2,7 @@
 permalink: youtube.html
 layout: page
 title: YouTube Videos
+subtitle: "🎥"
 description: List of YouTube videos created by César Soto Valero.
 published: true
 ---
