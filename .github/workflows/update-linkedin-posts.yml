@@ -23,13 +23,15 @@ jobs:
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Ensure linkedin-posts-new.json exists
-        working-directory: _data
+      - name: Ensure _data directory and linkedin-posts-new.json exist
         run: |
+          # Ensure that the _data directory exists even if Git didn't track it as it was empty
+          mkdir -p _data
           if [ ! -f _data/linkedin-posts-new.json ]; then
             echo '{"data":[]}' > _data/linkedin-posts-new.json
             echo "Created an empty linkedin-posts-new.json file."
-          fi
+          fi     
+
 
       - name: Fetch LinkedIn posts
         working-directory: _data
