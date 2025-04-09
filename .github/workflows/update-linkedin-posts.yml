@@ -17,9 +17,12 @@ jobs:
           path: _data
           # Enable sparse checkout to fetch only specific files
           sparse-checkout: true
-          # Define the files or directories to include
-          sparse-checkout-config: |
-            _data/linkedin-posts.json
+          # Specify the files to include in the sparse checkout
+          # This will include all files in the _data directory
+          # and the .github/workflows directory
+          paths: |
+            _data/*
+            .github/workflows/update-linkedin-posts.yml
 
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
@@ -37,39 +40,42 @@ jobs:
             --url "https://linkedin-data-api.p.rapidapi.com/get-profile-posts?username=cesarsotovalero&postedAt=${encodedDate}" \
             --header "x-rapidapi-host: linkedin-data-api.p.rapidapi.com" \
             --header "x-rapidapi-key: $RAPIDAPI_LINKEDIN_DATA_API_KEY" \
-            -o linkedin-posts-new.json
+            -o _data/linkedin-posts-new.json
 
       - name: Merge new posts with existing JSON
         working-directory: _data
         run: |
           # If an existing JSON file is present, merge new data with it.
-          if [ -f linkedin-posts.json ]; then
-            originalCount=$(jq '.data | length' linkedin-posts.json)
+          if [ -f _data/linkedin-posts.json ]; then
+            originalCount=$(jq '.data | length' _data/linkedin-posts.json)
             jq -s '{
               success: true,
               message: "",
               data: (.[0].data + .[1].data | sort_by(.postedDateTimestamp) | reverse)
-            }' linkedin-posts-new.json linkedin-posts.json > merged.json
-            newCount=$(jq '.data | length' merged.json)
+            }' _data/linkedin-posts-new.json _data/linkedin-posts.json > _data/merged.json
+            newCount=$(jq '.data | length' _data/merged.json)
             echo "Number of new entries added: $((newCount - originalCount))"
           else
-            jq '.data |= sort_by(.postedDateTimestamp) | .data |= reverse' linkedin-posts-new.json > merged.json
-            newCount=$(jq '.data | length' merged.json)
+            jq '.data |= sort_by(.postedDateTimestamp) | .data |= reverse' _data/linkedin-posts-new.json > _data/merged.json
+            newCount=$(jq '.data | length' _data/merged.json)
             echo "Number of new entries added: $newCount"
           fi
           # Replace the old file with the merged file.
-          mv merged.json linkedin-posts.json
+          mv _data/merged.json _data/linkedin-posts.json
           # Clean up the temporary file.
-          rm linkedin-posts-new.json
+          rm _data/linkedin-posts-new.json
 
       - name: Commit and push changes if any
         working-directory: _data
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add linkedin-posts.json
+          git add _data/linkedin-posts.json
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Update LinkedIn posts $(date -u +'%Y-%m-%d')"
+            # Pull remote changes to avoid conflicts
+            git pull --rebase origin master
+            # Push changes to the remote repository
             git push
           else
             echo "No changes to commit"
