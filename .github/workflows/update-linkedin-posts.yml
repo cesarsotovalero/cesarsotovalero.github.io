@@ -12,14 +12,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
-        with:
-          # Check out the repository into the _data folder
-          path: _data
-          # Enable sparse checkout to fetch only specific files
-          sparse-checkout: true
-          # Define the files or directories to include
-          sparse-checkout-config: |
-            _data/linkedin-posts.json
 
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
@@ -59,15 +51,13 @@ jobs:
           mv -f merged.json _data/linkedin-posts.json
 
       - name: Commit and push changes if any
-        # Run Git commands inside the _data directory where your repo is located.
-        working-directory: _data
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           # Ensure the linkedin-posts.json file is in the _data directory
-          mv -f ../linkedin-posts.json linkedin-posts.json
+          mv -f linkedin-posts.json _data/linkedin-posts.json
           # Add the file to Git
-          git add linkedin-posts.json
+          git add _data/linkedin-posts.json
           # Commit and push changes if there are any
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Update LinkedIn posts $(date -u +'%Y-%m-%d')"
