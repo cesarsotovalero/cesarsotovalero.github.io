@@ -12,17 +12,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
-        with:
-          # Check out the repository into the _data folder
-          path: _data
-          # Enable sparse checkout to fetch only specific files
-          sparse-checkout: true
-          # Specify the files to include in the sparse checkout
-          # This will include all files in the _data directory
-          # and the .github/workflows directory
-          paths: |
-            _data/*
-            .github/workflows/update-linkedin-posts.yml
 
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
