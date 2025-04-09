@@ -13,75 +13,64 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 
+          # Check out the repository into the _data folder
+          path: _data
+          # Enable sparse checkout to fetch only specific files
+          sparse-checkout: true
+          # Define the files or directories to include
+          sparse-checkout-config: |
+            _data/linkedin-posts.json
 
-      # This step is optional but can be useful for debugging.
-      # It lists the contents of the repository to ensure the workflow is running in the correct directory.
-      - name: Debug - List repository contents
-        run: ls -la
-       
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Ensure _data directory and linkedin-posts-new.json exist
-        run: |
-          # Ensure that the _data directory exists even if Git didn't track it as it was empty
-          mkdir -p _data
-          if [ ! -f _data/linkedin-posts-new.json ]; then
-            echo '{"data":[]}' > _data/linkedin-posts-new.json
-            echo "Created an empty linkedin-posts-new.json file."
-          fi     
-
-
       - name: Fetch LinkedIn posts
-        working-directory: _data
         env:
           RAPIDAPI_LINKEDIN_DATA_API_KEY: ${{ secrets.RAPIDAPI_LINKEDIN_DATA_API_KEY }}
         run: |
           # Generate URL-encoded date string for last week's UTC date at 00:00
           encodedDate=$(date -u -d '7 days ago' +'%Y-%m-%d 00:00' | sed 's/ /%20/g;s/:/%3A/g')
           echo "Fetching posts from date: $encodedDate"
-          # Fetch LinkedIn posts using the API; save to a temp file in _data.
+          # Fetch LinkedIn posts using the API
           curl --request GET \
             --url "https://linkedin-data-api.p.rapidapi.com/get-profile-posts?username=cesarsotovalero&postedAt=${encodedDate}" \
             --header "x-rapidapi-host: linkedin-data-api.p.rapidapi.com" \
             --header "x-rapidapi-key: $RAPIDAPI_LINKEDIN_DATA_API_KEY" \
-            -o _data/linkedin-posts-new.json
+            -o linkedin-posts.json
 
       - name: Merge new posts with existing JSON
-        working-directory: _data
         run: |
-          # If an existing JSON file is present, merge new data with it.
+          # If the JSON file already exists, merge new data with the existing entries.
           if [ -f _data/linkedin-posts.json ]; then
             originalCount=$(jq '.data | length' _data/linkedin-posts.json)
             jq -s '{
               success: true,
               message: "",
               data: (.[0].data + .[1].data | sort_by(.postedDateTimestamp) | reverse)
-            }' _data/linkedin-posts-new.json _data/linkedin-posts.json > _data/merged.json
-            newCount=$(jq '.data | length' _data/merged.json)
+            }' linkedin-posts.json _data/linkedin-posts.json > merged.json
+            newCount=$(jq '.data | length' merged.json)
             echo "Number of new entries added: $((newCount - originalCount))"
           else
-            jq '.data |= sort_by(.postedDateTimestamp) | .data |= reverse' _data/linkedin-posts-new.json > _data/merged.json
-            newCount=$(jq '.data | length' _data/merged.json)
+            jq '.data |= sort_by(.postedDateTimestamp) | .data |= reverse' linkedin-posts.json > merged.json
+            newCount=$(jq '.data | length' merged.json)
             echo "Number of new entries added: $newCount"
           fi
-          # Replace the old file with the merged file.
-          mv _data/merged.json _data/linkedin-posts.json
-          # Clean up the temporary file.
-          rm _data/linkedin-posts-new.json
+          # Move the merged file to the _data directory, overwriting if it exists
+          mv -f merged.json _data/linkedin-posts.json
 
       - name: Commit and push changes if any
+        # Run Git commands inside the _data directory where your repo is located.
         working-directory: _data
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add _data/linkedin-posts.json
+          # Ensure the linkedin-posts.json file is in the _data directory
+          mv -f ../linkedin-posts.json linkedin-posts.json
+          # Add the file to Git
+          git add linkedin-posts.json
+          # Commit and push changes if there are any
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Update LinkedIn posts $(date -u +'%Y-%m-%d')"
-            # Pull remote changes to avoid conflicts
-            git pull --rebase origin master
-            # Push changes to the remote repository
             git push
           else
             echo "No changes to commit"
