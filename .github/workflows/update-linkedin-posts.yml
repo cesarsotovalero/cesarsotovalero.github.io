@@ -12,7 +12,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 
 
+      # This step is optional but can be useful for debugging.
+      # It lists the contents of the repository to ensure the workflow is running in the correct directory.
+      - name: Debug - List repository contents
+        run: ls -la
+       
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
