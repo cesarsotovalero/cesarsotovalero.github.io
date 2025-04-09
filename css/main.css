@@ -3673,7 +3673,7 @@ pre .language-mermaid {
   display: inline-block;
   text-align: center;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: var(--main-text-color);
   border: none;
@@ -3706,7 +3706,7 @@ pre .language-mermaid {
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
   .call-to-subscribe {
-    font-size: 16px;
+    font-size: 18px;
     padding: 8px 16px;
   }
 }
