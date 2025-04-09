@@ -14,14 +14,14 @@ published: true
   <a href="{{ post.postUrl }}" target="_blank" class="linkedin-post-link">
     <div class="linkedin-post-card">
       <div class="linkedin-post-text">
-        <h3 class="linkedin-post-title">{{ post.text | truncatewords: 10 }}</h3>
+        <h3 class="linkedin-post-title">{{ post.text | truncatewords: 15 }}</h3>
         <p class="linkedin-post-description">
-          🗓️ {{ post.postedDate | date: "%b %-d, %Y" }} · 
-          👍 Likes: {{ post.likeCount }} · 💬 Comments: {{ post.commentsCount | default: 0 }}
+          Posted on {{ post.postedDate | date: "%b %-d, %Y" }}          
         </p>
         <p class="linkedin-post-stats">
-          <span>Reactions: {{ post.totalReactionCount | default: 0 }}</span> | 
-          <span>Shares: {{ post.repostsCount | default: 0 }}</span>
+          <span>👍 Reactions: {{ post.totalReactionCount | default: 0 }}</span> | 
+          <span>💬 Comments: {{ post.commentsCount | default: 0 }}</span> | 
+          <span>🔁 Repost: {{ post.repostsCount | default: 0 }}</span>
         </p>
       </div>
       {% if post.image and post.image.size > 0 %}

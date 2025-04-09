@@ -16,13 +16,13 @@ published: true
       <div class="youtube-video-text">
         <h3 class="youtube-video-title">{{ video.snippet.title }}</h3>
         <p class="youtube-video-description">
-          🗓️ {{ video.snippet.publishedAt | date: "%b %-d, %Y" }} · 
-          ⏱️ {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
+          Published on {{ video.snippet.publishedAt | date: "%b %-d, %Y" }} · 
+          {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
         </p>
         <p class="youtube-video-stats">
-                  <span>Views: {{ video.statistics.viewCount | number_with_delimiter }}</span> | 
-                  <span>Likes: {{ video.statistics.likeCount | number_with_delimiter }}</span> | 
-                  <span>Comments: {{ video.statistics.commentCount | number_with_delimiter }}</span>
+                  <span>👀 Views: {{ video.statistics.viewCount | number_with_delimiter }}</span> | 
+                  <span>👍 Likes: {{ video.statistics.likeCount | number_with_delimiter }}</span> | 
+                  <span>💬 Comments: {{ video.statistics.commentCount | number_with_delimiter }}</span>
         </p>
       </div>
       <div class="youtube-video-thumbnail">
