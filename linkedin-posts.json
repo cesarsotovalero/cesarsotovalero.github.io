@@ -10,6 +10,91 @@
       "empathyCount": 1,
       "InterestCount": 1,
       "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7315473048638242816/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_can-i-grab-some-time-on-your-calendar-to-activity-7315473048638242816-A1Od?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFjq47kB5tAkD32MqmsPyQCI7679TWmYYPw",
+      "postedAt": "2d",
+      "postedDate": "2025-04-08 20:38:09.712 +0000 UTC",
+      "postedDateTimestamp": 1744144689712,
+      "urn": "7315473048638242816",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749686400&v=beta&t=maKnQdGO_RK5KCO3wN0BOpPeVj5_6BBb7I83xhX1Iak"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749686400&v=beta&t=51c-x4G8-Cdi4a0ZSqoS1mkhnHFxJ_rX0w42qo3W9qI"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749686400&v=beta&t=X0r-mW_XaCp12KAJiXL98kqgE5CpgXadfEgds34VPuo"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749686400&v=beta&t=IjFala6Ie8JZJgiksm2FKWH3Rrsy0scFRiwgeMVSTxQ"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF_6gwiLVL5xw/feedshare-shrink_2048_1536/B4DZYXH97mG8As-/0/1744144688842?e=1747267200&v=beta&t=aDRI33wV6ABGCm0RlwSMK-Gm6Qu5WWti4DeujE8rt80",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF_6gwiLVL5xw/feedshare-shrink_480/B4DZYXH97mG8Ac-/0/1744144688802?e=1747267200&v=beta&t=I-pvdTci-0yf3alJXxaDeBTw0EEt1BDCMVWP-3FTRX4",
+          "width": 480,
+          "height": 480
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF_6gwiLVL5xw/feedshare-shrink_20/B4DZYXH97mG8A0-/0/1744144688802?e=1747267200&v=beta&t=PfvjDGSAReZX5_z3olLJx5P74DZhldv7zsJY2bdMZj4",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF_6gwiLVL5xw/feedshare-shrink_160/B4DZYXH97mG8Ag-/0/1744144688802?e=1747267200&v=beta&t=DD7yDYlM5eMN_TJMmo28K3ss6sWa_808Jax32W42edM",
+          "width": 160,
+          "height": 160
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF_6gwiLVL5xw/feedshare-shrink_800/B4DZYXH97mG8Ak-/0/1744144688822?e=1747267200&v=beta&t=jMKuKSgdvNYfNwt_IBNdcel5rUuTr5ls34hpqODvhHA",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF_6gwiLVL5xw/feedshare-shrink_1280/B4DZYXH97mG8Ao-/0/1744144688822?e=1747267200&v=beta&t=Z9QQ8z-l16IFuTUSRkZ8Tvgn4jztm-M5bQZg5ipiJRU",
+          "width": 1024,
+          "height": 1024
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "“Can I grab some time on your calendar to talk about XYZ?”\n\nThis simple phrase has opened more doors for me professionally than any scheduled meeting ever did.\n\nWhy?\n\nBecause it's spontaneous, authentic, and signals genuine curiosity. \n\nIt transforms casual interactions into meaningful relationships, creating room for serendipity.\n\nFor instance, a couple of years ago I casually reached out to a researcher from another lab to talk about our common interest on the XYZ problem that existed. THat spontaneous 20 min conversation evolved into a long term research collaboration. We ended up writing a few papers together!\n\nIt's amazing how a genuine request for someone's insights can spark collaboration, innovation, and even friendships.\n\nNever underestimate the power of simply reaching out.\n\nGive it a try! 👋\n\nP.S. It’s a shame we can’t just say “X” to mean “anything” anymore (thanks, Elon).",
+      "totalReactionCount": 5,
+      "likeCount": 3,
+      "empathyCount": 1,
+      "InterestCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7315473048638242816/",
       "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_can-i-grab-some-time-on-your-calendar-to-activity-7315473048638242816-A1Od?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFgEL5sBLW9JEdlYQ-HlyeK12XG-DifHtvk",
       "postedAt": "1d",
       "postedDate": "2025-04-08 20:38:09.712 +0000 UTC",
@@ -95,8 +180,8 @@
       "empathyCount": 1,
       "InterestCount": 1,
       "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7315473048638242816/",
-      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_can-i-grab-some-time-on-your-calendar-to-activity-7315473048638242816-A1Od?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFjq47kB5tAkD32MqmsPyQCI7679TWmYYPw",
-      "postedAt": "2d",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_can-i-grab-some-time-on-your-calendar-to-activity-7315473048638242816-A1Od?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFhu33MBOFZlPggWsgwXkw8QzgvsZXX1WQ8",
+      "postedAt": "3d",
       "postedDate": "2025-04-08 20:38:09.712 +0000 UTC",
       "postedDateTimestamp": 1744144689712,
       "urn": "7315473048638242816",
@@ -171,6 +256,124 @@
         "newsletter": {}
       },
       "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "I’ve been using GitHub Copilot since its early release in 2021, and it has been a great coding companion since then.\n\nI'm glad to see that Copilot is now integrated directly into GitHub's website, which eliminates the need to switch between the code editor and browser. It also works great on the GitHub mobile app.\n\nTheir official documentation includes a “Copilot Chat Cookbook” reference that includes prompts for many common tasks.\n\nFor example, there are prompts to:\n↳ Improve code readability and maintainability\n↳ Explore potential feature implementations\n↳ Handle API rate limits\n↳ Debug invalid JSON\n↳ Generate unit tests\n↳ Fix lint errors\n↳ [and more]\n\nThe more I use Copilot, the better I understand its strengths and limitations. \n\nSo, for those looking to enhance their interaction with this tool, the \"Copilot Chat Cookbook\" is a must-read.\n\nCheck it out here: 🔗https://lnkd.in/dKwADu_A",
+      "totalReactionCount": 6,
+      "likeCount": 6,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7315094539730362368/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_copilot-chat-cookbook-activity-7315094539730362368-Achq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFjq47kB5tAkD32MqmsPyQCI7679TWmYYPw",
+      "postedAt": "3d",
+      "postedDate": "2025-04-07 19:34:06.156 +0000 UTC",
+      "postedDateTimestamp": 1744054446156,
+      "urn": "7315094539730362368",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · I'm into {Tech ∩ Science} · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_200_200/B4DZT6s4SmGkAc-/0/1739372856945?e=1749686400&v=beta&t=maKnQdGO_RK5KCO3wN0BOpPeVj5_6BBb7I83xhX1Iak"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_400_400/B4DZT6s4SmGkAk-/0/1739372856945?e=1749686400&v=beta&t=51c-x4G8-Cdi4a0ZSqoS1mkhnHFxJ_rX0w42qo3W9qI"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_800_800/B4DZT6s4SmGkAg-/0/1739372856945?e=1749686400&v=beta&t=X0r-mW_XaCp12KAJiXL98kqgE5CpgXadfEgds34VPuo"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQGwkEHGrmV7Sg/profile-displayphoto-shrink_100_100/B4DZT6s4SmGkAY-/0/1739372856928?e=1749686400&v=beta&t=IjFala6Ie8JZJgiksm2FKWH3Rrsy0scFRiwgeMVSTxQ"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "company": {},
+      "document": {
+        "title": "Copilot Chat Cookbook",
+        "urn": "D4D1FAQEU0Irrsk5e-g",
+        "TranscribedDocumentUrl": "https://media.licdn.com/dms/document/media/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-pdf-analyzed/B4DZYRuX2gHAAY-/0/1744054092863?e=1744941600&v=beta&t=RLrX984BP_CTeXPdYF02x0sfcC6PDDrNyliWb2Ux_Os",
+        "TranscribedDocumentUrlExpiresAt": 1744941600000,
+        "manifestUrlExpiresAt": 1744941600000,
+        "manifestUrl": "https://media.licdn.com/dms/document/pl/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-master-manifest/B4DZYRuX2gHABY-/0/1744054094380?e=1744941600&v=beta&t=8HRoduUspo28ZKWaRJ-4sKr1hcpMCcHth82dUDiZzC8",
+        "scanRequiredForDownload": true,
+        "totalPageCount": 3,
+        "coverPages": [
+          {
+            "width": 360,
+            "height": 480,
+            "imageUrls": [
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_480/B4DZYRuX2gHABI-/0/1744054093285?e=1744941600&v=beta&t=Fq2Hnd3DLMS8hnmJ2xUPZ8pcyge-knPDvSRnrH9uiv8",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_480/B4DZYRuX2gHABI-/1/1744054093285?e=1744941600&v=beta&t=4zPs72HuJ85xOitcG2PwYK9NPlaxfc51W0MRKO6nufo",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_480/B4DZYRuX2gHABI-/2/1744054093285?e=1744941600&v=beta&t=d822ID4ntgz_tTNZFFd4BaO9O8-c3t7E11aaooQJevY"
+            ]
+          },
+          {
+            "width": 600,
+            "height": 800,
+            "imageUrls": [
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_800/B4DZYRuX2gHABA-/0/1744054093390?e=1744941600&v=beta&t=4bfjql_-W2vbGg7IrjF6RhtM-LZHvoIXxnO8-vUcSyI",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_800/B4DZYRuX2gHABA-/1/1744054093390?e=1744941600&v=beta&t=oEsYuLndOwCvNej6r-3poS591quk9euQbjlU0_SHrag",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_800/B4DZYRuX2gHABA-/2/1744054093390?e=1744941600&v=beta&t=Qw1VOJrfgwpyZoO4yI8BuNoTAp3qh2_CNA71XaEXVSs"
+            ]
+          },
+          {
+            "width": 960,
+            "height": 1280,
+            "imageUrls": [
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1280/B4DZYRuX2gHABQ-/0/1744054093393?e=1744941600&v=beta&t=qqy8wpr53mi5Od8RoWS6QQmyrsVCfu2h1Wvshg5daY8",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1280/B4DZYRuX2gHABQ-/1/1744054093393?e=1744941600&v=beta&t=E1QZF-qSklyfK62pZZRdO3vkhpn9WkQtvGQzleDttUg",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1280/B4DZYRuX2gHABQ-/2/1744054093393?e=1744941600&v=beta&t=tM4i068Ypp9X_oWCm2r1BWklOz3_4YYID_XqG0G2qSs"
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 1920,
+            "imageUrls": [
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1920/B4DZYRuX2gHAAw-/0/1744054094403?e=1744941600&v=beta&t=33SMhJwzPDXfH4KciATFC5ewM2IEOz2FWy5VfeLeSqM",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1920/B4DZYRuX2gHAAw-/1/1744054094403?e=1744941600&v=beta&t=3DQ7f-M8Qw1Iau-3xxteiX0uDK_WgaBm8PaWOzWeeTk",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1920/B4DZYRuX2gHAAw-/2/1744054094403?e=1744941600&v=beta&t=lGCsFMI2WWZyyDkDaWFLueMMnGUx8HCwlNg0CTHakAI"
+            ]
+          }
+        ]
+      },
+      "celebration": {},
+      "poll": {},
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "companyMentions": [
+        {
+          "id": 1418841,
+          "name": "GitHub",
+          "publicIdentifier": "github",
+          "url": "https://www.linkedin.com/company/github/"
+        },
+        {
+          "id": 1418841,
+          "name": "GitHub",
+          "publicIdentifier": "github",
+          "url": "https://www.linkedin.com/company/github/"
+        },
+        {
+          "id": 1418841,
+          "name": "GitHub",
+          "publicIdentifier": "github",
+          "url": "https://www.linkedin.com/company/github/"
+        }
+      ]
     },
     {
       "isBrandPartnership": false,
@@ -296,8 +499,8 @@
       "totalReactionCount": 6,
       "likeCount": 6,
       "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7315094539730362368/",
-      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_copilot-chat-cookbook-activity-7315094539730362368-Achq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFjq47kB5tAkD32MqmsPyQCI7679TWmYYPw",
-      "postedAt": "3d",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_copilot-chat-cookbook-activity-7315094539730362368-Achq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFhu33MBOFZlPggWsgwXkw8QzgvsZXX1WQ8",
+      "postedAt": "4d",
       "postedDate": "2025-04-07 19:34:06.156 +0000 UTC",
       "postedDateTimestamp": 1744054446156,
       "urn": "7315094539730362368",
@@ -336,10 +539,10 @@
       "document": {
         "title": "Copilot Chat Cookbook",
         "urn": "D4D1FAQEU0Irrsk5e-g",
-        "TranscribedDocumentUrl": "https://media.licdn.com/dms/document/media/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-pdf-analyzed/B4DZYRuX2gHAAY-/0/1744054092863?e=1744941600&v=beta&t=RLrX984BP_CTeXPdYF02x0sfcC6PDDrNyliWb2Ux_Os",
-        "TranscribedDocumentUrlExpiresAt": 1744941600000,
-        "manifestUrlExpiresAt": 1744941600000,
-        "manifestUrl": "https://media.licdn.com/dms/document/pl/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-master-manifest/B4DZYRuX2gHABY-/0/1744054094380?e=1744941600&v=beta&t=8HRoduUspo28ZKWaRJ-4sKr1hcpMCcHth82dUDiZzC8",
+        "TranscribedDocumentUrl": "https://media.licdn.com/dms/document/media/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-pdf-analyzed/B4DZYRuX2gHAAY-/0/1744054092863?e=1745028000&v=beta&t=TyfiRj4y2w3ca5aVrF1NPUcSTg2L4rEBOBx4FNA_PsE",
+        "TranscribedDocumentUrlExpiresAt": 1745028000000,
+        "manifestUrlExpiresAt": 1745028000000,
+        "manifestUrl": "https://media.licdn.com/dms/document/pl/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-master-manifest/B4DZYRuX2gHABY-/0/1744054094380?e=1745028000&v=beta&t=tZcnl16IBmWEWmrOiYsWfZbQbSn-PMkxk7jbkNDxCOk",
         "scanRequiredForDownload": true,
         "totalPageCount": 3,
         "coverPages": [
@@ -347,36 +550,36 @@
             "width": 360,
             "height": 480,
             "imageUrls": [
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_480/B4DZYRuX2gHABI-/0/1744054093285?e=1744941600&v=beta&t=Fq2Hnd3DLMS8hnmJ2xUPZ8pcyge-knPDvSRnrH9uiv8",
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_480/B4DZYRuX2gHABI-/1/1744054093285?e=1744941600&v=beta&t=4zPs72HuJ85xOitcG2PwYK9NPlaxfc51W0MRKO6nufo",
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_480/B4DZYRuX2gHABI-/2/1744054093285?e=1744941600&v=beta&t=d822ID4ntgz_tTNZFFd4BaO9O8-c3t7E11aaooQJevY"
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_480/B4DZYRuX2gHABI-/0/1744054093285?e=1745028000&v=beta&t=uu4OJHIfnVVILRfgW6RS7eGRsN9jwFKSy45aErPCk5I",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_480/B4DZYRuX2gHABI-/1/1744054093285?e=1745028000&v=beta&t=bKvaFDboOkmnFqlZajcEHQp0gaKfD2jn9EO3ECdrOF4",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_480/B4DZYRuX2gHABI-/2/1744054093285?e=1745028000&v=beta&t=tF1PyugX1lhPY_Wc91ajFyVstXN_FW8y33AhU1vgcwo"
             ]
           },
           {
             "width": 600,
             "height": 800,
             "imageUrls": [
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_800/B4DZYRuX2gHABA-/0/1744054093390?e=1744941600&v=beta&t=4bfjql_-W2vbGg7IrjF6RhtM-LZHvoIXxnO8-vUcSyI",
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_800/B4DZYRuX2gHABA-/1/1744054093390?e=1744941600&v=beta&t=oEsYuLndOwCvNej6r-3poS591quk9euQbjlU0_SHrag",
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_800/B4DZYRuX2gHABA-/2/1744054093390?e=1744941600&v=beta&t=Qw1VOJrfgwpyZoO4yI8BuNoTAp3qh2_CNA71XaEXVSs"
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_800/B4DZYRuX2gHABA-/0/1744054093390?e=1745028000&v=beta&t=80ItJ6DlfdAFQN_XHn-5m2xKZ60eJF3WOUEoCDRYt9U",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_800/B4DZYRuX2gHABA-/1/1744054093390?e=1745028000&v=beta&t=qhwKPRsxHbnyMICIcIHE9pgAFWp8Uc4s7QrjRHIyiXQ",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_800/B4DZYRuX2gHABA-/2/1744054093390?e=1745028000&v=beta&t=B8hhO09EkXuyCGFuldKa1OKPCk0J8mKOaIMaJHTc5WA"
             ]
           },
           {
             "width": 960,
             "height": 1280,
             "imageUrls": [
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1280/B4DZYRuX2gHABQ-/0/1744054093393?e=1744941600&v=beta&t=qqy8wpr53mi5Od8RoWS6QQmyrsVCfu2h1Wvshg5daY8",
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1280/B4DZYRuX2gHABQ-/1/1744054093393?e=1744941600&v=beta&t=E1QZF-qSklyfK62pZZRdO3vkhpn9WkQtvGQzleDttUg",
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1280/B4DZYRuX2gHABQ-/2/1744054093393?e=1744941600&v=beta&t=tM4i068Ypp9X_oWCm2r1BWklOz3_4YYID_XqG0G2qSs"
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1280/B4DZYRuX2gHABQ-/0/1744054093393?e=1745028000&v=beta&t=NkXR4opb7lPx0ZMF_EF6pZ01utkpZ5IvamlUu9xQ-Fs",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1280/B4DZYRuX2gHABQ-/1/1744054093393?e=1745028000&v=beta&t=bHki14ge8-AZTShgssQ_WuUeNmLNmUrPmF6bZhdPZBo",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1280/B4DZYRuX2gHABQ-/2/1744054093393?e=1745028000&v=beta&t=vMeuSynaaD56OjxPDjaucd9bT9X-51qyVOt0Mn0V0n8"
             ]
           },
           {
             "width": 1440,
             "height": 1920,
             "imageUrls": [
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1920/B4DZYRuX2gHAAw-/0/1744054094403?e=1744941600&v=beta&t=33SMhJwzPDXfH4KciATFC5ewM2IEOz2FWy5VfeLeSqM",
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1920/B4DZYRuX2gHAAw-/1/1744054094403?e=1744941600&v=beta&t=3DQ7f-M8Qw1Iau-3xxteiX0uDK_WgaBm8PaWOzWeeTk",
-              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1920/B4DZYRuX2gHAAw-/2/1744054094403?e=1744941600&v=beta&t=lGCsFMI2WWZyyDkDaWFLueMMnGUx8HCwlNg0CTHakAI"
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1920/B4DZYRuX2gHAAw-/0/1744054094403?e=1745028000&v=beta&t=cGCKRWWmJkycfQq-KT1hsaVnQNXyEvgUsR6RxNlC19o",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1920/B4DZYRuX2gHAAw-/1/1744054094403?e=1745028000&v=beta&t=pbkCTJFlwB1uAKJigQeDTwpu5vVVr0leQBgv6UaRX0M",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQEU0Irrsk5e-g/feedshare-document-cover-images_1920/B4DZYRuX2gHAAw-/2/1744054094403?e=1745028000&v=beta&t=9PLpr2eAWEiFr08Dd9nYuruHID-4GXQOw-Cgc8BBb3s"
             ]
           }
         ]
@@ -414,8 +617,8 @@
       "totalReactionCount": 3,
       "likeCount": 3,
       "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7314008685779783680/",
-      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_ai-activity-7314008685779783680-T1lF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFgEL5sBLW9JEdlYQ-HlyeK12XG-DifHtvk",
-      "postedAt": "5d",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_ai-activity-7314008685779783680-T1lF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFjq47kB5tAkD32MqmsPyQCI7679TWmYYPw",
+      "postedAt": "6d",
       "postedDate": "2025-04-04 19:39:18.4 +0000 UTC",
       "postedDateTimestamp": 1743795558400,
       "urn": "7314008685779783680",
@@ -497,8 +700,8 @@
       "totalReactionCount": 3,
       "likeCount": 3,
       "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7314008685779783680/",
-      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_ai-activity-7314008685779783680-T1lF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFjq47kB5tAkD32MqmsPyQCI7679TWmYYPw",
-      "postedAt": "6d",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_ai-activity-7314008685779783680-T1lF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFgEL5sBLW9JEdlYQ-HlyeK12XG-DifHtvk",
+      "postedAt": "5d",
       "postedDate": "2025-04-04 19:39:18.4 +0000 UTC",
       "postedDateTimestamp": 1743795558400,
       "urn": "7314008685779783680",
