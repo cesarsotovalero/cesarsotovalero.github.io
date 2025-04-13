@@ -21,9 +21,9 @@ I'm César, a [computer scientist](./publications.html), [software engineer](./s
 
 I'm passionate about software, research, and education. 
 
-My one-page [résumé](../files/CV/resume-cesar-2025.pdf).
+Here's my one-page [résumé](../files/CV/resume-cesar-2025.pdf).
 
-For recruiters, please check out [my professional values](./my-professional-values.html).
+I wrote about my professional values [here](./my-professional-values.html).
 
 **Current Position:** Data Scientist, working in [SEB](https://seb.se/) since April 2023 <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
 
