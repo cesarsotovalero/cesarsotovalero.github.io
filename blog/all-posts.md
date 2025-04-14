@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /blog/all-posts.html
 title: 'All Posts'
 subtitle: The complete list
 description: "All the blog posts written by Cesar Soto Valero"

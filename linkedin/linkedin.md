@@ -3,13 +3,20 @@ permalink: linkedin.html
 layout: page
 title: LinkedIn Posts
 subtitle: "🤝"
-description: List of LinkedIn posts videos posted by César Soto Valero.
+description: LinkedIn posts posted by César Soto Valero.
 published: true
 ---
 
 {% include follow-on-linkedin.html %}
 
-<div class="linkedin-posts-container">
+<!-- Buttons for ordering LinkedIn posts -->
+<div class="list-filters">
+   <a href="/linkedin/all-posts.html" class="list-filter">All Posts (by Year)</a>
+   <a href="/linkedin/more-reactions.html" class="list-filter">More Reactions</a>
+   <a href="/linkedin/more-comments.html" class="list-filter">More Comments</a>
+</div>
+
+<div class="linkedin-posts-container post-preview">
   {% for post in site.data.linkedin-posts.data %}
   <a href="{{ post.postUrl }}" target="_blank" class="linkedin-post-link">
     <div class="linkedin-post-card">

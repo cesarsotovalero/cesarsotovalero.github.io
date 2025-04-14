@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 'This Month'
+permalink: /blog/this-month.html
 subtitle: Published posts
 description: "All the blog posts written this month by Cesar Soto Valero"
 ---
@@ -16,10 +17,12 @@ description: "All the blog posts written this month by Cesar Soto Valero"
       &nbsp;{{ current_month_name }},&nbsp;{{- current_year -}}
    </h3>
    <div class="post-list">
+      {%- assign has_posts = false -%}
       {%- for post in site.posts -%}
       {%- assign post_year = post.date | date: "%Y" -%}
       {%- assign post_month = post.date | date: "%m" -%}
       {%- if post_year == current_year and post_month == current_month -%}
+      {%- assign has_posts = true -%}
       <div class="tag-entry">
          <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
          <div class="entry-date">
@@ -31,6 +34,13 @@ description: "All the blog posts written this month by Cesar Soto Valero"
       </div>
       {%- endif -%}
       {%- endfor -%}
+      {%- if has_posts == false -%}
+      <div class="no-posts">
+         <p>           
+            No posts published this month yet 😕
+         </p>
+      </div>
+      {%- endif -%}
    </div>
 </div>
 

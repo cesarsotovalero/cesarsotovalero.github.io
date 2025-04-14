@@ -9,7 +9,15 @@ published: true
 
 {% include subscribe-on-youtube.html %}
 
-<div class="youtube-videos-container">
+<!-- Buttons for ordering YouTube videos -->
+<div class="list-filters">
+   <a href="/youtube/all-videos.html" class="list-filter">All Videos (by Year)</a>
+   <a href="/youtube/more-views.html" class="list-filter">More Views</a>
+   <a href="/youtube/more-likes.html" class="list-filter">More Likes</a>
+   <a href="/youtube/more-comments.html" class="list-filter">More Comments</a>
+</div>
+
+<div class="youtube-videos-container post-preview">
   {% for video in site.data.youtube-videos %}
   <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" class="youtube-video-link">
     <div class="youtube-video-card">
