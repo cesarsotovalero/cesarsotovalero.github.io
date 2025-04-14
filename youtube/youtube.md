@@ -11,10 +11,10 @@ published: true
 
 <!-- Buttons for ordering YouTube videos -->
 <div class="list-filters">
-   <a href="/youtube/all-videos.html" class="list-filter">All Videos (by Year)</a>
-   <a href="/youtube/more-views.html" class="list-filter">More Views</a>
-   <a href="/youtube/more-likes.html" class="list-filter">More Likes</a>
-   <a href="/youtube/more-comments.html" class="list-filter">More Comments</a>
+   <a href="/youtube/all.html" class="list-filter">By Year</a>
+   <a href="/youtube/views.html" class="list-filter">By Views</a>
+   <a href="/youtube/likes.html" class="list-filter">By Likes</a>
+   <a href="/youtube/comments.html" class="list-filter">By Comments</a>   
 </div>
 
 <div class="youtube-videos-container post-preview">
