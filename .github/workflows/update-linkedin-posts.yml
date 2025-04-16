@@ -17,9 +17,13 @@ jobs:
           path: _data
           # Enable sparse checkout to fetch only specific files
           sparse-checkout: true
-          # Define the files or directories to include
-          sparse-checkout-config: |
-            _data/linkedin-posts.json
+          fetch-depth: 0
+
+      - name: Configure sparse checkout
+        run: |
+          git sparse-checkout init --cone
+          git sparse-checkout set _data/linkedin-posts.json
+          git checkout
 
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
