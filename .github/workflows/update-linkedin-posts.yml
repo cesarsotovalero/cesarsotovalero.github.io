@@ -51,7 +51,6 @@ jobs:
           mv -f merged.json _data/linkedin-posts.json
 
       - name: Commit and push changes if any
-        working-directory: _data
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
