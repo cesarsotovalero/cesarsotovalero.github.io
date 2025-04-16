@@ -40,6 +40,3 @@ published: true
   </a>
   {% endfor %}
 </div>
-
-[//]: # (console.log&#40;"Total YouTube videos: " + site.data.youtube-videos.length&#41;;)
-
