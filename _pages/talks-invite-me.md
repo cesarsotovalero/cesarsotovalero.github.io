@@ -11,7 +11,7 @@ published: true
 
 I'm always grateful for opportunities to share my knowledge and experiences.
 
-If you'd like to have me at your event, feel free to [:email: email me](mailto:cesarsotovalero@gmail.com).
+If you'd like to have me at your event, feel free to contact me using [this form](../about-me#contact-me).
 
 I don't charge a speaking fee, but I kindly ask that you cover economy-class airfare and accommodation in a decent hotel if the talk is in-person.[^1]
 
