@@ -7,25 +7,12 @@ subtitle: 📢
 published: true
 ---
 
-# Invite Me to Speak
-
-I'm always grateful for opportunities to share my work.
-If you'd like to have me at your event, feel free to [:email: email me](mailto:cesarsotovalero@gmail.com).
-I don’t charge a speaking fee, but I kindly ask that you cover economy-class airfare and accommodation in a decent hotel.[^1]
-
-Due to limited availability, I can’t accept all invitations.
-If I’m not yet familiar with your event, including the following details in your email will help me better evaluate your request:
-
-- Event details (e.g., name, date, location)
-- Audience (e.g., estimated size, technical level)
-- Topic/s you’d like me to cover
-- Budget for my talk
-
-Looking forward to hearing from you!
-
 # Past Events
 
 I've given talks at academic and industry conferences, workshops, and similar events.
+
+I you want to invite me to speak at your event, look [here](./talks/invite-me.html).
+
 Below is a non-exhaustive list of my talks in reverse chronological order.
 
 ## 2024
@@ -85,7 +72,3 @@ Below is a non-exhaustive list of my talks in reverse chronological order.
 
 - **Bloatware Mitigation and Analysis**. Presented at _5th ASSERT Software Engineering Workshop_, Stockholm, Sweden, November 2018. [Slides](https://docs.google.com/presentation/d/1LYvt7fFdGf_VvdlD2XRHzUTfZZOqM55Wopw6IYM6PNQ/edit?usp=sharing)
 - **Mining Software Dependencies at Large Scale: A Preliminary Study on the Maven Central Repository**. Presented at _4th ASSERT Software Engineering Workshop_, Stockholm, Sweden, September 2018. [Slides](https://docs.google.com/document/d/1IMhDIJjDIT_KuFLYSa5agPMvbCA8klBCemSLZI4id04/edit?usp=sharing)
-
-# Footnotes
-
-[^1]: Note that I avoid posting promotional content, so take into account that I won't be able to promote your event if I speak there.
