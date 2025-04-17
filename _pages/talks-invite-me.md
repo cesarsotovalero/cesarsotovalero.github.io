@@ -13,9 +13,9 @@ I'm always grateful for opportunities to share my knowledge and experiences.
 
 If you'd like to have me at your event, feel free to contact me using [this form](../about-me#contact-me).
 
-I don't charge a speaking fee, but I kindly ask that you cover economy-class airfare and accommodation in a decent hotel if the talk is in-person.[^1]
+I don't charge a speaking fee, but I kindly ask that you cover economy-class airfare and accommodation in a decent hotel if the talk is in-person.
 
-**Note:** I'm fine posting promotional content, so I can promote your event if I speak there 😉
+**Note:** I'm fine posting promotional content, so I can promote your event on my social network channels if I speak there 😉
 
 Due to limited availability, I can’t accept all invitations.
 
