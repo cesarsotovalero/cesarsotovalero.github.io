@@ -4,6 +4,90 @@
   "data": [
     {
       "isBrandPartnership": false,
+      "text": "ML projects don’t fail because models are wrong, they fail because the training data is unreliable.\n\nIn my experience, unreliable data pipelines are the fastest way to destroy trust in our work.\n\nThat’s why determinism and idempotence in data transformation pipelines aren’t “nice-to-haves.” They’re our first line of defense!\n\nDeterminism:\n↳ same input data, same output - every single time.\n\nIdempotence:\n↳ run the same operation once or 100x - result doesn’t change.\n\nSo, how to get both of them?\n\nStart here:\n\n✅ Make every transformation deterministic\n→ No randomness without fixed seeds\n→ No reliance on timestamps or implicit environment state\n→ No third-party data without versioning\n\n✅ Make every job idempotent\n→ Safe to re-run without side effects\n→ Always overwrite outputs, never append blindly\n→ Use unique, content-based identifiers for deduplication\n\n✅ Test like credibility depends on it (because it does)\n→ Compare outputs over time\n→ Add pipeline-level regression tests\n→ Monitor for unexpected failures\n\nDeterminism + Idempotence = No+👻",
+      "totalReactionCount": 7,
+      "likeCount": 6,
+      "InterestCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7318992044218023937/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_ml-projects-dont-fail-because-models-are-activity-7318992044218023937--JYk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFizWW0BIikUCQOVu5MuHOJsmIP0LeYWOAU",
+      "postedAt": "11h",
+      "postedDate": "2025-04-18 13:41:23.638 +0000 UTC",
+      "postedDateTimestamp": 1744983683638,
+      "urn": "7318992044218023937",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1750291200&v=beta&t=_Z1iqR2Es9HJLW1B8n8us-0cWVUZkkNn_tDc63SLx74"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1750291200&v=beta&t=nN7pb2xuzocf8LSE1khVn21O1VQ45n94xepq8cE-wFM"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1750291200&v=beta&t=6_s8BiVbwBm0BvQ9SZ5YG0dboPKy9hc08cReThZqAg8"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1750291200&v=beta&t=Q4YWpCRIuu8HvzUvFk3j0UgACNmwPUe2HqAHyArFBnY"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_800/B4DZZJIepQGkAk-/0/1744983682044?e=1747872000&v=beta&t=OmXslDPEpWdRV-oe23OlWV41PRkw8NTO1fHqUXhIrtI",
+          "width": 800,
+          "height": 1066
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_160/B4DZZJIepQGkAg-/0/1744983682044?e=1747872000&v=beta&t=2ZSSNkIsjaUJclVZgY0un5y2N4yF3nR6-nHXuY3xT4M",
+          "width": 160,
+          "height": 213
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_2048_1536/B4DZZJIepQGkAs-/0/1744983682096?e=1747872000&v=beta&t=_ZSeEet0MWO2xXUj_FFu5bv-Z6lHkFnKtN7cgVSduts",
+          "width": 1152,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_480/B4DZZJIepQGkAc-/0/1744983682044?e=1747872000&v=beta&t=oZeOaZxJPEgLh4h1QjSqcBNEhPcaUC1S8LYXbYDjLXI",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_20/B4DZZJIepQGkA0-/0/1744983682063?e=1747872000&v=beta&t=8jwMuzLViFUF0xte6Jm5TvArFX3GKzGIxKa697hpSuk",
+          "width": 20,
+          "height": 26
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_1280/B4DZZJIepQGkAo-/0/1744983682063?e=1747872000&v=beta&t=HzVQc7ZUWUwyV_awt3PIzlFjtsGNKLxhltb1FVLSGRw",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
       "text": "Once upon a time… we actually used to read tech books. Do you remember?\n\nThose days were truly amazing!\n\nIt's incredibly that we had the time (and the patience) to go over books from start to finish.\n\nWhenever I wanted to learn something new, I’d just grab a good one from a reputable source and start from scratch.\n\nA good thing I remember is that most books were created to teach \"why\" things worked, not just \"how.\" Step by step. Concept by concept.\n\nWe kept them on our shelves and the chapters in our minds, like mental maps we could revisit anytime.\n\nBut today?\n\n↳ Tech moves so fast that by the time you finish a book, it might already be outdated.\n\nWhy?\n\n↳ Because the levels of abstraction keep climbing. Everything is built on top of frameworks, libraries, or APIs that evolve overnight.\n\nAnd also now, with #LLMs, we just ask for what we need, right when we need it. No need to store the sources anymore.\n\nStill… I miss the feeling of quietly reading for the sake of it.\n\nThe feeling of having no pressure, no rush to build something asap.\n\nJust learning for fun... did it actually exist?\n\nReading books has become a luxury. That's it.\n\nA luxury for people who have the most valuable resource on earth: time.\n\nIf you’re one of them, enjoy 📖, because many of us have already succumbed to the LLMs 🤖\n\nP.S. Yes, there are still timeless classics every dev should read, you should know the ones ;)",
       "totalReactionCount": 12,
       "likeCount": 11,
@@ -12,6 +96,91 @@
       "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7317896374929268737/",
       "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_llms-activity-7317896374929268737-OkIV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkJbTIBXFn5fBn9Xt2zGWcp3RcTt3sbl8I",
       "postedAt": "2d",
+      "postedDate": "2025-04-15 13:07:35.723 +0000 UTC",
+      "postedDateTimestamp": 1744722455723,
+      "urn": "7317896374929268737",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1750291200&v=beta&t=_Z1iqR2Es9HJLW1B8n8us-0cWVUZkkNn_tDc63SLx74"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1750291200&v=beta&t=nN7pb2xuzocf8LSE1khVn21O1VQ45n94xepq8cE-wFM"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1750291200&v=beta&t=6_s8BiVbwBm0BvQ9SZ5YG0dboPKy9hc08cReThZqAg8"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1750291200&v=beta&t=Q4YWpCRIuu8HvzUvFk3j0UgACNmwPUe2HqAHyArFBnY"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_1280/B4DZY5j9qpG8Ak-/0/1744722455020?e=1747872000&v=beta&t=VFiJmsH0kHsvYxeA2ruWS4znw-aHFilAOgsZlRec5Po",
+          "width": 1280,
+          "height": 1706
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_480/B4DZY5j9qpG8AY-/0/1744722455020?e=1747872000&v=beta&t=Xuc4Ip1-7eQ11tB4ze9eTcithVeXAmYlcOnX4Y0V4rY",
+          "width": 480,
+          "height": 639
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_20/B4DZY5j9qpG8Aw-/0/1744722455010?e=1747872000&v=beta&t=SwvfCvdbU1894KB5K3z1ySzt3OI1TYp7mh4v6E8tqSk",
+          "width": 20,
+          "height": 26
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_800/B4DZY5j9qpG8Ag-/0/1744722455020?e=1747872000&v=beta&t=P9vyPr-ZW280FZ9JrckCJGQbuJZyzBrh6Vbl8YMB0LE",
+          "width": 800,
+          "height": 1066
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_160/B4DZY5j9qpG8Ac-/0/1744722455010?e=1747872000&v=beta&t=7C8heLzQmbPhKLoN3OeBs5vQQTsg1GT-HywMYlDAOl4",
+          "width": 160,
+          "height": 213
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_2048_1536/B4DZY5j9qpG8Ao-/0/1744722455038?e=1747872000&v=beta&t=WxKdlWF3MAgoAMrZpwo2CdO1TOe0ZVTlZlVnQ5H6hiE",
+          "width": 1152,
+          "height": 1536
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "Once upon a time… we actually used to read tech books. Do you remember?\n\nThose days were truly amazing!\n\nIt's incredibly that we had the time (and the patience) to go over books from start to finish.\n\nWhenever I wanted to learn something new, I’d just grab a good one from a reputable source and start from scratch.\n\nA good thing I remember is that most books were created to teach \"why\" things worked, not just \"how.\" Step by step. Concept by concept.\n\nWe kept them on our shelves and the chapters in our minds, like mental maps we could revisit anytime.\n\nBut today?\n\n↳ Tech moves so fast that by the time you finish a book, it might already be outdated.\n\nWhy?\n\n↳ Because the levels of abstraction keep climbing. Everything is built on top of frameworks, libraries, or APIs that evolve overnight.\n\nAnd also now, with #LLMs, we just ask for what we need, right when we need it. No need to store the sources anymore.\n\nStill… I miss the feeling of quietly reading for the sake of it.\n\nThe feeling of having no pressure, no rush to build something asap.\n\nJust learning for fun... did it actually exist?\n\nReading books has become a luxury. That's it.\n\nA luxury for people who have the most valuable resource on earth: time.\n\nIf you’re one of them, enjoy 📖, because many of us have already succumbed to the LLMs 🤖\n\nP.S. Yes, there are still timeless classics every dev should read, you should know the ones ;)",
+      "totalReactionCount": 13,
+      "likeCount": 12,
+      "praiseCount": 1,
+      "commentsCount": 3,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7317896374929268737/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_llms-activity-7317896374929268737-OkIV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFizWW0BIikUCQOVu5MuHOJsmIP0LeYWOAU",
+      "postedAt": "3d",
       "postedDate": "2025-04-15 13:07:35.723 +0000 UTC",
       "postedDateTimestamp": 1744722455723,
       "urn": "7317896374929268737",
