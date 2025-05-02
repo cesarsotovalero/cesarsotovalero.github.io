@@ -2,8 +2,8 @@ name: Update LinkedIn Posts
 
 on:
   schedule:
-    # Runs every day at midnight UTC
-    - cron: '0 0 * * *'
+    # Runs every monday at midnight UTC
+    - cron: '0 0 * * *' 
   workflow_dispatch:
 
 jobs:
