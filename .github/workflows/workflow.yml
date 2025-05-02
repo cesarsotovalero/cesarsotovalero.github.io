@@ -17,9 +17,6 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v2
 
-      - name: Pull remote changes
-        run: git pull --rebase origin gh-pages
-
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
