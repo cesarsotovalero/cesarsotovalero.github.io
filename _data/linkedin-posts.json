@@ -2,444 +2,619 @@
   "success": true,
   "message": "",
   "data": [
-      {
-        "isBrandPartnership": false,
-        "text": "Pandas is dead. Long live Polars.\n\nAnd I know, it hurts... \nI’ve used Pandas for years. But after trying Polars, there’s no turning back.\n\nWhy?\n\nBecause Polars is blazing fast.\nIt’s built in Rust 🦀 and powered by Apache Arrow 🏹, giving it an edge that Pandas can’t match.\n\nPolars optimizes operations.\nLike Spark, it builds an execution graph and runs it only when needed, thanks to its lazy evaluation mechanism.\n\nAnyway, I was never comfortable with Pandas' syntax.\nPandas’ is imperative, Polars embraces a functional style → clean, expressive, and reminiscent of R’s tidyverse (yep, I was an R fanboy before Python took over data-verse).\n\nBut here’s what sealed the deal for me to use Polars:\n\n🔹Transformations return new objects by default, no side effects, no surprises.\n🔹It runs multi-threaded, utilizing every core without me lifting a finger.\n🔹It’s energy efficient, researchers recommend it over Pandas for large datasets.\n\nExperiments from an EASE 2024 paper show clear results:\n\n“Polars dramatically reduces execution time and energy use, especially on large Data Analysis Tasks (DATs).”\n \nFull paper here: https://lnkd.in/dR2aeh-d\n\nIf you’re still clinging to Pandas, ask yourself:\n\nWhy settle for slow, clunky libraries in a world that demands speed, clarity, and efficiency?\n\nChoose wisely, my friend 🐻‍❄️",
-        "totalReactionCount": 106,
-        "likeCount": 96,
-        "empathyCount": 3,
-        "InterestCount": 6,
-        "praiseCount": 1,
-        "commentsCount": 21,
-        "repostsCount": 6,
-        "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7323424558298873857/",
-        "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_pandas-is-dead-long-live-polars-and-i-activity-7323424558298873857-QYqx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFg3ZY8Bg6uFXd0Jla8wOcMwO2r3_Yl6oms",
-        "postedAt": "1d",
-        "postedDate": "2025-04-30 19:14:37.347 +0000 UTC",
-        "postedDateTimestamp": 1746040477347,
-        "urn": "7323424558298873857",
-        "author": {
-          "id": 512443526,
-          "firstName": "César",
-          "lastName": "Soto Valero",
-          "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
-          "username": "cesarsotovalero",
-          "url": "https://www.linkedin.com/in/cesarsotovalero",
-          "profilePictures": [
-            {
-              "width": 200,
-              "height": 200,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
-            },
-            {
-              "width": 400,
-              "height": 400,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
-            },
-            {
-              "width": 100,
-              "height": 100,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
-            },
-            {
-              "width": 800,
-              "height": 800,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
-            }
-          ],
-          "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
-        },
-        "image": [
+    {
+      "isBrandPartnership": false,
+      "text": "I'm all in on AI, but there are some uncomfortable echoes from the past that I can’t ignore.\n\nDo you still remember the blockchain “revolution” 5 years ago?\nI do, and it's clear that it never happened.\n\nBillions were poured in 💰\nBold promises about a economic freedom and a new Web3 were made.\nBut half a decade later, most companies walked away from the idea.\n\nDisclaimer: I truly believed in blockchain, I even ran my own Ethereum nodes and wrote research papers about it!\n\nNow, I look around...\nAnd sometimes it feels like I’m hearing the same kind of hype all over again.\n\n“We're becoming an AI-first company.”\nThat’s the new memo trend from CEOs at big tech companies.\n\nBut the latest AI Index 2025 Report tells a different story:\n\n↳ “So far, most companies are seeing less than 5% revenue growth from their AI investments.” \n\nAfter all the pitches, all the funding, and all the models. \nIt looks like the actual returns haven’t arrived yet.\nMost are waiting for that big ROI.\n\nStill, no one wants to hit the brakes.\n\nSo, here’s what I think:\n\nAI tech isn’t failing.\nIt’s just not magic.\nYet, it's very easy to buy such promises.\n\nYou don’t transform a company with a tool.\nYou do it with vision.\nWith iteration.\nAnd above all, with the joined efforts of great human talents.\n\nSo please, let’s stop chasing headlines.\nLet’s build quietly, strategically.\nBecause we’re not going to reinvent society in a few quarters.\nIt’ll take years.\n\nIf you're committed for the long haul, you’re exactly where you need to be.\n\nAnd hopefully, this time, we won't end up with just more speculation and memecoins 🪙\n\n👇 Source: https://lnkd.in/d2K6VeWN",
+      "totalReactionCount": 7,
+      "likeCount": 5,
+      "InterestCount": 2,
+      "commentsCount": 1,
+      "repostsCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7324154782640717825/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_im-all-in-on-ai-but-there-are-some-uncomfortable-activity-7324154782640717825-AEPS?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFlCX2QB97yve6EFlhpVHOBhqHmjZVrwwes",
+      "postedAt": "6h",
+      "postedDate": "2025-05-02 19:36:16.397 +0000 UTC",
+      "postedDateTimestamp": 1746214576397,
+      "urn": "7324154782640717825",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
           {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_160/B4DZaIH097HQAg-/0/1746040476057?e=1749081600&v=beta&t=xGhy-Jjy_YNSanhwEurm--gmgtx85g9_BefsESzzekY",
-            "width": 160,
-            "height": 213
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
           },
           {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_20/B4DZaIH097HQA0-/0/1746040476057?e=1749081600&v=beta&t=-ubgEUoWDflXL64JvHb8s0Varx9OWPVNq3BsvzEP8x4",
-            "width": 20,
-            "height": 26
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
           },
           {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_480/B4DZaIH097HQAc-/0/1746040476057?e=1749081600&v=beta&t=TO7qe5QHfsghRnkMGd75-dbRCViQYuzF5yYZD90bxwU",
-            "width": 480,
-            "height": 640
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
           },
           {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_2048_1536/B4DZaIH097HQAs-/0/1746040476084?e=1749081600&v=beta&t=NsZG96TY5Myy0FV5BjjpDeXehDuZCUD2y6wHGG0iMnI",
-            "width": 720,
-            "height": 960
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_1280/B4DZaIH097HQAo-/0/1746040476061?e=1749081600&v=beta&t=V88HVifJGmXDFSJOgOtbba0x3gwVVKwS6KPnKJHbSwk",
-            "width": 720,
-            "height": 960
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_800/B4DZaIH097HQAk-/0/1746040476061?e=1749081600&v=beta&t=66vNxXdu9Vl-zH5zfa--jFMhn8aAnpdvQy2hN779ClA",
-            "width": 720,
-            "height": 960
-          }
-        ],
-        "company": {},
-        "document": {},
-        "celebration": {},
-        "poll": {},
-        "article": {
-          "newsletter": {}
-        },
-        "entity": {}
-      },
-      {
-        "isBrandPartnership": false,
-        "text": "GitHub just released a dataset to compare OSS collaborations between global economies, and it confirms something I’ve long suspected:\n\nThe EU is the world’s OSS workforce, whereas the US is the world’s OSS headquarter and largest beneficiary. \n\nThe inbound/outbound collaborator graphs make it clear 👇\n\n📥 Inbound → Who Receives?\n\nThe US sees a huge inflow. Developers worldwide contribute to US-owned repos. In contrast, the EU gets far fewer inbound contributions than it sends out.\n\n📤 Outbound → Who Gives?\n\nThe EU leads in outbound activity. EU devs contribute heavily to projects outside the region. The US contributes far less by comparison.\n\n⚖️ The imbalance is huge, meaning:\n\n↳ OSS gravity (forks, issues, PRs, and visibility) pulls toward the US, whereas EU projects don’t attract the same global attention.\n↳ The EU is a code contributor, not a code destination.\n↳ For the US, this leads to better sustainability, faster innovation, and more influence. \n↳ For the EU, it’s a strategic vulnerability, relying on OSS platforms it doesn’t control.\n↳ Key libraries and infrastructure are US-based, eroding EU digital sovereignty.\n↳ EU devs are working for free on US projects, efforts without royalties.\n\nThis tech power imbalance is worth fixing.\n\n🎯 Here’re three ways to start changing it:\n\n1. The EU should invest more on local OSS (tools, libraries, and specially AI frameworks).\n2. The EU should host and protect key projects within EU jurisdictions.\n3. The EU should create OSS alliances and Foundations, building contributor communities across EU countries. \n\nOn my view, this obviously isn’t a lack of talent. It’s a failure of platform and resources' ownership.\n\nYou build it 💻. You run it ⚡️. You earn from it 💰. That’s how it should be.\n\nSource: https://lnkd.in/dJRnE7Va\n\nP.S. The width of each stream in the graphs below represents the volume of git pushes and PRs from one economy to others. Wider = more collaboration flow. China (in blue), has similar inbound/outbound margins.",
-        "totalReactionCount": 26,
-        "likeCount": 14,
-        "empathyCount": 1,
-        "InterestCount": 10,
-        "praiseCount": 1,
-        "repostsCount": 6,
-        "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7320831336020103168/",
-        "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_github-just-released-a-dataset-to-compare-activity-7320831336020103168-GLPc?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFg3ZY8Bg6uFXd0Jla8wOcMwO2r3_Yl6oms",
-        "postedAt": "1w",
-        "postedDate": "2025-04-23 15:30:04.976 +0000 UTC",
-        "postedDateTimestamp": 1745422204976,
-        "urn": "7320831336020103168",
-        "author": {
-          "id": 512443526,
-          "firstName": "César",
-          "lastName": "Soto Valero",
-          "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
-          "username": "cesarsotovalero",
-          "url": "https://www.linkedin.com/in/cesarsotovalero",
-          "profilePictures": [
-            {
-              "width": 200,
-              "height": 200,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
-            },
-            {
-              "width": 400,
-              "height": 400,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
-            },
-            {
-              "width": 100,
-              "height": 100,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
-            },
-            {
-              "width": 800,
-              "height": 800,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
-            }
-          ],
-          "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
-        },
-        "image": [
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_2048_1536/B4DZZinVu1HwAo-/0/1745411202792?e=1749081600&v=beta&t=R23iFF3Cp-0pVVubgEfdGGETkNSyOy4UyxhpJsUZUcI",
-            "width": 960,
-            "height": 720
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_160/B4DZZinVu1HwAc-/0/1745411202700?e=1749081600&v=beta&t=CnjEJ7M7SQOusV34-jZimA-mFyVb4Ad1mIY5r83rlpo",
-            "width": 160,
-            "height": 120
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_800/B4DZZinVu1HwAg-/0/1745411202700?e=1749081600&v=beta&t=xm2OJCQcevGswCxqqo9LYAUj0G68um_03tiSfwLd6p8",
             "width": 800,
-            "height": 600
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_20/B4DZZinVu1HwAw-/0/1745411202700?e=1749081600&v=beta&t=ugr5Q1pwHxea6hpUhm5cQWJXOTuWN3XjGXsWoyk4O1k",
-            "width": 20,
-            "height": 15
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_480/B4DZZinVu1HwAY-/0/1745411202716?e=1749081600&v=beta&t=ZfgztOwBLcU6zaGNiX498H77xAynrd5N589WecUlrYo",
-            "width": 480,
-            "height": 360
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_1280/B4DZZinVu1HwAk-/0/1745411202716?e=1749081600&v=beta&t=UNUh3krjcWnfPxyPNA_VJsnupFZOW2gO7tLTgbUuyuw",
-            "width": 960,
-            "height": 720
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
           }
         ],
-        "company": {},
-        "document": {},
-        "celebration": {},
-        "poll": {},
-        "article": {
-          "newsletter": {}
-        },
-        "entity": {},
-        "companyMentions": [
-          {
-            "id": 1418841,
-            "name": "GitHub",
-            "publicIdentifier": "github",
-            "url": "https://www.linkedin.com/company/github/"
-          }
-        ]
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
       },
-      {
-        "isBrandPartnership": false,
-        "text": "I hit it off with uv at first sight. Nothing against pip though, it’s been my reliable partner for years, and we’ve shared many great memories together. But uv? It’s a game-changer 💘\n\nIt’s 10-100x faster than pip, supports lockfiles, manages Python versions effortlessly, and even comes with a global cache for dependency deduplication. Awesome!\n\nBut... \n\nToday, I discovered that uv isn’t perfect. It gets jealous really quickly. It insists on starting fresh and won’t let me hang out with my old friends. Anything built with Python <3.7 is an absolute no-go 😟\n\nI get it, uv. You’re all about progress. But what about those old mates I have to stay in touch with? There’s no way I can completely ditch them. They matter too!\n\nBackward compatibility isn’t just a nice-to-have; it’s essential!\n\nAnd sure, you can ignore it... until you can’t ⏳",
-        "totalReactionCount": 8,
-        "likeCount": 7,
-        "InterestCount": 1,
-        "commentsCount": 3,
-        "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7320440316522582016/",
-        "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_i-hit-it-off-with-uv-at-first-sight-nothing-activity-7320440316522582016-Bpcw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFg3ZY8Bg6uFXd0Jla8wOcMwO2r3_Yl6oms",
-        "postedAt": "1w",
-        "postedDate": "2025-04-22 13:36:18.663 +0000 UTC",
-        "postedDateTimestamp": 1745328978663,
-        "urn": "7320440316522582016",
-        "author": {
-          "id": 512443526,
-          "firstName": "César",
-          "lastName": "Soto Valero",
-          "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
-          "username": "cesarsotovalero",
-          "url": "https://www.linkedin.com/in/cesarsotovalero",
-          "profilePictures": [
-            {
-              "width": 200,
-              "height": 200,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
-            },
-            {
-              "width": 400,
-              "height": 400,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
-            },
-            {
-              "width": 100,
-              "height": 100,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
-            },
-            {
-              "width": 800,
-              "height": 800,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
-            }
-          ],
-          "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGZKcByiOd84w/feedshare-shrink_160/B4DZaSf9P5G8Ag-/0/1746214574226?e=1749081600&v=beta&t=vJPUIU8ePjC78WmxvyQS_egheLS5T91i-7qvP-n6_no",
+          "width": 160,
+          "height": 89
         },
-        "image": [
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_1280/B4DZZdtrIyGgAs-/0/1745328977049?e=1749081600&v=beta&t=8mw0vKeQKn5eC2BwmFL0ME-5s6TXg6wvDXDaGy2P0qk",
-            "width": 720,
-            "height": 960
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_20/B4DZZdtrIyGgA4-/0/1745328977049?e=1749081600&v=beta&t=M31mdBgcj1QC7ptROLv0et4i1dzJ2kCvL_5X41XAEeY",
-            "width": 20,
-            "height": 26
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_800/B4DZZdtrIyGgAo-/0/1745328977049?e=1749081600&v=beta&t=gxsPC1ChrxuejGIuCAjUYxmR8oEQOGB3wWYeFSg-QBs",
-            "width": 720,
-            "height": 960
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_160/B4DZZdtrIyGgAk-/0/1745328977034?e=1749081600&v=beta&t=1hespCq-UnqS41dwkDL0VX1q9Qh5FIHcJ9DYcqx6UTA",
-            "width": 160,
-            "height": 213
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_2048_1536/B4DZZdtrIyGgAw-/0/1745328977056?e=1749081600&v=beta&t=Q2-d2vvWi_WF3pS-3FJw5WLBmbz9c39nrJ1wBJ8XTwA",
-            "width": 720,
-            "height": 960
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_480/B4DZZdtrIyGgAg-/0/1745328977034?e=1749081600&v=beta&t=MqmZ_C6gUrkpUIJLEwSzRzhuwEg9qAose32DNKcn4zo",
-            "width": 480,
-            "height": 640
-          }
-        ],
-        "company": {},
-        "document": {},
-        "celebration": {},
-        "poll": {},
-        "article": {
-          "newsletter": {}
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGZKcByiOd84w/feedshare-shrink_800/B4DZaSf9P5G8Ak-/0/1746214574226?e=1749081600&v=beta&t=EWk2WX5diwz19_cPBzlD4xRPt5VMw7IKBfVUa3-OW84",
+          "width": 800,
+          "height": 445
         },
-        "entity": {}
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGZKcByiOd84w/feedshare-shrink_1280/B4DZaSf9P5G8Ao-/0/1746214574226?e=1749081600&v=beta&t=Pb2r4vKZPDyIxooAeZTyCcHaLp220Y1uevHlLH8oCTI",
+          "width": 1280,
+          "height": 712
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGZKcByiOd84w/feedshare-shrink_480/B4DZaSf9P5G8Ac-/0/1746214574236?e=1749081600&v=beta&t=nNfyWO_IqSnX4MHYIaRBJnl33OUR9n7gUmxJIiNPt90",
+          "width": 480,
+          "height": 267
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGZKcByiOd84w/feedshare-shrink_2048_1536/B4DZaSf9P5G8As-/0/1746214574320?e=1749081600&v=beta&t=cw27Ch9UZhhw5a38D8XOd9OvsOpzjQmnp1IsQpl8Kfk",
+          "width": 1800,
+          "height": 1002
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGZKcByiOd84w/feedshare-shrink_20/B4DZaSf9P5G8A0-/0/1746214574236?e=1749081600&v=beta&t=8JNFDDvRTXVUYm14KJmvAL5pAI2JIHnXVAUPJ5-9X9E",
+          "width": 20,
+          "height": 11
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "article": {
+        "newsletter": {}
       },
-      {
-        "isBrandPartnership": false,
-        "text": "ML projects don’t fail because models are wrong, they fail because the training data is unreliable.\n\nIn my experience, unreliable data pipelines are the fastest way to destroy trust in our work.\n\nThat’s why determinism and idempotence in data transformation pipelines aren’t “nice-to-haves.” They’re our first line of defense!\n\nDeterminism:\n↳ same input data, same output - every single time.\n\nIdempotence:\n↳ run the same operation once or 100x - result doesn’t change.\n\nSo, how to get both of them?\n\nStart here:\n\n✅ Make every transformation deterministic\n→ No randomness without fixed seeds\n→ No reliance on timestamps or implicit environment state\n→ No third-party data without versioning\n\n✅ Make every job idempotent\n→ Safe to re-run without side effects\n→ Always overwrite outputs, never append blindly\n→ Use unique, content-based identifiers for deduplication\n\n✅ Test like credibility depends on it (because it does)\n→ Compare outputs over time\n→ Add pipeline-level regression tests\n→ Monitor for unexpected failures\n\nDeterminism + Idempotence = No+👻",
-        "totalReactionCount": 12,
-        "likeCount": 11,
-        "InterestCount": 1,
-        "commentsCount": 11,
-        "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7318992044218023937/",
-        "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_ml-projects-dont-fail-because-models-are-activity-7318992044218023937--JYk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFg3ZY8Bg6uFXd0Jla8wOcMwO2r3_Yl6oms",
-        "postedAt": "1w",
-        "postedDate": "2025-04-18 13:41:23.638 +0000 UTC",
-        "postedDateTimestamp": 1744983683638,
-        "urn": "7318992044218023937",
-        "author": {
-          "id": 512443526,
-          "firstName": "César",
-          "lastName": "Soto Valero",
-          "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
-          "username": "cesarsotovalero",
-          "url": "https://www.linkedin.com/in/cesarsotovalero",
-          "profilePictures": [
-            {
-              "width": 200,
-              "height": 200,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
-            },
-            {
-              "width": 400,
-              "height": 400,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
-            },
-            {
-              "width": 100,
-              "height": 100,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
-            },
-            {
-              "width": 800,
-              "height": 800,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
-            }
-          ],
-          "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
-        },
-        "image": [
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "Pandas is dead. Long live Polars.\n\nAnd I know, it hurts... \nI’ve used Pandas for years. But after trying Polars, there’s no turning back.\n\nWhy?\n\nBecause Polars is blazing fast.\nIt’s built in Rust 🦀 and powered by Apache Arrow 🏹, giving it an edge that Pandas can’t match.\n\nPolars optimizes operations.\nLike Spark, it builds an execution graph and runs it only when needed, thanks to its lazy evaluation mechanism.\n\nAnyway, I was never comfortable with Pandas' syntax.\nPandas’ is imperative, Polars embraces a functional style → clean, expressive, and reminiscent of R’s tidyverse (yep, I was an R fanboy before Python took over data-verse).\n\nBut here’s what sealed the deal for me to use Polars:\n\n🔹Transformations return new objects by default, no side effects, no surprises.\n🔹It runs multi-threaded, utilizing every core without me lifting a finger.\n🔹It’s energy efficient, researchers recommend it over Pandas for large datasets.\n\nExperiments from an EASE 2024 paper show clear results:\n\n“Polars dramatically reduces execution time and energy use, especially on large Data Analysis Tasks (DATs).”\n \nFull paper here: https://lnkd.in/dR2aeh-d\n\nIf you’re still clinging to Pandas, ask yourself:\n\nWhy settle for slow, clunky libraries in a world that demands speed, clarity, and efficiency?\n\nChoose wisely, my friend 🐻‍❄️",
+      "totalReactionCount": 106,
+      "likeCount": 96,
+      "empathyCount": 3,
+      "InterestCount": 6,
+      "praiseCount": 1,
+      "commentsCount": 21,
+      "repostsCount": 6,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7323424558298873857/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_pandas-is-dead-long-live-polars-and-i-activity-7323424558298873857-QYqx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFg3ZY8Bg6uFXd0Jla8wOcMwO2r3_Yl6oms",
+      "postedAt": "1d",
+      "postedDate": "2025-04-30 19:14:37.347 +0000 UTC",
+      "postedDateTimestamp": 1746040477347,
+      "urn": "7323424558298873857",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
           {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_800/B4DZZJIepQGkAk-/0/1744983682044?e=1749081600&v=beta&t=pwbYRUotA2dkUvCU5abioqz9nkWjSLoV8GuW7WJ8ymk",
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
+          },
+          {
             "width": 800,
-            "height": 1066
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_160/B4DZZJIepQGkAg-/0/1744983682044?e=1749081600&v=beta&t=v2jEQnGMgX4302vzjtfQhCDPZ8IT9uQQib4ia7auP_Y",
-            "width": 160,
-            "height": 213
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_2048_1536/B4DZZJIepQGkAs-/0/1744983682096?e=1749081600&v=beta&t=hIjavd7MAt5PtXv-io07aymgLazLSAzKLcnga0DFm_k",
-            "width": 1152,
-            "height": 1536
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_480/B4DZZJIepQGkAc-/0/1744983682044?e=1749081600&v=beta&t=uO3e-97Qti8OLBQL-KbLTUb21QXHP5HzW0EA8z2x4ww",
-            "width": 480,
-            "height": 640
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_20/B4DZZJIepQGkA0-/0/1744983682063?e=1749081600&v=beta&t=oy_MJ3tos4dU4-AyiDuO9ad9d9i8LeTm8yrl2ogQSOY",
-            "width": 20,
-            "height": 26
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_1280/B4DZZJIepQGkAo-/0/1744983682063?e=1749081600&v=beta&t=MAfFzwOEaODydqAB8ywqkjzcG6RZzhQoOvhi_s7q7vg",
-            "width": 1200,
-            "height": 1600
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
           }
         ],
-        "company": {},
-        "document": {},
-        "celebration": {},
-        "poll": {},
-        "article": {
-          "newsletter": {}
-        },
-        "entity": {}
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
       },
-      {
-        "isBrandPartnership": false,
-        "text": "Once upon a time… we actually used to read tech books. Do you remember?\n\nThose days were truly amazing!\n\nIt's incredibly that we had the time (and the patience) to go over books from start to finish.\n\nWhenever I wanted to learn something new, I’d just grab a good one from a reputable source and start from scratch.\n\nA good thing I remember is that most books were created to teach \"why\" things worked, not just \"how.\" Step by step. Concept by concept.\n\nWe kept them on our shelves and the chapters in our minds, like mental maps we could revisit anytime.\n\nBut today?\n\n↳ Tech moves so fast that by the time you finish a book, it might already be outdated.\n\nWhy?\n\n↳ Because the levels of abstraction keep climbing. Everything is built on top of frameworks, libraries, or APIs that evolve overnight.\n\nAnd also now, with #LLMs, we just ask for what we need, right when we need it. No need to store the sources anymore.\n\nStill… I miss the feeling of quietly reading for the sake of it.\n\nThe feeling of having no pressure, no rush to build something asap.\n\nJust learning for fun... did it actually exist?\n\nReading books has become a luxury. That's it.\n\nA luxury for people who have the most valuable resource on earth: time.\n\nIf you’re one of them, enjoy 📖, because many of us have already succumbed to the LLMs 🤖\n\nP.S. Yes, there are still timeless classics every dev should read, you should know the ones ;)",
-        "totalReactionCount": 26,
-        "likeCount": 23,
-        "praiseCount": 3,
-        "commentsCount": 3,
-        "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7317896374929268737/",
-        "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_llms-activity-7317896374929268737-OkIV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFg3ZY8Bg6uFXd0Jla8wOcMwO2r3_Yl6oms",
-        "postedAt": "2w",
-        "postedDate": "2025-04-15 13:07:35.723 +0000 UTC",
-        "postedDateTimestamp": 1744722455723,
-        "urn": "7317896374929268737",
-        "author": {
-          "id": 512443526,
-          "firstName": "César",
-          "lastName": "Soto Valero",
-          "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
-          "username": "cesarsotovalero",
-          "url": "https://www.linkedin.com/in/cesarsotovalero",
-          "profilePictures": [
-            {
-              "width": 200,
-              "height": 200,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
-            },
-            {
-              "width": 400,
-              "height": 400,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
-            },
-            {
-              "width": 100,
-              "height": 100,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
-            },
-            {
-              "width": 800,
-              "height": 800,
-              "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
-            }
-          ],
-          "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_160/B4DZaIH097HQAg-/0/1746040476057?e=1749081600&v=beta&t=xGhy-Jjy_YNSanhwEurm--gmgtx85g9_BefsESzzekY",
+          "width": 160,
+          "height": 213
         },
-        "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_20/B4DZaIH097HQA0-/0/1746040476057?e=1749081600&v=beta&t=-ubgEUoWDflXL64JvHb8s0Varx9OWPVNq3BsvzEP8x4",
+          "width": 20,
+          "height": 26
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_480/B4DZaIH097HQAc-/0/1746040476057?e=1749081600&v=beta&t=TO7qe5QHfsghRnkMGd75-dbRCViQYuzF5yYZD90bxwU",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_2048_1536/B4DZaIH097HQAs-/0/1746040476084?e=1749081600&v=beta&t=NsZG96TY5Myy0FV5BjjpDeXehDuZCUD2y6wHGG0iMnI",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_1280/B4DZaIH097HQAo-/0/1746040476061?e=1749081600&v=beta&t=V88HVifJGmXDFSJOgOtbba0x3gwVVKwS6KPnKJHbSwk",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_800/B4DZaIH097HQAk-/0/1746040476061?e=1749081600&v=beta&t=66vNxXdu9Vl-zH5zfa--jFMhn8aAnpdvQy2hN779ClA",
+          "width": 720,
+          "height": 960
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "Pandas is dead. Long live Polars.\n\nAnd I know, it hurts... \nI’ve used Pandas for years. But after trying Polars, there’s no turning back.\n\nWhy?\n\nBecause Polars is blazing fast.\nIt’s built in Rust 🦀 and powered by Apache Arrow 🏹, giving it an edge that Pandas can’t match.\n\nPolars optimizes operations.\nLike Spark, it builds an execution graph and runs it only when needed, thanks to its lazy evaluation mechanism.\n\nAnyway, I was never comfortable with Pandas' syntax.\nPandas’ is imperative, Polars embraces a functional style → clean, expressive, and reminiscent of R’s tidyverse (yep, I was an R fanboy before Python took over data-verse).\n\nBut here’s what sealed the deal for me to use Polars:\n\n🔹Transformations return new objects by default, no side effects, no surprises.\n🔹It runs multi-threaded, utilizing every core without me lifting a finger.\n🔹It’s energy efficient, researchers recommend it over Pandas for large datasets.\n\nExperiments from an EASE 2024 paper show clear results:\n\n“Polars dramatically reduces execution time and energy use, especially on large Data Analysis Tasks (DATs).”\n \nFull paper here: https://lnkd.in/dR2aeh-d\n\nIf you’re still clinging to Pandas, ask yourself:\n\nWhy settle for slow, clunky libraries in a world that demands speed, clarity, and efficiency?\n\nChoose wisely, my friend 🐻‍❄️",
+      "totalReactionCount": 145,
+      "likeCount": 130,
+      "appreciationCount": 1,
+      "empathyCount": 4,
+      "InterestCount": 9,
+      "praiseCount": 1,
+      "commentsCount": 25,
+      "repostsCount": 7,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7323424558298873857/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_pandas-is-dead-long-live-polars-and-i-activity-7323424558298873857-QYqx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFlCX2QB97yve6EFlhpVHOBhqHmjZVrwwes",
+      "postedAt": "2d",
+      "postedDate": "2025-04-30 19:14:37.347 +0000 UTC",
+      "postedDateTimestamp": 1746040477347,
+      "urn": "7323424558298873857",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
           {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_1280/B4DZY5j9qpG8Ak-/0/1744722455020?e=1749081600&v=beta&t=ILqhjQrtNatG_IEQLu_451zTqIJWnY50TPAOA9Ww0vw",
-            "width": 1280,
-            "height": 1706
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
           },
           {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_480/B4DZY5j9qpG8AY-/0/1744722455020?e=1749081600&v=beta&t=BxPBX5W_wn1T4_LUhVuTao01839LgqibbmuqXiJnCwE",
-            "width": 480,
-            "height": 639
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
           },
           {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_20/B4DZY5j9qpG8Aw-/0/1744722455010?e=1749081600&v=beta&t=UlOW2XfUT5QgcZwFG_NuSJodKsTmPI3kFkS6O4yQwsA",
-            "width": 20,
-            "height": 26
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
           },
           {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_800/B4DZY5j9qpG8Ag-/0/1744722455020?e=1749081600&v=beta&t=SLzM73QVDZxtp5C2V7AEfb2b5NTcXfdebT2gRd9PU1U",
             "width": 800,
-            "height": 1066
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_160/B4DZY5j9qpG8Ac-/0/1744722455010?e=1749081600&v=beta&t=WV2JXhFeIeoJXIBLuCwzVINDGLCyJIAWR5Uf1P1K-4E",
-            "width": 160,
-            "height": 213
-          },
-          {
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_2048_1536/B4DZY5j9qpG8Ao-/0/1744722455038?e=1749081600&v=beta&t=nSp06emJRl6SEEXurEDbdbGOHIWCNBE9yKKqAS2QQE4",
-            "width": 1152,
-            "height": 1536
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
           }
         ],
-        "company": {},
-        "document": {},
-        "celebration": {},
-        "poll": {},
-        "article": {
-          "newsletter": {}
-        },
-        "entity": {}
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
       },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_160/B4DZaIH097HQAg-/0/1746040476057?e=1749081600&v=beta&t=xGhy-Jjy_YNSanhwEurm--gmgtx85g9_BefsESzzekY",
+          "width": 160,
+          "height": 213
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_20/B4DZaIH097HQA0-/0/1746040476057?e=1749081600&v=beta&t=-ubgEUoWDflXL64JvHb8s0Varx9OWPVNq3BsvzEP8x4",
+          "width": 20,
+          "height": 26
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_480/B4DZaIH097HQAc-/0/1746040476057?e=1749081600&v=beta&t=TO7qe5QHfsghRnkMGd75-dbRCViQYuzF5yYZD90bxwU",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_2048_1536/B4DZaIH097HQAs-/0/1746040476084?e=1749081600&v=beta&t=NsZG96TY5Myy0FV5BjjpDeXehDuZCUD2y6wHGG0iMnI",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_1280/B4DZaIH097HQAo-/0/1746040476061?e=1749081600&v=beta&t=V88HVifJGmXDFSJOgOtbba0x3gwVVKwS6KPnKJHbSwk",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG0nhFakxLZVg/feedshare-shrink_800/B4DZaIH097HQAk-/0/1746040476061?e=1749081600&v=beta&t=66vNxXdu9Vl-zH5zfa--jFMhn8aAnpdvQy2hN779ClA",
+          "width": 720,
+          "height": 960
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "GitHub just released a dataset to compare OSS collaborations between global economies, and it confirms something I’ve long suspected:\n\nThe EU is the world’s OSS workforce, whereas the US is the world’s OSS headquarter and largest beneficiary. \n\nThe inbound/outbound collaborator graphs make it clear 👇\n\n📥 Inbound → Who Receives?\n\nThe US sees a huge inflow. Developers worldwide contribute to US-owned repos. In contrast, the EU gets far fewer inbound contributions than it sends out.\n\n📤 Outbound → Who Gives?\n\nThe EU leads in outbound activity. EU devs contribute heavily to projects outside the region. The US contributes far less by comparison.\n\n⚖️ The imbalance is huge, meaning:\n\n↳ OSS gravity (forks, issues, PRs, and visibility) pulls toward the US, whereas EU projects don’t attract the same global attention.\n↳ The EU is a code contributor, not a code destination.\n↳ For the US, this leads to better sustainability, faster innovation, and more influence. \n↳ For the EU, it’s a strategic vulnerability, relying on OSS platforms it doesn’t control.\n↳ Key libraries and infrastructure are US-based, eroding EU digital sovereignty.\n↳ EU devs are working for free on US projects, efforts without royalties.\n\nThis tech power imbalance is worth fixing.\n\n🎯 Here’re three ways to start changing it:\n\n1. The EU should invest more on local OSS (tools, libraries, and specially AI frameworks).\n2. The EU should host and protect key projects within EU jurisdictions.\n3. The EU should create OSS alliances and Foundations, building contributor communities across EU countries. \n\nOn my view, this obviously isn’t a lack of talent. It’s a failure of platform and resources' ownership.\n\nYou build it 💻. You run it ⚡️. You earn from it 💰. That’s how it should be.\n\nSource: https://lnkd.in/dJRnE7Va\n\nP.S. The width of each stream in the graphs below represents the volume of git pushes and PRs from one economy to others. Wider = more collaboration flow. China (in blue), has similar inbound/outbound margins.",
+      "totalReactionCount": 26,
+      "likeCount": 14,
+      "empathyCount": 1,
+      "InterestCount": 10,
+      "praiseCount": 1,
+      "repostsCount": 6,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7320831336020103168/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_github-just-released-a-dataset-to-compare-activity-7320831336020103168-GLPc?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFg3ZY8Bg6uFXd0Jla8wOcMwO2r3_Yl6oms",
+      "postedAt": "1w",
+      "postedDate": "2025-04-23 15:30:04.976 +0000 UTC",
+      "postedDateTimestamp": 1745422204976,
+      "urn": "7320831336020103168",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_2048_1536/B4DZZinVu1HwAo-/0/1745411202792?e=1749081600&v=beta&t=R23iFF3Cp-0pVVubgEfdGGETkNSyOy4UyxhpJsUZUcI",
+          "width": 960,
+          "height": 720
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_160/B4DZZinVu1HwAc-/0/1745411202700?e=1749081600&v=beta&t=CnjEJ7M7SQOusV34-jZimA-mFyVb4Ad1mIY5r83rlpo",
+          "width": 160,
+          "height": 120
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_800/B4DZZinVu1HwAg-/0/1745411202700?e=1749081600&v=beta&t=xm2OJCQcevGswCxqqo9LYAUj0G68um_03tiSfwLd6p8",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_20/B4DZZinVu1HwAw-/0/1745411202700?e=1749081600&v=beta&t=ugr5Q1pwHxea6hpUhm5cQWJXOTuWN3XjGXsWoyk4O1k",
+          "width": 20,
+          "height": 15
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_480/B4DZZinVu1HwAY-/0/1745411202716?e=1749081600&v=beta&t=ZfgztOwBLcU6zaGNiX498H77xAynrd5N589WecUlrYo",
+          "width": 480,
+          "height": 360
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfYuHjLLeqzQ/feedshare-shrink_1280/B4DZZinVu1HwAk-/0/1745411202716?e=1749081600&v=beta&t=UNUh3krjcWnfPxyPNA_VJsnupFZOW2gO7tLTgbUuyuw",
+          "width": 960,
+          "height": 720
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "companyMentions": [
+        {
+          "id": 1418841,
+          "name": "GitHub",
+          "publicIdentifier": "github",
+          "url": "https://www.linkedin.com/company/github/"
+        }
+      ]
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "I hit it off with uv at first sight. Nothing against pip though, it’s been my reliable partner for years, and we’ve shared many great memories together. But uv? It’s a game-changer 💘\n\nIt’s 10-100x faster than pip, supports lockfiles, manages Python versions effortlessly, and even comes with a global cache for dependency deduplication. Awesome!\n\nBut... \n\nToday, I discovered that uv isn’t perfect. It gets jealous really quickly. It insists on starting fresh and won’t let me hang out with my old friends. Anything built with Python <3.7 is an absolute no-go 😟\n\nI get it, uv. You’re all about progress. But what about those old mates I have to stay in touch with? There’s no way I can completely ditch them. They matter too!\n\nBackward compatibility isn’t just a nice-to-have; it’s essential!\n\nAnd sure, you can ignore it... until you can’t ⏳",
+      "totalReactionCount": 8,
+      "likeCount": 7,
+      "InterestCount": 1,
+      "commentsCount": 3,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7320440316522582016/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_i-hit-it-off-with-uv-at-first-sight-nothing-activity-7320440316522582016-Bpcw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFg3ZY8Bg6uFXd0Jla8wOcMwO2r3_Yl6oms",
+      "postedAt": "1w",
+      "postedDate": "2025-04-22 13:36:18.663 +0000 UTC",
+      "postedDateTimestamp": 1745328978663,
+      "urn": "7320440316522582016",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_1280/B4DZZdtrIyGgAs-/0/1745328977049?e=1749081600&v=beta&t=8mw0vKeQKn5eC2BwmFL0ME-5s6TXg6wvDXDaGy2P0qk",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_20/B4DZZdtrIyGgA4-/0/1745328977049?e=1749081600&v=beta&t=M31mdBgcj1QC7ptROLv0et4i1dzJ2kCvL_5X41XAEeY",
+          "width": 20,
+          "height": 26
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_800/B4DZZdtrIyGgAo-/0/1745328977049?e=1749081600&v=beta&t=gxsPC1ChrxuejGIuCAjUYxmR8oEQOGB3wWYeFSg-QBs",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_160/B4DZZdtrIyGgAk-/0/1745328977034?e=1749081600&v=beta&t=1hespCq-UnqS41dwkDL0VX1q9Qh5FIHcJ9DYcqx6UTA",
+          "width": 160,
+          "height": 213
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_2048_1536/B4DZZdtrIyGgAw-/0/1745328977056?e=1749081600&v=beta&t=Q2-d2vvWi_WF3pS-3FJw5WLBmbz9c39nrJ1wBJ8XTwA",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHreJGFXTXkxg/feedshare-shrink_480/B4DZZdtrIyGgAg-/0/1745328977034?e=1749081600&v=beta&t=MqmZ_C6gUrkpUIJLEwSzRzhuwEg9qAose32DNKcn4zo",
+          "width": 480,
+          "height": 640
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "ML projects don’t fail because models are wrong, they fail because the training data is unreliable.\n\nIn my experience, unreliable data pipelines are the fastest way to destroy trust in our work.\n\nThat’s why determinism and idempotence in data transformation pipelines aren’t “nice-to-haves.” They’re our first line of defense!\n\nDeterminism:\n↳ same input data, same output - every single time.\n\nIdempotence:\n↳ run the same operation once or 100x - result doesn’t change.\n\nSo, how to get both of them?\n\nStart here:\n\n✅ Make every transformation deterministic\n→ No randomness without fixed seeds\n→ No reliance on timestamps or implicit environment state\n→ No third-party data without versioning\n\n✅ Make every job idempotent\n→ Safe to re-run without side effects\n→ Always overwrite outputs, never append blindly\n→ Use unique, content-based identifiers for deduplication\n\n✅ Test like credibility depends on it (because it does)\n→ Compare outputs over time\n→ Add pipeline-level regression tests\n→ Monitor for unexpected failures\n\nDeterminism + Idempotence = No+👻",
+      "totalReactionCount": 12,
+      "likeCount": 11,
+      "InterestCount": 1,
+      "commentsCount": 11,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7318992044218023937/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_ml-projects-dont-fail-because-models-are-activity-7318992044218023937--JYk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFg3ZY8Bg6uFXd0Jla8wOcMwO2r3_Yl6oms",
+      "postedAt": "1w",
+      "postedDate": "2025-04-18 13:41:23.638 +0000 UTC",
+      "postedDateTimestamp": 1744983683638,
+      "urn": "7318992044218023937",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_800/B4DZZJIepQGkAk-/0/1744983682044?e=1749081600&v=beta&t=pwbYRUotA2dkUvCU5abioqz9nkWjSLoV8GuW7WJ8ymk",
+          "width": 800,
+          "height": 1066
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_160/B4DZZJIepQGkAg-/0/1744983682044?e=1749081600&v=beta&t=v2jEQnGMgX4302vzjtfQhCDPZ8IT9uQQib4ia7auP_Y",
+          "width": 160,
+          "height": 213
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_2048_1536/B4DZZJIepQGkAs-/0/1744983682096?e=1749081600&v=beta&t=hIjavd7MAt5PtXv-io07aymgLazLSAzKLcnga0DFm_k",
+          "width": 1152,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_480/B4DZZJIepQGkAc-/0/1744983682044?e=1749081600&v=beta&t=uO3e-97Qti8OLBQL-KbLTUb21QXHP5HzW0EA8z2x4ww",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_20/B4DZZJIepQGkA0-/0/1744983682063?e=1749081600&v=beta&t=oy_MJ3tos4dU4-AyiDuO9ad9d9i8LeTm8yrl2ogQSOY",
+          "width": 20,
+          "height": 26
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFI2vcXXyRF4w/feedshare-shrink_1280/B4DZZJIepQGkAo-/0/1744983682063?e=1749081600&v=beta&t=MAfFzwOEaODydqAB8ywqkjzcG6RZzhQoOvhi_s7q7vg",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "Once upon a time… we actually used to read tech books. Do you remember?\n\nThose days were truly amazing!\n\nIt's incredibly that we had the time (and the patience) to go over books from start to finish.\n\nWhenever I wanted to learn something new, I’d just grab a good one from a reputable source and start from scratch.\n\nA good thing I remember is that most books were created to teach \"why\" things worked, not just \"how.\" Step by step. Concept by concept.\n\nWe kept them on our shelves and the chapters in our minds, like mental maps we could revisit anytime.\n\nBut today?\n\n↳ Tech moves so fast that by the time you finish a book, it might already be outdated.\n\nWhy?\n\n↳ Because the levels of abstraction keep climbing. Everything is built on top of frameworks, libraries, or APIs that evolve overnight.\n\nAnd also now, with #LLMs, we just ask for what we need, right when we need it. No need to store the sources anymore.\n\nStill… I miss the feeling of quietly reading for the sake of it.\n\nThe feeling of having no pressure, no rush to build something asap.\n\nJust learning for fun... did it actually exist?\n\nReading books has become a luxury. That's it.\n\nA luxury for people who have the most valuable resource on earth: time.\n\nIf you’re one of them, enjoy 📖, because many of us have already succumbed to the LLMs 🤖\n\nP.S. Yes, there are still timeless classics every dev should read, you should know the ones ;)",
+      "totalReactionCount": 26,
+      "likeCount": 23,
+      "praiseCount": 3,
+      "commentsCount": 3,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7317896374929268737/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_llms-activity-7317896374929268737-OkIV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFg3ZY8Bg6uFXd0Jla8wOcMwO2r3_Yl6oms",
+      "postedAt": "2w",
+      "postedDate": "2025-04-15 13:07:35.723 +0000 UTC",
+      "postedDateTimestamp": 1744722455723,
+      "urn": "7317896374929268737",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1751500800&v=beta&t=viYhWfirRlCeKsQOM-CzZw-44AXKxUyqEZ9dwz5vLu0"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1751500800&v=beta&t=RHyqszxhwt7Tf0MG_rNOpBK6L2SebIwcRWwBWbYW8C8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1751500800&v=beta&t=y0jezonbpjOQ9mG800YyLrNTb_qUbGdU_ZM0pbzqGCw"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1751500800&v=beta&t=jLOFTIJSFRRE8hMu8-9Z5NEGBngkhTAtIXI7s6217Cw"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_1280/B4DZY5j9qpG8Ak-/0/1744722455020?e=1749081600&v=beta&t=ILqhjQrtNatG_IEQLu_451zTqIJWnY50TPAOA9Ww0vw",
+          "width": 1280,
+          "height": 1706
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_480/B4DZY5j9qpG8AY-/0/1744722455020?e=1749081600&v=beta&t=BxPBX5W_wn1T4_LUhVuTao01839LgqibbmuqXiJnCwE",
+          "width": 480,
+          "height": 639
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_20/B4DZY5j9qpG8Aw-/0/1744722455010?e=1749081600&v=beta&t=UlOW2XfUT5QgcZwFG_NuSJodKsTmPI3kFkS6O4yQwsA",
+          "width": 20,
+          "height": 26
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_800/B4DZY5j9qpG8Ag-/0/1744722455020?e=1749081600&v=beta&t=SLzM73QVDZxtp5C2V7AEfb2b5NTcXfdebT2gRd9PU1U",
+          "width": 800,
+          "height": 1066
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_160/B4DZY5j9qpG8Ac-/0/1744722455010?e=1749081600&v=beta&t=WV2JXhFeIeoJXIBLuCwzVINDGLCyJIAWR5Uf1P1K-4E",
+          "width": 160,
+          "height": 213
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGJ6eM0qXu4BA/feedshare-shrink_2048_1536/B4DZY5j9qpG8Ao-/0/1744722455038?e=1749081600&v=beta&t=nSp06emJRl6SEEXurEDbdbGOHIWCNBE9yKKqAS2QQE4",
+          "width": 1152,
+          "height": 1536
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
     {
       "isBrandPartnership": false,
       "text": "“Can I grab some time on your calendar to talk about XYZ?”\n\nThis simple phrase has opened more doors for me professionally than any scheduled meeting ever did.\n\nWhy?\n\nBecause it's spontaneous, authentic, and signals genuine curiosity. \n\nIt transforms casual interactions into meaningful relationships, creating room for serendipity.\n\nFor instance, a couple of years ago I casually reached out to a researcher from another lab to talk about our common interest on the XYZ problem that existed. THat spontaneous 20 min conversation evolved into a long term research collaboration. We ended up writing a few papers together!\n\nIt's amazing how a genuine request for someone's insights can spark collaboration, innovation, and even friendships.\n\nNever underestimate the power of simply reaching out.\n\nGive it a try! 👋\n\nP.S. It’s a shame we can’t just say “X” to mean “anything” anymore (thanks, Elon).",
