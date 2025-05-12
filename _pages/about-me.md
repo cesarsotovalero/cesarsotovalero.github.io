@@ -17,7 +17,7 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 # TL;DR
 
-I'm César, a [computer scientist](./publications.html), [software engineer](./software.html), and [creator of things](./blog).
+I'm César, a [computer scientist](./publications.html), [software engineer](./software.html), and [content creator](./blog).
 
 I'm passionate about software, research, and education. 
 
@@ -29,20 +29,21 @@ I wrote about my professional values [here](./my-professional-values.html).
 
 # Research
 
-I've contributed 30+ [research papers](./publications.html) and taken part in multiple [academic services](./service.html).
+I've authored 30+ [research papers](./publications.html) and got involved in [academic services](./service.html).
 
-My research efforts have been recognized through [a few awards](./awards.html).
+My research efforts have been recognized with [awards](./awards.html).
 
 # Software
 
-I've created a few [open-source projects](./software.html) with 200+ stars on GitHub
+I've created a few [open-source projects](./software.html), some with 200+ stars on GitHub.
 
 # Education
 
 {% youtube Ub684G_aM5Q %}
 
-I hold a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se), supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/). 
-I graduated in 2023.[^4]
+I hold a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se) (graduated in 2023).[^4]
+
+My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/). 
 
 My PhD was about software debloating,[^1] here's my [PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
 
@@ -56,10 +57,9 @@ A long time ago, I participated in [ACM-ICPC programming contests](/competitions
 
 # Misc
 
-Out of work, I enjoy spending time with my family, reading ~~physical~~ books, and [running](/races.html).
+Out of work, I enjoy quality time with my family, reading books, and [running](/races.html).
 
-I like epic music. 
-My favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), [Zack Hemsey](https://www.youtube.com/user/zackhemsey) and [Enya](https://www.youtube.com/watch?v=7jfRG-fgvQ8). 
+I like epic music, favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), and [Zack Hemsey](https://www.youtube.com/user/zackhemsey). 
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
@@ -193,11 +193,11 @@ form.wj-contact input[type="submit"]:active {
 
 <br>
 
-**Note:** If you are a MSc student or researcher, I'm always [open to collaborations](./collaborations.html). 
+👉 If you are a MSc student or researcher, I'm always [open to collaborations](./collaborations.html). 
 
 <p class="post-meta" style="margin-top: 60px;">
    <i class="fas fa-user-edit"></i>
-   Website last modified on {{ page.last_modified_at | date: "%B %-d, %Y" }}
+   This page was last modified on {{ page.last_modified_at | date: "%B %-d, %Y" }}
 </p>
 
 # Footnotes
