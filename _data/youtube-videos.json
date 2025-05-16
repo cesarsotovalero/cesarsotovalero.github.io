@@ -93,7 +93,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "NnkgxrBnwC0CsEPwIVDlbFhVO4k",
+    "etag": "CRGlOENyR6gWfuJe4KukA6X4of4",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -167,7 +167,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "99",
+      "viewCount": "100",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -657,7 +657,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "sogB0F251yIzPdaeGMx0yqqeZIE",
+    "etag": "6rAPJqmDATeGaTUFFUTf9YMFkWA",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -726,7 +726,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "TAWXFyJflPS6e3v1f-4xGny9ioc",
+    "etag": "QZEiZd_--UXnfh2Fz_eeI5viQ0c",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -787,7 +787,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "561",
+      "viewCount": "562",
       "likeCount": "43",
       "favoriteCount": "0",
       "commentCount": "21"
@@ -985,7 +985,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Yz8xSZQK5QzkSIvIfX0jsDCcq7U",
+    "etag": "sZS7W74W0zdVqhrbjoDpf5oATmo",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -1043,7 +1043,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "108",
+      "viewCount": "109",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1307,7 +1307,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ZzvORV4FU8dGwVU1lehJ8hm4YBk",
+    "etag": "0q5_7Y-JQSW4B8Gk4YrmdgCOhY4",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -1365,7 +1365,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "195",
+      "viewCount": "196",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
