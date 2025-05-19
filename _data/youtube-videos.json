@@ -1,7 +1,7 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "TGwsBE6jjfeQP3X46sluG4Hlcng",
+    "etag": "KYFpmDa5eq-1UjTkAZVfDih3VHQ",
     "id": "3s7xjI3g73w",
     "snippet": {
       "publishedAt": "2024-12-29T17:00:04Z",
@@ -85,7 +85,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "344",
+      "viewCount": "345",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -657,7 +657,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "OfL8VwEtnfY6i4L9qPjBaIMc_cM",
+    "etag": "e2OCknMfJiRg1KoPTW3vYbqMxjk",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -718,7 +718,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12709",
+      "viewCount": "12710",
       "likeCount": "646",
       "favoriteCount": "0",
       "commentCount": "295"
@@ -726,7 +726,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "P5E9wEj5wHpKlhPhsV9sraPzroU",
+    "etag": "aM_kMrlop2pVsIsR6DXpJX_P65Y",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -787,7 +787,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "564",
+      "viewCount": "565",
       "likeCount": "43",
       "favoriteCount": "0",
       "commentCount": "21"
@@ -856,7 +856,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "SEJs0tONOKnyAeBP-CVg6e2qzAI",
+    "etag": "gAnK90OcKU9YpgAw2dkdEwsd8to",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -909,7 +909,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "319",
+      "viewCount": "321",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1051,7 +1051,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "2fYcpIgMT8PZIzTF4KpGN7l4Kjk",
+    "etag": "6oy9CS-xiubRZ1Uyy2YEp3jz3-U",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -1103,7 +1103,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "150",
+      "viewCount": "151",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "1"
