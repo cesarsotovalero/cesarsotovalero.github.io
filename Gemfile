@@ -6,9 +6,8 @@ gem 'jekyll-paginate', '~> 1.1'
 gem 'jekyll-sitemap', '~> 1.4'
 gem 'jekyll-tagging', '~> 1.1'
 gem 'jekyll-bits', '~> 0.15'
-# gem 'jekyll-plantuml', '~> 1.3', '>= 1.3.4'
-# gem 'jekyll-responsive-image', '~> 1.4'# Gemfile
-gem 'nokogumbo', '>= 2.0.5's
+gem 'jekyll-plantuml', '~> 1.3', '>= 1.3.4'
+gem 'jekyll-responsive-image', '~> 1.4'
 gem 'jekyll-seo-tag', '~> 2.7', '>= 2.7.1'
 gem 'jekyll-toc'
 gem 'jekyll-mermaid', '~> 1.0'
