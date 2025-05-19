@@ -51,7 +51,6 @@ jobs:
 
       - name: Download images from new entries
         run: |
-          # Iterate over posts having non-empty image arrays
           cat _data/linkedin-posts.json | jq -c '.data[] | select(.image != null and (.image | length > 0))' | while read post; do
             posted_ts=$(echo "$post" | jq -r '.postedDateTimestamp')
             echo "Processing post $posted_ts"
@@ -59,13 +58,17 @@ jobs:
               url=$(echo "$img" | jq -r '.url')
               width=$(echo "$img" | jq -r '.width')
               height=$(echo "$img" | jq -r '.height')
-              dir="_data/linkedin-posts-images/${posted_ts}/${width}x${height}"
+              dir=_data/linkedin-posts-images/${posted_ts}/${width}x${height}
               mkdir -p "$dir"
               filename=$(basename "$url")
               echo "Downloading image to ${dir}/${filename}"
-              curl -L "$url" -o "${dir}/${filename}"
+              if ! curl -L "$url" -o "${dir}/${filename}"; then
+                echo "Failed to download $url, skipping"
+                continue
+              fi
             done
           done
+        shell: bash
 
       - name: Commit and push changes if any
         run: |
@@ -74,6 +77,7 @@ jobs:
           # Remove the following mv command to avoid overwriting the merged file
           # mv -f ../linkedin-posts.json linkedin-posts.json
           git add _data/linkedin-posts.json
+          git add _data/linkedin-posts.json _data/linkedin-posts-images/
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Update LinkedIn posts $(date -u +'%Y-%m-%d')"
             git push
