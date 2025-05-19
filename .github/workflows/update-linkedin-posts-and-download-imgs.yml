@@ -1,5 +1,4 @@
-name: Update LinkedIn Posts
-
+name: Update LinkedIn Posts and Download Images
 on:
   schedule:
     # Runs every monday at midnight UTC
@@ -38,7 +37,7 @@ jobs:
             jq -s '{
               success: true,
               message: "",
-              data: (.[0].data + .[1].data | sort_by(.postedDateTimestamp) | reverse)
+              data: (.[0].data + .[1].data | unique_by(.postedDateTimestamp) | sort_by(.postedDateTimestamp) | reverse)
             }' linkedin-posts.json _data/linkedin-posts.json > merged.json
             newCount=$(jq '.data | length' merged.json)
             echo "Number of new entries added: $((newCount - originalCount))"
@@ -49,6 +48,24 @@ jobs:
           fi
           # Move the merged file to the _data directory, overwriting if it exists
           mv -f merged.json _data/linkedin-posts.json
+
+      - name: Download images from new entries
+        run: |
+          # Iterate over posts having non-empty image arrays
+          cat _data/linkedin-posts.json | jq -c '.data[] | select(.image != null and (.image | length > 0))' | while read post; do
+            posted_ts=$(echo "$post" | jq -r '.postedDateTimestamp')
+            echo "Processing post $posted_ts"
+            for img in $(echo "$post" | jq -c '.image[]'); do
+              url=$(echo "$img" | jq -r '.url')
+              width=$(echo "$img" | jq -r '.width')
+              height=$(echo "$img" | jq -r '.height')
+              dir="_data/linkedin-posts-images/${posted_ts}/${width}x${height}"
+              mkdir -p "$dir"
+              filename=$(basename "$url")
+              echo "Downloading image to ${dir}/${filename}"
+              curl -L "$url" -o "${dir}/${filename}"
+            done
+          done
 
       - name: Commit and push changes if any
         run: |
