@@ -53,14 +53,12 @@ jobs:
         run: |
           cat _data/linkedin-posts.json | jq -c '.data[] | select(.image != null and (.image | length > 0))' | while read post; do
             posted_ts=$(echo "$post" | jq -r '.postedDateTimestamp')
-            echo "Processing post $posted_ts"
-            for img in $(echo "$post" | jq -c '.image[]'); do
+            echo "$post" | jq -c '.image[]' | while read img; do
               url=$(echo "$img" | jq -r '.url')
               width=$(echo "$img" | jq -r '.width')
               height=$(echo "$img" | jq -r '.height')
               dir=_data/linkedin-posts-images/${posted_ts}/${width}x${height}
               mkdir -p "$dir"
-              # Remove query params from filename
               filename=$(basename "${url%%\?*}")
               echo "Downloading image to ${dir}/${filename}"
               if ! curl -L "$url" -o "${dir}/${filename}"; then
