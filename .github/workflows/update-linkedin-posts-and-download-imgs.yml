@@ -60,7 +60,8 @@ jobs:
               height=$(echo "$img" | jq -r '.height')
               dir=_data/linkedin-posts-images/${posted_ts}/${width}x${height}
               mkdir -p "$dir"
-              filename=$(basename "$url")
+              # Remove query params from filename
+              filename=$(basename "${url%%\?*}")
               echo "Downloading image to ${dir}/${filename}"
               if ! curl -L "$url" -o "${dir}/${filename}"; then
                 echo "Failed to download $url, skipping"
