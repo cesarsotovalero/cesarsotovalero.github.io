@@ -1111,7 +1111,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "aZz8iph_C-joKXaYmfvgpNevUY0",
+    "etag": "JghR9P62Ezf_yRb6BKm14EJmL1g",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -1164,7 +1164,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "167",
+      "viewCount": "168",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
