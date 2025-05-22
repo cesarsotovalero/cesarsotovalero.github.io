@@ -18,7 +18,7 @@ toc: true
 mathjax: false
 date: 2025/04/03
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 Financial fraud is a pervasive problem costing institutions and consumers billions annually.
