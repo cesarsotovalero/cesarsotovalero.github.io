@@ -269,6 +269,8 @@ plugins:
 
 toc:
   ordered_list: true
+  min_level: 1 # default: 1
+  max_level: 1 # default: 6
 
 # Optional. The default date format, used if none is specified in the tag.
 last-modified-at:
