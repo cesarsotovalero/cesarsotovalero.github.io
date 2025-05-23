@@ -8,10 +8,10 @@
     
     <item>
       <title>
-        Building GenAI Applications Today - What seems to work, what doesn&apos;t, and possibly why
+        Building GenAI Applications Today - What seems to work, what doesn't, and possibly why
       </title>
       <description><![CDATA[
-          Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn&apos;t, and why. If you&apos;re looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn&apos;t. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.
+          Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn't, and why. If you're looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn't. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.
 
         ]]></description>
       <pubDate>Sun, 17 Nov 2024</pubDate>
@@ -24,7 +24,7 @@
         Why GenAI Will NOT Replace Software Engineers - For now...
       </title>
       <description><![CDATA[
-          GenAI systems are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around GenAI replacing software engineers, are our jobs really at risk? In this article, I dive deep into AI&apos;s current capabilities and how they stack up against the demands of real-world software development. I discuss the actual potential of GenAI to assist in common development activities, and where it still falls short when it comes to creative problem solving and human intuition. 
+          GenAI systems are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around GenAI replacing software engineers, are our jobs really at risk? In this article, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. I discuss the actual potential of GenAI to assist in common development activities, and where it still falls short when it comes to creative problem solving and human intuition. 
 
         ]]></description>
       <pubDate>Mon, 19 Aug 2024</pubDate>
@@ -37,7 +37,7 @@
         The Not-So-Strange Case of Cargo Cult in Computer Science Research - Are we mimicking scientific progress without true innovation?
       </title>
       <description><![CDATA[
-          Arguably, computers and faster communication systems have changed the world more than any other technology. Yet there have been many scientific failures along the way, some prominent, many minor, and a widening gap between aspirations and reality. This article discusses the problem of pseudoscience in computer science. I discuss Richard Feynman&apos;s coined term &quot;cargo cult science,&quot; as he said: &quot;Everywhere I see computer scientists that look like they are working on the right thing, but the thing actually doesn&apos;t work.&quot; I offer guidance on how to stay away of this dangerous practice, from a scientific standpoint. 
+          Arguably, computers and faster communication systems have changed the world more than any other technology. Yet there have been many scientific failures along the way, some prominent, many minor, and a widening gap between aspirations and reality. This article discusses the problem of pseudoscience in computer science. I discuss Richard Feynman's coined term &quot;cargo cult science,&quot; as he said: &quot;Everywhere I see computer scientists that look like they are working on the right thing, but the thing actually doesn't work.&quot; I offer guidance on how to stay away of this dangerous practice, from a scientific standpoint. 
 
         ]]></description>
       <pubDate>Sat, 13 Jul 2024</pubDate>
@@ -60,10 +60,10 @@
     
     <item>
       <title>
-        The Last Paper&apos;s Myth - A tale of contending interests
+        The Last Paper's Myth - A tale of contending interests
       </title>
       <description><![CDATA[
-          The &quot;last paper myth&quot; emerges once academic supervisors realize that a student is about to earn their PhD and leave. It&apos;s one last stronghold for supervisors to capitalize on the time and effort they have invested in their students&apos; scientific training. This relentless push not only detracts from the true purpose of academic research but also imposes significant personal and mental strain on the most successful students. This article explores the expectations versus reality at the end of the PhD journey and provides actionable insights for students on how to identify, address, and navigate this particular pressure.
+          The &quot;last paper myth&quot; emerges once academic supervisors realize that a student is about to earn their PhD and leave. It's one last stronghold for supervisors to capitalize on the time and effort they have invested in their students' scientific training. This relentless push not only detracts from the true purpose of academic research but also imposes significant personal and mental strain on the most successful students. This article explores the expectations versus reality at the end of the PhD journey and provides actionable insights for students on how to identify, address, and navigate this particular pressure.
 
         ]]></description>
       <pubDate>Sun, 05 May 2024</pubDate>
@@ -76,7 +76,7 @@
         On the Rise, Decline, and Persistence of Web Technologies - From Static HTML Pages to WebAssembly
       </title>
       <description><![CDATA[
-          The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn&apos;t pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web&apos;s history. Those who don&apos;t know tech history are doomed to repeat past engineering mistakes. 
+          The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn't pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web's history. Those who don't know tech history are doomed to repeat past engineering mistakes. 
 
         ]]></description>
       <pubDate>Sat, 27 Apr 2024</pubDate>
@@ -86,10 +86,10 @@
     
     <item>
       <title>
-        The Most Relevant Technical Skill in My Career - It isn&apos;t Java coding
+        The Most Relevant Technical Skill in My Career - It isn't Java coding
       </title>
       <description><![CDATA[
-          Have you ever wonder which is most relevant technical skill in your career? It&apos;s not necessarily a programming language or the latest framework. For me, it is Exploratory Data Analysis (EDA). Why? Because being able to manipulate and find relevant information from various data sources has opened me doors to new opportunities in both academia and industry. This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.  
+          Have you ever wonder which is most relevant technical skill in your career? It's not necessarily a programming language or the latest framework. For me, it is Exploratory Data Analysis (EDA). Why? Because being able to manipulate and find relevant information from various data sources has opened me doors to new opportunities in both academia and industry. This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.  
 
         ]]></description>
       <pubDate>Sat, 30 Mar 2024</pubDate>
@@ -99,7 +99,7 @@
     
     <item>
       <title>
-        AI Doesn&apos;t Make Me the Same Coffee - And it doesn&apos;t understand wine either
+        AI Doesn't Make Me the Same Coffee - And it doesn't understand wine either
       </title>
       <description><![CDATA[
           Advancements in AI are set to transform the way we interact with the world, offering increased free time and enhanced capabilities. However, if not carefully managed, AI poses risks such as reducing human experiences and potentially becoming a significant social issue.
@@ -115,7 +115,7 @@
         Building and Leveling Up a Computer Scientist Résumé - My personal take to stand out from the crowd
       </title>
       <description><![CDATA[
-          Résumés have become fundamental for personal branding. They not only list qualifications but also reflect an individual&apos;s professional identity, career goals, and unique value proposition. In today&apos;s competitive job market, a well-crafted résumé can make all the difference in securing a job interview. This article covers how to build the résumé of a scientist. This includes what content to add what to skip, its structure, and what I believe are common mistakes to be avoided.
+          Résumés have become fundamental for personal branding. They not only list qualifications but also reflect an individual's professional identity, career goals, and unique value proposition. In today's competitive job market, a well-crafted résumé can make all the difference in securing a job interview. This article covers how to build the résumé of a scientist. This includes what content to add what to skip, its structure, and what I believe are common mistakes to be avoided.
 
         ]]></description>
       <pubDate>Fri, 12 Jan 2024</pubDate>
@@ -125,10 +125,10 @@
     
     <item>
       <title>
-        Revisiting Ken Thompson’s Reflection on Trusting Trust - One of the most chilling ideas in cybersecurity&apos;s history
+        Revisiting Ken Thompson’s Reflection on Trusting Trust - One of the most chilling ideas in cybersecurity's history
       </title>
       <description><![CDATA[
-          Creating software entirely from scratch is impractical today. Every component, library, and tool we use in software development relies on open source libraries and compilers. In his talk &quot;Reflections on Trusting Trust,&quot; Ken Thompson brilliantly demonstrates that &quot;You cannot trust code that you did not totally created yourself.&quot; I find the method of proving this assertion to be absolutely fascinating. It could be one of the most bold and thought-provoking ideas in cybersecurity history. In this article, I revisit Thompson&apos;s famous proof of distrust, 40 years later.
+          Creating software entirely from scratch is impractical today. Every component, library, and tool we use in software development relies on open source libraries and compilers. In his talk &quot;Reflections on Trusting Trust,&quot; Ken Thompson brilliantly demonstrates that &quot;You cannot trust code that you did not totally created yourself.&quot; I find the method of proving this assertion to be absolutely fascinating. It could be one of the most bold and thought-provoking ideas in cybersecurity history. In this article, I revisit Thompson's famous proof of distrust, 40 years later.
 
         ]]></description>
       <pubDate>Wed, 27 Dec 2023</pubDate>
@@ -141,7 +141,7 @@
         How I Peer Review Research Papers - My reviewer flow, focused template, and personal tips
       </title>
       <description><![CDATA[
-          In this blog post, I share my experiences and personal approach when peer-reviewing research papers in the field of software engineering. My focus is on delivering good peer reviews, fast and effectively. I give my template and provide generalizable examples of good and bad reviews. After reading this post, as a reviewer, you will gain first-hand insight on how to give constructive feedback to paper&apos;s authors so that they could improve the quality of their research papers.
+          In this blog post, I share my experiences and personal approach when peer-reviewing research papers in the field of software engineering. My focus is on delivering good peer reviews, fast and effectively. I give my template and provide generalizable examples of good and bad reviews. After reading this post, as a reviewer, you will gain first-hand insight on how to give constructive feedback to paper's authors so that they could improve the quality of their research papers.
 
         ]]></description>
       <pubDate>Sun, 12 Nov 2023</pubDate>
@@ -154,7 +154,7 @@
         My Ultimate Terminal Customizations for Windows - Another guide
       </title>
       <description><![CDATA[
-          This post describes the tools I use to resemble my macOS terminal customizations on Windows.  This includes the fonts that I choose for the Windows Terminal app, an enhanced PowerShell, and the installation of third-party tools like Oh My Posh.  I&apos;ve found that these small improvements make me a happier Windows user.
+          This post describes the tools I use to resemble my macOS terminal customizations on Windows.  This includes the fonts that I choose for the Windows Terminal app, an enhanced PowerShell, and the installation of third-party tools like Oh My Posh.  I've found that these small improvements make me a happier Windows user.
         ]]></description>
       <pubDate>Fri, 13 Oct 2023</pubDate>
       <link>https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-windows.html</link>
@@ -200,10 +200,10 @@
     
     <item>
       <title>
-        How to Give a Great Technical Presentation - Here&apos;s what I&apos;ve learned
+        How to Give a Great Technical Presentation - Here's what I've learned
       </title>
       <description><![CDATA[
-          I believe that the secret to delivering a great technical presentation is feeling in control. This enables the confidence to communicate effectively and it also helps to be perceived as an expert. In this article, I share the tips and tricks I&apos;ve learned from my own flaws, and also from the best speakers.
+          I believe that the secret to delivering a great technical presentation is feeling in control. This enables the confidence to communicate effectively and it also helps to be perceived as an expert. In this article, I share the tips and tricks I've learned from my own flaws, and also from the best speakers.
         ]]></description>
       <pubDate>Thu, 22 Jun 2023</pubDate>
       <link>https://www.cesarsotovalero.net/blog/how-to-give-a-great-technical-presentation.html</link>
@@ -215,7 +215,7 @@
         Prompting is All We Need - Is this the end of software engineering as we know it?
       </title>
       <description><![CDATA[
-          Today&apos;s AI-powered systems can generate code cheaper and faster than developers. The new era of automated text generation has come to us developers. And with it, there comes a new batch of fresh challenges. Fortunately, AI still craves human guidance. Effective prompt engineering is revolutionizing software development as we know it. And just as the technology evolves, so do we!
+          Today's AI-powered systems can generate code cheaper and faster than developers. The new era of automated text generation has come to us developers. And with it, there comes a new batch of fresh challenges. Fortunately, AI still craves human guidance. Effective prompt engineering is revolutionizing software development as we know it. And just as the technology evolves, so do we!
 
         ]]></description>
       <pubDate>Sat, 27 May 2023</pubDate>
@@ -225,7 +225,7 @@
     
     <item>
       <title>
-        Let&apos;s Face It&amp;#58; Paper Figures Are Always Subject to Change - The story of a single figure
+        Let's Face It&amp;#58; Paper Figures Are Always Subject to Change - The story of a single figure
       </title>
       <description><![CDATA[
           As a researcher, I have learned that the process of creating figures is a journey of discovery, a process of refinement, and a crucible of critique. This article provides insights into the transformations that a particular figure undergo throughout the research process (before publication).
@@ -264,7 +264,7 @@
         How to Write a Good Cover Letter for a Research Paper - Quick an easy
       </title>
       <description><![CDATA[
-          It&apos;s a common practice in academic journals to ask authors to write a short cover letter to the editor. In this post, I share my experience writing cover letters for academic journals, along with useful tricks and tips that I&apos;ve found along the way.
+          It's a common practice in academic journals to ask authors to write a short cover letter to the editor. In this post, I share my experience writing cover letters for academic journals, along with useful tricks and tips that I've found along the way.
         ]]></description>
       <pubDate>Wed, 23 Nov 2022</pubDate>
       <link>https://www.cesarsotovalero.net/blog/how-to-write-a-good-cover-letter-for-a-research-paper.html</link>
@@ -273,7 +273,7 @@
     
     <item>
       <title>
-        The True Value of Attending Academic Conferences - It&apos;s not only about the technical content
+        The True Value of Attending Academic Conferences - It's not only about the technical content
       </title>
       <description><![CDATA[
           I recently attended the 29th edition of ESEC/FSE 2022 in Singapore. This was my first time participating in a big academic conference (in real-life). In this blog post, I share my experiences, with a focus on what I think is the actual value of attending these kinds of events. 
@@ -298,10 +298,10 @@
     
     <item>
       <title>
-        On the Parkinson&apos;s Law of Triviality for Computer Science Researchers - It must stop!
+        On the Parkinson's Law of Triviality for Computer Science Researchers - It must stop!
       </title>
       <description><![CDATA[
-          The Parkinson&apos;s Law explains how we spend disproportionate amounts of time discussing trivialities instead of focusing on solving core problems. In the research context, this behavior is considered unproductive because it drains the researchers&apos; energy on matters of little or null impact. This behavior can also be considered a form of procrastination in which the challenging tasks are postponed. In this post, I share my experience after many years of dealing with this issue.
+          The Parkinson's Law explains how we spend disproportionate amounts of time discussing trivialities instead of focusing on solving core problems. In the research context, this behavior is considered unproductive because it drains the researchers' energy on matters of little or null impact. This behavior can also be considered a form of procrastination in which the challenging tasks are postponed. In this post, I share my experience after many years of dealing with this issue.
         ]]></description>
       <pubDate>Fri, 22 Jul 2022</pubDate>
       <link>https://www.cesarsotovalero.net/blog/on-the-parkinson-law-of-triviality-for-computer-science-researchers.html</link>
@@ -337,7 +337,7 @@
         No One Cares About Your Research&amp;#33; - A comfortable truth
       </title>
       <description><![CDATA[
-          Doing a PhD is sometimes a very stressful journey. I believe this stress is unnecessary, as it primarily results from students taking science too seriously. They genuinely believe that others are continuously evaluating the quality of their research. But this is very far from being true. In practice, no one actually cares about a particular research paper that doesn&apos;t have her name on it. And I argue that this is a comfortable truth.
+          Doing a PhD is sometimes a very stressful journey. I believe this stress is unnecessary, as it primarily results from students taking science too seriously. They genuinely believe that others are continuously evaluating the quality of their research. But this is very far from being true. In practice, no one actually cares about a particular research paper that doesn't have her name on it. And I argue that this is a comfortable truth.
         ]]></description>
       <pubDate>Wed, 11 May 2022</pubDate>
       <link>https://www.cesarsotovalero.net/blog/no-one-cares-about-your-research.html</link>
@@ -446,7 +446,7 @@
         Encoding, Encryption, Hashing, and Obfuscation in Java - From concepts to code
       </title>
       <description><![CDATA[
-          The concepts of encoding, encryption, hashing, and obfuscation are often mistakenly confused or taken as similar (which is even worse). Let&apos;s clarify this matter and see some Java code examples of practical applications.
+          The concepts of encoding, encryption, hashing, and obfuscation are often mistakenly confused or taken as similar (which is even worse). Let's clarify this matter and see some Java code examples of practical applications.
 
         ]]></description>
       <pubDate>Sun, 19 Dec 2021</pubDate>
@@ -459,7 +459,7 @@
         SIGBOVIK&amp;#58; The Ig Nobel for Academics and Computer Science Researchers - The most wanted proceedings for fruitful procrastination
       </title>
       <description><![CDATA[
-          The SIGBOVIK humor-filled conference is the most disruptive Computer Science academic conference I&apos;ve ever seen. This exceptional venue allows demystifying complicated concepts through sarcasm and mockery while getting away from the rigors of standard academic research.
+          The SIGBOVIK humor-filled conference is the most disruptive Computer Science academic conference I've ever seen. This exceptional venue allows demystifying complicated concepts through sarcasm and mockery while getting away from the rigors of standard academic research.
 
         ]]></description>
       <pubDate>Sun, 05 Dec 2021</pubDate>
@@ -469,10 +469,10 @@
     
     <item>
       <title>
-        How to Set Up A Blockchain Network With Hyperledger Besu - Look mom, I&apos;m running my own blockchain!
+        How to Set Up A Blockchain Network With Hyperledger Besu - Look mom, I'm running my own blockchain!
       </title>
       <description><![CDATA[
-          If you are a Java developer interested in cryptocurrencies and blockchain-related technologies, you should probably have heard about Hyperledger Besu, the official Java client of the Ethereum blockchain. In this post, we&apos;re going to set up a production-ready Ethereum client using Besu.
+          If you are a Java developer interested in cryptocurrencies and blockchain-related technologies, you should probably have heard about Hyperledger Besu, the official Java client of the Ethereum blockchain. In this post, we're going to set up a production-ready Ethereum client using Besu.
 
         ]]></description>
       <pubDate>Sun, 21 Nov 2021</pubDate>
@@ -482,10 +482,10 @@
     
     <item>
       <title>
-        How I Overcome Writer&apos;s Block When Preparing a Research Paper - My bulletproof approach
+        How I Overcome Writer's Block When Preparing a Research Paper - My bulletproof approach
       </title>
       <description><![CDATA[
-          Writing a research paper can be a tremendous challenge, even for experienced researchers. I&apos;ve faced the so-called writer&apos;s block many times, especially when starting the writing process. Fortunately, with time I&apos;ve developed personal systems that allow me to deal with this particular issue.
+          Writing a research paper can be a tremendous challenge, even for experienced researchers. I've faced the so-called writer's block many times, especially when starting the writing process. Fortunately, with time I've developed personal systems that allow me to deal with this particular issue.
         ]]></description>
       <pubDate>Sun, 07 Nov 2021</pubDate>
       <link>https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html</link>
@@ -497,7 +497,7 @@
         Seven Reasons to Go For a PhD In Computer Science - The good, the bad, and the ugly
       </title>
       <description><![CDATA[
-          Starting a PhD in Computer Science is a serious decision that literally changes your life. There are many motivations to choose this career path. This post outlines seven reasons for pursuing a PhD in Computer Science. It stresses the importance of clear motivations due to the significant time investment required. The &quot;good&quot; reasons include satisfying intellectual curiosity, becoming a professional researcher with opportunities in academia or industry, and building a career network among elite peers. The &quot;ugly&quot; reasons involve setting oneself apart professionally, challenging personal ambitions, owning one&apos;s work for recognition, and using a PhD as a pathway to emigrate for better opportunities. Ultimately, the decision to pursue a PhD should align with personal aspirations, whether driven by a desire to advance knowledge or personal goals, acknowledging the profound impact it can have on one&apos;s life.
+          Starting a PhD in Computer Science is a serious decision that literally changes your life. There are many motivations to choose this career path. This post outlines seven reasons for pursuing a PhD in Computer Science. It stresses the importance of clear motivations due to the significant time investment required. The &quot;good&quot; reasons include satisfying intellectual curiosity, becoming a professional researcher with opportunities in academia or industry, and building a career network among elite peers. The &quot;ugly&quot; reasons involve setting oneself apart professionally, challenging personal ambitions, owning one's work for recognition, and using a PhD as a pathway to emigrate for better opportunities. Ultimately, the decision to pursue a PhD should align with personal aspirations, whether driven by a desire to advance knowledge or personal goals, acknowledging the profound impact it can have on one's life.
 
         ]]></description>
       <pubDate>Thu, 21 Oct 2021</pubDate>
@@ -532,7 +532,7 @@
     
     <item>
       <title>
-        Configuring Remote Connections in Unix-Based Systems Using SSH - A noob&apos;s guide
+        Configuring Remote Connections in Unix-Based Systems Using SSH - A noob's guide
       </title>
       <description><![CDATA[
           This practical guide will show you how to configure a remote connection in Unix-based systems. You will learn how to create RSA keys and use SSH to configure the connection from the terminal.
@@ -556,10 +556,10 @@
     
     <item>
       <title>
-        Hermit Programmers are Dead - Don&apos;t call yourself a programmer anymore
+        Hermit Programmers are Dead - Don't call yourself a programmer anymore
       </title>
       <description><![CDATA[
-          The era of the lone, isolated programmer is coming to an end. With the rise of cloud computing, AI, and automation, programmers must evolve into versatile software engineers, embracing collaboration, communication, and a broader skill set. This post explores why programmers who don&apos;t diversify their skills or adapt to new technologies will be left behind in a rapidly changing industry.
+          The era of the lone, isolated programmer is coming to an end. With the rise of cloud computing, AI, and automation, programmers must evolve into versatile software engineers, embracing collaboration, communication, and a broader skill set. This post explores why programmers who don't diversify their skills or adapt to new technologies will be left behind in a rapidly changing industry.
 
         ]]></description>
       <pubDate>Sat, 31 Jul 2021</pubDate>
@@ -572,7 +572,7 @@
         Replace the Disqus Commenting System on Your Blog - GitHub-based open-source alternatives are better
       </title>
       <description><![CDATA[
-          Disqus has started forcing unwanted ads on free users, making it less appealing for bloggers and small businesses. This post explores open-source alternatives like Giscus, a GitHub-based commenting system that offers a lightweight, ad-free, and developer-friendly experience. Here is a guide on how to replace Disqus on your blog and set up Giscus to improve your site&apos;s performance and user experience (and more importantly, getting rid of those annoying ads).
+          Disqus has started forcing unwanted ads on free users, making it less appealing for bloggers and small businesses. This post explores open-source alternatives like Giscus, a GitHub-based commenting system that offers a lightweight, ad-free, and developer-friendly experience. Here is a guide on how to replace Disqus on your blog and set up Giscus to improve your site's performance and user experience (and more importantly, getting rid of those annoying ads).
 
         ]]></description>
       <pubDate>Tue, 27 Jul 2021</pubDate>
@@ -585,7 +585,7 @@
         Book Review&amp;#58; The PhD Grind - A tale of perseverance and learning from failure
       </title>
       <description><![CDATA[
-          Philip Guo&apos;s &quot;The PhD Grind&quot; offers a candid, unfiltered account of his PhD journey in Computer Science. The book provides  invaluable insights into the challenges, failures, and personal growth that come with pursuing a doctorate. This review highlights my reflections after reading it. I paid special attention to the emotional highs and lows, the struggle for research success, and the importance of resilience. Whether you&apos;re considering a PhD or are already in the grind, this book is a must-read for understanding the reality behind the academic pursuit.
+          Philip Guo's &quot;The PhD Grind&quot; offers a candid, unfiltered account of his PhD journey in Computer Science. The book provides  invaluable insights into the challenges, failures, and personal growth that come with pursuing a doctorate. This review highlights my reflections after reading it. I paid special attention to the emotional highs and lows, the struggle for research success, and the importance of resilience. Whether you're considering a PhD or are already in the grind, this book is a must-read for understanding the reality behind the academic pursuit.
 
         ]]></description>
       <pubDate>Thu, 24 Jun 2021</pubDate>
@@ -689,7 +689,7 @@
         How to Deploy a Simple Spring Boot Application in GCP - Getting started with Google Cloud Platform
       </title>
       <description><![CDATA[
-          Deploying a Spring Boot application to Google Cloud Platform (GCP) offers a streamlined way to bring your Java app to life on the web. This post is a step-by-step guide to deploying your application using both Google App Engine and Compute Engine. Whether you&apos;re looking for simplicity with App Engine or more control using Compute Engine, this tutorial covers the essential steps to get your Spring Boot app running on GCP, with scalable infrastructure and cost-effective resources.
+          Deploying a Spring Boot application to Google Cloud Platform (GCP) offers a streamlined way to bring your Java app to life on the web. This post is a step-by-step guide to deploying your application using both Google App Engine and Compute Engine. Whether you're looking for simplicity with App Engine or more control using Compute Engine, this tutorial covers the essential steps to get your Spring Boot app running on GCP, with scalable infrastructure and cost-effective resources.
 
         ]]></description>
       <pubDate>Thu, 02 Jul 2020</pubDate>
@@ -754,7 +754,7 @@
         Deploying to Maven Central - A three-steps guide
       </title>
       <description><![CDATA[
-          Deploying to Maven Central is essential for sharing Java libraries with the world. In this post, I provide a detailed, step-by-step guide on how to deploy a software artifact to Maven Central, covering everything from setting up a Sonatype account to configuring POM files. By following this tutorial, you&apos;ll be able to streamline your deployment process and ensure your libraries are available for reuse to all developers out there.
+          Deploying to Maven Central is essential for sharing Java libraries with the world. In this post, I provide a detailed, step-by-step guide on how to deploy a software artifact to Maven Central, covering everything from setting up a Sonatype account to configuring POM files. By following this tutorial, you'll be able to streamline your deployment process and ensure your libraries are available for reuse to all developers out there.
 
         ]]></description>
       <pubDate>Mon, 06 Jan 2020</pubDate>
@@ -767,7 +767,7 @@
         The Cuban Revolution - My personal vision
       </title>
       <description><![CDATA[
-          The Cuban Revolution was a tremendous moment in the nation&apos;s history. It ended Batista&apos;s dictatorship but resulted in decades of Communist regime under Fidel Castro dictatorship. In this post, I provide a personal perspective on the Revolution&apos;s long-term effects, from the initial promise of social reforms to the harsh reality of lost freedoms and economic devastation. My goal it to share my reflection and offer additional insight into the historical context, the figure of Fidel Castro, and the ongoing struggles of the Cuban people today.
+          The Cuban Revolution was a tremendous moment in the nation's history. It ended Batista's dictatorship but resulted in decades of Communist regime under Fidel Castro dictatorship. In this post, I provide a personal perspective on the Revolution's long-term effects, from the initial promise of social reforms to the harsh reality of lost freedoms and economic devastation. My goal it to share my reflection and offer additional insight into the historical context, the figure of Fidel Castro, and the ongoing struggles of the Cuban people today.
 
         ]]></description>
       <pubDate>Sun, 08 Dec 2019</pubDate>
@@ -793,7 +793,7 @@
         The Practice of Teaching - The ultimate skill to learn
       </title>
       <description><![CDATA[
-          Teaching is an essential skill, whether you&apos;re a developer, researcher, or manager. In this post, I share my experience teaching the Quicksort algorithm using a blackboard. I highlight both the challenges and valuable lessons learned. From preparation tips to the importance of practice, my point is that honing your teaching abilities can enhance your communication skills and overall success in your professional career.
+          Teaching is an essential skill, whether you're a developer, researcher, or manager. In this post, I share my experience teaching the Quicksort algorithm using a blackboard. I highlight both the challenges and valuable lessons learned. From preparation tips to the importance of practice, my point is that honing your teaching abilities can enhance your communication skills and overall success in your professional career.
 
         ]]></description>
       <pubDate>Thu, 14 Feb 2019</pubDate>
@@ -832,7 +832,7 @@
         Git Fundamentals - The must-know git commands for software developers
       </title>
       <description><![CDATA[
-          Git is the go-to version control system in software development, created by Linus Torvalds in 2005 for Linux kernel development. It&apos;s now an indispensable tool for tracking project history and managing versions. This post covers the key Git commands you need to streamline your development workflow.
+          Git is the go-to version control system in software development, created by Linus Torvalds in 2005 for Linux kernel development. It's now an indispensable tool for tracking project history and managing versions. This post covers the key Git commands you need to streamline your development workflow.
 
         ]]></description>
       <pubDate>Tue, 14 Nov 2017</pubDate>
