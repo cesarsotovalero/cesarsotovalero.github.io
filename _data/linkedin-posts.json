@@ -4,6 +4,159 @@
   "data": [
     {
       "isBrandPartnership": false,
+      "text": "I had a great time today attending the Open Infra Forum in Stockholm, a big event with a large community celebrating its 10th anniversary.\n\nOpen infrastructure is a matter of digital sovereignty, and everyone from tech professionals to policymakers should understand its importance.\n\nSome thought-provoking questions that stuck with me:\n\n🔥 If the cloud were turned off in one minute, would your company still function?\n🔥 Would the Swedish public sector still operate?\n🔥 What if a service you rely on gets deprecated in a month?\n🔥 What if the price suddenly spikes, could you migrate away?\n🔥 What if there’s no cloud for you?\n🔥 Are you even able to breathe?\n\nSo here’s the core message:\n\n💦 Digital independence and knowledge are key.\n💦 Your data belongs to you, and no one else.\n💦 If the cloud goes down, the self-hoster becomes king.\n💦 If the internet goes down, the self-hoster is the prince.\n\nAs a 🎁, our Swedish legend Daniel Stenberg shared his experiences as creator and lifelong maintainer of #cURL (first release was in 1996). Hearing how cURL quietly conquered the world, alongside the rise of open-source, was a real delight.\n\nBTW, Daniel wrote a book capturing everything he knows about running and maintaining open-source projects for nearly three decades:\n⤷ https://un.curl.dev/\n\nWanna see your public IP address using cURL in one line?\n\nTry this 🪄 ↓\n\n$ curl ifconfig.me",
+      "totalReactionCount": 8,
+      "likeCount": 8,
+      "repostsCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7331408939626008578/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_curl-activity-7331408939626008578-X0hm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFe83WcBmbPoJyEXXSCf6x7Ohl2C3IvFZEI",
+      "postedAt": "5h",
+      "postedDate": "2025-05-22 20:01:42.198 +0000 UTC",
+      "postedDateTimestamp": 1747944102198,
+      "urn": "7331408939626008578",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1753315200&v=beta&t=CgZ4txP8lKY6cBXjo7YmrZinI46EV7s57UfI2tOJQxs"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1753315200&v=beta&t=OhxD75XYcRTiymy9X3bln51O3fiwZ3nEEHObVSJ5aP4"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1753315200&v=beta&t=IIiMjqsFTC254448L-_i4FRPmEzxquyYDoQqP_86jl8"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1753315200&v=beta&t=2PeamRU9iInySWuw3eD3q3dNQmVmI5O3dnQdbWJF73c"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHXK2GTKKIOOg/feedshare-shrink_160/B4DZb5lkJ8GgAc-/0/1747944099043?e=1750896000&v=beta&t=9KOVbVV00NL82c6H5Xh4jrA6vhmvZMKH5gvPaI6EZA8",
+          "width": 160,
+          "height": 120
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHXK2GTKKIOOg/feedshare-shrink_2048_1536/B4DZb5lkJ8GgAo-/0/1747944099750?e=1750896000&v=beta&t=JEd3-WyJSXRK1i5Lp6XVwJogEnW0mCbiNpk-SPkYGoU",
+          "width": 2048,
+          "height": 1535
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHXK2GTKKIOOg/feedshare-shrink_1280/B4DZb5lkJ8GgAk-/0/1747944099043?e=1750896000&v=beta&t=F6MYs0J3buXbvTXBcdw6TkeB7IJPfiHfe3BSJwtZKPU",
+          "width": 1280,
+          "height": 959
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHXK2GTKKIOOg/feedshare-shrink_800/B4DZb5lkJ8GgAg-/0/1747944099043?e=1750896000&v=beta&t=sl1fBoh0dssZOtrjlKc0v9iwWoZ8eGAU5yNbkMqB4ZE",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHXK2GTKKIOOg/feedshare-shrink_20/B4DZb5lkJ8GgAw-/0/1747944098745?e=1750896000&v=beta&t=wzUvxYfVUeWtdf-yW8IdfR1oCkkuTEtb__S_26gJbXo",
+          "width": 20,
+          "height": 15
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHXK2GTKKIOOg/feedshare-shrink_480/B4DZb5lkJ8GgAY-/0/1747944098745?e=1750896000&v=beta&t=FPZOx6BZlwPQOXSFy_QF1nZs7puRkKoOS7uT4qTqepY",
+          "width": 480,
+          "height": 360
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGWtQQnGPcyEQ/feedshare-shrink_1280/B4DZb5lkKSGkAk-/0/1747944099256?e=1750896000&v=beta&t=S7VO2T7dx-NX3P_1K9FN-dgxFvgRP1g2MVfjfbr2zkk",
+          "width": 1280,
+          "height": 959
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGWtQQnGPcyEQ/feedshare-shrink_480/B4DZb5lkKSGkAY-/0/1747944099256?e=1750896000&v=beta&t=AWnIyZouXSZjsVrLoziIb-2HUMQ9sYg1TwVYa-mLOMI",
+          "width": 480,
+          "height": 359
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGWtQQnGPcyEQ/feedshare-shrink_2048_1536/B4DZb5lkKSGkAo-/0/1747944101201?e=1750896000&v=beta&t=vIWo01A7rSlZ7x4Dhoo9CE1zEsJn6029MKZg1N2cB4o",
+          "width": 2048,
+          "height": 1535
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGWtQQnGPcyEQ/feedshare-shrink_160/B4DZb5lkKSGkAc-/0/1747944099256?e=1750896000&v=beta&t=7nVOMeL8vjuV3S_a4oc2b0pe3TqQy1D3dbPeiCOzLsQ",
+          "width": 160,
+          "height": 119
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGWtQQnGPcyEQ/feedshare-shrink_800/B4DZb5lkKSGkAg-/0/1747944099192?e=1750896000&v=beta&t=dlyk56c1eIFtNa7ID-jNJG1WYd7VyKzOKh1ro1YsdMc",
+          "width": 800,
+          "height": 599
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGWtQQnGPcyEQ/feedshare-shrink_20/B4DZb5lkKSGkAw-/0/1747944099192?e=1750896000&v=beta&t=ONW_vZ7-2N4a9acy9IfohtHUHhey0yoA-nLV0owhv6I",
+          "width": 20,
+          "height": 14
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG4nj_JWv6iwA/feedshare-shrink_160/B4DZb5lkKsG8Ak-/0/1747944099713?e=1750896000&v=beta&t=tCJ55PVG7bhEI2lBr4eAlnEtcVeNRcgyBzbt-JpeXZQ",
+          "width": 160,
+          "height": 119
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG4nj_JWv6iwA/feedshare-shrink_480/B4DZb5lkKsG8Ag-/0/1747944099713?e=1750896000&v=beta&t=VHMMBGpx21pVJy380N2oOGmYBKkSdn-RuXt3EVBW41c",
+          "width": 480,
+          "height": 359
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG4nj_JWv6iwA/feedshare-shrink_2048_1536/B4DZb5lkKsG8Aw-/0/1747944100053?e=1750896000&v=beta&t=odz-xd_EML8LSvbyB8f-BzTRmitrwIkv5_Z1mU2Vh6s",
+          "width": 2048,
+          "height": 1535
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG4nj_JWv6iwA/feedshare-shrink_20/B4DZb5lkKsG8A4-/0/1747944099713?e=1750896000&v=beta&t=ikgZUWqyEDkutsr0MNjNrBpLb64d4S1vYo062vH7Xjs",
+          "width": 20,
+          "height": 14
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG4nj_JWv6iwA/feedshare-shrink_1280/B4DZb5lkKsG8As-/0/1747944099969?e=1750896000&v=beta&t=4IBumZLbwYuf_KsvfXdGN_hd-wWNlvdzzj1v4CnewSw",
+          "width": 1280,
+          "height": 959
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG4nj_JWv6iwA/feedshare-shrink_800/B4DZb5lkKsG8Ao-/0/1747944099969?e=1750896000&v=beta&t=9Nu_BVVcA_qT4jVmzBPBdsUeochfnkt5jKNtHfvhUYE",
+          "width": 800,
+          "height": 599
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "mentions": [
+        {
+          "firstName": "Daniel",
+          "lastName": "Stenberg",
+          "urn": "ACoAAABYyOgBNCf2kPMYnXTQo7dtdXN7IYuIecU",
+          "publicIdentifier": "danielstenberg"
+        }
+      ]
+    },
+    {
+      "isBrandPartnership": false,
       "text": "I'm all in on AI, but there are some uncomfortable echoes from the past that I can’t ignore.\n\nDo you still remember the blockchain “revolution” 5 years ago?\nI do, and it's clear that it never happened.\n\nBillions were poured in 💰\nBold promises about a economic freedom and a new Web3 were made.\nBut half a decade later, most companies walked away from the idea.\n\nDisclaimer: I truly believed in blockchain and descentralized finance, I even ran my own Ethereum nodes and wrote research papers about it!\n\nNow, I look around...\nAnd sometimes it feels like I’m hearing the same kind of hype all over again.\n\n“We're becoming an AI-first company.”\nThat’s the new memo trend from CEOs at big tech companies.\n\nBut the latest AI Index 2025 Report tells a different story:\n\n↳ “So far, most companies are seeing less than 5% revenue growth from their AI investments.” \n\nAfter all the pitches, all the funding, and all the models. \nIt looks like the actual returns haven’t arrived yet.\nMost are waiting for that big ROI.\n\nStill, no one wants to hit the brakes.\n\nSo, here’s what I think:\n\nAI tech isn’t failing.\nIt’s just not magic.\nYet, it's very easy to buy such promises.\n\nYou don’t transform a company with a tool.\nYou do it with vision.\nWith iteration.\nAnd above all, with the joined efforts of great human talents.\n\nSo please, let’s stop chasing headlines.\nLet’s build quietly, strategically.\nBecause we’re not going to reinvent society in a few quarters.\nIt’ll take years.\n\nIf you're committed for the long haul, you’re exactly where you need to be.\n\nAnd hopefully, this time, we won't end up with just more speculation and memecoins 🪙\n\n👇 Source: https://lnkd.in/d2K6VeWN",
       "totalReactionCount": 13,
       "likeCount": 10,
