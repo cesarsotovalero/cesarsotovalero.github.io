@@ -51,7 +51,7 @@ My PhD was about software debloating,[^1] here's my [PhD thesis](https://www.ces
 
 I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
 
-Here's a list of my [completed courses](./courses.html) (and MOOCs).
+Here's a list of my [completed courses](./courses.html) (inc. MOOCs).
 
 A long time ago, I participated in [ACM-ICPC programming contests](/competitions.html). 
 
