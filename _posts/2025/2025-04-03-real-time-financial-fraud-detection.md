@@ -18,7 +18,7 @@ toc: true
 mathjax: false
 date: 2025/04/03
 author: cesarsotovalero
-published: true
+published: false
 ---
 
 Financial fraud is a pervasive problem costing institutions and consumers billions annually.
@@ -105,13 +105,16 @@ Representative research and use-cases for classical methods include:
 - **Kaggle competitions:** Use of XGBoost in the IEEE-CIS 2019 competition and by fintech companies, leveraging its accuracy on tabular features.
 - **Hybrid systems:** Many production systems combine manual **business rules** (for known high-risk patterns) with an ML model (for subtler patterns), using the rules for immediate high-precision flags and the ML model for broad coverage.
 
-# Deep Learning Approaches
+# Deep Learning Models
 
 In recent years, deep learning (DL) techniques have been [applied to transaction fraud detection](https://opencv.org/blog/online-transaction-fraud-detection-using-deep-learning) with promising results.
 Deep neural networks can automatically learn complex feature representations from raw data, potentially capturing patterns that are hard to manually engineer. 
+
+## Deep Learning Architectures
+
 Several deep architectures have been explored for fraud detection.
 
-## Feed-Forward Neural Networks (ANNs)
+### Feed-Forward Neural Networks (ANNs)
 
 Multi-layer perceptrons treating each transaction’s features as input neurons. 
 These can model non-linear combinations of features beyond what logistic regression can capture.
@@ -119,7 +122,7 @@ In practice, simple feed-forward networks have been used as a baseline deep mode
 They often perform similarly to tree ensembles if ample data is available but are harder to interpret.
 They also don’t inherently handle sequence/time information beyond what features provide.
 
-## Convolutional Neural Networks (CNNs)
+### Convolutional Neural Networks (CNNs)
 
 While CNNs are famous for image tasks, they have been applied to fraud by treating transaction data as temporal or spatial sequences.
 For example, a CNN can slide over a sequence of past transactions for a user to detect local patterns or use 1D convolution on time-series of transaction amounts. 
@@ -127,7 +130,7 @@ CNNs excel at automatic feature extraction of localized patterns.
 Some research reformats transaction histories into a 2D “image” (e.g., time vs. feature dimension) so that CNNs can detect anomalous shapes. 
 CNNs for detecting fraud have seen limited but growing use; one study reported ~99% detection accuracy with a CNN on a credit card dataset[^19] (though such high accuracy is likely due to the highly imbalanced nature of the dataset and using AUC or F1 is more meaningful).
 
-## Recurrent Neural Networks (RNNs)
+### Recurrent Neural Networks (RNNs)
 
 RNNs, including LSTM and GRU networks, are well-suited for sequential transactional data.
 They maintain a memory of past events, making them ideal for modeling an account’s behavior over time. 
@@ -137,7 +140,7 @@ Research has shown LSTM-based models can effectively distinguish fraudulent vs. 
 In one case, an LSTM achieved significantly higher recall than static models by catching subtle temporal shifts in user behavior.[^13]
 RNNs do require sequential data, so for one-off transactions without history they are less applicable (unless modeling at the merchant or account aggregate level).
 
-## Autoencoders
+### Autoencoders
 
 Autoencoders are unsupervised anomaly detection models that learn to compress and reconstruct data.
 Training on predominantly legitimate transactions, an autoencoder will reconstruct normal transactions with low error, but fraudulent transactions (which differ from the learned “normal” manifold) will yield higher reconstruction error.
@@ -148,7 +151,7 @@ For instance, an autoencoder might be trained on millions of legitimate transact
 Studies have found autoencoder-based detection can achieve good precision in identifying novel frauds without any fraud labels in training. 
 Variational Autoencoders (VAEs) have also been tried for this purpose.[^21]
 
-## Generative Adversarial Networks (GANs)
+### Generative Adversarial Networks (GANs)
 
 GANs consist of a generator and discriminator. They have two main uses in fraud detection: 
 
@@ -161,7 +164,7 @@ For example, [Swedbank reportedly used GANs](https://developer.nvidia.com/blog/d
 However, GAN training can be complex and less common in production.
 Still, in research, GAN-based methods have shown improved recall by expanding the fraud training sample space.[^22]
 
-## Hybrid Deep Models
+### Hybrid Deep Models
 
 There are also custom architectures combining elements of the above, or combining deep models with classical ones. 
 For example, a "wide and deep model" might have a linear (wide) component for memorizing known risk patterns and a neural network (deep) component for generalization. 
@@ -171,29 +174,74 @@ Recent research explores stacking deep models with tree models to improve robust
 
 ## Strengths
 
-Deep learning’s biggest advantage is **automated feature learning**. As one source notes, deep models can uncover *“intricate, non-linear relationships and subtle correlations within massive datasets that older methods miss”*. They can digest raw inputs (even unstructured data) and find patterns without explicit human-designed features. For instance, an RNN can learn the notion of “rapid spending spree” or “geographical inconsistency” from raw sequences, which would be hard to capture with a few handcrafted features. Deep nets also tend to **improve with more data**, whereas classical models may saturate in performance. In fraud detection, large payment companies have millions of transactions which deep models can leverage to potentially exceed the accuracy of simpler models. Another strength is handling **complex data types**: If one incorporates additional signals like device fingerprints, text (e.g. product names), or network information, deep networks can combine these modalities more seamlessly (e.g. an embedding layer for device ID, an LSTM for text description, etc.). In practice, deep models have shown **higher recall** (catching more fraud) at a given false-positive rate compared to classical models, in several cases. They are also **adaptive** – architectures like RNNs or online learning frameworks can update as new data comes in, enabling continuous learning (important as fraud evolves).
+Deep learning’s biggest advantage is **automated feature learning**.
+Deep models can uncover intricate, non-linear relationships and subtle correlations within massive datasets that older methods miss.
+They can digest raw inputs (even unstructured data) and find patterns without explicit human-designed features.
+For instance, an RNN can learn the notion of “rapid spending spree” or “geographical inconsistency” from raw sequences, which would be hard to capture with handcrafted features. 
+
+Deep nets also tend to **improve with more data**, whereas classical models may saturate in performance.
+In fraud detection, large payment companies have millions of transactions which deep models can leverage to potentially exceed the accuracy of simpler models.
+
+Another strength is handling **complex data types**: If one incorporates additional signals like device fingerprints, text (e.g., product names), or network information, deep networks can combine these modalities more seamlessly (e.g., an embedding layer for device ID, an LSTM for text description, etc.).
+
+In practice, deep models have shown **higher recall** (catching more fraud) at a given false-positive rate compared to classical models, in several cases.[^13]
+They are also adaptive architectures like RNNs or online learning frameworks can update as new data comes in, enabling continuous learning (important as fraud evolves).
 
 ## Weaknesses 
 
-The primary downsides are **complexity and interpretability**. Deep networks are often “black boxes” – it’s non-trivial to explain why a certain transaction was flagged. This is problematic for financial institutions that need to justify decisions to customers or regulators. Techniques like SHAP or LIME can help interpret feature importance for deep models, but it’s still harder compared to a linear model or decision tree. Another issue is the **data and compute requirement**: training large neural networks may require GPUs and extensive hyperparameter tuning, which can be overkill for some fraud datasets (especially if data is limited or highly imbalanced). In fact, many academic studies on the popular Kaggle credit card dataset (284,807 transactions) found that simpler models can match deep model performance, likely because the dataset is small and mostly numeric PCA features. Deep models really shine when there are huge datasets or additional unlabeled data to 
-pre-train on. **Overfitting** is a risk too – fraud datasets are skewed and sometimes static snapshots in time; a deep network might memorize past fraud patterns that fraudsters no longer use, if not carefully regularized. Finally, **latency can be a concern**: a large CNN or LSTM might take longer to evaluate than a logistic regression. However, many deep models used for fraud are not excessively large (e.g. an LSTM with a few hundred units), and with optimized inference (batching, quantization, etc.) they can often still meet real-time requirements. We discuss latency more later, but suffice it to say that deploying deep models at scale might necessitate **GPU acceleration** or model optimizations in high-throughput environments.
+The primary downsides are **complexity and interpretability**. 
+Deep networks are often “black boxes”, meaning that it’s non-trivial to explain why a certain transaction was flagged.
+This is problematic for financial institutions that need to justify decisions to customers or regulators.
+Techniques like [SHapley Additive exPlanations](https://shap.readthedocs.io/) (SHAP) or [Local Interpretable Model-Agnostic Explanations](https://github.com/marcotcr/lime) (LIME) can help interpret feature importance for deep models, [but it’s still harder](https://www.milliman.com/en/insight/Explainable-AI-in-fraud-detection) compared to a linear model or decision tree. 
+
+Another issue is the **data and compute requirement**.
+Training large neural networks may require GPUs and extensive hyperparameter tuning, which can be overkill for some fraud datasets (especially if data is limited or highly imbalanced).
+In fact, many academic studies on the popular Kaggle credit card dataset (284,807 transactions) found that simpler models can match deep model performance, likely because the dataset is small and mostly numeric PCA features. 
+Deep models really shine when there are huge datasets or additional unlabeled data to pre-train on.
+
+**Overfitting** is a risk too, fraud datasets are skewed and sometimes static snapshots in time.
+A deep network might memorize past fraud patterns that fraudsters no longer use, if not carefully regularized.
+
+Finally, **latency can be a concern**.
+A large CNN or LSTM might take longer to evaluate than a logistic regression.
+However, many deep models used for fraud are not excessively large (e.g. an LSTM with a few hundred units), and with optimized inference (batching, quantization, etc.) they can often still meet real-time requirements.
+We discuss latency more later, but suffice it to say that deploying deep models at scale might necessitate **GPU acceleration** or model optimizations in high-throughput environments.
 
 ## Real-Time Suitability
 
-Many deep learning models can be deployed for real-time fraud scoring, but it requires more care than classical models. Simpler networks (small MLPs) are no issue for real-time. RNNs or CNNs might introduce slight latency (tens of milliseconds), but modern inference servers and even FPGAs/TPUs can handle thousands of inferences per second. For instance, **Visa** reportedly targets fraud model evaluations in under \~25ms as part of their payment authorization pipeline. It’s feasible to achieve this with a moderately sized neural network and good infrastructure. Scaling to high transaction volumes is another aspect – deep models may consume more CPU/GPU resources, so a cloud deployment might need to autoscale instances or use GPU inference for peak loads. A potential strategy for real-time use is a **two-stage system**: a fast classical model first filters obvious cases (either definitely legitimate or obviously fraudulent), and a slower deep model only analyzes the ambiguous middle chunk of transactions. This way, the heavy model is used on a fraction of traffic to keep overall throughput high. Additionally, organizations often maintain a **feedback loop**: flag predictions are reviewed (by analysts or via outcomes like chargebacks), and the deep model is retrained frequently to incorporate the latest data. Some deep models can be updated via **online learning** – for example, an RNN that continuously updates its hidden state or a streaming NN that periodically retrains on a rolling window of data – which helps keep them current with concept drift.
+Many deep learning models can be deployed for real-time fraud scoring, but it requires more care than classical models. 
+Simpler networks (small MLPs) are no issue for real-time.
+RNNs or CNNs might introduce slight latency (tens of milliseconds), but modern inference servers and even FPGAs/TPUs can handle thousands of inferences per second.
+For instance, Visa reportedly targets fraud model evaluations in under \~25ms as part of their payment authorization pipeline.
+It’s feasible to achieve this with a moderately sized neural network and good infrastructure.
+
+Scaling to high transaction volumes is another aspect.
+Deep models may consume more CPU/GPU resources, so a cloud deployment might need to autoscale instances or use GPU inference for peak loads.
+
+A potential strategy for real-time use is a **two-stage system**: a fast classical model first filters obvious cases (either definitely legitimate or obviously fraudulent), and a slower deep model only analyzes the ambiguous middle chunk of transactions.
+This way, the heavy model is used on a fraction of traffic to keep overall throughput high. 
+
+Additionally, organizations often maintain a **feedback loop**: flag predictions are reviewed (by analysts or via outcomes like chargebacks), and the deep model is retrained frequently to incorporate the latest data. 
+
+Some deep models can be updated via **online learning**.
+For example, an RNN that continuously updates its hidden state or a streaming NN that periodically retrains on a rolling window of data, which helps keep them current with 
+concept drift.
 
 ## Examples
 
 Notable examples of deep learning in fraud detection:
 
-- *Feedforward DNNs:* e.g. **PayPal** in the mid-2010s applied neural networks to fraud, and more recent fintech startups leverage DNNs on features (Feedzai, etc., often combining with tree models).
-- *RNN/LSTM for sequences:* multiple studies (Jha et al. 2019, Bahnsen et al. 2016, etc.) showed LSTM networks can detect sequential fraud behavior that static models miss, improving recall by capturing temporal patterns. Some large merchants use LSTMs on user event streams to catch account takeovers and fraud in session.
+- *Feedforward DNNs:* PayPal in the mid-2010s applied neural networks to fraud, and more recent fintech startups leverage DNNs on features (Feedzai, etc., often combining with tree models).
+- *RNN/LSTM for sequences:* Multiple studies (Jha et al. 2019, Bahnsen et al. 2016, etc.) showed LSTM networks can detect sequential fraud behavior that static models miss, improving recall by capturing temporal patterns. Some large merchants use LSTMs on user event streams to catch account takeovers and fraud in session.
 - *Autoencoder anomaly detection:* unsupervised autoencoders have been used by banks to flag new types of fraud. For instance, an autoencoder trained on normal mobile transactions flagged anomalies that turned out to be new fraud rings exploiting a loophole (detected via high reconstruction error).
-- *Hybrid Deep + GBDT:* recent trends include using neural networks to generate features for a gradient boosted tree. One approach trained a deep autoencoder or embedding model on transactions, then fed the learned embeddings into XGBoost – yielding improved accuracy while retaining the tree model’s explainability. This hints at a theme: combining deep learning’s representation power with the structured modeling and interpretability of classical methods.
+- *Hybrid Deep + GBDT:* Recent trends include using neural networks to generate features for a gradient boosted tree. One approach trained a deep autoencoder or embedding model on transactions, then fed the learned embeddings into XGBoost, yielding improved accuracy while retaining the tree model’s explainability. This hints at a theme: combining deep learning’s representation power with the structured modeling and interpretability of classical methods.
 
-# Graph-Based Methods
+# Graph-Based Models
 
-A powerful class of methods treats the financial system as a **graph** – linking entities like users, accounts, devices, IP addresses, merchants, etc. Fraudulent activity often involves networks: groups of fraudsters might share information (e.g. using the same stolen cards or devices), or a single fraudster might operate many accounts that transact with each other. **Graph-based models** aim to exploit these relational structures to detect fraud patterns that single-transaction models might miss. The rise of **Graph Neural Networks (GNNs)** in recent years has led to many applications in fraud detection.
+A powerful class of methods treats the financial system as a graph, linking entities like users, accounts, devices, IP addresses, merchants, etc.
+Fraudulent activity often involves networks: groups of fraudsters might share information (e.g. using the same stolen cards or devices), or a single fraudster might operate many accounts that transact with each other. 
+Graph-based models aim to exploit these relational structures to detect fraud patterns that single-transaction models might miss. 
+The rise of [Graph Neural Networks](https://en.wikipedia.org/wiki/Graph_neural_network) (GNNs) in recent years has led to many applications in fraud detection.[^23]
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-04-03/suspicious-subgraphs.png alt: "Illustration of entity linkages in transaction fraud" %}
@@ -202,39 +250,105 @@ A powerful class of methods treats the financial system as a **graph** – linki
   </figcaption>
 </figure>
 
-In a graph representation, we can model, for example, a bipartite graph of *credit card transactions*: one set of nodes are **cardholders**, another set are **merchants**, and an edge connects a cardholder to a merchant for each transaction. Fraudulent cards might cluster via merchant edges (e.g. a fraud ring testing many stolen cards at one merchant), or vice versa. Similarly, for online payments we can create nodes for user accounts, email addresses, IP addresses, device IDs, etc., and connect nodes that are observed together in a transaction or account registration. This yields a rich heterogeneous graph of entities. **Graph algorithms** can then be applied: community detection, link analysis (e.g. PageRank on the fraud graph), or, most effectively in recent literature, **Graph Neural Networks** that learn embeddings for nodes or edges to classify them as fraudulent or not.
+In a graph representation, we can model, for example, a bipartite graph of *credit card transactions*: one set of nodes are **cardholders**, another set are **merchants**, and an edge connects a cardholder to a merchant for each transaction.
+Fraudulent cards might cluster via merchant edges (e.g. a fraud ring testing many stolen cards at one merchant), or vice versa. 
+Similarly, for online payments we can create nodes for user accounts, email addresses, IP addresses, device IDs, etc., and connect nodes that are observed together in a transaction or account registration. 
+This yields a rich heterogeneous graph of entities.
+**Graph algorithms** can then be applied: community detection, link analysis (e.g. PageRank on the fraud graph), or, most effectively in recent literature, Graph Neural Networks (GNNs) that learn embeddings for nodes or edges to classify them as fraudulent or not.
 
-**Graph Neural Networks (GNNs)**: GNNs are deep learning models designed for graph-structured data. They propagate information along edges, allowing each node to aggregate features from its neighbors. In fraud terms, a GNN can learn to identify suspicious nodes (e.g. users or transactions) by looking at their connected partners. For instance, if a particular device ID node connects to many user accounts that were later flagged as fraud, a GNN can learn to embed that device node as high-risk, which in turn raises the risk of any new account connected to it. Nvidia’s research notes that **fraud “is rarely a problem of isolated events… fraudsters operate within complex networks”**, and GNNs consider *“connections between accounts and transactions to reveal patterns of suspicious activity across the network.”* By incorporating relational context, GNNs have demonstrated **higher fraud detection accuracy and fewer false positives** than models that ignore graph structure. For example, combining GNN features with an XGBoost classifier led to **catching fraud that would otherwise go undetected and reducing false alarms** due to the added network context. A GNN approach might catch a seemingly normal transaction if the card, device, or IP involved has connections to known frauds that a non-graph model wouldn’t see.
+GNNs are deep learning models designed for graph-structured data. 
+They propagate information along edges, allowing each node to aggregate features from its neighbors. 
+In fraud terms, a GNN can learn to identify suspicious nodes (e.g. users or transactions) by looking at their connected partners.
+For instance, if a particular device ID node connects to many user accounts that were later flagged as fraud, a GNN can learn to embed that device node as high-risk, which in turn raises the risk of any new account connected to it.
 
-Several types of GNN architectures have been used: **Graph Convolutional Networks (GCN)**, **GraphSAGE**, **heterogeneous GNNs** (for multi-type node graphs), and even **Graph Transformers**. A notable benchmark is the **Elliptic dataset** (a Bitcoin transaction graph) where GNNs have been applied to identify illicit transactions by classifying nodes in a large transaction graph. In one study, a GCN on the Elliptic bitcoin graph outperformed random forest by a significant margin in identifying illicit nodes, especially when only a small fraction of nodes have labels. GNNs have also been applied to credit card networks: e.g., researchers have built graphs linking credit card numbers, merchants, and phone numbers, and used a **heterogeneous GNN** to detect fraud cases involving synthetic identities and collusive merchants.
+<aside class="quote">
+    <em>“Fraud is rarely a problem of isolated events… fraudsters operate within complex networks.”</em> 
+</aside>
+
+GNNs consider connections between accounts and transactions to reveal patterns of suspicious activity across the network.
+By incorporating relational context, GNNs have demonstrated **higher fraud detection accuracy and fewer false positives** than models that ignore graph structure.
+For example, combining GNNs features with an XGBoost classifier led to catching fraud that would otherwise go undetected and reducing false alarms due to the added network context. 
+A GNN approach might catch a seemingly normal transaction if the card, device, or IP involved has connections to known frauds that a non-graph model wouldn’t see.
+
+Several types of GNNs architectures have been used: **Graph Convolutional Networks (GCN)**, **GraphSAGE**, **heterogeneous GNNs** (for multi-type node graphs), and even **Graph Transformers**. 
+A notable benchmark is the [Elliptic dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset.html) (a Bitcoin transaction graph) where GNNs have been applied to identify illicit transactions by classifying nodes in a large transaction graph. 
+In one study, a GCN on the Elliptic bitcoin graph outperformed random forest by a significant margin in identifying illicit nodes, especially when only a small fraction of nodes have labels.
+GNNs have also been applied to credit card networks: e.g., researchers have built graphs linking credit card numbers, merchants, and phone numbers, and used a heterogeneous GNN to detect fraud cases involving synthetic identities and collusive merchants.[^3]
 
 ## Strengths
 
-Graph-based methods can detect **patterns of collusion and linkage** that purely feature-based models miss. They effectively **augment each transaction with context**: rather than evaluating an event in isolation, the model considers the broader network (device usage graph, money flow graph, etc.). This is crucial for catching fraud rings – e.g., multiple accounts controlled by one entity or chains of transactions moving funds – which might appear normal individually but are anomalous in aggregate. GNNs in particular combine the best of both worlds: they leverage **graph structure + attribute features** together, learning meaningful representations of nodes/edges. This is important when fraudsters deliberately make individual transactions look innocuous but cannot hide the **relationships** (e.g., reusing the same phone or IP address across many accounts). Another advantage is in reducing false positives by providing context. For example, a transaction with a new device might normally seem risky, but if that device has a long history with the same user and no links to bad accounts, a graph model can recognize it as low risk – avoiding a false alarm. Industry reports indicate that adding graph features or GNN outputs has improved precision of fraud systems by filtering out cases that looked suspicious in isolation but were safe in context.
+Graph-based methods can detect **patterns of collusion and linkage** that purely feature-based models miss. 
+They effectively **augment each transaction with context**.
+Rather than evaluating an event in isolation, the model considers the broader network (device usage graph, money flow graph, etc.). 
+This is crucial for catching fraud rings.
+For example, multiple accounts controlled by one entity or chains of transactions moving funds, which might appear normal individually but are anomalous in aggregate.
+GNNs in particular combine the best of both worlds: they leverage **graph structure + attribute features** together, learning meaningful representations of nodes/edges.[^3]
+This is important when fraudsters deliberately make individual transactions look innocuous but cannot hide the **relationships** (e.g., reusing the same phone or IP address across many accounts).
+
+Another advantage is in reducing false positives by providing context.
+For example, a transaction with a new device might normally seem risky, but if that device has a long history with the same user and no links to bad accounts, a 
+graph model can recognize it as low risk, avoiding a false alarm. 
+Industry reports indicate that adding graph features or GNNs outputs has improved precision of fraud systems by filtering out cases that looked suspicious in isolation but were safe in context.[^4]
 
 ##  Weaknesses
 
-The biggest challenge is **complexity in implementation and deployment**. Building and maintaining the graph data (often called the “graph pipeline”) is non-trivial. Transactions arrive in a stream and must update the graph in real-time (e.g. adding new nodes, new edges). Querying the graph for each new transaction’s neighborhood can be slow if not engineered well. GNN inference itself can be heavy – naively, running a GNN means loading a subgraph and doing matrix operations that are costlier than a simple ML model. Many current GNN solutions operate in batch (offline); as AWS notes, *“current GNN solutions mainly rely on offline batch training and inference… predicting fraudsters in real-time is crucial but challenging”*. There are limited reference architectures for real-time GNN serving, though this is an active development area. Another issue is **scalability**: graphs of financial transactions or users can be enormous (millions of nodes, tens of millions of edges). Training a full GNN on such a graph might not fit in memory or might be extremely slow without sampling techniques. Some approaches use **graph sampling or partitioning** to handle this, or only use GNN to generate features offline. Additionally, GNNs can be hard to interpret – even more so than regular deep nets, since the features are aggregate of neighbors. It can be challenging to explain to an analyst why a certain account was flagged: the reason might be “it’s connected to three other accounts that had chargebacks,” which is somewhat understandable, but the GNN’s learned weights on those connections are not human-interpretable beyond that concept.
+<aside class="quote">
+    <em>“Current GNNs solutions mainly rely on offline batch training and inference, predicting fraudsters in real-time is crucial but challenging.”</em> 
+</aside>
+
+The biggest challenge is **complexity** in implementation and deployment. 
+Building and maintaining the graph data (a.k.a. the “graph pipeline”) is non-trivial. 
+Transactions arrive in a stream and must update the graph in real-time (e.g. adding new nodes, new edges). 
+Querying the graph for each new transaction’s neighborhood can be slow if not engineered well.
+The inference itself can be heavy.
+Running a GNNs means loading a subgraph and doing matrix operations that are costlier than a simple ML model.
+Many current GNNs solutions operate in batch (offline).
+There are limited reference architectures for real-time GNNs serving, though this is an active development area. 
+
+Another issue is **scalability**. 
+Graphs of financial transactions or users can be enormous (millions of nodes, tens of millions of edges).
+Training a full GNNs on such a graph might not fit in memory or might be extremely slow without sampling techniques.
+Some approaches use graph sampling or partitioning to handle this, or only use GNNs to generate features offline.
+Additionally, GNNs can be hard to interpret (even more so than regular deep nets) since the features are aggregate of neighbors. 
+It can be challenging to explain to an analyst why a certain account was flagged: the reason might be “it’s connected to three other accounts that had chargebacks,” which is somewhat understandable, but the GNN’s learned weights on those connections are not human-interpretable beyond that concept.
 
 ## Real-Time Suitability
 
-Real-time deployment of graph-based models is at the cutting edge. It *is* being done in industry, but often with approximations. One pragmatic solution is to use graph analytics to create additional **features** for a traditional model. For example, compute features like “number of accounts sharing this card’s IP address that were fraud” or “average fraud score of neighbors” and update these in real-time, then let a gradient boosting model or neural network consume them. This doesn’t require full GNN online inference, but captures some graph insights. However, truly deploying a GNN in production for each event requires a fast graph database or in-memory graph store. AWS demonstrated a prototype using **Amazon Neptune (graph DB) + DGL (Deep Graph Library)** to serve GNN predictions in real-time by querying a subgraph around the target node for each inference. This kind of pipeline can score within a second or two, which may be acceptable for certain use cases (e.g. online account opening fraud). For high-frequency card transactions (which need sub-second decisions), a full GNN might still be too slow today unless heavily optimized. An alternative is what Nvidia suggests: use GNN offline to produce **node embeddings** or risk scores, then feed those into a super-fast inference system (like an XGBoost model or a rules engine) for the real-time decision. This hybrid approach was shown to work at large scale, where GNN-based features improved detection by even a small percent (say 1% AUC gain), which for big banks translates to millions saved. Lastly, maintaining graph models demands continuous updates as the graph evolves – which is manageable, as new data can be incrementally added, but one must watch for **concept drift** in graph structure (fraud rings forming new connectivity patterns).
+Real-time deployment of graph-based models is at the cutting edge. 
+It is being done in industry but often with approximations.
+One pragmatic solution is to use graph analytics to create additional features for a traditional model.
+For example, compute features like “number of accounts sharing this card’s IP address that were fraud” or “average fraud score of neighbors” and update these in real-time, then let a gradient boosting model or neural network consume them. 
+This doesn’t require full GNNs online inference, but captures some graph insights. 
+However, truly deploying a GNNs in production for each event requires a fast graph database or in-memory graph store.
+
+AWS demonstrated a prototype using Amazon Neptune (graph DB) + DGL (Deep Graph Library) to serve GNNs predictions in real-time by querying a subgraph around the target node for each inference.[^3]
+This kind of pipeline can score within a second or two, which may be acceptable for certain use cases (e.g. online account opening fraud). 
+For high-frequency card transactions (which need sub-second decisions), a full GNNs might still be too slow today unless heavily optimized.
+
+An alternative is what Nvidia suggests: use GNNs offline to produce node embeddings or risk scores, then feed those into a super-fast inference system (like an XGBoost model or a rules engine) for the real-time decision.[^4]
+This hybrid approach was shown to work at large scale, where GNN-based features improved detection by even a small percent (say 1% AUC gain), which for big banks translates to millions saved. 
+
+Lastly, maintaining graph models demands continuous updates as the graph evolves.
+This is stil manageable, as new data can be incrementally added, but one must watch for concept drift in graph structure (fraud rings forming new connectivity patterns).
 
 ## Examples
 
 Representative examples of graph-based fraud detection:
 
-* *Bitcoin fraud detection:* The **Elliptic Bitcoin Dataset** is a graph of 203,769 transactions (nodes) with known illicit vs licit labels. GNN models (GCN, GraphSAGE) on this dataset achieved strong results, showing that analyzing the **transaction network** is effective for detecting illicit cryptocurrency flows.
-* *Credit card network:* Researchers built a **graph of credit card transactions** (cards, merchants, etc.) and applied a GNN which outperformed a baseline MLP by leveraging connections (e.g. card linked to a fraudulent merchant gives card a higher fraud probability).
-* *E-commerce account fraud:* Companies like Alibaba and PayPal have internal systems modeling user networks. For example, accounts connected via shared device or IP can indicate **sybil attacks** or mule accounts. Graph algorithms identified clusters of accounts that share many attributes (forming fraud communities) which were then taken down as a whole.
-* *Telecom fraud (subscription/call fraud):* Graphs connecting phone numbers, IDs, and addresses have been used to catch identity fraud rings. A famous case is detecting **“bust-out fraud”** in which a group of credit card accounts all max out and default – the accounts often share phone or address; linking them in a graph helps catch the ring before the bust-out completes.
-* *Social network fraud:*\* In social finance platforms or peer-to-peer payments, graph methods are used to detect **money laundering** or collusion by analyzing the network of transactions among users (e.g. unusually interconnected payment groups).
+- *Bitcoin fraud detection:* The [Elliptic Bitcoin Dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset.html) is a graph of 203,769 transactions (nodes) with known illicit vs licit labels. GNNs models (GCN, GraphSAGE) on this dataset achieved strong results, showing that analyzing the transaction network is effective for detecting illicit cryptocurrency flows.
+- *Credit card network:* Researchers built a **graph of credit card transactions** (cards, merchants, etc.) and applied a GNNs which outperformed a baseline MLP by leveraging connections (e.g. card linked to a fraudulent merchant gives card a higher fraud probability).
+- *E-commerce account fraud:* Companies like Alibaba and PayPal have internal systems modeling user networks. For example, accounts connected via shared device or IP can indicate **sybil attacks** or mule accounts. Graph algorithms identified clusters of accounts that share many attributes (forming fraud communities) which were then taken down as a whole.
+- *Telecom fraud (subscription/call fraud):* Graphs connecting phone numbers, IDs, and addresses have been used to catch identity fraud rings. A famous case is detecting **“bust-out fraud”** in which a group of credit card accounts all max out and default – the accounts often share phone or address; linking them in a graph helps catch the ring before the bust-out completes.
+- *Social network fraud:* In social finance platforms or peer-to-peer payments, graph methods are used to detect **money laundering** or collusion by analyzing the network of transactions among users (e.g. unusually interconnected payment groups).
 
-Overall, graph-based methods, especially GNNs, represent a cutting-edge approach that can significantly enhance fraud detection by considering **relational data**. As tooling and infrastructure improve (graph databases, streaming graph processing), we expect to see more real-time GNN deployments for fraud in the coming years.
+Overall, graph-based methods, especially GNNs, represent a cutting-edge approach that can significantly enhance fraud detection by considering **relational data**. As tooling and infrastructure improve (graph databases, streaming graph processing), we expect to see more real-time GNNs deployments for fraud in the coming years.
 
 # Transformer-Based and Foundation Models
 
-Transformers – originally developed for language processing – have revolutionized many domains, and they are now making inroads in fraud detection. The key innovation of transformers is the **self-attention mechanism**, which allows modeling long-range dependencies in sequences. In the context of transaction data, transformers can analyze **transaction sequences or sets of features** in flexible ways. Moreover, large pre-trained **foundation models** (akin to GPT or BERT, but for payments) are emerging, where a model is pre-trained on massive amounts of transaction data to learn general patterns, then fine-tuned for specific fraud tasks.
+Transformers (originally developed for language processing) have revolutionized many domains, and they are now making inroads in fraud detection.
+The key innovation of transformers is the **self-attention mechanism**, which allows modeling long-range dependencies in sequences.
+In the context of transaction data, transformers can analyze **transaction sequences or sets of features** in flexible ways.
+Moreover, large pre-trained **foundation models** (akin to GPT or BERT, but for payments) are emerging, where a model is pre-trained on massive amounts of transaction data to learn general patterns, then fine-tuned for specific fraud tasks.
 
 One of the most notable recent developments comes from **Stripe**, the online payments company, which announced a transformer-based *“Payments Foundation Model.”* This is a large-scale self-supervised model trained on **tens of billions of transactions** to create rich numeric representations (embeddings) of each transaction. The idea is analogous to how language models embed words: Stripe’s model learns a high-dimensional embedding for a transaction that captures its essential characteristics and context. Transactions with similar patterns end up with similar embeddings (for example, transactions from the same bank or same email domain cluster together in embedding space). These embeddings serve as a universal representation that can be used for various tasks – fraud detection, risk scoring, identifying businesses in trouble, etc. For the fraud use-case, Stripe reports a dramatic improvement: by feeding sequences of these transaction embeddings into a downstream classifier, they achieved an **increase in detection rate for certain fraud attacks from 59% to 97% overnight**. In particular, they targeted *“card testing”* fraud (fraudsters testing stolen card credentials with small purchases) – something that often hides in high-volume data. The transformer foundation model was able to spot subtle sequential patterns of card testing that previous feature-engineered models missed, **blocking attacks in real-time** before they could do damage. This showcases the potential of transformer models: *“Turns out attention was all payments needed!”*, as the Stripe engineers quip.
 
@@ -261,7 +375,7 @@ Use cases and research for transformers in fraud:
 * *Stripe’s Payments Foundation Model:* A transformer-based model trained on **billions of transactions**, now used to embed transactions and feed into Stripe’s real-time fraud systems. It improved certain fraud detection rates from 59% to 97% and enabled detection of subtle sequential fraud patterns that were previously missed.
 * *Academic research – Tabular transformers:* Studies like Chang et al. (2023) applied a transformer to the **Kaggle credit card dataset** and compared it to SVM, Random Forest, XGBoost, etc. The transformer achieved comparable or superior Precision/Recall, demonstrating that even on tabular data a transformer can learn effectively.
 * *Sequence anomaly detection:* Some works use transformers to model **time series of transactions per account**. A transformer may be trained to predict the next transaction features; if the actual next transaction diverges significantly, it could flag an anomaly. This is analogous to language model use (predict next word).
-* *Cross-entity sequence modeling:* Transformers can also encode sequences of transactions across entities, e.g., tracing a **chain of transactions through intermediary accounts** (useful in money laundering detection). A graph transformer (like the recent *FraudGT* model) combines ideas of GNN and transformer to handle transaction graphs with sequential relations.
+* *Cross-entity sequence modeling:* Transformers can also encode sequences of transactions across entities, e.g., tracing a **chain of transactions through intermediary accounts** (useful in money laundering detection). A graph transformer (like the recent *FraudGT* model) combines ideas of GNNs and transformer to handle transaction graphs with sequential relations.
 * *Foundation models for documents and text in fraud:* While not the focus here, note that transformers (BERT, GPT) are heavily used to detect fraud in textual data – e.g., scam emails, fraudulent insurance claims text, etc. In a holistic fraud system, a foundation model might take into account not just the structured transaction info but also any unstructured data (like customer input or messages) to make a decision.
 
 In summary, **transformer-based models and foundation models** represent the frontier of fraud detection modeling. They offer unparalleled modeling capacity and flexibility, at the cost of high complexity. Early results, especially from industry leaders, indicate they can substantially raise the bar on fraud detection performance when deployed thoughtfully. As these models become more accessible (with open-source frameworks and possibly smaller specialized versions), more fraud teams will likely adopt them, particularly for **large-scale, multi-faceted fraud problems** where simpler models hit a ceiling.
@@ -292,7 +406,7 @@ Once a transaction is scored as fraudulent or suspicious, the system typically t
 
 ## Cloud Example – AWS
 
-AWS provides a reference architecture for real-time fraud detection using all managed services. One pattern is: transactions flow into **Kinesis** → a **Lambda** processes each event (or micro-batches) → it calls **Amazon Fraud Detector** (which hosts the ML model) → the result is written to a DynamoDB and also triggers a Step Function workflow that has logic like “if fraud score above X, call SNS to alert or invoke a case creation”. This entire pipeline is serverless, meaning it can scale seamlessly and you pay per use. Latency can be low (tens of ms for model inference + some overhead). Another pattern uses **Kinesis Data Firehose** to batch events to S3 and simultaneously use a Lambda for real-time scoring (splitting into real-time vs. storage streams). AWS’s managed *Fraud Detector* service is noteworthy: it automates feature engineering (e.g. aggregates) and trains a model on provided data, then hosts an endpoint. This lowers the barrier for teams that don’t want to custom-build a model – though it may not be as flexible or cutting-edge as a custom model. For more advanced needs, AWS suggests using SageMaker to train custom models (possibly including GNNs as shown in an AWS blog using SageMaker + Neptune for real-time GNN inference).
+AWS provides a reference architecture for real-time fraud detection using all managed services. One pattern is: transactions flow into **Kinesis** → a **Lambda** processes each event (or micro-batches) → it calls **Amazon Fraud Detector** (which hosts the ML model) → the result is written to a DynamoDB and also triggers a Step Function workflow that has logic like “if fraud score above X, call SNS to alert or invoke a case creation”. This entire pipeline is serverless, meaning it can scale seamlessly and you pay per use. Latency can be low (tens of ms for model inference + some overhead). Another pattern uses **Kinesis Data Firehose** to batch events to S3 and simultaneously use a Lambda for real-time scoring (splitting into real-time vs. storage streams). AWS’s managed *Fraud Detector* service is noteworthy: it automates feature engineering (e.g. aggregates) and trains a model on provided data, then hosts an endpoint. This lowers the barrier for teams that don’t want to custom-build a model – though it may not be as flexible or cutting-edge as a custom model. For more advanced needs, AWS suggests using SageMaker to train custom models (possibly including GNNs as shown in an AWS blog using SageMaker + Neptune for real-time GNNs inference).
 
 ## Cloud Example – Azure
 
@@ -394,6 +508,21 @@ When deploying fraud detection in real-time, there are several cross-cutting con
 
 ## Latency
 
+At it's core, latency is the time delay between starting an action and completing it. 
+In payment systems, this refers to the time between when a user initiates a transaction and when they receive a confirmation.
+The processing latency is the "hidden" work that happens during transaction processing. 
+
+It includes:
+
+- KYC/AML verification checks (Know Your Customer/Anti-Money Laundering)
+- **Fraud detection systems**
+- Balance checks and holds, Currency conversion calculations
+- Regulatory compliance checks
+- Settlement processing (finalizing the transaction)
+- Payment rail routing decisions (deciding which payment provider to use)
+
+![img.png](latency.png)
+
 Fraud decisions often need to be made in **tens of milliseconds**, especially for card transactions at a point-of-sale or online checkout. Any significant delay could either inconvenience the customer or allow fraudulent transactions to go through unchallenged. For example, in a cross-border payment scenario, the fraud check might have a budget of \~25 ms out of a \~180 ms total processing time. Low latency is achieved by using in-memory data stores for features, efficient code (e.g., C++ or optimized libraries for model scoring), and parallelizing where possible. It’s crucial to monitor not just average latency but **tail latency** (99th percentile) – even a small fraction of slow requests can correspond to many transactions in absolute terms, given large volumes. Techniques like asynchronous processing or quickly approving low-risk transactions and separately processing suspicious ones can help. Also, model complexity impacts latency – large ensembles or deep models might need optimization or more compute. Engineers often make trade-offs, e.g. compressing a model slightly if it cuts latency in half. Meeting strict SLAs (say 95% in <50ms) might rule out extremely heavy models or require special hardware. The bottom line: **every millisecond counts** in real-time fraud detection, so the infrastructure must be tuned for speed.
 
 ## Scalability
@@ -471,4 +600,6 @@ In conclusion, the state-of-the-art in real-time fraud detection is a multi-face
 [^21]: Alshameri, Faleh, and Ran Xia. "[An Evaluation of Variational Autoencoder in Credit Card Anomaly Detection](https://www.sciopen.com/article/10.26599/BDMA.2023.9020035)." Big Data Mining and Analytics (2024).
 
 [^22]: Charitou, Charitos, Artur d’Avila Garcez, and Simo Dragicevic. "[Semi-supervised GANs for fraud detection](https://ieeexplore.ieee.org/document/9206844)." 2020 International Joint Conference on Neural Networks (IJCNN). IEEE, 2020.
+
+[^23]: Motie, Soroor, and Bijan Raahemi. "[Financial fraud detection using graph neural networks: A systematic review](https://doi.org/10.1016/j.eswa.2023.122156)." Expert Systems with Applications (2024)
 
