@@ -1,7 +1,7 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "XOvF_j-DbnN_eeHeS9vXIjGU8So",
+    "etag": "ATFZldDtBQTcU3La6DXwckaa3C0",
     "id": "3s7xjI3g73w",
     "snippet": {
       "publishedAt": "2024-12-29T17:00:04Z",
@@ -85,7 +85,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "346",
+      "viewCount": "347",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -339,7 +339,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Uz1VNE6OIFGR8wzXc0GRSADSukQ",
+    "etag": "X80s7lXF6apZ8YUR3ien--zeJqo",
     "id": "GRd2nxNTZDI",
     "snippet": {
       "publishedAt": "2024-11-30T07:00:08Z",
@@ -413,7 +413,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "161",
+      "viewCount": "162",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -657,7 +657,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "tZclzJ95TUZTd0mFb5GiccXv1Ro",
+    "etag": "JnJ6LNFgouctVFFryGk7MqPxtIY",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -726,7 +726,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LVWzqj2c8HPAgqpzKPmpey16Sno",
+    "etag": "Q0aSxGFyNfiAYDe_T__rgDTz_Lw",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -787,7 +787,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "568",
+      "viewCount": "569",
       "likeCount": "43",
       "favoriteCount": "0",
       "commentCount": "21"
@@ -856,7 +856,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "gH5LI0XG32dvIRDMumNJfbRZllc",
+    "etag": "fN12ci1BELqJLJNcLCFZ-iq_cR4",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -909,7 +909,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "333",
+      "viewCount": "336",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "1"
