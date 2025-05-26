@@ -8,7 +8,7 @@
     
     <item>
       <title>
-        From Classical ML to Transformers and Graphs for Real-Time Financial Fraud Detection - Models, architectures, evaluation metrics, and deployment considerations
+        From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection - Models, architectures, evaluation metrics, and deployment considerations
       </title>
       <description><![CDATA[
           Financial transaction fraud is a pervasive problem costing institutions and consumers billions annually. This survey reviews the current state-of-the-art in real-time transaction fraud detection, spanning both academic research and industry practice.
