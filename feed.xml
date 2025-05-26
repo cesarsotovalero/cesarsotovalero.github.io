@@ -8,6 +8,19 @@
     
     <item>
       <title>
+        From Classical ML to Transformers and Graphs for Real-Time Financial Fraud Detection - Models, architectures, evaluation metrics, and deployment considerations
+      </title>
+      <description><![CDATA[
+          Financial transaction fraud is a pervasive problem costing institutions and consumers billions annually. This survey reviews the current state-of-the-art in real-time transaction fraud detection, spanning both academic research and industry practice.
+
+        ]]></description>
+      <pubDate>Thu, 03 Apr 2025</pubDate>
+      <link>https://www.cesarsotovalero.net/blog/real-time-financial-fraud-detection.html</link>
+      <guid isPermaLink="true">https://www.cesarsotovalero.net/blog/real-time-financial-fraud-detection.html</guid>
+    </item>
+    
+    <item>
+      <title>
         Building GenAI Applications Today - What seems to work, what doesn't, and possibly why
       </title>
       <description><![CDATA[
