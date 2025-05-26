@@ -15,7 +15,7 @@ image: ../img/posts/2025/2025-04-03/img-placeholder_cover.webp
 share-img: ../img/posts/2025/2025-04-03/img-placeholder_cover.webp
 show-avatar: false
 toc: true
-mathjax: false
+mathjax: true
 date: 2025/04/03
 author: cesarsotovalero
 published: true
@@ -594,13 +594,13 @@ Overall, these datasets have driven a lot of research. However, one should be ca
 
 # Evaluation Metrics
 
-Evaluating fraud detection models requires metrics that account for particular challenges such as:
+Evaluating fraud detection models requires metrics that account for very particular challenges such as:
 
 - **Class imbalance:** Transactions labeled as suspicious may be significantly lower of total historical transactions.
 - **Relative costs of false positives vs. false negatives:** False positives (legitimate transactions flagged as fraud) can lead to customer dissatisfaction, while false negatives (fraudulent transactions not detected) can result in financial losses.
 
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-04-03/conf_matrix_fp.png alt: "Confusion matrix of a financial fraud binary classifier." %}
+  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-04-03/conf_matrix.png alt: "Confusion matrix of a financial fraud binary classifier." %}
   <figcaption class="stroke"> 
     Confusion matrix of a financial fraud binary classifier.
   </figcaption>
@@ -610,11 +610,26 @@ Below are the most common metrics and considerations.
 
 ## Precision (Positive Predictive Value)
 
-Among all transactions the model flagged as “fraud” (predicted positive), precision is the fraction that were actually fraud. High precision means **few false positives** – the model doesn’t cry wolf often. Precision is crucial for operational efficiency: low precision means investigators waste time on many false alarms, and customers suffer unnecessary declines. In formulas, Precision = TP / (TP + FP). For fraud, a precision of 0.50 would mean half of the alerts are real fraud. Many top systems aim for very high precision (e.g., 0.9+) at low fraud rates, but there’s a trade-off with recall. Precision is often reported at a certain operating point or as an average if multiple thresholds are considered. An example interpretation: *“Of transactions our system blocked, 95% were indeed fraudulent”* – that’s a precision of 95%.* 
+Among all transactions the model flagged as “fraud” (predicted positive), precision is **the fraction that were actually fraud**.
+
+High precision means **few false positives**.
+
+Precision is crucial for operational efficiency: low precision means investigators waste time on many false alarms, and customers suffer unnecessary declines. 
+
+$$\text{Precision} = \frac{TP}{TP + FP}$$
+
+For fraud, a precision of 0.5 would mean half of the alerts are real fraud. Many top systems aim for very high precision (e.g., 0.9+) at low fraud rates, but there’s a trade-off with recall. Precision is often reported at a certain operating point or as an average if multiple thresholds are considered. 
+
+An example interpretation: “Of transactions our system blocked, 95% were indeed fraudulent”. That’s a precision of 95%. 
+
 
 ## Recall (True Positive Rate or Sensitivity)
 
-Recall is the fraction of actual fraud cases that the model correctly caught. High recall means **few false negatives** – the model is catching most fraudsters. In formula, Recall = TP / (TP + FN). This is critical for security: low recall means many frauds slip through and cause losses. However, one can usually increase recall by lowering the detection threshold at the cost of precision. So there’s a balance. A recall of 0.80 means 80% of fraud instances were detected (20% missed). In practice, businesses may set a recall target like “catch at least 70% of fraud” and then maximize precision under that constraint.* 
+Recall is the fraction of actual fraud cases that the model correctly caught. High recall means **few false negatives** – the model is catching most fraudsters. 
+
+$$\text{Precision} = \frac{TP}{TP + FN}$$
+
+This is critical for security: low recall means many frauds slip through and cause losses. However, one can usually increase recall by lowering the detection threshold at the cost of precision. So there’s a balance. A recall of 0.80 means 80% of fraud instances were detected (20% missed). In practice, businesses may set a recall target like “catch at least 70% of fraud” and then maximize precision under that constraint.* 
 
 ## F1-Score
 
