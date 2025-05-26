@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From Classical ML to Transformers and Graphs for Real-Time Financial Fraud Detection
+title: From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection
 subtitle: Models, architectures, evaluation metrics, and deployment considerations
 tags: ai
 description: |
@@ -347,7 +347,6 @@ As tooling and infrastructure improve (graph databases, streaming graph processi
 
 # Transformer-Based and Foundation Models
 
-
 ## Transformers 
 
 [Transformers](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) (originally developed for language processing) have revolutionized many domains, and they are now making inroads in fraud detection.
@@ -466,51 +465,116 @@ As these models become more accessible (with open-source frameworks and possibly
 
 # Deployment Strategies
 
-Developing a high-accuracy fraud model is only half the battle – it must be deployed in an architecture that can handle **real-time data streams, low latency decisions, and high throughput**. Modern fraud detection systems often leverage cloud-native components and streaming frameworks to achieve these goals. Here we outline typical deployment patterns and tools (with examples from AWS and Azure) for real-time fraud detection:
+Developing a high-accuracy fraud model is only half the story—the real challenge is deploying it in an architecture that can handle **real-time data streams, sub-second decisions, and surging throughput**.
+Modern fraud detection systems increasingly lean on **cloud-native components** and **streaming frameworks** to make this happen.
+Here’s an overview of common deployment patterns using Google Cloud Platform (GCP):
 
 ## Event Streaming and Ingestion
 
-Transactions are often ingested as a continuous stream (from payment processors, banking systems, etc.). Cloud services like **Amazon Kinesis Data Streams** or **Apache Kafka** (Amazon MSK, Azure Event Hubs) are commonly used to capture and buffer these events in real-time. Streaming ingestion ensures that as soon as a transaction occurs, it’s funneled into the detection pipeline within milliseconds. Some systems also use message queues or HTTP APIs for ingestion, but streams provide better scalability for high volumes.
+Fraud detection starts with ingesting a continuous stream of transactions from payment processors, banking systems, or point-of-sale devices.
+
+In GCP, **Pub/Sub** acts as the primary streaming backbone, capturing and buffering transaction events in real time.
+This works much like AWS Kinesis or Azure Event Hubs, but with Google’s global network and seamless scaling.
+Pub/Sub guarantees message durability, ordering (with ordering keys), and scales automatically to handle spikes.
+
+Some systems also use HTTP APIs or queues for ingestion, but **Pub/Sub’s** scalability and integration with **Dataflow** (Apache Beam) make it ideal for high-volume, low-latency scenarios.
+
 
 ## Real-Time Feature Computation
 
-Before the model can score a transaction, relevant features need to be assembled. This may involve **enriching the event with historical data** (e.g., how many transactions has this user made in the past 24 hours? What is the average amount?). In a cloud-native setup, a **feature store** or fast database is used. For example, **Amazon DynamoDB** or **Redis** can store running aggregates or recent activity for each account so that a Lambda function can quickly retrieve features for the incoming transaction. Some organizations use **in-memory feature caches** (like Redis, Hazelcast) to achieve sub-millisecond feature lookups. AWS offers a **Feature Store (SageMaker Feature Store)** that can ingest streaming updates and serve features with low latency. The goal is to avoid slow joins or searches in the transaction path – pre-compute whatever you can.
+Before scoring, each transaction needs feature enrichment like user history, transaction frequency, or average transaction amounts.
+
+GCP’s **Bigtable** or **Firestore** (for document-style lookups) provide ultra-fast, horizontally-scalable NoSQL storage for such features.
+
+Imagine a fraud detection system where a **Cloud Function** or **Dataflow pipeline** enriches each transaction event by querying **Bigtable** for recent account activity, reducing latency to milliseconds.
+
+For caching and in-memory lookup, **Memorystore (Redis)** can be used, providing [sub-millisecond access for high-throughput enrichment](https://redis.io/solutions/fraud-detection/).
+
+Advanced GCP users might implement a **custom feature store** using **Bigtable + Dataflow + Pub/Sub** to precompute and update rolling aggregates.
 
 ## Model Serving (Inference)
 
-The core is a deployed ML model that given a transaction (with features) returns a fraud score or decision. Cloud providers have dedicated services for model hosting: **AWS SageMaker Endpoints**, **Google Vertex AI endpoints**, **Azure ML online endpoints**, etc. These can host a trained model behind a REST API, scaling it horizontally and often with GPU acceleration if needed. For extremely low latency, some opt for serverless functions (like AWS Lambda or Azure Functions) with embedded models for small lightweight models – but more commonly, persistent services handle the model. AWS in particular has a service called **Amazon Fraud Detector**, which is a managed service where you can train a fraud detection model (under the hood it uses algorithms like XGBoost or neural nets) and then do real-time predictions via an API without worrying about the infrastructure. Companies can also deploy their models in containers on Kubernetes or ECS, which many do for flexibility. Regardless of method, the inference service must be **highly scalable and responsive**. A typical target might be p95 latency under 50–100ms for the model API. Some use **multi-model endpoints** to host several models (for different segments or tasks) behind one service.
+At the heart is the deployed model that scores each transaction. GCP’s **Vertex AI Prediction** service offers **online endpoints** with autoscaling, low-latency serving, and even GPU acceleration.
+
+* You train your model (say, using XGBoost or TensorFlow) and deploy it as a **Vertex AI model endpoint**.
+* It exposes a REST API (or gRPC) to score transactions in real time.
+* For ultra-low-latency needs, Cloud Functions can serve embedded lightweight models (although this works best for small models like decision trees or logistic regression).
+
+[GCP’s Fraud Detection Blueprint](https://cloud.google.com/blog/products/databases/fraud-detection-with-cloud-bigtable/) combines Vertex AI with Dataflow and Bigtable to create a reference architecture that can process fraud decisions at scale and with sub-second response times.
+
 
 ## Streaming Orchestration and Decision Logic
 
-After getting a model score, the system needs to take action. Often a **stream processing framework** or workflow orchestrator handles this. For example, AWS proposes using **AWS Lambda + AWS Step Functions** to coordinate the steps in real-time. A Lambda function might receive a batch of transactions from Kinesis, call the Fraud Detector or SageMaker model endpoint for each, then the Step Functions workflow can route the result – if score > threshold, take one path (e.g., send alert or invoke a rule engine), else another path. Other setups use **Apache Flink or Spark Streaming** to embed the model scoring inside the stream processing code – each event flows through a function that scores it and then depending on the score, different streams (pass vs. review) are produced. These streaming frameworks allow for high-throughput, continuous processing with stateful operators (like keeping counters per user). **Complex Event Processing (CEP)** engines can also be used for certain rule-based detections (like “if 5 transactions from the same card in 1 minute, flag”) as part of the pipeline.
+After scoring, the system needs orchestration to determine actions.
+
+GCP offers **Dataflow** (Apache Beam) for stream processing, perfect for scoring events inline and routing them based on the model’s output.
+
+* **Pub/Sub** streams transaction events.
+* **Dataflow** reads the stream, enriches each event with features, scores it using Vertex AI endpoint, and applies business logic (e.g., if fraud score > threshold, flag for review).
+
+Alternatively, **Workflows** and **Cloud Functions** can orchestrate more complex, conditional logic, much like AWS Step Functions or Azure Durable Functions.
 
 ## Alerts, Notifications, and Downstream Actions
 
-Once a transaction is scored as fraudulent or suspicious, the system typically triggers some action. In a cloud deployment, this could be an alert to a **queue or topic**. For instance, send a message to an **SNS topic or Azure Service Bus** that flags the transaction for manual review, or directly call an API to decline the transaction if integrated in an authorization system. Real-time dashboards may be updated, and cases created in case management systems. **Response time is crucial** – if the pipeline is integrated inline with transaction authorization, it might return a “reject” or “challenge (2FA)” decision immediately to the front-end (e.g., the e-commerce site or point-of-sale). More often, fraud detection runs in parallel with authorization and can post-authorize flag a transaction for follow-up (except for high-risk ones which might be blocked in real-time).
+When fraud is detected, you need immediate action.
 
-## Cloud Example – AWS
+* Send alerts via **Pub/Sub topics** to downstream systems.
+* Trigger **Cloud Functions** to initiate case creation, notify analysts, or invoke an authorization block.
+* Update **real-time dashboards** in **BigQuery** or **Looker**.
 
-AWS provides a reference architecture for real-time fraud detection using all managed services. One pattern is: transactions flow into **Kinesis** → a **Lambda** processes each event (or micro-batches) → it calls **Amazon Fraud Detector** (which hosts the ML model) → the result is written to a DynamoDB and also triggers a Step Function workflow that has logic like “if fraud score above X, call SNS to alert or invoke a case creation”. This entire pipeline is serverless, meaning it can scale seamlessly and you pay per use. Latency can be low (tens of ms for model inference + some overhead). Another pattern uses **Kinesis Data Firehose** to batch events to S3 and simultaneously use a Lambda for real-time scoring (splitting into real-time vs. storage streams). AWS’s managed *Fraud Detector* service is noteworthy: it automates feature engineering (e.g., aggregates) and trains a model on provided data, then hosts an endpoint. This lowers the barrier for teams that don’t want to custom-build a model – though it may not be as flexible or cutting-edge as a custom model. For more advanced needs, AWS suggests using SageMaker to train custom models (possibly including GNNs as shown in an AWS blog using SageMaker + Neptune for real-time GNNs inference).
+Moreover, **Pub/Sub’s dead-letter topics** and **retry mechanisms** ensure reliability even in edge cases.
 
-## Cloud Example – Azure
+In high-risk scenarios, decisions can integrate directly with the payment gateway to **decline or challenge transactions** within milliseconds.
 
-Azure’s approach would use similar components: **Azure Event Hubs** for ingestion, **Azure Stream Analytics or Azure Functions** for processing events, **Azure Machine Learning online endpoints** to serve the model, and maybe **Cosmos DB or Azure SQL** to store historical data. Microsoft published an architecture for *real-time mobile banking fraud detection* that uses **Azure Stream Analytics to process events and call an ML model**, achieving detection within \~2 seconds of the transaction. Azure also has an **Anomaly Detector** service (unsupervised) that could be leveraged for fraud, and a template for real-time fraud with Databricks or Synapse pipelines as well. GCP similarly would use **Pub/Sub, Dataflow (Apache Beam), Bigtable/Firestore for features, and Vertex AI for model deployment**, plus possibly **Cloud Functions** for lightweight handling.
+## Example
 
-## Microservices and APIs
+Here’s a GCP-native fraud detection pipeline:
 
-Not all systems use streaming platforms – some bank architectures are microservice-based. For example, when a transaction request comes in, it hits a **Fraud Service** API (a dedicated microservice) which synchronously computes features (possibly via caching microservices), calls the ML model, applies some rules, and returns a decision to the transaction processor. This is a request/response approach rather than event-driven, but it can achieve real-time decisions inline. The microservice might be containerized and scaled on Kubernetes, with careful optimization for latency (e.g., written in a fast language like Go or C++ if needed). Many legacy bank systems still use this approach, sometimes even running models on mainframe or on-prem servers with custom code.
+1. Transactions stream into **Pub/Sub**.
+2. A **Dataflow** job processes each event:
+  * Enriches with features from **Bigtable** or **Firestore**.
+  * Calls the **Vertex AI endpoint** for scoring.
+  * Routes events based on the fraud score (e.g., sends high-risk ones to a **Pub/Sub alert topic**).
+3. Alerts are consumed by downstream systems or **Cloud Functions** for further actions (blocking, notification, manual review).
+4. **BigQuery** stores logs for monitoring, drift detection, and analytics.
+5. **Cloud Monitoring** and **Error Reporting** track system health and model performance, alerting teams to anomalies in real time.
 
-## Monitoring and Logging
 
-A crucial part of deployment is monitoring model performance and system health. Cloud deployments will use tools like CloudWatch (AWS) or Application Insights (Azure) to track latency of model calls, throughput of the stream, error rates, etc. They will also log the model scores and decisions to data stores for offline analysis. In fraud, **drift monitoring** is very important – e.g., if the fraction of transactions flagged as fraud drops or spikes suddenly, that might indicate model drift or a new fraud attack getting past the model. So telemetry and alerting on model outputs are set up.
+### Microservices and APIs
 
-## Continuous Updates
+Some systems favor microservices over streaming.
 
-Deployment strategies include mechanisms for **model retraining and redeployment**. In a cloud setup, one might schedule a SageMaker training job every day on the latest data, then deploy the new model to the endpoint if it passes evaluation. Blue/green deployment can be used to test new models on a shadow traffic before fully cutting over, to ensure they perform well. With infrastructure-as-code, all these steps (data extraction, training, evaluation, deployment) can be orchestrated in pipelines (e.g., using AWS Step Functions or Azure Pipelines). **Retraining frequency** depends on data drift – some retrain monthly, others daily. Real-time pipelines benefit from at least **weekly retraining** in high-fraud environments, as fraud rings can evolve quickly.
+Here, a dedicated **Fraud Detection Service** (perhaps running on **GKE (Kubernetes)**) handles synchronous feature computation (with **Bigtable** or **Memorystore**), invokes the **Vertex AI model**, applies rules, and returns a decision—all within the transaction’s authorization flow.
+
+This design aligns with traditional banking architectures where fraud decisions happen inline.
+
+### Monitoring and Logging
+
+GCP’s **Cloud Monitoring** and **Cloud Logging** track:
+
+* Latency and throughput of ingestion and inference.
+* Error rates and system health.
+* Model score distributions (for detecting drift or attacks).
+
+In fraud detection, **monitoring model drift** is non-negotiable—if fraud rates drop or spike unexpectedly, your system might be under attack or outdated.
+
+### Continuous Updates
+
+Retraining and redeployment keep the model sharp.
+
+* **Vertex AI Pipelines** orchestrate training on fresh data (e.g., daily, weekly) and deploy updated models if performance checks out.
+* **Blue/green deployment** or **A/B testing** ensures safe rollouts.
+* **Infrastructure-as-code** (with **Terraform** or **Deployment Manager**) automates the pipeline, minimizing manual error.
+
+Retraining frequency depends on fraud velocity—fast-evolving threats may require weekly or even daily retraining.
 
 ## Summary
 
-In summary, **cloud-native architectures** provide the building blocks to operationalize fraud detection models at scale. Key characteristics of a robust deployment are: **low latency** data flow (streaming or fast APIs), **scalability** to handle spikes (serverless or auto-scaling services), **reliability** (redundant and monitored), and the ability to **quickly update models** and rules as fraud patterns change. By using managed services (streams, functions, hosted ML models), teams can focus on the fraud logic while the cloud handles the heavy lifting of scaling and throughput. Many modern fraud platforms (Feedzai, Featurespace, etc.) are built with these principles, often on top of the client’s cloud of choice.
+Cloud-native architectures provide the building blocks to operationalize fraud detection models at scale. 
+Key characteristics of a robust deployment are: low latency data flow (streaming or fast APIs), scalability to handle spikes (serverless or auto-scaling services), reliability (redundant and monitored), and the ability to quickly update models and rules as fraud patterns change.
+By using managed services (streams, functions, hosted ML models), teams can focus on the fraud logic while the cloud handles the heavy lifting of scaling and throughput. 
+
+Many modern fraud platforms ([Feedzai](https://www.feedzai.com/), [Featurespace](https://www.featurespace.com/), etc.) are built with these principles, often on top of the client’s cloud of choice.
 
 # Public Datasets
 
@@ -521,8 +585,8 @@ Research in fraud detection often relies on a few key **public datasets** to eva
 | **Kaggle Credit Card (2013)** <br> *\[European Cardholders]*    | Real credit card transactions over 2 days in Sept. 2013, with features being 30 numerical values (most are PCA-transformed) plus time and amount. The data was made public by researchers from ULB (Belgium).                                                                                                                                            | **284,807 transactions**; **492 fraud** (0.172% fraud). Highly imbalanced.                                                                                                                                                            | The go-to dataset for many papers. All features are normalized PCA components (V1–V28) except Time and Amount, so it’s anonymized. Allows testing of algorithms on extreme imbalance. Many models achieve \~0.90+ AUC here, but need careful handling of class imbalance.                                                                                                                                                |
 | **IEEE-CIS Fraud (Vesta 2019)** <br> *\[Kaggle Competition]*    | A large e-commerce transactions dataset with a wide range of features: device info, payment info (card type, etc.), email domain, address, etc. Split into transaction and identity tables. Released as part of a Kaggle competition by Vesta Corporation and IEEE-CIS.                                                                                  | **590,000 training transactions** (approx) with **3.5% fraud**; plus \~500,000 test transactions. Moderately imbalanced (about 1:28 fraud\:legit).                                                                                    | This dataset is much richer (about 300 features) including many categorical features and some missing data. It reflects online card-not-present fraud. Winning solutions used extensive feature engineering and ensemble models. Good testbed for entity-centric features and advanced models.                                                                                                                           |
 | **PaySim (Mobile Money Sim)** <br> *\[Lopez-Rojas et al. 2016]* | A **synthetic** dataset generated by the PaySim simulator, which mimics mobile money transfer operations (in an African mobile money service). Includes different transaction types: CASH-IN, CASH-OUT, TRANSFER, etc., with fields for origin and destination balances. Fraudulent transactions are simulated as illegal transfers that get cashed out. | **6,362,620 transactions** in full dataset (as reported in the PaySim paper), of which a small fraction are fraud. A commonly used subset is \~2.77 million transactions with **8,213 fraud** (\~0.30%).                              | PaySim is not real data but derived from real patterns. It’s useful for evaluating models in a controlled scenario. It contains temporal information (step = hour of simulation). Most frauds in PaySim are in the TRANSFER and CASH-OUT type. Often used to evaluate how models handle larger-scale data. Note: because it’s synthetic, models might perform unrealistically well if they overfit simulation artifacts. |
-| **Elliptic Bitcoin Dataset** <br> *\[Weber et al. 2019]*        | A graph of Bitcoin transactions with ground truth labels for illicit vs licit transactions. Each node is a transaction, edges are Bitcoin transfers, and node features include various blockchain features (e.g., times, amounts, participant info hashed). The task is typically to identify which transactions are illicit.                             | **203,769 transaction nodes** and **234,355 edges** (Bitcoin payment flows). Only **2% of transactions (4,545 nodes) are labeled illicit**; 21% labeled licit; the rest are unknown. Imbalance \~1:49 (illicit\:licit among labeled). | A benchmark for graph-based fraud methods. Allows testing of GNNs and graph features. It’s temporal (transactions over time). Performance is often measured with accuracy/AUC in classifying the illicit nodes. It’s a challenging dataset due to very few fraud examples and lots of unknown labels.                                                                                                                    |
-| **UPFD & Others (Social/Insider Fraud)**                        | There are other niche datasets, e.g., **UBA for insider fraud** (synthetic user behavior audit logs), **social network fraud datasets** (Twitter bot detection, etc.), and **corporate fraud datasets** (Enron emails for detecting accounting fraud). These are less about transaction fraud but sometimes included in surveys.                          | Varies. (E.g., UBA has user activity logs with inserted malicious behaviors; social fraud datasets have posts/users labeled as fraudsters, etc.)                                                                                      | These are beyond transaction fraud but relevant for broader fraud and anomaly detection contexts. Researchers sometimes test generic anomaly detectors on them.                                                                                                                                                                                                                                                          |
+| **Elliptic Bitcoin Dataset** <br> *\[Weber et al. 2019]*        | A graph of Bitcoin transactions with ground truth labels for illicit vs licit transactions. Each node is a transaction, edges are Bitcoin transfers, and node features include various blockchain features (e.g., times, amounts, participant info hashed). The task is typically to identify which transactions are illicit.                            | **203,769 transaction nodes** and **234,355 edges** (Bitcoin payment flows). Only **2% of transactions (4,545 nodes) are labeled illicit**; 21% labeled licit; the rest are unknown. Imbalance \~1:49 (illicit\:licit among labeled). | A benchmark for graph-based fraud methods. Allows testing of GNNs and graph features. It’s temporal (transactions over time). Performance is often measured with accuracy/AUC in classifying the illicit nodes. It’s a challenging dataset due to very few fraud examples and lots of unknown labels.                                                                                                                    |
+| **UPFD & Others (Social/Insider Fraud)**                        | There are other niche datasets, e.g., **UBA for insider fraud** (synthetic user behavior audit logs), **social network fraud datasets** (Twitter bot detection, etc.), and **corporate fraud datasets** (Enron emails for detecting accounting fraud). These are less about transaction fraud but sometimes included in surveys.                         | Varies. (E.g., UBA has user activity logs with inserted malicious behaviors; social fraud datasets have posts/users labeled as fraudsters, etc.)                                                                                      | These are beyond transaction fraud but relevant for broader fraud and anomaly detection contexts. Researchers sometimes test generic anomaly detectors on them.                                                                                                                                                                                                                                                          |
 
 **Notes on Metrics in these datasets:** Due to imbalance, accuracy is not informative (e.g., the credit card dataset has 99.8% non-fraud, so a trivial model gets 99.8% accuracy by predicting all non-fraud!). Hence, papers report metrics like AUC-ROC, precision/recall, or F1-score. For instance, on the Kaggle credit card data, an AUC-ROC around 0.95+ is achievable by top models, and PR AUC is much lower (since base fraud rate is 0.172%). In IEEE-CIS data, top models achieved about 0.92–0.94 AUC-ROC in the competition. PaySim being synthetic often yields extremely high AUC (sometimes >0.99 for simple models) since patterns might be easier to learn. When evaluating on these sets, it’s crucial to use proper cross-validation or the given train/test splits to avoid overfitting (particularly an issue with the small Kaggle credit card data).
 
@@ -536,9 +600,9 @@ Evaluating fraud detection models requires metrics that account for particular c
 - **Relative costs of false positives vs. false negatives:** False positives (legitimate transactions flagged as fraud) can lead to customer dissatisfaction, while false negatives (fraudulent transactions not detected) can result in financial losses.
 
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2025/2025-04-03/confusion-matrix-fp.png alt: "Confusion matrix of a financial fraud binary classifier." %}
+  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-04-03/conf_matrix_fp.png alt: "Confusion matrix of a financial fraud binary classifier." %}
   <figcaption class="stroke"> 
-     Confusion matrix of a financial fraud binary classifier.
+    Confusion matrix of a financial fraud binary classifier.
   </figcaption>
 </figure>
 
