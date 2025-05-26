@@ -18,7 +18,7 @@ toc: true
 mathjax: false
 date: 2025/04/03
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 Financial fraud is a pervasive problem costing institutions and consumers billions annually.
@@ -46,15 +46,15 @@ It covers the major model families used today:
 - **Transformer-based models and foundation models:** Including large pre-trained models like Stripe’s payments foundation model.
 
 For each category, we discuss representative use cases or studies, highlight strengths and weaknesses, and comment on their suitability for real-time fraud detection.
-Beside these, we cover **cloud-native and streaming architectures** for real-time deployment (e.g. AWS SageMaker, Azure ML, Kafka streaming).
+Beside these, we cover **cloud-native and streaming architectures** for real-time deployment (e.g., AWS SageMaker, Azure ML, Kafka streaming).
 We also summarize **common datasets** and benchmarks used in fraud research, key **evaluation metrics** (precision, recall, F1, AUC-ROC, detection latency), and important **deployment considerations** such as latency requirements, scalability, explainability, and model retraining frequency.
 
 # Classical ML Models
 
 Classical ML algorithms have long been used in fraud detection and remain strong baselines in both research and production.
-These include linear models like **logistic regression**, distance-based classifiers like **k-Nearest Neighbors**, and tree-based models such as **decision trees**, **random forests**, and **gradient boosted trees** (e.g. [XGBoost](https://xgboost.readthedocs.io/)).
+These include linear models like **logistic regression**, distance-based classifiers like **k-Nearest Neighbors**, and tree-based models such as **decision trees**, **random forests**, and **gradient boosted trees** (e.g., [XGBoost](https://xgboost.readthedocs.io/)).
 Support Vector Machines ([SVMs](https://en.wikipedia.org/wiki/Support_vector_machine)) have also been explored in academic studies.
-These approaches operate on hand-crafted features derived from transaction data (e.g. `transaction amount`, `location`, `device ID`, `time-of-day`, etc.), often requiring substantial feature engineering by domain experts.
+These approaches operate on hand-crafted features derived from transaction data (e.g., `transaction amount`, `location`, `device ID`, `time-of-day`, etc.), often requiring substantial feature engineering by domain experts.
 
 Banks and financial institutions historically relied on **logistic regression** due to its simplicity and interpretability (its coefficients directly indicate risk factors). 
 Even today, logistic models serve as **interpretable baseline** detectors and are sometimes combined with business rules.
@@ -113,6 +113,7 @@ Deep neural networks can automatically learn complex feature representations fro
 ## Deep Learning Architectures
 
 Several deep architectures have been explored for fraud detection.
+Below, we summarize the most common types.
 
 ### Feed-Forward Neural Networks (ANNs)
 
@@ -142,7 +143,7 @@ RNNs do require sequential data, so for one-off transactions without history the
 
 ### Autoencoders
 
-Autoencoders are unsupervised anomaly detection models that learn to compress and reconstruct data.
+[Autoencoders](https://en.wikipedia.org/wiki/Autoencoder) are unsupervised anomaly detection models that learn to compress and reconstruct data.
 Training on predominantly legitimate transactions, an autoencoder will reconstruct normal transactions with low error, but fraudulent transactions (which differ from the learned “normal” manifold) will yield higher reconstruction error.
 In fraud settings, we can flag transactions with reconstruction error above a threshold as potential fraud.
 Autoencoders have emerged as valuable tools for fraud detection, especially when labeled fraud examples are scarce.[^20]
@@ -204,7 +205,7 @@ A deep network might memorize past fraud patterns that fraudsters no longer use,
 
 Finally, **latency can be a concern**.
 A large CNN or LSTM might take longer to evaluate than a logistic regression.
-However, many deep models used for fraud are not excessively large (e.g. an LSTM with a few hundred units), and with optimized inference (batching, quantization, etc.) they can often still meet real-time requirements.
+However, many deep models used for fraud are not excessively large (e.g., an LSTM with a few hundred units), and with optimized inference (batching, quantization, etc.) they can often still meet real-time requirements.
 We discuss latency more later, but suffice it to say that deploying deep models at scale might necessitate **GPU acceleration** or model optimizations in high-throughput environments.
 
 ## Real-Time Suitability
@@ -239,7 +240,7 @@ Notable examples of deep learning in fraud detection:
 # Graph-Based Models
 
 A powerful class of methods treats the financial system as a graph, linking entities like users, accounts, devices, IP addresses, merchants, etc.
-Fraudulent activity often involves networks: groups of fraudsters might share information (e.g. using the same stolen cards or devices), or a single fraudster might operate many accounts that transact with each other. 
+Fraudulent activity often involves networks: groups of fraudsters might share information (e.g., using the same stolen cards or devices), or a single fraudster might operate many accounts that transact with each other. 
 Graph-based models aim to exploit these relational structures to detect fraud patterns that single-transaction models might miss. 
 The rise of [Graph Neural Networks](https://en.wikipedia.org/wiki/Graph_neural_network) (GNNs) in recent years has led to many applications in fraud detection.[^23]
 
@@ -251,14 +252,14 @@ The rise of [Graph Neural Networks](https://en.wikipedia.org/wiki/Graph_neural_n
 </figure>
 
 In a graph representation, we can model, for example, a bipartite graph of *credit card transactions*: one set of nodes are **cardholders**, another set are **merchants**, and an edge connects a cardholder to a merchant for each transaction.
-Fraudulent cards might cluster via merchant edges (e.g. a fraud ring testing many stolen cards at one merchant), or vice versa. 
+Fraudulent cards might cluster via merchant edges (e.g., a fraud ring testing many stolen cards at one merchant), or vice versa. 
 Similarly, for online payments we can create nodes for user accounts, email addresses, IP addresses, device IDs, etc., and connect nodes that are observed together in a transaction or account registration. 
 This yields a rich heterogeneous graph of entities.
-**Graph algorithms** can then be applied: community detection, link analysis (e.g. PageRank on the fraud graph), or, most effectively in recent literature, Graph Neural Networks (GNNs) that learn embeddings for nodes or edges to classify them as fraudulent or not.
+**Graph algorithms** can then be applied: community detection, link analysis (e.g., PageRank on the fraud graph), or, most effectively in recent literature, Graph Neural Networks (GNNs) that learn embeddings for nodes or edges to classify them as fraudulent or not.
 
 GNNs are deep learning models designed for graph-structured data. 
 They propagate information along edges, allowing each node to aggregate features from its neighbors. 
-In fraud terms, a GNN can learn to identify suspicious nodes (e.g. users or transactions) by looking at their connected partners.
+In fraud terms, a GNN can learn to identify suspicious nodes (e.g., users or transactions) by looking at their connected partners.
 For instance, if a particular device ID node connects to many user accounts that were later flagged as fraud, a GNN can learn to embed that device node as high-risk, which in turn raises the risk of any new account connected to it.
 
 <aside class="quote">
@@ -298,7 +299,7 @@ Industry reports indicate that adding graph features or GNNs outputs has improve
 
 The biggest challenge is **complexity** in implementation and deployment. 
 Building and maintaining the graph data (a.k.a. the “graph pipeline”) is non-trivial. 
-Transactions arrive in a stream and must update the graph in real-time (e.g. adding new nodes, new edges). 
+Transactions arrive in a stream and must update the graph in real-time (e.g., adding new nodes, new edges). 
 Querying the graph for each new transaction’s neighborhood can be slow if not engineered well.
 The inference itself can be heavy.
 Running a GNNs means loading a subgraph and doing matrix operations that are costlier than a simple ML model.
@@ -322,7 +323,7 @@ This doesn’t require full GNNs online inference, but captures some graph insig
 However, truly deploying a GNNs in production for each event requires a fast graph database or in-memory graph store.
 
 AWS demonstrated a prototype using Amazon Neptune (graph DB) + DGL (Deep Graph Library) to serve GNNs predictions in real-time by querying a subgraph around the target node for each inference.[^3]
-This kind of pipeline can score within a second or two, which may be acceptable for certain use cases (e.g. online account opening fraud). 
+This kind of pipeline can score within a second or two, which may be acceptable for certain use cases (e.g., online account opening fraud). 
 For high-frequency card transactions (which need sub-second decisions), a full GNNs might still be too slow today unless heavily optimized.
 
 An alternative is what Nvidia suggests: use GNNs offline to produce node embeddings or risk scores, then feed those into a super-fast inference system (like an XGBoost model or a rules engine) for the real-time decision.[^4]
@@ -336,39 +337,117 @@ This is stil manageable, as new data can be incrementally added, but one must wa
 Representative examples of graph-based fraud detection:
 
 - *Bitcoin fraud detection:* The [Elliptic Bitcoin Dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset.html) is a graph of 203,769 transactions (nodes) with known illicit vs licit labels. GNNs models (GCN, GraphSAGE) on this dataset achieved strong results, showing that analyzing the transaction network is effective for detecting illicit cryptocurrency flows.
-- *Credit card network:* Researchers built a **graph of credit card transactions** (cards, merchants, etc.) and applied a GNNs which outperformed a baseline MLP by leveraging connections (e.g. card linked to a fraudulent merchant gives card a higher fraud probability).
-- *E-commerce account fraud:* Companies like Alibaba and PayPal have internal systems modeling user networks. For example, accounts connected via shared device or IP can indicate **sybil attacks** or mule accounts. Graph algorithms identified clusters of accounts that share many attributes (forming fraud communities) which were then taken down as a whole.
+- *Credit card network:* Researchers built a **graph of credit card transactions** (cards, merchants, etc.) and applied a GNNs which outperformed a baseline MLP by leveraging connections (e.g., card linked to a fraudulent merchant gives card a higher fraud probability).
+- *E-commerce account fraud:* Companies like Alibaba and PayPal have internal systems modeling user networks. For example, accounts connected via shared device or IP can indicate [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack) or mule accounts. Graph algorithms identified clusters of accounts that share many attributes (forming fraud communities) which were then taken down as a whole.
 - *Telecom fraud (subscription/call fraud):* Graphs connecting phone numbers, IDs, and addresses have been used to catch identity fraud rings. A famous case is detecting **“bust-out fraud”** in which a group of credit card accounts all max out and default – the accounts often share phone or address; linking them in a graph helps catch the ring before the bust-out completes.
-- *Social network fraud:* In social finance platforms or peer-to-peer payments, graph methods are used to detect **money laundering** or collusion by analyzing the network of transactions among users (e.g. unusually interconnected payment groups).
+- *Social network fraud:* In social finance platforms or peer-to-peer payments, graph methods are used to detect **money laundering** or collusion by analyzing the network of transactions among users (e.g., unusually interconnected payment groups).
 
-Overall, graph-based methods, especially GNNs, represent a cutting-edge approach that can significantly enhance fraud detection by considering **relational data**. As tooling and infrastructure improve (graph databases, streaming graph processing), we expect to see more real-time GNNs deployments for fraud in the coming years.
+Overall, graph-based methods, especially GNNs, represent a cutting-edge approach that can significantly enhance fraud detection by considering **relational data**. 
+As tooling and infrastructure improve (graph databases, streaming graph processing), we expect to see more real-time GNNs deployments for fraud in the coming years.
 
 # Transformer-Based and Foundation Models
 
-Transformers (originally developed for language processing) have revolutionized many domains, and they are now making inroads in fraud detection.
-The key innovation of transformers is the **self-attention mechanism**, which allows modeling long-range dependencies in sequences.
-In the context of transaction data, transformers can analyze **transaction sequences or sets of features** in flexible ways.
-Moreover, large pre-trained **foundation models** (akin to GPT or BERT, but for payments) are emerging, where a model is pre-trained on massive amounts of transaction data to learn general patterns, then fine-tuned for specific fraud tasks.
 
-One of the most notable recent developments comes from **Stripe**, the online payments company, which announced a transformer-based *“Payments Foundation Model.”* This is a large-scale self-supervised model trained on **tens of billions of transactions** to create rich numeric representations (embeddings) of each transaction. The idea is analogous to how language models embed words: Stripe’s model learns a high-dimensional embedding for a transaction that captures its essential characteristics and context. Transactions with similar patterns end up with similar embeddings (for example, transactions from the same bank or same email domain cluster together in embedding space). These embeddings serve as a universal representation that can be used for various tasks – fraud detection, risk scoring, identifying businesses in trouble, etc. For the fraud use-case, Stripe reports a dramatic improvement: by feeding sequences of these transaction embeddings into a downstream classifier, they achieved an **increase in detection rate for certain fraud attacks from 59% to 97% overnight**. In particular, they targeted *“card testing”* fraud (fraudsters testing stolen card credentials with small purchases) – something that often hides in high-volume data. The transformer foundation model was able to spot subtle sequential patterns of card testing that previous feature-engineered models missed, **blocking attacks in real-time** before they could do damage. This showcases the potential of transformer models: *“Turns out attention was all payments needed!”*, as the Stripe engineers quip.
+## Transformers 
+
+[Transformers](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) (originally developed for language processing) have revolutionized many domains, and they are now making inroads in fraud detection.
+The key innovation of transformers is the **self-attention mechanism**, which allows modeling long-range dependencies in sequences.
+In the context of transaction data, transformers can analyze transaction sequences or sets of features in flexible ways.
+
+Moreover, large pre-trained **foundation models** (akin to GPT or BERT, but for payments) are emerging, where a model is pre-trained on massive amounts of transaction data to learn general patterns, then fine-tuned for specific fraud tasks.
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7325973743875346433?collapsed=1" height="258" width="504" frameborder="0" allowfullscreen="" title="Embedded post" style="display: block; margin: 0 auto;"></iframe>
 
-Beyond Stripe, we see academic interest in transformers for fraud. Some researchers have applied **Transformer encoders to tabular data** (there are models like TabTransformer or integration of transformers with structured data) and reported improved accuracy over MLPs and even over tree models in some cases. The ability of transformers to focus attention on important features or interactions could be beneficial for high-dimensional transaction data. For example, a transformer might learn to put high attention on the *DeviceID* feature when the *IP address country* is different from the *billing country*, effectively learning a rule-like interaction that would be hard for a linear model. Transformers can also model **cross-item sequences**: one can feed a sequence of past transactions as a “sentence” into a transformer, where each transaction is like a token embedding (comprised of attributes like amount, merchant category, etc.). The transformer can then output a representation of the sequence or of the next transaction’s risk. This is similar to an RNN’s use but with the advantage of attention capturing long-range dependencies (e.g. a pattern that repeats after 20 transactions). There have been experiments where a transformer outperformed LSTM on fraud sequence classification, due to its parallel processing and ability to consider all transactions’ relations at once.
+One of the most notable recent developments comes from Stripe, which announced a [transformer-based “Payments Foundation Model.”](https://www.linkedin.com/posts/gautam-kedia-8a275730_tldr-we-built-a-transformer-based-payments-activity-7325973745292980224-vCPR/)
+This is a large-scale self-supervised model trained on tens of billions of transactions to create rich numeric representations (embeddings) of each transaction.
+The idea is analogous to how language models embed words: Stripe’s model learns a high-dimensional embedding for a transaction that captures its essential characteristics and context.
+Transactions with similar patterns end up with similar embeddings (for example, transactions from the same bank or the same email domain cluster together in embedding space). 
+These embeddings serve as a universal representation that can be used for various tasks: fraud detection, risk scoring, identifying businesses in trouble, etc. 
+For the fraud use-case, Stripe reports a dramatic improvement: by feeding sequences of these transaction embeddings into a downstream classifier, they achieved an increase in detection rate for certain fraud attacks from 59% to 97% overnight.
+In particular, they targeted “card testing” fraud (fraudsters testing stolen card credentials with small purchases), something that often hides in high-volume data.
+The transformer foundation model was able to spot subtle sequential patterns of card testing that previous feature-engineered models missed, blocking attacks in real-time before they could do damage.
+This showcases the potential of transformer models: “Turns out attention was all payments needed!”, as the Stripe engineers quip.
 
-Another angle is using transformer models for **entity resolution and representation** in fraud. For instance, a transformer can be trained on the corpus of all descriptions or merchant names that a user has transacted with, thereby learning a “profile” of the user’s spending habits and detecting an out-of-profile transaction (similar to how language models detect an odd word in a sentence). Additionally, **BERT-like models** can be used on event logs or customer support chats to detect social engineering fraud attempts, though that’s adjacent to transaction fraud.
+Researchers have applied Transformer encoders to tabular data.[^18]
+For example, using models like [TabTransformer](https://github.com/lucidrains/tab-transformer-pytorch) or integration of transformers with structured data.
+They reported improved accuracy over MLPs and even over tree models in some cases.
 
-**Foundation models** in fraud refer to large models trained on broad data that can then be adapted. Besides Stripe’s payments model, other financial institutions are likely developing similar *pre-trained embeddings*. For example, a consortium of banks could train a model on pooled transaction data (in a privacy-preserving way, or via federated learning) to get universal fraud features. These large models may use transformers or other architectures but the common theme is self-supervised learning: e.g. predicting a masked field of a transaction (merchant category, or amount) from other fields, or predicting the next transaction given past ones. Through such tasks, the model gains a deep understanding of normal transactional patterns. When fine-tuned on a specific fraud dataset, it starts with a rich feature space and thus performs better with less training data than a model from scratch. This is analogous to how image models pre-trained on ImageNet are fine-tuned for medical images with small datasets.
+The ability of transformers to focus attention on important features or interactions could be beneficial for high-dimensional transaction data.
+For example, a transformer might learn to put high attention on the `device_id` feature when the `ip_address_country` is different from the `billing country`, effectively learning a rule-like interaction that would be hard for a linear model.
 
-**Strengths:** Transformers and foundation models bring **state-of-the-art pattern recognition** to fraud. They particularly shine in capturing **complex interactions** and **sequential/temporal patterns**. The attention mechanism allows the model to focus on the most relevant parts of the input for each decision – for fraud, this could mean focusing on certain past transactions or specific features that are indicative of risk in context. This yields high detection performance, especially for *“hard fraud”* that evades simpler models. The Stripe foundation model’s success (boosting detection from 59% to 97% for a tricky fraud type) exemplifies how a richer model can dramatically improve outcomes. Another strength is **multitask capability**: a large foundation model can be trained once and then used for various related tasks (fraud, credit risk, marketing predictions) simply by fine-tuning or prompting, rather than maintaining separate models for each. This “one model, many tasks” approach can simplify the system and leverage cross-task learning (e.g. learning what a risky transaction looks like might also help predict chargebacks or customer churn). Moreover, transformers can handle **heterogeneous data** relatively easily – one can concatenate different feature types and the self-attention will figure out which parts to emphasize. For example, Stripe’s model encodes each transaction as a dense vector capturing numeric fields, categorical fields, etc., all in one embedding. Finally, foundation models can enable **few-shot or zero-shot fraud detection**: imagine detecting a new fraud pattern that wasn’t in the training data. A pre-trained model that has generally learned “how transactions usually look” might pick up the anomaly better than a model trained only on past known frauds.
+Transformers can also model **cross-item sequences**: one can feed a sequence of past transactions as a “sentence” into a transformer, where each transaction is like a token embedding (comprising attributes like amount, merchant category, etc.).
+The transformer can then output a representation of the sequence or of the next transaction’s risk. 
+This is similar to an RNN’s use but with the advantage of attention capturing long-range dependencies (e.g., a pattern that repeats after 20 transactions). 
+There have been experiments where a transformer outperformed LSTM on fraud sequence classification, due to its parallel processing and ability to consider all transactions’ relations at once.
+
+Another angle is using transformer models for **entity resolution and representation** in fraud. For instance, a transformer can be trained on the corpus of all descriptions or merchant names that a user has transacted with, thereby learning a “profile” of the user’s spending habits and detecting an out-of-profile transaction (similar to how language models detect an odd word in a sentence). 
+Additionally, [BERT](https://en.wikipedia.org/wiki/BERT_(language_model))-like models can be used on event logs or customer support chats to detect social engineering fraud attempts, though that’s adjacent to transaction fraud.
+
+## Foundation models
+
+[Foundation models](https://en.wikipedia.org/wiki/Foundation_model) in fraud refer to large models trained on broad data that can then be adapted.
+Besides Stripe’s payments' model, other financial institutions are likely developing similar pre-trained embeddings. 
+For example, a consortium of banks could train a model on pooled transaction data (in a privacy-preserving way, or via [federated learning](https://en.wikipedia.org/wiki/Federated_learning)) to get universal fraud features.
+
+These large models may use transformers or other architectures, but the common theme is self-supervised learning: e.g., predicting a masked field of a transaction (`merchant_category`, or `amount`) from other fields, or predicting the next transaction given past ones.
+Through such tasks, the model gains a deep understanding of normal transactional patterns.
+When fine-tuned on a specific fraud dataset, it starts with a rich feature space and thus performs better with less training data than a model from scratch. 
+This is analogous to how image models pre-trained on [ImageNet](https://www.image-net.org/) are fine-tuned for medical images with small datasets.
+
+## Strengths 
+
+Transformers and foundation models bring state-of-the-art pattern recognition to fraud.
+They particularly shine in capturing complex interactions and sequential/temporal patterns.
+The attention mechanism allows the model to focus on the most relevant parts of the input for each decision.
+For fraud, this could mean focusing on certain past transactions or specific features that are indicative of risk in context.
+This yields high detection performance, especially for “hard fraud” that evades simpler models.
+
+Another strength is multitasking capabilities.
+A large foundation model can be trained once and then used for various related tasks such as fraud, credit risk, or marketing predictions simply by fine-tuning or prompting, rather than maintaining separate models for each.
+This “one model, many tasks” approach can simplify the system and leverage cross-task learning (e.g., learning what a risky transaction looks like might also help predict chargebacks or customer churn). 
+
+Moreover, transformers can handle heterogeneous data relatively easily.
+One can concatenate different feature types and the self-attention will figure out which parts to emphasize. 
+For example, Stripe’s model encodes each transaction as a dense vector capturing numeric fields, categorical fields, etc., all in one embedding.
+
+Finally, foundation models can enable few-shot or zero-shot fraud detection.
+Imagine detecting a new fraud pattern that wasn’t in the training data. 
+A pre-trained model that has generally learned “how transactions usually look” might pick up the anomaly better than a model trained only on past known frauds.
 
 ## Weaknesses
 
-The obvious downsides are **resource intensity and complexity**. Training a transformer on billions of transactions is a monumental effort – requiring distributed training, specialized hardware (TPUs/GPUs), and careful tuning. This is typically only within reach of large organizations or collaborations. In production, serving a large transformer in real-time can be challenging due to model size and latency. Transformers can have millions of parameters; even if each inference is 50-100ms on a GPU, at very high transaction volumes (thousands per second) this could be costly or slow without scaling out. Techniques like model quantization, knowledge distillation, or efficient transformer variants (Transformer Lite, etc.) might be needed. Another concern is **explainability** – even more so than a standard deep network, a giant foundation model is a black box. Explaining its decisions requires advanced XAI methods, like interpreting attention weights or using SHAP on the embedding features, which is an active research area. For regulated industries, one might still use a simpler surrogate model to justify decisions externally, while the transformer works under the hood. **Overfitting and concept drift** are also concerns: a foundation model might capture a lot of patterns, including some that are spurious or not causally related to fraud. If fraudsters adapt, the model might need periodic re-training or fine-tuning with fresh data to unlearn outdated correlations. The Stripe model is self-supervised (no fraud labels in pre-training) which helps it generalize, but any discriminative fine-tuning on fraud labels will still need updating as fraud evolves.
+The obvious downsides are **resource intensity and complexity**.
+Training a transformer on billions of transactions is a monumental effort, requiring distributed training, specialized hardware (TPUs/GPUs), and careful tuning. 
+This is typically only within reach of large organizations or collaborations. 
+In production, serving a large transformer in real-time can be challenging due to model size and latency.
+Transformers can have millions of parameters, and even if each inference is 50-100ms on a GPU, at very high transaction volumes (thousands per second) this could be costly or slow without scaling out. 
+Techniques like [model quantization](https://huggingface.co/docs/optimum/en/concept_guides/quantization), [knowledge distillation](https://www.ibm.com/think/topics/knowledge-distillation), or efficient transformer variants (e.g., [Transformer Lite](https://huggingface.co/papers/2403.20041)) might be needed.
+
+Another concern is **explainability**.
+Even more so than a standard deep network, a giant foundation model is a black box.
+Explaining its decisions requires advanced XAI methods, like interpreting attention weights or using SHAP on the embedding features, which is an active research area. 
+For regulated industries, one might still use a simpler surrogate model to justify decisions externally, while the transformer works under the hood. 
+
+**Overfitting and concept drift** are also concerns.
+A foundation model might capture a lot of patterns, including some that are spurious or not causally related to fraud.
+If fraudsters adapt, the model might need periodic re-training or fine-tuning with fresh data to unlearn outdated correlations.
+For example, the Stripe model is self-supervised (no fraud labels in pre-training) which helps it generalize, but any discriminative fine-tuning on fraud labels will still need updating as fraud evolves.
+
 
 ## Real-Time Suitability
 
-Surprisingly, with the right engineering, even large transformers can be used in or near real-time. In Stripe’s case, they emphasize the solution runs *“all in real-time”* – meaning the foundation model embeddings are generated and used to score incoming traffic on the fly. This suggests they have optimized the embedding generation (possibly via GPU inference or caching mechanisms). One strategy is to pre-compute embeddings for entities (like a card or user) so that only incremental computation is needed per new transaction. Another strategy is **two-stage scoring**: use a smaller model to thin out events, then apply the heavy model to the most suspicious subset. If real-time means sub-second (say <500ms), a moderately sized transformer model on modern inference servers can fit that window, especially if batch processing a few transactions together to amortize overhead. Cloud providers also offer **accelerated inference endpoints** (like AWS Inferentia chips or Azure’s ONNX runtime with GPU) to deploy large models with low latency. That said, not every company will want to deploy a 100M+ parameter model for each transaction if a simpler model would do – there is a trade-off between maximum accuracy and infrastructure cost/complexity. In many cases, a foundation model could be used to **periodically score accounts offline** (to detect emerging fraud rings) and a simpler online model handle immediate decisions, combining their outputs.
+Surprisingly, with the right engineering, even large transformers can be used in or near real-time. 
+For example, optimizing the embedding generation via GPU inference or caching mechanisms.
+One strategy is to **pre-compute embeddings** for entities (like a card or user) so that only incremental computation is needed per new transaction.
+Another strategy is **two-stage scoring**: use a smaller model to thin out events, then apply the heavy model to the most suspicious subset.
+If real-time means sub-second (say <500ms), a moderately sized transformer model on modern inference servers can fit that window, especially if batch processing a few transactions together to amortize overhead. 
+Cloud providers also offer **accelerated inference endpoints** (like AWS Inferentia chips or Azure’s ONNX runtime with GPU) to deploy large models with low latency. 
+
+That said, not every company will want to deploy a 100M+ parameter model for each transaction if a simpler model would do.
+There is a trade-off between maximum accuracy and infrastructure cost/complexity.
+In many cases, a foundation model could be used to periodically score accounts offline (to detect emerging fraud rings) and a simpler online model handle immediate decisions, combining their outputs.
+
+## Examples
 
 Use cases and research for transformers in fraud:
 
@@ -378,7 +457,12 @@ Use cases and research for transformers in fraud:
 * *Cross-entity sequence modeling:* Transformers can also encode sequences of transactions across entities, e.g., tracing a **chain of transactions through intermediary accounts** (useful in money laundering detection). A graph transformer (like the recent *FraudGT* model) combines ideas of GNNs and transformer to handle transaction graphs with sequential relations.
 * *Foundation models for documents and text in fraud:* While not the focus here, note that transformers (BERT, GPT) are heavily used to detect fraud in textual data – e.g., scam emails, fraudulent insurance claims text, etc. In a holistic fraud system, a foundation model might take into account not just the structured transaction info but also any unstructured data (like customer input or messages) to make a decision.
 
-In summary, **transformer-based models and foundation models** represent the frontier of fraud detection modeling. They offer unparalleled modeling capacity and flexibility, at the cost of high complexity. Early results, especially from industry leaders, indicate they can substantially raise the bar on fraud detection performance when deployed thoughtfully. As these models become more accessible (with open-source frameworks and possibly smaller specialized versions), more fraud teams will likely adopt them, particularly for **large-scale, multi-faceted fraud problems** where simpler models hit a ceiling.
+## Summary
+
+Transformer-based models and foundation models represent the frontier of fraud detection modeling.
+They offer unparalleled modeling capacity and flexibility, at the cost of high complexity.
+Early results, especially from industry leaders, indicate they can substantially raise the bar on fraud detection performance when deployed thoughtfully. 
+As these models become more accessible (with open-source frameworks and possibly smaller specialized versions), more fraud teams will likely adopt them, particularly for large-scale, multi-faceted fraud problems where simpler models hit a ceiling.
 
 # Deployment Strategies
 
@@ -390,7 +474,7 @@ Transactions are often ingested as a continuous stream (from payment processors,
 
 ## Real-Time Feature Computation
 
-Before the model can score a transaction, relevant features need to be assembled. This may involve **enriching the event with historical data** (e.g. how many transactions has this user made in the past 24 hours? What is the average amount?). In a cloud-native setup, a **feature store** or fast database is used. For example, **Amazon DynamoDB** or **Redis** can store running aggregates or recent activity for each account so that a Lambda function can quickly retrieve features for the incoming transaction. Some organizations use **in-memory feature caches** (like Redis, Hazelcast) to achieve sub-millisecond feature lookups. AWS offers a **Feature Store (SageMaker Feature Store)** that can ingest streaming updates and serve features with low latency. The goal is to avoid slow joins or searches in the transaction path – pre-compute whatever you can.
+Before the model can score a transaction, relevant features need to be assembled. This may involve **enriching the event with historical data** (e.g., how many transactions has this user made in the past 24 hours? What is the average amount?). In a cloud-native setup, a **feature store** or fast database is used. For example, **Amazon DynamoDB** or **Redis** can store running aggregates or recent activity for each account so that a Lambda function can quickly retrieve features for the incoming transaction. Some organizations use **in-memory feature caches** (like Redis, Hazelcast) to achieve sub-millisecond feature lookups. AWS offers a **Feature Store (SageMaker Feature Store)** that can ingest streaming updates and serve features with low latency. The goal is to avoid slow joins or searches in the transaction path – pre-compute whatever you can.
 
 ## Model Serving (Inference)
 
@@ -398,15 +482,15 @@ The core is a deployed ML model that given a transaction (with features) returns
 
 ## Streaming Orchestration and Decision Logic
 
-After getting a model score, the system needs to take action. Often a **stream processing framework** or workflow orchestrator handles this. For example, AWS proposes using **AWS Lambda + AWS Step Functions** to coordinate the steps in real-time. A Lambda function might receive a batch of transactions from Kinesis, call the Fraud Detector or SageMaker model endpoint for each, then the Step Functions workflow can route the result – if score > threshold, take one path (e.g. send alert or invoke a rule engine), else another path. Other setups use **Apache Flink or Spark Streaming** to embed the model scoring inside the stream processing code – each event flows through a function that scores it and then depending on the score, different streams (pass vs. review) are produced. These streaming frameworks allow for high-throughput, continuous processing with stateful operators (like keeping counters per user). **Complex Event Processing (CEP)** engines can also be used for certain rule-based detections (like “if 5 transactions from the same card in 1 minute, flag”) as part of the pipeline.
+After getting a model score, the system needs to take action. Often a **stream processing framework** or workflow orchestrator handles this. For example, AWS proposes using **AWS Lambda + AWS Step Functions** to coordinate the steps in real-time. A Lambda function might receive a batch of transactions from Kinesis, call the Fraud Detector or SageMaker model endpoint for each, then the Step Functions workflow can route the result – if score > threshold, take one path (e.g., send alert or invoke a rule engine), else another path. Other setups use **Apache Flink or Spark Streaming** to embed the model scoring inside the stream processing code – each event flows through a function that scores it and then depending on the score, different streams (pass vs. review) are produced. These streaming frameworks allow for high-throughput, continuous processing with stateful operators (like keeping counters per user). **Complex Event Processing (CEP)** engines can also be used for certain rule-based detections (like “if 5 transactions from the same card in 1 minute, flag”) as part of the pipeline.
 
 ## Alerts, Notifications, and Downstream Actions
 
-Once a transaction is scored as fraudulent or suspicious, the system typically triggers some action. In a cloud deployment, this could be an alert to a **queue or topic**. For instance, send a message to an **SNS topic or Azure Service Bus** that flags the transaction for manual review, or directly call an API to decline the transaction if integrated in an authorization system. Real-time dashboards may be updated, and cases created in case management systems. **Response time is crucial** – if the pipeline is integrated inline with transaction authorization, it might return a “reject” or “challenge (2FA)” decision immediately to the front-end (e.g. the e-commerce site or point-of-sale). More often, fraud detection runs in parallel with authorization and can post-authorize flag a transaction for follow-up (except for high-risk ones which might be blocked in real-time).
+Once a transaction is scored as fraudulent or suspicious, the system typically triggers some action. In a cloud deployment, this could be an alert to a **queue or topic**. For instance, send a message to an **SNS topic or Azure Service Bus** that flags the transaction for manual review, or directly call an API to decline the transaction if integrated in an authorization system. Real-time dashboards may be updated, and cases created in case management systems. **Response time is crucial** – if the pipeline is integrated inline with transaction authorization, it might return a “reject” or “challenge (2FA)” decision immediately to the front-end (e.g., the e-commerce site or point-of-sale). More often, fraud detection runs in parallel with authorization and can post-authorize flag a transaction for follow-up (except for high-risk ones which might be blocked in real-time).
 
 ## Cloud Example – AWS
 
-AWS provides a reference architecture for real-time fraud detection using all managed services. One pattern is: transactions flow into **Kinesis** → a **Lambda** processes each event (or micro-batches) → it calls **Amazon Fraud Detector** (which hosts the ML model) → the result is written to a DynamoDB and also triggers a Step Function workflow that has logic like “if fraud score above X, call SNS to alert or invoke a case creation”. This entire pipeline is serverless, meaning it can scale seamlessly and you pay per use. Latency can be low (tens of ms for model inference + some overhead). Another pattern uses **Kinesis Data Firehose** to batch events to S3 and simultaneously use a Lambda for real-time scoring (splitting into real-time vs. storage streams). AWS’s managed *Fraud Detector* service is noteworthy: it automates feature engineering (e.g. aggregates) and trains a model on provided data, then hosts an endpoint. This lowers the barrier for teams that don’t want to custom-build a model – though it may not be as flexible or cutting-edge as a custom model. For more advanced needs, AWS suggests using SageMaker to train custom models (possibly including GNNs as shown in an AWS blog using SageMaker + Neptune for real-time GNNs inference).
+AWS provides a reference architecture for real-time fraud detection using all managed services. One pattern is: transactions flow into **Kinesis** → a **Lambda** processes each event (or micro-batches) → it calls **Amazon Fraud Detector** (which hosts the ML model) → the result is written to a DynamoDB and also triggers a Step Function workflow that has logic like “if fraud score above X, call SNS to alert or invoke a case creation”. This entire pipeline is serverless, meaning it can scale seamlessly and you pay per use. Latency can be low (tens of ms for model inference + some overhead). Another pattern uses **Kinesis Data Firehose** to batch events to S3 and simultaneously use a Lambda for real-time scoring (splitting into real-time vs. storage streams). AWS’s managed *Fraud Detector* service is noteworthy: it automates feature engineering (e.g., aggregates) and trains a model on provided data, then hosts an endpoint. This lowers the barrier for teams that don’t want to custom-build a model – though it may not be as flexible or cutting-edge as a custom model. For more advanced needs, AWS suggests using SageMaker to train custom models (possibly including GNNs as shown in an AWS blog using SageMaker + Neptune for real-time GNNs inference).
 
 ## Cloud Example – Azure
 
@@ -414,7 +498,7 @@ Azure’s approach would use similar components: **Azure Event Hubs** for ingest
 
 ## Microservices and APIs
 
-Not all systems use streaming platforms – some bank architectures are microservice-based. For example, when a transaction request comes in, it hits a **Fraud Service** API (a dedicated microservice) which synchronously computes features (possibly via caching microservices), calls the ML model, applies some rules, and returns a decision to the transaction processor. This is a request/response approach rather than event-driven, but it can achieve real-time decisions inline. The microservice might be containerized and scaled on Kubernetes, with careful optimization for latency (e.g. written in a fast language like Go or C++ if needed). Many legacy bank systems still use this approach, sometimes even running models on mainframe or on-prem servers with custom code.
+Not all systems use streaming platforms – some bank architectures are microservice-based. For example, when a transaction request comes in, it hits a **Fraud Service** API (a dedicated microservice) which synchronously computes features (possibly via caching microservices), calls the ML model, applies some rules, and returns a decision to the transaction processor. This is a request/response approach rather than event-driven, but it can achieve real-time decisions inline. The microservice might be containerized and scaled on Kubernetes, with careful optimization for latency (e.g., written in a fast language like Go or C++ if needed). Many legacy bank systems still use this approach, sometimes even running models on mainframe or on-prem servers with custom code.
 
 ## Monitoring and Logging
 
@@ -422,7 +506,7 @@ A crucial part of deployment is monitoring model performance and system health. 
 
 ## Continuous Updates
 
-Deployment strategies include mechanisms for **model retraining and redeployment**. In a cloud setup, one might schedule a SageMaker training job every day on the latest data, then deploy the new model to the endpoint if it passes evaluation. Blue/green deployment can be used to test new models on a shadow traffic before fully cutting over, to ensure they perform well. With infrastructure-as-code, all these steps (data extraction, training, evaluation, deployment) can be orchestrated in pipelines (e.g. using AWS Step Functions or Azure Pipelines). **Retraining frequency** depends on data drift – some retrain monthly, others daily. Real-time pipelines benefit from at least **weekly retraining** in high-fraud environments, as fraud rings can evolve quickly.
+Deployment strategies include mechanisms for **model retraining and redeployment**. In a cloud setup, one might schedule a SageMaker training job every day on the latest data, then deploy the new model to the endpoint if it passes evaluation. Blue/green deployment can be used to test new models on a shadow traffic before fully cutting over, to ensure they perform well. With infrastructure-as-code, all these steps (data extraction, training, evaluation, deployment) can be orchestrated in pipelines (e.g., using AWS Step Functions or Azure Pipelines). **Retraining frequency** depends on data drift – some retrain monthly, others daily. Real-time pipelines benefit from at least **weekly retraining** in high-fraud environments, as fraud rings can evolve quickly.
 
 ## Summary
 
@@ -437,10 +521,10 @@ Research in fraud detection often relies on a few key **public datasets** to eva
 | **Kaggle Credit Card (2013)** <br> *\[European Cardholders]*    | Real credit card transactions over 2 days in Sept. 2013, with features being 30 numerical values (most are PCA-transformed) plus time and amount. The data was made public by researchers from ULB (Belgium).                                                                                                                                            | **284,807 transactions**; **492 fraud** (0.172% fraud). Highly imbalanced.                                                                                                                                                            | The go-to dataset for many papers. All features are normalized PCA components (V1–V28) except Time and Amount, so it’s anonymized. Allows testing of algorithms on extreme imbalance. Many models achieve \~0.90+ AUC here, but need careful handling of class imbalance.                                                                                                                                                |
 | **IEEE-CIS Fraud (Vesta 2019)** <br> *\[Kaggle Competition]*    | A large e-commerce transactions dataset with a wide range of features: device info, payment info (card type, etc.), email domain, address, etc. Split into transaction and identity tables. Released as part of a Kaggle competition by Vesta Corporation and IEEE-CIS.                                                                                  | **590,000 training transactions** (approx) with **3.5% fraud**; plus \~500,000 test transactions. Moderately imbalanced (about 1:28 fraud\:legit).                                                                                    | This dataset is much richer (about 300 features) including many categorical features and some missing data. It reflects online card-not-present fraud. Winning solutions used extensive feature engineering and ensemble models. Good testbed for entity-centric features and advanced models.                                                                                                                           |
 | **PaySim (Mobile Money Sim)** <br> *\[Lopez-Rojas et al. 2016]* | A **synthetic** dataset generated by the PaySim simulator, which mimics mobile money transfer operations (in an African mobile money service). Includes different transaction types: CASH-IN, CASH-OUT, TRANSFER, etc., with fields for origin and destination balances. Fraudulent transactions are simulated as illegal transfers that get cashed out. | **6,362,620 transactions** in full dataset (as reported in the PaySim paper), of which a small fraction are fraud. A commonly used subset is \~2.77 million transactions with **8,213 fraud** (\~0.30%).                              | PaySim is not real data but derived from real patterns. It’s useful for evaluating models in a controlled scenario. It contains temporal information (step = hour of simulation). Most frauds in PaySim are in the TRANSFER and CASH-OUT type. Often used to evaluate how models handle larger-scale data. Note: because it’s synthetic, models might perform unrealistically well if they overfit simulation artifacts. |
-| **Elliptic Bitcoin Dataset** <br> *\[Weber et al. 2019]*        | A graph of Bitcoin transactions with ground truth labels for illicit vs licit transactions. Each node is a transaction, edges are Bitcoin transfers, and node features include various blockchain features (e.g. times, amounts, participant info hashed). The task is typically to identify which transactions are illicit.                             | **203,769 transaction nodes** and **234,355 edges** (Bitcoin payment flows). Only **2% of transactions (4,545 nodes) are labeled illicit**; 21% labeled licit; the rest are unknown. Imbalance \~1:49 (illicit\:licit among labeled). | A benchmark for graph-based fraud methods. Allows testing of GNNs and graph features. It’s temporal (transactions over time). Performance is often measured with accuracy/AUC in classifying the illicit nodes. It’s a challenging dataset due to very few fraud examples and lots of unknown labels.                                                                                                                    |
-| **UPFD & Others (Social/Insider Fraud)**                        | There are other niche datasets, e.g. **UBA for insider fraud** (synthetic user behavior audit logs), **social network fraud datasets** (Twitter bot detection, etc.), and **corporate fraud datasets** (Enron emails for detecting accounting fraud). These are less about transaction fraud but sometimes included in surveys.                          | Varies. (E.g., UBA has user activity logs with inserted malicious behaviors; social fraud datasets have posts/users labeled as fraudsters, etc.)                                                                                      | These are beyond transaction fraud but relevant for broader fraud and anomaly detection contexts. Researchers sometimes test generic anomaly detectors on them.                                                                                                                                                                                                                                                          |
+| **Elliptic Bitcoin Dataset** <br> *\[Weber et al. 2019]*        | A graph of Bitcoin transactions with ground truth labels for illicit vs licit transactions. Each node is a transaction, edges are Bitcoin transfers, and node features include various blockchain features (e.g., times, amounts, participant info hashed). The task is typically to identify which transactions are illicit.                             | **203,769 transaction nodes** and **234,355 edges** (Bitcoin payment flows). Only **2% of transactions (4,545 nodes) are labeled illicit**; 21% labeled licit; the rest are unknown. Imbalance \~1:49 (illicit\:licit among labeled). | A benchmark for graph-based fraud methods. Allows testing of GNNs and graph features. It’s temporal (transactions over time). Performance is often measured with accuracy/AUC in classifying the illicit nodes. It’s a challenging dataset due to very few fraud examples and lots of unknown labels.                                                                                                                    |
+| **UPFD & Others (Social/Insider Fraud)**                        | There are other niche datasets, e.g., **UBA for insider fraud** (synthetic user behavior audit logs), **social network fraud datasets** (Twitter bot detection, etc.), and **corporate fraud datasets** (Enron emails for detecting accounting fraud). These are less about transaction fraud but sometimes included in surveys.                          | Varies. (E.g., UBA has user activity logs with inserted malicious behaviors; social fraud datasets have posts/users labeled as fraudsters, etc.)                                                                                      | These are beyond transaction fraud but relevant for broader fraud and anomaly detection contexts. Researchers sometimes test generic anomaly detectors on them.                                                                                                                                                                                                                                                          |
 
-**Notes on Metrics in these datasets:** Due to imbalance, accuracy is not informative (e.g. the credit card dataset has 99.8% non-fraud, so a trivial model gets 99.8% accuracy by predicting all non-fraud!). Hence, papers report metrics like AUC-ROC, precision/recall, or F1-score. For instance, on the Kaggle credit card data, an AUC-ROC around 0.95+ is achievable by top models, and PR AUC is much lower (since base fraud rate is 0.172%). In IEEE-CIS data, top models achieved about 0.92–0.94 AUC-ROC in the competition. PaySim being synthetic often yields extremely high AUC (sometimes >0.99 for simple models) since patterns might be easier to learn. When evaluating on these sets, it’s crucial to use proper cross-validation or the given train/test splits to avoid overfitting (particularly an issue with the small Kaggle credit card data).
+**Notes on Metrics in these datasets:** Due to imbalance, accuracy is not informative (e.g., the credit card dataset has 99.8% non-fraud, so a trivial model gets 99.8% accuracy by predicting all non-fraud!). Hence, papers report metrics like AUC-ROC, precision/recall, or F1-score. For instance, on the Kaggle credit card data, an AUC-ROC around 0.95+ is achievable by top models, and PR AUC is much lower (since base fraud rate is 0.172%). In IEEE-CIS data, top models achieved about 0.92–0.94 AUC-ROC in the competition. PaySim being synthetic often yields extremely high AUC (sometimes >0.99 for simple models) since patterns might be easier to learn. When evaluating on these sets, it’s crucial to use proper cross-validation or the given train/test splits to avoid overfitting (particularly an issue with the small Kaggle credit card data).
 
 Overall, these datasets have driven a lot of research. However, one should be cautious when extrapolating results from them to real-world performance. Real production data can be more complex (concept drift, additional features, feedback loops). Nonetheless, the above datasets provide valuable benchmarks to compare algorithms under controlled conditions.
 
@@ -462,7 +546,7 @@ Below are the most common metrics and considerations.
 
 ## Precision (Positive Predictive Value)
 
-Among all transactions the model flagged as “fraud” (predicted positive), precision is the fraction that were actually fraud. High precision means **few false positives** – the model doesn’t cry wolf often. Precision is crucial for operational efficiency: low precision means investigators waste time on many false alarms, and customers suffer unnecessary declines. In formulas, Precision = TP / (TP + FP). For fraud, a precision of 0.50 would mean half of the alerts are real fraud. Many top systems aim for very high precision (e.g. 0.9+) at low fraud rates, but there’s a trade-off with recall. Precision is often reported at a certain operating point or as an average if multiple thresholds are considered. An example interpretation: *“Of transactions our system blocked, 95% were indeed fraudulent”* – that’s a precision of 95%.* 
+Among all transactions the model flagged as “fraud” (predicted positive), precision is the fraction that were actually fraud. High precision means **few false positives** – the model doesn’t cry wolf often. Precision is crucial for operational efficiency: low precision means investigators waste time on many false alarms, and customers suffer unnecessary declines. In formulas, Precision = TP / (TP + FP). For fraud, a precision of 0.50 would mean half of the alerts are real fraud. Many top systems aim for very high precision (e.g., 0.9+) at low fraud rates, but there’s a trade-off with recall. Precision is often reported at a certain operating point or as an average if multiple thresholds are considered. An example interpretation: *“Of transactions our system blocked, 95% were indeed fraudulent”* – that’s a precision of 95%.* 
 
 ## Recall (True Positive Rate or Sensitivity)
 
@@ -474,7 +558,7 @@ The harmonic mean of precision and recall, F1 = 2 \* (Precision \* Recall) / (Pr
 
 ## AUC-ROC (Area Under the ROC Curve)
 
-This measures the model’s ability to discriminate between classes across all thresholds. ROC (Receiver Operating Characteristic) curve plots True Positive Rate (Recall) vs False Positive Rate. AUC is the area under this curve; an AUC of 0.5 is random, 1.0 is perfect. AUC has the advantage of being threshold-independent – it summarizes the model’s performance at all operating points. It’s very common in fraud research because it doesn’t require picking a threshold and is not affected by the overall class imbalance as much as accuracy. An intuitive interpretation of AUC-ROC: it’s the probability that a randomly chosen fraudulent transaction will receive a higher risk score than a randomly chosen legitimate transaction. So, if we randomly pair a fraud and a non-fraud, AUC is the chance the model ranks the fraud higher. AUC considers both recall and specificity (specificity = TN / (TN+FP)) over all thresholds. One caution: when the positive class is extremely rare, AUC can be less informative; AUC might be very high even if model struggles on the minority class, because FPR might be tiny for all models. In such cases, **Precision-Recall AUC** is often more informative. Many fraud competitions used AUC as the evaluation metric (e.g. IEEE-CIS used AUC).
+This measures the model’s ability to discriminate between classes across all thresholds. ROC (Receiver Operating Characteristic) curve plots True Positive Rate (Recall) vs False Positive Rate. AUC is the area under this curve; an AUC of 0.5 is random, 1.0 is perfect. AUC has the advantage of being threshold-independent – it summarizes the model’s performance at all operating points. It’s very common in fraud research because it doesn’t require picking a threshold and is not affected by the overall class imbalance as much as accuracy. An intuitive interpretation of AUC-ROC: it’s the probability that a randomly chosen fraudulent transaction will receive a higher risk score than a randomly chosen legitimate transaction. So, if we randomly pair a fraud and a non-fraud, AUC is the chance the model ranks the fraud higher. AUC considers both recall and specificity (specificity = TN / (TN+FP)) over all thresholds. One caution: when the positive class is extremely rare, AUC can be less informative; AUC might be very high even if model struggles on the minority class, because FPR might be tiny for all models. In such cases, **Precision-Recall AUC** is often more informative. Many fraud competitions used AUC as the evaluation metric (e.g., IEEE-CIS used AUC).
 
 ## AUC-PR (Area Under Precision-Recall Curve)
 
@@ -482,7 +566,7 @@ Not explicitly asked in the question, but worth noting: PR AUC focuses on precis
 
 ## Specificity (True Negative Rate)
 
-In fraud, specificity = TN / (TN + FP) is usually very high by default because TN is huge. It’s rarely a focus, since not catching non-fraud (false positive) is already covered by precision, and we assume we want to allow legitimate transactions. But in some contexts, specificity is considered to make sure the false positive rate is controlled (e.g. “FPR should be below 0.1%”).
+In fraud, specificity = TN / (TN + FP) is usually very high by default because TN is huge. It’s rarely a focus, since not catching non-fraud (false positive) is already covered by precision, and we assume we want to allow legitimate transactions. But in some contexts, specificity is considered to make sure the false positive rate is controlled (e.g., “FPR should be below 0.1%”).
 
 ## False Positive Rate (FPR) and False Negative Rate (FNR)
 
@@ -521,9 +605,16 @@ It includes:
 - Settlement processing (finalizing the transaction)
 - Payment rail routing decisions (deciding which payment provider to use)
 
-![img.png](latency.png)
+<figure class="jb_picture">
+  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2025/2025-04-03/latency.png alt: "Confusion matrix of a financial fraud binary classifier." %}
+  <figcaption class="stroke"> 
+     TODO
+  </figcaption>
+</figure>
 
-Fraud decisions often need to be made in **tens of milliseconds**, especially for card transactions at a point-of-sale or online checkout. Any significant delay could either inconvenience the customer or allow fraudulent transactions to go through unchallenged. For example, in a cross-border payment scenario, the fraud check might have a budget of \~25 ms out of a \~180 ms total processing time. Low latency is achieved by using in-memory data stores for features, efficient code (e.g., C++ or optimized libraries for model scoring), and parallelizing where possible. It’s crucial to monitor not just average latency but **tail latency** (99th percentile) – even a small fraction of slow requests can correspond to many transactions in absolute terms, given large volumes. Techniques like asynchronous processing or quickly approving low-risk transactions and separately processing suspicious ones can help. Also, model complexity impacts latency – large ensembles or deep models might need optimization or more compute. Engineers often make trade-offs, e.g. compressing a model slightly if it cuts latency in half. Meeting strict SLAs (say 95% in <50ms) might rule out extremely heavy models or require special hardware. The bottom line: **every millisecond counts** in real-time fraud detection, so the infrastructure must be tuned for speed.
+
+
+Fraud decisions often need to be made in **tens of milliseconds**, especially for card transactions at a point-of-sale or online checkout. Any significant delay could either inconvenience the customer or allow fraudulent transactions to go through unchallenged. For example, in a cross-border payment scenario, the fraud check might have a budget of \~25 ms out of a \~180 ms total processing time. Low latency is achieved by using in-memory data stores for features, efficient code (e.g., C++ or optimized libraries for model scoring), and parallelizing where possible. It’s crucial to monitor not just average latency but **tail latency** (99th percentile) – even a small fraction of slow requests can correspond to many transactions in absolute terms, given large volumes. Techniques like asynchronous processing or quickly approving low-risk transactions and separately processing suspicious ones can help. Also, model complexity impacts latency – large ensembles or deep models might need optimization or more compute. Engineers often make trade-offs, e.g., compressing a model slightly if it cuts latency in half. Meeting strict SLAs (say 95% in <50ms) might rule out extremely heavy models or require special hardware. The bottom line: **every millisecond counts** in real-time fraud detection, so the infrastructure must be tuned for speed.
 
 ## Scalability
 
@@ -531,7 +622,7 @@ Fraud systems for large institutions have to handle **huge throughput** – poss
 
 ## Explainability
 
-As mentioned earlier, being able to **explain fraud decisions** is crucial for several reasons: customer communication (telling a declined customer why their transaction was flagged), regulatory compliance (laws like GDPR’s “right to explanation”), and internal model governance. Models like logistic regression or decision trees are inherently interpretable – one can list the top factors (e.g. “different country IP contributed +8 to score”). For complex models (ensembles, neural nets), often a **post-hoc explanation tool** is used. **SHAP (SHapley Additive exPlanations)** is popular in fraud detection – it assigns each feature a contribution value for a specific prediction. For example, a SHAP summary might say: *“Transaction was flagged mainly due to high-risk device and unusual amount (device\_id and amount contributed most to the fraud score)”*. Many banks deploy SHAP or LIME to produce reason codes that can be fed into case management systems. Some create surrogate decision trees to approximate the model for explanation. There’s also the strategy of combining interpretable and complex models: e.g., use a transparent model for borderline cases or to double-check the black-box. Explainability isn’t just to satisfy outsiders; it also helps fraud analysts trust the model and glean insights (like discovering a new fraud pattern because certain features consistently have high SHAP values for positives). So, any deployment should incorporate an **explanation pipeline** alongside predictions. This adds a bit of latency/compute overhead but is often worth it. Model documentation and behavior under various scenarios are reviewed thoroughly before deployment in industries like finance – often a requirement by model risk management teams. The need for explainability may sometimes influence model choice: a slightly less accurate but more interpretable model might be chosen over an opaque one, depending on the use case.
+As mentioned earlier, being able to **explain fraud decisions** is crucial for several reasons: customer communication (telling a declined customer why their transaction was flagged), regulatory compliance (laws like GDPR’s “right to explanation”), and internal model governance. Models like logistic regression or decision trees are inherently interpretable – one can list the top factors (e.g., “different country IP contributed +8 to score”). For complex models (ensembles, neural nets), often a **post-hoc explanation tool** is used. **SHAP (SHapley Additive exPlanations)** is popular in fraud detection – it assigns each feature a contribution value for a specific prediction. For example, a SHAP summary might say: *“Transaction was flagged mainly due to high-risk device and unusual amount (device\_id and amount contributed most to the fraud score)”*. Many banks deploy SHAP or LIME to produce reason codes that can be fed into case management systems. Some create surrogate decision trees to approximate the model for explanation. There’s also the strategy of combining interpretable and complex models: e.g., use a transparent model for borderline cases or to double-check the black-box. Explainability isn’t just to satisfy outsiders; it also helps fraud analysts trust the model and glean insights (like discovering a new fraud pattern because certain features consistently have high SHAP values for positives). So, any deployment should incorporate an **explanation pipeline** alongside predictions. This adds a bit of latency/compute overhead but is often worth it. Model documentation and behavior under various scenarios are reviewed thoroughly before deployment in industries like finance – often a requirement by model risk management teams. The need for explainability may sometimes influence model choice: a slightly less accurate but more interpretable model might be chosen over an opaque one, depending on the use case.
 
 ## Maintenance
 
@@ -561,9 +652,9 @@ In conclusion, the state-of-the-art in real-time fraud detection is a multi-face
 
 [^2]: G. Praspaliauskas, V. Raman (2023). *[Real-time fraud detection using AWS serverless and machine learning services](https://aws.amazon.com/blogs/machine-learning/real-time-fraud-detection-using-aws-serverless-and-machine-learning-services/).* AWS Machine Learning Blog – outlines a serverless architecture using Amazon Kinesis, Lambda, and Amazon Fraud Detector for near-real-time fraud prevention.
 
-[^3]: Jian Zhang et al. (2022). *Build a GNN-based real-time fraud detection solution using Amazon SageMaker, Amazon Neptune, and DGL.* AWS ML Blog – explains how graph neural networks can be served in real-time for fraud detection, noting challenges in moving from batch to real-time GNN inference. https://aws.amazon.com/blogs/machine-learning/build-a-gnn-based-real-time-fraud-detection-solution-using-amazon-sagemaker-amazon-neptune-and-the-deep-graph-library/
+[^3]: Jian Zhang et al. (2022). [Build a GNN-based real-time fraud detection solution using Amazon SageMaker, Amazon Neptune, and DGL](https://aws.amazon.com/blogs/machine-learning/build-a-gnn-based-real-time-fraud-detection-solution-using-amazon-sagemaker-amazon-neptune-and-the-deep-graph-library/). AWS ML Blog – explains how graph neural networks can be served in real-time for fraud detection, noting challenges in moving from batch to real-time GNN inference. 
 
-[^4]: Summer Liu et al. (2024). *[Supercharging Fraud Detection in Financial Services with GNNs](https://developer.nvidia.com/blog/supercharging-fraud-detection-in-financial-services-with-graph-neural-networks/).* NVIDIA Technical Blog – highlights the scale of fraud losses (e.g. \$442B in 2023) and introduces graph neural networks as a solution, noting traditional methods aren’t keeping up with sophisticated fraud. 
+[^4]: Summer Liu et al. (2024). *[Supercharging Fraud Detection in Financial Services with GNNs](https://developer.nvidia.com/blog/supercharging-fraud-detection-in-financial-services-with-graph-neural-networks/).* NVIDIA Technical Blog – highlights the scale of fraud losses (e.g., \$442B in 2023) and introduces graph neural networks as a solution, noting traditional methods aren’t keeping up with sophisticated fraud. 
 
 [^5]: NVIDIA Blog (2024) – further details from the above, describing how combining GNNs with XGBoost yields higher accuracy, fewer false positives, and scalable real-time inference, plus the explainability benefit of using tree models with deep learning embeddings. https://developer.nvidia.com/blog/supercharging-fraud-detection-in-financial-services-with-graph-neural-networks/
 

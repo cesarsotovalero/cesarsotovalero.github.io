@@ -90,6 +90,9 @@ h1, h2, h3, h4, h5, h6 {
   counter-reset: h1counter h2counter h3counter h4counter;
 }
 
+.blog-post {
+  counter-reset: h1counter;
+}
 
 h1 {
   margin-top: 40px;
@@ -99,9 +102,13 @@ h1 {
   font-size: 36px;
 }
 
+.blog-post h1 {
+  counter-reset: h2counter;
+}
+
 .blog-post h1:before {
   counter-increment: h1counter;
-  content: counter(h1counter) ".\0000a0\0000a0";
+  content: counter(h1counter) ".\00a0\00a0";
   font-size: 32px;
   font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -126,9 +133,14 @@ h2 {
   font-size: 28px;
 }
 
+.blog-post h2 {
+  counter-reset: h3counter;
+}
+
+
 .blog-post h2:before {
   counter-increment: h2counter;
-  content: counter(h1counter) "." counter(h2counter) ".\0000a0\0000a0";
+  content: counter(h1counter) "." counter(h2counter) ".\00a0\00a0";
   font-size: 24px;
   font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -156,7 +168,7 @@ h3 {
 
 .blog-post h3:before {
   counter-increment: h3counter;
-  content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+  content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) ".\00a0\00a0";
   font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
