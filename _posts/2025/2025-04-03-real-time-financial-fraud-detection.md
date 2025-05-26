@@ -11,8 +11,8 @@ keywords:
   - machine learning
   - deep learning
   - survey
-image: ../img/posts/2025/2025-04-03/img-placeholder_cover.webp
-share-img: ../img/posts/2025/2025-04-03/img-placeholder_cover.webp
+image: ../img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg
+share-img: ../img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg
 show-avatar: false
 toc: true
 mathjax: true
