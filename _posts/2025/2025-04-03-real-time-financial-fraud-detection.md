@@ -21,89 +21,107 @@ author: cesarsotovalero
 published: true
 ---
 
-Financial fraud is a pervasive problem costing institutions and consumers billions annually.
+Financial fraud is a pervasive problem costing institutions and customers billions annually.
 Most known examples include credit card fraud, fraudulent online payments, and money laundering.
-Banks worldwide faced an estimated **\$442** billion in fraud-related losses in 2023 alone.
-In particular, credit card transactional fraud is projected to reach \$43 billion in annual losses by 2026.[^4]
-Beyond direct losses, fraud undermines customer trust and can even lead to **false positives** where legitimate transactions are wrongly blocked.
+Banks worldwide faced an estimated $$ \$442 $$ billion in fraud-related losses in 2023 alone.
+In particular, credit card transactional fraud is projected to reach $$ \$43 $$ billion in annual losses by 2026.[^4]
+Beyond direct losses, fraud undermines customer trust and can even lead to false positives where legitimate transactions are wrongly blocked.
 These false alarms frustrate customers and damage reputation.
-Consequently, fraud detection systems must not only **catch as much fraud as possible** but also **minimize false positives**.
+Consequently, fraud detection systems must not only catch as much fraud as possible but also minimize false positives.
 
 Fraudsters' tactics evolve rapidly.
 Traditional rule-based systems (or simple statistical methods) have proven inadequate against today’s adaptive fraud models.
 On one hand, fraudsters form complex schemes and exploit networks of accounts.
 On the other hand, legitimate transaction volumes continue to grow due to the rise of e-commerce and digital payments.
-This has driven a shift toward **Machine Learning (ML) and AI-based approaches** that can learn subtle patterns and adapt over time.
-Critically, detection must happen **in real-time** (or near-real time) to intervene before fraudsters can complete illicit transactions.
-As an AWS engineering blog notes, catching fraud "closer to the time of fraud occurrence is key" so that suspicious transactions can be blocked or flagged immediately.[^2]
 
-This article reviews the current state-of-the-art of **real-time transaction fraud detection**, spanning both academic research and industry practice.
-It covers the major model families used today:
+This has driven a shift toward Machine Learning (ML) and AI-based approaches that can learn subtle patterns and adapt over time.
+Critically, detection must happen in real-time (or near-real time) to intervene before fraudsters can complete illicit transactions.
+Catching fraud "closer to the time of fraud occurrence is key" so that suspicious transactions can be blocked or flagged immediately.[^2]
 
-- **Classical ML models:** Logistic regression, decision trees, random forests, and SVMs.
-- **Deep learning approaches:** Feed-forward neural networks, CNNs, RNNs/LSTMs, and autoencoders.
-- **Graph-based methods:** Graph Neural Networks leveraging transaction networks.
-- **Transformer-based models and foundation models:** Including large pre-trained models like Stripe’s payments foundation model.
+This article reviews the current state-of-the-art of real-time transaction fraud detection, spanning both academic research and industry practices.
+
+We cover the major model families used today:
+
+1. **Classical ML models:** Logistic regression, decision trees, random forests, and SVMs.
+2. **Deep Learning models:** ANNs, CNNs, RNNs/LSTMs, autoencoders, and GANs.
+3. **Graph-based models:** GNNs and graph algorithms that leverage transaction relationships.
+4. **Transformer-based and foundation models:** Large pre-trained models like Stripe’s payments foundation model.
 
 For each category, we discuss representative use cases or studies, highlight strengths and weaknesses, and comment on their suitability for real-time fraud detection.
-Beside these, we cover **cloud-native and streaming architectures** for real-time deployment (e.g., AWS SageMaker, Azure ML, Kafka streaming).
-We also summarize **common datasets** and benchmarks used in fraud research, key **evaluation metrics** (precision, recall, F1, AUC-ROC, detection latency), and important **deployment considerations** such as latency requirements, scalability, explainability, and model retraining frequency.
+
+Additionally, we cover cloud-native and streaming architectures for real-time deployment of these solutions.
+We also summarize common datasets and benchmarks used in fraud research, key evaluation metrics, and important deployment considerations.
 
 # Classical ML Models
 
-Classical ML algorithms have long been used in fraud detection and remain strong baselines in both research and production.
-These include linear models like **logistic regression**, distance-based classifiers like **k-Nearest Neighbors**, and tree-based models such as **decision trees**, **random forests**, and **gradient boosted trees** (e.g., [XGBoost](https://xgboost.readthedocs.io/)).
-Support Vector Machines ([SVMs](https://en.wikipedia.org/wiki/Support_vector_machine)) have also been explored in academic studies.
-These approaches operate on hand-crafted features derived from transaction data (e.g., `transaction amount`, `location`, `device ID`, `time-of-day`, etc.), often requiring substantial feature engineering by domain experts.
+Classical ML algorithms have long been used in fraud detection and remain strong baselines in both research and production systems.
+These include linear models like [logistic regression](https://en.wikipedia.org/wiki/Logistic_regression), distance-based classifiers like [k-Nearest Neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm), and tree-based models such as [random forest](https://en.wikipedia.org/wiki/Random_forest) and [gradient boosted trees](https://en.wikipedia.org/wiki/Gradient_boosting) (e.g., [XGBoost](https://xgboost.readthedocs.io/)).
+These approaches operate on hand-crafted features derived from transaction data (e.g., `transaction_amount`, `location`, `device_id`, `time_of_day`, etc.), often requiring substantial feature engineering by domain experts.
 
-Banks and financial institutions historically relied on **logistic regression** due to its simplicity and interpretability (its coefficients directly indicate risk factors). 
-Even today, logistic models serve as **interpretable baseline** detectors and are sometimes combined with business rules.
-However, linear models struggle to capture complex non-linear patterns in large transaction datasets. 
-**Decision trees** and **ensemble forests**, such as [Random Forests](https://en.wikipedia.org/wiki/Random_forest) and XGBoost, address this by automatically learning non-linear splits and interactions.
+Banks and financial institutions historically relied on logistic regression due to its simplicity and interpretability (its coefficients directly indicate risk factors). 
+Even today, logistic models serve as interpretable baseline detectors and are sometimes combined with a [business rule management system](https://en.wikipedia.org/wiki/Business_rule_management_system).
+However, linear models struggle to capture complex non-linear patterns in large transaction datasets.
+
+Decision trees and ensemble forests address this by automatically learning non-linear splits and interactions.
 In fact, boosted decision tree ensembles (like XGBoost) became popular in fraud detection competitions and industry solutions due to their high accuracy on tabular data.
 These models can capture anomalous combinations of features in individual transactions effectively.
 For example, [the winning solutions](https://github.com/VedangW/ieee-cis-fraud-detection) of the [IEEE-CIS fraud detection Kaggle challenge](https://www.kaggle.com/c/ieee-fraud-detection/overview) (2019) heavily used engineered features fed into gradient boosting models, achieving strong performance (AUC ≈ 0.91).
-**SVMs** have seen limited practical use, while they can model non-linear boundaries (with kernels), they tend to be computationally heavy for large datasets and offer no interpretable output, so the industry has gravitated more to tree ensembles for complex models.
+
+Support Vector Machines ([SVMs](https://en.wikipedia.org/wiki/Support_vector_machine)) have also been explored in academic studies.
+However, while they can model non-linear boundaries (with kernels), they tend to be computationally heavy for large datasets and offer no interpretable output.
+Therefore, the industry has gravitated more to tree ensembles for complex models.
 
 ## Strengths
 
-Classical ML models are typically **fast to train and infer**, and many (especially logistic regression and decision trees) are relatively **easy to interpret**. 
+Classical ML models are typically fast to train and infer, and many (especially logistic regression and decision trees) are relatively easy to interpret. 
 For instance, a logistic regression might directly quantify how much a mismatched billing address raises fraud probability, and a decision tree might provide a rule-like structure (e.g., "if IP country ≠ card country and amount > $1000 ⇒ flag fraud").
-These models can be **deployed in real-time** with minimal latency.
-A logistic regression is essentially a dot-product of features, and even a large XGBoost ensemble can score a transaction in tens of milliseconds or less on modern hardware. 
-They also perform well with limited data: with careful feature engineering, a simple model can already catch a large fraction of fraud patterns.
-**Industry adoption** is widespread: many banks initially deploy logistic or tree-based models in production, and even today **XGBoost is a common choice** in fraud ML pipelines.
+
+These models can be deployed in real-time with minimal latency.
+A logistic regression is essentially a dot-product of features, and even a large XGBoost ensemble can score a transaction in tens of milliseconds or less on modern hardware.
+
+They also perform well with limited data.
+With careful feature engineering, a simple model can already catch a large fraction of fraud patterns.
+
+Industry adoption is widespread, many banks initially deploy logistic or tree-based models in production, and even today XGBoost is a common choice in fraud ML pipelines.
 
 ## Weaknesses
 
-A key limitation is the **reliance on manual features**. 
-Classical models cannot automatically invent new abstractions beyond the input features given.
-Thus, they may miss complex patterns (e.g., sequential spending behavior, or ring collusion between groups of accounts) unless analysts explicitly code such features (e.g., number of purchases in the last hour, or count of accounts sharing an email domain).
-They may also struggle` with **high-dimensional data** like raw event logs or image data (where deep learning excels), though this is less an issue for structured transaction records. 
-Another challenge is **class imbalance**.
-The occurrence of fraud is rare (often <1% of transactions), which can bias models to predict the majority "non-fraud" class.
+A key limitation of classical ML models is the reliance on manual features. 
+They cannot automatically invent new abstractions beyond the input features given.
+Thus, they may miss complex patterns such as sequential spending behavior or ring collusion between groups of accounts unless analysts explicitly code such features (e.g., number of purchases in the last hour, or count of accounts sharing an email domain).
+
+They may also struggle with high-dimensional data like raw event logs or image data (where deep learning excels).
+However, this is less an issue for structured transaction records. 
+
+Another challenge is class imbalance.
+The occurrence of fraud is rare (often $ <1\% $ of transactions), which can bias models to predict the majority "non-fraud" class.
 Techniques like [balanced class weighting](https://medium.com/@ravi.abhinav4/improving-class-imbalance-with-class-weights-in-machine-learning-af072fdd4aa4), [undersampling](https://www.kaggle.com/code/residentmario/undersampling-and-oversampling-imbalanced-data), or [SMOTE](https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/) are often needed to train classical models effectively on imbalanced fraud data.[^16]
-Finally, while faster than deep networks, complex ensembles (hundreds of trees) can become **memory-intensive** and may require optimization (quantized models, code generation, etc.) for ultra-low latency at high transaction volumes.
+
+Finally, while faster than deep neural networks, complex ensembles (hundreds of trees) can become memory-intensive and may require optimization for ultra-low latency at high transaction volumes.
 
 ## Real-Time Suitability
 
 Classical models are generally well-suited to real-time fraud scoring. 
-They have **low latency inference** and modest resource requirements.
+They have low latency inference and modest resource requirements.
+
 For example, a bank's fraud engine might run a logistic regression and a few decision tree rules in under 10ms per transaction on a CPU.
 Even a sophisticated random forest or gradient boosting model can be served via highly optimized C++ libraries or cloud ML endpoints to meet sub-hundred-millisecond SLAs.
-The straightforward nature of these models also simplifies **monitoring and updating** them.
+
+The straightforward nature of these models also simplifies monitoring and updating them.
 New data can be used to frequently retrain or update coefficients (even via [online learning](https://en.wikipedia.org/wiki/Online_machine_learning) for logistic regression).
 The main caution is that if fraud patterns shift significantly ([concept drift](https://en.wikipedia.org/wiki/Concept_drift)), purely static classical models will need frequent retraining to keep up.
-In practice, many organizations retrain or fine-tune their fraud models on recent data **weekly or even daily** to adapt to new fraud tactics.
+
+In practice, many organizations retrain or fine-tune their fraud models on recent data weekly or even daily to adapt to new fraud tactics.
+So, while classical models are fast to deploy and iterate on, they do require ongoing maintenance to remain effective.
 
 ## Examples
 
 Representative research and use-cases for classical methods include:
 
-- **Logistic regression and decision trees as baseline models:** E.g., Banks deploying logistic regression for real-time credit card fraud scoring due to its interpretability.
-- **Ensemble methods in academic studies:** E.g., evaluating logistic vs. decision tree vs. random forest on a credit card dataset (often finding tree ensembles outperform linear models in recall).[^17]
-- **Kaggle competitions:** Use of XGBoost in the IEEE-CIS 2019 competition and by fintech companies, leveraging its accuracy on tabular features.
-- **Hybrid systems:** Many production systems combine manual **business rules** (for known high-risk patterns) with an ML model (for subtler patterns), using the rules for immediate high-precision flags and the ML model for broad coverage.
+- **Logistic regression and decision trees as baseline models:** Many banks have deployed logistic regression for real-time credit card fraud scoring due to its interpretability.
+- **Ensemble methods in academic studies:** Research has focused on evaluating logistic vs. decision tree vs. random forest on a credit card dataset (often finding tree ensembles outperform linear models in recall).[^17]
+- **Kaggle competitions:** XGBoost was heavily used in the Kaggle IEEE-CIS 2019 competition leveraging high accuracy on tabular features.
+- **Hybrid systems:** Many production systems combine manual business rules for known high-risk patterns with an ML model for subtler patterns, using the rules for immediate high-precision flags and the ML model for broad coverage.
 
 # Deep Learning Models
 
@@ -117,7 +135,7 @@ Below, we summarize the most common types.
 
 ### Feed-Forward Neural Networks (ANNs)
 
-Multi-layer perceptrons treating each transaction’s features as input neurons. 
+Multi-layer perceptron treating each transaction’s features as input neurons. 
 These can model non-linear combinations of features beyond what logistic regression can capture.
 In practice, simple feed-forward networks have been used as a baseline deep model for fraud (e.g., a 3-layer network on credit card data)
 They often perform similarly to tree ensembles if ample data is available but are harder to interpret.
@@ -355,7 +373,13 @@ In the context of transaction data, transformers can analyze transaction sequenc
 
 Moreover, large pre-trained **foundation models** (akin to GPT or BERT, but for payments) are emerging, where a model is pre-trained on massive amounts of transaction data to learn general patterns, then fine-tuned for specific fraud tasks.
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7325973743875346433?collapsed=1" height="258" width="504" frameborder="0" allowfullscreen="" title="Embedded post" style="display: block; margin: 0 auto;"></iframe>
+<div style="width:100%;max-width:100%;overflow-x:auto;">
+  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7325973743875346433?collapsed=1"
+          style="display:block;margin:0 auto;width:100%;height:258px;max-width:100%;border:0;"
+          allowfullscreen=""
+          frameborder="0"
+          title="Embedded post"></iframe>
+</div>
 
 One of the most notable recent developments comes from Stripe, which announced a [transformer-based “Payments Foundation Model.”](https://www.linkedin.com/posts/gautam-kedia-8a275730_tldr-we-built-a-transformer-based-payments-activity-7325973745292980224-vCPR/)
 This is a large-scale self-supervised model trained on tens of billions of transactions to create rich numeric representations (embeddings) of each transaction.
@@ -580,13 +604,13 @@ Many modern fraud platforms ([Feedzai](https://www.feedzai.com/), [Featurespace]
 
 Research in fraud detection often relies on a few key **public datasets** to evaluate models, given that real financial data is usually proprietary. Below we summarize some of the most commonly used datasets, along with their characteristics:
 
-| **Dataset (Source)**                                            | **Description**                                                                                                                                                                                                                                                                                                                                          | **Size & Class Imbalance**                                                                                                                                                                                                            | **Notes**                                                                                                                                                                                                                                                                                                                                                                                                                |
-|-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Kaggle Credit Card (2013)** <br> *\[European Cardholders]*    | Real credit card transactions over 2 days in Sept. 2013, with features being 30 numerical values (most are PCA-transformed) plus time and amount. The data was made public by researchers from ULB (Belgium).                                                                                                                                            | **284,807 transactions**; **492 fraud** (0.172% fraud). Highly imbalanced.                                                                                                                                                            | The go-to dataset for many papers. All features are normalized PCA components (V1–V28) except Time and Amount, so it’s anonymized. Allows testing of algorithms on extreme imbalance. Many models achieve \~0.90+ AUC here, but need careful handling of class imbalance.                                                                                                                                                |
-| **IEEE-CIS Fraud (Vesta 2019)** <br> *\[Kaggle Competition]*    | A large e-commerce transactions dataset with a wide range of features: device info, payment info (card type, etc.), email domain, address, etc. Split into transaction and identity tables. Released as part of a Kaggle competition by Vesta Corporation and IEEE-CIS.                                                                                  | **590,000 training transactions** (approx) with **3.5% fraud**; plus \~500,000 test transactions. Moderately imbalanced (about 1:28 fraud\:legit).                                                                                    | This dataset is much richer (about 300 features) including many categorical features and some missing data. It reflects online card-not-present fraud. Winning solutions used extensive feature engineering and ensemble models. Good testbed for entity-centric features and advanced models.                                                                                                                           |
-| **PaySim (Mobile Money Sim)** <br> *\[Lopez-Rojas et al. 2016]* | A **synthetic** dataset generated by the PaySim simulator, which mimics mobile money transfer operations (in an African mobile money service). Includes different transaction types: CASH-IN, CASH-OUT, TRANSFER, etc., with fields for origin and destination balances. Fraudulent transactions are simulated as illegal transfers that get cashed out. | **6,362,620 transactions** in full dataset (as reported in the PaySim paper), of which a small fraction are fraud. A commonly used subset is \~2.77 million transactions with **8,213 fraud** (\~0.30%).                              | PaySim is not real data but derived from real patterns. It’s useful for evaluating models in a controlled scenario. It contains temporal information (step = hour of simulation). Most frauds in PaySim are in the TRANSFER and CASH-OUT type. Often used to evaluate how models handle larger-scale data. Note: because it’s synthetic, models might perform unrealistically well if they overfit simulation artifacts. |
-| **Elliptic Bitcoin Dataset** <br> *\[Weber et al. 2019]*        | A graph of Bitcoin transactions with ground truth labels for illicit vs licit transactions. Each node is a transaction, edges are Bitcoin transfers, and node features include various blockchain features (e.g., times, amounts, participant info hashed). The task is typically to identify which transactions are illicit.                            | **203,769 transaction nodes** and **234,355 edges** (Bitcoin payment flows). Only **2% of transactions (4,545 nodes) are labeled illicit**; 21% labeled licit; the rest are unknown. Imbalance \~1:49 (illicit\:licit among labeled). | A benchmark for graph-based fraud methods. Allows testing of GNNs and graph features. It’s temporal (transactions over time). Performance is often measured with accuracy/AUC in classifying the illicit nodes. It’s a challenging dataset due to very few fraud examples and lots of unknown labels.                                                                                                                    |
-| **UPFD & Others (Social/Insider Fraud)**                        | There are other niche datasets, e.g., **UBA for insider fraud** (synthetic user behavior audit logs), **social network fraud datasets** (Twitter bot detection, etc.), and **corporate fraud datasets** (Enron emails for detecting accounting fraud). These are less about transaction fraud but sometimes included in surveys.                         | Varies. (E.g., UBA has user activity logs with inserted malicious behaviors; social fraud datasets have posts/users labeled as fraudsters, etc.)                                                                                      | These are beyond transaction fraud but relevant for broader fraud and anomaly detection contexts. Researchers sometimes test generic anomaly detectors on them.                                                                                                                                                                                                                                                          |
+| **Dataset (Source)**                                        | **Description**                                                                                                                                                                                                                                                                                                                                      | **Size & Class Imbalance**                                                                                                                                                                                                | **Notes**                                                                                                                                                                                                                                                                                                                                                                                                                |
+|-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Kaggle Credit Card (2013) <br> *\[European Cardholders]*    | Real credit card transactions over 2 days in Sept. 2013, with features being 30 numerical values (most are PCA-transformed) plus time and amount. The data was made public by researchers from ULB (Belgium).                                                                                                                                        | 284,807 transactions; 492 fraud (0.172% fraud). Highly imbalanced.                                                                                                                                                        | The go-to dataset for many papers. All features are normalized PCA components (V1–V28) except Time and Amount, so it’s anonymized. Allows testing of algorithms on extreme imbalance. Many models achieve \~0.90+ AUC here, but need careful handling of class imbalance.                                                                                                                                                |
+| IEEE-CIS Fraud (Vesta 2019) <br> *\[Kaggle Competition]*    | A large e-commerce transactions dataset with a wide range of features: device info, payment info (card type, etc.), email domain, address, etc. Split into transaction and identity tables. Released as part of a Kaggle competition by Vesta Corporation and IEEE-CIS.                                                                              | 590,000 training transactions (approx) with 3.5% fraud; plus \~500,000 test transactions. Moderately imbalanced (about 1:28 fraud\:legit).                                                                                | This dataset is much richer (about 300 features) including many categorical features and some missing data. It reflects online card-not-present fraud. Winning solutions used extensive feature engineering and ensemble models. Good testbed for entity-centric features and advanced models.                                                                                                                           |
+| PaySim (Mobile Money Sim) <br> *\[Lopez-Rojas et al. 2016]* | A synthetic dataset generated by the PaySim simulator, which mimics mobile money transfer operations (in an African mobile money service). Includes different transaction types: CASH-IN, CASH-OUT, TRANSFER, etc., with fields for origin and destination balances. Fraudulent transactions are simulated as illegal transfers that get cashed out. | 6,362,620 transactions in full dataset (as reported in the PaySim paper), of which a small fraction are fraud. A commonly used subset is \~2.77 million transactions with 8,213 fraud (\~0.30%).                          | PaySim is not real data but derived from real patterns. It’s useful for evaluating models in a controlled scenario. It contains temporal information (step = hour of simulation). Most frauds in PaySim are in the TRANSFER and CASH-OUT type. Often used to evaluate how models handle larger-scale data. Note: because it’s synthetic, models might perform unrealistically well if they overfit simulation artifacts. |
+| Elliptic Bitcoin Dataset <br> *\[Weber et al. 2019]*        | A graph of Bitcoin transactions with ground truth labels for illicit vs licit transactions. Each node is a transaction, edges are Bitcoin transfers, and node features include various blockchain features (e.g., times, amounts, participant info hashed). The task is typically to identify which transactions are illicit.                        | 203,769 transaction nodes and 234,355 edges (Bitcoin payment flows). Only 2% of transactions (4,545 nodes) are labeled illicit; 21% labeled licit; the rest are unknown. Imbalance \~1:49 (illicit\:licit among labeled). | A benchmark for graph-based fraud methods. Allows testing of GNNs and graph features. It’s temporal (transactions over time). Performance is often measured with accuracy/AUC in classifying the illicit nodes. It’s a challenging dataset due to very few fraud examples and lots of unknown labels.                                                                                                                    |
+| UPFD & Others (Social/Insider Fraud)                        | There are other niche datasets, e.g., UBA for insider fraud (synthetic user behavior audit logs), social network fraud datasets (Twitter bot detection, etc.), and corporate fraud datasets (Enron emails for detecting accounting fraud). These are less about transaction fraud but sometimes included in surveys.                                 | Varies. (E.g., UBA has user activity logs with inserted malicious behaviors; social fraud datasets have posts/users labeled as fraudsters, etc.)                                                                          | These are beyond transaction fraud but relevant for broader fraud and anomaly detection contexts. Researchers sometimes test generic anomaly detectors on them.                                                                                                                                                                                                                                                          |
 
 **Notes on Metrics in these datasets:** Due to imbalance, accuracy is not informative (e.g., the credit card dataset has 99.8% non-fraud, so a trivial model gets 99.8% accuracy by predicting all non-fraud!). Hence, papers report metrics like AUC-ROC, precision/recall, or F1-score. For instance, on the Kaggle credit card data, an AUC-ROC around 0.95+ is achievable by top models, and PR AUC is much lower (since base fraud rate is 0.172%). In IEEE-CIS data, top models achieved about 0.92–0.94 AUC-ROC in the competition. PaySim being synthetic often yields extremely high AUC (sometimes >0.99 for simple models) since patterns might be easier to learn. When evaluating on these sets, it’s crucial to use proper cross-validation or the given train/test splits to avoid overfitting (particularly an issue with the small Kaggle credit card data).
 
@@ -690,8 +714,6 @@ It includes:
      TODO
   </figcaption>
 </figure>
-
-
 
 Fraud decisions often need to be made in **tens of milliseconds**, especially for card transactions at a point-of-sale or online checkout. Any significant delay could either inconvenience the customer or allow fraudulent transactions to go through unchallenged. For example, in a cross-border payment scenario, the fraud check might have a budget of \~25 ms out of a \~180 ms total processing time. Low latency is achieved by using in-memory data stores for features, efficient code (e.g., C++ or optimized libraries for model scoring), and parallelizing where possible. It’s crucial to monitor not just average latency but **tail latency** (99th percentile) – even a small fraction of slow requests can correspond to many transactions in absolute terms, given large volumes. Techniques like asynchronous processing or quickly approving low-risk transactions and separately processing suspicious ones can help. Also, model complexity impacts latency – large ensembles or deep models might need optimization or more compute. Engineers often make trade-offs, e.g., compressing a model slightly if it cuts latency in half. Meeting strict SLAs (say 95% in <50ms) might rule out extremely heavy models or require special hardware. The bottom line: **every millisecond counts** in real-time fraud detection, so the infrastructure must be tuned for speed.
 
