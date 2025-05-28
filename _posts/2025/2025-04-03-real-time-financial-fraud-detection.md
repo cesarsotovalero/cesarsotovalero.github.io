@@ -1,4 +1,4 @@
----
+~~---
 layout: post
 title: From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection
 subtitle: Models, architectures, evaluation metrics, and deployment considerations
@@ -276,9 +276,9 @@ Notable examples of deep learning in fraud detection:
 # Graph-Based Models
 
 A powerful class of methods treats the financial system as a graph, linking entities like users, accounts, devices, IP addresses, merchants, etc.
-Fraudulent activity often involves networks: groups of fraudsters might share information (e.g., using the same stolen cards or devices), or a single fraudster might operate many accounts that transact with each other. 
-Graph-based models aim to exploit these relational structures to detect fraud patterns that single-transaction models might miss. 
-The rise of [Graph Neural Networks](https://en.wikipedia.org/wiki/Graph_neural_network) (GNNs) in recent years has led to many applications in fraud detection.[^23]
+Graph-based models aim to exploit these relational structures to detect fraud patterns that single-transaction models might miss.
+Groups of fraudsters might share information (e.g., using the same stolen cards or devices), or a single fraudster might operate many accounts that transact with each other. 
+Classical graph algorithms can then be applied, such as community detection[^25] and link analysis (e.g., PageRank on the fraud graph).
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-04-03/suspicious-subgraphs.png alt: "Illustration of entity linkages in transaction fraud" %}
@@ -287,14 +287,15 @@ The rise of [Graph Neural Networks](https://en.wikipedia.org/wiki/Graph_neural_n
   </figcaption>
 </figure>
 
-In a graph representation, we can model, for example, a bipartite graph of *credit card transactions*: one set of nodes are **cardholders**, another set are **merchants**, and an edge connects a cardholder to a merchant for each transaction.
-Fraudulent cards might cluster via merchant edges (e.g., a fraud ring testing many stolen cards at one merchant), or vice versa. 
-Similarly, for online payments we can create nodes for user accounts, email addresses, IP addresses, device IDs, etc., and connect nodes that are observed together in a transaction or account registration. 
-This yields a rich heterogeneous graph of entities.
-**Graph algorithms** can then be applied: community detection, link analysis (e.g., PageRank on the fraud graph), or, most effectively in recent literature, Graph Neural Networks (GNNs) that learn embeddings for nodes or edges to classify them as fraudulent or not.
 
-GNNs are deep learning models designed for graph-structured data. 
-They propagate information along edges, allowing each node to aggregate features from its neighbors. 
+For example, in a bipartite graph of credit card transactions, one set of nodes represent cardholders, another set are merchants, and there is an edge connecting a cardholder to a merchant for each transaction.
+Fraudulent cards might cluster via merchant edges (e.g., a fraud ring testing many stolen cards at one merchant), or vice versa.
+Similarly, for online payments we can create nodes for user accounts, email addresses, IP addresses, device IDs, etc., and connect nodes that are observed together in a transaction or account registration.
+This yields a rich heterogeneous graph of entities.
+
+[Graph Neural Networks](https://en.wikipedia.org/wiki/Graph_neural_network) (GNNs) in recent years has led to many applications of this technology in fraud detection.[^23]
+GNNs are deep learning models designed for graph-structured data.
+They propagate information along edges, allowing each node to aggregate features from its neighbors.
 In fraud terms, a GNN can learn to identify suspicious nodes (e.g., users or transactions) by looking at their connected partners.
 For instance, if a particular device ID node connects to many user accounts that were later flagged as fraud, a GNN can learn to embed that device node as high-risk, which in turn raises the risk of any new account connected to it.
 
@@ -303,28 +304,28 @@ For instance, if a particular device ID node connects to many user accounts that
 </aside>
 
 GNNs consider connections between accounts and transactions to reveal patterns of suspicious activity across the network.
-By incorporating relational context, GNNs have demonstrated **higher fraud detection accuracy and fewer false positives** than models that ignore graph structure.
+By incorporating relational context, GNNs have demonstrated higher fraud detection accuracy and fewer false positives than models that ignore graph structure.
 For example, combining GNNs features with an XGBoost classifier led to catching fraud that would otherwise go undetected and reducing false alarms due to the added network context. 
 A GNN approach might catch a seemingly normal transaction if the card, device, or IP involved has connections to known frauds that a non-graph model wouldn’t see.
 
-Several types of GNNs architectures have been used: **Graph Convolutional Networks (GCN)**, **GraphSAGE**, **heterogeneous GNNs** (for multi-type node graphs), and even **Graph Transformers**. 
-A notable benchmark is the [Elliptic dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset.html) (a Bitcoin transaction graph) where GNNs have been applied to identify illicit transactions by classifying nodes in a large transaction graph. 
-In one study, a GCN on the Elliptic bitcoin graph outperformed random forest by a significant margin in identifying illicit nodes, especially when only a small fraction of nodes have labels.
+Several types of GNNs architectures have been used. 
+Notably, [Graph Convolutional Networks](https://paperswithcode.com/method/gcn) (GCN), [GraphSAGE](https://neo4j.com/docs/graph-data-science/current/machine-learning/node-embeddings/graph-sage/), heterogeneous GNNs for multi-type node graphs, and even [Graph Transformers](https://paperswithcode.com/method/graph-transformer).
+
+A popular benchmark is the [Elliptic dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset.html), a Bitcoin transaction graph where GNNs have been applied to identify illicit transactions by classifying nodes in a large transaction graph. 
 GNNs have also been applied to credit card networks: e.g., researchers have built graphs linking credit card numbers, merchants, and phone numbers, and used a heterogeneous GNN to detect fraud cases involving synthetic identities and collusive merchants.[^3]
 
 ## Strengths
 
-Graph-based methods can detect **patterns of collusion and linkage** that purely feature-based models miss. 
-They effectively **augment each transaction with context**.
+Graph-based methods can detect patterns of collusion and linkage that purely feature-based models miss. 
+They effectively augment each transaction with context.
 Rather than evaluating an event in isolation, the model considers the broader network (device usage graph, money flow graph, etc.). 
 This is crucial for catching fraud rings.
 For example, multiple accounts controlled by one entity or chains of transactions moving funds, which might appear normal individually but are anomalous in aggregate.
-GNNs in particular combine the best of both worlds: they leverage **graph structure + attribute features** together, learning meaningful representations of nodes/edges.[^3]
-This is important when fraudsters deliberately make individual transactions look innocuous but cannot hide the **relationships** (e.g., reusing the same phone or IP address across many accounts).
+GNNs in particular combine the best of both worlds: they leverage graph structure + attribute features together, learning meaningful representations of nodes/edges.[^3]
+This is important when fraudsters deliberately make individual transactions look innocuous but cannot hide the relationships (e.g., reusing the same phone or IP address across many accounts).
 
 Another advantage is in reducing false positives by providing context.
-For example, a transaction with a new device might normally seem risky, but if that device has a long history with the same user and no links to bad accounts, a 
-graph model can recognize it as low risk, avoiding a false alarm. 
+For example, a transaction with a new device might normally seem risky, but if that device has a long history with the same user and no links to bad accounts, a graph model can recognize it as low risk, avoiding a false alarm. 
 Industry reports indicate that adding graph features or GNNs outputs has improved precision of fraud systems by filtering out cases that looked suspicious in isolation but were safe in context.[^4]
 
 ##  Weaknesses
@@ -333,7 +334,7 @@ Industry reports indicate that adding graph features or GNNs outputs has improve
     <em>“Current GNNs solutions mainly rely on offline batch training and inference, predicting fraudsters in real-time is crucial but challenging.”</em> 
 </aside>
 
-The biggest challenge is **complexity** in implementation and deployment. 
+The biggest challenge is complexity in implementation and deployment. 
 Building and maintaining the graph data (a.k.a. the “graph pipeline”) is non-trivial. 
 Transactions arrive in a stream and must update the graph in real-time (e.g., adding new nodes, new edges). 
 Querying the graph for each new transaction’s neighborhood can be slow if not engineered well.
@@ -342,7 +343,7 @@ Running a GNNs means loading a subgraph and doing matrix operations that are cos
 Many current GNNs solutions operate in batch (offline).
 There are limited reference architectures for real-time GNNs serving, though this is an active development area. 
 
-Another issue is **scalability**. 
+Another issue is scalability. 
 Graphs of financial transactions or users can be enormous (millions of nodes, tens of millions of edges).
 Training a full GNNs on such a graph might not fit in memory or might be extremely slow without sampling techniques.
 Some approaches use graph sampling or partitioning to handle this, or only use GNNs to generate features offline.
@@ -359,26 +360,27 @@ This doesn’t require full GNNs online inference, but captures some graph insig
 However, truly deploying a GNNs in production for each event requires a fast graph database or in-memory graph store.
 
 AWS demonstrated a prototype using Amazon Neptune (graph DB) + DGL (Deep Graph Library) to serve GNNs predictions in real-time by querying a subgraph around the target node for each inference.[^3]
-This kind of pipeline can score within a second or two, which may be acceptable for certain use cases (e.g., online account opening fraud). 
-For high-frequency card transactions (which need sub-second decisions), a full GNNs might still be too slow today unless heavily optimized.
+This kind of pipeline can risk score a transaction within seconds, which may be acceptable for certain use cases (e.g., online account opening fraud). 
+However, for high-frequency card transactions that need sub-second decisions, a full GNNs might still be too slow today unless heavily optimized.
 
-An alternative is what Nvidia suggests: use GNNs offline to produce node embeddings or risk scores, then feed those into a super-fast inference system (like an XGBoost model or a rules engine) for the real-time decision.[^4]
+An alternative is what Nvidia suggests: use GNNs offline to produce node embeddings or risk scores, then feed those into a superfast inference system (like an XGBoost model or a rules engine) for the real-time decision.[^4]
 This hybrid approach was shown to work at large scale, where GNN-based features improved detection by even a small percent (say 1% AUC gain), which for big banks translates to millions saved. 
 
 Lastly, maintaining graph models demands continuous updates as the graph evolves.
-This is stil manageable, as new data can be incrementally added, but one must watch for concept drift in graph structure (fraud rings forming new connectivity patterns).
+This is still manageable, as new data can be incrementally added, but one must watch for concept drift in graph structure.
+For example, fraud rings forming new connectivity patterns.
 
 ## Examples
 
 Representative examples of graph-based fraud detection:
 
-- *Bitcoin fraud detection:* The [Elliptic Bitcoin Dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset.html) is a graph of 203,769 transactions (nodes) with known illicit vs licit labels. GNNs models (GCN, GraphSAGE) on this dataset achieved strong results, showing that analyzing the transaction network is effective for detecting illicit cryptocurrency flows.
-- *Credit card network:* Researchers built a **graph of credit card transactions** (cards, merchants, etc.) and applied a GNNs which outperformed a baseline MLP by leveraging connections (e.g., card linked to a fraudulent merchant gives card a higher fraud probability).
-- *E-commerce account fraud:* Companies like Alibaba and PayPal have internal systems modeling user networks. For example, accounts connected via shared device or IP can indicate [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack) or mule accounts. Graph algorithms identified clusters of accounts that share many attributes (forming fraud communities) which were then taken down as a whole.
-- *Telecom fraud (subscription/call fraud):* Graphs connecting phone numbers, IDs, and addresses have been used to catch identity fraud rings. A famous case is detecting **“bust-out fraud”** in which a group of credit card accounts all max out and default – the accounts often share phone or address; linking them in a graph helps catch the ring before the bust-out completes.
-- *Social network fraud:* In social finance platforms or peer-to-peer payments, graph methods are used to detect **money laundering** or collusion by analyzing the network of transactions among users (e.g., unusually interconnected payment groups).
+- **Blockchain networks:** The [Elliptic Bitcoin Dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset.html) is a graph of 203,769 transactions (nodes) with known illicit vs. licit labels. GNNs models on this dataset achieved strong results, showing that analyzing the transaction network is effective for detecting illicit cryptocurrency flows.
+- **Credit card networks:** Researchers built a graph of credit card transaction and applied a GNNs which outperformed a baseline MLP by leveraging connections (e.g., card linked to a fraudulent merchant gives card a higher fraud probability).
+- **E-commerce networks:** Companies like Alibaba and PayPal have internal systems modeling user networks. For example, accounts connected via a shared device or IP can indicate [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack) or mule accounts. Graph algorithms identified clusters of accounts that share many attributes (forming fraud communities) which were then taken down as a whole.
+- **Telecom identity fraud:** Graphs connecting phone numbers, IDs, and addresses have been used to catch identity fraud rings. A famous case is detecting “bust-out fraud” in which a group of credit card accounts all max out and default: the accounts often share phone or address; linking them in a graph helps catch the ring before the bust-out completes.
+- **Social networks:** In social finance platforms or peer-to-peer payments, graph methods are used to detect money laundering or collusion by analyzing the network of transactions among users (e.g., unusually interconnected payment groups).
 
-Overall, graph-based methods, especially GNNs, represent a cutting-edge approach that can significantly enhance fraud detection by considering **relational data**. 
+Overall, graph-based methods, especially GNNs, represent a cutting-edge approach that can significantly enhance fraud detection by considering relational data. 
 As tooling and infrastructure improve (graph databases, streaming graph processing), we expect to see more real-time GNNs deployments for fraud in the coming years.
 
 # Transformer-Based and Foundation Models
@@ -386,16 +388,12 @@ As tooling and infrastructure improve (graph databases, streaming graph processi
 ## Transformers 
 
 [Transformers](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) (originally developed for language processing) have revolutionized many domains, and they are now making inroads in fraud detection.
-The key innovation of transformers is the **self-attention mechanism**, which allows modeling long-range dependencies in sequences.
+The key innovation of transformers is the self-attention mechanism, which allows modeling long-range dependencies in sequences.
 In the context of transaction data, transformers can analyze transaction sequences or sets of features in flexible ways.
 
-Moreover, large pre-trained **foundation models** (akin to GPT or BERT, but for payments) are emerging, where a model is pre-trained on massive amounts of transaction data to learn general patterns, then fine-tuned for specific fraud tasks.
-
-<iframe
-src="https://www.linkedin.com/embed/feed/update/urn:li:share:7325973743875346433"
-style="width:100%;height:800px;border:0;display:block;margin:0 auto;"
-title="Embedded post">
-</iframe>
+Moreover, large pre-trained foundation models (akin to GPT or BERT, but for payments) are emerging.
+In this case, a model is pre-trained on massive amounts of transaction data to learn general patterns, then fine-tuned for specific fraud tasks.
+So that these models can "speak" transactional data.
 
 One of the most notable recent developments comes from Stripe, which announced a [transformer-based “Payments Foundation Model.”](https://www.linkedin.com/posts/gautam-kedia-8a275730_tldr-we-built-a-transformer-based-payments-activity-7325973745292980224-vCPR/)
 This is a large-scale self-supervised model trained on tens of billions of transactions to create rich numeric representations (embeddings) of each transaction.
@@ -407,19 +405,19 @@ In particular, they targeted “card testing” fraud (fraudsters testing stolen
 The transformer foundation model was able to spot subtle sequential patterns of card testing that previous feature-engineered models missed, blocking attacks in real-time before they could do damage.
 This showcases the potential of transformer models: “Turns out attention was all payments needed!”, as the Stripe engineers quip.
 
-Researchers have applied Transformer encoders to tabular data.[^18]
+Researchers have applied Transformer encoders to tabular data as well.[^18]
 For example, using models like [TabTransformer](https://github.com/lucidrains/tab-transformer-pytorch) or integration of transformers with structured data.
-They reported improved accuracy over MLPs and even over tree models in some cases.
+They reported improved accuracy over MLPs and even over tree models in some cases.[^26]
 
 The ability of transformers to focus attention on important features or interactions could be beneficial for high-dimensional transaction data.
 For example, a transformer might learn to put high attention on the `device_id` feature when the `ip_address_country` is different from the `billing country`, effectively learning a rule-like interaction that would be hard for a linear model.
 
-Transformers can also model **cross-item sequences**: one can feed a sequence of past transactions as a “sentence” into a transformer, where each transaction is like a token embedding (comprising attributes like amount, merchant category, etc.).
+Transformers can also model cross-item sequences: one can feed a sequence of past transactions as a “sentence” into a transformer, where each transaction is like a token embedding (comprising attributes like amount, merchant category, etc.).
 The transformer can then output a representation of the sequence or of the next transaction’s risk. 
 This is similar to an RNN’s use but with the advantage of attention capturing long-range dependencies (e.g., a pattern that repeats after 20 transactions). 
 There have been experiments where a transformer outperformed LSTM on fraud sequence classification, due to its parallel processing and ability to consider all transactions’ relations at once.
 
-Another angle is using transformer models for **entity resolution and representation** in fraud. For instance, a transformer can be trained on the corpus of all descriptions or merchant names that a user has transacted with, thereby learning a “profile” of the user’s spending habits and detecting an out-of-profile transaction (similar to how language models detect an odd word in a sentence). 
+Another angle is using transformer models for entity resolution and representation in fraud. For instance, a transformer can be trained on the corpus of all descriptions or merchant names that a user has transacted with, thereby learning a “profile” of the user’s spending habits and detecting an out-of-profile transaction (similar to how language models detect an odd word in a sentence). 
 Additionally, [BERT](https://en.wikipedia.org/wiki/BERT_(language_model))-like models can be used on event logs or customer support chats to detect social engineering fraud attempts, though that’s adjacent to transaction fraud.
 
 ## Foundation models
@@ -455,32 +453,31 @@ A pre-trained model that has generally learned “how transactions usually look�
 
 ## Weaknesses
 
-The obvious downsides are **resource intensity and complexity**.
+The obvious downsides are resource intensity and complexity.
 Training a transformer on billions of transactions is a monumental effort, requiring distributed training, specialized hardware (TPUs/GPUs), and careful tuning. 
 This is typically only within reach of large organizations or collaborations. 
 In production, serving a large transformer in real-time can be challenging due to model size and latency.
 Transformers can have millions of parameters, and even if each inference is 50-100ms on a GPU, at very high transaction volumes (thousands per second) this could be costly or slow without scaling out. 
 Techniques like [model quantization](https://huggingface.co/docs/optimum/en/concept_guides/quantization), [knowledge distillation](https://www.ibm.com/think/topics/knowledge-distillation), or efficient transformer variants (e.g., [Transformer Lite](https://huggingface.co/papers/2403.20041)) might be needed.
 
-Another concern is **explainability**.
+Another concern is explainability.
 Even more so than a standard deep network, a giant foundation model is a black box.
-Explaining its decisions requires advanced XAI methods, like interpreting attention weights or using SHAP on the embedding features, which is an active research area. 
+Understanding its decisions requires advanced explainable AI methods, like interpreting attention weights or using SHAP on the embedding features, which is an active research area. 
 For regulated industries, one might still use a simpler surrogate model to justify decisions externally, while the transformer works under the hood. 
 
-**Overfitting and concept drift** are also concerns.
+Overfitting and concept drift are also concerns.
 A foundation model might capture a lot of patterns, including some that are spurious or not causally related to fraud.
 If fraudsters adapt, the model might need periodic re-training or fine-tuning with fresh data to unlearn outdated correlations.
 For example, the Stripe model is self-supervised (no fraud labels in pre-training) which helps it generalize, but any discriminative fine-tuning on fraud labels will still need updating as fraud evolves.
-
 
 ## Real-Time Suitability
 
 Surprisingly, with the right engineering, even large transformers can be used in or near real-time. 
 For example, optimizing the embedding generation via GPU inference or caching mechanisms.
-One strategy is to **pre-compute embeddings** for entities (like a card or user) so that only incremental computation is needed per new transaction.
-Another strategy is **two-stage scoring**: use a smaller model to thin out events, then apply the heavy model to the most suspicious subset.
+One strategy is to pre-compute embeddings for entities (like a card or user) so that only incremental computation is needed per new transaction.
+Another strategy is two-stage scoring: use a smaller model to thin out events, then apply the heavy model to the most suspicious subset.
 If real-time means sub-second (say <500ms), a moderately sized transformer model on modern inference servers can fit that window, especially if batch processing a few transactions together to amortize overhead. 
-Cloud providers also offer **accelerated inference endpoints** (like AWS Inferentia chips or Azure’s ONNX runtime with GPU) to deploy large models with low latency. 
+Cloud providers also offer accelerated inference endpoints (like AWS Inferentia chips or Azure’s ONNX runtime with GPU) to deploy large models with low latency. 
 
 That said, not every company will want to deploy a 100M+ parameter model for each transaction if a simpler model would do.
 There is a trade-off between maximum accuracy and infrastructure cost/complexity.
@@ -490,11 +487,11 @@ In many cases, a foundation model could be used to periodically score accounts o
 
 Use cases and research for transformers in fraud:
 
-* *Stripe’s Payments Foundation Model:* A transformer-based model trained on **billions of transactions**, now used to embed transactions and feed into Stripe’s real-time fraud systems. It improved certain fraud detection rates from 59% to 97% and enabled detection of subtle sequential fraud patterns that were previously missed.
-* *Academic research – Tabular transformers:* Studies like Chang et al. (2023) applied a transformer to the **Kaggle credit card dataset** and compared it to SVM, Random Forest, XGBoost, etc. The transformer achieved comparable or superior Precision/Recall, demonstrating that even on tabular data a transformer can learn effectively.
-* *Sequence anomaly detection:* Some works use transformers to model **time series of transactions per account**. A transformer may be trained to predict the next transaction features; if the actual next transaction diverges significantly, it could flag an anomaly. This is analogous to language model use (predict next word).
-* *Cross-entity sequence modeling:* Transformers can also encode sequences of transactions across entities, e.g., tracing a **chain of transactions through intermediary accounts** (useful in money laundering detection). A graph transformer (like the recent *FraudGT* model) combines ideas of GNNs and transformer to handle transaction graphs with sequential relations.
-* *Foundation models for documents and text in fraud:* While not the focus here, note that transformers (BERT, GPT) are heavily used to detect fraud in textual data – e.g., scam emails, fraudulent insurance claims text, etc. In a holistic fraud system, a foundation model might take into account not just the structured transaction info but also any unstructured data (like customer input or messages) to make a decision.
+- **Stripe’s Payments Foundation Model:** A transformer-based model trained on billions of transactions, now used to embed transactions and feed into Stripe’s real-time fraud systems. It improved certain fraud detection rates from 59% to 97% and enabled detection of subtle sequential fraud patterns that were previously missed.
+- **Tabular transformers:** Studies like [Chang et al. (2023)](https://arxiv.org/pdf/2406.03733v2) applied a transformer to the Kaggle credit card dataset and compared it to SVM, Random Forest, XGBoost, etc. The transformer achieved comparable or superior Precision/Recall, demonstrating that even on tabular data a transformer can learn effectively.
+- **Sequence anomaly detection:** Some works use transformers to model time series of transactions per account. A transformer may be trained to predict the next transaction features; if the actual next transaction diverges significantly, it could flag an anomaly. This is analogous to language model use (predict next word).
+- **Cross-entity sequence modeling:** Transformers can also encode sequences of transactions across entities, e.g., tracing a chain of transactions through intermediary accounts (useful in money laundering detection). The recent FraudGT model[^27] combines ideas of GNNs and transformer to handle transaction graphs with sequential relations.
+- **Foundation models for documents and text in fraud:** While not the focus here, note that transformers (BERT, GPT) are heavily used to detect fraud in textual data (e.g., scam emails, fraudulent insurance claims text, etc). In a holistic fraud system, a foundation model might take into account not just the structured transaction info but also any unstructured data, like customer input or messages, to make a decision.
 
 ## Summary
 
@@ -503,40 +500,115 @@ They offer unparalleled modeling capacity and flexibility, at the cost of high c
 Early results, especially from industry leaders, indicate they can substantially raise the bar on fraud detection performance when deployed thoughtfully. 
 As these models become more accessible (with open-source frameworks and possibly smaller specialized versions), more fraud teams will likely adopt them, particularly for large-scale, multi-faceted fraud problems where simpler models hit a ceiling.
 
-# Deployment Strategies
+# Evaluation Metrics
 
-Developing a high-accuracy fraud model is only half the story—the real challenge is deploying it in an architecture that can handle **real-time data streams, sub-second decisions, and surging throughput**.
-Modern fraud detection systems increasingly lean on **cloud-native components** and **streaming frameworks** to make this happen.
-Here’s an overview of common deployment patterns using Google Cloud Platform (GCP):
+Evaluating fraud detection models requires metrics that account for very particular challenges such as:
+
+- **Class imbalance:** Transactions labeled as suspicious may be significantly lower of total historical transactions.
+- **Relative costs of false positives vs. false negatives:** False positives (legitimate transactions flagged as fraud) can lead to customer dissatisfaction, while false negatives (fraudulent transactions not detected) can result in financial losses.
+
+<figure class="jb_picture">
+  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-04-03/conf_matrix.png alt: "Confusion matrix of a financial fraud binary classifier." %}
+  <figcaption class="stroke"> 
+    Confusion matrix of a financial fraud binary classifier.
+  </figcaption>
+</figure>
+
+Below are the most common metrics and considerations.
+
+## Precision
+
+Among all transactions the model flagged as “fraud” (predicted positive), precision is the fraction that were actually fraud.
+
+High precision means few false positives.
+
+Precision is crucial for operational efficiency. 
+Low precision means investigators waste time on many false alarms, and customers suffer unnecessary declines.
+
+$$\text{Precision} = \frac{TP}{TP + FP}$$
+
+For fraud, a precision of 0.5 would mean half of the alerts are real fraud. 
+Many top systems aim for very high precision (e.g., 0.9+) at low fraud rates, but there’s a trade-off with Recall. 
+Precision is often reported at a certain operating point or as an average if multiple thresholds are considered.
+
+An example interpretation: “Of transactions our system blocked, 95% were indeed fraudulent”, that’s a precision of 95%.
+
+
+## Recall
+
+Recall is the fraction of actual fraud cases that the model correctly caught. High recall means **few false negatives** – the model is catching most fraudsters.
+
+$$\text{Precision} = \frac{TP}{TP + FN}$$
+
+This is critical for security: low recall means many frauds slip through and cause losses. However, one can usually increase recall by lowering the detection threshold at the cost of precision. So there’s a balance. A recall of 0.80 means 80% of fraud instances were detected (20% missed). In practice, businesses may set a recall target like “catch at least 70% of fraud” and then maximize precision under that constraint.*
+
+## F1-Score
+
+The harmonic mean of precision and recall, F1 = 2 \* (Precision \* Recall) / (Precision + Recall). It gives a single-figure balance of precision and recall. F1 is useful when we want a combined score (for model selection, for example) and when class distribution is skewed. A high F1 requires both precision and recall to be reasonably high – if one is low, F1 suffers. In extremely imbalanced data, even F1 can be dominated by one side if not careful. But it’s much better than accuracy for fraud. For instance, if a model has precision 0.6 and recall 0.6, F1 = 0.60. If another has 0.7 precision but 0.4 recall, F1 \~0.50, telling us the first model is overall better balanced. F1 is a popular metric in Kaggle competitions and papers to compare models, ensuring they are not just optimizing one at the expense of the other.
+
+## AUC-ROC (Area Under the ROC Curve)
+
+This measures the model’s ability to discriminate between classes across all thresholds. ROC (Receiver Operating Characteristic) curve plots True Positive Rate (Recall) vs False Positive Rate. AUC is the area under this curve; an AUC of 0.5 is random, 1.0 is perfect. AUC has the advantage of being threshold-independent – it summarizes the model’s performance at all operating points. It’s very common in fraud research because it doesn’t require picking a threshold and is not affected by the overall class imbalance as much as accuracy. An intuitive interpretation of AUC-ROC: it’s the probability that a randomly chosen fraudulent transaction will receive a higher risk score than a randomly chosen legitimate transaction. So, if we randomly pair a fraud and a non-fraud, AUC is the chance the model ranks the fraud higher. AUC considers both recall and specificity (specificity = TN / (TN+FP)) over all thresholds. One caution: when the positive class is extremely rare, AUC can be less informative; AUC might be very high even if model struggles on the minority class, because FPR might be tiny for all models. In such cases, **Precision-Recall AUC** is often more informative. Many fraud competitions used AUC as the evaluation metric (e.g., IEEE-CIS used AUC).
+
+## AUC-PR (Area Under Precision-Recall Curve)
+
+Not explicitly asked in the question, but worth noting: PR AUC focuses on precision vs recall trade-off and is more sensitive to improvements on the minority class. In very imbalanced scenarios, PR AUC is a better indicator of performance improvements than ROC AUC. For example, a model might have a high ROC AUC of 0.98 but a PR AUC of only 0.10 if precision is low at high recalls. Researchers sometimes report this to show how well the model does in terms of actual precision/recall trade-off.
+
+## Specificity (True Negative Rate)
+
+In fraud, specificity = TN / (TN + FP) is usually very high by default because TN is huge. It’s rarely a focus, since not catching non-fraud (false positive) is already covered by precision, and we assume we want to allow legitimate transactions. But in some contexts, specificity is considered to make sure the false positive rate is controlled (e.g., “FPR should be below 0.1%”).
+
+## False Positive Rate (FPR) and False Negative Rate (FNR)
+
+Sometimes business sets these as requirements. For instance, *“We can only review 0.5% of transactions, so FPR must be <=0.5%.”* This is essentially controlling false positives. Or *“We cannot tolerate missing more than 10% of fraud – FNR <=10%,”* which is recall >=90%. These can be more actionable in setting thresholds than precision/recall alone.
+
+## Detection Latency
+
+Apart from classification metrics, **timeliness** is crucial. Detection latency can mean two things: (1) **online decision latency** – how long it takes to score a single transaction and respond (which affects user experience and fraud blocking effectiveness), and (2) **time-to-detection for fraud patterns** – if an attack starts at time T, how long before the system detects and flags it. The first is usually measured in milliseconds. For example, a payment system might have an end-to-end latency budget of 200ms for authorization, out of which fraud check gets 20–30ms. Modern systems often aim for **fraud model inference under \~50ms** or faster. Feedzai (a vendor) suggests looking at 99th percentile latency (e.g., 99% of transactions scored in <500ms), to ensure worst-case delays are bounded. The second definition (time to detect an emerging fraud modus operandi) is more about monitoring – e.g., *“did we catch the new fraud ring the first day it appeared, or did it go undetected for weeks?”*. This is harder to quantify, but important in evaluating adaptive systems. Real-time systems strive for **instant detection**, meaning as soon as the first few events of a fraud pattern occur, the system raises an alert. Metrics like **EEDD (Estimated Early Detection Delay)** are used in some research to measure this on sequence data, but not standard in industry. In summary, latency metrics ensure the model not only has good statistical performance but also operates quickly enough to be actionable.
+
+## Summary
+
+In practice, evaluation of a fraud model during development will involve: looking at the **ROC curve and PR curve**, reporting AUC, and then choosing one or two operating points to report precision/recall/F1. Often a **confusion matrix** at a chosen threshold is given to show how many alerts per day that yields (false positives) vs how many frauds caught. The threshold might be chosen to meet a business constraint (like a fixed review capacity or a false positive rate limit). Additionally, **business metrics** may be used: e.g., dollars of fraud caught (and dollars of false positive customer sales lost), which is essentially weighing each transaction by its amount. If a model catches more high-value fraud, that’s more impactful than catching many low-value frauds.
+
+Finally, beyond metrics on historical data, it’s important to do **backtesting or sandbox testing**: run the model on a period of historical transactions day by day, and simulate the decisions, to see how it would have performed (how quickly fraud would be stopped, how many genuine transactions would be falsely declined, etc.). This can reveal things like adaptation of fraudsters (did fraud drop after some were caught? Did they try a different strategy?). In an online evaluation, one might do an **A/B test** with a new model vs old model to directly measure improvement in fraud dollars prevented and false positive rate in real operations. But offline metrics like precision/recall and AUC are the starting point to qualify a model for deployment.
+
+
+# Deployment Patters
+
+Developing a high-accuracy fraud model is only half the story.
+The rest of the challenge is deploying it in an architecture that can handle real-time data streams, sub-second decisions, and surging throughput.
+Modern fraud detection systems increasingly lean on cloud-native components and streaming frameworks to make this happen.
+
+This section presents an overview of common deployment patterns using Google Cloud Platform (GCP) as an example, but the principles apply across cloud providers like AWS and Azure.
 
 ## Event Streaming and Ingestion
 
 Fraud detection starts with ingesting a continuous stream of transactions from payment processors, banking systems, or point-of-sale devices.
 
-In GCP, **Pub/Sub** acts as the primary streaming backbone, capturing and buffering transaction events in real time.
+In GCP, Pub/Sub acts as the primary streaming backbone, capturing and buffering transaction events in real time.
 This works much like AWS Kinesis or Azure Event Hubs, but with Google’s global network and seamless scaling.
 Pub/Sub guarantees message durability, ordering (with ordering keys), and scales automatically to handle spikes.
 
-Some systems also use HTTP APIs or queues for ingestion, but **Pub/Sub’s** scalability and integration with **Dataflow** (Apache Beam) make it ideal for high-volume, low-latency scenarios.
+Some systems also use HTTP APIs or queues for ingestion, but Pub/Sub’s scalability and integration with Dataflow (Apache Beam) make it ideal for high-volume, low-latency scenarios.
 
 
 ## Real-Time Feature Computation
 
 Before scoring, each transaction needs feature enrichment like user history, transaction frequency, or average transaction amounts.
 
-GCP’s **Bigtable** or **Firestore** (for document-style lookups) provide ultra-fast, horizontally-scalable NoSQL storage for such features.
+GCP’s Bigtable or Firestore (for document-style lookups) provide ultra-fast, horizontally-scalable NoSQL storage for such features.
 
-Imagine a fraud detection system where a **Cloud Function** or **Dataflow pipeline** enriches each transaction event by querying **Bigtable** for recent account activity, reducing latency to milliseconds.
+Imagine a fraud detection system where a Cloud Function or Dataflow pipeline enriches each transaction event by querying Bigtable for recent account activity, reducing latency to milliseconds.
 
-For caching and in-memory lookup, **Memorystore (Redis)** can be used, providing [sub-millisecond access for high-throughput enrichment](https://redis.io/solutions/fraud-detection/).
+For caching and in-memory lookup, Memorystore (Redis) can be used, providing [sub-millisecond access for high-throughput enrichment](https://redis.io/solutions/fraud-detection/).
 
-Advanced GCP users might implement a **custom feature store** using **Bigtable + Dataflow + Pub/Sub** to precompute and update rolling aggregates.
+Advanced GCP users might implement a custom feature store using Bigtable + Dataflow + Pub/Sub to precompute and update rolling aggregates.
 
 ## Model Serving (Inference)
 
-At the heart is the deployed model that scores each transaction. GCP’s **Vertex AI Prediction** service offers **online endpoints** with autoscaling, low-latency serving, and even GPU acceleration.
+At the heart is the deployed model that scores each transaction. GCP’s Vertex AI Prediction service offers online endpoints with autoscaling, low-latency serving, and even GPU acceleration.
 
-* You train your model (say, using XGBoost or TensorFlow) and deploy it as a **Vertex AI model endpoint**.
+* You train your model (say, using XGBoost or TensorFlow) and deploy it as a Vertex AI model endpoint.
 * It exposes a REST API (or gRPC) to score transactions in real time.
 * For ultra-low-latency needs, Cloud Functions can serve embedded lightweight models (although this works best for small models like decision trees or logistic regression).
 
@@ -547,64 +619,64 @@ At the heart is the deployed model that scores each transaction. GCP’s **Verte
 
 After scoring, the system needs orchestration to determine actions.
 
-GCP offers **Dataflow** (Apache Beam) for stream processing, perfect for scoring events inline and routing them based on the model’s output.
+GCP offers Dataflow (Apache Beam) for stream processing, perfect for scoring events inline and routing them based on the model’s output.
 
-* **Pub/Sub** streams transaction events.
-* **Dataflow** reads the stream, enriches each event with features, scores it using Vertex AI endpoint, and applies business logic (e.g., if fraud score > threshold, flag for review).
+* Pub/Sub streams transaction events.
+* Dataflow reads the stream, enriches each event with features, scores it using Vertex AI endpoint, and applies business logic (e.g., if fraud score > threshold, flag for review).
 
-Alternatively, **Workflows** and **Cloud Functions** can orchestrate more complex, conditional logic, much like AWS Step Functions or Azure Durable Functions.
+Alternatively, Workflows and Cloud Functions can orchestrate more complex, conditional logic, much like AWS Step Functions or Azure Durable Functions.
 
 ## Alerts, Notifications, and Downstream Actions
 
 When fraud is detected, you need immediate action.
 
-* Send alerts via **Pub/Sub topics** to downstream systems.
-* Trigger **Cloud Functions** to initiate case creation, notify analysts, or invoke an authorization block.
-* Update **real-time dashboards** in **BigQuery** or **Looker**.
+* Send alerts via Pub/Sub topics to downstream systems.
+* Trigger Cloud Functions to initiate case creation, notify analysts, or invoke an authorization block.
+* Update real-time dashboards in BigQuery or Looker.
 
-Moreover, **Pub/Sub’s dead-letter topics** and **retry mechanisms** ensure reliability even in edge cases.
+Moreover, Pub/Sub’s dead-letter topics and retry mechanisms ensure reliability even in edge cases.
 
-In high-risk scenarios, decisions can integrate directly with the payment gateway to **decline or challenge transactions** within milliseconds.
+In high-risk scenarios, decisions can integrate directly with the payment gateway to decline or challenge transactions within milliseconds.
 
 ## Example
 
 Here’s a GCP-native fraud detection pipeline:
 
-1. Transactions stream into **Pub/Sub**.
-2. A **Dataflow** job processes each event:
-  * Enriches with features from **Bigtable** or **Firestore**.
-  * Calls the **Vertex AI endpoint** for scoring.
-  * Routes events based on the fraud score (e.g., sends high-risk ones to a **Pub/Sub alert topic**).
-3. Alerts are consumed by downstream systems or **Cloud Functions** for further actions (blocking, notification, manual review).
-4. **BigQuery** stores logs for monitoring, drift detection, and analytics.
-5. **Cloud Monitoring** and **Error Reporting** track system health and model performance, alerting teams to anomalies in real time.
+1. Transactions stream into Pub/Sub.
+2. A Dataflow job processes each event:
+  * Enriches with features from Bigtable or Firestore.
+  * Calls the Vertex AI endpoint for scoring.
+  * Routes events based on the fraud score (e.g., sends high-risk ones to a Pub/Sub alert topic).
+3. Alerts are consumed by downstream systems or Cloud Functions for further actions (blocking, notification, manual review).
+4. BigQuery stores logs for monitoring, drift detection, and analytics.
+5. Cloud Monitoring and Error Reporting track system health and model performance, alerting teams to anomalies in real time.
 
 
 ### Microservices and APIs
 
 Some systems favor microservices over streaming.
 
-Here, a dedicated **Fraud Detection Service** (perhaps running on **GKE (Kubernetes)**) handles synchronous feature computation (with **Bigtable** or **Memorystore**), invokes the **Vertex AI model**, applies rules, and returns a decision—all within the transaction’s authorization flow.
+Here, a dedicated Fraud Detection Service (perhaps running on GKE (Kubernetes)) handles synchronous feature computation (with Bigtable or Memorystore), invokes the Vertex AI model, applies rules, and returns a decision—all within the transaction’s authorization flow.
 
 This design aligns with traditional banking architectures where fraud decisions happen inline.
 
 ### Monitoring and Logging
 
-GCP’s **Cloud Monitoring** and **Cloud Logging** track:
+GCP’s Cloud Monitoring and Cloud Logging track:
 
 * Latency and throughput of ingestion and inference.
 * Error rates and system health.
 * Model score distributions (for detecting drift or attacks).
 
-In fraud detection, **monitoring model drift** is non-negotiable—if fraud rates drop or spike unexpectedly, your system might be under attack or outdated.
+In fraud detection, monitoring model drift is non-negotiable—if fraud rates drop or spike unexpectedly, your system might be under attack or outdated.
 
 ### Continuous Updates
 
 Retraining and redeployment keep the model sharp.
 
-* **Vertex AI Pipelines** orchestrate training on fresh data (e.g., daily, weekly) and deploy updated models if performance checks out.
-* **Blue/green deployment** or **A/B testing** ensures safe rollouts.
-* **Infrastructure-as-code** (with **Terraform** or **Deployment Manager**) automates the pipeline, minimizing manual error.
+* Vertex AI Pipelines orchestrate training on fresh data (e.g., daily, weekly) and deploy updated models if performance checks out.
+* Blue/green deployment or A/B testing ensures safe rollouts.
+* Infrastructure-as-code (with Terraform or Deployment Manager) automates the pipeline, minimizing manual error.
 
 Retraining frequency depends on fraud velocity—fast-evolving threats may require weekly or even daily retraining.
 
@@ -631,79 +703,6 @@ Research in fraud detection often relies on a few key **public datasets** to eva
 **Notes on Metrics in these datasets:** Due to imbalance, accuracy is not informative (e.g., the credit card dataset has 99.8% non-fraud, so a trivial model gets 99.8% accuracy by predicting all non-fraud!). Hence, papers report metrics like AUC-ROC, precision/recall, or F1-score. For instance, on the Kaggle credit card data, an AUC-ROC around 0.95+ is achievable by top models, and PR AUC is much lower (since base fraud rate is 0.172%). In IEEE-CIS data, top models achieved about 0.92–0.94 AUC-ROC in the competition. PaySim being synthetic often yields extremely high AUC (sometimes >0.99 for simple models) since patterns might be easier to learn. When evaluating on these sets, it’s crucial to use proper cross-validation or the given train/test splits to avoid overfitting (particularly an issue with the small Kaggle credit card data).
 
 Overall, these datasets have driven a lot of research. However, one should be cautious when extrapolating results from them to real-world performance. Real production data can be more complex (concept drift, additional features, feedback loops). Nonetheless, the above datasets provide valuable benchmarks to compare algorithms under controlled conditions.
-
-# Evaluation Metrics
-
-Evaluating fraud detection models requires metrics that account for very particular challenges such as:
-
-- **Class imbalance:** Transactions labeled as suspicious may be significantly lower of total historical transactions.
-- **Relative costs of false positives vs. false negatives:** False positives (legitimate transactions flagged as fraud) can lead to customer dissatisfaction, while false negatives (fraudulent transactions not detected) can result in financial losses.
-
-<figure class="jb_picture">
-  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-04-03/conf_matrix.png alt: "Confusion matrix of a financial fraud binary classifier." %}
-  <figcaption class="stroke"> 
-    Confusion matrix of a financial fraud binary classifier.
-  </figcaption>
-</figure>
-
-Below are the most common metrics and considerations.
-
-## Precision (Positive Predictive Value)
-
-Among all transactions the model flagged as “fraud” (predicted positive), precision is **the fraction that were actually fraud**.
-
-High precision means **few false positives**.
-
-Precision is crucial for operational efficiency: low precision means investigators waste time on many false alarms, and customers suffer unnecessary declines. 
-
-$$\text{Precision} = \frac{TP}{TP + FP}$$
-
-For fraud, a precision of 0.5 would mean half of the alerts are real fraud. Many top systems aim for very high precision (e.g., 0.9+) at low fraud rates, but there’s a trade-off with recall. Precision is often reported at a certain operating point or as an average if multiple thresholds are considered. 
-
-An example interpretation: “Of transactions our system blocked, 95% were indeed fraudulent”. That’s a precision of 95%. 
-
-
-## Recall (True Positive Rate or Sensitivity)
-
-Recall is the fraction of actual fraud cases that the model correctly caught. High recall means **few false negatives** – the model is catching most fraudsters. 
-
-$$\text{Precision} = \frac{TP}{TP + FN}$$
-
-This is critical for security: low recall means many frauds slip through and cause losses. However, one can usually increase recall by lowering the detection threshold at the cost of precision. So there’s a balance. A recall of 0.80 means 80% of fraud instances were detected (20% missed). In practice, businesses may set a recall target like “catch at least 70% of fraud” and then maximize precision under that constraint.* 
-
-## F1-Score
-
-The harmonic mean of precision and recall, F1 = 2 \* (Precision \* Recall) / (Precision + Recall). It gives a single-figure balance of precision and recall. F1 is useful when we want a combined score (for model selection, for example) and when class distribution is skewed. A high F1 requires both precision and recall to be reasonably high – if one is low, F1 suffers. In extremely imbalanced data, even F1 can be dominated by one side if not careful. But it’s much better than accuracy for fraud. For instance, if a model has precision 0.6 and recall 0.6, F1 = 0.60. If another has 0.7 precision but 0.4 recall, F1 \~0.50, telling us the first model is overall better balanced. F1 is a popular metric in Kaggle competitions and papers to compare models, ensuring they are not just optimizing one at the expense of the other.
-
-## AUC-ROC (Area Under the ROC Curve)
-
-This measures the model’s ability to discriminate between classes across all thresholds. ROC (Receiver Operating Characteristic) curve plots True Positive Rate (Recall) vs False Positive Rate. AUC is the area under this curve; an AUC of 0.5 is random, 1.0 is perfect. AUC has the advantage of being threshold-independent – it summarizes the model’s performance at all operating points. It’s very common in fraud research because it doesn’t require picking a threshold and is not affected by the overall class imbalance as much as accuracy. An intuitive interpretation of AUC-ROC: it’s the probability that a randomly chosen fraudulent transaction will receive a higher risk score than a randomly chosen legitimate transaction. So, if we randomly pair a fraud and a non-fraud, AUC is the chance the model ranks the fraud higher. AUC considers both recall and specificity (specificity = TN / (TN+FP)) over all thresholds. One caution: when the positive class is extremely rare, AUC can be less informative; AUC might be very high even if model struggles on the minority class, because FPR might be tiny for all models. In such cases, **Precision-Recall AUC** is often more informative. Many fraud competitions used AUC as the evaluation metric (e.g., IEEE-CIS used AUC).
-
-## AUC-PR (Area Under Precision-Recall Curve)
-
-Not explicitly asked in the question, but worth noting: PR AUC focuses on precision vs recall trade-off and is more sensitive to improvements on the minority class. In very imbalanced scenarios, PR AUC is a better indicator of performance improvements than ROC AUC. For example, a model might have a high ROC AUC of 0.98 but a PR AUC of only 0.10 if precision is low at high recalls. Researchers sometimes report this to show how well the model does in terms of actual precision/recall trade-off.
-
-## Specificity (True Negative Rate)
-
-In fraud, specificity = TN / (TN + FP) is usually very high by default because TN is huge. It’s rarely a focus, since not catching non-fraud (false positive) is already covered by precision, and we assume we want to allow legitimate transactions. But in some contexts, specificity is considered to make sure the false positive rate is controlled (e.g., “FPR should be below 0.1%”).
-
-## False Positive Rate (FPR) and False Negative Rate (FNR)
-
-Sometimes business sets these as requirements. For instance, *“We can only review 0.5% of transactions, so FPR must be <=0.5%.”* This is essentially controlling false positives. Or *“We cannot tolerate missing more than 10% of fraud – FNR <=10%,”* which is recall >=90%. These can be more actionable in setting thresholds than precision/recall alone.
-
-## Matthews Correlation Coefficient (MCC) & others
-
-Occasionally used in research for imbalanced classification, MCC is a single score from -1 to 1 that considers TP, TN, FP, FN, and is robust to imbalance. But it’s not as interpretable for business. It’s rarely reported outside academia.
-
-## Detection Latency
-
-Apart from classification metrics, **timeliness** is crucial. Detection latency can mean two things: (1) **online decision latency** – how long it takes to score a single transaction and respond (which affects user experience and fraud blocking effectiveness), and (2) **time-to-detection for fraud patterns** – if an attack starts at time T, how long before the system detects and flags it. The first is usually measured in milliseconds. For example, a payment system might have an end-to-end latency budget of 200ms for authorization, out of which fraud check gets 20–30ms. Modern systems often aim for **fraud model inference under \~50ms** or faster. Feedzai (a vendor) suggests looking at 99th percentile latency (e.g., 99% of transactions scored in <500ms), to ensure worst-case delays are bounded. The second definition (time to detect an emerging fraud modus operandi) is more about monitoring – e.g., *“did we catch the new fraud ring the first day it appeared, or did it go undetected for weeks?”*. This is harder to quantify, but important in evaluating adaptive systems. Real-time systems strive for **instant detection**, meaning as soon as the first few events of a fraud pattern occur, the system raises an alert. Metrics like **EEDD (Estimated Early Detection Delay)** are used in some research to measure this on sequence data, but not standard in industry. In summary, latency metrics ensure the model not only has good statistical performance but also operates quickly enough to be actionable.
-
-## Summary
-
-In practice, evaluation of a fraud model during development will involve: looking at the **ROC curve and PR curve**, reporting AUC, and then choosing one or two operating points to report precision/recall/F1. Often a **confusion matrix** at a chosen threshold is given to show how many alerts per day that yields (false positives) vs how many frauds caught. The threshold might be chosen to meet a business constraint (like a fixed review capacity or a false positive rate limit). Additionally, **business metrics** may be used: e.g., dollars of fraud caught (and dollars of false positive customer sales lost), which is essentially weighing each transaction by its amount. If a model catches more high-value fraud, that’s more impactful than catching many low-value frauds.
-
-Finally, beyond metrics on historical data, it’s important to do **backtesting or sandbox testing**: run the model on a period of historical transactions day by day, and simulate the decisions, to see how it would have performed (how quickly fraud would be stopped, how many genuine transactions would be falsely declined, etc.). This can reveal things like adaptation of fraudsters (did fraud drop after some were caught? Did they try a different strategy?). In an online evaluation, one might do an **A/B test** with a new model vs old model to directly measure improvement in fraud dollars prevented and false positive rate in real operations. But offline metrics like precision/recall and AUC are the starting point to qualify a model for deployment.
 
 # Deployment Considerations
 
@@ -812,3 +811,9 @@ In conclusion, the state-of-the-art in real-time fraud detection is a multi-face
 [^23]: Motie, Soroor, and Bijan Raahemi. "[Financial fraud detection using graph neural networks: A systematic review](https://doi.org/10.1016/j.eswa.2023.122156)." Expert Systems with Applications (2024)
 
 [^24]: Branco, Bernardo, et al. "[Interleaved sequence RNNs for fraud detection](https://doi.org/10.1145/3394486.3403361)." Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining. 2020.
+
+[^25]: Masihullah, Shaik, et al. "[Identifying fraud rings using domain aware weighted community detection](https://link.springer.com/chapter/10.1007/978-3-031-14463-9_10)." International Cross-Domain Conference for Machine Learning and Knowledge Extraction. Cham: Springer International Publishing, 2022.
+
+[^26]: Krutikov, Sergei, et al. "[Challenging Gradient Boosted Decision Trees with Tabular Transformers for Fraud Detection at Booking.com](https://arxiv.org/html/2405.13692v1)." arXiv preprint arXiv:2405.13692 (2024).
+
+[^27]: Lin, Junhong, et al. "[FraudGT: A Simple, Effective, and Efficient Graph Transformer for Financial Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3677052.3698648)." Proceedings of the 5th ACM International Conference on AI in Finance. 2024.~~

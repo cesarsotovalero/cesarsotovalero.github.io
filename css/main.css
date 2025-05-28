@@ -152,7 +152,7 @@ h2 {
     font-size: 22px;
   }
 
-  .blog-post h2:before {
+  .blog-post h2:before h3:before {
     counter-increment: h2counter;
     content: counter(h1counter) "." counter(h2counter) ".\0000a0";
     font-size: 20px;
