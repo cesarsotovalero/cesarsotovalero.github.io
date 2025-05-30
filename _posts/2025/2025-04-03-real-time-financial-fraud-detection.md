@@ -119,9 +119,9 @@ So, while classical models are fast to deploy and iterate on, they do require on
 Representative research and use-cases for classical methods include:
 
 - **Logistic regression and decision trees as baseline models:** Many banks have deployed logistic regression for real-time credit card fraud scoring due to its interpretability.
-- **Ensemble methods in academic studies:** Research has focused on evaluating logistic vs. decision tree vs. random forest on a credit card dataset (often finding tree ensembles outperform linear models in recall).[^17]
+- **Ensemble methods in academic studies:** Research has focused on evaluating logistic vs. decision tree vs. random forest on a credit card dataset (often finding tree ensembles outperform linear models in Recall).[^17]
 - **Kaggle competitions:** XGBoost was heavily used in the Kaggle IEEE-CIS 2019 competition leveraging high accuracy on tabular features.
-- **Hybrid systems:** Many production systems combine manual business rules for known high-risk patterns with an ML model for subtler patterns, using the rules for immediate high-precision flags and the ML model for broad coverage.
+- **Hybrid systems:** Many production systems combine manual business rules for known high-risk patterns with an ML model for subtler patterns, using the rules for immediate high-Precision flags and the ML model for broad coverage.
 
 # Deep Learning Models
 
@@ -163,7 +163,7 @@ For example, an LSTM can consume a customer’s sequence of transactions (with t
 This temporal modeling is very powerful for fraud because many fraud patterns only make sense in context (e.g., a sudden spending spike, or a purchase in a new country right after another far-away purchase).
 
 Research has shown LSTM-based models can effectively distinguish fraudulent vs. legitimate sequences.
-In one case, an LSTM achieved significantly higher recall than static models by catching subtle temporal shifts in user behavior.[^13]
+In one case, an LSTM achieved significantly higher Recall than static models by catching subtle temporal shifts in user behavior.[^13]
 RNNs do require sequential data, so for one-off transactions without history they are less applicable (unless modeling at the merchant or account aggregate level).
 
 ### Autoencoders
@@ -193,7 +193,7 @@ There are two main applications of GANs in fraud detection:
 Some financial institutions have experimented with GANs.
 For example, [Swedbank reportedly used GANs](https://developer.nvidia.com/blog/detecting-financial-fraud-using-gans-at-swedbank-with-hopsworks-and-gpus/) to generate additional fraudulent examples for training their models.
 However, GAN training can be complex and less common in production.
-Still, in research, GAN-based methods have shown improved recall by expanding the fraud training sample space.[^22]
+Still, in research, GAN-based methods have shown improved Recall by expanding the fraud training sample space.[^22]
 
 ### Hybrid Deep Learning Models
 
@@ -218,7 +218,7 @@ DNNs also tend to improve with more data, whereas classical models may saturate 
 Another strength is handling complex data types.
 For example, if one incorporates additional signals like device fingerprints, text (e.g., product names), or network information, deep networks can combine these modalities more seamlessly (e.g., an embedding layer for device ID, an LSTM for text description, etc.).
 
-In practice, DNNs have shown higher recall at a given false-positive rate compared to classical models, in several cases.[^13]
+In practice, DNNs have shown higher Recall at a given false-positive rate compared to classical models, in several cases.[^13]
 They are also adaptive architectures like RNNs or online learning frameworks can update as new data comes in, enabling continuous learning, which is important as fraud scenarios evolve.
 
 ## Weaknesses 
@@ -269,7 +269,7 @@ concept drift.
 Notable examples of deep learning in fraud detection:
 
 - **Feedforward DNNs:** PayPal in the mid-2010s [applied neural networks to fraud](https://www.paypal.com/us/brc/article/payment-fraud-detection-machine-learning?utm_source=chatgpt.com), fintech companies like Feedzai have further advanced this methodology by combining DNNs with tree-based models.[^24]
-- **RNNs and LSTMs:** Multiple studies have shown that LSTM networks can detect sequential fraud behavior that static models miss, improving recall by capturing temporal patterns. Large merchants have employed LSTM-based models to analyze user event streams, enabling the detection of account takeovers and session-based fraud in real-time.
+- **RNNs and LSTMs:** Multiple studies have shown that LSTM networks can detect sequential fraud behavior that static models miss, improving Recall by capturing temporal patterns. Large merchants have employed LSTM-based models to analyze user event streams, enabling the detection of account takeovers and session-based fraud in real-time.
 - **Autoencoder-based anomaly detection:** Unsupervised autoencoders have been used by banks to flag new types of fraud. For instance, an autoencoder trained on normal mobile transactions flagged anomalies that turned out to be new fraud rings exploiting a loophole (detected via high reconstruction error).
 - **Hybrid models:** Recent trends include using DNNs to generate features for a gradient boosted tree. One effective approach is to use deep learning models, such as autoencoders or embedding networks, to learn rich feature representations from transaction data. These learned embeddings are then fed into XGBoost, combining the deep models' ability to capture complex patterns with the interpretability and efficiency of tree-based methods
 
@@ -326,7 +326,7 @@ This is important when fraudsters deliberately make individual transactions look
 
 Another advantage is in reducing false positives by providing context.
 For example, a transaction with a new device might normally seem risky, but if that device has a long history with the same user and no links to bad accounts, a graph model can recognize it as low risk, avoiding a false alarm. 
-Industry reports indicate that adding graph features or GNNs outputs has improved precision of fraud systems by filtering out cases that looked suspicious in isolation but were safe in context.[^4]
+Industry reports indicate that adding graph features or GNNs outputs has improved Precision of fraud systems by filtering out cases that looked suspicious in isolation but were safe in context.[^4]
 
 ##  Weaknesses
 
@@ -518,42 +518,42 @@ Below are the most common metrics and considerations.
 
 ## Precision
 
-Among all transactions the model flagged as “fraud” (predicted positive), precision is the fraction that were actually fraud.
+Among all transactions the model flagged as “fraud” (predicted positive), Precision is the fraction that were actually fraud.
 
-High precision means few false positives.
+High Precision means few false positives.
 
 Precision is crucial for operational efficiency. 
-Low precision means investigators waste time on many false alarms, and customers suffer unnecessary declines.
+Low Precision means investigators waste time on many false alarms, and customers suffer unnecessary declines.
 
 $$\text{Precision} = \frac{TP}{TP + FP}$$
 
-For fraud, a precision of 0.5 would mean half of the alerts are real fraud. 
-Many top systems aim for very high precision (e.g., 0.9+) at low fraud rates, but there’s a trade-off with Recall. 
+For fraud, a Precision of 0.5 would mean half of the alerts are real fraud. 
+Many top systems aim for very high Precision (e.g., 0.9+) at low fraud rates, but there’s a trade-off with Recall. 
 Precision is often reported at a certain operating point or as an average if multiple thresholds are considered.
 
-An example interpretation: “Of transactions our system blocked, 95% were indeed fraudulent”, that’s a precision of 95%.
+An example interpretation: “Of transactions our system blocked, 95% were indeed fraudulent”, that’s a Precision of 95%.
 
 ## Recall
 
-Recall is the fraction of actual fraud cases that the model correctly caught. High recall means few false negatives – the model is catching most fraudsters.
+Recall is the fraction of actual fraud cases that the model correctly caught. High Recall means few false negatives – the model is catching most fraudsters.
 
 $$\text{Precision} = \frac{TP}{TP + FN}$$
 
-This is critical for security: low recall means many frauds slip through and cause losses. However, one can usually increase recall by lowering the detection threshold at the cost of precision. So there’s a balance. A recall of 0.80 means 80% of fraud instances were detected (20% missed). In practice, businesses may set a recall target like “catch at least 70% of fraud” and then maximize precision under that constraint.*
+This is critical for security: low Recall means many frauds slip through and cause losses. However, one can usually increase Recall by lowering the detection threshold at the cost of Precision. So there’s a balance. A Recall of 0.80 means 80% of fraud instances were detected (20% missed). In practice, businesses may set a Recall target like “catch at least 70% of fraud” and then maximize Precision under that constraint.*
 
 ## F1-Score
 
-F1-Score is the harmonic mean of precision and recall, and gives a single-figure balance of both metrics. It’s defined as:
+F1-Score is the harmonic mean of Precision and Recall.
+It gives a single-figure balance of both metrics.
 
 $$ F_1 = \frac{2 \times \text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} $$
 
-
-F1 is useful when we want a combined score for model selection, for example and when class distribution is skewed. 
-A high F1 requires both precision and recall to be reasonably high.
-If one is low, F1 suffers. 
+F1 is useful when we want a combined score for model selection, or when class distribution is skewed. 
+A high F1 requires both Precision and Recall to be reasonably high.
+If one of them is low, then F1 suffers.
 
 In extremely imbalanced data, even F1 can be dominated by one side if not careful. 
-But it’s much better than accuracy for fraud. For instance, if a model has precision 0.6 and recall 0.6, F1 = 0.60. If another has 0.7 precision but 0.4 recall, F1 \~0.50, telling us the first model is overall better balanced. 
+But it’s much better than accuracy for fraud. For instance, if a model has Precision 0.6 and Recall 0.6, F1 = 0.60. If another has 0.7 Precision but 0.4 Recall, F1 \~0.50, telling us the first model is overall better balanced. 
 F1 is a popular metric in Kaggle competitions and papers to compare models, ensuring they are not just optimizing one at the expense of the other.
 
 ## False Positive Rate (FPR) and False Negative Rate (FNR)
@@ -561,8 +561,8 @@ F1 is a popular metric in Kaggle competitions and papers to compare models, ensu
 Sometimes business sets these as requirements.
 For instance: *“We can only review 0.5% of transactions, so FPR must be <=0.5%.”*
 This is essentially controlling false positives.
-Or *“We cannot tolerate missing more than 10% of fraud – FNR <=10%,”* which is recall >=90%. 
-These can be more actionable in setting thresholds than precision/recall alone.
+Or *“We cannot tolerate missing more than 10% of fraud – FNR <=10%,”* which is Recall >=90%. 
+These can be more actionable in setting thresholds than Precision/Recall alone.
 
 ## Specificity (True Negative Rate)
 
@@ -581,17 +581,17 @@ informative; AUC might be very high even if model struggles on the minority clas
 
 ## AUC-PR (Area Under Precision-Recall Curve)
 
-Not explicitly asked in the question, but worth noting: PR AUC focuses on precision vs recall trade-off and is more sensitive to improvements on the minority class. In very imbalanced scenarios, PR AUC is a better indicator of performance improvements than ROC AUC. For example, a model might have a high ROC AUC of 0.98 but a PR AUC of only 0.10 if precision is low at high recalls. Researchers sometimes report this to show how well the model does in terms of actual precision/recall trade-off.
+Not explicitly asked in the question, but worth noting: PR AUC focuses on Precision vs Recall trade-off and is more sensitive to improvements on the minority class. In very imbalanced scenarios, PR AUC is a better indicator of performance improvements than ROC AUC. For example, a model might have a high ROC AUC of 0.98 but a PR AUC of only 0.10 if Precision is low at high Recalls. Researchers sometimes report this to show how well the model does in terms of actual Precision/Recall trade-off.
 
 ## Detection Latency
 
 Apart from classification metrics, **timeliness** is crucial. Detection latency can mean two things: (1) **online decision latency** – how long it takes to score a single transaction and respond (which affects user experience and fraud blocking effectiveness), and (2) **time-to-detection for fraud patterns** – if an attack starts at time T, how long before the system detects and flags it. The first is usually measured in milliseconds. For example, a payment system might have an end-to-end latency budget of 200ms for authorization, out of which fraud check gets 20–30ms. Modern systems often aim for **fraud model inference under \~50ms** or faster. Feedzai (a vendor) suggests looking at 99th percentile latency (e.g., 99% of transactions scored in <500ms), to ensure worst-case delays are bounded. The second definition (time to detect an emerging fraud modus operandi) is more about monitoring – e.g., *“did we catch the new fraud ring the first day it appeared, or did it go undetected for weeks?”*. This is harder to quantify, but important in evaluating adaptive systems. Real-time systems strive for **instant detection**, meaning as soon as the first few events of a fraud pattern occur, the system raises an alert. Metrics like **EEDD (Estimated Early Detection Delay)** are used in some research to measure this on sequence data, but not standard in industry. In summary, latency metrics ensure the model not only has good statistical performance but also operates quickly enough to be actionable.
 
-##  aSummary
+##  Summary
 
-In practice, evaluation of a fraud model during development will involve: looking at the **ROC curve and PR curve**, reporting AUC, and then choosing one or two operating points to report precision/recall/F1. Often a **confusion matrix** at a chosen threshold is given to show how many alerts per day that yields (false positives) vs how many frauds caught. The threshold might be chosen to meet a business constraint (like a fixed review capacity or a false positive rate limit). Additionally, **business metrics** may be used: e.g., dollars of fraud caught (and dollars of false positive customer sales lost), which is essentially weighing each transaction by its amount. If a model catches more high-value fraud, that’s more impactful than catching many low-value frauds.
+In practice, evaluation of a fraud model during development will involve: looking at the **ROC curve and PR curve**, reporting AUC, and then choosing one or two operating points to report Precision/Recall/F1. Often a **confusion matrix** at a chosen threshold is given to show how many alerts per day that yields (false positives) vs how many frauds caught. The threshold might be chosen to meet a business constraint (like a fixed review capacity or a false positive rate limit). Additionally, **business metrics** may be used: e.g., dollars of fraud caught (and dollars of false positive customer sales lost), which is essentially weighing each transaction by its amount. If a model catches more high-value fraud, that’s more impactful than catching many low-value frauds.
 
-Finally, beyond metrics on historical data, it’s important to do **backtesting or sandbox testing**: run the model on a period of historical transactions day by day, and simulate the decisions, to see how it would have performed (how quickly fraud would be stopped, how many genuine transactions would be falsely declined, etc.). This can reveal things like adaptation of fraudsters (did fraud drop after some were caught? Did they try a different strategy?). In an online evaluation, one might do an **A/B test** with a new model vs old model to directly measure improvement in fraud dollars prevented and false positive rate in real operations. But offline metrics like precision/recall and AUC are the starting point to qualify a model for deployment.
+Finally, beyond metrics on historical data, it’s important to do **backtesting or sandbox testing**: run the model on a period of historical transactions day by day, and simulate the decisions, to see how it would have performed (how quickly fraud would be stopped, how many genuine transactions would be falsely declined, etc.). This can reveal things like adaptation of fraudsters (did fraud drop after some were caught? Did they try a different strategy?). In an online evaluation, one might do an **A/B test** with a new model vs old model to directly measure improvement in fraud dollars prevented and false positive rate in real operations. But offline metrics like Precision/Recall and AUC are the starting point to qualify a model for deployment.
 
 
 # Deployment Patters
@@ -721,7 +721,7 @@ Research in fraud detection often relies on a few key **public datasets** to eva
 | Elliptic Bitcoin Dataset <br> *\[Weber et al. 2019]*        | A graph of Bitcoin transactions with ground truth labels for illicit vs licit transactions. Each node is a transaction, edges are Bitcoin transfers, and node features include various blockchain features (e.g., times, amounts, participant info hashed). The task is typically to identify which transactions are illicit.                        | 203,769 transaction nodes and 234,355 edges (Bitcoin payment flows). Only 2% of transactions (4,545 nodes) are labeled illicit; 21% labeled licit; the rest are unknown. Imbalance \~1:49 (illicit\:licit among labeled). | A benchmark for graph-based fraud methods. Allows testing of GNNs and graph features. It’s temporal (transactions over time). Performance is often measured with accuracy/AUC in classifying the illicit nodes. It’s a challenging dataset due to very few fraud examples and lots of unknown labels.                                                                                                                    |
 | UPFD & Others (Social/Insider Fraud)                        | There are other niche datasets, e.g., UBA for insider fraud (synthetic user behavior audit logs), social network fraud datasets (Twitter bot detection, etc.), and corporate fraud datasets (Enron emails for detecting accounting fraud). These are less about transaction fraud but sometimes included in surveys.                                 | Varies. (E.g., UBA has user activity logs with inserted malicious behaviors; social fraud datasets have posts/users labeled as fraudsters, etc.)                                                                          | These are beyond transaction fraud but relevant for broader fraud and anomaly detection contexts. Researchers sometimes test generic anomaly detectors on them.                                                                                                                                                                                                                                                          |
 
-**Notes on Metrics in these datasets:** Due to imbalance, accuracy is not informative (e.g., the credit card dataset has 99.8% non-fraud, so a trivial model gets 99.8% accuracy by predicting all non-fraud!). Hence, papers report metrics like AUC-ROC, precision/recall, or F1-score. For instance, on the Kaggle credit card data, an AUC-ROC around 0.95+ is achievable by top models, and PR AUC is much lower (since base fraud rate is 0.172%). In IEEE-CIS data, top models achieved about 0.92–0.94 AUC-ROC in the competition. PaySim being synthetic often yields extremely high AUC (sometimes >0.99 for simple models) since patterns might be easier to learn. When evaluating on these sets, it’s crucial to use proper cross-validation or the given train/test splits to avoid overfitting (particularly an issue with the small Kaggle credit card data).
+**Notes on Metrics in these datasets:** Due to imbalance, accuracy is not informative (e.g., the credit card dataset has 99.8% non-fraud, so a trivial model gets 99.8% accuracy by predicting all non-fraud!). Hence, papers report metrics like AUC-ROC, Precision/Recall, or F1-score. For instance, on the Kaggle credit card data, an AUC-ROC around 0.95+ is achievable by top models, and PR AUC is much lower (since base fraud rate is 0.172%). In IEEE-CIS data, top models achieved about 0.92–0.94 AUC-ROC in the competition. PaySim being synthetic often yields extremely high AUC (sometimes >0.99 for simple models) since patterns might be easier to learn. When evaluating on these sets, it’s crucial to use proper cross-validation or the given train/test splits to avoid overfitting (particularly an issue with the small Kaggle credit card data).
 
 Overall, these datasets have driven a lot of research. However, one should be cautious when extrapolating results from them to real-world performance. Real production data can be more complex (concept drift, additional features, feedback loops). Nonetheless, the above datasets provide valuable benchmarks to compare algorithms under controlled conditions.
 
@@ -777,7 +777,7 @@ Equally important are the **operational considerations**: achieving low-latency,
 
 No single model or technique is a silver bullet. In practice, **hybrid systems** often yield the best results: combining business rules for known patterns, tree models for interpretable risk scoring, deep models for complex pattern recognition, and graph analyses for relational insights. The survey of current methods shows that each has strengths that can complement the others. For example, a pipeline might first use a neural network to get a risk score, then a graph-based module to adjust the score if the entity is connected to others with fraud history, and finally a simple rule to enforce a business constraint (e.g., block if risk is high and amount > X).
 
-Evaluation on public datasets and benchmarks provides a baseline, but ultimately **real-world performance** is what matters – metrics like dollars prevented, fraud rings dismantled, false alerts avoided, and customer friction minimized. Achieving high recall without swamping operations with false positives remains the core challenge. Metrics like precision, recall, F1, and AUC guide model development, while detection latency and system uptime are critical for deployment.
+Evaluation on public datasets and benchmarks provides a baseline, but ultimately **real-world performance** is what matters – metrics like dollars prevented, fraud rings dismantled, false alerts avoided, and customer friction minimized. Achieving high Recall without swamping operations with false positives remains the core challenge. Metrics like Precision, Recall, F1, and AUC guide model development, while detection latency and system uptime are critical for deployment.
 
 Looking forward, we see trends like **federated learning** (collaborative fraud models across institutions without sharing raw data), **online learning** (models that adapt in near real-time), and further integration of **unstructured data** (like behavioral biometrics or call center recordings analyzed by AI) into fraud detection. **Explainable AI** will also continue to grow, perhaps with inherently interpretable deep models or better tools, given regulatory pressure.
 
