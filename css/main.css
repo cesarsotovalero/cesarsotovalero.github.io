@@ -641,7 +641,13 @@ a[href$=".pptx"] {
 
 @media only screen and (max-width: 450px) {
   .navbar {
-    float: right;
+    /* float: right; */
+    width: 100%;
+    text-align: center; /* To center inline-block items in .navbar-custom ul */
+  }
+
+  .navbar-custom .container-fluid ul {
+    padding-left: 0; /* Remove default ul padding for better centering */
   }
 }
 
