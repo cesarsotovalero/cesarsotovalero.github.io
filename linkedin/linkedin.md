@@ -31,13 +31,33 @@ published: true
           <span>🔁 Repost: {{ post.repostsCount | default: 0 }}</span>
         </p>
       </div>
-      {% if post.image and post.image.size > 0 %}
+      {%- comment -%}
+      Instead of using the image from the JSON data, we look for a downloaded image in 
+      /_data/images-from-linkedin-posts/<post.postedDateTimestamp>/ and pick the one with the largest width.
+      {%- endcomment -%}
+      {% assign folder = '/_data/images-from-linkedin-posts/' | append: post.postedDateTimestamp | append: '/' %}
+      {% assign largest_image = nil %}
+      {% assign max_width = 0 %}
+      {% for file in site.static_files %}
+        {% if file.path contains folder %}
+          {% assign file_name = file.name %}
+          {% if file_name contains 'x' %}
+            {% assign dimensions = file_name | split: 'x' %}
+            {% assign file_width = dimensions[0] | plus: 0 %}
+            {% if file_width > max_width %}
+              {% assign max_width = file_width %}
+              {% assign largest_image = file %}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if largest_image %}
       <div class="linkedin-post-thumbnail">
-        <img src="{{ post.image[0].url }}" alt="LinkedIn Post Image">
+        <img src="{{ largest_image.path | relative_url }}" alt="LinkedIn Post Image">
       </div>
       {% endif %}
     </div>
   </a>
   {% endfor %}
 </div>
-
