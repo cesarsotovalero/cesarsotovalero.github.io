@@ -1,4 +1,4 @@
-~~---
+---
 layout: post
 title: From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection
 subtitle: Models, architectures, evaluation metrics, and deployment considerations
@@ -518,70 +518,132 @@ Below are the most common metrics and considerations.
 
 ## Precision
 
-Among all transactions the model flagged as “fraud” (predicted positive), Precision is the fraction that were actually fraud.
+Precision is the fraction of transactions that was actually fraud among all transactions the model flagged as fraud (predicted positive).
 
-High Precision means few false positives.
+For example, if a model flagged 100 transactions as fraud, and 80 of those were indeed fraudulent, then:
 
-Precision is crucial for operational efficiency. 
+$$
+\text{Precision} = \frac{TP}{TP + FP} = \frac{80}{100} = 0.8
+$$
+
+High Precision means few false positives, so it is crucial for operational efficiency.
+ 
 Low Precision means investigators waste time on many false alarms, and customers suffer unnecessary declines.
+ 
+Many top systems aim for very high Precision (e.g., 0.9+) at low fraud rates, but there’s a trade-off with Recall.
 
-$$\text{Precision} = \frac{TP}{TP + FP}$$
-
-For fraud, a Precision of 0.5 would mean half of the alerts are real fraud. 
-Many top systems aim for very high Precision (e.g., 0.9+) at low fraud rates, but there’s a trade-off with Recall. 
 Precision is often reported at a certain operating point or as an average if multiple thresholds are considered.
 
-An example interpretation: “Of transactions our system blocked, 95% were indeed fraudulent”, that’s a Precision of 95%.
+An example interpretation: “Of transactions our system blocked, 95% were indeed fraudulent,” that’s a Precision of 95%.
 
 ## Recall
 
-Recall is the fraction of actual fraud cases that the model correctly caught. High Recall means few false negatives – the model is catching most fraudsters.
+Recall is the fraction of actual fraud cases that the model correctly predicts as fraud (true positives) out of all actual fraud cases.
 
-$$\text{Precision} = \frac{TP}{TP + FN}$$
+For example, if there were 100 actual fraud cases and the model caught 80 of them, then:
 
-This is critical for security: low Recall means many frauds slip through and cause losses. However, one can usually increase Recall by lowering the detection threshold at the cost of Precision. So there’s a balance. A Recall of 0.80 means 80% of fraud instances were detected (20% missed). In practice, businesses may set a Recall target like “catch at least 70% of fraud” and then maximize Precision under that constraint.*
+$$
+\text{Recall} = \frac{TP}{TP + FN} = \frac{80}{100} = 0.8
+$$
+
+High Recall means few false negatives, which is critical in fraud detection because missing a fraudulent transaction can lead to financial losses.
+
+Low Recall means many frauds slip through and cause losses. 
+
+However, one can usually increase Recall by lowering the detection threshold at the cost of Precision. So there’s a balance. 
+
+A Recall of 0.80 means 80% of fraud instances were detected (20% missed). In practice, businesses may set a Recall target like “catch at least 70% of fraud” and then maximize Precision under that constraint.
 
 ## F1-Score
 
-F1-Score is the harmonic mean of Precision and Recall.
-It gives a single-figure balance of both metrics.
+F1-Score is the harmonic mean of Precision and Recall, so it gives a single-figure balance of both metrics.
 
-$$ F_1 = \frac{2 \times \text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} $$
+For example, if Precision is 0.8 and Recall is 0.6, then:
 
-F1 is useful when we want a combined score for model selection, or when class distribution is skewed. 
-A high F1 requires both Precision and Recall to be reasonably high.
-If one of them is low, then F1 suffers.
+$$
+F_1 = \frac{2 \times Precision \times Recall}{Precision + Recall} = \frac{2 \times 0.8 \times 0.6}{0.8 + 0.6} = \frac{0.96}{1.4} \approx 0.686
+$$
+
+High F1 means both Precision and Recall are reasonably high.
+
+Low F1 means either Precision or Recall is low, which is undesirable in fraud detection.
+
+F1-Score is useful when we want a combined score for model selection, or when class distribution is skewed. 
 
 In extremely imbalanced data, even F1 can be dominated by one side if not careful. 
-But it’s much better than accuracy for fraud. For instance, if a model has Precision 0.6 and Recall 0.6, F1 = 0.60. If another has 0.7 Precision but 0.4 Recall, F1 \~0.50, telling us the first model is overall better balanced. 
+
+F1 is much better than accuracy for fraud. For instance, if a model has Precision 0.6 and Recall 0.6, F1 = 0.6. If another has Precision = 0.7 but Recall = 0.4, F1 $$ \approx 0.50 $$, telling us the first model is overall better balanced. 
+
 F1 is a popular metric in Kaggle competitions and papers to compare models, ensuring they are not just optimizing one at the expense of the other.
 
 ## False Positive Rate (FPR) and False Negative Rate (FNR)
 
-Sometimes business sets these as requirements.
-For instance: *“We can only review 0.5% of transactions, so FPR must be <=0.5%.”*
-This is essentially controlling false positives.
-Or *“We cannot tolerate missing more than 10% of fraud – FNR <=10%,”* which is Recall >=90%. 
-These can be more actionable in setting thresholds than Precision/Recall alone.
+FPR is the fraction of legitimate transactions that were incorrectly flagged as fraud (false positives) out of all legitimate transactions. FNR is the fraction of fraudulent transactions that were missed (false negatives) out of all actual fraud cases.
+
+For example, if there were 1000 legitimate transactions and the model flagged 50 of them as fraud, then:
+
+$$
+\text{FPR} = \frac{FP}{TN + FP} = \frac{50}{1000} = 0.05 \text{ or } 5\%
+$$
+
+Sometimes businesses set FPR requirements to control false alarms.
+
+For example:
+
+- “We can only review 0.5% of transactions, so FPR must be ≤ 0.5%.”
+- “We cannot tolerate missing more than 10% of fraud, so FNR ≤ 10%,” which implies Recall ≥ 90%.
+
+These constraints often drive the choice of operating thresholds more directly than Precision or Recall alone.
 
 ## Specificity (True Negative Rate)
 
-Specificity is usually very high by default in fraud detection because TN is huge.
+Specificity measures how well the system correctly identifies legitimate transactions as non-fraud.
 
-$$ \text{Specificity} = \frac{TN}{TN + FP} $$
+For example, if there were 1000 legitimate transactions and the model flagged 50 of them incorrectly as fraud (FP), the calculation would be:
 
-It’s rarely a focus, since not catching non-fraud (false positive) is already covered by Precision, and we assume we want to allow legitimate transactions.
-But in some contexts, specificity is considered to make sure the false positive rate is controlled (e.g., “FPR should be below 0.1%”).
+$$
+\text{Specificity} = \frac{TN}{TN + FP} = \frac{950}{950 + 50} = 0.95 \text{ or } 95\%
+$$
 
+Specificity is often overlooked in fraud detection, because it’s essentially the complement of the False Positive Rate (FPR):
+
+$$
+\text{Specificity} = 1 - \text{FPR}
+$$
+
+Specificity is typically very high in fraud detection systems because the number of legitimate transactions (TN) is much larger than the number of frauds or false positives.
+
+Since Precision already focuses on avoiding false positives, and we typically assume we want to approve as many legitimate transactions as possible, Specificity doesn’t usually take center stage.
+
+However, in some contexts, like regulatory requirements or customer experience it’s important to keep FPR below a certain threshold, such as “FPR ≤ 0.1%,” which directly relates to maintaining high Specificity.
 
 ## AUC-ROC (Area Under the ROC Curve)
 
-This measures the model’s ability to discriminate between classes across all thresholds. ROC (Receiver Operating Characteristic) curve plots True Positive Rate (Recall) vs False Positive Rate. AUC is the area under this curve; an AUC of 0.5 is random, 1.0 is perfect. AUC has the advantage of being threshold-independent – it summarizes the model’s performance at all operating points. It’s very common in fraud research because it doesn’t require picking a threshold and is not affected by the overall class imbalance as much as accuracy. An intuitive interpretation of AUC-ROC: it’s the probability that a randomly chosen fraudulent transaction will receive a higher risk score than a randomly chosen legitimate transaction. So, if we randomly pair a fraud and a non-fraud, AUC is the chance the model ranks the fraud higher. AUC considers both r aecall and specificity (specificity = TN / (TN+FP)) over all thresholds. One caution: when the positive class is extremely rare, AUC can be less 
-informative; AUC might be very high even if model struggles on the minority class, because FPR might be tiny for all models. In such cases, **Precision-Recall AUC** is often more informative. Many fraud competitions used AUC as the evaluation metric (e.g., IEEE-CIS used AUC).
+AUC-ROC measures a model’s ability to distinguish fraud from non-fraud across all possible thresholds.
+
+The ROC curve (Receiver Operating Characteristic) plots True Positive Rate (Recall) against False Positive Rate (FPR). 
+
+The AUC is the area under this curve:
+
+- AUC = 0.5 means random guessing.
+- AUC = 1.0 means perfect discrimination.
+
+An intuitive interpretation:
+“If I randomly pick a fraud and a legitimate transaction, AUC is the chance the fraud gets a higher risk score.”
+
+AUC is threshold-independent: it summarizes performance across all thresholds, and it’s less sensitive to class imbalance than accuracy.
 
 ## AUC-PR (Area Under Precision-Recall Curve)
 
-Not explicitly asked in the question, but worth noting: PR AUC focuses on Precision vs Recall trade-off and is more sensitive to improvements on the minority class. In very imbalanced scenarios, PR AUC is a better indicator of performance improvements than ROC AUC. For example, a model might have a high ROC AUC of 0.98 but a PR AUC of only 0.10 if Precision is low at high Recalls. Researchers sometimes report this to show how well the model does in terms of actual Precision/Recall trade-off.
+AUC-PR plots Precision vs. Recall and focuses squarely on the minority class (fraud), so it tells us how well the model catches fraud while keeping false alarms low.
+
+In highly imbalanced data, AUC-PR is more informative than AUC-ROC because it answers how well does the model balance Precision and Recall where it matters.
+
+For instance, a model could have AUC-ROC = 0.98 (sounds amazing) and still have AUC-PR = 0.10 (not so great).
+
+That tells you: “Sure, the model ranks fraud higher than non-fraud most of the time, but when it comes to real-world detection, Precision at high Recall isn’t stellar.”
+
+This makes AUC-PR the go-to metric when fraud cases are rare and we care about catching as many as possible without overwhelming the system with false alarms.
 
 ## Detection Latency
 
