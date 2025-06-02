@@ -641,7 +641,7 @@ In highly imbalanced data, AUC-PR is more informative than AUC-ROC because it an
 
 For instance, a model could have AUC-ROC = 0.98 and still have AUC-PR = 0.10, which means that the model detects fraud higher than non-fraud most of the time, but when it comes to real-world detection, Precision at high Recall isn’t stellar.
 
-AUC-PR the go-to metric when fraud cases are rare and we care about catching as many as possible without overwhelming the system with false alarms.
+AUC-PR the go-to metric when fraud cases are rare, and we care about catching as many as possible without overwhelming the system with false alarms.
 
 ## Detection Latency
 
