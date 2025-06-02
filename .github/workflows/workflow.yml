@@ -20,6 +20,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
       - name: Building site
