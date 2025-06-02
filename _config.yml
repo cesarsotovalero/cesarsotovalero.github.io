@@ -266,6 +266,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll-toc
+  - jekyll-feed
 
 toc:
   ordered_list: true
