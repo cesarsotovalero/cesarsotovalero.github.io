@@ -649,8 +649,8 @@ Apart from classification detection latency is crucial for real-time systems.
 
 It comes in two flavors:
 
-1. **online decision latency:** How long it takes to score a single transaction and respond (which affects user experience and fraud blocking effectiveness)
-2. **time-to-detection for fraud patterns:** If an attack starts at time `T`, how long before the system detects and flags it.
+1. **Online decision latency:** How long it takes to score a single transaction and respond (which affects user experience and fraud blocking effectiveness)
+2. **Time-to-detection for fraud patterns:** If an attack starts at time `T`, how long before the system detects and flags it.
  
 The first is usually measured in milliseconds. 
 For example, a payment system might have an end-to-end latency budget of 200ms for authorization, out of which fraud check gets 20–30ms.

@@ -11,6 +11,7 @@ gem 'jekyll-responsive-image', '~> 1.4'
 gem 'jekyll-seo-tag', '~> 2.7', '>= 2.7.1'
 gem 'jekyll-toc'
 gem 'jekyll-mermaid', '~> 1.0'
+gem "jekyll-feed"
 
 # Non-jekyll gems
 gem 'posix-spawn', '~> 0.3.15'
