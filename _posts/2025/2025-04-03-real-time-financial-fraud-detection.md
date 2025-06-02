@@ -645,7 +645,22 @@ AUC-PR the go-to metric when fraud cases are rare, and we care about catching as
 
 ## Detection Latency
 
-Apart from classification metrics, **timeliness** is crucial. Detection latency can mean two things: (1) **online decision latency** – how long it takes to score a single transaction and respond (which affects user experience and fraud blocking effectiveness), and (2) **time-to-detection for fraud patterns** – if an attack starts at time T, how long before the system detects and flags it. The first is usually measured in milliseconds. For example, a payment system might have an end-to-end latency budget of 200ms for authorization, out of which fraud check gets 20–30ms. Modern systems often aim for **fraud model inference under \~50ms** or faster. Feedzai (a vendor) suggests looking at 99th percentile latency (e.g., 99% of transactions scored in <500ms), to ensure worst-case delays are bounded. The second definition (time to detect an emerging fraud modus operandi) is more about monitoring – e.g., *“did we catch the new fraud ring the first day it appeared, or did it go undetected for weeks?”*. This is harder to quantify, but important in evaluating adaptive systems. Real-time systems strive for **instant detection**, meaning as soon as the first few events of a fraud pattern occur, the system raises an alert. Metrics like **EEDD (Estimated Early Detection Delay)** are used in some research to measure this on sequence data, but not standard in industry. In summary, latency metrics ensure the model not only has good statistical performance but also operates quickly enough to be actionable.
+Apart from classification detection latency is crucial for real-time systems. 
+
+It comes in two flavors:
+
+1. **online decision latency:** How long it takes to score a single transaction and respond (which affects user experience and fraud blocking effectiveness)
+2. **time-to-detection for fraud patterns:** If an attack starts at time `T`, how long before the system detects and flags it.
+ 
+The first is usually measured in milliseconds. 
+For example, a payment system might have an end-to-end latency budget of 200ms for authorization, out of which fraud check gets 20–30ms.
+Modern systems often aim for fraud model inference under \~50ms or faster. Feedzai (a vendor) suggests looking at 99th percentile latency (e.g., 99% of transactions scored in <500ms), to ensure worst-case delays are bounded. 
+
+The second definition (time to detect an emerging fraud _modus operandi_) is more about monitoring.
+“did we catch the new fraud ring the first day it appeared, or did it go undetected for 
+weeks?”*. 
+This is harder to 
+quantify, but important in evaluating adaptive systems. Real-time systems strive for **instant detection**, meaning as soon as the first few events of a fraud pattern occur, the system raises an alert. Metrics like **EEDD (Estimated Early Detection Delay)** are used in some research to measure this on sequence data, but not standard in industry. In summary, latency metrics ensure the model not only has good statistical performance but also operates quickly enough to be actionable.
 
 ##  Summary
 
