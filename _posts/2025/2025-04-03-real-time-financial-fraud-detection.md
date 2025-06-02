@@ -635,15 +635,13 @@ AUC is threshold-independent: it summarizes performance across all thresholds, a
 
 ## AUC-PR (Area Under Precision-Recall Curve)
 
-AUC-PR plots Precision vs. Recall and focuses squarely on the minority class (fraud), so it tells us how well the model catches fraud while keeping false alarms low.
+AUC-PR plots Precision vs. Recall and focuses squarely on the minority class (fraud), so it tells us how well the model catches fraud while keeping false positive low.
 
-In highly imbalanced data, AUC-PR is more informative than AUC-ROC because it answers how well does the model balance Precision and Recall where it matters.
+In highly imbalanced data, AUC-PR is more informative than AUC-ROC because it answers how well the model balances Precision and Recall where it matters.
 
-For instance, a model could have AUC-ROC = 0.98 (sounds amazing) and still have AUC-PR = 0.10 (not so great).
+For instance, a model could have AUC-ROC = 0.98 and still have AUC-PR = 0.10, which means that the model detects fraud higher than non-fraud most of the time, but when it comes to real-world detection, Precision at high Recall isn’t stellar.
 
-That tells you: “Sure, the model ranks fraud higher than non-fraud most of the time, but when it comes to real-world detection, Precision at high Recall isn’t stellar.”
-
-This makes AUC-PR the go-to metric when fraud cases are rare and we care about catching as many as possible without overwhelming the system with false alarms.
+AUC-PR the go-to metric when fraud cases are rare and we care about catching as many as possible without overwhelming the system with false alarms.
 
 ## Detection Latency
 
