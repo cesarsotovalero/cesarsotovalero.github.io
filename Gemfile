@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Jekyll gems
-gem 'jekyll', '~> 3.9.0'
+gem 'jekyll', '4.3.2'
 gem 'jekyll-paginate', '~> 1.1'
 gem 'jekyll-sitemap', '~> 1.4'
 gem 'jekyll-tagging', '~> 1.1'
@@ -14,8 +14,8 @@ gem 'jekyll-mermaid', '~> 1.0'
 
 # Non-jekyll gems
 gem 'posix-spawn', '~> 0.3.15'
-gem 'github-pages', '~> 218'
-gem 'jemoji', '~> 0.12.0'
+# gem 'github-pages', '~> 232' # Removed as it conflicts with Jekyll 4.3.2
+gem 'jemoji', '0.13.0'
 gem 'webrick', '~> 1.7'
 gem 'fastimage', '>= 2.2.4'
 gem 'rmagick', '~> 4.2.2'
@@ -25,7 +25,7 @@ gem 'html-proofer', '~> 3.19', '>= 3.19.2'
 gem 'kramdown', '~> 2.3', '>= 2.3.1'
 gem 'liquid', '>= 4.0.3'
 gem 'mail', '~> 2.7', '>= 2.7.1'
-gem 'nokogiri', '~> 1.13.6'
+gem 'nokogiri', '~> 1.16.2'
 gem 'nuggets', '~> 1.6'
 gem 'pygments.rb', '~> 2.2'
 gem 'rainbow', '~> 3.0'
