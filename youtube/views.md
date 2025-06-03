@@ -10,7 +10,7 @@ published: true
 {% include subscribe-on-youtube.html %}
 
 <!-- Buttons for ordering YouTube videos -->
-<div class="list-filters" style="margin-top: 20px;">
+<div class="list-filters">
    <a href="/youtube/all.html" class="list-filter">By Year</a>
    <a href="/youtube/views.html" class="list-filter filter-selected">By Views</a>
    <a href="/youtube/likes.html" class="list-filter">By Likes</a>
@@ -19,7 +19,7 @@ published: true
 
 {% assign sorted_videos = site.data.youtube-videos | sort: "statistics.viewCount" | reverse %}
 
-<div id="full-tags-list">
+<div id="full-tags-list" style="margin-top: 20px;">
     <div class="post-list">
         {% for video in sorted_videos %}
         <div class="tag-entry">
