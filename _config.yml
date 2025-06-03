@@ -1,21 +1,22 @@
 name: cesarsotovalero.net
-url: "https://www.cesarsotovalero.net"
-title: "César Soto Valero"
-description: "César - Computer Scientist"
-keywords: "software engineering,research,java,developer,machine learning,software technology,phd student"
+url: 'https://www.cesarsotovalero.net'
+baseurl: ''
+title: 'César Soto Valero'
+description: 'César - Computer Scientist'
+keywords: 'software engineering,research,java,developer,machine learning,software technology,phd student'
 logo: https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024.jpg
 
 navbar-links:
-  Blog: "blog"
-  LinkedIn: "linkedin"
-  YouTube: "youtube"
-  Podcasts: "podcasts"
-  Talks: "talks"
-  About: "about-me"
+  Blog: 'blog'
+  LinkedIn: 'linkedin'
+  YouTube: 'youtube'
+  Podcasts: 'podcasts'
+  Talks: 'talks'
+  About: 'about-me'
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/pages/cesar/avatar-icon-2024.jpg"
+avatar: '/img/pages/cesar/avatar-icon-2024.jpg'
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -33,11 +34,11 @@ avatar: "/img/pages/cesar/avatar-icon-2024.jpg"
 # page-col: "#FF0000"
 # page-img: "/img/bgimage.png"
 
-navbar-img: "/img/pages/all/bg.png"
+navbar-img: '/img/pages/all/bg.png'
 # footer-col: "blue"
-footer-img: "/img/pages/all/bg.png"
+footer-img: '/img/pages/all/bg.png'
 # page-col: "#FF0000"
-page-img: "/img/pages/all/noise.png"
+page-img: '/img/pages/all/noise.png'
 
 # --- Footer options --- #
 
@@ -103,7 +104,7 @@ social:
 # --- Misc --- #
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-107061705-1"
+google_analytics: 'UA-107061705-1'
 
 # Google Tag Manager ID
 #gtm: ""
@@ -117,13 +118,13 @@ excerpt_length: 50
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
-title-separator: ""
+title-separator: ''
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
 encoding: utf-8
-timezone: "America/Vancouver"
+timezone: 'America/Vancouver'
 markdown: kramdown
 kramdown:
   input: GFM
@@ -140,28 +141,29 @@ excerpt_separator: <!--more-->
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
+  - scope:
+      path: ''
+      type: 'posts'
     values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
+      layout: 'post'
+      comments: true
+      social-share: true
       carbonads: true
       before-content: [carbonads.html]
-  -
-    scope:
-      path: "" # all files
+  - scope:
+      path: ''
     values:
-      layout: "page"
+      layout: 'page'
       show-avatar: true
       carbonads: true
       before-content: [carbonads.html]
+  - scope:
+      path: 'assets/images'
+    values:
+      image: true
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
 link-tags: false
-
 
 # This files will be included in the gh-pages
 include:
@@ -169,6 +171,8 @@ include:
   - .well-known
   - yandex_640034aaee9b8f83.html
   - google974bdea481135366.html
+  - assets
+  - assets/images
 
 # Exclude these files from production site
 exclude:
@@ -191,6 +195,10 @@ exclude:
   - .ruby-version
   - vendor
 
+# Static files
+keep_files:
+  - assets/images
+
 # prose.io config
 prose:
   rooturl: '_posts'
@@ -207,87 +215,74 @@ prose:
     - /js
   metadata:
     _posts:
-      - name: "layout"
+      - name: 'layout'
         field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
+          element: 'hidden'
+          value: 'post'
+      - name: 'title'
         field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
+          element: 'text'
+          label: 'Post title'
+          placeholder: 'Title'
           alterable: true
-      - name: "subtitle"
+      - name: 'subtitle'
         field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
+          element: 'textarea'
+          label: 'Subtitle'
+          placeholder: 'A description of your post.'
           alterable: true
-      - name: "date"
+      - name: 'date'
         field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
+          element: 'text'
+          label: 'Date'
+          help: 'Enter date of post.'
+          placeholder: 'yyyy-mm-dd'
           alterable: true
-      - name: "image"
+      - name: 'image'
         field:
-          element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
+          element: 'text'
+          label: 'Image'
+          help: 'Add a thumbnail image to your post.'
+          placeholder: 'Thumbnail'
           alterable: true
-      - name: "published"
+      - name: 'published'
         field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+          element: 'checkbox'
+          label: 'Publish'
+          help: 'Check to publish post, uncheck to hide.'
 
-gem:
+# Jekyll plugins
+plugins:
+  - jekyll-feed
   - jekyll-paginate
   - jemoji
   - jekyll-sitemap
   - jekyll-gist
-  - jekyll-sitemap
-  - jekyll-plantuml # https://plantuml.com
-  - jekyll-redirect-from
-  - jekyll-bits
-  - jekyll-feed
-  - jekyll-tagging
   - jekyll-responsive-image
   - jekyll-seo-tag
-  - jekyll-mermaid
-
-plugins:
-  - jemoji
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-responsive-image
-  - jekyll-seo-tag
-  - jekyll-last-modified-at
   - jekyll-toc
-  - jekyll-feed
+  - jekyll-mermaid
+  - jekyll-bits
+  - jekyll-plantuml
+  # - jekyll-tagging
+  - jekyll-last-modified-at
 
+# Plugin configurations
 toc:
   ordered_list: true
-  min_level: 1 # default: 1
-  max_level: 1 # default: 6
+  min_level: 1
+  max_level: 1
 
-# Optional. The default date format, used if none is specified in the tag.
 last-modified-at:
   date-format: '%d-%b-%y'
 
-# jekyll-feed
 feed:
   title: cesarsotovalero.net
   subtitle: César - Computer Scientist
   path: feed.xml
+  posts_limit: 20
+  excerpt_only: false
 
-sass:
-  style: compressed
-  deploy_style: compressed
-
-# jekyll-responsive-image @see https://github.com/wildlyinaccurate/jekyll-responsive-image#templates
 responsive_image:
   template: _includes/picture-responsive.html
   default_quality: 80
@@ -299,7 +294,6 @@ responsive_image:
     - width: 1600
     - width: 1920
   strip: true
-
 # To check for broken external links, run the following in the CLI:
 # gem install html-proofer
 # htmlproofer ./_site --only-4xx --check-external-hash --url-ignore '/^\/(?!\/)/'
