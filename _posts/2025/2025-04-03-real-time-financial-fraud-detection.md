@@ -694,12 +694,12 @@ This section presents an overview of common deployment patterns using Google Clo
 
 Fraud detection starts with ingesting a continuous stream of transactions from payment processors, banking systems, or point-of-sale devices.
 
-In GCP, Pub/Sub acts as the primary streaming backbone, capturing and buffering transaction events in real time.
+In GCP, Pub/Sub acts as the primary streaming backbone, capturing and buffering transaction events in real-time.
 This works much like AWS Kinesis or Azure Event Hubs, but with Google’s global network and seamless scaling.
 Pub/Sub guarantees message durability, ordering (with ordering keys), and scales automatically to handle spikes.
 
-Some systems also use HTTP APIs or queues for ingestion, but Pub/Sub’s scalability and integration with Dataflow (Apache Beam) make it ideal for high-volume, low-latency scenarios.
-
+Some systems also use HTTP APIs or queues for ingestion.
+However, Pub/Sub’s scalability and integration with Dataflow (Apache Beam) make it ideal for high-volume, low-latency scenarios.
 
 ## Real-Time Feature Computation
 
@@ -709,24 +709,23 @@ GCP’s Bigtable or Firestore (for document-style lookups) provide ultra-fast, h
 
 Imagine a fraud detection system where a Cloud Function or Dataflow pipeline enriches each transaction event by querying Bigtable for recent account activity, reducing latency to milliseconds.
 
-For caching and in-memory lookup, Memorystore (Redis) can be used, providing [sub-millisecond access for high-throughput enrichment](https://redis.io/solutions/fraud-detection/).
+Memorystore (Redis) can be used for caching and in-memory lookup, providing [sub-millisecond access for high-throughput enrichment](https://redis.io/solutions/fraud-detection/).
 
-Advanced GCP users might implement a custom feature store using Bigtable + Dataflow + Pub/Sub to precompute and update rolling aggregates.
+Advanced GCP users might implement a custom feature store using Bigtable, Dataflow, and Pub/Sub to precompute and update rolling aggregates.
 
 ## Model Serving (Inference)
 
-At the heart is the deployed model that scores each transaction. GCP’s Vertex AI Prediction service offers online endpoints with autoscaling, low-latency serving, and even GPU acceleration.
+GCP’s Vertex AI Prediction service offers online endpoints with autoscaling, low-latency serving, and even GPU acceleration.
 
-* You train your model (say, using XGBoost or TensorFlow) and deploy it as a Vertex AI model endpoint.
+* Model is trained using XGBoost or TensorFlow and deployed as a Vertex AI model endpoint.
 * It exposes a REST API (or gRPC) to score transactions in real time.
 * For ultra-low-latency needs, Cloud Functions can serve embedded lightweight models (although this works best for small models like decision trees or logistic regression).
 
 [GCP’s Fraud Detection Blueprint](https://cloud.google.com/blog/products/databases/fraud-detection-with-cloud-bigtable/) combines Vertex AI with Dataflow and Bigtable to create a reference architecture that can process fraud decisions at scale and with sub-second response times.
 
-
 ## Streaming Orchestration and Decision Logic
 
-After scoring, the system needs orchestration to determine actions.
+After scoring, the fraud detection system needs orchestration to determine actions.
 
 GCP offers Dataflow (Apache Beam) for stream processing, perfect for scoring events inline and routing them based on the model’s output.
 
@@ -737,7 +736,7 @@ Alternatively, Workflows and Cloud Functions can orchestrate more complex, condi
 
 ## Alerts, Notifications, and Downstream Actions
 
-When fraud is detected, you need immediate action.
+When fraud is detected, immediate action is needed:
 
 * Send alerts via Pub/Sub topics to downstream systems.
 * Trigger Cloud Functions to initiate case creation, notify analysts, or invoke an authorization block.
@@ -760,16 +759,15 @@ Here’s a GCP-native fraud detection pipeline:
 4. BigQuery stores logs for monitoring, drift detection, and analytics.
 5. Cloud Monitoring and Error Reporting track system health and model performance, alerting teams to anomalies in real time.
 
-
-### Microservices and APIs
+## Microservices and APIs
 
 Some systems favor microservices over streaming.
 
-Here, a dedicated Fraud Detection Service (perhaps running on GKE (Kubernetes)) handles synchronous feature computation (with Bigtable or Memorystore), invokes the Vertex AI model, applies rules, and returns a decision—all within the transaction’s authorization flow.
+Here, a dedicated Fraud Detection Service running on GKE (Kubernetes) handles synchronous feature computation (with Bigtable or Memorystore), invokes the Vertex AI model, applies rules, and returns a decision—all within the transaction’s authorization flow.
 
 This design aligns with traditional banking architectures where fraud decisions happen inline.
 
-### Monitoring and Logging
+## Monitoring and Logging
 
 GCP’s Cloud Monitoring and Cloud Logging track:
 
@@ -777,23 +775,32 @@ GCP’s Cloud Monitoring and Cloud Logging track:
 * Error rates and system health.
 * Model score distributions (for detecting drift or attacks).
 
-In fraud detection, monitoring model drift is non-negotiable—if fraud rates drop or spike unexpectedly, your system might be under attack or outdated.
+In fraud detection, monitoring model drift is non-negotiable.
+If fraud rates drop or spike unexpectedly, the system might be under attack or outdated.
 
-### Continuous Updates
+## Continuous Updates
 
 Retraining and redeployment keep the model sharp.
 
-* Vertex AI Pipelines orchestrate training on fresh data (e.g., daily, weekly) and deploy updated models if performance checks out.
+* Vertex AI Pipelines orchestrate training on fresh data (e.g., daily or weekly) and deploy updated models if performance checks out.
 * Blue/green deployment or A/B testing ensures safe rollouts.
 * Infrastructure-as-code (with Terraform or Deployment Manager) automates the pipeline, minimizing manual error.
 
-Retraining frequency depends on fraud velocity—fast-evolving threats may require weekly or even daily retraining.
+Retraining frequency depends on fraud velocity.
+Fast-evolving threats may require weekly or even daily retraining.
 
 ## Summary
 
 Cloud-native architectures provide the building blocks to operationalize fraud detection models at scale. 
-Key characteristics of a robust deployment are: low latency data flow (streaming or fast APIs), scalability to handle spikes (serverless or auto-scaling services), reliability (redundant and monitored), and the ability to quickly update models and rules as fraud patterns change.
-By using managed services (streams, functions, hosted ML models), teams can focus on the fraud logic while the cloud handles the heavy lifting of scaling and throughput. 
+
+Key characteristics of a robust deployment are: 
+
+- Low latency data flow (streaming or fast APIs).
+- Scalability to handle spikes (serverless or auto-scaling services).
+- Reliability (continuous monitoring).
+- The ability to quickly update models and rules as fraud patterns change.
+
+By using managed services (streams, functions, hosted ML models), teams can focus on the fraud logic while the cloud handles the heavy lifting of scaling and throughput.
 
 Many modern fraud platforms ([Feedzai](https://www.feedzai.com/), [Featurespace](https://www.featurespace.com/), etc.) are built with these principles, often on top of the client’s cloud of choice.
 
