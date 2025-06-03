@@ -383,7 +383,7 @@ Representative examples of graph-based fraud detection:
 Overall, graph-based methods, especially GNNs, represent a cutting-edge approach that can significantly enhance fraud detection by considering relational data. 
 As tooling and infrastructure improve (graph databases, streaming graph processing), we expect to see more real-time GNNs deployments for fraud in the coming years.
 
-# Transformer-Based and Foundation Models
+# Transformers and Foundation Models
 
 ## Transformers 
 
@@ -645,29 +645,42 @@ AUC-PR the go-to metric when fraud cases are rare, and we care about catching as
 
 ## Detection Latency
 
-Apart from classification detection latency is crucial for real-time systems. 
+Latency is the time it takes for the system to process a transaction and respond, and it is crucial for real-time systems.
+These metrics ensure the model not only has good statistical performance but also operates quickly enough to be actionable.
 
-It comes in two flavors:
+It commonly measured in two ways:
 
-1. **Online decision latency:** How long it takes to score a single transaction and respond (which affects user experience and fraud blocking effectiveness)
-2. **Time-to-detection for fraud patterns:** If an attack starts at time `T`, how long before the system detects and flags it.
+1. **Online decision latency (ODL):** How long it takes to score a single transaction and respond (which affects user experience and fraud blocking effectiveness)
+2. **Time-to-detection for fraud patterns (TTD):** If an attack starts at time `T`, how long before the system detects and flags it.
  
-The first is usually measured in milliseconds. 
+ODL is usually measured in milliseconds. 
 For example, a payment system might have an end-to-end latency budget of 200ms for authorization, out of which fraud check gets 20–30ms.
-Modern systems often aim for fraud model inference under \~50ms or faster. Feedzai (a vendor) suggests looking at 99th percentile latency (e.g., 99% of transactions scored in <500ms), to ensure worst-case delays are bounded. 
+Modern systems often aim for fraud model inference under \~50ms or faster.
+Feedzai (a vendor) suggests looking at 99th percentile latency (e.g., 99% of transactions scored in <500ms), to ensure worst-case delays are bounded. 
 
-The second definition (time to detect an emerging fraud _modus operandi_) is more about monitoring.
-“did we catch the new fraud ring the first day it appeared, or did it go undetected for 
-weeks?”*. 
-This is harder to 
-quantify, but important in evaluating adaptive systems. Real-time systems strive for **instant detection**, meaning as soon as the first few events of a fraud pattern occur, the system raises an alert. Metrics like **EEDD (Estimated Early Detection Delay)** are used in some research to measure this on sequence data, but not standard in industry. In summary, latency metrics ensure the model not only has good statistical performance but also operates quickly enough to be actionable.
+TTD is more about monitoring and measuring the resilience of the system to detect an emerging fraud _modus operandi_.
+For example: “did we catch the new fraud ring the first day it appeared, or did it go undetected for weeks?”.
+This is harder to quantify, but important in evaluating adaptive systems.
+
+Real-time systems strive for instant detection, meaning as soon as the first few events of a fraud pattern occur, the system raises an alert.
 
 ##  Summary
 
-In practice, evaluation of a fraud model during development will involve: looking at the **ROC curve and PR curve**, reporting AUC, and then choosing one or two operating points to report Precision/Recall/F1. Often a **confusion matrix** at a chosen threshold is given to show how many alerts per day that yields (false positives) vs how many frauds caught. The threshold might be chosen to meet a business constraint (like a fixed review capacity or a false positive rate limit). Additionally, **business metrics** may be used: e.g., dollars of fraud caught (and dollars of false positive customer sales lost), which is essentially weighing each transaction by its amount. If a model catches more high-value fraud, that’s more impactful than catching many low-value frauds.
+In practice, evaluating a fraud model during development involves looking at the AUC-ROC and AUC-PR curves and then choosing one or two operating points to report Precision, Recall, F1, etc.
+Often a confusion matrix at a chosen threshold is reported to the business to show how many alerts per day that yields (false positives) vs. how many frauds are caught.
+The threshold might be chosen to meet a business constraint, such as a fixed review capacity or a false positive rate limit.
 
-Finally, beyond metrics on historical data, it’s important to do **backtesting or sandbox testing**: run the model on a period of historical transactions day by day, and simulate the decisions, to see how it would have performed (how quickly fraud would be stopped, how many genuine transactions would be falsely declined, etc.). This can reveal things like adaptation of fraudsters (did fraud drop after some were caught? Did they try a different strategy?). In an online evaluation, one might do an **A/B test** with a new model vs old model to directly measure improvement in fraud dollars prevented and false positive rate in real operations. But offline metrics like Precision/Recall and AUC are the starting point to qualify a model for deployment.
+Additionally, specific business metrics may be used.
+For example, dollars of fraud caught and dollars of false positive customer sales lost, which is essentially weighing each transaction by its amount.
+If a model catches more high-value fraud, that’s more impactful than catching many low-value frauds.
 
+Finally, beyond metrics on historical data, it’s important to do [backtesting](https://en.wikipedia.org/wiki/Backtesting) or [sandbox testing](https://en.wikipedia.org/wiki/Sandbox_(software_development)).
+This means running the model on a period of historical transactions day by day, and simulating the decisions to see how it would have performed (how quickly fraud would be stopped, how many genuine transactions would be falsely declined, etc.).
+This can reveal the capacity of the model to adapt to fraudsters or to detect data drift: Did fraud drop after some were caught? Did they try a different strategy?
+
+In an online evaluation, one might do an A/B test with a new model vs. old model to directly measure improvement.
+For example, comparison based on money loss prevented and false positive rate with real transactions.
+In any scenario, offline metrics like Precision, Recall, and AUC are the starting point to qualify a model for deployment.
 
 # Deployment Patters
 

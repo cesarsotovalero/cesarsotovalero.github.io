@@ -4,9 +4,10 @@
 
 /* --- General --- */
 
-html, body {
+html,
+body {
   transition: background-color 0.3s ease,
-  color 0.3s ease;
+    color 0.3s ease;
 }
 
 html {
@@ -64,7 +65,8 @@ p a {
   -webkit-text-decoration-color: var(--link-decoration-color);
 }
 
-.blog-post div[role=main], article[role=main] > p:first-of-type:first-child::first-letter {
+.blog-post div[role=main],
+article[role=main]>p:first-of-type:first-child::first-letter {
   font-size: 72px;
   line-height: 1;
   font-family: "Century Supra C3";
@@ -78,7 +80,12 @@ p a {
   margin-bottom: 26px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Concourse T6 Tab", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
@@ -114,7 +121,9 @@ h1 {
 }
 
 @media only screen and (max-width: 450px) {
-  .h1, h1 {
+
+  .h1,
+  h1 {
     margin-top: 25px;
     font-size: 28px;
   }
@@ -147,7 +156,9 @@ h2 {
 
 
 @media only screen and (max-width: 450px) {
-  .h2, h2 {
+
+  .h2,
+  h2 {
     margin-top: 20px;
     font-size: 22px;
   }
@@ -173,6 +184,16 @@ h3 {
 }
 
 
+@media only screen and (max-width: 450px) {
+
+  .h3,
+  h3 {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+}
+
 a {
   text-decoration: underline;
   text-underline-offset: 6px;
@@ -182,7 +203,8 @@ a {
   -webkit-text-decoration-color: var(--link-decoration-color);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: var(--main-text-color);
   text-decoration-thickness: 0.1em;
   text-decoration-color: var(--link-decoration-color);
@@ -197,7 +219,8 @@ a:hover, a:focus {
   }
 }
 
-header, footer {
+header,
+footer {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
@@ -225,7 +248,8 @@ details {
 }
 
 details[open] article {
-  animation: animateUp 1s linear forwards;;
+  animation: animateUp 1s linear forwards;
+  ;
 }
 
 @keyframes animateUp {
@@ -233,6 +257,7 @@ details[open] article {
     opacity: 0;
     transform: translatey(100%);
   }
+
   100% {
     opacity: 1;
     transform: translatey(0);
@@ -256,11 +281,11 @@ summary::after {
   transition: 0.2s;
 }
 
-details[open] > summary {
+details[open]>summary {
   border-bottom: 2px solid #fff9f1;
 }
 
-details[open] > summary::after {
+details[open]>summary::after {
   transform: rotate(-180deg);
 }
 
@@ -393,12 +418,14 @@ img {
 
 /* --- Icons beside links --- */
 
-a[href^="https://youtu.be/"], a[href^="https://mirrors.dotsrc.org/fosdem/"] {
+a[href^="https://youtu.be/"],
+a[href^="https://mirrors.dotsrc.org/fosdem/"] {
   background: transparent url(/img/icons/youtube-play20px.svg) no-repeat center left;
   padding-left: 22px;
 }
 
-a[href^="https://amzn.to/"], a[href^="http://amzn.to/"] {
+a[href^="https://amzn.to/"],
+a[href^="http://amzn.to/"] {
   background: transparent url(/img/icons/amazon20px.svg) no-repeat center right;
   padding-right: 22px;
 }
@@ -528,7 +555,8 @@ a[href$=".pptx"] {
   -webkit-transition: padding 1s ease-in-out;
   -moz-transition: padding 1s ease-in-out;
   transition: padding 1s ease-in-out;
-  transition: top 0.5s; /* Transition effect when sliding down (and up) */
+  transition: top 0.5s;
+  /* Transition effect when sliding down (and up) */
   /*font-weight: 700;*/
   /*margin-right: 7px;*/
 }
@@ -606,7 +634,8 @@ a[href$=".pptx"] {
 
 
 .navbar.navbar-default.navbar-fixed-top.navbar-custom {
-  transition: top 1s ease-in-out; /* Transition effect when sliding down (and up) */
+  transition: top 1s ease-in-out;
+  /* Transition effect when sliding down (and up) */
   padding: 0;
   margin: 0;
   float: none;
@@ -641,7 +670,15 @@ a[href$=".pptx"] {
 
 @media only screen and (max-width: 450px) {
   .navbar {
-    float: right;
+    /* float: right; */
+    width: 100%;
+    text-align: center;
+    /* To center inline-block items in .navbar-custom ul */
+  }
+
+  .navbar-custom .container-fluid ul {
+    padding-left: 0;
+    /* Remove default ul padding for better centering */
   }
 }
 
@@ -873,7 +910,8 @@ a[href$=".pptx"] {
 .highlighted-text {
   position: relative;
   color: var(--main-text-color);
-  text-decoration: none; /* Remove the default underline */
+  text-decoration: none;
+  /* Remove the default underline */
 }
 
 .highlighted-text::before {
@@ -882,9 +920,12 @@ a[href$=".pptx"] {
   left: 0;
   right: 0;
   color: rgba(143, 150, 206, 0.5);
-  bottom: -0.2em; /* Adjust this to change the position of the underline */
-  border-bottom: 0.5em solid; /* This is your underline */
-  transform: rotate(-5deg); /* Adjust the angle for the slant */
+  bottom: -0.2em;
+  /* Adjust this to change the position of the underline */
+  border-bottom: 0.5em solid;
+  /* This is your underline */
+  transform: rotate(-5deg);
+  /* Adjust the angle for the slant */
   transform-origin: left bottom;
 }
 
@@ -1017,9 +1058,15 @@ a[href$=".pptx"] {
   }
 }
 
-.fa-github, .fa-stack-overflow, .ai-researchgate,
-.ai-google-scholar, .ai-dblp, .ai-orcid, .fa-youtube,
-.fa-envelope, .i-doi {
+.fa-github,
+.fa-stack-overflow,
+.ai-researchgate,
+.ai-google-scholar,
+.ai-dblp,
+.ai-orcid,
+.fa-youtube,
+.fa-envelope,
+.i-doi {
   color: var(--main-text-color);
 }
 
@@ -1063,7 +1110,8 @@ footer .list-inline {
   -webkit-transition: padding 1s ease-in-out;
   -moz-transition: padding 1s ease-in-out;
   transition: padding 1s ease-in-out;
-  transition: top 0.75s; /* Transition effect when sliding down (and up) */
+  transition: top 0.75s;
+  /* Transition effect when sliding down (and up) */
 }
 
 .icon-bar {
@@ -1226,6 +1274,7 @@ p.post-meta {
 }
 
 @media only screen and (max-width: 450px) {
+
   .post-preview .post-meta,
   .post-heading .post-meta {
     font-size: 16px;
@@ -1497,7 +1546,8 @@ p.post-meta {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-top: 10px; /* The small navbar is 50px tall + 1px border */
+  margin-top: 10px;
+  /* The small navbar is 50px tall + 1px border */
   margin-bottom: 10px;
 }
 
@@ -1555,6 +1605,7 @@ p.post-meta {
 }
 
 @media only screen and (max-width: 768px) {
+
   .intro-header .page-heading .page-subheading,
   .intro-header .post-heading .post-subheading {
     font-size: 22px;
@@ -1598,7 +1649,8 @@ p.post-meta {
   }
 
   .intro-header.big-img {
-    margin-top: 10px; /* Full navbar is small navbar + 20px padding on each side when expanded */
+    margin-top: 10px;
+    /* Full navbar is small navbar + 20px padding on each side when expanded */
   }
 
   .intro-header.big-img .page-heading,
@@ -1671,14 +1723,16 @@ p.post-meta {
 
 /* Checkbox */
 .task-list {
-  list-style-type: none; /* Remove default bullets */
+  list-style-type: none;
+  /* Remove default bullets */
   padding: 0;
   margin-bottom: 26px;
 }
 
 .task-list-item {
   display: flex;
-  align-items: flex-start; /* Align items at the top */
+  align-items: flex-start;
+  /* Align items at the top */
   margin-bottom: 10px;
 }
 
@@ -1692,7 +1746,8 @@ p.post-meta {
   border-radius: 4px;
   position: relative;
   /*cursor: not-allowed;*/
-  flex-shrink: 0; /* Prevent checkbox from shrinking */
+  flex-shrink: 0;
+  /* Prevent checkbox from shrinking */
 }
 
 .task-list-item-checkbox:disabled {
@@ -1709,7 +1764,8 @@ p.post-meta {
 }
 
 .task-list-item-checkbox:checked::before {
-  content: '\2713'; /* Unicode for checkmark */
+  content: '\2713';
+  /* Unicode for checkmark */
   position: absolute;
   top: 0;
   left: 4px;
@@ -1778,17 +1834,17 @@ table thead {
 
 .next a {
   text-decoration: none;
-!important;
+  !important;
 }
 
 .previous a {
   text-decoration: none;
-!important;
+  !important;
 }
 
 .see-all a {
   text-decoration: none;
-!important;
+  !important;
 }
 
 table tr {
@@ -1846,7 +1902,7 @@ table {
 }
 
 
-pre > code > table {
+pre>code>table {
   margin-bottom: 0px;
 }
 
@@ -1894,7 +1950,7 @@ code {
   border-radius: 1px;
   text-decoration: none;
   font-weight: 400;
-!important;
+  !important;
 }
 
 @media screen and (max-width: 450px) {
@@ -1916,23 +1972,30 @@ code pre {
   background-color: var(--main-background-color);
 }
 
-code a:hover, a:focus {
+code a:hover,
+a:focus {
   color: var(--main-text-color);
 }
 
-pre.highlight, .highlight > pre, td.code pre {
+pre.highlight,
+.highlight>pre,
+td.code pre {
   background-size: 3em 3em;
   background: var(--main-background-color);
 }
 
-code table, code table td, code table th, code table tbody, code table tr,
+code table,
+code table td,
+code table th,
+code table tbody,
+code table tr,
 td.gutter pre {
   padding: 0;
   border: none;
   background-color: var(--main-background-color);
 }
 
-.highlight > pre {
+.highlight>pre {
   padding: 0;
 }
 
@@ -2007,11 +2070,13 @@ td.gutter {
 
 /* Fix table border github gist snippets */
 
-.gist, .gist-file table tr {
+.gist,
+.gist-file table tr {
   border: unset;
 }
 
-.gist, .gist-file table tr td {
+.gist,
+.gist-file table tr td {
   border: unset;
 }
 
@@ -2072,7 +2137,7 @@ input.gsc-input,
 
 /* Bootstrap Accordion  */
 
-.panel-default > .panel-heading {
+.panel-default>.panel-heading {
   color: #333;
   background-color: #fff;
   border-color: #e4e5e7;
@@ -2083,12 +2148,12 @@ input.gsc-input,
   user-select: none;
 }
 
-.panel-default > .panel-heading a {
+.panel-default>.panel-heading a {
   display: block;
   padding: 10px 15px;
 }
 
-.panel-default > .panel-heading a:after {
+.panel-default>.panel-heading a:after {
   content: "";
   position: relative;
   top: 1px;
@@ -2104,17 +2169,17 @@ input.gsc-input,
   -webkit-transition: -webkit-transform .25s linear;
 }
 
-.panel-default > .panel-heading a[aria-expanded="true"] {
+.panel-default>.panel-heading a[aria-expanded="true"] {
   background-color: #eee;
 }
 
-.panel-default > .panel-heading a[aria-expanded="true"]:after {
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
   content: "\2212";
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.panel-default > .panel-heading a[aria-expanded="false"]:after {
+.panel-default>.panel-heading a[aria-expanded="false"]:after {
   content: "\002b";
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -2227,8 +2292,10 @@ input.gsc-input,
 
 /* Set the size of the div element that contains the map */
 #map {
-  height: 400px; /* The height is 400 pixels */
-  width: 100%; /* The width is the width of the web page */
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
 
 .general-button {
@@ -2346,7 +2413,8 @@ ol li p {
   font-feature-settings: "kern";
 }
 
-ol, ul {
+ol,
+ul {
   margin-top: 0;
   margin-bottom: 26px;
 }
@@ -2567,7 +2635,8 @@ ol, ul {
 @media only screen and (max-width: 450px) {
   .black-icons li {
     padding-right: 8px;
-    font-size: 8px; /* Adjust the size as needed */
+    font-size: 8px;
+    /* Adjust the size as needed */
   }
 
   #list-of-social-icons {
@@ -2621,7 +2690,8 @@ ol, ul {
 .container-youtube {
   border: 2px solid black;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
+  /* 16:9 */
   height: 0;
 }
 
@@ -2658,7 +2728,8 @@ ol, ul {
 
 .youtube .box img {
   width: 100%;
-  display: block; /* Ensure the image takes up the full width and has no extra space below (inline-block elements have space below them) */
+  display: block;
+  /* Ensure the image takes up the full width and has no extra space below (inline-block elements have space below them) */
 }
 
 .youtube .box .play {
@@ -2670,71 +2741,98 @@ ol, ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0); /* initial transparent background */
+  background-color: rgba(0, 0, 0, 0);
+  /* initial transparent background */
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .youtube .box:hover .play {
-  background-color: rgba(4, 39, 66, 0.6); /* darker background on hover */
-  transform: scale(1.05); /* subtle zoom effect */
+  background-color: rgba(4, 39, 66, 0.6);
+  /* darker background on hover */
+  transform: scale(1.05);
+  /* subtle zoom effect */
 }
 
 .youtube .box:active .play {
-  transform: scale(0.95); /* slight shrink effect to simulate a click */
-  background-color: rgba(0, 0, 0, 0.7); /* slightly darker than hover effect */
+  transform: scale(0.95);
+  /* slight shrink effect to simulate a click */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* slightly darker than hover effect */
 }
 
 .youtube .box .play i::before {
-  font-size: 48px; /* 3em assuming 1em = 16px */
+  font-size: 48px;
+  /* 3em assuming 1em = 16px */
   line-height: 1em;
 }
 
 .youtube-logo {
-  max-width: 30%; /* Example size, adjust as needed */
-  height: auto; /* Maintain aspect ratio */
-  opacity: 0.75; /* Set the opacity to 50% */
-  transition: opacity 0.3s ease; /* Smooth transition for opacity changes */
+  max-width: 30%;
+  /* Example size, adjust as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+  opacity: 0.75;
+  /* Set the opacity to 50% */
+  transition: opacity 0.3s ease;
+  /* Smooth transition for opacity changes */
 }
 
 /* Hover state with full opacity */
 .youtube .box:hover .youtube-logo {
-  opacity: 1; /* Full opacity on hover */
+  opacity: 1;
+  /* Full opacity on hover */
 }
 
 @media only screen and (max-width: 650px) {
   .youtube {
-    font-size: 0.55em; /* Smaller text for smaller screens */
-    width: 40%; /* Increased width for better layout on small screens */
-    border-left: 2px solid var(--link-decoration-color); /* Thinner border */
-    padding-left: 8px; /* Adjusted padding */
-    margin: 0.5em 0 0.5em 0.5em !important; /* Adjusted margin */
+    font-size: 0.55em;
+    /* Smaller text for smaller screens */
+    width: 40%;
+    /* Increased width for better layout on small screens */
+    border-left: 2px solid var(--link-decoration-color);
+    /* Thinner border */
+    padding-left: 8px;
+    /* Adjusted padding */
+    margin: 0.5em 0 0.5em 0.5em !important;
+    /* Adjusted margin */
     float: right;
-    line-height: 1.1em; /* Adjusted line height for better readability */
+    line-height: 1.1em;
+    /* Adjusted line height for better readability */
   }
 
   .youtube-logo {
-    max-width: 30%; /* Example size, adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 30%;
+    /* Example size, adjust as needed */
+    height: auto;
+    /* Maintain aspect ratio */
   }
 
   .youtube .box .play i::before {
-    font-size: 24px; /* Reduced size for smaller icons on small screens */
+    font-size: 24px;
+    /* Reduced size for smaller icons on small screens */
   }
 }
 
 @media only screen and (max-width: 1150px) {
   .youtube {
-    font-size: 0.65em; /* Slightly larger font size than on very small screens */
-    width: 40%; /* Consistent width for better layout */
-    border-left: 2px solid var(--link-decoration-color); /* Consistent thinner border */
-    padding-left: 10px; /* Slightly increased padding */
-    margin: 1em 0 1em 1em !important; /* Adjusted margin */
+    font-size: 0.65em;
+    /* Slightly larger font size than on very small screens */
+    width: 40%;
+    /* Consistent width for better layout */
+    border-left: 2px solid var(--link-decoration-color);
+    /* Consistent thinner border */
+    padding-left: 10px;
+    /* Slightly increased padding */
+    margin: 1em 0 1em 1em !important;
+    /* Adjusted margin */
     float: right;
-    line-height: 1.1em; /* Maintained adjusted line height */
+    line-height: 1.1em;
+    /* Maintained adjusted line height */
   }
 
   .youtube .box .play i::before {
-    font-size: 36px; /* Adjusted icon size for better visibility */
+    font-size: 36px;
+    /* Adjusted icon size for better visibility */
   }
 }
 
@@ -3136,8 +3234,9 @@ a.btn {
 }
 
 /* 3. ScrollSpy active styles (see JS tab for activation) */
-#toc li.active > a {
-  color: var(--main-text-color);;
+#toc li.active>a {
+  color: var(--main-text-color);
+  ;
   font-family: "Concourse T4";
   /*font-family: "Century Supra C4", Helvetica, Arial, sans-serif;*/
   font-weight: bold;
@@ -3150,7 +3249,8 @@ a.btn {
   display: block;
   padding: .125rem 0;
   color: #ccc;
-  transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+  transition: all 50ms ease-in-out;
+  /* 💡 This small transition makes setting of the active state smooth */
 }
 
 #toc a:hover,
@@ -3161,7 +3261,7 @@ a.btn {
 /* LaTeX */
 @media only screen and (max-width: 450px) {
   mjx-math {
-    font-size: 90%;
+    font-size: 50%;
   }
 }
 
@@ -3173,18 +3273,6 @@ a.btn {
 .mapouter {
   margin-bottom: 20px;
 }
-
-/*#toc {*/
-/*  width: calc(50% - 385px);*/
-/*  left: -500px;*/
-/*  display: none;*/
-/*  position: sticky;*/
-/*  top: 100px;*/
-/*  height: 0px;*/
-/*  opacity: 0;*/
-/*  visibility: hidden;*/
-/*  transition: all 0.1s ease 0s;*/
-/*}*/
 
 
 /* Hide the header */
@@ -3285,7 +3373,7 @@ a.btn {
   padding-inline-start: 1.5rem;
 }
 
-#related-posts ul > li::before {
+#related-posts ul>li::before {
   background: #c2c9d4;
   width: 5px;
   height: 5px;
@@ -3340,7 +3428,8 @@ a.btn {
 
 /* Horizontal divider */
 hr {
-  position: relative; /* Add relative positioning to the <hr> to position the divider */
+  position: relative;
+  /* Add relative positioning to the <hr> to position the divider */
   margin-top: 6rem;
   margin-bottom: 6rem;
   border: none;
@@ -3362,11 +3451,11 @@ hr {
   font-family: "Equity Caps A", Helvetica, Arial, sans-serif;
 }
 
-#contact-me > input {
+#contact-me>input {
   padding: 10px;
 }
 
-#contact-me > textarea {
+#contact-me>textarea {
   padding: 10px;
 }
 
@@ -3375,11 +3464,11 @@ hr {
     font-size: 16px;
   }
 
-  #contact-me > input {
+  #contact-me>input {
     padding: 7px;
   }
 
-  #contact-me > textarea {
+  #contact-me>textarea {
     padding: 7px;
   }
 }
@@ -3398,9 +3487,12 @@ hr {
   margin-left: 10px;
   filter: grayscale(100%);
   border-radius: 100%;
-  flex-shrink: 0; /* Prevent the image from shrinking */
-  flex-grow: 0; /* Prevent the image from growing */
-  object-fit: cover; /* This ensures the image scales properly if its aspect ratio doesn't match the specified dimensions. */
+  flex-shrink: 0;
+  /* Prevent the image from shrinking */
+  flex-grow: 0;
+  /* Prevent the image from growing */
+  object-fit: cover;
+  /* This ensures the image scales properly if its aspect ratio doesn't match the specified dimensions. */
   opacity: 0.75;
 }
 
@@ -3420,13 +3512,16 @@ hr {
 }
 
 .image-wrapper-related-posts {
-  margin: 20px; /* Add some space between content and image */
+  margin: 20px;
+  /* Add some space between content and image */
 }
 
 .square-image {
-  width: 50px; /* Define the square size here */
+  width: 50px;
+  /* Define the square size here */
   height: 50px;
-  object-fit: cover; /* To ensure image scales and crops nicely */
+  object-fit: cover;
+  /* To ensure image scales and crops nicely */
 }
 
 .post-entry-description {
@@ -3440,7 +3535,8 @@ hr {
 }
 
 .tag-entry a {
-  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  ;
 }
 
 .call-to-subscribe {
@@ -3467,11 +3563,16 @@ div.mermaid {
 
 pre .language-mermaid {
   text-align: center;
-  display: flex; /* Use flexbox for easy centering */
-  justify-content: center; /* Center content horizontally */
-  margin: 0; /* Remove default margins */
-  padding: 0; /* Remove default padding */
-  overflow: auto; /* Adds scrollbars if content is larger than the container */
+  display: flex;
+  /* Use flexbox for easy centering */
+  justify-content: center;
+  /* Center content horizontally */
+  margin: 0;
+  /* Remove default margins */
+  padding: 0;
+  /* Remove default padding */
+  overflow: auto;
+  /* Adds scrollbars if content is larger than the container */
 }
 
 /* ************** */
@@ -3528,11 +3629,11 @@ pre .language-mermaid {
 }
 
 .linkedin-post-link {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .linkedin-post-link:hover {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 /* Thumbnail section of the LinkedIn card */
@@ -3628,11 +3729,11 @@ pre .language-mermaid {
 }
 
 .youtube-video-link {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .youtube-video-link:hover {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 /* Thumbnail section of the video card */
@@ -3675,8 +3776,10 @@ pre .language-mermaid {
 /* Call to YouTube subscribe */
 .call-to-subscribe-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
   flex-wrap: wrap;
   text-align: center;
 }
@@ -3693,22 +3796,27 @@ pre .language-mermaid {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  margin: 0 auto; /* Center horizontally */
-  display: block; /* Ensure block-level centering */
+  margin: 0 auto;
+  /* Center horizontally */
+  display: block;
+  /* Ensure block-level centering */
 }
 
 .call-to-subscribe:hover {
-  transform: translateY(-2px); /* Slight lift effect */
+  transform: translateY(-2px);
+  /* Slight lift effect */
 }
 
 .call-to-subscribe:active {
-  transform: translateY(1px); /* Slight press effect */
+  transform: translateY(1px);
+  /* Slight press effect */
 }
 
 .call-to-subscribe img {
   vertical-align: middle;
   margin-right: 8px;
-  height: 20px; /* Adjust icon size */
+  height: 20px;
+  /* Adjust icon size */
 }
 
 .call-to-subscribe span {
@@ -3724,7 +3832,8 @@ pre .language-mermaid {
 }
 
 /* SUPPORT FOR DARK MODE */
-html, html[data-theme="light"] {
+html,
+html[data-theme="light"] {
   --link-color: black;
   --media-icon-color: 0;
   --navbar-color: #f0f0f0;
