@@ -2,7 +2,7 @@
 permalink: youtube.html
 layout: page
 title: YouTube Videos
-subtitle: "🎥"
+subtitle: '🎥'
 description: List of YouTube videos created by César Soto Valero.
 published: true
 ---
@@ -14,11 +14,13 @@ published: true
    <a href="/youtube/all.html" class="list-filter">By Year</a>
    <a href="/youtube/views.html" class="list-filter">By Views</a>
    <a href="/youtube/likes.html" class="list-filter">By Likes</a>
-   <a href="/youtube/comments.html" class="list-filter">By Comments</a>   
+   <a href="/youtube/comments.html" class="list-filter">By Comments</a>
 </div>
 
-<div class="youtube-videos-container post-preview">
-  {% for video in site.data.youtube-videos %}
+{% assign sorted_videos = site.data.youtube-videos | sort: "snippet.publishedAt" | reverse %}
+
+<div class="linkedin-posts-container post-preview" style="margin-top: 20px;">
+  {% for video in sorted_videos %}
   <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" class="youtube-video-link">
     <div class="youtube-video-card">
       <div class="youtube-video-text">
@@ -28,9 +30,9 @@ published: true
           {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
         </p>
         <p class="youtube-video-stats">
-                  <span>👀 Views: {{ video.statistics.viewCount | number_with_delimiter }}</span> | 
-                  <span>👍 Likes: {{ video.statistics.likeCount | number_with_delimiter }}</span> | 
-                  <span>💬 Comments: {{ video.statistics.commentCount | number_with_delimiter }}</span>
+          <span>👀 Views: {{ video.statistics.viewCount | number_with_delimiter }}</span> | 
+          <span>👍 Likes: {{ video.statistics.likeCount | number_with_delimiter }}</span> | 
+          <span>💬 Comments: {{ video.statistics.commentCount | number_with_delimiter }}</span>
         </p>
       </div>
       <div class="youtube-video-thumbnail">

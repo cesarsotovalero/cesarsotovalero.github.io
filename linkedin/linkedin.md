@@ -2,7 +2,7 @@
 permalink: linkedin.html
 layout: page
 title: LinkedIn Posts
-subtitle: "🤝"
+subtitle: '🤝'
 description: LinkedIn posts posted by César Soto Valero.
 published: true
 ---
@@ -31,13 +31,29 @@ published: true
           <span>🔁 Repost: {{ post.repostsCount | default: 0 }}</span>
         </p>
       </div>
-      {% if post.image and post.image.size > 0 %}
+      {% assign image_folder = '/assets/images/linkedin/' | append: post.postedDateTimestamp | append: '/' %}
+      {% assign largest_image = nil %}
+      {% assign max_width = 0 %}
+      {% for file in site.static_files %}
+        {% if file.path contains image_folder %}
+          {% assign file_name = file.name | split: '.' | first %}
+          {% assign dimensions = file_name | split: 'x' %}
+          {% if dimensions.size == 2 %}
+            {% assign width = dimensions[0] | plus: 0 %}
+            {% if width > max_width %}
+              {% assign max_width = width %}
+              {% assign largest_image = file.path %}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if largest_image %}
       <div class="linkedin-post-thumbnail">
-        <img src="{{ post.image[0].url }}" alt="LinkedIn Post Image">
+        <img src="{{ largest_image }}" alt="LinkedIn Post Image">
       </div>
       {% endif %}
     </div>
   </a>
   {% endfor %}
 </div>
-
