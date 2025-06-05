@@ -4,7 +4,7 @@ title: From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detectio
 subtitle: Models, architectures, evaluation metrics, and deployment considerations
 tags: ai
 description: |
-  Financial transaction fraud is a pervasive problem costing institutions and consumers billions annually. This survey reviews the current state-of-the-art in real-time transaction fraud detection, spanning both academic research and industry practice.
+  Financial transaction fraud is a pervasive problem costing institutions and customers billions annually. This survey reviews the current state-of-the-art in real-time transaction fraud detection, spanning both academic research and industry practice.
 keywords:
   - financial fraud
   - fraud detection
