@@ -4,6 +4,197 @@
   "data": [
     {
       "isBrandPartnership": false,
+      "text": "Yesterday, I participated in the Google Cloud AI Hackathon, held to celebrate the launch of its cloud region in Sweden. I tried vibe-coding a Firebase app without writing a single LoC myself. Below are 7 thoughts that crossed my mind during the day ↓\n\n1️⃣ Everyone should learn how to use AI to build software. I mean EVERYONE, no excuses. If you haven’t tried yet… what are you waiting for?\n\n2️⃣ The best (and probably only) way to understand AI’s impact on software development is by playing with it and trying as many tools as you can. I guess you already know the benefits, limits, and ideal use cases of the most popular ones… do you?\n\n3️⃣ Having access to an AI-driven cloud ecosystem speeds things up a lot. You can build a full working prototype from (clear) idea to deployment in a few hours just by prompting Gemini 2.5. It is capable of orchestrating the cloud-native components like a boss! This makes me wonder... will app development outside agentic private clouds soon feel obsolete?\n\n4️⃣ Most of the participants were quite young. I’d estimate the average age was under 30, and some winners weren’t even developers. Are more seasoned professional devs missing the AI r/evolution?\n\n5️⃣ Seeing these tools in action, and how insanely fast you can build with them, made me question everything. Do traditional dev practices, like SCRUM, do they even make sense anymore? Can we truly be “AI native” if we keep using workflows designed to harness lazy humans?\n\n6️⃣ One of the biggest mindset shifts I had was this: you don’t need to know everything to start building. With the right AI tools, you can learn while doing. Skipping hours of tutorials and docs. Does it even make sense to read tutorials anymore?\n\n7️⃣ Hackathons are such a great way to level up, connect with energetic folks, and get a front-row seat to the future. Seems like the new best way to get people involved, so there's a big opportunity there for everyone: Hackathons are the Bootcamps v2.0! \n\nAnyway, I’m thrilled #Sweden just became a Google Cloud hub in the Nordics! 🇸🇪🚀☁️",
+      "totalReactionCount": 32,
+      "likeCount": 27,
+      "InterestCount": 1,
+      "praiseCount": 4,
+      "repostsCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7336121223044554752/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_sweden-activity-7336121223044554752-Z56B?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFeeJ54Bd4xZjhujZ-Rb8JeXK-VNBsQF1I0",
+      "postedAt": "1d",
+      "postedDate": "2025-06-04 20:06:38.115 +0000 UTC",
+      "postedDateTimestamp": 1749067598115,
+      "urn": "7336121223044554752",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1754524800&v=beta&t=mVbPmwg_DsU0ROo65qCLW8bz3fd9a6tFeSx_ABxqSEY"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1754524800&v=beta&t=1rY6OxEecGwFR8ruQO_kMveVm7fjGFPszGVT3jHvosA"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1754524800&v=beta&t=xYfAnE1slzdCYNiZrn_hIihPctR6CdMHYIvnGh7shj0"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1754524800&v=beta&t=O05W_YWDKKgVffKUUdDNhTLQV6y8IRHb-Zm6XOoLyNk"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_800/B4DZc8jXCHGgAg-/0/1749067595903?e=1752105600&v=beta&t=rwYz4lMF7YWO6ClatgTmrObKRTjWcdDlCvMxwXQJBzo",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_20/B4DZc8jXCHGgAw-/0/1749067595903?e=1752105600&v=beta&t=65NdWHcrLb0Qs0QQTVTUihJXD5-Nsjy5dmwGakqj7F8",
+          "width": 20,
+          "height": 15
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_480/B4DZc8jXCHGgAY-/0/1749067595903?e=1752105600&v=beta&t=eK9ubt6jGCiKjWTuiIn0wormtZUZB-2eSlcqaC_wAaQ",
+          "width": 480,
+          "height": 360
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_1280/B4DZc8jXCHGgAk-/0/1749067596106?e=1752105600&v=beta&t=_Ry5IOTbtXfcNTjIIAordrygsMu3MH1qqlEUpDaKvyM",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_2048_1536/B4DZc8jXCHGgAo-/0/1749067596228?e=1752105600&v=beta&t=VqmhcWFLo7J4Dk62Wo9oyeEs4is4t_MnEhTsz4kfgMg",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_160/B4DZc8jXCHGgAc-/0/1749067596106?e=1752105600&v=beta&t=Fpo6YKvl1en5BKz-V-OolrmczdcZM2pmMxhil3QTfvw",
+          "width": 160,
+          "height": 120
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_480/B4DZc8jXC9HkBo-/0/1749067593523?e=1752105600&v=beta&t=nbZ2xYIzCa7XiPB_7RGG6lyW_67MNlhn_x_ocTALeGM",
+          "width": 480,
+          "height": 360
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_160/B4DZc8jXC9HkBs-/0/1749067593523?e=1752105600&v=beta&t=-hrv_t_M2PvKBEFL1V9EtuziUPvy4Q2jlCViS3MU6Ck",
+          "width": 160,
+          "height": 120
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_20/B4DZc8jXC9HkCA-/0/1749067593346?e=1752105600&v=beta&t=JVmCXYcpzLD-kf3AMWyXSk_N5MkTmDv0vKHWOnTUc1Q",
+          "width": 20,
+          "height": 15
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_1280/B4DZc8jXC9HkB0-/0/1749067593523?e=1752105600&v=beta&t=-FWlBSbs18QMhCylwAN1K58hChcXmFod6GI6BYO69rM",
+          "width": 1280,
+          "height": 959
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_800/B4DZc8jXC9HkBw-/0/1749067593346?e=1752105600&v=beta&t=2SW0msCoSbnkhvdgKlyARIT6eQzbYDsvB9-y5mvSj_k",
+          "width": 800,
+          "height": 599
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_2048_1536/B4DZc8jXC9HkB4-/0/1749067593560?e=1752105600&v=beta&t=4ilaJZUqpNG9mcSHb_yWKPni6oaFCEHrZcJD67MOepc",
+          "width": 2048,
+          "height": 1535
+        }
+      ],
+      "images": [
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_800/B4DZc8jXCHGgAg-/0/1749067595903?e=1752105600&v=beta&t=rwYz4lMF7YWO6ClatgTmrObKRTjWcdDlCvMxwXQJBzo",
+            "width": 800,
+            "height": 600
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_20/B4DZc8jXCHGgAw-/0/1749067595903?e=1752105600&v=beta&t=65NdWHcrLb0Qs0QQTVTUihJXD5-Nsjy5dmwGakqj7F8",
+            "width": 20,
+            "height": 15
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_480/B4DZc8jXCHGgAY-/0/1749067595903?e=1752105600&v=beta&t=eK9ubt6jGCiKjWTuiIn0wormtZUZB-2eSlcqaC_wAaQ",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_1280/B4DZc8jXCHGgAk-/0/1749067596106?e=1752105600&v=beta&t=_Ry5IOTbtXfcNTjIIAordrygsMu3MH1qqlEUpDaKvyM",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_2048_1536/B4DZc8jXCHGgAo-/0/1749067596228?e=1752105600&v=beta&t=VqmhcWFLo7J4Dk62Wo9oyeEs4is4t_MnEhTsz4kfgMg",
+            "width": 2048,
+            "height": 1536
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHeQvVA_8b4QA/feedshare-shrink_160/B4DZc8jXCHGgAc-/0/1749067596106?e=1752105600&v=beta&t=Fpo6YKvl1en5BKz-V-OolrmczdcZM2pmMxhil3QTfvw",
+            "width": 160,
+            "height": 120
+          }
+        ],
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_480/B4DZc8jXC9HkBo-/0/1749067593523?e=1752105600&v=beta&t=nbZ2xYIzCa7XiPB_7RGG6lyW_67MNlhn_x_ocTALeGM",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_160/B4DZc8jXC9HkBs-/0/1749067593523?e=1752105600&v=beta&t=-hrv_t_M2PvKBEFL1V9EtuziUPvy4Q2jlCViS3MU6Ck",
+            "width": 160,
+            "height": 120
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_20/B4DZc8jXC9HkCA-/0/1749067593346?e=1752105600&v=beta&t=JVmCXYcpzLD-kf3AMWyXSk_N5MkTmDv0vKHWOnTUc1Q",
+            "width": 20,
+            "height": 15
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_1280/B4DZc8jXC9HkB0-/0/1749067593523?e=1752105600&v=beta&t=-FWlBSbs18QMhCylwAN1K58hChcXmFod6GI6BYO69rM",
+            "width": 1280,
+            "height": 959
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_800/B4DZc8jXC9HkBw-/0/1749067593346?e=1752105600&v=beta&t=2SW0msCoSbnkhvdgKlyARIT6eQzbYDsvB9-y5mvSj_k",
+            "width": 800,
+            "height": 599
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFXShYc94HzbA/feedshare-shrink_2048_1536/B4DZc8jXC9HkB4-/0/1749067593560?e=1752105600&v=beta&t=4ilaJZUqpNG9mcSHb_yWKPni6oaFCEHrZcJD67MOepc",
+            "width": 2048,
+            "height": 1535
+          }
+        ]
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "companyMentions": [
+        {
+          "id": 1441,
+          "name": "Google",
+          "publicIdentifier": "google",
+          "url": "https://www.linkedin.com/company/google/"
+        }
+      ]
+    },
+    {
+      "isBrandPartnership": false,
       "text": "I had a great time today attending the Open Infra Forum in Stockholm, a big event with a large community celebrating its 10th anniversary.\n\nOpen infrastructure is a matter of digital sovereignty, and everyone from tech professionals to policymakers should understand its importance.\n\nSome thought-provoking questions that stuck with me:\n\n🔥 If the cloud were turned off in one minute, would your company still function?\n🔥 Would the Swedish public sector still operate?\n🔥 What if a service you rely on gets deprecated in a month?\n🔥 What if the price suddenly spikes, could you migrate away?\n🔥 What if there’s no cloud for you?\n🔥 Are you even able to breathe?\n\nSo here’s the core message:\n\n💦 Digital independence and knowledge are key.\n💦 Your data belongs to you, and no one else.\n💦 If the cloud goes down, the self-hoster becomes king.\n💦 If the internet goes down, the self-hoster is the prince.\n\nAs a 🎁, our Swedish legend Daniel Stenberg shared his experiences as creator and lifelong maintainer of #cURL (first release was in 1996). Hearing how cURL quietly conquered the world, alongside the rise of open-source, was a real delight.\n\nBTW, Daniel wrote a book capturing everything he knows about running and maintaining open-source projects for nearly three decades:\n⤷ https://un.curl.dev/\n\nWanna see your public IP address using cURL in one line?\n\nTry this 🪄 ↓\n\n$ curl ifconfig.me",
       "totalReactionCount": 25,
       "likeCount": 24,
