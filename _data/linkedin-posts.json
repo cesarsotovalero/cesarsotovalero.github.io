@@ -4,6 +4,352 @@
   "data": [
     {
       "isBrandPartnership": false,
+      "text": "Attended my first Google Cloud Summit Nordics at Avicii Arena in Stockholm, this time was all about 🤖 ∩ ☁️. Below are my thoughts from what I saw there ↓\n\n1️⃣ The cloud giants have gone all-in on AI.\n\nRapid customer acquisition and marketing are often high priorities in the early stages of disruptive technologies. The race is on. Google, Microsoft, and Amazon are aggressively positioning their clouds as AI-first platforms. These cloud providers have the competitive advantage of already having the necessary infrastructure to create AI-native cloud services. For them, it’s a numbers game 💸\n\n2️⃣ Yet, no mind-blowing innovation on the sight.\n\nWith Gemini 2.5 Pro, one can write JavaScript frontend, Java backend, and Terraform IaC in natural language without leaving the platform. It can now feed all your company data into its context window and answer questions about it. But we already knew it would be just a matter of time before this happened. The question is: what else? Personally, I would like to see new use cases. For example, a new type of AI-powered product integrated in a way that I could really use in my daily life, beyond the well-known chatbot-styled UI (maybe an AI-native hardware device would be interesting) 🕹️\n\n3️⃣ For devs, AI is a double-edged productivity boost. \n\nOn-cloud AI code assistants will change how we create and deploy apps. There’s truly no going back to handwriting code from scratch anymore. I wonder if there is any chance for local AI-powered IDEs when these cloud providers have all the context integrated... I don’t know, but for the time being, AI is being sold as the perfect way to “experiment quickly, build agentic experiences, shift down, use AI assistance, and become wildly more productive,” hmm 🙄 \n\nMy last takeaway: Move faster. Build smarter. Offload to an AI the grunt work. Ship on the cloud like never before. Tomorrow, we don’t know.\n\nOverall, a well-organized and worthwhile event to attend.\n\nPS. When it comes to good food and entertainment, Google truly knows how to deliver 😎",
+      "totalReactionCount": 41,
+      "likeCount": 39,
+      "praiseCount": 2,
+      "repostsCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7339005962298494977/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_attended-my-first-google-cloud-summit-nordics-activity-7339005962298494977-nfuJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFtDCm4BWf5klXQxZ2mT39GahTgnT4Ld3I8",
+      "postedAt": "3d",
+      "postedDate": "2025-06-12 19:09:33.549 +0000 UTC",
+      "postedDateTimestamp": 1749755373549,
+      "urn": "7339005962298494977",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1755734400&v=beta&t=XQ8sapR61dmS0m0IvexrdSEKY5f29auDvBYJIyO87UE"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1755734400&v=beta&t=e_vBR4-c4iV1E6lIdlRw1hHATaSVLm5CvGj5tTlMBTM"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1755734400&v=beta&t=qR468rFvd28MtidCaBd30l2-LiR9iONgT-jKuj8ZnOE"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1755734400&v=beta&t=2LI_eht-7RFwKvObwhRE-f_bkH1aH1kJ_L9N4v_PG-Q"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_800/B4DZdljBEGGkAk-/0/1749755369099?e=1752710400&v=beta&t=9PQqNaQkmbR0Kw5oeLeB73dpYExN1CqxRZJJtiNDvKY",
+          "width": 800,
+          "height": 602
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_1280/B4DZdljBEGGkAo-/0/1749755369099?e=1752710400&v=beta&t=pEj6DvDJ7pbJWX7Z9fOT5YlhtpnhdiHXYufF1ZbzOz8",
+          "width": 1280,
+          "height": 963
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_20/B4DZdljBEGGkA0-/0/1749755369099?e=1752710400&v=beta&t=7BBoNUwlTig1I81koaAHdbxIc83mCW3caG-dG3rZppw",
+          "width": 20,
+          "height": 15
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_2048_1536/B4DZdljBEGGkAs-/0/1749755369437?e=1752710400&v=beta&t=ZaHMchKMBs_gWBUmaz8IYGe9CHbvYUUIJyMlXRFLSmo",
+          "width": 2042,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_480/B4DZdljBEGGkAc-/0/1749755369048?e=1752710400&v=beta&t=duey9cuX97YyX43lG9Usq-U6Yc3scBR5S0U7cs9JsNg",
+          "width": 480,
+          "height": 361
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_160/B4DZdljBEGGkAg-/0/1749755369048?e=1752710400&v=beta&t=93wqivYIGiEMp0KJxqznpvHiLAz_7d9lVcyTWJLwurk",
+          "width": 160,
+          "height": 120
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_800/B4DZdljBEeGYAg-/0/1749755371635?e=1752710400&v=beta&t=6Y1qL4wl5ER342r_cDZ0HlIdOCg4oqap45r3Vdkikj0",
+          "width": 800,
+          "height": 1067
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_20/B4DZdljBEeGYAw-/0/1749755371635?e=1752710400&v=beta&t=98paL56mwyPXuFvMbaTpgf6BISMTk1ouQUcOzyNe4wg",
+          "width": 20,
+          "height": 27
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_480/B4DZdljBEeGYAY-/0/1749755371635?e=1752710400&v=beta&t=j2hnqB0Xnody9r7LL_pqBKvJXJOgW_MuxPIrsF9T4G4",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_1280/B4DZdljBEeGYAk-/0/1749755371385?e=1752710400&v=beta&t=SlRnW9bwGbnc6eOFAv3E01s56zN_j28i8INsm4nxPTs",
+          "width": 1280,
+          "height": 1707
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_2048_1536/B4DZdljBEeGYAo-/0/1749755371133?e=1752710400&v=beta&t=gxlIFJuHmeNjsNJ01gMvuPP095J-MzRQ-E7GL6nhMYo",
+          "width": 1152,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_160/B4DZdljBEeGYAc-/0/1749755371385?e=1752710400&v=beta&t=G1YjYXfS1ItLNt9jhDJAfrwCYOi520Vp6s4gmhVm_4o",
+          "width": 160,
+          "height": 213
+        }
+      ],
+      "images": [
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_800/B4DZdljBEGGkAk-/0/1749755369099?e=1752710400&v=beta&t=9PQqNaQkmbR0Kw5oeLeB73dpYExN1CqxRZJJtiNDvKY",
+            "width": 800,
+            "height": 602
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_1280/B4DZdljBEGGkAo-/0/1749755369099?e=1752710400&v=beta&t=pEj6DvDJ7pbJWX7Z9fOT5YlhtpnhdiHXYufF1ZbzOz8",
+            "width": 1280,
+            "height": 963
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_20/B4DZdljBEGGkA0-/0/1749755369099?e=1752710400&v=beta&t=7BBoNUwlTig1I81koaAHdbxIc83mCW3caG-dG3rZppw",
+            "width": 20,
+            "height": 15
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_2048_1536/B4DZdljBEGGkAs-/0/1749755369437?e=1752710400&v=beta&t=ZaHMchKMBs_gWBUmaz8IYGe9CHbvYUUIJyMlXRFLSmo",
+            "width": 2042,
+            "height": 1536
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_480/B4DZdljBEGGkAc-/0/1749755369048?e=1752710400&v=beta&t=duey9cuX97YyX43lG9Usq-U6Yc3scBR5S0U7cs9JsNg",
+            "width": 480,
+            "height": 361
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQECuIvSORpIIw/feedshare-shrink_160/B4DZdljBEGGkAg-/0/1749755369048?e=1752710400&v=beta&t=93wqivYIGiEMp0KJxqznpvHiLAz_7d9lVcyTWJLwurk",
+            "width": 160,
+            "height": 120
+          }
+        ],
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_800/B4DZdljBEeGYAg-/0/1749755371635?e=1752710400&v=beta&t=6Y1qL4wl5ER342r_cDZ0HlIdOCg4oqap45r3Vdkikj0",
+            "width": 800,
+            "height": 1067
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_20/B4DZdljBEeGYAw-/0/1749755371635?e=1752710400&v=beta&t=98paL56mwyPXuFvMbaTpgf6BISMTk1ouQUcOzyNe4wg",
+            "width": 20,
+            "height": 27
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_480/B4DZdljBEeGYAY-/0/1749755371635?e=1752710400&v=beta&t=j2hnqB0Xnody9r7LL_pqBKvJXJOgW_MuxPIrsF9T4G4",
+            "width": 480,
+            "height": 640
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_1280/B4DZdljBEeGYAk-/0/1749755371385?e=1752710400&v=beta&t=SlRnW9bwGbnc6eOFAv3E01s56zN_j28i8INsm4nxPTs",
+            "width": 1280,
+            "height": 1707
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_2048_1536/B4DZdljBEeGYAo-/0/1749755371133?e=1752710400&v=beta&t=gxlIFJuHmeNjsNJ01gMvuPP095J-MzRQ-E7GL6nhMYo",
+            "width": 1152,
+            "height": 1536
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHAcpnzZrOVOg/feedshare-shrink_160/B4DZdljBEeGYAc-/0/1749755371385?e=1752710400&v=beta&t=G1YjYXfS1ItLNt9jhDJAfrwCYOi520Vp6s4gmhVm_4o",
+            "width": 160,
+            "height": 213
+          }
+        ]
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "companyMentions": [
+        {
+          "id": 1441,
+          "name": "Google",
+          "publicIdentifier": "google",
+          "url": "https://www.linkedin.com/company/google/"
+        },
+        {
+          "id": 1441,
+          "name": "Google",
+          "publicIdentifier": "google",
+          "url": "https://www.linkedin.com/company/google/"
+        }
+      ]
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "P: “How do I use Spring Boot”\nAI: “You can’t really boot a season of a year”\n\n🤣\n\nContext is king, especially for AIgentic software development.\n\nThe issue: LLMs are stateless.\n\nSo,... how can we prevent API/doc hallucinations?\n\n🔆 The MCP protocol for AI-native IDEs provides agents access to the right context for your app.\n\nOnce you set it in place, it’s a game changer.\n\nCheck out Context7 MCP:\n↳ https://context7.com/\n\nIt allows pulling up-to-date, version-specific documentation from many languages and frameworks to enrich your prompt's context.\n\nTo set it up in Cursor:\nGo to: Settings → Cursor Settings → MCP → Add new global MCP server\n\nPaste this ↓\n\n{\n    \"mcpServers\": {\n        \"context7\": {\n        \"url\": \"https://mcp.context7[DOT]com/mcp\"\n        }\n    }\n}\n\nThen just ask something, make sure to include “… use context7” somewhere in your prompt.\n\nAnd let the magical vibes flow all around 🪄, while enjoying your ☕️\n\nPS. Shout out to the RoboCoders 🎩 Baruch Sadogursky and Viktor Gamov, they delivered one of the most entertaining talks at AI-fokus 2025.",
+      "totalReactionCount": 31,
+      "likeCount": 28,
+      "empathyCount": 1,
+      "praiseCount": 2,
+      "commentsCount": 3,
+      "repostsCount": 2,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7338542663488495617/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_p-how-do-i-use-spring-boot-ai-you-can-activity-7338542663488495617-Rbw4?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFtDCm4BWf5klXQxZ2mT39GahTgnT4Ld3I8",
+      "postedAt": "4d",
+      "postedDate": "2025-06-11 12:28:34.505 +0000 UTC",
+      "postedDateTimestamp": 1749644914505,
+      "urn": "7338542663488495617",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1755734400&v=beta&t=XQ8sapR61dmS0m0IvexrdSEKY5f29auDvBYJIyO87UE"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1755734400&v=beta&t=e_vBR4-c4iV1E6lIdlRw1hHATaSVLm5CvGj5tTlMBTM"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1755734400&v=beta&t=qR468rFvd28MtidCaBd30l2-LiR9iONgT-jKuj8ZnOE"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1755734400&v=beta&t=2LI_eht-7RFwKvObwhRE-f_bkH1aH1kJ_L9N4v_PG-Q"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_160/B4DZde9qKNG8Ag-/0/1749644913217?e=1752710400&v=beta&t=DeCLHjgt6YEcniZ10b9_YRBYDMl-CsKmbdm9RjynItA",
+          "width": 160,
+          "height": 116
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_2048_1536/B4DZde9qKNG8As-/0/1749644913399?e=1752710400&v=beta&t=SHQZxBnB2Jdc8QcaDDV1PWCqR8MmyYPNx3_WhC0APpM",
+          "width": 2048,
+          "height": 1491
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_480/B4DZde9qKNG8Ac-/0/1749644913217?e=1752710400&v=beta&t=MLSAE_qrJ8pFnCr2R1R6vnZL-xKX4Rx36dSXXgEAKI4",
+          "width": 480,
+          "height": 349
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_20/B4DZde9qKNG8A0-/0/1749644913217?e=1752710400&v=beta&t=gBrdC4w9t-qBtFZNLJM3pQ7cjzmGElE_Z71K6A0VqIw",
+          "width": 20,
+          "height": 14
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_1280/B4DZde9qKNG8Ao-/0/1749644913355?e=1752710400&v=beta&t=9LnsPNW_yy6jmCh4leoIh6GjbHM8DPhmLC8vjPPRUa4",
+          "width": 1280,
+          "height": 932
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_800/B4DZde9qKNG8Ak-/0/1749644913355?e=1752710400&v=beta&t=wqi97Crq7CmdWTdVhgxGiA9wvF7vvYPp8YozYnwdlZM",
+          "width": 800,
+          "height": 582
+        }
+      ],
+      "images": [
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_160/B4DZde9qKNG8Ag-/0/1749644913217?e=1752710400&v=beta&t=DeCLHjgt6YEcniZ10b9_YRBYDMl-CsKmbdm9RjynItA",
+            "width": 160,
+            "height": 116
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_2048_1536/B4DZde9qKNG8As-/0/1749644913399?e=1752710400&v=beta&t=SHQZxBnB2Jdc8QcaDDV1PWCqR8MmyYPNx3_WhC0APpM",
+            "width": 2048,
+            "height": 1491
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_480/B4DZde9qKNG8Ac-/0/1749644913217?e=1752710400&v=beta&t=MLSAE_qrJ8pFnCr2R1R6vnZL-xKX4Rx36dSXXgEAKI4",
+            "width": 480,
+            "height": 349
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_20/B4DZde9qKNG8A0-/0/1749644913217?e=1752710400&v=beta&t=gBrdC4w9t-qBtFZNLJM3pQ7cjzmGElE_Z71K6A0VqIw",
+            "width": 20,
+            "height": 14
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_1280/B4DZde9qKNG8Ao-/0/1749644913355?e=1752710400&v=beta&t=9LnsPNW_yy6jmCh4leoIh6GjbHM8DPhmLC8vjPPRUa4",
+            "width": 1280,
+            "height": 932
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQExBYO3AMYkmg/feedshare-shrink_800/B4DZde9qKNG8Ak-/0/1749644913355?e=1752710400&v=beta&t=wqi97Crq7CmdWTdVhgxGiA9wvF7vvYPp8YozYnwdlZM",
+            "width": 800,
+            "height": 582
+          }
+        ]
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "mentions": [
+        {
+          "firstName": "🎩",
+          "lastName": "Baruch Sadogursky",
+          "urn": "ACoAAAA5gzsBJ-6uG2ILx1vd_pXZ9A-LTvIAUeU",
+          "publicIdentifier": "jbaruch"
+        },
+        {
+          "firstName": "Viktor",
+          "lastName": "Gamov",
+          "urn": "ACoAAALuUOcBVVCNeRoCrzD9swNF5o-4dP-HCtw",
+          "publicIdentifier": "vikgamov"
+        }
+      ],
+      "companyMentions": [
+        {
+          "id": 106730483,
+          "name": "Cursor",
+          "publicIdentifier": "cursor-com",
+          "url": "https://www.linkedin.com/company/cursor-com/"
+        },
+        {
+          "id": 106643995,
+          "name": "AI-fokus",
+          "publicIdentifier": "ai-fokus",
+          "url": "https://www.linkedin.com/company/ai-fokus/"
+        }
+      ]
+    },
+    {
+      "isBrandPartnership": false,
       "text": "Yesterday, I participated in the Google Cloud AI Hackathon, held to celebrate the launch of its cloud region in Sweden. I tried vibe-coding a Firebase app without writing a single LoC myself. Below are 7 thoughts that crossed my mind during the day ↓\n\n1️⃣ Everyone should learn how to use AI to build software. I mean EVERYONE, no excuses. If you haven’t tried yet… what are you waiting for?\n\n2️⃣ The best (and probably only) way to understand AI’s impact on software development is by playing with it and trying as many tools as you can. I guess you already know the benefits, limits, and ideal use cases of the most popular ones… do you?\n\n3️⃣ Having access to an AI-driven cloud ecosystem speeds things up a lot. You can build a full working prototype from (clear) idea to deployment in a few hours just by prompting Gemini 2.5. It is capable of orchestrating the cloud-native components like a boss! This makes me wonder... will app development outside agentic private clouds soon feel obsolete?\n\n4️⃣ Most of the participants were quite young. I’d estimate the average age was under 30, and some winners weren’t even developers. Are more seasoned professional devs missing the AI r/evolution?\n\n5️⃣ Seeing these tools in action, and how insanely fast you can build with them, made me question everything. Do traditional dev practices, like SCRUM, do they even make sense anymore? Can we truly be “AI native” if we keep using workflows designed to harness lazy humans?\n\n6️⃣ One of the biggest mindset shifts I had was this: you don’t need to know everything to start building. With the right AI tools, you can learn while doing. Skipping hours of tutorials and docs. Does it even make sense to read tutorials anymore?\n\n7️⃣ Hackathons are such a great way to level up, connect with energetic folks, and get a front-row seat to the future. Seems like the new best way to get people involved, so there's a big opportunity there for everyone: Hackathons are the Bootcamps v2.0! \n\nAnyway, I’m thrilled #Sweden just became a Google Cloud hub in the Nordics! 🇸🇪🚀☁️",
       "totalReactionCount": 32,
       "likeCount": 27,
