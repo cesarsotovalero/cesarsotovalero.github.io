@@ -17,8 +17,6 @@ Below is a non-exhaustive list of my talks in reverse chronological order.
 
 ## 2025
 
-{% youtube kFPE9EcxhCs %}
-
 - **My Bank Meets AI: Smarter Decisions Beyond Fancier Spreadsheets**. Presented at [AI-fokus](https://www.jfokus.se/ai-fokus), Stockholm, January 2026. [Video](https://youtu.be/kFPE9EcxhCs "video"){:target="_blank"} [Slides](https://www.jfokus.se/aifokus25-preso/My-Bank-Meets-AI.pdf)
 
 ## 2024
