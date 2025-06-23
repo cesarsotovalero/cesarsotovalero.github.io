@@ -12,7 +12,7 @@ published: true
 I've peer-reviewed papers for the following journals and conferences:
 
 <aside class="quote">
-    <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">Check my verified peer reviews in the Web of Science</a></em> 
+        <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">See my verified peer reviews in the Web of Science</a></em>
 </aside>
 
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), October 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
@@ -25,7 +25,7 @@ I've peer-reviewed papers for the following journals and conferences:
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2022
 - [International Journal of Computer Science in Sport](https://sciendo.com/journal/IJCSS), 2021
 - [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021 [Recognition](../files/certificates/2021_JBA_Reviewer_Certificate.pdf)
-- [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019 
+- [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019
 - [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018
 - [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), May 2017 [Recognition](../files/certificates/SMR_Certificate.pdf)
 
@@ -46,7 +46,7 @@ I've served as a committee member for the following conferences:
 Also, my name is listed in the acknowledgments of the following papers:
 
 - [EOLANG and &phi;-calculus](https://arxiv.org/abs/2111.13384), 2021
- 
+
 # Thesis Supervisor
 
 I've supervised Master and Bachelor students in the following theses:
@@ -75,7 +75,6 @@ My work has been featured in the following media:
 - [:globe_with_meridians: KTH Intranet Interview](https://intra.kth.se/en/eecs/nyheter/grattis-till-vinsten-cesar-1.1112396), 2021
 - [:globe_with_meridians: Estudios de Doctorado en Suecia: Por Dónde Empezar?](https://eltoque.com/estudios-de-doctorado-en-suecia-por-donde-empezar) (co-authored article, written in Spanish), 2021
   
-
 # Teaching
 
 From 2019-2023, I worked as a teacher assistant (TA) for the following courses:
@@ -93,4 +92,3 @@ From 2019-2023, I worked as a teacher assistant (TA) for the following courses:
 - [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), given by [Linda Kann](http://www.csc.kth.se/~lk) at KTH, Fall 2019
 - [:globe_with_meridians: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2019
 - [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Spring 2019
-
