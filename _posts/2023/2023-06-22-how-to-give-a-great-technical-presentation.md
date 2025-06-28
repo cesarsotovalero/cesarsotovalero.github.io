@@ -33,7 +33,7 @@ If you follow me, I've no doubt you'll be able to nail your next one.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-06-22/circus.jpg alt: "Public speaking is a circus" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; Public speaking success is, like in a circus, about providing a unique and memorable experience to your audience. Photo of <a href="https://en.wikipedia.org/wiki/Cirque_du_Soleil">Cirque du Soleil</a> in Stockholm, 2023.
   </figcaption>
 </figure>
@@ -71,9 +71,9 @@ Here's what I think a technical presentation is:
 The following are the important keywords in the definition above:
 
 - **"communication session"** It refers to the format of the presentation. For example, conference talks, tech workshops, webinars, product sales pitches, and even job interviews are all technical presentations.
- 
+
 - **"specialized information, explanations, or demonstrations"** It refers to the type of content that is delivered. In this article, I focus on technical content in the area of Computer Science and Software Technology. Technical presentations often involve the use of visual aids such as slides, diagrams, code snippets, demos, or videos to support and enhance the content reception experience.
- 
+
 - **"audience"** The audience is the speaker's target. It can be a small group of people in a classroom, or thousands in a stadium. Here I'm assuming that they are already familiar with the topic of the presentation, and that are interested on it.
 
 **NOTE:** The rest of this article is written from the perspective of the speaker.
@@ -84,17 +84,17 @@ The following are the important keywords in the definition above:
 
 # How to Start
 
-The best way to start a technical presentation is with a **factual promise**. 
+The best way to start a technical presentation is with a **factual promise**.
 You want to explicitly tell people that they're going to know something new at the end of your presentation that they didn't know at the beginning.
 For example, you can claim something like: "At the end of this `X` minutes, you will know things about `Y` you didn't know, and something among those new things will make a difference for you in `Z`."
 This is a simple and powerful statement.
-Make sure to deliver your crafted hook loud and clear to the audience, so they know exactly the reason for being there. 
+Make sure to deliver your crafted hook loud and clear to the audience, so they know exactly the reason for being there.
 
 Alternatively, you can start with a **hilarious story**.
 The easiest subjects to start with are stories about your practical experience with some modern technology or tool.
 For example, something like “How Docker Helps Us Optimize Delivery” or “Apache Spark Issues We Have Dealt With.”
 Describe what you've done on a recent project and what you've learned from it.
-The most important aspect of the story is the problem you've faced and why it's important to solve it. 
+The most important aspect of the story is the problem you've faced and why it's important to solve it.
 Remember, it doesn't really matter the details of the story.
 What matters is that there is a problem out there that needs to be solved.
 
@@ -111,7 +111,7 @@ So early jokes don't work very well."
 # Time and Place
 
 <aside class="quote">
-    <em>“Don't give the same presentation more than once!”</em> 
+    <em>“Don't give the same presentation more than once!”</em>
 </aside>
 
 The **best time** for delivering a technical presentation is the morning, usually around 11:00.
@@ -123,13 +123,13 @@ I've noticed that the most people are in the room, the easier the job is for me 
 Large audiences make me feel empowered, like if I'm giving a discourse.
 Also, a larger audience makes less likely being interrupted by an unexpected question.
 
-It is important to turn on the lights in the room, and make sure there is a clock visible somewhere. 
-The reason for the first is that we humans, whenever the lights go down, it signals that we should go to sleep. 
+It is important to turn on the lights in the room, and make sure there is a clock visible somewhere.
+The reason for the first is that we humans, whenever the lights go down, it signals that we should go to sleep.
 The reason for the latter is that time is super important, and you want to make sure you're not going over time.[^3]
 
 I recommend going to see the place before the actual talk to make sure you know about any potential issue in advance.
 This way, there will be no surprises.
-Sometimes preparing the place might require some intervention from you. 
+Sometimes preparing the place might require some intervention from you.
 In most cases, you just need to be aware of what the challenges are.
 
 # Instruments
@@ -137,7 +137,7 @@ In most cases, you just need to be aware of what the challenges are.
 There are three key instruments you can use: **boards** (for informing), **slides** (for exposing), and **props** (for demonstrating).
 
 <aside class="quote">
-    <em>“Great presentations have some running code.”</em> 
+    <em>“Great presentations have some running code.”</em>
 </aside>
 
 We all know about boards and slides, but sometimes we forget about props.
@@ -150,7 +150,7 @@ It's not just a bunch of slides ~~that anybody alse can prepare~~.
 
 [//]: # (Quote by Steve Jobs)
 <aside class="quote">
-    <em>“People who know what they're talking about don't need PowerPoint.”</em> 
+    <em>“People who know what they're talking about don't need PowerPoint.”</em>
     <cite><br> ― <a href="https://en.wikipedia.org/wiki/Steve_Jobs">Steve Jobs</a></cite>
 </aside>
 
@@ -158,13 +158,13 @@ Regarding slides, there's always too many, and they have always too many words.
 So, I recommend going over the following checklist after you have prepared the first deck of slides:
 
 - **Don't use many words on each slide.** How many? I'd say 42 words per slide is the absolute maximum 😄. By reducing the number of words on each slide, you're allowing your audience to pay more attention to you and less to what's written on the slide. You want to be the focus of your audience. Remember that we have only one language processor, and we can either use it to read stuff or to listen to the speaker. And so if we have too many words on the slide, it forces people in the audience to read this stuff and not listen.
- 
+
 - **Don't read.** People in your audience know how to read, so reading will just annoy them. Use the slides as a condiments to what you're saying, not as the main course.
- 
+
 - **Don't use any background junk.** Aim for simplicity and remove any source of distraction. This includes any logo, title, or even these bullets in a list of items.
 
 - **Don't use any kind of laser pointers.** Those are distracting because you lose the contact with your audience, instead, use animations. For example, just put a little arrow on the elements your want to focus on, and tell the audience to look at that.
- 
+
 - **Don't forget having at least one complex (technical) slide.** The best way is showing some code![^4] That's what [Hapax legomenon](https://en.wikipedia.org/wiki/Hapax_legomenon) is about.
 
 # Four Tricks
@@ -172,21 +172,22 @@ So, I recommend going over the following checklist after you have prepared the f
 Make sure you make good use of the following four tricks:
 
 <aside class="quote">
-    <em>“Cycling around the core idea is one of the things that I always think about when preparing a talk.”</em> 
-</aside> 
+    <em>“Cycling around the core idea is one of the things that I always think about when preparing a talk.”</em>
+</aside>
 
 1. **Mere repetition.** Tell what you want to tell and go around it. Tell it again, and then tell it a third time, as if people weren't smart enough to understand it. The point is that, at any given moment, about 80% of the audience will be fogged out no matter what. Therefore, if you want to ensure that the probability that everybody gets it is high, you need to say it three times.
 
 2. **Claimed originality.** Explain your core idea in a way that it cannot be confused with somebody else's idea. For example, you could say: "Well, my algorithm might seem similar to Alice's algorithm, except hers is exponential, and mine's linear." Put a fence around your idea so that people cannot be confused about how it might relate to something else, or even worse, someone else's work.
 
-3. **Strategic emphasis.** People will occasionally fog out and need to get back on the bus, so you need to provide some landmark places where you're announcing that it's a good time to get back on. For example, a big text with the section title as transition provides a sense that there's a structure in the talk, and you can get back on anytime. 
+3. **Strategic emphasis.** People will occasionally fog out and need to get back on the bus, so you need to provide some landmark places where you're announcing that it's a good time to get back on. For example, a big text with the section title as transition provides a sense that there's a structure in the talk, and you can get back on anytime.
 
 4. **Provocative Questions.** Prepare a few provocative questions in advance. Make sure the questions are not so easy because people will be embarrassed to answer it, nor so hard because then nobody will have anything to say. Throw one question at the time and wait, don't say anything for 7 seconds (that's the maximum amount of time you should wait for an answer). If nobody answers (red flag), then you can answer it yourself.
 
 # Personal Style
+
 [//]: # (a quote)
 <aside class="quote">
-    <em>“Talk to your audience, not at them.”</em> 
+    <em>“Talk to your audience, not at them.”</em>
 </aside>
 Watch the speakers you admire and feel are effective, then ask yourself why they're successful.
 Copy them first, the way they move, the way they talk, the way they use their hands, and so on.
@@ -195,20 +196,20 @@ Your personal repertoire of gestures and movements will grow over time with prac
 It's just like learning a new language.
 
 > Many people who are novices at speaking find themselves suddenly aware of their hands.
- 
+
 Here are some personal tricks from professors I had around that have caught my attention:
 
 - The way [Martin Monperrus](https://www.monperrus.net/martin/) uses pauses to create suspense ([Example](https://youtu.be/shvacehl2U0)).
 - The way [Benoit Baudry](https://softwarediversity.eu/) uses his hands to explain things ([Example](https://youtu.be/EsUGeWnGZfg)).
 - The way [Andreas Zeller](https://andreas-zeller.info/) uses stories to support a flow of arguments ([Example](https://youtu.be/U5jLjcxnwfU)).
- 
-# How to Inspire 
 
-Turns out that people are inspired by different things depending on their age or current status. 
+# How to Inspire
+
+Turns out that people are inspired by different things depending on their age or current status.
 For example, graduate students are often inspired by some high school teachers who told them they could graduate.
 Professors are often inspired by someone who helped them see a problem in a new way.
 Entrepreneurs are inspired by self-made millionaires.
-And so on. 
+And so on.
 Something common from everyone is getting inspired when someone exhibits **passion** about what she or he is doing.
 
 [//]: # (TODO: Put an example of someone that got inspired by somethind thad I did/said)
@@ -222,7 +223,7 @@ These stories can help them understand different situations and emotions, learn 
 [//]: # (TODO: For example, I will never forget the way...)
 
 Another way is by creating a **situation**.
-Describing a situation is good because it allows putting your topic in context. 
+Describing a situation is good because it allows putting your topic in context.
 For example, you can say something like "This is a problem that's being pursued all over the world. However, there hasn't been any progress in the past `X` years, so everyone is looking for a solution because it will have impact on `Y` and `Z`."
 Everyone will be interested.
 
@@ -232,15 +233,15 @@ Everyone will be interested.
 > **A:** Simply because no one gets used to being ignored.
 
 <aside class="quote">
-    <em>“Admittedly, most people give technical presentations for personal-branding and self-promotion.”</em> 
+    <em>“Admittedly, most people give technical presentations for personal-branding and self-promotion.”</em>
 </aside>
 
 You will get recognized by being remembered.
-How do you get remembered? 
-One of the things you need to do is to make sure that you have some kind of **symbol** associated with your person or your presentation. 
-The next thing you need is some kind of **slogan**, a kind of phrase that provides a handle on your work. 
-Then, you need a **surprise** that people will remember. 
-Next item is **salient idea**. 
+How do you get remembered?
+One of the things you need to do is to make sure that you have some kind of **symbol** associated with your person or your presentation.
+The next thing you need is some kind of **slogan**, a kind of phrase that provides a handle on your work.
+Then, you need a **surprise** that people will remember.
+Next item is **salient idea**.
 A single idea that sticks out.[^5]
 And finally, you need to tell the story of how you did it, how it works, why it's important.
 
@@ -248,18 +249,18 @@ And finally, you need to tell the story of how you did it, how it works, why it'
 
 You already know that practice is important, but here's some extra advice:
 Don't show your slides to the people you will present to.
-If they know what you're doing, they will hallucinate that there's material in your presentation that isn't there. 
+If they know what you're doing, they will hallucinate that there's material in your presentation that isn't there.
 The best way is to get together with some friends who don't know what you're doing and practice with them.
- 
+
 > Start your practice session by saying: "If you can't make me cry, I won't value as a friend anymore."
 
 Here's another nugget:
-The amount of feedback you'll get from somebody is proportional to age. 
+The amount of feedback you'll get from somebody is proportional to age.
 The older somebody is, the more they understand where they are in the world.
-But the young people are trying to show the old people how smart they are, it's subtly vicious. 
-Whenever you have an opportunity to have an examining committee that's full of people with gray hair, that's what you want. 
+But the young people are trying to show the old people how smart they are, it's subtly vicious.
+Whenever you have an opportunity to have an examining committee that's full of people with gray hair, that's what you want.
 
-# Job Presentations 
+# Job Presentations
 
 Job presentation deserves a special section because they are so important.
 It's basically a sales pitch in which you have to quickly convince a few people (hopefully your potential managers) that you are the right person for the job.
@@ -267,11 +268,11 @@ It's basically a sales pitch in which you have to quickly convince a few people 
 If the market needs you, the employer will trust you more.
 That's exactly what you need in order to request a higher paycheck.
 You need to tell them about your **vision**, and that you've already **done something**.
-If you cannot make these two points in 5 minutes, you've already lost. 
+If you cannot make these two points in 5 minutes, you've already lost.
 
 Concretely, you have **5 minutes** to:
 
-1. **Show you have some kind of vision.** By expressing your desire to work on a problem that somebody cares about, and that there's something new in your approach. 
+1. **Show you have some kind of vision.** By expressing your desire to work on a problem that somebody cares about, and that there's something new in your approach.
 
 2. **Show you have done something to solve a problem.** By providing a list with the steps that need to be taken in order to realize the vision. You don't have to have done all of those steps. But you can say something like: "here's what needs to be done."
 
@@ -287,7 +288,7 @@ For example, [here](../collaborations.html) is a list of research topics that I'
 # How to Finish
 
 <aside class="quote">
-    <em>“And of course, don't finish without answering questions.”</em> 
+    <em>“And of course, don't finish without answering questions.”</em>
 </aside>
 
 One of the best ways to finish is by **telling a joke**.
@@ -299,7 +300,7 @@ When you say thank you, it suggests that everybody has stayed that long out of p
 But you are not taking their time, you are giving them something.
 So don't say thank you before the wild applause.
 
-Your **last slide** is an opportunity for you to tell people who you are and what you have done. 
+Your **last slide** is an opportunity for you to tell people who you are and what you have done.
 And that's why your final slide should be labeled as "Contributions."
 
 Finally, the last thing you could do is to **salute** the audience.
@@ -313,6 +314,7 @@ Here are some of the best presentations I've seen:
 - ["The Mess We're In](https://youtu.be/lKXe3HUG2l4)," by Joe Armstrong, creator of Erlang (45 min)
 - ["The Art of Code](https://youtu.be/2jyPBjlKhtk)," by [Dylan Beattie](https://dylanbeattie.net/) (1h)
 - ["The Deep Synergy Between Testability and Good Design](https://youtu.be/4cVZvoFGJTU)," by [Michael Feathers](https://michaelfeathers.silvrback.com/) (50 min)
+- ["Software Is Changing (Again)](https://youtu.be/LCEmiRjPEtQ)," by Andrej Karpathy (40 min)
 
 # Summary
 
