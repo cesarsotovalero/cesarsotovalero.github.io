@@ -9,6 +9,8 @@ published: true
 
 # MOOCs Completed
 
+- [Introduction to AI and Machine Learning on Google Cloud](https://coursera.org/share/74d016e03aa7049bf9329923a164d6a0), Google Cloud, 2025
+
 - [Data Engineering Specialization](https://coursera.org/share/f4b8b5631bb031306e7c65e0dcf61151), DeepLearning.AI, 2025
 
 - [Machine Learning in Production](https://coursera.org/share/b451dfc5512c8446e6afac116361603a), DeepLearning.AI, 2025

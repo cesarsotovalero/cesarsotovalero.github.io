@@ -11,7 +11,7 @@ published: true
 
 I've given talks at academic and industry conferences, workshops, and similar events.
 
-I you want to invite me to speak at your event, look [here](./talks/invite-me.html).
+If you want to invite me to speak at your event, please [read this](./talks/invite-me.html).
 
 Below is a non-exhaustive list of my talks in reverse chronological order.
 

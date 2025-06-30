@@ -517,7 +517,14 @@ Below we summarize some of the most commonly used datasets, along with their cha
 
 Due to imbalance, accuracy is not informative (e.g., the credit card dataset has 99.8% non-fraud, so a trivial model gets 99.8% accuracy by predicting all non-fraud!). Hence, papers report metrics like AUC-ROC, Precision/Recall, or F1-score. For instance, on the Kaggle credit card data, an AUC-ROC around 0.95+ is achievable by top models, and PR AUC is much lower (since base fraud rate is 0.172%). In IEEE-CIS data, top models achieved about 0.92–0.94 AUC-ROC in the competition. PaySim being synthetic often yields extremely high AUC (sometimes >0.99 for simple models) since patterns might be easier to learn. When evaluating on these sets, it’s crucial to use proper cross-validation or the given train/test splits to avoid overfitting (particularly an issue with the small Kaggle credit card data).
 
-Overall, these datasets have driven a lot of research. However, one should be cautious when extrapolating results from them to real-world performance. Real production data can be more complex (concept drift, additional features, feedback loops). Nonetheless, the above datasets provide valuable benchmarks to compare algorithms under controlled conditions.
+Overall, these datasets have driven a lot of research.
+However, one should be cautious when extrapolating results from them to real-world performance.
+Real production data can be more complex (concept drift, additional features, feedback loops).
+Nonetheless, the above datasets provide valuable benchmarks to compare algorithms under controlled conditions.
+
+# External Resources
+
+- <a href="https://github.com/safe-graph/graph-fraud-detection-papers/"><i class="fab fa-github"></i></a> [graph-fraud-detection-papers](https://github.com/safe-graph/graph-fraud-detection-papers/)
 
 # References
 
