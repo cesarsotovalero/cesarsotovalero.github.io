@@ -4,6 +4,430 @@
   "data": [
     {
       "isBrandPartnership": false,
+      "text": "I've watched the recent talk “Software in The Era of AI” by Andrej Karpathy at Y Combinator many times now.\n\nWith 1M+ views on YT, it’s one of the best #AI talks I’ve seen for a general audience.\n\nIn ~40 minutes, Andrej distills the current trajectory of AI in a way that’s clear, engaging, and inspiring.\n\nI've recommended it to many friends, and now I find myself asking:\n⤷ What makes this talk exceptional?\n⤷ What can we learn from the speaker?\n\nHere’s what I think makes it superb:\n✓ He seems genuinely excited about the topic, positive, and has open body language.\n✓ He shares personal work along the way (tweets, posts, photos, and anecdotes), building trust and authenticity.\n✓ He speaks in 1st person, sharing opinions and reflections (“I think…”), which makes it feel personal.\n✓ He uses analogies and real-world examples constantly, e.g., when calling LLMs a new kind of OS.\n✓ He structures his talk into clear sections, recapping each one to reinforce key ideas.\n✓ His slides alternate between big, bold visuals and simple, centered headlines.\n✓ Most importantly, his tone stays hopeful throughout. Even when discussing limitations, he keeps the vibe optimistic.\n\nBelow is a more detailed breakdown of his flow ↓\n\nIntro:\n• Begins with enthusiasm and gratitude for being there.\n• Remarks on the title and explains why the topic matters.\n• Frames the big question: Why is software changing so fast?\n• Provides a historical perspective: Software 1.0 → 2.0 → 3.0.\n• Uses concrete examples to highlight his key observation.\n\nPart 1: Software Evolution\n• Quotes Andrew Ng: AI is the new electricity.\n• Explains the analogy with real-life examples (e.g., factories → software).\n• Adds his twist: \"LLMs are like a new OS.\"\n• Introduces a counterintuitive idea: We have a new magical computer helping us boil eggs.\n• Summarizes Part 1 with bullet points.\n\nPart 2: The Psychology of LLMs\n• Dives a bit into the internals of LLMs (transformers).\n• Acknowledges their current limitations.\n• Recommends sci-fi movies as a gift to the audience.\n• Summarizes Part 2 with images.\n\nPart 3: New Opportunities\n• Offers a new abstraction: LLMs as the GUIs for machine intelligence.\n• Gives real examples of current successes (e.g., Cursor).\n• Poses the big question: What will future apps look like?\n• Weaves analogies and personal stories (how he uses LLMs, how he “keeps AI on a leash,” his first Waymo ride, etc).\n• Shows an emotional video of kids vibe coding (going emotional with a hopeful vision).\n• Ends Part 3 with his vibe-coded app experiments and areas still unexplored (this opens up for the next final section)\n\nPart 4: Building for Agents\n• Makes a bold prediction: We’re entering a new era of digital “agents.”\n• Imagines future human–AI interaction.\n• Introduces upcoming tools and possibilities.\n\nFinal Summary:\n• Displays a collage of key slides tying everything together into a single storyline.\n\nOverall, an extremely well-packaged talk ✨\nShould we try to replicate this framework?",
+      "totalReactionCount": 7,
+      "likeCount": 7,
+      "commentsCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7344779550125346818/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_ai-activity-7344779550125346818-Nf8M?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFgwxwsBxhqAAhECIUhI_4AEAZck3SeTq3w",
+      "postedAt": "1d",
+      "postedDate": "2025-06-28 17:31:44.155 +0000 UTC",
+      "postedDateTimestamp": 1751131904155,
+      "urn": "7344779550125346818",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1756944000&v=beta&t=nbvbC67WrWqGVDVQN15BIomK9j1x3NjOiuRkpz_2PJs"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1756944000&v=beta&t=jODkhca78g-QgREPf4-on8PeWbDcqxX8tI1EubITeP8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1756944000&v=beta&t=pWyYxMO_e7QMhnNOAzT8o4BUEgIq_OdI-TbAMWMG4qU"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1756944000&v=beta&t=AHTMffij-Qcnqy-2BxOg_1oTE6k58GcZ-3FBHBrm3LY"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_1280/B4DZe3mEkQGgAk-/0/1751131903106?e=1753920000&v=beta&t=lvoj96kIVKaQhImQm0ekSpSWda0UHzZ0i64R6FWDWA4",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_2048_1536/B4DZe3mEkQGgAo-/0/1751131903199?e=1753920000&v=beta&t=5YJeTMAZ7kKYGBINQWz962t0WJVwNlOMvo4YrdPAFX4",
+          "width": 2046,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_160/B4DZe3mEkQGgAc-/0/1751131903106?e=1753920000&v=beta&t=AqnbeXDyCdGhsfD0OFpzsFLRIk6ug5sZ1AvvLmQdJb0",
+          "width": 160,
+          "height": 120
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_480/B4DZe3mEkQGgAY-/0/1751131903106?e=1753920000&v=beta&t=mKQ-40O-OB1Oai6_W4CZ5KDvMw38dIGNbi1oLBgiOjU",
+          "width": 480,
+          "height": 360
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_800/B4DZe3mEkQGgAg-/0/1751131903096?e=1753920000&v=beta&t=BSq3Fzsyic9zA0pnIcTEv4suUZRu6pVdtmfsPS-Cs1Y",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_20/B4DZe3mEkQGgAw-/0/1751131903096?e=1753920000&v=beta&t=JXVITxXhX8kFlczqGwMfAC3CUNKCQ3UbQPx_0_VNYe8",
+          "width": 20,
+          "height": 15
+        }
+      ],
+      "images": [
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_1280/B4DZe3mEkQGgAk-/0/1751131903106?e=1753920000&v=beta&t=lvoj96kIVKaQhImQm0ekSpSWda0UHzZ0i64R6FWDWA4",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_2048_1536/B4DZe3mEkQGgAo-/0/1751131903199?e=1753920000&v=beta&t=5YJeTMAZ7kKYGBINQWz962t0WJVwNlOMvo4YrdPAFX4",
+            "width": 2046,
+            "height": 1536
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_160/B4DZe3mEkQGgAc-/0/1751131903106?e=1753920000&v=beta&t=AqnbeXDyCdGhsfD0OFpzsFLRIk6ug5sZ1AvvLmQdJb0",
+            "width": 160,
+            "height": 120
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_480/B4DZe3mEkQGgAY-/0/1751131903106?e=1753920000&v=beta&t=mKQ-40O-OB1Oai6_W4CZ5KDvMw38dIGNbi1oLBgiOjU",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_800/B4DZe3mEkQGgAg-/0/1751131903096?e=1753920000&v=beta&t=BSq3Fzsyic9zA0pnIcTEv4suUZRu6pVdtmfsPS-Cs1Y",
+            "width": 800,
+            "height": 600
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-BIp58OwkaA/feedshare-shrink_20/B4DZe3mEkQGgAw-/0/1751131903096?e=1753920000&v=beta&t=JXVITxXhX8kFlczqGwMfAC3CUNKCQ3UbQPx_0_VNYe8",
+            "width": 20,
+            "height": 15
+          }
+        ]
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "mentions": [
+        {
+          "firstName": "Andrej",
+          "lastName": "Karpathy",
+          "urn": "ACoAAANHUM4Ba-7gLW9R4il3U9t3O_2BkbkSDvU",
+          "publicIdentifier": "andrej-karpathy-9a650716"
+        },
+        {
+          "firstName": "Andrew",
+          "lastName": "Ng",
+          "urn": "ACoAAAqBL5gBXJ8MGhQh-qHYyxAOW-DYlHM3VLg",
+          "publicIdentifier": "andrewyng"
+        }
+      ],
+      "companyMentions": [
+        {
+          "id": 167872,
+          "name": "Y Combinator",
+          "publicIdentifier": "https:www.linkedin.comschooly-combinator",
+          "url": "https://www.linkedin.com/school/y-combinator/"
+        },
+        {
+          "id": 105063188,
+          "name": "Cursor",
+          "publicIdentifier": "cursorllc",
+          "url": "https://www.linkedin.com/company/cursorllc/"
+        },
+        {
+          "id": 17900793,
+          "name": "Waymo",
+          "publicIdentifier": "waymo",
+          "url": "https://www.linkedin.com/company/waymo/"
+        }
+      ]
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "There was a time when I believed I just needed to push myself harder. Grind longer. Power through the fatigue.\n\nAll I needed, I thought, was “just one more research paper,” “just one more OSS project,” “just one more thing to prove to myself,” and so on…\n\nThis kind of self-pressure often drained me, but I was younger and could afford the late nights.\n\nToday, I need to be more mindful of my capacity.\n\nI’ve learned that willpower isn’t an infinite resource, and that the best long-term strategy is to dose it wisely.\n\nMotivation doesn’t fail because we’re weak. It fails because it runs out. \n\nJust like a muscle, our willpower gets depleted after use, and pretending it doesn’t only makes the crash harder.\n\nAnd if you feel like me, most of the time the problem isn’t actually depletion, it’s refusing to refuel.\n\nEnergy is a limited resource that can easily be drained.\n\nLooking into it, I found a 2008 study that showed people who rested just 10 minutes between demanding tasks recovered completely, while others stayed depleted.\n\nSo the next time you can’t focus, procrastinate, or lose control, don’t shame yourself. \n\nYour tank could be empty. What you need isn’t more discipline. You need a break that actually refuels you.\n\nRelaxing isn’t the same as cheering up. It’s not about just “feeling good”, it’s about slowing down. \n\nStop thinking\nNo cellphone\nQuiet\nStillness\nDoing nothing on purpose\n\nSo, I’ve stopped blaming myself when I’m drained.\n\nEvery time I’m exhausted, I tell myself: “Running on empty doesn’t make you strong, it actually makes you stuck.”\n\nYou’ll never hit rock bottom again if you learn to pause before the crash 🧘",
+      "totalReactionCount": 16,
+      "likeCount": 12,
+      "appreciationCount": 1,
+      "empathyCount": 2,
+      "praiseCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7344650995425030145/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_there-was-a-time-when-i-believed-i-just-needed-activity-7344650995425030145-WTr3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFgwxwsBxhqAAhECIUhI_4AEAZck3SeTq3w",
+      "postedAt": "1d",
+      "postedDate": "2025-06-28 09:00:54.326 +0000 UTC",
+      "postedDateTimestamp": 1751101254326,
+      "urn": "7344650995425030145",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1756944000&v=beta&t=nbvbC67WrWqGVDVQN15BIomK9j1x3NjOiuRkpz_2PJs"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1756944000&v=beta&t=jODkhca78g-QgREPf4-on8PeWbDcqxX8tI1EubITeP8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1756944000&v=beta&t=pWyYxMO_e7QMhnNOAzT8o4BUEgIq_OdI-TbAMWMG4qU"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1756944000&v=beta&t=AHTMffij-Qcnqy-2BxOg_1oTE6k58GcZ-3FBHBrm3LY"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_1280/B4DZe1xJ2iH4Ak-/0/1751101253261?e=1753920000&v=beta&t=9RvwrK0LdBxaiaCTSsFCirsJurdKwvnLN56aXtKvCGw",
+          "width": 1280,
+          "height": 1706
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_480/B4DZe1xJ2iH4AY-/0/1751101253261?e=1753920000&v=beta&t=YSi-nxh3eBrCY1WKjaCoTb2aez7HoUPwbq50Y9_suMQ",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_20/B4DZe1xJ2iH4Aw-/0/1751101253226?e=1753920000&v=beta&t=ecK1YzzW2bxWm6pFzWfSdJEjUcXwdoyaMXy9efEMOYo",
+          "width": 20,
+          "height": 26
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_800/B4DZe1xJ2iH4Ag-/0/1751101253261?e=1753920000&v=beta&t=XPvsbBIhlvy4SRyW9IHyN2EKpShOW-tAHnBebaw9uH0",
+          "width": 800,
+          "height": 1066
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_160/B4DZe1xJ2iH4Ac-/0/1751101253226?e=1753920000&v=beta&t=YukKs3-kQ5WO9XYwUsBD1lxGPRnvN-lRAn0kGOCJYng",
+          "width": 160,
+          "height": 213
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_2048_1536/B4DZe1xJ2iH4Ao-/0/1751101253327?e=1753920000&v=beta&t=Yd-_u_u8VRx75KhIPaiRjGy5oklClJ9CivLRGY0xy18",
+          "width": 1152,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_1280/B4DZe1xJ2WGgAk-/0/1751101251815?e=1753920000&v=beta&t=bW3B-jxg9_vKl0HgVVufsKE_OlRcrAIu21gmzHKn3HA",
+          "width": 1200,
+          "height": 1611
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_480/B4DZe1xJ2WGgAY-/0/1751101251815?e=1753920000&v=beta&t=5VeLB_fM0Laow4WqPbAP3IGYDbdSFC9gLWzlDicpBqQ",
+          "width": 480,
+          "height": 644
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_800/B4DZe1xJ2WGgAg-/0/1751101251815?e=1753920000&v=beta&t=77XElVJP3Q-zI3Pb9PUjxsHtCNqryJ_XmFK-WDkk0bM",
+          "width": 800,
+          "height": 1074
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_20/B4DZe1xJ2WGgAw-/0/1751101251765?e=1753920000&v=beta&t=lKShztn180Pa_zN32y7NiqLvKTzvtTR38M0krX0mv1E",
+          "width": 20,
+          "height": 26
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_160/B4DZe1xJ2WGgAc-/0/1751101251765?e=1753920000&v=beta&t=Ba_SBu7dUXQxrYz_Wlg7DeZbO7_MArYA7eDj1aHZyqU",
+          "width": 160,
+          "height": 214
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_2048_1536/B4DZe1xJ2WGgAo-/0/1751101251881?e=1753920000&v=beta&t=PW3_X0TnpSpRan5UE9orv_etBq9o1RErEDV-mwx_qCE",
+          "width": 1144,
+          "height": 1536
+        }
+      ],
+      "images": [
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_1280/B4DZe1xJ2iH4Ak-/0/1751101253261?e=1753920000&v=beta&t=9RvwrK0LdBxaiaCTSsFCirsJurdKwvnLN56aXtKvCGw",
+            "width": 1280,
+            "height": 1706
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_480/B4DZe1xJ2iH4AY-/0/1751101253261?e=1753920000&v=beta&t=YSi-nxh3eBrCY1WKjaCoTb2aez7HoUPwbq50Y9_suMQ",
+            "width": 480,
+            "height": 640
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_20/B4DZe1xJ2iH4Aw-/0/1751101253226?e=1753920000&v=beta&t=ecK1YzzW2bxWm6pFzWfSdJEjUcXwdoyaMXy9efEMOYo",
+            "width": 20,
+            "height": 26
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_800/B4DZe1xJ2iH4Ag-/0/1751101253261?e=1753920000&v=beta&t=XPvsbBIhlvy4SRyW9IHyN2EKpShOW-tAHnBebaw9uH0",
+            "width": 800,
+            "height": 1066
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_160/B4DZe1xJ2iH4Ac-/0/1751101253226?e=1753920000&v=beta&t=YukKs3-kQ5WO9XYwUsBD1lxGPRnvN-lRAn0kGOCJYng",
+            "width": 160,
+            "height": 213
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbaAIw0qjbKA/feedshare-shrink_2048_1536/B4DZe1xJ2iH4Ao-/0/1751101253327?e=1753920000&v=beta&t=Yd-_u_u8VRx75KhIPaiRjGy5oklClJ9CivLRGY0xy18",
+            "width": 1152,
+            "height": 1536
+          }
+        ],
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_1280/B4DZe1xJ2WGgAk-/0/1751101251815?e=1753920000&v=beta&t=bW3B-jxg9_vKl0HgVVufsKE_OlRcrAIu21gmzHKn3HA",
+            "width": 1200,
+            "height": 1611
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_480/B4DZe1xJ2WGgAY-/0/1751101251815?e=1753920000&v=beta&t=5VeLB_fM0Laow4WqPbAP3IGYDbdSFC9gLWzlDicpBqQ",
+            "width": 480,
+            "height": 644
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_800/B4DZe1xJ2WGgAg-/0/1751101251815?e=1753920000&v=beta&t=77XElVJP3Q-zI3Pb9PUjxsHtCNqryJ_XmFK-WDkk0bM",
+            "width": 800,
+            "height": 1074
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_20/B4DZe1xJ2WGgAw-/0/1751101251765?e=1753920000&v=beta&t=lKShztn180Pa_zN32y7NiqLvKTzvtTR38M0krX0mv1E",
+            "width": 20,
+            "height": 26
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_160/B4DZe1xJ2WGgAc-/0/1751101251765?e=1753920000&v=beta&t=Ba_SBu7dUXQxrYz_Wlg7DeZbO7_MArYA7eDj1aHZyqU",
+            "width": 160,
+            "height": 214
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGhk7j92qhkEQ/feedshare-shrink_2048_1536/B4DZe1xJ2WGgAo-/0/1751101251881?e=1753920000&v=beta&t=PW3_X0TnpSpRan5UE9orv_etBq9o1RErEDV-mwx_qCE",
+            "width": 1144,
+            "height": 1536
+          }
+        ]
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "The real risk with AI is not that it sometimes produces wrong outputs. It’s that we still don’t know when (or where) it will.\n\nIn 2023, researchers from Harvard University, MIT Professional Education, The Wharton School, and Boston Consulting Group (BCG) ran experiments with 758 consultants using GPT‑4 and identified an invisible boundary.\n\nThey called it the \"Jagged Frontier\". The inability of LLMs to deal the same way with tasks with the same level of complexity for a human. \n\nWhat did they found?\n\nWhen tasks matched GPT‑4’s strengths:\n✅ +40% in quality, +25% faster execution, +12% more output\n\nBut when tasks didn’t:\n❌ A 19% drop in efficiency \n\nFair enough :/ But what's the real issue?\n\nThe problem is that most people couldn’t tell when they’d crossed the line:\n\n👉 “On some tasks AI is immensely powerful, and on others it fails completely or subtly. And unless you use AI a lot, you won’t know which is which.”\n\nOkay, that was 2 years ago. Today…\n\nAI systems are adapting: adding guardrails, evals, decision triggers, and human oversight.\n\nThe frontier is beginning to blur, not because LLMs are flawless, but because our systems for working with them are getting better.\n\nWe’re entering a new agentic phase by:\n\n✓ Mapping workflows → e.g., aligning AI strengths with task complexity\n✓ Building guardrails → e.g., audit trails, explainable outputs, confidence thresholds\n✓ Upskilling humans → e.g., at prompt design, uncertainty detection, human-in-the-loop orchestration\n\nI believe there is great potential in having models that know when to pause, ask, and let humans decide, completely flattering the line. \n\nAsk yourself:\nWhere are the jagged edges in your current workflow?\n\nTbh, it's getting harder for me to figure this one out 😄",
+      "totalReactionCount": 7,
+      "likeCount": 7,
+      "commentsCount": 2,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7342933204816789504/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_the-real-risk-with-ai-is-not-that-it-sometimes-activity-7342933204816789504-eiHo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFgwxwsBxhqAAhECIUhI_4AEAZck3SeTq3w",
+      "postedAt": "6d",
+      "postedDate": "2025-06-23 15:15:01.13 +0000 UTC",
+      "postedDateTimestamp": 1750691701130,
+      "urn": "7342933204816789504",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1756944000&v=beta&t=nbvbC67WrWqGVDVQN15BIomK9j1x3NjOiuRkpz_2PJs"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1756944000&v=beta&t=jODkhca78g-QgREPf4-on8PeWbDcqxX8tI1EubITeP8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1756944000&v=beta&t=pWyYxMO_e7QMhnNOAzT8o4BUEgIq_OdI-TbAMWMG4qU"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1756944000&v=beta&t=AHTMffij-Qcnqy-2BxOg_1oTE6k58GcZ-3FBHBrm3LY"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "video": [
+        {
+          "url": "https://dms.licdn.com/playlist/vid/v2/D4D05AQEWjbEaDZmo1g/mp4-720p-30fp-crf28/B4DZedCq7oGkBk-/0/1750686417069?e=1751853600&v=beta&t=n3h95FW9lycyTU0VwIuc6UHXaTBo8vV7v9egm5nrk6g",
+          "poster": "https://media.licdn.com/dms/image/v2/D4D05AQEWjbEaDZmo1g/feedshare-thumbnail_720_1280/B4DZedCq7oGkAw-/0/1750686413681?e=1751853600&v=beta&t=eYSP7RcbS31HxtXaXhrGVsf3fMfG22CnWBuiLT6g7x0",
+          "duration": 29000,
+          "thumbnails": null,
+          "video": null
+        }
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "linkedInVideo",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "companyMentions": [
+        {
+          "id": 1646,
+          "name": "Harvard University",
+          "publicIdentifier": "https:www.linkedin.comschoolharvard-university",
+          "url": "https://www.linkedin.com/school/harvard-university/"
+        },
+        {
+          "id": 481634,
+          "name": "MIT Professional Education",
+          "publicIdentifier": "https:www.linkedin.comschoolmit-professional-education",
+          "url": "https://www.linkedin.com/school/mit-professional-education/"
+        },
+        {
+          "id": 5290,
+          "name": "The Wharton School",
+          "publicIdentifier": "https:www.linkedin.comschoolthe-wharton-school",
+          "url": "https://www.linkedin.com/school/the-wharton-school/"
+        },
+        {
+          "id": 1784,
+          "name": "Boston Consulting Group (BCG)",
+          "publicIdentifier": "boston-consulting-group",
+          "url": "https://www.linkedin.com/company/boston-consulting-group/"
+        }
+      ]
+    },
+    {
+      "isBrandPartnership": false,
       "text": "Had a fantastic time last week talking about the impact of AI in the financial sector at AI-fokus in Stockholm. \n\nI was placed in the business track and delivered a quick ~15-minute talk targeting decision-makers.\n\nHere’s my core message ↓\n\nEmployees at large (financial) organizations have a ton of ideas for AI use cases. But turning those ideas into real, production-grade systems is not straightforward.\n\nTo move from idea to impact, each use case needs a clear (positive) response to each of the following questions, in that particular order:\n\n✔️ What’s the value?\n✔️ What about risks and ethics?\n✔️ Do we have the data?\n✔️ Are we tech-ready?\n✔️ Can we iterate (at scale)?\n\nHere is the recorded session:\n⤷ https://lnkd.in/dXar3T83\n\n👌🏻 Thanks to the organizers Mattias Karlsson, Jeanne Göthberg, and the AI-fokus team for such an awesome experience.",
       "totalReactionCount": 32,
       "likeCount": 25,
