@@ -15,6 +15,7 @@ I've peer-reviewed papers for the following journals and conferences:
         <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">See my verified peer reviews in the Web of Science</a></em>
 </aside>
 
+- [Springer Software Quality Journal](https://link.springer.com/journal/11219), July 2025 [Recognition](../files/certificates/2025_Springer_Software_Quality.pdf)
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), October 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
 - [Information Processing & Management](https://www.sciencedirect.com/journal/information-processing-and-management), June 2024 [Recognition](../files/certificates/2024_IPM_Reviewer_Certificate.pdf)
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), May 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
