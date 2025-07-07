@@ -25,30 +25,30 @@ published: true
 Financial fraud is a pervasive problem costing institutions and customers billions annually.
 Most known examples include credit card fraud, fraudulent online payments, and money laundering.
 Banks worldwide faced an estimated $$ \$442 $$ billion in fraud-related losses in 2023 alone.
-In particular, credit card transactional fraud is projected to reach $$ \$43 $$ billion in annual losses by 2026.[^4]
-Beyond direct losses, fraud undermines customer trust and can even lead to false positives where legitimate transactions are wrongly blocked.
-These false alarms frustrate customers and damage banks' reputation.
-Consequently, fraud detection systems must not only catch as much fraud as possible but also minimize false positives.
+In particular, credit card transactional fraud is projected to reach $$ \$43 $$ billion in annual losses by 2026.
+Beyond direct losses, fraud undermines customer trust and damages banks' reputation.
+For example, it leads to false positives where legitimate transactions are wrongly blocked.
+Consequently, financial fraud detection systems must not only catch as much fraud as possible but also minimize false positives.
 
 Fraudsters' tactics evolve rapidly.
 Traditional rule-based systems (or simple statistical methods) have proven inadequate against today’s adaptive fraud models.
 On one hand, fraudsters form complex schemes and exploit networks of accounts.
 On the other hand, legitimate transaction volumes continue to grow due to the rise of e-commerce and digital payments.
 
-This has driven a shift toward Machine Learning (ML) and AI-based approaches that can learn subtle patterns and adapt over time.
-Critically, detection must happen in real-time (or near-real time) to intervene before fraudsters can complete illicit transactions.
+This situation has driven a shift toward Machine Learning (ML) and AI-based approaches that can learn subtle patterns and adapt over time.
+Critically, financial fraud detection must happen in real-time (or near-real time) to intervene before fraudsters can complete illicit transactions.
 Catching fraud "closer to the time of fraud occurrence is key" so that suspicious transactions can be blocked or flagged immediately.[^2]
 
-This article deep dives into the current state-of-the-art of real-time transactional fraud detection, spanning both academic research and industry practices.
+This article deep dives into the current state-of-the-art of real-time transactional fraud detection, spanning both academic research and current industry practices.
 
-We cover the major model families used today:
+I cover the major model families used today:
 
 1. **Classical ML models:** Logistic regression, decision trees, random forests, and SVMs.
 2. **Deep Learning models:** ANNs, CNNs, RNNs/LSTMs, autoencoders, and GANs.
 3. **Graph-based models:** GNNs and graph algorithms that leverage transaction relationships.
 4. **Transformer-based and foundation models:** Large pre-trained models like Stripe’s payments foundation model.
 
-For each category, we discuss representative use cases or studies, highlight strengths and weaknesses, and comment on their suitability for real-time fraud detection.
+For each category, I discuss representative use cases or studies, highlight strengths and weaknesses, and comment on their suitability for real-time fraud detection.
 
 # Classical ML Models
 
@@ -56,16 +56,29 @@ Classical ML algorithms have long been used in fraud detection and remain strong
 These include linear models like [logistic regression](https://en.wikipedia.org/wiki/Logistic_regression), distance-based classifiers like [k-Nearest Neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm), and tree-based models such as [random forest](https://en.wikipedia.org/wiki/Random_forest) and [gradient boosted trees](https://en.wikipedia.org/wiki/Gradient_boosting) (e.g., [XGBoost](https://xgboost.readthedocs.io/)).
 These approaches operate on hand-crafted features derived from transaction data (e.g., `transaction_amount`, `location`, `device_id`, `time_of_day`, etc.), often requiring substantial feature engineering by domain experts.
 
-Banks and financial institutions historically relied on logistic regression due to its simplicity and interpretability (its coefficients directly indicate risk factors).
-Even today, logistic models serve as interpretable baseline detectors and are sometimes combined with a [business rule management system](https://en.wikipedia.org/wiki/Business_rule_management_system).
+Logistic regression is a foundational model in fraud detection.
+Banks and financial institutions have historically relied on it due to its simplicity and interpretability (each coefficient $$w_i$$ has a direct and intuitive meaning). A positive coefficient means the feature increases the log-odds of fraud, a negative coefficient means it decreases the risk.
+
+$$ P(y = 1 \mid \mathbf{x}) = \sigma(\mathbf{w}^\top \mathbf{x} + b) = \frac{1}{1 + e^{-(\mathbf{w}^\top \mathbf{x} + b)}} $$
+
+* $$\mathbf{x}$$: Feature vector (e.g., transaction amount, time of day, merchant category)
+* $$\mathbf{w}$$: Coefficients (risk factors)
+* $$b$$: Bias or intercept
+* $$\sigma$$: Sigmoid function that squashes the output into [0,1]
+
+Even today, logistic models serve as interpretable baseline detectors and are sometimes combined with a [Business Rule Management Systems](https://en.wikipedia.org/wiki/Business_rule_management_system).
 However, linear models struggle to capture complex non-linear patterns in large transaction datasets.
 
-Decision trees and ensemble forests address this by automatically learning non-linear splits and interactions.
+<aside class="quote">
+    <em>“XGBoost builds trees sequentially, where each tree learns from the mistakes of the previous ones.”</em>
+</aside>
+
+**Decision trees** and ensemble forests address this by automatically learning non-linear splits and interactions.
 In fact, boosted decision tree ensembles (like XGBoost) became popular in fraud detection competitions and industry solutions due to their high accuracy on tabular data.
-These models can capture anomalous combinations of features in individual transactions effectively.
+These models can capture anomalous combinations of features in individual transactions effectively, learning complex, non-linear interactions between features.
 For example, [the winning solutions](https://github.com/VedangW/ieee-cis-fraud-detection) of the [IEEE-CIS fraud detection Kaggle challenge](https://www.kaggle.com/c/ieee-fraud-detection/overview) (2019) heavily used engineered features fed into gradient boosting models, achieving strong performance (AUC ≈ 0.91).
 
-Support Vector Machines ([SVMs](https://en.wikipedia.org/wiki/Support_vector_machine)) have also been explored in academic studies.
+**Support Vector Machines** ([SVMs](https://en.wikipedia.org/wiki/Support_vector_machine)) have also been explored in academic studies.
 However, while they can model non-linear boundaries (with kernels), they tend to be computationally heavy for large datasets and offer no interpretable output.
 Therefore, the industry has gravitated more to tree ensembles for complex models.
 
@@ -116,10 +129,10 @@ So, while classical models are fast to deploy and iterate on, they do require on
 
 Representative research and use-cases for classical methods include:
 
-- **Logistic regression and decision trees as baseline models:** Many banks have deployed logistic regression for real-time credit card fraud scoring due to its interpretability.
-- **Ensemble methods in academic studies:** Research has focused on evaluating logistic vs. decision tree vs. random forest on a credit card dataset (often finding tree ensembles outperform linear models in Recall).[^17]
-- **Kaggle competitions:** XGBoost was heavily used in the Kaggle IEEE-CIS 2019 competition leveraging high accuracy on tabular features.
-- **Hybrid systems:** Many production systems combine manual business rules for known high-risk patterns with an ML model for subtler patterns, using the rules for immediate high-Precision flags and the ML model for broad coverage.
+* **Logistic regression and decision trees as baseline models:** Many banks have deployed logistic regression for real-time credit card fraud scoring due to its interpretability.
+* **Ensemble methods in academic studies:** Research has focused on evaluating logistic vs. decision tree vs. random forest on a credit card dataset (often finding tree ensembles outperform linear models in Recall).[^17]
+* **Kaggle competitions:** XGBoost was heavily used in the Kaggle IEEE-CIS 2019 competition leveraging high accuracy on tabular features.
+* **Hybrid systems:** Many production systems combine manual business rules for known high-risk patterns with an ML model for subtler patterns, using the rules for immediate high-Precision flags and the ML model for broad coverage.
 
 # Deep Learning Models
 
@@ -129,7 +142,7 @@ DNNs can automatically learn complex feature representations from raw data, pote
 ## Deep Learning Architectures
 
 Several deep architectures have been explored for fraud detection.
-Below, we summarize the most common types.
+Below, I summarize the most common types.
 
 ### Feed-Forward Neural Networks (ANNs)
 
@@ -238,7 +251,7 @@ A DNN might memorize past fraud patterns that fraudsters no longer use, if not c
 Finally, latency can be a concern.
 A large CNN or LSTM might take longer to evaluate than a logistic regression.
 However, many deep models used for fraud are not excessively large (e.g., an LSTM with a few hundred units), and with optimized inference (batching, quantization, etc.) they can often still meet real-time requirements.
-We discuss latency more later, but suffice it to say that deploying deep models at scale might necessitate GPU acceleration or model optimizations in high-throughput environments.
+I discuss latency more later, but suffice it to say that deploying deep models at scale might necessitate GPU acceleration or model optimizations in high-throughput environments.
 
 ## Real-Time Suitability
 
@@ -266,10 +279,10 @@ concept drift.
 
 Notable examples of deep learning in fraud detection:
 
-- **Feedforward DNNs:** PayPal in the mid-2010s [applied neural networks to fraud](https://www.paypal.com/us/brc/article/payment-fraud-detection-machine-learning?utm_source=chatgpt.com), fintech companies like Feedzai have further advanced this methodology by combining DNNs with tree-based models.[^24]
-- **RNNs and LSTMs:** Multiple studies have shown that LSTM networks can detect sequential fraud behavior that static models miss, improving Recall by capturing temporal patterns. Large merchants have employed LSTM-based models to analyze user event streams, enabling the detection of account takeovers and session-based fraud in real-time.
-- **Autoencoder-based anomaly detection:** Unsupervised autoencoders have been used by banks to flag new types of fraud. For instance, an autoencoder trained on normal mobile transactions flagged anomalies that turned out to be new fraud rings exploiting a loophole (detected via high reconstruction error).
-- **Hybrid models:** Recent trends include using DNNs to generate features for a gradient boosted tree. One effective approach is to use deep learning models, such as autoencoders or embedding networks, to learn rich feature representations from transaction data. These learned embeddings are then fed into XGBoost, combining the deep models' ability to capture complex patterns with the interpretability and efficiency of tree-based methods
+* **Feedforward DNNs:** PayPal in the mid-2010s [applied neural networks to fraud](https://www.paypal.com/us/brc/article/payment-fraud-detection-machine-learning?utm_source=chatgpt.com), fintech companies like Feedzai have further advanced this methodology by combining DNNs with tree-based models.[^24]
+* **RNNs and LSTMs:** Multiple studies have shown that LSTM networks can detect sequential fraud behavior that static models miss, improving Recall by capturing temporal patterns. Large merchants have employed LSTM-based models to analyze user event streams, enabling the detection of account takeovers and session-based fraud in real-time.
+* **Autoencoder-based anomaly detection:** Unsupervised autoencoders have been used by banks to flag new types of fraud. For instance, an autoencoder trained on normal mobile transactions flagged anomalies that turned out to be new fraud rings exploiting a loophole (detected via high reconstruction error).
+* **Hybrid models:** Recent trends include using DNNs to generate features for a gradient boosted tree. One effective approach is to use deep learning models, such as autoencoders or embedding networks, to learn rich feature representations from transaction data. These learned embeddings are then fed into XGBoost, combining the deep models' ability to capture complex patterns with the interpretability and efficiency of tree-based methods
 
 # Graph-Based Models
 
@@ -371,14 +384,14 @@ For example, fraud rings forming new connectivity patterns.
 
 Representative examples of graph-based fraud detection:
 
-- **Blockchain networks:** The [Elliptic Bitcoin Dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset.html) is a graph of 203,769 transactions (nodes) with known illicit vs. licit labels. GNNs models on this dataset achieved strong results, showing that analyzing the transaction network is effective for detecting illicit cryptocurrency flows.
-- **Credit card networks:** Researchers built a graph of credit card transaction and applied a GNNs which outperformed a baseline MLP by leveraging connections (e.g., card linked to a fraudulent merchant gives card a higher fraud probability).
-- **E-commerce networks:** Companies like Alibaba and PayPal have internal systems modeling user networks. For example, accounts connected via a shared device or IP can indicate [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack) or mule accounts. Graph algorithms identified clusters of accounts that share many attributes (forming fraud communities) which were then taken down as a whole.
-- **Telecom identity fraud:** Graphs connecting phone numbers, IDs, and addresses have been used to catch identity fraud rings. A famous case is detecting “bust-out fraud” in which a group of credit card accounts all max out and default: the accounts often share phone or address; linking them in a graph helps catch the ring before the bust-out completes.
-- **Social networks:** In social finance platforms or peer-to-peer payments, graph methods are used to detect money laundering or collusion by analyzing the network of transactions among users (e.g., unusually interconnected payment groups).
+* **Blockchain networks:** The [Elliptic Bitcoin Dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset.html) is a graph of 203,769 transactions (nodes) with known illicit vs. licit labels. GNNs models on this dataset achieved strong results, showing that analyzing the transaction network is effective for detecting illicit cryptocurrency flows.
+* **Credit card networks:** Researchers built a graph of credit card transaction and applied a GNNs which outperformed a baseline MLP by leveraging connections (e.g., card linked to a fraudulent merchant gives card a higher fraud probability).
+* **E-commerce networks:** Companies like Alibaba and PayPal have internal systems modeling user networks. For example, accounts connected via a shared device or IP can indicate [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack) or mule accounts. Graph algorithms identified clusters of accounts that share many attributes (forming fraud communities) which were then taken down as a whole.
+* **Telecom identity fraud:** Graphs connecting phone numbers, IDs, and addresses have been used to catch identity fraud rings. A famous case is detecting “bust-out fraud” in which a group of credit card accounts all max out and default: the accounts often share phone or address; linking them in a graph helps catch the ring before the bust-out completes.
+* **Social networks:** In social finance platforms or peer-to-peer payments, graph methods are used to detect money laundering or collusion by analyzing the network of transactions among users (e.g., unusually interconnected payment groups).
 
 Overall, graph-based methods, especially GNNs, represent a cutting-edge approach that can significantly enhance fraud detection by considering relational data.
-As tooling and infrastructure improve (graph databases, streaming graph processing), we expect to see more real-time GNNs deployments for fraud in the coming years.
+As tooling and infrastructure improve (graph databases, streaming graph processing), I expect to see more real-time GNNs deployments for fraud in the coming years.
 
 # Transformers and Foundation Models
 
@@ -484,11 +497,11 @@ In many cases, a foundation model could be used to periodically score accounts o
 
 Use cases and research for transformers in fraud:
 
-- **Stripe’s Payments Foundation Model:** A transformer-based model trained on billions of transactions, now used to embed transactions and feed into Stripe’s real-time fraud systems. It improved certain fraud detection rates from 59% to 97% and enabled detection of subtle sequential fraud patterns that were previously missed.
-- **Tabular transformers:** Studies like [Chang et al. (2023)](https://arxiv.org/pdf/2406.03733v2) applied a transformer to the Kaggle credit card dataset and compared it to SVM, Random Forest, XGBoost, etc. The transformer achieved comparable or superior Precision/Recall, demonstrating that even on tabular data a transformer can learn effectively.
-- **Sequence anomaly detection:** Some works use transformers to model time series of transactions per account. A transformer may be trained to predict the next transaction features; if the actual next transaction diverges significantly, it could flag an anomaly. This is analogous to language model use (predict next word).
-- **Cross-entity sequence modeling:** Transformers can also encode sequences of transactions across entities, e.g., tracing a chain of transactions through intermediary accounts (useful in money laundering detection). The recent FraudGT model[^27] combines ideas of GNNs and transformer to handle transaction graphs with sequential relations.
-- **Foundation models for documents and text in fraud:** While not the focus here, note that transformers (BERT, GPT) are heavily used to detect fraud in textual data (e.g., scam emails, fraudulent insurance claims text, etc). In a holistic fraud system, a foundation model might take into account not just the structured transaction info but also any unstructured data, like customer input or messages, to make a decision.
+* **Stripe’s Payments Foundation Model:** A transformer-based model trained on billions of transactions, now used to embed transactions and feed into Stripe’s real-time fraud systems. It improved certain fraud detection rates from 59% to 97% and enabled detection of subtle sequential fraud patterns that were previously missed.
+* **Tabular transformers:** Studies like [Chang et al. (2023)](https://arxiv.org/pdf/2406.03733v2) applied a transformer to the Kaggle credit card dataset and compared it to SVM, Random Forest, XGBoost, etc. The transformer achieved comparable or superior Precision/Recall, demonstrating that even on tabular data a transformer can learn effectively.
+* **Sequence anomaly detection:** Some works use transformers to model time series of transactions per account. A transformer may be trained to predict the next transaction features; if the actual next transaction diverges significantly, it could flag an anomaly. This is analogous to language model use (predict next word).
+* **Cross-entity sequence modeling:** Transformers can also encode sequences of transactions across entities, e.g., tracing a chain of transactions through intermediary accounts (useful in money laundering detection). The recent FraudGT model[^27] combines ideas of GNNs and transformer to handle transaction graphs with sequential relations.
+* **Foundation models for documents and text in fraud:** While not the focus here, note that transformers (BERT, GPT) are heavily used to detect fraud in textual data (e.g., scam emails, fraudulent insurance claims text, etc). In a holistic fraud system, a foundation model might take into account not just the structured transaction info but also any unstructured data, like customer input or messages, to make a decision.
 
 ## Summary
 
@@ -503,17 +516,17 @@ As these models become more accessible (with open-source frameworks and possibly
 
 Research in fraud detection often relies on a few key **public datasets** to evaluate models, given that real financial data is usually proprietary.
 
-Below we summarize some of the most commonly used datasets, along with their characteristics:
+Below I summarize some of the most commonly used datasets, along with their characteristics:
 
-- [:globe_with_meridians: Credit Card Fraud Detection (Kaggle, 2013)](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud): A classic dataset containing real European credit card transactions over two days. Its key characteristics are its extreme class imbalance (0.172% fraud) and anonymized features (28 PCA components), making it a standard benchmark for testing algorithms on imbalanced data.
+* [:globe_with_meridians: Credit Card Fraud Detection (Kaggle, 2013)](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud): A classic dataset containing real European credit card transactions over two days. Its key characteristics are its extreme class imbalance (0.172% fraud) and anonymized features (28 PCA components), making it a standard benchmark for testing algorithms on imbalanced data.
 
-- [:globe_with_meridians: IEEE-CIS Fraud Detection (Kaggle, 2019)](https://www.kaggle.com/c/ieee-fraud-detection): A large, rich dataset from an e-commerce provider, released for a Kaggle competition. It features ~300 raw features (device info, card details, etc.), missing values, and a moderate imbalance (3.5% fraud). It is ideal for evaluating complex feature engineering and ensemble models for card-not-present fraud.
+* [:globe_with_meridians: IEEE-CIS Fraud Detection (Kaggle, 2019)](https://www.kaggle.com/c/ieee-fraud-detection): A large, rich dataset from an e-commerce provider, released for a Kaggle competition. It features ~300 raw features (device info, card details, etc.), missing values, and a moderate imbalance (3.5% fraud). It is ideal for evaluating complex feature engineering and ensemble models for card-not-present fraud.
 
-- [:globe_with_meridians: PaySim (Kaggle, 2016)](https://www.kaggle.com/datasets/ealaxi/paysim1): A large-scale synthetic dataset that simulates mobile money transactions. It contains over 6 million transactions and is useful for testing model scalability in a controlled environment. Because it is synthetic, models may achieve unrealistically high performance.
+* [:globe_with_meridians: PaySim (Kaggle, 2016)](https://www.kaggle.com/datasets/ealaxi/paysim1): A large-scale synthetic dataset that simulates mobile money transactions. It contains over 6 million transactions and is useful for testing model scalability in a controlled environment. Because it is synthetic, models may achieve unrealistically high performance.
 
-- [:globe_with_meridians: Elliptic Bitcoin Dataset (Kaggle, 2019)](https://www.kaggle.com/datasets/ellipticco/elliptic-data-set): A temporal graph of over 200,000 Bitcoin transactions, where nodes are transactions and edges represent fund flows. It is a key benchmark for evaluating graph-based fraud detection methods like GNNs. Only a small fraction of nodes are labeled as illicit, presenting a challenge.
+* [:globe_with_meridians: Elliptic Bitcoin Dataset (Kaggle, 2019)](https://www.kaggle.com/datasets/ellipticco/elliptic-data-set): A temporal graph of over 200,000 Bitcoin transactions, where nodes are transactions and edges represent fund flows. It is a key benchmark for evaluating graph-based fraud detection methods like GNNs. Only a small fraction of nodes are labeled as illicit, presenting a challenge.
 
-- Other Datasets: Niche datasets exist for related problems beyond transaction fraud. These include datasets for insider threats (e.g., user behavior logs), social media fraud (e.g., bot detection), and corporate fraud (e.g., Enron email corpus).
+* Other Datasets: Niche datasets exist for related problems beyond transaction fraud. These include datasets for insider threats (e.g., user behavior logs), social media fraud (e.g., bot detection), and corporate fraud (e.g., Enron email corpus).
 
 Due to imbalance, accuracy is not informative (e.g., the credit card dataset has 99.8% non-fraud, so a trivial model gets 99.8% accuracy by predicting all non-fraud!). Hence, papers report metrics like AUC-ROC, Precision/Recall, or F1-score. For instance, on the Kaggle credit card data, an AUC-ROC around 0.95+ is achievable by top models, and PR AUC is much lower (since base fraud rate is 0.172%). In IEEE-CIS data, top models achieved about 0.92–0.94 AUC-ROC in the competition. PaySim being synthetic often yields extremely high AUC (sometimes >0.99 for simple models) since patterns might be easier to learn. When evaluating on these sets, it’s crucial to use proper cross-validation or the given train/test splits to avoid overfitting (particularly an issue with the small Kaggle credit card data).
 
@@ -524,7 +537,7 @@ Nonetheless, the above datasets provide valuable benchmarks to compare algorithm
 
 # External Resources
 
-- <a href="https://github.com/safe-graph/graph-fraud-detection-papers/"><i class="fab fa-github"></i></a> [graph-fraud-detection-papers](https://github.com/safe-graph/graph-fraud-detection-papers/)
+* <a href="https://github.com/safe-graph/graph-fraud-detection-papers/"><i class="fab fa-github"></i></a> [graph-fraud-detection-papers](https://github.com/safe-graph/graph-fraud-detection-papers/)
 
 # References
 
