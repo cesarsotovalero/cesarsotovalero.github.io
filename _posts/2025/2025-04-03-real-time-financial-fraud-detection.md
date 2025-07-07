@@ -416,7 +416,6 @@ So that these models can "speak" transactional data.
 > For the fraud use-case, Stripe reports a dramatic improvement: by feeding sequences of these transaction embeddings into a downstream classifier, they achieved an increase in detection rate for certain fraud attacks from 59% to 97% overnight.
 > In particular, they targeted “card testing” fraud (fraudsters testing stolen card credentials with small purchases), something that often hides in high-volume data.
 > The transformer foundation model was able to spot subtle sequential patterns of card testing that previous feature-engineered models missed, blocking attacks in real-time before they could do damage.
-> This showcases the potential of transformer models: “Turns out attention was all payments needed!”, as the Stripe engineers said.
 
 Researchers have applied Transformer encoders to tabular data as well.[^18]
 For example, using models like [TabTransformer](https://github.com/lucidrains/tab-transformer-pytorch) or integration of transformers with structured data.
