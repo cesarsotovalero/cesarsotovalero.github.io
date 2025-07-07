@@ -4,6 +4,596 @@
   "data": [
     {
       "isBrandPartnership": false,
+      "text": "If this trend continues, dev platforms will soon morph into buttonless, chat-based CLI environments.\n\nMore and more, my terminal is starting to replace my IDE.\n\n—\n\nDo you remember when we used to complain about how long CI pipelines took to run?\n\nWell, AI agents' \"thinking time\" might soon replace CI pipelines in that regard.\n\n—\n\nEverything is changing... too fast.\n\nAre you also feeling lost in the woods of emerging AI dev tools? 😒",
+      "totalReactionCount": 16,
+      "likeCount": 15,
+      "empathyCount": 1,
+      "repostsCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7347672250042462208/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_if-this-trend-continues-dev-platforms-will-activity-7347672250042462208-tugJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkwoU0B1eCbcYV1E4hFRtTenpSo1zfyW1g",
+      "postedAt": "8h",
+      "postedDate": "2025-07-06 17:06:17.559 +0000 UTC",
+      "postedDateTimestamp": 1751821577559,
+      "urn": "7347672250042462208",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1757548800&v=beta&t=QPNlPNAq8gNhEkKa7AUSb9CzE6ins8S9wJbECZG5yB8"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1757548800&v=beta&t=ri55NJD2mkT2LuN9oeW9n2OG61Uvz0cyT5_U3ioy4o8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1757548800&v=beta&t=M_Xgw1_DgK4pKgZ41rrIJpfI-75rfR-CmXTGX4KUXO4"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1757548800&v=beta&t=uhAnl7Ua28weCH9x1pceEeiOkQk2WnLQuUe-oXp0qo8"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_2048_1536/B4DZfgs.hrGUAo-/0/1751821576801?e=1754524800&v=beta&t=cdkunb0Tsal2kYrVUURu-vD85_-Kby05rCvLHPt6Lxs",
+          "width": 900,
+          "height": 1209
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_1280/B4DZfgs.hrGUAk-/0/1751821576781?e=1754524800&v=beta&t=pFhG1IcqeIcbymlCwXYg9ugUHHGhtgaajAI-HgIldOE",
+          "width": 900,
+          "height": 1209
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_480/B4DZfgs.hrGUAY-/0/1751821576781?e=1754524800&v=beta&t=nWLssD8RSPwDkmno9OCAc4xCJ-jue9lTpAXmvm15lYY",
+          "width": 480,
+          "height": 644
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_800/B4DZfgs.hrGUAg-/0/1751821576781?e=1754524800&v=beta&t=pT38EGN17d9LkMSB_JXAiujfFaTaL6SygBA_YBjbiVQ",
+          "width": 800,
+          "height": 1074
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_20/B4DZfgs.hrGUAw-/0/1751821576762?e=1754524800&v=beta&t=IznkMAeymqkrbQbLj1SACwRfwCpzNyIzKvrszHsQfZk",
+          "width": 20,
+          "height": 26
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_160/B4DZfgs.hrGUAc-/0/1751821576762?e=1754524800&v=beta&t=ox2eBD5V3aQu0lG0De6D9jF11Tfmmoig8A4GUnFEf58",
+          "width": 160,
+          "height": 214
+        }
+      ],
+      "images": [
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_2048_1536/B4DZfgs.hrGUAo-/0/1751821576801?e=1754524800&v=beta&t=cdkunb0Tsal2kYrVUURu-vD85_-Kby05rCvLHPt6Lxs",
+            "width": 900,
+            "height": 1209
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_1280/B4DZfgs.hrGUAk-/0/1751821576781?e=1754524800&v=beta&t=pFhG1IcqeIcbymlCwXYg9ugUHHGhtgaajAI-HgIldOE",
+            "width": 900,
+            "height": 1209
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_480/B4DZfgs.hrGUAY-/0/1751821576781?e=1754524800&v=beta&t=nWLssD8RSPwDkmno9OCAc4xCJ-jue9lTpAXmvm15lYY",
+            "width": 480,
+            "height": 644
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_800/B4DZfgs.hrGUAg-/0/1751821576781?e=1754524800&v=beta&t=pT38EGN17d9LkMSB_JXAiujfFaTaL6SygBA_YBjbiVQ",
+            "width": 800,
+            "height": 1074
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_20/B4DZfgs.hrGUAw-/0/1751821576762?e=1754524800&v=beta&t=IznkMAeymqkrbQbLj1SACwRfwCpzNyIzKvrszHsQfZk",
+            "width": 20,
+            "height": 26
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLCZ-ihVF_Wg/feedshare-shrink_160/B4DZfgs.hrGUAc-/0/1751821576762?e=1754524800&v=beta&t=ox2eBD5V3aQu0lG0De6D9jF11Tfmmoig8A4GUnFEf58",
+            "width": 160,
+            "height": 214
+          }
+        ]
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "Watched François Collet's talk: \"How We Get to AGI\" tonight with great interest. He presented unique insights based on years of research creating scientific benchmarks for measuring AI’s intelligence.\n\nMy takeaway:\n\n\"As long as we can easily come out with tasks that are easy for humans, but that AI can’t figure out, we don’t have AGI yet.\"\n\nMy notes:\n\n🔹 Fluid intelligence:\n⤷ It doesn’t emerge from pretraining and scaling GPT models.\n\n🔹 Test-Time Adaptation (TTA):\n⤷ It has dramatically improved model capabilities, but it’s still not AGI.\n\n🔹 What is intelligence, anyway? \n⤷ Intelligence is a process, not to be confused with \"skill\", which is the output of that process. So, intelligence is the ability to deal with new situations.\n\n🔹 What is AGI, then?\n⤷ We shouldn’t define AGI as a system that can perform 80% of economically valuable tasks. Instead, true AGI would be a system that can learn new skills efficiently and solve previously unseen problems.\n\nIn the end, Collet shares his current work on building a new kind of AI model capable of extrapolating NEW solutions using a “library” of previously discovered abstractions.\n\nIn his view, the ultimate goal of AGI isn’t automation. It’s to accelerate scientific progress.\n\nOverall, a remarkable talk by a brilliant scientist.\n\n* I personally don’t believe Collet's suite of interactive video games is the best way for determining whether we've reached AGI.\n\nMy favorite slide 👇",
+      "totalReactionCount": 1,
+      "likeCount": 1,
+      "commentsCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7346648536274325504/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_watched-fran%C3%A7ois-collets-talk-how-we-get-activity-7346648536274325504-aqRJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkwoU0B1eCbcYV1E4hFRtTenpSo1zfyW1g",
+      "postedAt": "3d",
+      "postedDate": "2025-07-03 21:18:25.177 +0000 UTC",
+      "postedDateTimestamp": 1751577505177,
+      "urn": "7346648536274325504",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1757548800&v=beta&t=QPNlPNAq8gNhEkKa7AUSb9CzE6ins8S9wJbECZG5yB8"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1757548800&v=beta&t=ri55NJD2mkT2LuN9oeW9n2OG61Uvz0cyT5_U3ioy4o8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1757548800&v=beta&t=M_Xgw1_DgK4pKgZ41rrIJpfI-75rfR-CmXTGX4KUXO4"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1757548800&v=beta&t=uhAnl7Ua28weCH9x1pceEeiOkQk2WnLQuUe-oXp0qo8"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_480/B4DZfSJ6adGgAY-/0/1751577503905?e=1754524800&v=beta&t=gltr607KT30nBXj8BWrQu4S4uRKyf527mhdKd6kgzVo",
+          "width": 480,
+          "height": 360
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_20/B4DZfSJ6adGgAw-/0/1751577503905?e=1754524800&v=beta&t=zjDh0t6V942OTxZIW1vi0j5suviDZgAX_yb9fe-Lo3w",
+          "width": 20,
+          "height": 15
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_800/B4DZfSJ6adGgAg-/0/1751577503905?e=1754524800&v=beta&t=QG5gQVEdJnqP16p0YSr3jVcrTXRV5nwLZZUpRNlHJ9k",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_160/B4DZfSJ6adGgAc-/0/1751577503913?e=1754524800&v=beta&t=2PomlFlE1GtDzrbs_6hEd6p5_GaeVhyWgVQE0Ir40YE",
+          "width": 160,
+          "height": 120
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_2048_1536/B4DZfSJ6adGgAo-/0/1751577503924?e=1754524800&v=beta&t=I2x86scDN4qK5r5h_iMIBUAj23vg9AkWmIbwnsoz1a8",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_1280/B4DZfSJ6adGgAk-/0/1751577503913?e=1754524800&v=beta&t=VAuw9P3eLTY2VfY6OAJOBhrCCeOS2cvAMjrEjk6DigE",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "images": [
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_480/B4DZfSJ6adGgAY-/0/1751577503905?e=1754524800&v=beta&t=gltr607KT30nBXj8BWrQu4S4uRKyf527mhdKd6kgzVo",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_20/B4DZfSJ6adGgAw-/0/1751577503905?e=1754524800&v=beta&t=zjDh0t6V942OTxZIW1vi0j5suviDZgAX_yb9fe-Lo3w",
+            "width": 20,
+            "height": 15
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_800/B4DZfSJ6adGgAg-/0/1751577503905?e=1754524800&v=beta&t=QG5gQVEdJnqP16p0YSr3jVcrTXRV5nwLZZUpRNlHJ9k",
+            "width": 800,
+            "height": 600
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_160/B4DZfSJ6adGgAc-/0/1751577503913?e=1754524800&v=beta&t=2PomlFlE1GtDzrbs_6hEd6p5_GaeVhyWgVQE0Ir40YE",
+            "width": 160,
+            "height": 120
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_2048_1536/B4DZfSJ6adGgAo-/0/1751577503924?e=1754524800&v=beta&t=I2x86scDN4qK5r5h_iMIBUAj23vg9AkWmIbwnsoz1a8",
+            "width": 1200,
+            "height": 900
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1XZ2Jbog8ug/feedshare-shrink_1280/B4DZfSJ6adGgAk-/0/1751577503913?e=1754524800&v=beta&t=VAuw9P3eLTY2VfY6OAJOBhrCCeOS2cvAMjrEjk6DigE",
+            "width": 1200,
+            "height": 900
+          }
+        ]
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "Andrej Karpathy's collection of funny loss functions made my day today 😂\n\nSharing the whole series down below in case you haven’t see it 👇\n\n“All loss functions are computed beautifully in their own way and pursued with equal tenacity.”\n\nLink: https://lnkd.in/dzaF8cVM\n\nP.S. My favorite pieces are #12, #15, and #19.",
+      "totalReactionCount": 1,
+      "praiseCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7346592690991460353/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_funny-loss-functions-activity-7346592690991460353-24Kb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkwoU0B1eCbcYV1E4hFRtTenpSo1zfyW1g",
+      "postedAt": "3d",
+      "postedDate": "2025-07-03 17:36:30.624 +0000 UTC",
+      "postedDateTimestamp": 1751564190624,
+      "urn": "7346592690991460353",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1757548800&v=beta&t=QPNlPNAq8gNhEkKa7AUSb9CzE6ins8S9wJbECZG5yB8"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1757548800&v=beta&t=ri55NJD2mkT2LuN9oeW9n2OG61Uvz0cyT5_U3ioy4o8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1757548800&v=beta&t=M_Xgw1_DgK4pKgZ41rrIJpfI-75rfR-CmXTGX4KUXO4"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1757548800&v=beta&t=uhAnl7Ua28weCH9x1pceEeiOkQk2WnLQuUe-oXp0qo8"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "company": {},
+      "document": {
+        "title": "Funny loss functions",
+        "urn": "D4D1FAQFOXjTKiaVdRw",
+        "TranscribedDocumentUrl": "https://media.licdn.com/dms/document/media/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-url-metadata-scrapper-pdf/B4DZfRV8lAHMA0-/0/1751563883038?e=1752458400&v=beta&t=x-5VyFDtHjzr2Uf3HCO0sGgIwCIbDB48Wm19nGFWACY",
+        "TranscribedDocumentUrlExpiresAt": 1752458400000,
+        "manifestUrlExpiresAt": 1752458400000,
+        "manifestUrl": "https://media.licdn.com/dms/document/pl/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-master-manifest/B4DZfRV8lAHMBc-/0/1751563883491?e=1752458400&v=beta&t=tXeskWP-mgC7RURRVUiIrmNWGgqajyPZ714Ty1lr0yk",
+        "scanRequiredForDownload": true,
+        "totalPageCount": 22,
+        "coverPages": [
+          {
+            "width": 480,
+            "height": 360,
+            "imageUrls": [
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_480/B4DZfRV8lAHMBM-/0/1751563882887?e=1752458400&v=beta&t=dtii_zwGtWoAuUt5j_zoomIxvxwM019Ny6_LB9XEweQ",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_480/B4DZfRV8lAHMBM-/1/1751563882887?e=1752458400&v=beta&t=KnDuJCh-aH8mMFTukza59j8B7rw3xDkS2eq-Ss3Zm9s",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_480/B4DZfRV8lAHMBM-/2/1751563882887?e=1752458400&v=beta&t=2MXr5segFGQYt4LFaLhYwnlScqlCWfhiTq2LLvqUJ8Y"
+            ]
+          },
+          {
+            "width": 800,
+            "height": 600,
+            "imageUrls": [
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_800/B4DZfRV8lAHMBE-/0/1751563882859?e=1752458400&v=beta&t=0g-qmmyYhr-w3dNBBw-ZAPRdaJzyNUK342bg-DAU4Ys",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_800/B4DZfRV8lAHMBE-/1/1751563882859?e=1752458400&v=beta&t=m0mARdefdyDcoleRwdmDCVQ_ArQKx_IiOEQhaQvnrI8",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_800/B4DZfRV8lAHMBE-/2/1751563882859?e=1752458400&v=beta&t=azZLarGZRL_LEoLgrWk9szqb0-vTKXbcWlYaFZlwSGY"
+            ]
+          },
+          {
+            "width": 1280,
+            "height": 960,
+            "imageUrls": [
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_1280/B4DZfRV8lAHMBU-/0/1751563883031?e=1752458400&v=beta&t=XhHcT8z9WipTdyg-p93FG0FalVCjm_BzgIvBU1rlr8Y",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_1280/B4DZfRV8lAHMBU-/1/1751563883031?e=1752458400&v=beta&t=Yh8SmVOX9VLZ0NPhyPLe7XydyGBW5GmWsmROPdi6ZrE",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_1280/B4DZfRV8lAHMBU-/2/1751563883031?e=1752458400&v=beta&t=dNynbHtaYtIrpbxceAC2YWHxaD4XCeLGNFjHeVCxhSk"
+            ]
+          },
+          {
+            "width": 1920,
+            "height": 1440,
+            "imageUrls": [
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_1920/B4DZfRV8lAHMAw-/0/1751563883497?e=1752458400&v=beta&t=8jkZF55JxM9_DlziD5sabvugQf8g1pzOLhBiALk8TZM",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_1920/B4DZfRV8lAHMAw-/1/1751563883497?e=1752458400&v=beta&t=z9Xe3r_fl3jsHieGXVHIxod5_yWHTa5M2GhlECN_ySs",
+              "https://media.licdn.com/dms/image/v2/D4D1FAQFOXjTKiaVdRw/feedshare-document-cover-images_1920/B4DZfRV8lAHMAw-/2/1751563883497?e=1752458400&v=beta&t=HU0RjaRoSR3Gs9XyfXDKQVPVMq9o_c__-yy5I_NZQtQ"
+            ]
+          }
+        ]
+      },
+      "celebration": {},
+      "poll": {},
+      "contentType": "document",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "mentions": [
+        {
+          "firstName": "Andrej",
+          "lastName": "Karpathy",
+          "urn": "ACoAAANHUM4Ba-7gLW9R4il3U9t3O_2BkbkSDvU",
+          "publicIdentifier": "andrej-karpathy-9a650716"
+        }
+      ]
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "The media is now buzzing about Meta's Superintelligence Labs and Zuckerberg’s \"secret list” of elite #AI PhDs, reportedly receiving offers around $100M.\n\nWhat’s interesting to me: \n⤷ Never before have a handful of PhD researchers been valued so highly. For comparison, $100M is roughly twice NBA superstar LeBron James’s base salary in 2025.\n\nBut...\n\n→ How much is that price tag in the grand scheme of things?\n→ How does anyone could measure the true value of a human brain?\n\nAs a PhD graduate, let me share 5 thoughts on this:\n\n1️⃣ We now have incredibly powerful AI models, but building them depends on a very small circle of top-tier minds (now in their 30s) who were working in obscure, undervalued research areas just a few years ago.\n\n2️⃣ Meta isn’t simply paying for researchers, it’s paying for battle-tested, experimental experience in building and deploying LLMs at scale.\n\n3️⃣ For Meta and other companies of similar size, $100M is just a fraction of what’s invested in AI infrastructure, such as GPU data centers.\n\n4️⃣ We still don’t know whether this talent race will drive new breakthroughs or merely concentrate intellectual power in a few corporate labs.\n\n5️⃣ This isn’t good news for the traditional academic system. PhD graduates deserve high pay, top talent eill flood into Big Tech, chasing billions instead of papers and teaching.\n\nEither way, what a time to be fitting tensors and orchestrating agents! \n\nI wish I had done my PhD in NLP a decade ago :/\n\nOnce again, the future proves unpredictable 🔮",
+      "totalReactionCount": 3,
+      "likeCount": 3,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7345770860269469697/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_ai-activity-7345770860269469697-aSZB?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkwoU0B1eCbcYV1E4hFRtTenpSo1zfyW1g",
+      "postedAt": "5d",
+      "postedDate": "2025-07-01 11:10:50.911 +0000 UTC",
+      "postedDateTimestamp": 1751368250911,
+      "urn": "7345770860269469697",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1757548800&v=beta&t=QPNlPNAq8gNhEkKa7AUSb9CzE6ins8S9wJbECZG5yB8"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1757548800&v=beta&t=ri55NJD2mkT2LuN9oeW9n2OG61Uvz0cyT5_U3ioy4o8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1757548800&v=beta&t=M_Xgw1_DgK4pKgZ41rrIJpfI-75rfR-CmXTGX4KUXO4"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1757548800&v=beta&t=uhAnl7Ua28weCH9x1pceEeiOkQk2WnLQuUe-oXp0qo8"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_20/B4DZfFrq0VGUA4-/0/1751368249276?e=1754524800&v=beta&t=lwl5cTThuEx0wItetjXKY37Sftt25-y1DKmgWFrFZwA",
+          "width": 20,
+          "height": 15
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_480/B4DZfFrq0VGUAg-/0/1751368249276?e=1754524800&v=beta&t=8_9fk1E5YsZuv3a8W48uASZqTbLZWS6FAAF7SjvgwRg",
+          "width": 480,
+          "height": 360
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_2048_1536/B4DZfFrq0VGUAw-/0/1751368249342?e=1754524800&v=beta&t=ftNyYp-sZ0g_1s9LtlHu-WmTUGsLTgH7W-q4bJev8QI",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_160/B4DZfFrq0VGUAk-/0/1751368249276?e=1754524800&v=beta&t=NkRaaLK7uGeWcSKKl90YgOdI1_EmjOxgFKrVWeZwp68",
+          "width": 160,
+          "height": 120
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_800/B4DZfFrq0VGUAo-/0/1751368249317?e=1754524800&v=beta&t=AL0bCFc-hpVOit6KVNFS-4zW3i0ggHsJxWuZYbt0GzM",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_1280/B4DZfFrq0VGUAs-/0/1751368249317?e=1754524800&v=beta&t=BBjjqWGmwbQbgB0O478Vw9ecqyRXDzmY4BV9uijfOLE",
+          "width": 1280,
+          "height": 960
+        }
+      ],
+      "images": [
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_20/B4DZfFrq0VGUA4-/0/1751368249276?e=1754524800&v=beta&t=lwl5cTThuEx0wItetjXKY37Sftt25-y1DKmgWFrFZwA",
+            "width": 20,
+            "height": 15
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_480/B4DZfFrq0VGUAg-/0/1751368249276?e=1754524800&v=beta&t=8_9fk1E5YsZuv3a8W48uASZqTbLZWS6FAAF7SjvgwRg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_2048_1536/B4DZfFrq0VGUAw-/0/1751368249342?e=1754524800&v=beta&t=ftNyYp-sZ0g_1s9LtlHu-WmTUGsLTgH7W-q4bJev8QI",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_160/B4DZfFrq0VGUAk-/0/1751368249276?e=1754524800&v=beta&t=NkRaaLK7uGeWcSKKl90YgOdI1_EmjOxgFKrVWeZwp68",
+            "width": 160,
+            "height": 120
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_800/B4DZfFrq0VGUAo-/0/1751368249317?e=1754524800&v=beta&t=AL0bCFc-hpVOit6KVNFS-4zW3i0ggHsJxWuZYbt0GzM",
+            "width": 800,
+            "height": 600
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHbqAp3FSqnMA/feedshare-shrink_1280/B4DZfFrq0VGUAs-/0/1751368249317?e=1754524800&v=beta&t=BBjjqWGmwbQbgB0O478Vw9ecqyRXDzmY4BV9uijfOLE",
+            "width": 1280,
+            "height": 960
+          }
+        ]
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "companyMentions": [
+        {
+          "id": 10667,
+          "name": "Meta",
+          "publicIdentifier": "meta",
+          "url": "https://www.linkedin.com/company/meta/"
+        }
+      ]
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "Data munging has a couple of levels to it ↓\n\nLevel 1 - Data Fits in Memory\n⤷  Store data locally\n⤷  Use Pandas/Polars for ETL\n⤷  Train models with scikit-learn, TensorFlow, or PyTorch\n\nLevel 2 - Distributed Production Systems\n⤷  Process live or streaming data\n⤷  Build distributed pipelines using PySpark/Dask\n⤷  Deploy models that retrain in batches\n\nAs a rule of thumb:\n\n👉 If your data fits in your laptop’s RAM, you're still playing at Level 1.\n\nThe real world runs on logs, events, clickstreams, APIs, terabytes, and SLAs. It’s fragmented, noisy, and constantly in constant motion.\n\nHowever, most data scientists don’t actually work with real-world data. Bridging the gap between development and production requires a shift in mindset and tooling.\n\nSo, how to level up?\n\n✅ Learn distributed computing:\n⤷  Use PySpark, Dask, or SQL engines like BigQuery\n⤷  Operate with scale as the default assumption\n\n✅ Think like an engineer:\n⤷  Design DAGs. Build pipelines. Automate every step\n⤷  Treat the model as just one component in a larger system\n\n✅ Go beyond notebooks:\n⤷  Dockerize workflows. Orchestrate with Airflow or Prefect\n⤷  Integrate with CI/CD pipelines and monitoring\n\nAgain, true impact starts when we reach production. When our ML models meet the live, messy, massive, beautiful chaos of the real world.\n\nLet’s plug them in 🔌",
+      "totalReactionCount": 5,
+      "likeCount": 5,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7345402177869262848/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_data-munging-has-a-couple-of-levels-to-it-activity-7345402177869262848-fBWi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkwoU0B1eCbcYV1E4hFRtTenpSo1zfyW1g",
+      "postedAt": "6d",
+      "postedDate": "2025-06-30 10:45:50.177 +0000 UTC",
+      "postedDateTimestamp": 1751280350177,
+      "urn": "7345402177869262848",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1757548800&v=beta&t=QPNlPNAq8gNhEkKa7AUSb9CzE6ins8S9wJbECZG5yB8"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1757548800&v=beta&t=ri55NJD2mkT2LuN9oeW9n2OG61Uvz0cyT5_U3ioy4o8"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1757548800&v=beta&t=M_Xgw1_DgK4pKgZ41rrIJpfI-75rfR-CmXTGX4KUXO4"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1757548800&v=beta&t=uhAnl7Ua28weCH9x1pceEeiOkQk2WnLQuUe-oXp0qo8"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_2048_1536/B4DZfAcWryHAAo-/0/1751280348771?e=1754524800&v=beta&t=RTS8HhyZDiABYG6-d3YLXMXQuTLHmQfqq1bkS0-RwwQ",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_1280/B4DZfAcWryHAAk-/0/1751280348743?e=1754524800&v=beta&t=mQ9fnQLXbVo-QSjEujlVL5Mce0xDw9FuthXXJD69oYM",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_480/B4DZfAcWryHAAY-/0/1751280348743?e=1754524800&v=beta&t=T319jUBVEl5lF93wI_GocizU_hSH423HFWQBh25j7x0",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_800/B4DZfAcWryHAAg-/0/1751280348743?e=1754524800&v=beta&t=753oPzpyjFZfMucoOd6b_zaZq4L__ZHQ3ycGTXCo0Ok",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_20/B4DZfAcWryHAAw-/0/1751280348736?e=1754524800&v=beta&t=qdUDyLppQNO4AiWPfQkdXjs0vthuJ4ou030vOrRbGAU",
+          "width": 20,
+          "height": 26
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_160/B4DZfAcWryHAAc-/0/1751280348736?e=1754524800&v=beta&t=HnYR0ylxggaGc4FkKRae_9eRle7SCe_-zh1TXGH5MzU",
+          "width": 160,
+          "height": 213
+        }
+      ],
+      "images": [
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_2048_1536/B4DZfAcWryHAAo-/0/1751280348771?e=1754524800&v=beta&t=RTS8HhyZDiABYG6-d3YLXMXQuTLHmQfqq1bkS0-RwwQ",
+            "width": 720,
+            "height": 960
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_1280/B4DZfAcWryHAAk-/0/1751280348743?e=1754524800&v=beta&t=mQ9fnQLXbVo-QSjEujlVL5Mce0xDw9FuthXXJD69oYM",
+            "width": 720,
+            "height": 960
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_480/B4DZfAcWryHAAY-/0/1751280348743?e=1754524800&v=beta&t=T319jUBVEl5lF93wI_GocizU_hSH423HFWQBh25j7x0",
+            "width": 480,
+            "height": 640
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_800/B4DZfAcWryHAAg-/0/1751280348743?e=1754524800&v=beta&t=753oPzpyjFZfMucoOd6b_zaZq4L__ZHQ3ycGTXCo0Ok",
+            "width": 720,
+            "height": 960
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_20/B4DZfAcWryHAAw-/0/1751280348736?e=1754524800&v=beta&t=qdUDyLppQNO4AiWPfQkdXjs0vthuJ4ou030vOrRbGAU",
+            "width": 20,
+            "height": 26
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHWcVsDL6GGhg/feedshare-shrink_160/B4DZfAcWryHAAc-/0/1751280348736?e=1754524800&v=beta&t=HnYR0ylxggaGc4FkKRae_9eRle7SCe_-zh1TXGH5MzU",
+            "width": 160,
+            "height": 213
+          }
+        ]
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {}
+    },
+    {
+      "isBrandPartnership": false,
       "text": "I've watched the recent talk “Software in The Era of AI” by Andrej Karpathy at Y Combinator many times now.\n\nWith 1M+ views on YT, it’s one of the best #AI talks I’ve seen for a general audience.\n\nIn ~40 minutes, Andrej distills the current trajectory of AI in a way that’s clear, engaging, and inspiring.\n\nI've recommended it to many friends, and now I find myself asking:\n⤷ What makes this talk exceptional?\n⤷ What can we learn from the speaker?\n\nHere’s what I think makes it superb:\n✓ He seems genuinely excited about the topic, positive, and has open body language.\n✓ He shares personal work along the way (tweets, posts, photos, and anecdotes), building trust and authenticity.\n✓ He speaks in 1st person, sharing opinions and reflections (“I think…”), which makes it feel personal.\n✓ He uses analogies and real-world examples constantly, e.g., when calling LLMs a new kind of OS.\n✓ He structures his talk into clear sections, recapping each one to reinforce key ideas.\n✓ His slides alternate between big, bold visuals and simple, centered headlines.\n✓ Most importantly, his tone stays hopeful throughout. Even when discussing limitations, he keeps the vibe optimistic.\n\nBelow is a more detailed breakdown of his flow ↓\n\nIntro:\n• Begins with enthusiasm and gratitude for being there.\n• Remarks on the title and explains why the topic matters.\n• Frames the big question: Why is software changing so fast?\n• Provides a historical perspective: Software 1.0 → 2.0 → 3.0.\n• Uses concrete examples to highlight his key observation.\n\nPart 1: Software Evolution\n• Quotes Andrew Ng: AI is the new electricity.\n• Explains the analogy with real-life examples (e.g., factories → software).\n• Adds his twist: \"LLMs are like a new OS.\"\n• Introduces a counterintuitive idea: We have a new magical computer helping us boil eggs.\n• Summarizes Part 1 with bullet points.\n\nPart 2: The Psychology of LLMs\n• Dives a bit into the internals of LLMs (transformers).\n• Acknowledges their current limitations.\n• Recommends sci-fi movies as a gift to the audience.\n• Summarizes Part 2 with images.\n\nPart 3: New Opportunities\n• Offers a new abstraction: LLMs as the GUIs for machine intelligence.\n• Gives real examples of current successes (e.g., Cursor).\n• Poses the big question: What will future apps look like?\n• Weaves analogies and personal stories (how he uses LLMs, how he “keeps AI on a leash,” his first Waymo ride, etc).\n• Shows an emotional video of kids vibe coding (going emotional with a hopeful vision).\n• Ends Part 3 with his vibe-coded app experiments and areas still unexplored (this opens up for the next final section)\n\nPart 4: Building for Agents\n• Makes a bold prediction: We’re entering a new era of digital “agents.”\n• Imagines future human–AI interaction.\n• Introduces upcoming tools and possibilities.\n\nFinal Summary:\n• Displays a collage of key slides tying everything together into a single storyline.\n\nOverall, an extremely well-packaged talk ✨\nShould we try to replicate this framework?",
       "totalReactionCount": 7,
       "likeCount": 7,
