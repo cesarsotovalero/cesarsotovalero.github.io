@@ -396,7 +396,7 @@ Representative examples of graph-based fraud detection:
 Overall, graph-based methods, especially GNNs, represent a cutting-edge approach that can significantly enhance fraud detection by considering relational data.
 As tooling and infrastructure improve (graph databases, streaming graph processing), I expect to see more real-time GNNs deployments for fraud in the coming years.
 
-# Transformers/Foundation Models
+# Transformer Models
 
 ## Transformers
 
