@@ -408,14 +408,14 @@ Large pre-trained foundation models (akin to GPT or BERT, but for payments) are 
 In this case, a model is pre-trained on massive amounts of transaction data to learn general patterns, then fine-tuned for specific fraud tasks.
 So that these models can "speak" transactional data.
 
-> One of the most notable recent developments comes from Stripe, which announced a <a href="https://www.linkedin.com/posts/gautam-kedia-8a275730_tldr-we-built-a-transformer-based-payments-activity-7325973745292980224-vCPR/">transformer-based “Payments Foundation Model.”</a> <!-- markdownlint-disable-line MD033 -->
-> This is a large-scale self-supervised model trained on tens of billions of transactions to create rich numeric representations (embeddings) of each transaction.
-> The idea is analogous to how language models embed words: Stripe’s model learns a high-dimensional embedding for a transaction that captures its essential characteristics and context.
-> Transactions with similar patterns end up with similar embeddings (for example, transactions from the same bank or the same email domain cluster together in embedding space).
+> "One of the most notable recent developments comes from Stripe's <a href="https://www.linkedin.com/posts/gautam-kedia-8a275730_tldr-we-built-a-transformer-based-payments-activity-7325973745292980224-vCPR/">transformer-based “Payments Foundation Model.”</a> <!-- markdownlint-disable-line MD033 -->
+> This is a large-scale self-supervised model trained on tens of billions of transactions to create embeddings of each transaction.
+> The idea is analogous to how LLMs work: to learn a high-dimensional embedding for a transaction that captures its essential characteristics and context.
+> Transactions with similar patterns end up with similar embeddings, e.g., transactions from the same bank or the same email domain cluster together in embedding space.
 > These embeddings serve as a universal representation that can be used for various tasks: fraud detection, risk scoring, identifying businesses in trouble, etc.
 > For the fraud use-case, Stripe reports a dramatic improvement: by feeding sequences of these transaction embeddings into a downstream classifier, they achieved an increase in detection rate for certain fraud attacks from 59% to 97% overnight.
-> In particular, they targeted “card testing” fraud (fraudsters testing stolen card credentials with small purchases), something that often hides in high-volume data.
-> The transformer foundation model was able to spot subtle sequential patterns of card testing that previous feature-engineered models missed, blocking attacks in real-time before they could do damage.
+> In particular, they targeted “card testing fraud” (i.e., fraudsters testing stolen card credentials with small purchases), something that often hides in high-volume data.
+> The transformer foundation model was able to spot subtle sequential patterns of card testing that previous feature-engineered models missed, blocking attacks in real-time before they could do damage."
 
 Researchers have applied Transformer encoders to tabular data as well.[^18]
 For example, using models like [TabTransformer](https://github.com/lucidrains/tab-transformer-pytorch) or integration of transformers with structured data.
