@@ -74,6 +74,28 @@ updates:
   open-pull-requests-limit: 1
 ```
 
+# Docker
+
+Use docker for deployments.
+Even if you are using GPU-enabled VMs, use Docker and expose the GPU to the container with the following parameter.
+
+```bash
+# Example Docker command to run a container with GPU support
+docker run --gpus all ...
+```
+
+Further, use multi-stage builds where you use poetry/uv to build the package and then copy the built package to a smaller base image on top of python:3.XX-slim.
+
+```dockerfile
+# Sample Dockerfile
+FROM python:3.XX-slim AS builder
+WORKDIR /app
+COPY pyproject.toml poetry.lock ./
+RUN pip install poetry && poetry install --no-dev
+COPY . .
+RUN poetry build
+```
+
 # References
 
 - <https://decodingml.substack.com/p/engineer-python-projects-like-a-pro>

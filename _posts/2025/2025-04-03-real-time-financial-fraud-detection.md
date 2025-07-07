@@ -22,7 +22,7 @@ author: cesarsotovalero
 published: true
 ---
 
-Financial fraud is a pervasive problem costing institutions and customers billions annually.
+Financial fraud is a pervasive problem costing institutions and customers billions annually.[^1]
 Most known examples include credit card fraud, fraudulent online payments, and money laundering.
 Banks worldwide faced an estimated $$ \$442 $$ billion in fraud-related losses in 2023 alone.
 In particular, credit card transactional fraud is projected to reach $$ \$43 $$ billion in annual losses by 2026.
@@ -244,7 +244,7 @@ Techniques like [SHapley Additive exPlanations](https://shap.readthedocs.io/) (S
 </aside>
 
 Another issue is the data and compute requirement.
-Training large DNNs may require GPUs and extensive hyperparameter tuning, which can be overkill for some fraud datasets, especially if data is limited or highly imbalanced.
+Training large DNNs may require GPUs and extensive hyperparameter tuning, which can be overkill for some fraud datasets, especially if data is limited or highly imbalanced.[^32]
 In fact, many academic studies on the popular [Kaggle credit card dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) (284,807 transactions) found that simpler models can match DNNs performance, likely because the dataset is small and mostly numeric features.
 
 Overfitting is a risk too, fraud datasets are skewed and sometimes composed of static snapshots in time.
@@ -305,7 +305,7 @@ Fraudulent cards might cluster via merchant edges (e.g., a fraud ring testing ma
 Similarly, for online payments we can create nodes for user accounts, email addresses, IP addresses, device IDs, etc., and connect nodes that are observed together in a transaction or account registration.
 This yields a rich heterogeneous graph of entities.
 
-[Graph Neural Networks](https://en.wikipedia.org/wiki/Graph_neural_network) (GNNs) in recent years has led to many applications of this technology in fraud detection.[^23]
+[Graph Neural Networks](https://en.wikipedia.org/wiki/Graph_neural_network) (GNNs) in recent years has led to many applications of this technology in fraud detection.[^23] [^30] [^31]
 GNNs are deep learning models designed for graph-structured data.
 They propagate information along edges, allowing each node to aggregate features from its neighbors.
 In fraud terms, a GNN can learn to identify suspicious nodes (e.g., users or transactions) by looking at their connected partners.
@@ -408,7 +408,7 @@ Large pre-trained foundation models (akin to GPT or BERT, but for payments) are 
 In this case, a model is pre-trained on massive amounts of transaction data to learn general patterns, then fine-tuned for specific fraud tasks.
 So that these models can "speak" transactional data.
 
-> "One of the most notable recent developments comes from Stripe's <a href="https://www.linkedin.com/posts/gautam-kedia-8a275730_tldr-we-built-a-transformer-based-payments-activity-7325973745292980224-vCPR/">transformer-based “Payments Foundation Model.”</a> <!-- markdownlint-disable-line MD033 -->
+> "One of the most notable recent developments comes from Stripe's <a href="https://www.linkedin.com/posts/gautam-kedia-8a275730_tldr-we-built-a-transformer-based-payments-activity-7325973745292980224-vCPR/">transformer-based payments foundation model.</a> <!-- markdownlint-disable-line MD033 -->
 > This is a large-scale self-supervised model trained on tens of billions of transactions to create embeddings of each transaction.
 > The idea is analogous to how LLMs work: to learn a high-dimensional embedding for a transaction that captures its essential characteristics and context.
 > Transactions with similar patterns end up with similar embeddings, e.g., transactions from the same bank or the same email domain cluster together in embedding space.
@@ -541,6 +541,7 @@ Nonetheless, the above datasets provide valuable benchmarks to compare algorithm
 
 # Footnotes
 
+[^1]: Oztas, Berkan, et al. "[Transaction monitoring in anti-money laundering: A qualitative analysis and points of view from industry.](https://www.sciencedirect.com/science/article/pii/S0167739X24002607)" Future Generation Computer Systems (2024).
 [^2]: G. Praspaliauskas, V. Raman (2023). _[Real-time fraud detection using AWS serverless and machine learning services](https://aws.amazon.com/blogs/machine-learning/real-time-fraud-detection-using-aws-serverless-and-machine-learning-services/)._ AWS Machine Learning Blog – outlines a serverless architecture using Amazon Kinesis, Lambda, and Amazon Fraud Detector for near-real-time fraud prevention.
 [^3]: Jian Zhang et al. (2022). [Build a GNN-based real-time fraud detection solution using Amazon SageMaker, Amazon Neptune, and DGL](https://aws.amazon.com/blogs/machine-learning/build-a-gnn-based-real-time-fraud-detection-solution-using-amazon-sagemaker-amazon-neptune-and-the-deep-graph-library/). AWS ML Blog – explains how graph neural networks can be served in real-time for fraud detection, noting challenges in moving from batch to real-time GNN inference.
 [^4]: Summer Liu et al. (2024). _[Supercharging Fraud Detection in Financial Services with GNNs](https://developer.nvidia.com/blog/supercharging-fraud-detection-in-financial-services-with-graph-neural-networks/)._ NVIDIA Technical Blog.
@@ -558,3 +559,6 @@ Nonetheless, the above datasets provide valuable benchmarks to compare algorithm
 [^27]: Lin, Junhong, et al. "[FraudGT: A Simple, Effective, and Efficient Graph Transformer for Financial Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3677052.3698648)." Proceedings of the 5th ACM International Conference on AI in Finance. 2024.
 [^28]: R-ring collusion is a form of coordinated behavior where multiple accounts, potentially belonging to different individuals or groups, engage in fraudulent activities that benefit each other.
 [^29]: Service Level Agreement (SLA) is a commitment between a service provider and a client that outlines the expected level of service, including performance metrics and response times.
+[^30]: Shih, Yi-Cheng, et al. "[Fund transfer fraud detection: Analyzing irregular transactions and customer relationships with self-attention and graph neural networks.](https://www.sciencedirect.com/science/article/abs/pii/S0957417424020785)" Expert Systems with Applications. 2025.
+[^31]: Tong, Guoxiang, and Jieyu Shen. "[Financial transaction fraud detector based on imbalance learning and graph neural network.](https://www.sciencedirect.com/science/article/abs/pii/S1568494623010025)" Applied Soft Computing 149 (2023): 110984.
+[^32]: Huang, Huajie, et al. "[Imbalanced credit card fraud detection data: A solution based on hybrid neural network and clustering-based undersampling technique.](https://www.sciencedirect.com/science/article/abs/pii/S156849462400142X)" Applied Soft Computing 154 (2024): 111368.
