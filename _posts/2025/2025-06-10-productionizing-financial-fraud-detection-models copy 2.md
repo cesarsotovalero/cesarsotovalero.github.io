@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Productionizing Financial Fraud Detection Models
-subtitle: 
+subtitle:
 tags: ai
 description: |
- 
+
 keywords:
   - financial fraud
   - fraud detection
@@ -21,7 +21,21 @@ author: cesarsotovalero
 published: false
 ---
 
-# Deployment Patters
+In this article, we turn this trained model into an ML
+service that can be hosted as a web app on a remote server to receive
+incoming credit card fraud transactions and return their fraud probabilities, as
+shown in figure 12.18.
+
+![alt text](image.png)
+
+1. We first save the trained model as a file and write the necessary Python
+script to load the saved model and use the model to run inference on
+new credit card transactions.
+2. We then convert this Python script into an ML service using Flask.
+3. Finally, we create another Python program to send requests to our Flask
+web app to receive fraud decisions in response
+
+# Deployment Patterns
 
 Developing a high-accuracy fraud model is only half the story.
 The rest of the challenge is deploying it in an architecture that can handle real-time data streams, sub-second decisions, and surging throughput.

@@ -27,7 +27,7 @@ Evaluating fraud detection models requires metrics that account for very particu
 - **Relative costs of false positives vs. false negatives:** False positives (legitimate transactions flagged as fraud) can lead to customer dissatisfaction, while false negatives (fraudulent transactions not detected) can result in financial losses.
 
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-04-03/conf_matrix.png alt: "Confusion matrix of a financial fraud binary classifier." %}
+  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-05-08/conf_matrix.png alt: "Confusion matrix of a financial fraud binary classifier." %}
   <figcaption class="stroke">
     Confusion matrix of a financial fraud binary classifier.
   </figcaption>
@@ -161,6 +161,44 @@ In highly imbalanced data, AUC-PR is more informative than AUC-ROC because it an
 For instance, a model could have AUC-ROC = 0.98 and still have AUC-PR = 0.10, which means that the model detects fraud higher than non-fraud most of the time, but when it comes to real-world detection, Precision at high Recall isn’t stellar.
 
 AUC-PR the go-to metric when fraud cases are rare, and we care about catching as many as possible without overwhelming the system with false alarms.
+
+<figure class="jb_picture">
+  {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-05-08/AUPRC.png alt: "Sample precision-recall curves for two models A and B." %}
+  <figcaption class="stroke">
+    Sample precision-recall curves for two models A and B, where model B is superior to model A as is reflected in the AUPRC values of the two models. Different points on the PR curve represent different threshold values and different trade-offs between precision and recall metrics.
+  </figcaption>
+</figure>
+
+Once we have chosen the best model as per AUPRC we need to decide a threshold to convert this model’s fraud probability output into a concrete binary (fraud or not fraud) decision. If we look at the precision-recall (PR) curve in figure 12.13, different thresholds correspond to different trade-offs between precision and recall. We ultimately need choose the right trade-off that suits our use case. And choosing such a trade-off is both a technical as well as a business decision.
+
+# Finding the Right Threshold
+
+In decision-making, there are two sets of metrics that are typically coupled together and go hand-in-hand:
+
+1. Optimizing metric: the one that should be as good (high or low) as possible. For example, sales teams in companies maximize the number of leads, growth teams maximize the number of signups, security teams minimize the number of vulnerabilities, and so on.
+
+2. Satisficing metric: the one that should maintain a certain (minimum or maximum) value. For example, the infrastructure team should maintain a certain maximum % of server downtime, the people team should maintain a certain minimum headcount, and so on.
+
+In the case of credit card fraud detection, precision could be considered as a
+satisficing metric so that the model would not frustrate more than a certain %
+of genuine users by flagging genuine transactions as fraudulent. At the same
+time, the recall could be the optimizing metric that should be increased as
+much as possible to catch more and more fraudsters. This overall translates
+as: catching as many fraudsters as we can while ensuring no more than k%
+of flagged transactions are fraudulent. For example, if precision is 98% and
+recall is 80%, then we are catching 80% of all fraudulent transactions and
+2% of our flagged transactions are actually genuine. On the other hand, if
+precision is 80% and recall is 98%, then we are catching 98% of all
+fraudulent transactions, and 20% of all flagged transactions by our system
+are genuine.
+
+With the above framework in mind, we can decide the threshold value based
+on the value of k. For example, if we want to maintain a minimum precision
+of 90%, then k=90. And we can then use the precision-recall curve to derive
+the threshold value as well as the equivalent recall value at 90% precision.
+We use this strategy to calculate the optimal model threshold while
+evaluating our trained model on the test set. And now, we are ready to train
+the machine learning model.
 
 # Detection Latency
 
