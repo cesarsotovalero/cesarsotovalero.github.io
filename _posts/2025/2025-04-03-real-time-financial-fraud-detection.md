@@ -73,7 +73,7 @@ However, linear models struggle to capture complex non-linear patterns in large 
 </aside>
 
 **Decision trees** and ensemble forests address this by automatically learning non-linear splits and interactions.
-In fact, boosted decision tree ensembles (like XGBoost) became popular in fraud detection competitions and industry solutions due to their high accuracy on tabular data.
+In fact, boosted decision tree ensembles (like XGBoost) became popular in fraud detection competitions and industry solutions due to their high accuracy on tabular data.[^34]
 These models can capture anomalous combinations of features in individual transactions effectively, learning complex, non-linear interactions between features.
 For example, [the winning solutions](https://github.com/VedangW/ieee-cis-fraud-detection) of the [IEEE-CIS fraud detection Kaggle challenge](https://www.kaggle.com/c/ieee-fraud-detection/overview) (2019) heavily used engineered features fed into gradient boosting models, achieving strong performance (AUC ≈ 0.91).
 
@@ -184,7 +184,7 @@ As a result, it can reconstruct typical transactions with very low error, but st
 A transaction that doesn’t conform to the learned normal pattern will produce a higher reconstruction error.
 By setting a threshold, we can flag transactions with unusually high reconstruction error as potential fraud.
 
-Autoencoders shine in fraud detection, particularly when labeled fraud data is scarce or nonexistent.
+Autoencoders shine in fraud detection, particularly when labeled fraud data is scarce or nonexistent.[^33]
 Their strength lies in identifying transactions that deviate from the learned "normal" without requiring explicit fraud labels during training.
 For example, an autoencoder trained on millions of legitimate transactions will likely assign high reconstruction error to fraudulent ones it’s never seen before.
 [Variational Autoencoder](https://en.wikipedia.org/wiki/Variational_autoencoder)s (VAEs), which introduce probabilistic modeling and latent-space regularization—have also been explored for fraud detection, offering potentially richer representations of normal transaction behavior.[^21]
@@ -301,7 +301,7 @@ Classical graph algorithms can then be applied, such as community detection[^25]
 </figure>
 
 For example, in a bipartite graph of credit card transactions, one set of nodes represent cardholders, another set are merchants, and there is an edge connecting a cardholder to a merchant for each transaction.
-Fraudulent cards might cluster via merchant edges (e.g., a fraud ring testing many stolen cards at one merchant), or vice versa.
+Fraudulent cards might cluster via merchant edges (e.g., a fraud ring testing many stolen cards at one merchant), or vice versa.[^35]
 Similarly, for online payments we can create nodes for user accounts, email addresses, IP addresses, device IDs, etc., and connect nodes that are observed together in a transaction or account registration.
 This yields a rich heterogeneous graph of entities.
 
@@ -541,24 +541,27 @@ Nonetheless, the above datasets provide valuable benchmarks to compare algorithm
 
 # Footnotes
 
-[^1]: Oztas, Berkan, et al. "[Transaction monitoring in anti-money laundering: A qualitative analysis and points of view from industry.](https://www.sciencedirect.com/science/article/pii/S0167739X24002607)" Future Generation Computer Systems (2024).
-[^2]: G. Praspaliauskas, V. Raman (2023). _[Real-time fraud detection using AWS serverless and machine learning services](https://aws.amazon.com/blogs/machine-learning/real-time-fraud-detection-using-aws-serverless-and-machine-learning-services/)._ AWS Machine Learning Blog – outlines a serverless architecture using Amazon Kinesis, Lambda, and Amazon Fraud Detector for near-real-time fraud prevention.
-[^3]: Jian Zhang et al. (2022). [Build a GNN-based real-time fraud detection solution using Amazon SageMaker, Amazon Neptune, and DGL](https://aws.amazon.com/blogs/machine-learning/build-a-gnn-based-real-time-fraud-detection-solution-using-amazon-sagemaker-amazon-neptune-and-the-deep-graph-library/). AWS ML Blog – explains how graph neural networks can be served in real-time for fraud detection, noting challenges in moving from batch to real-time GNN inference.
-[^4]: Summer Liu et al. (2024). _[Supercharging Fraud Detection in Financial Services with GNNs](https://developer.nvidia.com/blog/supercharging-fraud-detection-in-financial-services-with-graph-neural-networks/)._ NVIDIA Technical Blog.
-[^13]: Kandi, Kianeh, and Antonio García-Dopico. "[Enhancing Performance of Credit Card Model by Utilizing LSTM Networks and XGBoost Algorithms.](https://www.mdpi.com/2504-4990/7/1/20)" Machine Learning and Knowledge Extraction 7.1 (2025): 20.
-[^16]: For a Python library dedicated to handling imbalanced datasets and techniques, see [imbalanced-learn](https://imbalanced-learn.org/stable/), which provides tools for oversampling, undersampling, and more.
-[^17]: Afriyie, Jonathan Kwaku, et al. _[A supervised machine learning algorithm for detecting and predicting fraud in credit card transactions.](https://doi.org/10.1016/j.dajour.2023.100163)_ Decision Analytics Journal 6 (2023): 100163.
-[^18]: Yu, Chang, et al. "[Credit Card Fraud Detection Using Advanced Transformer Model](https://arxiv.org/pdf/2406.03733v2)." 2024 IEEE International Conference on Metaverse Computing, Networking, and Applications (MetaCom). IEEE, 2024.
-[^19]: Onyeoma, Chidinma Faith, et al. "[Credit Card Fraud Detection Using Deep Neural Network with Shapley Additive Explanations](https://ieeexplore.ieee.org/abstract/document/10838456)." 2024 International Conference on Frontiers of Information Technology (FIT). IEEE, 2024.
-[^21]: Alshameri, Faleh, and Ran Xia. "[An Evaluation of Variational Autoencoder in Credit Card Anomaly Detection](https://www.sciopen.com/article/10.26599/BDMA.2023.9020035)." Big Data Mining and Analytics (2024).
-[^22]: Charitou, Charitos, Artur d’Avila Garcez, and Simo Dragicevic. "[Semi-supervised GANs for fraud detection](https://ieeexplore.ieee.org/document/9206844)." 2020 International Joint Conference on Neural Networks (IJCNN). IEEE, 2020.
-[^23]: Motie, Soroor, and Bijan Raahemi. "[Financial fraud detection using graph neural networks: A systematic review](https://doi.org/10.1016/j.eswa.2023.122156)." Expert Systems with Applications (2024)
-[^24]: Branco, Bernardo, et al. "[Interleaved sequence RNNs for fraud detection](https://doi.org/10.1145/3394486.3403361)." Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining. 2020.
-[^25]: Masihullah, Shaik, et al. "[Identifying fraud rings using domain aware weighted community detection](https://link.springer.com/chapter/10.1007/978-3-031-14463-9_10)." International Cross-Domain Conference for Machine Learning and Knowledge Extraction. Cham: Springer International Publishing, 2022.
-[^26]: Krutikov, Sergei, et al. "[Challenging Gradient Boosted Decision Trees with Tabular Transformers for Fraud Detection at Booking.com](https://arxiv.org/html/2405.13692v1)." arXiv preprint arXiv:2405.13692 (2024).
-[^27]: Lin, Junhong, et al. "[FraudGT: A Simple, Effective, and Efficient Graph Transformer for Financial Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3677052.3698648)." Proceedings of the 5th ACM International Conference on AI in Finance. 2024.
+[^1]: Oztas, Berkan, et al. "_[Transaction monitoring in anti-money laundering: A qualitative analysis and points of view from industry.](https://www.sciencedirect.com/science/article/pii/S0167739X24002607)_" Future Generation Computer Systems (2024).
+[^2]: G. Praspaliauskas, V. Raman (2023). _"[Real-time fraud detection using AWS serverless and machine learning services](https://aws.amazon.com/blogs/machine-learning/real-time-fraud-detection-using-aws-serverless-and-machine-learning-services/)._ AWS Machine Learning Blog – outlines a serverless architecture using Amazon Kinesis, Lambda, and Amazon Fraud Detector for near-real-time fraud prevention."
+[^3]: Jian Zhang et al. (2022). _"[Build a GNN-based real-time fraud detection solution using Amazon SageMaker, Amazon Neptune, and DGL](https://aws.amazon.com/blogs/machine-learning/build-a-gnn-based-real-time-fraud-detection-solution-using-amazon-sagemaker-amazon-neptune-and-the-deep-graph-library/)._ AWS ML Blog – explains how graph neural networks can be served in real-time for fraud detection, noting challenges in moving from batch to real-time GNN inference."
+[^4]: Summer Liu et al. (2024). _"[Supercharging Fraud Detection in Financial Services with GNNs](https://developer.nvidia.com/blog/supercharging-fraud-detection-in-financial-services-with-graph-neural-networks/)._ NVIDIA Technical Blog."
+[^13]: Kandi, Kianeh, and Antonio García-Dopico. "_[Enhancing Performance of Credit Card Model by Utilizing LSTM Networks and XGBoost Algorithms.](https://www.mdpi.com/2504-4990/7/1/20)_" Machine Learning and Knowledge Extraction 7.1 (2025): 20.
+[^16]: For a Python library dedicated to handling imbalanced datasets and techniques, see _[imbalanced-learn](https://imbalanced-learn.org/stable/)_, which provides tools for oversampling, undersampling, and more.
+[^17]: Afriyie, Jonathan Kwaku, et al. _"[A supervised machine learning algorithm for detecting and predicting fraud in credit card transactions.](https://doi.org/10.1016/j.dajour.2023.100163)_ Decision Analytics Journal 6 (2023): 100163."
+[^18]: Yu, Chang, et al. "_[Credit Card Fraud Detection Using Advanced Transformer Model](https://arxiv.org/pdf/2406.03733v2)._" 2024 IEEE International Conference on Metaverse Computing, Networking, and Applications (MetaCom). IEEE, 2024.
+[^19]: Onyeoma, Chidinma Faith, et al. "_[Credit Card Fraud Detection Using Deep Neural Network with Shapley Additive Explanations](https://ieeexplore.ieee.org/abstract/document/10838456)._" 2024 International Conference on Frontiers of Information Technology (FIT). IEEE, 2024.
+[^21]: Alshameri, Faleh, and Ran Xia. "_[An Evaluation of Variational Autoencoder in Credit Card Anomaly Detection](https://www.sciopen.com/article/10.26599/BDMA.2023.9020035)._" Big Data Mining and Analytics (2024).
+[^22]: Charitou, Charitos, Artur d’Avila Garcez, and Simo Dragicevic. "_[Semi-supervised GANs for fraud detection](https://ieeexplore.ieee.org/document/9206844)._" 2020 International Joint Conference on Neural Networks (IJCNN). IEEE, 2020.
+[^23]: Motie, Soroor, and Bijan Raahemi. "_[Financial fraud detection using graph neural networks: A systematic review](https://doi.org/10.1016/j.eswa.2023.122156)._" Expert Systems with Applications (2024).
+[^24]: Branco, Bernardo, et al. "_[Interleaved sequence RNNs for fraud detection](https://doi.org/10.1145/3394486.3403361)._" Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining. 2020.
+[^25]: Masihullah, Shaik, et al. "_[Identifying fraud rings using domain aware weighted community detection](https://link.springer.com/chapter/10.1007/978-3-031-14463-9_10)._" International Cross-Domain Conference for Machine Learning and Knowledge Extraction. Cham: Springer International Publishing, 2022.
+[^26]: Krutikov, Sergei, et al. "_[Challenging Gradient Boosted Decision Trees with Tabular Transformers for Fraud Detection at Booking.com](https://arxiv.org/html/2405.13692v1)._" arXiv preprint arXiv:2405.13692 (2024).
+[^27]: Lin, Junhong, et al. "_[FraudGT: A Simple, Effective, and Efficient Graph Transformer for Financial Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3677052.3698648)._" Proceedings of the 5th ACM International Conference on AI in Finance. 2024.
 [^28]: R-ring collusion is a form of coordinated behavior where multiple accounts, potentially belonging to different individuals or groups, engage in fraudulent activities that benefit each other.
 [^29]: Service Level Agreement (SLA) is a commitment between a service provider and a client that outlines the expected level of service, including performance metrics and response times.
-[^30]: Shih, Yi-Cheng, et al. "[Fund transfer fraud detection: Analyzing irregular transactions and customer relationships with self-attention and graph neural networks.](https://www.sciencedirect.com/science/article/abs/pii/S0957417424020785)" Expert Systems with Applications. 2025.
-[^31]: Tong, Guoxiang, and Jieyu Shen. "[Financial transaction fraud detector based on imbalance learning and graph neural network.](https://www.sciencedirect.com/science/article/abs/pii/S1568494623010025)" Applied Soft Computing 149 (2023): 110984.
-[^32]: Huang, Huajie, et al. "[Imbalanced credit card fraud detection data: A solution based on hybrid neural network and clustering-based undersampling technique.](https://www.sciencedirect.com/science/article/abs/pii/S156849462400142X)" Applied Soft Computing 154 (2024): 111368.
+[^30]: Shih, Yi-Cheng, et al. "_[Fund transfer fraud detection: Analyzing irregular transactions and customer relationships with self-attention and graph neural networks.](https://www.sciencedirect.com/science/article/abs/pii/S0957417424020785)_" Expert Systems with Applications. 2025.
+[^31]: Tong, Guoxiang, and Jieyu Shen. "_[Financial transaction fraud detector based on imbalance learning and graph neural network.](https://www.sciencedirect.com/science/article/abs/pii/S1568494623010025)_" Applied Soft Computing 149 (2023): 110984.
+[^32]: Huang, Huajie, et al. "_[Imbalanced credit card fraud detection data: A solution based on hybrid neural network and clustering-based undersampling technique.](https://www.sciencedirect.com/science/article/abs/pii/S156849462400142X)_" Applied Soft Computing 154 (2024).
+[^33]: Cherif, Asma, et al. "_[Encoder–decoder graph neural network for credit card fraud detection.](https://www.sciencedirect.com/science/article/pii/S1319157824000922)_" Journal of King Saud University-Computer and Information Sciences 36.3 (2024).
+[^34]: Desai, Ajit, Anneke Kosse, and Jacob Sharples. "_[Finding a needle in a haystack: a machine learning framework for anomaly detection in payment systems.](https://www.sciencedirect.com/science/article/pii/S2405918825000157)._" The Journal of Finance and Data Science 11 (2025): 100163.
+[^35]: Boyapati, Mallika, and Ramazan Aygun. "_[BalancerGNN: Balancer Graph Neural Networks for imbalanced datasets: A case study on fraud detection.](https://www.sciencedirect.com/science/article/abs/pii/S0893608024008554)._" Neural Networks 182 (2025): 106926.

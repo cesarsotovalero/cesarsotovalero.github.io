@@ -23,9 +23,17 @@ published: false
 
 # Project Structure
 
+We don't do any processing steps in the game UI, as we adopted a frontend-backend architecture.
+We make an HTTP request to the API server that contains our question.
+Like this, we keep the browser application light while delegating the heavy lifting and business logic to the server.
+
+<https://cookiecutter-data-science.drivendata.org/>
+
 # UV
 
 # Ruff
+
+<https://pep8.org/>
 
 <https://github.com/astral-sh/ruff>
 
