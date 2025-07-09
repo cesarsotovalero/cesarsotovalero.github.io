@@ -23,10 +23,10 @@ author: cesarsotovalero
 published: true
 ---
 
-{% badge /img/badges/Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg 140 https://commons.wikimedia.org/wiki/File:NMA.0039209_Emigration._Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg %}
+{% badge /img/badges/Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg 140 <https://commons.wikimedia.org/wiki/File:NMA.0039209_Emigration._Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg> %}
 
-The AI fever has been around for a while now (4 years as I can count). 
-It reminds me of the [gold rush](https://en.wikipedia.org/wiki/Gold_rush) and subsequent [Californian Dream](https://en.wikipedia.org/wiki/California_Dream) from the 19th century. 
+The AI fever has been around for a while now (4 years as I can count).
+It reminds me of the [gold rush](https://en.wikipedia.org/wiki/Gold_rush) and subsequent [Californian Dream](https://en.wikipedia.org/wiki/California_Dream) from the 19th century.
 The new "happy idea" is that today any single individual could get rich almost instantly by leveraging the novel AI's-based capabilities the right way.
 The potential opportunities to apply Generative AI (GenAI) for profit span almost all areas of development, from pure arts to fundamental science, from medical diagnosis to engineering, and so on.
 [AI agents](https://en.wikipedia.org/wiki/Intelligent_agent) can now [generate](https://www.sciencedirect.com/science/article/pii/S2352847823001557) new scientific hypotheses.
@@ -38,16 +38,16 @@ Let's dive in!
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-11-17/twisted-revolver.jpg alt: "Time to stop shutting flies with AI powered bullets" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
    &#169; Stop shutting flies with AI-powered bullets, sometimes just use flyswatter instead. Picture of a sculpture located in <a href="https://maps.app.goo.gl/9tWekqJTscsLmkgd9">Hötorgshallen 50</a>, in Stockholm city.
   </figcaption>
 </figure>
 
 # What Seems to Work
 
-I'm not an entrepreneur myself (yet), but I'm overall an enthusiast of the startup ecosystem. I've listened to the [Indie Hackers Podcasts](https://www.indiehackers.com/podcasts), read [TechCrunch](https://techcrunch.com/), and still check cool launches on [Gumroad](https://gumroad.com) from time to time. Over the years, I've seen many startups succeed and fail along the way for diverse reasons. Some of them failed due to overhyped tech, unrealistic business models, or poor timing (e.g., Pets.com, Theranos, or Rdio). 
+I'm not an entrepreneur myself (yet), but I'm overall an enthusiast of the startup ecosystem. I've listened to the [Indie Hackers Podcasts](https://www.indiehackers.com/podcasts), read [TechCrunch](https://techcrunch.com/), and still check cool launches on [Gumroad](https://gumroad.com) from time to time. Over the years, I've seen many startups succeed and fail along the way for diverse reasons. Some of them failed due to overhyped tech, unrealistic business models, or poor timing (e.g., Pets.com, Theranos, or Rdio).
 
-Obviously, whenever there is a new technology, there is a wave of startups trying to profit from it. 
+Obviously, whenever there is a new technology, there is a wave of startups trying to profit from it.
 Do you remember the blockchain hype 10 years ago?
 I can't forget about the many crypto millionaires that emerged from it (especially because I wasn't one of them).
 
@@ -59,7 +59,7 @@ Third, GenAI helps us understand the world better by analyzing data in an unprec
 
 ## Success Factors
 
-The success of any GenAI project is extremelly hard to predict. 
+The success of any GenAI project is extremelly hard to predict.
 However, the ones that succeed share some common traits that set them apart from the noise.
 Below are factors to keep in mind when evaluating whether an AI idea is worth your time and resources.
 
@@ -97,7 +97,7 @@ Most GenAI ideas are not worth pursuing.
 Numerous AI-driven apps fail due to over-saturation and lack of resources to compete against the tech giants that already have customer trust and a large user base.
 Other fail due to technical glitches, poor product pivots, or simply because they don't solve a real problem.
 There is another set that fail because of premature obsolescense (e.g., a friend built a now dead startup 4 years ago about simplifying email through summarization).
-Failure is hard to predict when one truly believes in a proyect. 
+Failure is hard to predict when one truly believes in a proyect.
 
 ## Lessons from AI Failures
 
@@ -125,7 +125,7 @@ Many companies have fallen into the trap of hyping up their AI solutions, only t
 For example, [Forward Health](https://www.businessinsider.com/healthcare-startup-forward-shutdown-carepod-adrian-aoun-2024-11) promised a futuristic healthcare experience with its CarePods but failed to deliver on its ambitious vision.
 To avoid overpromising, companies should set realistic goals, communicate openly with users, and focus on incremental improvements rather than grandiose claims.
 
-In addition to the primary lessons above, there are a few more pitfalls that commonly arise in AI development. 
+In addition to the primary lessons above, there are a few more pitfalls that commonly arise in AI development.
 These may not always be immediately obvious but are equally critical in creating a successful AI application.
 
 **Use GenAI When You Don’t Need It.**
@@ -157,7 +157,7 @@ In summary, avoid building AI apps that don’t solve a real problem, are overhy
 
 # Final Thoughts
 
-The AI gold rush is far from over. Many GenAI startups are rushing headfirst into this space, hoping to strike gold, but failing to dig deep enough to find the right nuggets. In the future, the winners will be those who embrace simplicity, scale, and ethics, while staying grounded in real-world needs. To make AI a lasting success, focus on creating products that truly solve problems for the user, rather than just jumping on the bandwagon. Who knows? Maybe your next AI project will end up as the one everyone’s talking about. Or maybe it will be yet another “failed startup” story. 
+The AI gold rush is far from over. Many GenAI startups are rushing headfirst into this space, hoping to strike gold, but failing to dig deep enough to find the right nuggets. In the future, the winners will be those who embrace simplicity, scale, and ethics, while staying grounded in real-world needs. To make AI a lasting success, focus on creating products that truly solve problems for the user, rather than just jumping on the bandwagon. Who knows? Maybe your next AI project will end up as the one everyone’s talking about. Or maybe it will be yet another “failed startup” story.
 
 You will never know until you try.
 
@@ -168,3 +168,4 @@ You will never know until you try.
 - [:globe_with_meridians: Selldone: Major Startup Failures 2024](https://selldone.com/blog/major-startup-failures-2024-824)
 - [:globe_with_meridians: Chip Huyen: Common pitfalls when building generative AI applications](https://huyenchip.com/2025/01/16/ai-engineering-pitfalls.html)
 - [:globe_with_meridians: Chip Huyen: List of Open Source LLM Tools](https://huyenchip.com/llama-police)
+- [:globe_with_meridians: 101 Real-World Generative AI Use Cases from Industry Leaders](https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders)
