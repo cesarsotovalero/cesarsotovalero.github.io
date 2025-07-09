@@ -4,15 +4,15 @@ title: Evaluation Metrics for ML-based Financial Fraud Detection Models
 subtitle: An overview
 tags: ai
 description: |
-  This survey reviews the current state-of-the-art in evaluation metrics for real-time financial fraud detection, spanning both academic research and industry practice.
+  After training a real-time financial fraud detection model, the next step is to evaluate its performance. This post provides an overview of the most common evaluation metrics and considerations for fraud detection models, including confusion matrix, precision, recall, F1-score, AUC-ROC, AUC-PR, and more.
 keywords:
   - financial fraud
   - fraud detection
   - machine learning
   - deep learning
   - survey
-image: ../img/posts/2025/2025-04-03/Kungsträdgården_cover.jpg
-share-img: ../img/posts/2025/2025-04-03/Kungsträdgården_cover.jpg
+image: ../img/posts/2025/2025-05-08/Kungsträdgården_cover.jpg
+share-img: ../img/posts/2025/2025-05-08/Kungsträdgården_cover.jpg
 show-avatar: false
 toc: true
 mathjax: true
@@ -21,14 +21,9 @@ author: cesarsotovalero
 published: true
 ---
 
-After training an ML model for [real-time financial fraud detection](../blog/real-time-financial-fraud-detection.html), the next step is to evaluate its performance.
+After training an ML model for [real-time financial fraud detection](../blog/real-time-financial-fraud-detection.html), the next step is to evaluate its performance. Fraud detection models face unique challenges during evaluation, including class imbalance, where suspicious transactions are vastly outnumbered by legitimate ones, and the relative costs of false positives vs. false negatives. False positives, which flag legitimate transactions as fraudulent, can lead to customer dissatisfaction, while false negatives, where fraudulent transactions go undetected, can result in significant financial losses.
 
-Evaluating fraud detection models requires metrics that account for very particular challenges such as:
-
-- **Class imbalance:** Transactions labeled as suspicious are typically significantly fewer than total historical transactions.
-- **Relative costs of FP vs. FN:** False positives (legitimate transactions flagged as fraud) can lead to customer dissatisfaction, while false negatives (fraudulent transactions not detected) can result in financial losses.
-
-Below are the most common metrics and considerations.
+Below are the most common metrics and considerations for evaluating fraud detection models while keeping its unique challenges in mind.
 
 # Confusion Matrix
 
@@ -38,14 +33,14 @@ Leveraging this universal approach to binary classification, we can establish st
 The confusion matrix is a widely used tool for summarizing and visualizing the performance of a classification model in a tabular format.
 It provides a clear breakdown of predictions versus actual outcomes. In this matrix:
 
-- The x-axis represents the ground-truth labels (actual outcomes).
-- The y-axis represents the predictions made by the classification model.
+- The *x*-axis represents the ground-truth labels (actual outcomes).
+- The *y*-axis represents the predictions made by the classification model.
 
 Both axes are divided into two categories: positive (fraudulent) and negative (genuine).
 The positive class corresponds to the minority class (fraud), while the negative class corresponds to the majority class (genuine).
 
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2025/2025-05-08/confusion-matrix.svg alt: "Confusion matrix of a financial fraud binary classifier." %}
+  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2025/2025-05-08/confusion-matrix.jpg alt: "Confusion matrix of a financial fraud binary classifier." %}
   <figcaption class="stroke">
     Confusion matrix of a financial fraud binary classifier.
   </figcaption>
@@ -124,9 +119,9 @@ For instance, if a model has Precision = 0.6 and Recall = 0.6, then F1 = 0.6. If
 
 F1 is a popular metric in Kaggle competitions and papers to compare models, ensuring they are not just optimizing one at the expense of the other.
 
-# False Positive Rate (FPR) and False Negative Rate (FNR)
+# FPR and FNR
 
-FPR is the fraction of legitimate transactions that were incorrectly flagged as fraud (false positives) out of all legitimate transactions.
+False Positive Rate (FPR) is the fraction of legitimate transactions that were incorrectly flagged as fraud (false positives) out of all legitimate transactions.
 
 For example, if there were 1000 legitimate transactions and the model flagged 50 of them as fraud, then:
 
@@ -134,7 +129,7 @@ $$
 \text{FPR} = \frac{FP}{TN + FP} = \frac{50}{1000} = 0.05 \text{ or } 5\%
 $$
 
-FNR is the fraction of fraudulent transactions that were missed (false negatives) out of all actual fraud cases.
+False Negative Rate (FNR) is the fraction of fraudulent transactions that were missed (false negatives) out of all actual fraud cases.
 
 For example, if there were 1000 actual fraud cases and the model missed 20 of them, then:
 
@@ -151,31 +146,31 @@ For example:
 
 These constraints often drive the choice of operating thresholds more directly than Precision or Recall alone.
 
-# Specificity (True Negative Rate)
+# TNR
 
-Specificity measures how well the system correctly identifies legitimate transactions as non-fraud.
+True Negative Rate (TNR) or Specificity measures how well the system correctly identifies legitimate transactions as non-fraud.
 
 For example, if there were 1000 legitimate transactions and the model flagged 50 of them incorrectly as fraud (FP), the calculation would be:
 
 $$
-\text{Specificity} = \frac{TN}{TN + FP} = \frac{950}{950 + 50} = 0.95 \text{ or } 95\%
+\text{TNR} = \frac{TN}{TN + FP} = \frac{950}{950 + 50} = 0.95 \text{ or } 95\%
 $$
 
-Specificity is often overlooked in fraud detection because it’s essentially the complement of the False Positive Rate (FPR):
+TNR is often overlooked in fraud detection because it’s essentially the complement of the False Positive Rate (FPR):
 
 $$
-\text{Specificity} = 1 - \text{FPR}
+\text{TNR} = 1 - \text{FPR}
 $$
 
-Specificity is typically very high in fraud detection systems because the number of legitimate transactions (TN) is much larger than the number of frauds or false positives.
+TNR is typically very high in fraud detection systems because the number of legitimate transactions (TN) is much larger than the number of frauds or false positives.
 
-Since Precision already focuses on avoiding false positives, and we typically assume we want to approve as many legitimate transactions as possible, Specificity doesn’t usually take center stage.
+Since Precision already focuses on avoiding false positives, and we typically assume we want to approve as many legitimate transactions as possible, TNR doesn’t usually take center stage.
 
-However, in some contexts, like regulatory requirements or customer experience, it’s important to keep FPR below a certain threshold, such as “FPR ≤ 0.1%,” which directly relates to maintaining high Specificity.
+However, in some contexts, like regulatory requirements or customer experience, it’s important to keep FPR below a certain threshold, such as “FPR ≤ 0.1%,” which directly relates to maintaining high TNR.
 
-# AUC-ROC (Area Under the ROC Curve)
+# AUC-ROC
 
-AUC-ROC measures a model’s ability to distinguish fraud from non-fraud across all possible thresholds.
+The Area Under the ROC Curve (AUC-ROC) measures a model’s ability to distinguish fraud from non-fraud across all possible thresholds.
 
 The ROC curve (Receiver Operating Characteristic) plots True Positive Rate (Recall) against False Positive Rate (FPR).
 
@@ -196,9 +191,9 @@ An intuitive interpretation:
 
 AUC is threshold-independent: it summarizes performance across all thresholds, and it’s less sensitive to class imbalance than accuracy.
 
-# AUC-PR (Area Under Precision-Recall Curve)
+# AUC-PR
 
-AUC-PR plots Precision vs. Recall and focuses squarely on the minority class (fraud), so it tells us how well the model catches fraud while keeping false positives low.
+The Area Under Precision-Recall Curve (AUC-PR) plots Precision vs. Recall and focuses squarely on the minority class (fraud), so it tells us how well the model catches fraud while keeping false positives low.
 
 In highly imbalanced data such as fraud detection, AUC-PR is more informative than AUC-ROC because it answers how well the model balances Precision and Recall where it matters.
 
@@ -206,7 +201,7 @@ For instance, a model could have AUC-ROC = 0.98 and still have AUC-PR = 0.10, wh
 
 AUC-PR is the go-to metric when fraud cases are rare, and we care about catching as many as possible without overwhelming the system with false alarms.
 
-# Finding the Right Threshold for AUC-PR
+# Threshold for AUC-PR
 
 Once we have chosen the best model as per AUC-PR, we need to decide a threshold, denoted as $$ \tau $$, to convert this model’s fraud probability output into a concrete binary decision (fraud or not fraud).
 
@@ -215,7 +210,7 @@ If we look at the Precision-Recall (PR) curve in the figure below, different val
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-05-08/AUPRC.png alt: "Sample Precision-Recall curves for two models A and B." %}
   <figcaption class="stroke">
-    Sample Precision-Recall curves for two models A and B. Model B is superior to model A as is reflected in the AUC-PR values of the two models. Different points on the PR curve represent different threshold values $$ \tau $$ and different trade-offs between Precision and Recall metrics.
+    Sample Precision-Recall curves for two models A and B. Model B is superior to model A as is reflected in the AUC-PR values of the two models. Different points on the PR curve represent different threshold values and different trade-offs between Precision and Recall metrics.
   </figcaption>
 </figure>
 
@@ -272,7 +267,7 @@ In practice, evaluating a fraud model involves:
 
 But evaluation doesn’t stop at metrics.
 
-Weighting fraud by transaction amount matters—catching a $10,000 fraud is more impactful than catching ten $1 cases.
+Weighting fraud by transaction amount matters: catching a \$10,000 fraud is more impactful than catching ten \$1 cases.
 
 And finally: metrics on static test sets aren't enough.
 
