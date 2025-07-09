@@ -11,8 +11,8 @@ keywords:
   - machine learning
   - deep learning
   - survey
-image: ../img/posts/2025/2025-05-08/Kungsträdgården_cover.jpg
-share-img: ../img/posts/2025/2025-05-08/Kungsträdgården_cover.jpg
+image: ../img/posts/2025/2025-05-08/kungstradgarden_cover.jpg
+share-img: ../img/posts/2025/2025-05-08/kungstradgarden_cover.jpg
 show-avatar: false
 toc: true
 mathjax: true
@@ -259,11 +259,11 @@ Real-time systems strive for instant detection—meaning as soon as the first fe
 
 # Summary
 
-In practice, evaluating a fraud model involves:
+In practice, evaluating a fraud detection model involves:
 
-- Choosing thresholds that satisfy **business constraints** (e.g., max false positives).
-- Analyzing the **confusion matrix** at the operating point.
-- Reviewing **AUC-PR**, **AUC-ROC**, and **F1**.
+1. Analyzing the confusion matrix at the operating point.
+2. Reviewing AUC-PR, AUC-ROC, and F1.
+3. Choosing thresholds that satisfy business constraints (e.g., max false positives).
 
 But evaluation doesn’t stop at metrics.
 
@@ -271,9 +271,11 @@ Weighting fraud by transaction amount matters: catching a \$10,000 fraud is more
 
 And finally: metrics on static test sets aren't enough.
 
-Perform [backtesting](https://en.wikipedia.org/wiki/Backtesting) (simulate past performance) and [sandbox testing](https://en.wikipedia.org/wiki/Sandbox_(computer_security)) (simulate deployment). Observe how fraud patterns change. Do attackers evolve? Do false positives creep up?
+Perform [backtesting](https://en.wikipedia.org/wiki/Backtesting) (simulate past performance) and [sandbox testing](https://en.wikipedia.org/wiki/Sandbox_(computer_security)) (simulate deployment).
 
-Even better: run an [A/B test](https://en.wikipedia.org/wiki/A/B_testing).
+Observe how fraud patterns change: Do attackers evolve? Do false positives creep up?
+
+Or even better: run [A/B tests](https://en.wikipedia.org/wiki/A/B_testing).
 
 Put the new model in production in [shadow mode](https://en.wikipedia.org/wiki/Shadowing_(computing)) and compare it to the previous version, on real dollars and real users.
 
