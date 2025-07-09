@@ -23,7 +23,7 @@ published: true
 
 After training an ML model for [real-time financial fraud detection](../blog/real-time-financial-fraud-detection.html), the next step is to evaluate its performance. Fraud detection models face unique challenges during evaluation, including class imbalance, where suspicious transactions are vastly outnumbered by legitimate ones, and the relative costs of false positives vs. false negatives. False positives, which flag legitimate transactions as fraudulent, can lead to customer dissatisfaction, while false negatives, where fraudulent transactions go undetected, can result in significant financial losses.
 
-Below are the most common metrics and considerations for evaluating fraud detection models while keeping its unique challenges in mind.
+Below are the most common metrics and considerations for evaluating fraud detection models while keeping these unique challenges in mind.
 
 # Confusion Matrix
 
