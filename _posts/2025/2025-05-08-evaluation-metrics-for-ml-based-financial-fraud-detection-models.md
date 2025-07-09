@@ -201,7 +201,7 @@ For instance, a model could have AUC-ROC = 0.98 and still have AUC-PR = 0.10, wh
 
 AUC-PR is the go-to metric when fraud cases are rare, and we care about catching as many as possible without overwhelming the system with false alarms.
 
-# Threshold for AUC-PR
+## Threshold for AUC-PR
 
 Once we have chosen the best model as per AUC-PR, we need to decide a threshold, denoted as $$ \tau $$, to convert this model’s fraud probability output into a concrete binary decision (fraud or not fraud).
 
@@ -267,7 +267,7 @@ In practice, evaluating a fraud detection model involves:
 
 But evaluation doesn’t stop at metrics.
 
-Weighting fraud by transaction amount matters: catching a \$10,000 fraud is more impactful than catching ten \$1 cases.
+Weighting fraud by transaction amount matters: catching a 10,000 USD fraud is more impactful than catching ten 1,000 USD cases.
 
 And finally: metrics on static test sets aren't enough.
 
