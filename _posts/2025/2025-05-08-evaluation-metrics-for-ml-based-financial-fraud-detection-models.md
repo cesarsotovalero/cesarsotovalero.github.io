@@ -210,7 +210,7 @@ If we look at the Precision-Recall (PR) curve in the figure below, different val
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-05-08/AUPRC.png alt: "Sample Precision-Recall curves for two models A and B." %}
   <figcaption class="stroke">
-    Fig 2. Sample Precision-Recall curves for two models A and B. Model B is superior to model A as is reflected in the AUC-PR values of the two models. Different points on the PR curve represent different threshold values and different trade-offs between Precision and Recall metrics.
+    Sample Precision-Recall curves for two models A and B. Model B is superior to model A as is reflected in the AUC-PR values of the two models. Different points on the PR curve represent different threshold values and different trade-offs between Precision and Recall metrics.
   </figcaption>
 </figure>
 
