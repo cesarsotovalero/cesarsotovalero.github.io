@@ -39,12 +39,7 @@ It provides a clear breakdown of predictions versus actual outcomes. In this mat
 Both axes are divided into two categories: positive (fraudulent) and negative (genuine).
 The positive class corresponds to the minority class (fraud), while the negative class corresponds to the majority class (genuine).
 
-<figure class="jb_picture">
-{% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2025/2025-05-08/confusion-matrix.jpg alt: "Confusion matrix of a financial fraud binary classifier." %}
-  <figcaption class="stroke">
-    Fig 1. Confusion matrix of a financial fraud binary classifier.
-  </figcaption>
-</figure>
+<img src="/img/posts/2025/2025-05-08/confusion-matrix.svg" alt="Confusion Matrix" />
 
 The confusion matrix includes the following metrics:
 
