@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Evaluation Metrics for ML-based Financial Fraud Detection Models
+title: Evaluation Metrics for Real-Time Financial Fraud Detection Models
 subtitle: An overview
 tags: ai
 description: |
@@ -21,17 +21,22 @@ author: cesarsotovalero
 published: true
 ---
 
-After training an ML model for [real-time financial fraud detection](../blog/real-time-financial-fraud-detection.html), the next step is to evaluate its performance. Fraud detection models face unique challenges during evaluation, including class imbalance, where suspicious transactions are vastly outnumbered by legitimate ones, and the relative costs of false positives vs. false negatives. False positives, which flag legitimate transactions as fraudulent, can lead to customer dissatisfaction, while false negatives, where fraudulent transactions go undetected, can result in significant financial losses.
+After training an ML model for [real-time financial fraud detection](../blog/real-time-financial-fraud-detection.html), the next step is to evaluate its performance. Fraud detection models face unique challenges during evaluation.
+For example, class imbalance where suspicious transactions are vastly outnumbered by legitimate ones, and the relative costs of false positives vs. false negatives.
+False positives, which flag legitimate transactions as fraudulent, can lead to customer dissatisfaction, while false negatives, where fraudulent transactions go undetected, can result in significant financial losses.
 
-Below are the most common metrics and considerations for evaluating fraud detection models while keeping these unique challenges in mind.
+Below, I've made a compendium of the most common metrics and considerations for evaluating fraud detection models while keeping these unique challenges in mind.
 
 # Confusion Matrix
 
 Every fraud detection system generates a binary output: a prediction indicating whether a transaction is fraudulent (1) or genuine (0).
-Leveraging this universal approach to binary classification, we can establish standard evaluation methodologies to assess the performance of fraud detection systems.
+
+By leveraging this universal approach to binary classification, we can establish standard evaluation methodologies to assess the performance of this type of models.
 
 The confusion matrix is a widely used tool for summarizing and visualizing the performance of a classification model in a tabular format.
-It provides a clear breakdown of predictions versus actual outcomes. In this matrix:
+It provides a clear breakdown of predictions versus actual outcomes.
+
+In this matrix:
 
 - The *x*-axis represents the ground-truth labels (actual outcomes).
 - The *y*-axis represents the predictions made by the classification model.
@@ -41,7 +46,7 @@ The positive class corresponds to the minority class (fraud), while the negative
 
 <img src="/img/posts/2025/2025-05-08/confusion-matrix.svg" alt="Confusion Matrix" />
 
-The confusion matrix includes the following metrics:
+Inside the matrix, we can read the following metrics:
 
 - **True Positives (TP):** The number of fraudulent transactions correctly identified as fraud.
 - **True Negatives (TN):** The number of genuine transactions correctly identified as genuine.
