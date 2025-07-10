@@ -1,123 +1,116 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.cesarsotovalero.net/" rel="alternate" type="text/html" /><updated>2025-07-09T13:17:30-07:00</updated><id>https://www.cesarsotovalero.net/feed.xml</id><title type="html">César Soto Valero</title><subtitle>César - Computer Scientist</subtitle><author><name>César Soto Valero</name><email>NaN</email></author><entry><title type="html">Evaluation Metrics for Real-Time Financial Fraud Detection Models</title><link href="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-ml-based-financial-fraud-detection-models.html" rel="alternate" type="text/html" title="Evaluation Metrics for Real-Time Financial Fraud Detection Models" /><published>2025-05-08T00:00:00-07:00</published><updated>2025-07-09T13:16:23-07:00</updated><id>https://www.cesarsotovalero.net/blog/evaluation-metrics-for-ml-based-financial-fraud-detection-models</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-ml-based-financial-fraud-detection-models.html"><![CDATA[<p>After training an ML model for <a href="../blog/real-time-financial-fraud-detection.html">real-time financial fraud detection</a>, the next step is to evaluate its performance. Fraud detection models face unique challenges during evaluation.
-For example, class imbalance where suspicious transactions are vastly outnumbered by legitimate ones, and the relative costs of false positives vs. false negatives.
-False positives, which flag legitimate transactions as fraudulent, can lead to customer dissatisfaction, while false negatives, where fraudulent transactions go undetected, can result in significant financial losses.</p>
-
-<p>Below, I’ve made a compendium of the most common metrics and considerations for evaluating fraud detection models while keeping these unique challenges in mind.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.cesarsotovalero.net/" rel="alternate" type="text/html" /><updated>2025-07-10T02:32:51-07:00</updated><id>https://www.cesarsotovalero.net/feed.xml</id><title type="html">César Soto Valero</title><subtitle>César - Computer Scientist</subtitle><author><name>César Soto Valero</name><email>NaN</email></author><entry><title type="html">Evaluation Metrics for Real-Time Financial Fraud Detection ML Models</title><link href="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-ml-based-financial-fraud-detection-models.html" rel="alternate" type="text/html" title="Evaluation Metrics for Real-Time Financial Fraud Detection ML Models" /><published>2025-05-08T00:00:00-07:00</published><updated>2025-07-10T02:31:30-07:00</updated><id>https://www.cesarsotovalero.net/blog/evaluation-metrics-for-ml-based-financial-fraud-detection-models</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-ml-based-financial-fraud-detection-models.html"><![CDATA[<p>After training a machine learning model for <a href="../blog/real-time-financial-fraud-detection.html">real-time financial fraud detection</a>, the next step is to evaluate its performance.
+Fraud detection models face unique challenges during evaluation.
+Two examples are (1) class imbalance and (2) the different costs of false positives vs. false negatives.
+Class imbalance means that the model doesn’t have enough fraudulent transactions to learn from, as they are rare compared to legitimate ones.
+False positives, which flag legitimate transactions as fraudulent, can lead to customer dissatisfaction, while false negatives, where fraudulent transactions go undetected, can result in significant financial losses.
+In this post, I cover the most common metrics and considerations for evaluating fraud detection models while keeping these unique challenges in mind.</p>
 
 <h1 id="confusion-matrix">Confusion Matrix</h1>
 
-<p>Every fraud detection system generates a binary output: a prediction indicating whether a transaction is fraudulent (1) or genuine (0).</p>
+<p>Most financial fraud detection systems generate a binary output: a prediction indicating whether a transaction (txt) is fraudulent (1) or genuine (0).</p>
 
 <p>By leveraging this universal approach to binary classification, we can establish standard evaluation methodologies to assess the performance of this type of models.</p>
 
 <p>The confusion matrix is a widely used tool for summarizing and visualizing the performance of a classification model in a tabular format.
-It provides a clear breakdown of predictions versus actual outcomes.</p>
+It provides a clear breakdown of predictions vs. actual outcomes.</p>
 
-<p>In this matrix:</p>
+<p>In a confusion matrix:</p>
 
 <ul>
   <li>The <em>x</em>-axis represents the ground-truth labels (actual outcomes).</li>
   <li>The <em>y</em>-axis represents the predictions made by the classification model.</li>
 </ul>
 
-<p>Both axes are divided into two categories: positive (fraudulent) and negative (genuine).
+<p>Both axes are divided into two categories: positive (fraudulent txt) and negative (genuine txt).
 The positive class corresponds to the minority class (fraud), while the negative class corresponds to the majority class (genuine).</p>
 
 <p><img src="/img/posts/2025/2025-05-08/confusion-matrix.svg" alt="Confusion Matrix" /></p>
 
-<p>Inside the matrix, we can read the following metrics:</p>
+<p>This representation allows us to visualize the model’s performance in terms of true positives, true negatives, false positives, and false negatives.</p>
 
 <ul>
   <li><strong>True Positives (TP):</strong> The number of fraudulent transactions correctly identified as fraud.</li>
   <li><strong>True Negatives (TN):</strong> The number of genuine transactions correctly identified as genuine.</li>
   <li><strong>False Positives (FP):</strong> The number of genuine transactions incorrectly flagged as fraudulent.</li>
-  <li><strong>False Negatives (FN):</strong> The number of fraudulent transactions missed by the system (predicted as genuine).</li>
+  <li><strong>False Negatives (FN):</strong> The number of fraudulent transactions missed by the system.</li>
 </ul>
 
-<p>By analyzing these metrics, the confusion matrix provides a comprehensive view of the model’s strengths and weaknesses, enabling informed decisions for further optimization.</p>
+<p>By analyzing these metrics, we gain a comprehensive view of the model’s strengths and weaknesses, enabling informed decisions for further optimization.</p>
 
 <h1 id="precision">Precision</h1>
 
-<p>Precision is the fraction of transactions that were actually fraud among all transactions the model flagged as fraud (predicted positive).</p>
+<p><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Precision</a> is the fraction of transactions that were actually fraud among all transactions the model flagged as fraud (predicted positive).</p>
 
 <p>For example, if a model flagged 100 transactions as fraud, and 80 of those were indeed fraudulent, then:</p>
 
-\[\text{Precision} = \frac{TP}{TP + FP} = \frac{80}{100} = 0.8\]
+\[\text{Precision} = \frac{TP}{TP + FP} = \frac{80}{80 + 20} = 0.8\]
 
 <p>High Precision means few false positives, so it is crucial for operational efficiency.</p>
 
-<p>Low Precision means investigators waste time on many false alarms, and customers suffer unnecessary declines.</p>
+<p>Low Precision means investigators waste time on many false alarms, and customers suffer unnecessary transaction declines.</p>
 
-<p>Many top systems aim for very high Precision (e.g., 0.9+) at low fraud rates, but there’s a trade-off with Recall.</p>
-
-<p>Precision is often reported at a certain operating point or as an average if multiple thresholds are considered.</p>
+<p>Many top systems aim for very high Precision (e.g., 0.9+) at low fraud rates, but there’s a trade-off with Recall.
+For example, if we lower the threshold to catch more fraud, Precision may drop.
+Therefore, Precision is often reported at a certain operating point or as an average if multiple thresholds are considered.</p>
 
 <p>An example interpretation: “Of the transactions our system blocked, 95% were indeed fraudulent”, that’s a Precision of 95%.</p>
 
 <h1 id="recall">Recall</h1>
 
-<p>Recall is the fraction of actual fraud cases that the model correctly predicts as fraud (true positives) out of all actual fraud cases.</p>
+<p><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Recall</a> is the fraction of actual fraud cases that the model correctly predicts as fraud (true positives) out of all actual fraud cases.</p>
 
 <p>For example, if there were 100 actual fraud cases and the model caught 80 of them, then:</p>
 
-\[\text{Recall} = \frac{TP}{TP + FN} = \frac{80}{100} = 0.8\]
+\[\text{Recall} = \frac{TP}{TP + FN} = \frac{80}{80 + 20} = 0.8\]
+
+<p>A Recall of 0.80 means 80% of fraud instances were detected (20% missed).</p>
 
 <p>High Recall means few false negatives, which is critical in fraud detection because missing a fraudulent transaction can lead to financial losses.</p>
 
 <p>Low Recall means many frauds slip through and cause losses.</p>
 
-<p>However, one can usually increase Recall by lowering the detection threshold at the cost of Precision. So there’s a balance.</p>
-
-<p>A Recall of 0.80 means 80% of fraud instances were detected (20% missed).</p>
-
-<p>In practice, businesses may set a Recall target like “catch at least 70% of fraud” and then maximize Precision under that constraint.</p>
+<p>We can usually increase Recall by lowering the detection threshold at the cost of Precision.
+In practice, businesses may set a Recall target like “catch at least 70% of fraud” and then maximize Precision under that constraint.</p>
 
 <h1 id="f1-score">F1-Score</h1>
 
-<p>F1-Score is the harmonic mean of Precision and Recall, so it gives a single-figure balance of both metrics.</p>
+<p><a href="https://en.wikipedia.org/wiki/F-score">F1-Score</a>, or F1 for short, is the harmonic mean of Precision and Recall.
+It gives a single-figure balance of both metrics, which is useful when we want a combined score for model selection or when class distribution is skewed.</p>
 
 <p>For example, if Precision is 0.8 and Recall is 0.6, then:</p>
 
-\[F_1 = \frac{2 \times Precision \times Recall}{Precision + Recall} = \frac{2 \times 0.8 \times 0.6}{0.8 + 0.6} = \frac{0.96}{1.4} \approx 0.686\]
+\[F1 = \frac{2 \times Precision \times Recall}{Precision + Recall} \approx 0.686\]
 
-<p>High F1 means both Precision and Recall are reasonably high.</p>
+<p>High F1 means both Precision and Recall are reasonably high.
+Low F1 means either Precision or Recall is low, which is undesirable in fraud detection.</p>
 
-<p>Low F1 means either Precision or Recall is low, which is undesirable in fraud detection.</p>
+<p>Overall, F1 is a good metric to assess a fraud detection model.
+It is also a popular metric in Kaggle competitions and papers to compare models, ensuring they are not just optimizing one at the expense of the other.</p>
 
-<p>F1-Score is useful when we want a combined score for model selection or when class distribution is skewed.</p>
+<h1 id="fpr">FPR</h1>
 
-<p>In extremely imbalanced data, even F1 can be dominated by one side if not handled carefully.</p>
+<p>False Positive Rate (FPR) is is the share of legitimate transactions that get incorrectly flagged as fraud.</p>
 
-<p>F1 is much better than accuracy for fraud.</p>
+<p>For example, if there were 100 legitimate transactions and the model flagged 5 of them as fraud, then:</p>
 
-<p>For instance, if a model has Precision = 0.6 and Recall = 0.6, then F1 = 0.6. If another has Precision = 0.7 but Recall = 0.4, F1 \(\approx 0.50\), telling us the first model is overall better balanced.</p>
+\[\text{FPR} = \frac{FP}{TN + FP} = \frac{5}{95 + 5} = 0.05\]
 
-<p>F1 is a popular metric in Kaggle competitions and papers to compare models, ensuring they are not just optimizing one at the expense of the other.</p>
+<p>FPR is important because it directly impacts customer experience.
+High FPR means many legitimate transactions are blocked, leading to customer dissatisfaction and potential loss of business trust.</p>
 
-<h1 id="fpr-and-fnr">FPR and FNR</h1>
+<p>Sometimes businesses set FPR requirements to control false alarms.
+For example: “We can only tolerate reviewing 0.5% of transactions, so FPR must be ≤ 0.005.”</p>
 
-<p>False Positive Rate (FPR) is the fraction of legitimate transactions that were incorrectly flagged as fraud (false positives) out of all legitimate transactions.</p>
+<h1 id="fnr">FNR</h1>
 
-<p>For example, if there were 1000 legitimate transactions and the model flagged 50 of them as fraud, then:</p>
+<p>False Negative Rate (FNR) is the share of fraudulent transactions the model misses.</p>
 
-\[\text{FPR} = \frac{FP}{TN + FP} = \frac{50}{1000} = 0.05 \text{ or } 5\%\]
+<p>For example, if there were 100 actual fraud cases and the model missed 2 of them, then:</p>
 
-<p>False Negative Rate (FNR) is the fraction of fraudulent transactions that were missed (false negatives) out of all actual fraud cases.</p>
+\[\text{FNR} = \frac{FN}{TP + FN} = \frac{2}{98 + 2} = 0.025\]
 
-<p>For example, if there were 1000 actual fraud cases and the model missed 20 of them, then:</p>
-
-\[\text{FNR} = \frac{FN}{TP + FN} = \frac{20}{1000} = 0.02 \text{ or } 2\%\]
-
-<p>Sometimes businesses set FPR requirements to control false alarms.</p>
-
-<p>For example:</p>
-
-<ul>
-  <li>“We can only review 0.5% of transactions, so FPR must be ≤ 0.5%.”</li>
-  <li>“We cannot tolerate missing more than 10% of fraud, so FNR ≤ 10%,” which implies Recall ≥ 90%.</li>
-</ul>
-
-<p>These constraints often drive the choice of operating thresholds more directly than Precision or Recall alone.</p>
+<p>Some businesses set FNR requirements to control missed fraud.
+For example: “We cannot tolerate missing more than 10% of fraud, so FNR ≤ 0.1” which implies Recall ≥ 0.9.</p>
 
 <h1 id="tnr">TNR</h1>
 
@@ -125,7 +118,7 @@ The positive class corresponds to the minority class (fraud), while the negative
 
 <p>For example, if there were 1000 legitimate transactions and the model flagged 50 of them incorrectly as fraud (FP), the calculation would be:</p>
 
-\[\text{TNR} = \frac{TN}{TN + FP} = \frac{950}{950 + 50} = 0.95 \text{ or } 95\%\]
+\[\text{TNR} = \frac{TN}{TN + FP} = \frac{950}{950 + 50} = 0.95\]
 
 <p>TNR is often overlooked in fraud detection because it’s essentially the complement of the False Positive Rate (FPR):</p>
 
@@ -139,9 +132,8 @@ The positive class corresponds to the minority class (fraud), while the negative
 
 <h1 id="auc-roc">AUC-ROC</h1>
 
-<p>The Area Under the ROC Curve (AUC-ROC) measures a model’s ability to distinguish fraud from non-fraud across all possible thresholds.</p>
-
-<p>The ROC curve (Receiver Operating Characteristic) plots True Positive Rate (Recall) against False Positive Rate (FPR).</p>
+<p>The Area Under the ROC Curve<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> (AUC-ROC) measures a model’s ability to distinguish fraud from non-fraud across all possible thresholds.
+In essence, it plots Recall against FPR.</p>
 
 <p>The AUC is the area under this curve:</p>
 
@@ -150,15 +142,13 @@ The positive class corresponds to the minority class (fraud), while the negative
   <li>AUC = 1.0 means perfect discrimination.</li>
 </ul>
 
-<p>It’s computed as follows:</p>
+<p>This area is computed as follows:</p>
 
-\[\text{AUC} = \int_0^1 \text{TPR}(FPR) \, dFPR\]
-
-<p>An intuitive interpretation:</p>
-
-<p>“If I randomly pick a fraud and a legitimate transaction, AUC is the chance the fraud gets a higher risk score.”</p>
+\[\text{AUC} = \int_0^1 \text{Recall}(FPR) \, dFPR\]
 
 <p>AUC is threshold-independent: it summarizes performance across all thresholds, and it’s less sensitive to class imbalance than accuracy.</p>
+
+<p>An intuitive interpretation: “If I randomly pick a fraud and a legitimate transaction, AUC is the chance the fraud gets a higher risk score.”</p>
 
 <h1 id="auc-pr">AUC-PR</h1>
 
@@ -209,28 +199,58 @@ The threshold \(\tau\) determines the decision boundary for classifying transact
 
 <p>By adjusting \(\tau\), we can balance Precision and Recall to meet specific business objectives and constraints.</p>
 
-<h1 id="detection-latency">Detection Latency</h1>
+<h1 id="latency">Latency</h1>
 
-<p>Latency is the time it takes for the system to process a transaction and respond, and it is crucial for real-time systems.
-These metrics ensure the model not only has good statistical performance but also operates quickly enough to be actionable.</p>
+<p>Latency is the time it takes for the system to process a transaction and make an inference.
+Keeping latency low is crucial for real-time systems.
+Fraud models not only need to have good statistical performance but also operate quickly enough to be used in practice.</p>
 
-<p>It is commonly measured in two ways:</p>
+<p>Latency and complexity matter in payment systems.
+In the example below, the <code class="language-plaintext highlighter-rouge">Payment Server</code> dispatches parallel calls to <code class="language-plaintext highlighter-rouge">KYC Service</code>, <code class="language-plaintext highlighter-rouge">Fraud Check</code>, and <code class="language-plaintext highlighter-rouge">Payment Rail</code>, but the transaction can only complete once the slowest of these services responds (the <code class="language-plaintext highlighter-rouge">KYC Service</code> in this example).
+Even though <code class="language-plaintext highlighter-rouge">Fraud Check</code> takes just 25 ms, any fluctuation (like a network hiccup or a slow third-party response) can bottleneck the entire flow.
+That’s why latency is a system-wide risk amplifier.</p>
+
+<pre><code class="language-mermaid">flowchart LR
+  %% define the Payment App node
+  PaymentApp[Payment App]
+
+  %% container for backend services
+  subgraph container [" "]
+    direction LR
+    Server[Payment Server]
+    KYC[KYC Service]
+    Fraud[Fraud Check]
+    Rail[Payment Rail]
+  end
+
+  %% draw the edges with labels
+  PaymentApp --&gt;|50ms| Server
+  Server     --&gt;|50ms| KYC
+  Server     --&gt;|25ms| Fraud
+  Server     --&gt;|25ms| Rail
+
+  %% style all four links purple
+  linkStyle 0,1,2,3 stroke:#800080,stroke-width:2px
+
+  %% highlight Fraud Check in red
+  style Fraud fill:#ffe6e6,stroke:#ff0000,stroke-width:2px
+</code></pre>
+
+<p>Real-time fraud detection latency is commonly measured in two ways:</p>
 
 <ol>
   <li><strong>Online decision latency (ODL):</strong> How long it takes to score a single transaction and respond (which affects user experience and fraud blocking effectiveness).</li>
-  <li><strong>Time-to-detection for fraud patterns (TTD):</strong> If an attack starts at time <code class="language-plaintext highlighter-rouge">T</code>, how long before the system detects and flags it.</li>
+  <li><strong>Time-to-detection for fraud patterns (TTD):</strong> If an attack starts at a certain time, how long before the system detects and flags it.</li>
 </ol>
 
 <p>ODL is usually measured in milliseconds.
 For example, a payment system might have an end-to-end latency budget of 200ms for authorization, out of which fraud checks get 20–30ms.
 Modern systems often aim for fraud model inference under ~50ms.
-Feedzai (a vendor) suggests looking at 99th percentile latency (e.g., 99% of transactions scored in &lt;500ms), to ensure worst-case delays are bounded.</p>
+In practice, we can look at 99th percentile latency (e.g., 99% of transactions scored in &lt;500ms), to ensure worst-case delays are bounded.</p>
 
 <p>TTD is more about monitoring and measuring the resilience of the system to detect an emerging fraud <em>modus operandi</em>.
 For example: “Did we catch the new fraud ring the first day it appeared, or did it go undetected for weeks?”
 This is harder to quantify but important in evaluating adaptive systems.</p>
-
-<p>Real-time systems strive for instant detection—meaning as soon as the first few events of a fraud pattern occur, the system raises an alert.</p>
 
 <h1 id="summary">Summary</h1>
 
@@ -238,25 +258,32 @@ This is harder to quantify but important in evaluating adaptive systems.</p>
 
 <ol>
   <li>Analyzing the confusion matrix at the operating point.</li>
-  <li>Reviewing AUC-PR, AUC-ROC, and F1.</li>
-  <li>Choosing thresholds that satisfy business constraints (e.g., max false positives).</li>
+  <li>Reviewing Recall, F1, and AUC-PR.</li>
+  <li>Choosing a threshold that satisfies business constraints (e.g., maximum number of tolerable false positives).</li>
 </ol>
 
-<p>But evaluation doesn’t stop at metrics.</p>
-
-<p>Weighting fraud by transaction amount matters: catching a 10,000 USD fraud is more impactful than catching ten 1,000 USD cases.</p>
-
-<p>And finally: metrics on static test sets aren’t enough.</p>
-
-<p>Perform <a href="https://en.wikipedia.org/wiki/Backtesting">backtesting</a> (simulate past performance) and <a href="https://en.wikipedia.org/wiki/Sandbox_(computer_security)">sandbox testing</a> (simulate deployment).</p>
+<p>But evaluation doesn’t stop at metrics.
+Weighting fraud by transaction amount matters: catching a 10,000 USD fraud is more impactful than catching five 1,000 USD cases.
+Moreover, metrics on static test sets aren’t enough.
+We also need to perform <a href="https://en.wikipedia.org/wiki/Backtesting">backtesting</a> (simulate past performance) and <a href="https://en.wikipedia.org/wiki/Sandbox_(computer_security)">sandbox testing</a> (simulate deployment), and monitor the model in production.</p>
 
 <p>Observe how fraud patterns change: Do attackers evolve? Do false positives creep up?</p>
 
 <p>Or even better: run <a href="https://en.wikipedia.org/wiki/A/B_testing">A/B tests</a>.</p>
 
-<p>Put the new model in production in <a href="https://en.wikipedia.org/wiki/Shadowing_(computing)">shadow mode</a> and compare it to the previous version, on real dollars and real users.</p>
+<p>Put the new model in production in <a href="https://en.wikipedia.org/wiki/Shadowing_(computing)">shadow mode</a> and compare it to the previous version.</p>
 
-<p>This way, you’ll be properly taking data-driven decisions.</p>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[After training a real-time financial fraud detection model, the next step is to evaluate its performance. This post provides an overview of the most common evaluation metrics and considerations for fraud detection models, including confusion matrix, precision, recall, F1-score, AUC-ROC, AUC-PR, and more.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection</title><link href="https://www.cesarsotovalero.net/blog/real-time-financial-fraud-detection.html" rel="alternate" type="text/html" title="From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection" /><published>2025-04-03T00:00:00-07:00</published><updated>2025-07-09T13:16:23-07:00</updated><id>https://www.cesarsotovalero.net/blog/real-time-financial-fraud-detection</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/real-time-financial-fraud-detection.html"><![CDATA[<p>Financial fraud is a pervasive problem costing institutions and customers billions annually.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
+<p>But that’s content for another post.</p>
+
+<h1 id="footnotes">Footnotes</h1>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">ROC Curve</a> stands for “Receiver Operating Characteristic”, a very weird name, indeed. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[After training a real-time financial fraud detection model, the next step is to evaluate its performance. This post provides an overview of the most common evaluation metrics and considerations for fraud detection models, including confusion matrix, precision, recall, F1-score, AUC-ROC, AUC-PR, and more.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection</title><link href="https://www.cesarsotovalero.net/blog/real-time-financial-fraud-detection.html" rel="alternate" type="text/html" title="From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection" /><published>2025-04-03T00:00:00-07:00</published><updated>2025-07-10T02:31:30-07:00</updated><id>https://www.cesarsotovalero.net/blog/real-time-financial-fraud-detection</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/real-time-financial-fraud-detection.html"><![CDATA[<p>Financial fraud is a pervasive problem costing institutions and customers billions annually.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
 Most known examples include credit card fraud, fraudulent online payments, and money laundering.
 Banks worldwide faced an estimated \(\$442\) billion in fraud-related losses in 2023 alone.
 In particular, credit card transactional fraud is projected to reach \(\$43\) billion in annual losses by 2026.
@@ -882,7 +909,7 @@ Nonetheless, the above datasets provide valuable benchmarks to compare algorithm
       <p>Lin, Junhong, et al. “<em><a href="https://dl.acm.org/doi/abs/10.1145/3677052.3698648">FraudGT: A Simple, Effective, and Efficient Graph Transformer for Financial Fraud Detection</a>.</em>” Proceedings of the 5th ACM International Conference on AI in Finance. 2024. <a href="#fnref:27" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Financial transaction fraud is a pervasive problem costing institutions and customers billions annually. This survey reviews the current state-of-the-art in real-time transaction fraud detection, spanning both academic research and industry adopted solutions.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Building GenAI Applications Today</title><link href="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html" rel="alternate" type="text/html" title="Building GenAI Applications Today" /><published>2024-11-17T00:00:00-08:00</published><updated>2025-07-09T13:16:23-07:00</updated><id>https://www.cesarsotovalero.net/blog/building-genai-applications-today</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html"><![CDATA[<figure class="badge"><a href="&lt;https://commons.wikimedia.org/wiki/File:NMA.0039209_Emigration._Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg&gt;"><img src="/img/badges/Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg" style="width:140px;max-width:100%;" alt="badge" /></a></figure>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Financial transaction fraud is a pervasive problem costing institutions and customers billions annually. This survey reviews the current state-of-the-art in real-time transaction fraud detection, spanning both academic research and industry adopted solutions.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Building GenAI Applications Today</title><link href="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html" rel="alternate" type="text/html" title="Building GenAI Applications Today" /><published>2024-11-17T00:00:00-08:00</published><updated>2025-07-10T02:31:30-07:00</updated><id>https://www.cesarsotovalero.net/blog/building-genai-applications-today</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html"><![CDATA[<figure class="badge"><a href="&lt;https://commons.wikimedia.org/wiki/File:NMA.0039209_Emigration._Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg&gt;"><img src="/img/badges/Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg" style="width:140px;max-width:100%;" alt="badge" /></a></figure>
 
 <p>The AI fever has been around for a while now (4 years as I can count).
 It reminds me of the <a href="https://en.wikipedia.org/wiki/Gold_rush">gold rush</a> and subsequent <a href="https://en.wikipedia.org/wiki/California_Dream">Californian Dream</a> from the 19th century.
@@ -1045,7 +1072,7 @@ Customizing and fine-tuning models allows them to meet the specific needs of you
   <li><a href="https://huyenchip.com/2025/01/16/ai-engineering-pitfalls.html">:globe_with_meridians: Chip Huyen: Common pitfalls when building generative AI applications</a></li>
   <li><a href="https://huyenchip.com/llama-police">:globe_with_meridians: Chip Huyen: List of Open Source LLM Tools</a></li>
   <li><a href="https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders">:globe_with_meridians: 101 Real-World Generative AI Use Cases from Industry Leaders</a></li>
-</ul>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn't, and why. If you're looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn't. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Why GenAI Will NOT Replace Software Engineers</title><link href="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html" rel="alternate" type="text/html" title="Why GenAI Will NOT Replace Software Engineers" /><published>2024-08-19T00:00:00-07:00</published><updated>2025-07-09T13:16:23-07:00</updated><id>https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html"><![CDATA[<p>The field of Generative Artificial Intelligence (GenAI) has made incredible strides in recent years, particularly in <a href="https://ml4code.github.io/papers.html">source code analysis and generation</a>.<br />
+</ul>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn't, and why. If you're looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn't. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Why GenAI Will NOT Replace Software Engineers</title><link href="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html" rel="alternate" type="text/html" title="Why GenAI Will NOT Replace Software Engineers" /><published>2024-08-19T00:00:00-07:00</published><updated>2025-07-10T02:31:30-07:00</updated><id>https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html"><![CDATA[<p>The field of Generative Artificial Intelligence (GenAI) has made incredible strides in recent years, particularly in <a href="https://ml4code.github.io/papers.html">source code analysis and generation</a>.<br />
 The excitement is well justified.<br />
 Today’s GenAI systems can perform common software development tasks more efficiently than many human engineers.</p>
 
@@ -1423,7 +1450,7 @@ The main task of engineers is to balance conflicting priorities, adapt to ever-c
       <p>I still remember Dreamweaver from <a href="https://en.wikipedia.org/wiki/Macromedia">Macromedia</a> (later purchased by Adobe). It was a no code app that promised to make web development just a matter of throwing components to a canvas. It didn’t work out as expected, and today we are still writing HTML, CSS and JavaScript, ouch! <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[GenAI systems are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around GenAI replacing software engineers, are our jobs really at risk? In this article, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. I discuss the actual potential of GenAI to assist in common development activities, and where it still falls short when it comes to creative problem solving and human intuition.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Not-So-Strange Case of Cargo Cult in Computer Science Research</title><link href="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html" rel="alternate" type="text/html" title="The Not-So-Strange Case of Cargo Cult in Computer Science Research" /><published>2024-07-13T00:00:00-07:00</published><updated>2025-07-09T13:16:23-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html"><![CDATA[<aside class="youtube">
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[GenAI systems are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around GenAI replacing software engineers, are our jobs really at risk? In this article, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. I discuss the actual potential of GenAI to assist in common development activities, and where it still falls short when it comes to creative problem solving and human intuition.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Not-So-Strange Case of Cargo Cult in Computer Science Research</title><link href="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html" rel="alternate" type="text/html" title="The Not-So-Strange Case of Cargo Cult in Computer Science Research" /><published>2024-07-13T00:00:00-07:00</published><updated>2025-07-10T02:31:30-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html"><![CDATA[<aside class="youtube">
         <a href="https://www.youtube.com/watch?v=N7pY8VAt6g4"><div class="box">
         <img src="https://i.ytimg.com/vi/N7pY8VAt6g4/mqdefault.jpg" alt="YouTube video #N7pY8VAt6g4" />
         <div class="play">
@@ -1671,7 +1698,7 @@ Here are some key points:</p>
       <p>The Association of Computing Machinery (ACM) has introduced a <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">badging system</a> for software artifacts since 2020. I still find it difficult to distinguish the difference between a “repeatable,” “reproducible,” and “replicable” experiment or tool. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[Arguably, computers and faster communication systems have changed the world more than any other technology. Yet there have been many scientific failures along the way, some prominent, many minor, and a widening gap between aspirations and reality. This article discusses the problem of pseudoscience in computer science. I discuss Richard Feynman's coined term "cargo cult science," as he said: "Everywhere I see computer scientists that look like they are working on the right thing, but the thing actually doesn't work." I offer guidance on how to stay away of this dangerous practice, from a scientific standpoint.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Some Things to Remember Before Acting Pretentiously</title><link href="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html" rel="alternate" type="text/html" title="Some Things to Remember Before Acting Pretentiously" /><published>2024-06-07T00:00:00-07:00</published><updated>2025-07-09T13:16:23-07:00</updated><id>https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html"><![CDATA[<p>A few days ago, I was asked: <em>“Where do you see yourself in 10 or 20 years?”</em>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[Arguably, computers and faster communication systems have changed the world more than any other technology. Yet there have been many scientific failures along the way, some prominent, many minor, and a widening gap between aspirations and reality. This article discusses the problem of pseudoscience in computer science. I discuss Richard Feynman's coined term "cargo cult science," as he said: "Everywhere I see computer scientists that look like they are working on the right thing, but the thing actually doesn't work." I offer guidance on how to stay away of this dangerous practice, from a scientific standpoint.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Some Things to Remember Before Acting Pretentiously</title><link href="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html" rel="alternate" type="text/html" title="Some Things to Remember Before Acting Pretentiously" /><published>2024-06-07T00:00:00-07:00</published><updated>2025-07-10T02:31:30-07:00</updated><id>https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html"><![CDATA[<p>A few days ago, I was asked: <em>“Where do you see yourself in 10 or 20 years?”</em>
 I replied:
 <em>“I would like to get some sort of recognition for my contributions… maybe to be known as an expert in something, or someone who is consulted and listened to before important decisions are made.”</em>
 Now that I think about it, I realize my answer was both bold and pretentious.
@@ -1874,7 +1901,7 @@ Seriously.</p>
       <p>I strongly believe in the possibilities of science as a life changer. Right now, there are many opportunities in academic research for people around the world to change their lives. In fact, pursuing academic research has changed my life! <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[A few days ago, I had a conversation about my ambitions for the future. At one point, I mentioned that I would like to achieve something remarkable and gain public recognition for it. In retrospect, my answer was quite pretentious. After reflecting deeply on this topic, I realized that what truly drives me is the desire to help and inspire others so they can achieve great things. This blog post lists all the thoughts that crossed my mind as I came to this conclusion.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Last Paper’s Myth</title><link href="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html" rel="alternate" type="text/html" title="The Last Paper’s Myth" /><published>2024-05-05T00:00:00-07:00</published><updated>2025-07-09T13:16:23-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-last-paper-myth</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html"><![CDATA[<aside class="youtube">
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[A few days ago, I had a conversation about my ambitions for the future. At one point, I mentioned that I would like to achieve something remarkable and gain public recognition for it. In retrospect, my answer was quite pretentious. After reflecting deeply on this topic, I realized that what truly drives me is the desire to help and inspire others so they can achieve great things. This blog post lists all the thoughts that crossed my mind as I came to this conclusion.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Last Paper’s Myth</title><link href="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html" rel="alternate" type="text/html" title="The Last Paper’s Myth" /><published>2024-05-05T00:00:00-07:00</published><updated>2025-07-10T02:31:30-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-last-paper-myth</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html"><![CDATA[<aside class="youtube">
         <a href="https://www.youtube.com/watch?v=-3txwKTHe4Y"><div class="box">
         <img src="https://i.ytimg.com/vi/-3txwKTHe4Y/mqdefault.jpg" alt="YouTube video #-3txwKTHe4Y" />
         <div class="play">
@@ -2130,7 +2157,7 @@ In any case, I believe that clear and measurable expectations should be put in p
       <p>Not to forget that academic supervisors are technically <em>forced</em> to play the academic game. They have (in most cases) temporary contracts, are underpaid, and have a heavy workload. This is such a dense topic that deserves a blog post on its own. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[The "last paper myth" emerges once academic supervisors realize that a student is about to earn their PhD and leave. It's one last stronghold for supervisors to capitalize on the time and effort they have invested in their students' scientific training. This relentless push not only detracts from the true purpose of academic research but also imposes significant personal and mental strain on the most successful students. This article explores the expectations versus reality at the end of the PhD journey and provides actionable insights for students on how to identify, address, and navigate this particular pressure.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On the Rise, Decline, and Persistence of Web Technologies</title><link href="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html" rel="alternate" type="text/html" title="On the Rise, Decline, and Persistence of Web Technologies" /><published>2024-04-27T00:00:00-07:00</published><updated>2025-07-09T13:16:23-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html"><![CDATA[<p>I’ve been doing some frontend web development lately as part of my daily job.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[The "last paper myth" emerges once academic supervisors realize that a student is about to earn their PhD and leave. It's one last stronghold for supervisors to capitalize on the time and effort they have invested in their students' scientific training. This relentless push not only detracts from the true purpose of academic research but also imposes significant personal and mental strain on the most successful students. This article explores the expectations versus reality at the end of the PhD journey and provides actionable insights for students on how to identify, address, and navigate this particular pressure.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On the Rise, Decline, and Persistence of Web Technologies</title><link href="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html" rel="alternate" type="text/html" title="On the Rise, Decline, and Persistence of Web Technologies" /><published>2024-04-27T00:00:00-07:00</published><updated>2025-07-10T02:31:30-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html"><![CDATA[<p>I’ve been doing some frontend web development lately as part of my daily job.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
 Along the way, I’ve been thinking on how the whole thing is built under the hood. 
 The web technologies that we all use every day have changed and evolved over time.
 While digging into this topic, I realized that some of the underlying technical solutions that fuel the World Wide Web are really brilliant, while others are still a mess.
@@ -2929,7 +2956,7 @@ Moreover, we’ve learned that moving away from JavaScript is still quite challe
       <p>HTML and CSS are not programming languages. There’s no such as thing as an HTML programmer (nor anyone proud to be called as such). <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="web" /><summary type="html"><![CDATA[The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn't pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web's history. Those who don't know tech history are doomed to repeat past engineering mistakes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Most Relevant Technical Skill in My Career</title><link href="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html" rel="alternate" type="text/html" title="The Most Relevant Technical Skill in My Career" /><published>2024-03-30T00:00:00-07:00</published><updated>2025-07-09T13:16:23-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html"><![CDATA[<p>Eleven years ago (do you still remember 2013?), I was in the last year of my undergraduate studies.
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="web" /><summary type="html"><![CDATA[The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn't pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web's history. Those who don't know tech history are doomed to repeat past engineering mistakes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Most Relevant Technical Skill in My Career</title><link href="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html" rel="alternate" type="text/html" title="The Most Relevant Technical Skill in My Career" /><published>2024-03-30T00:00:00-07:00</published><updated>2025-07-10T02:31:30-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html"><![CDATA[<p>Eleven years ago (do you still remember 2013?), I was in the last year of my undergraduate studies.
 I started working on my thesis and soon realized that, to earn my diploma, I had to collect, analyze, and summarize data in a specific way.
 Because at the end of the day, a thesis needs content, and content comes from data derived from some kind of experiment.
 However, none of these skills were taught to me during the 5 years of my bachelor’s curriculum.
@@ -3290,7 +3317,7 @@ Have you ever thought about it?</p>
       <p>I’ve peer-reviewed <a href="../service.html">quite a few</a> research papers, almost none of them include the code used to generate the figures in the paper. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[Have you ever wonder which is most relevant technical skill in your career? It's not necessarily a programming language or the latest framework. For me, it is Exploratory Data Analysis (EDA). Why? Because being able to manipulate and find relevant information from various data sources has opened me doors to new opportunities in both academia and industry. This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AI Doesn’t Make Me the Same Coffee</title><link href="https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html" rel="alternate" type="text/html" title="AI Doesn’t Make Me the Same Coffee" /><published>2024-02-13T00:00:00-08:00</published><updated>2025-07-09T13:16:23-07:00</updated><id>https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html"><![CDATA[<p>I started to consume and appreciate coffee after I moved to Sweden in 2018.
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[Have you ever wonder which is most relevant technical skill in your career? It's not necessarily a programming language or the latest framework. For me, it is Exploratory Data Analysis (EDA). Why? Because being able to manipulate and find relevant information from various data sources has opened me doors to new opportunities in both academia and industry. This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AI Doesn’t Make Me the Same Coffee</title><link href="https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html" rel="alternate" type="text/html" title="AI Doesn’t Make Me the Same Coffee" /><published>2024-02-13T00:00:00-08:00</published><updated>2025-07-10T02:31:30-07:00</updated><id>https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html"><![CDATA[<p>I started to consume and appreciate coffee after I moved to Sweden in 2018.
 Coffee is a key part of the Swedish culture of <em>fika</em>, and it’s used as a way to combat the dark winter <del>days</del> months.
 For years, I’ve been considering the idea of buying a fancy coffee machine.
 You know, like those that grind different beans to make various types of coffee brews.
