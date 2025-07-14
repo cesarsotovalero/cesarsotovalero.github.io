@@ -4,7 +4,7 @@ title: My Python Dev Environment for Production Grade Projects
 subtitle: A guide to setting up a producti/on/ve Python dev environment
 tags: tools
 description: |
-  This post outlines the tools and configurations I use for Python development, focusing on productivity and efficiency.
+  In this post, I share the tools, libraries, configs, and other integrations I use for building production-grade Python applications.
 keywords:
   - python
   - development
@@ -21,11 +21,88 @@ author: cesarsotovalero
 published: false
 ---
 
+I switched to writting production-ready Python code 6 months ago (I did use it before, but only for small scripts, I didn't treat it seriously).
+Before that, I was a mostly a Java/JavaScript/R developer.
+Why did I switch?
+Because of AI, obviously.
+I wanted to build AI applications (RAG, Agents, image generation, etc.).
+Wether you and me like it or not, Python is the language of choice for that.
+In the last 6 months, I've realized the huge gap in building a Python dev environment that is production-ready, versus the usual Jupyter notebook or small script approach.
+Moreover, I realized that the Python ecosystem has matured a lot in the last few years, compared to the time I used it before.
+To the point that I'm now feeling a particular joy for the language.
+In this post, I share the tools, libraries, configs, and other integrations that bring me joy and that I now use for building production-grade Python applications.
+
 # Project Structure
+
+I prefer to use a monorepo (with backend and frontend) structure for my projects.[^1]
+
+Why?
+
+- Because of my bad memory: I don't like code parts scattered across multiple repositories (it's not search friendly).
+- Because multi-repo is unnecessary: I believe that if a project grows to the point that it needs to be split into multiple repositories, then it's a sign of over-engineering.
+- Because I'm lazy: I like to keep things as simple as possible, compile, test, containerize and deploy from a single location.
+
+Here's the typical project structure that I use (I'll go through each part later in this post):
+
+```markdown
+myproject/
+│
+├── .vscode/
+│   ├── launch.json
+│   └── settings.json
+│
+├── .vscode/
+│   ├── launch.json
+│   └── settings.json
+│
+├── my-project-api/
+│   ├── .dockerignore
+│   ├── .python-version
+│   ├── Dockerfile
+│   ├── langgraph.json
+│   ├── Makefile
+│   ├── pyproject.toml
+│   ├── README.md
+│   ├── uv.lock
+│   ├── .ruff_cache/
+│   │   └── .gitignore
+│   ├── .vscode/
+│   ├── data/
+│   ├── notebooks/
+│   ├── src/
+│   └── tools/
+│
+├── my-project-ui/
+│   ├── .babelrc
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── index.html
+│   ├── LICENSE
+│   ├── log.js
+│   ├── package.json
+│   ├── README.md
+│   ├── public/
+│   ├── src/
+│   └── webpack/
+│
+├── .gitignore
+├── .pre-commit-config.yaml
+├── CONTRIBUTING.md
+├── docker-compose.yml
+├── INSTALL_AND_USAGE.md
+├── LICENSE
+├── Makefile
+├── README.md
+
+```
 
 We don't do any processing steps in the game UI, as we adopted a frontend-backend architecture.
 We make an HTTP request to the API server that contains our question.
 Like this, we keep the browser application light while delegating the heavy lifting and business logic to the server.
+
+I use VSCode.
+
+<https://docs.astral.sh/uv/guides/projects/#creating-a-new-project>
 
 <https://cookiecutter-data-science.drivendata.org/>
 
@@ -47,9 +124,16 @@ lint:
   uv run ruff check --config pyproject.toml .
 ```
 
+# ty
+
+<https://docs.astral.sh/ty/installation/>
+uv add --dev ty
+
 # Pre-commit Hooks
 
 <https://pre-commit.com/>
+
+<https://github.com/astral-sh/ruff-pre-commit>
 
 # MkDocs
 
@@ -114,3 +198,7 @@ RUN poetry build
 - [Pipenv Documentation](https://pipenv.pypa.io/en/latest/)
 - [Prettier Documentation](https://prettier.io/docs/en/index.html)
 - [Flake8 Documentation](https://flake8.pycqa.org/en/latest/)
+
+# Footnotes
+
+[^1]: Don't get me wrong, I understand that there are cases where a multi-repo structure is necessary, like when you have multiple teams working on different parts of the project, or when you need to share code across different projects.
