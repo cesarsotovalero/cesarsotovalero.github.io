@@ -4,6 +4,261 @@
   "data": [
     {
       "isBrandPartnership": false,
+      "text": "I’m having such a good time watching the YC AI Startup School YouTube playlist, literally waiting with excitement for each new video. I enjoy it as much as I did years ago with GoT🍿\n\nIn yesterday’s episode, uhm, I mean… talk by Andrew Ng “Building Faster with AI,” he mentioned something interesting:\n\n👉 “With AI coding assistants, rapid engineering has become possible in a way that wasn’t possible before, so the speed of engineering is going up rapidly and the (engineering) cost is also going down very fast.”\n\nBut there's a difference.\n\nSuch speed gains heavily depend on the type of application being developed:\n\n• For prototypes → 10x faster!\n• For production software → 30–50% faster?\n\nWhy?\n\nBecause standalone prototypes have:\n\n1. Far less integration with legacy systems, and  \n2. Much lower requirements for reliability, scalability, and security.\n\nWhat does this mean?\n\n• For entrepreneurs → You can now build (with AI) 10x more prototypes to see what works.\n• For dev employees → You should focus on working directly with production systems.\n• For everyone → You can now move fast while being responsible.\n\nSoftware development has never been this fast, and will never be this slow again.\n\nLink to Andrew's talk:\n⤷ https://lnkd.in/dE7X3hyE",
+      "totalReactionCount": 4,
+      "likeCount": 3,
+      "InterestCount": 1,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7349411525880655872/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_im-having-such-a-good-time-watching-the-activity-7349411525880655872-Lefq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFlTZ5YBwm8bd5o3H2-LipNnAnW_9_2x858",
+      "postedAt": "2d",
+      "postedDate": "2025-07-11 12:17:33.233 +0000 UTC",
+      "postedDateTimestamp": 1752236253233,
+      "urn": "7349411525880655872",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1758153600&v=beta&t=GR7pdZe0ELuz2aqBk3MSq-0xgYQLyEzou_AUUQhRvYk"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1758153600&v=beta&t=lMrkhSC7YP3fouyIY2OEQesXZjEsUKGE_8tQXcE5p8g"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1758153600&v=beta&t=46uvKc-f-4oiuDiwM4w5g_UpovjbgHvnipwMzMY4w_Y"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1758153600&v=beta&t=HYbZPH-UVVEKe7p9mXIHPPNXenEnM-K8-1jDsloh6K0"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_480/B4DZf5a1fOG8Ac-/0/1752236251855?e=1755129600&v=beta&t=exG1WwerMvi2ia61LlJa9meYcvQ0LXkx3MaKcj9cfjE",
+          "width": 480,
+          "height": 316
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_2048_1536/B4DZf5a1fOG8As-/0/1752236251897?e=1755129600&v=beta&t=FCfTSTNXbY_l8X-eW9YIGQN3CktEQFB0EB8QsYTpyv8",
+          "width": 974,
+          "height": 642
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_20/B4DZf5a1fOG8A0-/0/1752236251855?e=1755129600&v=beta&t=gTqeW-x18l4Ni8nyD0hMF7xvvLo5Seos94nQi7MF9uU",
+          "width": 20,
+          "height": 13
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_1280/B4DZf5a1fOG8Ao-/0/1752236251855?e=1755129600&v=beta&t=EEi3Zv1p53ThvtyNzUwMh7Dr9HyB91GWlUkj5-Lq7P0",
+          "width": 974,
+          "height": 642
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_800/B4DZf5a1fOG8Ak-/0/1752236251863?e=1755129600&v=beta&t=5nOXHtpevsszO-nezLalua7eLGYtUryvIDmXznJ5t6o",
+          "width": 800,
+          "height": 527
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_160/B4DZf5a1fOG8Ag-/0/1752236251863?e=1755129600&v=beta&t=FWzAPKREU2Fzgw6aHni88FYkS86LaCbCKBcFZ_DEBvk",
+          "width": 160,
+          "height": 105
+        }
+      ],
+      "images": [
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_480/B4DZf5a1fOG8Ac-/0/1752236251855?e=1755129600&v=beta&t=exG1WwerMvi2ia61LlJa9meYcvQ0LXkx3MaKcj9cfjE",
+            "width": 480,
+            "height": 316
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_2048_1536/B4DZf5a1fOG8As-/0/1752236251897?e=1755129600&v=beta&t=FCfTSTNXbY_l8X-eW9YIGQN3CktEQFB0EB8QsYTpyv8",
+            "width": 974,
+            "height": 642
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_20/B4DZf5a1fOG8A0-/0/1752236251855?e=1755129600&v=beta&t=gTqeW-x18l4Ni8nyD0hMF7xvvLo5Seos94nQi7MF9uU",
+            "width": 20,
+            "height": 13
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_1280/B4DZf5a1fOG8Ao-/0/1752236251855?e=1755129600&v=beta&t=EEi3Zv1p53ThvtyNzUwMh7Dr9HyB91GWlUkj5-Lq7P0",
+            "width": 974,
+            "height": 642
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_800/B4DZf5a1fOG8Ak-/0/1752236251863?e=1755129600&v=beta&t=5nOXHtpevsszO-nezLalua7eLGYtUryvIDmXznJ5t6o",
+            "width": 800,
+            "height": 527
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG355BIHZiU1A/feedshare-shrink_160/B4DZf5a1fOG8Ag-/0/1752236251863?e=1755129600&v=beta&t=FWzAPKREU2Fzgw6aHni88FYkS86LaCbCKBcFZ_DEBvk",
+            "width": 160,
+            "height": 105
+          }
+        ]
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "mentions": [
+        {
+          "firstName": "Andrew",
+          "lastName": "Ng",
+          "urn": "ACoAAAqBL5gBXJ8MGhQh-qHYyxAOW-DYlHM3VLg",
+          "publicIdentifier": "andrewyng"
+        }
+      ]
+    },
+    {
+      "isBrandPartnership": false,
+      "text": "Is your company keeping up with the speed and scope of the current AI revolution? Do its leaders understand how AI works and the immense potential it holds?\n\nThis morning at SEB, I found something in the entrance: \"The Essential AI Handbook for Leaders,” a compact yellowish book that tackles these questions head-on.\n\nIt covers:\n\n① The fundamentals of AI and how it works.\n② The potential of AI and how it can be applied in business and society.\n③ How AI can be operationalized in an organization to rise performance to new levels.\n\nI read it all.\n\nThe message for leaders is crystal clear:\n\n👉 The more you learn about AI now, the better your chances of being among the first to benefit from it.\n\nAs Marcus Wallenberg put it:\n\n“At the end of the day, it is not technology that creates success, it is people. It is leaders who make the right decisions based on accurate data, sharp insights, and their ability to work with the best talent. Those who do this faster than the competition will succeed.\"\n\n__\n\nAI will impact us all.\n\nGet to know it, and your own path forward.\n\nThe first step toward change is insight and knowledge.\n\nThis may be the first time in history when understanding and using a tool could matter more than building it.\n\nI’m glad that my current employer is on the right track when it comes to AI 🚀",
+      "totalReactionCount": 9,
+      "likeCount": 8,
+      "empathyCount": 1,
+      "commentsCount": 3,
+      "postUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7348622425024036865/",
+      "shareUrl": "https://www.linkedin.com/posts/cesarsotovalero_is-your-company-keeping-up-with-the-speed-activity-7348622425024036865-QMIB?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFlTZ5YBwm8bd5o3H2-LipNnAnW_9_2x858",
+      "postedAt": "4d",
+      "postedDate": "2025-07-09 08:01:56.928 +0000 UTC",
+      "postedDateTimestamp": 1752048116928,
+      "urn": "7348622425024036865",
+      "author": {
+        "id": 512443526,
+        "firstName": "César",
+        "lastName": "Soto Valero",
+        "headline": "Data Scientist @ SEB · PhD in CS · Living a dream 🇸🇪",
+        "username": "cesarsotovalero",
+        "url": "https://www.linkedin.com/in/cesarsotovalero",
+        "profilePictures": [
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_200_200/B4DZZE8Kb9H4AY-/0/1744913345236?e=1758153600&v=beta&t=GR7pdZe0ELuz2aqBk3MSq-0xgYQLyEzou_AUUQhRvYk"
+          },
+          {
+            "width": 400,
+            "height": 400,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_400_400/B4DZZE8Kb9H4Ag-/0/1744913345236?e=1758153600&v=beta&t=lMrkhSC7YP3fouyIY2OEQesXZjEsUKGE_8tQXcE5p8g"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_100_100/B4DZZE8Kb9H4AU-/0/1744913345236?e=1758153600&v=beta&t=46uvKc-f-4oiuDiwM4w5g_UpovjbgHvnipwMzMY4w_Y"
+          },
+          {
+            "width": 800,
+            "height": 800,
+            "url": "https://media.licdn.com/dms/image/v2/D4D03AQHyai-v000fMw/profile-displayphoto-shrink_800_800/B4DZZE8Kb9H4Ac-/0/1744913345430?e=1758153600&v=beta&t=HYbZPH-UVVEKe7p9mXIHPPNXenEnM-K8-1jDsloh6K0"
+          }
+        ],
+        "urn": "urn:li:fsd_profile:ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8"
+      },
+      "image": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_1280/B4DZfuNJiWH4Ak-/0/1752048115727?e=1755129600&v=beta&t=wWCdLDZDhbTQ_LlMx-qS7VlwyjHrFjJ44lI3iqKcGVc",
+          "width": 1280,
+          "height": 1707
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_2048_1536/B4DZfuNJiWH4Ao-/0/1752048115612?e=1755129600&v=beta&t=XQdy-GJTTMqeEvbR0NetHUK6BWIm0j8FKMn7o_irkG0",
+          "width": 1152,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_160/B4DZfuNJiWH4Ac-/0/1752048115727?e=1755129600&v=beta&t=Kbii0NvoClcZpbx_lSxtap0FOG0R6l5TfSQVtILMiOI",
+          "width": 160,
+          "height": 213
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_480/B4DZfuNJiWH4AY-/0/1752048115727?e=1755129600&v=beta&t=XmDTS1d4_RppX2iiJypB4qLtejxJMb2hDI4vc2OnUcM",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_800/B4DZfuNJiWH4Ag-/0/1752048115420?e=1755129600&v=beta&t=-2EXYH6y6F7ST4CcT845GKml2SnyIYKoG5_uZPVHp4g",
+          "width": 800,
+          "height": 1067
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_20/B4DZfuNJiWH4Aw-/0/1752048115420?e=1755129600&v=beta&t=xKeRaRMtJ4TI6Z_54xRcgOf95JU9y57TEl5Sh5cGNO4",
+          "width": 20,
+          "height": 27
+        }
+      ],
+      "images": [
+        [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_1280/B4DZfuNJiWH4Ak-/0/1752048115727?e=1755129600&v=beta&t=wWCdLDZDhbTQ_LlMx-qS7VlwyjHrFjJ44lI3iqKcGVc",
+            "width": 1280,
+            "height": 1707
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_2048_1536/B4DZfuNJiWH4Ao-/0/1752048115612?e=1755129600&v=beta&t=XQdy-GJTTMqeEvbR0NetHUK6BWIm0j8FKMn7o_irkG0",
+            "width": 1152,
+            "height": 1536
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_160/B4DZfuNJiWH4Ac-/0/1752048115727?e=1755129600&v=beta&t=Kbii0NvoClcZpbx_lSxtap0FOG0R6l5TfSQVtILMiOI",
+            "width": 160,
+            "height": 213
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_480/B4DZfuNJiWH4AY-/0/1752048115727?e=1755129600&v=beta&t=XmDTS1d4_RppX2iiJypB4qLtejxJMb2hDI4vc2OnUcM",
+            "width": 480,
+            "height": 640
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_800/B4DZfuNJiWH4Ag-/0/1752048115420?e=1755129600&v=beta&t=-2EXYH6y6F7ST4CcT845GKml2SnyIYKoG5_uZPVHp4g",
+            "width": 800,
+            "height": 1067
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHyo1UyQa96Aw/feedshare-shrink_20/B4DZfuNJiWH4Aw-/0/1752048115420?e=1755129600&v=beta&t=xKeRaRMtJ4TI6Z_54xRcgOf95JU9y57TEl5Sh5cGNO4",
+            "width": 20,
+            "height": 27
+          }
+        ]
+      ],
+      "company": {},
+      "document": {},
+      "celebration": {},
+      "poll": {},
+      "contentType": "image",
+      "article": {
+        "newsletter": {}
+      },
+      "entity": {},
+      "companyMentions": [
+        {
+          "id": 2527,
+          "name": "SEB",
+          "publicIdentifier": "seb",
+          "url": "https://www.linkedin.com/company/seb/"
+        }
+      ]
+    },
+    {
+      "isBrandPartnership": false,
       "text": "If this trend continues, dev platforms will soon morph into buttonless, chat-based CLI environments.\n\nMore and more, my terminal is starting to replace my IDE.\n\n—\n\nDo you remember when we used to complain about how long CI pipelines took to run?\n\nWell, AI agents' \"thinking time\" might soon replace CI pipelines in that regard.\n\n—\n\nEverything is changing... too fast.\n\nAre you also feeling lost in the woods of emerging AI dev tools? 😒",
       "totalReactionCount": 16,
       "likeCount": 15,
