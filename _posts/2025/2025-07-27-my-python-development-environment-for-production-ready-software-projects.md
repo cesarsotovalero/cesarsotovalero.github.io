@@ -58,11 +58,13 @@ project/
 │   ├── launch.json         # Debugging configurations for VSCode
 │   └── settings.json       # Project-specific settings for VSCode
 │
-├── project-api/         # Backend API for handling business logic and heavy processing
+├── project-api/            # Backend API for handling business logic and heavy processing
 │   ├── data/               # Directory for storing datasets or other static files
 │   ├── notebooks/          # Jupyter notebooks for experimentation and prototyping
-│   ├── src/                # Source code for the backend application
 │   ├── tools/              # Utility scripts and tools for development or deployment
+│   ├── src/                # Source code for the backend application
+│   │   ├── app/            # Main application code
+│   │   └── tests/          # Utility scripts and helper functions
 │   │
 │   ├── .dockerignore       # Specifies files to exclude from Docker builds
 │   ├── .python-version     # Python version specification for pyenv
@@ -165,6 +167,33 @@ I use [MkDocs](https://www.mkdocs.org/) for documentation, which is a static
 ## FastAPI
 
 I use [FastAPI](https://fastapi.tiangolo.com/) for building APIs.
+
+## Pytest
+
+[Pytest](https://docs.pytest.org/en/stable/) is a testing framework for Python that makes it easy to write simple and scalable test cases.
+It supports fixtures, parameterized tests, and has a rich ecosystem of plugins.
+Make a file `test_<unit or module name>.py`, place it `project-api/src/app/tests/`, and run `uv run pytest` to execute the tests.
+
+## Dataclasses
+
+[Dataclasses](https://docs.python.org/3/library/dataclasses.html) are a way to define classes in Python that are primarily used to store data.
+They provide a simple syntax for creating classes that automatically generate special methods like `__init__()`, `__repr__()`, and `__eq__()`.
+This greatly reduces boilerplate code when creating classes meant primarily for storing data.
+
+Here's an example of how to use dataclasses:
+
+```python
+from dataclasses import dataclass
+
+@dataclass
+class Point:
+    x: int
+    y: int
+
+# This automatically generates an __init__ method, so you can do
+p = Point(1, 2)
+print(p)  # Output: Point(x=1, y=2)
+```
 
 # Version Control
 
