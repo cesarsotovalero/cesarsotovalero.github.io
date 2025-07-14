@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.cesarsotovalero.net/" rel="alternate" type="text/html" /><updated>2025-07-14T01:09:55-07:00</updated><id>https://www.cesarsotovalero.net/feed.xml</id><title type="html">César Soto Valero</title><subtitle>César - Computer Scientist</subtitle><author><name>César Soto Valero</name><email>NaN</email></author><entry><title type="html">On The Validation Techniques for Fraud Detection Models</title><link href="https://www.cesarsotovalero.net/blog/on-the-validation-techniques-for-fraud-detection-models.html" rel="alternate" type="text/html" title="On The Validation Techniques for Fraud Detection Models" /><published>2025-06-01T00:00:00-07:00</published><updated>2025-07-14T01:08:38-07:00</updated><id>https://www.cesarsotovalero.net/blog/on-the-validation-techniques-for-fraud-detection-models</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/on-the-validation-techniques-for-fraud-detection-models.html"><![CDATA[<p>TODO</p>
-
-<h1 id="footnotes">Footnotes</h1>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[TODO]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Evaluation Metrics for Real-Time Financial Fraud Detection ML Models</title><link href="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models-copy.html" rel="alternate" type="text/html" title="Evaluation Metrics for Real-Time Financial Fraud Detection ML Models" /><published>2025-05-08T00:00:00-07:00</published><updated>2025-07-14T01:08:38-07:00</updated><id>https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models%20copy</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models-copy.html"><![CDATA[<p>After training a machine learning model for <a href="../blog/real-time-financial-fraud-detection.html">real-time financial fraud detection</a>, the next step is to evaluate its performance.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.cesarsotovalero.net/" rel="alternate" type="text/html" /><updated>2025-07-14T01:25:47-07:00</updated><id>https://www.cesarsotovalero.net/feed.xml</id><title type="html">César Soto Valero</title><subtitle>César - Computer Scientist</subtitle><author><name>César Soto Valero</name><email>NaN</email></author><entry><title type="html">Evaluation Metrics for Real-Time Financial Fraud Detection ML Models</title><link href="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models-copy.html" rel="alternate" type="text/html" title="Evaluation Metrics for Real-Time Financial Fraud Detection ML Models" /><published>2025-05-08T00:00:00-07:00</published><updated>2025-07-14T01:23:22-07:00</updated><id>https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models%20copy</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models-copy.html"><![CDATA[<p>After training a machine learning model for <a href="../blog/real-time-financial-fraud-detection.html">real-time financial fraud detection</a>, the next step is to evaluate its performance.
 Fraud detection models face unique challenges during evaluation.
 Two examples are (1) class imbalance and (2) the different costs of false positives vs. false negatives.
 Class imbalance means that the model doesn’t have enough fraudulent transactions to learn from, as they are rare compared to legitimate ones.
@@ -285,7 +283,7 @@ We also need to perform <a href="https://en.wikipedia.org/wiki/Backtesting">back
       <p><a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">ROC Curve</a> stands for “Receiver Operating Characteristic”, a very weird name, indeed. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[After training a real-time financial fraud detection model, the next step is to evaluate its performance. This post provides an overview of the most common evaluation metrics and considerations for fraud detection models, including confusion matrix, precision, recall, F1-score, AUC-ROC, AUC-PR, and more.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection</title><link href="https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection.html" rel="alternate" type="text/html" title="From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection" /><published>2025-04-03T00:00:00-07:00</published><updated>2025-07-14T01:08:38-07:00</updated><id>https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection.html"><![CDATA[<p>Financial fraud is a pervasive problem costing institutions and customers billions annually.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[After training a real-time financial fraud detection model, the next step is to evaluate its performance. This post provides an overview of the most common evaluation metrics and considerations for fraud detection models, including confusion matrix, precision, recall, F1-score, AUC-ROC, AUC-PR, and more.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection</title><link href="https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection.html" rel="alternate" type="text/html" title="From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection" /><published>2025-04-03T00:00:00-07:00</published><updated>2025-07-14T01:23:22-07:00</updated><id>https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection.html"><![CDATA[<p>Financial fraud is a pervasive problem costing institutions and customers billions annually.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
 Most known examples include credit card fraud, fraudulent online payments, and money laundering.
 Banks worldwide faced an estimated \(\$442\) billion in fraud-related losses in 2023 alone.
 In particular, credit card transactional fraud is projected to reach \(\$43\) billion in annual losses by 2026.
@@ -911,7 +909,7 @@ Nonetheless, the above datasets provide valuable benchmarks to compare algorithm
       <p>Lin, Junhong, et al. “<em><a href="https://dl.acm.org/doi/abs/10.1145/3677052.3698648">FraudGT: A Simple, Effective, and Efficient Graph Transformer for Financial Fraud Detection</a>.</em>” Proceedings of the 5th ACM International Conference on AI in Finance. 2024. <a href="#fnref:27" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Financial transaction fraud is a pervasive problem costing institutions and customers billions annually. This survey reviews the current state-of-the-art in real-time transaction fraud detection, spanning both academic research and industry adopted solutions.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Building GenAI Applications Today</title><link href="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html" rel="alternate" type="text/html" title="Building GenAI Applications Today" /><published>2024-11-17T00:00:00-08:00</published><updated>2025-07-14T01:08:38-07:00</updated><id>https://www.cesarsotovalero.net/blog/building-genai-applications-today</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html"><![CDATA[<figure class="badge"><a href="&lt;https://commons.wikimedia.org/wiki/File:NMA.0039209_Emigration._Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg&gt;"><img src="/img/badges/Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg" style="width:140px;max-width:100%;" alt="badge" /></a></figure>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Financial transaction fraud is a pervasive problem costing institutions and customers billions annually. This survey reviews the current state-of-the-art in real-time transaction fraud detection, spanning both academic research and industry adopted solutions.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Building GenAI Applications Today</title><link href="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html" rel="alternate" type="text/html" title="Building GenAI Applications Today" /><published>2024-11-17T00:00:00-08:00</published><updated>2025-07-14T01:23:22-07:00</updated><id>https://www.cesarsotovalero.net/blog/building-genai-applications-today</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html"><![CDATA[<figure class="badge"><a href="&lt;https://commons.wikimedia.org/wiki/File:NMA.0039209_Emigration._Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg&gt;"><img src="/img/badges/Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg" style="width:140px;max-width:100%;" alt="badge" /></a></figure>
 
 <p>The AI fever has been around for a while now (4 years as I can count).
 It reminds me of the <a href="https://en.wikipedia.org/wiki/Gold_rush">gold rush</a> and subsequent <a href="https://en.wikipedia.org/wiki/California_Dream">Californian Dream</a> from the 19th century.
@@ -1074,7 +1072,7 @@ Customizing and fine-tuning models allows them to meet the specific needs of you
   <li><a href="https://huyenchip.com/2025/01/16/ai-engineering-pitfalls.html">:globe_with_meridians: Chip Huyen: Common pitfalls when building generative AI applications</a></li>
   <li><a href="https://huyenchip.com/llama-police">:globe_with_meridians: Chip Huyen: List of Open Source LLM Tools</a></li>
   <li><a href="https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders">:globe_with_meridians: 101 Real-World Generative AI Use Cases from Industry Leaders</a></li>
-</ul>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn't, and why. If you're looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn't. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Why GenAI Will NOT Replace Software Engineers</title><link href="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html" rel="alternate" type="text/html" title="Why GenAI Will NOT Replace Software Engineers" /><published>2024-08-19T00:00:00-07:00</published><updated>2025-07-14T01:08:38-07:00</updated><id>https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html"><![CDATA[<p>The field of Generative Artificial Intelligence (GenAI) has made incredible strides in recent years, particularly in <a href="https://ml4code.github.io/papers.html">source code analysis and generation</a>.<br />
+</ul>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn't, and why. If you're looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn't. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Why GenAI Will NOT Replace Software Engineers</title><link href="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html" rel="alternate" type="text/html" title="Why GenAI Will NOT Replace Software Engineers" /><published>2024-08-19T00:00:00-07:00</published><updated>2025-07-14T01:23:22-07:00</updated><id>https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html"><![CDATA[<p>The field of Generative Artificial Intelligence (GenAI) has made incredible strides in recent years, particularly in <a href="https://ml4code.github.io/papers.html">source code analysis and generation</a>.<br />
 The excitement is well justified.<br />
 Today’s GenAI systems can perform common software development tasks more efficiently than many human engineers.</p>
 
@@ -1452,7 +1450,7 @@ The main task of engineers is to balance conflicting priorities, adapt to ever-c
       <p>I still remember Dreamweaver from <a href="https://en.wikipedia.org/wiki/Macromedia">Macromedia</a> (later purchased by Adobe). It was a no code app that promised to make web development just a matter of throwing components to a canvas. It didn’t work out as expected, and today we are still writing HTML, CSS and JavaScript, ouch! <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[GenAI systems are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around GenAI replacing software engineers, are our jobs really at risk? In this article, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. I discuss the actual potential of GenAI to assist in common development activities, and where it still falls short when it comes to creative problem solving and human intuition.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Not-So-Strange Case of Cargo Cult in Computer Science Research</title><link href="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html" rel="alternate" type="text/html" title="The Not-So-Strange Case of Cargo Cult in Computer Science Research" /><published>2024-07-13T00:00:00-07:00</published><updated>2025-07-14T01:08:38-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html"><![CDATA[<aside class="youtube">
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[GenAI systems are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around GenAI replacing software engineers, are our jobs really at risk? In this article, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. I discuss the actual potential of GenAI to assist in common development activities, and where it still falls short when it comes to creative problem solving and human intuition.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Not-So-Strange Case of Cargo Cult in Computer Science Research</title><link href="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html" rel="alternate" type="text/html" title="The Not-So-Strange Case of Cargo Cult in Computer Science Research" /><published>2024-07-13T00:00:00-07:00</published><updated>2025-07-14T01:23:22-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html"><![CDATA[<aside class="youtube">
         <a href="https://www.youtube.com/watch?v=N7pY8VAt6g4"><div class="box">
         <img src="https://i.ytimg.com/vi/N7pY8VAt6g4/mqdefault.jpg" alt="YouTube video #N7pY8VAt6g4" />
         <div class="play">
@@ -1700,7 +1698,7 @@ Here are some key points:</p>
       <p>The Association of Computing Machinery (ACM) has introduced a <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">badging system</a> for software artifacts since 2020. I still find it difficult to distinguish the difference between a “repeatable,” “reproducible,” and “replicable” experiment or tool. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[Arguably, computers and faster communication systems have changed the world more than any other technology. Yet there have been many scientific failures along the way, some prominent, many minor, and a widening gap between aspirations and reality. This article discusses the problem of pseudoscience in computer science. I discuss Richard Feynman's coined term "cargo cult science," as he said: "Everywhere I see computer scientists that look like they are working on the right thing, but the thing actually doesn't work." I offer guidance on how to stay away of this dangerous practice, from a scientific standpoint.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Some Things to Remember Before Acting Pretentiously</title><link href="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html" rel="alternate" type="text/html" title="Some Things to Remember Before Acting Pretentiously" /><published>2024-06-07T00:00:00-07:00</published><updated>2025-07-14T01:08:38-07:00</updated><id>https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html"><![CDATA[<p>A few days ago, I was asked: <em>“Where do you see yourself in 10 or 20 years?”</em>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[Arguably, computers and faster communication systems have changed the world more than any other technology. Yet there have been many scientific failures along the way, some prominent, many minor, and a widening gap between aspirations and reality. This article discusses the problem of pseudoscience in computer science. I discuss Richard Feynman's coined term "cargo cult science," as he said: "Everywhere I see computer scientists that look like they are working on the right thing, but the thing actually doesn't work." I offer guidance on how to stay away of this dangerous practice, from a scientific standpoint.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Some Things to Remember Before Acting Pretentiously</title><link href="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html" rel="alternate" type="text/html" title="Some Things to Remember Before Acting Pretentiously" /><published>2024-06-07T00:00:00-07:00</published><updated>2025-07-14T01:23:22-07:00</updated><id>https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html"><![CDATA[<p>A few days ago, I was asked: <em>“Where do you see yourself in 10 or 20 years?”</em>
 I replied:
 <em>“I would like to get some sort of recognition for my contributions… maybe to be known as an expert in something, or someone who is consulted and listened to before important decisions are made.”</em>
 Now that I think about it, I realize my answer was both bold and pretentious.
@@ -1903,7 +1901,7 @@ Seriously.</p>
       <p>I strongly believe in the possibilities of science as a life changer. Right now, there are many opportunities in academic research for people around the world to change their lives. In fact, pursuing academic research has changed my life! <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[A few days ago, I had a conversation about my ambitions for the future. At one point, I mentioned that I would like to achieve something remarkable and gain public recognition for it. In retrospect, my answer was quite pretentious. After reflecting deeply on this topic, I realized that what truly drives me is the desire to help and inspire others so they can achieve great things. This blog post lists all the thoughts that crossed my mind as I came to this conclusion.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Last Paper’s Myth</title><link href="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html" rel="alternate" type="text/html" title="The Last Paper’s Myth" /><published>2024-05-05T00:00:00-07:00</published><updated>2025-07-14T01:08:38-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-last-paper-myth</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html"><![CDATA[<aside class="youtube">
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[A few days ago, I had a conversation about my ambitions for the future. At one point, I mentioned that I would like to achieve something remarkable and gain public recognition for it. In retrospect, my answer was quite pretentious. After reflecting deeply on this topic, I realized that what truly drives me is the desire to help and inspire others so they can achieve great things. This blog post lists all the thoughts that crossed my mind as I came to this conclusion.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Last Paper’s Myth</title><link href="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html" rel="alternate" type="text/html" title="The Last Paper’s Myth" /><published>2024-05-05T00:00:00-07:00</published><updated>2025-07-14T01:23:22-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-last-paper-myth</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html"><![CDATA[<aside class="youtube">
         <a href="https://www.youtube.com/watch?v=-3txwKTHe4Y"><div class="box">
         <img src="https://i.ytimg.com/vi/-3txwKTHe4Y/mqdefault.jpg" alt="YouTube video #-3txwKTHe4Y" />
         <div class="play">
@@ -2159,7 +2157,7 @@ In any case, I believe that clear and measurable expectations should be put in p
       <p>Not to forget that academic supervisors are technically <em>forced</em> to play the academic game. They have (in most cases) temporary contracts, are underpaid, and have a heavy workload. This is such a dense topic that deserves a blog post on its own. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[The "last paper myth" emerges once academic supervisors realize that a student is about to earn their PhD and leave. It's one last stronghold for supervisors to capitalize on the time and effort they have invested in their students' scientific training. This relentless push not only detracts from the true purpose of academic research but also imposes significant personal and mental strain on the most successful students. This article explores the expectations versus reality at the end of the PhD journey and provides actionable insights for students on how to identify, address, and navigate this particular pressure.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On the Rise, Decline, and Persistence of Web Technologies</title><link href="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html" rel="alternate" type="text/html" title="On the Rise, Decline, and Persistence of Web Technologies" /><published>2024-04-27T00:00:00-07:00</published><updated>2025-07-14T01:08:38-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html"><![CDATA[<p>I’ve been doing some frontend web development lately as part of my daily job.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[The "last paper myth" emerges once academic supervisors realize that a student is about to earn their PhD and leave. It's one last stronghold for supervisors to capitalize on the time and effort they have invested in their students' scientific training. This relentless push not only detracts from the true purpose of academic research but also imposes significant personal and mental strain on the most successful students. This article explores the expectations versus reality at the end of the PhD journey and provides actionable insights for students on how to identify, address, and navigate this particular pressure.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On the Rise, Decline, and Persistence of Web Technologies</title><link href="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html" rel="alternate" type="text/html" title="On the Rise, Decline, and Persistence of Web Technologies" /><published>2024-04-27T00:00:00-07:00</published><updated>2025-07-14T01:23:22-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html"><![CDATA[<p>I’ve been doing some frontend web development lately as part of my daily job.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
 Along the way, I’ve been thinking on how the whole thing is built under the hood. 
 The web technologies that we all use every day have changed and evolved over time.
 While digging into this topic, I realized that some of the underlying technical solutions that fuel the World Wide Web are really brilliant, while others are still a mess.
@@ -2958,7 +2956,7 @@ Moreover, we’ve learned that moving away from JavaScript is still quite challe
       <p>HTML and CSS are not programming languages. There’s no such as thing as an HTML programmer (nor anyone proud to be called as such). <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="web" /><summary type="html"><![CDATA[The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn't pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web's history. Those who don't know tech history are doomed to repeat past engineering mistakes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Most Relevant Technical Skill in My Career</title><link href="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html" rel="alternate" type="text/html" title="The Most Relevant Technical Skill in My Career" /><published>2024-03-30T00:00:00-07:00</published><updated>2025-07-14T01:08:38-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html"><![CDATA[<p>Eleven years ago (do you still remember 2013?), I was in the last year of my undergraduate studies.
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="web" /><summary type="html"><![CDATA[The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn't pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web's history. Those who don't know tech history are doomed to repeat past engineering mistakes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Most Relevant Technical Skill in My Career</title><link href="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html" rel="alternate" type="text/html" title="The Most Relevant Technical Skill in My Career" /><published>2024-03-30T00:00:00-07:00</published><updated>2025-07-14T01:23:22-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html"><![CDATA[<p>Eleven years ago (do you still remember 2013?), I was in the last year of my undergraduate studies.
 I started working on my thesis and soon realized that, to earn my diploma, I had to collect, analyze, and summarize data in a specific way.
 Because at the end of the day, a thesis needs content, and content comes from data derived from some kind of experiment.
 However, none of these skills were taught to me during the 5 years of my bachelor’s curriculum.
@@ -3319,4 +3317,289 @@ Have you ever thought about it?</p>
       <p>I’ve peer-reviewed <a href="../service.html">quite a few</a> research papers, almost none of them include the code used to generate the figures in the paper. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[Have you ever wonder which is most relevant technical skill in your career? It's not necessarily a programming language or the latest framework. For me, it is Exploratory Data Analysis (EDA). Why? Because being able to manipulate and find relevant information from various data sources has opened me doors to new opportunities in both academia and industry. This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[Have you ever wonder which is most relevant technical skill in your career? It's not necessarily a programming language or the latest framework. For me, it is Exploratory Data Analysis (EDA). Why? Because being able to manipulate and find relevant information from various data sources has opened me doors to new opportunities in both academia and industry. This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AI Doesn’t Make Me the Same Coffee</title><link href="https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html" rel="alternate" type="text/html" title="AI Doesn’t Make Me the Same Coffee" /><published>2024-02-13T00:00:00-08:00</published><updated>2025-07-14T01:23:22-07:00</updated><id>https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html"><![CDATA[<p>I started to consume and appreciate coffee after I moved to Sweden in 2018.
+Coffee is a key part of the Swedish culture of <em>fika</em>, and it’s used as a way to combat the dark winter <del>days</del> months.
+For years, I’ve been considering the idea of buying a fancy coffee machine.
+You know, like those that grind different beans to make various types of coffee brews.
+My main motivation was to save time while having a wider range of coffee choices.
+However, upon reflection, I ended up understanding that the experience of making coffee is as important to me as the coffee itself.
+It turns out that I actually enjoy buying the coffee beans, grinding them by hand, putting the coffee powder in my <a href="https://en.wikipedia.org/wiki/Moka_pot">moka pot</a>, and taking the time to wait for the dark potion to be ready.
+The whole experience is a time investment, yes, but I noticed that it’s also good for reducing the frequency of my coffee consumption.
+So, modern coffee machines help to save time, but I still prefer making coffee myself.
+The reason is that I enjoy the process, not just the result.
+This situation made me think about the role of “the human experience” on many of the common things we do every day, and how AI is going to influence or change them in the future.
+The rest of this article is my perspective on this matter, and where I believe current advances in AI are leading us.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+
+<figure class="jb_picture">
+  
+
+
+
+<img width="" style="border: ;" src="/assets/resized/manual-coffee-making-process-landscape-640x373.jpg" alt="Me grinding my coffee manually" data-srcset="/assets/resized/manual-coffee-making-process-landscape-640x373.jpg 640w,/assets/resized/manual-coffee-making-process-landscape-768x448.jpg 768w,/assets/resized/manual-coffee-making-process-landscape-1024x597.jpg 1024w,/assets/resized/manual-coffee-making-process-landscape-1366x797.jpg 1366w,/assets/resized/manual-coffee-making-process-landscape-1600x933.jpg 1600w," class="blur-up lazyautosizes lazyload" />
+  <figcaption class="stroke"> 
+    &#169; My manual coffee-making process is a significant time investment. However, it enhances the experience while simultaneously reducing the frequency of my coffee consumption. Will the efficiencies promised by AI deliver the same joy? 
+  </figcaption>
+</figure>
+
+<p>Last week I participated in <a href="https://www.jfokus.se/talks/1661">Jfokus 2024</a> as a speaker.<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>
+The main topic of the conference was the latest advances in AI and the impact of this technology on the software industry. 
+I noticed a general acceptance of the huge potential of AI, and the many ways in which it could/would make everything more efficient for developers. 
+For many of us, it looks like writing code, testing, deploying, documenting, or just creating any kind of digital content will be AI-assisted in the coming years.
+So, there’s a <a href="https://youtu.be/rENT1fDR69I?si=pH27Skp26xXGGp2D">notable concern</a> regarding the future market need for human developers.
+Honestly, I find the mere question <a href="../blog/surviving-the-ai-revolution-as-a-software-engineer">freaking scary</a>, not only because I’m a developer myself, but also because I believe that coding is a pretty advanced skill.</p>
+
+<aside class="quote">
+    <em>“Coding is among the latest skills nurtured by our modern civilization.”</em>
+</aside>
+
+<p>Beyond coding, today’s AI threatens to automate every aspect of our lives.
+One of AI’s major promises is to free us from seemingly mundane tasks.
+However, I’m worried that too much automation could relegate the “human touch” in our daily activities to second place.
+Activities and chores like making coffee, serving wine, cooking, painting, writing, playing music, making love, or chatting with friends could lose their essence.
+In particular, at its core, coding is a human activity in which people contribute by following conventions (a.k.a Git rules).</p>
+
+<p>After a though or two, I realize that in most aspects of my life, I’m not looking for perfection, I’m rather seeking for the experience.
+For example, I had a <a href="https://www.linkedin.com/posts/cesarsotovalero_jfokus2024-javacommunity-success-activity-7161289069065338880-ptRZ?utm_source=share&amp;utm_medium=member_desktop">great time</a> at Jfokus this year.
+I met a lot of people, and I had a good share of fun because of that.
+I could have saved some time and money by watching the talks on YouTube later.
+However, I believe there is much less value in doing that because the act of being there, physically, is a big part of the experience.
+Nevertheless, I’m afraid that a future fueled by AI solutions could irremediably change my current perception.</p>
+
+<h1 id="promises">Promises</h1>
+
+<p>AI promises to propel our species to the next level, whatever that may be.
+At the individual level, it involves freeing us from mundane tasks so that we’ll have more free time to do what we want.
+Imagine the kinds of optimizations that an <a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence">Artificial General Intelligence (AGI)</a> system could offer us!
+It could, for example, give us exactly what we want without rambling, because it will “know” us better than we know ourselves (and I’m not talking about Google here).
+No pain in searching for the right food, the right music, the right movie, the right book, or the right partner… you get the idea.
+Our AI companion will provide the exact match for our needs, always.</p>
+
+<p>However, I’m afraid that technological advances of a similar scale have already happened before.
+And every time, we thought we were going to have more free time as well.
+Yet, we’re still working 40 hours a week, just about the same as our gatherer ancestors did.
+As humans, we witnessed the rise of agriculture 10,000 years ago, freeing us from the constant need to hunt and gather.
+We experienced the industrial revolution about 200 years ago freeing us from the need to produce everything by hand.
+We saw the rise of the internet in the last 30 years, eliminating the need to go to a physical library to find information.
+Do we have more free time now?
+Not really.
+The promise of human freedom through technological advancement didn’t materialize in the past, and it probably won’t happen now with AI either.</p>
+
+<p>I would like to be positive and believe that a 4-hour workweek is closer than ever.
+I want to believe in the potential of an AI that understands my strengths and weaknesses and helps me to be more efficient.
+But I’m not sure if that’s going to happen, or even if being more efficient would make me happier.
+Instead, I think that AI is going to reshape the way we interact with the world, meaning that some new behaviors will be added and others will be removed.
+There is one particular thing that I’m concerned about: lacking the human experience.</p>
+
+<h1 id="supremacy">Supremacy</h1>
+
+<p>AI systems have the potential to become ubiquitous.
+Unlike other breakthroughs, such as transportation and telephony, which required building infrastructure from scratch, AI solutions integrate seamlessly with our existing digital environment, including mobile phones and IoT devices.
+This means that, in the case of AI, the potential for adoption is broader than with any other technology.
+From a technological perspective, AI’s scalability is taken for granted.</p>
+
+<aside class="quote">
+    <em>“AI poses a solution to many problems, but we're merely starting to discover what we can solve with it.”</em>
+</aside>
+
+<p>AI models, like Large Language Models (LLMs), have absorbed the entirety of humanity’s open knowledge and learned from it.
+Unlike earlier machine learning techniques, they have begun to generate new knowledge from our existing internet corpus.
+The potential of these new models <a href="../blog/prompting-is-all-we-need">is simply astounding</a>.
+They are already being utilized to tackle problems that were once considered exceedingly challenging.</p>
+
+<p>Here are just three examples of applied AI that already impress me:</p>
+
+<ul>
+  <li><strong><a href="https://www.nextbigfuture.com/2024/01/figure-01-humanoid-bot-has-learned-to-make-coffee.html">FIGURE 01 Humanoid Robot</a></strong> that can learn how to make coffee.</li>
+  <li><strong><a href="https://blog.research.google/2024/01/amie-research-ai-system-for-diagnostic_12.html">AMIE</a></strong>, an AI system that outperforms human doctors in every field (including empathy).</li>
+  <li><strong><a href="https://github.com/features/copilot">GitHub Copilot</a></strong>, the world’s most widely adopted AI developer tool.</li>
+</ul>
+
+<p>Imagine a world where a supremely powerful AI system decides and manages everything.
+Our daily activities would become significantly more efficient.
+But from a human perspective, would such a world become more interesting?
+I’m not entirely sure.</p>
+
+<p>We have already witnessed machine learning systems assuming control over our decision-making processes.
+Take, for example, the <a href="https://research.netflix.com/research-area/recommendations">Netflix recommendation system</a>.
+It significantly enhances customer engagement, a boon from a business standpoint.
+However, its benefits for the wider audience remain questionable as more and more people are becoming addicted to the platform.
+Our ongoing struggles with social media addiction, and the phenomenon of the <a href="https://en.wikipedia.org/wiki/Filter_bubble">filter bubble</a>, underscore the complexities introduced by these technologies.
+AI with its vast capabilities is, in the same way, as powerful as it is dangerous.</p>
+
+<aside class="quote">
+    <em>“The moment I realize it's AI-generated content delivered by a human my interest wanes.”</em>
+</aside>
+
+<p>We now have <a href="https://en.wikipedia.org/wiki/VTuber">VTubers</a> and various forms of AI-generated “art” including music, books, movies, and games.
+Yet, to me, AI-generated content feels fundamentally different from creations born of traditional human creativity.
+Personally, I experience an aversion to AI-generated content.
+For some reason, the moment I realize it’s AI-generated my interest wanes.<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p>
+
+<p>I wish this could be a matter of personal choice.
+Do we even have the right to decide to what extent we want to engage with AI?
+Unfortunately, the answer is no.
+Much like the internet, AI is set to become ubiquitous.</p>
+
+<h1 id="acceptance">Acceptance</h1>
+
+<p>Let’s fully embrace the will of AI for a moment.
+Imagine it comes up with a decision, and we have no choice but to accept it.
+How comfortable would we be with the fact that we’re not in control anymore?
+Personally, I’m not very enthusiastic about the idea.</p>
+
+<aside class="quote">
+    <em>“Although we are used to accept human-made mistakes, we don't feel the same way about machine-made errors.”</em>
+</aside>
+
+<p>Take, for example, the use of AI in selecting the right candidate for a job.
+It might be better at it than humans in 80% of cases.
+But what about the remaining 20%?
+How can it understand the nuanced needs of a team or company?
+Or consider an AI deciding who goes to jail and who doesn’t.
+It might make the right decision in 99.9999% of cases, but what happens when it’s wrong?
+It’s concerning, and yet, it seems inevitable because it will be still better than human made decisions.</p>
+
+<p>On the other hand, the things that we thought were inherently human, like art and creativity, are now successfully generated using AI.
+If in doubt, just look at the stuff created by <a href="https://www.midjourney.com/home">Midjourney</a>.
+Very soon there will see AI creating 3D objects, full movies, and even entire virtual worlds.
+Take it or leave it, our civilization will never be the same.</p>
+
+<h1 id="the-human-experience">The Human Experience</h1>
+
+<aside class="quote">
+    <em>“[Some of] the best minds of my generation are thinking about how to make people click ads. That sucks.”</em>
+    <cite><br /> ― <a href="https://en.wikipedia.org/wiki/Jeff_Hammerbacher">Jeff Hammerbacher</a></cite>
+</aside>
+
+<p>My generation of Millennials have already chosen to make of <a href="https://en.wikipedia.org/wiki/Right_to_Internet_access">internet the new electricity</a>.
+Now, AI appears to be the brand-new internet.
+For example, today, you can buy any piece of clothing without ever meeting the seller in person.
+With AI, you could virtually bring back the seller.
+So, AI is simply taking it a step further, right?
+Wrong.</p>
+
+<p>If you go to a bar, you will soon encounter AI bartenders serving the right wine and telling you exactly what you want to hear.
+But as humans, we still crave discrepancies, those unexpected events that occur from time to time.
+Strangely, that’s what we will end up remembering!
+How much of the human experience are we sacrificing for these AI efficiencies?
+To what extent will these efficiencies become widely accepted?</p>
+
+<p>Something we learned from COVID-19 is that we still crave human interaction.
+People enjoy being with others.
+They watch videos on YouTube but still prefer attending live events.</p>
+
+<figure class="jb_picture">
+  
+
+
+
+<img width="50%" style="border: 1px solid #808080;" src="/assets/resized/true-wealth-640x640.jpg" alt="To remain human will be the true wealth" data-srcset="/assets/resized/true-wealth-640x640.jpg 640w,/assets/resized/true-wealth-768x768.jpg 768w,/assets/resized/true-wealth-1024x1024.jpg 1024w,/assets/resized/true-wealth-1366x1366.jpg 1366w," class="blur-up lazyautosizes lazyload" />
+  <figcaption class="stroke"> 
+    The key difference is freedom, not technology; to remain human will be the true wealth. 
+    <a href="https://www.linkedin.com/posts/linasbeliunas_this-sums-up-the-current-and-the-future-brilliantly-activity-7172327842406510592-dP9F?utm_source=share&amp;utm_medium=member_desktop">Source</a>
+  </figcaption>
+</figure>
+
+<p>As humans, we feel a sense of pride in whatever we do well.
+It is by overcoming struggles that we find our sense of fulfillment.
+In a future where the experience of overcoming troubles is minimized, what will be the source of our pride?</p>
+
+<h1 id="the-social-killer">The Social Killer</h1>
+
+<p>It’s always the case that we try to envision new technology in terms of practical use cases for good.
+However, history has shown that technology, although intended for good, often ends up being used for nefarious purposes.
+The reality, measured against history, is unlikely to be good.
+The question is: how do we minimize this?</p>
+
+<aside class="quote">
+    <em>“AI-powered systems menace to become the new social killer.”</em>
+</aside>
+
+<p>We are losing many social capabilities because of technology.
+Cell phones were once considered the best means to reduce human interaction.
+AI will surpass them in this regard.
+It will be interesting to see how AI elevates this to the next level.</p>
+
+<p>Why is social media so bad?
+Perhaps those in charge want us to become addicted to their platforms by leveraging <a href="https://positivepsychology.com/instant-gratification">instant gratification</a> tricks, so they can maintain their status.
+Corporations, driven by the pursuit of financial gain, seek any avenue to minimize costs and maximize revenue.
+On the other hand, at the business level humans are seen as a cost, whether in food production, software development, or car sales.
+Companies are already exploring how to eliminate human elements to optimize revenue, as that’s where they see the best way of cutting costs.
+But as a customer, I place high value on social interaction in many aspects of life.</p>
+
+<p>Non-verbal interaction is incredibly important.
+You meet a person and learn from the entire experience of being human.
+Children traditionally learn from their parents, but now they are learning from the internet.
+Thus, they start imitating what they see online, which is not beneficial.
+In a few years, we may see children speaking like an AI.</p>
+
+<h1 id="sparks-of-hope">Sparks of Hope</h1>
+
+<p>I would like to end this seemingly pessimistic article on a positive tone.
+Let’s be clear, AI has all the potential to augment human experiences to a level that we have never seen before.
+Perhaps, if AI frees up more of our time, we’ll have more opportunities to spend more time with other people.
+For example, I would rather go hiking or fishing in the mountains with my children in that case.</p>
+
+<figure class="jb_picture">
+  
+
+
+
+<img width="" style="border: 1px solid #808080;" src="/assets/resized/Brynjolfsson_on_the_turing_trap-640x378.png" alt="The turing trap" data-srcset="/assets/resized/Brynjolfsson_on_the_turing_trap-640x378.png 640w,/assets/resized/Brynjolfsson_on_the_turing_trap-768x453.png 768w,/assets/resized/Brynjolfsson_on_the_turing_trap-1024x604.png 1024w," class="blur-up lazyautosizes lazyload" />
+  <figcaption class="stroke"> 
+    &#169; According to <a href="https://www.amacad.org/sites/default/files/publication/downloads/Daedalus_Sp22_19_Brynjolfsson.pdf">Erik Brynjolfsson</a>, opportunities for augmenting humans are far greater than opportunities to automate existing tasks.
+  </figcaption>
+</figure>
+
+<p>AI will augment our current capabilities.
+It appears that we will not lose our jobs as long as we learn to use and leverage AI effectively.
+However, those who fail to adapt may be left behind.
+Consequently, a new set of jobs and opportunities will emerge, as has happened in the past.</p>
+
+<p>One example is the case of education.
+Today, we have human teachers managing classrooms with 10 or more children at a time.
+An AI that can provide a personalized education experience to every child in the world could be truly revolutionary.
+Every child could have a private teacher specifically trained to meet their needs.
+In this way, high-quality education would become accessible to everyone.</p>
+
+<aside class="quote">
+    <em>“For the most part of everything I do, I'm not looking for perfection, I'm rather seeking for the experience.”</em> 
+</aside>
+
+<p>Another example is architecture.
+AI has the potential to design beautiful and structurally sound architectures, far surpassing our conventional, unappealing square buildings.
+Thus, beautiful architecture will become more accessible, opening up possibilities for a wider range of creative people.</p>
+
+<p>However, my greatest hope for AI lies in its ability to reform politics.
+Imagine improving democracy by truly listening to and considering every voice, creating a true data-driven political system.
+For instance, AI could analyze the specific needs of every citizen and make optimal decisions at every level, from local neighborhoods to the entire country and beyond.
+This is a big hope for now, but it’s not impossible.</p>
+
+<h1 id="summary">Summary</h1>
+
+<aside class="quote">
+    <em>“I'm biased towards human interaction, AI will never replace the true human experience.”</em>
+</aside>
+
+<p>AI advances are going to change the way we interact with the world.
+With AI, we are going to have more free time and greater capabilities.
+One of its risks is of limiting even more our access to human experiences.
+If not properly managed, AI could become the new social killer in town.
+It’s all about the choices we make as a society.
+In any case, AI is already here, it’s not going anywhere, and it’s inevitable.</p>
+
+<h1 id="footnotes">Footnotes</h1>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>This blog post has been written without AI assistance, which explains the broken writing style and rambling of thoughts. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>You can watch my Jfokus talk <a href="https://youtu.be/Xn1ShZPrw2o?si=88K_7LWn3s63o3HE">here</a>. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>If you ever use AI to generate content, you understand what I’m talking about. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Advancements in AI are set to transform the way we interact with the world, offering increased free time and enhanced capabilities. However, if not carefully managed, AI poses risks such as reducing human experiences and potentially becoming a significant social issue.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-02-13/manual-coffee-making-process-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-02-13/manual-coffee-making-process-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
