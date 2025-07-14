@@ -42,23 +42,28 @@ Why?
 - Because multi-repo is unnecessary: I believe that if a project grows to the point that it needs to be split into multiple repositories, then it's a sign of over-engineering.
 - Because I'm lazy: I like to keep things as simple as possible, compile, test, containerize and deploy from a single location.
 
+I would like to have a tool that generates the project structure for me, but I haven't found one that I like yet.
+So I use a custom template that I created, which is inspired by the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org/).
+
 Here's the typical project structure that I use up to level 2 in the directory hierarchy, I'll go through each part later in this post:
 
 ```markdown
-my-project/
+project/
 │
 ├── .github/                # GitHub Actions workflows for CI/CD pipelines
-│   └── workflows/          # Directory containing YAML files for automated workflows
+│   ├── workflows/          # Directory containing YAML files for automated workflows
+│   └── dependabot.yml      # Configuration for Dependabot to manage dependencies
 │
 ├── .vscode/                # VSCode configuration for the project
 │   ├── launch.json         # Debugging configurations for VSCode
 │   └── settings.json       # Project-specific settings for VSCode
 │
-├── my-project-api/         # Backend API for handling business logic and heavy processing
+├── project-api/         # Backend API for handling business logic and heavy processing
 │   ├── data/               # Directory for storing datasets or other static files
 │   ├── notebooks/          # Jupyter notebooks for experimentation and prototyping
 │   ├── src/                # Source code for the backend application
 │   ├── tools/              # Utility scripts and tools for development or deployment
+│   │
 │   ├── .dockerignore       # Specifies files to exclude from Docker builds
 │   ├── .python-version     # Python version specification for pyenv
 │   ├── Dockerfile          # Docker configuration for containerizing the backend
@@ -67,17 +72,7 @@ my-project/
 │   ├── README.md           # Documentation for the backend API
 │   └── uv.lock             # Lock file for dependencies managed by UV
 │
-├── my-project-ui/          # Frontend UI for the project
-│   ├── public/             # Static assets like images, fonts, etc.
-│   ├── src/                # Source code for the frontend application
-│   ├── webpack/            # Webpack configuration for bundling assets
-│   ├── .babelrc            # Babel configuration for JavaScript transpilation
-│   ├── .gitignore          # Files and directories to ignore in Git
-│   ├── Dockerfile          # Docker configuration for containerizing the frontend
-│   ├── index.html          # Entry point for the frontend application
-│   ├── log.js              # Logging utility for debugging
-│   ├── package.json        # Node.js dependencies and scripts
-│   └── README.md           # Documentation for the frontend UI
+├── project-ui/             # Frontend UI for the project (Next.js, React, etc.)
 │
 ├── .gitignore              # Global Git ignore file for the repository
 ├── .pre-commit-config.yaml # Configuration for pre-commit hooks
@@ -89,64 +84,47 @@ my-project/
 └── README.md               # Main documentation for the project
 ```
 
-We don't do any processing steps in the game UI, as we adopted a frontend-backend architecture.
-We make an HTTP request to the API server that contains our question.
-Like this, we keep the browser application light while delegating the heavy lifting and business logic to the server.
+First, `project` is the root directory and it should be a short name, ideally less than 10 characters long, no snake_case (separation with hyphens is OK to me).
+Note that the project is self-contained.
+Meaning that it includes documentation, build/deployment infrastructure, and other necessary files to run it standalone.
 
-I use VSCode.
+It's important not to do any heavy data processing steps in the `project-ui`, as we adopted a frontend-backend architecture.
+Instead, I choose to make HTTP requests to the `project-api` server that contains the Python code.
+Like this, we keep the browser application light while delegating the heavy lifting and business logic to the server.
 
 <https://docs.astral.sh/uv/guides/projects/#creating-a-new-project>
 
-<https://cookiecutter-data-science.drivendata.org/>
+# GitHub Specifics
 
-# UV
+## GitHub Actions
 
-# Ruff
+I use GitHub Actions for Continous Integration for both API and UI pipelines.
+My typical workflow for `project-api` looks like this:
 
-<https://pep8.org/>
+```yaml
+name: CI-API
 
-<https://github.com/astral-sh/ruff>
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
-```makefile
-format:
-  # I enable a lot of linters including isort, flake8, autoflake, pylint equivalent and others
-  uv run ruff check --config pyproject.toml --fix .
-
-lint:
-  # Config file is specified for brevity
-  uv run ruff check --config pyproject.toml .
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Build Docker image
+        run: docker build -t project-api:ci ./project-api
+      - name: Run tests
+        run: docker run --rm project-api:ci pytest
 ```
 
-# ty
-
-<https://docs.astral.sh/ty/installation/>
-uv add --dev ty
-
-# Pre-commit Hooks
-
-<https://pre-commit.com/>
-
-<https://github.com/astral-sh/ruff-pre-commit>
-
-# MkDocs
-
-I use [MkDocs](https://www.mkdocs.org/) for documentation, which is a static
-
-# Gitleaks
-
-<https://github.com/gitleaks/gitleaks>
-
-# FastAPI
-
-I use [FastAPI](https://fastapi.tiangolo.com/) for building APIs.
-
-# Pydantic
-
-I use [Pydantic](https://pydantic-docs.helpmanual.io/) for data validation and settings management.
-
-<https://blog.glyph.im/2025/04/stop-writing-init-methods.html>
-
-# Dependabot
+## Dependabot
 
 ```yml
 # Sample dependabot config
@@ -159,7 +137,139 @@ updates:
   open-pull-requests-limit: 1
 ```
 
-# Docker
+## Pre-commit Hooks
+
+<https://pre-commit.com/>
+
+<https://github.com/astral-sh/ruff-pre-commit>
+
+## Gitleaks
+
+<https://github.com/gitleaks/gitleaks>
+
+# Python Specifics
+
+## uv
+
+I use [uv](https://github.com/astral-sh/uv) as my Python package manager and build tool (it's all I need to install and manage dependencies).
+
+Here are the core commands and how I set it up:
+
+```bash
+# Install uv globally if not already installed
+curl -sSfL https://astral.sh/install.sh | sh
+# Initialize a new project (adds .gitignore, .python-version, pyproject.toml, etc.)
+uv init project-api
+# Add some dependencies into the project and update pyproject.toml
+uv add --dev pytest ruff pre-commit mkdocs gitleaks fastapi pydantic
+# Updates the lock file with the latest versions of the dependencies (creates a virtual environment if not already created)
+uv sync
+# Activate the virtual environment
+uv venv activate
+# Run the project
+uv run main.py
+```
+
+Note that most important file is `pyproject.toml`, which [contains](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) the project metadata and dependencies.[^2]
+
+## Ruff
+
+[Ruff](https://github.com/astral-sh/ruff) is a fast Python linter and code formatter, designed to help you write clean and maintainable code.
+It combines `isort`, `flake8`, `autoflake`, into a single tool that can be run with a single command and follows the [PEP 8](https://pep8.org/) style guide out-of-the-box.
+
+<https://docs.astral.sh/ty/installation/>
+uv add --dev ty
+
+## ty
+
+[Ty](https://github.com/astral-sh/ty) is a type checker for Python, designed to work seamlessly with your existing codebase.
+It helps you catch type errors early in the development process, improving code quality and reducing the likelihood of runtime errors.
+
+## Pydantic
+
+[Pydantic](https://pydantic-docs.helpmanual.io/) is a data validation and settings management library for Python.
+It allows manage configuration settings like API keys, database connection details, or model parameters (hardcoding these values is a very bad practice).
+
+[Pydantic Settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/) allows to define application configurations using Pydantic models.
+It can automatically load settings from environment variables or special `.env` files, validate their types, and make them easily accessible in your code.
+
+Here's an example of how to use Pydantic Settings:
+
+```python
+from pydantic import BaseSettings
+
+class Settings(BaseSettings):
+    api_key: str
+    db_url: str
+
+    class Config:
+        env_file = ".env"
+
+settings = Settings()
+```
+
+Now, when you run this code, Pydantic will automatically load the values of `api_key` and `db_url` from the `.env` file or environment variables.
+And this values will be accessible and validated according to the types defined in the `Settings` model.
+
+## MkDocs
+
+I use [MkDocs](https://www.mkdocs.org/) for documentation, which is a static
+
+## FastAPI
+
+I use [FastAPI](https://fastapi.tiangolo.com/) for building APIs.
+
+# Infrastructure
+
+## Make
+
+[Make](https://www.gnu.org/software/make/) is a classic utility for automating tasks.
+I use it to create simple shortcuts for common development commands.
+Instead of remembering and typing out long commands to run tests, build a Docker image, or start the application, you can define these tasks in the `Makefile`.
+Then, you just run simple commands like `make test` or `make infrastructure-up`.
+
+As you might have noticed, there are two Makefiles:
+
+1. `project/project-api/Makefile`: This Makefile is used for linting, testing, and running the API.
+2. `project/Makefile`: This Makefile is used for building and running the infrastructure (via Dockerfile).
+
+Let me show you the extremely simple Makefile I use for the `project-api`:
+
+```makefile
+# project/project-api/Makefile
+DIR := .
+
+test:
+ uv run pytest
+
+format-fix:
+ uv run ruff format $(DIR)
+ uv run ruff check --select I --fix
+
+lint-fix:
+ uv run ruff check --fix
+```
+
+Now if I want to run the tests, I just run `make test`, and it will execute `uv run pytest` in the current directory.
+
+For the global project, I can use the following Makefile:
+
+```makefile
+# project/Makefile
+infrastructure-build:
+ docker compose build
+
+infrastructure-up:
+ docker compose up --build -d
+
+infrastructure-stop:
+ docker compose stop
+```
+
+I know that these examples are very simple, but you just imagine how you can add more complex tasks as needed.
+Make is a powerful tool that can help you automate almost anything in your development workflow.
+
+## Docker
 
 Use docker for deployments.
 Even if you are using GPU-enabled VMs, use Docker and expose the GPU to the container with the following parameter.
@@ -181,7 +291,7 @@ COPY . .
 RUN poetry build
 ```
 
-# References
+# External Resources
 
 - <https://decodingml.substack.com/p/engineer-python-projects-like-a-pro>
 - <<https://ashishb.net/programming/python-in-production-2>
@@ -195,3 +305,5 @@ RUN poetry build
 # Footnotes
 
 [^1]: Don't get me wrong, I understand that there are cases where a multi-repo structure is necessary, like when you have multiple teams working on different parts of the project, or when you need to share code across different projects.
+
+[^2]: The `pyproject.toml` file is similar to `package.json` in Node.js or `pom.xml` in Java.
