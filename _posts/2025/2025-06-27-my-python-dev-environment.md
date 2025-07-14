@@ -42,58 +42,51 @@ Why?
 - Because multi-repo is unnecessary: I believe that if a project grows to the point that it needs to be split into multiple repositories, then it's a sign of over-engineering.
 - Because I'm lazy: I like to keep things as simple as possible, compile, test, containerize and deploy from a single location.
 
-Here's the typical project structure that I use (I'll go through each part later in this post):
+Here's the typical project structure that I use up to level 2 in the directory hierarchy, I'll go through each part later in this post:
 
 ```markdown
-myproject/
+my-project/
 │
-├── .vscode/
-│   ├── launch.json
-│   └── settings.json
+├── .github/                # GitHub Actions workflows for CI/CD pipelines
+│   └── workflows/          # Directory containing YAML files for automated workflows
 │
-├── .vscode/
-│   ├── launch.json
-│   └── settings.json
+├── .vscode/                # VSCode configuration for the project
+│   ├── launch.json         # Debugging configurations for VSCode
+│   └── settings.json       # Project-specific settings for VSCode
 │
-├── my-project-api/
-│   ├── .dockerignore
-│   ├── .python-version
-│   ├── Dockerfile
-│   ├── langgraph.json
-│   ├── Makefile
-│   ├── pyproject.toml
-│   ├── README.md
-│   ├── uv.lock
-│   ├── .ruff_cache/
-│   │   └── .gitignore
-│   ├── .vscode/
-│   ├── data/
-│   ├── notebooks/
-│   ├── src/
-│   └── tools/
+├── my-project-api/         # Backend API for handling business logic and heavy processing
+│   ├── data/               # Directory for storing datasets or other static files
+│   ├── notebooks/          # Jupyter notebooks for experimentation and prototyping
+│   ├── src/                # Source code for the backend application
+│   ├── tools/              # Utility scripts and tools for development or deployment
+│   ├── .dockerignore       # Specifies files to exclude from Docker builds
+│   ├── .python-version     # Python version specification for pyenv
+│   ├── Dockerfile          # Docker configuration for containerizing the backend
+│   ├── Makefile            # Automation tasks for building, testing, and deploying
+│   ├── pyproject.toml      # Python project configuration file
+│   ├── README.md           # Documentation for the backend API
+│   └── uv.lock             # Lock file for dependencies managed by UV
 │
-├── my-project-ui/
-│   ├── .babelrc
-│   ├── .gitignore
-│   ├── Dockerfile
-│   ├── index.html
-│   ├── LICENSE
-│   ├── log.js
-│   ├── package.json
-│   ├── README.md
-│   ├── public/
-│   ├── src/
-│   └── webpack/
+├── my-project-ui/          # Frontend UI for the project
+│   ├── public/             # Static assets like images, fonts, etc.
+│   ├── src/                # Source code for the frontend application
+│   ├── webpack/            # Webpack configuration for bundling assets
+│   ├── .babelrc            # Babel configuration for JavaScript transpilation
+│   ├── .gitignore          # Files and directories to ignore in Git
+│   ├── Dockerfile          # Docker configuration for containerizing the frontend
+│   ├── index.html          # Entry point for the frontend application
+│   ├── log.js              # Logging utility for debugging
+│   ├── package.json        # Node.js dependencies and scripts
+│   └── README.md           # Documentation for the frontend UI
 │
-├── .gitignore
-├── .pre-commit-config.yaml
-├── CONTRIBUTING.md
-├── docker-compose.yml
-├── INSTALL_AND_USAGE.md
-├── LICENSE
-├── Makefile
-├── README.md
-
+├── .gitignore              # Global Git ignore file for the repository
+├── .pre-commit-config.yaml # Configuration for pre-commit hooks
+├── CONTRIBUTING.md         # Guidelines for contributing to the project
+├── docker-compose.yml      # Docker Compose configuration for multi-container setups
+├── INSTALL_AND_USAGE.md    # Instructions for installation and usage
+├── LICENSE                 # License information for the project
+├── Makefile                # Automation tasks for building, testing, and deploying
+└── README.md               # Main documentation for the project
 ```
 
 We don't do any processing steps in the game UI, as we adopted a frontend-backend architecture.
