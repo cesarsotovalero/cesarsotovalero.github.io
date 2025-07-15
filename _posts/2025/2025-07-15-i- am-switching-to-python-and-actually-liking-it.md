@@ -29,7 +29,7 @@ And guess what’s the de facto programming language for AI?
 Yep, it’s the sneaky one.
 
 I had used Python before, but only for small scripts.
-For example, [this script](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/scripts/fetch_all_youtube_videos.py) scrapes metadata from all the YouTube videos on my channel to create [this](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/_data/youtube-videos.json) JSON file, which I later use to nicely display [on a static page](https://www.cesarsotovalero.net/youtube) of this website.
+For example, [this script](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/scripts/fetch_all_youtube_videos.py) scrapes metadata from all the YouTube videos on [my channel](https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg) to create [this](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/_data/youtube-videos.json) JSON file, which I later use to nicely display [on a static page](https://www.cesarsotovalero.net/youtube) of this website.
 As you can [see here](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/.github/workflows/update-youtube-videos.yml), this little script runs in solo mode every Monday via GitHub Actions.
 Doing this kind of thing in Python is just way more convenient than, say, using Batch.
 Not only because the syntax is more human-friendly, but also because the interpreter is natively integrated in all Unix distros.
