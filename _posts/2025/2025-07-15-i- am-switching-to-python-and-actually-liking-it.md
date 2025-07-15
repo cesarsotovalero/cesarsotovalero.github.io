@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I'm Switching to Python and Actually Liking It Now
+title: I'm Switching to Python and Actually Liking It
 subtitle: Here are my tools for building production-ready apps
 tags: tools
 description: |
@@ -21,12 +21,12 @@ author: cesarsotovalero
 published: true
 ---
 
-I've started to write more [Python.org](https://www.python.org/) code around 6 months ago.
+I started to write more [Python](https://www.python.org/) code around 6 months ago.
 Why?
 Because of AI, obviously.
 It's clear (to me) that big ~~money~~ opportunities are all over AI these days.
 And guess what’s the de facto programming language for AI?
-Yep, it’s that one.
+Yep, it’s the sneaky one.
 
 I had used Python before, but only for small scripts.
 For example, [this script](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/scripts/fetch_all_youtube_videos.py) scrapes metadata from all the YouTube videos on my channel to create [this](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/_data/youtube-videos.json) JSON file, which I later use to nicely display [on a static page](https://www.cesarsotovalero.net/youtube) of this website.
