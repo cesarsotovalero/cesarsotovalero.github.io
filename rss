@@ -1,4 +1,429 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.cesarsotovalero.net/" rel="alternate" type="text/html" /><updated>2025-07-15T05:26:02-07:00</updated><id>https://www.cesarsotovalero.net/feed.xml</id><title type="html">César Soto Valero</title><subtitle>César - Computer Scientist</subtitle><author><name>César Soto Valero</name><email>NaN</email></author><entry><title type="html">Evaluation Metrics for Real-Time Financial Fraud Detection ML Models</title><link href="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models.html" rel="alternate" type="text/html" title="Evaluation Metrics for Real-Time Financial Fraud Detection ML Models" /><published>2025-05-08T00:00:00-07:00</published><updated>2025-07-15T05:24:50-07:00</updated><id>https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models.html"><![CDATA[<p>After training a machine learning model for <a href="../blog/real-time-financial-fraud-detection.html">real-time financial fraud detection</a>, the next step is to evaluate its performance.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.cesarsotovalero.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.cesarsotovalero.net/" rel="alternate" type="text/html" /><updated>2025-07-15T07:11:50-07:00</updated><id>https://www.cesarsotovalero.net/feed.xml</id><title type="html">César Soto Valero</title><subtitle>César - Computer Scientist</subtitle><author><name>César Soto Valero</name><email>NaN</email></author><entry><title type="html">I’m Switching to Python and Actually Liking It Now</title><link href="https://www.cesarsotovalero.net/blog/i-am-switching-to-python-and-actually-liking-it-now.html" rel="alternate" type="text/html" title="I’m Switching to Python and Actually Liking It Now" /><published>2025-07-15T00:00:00-07:00</published><updated>2025-07-15T07:10:24-07:00</updated><id>https://www.cesarsotovalero.net/blog/i-%20am-switching-to-python-and-actually-liking-it-now</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/i-am-switching-to-python-and-actually-liking-it-now.html"><![CDATA[<p>I’ve started to write more <a href="https://www.python.org/">Python.org</a> code around 6 months ago.
+Why?
+Because of AI, obviously.
+It’s clear (to me) that big <del>money</del> opportunities are all over AI these days.
+And guess what’s the de facto programming language for AI?
+Yep, it’s that one.</p>
+
+<p>I had used Python before, but only for small scripts.
+For example, <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/scripts/fetch_all_youtube_videos.py">this script</a> scrapes metadata from all the YouTube videos on my channel to create <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/_data/youtube-videos.json">this</a> JSON file, which I later use to nicely display <a href="https://www.cesarsotovalero.net/youtube">on a static page</a> of this website.
+As you can <a href="https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/.github/workflows/update-youtube-videos.yml">see here</a>, this little script runs in solo mode every Monday via GitHub Actions.
+Doing this kind of thing in Python is just way more convenient than, say, using Batch.
+Not only because the syntax is more human-friendly, but also because the interpreter is natively integrated in all Unix distros.
+Isn’t that cool?</p>
+
+<p>So yeah, Python is powerful, and it couples very well with the now ubiquitous <a href="https://code.visualstudio.com/">VSCode</a>.
+But I didn’t treat it seriously until recently.<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
+When I wanted to build AI applications (RAG, Agents, GenAI tools, etc.) for the <em>real world</em>.
+Then I realized that whether you like it or not, Python is the language of choice for that.</p>
+
+<p>So I decided to give it a serious try, and to my great surprise, I’ve found that Python, and everything around it, has really improved a lot over the last decades.</p>
+
+<p>Just three examples:</p>
+
+<ol>
+  <li>Python has created a very complete ecosystem of libraries and tools for processing and analyzing data.<sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Python has gotten faster with optimized static compilers like <a href="https://cython.org/">Cython</a>.</li>
+  <li>Python has done a good job of hiding its legacy ugliness (think <code class="language-plaintext highlighter-rouge">__init__</code>, <code class="language-plaintext highlighter-rouge">__new__</code>, etc.) to edulcorate developers <del>with good taste</del>.</li>
+</ol>
+
+<p>Thanks to this and many other things, I’m now feeling a particular joy for the language.</p>
+
+<p>However, during this time, I’ve found that there’s still a big gap between using Python for <em>production-ready apps</em><sup id="fnref:7"><a href="#fn:7" class="footnote" rel="footnote" role="doc-noteref">3</a></sup> versus the usual Jupyter notebook or script-based workflow.
+In this post, I share the tools, libraries, configs, and other integrations that bring me joy, and that I now use for building production-grade Python applications.
+This post is highly biased toward the tools I personally use today, and if you think I’m missing some gem, please let me/us know (preferably in the comment section below).</p>
+
+<h1 id="project-structure">Project Structure</h1>
+
+<p>I prefer to use a <a href="https://en.wikipedia.org/wiki/Monorepo">monorepo</a> (with backend and frontend) structure for my Python projects.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></p>
+
+<p>Why?</p>
+
+<ol>
+  <li>Because of my bad memory: I don’t like code parts scattered across multiple repositories (it’s not search-friendly).</li>
+  <li>Because a multi-repo is unnecessary: I believe that if a project grows to the point that it needs to be split into multiple repositories, then it’s a sign of over-engineering.</li>
+  <li>Because I’m lazy: I like to keep things as simple as possible, compile, test, containerize, and deploy from a single location.<sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></li>
+</ol>
+
+<p>I would like to have a tool that generates the project structure for me, but I haven’t found one that fits me yet.
+In the past, I used <a href="https://cookiecutter-data-science.drivendata.org/">CCDS</a>, a project initialization tool mostly for Data Science projects.
+It’s very good, but it’s not targeting full-stack developers as its core users.</p>
+
+<p>Here’s the typical structure of a project with a frontend-backend architecture (I’ll go through each subpart later in this post):</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project/
+│
+├── .github/                # GitHub Actions workflows for CI/CD pipelines
+│   ├── workflows/          # Directory containing YAML files for automated workflows
+│   └── dependabot.yml      # Configuration for Dependabot to manage dependencies
+│
+├── .vscode/                # VSCode configuration for the project
+│   ├── launch.json         # Debugging configurations for VSCode
+│   └── settings.json       # Project-specific settings for VSCode
+│
+├── docs/                   # Website and docs (a static SPA with MkDocs)
+│
+├── project-api/            # Backend API for handling business logic and heavy processing
+│   ├── data/               # Directory for storing datasets or other static files
+│   ├── notebooks/          # Jupyter notebooks for quick (and dirty) experimentation and prototyping
+│   ├── tools/              # Utility scripts and tools for development or deployment
+│   ├── src/                # Source code for the backend application
+│   │   ├── app/            # Main application code
+│   │   └── tests/          # Unit tests for the backend
+│   │
+│   ├── .dockerignore       # Specifies files to exclude from Docker builds
+│   ├── .python-version     # Python version specification for pyenv
+│   ├── Dockerfile          # Docker configuration for containerizing the backend
+│   ├── Makefile            # Automation tasks for building, testing, and deploying
+│   ├── pyproject.toml      # Python project configuration file
+│   ├── README.md           # Documentation for the backend API
+│   └── uv.lock             # Lock file for dependencies managed by UV
+│
+├── project-ui/             # Frontend UI for the project (Next.js, React, etc.)
+│
+├── .gitignore              # Global Git ignore file for the repository
+├── .pre-commit-config.yaml # Configuration for pre-commit hooks
+├── CONTRIBUTING.md         # Guidelines for contributing to the project
+├── docker-compose.yml      # Docker Compose configuration for multi-container setups
+├── LICENSE                 # License information for the project (I always choose MIT)
+├── Makefile                # Automation tasks for building, testing, and deploying
+└── README.md               # Main documentation for the project (main features, installation, and usage)
+</code></pre></div></div>
+
+<p>First, <code class="language-plaintext highlighter-rouge">project</code> is the root directory.
+I like short names for projects, ideally less than 10 characters long. No <code class="language-plaintext highlighter-rouge">snake_case</code>; separation with hyphens is OK to me.
+Note that the project should be self-contained, meaning it includes documentation, build/deployment infrastructure, and any other necessary files to run it standalone.</p>
+
+<p>It’s important not to do any heavy data processing steps in the <code class="language-plaintext highlighter-rouge">project-ui</code>, as I opted to separate frontend logic from backend responsibilities.
+Instead, I choose to make HTTP requests to the <code class="language-plaintext highlighter-rouge">project-api</code> server that contains the Python code.
+This way, we keep the browser application light while delegating the heavy lifting and business logic to the server.</p>
+
+<p>There’s an <code class="language-plaintext highlighter-rouge">__init__.py</code> file in <code class="language-plaintext highlighter-rouge">project-api/src/app</code> to indicate that <code class="language-plaintext highlighter-rouge">app</code> is a Python module (it can be imported from other modules).</p>
+
+<h1 id="python-toolbox">Python Toolbox</h1>
+
+<h2 id="uv">uv</h2>
+
+<p>I use <a href="https://github.com/astral-sh/uv">uv</a> as my Python package manager and build tool. It’s all I need to install and manage dependencies.</p>
+
+<p>Here are the core commands to set it up:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Install uv globally if not already installed</span>
+curl <span class="nt">-sSfL</span> https://astral.sh/install.sh | sh
+
+<span class="c"># Initialize a new project (adds .gitignore, .python-version, pyproject.toml, etc.)</span>
+uv init project-api
+
+<span class="c"># Add some dependencies into the project and update pyproject.toml</span>
+uv add <span class="nt">--dev</span> pytest ruff pre-commit mkdocs gitleaks fastapi pydantic
+
+<span class="c"># Update the lock file with the latest versions of the dependencies (creates a .venv if not already created)</span>
+uv <span class="nb">sync</span>
+
+<span class="c"># Activate the .venv</span>
+uv venv activate
+</code></pre></div></div>
+
+<p>Note that the most important file for <code class="language-plaintext highlighter-rouge">uv</code> is <code class="language-plaintext highlighter-rouge">pyproject.toml</code>.<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">6</a></sup>
+This file <a href="https://packaging.python.org/en/latest/guides/writing-pyproject-toml/">contains</a> metadata and the list of dependencies required to build and run the project.</p>
+
+<h2 id="ruff">ruff</h2>
+
+<p>I really like <a href="https://github.com/astral-sh/ruff">ruff</a>.
+It’s a super-fast Python linter and code formatter, designed to help lazy developers like me keep our codebases clean and maintainable.
+Ruff combines <code class="language-plaintext highlighter-rouge">isort</code>, <code class="language-plaintext highlighter-rouge">flake8</code>, <code class="language-plaintext highlighter-rouge">autoflake</code>, and similar tools into a single command-line interface:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruff check path/to/code/   <span class="c"># Lint all files in `/path/to/code` (and any subdirectories).</span>
+ruff format path/to/code/  <span class="c"># Format all files in `/path/to/code` (and any subdirectories).</span>
+</code></pre></div></div>
+
+<p>Ruff supports the <a href="https://pep8.org/">PEP 8</a> style guide out of the box.</p>
+
+<h2 id="ty">ty</h2>
+
+<p><a href="https://github.com/astral-sh/ty">ty</a> is a type checker for Python.
+It is a great combo for <a href="https://docs.python.org/3/library/typing.html">typing</a>, the popular Python module for adding static typing.
+I think typing really helps me catch type errors early in the development process. I actually don’t care about having to write more code, in fact, I prefer it if it improves code quality and reduces the likelihood of runtime errors.</p>
+
+<p><strong>NOTE:</strong> At the time of writing, <code class="language-plaintext highlighter-rouge">ty</code> is still in early development by Astral (the same company behind <code class="language-plaintext highlighter-rouge">uv</code> and <code class="language-plaintext highlighter-rouge">ruff</code>), but I’ve been using it and haven’t found any noticeable flaws so far.</p>
+
+<h2 id="pytest">pytest</h2>
+
+<p><a href="https://docs.pytest.org/en/stable/">pytest</a> is <em>THE</em> testing library for Python.
+Writing simple and scalable test cases with it is just super easy.
+It supports fixtures, parameterized tests, and has a rich ecosystem of plugins.
+Just create a file named <code class="language-plaintext highlighter-rouge">test_&lt;unit_or_module&gt;.py</code> in <code class="language-plaintext highlighter-rouge">project-api/src/app/tests/</code>, and run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uv run pytest
+</code></pre></div></div>
+
+<p>That’s it!</p>
+
+<h2 id="pydantic">Pydantic</h2>
+
+<p><a href="https://pydantic-docs.helpmanual.io/">Pydantic</a> is a data validation and settings management library for Python.
+It helps manage all kinds of configuration settings, such as API keys, database connection details, or model parameters (hardcoding these values is a very bad practice, btw).</p>
+
+<p>In particular, <a href="https://docs.pydantic.dev/latest/concepts/pydantic_settings/">Pydantic Settings</a> allows you to define application configurations using Pydantic models.
+It can automatically load settings from environment variables or special <code class="language-plaintext highlighter-rouge">.env</code> files, validate their types, and make them easily accessible in your code.</p>
+
+<p>Here’s an illustrative example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pydantic</span> <span class="kn">import</span> <span class="n">BaseSettings</span>
+
+<span class="k">class</span> <span class="nc">Settings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">db_url</span><span class="p">:</span> <span class="nb">str</span>
+
+    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
+        <span class="n">env_file</span> <span class="o">=</span> <span class="sh">"</span><span class="s">.env</span><span class="sh">"</span>
+
+<span class="n">settings</span> <span class="o">=</span> <span class="nc">Settings</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Now, when you run this code, Pydantic will automatically load the values of <code class="language-plaintext highlighter-rouge">api_key</code> and <code class="language-plaintext highlighter-rouge">db_url</code> from the <code class="language-plaintext highlighter-rouge">.env</code> file or environment variables.
+These values will be accessible and validated according to the types defined in the <code class="language-plaintext highlighter-rouge">Settings</code> model.
+Just great!</p>
+
+<h2 id="mkdocs">MkDocs</h2>
+
+<p>I use <a href="https://www.mkdocs.org/">MkDocs</a> for documentation and static generation of the website for the project.<sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">7</a></sup>
+I’m not a designer, so I prefer to just copy an aesthetically pleasing design from another similar open-source project and make some simple modifications to the CSS (like changing fonts and colors).</p>
+
+<h2 id="fastapi">FastAPI</h2>
+
+<p>I use <a href="https://fastapi.tiangolo.com/">FastAPI</a> for building APIs.
+It has been a game changer for me, it allows for easy creation of RESTful APIs with automatic validation, serialization, and documentation.
+FastAPI is built on top of Starlette and Pydantic, which means it provides excellent performance and type safety.
+It’s fast, easy to use, and integrates seamlessly with Pydantic for data validation.</p>
+
+<h2 id="dataclasses">Dataclasses</h2>
+
+<p><a href="https://docs.python.org/3/library/dataclasses.html">Dataclasses</a> is not a library but a Python feature that provides a way to define classes that are primarily used to store data.
+They offer a simple syntax for creating classes that automatically generate special methods like <code class="language-plaintext highlighter-rouge">__init__()</code>, <code class="language-plaintext highlighter-rouge">__repr__()</code>, and <code class="language-plaintext highlighter-rouge">__eq__()</code>.</p>
+
+<p>This greatly reduces boilerplate when creating data containers.</p>
+
+<p>Here’s an example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">Point</span><span class="p">:</span>
+    <span class="n">x</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">y</span><span class="p">:</span> <span class="nb">int</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="nc">Point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>  <span class="c1"># Output: Point(x=1, y=2)
+</span></code></pre></div></div>
+
+<p>So goodbye boilerplate and cryptic code!</p>
+
+<h1 id="version-control">Version Control</h1>
+
+<h2 id="github-actions">GitHub Actions</h2>
+
+<p>I’m a fanboy of <a href="https://github.com/features/actions">GitHub Actions</a>, especially for CI across different OSs.
+I recommend using it for both API and UI pipelines.</p>
+
+<p>A typical workflow for <code class="language-plaintext highlighter-rouge">project-api</code> looks like this:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">CI-API</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">main</span>
+  <span class="na">pull_request</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">main</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">build-and-test</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Checkout code</span>
+        <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v3</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Build Docker image</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="s">docker build -t project-api:ci ./project-api</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Run tests</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="s">docker run --rm project-api:ci pytest</span>
+</code></pre></div></div>
+
+<p>Note that this workflow uses Docker to run the tests in an isolated environment.<sup id="fnref:8"><a href="#fn:8" class="footnote" rel="footnote" role="doc-noteref">8</a></sup>
+You can change the OS by setting the <code class="language-plaintext highlighter-rouge">runs-on</code> parameter to <code class="language-plaintext highlighter-rouge">windows-latest</code> or <code class="language-plaintext highlighter-rouge">macos-latest</code>.</p>
+
+<h2 id="dependabot">Dependabot</h2>
+
+<p>Handling dependencies is a pain, but <a href="https://dependabot.com/">Dependabot</a> makes it easier.
+It automatically checks for outdated dependencies and creates pull requests to update them.</p>
+
+<p>Here’s a sample configuration for Dependabot in the <code class="language-plaintext highlighter-rouge">.github/dependabot.yml</code> file:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="m">2</span>
+<span class="na">updates</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">package-ecosystem</span><span class="pi">:</span> <span class="s2">"</span><span class="s">uv"</span>
+    <span class="na">directory</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/"</span>
+    <span class="na">schedule</span><span class="pi">:</span>
+      <span class="na">interval</span><span class="pi">:</span> <span class="s2">"</span><span class="s">weekly"</span>
+</code></pre></div></div>
+
+<h2 id="gitleaks">Gitleaks</h2>
+
+<p>If there’s something that could hurt our reputation, it’s committing sensitive information, like API keys or passwords, directly to a repository.
+Fortunately, <a href="https://github.com/gitleaks/gitleaks">Gitleaks</a> helps prevent this from happening.
+There’s just no reason not to use it.</p>
+
+<h2 id="pre-commit-hooks">Pre-commit Hooks</h2>
+
+<p>I use <a href="https://pre-commit.com/">pre-commit</a> to run checks and format code before committing.
+It helps ensure that the code is always in a good state and follows the project’s coding standards.
+For example, I use it to run <a href="https://github.com/astral-sh/ruff-pre-commit">ruff-pre-commit</a> and <code class="language-plaintext highlighter-rouge">gitleaks</code> before committing code.</p>
+
+<h1 id="infrastructure-management">Infrastructure Management</h1>
+
+<h2 id="make">Make</h2>
+
+<p><a href="https://www.gnu.org/software/make/">Make</a> is a Swiss Army knife, a classic utility for automating tasks.
+I use it to create simple shortcuts for common development commands.
+Instead of remembering and typing out long CLI incantations to run tests, build Docker images, or start services, I define these tasks in a <code class="language-plaintext highlighter-rouge">Makefile</code>.
+Then I just run commands like <code class="language-plaintext highlighter-rouge">make test</code> or <code class="language-plaintext highlighter-rouge">make infrastructure-up</code>.</p>
+
+<p>As you might have noticed, there is a <code class="language-plaintext highlighter-rouge">Makefile</code> in both the <code class="language-plaintext highlighter-rouge">project-api</code> and the global <code class="language-plaintext highlighter-rouge">project</code> directories:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">project/project-api/Makefile</code>: For linting, testing, and running the API.</li>
+  <li><code class="language-plaintext highlighter-rouge">project/Makefile</code>: For building and running the infrastructure (via <code class="language-plaintext highlighter-rouge">docker-compose</code>).</li>
+</ol>
+
+<p>Here’s an extremely simple example of the <code class="language-plaintext highlighter-rouge">project-api</code> Makefile:</p>
+
+<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">DIR</span> <span class="o">:=</span> <span class="nb">.</span> <span class="c"># project/project-api/Makefile</span>
+
+<span class="nl">test</span><span class="o">:</span>
+ <span class="err">uv</span> <span class="err">run</span> <span class="err">pytest</span>
+
+<span class="nl">format-fix</span><span class="o">:</span>
+ <span class="err">uv</span> <span class="err">run</span> <span class="err">ruff</span> <span class="err">format</span> <span class="err">$(DIR)</span>
+ <span class="err">uv</span> <span class="err">run</span> <span class="err">ruff</span> <span class="err">check</span> <span class="err">--select</span> <span class="err">I</span> <span class="err">--fix</span>
+
+<span class="nl">lint-fix</span><span class="o">:</span>
+ <span class="err">uv</span> <span class="err">run</span> <span class="err">ruff</span> <span class="err">check</span> <span class="err">--fix</span>
+</code></pre></div></div>
+
+<p>Now, if I want to run the tests, I just run <code class="language-plaintext highlighter-rouge">make test</code>, and it executes <code class="language-plaintext highlighter-rouge">uv run pytest</code> in the current directory.</p>
+
+<p>For the global project, I use the following <code class="language-plaintext highlighter-rouge">Makefile</code>:</p>
+
+<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">infrastructure-build</span><span class="o">:</span>
+ <span class="err">docker</span> <span class="err">compose</span> <span class="err">build</span>
+
+<span class="nl">infrastructure-up</span><span class="o">:</span>
+ <span class="err">docker</span> <span class="err">compose</span> <span class="err">up</span> <span class="err">--build</span> <span class="err">-d</span>
+
+<span class="nl">infrastructure-stop</span><span class="o">:</span>
+ <span class="err">docker</span> <span class="err">compose</span> <span class="err">stop</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">make</code> is a powerful tool that can help you automate almost anything in your development workflow.
+Although the examples above are very simple, just imagine how you can add more complex tasks as needed.</p>
+
+<h2 id="docker">Docker</h2>
+
+<p><a href="https://www.docker.com/">Docker</a> is a tool that allows you to package your application and its dependencies into a container,including everything needed to run: dependencies, system tools, code, and runtime OS.
+When working locally, I use <a href="https://docs.docker.com/compose/">Docker Compose</a> to connect all Docker images into the same network.
+Like Docker for dependencies, Docker Compose allows encapsulating the whole application stack and separating it from the rest of your local environment.</p>
+
+<p>To fully grasp this concept, let’s take a look at a simple <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> file:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.8'</span>
+<span class="na">services</span><span class="pi">:</span>
+  <span class="na">project-api</span><span class="pi">:</span>
+    <span class="na">build</span><span class="pi">:</span>
+      <span class="na">context</span><span class="pi">:</span> <span class="s">./project-api</span>
+      <span class="na">dockerfile</span><span class="pi">:</span> <span class="s">Dockerfile</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">8000:8000"</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">./project-api:/app</span>
+    <span class="na">environment</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">ENV_VAR=value</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">project-network</span>
+
+  <span class="na">project-ui</span><span class="pi">:</span>
+    <span class="na">build</span><span class="pi">:</span>
+      <span class="na">context</span><span class="pi">:</span> <span class="s">./project-ui</span>
+      <span class="na">dockerfile</span><span class="pi">:</span> <span class="s">Dockerfile</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">3000:3000"</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">project-network</span>
+
+<span class="na">networks</span><span class="pi">:</span>
+  <span class="na">project-network</span><span class="pi">:</span>
+    <span class="na">driver</span><span class="pi">:</span> <span class="s">bridge</span>
+</code></pre></div></div>
+
+<p>In this file, we define two services: <code class="language-plaintext highlighter-rouge">project-api</code> and <code class="language-plaintext highlighter-rouge">project-ui</code>.
+Each service has its own build context (<code class="language-plaintext highlighter-rouge">Dockerfile</code>), ports, volumes, and environment variables.</p>
+
+<p>Here’s a sample <code class="language-plaintext highlighter-rouge">Dockerfile</code> for the <code class="language-plaintext highlighter-rouge">project-api</code> service:</p>
+
+<div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> python:3.11-slim</span>
+
+<span class="c"># Install system dependencies</span>
+<span class="k">COPY</span><span class="s"> --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/</span>
+
+<span class="k">WORKDIR</span><span class="s"> /app</span>
+
+<span class="k">COPY</span><span class="s"> uv.lock pyproject.toml README.md ./</span>
+<span class="k">RUN </span>uv <span class="nb">sync</span> <span class="nt">--frozen</span> <span class="nt">--no-cache</span>
+
+<span class="c"># Bring in the actual application code</span>
+<span class="k">COPY</span><span class="s"> src/app app/</span>
+<span class="k">COPY</span><span class="s"> tools tools/</span>
+
+<span class="c"># Define a command to run the application</span>
+<span class="k">CMD</span><span class="s"> ["/app/.venv/bin/fastapi", "run", "project/infrastructure/api.py", "--port", "8000", "--host", "0.0.0.0"]</span>
+</code></pre></div></div>
+
+<p>As you can see, the Dockerfile starts from a Python base image, installs dependencies, copies the project files, and defines the command to run the FastAPI application.
+This way, you can run the entire application stack with a single command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker compose up <span class="nt">--build</span> <span class="nt">-d</span>
+</code></pre></div></div>
+
+<h1 id="footnotes">Footnotes</h1>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:3">
+      <p>If you know me, you know I used to be mostly a Java/JavaScript/R kind of guy. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>For example, today <a href="https://jupyter.org/">Jupyter</a> is bundled by almost every major cloud provider as the de facto tool for interactive data science and scientific computing. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+      <p>“Production-ready,” for me, means I can deploy the app to the cloud as-is, without needing to make a lot of infrastructure changes. <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:1">
+      <p>Don’t get me wrong—I understand there are cases where a multi-repo structure is necessary, like when multiple teams work on different parts of the project or when code needs to be shared across projects. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p>I believe in avoiding premature decomposition. If a codebase is less than, say, half a million lines of code, putting a network layer (like API calls) over it only makes maintenance a pain for <del>non-Amazon</del> rational developers. <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>The <code class="language-plaintext highlighter-rouge">pyproject.toml</code> file is similar to <code class="language-plaintext highlighter-rouge">package.json</code> in Node.js or <code class="language-plaintext highlighter-rouge">pom.xml</code> in Java. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p>By the way, I think every single project on GitHub should have its own website (it’s extremely easy via <a href="https://pages.github.com/">GitHub Pages</a>)—so no excuses. <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:8">
+      <p>Using Docker for CI ensures parity with production—but it might add cold-start overhead. You know… compromises. That’s life. <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="tools" /><summary type="html"><![CDATA[I've started writing more Python code lately (because of... AI, you know). In this post, I share the tools, libraries, configs, and other integrations I use for building production-grade Python applications following a frontend-backend architecture.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-07-15/wall-stones_cover.JPG" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-07-15/wall-stones_cover.JPG" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Evaluation Metrics for Real-Time Financial Fraud Detection ML Models</title><link href="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models.html" rel="alternate" type="text/html" title="Evaluation Metrics for Real-Time Financial Fraud Detection ML Models" /><published>2025-05-08T00:00:00-07:00</published><updated>2025-07-15T07:10:24-07:00</updated><id>https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models.html"><![CDATA[<p>After training a machine learning model for <a href="../blog/real-time-financial-fraud-detection.html">real-time financial fraud detection</a>, the next step is to evaluate its performance.
 Fraud detection models face unique challenges during evaluation.
 Two examples are (1) class imbalance and (2) the different costs of false positives vs. false negatives.
 Class imbalance means that the model doesn’t have enough fraudulent transactions to learn from, as they are rare compared to legitimate ones.
@@ -283,7 +708,7 @@ We also need to perform <a href="https://en.wikipedia.org/wiki/Backtesting">back
       <p><a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">ROC Curve</a> stands for “Receiver Operating Characteristic”, a very weird name, indeed. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[After training a real-time financial fraud detection model, the next step is to evaluate its performance. This post provides an overview of the most common evaluation metrics and considerations for fraud detection models, including confusion matrix, precision, recall, F1-score, AUC-ROC, AUC-PR, and more.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection</title><link href="https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection.html" rel="alternate" type="text/html" title="From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection" /><published>2025-04-03T00:00:00-07:00</published><updated>2025-07-15T05:24:50-07:00</updated><id>https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection.html"><![CDATA[<p>Financial fraud is a pervasive problem costing institutions and customers billions annually.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[After training a real-time financial fraud detection model, the next step is to evaluate its performance. This post provides an overview of the most common evaluation metrics and considerations for fraud detection models, including confusion matrix, precision, recall, F1-score, AUC-ROC, AUC-PR, and more.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-05-08/kungstradgarden_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection</title><link href="https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection.html" rel="alternate" type="text/html" title="From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection" /><published>2025-04-03T00:00:00-07:00</published><updated>2025-07-15T07:10:24-07:00</updated><id>https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection.html"><![CDATA[<p>Financial fraud is a pervasive problem costing institutions and customers billions annually.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
 Most known examples include credit card fraud, fraudulent online payments, and money laundering.
 Banks worldwide faced an estimated \(\$442\) billion in fraud-related losses in 2023 alone.
 In particular, credit card transactional fraud is projected to reach \(\$43\) billion in annual losses by 2026.
@@ -909,7 +1334,7 @@ Nonetheless, the above datasets provide valuable benchmarks to compare algorithm
       <p>Lin, Junhong, et al. “<em><a href="https://dl.acm.org/doi/abs/10.1145/3677052.3698648">FraudGT: A Simple, Effective, and Efficient Graph Transformer for Financial Fraud Detection</a>.</em>” Proceedings of the 5th ACM International Conference on AI in Finance. 2024. <a href="#fnref:27" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Financial transaction fraud is a pervasive problem costing institutions and customers billions annually. This survey reviews the current state-of-the-art in real-time transaction fraud detection, spanning both academic research and industry adopted solutions.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Building GenAI Applications Today</title><link href="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html" rel="alternate" type="text/html" title="Building GenAI Applications Today" /><published>2024-11-17T00:00:00-08:00</published><updated>2025-07-15T05:24:50-07:00</updated><id>https://www.cesarsotovalero.net/blog/building-genai-applications-today</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html"><![CDATA[<figure class="badge"><a href="&lt;https://commons.wikimedia.org/wiki/File:NMA.0039209_Emigration._Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg&gt;"><img src="/img/badges/Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg" style="width:140px;max-width:100%;" alt="badge" /></a></figure>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Financial transaction fraud is a pervasive problem costing institutions and customers billions annually. This survey reviews the current state-of-the-art in real-time transaction fraud detection, spanning both academic research and industry adopted solutions.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Building GenAI Applications Today</title><link href="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html" rel="alternate" type="text/html" title="Building GenAI Applications Today" /><published>2024-11-17T00:00:00-08:00</published><updated>2025-07-15T07:10:24-07:00</updated><id>https://www.cesarsotovalero.net/blog/building-genai-applications-today</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/building-genai-applications-today.html"><![CDATA[<figure class="badge"><a href="&lt;https://commons.wikimedia.org/wiki/File:NMA.0039209_Emigration._Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg&gt;"><img src="/img/badges/Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg" style="width:140px;max-width:100%;" alt="badge" /></a></figure>
 
 <p>The AI fever has been around for a while now (4 years as I can count).
 It reminds me of the <a href="https://en.wikipedia.org/wiki/Gold_rush">gold rush</a> and subsequent <a href="https://en.wikipedia.org/wiki/California_Dream">Californian Dream</a> from the 19th century.
@@ -1072,7 +1497,7 @@ Customizing and fine-tuning models allows them to meet the specific needs of you
   <li><a href="https://huyenchip.com/2025/01/16/ai-engineering-pitfalls.html">:globe_with_meridians: Chip Huyen: Common pitfalls when building generative AI applications</a></li>
   <li><a href="https://huyenchip.com/llama-police">:globe_with_meridians: Chip Huyen: List of Open Source LLM Tools</a></li>
   <li><a href="https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders">:globe_with_meridians: 101 Real-World Generative AI Use Cases from Industry Leaders</a></li>
-</ul>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn't, and why. If you're looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn't. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Why GenAI Will NOT Replace Software Engineers</title><link href="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html" rel="alternate" type="text/html" title="Why GenAI Will NOT Replace Software Engineers" /><published>2024-08-19T00:00:00-07:00</published><updated>2025-07-15T05:24:50-07:00</updated><id>https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html"><![CDATA[<p>The field of Generative Artificial Intelligence (GenAI) has made incredible strides in recent years, particularly in <a href="https://ml4code.github.io/papers.html">source code analysis and generation</a>.<br />
+</ul>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Generative AI has taken the world by storm, offering endless opportunities for innovation. But as with any new technology, there are plenty of pitfalls to avoid. In this post, I dive into the current state of AI startups, shedding light on what works, what doesn't, and why. If you're looking to build something with AI, let’s step back and reflect on where it makes sense to innovate and where it doesn't. From avoiding overhyped general-purpose chatbots to understanding the limitations of AI in niche markets, this post offers practical insights to help you navigate the AI hype more effectively.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-11-17/twisted-revolver_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Why GenAI Will NOT Replace Software Engineers</title><link href="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html" rel="alternate" type="text/html" title="Why GenAI Will NOT Replace Software Engineers" /><published>2024-08-19T00:00:00-07:00</published><updated>2025-07-15T07:10:24-07:00</updated><id>https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html"><![CDATA[<p>The field of Generative Artificial Intelligence (GenAI) has made incredible strides in recent years, particularly in <a href="https://ml4code.github.io/papers.html">source code analysis and generation</a>.<br />
 The excitement is well justified.<br />
 Today’s GenAI systems can perform common software development tasks more efficiently than many human engineers.</p>
 
@@ -1450,7 +1875,7 @@ The main task of engineers is to balance conflicting priorities, adapt to ever-c
       <p>I still remember Dreamweaver from <a href="https://en.wikipedia.org/wiki/Macromedia">Macromedia</a> (later purchased by Adobe). It was a no code app that promised to make web development just a matter of throwing components to a canvas. It didn’t work out as expected, and today we are still writing HTML, CSS and JavaScript, ouch! <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[GenAI systems are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around GenAI replacing software engineers, are our jobs really at risk? In this article, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. I discuss the actual potential of GenAI to assist in common development activities, and where it still falls short when it comes to creative problem solving and human intuition.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Not-So-Strange Case of Cargo Cult in Computer Science Research</title><link href="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html" rel="alternate" type="text/html" title="The Not-So-Strange Case of Cargo Cult in Computer Science Research" /><published>2024-07-13T00:00:00-07:00</published><updated>2025-07-15T05:24:50-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html"><![CDATA[<aside class="youtube">
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[GenAI systems are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around GenAI replacing software engineers, are our jobs really at risk? In this article, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. I discuss the actual potential of GenAI to assist in common development activities, and where it still falls short when it comes to creative problem solving and human intuition.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-08-19/armillary-sphere_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Not-So-Strange Case of Cargo Cult in Computer Science Research</title><link href="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html" rel="alternate" type="text/html" title="The Not-So-Strange Case of Cargo Cult in Computer Science Research" /><published>2024-07-13T00:00:00-07:00</published><updated>2025-07-15T07:10:24-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html"><![CDATA[<aside class="youtube">
         <a href="https://www.youtube.com/watch?v=N7pY8VAt6g4"><div class="box">
         <img src="https://i.ytimg.com/vi/N7pY8VAt6g4/mqdefault.jpg" alt="YouTube video #N7pY8VAt6g4" />
         <div class="play">
@@ -1698,7 +2123,7 @@ Here are some key points:</p>
       <p>The Association of Computing Machinery (ACM) has introduced a <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">badging system</a> for software artifacts since 2020. I still find it difficult to distinguish the difference between a “repeatable,” “reproducible,” and “replicable” experiment or tool. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[Arguably, computers and faster communication systems have changed the world more than any other technology. Yet there have been many scientific failures along the way, some prominent, many minor, and a widening gap between aspirations and reality. This article discusses the problem of pseudoscience in computer science. I discuss Richard Feynman's coined term "cargo cult science," as he said: "Everywhere I see computer scientists that look like they are working on the right thing, but the thing actually doesn't work." I offer guidance on how to stay away of this dangerous practice, from a scientific standpoint.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Some Things to Remember Before Acting Pretentiously</title><link href="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html" rel="alternate" type="text/html" title="Some Things to Remember Before Acting Pretentiously" /><published>2024-06-07T00:00:00-07:00</published><updated>2025-07-15T05:24:50-07:00</updated><id>https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html"><![CDATA[<p>A few days ago, I was asked: <em>“Where do you see yourself in 10 or 20 years?”</em>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[Arguably, computers and faster communication systems have changed the world more than any other technology. Yet there have been many scientific failures along the way, some prominent, many minor, and a widening gap between aspirations and reality. This article discusses the problem of pseudoscience in computer science. I discuss Richard Feynman's coined term "cargo cult science," as he said: "Everywhere I see computer scientists that look like they are working on the right thing, but the thing actually doesn't work." I offer guidance on how to stay away of this dangerous practice, from a scientific standpoint.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-07-13/vortice-art_cover.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Some Things to Remember Before Acting Pretentiously</title><link href="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html" rel="alternate" type="text/html" title="Some Things to Remember Before Acting Pretentiously" /><published>2024-06-07T00:00:00-07:00</published><updated>2025-07-15T07:10:24-07:00</updated><id>https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/some-things-to-remember-before-acting-pretentiously.html"><![CDATA[<p>A few days ago, I was asked: <em>“Where do you see yourself in 10 or 20 years?”</em>
 I replied:
 <em>“I would like to get some sort of recognition for my contributions… maybe to be known as an expert in something, or someone who is consulted and listened to before important decisions are made.”</em>
 Now that I think about it, I realize my answer was both bold and pretentious.
@@ -1901,7 +2326,7 @@ Seriously.</p>
       <p>I strongly believe in the possibilities of science as a life changer. Right now, there are many opportunities in academic research for people around the world to change their lives. In fact, pursuing academic research has changed my life! <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[A few days ago, I had a conversation about my ambitions for the future. At one point, I mentioned that I would like to achieve something remarkable and gain public recognition for it. In retrospect, my answer was quite pretentious. After reflecting deeply on this topic, I realized that what truly drives me is the desire to help and inspire others so they can achieve great things. This blog post lists all the thoughts that crossed my mind as I came to this conclusion.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Last Paper’s Myth</title><link href="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html" rel="alternate" type="text/html" title="The Last Paper’s Myth" /><published>2024-05-05T00:00:00-07:00</published><updated>2025-07-15T05:24:50-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-last-paper-myth</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html"><![CDATA[<aside class="youtube">
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[A few days ago, I had a conversation about my ambitions for the future. At one point, I mentioned that I would like to achieve something remarkable and gain public recognition for it. In retrospect, my answer was quite pretentious. After reflecting deeply on this topic, I realized that what truly drives me is the desire to help and inspire others so they can achieve great things. This blog post lists all the thoughts that crossed my mind as I came to this conclusion.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-06-07/remember-your-roots_cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Last Paper’s Myth</title><link href="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html" rel="alternate" type="text/html" title="The Last Paper’s Myth" /><published>2024-05-05T00:00:00-07:00</published><updated>2025-07-15T07:10:24-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-last-paper-myth</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-last-paper-myth.html"><![CDATA[<aside class="youtube">
         <a href="https://www.youtube.com/watch?v=-3txwKTHe4Y"><div class="box">
         <img src="https://i.ytimg.com/vi/-3txwKTHe4Y/mqdefault.jpg" alt="YouTube video #-3txwKTHe4Y" />
         <div class="play">
@@ -2157,7 +2582,7 @@ In any case, I believe that clear and measurable expectations should be put in p
       <p>Not to forget that academic supervisors are technically <em>forced</em> to play the academic game. They have (in most cases) temporary contracts, are underpaid, and have a heavy workload. This is such a dense topic that deserves a blog post on its own. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[The "last paper myth" emerges once academic supervisors realize that a student is about to earn their PhD and leave. It's one last stronghold for supervisors to capitalize on the time and effort they have invested in their students' scientific training. This relentless push not only detracts from the true purpose of academic research but also imposes significant personal and mental strain on the most successful students. This article explores the expectations versus reality at the end of the PhD journey and provides actionable insights for students on how to identify, address, and navigate this particular pressure.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On the Rise, Decline, and Persistence of Web Technologies</title><link href="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html" rel="alternate" type="text/html" title="On the Rise, Decline, and Persistence of Web Technologies" /><published>2024-04-27T00:00:00-07:00</published><updated>2025-07-15T05:24:50-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html"><![CDATA[<p>I’ve been doing some frontend web development lately as part of my daily job.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="science" /><summary type="html"><![CDATA[The "last paper myth" emerges once academic supervisors realize that a student is about to earn their PhD and leave. It's one last stronghold for supervisors to capitalize on the time and effort they have invested in their students' scientific training. This relentless push not only detracts from the true purpose of academic research but also imposes significant personal and mental strain on the most successful students. This article explores the expectations versus reality at the end of the PhD journey and provides actionable insights for students on how to identify, address, and navigate this particular pressure.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On the Rise, Decline, and Persistence of Web Technologies</title><link href="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html" rel="alternate" type="text/html" title="On the Rise, Decline, and Persistence of Web Technologies" /><published>2024-04-27T00:00:00-07:00</published><updated>2025-07-15T07:10:24-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html"><![CDATA[<p>I’ve been doing some frontend web development lately as part of my daily job.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
 Along the way, I’ve been thinking on how the whole thing is built under the hood. 
 The web technologies that we all use every day have changed and evolved over time.
 While digging into this topic, I realized that some of the underlying technical solutions that fuel the World Wide Web are really brilliant, while others are still a mess.
@@ -2956,7 +3381,7 @@ Moreover, we’ve learned that moving away from JavaScript is still quite challe
       <p>HTML and CSS are not programming languages. There’s no such as thing as an HTML programmer (nor anyone proud to be called as such). <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="web" /><summary type="html"><![CDATA[The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn't pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web's history. Those who don't know tech history are doomed to repeat past engineering mistakes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Most Relevant Technical Skill in My Career</title><link href="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html" rel="alternate" type="text/html" title="The Most Relevant Technical Skill in My Career" /><published>2024-03-30T00:00:00-07:00</published><updated>2025-07-15T05:24:50-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html"><![CDATA[<p>Eleven years ago (do you still remember 2013?), I was in the last year of my undergraduate studies.
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="web" /><summary type="html"><![CDATA[The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn't pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web's history. Those who don't know tech history are doomed to repeat past engineering mistakes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Most Relevant Technical Skill in My Career</title><link href="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html" rel="alternate" type="text/html" title="The Most Relevant Technical Skill in My Career" /><published>2024-03-30T00:00:00-07:00</published><updated>2025-07-15T07:10:24-07:00</updated><id>https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/the-most-relevant-technical-skill-in-my-career.html"><![CDATA[<p>Eleven years ago (do you still remember 2013?), I was in the last year of my undergraduate studies.
 I started working on my thesis and soon realized that, to earn my diploma, I had to collect, analyze, and summarize data in a specific way.
 Because at the end of the day, a thesis needs content, and content comes from data derived from some kind of experiment.
 However, none of these skills were taught to me during the 5 years of my bachelor’s curriculum.
@@ -3317,289 +3742,4 @@ Have you ever thought about it?</p>
       <p>I’ve peer-reviewed <a href="../service.html">quite a few</a> research papers, almost none of them include the code used to generate the figures in the paper. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[Have you ever wonder which is most relevant technical skill in your career? It's not necessarily a programming language or the latest framework. For me, it is Exploratory Data Analysis (EDA). Why? Because being able to manipulate and find relevant information from various data sources has opened me doors to new opportunities in both academia and industry. This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AI Doesn’t Make Me the Same Coffee</title><link href="https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html" rel="alternate" type="text/html" title="AI Doesn’t Make Me the Same Coffee" /><published>2024-02-13T00:00:00-08:00</published><updated>2025-07-15T05:24:50-07:00</updated><id>https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee</id><content type="html" xml:base="https://www.cesarsotovalero.net/blog/ai-doesnt-make-me-the-same-coffee.html"><![CDATA[<p>I started to consume and appreciate coffee after I moved to Sweden in 2018.
-Coffee is a key part of the Swedish culture of <em>fika</em>, and it’s used as a way to combat the dark winter <del>days</del> months.
-For years, I’ve been considering the idea of buying a fancy coffee machine.
-You know, like those that grind different beans to make various types of coffee brews.
-My main motivation was to save time while having a wider range of coffee choices.
-However, upon reflection, I ended up understanding that the experience of making coffee is as important to me as the coffee itself.
-It turns out that I actually enjoy buying the coffee beans, grinding them by hand, putting the coffee powder in my <a href="https://en.wikipedia.org/wiki/Moka_pot">moka pot</a>, and taking the time to wait for the dark potion to be ready.
-The whole experience is a time investment, yes, but I noticed that it’s also good for reducing the frequency of my coffee consumption.
-So, modern coffee machines help to save time, but I still prefer making coffee myself.
-The reason is that I enjoy the process, not just the result.
-This situation made me think about the role of “the human experience” on many of the common things we do every day, and how AI is going to influence or change them in the future.
-The rest of this article is my perspective on this matter, and where I believe current advances in AI are leading us.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
-
-<figure class="jb_picture">
-  
-
-
-
-<img width="" style="border: ;" src="/assets/resized/manual-coffee-making-process-landscape-640x373.jpg" alt="Me grinding my coffee manually" data-srcset="/assets/resized/manual-coffee-making-process-landscape-640x373.jpg 640w,/assets/resized/manual-coffee-making-process-landscape-768x448.jpg 768w,/assets/resized/manual-coffee-making-process-landscape-1024x597.jpg 1024w,/assets/resized/manual-coffee-making-process-landscape-1366x797.jpg 1366w,/assets/resized/manual-coffee-making-process-landscape-1600x933.jpg 1600w," class="blur-up lazyautosizes lazyload" />
-  <figcaption class="stroke"> 
-    &#169; My manual coffee-making process is a significant time investment. However, it enhances the experience while simultaneously reducing the frequency of my coffee consumption. Will the efficiencies promised by AI deliver the same joy? 
-  </figcaption>
-</figure>
-
-<p>Last week I participated in <a href="https://www.jfokus.se/talks/1661">Jfokus 2024</a> as a speaker.<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>
-The main topic of the conference was the latest advances in AI and the impact of this technology on the software industry. 
-I noticed a general acceptance of the huge potential of AI, and the many ways in which it could/would make everything more efficient for developers. 
-For many of us, it looks like writing code, testing, deploying, documenting, or just creating any kind of digital content will be AI-assisted in the coming years.
-So, there’s a <a href="https://youtu.be/rENT1fDR69I?si=pH27Skp26xXGGp2D">notable concern</a> regarding the future market need for human developers.
-Honestly, I find the mere question <a href="../blog/surviving-the-ai-revolution-as-a-software-engineer">freaking scary</a>, not only because I’m a developer myself, but also because I believe that coding is a pretty advanced skill.</p>
-
-<aside class="quote">
-    <em>“Coding is among the latest skills nurtured by our modern civilization.”</em>
-</aside>
-
-<p>Beyond coding, today’s AI threatens to automate every aspect of our lives.
-One of AI’s major promises is to free us from seemingly mundane tasks.
-However, I’m worried that too much automation could relegate the “human touch” in our daily activities to second place.
-Activities and chores like making coffee, serving wine, cooking, painting, writing, playing music, making love, or chatting with friends could lose their essence.
-In particular, at its core, coding is a human activity in which people contribute by following conventions (a.k.a Git rules).</p>
-
-<p>After a though or two, I realize that in most aspects of my life, I’m not looking for perfection, I’m rather seeking for the experience.
-For example, I had a <a href="https://www.linkedin.com/posts/cesarsotovalero_jfokus2024-javacommunity-success-activity-7161289069065338880-ptRZ?utm_source=share&amp;utm_medium=member_desktop">great time</a> at Jfokus this year.
-I met a lot of people, and I had a good share of fun because of that.
-I could have saved some time and money by watching the talks on YouTube later.
-However, I believe there is much less value in doing that because the act of being there, physically, is a big part of the experience.
-Nevertheless, I’m afraid that a future fueled by AI solutions could irremediably change my current perception.</p>
-
-<h1 id="promises">Promises</h1>
-
-<p>AI promises to propel our species to the next level, whatever that may be.
-At the individual level, it involves freeing us from mundane tasks so that we’ll have more free time to do what we want.
-Imagine the kinds of optimizations that an <a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence">Artificial General Intelligence (AGI)</a> system could offer us!
-It could, for example, give us exactly what we want without rambling, because it will “know” us better than we know ourselves (and I’m not talking about Google here).
-No pain in searching for the right food, the right music, the right movie, the right book, or the right partner… you get the idea.
-Our AI companion will provide the exact match for our needs, always.</p>
-
-<p>However, I’m afraid that technological advances of a similar scale have already happened before.
-And every time, we thought we were going to have more free time as well.
-Yet, we’re still working 40 hours a week, just about the same as our gatherer ancestors did.
-As humans, we witnessed the rise of agriculture 10,000 years ago, freeing us from the constant need to hunt and gather.
-We experienced the industrial revolution about 200 years ago freeing us from the need to produce everything by hand.
-We saw the rise of the internet in the last 30 years, eliminating the need to go to a physical library to find information.
-Do we have more free time now?
-Not really.
-The promise of human freedom through technological advancement didn’t materialize in the past, and it probably won’t happen now with AI either.</p>
-
-<p>I would like to be positive and believe that a 4-hour workweek is closer than ever.
-I want to believe in the potential of an AI that understands my strengths and weaknesses and helps me to be more efficient.
-But I’m not sure if that’s going to happen, or even if being more efficient would make me happier.
-Instead, I think that AI is going to reshape the way we interact with the world, meaning that some new behaviors will be added and others will be removed.
-There is one particular thing that I’m concerned about: lacking the human experience.</p>
-
-<h1 id="supremacy">Supremacy</h1>
-
-<p>AI systems have the potential to become ubiquitous.
-Unlike other breakthroughs, such as transportation and telephony, which required building infrastructure from scratch, AI solutions integrate seamlessly with our existing digital environment, including mobile phones and IoT devices.
-This means that, in the case of AI, the potential for adoption is broader than with any other technology.
-From a technological perspective, AI’s scalability is taken for granted.</p>
-
-<aside class="quote">
-    <em>“AI poses a solution to many problems, but we're merely starting to discover what we can solve with it.”</em>
-</aside>
-
-<p>AI models, like Large Language Models (LLMs), have absorbed the entirety of humanity’s open knowledge and learned from it.
-Unlike earlier machine learning techniques, they have begun to generate new knowledge from our existing internet corpus.
-The potential of these new models <a href="../blog/prompting-is-all-we-need">is simply astounding</a>.
-They are already being utilized to tackle problems that were once considered exceedingly challenging.</p>
-
-<p>Here are just three examples of applied AI that already impress me:</p>
-
-<ul>
-  <li><strong><a href="https://www.nextbigfuture.com/2024/01/figure-01-humanoid-bot-has-learned-to-make-coffee.html">FIGURE 01 Humanoid Robot</a></strong> that can learn how to make coffee.</li>
-  <li><strong><a href="https://blog.research.google/2024/01/amie-research-ai-system-for-diagnostic_12.html">AMIE</a></strong>, an AI system that outperforms human doctors in every field (including empathy).</li>
-  <li><strong><a href="https://github.com/features/copilot">GitHub Copilot</a></strong>, the world’s most widely adopted AI developer tool.</li>
-</ul>
-
-<p>Imagine a world where a supremely powerful AI system decides and manages everything.
-Our daily activities would become significantly more efficient.
-But from a human perspective, would such a world become more interesting?
-I’m not entirely sure.</p>
-
-<p>We have already witnessed machine learning systems assuming control over our decision-making processes.
-Take, for example, the <a href="https://research.netflix.com/research-area/recommendations">Netflix recommendation system</a>.
-It significantly enhances customer engagement, a boon from a business standpoint.
-However, its benefits for the wider audience remain questionable as more and more people are becoming addicted to the platform.
-Our ongoing struggles with social media addiction, and the phenomenon of the <a href="https://en.wikipedia.org/wiki/Filter_bubble">filter bubble</a>, underscore the complexities introduced by these technologies.
-AI with its vast capabilities is, in the same way, as powerful as it is dangerous.</p>
-
-<aside class="quote">
-    <em>“The moment I realize it's AI-generated content delivered by a human my interest wanes.”</em>
-</aside>
-
-<p>We now have <a href="https://en.wikipedia.org/wiki/VTuber">VTubers</a> and various forms of AI-generated “art” including music, books, movies, and games.
-Yet, to me, AI-generated content feels fundamentally different from creations born of traditional human creativity.
-Personally, I experience an aversion to AI-generated content.
-For some reason, the moment I realize it’s AI-generated my interest wanes.<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p>
-
-<p>I wish this could be a matter of personal choice.
-Do we even have the right to decide to what extent we want to engage with AI?
-Unfortunately, the answer is no.
-Much like the internet, AI is set to become ubiquitous.</p>
-
-<h1 id="acceptance">Acceptance</h1>
-
-<p>Let’s fully embrace the will of AI for a moment.
-Imagine it comes up with a decision, and we have no choice but to accept it.
-How comfortable would we be with the fact that we’re not in control anymore?
-Personally, I’m not very enthusiastic about the idea.</p>
-
-<aside class="quote">
-    <em>“Although we are used to accept human-made mistakes, we don't feel the same way about machine-made errors.”</em>
-</aside>
-
-<p>Take, for example, the use of AI in selecting the right candidate for a job.
-It might be better at it than humans in 80% of cases.
-But what about the remaining 20%?
-How can it understand the nuanced needs of a team or company?
-Or consider an AI deciding who goes to jail and who doesn’t.
-It might make the right decision in 99.9999% of cases, but what happens when it’s wrong?
-It’s concerning, and yet, it seems inevitable because it will be still better than human made decisions.</p>
-
-<p>On the other hand, the things that we thought were inherently human, like art and creativity, are now successfully generated using AI.
-If in doubt, just look at the stuff created by <a href="https://www.midjourney.com/home">Midjourney</a>.
-Very soon there will see AI creating 3D objects, full movies, and even entire virtual worlds.
-Take it or leave it, our civilization will never be the same.</p>
-
-<h1 id="the-human-experience">The Human Experience</h1>
-
-<aside class="quote">
-    <em>“[Some of] the best minds of my generation are thinking about how to make people click ads. That sucks.”</em>
-    <cite><br /> ― <a href="https://en.wikipedia.org/wiki/Jeff_Hammerbacher">Jeff Hammerbacher</a></cite>
-</aside>
-
-<p>My generation of Millennials have already chosen to make of <a href="https://en.wikipedia.org/wiki/Right_to_Internet_access">internet the new electricity</a>.
-Now, AI appears to be the brand-new internet.
-For example, today, you can buy any piece of clothing without ever meeting the seller in person.
-With AI, you could virtually bring back the seller.
-So, AI is simply taking it a step further, right?
-Wrong.</p>
-
-<p>If you go to a bar, you will soon encounter AI bartenders serving the right wine and telling you exactly what you want to hear.
-But as humans, we still crave discrepancies, those unexpected events that occur from time to time.
-Strangely, that’s what we will end up remembering!
-How much of the human experience are we sacrificing for these AI efficiencies?
-To what extent will these efficiencies become widely accepted?</p>
-
-<p>Something we learned from COVID-19 is that we still crave human interaction.
-People enjoy being with others.
-They watch videos on YouTube but still prefer attending live events.</p>
-
-<figure class="jb_picture">
-  
-
-
-
-<img width="50%" style="border: 1px solid #808080;" src="/assets/resized/true-wealth-640x640.jpg" alt="To remain human will be the true wealth" data-srcset="/assets/resized/true-wealth-640x640.jpg 640w,/assets/resized/true-wealth-768x768.jpg 768w,/assets/resized/true-wealth-1024x1024.jpg 1024w,/assets/resized/true-wealth-1366x1366.jpg 1366w," class="blur-up lazyautosizes lazyload" />
-  <figcaption class="stroke"> 
-    The key difference is freedom, not technology; to remain human will be the true wealth. 
-    <a href="https://www.linkedin.com/posts/linasbeliunas_this-sums-up-the-current-and-the-future-brilliantly-activity-7172327842406510592-dP9F?utm_source=share&amp;utm_medium=member_desktop">Source</a>
-  </figcaption>
-</figure>
-
-<p>As humans, we feel a sense of pride in whatever we do well.
-It is by overcoming struggles that we find our sense of fulfillment.
-In a future where the experience of overcoming troubles is minimized, what will be the source of our pride?</p>
-
-<h1 id="the-social-killer">The Social Killer</h1>
-
-<p>It’s always the case that we try to envision new technology in terms of practical use cases for good.
-However, history has shown that technology, although intended for good, often ends up being used for nefarious purposes.
-The reality, measured against history, is unlikely to be good.
-The question is: how do we minimize this?</p>
-
-<aside class="quote">
-    <em>“AI-powered systems menace to become the new social killer.”</em>
-</aside>
-
-<p>We are losing many social capabilities because of technology.
-Cell phones were once considered the best means to reduce human interaction.
-AI will surpass them in this regard.
-It will be interesting to see how AI elevates this to the next level.</p>
-
-<p>Why is social media so bad?
-Perhaps those in charge want us to become addicted to their platforms by leveraging <a href="https://positivepsychology.com/instant-gratification">instant gratification</a> tricks, so they can maintain their status.
-Corporations, driven by the pursuit of financial gain, seek any avenue to minimize costs and maximize revenue.
-On the other hand, at the business level humans are seen as a cost, whether in food production, software development, or car sales.
-Companies are already exploring how to eliminate human elements to optimize revenue, as that’s where they see the best way of cutting costs.
-But as a customer, I place high value on social interaction in many aspects of life.</p>
-
-<p>Non-verbal interaction is incredibly important.
-You meet a person and learn from the entire experience of being human.
-Children traditionally learn from their parents, but now they are learning from the internet.
-Thus, they start imitating what they see online, which is not beneficial.
-In a few years, we may see children speaking like an AI.</p>
-
-<h1 id="sparks-of-hope">Sparks of Hope</h1>
-
-<p>I would like to end this seemingly pessimistic article on a positive tone.
-Let’s be clear, AI has all the potential to augment human experiences to a level that we have never seen before.
-Perhaps, if AI frees up more of our time, we’ll have more opportunities to spend more time with other people.
-For example, I would rather go hiking or fishing in the mountains with my children in that case.</p>
-
-<figure class="jb_picture">
-  
-
-
-
-<img width="" style="border: 1px solid #808080;" src="/assets/resized/Brynjolfsson_on_the_turing_trap-640x378.png" alt="The turing trap" data-srcset="/assets/resized/Brynjolfsson_on_the_turing_trap-640x378.png 640w,/assets/resized/Brynjolfsson_on_the_turing_trap-768x453.png 768w,/assets/resized/Brynjolfsson_on_the_turing_trap-1024x604.png 1024w," class="blur-up lazyautosizes lazyload" />
-  <figcaption class="stroke"> 
-    &#169; According to <a href="https://www.amacad.org/sites/default/files/publication/downloads/Daedalus_Sp22_19_Brynjolfsson.pdf">Erik Brynjolfsson</a>, opportunities for augmenting humans are far greater than opportunities to automate existing tasks.
-  </figcaption>
-</figure>
-
-<p>AI will augment our current capabilities.
-It appears that we will not lose our jobs as long as we learn to use and leverage AI effectively.
-However, those who fail to adapt may be left behind.
-Consequently, a new set of jobs and opportunities will emerge, as has happened in the past.</p>
-
-<p>One example is the case of education.
-Today, we have human teachers managing classrooms with 10 or more children at a time.
-An AI that can provide a personalized education experience to every child in the world could be truly revolutionary.
-Every child could have a private teacher specifically trained to meet their needs.
-In this way, high-quality education would become accessible to everyone.</p>
-
-<aside class="quote">
-    <em>“For the most part of everything I do, I'm not looking for perfection, I'm rather seeking for the experience.”</em> 
-</aside>
-
-<p>Another example is architecture.
-AI has the potential to design beautiful and structurally sound architectures, far surpassing our conventional, unappealing square buildings.
-Thus, beautiful architecture will become more accessible, opening up possibilities for a wider range of creative people.</p>
-
-<p>However, my greatest hope for AI lies in its ability to reform politics.
-Imagine improving democracy by truly listening to and considering every voice, creating a true data-driven political system.
-For instance, AI could analyze the specific needs of every citizen and make optimal decisions at every level, from local neighborhoods to the entire country and beyond.
-This is a big hope for now, but it’s not impossible.</p>
-
-<h1 id="summary">Summary</h1>
-
-<aside class="quote">
-    <em>“I'm biased towards human interaction, AI will never replace the true human experience.”</em>
-</aside>
-
-<p>AI advances are going to change the way we interact with the world.
-With AI, we are going to have more free time and greater capabilities.
-One of its risks is of limiting even more our access to human experiences.
-If not properly managed, AI could become the new social killer in town.
-It’s all about the choices we make as a society.
-In any case, AI is already here, it’s not going anywhere, and it’s inevitable.</p>
-
-<h1 id="footnotes">Footnotes</h1>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1">
-      <p>This blog post has been written without AI assistance, which explains the broken writing style and rambling of thoughts. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:3">
-      <p>You can watch my Jfokus talk <a href="https://youtu.be/Xn1ShZPrw2o?si=88K_7LWn3s63o3HE">here</a>. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>If you ever use AI to generate content, you understand what I’m talking about. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="ai" /><summary type="html"><![CDATA[Advancements in AI are set to transform the way we interact with the world, offering increased free time and enhanced capabilities. However, if not carefully managed, AI poses risks such as reducing human experiences and potentially becoming a significant social issue.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-02-13/manual-coffee-making-process-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-02-13/manual-coffee-making-process-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>César Soto Valero</name><email>cesarsotovalero@gmail.com</email></author><category term="career" /><summary type="html"><![CDATA[Have you ever wonder which is most relevant technical skill in your career? It's not necessarily a programming language or the latest framework. For me, it is Exploratory Data Analysis (EDA). Why? Because being able to manipulate and find relevant information from various data sources has opened me doors to new opportunities in both academia and industry. This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" /><media:content medium="image" url="https://www.cesarsotovalero.net/img/posts/2024/2024-03-30/paint-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
