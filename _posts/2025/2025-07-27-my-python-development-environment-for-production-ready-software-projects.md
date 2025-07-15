@@ -1,7 +1,7 @@
 ---
 layout: post
-title: My Python Development Environment for Production-Ready Software Projects
-subtitle: A guide to setting up a production-ready Python dev environment
+title: I'm Fully Switching to Python
+subtitle: Here's my production-ready Python dev environment
 tags: tools
 description: |
   In this post, I share the tools, libraries, configs, and other integrations I use for building production-grade Python applications.
@@ -21,31 +21,53 @@ author: cesarsotovalero
 published: false
 ---
 
-I switched to writting production-ready Python code 6 months ago (I did use it before, but only for small scripts, I didn't treat it seriously).
-Before that, I was a mostly a Java/JavaScript/R developer.
-Why did I switch?
+I switched to writting production-ready Python code 6 months ago.
+Why?
 Because of AI, obviously.
-I wanted to build AI applications (RAG, Agents, image generation, etc.).
-Wether you and me like it or not, Python is the language of choice for that.
-In the last 6 months, I've realized the huge gap in building a Python dev environment that is production-ready, versus the usual Jupyter notebook or small script approach.
-Moreover, I realized that the Python ecosystem has matured a lot in the last few years, compared to the time I used it before.
-To the point that I'm now feeling a particular joy for the language.
+It's clear (to me) that big ~~money~~ opportunities are all over AI these days.
+Aand guess what's the de facto programming language for AI?
+Yep, it's that one.
+
+I've used Python it before, but only for small scripts.
+For example, [this script](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/scripts/fetch_all_youtube_videos.py) over here scrapes metadata fromm all the YouTube videos on my channel to create [this](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/_data/youtube-videos.json) JSON file that I latter use to nicely display [on a static page](https://www.cesarsotovalero.net/youtube) of this website.
+As you can [see here](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/.github/workflows/update-youtube-videos.yml), this little script runs in solo mode every Monday via GitHub actions.
+Doing this kind of thing in Python just way more convenient that, say, using Batch.
+Not only because the syntaxis more human friendly, but also because the interpreter is natively integrated in all Unix distros.
+Isn't that cool!
+
+So yeah, Python is powerful.
+But I didn't treat it seriously just util recently.[^3]
+When I wanted to build AI applications (RAG, Agents, GenAI tools, etc.) for the *real world*.
+Then I realized that wether you like it or not, Python is the language of choice for that.
+
+So I decided to give it a serious try, and to my grate surprice I've found that Python, and all things around it, have really improved a lot in the last decades.
+
+Just three examples:
+
+1. Python has created a very complete ecosystem of libraries and tools for processing and analysyng data.[^4]
+2. Python has got faster with optimized stactic compilers like [Cython](https://cython.org/).
+3. Python has made a good job in hiding its legacy ugliness (think `__init__`, `__new__`, etc.) to edulcorate developers ~~with good taste~~.
+
+Thanks to this and many other things, I'm now feeling a particular joy for the language.
+
+However, along this time, I've found that there is still a big gap between using Python for *production-ready apps*, versus the usual workflow for Jupyter notebook or script workflows.
 In this post, I share the tools, libraries, configs, and other integrations that bring me joy and that I now use for building production-grade Python applications.
+This post is highly biases to the tools that I personally use today, and if you think I'm missing some some gem please let me/us know (preferibly in the comment session below).
 
 # Project Structure
 
-I prefer to use a monorepo (with backend and frontend) structure for my projects.[^1]
+I prefer to use a monorepo (with backend and frontend) structure for my Python projects.[^1]
 
 Why?
 
-- Because of my bad memory: I don't like code parts scattered across multiple repositories (it's not search friendly).
+- First and foremost, because of my bad memory: I don't like code parts scattered across multiple repositories (it's not search friendly).
 - Because multi-repo is unnecessary: I believe that if a project grows to the point that it needs to be split into multiple repositories, then it's a sign of over-engineering.
-- Because I'm lazy: I like to keep things as simple as possible, compile, test, containerize and deploy from a single location.
+- Because I'm lazy: I like to keep things as simple as possible, compile, test, containerize and deploy from a single location.[^5]
 
-I would like to have a tool that generates the project structure for me, but I haven't found one that I like yet.
-So I use a custom template that I created, which is inspired by the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org/).
+I would like to have a tool that generates the project structure for me, but I haven't found one that fits me yet.
+In the past, I used [CCDS](https://cookiecutter-data-science.drivendata.org/), a project initialization tool tool mostly for Data Science projects, it's very good but its not targeting developers as its core users.
 
-Here's the typical project structure that I use up to level 2 in the directory hierarchy, I'll go through each part later in this post:
+Here's the typical structure of a project with a frontend-backend architecture (I'll go through each subpart later in this post):
 
 ```markdown
 project/
@@ -58,9 +80,11 @@ project/
 │   ├── launch.json         # Debugging configurations for VSCode
 │   └── settings.json       # Project-specific settings for VSCode
 │
+├── docs/                   # Website and docs (a static SPA with MkDocs)
+│
 ├── project-api/            # Backend API for handling business logic and heavy processing
 │   ├── data/               # Directory for storing datasets or other static files
-│   ├── notebooks/          # Jupyter notebooks for experimentation and prototyping
+│   ├── notebooks/          # Jupyter notebooks for quick (and dirty) experimentation and prototyping
 │   ├── tools/              # Utility scripts and tools for development or deployment
 │   ├── src/                # Source code for the backend application
 │   │   ├── app/            # Main application code
@@ -80,29 +104,28 @@ project/
 ├── .pre-commit-config.yaml # Configuration for pre-commit hooks
 ├── CONTRIBUTING.md         # Guidelines for contributing to the project
 ├── docker-compose.yml      # Docker Compose configuration for multi-container setups
-├── INSTALL_AND_USAGE.md    # Instructions for installation and usage
-├── LICENSE                 # License information for the project
+├── LICENSE                 # License information for the project (I always choose MIT)
 ├── Makefile                # Automation tasks for building, testing, and deploying
-└── README.md               # Main documentation for the project
+└── README.md               # Main documentation for the project (main features, installation, and usage)
 ```
 
-First, `project` is the root directory and it should be a short name, ideally less than 10 characters long, no snake_case (separation with hyphens is OK to me).
-Note that the project is self-contained.
-Meaning that it includes documentation, build/deployment infrastructure, and other necessary files to run it standalone.
+First, `project` is the root directory.
+I like short names for projects, ideally less than 10 characters long, no snake_case (separation with hyphens is OK to me).
+Note that the project should be self-contained, meaning that it includes documentation, build/deployment infrastructure, and other necessary files to run it standalone.
 
-It's important not to do any heavy data processing steps in the `project-ui`, as we adopted a frontend-backend architecture.
+It's important not to do any heavy data processing steps in the `project-ui`, as I opted to separate the frontend stuff from the backend.
 Instead, I choose to make HTTP requests to the `project-api` server that contains the Python code.
 Like this, we keep the browser application light while delegating the heavy lifting and business logic to the server.
 
-<https://docs.astral.sh/uv/guides/projects/#creating-a-new-project>
+There is a `__init__.py` file in `project-api/src/app` to indicate that `app` is a Python module (it can be imported from other modules).
 
-# Python Specifics
+# Python Toolbox
 
 ## uv
 
 I use [uv](https://github.com/astral-sh/uv) as my Python package manager and build tool (it's all I need to install and manage dependencies).
 
-Here are the core commands and how I set it up:
+Here are the core commands to set it up:
 
 ```bash
 # Install uv globally if not already installed
@@ -111,38 +134,53 @@ curl -sSfL https://astral.sh/install.sh | sh
 uv init project-api
 # Add some dependencies into the project and update pyproject.toml
 uv add --dev pytest ruff pre-commit mkdocs gitleaks fastapi pydantic
-# Updates the lock file with the latest versions of the dependencies (creates a virtual environment if not already created)
+# Update the lock file with the latest versions of the dependencies (creates a .venv if not already created)
 uv sync
-# Activate the virtual environment
+# Activate the .venv
 uv venv activate
-# Run the project
-uv run main.py
 ```
 
-Note that most important file is `pyproject.toml`, which [contains](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) the project metadata and dependencies.[^2]
+Note that the most important file for uv is `pyproject.toml`.
+This file [contains](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) metadata and the dependencies dependencies that are required to build and run the project.[^2]
 
-## Ruff
+## ruff
 
-[Ruff](https://github.com/astral-sh/ruff) is a fast Python linter and code formatter, designed to help you write clean and maintainable code.
-It combines `isort`, `flake8`, `autoflake`, into a single tool that can be run with a single command and follows the [PEP 8](https://pep8.org/) style guide out-of-the-box.
+I really like [ruff](https://github.com/astral-sh/ruff).
+It's a super fast Python linter and code formatter, designed to help lazy developers like me to clean and maintainable our codebases.
+Ruff combines `isort`, `flake8`, `autoflake`, and similars into a single tool that can be run with a single command:
 
-<https://docs.astral.sh/ty/installation/>
-uv add --dev ty
+```bash
+ruff check path/to/code/   # Lint all files in `/path/to/code` (and any subdirectories).
+ruff format path/to/code/  # Format all files in `/path/to/code` (and any subdirectories).
+```
+
+Note that ruff supports the [PEP 8](https://pep8.org/) style guide out-of-the-box.
 
 ## ty
 
-[Ty](https://github.com/astral-sh/ty) is a type checker for Python, designed to work seamlessly with your existing codebase.
-It helps you catch type errors early in the development process, improving code quality and reducing the likelihood of runtime errors.
+[ty](https://github.com/astral-sh/ty) is a type checker for Python.
+It's supposed to be the upgraded version of [typing](https://docs.python.org/3/library/typing.html) (a popular Python library to make the language statically typed)
+I think typing really helps me to catch type errors early in the development process, I actually don't care about having to writ more code, and rather pefer improving code quality and reducing the likelihood of runtime errors.
+
+**NOTE:** At the time of writing, ty is still in early in development by Astral (the same company behind uv and ruff), but I'm usinging it and couldn't find any noticeable flaw just yet.
+
+## pytest
+
+[Pytest](https://docs.pytest.org/en/stable/) is THE testing framework for Python.
+Writing simple and scalable test cases with it is just super easy.
+It supports fixtures, parameterized tests, and has a rich ecosystem of plugins.
+Just create a file `test_<unit or module name>.py` in `project-api/src/app/tests/`, and run `uv run pytest` to execute the tests.
+That's it!
 
 ## Pydantic
 
 [Pydantic](https://pydantic-docs.helpmanual.io/) is a data validation and settings management library for Python.
-It allows manage configuration settings like API keys, database connection details, or model parameters (hardcoding these values is a very bad practice).
+It allows managing all kinds of configuration settings, such as API keys, database connection details, or model parameters (hardcoding these values is a very bad practice, btw).
 
-[Pydantic Settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/) allows to define application configurations using Pydantic models.
+In particular [Pydantic Settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/) allows to define application configurations using Pydantic models.
 It can automatically load settings from environment variables or special `.env` files, validate their types, and make them easily accessible in your code.
 
-Here's an example of how to use Pydantic Settings:
+Here's an illustrative example:
 
 ```python
 from pydantic import BaseSettings
@@ -158,21 +196,17 @@ settings = Settings()
 ```
 
 Now, when you run this code, Pydantic will automatically load the values of `api_key` and `db_url` from the `.env` file or environment variables.
-And this values will be accessible and validated according to the types defined in the `Settings` model.
+And these values will be accessible and validated according to the types defined in the `Settings` model.
+Just great!
 
 ## MkDocs
 
-I use [MkDocs](https://www.mkdocs.org/) for documentation, which is a static
+I use [MkDocs](https://www.mkdocs.org/) for documentation and static generation of the website for the project.[^6]
+I like to copy the aesthetic that I like from other similar projects and make a simple set of modifications (like changing fonts and colors).
 
 ## FastAPI
 
 I use [FastAPI](https://fastapi.tiangolo.com/) for building APIs.
-
-## Pytest
-
-[Pytest](https://docs.pytest.org/en/stable/) is a testing framework for Python that makes it easy to write simple and scalable test cases.
-It supports fixtures, parameterized tests, and has a rich ecosystem of plugins.
-Make a file `test_<unit or module name>.py`, place it `project-api/src/app/tests/`, and run `uv run pytest` to execute the tests.
 
 ## Dataclasses
 
@@ -376,3 +410,11 @@ CMD ["/app/.venv/bin/fastapi", "run", "project/infrastructure/api.py", "--port",
 [^1]: Don't get me wrong, I understand that there are cases where a multi-repo structure is necessary, like when you have multiple teams working on different parts of the project, or when you need to share code across different projects.
 
 [^2]: The `pyproject.toml` file is similar to `package.json` in Node.js or `pom.xml` in Java.
+
+[^3]: If you know me, you know that I used to be a mostly a Java/JavaScript/R kind of guy.
+
+[^4]: For example, today [Jupyter](https://jupyter.org/) is bundled in almost every single cloud providers as the de facto tool for interactive data science and scientific computing.
+
+[^5]: I believe in avoiding premature decomposition, if a codebase is less than, say, half million LoC, putting a network layer (as API calls) over it only makes maitenance a pain for ~~non-Amazon~~ rational developers.
+
+[^6]: By the way, I think every single project on GitHub should have its own website (it's just extremely easy via [GitHub pages](https://pages.github.com/)), so no excuses.
