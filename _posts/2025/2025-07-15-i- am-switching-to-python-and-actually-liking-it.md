@@ -49,7 +49,7 @@ Here're just three examples:
 
 Thanks to this and many other things, I'm now feeling a particular joy for the language.
 
-However, during this time, I’ve found that there’s still a big gap between using Python for "production-ready apps"[^7] vs. the usual Jupyter notebook or script-based workflow.
+However, during this time, I’ve found that there’s still a big gap between using Python for "production-ready"[^7] apps vs. the usual Jupyter notebook or script-based workflow.
 
 So in this post, I share the tools, libraries, configs, and other integrations that bring me joy, and that I now use for building my Python applications.
 
@@ -130,25 +130,19 @@ I use [uv](https://github.com/astral-sh/uv) as my Python package manager and bui
 Here are the core commands to set it up:
 
 {% highlight bash linenos %}
-
 # Install uv globally if not already installed
-
 curl -sSfL <https://astral.sh/install.sh> | sh
 
 # Initialize a new project (adds .gitignore, .python-version, pyproject.toml, etc.)
-
 uv init project-api
 
 # Add some dependencies into the project and update pyproject.toml
-
 uv add --dev pytest ruff pre-commit mkdocs gitleaks fastapi pydantic
 
 # Update the lock file with the latest versions of the dependencies (creates a .venv if not already created)
-
 uv sync
 
 # Activate the .venv
-
 uv venv activate
 {% endhighlight %}
 
@@ -162,8 +156,10 @@ It’s a super-fast Python linter and code formatter, designed to help lazy deve
 Ruff combines `isort`, `flake8`, `autoflake`, and similar tools into a single command-line interface:
 
 {% highlight bash linenos %}
-ruff check path/to/code/   # Lint all files in `/path/to/code` (and any subdirectories).
-ruff format path/to/code/  # Format all files in `/path/to/code` (and any subdirectories).
+# Lint all files in `/path/to/code` (and any subdirectories).
+ruff check path/to/code/
+# Format all files in `/path/to/code` (and any subdirectories).
+ruff format path/to/code/
 {% endhighlight %}
 
 Ruff supports the [PEP 8](https://pep8.org/) style guide out of the box.
@@ -319,17 +315,17 @@ Here’s a sample `.pre-commit-config.yaml` file that I use:
 
 {% highlight yaml linenos %}
 repos:
-
-- repo: <https://github.com/astral-sh/ruff-pre-commit>
-      rev: v0.12.3 # Ruff version
-      hooks:
-  - id: ruff-check  # Run the linter
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.3  # Ruff version.
+    hooks:
+      - id: ruff-check # Run the linter.
         args: [ --fix ]
-  - id: ruff-format # Run the formatter
-- repo: <https://github.com/gitleaks/gitleaks>
-      rev: v8.27.2
-      hooks:
-  - id: gitleaks
+      - id: ruff-format  # Run the formatter.
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.27.2
+    hooks:
+      - id: gitleaks
 {% endhighlight %}
 
 # Infrastructure Management
