@@ -315,6 +315,23 @@ I use [pre-commit](https://pre-commit.com/) to run checks and format code before
 It helps ensure that the code is always in a good state and follows the project’s coding standards.
 For example, I use it to run [ruff-pre-commit](https://github.com/astral-sh/ruff-pre-commit) and `gitleaks` before committing my code.
 
+Here’s a sample `.pre-commit-config.yaml` file that I use:
+
+{% highlight yaml linenos %}
+repos:
+
+- repo: <https://github.com/astral-sh/ruff-pre-commit>
+      rev: v0.12.3 # Ruff version
+      hooks:
+  - id: ruff-check  # Run the linter
+        args: [ --fix ]
+  - id: ruff-format # Run the formatter
+- repo: <https://github.com/gitleaks/gitleaks>
+      rev: v8.27.2
+      hooks:
+  - id: gitleaks
+{% endhighlight %}
+
 # Infrastructure Management
 
 ## Make
