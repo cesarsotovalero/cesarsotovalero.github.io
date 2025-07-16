@@ -37,7 +37,7 @@ Not only because the syntax is more human-friendly, but also because the Python 
 Isn’t that cool?
 
 So yeah, Python is powerful, and it couples very well with the now ubiquitous [VSCode](https://code.visualstudio.com/) editor.
-But I didn’t treat it seriously until recently,[^3] it was just after I wanted to build AI applications (RAG, Agents, GenAI tools, etc.) for the "real world" that I realized that whether you like it or not, Python is the language of choice for that matters.
+But I didn’t treat it seriously until recently,[^3] it was just after I wanted to build AI applications (RAG, Agents, GenAI tools, etc.) for the "real world" that I realized that whether you like it or not, Python is the language of choice for those matters.
 
 So I decided to give it a serious try, and to my great surprise, I’ve found that Python, and everything around it, has really improved a lot over the last decades.
 
@@ -45,7 +45,7 @@ Here're just three examples:
 
 1. Python has created a very complete ecosystem of libraries and tools for processing and analyzing data.[^4]
 2. Python has gotten faster with optimized static compilers like [Cython](https://cython.org/).
-3. Python has done a good job of hiding its legacy ugliness (such as `__init__`, `__new__`, and similar aberrations), swettening its syntax to accomodate developers ~~with good taste~~.
+3. Python has done a good job of hiding its legacy ugliness (such as `__init__`, `__new__`, and similar aberrations), sweetening its syntax to accommodate developers ~~with good taste~~.
 
 Thanks to this and many other things, I'm now feeling a particular joy for the language.
 
@@ -62,7 +62,7 @@ I prefer to use a [monorepo](https://en.wikipedia.org/wiki/Monorepo) structure (
 Why?
 
 1. Because of my bad memory: I don't like code parts scattered across multiple repositories (it's definitely not search-friendly).
-2. Because having multiple repost is mostly unnecessary: I'm just one guy, and I believe that if a project grows to the point that it needs to be split into multiple repositories, then it's a sign of over-engineering.
+2. Because having multiple repos is mostly unnecessary: I'm just one guy, and I believe that if a project grows to the point that it needs to be split into multiple repositories, then it's a sign of over-engineering.
 3. Because I'm lazy: I like to keep things as simple as possible, compile, test, containerize, and deploy from a single location.[^5]
 
 I would like to have a tool that generates the project structure for me, but I haven't found one that fits me yet.
@@ -220,7 +220,7 @@ I’m not a designer, so I prefer to just copy an aesthetically pleasing design 
 ## FastAPI
 
 I use [FastAPI](https://fastapi.tiangolo.com/) for building APIs.
-It has been a game changer for me, it allows for easy creation of RESTful APIs with automatic validation, serialization, and documentation.
+It has been a game changer for me; it allows for easy creation of RESTful APIs with automatic validation, serialization, and documentation.
 FastAPI is built on top of Starlette and Pydantic, which means it provides excellent performance and type safety.
 It’s fast, easy to use, and integrates seamlessly with Pydantic for data validation.
 
