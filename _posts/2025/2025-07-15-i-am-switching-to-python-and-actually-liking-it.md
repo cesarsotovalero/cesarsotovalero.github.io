@@ -160,6 +160,7 @@ Ruff combines `isort`, `flake8`, `autoflake`, and similar tools into a single co
 {% highlight bash linenos %}
 # Lint all files in `/path/to/code` (and any subdirectories).
 ruff check path/to/code/
+
 # Format all files in `/path/to/code` (and any subdirectories).
 ruff format path/to/code/
 {% endhighlight %}

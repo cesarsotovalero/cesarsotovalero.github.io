@@ -16,14 +16,16 @@ published: true
 ---
 
 It's 2021, and the job market has crashed due to a ghastly [global pandemic](https://www.nytimes.com/interactive/2020/06/10/world/coronavirus-history.html).
-At the same time, one particular job has taken over an idealized professional place: the computer programmer.
+At the same time, one particular job has taken over an idealized professional place: the "computer programmer."
 They are perceived to be experts who know how to build, fix, and deploy software artifacts.
 Most of them prefer to live in airtight environments, where the pieces of the software puzzle to be solved can be more easily isolated.
-That being said, at no other time in history has a technology-based job being so courted, demanded, highly paid.
-The reason: software is everywhere in today's world, and it doesn't write itself so far.
+That being said, at no other time in history has a technology-based profession being so courted, demanded, highly paid.
+The reason: software is everywhere in today's world, and it doesn't write itself (so far).
 However, with the advent of cloud computing and AI, the scenery may change soon for this profession.
-It's time for programmers to mutate into sociable software engineers, recap and re-adapt, and take advantage of the only thing that machines cannot overtake: our human nature.
-Otherwise, I believe misfit programmers will perish... for sure.
+So I think it's time for programmers to mutate into "sociable software engineers," recap and re-adapt, and take advantage of the only thing that machines cannot overtake: our human nature.
+Otherwise, I believe a ton of misfit programmers will perish... for sure.
+
+**NOTE:** This article received [125+ comments](https://news.ycombinator.com/item?id=28744671) on Hacker News.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2021/ladybug.jpg alt: "A solitary ladybug posing at Kampementsbacken, Stockholm" %}
@@ -126,5 +128,5 @@ In summary, hermit programmers who only write code for themselves are dead becau
 - As they don't have good communication skills, they do not know how to sell what they do to the market, which is why they are always behind the competence.
 - As they don’t diversify their skills, powerful AI will take over their workplaces.
 
-Unless you're more than just a programmer, it's over.
+Unless you're more than just a programmer, it's game over.
 But if you are willing to embrace the change and be flexible, there are exciting times ahead!
