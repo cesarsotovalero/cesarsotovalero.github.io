@@ -3,7 +3,7 @@ layout: post
 title: How to Track the Progress of a Research Project
 subtitle: My methodology based on the weekly delivery of verifiable artifacts
 tags: science
-description: Academic research is a demanding activity in constant change and evolution. Consequently, tracking the progress of a research project is challenging. This post describes my methodology to address this particular problem. 
+description: Academic research is a demanding activity in constant change and evolution. Consequently, tracking the progress of a research project is challenging. This post describes my methodology to address this particular problem.
 keywords: research artifact,verifiable artifacts,scientific career,research methodology,PhD student
 image: ../img/posts/2022/globe_cover.jpg
 share-img: ../img/posts/2022/globe_cover.jpg
@@ -23,13 +23,13 @@ From the supervisor's perspective, the status of the project should be monitored
 For the student, it is crucial to demonstrate the progress being made and deliver enough results to fulfill the supervisor's expectations.
 To this end, research is a coordinated effort that works better when a sound progress tracking system is established and followed by all the involved parties.
 What mechanism is good to keep track of the progress being made?
-This post explains my methodology to address this particular problem. 
+This post explains my methodology to address this particular problem.
 It is based on the weekly delivery of verifiable research artifacts.
-Let me show you what I mean. 
+Let me show you what I mean.
 
 <figure class="jb_picture">
 {% responsive_image path: img/posts/2022/globe.jpg alt: "Research is a handcrafting activity that produces unique and beautiful artifacts. ." %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
 &#169; Research is a handcrafting activity that produces unique and beautiful artifacts. Photo from <a href="https://goo.gl/maps/j8GC4KtHEXoKxLpB8">Tekniska Högskolan station</a>.
 </figcaption>
 </figure>
@@ -41,12 +41,12 @@ Supervision is usually a one-to-one activity carried out by the student and her 
 In the beginning, there are kick-off meetings and some raw ideas of what would be the ideal outcome to be accomplished.
 There is a _what_ but not a _how_.
 Therefore, intense research exploration and further communication are needed to bring light to the nascent work.
-This exploration leads to a seemingly endless cycle of experimentation followed by scheduled discussions. 
+This exploration leads to a seemingly endless cycle of experimentation followed by scheduled discussions.
 
-One drawback of this one-to-one back and forth is that it sometimes creates a feeling that it is not necessary to document everything. 
-After all, tasks do not need to be partitioned and distributed among several people. 
-Also, it is challenging to determine what results will finally end up being valuable for the project, and which other results will be thrown away the next day. 
-A lot of work is intended to be ephemeral, and that’s just how good research works. 
+One drawback of this one-to-one back and forth is that it sometimes creates a feeling that it is not necessary to document everything.
+After all, tasks do not need to be partitioned and distributed among several people.
+Also, it is challenging to determine what results will finally end up being valuable for the project, and which other results will be thrown away the next day.
+A lot of work is intended to be ephemeral, and that’s just how good research works.
 So, it is not clear what results constitute real progress and what do not.
 
 <aside class="quote">
@@ -65,8 +65,8 @@ Supervisors are typically very busy people. They don’t have the time to analyz
 There are some good practices to mitigate the stress.
 It is important to always keep a record of what was discussed in every single meeting (e.g., using a Google Doc or writing comments directly in the working paper).
 I used to add a [MoM](https://en.wikipedia.org/wiki/Minutes) file named `minutes.md` along the LaTeX sources of paper on [Overleaf](https://www.overleaf.com/) to keep track of every meeting.
-These guidelines are good for orienting the work, but don't help with the student's motivation. 
-In this regard, there is nothing as gratifying and motivating as the sense of seeing something concreted being delivered. 
+These guidelines are good for orienting the work, but don't help with the student's motivation.
+In this regard, there is nothing as gratifying and motivating as the sense of seeing something concreted being delivered.
 
 # Research Artifacts
 
@@ -74,7 +74,7 @@ In this regard, there is nothing as gratifying and motivating as the sense of se
 Motivation is key when doing research. But keeping momentum is hard if progress is not quantified. Some metrics exist to measure the quality of research output. Typical examples are the number of papers published and their number of citations. However, the amount of effort spent to produce a publication is tough to measure in practice. Consequently, there is a need to establish an agreement between the supervisor and the student, for the first to measure the progress, for the latter to show it.
 
 [//]: # (Explain the proposed solution)
-I come up to the realization that anything that is not verifiable and quantifiable has little value. 
+I come up to the realization that anything that is not verifiable and quantifiable has little value.
 For example, opening an issue on GitHub or answering a question on Stack Overflow are valuable activities because they let a persistent trace of the value being produced (i.e., a link that you can keep for yourself or share with others). On the contrary, asking a question on Slack or discussing it with a colleague in the corridor is quick and easy but does not have the same value. I avoid ephemeral work and instead focus my energy on producing valuable research artifacts.
 
 
@@ -84,7 +84,7 @@ For example, opening an issue on GitHub or answering a question on Stack Overflo
 
 
 Research artifacts should revolve around some specific research project with a clear goal, such as producing a research paper or witting a thesis.
-They can be considered as ~~expendable~~ critical pieces of the research puzzle, which are very necessary to deliver the final output. 
+They can be considered as ~~expendable~~ critical pieces of the research puzzle, which are very necessary to deliver the final output.
 Here are some typical examples of research artifacts:
 
 - A summary of related work is elaborated, i.e., one paragraph per revised paper
@@ -105,7 +105,7 @@ It also helps the supervisor to grasp a minimalistic and clear view of research 
 The supervisor must be able to find all necessary details for each item without asking the student.
 Once the artifacts and outcomes are reviewed, it is easier to readjust the goals and coordinate the new tasks.
 
-I have a template for the Friday report. 
+I have a template for the Friday report.
 Here is an example:
 
 ```
@@ -114,7 +114,7 @@ To: Supervisor
 CC: Co-authors and Co-supervisors
 Subject: [`WEEK11`] Progress Report
 
-Hi, 
+Hi,
 
 DONE this week:
 - Wrote three paragraphs in Section 2 of the paper (`link`)
@@ -129,7 +129,7 @@ TODO next week:
 QUESTIONS:
 - Do we want to discuss `Y` in Section 2?
 - Is `Z` relevant for Section 3?
-- Should we cite `W` in this paper? 
+- Should we cite `W` in this paper?
 
 Cheers,
 Student
@@ -148,10 +148,10 @@ Note that each point in the list must include a verifiable hyperlink pointing to
 For example, links to the submitted pull requests on GitHub, or links to a dataset or figure hosted in some external file provider such as Google Drive.
 
 [//]: # (One paragraph bout the TODO)
-The second section is a `TODO` list of tasks planned to be completed by the end of next week. 
-Every individual point must start with a verb in infinitive form (e.g., "to collect," "to summarize," "to compare"). 
-The content of this list is normally discussed in a meeting and both parties, student and supervisor, should agree on the next steps to be taken. 
-There should be not more than three tasks in the list. 
+The second section is a `TODO` list of tasks planned to be completed by the end of next week.
+Every individual point must start with a verb in infinitive form (e.g., "to collect," "to summarize," "to compare").
+The content of this list is normally discussed in a meeting and both parties, student and supervisor, should agree on the next steps to be taken.
+There should be not more than three tasks in the list.
 Each point must result in a single deliverable artifact.
 Ideally, each task in the `TODO` list will appear as  `DONE` in the next Friday report, but not necessarily.
 
@@ -160,14 +160,15 @@ Finally, the third section is a list of `QUESTIONS` elaborated by the student ab
 The intent of the questions is to clarify the tasks for next week.
 There must be not more than three questions per report.
 The student must frame the questions in a way so that a short answer can be made by the supervisor.
-Good questions are those whose responses consist of a simple “yes” or “no” answer.  
+Good questions are those whose responses consist of a simple “yes” or “no” answer.
 
 # My Results So Far
 
 This approach has proved to work very well for me so far.
-From a student's position, I have been able to make [substantial progress](https://www.cesarsotovalero.net/publications) in my research career. As a supervisor, the Friday reports help me to sync quickly on the research topic and guide the student more effectively, which has resulted in some successful [research projects](https://www.cesarsotovalero.net/service). 
+From a student's position, I have been able to make [substantial progress](https://www.cesarsotovalero.net/publications) in my research career. As a supervisor, the Friday reports help me to sync quickly on the research topic and guide the student more effectively, which has resulted in some successful [research projects](https://www.cesarsotovalero.net/service).
 
 # References
 
 - [SIMBA: Simplified Management by Artifacts](https://youtu.be/2IwBc9UI4Sg), by Yegor Bugayenko.
-- [:globe_with_meridians: How to do a master's thesis in my group](https://www.monperrus.net/martin/kth-master-thesis), by Martin Monperrus. 
+- [:globe_with_meridians: How to do a master's thesis in my group](https://www.monperrus.net/martin/kth-master-thesis), by Martin Monperrus.
+- [The Secret of the Weekplan](https://calv.info/the-secret-of-the-weekplan), by Calvin French-Owen.

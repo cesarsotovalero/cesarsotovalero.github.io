@@ -55,6 +55,8 @@ So in this post, I share the tools, libraries, configs, and other integrations t
 
 ⚠️ This post is highly biased toward the tools I personally use today, and if you think I'm missing some gem, please let me/us know (preferably in the comment section below).
 
+**NODE:** Somehow this article got [600+ comments](https://news.ycombinator.com/item?id=44579717) on Hacker News (just another proof that you never know).
+
 # Project Structure
 
 I prefer to use a [monorepo](https://en.wikipedia.org/wiki/Monorepo) structure (backend and frontend) for my Python projects.[^1]
@@ -315,7 +317,6 @@ Here’s a sample `.pre-commit-config.yaml` file that I use:
 
 {% highlight yaml linenos %}
 repos:
-repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.12.3  # Ruff version.
     hooks:
@@ -453,7 +454,7 @@ docker compose up --build -d
 
 [^1]: Don’t get me wrong, I understand there are cases where a multi-repo structure is necessary, like when multiple teams work on different parts of the project or when dependencies needs to be shared across projects.
 
-[^2]: The `pyproject.toml` file is similar to `package.json` in Node.js or `pom.xml` in Java.
+[^2]: A `pyproject.toml` file is similar to `package.json` in Node.js or `pom.xml` in Java.
 
 [^3]: If you know me, you know I used to be mostly a Java/JavaScript/R kind of guy.
 
