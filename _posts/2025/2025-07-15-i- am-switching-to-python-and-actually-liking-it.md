@@ -55,7 +55,7 @@ So in this post, I share the tools, libraries, configs, and other integrations t
 
 ⚠️ This post is highly biased toward the tools I personally use today, and if you think I'm missing some gem, please let me/us know (preferably in the comment section below).
 
-**NODE:** Somehow this article got [600+ comments](https://news.ycombinator.com/item?id=44579717) on Hacker News (just another proof that you never know).
+**NOTE:** Somehow this article got [600+ comments](https://news.ycombinator.com/item?id=44579717) on Hacker News (just another proof that you never really know).
 
 # Project Structure
 
