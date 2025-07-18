@@ -9,6 +9,6 @@ published: true
 
 # Guest
 
-- **Developer Tech Talk**, interviewed by [Joakim Karlsson](https://www.linkedin.com/in/couchbasenordic/) and [Gustaf Pilo](https://www.linkedin.com/in/gpilo/), July 2023. 
+- **Developer Tech Talk**, interviewed by [Joakim Karlsson](https://www.linkedin.com/in/couchbasenordic/) and [Gustaf Pilo](https://www.linkedin.com/in/gpilo/), July 2023.  [🎙MP3 file](/files/podcasts/2025-07_coding-the-game.mp3).
 
 <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless src="https://share.transistor.fm/e/c987f544"></iframe>
