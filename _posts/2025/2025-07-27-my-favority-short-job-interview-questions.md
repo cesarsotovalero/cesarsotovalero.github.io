@@ -21,26 +21,72 @@ author: cesarsotovalero
 published: false
 ---
 
-Why communicating is important.
+<!-- Why communicating is important. -->
+For no one is a secret that there is just no carrer progress without strong communication skills.
+Language is intrinsically tied to our abilities to convery ideas.
+So important it is, aht today we're closer than ever to reach true AI capabilities through language.
 
-Communication at job interviews.
+<!-- Communication at job interviews. -->
+Q/A sessions are common in job interviews.
+It's a way to assess the abilities of candidates at thinking and answering both technical and non-technical questions.
+Doing well at such interviews is a trainable skill that anyone can learn though deliberate training and practice.
 
-The art of asking questions and why it's important.
+<!-- The art of asking questions and why it's important.  -->
+I found that most conventional interview questions are quite boring (e.g., [TODO]).
+In my opinion, some of the best interview questions focus on a candidate's past experiences, problem-solving skills, and future goals.
+Examples include: "Tell me about a time you failed and what you learned," "Describe a situation where you had to adjust your priorities," or "Where do you see yourself in five years?" These questions help assess a candidate's self-awareness, adaptability, and career aspirations
 
-Most conventional interview questions are boring (e.g. some of the best interview questions focus on a candidate's past experiences, problem-solving skills, and future goals. Examples include, "Tell me about a time you failed and what you learned," "Describe a situation where you had to adjust your priorities," or "Where do you see yourself in five years?" These questions help assess a candidate's self-awareness, adaptability, and career aspirations)
+<!-- The art of asking questions and why it's important. -->
+With the rise of LLMs, the value of *answering* questions has significanlty decrease its perceived value.
+Today would rather stop being the person finds answers and insted become the person who formulates the right questions.
+Those that drive the decisions.
+Because admitedly, to really grow, solving technical problem is not enough anymore.
+You need to become the person who frames them, implement them, and look at the challenges from multiple dimensions.
 
-Technical vs. Behavioral questions.
+<!-- Technical vs. Behavioral questions. -->
+For technical questions it's important to shift the focus from otutput to outcomes.
+Whatever the question, to get clarity on the business goals and its long-term strategy.
 
-Why you should read this.
+<!-- Why you should read this. -->
+The rest of this post is a compendium of some of the more interesting questions that come to my mind.
+I add the question, and then explain the rationale behind it later on.d
 
-I post the question, and the rationale behind it later on.
+I like asking things somewhat indirectly to avoid bias or answers to please an interviewer.
 
-> I like asking things somewhat indirectly to avoid bias or answers to please an interviewer.
+More important than what you ask is often the quality of questions a candidate asks YOU.
+It gives you a sense of their strategic thinking capabilities, of work ethic (have they done their homework?) but perhaps more importantly, of their empathy and ability to connect and learn from others. Not to mention the size of their ego…
 
 
-> More important than what you ask is often the quality of questions a candidate asks YOU. It gives you a sense of their strategic thinking capabilities, of work ethic (have they done their homework?) but perhaps more importantly - of their empathy and ability to connect and learn from others. Not to mention the size of their ego…
+I prefer questions that aren't too broad, that fit to realistic constraints, to avoid a generic response.
+
+
+<aside class="quote">
+    <em>“A problem well stated is a problem half-resolved.”</em>
+    <cite><br> ― <a href="https://en.wikipedia.org/wiki/Charles_F._Kettering">CF Kettering</a></cite>
+</aside>
+
+
+Sometimes, the exact answer is not as important as the method through which you came to that answer (especially for questions that ask for an exact number). This is why it’s important to show interviewers how you think, break down your steps, and logically explain each one.
+
+
+<div class="container-youtube">
+  <iframe width="560" height="349" src="https://www.youtube.com/embed/dFVrncgIvos" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+- What side projects are you working on?" -> People who are passionate in my industry don't stop learning and exploring when they get home.
+
+- Show me an example of your written work. Or take take 5 minutes and write down your responce to this email. Why? Interviews are very verbal, most office jobs are not.
+
+- our company values are xyz we're thinking of dropping one, which would you drop and why. You the keep dropping one. You could also be a total douche and ask the question without listing the values.
+
+
 
 # Technical
+
+-  Describe the most difficult project you’ve worked on to date.
+-
+- You’re tasked with explaining a basic coding principle—KISS—to a group of kindergarteners. You can use any supplies in the classroom. How do you go about it?
 
 - How easy or difficult it is to change a single field's type, add/remove fields at the platform level? Would clients break? Trying to determine the cascading effects it brings at Platform to Client levels.
 
@@ -70,21 +116,99 @@ Looking for curious people that want to grow.
 Do you have a favorite model or a tool that you feel is underrated ?
 
 
+# Random
+
+- Tell me about some adventorous thing that you have done.
+
+- What was the last book you read and what did you learn from it?
+
+- How would you sell ice cream in Alaska?
+
+
+
+# Logical
+
+- If you look at a clock and the time is 4:17, what is the angle between the hour and the minute hands?
+
+- How would you figure out the weight of a commercial airplane without a scale?
+
+- How would you escape if you were trapped inside a washing machine?
+
+# Behavioral
+
+- How do you handle unexpected changes or setbacks in a project?
+- Can you provide an example of a time when you had to adapt to a significant change in the workplace?
+- How do you handle constructive feedback from colleagues or supervisors?
+- How do you learn?
+
+# Situational
+
+
+
+# Leadership
+
+- How do you inspire and motivate your team during challenging times?
+- Can you describe a situation where you successfully led a team through a challenging project?
+
+# Creative
+
+- How do you approach solving problems that have no clear solution?
+- Describe a project where you had to think creatively to overcome a challenge.
+- What skill have you always wanted to learn but haven’t had the chance to?
+- How would you explain your job to a five-year-old?
+- Describe the color yellow to somebody who’s blind.
+- If you could invent a new ice cream flavor, what would it be and why?
+- Convince me to move to your city.
+- What is the biggest problem the world is currently facing and, given a limited amount of resources, what steps would you take to solve it?
+- Pitch my business to me as if you were me, and I was an investor interested in buying the company.
+- In five minutes, can you explain something to me that you know well?
+
+
+# Unconfortable
+
+
+- Tell me about a time when you overpromised and underdelivered.
+- What do you do if you realize you’re not going to meet a deadline?
+- “Why should we not hire you?”
+
+# Values and Achievements
+
+- Throw your resume aside and tell me what makes you, you.”
+- What's something you'd be ecstatic about doing every day for the rest of your professional career?
+
+
+# Cultural
+
+- Describe the work environment that will help you to contribute most effectively.
+- What are the three most important attributes you’ll bring to our company?
+- How are you going to continue to develop your professional skills and knowledge?
+
+# To Employer
+
+- “A year from now when you’re looking back on this hire, what would I have done to exceed every expectation?”
+- “What are the biggest challenges you expect the person in this role to face?”
+- In terms of professional qualities, what do you believe sets apart the most successful employees in this organization?
+- “If you had a magic wand and could change anything at this company, what would it be?”
+- How does the company measure success for someone in this position, and what are the key metrics for this role?
+- What is the biggest challenge your team is currently facing that someone in this role could help address?
+- What opportunities for professional growth and development can be expected in this position?
+- What does a typical career path look like for someone in this position?
+- How does the team celebrate successes and handle setbacks?
+- What are the company's long-term goals and how does this position contribute to achieving them?
+- Can you share an example of a recent project where the team demonstrated strong collaboration?
+- What is the most important thing they need to know about the team dynamics?
+- What are the most impactful projects or initiatives that someone in this role would be involved in?
+- What are the key goals and deliverables expected in the first few months?
+- What level of autonomy and decision-making authority does this position have?
+- What is one tip you wish you knew when you first started working at this company?
 
 # Non Technical
 
-What are your questions for me?
-
-
-What question should I ask that will make me want to hire you? -> I ask this at the end of the interview.
-
-- ”What have you learned in the last six months?”
-
-
-
-In what way do people underestimate you?
-
-i love "teach me about a time you had to learn something in a short time span"
+- What are your questions for me?
+- What question should I ask that will make me want to hire you? -> I ask this at the end of the interview.
+- What have you learned in the last six months?
+- In what way do people underestimate you?
+- I love "teach me about a time you had to learn something in a short time span"
 
 
 - What kind of person are you?
