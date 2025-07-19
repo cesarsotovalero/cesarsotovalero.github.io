@@ -3,6 +3,7 @@
 \LoadClass[12pt]{article}
 \RequirePackage{xcolor}
   \definecolor{cesar-blue}{RGB}{1,38,56}
+  \definecolor{cesar-green}{RGB}{0,0,139} % Define green color for links
 \RequirePackage{graphicx}
 \RequirePackage{svg}
 \RequirePackage{microtype}
@@ -26,17 +27,15 @@
     }\end{textblock}
   }
 
-% Replace this with \RequirePackage{href-ul}
-\RequirePackage[normalem]{ulem}
-\RequirePackage[hidelinks]{hyperref}
-  \makeatletter\begingroup
-    \catcode`\$=6 %
-    \catcode`\#=12 %
-    \gdef\href@split$1#$2#$3\\$4{%
-      \hyper@@link{$1}{$2}{\uline{$4}}%
-      \endgroup
-    }%ss
-  \endgroup\makeatother
+% Customize hyperlink appearance: green links without underlining
+\RequirePackage{hyperref}
+\hypersetup{
+    colorlinks=true,    % Enable colored links
+    linkcolor=cesar-green, % Set link color to green
+    urlcolor=cesar-green,  % Set URL link color to green
+    citecolor=cesar-green  % Set citation color to green (optional)
+}
+
 \newcommand\nospell[1]{#1}
 \AtBeginDocument{%
   \setlength{\topskip}{0mm}
@@ -48,7 +47,10 @@
 }
 \newcommand\ybPrintPhoto{
   \begin{textblock}{2.4}[1,0](14,1.5){
-    \includegraphics[width=\textwidth, cfbox=blue 0pt 0pt]{photo.jpg}
+    \includegraphics[width=\textwidth, cfbox=cesar-blue 0pt 0pt]{cesar-Jfokus-2024-circular-small.jpg}
   }\end{textblock}
 }
+
+\renewcommand{\textbf}[1]{\textcolor{cesar-blue}{\bfseries #1}}
+
 \endinput

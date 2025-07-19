@@ -1,0 +1,28 @@
+name: Compile CV PDF
+
+on:
+  schedule:
+    - cron: "0 0 1 * *" # Runs at 00:00 on the 1st of every month
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up LaTeX
+        uses: dante-ev/latex-action@v2
+        with:
+          root_file: files/CV/cesar-resume.tex
+          working_directory: files/CV
+          args: -pdf -interaction=nonstopmode -halt-on-error cesar-resume.tex
+
+      - name: Rename output PDF
+        run: |
+          if [ -f files/CV/cesar-resume.pdf ]; then
+            echo "PDF already named correctly."
+          elif [ -f files/CV/cesar-resume.tex.pdf ]; then
+            mv files/CV/cesar-resume.tex.pdf files/CV/cesar-resume.pdf
+          fi
