@@ -17,7 +17,7 @@ jobs:
         with:
           root_file: files/CV/cesar-resume.tex
           working_directory: files/CV
-          args: -pdf -interaction=nonstopmode -halt-on-error cesar-resume.tex
+          args: -lualatex -interaction=nonstopmode -halt-on-error cesar-resume.tex
 
       - name: Rename output PDF
         run: |
