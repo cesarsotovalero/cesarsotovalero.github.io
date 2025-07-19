@@ -15,13 +15,13 @@ jobs:
       - name: Set up LaTeX
         uses: dante-ev/latex-action@latest
         with:
-          root_file: /files/CV/cesar-resume.tex
-          args: -lualatex -interaction=nonstopmode -halt-on-error /files/CV/cesar-resume.tex
+          root_file: files/CV/cesar-resume.tex
+          args: -lualatex -interaction=nonstopmode -halt-on-error files/CV/cesar-resume.tex
 
       - name: Rename output PDF
         run: |
-          if [ -f /files/CV/cesar-resume.pdf ]; then
+          if [ -f files/CV/cesar-resume.pdf ]; then
             echo "PDF already named correctly."
-          elif [ -f /files/CV/cesar-resume.tex.pdf ]; then
-            mv /files/CV/cesar-resume.tex.pdf /files/CV/cesar-resume.pdf
+          elif [ -f files/CV/cesar-resume.tex.pdf ]; then
+            mv files/CV/cesar-resume.tex.pdf files/CV/cesar-resume.pdf
           fi
