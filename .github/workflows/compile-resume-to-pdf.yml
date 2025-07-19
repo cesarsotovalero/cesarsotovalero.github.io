@@ -25,3 +25,15 @@ jobs:
           elif [ -f files/CV/cesar-resume.tex.pdf ]; then
             mv files/CV/cesar-resume.tex.pdf files/CV/cesar-resume.pdf
           fi
+
+      - name: Commit and push updated PDF
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add files/CV/cesar-resume.pdf
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Update cesar-resume.pdf $(date -u +'%Y-%m-%d')"
+            git push
+          else
+            echo "No changes to commit."
+          fi
