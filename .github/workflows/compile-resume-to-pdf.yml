@@ -16,7 +16,7 @@ jobs:
           persist-credentials: true # allow pushing back
 
       - name: Compile Resume to PDF
-        uses: dante-ev/latex-action@v4
+        uses: dante-ev/latex-action@latest
         with:
           working_directory: files/CV # run inside the CV folder
           root_file: cesar-resume.tex # basename of your .tex file
