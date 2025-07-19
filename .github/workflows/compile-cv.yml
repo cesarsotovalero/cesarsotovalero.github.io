@@ -1,4 +1,4 @@
-name: Compile CV PDF
+name: Compile Resume to PDF
 
 on:
   schedule:
@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up LaTeX
-        uses: dante-ev/latex-action@v2
+        uses: dante-ev/latex-action@latest
         with:
           root_file: files/CV/cesar-resume.tex
           working_directory: files/CV
