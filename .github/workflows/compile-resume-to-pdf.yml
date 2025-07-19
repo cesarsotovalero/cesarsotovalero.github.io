@@ -11,23 +11,34 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Set up LaTeX
-        uses: dante-ev/latex-action@latest
         with:
-          root_file: files/CV/cesar-resume.tex
-          args: -lualatex -interaction=nonstopmode -halt-on-error files/CV/cesar-resume.tex
+          fetch-depth: 0 # fetch full history for pushes
+          persist-credentials: true # allow pushing back
 
-      - name: Rename output PDF
+      - name: Compile Resume to PDF
+        uses: dante-ev/latex-action@v4
+        with:
+          working_directory: files/CV # run inside the CV folder
+          root_file: cesar-resume.tex # basename of your .tex file
+          args: >
+            -pdf                         # generate PDF
+            -lualatex                    # use LuaLaTeX
+            -latexoption=-interaction=nonstopmode
+            -latexoption=-halt-on-error
+
+      - name: Normalize PDF filename
         run: |
-          if [ -f files/CV/cesar-resume.pdf ]; then
-            echo "PDF already named correctly."
-          elif [ -f files/CV/cesar-resume.tex.pdf ]; then
+          # If latexmk names it with .tex.pdf, rename it
+          if [ -f files/CV/cesar-resume.tex.pdf ]; then
             mv files/CV/cesar-resume.tex.pdf files/CV/cesar-resume.pdf
           fi
 
       - name: Commit and push updated PDF
         run: |
+          if [ ! -f files/CV/cesar-resume.pdf ]; then
+            echo "Error: files/CV/cesar-resume.pdf does not exist. Skipping commit and push."
+            exit 0
+          fi
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add files/CV/cesar-resume.pdf
