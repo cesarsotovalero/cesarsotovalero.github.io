@@ -14,14 +14,13 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 [//]: # ( <span class="type" style="text-align: center"></span>)
 
-
 # TL;DR
 
 I'm César, a [computer scientist](./publications.html), [software engineer](./software.html), and [content creator](./blog).
 
-I'm passionate about software, research, and education. 
+I'm passionate about software, research, and education.
 
-Here's my one-page [résumé](../files/CV/resume-cesar-2025.pdf).
+Here's my one-page [résumé](../files/CV/cesar-resume.pdf).
 
 I wrote about my professional values [here](./my-professional-values.html).
 
@@ -43,7 +42,7 @@ I've created a few [open-source projects](./software.html), some with 200+ stars
 
 I hold a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se) (graduated in 2023).[^4]
 
-My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/). 
+My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/).
 
 My PhD was about software debloating,[^1] here's my [PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
 
@@ -53,19 +52,19 @@ I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and
 
 Here's a list of my [completed courses](./courses.html) (inc. MOOCs).
 
-A long time ago, I participated in [ACM-ICPC programming contests](/competitions.html). 
+A long time ago, I participated in [ACM-ICPC programming contests](/competitions.html).
 
 # Misc
 
 Out of work, I enjoy quality time with my family, reading books, and [running](/races.html).
 
-I like epic music, favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), and [Zack Hemsey](https://www.youtube.com/user/zackhemsey). 
+I like epic music, favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), and [Zack Hemsey](https://www.youtube.com/user/zackhemsey).
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
-#  Contact Me
+# Contact Me
 
-<!-- 
+<!--
      After implementing this contact form make sure
      1. you have defined "email: youremail@email.com" in _config.yml file.
      2. you verify your form on formspree.io.
@@ -148,7 +147,7 @@ form.wj-contact input[type="submit"]:active {
               "I do research",
               "I overcome my failures",
               "I never stop learning",
-              "I don't give up",              
+              "I don't give up",
               "I value family and friends",
               "I like listening podcasts",
               "I like homemade food",
@@ -193,7 +192,7 @@ form.wj-contact input[type="submit"]:active {
 
 <br>
 
-👉 If you are a MSc student or researcher, I'm always [open to collaborations](./collaborations.html). 
+👉 If you are a MSc student or researcher, I'm always [open to collaborations](./collaborations.html).
 
 <p class="post-meta" style="margin-top: 60px;">
    <i class="fas fa-user-edit"></i>

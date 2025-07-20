@@ -15,6 +15,17 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install scholarly
+        run: pip install scholarly
+
+      - name: Fetch Google Scholar citations
+        run: python scripts/fetch_citations.py
+
       - name: Set up LaTeX
         uses: dante-ev/latex-action@latest
         with:

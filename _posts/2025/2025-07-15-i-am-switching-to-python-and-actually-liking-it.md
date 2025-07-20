@@ -55,7 +55,7 @@ So in this post, I share the tools, libraries, configs, and other integrations t
 
 ⚠️ This post is highly biased toward the tools I personally use today, and if you think I'm missing some gem, please let me/us know (preferably in the comment section below).
 
-**NOTE:** Somehow this article got [600+ comments](https://news.ycombinator.com/item?id=44579717) on Hacker News (just another proof that you never really know).
+**NOTE:** Somehow this article got [680+ comments](https://news.ycombinator.com/item?id=44579717) on Hacker News (just another proof that you never really know).
 
 # Project Structure
 
@@ -132,19 +132,25 @@ I use [uv](https://github.com/astral-sh/uv) as my Python package manager and bui
 Here are the core commands to set it up:
 
 {% highlight bash linenos %}
+
 # Install uv globally if not already installed
+
 curl -sSfL <https://astral.sh/install.sh> | sh
 
 # Initialize a new project (adds .gitignore, .python-version, pyproject.toml, etc.)
+
 uv init project-api
 
 # Add some dependencies into the project and update pyproject.toml
+
 uv add --dev pytest ruff pre-commit mkdocs gitleaks fastapi pydantic
 
 # Update the lock file with the latest versions of the dependencies (creates a .venv if not already created)
+
 uv sync
 
 # Activate the .venv
+
 uv venv activate
 {% endhighlight %}
 
@@ -158,10 +164,13 @@ It’s a super-fast Python linter and code formatter, designed to help lazy deve
 Ruff combines `isort`, `flake8`, `autoflake`, and similar tools into a single command-line interface:
 
 {% highlight bash linenos %}
-# Lint all files in `/path/to/code` (and any subdirectories).
+
+# Lint all files in `/path/to/code` (and any subdirectories)
+
 ruff check path/to/code/
 
-# Format all files in `/path/to/code` (and any subdirectories).
+# Format all files in `/path/to/code` (and any subdirectories)
+
 ruff format path/to/code/
 {% endhighlight %}
 
@@ -318,16 +327,17 @@ Here’s a sample `.pre-commit-config.yaml` file that I use:
 
 {% highlight yaml linenos %}
 repos:
-  - repo: https://github.com/astral-sh/ruff-pre-commit
+
+- repo: <https://github.com/astral-sh/ruff-pre-commit>
     rev: v0.12.3  # Ruff version.
     hooks:
-      - id: ruff-check # Run the linter.
+  - id: ruff-check # Run the linter.
         args: [ --fix ]
-      - id: ruff-format  # Run the formatter.
-  - repo: https://github.com/gitleaks/gitleaks
+  - id: ruff-format  # Run the formatter.
+- repo: <https://github.com/gitleaks/gitleaks>
     rev: v8.27.2
     hooks:
-      - id: gitleaks
+  - id: gitleaks
 {% endhighlight %}
 
 # Infrastructure Management
