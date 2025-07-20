@@ -15,21 +15,17 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Compile Resume to PDF
+      - name: Set up LaTeX
         uses: dante-ev/latex-action@latest
         with:
-          working_directory: files/CV
-          root_file: cesar-resume.tex
-          args: >
-            -pdf
-            -lualatex
-            -latexoption=-interaction=nonstopmode
-            -latexoption=-halt-on-error
+          root_file: files/CV/cesar-resume.tex
+          args: -lualatex -interaction=nonstopmode -halt-on-error files/CV/cesar-resume.tex
 
-      - name: Normalize PDF filename
+      - name: Rename output PDF
         run: |
-          # If latexmk names it with .tex.pdf, rename it
-          if [ -f files/CV/cesar-resume.tex.pdf ]; then
+          if [ -f files/CV/cesar-resume.pdf ]; then
+            echo "PDF already named correctly."
+          elif [ -f files/CV/cesar-resume.tex.pdf ]; then
             mv files/CV/cesar-resume.tex.pdf files/CV/cesar-resume.pdf
           fi
 
