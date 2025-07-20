@@ -20,11 +20,22 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install scholarly
-        run: pip install scholarly
+      - name: Fetch Google Scholar data from RapidAPI
+        run: |
+          curl --request GET \
+            --url 'https://google-scholar-data.p.rapidapi.com/author_details_by_id?author_id=jNBoowwAAAAJ' \
+            --header 'x-rapidapi-host: google-scholar-data.p.rapidapi.com' \
+            --header "x-rapidapi-key: ${{ secrets.RAPIDAPI_GOOGLE_SCHOLAR_DATA_API_KEY }}" \
+            -o scholar.json
 
-      - name: Fetch Google Scholar citations
-        run: python scripts/fetch_citations.py
+          CITEDBY=$(jq '.result.citedby' scholar.json)
+          HINDEX=$(jq '.result.hindex' scholar.json)
+
+          # Write to LaTeX macro file for use in cesar-resume.tex
+          echo "\\newcommand{\\citations}{$CITEDBY}" > files/CV/citations.tex
+          echo "\\newcommand{\\hindex}{$HINDEX}" >> files/CV/citations.tex
+
+          cat files/CV/citations.tex
 
       - name: Set up LaTeX
         uses: dante-ev/latex-action@latest
