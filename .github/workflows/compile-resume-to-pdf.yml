@@ -21,19 +21,21 @@ jobs:
           root_file: files/CV/cesar-resume.tex
           args: -lualatex -interaction=nonstopmode -halt-on-error files/CV/cesar-resume.tex
 
-      - name: Rename output PDF
+      - name: Locate and normalize PDF filename
         run: |
-          if [ -f files/CV/cesar-resume.pdf ]; then
-            echo "PDF already named correctly."
-          elif [ -f files/CV/cesar-resume.tex.pdf ]; then
+          # If LaTeX action outputs at repo root
+          if [ -f cesar-resume.pdf ]; then
+            mv cesar-resume.pdf files/CV/cesar-resume.pdf
+          fi
+          # Rename .tex.pdf inside files/CV
+          if [ -f files/CV/cesar-resume.tex.pdf ]; then
             mv files/CV/cesar-resume.tex.pdf files/CV/cesar-resume.pdf
           fi
 
       - name: Commit and push updated PDF
         run: |
           if [ ! -f files/CV/cesar-resume.pdf ]; then
-            echo "Error: files/CV/cesar-resume.pdf does not exist. Skipping commit and push."
-            exit 0
+            echo "Error: files/CV/cesar-resume.pdf not found. Skipping." && exit 0
           fi
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
