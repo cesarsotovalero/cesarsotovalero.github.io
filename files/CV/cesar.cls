@@ -47,7 +47,7 @@
 }
 \newcommand\ybPrintPhoto{
   \begin{textblock}{2.4}[1,0](14,1.5){
-    \includegraphics[width=\textwidth, cfbox=cesar-blue 0pt 0pt]{files/CV/cesar-Jfokus-2024-circular-small.jpg}
+    \includegraphics[width=\textwidth, cfbox=cesar-blue 0pt 0pt]{files/CV/cesar-photo.jpg}
   }\end{textblock}
 }
 
