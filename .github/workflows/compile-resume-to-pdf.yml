@@ -12,17 +12,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # fetch full history for pushes
-          persist-credentials: true # allow pushing back
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Compile Resume to PDF
         uses: dante-ev/latex-action@latest
         with:
-          working_directory: files/CV # run inside the CV folder
-          root_file: cesar-resume.tex # basename of your .tex file
+          working_directory: files/CV
+          root_file: cesar-resume.tex
           args: >
-            -pdf                         # generate PDF
-            -lualatex                    # use LuaLaTeX
+            -pdf
+            -lualatex
             -latexoption=-interaction=nonstopmode
             -latexoption=-halt-on-error
 
