@@ -48,73 +48,52 @@ jobs:
           # Move the merged file to the _data directory, overwriting if it exists
           mv -f merged.json _data/linkedin-posts.json
 
+      - name: Remove temporary posts file
+        run: rm -f linkedin-posts.json
+
       - name: Create assets directory if it doesn't exist
-        run: |
-          mkdir -p assets/images/linkedin
+        run: mkdir -p assets/images/linkedin
 
       - name: Download images from new entries
+        shell: bash
         run: |
           # First, validate the JSON structure
           if ! jq -e . >/dev/null 2>&1 < _data/linkedin-posts.json; then
             echo "Error: Invalid JSON in _data/linkedin-posts.json"
             exit 1
           fi
-
           # Process each post with error handling
           jq -r '.data[] | select(.image != null and (.image | length > 0)) | @base64' _data/linkedin-posts.json | while read -r post_b64; do
-            if [ -z "$post_b64" ]; then
-              continue
-            fi
-            
-            # Decode the base64 post data
+            [ -z "$post_b64" ] && continue
             post=$(echo "$post_b64" | base64 --decode)
-            
-            # Extract timestamp with error checking
             posted_ts=$(echo "$post" | jq -r '.postedDateTimestamp // empty')
-            if [ -z "$posted_ts" ]; then
-              echo "Warning: Missing timestamp for post, skipping"
-              continue
-            fi
-            
+            [ -z "$posted_ts" ] && { echo "Warning: Missing timestamp for post, skipping"; continue; }
             dir="assets/images/linkedin/${posted_ts}"
             mkdir -p "$dir"
-            
-            # Process images with error handling
-            echo "$post" | jq -r '.image[] | select(.url != null) | @base64' 2>/dev/null | while read -r img_b64; do
-              if [ -z "$img_b64" ]; then
-                continue
-              fi
-              
-              # Decode the base64 image data
-              img=$(echo "$img_b64" | base64 --decode)
-              
-              # Extract image properties with error checking
-              url=$(echo "$img" | jq -r '.url // empty')
-              width=$(echo "$img" | jq -r '.width // empty')
-              height=$(echo "$img" | jq -r '.height // empty')
-              
-              if [ -z "$url" ] || [ -z "$width" ] || [ -z "$height" ]; then
-                echo "Warning: Missing image properties, skipping"
-                continue
-              fi
-              
-              # Create filename with dimensions
-              filename="${width}x${height}.jpg"
-              output_path="${dir}/${filename}"
-              
-              # Only download if file doesn't exist
-              if [ ! -f "$output_path" ]; then
-                echo "Downloading image to $output_path"
-                if ! curl -L "$url" -o "$output_path"; then
-                  echo "Failed to download $url, skipping"
-                  continue
-                fi
-              else
-                echo "Image $output_path already exists, skipping"
-              fi
-            done
+            echo "$post" \
+              | jq -r '.image[] | select(.url != null) | @base64' 2>/dev/null \
+              | while read -r img_b64; do
+                  [ -z "$img_b64" ] && continue
+                  img=$(echo "$img_b64" | base64 --decode)
+                  url=$(echo "$img" | jq -r '.url // empty')
+                  width=$(echo "$img" | jq -r '.width // empty')
+                  height=$(echo "$img" | jq -r '.height // empty')
+                  if [ -z "$url" ] || [ -z "$width" ] || [ -z "$height" ]; then
+                    echo "Warning: Missing image properties, skipping"
+                    continue
+                  fi
+                  filename="${width}x${height}.jpg"
+                  output_path="${dir}/${filename}"
+                  if [ ! -f "$output_path" ]; then
+                    echo "Downloading image to $output_path"
+                    if ! curl -L "$url" -o "$output_path"; then
+                      echo "Failed to download $url, skipping"
+                    fi
+                  else
+                    echo "Image $output_path already exists, skipping"
+                  fi
+                done
           done
-        shell: bash
 
       - name: Commit and push changes if any
         run: |
