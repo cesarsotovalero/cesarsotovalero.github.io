@@ -37,6 +37,12 @@ jobs:
 
           cat files/CV/citations.tex
 
+      - name: Count YouTube videos and update LaTeX macros
+        run: |
+          YOUTUBE_COUNT=$(jq length _data/youtube-videos.json)
+          echo "\\newcommand{\\youtubevideos}{$YOUTUBE_COUNT}" >> files/CV/citations.tex
+          cat files/CV/citations.tex
+
       - name: Set up LaTeX
         uses: dante-ev/latex-action@latest
         with:
