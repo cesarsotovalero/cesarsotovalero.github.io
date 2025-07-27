@@ -127,34 +127,39 @@ There’s an `__init__.py` file in `project-api/src/app` to indicate that `app` 
 
 ## uv
 
-I use [uv](https://github.com/astral-sh/uv) as my Python package manager and build tool. It’s all I need to install and manage dependencies.
+I use [uv](https://github.com/astral-sh/uv) as my Python package manager and build tool. 
+It’s all I need to install and manage dependencies.
 
 Here are the core commands to set it up:
 
 {% highlight bash linenos %}
-
 # Install uv globally if not already installed
-
-curl -sSfL <https://astral.sh/install.sh> | sh
+curl -sSfL https://astral.sh/install.sh | sh
 
 # Initialize a new project (adds .gitignore, .python-version, pyproject.toml, etc.)
-
 uv init project-api
 
 # Add some dependencies into the project and update pyproject.toml
-
 uv add --dev pytest ruff pre-commit mkdocs gitleaks fastapi pydantic
 
-# Update the lock file with the latest versions of the dependencies (creates a .venv if not already created)
-
+# Update the lock file with the latest versions of the dependencies
+# (this will also create a .venv in your project directory if it doesn't exist)
 uv sync
 
-# Activate the .venv
+# (Opt‑in) explicitly create or recreate a venv in a custom path:
+uv venv create .venv
 
-uv venv activate
+# Activate the .venv yourself
+# ──────────────────────────────────────────────
+# On macOS/Linux:
+source .venv/bin/activate
+# On Windows (PowerShell):
+.\.venv\Scripts\Activate.ps1
+# On Windows (cmd.exe):
+.\.venv\Scripts\activate.bat
 {% endhighlight %}
 
-Note that the most important file for `uv` is `pyproject.toml`.[^2]
+Note that the most important file for `uv` is `pyproject.toml`.[^2]  
 This file [contains](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) metadata and the list of dependencies required to build and run the project.
 
 ## ruff
