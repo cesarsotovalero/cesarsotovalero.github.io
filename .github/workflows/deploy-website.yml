@@ -4,63 +4,62 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:   # also allow manual runs, if you like
 
 env:
   RUBY_VERSION: 3.2.2
 
 jobs:
-  deploy:
-    name: gh-pages
+  build_and_deploy:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Clone repository
-        uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          bundler-cache: false    # our build Action handles caching
 
-      - name: Building site
-        run: JEKYLL_ENV=production bundle exec jekyll build --profile ben--trace
+      - name: Build Jekyll site (with all plugins)
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true      # cache vendor/bundle for speed
+          prettier: false         # disable extra formatting
+          # jekyll_src: '.'       # default is “find _config.yml”
+          # gem_src: '.'          # only needed if you have multiple Gemfiles
         env:
-          GISCUS_DATA_REPO_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
+          GISCUS_DATA_REPO_ID:     ${{ secrets.GISCUS_DATA_REPO_ID }}
           GISCUS_GISCUS_DATA_CATEGORY_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
-          YOUTUBE_API_TOKEN: ${{ secrets.YOUTUBE_API_TOKEN }}
-          GMAIL: ${{ secrets.CESAR_PERSONAL_GMAIL }}
+          YOUTUBE_API_TOKEN:       ${{ secrets.YOUTUBE_API_TOKEN }}
+          GMAIL:                   ${{ secrets.CESAR_PERSONAL_GMAIL }}
 
-      - name: Install Minify deb package on Ubuntu
-        run: sudo apt-get update && sudo apt-get install --no-install-recommends --yes minify
-
-      # https://github.com/tdewolff/homebrew-tap/
-      #      - name: Install Minify using Homebrew
-      #        run: brew install tdewolff/tap/minify
-
-      # https://github.com/tdewolff/minify/tree/master/cmd/minify#usage
-      - name: Minify HTML files
+      - name: Install Minify
         run: |
-          minify --type=html --recursive --output "./" --match=\.html "./_site/" \
-          --html-keep-conditional-comments \
-          --html-keep-default-attrvals \
-          --html-keep-document-tags \
-          --html-keep-end-tags \
-          --verbose
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends --yes minify
 
-      - name: Minify JSON files
+      - name: Minify HTML
         run: |
-          minify --type=json --recursive --output "./" --match=\.json "./_site/" --verbose || true
+          minify --type=html --recursive --output="./" --match '\.html' "./_site/" \
+            --html-keep-conditional-comments \
+            --html-keep-default-attrvals \
+            --html-keep-document-tags \
+            --html-keep-end-tags \
+            --verbose
 
-      - name: Minify JavaScript files
-        run: |
-          minify --mime=application/javascript --recursive --output "./" --match=\.js "./_site/js" --verbose || true
+      - name: Minify JSON
+        run: minify --type=json --recursive --output="./" --match '\.json' "./_site/" --verbose || true
 
-      - name: Minify CSS files
-        run: |
-          minify --type=css --recursive --output "./" --match=\.css "./_site/css" --verbose || true
+      - name: Minify JavaScript
+        run: minify --mime=application/javascript --recursive --output="./" --match '\.js' "./_site/js" --verbose || true
 
-      - name: Deploy
+      - name: Minify CSS
+        run: minify --type=css --recursive --output="./" --match '\.css' "./_site/css" --verbose || true
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: success()
         with:
