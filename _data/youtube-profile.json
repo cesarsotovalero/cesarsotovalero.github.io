@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "skYrl0h_sRm2ga986c4XSWOpR2w",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "sPeN15M39FE07nK2PF5XsCptk3w",
+      "id": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "snippet": {
+        "title": "C\u00e9sar Soto Valero",
+        "description": "I simplify complex AI/ML concepts and empower folks to achieve their goals by sharing the fundamentals and real-world insights that I\u2019ve gained through decades of education, research, and work experience.",
+        "customUrl": "@cesarsotovalero",
+        "publishedAt": "2016-03-24T20:49:46Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/VA1qa6qXRP07mVRur_JrfQ4x_MkmH3djuJ0o_ViS1hGMKV_91h9q0CXIvRQC-jURNj_95-cs=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/VA1qa6qXRP07mVRur_JrfQ4x_MkmH3djuJ0o_ViS1hGMKV_91h9q0CXIvRQC-jURNj_95-cs=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/VA1qa6qXRP07mVRur_JrfQ4x_MkmH3djuJ0o_ViS1hGMKV_91h9q0CXIvRQC-jURNj_95-cs=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "C\u00e9sar Soto Valero",
+          "description": "I simplify complex AI/ML concepts and empower folks to achieve their goals by sharing the fundamentals and real-world insights that I\u2019ve gained through decades of education, research, and work experience."
+        },
+        "country": "SE"
+      },
+      "statistics": {
+        "viewCount": "18130",
+        "subscriberCount": "306",
+        "hiddenSubscriberCount": false,
+        "videoCount": "22"
+      }
+    }
+  ]
+}
