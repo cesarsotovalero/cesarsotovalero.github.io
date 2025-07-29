@@ -19,7 +19,7 @@ The International English Language Testing System (IELTS) is one of the major En
 It is jointly managed by the British Council, IELTS Australia, and Cambridge English Language Assessment.
 IELTS is accepted by most Australian, British, Canadian, and New Zealand academic institutions, by over 3,000 educational institutions in the United States, and by many professional organizations across the world.
 
-{% youtube GRd2nxNTZDI %}
+<!-- {% youtube GRd2nxNTZDI %} -->
 
 There are two versions of the test, **IELTS Academic** and **IELTS General Training**.
 The first is intended for those who want to enroll in universities and other institutions for higher education, while the latter is for test-takers who want to work, study at a secondary school, or migrate to an English-speaking country.
