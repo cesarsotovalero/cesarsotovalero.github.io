@@ -16,7 +16,7 @@ published: true
    <a href="/linkedin/comments.html" class="list-filter">By Comments</a>
 </div>
 
-{% assign sorted_posts = site.data.linkedin-posts.data | sort: "totalReactionCount" | reverse %}
+{% assign sorted_posts = site.data.linkedin-posts.data.posts | sort: "totalReactionCount" | reverse %}
 
 <div class="linkedin-posts-container post-preview">
   {% for post in sorted_posts %}
@@ -25,11 +25,11 @@ published: true
       <div class="linkedin-post-text">
         <h3 class="linkedin-post-title">{{ post.text | truncatewords: 15 }}</h3>
         <p class="linkedin-post-description">
-          Posted on {{ post.postedDate | date: "%b %-d, %Y" }}          
+          Posted on {{ post.postedDate | date: "%b %-d, %Y" }}
         </p>
         <p class="linkedin-post-stats">
-          <span>👍 Reactions: {{ post.totalReactionCount | default: 0 }}</span> | 
-          <span>💬 Comments: {{ post.commentsCount | default: 0 }}</span> | 
+          <span>👍 Reactions: {{ post.totalReactionCount | default: 0 }}</span> |
+          <span>💬 Comments: {{ post.commentsCount | default: 0 }}</span> |
           <span>🔁 Repost: {{ post.repostsCount | default: 0 }}</span>
         </p>
       </div>
@@ -49,7 +49,7 @@ published: true
           {% endif %}
         {% endif %}
       {% endfor %}
-      
+
       {% if largest_image %}
       <div class="linkedin-post-thumbnail">
         <img src="{{ largest_image }}" alt="LinkedIn Post Image">
