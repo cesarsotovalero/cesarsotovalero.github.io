@@ -25,7 +25,7 @@ published: true
       <div class="linkedin-post-text">
         <h3 class="linkedin-post-title">{{ post.text | truncatewords: 15 }}</h3>
         <p class="linkedin-post-description">
-          Posted on {{ post.posted_at.date }}
+          Posted on {{ post.posted_at.date | date: "%b %-d, %Y" }}
         </p>
         <p class="linkedin-post-stats">
           <span>👍 Reactions: {{ post.totalReactionCount | default: 0 }}</span> |

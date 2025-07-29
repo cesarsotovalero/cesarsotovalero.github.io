@@ -56,7 +56,7 @@ published: true
             <a href="{{ post.postUrl }}" target="_blank">{{ post.text | truncatewords: 15 }}</a>
             <div class="entry-date">
                 <!-- markdownlint-disable MD033 -->
-                <time datetime="{{ post.posted_at.date }}">{{ post.posted_at.date }}</time>
+                <time datetime="{{ post.posted_at.date }}">{{ post.posted_at.date | date: "%b %-d, %Y"}}</time>
                 <!-- markdownlint-enable MD033 -->
                 <!-- markdownlint-disable MD033 -->
                 <span class="post-stats">
