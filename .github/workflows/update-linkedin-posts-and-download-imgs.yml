@@ -23,8 +23,8 @@ jobs:
           echo "Fetching posts from date: $encodedDate"
           # Fetch LinkedIn posts using the API
           curl --request GET \
-            --url "https://linkedin-data-api.p.rapidapi.com/get-profile-posts?username=cesarsotovalero&postedAt=${encodedDate}" \
-            --header "x-rapidapi-host: linkedin-data-api.p.rapidapi.com" \
+            --url 'https://linkedin-scraper-api-real-time-fast-affordable.p.rapidapi.com/profile/posts?username=cesarsotovalero' \
+            --header 'x-rapidapi-host: linkedin-scraper-api-real-time-fast-affordable.p.rapidapi.com' \
             --header "x-rapidapi-key: $RAPIDAPI_LINKEDIN_DATA_API_KEY" \
             -o linkedin-posts.json
 
@@ -32,17 +32,28 @@ jobs:
         run: |
           # If the JSON file already exists, merge new data with the existing entries.
           if [ -f _data/linkedin-posts.json ]; then
-            originalCount=$(jq '.data | length' _data/linkedin-posts.json)
+            # count existing posts
+            originalCount=$(jq '.data.posts | length' _data/linkedin-posts.json)
+            # merge posts arrays using posted_at.timestamp
             jq -s '{
               success: true,
               message: "",
-              data: (.[0].data + .[1].data | unique_by(.postedDateTimestamp) | sort_by(.postedDateTimestamp) | reverse)
+              data: {
+                posts: (.[0].data.posts + .[1].data.posts | unique_by(.posted_at.timestamp) | sort_by(.posted_at.timestamp) | reverse)
+              }
             }' linkedin-posts.json _data/linkedin-posts.json > merged.json
-            newCount=$(jq '.data | length' merged.json)
+            newCount=$(jq '.data.posts | length' merged.json)
             echo "Number of new entries added: $((newCount - originalCount))"
           else
-            jq '.data |= sort_by(.postedDateTimestamp) | .data |= reverse' linkedin-posts.json > merged.json
-            newCount=$(jq '.data | length' merged.json)
+            # initialize new feed sorted by timestamp
+            jq '{
+              success: true,
+              message: "",
+              data: {
+                posts: (.data.posts | sort_by(.posted_at.timestamp) | reverse)
+              }
+            }' linkedin-posts.json > merged.json
+            newCount=$(jq '.data.posts | length' merged.json)
             echo "Number of new entries added: $newCount"
           fi
           # Move the merged file to the _data directory, overwriting if it exists
@@ -63,15 +74,15 @@ jobs:
             exit 1
           fi
           # Process each post with error handling
-          jq -r '.data[] | select(.image != null and (.image | length > 0)) | @base64' _data/linkedin-posts.json | while read -r post_b64; do
+          jq -r '.data.posts[] | select(.media != null and (.media | length > 0)) | @base64' _data/linkedin-posts.json | while read -r post_b64; do
             [ -z "$post_b64" ] && continue
             post=$(echo "$post_b64" | base64 --decode)
-            posted_ts=$(echo "$post" | jq -r '.postedDateTimestamp // empty')
+            posted_ts=$(echo "$post" | jq -r '.posted_at.timestamp // empty')
             [ -z "$posted_ts" ] && { echo "Warning: Missing timestamp for post, skipping"; continue; }
             dir="assets/images/linkedin/${posted_ts}"
             mkdir -p "$dir"
             echo "$post" \
-              | jq -r '.image[] | select(.url != null) | @base64' 2>/dev/null \
+              | jq -r '.media[] | select(.url != null) | @base64' 2>/dev/null \
               | while read -r img_b64; do
                   [ -z "$img_b64" ] && continue
                   img=$(echo "$img_b64" | base64 --decode)
