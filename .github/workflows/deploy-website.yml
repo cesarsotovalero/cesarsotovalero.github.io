@@ -1,7 +1,4 @@
 name: Deploy
-permissions:
-  pages: write
-  id-token: write
 
 on:
   push:
@@ -18,16 +15,13 @@ jobs:
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-
-      - name: Install dependencies
-        run: bundle install
 
       - name: Building site
         run: JEKYLL_ENV=production bundle exec jekyll build --profile ben--trace
@@ -66,14 +60,12 @@ jobs:
         run: |
           minify --type=css --recursive --output "./" --match=\.css "./_site/css" --verbose || true
 
-      # Upload built site for GitHub Pages
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: success()
         with:
-          path: ./_site
-
-      # Deploy to GitHub Pages environment
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
-        with:
+          allow_empty_commit: false
+          cname: www.cesarsotovalero.net
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./_site/
