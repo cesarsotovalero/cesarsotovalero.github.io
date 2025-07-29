@@ -17,13 +17,13 @@ published: true
 </div>
 
 <div class="linkedin-posts-container post-preview">
-  {% for post in site.data.linkedin-posts.data %}
+  {% for post in site.data.linkedin-posts.data.posts %}
   <a href="{{ post.postUrl }}" target="_blank" class="linkedin-post-link">
     <div class="linkedin-post-card">
       <div class="linkedin-post-text">
         <h3 class="linkedin-post-title">{{ post.text | truncatewords: 15 }}</h3>
         <p class="linkedin-post-description">
-          Posted on {{ post.postedDate | date: "%b %-d, %Y" }}
+          Posted on {{ post.posted_at.date | date: "%b %-d, %Y" }}
         </p>
         <p class="linkedin-post-stats">
           <span>👍 Reactions: {{ post.totalReactionCount | default: 0 }}</span> |
@@ -31,7 +31,7 @@ published: true
           <span>🔁 Repost: {{ post.repostsCount | default: 0 }}</span>
         </p>
       </div>
-      {% assign image_folder = '/assets/images/linkedin/' | append: post.postedDateTimestamp | append: '/' %}
+      {% assign image_folder = '/assets/images/linkedin/' | append: post.posted_at.timestamp | append: '/' %}
       {% assign largest_image = nil %}
       {% assign max_width = 0 %}
       {% for file in site.static_files %}

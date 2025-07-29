@@ -18,8 +18,8 @@ published: true
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 {% assign years_list = "" | split: "" %}
-{% for post in site.data.linkedin-posts.data %}
-{% assign post_year = post.postedDate | date: "%Y" %}
+{% for post in site.data.linkedin-posts.data.posts %}
+{% assign post_year = post.posted_at.date | date: "%Y" %}
 {% unless years_list contains post_year %}
 {% assign years_list = years_list | push: post_year %}
 {% endunless %}
@@ -38,8 +38,8 @@ published: true
 <div id="full-tags-list">
     {% for year in reverse_years_list %}
     {% assign posts_count = 0 %}
-    {% for post in site.data.linkedin-posts.data %}
-        {% assign post_year = post.postedDate | date: "%Y" %}
+    {% for post in site.data.linkedin-posts.data.posts %}
+        {% assign post_year = post.posted_at.date | date: "%Y" %}
         {% if post_year == year %}
             {% assign posts_count = posts_count | plus: 1 %}
         {% endif %}
@@ -49,18 +49,22 @@ published: true
         &nbsp;{{- year -}}&nbsp;({{ posts_count }})
     </h3>
     <div class="post-list">
-        {% for post in site.data.linkedin-posts.data %}
-        {% assign post_year = post.postedDate | date: "%Y" %}
+        {% for post in site.data.linkedin-posts.data.posts %}
+        {% assign post_year = post.posted_at.date | date: "%Y" %}
         {% if post_year == year %}
         <div class="tag-entry">
             <a href="{{ post.postUrl }}" target="_blank">{{ post.text | truncatewords: 15 }}</a>
             <div class="entry-date">
-                <time datetime="{{ post.postedDate }}">{{ post.postedDate | date: date_format }}</time>
+                <!-- markdownlint-disable MD033 -->
+                <time datetime="{{ post.posted_at.date }}">{{ post.posted_at.date }}</time>
+                <!-- markdownlint-enable MD033 -->
+                <!-- markdownlint-disable MD033 -->
                 <span class="post-stats">
                     · 👍 {{ post.totalReactionCount | default: 0 }}
                     · 💬 {{ post.commentsCount | default: 0 }}
                     · 🔁 {{ post.repostsCount | default: 0 }}
                 </span>
+                <!-- markdownlint-enable MD033 -->
             </div>
         </div>
         {% endif %}
