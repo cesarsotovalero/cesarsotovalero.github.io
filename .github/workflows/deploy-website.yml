@@ -4,13 +4,12 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch:   # also allow manual runs, if you like
 
 env:
   RUBY_VERSION: 3.2.2
 
 jobs:
-  build_and_deploy:
+  deploy:
     runs-on: ubuntu-22.04
 
     steps:
@@ -21,43 +20,48 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-          bundler-cache: false    # our build Action handles caching
+          bundler-cache: false    # cache is handled by the Jekyll action
 
       - name: Build Jekyll site (with all plugins)
         uses: limjh16/jekyll-action-ts@v2
         with:
-          enable_cache: true      # cache vendor/bundle for speed
-          prettier: false         # disable extra formatting
-          # jekyll_src: '.'       # default is “find _config.yml”
-          # gem_src: '.'          # only needed if you have multiple Gemfiles
+          enable_cache: true      # caches vendor/bundle for speed
+          prettier: false         # skip extra formatting
         env:
-          GISCUS_DATA_REPO_ID:     ${{ secrets.GISCUS_DATA_REPO_ID }}
+          GISCUS_DATA_REPO_ID:           ${{ secrets.GISCUS_DATA_REPO_ID }}
           GISCUS_GISCUS_DATA_CATEGORY_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
-          YOUTUBE_API_TOKEN:       ${{ secrets.YOUTUBE_API_TOKEN }}
-          GMAIL:                   ${{ secrets.CESAR_PERSONAL_GMAIL }}
+          YOUTUBE_API_TOKEN:             ${{ secrets.YOUTUBE_API_TOKEN }}
+          GMAIL:                         ${{ secrets.CESAR_PERSONAL_GMAIL }}
 
       - name: Install Minify
         run: |
           sudo apt-get update
           sudo apt-get install --no-install-recommends --yes minify
 
-      - name: Minify HTML
+      - name: Minify HTML files
         run: |
-          minify --type=html --recursive --output="./" --match '\.html' "./_site/" \
+          minify \
+            --type=html \
+            --recursive \
+            --output="./" \
+            --match '\.html' "./_site/" \
             --html-keep-conditional-comments \
             --html-keep-default-attrvals \
             --html-keep-document-tags \
             --html-keep-end-tags \
             --verbose
 
-      - name: Minify JSON
-        run: minify --type=json --recursive --output="./" --match '\.json' "./_site/" --verbose || true
+      - name: Minify JSON files
+        run: |
+          minify --type=json --recursive --output="./" --match '\.json' "./_site/" --verbose || true
 
-      - name: Minify JavaScript
-        run: minify --mime=application/javascript --recursive --output="./" --match '\.js' "./_site/js" --verbose || true
+      - name: Minify JavaScript files
+        run: |
+          minify --mime=application/javascript --recursive --output="./" --match '\.js' "./_site/js" --verbose || true
 
-      - name: Minify CSS
-        run: minify --type=css --recursive --output="./" --match '\.css' "./_site/css" --verbose || true
+      - name: Minify CSS files
+        run: |
+          minify --type=css --recursive --output="./" --match '\.css' "./_site/css" --verbose || true
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
