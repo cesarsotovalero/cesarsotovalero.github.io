@@ -5,11 +5,16 @@ on:
     branches:
       - master
 
+permissions:
+  pages: write        # allow deploy-pages to publish
+  id-token: write     # allow OIDC for Pages deploy
+
 env:
   RUBY_VERSION: 3.2.2
 
 jobs:
-  deploy:
+  build:
+    name: Build & Upload
     runs-on: ubuntu-22.04
 
     steps:
@@ -20,7 +25,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-          bundler-cache: false    # cache is handled by the Jekyll action
+          bundler-cache: false    # caching handled by the Jekyll action
 
       - name: Build Jekyll site (with all plugins)
         uses: limjh16/jekyll-action-ts@v2
@@ -28,10 +33,10 @@ jobs:
           enable_cache: true      # caches vendor/bundle for speed
           prettier: false         # skip extra formatting
         env:
-          GISCUS_DATA_REPO_ID:           ${{ secrets.GISCUS_DATA_REPO_ID }}
+          GISCUS_DATA_REPO_ID:            ${{ secrets.GISCUS_DATA_REPO_ID }}
           GISCUS_GISCUS_DATA_CATEGORY_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
-          YOUTUBE_API_TOKEN:             ${{ secrets.YOUTUBE_API_TOKEN }}
-          GMAIL:                         ${{ secrets.CESAR_PERSONAL_GMAIL }}
+          YOUTUBE_API_TOKEN:              ${{ secrets.YOUTUBE_API_TOKEN }}
+          GMAIL:                          ${{ secrets.CESAR_PERSONAL_GMAIL }}
 
       - name: Install Minify
         run: |
@@ -63,12 +68,22 @@ jobs:
         run: |
           minify --type=css --recursive --output="./" --match '\.css' "./_site/css" --verbose || true
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: success()
+      - name: Create CNAME file
+        run: echo 'www.cesarsotovalero.net' > _site/CNAME
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          allow_empty_commit: false
-          cname: www.cesarsotovalero.net
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./_site/
+          path: ./_site/
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-22.04
+    environment:
+      name: github-pages
+      url: https://www.cesarsotovalero.net
+
+    steps:
+      - name: Deploy artifact to GitHub Pages
+        uses: actions/deploy-pages@v4
