@@ -20,7 +20,7 @@ author: cesarsotovalero
 published: true
 ---
 
-{% youtube IrFS2e-4gqU %}
+{% include youtube.html id="IrFS2e-4gqU" %}
 
 Pursuing a PhD is a unique and personal experience.
 Admittedly, it is a journey ~~mostly~~ driven by personal ambitions and pride.

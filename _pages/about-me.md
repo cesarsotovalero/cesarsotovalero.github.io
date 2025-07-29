@@ -38,7 +38,7 @@ I've created a few [open-source projects](./software.html), some with 200+ stars
 
 # Education
 
-{% youtube Ub684G_aM5Q %}
+{% include youtube.html id="Ub684G_aM5Q" %}
 
 I hold a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se) (graduated in 2023).[^4]
 

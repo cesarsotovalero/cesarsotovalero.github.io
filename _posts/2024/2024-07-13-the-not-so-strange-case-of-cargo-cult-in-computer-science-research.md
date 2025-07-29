@@ -21,7 +21,7 @@ author: cesarsotovalero
 published: true
 ---
 
-{% youtube N7pY8VAt6g4 %}
+{% include youtube.html id="N7pY8VAt6g4" %}
 
 Everywhere, I see computer scientists that look like they are working on the right thing. 
 They spent a long time doing the thing, writing code to run it (in the best cases), and collecting results.

@@ -21,7 +21,7 @@ author: cesarsotovalero
 published: true
 ---
 
-{% youtube -EYVzXoq15o %}
+{% include youtube.html id="-EYVzXoq15o" %}
 
 Recently, a few friends kindly asked me to provide some feedback on their résumés. 
 They are all Computer Science PhD graduates looking to land a new job in the tech industry. 

@@ -21,7 +21,7 @@ Below is a non-exhaustive list of my talks in reverse chronological order.
 
 ## 2024
 
-{% youtube Xn1ShZPrw2o %}
+{% include youtube.html id="Xn1ShZPrw2o" %}
 
 - **The AI Secret: Why Predictive Machine Learning Still Rules The Real World**. Presented at _SEB Tech Day_ in Arenastaden Stockholm, October 2024. [Video](https://youtu.be/n1t3XEAyUgQ?si=3WKO3XZC_b_epmfo "video") [Slides](../files/presentations/The AI Secret - Why Predictive ML Still Rules the Real World.pptx)
 - **Dancing on Thin Ice - Leveraging Software Bill of Materials in Java**. Presented at [Jfokus](https://www.jfokus.se/talks/1661), Stockholm, February 2024. [Video](https://youtu.be/Xn1ShZPrw2o?si=sP5U0PATsrdHmwK1 "video"){:target="_blank"} [Slides](https://www.jfokus.se/jfokus24-preso/Dancing-on-Thin-Ice--Leveraging-Software-Bill-of-Materials-in-Java.pdf)
@@ -30,7 +30,7 @@ Below is a non-exhaustive list of my talks in reverse chronological order.
 
 ## 2023
 
-{% youtube 7IoXciSucw4 %}
+{% include youtube.html id="7IoXciSucw4" %}
 
 - **Preventing Software Supply Chain Attacks With Dependency Management Best Practices**. Presented at _SEB Tech Day_ in Arenastaden Stockholm, September 2023. [Video](https://youtu.be/7IoXciSucw4?si=CiANlBQtgmibmWci "video")
 - **Debloating Java Dependencies**. PhD defense presented at KTH, June 2023. [Video](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw "video") [Slides](../files/thesis/slides/cesar-phd-defense.pptx)
@@ -39,7 +39,7 @@ Below is a non-exhaustive list of my talks in reverse chronological order.
   
 ## 2022
 
-{% youtube HXj2B8eHmt4 %}
+{% include youtube.html id="HXj2B8eHmt4" %}
 
 - **Coverage-Based Debloating for Java Bytecode**. Presented at ESEC/FSE, Singapore, November 2022. [Video](https://youtu.be/HXj2B8eHmt4 "video")
 - **Automatic Software Debloating**. 80% PhD Seminar. Presented at KTH, November 2022. [Slides](../talks/80_percent_2022.pdf "pdf")
@@ -51,7 +51,7 @@ Below is a non-exhaustive list of my talks in reverse chronological order.
 
 ## 2021
 
-{% youtube 8SndbPMwdWE %}
+{% include youtube.html id="8SndbPMwdWE" %}
 
 - **DepClean: Automatically Revealing Bloated Software Dependencies in Maven Projects**. Presented at FOSDEM, February 2021. [Video](https://youtu.be/8SndbPMwdWE "video")
 - **The Software Production Landscape**. Presented at KTH, September 2021. [Slides](../files/presentations/software-production-landscape.pptx)

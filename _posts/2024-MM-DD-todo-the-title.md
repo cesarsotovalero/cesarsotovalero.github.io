@@ -95,7 +95,7 @@ TODO
   <iframe width="560" height="349" src="https://www.youtube.com/embed/IrFS2e-4gqU" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-{% youtube VIDEO_ID %}
+{% include youtube.html id="VIDEO_ID" %}
 
 # External Resources
 
