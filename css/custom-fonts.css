@@ -3,8 +3,8 @@
 
 @font-face {
   font-family: 'jetbrains_monoregular';
-  src: url('/fonts/JetBrainsMono/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2'),
-  url('/fonts/JetBrainsMono/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/JetBrainsMono/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2'),
+  url('/fonts/used-fonts/JetBrainsMono/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,8 +12,8 @@
 /* Use Operator Mono for italics */
 @font-face {
   font-family: 'jetbrains_monoregular';
-  src: url('/fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2'),
-  url('/fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2'),
+  url('/fonts/used-fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2');
   font-weight: 200;
   font-style: italic;
 }
@@ -21,64 +21,64 @@
 /* Operator Mono */
 @font-face {
   font-family: 'operator_mono';
-  src: url('/fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2'),
-  url('/fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2'),
+  url('/fonts/used-fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'operator_mono';
-  src: url('/fonts/Operator Mono/OperatorMono-Light.woff2') format('woff2'),
-  url('/fonts/Operator Mono/OperatorMono-Light.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Operator Mono/OperatorMono-Light.woff2') format('woff2'),
+  url('/fonts/used-fonts/Operator Mono/OperatorMono-Light.woff2') format('woff2');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Century Supra T4';
-  src: url('/fonts/Century Supra/CenturySupraT4.woff2') format('woff2'),
-  url('/fonts/Century Supra/CenturySupraT4.woff') format('woff');
+  src: url('/fonts/used-fonts/Century Supra/CenturySupraT4.woff2') format('woff2'),
+  url('/fonts/used-fonts/Century Supra/CenturySupraT4.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Century Supra T4';
-  src: url('/fonts/Century Supra/CenturySupraT4-Bold.woff2') format('woff2'),
-  url('/fonts/Century Supra/CenturySupraT4-Bold.woff') format('woff');
+  src: url('/fonts/used-fonts/Century Supra/CenturySupraT4-Bold.woff2') format('woff2'),
+  url('/fonts/used-fonts/Century Supra/CenturySupraT4-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Century Supra C4';
-  src: url('/fonts/Century Supra/CenturySupraC4.woff2') format('woff2'),
-  url('/fonts/Century Supra/CenturySupraC4.woff') format('woff');
+  src: url('/fonts/used-fonts/Century Supra/CenturySupraC4.woff2') format('woff2'),
+  url('/fonts/used-fonts/Century Supra/CenturySupraC4.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Century Supra C4';
-  src: url('/fonts/Century Supra/CenturySupraC4-Bold.woff2') format('woff2'),
-  url('/fonts/Century Supra/CenturySupraC4-Bold.woff') format('woff');
+  src: url('/fonts/used-fonts/Century Supra/CenturySupraC4-Bold.woff2') format('woff2'),
+  url('/fonts/used-fonts/Century Supra/CenturySupraC4-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Equity Text A';
-  src: url('/fonts/Equity/equity_text_a_regular-webfont.woff') format('woff'),
-  url('/fonts/Equity/equity_text_a_regular-webfont.woff') format('woff');
+  src: url('/fonts/used-fonts/Equity/equity_text_a_regular-webfont.woff') format('woff'),
+  url('/fonts/used-fonts/Equity/equity_text_a_regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Equity Caps A';
-  src: url('/fonts/Equity/equity_caps_a_regular-webfont.woff') format('woff'),
-  url('/fonts/Equity/equity_caps_a_regular-webfont.woff') format('woff');
+  src: url('/fonts/used-fonts/Equity/equity_caps_a_regular-webfont.woff') format('woff'),
+  url('/fonts/used-fonts/Equity/equity_caps_a_regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -86,56 +86,56 @@
 
 @font-face {
   font-family: 'Concourse T6 Tab';
-  src: url('/fonts/Concourse/Concourse T6 Tab Regular.woff2') format('woff2'),
-  url('/fonts/Concourse/Concourse T6 Tab Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse T6 Tab Regular.woff2') format('woff2'),
+  url('/fonts/used-fonts/Concourse/Concourse T6 Tab Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Concourse T6';
-  src: url('/fonts/Concourse/Concourse T6 Regular.woff2') format('woff2'),
-  url('/fonts/Concourse/Concourse T6 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse T6 Regular.woff2') format('woff2'),
+  url('/fonts/used-fonts/Concourse/Concourse T6 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Concourse T4';
-  src: url('/fonts/Concourse/Concourse T4 Regular.woff2') format('woff2'),
-  url('/fonts/Concourse/Concourse T4 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse T4 Regular.woff2') format('woff2'),
+  url('/fonts/used-fonts/Concourse/Concourse T4 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Concourse C4';
-  src: url('/fonts/Concourse/Concourse C4 Regular.woff2') format('woff2'),
-  url('/fonts/Concourse/Concourse C4 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse C4 Regular.woff2') format('woff2'),
+  url('/fonts/used-fonts/Concourse/Concourse C4 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Concourse T3';
-  src: url('/fonts/Concourse/Concourse T3 Regular.woff2') format('woff2'),
-  url('/fonts/Concourse/Concourse T3 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse T3 Regular.woff2') format('woff2'),
+  url('/fonts/used-fonts/Concourse/Concourse T3 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Concourse T2';
-  src: url('/fonts/Concourse/Concourse T2 Regular.woff2') format('woff2'),
-  url('/fonts/Concourse/Concourse T2 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse T2 Regular.woff2') format('woff2'),
+  url('/fonts/used-fonts/Concourse/Concourse T2 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Concourse C3';
-  src: url('/fonts/Concourse/Concourse C3 Regular.woff2') format('woff2'),
-  url('/fonts/Concourse/Concourse C3 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse C3 Regular.woff2') format('woff2'),
+  url('/fonts/used-fonts/Concourse/Concourse C3 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

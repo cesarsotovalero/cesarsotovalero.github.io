@@ -191,6 +191,7 @@ exclude:
   - .ruby-version
   - vendor
   - feed.xml
+  - "fonts/unused-fonts"
 
 # prose.io config
 prose:
