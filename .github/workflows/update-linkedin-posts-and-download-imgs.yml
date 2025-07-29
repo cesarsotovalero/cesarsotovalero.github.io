@@ -73,37 +73,42 @@ jobs:
             echo "Error: Invalid JSON in _data/linkedin-posts.json"
             exit 1
           fi
-          # Process each post with error handling
-          jq -r '.data.posts[] | select(.media != null and (.media | length > 0)) | @base64' _data/linkedin-posts.json | while read -r post_b64; do
+          # Collect posts with media into an array to avoid broken pipes
+          mapfile -t posts < <(
+            jq -r '.data.posts[] | select(.media != null and (.media | length > 0)) | @base64' _data/linkedin-posts.json
+          )
+          for post_b64 in "${posts[@]}"; do
             [ -z "$post_b64" ] && continue
             post=$(echo "$post_b64" | base64 --decode)
             posted_ts=$(echo "$post" | jq -r '.posted_at.timestamp // empty')
             [ -z "$posted_ts" ] && { echo "Warning: Missing timestamp for post, skipping"; continue; }
             dir="assets/images/linkedin/${posted_ts}"
             mkdir -p "$dir"
-            echo "$post" \
-              | jq -r '.media[] | select(.url != null) | @base64' 2>/dev/null \
-              | while read -r img_b64; do
-                  [ -z "$img_b64" ] && continue
-                  img=$(echo "$img_b64" | base64 --decode)
-                  url=$(echo "$img" | jq -r '.url // empty')
-                  width=$(echo "$img" | jq -r '.width // empty')
-                  height=$(echo "$img" | jq -r '.height // empty')
-                  if [ -z "$url" ] || [ -z "$width" ] || [ -z "$height" ]; then
-                    echo "Warning: Missing image properties, skipping"
-                    continue
-                  fi
-                  filename="${width}x${height}.jpg"
-                  output_path="${dir}/${filename}"
-                  if [ ! -f "$output_path" ]; then
-                    echo "Downloading image to $output_path"
-                    if ! curl -L "$url" -o "$output_path"; then
-                      echo "Failed to download $url, skipping"
-                    fi
-                  else
-                    echo "Image $output_path already exists, skipping"
-                  fi
-                done
+            # Collect images into array
+            mapfile -t images < <(
+              echo "$post" | jq -r '.media[] | select(.url != null) | @base64'
+            )
+            for img_b64 in "${images[@]}"; do
+              [ -z "$img_b64" ] && continue
+              img=$(echo "$img_b64" | base64 --decode)
+              url=$(echo "$img" | jq -r '.url // empty')
+              width=$(echo "$img" | jq -r '.width // empty')
+              height=$(echo "$img" | jq -r '.height // empty')
+              if [ -z "$url" ] || [ -z "$width" ] || [ -z "$height" ]; then
+                echo "Warning: Missing image properties, skipping"
+                continue
+              fi
+              filename="${width}x${height}.jpg"
+              output_path="${dir}/${filename}"
+              if [ ! -f "$output_path" ]; then
+                echo "Downloading image to $output_path"
+                if ! curl -L "$url" -o "$output_path"; then
+                  echo "Failed to download $url, skipping"
+                fi
+              else
+                echo "Image $output_path already exists, skipping"
+              fi
+            done
           done
 
       - name: Commit and push changes if any
