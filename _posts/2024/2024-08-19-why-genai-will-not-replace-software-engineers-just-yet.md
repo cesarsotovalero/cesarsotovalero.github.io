@@ -25,7 +25,7 @@ The field of Generative Artificial Intelligence (GenAI) has made incredible stri
 The excitement is well justified.  
 Today's GenAI systems can perform common software development tasks more efficiently than many human engineers.
 
-{% youtube kw7fvHf4rDw %}
+{% include youtube.html id="kw7fvHf4rDw" %}
 
 I've experienced the power of this technology firsthand.  
 [ChatGPT-4o](https://chatgpt.com/?model=gpt-4o) is truly impressive at fixing bugs, refactoring code, and even adding entirely new features to my software projects.  

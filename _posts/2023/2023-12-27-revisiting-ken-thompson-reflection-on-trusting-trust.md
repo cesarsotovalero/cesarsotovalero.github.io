@@ -21,7 +21,7 @@ author: cesarsotovalero
 published: true
 ---
 
-{% youtube jdnWhkgA_rM %}
+{% include youtube.html id="jdnWhkgA_rM" %}
 
 Let me ask:
 _Would you trust a cracked version of [Adobe Photoshop](https://en.wikipedia.org/wiki/Adobe_Photoshop) downloaded from a random website?_

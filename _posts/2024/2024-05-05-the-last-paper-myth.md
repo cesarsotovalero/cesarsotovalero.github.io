@@ -21,7 +21,7 @@ author: cesarsotovalero
 published: true
 ---
 
-{% youtube -3txwKTHe4Y %}
+{% include youtube.html id="-3txwKTHe4Y" %}
 
 Last week, I met a colleague from a renowned research lab.
 She is currently doing the last year of her PhD.

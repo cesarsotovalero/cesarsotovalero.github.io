@@ -20,7 +20,7 @@ author: cesarsotovalero
 published: true
 ---
 
-{% youtube mp_jSfUACrs %}
+{% include youtube.html id="mp_jSfUACrs" %}
 
 The software supply chain comprises all the technology involved in shipping a piece of code from development to its deployment in a production environment.
 Several actors and different technologies participate in this complex process, e.g., developers, IDEs, compilers, package managers, and so on.
