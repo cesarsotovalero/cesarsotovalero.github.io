@@ -1,6 +1,7 @@
 # Auto-generate blog stats data file
 # Writes _data/blog-stats.json with the count of published posts
 require 'json'
+require 'fileutils'
 
 Jekyll::Hooks.register :site, :post_read do |site|
   # Select posts with published: true in front matter
