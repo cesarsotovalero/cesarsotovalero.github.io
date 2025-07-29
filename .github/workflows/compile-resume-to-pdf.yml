@@ -14,10 +14,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: true
-      - name: Install Jekyll dependencies
-        run: |
-          gem install bundler
-          bundle install
+
       - name: Build site to generate blog stats
         run: |
           bundle exec jekyll build --quiet

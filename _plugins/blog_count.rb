@@ -1,5 +1,5 @@
 # Auto-generate blog stats data file
-# Writes _data/blog_stats.json with the count of published posts
+# Writes _data/blog-stats.json with the count of published posts
 require 'json'
 
 Jekyll::Hooks.register :site, :post_read do |site|
@@ -13,5 +13,5 @@ Jekyll::Hooks.register :site, :post_read do |site|
     File.join(data_dir, 'blog_stats.json'),
     JSON.pretty_generate(stats)
   )
-  Jekyll.logger.info "blog_count:", "Wrote #{stats['published_posts']} published_posts to _data/blog_stats.json"
+  Jekyll.logger.info "blog_count:", "Wrote #{stats['published_posts']} published_posts to _data/blog-stats.json"
 end
