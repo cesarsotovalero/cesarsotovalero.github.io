@@ -15,11 +15,11 @@ date: 2017/10/26
 published: true
 ---
 
-{% youtube GRd2nxNTZDI %}
-
 The International English Language Testing System (IELTS) is one of the major English language tests for higher education and immigration in the world.
 It is jointly managed by the British Council, IELTS Australia, and Cambridge English Language Assessment.
 IELTS is accepted by most Australian, British, Canadian, and New Zealand academic institutions, by over 3,000 educational institutions in the United States, and by many professional organizations across the world.
+
+{% youtube GRd2nxNTZDI %}
 
 There are two versions of the test, **IELTS Academic** and **IELTS General Training**.
 The first is intended for those who want to enroll in universities and other institutions for higher education, while the latter is for test-takers who want to work, study at a secondary school, or migrate to an English-speaking country.
@@ -37,7 +37,7 @@ Once you complete the test, your IELTS results will be available 13 days afterwa
 
 <figure class="jb_picture">
   {% responsive_image width: "50%" border: "1px solid #808080" path: img/posts/2017/IELTS_Test_Report_Form.jpg alt: "My official IELTS test report form." %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; My official IELTS test report form.
   </figcaption>
 </figure>
@@ -66,7 +66,7 @@ By "understand" I mean mastering all the details of the test's structure.
 Practicing for IELTS is not about doing one or two parts of the tests separately but completing dozens of full tests just like the real one.
 Take into account that you should be prepared not for a regular English exam but for a very particular type of test that will force you to put your mind and skills to their limits.
 
-In the following, I will divide each section of the test into parts and give suggestions and personal remarks about what is required to be completed in each of them. 
+In the following, I will divide each section of the test into parts and give suggestions and personal remarks about what is required to be completed in each of them.
 
 # Listening
 
@@ -169,7 +169,7 @@ There are only three kinds of essay topics in IELTS:
 3. Present a **situation**, and you need to explore reasons why it is what it is, assume what will happen in the future, and suggest solutions to problems if required.
 
 I trained on my own structure to write each of these three kinds of essays.
-After a little practice, I discovered that I could write a good essay on almost all the given topics by applying the same patterns. 
+After a little practice, I discovered that I could write a good essay on almost all the given topics by applying the same patterns.
 If you want to know how I did it, I recommend you study these two sources [1](https://www.ieltsadvantage.com/writing-task-1/) and [2](https://www.ieltsadvantage.com/writing-task-2/).
 
 # Speaking
