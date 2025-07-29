@@ -1,4 +1,4 @@
-name: Update YouTube Videos
+name: Update YouTube Metadata
 
 on:
   schedule:
@@ -20,14 +20,14 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Fetch YouTube Metadata
+      - name: Fetch YouTube Videos
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}
         run: |
           python scripts/fetch_all_youtube_videos.py
 
-      - name: Fetch YouTube profile
+      - name: Fetch YouTube Profile
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}
