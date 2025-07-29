@@ -1,5 +1,0 @@
-@startuml
-
-[First] - [Second]
-
-@enduml

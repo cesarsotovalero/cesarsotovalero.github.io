@@ -1,0 +1,538 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml lang=en-us xml:lang=en-US itemscope itemtype=http://schema.org/WebSite><head><script>(function(){let a=localStorage.getItem('theme');a==='dark'&&document.documentElement.setAttribute('data-theme','dark')})()</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>On the Rise, Decline, and Persistence of Web Technologies</title><meta name=keywords content="world wide web historyevolution of the internetweb technologies past and presentfrontend developmentjavascript"><link rel=alternate type=application/rss+xml title="César Soto Valero  César - Computer Scientist" href=https://www.cesarsotovalero.net/feed.xml><script src=https://cdn.jsdelivr.net/npm/typed.js@2.0.12></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel=stylesheet><link rel=apple-touch-icon sizes=180x180 href=../img/favicon/redketchup/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../img/favicon/redketchup/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../img/favicon/redketchup/favicon-16x16.png><link rel=manifest href=../img/favicon/redketchup/site.webmanifest><link id=code rel=stylesheet href=../css/pygment_highlights.css><script src=https://d3js.org/d3.v7.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-107061705-1')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","bs3gcidnol")</script><script src=../js/anchor.min.js></script>
+<link rel=stylesheet href=//use.fontawesome.com/releases/v5.12.0/css/all.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/bootstrap-social.css><link rel=stylesheet href=/css/main.css><link rel=stylesheet href=/css/academicons.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel=stylesheet href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name=generator content="Jekyll v4.3.2"><meta property="og:title" content="On the Rise, Decline, and Persistence of Web Technologies"><meta name=author content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name=description content="The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn’t pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web’s history. Those who don’t know tech history are doomed to repeat past engineering mistakes."><meta property="og:description" content="The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn’t pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web’s history. Those who don’t know tech history are doomed to repeat past engineering mistakes."><link rel=canonical href=https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html><meta property="og:url" content="https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2024-04-27T00:00:00-07:00"><meta name=twitter:card content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg"><meta property="twitter:title" content="On the Rise, Decline, and Persistence of Web Technologies"><meta name=twitter:site content="@cesarsotovalero"><meta name=twitter:creator content="@César Soto Valero"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"César Soto Valero","url":"https://www.cesarsotovalero.net/about-me"},"dateModified":"2025-07-29T11:52:25-07:00","datePublished":"2024-04-27T00:00:00-07:00","description":"The web is (arguably) the only tech platform that has been continuously transformed and evolved at a global scale over the last 30 years. How was this possible? What can we learn from the past technical mistakes and successes? Over the years, I have witnesses the emergence of various web technologies. Some were revolutionary, while others didn’t pass the test of time. In this article, I dive into the evolution of web technologies from the 1990s to the present. My focus is on the engineering paradigms that marked inflection points in web’s history. Those who don’t know tech history are doomed to repeat past engineering mistakes.","headline":"On the Rise, Decline, and Persistence of Web Technologies","image":"https://www.cesarsotovalero.net/img/posts/2024/2024-04-27/infinite-park-cover.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024.jpg"},"name":"César Soto Valero"},"url":"https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html"}</script><script type=text/x-mathjax-config> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+   </script><script type=text/x-mathjax-config>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+   </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type=text/javascript></script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class=navbar-toggle type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id=navbarSupportedContent><ul class="navigation list-inline text-center footer-links" id=black-icons><li class="nav-item navbar-custom" title=Home><a id=navbar-brand href=https://www.cesarsotovalero.net>Home</a></li><li class="nav-item navbar-custom"><a href=/blog>Blog</a></li><li class="nav-item navbar-custom"><a href=/linkedin>LinkedIn</a></li><li class="nav-item navbar-custom"><a href=/youtube>YouTube</a></li><li class="nav-item navbar-custom"><a href=/podcasts>Podcasts</a></li><li class="nav-item navbar-custom"><a href=/talks>Talks</a></li><li class="nav-item navbar-custom"><a href=/about-me>About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href=# id=theme-toggle onclick=modeSwitcher() style=cursor:pointer></a></li></ul></div></nav><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class=header-image style=padding-left:15px><div class="row justify-content-center" style=margin-right:0;margin-left:0></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><h1 class=no-anchor>On the Rise, Decline, and Persistence of Web Technologies</h1><h2 class=post-subheading>From Static HTML Pages to WebAssembly</h2><div class="container flex-container"><a href=https://www.cesarsotovalero.net/about-me><img class=avatar-img-small src=/img/pages/cesar/avatar-icon-2024.jpg alt="César Soto Valero" id=meta-img></a><div class=flex-item><span class=post-meta>Posted on April 27, 2024</span><div><span class=post-meta title="Estimated read time"><svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg>&nbsp;40 mins read</span>
+<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>web</span></div></div></div><div class=flex-item><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style=margin-left:0><section id=share-section><script type=text/javascript src=https://storage.ko-fi.com/cdn/widget/Widget_2.js></script><script type=text/javascript>kofiwidget2.init('Support this blog','#7aa4d1','G2G3CRPPI'),kofiwidget2.draw()</script></section></div></div></div><div class=cesarcarbon id=cesarcarbonads-post><script async type=text/javascript src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id=_carbonads_js></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"><ol id=toc class=section-nav><li class="toc-entry toc-h1"><a href=#the-world-wide-web>The World Wide Web</a></li><li class="toc-entry toc-h1"><a href=#timeline-of-web-technologies>Timeline of Web Technologies</a></li><li class="toc-entry toc-h1"><a href=#summary>Summary</a></li><li class="toc-entry toc-h1"><a href=#external-resources>External Resources</a></li><li class="toc-entry toc-h1"><a href=#footnotes>Footnotes</a></li></ol></div></div></div></div></header><div class=container><div class=row><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=blog-post><p>I’ve been doing some frontend web development lately as part of my daily job.<sup id=fnref:1><a href=#fn:1 class=footnote rel=footnote role=doc-noteref>1</a></sup>
+Along the way, I’ve been thinking on how the whole thing is built under the hood.
+The web technologies that we all use every day have changed and evolved over time.
+While digging into this topic, I realized that some of the underlying technical solutions that fuel the World Wide Web are really brilliant, while others are still a mess.
+From an engineering perspective, there are many lessons we can learn from it.
+So I decided to write about it in this post.
+What follows is my modest attempt to do so.
+As a disclaimer, this blog post is not about <a href=https://en.wikipedia.org/wiki/History_of_the_Internet>the history of the internet</a>, which has already been well documented.
+Instead, I focus on the different architectures and patterns that have radically changed the way web technologies are developed.
+This includes new paradigms that have opened up possibilities for what was previously impossible, like Single Page Applications (SPAs) and AJAX.
+From those that became obsolete, like Java Applets, to those that have stood the test of time, like Static HTML, to the recent emergence of WebAssembly and the ongoing attempt to decentralize the web.
+If you are a <del>nerd</del> engineer, a web developer, or just curious about how the web works internally, you’re likely to find this post interesting.
+Those who don’t know tech history are doomed to repeat past engineering mistakes.
+This is gonna be a long one, so grab a coffee and let’s go!</p><figure class=jb_picture><img width style=border: src=/assets/resized/infinite-park-640x373.jpg alt="The World Wide Web, and infinite park of data continuously streamed" data-srcset="/assets/resized/infinite-park-640x373.jpg 640w,/assets/resized/infinite-park-768x448.jpg 768w,/assets/resized/infinite-park-1024x597.jpg 1024w,/assets/resized/infinite-park-1366x797.jpg 1366w,/assets/resized/infinite-park-1600x933.jpg 1600w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>&#169; The World Wide Web is a seeming infinity data dumping and pumping platform. It has been transformed and evolved at unprecedented speed over the last 30 years. The picture shows an art piece titled "Infinite Park" exposed at <a href=https://maps.app.goo.gl/75AGyCg5QpzjQeFR8>Stockholm's Paradox Museum</a>.</figcaption></figure><h1 id=the-world-wide-web>The World Wide Web</h1><p>The <a href=https://en.wikipedia.org/wiki/World_Wide_Web>World Wide Web (WWW)</a>, as we know it today, is basically a vast collection of data accessible through <strong>the internet</strong>.
+The internet ensures that the data (i.e., <code class="language-plaintext highlighter-rouge">0</code>s and <code class="language-plaintext highlighter-rouge">1</code>s), is constantly transmitted from servers to clients and vice versa.
+Most users perceive the web through the data that is rendered by <strong>web browsers</strong>.
+Browsers are software applications that rely on various <strong>web technologies</strong> to transform the data into more readable and human-friendly web pages.
+These three core layers (highlighted above with bold font) are responsible for keeping the web alive.
+This post dives deep into the last layer: web technologies.
+But before that, let’s take a look at the big picture.</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+graph TB;
+subgraph "World Wide Web"
+  B -- data --&gt; C[💻 Web Browsers] 
+  A[(🌐 Internet)] -- data --&gt; B([🔧 Web Technologies])
+  C -- data --&gt; B
+  B -- data --&gt; A
+end
+</code></pre><h2 id=the-internet>The Internet</h2><figure class=badge><a href=https://www.lk.cs.ucla.edu/data/files/Kleinrock/Information%20Flow%20in%20Large%20Communication%20Nets.pdf><img src=/img/badges/leonard-kleinrock-dissertation.png style=width:140px;max-width:100% alt=badge></a></figure><p>Most sources agree that the internet was created in the 1960s by <a href=https://en.wikipedia.org/wiki/ARPANET>ARPANET</a>, a research project supported by the <a href=https://en.wikipedia.org/wiki/DARPA>DARPA</a> agency of the United States.<sup id=fnref:2><a href=#fn:2 class=footnote rel=footnote role=doc-noteref>2</a></sup>
+The concept of “the internet” itself dates back to the first paper about packet switching written in 1961 by the american engineer <a href=https://www.lk.cs.ucla.edu/index.html>Leonard Kleinrock</a>.
+In his PhD thesis titled “<a href="https://historyofinformation.com/detail.php?id=788">Information Flow in Large Communication Nets</a>,” he proposed <strong>a network of computers</strong> that could send data to each other.
+That’s exactly what the modern internet does at its core!</p><p>The internet and the web, while often used interchangeably, refer to different concepts.<br>The internet is the global network of interconnected computers that can communicate with each other by agreeing on using the same <strong>data transfer protocol</strong>.
+For example, the <a href=https://en.wikipedia.org/wiki/Internet_Protocol>Internet Protocol (IP)</a> is the most used to transmit data across the internet.
+Here the sense of “global” is key, as it transcends geographical barriers between countries (a more restrictive version of the internet is called “intranet” instead).<sup id=fnref:4><a href=#fn:4 class=footnote rel=footnote role=doc-noteref>3</a></sup></p><p>The internet is built thanks to physical infrastructure <a href=http://thescienceexplorer.com/technology/our-wi-fi-world-internet-still-depends-undersea-cables>like submarine cables</a>, which are crucial for its operation.
+The web, on the other hand, refers to the information that can be accessed through the internet.
+It consists of the protocols and technologies designed to support data transfer between servers.
+Essentially, the web is just one of several services that utilize the internet infrastructure to disseminate information.
+But note that there are other services as well, such as file transfer services, email, VoIP, or streaming platforms.</p><figure class=jb_picture><img width=50% style="border:1px solid gray" src=/assets/resized/submarine-cable-map-640x414.png alt="Submarine cable map" data-srcset="/assets/resized/submarine-cable-map-640x414.png 640w,/assets/resized/submarine-cable-map-768x497.png 768w,/assets/resized/submarine-cable-map-1024x662.png 1024w,/assets/resized/submarine-cable-map-1366x883.png 1366w,/assets/resized/submarine-cable-map-1600x1035.png 1600w,/assets/resized/submarine-cable-map-1920x1242.png 1920w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>Figure 1. The internet, originated in 1961, is now mostly driven by submarine cables, not satellites. This could be a good point to justify the mess of cables in my desk, the whole world cannot get rid of them! <a href=https://www.submarinecablemap.com/>Source</a></figcaption></figure><p>The idea of a <strong>global internet</strong> has been around since the early 1970s.
+However, initially accessing documents remotely involved complex processes using services such as <a href=https://en.wikipedia.org/wiki/File_Transfer_Protocol>FTP</a>, <a href=https://en.wikipedia.org/wiki/Network_News_Transfer_Protocol>NNTP</a>, and the <a href=https://en.wikipedia.org/wiki/Gopher_(protocol)>Gopher protocol</a>.
+These protocols, still in use today, provide a simple directory structure from which users can navigate and select files to download, but they do not support a direct visualization of the information being transferred.
+This limitation highlighted the need for a new protocol that would enable users to render documents directly through dedicated software applications.
+It was this (probably) the main incentive that led to the creation of the World Wide Web (WWW).
+Today’s WWW is predominantly made up of HTML documents and other resources, interconnected through <a href=https://en.wikipedia.org/wiki/URL>URLs</a>.
+These resources are accessed and retrieved using a wonderful piece of software called “web browser,” which communicates back and forward with the internet servers and displays content to the end users.</p><h2 id=web-browsers>Web Browsers</h2><p>In the early 1990s, the development of web browsers rapidly transformed the internet.<sup id=fnref:6><a href=#fn:6 class=footnote rel=footnote role=doc-noteref>4</a></sup>
+Sir <a href=https://en.wikipedia.org/wiki/Tim_Berners-Lee>Tim Berners-Lee</a>,<sup id=fnref:3><a href=#fn:3 class=footnote rel=footnote role=doc-noteref>5</a></sup> at CERN, created the first web browser and web editor named “<a href=https://en.wikipedia.org/wiki/WorldWideWeb>WorldWideWeb</a>,” later renamed “Nexus,” in 1990 (another poof that long camel cased names are a bad idea in general).
+This browser initially ran on the <a href=https://en.wikipedia.org/wiki/NeXTSTEP>NeXTSTEP operating system</a> (yeah, that’s the OS of the NeXT Computer founded by Steve Jobs, which didn’t go anywhere, as neither the browser did).
+Despite its failure, it laid the groundwork for building public web by allowing users to both browse and edit web pages.
+By February 1992, Berners-Lee’s team at CERN released the <a href=https://en.wikipedia.org/wiki/Line_Mode_Browser>Line Mode Browser</a>, the first multi-platform browser.
+Between 1992 and 1995, several browsers such as Viola, Mosaic, Cello, Netscape Navigator, Opera, and Internet Explorer 1.0 were launched.
+The emergence of diverse browsers supported in different platforms dramatically opened up internet access to anyone with a computer and an internet connection.</p><figure class=jb_picture><img width=50% style="border:1px solid gray" src=/assets/resized/nexus-web-browser-640x475.png alt="Submarine cable map" data-srcset="/assets/resized/nexus-web-browser-640x475.png 640w,/assets/resized/nexus-web-browser-768x571.png 768w,/assets/resized/nexus-web-browser-1024x761.png 1024w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>Figure 2. Nexus, the first web browser, as it was in 1994. It didn't make it, despite its cool name. <a href=https://digital-archaeology.org/the-nexus-browser/>Source</a></figcaption></figure><aside class=quote><em>“Web browsers are by far the most successful software application ever created in the history of computing.”</em></aside><p>Over the last decades, web browsers have evolved to become complex software systems (e.g., Firefox and Chrome reported having roughly <a href=https://openhub.net/p/firefox>30M</a> and <a href=https://openhub.net/p/chrome/analyses/latest/languages_summary>40M</a> lines of code in total, respectively).
+Modern browsers are capable of handling not just text and images, but also running complex applications like real-time video games, 3D animations, and PDF documents.
+It required a lot of engineering effort to make this possible through web technologies.
+For example, the <a href=https://v8.dev/>V8 JavaScript Engine</a> included in Chrome is renowned for its high performance due to just-in-time (JIT) compilation, efficient garbage collection, and optimizations for real-time execution in web browsers.
+Web browsers are by far the most successful software application ever created in the history of computing.</p><h2 id=web-technologies>Web Technologies</h2><p>Initially created in the 1990s to link research papers via “hyperlinks,” <strong>the web</strong> quickly grew beyond its academic origins.
+The world’s first website and web server were hosted at CERN.<sup id=fnref:7><a href=#fn:7 class=footnote rel=footnote role=doc-noteref>6</a></sup>
+On April 30th of 1993, the CERN issued a <a href=https://home.cern/science/computing/birth-web/licensing-web>public statement</a> relinquishing all intellectual property rights to the World Wide Web.
+Thus making it freely accessible without any fees.
+This decision fostered an environment of unrestricted expansion and innovation in web technologies.
+Berners-Lee left CERN in October 1994 to form the <a href=https://www.w3.org/>World Wide Web Consortium (W3C)</a>, which today includes around 500 member organizations from around the world.
+The W3C works to create standards for web development and serves as a forum for discussing web usage and development globally.</p><figure class=jb_picture><img width=50% style="border:1px solid gray" src=/assets/resized/first-www-proposal-640x537.png alt="Tim Berners-Lee's proposal for the World Wide Web" data-srcset="/assets/resized/first-www-proposal-640x537.png 640w,/assets/resized/first-www-proposal-768x645.png 768w,/assets/resized/first-www-proposal-1024x860.png 1024w,/assets/resized/first-www-proposal-1366x1147.png 1366w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>Figure 3. Figure in the first page of Tim Berners-Lee's proposal for the World Wide Web in March 1989. <a href=https://www.w3.org/History/1989/proposal.html>Source</a></figcaption></figure><p>I would like to remark that since its massification, the web landscape has undergone dramatic transformations due to the strategic pushes made by companies and nations to standardize certain web technologies.
+These technologies have added new capabilities that allow web applications to scale and operate differently from traditional software.
+For example, today’s web applications do not require installation or updates.
+They simply need a device with a web browser to run.
+This has led to the rise of web applications that can be accessed from any device with an internet connection, making them more accessible thanks to the wide spread of mobile phones.</p><p>Its rapid development has led to the rise and decline (almost obsolescence) of various technologies over time.
+In particular, there’s still an ongoing debate about whether to place the execution logic that consumes most of the computing power on the server or in the client.
+This decision impacts how applications on the web are built and interacted with.
+For example, Server-Side Rendering (SSR) is a technique where the server generates and processes the HTML content that is sent to the client (e.g., using any kind of programming language like Java, C, or Ruby).
+On the other hand, Client-Side Rendering (CSR) is a technique where the client’s browser generates the HTML content, mostly using JavaScript.
+SSR offers faster initial page loads and SEO benefits by pre-rendering HTML on the server.
+CSR provides a more dynamic and interactive user experience at the expenses of slower initial loads and SEO challenges due to content being rendered on the client’s browser.
+The choice between SSR and CSR is a trade-off that developers must consider when building web applications.</p><h1 id=timeline-of-web-technologies>Timeline of Web Technologies</h1><p>The following timeline illustrates the evolution of web technologies from the 1990s to the present, highlighting key developments that have changed the modern web landscape.</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+timeline
+  section 1990s
+    1990s to present: Static HTML Pages
+                    : Server-Side Rendering
+                    : Client-Side Rendering
+    1995s to 2010: Java Applets and Plugins
+    1995 to present: CSS and Dynamic Web Design
+  section 2000s
+    2005 to present: SPA and AJAX
+    2008 to present: WebSockets
+  section 2010s
+    2017 to present: Decentralized Web
+                   : WebAssembly    
+</code></pre><p>In the following sections, I delve into each of these technologies in more detail.</p><h2 id=static-html-pages>Static HTML Pages</h2><p>The first version of HTML was written by Tim Berners-Lee <a href=https://www.washington.edu/accesscomputing/webd2/student/unit1/module3/html_history.html>in 1993</a>.
+HTML is a <a href=https://en.wikipedia.org/wiki/Markup_language>markup language</a> based on <a href=https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language>SGML</a> that structures content by defining elements like headings, paragraphs, lists, and links using tags like <code class="language-plaintext highlighter-rouge">h1</code>, <code class="language-plaintext highlighter-rouge">p</code>, <code class="language-plaintext highlighter-rouge">ul</code>, and <code class="language-plaintext highlighter-rouge">a</code>, respectively.
+These elements compose what is known as the <a href=https://www.w3.org/TR/WD-DOM/introduction.html>Document Object Model (DOM)</a>, a tree-like structure that browsers use to render web pages.</p><p>In the dawn of the 1990s, the World Wide Web was essentially HTML pages connected via hyperlinks without any styling or data persistence.
+This early iteration of the web featured pages that were predominantly text-based, but later evolved to include images, GIFs, and other media.
+The HTML supported them by adding more tags like <code class="language-plaintext highlighter-rouge">img</code>, <code class="language-plaintext highlighter-rouge">video</code>, <code class="language-plaintext highlighter-rouge">audio</code>, and <code class="language-plaintext highlighter-rouge">canvas</code>.
+The simplicity of HTML was key to its success, making it possible for virtually anyone to create and publish content on the web without needing sophisticated technical skills.<sup id=fnref:5><a href=#fn:5 class=footnote rel=footnote role=doc-noteref>7</a></sup></p><p>The following is an example of a simple HTML page that displays a heading title, a paragraph, and an image:</p><figure class=highlight><pre><code class=language-html data-lang=html><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class=code><pre><span class=cp>&lt;!DOCTYPE html&gt;</span>
+<span class=nt>&lt;html&gt;</span>
+<span class=nt>&lt;head&gt;</span>
+  <span class=nt>&lt;title&gt;</span>My First Web Page<span class=nt>&lt;/title&gt;</span>
+<span class=nt>&lt;/head&gt;</span>
+<span class=nt>&lt;body&gt;</span>
+  <span class=nt>&lt;h1&gt;</span>Welcome to My First Web Page<span class=nt>&lt;/hh1&gt;</span>
+  <span class=nt>&lt;p&gt;</span>This is a simple web page created using HTML.<span class=nt>&lt;/p&gt;</span>
+  <span class=nt>&lt;img</span> <span class=na>src=</span><span class=s>"image.jpg"</span> <span class=na>alt=</span><span class=s>"An image"</span><span class=nt>&gt;</span>
+<span class=nt>&lt;/body&gt;</span>
+<span class=nt>&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>The fundamental architecture of the web during this era was straightforward.
+Web browsers requested files from servers, which functioned much like file servers connected to a network.
+These servers did little more than retrieving and sending the requested files back to the browsers.
+The browsers would then render these files, which might include links to images and GIFs, further enhancing the user experience.
+This model was particularly effective for delivering content that rarely changed, such as a restaurant’s monthly menu or landing pages, for example.</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+graph TB
+subgraph "Static HTML"
+  C[👩 User]
+  B[🖥️ Server]
+  A[💻 Browser]
+  C -- Request URL --&gt; A
+  B -- HTML Page --&gt; A
+  A -- Render HTML --&gt; C  
+  A -- HTTP Request --&gt; B 
+end
+</code></pre><aside class=quote><em>“This blog is actually a bunch of static HTML pages.”</em></aside><p>The economic advantage of using static HTML is undeniable.
+Since the server’s only task was to deliver files without any processing, the overhead costs are minimal.
+This efficiency meant that a static site could handle thousands or even millions of visits each month at a very low cost.
+Indeed, this blog is actually a bunch of static HTML pages built using <a href=https://jekyllrb.com/>Jekyll</a> and hosted for free using <a href=https://pages.github.com/>GitHub Pages</a>.
+Static HTML remains a viable option for many applications today, testament to the enduring utility of simple, effective web technologies developed in the early days of the internet.</p><h2 id=server-side-rendering>Server-Side Rendering</h2><p>By the mid 90s, the web began to reach thousands of new users each day.
+There was an emerged a desire to expand its capabilities beyond merely sharing HTML content.
+For example, users wanted to interact with websites by submitting forms, logging in, and viewing personalized content.
+However, the statelessness of the web presented unique challenges, as each request was independent of others.
+This led to the development of <a href=https://en.wikipedia.org/wiki/Server-side_scripting>server-side scripting</a>, which enabled persisting and rendering dynamic content on the web server before sending it to the client.
+This approach allowed pages to be customized for individual users based on their previous interactions with the website.</p><p>The first notable scripting method was <a href=https://en.wikipedia.org/wiki/Common_Gateway_Interface>CGI (Common Gateway Interface)</a>, introduced in 1993.
+Since then, various languages have been developed for dynamic content creation, including Perl, Python, PHP, Ruby, ASP, Java Servlet, and Cold Fusion.
+Server-side scripting, when combined with a database, revolutionized web interactions by allowing users to register and log in to websites for the first time.
+This advancement facilitated the rise of the first wave of web applications, commonly referred to as <a href=https://en.wikipedia.org/wiki/Create,_read,_update_and_delete>CRUD (Create, Read, Update, Delete)</a> applications.
+CRUD directly corresponds to both database operations and HTTP requests, providing a structured framework for building dynamic websites.</p><blockquote><p>“One of the early successes of this technology was the launch of eBay, initially known as AuctionWeb. Founded on September 3, 1995, in San Jose, California, by Pierre Omidyar, a French-born Iranian programmer, eBay started as an experiment. Omidyar was curious to see what would happen if there was a global marketplace accessible to everyone. To test his idea, he created an auction website where the first item sold was a broken laser pointer, which surprisingly fetched $14.83 from a collector.”</p></blockquote><p>HTML forms were developed to facilitate user interactions like contacting support, sending messages, or making purchases.
+When a user submits a form, it typically sends a <code class="language-plaintext highlighter-rouge">POST</code> request to a server-side script.
+One of the first examples was <a href=https://metacpan.org/pod/Mail::Sendmail>sendmail Perl</a>, which processes the information to send emails or perform other actions in response to a client’s request.</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+graph TB
+subgraph "Server-Side Rendering"
+  C[👩 User]
+  B[🖥 Server]
+  A[💻 Browser]
+  D[(🗄️ Database)]
+  C -- Request Login Page --&gt; A
+  B -- HTML + JavaScript --&gt; A
+  A -- Render Login Page --&gt; C
+  A -- HTTP Request --&gt; B
+  B -- CRUD --&gt; D
+  D -- Data --&gt; B
+  B -- Processing --&gt; B
+end
+</code></pre><p>The pattern has proven to be incredibly robust over time, despite the processing overhead associated with generating dynamic content in the server (especially under heavy traffic workloads).
+The rise of <a href=/blog/design-for-microservices.html>microservices and serverless architectures</a> has further refined server-side rendering, allowing developers to build scalable, efficient web applications.
+Today, developers rely on <a href=https://en.wikipedia.org/wiki/HTTP_cookie>HTTP cookies</a>, sessions, and databases to store user data.
+Web technologies like PHP, ASP, Ruby on Rails, Node.js, WordPress, and ASP.NET Core have all embraced server-side rendering due to its powerful capabilities.</p><h2 id=client-side-rendering>Client-Side Rendering</h2><figure class=badge><a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript><img src=/img/badges/JavaScript_Logo.svg style=width:140px;max-width:100% alt=badge></a></figure><p>Client-side rendering is the process of generating web content directly in the user’s browser.
+To do so, HTML was clearly no enough, a real programming language was necessary.
+JavaScript was the answer.
+The legend says that JavaScript was created in just ten days by <a href=https://en.wikipedia.org/wiki/Brendan_Eich>Brendan Eich</a> while working on Netscape in May 1995.
+Nothing good can be done in ten days, and that may be one of the reasons why JavaScript has caused so many headaches to developers.
+Anyway, JavaScript revolutionised the web by allowing the pages to respond dynamically to user inputs.
+For example, it could immediately notify when their passwords did not meet certain validation requirements, instantly, directly in the browser.
+The user experience improved significantly because there was no need to reload page.<br>Client-side rendering made web pages more interactive by eliminating the constant (and costly) server communication.</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+flowchart
+    subgraph Browser["Browser"]
+        subgraph UserInteraction["User Interaction"]
+            JS["JavaScript"]
+        end
+        subgraph RenderEngine["Rendering Engine"]
+            HTML["HTML"] --&gt; CSS["CSS"]
+        end
+    end
+    UserInteraction --&gt;|Manipulates| RenderEngine
+    UserInteraction --&gt;|Updates DOM| HTML
+    CSS
+    K[👩 User] -- "HTTP Request" --&gt; Browser
+    Browser -- "Rendered Content" --&gt; K
+</code></pre><p>The following is an example of a simple JavaScript function <code class="language-plaintext highlighter-rouge">validatePassword</code> that takes a password input and alerts the user if it is less than eight characters long, note that all the execution of this logic is done in the browser:</p><figure class=highlight><pre><code class=language-html data-lang=html><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class=code><pre><span class=cp>&lt;!DOCTYPE html&gt;</span>
+<span class=nt>&lt;html&gt;</span>
+  <span class=nt>&lt;head&gt;</span>
+    <span class=nt>&lt;title&gt;</span>Password Validation<span class=nt>&lt;/title&gt;</span>
+    <span class=nt>&lt;script&gt;</span>
+    <span class=kd>function</span> <span class=nf>validatePassword</span><span class=p>()</span> <span class=p>{</span>
+      <span class=kd>var</span> <span class=nx>password</span> <span class=o>=</span> <span class=nb>document</span><span class=p>.</span><span class=nf>getElementById</span><span class=p>(</span><span class=dl>"</span><span class=s2>password</span><span class=dl>"</span><span class=p>).</span><span class=nx>value</span><span class=p>;</span>
+      <span class=k>if</span> <span class=p>(</span><span class=nx>password</span><span class=p>.</span><span class=nx>length</span> <span class=o>&lt;</span> <span class=mi>8</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nf>alert</span><span class=p>(</span><span class=dl>"</span><span class=s2>Password must be at least 8 characters long.</span><span class=dl>"</span><span class=p>);</span>
+      <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+        <span class=nf>alert</span><span class=p>(</span><span class=dl>"</span><span class=s2>Password is valid.</span><span class=dl>"</span><span class=p>);</span>
+      <span class=p>}</span>
+    <span class=p>}</span>
+    <span class=nt>&lt;/script&gt;</span>
+  <span class=nt>&lt;/head&gt;</span>
+  <span class=nt>&lt;body&gt;</span>
+    <span class=nt>&lt;h2&gt;</span>Password Validation<span class=nt>&lt;/h2&gt;</span>
+    <span class=nt>&lt;p&gt;</span>Enter your password:<span class=nt>&lt;/p&gt;</span>
+    <span class=nt>&lt;input</span> <span class=na>type=</span><span class=s>"password"</span> <span class=na>id=</span><span class=s>"password"</span> <span class=na>placeholder=</span><span class=s>"Enter password"</span><span class=nt>&gt;</span>
+    <span class=nt>&lt;button</span> <span class=na>onclick=</span><span class=s>"validatePassword()"</span><span class=nt>&gt;</span>Validate Password<span class=nt>&lt;/button&gt;</span>
+  <span class=nt>&lt;/body&gt;</span>
+<span class=nt>&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>During JavaScript’s early days, tech giants like Microsoft and Adobe were also venturing into <strong>dynamic client-side scripting</strong>.
+Microsoft introduced technologies such as <a href=https://en.wikipedia.org/wiki/ActiveX>ActiveX</a>, along with scripting languages like JScript and VBScript,
+while Adobe developed ActionScript for its Flash authoring tool.
+Interestingly, none of these technologies ended up going anywhere and today are practically deprecated.
+Indeed, JavaScript became the de facto standard for client-side scripting.
+One of the reasons is that these scripting languages were proprietary, raising significant security concerns because they could execute any code downloaded from the internet, potentially harming the user’s system.
+To mitigate these risks, browsers implemented strict containment measures.
+However, some scripts could still bypass these protections through techniques that exploit browser vulnerabilities.</p><p>The potential of JavaScript extended significantly with the advent of <a href=https://www.w3schools.com/xml/ajax_intro.asp>AJAX (Asynchronous JavaScript and XML)</a>, particularly after its use in Google’s products like Gmail and Google Maps in the early 2000s.
+AJAX was initially made possible by the <a href=https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest>XMLHttpRequest</a>, initially created by Microsoft for its Outlook Web App in 1998.
+This technology allowed web pages to request additional data from servers without needing a page refresh, leading to more dynamic and responsive web applications.
+Today AJAX is a fundamental component of modern web development, enabling continuous data exchange between browsers and servers and significantly enhancing the user experience on the internet.</p><aside class=quote><em>“Any application that <em>can</em> be written in JavaScript, <em>will</em> eventually be written in JavaScript”</em>
+<cite><br>― <a href=https://blog.codinghorror.com/the-principle-of-least-power/>Atwood's Law</a></cite></aside><p>The development landscape took a dramatic turn with the creation of <a href=https://nodejs.org/en>Node.js</a> in May 2009.
+Node.js is an open-source cross-platform runtime environment that allows developers to use JavaScript for server-side application development.
+By integrating Google’s V8 JavaScript engine with an event loop and a non-blocking I/O API, Node.js facilitates the development of efficient and scalable web applications.
+This innovation was partly inspired by the need for better handling of file uploads, as seen in applications like <a href=https://www.flickr.com/>Flickr</a>, where the progress of file uploads was not visible to the user without querying the server.</p><p>Given the limitations and security issues associated with client-side scripting, many developers prefer server-side scripting to create dynamic content.
+However, to enrich the user experience, websites occasionally implement a mix of minimal client-side scripting alongside server-generated content.
+This approach helped in delivering a more interactive and engaging web experience without compromising security.</p><h2 id=java-applets-and-plugins>Java Applets and Plugins</h2><figure class=badge><a href=https://www.oracle.com/java/technologies/javase/9-deprecated-features.html><img src=/img/badges/JavaApplet_Loading.png style=width:140px;max-width:100% alt=badge></a></figure><p>During the late 1990s, <a href=https://www.oracle.com/java/technologies/javase/9-deprecated-features.html>Java Applets</a> were widely believed to be the future of web applications.
+These applets allowed the execution of Java bytecode directly on the client side.
+Apples integrated seamlessly within an HTML page through an <code class="language-plaintext highlighter-rouge">applet</code> tag.
+This functionality promised to enrich the web experience by offering more sophisticated interactivity directly in the browser.
+For example, Applets allowed playing games, filling interactive forms, and running complex web applications.
+However, to leverage these capabilities, users were required to install a plugin that would facilitate the execution of these applets on their devices.</p><p>Here’s an example of an HTML page embedding a Java Applet.
+Note that in the browser cannot execute the <code class="language-plaintext highlighter-rouge">FileApplet.class</code> natively.
+To do so, it needs to have the JVM and a dedicated plugin installed.
+Therefore, Applets were platform-dependent:</p><figure class=highlight><pre><code class=language-html data-lang=html><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class=code><pre><span class=nt>&lt;html&gt;</span>
+<span class=nt>&lt;head&gt;</span>
+    <span class=nt>&lt;title&gt;</span>Simple File Reader Applet<span class=nt>&lt;/title&gt;</span>
+<span class=nt>&lt;/head&gt;</span>
+<span class=nt>&lt;body&gt;</span>
+    <span class=nt>&lt;applet</span> <span class=na>code=</span><span class=s>"FileApplet.class"</span> <span class=na>width=</span><span class=s>"300"</span> <span class=na>height=</span><span class=s>"300"</span><span class=nt>&gt;</span>
+        Your browser does not support Java Applets or Java is not enabled.
+    <span class=nt>&lt;/applet&gt;</span>
+<span class=nt>&lt;/body&gt;</span>
+<span class=nt>&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>The reliance on plugins during this period was not unique to Java.
+Using plugins to extend browser’s functionality was a common pattern back then.
+For example, technologies such as Shockwave, Flash, Director, Real Player, and QuickTime also depended on plugins to enhance browser capabilities and deliver content that native web technologies at the time could not handle.
+These plugins provided rich multimedia experiences and interactive content on websites, filling a crucial gap in browser technology.
+Yet, this approach came with significant drawbacks, particularly concerning security vulnerabilities, which were a constant source of headaches for developers and users alike.</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+sequenceDiagram
+    participant Browser
+    participant Plugin
+    participant JVM
+    participant Applet
+
+    Browser-&gt;&gt;+Plugin: Detect applet tag
+    Plugin-&gt;&gt;+JVM: Initialize JVM
+    JVM-&gt;&gt;+Applet: Load Applet (FileApplet.class)
+    Applet--&gt;&gt;-JVM: Execute Applet
+    JVM--&gt;&gt;-Plugin: Render Applet in Browser
+    Plugin--&gt;&gt;-Browser: Display Applet Content
+
+    Note over Browser, Applet: Plugin required for Applet execution
+</code></pre><aside class=quote><em>“The failure of web plugins ended up making browsers more powerful in the end.”</em></aside><p>The plugin era began to wane with significant shifts.
+Notably, in 2007 Apple released the iPhone and <a href=https://www.theregister.com/2007/10/29/no_java_for_leopard/>explicitly decided against supporting Java Applets</a>, Shockwave, Flash, and other plugins on the new device.
+This pushed developer to rely only on JavaScript and HTML for creating web applications.
+As mobile internet usage surged and security concerns grew, the industry moved towards more secure, native web technologies.
+This transition underscored a broader trend towards enhancing browser capabilities and standardizing web technologies to create a safer and more seamless user experience.
+So in the end, browsers became more powerful, and that was the end of the plugin paradigm!</p><h2 id=css-and-dynamic-web-design>CSS and Dynamic Web Design</h2><p>One significant limitation of HTML is its rudimentary style capabilities, confined mostly to basic alignments and text formatting.
+Cascading Style Sheets (CSS) were introduced in 1996 to expand HTML’s styling functions.
+It fundamentally changed web design.
+CSS allowed for the separation of document content (written in HTML) from document presentation.
+For example, CSS includes detailed specifications of fonts, colors, layouts, and other visual aspects.
+This separation not only made web pages more visually appealing but also significantly streamlined the web development process by allowing styles to be defined once and reused across multiple pages.</p><p>For example, the following CSS code defines a style for a <code class="language-plaintext highlighter-rouge">div</code> element with a red background and white text:</p><figure class=highlight><pre><code class=language-css data-lang=css><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+</pre></td><td class=code><pre><span class=nt>div</span> <span class=p>{</span>
+  <span class=nl>background-color</span><span class=p>:</span> <span class=nx>red</span><span class=p>;</span>
+  <span class=nl>color</span><span class=p>:</span> <span class=nx>white</span><span class=p>;</span>
+<span class=p>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>This style can be shared across multiple HTML pages, ensuring a consistent look and feel throughout a website:</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+flowchart TB  
+  subgraph Website
+    direction LR 
+    subgraph HTML
+        Page1[📄 Page 1]
+        Page2[📄 Page 2]
+        Page3[📄 Page 3]
+        Page4[📄 Page 4]
+    end
+    subgraph CSS
+        Style1[🎨 Style 1]
+        Style2[🎨 Style 2]
+    end
+  end
+  Page1 --- Style1
+  Page2 --- Style1
+  Page3 --- Style1
+  Page4 --- Style2
+</code></pre><p>CSS’s introduction was a response to the growing demand for more dynamic and stylistically diverse websites.
+It allows developers to control the layout and appearance of web elements independently of HTML structure.
+CSS enabled a more efficient way to design visually engaging websites.
+As CSS evolved, it became responsible for the majority of the styling on web pages, influencing everything from layout to animations, thereby enhancing the user’s visual experience and interaction with the web.</p><p>The concurrent rise of JavaScript further complemented the capabilities of CSS, providing a way to dynamically manipulate page elements and styles through the DOM.
+This synergy between JavaScript and CSS meant that web pages could not only look better but also change the visual elements in real-time as a response to user inputs.
+JavaScript’s ability to interact with CSS properties brought about a new era in web design, where the static pages of the early web gave way to dynamic, interactive experiences.</p><h2 id=spa-and-ajax>SPA and AJAX</h2><p>The term <a href=https://www.w3schools.com/xml/ajax_intro.asp>AJAX (Asynchronous JavaScript and XML)</a>, coined in 2005, revolutionized web development.
+It enables web applications to communicate with servers in the background, requesting and receiving data from a server after the page has loaded.
+Although initially designed for XML, AJAX quickly adapted to other data formats like JSON, which became more prevalent due to its simplicity and lightweight nature.
+This asynchronous communication allowed web pages to update content dynamically without refreshing, unlocking new paradigms in web authoring and greatly enhancing user experiences with interactive and seamless interfaces.</p><p>By 2015, advancements in web technology led browser vendors to develop <a href=https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API>a more efficient method for making network requests</a>, known as the <code class="language-plaintext highlighter-rouge">fetch</code> API.
+This modern approach provides a promise-based mechanism to handle responses, streamlining the process of asynchronous requests.
+By using <code class="language-plaintext highlighter-rouge">fetch</code>, developers could send a <a href=https://en.wikipedia.org/wiki/Single-page_application>single-page application (SPA)</a> to the client, which would then request data as needed from a server-side API.
+This data could seamlessly update specific parts of the web page, improving the app’s responsiveness and user engagement without reloading the entire page.</p><p>SPAs marked a significant shift in web development, emphasizing rich client-side interactivity.
+This model allowed parts of the webpage to update independently, signaling their loading status with animations such as spinning icons while waiting for data.
+This paradigm, heavily reliant on JavaScript frameworks like React and Angular, became incredibly popular for creating complex user interfaces that offered a desktop-like experience within a browser.
+SPAs managed to bring high interactivity and fluidity to web applications, albeit with challenges such as initial load times and state management complexities.</p><p>As mentioned, web frameworks became essential for managing large codebases and structuring applications efficiently.
+<a href=https://angularjs.org/>AngularJS</a>, developed in 2009, was one of the pioneers, followed by <a href=https://emberjs.com/>Ember.js</a> in 2011.
+These frameworks provided robust architectures, embracing principles like “Convention over Configuration” and “Don’t Repeat Yourself (DRY),” to streamline development and maintenance of SPAs.
+They addressed many challenges of SPAs by offering structured ways to build and manage stateful, interactive applications efficiently.</p><p><a href=https://react.dev/>React</a>, developed by Facebook and released in 2013, introduced a novel approach to building SPAs by employing a one-way data flow and <a href=https://legacy.reactjs.org/docs/faq-internals.html>virtual DOM</a>.
+This architecture allowed React to manage UI updates efficiently—only re-rendering components when actual data changes occurred, minimizing the performance costs associated with DOM manipulation.
+React’s component-based architecture also enabled developers to build reusable UI blocks, simplifying the development process, reducing bugs, and improving the maintainability of large applications.</p><p>The following is an example of a React component that toggles a button’s color between green and red when clicked. Note that the CSS styles are defined directly within the component, along with the JavaScript logic:</p><figure class=highlight><pre><code class=language-jsx data-lang=jsx><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+</pre></td><td class=code><pre><span class=k>import</span> <span class=nx>React</span><span class=p>,</span> <span class=p>{</span> <span class=nx>useState</span> <span class=p>}</span> <span class=k>from</span> <span class=dl>'</span><span class=s1>react</span><span class=dl>'</span><span class=p>;</span>
+
+<span class=kd>function</span> <span class=nf>ToggleButton</span><span class=p>()</span> <span class=p>{</span>
+<span class=c1>// State to keep track of the toggle status</span>
+<span class=kd>const</span> <span class=p>[</span><span class=nx>isToggled</span><span class=p>,</span> <span class=nx>setIsToggled</span><span class=p>]</span> <span class=o>=</span> <span class=nf>useState</span><span class=p>(</span><span class=kc>false</span><span class=p>);</span>
+
+<span class=c1>// Inline styles for different states</span>
+<span class=kd>const</span> <span class=nx>buttonStyle</span> <span class=o>=</span> <span class=p>{</span>
+  <span class=na>backgroundColor</span><span class=p>:</span> <span class=nx>isToggled</span> <span class=p>?</span> <span class=dl>'</span><span class=s1>lightcoral</span><span class=dl>'</span> <span class=p>:</span> <span class=dl>'</span><span class=s1>lightgreen</span><span class=dl>'</span><span class=p>,</span>
+  <span class=na>padding</span><span class=p>:</span> <span class=dl>'</span><span class=s1>10px 20px</span><span class=dl>'</span><span class=p>,</span>
+  <span class=na>borderRadius</span><span class=p>:</span> <span class=dl>'</span><span class=s1>5px</span><span class=dl>'</span><span class=p>,</span>
+  <span class=na>border</span><span class=p>:</span> <span class=dl>'</span><span class=s1>none</span><span class=dl>'</span><span class=p>,</span>
+  <span class=na>cursor</span><span class=p>:</span> <span class=dl>'</span><span class=s1>pointer</span><span class=dl>'</span><span class=p>,</span>
+  <span class=na>color</span><span class=p>:</span> <span class=dl>'</span><span class=s1>white</span><span class=dl>'</span><span class=p>,</span>
+  <span class=na>fontSize</span><span class=p>:</span> <span class=dl>'</span><span class=s1>16px</span><span class=dl>'</span><span class=p>,</span>
+  <span class=na>fontWeight</span><span class=p>:</span> <span class=dl>'</span><span class=s1>bold</span><span class=dl>'</span><span class=p>,</span>
+  <span class=na>outline</span><span class=p>:</span> <span class=dl>'</span><span class=s1>none</span><span class=dl>'</span><span class=p>,</span>
+  <span class=na>transition</span><span class=p>:</span> <span class=dl>'</span><span class=s1>all 0.3s ease</span><span class=dl>'</span>
+<span class=p>};</span>
+
+<span class=c1>// Function to handle button click</span>
+<span class=kd>const</span> <span class=nx>toggleButton</span> <span class=o>=</span> <span class=p>()</span> <span class=o>=&gt;</span> <span class=p>{</span>
+  <span class=nf>setIsToggled</span><span class=p>(</span><span class=o>!</span><span class=nx>isToggled</span><span class=p>);</span>
+<span class=p>};</span>
+<span class=k>return </span><span class=p>(</span>
+    <span class=p>&lt;</span><span class=nt>button</span> <span class=na>style</span><span class=p>=</span><span class=si>{</span><span class=nx>buttonStyle</span><span class=si>}</span> <span class=na>onClick</span><span class=p>=</span><span class=si>{</span><span class=nx>toggleButton</span><span class=si>}</span><span class=p>&gt;</span>
+      <span class=si>{</span><span class=nx>isToggled</span> <span class=p>?</span> <span class=dl>'</span><span class=s1>ON</span><span class=dl>'</span> <span class=p>:</span> <span class=dl>'</span><span class=s1>OFF</span><span class=dl>'</span><span class=si>}</span>
+    <span class=p>&lt;/</span><span class=nt>button</span><span class=p>&gt;</span>
+  <span class=p>);</span>
+<span class=p>}</span>
+
+<span class=k>export</span> <span class=k>default</span> <span class=nx>ToggleButton</span><span class=p>;</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>React further innovated SPA development by integrating styles directly within components, a method that sparked considerable debate among developers.
+This approach argued for a modular system where style, structure, and logic are encapsulated within components, scaling more effectively for large applications.
+By reducing the separation of concerns traditionally seen in CSS, HTML, and JavaScript, React’s inline styling philosophy promotes a more cohesive and maintainable codebase, especially in complex projects.
+This “componentized” styling represents a significant evolution in how developers think about and build user interfaces for the web.</p><h2 id=websockets>WebSockets</h2><p>For many years, AJAX was the primary technology for asynchronous server communication in web development.
+However, AJAX had limitations, particularly in scenarios where the client needed to continously pull updates from the server.
+This gap was evident in applications requiring real-time data updates, as servers had to wait for every new client request to send data.
+<a href=https://en.wikipedia.org/wiki/WebSocket>WebSockets</a>, proposed by the W3C, addressed this challenge by establishing a bidirectional communication channel between the client and the server.
+This protocol supported both text and binary data with significantly reduced overhead compared to traditional HTTP polling methods, enabling more dynamic and responsive web applications.</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+sequenceDiagram
+    participant Client
+    participant Server
+
+    Client-&gt;&gt;+Server: HTTP Request (Upgrade Header)
+    Server--&gt;&gt;-Client: HTTP Response (101 Switching Protocols)
+
+    Note over Client, Server: WebSocket Connection Established
+
+    Client-&gt;&gt;Server: Send Message
+    Server-&gt;&gt;Client: Receive Message
+    Server-&gt;&gt;Client: Send Update
+    Client-&gt;&gt;Server: Receive Update
+
+    Note over Client, Server: Persistent Bi-Directional Communication
+</code></pre><p>The evolution of WebSockets was a significant milestone in web technology.
+After several iterations and enhancements, the protocol was officially recognized as <a href=https://datatracker.ietf.org/doc/html/rfc6455>IETF protocol ‘RFC6455’</a> in December 2011, and quickly implemented across all major browsers.
+This standardization marked a turning point, allowing developers to reliably use WebSockets to create highly interactive, real-time web applications that could compete with or even surpass desktop applications in functionality and performance.
+The low latency and efficient data transfer capabilities of WebSockets made them ideal for applications that required constant data exchange and immediate user interaction.</p><p>WebSockets revolutionized how web applications were developed by facilitating a persistent, lightweight connection between the browser and the server.
+The connection remains open (usually over TCP port number <code class="language-plaintext highlighter-rouge">443</code>), allowing for instant data exchange without the need for repeated HTTP requests.
+This architecture is particularly beneficial in real-time applications such as chat platforms, collaborative tools like Google Docs, and multiplayer online games.
+The ability of WebSockets to allow multiple browsers to connect concurrently to the same service has opened up vast possibilities for real-time, collaborative experiences and applications on the web.</p><h2 id=decentralized-web>Decentralized Web</h2><p>The concept of <a href=https://en.wikipedia.org/wiki/Web3>Web 3.0</a> (or Web3) emerged in the late 2010s and early 2020s.
+It became intrinsically linked with <a href=https://en.wikipedia.org/wiki/Blockchain>blockchain technology</a> and the broader cryptocurrency movement.
+This new era of the internet, often referred to as the decentralized web, prioritizes concepts such as decentralization, openness, and enhanced user privacy.
+Blockchain technology, at the core of this movement, provides a distributed ledger that records data transfers across multiple computers in such a way that the registered requests cannot be altered retroactively.
+This immutable and transparent nature of blockchain facilitates trust and security.
+Web3 is a fundamental shift towards a decentralized internet structure where power and control are distributed across the network rather than held by a few centralized entities owning the servers.</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+graph TD
+User1[👩 User 1] --&gt;|HTTP Request| dApp1[Decentralized Web Application]
+User2[🧔 User 2] --&gt;|HTTP Request| dApp2[Decentralized Web Application]
+User3[👴 User 3] --&gt;|HTTP Request| dApp1
+
+subgraph "Blockchain"
+    direction RL 
+    Node1(Node1)
+    Node2(Node2)
+    Node3(Node3)
+    Node4(Node4)
+
+    Node1 -- Validate --- Node2
+    Node1 -- Validate --- Node3
+    Node1 -- Validate --- Node4
+    Node2 -- Validate --- Node3
+    Node2 -- Validate --- Node4
+    Node3 -- Validate --- Node4
+end    
+
+dApp1 --&gt;|Validate Request| Node1
+dApp2 --&gt;|Validate Request| Node2
+</code></pre><p>As I mentioned, the incentive to have a descentralized web is to create a more secure and private web experience.
+By leveraging decentralization, blockchain allows for data to be stored across a network of nodes.
+A <a href=https://www.baeldung.com/cs/consensus-algorithms-distributed-systems>consensus algorithm</a> ruling the nodes ensures that no single point of failure can compromise the system’s integrity.
+This method enhances data security and user privacy significantly.
+Moreover, blockchain enables <a href=https://en.wikipedia.org/wiki/Smart_contract>smart contracts</a>, which are self-executing programs with the terms of the agreement among the nodes directly written into lines of code.
+These contracts automate and enforce agreements without the need for intermediaries.
+For the web, this means that the requests can be validated and executed without relying on a central authority.
+For example, a <a href=https://en.wikipedia.org/wiki/Decentralized_application>decentralized web application (dApp)</a> operating as a social network can interact with a blockchain to ensure that each user identity is legit, and that their payments (or other types of transactions) are secure and transparent.
+Indeed, the promise of decentralized finance (DeFi) platforms is to offer financial services without traditional banking institutions.
+Although descentralization is not a silver bullet, it has the potential to create a more user-centric internet, with full data ownership and privacy.</p><h2 id=webassembly>WebAssembly</h2><figure class=badge><a href=https://webassembly.org/><img src=/img/badges/WebAssembly_Logo.svg style=width:140px;max-width:100% alt=badge></a></figure><p>JavaScript is (still) the predominant scripting language in modern web browsers.
+However, it has significant limitations due to its inherent language characteristics.
+For example, each JavaScript engine must parse and recompile the code at runtime, which induces substantial overhead and contributing to lengthy website load times.
+Additionally, JavaScript’s lack of memory isolation poses security risks by potentially allowing the extraction of information from other processes.
+<a href=../blog/the-evolution-of-the-web-from-html-to-webassembly.html#java-applets-and-plugins>As I mentioned before</a>, attempts to replace or supplement JavaScript with other languages, such as Java Applets, Microsoft ActiveX, and Silverlight, have historically failed due to security concerns and lack of community consensus among browser vendors.</p><aside class=quote><em>“WebAssembly is the latest attempt to reduce the pervasiveness of JavaScript on the web.”</em></aside><p>In 2014, the <a href=https://emscripten.org/>Emscripten</a> technology represented the most solid attempt in overcoming JavaScript’s limitations.
+It utilized <code class="language-plaintext highlighter-rouge">asm.js</code>, a <a href=https://en.wikipedia.org/wiki/Asm.js>strict subset of JavaScript</a> designed for compiling low-level languages like C into JavaScript.
+This approach leveraged <a href=https://en.wikipedia.org/wiki/LLVM>LLVM’s ahead-of-time optimizations</a>, significantly enhancing performance over traditional JavaScript, as detailed in <a href=https://hacks.mozilla.org/2015/03/asm-speedups-everywhere/>Mozilla’s performance analysis</a>.
+<code class="language-plaintext highlighter-rouge">asm.js</code> streamlined JavaScript by restricting it to simple numeric types and memory operations.
+This approach proved that client-side code performance could be substantially improved through careful language design and standardization.
+The success of Emscripted laid the groundwork for the development and standardization of <a href=https://webassembly.org/>WebAssembly</a> by the World Wide Web Consortium (W3C) in 2015.</p><blockquote><p>“WebAssembly addresses the inefficiencies of transpiling languages like Java or TypeScript to JavaScript, which was traditionally the only way to run applications in browsers.”</p></blockquote><p>WebAssembly (a.k.a., wasm) was developed as a native runtime for the web.
+It allows developers to write applications in languages such as C, Rust, or Ruby, and compile them into a <code class="language-plaintext highlighter-rouge">.wasm</code> file.
+This file is then served from a web server and executed in the browser, with JavaScript often playing a role in bootstrapping the application.
+This innovation brought the possibility of running high-performance, native applications directly within the browser environment, reminiscent of the capabilities provided by Java Applets in the 1990s.</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+flowchart TB
+    src[Source Code in C/Rust/Other] --&gt;|Compile| wasmFile[.wasm File]
+    wasmFile --&gt;|Serve| server[Web Server]
+    server --&gt;|Download| browser[Browser]
+
+    subgraph browser [Browser Execution Environment]
+        js[JavaScript Bootstrap] --&gt; wasmModule[WebAssembly Module]
+        wasmModule --&gt;|Interact| dom[DOM/APIs]
+    end
+</code></pre><p>One of the significant advantages of WebAssembly is its robust security model, which prevents binaries from accessing memory outside their allocated space through <a href=https://www.geeksforgeeks.org/what-is-software-fault-isolation/>Software Fault Isolation (SFI)</a> policies.
+This isolation makes WebAssembly more secure compared to traditional JavaScript environments.
+Furthermore, WebAssembly modules are more compact and efficient than virtual machines or containers, making them particularly well-suited for environments where network efficiency is critical.
+Today, WebAssembly is used for a diverse range of browser tasks, from gaming to crypto-mining, and has proven especially effective for short-running tasks on backend platforms, such as offerings.</p><p>WebAssembly has significantly broadened the scope of what can be achieved with web applications, enabling complex software like AutoCAD and Adobe Photoshop to be ported directly into the browser as highlighted in <a href="https://twitter.com/Adobe/status/1453034805004685313?s=20&t=Zf1N7-WmzecA0K4V8R69lw">Adobe’s announcement</a>.
+This capability transforms web applications to perform functions traditionally reserved for desktop applications, pushing the boundaries of web software and changing our understanding of what can be possible.
+As WebAssembly continues to evolve, it promises to further revolutionize the development and performance of applications across the web.</p><h1 id=summary>Summary</h1><aside class=quote><em>“Despite many attempts, JavaScript seems impossible to replace for the time being.”</em></aside><p>Valuable lessons emerge from the evolution of web technologies.
+These include <em>i)</em> the necessity for vendor agreement to ensure technology success, <em>ii)</em> the constant shifts between centralizing computing power in servers or distributing it among users (both of which contribute to technological breakthroughs), and <em>iii)</em> the critical need for a secure and efficient web runtime in the browser.
+Moreover, we’ve learned that moving away from JavaScript is still quite challenging!</p><p>But, for now, I’d like to leave you with a few observations:</p><ol><li><strong>Simplicity and Efficiency Hold</strong>: Foundational web technologies like static HTML and server-side rendering remain useful for delivering content that rarely changes or doesn’t require dynamic processing. These technologies were great in the 90s and continue to be effective and cost-efficient solutions even in 2024 for many use cases.</li><li><strong>User Experience Matters</strong>: From the introduction of CSS for enhanced web aesthetics to the development of SPAs for dynamic user interactions, the focus on improving user experience has led to the creation of more dynamic technologies for real-time DOM manipulation and improved data fetching, leading to better user experience.</li><li><strong>Interactivity and Real-Time Communication Are Essential</strong>: Technologies such as client-side rendering, AJAX, and WebSockets have redefined user engagement, providing experiences as smooth and responsive as those of desktop applications.</li><li><strong>Security and Performance Are Continuous Priorities</strong>: Technologies like WebAssembly offer robust security models and enhanced performance, enabling developers to create high-performant applications with improved security features.</li><li><strong>Innovation and Adaptability is Not Optional</strong>: Developers need to remain flexible and embrace new technologies like WebAssembly and dApps to create cutting-edge web applications that meet the expectations of modern users.</li></ol><h1 id=external-resources>External Resources</h1><ul><li><a href="https://youtu.be/a_1cV7hg5G8?si=VIaAQnfTyR9nuUdc">The Evolution of Web Apps 1992-2024, by Dylan Beattie</a></li><li><a href="https://youtu.be/41mnNyMxPOA?si=9NVNYd9jyopvFaXj">How We Got Here - The History of Web Development, by Richard Campbell</a></li><li><a href="https://youtu.be/VPToE8vwKew?si=6IGNrHCNWJjao_vH">How We Made the Internet</a></li></ul><h1 id=footnotes>Footnotes</h1><div class=footnotes role=doc-endnotes><ol><li id=fn:1><p>BTW, my sincere appreciation to you if you’re a frontend or UI web designer. What you do in the trenches is really hard. I <del>probably</del> never would be able to make a decent living out of it. <a href=#fnref:1 class=reversefootnote role=doc-backlink>&#8617;</a></p></li><li id=fn:2><p><a href=https://www.darpa.mil/>DARPA</a> (Defense Advanced Research Projects Agency) is essentially a military research project funded by the US government. It still exists and is responsible for the development of not only the internet in the 60s but other technologies like GPS, drones, and even the first computer mouse. It’s sad that the internet was not created in a public university as it should, but that’s it. <a href=#fnref:2 class=reversefootnote role=doc-backlink>&#8617;</a></p></li><li id=fn:4><p>I browsed the web for the first time in 2011. It was during the second year at university. Back then, in Cuba the internet access was restricted to universities and research centres. Individual access was controlled using a quota-based system. I had 50MB per week to spend! I spent it navigating educational websites (the majority of other services were forbidden). <a href=#fnref:4 class=reversefootnote role=doc-backlink>&#8617;</a></p></li><li id=fn:6><p>It’s good not to forget that the internet went from being a niche academic tool to becoming a mainstream technology in less than 30 years. That’s a blink of an eye in terms of human’s evolution! <a href=#fnref:6 class=reversefootnote role=doc-backlink>&#8617;</a></p></li><li id=fn:3><p>Tim Berners-Lee was knighted by Queen Elizabeth II in 2004, so now we should call him “sir” to be more exact. People get promoted dear reader, the sky is the limit. <a href=#fnref:3 class=reversefootnote role=doc-backlink>&#8617;</a></p></li><li id=fn:7><p>The first web address was <a href=https://info.cern.ch/>info.cern.ch</a>, and the very first web page can still be visited at <a href=https://info.cern.ch/hypertext/WWW/TheProject.html>the project website</a>. <a href=#fnref:7 class=reversefootnote role=doc-backlink>&#8617;</a></p></li><li id=fn:5><p>HTML and CSS are not programming languages. There’s no such as thing as an HTML programmer (nor anyone proud to be called as such). <a href=#fnref:5 class=reversefootnote role=doc-backlink>&#8617;</a></p></li></ol></div></article><ul class="pager blog-pager"><li class=previous><a href=/blog/the-most-relevant-technical-skill-in-my-career.html data-toggle=tooltip data-placement=top title="The Most Relevant Technical Skill in My Career">&larr; Previous Post</a></li><li class=next><a href=/blog/the-last-paper-myth.html data-toggle=tooltip data-placement=top title="The Last Paper's Myth">Next Post &rarr;</a></li></ul><br></div></div></div><script>anchors.options={position:'left'},anchors.add('h1:not(.no-anchor)','h2','h3')</script><div class=container><div class=row><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style=padding-right:15px><div class=flex-container-footer-badges><section class=share-section><a href="https://twitter.com/intent/tweet?text=The+web+is+%28arguably%29+the+only+tech+platform+that+has+been+continuously+transformed+and+evolved+at+a+global+scale+over+the+last+30+years.+How+was+this+possible%3F+What+can+we+learn+from+the+past+technical+mistakes+and+successes%3F+Over+the+years%2C+I+have+witnesses+the+emergence+of+various+web+technologies.+Some+were+revolutionary%2C+while+others+didn%27t+pass+the+test+of+time.+In+this+article%2C+I+dive+into+the+evolution+of+web+technologies+from+the+1990s+to+the+present.+My+focus+is+on+the+engineering+paradigms+that+marked+inflection+points+in+web%27s+history.+Those+who+don%27t+know+tech+history+are+doomed+to+repeat+past+engineering+mistakes.+%0A+https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id=share-twitter class="fab fa-twitter" aria-hidden=true></span>
+<span class=sr-only>Twitter</span></a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id=share-linkedin class="fab fa-linkedin-in" aria-hidden=true></span>
+<span class=sr-only>LinkedIn</span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/the-evolution-of-the-web-from-html-to-webassembly.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden=true></span>
+<span class=sr-only>Facebook</span></a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-evolution-of-the-web-from-html-to-webassembly.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden=true></span>
+<span class=sr-only>Reddit</span></a>
+<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-evolution-of-the-web-from-html-to-webassembly.html&text=The+web+is+%28arguably%29+the+only+tech+platform+that+has+been+continuously+transformed+and+evolved+at+a+global+scale+over+the+last+30+years.+How+was+this+possible%3F+What+can+we+learn+from+the+past+technical+mistakes+and+successes%3F+Over+the+years%2C+I+have+witnesses+the+emergence+of+various+web+technologies.+Some+were+revolutionary%2C+while+others+didn%27t+pass+the+test+of+time.+In+this+article%2C+I+dive+into+the+evolution+of+web+technologies+from+the+1990s+to+the+present.+My+focus+is+on+the+engineering+paradigms+that+marked+inflection+points+in+web%27s+history.+Those+who+don%27t+know+tech+history+are+doomed+to+repeat+past+engineering+mistakes.+%0A" class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
+<span class=sr-only>Telegram</span></a>
+<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-evolution-of-the-web-from-html-to-webassembly.html&t=On+the+Rise%2C+Decline%2C+and+Persistence+of+Web+Technologies" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
+<span class=sr-only>Hacker News</span></a></section></div><div id=related-posts><hr><h2>Related Posts</h2><div class="panel-deck row"><div class=col-sm-4><div class=panel><a href=/blog/i-am-switching-to-python-and-actually-liking-it.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>I'm Switching to Python and Actually Liking It</h4><div class=date style=margin-bottom:0>Posted on July 15, 2025</div></div><img src=../img/posts/2025/2025-07-15/wall-stones_cover.JPG alt="I'm Switching to Python and Actually Liking It"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Evaluation Metrics for Real-Time Financial Fraud Detection ML Models</h4><div class=date style=margin-bottom:0>Posted on May 8, 2025</div></div><img src=../img/posts/2025/2025-05-08/kungstradgarden_cover.jpg alt="Evaluation Metrics for Real-Time Financial Fraud Detection ML Models"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection</h4><div class=date style=margin-bottom:0>Posted on April 3, 2025</div></div><img src=../img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg alt="From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection"></div></a></div></div></div></div><div><div id=giscus-container></div><script src=/js/load-giscus.js></script>
+<script>window.addEventListener('load',loadGiscus)</script></div></div></div></div><script>window.addEventListener('DOMContentLoaded',()=>{const a=new IntersectionObserver(a=>{a.forEach(a=>{const b=a.target.getAttribute('id');a.intersectionRatio>0?document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.add('active'):document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.remove('active')})});document.querySelectorAll('h1[id]').forEach(b=>{a.observe(b)}),document.querySelectorAll('h2[id]').forEach(b=>{a.observe(b)})})</script><footer><div class="container beautiful-jekyll-footer"><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style=text-align:center><div class=flex-container-footer-badges><a href=https://www.linkedin.com/in/cesarsotovalero><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin"></a>
+<a href=https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg><img alt="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black&label=Subscribe"></a>
+<a href=https://github.com/cesarsotovalero><img alt="Follow me on GitHub" src="https://img.shields.io/github/followers/cesarsotovalero?label=Follow%20me"></a></div></div><div class=flex-container-footer-copyright><p class="copyright text-muted">&copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2025</p></div></div></div></div></footer><script>typeof jQuery=='undefined'&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src=/js/bootstrap.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/flowtype.js></script>
+<script src=/js/scroll-to-top.js></script>
+<script src=/js/lazysizes.min.js></script>
+<script src=/js/popup-footnotes.js></script>
+<script src=/js/mermaid.min.js></script>
+<script>$(document).ready(function(){mermaid.initialize({startOnLoad:!0,theme:"default"}),window.mermaid.init(void 0,document.querySelectorAll('.language-mermaid'))})</script><script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'),ga('create','UA-107061705-1','auto'),ga('send','pageview')</script><script src=/js/mode-switcher.js></script></body></html>

@@ -1,0 +1,370 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml lang=en-us xml:lang=en-US itemscope itemtype=http://schema.org/WebSite><head><script>(function(){let a=localStorage.getItem('theme');a==='dark'&&document.documentElement.setAttribute('data-theme','dark')})()</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>A Prime on Public Key Infrastructure</title><meta name=keywords content="cybersecurity,symmetric encryption,asymmetric encryption,public key infrastructure,java,web of trust"><link rel=alternate type=application/rss+xml title="César Soto Valero  César - Computer Scientist" href=https://www.cesarsotovalero.net/feed.xml><script src=https://cdn.jsdelivr.net/npm/typed.js@2.0.12></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel=stylesheet><link rel=apple-touch-icon sizes=180x180 href=../img/favicon/redketchup/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../img/favicon/redketchup/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../img/favicon/redketchup/favicon-16x16.png><link rel=manifest href=../img/favicon/redketchup/site.webmanifest><link id=code rel=stylesheet href=../css/pygment_highlights.css><script src=https://d3js.org/d3.v7.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-107061705-1')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","bs3gcidnol")</script><script src=../js/anchor.min.js></script>
+<link rel=stylesheet href=//use.fontawesome.com/releases/v5.12.0/css/all.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/bootstrap-social.css><link rel=stylesheet href=/css/main.css><link rel=stylesheet href=/css/academicons.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel=stylesheet href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name=generator content="Jekyll v4.3.2"><meta property="og:title" content="A Prime on Public Key Infrastructure"><meta name=author content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name=description content="This article delves into symmetric and asymmetric encryption, as the building blocks of Public Key Infrastructure (PKI). It describes how PKI allows safeguarding the authenticity and security of digital communications across the internet."><meta property="og:description" content="This article delves into symmetric and asymmetric encryption, as the building blocks of Public Key Infrastructure (PKI). It describes how PKI allows safeguarding the authenticity and security of digital communications across the internet."><link rel=canonical href=https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html><meta property="og:url" content="https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2023/2023-08-13/dark_well-cover.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2023-08-13T00:00:00-07:00"><meta name=twitter:card content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2023/2023-08-13/dark_well-cover.jpg"><meta property="twitter:title" content="A Prime on Public Key Infrastructure"><meta name=twitter:site content="@cesarsotovalero"><meta name=twitter:creator content="@César Soto Valero"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"César Soto Valero","url":"https://www.cesarsotovalero.net/about-me"},"dateModified":"2025-07-29T11:52:25-07:00","datePublished":"2023-08-13T00:00:00-07:00","description":"This article delves into symmetric and asymmetric encryption, as the building blocks of Public Key Infrastructure (PKI). It describes how PKI allows safeguarding the authenticity and security of digital communications across the internet.","headline":"A Prime on Public Key Infrastructure","image":"https://www.cesarsotovalero.net/img/posts/2023/2023-08-13/dark_well-cover.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024.jpg"},"name":"César Soto Valero"},"url":"https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html"}</script><script type=text/x-mathjax-config> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+   </script><script type=text/x-mathjax-config>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+   </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type=text/javascript></script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class=navbar-toggle type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id=navbarSupportedContent><ul class="navigation list-inline text-center footer-links" id=black-icons><li class="nav-item navbar-custom" title=Home><a id=navbar-brand href=https://www.cesarsotovalero.net>Home</a></li><li class="nav-item navbar-custom"><a href=/blog>Blog</a></li><li class="nav-item navbar-custom"><a href=/linkedin>LinkedIn</a></li><li class="nav-item navbar-custom"><a href=/youtube>YouTube</a></li><li class="nav-item navbar-custom"><a href=/podcasts>Podcasts</a></li><li class="nav-item navbar-custom"><a href=/talks>Talks</a></li><li class="nav-item navbar-custom"><a href=/about-me>About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href=# id=theme-toggle onclick=modeSwitcher() style=cursor:pointer></a></li></ul></div></nav><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class=header-image style=padding-left:15px><div class="row justify-content-center" style=margin-right:0;margin-left:0></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><h1 class=no-anchor>A Prime on Public Key Infrastructure</h1><h2 class=post-subheading>How do we trust each other in the digital era?</h2><div class="container flex-container"><a href=https://www.cesarsotovalero.net/about-me><img class=avatar-img-small src=/img/pages/cesar/avatar-icon-2024.jpg alt="César Soto Valero" id=meta-img></a><div class=flex-item><span class=post-meta>Posted on August 13, 2023</span><div><span class=post-meta title="Estimated read time"><svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg>&nbsp;29 mins read</span>
+<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>security</span></div></div></div><div class=flex-item><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style=margin-left:0><section id=share-section><script type=text/javascript src=https://storage.ko-fi.com/cdn/widget/Widget_2.js></script><script type=text/javascript>kofiwidget2.init('Support this blog','#7aa4d1','G2G3CRPPI'),kofiwidget2.draw()</script></section></div></div></div><div class=cesarcarbon id=cesarcarbonads-post><script async type=text/javascript src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id=_carbonads_js></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"><ol id=toc class=section-nav><li class="toc-entry toc-h1"><a href=#the-problem-of-digital-trust>The Problem of Digital Trust</a></li><li class="toc-entry toc-h1"><a href=#cryptography>Cryptography</a></li><li class="toc-entry toc-h1"><a href=#public-key-infrastructure-pki>Public Key Infrastructure (PKI)</a></li><li class="toc-entry toc-h1"><a href=#web-of-trust-wot>Web of Trust (WOT)</a></li><li class="toc-entry toc-h1"><a href=#conclusion>Conclusion</a></li><li class="toc-entry toc-h1"><a href=#footnotes>Footnotes</a></li></ol></div></div></div></div></header><script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js"></script><div class=container><div class=row><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=blog-post><p>The whole internet is secured by the power of symmetric and asymmetric cryptography.
+Each time you visit a website, a <strong>cryptographic handshake</strong> occurs between your browser and a web server located somewhere on Earth.
+The authenticity of this connection is verified by a technology known as <strong>P</strong>ublic <strong>K</strong>ey <strong>I</strong>nfrastructure (PKI).
+This framework is crucial for ensuring secure electronic information transfer between digital entities.
+PKI is integral to most confidential network activities, including e-commerce, internet banking, and email.
+It is particularly useful when simple passwords are inadequate for user authentication, necessitating stronger <strong>proof of identity</strong>.
+At its core, PKI binds public keys to the identities of entities such as individuals and organizations.
+This is done through a process of registration, signing, and issuance of <strong>digital certificates</strong>.
+These certificates are provided by a Certificate Authority (CA) responsible for ensuring the trustworthiness of the binding.
+In this article, I will delve into the practical aspects of symmetric and asymmetric encryption.
+Later I’ll focus on the role of PKI, and how it helps to safeguard the authenticity and security of digital transactions and communications across the internet.
+Let’s dive in!</p><figure class=jb_picture><img width style=border: src=/assets/resized/dark_well-640x373.jpg alt="A dark pool" data-srcset="/assets/resized/dark_well-640x373.jpg 640w,/assets/resized/dark_well-768x448.jpg 768w,/assets/resized/dark_well-1024x597.jpg 1024w,/assets/resized/dark_well-1366x797.jpg 1366w,/assets/resized/dark_well-1600x933.jpg 1600w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>&#169; The internet is a chthonic pool. Don't jump in without your keys! Photo of a piece of art in the <a href=https://maps.app.goo.gl/75AGyCg5QpzjQeFR8>Stockholm's Paradox Museum</a>.</figcaption></figure><h1 id=the-problem-of-digital-trust>The Problem of Digital Trust</h1><p>Since ancient times, the quest for secure communication has been a constant human endeavor.
+In general, two fundamental challenges need to be addressed in order to safeguard any kind of communication channel:</p><ol><li><strong>Confidentiality:</strong> Ensuring that only the intended recipient can “understand” the message.</li><li><strong>Integrity:</strong> Guaranteeing that the message remains unaltered by any third parties during its transmission.</li></ol><p>In today’s digital era, these challenges are magnified due to the speed and scale at which information is sent and received.
+The internet demands not only lightning-fast communication channels but also, often, interactions between parties who have never met and may not inherently trust each other.</p><p>This raises a fundamental question:</p><p>🤔 <em>How to build and maintain trustful communication channels on a global scale?</em></p><p>To answer this question, we need to look at how the internet has been built.
+At its core, digital data transfer channels rely on mathematical concepts regarding data encryption.
+In particular, the concept of <strong>cryptography</strong> is fundamental to understanding the mechanisms and technologies that are pivotal for scaling digital trust worldwide.</p><h1 id=cryptography>Cryptography</h1><p><a href=https://en.wikipedia.org/wiki/Cryptography>Cryptography</a> is about building tools and techniques to enable secure communication in the presence of adversarial behaviors.
+More specifically, cryptography relies on mathematical proofs to protect aspects of information security.
+For example, cryptography allows for achieving confidentiality, integrity, user authentication, and data origin validation.</p><p>All of this may sound complicated, but fortunately, we only need to know about two cryptographical techniques: <strong>symmetric</strong> and <strong>asymmetric</strong> encryption.</p><h2 id=symmetric-encryption>Symmetric Encryption</h2><p>Before 1976, the only known way to encrypt messages was using <a href=https://en.wikipedia.org/wiki/Symmetric-key_algorithm>symmetric encryption</a>.
+This is a mechanism to encode messages where both the sender and receiver use the <strong>same secret key</strong>.<sup id=fnref:2><a href=#fn:2 class=footnote rel=footnote role=doc-noteref>1</a></sup></p><blockquote><p>“The fundamental property of symmetric encryption is that the same key is used for both encryption and decryption. In other words, by knowing the key and the encryption method, one can decrypt or decrypt the message.”</p></blockquote><aside class=quote><em>“Encoding is about efficiently modifying the representation of data without bringing any guarantee of privacy or security.”</em></aside><p>The most famous example is perhaps the <a href=https://en.wikipedia.org/wiki/Caesar_cipher>Caesar cipher algorithm</a>.
+The basic idea is to shift each letter in the plaintext (the original message) by a certain number of places down or up the alphabet.
+For example, if the key is “<code class="language-plaintext highlighter-rouge">3</code>”, then the letters of the alphabet are shifted to three positions.
+In this case, the letter “<code class="language-plaintext highlighter-rouge">A</code>” would be encoded as “<code class="language-plaintext highlighter-rouge">D</code>”, “<code class="language-plaintext highlighter-rouge">B</code>” would be “<code class="language-plaintext highlighter-rouge">E</code>”, and so on.
+To decrypt the message, the recipient only needs to shift the letters back by the same number of positions as used for encryption.
+The Caesar cipher method is easy to break because with only 26 different possible shifts it can be solved with simple brute force and letter frequency analysis.</p><p>The following figure illustrates how symmetric encryption works:</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+flowchart TB;
+U1(["👩 Alice"]) --&gt; |"📒 Plaintext"| E["⚙️ Encryption Process"]
+U1["👩 Alice"] --&gt; |"🔑 KEY"| E["⚙️ Encryption Process"]
+E --&gt; C["🔒 Ciphertext"]
+U2(["👨 Bob"]) --&gt; |"🔒 Ciphertext"| D["⚙️ Decryption Process"]
+U2(["👨 Bob"]) --&gt; |"🔑 KEY"| D["⚙️ Decryption Process"]
+D --&gt; P["📒 Plaintext"]
+</code></pre><p>In the figure above, Alice encrypts a message before sending it to Bob.
+The <code class="language-plaintext highlighter-rouge">KEY</code> node represents the symmetric key.
+Note that arrows are drawn from this node to both the encryption and decryption processes so that the same key is used in both steps.
+It is also important for both Alice and Bob to know exactly how the encryption/decryption process works (i.e., the algorithm used).</p><p>Symmetric encryption can be formalized mathematically using encryption (\(E\)) and decryption (\(D\)) functions.</p><p>Let’s denote:</p><ul><li>\(E\) as the encryption function,</li><li>\(D\) as the decryption function,</li><li>\(k\) as the symmetric key,</li><li>\(M\) as the plaintext message, and</li><li>\(C\) as the ciphertext (encrypted message).</li></ul><p>Then, symmetric encryption and decryption can be represented as follows:</p><ol><li><p><strong>Encryption</strong>: To encrypt a plaintext message \(M\) using the symmetric key \(k\), the encryption function \(E\) is applied to both \(M\) and \(k\). Mathematically, this is represented as: \(C = E_k(M)\)</p></li><li><p><strong>Decryption</strong>: To decrypt the ciphertext \(C\) using the same symmetric key \(k\), the decryption function \(D\) is applied to both \(C\) and \(k\). This is represented as: \(M = D_k(C)\)</p></li></ol><aside class=quote><em>“The SSL/TLS protocol is used to secure internet communications, ensuring data privacy and integrity between two communicating computers, like a web browser and a server.”</em></aside><p>If you prefer code, here’s a simple example of a Java class <code class="language-plaintext highlighter-rouge">SymmetricEncryptionExample</code> that illustrates symmetric encryption using the <a href=https://en.wikipedia.org/wiki/Advanced_Encryption_Standard>Advanced Encryption Standard</a> (AES) algorithm.
+AES is commonly used to secure data transmitted through the SSL/TLS protocol.
+The class relies on the <code class="language-plaintext highlighter-rouge">javax.crypto</code> package.
+It uses <code class="language-plaintext highlighter-rouge">KeyGenerator</code> to create a secret key.
+The key is used to encrypt the <code class="language-plaintext highlighter-rouge">originalText</code> string, and then decrypt it back.
+Note that the <code class="language-plaintext highlighter-rouge">Base64</code> encoding and decoding method is used to handle the byte array conversion for the encrypted text.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>SymmetricEncryptionExampleWithAES</span> <span class=o>{</span>
+  <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=o>(</span><span class=nc>String</span><span class=o>[]</span> <span class=n>args</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=c1>// Generate a symmetric key</span>
+    <span class=nc>KeyGenerator</span> <span class=n>keyGenerator</span> <span class=o>=</span> <span class=nc>KeyGenerator</span><span class=o>.</span><span class=na>getInstance</span><span class=o>(</span><span class=s>"AES"</span><span class=o>);</span>
+    <span class=n>keyGenerator</span><span class=o>.</span><span class=na>init</span><span class=o>(</span><span class=mi>128</span><span class=o>);</span> <span class=c1>// Key size</span>
+    <span class=nc>SecretKey</span> <span class=n>secretKey</span> <span class=o>=</span> <span class=n>keyGenerator</span><span class=o>.</span><span class=na>generateKey</span><span class=o>();</span>
+    <span class=nc>String</span> <span class=n>originalText</span> <span class=o>=</span> <span class=s>"Hello, this is a secret message!"</span><span class=o>;</span>
+    <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"Original Text: "</span> <span class=o>+</span> <span class=n>originalText</span><span class=o>);</span>
+    <span class=c1>// Encrypt the text</span>
+    <span class=nc>String</span> <span class=n>encryptedText</span> <span class=o>=</span> <span class=n>encrypt</span><span class=o>(</span><span class=n>originalText</span><span class=o>,</span> <span class=n>secretKey</span><span class=o>);</span>
+    <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"Encrypted Text: "</span> <span class=o>+</span> <span class=n>encryptedText</span><span class=o>);</span>
+    <span class=c1>// Decrypt the text</span>
+    <span class=nc>String</span> <span class=n>decryptedText</span> <span class=o>=</span> <span class=n>decrypt</span><span class=o>(</span><span class=n>encryptedText</span><span class=o>,</span> <span class=n>secretKey</span><span class=o>);</span>
+    <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"Decrypted Text: "</span> <span class=o>+</span> <span class=n>decryptedText</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Encrypts the plainText via AES using the secret key.
+   */</span>
+  <span class=kd>public</span> <span class=kd>static</span> <span class=nc>String</span> <span class=nf>encrypt</span><span class=o>(</span><span class=nc>String</span> <span class=n>plainText</span><span class=o>,</span> <span class=nc>SecretKey</span> <span class=n>secretKey</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>Cipher</span> <span class=n>cipher</span> <span class=o>=</span> <span class=nc>Cipher</span><span class=o>.</span><span class=na>getInstance</span><span class=o>(</span><span class=s>"AES"</span><span class=o>);</span>
+    <span class=n>cipher</span><span class=o>.</span><span class=na>init</span><span class=o>(</span><span class=nc>Cipher</span><span class=o>.</span><span class=na>ENCRYPT_MODE</span><span class=o>,</span> <span class=n>secretKey</span><span class=o>);</span>
+    <span class=kt>byte</span><span class=o>[]</span> <span class=n>encryptedBytes</span> <span class=o>=</span> <span class=n>cipher</span><span class=o>.</span><span class=na>doFinal</span><span class=o>(</span><span class=n>plainText</span><span class=o>.</span><span class=na>getBytes</span><span class=o>());</span>
+    <span class=k>return</span> <span class=nc>Base64</span><span class=o>.</span><span class=na>getEncoder</span><span class=o>().</span><span class=na>encodeToString</span><span class=o>(</span><span class=n>encryptedBytes</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Decrypts the encrypted text via AES using the provided secret key.
+   */</span>
+  <span class=kd>public</span> <span class=kd>static</span> <span class=nc>String</span> <span class=nf>decrypt</span><span class=o>(</span><span class=nc>String</span> <span class=n>encryptedText</span><span class=o>,</span> <span class=nc>SecretKey</span> <span class=n>secretKey</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>Cipher</span> <span class=n>cipher</span> <span class=o>=</span> <span class=nc>Cipher</span><span class=o>.</span><span class=na>getInstance</span><span class=o>(</span><span class=s>"AES"</span><span class=o>);</span>
+    <span class=n>cipher</span><span class=o>.</span><span class=na>init</span><span class=o>(</span><span class=nc>Cipher</span><span class=o>.</span><span class=na>DECRYPT_MODE</span><span class=o>,</span> <span class=n>secretKey</span><span class=o>);</span>
+    <span class=kt>byte</span><span class=o>[]</span> <span class=n>decryptedBytes</span> <span class=o>=</span> <span class=n>cipher</span><span class=o>.</span><span class=na>doFinal</span><span class=o>(</span><span class=nc>Base64</span><span class=o>.</span><span class=na>getDecoder</span><span class=o>().</span><span class=na>decode</span><span class=o>(</span><span class=n>encryptedText</span><span class=o>));</span>
+    <span class=k>return</span> <span class=k>new</span> <span class=nf>String</span><span class=o>(</span><span class=n>decryptedBytes</span><span class=o>);</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>The main benefit of symmetric encryption is that it is <strong>fast and efficient</strong>.
+By fast I mean, for example, that encrypting a file of one Gigabyte using AES takes less than a second on a personal computer.</p><p>However, the speed of symmetric encryption comes with the following drawbacks:</p><ul><li>The same key is used by the sender and receiver.</li><li>Confidentiality and integrity are guaranteed, but only if the key is not compromised.</li><li>Availability is a problem since establishing trust (key distribution) is complicated.</li></ul><p>The introduction of <strong>asymmetric encryption</strong> was a significant advance in cryptography, as it allowed solving the key distribution problem.
+Thus, establishing a mechanism for securely sharing the secret key.</p><h2 id=asymmetric-encryption>Asymmetric Encryption</h2><p>In 1976, Whitfield Diffie and Martin Hellman proposed a revolutionary method to encrypt messages.<sup id=fnref:1><a href=#fn:1 class=footnote rel=footnote role=doc-noteref>2</a></sup>
+Their system pushed forward the field of cryptography by allowing users to communicate securely without having to agree on a shared secret key.
+The system is known as “public-key cryptography” or “asymmetric encryption,” and it is the foundation of how the internet is secured today.</p><blockquote><p>“The most important property of asymmetric encryption is that the decryption key (a.k.a. <em>private key</em>) cannot be feasibly derived from the encryption key (a.k.a. <em>public key</em>), even though they are mathematically related. This allows the public key to be shared openly, while the owner must keep the private key secret.”</p></blockquote><p>Here’s a graphical representation of how asymmetric encryption works:</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+flowchart TB;
+
+U1(["👩 Alice"]) --&gt; |"📒 Plaintext"| E["⚙️ Encryption Process"]
+U1["👩 Alice"] --&gt; |"🔑 Bob's PUBLIC KEY"| E["⚙️ Encryption Process"]
+E --&gt; C["🔒 Ciphertext"]
+
+U2(["👨 Bob"]) --&gt; |"🔒 Ciphertext"| D["⚙️ Decryption Process"]
+U2(["👨 Bob"]) --&gt; |"🔐 Bob's PRIVATE KEY"| D["⚙️ Decryption Process"]
+D --&gt; P["📒 Plaintext"]
+</code></pre><p>In the diagram above, Alice encrypts a message using Bob’s <strong>public key</strong>.
+The encrypted message can be then sent to Bob.
+Bob decrypts the message using his <strong>private key</strong>.
+Note that the public key is available to everyone (including Alice), while the private key is only known to Bob.
+So only Bob (with his private key) can decrypt the message.</p><p>Asymmetric encryption can be formalized mathematically using encryption and decryption functions similar to symmetric encryption, but with the distinction that it uses two different keys.</p><p>Let’s denote:</p><ul><li>\(E\) as the encryption function,</li><li>\(D\) as the decryption function,</li><li>\(k_{pub}\) as the public key,</li><li>\(k_{priv}\) as the private key,</li><li>\(M\) as the plaintext message,</li><li>\(C\) as the ciphertext (encrypted message).</li></ul><p>The process then involves the following steps:</p><ol><li><p><strong>Encryption</strong>: To encrypt a plaintext message \(M\) using the public key \(k_{pub}\), the encryption function \(E\) is applied. Mathematically, this is represented as: \(C = E_{k_{pub}}(M)\)</p></li><li><p><strong>Decryption</strong>: To decrypt the ciphertext \(C\) using the private key \(k_{priv}\), the decryption function \(D\) is applied. This is represented as: \(M = D_{k_{priv}}(C)\)</p></li></ol><p>Asymmetric encryption algorithms are based on the computational complexity of “hard” problems from number theory.
+Because of the difficulty of the underlying problems, most asymmetric algorithms involve operations such as modular multiplication and exponentiation, which are much more computationally expensive than the techniques used in most block ciphers, especially with typical key sizes.</p><p>The following table shows examples of algorithms based on three mathematical problems that are hard to reverse.</p><table><thead><tr><th>Problem</th><th>Algorithm</th><th>Description</th></tr></thead><tbody><tr><td>Integer Factorization</td><td>RSA</td><td>RSA (<a href=https://sv.wikipedia.org/wiki/RSA>Rivest–Shamir–Adleman</a>) is based on the difficulty of <a href=https://en.wikipedia.org/wiki/Integer_factorization>factoring large integers</a> into prime values.</td></tr><tr><td>Discrete Logarithm Problem</td><td>DSA</td><td>DSA (<a href=https://en.wikipedia.org/wiki/Digital_Signature_Algorithm>Digital Signature Algorithm</a>) relies on the hardness of <a href=https://en.wikipedia.org/wiki/Discrete_logarithm>solving discrete logarithms</a> in a finite field.</td></tr><tr><td>Elliptic Curve</td><td>ECIES</td><td>ECIES (<a href=https://en.wikipedia.org/wiki/Integrated_Encryption_Scheme#Formal_description_of_ECIES>Elliptic Curve Integrated Encryption Scheme</a>) is based on the complexity of the <a href=https://en.wikipedia.org/wiki/Elliptic-curve_cryptography>elliptic curve</a> discrete logarithm problem.</td></tr></tbody></table><p>Now, let’s see how asymmetric encryption can be implemented in practice by looking at some Java code.
+The following example uses the RSA algorithm for encryption and decryption.
+Note that the <code class="language-plaintext highlighter-rouge">KeyPairGenerator</code> class is used to generate a pair of public and private keys.
+The <code class="language-plaintext highlighter-rouge">Cipher</code> class is used to encrypt and decrypt the text, and the <code class="language-plaintext highlighter-rouge">Base64</code> encoding and decoding method is used to handle the byte array conversion for the encrypted text.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>AsymmetricEncryptionExampleWithRSA</span> <span class=o>{</span>
+  <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=o>(</span><span class=nc>String</span><span class=o>[]</span> <span class=n>args</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=c1>// Generate RSA key pair</span>
+    <span class=nc>KeyPairGenerator</span> <span class=n>keyGen</span> <span class=o>=</span> <span class=nc>KeyPairGenerator</span><span class=o>.</span><span class=na>getInstance</span><span class=o>(</span><span class=s>"RSA"</span><span class=o>);</span>
+    <span class=n>keyGen</span><span class=o>.</span><span class=na>initialize</span><span class=o>(</span><span class=mi>2048</span><span class=o>);</span>
+    <span class=nc>KeyPair</span> <span class=n>pair</span> <span class=o>=</span> <span class=n>keyGen</span><span class=o>.</span><span class=na>generateKeyPair</span><span class=o>();</span>
+    <span class=nc>PrivateKey</span> <span class=n>privateKey</span> <span class=o>=</span> <span class=n>pair</span><span class=o>.</span><span class=na>getPrivate</span><span class=o>();</span>
+    <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"Private Key: "</span> <span class=o>+</span> <span class=nc>Base64</span><span class=o>.</span><span class=na>getEncoder</span><span class=o>().</span><span class=na>encodeToString</span><span class=o>(</span><span class=n>privateKey</span><span class=o>.</span><span class=na>getEncoded</span><span class=o>()));</span>
+    <span class=nc>PublicKey</span> <span class=n>publicKey</span> <span class=o>=</span> <span class=n>pair</span><span class=o>.</span><span class=na>getPublic</span><span class=o>();</span>
+    <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"Public Key: "</span> <span class=o>+</span> <span class=nc>Base64</span><span class=o>.</span><span class=na>getEncoder</span><span class=o>().</span><span class=na>encodeToString</span><span class=o>(</span><span class=n>publicKey</span><span class=o>.</span><span class=na>getEncoded</span><span class=o>()));</span>
+    <span class=nc>String</span> <span class=n>originalText</span> <span class=o>=</span> <span class=s>"Hello, this is a secret message!"</span><span class=o>;</span>
+    <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"Original Text: "</span> <span class=o>+</span> <span class=n>originalText</span><span class=o>);</span>
+    <span class=c1>// Encrypt the text</span>
+    <span class=nc>String</span> <span class=n>encryptedText</span> <span class=o>=</span> <span class=n>encrypt</span><span class=o>(</span><span class=n>originalText</span><span class=o>,</span> <span class=n>publicKey</span><span class=o>);</span>
+    <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"Encrypted Text: "</span> <span class=o>+</span> <span class=n>encryptedText</span><span class=o>);</span>
+    <span class=c1>// Decrypt the text</span>
+    <span class=nc>String</span> <span class=n>decryptedText</span> <span class=o>=</span> <span class=n>decrypt</span><span class=o>(</span><span class=n>encryptedText</span><span class=o>,</span> <span class=n>privateKey</span><span class=o>);</span>
+    <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"Decrypted Text: "</span> <span class=o>+</span> <span class=n>decryptedText</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Encrypt text using the public key.
+   */</span>
+  <span class=kd>public</span> <span class=kd>static</span> <span class=nc>String</span> <span class=nf>encrypt</span><span class=o>(</span><span class=nc>String</span> <span class=n>plainText</span><span class=o>,</span> <span class=nc>PublicKey</span> <span class=n>publicKey</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>Cipher</span> <span class=n>cipher</span> <span class=o>=</span> <span class=nc>Cipher</span><span class=o>.</span><span class=na>getInstance</span><span class=o>(</span><span class=s>"RSA/ECB/PKCS1Padding"</span><span class=o>);</span>
+    <span class=n>cipher</span><span class=o>.</span><span class=na>init</span><span class=o>(</span><span class=nc>Cipher</span><span class=o>.</span><span class=na>ENCRYPT_MODE</span><span class=o>,</span> <span class=n>publicKey</span><span class=o>);</span>
+    <span class=kt>byte</span><span class=o>[]</span> <span class=n>encryptedBytes</span> <span class=o>=</span> <span class=n>cipher</span><span class=o>.</span><span class=na>doFinal</span><span class=o>(</span><span class=n>plainText</span><span class=o>.</span><span class=na>getBytes</span><span class=o>());</span>
+    <span class=k>return</span> <span class=nc>Base64</span><span class=o>.</span><span class=na>getEncoder</span><span class=o>().</span><span class=na>encodeToString</span><span class=o>(</span><span class=n>encryptedBytes</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Decrypt text using the private key.
+   */</span>
+  <span class=kd>public</span> <span class=kd>static</span> <span class=nc>String</span> <span class=nf>decrypt</span><span class=o>(</span><span class=nc>String</span> <span class=n>encryptedText</span><span class=o>,</span> <span class=nc>PrivateKey</span> <span class=n>privateKey</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>Cipher</span> <span class=n>cipher</span> <span class=o>=</span> <span class=nc>Cipher</span><span class=o>.</span><span class=na>getInstance</span><span class=o>(</span><span class=s>"RSA/ECB/PKCS1Padding"</span><span class=o>);</span>
+    <span class=n>cipher</span><span class=o>.</span><span class=na>init</span><span class=o>(</span><span class=nc>Cipher</span><span class=o>.</span><span class=na>DECRYPT_MODE</span><span class=o>,</span> <span class=n>privateKey</span><span class=o>);</span>
+    <span class=kt>byte</span><span class=o>[]</span> <span class=n>decryptedBytes</span> <span class=o>=</span> <span class=n>cipher</span><span class=o>.</span><span class=na>doFinal</span><span class=o>(</span><span class=nc>Base64</span><span class=o>.</span><span class=na>getDecoder</span><span class=o>().</span><span class=na>decode</span><span class=o>(</span><span class=n>encryptedText</span><span class=o>));</span>
+    <span class=k>return</span> <span class=k>new</span> <span class=nf>String</span><span class=o>(</span><span class=n>decryptedBytes</span><span class=o>);</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><aside class=quote><em>“Asymmetric encryption is slower and (arguably) less secure than symmetric encryption, but it solves the key distribution problem.”</em></aside><p>In real-world scenarios, encrypting large files (like one Gigabyte or so) directly with an asymmetric encryption algorithm like RSA is impractical due to its slow speed.
+Instead, these types of algorithms are used to encrypt a small piece of data, such as the “secret key” used in symmetric encryption.
+This difference in speed is the principal reason why asymmetric encryption is typically reserved for specific tasks, like safely exchanging keys, not for encrypting lots of data.</p><p>As a result, cryptosystems in practice are mostly hybrid.
+In such a case, a fast high-quality symmetric key encryption algorithm is used for the message itself, while the relevant symmetric key is sent with the message, but encrypted using an asymmetric algorithm.</p><p>So, we often use a mix of both methods, called hybrid cryptosystems.
+Here, a fast symmetric encryption algorithm secures the actual message, while the symmetric key, needed to read the message, is sent along with the message, but encrypted with an asymmetric algorithm.</p><p>Simply using a pair of keys to encrypt/decrypt some piece of data does not guarantee that the information came from a specific user.
+Ultimately, the pair of keys used are not tied to a person or a system.
+To solve this problem, an infrastructure is required in order to bind these two aspects together.
+This idea paves the way for the concept of <strong>Public Key Infrastructure (PKI)</strong>, which ties symmetric and asymmetric encryption together in a trusted framework for secure and verifiable communications.</p><h1 id=public-key-infrastructure-pki>Public Key Infrastructure (PKI)</h1><p>PKI effectively resolves the issue of authenticating public keys.
+It employs a network of trusted entities, each with specific roles, to manage <strong>certificates</strong> and <strong>digital signatures</strong>.
+These responsibilities encompass the creation, storage, dissemination, and revocation of certificates.</p><p>PKI facilitates the authentication process, allowing an entity to prove its identity to a service.
+For instance, a user can submit their public key to a Certificate Authority (CA).
+This can be done through a secure process, such as visiting a CA office in person.
+The CA then issues a certificate that links the user’s identity with their public key.</p><p>This system ensures that any public key or certificate disseminated over the internet is reliably associated with a particular individual or entity.
+Such a mechanism enhances security, making it difficult for imposters to masquerade as legitimate users, thereby bolstering the trustworthiness and integrity of online communications and transactions.</p><p>A user’s public key is distributed via a digital certificate, which is a key part of the PKI.
+Digital certificates, issued by Certificate Authorities (CAs) within the PKI, bind a public key to an entity (like a person or organization).
+They verify the ownership of the public key, ensuring that when you encrypt something with a public key, the intended recipient (and only they) can decrypt it with their private key.
+PKI provides a framework of trust for these certificates, establishing the authenticity of public keys for secure communications and transactions.</p><p>Here’s a diagram that illustrates how PKI works:</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+flowchart TB;
+a(["👩 Alice"]) --&gt; b["⚙️Key Generation Process"]
+b --&gt; |"🔑 PUBLIC KEY"| x(["🏠 Certificate Authority (CA)"])
+b --&gt; |"🔐 PRIVATE KEY"| s["⚙️Signing Process"]
+a --&gt; |"📒 Data"| s
+s --&gt; |"💾 Signed Data"| c(["👨 Bob"])
+x --&gt; |"📝 Certificate"| c
+</code></pre><p>In the previous diagram, Alice initiates the process by generating a pair of public and private keys.
+Then, she sends her public key to the Certificate Authority (CA).
+The CA then creates a certificate based on Alice’s public key.
+This certificate effectively binds Alice’s identity to her public key.
+Alice also engages in a signing process, where she uses her private key to sign a piece of data.
+This signing process is a way to ensure that the data genuinely comes from Alice and has not been tampered with.
+Bob receives two key pieces of information: the signed data from Alice (ensuring the data’s authenticity and integrity), and the certificate from the CA, which allows Bob to verify that the public key he uses to interact with Alice’s data truly belongs to Alice.</p><p>As shown before, PKI has the following advantages for both (sender and receiver) parties:</p><ul><li><strong>Confidentiality</strong>: Their interactions cannot be read by a third-party (due to symmetric encryption).</li><li><strong>Integrity</strong>: Their interactions cannot be modified by a third-party (due to asymmetric encryption).</li><li><strong>Availability</strong>: Their interactions cannot be blocked by a third-party (due to the CA).</li></ul><h2 id=digital-signatures>Digital Signatures</h2><aside class=quote><em>“Digital signatures today guarantee that an email, document, or transaction remains exactly as it was when sent.”</em></aside><p>Digital signatures are an integral part of PKI.
+A digital signature is reminiscent of an ordinary signature.
+It provides a way to verify the authenticity and integrity of digital messages.
+Asymmetric encryption is used to enable this verification.
+A digital signature is created using the signer’s private key, and it can be verified by anyone who has access to the signer’s public key.</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+flowchart TB;
+A(["👩 Alice"]) --&gt; |"📃 Original Message"| B["⚙️ Hashing Algorithm"]
+B --&gt; |"🔑 Unique Hash"| C["⚙️ Encrypt with Private Key"]
+A --&gt; |"🔐 PRIVATE KEY"| C
+C --&gt; |"✒️ Digital Signature"| D["📨 Message + Signature"]
+E(["👨 Bob"]) --&gt; |"📨 Received Message + Signature"| F["⚙️ Decrypt with Public Key"]
+A --&gt; |"🔑 PUBLIC KEY"| F
+F --&gt; |"🔑 Decrypted Hash"| G["⚙️ Hashing Algorithm"]
+E --&gt; |"📃 Received Message"| G
+G --&gt; |"🔑 Newly Generated Hash"| H["🔄 Compare Hashes"]
+F --&gt; H
+H --&gt; |"✅ Match: Signature Verified"| I["🔐 Message Authentic and Unaltered"]
+H --&gt; |"❌ No Match: Signature Invalid"| J["⚠️ Message Tampered or Wrong Signer"]
+</code></pre><p>When a digital signature is created, a cryptographic algorithm generates a unique hash of the message.
+This hash is then encrypted with the signer’s private key.
+The resulting encrypted hash, along with the original message, is what constitutes the digital signature.
+This process ensures that the signature is uniquely tied to both the message and the signer.</p><p>To verify a digital signature, the recipient uses the signer’s public key to decrypt the hash.
+The recipient also generates a new hash of the received message.
+If this newly generated hash matches the decrypted hash, it confirms that the message has not been altered since it was signed and that the signature is valid.</p><p>Digital signatures are central to the operation of PKI and many network security schemes (e.g., SSL/TLS, many VPNs, etc.)
+RSA and DSA are two of the most popular signing algorithms.
+These signatures are crucial in establishing trust and authenticity in digital communications and transactions.</p><h2 id=digital-certificates>Digital Certificates</h2><p>In PKI, <a href=https://en.wikipedia.org/wiki/Public_key_certificate>digital certificates</a> are digital documents that verify the ownership of a public key by the named subject of the certificate.
+These certificates are issued by a trusted authority known as a Certificate Authority (CA).
+The primary role of a certificate is to ensure that a public key belongs to the individual, organization, or device it claims to be from, thus enabling secure communication and transactions over the internet.</p><p>A digital certificate contains several key pieces of information: the subject’s name, the subject’s public key, the expiration date of the certificate, the issuer’s (CA’s) name, and the digital signature of the issuer.
+The CA’s signature is crucial as it vouches for the authenticity of the certificate.
+When a CA issues a certificate, it uses its private key to sign the certificate, thereby linking it securely to the CA.</p><p>A digital certificate typically follows a standard format known as X.509. Below is an example of how an X.509 certificate might look in its PEM (Privacy Enhanced Mail) format, which is a Base64 encoded version of the certificate. This format is commonly used in various applications, such as web servers for HTTPS.</p><pre><code class=language-pem>-----BEGIN CERTIFICATE-----
+MIIDdzCCAl+gAwIBAgIJAOlIvvj3YxLlMA0GCSqGSIb3DQEBCwUAMFExCzAJBgNV
+BAYTAlVTMQswCQYDVQQIDAJDQTESMBAGA1UEBwwJU2FuIERpZWdvMRQwEgYDVQQK
+DAtNeSBDb21wYW55MRIwEAYDVQQDDAlteXNpdGUuY29tMB4XDTE5MDYwMTE2MjMw
+NVoXDTIwMDUzMTE2MjMwNVowUTELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAkNBMRIw
+EAYDVQQHDAlTYW4gRGllZ28xFDASBgNVBAoMC015IENvbXBhbnkxEjAQBgNVBAMM
+CW15c2l0ZS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDc0KgG
+KuTw+gOl1QJX5f8Kl/VLkxR+p+eGjvY6gIUK+5awtc2RStScz5Xegp+AbSxa2WDV
+WzV/MPR3xjT+miyRugPFcwl8oEPlOeHJDDydUfVQK3C3WlR3RLlTjSgC7WyHx+3u
+Scch5aIsSlhYf6vMfhyis5w4a2PAVkwpLLqCslcK9vv+2ZCpCijL6+zF4D9xW1rn
+2mUNuVHc7cbZcW2yXWRnhiY+4c5Iy2+AuHdC2LBdQAdAaRMx4qFdc3hX5UgLKBL1
+3rHfJAmO5FGkP6LlqPlQs/DYpYqCkDSlr6t0cczqZpKPPf+Ave4c48zCJCI6f/0E
+Dx29sv8RZ83eQqRFAgMBAAGjUzBRMB0GA1UdDgQWBBQ8ZyMR+VJfnsFV+3x4E6rP
+3DA5jDAfBgNVHSMEGDAWgBQ8ZyMR+VJfnsFV+3x4E6rP3DA5jDAPBgNVHRMBAf8E
+BTADAQH/MA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAKtWlLrL
+rRt9CXcYGp+Vj3Pq6OTo/BJxwDcJComV5HNZq9hZvHv2HUgULrKQdHYfK/IK4Fov
+q+rgZBMdNPEpZ56R0UwYS/HEHQXKGVatnFqIqm1Yf1V6UitCQxV5Tb3ACVG6GHtD
+q9iVUXAHyVBq8IYUVl3IWC1QJ/4iBxQsQfB5wCvGbC3x0jPfwt2LVLbXTOJLbYle
+ujiP5wMg0y2p5gEr5b9I9iaSyzfsmBhtOuq+klVh/FKWgjyHyC6+okZv2xX6pzpG
+XSQILz/JU+PpKZ6q3F8zYpF1g0IuOrbisX4e/4xhyZ+42fjMEAXQjWmWnM2X6QZk
+RbqACMiiPruGSh8=
+-----END CERTIFICATE-----
+</code></pre><p>In practice, when a secure connection is established (like in HTTPS), the server presents its certificate to the client.
+The client, in turn, verifies the certificate’s validity by checking the CA’s digital signature using the CA’s public key, which it trusts.
+If the certificate is valid and trusted, the client can confidently use the public key in the certificate to establish a secure communication channel with the server.
+This ensures that the data exchanged is encrypted and comes from a verified source.</p><h2 id=certificate-authorities>Certificate Authorities</h2><p><a href=https://en.wikipedia.org/wiki/Certificate_authority>Certificate Authorities</a> (CAs) play a crucial role in PKI.
+These entities are in charge of distributing and managing public keys.
+They issue digital certificates, which are typically stored in X.509 format, a standard for public key certificates.
+For practical management, a keystore (such as PKCS 12) is often used to securely store a private key along with its corresponding X.509 certificate.
+This arrangement ensures that the public key can be publicly disseminated in a verifiable format while keeping the private key secure.</p><aside class=quote><em>“The centralization of trust in PKI creates a paradox: while it simplifies verification, it also presents a single point of failure, making the system highly vulnerable to attacks that compromise the centralized authority.”</em></aside><p>The infrastructure of PKI is based on the trust established in these CAs.
+A certificate can be self-signed or signed by another certificate, but it’s the CA-signed certificates that are crucial for establishing trust.
+When a CA signs a certificate, it is vouching for the authenticity of that public key and the identity associated with it.
+Trusting a CA, therefore, means trusting all the certificates issued by it.
+This trust is fundamental to ensuring confidentiality, integrity, and availability in digital communications secured by PKI.</p><p>However, PKI systems must also address the scenario of compromised private keys.
+In such cases, the associated certificate needs to be invalidated, a process overseen by the CA.
+The CA can revoke a certificate, and this revocation information is disseminated through <a href=https://en.wikipedia.org/wiki/Certificate_revocation_list>Certificate Revocation Lists</a> (CRLs) or the <a href=https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol>Online Certificate Status Protocol</a> (OCSP).
+CRLs provide a list of revoked certificates and are regularly updated and checked by systems verifying certificates.
+OCSP offers real-time verification, checking the status of a certificate each time it is presented.
+This mechanism ensures that compromised certificates are quickly recognized as invalid, maintaining the overall security of the PKI system.</p><h2 id=example-https>Example: HTTPS</h2><p>Billions of people use the <a href=https://en.wikipedia.org/wiki/HTTPS>Hypertext Transfer Protocol Secure</a> (HTTPS) every day.
+HTTPS is a protocol that allows secure communication between a client and a server.
+I would say, this is the most fundamental building block of the internet.</p><p>HTTPS uses encryption to protect the privacy and integrity of the data being transmitted.
+It protects against man-in-the-middle attacks, and the bidirectional block cipher encryption of communications between a client and server protects the communications against eavesdropping and tampering.
+If the data is hijacked online, all the hijacker gets are binary code.</p><figure class=badge><a href=https://en.wikipedia.org/wiki/HTTPS><img src=../img/posts/2023/2023-08-13/https_internet_url.jpg style=width:140px;max-width:100% alt=badge></a></figure><p>HTTPS transmits encrypted data using <a href=https://en.wikipedia.org/wiki/Transport_Layer_Security>Transport Layer Security</a> (TLS).
+The authentication aspect of HTTPS requires a trusted third-party to sign server-side digital certificates.</p><p>Here is how the transmitted data is encrypted and decrypted:</p><ol><li><p>First, the client (browser) and the server establish a TCP connection.</p></li><li><p>The client sends a “<em>first client message</em>” to the server containing a set of encryption algorithms (or cipher suites) which indicates the latest TLS version it can support.</p></li><li><p>The server responds with a “<em>first server message</em>” so the browser knows whether it can support the algorithms and TLS version.</p></li><li><p>The server then sends the SSL certificate to the client containing the public key, hostname, expiry dates, etc.</p></li><li><p>After validating the SSL certificate, the client generates a session key and encrypts it using the public key.</p></li><li><p>The server receives the encrypted session key and decrypts it with the private key.</p></li><li><p>Now that both the client and the server hold the same session key (symmetric encryption), the encrypted data is transmitted in a secure bi-directional channel.</p></li></ol><p>There are two main reasons why HTTPS switches to symmetric encryption during data transmission:</p><ol><li><p><strong>Security:</strong> The asymmetric encryption goes only one way. This means that if the server tries to send the encrypted data back to the client, anyone can decrypt the data using the public key.</p></li><li><p><strong>Server resources:</strong> The asymmetric encryption adds quite a lot of mathematical overhead. It is not suitable for data transmissions in long sessions.</p></li></ol><h1 id=web-of-trust-wot>Web of Trust (WOT)</h1><p>The <a href=https://en.wikipedia.org/wiki/Web_of_trust>Web of Trust</a> (WOT) is a decentralized trust model used in public key cryptography, contrasting with the hierarchical model of PKI. In the WOT, trust is established through a network of individual users, rather than relying on a central authority like a Certificate Authority (CA). Users in this system validate each other’s identity and vouch for the authenticity of each other’s public keys through a process known as “key signing.”</p><p>In this model, when a user signs another public key, they are essentially asserting that they believe the key belongs to the person who claims to own it. These signatures are then added to the key’s metadata and become visible to others within the network. The more signatures a key has, especially from users who themselves have many signatures, the more trusted it becomes. This method allows trust to be built organically within the community.</p><p>The following diagram illustrates a WOT network:</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+flowchart TB;
+A(["👤 User A"]) --&gt;|Signs Key of| B(["👤 User B"])
+B --&gt;|Signs Key of| C(["👤 User C"])
+C --&gt;|Signs Key of| D(["👤 User D"])
+B --&gt;|Signs Key of| D
+A --&gt;|Signs Key of| E(["👤 User E"])
+E --&gt;|Signs Key of| F(["👤 User F"])
+F --&gt;|Signs Key of| A
+D --&gt;|Signs Key of| F
+E --&gt;|Signs Key of| C
+</code></pre><p>Each node (<code class="language-plaintext highlighter-rouge">User A</code>, <code class="language-plaintext highlighter-rouge">User B</code>, etc.) represents an individual participant in the WOT, where one user signs the key of another.
+This network of trust relationships indicates that users trust the identity associated with the keys they have signed.
+The interconnectedness shows how trust is distributed in a decentralized manner, without a central authority like in PKI systems.</p><p>As shown before, the WOT model relies heavily on the discretion and judgment of its users, making it susceptible to issues of trust scaling and network integrity.
+It’s more commonly used in environments where users can reasonably be expected to have personal interactions or where community-based trust is sufficient, such as in certain open-source communities.
+The WOT provides an alternative to the more rigid structure of PKI, offering a more flexible, though less formalized, approach to establishing trust in digital communications.</p><h1 id=conclusion>Conclusion</h1><p>In this article, I have introduced the fundamental concepts of Cryptography, including symmetric and asymmetric encryption.
+These concepts are the building blocks of Public Key Infrastructure (PKI).
+I have explained how PKI is used to establish trust in digital communications and transactions.
+I have also discussed the role of certificates and digital signatures in PKI.
+Finally, I have introduced the concept of Web of Trust (WOT) as an alternative to decentralizing PKI.</p><h1 id=footnotes>Footnotes</h1><div class=footnotes role=doc-endnotes><ol><li id=fn:2><p>In symmetric encryption, sometimes the keys are actually different but still connected in a way that is straightforward to figure out. <a href=#fnref:2 class=reversefootnote role=doc-backlink>&#8617;</a></p></li><li id=fn:1><p>Whitfield Diffie and Martin Hellman, “<a href=https://ieeexplore.ieee.org/document/1055638>New Directions in Cryptography</a>”, <em>IEEE Transactions on Information Theory</em>, Vol. 22, No. 6, November 1976, pp. 644–654. <a href=#fnref:1 class=reversefootnote role=doc-backlink>&#8617;</a></p></li></ol></div></article><ul class="pager blog-pager"><li class=previous><a href=/blog/my-phd-as-a-comic.html data-toggle=tooltip data-placement=top title="My PhD as a Comic">&larr; Previous Post</a></li><li class=next><a href=/blog/surviving-the-ai-revolution-as-a-software-engineer.html data-toggle=tooltip data-placement=top title="Surviving the AI Revolution as a Software Engineer">Next Post &rarr;</a></li></ul><br></div></div></div><script>anchors.options={position:'left'},anchors.add('h1:not(.no-anchor)','h2','h3')</script><div class=container><div class=row><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style=padding-right:15px><div class=flex-container-footer-badges><section class=share-section><a href="https://twitter.com/intent/tweet?text=This+article+delves+into+symmetric+and+asymmetric+encryption%2C+as+the+building+blocks+of+Public+Key+Infrastructure+%28PKI%29.+It+describes+how+PKI+allows+safeguarding+the+authenticity+and+security+of+digital+communications+across+the+internet.+%0A+https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id=share-twitter class="fab fa-twitter" aria-hidden=true></span>
+<span class=sr-only>Twitter</span></a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id=share-linkedin class="fab fa-linkedin-in" aria-hidden=true></span>
+<span class=sr-only>LinkedIn</span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/a-prime-on-public-key-infrastructure.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden=true></span>
+<span class=sr-only>Facebook</span></a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fa-prime-on-public-key-infrastructure.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden=true></span>
+<span class=sr-only>Reddit</span></a>
+<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fa-prime-on-public-key-infrastructure.html&text=This+article+delves+into+symmetric+and+asymmetric+encryption%2C+as+the+building+blocks+of+Public+Key+Infrastructure+%28PKI%29.+It+describes+how+PKI+allows+safeguarding+the+authenticity+and+security+of+digital+communications+across+the+internet.+%0A" class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
+<span class=sr-only>Telegram</span></a>
+<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fa-prime-on-public-key-infrastructure.html&t=A+Prime+on+Public+Key+Infrastructure" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
+<span class=sr-only>Hacker News</span></a></section></div><div id=related-posts><hr><h2>Related Posts</h2><div class="panel-deck row"><div class=col-sm-4><div class=panel><a href=/blog/zip-slip-attacks.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>The Zip Slip Vulnerability Exploitation</h4><div class=date style=margin-bottom:0>Posted on October 16, 2019</div></div><img src=../img/posts/2019/zipper_cover.jpg alt="The Zip Slip Vulnerability Exploitation"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/the-software-supply-chain.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>The Software Supply Chain</h4><div class=date style=margin-bottom:0>Posted on October 11, 2021</div></div><img src=../img/posts/2021/crane_cover.png alt="The Software Supply Chain"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Revisiting Ken Thompson’s Reflection on Trusting Trust</h4><div class=date style=margin-bottom:0>Posted on December 27, 2023</div></div><img src=../img/posts/2023/2023-12-27/cross_t_centralen_cover.jpg alt="Revisiting Ken Thompson’s Reflection on Trusting Trust"></div></a></div></div></div></div><div><div id=giscus-container></div><script src=/js/load-giscus.js></script>
+<script>window.addEventListener('load',loadGiscus)</script></div></div></div></div><script>window.addEventListener('DOMContentLoaded',()=>{const a=new IntersectionObserver(a=>{a.forEach(a=>{const b=a.target.getAttribute('id');a.intersectionRatio>0?document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.add('active'):document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.remove('active')})});document.querySelectorAll('h1[id]').forEach(b=>{a.observe(b)}),document.querySelectorAll('h2[id]').forEach(b=>{a.observe(b)})})</script><footer><div class="container beautiful-jekyll-footer"><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style=text-align:center><div class=flex-container-footer-badges><a href=https://www.linkedin.com/in/cesarsotovalero><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin"></a>
+<a href=https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg><img alt="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black&label=Subscribe"></a>
+<a href=https://github.com/cesarsotovalero><img alt="Follow me on GitHub" src="https://img.shields.io/github/followers/cesarsotovalero?label=Follow%20me"></a></div></div><div class=flex-container-footer-copyright><p class="copyright text-muted">&copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2025</p></div></div></div></div></footer><script>typeof jQuery=='undefined'&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src=/js/bootstrap.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/flowtype.js></script>
+<script src=/js/scroll-to-top.js></script>
+<script src=/js/lazysizes.min.js></script>
+<script src=/js/popup-footnotes.js></script>
+<script src=/js/mermaid.min.js></script>
+<script>$(document).ready(function(){mermaid.initialize({startOnLoad:!0,theme:"default"}),window.mermaid.init(void 0,document.querySelectorAll('.language-mermaid'))})</script><script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'),ga('create','UA-107061705-1','auto'),ga('send','pageview')</script><script src=/js/mode-switcher.js></script></body></html>

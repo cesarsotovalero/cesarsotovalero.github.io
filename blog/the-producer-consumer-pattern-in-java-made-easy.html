@@ -1,0 +1,220 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml lang=en-us xml:lang=en-US itemscope itemtype=http://schema.org/WebSite><head><script>(function(){let a=localStorage.getItem('theme');a==='dark'&&document.documentElement.setAttribute('data-theme','dark')})()</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>The Producer-Consumer Pattern in Java Made Easy</title><meta name=keywords content="Java,producer/consumer,design patterns"><link rel=alternate type=application/rss+xml title="César Soto Valero  César - Computer Scientist" href=https://www.cesarsotovalero.net/feed.xml><script src=https://cdn.jsdelivr.net/npm/typed.js@2.0.12></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel=stylesheet><link rel=apple-touch-icon sizes=180x180 href=../img/favicon/redketchup/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../img/favicon/redketchup/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../img/favicon/redketchup/favicon-16x16.png><link rel=manifest href=../img/favicon/redketchup/site.webmanifest><link id=code rel=stylesheet href=../css/pygment_highlights.css><script src=https://d3js.org/d3.v7.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-107061705-1')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","bs3gcidnol")</script><script src=../js/anchor.min.js></script>
+<link rel=stylesheet href=//use.fontawesome.com/releases/v5.12.0/css/all.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/bootstrap-social.css><link rel=stylesheet href=/css/main.css><link rel=stylesheet href=/css/academicons.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel=stylesheet href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name=generator content="Jekyll v4.3.2"><meta property="og:title" content="The Producer-Consumer Pattern in Java Made Easy"><meta name=author content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name=description content="The Producer-Consumer pattern is a powerful design strategy used to decouple the production of data from its processing, enabling parallelism and efficient data handling. This post is about how to implement this pattern in Java using the BlockingQueue interface, allowing for easy, thread-safe coordination between producers and consumers. This guide walks through a real-world example, demonstrating how to produce and consume data in parallel with minimal synchronization complexity."><meta property="og:description" content="The Producer-Consumer pattern is a powerful design strategy used to decouple the production of data from its processing, enabling parallelism and efficient data handling. This post is about how to implement this pattern in Java using the BlockingQueue interface, allowing for easy, thread-safe coordination between producers and consumers. This guide walks through a real-world example, demonstrating how to produce and consume data in parallel with minimal synchronization complexity."><link rel=canonical href=https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html><meta property="og:url" content="https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2020/java_design_patterns_cover.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2020-06-28T00:00:00-07:00"><meta name=twitter:card content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2020/java_design_patterns_cover.jpg"><meta property="twitter:title" content="The Producer-Consumer Pattern in Java Made Easy"><meta name=twitter:site content="@cesarsotovalero"><meta name=twitter:creator content="@César Soto Valero"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"César Soto Valero","url":"https://www.cesarsotovalero.net/about-me"},"dateModified":"2025-07-29T11:52:25-07:00","datePublished":"2020-06-28T00:00:00-07:00","description":"The Producer-Consumer pattern is a powerful design strategy used to decouple the production of data from its processing, enabling parallelism and efficient data handling. This post is about how to implement this pattern in Java using the BlockingQueue interface, allowing for easy, thread-safe coordination between producers and consumers. This guide walks through a real-world example, demonstrating how to produce and consume data in parallel with minimal synchronization complexity.","headline":"The Producer-Consumer Pattern in Java Made Easy","image":"https://www.cesarsotovalero.net/img/posts/2020/java_design_patterns_cover.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024.jpg"},"name":"César Soto Valero"},"url":"https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html"}</script><script type=text/x-mathjax-config> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+   </script><script type=text/x-mathjax-config>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+   </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type=text/javascript></script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class=navbar-toggle type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id=navbarSupportedContent><ul class="navigation list-inline text-center footer-links" id=black-icons><li class="nav-item navbar-custom" title=Home><a id=navbar-brand href=https://www.cesarsotovalero.net>Home</a></li><li class="nav-item navbar-custom"><a href=/blog>Blog</a></li><li class="nav-item navbar-custom"><a href=/linkedin>LinkedIn</a></li><li class="nav-item navbar-custom"><a href=/youtube>YouTube</a></li><li class="nav-item navbar-custom"><a href=/podcasts>Podcasts</a></li><li class="nav-item navbar-custom"><a href=/talks>Talks</a></li><li class="nav-item navbar-custom"><a href=/about-me>About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href=# id=theme-toggle onclick=modeSwitcher() style=cursor:pointer></a></li></ul></div></nav><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class=header-image style=padding-left:15px><div class="row justify-content-center" style=margin-right:0;margin-left:0></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><h1 class=no-anchor>The Producer-Consumer Pattern in Java Made Easy</h1><h2 class=post-subheading>An example using the BlockingQueue Java interface</h2><div class="container flex-container"><a href=https://www.cesarsotovalero.net/about-me><img class=avatar-img-small src=/img/pages/cesar/avatar-icon-2024.jpg alt="César Soto Valero" id=meta-img></a><div class=flex-item><span class=post-meta>Posted on June 28, 2020</span><div><span class=post-meta title="Estimated read time"><svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg>&nbsp;7 mins read</span>
+<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>java</span></div></div></div><div class=flex-item><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style=margin-left:0><section id=share-section><script type=text/javascript src=https://storage.ko-fi.com/cdn/widget/Widget_2.js></script><script type=text/javascript>kofiwidget2.init('Support this blog','#7aa4d1','G2G3CRPPI'),kofiwidget2.draw()</script></section></div></div></div><div class=cesarcarbon id=cesarcarbonads-post><script async type=text/javascript src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id=_carbonads_js></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"><ol id=toc class=section-nav><li class="toc-entry toc-h1"><a href=#the-item>The Item</a></li><li class="toc-entry toc-h1"><a href=#the-producer>The Producer</a></li><li class="toc-entry toc-h1"><a href=#the-consumer>The Consumer</a></li><li class="toc-entry toc-h1"><a href=#the-client>The Client</a></li><li class="toc-entry toc-h1"><a href=#summary>Summary</a></li></ol></div></div></div></div></header><div class=container><div class=row><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=blog-post><p>I see the usage of a recurring handy pattern for doing data collection and analysis in software engineering: <a href=https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem>the producer-consumer pattern</a>. This pattern simplifies the data acquisition (handled by the Producer), and the data post-processing (handled by the Consumer). The Producer collects the data items one at the time and places the items into a queue for processing later. The Consumer then takes one item at a time from the queue, process it, and saves the data for further analysis. This decoupled design makes it easy to parallelize the whole process as desired. For example, depending on the processing time and resources, one can have several <em>independent</em> Consumers running in parallel.</p><blockquote><p>“A <code class="language-plaintext highlighter-rouge">BlockingQueue</code> is a queue that additionally supports operations that wait for the queue to become non-empty when retrieving an element, and wait for space to become available in the queue when storing an element.”</p></blockquote><p>We have used this the Producer-Consumer pattern successfully to collect million of artifacts from Maven Central and storing them in a graph database. We have published our research tool, <a href=https://github.com/diverse-project/maven-miner>maven-miner</a>, and the collected data in a <a href=https://ieeexplore.ieee.org/document/8816814>research paper</a>. For this paper, we used <a href=https://www.rabbitmq.com/>RabbitMQ</a> for message querying. In this post, I’ll explain a more straightforward way to implement this pattern in Java using the <a href=https://docs.oracle.com/javase/8/docs/api/?java/util/concurrent/BlockingQueue.html><code class="language-plaintext highlighter-rouge">BlockingQueue</code></a> data structure. The example is inspired by the excellent <em>Advanced Java Development</em> course by Ken Kousen.</p><h1 id=the-item>The Item</h1><p>Let us start with POJO called <code class="language-plaintext highlighter-rouge">Item</code>, which represent the object that we want to collect and process. Items are going to be produced and consumed by the <code class="language-plaintext highlighter-rouge">Producer</code> and <code class="language-plaintext highlighter-rouge">Consumer</code> classes, respectively.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>final</span> <span class=kd>class</span> <span class=nc>Item</span> <span class=o>{</span>
+    <span class=kd>private</span> <span class=kd>final</span> <span class=kt>int</span> <span class=n>id</span><span class=o>;</span>
+
+    <span class=kd>public</span> <span class=nf>Item</span><span class=o>(</span><span class=kt>int</span> <span class=n>id</span><span class=o>)</span> <span class=o>{</span>
+        <span class=k>this</span><span class=o>.</span><span class=na>id</span> <span class=o>=</span> <span class=n>id</span><span class=o>;</span>
+    <span class=o>}</span>
+
+    <span class=kd>public</span> <span class=kt>int</span> <span class=nf>getId</span><span class=o>()</span> <span class=o>{</span>
+        <span class=k>return</span> <span class=n>id</span><span class=o>;</span>
+    <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=the-producer>The Producer</h1><p>The <code class="language-plaintext highlighter-rouge">Producer</code> class will be executed in its own thread by implementing <code class="language-plaintext highlighter-rouge">Runnable</code>. This class uses a <code class="language-plaintext highlighter-rouge">BlockingQueue</code> to hold the <code class="language-plaintext highlighter-rouge">Item</code> objects. The <code class="language-plaintext highlighter-rouge">run</code> method will instantiate 100 items and put them into the queue. This phase can involve complex queries to databases or REST APIs, depending on the application. At the end of the items’ production, the Producer will put an item with id equals to -1, to indicate the last item was added to the queue.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>Producer</span> <span class=kd>implements</span> <span class=nc>Runnable</span> <span class=o>{</span>
+    <span class=kd>private</span> <span class=kt>int</span> <span class=n>id</span><span class=o>;</span>
+    <span class=kd>private</span> <span class=nc>BlockingQueue</span><span class=o>&lt;</span><span class=nc>Item</span><span class=o>&gt;</span> <span class=n>queue</span><span class=o>;</span>
+    <span class=nc>Random</span> <span class=n>random</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>Random</span><span class=o>();</span>
+
+    <span class=kd>public</span> <span class=nf>Producer</span><span class=o>(</span><span class=kt>int</span> <span class=n>id</span><span class=o>,</span> <span class=nc>BlockingQueue</span><span class=o>&lt;</span><span class=nc>Item</span><span class=o>&gt;</span> <span class=n>queue</span><span class=o>)</span> <span class=o>{</span>
+        <span class=k>this</span><span class=o>.</span><span class=na>id</span> <span class=o>=</span> <span class=n>id</span><span class=o>;</span>
+        <span class=k>this</span><span class=o>.</span><span class=na>queue</span> <span class=o>=</span> <span class=n>queue</span><span class=o>;</span>
+    <span class=o>}</span>
+
+    <span class=nd>@Override</span>
+    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>run</span><span class=o>()</span> <span class=o>{</span>
+        <span class=k>for</span> <span class=o>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=o>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=mi>100</span><span class=o>;</span> <span class=n>i</span><span class=o>++)</span> <span class=o>{</span>
+            <span class=nc>Item</span> <span class=n>item</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>Item</span><span class=o>(</span><span class=n>i</span><span class=o>);</span>
+            <span class=k>try</span> <span class=o>{</span>
+                <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>printf</span><span class=o>(</span><span class=s>"Producer %d produced %d%n"</span><span class=o>,</span>
+                 <span class=n>id</span><span class=o>,</span> <span class=n>msg</span><span class=o>.</span><span class=na>getId</span><span class=o>());</span>
+                <span class=n>queue</span><span class=o>.</span><span class=na>put</span><span class=o>(</span><span class=n>item</span><span class=o>);</span>
+                <span class=nc>Thread</span><span class=o>.</span><span class=na>sleep</span><span class=o>(</span><span class=n>random</span><span class=o>.</span><span class=na>nextInt</span><span class=o>(</span><span class=mi>100</span><span class=o>));</span>
+            <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=nc>InterruptedException</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+                <span class=nc>Thread</span><span class=o>.</span><span class=na>currentThread</span><span class=o>().</span><span class=na>interrupt</span><span class=o>();</span>
+            <span class=o>}</span>
+        <span class=o>}</span>
+
+        <span class=k>try</span> <span class=o>{</span>
+            <span class=n>queue</span><span class=o>.</span><span class=na>put</span><span class=o>(</span><span class=k>new</span> <span class=nc>Item</span><span class=o>(-</span><span class=mi>1</span><span class=o>));</span>
+        <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=nc>InterruptedException</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+            <span class=nc>Thread</span><span class=o>.</span><span class=na>currentThread</span><span class=o>().</span><span class=na>interrupt</span><span class=o>();</span>
+        <span class=o>}</span>
+    <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=the-consumer>The Consumer</h1><p>The <code class="language-plaintext highlighter-rouge">Consumer</code> class also implements <code class="language-plaintext highlighter-rouge">Runnable</code>. The <code class="language-plaintext highlighter-rouge">run</code> method gets one item at the time by invoking the <code class="language-plaintext highlighter-rouge">take</code> function in the <code class="language-plaintext highlighter-rouge">BlockingQueue</code> until an <code class="language-plaintext highlighter-rouge">Item</code> with <code class="language-plaintext highlighter-rouge">id = -1</code> is retrieved.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>Consumer</span> <span class=kd>implements</span> <span class=nc>Runnable</span> <span class=o>{</span>
+    <span class=kd>private</span> <span class=kt>int</span> <span class=n>id</span><span class=o>;</span>
+    <span class=kd>private</span> <span class=nc>BlockingQueue</span><span class=o>&lt;</span><span class=nc>Item</span><span class=o>&gt;</span> <span class=n>queue</span><span class=o>;</span>
+    <span class=nc>Random</span> <span class=n>random</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>Random</span><span class=o>();</span>
+
+    <span class=kd>public</span> <span class=nf>Consumer</span><span class=o>(</span><span class=kt>int</span> <span class=n>id</span><span class=o>,</span> <span class=nc>BlockingQueue</span><span class=o>&lt;</span><span class=nc>Item</span><span class=o>&gt;</span> <span class=n>queue</span><span class=o>)</span> <span class=o>{</span>
+        <span class=k>this</span><span class=o>.</span><span class=na>id</span> <span class=o>=</span> <span class=n>id</span><span class=o>;</span>
+        <span class=k>this</span><span class=o>.</span><span class=na>queue</span> <span class=o>=</span> <span class=n>queue</span><span class=o>;</span>
+    <span class=o>}</span>
+
+    <span class=nd>@Override</span>
+    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>run</span><span class=o>()</span> <span class=o>{</span>
+        <span class=nc>Item</span> <span class=n>item</span><span class=o>;</span>
+        <span class=k>try</span> <span class=o>{</span>
+            <span class=k>while</span> <span class=o>((</span><span class=n>msg</span> <span class=o>=</span> <span class=n>queue</span><span class=o>.</span><span class=na>take</span><span class=o>()).</span><span class=na>getId</span><span class=o>()</span> <span class=o>!=</span> <span class=o>-</span><span class=mi>1</span><span class=o>)</span> <span class=o>{</span>
+                <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>printf</span><span class=o>(</span><span class=s>"Consumer %d consumed %d%n"</span><span class=o>,</span>
+                 <span class=n>id</span><span class=o>,</span> <span class=n>msg</span><span class=o>.</span><span class=na>getId</span><span class=o>());</span>
+
+                <span class=nc>Thread</span><span class=o>.</span><span class=na>sleep</span><span class=o>(</span><span class=n>random</span><span class=o>.</span><span class=na>nextInt</span><span class=o>(</span><span class=mi>100</span><span class=o>));</span>
+            <span class=o>}</span>
+        <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=nc>InterruptedException</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+            <span class=nc>Thread</span><span class=o>.</span><span class=na>currentThread</span><span class=o>().</span><span class=na>interrupt</span><span class=o>();</span>
+        <span class=o>}</span>
+    <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=the-client>The Client</h1><p>The <code class="language-plaintext highlighter-rouge">Client</code> class instantiates two <code class="language-plaintext highlighter-rouge">Producer</code>, two <code class="language-plaintext highlighter-rouge">Consumer</code>, and a <code class="language-plaintext highlighter-rouge">LinkedBlockingQueue</code> object. It makes a<code class="language-plaintext highlighter-rouge"> FixedThreadPool</code>, which uses the <code class="language-plaintext highlighter-rouge">availableProcessors()</code> utility to use exactly the available processors in the system. Finally, the producers and consumers are executed.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>ProducerConsumerDemo</span> <span class=o>{</span>
+    <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=o>(</span><span class=nc>String</span><span class=o>[]</span> <span class=n>args</span><span class=o>)</span> <span class=o>{</span>
+        <span class=nc>BlockingQueue</span><span class=o>&lt;</span><span class=nc>Item</span><span class=o>&gt;</span> <span class=n>queue</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>LinkedBlockingQueue</span><span class=o>&lt;&gt;();</span>
+        <span class=nc>Producer</span> <span class=n>p1</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>Producer</span><span class=o>(</span><span class=mi>1</span><span class=o>,</span> <span class=n>queue</span><span class=o>);</span>
+        <span class=nc>Producer</span> <span class=n>p2</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>Producer</span><span class=o>(</span><span class=mi>2</span><span class=o>,</span> <span class=n>queue</span><span class=o>);</span>
+        <span class=nc>Consumer</span> <span class=n>c1</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>Consumer</span><span class=o>(</span><span class=mi>1</span><span class=o>,</span> <span class=n>queue</span><span class=o>);</span>
+        <span class=nc>Consumer</span> <span class=n>c2</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>Consumer</span><span class=o>(</span><span class=mi>2</span><span class=o>,</span> <span class=n>queue</span><span class=o>);</span>
+
+        <span class=nc>ExecutorService</span> <span class=n>service</span> <span class=o>=</span> <span class=nc>Executors</span><span class=o>.</span><span class=na>newFixedThreadPool</span><span class=o>(</span>
+                <span class=nc>Runtime</span><span class=o>.</span><span class=na>getRuntime</span><span class=o>().</span><span class=na>availableProcessors</span><span class=o>());</span>
+        <span class=n>service</span><span class=o>.</span><span class=na>execute</span><span class=o>(</span><span class=n>p1</span><span class=o>);</span>
+        <span class=n>service</span><span class=o>.</span><span class=na>execute</span><span class=o>(</span><span class=n>p2</span><span class=o>);</span>
+        <span class=n>service</span><span class=o>.</span><span class=na>execute</span><span class=o>(</span><span class=n>c1</span><span class=o>);</span>
+        <span class=n>service</span><span class=o>.</span><span class=na>execute</span><span class=o>(</span><span class=n>c2</span><span class=o>);</span>
+        <span class=n>service</span><span class=o>.</span><span class=na>shutdown</span><span class=o>();</span>
+    <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Here’s an except of the output:</p><figure class=highlight><pre><code class=language-text data-lang=text>Producer 2 produced 0
+Producer 1 produced 0
+Consumer 1 consumed 0
+Consumer 2 consumed 0
+Producer 1 produced 1
+Producer 1 produced 2
+Consumer 1 consumed 1
+Consumer 2 consumed 2
+Producer 2 produced 1
+Consumer 2 consumed 1
+Producer 1 produced 3
+Consumer 2 consumed 3
+Producer 1 produced 4
+Consumer 1 consumed 4
+Producer 2 produced 2
+Consumer 2 consumed 2
+...</code></pre></figure><h1 id=summary>Summary</h1><p>The Producer-Consumer pattern is a recurrent design strategy for collecting and processing data from multiple sources. The <code class="language-plaintext highlighter-rouge">BlockingQueue</code> Java interface allows us to implement this pattern and solve this problem without the need for manually handling multi-process synchronization.</p></article><ul class="pager blog-pager"><li class=previous><a href=/blog/diversity-driven-software-debloat.html data-toggle=tooltip data-placement=top title="Diversity-Driven Software Debloat">&larr; Previous Post</a></li><li class=next><a href=/blog/how-to-deploy-a-simple-spring-boot-application-in-gcp.html data-toggle=tooltip data-placement=top title="How to Deploy a Simple Spring Boot Application in GCP">Next Post &rarr;</a></li></ul><br></div></div></div><script>anchors.options={position:'left'},anchors.add('h1:not(.no-anchor)','h2','h3')</script><div class=container><div class=row><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style=padding-right:15px><div class=flex-container-footer-badges><section class=share-section><a href="https://twitter.com/intent/tweet?text=The+Producer-Consumer+pattern+is+a+powerful+design+strategy+used+to+decouple+the+production+of+data+from+its+processing%2C+enabling+parallelism+and+efficient+data+handling.+This+post+is+about+how+to+implement+this+pattern+in+Java+using+the+BlockingQueue+interface%2C+allowing+for+easy%2C+thread-safe+coordination+between+producers+and+consumers.+This+guide+walks+through+a+real-world+example%2C+demonstrating+how+to+produce+and+consume+data+in+parallel+with+minimal+synchronization+complexity.%0A+https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id=share-twitter class="fab fa-twitter" aria-hidden=true></span>
+<span class=sr-only>Twitter</span></a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id=share-linkedin class="fab fa-linkedin-in" aria-hidden=true></span>
+<span class=sr-only>LinkedIn</span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/the-producer-consumer-pattern-in-java-made-easy.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden=true></span>
+<span class=sr-only>Facebook</span></a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-producer-consumer-pattern-in-java-made-easy.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden=true></span>
+<span class=sr-only>Reddit</span></a>
+<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-producer-consumer-pattern-in-java-made-easy.html&text=The+Producer-Consumer+pattern+is+a+powerful+design+strategy+used+to+decouple+the+production+of+data+from+its+processing%2C+enabling+parallelism+and+efficient+data+handling.+This+post+is+about+how+to+implement+this+pattern+in+Java+using+the+BlockingQueue+interface%2C+allowing+for+easy%2C+thread-safe+coordination+between+producers+and+consumers.+This+guide+walks+through+a+real-world+example%2C+demonstrating+how+to+produce+and+consume+data+in+parallel+with+minimal+synchronization+complexity.%0A" class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
+<span class=sr-only>Telegram</span></a>
+<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-producer-consumer-pattern-in-java-made-easy.html&t=The+Producer-Consumer+Pattern+in+Java+Made+Easy" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
+<span class=sr-only>Hacker News</span></a></section></div><div id=related-posts><hr><h2>Related Posts</h2><div class="panel-deck row"><div class=col-sm-4><div class=panel><a href=/blog/deploying-to-maven-central.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Deploying to Maven Central</h4><div class=date style=margin-bottom:0>Posted on January 6, 2020</div></div><img src=../img/posts/2020/maven_journey_cover.png alt="Deploying to Maven Central"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/the-fork-join-java-framework.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>The Fork/Join Java framework</h4><div class=date style=margin-bottom:0>Posted on June 5, 2021</div></div><img src=../img/posts/2021/night_tree_cover.jpg alt="The Fork/Join Java framework"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/encoding-encryption-hashing-and-obfuscation-in-java.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Encoding, Encryption, Hashing, and Obfuscation in Java</h4><div class=date style=margin-bottom:0>Posted on December 19, 2021</div></div><img src=../img/posts/2021/paint_on_wall_cover.jpg alt="Encoding, Encryption, Hashing, and Obfuscation in Java"></div></a></div></div></div></div><div><div id=giscus-container></div><script src=/js/load-giscus.js></script>
+<script>window.addEventListener('load',loadGiscus)</script></div></div></div></div><script>window.addEventListener('DOMContentLoaded',()=>{const a=new IntersectionObserver(a=>{a.forEach(a=>{const b=a.target.getAttribute('id');a.intersectionRatio>0?document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.add('active'):document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.remove('active')})});document.querySelectorAll('h1[id]').forEach(b=>{a.observe(b)}),document.querySelectorAll('h2[id]').forEach(b=>{a.observe(b)})})</script><footer><div class="container beautiful-jekyll-footer"><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style=text-align:center><div class=flex-container-footer-badges><a href=https://www.linkedin.com/in/cesarsotovalero><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin"></a>
+<a href=https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg><img alt="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black&label=Subscribe"></a>
+<a href=https://github.com/cesarsotovalero><img alt="Follow me on GitHub" src="https://img.shields.io/github/followers/cesarsotovalero?label=Follow%20me"></a></div></div><div class=flex-container-footer-copyright><p class="copyright text-muted">&copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2025</p></div></div></div></div></footer><script>typeof jQuery=='undefined'&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src=/js/bootstrap.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/flowtype.js></script>
+<script src=/js/scroll-to-top.js></script>
+<script src=/js/lazysizes.min.js></script>
+<script src=/js/popup-footnotes.js></script>
+<script src=/js/mermaid.min.js></script>
+<script>$(document).ready(function(){mermaid.initialize({startOnLoad:!0,theme:"default"}),window.mermaid.init(void 0,document.querySelectorAll('.language-mermaid'))})</script><script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'),ga('create','UA-107061705-1','auto'),ga('send','pageview')</script><script src=/js/mode-switcher.js></script></body></html>

@@ -1,0 +1,778 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml lang=en-us xml:lang=en-US itemscope itemtype=http://schema.org/WebSite><head><script>(function(){let a=localStorage.getItem('theme');a==='dark'&&document.documentElement.setAttribute('data-theme','dark')})()</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>The Dynamic Features of Java</title><meta name=keywords content="Static analysis in Java,Java reflection,Java bytecode analysis,Java security,Java usafe api,Java dynamic analysis"><link rel=alternate type=application/rss+xml title="César Soto Valero  César - Computer Scientist" href=https://www.cesarsotovalero.net/feed.xml><script src=https://cdn.jsdelivr.net/npm/typed.js@2.0.12></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel=stylesheet><link rel=apple-touch-icon sizes=180x180 href=../img/favicon/redketchup/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../img/favicon/redketchup/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../img/favicon/redketchup/favicon-16x16.png><link rel=manifest href=../img/favicon/redketchup/site.webmanifest><link id=code rel=stylesheet href=../css/pygment_highlights.css><script src=https://d3js.org/d3.v7.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-107061705-1')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","bs3gcidnol")</script><script src=../js/anchor.min.js></script>
+<link rel=stylesheet href=//use.fontawesome.com/releases/v5.12.0/css/all.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/bootstrap-social.css><link rel=stylesheet href=/css/main.css><link rel=stylesheet href=/css/academicons.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel=stylesheet href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name=generator content="Jekyll v4.3.2"><meta property="og:title" content="The Dynamic Features of Java"><meta name=author content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name=description content="The existence of dynamic features built in the language allows Java developers to transform their program executions at runtime dynamically. However, these features in most Java programs are a fundamental problem for static analysis tools that rely on precise call-graph construction. Notably, the GraalVM compiler relies on points-to analysis to perform AOT compilation. This blog post covers the main dynamic features of Java and the reasons why they are still a long-standing issue for researchers and practitioners in program analysis."><meta property="og:description" content="The existence of dynamic features built in the language allows Java developers to transform their program executions at runtime dynamically. However, these features in most Java programs are a fundamental problem for static analysis tools that rely on precise call-graph construction. Notably, the GraalVM compiler relies on points-to analysis to perform AOT compilation. This blog post covers the main dynamic features of Java and the reasons why they are still a long-standing issue for researchers and practitioners in program analysis."><link rel=canonical href=https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html><meta property="og:url" content="https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2022/untamed_horse_cover.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2022-04-22T00:00:00-07:00"><meta name=twitter:card content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2022/untamed_horse_cover.jpg"><meta property="twitter:title" content="The Dynamic Features of Java"><meta name=twitter:site content="@cesarsotovalero"><meta name=twitter:creator content="@César Soto Valero"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"César Soto Valero","url":"https://www.cesarsotovalero.net/about-me"},"dateModified":"2025-07-29T11:52:25-07:00","datePublished":"2022-04-22T00:00:00-07:00","description":"The existence of dynamic features built in the language allows Java developers to transform their program executions at runtime dynamically. However, these features in most Java programs are a fundamental problem for static analysis tools that rely on precise call-graph construction. Notably, the GraalVM compiler relies on points-to analysis to perform AOT compilation. This blog post covers the main dynamic features of Java and the reasons why they are still a long-standing issue for researchers and practitioners in program analysis.","headline":"The Dynamic Features of Java","image":"https://www.cesarsotovalero.net/img/posts/2022/untamed_horse_cover.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024.jpg"},"name":"César Soto Valero"},"url":"https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html"}</script><script type=text/x-mathjax-config> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+   </script><script type=text/x-mathjax-config>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+   </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type=text/javascript></script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class=navbar-toggle type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id=navbarSupportedContent><ul class="navigation list-inline text-center footer-links" id=black-icons><li class="nav-item navbar-custom" title=Home><a id=navbar-brand href=https://www.cesarsotovalero.net>Home</a></li><li class="nav-item navbar-custom"><a href=/blog>Blog</a></li><li class="nav-item navbar-custom"><a href=/linkedin>LinkedIn</a></li><li class="nav-item navbar-custom"><a href=/youtube>YouTube</a></li><li class="nav-item navbar-custom"><a href=/podcasts>Podcasts</a></li><li class="nav-item navbar-custom"><a href=/talks>Talks</a></li><li class="nav-item navbar-custom"><a href=/about-me>About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href=# id=theme-toggle onclick=modeSwitcher() style=cursor:pointer></a></li></ul></div></nav><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class=header-image style=padding-left:15px><div class="row justify-content-center" style=margin-right:0;margin-left:0></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><h1 class=no-anchor>The Dynamic Features of Java</h1><h2 class=post-subheading>A long-standing challenge for static analyzers</h2><div class="container flex-container"><a href=https://www.cesarsotovalero.net/about-me><img class=avatar-img-small src=/img/pages/cesar/avatar-icon-2024.jpg alt="César Soto Valero" id=meta-img></a><div class=flex-item><span class=post-meta>Posted on April 22, 2022</span><div><span class=post-meta title="Estimated read time"><svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg>&nbsp;35 mins read</span>
+<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>java</span></div></div></div><div class=flex-item><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style=margin-left:0><section id=share-section><script type=text/javascript src=https://storage.ko-fi.com/cdn/widget/Widget_2.js></script><script type=text/javascript>kofiwidget2.init('Support this blog','#7aa4d1','G2G3CRPPI'),kofiwidget2.draw()</script></section></div></div></div><div class=cesarcarbon id=cesarcarbonads-post><script async type=text/javascript src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id=_carbonads_js></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"><ol id=toc class=section-nav><li class="toc-entry toc-h1"><a href=#dynamic-language-features>Dynamic Language Features</a></li><li class="toc-entry toc-h1"><a href=#examples>Examples</a></li><li class="toc-entry toc-h1"><a href=#challenges-of-using-dynamic-features>Challenges of Using Dynamic Features</a></li><li class="toc-entry toc-h1"><a href=#conclusion>Conclusion</a></li><li class="toc-entry toc-h1"><a href=#further-reading>Further Reading</a></li><li class="toc-entry toc-h1"><a href=#footnotes>Footnotes</a></li></ol></div></div></div></div></header><div class=container><div class=row><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=blog-post><p>The existence of dynamic features built-in within the language allows Java developers to dynamically transform their program executions at runtime.
+For example, using the <a href=https://docs.oracle.com/javase/tutorial/reflect/>Java Reflection API</a>, one can inspect and interact with otherwise static language constructs such as classes, fields, and methods, e.g., to instantiate objects, set fields and invoke methods.
+These dynamic language features are helpful, but their usage also hinders the accuracy of static analysis tools.
+This is due to the undecidability of resolving and analyzing code that is not reachable at compile time.
+As I mentioned in a <a href=./aot-vs-jit-compilation-in-java.html>previous blog post</a>, the promising GraalVM compiler performs Ahead of Time Compilation (AOT) through static analysis on Java bytecode.
+However, the presence of dynamic features in most Java programs is a fundamental challenge for GraalVM.
+Consequently, recognizing these features is key to understand the current limitations of AOT.
+This blog post covers the fundamental dynamic features of Java and the reasons why they pose a significant challenge for GraalVM and static analysis tools in general.</p><figure class=jb_picture><img width style=border: src=/assets/resized/untamed_horse-640x373.jpg alt="The dynamic features of Java remain an untamed horse for static analysis." data-srcset="/assets/resized/untamed_horse-640x373.jpg 640w,/assets/resized/untamed_horse-768x448.jpg 768w,/assets/resized/untamed_horse-1024x597.jpg 1024w,/assets/resized/untamed_horse-1366x797.jpg 1366w,/assets/resized/untamed_horse-1600x933.jpg 1600w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>&#169; The dynamic features of Java remain an untamed horse for static analysis. Photo from <a href=https://goo.gl/maps/gVnr4aBeNiFHGB2X9>Hersby, Lidingö</a>.</figcaption></figure><h1 id=dynamic-language-features>Dynamic Language Features</h1><p>Java is a dynamic programming language.
+As such, it supports dynamic features just like other dynamic languages such as Ruby, Python, and JavaScript.
+Dynamic language features were introduced in Java since the very beginning, for example, Dynamic Proxies are available since <a href=https://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Proxy.html>v1.3 of the JDK</a>.</p><blockquote><p>“Dynamic programming languages execute many common programming behaviours at runtime that static programming languages perform during compilation.
+These behaviors could include an extension of the program, by adding new code, by extending objects and definitions, or by modifying the type system.”
+– <cite><a href=https://en.wikipedia.org/wiki/Dynamic_programming_language>Wikipedia</a></cite></p></blockquote><p>The existence of dynamic features in Java impacts its footprint at runtime.
+For instance, a Java program can read strings from external files, register those strings as classes, load those classes via custom class loaders, create proxies, serialize them, and so on, <strong>all at runtime!</strong>
+Consequently, program analysis tools based on static analysis can’t afford to make assumptions about what should be kept at runtime and what should not.</p><blockquote><p>“Static analysis is a popular technique to detect bugs and vulnerabilities early in the life cycle of a program when it is still relatively inexpensive to fix those issues.
+It is based on the idea of extracting a model from the program without executing it, and then to reason about this model in order to detect flaws in the program.”
+– <cite><a href=https://rdcu.be/cTsnh>Sui et. al.</a></cite></p></blockquote><p>Static analysis differs from dynamic analysis techniques.
+Dynamic techniques are inherently unsound as they depend on workloads to execute the program under analysis.
+For real-world programs, these workloads will not cover all possible execution paths.
+Due to the dynamic features that are prevalent in Java programs, it turns out that most static analyses are not sound.
+As explained in the rest of this post, these dynamic features are notoriously difficult to model.</p><p><strong>The Soundness Manifesto</strong> defines the soundness of static analysis with respect to possible program executions.
+Similarly, precision can be defined with respect to possible program executions as well.
+For static analysis, a “precise analysis” can only model possible executions.
+The notion of possible program execution is used as ground truth to assess the soundness and the precision of call graph construction tools.</p><blockquote><p>“Analyses are often expected to be sound in that their result models all possible executions of the program under analysis.”
+– <cite><a href=https://dl.acm.org/doi/10.1145/2644805>In defense of soundiness: a manifesto</a></cite></p></blockquote><p>In general, dynamic features allow programmers to customize some aspects of the execution semantics of a program.
+These customizations can be divided as follows:</p><ol><li>Class and object life cycle.</li><li>Field access.</li><li>Method dispatch.</li></ol><p>This post considers two main categories of dynamic features:</p><ol><li><strong>Features built into the language itself and exposed by official APIs</strong>:
+These are reflective features that give the ability of a system to reason about itself.
+For example, dynamic class loading, Dynamic Proxies, the Java Reflection API, and invokedynamic fit into this category.</li><li><strong>Certain features where programmers can access extra-linguistic mechanisms</strong>:
+For example, the use of the Java Native Interface (JNI), the Unsafe API, and deserialization are in this category.</li></ol><p>The following section presents representative examples for each of these categories.</p><h1 id=examples>Examples</h1><h2 id=dynamic-class-loading>Dynamic Class Loading</h2><p>Java makes possible declaring custom <a href=https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ClassLoader.html>class loaders</a>.
+We can use a custom <code class="language-plaintext highlighter-rouge">ClassLoader</code> to compile a <code class="language-plaintext highlighter-rouge">.java</code> source file from a file system and then load the compiled <code class="language-plaintext highlighter-rouge">.class</code> at runtime.
+This mechanism allows programmers to load classes from arbitrary locations, e.g., from an external file system or over the network.</p><p>In the following example, the class <code class="language-plaintext highlighter-rouge">CustomClassLoader</code> extends <code class="language-plaintext highlighter-rouge">ClassLoader</code> and overrides the method <code class="language-plaintext highlighter-rouge">findClass</code>.
+The method <code class="language-plaintext highlighter-rouge">compile</code> is used by <code class="language-plaintext highlighter-rouge">findClass</code> to compile a class file from the file system.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>CustomClassLoader</span> <span class=kd>extends</span> <span class=nc>ClassLoader</span> <span class=o>{</span>
+  <span class=nd>@Override</span>
+  <span class=kd>protected</span> <span class=nc>Class</span><span class=o>&lt;?&gt;</span> <span class=n>findClass</span><span class=o>(</span><span class=nc>String</span> <span class=n>name</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>ClassNotFoundException</span> <span class=o>{</span>
+    <span class=kt>byte</span><span class=o>[]</span> <span class=n>content</span><span class=o>;</span>
+    <span class=k>try</span> <span class=o>{</span>
+      <span class=n>content</span> <span class=o>=</span> <span class=n>compile</span><span class=o>(</span><span class=k>this</span><span class=o>.</span><span class=na>getClass</span><span class=o>().</span><span class=na>getClassLoader</span><span class=o>(),</span> <span class=n>name</span><span class=o>);</span>
+    <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=nc>Exception</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+      <span class=k>throw</span> <span class=k>new</span> <span class=nf>ClassNotFoundException</span><span class=o>();</span>
+    <span class=o>}</span>
+    <span class=k>return</span> <span class=nf>defineClass</span><span class=o>(</span><span class=n>name</span><span class=o>,</span> <span class=n>content</span><span class=o>,</span> <span class=mi>0</span><span class=o>,</span> <span class=n>content</span><span class=o>.</span><span class=na>length</span><span class=o>);</span>
+  <span class=o>}</span>
+  <span class=kd>private</span> <span class=kt>byte</span><span class=o>[]</span> <span class=nf>compile</span><span class=o>(</span><span class=nc>ClassLoader</span> <span class=n>classLoader</span><span class=o>,</span> <span class=nc>String</span> <span class=n>name</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>IOException</span> <span class=o>{</span>
+    <span class=nc>String</span> <span class=n>path</span> <span class=o>=</span> <span class=n>name</span><span class=o>.</span><span class=na>replace</span><span class=o>(</span><span class=s>"."</span><span class=o>,</span> <span class=s>"/"</span><span class=o>);</span>
+    <span class=nc>JavaCompiler</span> <span class=n>compiler</span> <span class=o>=</span> <span class=nc>ToolProvider</span><span class=o>.</span><span class=na>getSystemJavaCompiler</span><span class=o>();</span>
+    <span class=n>compiler</span><span class=o>.</span><span class=na>run</span><span class=o>(</span><span class=kc>null</span><span class=o>,</span> <span class=kc>null</span><span class=o>,</span> <span class=kc>null</span><span class=o>,</span> <span class=n>classLoader</span><span class=o>.</span><span class=na>getResource</span><span class=o>(</span><span class=n>path</span> <span class=o>+</span> <span class=s>".java"</span><span class=o>).</span><span class=na>getFile</span><span class=o>());</span>
+    <span class=nc>File</span> <span class=n>file</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>File</span><span class=o>(</span><span class=n>classLoader</span><span class=o>.</span><span class=na>getResource</span><span class=o>(</span><span class=n>path</span> <span class=o>+</span> <span class=s>".class"</span><span class=o>).</span><span class=na>getFile</span><span class=o>());</span>
+    <span class=nc>FileInputStream</span> <span class=n>input</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>FileInputStream</span><span class=o>(</span><span class=n>file</span><span class=o>);</span>
+    <span class=kt>byte</span><span class=o>[]</span> <span class=n>content</span> <span class=o>=</span> <span class=k>new</span> <span class=kt>byte</span><span class=o>[(</span><span class=kt>int</span><span class=o>)</span> <span class=n>file</span><span class=o>.</span><span class=na>length</span><span class=o>()];</span>
+    <span class=n>input</span><span class=o>.</span><span class=na>read</span><span class=o>(</span><span class=n>content</span><span class=o>);</span>
+    <span class=n>input</span><span class=o>.</span><span class=na>close</span><span class=o>();</span>
+    <span class=k>return</span> <span class=n>content</span><span class=o>;</span>
+  <span class=o>}</span>
+<span class=o>}</span> 
+</pre></td></tr></tbody></table></code></pre></figure><p>The following test loads the class from a source file called <code class="language-plaintext highlighter-rouge">Target.java</code>.
+Then, the class is instantiated and the method <code class="language-plaintext highlighter-rouge">magic()</code> is invoked.
+Notice that the <code class="language-plaintext highlighter-rouge">Target</code> class was not in the classpath previously.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class=code><pre><span class=nd>@Test</span>
+<span class=kd>public</span> <span class=kt>void</span> <span class=nf>findClass</span><span class=o>()</span> <span class=o>{</span>
+  <span class=nc>CustomClassLoader</span> <span class=n>ccl</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>CustomClassLoader</span><span class=o>();</span>
+  <span class=k>try</span> <span class=o>{</span>
+    <span class=nc>Class</span><span class=o>&lt;?&gt;</span> <span class=n>target</span> <span class=o>=</span> <span class=n>ccl</span><span class=o>.</span><span class=na>findClass</span><span class=o>(</span><span class=s>"dynamicClassLoading.Target"</span><span class=o>);</span>
+    <span class=kt>int</span> <span class=n>magic</span> <span class=o>=</span> <span class=o>(</span><span class=nc>Integer</span><span class=o>)</span> <span class=n>target</span><span class=o>.</span><span class=na>getMethod</span><span class=o>(</span><span class=s>"magic"</span><span class=o>).</span><span class=na>invoke</span><span class=o>(</span><span class=n>target</span><span class=o>.</span><span class=na>newInstance</span><span class=o>());</span>
+    <span class=nc>Assert</span><span class=o>.</span><span class=na>assertEquals</span><span class=o>(</span><span class=mi>42</span><span class=o>,</span> <span class=n>magic</span><span class=o>);</span>
+  <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=nc>Exception</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+    <span class=n>fail</span><span class=o>(</span><span class=s>"ClassNotFoundException"</span><span class=o>);</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Any class name provided as a parameter of type <code class="language-plaintext highlighter-rouge">String</code> to methods in <code class="language-plaintext highlighter-rouge">ClassLoader</code> must be a binary name (notice the instruction <code class="language-plaintext highlighter-rouge">name.replace(".", "/")</code> in the method <code class="language-plaintext highlighter-rouge">compile</code>).
+Examples of valid class names include:</p><ul><li><code class="language-plaintext highlighter-rouge">java.lang.String</code></li><li><code class="language-plaintext highlighter-rouge">javax.swing.JSpinner$DefaultEditor</code></li><li><code class="language-plaintext highlighter-rouge">java.security.KeyStore$Builder$FileBuilder$1</code></li><li><code class="language-plaintext highlighter-rouge">java.net.URLClassLoader$3$1</code></li></ul><h2 id=dynamic-proxies>Dynamic Proxies</h2><p><a href=https://www.baeldung.com/java-dynamic-proxies>Dynamic proxies</a> allow one single class with one single method to service multiple method calls to arbitrary classes with an arbitrary number of methods.
+It is like a facade, but one that can pretend to be an implementation of any interface.
+Under the cover, it routes all method invocations to a single handler: the <code class="language-plaintext highlighter-rouge">invoke()</code> method.</p><p>A <a href=https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Proxy.html>proxy class</a> is a class created at runtime that implements a specified list of interfaces, known as proxy interfaces.
+A proxy instance is an instance of a proxy class.
+Each proxy instance has an associated invocation handler, which implements the interface <a href=https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/InvocationHandler.html><code class="language-plaintext highlighter-rouge">InvocationHandler</code></a>.
+When a method is invoked on a proxy instance, the method invocation is encoded and dispatched to the invoke method of its invocation handler
+The invocation handler processes the encoded method invocation as appropriate and the result that it returns will be returned as the result of the method invocation on the proxy instance.</p><p>Here is an example of a class <code class="language-plaintext highlighter-rouge">ProxyInstance</code> that invokes a custom method <code class="language-plaintext highlighter-rouge">target(String</code>:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>ProxyInstance</span> <span class=kd>implements</span> <span class=nc>InvocationHandler</span> <span class=o>{</span>
+  <span class=nd>@Override</span>
+  <span class=kd>public</span> <span class=nc>Object</span> <span class=nf>invoke</span><span class=o>(</span><span class=nc>Object</span> <span class=n>proxy</span><span class=o>,</span> <span class=nc>Method</span> <span class=n>method</span><span class=o>,</span> <span class=nc>Object</span><span class=o>[]</span> <span class=n>arg</span><span class=o>)</span> <span class=o>{</span>
+    <span class=k>return</span> <span class=nf>target</span><span class=o>((</span><span class=nc>String</span><span class=o>)</span> <span class=n>arg</span><span class=o>[</span><span class=mi>0</span><span class=o>]);</span>
+  <span class=o>}</span>
+  <span class=kd>public</span> <span class=nc>String</span> <span class=nf>target</span><span class=o>(</span><span class=nc>String</span> <span class=n>s</span><span class=o>)</span> <span class=o>{</span>
+    <span class=k>return</span> <span class=n>s</span> <span class=o>+</span> <span class=s>" from target(String)"</span><span class=o>;</span>
+  <span class=o>}</span>
+<span class=o>}</span> 
+</pre></td></tr></tbody></table></code></pre></figure><p>Let’s create a <code class="language-plaintext highlighter-rouge">ProxyInterface</code> with a method <code class="language-plaintext highlighter-rouge">foo(String)</code>:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>interface</span> <span class=nc>ProxyInterface</span> <span class=o>{</span>
+  <span class=nc>String</span> <span class=nf>foo</span><span class=o>(</span><span class=nc>String</span> <span class=n>s</span><span class=o>);</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>The following class <code class="language-plaintext highlighter-rouge">ProxyInterfaceImpl</code> implements the <code class="language-plaintext highlighter-rouge">ProxyInterface</code>:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>ProxyInterfaceImpl</span> <span class=kd>implements</span> <span class=nc>ProxyInterface</span> <span class=o>{</span>
+  <span class=nd>@Override</span>
+  <span class=kd>public</span> <span class=nc>String</span> <span class=nf>foo</span><span class=o>(</span><span class=nc>String</span> <span class=n>s</span><span class=o>)</span> <span class=o>{</span>
+    <span class=k>return</span> <span class=n>s</span> <span class=o>+</span> <span class=s>" from foo(String)"</span><span class=o>;</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Now, let’s create a class <code class="language-plaintext highlighter-rouge">DynamicProxy</code> that executes the method <code class="language-plaintext highlighter-rouge">foo</code> through the <code class="language-plaintext highlighter-rouge">ProxyInstance</code>:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>DynamicProxy</span> <span class=o>{</span>
+  <span class=kd>public</span> <span class=nc>String</span> <span class=nf>execute</span><span class=o>()</span> <span class=o>{</span>
+    <span class=nc>ProxyInterface</span> <span class=n>proxy</span> <span class=o>=</span> <span class=o>(</span><span class=nc>ProxyInterface</span><span class=o>)</span> <span class=nc>Proxy</span><span class=o>.</span><span class=na>newProxyInstance</span><span class=o>(</span>
+        <span class=nc>ProxyInterface</span><span class=o>.</span><span class=na>class</span><span class=o>.</span><span class=na>getClassLoader</span><span class=o>(),</span>
+        <span class=k>new</span> <span class=nc>Class</span><span class=o>[]{</span><span class=nc>ProxyInterface</span><span class=o>.</span><span class=na>class</span><span class=o>},</span>
+        <span class=k>new</span> <span class=nf>ProxyInstance</span><span class=o>()</span>
+    <span class=o>);</span>
+    <span class=k>return</span> <span class=n>proxy</span><span class=o>.</span><span class=na>foo</span><span class=o>(</span><span class=s>"hello"</span><span class=o>);</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>In this scenario, the method <code class="language-plaintext highlighter-rouge">execute()</code> is supposed to call <code class="language-plaintext highlighter-rouge">foo(String)</code> form <code class="language-plaintext highlighter-rouge">ProxyInterfaceImpl</code> and return the string <code class="language-plaintext highlighter-rouge">hello from foo(String)</code>.
+However, it is redirected to <code class="language-plaintext highlighter-rouge">target(String)</code> in <code class="language-plaintext highlighter-rouge">ProxyInstance</code> at runtime, returning “<code class="language-plaintext highlighter-rouge">hello from target(String)</code>” instead.</p><p>Here’s a test case for the above example:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+</pre></td><td class=code><pre><span class=nd>@Test</span>
+<span class=kd>public</span> <span class=kt>void</span> <span class=nf>testExecute</span><span class=o>()</span> <span class=o>{</span>
+  <span class=nc>DynamicProxy</span> <span class=n>dp</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>DynamicProxy</span><span class=o>();</span>
+  <span class=nc>Assert</span><span class=o>.</span><span class=na>assertEquals</span><span class=o>(</span><span class=s>"hello from target(String)"</span><span class=o>,</span> <span class=n>dp</span><span class=o>.</span><span class=na>execute</span><span class=o>());</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=jvm-invokedynamic>JVM Invokedynamic</h2><p>Before Java 7, the JVM only had four method invocation types:</p><ul><li><code class="language-plaintext highlighter-rouge">invokevirtual</code>: To call normal class methods.</li><li><code class="language-plaintext highlighter-rouge">invokestatic</code>: To call static methods.</li><li><code class="language-plaintext highlighter-rouge">invokeinterface</code>: To call interface methods.</li><li><code class="language-plaintext highlighter-rouge">invokespecial</code>: To call constructors or private methods.</li></ul><p>Despite their differences, all these invocations share one simple trait: They have a few predefined steps to complete each method call, it is not possible to enrich these steps with custom behaviors.
+There are two main workarounds for this limitation, one at compile-time and the other at runtime.
+The former is usually used by languages like Scala or Koltin and the latter is the solution of choice for JVM-based dynamic languages like JRuby.</p><p>The <a href=https://blogs.oracle.com/javamagazine/post/understanding-java-method-invocation-with-invokedynamic>JVM invokedynamic</a> instruction was introduced in Java 7.
+It makes it possible to resolve method calls dynamically at runtime.
+This gives the user more control over the method dispatch process by using a <a href=https://www.baeldung.com/java-invoke-dynamic>user-defined bootstrap method</a> that computes the call target.
+While the original motivation behind invokedynamic was to provide support for dynamic languages like Ruby, its main application (in the JDK 8) is to provide support for lambda expressions.<sup id=fnref:1><a href=#fn:1 class=footnote rel=footnote role=doc-noteref>1</a></sup></p><p>Here is an example of a lambda function:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>LambdaFunction</span> <span class=o>{</span>
+  <span class=kt>int</span> <span class=n>foo</span> <span class=o>=</span> <span class=mi>3</span><span class=o>;</span>
+  <span class=kd>public</span> <span class=nc>Integer</span> <span class=nf>execute</span><span class=o>()</span> <span class=o>{</span>
+    <span class=nc>IntUnaryOperator</span> <span class=n>c</span> <span class=o>=</span> <span class=k>this</span><span class=o>::</span><span class=n>target</span><span class=o>;</span>
+    <span class=k>return</span> <span class=n>c</span><span class=o>.</span><span class=na>applyAsInt</span><span class=o>(</span><span class=mi>14</span><span class=o>);</span>
+  <span class=o>}</span>
+  <span class=kd>private</span> <span class=nc>Integer</span> <span class=nf>target</span><span class=o>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>)</span> <span class=o>{</span>
+    <span class=k>return</span> <span class=n>i</span> <span class=o>*</span> <span class=n>foo</span><span class=o>;</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Here’s a test case:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+</pre></td><td class=code><pre><span class=nd>@Test</span>
+<span class=kd>public</span> <span class=kt>void</span> <span class=nf>testMethodTargetThatHasNoParam</span><span class=o>()</span> <span class=o>{</span>
+  <span class=nc>LambdaFunctionMinimal</span> <span class=n>lambda</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>LambdaFunctionMinimal</span><span class=o>();</span>
+  <span class=nc>Assert</span><span class=o>.</span><span class=na>assertEquals</span><span class=o>(</span><span class=nc>Integer</span><span class=o>.</span><span class=na>valueOf</span><span class=o>(</span><span class=mi>42</span><span class=o>),</span> <span class=n>lambda</span><span class=o>.</span><span class=na>execute</span><span class=o>());</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>The bytecode for the previous lambda example is as follows:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=nf>execute</span><span class=o>()</span><span class=nc>Ljava</span><span class=o>/</span><span class=n>lang</span><span class=o>/</span><span class=nc>Integer</span><span class=o>;</span>
+   <span class=no>L0</span>
+    <span class=no>LINENUMBER</span> <span class=mi>16</span> <span class=no>L0</span>
+    <span class=no>ALOAD</span> <span class=mi>0</span>
+    <span class=no>INVOKEDYNAMIC</span> <span class=nf>applyAsInt</span><span class=o>(</span><span class=nc>Linvokedynamic</span><span class=o>/</span><span class=nc>LambdaFunctionMinimal</span><span class=o>;)</span><span class=nc>Ljava</span><span class=o>/</span><span class=n>util</span><span class=o>/</span><span class=n>function</span><span class=o>/</span><span class=nc>IntUnaryOperator</span><span class=o>;</span> <span class=o>[</span>
+      <span class=c1>// handle kind 0x6 : INVOKESTATIC</span>
+      <span class=n>java</span><span class=o>/</span><span class=n>lang</span><span class=o>/</span><span class=n>invoke</span><span class=o>/</span><span class=nc>LambdaMetafactory</span><span class=o>.</span><span class=na>metafactory</span><span class=o>(</span>
+      <span class=nc>Ljava</span><span class=o>/</span><span class=n>lang</span><span class=o>/</span><span class=n>invoke</span><span class=o>/</span><span class=nc>MethodHandles</span><span class=n>$Lookup</span><span class=o>;</span>
+      <span class=nc>Ljava</span><span class=o>/</span><span class=n>lang</span><span class=o>/</span><span class=nc>String</span><span class=o>;</span>
+      <span class=nc>Ljava</span><span class=o>/</span><span class=n>lang</span><span class=o>/</span><span class=n>invoke</span><span class=o>/</span><span class=nc>MethodType</span><span class=o>;</span>
+      <span class=nc>Ljava</span><span class=o>/</span><span class=n>lang</span><span class=o>/</span><span class=n>invoke</span><span class=o>/</span><span class=nc>MethodType</span><span class=o>;</span>
+      <span class=nc>Ljava</span><span class=o>/</span><span class=n>lang</span><span class=o>/</span><span class=n>invoke</span><span class=o>/</span><span class=nc>MethodHandle</span><span class=o>;</span>
+      <span class=nc>Ljava</span><span class=o>/</span><span class=n>lang</span><span class=o>/</span><span class=n>invoke</span><span class=o>/</span><span class=nc>MethodType</span><span class=o>;)</span>
+      <span class=nc>Ljava</span><span class=o>/</span><span class=n>lang</span><span class=o>/</span><span class=n>invoke</span><span class=o>/</span><span class=nc>CallSite</span><span class=o>;</span>
+      <span class=c1>// arguments:</span>
+      <span class=o>(</span><span class=no>I</span><span class=o>)</span><span class=no>I</span><span class=o>,</span> 
+      <span class=c1>// handle kind 0x7 : INVOKESPECIAL</span>
+      <span class=n>invokedynamic</span><span class=o>/</span><span class=nc>LambdaFunctionMinimal</span><span class=o>.</span><span class=na>target</span><span class=o>(</span><span class=no>I</span><span class=o>)</span><span class=nc>Ljava</span><span class=o>/</span><span class=n>lang</span><span class=o>/</span><span class=nc>Integer</span><span class=o>;,</span> 
+      <span class=o>(</span><span class=no>I</span><span class=o>)</span><span class=no>I</span>
+    <span class=o>]</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>The above example uses a <a href=https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html><code class="language-plaintext highlighter-rouge">LambdaMetafactory</code></a> to create a <code class="language-plaintext highlighter-rouge">CallSite</code> that is used to invoke the <code class="language-plaintext highlighter-rouge">target</code> method.
+It uses a <a href=https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/MethodHandle.html><code class="language-plaintext highlighter-rouge">MethodHandles.Lookup</code></a> to find the <code class="language-plaintext highlighter-rouge">target</code> method.</p><p>The runtime approach is usually reflection-based and, consequently, inefficient.
+On the other hand, the compile-time solution is generally relying on code generation at compile-time.
+This approach is more efficient at runtime.
+However, it’s somewhat brittle and may cause a slower startup time as there’s more bytecode to process.
+<code class="language-plaintext highlighter-rouge">Function</code> represents a function that accepts one argument and produces a result.</p><h2 id=java-native-interface>Java Native Interface</h2><p>Sometimes we need to use code that’s <strong>natively-compiled for a specific hardware architecture</strong>.</p><p>There could be many reasons for needing to use native code, for example:</p><ul><li>To handle some hardware.</li><li>To improve the performance of a very demanding process.</li><li>To reuse an existing native library instead of rewriting it in Java.</li></ul><p>For these purposes, the JDK introduces the Java Native Interface (JNI) as a foreign function interface.
+It works as a bridge between the bytecode running in the Java Virtual Machine (JVM) and the native code.
+Thus, JNI allows code running on the JVM to call and be called by native applications.
+Using JNI, one can call methods written in C/C++ or even access assembly language functions from Java.</p><p><a href=https://www.baeldung.com/jni>Native methods</a> are declared using the <code class="language-plaintext highlighter-rouge">native</code> keyword.
+They are called just like regular Java methods.
+<code class="language-plaintext highlighter-rouge">System.loadLibrary()</code> is used to load the shared native library (e.g, a <code class="language-plaintext highlighter-rouge">.so</code> file on Linux or <code class="language-plaintext highlighter-rouge">.dll</code> file on Windows).</p><p>Here’s a simple example:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>JNI</span> <span class=o>{</span>
+    <span class=kd>static</span> <span class=o>{</span>
+        <span class=nc>System</span><span class=o>.</span><span class=na>loadLibrary</span><span class=o>(</span><span class=s>"native"</span><span class=o>);</span>
+    <span class=o>}</span>
+    <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=o>(</span><span class=nc>String</span><span class=o>[]</span> <span class=n>args</span><span class=o>)</span> <span class=o>{</span>
+        <span class=k>new</span> <span class=nf>JNI</span><span class=o>().</span><span class=na>sayHello</span><span class=o>();</span>
+    <span class=o>}</span>
+    <span class=kd>private</span> <span class=kd>native</span> <span class=kt>void</span> <span class=nf>sayHello</span><span class=o>();</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>First, to create the definition of the method, we have to use the <code class="language-plaintext highlighter-rouge">-h</code> flag of the Java compiler to compile the <code class="language-plaintext highlighter-rouge">JNI</code> class.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>javac <span class=nt>-h</span> <span class=nb>.</span> JNI.java
+</pre></td></tr></tbody></table></code></pre></figure><p>This will generate a <code class="language-plaintext highlighter-rouge">JNI.h</code> file with all the native methods included in the class passed as a parameter.
+In this case, the <code class="language-plaintext highlighter-rouge">JNI.h</code> file will contain the following:</p><figure class=highlight><pre><code class=language-c data-lang=c><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=n>JNIEXPORT</span> <span class=kt>void</span> <span class=n>JNICALL</span> <span class=nf>Java_com_example_JNI_sayHello</span><span class=p>(</span><span class=n>JNIEnv</span> <span class=o>*</span><span class=p>,</span> <span class=n>jobject</span><span class=p>);</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Now, we have to create a new <code class="language-plaintext highlighter-rouge">.cpp</code> file for the implementation of the <code class="language-plaintext highlighter-rouge">sayHello</code> function.</p><p>Here is an example:</p><figure class=highlight><pre><code class=language-c data-lang=c><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre><span class=n>JNIEXPORT</span> <span class=kt>void</span> <span class=n>JNICALL</span> <span class=nf>Java_com_example_JNI_sayHello</span><span class=p>(</span><span class=n>JNIEnv</span><span class=o>*</span> <span class=n>env</span><span class=p>,</span> <span class=n>jobject</span> <span class=n>thisObject</span><span class=p>)</span> <span class=p>{</span>
+  <span class=n>std</span><span class=o>::</span><span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>"Hello from C++ !!"</span> <span class=o>&lt;&lt;</span> <span class=n>std</span><span class=o>::</span><span class=n>endl</span><span class=p>;</span>
+<span class=p>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Now we need to build our shared library from the C++ code and run it:</p><figure class=highlight><pre><code class=language-c data-lang=c><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=n>g</span><span class=o>++</span> <span class=o>-</span><span class=n>c</span> <span class=o>-</span><span class=n>fPIC</span> <span class=o>-</span><span class=n>I</span><span class=err>$</span><span class=p>{</span><span class=n>JAVA_HOME</span><span class=p>}</span><span class=o>/</span><span class=n>include</span> <span class=o>-</span><span class=n>I</span><span class=err>$</span><span class=p>{</span><span class=n>JAVA_HOME</span><span class=p>}</span><span class=o>/</span><span class=n>include</span><span class=o>/</span><span class=n>darwin</span> <span class=n>JNI</span><span class=p>.</span><span class=n>cpp</span> <span class=o>-</span><span class=n>o</span> <span class=n>JNI</span><span class=p>.</span><span class=n>o</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Finally, we have to include it in a new shared library.
+Whatever we decide to name it is the argument passed into the method <code class="language-plaintext highlighter-rouge">System.loadLibrary</code>.
+We named ours as <code class="language-plaintext highlighter-rouge">native</code>, and we’ll load it when running our Java code.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=n>g</span><span class=o>++</span> <span class=o>-</span><span class=n>dynamiclib</span> <span class=o>-</span><span class=n>o</span> <span class=n>libnative</span><span class=o>.</span><span class=na>dylib</span> <span class=no>JNI</span><span class=o>.</span><span class=na>o</span> <span class=o>-</span><span class=n>lc</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>We can now run our Java code:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=n>java</span> <span class=o>-</span><span class=n>cp</span> <span class=o>.</span> <span class=o>-</span><span class=nc>Djava</span><span class=o>.</span><span class=na>library</span><span class=o>.</span><span class=na>path</span><span class=o>=.</span> <span class=n>com</span><span class=o>.</span><span class=na>example</span><span class=o>.</span><span class=na>JNI</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Using the JNI is obviously not the most simple way to develop software.
+Here some pitfalls of using JNI:</p><ul><li><strong>No platform portability:</strong> The native code makes the application depend on the underlying compiler platform. In case of requiring the support for different Operating Systems, the application needs to be compiled separately for each of those. Thus, using JNI means losing the “write once, run anywhere” feature of Java.</li><li><strong>Difficult to implement:</strong> JNI is a low-level interface and is not easy to use. For example, sometimes there isn’t even a direct conversion between types, so we’ll have to write our equivalent.</li><li><strong>Difficult to debug:</strong> JNI adds a layer of complexity to the application. It’s difficult to debug runtime errors. A simple error can lead to a complete system crash (e.g., a segmentation fault).</li><li><strong>No garbage collection:</strong> From the native side, resources should be handled manually. Thus, in case of forgetting to free memory, leaks might occur, hindering performance and compromising security.</li><li><strong>Extra layer of communication:</strong> JNI adds a costly layer of communication between the code running into the JVM and the native code. JNI applications need to convert the data exchanged between Java and C++ in a marshaling/unmarshaling process.</li><li><strong>No thread safety:</strong> JNI is not thread-safe. Thus, it is not possible to use the same JNI environment <code class="language-plaintext highlighter-rouge">(JNIEnv *)</code> from multiple threads.</li></ul><h2 id=java-reflection-api>Java Reflection API</h2><p>The <a href=https://docs.oracle.com/javase/tutorial/reflect/>Java Reflection API</a> allows inspecting, modifying, and instantiating otherwise static language elements such as classes, fields, and methods at runtime.
+This dynamic feature is handy when we don’t know their names at compile time.
+For example, to dynamically instantiate objects, set fields, or invoke methods.</p><p>For example, we can instantiate classes by calling constructors of any class and even instantiate objects at runtime.
+This is made possible by the <code class="language-plaintext highlighter-rouge">java.lang.reflect.Constructor</code> class.</p><p>The following class <code class="language-plaintext highlighter-rouge">Instantiation</code> illustrates the use of <strong>dynamic class instantiation</strong> via reflection:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>Instantiation</span> <span class=o>{</span>
+ 
+  <span class=cm>/**
+   * Instantiate a class via reflection.
+   * The inner class Target has a "default constructor" which takes 
+   * an instance of its outer class.
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>instantiateCtr</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>Class</span><span class=o>&lt;</span><span class=nc>Target</span><span class=o>&gt;</span> <span class=n>c</span> <span class=o>=</span> <span class=nc>Target</span><span class=o>.</span><span class=na>class</span><span class=o>;</span>
+    <span class=n>c</span><span class=o>.</span><span class=na>getConstructor</span><span class=o>(</span><span class=nc>Instantiation</span><span class=o>.</span><span class=na>class</span><span class=o>).</span><span class=na>newInstance</span><span class=o>(</span><span class=k>this</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Instantiate a class via reflection.
+   * The inner class Target has a constructor with one String parameter.
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>instantiateCtrOverloaded</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>Class</span><span class=o>&lt;</span><span class=nc>Target</span><span class=o>&gt;</span> <span class=n>c</span> <span class=o>=</span> <span class=nc>Target</span><span class=o>.</span><span class=na>class</span><span class=o>;</span>
+    <span class=n>c</span><span class=o>.</span><span class=na>getConstructor</span><span class=o>(</span><span class=k>new</span> <span class=nc>Class</span><span class=o>[]{</span><span class=nc>Instantiation</span><span class=o>.</span><span class=na>class</span><span class=o>,</span> <span class=nc>String</span><span class=o>.</span><span class=na>class</span><span class=o>})</span>
+      <span class=o>.</span><span class=na>newInstance</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"hello"</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Interprocedural instantiation.
+   * The class name is supplied externally.
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>instantiateInterprocedural</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>BufferedReader</span> <span class=n>br</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>BufferedReader</span><span class=o>(</span>
+        <span class=k>new</span> <span class=nf>FileReader</span><span class=o>(</span><span class=k>this</span><span class=o>.</span><span class=na>getClass</span><span class=o>().</span><span class=na>getClassLoader</span><span class=o>()</span>
+          <span class=o>.</span><span class=na>getResource</span><span class=o>(</span><span class=s>"class.txt"</span><span class=o>).</span><span class=na>getFile</span><span class=o>())</span>
+    <span class=o>);</span>
+    <span class=nc>Class</span><span class=o>&lt;?&gt;</span> <span class=n>c</span> <span class=o>=</span> <span class=nc>Class</span><span class=o>.</span><span class=na>forName</span><span class=o>(</span><span class=n>br</span><span class=o>.</span><span class=na>readLine</span><span class=o>());</span>
+    <span class=n>c</span><span class=o>.</span><span class=na>getConstructor</span><span class=o>(</span><span class=nc>Instantiation</span><span class=o>.</span><span class=na>class</span><span class=o>).</span><span class=na>newInstance</span><span class=o>(</span><span class=k>this</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Intraprocedural instantiation.
+   * The class name is supplied internally.
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>instantiateIntraprocedural</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>String</span> <span class=n>className</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>StringBuilder</span><span class=o>(</span><span class=s>"tegraT"</span><span class=o>).</span><span class=na>reverse</span><span class=o>().</span><span class=na>toString</span><span class=o>();</span>
+    <span class=nc>Class</span><span class=o>&lt;?&gt;</span> <span class=n>c</span> <span class=o>=</span> <span class=nc>Class</span><span class=o>.</span><span class=na>forName</span><span class=o>(</span>
+      <span class=s>"se.kth.instantiation.DynamicInstantiation$"</span> <span class=o>+</span> <span class=n>className</span>
+    <span class=o>);</span>
+    <span class=n>c</span><span class=o>.</span><span class=na>getConstructor</span><span class=o>(</span><span class=nc>Instantiation</span><span class=o>.</span><span class=na>class</span><span class=o>).</span><span class=na>newInstance</span><span class=o>(</span><span class=k>this</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=kd>class</span> <span class=nc>Target</span> <span class=o>{</span>
+    <span class=kd>public</span> <span class=nf>Target</span><span class=o>()</span> <span class=o>{}</span>
+    <span class=kd>public</span> <span class=nf>Target</span><span class=o>(</span><span class=nc>String</span> <span class=n>c</span><span class=o>)</span> <span class=o>{}</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>We can invoke methods of any class (even <a href=https://www.baeldung.com/java-call-private-method><code class="language-plaintext highlighter-rouge">private</code></a> methods) at runtime.
+This is made possible by the <code class="language-plaintext highlighter-rouge">java.lang.reflect.Method</code> class.</p><p>The following class <code class="language-plaintext highlighter-rouge">Invocation</code> illustrates the use of <strong>dynamic method invocations</strong> via reflection:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>Invocation</span> <span class=o>{</span>
+
+  <span class=cm>/**
+   * Invoke a method with no arguments via reflection.
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>invokeMethod</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>Method</span> <span class=n>m</span> <span class=o>=</span> <span class=nc>Invocation</span><span class=o>.</span><span class=na>class</span><span class=o>.</span><span class=na>getDeclaredMethod</span><span class=o>(</span><span class=s>"target"</span><span class=o>,</span> <span class=kc>null</span><span class=o>);</span>
+    <span class=n>m</span><span class=o>.</span><span class=na>invoke</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=kc>null</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Invoke a method via reflection.
+   * The method target has a parameter of type String.
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>invokeMethodOverloaded</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>Method</span> <span class=n>m</span> <span class=o>=</span> <span class=nc>Invocation</span><span class=o>.</span><span class=na>class</span><span class=o>.</span><span class=na>getDeclaredMethod</span><span class=o>(</span>
+      <span class=s>"target"</span><span class=o>,</span> <span class=k>new</span> <span class=nc>Class</span><span class=o>[]{</span><span class=nc>String</span><span class=o>.</span><span class=na>class</span><span class=o>}</span>
+    <span class=o>);</span>
+    <span class=n>m</span><span class=o>.</span><span class=na>invoke</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"a"</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Interprocedural invocation.
+   * The method name is supplied externally.
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>invokeMethodInterprocedural</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>BufferedReader</span> <span class=n>br</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>BufferedReader</span><span class=o>(</span>
+        <span class=k>new</span> <span class=nf>FileReader</span><span class=o>(</span><span class=k>this</span><span class=o>.</span><span class=na>getClass</span><span class=o>().</span><span class=na>getClassLoader</span><span class=o>()</span>
+          <span class=o>.</span><span class=na>getResource</span><span class=o>(</span><span class=s>"method.txt"</span><span class=o>).</span><span class=na>getFile</span><span class=o>())</span>
+    <span class=o>);</span>
+    <span class=nc>String</span> <span class=n>methodName</span> <span class=o>=</span> <span class=n>br</span><span class=o>.</span><span class=na>readLine</span><span class=o>();</span>
+    <span class=nc>Method</span> <span class=n>m</span> <span class=o>=</span> <span class=nc>Invocation</span><span class=o>.</span><span class=na>class</span><span class=o>.</span><span class=na>getDeclaredMethod</span><span class=o>(</span><span class=n>methodName</span><span class=o>,</span> <span class=kc>null</span><span class=o>);</span>
+    <span class=n>m</span><span class=o>.</span><span class=na>invoke</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=kc>null</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Intraprocedural invocation.
+   * The method name is provided through a series of transformations.
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>invokeMethodIntraprocedural</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>String</span> <span class=n>methodName</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>StringBuilder</span><span class=o>(</span><span class=s>"TEGRAT"</span><span class=o>)</span>
+      <span class=o>.</span><span class=na>reverse</span><span class=o>().</span><span class=na>toString</span><span class=o>().</span><span class=na>toLowerCase</span><span class=o>();</span>
+    <span class=nc>Method</span> <span class=n>m</span> <span class=o>=</span> <span class=nc>Invocation</span><span class=o>.</span><span class=na>class</span><span class=o>.</span><span class=na>getDeclaredMethod</span><span class=o>(</span><span class=n>methodName</span><span class=o>,</span> <span class=kc>null</span><span class=o>);</span>
+    <span class=n>m</span><span class=o>.</span><span class=na>invoke</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=kc>null</span><span class=o>);</span>
+  <span class=o>}</span>
+
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>target</span><span class=o>()</span> <span class=o>{}</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>target</span><span class=o>(</span><span class=nc>String</span> <span class=n>a</span><span class=o>)</span> <span class=o>{}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=deserialisation>Deserialisation</h2><p><a href=https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/Serializable.html>Serialization</a> converts an object into a byte stream (i.e., a sequence of bytes).
+Deserialization is the opposite: it converts a byte stream into an object.
+<a href=https://www.baeldung.com/java-serialization>Serialized objects</a> are typically used to save the application’s state, store objects in a database, or transfer them over a network.
+We can serialize objects on one platform and deserialize them on another.
+The serializability of a class is enabled by implementing the <code class="language-plaintext highlighter-rouge">java.io.Serializable</code> interface.</p><p>The following class <code class="language-plaintext highlighter-rouge">Deserialization</code> illustrates a deserialization scenario:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>Deserialization</span> <span class=kd>implements</span> <span class=nc>Serializable</span> <span class=o>{</span>
+
+  <span class=kd>public</span> <span class=kt>byte</span><span class=o>[]</span> <span class=nf>serialize</span><span class=o>(</span><span class=nc>Object</span> <span class=n>obj</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>ByteArrayOutputStream</span> <span class=n>ba</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>ByteArrayOutputStream</span><span class=o>();</span>
+    <span class=nc>ObjectOutputStream</span> <span class=n>oos</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>ObjectOutputStream</span><span class=o>(</span><span class=n>ba</span><span class=o>);</span>
+    <span class=n>oos</span><span class=o>.</span><span class=na>writeObject</span><span class=o>(</span><span class=n>obj</span><span class=o>);</span>
+    <span class=n>oos</span><span class=o>.</span><span class=na>close</span><span class=o>();</span>
+    <span class=k>return</span> <span class=n>ba</span><span class=o>.</span><span class=na>toByteArray</span><span class=o>();</span>
+  <span class=o>}</span>
+  
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>deserialize</span><span class=o>(</span><span class=kt>byte</span><span class=o>[]</span> <span class=n>obj</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>ObjectInputStream</span> <span class=n>ois</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>ObjectInputStream</span><span class=o>(</span>
+      <span class=k>new</span> <span class=nf>ByteArrayInputStream</span><span class=o>(</span><span class=n>obj</span><span class=o>)</span>
+    <span class=o>);</span>
+    <span class=nc>HelloInterface</span> <span class=n>foo</span> <span class=o>=</span> <span class=o>(</span><span class=nc>HelloInterface</span><span class=o>)</span> <span class=n>ois</span><span class=o>.</span><span class=na>readObject</span><span class=o>();</span>
+    <span class=n>foo</span><span class=o>.</span><span class=na>hello</span><span class=o>();</span>
+    <span class=n>ois</span><span class=o>.</span><span class=na>close</span><span class=o>();</span>
+  <span class=o>}</span>
+
+  <span class=kd>interface</span> <span class=nc>HelloInterface</span> <span class=o>{</span>
+    <span class=kt>void</span> <span class=nf>hello</span><span class=o>();</span>
+  <span class=o>}</span>
+
+  <span class=kd>class</span> <span class=nc>Hello</span> <span class=kd>implements</span> <span class=nc>HelloInterface</span><span class=o>,</span> <span class=nc>Serializable</span> <span class=o>{</span>
+    <span class=nd>@Override</span>
+    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>hello</span><span class=o>()</span> <span class=o>{</span>
+      <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"hello"</span><span class=o>);</span>
+    <span class=o>}</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>There is an interesting thing to note in the above example.
+It turns out that most static analysis tools mark the class <code class="language-plaintext highlighter-rouge">Hello</code> as “not used.”
+However, the code will not compile if we remove it.</p><p>Deserialization is a potentially dangerous operation.
+For example, the notable Apache <a href=https://github.com/apache/logging-log4j2>log4j</a> library uses deserialization to read configuration files.
+This use of deserialization <a href=(https://nsfocusglobal.com/apache-log4j-deserialization-and-sql-injection-vulnerability-cve-2022-23302-cve-2022-23305-cve-2022-23307-alert/)>was exploited</a> (CVE-2022-23302) in 2022, causing a global disturbance on most Java based systems.</p><p>As a rule of thumb, deserialization of untrusted data is inherently dangerous and should be avoided.
+Untrusted data should be carefully validated according to the “Serialization and Deserialization” section of the <a href="https://docs.oracle.com/pls/topic/lookup?ctx=javase16&id=secure_coding_guidelines_javase">Secure Coding Guidelines for Java SE</a>.
+As pointed out by Oracle, <a href="https://docs.oracle.com/pls/topic/lookup?ctx=javase16&id=serialization_filter_guide">Serialization Filtering</a> describes best practices for defensive use of serial filters.</p><h2 id=unsafe-api>Unsafe API</h2><p>The JVM was designed to enforce strong safety guarantees.
+However, the class <code class="language-plaintext highlighter-rouge">sun.misc.Unsafe</code> provides a collection of methods for performing low-level, unsafe operations.</p><p>Although the class and all methods are <code class="language-plaintext highlighter-rouge">public</code>, the use of this class is limited because only trusted code can obtain instances of it.
+The class <code class="language-plaintext highlighter-rouge">sun.misc.Unsafe</code> is <code class="language-plaintext highlighter-rouge">final</code>, and its constructor is <code class="language-plaintext highlighter-rouge">private</code>.
+Thus, creating an instance requires some tricks.</p><p>The following class <code class="language-plaintext highlighter-rouge">UnsafeExamples</code> illustrates various commons usages:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>UnsafeExamples</span> <span class=o>{</span>
+
+  <span class=nc>Hello</span> <span class=n>greetings</span><span class=o>;</span>
+
+  <span class=cm>/**
+   * Dynamic class loading via the Unsafe API.
+   * The target class Target is not in the classpath.
+   * Target is compiled and loaded at runtime.
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>instantiateClass</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=kt>byte</span><span class=o>[]</span> <span class=n>b</span> <span class=o>=</span> <span class=n>compile</span><span class=o>(</span><span class=k>this</span><span class=o>.</span><span class=na>getClass</span><span class=o>().</span><span class=na>getClassLoader</span><span class=o>(),</span> <span class=s>"unsafe.Target"</span><span class=o>);</span>
+    <span class=n>getUnsafe</span><span class=o>()</span>
+        <span class=o>.</span><span class=na>defineClass</span><span class=o>(</span>
+          <span class=s>"unsafe.Target"</span><span class=o>,</span> <span class=n>b</span><span class=o>,</span> <span class=mi>0</span><span class=o>,</span> <span class=n>b</span><span class=o>.</span><span class=na>length</span><span class=o>,</span> <span class=k>this</span><span class=o>.</span><span class=na>getClass</span><span class=o>().</span><span class=na>getClassLoader</span><span class=o>(),</span> <span class=kc>null</span>
+        <span class=o>).</span><span class=na>newInstance</span><span class=o>();</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Invoke the Hello.greetings() method without class initialisation.
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>invokeMethod</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=nc>UnsafeExamples</span><span class=o>.</span><span class=na>Hello</span> <span class=n>hello</span> <span class=o>=</span> <span class=o>(</span><span class=nc>Hello</span><span class=o>)</span> <span class=n>getUnsafe</span><span class=o>().</span><span class=na>allocateInstance</span><span class=o>(</span><span class=nc>Hello</span><span class=o>.</span><span class=na>class</span><span class=o>);</span>
+    <span class=n>hello</span><span class=o>.</span><span class=na>greetings</span><span class=o>();</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Throw a checked Exception without declaring it
+   * in the method contract.
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>throwException</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=n>getUnsafe</span><span class=o>().</span><span class=na>throwException</span><span class=o>(</span><span class=k>new</span> <span class=nc>CustomException</span><span class=o>());</span>
+  <span class=o>}</span>
+
+  <span class=cm>/**
+   * Change the field reference via the unsafe API.
+   * This method is supposed to call UnsafeExamples$Hello.greetings(),
+   * but the reference value changed to UnsafeExamples$Hi.greetings().
+   */</span>
+  <span class=kd>public</span> <span class=kt>void</span> <span class=nf>typeConfusion</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=n>greetings</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>Hello</span><span class=o>();</span>
+    <span class=n>getUnsafe</span><span class=o>().</span><span class=na>putObject</span><span class=o>(</span><span class=k>this</span><span class=o>,</span>
+        <span class=n>getUnsafe</span><span class=o>().</span><span class=na>objectFieldOffset</span><span class=o>(</span><span class=nc>UnsafeExamples</span><span class=o>.</span><span class=na>class</span><span class=o>.</span><span class=na>getDeclaredField</span><span class=o>(</span><span class=s>"greetings"</span><span class=o>)),</span>
+        <span class=k>new</span> <span class=nf>Hi</span><span class=o>());</span>
+    <span class=n>greetings</span><span class=o>.</span><span class=na>greetings</span><span class=o>();</span>
+  <span class=o>}</span>
+
+  <span class=kd>private</span> <span class=n>sun</span><span class=o>.</span><span class=na>misc</span><span class=o>.</span><span class=na>Unsafe</span> <span class=nf>getUnsafe</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=n>sun</span><span class=o>.</span><span class=na>misc</span><span class=o>.</span><span class=na>Unsafe</span> <span class=n>unsafe</span> <span class=o>=</span> <span class=kc>null</span><span class=o>;</span>
+    <span class=nc>Field</span> <span class=n>f</span> <span class=o>=</span> <span class=n>sun</span><span class=o>.</span><span class=na>misc</span><span class=o>.</span><span class=na>Unsafe</span><span class=o>.</span><span class=na>class</span><span class=o>.</span><span class=na>getDeclaredField</span><span class=o>(</span><span class=s>"theUnsafe"</span><span class=o>);</span>
+    <span class=n>f</span><span class=o>.</span><span class=na>setAccessible</span><span class=o>(</span><span class=kc>true</span><span class=o>);</span>
+    <span class=n>unsafe</span> <span class=o>=</span> <span class=o>(</span><span class=n>sun</span><span class=o>.</span><span class=na>misc</span><span class=o>.</span><span class=na>Unsafe</span><span class=o>)</span> <span class=n>f</span><span class=o>.</span><span class=na>get</span><span class=o>(</span><span class=kc>null</span><span class=o>);</span>
+    <span class=k>return</span> <span class=n>unsafe</span><span class=o>;</span>
+  <span class=o>}</span>
+  
+  <span class=kd>private</span> <span class=kt>byte</span><span class=o>[]</span> <span class=nf>compile</span><span class=o>(</span><span class=nc>ClassLoader</span> <span class=n>classLoader</span><span class=o>,</span> <span class=nc>String</span> <span class=n>name</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>IOException</span> <span class=o>{</span>
+    <span class=c1>// Compile the class (implementation in section "Dynamic Class Loading").</span>
+  <span class=o>}</span>
+
+  <span class=kd>class</span> <span class=nc>Hello</span> <span class=o>{</span> <span class=kd>public</span> <span class=kt>void</span> <span class=nf>greetings</span><span class=o>()</span> <span class=o>{</span> <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"hello"</span><span class=o>);</span> <span class=o>}</span> <span class=o>}</span>
+  <span class=kd>class</span> <span class=nc>Hi</span> <span class=o>{</span> <span class=kd>public</span> <span class=kt>void</span> <span class=nf>greetings</span><span class=o>()</span> <span class=o>{</span> <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"hi"</span><span class=o>);</span> <span class=o>}</span> <span class=o>}</span>
+  <span class=kd>class</span> <span class=nc>CustomException</span> <span class=kd>extends</span> <span class=nc>Exception</span> <span class=o>{</span> <span class=kd>public</span> <span class=nf>CustomException</span><span class=o>()</span> <span class=o>{</span> <span class=kd>super</span><span class=o>();</span> <span class=o>}</span> <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Note that the method <code class="language-plaintext highlighter-rouge">getUnsafe()</code> uses reflection to obtain an instance of <code class="language-plaintext highlighter-rouge">theUnsafe</code> field of the <code class="language-plaintext highlighter-rouge">sun.misc.Unsafe</code> class.
+We need to use reflection because the <code class="language-plaintext highlighter-rouge">Usafe</code> class was designed only for internal usage.</p><p>The operations that <code class="language-plaintext highlighter-rouge">sun.misc.Unsafe</code> provides can be dangerous, as they allow developers to circumvent the safety guarantees provided by the Java language and the JVM.
+If misused, the consequences can be resource leaks, deadlocks, data corruption, and even JVM crashes.
+Therefore, <a href=https://dl.acm.org/doi/abs/10.1145/2858965.2814313>use it at your own risk</a>.</p><h1 id=challenges-of-using-dynamic-features>Challenges of Using Dynamic Features</h1><p>Java supports Just In Time (JIT) compilation by default.
+JIT allows the compiler to “see” frequently accessed code paths and turn them into machine architecture-specific code.
+Code that’s run frequently enough is adaptively compiled into an architecture-specific form.
+This means that the distribution is still a portable JAR that’ll run on every operating system.</p><p>The Java runtime has grown considerably over the years.
+And since Java supports a lot of dynamic behavior, the Java runtime can’t be sure about what code is being used, so it loads everything.
+This slows down application startup time and balloons the application’s RAM footprint.
+Also, Java is still <del>mostly</del> interpreted, so it’s possible to get parts of the application that run at native speeds.
+However, today it is possible to achieve native speeds by compiling Java applications directly to machine code.</p><p>For this purpose, Java supports Ahead of Time Compilation (AOT) through the GraalVM compiler.
+The AOT mechanism in GraalVM relies on points-to analysis to statically determine the types of variables and the types of objects that are reachable from a given entry point in the application.
+It statically analyzes the app and chucks out everything that’s not being used at runtime.
+It can’t possibly know what’s being used at runtime when it’s compiling the code at compile time, so we need to give it some extra information or hints.
+It provides those hints and tells it what things should be retained so that your application can run and so that it can keep only the parts that are required for your application to run.
+The results are Java applications that start up in tens of milliseconds and take tens of megabytes of RAM instead of hundreds.
+These applications are ideal for a production environment like Kubernetes, which wants to be the best bin packer to cram together all your applications as efficiently as possible to save money and reduce server infrastructure and carbon footprints.
+And for the most part, this works great.</p><p>However, the problem of using dynamic features is that they make AOT reachability analysis unsound.
+Point-to analysis in GraalVM is based on static analysis.
+And as we observe from the previous examples, static analysis doesn’t know how to handle dynamic features.</p><p>To mitigate this problem, GraalVM provides a <a href=https://www.graalvm.org/22.0/reference-manual/native-image/Agent/>tracing agent</a> that analyses the program at runtime.
+It generates configuration files for GraalVM in a way that is straightforward and more convenient.
+The agent tracks all usages of dynamic features after a regular execution of an application on the JVM.
+Undetected usages of these dynamic features need to be provided to the native-image tool in the form of configuration files.</p><p>In GraalVM 22.2, to make it easier to use popular libraries that require additional reachability metadata, the Oracle GraalVM team, in conjunction with the Spring and Quarkus teams, has created a <a href=https://github.com/oracle/graalvm-reachability-metadata>GitHub repository</a> where metadata for popular libraries can be published.
+Using this metadata is as easy as setting a property in the GraalVM Native Build Tools Maven or Gradle plugins.
+For example, in Gradle, you can enable the use of the reachability metadata repository with:</p><figure class=highlight><pre><code class=language-groovy data-lang=groovy><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+</pre></td><td class=code><pre><span class=n>graalvmNative</span> <span class=o>{</span>
+  <span class=n>metadataRepository</span> <span class=o>{</span>
+    <span class=n>enabled</span> <span class=o>=</span> <span class=kc>true</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=conclusion>Conclusion</h1><p>This post covered the principal dynamic features of the Java language and the JVM.
+As a corollary, we observe that the notions of <strong>actual programs behaviour</strong> and <strong>possible program executions</strong> are not clear concepts in the presence of dynamic features.
+This is particularly surprising in the context of Java, which firmly focused on writing code once and running it anywhere with consistent program behavior.
+Furthermore, the existence of dynamic features also has implications for the very definitions of soundness and precision of static analysis.
+In particular, the point-to analysis in the GraalVM compiler is not sound in the presence of dynamic features.</p><p>Personally, I think that the use of dynamic features should be avoided as much as possible.
+In most cases, they just cause obfuscation and introduce bugs.
+Although these advanced language features might perfectly solve a problem for an expert who knows how to leverage them, powerful features are often more difficult to understand and are not widely used.
+Simple, straightforward code that is easy to understand and maintain has a higher value.
+I expect that, in the future, developers will be more careful about introducing dynamic behaviors into their applications for the sake of consistency and performance.</p><h1 id=further-reading>Further Reading</h1><ul><li><a href=https://www.baeldung.com/java-reflection>Guide to Java Reflection</a></li><li><a href=https://link.springer.com/chapter/10.1007/978-3-030-02768-1_4>On the Soundness of Call Graph Construction in the Presence of Dynamic Language Features - A Benchmark and Tool Evaluation</a></li><li><a href=https://dl.acm.org/doi/pdf/10.1109/ICSE.2017.53>Challenges for Static Analysis of Java Reflection – Literature Review and Empirical Study</a></li><li><a href=https://dl.acm.org/doi/10.1145/3293882.3330555>Judge: Identifying, Understanding, and Evaluating Sources of Unsoundness in Call Graphs</a></li><li><a href=https://ieeexjplore.ieee.org/abstract/document/9283958>On the Recall of Static Call Graph Construction in Practice</a></li><li><a href=https://ieeexplore.ieee.org/abstract/document/8944149>A Study of Call Graph Construction for JVM-Hosted Languages</a></li><li><a href=https://dl.acm.org/doi/pdf/10.1145/3395363.3397368>Identifying Java Calls in Native Code via Binary Scanning</a></li><li><a href=https://dl.acm.org/doi/pdf/10.1145/3460946.3464319>Serialization-Aware Call Graph Construction</a></li><li><a href=https://bitbucket.org/Li_Sui/micro-benchmark/src/master/>A Micro-Benchmark for Dynamic Program Behaviour in Java</a></li></ul><h1 id=footnotes>Footnotes</h1><div class=footnotes role=doc-endnotes><ol><li id=fn:1><p>In OpenJDK 9, <code class="language-plaintext highlighter-rouge">invokedynamic</code> is also used for string concatenation. <a href=#fnref:1 class=reversefootnote role=doc-backlink>&#8617;</a></p></li></ol></div></article><ul class="pager blog-pager"><li class=previous><a href=/blog/inversion-of-control-and-dependency-injection-in-java.html data-toggle=tooltip data-placement=top title="Inversion of Control and Dependency Injection in Java">&larr; Previous Post</a></li><li class=next><a href=/blog/no-one-cares-about-your-research.html data-toggle=tooltip data-placement=top title="No One Cares About Your Research!">Next Post &rarr;</a></li></ul><br></div></div></div><script>anchors.options={position:'left'},anchors.add('h1:not(.no-anchor)','h2','h3')</script><div class=container><div class=row><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style=padding-right:15px><div class=flex-container-footer-badges><section class=share-section><a href="https://twitter.com/intent/tweet?text=The+existence+of+dynamic+features+built+in+the+language+allows+Java+developers+to+transform+their+program+executions+at+runtime+dynamically.+However%2C+these+features+in+most+Java+programs+are+a+fundamental+problem+for+static+analysis+tools+that+rely+on+precise+call-graph+construction.+Notably%2C+the+GraalVM+compiler+relies+on+points-to+analysis+to+perform+AOT+compilation.+This+blog+post+covers+the+main+dynamic+features+of+Java+and+the+reasons+why+they+are+still+a+long-standing+issue+for+researchers+and+practitioners+in+program+analysis.+https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id=share-twitter class="fab fa-twitter" aria-hidden=true></span>
+<span class=sr-only>Twitter</span></a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id=share-linkedin class="fab fa-linkedin-in" aria-hidden=true></span>
+<span class=sr-only>LinkedIn</span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/the-dynamic-features-of-java.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden=true></span>
+<span class=sr-only>Facebook</span></a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-dynamic-features-of-java.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden=true></span>
+<span class=sr-only>Reddit</span></a>
+<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-dynamic-features-of-java.html&text=The+existence+of+dynamic+features+built+in+the+language+allows+Java+developers+to+transform+their+program+executions+at+runtime+dynamically.+However%2C+these+features+in+most+Java+programs+are+a+fundamental+problem+for+static+analysis+tools+that+rely+on+precise+call-graph+construction.+Notably%2C+the+GraalVM+compiler+relies+on+points-to+analysis+to+perform+AOT+compilation.+This+blog+post+covers+the+main+dynamic+features+of+Java+and+the+reasons+why+they+are+still+a+long-standing+issue+for+researchers+and+practitioners+in+program+analysis." class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
+<span class=sr-only>Telegram</span></a>
+<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-dynamic-features-of-java.html&t=The+Dynamic+Features+of+Java" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
+<span class=sr-only>Hacker News</span></a></section></div><div id=related-posts><hr><h2>Related Posts</h2><div class="panel-deck row"><div class=col-sm-4><div class=panel><a href=/blog/deploying-to-maven-central.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Deploying to Maven Central</h4><div class=date style=margin-bottom:0>Posted on January 6, 2020</div></div><img src=../img/posts/2020/maven_journey_cover.png alt="Deploying to Maven Central"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/the-producer-consumer-pattern-in-java-made-easy.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>The Producer-Consumer Pattern in Java Made Easy</h4><div class=date style=margin-bottom:0>Posted on June 28, 2020</div></div><img src=../img/posts/2020/java_design_patterns_cover.jpg alt="The Producer-Consumer Pattern in Java Made Easy"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/the-fork-join-java-framework.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>The Fork/Join Java framework</h4><div class=date style=margin-bottom:0>Posted on June 5, 2021</div></div><img src=../img/posts/2021/night_tree_cover.jpg alt="The Fork/Join Java framework"></div></a></div></div></div></div><div><div id=giscus-container></div><script src=/js/load-giscus.js></script>
+<script>window.addEventListener('load',loadGiscus)</script></div></div></div></div><script>window.addEventListener('DOMContentLoaded',()=>{const a=new IntersectionObserver(a=>{a.forEach(a=>{const b=a.target.getAttribute('id');a.intersectionRatio>0?document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.add('active'):document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.remove('active')})});document.querySelectorAll('h1[id]').forEach(b=>{a.observe(b)}),document.querySelectorAll('h2[id]').forEach(b=>{a.observe(b)})})</script><footer><div class="container beautiful-jekyll-footer"><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style=text-align:center><div class=flex-container-footer-badges><a href=https://www.linkedin.com/in/cesarsotovalero><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin"></a>
+<a href=https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg><img alt="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black&label=Subscribe"></a>
+<a href=https://github.com/cesarsotovalero><img alt="Follow me on GitHub" src="https://img.shields.io/github/followers/cesarsotovalero?label=Follow%20me"></a></div></div><div class=flex-container-footer-copyright><p class="copyright text-muted">&copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2025</p></div></div></div></div></footer><script>typeof jQuery=='undefined'&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src=/js/bootstrap.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/flowtype.js></script>
+<script src=/js/scroll-to-top.js></script>
+<script src=/js/lazysizes.min.js></script>
+<script src=/js/popup-footnotes.js></script>
+<script src=/js/mermaid.min.js></script>
+<script>$(document).ready(function(){mermaid.initialize({startOnLoad:!0,theme:"default"}),window.mermaid.init(void 0,document.querySelectorAll('.language-mermaid'))})</script><script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'),ga('create','UA-107061705-1','auto'),ga('send','pageview')</script><script src=/js/mode-switcher.js></script></body></html>

@@ -1,0 +1,735 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml lang=en-us xml:lang=en-US itemscope itemtype=http://schema.org/WebSite><head><script>(function(){let a=localStorage.getItem('theme');a==='dark'&&document.documentElement.setAttribute('data-theme','dark')})()</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>Unix Cmd Hacks</title><meta name=keywords content="unix,command line,scripts,tools"><link rel=alternate type=application/rss+xml title="César Soto Valero  César - Computer Scientist" href=https://www.cesarsotovalero.net/feed.xml><script src=https://cdn.jsdelivr.net/npm/typed.js@2.0.12></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel=stylesheet><link rel=apple-touch-icon sizes=180x180 href=../img/favicon/redketchup/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../img/favicon/redketchup/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../img/favicon/redketchup/favicon-16x16.png><link rel=manifest href=../img/favicon/redketchup/site.webmanifest><link id=code rel=stylesheet href=../css/pygment_highlights.css><script src=https://d3js.org/d3.v7.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-107061705-1')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","bs3gcidnol")</script><script src=../js/anchor.min.js></script>
+<link rel=stylesheet href=//use.fontawesome.com/releases/v5.12.0/css/all.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/bootstrap-social.css><link rel=stylesheet href=/css/main.css><link rel=stylesheet href=/css/academicons.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel=stylesheet href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name=generator content="Jekyll v4.3.2"><meta property="og:title" content="Unix Cmd Hacks"><meta name=author content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name=description content="Mastering the Unix command line can drastically boost your productivity and efficiency in software development. In this post, I share a collection of personal notes from the edX course “Unix Tools: Data, Software, and Production Engineering.” This guide covers essential command-line tricks, from process automation to data manipulation, that every developer and DevOps engineer should know."><meta property="og:description" content="Mastering the Unix command line can drastically boost your productivity and efficiency in software development. In this post, I share a collection of personal notes from the edX course “Unix Tools: Data, Software, and Production Engineering.” This guide covers essential command-line tricks, from process automation to data manipulation, that every developer and DevOps engineer should know."><link rel=canonical href=https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html><meta property="og:url" content="https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2020/unix_course_cover.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2020-05-23T00:00:00-07:00"><meta name=twitter:card content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2020/unix_course_cover.jpg"><meta property="twitter:title" content="Unix Cmd Hacks"><meta name=twitter:site content="@cesarsotovalero"><meta name=twitter:creator content="@César Soto Valero"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"César Soto Valero","url":"https://www.cesarsotovalero.net/about-me"},"dateModified":"2025-07-29T11:52:25-07:00","datePublished":"2020-05-23T00:00:00-07:00","description":"Mastering the Unix command line can drastically boost your productivity and efficiency in software development. In this post, I share a collection of personal notes from the edX course “Unix Tools: Data, Software, and Production Engineering.” This guide covers essential command-line tricks, from process automation to data manipulation, that every developer and DevOps engineer should know.","headline":"Unix Cmd Hacks","image":"https://www.cesarsotovalero.net/img/posts/2020/unix_course_cover.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024.jpg"},"name":"César Soto Valero"},"url":"https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html"}</script><script type=text/x-mathjax-config> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+   </script><script type=text/x-mathjax-config>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+   </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type=text/javascript></script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class=navbar-toggle type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id=navbarSupportedContent><ul class="navigation list-inline text-center footer-links" id=black-icons><li class="nav-item navbar-custom" title=Home><a id=navbar-brand href=https://www.cesarsotovalero.net>Home</a></li><li class="nav-item navbar-custom"><a href=/blog>Blog</a></li><li class="nav-item navbar-custom"><a href=/linkedin>LinkedIn</a></li><li class="nav-item navbar-custom"><a href=/youtube>YouTube</a></li><li class="nav-item navbar-custom"><a href=/podcasts>Podcasts</a></li><li class="nav-item navbar-custom"><a href=/talks>Talks</a></li><li class="nav-item navbar-custom"><a href=/about-me>About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href=# id=theme-toggle onclick=modeSwitcher() style=cursor:pointer></a></li></ul></div></nav><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class=header-image style=padding-left:15px><div class="row justify-content-center" style=margin-right:0;margin-left:0></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><h1 class=no-anchor>Unix Cmd Hacks</h1><h2 class=post-subheading>Boosting automation from the shell</h2><div class="container flex-container"><a href=https://www.cesarsotovalero.net/about-me><img class=avatar-img-small src=/img/pages/cesar/avatar-icon-2024.jpg alt="César Soto Valero" id=meta-img></a><div class=flex-item><span class=post-meta>Posted on May 23, 2020</span><div><span class=post-meta title="Estimated read time"><svg id="i-clock" viewbox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg> 24 mins read</span>
+<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>devops</span></div></div></div><div class=flex-item><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style=margin-left:0><section id=share-section><script type=text/javascript src=https://storage.ko-fi.com/cdn/widget/Widget_2.js></script><script type=text/javascript>kofiwidget2.init('Support this blog','#7aa4d1','G2G3CRPPI'),kofiwidget2.draw()</script></section></div></div></div><div class=cesarcarbon id=cesarcarbonads-post><script async type=text/javascript src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id=_carbonads_js></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"></div></div></div></div></header><div class=container><div class=row><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=blog-post><aside class=quote><em>“Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill.”</em>
+<cite><br>― <a href=https://en.wikipedia.org/wiki/Diomidis_Spinellis>Diomidis Spinellis</a></cite></aside><p>I want to share my personal notes of the <a href=https://www.edx.org/>edX</a> course <a href=https://www.edx.org/course/unix-tools-data-software-and-production-engineering>Unix Tools: Data, Software and Production Engineering</a>, by Prof. Diomidis Spinellis. I attended this course from March to June 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and it makes me consider online education very seriously, as it provides an excellent way of learning from top courses, given by top universities, and tough by top experts in the world.</p><p>These notes are not organized in any specific manner.
+So, they are actually a bunch of very disordered Unix command line hacks and tricks <img class=emoji title=:grin: alt=:grin: src=https://github.githubassets.com/images/icons/emoji/unicode/1f601.png height=20 width=20>.</p><h1 id=display-elapsed-time-from-the-start-to-the-end-of-the-process>Display elapsed time from the start to the end of the process</h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+</pre></td><td class=code><pre><span class=nv>start</span><span class=o>=</span><span class=si>$(</span><span class=nb>date</span> +%s<span class=si>)</span> 
+<span class=nb>sleep </span>5
+<span class=nv>end</span><span class=o>=</span><span class=si>$(</span><span class=nb>date</span> +%s<span class=si>)</span>
+<span class=nb>echo</span> <span class=s2>"The process lasted </span><span class=si>$(</span><span class=nb>expr</span> <span class=nv>$end</span> - <span class=nv>$start</span><span class=si>)</span><span class=s2> seconds."</span> 
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=combine-commands>Combine commands</h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>cat</span> <span class=nt>-n</span> afile <span class=o>&gt;</span>result <span class=o>&amp;&amp;</span> <span class=nb>rm </span>afile <span class=c># rm will be executed only if cat succeds</span>
+</pre></td></tr></tbody></table></code></pre></figure><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre><span class=nb>touch </span>afile 
+copy afile bfile <span class=o>||</span> <span class=nb>echo </span>Copy failed <span class=c># the echo will be executed</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=loops>Loops</h1><h2 id=for>For</h2><p>Function that passes input timezone and converts it to a desire time zone. To use it, run <code class="language-plaintext highlighter-rouge">showtime Europe/Sweden America/La_Habana 11:45</code></p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class=code><pre>showtime<span class=o>()</span> 
+<span class=o>{</span>
+   <span class=nb>local </span><span class=nv>TZIN</span><span class=o>=</span><span class=nv>$1</span>
+   <span class=nb>local </span><span class=nv>TZOUT</span><span class=o>=</span><span class=nv>$2</span>
+   <span class=nb>local </span><span class=nv>TIME</span><span class=o>=</span><span class=nv>$3</span>
+   <span class=nb>echo</span> <span class=nt>-n</span> <span class=s2>"</span><span class=nv>$TZIN</span><span class=s2> </span><span class=nv>$TZOUT</span><span class=s2> </span><span class=nv>$TIME</span><span class=s2>"</span>
+   <span class=nv>TZ</span><span class=o>=</span><span class=nv>$TZOUT</span> <span class=nb>date</span> <span class=nt>--date</span><span class=o>=</span><span class=s2>"TZ=</span><span class=se>\"</span><span class=nv>$TZIN</span><span class=se>\"</span><span class=s2> </span><span class=nv>$TIME</span><span class=s2>"</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Use the <code class="language-plaintext highlighter-rouge">showtime</code>for different timezones.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre><span class=k>for </span>i <span class=k>in </span>Europe/London Europe/Paris Europe/Madrid<span class=p>;</span> <span class=k>do
+    </span>showtime America/Los_Angeles <span class=nv>$i</span> 11:45
+<span class=k>done</span>
+</pre></td></tr></tbody></table></code></pre></figure><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+</pre></td><td class=code><pre><span class=nv>TZONES</span><span class=o>=</span><span class=s1>'America/Los_Angeles America/New_York Europe/London'</span>
+<span class=k>for </span>tzin <span class=k>in</span> <span class=nv>$TZONES</span><span class=p>;</span> <span class=k>do
+    for </span>tzout <span class=k>in</span> <span class=nv>$TZONES</span><span class=p>;</span> <span class=k>do
+      </span>showtime <span class=nv>$$</span>tzin <span class=nv>$tzout</span> 11:45
+    <span class=k>done
+done</span>
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=while>While</h2><p>Computes the average number of characters per line across the files in a directory.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class=code><pre><span class=nb>ls</span> | 
+<span class=k>while </span><span class=nb>read </span>name <span class=p>;</span> <span class=k>do</span> <span class=c># For every entry</span>
+    <span class=k>if</span> <span class=o>[</span> <span class=nt>-f</span> <span class=nv>$name</span> <span class=nt>-a</span> <span class=nt>-r</span> <span class=nv>$name</span> <span class=o>]</span> <span class=p>;</span> <span class=k>then</span> <span class=c># If is a regular file and readable</span>
+      <span class=nb>echo</span> <span class=nt>-n</span> <span class=s2>"</span><span class=nv>$name</span><span class=s2> "</span>
+      <span class=nb>expr</span> <span class=si>$(</span><span class=nb>wc</span> <span class=nt>-c</span> &lt;<span class=nv>$name</span><span class=si>)</span> / <span class=si>$(</span><span class=nb>wc</span> <span class=nt>-l</span> &lt;<span class=nv>$name</span><span class=si>)</span><span class=c>#display average characters per line</span>
+    <span class=k>fi
+done</span> |
+<span class=nb>head</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=conditionals>Conditionals</h1><h2 id=if>If</h2><p>Create two files, and check if <code class="language-plaintext highlighter-rouge">sourcefile</code> is older than <code class="language-plaintext highlighter-rouge">destfile</code>.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class=code><pre><span class=nb>touch </span>sourcefile
+<span class=nb>touch </span>destfile
+
+<span class=c># Make source newer than destination</span>
+<span class=k>if </span><span class=nb>test</span> <span class=o>[</span> soutcefile <span class=nt>-nt</span> destfile <span class=o>]</span> <span class=p>;</span> <span class=k>then
+    </span><span class=nb>cp </span>sourcefile destfile
+    <span class=nb>echo </span>Refreshed destfile
+<span class=k>fi</span>
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=if-else>If-else</h2><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+</pre></td><td class=code><pre><span class=k>if </span><span class=nb>test</span> <span class=o>[</span> soutcefile <span class=nt>-nt</span> destfile] <span class=p>;</span> <span class=k>then
+   </span><span class=nb>cp </span>sourcefile destfile
+   <span class=nb>echo </span>Refreshed destfile
+<span class=k>else
+   </span><span class=nb>echo </span>destfile is up to <span class=nb>date
+</span><span class=k>fi</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=xargs>xargs</h1><p>Executes the commands repeatedly to the output. Apply a set of commands as arguments to a command. The following program counts the number of lines of files in the current directory.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre>find <span class=nb>.</span> <span class=nt>-type</span> f | <span class=c># Output the name of all files</span>
+xargs <span class=nb>cat</span> | <span class=c># Combining them by applying cat</span>
+<span class=nb>wc</span> <span class=nt>-l</span> <span class=c># Count number of lines</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=case>case</h1><p>Allows running specific command based on pattern matching.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=k>case</span> <span class=si>$(</span><span class=nb>uname</span><span class=si>)</span> <span class=k>in </span>Linux
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=data-processing-flow>Data processing flow</h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+</pre></td><td class=code><pre>git clone gitrepo<span class=p>;</span> <span class=nb>cd </span>gitrepo
+git log <span class=nt>--pretty</span><span class=o>=</span>format:%aD master | <span class=c># Fetch commit dates</span>
+<span class=nb>cut</span> <span class=nt>-d</span>, <span class=nt>-f1</span> <span class=c># Select the weekday</span>
+<span class=nb>sort</span> |      <span class=c># Bring all weekdays together</span>
+<span class=nb>uniq</span> <span class=nt>-c</span> |   <span class=c># Count all weekday occurrences</span>
+<span class=nb>sort</span> <span class=nt>-rn</span>     <span class=c># Order by descending popularity</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=append-a-timestamp-to-a-log-file>Append a timestamp to a log file</h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>echo</span> <span class=si>$(</span><span class=nb>date</span><span class=si>)</span>: operation failed <span class=o>&gt;&gt;</span>log-file
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=fetching-data>Fetching data</h1><h2 id=from-the-web>From the web</h2><p>We can invoke a web service to get some results and then pipe to <code class="language-plaintext highlighter-rouge">jq</code> to output the result in pretty-print format.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre>curl <span class=nt>-s</span> <span class=s2>"http://api.currencylayer.com/</span><span class=se>\ </span><span class=s2>                                    Thursday 26 March 07:04
+live?access_key=</span><span class=nv>$API_KEY</span><span class=s2>&amp;source=USD&amp;currencies=EUR"</span> | jq .
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=from-a-mysql-database>From a MySQL database</h2><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre><span class=nb>echo</span> <span class=s2>"SELECT COUNT(*) FROM projects"</span> | <span class=c># SQL query</span>
+mysql <span class=nt>-ughtorrent</span> <span class=nt>-p</span> ghtorrent <span class=c># MySQL client and database</span>
+</pre></td></tr></tbody></table></code></pre></figure><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+</pre></td><td class=code><pre><span class=nb>echo</span> <span class=s1>'select url from projects limit 3'</span> | <span class=c># Obtain URL of first three projects</span>
+mysql <span class=nt>-ughtorrent</span> <span class=nt>-p</span> ughtorrent | <span class=c># Invoke MySQL client</span>
+<span class=k>while </span><span class=nb>read </span>url <span class=p>;</span> <span class=k>do
+    </span>curl <span class=nt>-s</span> <span class=nv>$url</span> | <span class=c># Fetch project's details</span>
+    jq <span class=nt>-r</span> <span class=s1>'{owner: .owner.login, name: .name, pushed: .pushed_at}'</span> <span class=c># Print owner, project, and last push time</span>
+<span class=k>done</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=archives>Archives</h1><p>List the content of an archive file in the web without pushing its content in the disk.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre>curl <span class=nt>-Ls</span> https://github.com/castor-software/depclean/archive/1.0.0.tar.gz | <span class=c># Download tar file</span>
+<span class=nb>tar</span> <span class=nt>-tzvf</span> - | <span class=c># -t list content, z- indicates zip compression, -v is verbose, -f retrieve file to the output of curl </span>
+<span class=nb>head</span> <span class=nt>-10</span> <span class=c># list first 10 entries</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Decompress the file in the disk</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre>curl <span class=nt>-Ls</span> https://github.com/castor-software/depclean/archive/1.0.0.tar.gz | <span class=c># Download tar file</span>
+<span class=nb>tar</span> <span class=nt>-xzf</span> - 
+</pre></td></tr></tbody></table></code></pre></figure><p>Create and compress archives</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>tar</span> <span class=nt>-czf</span> share.tar.gz /usr/share
+</pre></td></tr></tbody></table></code></pre></figure><p>Using a sub-shell to pipe various commands</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class=code><pre><span class=nb>mkdir </span>dict2
+<span class=o>(</span>
+    <span class=nb>cd</span> /usr/share/dict
+    <span class=nb>tar</span> <span class=nt>-cf</span> - <span class=nb>.</span>
+<span class=o>)</span> | <span class=o>(</span>
+    <span class=nb>cd </span>dict2
+    <span class=nb>tar</span> <span class=nt>-xf</span> -
+<span class=o>)</span>
+<span class=nb>ls </span>dict2
+</pre></td></tr></tbody></table></code></pre></figure><p>Compressing the content of current directory</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>ls</span> <span class=nt>-lR</span> /home/joe <span class=o>&gt;</span>ls.out <span class=p>;</span> <span class=nb>gzip </span>ls.out
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=version-control>Version Control</h1><p>Who has performed the most commits?</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+</pre></td><td class=code><pre>git log <span class=nt>--pretty</span><span class=o>=</span>format:%ae | <span class=c># list each commit author email                                            Saturday  4 April 10:24 148 ↵</span>
+<span class=nb>sort</span> | <span class=c># Bring emails together</span>
+<span class=nb>uniq</span> <span class=nt>-c</span> | <span class=c># Count occurrence</span>
+<span class=nb>sort</span> <span class=nt>-rn</span> | <span class=c># Order by number</span>
+<span class=nb>head</span> 
+</pre></td></tr></tbody></table></code></pre></figure><p>What is the file the largest number of changes?</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class=code><pre>find <span class=nb>.</span> <span class=nt>-type</span> f <span class=nt>-print</span> |                                                         
+    <span class=k>while </span><span class=nb>read </span>f <span class=p>;</span> <span class=k>do</span> <span class=c># For each file</span>
+    <span class=nb>echo</span> <span class=nt>-n</span> <span class=s2>"</span><span class=nv>$f</span><span class=s2> "</span> <span class=c># Prints its name on a single line</span>
+    git log <span class=nt>--follow</span> <span class=nt>--oneline</span> <span class=nv>$f</span> | <span class=nb>wc</span> <span class=nt>-l</span> <span class=c># Count the number of changes</span>
+    <span class=k>done</span> |
+    <span class=nb>sort</span> <span class=nt>-k</span> 2nr | <span class=c># Sort by the second field in reverse numerical order</span>
+    <span class=nb>head</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>What are the changes made to a file?</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre>git blame <span class=nt>--line-porcelain</span> src/main/java/spoon/Launcher.java | <span class=c># obtain line metadata</span>
+<span class=nb>head</span> <span class=nt>-15</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Which author has contributed more to a file?</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+</pre></td><td class=code><pre>git blame <span class=nt>--line-porcelain</span> src/main/java/spoon/Launcher.java |
+<span class=nb>grep</span> <span class=s2>"^author "</span> | <span class=c>#Show each line's author</span>
+<span class=nb>sort</span> |  <span class=c># Order by author</span>
+<span class=nb>uniq</span> <span class=nt>-c</span> | <span class=c># Count author instances</span>
+<span class=nb>sort</span> <span class=nt>-rn</span> | <span class=c># Order by count</span>
+<span class=nb>head</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>What is the average date of all lines in a file?</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre><span class=nb>date</span> +%s <span class=c># show date in epoch</span>
+<span class=nb>date</span> <span class=nt>-d</span> @1585990273 <span class=c># parse data from epoch to date</span>
+</pre></td></tr></tbody></table></code></pre></figure><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+</pre></td><td class=code><pre><span class=nb>date</span> <span class=nt>-d</span> @<span class=si>$(</span>
+   git blame <span class=nt>--line-porcelain</span> src/main/java/spoon/Launcher.java |
+   <span class=nb>awk</span> <span class=s2>"/^author-time / {sum += </span><span class=nv>$2</span><span class=s2>; count++} # Maintain sum and count of commit times
+   END {printf("</span>%d<span class=s2>", sum / count)}"</span>
+<span class=si>)</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>What is the evolution of the file size?</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class=code><pre><span class=nv>file</span><span class=o>=</span>src/main/java/spoon/Launcher.java <span class=c># File to examine</span>
+git log <span class=nt>--pretty</span><span class=o>=</span>format:%H <span class=nt>-3</span> <span class=nv>$ $file</span> <span class=c># Show SHA of commmits</span>
+git log <span class=nt>--pretty</span><span class=o>=</span>format:%H <span class=nv>$file</span> | <span class=c># Obtain commits' SHA</span>
+<span class=k>while </span><span class=nb>read </span>sha <span class=p>;</span> <span class=k>do</span> <span class=c># For each SHA</span>
+    git show <span class=nv>$sha</span>:<span class=nv>$file</span> | <span class=c># List files stated at that commit</span>
+    <span class=nb>wc</span> <span class=nt>-l</span>
+<span class=k>done</span> |
+<span class=nb>head</span> <span class=nt>-15</span> <span class=c># First 15 entries</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=system-administration>System administration</h1><p>Unix store administrative date in <code class="language-plaintext highlighter-rouge">/etc</code> (stands for “extreme technical context”)</p><h1 id=generators>Generators</h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre><span class=k>for </span>i <span class=k>in</span> <span class=si>$(</span><span class=nb>seq </span>50<span class=si>)</span> <span class=p>;</span> <span class=k>do
+    </span><span class=nb>echo</span> <span class=nt>-n</span> <span class=s2>"."</span> <span class=c># displais 50 dots</span>
+<span class=k>done</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=regular-expressions>Regular expressions</h1><h2 id=grep><code class="language-plaintext highlighter-rouge">grep</code></h2><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+</pre></td><td class=code><pre><span class=nb>cd</span> /usr/share/dict
+<span class=nb>grep </span>baba words <span class=c># All lines (words) containing baba</span>
+<span class=nb>grep</span> <span class=s2>"^baba"</span> words <span class=c># All lines (words) starting with baba</span>
+<span class=nb>grep</span> <span class=s2>"baba$"</span> words <span class=c># All lines (words) ending with baba</span>
+<span class=nb>grep </span>a.a.a.a words <span class=c># Words containing a followed by anything</span>
+</pre></td></tr></tbody></table></code></pre></figure><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class=code><pre><span class=nb>grep</span> <span class=s2>"^t.y$"</span> words <span class=c># Three letter words starting with t, ending with y</span>
+<span class=nb>grep</span> <span class=s2>"^....$"</span> words | <span class=nb>wc</span> <span class=nt>-l</span> <span class=c># Number of four letter words</span>
+<span class=nb>grep</span> <span class=s2>"^k.*d.*k$"</span> words <span class=c># Words starting with k, ending with k, and with a d in between</span>
+<span class=nb>grep</span> <span class=s2>"^a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z*$"</span> words | <span class=nb>wc</span> <span class=nt>-l</span> <span class=c># words that follow the alphabetical order</span>
+<span class=nb>grep</span> <span class=s2>"[0-9]"</span> words <span class=c># Lines containing a digit</span>
+<span class=nb>grep</span> <span class=s2>"^k.[bdgkpt].k$"</span> words <span class=c># Words with a hard consonant between ks</span>
+<span class=nb>grep</span> <span class=s2>"^[A-Z]"</span> words | <span class=nb>wc</span> <span class=nt>-l</span> <span class=c># Number of proper nouns</span>
+<span class=nb>grep</span> <span class=s2>"[^A-Za-z]"</span> words <span class=c># Lines with non-alphabetic characters</span>
+find ~/Downloads | <span class=nb>grep</span> <span class=s2>"[[:space:]]"</span> <span class=c># List files with space characters</span>
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=egrep-or-grep--e><code class="language-plaintext highlighter-rouge">egrep</code> (or <code class="language-plaintext highlighter-rouge">grep -E</code>)</h2><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+</pre></td><td class=code><pre><span class=nb>grep</span> <span class=nt>-E</span> <span class=s2>"s{2}"</span> words  <span class=c># Words with two secuentical s characters</span>
+<span class=nb>grep</span> <span class=nt>-E</span> <span class=s2>"[^aeiouy]{7}"</span> words <span class=c># Words with seven consonants</span>
+<span class=nb>grep</span> <span class=nt>-E</span> <span class=s2>"^.{,15}$"</span> words | <span class=nb>wc</span> <span class=nt>-l</span> <span class=c># Words with a length up to 15</span>
+<span class=nb>grep</span> <span class=nt>-E</span> <span class=s2>"^.{15,}$"</span> words | <span class=nb>wc</span> <span class=nt>-l</span> <span class=c># Words with at least 15 characters</span>
+<span class=nb>grep</span> <span class=nt>-E</span> <span class=s2>"^(.).*</span><span class=se>\1</span><span class=s2>$"</span> words | <span class=nb>head</span> <span class=c># Words beginning and ending with the same character (the character in parentesis is referenced with \1)</span>
+<span class=nb>grep</span> <span class=nt>-E</span> <span class=s2>"^(.)(.)((.)</span><span class=se>\4</span><span class=s2>)?</span><span class=se>\2\1</span><span class=s2>$"</span> words <span class=c># Find 3-4 letter palindromes </span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Alternative matches.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre><span class=nb>grep</span> <span class=nt>-E</span> <span class=s2>"^(aba|ono).*(ly|ne)$"</span> words <span class=c># Words with alternative start/end parts</span>
+<span class=nb>grep</span> <span class=nt>-l</span> vfs <span class=k>*</span>.c <span class=c># List C files containing vfs</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Matches in files (<code class="language-plaintext highlighter-rouge">grep -F</code>)</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre><span class=nb>grep</span> <span class=nt>-rl</span> read_iter <span class=nb>.</span> | <span class=nb>head</span> <span class=nt>-5</span> <span class=c># Search recursively all the files that contain the string read_iter</span>
+
+<span class=nb>grep</span> <span class=nt>-F</span> ... <span class=k>*</span>.c | <span class=nb>head</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=other-tools>Other tools</h1><h2 id=cut><code class="language-plaintext highlighter-rouge">cut</code></h2><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre><span class=nb>cd</span> /etc/passwd
+<span class=nb>cut</span> <span class=nt>-d</span>: <span class=nt>-f</span> 1 /etc/passwd | <span class=nb>head</span> <span class=nt>-4</span> <span class=c># Output the first field</span>
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=awk>awk</h2><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+</pre></td><td class=code><pre><span class=nb>awk</span> <span class=s2>"/bash/"</span> /etc/passwd <span class=c># Output lines containing "bash"</span>
+<span class=nb>awk</span> <span class=nt>-F</span>: <span class=s2>"</span><span class=nv>$3</span><span class=s2> &gt; 1000"</span> /etc/passwd <span class=c># Lines where field 3 &gt; 1000</span>
+<span class=nb>awk</span> <span class=nt>-F</span>: <span class=s2>"{print </span><span class=nv>$1</span><span class=s2>}"</span> /etc/passw | <span class=nb>head</span> <span class=nt>-5</span> <span class=c># Output field 1</span>
+<span class=nb>awk</span> <span class=s2>"!/^#/ {print </span><span class=nv>$1</span><span class=s2>}"</span> /etc/services | <span class=nb>head</span> <span class=c># Print first field that doesn't match the regular expression</span>
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=ack>ack</h2><p>ack - grep-like text finder</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre>ack <span class=nt>--ruby</span> foo <span class=c># Find foo in occurrences in ruby files</span>
+ack abc <span class=nt>-l</span> <span class=c># List files with the occurrence of abc character</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=processing>Processing</h1><h2 id=sorting>Sorting</h2><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class=code><pre><span class=nb>sort</span> <span class=nt>-k</span> 2 dates | <span class=nb>head</span> <span class=nt>-5</span> <span class=c># Sort by second and subsequent fields (space separated)</span>
+<span class=nb>sort</span> <span class=nt>-k</span> 4r dattes | <span class=nb>head</span> <span class=c># Sorts in reverse order</span>
+<span class=nb>sort</span> <span class=nt>-k</span> 3M <span class=nt>-k</span> 2n dates | <span class=nb>head</span>  <span class=c># sort 3rd field (Month) in chronological order, then second field (Month day) in numberical order</span>
+
+<span class=nb>sort</span> <span class=nt>-t</span> : <span class=nt>-k</span> 4n /etc/passwd | <span class=nb>head</span> <span class=c># Sort by numeric group-id</span>
+
+<span class=nb>sort</span> <span class=nt>-u</span> /etc/passw | <span class=nb>head</span> <span class=c># sort the unique elements</span>
+<span class=nb>sort </span>dates | <span class=nb>sort</span> <span class=nt>-C</span> <span class=o>&amp;&amp;</span> <span class=nb>echo</span> <span class=s2>"Sorted"</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>The <code class="language-plaintext highlighter-rouge">comm</code> command allows to select or reject lines common to two files. Both files must be sorted.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>comm </span>linux.bin freebsd.bin
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=sed><code class="language-plaintext highlighter-rouge">sed</code></h1><h2 id=substitutions>substitutions</h2><p>Create JSON from list of items.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class=code><pre>vim tojson.sed
+
+<span class=c>#!/bin/bash</span>
+li<span class=sb>``</span>
+<span class=o>[</span> <span class=c># Insert [ at the beginning</span>
+s/.<span class=k>*</span>/ <span class=s2>"&amp;"</span>,/ <span class=c># Convert lines into strings</span>
+<span class=nv>$a</span><span class=se>\ </span> <span class=c># Append ] at the end</span>
+<span class=o>]</span>
+EOF
+
+<span class=nb>ls</span> /usr | tojson.sed
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=awk-1><code class="language-plaintext highlighter-rouge">awk</code></h1><p>Summarize size of of files in a directory.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class=code><pre>ll <span class=o>&gt;</span> contents.txt 
+<span class=nb>awk</span> <span class=s1>'                    
+{ size += $5; n++ }  # Sum size and number of files
+END {                # Print summary
+print "Total size " size
+print "Number of files " n
+print "Average file size " size/n
+}
+'</span> contents.txt
+</pre></td></tr></tbody></table></code></pre></figure><p>Count the number of file extension</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class=code><pre>ll <span class=o>&gt;</span> contents.txt 
+<span class=nb>awk</span> <span class=s1>'
+{
+sub(".*/", "", $9)   # Remove path
+if (!sub(".*\\.", "", $9))    # Keep only extension
+next     # Skip files without extension
+size[$9] += $5    # Tally size of extension
+}
+END {
+for (i in size)
+print i, size[i]
+}'</span> content.txt |
+<span class=nb>sort</span> <span class=nt>-k</span> 2nr |
+<span class=nb>head</span>
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=diff><code class="language-plaintext highlighter-rouge">diff</code></h2><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>diff <span class=nt>-u</span> a b
+</pre></td></tr></tbody></table></code></pre></figure><p>$ <code class="language-plaintext highlighter-rouge">patch</code></p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>patch john.c &lt;mary.patch <span class=c># Patch John's copy with Mary's patch</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=testing-and-expressions>Testing and expressions</h1><h2 id=test><code class="language-plaintext highlighter-rouge">test</code></h2><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class=code><pre><span class=nb>test</span> <span class=nt>-d</span> / <span class=o>&amp;&amp;</span> <span class=nb>echo </span>Directory <span class=c># Test if root is a directory</span>
+<span class=nb>test</span> <span class=nt>-f</span> / <span class=o>&amp;&amp;</span> <span class=nb>echo </span>File <span class=c># Test if root is a file</span>
+<span class=nb>test </span>hi <span class=o>=</span> there <span class=o>&amp;&amp;</span> <span class=nb>echo </span>Same <span class=c># Test if strings are equal</span>
+<span class=nb>test </span>hi <span class=o>!=</span> hi <span class=o>&amp;&amp;</span> <span class=nb>echo </span>Different <span class=c># Test if strings are different</span>
+<span class=nb>test</span> <span class=nt>-z</span> <span class=s2>""</span> <span class=o>&amp;&amp;</span> <span class=nb>echo </span>Empty <span class=c># Test if string is empty</span>
+<span class=nb>test</span> <span class=nt>-n</span> <span class=s2>"a string"</span> <span class=o>&amp;&amp;</span> <span class=nb>echo </span>Non-empty <span class=c># Test if string is non empty</span>
+<span class=nb>test </span>32 <span class=nt>-eq</span> 42 <span class=o>&amp;&amp;</span> <span class=nb>echo </span>Equal <span class=c># Test integers are equal</span>
+<span class=nb>test </span>32 <span class=nt>-lt</span> 50 <span class=o>&amp;&amp;</span> <span class=nb>echo </span>Less than <span class=c># Test if integer less than other</span>
+<span class=nb>test</span> <span class=nb>.</span> <span class=nt>-nt</span> / <span class=o>&amp;&amp;</span> <span class=nb>echo</span> <span class=nb>.</span> is newer than / <span class=c># Test if a file is newer than other</span>
+<span class=nb>test</span> <span class=nt>-w</span> / <span class=o>&amp;&amp;</span> <span class=nb>echo </span>Writable <span class=c># Test if a file is writable</span>
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=expr><code class="language-plaintext highlighter-rouge">expr</code></h2><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class=code><pre><span class=nb>expr </span>1 + 2
+<span class=nb>expr </span>2 <span class=se>\*</span> 10
+<span class=nb>expr </span>12 <span class=se>\%</span> 5
+<span class=nb>expr </span>10 <span class=se>\&lt;</span> 50
+<span class=nb>expr </span>5 <span class=o>=</span> 12 <span class=c># Test of equality</span>
+<span class=nb>expr </span>John <span class=se>\&gt;</span> Mary <span class=c># Compare strings</span>
+<span class=nb>expr</span> <span class=se>\(</span>1 + 20 <span class=se>\)</span> <span class=se>\*</span> 2
+<span class=nb>expr </span>length <span class=s2>"To be or not to be"</span> <span class=c># String length</span>
+<span class=nb>expr </span>substr <span class=s2>"To be or not to vbe"</span> 4 2 <span class=c># Substring of 2 from 4</span>
+<span class=nb>expr</span> <span class=s2>""</span> <span class=se>\|</span> b <span class=c># Short-circuit OR (first part failed)</span>
+</pre></td></tr></tbody></table></code></pre></figure><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+</pre></td><td class=code><pre><span class=nv>i</span><span class=o>=</span>0
+<span class=k>while</span> <span class=o>[</span> <span class=nv>$i</span> <span class=nt>-lt</span> 10 <span class=o>]</span><span class=p>;</span> <span class=k>do
+    </span><span class=nb>echo</span> <span class=nv>$i</span>
+    <span class=nv>i</span><span class=o>=</span><span class=k>$((</span>i <span class=o>+</span> <span class=m>1</span><span class=k>))</span>
+<span class=k>done</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=dealing-with-characters>Dealing with characters</h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre><span class=nb>echo</span> <span class=s1>'This is a test'</span> | <span class=nb>tr</span> <span class=s1>' '</span> - <span class=c># Replace space with -</span>
+<span class=nb>echo</span> <span class=s1>'This is a test'</span> | <span class=nb>tr </span>a-z A-Z <span class=c># Replace a-z A-Z</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=encryption--decription>Encryption & Decription</h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre>openssl enc <span class=nt>-e</span> <span class=nt>-aes-256-cbc</span> <span class=nt>-pbkdf2</span> &lt;pride-and-prejudice.txt <span class=o>&gt;</span>real-secret
+freq real-secret
+<span class=nv>$ </span>openssl enc <span class=nt>-d</span> <span class=nt>-aes-256-cbc</span> <span class=nt>-pbkdf2</span> &lt;real-secret | <span class=nb>head</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=dealing-with-files>Dealing with files</h1><h1 id=tac><code class="language-plaintext highlighter-rouge">tac</code></h1><p>Print and concatenate files in reverse (last line first).</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>ll | <span class=nb>tac</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=rev><code class="language-plaintext highlighter-rouge">rev</code></h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>tail</span> /usr/share/dict/words | rev <span class=c># Reverse characters</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=paste><code class="language-plaintext highlighter-rouge">paste</code></h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>paste</span> - /usr/share/dict/word
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=shuf><code class="language-plaintext highlighter-rouge">shuf</code></h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre><span class=nb>shuf</span> <span class=nt>-n</span> 5 /usr/share/dict/words <span class=c># Output five random words</span>
+<span class=nb>shuf</span> <span class=nt>-n</span> 1 <span class=nt>-e</span> heads tails <span class=c># Throw a single coin</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=split>split</h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>split</span> <span class=nt>-l</span> 10000 <span class=nt>-d</span> /usr/share/dict/words <span class=c># Split the dictionary</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=rs><code class="language-plaintext highlighter-rouge">rs</code></h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>head</span> /etc/passwd | rs <span class=nt>-c</span>: <span class=nt>-C</span>: <span class=nt>-T</span> <span class=c># Transposes the output</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=graphs>Graphs</h1><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class=code><pre>cho <span class=s2>"digraph talks {
+        bob [gender="</span>male<span class=s2>"];
+        eliza [gender="</span>female<span class=s2>"];
+        fred [gender="</span>male<span class=s2>"];
+        john [gender="</span>male<span class=s2>"];
+        mary [gender="</span>female<span class=s2>"];
+        steve [gender="</span>male<span class=s2>"];
+        sue [gender="</span>female<span class=s2>"];
+        mark [gender="</span>male<span class=s2>"];
+
+        john -&gt; mary;
+        john -&gt; bob;
+        mary -&gt; sue;
+        sue -&gt; bob;
+        sue -&gt; mary;
+        fred -&gt; bob;
+        eliza -&gt; steve;
+}"</span> <span class=o>&gt;</span> talk.dot
+</pre></td></tr></tbody></table></code></pre></figure><p>Count nodes</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre>gvpr <span class=s1>'N {clone($0, $)}'</span> talk.dot <span class=c># Clone each node to the output graph</span>
+gvpr
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=images--sound>Images & sound</h1><p>Create a symbolic link to a file or directory:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class=code><pre>tifftopnm image.tiff | pnmtopng <span class=o>&gt;</span>image.png <span class=c># Convert from TIFF to PNG</span>
+
+<span class=k>for </span>i <span class=k>in</span> <span class=k>*</span>.tiff <span class=p>;</span> <span class=k>do</span> <span class=c># For each TIFF file</span>
+<span class=o>&gt;</span> <span class=nv>pngname</span><span class=o>=</span><span class=si>$(</span><span class=nb>basename</span> <span class=nv>$i</span> .tiff<span class=si>)</span>.png <span class=c># Compute name of PNG file</span>
+<span class=o>&gt;</span> tifftopnm <span class=nv>$i</span> | <span class=c># Convert image to PNM</span>
+<span class=o>&gt;</span> pnmtopng <span class=o>&gt;</span><span class=nv>$pngname</span> <span class=c># Convert and write to PNG file</span>
+<span class=o>&gt;</span> <span class=k>done
+
+</span>tifftopnm image.tiff | <span class=c># Convert TIFF to PNM</span>
+<span class=o>&gt;</span> pamscale <span class=nt>-width</span><span class=o>=</span>1024 | <span class=c># Scale to 1024 pixels</span>
+<span class=o>&gt;</span> pnmtopng <span class=o>&gt;</span>image.png <span class=c># Write the result in PNG format</span>
+
+jpegtopnm plate.jpeg |
+<span class=o>&gt;</span> pamflip <span class=nt>-r90</span> | <span class=c># Rotate the image by 90 degrees</span>
+<span class=o>&gt;</span> pamscale <span class=nt>-width</span><span class=o>=</span>1024 | <span class=c># Scale to 1024 pixels</span>
+<span class=o>&gt;</span> pnmtojpeg <span class=o>&gt;</span>rplate.jpeg <span class=c># Write the result in JPEG format</span>
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=sound>Sound</h2><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class=code><pre>play <span class=nt>-q</span> sox-orig.wav
+
+sox sox-orig.wav sox-orig.mp3 <span class=c># Convert between file formats</span>
+sox sox-orig.wav sox-low.wav pitch <span class=nt>-600</span> <span class=c># Lower pitch by 600 cents</span>
+play <span class=nt>-q</span> sox-low.wav
+
+sox sox-orig.wav sox-fast.wav tempo 1.5 <span class=c># Increase tempo by 50%</span>
+play <span class=nt>-q</span> sox-fast.wav
+
+sox sox-orig.wav sox-chorus.wav chorus 0.5 0.9 50 0.4 0.25 2 <span class=nt>-t</span> <span class=se>\</span>
+60 0.32 0.4 2.3 <span class=nt>-t</span> 40 0.3 0.3 1.3 <span class=nt>-s</span> <span class=c># Apply chorus effect</span>
+play <span class=nt>-q</span> sox-chorus.wav
+
+wget <span class=nt>-q</span> <span class=nt>-O</span> persephone.mp3 <span class=se>\</span>
+http://ccmixter.org/content/hansatom/hansatom_-_Persephone.mp3 <span class=c># By Hans Atom (CC BY 2.5)</span>
+sox persephone.mp3 persephone-trimmed.mp3 fade 0 0:06 1 <span class=c># Trim to 6s with 1s fade-out</span>
+play <span class=nt>-q</span> persephone-trimmed.mp3
+
+sox <span class=nt>--combine</span> mix <span class=nt>-v</span> 0.2 persephone-trimmed.mp3 sox-orig.wav <span class=se>\</span>
+sox-persephone.mp3 <span class=c># Mix the two audio files</span>
+play <span class=nt>-q</span> sox-persephone.mp3
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=good-practices>Good practices</h1><p>Output error</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>echo </span>Error <span class=o>&gt;</span>&amp;2 <span class=c># Send output to standard error</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Clean up temporary files when script execution finishes</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class=code><pre><span class=nb>cat</span> <span class=o>&gt;</span>tmpdir.sh <span class=o>&lt;&lt;</span><span class=sh>\</span><span class=no>EOF</span><span class=sh>
+#!/bin/sh
+TMPDIR="</span><span class=k>${</span><span class=nv>TMP</span><span class=k>:-</span><span class=p>/tmp</span><span class=k>}</span><span class=sh>/</span><span class=nv>$$</span><span class=sh>" # Create temporary directory name
+trap 'rm -rf "</span><span class=nv>$TMPDIR</span><span class=sh>"' 0 # Remove it when exiting
+trap 'exit 2' 1 2 15 # Exit when the program is interrupted
+mkdir "</span><span class=nv>$TMPDIR</span><span class=sh>" # Create the directory
+# Do some work in </span><span class=nv>$TMPDIR</span><span class=sh>
+EOF</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Prefer redirection to pipes</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>command</span> &lt;file <span class=c># A redirection is all that's needed</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Test command, not its exit code</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre><span class=k>if</span> <span class=o>!</span> <span class=nb>command</span> <span class=p>;</span> <span class=k>then</span> <span class=c># A simple negation will do</span>
+   <span class=nb>echo </span>Error <span class=o>&gt;</span>&amp;2
+<span class=k>fi</span>
+</pre></td></tr></tbody></table></code></pre></figure><p><code class="language-plaintext highlighter-rouge">grep</code> can recurse directories</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nb>grep</span> <span class=nt>-r</span> pattern <span class=nb>.</span> <span class=c># Modern recursive search</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Prefer wildcards to <code class="language-plaintext highlighter-rouge">ls</code></p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre><span class=k>for </span>i <span class=k>in</span> <span class=k>*</span> <span class=p>;</span> <span class=k>do</span> <span class=c># can be replaced by a wildcard</span>
+   <span class=nb>.</span> <span class=nb>.</span> <span class=nb>.</span>
+<span class=k>done</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Replace <code class="language-plaintext highlighter-rouge">awk</code> with <code class="language-plaintext highlighter-rouge">cut</code></p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre><span class=nb>cut</span> <span class=nt>-d</span> : <span class=nt>-f</span> 1,7 <span class=c># More efficient way to print fields 1 and 7</span>
+<span class=nb>expr</span> <span class=s2>"</span><span class=nv>$LANG</span><span class=s2>"</span> : <span class=s1>'.*\.\(.*\)'</span> <span class=c># More efficient way to isolate encoding</span>
+UTF-8
+</pre></td></tr></tbody></table></code></pre></figure><p>Replace <code class="language-plaintext highlighter-rouge">sed</code> with <code class="language-plaintext highlighter-rouge">expr</code></p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre><span class=nb>echo</span> <span class=nv>$LANG</span>
+en_US.UTF-8
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=references>References</h1><ul><li><a href=https://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html>:earth-americas: Unix command specification</a></li><li><a href=http://conqueringthecommandline.com>:earth-americas: http://conqueringthecommandline.com</a></li><li><a href=https://missing.csail.mit.edu/>:earth-americas: The Missing Semester of Your CS Education</a></li><li><a href=http://www.bashoneliners.com>:earth-americas: http://www.bashoneliners.com</a></li><li><a href=https://www.commandlinefu.com>:earth-americas: https://www.commandlinefu.com</a></li><li><a href=https://explainshell.com/>:earth-americas: https://explainshell.com/</a></li><li><a href=https://wolfram.schneider.org/bsd/7thEdManVol2/beginners/beginners.pdf>UNIX For Beginners — Second Edition</a></li></ul></article><ul class="pager blog-pager"><li class=previous><a href=/blog/recipes-for-email-based-communication-success-in-academia.html data-toggle=tooltip data-placement=top title="Recipes for Effective Academic Emailing">← Previous Post</a></li><li class=next><a href=/blog/diversity-driven-software-debloat.html data-toggle=tooltip data-placement=top title="Diversity-Driven Software Debloat">Next Post →</a></li></ul><br></div></div></div><script>anchors.options={position:'left'},anchors.add('h1:not(.no-anchor)','h2','h3')</script><div class=container><div class=row><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style=padding-right:15px><div class=flex-container-footer-badges><section class=share-section><a href="https://twitter.com/intent/tweet?text=Mastering+the+Unix+command+line+can+drastically+boost+your+productivity+and+efficiency+in+software+development.+In+this+post%2C+I+share+a+collection+of+personal+notes+from+the+edX+course+%22Unix+Tools%3A+Data%2C+Software%2C+and+Production+Engineering.%22+This+guide+covers+essential+command-line+tricks%2C+from+process+automation+to+data+manipulation%2C+that+every+developer+and+DevOps+engineer+should+know.%0A+https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id=share-twitter class="fab fa-twitter" aria-hidden=true></span>
+<span class=sr-only>Twitter</span></a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id=share-linkedin class="fab fa-linkedin-in" aria-hidden=true></span>
+<span class=sr-only>LinkedIn</span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/unix-command-line-hacks.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden=true></span>
+<span class=sr-only>Facebook</span></a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Funix-command-line-hacks.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden=true></span>
+<span class=sr-only>Reddit</span></a>
+<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Funix-command-line-hacks.html&text=Mastering+the+Unix+command+line+can+drastically+boost+your+productivity+and+efficiency+in+software+development.+In+this+post%2C+I+share+a+collection+of+personal+notes+from+the+edX+course+%22Unix+Tools%3A+Data%2C+Software%2C+and+Production+Engineering.%22+This+guide+covers+essential+command-line+tricks%2C+from+process+automation+to+data+manipulation%2C+that+every+developer+and+DevOps+engineer+should+know.%0A" class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
+<span class=sr-only>Telegram</span></a>
+<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Funix-command-line-hacks.html&t=Unix+Cmd+Hacks" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
+<span class=sr-only>Hacker News</span></a></section></div><div id=related-posts><hr><h2>Related Posts</h2><div class="panel-deck row"><div class=col-sm-4><div class=panel><a href=/blog/configuring-remote-connections-in-unix-based-systems-using-ssh.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Configuring Remote Connections in Unix-Based Systems Using SSH</h4><div class=date style=margin-bottom:0>Posted on September 10, 2021</div></div><img src=../img/posts/2021/metro_station_cover.jpg alt="Configuring Remote Connections in Unix-Based Systems Using SSH"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/design-for-microservices.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Design For Microservices!</h4><div class=date style=margin-bottom:0>Posted on September 20, 2021</div></div><img src=../img/posts/2021/clouds_cover.png alt="Design For Microservices!"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/i-am-switching-to-python-and-actually-liking-it.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>I'm Switching to Python and Actually Liking It</h4><div class=date style=margin-bottom:0>Posted on July 15, 2025</div></div><img src=../img/posts/2025/2025-07-15/wall-stones_cover.JPG alt="I'm Switching to Python and Actually Liking It"></div></a></div></div></div></div><div><div id=giscus-container></div><script src=/js/load-giscus.js></script>
+<script>window.addEventListener('load',loadGiscus)</script></div></div></div></div><script>window.addEventListener('DOMContentLoaded',()=>{const a=new IntersectionObserver(a=>{a.forEach(a=>{const b=a.target.getAttribute('id');a.intersectionRatio>0?document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.add('active'):document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.remove('active')})});document.querySelectorAll('h1[id]').forEach(b=>{a.observe(b)}),document.querySelectorAll('h2[id]').forEach(b=>{a.observe(b)})})</script><footer><div class="container beautiful-jekyll-footer"><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style=text-align:center><div class=flex-container-footer-badges><a href=https://www.linkedin.com/in/cesarsotovalero><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin"></a>
+<a href=https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg><img alt="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black&label=Subscribe"></a>
+<a href=https://github.com/cesarsotovalero><img alt="Follow me on GitHub" src="https://img.shields.io/github/followers/cesarsotovalero?label=Follow%20me"></a></div></div><div class=flex-container-footer-copyright><p class="copyright text-muted">© César Soto Valero  •  2018–2025</p></div></div></div></div></footer><script>typeof jQuery=='undefined'&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src=/js/bootstrap.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/flowtype.js></script>
+<script src=/js/scroll-to-top.js></script>
+<script src=/js/lazysizes.min.js></script>
+<script src=/js/popup-footnotes.js></script>
+<script src=/js/mermaid.min.js></script>
+<script>$(document).ready(function(){mermaid.initialize({startOnLoad:!0,theme:"default"}),window.mermaid.init(void 0,document.querySelectorAll('.language-mermaid'))})</script><script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'),ga('create','UA-107061705-1','auto'),ga('send','pageview')</script><script src=/js/mode-switcher.js></script></body></html>

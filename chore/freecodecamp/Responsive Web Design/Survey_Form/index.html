@@ -1,79 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <title>Survey Form</title>
-   <link rel="stylesheet" href="main.css">
-</head>
-<body>
-
-
-<div class="container">
-   <header class="header">
-      <h1 id="title">freeCodeCamp Survey Form</h1>
-      <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
-   </header>
-
-   <div class="content">
-      <form action="" id="survey-form">
-         <div class="form-group">
-            <label id="name-label" for="name">Name</label> <br>
-            <input type="text" id="name" class="full-width custom-height" placeholder="Enter your name" required="">
-         </div>
-         <div class="form-group">
-            <label id="email-label" for="email">Email</label> <br>
-            <input type="email" id="email" class="full-width custom-height" placeholder="Enter your email" required>
-         </div>
-         <div class="form-group">
-            <label id="number-label" for="number">Age</label><br>
-            <input type="number" id="number" class="full-width custom-height" min="1" max="100" placeholder="Enter your age">
-         </div>
-         <div class="form-group">
-            <label id="role-label" for="dropdown">Which option best describes your current role?</label><br>
-            <select id="dropdown" name="role" class="form-control" required>
-               <option disabled selected value>Select current role</option>
-               <option value="student">Student</option>
-               <option value="engineer">Engineer</option>
-               <option value="researcher">Researcher</option>
-               <option value="teacher">Teacher</option>
-               <option value="other">Other</option>
-            </select>
-         </div>
-         <div class="form-group">
-            <label id="radio-label" for="radio-label">Which programming language do you feel more comfortable with?</label><br>
-            <input type="radio" id="java" name="radio-attribute" value="HTML" checked>
-            <label for="java">Java</label><br>
-            <input type="radio" id="javascript" name="radio-attribute" value="JavaScript">
-            <label for="javascript">JavaScript</label><br>
-            <input type="radio" id="python" name="radio-attribute" value="CSS">
-            <label for="python">Python</label><br>
-            <input type="radio" id="r" name="radio-attribute" value="CSS">
-            <label for="r">R</label><br>
-         </div>
-         <div class="form-group">
-            <label id="checkbox-label" for="checkbox-label">What technology would you like to learn soon?</label><br>
-            <input type="checkbox" id="docker" name="docker" value="Docker">
-            <label for="docker">Docker</label><br>
-            <input type="checkbox" id="spring" name="spring" value="Spring">
-            <label for="spring">Spring</label><br>
-            <input type="checkbox" id="react" name="react" value="React">
-            <label for="react">React</label><br>
-            <input type="checkbox" id="flask" name="flask" value="Flask">
-            <label for="flask">Flask</label><br>
-         </div>
-         <div class="form-group">
-            <label id="description-label" for="checkbox-label">Additional comments</label><br>
-            <textarea name="comments" class="full-width" id="comments" cols="30" rows="10" placeholder="Write your comments here..."></textarea>
-         </div>
-         <div class="form-group">
-            <button type="submit" id="submit" class="submit-button full-width">Submit</button>
-         </div>
-      </form>
-   </div>
-
-</div>
-
-</body>
-
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</html>
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Survey Form</title><link rel=stylesheet href=main.css></head><body><div class=container><header class=header><h1 id=title>freeCodeCamp Survey Form</h1><p id=description><i>Thank you for taking the time to help us improve the platform</i></p></header><div class=content><form id=survey-form><div class=form-group><label id=name-label for=name>Name</label><br><input type=text id=name class="full-width custom-height" placeholder="Enter your name" required></div><div class=form-group><label id=email-label for=email>Email</label><br><input type=email id=email class="full-width custom-height" placeholder="Enter your email" required></div><div class=form-group><label id=number-label for=number>Age</label><br><input type=number id=number class="full-width custom-height" min=1 max=100 placeholder="Enter your age"></div><div class=form-group><label id=role-label for=dropdown>Which option best describes your current role?</label><br><select id=dropdown name=role class=form-control required><option disabled selected value>Select current role</option><option value=student>Student</option><option value=engineer>Engineer</option><option value=researcher>Researcher</option><option value=teacher>Teacher</option><option value=other>Other</option></select></div><div class=form-group><label id=radio-label for=radio-label>Which programming language do you feel more comfortable with?</label><br><input type=radio id=java name=radio-attribute value=HTML checked>
+<label for=java>Java</label><br><input type=radio id=javascript name=radio-attribute value=JavaScript>
+<label for=javascript>JavaScript</label><br><input type=radio id=python name=radio-attribute value=CSS>
+<label for=python>Python</label><br><input type=radio id=r name=radio-attribute value=CSS>
+<label for=r>R</label><br></div><div class=form-group><label id=checkbox-label for=checkbox-label>What technology would you like to learn soon?</label><br><input type=checkbox id=docker name=docker value=Docker>
+<label for=docker>Docker</label><br><input type=checkbox id=spring name=spring value=Spring>
+<label for=spring>Spring</label><br><input type=checkbox id=react name=react value=React>
+<label for=react>React</label><br><input type=checkbox id=flask name=flask value=Flask>
+<label for=flask>Flask</label><br></div><div class=form-group><label id=description-label for=checkbox-label>Additional comments</label><br><textarea name=comments class=full-width id=comments cols=30 rows=10 placeholder="Write your comments here..."></textarea></div><div class=form-group><button type=submit id=submit class="submit-button full-width">Submit</button></div></form></div></div></body><script src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script></html>

@@ -1,0 +1,305 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml lang=en-us xml:lang=en-US itemscope itemtype=http://schema.org/WebSite><head><script>(function(){let a=localStorage.getItem('theme');a==='dark'&&document.documentElement.setAttribute('data-theme','dark')})()</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>The Execution Lifecycle of a Java Application</title><meta name=keywords content="class loaders,java bytecode execution,how the JVM works,understanding the JVM"><link rel=alternate type=application/rss+xml title="César Soto Valero  César - Computer Scientist" href=https://www.cesarsotovalero.net/feed.xml><script src=https://cdn.jsdelivr.net/npm/typed.js@2.0.12></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel=stylesheet><link rel=apple-touch-icon sizes=180x180 href=../img/favicon/redketchup/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../img/favicon/redketchup/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../img/favicon/redketchup/favicon-16x16.png><link rel=manifest href=../img/favicon/redketchup/site.webmanifest><link id=code rel=stylesheet href=../css/pygment_highlights.css><script src=https://d3js.org/d3.v7.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-107061705-1')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","bs3gcidnol")</script><script src=../js/anchor.min.js></script>
+<link rel=stylesheet href=//use.fontawesome.com/releases/v5.12.0/css/all.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/bootstrap-social.css><link rel=stylesheet href=/css/main.css><link rel=stylesheet href=/css/academicons.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel=stylesheet href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name=generator content="Jekyll v4.3.2"><meta property="og:title" content="The Execution Lifecycle of a Java Application"><meta name=author content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name=description content="This blog post describes in details what happens when executing a Java application. After reading this post, you will understand the execution lifecycle of a Java application and the activities performed by the JVM during the execution phase."><meta property="og:description" content="This blog post describes in details what happens when executing a Java application. After reading this post, you will understand the execution lifecycle of a Java application and the activities performed by the JVM during the execution phase."><link rel=canonical href=https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html><meta property="og:url" content="https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2022/statue_cover.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2022-10-20T00:00:00-07:00"><meta name=twitter:card content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2022/statue_cover.jpg"><meta property="twitter:title" content="The Execution Lifecycle of a Java Application"><meta name=twitter:site content="@cesarsotovalero"><meta name=twitter:creator content="@César Soto Valero"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"César Soto Valero","url":"https://www.cesarsotovalero.net/about-me"},"dateModified":"2025-07-29T11:52:25-07:00","datePublished":"2022-10-20T00:00:00-07:00","description":"This blog post describes in details what happens when executing a Java application. After reading this post, you will understand the execution lifecycle of a Java application and the activities performed by the JVM during the execution phase.","headline":"The Execution Lifecycle of a Java Application","image":"https://www.cesarsotovalero.net/img/posts/2022/statue_cover.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024.jpg"},"name":"César Soto Valero"},"url":"https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html"}</script><script type=text/x-mathjax-config> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+   </script><script type=text/x-mathjax-config>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+   </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type=text/javascript></script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class=navbar-toggle type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id=navbarSupportedContent><ul class="navigation list-inline text-center footer-links" id=black-icons><li class="nav-item navbar-custom" title=Home><a id=navbar-brand href=https://www.cesarsotovalero.net>Home</a></li><li class="nav-item navbar-custom"><a href=/blog>Blog</a></li><li class="nav-item navbar-custom"><a href=/linkedin>LinkedIn</a></li><li class="nav-item navbar-custom"><a href=/youtube>YouTube</a></li><li class="nav-item navbar-custom"><a href=/podcasts>Podcasts</a></li><li class="nav-item navbar-custom"><a href=/talks>Talks</a></li><li class="nav-item navbar-custom"><a href=/about-me>About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href=# id=theme-toggle onclick=modeSwitcher() style=cursor:pointer></a></li></ul></div></nav><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class=header-image style=padding-left:15px><div class="row justify-content-center" style=margin-right:0;margin-left:0></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><h1 class=no-anchor>The Execution Lifecycle of a Java Application</h1><h2 class=post-subheading>Or... what happens when you run a Java program?</h2><div class="container flex-container"><a href=https://www.cesarsotovalero.net/about-me><img class=avatar-img-small src=/img/pages/cesar/avatar-icon-2024.jpg alt="César Soto Valero" id=meta-img></a><div class=flex-item><span class=post-meta>Posted on October 20, 2022</span><div><span class=post-meta title="Estimated read time"><svg id="i-clock" viewbox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg> 19 mins read</span>
+<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>java</span></div></div></div><div class=flex-item><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style=margin-left:0><section id=share-section><script type=text/javascript src=https://storage.ko-fi.com/cdn/widget/Widget_2.js></script><script type=text/javascript>kofiwidget2.init('Support this blog','#7aa4d1','G2G3CRPPI'),kofiwidget2.draw()</script></section></div></div></div><div class=cesarcarbon id=cesarcarbonads-post><script async type=text/javascript src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id=_carbonads_js></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"><ol id=toc class=section-nav><li class="toc-entry toc-h1"><a href=#execution-lifecycle>Execution Lifecycle</a></li><li class="toc-entry toc-h1"><a href=#conclusion>Conclusion</a></li><li class="toc-entry toc-h1"><a href=#references>References</a></li><li class="toc-entry toc-h1"><a href=#footnotes>Footnotes</a></li></ol></div></div></div></div></header><div class=container><div class=row><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=blog-post><p>If you are reading this post it’s likely that you already know how to <del>write Java</del> code.
+That’s very good for you, I think everyone should know how to code these days (in the same way everyone should know about basic math operations such as +, -, *, and / even though we all have calculators).
+In a <a href=../blog/aot-vs-jit-compilation-in-java.html>previous post</a>, I wrote about how Java code is first “compiled” to bytecode and later interpreted and <strong>executed</strong> by the JVM.
+However, I didn’t explained how the JVM actually perform the bytecode execution.
+The aim of this article is to fill this gap.
+I going to answer the question: What happens when clicking the “execute” button on your favorite IDE?
+After reading this post, you will understand the execution lifecycle of a Java application and the activities performed by the JVM during the execution phase.</p><figure class=jb_picture><img width style=border: src=/assets/resized/statue-640x373.jpg alt="A statue representing learning." data-srcset="/assets/resized/statue-640x373.jpg 640w,/assets/resized/statue-768x448.jpg 768w,/assets/resized/statue-1024x597.jpg 1024w,/assets/resized/statue-1366x797.jpg 1366w,/assets/resized/statue-1600x933.jpg 1600w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>© Deep knowledge is often a requirement for proper execution. Photo taken at <a href=https://goo.gl/maps/F1qSQuaeJ7wdvnnRA>Kungsträdgården metro station</a>.</figcaption></figure><h1 id=execution-lifecycle>Execution Lifecycle</h1><p>The execution lifecycle of a Java application can be broadly divided into three phases:</p><ol><li><strong>Compilation:</strong> The source code of the application is converted into bytecode<sup id=fnref:2><a href=#fn:2 class=footnote rel=footnote role=doc-noteref>1</a></sup> using the “javac” compiler.</li><li><strong>Class Loading:</strong> The bytecode is loaded into memory and the necessary class files are prepared for execution.</li><li><strong>Bytecode Execution:</strong> The JVM executes the bytecode and the program runs.</li></ol><p>The JVM is responsible for managing the last phase.
+This includes loading the bytecode, allocating memory, and converting the bytecode into native machine code.
+In other words, the JVM handles the task of translating the bytecode into machine code that is specific to the target platform and executing it.
+This is a complex process because each microprocessor architecture “understands” a different set of instructions (e.g., x86, ARM, MIPS, PowerPC, etc.).
+The JVM also provides runtime services such as memory management, thread synchronization, and exception handling.</p><p>This post is focused on the <strong>bytecode execution phase</strong>.</p><p>The following activity diagram illustrates what happens during this phase:</p><pre><code class=language-mermaid>%%{init: {'theme':'base'}}%%
+flowchart TB;
+a(["Starting Execution"]) --&gt; b["Loading"]
+b["Loading"] --&gt; c["Linking"]
+c["Linking"] --&gt; d["Initializing"]
+d["Initializing"] --&gt; e["Instantiating"]
+e["Instantiating"] --&gt; f["Finalizing"]  
+f["Finalizing"] --&gt; q{Unloading?}
+q -- Yes --&gt; x(["Program Exit"])
+q -- No --&gt; d["Initializing"]
+</code></pre><p>The following sections give more details on each of the activities that occur during the bytecode execution phase.</p><h2 id=loading>Loading</h2><p>Loading refers to the process of finding the binary form of a class or interface (i.e., a <code class="language-plaintext highlighter-rouge">class</code> file format) with a particular name and constructing a <code class="language-plaintext highlighter-rouge">Class</code> object from that binary form.
+The JVM uses a <a href=https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ClassLoader.html>ClassLoader</a> to find the binary representation of <code class="language-plaintext highlighter-rouge">Main</code>.
+The <code class="language-plaintext highlighter-rouge">ClassLoader</code> class and its subclasses implement the loading process.
+The method <code class="language-plaintext highlighter-rouge">defineClass</code> is called to construct <code class="language-plaintext highlighter-rouge">Class</code> objects from binary representation of the class file format.</p><p>JVM provides two types of class loaders: a built-in class loader called the <strong>bootstrap class loader</strong>, which loads the core Java classes from the <code class="language-plaintext highlighter-rouge">rt.jar</code> file; and the <strong>extension class loader</strong>, which loads classes from the <code class="language-plaintext highlighter-rouge">ext</code> directory.
+In addition, <strong>application class loaders</strong> can be used to load classes from other locations, such as the classpath or a remote server.
+The later are customized subclasses of <code class="language-plaintext highlighter-rouge">ClassLoader</code> that can load classes via the <code class="language-plaintext highlighter-rouge">java.lang.Class</code> instance.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>CustomClassLoader</span> <span class=kd>extends</span> <span class=nc>ClassLoader</span> <span class=o>{</span>
+  <span class=kd>public</span> <span class=nf>CustomClassLoader</span><span class=o>(</span><span class=nc>ClassLoader</span> <span class=n>parent</span><span class=o>)</span> <span class=o>{</span>
+    <span class=kd>super</span><span class=o>(</span><span class=n>parent</span><span class=o>);</span>
+  <span class=o>}</span>
+  <span class=c1>// Method to load a class given its name</span>
+  <span class=kd>public</span> <span class=nc>Class</span><span class=o>&lt;?&gt;</span> <span class=n>loadClass</span><span class=o>(</span><span class=nc>String</span> <span class=n>name</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>ClassNotFoundException</span> <span class=o>{</span>
+    <span class=k>if</span> <span class=o>(!</span><span class=n>name</span><span class=o>.</span><span class=na>startsWith</span><span class=o>(</span><span class=s>"com.example"</span><span class=o>))</span> <span class=o>{</span>
+      <span class=c1>// Delegate to the parent class loader</span>
+      <span class=k>return</span> <span class=kd>super</span><span class=o>.</span><span class=na>loadClass</span><span class=o>(</span><span class=n>name</span><span class=o>);</span>
+      <span class=o>}</span>
+    <span class=c1>// The class name does start with "com.example", construct the file name</span>
+    <span class=nc>String</span> <span class=n>fileName</span> <span class=o>=</span> <span class=n>name</span><span class=o>.</span><span class=na>substring</span><span class=o>(</span><span class=n>name</span><span class=o>.</span><span class=na>lastIndexOf</span><span class=o>(</span><span class=sc>'.'</span><span class=o>)</span> <span class=o>+</span> <span class=mi>1</span><span class=o>)</span> <span class=o>+</span> <span class=s>".class"</span><span class=o>;</span>
+    <span class=c1>// Try to open an InputStream for the file</span>
+    <span class=nc>InputStream</span> <span class=n>inputStream</span> <span class=o>=</span> <span class=n>getClass</span><span class=o>().</span><span class=na>getResourceAsStream</span><span class=o>(</span><span class=n>fileName</span><span class=o>);</span>
+    <span class=c1>// If the stream is null, throw a ClassNotFoundException</span>
+    <span class=k>if</span> <span class=o>(</span><span class=n>inputStream</span> <span class=o>==</span> <span class=kc>null</span><span class=o>)</span> <span class=o>{</span>
+      <span class=k>throw</span> <span class=k>new</span> <span class=nf>ClassNotFoundException</span><span class=o>();</span>
+    <span class=o>}</span>
+    <span class=k>try</span> <span class=o>{</span>
+      <span class=c1>// Create a byte array to hold the contents of the file</span>
+      <span class=kt>byte</span><span class=o>[]</span> <span class=n>bytes</span> <span class=o>=</span> <span class=k>new</span> <span class=kt>byte</span><span class=o>[</span><span class=n>inputStream</span><span class=o>.</span><span class=na>available</span><span class=o>()];</span>
+      <span class=c1>// Read the bytes from the input stream</span>
+      <span class=n>inputStream</span><span class=o>.</span><span class=na>read</span><span class=o>(</span><span class=n>bytes</span><span class=o>);</span>
+      <span class=c1>// Define the class using the class name, the byte array, and the number of bytes</span>
+      <span class=k>return</span> <span class=nf>defineClass</span><span class=o>(</span><span class=n>name</span><span class=o>,</span> <span class=n>bytes</span><span class=o>,</span> <span class=mi>0</span><span class=o>,</span> <span class=n>bytes</span><span class=o>.</span><span class=na>length</span><span class=o>);</span>
+    <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=nc>IOException</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+      <span class=k>throw</span> <span class=k>new</span> <span class=nf>ClassNotFoundException</span><span class=o>();</span>
+    <span class=o>}</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>This class extends the <code class="language-plaintext highlighter-rouge">ClassLoader</code> class and overrides its <code class="language-plaintext highlighter-rouge">loadClass</code> method to provide custom behavior for loading classes.
+It first checks if the class name starts with “com.example”, and if it does not, it delegates to the parent class loader.
+If the class name does start with “com.example”, it constructs the file name and tries to open an <code class="language-plaintext highlighter-rouge">InputStream</code> for it.
+If it succeeds, it reads the bytes from the input stream and calls the <code class="language-plaintext highlighter-rouge">defineClass</code> method to define the class. If it fails, it throws a <code class="language-plaintext highlighter-rouge">ClassNotFoundException</code>.</p><p>In summary, the class loading process performs these three functions:</p><ul><li>Create a binary stream of data from the class file</li><li>Parse the binary data according to the internal data structure</li><li>Create an instance of <code class="language-plaintext highlighter-rouge">java.lang.Class</code></li></ul><p>When this is done, the class instance is ready for linking.</p><h2 id=linking>Linking</h2><p>Linking refers to the process of taking a binary form of a class or interface and combining it into the runtime state of the JVM, so that it can be executed.
+Linking involves three steps: verification of the binary representation, preparation of a class of interface, and (optionally) resolution of symbolic references.</p><ol><li><strong>Verification:</strong> checks that the loaded representation of a class is well-formed, with a proper symbol table. It also checks that the code that implements the class obeys the semantic requirements of the Java programming languague and the JVM. For example, it checks that every instruction has a valid operation code; that every branch instruction branches to the start of some other instruction, rather than into the middle of an instruction; that every method has a correct signature.</li><li><strong>Preparation:</strong> involves creating the <code class="language-plaintext highlighter-rouge">static</code> fields (class variables and constants) for a class or interface and initializings such fields to the default values. This involves allocation of static storage and any data structures that are used internally by the implementation of the JVM, such as method tables.<sup id=fnref:1><a href=#fn:1 class=footnote rel=footnote role=doc-noteref>2</a></sup></li><li><strong>Resolution:</strong> is the process of checking symbolic references from a class to other classes and interfaces, by loading the other classes and interfaces that are mentioned, and checking that the references are correct.</li></ol><blockquote><p>“During the static linkage in simple implementations of the C language, a compiled program contains fully-linked version of the program, including completely resolved links to library routines used by the program.
+Copies of these library routines are included in the <code class="language-plaintext highlighter-rouge">a.out</code> file.
+In Java, instead, symbolic references are resolved only when they are actively used (i.e., lazy form of resolution).
+For example, if a class has several symbolic references to another class, then the references might be resolved one at a time, as they are used, or perhaps not at all, if these references were never used during execution of a program.”</p></blockquote><p>In summary, the linking process involves three phases:</p><ul><li>Verification</li><li>Preparation</li><li>Resolution (optional)</li></ul><p>When this is done, the classes are ready for initialization.</p><h2 id=initializing>Initializing</h2><p>Initialization of a class consists of executing its static initializers and the initializers for <code class="language-plaintext highlighter-rouge">static</code> fields (class variables) declared in the class.
+The static initializers are executed in the order that they appear in the source code.</p><p>Consider the following code example, when the JVM initializes the <code class="language-plaintext highlighter-rouge">Main</code> class, it first initializes all of its superclasses, starting with <code class="language-plaintext highlighter-rouge">Object</code>.
+Since <code class="language-plaintext highlighter-rouge">Object</code> has no superclass, the recursion stops there.
+Then, the JVM initializes <code class="language-plaintext highlighter-rouge">Main</code> by executing the class variable initializers and static initializers in the order that they appear in the source code.
+In this example, the class variable initializer for <code class="language-plaintext highlighter-rouge">x</code> is executed first, followed by the <code class="language-plaintext highlighter-rouge">static</code> initializer block, and finally the class variable initializer for <code class="language-plaintext highlighter-rouge">z</code>.
+After the class is fully initialized, the <code class="language-plaintext highlighter-rouge">main</code> method can be executed.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class=code><pre><span class=kd>class</span> <span class=nc>Main</span> <span class=kd>extends</span> <span class=nc>Object</span> <span class=o>{</span>
+  <span class=c1>// Class variable initializers and static initializers are executed in this order</span>
+  <span class=kd>static</span> <span class=kt>int</span> <span class=n>x</span> <span class=o>=</span> <span class=mi>1</span><span class=o>;</span>  <span class=c1>// Initializer for static field x</span>
+  <span class=kd>static</span> <span class=kt>int</span> <span class=n>y</span><span class=o>;</span>  <span class=c1>// No initializer for static field y</span>
+  <span class=c1>// Static initializer</span>
+  <span class=kd>static</span> <span class=o>{</span>
+    <span class=n>y</span> <span class=o>=</span> <span class=n>x</span> <span class=o>+</span> <span class=mi>1</span><span class=o>;</span>
+  <span class=o>}</span>
+  <span class=kd>static</span> <span class=kt>int</span> <span class=n>z</span> <span class=o>=</span> <span class=n>x</span> <span class=o>+</span> <span class=n>y</span><span class=o>;</span>  <span class=c1>// Initializer for static field z</span>
+  <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=o>(</span><span class=nc>String</span><span class=o>[]</span> <span class=n>args</span><span class=o>)</span> <span class=o>{</span>
+    <span class=c1>// Main method is executed after the class is initialized</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><aside class=quote><em>“In Java, superclasses are initialized before subclasses.”</em></aside><p>In general, initialization of a class or interface <code class="language-plaintext highlighter-rouge">T</code> occurs when any of the following circumstances occurs:</p><ul><li>An instance of <code class="language-plaintext highlighter-rouge">T</code> is created</li><li>A static method of <code class="language-plaintext highlighter-rouge">T</code> is invoked</li><li>A static field of <code class="language-plaintext highlighter-rouge">T</code> is assigned</li><li>A static field of <code class="language-plaintext highlighter-rouge">T</code> is used and the field is not a constant field</li><li>Also note that invocation of a method in a class via reflection causes initialization of the class</li></ul><p>Once all classes are initialized, the JVM proceeds to instantiate the classes.</p><h2 id=instantiating>Instantiating</h2><p>A new class instance is explicitly created when evaluation of a class instance creation expression is performed (e.g., when using the <code class="language-plaintext highlighter-rouge">new</code> operator).</p><p>A class instance may be implicitly created when:</p><ul><li>Loading a class or interface that contains a string literal or a text block may create a new <code class="language-plaintext highlighter-rouge">String</code> object</li><li>Execution of an operation that causes boxing conversion may create a new object of a wrapper class</li><li>Execution of a string concatenation operation may create a new <code class="language-plaintext highlighter-rouge">String</code> object</li><li>Evaluation of a method reference expression or a lambda expression may create a new object of a functional interface</li></ul><p>Here’s an example of creating a new instance of the class <code class="language-plaintext highlighter-rouge">Point</code>:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=nc>Point</span> <span class=n>magicPoint</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>Point</span><span class=o>(</span><span class=mi>42</span><span class=o>,</span> <span class=mi>42</span><span class=o>);</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>During instantiation, the following steps are performed:</p><ul><li>Memory is allocated on the heap to hold the new object</li><li>The class’s constructor is called to initialize the new object</li><li>The reference to the new object is returned</li></ul><h2 id=finalizing>Finalizing</h2><p>Finalization is the process of cleaning up the resources held by an object and preparing it for garbage collection.
+The class <code class="language-plaintext highlighter-rouge">Object</code> defines a method <code class="language-plaintext highlighter-rouge">finalize</code> that is called by the garbage collector when an object is about to be reclaimed.</p><p>The JVM defines a <code class="language-plaintext highlighter-rouge">finalize</code> method in the <code class="language-plaintext highlighter-rouge">Object</code> class, which can be overridden by subclasses to perform any necessary cleanup actions before the object is garbage collected.
+Here is an example of a class that overrides the finalize method to delete a file when the <code class="language-plaintext highlighter-rouge">TempFile</code> object is garbage collected:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>TempFile</span> <span class=o>{</span>
+  <span class=kd>private</span> <span class=nc>File</span> <span class=n>file</span><span class=o>;</span>
+  <span class=kd>public</span> <span class=nf>TempFile</span><span class=o>(</span><span class=nc>String</span> <span class=n>filename</span><span class=o>)</span> <span class=o>{</span>
+    <span class=n>file</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>File</span><span class=o>(</span><span class=n>filename</span><span class=o>);</span>
+  <span class=o>}</span>
+  <span class=nd>@Override</span>
+  <span class=kd>protected</span> <span class=kt>void</span> <span class=nf>finalize</span><span class=o>()</span> <span class=kd>throws</span> <span class=nc>Throwable</span> <span class=o>{</span>
+    <span class=c1>// Delete the file when the TempFile object is garbage collected</span>
+    <span class=n>file</span><span class=o>.</span><span class=na>delete</span><span class=o>();</span>
+    <span class=kd>super</span><span class=o>.</span><span class=na>finalize</span><span class=o>();</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>The previous example can be useful if you want to ensure that temporary files are always deleted when they are no longer needed.
+It’s important to note that the <code class="language-plaintext highlighter-rouge">finalize</code> method is not guaranteed to be called, and it should not be relied upon for important tasks.
+It is simply a means of performing cleanup actions before an object is garbage collected.</p><h2 id=unloading>Unloading</h2><p>Unloading refers to the process of removing a class or interface from the runtime state of the JVM (e.g., when its defining class loader is reclaimed by the garbage collector).
+Class unloading reduces memory use.
+Consequently, this optimization is only significant for applications that load large numbers of classes and interfaces, and that stop to use them after some time.</p><p>The following code shows an example of user-defined garbage collection.
+Note that the class <code class="language-plaintext highlighter-rouge">LargeClass</code> has a large array of integers that consume a lot of memory:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class=code><pre><span class=kn>import</span> <span class=nn>java.lang.ref.WeakReference</span><span class=o>;</span>
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>LargeClass</span> <span class=o>{</span>
+  <span class=c1>// A large array of integers that consumes a lot of memory</span>
+  <span class=kd>private</span> <span class=kt>int</span><span class=o>[]</span> <span class=n>data</span> <span class=o>=</span> <span class=k>new</span> <span class=kt>int</span><span class=o>[</span><span class=nc>Integer</span><span class=o>.</span><span class=na>MAX</span><span class=o>];</span>
+  <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=o>(</span><span class=nc>String</span><span class=o>[]</span> <span class=n>args</span><span class=o>)</span> <span class=o>{</span>
+    <span class=c1>// Create a LargeClass object and hold a weak reference to it</span>
+    <span class=nc>LargeClass</span> <span class=n>largeObject</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>LargeClass</span><span class=o>();</span>
+    <span class=nc>WeakReference</span><span class=o>&lt;</span><span class=nc>LargeClass</span><span class=o>&gt;</span> <span class=n>weakRef</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>WeakReference</span><span class=o>&lt;&gt;(</span><span class=n>largeObject</span><span class=o>);</span>
+    <span class=n>largeObject</span> <span class=o>=</span> <span class=kc>null</span><span class=o>;</span>  <span class=c1>// largeObject is no longer strongly reachable</span>
+    <span class=c1>// Run the garbage collector</span>
+    <span class=nc>System</span><span class=o>.</span><span class=na>gc</span><span class=o>();</span>
+    <span class=c1>// Check if the LargeClass object has been collected</span>
+    <span class=k>if</span> <span class=o>(</span><span class=n>weakRef</span><span class=o>.</span><span class=na>get</span><span class=o>()</span> <span class=o>==</span> <span class=kc>null</span><span class=o>)</span> <span class=o>{</span>
+      <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"The LargeClass object has been collected"</span><span class=o>);</span>
+    <span class=o>}</span> <span class=k>else</span> <span class=o>{</span>
+      <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"The LargeClass object has not been collected"</span><span class=o>);</span>
+    <span class=o>}</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>In the previous example, if the <code class="language-plaintext highlighter-rouge">LargeClass</code> object has been garbage collected, the output will be “The LargeClass object has been collected.” Otherwise, the output will be “The LargeClass object has not been collected.”</p><p>Classes and interfaces loaded by the bootstrap class loader are never unloaded.
+Therefore, in typical standalone applications, class unloading is less common because the system <code class="language-plaintext highlighter-rouge">ClassLoader</code> is usually active for the lifetime of the application, and hence the classes it loads are not unloaded.</p><p>Different from garbage collection, class unloading refers to the removal of a class definition (the <code class="language-plaintext highlighter-rouge">Class</code> object representing the <code class="language-plaintext highlighter-rouge">LargeClass</code>, in this case) and its associated metadata from the JVM’s memory.
+This typically happens when the class loader that loaded the class becomes eligible for garbage collection, as previously explained.
+Class unloading depends on several factors, such as the behavior of the garbage collector and the JVM’s implementation details.</p><p>The following example shows a scenario where class unloading is likely to occur:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr>
+<td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class=code><pre><span class=kn>import</span> <span class=nn>java.lang.ref.WeakReference</span><span class=o>;</span>
+<span class=kn>import</span> <span class=nn>java.net.URL</span><span class=o>;</span>
+<span class=kn>import</span> <span class=nn>java.net.URLClassLoader</span><span class=o>;</span>
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>ClassUnloadingExample</span> <span class=o>{</span> 
+  <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=o>(</span><span class=nc>String</span><span class=o>[]</span> <span class=n>args</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>Exception</span> <span class=o>{</span>
+    <span class=c1>// Path to the .class file (make sure this is correctly set)</span>
+    <span class=no>URL</span> <span class=n>classUrl</span> <span class=o>=</span> <span class=k>new</span> <span class=no>URL</span><span class=o>(</span><span class=s>"file:///path/to/LargeClass.class"</span><span class=o>);</span>
+    <span class=c1>// Creating a custom class loader to load "LargeClass"</span>
+    <span class=nc>URLClassLoader</span> <span class=n>customClassLoader</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>URLClassLoader</span><span class=o>(</span><span class=k>new</span> <span class=no>URL</span><span class=o>[]{</span><span class=n>classUrl</span><span class=o>});</span>
+    <span class=c1>// Load "LargeClass" using the custom class loader</span>
+    <span class=nc>Class</span><span class=o>&lt;?&gt;</span> <span class=n>largeClass</span> <span class=o>=</span> <span class=nc>Class</span><span class=o>.</span><span class=na>forName</span><span class=o>(</span><span class=s>"LargeClass"</span><span class=o>,</span> <span class=kc>true</span><span class=o>,</span> <span class=n>customClassLoader</span><span class=o>);</span>
+    <span class=c1>// Create a weak reference to the custom class loader</span>
+    <span class=nc>WeakReference</span><span class=o>&lt;</span><span class=nc>ClassLoader</span><span class=o>&gt;</span> <span class=n>weakClassLoaderRef</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>WeakReference</span><span class=o>&lt;&gt;(</span><span class=n>customClassLoader</span><span class=o>);</span>
+    <span class=c1>// Clear all strong references to the custom class loader and the class</span>
+    <span class=n>customClassLoader</span> <span class=o>=</span> <span class=kc>null</span><span class=o>;</span>
+    <span class=n>largeClass</span> <span class=o>=</span> <span class=kc>null</span><span class=o>;</span>
+    <span class=c1>// Suggesting garbage collection</span>
+    <span class=nc>System</span><span class=o>.</span><span class=na>gc</span><span class=o>();</span>
+    <span class=c1>// Wait a moment to increase the likelihood that GC has run</span>
+    <span class=nc>Thread</span><span class=o>.</span><span class=na>sleep</span><span class=o>(</span><span class=mi>1000</span><span class=o>);</span>
+    <span class=c1>// Check if the custom class loader has been garbage collected</span>
+    <span class=k>if</span> <span class=o>(</span><span class=n>weakClassLoaderRef</span><span class=o>.</span><span class=na>get</span><span class=o>()</span> <span class=o>==</span> <span class=kc>null</span><span class=o>)</span> <span class=o>{</span>
+      <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"Custom class loader has been garbage collected, indicating that LargeClass might have been unloaded"</span><span class=o>);</span>
+    <span class=o>}</span> <span class=k>else</span> <span class=o>{</span>
+      <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"Custom class loader is still in memory"</span><span class=o>);</span>
+    <span class=o>}</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>In the previous example, a custom class loader is used to load <code class="language-plaintext highlighter-rouge">LargeClass.class</code> and then clears all references to that class loader, making it eligible for garbage collection.
+The program then checks whether the custom class loader has been garbage collected by checking the <code class="language-plaintext highlighter-rouge">WeakReference</code>.
+If the <code class="language-plaintext highlighter-rouge">customClassLoader</code> has been collected, it is likely that the class it loaded (<code class="language-plaintext highlighter-rouge">LargeClass</code>) has been unloaded.<sup id=fnref:3><a href=#fn:3 class=footnote rel=footnote role=doc-noteref>3</a></sup></p><h2 id=program-exit>Program Exit</h2><p>Program exit refers to the process of terminating the execution of a program.
+This means that all threads that are not daemon threads are terminated, or some thread invokes the <code class="language-plaintext highlighter-rouge">exit</code> method of the <code class="language-plaintext highlighter-rouge">Runtime</code> class.
+This method halts the JVM and exit with a specified exit code.
+However, the use of this method is restricted by a security manager.
+If a security manager is present and it does not allow the program to exit, the <code class="language-plaintext highlighter-rouge">exit</code> method will throw a <code class="language-plaintext highlighter-rouge">SecurityException</code>.</p><h1 id=conclusion>Conclusion</h1><p>In this article, we took a deeper look at the execution lifecycle of a Java application.
+As discussed, there are many phases that are performed before the typical <code class="language-plaintext highlighter-rouge">main</code> method is executed.
+From loading the class to unloading, the JVM perform a complex series of steps to ensure that the application is executed correctly.
+This knowledge is important for developers, as it helps understanding how the JVM works and how to optimize Java applications.
+I hope you enjoyed this article and learned something new 😎.</p><h1 id=references>References</h1><ul><li><a href=https://docs.oracle.com/javase/specs/jls/se19/jls19.pdf>The Java Language Specification, Java SE 19 Edition</a></li><li><a href=https://dl.acm.org/doi/10.1145/286942.286945><img class=emoji title=:globe_with_meridians: alt=:globe_with_meridians: src=https://github.githubassets.com/images/icons/emoji/unicode/1f310.png height=20 width=20> Dynamic Class Loading in the Java Virtual Machine</a></li></ul><h1 id=footnotes>Footnotes</h1><div class=footnotes role=doc-endnotes><ol><li id=fn:2><p>The bytecode is a low-level code that can be run on any Java Virtual Machine (JVM). <a href=#fnref:2 class=reversefootnote role=doc-backlink>↩</a></p></li><li id=fn:1><p>The method table is an array of pointers to the data for each instance method that can be invoked on objects of that class. <a href=#fnref:1 class=reversefootnote role=doc-backlink>↩</a></p></li><li id=fn:3><p>This example is not guaranteed to demonstrate class unloading every time it is run, as garbage collection and class unloading depend on several factors and JVM internals. <a href=#fnref:3 class=reversefootnote role=doc-backlink>↩</a></p></li></ol></div></article><ul class="pager blog-pager"><li class=previous><a href=/blog/on-the-parkinson-law-of-triviality-for-computer-science-researchers.html data-toggle=tooltip data-placement=top title="On the Parkinson's Law of Triviality for Computer Science Researchers">← Previous Post</a></li><li class=next><a href=/blog/the-true-value-of-attending-academic-conferences.html data-toggle=tooltip data-placement=top title="The True Value of Attending Academic Conferences">Next Post →</a></li></ul><br></div></div></div><script>anchors.options={position:'left'},anchors.add('h1:not(.no-anchor)','h2','h3')</script><div class=container><div class=row><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style=padding-right:15px><div class=flex-container-footer-badges><section class=share-section><a href="https://twitter.com/intent/tweet?text=This+blog+post+describes+in+details+what+happens+when+executing+a+Java+application.+After+reading+this+post%2C+you+will+understand+the+execution+lifecycle+of+a+Java+application+and+the+activities+performed+by+the+JVM+during+the+execution+phase.+https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id=share-twitter class="fab fa-twitter" aria-hidden=true></span>
+<span class=sr-only>Twitter</span></a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id=share-linkedin class="fab fa-linkedin-in" aria-hidden=true></span>
+<span class=sr-only>LinkedIn</span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden=true></span>
+<span class=sr-only>Facebook</span></a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fhow-the-jvm-executes-java-code.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden=true></span>
+<span class=sr-only>Reddit</span></a>
+<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fhow-the-jvm-executes-java-code.html&text=This+blog+post+describes+in+details+what+happens+when+executing+a+Java+application.+After+reading+this+post%2C+you+will+understand+the+execution+lifecycle+of+a+Java+application+and+the+activities+performed+by+the+JVM+during+the+execution+phase." class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
+<span class=sr-only>Telegram</span></a>
+<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fhow-the-jvm-executes-java-code.html&t=The+Execution+Lifecycle+of+a+Java+Application" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
+<span class=sr-only>Hacker News</span></a></section></div><div id=related-posts><hr><h2>Related Posts</h2><div class="panel-deck row"><div class=col-sm-4><div class=panel><a href=/blog/deploying-to-maven-central.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Deploying to Maven Central</h4><div class=date style=margin-bottom:0>Posted on January 6, 2020</div></div><img src=../img/posts/2020/maven_journey_cover.png alt="Deploying to Maven Central"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/the-producer-consumer-pattern-in-java-made-easy.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>The Producer-Consumer Pattern in Java Made Easy</h4><div class=date style=margin-bottom:0>Posted on June 28, 2020</div></div><img src=../img/posts/2020/java_design_patterns_cover.jpg alt="The Producer-Consumer Pattern in Java Made Easy"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/the-fork-join-java-framework.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>The Fork/Join Java framework</h4><div class=date style=margin-bottom:0>Posted on June 5, 2021</div></div><img src=../img/posts/2021/night_tree_cover.jpg alt="The Fork/Join Java framework"></div></a></div></div></div></div><div><div id=giscus-container></div><script src=/js/load-giscus.js></script>
+<script>window.addEventListener('load',loadGiscus)</script></div></div></div></div><script>window.addEventListener('DOMContentLoaded',()=>{const a=new IntersectionObserver(a=>{a.forEach(a=>{const b=a.target.getAttribute('id');a.intersectionRatio>0?document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.add('active'):document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.remove('active')})});document.querySelectorAll('h1[id]').forEach(b=>{a.observe(b)}),document.querySelectorAll('h2[id]').forEach(b=>{a.observe(b)})})</script><footer><div class="container beautiful-jekyll-footer"><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style=text-align:center><div class=flex-container-footer-badges><a href=https://www.linkedin.com/in/cesarsotovalero><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin"></a>
+<a href=https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg><img alt="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black&label=Subscribe"></a>
+<a href=https://github.com/cesarsotovalero><img alt="Follow me on GitHub" src="https://img.shields.io/github/followers/cesarsotovalero?label=Follow%20me"></a></div></div><div class=flex-container-footer-copyright><p class="copyright text-muted">© César Soto Valero  •  2018–2025</p></div></div></div></div></footer><script>typeof jQuery=='undefined'&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src=/js/bootstrap.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/flowtype.js></script>
+<script src=/js/scroll-to-top.js></script>
+<script src=/js/lazysizes.min.js></script>
+<script src=/js/popup-footnotes.js></script>
+<script src=/js/mermaid.min.js></script>
+<script>$(document).ready(function(){mermaid.initialize({startOnLoad:!0,theme:"default"}),window.mermaid.init(void 0,document.querySelectorAll('.language-mermaid'))})</script><script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'),ga('create','UA-107061705-1','auto'),ga('send','pageview')</script><script src=/js/mode-switcher.js></script></body></html>

@@ -1,0 +1,279 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml lang=en-us xml:lang=en-US itemscope itemtype=http://schema.org/WebSite><head><script>(function(){let a=localStorage.getItem('theme');a==='dark'&&document.documentElement.setAttribute('data-theme','dark')})()</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>Inversion of Control and Dependency Injection in Java</title><meta name=keywords content="Spring java framework,Java programming,Design patterns,Inversion of control"><link rel=alternate type=application/rss+xml title="César Soto Valero  César - Computer Scientist" href=https://www.cesarsotovalero.net/feed.xml><script src=https://cdn.jsdelivr.net/npm/typed.js@2.0.12></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel=stylesheet><link rel=apple-touch-icon sizes=180x180 href=../img/favicon/redketchup/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../img/favicon/redketchup/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../img/favicon/redketchup/favicon-16x16.png><link rel=manifest href=../img/favicon/redketchup/site.webmanifest><link id=code rel=stylesheet href=../css/pygment_highlights.css><script src=https://d3js.org/d3.v7.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-107061705-1')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","bs3gcidnol")</script><script src=../js/anchor.min.js></script>
+<link rel=stylesheet href=//use.fontawesome.com/releases/v5.12.0/css/all.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/bootstrap-social.css><link rel=stylesheet href=/css/main.css><link rel=stylesheet href=/css/academicons.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel=stylesheet href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name=generator content="Jekyll v4.3.2"><meta property="og:title" content="Inversion of Control and Dependency Injection in Java"><meta name=author content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name=description content="This blog post explains Inversion of Control and Dependency Injection in Java. These concepts are the backbone of modern enterprise Java frameworks."><meta property="og:description" content="This blog post explains Inversion of Control and Dependency Injection in Java. These concepts are the backbone of modern enterprise Java frameworks."><link rel=canonical href=https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html><meta property="og:url" content="https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2022/universitetet_cover.png"><meta property="og:type" content="article"><meta property="article:published_time" content="2022-04-12T00:00:00-07:00"><meta name=twitter:card content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2022/universitetet_cover.png"><meta property="twitter:title" content="Inversion of Control and Dependency Injection in Java"><meta name=twitter:site content="@cesarsotovalero"><meta name=twitter:creator content="@César Soto Valero"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"César Soto Valero","url":"https://www.cesarsotovalero.net/about-me"},"dateModified":"2025-07-29T11:52:25-07:00","datePublished":"2022-04-12T00:00:00-07:00","description":"This blog post explains Inversion of Control and Dependency Injection in Java. These concepts are the backbone of modern enterprise Java frameworks.","headline":"Inversion of Control and Dependency Injection in Java","image":"https://www.cesarsotovalero.net/img/posts/2022/universitetet_cover.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024.jpg"},"name":"César Soto Valero"},"url":"https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html"}</script><script type=text/x-mathjax-config> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+   </script><script type=text/x-mathjax-config>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+   </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type=text/javascript></script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class=navbar-toggle type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id=navbarSupportedContent><ul class="navigation list-inline text-center footer-links" id=black-icons><li class="nav-item navbar-custom" title=Home><a id=navbar-brand href=https://www.cesarsotovalero.net>Home</a></li><li class="nav-item navbar-custom"><a href=/blog>Blog</a></li><li class="nav-item navbar-custom"><a href=/linkedin>LinkedIn</a></li><li class="nav-item navbar-custom"><a href=/youtube>YouTube</a></li><li class="nav-item navbar-custom"><a href=/podcasts>Podcasts</a></li><li class="nav-item navbar-custom"><a href=/talks>Talks</a></li><li class="nav-item navbar-custom"><a href=/about-me>About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href=# id=theme-toggle onclick=modeSwitcher() style=cursor:pointer></a></li></ul></div></nav><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class=header-image style=padding-left:15px><div class="row justify-content-center" style=margin-right:0;margin-left:0></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><h1 class=no-anchor>Inversion of Control and Dependency Injection in Java</h1><h2 class=post-subheading>The holy grails of modern enterprise Java frameworks</h2><div class="container flex-container"><a href=https://www.cesarsotovalero.net/about-me><img class=avatar-img-small src=/img/pages/cesar/avatar-icon-2024.jpg alt="César Soto Valero" id=meta-img></a><div class=flex-item><span class=post-meta>Posted on April 12, 2022</span><div><span class=post-meta title="Estimated read time"><svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg>&nbsp;14 mins read</span>
+<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>java</span></div></div></div><div class=flex-item><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style=margin-left:0><section id=share-section><script type=text/javascript src=https://storage.ko-fi.com/cdn/widget/Widget_2.js></script><script type=text/javascript>kofiwidget2.init('Support this blog','#7aa4d1','G2G3CRPPI'),kofiwidget2.draw()</script></section></div></div></div><div class=cesarcarbon id=cesarcarbonads-post><script async type=text/javascript src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id=_carbonads_js></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"><ol id=toc class=section-nav><li class="toc-entry toc-h1"><a href=#inversion-of-control-ioc>Inversion of Control (IoC)</a></li><li class="toc-entry toc-h1"><a href=#dependency-injection-di>Dependency Injection (DI)</a></li><li class="toc-entry toc-h1"><a href=#dependency-injection-containers-dic>Dependency Injection Containers (DIC)</a></li><li class="toc-entry toc-h1"><a href=#dic-in-action-the-spring-framework>DIC in Action: The Spring Framework</a></li><li class="toc-entry toc-h1"><a href=#conclusions>Conclusions</a></li><li class="toc-entry toc-h1"><a href=#references>References</a></li><li class="toc-entry toc-h1"><a href=#footnotes>Footnotes</a></li></ol></div></div></div></div></header><div class=container><div class=row><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=blog-post><p>Inversion of Control (IoC) is a programming principle.
+The idea of IoC is delegating the control of parts of our application to a framework that initializes some specific task for us.
+Dependency injection (DI) is a popular <a href=https://martinfowler.com/articles/injection.html>design pattern</a> that applies the IoC principle.
+This pattern was made popular by web frameworks, and today it is widely adopted in enterprise Java applications.
+The DI pattern initializes and wires components from different application layers automatically.
+The first time I saw this pattern was in the Spring Framework.
+It seemed to work like <del>obscure</del> magic to me.
+To shed light on this matter, I write this blog post to explain how IoC and DI work.
+These concepts are the backbone of modern enterprise Java frameworks.</p><figure class=jb_picture><img width style=border: src=/assets/resized/universitetet_small-640x361.jpg alt=TODO data-srcset="/assets/resized/universitetet_small-640x361.jpg 640w,/assets/resized/universitetet_small-768x433.jpg 768w,/assets/resized/universitetet_small-1024x577.jpg 1024w,/assets/resized/universitetet_small-1366x770.jpg 1366w,/assets/resized/universitetet_small-1600x902.jpg 1600w,/assets/resized/universitetet_small-1920x1082.jpg 1920w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>&#169; Creation is all about assembling and initializing existing knowledge. Photo taken at <a href=https://goo.gl/maps/jUmq4jTTe2P4go4g6>Universitetet</a>.</figcaption></figure><h1 id=inversion-of-control-ioc>Inversion of Control (IoC)</h1><p>The IoC principle is all about delegating actions instead of acting ourselves directly.
+In other words, the idea is to invert or redirect the control to an external handler or controller.
+This allows us to avoid dealing with the data directly through <strong>explicit object initialization</strong>.
+Instead, we deal with object composition.</p><p>The following analogy explains the concept:</p><blockquote><p>“Let’s say that we have a meeting in a hotel.
+We have invited many people, so we have left out many jugs of water and many plastic cups.
+When somebody wants to drink, she fills a cup, drinks the water and throws the cup on the floor.
+After an hour or so we have a floor covered with plastic cups and water.
+Let’s try that after inverting the control.
+Imagine the same meeting in the same place, but instead of plastic cups we now have a waiter with just one glass cup.
+When somebody wants to drink, the waiter gets one glass for them.
+They drink it and return it to the waiter.
+Leaving aside the question of the hygiene, the use of a waiter (process control) is much more effective and economic.
+And this is exactly what IoC does.
+Instead of letting the application create what it needs using the <code class="language-plaintext highlighter-rouge">new</code> keyword (i.e., taking a plastic cup), IoC offers the application the same cup/instance of the needed object (i.e., glass of water).” – <cite>Brilliant answer from <a href="https://stackoverflow.com/questions/3058/what-is-inversion-of-control?page=1&tab=modifieddesc#tab-top">Stack Overflow</a></cite></p></blockquote><p>For example, imagine that an application has a text editor component for which we want to provide spell checking capabilities.
+The following code shows the <del>imperative</del> standard way of doing it:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre><span class=nc>SpellChecker</span> <span class=n>sc</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>SpellChecker</span><span class=o>();</span>
+<span class=nc>TextEditor</span> <span class=n>te</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>TextEditor</span><span class=o>();</span>
+<span class=n>sc</span><span class=o>.</span><span class=na>checkSpelling</span><span class=o>(</span><span class=n>te</span><span class=o>.</span><span class=na>getText</span><span class=o>());</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>In the previous code, we retrieve the text from <code class="language-plaintext highlighter-rouge">TextEditor</code>, and then we check the spelling via the <code class="language-plaintext highlighter-rouge">SpellChecker</code> object:</p><p>In contrast, another way is to use the IoC principle.
+In this case, we initialize the <code class="language-plaintext highlighter-rouge">TextEditor</code> object with the desired <code class="language-plaintext highlighter-rouge">SpellChecker</code>.
+Thus, the <code class="language-plaintext highlighter-rouge">checkSpelling</code> task is delegated to the <code class="language-plaintext highlighter-rouge">TextEditor</code> object, which uses the <code class="language-plaintext highlighter-rouge">SpellChecker</code> object within the <code class="language-plaintext highlighter-rouge">getText()</code> method.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre><span class=nc>SpellChecker</span> <span class=n>sc</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>SpellChecker</span><span class=o>();</span>
+<span class=nc>TextEditor</span> <span class=n>te</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>TextEditor</span><span class=o>(</span><span class=n>sc</span><span class=o>);</span>
+<span class=n>te</span><span class=o>.</span><span class=na>getText</span><span class=o>();</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>A more elegant way would be to use <a href=https://en.wikipedia.org/wiki/Object_composition>object composition</a> to retrieve the text.
+Below is an example:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+</pre></td><td class=code><pre><span class=k>new</span> <span class=nc>SpellCheckedText</span><span class=o>(</span>
+  <span class=k>new</span> <span class=nf>TextEditor</span><span class=o>(</span>
+    <span class=k>new</span> <span class=nf>SpellChecker</span><span class=o>()</span>
+  <span class=o>)</span> 
+<span class=o>);</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=dependency-injection-di>Dependency Injection (DI)</h1><p>The Dependency Injection (DI) pattern is a more specific implementation of IoC principle.
+It is all about removing dependencies from your code.</p><blockquote><p>“Every DI implementation can be considered IoC, but one should not call it IoC, because implementing Dependency Injection is harder than delegating actions and setting callbacks.”</p></blockquote><p>For example, here is a <code class="language-plaintext highlighter-rouge">TextEditor</code> class that uses a <code class="language-plaintext highlighter-rouge">SpellChecker</code> object:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>TextEditor</span> <span class=o>{</span>
+    <span class=kd>private</span> <span class=nc>SpellChecker</span> <span class=n>sc</span><span class=o>;</span>
+    <span class=kd>public</span> <span class=nf>TextEditor</span><span class=o>()</span> <span class=o>{</span>
+        <span class=k>this</span><span class=o>.</span><span class=na>sc</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>SpellChecker</span><span class=o>();</span>
+    <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>The previous code creates a dependency between the <code class="language-plaintext highlighter-rouge">TextEditor</code> and the <code class="language-plaintext highlighter-rouge">SpellChecker</code>.
+In a DI scenario, we would instead use constructor injection.
+The code looks like this:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>TextEditor</span> <span class=o>{</span>
+    <span class=kd>private</span> <span class=nc>SpellChecker</span> <span class=n>sc</span><span class=o>;</span>
+    <span class=kd>public</span> <span class=nf>TextEditor</span><span class=o>(</span><span class=nc>SpellChecker</span> <span class=n>sc</span><span class=o>)</span> <span class=o>{</span>
+      <span class=c1>// Verify the dependency before allowing construction.</span>
+      <span class=k>if</span> <span class=o>(</span><span class=n>sc</span> <span class=o>==</span> <span class=kc>null</span><span class=o>)</span> <span class=o>{</span>
+        <span class=k>throw</span> <span class=k>new</span> <span class=nf>InvalidParameterException</span><span class=o>(</span><span class=s>"Spell checker must not be null."</span><span class=o>);</span>
+      <span class=o>}</span>
+        <span class=k>this</span><span class=o>.</span><span class=na>sc</span> <span class=o>=</span> <span class=n>sc</span><span class=o>;</span>
+    <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>In the first code example, we are instantiating <code class="language-plaintext highlighter-rouge">SpellChecker</code> in the constructor, which means the <code class="language-plaintext highlighter-rouge">TextEditor</code> class directly depends on the <code class="language-plaintext highlighter-rouge">SpellChecker</code> class.
+In the second code example, we create an abstraction by having the <code class="language-plaintext highlighter-rouge">IocSpellChecker</code> dependency class in <code class="language-plaintext highlighter-rouge">TextEditor</code>’s constructor signature.
+The <code class="language-plaintext highlighter-rouge">TextEditor</code> doesn’t know which <code class="language-plaintext highlighter-rouge">SpellChecker</code> object it should use. It just depends on the <code class="language-plaintext highlighter-rouge">SpellChecker</code> dependency.
+This way, we do not initialize the dependency in the class.
+This allows us to create the dependency and then pass it to the <code class="language-plaintext highlighter-rouge">TextEditor</code> class.
+For example, we can pass a <code class="language-plaintext highlighter-rouge">SpanishSpellSpellChecker</code> object instead as such:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre><span class=nc>SpellChecker</span> <span class=n>esc</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>SpanishSpellChecker</span><span class=o>();</span> <span class=c1>// dependency</span>
+<span class=nc>TextEditor</span> <span class=n>te</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>TextEditor</span><span class=o>(</span><span class=n>esc</span><span class=o>);</span> <span class=c1>// DI</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>The programmer creating the <code class="language-plaintext highlighter-rouge">TextEditor</code> class now has control over which <code class="language-plaintext highlighter-rouge">SpellChecker</code> implementation to use.
+This is possible because we are <strong>injecting the dependency</strong> into the <code class="language-plaintext highlighter-rouge">TextEditor</code> signature at runtime.</p><h1 id=dependency-injection-containers-dic>Dependency Injection Containers (DIC)</h1><p>Dependency Injection Containers (DIC) provide the ability to inject dependencies into classes at runtime.
+<a href=https://github.com/google/guice>Google Guice</a> is a popular DIC.
+In this case, we annotate the constructor with <code class="language-plaintext highlighter-rouge">@Inject</code> and then we pass the dependency to the constructor.
+Below is an example:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class=code><pre><span class=kn>import</span> <span class=nn>javax.inject.Inject</span><span class=o>;</span>
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>TextEditor</span> <span class=o>{</span>
+    <span class=kd>private</span> <span class=nc>SpellChecker</span> <span class=n>sc</span><span class=o>;</span>
+    <span class=nd>@Inject</span>
+    <span class=kd>public</span> <span class=nf>TextEditor</span><span class=o>(</span><span class=nc>SpellChecker</span> <span class=n>sc</span><span class=o>)</span> <span class=o>{</span>
+        <span class=k>this</span><span class=o>.</span><span class=na>sc</span> <span class=o>=</span> <span class=n>sc</span><span class=o>;</span>
+    <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Then, we need to configure the container<sup id=fnref:1><a href=#fn:1 class=footnote rel=footnote role=doc-noteref>1</a></sup> somewhere to inject the dependency at runtime when the application is started:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class=code><pre><span class=nc>Injector</span> <span class=n>inj</span> <span class=o>=</span> <span class=nc>Guice</span><span class=o>.</span><span class=na>createInjector</span><span class=o>(</span>
+  <span class=k>new</span> <span class=nf>AbstractModule</span><span class=o>()</span> <span class=o>{</span>
+    <span class=nd>@Override</span>
+    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>configure</span><span class=o>()</span> <span class=o>{</span>
+      <span class=k>this</span><span class=o>.</span><span class=na>bind</span><span class=o>(</span><span class=nc>SpellChecker</span><span class=o>.</span><span class=na>class</span><span class=o>).</span><span class=na>toInstance</span><span class=o>(</span>
+        <span class=k>new</span> <span class=nf>SpanishSpellChecker</span><span class=o>()</span>
+      <span class=o>);</span>
+    <span class=o>}</span>
+  <span class=o>}</span>
+<span class=o>);</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>As you can see, we do not need to use the <code class="language-plaintext highlighter-rouge">new</code> operator to instantiate <code class="language-plaintext highlighter-rouge">TextEditor</code> like we did before.
+Instead, we should use the injector we just created.
+Here is an example of the application:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>App</span> <span class=o>{</span>
+  <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=o>(</span><span class=nc>String</span><span class=o>...</span> <span class=n>args</span><span class=o>)</span> <span class=o>{</span>
+    <span class=nc>Injection</span> <span class=n>inj</span> <span class=o>=</span> <span class=c1>// as we just did in the previous snippet</span>
+    <span class=nc>TextEditor</span> <span class=n>te</span> <span class=o>=</span> <span class=n>injector</span><span class=o>.</span><span class=na>getInstance</span><span class=o>(</span><span class=nc>TextEditor</span><span class=o>.</span><span class=na>class</span><span class=o>);</span>
+    <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=s>"The text is: "</span> <span class=o>+</span> <span class=n>te</span><span class=o>.</span><span class=na>getText</span><span class=o>());</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Google Guice automatically finds out that to instantiate a <code class="language-plaintext highlighter-rouge">TextEditor</code> it has to provide an argument for its constructor.
+For this, it uses an instance of class <code class="language-plaintext highlighter-rouge">SpanishSpellChecker</code>, which we instantiated in the injector.
+The goal of Guice is alleviating the need for factories and the use of <code class="language-plaintext highlighter-rouge">new</code> in your Java code.</p><h1 id=dic-in-action-the-spring-framework>DIC in Action: The Spring Framework</h1><p><a href=https://spring.io/>Spring</a> is currently the most popular Java web framework.
+It heavily relies on the DI pattern to wire up objects.
+The main advantage of using Spring is separating the object initialization and data wiring from the application business logic.
+In other words, Spring “injects” objects into other objects or “dependencies.”
+This allows for loose coupling of components and moves the responsibility of managing components onto the container.</p><blockquote><p>Those who came from languages such as C and C++ had to deal with the RAII pattern (RAII stands for Resource Acquisition Is Initialization).
+It’s the idea that when you get a resource, you initialize it.
+When you want to use it, you initialize it in place, right?
+And this is good because you want to keep the life of the object, the memory assigned to an object, as small as possible.
+So, if it’s in scope, and you create it, then you can remember to un-allocate it to collect the memory assigned to it.
+This is useful in a language like C++, where you have to do memory management manually.
+But it means that you end up with lots of object creation code and lots of initialization routines right next to the place where you’re using it.</p></blockquote><p>In a server-side application, objects are typically created at once.
+These objects live for as long as the application is running.
+Spring allows avoiding the work of setting up all that initialization logic.
+Moreover, certain configurations might change based on the environment (e.g., development vs. production environments).
+For example, when testing code, you might have mock objects that don’t actually represent pointers to real data sources or web services.
+Thus, the object initialization might be different in some way compared to, for example, the development environment.
+Spring allows to swap out how these different components are initialized.</p><p>These functionalities are provided in Spring through DI.
+We can have all the initialization logic in a single place.<sup id=fnref:2><a href=#fn:2 class=footnote rel=footnote role=doc-noteref>2</a></sup>
+The idea is that you write your code in such a way that you depend on types, but you don’t know (or care) how they are initialized.
+Developers write business logic without bothering about the initialization of the types they use.
+That wiring is done for you automatically.</p><p>Suppose you want to create a REST API that returns a list of customers from a database.
+Each customer has an <code class="language-plaintext highlighter-rouge">id</code> and a <code class="language-plaintext highlighter-rouge">name</code>.
+The Java Bean looks as follows:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre><span class=kd>record</span> <span class=nf>Customer</span><span class=o>(</span><span class=nc>Integer</span> <span class=n>id</span><span class=o>,</span> <span class=nc>String</span> <span class=n>name</span><span class=o>)</span> <span class=o>{}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>We can use Spring out-of-the-box DI support via annotations.
+To do so, we write a <code class="language-plaintext highlighter-rouge">CustomerRestController</code> class annotated with <code class="language-plaintext highlighter-rouge">@Controller</code> that has a <code class="language-plaintext highlighter-rouge">CustomerService</code> dependency.
+The method <code class="language-plaintext highlighter-rouge">getCustomers</code>, implemented in the <code class="language-plaintext highlighter-rouge">CustomerService</code> class, returns the list of customers:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class=code><pre><span class=nd>@Controller</span>
+<span class=nd>@ResponseBody</span>
+<span class=kd>class</span> <span class=nc>CustomerRestController</span> <span class=o>{</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=nc>CustomerService</span> <span class=n>cs</span><span class=o>;</span>
+  <span class=nc>CustomerRestController</span><span class=o>(</span><span class=nc>CustomerService</span> <span class=n>cs</span><span class=o>)</span> <span class=o>{</span>
+    <span class=k>this</span><span class=o>.</span><span class=na>cs</span> <span class=o>=</span> <span class=n>cs</span><span class=o>;</span>
+  <span class=o>}</span>
+  <span class=nd>@GetMapping</span><span class=o>(</span><span class=s>"/customers"</span><span class=o>)</span>
+  <span class=nc>Collection</span><span class=o>&lt;</span><span class=nc>Customer</span><span class=o>&gt;</span> <span class=nf>get</span><span class=o>()</span> <span class=o>{</span>
+    <span class=k>return</span> <span class=k>this</span><span class=o>.</span><span class=na>cs</span><span class=o>.</span><span class=na>getCustomers</span><span class=o>();</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Now let’s create the <code class="language-plaintext highlighter-rouge">CustomerService</code> class.
+We start bar annotating the class with <code class="language-plaintext highlighter-rouge">@Service</code> and <code class="language-plaintext highlighter-rouge">@Transactional</code>. This makes every public method transactional.
+Moreover, the class can be created with a <code class="language-plaintext highlighter-rouge">JdbcTemplate</code> object.
+The method <code class="language-plaintext highlighter-rouge">getCustomers</code> executes a SQL query on the database to return the list of customers:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class=code><pre><span class=nd>@Service</span>
+<span class=nd>@Transactional</span>
+<span class=kd>class</span> <span class=nc>CustomerService</span> <span class=o>{</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=nc>JdbcTemplate</span> <span class=n>jdbct</span><span class=o>;</span>
+  <span class=kd>public</span> <span class=nf>CustomerService</span><span class=o>(</span><span class=nc>JdbcTemplate</span> <span class=n>jdbct</span><span class=o>)</span> <span class=o>{</span>
+    <span class=k>this</span><span class=o>.</span><span class=na>jdbct</span> <span class=o>=</span> <span class=n>jdbct</span><span class=o>;</span>
+  <span class=o>}</span>
+  <span class=nc>Collection</span><span class=o>&lt;</span><span class=nc>Customer</span><span class=o>&gt;</span> <span class=nf>getCustomers</span><span class=o>()</span> <span class=o>{</span>
+    <span class=k>return</span> <span class=k>this</span><span class=o>.</span><span class=na>jdbct</span><span class=o>.</span><span class=na>query</span><span class=o>(</span><span class=s>"select * from customers"</span><span class=o>,</span>
+        <span class=o>(</span><span class=n>rs</span><span class=o>,</span> <span class=n>rowNum</span><span class=o>)</span> <span class=o>-&gt;</span> <span class=k>new</span> <span class=nc>Customer</span><span class=o>(</span><span class=n>rs</span><span class=o>.</span><span class=na>getInt</span><span class=o>(</span><span class=s>"id"</span><span class=o>),</span> <span class=n>rs</span><span class=o>.</span><span class=na>getString</span><span class=o>(</span><span class=s>"name"</span><span class=o>)));</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Now, we can use the <code class="language-plaintext highlighter-rouge">CustomerRestController</code> class to test our application.
+The <code class="language-plaintext highlighter-rouge">@SpringBootApplication</code> annotation tells Spring to create a Spring Boot application:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+</pre></td><td class=code><pre><span class=nd>@SpringBootApplication</span>
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>DemoApplication</span> <span class=o>{</span>
+  <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=o>(</span><span class=nc>String</span><span class=o>[]</span> <span class=n>args</span><span class=o>)</span> <span class=kd>throws</span> <span class=nc>SQLException</span> <span class=o>{</span>
+    <span class=nc>SpringApplication</span><span class=o>.</span><span class=na>run</span><span class=o>(</span><span class=nc>DemoApplication</span><span class=o>.</span><span class=na>class</span><span class=o>,</span> <span class=n>args</span><span class=o>);</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=conclusions>Conclusions</h1><p>The IoC principle and the DI pattern are the backbones of modern enterprise Java frameworks.
+They separate the object creation and data wiring from the business logic.
+This prevents developers from writing repetitive code initialization routines while configuring the application at runtime.</p><p>The Spring framework illustrates the usefulness of DI in Java.
+Spring uses DI to initialize web servers, Java beans, and service objects and wire them together via configuration files (e.g., <code class="language-plaintext highlighter-rouge">.properties</code> files).
+This makes it easier for developers to kickstart a project and swap the scope and functionality of different components at runtime.</p><h1 id=references>References</h1><ul><li><a href=https://martinfowler.com/articles/injection.html>Inversion of Control Containers and the Dependency Injection Pattern</a></li><li><a href=https://www.yegor256.com/2017/05/10/inversion-of-control.html>How Does Inversion of Control Really Work?</a></li><li><a href=https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring>Intro to Inversion of Control and Dependency Injection with Spring</a></li></ul><h1 id=footnotes>Footnotes</h1><div class=footnotes role=doc-endnotes><ol><li id=fn:1><p>Some frameworks even allow us to configure the injector in an XML file. <a href=#fnref:1 class=reversefootnote role=doc-backlink>&#8617;</a></p></li><li id=fn:2><p>Object creation is expensive, so we don’t want to have to instantiate objects each time we use them because that would make our code more convoluted. <a href=#fnref:2 class=reversefootnote role=doc-backlink>&#8617;</a></p></li></ol></div></article><ul class="pager blog-pager"><li class=previous><a href=/blog/aot-vs-jit-compilation-in-java.html data-toggle=tooltip data-placement=top title="AOT vs. JIT Compilation in Java">&larr; Previous Post</a></li><li class=next><a href=/blog/the-dynamic-features-of-java.html data-toggle=tooltip data-placement=top title="The Dynamic Features of Java">Next Post &rarr;</a></li></ul><br></div></div></div><script>anchors.options={position:'left'},anchors.add('h1:not(.no-anchor)','h2','h3')</script><div class=container><div class=row><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style=padding-right:15px><div class=flex-container-footer-badges><section class=share-section><a href="https://twitter.com/intent/tweet?text=This+blog+post+explains+Inversion+of+Control+and+Dependency+Injection+in+Java.+These+concepts+are+the+backbone+of+modern+enterprise+Java+frameworks.+https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id=share-twitter class="fab fa-twitter" aria-hidden=true></span>
+<span class=sr-only>Twitter</span></a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id=share-linkedin class="fab fa-linkedin-in" aria-hidden=true></span>
+<span class=sr-only>LinkedIn</span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/inversion-of-control-and-dependency-injection-in-java.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden=true></span>
+<span class=sr-only>Facebook</span></a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Finversion-of-control-and-dependency-injection-in-java.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden=true></span>
+<span class=sr-only>Reddit</span></a>
+<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Finversion-of-control-and-dependency-injection-in-java.html&text=This+blog+post+explains+Inversion+of+Control+and+Dependency+Injection+in+Java.+These+concepts+are+the+backbone+of+modern+enterprise+Java+frameworks." class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
+<span class=sr-only>Telegram</span></a>
+<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Finversion-of-control-and-dependency-injection-in-java.html&t=Inversion+of+Control+and+Dependency+Injection+in+Java" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
+<span class=sr-only>Hacker News</span></a></section></div><div id=related-posts><hr><h2>Related Posts</h2><div class="panel-deck row"><div class=col-sm-4><div class=panel><a href=/blog/deploying-to-maven-central.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Deploying to Maven Central</h4><div class=date style=margin-bottom:0>Posted on January 6, 2020</div></div><img src=../img/posts/2020/maven_journey_cover.png alt="Deploying to Maven Central"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/the-producer-consumer-pattern-in-java-made-easy.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>The Producer-Consumer Pattern in Java Made Easy</h4><div class=date style=margin-bottom:0>Posted on June 28, 2020</div></div><img src=../img/posts/2020/java_design_patterns_cover.jpg alt="The Producer-Consumer Pattern in Java Made Easy"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/the-fork-join-java-framework.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>The Fork/Join Java framework</h4><div class=date style=margin-bottom:0>Posted on June 5, 2021</div></div><img src=../img/posts/2021/night_tree_cover.jpg alt="The Fork/Join Java framework"></div></a></div></div></div></div><div><div id=giscus-container></div><script src=/js/load-giscus.js></script>
+<script>window.addEventListener('load',loadGiscus)</script></div></div></div></div><script>window.addEventListener('DOMContentLoaded',()=>{const a=new IntersectionObserver(a=>{a.forEach(a=>{const b=a.target.getAttribute('id');a.intersectionRatio>0?document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.add('active'):document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.remove('active')})});document.querySelectorAll('h1[id]').forEach(b=>{a.observe(b)}),document.querySelectorAll('h2[id]').forEach(b=>{a.observe(b)})})</script><footer><div class="container beautiful-jekyll-footer"><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style=text-align:center><div class=flex-container-footer-badges><a href=https://www.linkedin.com/in/cesarsotovalero><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin"></a>
+<a href=https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg><img alt="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black&label=Subscribe"></a>
+<a href=https://github.com/cesarsotovalero><img alt="Follow me on GitHub" src="https://img.shields.io/github/followers/cesarsotovalero?label=Follow%20me"></a></div></div><div class=flex-container-footer-copyright><p class="copyright text-muted">&copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2025</p></div></div></div></div></footer><script>typeof jQuery=='undefined'&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src=/js/bootstrap.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/flowtype.js></script>
+<script src=/js/scroll-to-top.js></script>
+<script src=/js/lazysizes.min.js></script>
+<script src=/js/popup-footnotes.js></script>
+<script src=/js/mermaid.min.js></script>
+<script>$(document).ready(function(){mermaid.initialize({startOnLoad:!0,theme:"default"}),window.mermaid.init(void 0,document.querySelectorAll('.language-mermaid'))})</script><script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'),ga('create','UA-107061705-1','auto'),ga('send','pageview')</script><script src=/js/mode-switcher.js></script></body></html>

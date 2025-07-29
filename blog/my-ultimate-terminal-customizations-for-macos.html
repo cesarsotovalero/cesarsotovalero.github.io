@@ -1,0 +1,254 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml lang=en-us xml:lang=en-US itemscope itemtype=http://schema.org/WebSite><head><script>(function(){let a=localStorage.getItem('theme');a==='dark'&&document.documentElement.setAttribute('data-theme','dark')})()</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>My Ultimate Terminal Customizations for macOS</title><meta name=keywords content="customize command line,beautiful terminal,Oh-my-zsh,Beautiful prompt"><link rel=alternate type=application/rss+xml title="César Soto Valero  César - Computer Scientist" href=https://www.cesarsotovalero.net/feed.xml><script src=https://cdn.jsdelivr.net/npm/typed.js@2.0.12></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel=stylesheet><link rel=apple-touch-icon sizes=180x180 href=../img/favicon/redketchup/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../img/favicon/redketchup/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../img/favicon/redketchup/favicon-16x16.png><link rel=manifest href=../img/favicon/redketchup/site.webmanifest><link id=code rel=stylesheet href=../css/pygment_highlights.css><script src=https://d3js.org/d3.v7.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-107061705-1')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","bs3gcidnol")</script><script src=../js/anchor.min.js></script>
+<link rel=stylesheet href=//use.fontawesome.com/releases/v5.12.0/css/all.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/bootstrap-social.css><link rel=stylesheet href=/css/main.css><link rel=stylesheet href=/css/academicons.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel=stylesheet href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name=generator content="Jekyll v4.3.2"><meta property="og:title" content="My Ultimate Terminal Customizations for macOS"><meta name=author content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name=description content="There is a common belief that top-class software developers can do their job without ever abandoning the terminal. This blog post is a how-to guide for you (and my future self) to configure the terminal in a way so that we will enjoy every command typed on it."><meta property="og:description" content="There is a common belief that top-class software developers can do their job without ever abandoning the terminal. This blog post is a how-to guide for you (and my future self) to configure the terminal in a way so that we will enjoy every command typed on it."><link rel=canonical href=https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html><meta property="og:url" content="https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2022/cheers_ascii_cover.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2022-05-22T00:00:00-07:00"><meta name=twitter:card content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2022/cheers_ascii_cover.jpg"><meta property="twitter:title" content="My Ultimate Terminal Customizations for macOS"><meta name=twitter:site content="@cesarsotovalero"><meta name=twitter:creator content="@César Soto Valero"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"César Soto Valero","url":"https://www.cesarsotovalero.net/about-me"},"dateModified":"2025-07-29T11:52:25-07:00","datePublished":"2022-05-22T00:00:00-07:00","description":"There is a common belief that top-class software developers can do their job without ever abandoning the terminal. This blog post is a how-to guide for you (and my future self) to configure the terminal in a way so that we will enjoy every command typed on it.","headline":"My Ultimate Terminal Customizations for macOS","image":"https://www.cesarsotovalero.net/img/posts/2022/cheers_ascii_cover.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024.jpg"},"name":"César Soto Valero"},"url":"https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html"}</script><script type=text/x-mathjax-config> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+   </script><script type=text/x-mathjax-config>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+   </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type=text/javascript></script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class=navbar-toggle type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id=navbarSupportedContent><ul class="navigation list-inline text-center footer-links" id=black-icons><li class="nav-item navbar-custom" title=Home><a id=navbar-brand href=https://www.cesarsotovalero.net>Home</a></li><li class="nav-item navbar-custom"><a href=/blog>Blog</a></li><li class="nav-item navbar-custom"><a href=/linkedin>LinkedIn</a></li><li class="nav-item navbar-custom"><a href=/youtube>YouTube</a></li><li class="nav-item navbar-custom"><a href=/podcasts>Podcasts</a></li><li class="nav-item navbar-custom"><a href=/talks>Talks</a></li><li class="nav-item navbar-custom"><a href=/about-me>About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href=# id=theme-toggle onclick=modeSwitcher() style=cursor:pointer></a></li></ul></div></nav><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class=header-image style=padding-left:15px><div class="row justify-content-center" style=margin-right:0;margin-left:0></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><h1 class=no-anchor>My Ultimate Terminal Customizations for macOS</h1><h2 class=post-subheading>A guide</h2><div class="container flex-container"><a href=https://www.cesarsotovalero.net/about-me><img class=avatar-img-small src=/img/pages/cesar/avatar-icon-2024.jpg alt="César Soto Valero" id=meta-img></a><div class=flex-item><span class=post-meta>Posted on May 22, 2022</span><div><span class=post-meta title="Estimated read time"><svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg>&nbsp;13 mins read</span>
+<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>productivity</span></div></div></div><div class=flex-item><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style=margin-left:0><section id=share-section><script type=text/javascript src=https://storage.ko-fi.com/cdn/widget/Widget_2.js></script><script type=text/javascript>kofiwidget2.init('Support this blog','#7aa4d1','G2G3CRPPI'),kofiwidget2.draw()</script></section></div></div></div><div class=cesarcarbon id=cesarcarbonads-post><script async type=text/javascript src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id=_carbonads_js></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"><ol id=toc class=section-nav><li class="toc-entry toc-h1"><a href=#iterm2>iTerm2</a></li><li class="toc-entry toc-h1"><a href=#oh-my-zsh>Oh My Zsh</a></li><li class="toc-entry toc-h1"><a href=#tldr>TLDR</a></li><li class="toc-entry toc-h1"><a href=#fig>Fig</a></li><li class="toc-entry toc-h1"><a href=#vim>Vim</a></li><li class="toc-entry toc-h1"><a href=#sdkman>SDKMAN!</a></li><li class="toc-entry toc-h1"><a href=#jenv>jENV</a></li><li class="toc-entry toc-h1"><a href=#jq>Jq</a></li><li class="toc-entry toc-h1"><a href=#bat>Bat</a></li><li class="toc-entry toc-h1"><a href=#trash-cli>Trash-CLI</a></li><li class="toc-entry toc-h1"><a href=#exa>Exa</a></li><li class="toc-entry toc-h1"><a href=#htop>Htop</a></li><li class="toc-entry toc-h1"><a href=#diff-so-fancy>Diff-so-fancy</a></li><li class="toc-entry toc-h1"><a href=#conclusion>Conclusion</a></li><li class="toc-entry toc-h1"><a href=#footnotes>Footnotes</a></li></ol></div></div></div></div></header><div class=container><div class=row><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=blog-post><p>There is a common belief that top-class software developers can do their job without ever abandoning the terminal.
+I think this is true to some extent.
+It is <del>almost</del> impossible to become an outstanding software developer without knowing how to get the most out of the terminal.
+Personally, I treat my <a href=https://en.wikipedia.org/wiki/Bash_(Unix_shell)>Unix shell</a> as a very good friend.<sup id=fnref:1><a href=#fn:1 class=footnote rel=footnote role=doc-noteref>1</a></sup>
+And the terminal for me is the bar where I go with this friend to drink and have a good time.
+As it is more enjoyable drinking with civilized friends in civilized places,<sup id=fnref:2><a href=#fn:2 class=footnote rel=footnote role=doc-noteref>2</a></sup> I prefer visiting a bar that is cozy and invites me to cheer.
+This blog post is a how-to guide for you (and my future self) to configure the terminal in a way so that we will enjoy every <del>drink</del> command typed on it.</p><figure class=jb_picture><img width style=border: src=/assets/resized/cheers_ascii-640x394.png alt="ASCII art displayed on my terminal" data-srcset="/assets/resized/cheers_ascii-640x394.png 640w,/assets/resized/cheers_ascii-768x473.png 768w,/assets/resized/cheers_ascii-1024x631.png 1024w,/assets/resized/cheers_ascii-1366x841.png 1366w,/assets/resized/cheers_ascii-1600x985.png 1600w,/assets/resized/cheers_ascii-1920x1182.png 1920w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>&#169; Cheers! ASCII art displayed on my terminal. Try it installing <a href=https://github.com/TheZoraiz/ascii-image-converter>ascii-image-converter</a> and executing the command: <strong>ascii-image-converter -C http://tinyurl.com/3jez5whs</strong>.</figcaption></figure><h1 id=iterm2>iTerm2</h1><p>The fist step is getting a better terminal app.
+I use <a href=https://iterm2.com/>iTerm2</a>, as a replacement of the standard macOS terminal.</p><p>You can install iTerm2 via <a href=https://brew.sh/>Homebrew</a> using the following command:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>brew <span class=nb>install</span> <span class=nt>--cask</span> iterm2
+</pre></td></tr></tbody></table></code></pre></figure><p>These are my favorite iTerm2 features:</p><ul><li>Opening a new terminal tab in the current window.</li><li>Opening the terminal from another window with a hotkey (I use <code class="language-plaintext highlighter-rouge">^ + ⌘ + T</code>, as by default in Ubuntu).</li><li>Searching with regular expressions.</li><li>Customizing the font (I use <a href=https://github.com/tonsky/FiraCode>Fira Code</a>, 16px).</li></ul><h1 id=oh-my-zsh>Oh My Zsh</h1><p>The second step is getting a better shell.
+I use <a href=https://ohmyz.sh/>Oh My Zsh</a>, as a shell replacement for macOS.
+This is an open-source and popular <code class="language-plaintext highlighter-rouge">zsh</code> configuration manager.
+It offers a tons of themes, functions, helpers, plugins, and other handy features.</p><p>To install Oh My Zsh, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>sh <span class=nt>-c</span> <span class=s2>"</span><span class=si>$(</span>curl <span class=nt>-fsSL</span> https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class=si>)</span><span class=s2>"</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>The configuration file is located at <code class="language-plaintext highlighter-rouge">~/.zshrc</code>.</p><p><strong>Themes</strong>:
+In order to enable a theme, set <code class="language-plaintext highlighter-rouge">ZSH_THEME</code> to the name of the theme in your <code class="language-plaintext highlighter-rouge">~/.zshrc</code>, before sourcing Oh My Zsh.
+I use <code class="language-plaintext highlighter-rouge">ZSH_THEME=gnzh</code>.</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class=code><pre><span class=c># Path to your oh-my-zsh installation.</span>
+<span class=nb>export </span><span class=nv>ZSH</span><span class=o>=</span><span class=s2>"/Users/cesarsv/.oh-my-zsh"</span>
+
+<span class=c># Set name of the theme to load --- if set to "random", it will</span>
+<span class=c># load a random theme each time oh-my-zsh is loaded, in which case,</span>
+<span class=c># to know which specific one was loaded, run: echo $RANDOM_THEME</span>
+<span class=c># See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes</span>
+<span class=sb>`</span><span class=nv>ZSH_THEME</span><span class=o>=</span><span class=s2>"gnzh"</span><span class=sb>`</span>
+
+<span class=nb>source</span> <span class=nv>$ZSH</span>/oh-my-zsh.sh
+</pre></td></tr></tbody></table></code></pre></figure><p>The <code class="language-plaintext highlighter-rouge">gnzh</code> theme is located by default in <code class="language-plaintext highlighter-rouge">~/.oh-my-zsh/themes/gnzh.zsh-theme</code>.
+Here’s the full file that I use:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+</pre></td><td class=code><pre>setopt prompt_subst
+
+<span class=o>()</span> <span class=o>{</span>
+
+<span class=nv>GIT_PROMPT</span><span class=o>=</span><span class=s1>'$(git_super_status)'</span>
+<span class=nb>local </span>PR_USER PR_USER_OP PR_PROMPT PR_HOST
+
+<span class=c># Check the UID</span>
+<span class=k>if</span> <span class=o>[[</span> <span class=nv>$UID</span> <span class=nt>-ne</span> 0 <span class=o>]]</span><span class=p>;</span> <span class=k>then</span> <span class=c># normal user</span>
+   <span class=nv>PR_USER</span><span class=o>=</span><span class=s1>'%F{green}%n%f'</span>
+   <span class=nv>PR_USER_OP</span><span class=o>=</span><span class=s1>'%F{green}%#%f'</span>
+   <span class=nv>PR_PROMPT</span><span class=o>=</span><span class=s1>'%f➤ %f'</span>
+<span class=k>else</span> <span class=c># root</span>
+   <span class=nv>PR_USER</span><span class=o>=</span><span class=s1>'%F{red}%n%f'</span>
+   <span class=nv>PR_USER_OP</span><span class=o>=</span><span class=s1>'%F{red}%#%f'</span>
+   <span class=nv>PR_PROMPT</span><span class=o>=</span><span class=s1>'%F{red}➤ %f'</span>
+<span class=k>fi</span>
+
+<span class=c># Check if we are on SSH or not</span>
+<span class=k>if</span> <span class=o>[[</span> <span class=nt>-n</span> <span class=s2>"</span><span class=nv>$SSH_CLIENT</span><span class=s2>"</span>  <span class=o>||</span>  <span class=nt>-n</span> <span class=s2>"</span><span class=nv>$SSH2_CLIENT</span><span class=s2>"</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then
+   </span><span class=nv>PR_HOST</span><span class=o>=</span><span class=s1>'%F{red}%M%f'</span> <span class=c># SSH</span>
+<span class=k>else
+   </span><span class=nv>PR_HOST</span><span class=o>=</span><span class=s1>'%F{green}%M%f'</span> <span class=c># no SSH</span>
+<span class=k>fi
+
+</span><span class=nb>local </span><span class=nv>return_code</span><span class=o>=</span><span class=s2>"%(?..%F{red}%? ↵%f)"</span>
+
+<span class=nb>local </span><span class=nv>user_host</span><span class=o>=</span><span class=s2>"</span><span class=k>${</span><span class=nv>PR_USER</span><span class=k>}</span><span class=s2>%F{cyan}@</span><span class=k>${</span><span class=nv>PR_HOST</span><span class=k>}</span><span class=s2>"</span>
+<span class=nb>local </span><span class=nv>current_dir</span><span class=o>=</span><span class=s2>"%B%F{blue}%~%f%b"</span>
+
+<span class=nv>PROMPT</span><span class=o>=</span><span class=s2>"╭─</span><span class=k>${</span><span class=nv>user_host</span><span class=k>}</span><span class=s2> </span><span class=k>${</span><span class=nv>current_dir</span><span class=k>}</span><span class=s2> "</span>%F<span class=nv>$FG</span><span class=o>[</span>240]<span class=se>\$</span><span class=o>(</span>jenv_prompt_info<span class=o>)</span>%f<span class=s2>" </span><span class=nv>$GIT_PROMPT</span><span class=s2>
+╰─</span><span class=nv>$PR_PROMPT</span><span class=s2> "</span>
+<span class=nv>RPROMPT</span><span class=o>=</span><span class=s2>"</span><span class=k>${</span><span class=nv>return_code</span><span class=k>}</span><span class=s2>"</span>
+
+<span class=nv>ZSH_THEME_JENV_PROMPT_PREFIX</span><span class=o>=</span><span class=s2>"%F{red}‹"</span>
+<span class=nv>ZSH_THEME_JENV_PROMPT_SUFFIX</span><span class=o>=</span><span class=s2>"›%f"</span>
+
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>Note that I add <code class="language-plaintext highlighter-rouge">jenv_prompt_info</code> in line <code class="language-plaintext highlighter-rouge">#31</code> to show the Java version that I’m currently using directly in the prompt.
+You can show the version of other programming languages as well, here is <a href=https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/prompt_info_functions.zsh#L14-L21>the list of available options</a>.</p><p>Also note that I customize the colors via <code class="language-plaintext highlighter-rouge">$FG[240]</code>, see an explanation <a href=https://dev.to/yujinyuz/custom-colors-in-oh-my-zsh-themes-4h13>here</a>.
+I use <a href=https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git-prompt/README.md>git-prompt</a> via the global variable <code class="language-plaintext highlighter-rouge">$GIT_PROMPT</code> to show the status of the current Git repository when applicable.</p><p><strong>Plugins</strong>:
+Oh My Zsh has a vast list of awesome <a href=https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins>plugins</a>.
+To use a plugin, add the name of the plugin in the <code class="language-plaintext highlighter-rouge">~/.zshrc</code> file.</p><p>Here’s an example:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class=code><pre><span class=c># Path to your oh-my-zsh installation.</span>
+<span class=nb>export </span><span class=nv>ZSH</span><span class=o>=</span><span class=s2>"/Users/cesarsv/.oh-my-zsh"</span>
+
+<span class=c># Which plugins would you like to load?</span>
+<span class=c># Standard plugins can be found in $ZSH/plugins/</span>
+<span class=c># Custom plugins may be added to $ZSH_CUSTOM/plugins/</span>
+<span class=c># Example format: plugins=(rails git textmate ruby lighthouse)</span>
+<span class=c># Add wisely, as too many plugins slow down shell startup.</span>
+<span class=nv>plugins</span><span class=o>=(</span>
+   git-prompt
+   zsh-syntax-highlighting
+   zsh-autosuggestions
+   aliases
+   mvn
+   jenv
+   sdk
+   vscode
+<span class=o>)</span>
+
+<span class=nb>source</span> <span class=nv>$ZSH</span>/oh-my-zsh.sh
+</pre></td></tr></tbody></table></code></pre></figure><p>These are my favorite Oh My Zsh plugins:</p><ul><li><a href=https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git-prompt/README.md>git-prompt</a>: Displays information about the current git repository. In particular: the branch name, difference with remote branch, number of files staged or changed, etc.</li><li><a href=https://github.com/zsh-users/zsh-syntax-highlighting>zsh-syntax-highlighting</a>: Provides syntax highlighting for the shell zsh.</li><li><a href=https://github.com/zsh-users/zsh-autosuggestions>zsh-autosuggestions</a>: Suggests commands as you type based on history and completions.</li><li><a href=https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/aliases/README.md>aliases</a>: Lists the shortcuts that are currently available based on the plugins you have enabled.</li><li><a href=https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/mvn/README.md>mvn</a>: Provides many useful aliases as well as completion for the Apache Maven command (<code class="language-plaintext highlighter-rouge">mvn</code>).</li><li><a href=https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/jenv/README.md>jenv</a>: Initializes <code class="language-plaintext highlighter-rouge">jenv</code> and provides the <code class="language-plaintext highlighter-rouge">jenv_prompt_info</code> function to add Java version information to prompts.</li><li><a href=https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/sdk/README.md>sdk</a>: Plugin for <a href=https://sdkman.io/>SDKMAN</a>, a tool for managing parallel versions of multiple Software Development Kits on most Unix based systems. Provides autocompletion for all known commands.</li><li><a href=https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/vscode/README.md>vscode</a>: Simplifies the interaction between the command line and VS Code or VSCodium editor.</li></ul><h1 id=tldr>TLDR</h1><p><a href=https://github.com/tldr-pages/tldr>TLDR</a> is a handy tool for generating a short summary of a Unix command.
+It is helpful when you are trying to find out how to use a command, but you don’t want to read its long <del>and boring</del> <code class="language-plaintext highlighter-rouge">man</code> page.
+Thus, the TLDR pages are a community effort to simplify the beloved man pages with practical examples.</p><figure class=jb_picture><img width style=border: src=/assets/resized/tldr_vs_man-640x285.png alt="Screenshot of autocompletion with Fig" data-srcset="/assets/resized/tldr_vs_man-640x285.png 640w,/assets/resized/tldr_vs_man-768x342.png 768w,/assets/resized/tldr_vs_man-1024x456.png 1024w,/assets/resized/tldr_vs_man-1366x608.png 1366w,/assets/resized/tldr_vs_man-1600x712.png 1600w,/assets/resized/tldr_vs_man-1920x854.png 1920w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>Man (left) vs. TLDR (right) results when displaying the documentation of the <code class="language-bash highlighter-rouge">grep</code> command.</figcaption></figure><p>To install TLDR, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>brew <span class=nb>install </span>tldr
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=fig>Fig</h1><p><a href=https://fig.io/>Fig</a> adds IDE-style autocomplete to the terminal.
+I like it because it makes me feel my terminal more like and IDE.</p><figure class=jb_picture><img width style=border: src=/assets/resized/fig-640x185.png alt="Screenshot of autocompletion with Fig" data-srcset="/assets/resized/fig-640x185.png 640w,/assets/resized/fig-768x222.png 768w,/assets/resized/fig-1024x297.png 1024w,/assets/resized/fig-1366x396.png 1366w,/assets/resized/fig-1600x463.png 1600w,/assets/resized/fig-1920x556.png 1920w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>Screenshot of autocompletion with Fig.</figcaption></figure><p>To Install Fig, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>brew <span class=nb>install </span>fig
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=vim>Vim</h1><p><a href=https://www.vim.org/>Vim</a> is a powerful text editor for Unix.
+It is used by many developers to write code directly in the terminal.
+I love Vim, despite its steep learning curve.</p><link rel=stylesheet type=text/css href=../../css/asciinema-player.css><div id=vim.rec class=asciinema-player-div></div><script src=../../js/asciinema-player.min.js></script>
+<script>AsciinemaPlayer.create('../../asciinema/vim.rec',document.getElementById('vim.rec'),{loop:!0,autoPlay:!0,rows:25})</script><p>To install Vim, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>brew <span class=nb>install </span>vim
+</pre></td></tr></tbody></table></code></pre></figure><p>It is very easy to apply different customizations to Vim that totally change how it looks and feels.
+I use the <a href=https://github.com/amix/vimrc>amix/vimrc</a> scripts to easily customize my Vim environment.
+This includes a lot of great plugins, configurations and color schemes that make Vim a lot better.</p><p>To get and awesome Vim, simply execute the following commands in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+</pre></td><td class=code><pre>git clone <span class=nt>--depth</span><span class=o>=</span>1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+</pre></td></tr></tbody></table></code></pre></figure><p>These commands install several Vim plugins and customizations.
+Among other plugins, it installs <a href=https://github.com/preservim/nerdtree>NERDTree</a>, which is a great tool for file navigation.
+To open NERDTree automatically when Vim starts and put the cursor back in the other window, add the following in <code class="language-plaintext highlighter-rouge">~/.vim_runtime/my_configs.vim</code>:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>autocmd VimEnter <span class=k>*</span> NERDTree | wincmd p
+</pre></td></tr></tbody></table></code></pre></figure><p><strong>Note:</strong> To move the cursor between the NERDTree panel and the edit panel type <code class="language-plaintext highlighter-rouge">ctrl + w</code> twice.</p><h1 id=sdkman>SDKMAN!</h1><p>SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits (SDKs).
+It provides a convenient CLI and API for installing, switching, removing and listing SDK candidates.
+For example, you can use SDKMAN! to install the latest version of the Android SDK, or the latest version of the iOS SDK.</p><p>You can also switch between different Java JDK versions, as follows:</p><link rel=stylesheet type=text/css href=../../css/asciinema-player.css><div id=sdkman.rec class=asciinema-player-div></div><script src=../../js/asciinema-player.min.js></script>
+<script>AsciinemaPlayer.create('../../asciinema/sdkman.rec',document.getElementById('sdkman.rec'),{loop:!0,autoPlay:!0,rows:25})</script><p>To install SDKMAN!, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>curl <span class=nt>-s</span> <span class=s2>"https://get.sdkman.io"</span> | bash
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=jenv>jENV</h1><p><a href=https://www.jenv.be/>jEnv</a> is a command line tool to help you forget how to set the <code class="language-plaintext highlighter-rouge">JAVA_HOME</code> environment variable.
+For example, you you can change the Java version that you are using by simply typing <code class="language-plaintext highlighter-rouge">jenv global &lt;version></code>:</p><link rel=stylesheet type=text/css href=../../css/asciinema-player.css><div id=jenv.rec class=asciinema-player-div></div><script src=../../js/asciinema-player.min.js></script>
+<script>AsciinemaPlayer.create('../../asciinema/jenv.rec',document.getElementById('jenv.rec'),{loop:!0,autoPlay:!0,rows:25})</script><p>To install jEnv, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>brew <span class=nb>install </span>jenv
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=jq>Jq</h1><p><a href=https://stedolan.github.io/jq/>Jq</a> is a powerful command-line JSON processor.
+It can be used to filter, transform, and query JSON files in the terminal.
+And of course, you can get JSON file pretty-printed by typing <code class="language-plaintext highlighter-rouge">jq '.'</code>.</p><link rel=stylesheet type=text/css href=../../css/asciinema-player.css><div id=jq.rec class=asciinema-player-div></div><script src=../../js/asciinema-player.min.js></script>
+<script>AsciinemaPlayer.create('../../asciinema/jq.rec',document.getElementById('jq.rec'),{loop:!0,autoPlay:!0,rows:25})</script><p>To install jq, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>brew <span class=nb>install </span>jq
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=bat>Bat</h1><p><a href=https://github.com/sharkdp/bat>Bat</a> is a simple and powerful command-line utility for displaying files and directories.
+It is a replacement for the <code class="language-plaintext highlighter-rouge">cat</code> Unix command, but it is more powerful and more user-friendly.</p><link rel=stylesheet type=text/css href=../../css/asciinema-player.css><div id=bat.rec class=asciinema-player-div></div><script src=../../js/asciinema-player.min.js></script>
+<script>AsciinemaPlayer.create('../../asciinema/bat.rec',document.getElementById('bat.rec'),{loop:!0,autoPlay:!0,rows:25})</script><p>To install bat, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>brew <span class=nb>install </span>bat
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=trash-cli>Trash-CLI</h1><p><a href=https://github.com/sindresorhus/trash-cli>Trash-cli</a> is a substitute for the dangerous <code class="language-plaintext highlighter-rouge">rm</code> command that permanently deletes files.
+In contrast, trash-cli moves files to the trash, which is safer because it is reversible.</p><p>To install trash-cli, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>brew <span class=nb>install </span>trash-cli
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=exa>Exa</h1><p><a href=https://github.com/ogham/exa>Exa</a> is a modern replacement for the <code class="language-plaintext highlighter-rouge">ls</code> command.</p><link rel=stylesheet type=text/css href=../../css/asciinema-player.css><div id=exa.rec class=asciinema-player-div></div><script src=../../js/asciinema-player.min.js></script>
+<script>AsciinemaPlayer.create('../../asciinema/exa.rec',document.getElementById('exa.rec'),{loop:!0,autoPlay:!0,rows:25})</script><p>To install exa, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>brew <span class=nb>install </span>exa
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=htop>Htop</h1><p><a href=https://github.com/hishamhm/htop>Htop</a> is a terminal-based process viewer.
+It is a replacement for the <code class="language-plaintext highlighter-rouge">top</code> Unix command, more user-friendly and more powerful.</p><link rel=stylesheet type=text/css href=../../css/asciinema-player.css><div id=htop.rec class=asciinema-player-div></div><script src=../../js/asciinema-player.min.js></script>
+<script>AsciinemaPlayer.create('../../asciinema/htop.rec',document.getElementById('htop.rec'),{loop:!0,autoPlay:!0,rows:25})</script><p>To install htop, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>brew <span class=nb>install </span>htop
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=diff-so-fancy>Diff-so-fancy</h1><p><a href=https://github.com/so-fancy/diff-so-fancy>Diff-so-fancy</a> is a terminal-based diff viewer.
+It is a replacement for the <code class="language-plaintext highlighter-rouge">diff</code> Unix command.
+It makes your diffs human-readable instead of machine-readable.
+This helps improve code quality and helps you spot defects faster.</p><link rel=stylesheet type=text/css href=../../css/asciinema-player.css><div id=diff-so-fancy.rec class=asciinema-player-div></div><script src=../../js/asciinema-player.min.js></script>
+<script>AsciinemaPlayer.create('../../asciinema/diff-so-fancy.rec',document.getElementById('diff-so-fancy.rec'),{loop:!0,autoPlay:!0,rows:25})</script><p>To install diff-so-fancy, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>brew <span class=nb>install </span>diff-so-fancy
+</pre></td></tr></tbody></table></code></pre></figure><p>To make it Git use it as the default, execute the following command in the terminal:</p><figure class=highlight><pre><code class=language-bash data-lang=bash><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+</pre></td><td class=code><pre>git config <span class=nt>--bool</span> <span class=nt>--global</span> diff-so-fancy.stripLeadingSymbols <span class=nb>false</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=conclusion>Conclusion</h1><p>Here we are at the bar, enjoying a tasty after-work beer.
+Now I open my laptop and look at my beautiful terminal, fully customized and configured to suit my needs.
+It is beautiful!
+I close my laptop, and I’m just happy 😄.</p><h1 id=footnotes>Footnotes</h1><div class=footnotes role=doc-endnotes><ol><li id=fn:1><p>I recommend the course “<a href=https://www.edx.org/course/unix-tools-data-software-and-production-engineering>Unix Tools: Data, Software and Production Engineering</a>,” by <a href=https://en.wikipedia.org/wiki/Diomidis_Spinellis>Prof. Diomidis Spinellis</a>. <a href=#fnref:1 class=reversefootnote role=doc-backlink>&#8617;</a></p></li><li id=fn:2><p>Just kidding. <a href=#fnref:2 class=reversefootnote role=doc-backlink>&#8617;</a></p></li></ol></div></article><ul class="pager blog-pager"><li class=previous><a href=/blog/no-one-cares-about-your-research.html data-toggle=tooltip data-placement=top title="No One Cares About Your Research!">&larr; Previous Post</a></li><li class=next><a href=/blog/why-debloating-third-party-software.html data-toggle=tooltip data-placement=top title="Why Debloating Third-Party Software?">Next Post &rarr;</a></li></ul><br></div></div></div><script>anchors.options={position:'left'},anchors.add('h1:not(.no-anchor)','h2','h3')</script><div class=container><div class=row><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style=padding-right:15px><div class=flex-container-footer-badges><section class=share-section><a href="https://twitter.com/intent/tweet?text=There+is+a+common+belief+that+top-class+software+developers+can+do+their+job+without+ever+abandoning+the+terminal.+This+blog+post+is+a+how-to+guide+for+you+%28and+my+future+self%29+to+configure+the+terminal+in+a+way+so+that+we+will+enjoy+every+command+typed+on+it.+https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id=share-twitter class="fab fa-twitter" aria-hidden=true></span>
+<span class=sr-only>Twitter</span></a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id=share-linkedin class="fab fa-linkedin-in" aria-hidden=true></span>
+<span class=sr-only>LinkedIn</span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/my-ultimate-terminal-customizations-for-macos.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden=true></span>
+<span class=sr-only>Facebook</span></a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fmy-ultimate-terminal-customizations-for-macos.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden=true></span>
+<span class=sr-only>Reddit</span></a>
+<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fmy-ultimate-terminal-customizations-for-macos.html&text=There+is+a+common+belief+that+top-class+software+developers+can+do+their+job+without+ever+abandoning+the+terminal.+This+blog+post+is+a+how-to+guide+for+you+%28and+my+future+self%29+to+configure+the+terminal+in+a+way+so+that+we+will+enjoy+every+command+typed+on+it." class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
+<span class=sr-only>Telegram</span></a>
+<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fmy-ultimate-terminal-customizations-for-macos.html&t=My+Ultimate+Terminal+Customizations+for+macOS" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
+<span class=sr-only>Hacker News</span></a></section></div><div id=related-posts><hr><h2>Related Posts</h2><div class="panel-deck row"><div class=col-sm-4><div class=panel><a href=/blog/my-ultimate-terminal-customizations-for-windows.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>My Ultimate Terminal Customizations for Windows</h4><div class=date style=margin-bottom:0>Posted on October 13, 2023</div></div><img src=../img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water_cover.png alt="My Ultimate Terminal Customizations for Windows"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/i-am-switching-to-python-and-actually-liking-it.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>I'm Switching to Python and Actually Liking It</h4><div class=date style=margin-bottom:0>Posted on July 15, 2025</div></div><img src=../img/posts/2025/2025-07-15/wall-stones_cover.JPG alt="I'm Switching to Python and Actually Liking It"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Evaluation Metrics for Real-Time Financial Fraud Detection ML Models</h4><div class=date style=margin-bottom:0>Posted on May 8, 2025</div></div><img src=../img/posts/2025/2025-05-08/kungstradgarden_cover.jpg alt="Evaluation Metrics for Real-Time Financial Fraud Detection ML Models"></div></a></div></div></div></div><div><div id=giscus-container></div><script src=/js/load-giscus.js></script>
+<script>window.addEventListener('load',loadGiscus)</script></div></div></div></div><script>window.addEventListener('DOMContentLoaded',()=>{const a=new IntersectionObserver(a=>{a.forEach(a=>{const b=a.target.getAttribute('id');a.intersectionRatio>0?document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.add('active'):document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.remove('active')})});document.querySelectorAll('h1[id]').forEach(b=>{a.observe(b)}),document.querySelectorAll('h2[id]').forEach(b=>{a.observe(b)})})</script><footer><div class="container beautiful-jekyll-footer"><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style=text-align:center><div class=flex-container-footer-badges><a href=https://www.linkedin.com/in/cesarsotovalero><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin"></a>
+<a href=https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg><img alt="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black&label=Subscribe"></a>
+<a href=https://github.com/cesarsotovalero><img alt="Follow me on GitHub" src="https://img.shields.io/github/followers/cesarsotovalero?label=Follow%20me"></a></div></div><div class=flex-container-footer-copyright><p class="copyright text-muted">&copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2025</p></div></div></div></div></footer><script>typeof jQuery=='undefined'&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src=/js/bootstrap.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/flowtype.js></script>
+<script src=/js/scroll-to-top.js></script>
+<script src=/js/lazysizes.min.js></script>
+<script src=/js/popup-footnotes.js></script>
+<script src=/js/mermaid.min.js></script>
+<script>$(document).ready(function(){mermaid.initialize({startOnLoad:!0,theme:"default"}),window.mermaid.init(void 0,document.querySelectorAll('.language-mermaid'))})</script><script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'),ga('create','UA-107061705-1','auto'),ga('send','pageview')</script><script src=/js/mode-switcher.js></script></body></html>

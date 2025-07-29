@@ -1,0 +1,232 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml lang=en-us xml:lang=en-US itemscope itemtype=http://schema.org/WebSite><head><script>(function(){let a=localStorage.getItem('theme');a==='dark'&&document.documentElement.setAttribute('data-theme','dark')})()</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>The Fork/Join Java framework</title><meta name=keywords content="recursion,Java,parallel,fork,join"><link rel=alternate type=application/rss+xml title="César Soto Valero  César - Computer Scientist" href=https://www.cesarsotovalero.net/feed.xml><script src=https://cdn.jsdelivr.net/npm/typed.js@2.0.12></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel=stylesheet><link rel=apple-touch-icon sizes=180x180 href=../img/favicon/redketchup/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../img/favicon/redketchup/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../img/favicon/redketchup/favicon-16x16.png><link rel=manifest href=../img/favicon/redketchup/site.webmanifest><link id=code rel=stylesheet href=../css/pygment_highlights.css><script src=https://d3js.org/d3.v7.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-107061705-1')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","bs3gcidnol")</script><script src=../js/anchor.min.js></script>
+<link rel=stylesheet href=//use.fontawesome.com/releases/v5.12.0/css/all.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/bootstrap-social.css><link rel=stylesheet href=/css/main.css><link rel=stylesheet href=/css/academicons.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel=stylesheet href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name=generator content="Jekyll v4.3.2"><meta property="og:title" content="The Fork/Join Java framework"><meta name=author content="César Soto Valero"><meta property="og:locale" content="en_US"><meta name=description content="The Fork/Join framework in Java simplifies parallel programming by allowing developers to leverage multiple processor cores without manually managing threads. This post introduces the key concepts of this framework, including task splitting (fork) and result combining (join). I also provide practical examples using RecursiveAction and RecursiveTask for parallelizing tasks. By utilizing this framework, developers can boost application performance and streamline the implementation of parallel algorithms."><meta property="og:description" content="The Fork/Join framework in Java simplifies parallel programming by allowing developers to leverage multiple processor cores without manually managing threads. This post introduces the key concepts of this framework, including task splitting (fork) and result combining (join). I also provide practical examples using RecursiveAction and RecursiveTask for parallelizing tasks. By utilizing this framework, developers can boost application performance and streamline the implementation of parallel algorithms."><link rel=canonical href=https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html><meta property="og:url" content="https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html"><meta property="og:site_name" content="César Soto Valero"><meta property="og:image" content="https://www.cesarsotovalero.net/img/posts/2021/night_tree_cover.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2021-06-05T00:00:00-07:00"><meta name=twitter:card content="summary"><meta property="twitter:image" content="https://www.cesarsotovalero.net/img/posts/2021/night_tree_cover.jpg"><meta property="twitter:title" content="The Fork/Join Java framework"><meta name=twitter:site content="@cesarsotovalero"><meta name=twitter:creator content="@César Soto Valero"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"César Soto Valero","url":"https://www.cesarsotovalero.net/about-me"},"dateModified":"2025-07-29T11:52:25-07:00","datePublished":"2021-06-05T00:00:00-07:00","description":"The Fork/Join framework in Java simplifies parallel programming by allowing developers to leverage multiple processor cores without manually managing threads. This post introduces the key concepts of this framework, including task splitting (fork) and result combining (join). I also provide practical examples using RecursiveAction and RecursiveTask for parallelizing tasks. By utilizing this framework, developers can boost application performance and streamline the implementation of parallel algorithms.","headline":"The Fork/Join Java framework","image":"https://www.cesarsotovalero.net/img/posts/2021/night_tree_cover.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024.jpg"},"name":"César Soto Valero"},"url":"https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html"}</script><script type=text/x-mathjax-config> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+   </script><script type=text/x-mathjax-config>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+   </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type=text/javascript></script></head><body><nav class="navbar-fixed-top navbar-custom navbar navbar-expand-lg navbar-light bg-light"><button class=navbar-toggle type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span></button><div class="collapse navbar-collapse container-fluid" id=navbarSupportedContent><ul class="navigation list-inline text-center footer-links" id=black-icons><li class="nav-item navbar-custom" title=Home><a id=navbar-brand href=https://www.cesarsotovalero.net>Home</a></li><li class="nav-item navbar-custom"><a href=/blog>Blog</a></li><li class="nav-item navbar-custom"><a href=/linkedin>LinkedIn</a></li><li class="nav-item navbar-custom"><a href=/youtube>YouTube</a></li><li class="nav-item navbar-custom"><a href=/podcasts>Podcasts</a></li><li class="nav-item navbar-custom"><a href=/talks>Talks</a></li><li class="nav-item navbar-custom"><a href=/about-me>About</a></li><li class="nav-item navbar-custom" title="Toggle Night Mode"><a href=# id=theme-toggle onclick=modeSwitcher() style=cursor:pointer></a></li></ul></div></nav><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class=header-image style=padding-left:15px><div class="row justify-content-center" style=margin-right:0;margin-left:0></div></div><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><h1 class=no-anchor>The Fork/Join Java framework</h1><h2 class=post-subheading>Boosting performance through parallelization</h2><div class="container flex-container"><a href=https://www.cesarsotovalero.net/about-me><img class=avatar-img-small src=/img/pages/cesar/avatar-icon-2024.jpg alt="César Soto Valero" id=meta-img></a><div class=flex-item><span class=post-meta>Posted on June 5, 2021</span><div><span class=post-meta title="Estimated read time"><svg id="i-clock" viewBox="0 0 32 32" width="18" height="18" style="vertical-align:middle" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="16" cy="16" r="14"/><path d="M16 8v8l4 4"/></svg>&nbsp;11 mins read</span>
+<span class="blog-tags post-meta"><svg id="i-tag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16" width="16.5" height="16.5"><path fill="none" d="M497.941 225.941 286.059 14.059A48 48 0 00252.118.0H48C21.49.0.0 21.49.0 48v204.118a47.998 47.998.0 0014.059 33.941l211.882 211.882c18.745 18.745 49.137 18.746 67.882.0l204.118-204.118c18.745-18.745 18.745-49.137.0-67.882zM259.886 463.996 48 252.118V48h204.118L464 259.882 259.886 463.996zM192 144c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"/></svg>java</span></div></div></div><div class=flex-item><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style=margin-left:0><section id=share-section><script type=text/javascript src=https://storage.ko-fi.com/cdn/widget/Widget_2.js></script><script type=text/javascript>kofiwidget2.init('Support this blog','#7aa4d1','G2G3CRPPI'),kofiwidget2.draw()</script></section></div></div></div><div class=cesarcarbon id=cesarcarbonads-post><script async type=text/javascript src="//cdn.carbonads.com/carbon.js?serve=CESI52JM&placement=wwwcesarsotovaleronet" id=_carbonads_js></script></div></div></div><div class="col-lg-4 col-lg-pull-2 col-md-2 col-md-pull-2"><ol id=toc class=section-nav><li class="toc-entry toc-h1"><a href=#concurrency-vs-parallelism>Concurrency vs. Parallelism</a></li><li class="toc-entry toc-h1"><a href=#the-forkjoin-framework>The Fork/Join Framework</a></li><li class="toc-entry toc-h1"><a href=#examples>Examples</a></li><li class="toc-entry toc-h1"><a href=#conclusion>Conclusion</a></li><li class="toc-entry toc-h1"><a href=#references>References</a></li></ol></div></div></div></div></header><div class=container><div class=row><div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=blog-post><p>The <a href=https://docs.oracle.com/javase/tutorial/essential/concurrency/forkjoin.html>Fork/Join</a> framework makes it easy for Java developers to take advantage of the parallel execution supported by multicore processors. This API was added to the <code class="language-plaintext highlighter-rouge">java.util.concurrent</code> package since JDK 7, and it has been improved in subsequent versions of the JDK. It allows the developer to forget about the heavy-duty tasks associated with the manual handling of threads. This way, threads are created and managed automatically while taking advantage of the computational power or multiple processors to boost performance. This post introduces the key aspects of this framework from a practical perspective.</p><figure class=jb_picture><img width style=border: src=/assets/resized/night_tree-640x256.jpg alt="A decorated tree illuminating the night in Stockholm (not a tree of threads)" data-srcset="/assets/resized/night_tree-640x256.jpg 640w,/assets/resized/night_tree-768x307.jpg 768w,/assets/resized/night_tree-1024x410.jpg 1024w,/assets/resized/night_tree-1366x546.jpg 1366w,/assets/resized/night_tree-1600x640.jpg 1600w,/assets/resized/night_tree-1920x768.jpg 1920w," class="blur-up lazyautosizes lazyload"><figcaption class=stroke>&#169; A decorated tree illuminating the night in Stockholm (isn't a tree of threads)</figcaption></figure><h1 id=concurrency-vs-parallelism>Concurrency vs. Parallelism</h1><p>First, let’s clarify the difference between concurrent and parallel executions in the context of a Java application.</p><ul><li><strong>Concurrent execution:</strong> All the threads run on the same CPU. This means that the application does not make progress on more than one task at the same time, i.e., the tasks are executed in interleave fashion, sharing CPU processing time during execution.</li><li><strong>Parallel execution:</strong> Each thread run in a separate CPU core. Therefore, tasks make progress independently. This allows the execution to make progress on more than one task simultaneously.</li></ul><p>To achieve parallelism, the Java application must have more than one thread running, and each thread must run on separate CPU, CPU cores, GPUs, or similar.</p><h1 id=the-forkjoin-framework>The Fork/Join Framework</h1><p>The Fork/Join framework provides APIs that facilitate Java developers to solve a parallelizable task in a recursive manner efficiently.
+This method is actually a parallel version of the “divide and conquer” algorithm.
+With this approach, the problem is split into smaller independent parts, which in turn, the small part is split further until each part can be solved directly (this is called <strong>fork</strong>).
+Then, all parts are executed and solved in parallel.
+Once completed, all the results are <strong>joined</strong> together to produce the final result.
+The following pseudocode describes the process:</p><figure class=highlight><pre><code class=language-text data-lang=text><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class=code><pre>if (my portion of the work is small enough)
+  solve the problem directly (sequential algorithm)
+else
+  split the problem into independent parts
+  fork new sub-tasks to solve each part
+  join all sub-tasks
+  compose the result from sub-results
+</pre></td></tr></tbody></table></code></pre></figure><p>You need to know about four classes to use the framework:</p><ul><li><code class="language-plaintext highlighter-rouge">ForkJoinPool</code>: An executor dedicated to run instances implementing <code class="language-plaintext highlighter-rouge">ForkJoinTask&lt;V></code>. Implements the <em>Work Stealing Algorithm</em> to balance the load among threads: if a worker thread runs out of things to do, it can steal tasks from other threads that are still busy.</li><li><code class="language-plaintext highlighter-rouge">ForkJoinTask&lt;V></code>: An abstract class that defines a task that runs within a <code class="language-plaintext highlighter-rouge">ForkJoinPool</code>.</li><li><code class="language-plaintext highlighter-rouge">RecursiveAction</code>: A <code class="language-plaintext highlighter-rouge">ForkJoinTask</code> subclass for tasks that don’t return values.</li><li><code class="language-plaintext highlighter-rouge">RecursiveTask&lt;V></code>: A <code class="language-plaintext highlighter-rouge">ForkJoinTask</code> subclass for tasks that return values.</li></ul><p>In practice, all you need to do is create a subclass of <code class="language-plaintext highlighter-rouge">RecursiveAction</code> or <code class="language-plaintext highlighter-rouge">RecursiveTask&lt;V></code>, and override the abstract method <code class="language-plaintext highlighter-rouge">compute()</code>. Then, submit the task to be executed by the <code class="language-plaintext highlighter-rouge">ForkJoinPool</code>, which handles everything from threads management to utilization of multicore processor. Note that <code class="language-plaintext highlighter-rouge">RecursiveAction</code> do not return anything, while the <code class="language-plaintext highlighter-rouge">RecursiveTask&lt;V></code> can return an object of a specified type.</p><p>If you are curious, here is the class diagram for this architecture.
+As you observe, the <code class="language-plaintext highlighter-rouge">ForkJoinPool</code> class is an implementation of the <code class="language-plaintext highlighter-rouge">AbstractExecutorService</code> class which implements <code class="language-plaintext highlighter-rouge">ExecutorService</code>, while the <code class="language-plaintext highlighter-rouge">ForkJoinTask&lt;V></code> abstract class implements the <code class="language-plaintext highlighter-rouge">Future&lt;V></code> interface.</p><p><img width=100% style="border:1px solid gray" src=/assets/resized/fork_join_classes-640x581.png alt="Fork/Join Class Diagram" data-srcset="/assets/resized/fork_join_classes-640x581.png 640w,/assets/resized/fork_join_classes-768x697.png 768w,/assets/resized/fork_join_classes-1024x929.png 1024w,/assets/resized/fork_join_classes-1366x1239.png 1366w," class="blur-up lazyautosizes lazyload"></p><h1 id=examples>Examples</h1><p>Let’s see two examples that illustrate how you can use the Fork/Join framework.</p><h2 id=recursiveaction>RecursiveAction</h2><p><strong>Task:</strong> You want to replace the value of all the entries of a particular element in an array of integers.
+There may be more than one entry of the same element in the array.</p><p>This task is suitable for implementing in parallel because the array can be split to replace the element in each part independently.
+The following <code class="language-plaintext highlighter-rouge">ForkJoinReplaceAction</code> class extends the <code class="language-plaintext highlighter-rouge">RecursiveAction</code> class to solve this problem.
+The <code class="language-plaintext highlighter-rouge">void</code> method <code class="language-plaintext highlighter-rouge">compute()</code> in charge of the performing the tasks in parallel.
+It calls the <code class="language-plaintext highlighter-rouge">process()</code> method that replaces the element in the array when the split part is smaller than the specified <code class="language-plaintext highlighter-rouge">THRESHOLD</code>.
+Otherwise, it calls the static <code class="language-plaintext highlighter-rouge">invokeAll</code> method in the <code class="language-plaintext highlighter-rouge">ForkJoinTask</code> class with a list of instances of the <code class="language-plaintext highlighter-rouge">ForkJoinReplaceAction</code> in which the array is divided in half.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>ForkJoinReplaceAction</span> <span class=kd>extends</span> <span class=nc>RecursiveAction</span> <span class=o>{</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=kt>int</span> <span class=n>element</span><span class=o>;</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=kt>int</span><span class=o>[]</span> <span class=n>array</span><span class=o>;</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=kt>int</span> <span class=no>THRESHOLD</span><span class=o>;</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=kt>int</span> <span class=n>ini</span><span class=o>;</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=kt>int</span> <span class=n>end</span><span class=o>;</span>
+
+  <span class=c1>// AllArgs Constructor</span>
+
+  <span class=nd>@Override</span>
+  <span class=kd>protected</span> <span class=kt>void</span> <span class=nf>compute</span><span class=o>()</span> <span class=o>{</span>
+    <span class=k>if</span> <span class=o>(</span><span class=n>end</span> <span class=o>-</span> <span class=n>ini</span> <span class=o>&lt;=</span> <span class=no>THRESHOLD</span><span class=o>)</span> <span class=o>{</span>
+      <span class=n>process</span><span class=o>(</span><span class=n>element</span><span class=o>,</span> <span class=n>array</span><span class=o>,</span> <span class=n>ini</span><span class=o>,</span> <span class=n>end</span><span class=o>);</span>
+    <span class=o>}</span> <span class=k>else</span> <span class=o>{</span>
+      <span class=nc>ForkJoinTask</span><span class=o>.</span><span class=na>invokeAll</span><span class=o>(</span><span class=n>createSubTasks</span><span class=o>());</span>
+    <span class=o>}</span>
+  <span class=o>}</span>
+
+  <span class=kd>private</span> <span class=nc>List</span><span class=o>&lt;</span><span class=nc>ForkJoinReplaceAction</span><span class=o>&gt;</span> <span class=nf>createSubTasks</span><span class=o>()</span> <span class=o>{</span>
+    <span class=nc>List</span><span class=o>&lt;</span><span class=nc>ForkJoinReplaceAction</span><span class=o>&gt;</span> <span class=n>taskList</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>ArrayList</span><span class=o>&lt;&gt;();</span>
+    <span class=n>taskList</span><span class=o>.</span><span class=na>add</span><span class=o>(</span>
+        <span class=k>new</span> <span class=nf>ForkJoinReplaceAction</span><span class=o>(</span><span class=n>element</span><span class=o>,</span> <span class=n>array</span><span class=o>,</span> <span class=no>THRESHOLD</span><span class=o>,</span> <span class=n>ini</span><span class=o>,</span> <span class=o>(</span><span class=n>ini</span> <span class=o>+</span> <span class=n>end</span><span class=o>)</span> <span class=o>/</span> <span class=mi>2</span><span class=o>)</span>
+    <span class=o>);</span>
+    <span class=n>taskList</span><span class=o>.</span><span class=na>add</span><span class=o>(</span>
+        <span class=k>new</span> <span class=nf>ForkJoinReplaceAction</span><span class=o>(</span><span class=n>element</span><span class=o>,</span> <span class=n>array</span><span class=o>,</span> <span class=no>THRESHOLD</span><span class=o>,</span> <span class=o>(</span><span class=n>ini</span> <span class=o>+</span> <span class=n>end</span><span class=o>)</span> <span class=o>/</span> <span class=mi>2</span><span class=o>,</span> <span class=n>end</span><span class=o>)</span>
+    <span class=o>);</span>
+    <span class=k>return</span> <span class=n>taskList</span><span class=o>;</span>
+  <span class=o>}</span>
+  
+  <span class=kd>private</span> <span class=kt>void</span> <span class=nf>process</span><span class=o>(</span><span class=kt>int</span> <span class=n>element</span><span class=o>,</span> <span class=kt>int</span><span class=o>[]</span> <span class=n>array</span><span class=o>,</span> <span class=kt>int</span> <span class=n>ini</span><span class=o>,</span> <span class=kt>int</span> <span class=n>end</span><span class=o>)</span> <span class=o>{</span>
+    <span class=k>for</span> <span class=o>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=n>ini</span><span class=o>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>end</span><span class=o>;</span> <span class=n>i</span><span class=o>++)</span> <span class=o>{</span>
+      <span class=k>if</span> <span class=o>(</span><span class=n>array</span><span class=o>[</span><span class=n>i</span><span class=o>]</span> <span class=o>==</span> <span class=n>element</span><span class=o>)</span> <span class=o>{</span>
+        <span class=n>array</span><span class=o>[</span><span class=n>i</span><span class=o>]</span> <span class=o>=</span> <span class=o>-</span><span class=mi>1</span><span class=o>;</span>
+      <span class=o>}</span>
+    <span class=o>}</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>To execute the <code class="language-plaintext highlighter-rouge">ForkJoinReplaceAction</code>, create an instance of <code class="language-plaintext highlighter-rouge">ForkJoinPool</code> and use the <code class="language-plaintext highlighter-rouge">invoke()</code> method.
+By using its default constructor, you configure the pool to use all the processors available to the JVM (i.e., the value returned by <code class="language-plaintext highlighter-rouge">Runtime.availableProcessors</code>).
+The following code prints <code class="language-plaintext highlighter-rouge">1 2 -1 -1 -1 4 5 6 6 7</code>, because each entry of the value <code class="language-plaintext highlighter-rouge">3</code> is replaced by <code class="language-plaintext highlighter-rouge">-1</code> in the array:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+</pre></td><td class=code><pre><span class=nc>ForkJoinPool</span> <span class=n>pool</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>ForkJoinPool</span><span class=o>();</span>
+<span class=kt>int</span><span class=o>[]</span> <span class=n>arr</span> <span class=o>=</span> <span class=k>new</span> <span class=kt>int</span><span class=o>[]{</span><span class=mi>1</span><span class=o>,</span> <span class=mi>2</span><span class=o>,</span> <span class=mi>3</span><span class=o>,</span> <span class=mi>3</span><span class=o>,</span> <span class=mi>3</span><span class=o>,</span> <span class=mi>4</span><span class=o>,</span> <span class=mi>5</span><span class=o>,</span> <span class=mi>6</span><span class=o>,</span> <span class=mi>6</span><span class=o>,</span> <span class=mi>7</span><span class=o>};</span>
+<span class=n>pool</span><span class=o>.</span><span class=na>invoke</span><span class=o>(</span><span class=k>new</span> <span class=nc>ForkJoinReplaceAction</span><span class=o>(</span><span class=mi>3</span><span class=o>,</span> <span class=n>arr</span><span class=o>,</span> <span class=mi>2</span><span class=o>,</span> <span class=mi>0</span><span class=o>,</span> <span class=n>arr</span><span class=o>.</span><span class=na>length</span><span class=o>));</span>
+<span class=nc>Arrays</span><span class=o>.</span><span class=na>stream</span><span class=o>(</span><span class=n>arr</span><span class=o>).</span><span class=na>forEach</span><span class=o>(</span><span class=n>value</span> <span class=o>-&gt;</span> <span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>print</span><span class=o>(</span><span class=n>value</span> <span class=o>+</span> <span class=s>" "</span><span class=o>));</span>
+</pre></td></tr></tbody></table></code></pre></figure><h2 id=recursivetask>RecursiveTask<v></v></h2><p><strong>Task:</strong> You want to count all the entries of a particular element in an array of integers.</p><p>As in the previous examples, this task is suitable for implementing in parallel.
+The class <code class="language-plaintext highlighter-rouge">ForkJoinCountTask</code> extends the <code class="language-plaintext highlighter-rouge">RecursiveTask&lt;Integer></code> class to solve this problem.
+The <code class="language-plaintext highlighter-rouge">compute()</code> return the solution.
+If the split part is smaller than the specified <code class="language-plaintext highlighter-rouge">THRESHOLD</code>, it calls the <code class="language-plaintext highlighter-rouge">process()</code> method that counts the number of times the element is present in the smaller array (the array is divided in a half each time).
+Otherwise, it calls the static <code class="language-plaintext highlighter-rouge">invokeAll</code> method in the <code class="language-plaintext highlighter-rouge">ForkJoinTask</code> class with a list of instances of the <code class="language-plaintext highlighter-rouge">ForkJoinCountTask</code>, obtained from the <code class="language-plaintext highlighter-rouge">createSubTasks()</code> method.
+Note that the result joined together and summed using the Java Stream API.</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+</pre></td><td class=code><pre><span class=kd>public</span> <span class=kd>class</span> <span class=nc>ForkJoinCountTask</span> <span class=kd>extends</span> <span class=nc>RecursiveTask</span><span class=o>&lt;</span><span class=nc>Integer</span><span class=o>&gt;</span> <span class=o>{</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=kt>int</span> <span class=n>element</span><span class=o>;</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=kt>int</span><span class=o>[]</span> <span class=n>array</span><span class=o>;</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=kt>int</span> <span class=no>THRESHOLD</span><span class=o>;</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=kt>int</span> <span class=n>ini</span><span class=o>;</span>
+  <span class=kd>private</span> <span class=kd>final</span> <span class=kt>int</span> <span class=n>end</span><span class=o>;</span>
+
+  <span class=c1>// AllArgs Constructor</span>
+  
+  <span class=nd>@Override</span>
+  <span class=kd>protected</span> <span class=nc>Integer</span> <span class=nf>compute</span><span class=o>()</span> <span class=o>{</span>
+    <span class=k>if</span> <span class=o>(</span><span class=n>end</span> <span class=o>-</span> <span class=n>ini</span> <span class=o>&lt;=</span> <span class=no>THRESHOLD</span><span class=o>)</span> <span class=o>{</span>
+      <span class=k>return</span> <span class=nf>process</span><span class=o>(</span><span class=n>element</span><span class=o>,</span> <span class=n>array</span><span class=o>,</span> <span class=n>ini</span><span class=o>,</span> <span class=n>end</span><span class=o>);</span>
+    <span class=o>}</span> <span class=k>else</span> <span class=o>{</span>
+    <span class=k>return</span> <span class=nc>ForkJoinTask</span><span class=o>.</span><span class=na>invokeAll</span><span class=o>(</span><span class=n>createSubTasks</span><span class=o>())</span>
+      <span class=o>.</span><span class=na>stream</span><span class=o>()</span>
+      <span class=o>.</span><span class=na>mapToInt</span><span class=o>(</span><span class=nl>ForkJoinTask:</span><span class=o>:</span><span class=n>join</span><span class=o>)</span>
+      <span class=o>.</span><span class=na>sum</span><span class=o>();</span>
+    <span class=o>}</span>
+  <span class=o>}</span>
+  
+  <span class=kd>private</span> <span class=nc>List</span><span class=o>&lt;</span><span class=nc>ForkJoinCountTask</span><span class=o>&gt;</span> <span class=nf>createSubTasks</span><span class=o>()</span> <span class=o>{</span>
+    <span class=nc>List</span><span class=o>&lt;</span><span class=nc>ForkJoinCountTask</span><span class=o>&gt;</span> <span class=n>taskList</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>ArrayList</span><span class=o>&lt;&gt;();</span>
+    <span class=n>taskList</span><span class=o>.</span><span class=na>add</span><span class=o>(</span><span class=k>new</span> <span class=nc>ForkJoinCountTask</span><span class=o>(</span><span class=n>element</span><span class=o>,</span> <span class=n>array</span><span class=o>,</span> <span class=no>THRESHOLD</span><span class=o>,</span> <span class=n>ini</span><span class=o>,</span> <span class=o>(</span><span class=n>ini</span> <span class=o>+</span> <span class=n>end</span><span class=o>)</span> <span class=o>/</span> <span class=mi>2</span><span class=o>));</span>
+    <span class=n>taskList</span><span class=o>.</span><span class=na>add</span><span class=o>(</span><span class=k>new</span> <span class=nc>ForkJoinCountTask</span><span class=o>(</span><span class=n>element</span><span class=o>,</span> <span class=n>array</span><span class=o>,</span> <span class=no>THRESHOLD</span><span class=o>,</span> <span class=o>(</span><span class=n>ini</span> <span class=o>+</span> <span class=n>end</span><span class=o>)</span> <span class=o>/</span> <span class=mi>2</span><span class=o>,</span> <span class=n>end</span><span class=o>));</span>
+    <span class=k>return</span> <span class=n>taskList</span><span class=o>;</span>
+  <span class=o>}</span>
+  
+  <span class=kd>private</span> <span class=nc>Integer</span> <span class=nf>process</span><span class=o>(</span><span class=kt>int</span> <span class=n>element</span><span class=o>,</span> <span class=kt>int</span><span class=o>[]</span> <span class=n>array</span><span class=o>,</span> <span class=kt>int</span> <span class=n>ini</span><span class=o>,</span> <span class=kt>int</span> <span class=n>end</span><span class=o>)</span> <span class=o>{</span>
+    <span class=kt>int</span> <span class=n>count</span> <span class=o>=</span> <span class=mi>0</span><span class=o>;</span>
+    <span class=k>for</span> <span class=o>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=n>ini</span><span class=o>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>end</span><span class=o>;</span> <span class=n>i</span><span class=o>++)</span> <span class=o>{</span>
+      <span class=k>if</span> <span class=o>(</span><span class=n>array</span><span class=o>[</span><span class=n>i</span><span class=o>]</span> <span class=o>==</span> <span class=n>element</span><span class=o>)</span> <span class=o>{</span>
+        <span class=n>count</span><span class=o>++;</span>
+      <span class=o>}</span>
+    <span class=o>}</span>
+    <span class=k>return</span> <span class=n>count</span><span class=o>;</span>
+  <span class=o>}</span>
+<span class=o>}</span>
+</pre></td></tr></tbody></table></code></pre></figure><p>As in the previous example, to execute the <code class="language-plaintext highlighter-rouge">ForkJoinCountTask</code>, create an instance of <code class="language-plaintext highlighter-rouge">ForkJoinPool</code> and use the <code class="language-plaintext highlighter-rouge">invoke()</code> method. The following code prints <code class="language-plaintext highlighter-rouge">3</code>, because there are three entries of this element in the array:</p><figure class=highlight><pre><code class=language-java data-lang=java><table class=rouge-table><tbody><tr><td class="gutter gl"><pre class=lineno>1
+2
+3
+</pre></td><td class=code><pre><span class=kt>var</span> <span class=n>pool</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>ForkJoinPool</span><span class=o>();</span>
+<span class=kt>int</span><span class=o>[]</span> <span class=n>arr</span> <span class=o>=</span> <span class=k>new</span> <span class=kt>int</span><span class=o>[]{</span><span class=mi>1</span><span class=o>,</span> <span class=mi>2</span><span class=o>,</span> <span class=mi>3</span><span class=o>,</span> <span class=mi>3</span><span class=o>,</span> <span class=mi>3</span><span class=o>,</span> <span class=mi>4</span><span class=o>,</span> <span class=mi>5</span><span class=o>,</span> <span class=mi>6</span><span class=o>,</span> <span class=mi>6</span><span class=o>,</span> <span class=mi>7</span><span class=o>};</span>
+<span class=nc>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>println</span><span class=o>(</span><span class=n>pool</span><span class=o>.</span><span class=na>invoke</span><span class=o>(</span><span class=k>new</span> <span class=nc>ForkJoinCountTask</span><span class=o>(</span><span class=mi>3</span><span class=o>,</span> <span class=n>arr</span><span class=o>,</span> <span class=mi>2</span><span class=o>,</span> <span class=mi>0</span><span class=o>,</span> <span class=n>arr</span><span class=o>.</span><span class=na>length</span><span class=o>)));</span>
+</pre></td></tr></tbody></table></code></pre></figure><h1 id=conclusion>Conclusion</h1><p>The Fork/Join framework simplifies parallel programming for Java developers. The <code class="language-plaintext highlighter-rouge">ForkJoinPool</code> allows executing <code class="language-plaintext highlighter-rouge">ForkJoinTask</code>s threads running on a separate processing core, where threads that finish early can steal tasks from other threads that are still busy. It’s worth mentioning that debugging parallel implementations can be tricky. You never take for granted that a computation using the Fork/Join framework is faster than a sequential variant. For this reason, you should always measure and compare the performance empirically. Furthermore, it would be best to experimentally choose the threshold used to split the task into smaller subtasks.</p><h1 id=references>References</h1><ul><li><a href=https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html>ForkJoinPool</a></li><li><a href=https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html>ForkJoinTask</a></li><li><a href=https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RecursiveAction.html>RecursiveAction</a></li><li><a href=https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RecursiveTask.html>RecursiveTask</a></li></ul></article><ul class="pager blog-pager"><li class=previous><a href=/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html data-toggle=tooltip data-placement=top title="Use Custom LaTeX Macros to Boost Your Writing Productivity">&larr; Previous Post</a></li><li class=next><a href=/blog/book-review-the-phd-grind.html data-toggle=tooltip data-placement=top title="Book Review: The PhD Grind">Next Post &rarr;</a></li></ul><br></div></div></div><script>anchors.options={position:'left'},anchors.add('h1:not(.no-anchor)','h2','h3')</script><div class=container><div class=row><div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style=padding-right:15px><div class=flex-container-footer-badges><section class=share-section><a href="https://twitter.com/intent/tweet?text=The+Fork%2FJoin+framework+in+Java+simplifies+parallel+programming+by+allowing+developers+to+leverage+multiple+processor+cores+without+manually+managing+threads.+This+post+introduces+the+key+concepts+of+this+framework%2C+including+task+splitting+%28fork%29+and+result+combining+%28join%29.+I+also+provide+practical+examples+using+RecursiveAction+and+RecursiveTask+for+parallelizing+tasks.+By+utilizing+this+framework%2C+developers+can+boost+application+performance+and+streamline+the+implementation+of+parallel+algorithms.%0A+https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html" class="btn btn-my-icon btn-twitter" title="Share on Twitter"><span id=share-twitter class="fab fa-twitter" aria-hidden=true></span>
+<span class=sr-only>Twitter</span></a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html" class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn"><span id=share-linkedin class="fab fa-linkedin-in" aria-hidden=true></span>
+<span class=sr-only>LinkedIn</span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cesarsotovalero.net/blog/the-fork-join-java-framework.html" class="btn btn-my-icon btn-facebook" title="Share on Facebook"><span class="fab fa-facebook-f" aria-hidden=true></span>
+<span class=sr-only>Facebook</span></a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-fork-join-java-framework.html" class="btn btn-my-icon btn-reddit" title="Share on Reddit"><span class="fab fa-fw fa-reddit" aria-hidden=true></span>
+<span class=sr-only>Reddit</span></a>
+<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-fork-join-java-framework.html&text=The+Fork%2FJoin+framework+in+Java+simplifies+parallel+programming+by+allowing+developers+to+leverage+multiple+processor+cores+without+manually+managing+threads.+This+post+introduces+the+key+concepts+of+this+framework%2C+including+task+splitting+%28fork%29+and+result+combining+%28join%29.+I+also+provide+practical+examples+using+RecursiveAction+and+RecursiveTask+for+parallelizing+tasks.+By+utilizing+this+framework%2C+developers+can+boost+application+performance+and+streamline+the+implementation+of+parallel+algorithms.%0A" class="btn btn-my-icon btn-telegram" title="Share on Telegram"><i class="fab fa-telegram"></i>
+<span class=sr-only>Telegram</span></a>
+<a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.cesarsotovalero.net%2Fblog%2Fthe-fork-join-java-framework.html&t=The+Fork%2FJoin+Java+framework" class="btn btn-my-icon btn-hn" title="Share on Hacker News"><i class="fab fa-hacker-news-square"></i>
+<span class=sr-only>Hacker News</span></a></section></div><div id=related-posts><hr><h2>Related Posts</h2><div class="panel-deck row"><div class=col-sm-4><div class=panel><a href=/blog/deploying-to-maven-central.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Deploying to Maven Central</h4><div class=date style=margin-bottom:0>Posted on January 6, 2020</div></div><img src=../img/posts/2020/maven_journey_cover.png alt="Deploying to Maven Central"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/the-producer-consumer-pattern-in-java-made-easy.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>The Producer-Consumer Pattern in Java Made Easy</h4><div class=date style=margin-bottom:0>Posted on June 28, 2020</div></div><img src=../img/posts/2020/java_design_patterns_cover.jpg alt="The Producer-Consumer Pattern in Java Made Easy"></div></a></div></div><div class=col-sm-4><div class=panel><a href=/blog/encoding-encryption-hashing-and-obfuscation-in-java.html><div class=panel-body><div class=text-left><h4 class=title data-toc-skip>Encoding, Encryption, Hashing, and Obfuscation in Java</h4><div class=date style=margin-bottom:0>Posted on December 19, 2021</div></div><img src=../img/posts/2021/paint_on_wall_cover.jpg alt="Encoding, Encryption, Hashing, and Obfuscation in Java"></div></a></div></div></div></div><div><div id=giscus-container></div><script src=/js/load-giscus.js></script>
+<script>window.addEventListener('load',loadGiscus)</script></div></div></div></div><script>window.addEventListener('DOMContentLoaded',()=>{const a=new IntersectionObserver(a=>{a.forEach(a=>{const b=a.target.getAttribute('id');a.intersectionRatio>0?document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.add('active'):document.querySelector(`#toc li a[href="#${b}"]`).parentElement.classList.remove('active')})});document.querySelectorAll('h1[id]').forEach(b=>{a.observe(b)}),document.querySelectorAll('h2[id]').forEach(b=>{a.observe(b)})})</script><footer><div class="container beautiful-jekyll-footer"><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div style=text-align:center><div class=flex-container-footer-badges><a href=https://www.linkedin.com/in/cesarsotovalero><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin"></a>
+<a href=https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg><img alt="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/channel/subscribers/UCR4rI98w6-MqYoCS6jR9LGg?logoColor=black&label=Subscribe"></a>
+<a href=https://github.com/cesarsotovalero><img alt="Follow me on GitHub" src="https://img.shields.io/github/followers/cesarsotovalero?label=Follow%20me"></a></div></div><div class=flex-container-footer-copyright><p class="copyright text-muted">&copy; César Soto Valero&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;2025</p></div></div></div></div></footer><script>typeof jQuery=='undefined'&&document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script><script src=/js/bootstrap.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/flowtype.js></script>
+<script src=/js/scroll-to-top.js></script>
+<script src=/js/lazysizes.min.js></script>
+<script src=/js/popup-footnotes.js></script>
+<script src=/js/mermaid.min.js></script>
+<script>$(document).ready(function(){mermaid.initialize({startOnLoad:!0,theme:"default"}),window.mermaid.init(void 0,document.querySelectorAll('.language-mermaid'))})</script><script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'),ga('create','UA-107061705-1','auto'),ga('send','pageview')</script><script src=/js/mode-switcher.js></script></body></html>
