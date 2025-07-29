@@ -56,9 +56,9 @@ jobs:
       - name: Extract YouTube statistics and update LaTeX macros
         run: |
           # Pull counts from profile JSON
-          VIDEO_COUNT=$(jq '.items[0].statistics.videoCount' _data/youtube-profile.json)
-          VIEW_COUNT=$(jq '.items[0].statistics.viewCount' _data/youtube-profile.json)
-          SUBS_COUNT=$(jq '.items[0].statistics.subscriberCount' _data/youtube-profile.json)
+          VIDEO_COUNT=$(jq -r '.items[0].statistics.videoCount' _data/youtube-profile.json)
+          VIEW_COUNT=$(jq -r '.items[0].statistics.viewCount' _data/youtube-profile.json)
+          SUBS_COUNT=$(jq -r '.items[0].statistics.subscriberCount' _data/youtube-profile.json)
           # Write LaTeX macros
           echo "\\newcommand{\\youtubevideos}{$VIDEO_COUNT}" >> files/CV/citations.tex
           echo "\\newcommand{\\ytViews}{$VIEW_COUNT}" >> files/CV/citations.tex
