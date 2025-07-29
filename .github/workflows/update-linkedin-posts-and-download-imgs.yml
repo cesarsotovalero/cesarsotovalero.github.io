@@ -107,7 +107,8 @@ jobs:
             )
             for url in "${urls[@]}"; do
               [ -z "$url" ] && continue
-              filename=$(basename "$url")
+              # Strip query parameters from URL before deriving filename
+              filename=$(basename "${url%%\?*}")
               output_path="${dir}/${filename}"
               if [ ! -f "$output_path" ]; then
                 echo "Downloading image to $output_path"
