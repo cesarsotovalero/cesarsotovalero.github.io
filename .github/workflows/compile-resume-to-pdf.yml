@@ -58,11 +58,15 @@ jobs:
         run: |
           python scripts/fetch_youtube_profile.py
 
-      - name: Count YouTube videos and fetch subscriber count, update LaTeX macros
+      - name: Extract YouTube statistics and update LaTeX macros
         run: |
-          YOUTUBE_COUNT=$(jq length _data/youtube-videos.json)
+          # Pull counts from profile JSON
+          VIDEO_COUNT=$(jq '.items[0].statistics.videoCount' _data/youtube-profile.json)
+          VIEW_COUNT=$(jq '.items[0].statistics.viewCount' _data/youtube-profile.json)
           SUBS_COUNT=$(jq '.items[0].statistics.subscriberCount' _data/youtube-profile.json)
-          echo "\\newcommand{\\youtubevideos}{$YOUTUBE_COUNT}" >> files/CV/citations.tex
+          # Write LaTeX macros
+          echo "\\newcommand{\\youtubevideos}{$VIDEO_COUNT}" >> files/CV/citations.tex
+          echo "\\newcommand{\\ytViews}{$VIEW_COUNT}" >> files/CV/citations.tex
           echo "\\newcommand{\\ytSubscribers}{$SUBS_COUNT}" >> files/CV/citations.tex
           cat files/CV/citations.tex
 
