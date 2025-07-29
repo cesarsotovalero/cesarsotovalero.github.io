@@ -24,7 +24,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
       - name: Building site
-        run: JEKYLL_ENV=production bundle exec jekyll build --profile ben--trace
+        run: JEKYLL_ENV=production bundle exec jekyll build
         env:
           GISCUS_DATA_REPO_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
           GISCUS_GISCUS_DATA_CATEGORY_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
