@@ -33,8 +33,17 @@ jq -c '.data[]' "$JSON_FILE" | while read -r post; do
     dest_dir="${DEST_BASE}/${post_ts}"
     mkdir -p "$dest_dir"
 
-    # Attempt to retrieve images: use either the "image" or "images" field.
-    images=$(echo "$post" | jq -c '.image // .images')
+    # Attempt to retrieve images: check media.images, images, or image field
+    images=$(echo "$post" | jq -c '
+      if .media and (.media.images | type == "array") then
+        .media.images
+      elif .images then
+        .images
+      elif .image then
+        [ .image ]
+      else
+        []
+      end')
     # Skip posts with no images.
     length=$(echo "$images" | jq 'length')
     if [ "$length" -eq 0 ]; then
@@ -59,7 +68,7 @@ jq -c '.data[]' "$JSON_FILE" | while read -r post; do
             continue
         fi
 
-        # Always use .jpg extension for saved images
+        # Use width and height as filename, always .jpg
         filename="${width}x${height}.jpg"
         dest_path="${dest_dir}/${filename}"
 
