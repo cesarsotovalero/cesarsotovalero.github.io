@@ -53,7 +53,7 @@ published: true
         {% assign post_year = post.posted_at.date | date: "%Y" %}
         {% if post_year == year %}
         <div class="tag-entry">
-            <a href="{{ post.postUrl }}" target="_blank">{{ post.text | truncatewords: 15 }}</a>
+            <a href="{{ post.url }}" target="_blank">{{ post.text | truncatewords: 15 }}</a>
             <div class="entry-date">
                 <!-- markdownlint-disable MD033 -->
                 <time datetime="{{ post.posted_at.date }}">{{ post.posted_at.date | date: "%b %-d, %Y"}}</time>

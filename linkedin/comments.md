@@ -21,7 +21,7 @@ published: true
 
 <div class="linkedin-posts-container post-preview">
   {% for post in sorted_posts %}
-  <a href="{{ post.postUrl }}" target="_blank" class="linkedin-post-link">
+  <a href="{{ post.url }}" target="_blank" class="linkedin-post-link">
     <div class="linkedin-post-card">
       <div class="linkedin-post-text">
         <h3 class="linkedin-post-title">{{ post.text | truncatewords: 15 }}</h3>

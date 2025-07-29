@@ -59,14 +59,8 @@ jq -c '.data[]' "$JSON_FILE" | while read -r post; do
             continue
         fi
 
-        # Extract extension from URL and normalize to lower case.
-        ext="${url##*.}"
-        ext=$(echo "$ext" | tr '[:upper:]' '[:lower:]')
-        if [[ "$ext" != "jpg" && "$ext" != "jpeg" && "$ext" != "png" ]]; then
-            ext="jpg"
-        fi
-
-        filename="${width}x${height}.${ext}"
+        # Always use .jpg extension for saved images
+        filename="${width}x${height}.jpg"
         dest_path="${dest_dir}/${filename}"
 
         # If already downloaded, skip.
