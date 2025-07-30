@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On The Validation Techniques for Fraud Detection Models
+title: Validation Techniques for Financial Fraud Detection ML Models
 subtitle: An overview
 tags: ai
 description: |
