@@ -1,11 +1,11 @@
 # cesarsotovalero.net
 
-[![jekyll](https://github.com/cesarsotovalero/cesarsotovalero.github.io/actions/workflows/workflow.yml/badge.svg)](https://github.com/cesarsotovalero/cesarsotovalero.github.io/actions/workflows/pages/pages-build-deployment)
+[![Build](https://github.com/cesarsotovalero/cesarsotovalero.github.io/actions/workflows/deploy-website.yml/badge.svg)](https://github.com/cesarsotovalero/cesarsotovalero.github.io/actions/workflows/deploy-website.yml)
 
 This is the source code of [cesarsotovalero.net](https://www.cesarsotovalero.net), my personal website and blog.
 The repo contains a mess of HTML templates, Jekyll templates, blog posts and images, so it's been released under a dual license.
 
-Everything here is available under a [Creative Commons Attribution NonCommercial ShareAlike license (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
+Everything here is available under a [Creative Commons Attribution NonCommercial ShareAlike license (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 This means you're free to copy it, modify it and share it, subject to the following restrictions:
 
 - **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.

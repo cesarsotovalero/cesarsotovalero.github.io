@@ -127,7 +127,7 @@ There’s an `__init__.py` file in `project-api/src/app` to indicate that `app` 
 
 ## uv
 
-I use [uv](https://github.com/astral-sh/uv) as my Python package manager and build tool. 
+I use [uv](https://github.com/astral-sh/uv) as my Python package manager and build tool.
 It’s all I need to install and manage dependencies.
 
 Here are the core commands to set it up:
@@ -159,7 +159,7 @@ source .venv/bin/activate
 .\.venv\Scripts\activate.bat
 {% endhighlight %}
 
-Note that the most important file for `uv` is `pyproject.toml`.[^2]  
+Note that the most important file for `uv` is `pyproject.toml`.[^2]
 This file [contains](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) metadata and the list of dependencies required to build and run the project.
 
 ## ruff
@@ -191,7 +191,7 @@ I think typing really helps me catch type errors early in the development proces
 
 ## pytest
 
-[pytest](https://docs.pytest.org/en/stable/) is _THE_ testing library for Python.
+[pytest](https://docs.pytest.org/en/stable/) is the most popular testing library for Python.
 Writing simple and scalable test cases with it is just super easy.
 It supports fixtures, parameterized tests, and has a rich ecosystem of plugins.
 Just create a file named `test_<unit_or_module>.py` in `project-api/src/app/tests/`, and run:
