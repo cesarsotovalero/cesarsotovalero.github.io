@@ -18,13 +18,13 @@ published: true
 The [SIGBOVIK](http://sigbovik.org/)'s flagship conference is a satiric and incredibly interesting Computer Science venue sponsored by the self-called “Association for Computational Heresy (ACH).”
 The event has been celebrated annually since 2007 in honor of [Harry Quantifiability Bovik](https://www.cs.cmu.edu/afs/cs/usr/bovik/www/index.html), an unconventional professor from Carnegie Mellon University.
 SIGBOVIK is the cradle of the funniest presentations and the most controversial research experiments in the overarching field of Computer Science.
-The authors of the published papers are typically curious academics or retired entrepreneurs who attend the event with the purpose of having fun while staying away from ~~actual work~~ boredom. 
-The objectives of the venue include promoting open science on non-essential topics, such as “Fruitful Procrastination”, “Inept Expert Systems”, and “Perplexity Theory.” 
+The authors of the published papers are typically curious academics or retired entrepreneurs who attend the event with the purpose of having fun while staying away from ~~actual work~~ boredom.
+The objectives of the venue include promoting open science on non-essential topics, such as “Fruitful Procrastination”, “Inept Expert Systems”, and “Perplexity Theory.”
 Reading one the SIGBOVIK's proceedings was such a delight, so I can't avoid the temptation of writing about this fantastic source of nerdy academic inspiration.
 
 <figure class="jb_picture">
 {% responsive_image path: img/posts/2021/splatter.png alt:"Not a valid Perl program" %}
-<figcaption class="stroke"> 
+<figcaption class="stroke">
 &#169; This splatter is not a valid Perl program, obviously. Image shamelessly copied without any attribution from <a href="https://www.mcmillen.dev/sigbovik/">here</a>.
 </figcaption>
 </figure>
@@ -44,19 +44,18 @@ The submission has ~~strict~~ guidelines that follow the standards of any other 
 
 > “We especially welcome the three neglected quadrants of research: joke realizations of joke ideas, joke realizations of serious ideas, and serious realizations of joke ideas. (In other words: SIGBOVIK is an evening of tongue-in-cheek academic presentations, a venue for silly ideas and/or executions).”
 
-
 As happens with good science fiction, the organizers claim that many of the ideas published in the proceedings have become standards later on.
-So, it seems like the time machine of Computer Science research is already available for everyone to see it. 
+So, it seems like the time machine of Computer Science research is already available for everyone to see it.
 
 > “For example, double-blind reviewing has risen in popularity since the debut of our groundbreaking triple-blind reviewing process. Online question/answer sessions after presentations have arisen which mimic our more efficient pre-recorded process. Indeed, some of the most prevalent conferences in our field now require the uploading of pre-recorded talks, much like the original process that we demonstrated in 2020.”
- 
+
 # The Value
 
 {% badge /img/badges/artifact_evaluated_unusable.png 140 http://sigbovik.org/ %}
 Making fun of a complex topic is an excellent way of becoming more confident about it.
 I think this is one of the principal values of SIGBOVIK: demystifying complicated concepts through sarcasm and mockery.
 I often pick a paper there ~~when I'm on the toilet~~, and if I'm not able to understand the joke, it inspires me to learn more about it.
-And it is worth mentioning that learning inspired by curiosity is very effective. 
+And it is worth mentioning that learning inspired by curiosity is very effective.
 
 If you're a researcher, then you should know that being active seeking the best medium for research outreach and professional networking are [strategic activities](https://www.cesarsotovalero.net/blog/seven-reasons-to-go-for-a-phd-in-computer-science.html).
 In the academic world, this involves having a good level of personal charm and the intellectual abilities to drive an exciting conversation with talented people who are often experts in very niche domains.
@@ -90,35 +89,18 @@ This humor-filled conference contained several opportunities for those who want 
   </figcaption>
 </figure>
 
-# The Proceedings
+# Proceedings
 
 All proceedings are available for free online as PDF, and paperback versions can be brought [here](https://www.lulu.com/search?page=1&pageSize=4&q=SIGBOVIK&adult_audience_rating=00).
-But just in case you were too lazy to make your own searching, here is a compendium of all of them (2007-2021):
-
-[2021](../../files/SIGBOVIG/2021_SIGBOVIG_proceedings.pdf)
-[2020](../../files/SIGBOVIG/2020_SIGBOVIG_proceedings.pdf)
-[2019](../../files/SIGBOVIG/2019_SIGBOVIG_proceedings.pdf)
-[2018](../../files/SIGBOVIG/2018_SIGBOVIG_proceedings.pdf)
-[2017](../../files/SIGBOVIG/2017_SIGBOVIG_proceedings.pdf)
-[2016](../../files/SIGBOVIG/2016_SIGBOVIG_proceedings.pdf)
-[2015](../../files/SIGBOVIG/2015_SIGBOVIG_proceedings.pdf)
-[2014](../../files/SIGBOVIG/2014_SIGBOVIG_proceedings.pdf)
-[2013](../../files/SIGBOVIG/2013_SIGBOVIG_proceedings.pdf)
-[2012](../../files/SIGBOVIG/2012_SIGBOVIG_proceedings.pdf)
-[2011](../../files/SIGBOVIG/2011_SIGBOVIG_proceedings.pdf)
-[2010](../../files/SIGBOVIG/2010_SIGBOVIG_proceedings.pdf)
-[2009](../../files/SIGBOVIG/2009_SIGBOVIG_proceedings.pdf)
-[2008](../../files/SIGBOVIG/2008_SIGBOVIG_proceedings.pdf)
-[2007](../../files/SIGBOVIG/2007_SIGBOVIG_proceedings.pdf)
+But just in case you were too lazy to make your own searching, [here is my compendium](https://drive.google.com/drive/folders/1tXSthsafpixvB1Eig3HHZ7r1ceJvnO6x?usp=sharing) of all of them (2007-2025):
 
 # Conclusion
 
-Academic research is a [very serious endeavor](https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html). 
-As a result, most academics at some point of their career need to find a way to decompress from the daily pressures. 
+Academic research is a [very serious endeavor](https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html).
+As a result, most academics at some point of their career need to find a way to decompress from the daily pressures.
 That’s what I believe SIGBOVIK aims for: a way to escape from the rigor of standard academic research.
 Being part of this creative an unconventional community is definitely a plus, as good sense of humor as distinguished many of the bright minds.
 From my side, I’ve added “**getting published a paper at SIGBOVIK**” to my infinite list of pending accomplishments.
-
 
 **⚠️ Disclaimer:** Be aware that the SIGBOVIK content is extremely addictive; i.e., you might find yourself wasting hours into a rabbit hole while trying to understand the most ludicrous research.
 
@@ -126,5 +108,3 @@ From my side, I’ve added “**getting published a paper at SIGBOVIK**” to my
 
 - [sigbovik.org](http://sigbovik.org/)
 - [April Fool’s Computer Science Conference Gets Many Laughs](https://thetartan.org/2014/4/7/scitech/aprilfoolscs)
-
-
