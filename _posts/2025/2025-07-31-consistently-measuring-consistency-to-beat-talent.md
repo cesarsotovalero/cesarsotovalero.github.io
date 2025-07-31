@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Consistently Measuring Consistency to Beats Talent
+title: Consistently Measuring Consistency to Beat Talent
 subtitle: Why willpower, motivation, and discipline are not enough
 tags: career
 description: |
@@ -10,7 +10,7 @@ keywords:
   - consistency
   - hard work
   - personal development
-image: ../img/posts/2025/2025-07-12/viking-big-rune_cover.jpg
+image: ../img/posts/2025/2025-07-31/viking-big-rune_cover.jpg
 share-img: ../img/posts/2025/2025-07-31/viking-big-rune_cover.jpg
 show-avatar: false
 toc: true
@@ -22,14 +22,12 @@ published: true
 
 I've never considered myself particularly talented at anything.
 Ever.
-
 Since primary school, there were always other kids performing better than me.
 They ran faster, got higher grades, looked better, and so on...
 
-If we had followed the predictions, today I should be a loser (or something worse, like watching [Love Is Blind](https://en.wikipedia.org/wiki/Love_Is_Blind_(TV_series)) on Netflix).
-My talented early peers should be doing pretty well.
-But a couple of decades later, I've noticed that only a few of these kids are actually successful (according to common success metrics).
-And I don't consider myself a loser, at all.
+If we had followed the predictions, today I should be a complete loser,[^5] and my talented early peers should be doing pretty well.
+But a couple of decades later, I've noticed that only a few of these kids are actually successful today (according to most common success metrics).
+I don't consider myself a loser, at all.
 
 Why has this happened?
 
@@ -39,7 +37,7 @@ Period.
 
 Based on what I've seen, I confidently argue that anybody can outperform their toughest competitors by just being consistent.
 No matter how hard it seems, or how good they are.
-The question is not **if** but **when**.
+The question is not "if" but "when."
 
 The problem is that not everybody has what it takes to stay consistent over time.
 Because willpower, motivation, and discipline are not enough.
@@ -47,7 +45,7 @@ And admittedly, failing constantly (at anything) really sucks.
 
 So, how to achieve this kind of consistency?
 
-It may work differently for you, but for me it's a matter of **consistently tracking my consistency**.
+It may work differently for you, but for me it's a matter of **consistently measuring my level of consistency**.
 
 Let me explain.
 
@@ -146,7 +144,7 @@ Instead, I rely on **public exposure** of my work and automation systems that ke
 
 For example, I've [automated](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/f5cea42089dad8df514aed0a305dfa98b5dab3f8/.github/workflows/compile-resume-to-pdf.yml) the way I build [my resume](https://www.cesarsotovalero.net/files/CV/cesar-resume.pdf) using $$ \LaTeX $$ and GitHub actions.
 For that, I [created Python scripts](https://github.com/cesarsotovalero/cesarsotovalero.github.io/tree/master/scripts) that scrape my number of subscribers on YouTube, the number of followers on LinkedIn, the number of citations on Google Scholar, etc.
-I even keep track of [the timings](https://www.cesarsotovalero.net/races.html) for the races I run.
+I even keep track of [the timings](../races.html) for the races I run.
 
 This allows me to see my progress over time, and it also gives me a sense of accountability.
 At the end of each week or month, I look at my numbers to see if I hit my targets, and where I fell short.
@@ -194,3 +192,5 @@ And no matter what, just don't give up.
 [^3]: I have a friend who is a professional athlete, and he told me that the hardest part of his job is to stay consistent over time. He has to train every day, even when he doesn't feel like it, and that takes a lot of mental strength.
 
 [^4]: The idea that simple repetition will notj bring you very far doesn’t hold true today, AI solves the problem of lacking smart guidance and deliberate learning. Anyone can have the right guidance to learn the right things.
+
+[^5]: Or something worse, like somebody who spend his nights on the sofa watching [Love Is Blind](https://en.wikipedia.org/wiki/Love_Is_Blind_(TV_series)) on Netflix.
