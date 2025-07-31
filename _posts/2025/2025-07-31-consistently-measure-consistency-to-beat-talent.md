@@ -142,7 +142,8 @@ Once I set my goals, I lower the barrier to starting to the minimum.
 Making daily targets so small I can't say no.
 For that, I break down complex tasks into something easy to measure.
 
-Once these goals are set, I lower the barrier to starting by making daily targets incredibly small—so small, in fact, that saying "no" feels unreasonable.
+Once these goals are set, I lower the barrier to starting by making daily targets incredibly small.
+So small, in fact, that saying "no" feels unreasonable.
 
 For example:
 
