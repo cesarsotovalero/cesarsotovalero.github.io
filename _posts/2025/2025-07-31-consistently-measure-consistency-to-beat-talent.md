@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Consistently Measure Consistency to Beat Talent
-subtitle: Why willpower, motivation, and discipline are not enough
+subtitle: Because willpower, motivation, and discipline are not enough
 tags: career
 description: |
   I've never considered myself particularly talented at anything. Ever.
   But I have consistently outworked my peers, and I believe that anyone can outperform their toughest competitors by just being consistent.
+  So, consistency beats talent every time. The secret? Measure your consistency, not just your results.
+  In this post, I share why tracking your consistency is the real key to outperforming even the most talented people.
 keywords:
   - consistency
   - hard work
