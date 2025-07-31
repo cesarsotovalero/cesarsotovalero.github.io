@@ -1,23 +1,29 @@
 # _plugins/linkedin_embed.rb
 module Jekyll
   class LinkedInEmbedTag < Liquid::Tag
+    @@script_included = false
+
     def initialize(tag_name, markup, tokens)
       super
-      @url = markup.strip
+      raw = markup.strip
+      @url = if raw =~ %r{\Ahttps?://}
+               raw
+             else
+               "https://www.linkedin.com/posts/#{raw}"
+             end
     end
 
     def render(context)
-      url = if @url =~ %r{\Ahttps?://}
-              @url
-            else
-              "https://www.linkedin.com/posts/#{@url}"
-            end
-      <<~HTML
-      <div class="linkedin-embed">
-        <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-        <script type="IN/Embed" data-url="#{url}"></script>
-      </div>
-      HTML
+      html = +"<div class=\"linkedin-embed\" data-src=\"#{@url}\">\n"
+      unless @@script_included
+        html << <<~SCRIPT
+          <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+        SCRIPT
+        @@script_included = true
+      end
+      html << %Q{<script type="IN/Embed" data-url="#{@url}"></script>\n}
+      html << "</div>\n"
+      html
     end
   end
 end
