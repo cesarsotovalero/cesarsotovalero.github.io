@@ -187,7 +187,7 @@ Celebrate every time a planned task is done.
 # Final Thoughts
 
 <aside class="quote">
-    <em>“Happiness, for me, is consistently achieving my goals.”</em>
+    <em>“Happiness, for me, is nothing more than consistently achieving my goals.”</em>
 </aside>
 
 Consistency is the ultimate differentiator.
