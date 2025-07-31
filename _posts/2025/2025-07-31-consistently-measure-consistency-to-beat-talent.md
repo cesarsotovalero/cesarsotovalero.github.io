@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Consistently Measure Consistency to Beat Talent
+title: Consistently Measure Your Consistency to Beat Talent
 subtitle: Because willpower, motivation, and discipline are not enough
 tags: career
 description: |
