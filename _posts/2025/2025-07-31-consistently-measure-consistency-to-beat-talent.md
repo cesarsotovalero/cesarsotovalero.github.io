@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Consistently Measuring Consistency to Beat Talent
+title: Consistently Measure Consistency to Beat Talent
 subtitle: Why willpower, motivation, and discipline are not enough
 tags: career
 description: |
@@ -10,8 +10,8 @@ keywords:
   - consistency
   - hard work
   - personal development
-image: ../img/posts/2025/2025-07-31/viking-big-rune_cover.jpg
-share-img: ../img/posts/2025/2025-07-31/viking-big-rune_cover.jpg
+image: ../img/posts/2025/2025-07-31/the-iron-child_cover.jpg
+share-img: ../img/posts/2025/2025-07-31/the-iron-child_cover.jpg
 show-avatar: false
 toc: true
 mathjax: true
