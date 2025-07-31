@@ -3908,3 +3908,15 @@ html[data-theme="dark"] #footnotediv {
 #footnotediv p {
   margin: 10px;
 }
+
+/* LinkedIn embed styling */
+.linkedin-embed {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.linkedin-embed .IN-widget {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
