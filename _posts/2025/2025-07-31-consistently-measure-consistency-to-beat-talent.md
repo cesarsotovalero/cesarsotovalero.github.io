@@ -141,10 +141,6 @@ What I do:
 Every year, I set [a few goals that I want to achieve](https://www.linkedin.com/posts/cesarsotovalero_just-before-starting-every-new-year-i-do-activity-7280462841755631617-zaoS).
 I try to keep them small (no more than 5), so I can actually achieve them.
 
-Once I set my goals, I lower the barrier to starting to the minimum.
-Making daily targets so small I can't say no.
-For that, I break down complex tasks into something easy to measure.
-
 Once these goals are set, I lower the barrier to starting by making daily targets incredibly small.
 So small, in fact, that saying "no" feels unreasonable.
 
