@@ -1,0 +1,22 @@
+<item>
+  <title>{{ post.title | xml_escape }}</title>
+  <link>{{ site.url }}{{ post.url }}</link>
+  <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+  <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+
+  <description>
+    {% if post.description %}
+      {{ post.description | xml_escape }}
+    {% else %}
+      {{ post.excerpt | strip_html | xml_escape }}
+    {% endif %}
+  </description>
+
+  <content:encoded><![CDATA[
+    {% if post.excerpt %}
+      {{ post.excerpt | markdownify }}
+    {% else %}
+      {{ post.content | markdownify | truncatewords:80 }}
+    {% endif %}
+  ]]></content:encoded>
+</item>
