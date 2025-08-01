@@ -87,7 +87,7 @@ But, like anything truly valuable, becoming consistently consistent requires sig
 If I told you that you’d need to write [69 blog posts over 9 years](../blog/all-posts.html) _before_ getting [one of them](../blog/i-am-switching-to-python-and-actually-liking-it.html) [featured at the top of Hacker News](https://news.ycombinator.com/item?id=44579717), would you still write blog posts with that goal in mind?[^2]
 
 <aside class="quote">
-    <em>“Most people overestimate what they can do in one year and underestimate what they can do in ten years..”</em>
+    <em>“Most people overestimate what they can do in one year and underestimate what they can do in ten years.”</em>
     <cite><br> ― <a href="https://www.goodreads.com/quotes/302999-most-people-overestimate-what-they-can-do-in-one-year">Bill Gates</a></cite>
 </aside>
 
@@ -99,7 +99,7 @@ That's a lot of work, and most people wouldn't even begin.
 
 The fact that we have so many distractions and information flows nowadays makes truly consistent people very rare.
 Admittedly, it's very easy to get distracted by all kinds of shiny opportunities (just ask memecoin traders).
-I agree that one of the best ways to achieve is by becoming [indistractable](https://a.co/d/5F3bVnM).
+That's why becoming [indistractable](https://a.co/d/5F3bVnM) is such a superpower these days. 
 
 Modern society is making us addicted to easy gratification; when we don't get it immediately, we tend to give up.
 Most people will never have the consistency to overcome tedious repetition for that long.[^3]
@@ -110,22 +110,25 @@ But you need to put in the effort.
 
 All the time you’ll spend working hard and failing will make you think you’re a loser.
 You’ll feel like a nobody who sucks and isn’t good for anything and should just quit because you’ll never be good enough.
-This is how I feel most of the time.
+This is how I feel most of the time, btw. 
+But I'm aware of it.
 
-But I'm awere of it.
+Consistency is fundamentally a lonely, monotonous pursuit. 
+Long-term commitment often feels isolating, boring, and repetitive.
+Ask any successful entrepreneur, and they'll confirm they worked quietly, for years, before gaining traction and hit the marks.
 
-Consistency is fundamentally a lonely, monotonous pursuit. Long-term commitment often feels isolating, boring, and repetitive.
-Ask any successful entrepreneur, and they'll confirm they worked quietly, for years, before gaining traction.
+So, consistency is hard. 
 
 How do I sustain it?
 
-I trick my brain into consistency.
+I trick my brain into it.
 
 # Consistency Needs to Be Measured
 
-How can you make sure you're not goint off rails?
+How can you make sure you're on the rigth track?
+You measure it, automatically, with dashboards.
 
-I came up with a system to measure how consistent I'm being over time.
+I came up with a system to track how consistent I'm being over time.
 
 What I do:
 
