@@ -32,7 +32,7 @@ But a couple of decades later, I've noticed that only a few of these kids are ac
 
 Why is success non-linear?
 
-I came to the conclusion that the reason is that I've just outworked my popular early fellows with consistent hard work.
+I came to the conclusion that I've just outworked my ~~now lazy~~ popular early fellows with consistent hard work.
 That's all.
 Period.
 
@@ -47,7 +47,8 @@ And let's face it, constantly failing at anything really sucks.
 
 So, how exactly can anyone achieve consistency?
 
-I don't know about you, but for me, it's pretty straightforward: I consistently measure how consistent I am.
+I don't know about you, but for me, it's pretty straightforward: I consistently measure how consistent I am, and that's the fuel I need to keep
+going.
 
 Let me explain.
 
