@@ -2,7 +2,7 @@
 permalink: talks.html
 layout: page
 title: Talks
-description: Talks and presentations by César Soto Valero  
+description: Talks and presentations by César Soto Valero
 subtitle: 📢
 published: true
 ---
@@ -17,14 +17,14 @@ Below is a non-exhaustive list of my talks in reverse chronological order.
 
 ## 2025
 
-- **My Bank Meets AI: Smarter Decisions Beyond Fancier Spreadsheets**. Presented at [AI-fokus](https://www.jfokus.se/ai-fokus), Stockholm, January 2026. [Video](https://youtu.be/kFPE9EcxhCs "video"){:target="_blank"} [Slides](https://www.jfokus.se/aifokus25-preso/My-Bank-Meets-AI.pdf)
+- **My Bank Meets AI: Smarter Decisions Beyond Fancier Spreadsheets**. Presented at [AI-fokus](https://www.jfokus.se/ai-fokus), Stockholm, January 2026. [Video](https://youtu.be/kFPE9EcxhCs "video"){:target="\_blank"} [Slides](https://www.jfokus.se/aifokus25-preso/My-Bank-Meets-AI.pdf)
 
 ## 2024
 
 {% youtube Xn1ShZPrw2o %}
 
 - **The AI Secret: Why Predictive Machine Learning Still Rules The Real World**. Presented at _SEB Tech Day_ in Arenastaden Stockholm, October 2024. [Video](https://youtu.be/n1t3XEAyUgQ?si=3WKO3XZC_b_epmfo "video") [Slides](../files/presentations/The AI Secret - Why Predictive ML Still Rules the Real World.pptx)
-- **Dancing on Thin Ice - Leveraging Software Bill of Materials in Java**. Presented at [Jfokus](https://www.jfokus.se/talks/1661), Stockholm, February 2024. [Video](https://youtu.be/Xn1ShZPrw2o?si=sP5U0PATsrdHmwK1 "video"){:target="_blank"} [Slides](https://www.jfokus.se/jfokus24-preso/Dancing-on-Thin-Ice--Leveraging-Software-Bill-of-Materials-in-Java.pdf)
+- **Dancing on Thin Ice - Leveraging Software Bill of Materials in Java**. Presented at [Jfokus](https://www.jfokus.se/talks/1661), Stockholm, February 2024. [Video](https://youtu.be/Xn1ShZPrw2o?si=sP5U0PATsrdHmwK1 "video"){:target="\_blank"} [Slides](https://www.jfokus.se/jfokus24-preso/Dancing-on-Thin-Ice--Leveraging-Software-Bill-of-Materials-in-Java.pdf)
 - **Hand-In-Hand Live Coding Session With Github Copilot**. Presented at SEB's main theater in Solna, Stockholm, April 2024. [:globe_with_meridians: Post](https://www.linkedin.com/posts/cesarsotovalero_seb-sebtech-ai-activity-7185295533308002305-oRFv) [Slides](../files/presentations/hand-in-hand-live-coding-session-with-github-copilot.pptx)
 - **Enhancing Semantic Search With RAG**. Presented at SEB, Stockholm, March 2024. [Slides](../files/presentations/enhancing-semantic-search-with-rag.pptx)
 
@@ -36,17 +36,17 @@ Below is a non-exhaustive list of my talks in reverse chronological order.
 - **Debloating Java Dependencies**. PhD defense presented at KTH, June 2023. [Video](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw "video") [Slides](../files/thesis/slides/cesar-phd-defense.pptx)
 - **Software Supply Chain Security**. Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [Digital Futures](https://www.digitalfutures.kth.se/) in KTH, Sponsored by the [Swedish National Hacking Team](https://snht.se/) and [Cparta Cyber Defense](https://www.cparta.se/), June 2023. [Slides](https://docs.google.com/presentation/d/1ki5KITPSciccI1Qdh3wb7GOjdw8jq-CFbY-mvXLUv2c/edit?usp=sharing)
 - **The Software Supply Chain of Crypto and Decentralization**. Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [_2nd Descentralized Camp Meetup_](https://www.meetup.com/decentralized-camp/events/290035869/), Developers Bay, January 2023. [Slides](https://docs.google.com/presentation/d/14A3n_ZT13ealkTVUNnchS7pE03vOL6cDIQpiIZghuHY/edit?usp=sharing)
-  
+
 ## 2022
 
 {% youtube HXj2B8eHmt4 %}
 
 - **Coverage-Based Debloating for Java Bytecode**. Presented at ESEC/FSE, Singapore, November 2022. [Video](https://youtu.be/HXj2B8eHmt4 "video")
-- **Automatic Software Debloating**. 80% PhD Seminar. Presented at KTH, November 2022. [Slides](../talks/80_percent_2022.pdf "pdf")
+- **Automatic Software Debloating**. 80% PhD Seminar. Presented at KTH, November 2022. [Slides](../files/talks/80_percent_2022.pdf "pdf")
 - **The Multibillion Dollar Software Supply Chain of Ethereum**. Presented at _1st Workshop on the Software Supply Chain_, KTH, Sweden, October 2022. [Slides](https://docs.google.com/presentation/d/16yingW3HUNj6XmAfFFc_qz1bSI-ZRfV0/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
 - **Automatic Software Debloating**. Poster presented during _EECS Summer Event_, KTH, Sweden, June 2022. [Poster](../files/posters/poster-scs-48x36.pdf)
 - **Java is Going to the Moon: Native Images with GraalVM**. Presented at KTH, May 2022. [Slides](https://docs.google.com/presentation/d/1JDVerE77ZWLqwtWP430QXF1KTd4RhKoD/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
-- **A Prime on Software Debloating**. Presented at KTH, March 2022. [Slides](../talks/A_Prime_On_Software_Debloating.pdf "pdf")
+- **A Prime on Software Debloating**. Presented at KTH, March 2022. [Slides](../files/talks/A_Prime_On_Software_Debloating.pdf "pdf")
 - **The Software Supply Chain of Enterprise Java Ethereum Nodes**. Presented at KTH, January 2022. [Slides](https://docs.google.com/presentation/d/1pZGJ_9X_mvOzaqlelQbSyPI9opo6V_e1/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
 
 ## 2021
@@ -56,7 +56,7 @@ Below is a non-exhaustive list of my talks in reverse chronological order.
 - **DepClean: Automatically Revealing Bloated Software Dependencies in Maven Projects**. Presented at FOSDEM, February 2021. [Video](https://youtu.be/8SndbPMwdWE "video")
 - **The Software Production Landscape**. Presented at KTH, September 2021. [Slides](../files/presentations/software-production-landscape.pptx)
 - **A Longitudinal Analysis of Bloated Java Dependencies**. Presented at ESEC/FSE, August 2021. [Video](https://youtu.be/cePEl485E_s "video")
-- **Automated Software Debloat**. 50% PhD Seminar. Presented at KTH, April 2021. [Slides](../talks/50percent_seminar_kth_2021.pdf "pdf")
+- **Automated Software Debloat**. 50% PhD Seminar. Presented at KTH, April 2021. [Slides](../files/talks/50percent_seminar_kth_2021.pdf "pdf")
 
 ## 2020
 
