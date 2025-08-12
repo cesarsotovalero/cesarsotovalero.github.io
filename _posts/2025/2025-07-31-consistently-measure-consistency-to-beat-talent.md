@@ -100,7 +100,7 @@ That's a lot of work, and most people wouldn't even begin.
 
 The fact that we have so many distractions and information flows nowadays makes truly consistent people very rare.
 Admittedly, it's very easy to get distracted by all kinds of shiny opportunities (just ask memecoin traders).
-That's why becoming [indistractable](https://a.co/d/5F3bVnM) is such a superpower these days. 
+That's why becoming [indistractable](https://a.co/d/5F3bVnM) is such a superpower these days.
 
 Modern society is making us addicted to easy gratification; when we don't get it immediately, we tend to give up.
 Most people will never have the consistency to overcome tedious repetition for that long.[^3]
@@ -111,14 +111,14 @@ But you need to put in the effort.
 
 All the time you’ll spend working hard and failing will make you think you’re a loser.
 You’ll feel like a nobody who sucks and isn’t good for anything and should just quit because you’ll never be good enough.
-This is how I feel most of the time, btw. 
+This is how I feel most of the time, btw.
 But I'm aware of it.
 
-Consistency is fundamentally a lonely, monotonous pursuit. 
+Consistency is fundamentally a lonely, monotonous pursuit.
 Long-term commitment often feels isolating, boring, and repetitive.
 Ask any successful entrepreneur, and they'll confirm they worked quietly, for years, before gaining traction and hit the marks.
 
-So, consistency is hard. 
+So, consistency is hard.
 
 How do I sustain it?
 
@@ -155,8 +155,16 @@ The key isn't doing a lot in one sitting, but making some little progress every 
 ## Tracking the Progress
 
 I don't use a habit tracker, spreadsheet, or calendar.
-Instead, I rely on _public exposure_ of my work and automation systems that keep track of my progress.
+Instead, I rely on _public exposure_ of my work and automation systems that keep track of my progress and allow me to visualize it with analytics and data.
 
+Public exposure gives me a sense of accountability.
+It also raises the quality bar quite a bit because then I know that _other_ people will see my work.
+Nobody wants to look like a fool in public, right?
+
+Keeping track of my progress helps me see how I'm doing at a glance and make adjustments as needed.
+Also, looking at how the numbers change over time signals progress, makes me feel motivated when I feel progress happening.[^6]
+
+Automating the tracking process is key.
 For example, I've [automated](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/f5cea42089dad8df514aed0a305dfa98b5dab3f8/.github/workflows/compile-resume-to-pdf.yml) the way I build [my resume](https://www.cesarsotovalero.net/files/CV/cesar-resume.pdf) using $$ \LaTeX $$ and GitHub actions.
 For that, I [created Python scripts](https://github.com/cesarsotovalero/cesarsotovalero.github.io/tree/master/scripts) that scrape my number of subscribers on YouTube, the number of followers on LinkedIn, the number of citations on Google Scholar, etc.
 I even keep track of [the timings](../races.html) for the races I run.
@@ -208,3 +216,4 @@ And no matter what, just don't give up.
 [^3]: I have a friend who is a professional athlete, and he told me that the hardest part of his job is to stay consistent over time. He has to train every day, even when he doesn't feel like it, and that takes a lot of mental strength.
 [^4]: The idea that simple repetition will notj bring you very far doesn’t hold true today, AI solves the problem of lacking smart guidance and deliberate learning. Anyone can have the right guidance to learn the right things.
 [^5]: Or something worse, like somebody who spend his nights on the sofa watching ["Love Is Blind"](<https://en.wikipedia.org/wiki/Love_Is_Blind_(TV_series)>) on Netflix.
+[^6]: Looking at numbers and see how they grow over time is somehow addictive, just like how video game characters [level up over time](../blog/building-and-leveling-up-a-computer-scientist-resume.html).
