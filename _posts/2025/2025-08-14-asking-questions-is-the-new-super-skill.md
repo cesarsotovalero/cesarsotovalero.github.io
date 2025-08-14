@@ -11,12 +11,12 @@ keywords:
   - behavioral inteview
   - technical inteview
   - job search
-image: ../img/posts/2025/2025-07-25/TODO
-share-img: ../img/posts/2025/2025-07-25/TODO
+image: ../img/posts/2025/2025-08-14/TODO
+share-img: ../img/posts/2025/2025-08-14/TODO
 show-avatar: false
 toc: true
 mathjax: true
-date: 2025/07/27
+date: 2025/08/14
 author: cesarsotovalero
 published: false
 ---
