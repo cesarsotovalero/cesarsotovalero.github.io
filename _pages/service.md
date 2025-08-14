@@ -52,12 +52,12 @@ Also, my name is listed in the acknowledgments of the following papers:
 
 I've supervised Master and Bachelor students in the following theses:
 
-- "Detecting Semantic Changes in Dependency Updates Using Dynamic Analysis," [Leonard Sebastian Husmann](https://www.linkedin.com/in/leonard-husmann/), **Master Thesis**, KTH 2024 [PDF](https://kth.diva-portal.org/smash/get/diva2:1985091/FULLTEXT01.pdf)
-- "Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests," [Jacob Jernestål](https://www.linkedin.com/in/jacobjernestaal/), **Bachelor Thesis**, Mid Sweden University 2024 [PDF](https://www.diva-portal.org/smash/get/diva2:1877917/FULLTEXT01.pdf)
-- "The State of Software Diversity in the Software Supply Chain of Ethereum Clients," [Noak Jönsson](), **Bachelor Thesis**, KTH 2022 [PDF](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf)
-- "Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes," [Martin Sköld](https://www.linkedin.com/in/martin-sk%C3%B6ld-73b254155/), **Master Thesis**, KTH 2020 [PDF](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf)
-- "Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning," [Gustaf Halvardsson](https://www.linkedin.com/in/gustafhalvardsson/) and [Johanna Peterson](https://www.linkedin.com/in/johannamariapeterson/), **Bachelor Thesis**, KTH 2020 [PDF](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf)
-- "Análisis de La Actividad Competitiva en el Juego de Polo Acuático," [Pascalina Stanislas-Inglis](https://www.linkedin.com/in/pascalina-stanislas-inglis-702636102/). **Bachelor Thesis**, UCLV 2014 [PDF](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf)
+1. "Detecting Semantic Changes in Dependency Updates Using Dynamic Analysis," [Leonard Sebastian Husmann](https://www.linkedin.com/in/leonard-husmann/), **Master Thesis**, KTH 2024 [PDF](https://kth.diva-portal.org/smash/get/diva2:1985091/FULLTEXT01.pdf)
+2. "Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests," [Jacob Jernestål](https://www.linkedin.com/in/jacobjernestaal/), **Bachelor Thesis**, Mid Sweden University 2024 [PDF](https://www.diva-portal.org/smash/get/diva2:1877917/FULLTEXT01.pdf)
+3. "The State of Software Diversity in the Software Supply Chain of Ethereum Clients," [Noak Jönsson](), **Bachelor Thesis**, KTH 2022 [PDF](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf)
+4. "Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes," [Martin Sköld](https://www.linkedin.com/in/martin-sk%C3%B6ld-73b254155/), **Master Thesis**, KTH 2020 [PDF](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf)
+5. "Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning," [Gustaf Halvardsson](https://www.linkedin.com/in/gustafhalvardsson/) and [Johanna Peterson](https://www.linkedin.com/in/johannamariapeterson/), **Bachelor Thesis**, KTH 2020 [PDF](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf)
+6. "Análisis de La Actividad Competitiva en el Juego de Polo Acuático," [Pascalina Stanislas-Inglis](https://www.linkedin.com/in/pascalina-stanislas-inglis-702636102/). **Bachelor Thesis**, UCLV 2014 [PDF](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf)
 
 # Volunteer
 
@@ -80,16 +80,16 @@ My work has been featured in the following media:
 
 From 2019-2023, I worked as a teacher assistant (TA) for the following courses:
 
-- [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2023
-- [EF112X Examensarbete inom elektroteknik, grundnivå](https://www.kth.se/social/course/EF112X/), given by [Antita Kullen](https://people.kth.se/~kullen/) at KTH, Spring 2022
-- [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2022
-- [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
-- [:globe_with_meridians: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
-- [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2021
-- [DD1369 Software Engineering in Project Form](https://www.kth.se/social/course/DD1369/), given by [Dena Hussain](https://www.kth.se/profile/denah/) at KTH, Fall 2020
-- [DD2460 Software Safety and Security](https://www.kth.se/social/course/DD2460), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2020
-- [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2020
-- [DM1590 Machine Learning for Media Technology](https://www.kth.se/student/kurser/kurs/DM1590), given by [Bob Sturm](http://www.eecs.qmul.ac.uk/~sturm/) at KTH, Spring 2020
-- [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), given by [Linda Kann](http://www.csc.kth.se/~lk) at KTH, Fall 2019
-- [:globe_with_meridians: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2019
-- [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Spring 2019
+1. [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2023
+2. [EF112X Examensarbete inom elektroteknik, grundnivå](https://www.kth.se/social/course/EF112X/), given by [Antita Kullen](https://people.kth.se/~kullen/) at KTH, Spring 2022
+3. [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2022
+4. [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
+5. [:globe_with_meridians: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2021
+6. [DD2480 Software Engineering Fundamentals](https://www.kth.se/student/kurser/kurs/DD2480?l=en), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2021
+7. [DD1369 Software Engineering in Project Form](https://www.kth.se/social/course/DD1369/), given by [Dena Hussain](https://www.kth.se/profile/denah/) at KTH, Fall 2020
+8. [DD2460 Software Safety and Security](https://www.kth.se/social/course/DD2460), given by [Cyrille Artho](https://www.kth.se/profile/artho) at KTH, Spring 2020
+9. [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2020
+10. [DM1590 Machine Learning for Media Technology](https://www.kth.se/student/kurser/kurs/DM1590), given by [Bob Sturm](http://www.eecs.qmul.ac.uk/~sturm/) at KTH, Spring 2020
+11. [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), given by [Linda Kann](http://www.csc.kth.se/~lk) at KTH, Fall 2019
+12. [:globe_with_meridians: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2019
+13. [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Spring 2019
