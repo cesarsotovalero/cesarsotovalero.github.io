@@ -1,8 +1,8 @@
 ---
 layout: post
-title: My List of Unconventional Job Interview Questions for AI/ML positions
-subtitle: A living compendium
-tags: career
+title: When Answers are Cheap, Questions are Gold
+subtitle: Learning to ask is the new competitive edge
+tags: ai
 description: |
   TODO
 keywords:
@@ -21,11 +21,227 @@ author: cesarsotovalero
 published: false
 ---
 
+I remember, when I was 10, I had only a few old books at home.
+The new ones either weren’t available or they were too expensive for my budget.
+If I wanted to read good stuff, I had to walk to the local library and sit down there to read.
+Ten years later, on my 20s, I observed that university professors were respected for the sheer amount of knowledge they had accumulated over a lifetime.
+We valued them because their skills and expertise were scarce.
+Now, in my 30s, knowledge is everywhere.
+It’s cheaper than ever and moves at lightspeed.
+A curious 10-year-old today can access cutting-edge tools and learn from the latest research papers, from home!
+
+More remarkable, AI has drastically changed the value of knowledge in the last few years.
+Everyone can now prompt an AI assistant for free and get almost instant answers to most imaginable questions.
+This has optimized the search of human knowledge ever more.
+
+AI has made answers abundant.
+However, current models still struggle to figure out how to apply, synthesize, and adapt existing knowledge to create something genuinely new.
+With the rise of reasoning models, the ability to formulate the right questions has shifted the real differectiator from answering to formulating questions.
+
+I’d argue that as the value of getting answers goes down, the value of formulating new questions that drive action should go up.
+So, coming up with key questions represents the real competitive edge.
+
+What is more, I believe that the perceived value of those people who have master the "art of asking questions" must increase accordingly.
+ (e.g., podcast inverviewers, software engineers who know _what_ to put in a prompt, etc.).
+
+This post is about strategies and techiniques that I've learn over time to become better at the art asking questions.
+
+# When to Ask?
+
+Short answer: every time you can!
+
+Back in the days, asking frequent questions was considered an annoying practice in most circles.
+Why?
+Because of our inherent human laziness.
+Leaving a question in the air meant that somebody had to squizze her brain to find an answer.
+Otherwise, an uncorfortable void of uncertainty threated to emerge.
+This is not longer the case aymore.
+
+AI has completely removed the fear of "feeling stupid", for both sides: the asker and the responded.
+The more with use AI, the more confortable we are with the idea of questioning everything.
+In meetings or events, asking is a signal of attention, and in an era where AI can respond fast, it also signals the capacity to questioning the _status quo_ and having a personal opinion.
+
+The more questions you ask, the better prepared you will be for whatever is coming next.
+
+# What Makes a Question “Good”?
+
+Good questions describe what are we doing, where, and what will we do with the answer.
+They are unambiguous, give just enough backstory, and set limits.
+Great questions feel smaller, not bigger, because they carve away the irrelevant.
+If the question doesn’t change your next action or your metric, keep sharpening.
+
+## Aim, scope, and payoff (ASP)
+
+**Core idea:** Say what you’re trying to achieve (aim), how wide you’ll look (scope), and what you’ll do with the answer (payoff).
+
+**Why it works:** Without aim you wander, without scope you boil the ocean, without payoff you can’t act. A “good” question changes what happens in the next 10 minutes.
+
+**Mini-template (ASP):**
+
+* **Aim:** “We want to \_\_.”
+* **Scope:** “Within \_\_ (data/time/users/tools).”
+* **Payoff:** “So we can \_\_ (decision/action/experiment).”
+
+**Examples (before → after):**
+
+* Vague product: “How do we improve onboarding?” →
+  **Aim:** increase week-1 activation. **Scope:** mobile iOS, signup flow only. **Payoff:** decide which of 3 changes to A/B test.
+  **Question:** “What single change in the iOS signup flow would most increase week-1 activation, and which 3 options should we A/B test first?”
+
+* Research/analysis: “Is our model good?” →
+  **Aim:** choose to ship or retrain. **Scope:** fraud model v2 on last 30 days. **Payoff:** go/no-go.
+  **Question:** “Given the last 30 days, does fraud-v2 beat fraud-v1 on precision\@top1% by ≥2pp at equal recall, so we ship or retrain?”
+
+* Personal: “How can I get healthier?” →
+  **Aim:** improve sleep. **Scope:** next 14 days, bedtime routine only. **Payoff:** adopt one habit.
+  **Question:** “Which single bedtime habit should I try for 14 days to raise average sleep by 30 minutes?”
+
+**5-minute drill:** Before you ask, write ASP in one sentence. If you can’t name the **payoff**, you don’t have a question—just a topic.
+
+## Clarity, context, and constraints
+
+**Core idea:** Make the question unambiguous, include the background that matters, and set limits that force trade-offs.
+
+**Why it works:** Clarity prevents misreads, context prevents wheel-reinvention, constraints prevent infinite “it depends.”
+
+**The 3C pre-flight:**
+
+* **Clarity:** Define terms, units, and success. Prefer nouns and verbs over adjectives.
+* **Context:** Give the minimum viable backstory: objective, prior attempts, relevant data.
+* **Constraints:** Time, budget, tools, risk tolerance, guardrails.
+
+**Quick rewrites (before → after):**
+
+* “What’s the best database?” →
+  “For a write-heavy workload (\~5k writes/sec), 99.9% latency <10ms, EU-only, managed service—what database should we evaluate first and why?”
+* “How should I learn LLMs?” →
+  “With 5 hours/week for 6 weeks and access to GCP, what learning plan gets me from zero to fine-tuning a small model on our support tickets?”
+
+**Context sandwich (one sentence):**
+“Because **\[situation]**, I need **\[specific ask]**, under **\[constraints]**.”
+Example: “Because churn is up 3% in SMB, I need the top 3 drivers from last quarter’s usage logs, under the constraint that we ship findings to Sales by Friday.”
+
+**AI angle:** When using a model, include **role**, **data**, **format**, **limits**.
+Example: “Act as a data analyst. Using the attached CSV (30 days of transactions), list the top 5 features by SHAP for fraud-v2, in a markdown table, in <150 words.”
+
+**Red flags to cut:** adjectives without units (“fast,” “cheap”), plural asks in one sentence, undefined audiences (“users”), and scope creep (“and also…”).
+
+## Falsifiability and measurability
+
+**Core idea:** Phrase questions so answers can be *tested*. If it can’t be wrong, it can’t be right.
+
+**Why it works:** Decisions stick when they survive an attempt to disprove them. Measurement turns opinion into feedback.
+
+**Turn questions into testable claims:**
+
+* **Hypothesis form:** “We believe **X** will cause **Y** by **Z** amount for **group G** within **T**.”
+  Example: “We believe shortening the signup form from 7 to 4 fields will raise iOS activation by 3–5% for new users within 14 days.”
+
+* **Acceptance criteria:** “We proceed only if **metric ≥ threshold** under **condition**.”
+  Example: “Ship if precision\@top1% ≥ 0.92 with recall ≥ 0.55 on June data.”
+
+* **Disconfirmers first:** Ask, “What observation would *disprove* this?”
+  Example: “If activation does not increase by ≥1% after 7 days with 95% CI, we abandon the change.”
+
+**Measurability checklist:**
+
+* Named metric (not vibes).
+* Baseline value and target delta.
+* Time window and sample size.
+* Data source and method (how you’ll calculate).
+* Decision rule (go/stop/iterate).
+
+**Before → after (testable):**
+
+* “Will the new pricing work?” →
+  “In a 50/50 geo split for 21 days, does new pricing increase gross margin per user by ≥4% with no more than 1pp drop in conversion?”
+
+**AI angle (evaluation):**
+“Draft 3 alternative questions that could falsify my current belief, and for each, specify the metric, data needed, and a pass/fail rule.”
+
+**Reality check (one-line litmus test):**
+If two informed people would compute different answers from the same data, your question isn’t measurable yet.
+
+
+# Question Patterns You Can Steal
+
+Reusable structures help to think sharper, reduce bias, and get cleaner answers faster.
+
+   * 3.1 First-principles (“What are the primitives?”)
+   * 3.2 Inversion (“How could this fail?”)
+   * 3.3 Disconfirming evidence (“What would prove me wrong?”)
+   * 3.4 Assumption audit (“What am I taking for granted?”)
+   * 3.5 Constraint lens (“What if we had half the time/budget?”)
+   * 3.6 Comparative calibration (“Compared to what?”)
+   * 3.7 Decomposition (“Can we split this into 3 parts?”)
+   * 3.8 Time travel (pre-mortem/post-mortem)
+
+1. **The Podcaster Playbook** — Learn how elite interviewers engineer depth, warmth, and precision—and borrow their templates.
+
+   * 4.1 Lex Fridman: patient depth and precision prompts
+   * 4.2 Tim Ferriss: operational drills and unusual angles
+   * 4.3 Steven Bartlett: emotional truth and narrative unlocks
+   * 4.4 Transferable templates from their best moments
+
+2. **Work: Questions That Move Projects Forward** — Use questions to turn meetings into decisions, incidents into root causes, and hunches into hypotheses.
+
+   * 5.1 Meetings that ship decisions, not opinions
+   * 5.2 Incident/debug sessions that find root causes
+   * 5.3 Product and research: from hunch to hypothesis
+   * 5.4 Hiring and 1:1s that reveal signal
+   * 5.5 Strategy: define success metrics before solutions
+
+3. **Life: Questions That Upgrade Daily Choices** — Better questions improve relationships, learning speed, health habits, and money decisions.
+
+   * 6.1 Relationships: curiosity without accusation
+   * 6.2 Learning: from “what” to “how will I use this?”
+   * 6.3 Health & money: define leading indicators
+   * 6.4 Reflection: the nightly two-question review
+
+4. **Anti-Patterns: Questions That Backfire** — Avoid traps like leading, double-barreled, and blame-heavy questions that distort truth.
+
+   * 7.1 Loaded and leading questions
+   * 7.2 Double-barreled and vague scope
+   * 7.3 Why-blame vs. how-fix framing
+
+5. **The Question Pipeline (A Simple System)** — A lightweight workflow to capture, refine, rank, test, and learn from your questions.
+
+   * 8.1 Capture → Expand → Refine → Rank
+   * 8.2 Test with AI → Act → Reflect
+
+6. **Training Regimen (Short, Repeatable Drills)** — Build the muscle with quick, repeatable reps that sharpen clarity under constraints.
+
+   * 9.1 The 5× reframe (five better versions)
+   * 9.2 The constraint ladder (halve resources, then halve again)
+   * 9.3 The falsifier (write the disproof first)
+   * 9.4 The metric check (how will we know?)
+
+7.  **Tools & Templates** — Use simple checklists and prompt structures to make good questioning your default.
+
+    * 10.1 One-page question checklist
+    * 10.2 Interview prompts inspired by Lex/Tim/Steven
+    * 10.3 AI co-pilot prompts for faster iteration
+
+8.  **Quick Wins & Cheat Sheet** — Deploy high-leverage questions this week and a mini-template to turn vague asks into action.
+
+    * 11.1 Ten questions to use this week
+    * 11.2 How to turn any vague ask into an actionable prompt
+
+11. **Closing: A Simple Pact** — Commit to “one better question per day” and let compound curiosity do the rest.
+
+    * 12.1 “One better question per day”
+    * 12.2 Where to practice next
+
+
+
+
+
+
 <!-- Why communicating is important. -->
 
 For no one is a secret that there is just no carrer progress without strong communication skills.
 Language is intrinsically tied to our abilities to convery ideas.
-So important it is, aht today we're closer than ever to reach true AI capabilities through language.
+So important it is, that today we're closer than ever to reach true AI capabilities through language.
 
 <!-- Communication at job interviews. -->
 
@@ -134,8 +350,6 @@ Do you have a favorite model or a tool that you feel is underrated ?
 - Can you provide an example of a time when you had to adapt to a significant change in the workplace?
 - How do you handle constructive feedback from colleagues or supervisors?
 - How do you learn?
-
-# Situational
 
 # Leadership
 
@@ -294,3 +508,9 @@ What gives you energy?
 - https://www.linkedin.com/posts/joel-hellermark_what-are-your-best-interview-questions-activity-7344279466182897664-M48u?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB6LRIYBuuTSPSr7cPtObanXlRytHm6YRb8
 
 - Read ’Who’ by Geoff Smart some moons ago, based on 1300 hours of interviews with CEO’s on the hiring topic. NY times bestseller. Great questions and mental models. Recommeded!
+
+# My favorite podcasts
+
+- [The Tim Ferriss Show](https://www.youtube.com/playlist?list=PLuu6fDad2eJyWPm9dQfuorm2uuYHBZDCB)
+- [The Lex Fridman Podcast](http://www.youtube.com/@lexfridman)
+- [The Diary Of A CEO](https://www.youtube.com/@TheDiaryofACEO)
