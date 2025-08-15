@@ -4,7 +4,7 @@ title: When Answers are Cheap, Questions are Gold
 subtitle: Learning to ask is the new competitive edge
 tags: ai
 description: |
-  TODO
+
 keywords:
   - job interviews
   - job applications
@@ -35,7 +35,8 @@ A curious 10-year-old today can access cutting-edge tools and learn from the lat
 
 More remarkably, AI has drastically changed the way we value knowledge in the last few years.
 Everyone can now prompt an AI assistant (like ChatGPT) for free and get almost instant answers to practically any imaginable question.
-I believe AI optimizes the search of human knowledge even more than what the Google search engine did in the early days of the internet.
+I believe AI represents an optimization shift in the way we search for human knowledge.
+The impact could be even more than what the Google search engine did in the early days of the internet.
 
 AI has made answers abundant and general knowledge intuitively accessible.
 However, current AI models still struggle to figure out how to apply, synthesize, and adapt existing knowledge to create something genuinely new.
@@ -45,12 +46,17 @@ With the rise of more advanced reasoning models, the ability to formulate the ri
 AI has shifted our focus from trying to find answers to thinking about *what* and *how* to formulate the right questions.
 
 I’d argue that as the value of getting answers goes down, the value of formulating new questions that drive actual action should go up.
-So, coming up with original and relevant questions represents a real competitive edge atm.
+So, coming up with original and relevant questions represents a real competitive edge.
 
-What’s more, I believe that the perceived value of those who have mastered the “art of asking questions” will increase accordingly
-(e.g., podcast interviewers, software engineers who know what to put in a prompt, etc.).
+What’s more, I believe that the perceived value of those who have mastered the “art of asking questions” will increase accordingly.
+Just look at the rise of professions that rely heavily on questioning skills such as podcasters and interviewers.
+These guys have mastered the ability to ask good questions and extract value for their audience.
 
-This post is about strategies and techniques I’ve learned over time to become better at the art of asking questions, targeting both humans and AI alike.
+Day by day, I'm doing a conscious effort at becoming better at the art of asking questions.
+This post is about techniques, patterns and anti-patterns I’ve learned over time from top questioners.
+It covers real world examples and best practices targeting both humans and AI alike.
+
+👉 Check out my compilation of [Job Interview Questions](TODO).
 
 # When to Ask Questions?
 
@@ -70,10 +76,11 @@ In meetings or events, asking is a signal of attention, and in an era where AI c
 
 The more questions you ask, the better prepared you will be for whatever is coming next.
 
-# What Makes a Question Good?
+# Techniques
 
-Good questions have purpose and "make sense."
+Good questions have purpose and "make sense" in general.[^1]
 They are unambiguous, give just enough context, and set limits.
+
 Scope is reduced so that answer feel smaller.
 The question itself must strip away everything irrelevant.
 As a rule of thumb, if a the question doesn’t make any difference to the argument, it needs to be sharpened.
@@ -123,7 +130,7 @@ Quick rewrites:
 
 | ❌ Before                    | ✅ After                                                                                                                                       |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| “What’s the best database?” | “For a write-heavy workload (\~5k writes/sec), 99.9% latency <10ms, EU-only, managed service—what database should we evaluate first and why?” |
+| “What’s the best database?” | “For a write-heavy workload (\~5k writes/sec), 99.9% latency <10ms, EU-only, managed service, what database should we evaluate first and why?” |
 | “How should I learn LLMs?”  | “With 5 hours/week for 6 weeks and access to GCP, what learning plan gets me from zero to fine-tuning a small model on our support tickets?”  |
 
 ## Falsifiability and Measurability
@@ -142,7 +149,7 @@ Measurability checklist:
 
 | Requirement               | Description                        |
 | ------------------------- | ---------------------------------- |
-| Named metric              | Not vibes—actual measurable value. |
+| Named metric              | Not vibes, actual measurable value. |
 | Baseline & delta          | Current value and target change.   |
 | Time window & sample size | Duration and amount of data.       |
 | Data source & method      | How you’ll calculate the metric.   |
@@ -155,47 +162,48 @@ Quick Rewrite:
 | “Will the new pricing work?” | “In a 50/50 geo split for 21 days, does new pricing increase gross margin per user by ≥4% with no more than a 1pp drop in conversion?” |
 
 
-# Question Patterns
+# Patterns
 
 Reusable question patterns help you think more clearly, spot blind spots, and get better answers faster.
+
 Here are eight you can borrow and use right away.
 
-## First-principles (“What are the primitives?”)
+1. First-principles (“What are the primitives?”)
 
 Strip away jargon and complexity until you get to the most basic truths. From there, rebuild your understanding.
 This works because reality is easier to reason about than opinions.
 
-## Inversion (“How could this fail?”)
+2. Inversion (“How could this fail?”)
 
 Instead of only asking how to succeed, flip the question and look for ways it could go wrong.
 Anticipating failure is often the fastest way to avoid it.
 
-## Disconfirming evidence (“What would prove me wrong?”)
+3. Disconfirming evidence (“What would prove me wrong?”)
 
 Ask what would make your current belief false.
 This keeps you from cherry-picking facts that only confirm your view.
 
-## Assumption audit (“What am I taking for granted?”)
+4. Assumption audit (“What am I taking for granted?”)
 
 List the things you believe are true without checking.
 Questioning assumptions often reveals the weakest part of your thinking.
 
-## Constraint lens (“What if we had half the time/budget?”)
+5. Constraint lens (“What if we had half the time/budget?”)
 
 Imagine having fewer resources.
 Constraints force creativity, sharpen priorities, and surface shortcuts you might have missed.
 
-## Comparative calibration (“Compared to what?”)
+6. Comparative calibration (“Compared to what?”)
 
 Numbers and claims mean little without context.
 Always anchor them to a baseline, a competitor, or a past result.
 
-## Decomposition (“Can we split this into 3 parts?”)
+7. Decomposition (“Can we split this into 3 parts?”)
 
 Break a big problem into smaller, more manageable chunks.
 Solving each piece separately is often faster and less overwhelming.
 
-## Time travel (pre-mortem/post-mortem)
+8. Time travel (pre-mortem/post-mortem)
 
 Jump forward in time. In a pre-mortem, imagine the project has failed and ask why.
 In a post-mortem, imagine it has succeeded and trace back the steps that led there.
@@ -206,38 +214,32 @@ In a post-mortem, imagine it has succeeded and trace back the steps that led the
 
 Some questions don’t just fail to help but actually backfire.
 They actively distort the truth or shut down useful discussion.
-Here are three common traps to avoid.
 
-## Loaded and leading questions
+Here are three common traps to avoid:
+
+1. Loaded and leading questions
 
 These questions sneak in assumptions or push the respondent toward a certain answer.
 For example, “Why is our onboarding so bad?” assumes it *is* bad. Instead, ask neutrally: “How does our onboarding compare to expectations?”
 
-## Double-barreled and vague scope
+2. Double-barreled and vague scope
 
 Two questions in one confuse people and muddy the answer.
  “How do we improve onboarding and reduce churn?” is really two separate discussions.
- Similarly, asking with no clear scope—like “What’s the best database?”—leads to endless “it depends.” Split them and define the boundaries.
+ Similarly, asking with no clear scope, like “What’s the best database?”, leads to endless “it depends.” Split them and define the boundaries.
 
-## Why-blame vs. how-fix framing
+3. Why-blame vs. how-fix framing
 
 Asking “Who messed this up?” shifts focus to defending reputations instead of solving problems.
 “How can we prevent this next time?” keeps the discussion forward-looking and solution-oriented.
 
-# The Question Pipeline (A Simple System)
-
-A lightweight workflow to capture, refine, rank, test, and learn from your questions.
+4. Scope creep
 
 Two questions in one confuse people and muddy the answer.
 “How do we improve onboarding and reduce churn?” is really two separate discussions.
- Similarly, asking with no clear scope—like “What’s the best database?”—leads to endless “it depends.” Split them and define the boundaries.
+ Similarly, asking with no clear scope (like “What’s the best database?”) leads to endless “it depends.” Split them and define the boundaries.
 
-## Why-blame vs. how-fix framing
-
-Asking “Who messed this up?” shifts focus to defending reputations instead of solving problems. “How can we prevent this next time?” keeps the discussion forward-looking and solution-oriented.
-
-
-# How Do I train Questioning Abilities
+# How to Train
 
 
 Build the muscle with quick, repeatable reps that sharpen clarity under constraints.
@@ -258,22 +260,15 @@ Ten questions to use this week
 2. TODO
 3. ...
 
-
-
-
 # References
 
 
 
 
+# Footnotes
 
-
-
-
-
-
----
-
+[^1]: I know, if something makes or not is extremelly subjective, but let's say it should make sense for the answerer at last.
+[^2]: Note that in the case of humans, we tolerate less quality answers. In many cases, the exact answer is not as important as the method through which you came to that answer.
 
 
 <aside class="quote">
@@ -281,7 +276,7 @@ Ten questions to use this week
     <cite><br> ― <a href="https://en.wikipedia.org/wiki/Charles_F._Kettering">CF Kettering</a></cite>
 </aside>
 
-Sometimes, the exact answer is not as important as the method through which you came to that answer (especially for questions that ask for an exact number).
+ (especially for questions that ask for an exact number).
 This is why it’s important to show interviewers how you think, break down your steps, and logically explain each one.
 
 <div class="container-youtube">
@@ -295,7 +290,7 @@ This is why it’s important to show interviewers how you think, break down your
 # Technical
 
 - Describe the most difficult project you’ve worked on to date.
-- You’re tasked with explaining a basic coding principle—KISS—to a group of kindergarteners. You can use any supplies in the classroom. How do you go about it?
+- You’re tasked with explaining a basic coding principle, KISS, to a group of kindergarteners. You can use any supplies in the classroom. How do you go about it?
 - How easy or difficult it is to change a single field's type, add/remove fields at the platform level? Would clients break? Trying to determine the cascading effects it brings at Platform to Client levels.
 
 Basics: How does the web work?
@@ -401,7 +396,6 @@ Do you have a favorite model or a tool that you feel is underrated ?
 - What have you learned in the last six months?
 - In what way do people underestimate you?
 - I love "teach me about a time you had to learn something in a short time span"
-
 - What kind of person are you?
 - What important truth do very few people agree with you on?
 - "Why shouldn't I hire you?" -> Tests candidates' Theory of Mind capability, i.e., can the candidates take someone else's perspective, and offers the opportunity for deep, introspective answers.
@@ -429,22 +423,14 @@ Do you have a favorite model or a tool that you feel is underrated ?
 - What kind of work makes you lose track of time?
 - What question would you have wanted me to ask?
 - Why are you here today?
-
-1. If I were to complement you with another team mate, what personality traits or skillset would be complementary to yours? (A non-obvious way of asking, what are your weaknesses).
-
-2. Which constructive feedback have you received more than once? Did you incorporate change with regard to it or not? Why? (Answer so much more than this specific question)
-
-3. Tell me about a mistake you made and how it affected the broader organization or your team? (Same with this one, especially if the person blames circumstances/team and can't take responsibility for own mistakes)
-
-Other than that, digging into "how do you know that?" "how did you measure that?" "what was the outcome?" gives me a sense of if a person understands the bigger picture of actions or sees themselves as a "coder" alone.
-
-Pick an area you know really well. Take 5 minutes to prepare and then teach me everything I should know about it.
-
-Whats important in your life? Why?
-
-What does resilience look like for you?
-
-what is the worst question I could ask you and why
+- If I were to complement you with another team mate, what personality traits or skillset would be complementary to yours? (A non-obvious way of asking, what are your weaknesses).
+- Which constructive feedback have you received more than once? Did you incorporate change with regard to it or not? Why? (Answer so much more than this specific question)
+- Tell me about a mistake you made and how it affected the broader organization or your team? (Same with this one, especially if the person blames circumstances/team and can't take responsibility for own mistakes)
+- Other than that, digging into "how do you know that?" "how did you measure that?" "what was the outcome?" gives me a sense of if a person understands the bigger picture of actions or sees themselves as a "coder" alone.
+- Pick an area you know really well. Take 5 minutes to prepare and then teach me everything I should know about it.
+- Whats important in your life? Why?
+- What does resilience look like for you?
+- What is the worst question I could ask you and why
 
 "Could you walk me through your most important life and career choices, that made you end up here - and why you took them?" -> A good answer here could signal high intentionality, self-reflection, and personal drive. This also indicates if the person can handle life challenges and changes (e.g. kids, sickness, job loss, etc.)
 
@@ -486,3 +472,4 @@ What gives you energy?
 - [The Tim Ferriss Show](https://www.youtube.com/playlist?list=PLuu6fDad2eJyWPm9dQfuorm2uuYHBZDCB)
 - [The Lex Fridman Podcast](http://www.youtube.com/@lexfridman)
 - [The Diary Of A CEO](https://www.youtube.com/@TheDiaryofACEO)
+- [The Joe Rogan Experience](https://www.youtube.com/@PowerfulJRE)
