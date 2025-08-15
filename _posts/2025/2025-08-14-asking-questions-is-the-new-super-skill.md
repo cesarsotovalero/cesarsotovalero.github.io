@@ -86,8 +86,12 @@ There are three techniques to improve question formulation:
 
 ## Aim, Scope, Payoff
 
-**Core idea:** State what you’re trying to achieve (**Aim**), how far you’ll look (**Scope**), and what you’ll do with the answer (**Payoff**).
-**Why it works:** Without aim you wander. Without scope you boil the ocean. Without payoff you can’t act. A good question changes what happens in the next 10 minutes.
+Without aim you wander.
+Without scope you boil the ocean.
+Without payoff you can’t act.
+A good question changes what happens in the next 10 minutes.
+
+So, the core idea is to state what you’re trying to achieve (aim), how far you’ll look (scope), and what you’ll do with the answer (payoff).
 
 | Element    | Description                                            | Template                                       |
 | ---------- | ------------------------------------------------------ | ---------------------------------------------- |
@@ -105,13 +109,15 @@ Examples:
 
 ## Clarity, Context, Constraints
 
-**Core idea:** Make the question unambiguous, include the background that matters, and set limits that force trade-offs.
+Clarity prevents misreads, context prevents wheel-reinvention, constraints prevent infinite “it depends.”
+
+The core idea of this principle is to make the question unambiguous, include the background that matters, and set limits that force trade-offs.
 
 | Element         | Description                                                           | Example                                                       |
 | --------------- | --------------------------------------------------------------------- | ------------------------------------------------------------- |
-| **Clarity**     | Define terms, units, and success. Prefer nouns/verbs over adjectives. | “Write-heavy workload (\~5k writes/sec), 99.9% latency <10ms” |
-| **Context**     | Minimum viable backstory: objective, prior attempts, relevant data.   | “Churn up 3% in SMB last quarter”                             |
-| **Constraints** | Time, budget, tools, risk tolerance, guardrails.                      | “EU-only, managed service, must decide by Friday”             |
+| Clarity         | Define terms, units, and success. Prefer nouns/verbs over adjectives. | “Write-heavy workload (\~5k writes/sec), 99.9% latency <10ms” |
+| Context         | Minimum viable backstory: objective, prior attempts, relevant data.   | “Churn up 3% in SMB last quarter”                             |
+| Constraints     | Time, budget, tools, risk tolerance, guardrails.                      | “EU-only, managed service, must decide by Friday”             |
 
 Quick rewrites:
 
@@ -122,13 +128,15 @@ Quick rewrites:
 
 ## Falsifiability and Measurability
 
-**Core idea:** Phrase questions so answers can be tested. If it can’t be wrong, it can’t be right.
+Decisions stick when they survive an attempt to disprove them.
+Measurement turns opinion into feedback.
+The core idea is to phrase questions so answers can be tested. If it can’t be wrong, it can’t be right.
 
-| Pattern                 | Description                                                         | Example                                                                                                                    |
+| Pattern                 | Description                                   | Example                                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **Hypothesis form**     | State belief, expected outcome, magnitude, audience, and timeframe. | “We believe shortening the signup form from 7 to 4 fields will raise iOS activation by 3–5% for new users within 14 days.” |
-| **Acceptance criteria** | Define clear pass/fail metrics.                                     | “Ship if precision\@top1% ≥ 0.92 with recall ≥ 0.55 on June data.”                                                         |
-| **Disconfirmers first** | Identify what would prove the belief false.                         | “If activation does not increase by ≥1% after 7 days with 95% CI, abandon the change.”                                     |
+| Hypothesis form     | State belief, expected outcome, magnitude, audience, and timeframe. | “We believe shortening the signup form from 7 to 4 fields will raise iOS activation by 3–5% for new users within 14 days.” |
+| Acceptance criteria | Define clear pass/fail metrics.                                     | “Ship if precision\@top1% ≥ 0.92 with recall ≥ 0.55 on June data.”                                                         |
+| Disconfirmers first | Identify what would prove the belief false.                         | “If activation does not increase by ≥1% after 7 days with 95% CI, abandon the change.”                                     |
 
 Measurability checklist:
 
@@ -264,10 +272,7 @@ Ten questions to use this week
 
 
 
-
-
-
-
+---
 
 
 
@@ -284,17 +289,13 @@ This is why it’s important to show interviewers how you think, break down your
 </div>
 
 - What side projects are you working on?" -> People who are passionate in my industry don't stop learning and exploring when they get home.
-
 - Show me an example of your written work. Or take take 5 minutes and write down your responce to this email. Why? Interviews are very verbal, most office jobs are not.
-
 - our company values are xyz we're thinking of dropping one, which would you drop and why. You the keep dropping one. You could also be a total douche and ask the question without listing the values.
 
 # Technical
 
 - Describe the most difficult project you’ve worked on to date.
--
 - You’re tasked with explaining a basic coding principle—KISS—to a group of kindergarteners. You can use any supplies in the classroom. How do you go about it?
-
 - How easy or difficult it is to change a single field's type, add/remove fields at the platform level? Would clients break? Trying to determine the cascading effects it brings at Platform to Client levels.
 
 Basics: How does the web work?
@@ -323,17 +324,13 @@ Do you have a favorite model or a tool that you feel is underrated ?
 # Random
 
 - Tell me about some adventorous thing that you have done.
-
 - What was the last book you read and what did you learn from it?
-
 - How would you sell ice cream in Alaska?
 
 # Logical
 
 - If you look at a clock and the time is 4:17, what is the angle between the hour and the minute hands?
-
 - How would you figure out the weight of a commercial airplane without a scale?
-
 - How would you escape if you were trapped inside a washing machine?
 
 # Behavioral
@@ -406,49 +403,32 @@ Do you have a favorite model or a tool that you feel is underrated ?
 - I love "teach me about a time you had to learn something in a short time span"
 
 - What kind of person are you?
-
 - What important truth do very few people agree with you on?
-
 - "Why shouldn't I hire you?" -> Tests candidates' Theory of Mind capability, i.e., can the candidates take someone else's perspective, and offers the opportunity for deep, introspective answers.
-
 - "What is the conventional wisdom in [technical field XYZ] that you most strongly disagree with and why?" -> Tests candidates' comprehension of status quo of the technical field and their ability to critically reflect on the status quo.
-
 - If you could replace the office coffee machine with any other dispenser, what would it be?
-
 - If married / in a relationship - what about your partner made you choose them? -> The answer will share what the interviewee values in a person and often times what the interviewee’s self-perceived weaknesses are.
-
 - What’s your favourite fruit. Then ask “why?”. -> It shows you how the interviewee makes an argument around something subjective. I’ve found this can be a lens into how one thinks and communicates when things are ambiguous.
-
 - “What’s your superpower?
 - What is the next thing you want to learn?
 - What is the hardest problem (each in private life and business context) and share with me in detail on how you conquered it (even when you “failed”)?
 - 'Who from your previous company would you bring with you to maximize our chances of success?' -> Found it to be a great way to (1) uncover high-quality referrals, but also (2) a subtle way to surface blind spots or assumptions a candidate may have about their role
 - What do people get wrong about you on first impressions? What would they say on day 1 and after 6 months?
-
 - Why should we hire you?
 - What makes you suitable for this role?
 - Why are you still sitting here after i asked you those questions?
-
 - What energizes you at work? (reveals intrinsic motivation)
 - Tell me about something you changed your mind on recently. (shows intellectual humility)
 - What would your least favorite coworker say about you? (uncovers self-awareness)
-
 - What’s the best part of your job?
-
 - As a leader, how do you know if you're being effective or having impact? Based on that - how do you prioritize your time?
 - As you come in to this position - what are the roles, skills or personalities you need to ensure is around you or in your team for you to succeed?
-
 - How do you build relationships and trust with people in your team ?
-
-If everything goes right in your current company over the next five years, where do you end up? How will you have got there?
-
-What's the boldest decision you've made in the past year that ultimately involved a 'leap of faith' in the absence of good data?
-
-What kind of work makes you lose track of time?
-
-What question would you have wanted me to ask?
-
-Why are you here today?
+- If everything goes right in your current company over the next five years, where do you end up? How will you have got there?
+- What's the boldest decision you've made in the past year that ultimately involved a 'leap of faith' in the absence of good data?
+- What kind of work makes you lose track of time?
+- What question would you have wanted me to ask?
+- Why are you here today?
 
 1. If I were to complement you with another team mate, what personality traits or skillset would be complementary to yours? (A non-obvious way of asking, what are your weaknesses).
 
