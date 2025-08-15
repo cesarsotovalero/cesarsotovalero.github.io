@@ -154,17 +154,21 @@ The key isn't doing a lot in one sitting, but making some little progress every 
 
 ## Tracking the Progress
 
-I don't use a habit tracker, spreadsheet, or calendar.
-Instead, I rely on _public exposure_ of my work and automation systems that keep track of my progress and allow me to visualize it with analytics and data.
+Today, I don't use a habit tracker, spreadsheet, or calendar (tried in the past but didn't stick).
+Instead, I rely on 1) public exposure of my work, and 2) automation systems that keep track of my progress.
+This approach allows me to check the status of my projects in a data-driven manner (i.e., with analytics and data).
 
-Public exposure gives me a sense of accountability.
-It also raises the quality bar quite a bit because then I know that _other_ people will see my work.
+{% badge /img/badges/show-your-work.jpg 140 https://amzn.eu/d/179RT62 %}
+
 Nobody wants to look like a fool in public, right?
+When creating in public, the mere sense of public exposure provides a sense of accountability.
+For me, it also raises the quality bar quite a bit because then I know that _other_ people will see my work.
 
 Keeping track of my progress helps me see how I'm doing at a glance and make adjustments as needed.
-Also, looking at how the numbers change over time signals progress, makes me feel motivated when I feel progress happening.[^6]
+Also, looking at how the numbers change over time signals progress, which makes me feel motivated.[^6]
+But I don't want to get too obsesed and waste time on vanity metrics, this is when automation comes in.
 
-Automating the tracking process is key.
+Automating the tracking process is a necessary step fordward.
 For example, I've [automated](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/f5cea42089dad8df514aed0a305dfa98b5dab3f8/.github/workflows/compile-resume-to-pdf.yml) the way I build [my resume](https://www.cesarsotovalero.net/files/CV/cesar-resume.pdf) using $$ \LaTeX $$ and GitHub actions.
 For that, I [created Python scripts](https://github.com/cesarsotovalero/cesarsotovalero.github.io/tree/master/scripts) that scrape my number of subscribers on YouTube, the number of followers on LinkedIn, the number of citations on Google Scholar, etc.
 I even keep track of [the timings](../races.html) for the races I run.
