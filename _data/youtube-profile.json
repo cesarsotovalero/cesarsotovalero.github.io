@@ -1,6 +1,6 @@
 {
   "kind": "youtube#channelListResponse",
-  "etag": "izuaTSChiEqFanpo6OJ4eq9s3mg",
+  "etag": "pjQ-0KjgAB4APePti0cBGTw5UiI",
   "pageInfo": {
     "totalResults": 1,
     "resultsPerPage": 5
@@ -8,11 +8,11 @@
   "items": [
     {
       "kind": "youtube#channel",
-      "etag": "AwnYB_6sHUQL4BFVHBs3CXU5v2E",
+      "etag": "W5YGIqoNoOpghCQNyso4U7alhzg",
       "id": "UCR4rI98w6-MqYoCS6jR9LGg",
       "snippet": {
         "title": "C\u00e9sar Soto Valero",
-        "description": "I simplify complex AI/ML concepts and empower folks to achieve their goals by sharing the fundamentals and real-world insights that I\u2019ve gained through decades of education, research, and work experience.",
+        "description": "I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals, and the real-world lessons I\u2019ve gained from over two decades of higher education, academic research, and industry experience.",
         "customUrl": "@cesarsotovalero",
         "publishedAt": "2016-03-24T20:49:46Z",
         "thumbnails": {
@@ -34,13 +34,13 @@
         },
         "localized": {
           "title": "C\u00e9sar Soto Valero",
-          "description": "I simplify complex AI/ML concepts and empower folks to achieve their goals by sharing the fundamentals and real-world insights that I\u2019ve gained through decades of education, research, and work experience."
+          "description": "I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals, and the real-world lessons I\u2019ve gained from over two decades of higher education, academic research, and industry experience."
         },
         "country": "SE"
       },
       "statistics": {
-        "viewCount": "18173",
-        "subscriberCount": "310",
+        "viewCount": "18195",
+        "subscriberCount": "311",
         "hiddenSubscriberCount": false,
         "videoCount": "22"
       }
