@@ -3651,6 +3651,20 @@ pre .language-mermaid {
   transition: transform 0.3s ease;
 }
 
+.linkedin-post-thumbnail video {
+  max-width: 100%;
+  height: auto;
+  max-height: 320px;
+  border-radius: 8px;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .linkedin-post-thumbnail video {
+    max-height: 220px;
+  }
+}
+
 .linkedin-post-thumbnail img:hover {
   transform: scale(1.05);
 }

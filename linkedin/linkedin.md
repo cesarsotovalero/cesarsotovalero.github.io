@@ -2,7 +2,7 @@
 permalink: linkedin.html
 layout: page
 title: LinkedIn Posts
-subtitle: '🤝'
+subtitle: "🤝"
 description: LinkedIn posts posted by César Soto Valero.
 published: true
 ---
@@ -31,29 +31,29 @@ published: true
           <span>🔁 Repost: {{ post.repostsCount | default: 0 }}</span>
         </p>
       </div>
-      {% assign image_folder = '/assets/images/linkedin/' | append: post.posted_at.timestamp | append: '/' %}
-      {% assign largest_image = nil %}
-      {% assign max_width = 0 %}
+      {% assign media_folder = '/assets/images/linkedin/' | append: post.posted_at.timestamp | append: '/' %}
+      {% assign post_media = nil %}
       {% for file in site.static_files %}
-        {% if file.path contains image_folder %}
-          {% assign file_name = file.name | split: '.' | first %}
-          {% assign dimensions = file_name | split: 'x' %}
-          {% if dimensions.size == 2 %}
-            {% assign width = dimensions[0] | plus: 0 %}
-            {% if width > max_width %}
-              {% assign max_width = width %}
-              {% assign largest_image = file.path %}
-            {% endif %}
-          {% endif %}
+        {% if file.path contains media_folder %}
+          {% assign post_media = file.path %}
+          {% break %}
         {% endif %}
       {% endfor %}
 
-      {% if largest_image %}
+      {% if post_media %}
       <div class="linkedin-post-thumbnail">
-        <img src="{{ largest_image }}" alt="LinkedIn Post Image">
+        {% if post.media and post.media.type == 'video' %}
+        <video controls>
+          <source src="{{ post_media }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        {% else %}
+        <img src="{{ post_media }}" alt="LinkedIn Post Image">
+        {% endif %}
       </div>
       {% endif %}
     </div>
+
   </a>
   {% endfor %}
 </div>
