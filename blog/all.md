@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blog/by-year.html
+permalink: /blog/all.html
 title: Blog Posts by Year
 description: "All the blog posts written by Cesar Soto Valero"
 ---
