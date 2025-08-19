@@ -16,7 +16,7 @@ published: true
 </div>
 
 {% assign sorted_posts = site.data.linkedin-posts.data.posts | sort: "totalReactionCount" | reverse %}
-{% assign ranges_order = "100+,50-99,10-49,1-9" | split: "," %}
+{% assign ranges_order = "100+,50-99,10-49,0-9" | split: "," %}
 
 <!-- Reactions cloud -->
 <div class="tag-list">
@@ -37,7 +37,7 @@ published: true
       {% if range == "100+" and reactions >= 100 %}{% assign in_range = true %}{% endif %}
       {% if range == "50-99" and reactions >= 50 and reactions < 100 %}{% assign in_range = true %}{% endif %}
       {% if range == "10-49" and reactions >= 10 and reactions < 50 %}{% assign in_range = true %}{% endif %}
-      {% if range == "1-9" and reactions >= 1 and reactions < 10 %}{% assign in_range = true %}{% endif %}
+      {% if range == "0-9" and reactions >= 0 and reactions < 10 %}{% assign in_range = true %}{% endif %}
       {% if in_range %}
         {% assign posts_count = posts_count | plus: 1 %}
       {% endif %}
@@ -54,7 +54,7 @@ published: true
         {% if range == "100+" and reactions >= 100 %}{% assign in_range = true %}{% endif %}
         {% if range == "50-99" and reactions >= 50 and reactions < 100 %}{% assign in_range = true %}{% endif %}
         {% if range == "10-49" and reactions >= 10 and reactions < 50 %}{% assign in_range = true %}{% endif %}
-        {% if range == "1-9" and reactions >= 1 and reactions < 10 %}{% assign in_range = true %}{% endif %}
+        {% if range == "0-9" and reactions >= 0 and reactions < 10 %}{% assign in_range = true %}{% endif %}
         {% if in_range %}
           <div class="tag-entry">
             <a href="{{ post.url }}" target="_blank">{{ post.text | truncatewords: 15 }}</a>

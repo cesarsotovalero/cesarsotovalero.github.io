@@ -7,8 +7,6 @@ description: "Blog posts written by Cesar Soto Valero"
 
 {% include subscribe.html %}
 
-<br>
-
 <!-- count all post published this month -->
 {% assign current_date = 'now' | date: '%Y-%m' %}
 {% assign current_month_post_count = 0 %}
@@ -31,7 +29,7 @@ description: "Blog posts written by Cesar Soto Valero"
 
 <div class="list-filters">
    <a href="/blog/this-month.html" class="list-filter"> This Month ({{ current_month_post_count }})</a>
-   <a href="/blog/all-posts.html" class="list-filter">All ({{ published_posts.size }})</a>
+   <a href="/blog/all.html" class="list-filter">All ({{ published_posts.size }})</a>
    <a href="/blog/tags.html" class="list-filter">Tags ({{ unique_tags.size }})</a>
 </div>
 

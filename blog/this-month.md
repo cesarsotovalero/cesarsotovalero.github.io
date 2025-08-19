@@ -5,6 +5,8 @@ title: Blog Posts This Month
 description: "All the blog posts written this month by Cesar Soto Valero"
 ---
 
+{% include subscribe.html %}
+
 {% assign current_month_name = 'now' | date: "%B" %}
 {% assign current_year = 'now' | date: "%Y" %}
 {% assign current_month = 'now' | date: "%m" %}
@@ -32,7 +34,7 @@ description: "All the blog posts written this month by Cesar Soto Valero"
 
 <div class="list-filters">
    <a href="/blog/this-month.html" class="list-filter"> This Month ({{ current_month_post_count }})</a>
-   <a href="/blog/all-posts.html" class="list-filter">All ({{ published_posts.size }})</a>
+   <a href="/blog/all.html" class="list-filter">All ({{ published_posts.size }})</a>
    <a href="/blog/tags.html" class="list-filter">Tags ({{ unique_tags.size }})</a>
 </div>
 

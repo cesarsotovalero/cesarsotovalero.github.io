@@ -16,7 +16,7 @@ published: true
 </div>
 
 {% assign sorted_posts = site.data.linkedin-posts.data.posts | sort: "commentsCount" | reverse %}
-{% assign ranges_order = "100+,50-99,10-49,1-9" | split: "," %}
+{% assign ranges_order = "100+,50-99,10-49,0-9" | split: "," %}
 
 <!-- Comments cloud -->
 <div class="tag-list">
@@ -39,7 +39,7 @@ published: true
         {% assign in_range = true %}
       {% elsif range == "10-49" and comments >= 10 and comments < 50 %}
         {% assign in_range = true %}
-      {% elsif range == "1-9" and comments >= 1 and comments < 10 %}
+      {% elsif range == "0-9" and comments >= 0 and comments < 10 %}
         {% assign in_range = true %}
       {% endif %}
       {% if in_range %}
@@ -60,7 +60,7 @@ published: true
           {% assign in_range = true %}
         {% elsif range == "10-49" and comments >= 10 and comments < 50 %}
           {% assign in_range = true %}
-        {% elsif range == "1-9" and comments >= 1 and comments < 10 %}
+        {% elsif range == "0-9" and comments >= 0 and comments < 10 %}
           {% assign in_range = true %}
         {% endif %}
         {% if in_range %}
