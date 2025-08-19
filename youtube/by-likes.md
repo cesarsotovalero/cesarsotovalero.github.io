@@ -1,4 +1,3 @@
-<!-- markdownlint-disable MD033 MD041 MD022 -->
 ---
 layout: page
 permalink: /youtube/by-likes.html
