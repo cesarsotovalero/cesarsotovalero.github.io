@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /linkedin/comments.html
+permalink: /linkedin/by-comments.html
 title: LinkedIn Posts by Comments
 description: LinkedIn posts by César Soto Valero, sorted by number of comments.
 published: true
@@ -32,13 +32,17 @@ published: true
     {% assign posts_count = 0 %}
     {% for post in sorted_posts %}
       {% assign comments = post.commentsCount | default: 0 %}
+      {% assign in_range = false %}
       {% if range == "100+" and comments >= 100 %}
-        {% assign posts_count = posts_count | plus: 1 %}
+        {% assign in_range = true %}
       {% elsif range == "50-99" and comments >= 50 and comments < 100 %}
-        {% assign posts_count = posts_count | plus: 1 %}
+        {% assign in_range = true %}
       {% elsif range == "10-49" and comments >= 10 and comments < 50 %}
-        {% assign posts_count = posts_count | plus: 1 %}
+        {% assign in_range = true %}
       {% elsif range == "1-9" and comments >= 1 and comments < 10 %}
+        {% assign in_range = true %}
+      {% endif %}
+      {% if in_range %}
         {% assign posts_count = posts_count | plus: 1 %}
       {% endif %}
     {% endfor %}
@@ -49,16 +53,23 @@ published: true
     <div class="post-list">
       {% for post in sorted_posts %}
         {% assign comments = post.commentsCount | default: 0 %}
-        {% if range == "100+" and comments >= 100 or
-              range == "50-99" and comments >= 50 and comments < 100 or
-              range == "10-49" and comments >= 10 and comments < 50 or
-              range == "1-9" and comments >= 1 and comments < 10 %}
+        {% assign in_range = false %}
+        {% if range == "100+" and comments >= 100 %}
+          {% assign in_range = true %}
+        {% elsif range == "50-99" and comments >= 50 and comments < 100 %}
+          {% assign in_range = true %}
+        {% elsif range == "10-49" and comments >= 10 and comments < 50 %}
+          {% assign in_range = true %}
+        {% elsif range == "1-9" and comments >= 1 and comments < 10 %}
+          {% assign in_range = true %}
+        {% endif %}
+        {% if in_range %}
           <div class="tag-entry">
             <a href="{{ post.url }}" target="_blank">{{ post.text | truncatewords: 15 }}</a>
             <div class="entry-date">
               <time datetime="{{ post.posted_at.date }}">{{ post.posted_at.date | date: "%b %-d, %Y" }}</time>
               <span class="post-stats">
-                · 💬 Comments: {{ post.commentsCount | default: 0 }}
+                · 💬 {{ post.commentsCount | default: 0 }}
                 · 👍 {{ post.totalReactionCount | default: 0 }}
                 · 🔁 {{ post.repostsCount | default: 0 }}
               </span>

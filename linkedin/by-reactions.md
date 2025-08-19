@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /linkedin/reactions.html
+permalink: /linkedin/by-reactions.html
 title: LinkedIn Posts by Reactions
 description: LinkedIn posts by César Soto Valero, sorted by number of reactions.
 published: true
@@ -29,16 +29,16 @@ published: true
 
 <div id="full-tags-list">
   {% for range in ranges_order %}
+    {% comment %} --- Updated posts count block --- {% endcomment %}
     {% assign posts_count = 0 %}
     {% for post in sorted_posts %}
+      {% assign in_range = false %}
       {% assign reactions = post.totalReactionCount | default: 0 %}
-      {% if range == "100+" and reactions >= 100 %}
-        {% assign posts_count = posts_count | plus: 1 %}
-      {% elsif range == "50-99" and reactions >= 50 and reactions < 100 %}
-        {% assign posts_count = posts_count | plus: 1 %}
-      {% elsif range == "10-49" and reactions >= 10 and reactions < 50 %}
-        {% assign posts_count = posts_count | plus: 1 %}
-      {% elsif range == "1-9" and reactions >= 1 and reactions < 10 %}
+      {% if range == "100+" and reactions >= 100 %}{% assign in_range = true %}{% endif %}
+      {% if range == "50-99" and reactions >= 50 and reactions < 100 %}{% assign in_range = true %}{% endif %}
+      {% if range == "10-49" and reactions >= 10 and reactions < 50 %}{% assign in_range = true %}{% endif %}
+      {% if range == "1-9" and reactions >= 1 and reactions < 10 %}{% assign in_range = true %}{% endif %}
+      {% if in_range %}
         {% assign posts_count = posts_count | plus: 1 %}
       {% endif %}
     {% endfor %}
@@ -47,12 +47,15 @@ published: true
       &nbsp;{{ range }}&nbsp;({{ posts_count }})
     </h3>
     <div class="post-list">
+      {% comment %} --- Updated posts list block --- {% endcomment %}
       {% for post in sorted_posts %}
+        {% assign in_range = false %}
         {% assign reactions = post.totalReactionCount | default: 0 %}
-        {% if range == "100+" and reactions >= 100 or
-              range == "50-99" and reactions >= 50 and reactions < 100 or
-              range == "10-49" and reactions >= 10 and reactions < 50 or
-              range == "1-9" and reactions >= 1 and reactions < 10 %}
+        {% if range == "100+" and reactions >= 100 %}{% assign in_range = true %}{% endif %}
+        {% if range == "50-99" and reactions >= 50 and reactions < 100 %}{% assign in_range = true %}{% endif %}
+        {% if range == "10-49" and reactions >= 10 and reactions < 50 %}{% assign in_range = true %}{% endif %}
+        {% if range == "1-9" and reactions >= 1 and reactions < 10 %}{% assign in_range = true %}{% endif %}
+        {% if in_range %}
           <div class="tag-entry">
             <a href="{{ post.url }}" target="_blank">{{ post.text | truncatewords: 15 }}</a>
             <div class="entry-date">
