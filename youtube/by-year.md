@@ -29,7 +29,7 @@ published: true
 <!-- Years cloud -->
 <div class="tag-list">
      {% for year in years_list %}
-     <a href="#{{- year -}}" class="btn btn-primary tag-btn"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i>&nbsp;{{- year -}} &nbsp;</a>
+     <a href="#{{- year -}}" class="btn btn-primary tag-btn"><i class="fas fa-calendar-days" aria-hidden="true"></i>&nbsp;{{- year -}} &nbsp;</a>
      {% endfor %}
 </div>
 
@@ -45,7 +45,7 @@ published: true
           {% endif %}
      {% endfor %}
      <h3 id="{{- year -}}" class="linked-section">
-          <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+          <i class="fas fa-calendar-days" aria-hidden="true"></i>
           &nbsp;{{- year -}}&nbsp;({{ videos_count }})
      </h3>
      <div class="post-list">
@@ -57,10 +57,10 @@ published: true
                 <div class="entry-date">
                      <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: date_format }}</time>
                      <span class="post-stats">
-                          · <i class="fa-solid fa-eye"></i> {{ video.statistics.viewCount | number_with_delimiter }}
-                          · <i class="fa-solid fa-thumbs-up"></i> {{ video.statistics.likeCount | number_with_delimiter }}
-                          · <i class="fa-solid fa-comment"></i> {{ video.statistics.commentCount | number_with_delimiter }}
-                          · <i class="fa-solid fa-clock"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
+                          · <i class="fas fa-eye"></i> {{ video.statistics.viewCount | number_with_delimiter }}
+                          · <i class="fas fa-thumbs-up"></i> {{ video.statistics.likeCount | number_with_delimiter }}
+                          · <i class="fas fa-comment"></i> {{ video.statistics.commentCount | number_with_delimiter }}
+                          · <i class="fas fa-clock"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
                      </span>
                 </div>
           </div>

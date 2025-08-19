@@ -24,7 +24,7 @@ published: true
 <div class="tag-list">
   {% for range in ranges_order %}
    <a href="#{{ range }}" class="btn btn-primary tag-btn">
-    <i class="fa-solid fa-eye" aria-hidden="true"></i>&nbsp;{{ range }}
+    <i class="fas fa-eye" aria-hidden="true"></i>&nbsp;{{ range }}
    </a>
   {% endfor %}
 </div>
@@ -49,7 +49,7 @@ published: true
     {% endif %}
    {% endfor %}
    <h3 id="{{ range }}" class="linked-section">
-    <i class="fa-solid fa-eye" aria-hidden="true"></i>&nbsp;{{ range }} ({{ videos_count }})
+    <i class="fas fa-eye" aria-hidden="true"></i>&nbsp;{{ range }} ({{ videos_count }})
    </h3>
    <div class="post-list">
     {% for video in sorted_videos %}
@@ -70,10 +70,10 @@ published: true
         <div class="entry-date">
           <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: "%B %-d, %Y" }}</time>
           <span class="post-stats">
-           · <i class="fa-solid fa-eye"></i> {{ video.statistics.viewCount | number_with_delimiter }}
-           · <i class="fa-solid fa-thumbs-up"></i> {{ video.statistics.likeCount | number_with_delimiter }}
-           · <i class="fa-solid fa-comment"></i> {{ video.statistics.commentCount | number_with_delimiter }}
-           · <i class="fa-solid fa-clock"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
+           · <i class="fas fa-eye"></i> {{ video.statistics.viewCount | number_with_delimiter }}
+           · <i class="fas fa-thumbs-up"></i> {{ video.statistics.likeCount | number_with_delimiter }}
+           · <i class="fas fa-comment"></i> {{ video.statistics.commentCount | number_with_delimiter }}
+           · <i class="fas fa-clock"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
           </span>
         </div>
        </div>
