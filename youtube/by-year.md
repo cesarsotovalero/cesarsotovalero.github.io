@@ -1,8 +1,7 @@
 ---
 layout: page
-permalink: /youtube/all.html
-title: All YouTube Videos
-subtitle: '🎥'
+permalink: /youtube/by-year.html
+title: YouTube Videos by Year
 description: YouTube videos created by César Soto Valero, organized by year.
 published: true
 ---
@@ -11,10 +10,10 @@ published: true
 
 <!-- Buttons for ordering YouTube videos -->
 <div class="list-filters">
-   <a href="/youtube/all.html" class="list-filter filter-selected">By Year</a>
-   <a href="/youtube/views.html" class="list-filter">By Views</a>
-   <a href="/youtube/likes.html" class="list-filter">By Likes</a>
-   <a href="/youtube/comments.html" class="list-filter">By Comments</a>   
+   <a href="/youtube/by-year.html" class="list-filter">By Year</a>
+   <a href="/youtube/by-views.html" class="list-filter">By Views</a>
+   <a href="/youtube/by-likes.html" class="list-filter">By Likes</a>
+   <a href="/youtube/by-comments.html" class="list-filter">By Comments</a>
 </div>
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}

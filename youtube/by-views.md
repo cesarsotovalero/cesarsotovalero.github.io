@@ -1,8 +1,7 @@
 ---
 layout: page
-permalink: /youtube/views.html
+permalink: /youtube/by-views.html
 title: YouTube Videos by Views
-subtitle: '🎥'
 description: YouTube videos created by César Soto Valero, sorted by number of views.
 published: true
 ---
@@ -11,10 +10,10 @@ published: true
 
 <!-- Buttons for ordering YouTube videos -->
 <div class="list-filters">
-   <a href="/youtube/all.html" class="list-filter">By Year</a>
-   <a href="/youtube/views.html" class="list-filter filter-selected">By Views</a>
-   <a href="/youtube/likes.html" class="list-filter">By Likes</a>
-   <a href="/youtube/comments.html" class="list-filter">By Comments</a>   
+   <a href="/youtube/by-year.html" class="list-filter">By Year</a>
+   <a href="/youtube/by-views.html" class="list-filter">By Views</a>
+   <a href="/youtube/by-likes.html" class="list-filter">By Likes</a>
+   <a href="/youtube/by-comments.html" class="list-filter">By Comments</a>
 </div>
 
 {% assign sorted_videos = site.data.youtube-videos | sort: "statistics.viewCount" | reverse %}

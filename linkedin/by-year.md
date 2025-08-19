@@ -1,8 +1,7 @@
 ---
 layout: page
-permalink: /linkedin/all.html
-title: All LinkedIn Posts
-subtitle: '🤝'
+permalink: /linkedin/by-year.html
+title: LinkedIn Posts by Year
 description: All LinkedIn posts posted by César Soto Valero, organized by year.
 published: true
 ---
@@ -11,9 +10,9 @@ published: true
 
 <!-- Buttons for ordering LinkedIn posts -->
 <div class="list-filters">
-   <a href="/linkedin/all.html" class="list-filter filter-selected">By Year</a>
-   <a href="/linkedin/reactions.html" class="list-filter">By Reactions</a>
-   <a href="/linkedin/comments.html" class="list-filter">By Comments</a>
+   <a href="/linkedin/by-year.html" class="list-filter">By Year</a>
+   <a href="/linkedin/by-reactions.html" class="list-filter">By Reactions</a>
+   <a href="/linkedin/by-comments.html" class="list-filter">By Comments</a>
 </div>
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}

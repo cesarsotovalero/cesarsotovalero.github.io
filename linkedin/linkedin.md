@@ -1,8 +1,7 @@
 ---
-permalink: linkedin.html
 layout: page
+permalink: linkedin.html
 title: LinkedIn Posts
-subtitle: "🤝"
 description: LinkedIn posts posted by César Soto Valero.
 published: true
 ---
@@ -11,9 +10,9 @@ published: true
 
 <!-- Buttons for ordering LinkedIn posts -->
 <div class="list-filters">
-   <a href="/linkedin/all.html" class="list-filter">By Year</a>
-   <a href="/linkedin/reactions.html" class="list-filter">By Reactions</a>
-   <a href="/linkedin/comments.html" class="list-filter">By Comments</a>
+   <a href="/linkedin/by-year.html" class="list-filter">By Year</a>
+   <a href="/linkedin/by-reactions.html" class="list-filter">By Reactions</a>
+   <a href="/linkedin/by-comments.html" class="list-filter">By Comments</a>
 </div>
 
 <div class="linkedin-posts-container post-preview">
