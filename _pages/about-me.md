@@ -16,25 +16,25 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 # TL;DR
 
-I'm César, a [computer scientist](./publications.html), [software engineer](./software.html), and [content creator](./blog).
+I'm a [computer scientist](./publications.html), [software engineer](./software.html), and [content creator](./blog).
 
 I'm passionate about software, research, and education.
 
 Here's my one-page [résumé](../files/CV/cesar-resume.pdf).
 
-I wrote about my professional values [here](./my-professional-values.html).
+Here're [my professional values](./my-professional-values.html).
 
-**Current Position:** Data Scientist, working in [SEB](https://seb.se/) since April 2023 <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
+**Current Job:** Data Scientist, working in [SEB](https://seb.se/) since April 2023 <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
 
 # Research
 
-I've authored 30+ [research papers](./publications.html) and got involved in [academic services](./service.html).
+I've [authored 30+ research papers](./publications.html) and got involved [in several academic services](./service.html).
 
-My research efforts have been recognized with [awards](./awards.html).
+My research efforts have been [recognized with awards](./awards.html).
 
 # Software
 
-I've created a few [open-source projects](./software.html), some with 200+ stars on GitHub.
+I've created [a few open-source projects](./software.html), some with 250+ <i class="fa-solid fa-star"></i> on GitHub.
 
 # Education
 
@@ -44,15 +44,15 @@ I hold a PhD in Computer Science from [KTH Royal Institute of Technology](https:
 
 My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/).
 
-My PhD was about software debloating,[^1] here's my [PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
+My PhD was about software debloating,[^1] here's [my PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
 
 **Cool Fact:** {%include university_ranking.html%}
 
 I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
 
-Here's a list of my [completed courses](./courses.html) (inc. MOOCs).
+Here's a list of [my completed courses](./courses.html) (inc. MOOCs).
 
-A long time ago, I participated in [ACM-ICPC programming contests](/competitions.html).
+A long time ago, I [participated in ACM-ICPC programming contests](/competitions.html).
 
 # Misc
 
@@ -201,6 +201,6 @@ form.wj-contact input[type="submit"]:active {
 
 # Footnotes
 
-[^1]: For more on these topics, see my living review of [software debloating papers](./software-debloating-papers.html), or consult my list of [software debloating tools](./software-debloating-tools.html).
+[^1]: For more on these topics, see [my living review of software debloating papers](./software-debloating-papers.html), or consult [my list of software debloating tools](./software-debloating-tools.html).
 
 [^4]: My PhD was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.
