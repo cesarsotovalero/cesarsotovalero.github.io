@@ -62,7 +62,7 @@ published: true
                 <div class="entry-date">
                   <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: "%B %-d, %Y" }}</time>
                   <span class="video-stats">
-                     · <i class="fas fa-eye"></i> {{ video.statistics.viewCount | number_with_delimiter }}
+                     · <i class="fas fa-eye"></i> {% assign views = video.statistics.viewCount | plus: 0 %}{% if views >= 1000 %}{{ views | divided_by: 1000 }}K{% else %}{{ views | number_with_delimiter }}{% endif %}
                      · <i class="fas fa-thumbs-up"></i> {{ video.statistics.likeCount | number_with_delimiter }}
                      · <i class="fas fa-comment"></i> {{ video.statistics.commentCount | number_with_delimiter }}
                      · <i class="fas fa-clock"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}

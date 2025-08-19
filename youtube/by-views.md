@@ -21,7 +21,7 @@ published: true
 
 {% comment %} Begin updated Views cloud and grouping block {% endcomment %}
 {% assign sorted_videos = site.data.youtube-videos | sort: "statistics.viewCount" | reverse %}
-{% assign ranges_order = "10,000+#1,000-9,999#100-999#0-99" | split: "#" %}
+{% assign ranges_order = "10K+#1K#100-999#0-99" | split: "#" %}
 
 <!-- Views cloud -->
 <div class="tag-list">
@@ -38,9 +38,9 @@ published: true
    {% for video in sorted_videos %}
     {% assign views = video.statistics.viewCount | plus: 0 %}
     {% assign in_range = false %}
-    {% if range == "10,000+" and views >= 10000 %}
+    {% if range == "10K+" and views >= 10000 %}
       {% assign in_range = true %}
-    {% elsif range == "1,000-9,999" and views >= 1000 and views < 10000 %}
+    {% elsif range == "1K" and views >= 1000 and views < 10000 %}
       {% assign in_range = true %}
     {% elsif range == "100-999" and views >= 100 and views < 1000 %}
       {% assign in_range = true %}
@@ -58,9 +58,9 @@ published: true
     {% for video in sorted_videos %}
       {% assign views = video.statistics.viewCount | plus: 0 %}
       {% assign in_range = false %}
-      {% if range == "10,000+" and views >= 10000 %}
+      {% if range == "10K+" and views >= 10000 %}
        {% assign in_range = true %}
-      {% elsif range == "1,000-9,999" and views >= 1000 and views < 10000 %}
+      {% elsif range == "1K" and views >= 1000 and views < 10000 %}
        {% assign in_range = true %}
       {% elsif range == "100-999" and views >= 100 and views < 1000 %}
        {% assign in_range = true %}
@@ -73,7 +73,7 @@ published: true
         <div class="entry-date">
           <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: "%B %-d, %Y" }}</time>
           <span class="post-stats">
-           · <i class="fas fa-eye"></i> {{ video.statistics.viewCount | number_with_delimiter }}
+           · <i class="fas fa-eye"></i> {% assign views = video.statistics.viewCount | plus: 0 %}{% if views >= 1000 %}{{ views | divided_by: 1000 }}K{% else %}{{ views | number_with_delimiter }}{% endif %}
            · <i class="fas fa-thumbs-up"></i> {{ video.statistics.likeCount | number_with_delimiter }}
            · <i class="fas fa-comment"></i> {{ video.statistics.commentCount | number_with_delimiter }}
            · <i class="fas fa-clock"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
