@@ -21,7 +21,7 @@ published: true
 
 {% comment %} Begin updated Views cloud and grouping block {% endcomment %}
 {% assign sorted_videos = site.data.youtube-videos | sort: "statistics.viewCount" | reverse %}
-{% assign ranges_order = "10K+#1K#100-999#0-99" | split: "#" %}
+{% assign ranges_order = "10K+#+1K-9.9K#+<1K" | split: "#" %}
 
 <!-- Views cloud -->
 <div class="tag-list">
@@ -40,11 +40,9 @@ published: true
     {% assign in_range = false %}
     {% if range == "10K+" and views >= 10000 %}
       {% assign in_range = true %}
-    {% elsif range == "1K" and views >= 1000 and views < 10000 %}
+    {% elsif range == "1K-9.9K" and views >= 1000 and views < 10000 %}
       {% assign in_range = true %}
-    {% elsif range == "100-999" and views >= 100 and views < 1000 %}
-      {% assign in_range = true %}
-    {% elsif range == "0-99" and views >= 0 and views < 100 %}
+    {% elsif range == "<1K" and views < 1000 %}
       {% assign in_range = true %}
     {% endif %}
     {% if in_range %}
@@ -60,11 +58,9 @@ published: true
       {% assign in_range = false %}
       {% if range == "10K+" and views >= 10000 %}
        {% assign in_range = true %}
-      {% elsif range == "1K" and views >= 1000 and views < 10000 %}
+      {% elsif range == "1K-9.9K" and views >= 1000 and views < 10000 %}
        {% assign in_range = true %}
-      {% elsif range == "100-999" and views >= 100 and views < 1000 %}
-       {% assign in_range = true %}
-      {% elsif range == "0-99" and views >= 0 and views < 100 %}
+      {% elsif range == "<1K" and views < 1000 %}
        {% assign in_range = true %}
       {% endif %}
       {% if in_range %}
