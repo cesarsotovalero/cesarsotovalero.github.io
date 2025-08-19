@@ -6,10 +6,13 @@ description: YouTube videos created by César Soto Valero, sorted by number of v
 published: true
 ---
 
+<!-- markdownlint-disable MD033 -->
 {% include subscribe-on-youtube.html %}
+{% assign published_videos = site.data.youtube-videos %}
 
 <!-- Buttons for ordering YouTube videos -->
 <div class="list-filters">
+  <a href="/youtube.html" class="list-filter">All ({{ published_videos.size }})</a>
   <a href="/youtube/by-year.html" class="list-filter">By Year</a>
   <a href="/youtube/by-views.html" class="list-filter">By Views</a>
   <a href="/youtube/by-likes.html" class="list-filter">By Likes</a>

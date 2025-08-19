@@ -6,10 +6,13 @@ description: LinkedIn posts posted by César Soto Valero.
 published: true
 ---
 
+<!-- markdownlint-disable MD033 -->
 {% include follow-on-linkedin.html %}
+{% assign published_posts = site.data.linkedin-posts.data.posts %}
 
 <!-- Buttons for ordering LinkedIn posts -->
 <div class="list-filters">
+  <a href="/linkedin.html" class="list-filter">All ({{ published_posts.size }})</a>
   <a href="/linkedin/by-year.html" class="list-filter">By Year</a>
   <a href="/linkedin/by-reactions.html" class="list-filter">By Reactions</a>
   <a href="/linkedin/by-comments.html" class="list-filter">By Comments</a>
