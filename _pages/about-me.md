@@ -28,13 +28,13 @@ Here're [my professional values](./my-professional-values.html).
 
 # Research
 
-I've [authored 30+ research papers](./publications.html) and got involved [in several academic services](./service.html).
+I've [authored 30+ research papers](./publications.html) and got [involved in academic services](./service.html).
 
 My research efforts have been [recognized with awards](./awards.html).
 
 # Software
 
-I've created [a few open-source projects](./software.html), some with 250+ <i class="fa-solid fa-star"></i> on GitHub.
+I've created [a few open-source projects](./software.html), some with 250+ <i class="fas fa-star"></i> on GitHub.
 
 # Education
 
@@ -58,7 +58,7 @@ A long time ago, I [participated in ACM-ICPC programming contests](/competitions
 
 Out of work, I enjoy quality time with my family, reading books, and [running](/races.html).
 
-I like epic music, favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), and [Zack Hemsey](https://www.youtube.com/user/zackhemsey).
+I like epic music. Some of my favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), and [Zack Hemsey](https://www.youtube.com/user/zackhemsey).
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
