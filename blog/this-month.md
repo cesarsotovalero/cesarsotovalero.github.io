@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 'Blog Posts This Month'
 permalink: /blog/this-month.html
+title: Blog Posts This Month
 description: "All the blog posts written this month by Cesar Soto Valero"
 ---
 
@@ -68,5 +68,3 @@ description: "All the blog posts written this month by Cesar Soto Valero"
       {%- endif -%}
    </div>
 </div>
-
-

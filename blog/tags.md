@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /blog/tags.html
-title: 'Blog Posts by Tags'
+title: Blog Posts by Tags
 description: "All the tags used in the blog posts written by Cesar Soto Valero"
 ---
 

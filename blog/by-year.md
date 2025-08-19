@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /blog/by-year.html
-title: 'Blog Posts by Year'
+title: Blog Posts by Year
 description: "All the blog posts written by Cesar Soto Valero"
 ---
 

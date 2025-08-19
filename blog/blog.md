@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /blog.html
-title: 'Blog Posts'
-description: "Blog posts written by Cesar Soto Valero"``
+permalink: blog.html
+title: Blog Posts
+description: "Blog posts written by Cesar Soto Valero"
 ---
 
 {% include subscribe.html %}
