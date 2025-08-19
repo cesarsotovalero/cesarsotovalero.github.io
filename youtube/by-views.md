@@ -21,7 +21,7 @@ published: true
 
 {% comment %} Begin updated Views cloud and grouping block {% endcomment %}
 {% assign sorted_videos = site.data.youtube-videos | sort: "statistics.viewCount" | reverse %}
-{% assign ranges_order = "10K+, 1K-9K, <1K" | split: "," %}
+{% assign ranges_order = "10K+,1K-9K,<1K" | split: "," %}
 
 <!-- Views cloud -->
 <div class="tag-list">
