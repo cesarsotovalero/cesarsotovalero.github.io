@@ -20,7 +20,22 @@ published: true
 </div>
 
 {% assign sorted_videos = site.data.youtube-videos | sort: "statistics.likeCount" | reverse %}
-{% assign ranges_order = "100+,50-99,10-49,0-9" | split: "," %}
+{% assign ranges_order = "100+,10-99,<10" | split: "," %}
+{% assign videos_by_range = "" | split: "" %}
+{% for range in ranges_order %}
+  {% assign filtered = "" | split: "" %}
+  {% for video in sorted_videos %}
+    {% assign likes = video.statistics.likeCount | plus: 0 %}
+    {% if range == "100+" and likes >= 100 %}
+      {% assign filtered = filtered | push: video %}
+    {% elsif range == "10-99" and likes >= 10 and likes < 100 %}
+      {% assign filtered = filtered | push: video %}
+    {% elsif range == "<10" and likes < 10 %}
+      {% assign filtered = filtered | push: video %}
+    {% endif %}
+  {% endfor %}
+  {% assign videos_by_range = videos_by_range | push: filtered %}
+{% endfor %}
 
 <!-- Likes cloud -->
 <div class="tag-list">
@@ -33,45 +48,27 @@ published: true
 
 <div id="full-tags-list">
   {% for range in ranges_order %}
-     {% assign videos_count = 0 %}
-     {% for video in sorted_videos %}
-        {% assign in_range = false %}
-        {% assign likes = video.statistics.likeCount | plus: 0 %}
-        {% if range == "100+" and likes >= 100 %}{% assign in_range = true %}{% endif %}
-        {% if range == "50-99" and likes >= 50 and likes < 100 %}{% assign in_range = true %}{% endif %}
-        {% if range == "10-49" and likes >= 10 and likes < 50 %}{% assign in_range = true %}{% endif %}
-        {% if range == "0-9" and likes >= 0 and likes < 10 %}{% assign in_range = true %}{% endif %}
-        {% if in_range %}
-          {% assign videos_count = videos_count | plus: 1 %}
-        {% endif %}
-     {% endfor %}
-     <h3 id="{{ range }}" class="linked-section">
-        <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;({{ videos_count }})
-     </h3>
-     <div class="video-list">
-        {% for video in sorted_videos %}
-          {% assign in_range = false %}
-          {% assign likes = video.statistics.likeCount | plus: 0 %}
-          {% if range == "100+" and likes >= 100 %}{% assign in_range = true %}{% endif %}
-          {% if range == "50-99" and likes >= 50 and likes < 100 %}{% assign in_range = true %}{% endif %}
-          {% if range == "10-49" and likes >= 10 and likes < 50 %}{% assign in_range = true %}{% endif %}
-          {% if range == "0-9" and likes >= 0 and likes < 10 %}{% assign in_range = true %}{% endif %}
-          {% if in_range %}
-             <div class="tag-entry">
-                <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank">{{ video.snippet.title | truncatewords: 15 }}</a>
-                <div class="entry-date">
-                  <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: "%B %-d, %Y" }}</time>
-                  <span class="video-stats">
-                     · <i class="fas fa-eye"></i> {% assign views = video.statistics.viewCount | plus: 0 %}{% if views >= 1000 %}{{ views | divided_by: 1000 }}K{% else %}{{ views | number_with_delimiter }}{% endif %}
-                     · <i class="fas fa-thumbs-up"></i> {{ video.statistics.likeCount | number_with_delimiter }}
-                     · <i class="fas fa-comment"></i> {{ video.statistics.commentCount | number_with_delimiter }}
-                     · <i class="fas fa-clock"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
-                  </span>
-                </div>
-             </div>
-          {% endif %}
-        {% endfor %}
-     </div>
+    {% assign idx = forloop.index0 %}
+    {% assign filtered_videos = videos_by_range[idx] %}
+    <h3 id="{{ range }}" class="linked-section">
+      <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;({{ filtered_videos.size }})
+    </h3>
+    <div class="video-list">
+      {% for video in filtered_videos %}
+        <div class="tag-entry">
+          <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank">{{ video.snippet.title | truncatewords: 15 }}</a>
+          <div class="entry-date">
+            <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: "%B %-d, %Y" }}</time>
+            <span class="video-stats">
+              · <i class="fas fa-eye"></i> {% assign views = video.statistics.viewCount | plus: 0 %}{% if views >= 1000 %}{{ views | divided_by: 1000 }}K{% else %}{{ views | number_with_delimiter }}{% endif %}
+              · <i class="fas fa-thumbs-up"></i> {{ video.statistics.likeCount | number_with_delimiter }}
+              · <i class="fas fa-comment"></i> {{ video.statistics.commentCount | number_with_delimiter }}
+              · <i class="fas fa-clock"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
+            </span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   {% endfor %}
 </div>
 <!-- markdownlint-enable MD033 MD041 MD022 -->
