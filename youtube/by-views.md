@@ -16,14 +16,16 @@ published: true
    <a href="/youtube/by-comments.html" class="list-filter">By Comments</a>
 </div>
 
-{% comment %} Begin replacement of existing views list block {% endcomment %}
+{% comment %} Begin updated Views cloud and grouping block {% endcomment %}
 {% assign sorted_videos = site.data.youtube-videos | sort: "statistics.viewCount" | reverse %}
-{% assign ranges_order = "0-99#100-999#1,000-9,999#10,000+" | split: "#" %}
+{% assign ranges_order = "10,000+#1,000-9,999#100-999#0-99" | split: "#" %}
 
 <!-- Views cloud -->
 <div class="tag-list">
   {% for range in ranges_order %}
-    <a href="#{{ range }}" class="btn btn-primary tag-btn">{{ range }}</a>
+    <a href="#{{ range }}" class="btn btn-primary tag-btn">
+      <i class="fas fa-eye" aria-hidden="true"></i>&nbsp;{{ range }}
+    </a>
   {% endfor %}
 </div>
 
@@ -33,31 +35,33 @@ published: true
     {% for video in sorted_videos %}
       {% assign views = video.statistics.viewCount | plus: 0 %}
       {% assign in_range = false %}
-      {% if range == "0-99" and views >= 0 and views < 100 %}
-        {% assign in_range = true %}
-      {% elsif range == "100-999" and views >= 100 and views < 1000 %}
+      {% if range == "10,000+" and views >= 10000 %}
         {% assign in_range = true %}
       {% elsif range == "1,000-9,999" and views >= 1000 and views < 10000 %}
         {% assign in_range = true %}
-      {% elsif range == "10,000+" and views >= 10000 %}
+      {% elsif range == "100-999" and views >= 100 and views < 1000 %}
+        {% assign in_range = true %}
+      {% elsif range == "0-99" and views >= 0 and views < 100 %}
         {% assign in_range = true %}
       {% endif %}
       {% if in_range %}
         {% assign videos_count = videos_count | plus: 1 %}
       {% endif %}
     {% endfor %}
-    <h3 id="{{ range }}" class="linked-section">{{ range }} ({{ videos_count }})</h3>
+    <h3 id="{{ range }}" class="linked-section">
+      <i class="fas fa-eye" aria-hidden="true"></i>&nbsp;{{ range }} ({{ videos_count }})
+    </h3>
     <div class="post-list">
       {% for video in sorted_videos %}
         {% assign views = video.statistics.viewCount | plus: 0 %}
         {% assign in_range = false %}
-        {% if range == "0-99" and views >= 0 and views < 100 %}
-          {% assign in_range = true %}
-        {% elsif range == "100-999" and views >= 100 and views < 1000 %}
+        {% if range == "10,000+" and views >= 10000 %}
           {% assign in_range = true %}
         {% elsif range == "1,000-9,999" and views >= 1000 and views < 10000 %}
           {% assign in_range = true %}
-        {% elsif range == "10,000+" and views >= 10000 %}
+        {% elsif range == "100-999" and views >= 100 and views < 1000 %}
+          {% assign in_range = true %}
+        {% elsif range == "0-99" and views >= 0 and views < 100 %}
           {% assign in_range = true %}
         {% endif %}
         {% if in_range %}
@@ -78,4 +82,4 @@ published: true
     </div>
   {% endfor %}
 </div>
-{% comment %} End replacement of existing views list block {% endcomment %}
+{% comment %} End updated Views cloud and grouping block {% endcomment %}
