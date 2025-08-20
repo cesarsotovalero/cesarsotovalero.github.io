@@ -6,7 +6,7 @@ subtitle: 👨🏼‍💻
 description: César Soto Valero is a computer scientist, software engineer, and content creator.
 ---
 
-{% include social type="page" %}
+{% include social.html type="page" %}
 
 [//]: # (Profile to view: https://www.zeileis.org/)
 
@@ -46,7 +46,7 @@ My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and 
 
 My PhD was about software debloating,[^1] here's [my PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
 
-**Cool Fact:** {%include university_ranking%}
+**Cool Fact:** {% include university_ranking.html %}
 
 I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
 
