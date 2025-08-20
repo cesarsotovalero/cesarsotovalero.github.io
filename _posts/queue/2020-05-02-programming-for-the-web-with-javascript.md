@@ -66,13 +66,14 @@ console.log(myArray[4]); // undefined
 ### Array indices
 
 When writing an array value by its index, `arrayVar[index]` will:
+
 - add an element at that index if `index >= arrayVar.length`
 - crate a mapping from the index to the element if index < 0
 
 ```javascript
 myArray[4] = "panda";
 console.log(myArray[4]); // "panda"
-console.log(myArray[3]); // undefined 
+console.log(myArray[3]); // undefined
 myArray[-5] = "elephant";
 console.log(myArray[-5]); // "elephant"
 ```
@@ -86,10 +87,10 @@ console.log(myArray); // car, bike, scooter
 myArray.unshift("train")
 console.log(myArray); // train, car, bike, scooter
 
-var vehicle = myArray.pop() 
+var vehicle = myArray.pop()
 console.log(vehicle); // train, car, bike
 
-var vehicle = myArray.shift() 
+var vehicle = myArray.shift()
 console.log(myArray); // car, bike
 ```
 
@@ -129,7 +130,6 @@ Create an empty object:
 ```javascript
 var myObject = {};
 ```
-
 
 ## Control structures
 
@@ -197,7 +197,7 @@ function isEven(n) {
    return n%2 == 0;
 }
 nums.every(isEven); // true
-// applies a new array with 
+// applies a new array with
 // function
 function square(n){
    return n*n;
@@ -215,8 +215,8 @@ var y = 11;
 tryToChange(y);
 console.log(y); // still 11
 ```
-Object arguments are passed by **reference**: the function cannot change them:
 
+Object arguments are passed by **reference**: the function cannot change them:
 
 ```javascript
 function tryToChange(obj){
@@ -226,6 +226,7 @@ var p = {age: 30};
 tryToChange(p);
 console.log(p.age); // now 31
 ```
+
 ### Functions as objects
 
 ```javascript
@@ -257,7 +258,7 @@ function Person (name, age) {// prototype
    }
 }
 var johnDoe = new Person("John Doe", 32);
-johnDoe.greeting();//"Hello! my name is John Doe 
+johnDoe.greeting();//"Hello! my name is John Doe
 ```
 
 ### Extending a prototype
@@ -287,13 +288,13 @@ Person.prototype.introduction = function (){
 }
 var johnDoe = new Person("John Doe", 32, "Dentist");
 jhohnDoe.planet;// Earth
-johnDoe.introduction();// I am a Dentist 
+johnDoe.introduction();// I am a Dentist
 ```
 
 ## Strings
 
 JavaScript string are immutable but provide functions that allow us to create new, modified versions of them.
-String have `startWith`, `endsWith`, `includes`, and `search` functions. 
+String have `startWith`, `endsWith`, `includes`, and `search` functions.
 We can also use regular expressions' `test` function to check for matches in a string.
 
 Examples:
@@ -325,7 +326,7 @@ message = message.trim();// "hello"
 var numbers = "5 8 2 5 7 6";
 numbers.search(/[012]/); // 4
 /[012]/.test(numbers); // true
-``` 
+```
 
 - Or ranges of characters or special characters
 
@@ -340,9 +341,9 @@ password.search(/\d/) // 8
 ```javascript
 var code = "abc123d4e5";
 code.search(/[0-9][a-z][0-9]/); // 5
-``` 
+```
 - Or look for characters not in a range
- 
+
 ```javascript
 var chars = "abc123Kd4e5";
 code.search(/[^0-9a-z]/); // 6
@@ -360,7 +361,6 @@ code.search(/[^0-9a-z]/); // 6
 /[a-z][0-9]$/.test("123abc");// true
 /[a-z][0-9]$/.test("123abc456");// false
 ```
- 
 
 # Using JavaScript in web pages
 
@@ -397,7 +397,6 @@ if(timesVisited > 10)
 </script>
 ```
 
-
 ## Objects as JSON
 
 - JavaScript objects can be converted to a JSON string vi
@@ -421,25 +420,24 @@ In summary:
 - We can use `localStorage` to save values across multiple page requests
 - Objects can be converted to string representations known as JSON
 
-A very basic example of DOM manipulation is [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.7-localstorage.html).
+Here's a very basic [example of DOM manipulation](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.7-localstorage).
 
 ## DOM events
 
 We can use event-driven programming in JavaScript to modify HTML based on user activity. We do this by defining **callback functions** and associating them with various events by adding event listeners. `element.addEventListener(event, function)`, events: `click`, `mouseover`, `mouseout`, `keyup`.
 
-- The HTML for the button-click example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.8-click.html).
-- The HTML for the mouse-over example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.8-mouse.html).
-- The HTML for the key-press example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.8-key.html).
-
+- The HTML for the button-click example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.8-click).
+- The HTML for the mouse-over example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.8-mouse).
+- The HTML for the key-press example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.8-key).
 
 ## jQuery
 
 Jquery is a powerful library that allows us to select DOM elements using CSS notation. We can then modify their content and appearance programmatically. We can also register event listeners for different elements.
 
 ```javascript
-<script 
+<script
     src="https://code.jquery.com/jquery-3.5.1.min.JavaScript"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4yfaTqgFtohetphbbj0=" 
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4yfaTqgFtohetphbbj0="
     crossorigin="anonymous">
 </script>
 ```
@@ -452,7 +450,7 @@ In jQuery, $ is used to select DOM elements for manipulation, along with basic C
 - `$("#name")` selects the element with `id="name"`
 
 To manipulate DOM content, the general format is `$selector.action(arguments...)`. Examples:
-- `$("#name").html("Hello");`
+- `$("#name")("Hello");`
 - `$("#name").append("World!");`
 - `$("#name").addClass("greeting");`
 - `$("#name").hide();`
@@ -460,9 +458,9 @@ To manipulate DOM content, the general format is `$selector.action(arguments...)
 
 To add an event listener to and element, the general format is `(selector).event(callback)`
 
-- The HTML for the button-click example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.9-jquery-click.htmll).
-- The HTML for the growing list example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.9-jquery-list.html).
-- The HTML for the list item example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.9-jquery-li.html).
+- The HTML for the button-click example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.9-jquery-click).
+- The HTML for the growing list example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.9-jquery-list).
+- The HTML for the list item example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.9-jquery-li).
 
 
 ## jQuery event handling
@@ -473,12 +471,12 @@ To add an event listener to and element, the general format is `(selector).event
   - `$("div, .book")` selects all `divs` and all elements with `class="book"`
 - `:` can be used to specify element properties
   - `$("p:hidden")` selects all `<p>` elements that are visually hidden.
-  
-- The HTML for the example using the "on" function is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.10-jquery-on.html).
- 
-- The HTML for the form example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.11-jquery-form.html).
-  
-- The HTML for the password example is available[here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.11-jquery-password.html).
+
+- The HTML for the example using the "on" function is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.10-jquery-on).
+
+- The HTML for the form example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.11-jquery-form).
+
+- The HTML for the password example is available[here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/2.11-jquery-password).
 
 
 # Introducing React
@@ -514,7 +512,7 @@ class HelloComponent extends React.Component {
    render() {
       return (
          <h1>Hello, React!</h1>
-      );     
+      );
    }
 }
 ```
@@ -553,13 +551,13 @@ class HelloUser extends React.Component {
       super(props);
       var timesViewed = 0;
       if(localStorage.timesViewed){
-         timesViewed = localStorage.timesViewed;      
+         timesViewed = localStorage.timesViewed;
       }
       timesViewed++;
       this.state = {numViews: timesViewed};
       localStorage.timesViewed = timesViewed;
-   }   
-   
+   }
+
    render(){
       return <b>{this.state.numViews}</b>;
    }
@@ -584,32 +582,30 @@ Mounting:
 - `componentDidUpdate`: invoked after being rendered
 
 Unmounting:
-- componentWillnmount: invoked before component is removed from VirtualDOM and destroyed 
+- componentWillnmount: invoked before component is removed from VirtualDOM and destroyed
 
-
-The HTML for the TimesViewed example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/3.2-react-TimesViewed.html).
-
+The HTML for the TimesViewed example is available [here](https://courses.edx.org/asset-v1:PennX+SD4x+3T2019+type@asset+block/3.2-react-TimesViewed).
 
 # React events
 
 ```javascript
-class Counter extends React.Component { 
+class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = { count : 0 };
   }
-      incrementCount () { 
-      this.setState({ 
-               count: this.state.count + 1 
+      incrementCount () {
+      this.setState({
+               count: this.state.count + 1
         });
       }
       render () { // invoked when setState is called
-      return ( 
-      <div>Count: { this.state.count } 
+      return (
+      <div>Count: { this.state.count }
 	    < button type = "button" onClick = { this.incrementCount.bind(this) } > Increment </button> </div>
   );
-  } 
-}; 
+  }
+};
 
 ReactDOM.render(
   <div>
@@ -617,133 +613,3 @@ ReactDOM.render(
    </div>,
 document.getElementById('container'));
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

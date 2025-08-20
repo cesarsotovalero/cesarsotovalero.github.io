@@ -15,7 +15,7 @@ published: true
 ---
 
 Academic research is a very intense and mentally demanding activity subject to constant change and evolution.
-At the beginning of a research project, there is often [no clear path](https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html) to follow.
+At the beginning of a research project, there is often [no clear path](./blog/book-review-the-phd-grind) to follow.
 Consequently, researchers have to figure out a good plan to take in order to achieve their objectives.
 But a research project typically lasts between 3 and 12 months, so there is no infinite ~~money~~ time, and progress should be made and reported consistently.
 This situation usually creates tension and a sense of urgency that most researchers have to live with.
@@ -54,12 +54,11 @@ So, it is not clear what results constitute real progress and what do not.
 </aside>
 
 [//]: # (Practical explanation of the problem)
-Supervisors are typically very busy people. They don’t have the time to analyze all the details of an investigation. Students, on the other hand, are more excited about moving fast because they have more pressure to show up the progress being made. However, research is an iterative process. The goal and scope of an investigation may change over time. This can cause some inexperienced students to feel like they are making something wrong or simply lose their motivation and initial enthusiasm. For example, it is very common to suffer from [writer's block](https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html) or imposter syndrome.
+Supervisors are typically very busy people. They don’t have the time to analyze all the details of an investigation. Students, on the other hand, are more excited about moving fast because they have more pressure to show up the progress being made. However, research is an iterative process. The goal and scope of an investigation may change over time. This can cause some inexperienced students to feel like they are making something wrong or simply lose their motivation and initial enthusiasm. For example, it is very common to suffer from [writer's block](./blog/how-i-overcome-writer-block-when-preparing-a-research-paper) or imposter syndrome.
 
 <aside class="quote">
     <em>“Imposter syndrome is a concept describing individuals who are marked by an inability to internalize their accomplishments and a persistent fear of being exposed as a fraud.”</em>
 </aside>
-
 
 [//]: # (Some good practices that exist to remediate)
 There are some good practices to mitigate the stress.
@@ -77,11 +76,9 @@ Motivation is key when doing research. But keeping momentum is hard if progress 
 I come up to the realization that anything that is not verifiable and quantifiable has little value.
 For example, opening an issue on GitHub or answering a question on Stack Overflow are valuable activities because they let a persistent trace of the value being produced (i.e., a link that you can keep for yourself or share with others). On the contrary, asking a question on Slack or discussing it with a colleague in the corridor is quick and easy but does not have the same value. I avoid ephemeral work and instead focus my energy on producing valuable research artifacts.
 
-
 <aside class="quote">
     <em>“A research artifact is a concrete, traceable and verifiable piece of work that adds value to a research project.”</em>
 </aside>
-
 
 Research artifacts should revolve around some specific research project with a clear goal, such as producing a research paper or witting a thesis.
 They can be considered as ~~expendable~~ critical pieces of the research puzzle, which are very necessary to deliver the final output.
@@ -108,7 +105,7 @@ Once the artifacts and outcomes are reviewed, it is easier to readjust the goals
 I have a template for the Friday report.
 Here is an example:
 
-```
+```text
 From: Student
 To: Supervisor
 CC: Co-authors and Co-supervisors
@@ -165,7 +162,7 @@ Good questions are those whose responses consist of a simple “yes” or “no�
 # My Results So Far
 
 This approach has proved to work very well for me so far.
-From a student's position, I have been able to make [substantial progress](https://www.cesarsotovalero.net/publications) in my research career. As a supervisor, the Friday reports help me to sync quickly on the research topic and guide the student more effectively, which has resulted in some successful [research projects](https://www.cesarsotovalero.net/service).
+From a student's position, I have been able to make [substantial progress](./publications) in my research career. As a supervisor, the Friday reports help me to sync quickly on the research topic and guide the student more effectively, which has resulted in some successful [research projects](./service).
 
 # References
 

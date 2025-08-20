@@ -15,14 +15,14 @@ date: 2020/11/2
 published: true
 ---
 
-Research is about solving relevant problems for the best of humanity. 
-However, the relevance of certain problems is a highly subjective matter. 
-Is it relevant to send a human being to Mars? Maybe it is, or maybe not. 
-One thing is for sure: **research is expensive**. 
-As far as I know, it is sustained mostly by funds and grants. 
-I believe that the best way to boost funding is by increasing interest in research investment. 
-Therefore, researchers should dedicate a significant portion of their efforts to strengthen the bonds between their work and the local industry. 
-Let's discuss how. 
+Research is about solving relevant problems for the best of humanity.
+However, the relevance of certain problems is a highly subjective matter.
+Is it relevant to send a human being to Mars? Maybe it is, or maybe not.
+One thing is for sure: **research is expensive**.
+As far as I know, it is sustained mostly by funds and grants.
+I believe that the best way to boost funding is by increasing interest in research investment.
+Therefore, researchers should dedicate a significant portion of their efforts to strengthen the bonds between their work and the local industry.
+Let's discuss how.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2020/skates.jpg alt: "Skates for sale in a second-hand store in Stockholm City" %}
@@ -31,9 +31,9 @@ Let's discuss how.
   </figcaption>
 </figure>
 
-First, let’s face the fact that governments and institutions pay for research grants. 
-Hence, our research is mostly sustained by public money and other non-profit organizations. 
-For example, in Sweden, the [Swedish Research Council](https://www.vr.se/english/about-us.html) is a government agency within the Ministry of Education and Research that gives significant funding to all scientific disciplines.
+First, let’s face the fact that governments and institutions pay for research grants.
+Hence, our research is mostly sustained by public money and other non-profit organizations.
+For example, in Sweden, the [Swedish Research Council](https://www.vr.se/english/about-us) is a government agency within the Ministry of Education and Research that gives significant funding to all scientific disciplines.
 Therefore, the amount of money injected into research heavily depends on the vision of large entities out of the control of individual researchers.
 
 <aside class="quote">

@@ -1,5 +1,5 @@
 ---
-permalink: environment.html
+permalink: environment
 layout: page
 title: Environment
 subtitle: Work setup
@@ -51,7 +51,7 @@ published: false
 
 # Video
 
-- [VLC](https://www.videolan.org/vlc/index.html)
+- [VLC](https://www.videolan.org/vlc/index)
 
 # Email
 

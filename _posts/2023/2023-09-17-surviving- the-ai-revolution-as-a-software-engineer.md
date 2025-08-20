@@ -21,7 +21,7 @@ published: true
 
 Dear software engineer, as you may already know, AI is here to stay.
 It's inevitable, and it changes everything.
-If you are worried about what [OpenAI's ChatGPT](https://chat.openai.com/) can do, hold on because it's just the beginning.
+If you are worried about what [OpenAI's ChatGPT](https://chat.openai.com) can do, hold on because it's just the beginning.
 The next wave of extremely powerful and specialized AI models is coming faster than predicted.
 In the next years, AI's massive adoption will affect every single aspect of our lives.
 But this article is not about the issues of an AI-powered society already prophesied many decades ago by science fiction writers.
@@ -30,20 +30,20 @@ This article reflects my opinion on how developers can protect their jobs in a n
 I cover 10 skills that I believe will be vital in the next years.
 My focus is on software engineering jobs, but most of the principles mentioned here apply to any other profession as well.
 In this survival guide, I cover only the facts that I believe will hold despite the imminent improvements of AI models.
-For example, I assume that [Generative AI](https://www.nvidia.com/en-us/glossary/data-science/generative-ai/) will eventually become better than humans at creating any kind of digital content, including not only source code, but also images, music, or video.[^5]
+For example, I assume that [Generative AI](https://www.nvidia.com/en-us/glossary/data-science/generative-ai) will eventually become better than humans at creating any kind of digital content, including not only source code, but also images, music, or video.[^5]
 So, what can we do to keep up with this wave of changes?
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-09-17/head-down-teddy.jpg alt:"A lovely teddy bear thrashed in the backyard together with a keyboard" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; Once we said goodbye to our lovely teddy bear, ...does the keyboard comes next?
   </figcaption>
 </figure>
 
-# The game has changed
+# The Game Has Changed
 
 [//]: # (My predictions two years ago)
-In July 2021, I published a blog post titled "[Hermit Programmers are Dead](../blog/hermit-programmers-are-dead.html)."
+In July 2021, I published a blog post titled "[Hermit Programmers are Dead](./blog/hermit-programmers-are-dead)."
 To my surprise, it was hardly criticized on Hacker News (HN), receiving more than [100 negative comments](https://news.ycombinator.com/item?id=28744671).[^1]
 Sadly, the main point I wanted to make back then was actually misunderstood.
 The reason (I want to believe) was my ~~still~~ precarious writing skills.
@@ -69,7 +69,7 @@ These generative abilities open a wide range of new possibilities for software d
 In summary, the key to LLMs' tremendous success lies in the combination of the following three major improvements:
 
 <aside class="quote">
-    <em>“With great size (of parameters) comes great power (of AI).”</em> 
+    <em>“With great size (of parameters) comes great power (of AI).”</em>
 </aside>
 
 1. **Model's complexity.** The size of ML models, measured by the number of parameters (i.e., the number of computed weights between artificial neurons' connections), has increased exponentially in the last few years. This has been possible thanks to the availability of more powerful hardware, such as [dedicated NVIDIA GPUs](https://www.nvidia.com/en-us/data-center/h100/), and the development of more efficient training algorithms, such as the [Adam's](https://arxiv.org/abs/1412.6980) stochastic optimization and [attention mechanisms](https://arxiv.org/abs/1706.03762), which efficiently computes adaptive learning rates for each parameter, improving the back-propagation technique. Research shows that at some point after GPT-3's 175 billion parameters some magic happens and the text-based models get incredibly powerful.[^4]
@@ -77,7 +77,7 @@ In summary, the key to LLMs' tremendous success lies in the combination of the f
 3. **Human feedback.** Research has shown that AI's capabilities improve exponentially when the system is able to interact with humans. AI models fine-tuned with human feedback via [Reinforcement Learning](https://en.wikipedia.org/wiki/Reinforcement_learning) (RL) perform better than previous models with a larger training size.[^2] Today's ChatGPT models are instructed and refined continuously by human experts and users in general. First, with a set of labeler-written prompts, and second, with the user's prompts submitted through the OpenAI's API directly.
 
 <aside class="quote">
-    <em>“Foundational models are general-purpose LLMs trained on massive amounts of data using self-supervision at scale, they can solve a wide range of downstream tasks.”</em> 
+    <em>“Foundational models are general-purpose LLMs trained on massive amounts of data using self-supervision at scale, they can solve a wide range of downstream tasks.”</em>
 </aside>
 
 [//]: # (The rise of AI for developers)
@@ -95,7 +95,7 @@ Microsoft is at the head of the race today, leveraging its AI ecosystem by direc
 On the other hand, Meta released its [<i class="fab fa-github"></i> LLaMa 2](https://github.com/facebookresearch/llama) trained model and made it open-source (good move Mark!), whereas Google struggles to not miss out the party and just deployed its Bard[^10] model on top of its [Duet AI](https://workspace.google.com/blog/product-announcements/duet-ai) platform.
 
 <aside class="quote">
-    <em>“Simply put, if you don't use AI (as a developer) today, you wake up out of the market tomorrow morning.”</em> 
+    <em>“Simply put, if you don't use AI (as a developer) today, you wake up out of the market tomorrow morning.”</em>
 </aside>
 
 [//]: # (The threat of AI for developers)
@@ -113,7 +113,6 @@ As AI continues to evolve, it is expected to permeate every facet of information
     <cite><br> ― <a href="https://en.wikipedia.org/wiki/Grady_Booch">Grady Booch</a></cite>
 </aside>
 
-
 [//]: # (Personal experience with AI)
 From my personal perspective, I think it's important to understand that, although powerful, current LLMs are all basically statistical models of words.
 No doubt they are useful for developers, as they provide a new form of generative search capabilities.
@@ -121,17 +120,17 @@ As an example, imagine a developer working in the FinTech industry, a common tas
 Today's GitHub Copilot not only capable of retrieving this number automatically in the IDE, but it can also display the country for any particular stock, and provide even more fine-grained associated  information as prompted.
 This capacity to search faster and more accurately makes AI extremely useful for routine coding tasks.
 
-[GitHub Next](https://githubnext.com/) is setting what would be the standard for the next generation of software development tools.
+[GitHub Next](https://githubnext.com) is setting what would be the standard for the next generation of software development tools.
 The promises are so high and incredible, that some are starting to believe that AI will very soon go beyond assisting developers, and start firing them.[^8]
 The idea is not that crazy.
 If AI will make pull requests, review code, and create documentation... the question is: What [30+ million worldwide developers](https://www.griddynamics.com/global-team-blog/number-software-developers-world) are going to do with all this extra time? Will they even be necessary?
 
 
-# Our survival backdoors
+# Our Survival Backdoors
 
 I believe that to survive the AI revolution, we need to focus on nurturing the skills that make us unique as humans.
 In particular, those that are still valuable in the job market.
-Grounding these skills with our innate human attributes is what poses a substantial challenge for machines to mimic or automate, thereby standing as our defense against potential labor obsolescence. 
+Grounding these skills with our innate human attributes is what poses a substantial challenge for machines to mimic or automate, thereby standing as our defense against potential labor obsolescence.
 
 The following is a list of 10 skills[^6] that I believe will not just be beneficial but absolutely vital in the next years dominated by AI:
 
@@ -207,7 +206,6 @@ That's why we'll likely need more mentors to help package knowledge neatly and g
 Cultivating curiosity will be a key skill for developers in the future.
 
 [//]: # (---------------------------------------------------------------)
-
 **#8: Nurturing storytelling.**
 Machines lack a couple of things we all have: a natural understanding of time and a catalog of personal memories.
 This means they can't tell stories that truly connect with people the way we can. Even though artificial agents might learn to understand physical space through sensors and to measure time, truly grasping the concept of time is a much harder task for them.
@@ -227,7 +225,7 @@ For example, it can suggest well-known tools for building a website but can't he
 So, in the future, being able to perform research and find solutions to new problems will be a really important skill.
 This might even lead more developers to choose research jobs over other positions at big tech companies to stand out in their field.
 
-# The unpredictable future
+# The Unpredictable Future
 
 Software development is in constant evolution.
 In the past few decades, revolutionary tools like IDEs, VCS, and Cloud Computing have changed the way we create and maintain software.
@@ -263,7 +261,7 @@ Consequently, a highly productive developer could create significantly more valu
 
 A limitation of current AI technology is that it is neither deterministic nor explainable, sometimes limiting its adoption in critical systems.
 The motto "Don't trust, verify" is still relevant (at present day) for AI-assisted developers.
-Consequently, to use these models properly, one needs to be a able to get the most of out AI's generated answers. 
+Consequently, to use these models properly, one needs to be a able to get the most of out AI's generated answers.
 This is something that senior engineer can do very well, but juniors could find it challenging.
 Senior developers get a big boost from this technology because they understand the response given by LLMs.
 For example, if you are a junior you don't know exactly what to ask, and sometimes you will need more time to understand the response.

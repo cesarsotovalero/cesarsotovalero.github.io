@@ -36,13 +36,13 @@ Let's think about it step by step.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-05-27/pino_pizza.jpg alt: "The future of software will have the same destiny that pizza production" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; Do you know how to make a pizza from scratch? I don't, and I'm afraid the same will happen with the software industry! Photo of a miniature of Pizzeria Pino, the first Stockholm's pizzeria, funded in 1976, and exposed in the <a href="https://maps.app.goo.gl/ohfdw8atqpv2WjiTA">Stadsmuseet</a>.
   </figcaption>
 </figure>
 
 <aside class="quote">
-    <em>“A prompter [in a theatre] is a person who prompts or cues actors when they forget their lines or neglect to move on the stage to where they are supposed to be situated.” - <cite><a href="https://en.wikipedia.org/wiki/Prompter_(theatre)">Wikipedia</a></cite></em> 
+    <em>“A prompter [in a theatre] is a person who prompts or cues actors when they forget their lines or neglect to move on the stage to where they are supposed to be situated.” - <cite><a href="https://en.wikipedia.org/wiki/Prompter_(theatre)">Wikipedia</a></cite></em>
 </aside>
 
 Once upon a ~~long~~ time, software was a strange thing.[^4]
@@ -57,7 +57,7 @@ They could understand complex systems written in COBOL (such as those for financ
 But that was a long time ago when software was still [eating the world](https://a16z.com/why-software-is-eating-the-world/).
 Nowadays, software is everywhere.
 It already [ate the world](https://www.wsj.com/articles/software-ate-the-world-and-soon-it-will-write-itself-11607037000?reflink=desktopwebshare_permalink) and digested it.
-Sometimes resulting in [a mess](../blog/why-debloating-third-party-software.html) that we still have to clean up.
+Sometimes resulting in [a mess](./blog/why-debloating-third-party-software) that we still have to clean up.
 Anyway, its output is indispensable, just like salt for our food.
 In every industry, in every company, in every home, software is a necessary ingredient.
 So the crew of software cookers has grown at a rapid speed.
@@ -92,7 +92,7 @@ Once trained, the model can generate meaningful text responses to a given **prom
 Interestingly, it appears that [code generation](https://dl.acm.org/doi/pdf/10.1145/3545945.3569759) is one of the most simple tasks for these models.
 So we developers are not as special as we thought, ouch.
 In other words, AI can write reasonably good code faster and cheaper than us.
-But this article is not about AI replacing developers (I wrote about it [here](../blog/surviving- the-ai-revolution-as-a-software-engineer.html)).
+But this article is not about AI replacing developers (I wrote about it [here](./blog/surviving- the-ai-revolution-as-a-software-engineer)).
 I believe that the price of every single line of code will decrease its value dramatically in the coming years.
 It's [supply and demand](https://en.wikipedia.org/wiki/Supply_and_demand), there's nothing we can do about it.
 
@@ -136,7 +136,7 @@ Or maybe I'll just go back to the old days, when I used to read books and spend 
 A set of brand new human problems are coming to us.
 
 On the other hand, the tide of public skepticism regarding the future of Computer Science (as a career) is rising.
-Formal Computer Science education is [feeling the pressure](https://www.reddit.com/r/learnprogramming/comments/1173hy3/is_ai_going_to_make_my_cs_degree_useless/).
+Formal Computer Science education is [feeling the pressure](https://www.reddit.com/r/learnprogramming/comments/1173hy3/is_ai_going_to_make_my_cs_degree_useless).
 At the same time, the number of devs ~~kicked out from~~ leaving the industry is increasing.
 This is alarming to me.
 
@@ -180,7 +180,7 @@ Now that we have defined who we are, what we do, and what we don't do, let's exp
 # The Successful Prompt Engineer
 
 <aside class="quote">
-    <em>“Prompting is not about writing questions. It's a way of looking at and solving problems.”</em> 
+    <em>“Prompting is not about writing questions. It's a way of looking at and solving problems.”</em>
 </aside>
 
 The successful prompt engineer has a clear goal in mind (you're wrong, it's not making more money).

@@ -184,7 +184,7 @@ Ruff supports the [PEP 8](https://pep8.org/) style guide out of the box.
 ## ty
 
 [ty](https://github.com/astral-sh/ty) is a type checker for Python.
-It is a great combo for [typing](https://docs.python.org/3/library/typing.html), the popular Python module for adding static typing.
+It is a great combo for [typing](https://docs.python.org/3/library/typing), the popular Python module for adding static typing.
 I think typing really helps me catch type errors early in the development process. I actually don’t care about having to write more code, in fact, I prefer it if it improves code quality and reduces the likelihood of runtime errors.
 
 **NOTE:** At the time of writing, `ty` is still in early development by Astral (the same company behind `uv` and `ruff`), but I’ve been using it and haven’t found any noticeable flaws so far.
@@ -243,7 +243,7 @@ It’s fast, easy to use, and integrates seamlessly with Pydantic for data valid
 
 ## Dataclasses
 
-[Dataclasses](https://docs.python.org/3/library/dataclasses.html) is not a library but a Python feature that provides a way to define classes that are primarily used to store data.
+[Dataclasses](https://docs.python.org/3/library/dataclasses) is not a library but a Python feature that provides a way to define classes that are primarily used to store data.
 They offer a simple syntax for creating classes that automatically generate special methods like `__init__()`, `__repr__()`, and `__eq__()`.
 
 This greatly reduces boilerplate when creating data containers.

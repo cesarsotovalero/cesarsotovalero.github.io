@@ -12,7 +12,7 @@ keywords:
   - software performance,
 image: ../img/posts/2022/curves_cover.jpg
 share-img: ../img/posts/2022//curves_cover.jpg
-show-avatar: false 
+show-avatar: false
 toc: true
 date: 2022/03/27
 author: cesarsotovalero
@@ -20,14 +20,14 @@ published: true
 ---
 
 There are two ways of compiling a Java application: using Just in Time Compilation (JIT) or Ahead of Time Compilation (AOT).
-The first is the default mode, and it is used by the [Java Hotspot Virtual Machine](https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html) to translate bytecode into machine code at runtime.
-The latter is supported by the novel [GraalVM](https://www.graalvm.org/) compiler and allows statically compiling bytecode directly into machine code at build time.
+The first is the default mode, and it is used by the [Java Hotspot Virtual Machine](https://www.oracle.com/java/technologies/javase/vmoptions-jsp) to translate bytecode into machine code at runtime.
+The latter is supported by the novel [GraalVM](https://www.graalvm.org) compiler and allows statically compiling bytecode directly into machine code at build time.
 In this post, I'll explain the differences between these two compilation strategies.
 After reading this post, you will learn what Java compilers do, the differences between existing compiling approaches, and in which circumstances using an AOT compiler is more appropriate.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/curves.jpg alt: "AOT vs. JIT" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; JIT vs. AOT: two sides of the same coin. Photo from <a href="https://goo.gl/maps/j8GC4KtHEXoKxLpB8">Tekniska Högskolan station</a>.
   </figcaption>
 </figure>
@@ -59,7 +59,7 @@ The following sections describe the differences between these two approaches.
 ## Just in Time Compilation (JIT)
 
 When compiling a Java program (e.g., using the `javac` command line tool), we end up with our source code transformed into an intermediate representation which is platform-independent (a.k.a. JVM bytecode).
-This bytecode representation is simpler for the JVM to interpret, but it is harder to read by humans. 
+This bytecode representation is simpler for the JVM to interpret, but it is harder to read by humans.
 Conventional processors in our computers cannot execute JVM bytecode directly.
 To do so, a compiler transforms JVM bytecode into a binary representation which is platform-dependent.
 This means that the program can be executed only in a computer with the architecture in which it was originally compiled.
@@ -67,7 +67,7 @@ This is precisely the task of bytecode compilers.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/java_source_code_compilation.png alt:"Java source code compilation phases" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     Fig 1. Java source code is first compiled to bytecode, and subsequently interpreted or executed as native code. Heavy optimizations are reserved for the JIT-compilation phase. <a href="https://dl.acm.org/doi/10.1145/3067695.3082521">Source</a>.
   </figcaption>
 </figure>
@@ -94,7 +94,7 @@ The bytecode interpretation process makes executing an application significantly
 
 [AOT compilation](https://en.wikipedia.org/wiki/Ahead-of-time_compilation) is a form of static compilation that consists of transforming the program into a machine code **before it is executed**.
 This is the "old-fashioned" way in which the code in old programming languages such as C is statically linked and compiled.
-The machine code obtained as a result is tailored to a specific operating system and hardware architecture, facilitating a very fast execution. 
+The machine code obtained as a result is tailored to a specific operating system and hardware architecture, facilitating a very fast execution.
 
 The [GraalVM](https://github.com/graalvm/graal.git) compiler can perform a highly optimized AOT compilation of JVM bytecode.
 GraalVM is written in Java and uses JVMCI[^1] to integrate with the Hotspot VM.
@@ -113,8 +113,8 @@ The result is a native image executable that can be shipped and deployed directl
 
 <figure class="jb_picture">
 {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2022/native_image_creation_process.png alt: "Native image creation process in Quarkus." %}
-  <figcaption class="stroke"> 
-    Fig 2. Native image creation process in GraalVM. <a href="https://dl.acm.org/doi/10.1145/3360610">Source</a>. 
+  <figcaption class="stroke">
+    Fig 2. Native image creation process in GraalVM. <a href="https://dl.acm.org/doi/10.1145/3360610">Source</a>.
   </figcaption>
 </figure>
 
@@ -145,7 +145,7 @@ The following spider graph illustrates the key differences:
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2022/aot_vs_jit.jpeg alt:"AOT vs. JIT." %}
   <figcaption class="stroke">
-    Fig 3. AOT vs. JIT. <a href="https://twitter.com/thomaswue/status/1145603781108928513?s=20&t=-6ufSBjc46mfN5d_6Y2-Rg">Source</a>. 
+    Fig 3. AOT vs. JIT. <a href="https://twitter.com/thomaswue/status/1145603781108928513?s=20&t=-6ufSBjc46mfN5d_6Y2-Rg">Source</a>.
   </figcaption>
 </figure>
 
@@ -163,8 +163,7 @@ The points-to analysis of the AOT compilation needs to "see" all the bytecode to
 This limitation is known as the close world assumption.
 It means that all the bytecode in the application and their dependencies that can be called at runtime **must be known at build time** (observed and analyzed), i.e., when the `native-image` tool in GraalVM is building the standalone executable.
 
-Consequently, [dynamic language capabilities](./the-dynamic-features-of-java.html) such as Java Native Interface (JNI), Java Reflection, Dynamic Proxy objects (`java.lang.reflect.Proxy`), or classpath resources (`Class.getResource`) are not supported.
-
+Consequently, [dynamic language capabilities](./blog/the-dynamic-features-of-java) such as Java Native Interface (JNI), Java Reflection, Dynamic Proxy objects (`java.lang.reflect.Proxy`), or classpath resources (`Class.getResource`) are not supported.
 
 > “The closed-world constraint imposes strict limits on Java’s natural dynamism, particularly on the run-time reflection and class-loading features upon which so many existing Java libraries and frameworks depend. Not all applications are well suited to this constraint, and not all developers are willing to live with it.
 >
@@ -184,7 +183,7 @@ The generated files are standalone configuration files in JSON format, which con
 Thesis files can be passed to the `native-image` tool so that the used classes will not be removed during the image build process.
 
 It is worth mentioning that the close work assumption is good for security as it eliminates the possibility of various code injections (e.g., the [Log4j vulnerability](https://nvd.nist.gov/vuln/detail/CVE-2021-44228) that shocked the web in 2021 was possible due to the exploitation of the dynamic class loading mechanism in Java).
-On the other hand, the point-to-analysis makes AOT compilation slower than JIT because all the reachable bytecode needs to be analyzed, which is an expensive computational tack.  
+On the other hand, the point-to-analysis makes AOT compilation slower than JIT because all the reachable bytecode needs to be analyzed, which is an expensive computational tack.
 
 # Is GraalVM the Future of Java?
 
@@ -224,14 +223,14 @@ Therefore, the technology still needs some time to mature before its massive ado
 
 [//]: # (What tools are available to analyze the native binary?)
 
-It is possible to compile JVM bytecode using either AOT or JIT approaches. 
-It would be wrong to say one approach is better than the other since they are suited for different situations. 
+It is possible to compile JVM bytecode using either AOT or JIT approaches.
+It would be wrong to say one approach is better than the other since they are suited for different situations.
 The GraalVM compiler allows for building high-performance applications with AOT compilation, reducing the startup time and improving the performance considerably. This power comes at the cost of complying with the close world assumption (no Java dynamic features are allowed). Developers can still use the standard JIT compiler in the Hotspot VM to use dynamic features, which supports machine code generation at runtime.
 
 # References
 
 - [Java is Going to the Moon: Native Images with GraalVM](https://docs.google.com/presentation/d/1JDVerE77ZWLqwtWP430QXF1KTd4RhKoD/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
-- [Supporting Binary Compatibility with Static Compilation](https://www.usenix.org/legacy/publications/library/proceedings/jvm02/yu/yu_html/index.html)
+- [Supporting Binary Compatibility with Static Compilation](https://www.usenix.org/legacy/publications/library/proceedings/jvm02/yu/yu_html/index)
 - [Initialize Once, Start Fast: Application Initialization at Build Time](https://dl.acm.org/doi/10.1145/3360610)
 - [Deep Dive Into the New Java JIT Compiler – Graal](https://www.baeldung.com/graal-java-jit-compiler)
 - [JEP 295: Ahead-of-Time Compilation](https://openjdk.java.net/jeps/295)

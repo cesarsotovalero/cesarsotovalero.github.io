@@ -1,5 +1,5 @@
 ---
-permalink: software-debloating-talks.html
+permalink: software-debloating-talks
 layout: page
 title: Software Debloating Talks
 subtitle: Living talks list

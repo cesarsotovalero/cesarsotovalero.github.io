@@ -43,8 +43,7 @@ Let's discuss this matter!
     </figcaption>
 </figure>
 
-
-# Feed Your Intellectual Curiosity 
+# Feed Your Intellectual Curiosity
 
 A PhD is an [academic degree](https://en.wikipedia.org/wiki/Doctor_of_Philosophy) given to those who expand the boundaries of human knowledge in some specific area of science.
 Thus, it is a form of social recognition.
@@ -118,9 +117,9 @@ There, one can interact with the cream of young researchers eager to receive att
 Many of these guys will become successful entrepreneurs or occupy prestigious positions at big tech companies.
 Others will become prestigious professors, and a very few of them will make significant contributions in your field, write world-acclaimed books, etc.
 
-# Set Yourself Apart From The Competition 
+# Set Yourself Apart From The Competition
 
-You probably want to be [more than just a programmer](https://www.cesarsotovalero.net/blog/hermit-programmers-are-dead.html), and that's great.
+You probably want to be [more than just a programmer](./blog/hermit-programmers-are-dead), and that's great.
 The PhD journey will arm you with a set of technical and non-technical skills to satisfy this ambition.
 There are many good developers out there, but a PhD teaches you how to methodically solve complex problems, write well, and communicate with others.
 Professional recruiters know very well that candidates with this combination of talents are not very common in the job market.
@@ -129,7 +128,7 @@ Professional recruiters know very well that candidates with this combination of 
     <em>“Your value in the market will be higher.”</em>
 </aside>
 
-If you succeed to graduate [you have been battle-tested](https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html).
+If you succeed to graduate [you have been battle-tested](./blog/book-review-the-phd-grind).
 You have learned how to organize a research agenda and formulate specific research questions.
 A PhD prepares you well to ask questions with a high level of abstraction, and probably you will be able to approach projects from a more holistic perspective than others.
 These ~~soft~~ skills are difficult to learn and can only be acquired through experience.
@@ -156,12 +155,12 @@ The whole system encourages this attitude by measuring the caliber of a research
 For example, the number of papers, citations stats, graduated students, grants awarded, and so on.
 If you can show that you are good in such a competitive environment, no one will deny that you belong to a selective group: the best of the best.
 
-Some other people feel social pressure and don't want to get behind other people in their close network. 
+Some other people feel social pressure and don't want to get behind other people in their close network.
 For example, if all your parents and brothers hold academic titles, you'll probably feel the need to reach a similar status.
 Otherwise, you might be perceived as someone that belongs to an inferior category.
 However, the main driver for doing a PhD should be no other than satisfying personal aspirations.
 
-# Own Your Work 
+# Own Your Work
 
 As a paid employee working in a software company, you probably have signed a contract explicitly stating that the results of your work belong to the company.
 In contrast, academic research is one of the very few positions where you can personally retain all the credits for your work.

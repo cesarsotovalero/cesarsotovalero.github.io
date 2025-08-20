@@ -33,7 +33,7 @@ Let me dive into it!
 <figure class="jb_picture">
   {%responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2021/crane.png alt: "The crane is a symbol of the construction and transportation of physical objects on a large scale." %}
   <figcaption class="stroke">
-    &#169; The crane is a symbol of the construction and transportation of physical objects on a large scale. 
+    &#169; The crane is a symbol of the construction and transportation of physical objects on a large scale.
     </figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ Let me dive into it!
 
 According to Wikipedia, a [supply chain](https://en.wikipedia.org/wiki/Supply_chain) is a system of organizations, people, activities, information, and resources involved in moving a product or service from supplier to consumer.
 Supply chains have proven to mitigate the risks associated with producing and distributing goods and services, making this process more efficient.
-Software is a very special type of product. 
+Software is a very special type of product.
 It lives in the digital space, governed by mathematical structures and human protocols.
 As it is not a physical product, there are no transportation issues, lack of warehousing space, or international regulations to follow when delivering software applications.
 Therefore, clients' expectations regarding shipping speed and availability are much higher.
@@ -71,7 +71,7 @@ These issues then need to be addressed by the developers who maintain the produc
     </figcaption>
 </figure>
 
-The CI/CD pipeline is an infinite loop, where digital resources and information pass through different stages, coming back and forth from developers to clients and vice versa. 
+The CI/CD pipeline is an infinite loop, where digital resources and information pass through different stages, coming back and forth from developers to clients and vice versa.
 As software has already [eaten the world](https://www.wsj.com/articles/SB10001424053111903480904576512250915629460), most large-scale software is already developed, and it is currently running in production.
 Therefore, the primary objective of the software supply chain is to ensure the stability of such existing systems through effective maintenance.
 
@@ -95,7 +95,7 @@ This includes handling and updating dependencies, documentation, licenses, and p
 
 Today it is almost impossible to ship any large software solution fast without the help of third-party dependencies.
 For almost every software company, relying on software that is not made in-house poses several risks.
-[Software supply chain attacks](https://en.wikipedia.org/wiki/Supply_chain_attack) occur when a malicious actor penetrates the CI/CD chain to insert malicious code. 
+[Software supply chain attacks](https://en.wikipedia.org/wiki/Supply_chain_attack) occur when a malicious actor penetrates the CI/CD chain to insert malicious code.
 If a single component in the supply chain gets compromised, then the whole infrastructure may be at the mercy of the attacker.
 Supply chain attacks are very difficult to detect because the product continuously changes at each stage: from source code, to binaries, to an application that runs somewhere in the cloud and is interacting with clients.
 Attackers could target all the layers of the supply chain, from malicious plugins in IDEs to corrupted compilers.
@@ -110,7 +110,7 @@ Package managers are particularly susceptible to supply chain attacks (e.g., [ty
 This is due to the lack of efficient mechanisms for detecting malicious code injected into packages uploaded to popular package repositories.
 For example, there is no security audit performed on the packages submitted `npm`, the largest repository of JavaScript libraries.
 Significant research effort has been devoted to classifying [supply-chain compromises](https://github.com/IQTLabs/software-supply-chain-compromises/blob/master/software_supply_chain_attacks.csv) and developing tools for hardening the supply chain infrastructure is a trending and marketable business.
-We have seen the rise of tools to mitigating the risks (e.g., [Snik](https://snyk.io/, [Sonarqube](https://www.sonarqube.org/), and [Chaos Monkey](https://netflix.github.io/chaosmonkey/))). 
+We have seen the rise of tools to mitigating the risks (e.g., [Snik](https://snyk.io/, [Sonarqube](https://www.sonarqube.org/), and [Chaos Monkey](https://netflix.github.io/chaosmonkey/))).
 Existing tools are mostly focused on monitoring applications' behavior, scanning dependencies, and assessing code quality.
 However, the adoption of such tools is still at an early stage in most organizations.
 
@@ -151,7 +151,7 @@ Developers should have a way to recreate a close enough build environment, perfo
 
 In the supply chain, software products, including security tools, should be designed with failure in mind (i.e., they must fail gracefully).
 The system should closely monitor any third-party software releases used, watch published vulnerability announcements, and distribute updates.
-Notice that the [security tools themselves](https://googleprojectzero.blogspot.com/2016/06/how-to-compromise-enterprise-endpoint.html) are not exempt.
+Notice that the [security tools themselves](https://googleprojectzero.blogspot.com/2016/06/how-to-compromise-enterprise-endpoint) are not exempt.
 
 In general, the hardening of the software supply chain should be guided by the following three objectives:
 
@@ -172,6 +172,6 @@ I hope events such as the SolarWinds incident become less frequent in the near f
 
 - [:globe_with_meridians: https://reproducible-builds.org/docs](https://reproducible-builds.org/docs)
 - [:globe_with_meridians: https://survey.opensourceunchained.eu/](https://survey.opensourceunchained.eu/)
-- [:globe_with_meridians: SolarWinds attack explained: And why it was so hard to detect](https://www.csoonline.com/article/3601508/solarwinds-supply-chain-attack-explained-why-organizations-were-not-prepared.html)
+- [:globe_with_meridians: SolarWinds attack explained: And why it was so hard to detect](https://www.csoonline.com/article/3601508/solarwinds-supply-chain-attack-explained-why-organizations-were-not-prepared)
 - [Securing the World's Software](https://arxiv.org/ftp/arxiv/papers/2110/2110.10246.pdf)
 - [USA Securing Open Source Software Act of 2022](https://www.govinfo.gov/content/pkg/BILLS-117s4913is/pdf/BILLS-117s4913is.pdf)

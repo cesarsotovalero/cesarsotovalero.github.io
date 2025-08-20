@@ -16,22 +16,22 @@ published: true
 ---
 
 <aside class="quote">
-    <em>“Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill.”</em> 
+    <em>“Being able to interact flexibly, swiftly, and efficiently with the underlying data and software systems is an indispensable skill.”</em>
     <cite><br> ― <a href="https://en.wikipedia.org/wiki/Diomidis_Spinellis">Diomidis Spinellis</a></cite>
 </aside>
 
 I want to share my personal notes of the [edX](https://www.edx.org/) course [Unix Tools: Data, Software and Production Engineering](https://www.edx.org/course/unix-tools-data-software-and-production-engineering), by Prof. Diomidis Spinellis. I attended this course from March to June 2020. It was my first MOOC experience. I have to say that I learned a lot in this course, and it makes me consider online education very seriously, as it provides an excellent way of learning from top courses, given by top universities, and tough by top experts in the world.
 
-These notes are not organized in any specific manner. 
+These notes are not organized in any specific manner.
 So, they are actually a bunch of very disordered Unix command line hacks and tricks :grin:.
 
 # Display elapsed time from the start to the end of the process
 
 {% highlight bash linenos %}
-start=$(date +%s) 
+start=$(date +%s)
 sleep 5
 end=$(date +%s)
-echo "The process lasted $(expr $end - $start) seconds." 
+echo "The process lasted $(expr $end - $start) seconds."
 {% endhighlight %}
 
 # Combine commands
@@ -41,7 +41,7 @@ cat -n afile >result && rm afile # rm will be executed only if cat succeds
 {% endhighlight %}
 
 {% highlight bash linenos %}
-touch afile 
+touch afile
 copy afile bfile || echo Copy failed # the echo will be executed
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ copy afile bfile || echo Copy failed # the echo will be executed
 Function that passes input timezone and converts it to a desire time zone. To use it, run `showtime Europe/Sweden America/La_Habana 11:45`
 
 {% highlight bash linenos %}
-showtime() 
+showtime()
 {
    local TZIN=$1
    local TZOUT=$2
@@ -84,7 +84,7 @@ done
 Computes the average number of characters per line across the files in a directory.
 
 {% highlight bash linenos %}
-ls | 
+ls |
 while read name ; do # For every entry
     if [ -f $name -a -r $name ] ; then # If is a regular file and readable
       echo -n "$name "
@@ -159,7 +159,7 @@ echo $(date): operation failed >>log-file
 
 
 
-# Fetching data 
+# Fetching data
 
 
 ## From the web
@@ -193,7 +193,7 @@ List the content of an archive file in the web without pushing its content in th
 
 {% highlight bash linenos %}
 curl -Ls https://github.com/castor-software/depclean/archive/1.0.0.tar.gz | # Download tar file
-tar -tzvf - | # -t list content, z- indicates zip compression, -v is verbose, -f retrieve file to the output of curl 
+tar -tzvf - | # -t list content, z- indicates zip compression, -v is verbose, -f retrieve file to the output of curl
 head -10 # list first 10 entries
 {% endhighlight %}
 
@@ -201,7 +201,7 @@ Decompress the file in the disk
 
 {% highlight bash linenos %}
 curl -Ls https://github.com/castor-software/depclean/archive/1.0.0.tar.gz | # Download tar file
-tar -xzf - 
+tar -xzf -
 {% endhighlight %}
 Create and compress archives
 
@@ -240,13 +240,13 @@ git log --pretty=format:%ae | # list each commit author email                   
 sort | # Bring emails together
 uniq -c | # Count occurrence
 sort -rn | # Order by number
-head 
+head
 {% endhighlight %}
 
 What is the file the largest number of changes?
 
 {% highlight bash linenos %}
-find . -type f -print |                                                         
+find . -type f -print |
     while read f ; do # For each file
     echo -n "$f " # Prints its name on a single line
     git log --follow --oneline $f | wc -l # Count the number of changes
@@ -345,7 +345,7 @@ grep -E "[^aeiouy]{7}" words # Words with seven consonants
 grep -E "^.{,15}$" words | wc -l # Words with a length up to 15
 grep -E "^.{15,}$" words | wc -l # Words with at least 15 characters
 grep -E "^(.).*\1$" words | head # Words beginning and ending with the same character (the character in parentesis is referenced with \1)
-grep -E "^(.)(.)((.)\4)?\2\1$" words # Find 3-4 letter palindromes 
+grep -E "^(.)(.)((.)\4)?\2\1$" words # Find 3-4 letter palindromes
 {% endhighlight %}
 
 Alternative matches.
@@ -435,8 +435,8 @@ ls /usr | tojson.sed
 Summarize size of of files in a directory.
 
 {% highlight bash linenos %}
-ll > contents.txt 
-awk '                    
+ll > contents.txt
+awk '
 { size += $5; n++ }  # Sum size and number of files
 END {                # Print summary
 print "Total size " size
@@ -449,7 +449,7 @@ print "Average file size " size/n
 Count the number of file extension
 
 {% highlight bash linenos %}
-ll > contents.txt 
+ll > contents.txt
 awk '
 {
 sub(".*/", "", $9)   # Remove path
@@ -720,11 +720,10 @@ en_US.UTF-8
 
 # References
 
-- [:earth-americas: Unix command specification](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html)
+- [:earth-americas: Unix command specification](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents)
 - [:earth-americas: http://conqueringthecommandline.com](http://conqueringthecommandline.com)
 - [:earth-americas: The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 - [:earth-americas: http://www.bashoneliners.com](http://www.bashoneliners.com)
 - [:earth-americas: https://www.commandlinefu.com](https://www.commandlinefu.com)
 - [:earth-americas: https://explainshell.com/](https://explainshell.com/)
 - [UNIX For Beginners — Second Edition](https://wolfram.schneider.org/bsd/7thEdManVol2/beginners/beginners.pdf)
-

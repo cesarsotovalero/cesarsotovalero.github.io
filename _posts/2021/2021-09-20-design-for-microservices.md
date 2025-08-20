@@ -13,7 +13,7 @@ keywords:
 image: ../img/posts/2021/clouds_cover.png
 share-img: ../img/posts/2021/clouds_cover.png
 show-avatar: false
-toc: true 
+toc: true
 date: 2021/09/20
 author: cesarsotovalero
 published: true
@@ -32,13 +32,13 @@ Lets me explain this approach.
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2021/clouds.png alt: "The cloud: a bunch of Linux servers where microservices coexist." %}
   <figcaption class="stroke">
-    &#169; The cloud: a bunch of Linux servers where microservices coexist. 
+    &#169; The cloud: a bunch of Linux servers where microservices coexist.
     </figcaption>
 </figure>
 
 # Microservices
 
-The term "microservices" became popular after the publication of a [famous blog post](https://martinfowler.com/articles/microservices.html) by James Lewis and Martin Fowler in 2014.
+The term "microservices" became popular after the publication of a [famous blog post](https://martinfowler.com/articles/microservices) by James Lewis and Martin Fowler in 2014.
 The authors describe the fundamental characteristics of microservices and contrast them with the traditional [monolithic architecture](https://en.wikipedia.org/wiki/Monolithic_application).
 They define microservices as a cloud-native architecture that aims to build software systems as packages of small services that can run on their own process while communicating through lightweight mechanisms such as [RESTful](https://restfulapi.net/) or [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) APIs.
 
@@ -83,7 +83,6 @@ However, it is worth mentioning that adopting microservices may (in some cases) 
 To mitigate this situation, some technologies such as Kubernetes provide service orchestration, which increases resilience and optimizes computational resources.
 For example, when microservice components are handled by Kubernetes, in case that one service fails then the system can automatically recover from the fault without losing any critical resources.
 
-
 # The Component Is the Opportunity
 
 Simplistically, one can consider each component in the Service layer of microservices as a standalone ~~small~~ application that talks to other applications through some tech communication channel.
@@ -110,7 +109,7 @@ DepClean was originally designed as a command-line tool for Maven.
 It gets the work done, but it is not very user-friendly for the unfamiliar user who doesn't need to understand the complex mechanism that governs the way of how Java dependencies are handled.
 
 A goal of our research outreach is facilitating the adoption of DepClean by the community so that the tool could gain significant impact (i.e., reaching more users).
-An easy way to leverage enthusiasm is by visually showing the positive impact of using DepClean on a Java project. 
+An easy way to leverage enthusiasm is by visually showing the positive impact of using DepClean on a Java project.
 Therefore, we focus on providing visual insights regarding the presence of bloated dependencies in open-source projects on GitHub.
 With this objective in mind, we designed [depclean-web](https://github.com/castor-software/depclean-web), an interactive website that allows the user to receive the analysis and output of DepClean visually for any Java project on GitHub.
 

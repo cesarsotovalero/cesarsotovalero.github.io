@@ -15,7 +15,7 @@ date: 2021/7/31
 published: true
 ---
 
-It's 2021, and the job market has crashed due to a ghastly [global pandemic](https://www.nytimes.com/interactive/2020/06/10/world/coronavirus-history.html).
+It's 2021, and the job market has crashed due to a ghastly [global pandemic](https://www.nytimes.com/interactive/2020/06/10/world/coronavirus-history).
 At the same time, one particular job has taken over an idealized professional place: the "computer programmer."
 They are perceived to be experts who know how to build, fix, and deploy software artifacts.
 Most of them prefer to live in airtight environments, where the pieces of the software puzzle to be solved can be more easily isolated.
@@ -44,7 +44,7 @@ The most talented programmers were heavily disputed between medium and large com
 
 In the beginning, there was an abyss between programmers and their managers.
 Computers were significantly more expensive than programmers.
-This situation encouraged [the hacker mentality](https://www.yegor256.com/2014/10/26/hacker-vs-programmer-mentality.html).
+This situation encouraged [the hacker mentality](https://www.yegor256.com/2014/10/26/hacker-vs-programmer-mentality).
 People that lived by and for their own coding creations, pleasing managers from time to time,  without caring if others can understand what their code does (or how).
 This was possible in part because the number of available technologies (software + hardware devices) was so limited that, for instance, a C programmer could literally code for any available platform; and we all know how cryptic can easily become a piece of driver code written in C.
 
@@ -80,8 +80,8 @@ Having all the services as standardized APIs and a few packages that can access 
 The biggest impact is probably driven by the AI technologies powered by this massive cloud and data storage infrastructures.
 For example, Microsoft recently announced [GitHub Copilot](https://copilot.github.com/), an AI-based system to assist developers in their daily routines.
 The system can write entire programs based on just the developer's intention, and it is feeded by the billion lines of code hosted on GitHub.
-Researchers are just starting to explore the potential of [machine learning for big code and naturalness](https://ml4code.github.io/papers.html).
-Perhaps someday we'll have [cognitive AI](https://towardsdatascience.com/the-rise-of-cognitive-ai-a29d2b724ccc) writing entire complex software from scratch and [passing the Turing Test](https://lacker.io/ai/2020/07/06/giving-gpt-3-a-turing-test.html).
+Researchers are just starting to explore the potential of [machine learning for big code and naturalness](https://ml4code.github.io/papers).
+Perhaps someday we'll have [cognitive AI](https://towardsdatascience.com/the-rise-of-cognitive-ai-a29d2b724ccc) writing entire complex software from scratch and [passing the Turing Test](https://lacker.io/ai/2020/07/06/giving-gpt-3-a-turing-test).
 Today the discussion is not whether or not this will happen, but when.
 
 # The Future

@@ -23,7 +23,7 @@ In this post, I'll explain the key differences and provide you with hands-on Jav
 
 <figure class="jb_picture">
 {% responsive_image path: img/posts/2021/paint_on_wall.jpg alt:"It's all about transformations." %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
 &#169; It's all about data transformations. Photo taken at <a href="https://goo.gl/maps/vzMt6ScMnddqbowc8">Östermalmstorg metro station</a>.
 </figcaption>
 </figure>
@@ -42,7 +42,7 @@ For example, the [UTF-8](https://sv.wikipedia.org/wiki/UTF-8) character encoding
 ## Encoding a String in Java Using Base64
 
 The standard JDK provides the `Base64` class located in the package `java.util`.
-`Base64` provide methods for encoding any string to a set of characters in `/A-Za-z0-9+/` regex. 
+`Base64` provide methods for encoding any string to a set of characters in `/A-Za-z0-9+/` regex.
 So, the decoder rejects any characters outside this set.
 `Base64` also offers methods to encode and decode URLs safely.
 
@@ -91,7 +91,7 @@ The public key is shared publicly, while a private key is secret and must not be
 
 ## Encrypting a String in Java Using RSA
 
-The `java.security` package provide a strong API to [several algorithms](https://docs.oracle.com/javase/9/docs/specs/security/standard-names.html) for basic encrypting tasks. 
+The `java.security` package provide a strong API to [several algorithms](https://docs.oracle.com/javase/9/docs/specs/security/standard-names) for basic encrypting tasks.
 The first step to use RSA for encryption is generating a key pair.
 We can easily do it by using the `KeyPairGenerator` class.
 
@@ -126,7 +126,7 @@ private static PrivateKey readRSAPrivateKey(File keyFile) throws Exception {
   KeyFactory keyFactory = KeyFactory.getInstance("RSA");
   EncodedKeySpec privateKeySpec = new PKCS8EncodedKeySpec(privateKeyBytes);
   return keyFactory.generatePrivate(privateKeySpec);
-} 
+}
 {% endhighlight %}
 
 To encrypt a string message, we'll need a `Cipher` object initialized for encryption with the public key that we generated previously. Invoking the `doFinal` method encrypts our message. Note that it accepts only byte array arguments, so we need to encode our string to Base64, which facilitates its further storage in a database or the exposition of the secured message via REST API:
@@ -141,7 +141,7 @@ public static String encryptMessage(String secretMessage, File publicKeyFile) th
 }
 {% endhighlight %}
 
-Now, let's see how we can decrypt the message to its original form. 
+Now, let's see how we can decrypt the message to its original form.
 For this, we initialize a Cipher object with a decryption mode and the previously generated private key:
 
 {% highlight java linenos %}
@@ -166,7 +166,7 @@ void testRSAEncryptionAndDecryption() throws Exception {
   String decryptedMessage = decryptMessage(encryptedMessage, privateKeyFile);
   Assertions.assertNotEquals(message, encryptedMessage);
   Assertions.assertEquals(message, decryptedMessage);
-} 
+}
 {% endhighlight %}
 
 
@@ -194,7 +194,7 @@ If they match, this confirms the authenticity of the user.
 ## Hashing a String in Java Using SHA3-256
 
 The Java JDK provides the `MessageDigest` class for hashing.
-The following method hashes a string message using the `SHA3-256` algorithm. 
+The following method hashes a string message using the `SHA3-256` algorithm.
 Note that the output is an array of bytes, which you need to convert to hexadecimal:
 
 {% highlight java linenos %}
@@ -267,7 +267,7 @@ public class Example {
       System.out.println(s);
     }
   }
-} 
+}
 {% endhighlight %}
 
 Once the class is compiled, we can create a [Proguard](https://github.com/Guardsquare/proguard?__hstc=&__hssc=) configuration file as follows:

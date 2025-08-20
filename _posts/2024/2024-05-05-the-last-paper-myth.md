@@ -49,14 +49,14 @@ So let's start by discussing expectations.
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-05-05/aspuden-metro-terminal.png alt: "Not free to go" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; Do you really think you're free to go? Not too fast, there is always a chance to give you one more block to carry on. Sculpture of a penguin carrying a cube at the <a href="https://en.wikipedia.org/wiki/Aspudden_metro_station">metro station of Aspudden</a>, in Stockholm.
   </figcaption>
 </figure>
 
 # Expectations
 
-For most PhD students, the doctoral journey is envisioned as a quest for [knowledge and further professional opportunities](../blog/seven-reasons-to-go-for-a-phd-in-computer-science.html).
+For most PhD students, the doctoral journey is envisioned as a quest for [knowledge and further professional opportunities](./blog/seven-reasons-to-go-for-a-phd-in-computer-science).
 It's a personal challenge, where intellectual curiosity meets the rigorous demands of [scientific research](https://en.wikipedia.org/wiki/Scientific_method).
 This idyllic vision of fulfilled scientists, however, has evolved dramatically over the last years.
 The modern high education system is currently shaped by the dual pressures of squeezing a little more out of the public money pipeline, and ranking high in [global publication metrics](https://www.topuniversities.com/university-subject-rankings/engineering-technology) to get more money in return.[^1]
@@ -78,7 +78,7 @@ The need to take a break after years of hard work seemed like a priority to me.
 By that time, I had the expectation that my primary task was to synthesize my research into a thesis and call it all done.
 I guess this hope is shared among most PhD students in their final round.
 Honestly, I was in a comfortable position.
-Having published [a few papers](../publications.html) targeting a single knowledge gap, I felt that I had done a _real_ PhD.
+Having published [a few papers](./publications) targeting a single knowledge gap, I felt that I had done a _real_ PhD.
 These papers were the core of my scientific contributions.
 They seemed to push the boundaries of human knowledge just the necessary little bit.
 In such a position, after five years of struggles with the whole process, it was reasonable for me to assume that **I should now focus only on writing my thesis**.
@@ -104,15 +104,15 @@ That's when the pressure to produce "one last paper" kicks in.
 
 Students in this position are often led to believe that submitting just one more paper will fulfill their academic obligations.
 This belief stems from an academic culture that prioritizes work output over well-being and even mental health.
-As a result, the most capable students frequently find themselves the most burdened. 
+As a result, the most capable students frequently find themselves the most burdened.
 The myth of the last paper traps PhD students in their final year into mistakenly thinking that they don't have enough results to defend.
-It leads to a continuous cycle of craving to produce "just one more paper," under the belief that this will finally conclude their academic responsibilities. 
+It leads to a continuous cycle of craving to produce "just one more paper," under the belief that this will finally conclude their academic responsibilities.
 Unfortunately, this is far from reality.
 
 # Reality
 
 <aside class="quote">
-    <em>“How do you prove that a paper is good? Hard to tell.”</em> 
+    <em>“How do you prove that a paper is good? Hard to tell.”</em>
 </aside>
 
 The idea that a specific number of papers could determine the conclusion of a PhD journey is a misconception.
@@ -157,14 +157,14 @@ These policies could include **clear guidelines** in terms of schedule, mentorsh
 By creating a supportive and equitable environment for PhD students, institutions can help mitigate the negative effects of the "last paper myth" and foster a culture of academic integrity and well-being.
 
 <aside class="quote">
-    <em>“Academic supervisors tend to act in their own interests, and provoking their students to burn out only results in wasted time and resources for them.”</em> 
+    <em>“Academic supervisors tend to act in their own interests, and provoking their students to burn out only results in wasted time and resources for them.”</em>
 </aside>
 
 If you find yourself writing papers when you were supposed to be writing your thesis, I suggest taking a step back and reevaluating your priorities.
 It could be that you are procrastinating on the thesis because it is a daunting task, and writing papers is a more manageable way to feel productive.
 If it isn't the case, you can let your supervisor know that you're really stressed and that you need to focus on your thesis.
 Take into account that researchers are extremely intelligent people.
-They know very well how much they can push. 
+They know very well how much they can push.
 They are perfectly aware that if pushing too much, they could provoke a burnout that is not beneficial for anyone.
 So, it is in their best interest to keep you in good shape.
 
@@ -205,7 +205,7 @@ By making it clear that you are in "thesis writing mode," and therefore unable t
 # Beyond Academia
 
 <aside class="quote">
-    <em>“Individuals in positions of power have a natural tendency to exercise their authority over subordinates in ways that prioritize their own personal ambitions.”</em> 
+    <em>“Individuals in positions of power have a natural tendency to exercise their authority over subordinates in ways that prioritize their own personal ambitions.”</em>
 </aside>
 
 The dynamics of expectations vs. realities reflect broader patterns of authority and control in various professional environments beyond academia.
@@ -252,6 +252,6 @@ In any case, I believe that clear and measurable expectations should be put in p
 
 [^1]: "Publish _or_ perish" is the motto. There is just not workaround for it.
 
-[^2]: The expected number of papers necessary to get the PhD degree varies greatly between supervisors, universities, and research fields. In Computer Science this number ranges between 3 and 5 papers for most respected institutions.  
+[^2]: The expected number of papers necessary to get the PhD degree varies greatly between supervisors, universities, and research fields. In Computer Science this number ranges between 3 and 5 papers for most respected institutions.
 
-[^3]: Not to forget that academic supervisors are technically _forced_ to play the academic game. They have (in most cases) temporary contracts, are underpaid, and have a heavy workload. This is such a dense topic that deserves a blog post on its own. 
+[^3]: Not to forget that academic supervisors are technically _forced_ to play the academic game. They have (in most cases) temporary contracts, are underpaid, and have a heavy workload. This is such a dense topic that deserves a blog post on its own.

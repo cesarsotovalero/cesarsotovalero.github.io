@@ -1,6 +1,6 @@
 ---
-permalink: tools-windows.html 
-layout: page 
+permalink: tools-windows
+layout: page
 title: Tools (Windows)
 subtitle: 🛠️
 description: List of software tools that I use on Windows.

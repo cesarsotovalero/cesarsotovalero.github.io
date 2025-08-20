@@ -21,7 +21,7 @@ author: cesarsotovalero
 published: true
 ---
 
-After training a machine learning model for [real-time financial fraud detection](../blog/real-time-financial-fraud-detection.html), the next step is to evaluate its performance.
+After training a machine learning model for [real-time financial fraud detection](./blog/real-time-financial-fraud-detection), the next step is to evaluate its performance.
 Fraud detection models face unique challenges during evaluation.
 Two examples are (1) class imbalance and (2) the different costs of false positives vs. false negatives.
 Class imbalance means that the model doesn't have enough fraudulent transactions to learn from, as they are rare compared to legitimate ones.

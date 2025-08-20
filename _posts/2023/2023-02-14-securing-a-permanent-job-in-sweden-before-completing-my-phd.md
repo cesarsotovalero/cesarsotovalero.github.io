@@ -22,14 +22,14 @@ For better or worse, a PhD is a time constrained endeavour.
 [For me](https://www.kth.se/profile/cesarsv), this represented almost 5 years of full-time research in Computer Science at KTH.
 When approaching completion, the decision of whether to pursue a career in academia or explore other paths lay before me.
 After some key considerations, I decided to look for a job in the software industry,[^1] and I'm thrilled to share that I have recently accepted a position as a Data Engineer at a big Swedish company.
-In this article, I aim to share insights from my personal job-seeking journey as a PhD student transitioning from academia to industry. 
+In this article, I aim to share insights from my personal job-seeking journey as a PhD student transitioning from academia to industry.
 My intention is to provide fellow PhD students (and anyone contemplating a similar path) with valuable advice and firsthand experiences that can assist them along the way.
 As someone who has gone through the process of securing a job prior to completing a PhD, I understand the challenges and uncertainties you might face.
 I hope my story will offer some clarity and inspiration for those about to embark on their own professional journey... way beyond academia.
- 
+
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-03-10/subway_in_red.jpg alt:"There's light and opportunity at the end of the tunnel" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; There's light and opportunity at the end of the tunnel. Photo of an art piece located in <a href="https://goo.gl/maps/HGaHaBKfrKujT8Rt6">Solna Centrum</a>, one of the most beautiful Stockholm's metro stations.
   </figcaption>
 </figure>
@@ -38,27 +38,27 @@ I hope my story will offer some clarity and inspiration for those about to embar
 
 The "default" decision to stay in academia after obtaining a PhD is often influenced by a myriad of factors, with one significant consideration being the natural and very human inertia of sticking with what is already familiar and known.
 As a result, many PhD students are not fully aware of the vast opportunities that exist beyond the confines of academia.
-For many, it is quite a challenge looking for a professional career elsewhere. 
+For many, it is quite a challenge looking for a professional career elsewhere.
 Fortunately, I recognized the potential for growth and success outside the university, and made a conscious decision to explore my options beyond its gates.
 
 <aside class="quote">
-    <em>“The greatest leader is not necessarily the one who does the greatest things. He is the one that gets the people to do the greatest things.” ― <cite>Ronald Reagan</cite></em> 
+    <em>“The greatest leader is not necessarily the one who does the greatest things. He is the one that gets the people to do the greatest things.” ― <cite>Ronald Reagan</cite></em>
 </aside>
 
 Contrary to what is believed, academic freedom is not a holy grail for PhD students, researchers, and professors.
 As a PhD student, your supervisor essentially functions as your manager, overseeing your work and progress through regular meetings and updates, just like any other job.
 For many PhD students, this dependence on the criteria of their supervisor can be stifling, as the fruits of their hard labor often rest squarely in their hands.
 Furthermore, even supervisors themselves are under constant pressure of producing a certain number of publications within their field every year, especially if they are young.
-For supervisors, research is a means to an end, and the end is often recognition and tenure. 
+For supervisors, research is a means to an end, and the end is often recognition and tenure.
 For PhD students, to be the smallest fish in the food chain can create a lot of tensions and additional stress due to heavy workloads and multiple sources of mental pressure.
 
-Financial considerations also play a significant role in the decision to stay or leave academia. 
-[PhD salaries for Computer Science students in Sweden](https://academicpositions.com/career-advice/professor-salaries-sweden) are notably lower than those offered by tech companies such as Spotify, Klarna, Telia, or Ericsson. 
-In addition, as a PhD student, you may be required to take on [additional responsibilities](../service.html) that are not directly related to your research, such as teaching, handling workshops, and supervising Master's students.
+Financial considerations also play a significant role in the decision to stay or leave academia.
+[PhD salaries for Computer Science students in Sweden](https://academicpositions.com/career-advice/professor-salaries-sweden) are notably lower than those offered by tech companies such as Spotify, Klarna, Telia, or Ericsson.
+In addition, as a PhD student, you may be required to take on [additional responsibilities](./service) that are not directly related to your research, such as teaching, handling workshops, and supervising Master's students.
 In contrast, a career in tech at one of the big companies mentioned before (after graduating in Computer Science) can easily double the salary of a PhD student which much less work overload, making it an attractive alternative.
 
 <aside class="quote">
-    <em>“Academics are often driven by passion rather than monetary gain, making their work a primary focus in life.”</em> 
+    <em>“Academics are often driven by passion rather than monetary gain, making their work a primary focus in life.”</em>
 </aside>
 
 I also observe that the impact of a PhD student's work can be quite limited sometimes due to the solitary nature of conducting independent research.[^5]
@@ -97,7 +97,7 @@ Some companies do it on-site, while others do it remotely.
 The only way to do well in this kind of interviews is to practice a lot.
 I would recommend solving at least 30 problems before applying for a job.
 
-I used to participate in [competitive programming](https://en.wikipedia.org/wiki/Competitive_programming) contests [when I was an undergraduate student](../blog/a-starting-guide-to-be-a-good-competitive-programmer.html).
+I used to participate in [competitive programming](https://en.wikipedia.org/wiki/Competitive_programming) contests [when I was an undergraduate student](./blog/a-starting-guide-to-be-a-good-competitive-programmer).
 So, I was familiar with this kind of problem and just need a few weeks of preparation to revive my dormant skills.
 Still, I solved around 30 problems before applying for a job.
 If you're not familiar with these kinds of problems, you probably need at least one month to prepare yourself.
@@ -106,7 +106,7 @@ Start with easy problems and then move to problems of medium complexity (I sugge
 > **Q:** Do I need to pay for a particular course to prepare for the coding interview?<br>
 > **A:** No, you don't need to pay for any course because there are plenty of free and good resources available online, and you just need to know which ones are the best.
 
-I recommend the following resources to prepare for the coding challenges (all available on GitHub):  
+I recommend the following resources to prepare for the coding challenges (all available on GitHub):
 
 - <i class="fab fa-github"></i> [https://github.com/jwasham/coding-interview-university](https://github.com/jwasham/coding-interview-university) **Knowledge**
 - <i class="fab fa-github"></i> [https://github.com/alpha037/data-structures-and-algorithms](https://github.com/alpha037/data-structures-and-algorithms) **Knowledge**
@@ -122,8 +122,8 @@ The goal is to test your ability to design a system that meets certain requireme
 The requirements are usually not clear upfront, so your task is to ask questions in order to clarify them.
 Overall, the main goal of the interviewer is to determine if you have **ground knowledge** about how large software systems work and **experience** at working with such systems.
 
-To be honest, I initially found myself unfamiliar with the intricacies of designing complex, real-world software systems. 
-As a researcher, my expertise was more rooted in the realm of algorithms, data structures, and [open-source software development](../software.html).
+To be honest, I initially found myself unfamiliar with the intricacies of designing complex, real-world software systems.
+As a researcher, my expertise was more rooted in the realm of algorithms, data structures, and [open-source software development](./software).
 So, my abilities were applied to projects which much smaller scale.
 For me, expanding my knowledge to encompass large, multi-faceted software systems required some learning curve.
 I dedicated a couple of weeks to self-study about practical applications to grasp the complexities and interrelationships inherent to these kinds of systems.
@@ -153,15 +153,14 @@ In particular, I learned about the following technologies:
 - **Zookeeper**: The centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.
 - ... and many more.
 
-
 I recommend preparing for the System Design Interview using the following two resources:
 
 - <i class="fab fa-github"></i> [https://github.com/donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer)
 {% badge /img/badges/designing_data_intensive_applications.png 140 https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ %}
 - The book "[Designing Data-Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)" by Martin Kleppmann is a must-read for anyone who wants to learn about how large-scale software systems work.
 
-I strongly believe that communication skills take precedence over technical skills in these types of interviews. 
-**The ability to ask questions, clarify requirements, and explain your design decisions often outweighs pure system design knowledge.** 
+I strongly believe that communication skills take precedence over technical skills in these types of interviews.
+**The ability to ask questions, clarify requirements, and explain your design decisions often outweighs pure system design knowledge.**
 It turns out that my years doing whiteboarding and exchanging research ideas with colleagues resulted immensely beneficial for doing well in this kind of interviews.
 
 # Application(s)
@@ -170,9 +169,9 @@ First, I recommend having a clear idea of your desired technical role, and then 
 For PhD students and researchers, the most common roles are: Software Engineer, Machine Learning Engineer, and Data Scientist.
 Then, you need to find the companies that have open positions for such roles.
 Just pick a company and search for the "Careers" section on their website.
-In my opinion, one of the best [career paths for researchers](../blog/how-phd-profiles-are-evaluated.html#other-career-paths-for-researchers.html) is to work in an R&D department at a big company.
+In my opinion, one of the best [career paths for researchers](./blog/how-phd-profiles-are-evaluated.html#other-career-paths-for-researchers) is to work in an R&D department at a big company.
 
-I use [Glassdoor](https://www.glassdoor.com) to check out salaries and reviews of companies. Then, I use [LinkedIn](https://www.linkedin.com/) to find recruiters and people that work in those companies. I "cold message" them asking for details about open positions. I also applied directly to the job offers that I find interesting and let recruiters known about my applications directly via chat. **I believe the human factor is key to getting an interview**. Being professional and polite is super important, thus I always thank the recruiters for their time and support.
+I use [Glassdoor](https://www.glassdoor.com) to check out salaries and reviews of companies. Then, I use [LinkedIn](https://www.linkedin.com) to find recruiters and people that work in those companies. I "cold message" them asking for details about open positions. I also applied directly to the job offers that I find interesting and let recruiters known about my applications directly via chat. **I believe the human factor is key to getting an interview**. Being professional and polite is super important, thus I always thank the recruiters for their time and support.
 
 I rely on a [Notion sheet](https://www.notion.so/templates/job-applications) to keep track of my job applications.
 This is important because with the time you will have a lot of applications, and you will need to keep track of them.
@@ -190,7 +189,7 @@ Here's an example of how it looks like:
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-02-14/notion_applications.png alt:"Application records in Notion" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     Getting the right job could take a long time. Systematic organization is key to keep track of everything that happens during the application process.
   </figcaption>
 </figure>
@@ -198,7 +197,7 @@ Here's an example of how it looks like:
 # Interviews
 
 <aside class="quote">
-    <em>“Treat yourself with respect: You are not a junior engineer, you are PhD in Computer Science!”</em> 
+    <em>“Treat yourself with respect: You are not a junior engineer, you are PhD in Computer Science!”</em>
 </aside>
 
 At large companies, the interview is usually a multi-step process.
@@ -213,9 +212,9 @@ If the recruiter asks you about your salary expectations, this is a very good si
 > If you get some questions such as "How many years of experience do you have?" or "Do you know what a pointer (in C++) is?" these are red flags, and you should reconsider applying to such kind of companies.
 
 The second phase of the process typically involves a coding interview, which can be conducted either online or in person (I've experienced both versions).
-The in-person variant of the coding interview, in my view, offers a more engaging and rewarding experience. 
-This is primarily due to the immediate feedback provided by the interviewer. 
-This real-time interaction not only allows for instant clarification of doubts and swift correction of errors, but also fosters a dynamic environment where problem-solving becomes a collaborative effort. 
+The in-person variant of the coding interview, in my view, offers a more engaging and rewarding experience.
+This is primarily due to the immediate feedback provided by the interviewer.
+This real-time interaction not only allows for instant clarification of doubts and swift correction of errors, but also fosters a dynamic environment where problem-solving becomes a collaborative effort.
 This interpersonal element tends to make the process more enjoyable and enriching.
 For example, in one of the interviews, I was given one piece of paper at a time and 5 minutes to identify bugs and vulnerabilities within the Spring Boot Java application.
 At the end of the task the conversation eventually delved into a more profound discussion regarding achieving thread safety, enhancing performance, and devising elegant solutions to eliminate issues such as SQL injection and other vulnerabilities in the code.
@@ -245,10 +244,10 @@ In any case, you don't want to show that you are desperate for the job.
 Give time to yourself and demonstrate that you are a valuable candidate who has other options.
 
 Once you decide to accept the offer, you need to negotiate things like the salary and the notice date.
-Always negotiate the salary! 
+Always negotiate the salary!
 Even if you are happy with the offer, you should negotiate it.
 After all, that's one of the main drivers of your decision to leave academia $$$.
-Isn't it? 
+Isn't it?
 
 I recommend reading the following articles from freeCodeCamp for additional insights on how to negotiate a job offer:
 
@@ -272,12 +271,7 @@ If [I could do it](https://www.linkedin.com/posts/cesarsotovalero_seb-career-onb
 # Footnotes
 
 [^1]: Note that this article is not about whether you should stay in academia or not. It is about how to get a job in the industry if you decide to leave academia.
-
 [^2]: This happens for multiple reasons, e.g., some employers don't care about your research experience, or they don't want to pay you more because you have a PhD.
-
 [^3]: There is, of course, a large part of the academic job that I still love.
-
 [^4]: You know if you're applying to a big company if you have to talk to a recruiter first. If you don't have to talk to a recruiter, you're probably applying to a small company.
-
 [^5]: Developing the necessary skills for being able to conduct independent research is the ultimate goal of a PhD, in the first place.
-

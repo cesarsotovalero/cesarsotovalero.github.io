@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blog/this-month.html
+permalink: /blog/this-month
 title: Blog Posts This Month
 description: "All the blog posts written this month by Cesar Soto Valero"
 ---
@@ -33,9 +33,9 @@ description: "All the blog posts written this month by Cesar Soto Valero"
 {% assign unique_tags = all_tags | uniq %}
 
 <div class="list-filters">
-   <a href="/blog/this-month.html" class="list-filter"> This Month ({{ current_month_post_count }})</a>
-   <a href="/blog/all.html" class="list-filter">All ({{ published_posts.size }})</a>
-   <a href="/blog/tags.html" class="list-filter">Tags ({{ unique_tags.size }})</a>
+   <a href="/blog/this-month" class="list-filter"> This Month ({{ current_month_post_count }})</a>
+   <a href="/blog/all" class="list-filter">All ({{ published_posts.size }})</a>
+   <a href="/blog/tags" class="list-filter">Tags ({{ unique_tags.size }})</a>
 </div>
 
 <div id="full-tags-list">

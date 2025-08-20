@@ -1,5 +1,5 @@
 ---
-permalink: podcasts.html
+permalink: podcasts
 layout: page
 title: Podcasts
 subtitle: "🎙 &#119070;&#119083;&#119042;"

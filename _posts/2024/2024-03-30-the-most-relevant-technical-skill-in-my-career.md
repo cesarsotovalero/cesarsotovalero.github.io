@@ -4,7 +4,7 @@ title: The Most Relevant Technical Skill in My Career
 subtitle: It isn't Java coding
 tags: career
 description: |
-  Have you ever wonder which is most relevant technical skill in your career? It's not necessarily a programming language or the latest framework. For me, it is Exploratory Data Analysis (EDA). Why? Because being able to manipulate and find relevant information from various data sources has opened me doors to new opportunities in both academia and industry. This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.  
+  Have you ever wonder which is most relevant technical skill in your career? It's not necessarily a programming language or the latest framework. For me, it is Exploratory Data Analysis (EDA). Why? Because being able to manipulate and find relevant information from various data sources has opened me doors to new opportunities in both academia and industry. This post is about my journey, the lessons learned, and the resources I have used to enhance my EDA skills over time.
 keywords:
   - productivity
   - career success
@@ -35,7 +35,7 @@ This post is about my journey, the lessons learned, and the resources I have use
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2024/2024-03-30/paint.jpg alt: "Artwork made by my son when he was 3 years old" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; We collect information, explore our environments, and express ourselves since very early ages. The picture shows an artwork made by my son when he was 3 years old.
   </figcaption>
 </figure>
@@ -50,7 +50,7 @@ It is a ~~fundamental~~ necessary skill for professionals in any field.
 EDA is key for any job that involves decision-making, because it allows seeing the big picture in the data through visualizations, pattern identification, and causal reasoning, which favors making better decisions in something known as "[data-drive organizations](https://www.linkedin.com/pulse/data-driven-organizations-quick-review-ahmed-elrouby/)."
 Specifically, a strong foundation in EDA is great for scientists seeking answers to complex questions for which empirical studies are required.
 
-EDA today is mostly associated to Data Science roles, but its roots belong to the field of traditional statistics. 
+EDA today is mostly associated to Data Science roles, but its roots belong to the field of traditional statistics.
 For example, here are some questions that EDA helps to answer:
 
 - What is the **distribution** of the data?
@@ -66,7 +66,7 @@ For example, here are some questions that EDA helps to answer:
 - What **opportunities** does the data reveal?
 
 To answer these questions, in a typical EDA we begin by defining a hypothesis (or a series of questions around a particular subject) that we want to answer.
-Next, we collect the relevant data, explore it, clean it, visualize it, and finally build a report. 
+Next, we collect the relevant data, explore it, clean it, visualize it, and finally build a report.
 This is a straightforward process, as shown in the following diagram:
 
 [//]: # (see https://mermaid-js.github.io)
@@ -100,7 +100,7 @@ I've been practicing EDA for over 12 years now.
 I began dealing with data during my undergraduate studies in Computer Science, and later when working on my [PhD](../files/thesis/cesar-fulltext.pdf).
 Interestingly, I've done it not because I particularly enjoy it (which I do), but because it was essential for my research.
 On the other hand, working as a software developer now, my data analysis skills have opened doors to new opportunities to showcase my research abilities.
-The two following section focus this journey. 
+The two following section focus this journey.
 
 ## A Swiss Army Knife in Academia
 
@@ -109,16 +109,16 @@ Among them, there was only one about statistics, which we considered to be _soft
 I remember that the lectures were very theoretical and focused on the formulas, rather than the practical aspects.
 It was not until I had to write my thesis that I realized the importance of statistics.
 There I was introduced to SPSS and R.
-After looking at examples of the other thesis, I noticed that statistical tests was something that they all had in common. 
+After looking at examples of the other thesis, I noticed that statistical tests was something that they all had in common.
 Clearly, a good EDA is strictly necessary to craft a good thesis.
 
 <aside class="quote">
-    <em>“EDA is a fundamental skill at all levels of high education.”</em> 
+    <em>“EDA is a fundamental skill at all levels of high education.”</em>
 </aside>
 
 So, to earn a diploma, one has to collect data and apply rigour statistical tests to prove or disprove a scientific hypothesis.[^2]
 I started learning some plotting tools and statistical techniques.
-I remember me looking at code examples in [Kaggle](https://www.kaggle.com/) where there used to be diverse datasets and a lot of community written notebooks to learn from. 
+I remember me looking at code examples in [Kaggle](https://www.kaggle.com/) where there used to be diverse datasets and a lot of community written notebooks to learn from.
 
 > My [bachelor's thesis](https://dspace.uclv.edu.cu/handle/123456789/1935) was about applying time series classification models to the problem of accurately forecasting rainfalls. That was the first time I performed some serious EDA in R and SPSS to find patterns in real-world meteorological data.
 
@@ -126,23 +126,23 @@ A couple of years later, I started my Master's in Computer Science and went into
 I knew that if manage to collect enough data, formulate the right hypothesis, and use a completely new technique for the problem at hand, I could manage to get a paper published.
 So I did exactly that (btw, [this](https://sciendo.com/it/article/10.1515/ijcss-2016-0007) is the paper if you're wondering).
 I analyzed all the historical data publicly available of the MLB and applied what, at the time, were cutting edge ML techniques to predict the outcome of games.
-I published a few papers on sport analytics later on using a similar strategy. 
+I published a few papers on sport analytics later on using a similar strategy.
 I've no doubts that having high-quality EDA and convincing tables and figures was key to get those papers accepted.[^3]
 
 <aside class="quote">
-    <em>“EDA is essential for reproducible science, allowing other researchers to understand, replicate, and validate the findings.”</em> 
+    <em>“EDA is essential for reproducible science, allowing other researchers to understand, replicate, and validate the findings.”</em>
 </aside>
 
-Later during my PhD, I switched to [empirical software engineering research](../blog/empirical-software-engineering-research-is-harder-than-you-think.html).
+Later during my PhD, I switched to [empirical software engineering research](./blog/empirical-software-engineering-research-is-harder-than-you-think).
 Soon, I realized that software is data as well, so EDA was critical to help me understand different phenomenons occurring in large software ecosystems.
-I started working on "[software debloating](../blog/why-debloating-third-party-software.html)," and collected a massive amount of data representing the relationships between Java dependencies.
+I started working on "[software debloating](./blog/why-debloating-third-party-software)," and collected a massive amount of data representing the relationships between Java dependencies.
 For example, I used EDA to find out which dependencies are the most bloated, which are the most used, and which are the most popular in the Java Maven ecosystem.
 
 In conclusion, during all my academic career, the scale of the experiments and complexity of the data increased, but the importance of EDA remained the same.
 
 ## A Superpower Beyond Academia
 
-After my PhD, I started working as a software developer. 
+After my PhD, I started working as a software developer.
 Being at a large organization helped me to understand better the motto "data driven decisions."
 Again, EDA is one of the most important skills to understand data relationships and hence take decisions.
 It turns out that my academic skills are great to stand out, to better support my arguments with data, or simply to describe problems under the basis of facts.
@@ -150,21 +150,21 @@ This not only makes me more effective at work, also makes my ideas more convinci
 EDA is both a tool and an asset.
 
 <aside class="quote">
-    <em>“Ideas backed by data are more convincing, which makes them more likely to catch the attention of decision-makers.”</em> 
+    <em>“Ideas backed by data are more convincing, which makes them more likely to catch the attention of decision-makers.”</em>
 </aside>
 
-The market has also seeing the potential. 
+The market has also seeing the potential.
 Most large companies today rely on built-in tools for conducting EDA, such as [Elasticsearch](https://www.elastic.co/), [Tableau](https://www.tableau.com/), and [PowerBI](https://www.microsoft.com/en-us/power-platform/products/power-bi).
 Yet, these platforms, despite their capabilities, often fall short when it comes to the depth of analysis required for complex problems.
 There are instances where delving deeper into the data through custom coding is imperative, e.g., to leverage cutting-edge data analysis methodologies and statistical tests, or to reproduce the results of a research paper.
 This is where R and Python come into play, offering a plethora of libraries and tools that enable the execution of complex EDA tasks.
 On top of that, you can combine the data analysis with front-end development to create awesome interactive dashboards using some JavaScript library such as the famous [D3.js](https://d3js.org/), [Recharts](https://recharts.org/en-US/), or [Plotly](https://plotly.com/).
 
-While AI continues to revolutionize how we interpret and utilize data, I believe that AI easily stumbles when it comes to EDA. 
-The primary challenge for AI lies in understanding the context, which is required to effectively approach a business decision. 
+While AI continues to revolutionize how we interpret and utilize data, I believe that AI easily stumbles when it comes to EDA.
+The primary challenge for AI lies in understanding the context, which is required to effectively approach a business decision.
 For example, AI may not be able to discern the difference between a correlation and causation, or to spot nonsensical data points (such as a negative age or unusual outlier).
 EDA is great for humans, as it's inherently exploratory and subjective, involving creativity, domain expertise, and critical thinking.
-This human touch allows for the identification of meaningful insights that AI, in its current state, struggles to replicate. 
+This human touch allows for the identification of meaningful insights that AI, in its current state, struggles to replicate.
 
 # The Craft of a Good EDA
 
@@ -190,10 +190,10 @@ example_eda_project_in_R/
 │   ├── figures/
 │   ├── RQ1.Rmd
 │   ├── RQ2.Rmd
-│   └── RQ3.Rmd 
+│   └── RQ3.Rmd
 │
 ├── R/
-│   └── data_processing.R 
+│   └── data_processing.R
 │
 ├── .gitignore
 └── README.md
@@ -218,11 +218,11 @@ I always start my EDA projects by defining clear hypotheses.
 Finding the relevant hypothesis to test is crucial, as it drives the entire analysis.
 It is important for the hypothesis to provide a clear value proposition.
 For example, in a marketing project for a new product, the hypothesis could be something like: "The new product will increase sales by 20% in the first quarter."
-It could be also to dispel a myth, such as "Sales were not affected by negative reviews, as any publicity is good publicity," or to prove or disprove a certain claim, such as "Investing `X` amount of money in marketing platform `Y` will increase sales by `Z`." 
+It could be also to dispel a myth, such as "Sales were not affected by negative reviews, as any publicity is good publicity," or to prove or disprove a certain claim, such as "Investing `X` amount of money in marketing platform `Y` will increase sales by `Z`."
 
 A good hypothesis is:
- 
-- **Concise:** A single question or statement. 
+
+- **Concise:** A single question or statement.
 - **Refutable:** It can be proven right or wrong.
 - **Original:** No one has investigated it before.
 - **Testable:** There is enough data to prove or disprove it.
@@ -230,7 +230,7 @@ A good hypothesis is:
 
 ## Narratives
 
-We all love stories. 
+We all love stories.
 This is something we acquired since we were kids and listened to our moms beside our beds.
 Stories are powerful tools to convey information and make it memorable.
 In EDA, the narrative is the story you want to tell with your data.
@@ -303,14 +303,14 @@ ggsave(filename = "Figures/jar_size_barplot.pdf", plot = jar_size_barplot,
 {% endhighlight %}
 
 
-The code above produces [this figure](https://github.com/ASSERT-KTH/jdbl-experiments/blob/master/notebooks/Figures/analysis_size/jar_size_barplot.pdf). 
+The code above produces [this figure](https://github.com/ASSERT-KTH/jdbl-experiments/blob/master/notebooks/Figures/analysis_size/jar_size_barplot.pdf).
 As you can see, plotting is about taking into account small details and doing micro optimizations.
 For example, the `geom_text` function is used to add the percentage values on top of the bars, and the `scale_y_continuous` function is used to change the labels to percentages.
 These details make a plot better, but overall choosing the right chart type, the right colors, and the right message is a good starting point.
 
 # Examples
 
-I have used EDA in various projects, from analyzing sports' statistics to academic software engineering research, and also in my current work. 
+I have used EDA in various projects, from analyzing sports' statistics to academic software engineering research, and also in my current work.
 My code is far from beautiful, but ~~I want to believe~~ it is still better than the horrendous Excel sheets that still exist out there.
 I would like to emphasize that the EDA code is never published or discussed anywhere in the research papers, but it's solely available in the repositories which (surprisingly?) are almost never public.[^4]
 
@@ -346,5 +346,4 @@ Have you ever thought about it?
 
 [^3]: I recommend reading the latest papers published in the [Journal of Statistical Software](https://www.jstatsoft.org/index) and the [Journal of Machine Learning Research](https://www.jmlr.org/).
 
-[^4]: I've peer-reviewed [quite a few](../service.html) research papers, almost none of them include the code used to generate the figures in the paper.
-
+[^4]: I've peer-reviewed [quite a few](./service) research papers, almost none of them include the code used to generate the figures in the paper.

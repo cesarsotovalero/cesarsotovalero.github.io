@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blog/all.html
+permalink: /blog/all
 title: Blog Posts by Year
 description: "All the blog posts written by Cesar Soto Valero"
 ---
@@ -38,9 +38,9 @@ description: "All the blog posts written by Cesar Soto Valero"
 {% assign unique_tags = all_tags | uniq %}
 
 <div class="list-filters">
-   <a href="/blog/this-month.html" class="list-filter"> This Month ({{ current_month_post_count }})</a>
-   <a href="/blog/all.html" class="list-filter">All ({{ published_posts.size }})</a>
-   <a href="/blog/tags.html" class="list-filter">Tags ({{ unique_tags.size }})</a>
+   <a href="/blog/this-month" class="list-filter"> This Month ({{ current_month_post_count }})</a>
+   <a href="/blog/all" class="list-filter">All ({{ published_posts.size }})</a>
+   <a href="/blog/tags" class="list-filter">Tags ({{ unique_tags.size }})</a>
 </div>
 
 <!-- Years cloud -->

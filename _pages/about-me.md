@@ -1,12 +1,12 @@
 ---
-permalink: about-me.html
+permalink: about-me
 layout: page
 title: About Me
 subtitle: 👨🏼‍💻
 description: César Soto Valero is a computer scientist, software engineer, and content creator.
 ---
 
-{% include social.html type="page" %}
+{% include social type="page" %}
 
 [//]: # (Profile to view: https://www.zeileis.org/)
 
@@ -16,25 +16,25 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 # TL;DR
 
-I'm a [computer scientist](./publications.html), [software engineer](./software.html), and [content creator](./blog).
+I'm a [computer scientist](./publications), [software engineer](./software), and [content creator](./blog).
 
 I'm passionate about software, research, and education.
 
 Here's my one-page [résumé](../files/CV/cesar-resume.pdf).
 
-Here're [my professional values](./my-professional-values.html).
+Here're [my professional values](./my-professional-values).
 
-**Current Job:** Data Scientist, working in [SEB](https://seb.se/) since April 2023 <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
+**Current Job:** Data Scientist, working in [SEB](https://seb.se) since April 2023 <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
 
 # Research
 
-I've [authored 30+ research papers](./publications.html) and got [involved in academic services](./service.html).
+I've [authored 30+ research papers](./publications) and got [involved in academic services](./service).
 
-My research efforts have been [recognized with awards](./awards.html).
+My research efforts have been [recognized with awards](./awards).
 
 # Software
 
-I've created [a few open-source projects](./software.html), some with 250+ <i class="fas fa-star"></i> on GitHub.
+I've created [a few open-source projects](./software), some with 250+ <i class="fas fa-star"></i> on GitHub.
 
 # Education
 
@@ -42,21 +42,21 @@ I've created [a few open-source projects](./software.html), some with 250+ <i cl
 
 I hold a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se) (graduated in 2023).[^4]
 
-My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin/).
+My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin).
 
 My PhD was about software debloating,[^1] here's [my PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
 
-**Cool Fact:** {%include university_ranking.html%}
+**Cool Fact:** {%include university_ranking%}
 
 I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
 
-Here's a list of [my completed courses](./courses.html) (inc. MOOCs).
+Here's a list of [my completed courses](./courses) (inc. MOOCs).
 
-A long time ago, I [participated in ACM-ICPC programming contests](/competitions.html).
+A long time ago, I [participated in ACM-ICPC programming contests](./competitions).
 
 # Misc
 
-Out of work, I enjoy quality time with my family, reading books, and [running](/races.html).
+Out of work, I enjoy quality time with my family, reading books, and [running](./races).
 
 I like epic music. Some of my favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), and [Zack Hemsey](https://www.youtube.com/user/zackhemsey).
 
@@ -192,7 +192,7 @@ form.wj-contact input[type="submit"]:active {
 
 <br>
 
-👉 If you are a MSc student or researcher, I'm always [open to collaborations](./collaborations.html).
+👉 If you are a MSc student or researcher, I'm always [open to collaborations](./collaborations).
 
 <p class="post-meta" style="margin-top: 60px;">
    <i class="fas fa-user-edit"></i>
@@ -201,6 +201,6 @@ form.wj-contact input[type="submit"]:active {
 
 # Footnotes
 
-[^1]: For more on these topics, see [my living review of software debloating papers](./software-debloating-papers.html), or consult [my list of software debloating tools](./software-debloating-tools.html).
+[^1]: For more on these topics, see [my living review of software debloating papers](./software-debloating-papers), or consult [my list of software debloating tools](./software-debloating-tools).
 
 [^4]: My PhD was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.

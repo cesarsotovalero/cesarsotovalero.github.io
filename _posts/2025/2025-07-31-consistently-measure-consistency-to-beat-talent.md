@@ -85,14 +85,14 @@ But, like anything truly valuable, becoming consistently consistent requires sig
 
 # Consistency is Hard to Achieve
 
-If I told you that you’d need to write [69 blog posts over 9 years](../blog/all-posts.html) _before_ getting [one of them](../blog/i-am-switching-to-python-and-actually-liking-it.html) [featured at the top of Hacker News](https://news.ycombinator.com/item?id=44579717), would you still write blog posts with that goal in mind?[^2]
+If I told you that you’d need to write [69 blog posts over 9 years](./blog/all) _before_ getting [one of them](./blog/i-am-switching-to-python-and-actually-liking-it) [featured at the top of Hacker News](https://news.ycombinator.com/item?id=44579717), would you still write blog posts with that goal in mind?[^2]
 
 <aside class="quote">
     <em>“Most people overestimate what they can do in one year and underestimate what they can do in ten years.”</em>
     <cite><br> ― <a href="https://www.goodreads.com/quotes/302999-most-people-overestimate-what-they-can-do-in-one-year">Bill Gates</a></cite>
 </aside>
 
-If I told you that you’d need to learn research methods, write papers, and get some published _before_ landing a PhD offer [that would change your life](../blog/seven-reasons-to-go-for-a-phd-in-computer-science.html), would you still try to become a PhD student?
+If I told you that you’d need to learn research methods, write papers, and get some published _before_ landing a PhD offer [that would change your life](./blog/seven-reasons-to-go-for-a-phd-in-computer-science), would you still try to become a PhD student?
 
 Or what if you have to make 100 YouTube videos until you get your first 1000 subscribers, would you still try to become a successful YouTuber?[^1]
 
@@ -171,7 +171,7 @@ But I don't want to get too obsesed and waste time on vanity metrics, this is wh
 Automating the tracking process is a necessary step fordward.
 For example, I've [automated](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/f5cea42089dad8df514aed0a305dfa98b5dab3f8/.github/workflows/compile-resume-to-pdf.yml) the way I build [my resume](https://www.cesarsotovalero.net/files/CV/cesar-resume.pdf) using $$ \LaTeX $$ and GitHub actions.
 For that, I [created Python scripts](https://github.com/cesarsotovalero/cesarsotovalero.github.io/tree/master/scripts) that scrape my number of subscribers on YouTube, the number of followers on LinkedIn, the number of citations on Google Scholar, etc.
-I even keep track of [the timings](../races.html) for the races I run.
+I even keep track of [the timings](./races) for the races I run.
 
 This allows me to see my progress over time, and it also gives me a sense of accountability.
 At the end of each week or month, I look at my numbers to see if I hit my targets, and where I fell short.
@@ -220,4 +220,4 @@ And no matter what, just don't give up.
 [^3]: I have a friend who is a professional athlete, and he told me that the hardest part of his job is to stay consistent over time. He has to train every day, even when he doesn't feel like it, and that takes a lot of mental strength.
 [^4]: The idea that simple repetition will notj bring you very far doesn’t hold true today, AI solves the problem of lacking smart guidance and deliberate learning. Anyone can have the right guidance to learn the right things.
 [^5]: Or something worse, like somebody who spend his nights on the sofa watching ["Love Is Blind"](<https://en.wikipedia.org/wiki/Love_Is_Blind_(TV_series)>) on Netflix.
-[^6]: Looking at numbers and see how they grow over time is somehow addictive, just like how video game characters [level up over time](../blog/building-and-leveling-up-a-computer-scientist-resume.html).
+[^6]: Looking at numbers and see how they grow over time is somehow addictive, just like how video game characters [level up over time](./blog/building-and-leveling-up-a-computer-scientist-resume).

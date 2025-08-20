@@ -1,5 +1,5 @@
 ---
-permalink: courses.html
+permalink: courses
 layout: page
 title: Courses
 subtitle: 🎓

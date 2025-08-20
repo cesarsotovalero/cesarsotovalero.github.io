@@ -1,5 +1,5 @@
 ---
-permalink: service.html
+permalink: service
 layout: page
 title: Service
 subtitle: 🙋
@@ -72,7 +72,7 @@ I volunteered for the following events:
 My work has been featured in the following media:
 
 - [:globe_with_meridians: "Twelve scientist-endorsed tips to get over writer’s block"](https://www.nature.com/articles/d41586-024-02013-4), I got interviewed by a journalist from Nature, 2024
-- [:globe_with_meridians: Unfold](https://rethread.art/projects/unfold.html), Nobel Week Lights, 2022
+- [:globe_with_meridians: Unfold](https://rethread.art/projects/unfold), Nobel Week Lights, 2022
 - [:globe_with_meridians: KTH Intranet Interview](https://intra.kth.se/en/eecs/nyheter/grattis-till-vinsten-cesar-1.1112396), 2021
 - [:globe_with_meridians: Estudios de Doctorado en Suecia: Por Dónde Empezar?](https://eltoque.com/estudios-de-doctorado-en-suecia-por-donde-empezar) (co-authored article, written in Spanish), 2021
 

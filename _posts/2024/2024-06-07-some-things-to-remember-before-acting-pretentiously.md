@@ -25,7 +25,7 @@ A few days ago, I was asked: _"Where do you see yourself in 10 or 20 years?"_
 I replied:
 _"I would like to get some sort of recognition for my contributions... maybe to be known as an expert in something, or someone who is consulted and listened to before important decisions are made."_
 Now that I think about it, I realize my answer was both bold and pretentious.
-But things went even worse. 
+But things went even worse.
 Immediately after, I was asked:
 _"So, what do you really want? Is it the act of achieving something extraordinary (like winning the Nobel Prize), or the recognition that comes with it?"_
 My answer was something like the following:
@@ -45,8 +45,8 @@ Seriously.
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2024/2024-06-07/remember-your-roots.jpg alt: "A hand scratching the surface of the earth" %}
-  <figcaption class="stroke"> 
-    &#169; Remember your roots and stay humble César! Photo taken at <a href="https://maps.app.goo.gl/7Urts86N3j5t8eEX9">Skälderviksplan's park</a> in Stockholm. 
+  <figcaption class="stroke">
+    &#169; Remember your roots and stay humble César! Photo taken at <a href="https://maps.app.goo.gl/7Urts86N3j5t8eEX9">Skälderviksplan's park</a> in Stockholm.
   </figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ Seriously.
 Remember that you grew up eating wild frogs from swamps. Your father brought them home and cut them, while your mother fried them and told you they were chicken. You loved it. _Sometimes, it is better not to know the origin of certain things._
 
 Remember when you were a child and broke that toy to look into it because you were curious about how it worked. You cried a lot when your mom said it couldn’t be fixed. _Think twice before taking the risk of breaking things that just can't be fixed._
- 
+
 Remember that the forest was your playground during childhood. You swam in the wild waters of the river after the hurricane, fished and hunted with the equipment you made yourself, played football with coconuts, and played baseball with almond fruits as balls and a tree stick as the bat. You had so little back then, and yet, you were so happy. _There is no need to have many things or do something outstanding to be happy._
 
 Remember that you were the last kid to be picked for teams in all sports. You were never fast enough, strong enough, or talented enough. It was a big deal for you back then, but now you [run 10k in 48 minutes](https://www.linkedin.com/posts/cesarsotovalero_seb-running-health-activity-7206615823736537089-0h83) with ease and don’t care about such things. The importance of things changes drastically over time, so don’t worry too much about your limitations. _You’ll forget about almost all of your "big" problems in a few years._
@@ -136,12 +136,6 @@ Remember when you started participating in programming contests at university. Y
 
 Remember how hard it was for you to understand [KeogRemember that you (eventually) become the same as the people you are with. If you surround yourself with great people, you become great. Beware that the opposite is also true. Also, be grateful for all the people who helped you and influenced your work. Your family, friends, and PhD supervisor deserve a big chunk of the credit. _Acknowledging others is not only fair but also brings a lot of joy._
 
-[^1]: BTW, I don’t believe that throwing away shiny rocks is a good way to solve the fundamental problems of humanity. Instead, I support [effective altruism](https://www.effectivealtruism.org/), increasing opportunities, and creating a system that rewards good behavior. I also believe that the higher a person is in the social hierarchy, the more chances they have to create opportunities for others and make a larger impact. Thus, personal development is a driver for good.
-
-[^2]: I strongly believe in the possibilities of science as a life changer. Right now, there are many opportunities in academic research for people around the world to change their lives. In fact, pursuing academic research has changed my life!
-
-[^3]: Perhaps a good approach is to force ourselves to create something valuable from all the information we consume. I believe that by doing so, I'll eventually become more selective about what I spend my time on. This is because I'll be aware of the time I will need to invest later in creating something useful from it.tally different from others. _Personal viewpoints are always a matter of perspective._
-
 Remember, there is no silver bullet, and nothing truly worthwhile can be gained in this life without investing time and putting in a ton of hard work. Like when you thought others would solve your problems. For example, you believed for years that some family members would help you to emigrate, but that didn’t happen. It's good that you realized it and rectified it in time. Inaction tends to induce failure. _Fortunately, the path towards true success is largely within your control._
 
 Remember that action precedes motivation. Your human sight and misled perception of time are too limited to foresee the long-term results of your actions. It’s easy to underestimate the importance of small but incremental improvements. _The compounding effect of daily efforts is what makes great things happen._
@@ -154,13 +148,13 @@ Remember how easy it is to get off track these days. It is especially easy when 
 
 Remember that there is a whole global system built around transforming your time into profit. Sadly, some of the most brilliant minds of your time are working hard to find clever ways to monetize your attention. _It's good to focus on consuming less and creating more._
 
-Remember when you decided to take that hard [English test](../blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html) that drilled down your pocket. You had only enough money for one attempt. You met that private English teacher that day, and he told you that you needed one or two years to have a chance at passing. Yet, you studied intensively for one month alone and passed the test with the bare minimum. Some people underestimate the power of self-determination. _So don’t let the perception of others affect your willingness to achieve great things._
+Remember when you decided to take that hard [English test](./blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training) that drilled down your pocket. You had only enough money for one attempt. You met that private English teacher that day, and he told you that you needed one or two years to have a chance at passing. Yet, you studied intensively for one month alone and passed the test with the bare minimum. Some people underestimate the power of self-determination. _So don’t let the perception of others affect your willingness to achieve great things._
 
 Remember again how bad you are as a programmer. You still don’t know how to implement a deep neural network. And despite that, somehow you managed to deliver acceptable code when the need and pressure were high enough. _It seems that people get superpowers for a short time when under heavy pressure._
 
 # Opportunities
 
-Remember that it was only after (and never before) you worked really hard to get out of [the dictatorship](../blog/the-cuban-revolution-explained.html) that real opportunities arose. You shouldn’t waste time and energy complaining about what you cannot control. _Taking action is absolutely necessary to make things happen._
+Remember that it was only after (and never before) you worked really hard to get out of [the dictatorship](./blog/the-cuban-revolution-explained) that real opportunities arose. You shouldn’t waste time and energy complaining about what you cannot control. _Taking action is absolutely necessary to make things happen._
 
 Remember how lucky you were to get that PhD student position. You worked hard to get there, yes, but ultimately it was a mix of luck and the help of other people that led you there. _Especially, do not forget about all those who were much more talented than you but weren’t so lucky._
 
@@ -214,7 +208,7 @@ Remember that in the end, you will not remember your failures at all. Only the s
 
 # Footnotes
 
-[^1]: BTW, I don’t believe that throwing away shiny rocks is a good way to solve the fundamental problems of humanity. Instead, I support [effective altruism](https://www.effectivealtruism.org/), increasing opportunities, and creating a system that rewards good behavior. I also believe that the higher a person is in the social hierarchy, the more chances they have to create opportunities for others and make a larger impact. Thus, personal development is a driver for good.
+[^1]: BTW, I don’t believe that throwing away shiny rocks is a good way to solve the fundamental problems of humanity. Instead, I support [effective altruism](https://www.effectivealtruism.org), increasing opportunities, and creating a system that rewards good behavior. I also believe that the higher a person is in the social hierarchy, the more chances they have to create opportunities for others and make a larger impact. Thus, personal development is a driver for good.
 
 [^2]: I strongly believe in the possibilities of science as a life changer. Right now, there are many opportunities in academic research for people around the world to change their lives. In fact, pursuing academic research has changed my life!
 

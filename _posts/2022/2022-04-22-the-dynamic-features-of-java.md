@@ -24,14 +24,14 @@ The existence of dynamic features built-in within the language allows Java devel
 For example, using the [Java Reflection API](https://docs.oracle.com/javase/tutorial/reflect/), one can inspect and interact with otherwise static language constructs such as classes, fields, and methods, e.g., to instantiate objects, set fields and invoke methods.
 These dynamic language features are helpful, but their usage also hinders the accuracy of static analysis tools.
 This is due to the undecidability of resolving and analyzing code that is not reachable at compile time.
-As I mentioned in a [previous blog post](./aot-vs-jit-compilation-in-java.html), the promising GraalVM compiler performs Ahead of Time Compilation (AOT) through static analysis on Java bytecode.
+As I mentioned in a [previous blog post](./blog/aot-vs-jit-compilation-in-java), the promising GraalVM compiler performs Ahead of Time Compilation (AOT) through static analysis on Java bytecode.
 However, the presence of dynamic features in most Java programs is a fundamental challenge for GraalVM.
 Consequently, recognizing these features is key to understand the current limitations of AOT.
 This blog post covers the fundamental dynamic features of Java and the reasons why they pose a significant challenge for GraalVM and static analysis tools in general.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/untamed_horse.jpg alt:"The dynamic features of Java remain an untamed horse for static analysis." %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; The dynamic features of Java remain an untamed horse for static analysis. Photo from  <a href="https://goo.gl/maps/gVnr4aBeNiFHGB2X9">Hersby, Lidingö</a>.
   </figcaption>
 </figure>
@@ -40,7 +40,7 @@ This blog post covers the fundamental dynamic features of Java and the reasons w
 
 Java is a dynamic programming language.
 As such, it supports dynamic features just like other dynamic languages such as Ruby, Python, and JavaScript.
-Dynamic language features were introduced in Java since the very beginning, for example, Dynamic Proxies are available since [v1.3 of the JDK](https://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Proxy.html). 
+Dynamic language features were introduced in Java since the very beginning, for example, Dynamic Proxies are available since [v1.3 of the JDK](https://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Proxy).
 
 > “Dynamic programming languages execute many common programming behaviours at runtime that static programming languages perform during compilation.
 > These behaviors could include an extension of the program, by adding new code, by extending objects and definitions, or by modifying the type system.”
@@ -88,7 +88,7 @@ The following section presents representative examples for each of these categor
 
 ## Dynamic Class Loading
 
-Java makes possible declaring custom [class loaders](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ClassLoader.html).
+Java makes possible declaring custom [class loaders](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ClassLoader).
 We can use a custom `ClassLoader` to compile a `.java` source file from a file system and then load the compiled `.class` at runtime.
 This mechanism allows programmers to load classes from arbitrary locations, e.g., from an external file system or over the network.
 
@@ -118,7 +118,7 @@ public class CustomClassLoader extends ClassLoader {
     input.close();
     return content;
   }
-} 
+}
 {% endhighlight %}
 
 The following test loads the class from a source file called `Target.java`.
@@ -153,9 +153,9 @@ Examples of valid class names include:
 It is like a facade, but one that can pretend to be an implementation of any interface.
 Under the cover, it routes all method invocations to a single handler: the `invoke()` method.
 
-A [proxy class](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Proxy.html) is a class created at runtime that implements a specified list of interfaces, known as proxy interfaces.
+A [proxy class](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Proxy) is a class created at runtime that implements a specified list of interfaces, known as proxy interfaces.
 A proxy instance is an instance of a proxy class.
-Each proxy instance has an associated invocation handler, which implements the interface [`InvocationHandler`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/InvocationHandler.html).
+Each proxy instance has an associated invocation handler, which implements the interface [`InvocationHandler`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/InvocationHandler).
 When a method is invoked on a proxy instance, the method invocation is encoded and dispatched to the invoke method of its invocation handler
 The invocation handler processes the encoded method invocation as appropriate and the result that it returns will be returned as the result of the method invocation on the proxy instance.
 
@@ -170,7 +170,7 @@ public class ProxyInstance implements InvocationHandler {
   public String target(String s) {
     return s + " from target(String)";
   }
-} 
+}
 {% endhighlight %}
 
 Let's create a `ProxyInterface` with a method `foo(String)`:
@@ -220,10 +220,9 @@ public void testExecute() {
 }
 {% endhighlight %}
 
-
 ## JVM Invokedynamic
 
-Before Java 7, the JVM only had four method invocation types:
+Before Java version 7, the JVM only had four method invocation types:
 
 - `invokevirtual`: To call normal class methods.
 - `invokestatic`: To call static methods.
@@ -231,12 +230,12 @@ Before Java 7, the JVM only had four method invocation types:
 - `invokespecial`: To call constructors or private methods.
 
 Despite their differences, all these invocations share one simple trait: They have a few predefined steps to complete each method call, it is not possible to enrich these steps with custom behaviors.
-There are two main workarounds for this limitation, one at compile-time and the other at runtime. 
+There are two main workarounds for this limitation, one at compile-time and the other at runtime.
 The former is usually used by languages like Scala or Koltin and the latter is the solution of choice for JVM-based dynamic languages like JRuby.
 
 The [JVM invokedynamic](https://blogs.oracle.com/javamagazine/post/understanding-java-method-invocation-with-invokedynamic) instruction was introduced in Java 7.
 It makes it possible to resolve method calls dynamically at runtime.
-This gives the user more control over the method dispatch process by using a [user-defined bootstrap method](https://www.baeldung.com/java-invoke-dynamic) that computes the call target. 
+This gives the user more control over the method dispatch process by using a [user-defined bootstrap method](https://www.baeldung.com/java-invoke-dynamic) that computes the call target.
 While the original motivation behind invokedynamic was to provide support for dynamic languages like Ruby, its main application (in the JDK 8) is to provide support for lambda expressions.[^1]
 
 Here is an example of a lambda function:
@@ -282,15 +281,15 @@ public execute()Ljava/lang/Integer;
       Ljava/lang/invoke/MethodType;)
       Ljava/lang/invoke/CallSite;
       // arguments:
-      (I)I, 
+      (I)I,
       // handle kind 0x7 : INVOKESPECIAL
-      invokedynamic/LambdaFunctionMinimal.target(I)Ljava/lang/Integer;, 
+      invokedynamic/LambdaFunctionMinimal.target(I)Ljava/lang/Integer;,
       (I)I
     ]
 {% endhighlight %}
 
-The above example uses a [`LambdaMetafactory`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html) to create a `CallSite` that is used to invoke the `target` method.
-It uses a [`MethodHandles.Lookup`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/MethodHandle.html) to find the `target` method.
+The above example uses a [`LambdaMetafactory`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/LambdaMetafactory) to create a `CallSite` that is used to invoke the `target` method.
+It uses a [`MethodHandles.Lookup`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/MethodHandle) to find the `target` method.
 
 The runtime approach is usually reflection-based and, consequently, inefficient.
 On the other hand, the compile-time solution is generally relying on code generation at compile-time.
@@ -303,13 +302,14 @@ However, it's somewhat brittle and may cause a slower startup time as there's mo
 Sometimes we need to use code that's **natively-compiled for a specific hardware architecture**.
 
 There could be many reasons for needing to use native code, for example:
+
 - To handle some hardware.
 - To improve the performance of a very demanding process.
 - To reuse an existing native library instead of rewriting it in Java.
 
-For these purposes, the JDK introduces the Java Native Interface (JNI) as a foreign function interface. 
+For these purposes, the JDK introduces the Java Native Interface (JNI) as a foreign function interface.
 It works as a bridge between the bytecode running in the Java Virtual Machine (JVM) and the native code.
-Thus, JNI allows code running on the JVM to call and be called by native applications. 
+Thus, JNI allows code running on the JVM to call and be called by native applications.
 Using JNI, one can call methods written in C/C++ or even access assembly language functions from Java.
 
 [Native methods](https://www.baeldung.com/jni) are declared using the `native` keyword.
@@ -359,7 +359,7 @@ Now we need to build our shared library from the C++ code and run it:
 g++ -c -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/darwin JNI.cpp -o JNI.o
 {% endhighlight %}
 
-Finally, we have to include it in a new shared library. 
+Finally, we have to include it in a new shared library.
 Whatever we decide to name it is the argument passed into the method `System.loadLibrary`.
 We named ours as `native`, and we'll load it when running our Java code.
 
@@ -383,7 +383,6 @@ Here some pitfalls of using JNI:
 - **Extra layer of communication:** JNI adds a costly layer of communication between the code running into the JVM and the native code. JNI applications need to convert the data exchanged between Java and C++ in a marshaling/unmarshaling process.
 - **No thread safety:** JNI is not thread-safe. Thus, it is not possible to use the same JNI environment `(JNIEnv *)` from multiple threads.
 
-
 ## Java Reflection API
 
 The [Java Reflection API](https://docs.oracle.com/javase/tutorial/reflect/) allows inspecting, modifying, and instantiating otherwise static language elements such as classes, fields, and methods at runtime.
@@ -397,10 +396,10 @@ The following class `Instantiation` illustrates the use of **dynamic class insta
 
 {% highlight java linenos %}
 public class Instantiation {
- 
+
   /**
    * Instantiate a class via reflection.
-   * The inner class Target has a "default constructor" which takes 
+   * The inner class Target has a "default constructor" which takes
    * an instance of its outer class.
    */
   public void instantiateCtr() throws Exception {
@@ -509,7 +508,7 @@ public class Invocation {
 
 ## Deserialisation
 
-[Serialization](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/Serializable.html) converts an object into a byte stream (i.e., a sequence of bytes).
+[Serialization](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/Serializable) converts an object into a byte stream (i.e., a sequence of bytes).
 Deserialization is the opposite: it converts a byte stream into an object.
 [Serialized objects](https://www.baeldung.com/java-serialization) are typically used to save the application's state, store objects in a database, or transfer them over a network.
 We can serialize objects on one platform and deserialize them on another.
@@ -527,7 +526,7 @@ public class Deserialization implements Serializable {
     oos.close();
     return ba.toByteArray();
   }
-  
+
   public void deserialize(byte[] obj) throws Exception {
     ObjectInputStream ois = new ObjectInputStream(
       new ByteArrayInputStream(obj)
@@ -559,7 +558,7 @@ For example, the notable Apache [log4j](https://github.com/apache/logging-log4j2
 This use of deserialization [was exploited]((https://nsfocusglobal.com/apache-log4j-deserialization-and-sql-injection-vulnerability-cve-2022-23302-cve-2022-23305-cve-2022-23307-alert/)) (CVE-2022-23302) in 2022, causing a global disturbance on most Java based systems.
 
 As a rule of thumb, deserialization of untrusted data is inherently dangerous and should be avoided.
-Untrusted data should be carefully validated according to the "Serialization and Deserialization" section of the [Secure Coding Guidelines for Java SE](https://docs.oracle.com/pls/topic/lookup?ctx=javase16&id=secure_coding_guidelines_javase). 
+Untrusted data should be carefully validated according to the "Serialization and Deserialization" section of the [Secure Coding Guidelines for Java SE](https://docs.oracle.com/pls/topic/lookup?ctx=javase16&id=secure_coding_guidelines_javase).
 As pointed out by Oracle, [Serialization Filtering](https://docs.oracle.com/pls/topic/lookup?ctx=javase16&id=serialization_filter_guide) describes best practices for defensive use of serial filters.
 
 ## Unsafe API
@@ -627,7 +626,7 @@ public class UnsafeExamples {
     unsafe = (sun.misc.Unsafe) f.get(null);
     return unsafe;
   }
-  
+
   private byte[] compile(ClassLoader classLoader, String name) throws IOException {
     // Compile the class (implementation in section "Dynamic Class Loading").
   }
@@ -718,4 +717,3 @@ I expect that, in the future, developers will be more careful about introducing 
 # Footnotes
 
 [^1]: In OpenJDK 9, `invokedynamic` is also used for string concatenation.
-

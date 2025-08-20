@@ -16,7 +16,7 @@ published: true
 ---
 
 The [SIGBOVIK](http://sigbovik.org/)'s flagship conference is a satiric and incredibly interesting Computer Science venue sponsored by the self-called “Association for Computational Heresy (ACH).”
-The event has been celebrated annually since 2007 in honor of [Harry Quantifiability Bovik](https://www.cs.cmu.edu/afs/cs/usr/bovik/www/index.html), an unconventional professor from Carnegie Mellon University.
+The event has been celebrated annually since 2007 in honor of [Harry Quantifiability Bovik](https://www.cs.cmu.edu/afs/cs/usr/bovik/www/index), an unconventional professor from Carnegie Mellon University.
 SIGBOVIK is the cradle of the funniest presentations and the most controversial research experiments in the overarching field of Computer Science.
 The authors of the published papers are typically curious academics or retired entrepreneurs who attend the event with the purpose of having fun while staying away from ~~actual work~~ boredom.
 The objectives of the venue include promoting open science on non-essential topics, such as “Fruitful Procrastination”, “Inept Expert Systems”, and “Perplexity Theory.”
@@ -51,13 +51,13 @@ So, it seems like the time machine of Computer Science research is already avail
 
 # The Value
 
-{% badge /img/badges/artifact_evaluated_unusable.png 140 http://sigbovik.org/ %}
+{% badge /img/badges/artifact_evaluated_unusable.png 140 http://sigbovik.org %}
 Making fun of a complex topic is an excellent way of becoming more confident about it.
 I think this is one of the principal values of SIGBOVIK: demystifying complicated concepts through sarcasm and mockery.
 I often pick a paper there ~~when I'm on the toilet~~, and if I'm not able to understand the joke, it inspires me to learn more about it.
 And it is worth mentioning that learning inspired by curiosity is very effective.
 
-If you're a researcher, then you should know that being active seeking the best medium for research outreach and professional networking are [strategic activities](https://www.cesarsotovalero.net/blog/seven-reasons-to-go-for-a-phd-in-computer-science.html).
+If you're a researcher, then you should know that being active seeking the best medium for research outreach and professional networking are [strategic activities](./blog/seven-reasons-to-go-for-a-phd-in-computer-science).
 In the academic world, this involves having a good level of personal charm and the intellectual abilities to drive an exciting conversation with talented people who are often experts in very niche domains.
 It turns out that having a paper published in the SIGBOVIK proceedings can open the door to becoming not only a competent researcher but a fun one too.
 
@@ -96,7 +96,7 @@ But just in case you were too lazy to make your own searching, [here is my compe
 
 # Conclusion
 
-Academic research is a [very serious endeavor](https://www.cesarsotovalero.net/blog/book-review-the-phd-grind.html).
+Academic research is a [very serious endeavor](./blog/book-review-the-phd-grind).
 As a result, most academics at some point of their career need to find a way to decompress from the daily pressures.
 That’s what I believe SIGBOVIK aims for: a way to escape from the rigor of standard academic research.
 Being part of this creative an unconventional community is definitely a plus, as good sense of humor as distinguished many of the bright minds.

@@ -26,7 +26,7 @@ This problem is known as writer's block, and most academics suffer from it in on
 I've dealt with this invisible monster on many occasions, and each victory has taught me how to overcome it better.
 If you have been there, too, you should know that understanding the particular characteristics of a research paper and breaking down the writing process into small pieces is key to success.
 Over time, I've developed my own set of strategies to fight writer's block, which I share in this post.
-So, let me tell you about the tricks I've learned through these years of continuous struggling [writing academic papers](https://www.cesarsotovalero.net/publications).
+So, let me tell you about the tricks I've learned through these years of continuous struggling [writing academic papers](./publications).
 I hope you find them useful as well.
 
 <figure class="jb_picture">
@@ -36,14 +36,14 @@ I hope you find them useful as well.
     </figcaption>
 </figure>
 
-# Structure Comes First  
+# Structure Comes First
 
 Writing a scientific paper is a skill that can be developed only through continuous practice and dedication.
 The idea of sitting down and writing a full academic paper from scratch is overwhelming, so it is better focusing on smaller goals.
 As brilliantly explained by [Simon Peyton Jones](https://en.wikipedia.org/wiki/Simon_Peyton_Jones), a [great research paper](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/) has a well-defined structure.
 So, the first step when attempting to break the ice is creating an outline for every section.
 
-I like to start by writing all headings and subheadings and adding [author notes](https://www.cesarsotovalero.net/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html#inserting-author-notes) to highlight the information that will go under each of them.
+I like to start by writing all headings and subheadings and adding [author notes](./blog/use-custom-latex-macros-to-boost-your-writing-productivity.html#inserting-author-notes) to highlight the information that will go under each of them.
 Here's a typical example of an initial outline, in LaTeX, for a conference paper belonging to the field of software engineering:
 
 {% highlight latex linenos %}
@@ -65,7 +65,7 @@ Here's a typical example of an initial outline, in LaTeX, for a conference paper
 % Threats to the validity of the results obtained, explain how they are mitigated
 \section{Threats to Validity}
 
-% Present the state-of-the-art and let clear the difference w.r.t to this paper  
+% Present the state-of-the-art and let clear the difference w.r.t to this paper
 \section{Related Work}
 
 % A paragraph summarizing the motivation, results, and implications
@@ -90,7 +90,7 @@ After adding this type of content, you will have a good chunk of white space fil
 Of course, this technique only works if you're genuinely blocked and not lacking results, which is an entirely different problem.
 
 Now is the time to start feeding the content.
-I typically focus on writing a draft of the introduction section at this stage. 
+I typically focus on writing a draft of the introduction section at this stage.
 The main goal is taking particular care of clearly stating what is the motivation of the paper.
 This makes it clear in my mind what the paper is about.
 Writing the introduction is also a good opportunity to discuss with coauthors and reformulate the core contributions of the paper.
@@ -145,22 +145,22 @@ Note that you can always remove all the connectors and change the paragraph late
 In the same way that criticizing something is generally easier than creating it, editing is easier than writing from scratch.
 
 On the other hand, some sections are just repetitive.
-They follow an existing recipe as in [the hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey). 
+They follow an existing recipe as in [the hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey).
 For example, the section of related work doesn't need to be original.
 I think it's fine summarizing and paraphrasing the key results of previous work there.
 Yes, paraphrasing is a skill, too, which I strongly recommend you to learn very well.
 
-If you get stuck, then start searching for inspiration somewhere else. 
+If you get stuck, then start searching for inspiration somewhere else.
 I usually read articles from the journal or conference where I plan to submit.
-This gives me an idea about the expectations of its reviewers and editors. 
+This gives me an idea about the expectations of its reviewers and editors.
 It is also helpful to read articles that describe the same methodology that you use.
 
 # Refine Later
 
-Most of us want everything to be just right before even touching the keyboard. 
-But this desirable state of mind and things never happens in practice. 
-The perfect paragraph is ~~almost~~ never written at the fist shot. 
-So, if you try to get it perfect in your head, then you never do, so you never begin. 
+Most of us want everything to be just right before even touching the keyboard.
+But this desirable state of mind and things never happens in practice.
+The perfect paragraph is ~~almost~~ never written at the fist shot.
+So, if you try to get it perfect in your head, then you never do, so you never begin.
 Forget about perfection and lower down the initial expectations!
 
 <aside class="quote">
@@ -177,13 +177,13 @@ Instead, switch to writing a different part of the paper and edit only when you 
 # Either Write or Do Nothing
 
 Always take into account that writer's block could resurface anytime.
-This happens when because writing is a very intense mental activity that demands a lot of energy. 
-Our brains are developed to save energy and resources. 
+This happens when because writing is a very intense mental activity that demands a lot of energy.
+Our brains are developed to save energy and resources.
 Every time we need to write, a self-protection mechanism activates in our brains.
-Then is when lack of attention and procrastination arises. 
+Then is when lack of attention and procrastination arises.
 
 To me, writing a research paper is an act of willingness and perseverance.
-When I'm into it, I need to concentrate and forget about everything else besides the words and what I want to say. 
+When I'm into it, I need to concentrate and forget about everything else besides the words and what I want to say.
 To do so, I force myself to either write or do nothing.
 I'm not talking about doing nothing like when one goes to do a walk, or walks to grab a cup of coffee.
 I mean doing nothing at all!
@@ -222,19 +222,19 @@ It provides a sense of security and confidence that really helps me to continue 
 It is like when playing chess, and you know exactly the moves needed to win the game or take some crucial advantage.
 Once you find these right moves, then the game seems simple, and there is no way to be afraid of your opponent.
 It is a matter of finding and visualizing a good strategy to follow.
-Writing is all about strategies as well. 
-So do it. 
-Imagine the next paragraph is done, make your move, and then write it! 
+Writing is all about strategies as well.
+So do it.
+Imagine the next paragraph is done, make your move, and then write it!
 
 # Conclusion
 
-All academics hit blocks when they are writing. 
-Especially at the beginning of a research paper, when there is much friction and resistance. 
-Don’t make it harder than it has to be. 
+All academics hit blocks when they are writing.
+Especially at the beginning of a research paper, when there is much friction and resistance.
+Don’t make it harder than it has to be.
 Having a toolkit of strategies for overcoming writer’s block is helpful.
-Structuring, following patterns, using filled words, and assembling ideas, when done well, can help to build the first draft. 
-It doesn't have to be perfect, just something to tweak from there. 
-When writing, keeping momentum and staying focused is critical. 
-If you start moving in a direction, even a few paragraphs every day, it becomes easier to pick up speed. 
-And you will be making progress! 
+Structuring, following patterns, using filled words, and assembling ideas, when done well, can help to build the first draft.
+It doesn't have to be perfect, just something to tweak from there.
+When writing, keeping momentum and staying focused is critical.
+If you start moving in a direction, even a few paragraphs every day, it becomes easier to pick up speed.
+And you will be making progress!
 Soon your block will be a distant memory.

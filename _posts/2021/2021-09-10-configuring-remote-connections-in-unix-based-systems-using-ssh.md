@@ -3,7 +3,7 @@ layout: post
 title: Configuring Remote Connections in Unix-Based Systems Using SSH
 subtitle: A noob's guide
 tags: devops
-description: This practical guide will show you how to configure a remote connection in Unix-based systems. You will learn how to create RSA keys and use SSH to configure the connection from the terminal. 
+description: This practical guide will show you how to configure a remote connection in Unix-based systems. You will learn how to create RSA keys and use SSH to configure the connection from the terminal.
 keywords:
   - ssh remote connection,
   - public key authentication,
@@ -27,14 +27,14 @@ This is a practical guide, so I will not try to explain everything in detail.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2021/metro_station.jpg alt:"Setting up working connections, a necessity from immemorial times." %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; Setting up working connections, a necessity from immemorial times. Photo of the metro station in <a href="https://goo.gl/maps/nVMLPbE9KRcmD3NL7">Gärdet</a>.
   </figcaption>
 </figure>
 
 # Creating Public and Private Keys
 
-First, make sure you have an OpenSSH client installed in your system.[^2] 
+First, make sure you have an OpenSSH client installed in your system.[^2]
 If not, you can install it with Homebrew on macOS:
 
 {% highlight bash linenos %}
@@ -43,7 +43,7 @@ brew install openssh
 
 The SSH protocol uses industry-standard robust encryption algorithms, like AES, to secure communication between the involved parties.
 In addition, the protocol uses hashing algorithms, such as SHA-2, to ensure the integrity of the data transmitted.
-You can read more about encryption and hashing in [this article](./blog/2021/encoding-encryption-hashing-and-obfuscation-in-java.html).
+You can read more about encryption and hashing in [this article](./blog/encoding-encryption-hashing-and-obfuscation-in-java).
 
 > “OpenSSH is the premier connectivity tool for remote login with the SSH protocol. It encrypts all traffic to eliminate eavesdropping, connection hijacking, and other attacks. In addition, OpenSSH provides a large suite of secure tunneling capabilities, several authentication methods, and sophisticated configuration options.”
 
@@ -194,4 +194,3 @@ The SSH client will read the configuration file and use the connection details t
 [^1]: Computers now like clouds, where they can cheer with [Lucy, in the sky, with diamonds](https://open.spotify.com/track/25yQPHgC35WNnnOUqFhgVR?si=1ec8395e238c4273).
 
 [^2]: I'm assuming you're using MacOS in this post.
-

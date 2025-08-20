@@ -1,5 +1,5 @@
 ---
-permalink: collaborations.html
+permalink: collaborations
 layout: page
 title: Collaborations
 subtitle: 🤝
@@ -9,7 +9,7 @@ published: true
 
 I’m passionate about **knowledge-driven research in software engineering**, especially when it involves mining software repositories to extract meaningful, actionable insights.[^1]
 
-My current research interest revolves around quantifying the **impact and pervasiveness of software bloat** across large-scale software ecosystems. 
+My current research interest revolves around quantifying the **impact and pervasiveness of software bloat** across large-scale software ecosystems.
 Think of it as digital archaeology: uncovering inefficiencies buried deep within layers of modern codebases.
 
 I’m particularly eager to pursue research that:
@@ -18,23 +18,64 @@ I’m particularly eager to pursue research that:
 2. Produces **practical tools** that help developers enhance software quality and reduce complexity.
 3. Challenges the conventional **"best practices"** of software engineering and rethinks them from first principles.
 
-I'm open to **collaborating with researchers**, mentoring students, or offering guidance on projects in these domains.  
+I'm open to **collaborating with researchers**, mentoring students, or offering guidance on projects in these domains.
 Whether you’re exploring similar questions or just curious about my work, feel free to **get in touch via email** using [this form](../about-me#contact-me).
 
 Below is a list of research topics I'm especially excited to explore further.
 
 # List of Topics
 
-* [1. Debloat of mobile apps](#1-debloat-of-mobile-apps)
-* [2. Automatic migration from Java &lt; 8 to Java 11 modular system](#2-automatic-migration-from-java--8-to-java-11-modular-system)
-* [3. Identification of program hotpots by monitoring system calls](#3-identification-of-program-hotpots-by-monitoring-system-calls)
-* [4. Automatic repair of dependency conflicts in Java](#4-automatic-repair-of-dependency-conflicts-in-java)
-* [5. Feature-guided program debloating](#5-feature-guided-program-debloating)
-* [6. Fine-grained specialization of JS libraries](#6-fine-grained-specialization-of-js-libraries)
-* [7. Towards automatic untangling of APIs](#7-towards-automatic-untangling-of-apis)
-* [8. Automatic Debloat of Bots Dependency Alerts](#8-automatic-debloat-of-bots-dependency-alerts)
-* [9. Vulnerability Analysis Through Debloating](#9-vulnerability-analysis-through-debloating)
-* [10. Automatic Debloating IaC Files](#10-automatic-debloating-iac-files)
+- [List of Topics](#list-of-topics)
+- [1. Debloat of mobile apps](#1-debloat-of-mobile-apps)
+    - [Motivation](#motivation)
+    - [Approach](#approach)
+    - [Validation](#validation)
+    - [References](#references)
+- [2. Automatic migration from Java \< 8 to Java 11 modular system](#2-automatic-migration-from-java--8-to-java-11-modular-system)
+    - [Motivation](#motivation-1)
+    - [Approach](#approach-1)
+    - [Validation](#validation-1)
+    - [References](#references-1)
+- [3. Identification of program hotpots by monitoring system calls](#3-identification-of-program-hotpots-by-monitoring-system-calls)
+    - [Motivation](#motivation-2)
+    - [Approach](#approach-2)
+    - [Validation](#validation-2)
+    - [References](#references-2)
+- [4. Automatic repair of dependency conflicts in Java](#4-automatic-repair-of-dependency-conflicts-in-java)
+    - [Motivation](#motivation-3)
+    - [Approach](#approach-3)
+    - [Validation](#validation-3)
+    - [References](#references-3)
+- [5. Feature-guided program debloating](#5-feature-guided-program-debloating)
+    - [Motivation](#motivation-4)
+    - [Approach](#approach-4)
+    - [Validation](#validation-4)
+    - [References](#references-4)
+- [6. Fine-grained specialization of JS libraries](#6-fine-grained-specialization-of-js-libraries)
+    - [Motivation](#motivation-5)
+    - [Approach](#approach-5)
+    - [Validation](#validation-5)
+    - [References](#references-5)
+- [7. Towards automatic untangling of APIs](#7-towards-automatic-untangling-of-apis)
+    - [Motivation](#motivation-6)
+    - [Approach](#approach-6)
+    - [Validation](#validation-6)
+    - [References](#references-6)
+- [8. Automatic Debloat of Bots Dependency Alerts](#8-automatic-debloat-of-bots-dependency-alerts)
+    - [Motivation](#motivation-7)
+    - [Approach](#approach-7)
+    - [Validation](#validation-7)
+    - [References](#references-7)
+- [9. Vulnerability Analysis Through Debloating](#9-vulnerability-analysis-through-debloating)
+    - [Motivation](#motivation-8)
+    - [Approach](#approach-8)
+    - [Validation](#validation-8)
+    - [References](#references-8)
+- [10. Automatic Debloating IaC Files](#10-automatic-debloating-iac-files)
+    - [Motivation](#motivation-9)
+    - [Approach](#approach-9)
+    - [Validation](#validation-9)
+    - [References](#references-9)
 
 # 1. Debloat of mobile apps
 
@@ -66,15 +107,15 @@ Select a set of Android applications for which we have the source code and that 
 
 ### Motivation
 
-On Linux, the full JDK 8 was 364 Mb, the JRE just 197 Mb. Users who were concerned about disk space could install the JRE and happily run their applications. The Java Platform Module System (JPMS), introduced in the Java 9, divides the monolithic `rt.jar` and `tools.jar` files into 75 distinct modules [3]. The idea is to build Java runtimes that are tailored to the requirements of a specific application. To do so, Oracle provides the [jlink](https://docs.oracle.com/javase/9/tools/jlink.htm#JSWOR-GUID-CECAC52B-CFEE-46CB-8166-F17A8E9280E9) command to assemble and optimize a set of modules and their dependencies into a custom runtime image [1]. Rather than including all 75 modules, you need only include the [`java.base`](https://docs.oracle.com/javase/9/docs/api/java.base-summary.html) module (which all runtimes must include by definition) as well as any other modules the application references. However, since jlink only works with modules, it can't be used to generate a runtime image for non-module based applications [2].
+On Linux, the full JDK 8 was 364 Mb, the JRE just 197 Mb. Users who were concerned about disk space could install the JRE and happily run their applications. The Java Platform Module System (JPMS), introduced in the Java 9, divides the monolithic `rt.jar` and `tools.jar` files into 75 distinct modules [3]. The idea is to build Java runtimes that are tailored to the requirements of a specific application. To do so, Oracle provides the [jlink](https://docs.oracle.com/javase/9/tools/jlink.htm#JSWOR-GUID-CECAC52B-CFEE-46CB-8166-F17A8E9280E9) command to assemble and optimize a set of modules and their dependencies into a custom runtime image [1]. Rather than including all 75 modules, you need only include the [`java.base`](https://docs.oracle.com/javase/9/docs/api/java.base-summary) module (which all runtimes must include by definition) as well as any other modules the application references. However, since jlink only works with modules, it can't be used to generate a runtime image for non-module based applications [2].
 
 ### Approach
 
-We use code analysis techniques to determine which modules are used by an application. This will make possible to use jlink for generating a custom JRE that contains only the platform modules that are required for running the given application. 
+We use code analysis techniques to determine which modules are used by an application. This will make possible to use jlink for generating a custom JRE that contains only the platform modules that are required for running the given application.
 
 ### Validation
 
-Select a set of Java applications for which we have the source code that compiles with Java 8. Automatically generate a modularizable version of the applications with the tool and compare the result w.r.t previous version. For example, concerning the size of the final binary, number of classes in the final binary, number of dependencies in the final dependency tree, ect. 
+Select a set of Java applications for which we have the source code that compiles with Java 8. Automatically generate a modularizable version of the applications with the tool and compare the result w.r.t previous version. For example, concerning the size of the final binary, number of classes in the final binary, number of dependencies in the final dependency tree, ect.
 
 ### References
 
@@ -82,7 +123,7 @@ Select a set of Java applications for which we have the source code that compile
 
 [2] [https://medium.com/azulsystems/using-jlink-to-build-java-runtimes-for-non-modular-applications-9568c5e70ef4](https://medium.com/azulsystems/using-jlink-to-build-java-runtimes-for-non-modular-applications-9568c5e70ef4)
 
-[3] [https://www.baeldung.com/java-9-modularity](https://www.baeldung.com/java-9-modularity) 
+[3] [https://www.baeldung.com/java-9-modularity](https://www.baeldung.com/java-9-modularity)
 
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
@@ -94,19 +135,19 @@ Select a set of Java applications for which we have the source code that compile
 
 The system call is the fundamental interface between an application and the Linux kernel [1]. The execution of **any** program written in **any** language will trigger the execution of some system calls. System calls are typically not invoked directly, but rather invoked through corresponding wrapper functions in the core library (e.g., `glibc` or `musl-libc`). There are 335 unique systems calls in the x86_84 architecture. The observation of system calls provides a uniform way to understand the execution of programs written in different languages, as well as a unique manner for monitoring their behavior.
 
-Inspired by the [Hello world](https://drewdevault.com/2020/01/04/Slow.html) blog post, we aim at monitoring system calls executed at distinct part of programs in order to determine which regions are causing overhead in terms their quantity and diversity. The ultimate goal is to automatically remove (or reduce) the bloated system calls from the program.
+Inspired by the [Hello world](https://drewdevault.com/2020/01/04/Slow) blog post, we aim at monitoring system calls executed at distinct part of programs in order to determine which regions are causing overhead in terms their quantity and diversity. The ultimate goal is to automatically remove (or reduce) the bloated system calls from the program.
 
 ### Approach
 
-We start by monitoring the system calls triggered when exercising distinct regions of the program (e.g., from various entry points). Then, we cluster the system calls to determine the **core regions** of the application (i.e., the methods that use more system calls). Then, we debloat the program with several tools and measure the impact of debloating on the reduction of system calls. 
+We start by monitoring the system calls triggered when exercising distinct regions of the program (e.g., from various entry points). Then, we cluster the system calls to determine the **core regions** of the application (i.e., the methods that use more system calls). Then, we debloat the program with several tools and measure the impact of debloating on the reduction of system calls.
 
 ### Validation
 
-Select a set of Java applications and monitor their systems calls according to different workloads. System calls can be obtained with [`strace`](https://strace.io). Then, implement a tool to debloat the application based on the results of the system calls monitoring (see examples of deboating tools [here](https://www.cesarsotovalero.net/software-debloating-tools)).  
+Select a set of Java applications and monitor their systems calls according to different workloads. System calls can be obtained with [`strace`](https://strace.io). Then, implement a tool to debloat the application based on the results of the system calls monitoring (see examples of deboating tools [here](https://www.cesarsotovalero.net/software-debloating-tools)).
 
 ### References
- 
-[1] [http://man7.org/linux/man-pages/man2/syscalls.2.html](http://man7.org/linux/man-pages/man2/syscalls.2.html) 
+
+[1] [http://man7.org/linux/man-pages/man2/syscalls.2](http://man7.org/linux/man-pages/man2/syscalls.2)
 
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
@@ -116,17 +157,17 @@ Select a set of Java applications and monitor their systems calls according to d
 
 ### Motivation
 
-The [Java class loading mechanism](https://docs.oracle.com/javase/tutorial/ext/basics/load.html) does not permit to have multiple classes with the same fully-qualified name in the classpath of an application. Consequently, Maven has to choose a single version for every dependency. The [Maven dependency resolution mechanism](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html) determines the library version that is nearest to the root of the dependency tree and "shadows" the other versions, i.e., the dependency tree will contain only one version per dependency. 
+The [Java class loading mechanism](https://docs.oracle.com/javase/tutorial/ext/basics/load) does not permit to have multiple classes with the same fully-qualified name in the classpath of an application. Consequently, Maven has to choose a single version for every dependency. The [Maven dependency resolution mechanism](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism) determines the library version that is nearest to the root of the dependency tree and "shadows" the other versions, i.e., the dependency tree will contain only one version per dependency.
 
 Currently, Maven triggers warnings on the console to alert developers if dependency conflicts exist in the project [1]. The occurrence of conflicting versions is an issue known as the JAR hell in the Java  ecosystems; and it is a best practice that developers solve them manually as soon as possible [2]. However, there is currently no tool to fix dependency conflicts at runtime in the Java ecosystem.
 
 ### Approach
 
-We rely on dynamic program analysis to determine what dependencies are causing the conflicts. To do so, we execute the test suite of the project and inspect its dependency tree. The goal is to analyze the dependencies with respect to their actual usage and manipulate the `pom.xml` file accordingly to find the class members that might create the conflicts. The approach is similar to [3], with the difference that we perform the repair at run-time (ideally through the implementation of a dedicated Maven plugin).   
+We rely on dynamic program analysis to determine what dependencies are causing the conflicts. To do so, we execute the test suite of the project and inspect its dependency tree. The goal is to analyze the dependencies with respect to their actual usage and manipulate the `pom.xml` file accordingly to find the class members that might create the conflicts. The approach is similar to [3], with the difference that we perform the repair at run-time (ideally through the implementation of a dedicated Maven plugin).
 
 ### Validation
 
-Select a set of open-source projects that use Maven and have dependency conflicts causing build breakages at some stage of its build history, e.g., mining the Travis CI log files. Then clone the project at that stage and use the implemented tool to repair the conflict automatically. Report on the results obtained and compare to the static approach proposed in [3]. 
+Select a set of open-source projects that use Maven and have dependency conflicts causing build breakages at some stage of its build history, e.g., mining the Travis CI log files. Then clone the project at that stage and use the implemented tool to repair the conflict automatically. Report on the results obtained and compare to the static approach proposed in [3].
 
 ### References
 
@@ -144,13 +185,13 @@ Select a set of open-source projects that use Maven and have dependency conflict
 
 ### Motivation
 
-One of the fundamental challenges of debloating consists in trimming unused features from an application [3]. There could be several reasons that motivate this approach. For example, the maintenance of unused (or unpopular) features leads to unnecessary costs. Thus, the identification and removal of unneeded features can help product owners to prioritize maintenance efforts [4]. 
+One of the fundamental challenges of debloating consists in trimming unused features from an application [3]. There could be several reasons that motivate this approach. For example, the maintenance of unused (or unpopular) features leads to unnecessary costs. Thus, the identification and removal of unneeded features can help product owners to prioritize maintenance efforts [4].
 
-Recent work focuses on the addition of feature sets to maps to facilitate the debloating process [1]. However, these approaches are not automatic and depend on the developers criteria to label features in the program. 
- 
+Recent work focuses on the addition of feature sets to maps to facilitate the debloating process [1]. However, these approaches are not automatic and depend on the developers criteria to label features in the program.
+
 ### Approach
 
-We approximate the feature space in the program by constructing a static call graph first, and then collecting dynamic traces representing specific executions of it. This approach will allow us to get diverse sets concerning the utilization of the program in distinct user scenarios. Our approach is similar to [2], with the difference that we will identify the features using community graph-based algorithms over the static call graph, and we'll perform the dynamic analysis automatically through the execution of the test suite of the program. 
+We approximate the feature space in the program by constructing a static call graph first, and then collecting dynamic traces representing specific executions of it. This approach will allow us to get diverse sets concerning the utilization of the program in distinct user scenarios. Our approach is similar to [2], with the difference that we will identify the features using community graph-based algorithms over the static call graph, and we'll perform the dynamic analysis automatically through the execution of the test suite of the program.
 
 ### Validation
 
@@ -191,7 +232,7 @@ Our approach will be evaluated by conducting case studies of specializing in rea
 
 [1] [Wikipedia's JavaScript initialisation on a budget](https://phabricator.wikimedia.org/phame/post/view/175/wikipedia_s_javascript_initialisation_on_a_budget)
 
-[2] Vázquez, Hernán Ceferino, et al. ["Slimming javascript applications: An approach for removing unused functions from javascript libraries."](https://www.sciencedirect.com/science/article/pii/S0950584918302210) Information and Software Technology 107 (2019): 18-29. 
+[2] Vázquez, Hernán Ceferino, et al. ["Slimming javascript applications: An approach for removing unused functions from javascript libraries."](https://www.sciencedirect.com/science/article/pii/S0950584918302210) Information and Software Technology 107 (2019): 18-29.
 
 [3] Morales, Rodrigo, Rubén Saborido, and Yann-Gaël Guéhéneuc. ["MoMIT: Porting a JavaScript Interpreter on a Quarter Coin."](https://ieeexplore.ieee.org/document/8966499) IEEE Transactions on Software Engineering (2020).
 
@@ -204,7 +245,7 @@ Our approach will be evaluated by conducting case studies of specializing in rea
 
 ### Motivation
 
-Multi-purpose libraries deliver several functionalities through their public API, which are often unused by their clients. On the other hand, libraries tend to grow in functionalities, and sometimes this can negatively influence the user experience. Those libraries should be refactored, i.e., by dividing the API into a set of smaller and more focused and independent sub-modules [2]. 
+Multi-purpose libraries deliver several functionalities through their public API, which are often unused by their clients. On the other hand, libraries tend to grow in functionalities, and sometimes this can negatively influence the user experience. Those libraries should be refactored, i.e., by dividing the API into a set of smaller and more focused and independent sub-modules [2].
 
 As an example, the [JUnit 4](https://junit.org/junit4/) framework was heavily refactored and divided into several modules. The next generation, [JUnit 5](https://junit.org/junit5), contains specific modules to provide certain functionalities each (e.g., `junit-jupiter-engine`, `junit-platform-launcher`).
 
@@ -231,13 +272,13 @@ We evaluate our approach by conducting case studies on real-world fat and popula
 
 ### Motivation
 
-In modern software projects, developers rely on bots to manage several common tasks automatically [1]. An example of such tasks is dependency management, in which software bots allow to find and fix vulnerabilities in open-source libraries by proposing the update of their third-party dependencies (e.g., [Snyk](https://snyk.io/), [Dependabot](https://dependabot.com/)). These tools analyze the dependency versions used in software projects and mine repositories and CVE databases in order to spot known vulnerabilities in the dependencies used by the clients. 
+In modern software projects, developers rely on bots to manage several common tasks automatically [1]. An example of such tasks is dependency management, in which software bots allow to find and fix vulnerabilities in open-source libraries by proposing the update of their third-party dependencies (e.g., [Snyk](https://snyk.io/), [Dependabot](https://dependabot.com/)). These tools analyze the dependency versions used in software projects and mine repositories and CVE databases in order to spot known vulnerabilities in the dependencies used by the clients.
 
 However, in complex projects, developers might be overwhelmed by many dependency alerts coming from such bots. They have to revise each alert (triggered mostly as pull requests) manually, in order to approve or reject it. In our previous research works [2, 3], we have found that clients use only a small part of their declared dependencies (or even do not use them them at all). Therefore, the goal of this project is to study the dependency alerts triggered by bots and shrink the ones that are unused by developers. This will save developers’ time and effort, at the same time that eases their interaction with software bots.
 
 ### Approach
 
-First, we mine GitHub projects in order to filter the commits that are related to dependency bots. Then, we analyze the difference between the vulnerable version of the dependency used, and the new one proposed by the bot. The goal is to determine if the code introduced in the new version is actually used by the project, i.e., if the dependency update is relevant for the project in particular. 
+First, we mine GitHub projects in order to filter the commits that are related to dependency bots. Then, we analyze the difference between the vulnerable version of the dependency used, and the new one proposed by the bot. The goal is to determine if the code introduced in the new version is actually used by the project, i.e., if the dependency update is relevant for the project in particular.
 
 
 ### Validation
@@ -353,5 +394,5 @@ This is a fundamental outcome to validate the relevance of our approach.
 
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
-[^1]: See my list of [mining software repositories resources](./mining-software-repositories-resources.html).
+[^1]: See my list of [mining software repositories resources](./mining-software-repositories-resources).
 

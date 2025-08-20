@@ -1,5 +1,5 @@
 ---
-permalink: races.html
+permalink: races
 layout: page
 title: Races
 subtitle: 🏃

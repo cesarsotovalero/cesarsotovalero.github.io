@@ -14,7 +14,6 @@ author: cesarsotovalero
 published: true
 ---
 
-
 The rejection of a research paper is always a tough spot in the life of researchers.
 Today, many top conferences allow the authors of a rejected paper to submit a so-called "paper rebuttal."
 This is a last chance for the authors to defend their work in case the reviewers made obvious mistakes or the arguments supporting the rejection are unclear.
@@ -23,10 +22,9 @@ Moreover, I will cover practical tips to write a good rebuttal in case you decid
 In this case, the objective is to write a rebuttal that has the highest chance to be read by the PC chairs.
 If this is what you want to do... keep reading!
 
-
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/maxwell.jpg alt:"The synthesis of irrefutable proofs is invincible in science." %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; The synthesis of irrefutable proofs is invincible in science. Photo of a plate from <a href="https://goo.gl/maps/j8GC4KtHEXoKxLpB8">Tekniska Högskolan station</a>.
   </figcaption>
 </figure>
@@ -42,8 +40,9 @@ It is also enforced to be typically short (between 500 and 750 words), so that t
 > -- <cite>Devi Parikh</cite>
 
 The rebuttal must focus on the following:
-- Answers to specific questions raised by reviewers (if any)
-- Factual errors in the reviews
+
+- Answers to specific questions raised by reviewers (if any).
+- Factual errors in the reviews.
 
 A rebuttal in academic conferences is not like a response to the reviewers' comments in a journal.
 In a journal, you send a response to the reviewers and resubmit the paper for another revision.
@@ -86,17 +85,17 @@ Rebuttals focus mostly on responding to negative points, don't let everyone forg
 
 Here's an example:
 
-```
-We thank the reviewers for their insightful and positive feedback! 
-We are encouraged that they find Foo to be a novel tasks (R1,2,3), 
-an important research problem (R1,2), appropriately positioned w.r.t 
+```text
+We thank the reviewers for their insightful and positive feedback!
+We are encouraged that they find Foo to be a novel tasks (R1,2,3),
+an important research problem (R1,2), appropriately positioned w.r.t
 prior work (R1,3), and of value for the community (R1,2,3).
 One primary concern was insufficient discussion of results. We agree.
 We were constrained by space. We answer some specific questions below,
 but will incorporate all feedback in the final version.
 ```
 
-Notice the conversational nature of the example responses above. 
+Notice the conversational nature of the example responses above.
 The relaxed tone makes it easier for the PC chairs to read it.
 Remember that the rebuttal should not be perceived as being combative.
 You're trying to convince very competent people about the quality of your work.
@@ -113,6 +112,7 @@ If one of the reviewers' negative comments is clearly wrong, then you should poi
 > -- <cite>Andreas Zeller</cite>
 
 A major concern is one that:
+
 - Mistrusts the scientific contribution of the paper (its novelty, significance, etc.)
 - Raise doubts about the scientific methodology employed (validation protocol, dataset, the model employed, etc.)
 
@@ -127,14 +127,14 @@ You can use underscores (`_`)  or dashes (`-`) to concatenate two words for the 
 
 Here is an example:
 
-```
+```text
 Question-2-Reviewer-3:Is_Foo_in_your_paper_actually_a_Bar?
 Answer-to-Reviewer-3:
 Yes, your understanding is perfect.
 Foo is a Bar with X and Z.
 ```
 
-**\*NOTE:** Be cautious not abusing of this method, otherwise you may be at risk that PC chair will just delete your rebuttal. 
+**\*NOTE:** Be cautious not abusing of this method, otherwise you may be at risk that PC chair will just delete your rebuttal.
 
 # Make Good Use of Tables
 
@@ -153,8 +153,8 @@ We conducted a new experiment with the Foo dataset:
 | B     |    99   |    89   |    78   |
 | C     |    43   |    76   |    45   |
 
-This shows that 1)B outperforms A and C,2)The results are similar to ours.
-Full results: https://github.com/anonymous/repo 
+This shows that 1) B outperforms A and C, 2) The results are similar to ours.
+Full results: https://github.com/anonymous/repo
 ```
 
 Note how there is a link to an external repository.
@@ -193,15 +193,14 @@ This is important to help the reviewers understand other reviewers' concerns!
 
 Here is an example:
 
-
 ```text
 Dear reviewers,
 We appreciate your positive feedback.We focus on four major points to
 solve your concerns and get your support:
 1.The results of Foo are significant in terms of Metric1 and Metric2.
-Please see Answer-to-Reviewer-2. 
+Please see Answer-to-Reviewer-2.
 2.We assume Bar, which follows state-of-the-art:X and Y.We agree with
-Reviewer-2,so we added Z.Please see Answer to Reviewer-2. 
+Reviewer-2,so we added Z.Please see Answer to Reviewer-2.
 3.We added a new study Foo. Please see Answer-to-Reviewer-1.
 4.We disagree that our results are insignificant because X and Z.
 Please see Answer-to-Reviewer-3.
@@ -230,5 +229,5 @@ And you better learn how to play it well 😀.
 
 # References
 
-- [:globe_with_meridians: Patterns for writing good rebuttals](https://andreas-zeller.info/2012/10/01/patterns-for-writing-good-rebuttals.html), by Andreas Zeller.
+- [:globe_with_meridians: Patterns for writing good rebuttals](https://andreas-zeller.info/2012/10/01/patterns-for-writing-good-rebuttals), by Andreas Zeller.
 - [:globe_with_meridians: How we write rebuttals](https://deviparikh.medium.com/how-we-write-rebuttals-dc84742fece1), by Devi Parikh.

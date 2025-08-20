@@ -4,13 +4,13 @@ title: Bus Factor&#58; A Human-Centered Risk Metric in the Software Supply Chain
 subtitle: Public transportation may become hellish
 tags: metrics
 description: |
-    What would happen to a software project if some of its developers were suddenly hit by a bus? The “bus factor” measures the amount of spread of knowledge within a dev team so that the project can survive the most drastic loss of personnel. Managers should keep an eye on this metric for the best of their projects.  
+    What would happen to a software project if some of its developers were suddenly hit by a bus? The “bus factor” measures the amount of spread of knowledge within a dev team so that the project can survive the most drastic loss of personnel. Managers should keep an eye on this metric for the best of their projects.
 keywords:
   - software stakeholders,
   - software resilience,
   - knowledge management,
   - intelligent collaboration tools,
-  - open-source management 
+  - open-source management
 image: ../img/posts/2022/plane_paint_cover.jpg
 share-img: ../img/posts/2022/plane_paint_cover.jpg
 show-avatar: false
@@ -33,7 +33,7 @@ In this post, I deep dive into the concept of bus factor and discuss the perils 
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/plane_paint.jpg alt:"What if instead of a bus, the whole dev team is lost in a plane crash?" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; What if, instead of a bus, the whole dev team is lost due to a plane crash? Photo from <a href="https://goo.gl/maps/j8GC4KtHEXoKxLpB8">Tekniska Högskolan station</a>.
   </figcaption>
 </figure>
@@ -61,24 +61,24 @@ Consequently, accurately estimating the bus factor is not an easy endeavor.
 
 The bus factor is a sound human-based metric to assess the resilience of a software project.
 However, translating the bus factor definition into a bus factor estimation algorithm is nontrivial.
-Existing algorithms for bus factor estimation collect the distribution of information in the project from the [Git](https://www.cesarsotovalero.net/blog/git-fundamentals.html) version control system.
+Existing algorithms for bus factor estimation collect the distribution of information in the project from the [Git](./blog/git-fundamentals) version control system.
 Smaller values of the bus factor lead to higher risks for a project.
 Larger values correspond to a relatively even distribution of knowledge, so the departure of a team member would have a lesser impact.
 
-> “Small teams of under 10 people usually target a truck factor of 4-5 for most parts of the system (that's around 50% of the team). Larger teams will probably target a truck factor of around 8 (which would probably be around 25% of the team). This means that should a couple of critical people go on vacation or leave the company, there are enough people in the team who can cover for them.” -- <cite>[Siddhi](http://www.siddharta.me/2005/06/truck-factor.html)</cite>
+> “Small teams of under 10 people usually target a truck factor of 4-5 for most parts of the system (that's around 50% of the team). Larger teams will probably target a truck factor of around 8 (which would probably be around 25% of the team). This means that should a couple of critical people go on vacation or leave the company, there are enough people in the team who can cover for them.” -- <cite>[Siddhi](http://www.siddharta.me/2005/06/truck-factor)</cite>
 
-Here is a [naive algorithm](https://link.springer.com/chapter/10.1007/978-3-642-21843-9_26) for computing the bus factor of a project: 
+Here is a [naive algorithm](https://link.springer.com/chapter/10.1007/978-3-642-21843-9_26) for computing the bus factor of a project:
 
 {% highlight java linenos %}
 /**
  * Computes the bus factor of a project based on the Git information about
  * the committers of each file in the project. A file is considered critical
  * when the developer has a coverage threshold of
- * 
+ *
  * @param T Critical file coverage threshold; e.g., 50%, 60%, 70%,...
  * @param D Project developers; e.g., {Dev1, Dev2, Dev3,...}.
  * @param F Project files; e.g., {File1, File2, File3,...}
- * @return The project bus factor. 
+ * @return The project bus factor.
  */
 public static int computeBusFactor(int T, List<String> D, List<String> F) {
     float[] minFileCoverageArray = new float[F.size()];
@@ -120,7 +120,7 @@ public static List committers(String f) {
 
 $$DOA(e,f) = 3.293 + 1.098FA + 0.164DL − 0.321 log(1 + AC)$$
 
-where 
+where
 
 - $$FA$$ (first authorship) is 1 for $$f$$ file creator and 0 otherwise
 - $$DL$$ is the number of commits to the file $$f$$ made by the engineer $$e$$
@@ -132,7 +132,7 @@ According to the algorithm of Avelino, an engineer $$e$$ is an author of a file 
 
 $$DOA(e, f ) > 0.75 * max_{e} DOA(e, f)$$
 
-where 
+where
 
 - $$3.293$$ is the constant equal to the free term in the first $$DOA$$ equation
 - $$max_{e} DOA(e, f)$$ is the highest $$DOA$$ for file $$f$$ for all project members

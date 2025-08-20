@@ -35,14 +35,14 @@ The rest of this article is my perspective on this matter, and where I believe c
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2024/2024-02-13/manual-coffee-making-process-landscape.jpg alt: "Me grinding my coffee manually" %}
-  <figcaption class="stroke"> 
-    &#169; My manual coffee-making process is a significant time investment. However, it enhances the experience while simultaneously reducing the frequency of my coffee consumption. Will the efficiencies promised by AI deliver the same joy? 
+  <figcaption class="stroke">
+    &#169; My manual coffee-making process is a significant time investment. However, it enhances the experience while simultaneously reducing the frequency of my coffee consumption. Will the efficiencies promised by AI deliver the same joy?
   </figcaption>
 </figure>
 
 Last week I participated in [Jfokus 2024](https://www.jfokus.se/talks/1661) as a speaker.[^3]
-The main topic of the conference was the latest advances in AI and the impact of this technology on the software industry. 
-I noticed a general acceptance of the huge potential of AI, and the many ways in which it could/would make everything more efficient for developers. 
+The main topic of the conference was the latest advances in AI and the impact of this technology on the software industry.
+I noticed a general acceptance of the huge potential of AI, and the many ways in which it could/would make everything more efficient for developers.
 For many of us, it looks like writing code, testing, deploying, documenting, or just creating any kind of digital content will be AI-assisted in the coming years.
 So, there's a [notable concern](https://youtu.be/rENT1fDR69I?si=pH27Skp26xXGGp2D) regarding the future market need for human developers.
 Honestly, I find the mere question [freaking scary](../blog/surviving-the-ai-revolution-as-a-software-engineer), not only because I'm a developer myself, but also because I believe that coding is a pretty advanced skill.
@@ -102,13 +102,13 @@ From a technological perspective, AI's scalability is taken for granted.
 
 AI models, like Large Language Models (LLMs), have absorbed the entirety of humanity's open knowledge and learned from it.
 Unlike earlier machine learning techniques, they have begun to generate new knowledge from our existing internet corpus.
-The potential of these new models [is simply astounding](../blog/prompting-is-all-we-need).
+The potential of these new models [is simply astounding](./blog/prompting-is-all-we-need).
 They are already being utilized to tackle problems that were once considered exceedingly challenging.
 
 Here are just three examples of applied AI that already impress me:
 
-- **[FIGURE 01 Humanoid Robot](https://www.nextbigfuture.com/2024/01/figure-01-humanoid-bot-has-learned-to-make-coffee.html)** that can learn how to make coffee.
-- **[AMIE](https://blog.research.google/2024/01/amie-research-ai-system-for-diagnostic_12.html)**, an AI system that outperforms human doctors in every field (including empathy).
+- **[FIGURE 01 Humanoid Robot](https://www.nextbigfuture.com/2024/01/figure-01-humanoid-bot-has-learned-to-make-coffee)** that can learn how to make coffee.
+- **[AMIE](https://blog.research.google/2024/01/amie-research-ai-system-for-diagnostic_12)**, an AI system that outperforms human doctors in every field (including empathy).
 - **[GitHub Copilot](https://github.com/features/copilot)**, the world’s most widely adopted AI developer tool.
 
 Imagine a world where a supremely powerful AI system decides and manages everything.
@@ -159,7 +159,7 @@ It's concerning, and yet, it seems inevitable because it will be still better th
 On the other hand, the things that we thought were inherently human, like art and creativity, are now successfully generated using AI.
 If in doubt, just look at the stuff created by [Midjourney](https://www.midjourney.com/home).
 Very soon there will see AI creating 3D objects, full movies, and even entire virtual worlds.
-Take it or leave it, our civilization will never be the same. 
+Take it or leave it, our civilization will never be the same.
 
 # The Human Experience
 
@@ -187,8 +187,8 @@ They watch videos on YouTube but still prefer attending live events.
 
 <figure class="jb_picture">
   {% responsive_image width: "50%" border: "1px solid #808080" path: img/posts/2024/2024-02-13/true-wealth.jpg alt: "To remain human will be the true wealth" %}
-  <figcaption class="stroke"> 
-    The key difference is freedom, not technology; to remain human will be the true wealth. 
+  <figcaption class="stroke">
+    The key difference is freedom, not technology; to remain human will be the true wealth.
     <a href="https://www.linkedin.com/posts/linasbeliunas_this-sums-up-the-current-and-the-future-brilliantly-activity-7172327842406510592-dP9F?utm_source=share&utm_medium=member_desktop">Source</a>
   </figcaption>
 </figure>
@@ -235,7 +235,7 @@ For example, I would rather go hiking or fishing in the mountains with my childr
 
 <figure class="jb_picture">
   {% responsive_image border: "1px solid #808080" path: img/posts/2024/2024-02-13/Brynjolfsson_on_the_turing_trap.png alt: "The turing trap" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; According to <a href="https://www.amacad.org/sites/default/files/publication/downloads/Daedalus_Sp22_19_Brynjolfsson.pdf">Erik Brynjolfsson</a>, opportunities for augmenting humans are far greater than opportunities to automate existing tasks.
   </figcaption>
 </figure>
@@ -252,7 +252,7 @@ Every child could have a private teacher specifically trained to meet their need
 In this way, high-quality education would become accessible to everyone.
 
 <aside class="quote">
-    <em>“For the most part of everything I do, I'm not looking for perfection, I'm rather seeking for the experience.”</em> 
+    <em>“For the most part of everything I do, I'm not looking for perfection, I'm rather seeking for the experience.”</em>
 </aside>
 
 Another example is architecture.
@@ -279,8 +279,8 @@ In any case, AI is already here, it's not going anywhere, and it's inevitable.
 
 # Footnotes
 
-[^1]: This blog post has been written without AI assistance, which explains the broken writing style and rambling of thoughts.  
+[^1]: This blog post has been written without AI assistance, which explains the broken writing style and rambling of thoughts.
 
 [^2]: If you ever use AI to generate content, you understand what I'm talking about.
 
-[^3]: You can watch my Jfokus talk [here](https://youtu.be/Xn1ShZPrw2o?si=88K_7LWn3s63o3HE).
+[^3]: You can watch [my Jfokus talk](https://youtu.be/Xn1ShZPrw2o?si=88K_7LWn3s63o3HE).

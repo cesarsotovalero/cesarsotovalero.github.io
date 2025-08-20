@@ -1,6 +1,6 @@
 ---
-permalink: software.html 
-layout: page 
+permalink: software
+layout: page
 title: Software
 subtitle: 💻
 description: List of software projects created by César Soto Valero.

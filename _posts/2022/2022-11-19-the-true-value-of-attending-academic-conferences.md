@@ -4,7 +4,7 @@ title: The True Value of Attending Academic Conferences
 subtitle: It's not only about the technical content
 tags: science
 description: |
-  I recently attended the 29th edition of ESEC/FSE 2022 in Singapore. This was my first time participating in a big academic conference (in real-life). In this blog post, I share my experiences, with a focus on what I think is the actual value of attending these kinds of events. 
+  I recently attended the 29th edition of ESEC/FSE 2022 in Singapore. This was my first time participating in a big academic conference (in real-life). In this blog post, I share my experiences, with a focus on what I think is the actual value of attending these kinds of events.
 keywords:
   - academic conferences,
   - ESEC/FSE experience,
@@ -15,14 +15,14 @@ share-img: ../img/posts/2022/fse_cover.jpg
 show-avatar: false
 toc: true
 date: 2022/11/19
-author: cesarsotovalero 
+author: cesarsotovalero
 published: true
 ---
 
 I recently attended the 29<sup>th</sup> edition of [ESEC/FSE 2022](https://2022.esec-fse.org/) in Singapore.
 ESEC/FSE is one of the most prestigious conferences in the Software Engineering field.[^1]
 This was my first time participating in an academic conference (in person).
-I went there to present [two papers](https://2022.esec-fse.org/profile/cesarsotovalero). 
+I went there to present [two papers](https://2022.esec-fse.org/profile/cesarsotovalero).
 But let me admit it, I had a negative opinion of academic conferences before.
 I used to think that conferences were expensive,[^2] unnecessary,[^3], and a waste of time and resources in general.[^4]
 All of this may be true, but there is something else I was not seeing.
@@ -30,13 +30,12 @@ In this blog post, I share my experiences, with a focus on discussing what I thi
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/fse.jpg alt:"My photo from the event." %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; Do not forget making this kind of photo when attending an event. Here's my “I was here” cavern-mark photo taken at <a href="https://goo.gl/maps/jjdXKbpiXA4Dv1Uf7">National University of Singapore</a>.
   </figcaption>
-
 </figure>
 
-# The place
+# The Place
 
 It is not by chance seeing a [Bootstrap Carousel](https://www.w3schools.com/bootstrap/bootstrap_carousel.asp) at the top of most conference websites today with pictures advertising the main attractions at the hosting place.
 As in the Olympic games, an academic conference is a marketing opportunity for the hosting city.
@@ -50,13 +49,12 @@ The best way to learn about different cultures is by visiting different places.
 As a PhD student, attending conferences is a unique opportunity to make **academic tourism**.
 There is nothing like being exposed to a different environment to spark new ideas and widen your perspective about many things.
 
-
-> “I entered a store at NUS. There were no employees there. 
+> “I entered a store at NUS. There were no employees there.
 > First, I put my palm into a camera three times, and the system learned the patterns in my palm.
-> Then, I stand in front of a gate (similar to the metro gates), I just showed my palm there, and the gate opened. 
+> Then, I stand in front of a gate (similar to the metro gates), I just showed my palm there, and the gate opened.
 > I entered the store and picked what I wanted. Once completed, I entered a corridor and there were cameras on the ceiling.
 > The cameras were scanning the QR codes on my picked items, and a monitor displayed the number of items I got and the total price of everything.
-> Then I paid and the exit door opened. 
+> Then I paid and the exit door opened.
 > That was an amazing and futuristic experience.”
 
 For me, it was such a refreshing feeling witnessing the beats Singapore.
@@ -80,7 +78,7 @@ You need to go and see it yourself.
 The point is this: **Attending an academic conference is not just about the event itself but the experience of visiting a new place.**
 This is one kind of knowledge that can only be gathered when exposing to a different society, and the vision of the world that expands through personal live observation.
 
-# The people
+# The People
 
 The most important aspect of attending academic conferences is the opportunity to meet and interact with other researchers.
 If you ask me, this is a key aspect of the experience and the main reason why one should attend academic conferences.
@@ -89,7 +87,7 @@ At ESEC/FSE, I was able to talk with many researchers from different countries a
 I could not have had such a great experience if I had attended this conference online.
 
 On the other hand, science is perceived today as a competitive endeavor.
-As I've mentioned [before](../blog/how-phd-profiles-are-evaluated.html), the impact of researchers is often measured by their number of publications and citations in Google Scholar.
+As I've mentioned [before](./blog/how-phd-profiles-are-evaluated), the impact of researchers is often measured by their number of publications and citations in Google Scholar.
 This is unfortunate, but there is not much we can do about it.
 Fortunately, participating at conferences allows us forget about it for a while, and to perceive science as a collaborative endeavor instead.
 
@@ -120,7 +118,7 @@ They worked in something similar, or have friends working on the same thing.
 Here is my main takeaway from this: **Attending a conference gives the possibility of meeting the people at the top of your field, and for a moment, perceiving yourself as their equals.**
 This could have a strong effect on self-confidence, which is more than necessary during PhD studies.
 
-# The presentations
+# The Presentations
 
 Technical presentations are the main reason some people attend conferences.
 The total time for each presentation is usually 15 minutes (inc. 1 to 5 minutes for Q/A).
@@ -129,12 +127,12 @@ I  got a lot of feedback from people who attended my talk.
 For the participants, this is an opportunity to learn about the general trends in the field and the latest research results.
 
 During the three-day main conference, I attended three keynotes and more than 15 technical presentations.
-They covered a lot of ground: empirical software engineering with the human in the loop, testing for the web, automatic program repair, open source security vulnerabilities, AI, and automation.  
+They covered a lot of ground: empirical software engineering with the human in the loop, testing for the web, automatic program repair, open source security vulnerabilities, AI, and automation.
 Talks were held in parallel, so I missed out on some them which seemed interesting.
 Luckily, videos and presentation material for all of the conference is now available online.
 Overall, it seems that AI for Software Engineering is a hot topic right now.
 
-> “I go impressed by the overall quality of the presentations at ESEC/FSE. 
+> “I go impressed by the overall quality of the presentations at ESEC/FSE.
 > Most of the participants there are mature researchers with a lot of experience on public speaking.
 > My [second presentation](https://youtu.be/HXj2B8eHmt4) caught the attention of more people than the [first one](https://youtu.be/cePEl485E_s).
 > In remember that someone asked me about the possibility of using software debloating for program understanding, this is something I never thought about before.”
@@ -153,7 +151,7 @@ I hope that you will have the same opportunity!
 
 # Footnotes
 
-[^1]: At the moment of writing, ESEC/FSE is ranked second place (just after ICSE) among all the Software Engineering conferences in the world. 
+[^1]: At the moment of writing, ESEC/FSE is ranked second place (just after ICSE) among all the Software Engineering conferences in the world.
 
 [^2]: My registration to ESEC/FSE as a “Student ACM Member,” which is the cheapest option, costs $400.
 

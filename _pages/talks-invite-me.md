@@ -1,5 +1,5 @@
 ---
-permalink: /talks/invite-me.html
+permalink: /talks/invite-me
 layout: page
 title: Invite Me
 description: How to invite César Soto Valero to speak at your event.

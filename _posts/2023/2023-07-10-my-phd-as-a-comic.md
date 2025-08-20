@@ -20,7 +20,7 @@ published: true
 
 Doing ~~good~~ science is hard.
 Communicating science is even harder because it requires a larger doses of creativity.
-I learned during my 5 years as a PhD student that art visuals and stories are excellent ways to [communicate scientific ideas and results](../blog/how-to-give-a-great-technical-presentation.html).
+I learned during my 5 years as a PhD student that art visuals and stories are excellent ways to [communicate scientific ideas and results](./blog/how-to-give-a-great-technical-presentation).
 But using art as a form of expression is not easy, specially when dealing with complex technical content.
 Nevertheless, it is worth the effort.
 This is something I experienced at the end of my PhD journey.
@@ -31,19 +31,19 @@ If you are a PhD student interested in the use of comics (or other forms of art)
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-07-10/board-for-phd-comic.jpg alt:"Whiteboard summarizing my PhD contributions" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     I spend more than 3 hours explaining my PhD contribution (DepClean, DepTrim, and JDBL) to a team of software artists. I summarized the results of my 5 years of research work on a large whiteboard.
   </figcaption>
 </figure>
 
 # The Plan
 
-During my PhD at KTH, I had the opportunity to collaborate with [reth&#124;read](https://rethread.art/), a visionary collective of creators using [software art](https://en.wikipedia.org/wiki/Software_art) to communicate software engineering research.
-I collaborated in the [un&#124;fold](https://rethread.art/projects/unfold.html) project, an  installation for the [Nobel Week Lights 2022](https://nobelweeklights.se/?lang=en).
+During my PhD at KTH, I had the opportunity to collaborate with [reth&#124;read](https://rethread.art), a visionary collective of creators using [software art](https://en.wikipedia.org/wiki/Software_art) to communicate software engineering research.
+I collaborated in the [un&#124;fold](https://rethread.art/projects/unfold) project, an  installation for the [Nobel Week Lights 2022](https://nobelweeklights.se/?lang=en).
 Along the time, I meet many talented and creative software artists, and even shared office space with some of them.
 
 By being exposed to they work, I learned that art is a powerful tool for making science resonate with hearts and minds.
-One day, I was talking with [Maria Kling](https://www.linkedin.com/in/maria-euler-art-science-design/), and she suggested me to create a comic to explain my PhD thesis in a fun and engaging way.
+One day, I was talking with [Maria Kling](https://www.linkedin.com/in/maria-euler-art-science-design), and she suggested me to create a comic to explain my PhD thesis in a fun and engaging way.
 We had a few meetings where I explained the content of [my PhD thesis](../files/thesis/cesar-fulltext.pdf).
 Explaining software concepts to software artists is easy, as many of them are great coders.
 
@@ -72,7 +72,7 @@ The result is shown below.
 
 <figure class="jb_picture">
   {% responsive_image path: files/thesis/phd-comic/2.png alt:"Fist page of the comic" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     Figure 2.
     First page of the comic, where the core idea is introduced along my first software tool: DepCLean.
   </figcaption>
@@ -95,7 +95,7 @@ Now, let's take a look at the second page of the comic.
 
 <figure class="jb_picture">
   {% responsive_image path: files/thesis/phd-comic/3.png alt:"Second of the comic" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     Figure 3.
     Second page of the comic, showcasing how we can do better, using my two other tools: DepTrim and JDBL.
   </figcaption>
@@ -113,10 +113,10 @@ I'm glad that I had the opportunity to collaborate with software artists dedicat
 I believe that the field of Computer Science could benefit from digital creations showcasing the complexity behind the most simple computing operations.
 
 <aside class="quote">
-    <em>“Science communication isn't just key, it's essential. It unlocks funding, boosts outreach, and serves as both an introduction and justification of research to society.”</em> 
+    <em>“Science communication isn't just key, it's essential. It unlocks funding, boosts outreach, and serves as both an introduction and justification of research to society.”</em>
 </aside>
 
-At the end of my PhD journey, the research contributions and companion tools that I developed became more than [code](../software.html), experiments, and [papers](../publications.html).
+At the end of my PhD journey, the research contributions and companion tools that I developed became more than [code](./software), experiments, and [papers](./publications).
 They took on a life of their own thanks to the great work of the software artists who used their talents to turn it all into a comic.
 In the story, I'm a character in a grand tale using DepClean, DepTrim, and JDBL to enter a never-ending battle against code bloat in Java applications.
 
@@ -127,10 +127,10 @@ After all, I've just proven that given the right amount of time and effort: ~~ev
 
 # Footnotes
 
-[^1]: I kept a consist design for the logos of all of my software tool during my PhD. It's great to see that this approach proved to be useful later.  
+[^1]: I kept a consist design for the logos of all of my software tool during my PhD. It's great to see that this approach proved to be useful later.
 
-[^2]: You can read the paper [here](https://dl.acm.org/doi/10.1145/3546948) if you're interested.
+[^2]: You can read [the paper here](https://dl.acm.org/doi/10.1145/3546948) if you're interested.
 
-[^3]: The details about DepTrim are in this [paper](https://arxiv.org/abs/2302.08370).
+[^3]: The details about DepTrim are in [this paper](https://arxiv.org/abs/2302.08370).
 
 [^4]: This idea is not new, here's a dedicated [research paper](https://www.mdpi.com/2304-6775/6/3/38) about it.

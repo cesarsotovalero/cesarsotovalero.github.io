@@ -1,5 +1,5 @@
 ---
-permalink: mining-software-repositories-resources.html
+permalink: mining-software-repositories-resources
 layout: page
 title: Mining software repositories
 subtitle: List of resources
@@ -10,7 +10,7 @@ image: ../img/pages/software-debloating-papers/debloating.png
 ---
 
 <!--
-> "Mining software repositories is an increasingly popular and important area of software engineering research aimed at retrieving, integrating, and analyzing data available in various kinds of software repositories" 
+> "Mining software repositories is an increasingly popular and important area of software engineering research aimed at retrieving, integrating, and analyzing data available in various kinds of software repositories"
 > *― [Massimiliano Di Penta](https://scholar.google.com/citations?user=j6ucyOAAAAAJ&hl=en)*
 -->
 

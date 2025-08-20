@@ -1,5 +1,5 @@
 ---
-permalink: talks.html
+permalink: talks
 layout: page
 title: Talks
 description: Talks and presentations by César Soto Valero
@@ -11,7 +11,7 @@ published: true
 
 I've given talks at academic and industry conferences, workshops, and similar events.
 
-If you want to invite me to speak at your event, please [read this](./talks/invite-me.html).
+If you want to invite me to speak at your event, please [read this](./talks/invite-me).
 
 Below is a non-exhaustive list of my talks in reverse chronological order.
 
@@ -70,7 +70,7 @@ Below is a non-exhaustive list of my talks in reverse chronological order.
 - **Taming Bloated Software Dependencies**. Presented at [SL](https://sl.se/) Headquarter, Stockholm, November 2019. [Slides](https://docs.google.com/presentation/d/1C_-0rQHYvuz7RqPj0dlNhUkjYX1lm9y6gBRri4BTfxk/edit?usp=sharing)
 - **WASP Presentation**. Presented at _Nanyang Technological University_, Singapore, October 2019. [Slides](https://docs.google.com/presentation/d/1-B3YfX5xulYgq30IVhv0bLwPHFrtbaRbzZu61TA_U2k/edit?usp=sharing#slide=id.g655fad9d75_6_147)
 - **Studying Bloated Dependencies in the Maven Ecosystem**. Poster presented during _CASTOR Software Days_, KTH, Sweden, October 2019. [Slides](../files/posters/Castor-Software-Days-WASP-Poster.pdf)
-- **The Emergence of Software Diversity in Maven Central**. Presented at _16th International Conference on Mining Software Repositories_ (MSR), Montreal, Canada, May 2019. [:globe_with_meridians: Slides](https://dl.serveur-du-placard.ml/these/reveal.js-3.7.0/presentations/MSR2.html)
+- **The Emergence of Software Diversity in Maven Central**. Presented at _16th International Conference on Mining Software Repositories_ (MSR), Montreal, Canada, May 2019. [:globe_with_meridians: Slides](https://dl.serveur-du-placard.ml/these/reveal.js-3.7.0/presentations/MSR2)
 
 ## 2018
 

@@ -1,5 +1,5 @@
 ---
-permalink: software-debloating-tools.html
+permalink: software-debloating-tools
 layout: page
 title: Software debloating tools
 subtitle: Living tooling list
@@ -16,7 +16,7 @@ This is a living list of tools for program debloating and software specializatio
 - <a href="https://bit.ly/2WFALXf"><i class="fab fa-github"></i></a> [Slicer4J](https://github.com/resess/Slicer4J) an accurate, low-overhead dynamic slicer for Java programs ([paper](https://people.ece.ubc.ca/mjulia/publications/Slicer4J_2021.pdf)).
 
 - <a href="https://bit.ly/2WFALXf"><i class="fab fa-github"></i></a> [BloatLibD](https://bit.ly/2WFALXfl) detects offuscated third-party libraries that are bloated using a Jar2vect model ([paper](https://www.scitepress.org/Papers/2021/104594/104594.pdf)).
-   
+
 - <a href="https://github.com/castor-software/jdbl"><i class="fab fa-github"></i></a> [JDBL](https://castor-software.github.io/jdbl) automatically removes unnecessary code from Java applications through dynamic analysis ([paper](https://arxiv.org/pdf/2008.08401.pdf)).
 
 - <a href="https://github.com/castor-software/depclean"><i class="fab fa-github"></i></a> [DepClean](https://github.com/castor-software/depclean) automatically detects and removes unused dependencies in Maven projects ([paper](https://link.springer.com/article/10.1007/s10664-020-09914-8)).
@@ -30,8 +30,8 @@ This is a living list of tools for program debloating and software specializatio
 - <a href="https://github.com/uber/piranha"><i class="fab fa-github"></i></a> [Piranha](https://github.com/uber/piranha) is a tool for refactoring code related to feature flag APIs  ([paper](https://dl.acm.org/doi/abs/10.1145/3377813.3381350)).
 
 - [JShrink](https://figshare.com/articles/software/JShrink_Artifact/12435542) is a Java shrinker ([paper](https://dl.acm.org/doi/pdf/10.1145/3368089.3409738)).
-  
-- [JShrink](http://www.e-t.com/jshrink.html) is a Java shrinker and obfuscator.
+
+- [JShrink](http://www.e-t.com/jshrink) is a Java shrinker and obfuscator.
 
 
 # Docker
@@ -43,7 +43,7 @@ This is a living list of tools for program debloating and software specializatio
 # C/C++
 
 - <a href="https://github.com/cxreet/razor"><i class="fab fa-github"></i></a> [RAZOR](https://github.com/cxreet/razor) is a framework for post-deployment software debloating ([paper](https://www.usenix.org/system/files/sec19-qian.pdf)).
-  
+
 - <a href="https://github.com/cxreet/Slimium"><i class="fab fa-github"></i></a> [Slimium](https://github.com/cxreet/Slimium) is a tool to debloat Chromium ([paper](https://dl.acm.org/doi/pdf/10.1145/3372297.3417866)).
 
 - [Nibbler](https://gitlab.com/brown-ssl/libfilter) is a tatic analysis tool to automatically find functions in the program and its shared library functions that are not used by the program. ([paper](https://dl.acm.org/doi/pdf/10.1145/3414997)).
@@ -65,7 +65,7 @@ This is a living list of tools for program debloating and software specializatio
 
 - <a href="https://github.com/strace/strace"><i class="fab fa-github"></i></a> [STrace](https://strace.io/)  A diagnostic, debugging and instructional userspace utility for Linux.
 
-- <a href="https://github.com/dkarv/jdcallgraph"><i class="fab fa-github"></i></a> [JDCallgraph](https://github.com/dkarv/jdcallgraph) Dynamic call graph generation for Java. 
+- <a href="https://github.com/dkarv/jdcallgraph"><i class="fab fa-github"></i></a> [JDCallgraph](https://github.com/dkarv/jdcallgraph) Dynamic call graph generation for Java.
 
 - <a href="https://github.com/jenkinsci/constant-pool-scanner"><i class="fab fa-github"></i></a> [constant-pool-scanner](https://github.com/jenkinsci/constant-pool-scanner) Simple utility to scan Java bytecode for class references in the constant pool.
 
@@ -73,12 +73,12 @@ This is a living list of tools for program debloating and software specializatio
 
 - <a href="https://github.com/axt/jvm-callgraph"><i class="fab fa-github"></i></a> [jvm-callgraph](https://github.com/axt/jvm-callgraph) Call graph generator for JVM bytecode.
 
-- <a href="https://github.com/aragozin/jvm-tools"><i class="fab fa-github"></i></a> [jvm-tools](https://github.com/aragozin/jvm-tools) Small set of tools for JVM troublshooting, monitoring and profiling. 
+- <a href="https://github.com/aragozin/jvm-tools"><i class="fab fa-github"></i></a> [jvm-tools](https://github.com/aragozin/jvm-tools) Small set of tools for JVM troublshooting, monitoring and profiling.
 
 - <a href="https://github.com/jon-bell/bytecode-examples"><i class="fab fa-github"></i></a> [bytecode-examples](https://github.com/jon-bell/bytecode-examples) Java Bytecode Engineering Examples & Tutorials.
 
 - <a href="https://github.com/jon-bell/maven-lifecycle-logger"><i class="fab fa-github"></i></a> [maven-lifecycle-logger](https://github.com/jon-bell/maven-lifecycle-logger) Logger to record maven lifecycle events and timing.
 
 - <a href="https://github.com/mihaip/dex-method-counts"><i class="fab fa-github"></i></a> [dex-method-counts](https://github.com/mihaip/dex-method-counts) Command-line tool to count per-package methods in Android .dex files.
-  
+
 - [DTrace](http://dtrace.org/guide/preface.html#preface) A comprehensive dynamic tracing framework

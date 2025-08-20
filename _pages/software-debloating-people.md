@@ -1,12 +1,12 @@
 ---
-permalink: software-debloating-people.html
+permalink: software-debloating-people
 layout: page
 title: Software Debloating People
 subtitle: A list
 description: People working actively on program debloating and software specialization.
 tags: debloating
 keywords: software debloating,living review,survey,software engineering
-image: ../img/pages/software-debloating-papers/debloating.png 
+image: ../img/pages/software-debloating-papers/debloating.png
 robots: noindex
 ---
 

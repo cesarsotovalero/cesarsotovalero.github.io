@@ -20,7 +20,7 @@ published: true
 
 The [Parkinson’s Law of Triviality](https://en.wikipedia.org/wiki/Law_of_triviality) is a real thing (more on this later).
 And for Computer Science researchers, it is part of everyday life.
-As [we know](./seven-reasons-to-go-for-a-phd-in-computer-science.html), research is a very time-consuming activity.
+As [we know](./blog/seven-reasons-to-go-for-a-phd-in-computer-science), research is a very time-consuming activity.
 There are uncertain tasks that typically take a lot ~~of time~~ to complete.
 This state of things often fuels procrastination and slows progress down to the minimum, making the research harder to complete.
 Certainty, researcher are always busy working hard, doing tasks, having meetings, creating reports, and looking at deadlines.
@@ -29,7 +29,7 @@ In this post, I will cover the repercussion of Parkinson’s Law for researchers
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/whitman.png alt:"Regardless complexity of the task, people are going to take all the time they can" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; Regardless of the task's complexity, people will take all the available time. Photo of a painting in <a href="https://goo.gl/maps/cGN5k72vforbXD2T6">ABF Stockholm</a>.
   </figcaption>
 </figure>
@@ -42,11 +42,11 @@ Parkinson's Law (also known as **bikeshedding**)[^1] states that **work expands 
 The term was coined as a metaphor by [Cyril Northcote Parkinson](https://en.wikipedia.org/wiki/C._Northcote_Parkinson)'s and stated in 1957.
 Parkinson's argues that people within an organization typically give disproportionate weight to trivial issues.
 For example, while it can be fun and engaging to discuss what the title of a paper should be (everyone has an opinion), this is a form of procrastination.
-Let me said again, our job as researchers is to produce [research artifacts](./how-do-i-track-the-progress-of-my-research-projects.html), not to generate never-ending discussion.
+Let me said again, our job as researchers is to produce [research artifacts](./blog/how-do-i-track-the-progress-of-my-research-projects), not to generate never-ending discussion.
 As [Marc Andreessen](https://en.wikipedia.org/wiki/Marc_Andreessen) wrote: “we will be judged by what we (and our code) have done, not the meta-discussion that went on around it.”
-So the next time you feel yourself getting drawn into a protracted “what name should it be” discussion, consider stop it, and see if you can produce some research artifact instead. 
+So the next time you feel yourself getting drawn into a protracted “what name should it be” discussion, consider stop it, and see if you can produce some research artifact instead.
 
-> “Work expands to fill the time available for its completion.” -- <cite>Parkinson’s Law</cite>
+> “Work expands to fill the time available for its completion.” ― <cite>Parkinson’s Law</cite>
 
 [//]: # (The book)
 {% badge /img/badges/parkinsons-law.webp 140 https://www.amazon.com/Parkinsons-Law-C-Northcote-Parkinson/dp/1034965395/ref=sr_1_1?crid=34XFGHKQTX2RL&keywords=Parkinson%27s+Law&qid=1660806033&s=books&sprefix=parkinson%27s+law%2Cstripbooks-intl-ship%2C154&sr=1-1 %}
@@ -58,7 +58,7 @@ At a higher level, this idea applies to many situations.
 For example, people's belongings expand to fill the house's space, and consumption level grows to drain their whole income.
 In the Computer Science world: the demand for computing power (from software) expands to fill the hardware capabilities available.
 
-> “The time spent on any item of the agenda will be in inverse proportion to the sum (of money) involved.” -- <cite>Corollary from Parkinson’s Law</cite>
+> “The time spent on any item of the agenda will be in inverse proportion to the sum (of money) involved.” ― <cite>Corollary from Parkinson’s Law</cite>
 
 Parkinson explains how committees spend their time when discussing budget matters.
 He points out an example in which a group of decision takers discusses the budget for a nuclear reactor.
@@ -76,7 +76,7 @@ The book goes far beyond its famous theorem, though.
 The author explains how to meet the most important people at a social gathering and why, as a matter of mathematical certainty, **the time spent debating an issue is inversely proportional to its objective importance**.
 Justly famous for over forty years, Parkinson's Law is a bracingly cynical primer on the reality of human organizations and an inoculation against the wilful optimism that we as humans become prone to.
 
-> “Politicians and taxpayers have assumed (with occasional phases of doubt) that a rising total in the number of civil servants must reflect a growing volume of work to be done. The fact is that the number of officials and the quantity of the work are not related to each other at all. The rise in the total of those employed is governed by Parkinson’s Law and would be much the same whether the volume of the work were to increase, diminish, or even disappear.” -- <cite>Parkinson’s book</cite>
+> “Politicians and taxpayers have assumed (with occasional phases of doubt) that a rising total in the number of civil servants must reflect a growing volume of work to be done. The fact is that the number of officials and the quantity of the work are not related to each other at all. The rise in the total of those employed is governed by Parkinson’s Law and would be much the same whether the volume of the work were to increase, diminish, or even disappear.” ― <cite>Parkinson’s book</cite>
 
 [//]: # (The developers' perspective)
 
@@ -84,7 +84,6 @@ In the Computer Science research arena, the fantasy of having infinite time for 
 The experimental protocol and software development will take the time allocated to it if it's realistic or be late if it's optimistic.
 Parkinson'sParkinson's law also operates with the cost in terms of human/hours of development.
 It usually ends up draining all the budget available.
-
 
 <aside class="quote">
     <em>“How does a project get to be a year behind schedule? One day at a time.”</em> ― <cite>Fred Brooks</cite>
@@ -101,7 +100,6 @@ As usual, a project is delivered when the slowest part of it is delivered.
 <aside class="quote">
     <em>“What is urgent is seldom important and what is important is seldom urgent.”</em> ― <cite>Dwight D. Eisenhower</cite>
 </aside>
-
 
 For researchers, the problem is spending disproportionate amounts of time discussing trivial parts of a research problem instead of focusing on more important aspects.
 Everyone who has spent some time in academia has seen this behavior in one form or another.
@@ -170,7 +168,7 @@ This will not save the researcher if the initial hypothesis is wrong.
 ```mermaid
 %%{init: {'theme':'base'}}%%
 flowchart TB;
-a(["Research Hypothesis"]) --> b["Need a Software Tool"] 
+a(["Research Hypothesis"]) --> b["Need a Software Tool"]
 b["Need a Software Tool"] --> c["Implement the Tool"]
 c["Implement the Tool"] --> q{Bikeshedding?}
 q -- Yes --> x["Optimize/Test/Improve the Tool"]
@@ -209,7 +207,7 @@ x["Meet With the Right People"] --> y["Understand the Problem"]
 y["Understand the Problem"] --> d["Propose Several Solutions"]
 d["Propose Several Solutions"] --> e["Discuss the Solutions"]
 e["Discuss the Solutions"] --> q{Bikeshedding?}
-q -- Yes --> x["Meet With the Right People"] 
+q -- Yes --> x["Meet With the Right People"]
 q -- No --> z["Pick a Solution"]
 z["Pick a Solution"] --> r(["Build and Test It"])
 ```
@@ -300,10 +298,10 @@ So, instead of finishing something next year, next month, or next week, remember
 
 # Further Reading
 
-- [:globe_with_meridians: The Original Parkinson’s Law and The Law of Triviality](https://fs.blog/parkinsons-law/)
-- [:globe_with_meridians: Bikeshedding and The Law of Triviality](https://alexkondov.com/what-is-bikeshedding/)
+- [:globe_with_meridians: The Original Parkinson’s Law and The Law of Triviality](https://fs.blog/parkinsons-law)
+- [:globe_with_meridians: Bikeshedding and The Law of Triviality](https://alexkondov.com/what-is-bikeshedding)
 - [:globe_with_meridians: Bikeshedding in Software Development](https://levelup.gitconnected.com/bikeshedding-in-software-development-b800fa97ddcd)
 
 # Footnotes
 
-[^1]: “Bikeshedding” is a notable phenomenon in the software development industry. It was popularized in the 90s by the Berkeley Software Distribution community. [Poul-Henning Kamp](https://en.wikipedia.org/wiki/Poul-Henning_Kamp) used bikeshedding as a metaphor indicating that one need not argue about every little thing just because one knows enough to do so. He introduced the reference of “what color to paint the shed?” via a rather lengthy and well-distributed [email rant](https://bikeshed.org/).
+[^1]: “Bikeshedding” is a notable phenomenon in the software development industry. It was popularized in the 90s by the Berkeley Software Distribution community. [Poul-Henning Kamp](https://en.wikipedia.org/wiki/Poul-Henning_Kamp) used bikeshedding as a metaphor indicating that one need not argue about every little thing just because one knows enough to do so. He introduced the reference of “what color to paint the shed?” via a rather lengthy and well-distributed [email rant](https://bikeshed.org).

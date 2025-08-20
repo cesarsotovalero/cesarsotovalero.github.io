@@ -51,7 +51,7 @@ Obviously, whenever there is a new technology, there is a wave of startups tryin
 Do you remember the blockchain hype 10 years ago?
 I can't forget about the many crypto millionaires that emerged from it (especially because I wasn't one of them).
 
-I'm now convinced that GenAI is a powerful tech (much broader than blockchain) that can [transform whole industries](https://www.cesarsotovalero.net/blog/surviving-the-ai-revolution-as-a-software-engineer.html) and create new new ones.
+I'm now convinced that GenAI is a powerful tech (much broader than blockchain) that can [transform whole industries](./blog/surviving-the-ai-revolution-as-a-software-engineer) and create new new ones.
 GenAI will first optimize existing processes and then transform them.
 First, everything related to handling paperwork and repetitive tasks is going to be completely automated (and that's actually good because these boring tasks were not meant for humans in the first place anyway).
 Second, GenAI creates new opportunities for everyone, including artists and creators, to express themselves in ways that were not possible before.
@@ -84,7 +84,7 @@ Below are three applications of GenAI today that I would like to see more of:
 
 1. **Personalized Financial Advisors:** Apps that analyze spending habits, investment opportunities, and financial health using AI are gold. These tools cater to the rising demand for financial literacy and can scale personalized advice to millions (i.e., tangible ROI for users). For example, [Wealthfront](https://www.wealthfront.com/)’s AI-driven financial planning features are transforming personal finance management.
 
-2. **Content Creation Tools:** GenAI is a boon for creators. Platforms that assist with scriptwriting, graphic design, or even video editing are gaining more and more traction because they save time, amplify human creativity, and have clear market demand. For example, [Adobe’s Firefly](https://www.adobe.com/products/firefly.html) enhances creativity by automating repetitive tasks.
+2. **Content Creation Tools:** GenAI is a boon for creators. Platforms that assist with scriptwriting, graphic design, or even video editing are gaining more and more traction because they save time, amplify human creativity, and have clear market demand. For example, [Adobe’s Firefly](https://www.adobe.com/products/firefly) enhances creativity by automating repetitive tasks.
 
 3. **AI in Healthcare:** There’s a growing emphasis on preventive health solutions that are scalable and cost-effective. Tools like AI-powered symptom checkers or personalized fitness coaches empower users to manage their health better. For example, [MyFitnessPal](https://www.myfitnesspal.com/) leverages AI for smarter diet recommendations.
 
@@ -166,6 +166,6 @@ You will never know until you try.
 - [:globe_with_meridians: Analytics Vidhya: Top 5 AI Failures](https://www.analyticsvidhya.com/blog/2023/01/top-5-failures-of-ai-till-date-reasons-solution/)
 - [:globe_with_meridians: Business Insider: Inside Forward’s Failure](https://www.businessinsider.com/healthcare-startup-forward-shutdown-carepod-adrian-aoun-2024-11)
 - [:globe_with_meridians: Selldone: Major Startup Failures 2024](https://selldone.com/blog/major-startup-failures-2024-824)
-- [:globe_with_meridians: Chip Huyen: Common pitfalls when building generative AI applications](https://huyenchip.com/2025/01/16/ai-engineering-pitfalls.html)
+- [:globe_with_meridians: Chip Huyen: Common pitfalls when building generative AI applications](https://huyenchip.com/2025/01/16/ai-engineering-pitfalls)
 - [:globe_with_meridians: Chip Huyen: List of Open Source LLM Tools](https://huyenchip.com/llama-police)
 - [:globe_with_meridians: 101 Real-World Generative AI Use Cases from Industry Leaders](https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders)

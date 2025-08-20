@@ -323,7 +323,7 @@ A GNN approach might catch a seemingly normal transaction if the card, device, o
 Several types of GNNs architectures have been used.
 Notably, [Graph Convolutional Networks](https://paperswithcode.com/method/gcn) (GCN), [GraphSAGE](https://neo4j.com/docs/graph-data-science/current/machine-learning/node-embeddings/graph-sage/), heterogeneous GNNs for multi-type node graphs, and even [Graph Transformers](https://paperswithcode.com/method/graph-transformer).
 
-A popular benchmark for GNNs is the [Elliptic dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset.html), a Bitcoin transaction graph where GNNs have been applied to identify illicit transactions by classifying nodes in a large transaction graph.
+A popular benchmark for GNNs is the [Elliptic dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset), a Bitcoin transaction graph where GNNs have been applied to identify illicit transactions by classifying nodes in a large transaction graph.
 GNNs have also been applied to credit card networks: e.g., researchers have built graphs linking credit card numbers, merchants, and phone numbers, and used a heterogeneous GNN to detect fraud cases involving synthetic identities and collusive merchants.[^3]
 
 ## Strengths
@@ -387,7 +387,7 @@ For example, fraud rings forming new connectivity patterns.
 
 Representative examples of graph-based fraud detection:
 
-* **Blockchain networks:** The [Elliptic Bitcoin Dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset.html) is a graph of 203,769 transactions (nodes) with known illicit vs. licit labels. GNNs models on this dataset achieved strong results, showing that analyzing the transaction network is effective for detecting illicit cryptocurrency flows.
+* **Blockchain networks:** The [Elliptic Bitcoin Dataset](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.EllipticBitcoinDataset) is a graph of 203,769 transactions (nodes) with known illicit vs. licit labels. GNNs models on this dataset achieved strong results, showing that analyzing the transaction network is effective for detecting illicit cryptocurrency flows.
 * **Credit card networks:** Researchers built a graph of credit card transaction and applied a GNNs which outperformed a baseline MLP by leveraging connections (e.g., card linked to a fraudulent merchant gives card a higher fraud probability).
 * **E-commerce networks:** Companies like Alibaba and PayPal have internal systems modeling user networks. For example, accounts connected via a shared device or IP can indicate [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack) or mule accounts. Graph algorithms identified clusters of accounts that share many attributes (forming fraud communities) which were then taken down as a whole.
 * **Telecom identity fraud:** Graphs connecting phone numbers, IDs, and addresses have been used to catch identity fraud rings. A famous case is detecting “bust-out fraud” in which a group of credit card accounts all max out and default: the accounts often share phone or address; linking them in a graph helps catch the ring before the bust-out completes.

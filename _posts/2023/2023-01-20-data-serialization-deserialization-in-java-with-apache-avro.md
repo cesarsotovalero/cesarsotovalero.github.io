@@ -19,22 +19,22 @@ published: true
 ---
 
 When working with data processing in Java, choosing the right file format for storing and transmitting the data is crucial.
-Each format (such as CSV, JSON, or Parquet) has its particular advantages and disadvantages, as they are specifically designed to cater to different use cases. 
-In this article, I'll focus on the AVRO file format provided by Apache Avro, a powerful data serialization framework widely used for streaming binary files. 
+Each format (such as CSV, JSON, or Parquet) has its particular advantages and disadvantages, as they are specifically designed to cater to different use cases.
+In this article, I'll focus on the AVRO file format provided by Apache Avro, a powerful data serialization framework widely used for streaming binary files.
 I'll cover the main features of Avro and why/when/how to use it for serialize and deserialize your data files in Java.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-01-20/sparrow.jpg alt: "Orchestration" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; Sometimes I'm so close of what I'm looking for, that I cannot see it. Photo of a sparrow sitting on a sculpture from one of my excursions to the island of <a href="https://goo.gl/maps/WWDDeAWextXzgaiw9">Sandhamn</a>, Stockholm 2023.
   </figcaption>
 </figure>
 
 # Introduction
 
-Different data formats excel in specific use cases, such as business intelligence, network communication, web applications, batch processing, or stream processing. 
+Different data formats excel in specific use cases, such as business intelligence, network communication, web applications, batch processing, or stream processing.
 Understanding their strengths and leveraging their specific features is essential when choosing one or the other.
-Making an informed decision is a major concern of developers, and of [software architects](../blog/what-does-it-take-to-become-a-software-architect.html) and data engineers in particular.
+Making an informed decision is a major concern of developers, and of [software architects](./blog/what-does-it-take-to-become-a-software-architect) and data engineers in particular.
 
 {% badge ../img/posts/2023/2023-01-20/apache-avro-logo-icon.png 140 https://avro.apache.org/ %}
 
@@ -55,29 +55,28 @@ The following table compares AVRO w.r.t the most popular data formats:
 | Parquet    |         text         |      yes      |           yes            |         yes          |      column      |     OLAP      |            yes            |     no     |    no     |                     Big Data and Business Intelligence                      |
 | ORC        |        binary        |      yes      |           yes            |          no          |      column      |     OLAP      |            yes            |     no     |    no     |                     Big Data and Business Intelligence                      |
 
-
 # Why using Apache Avro?
 
 <aside class="quote">
     <em>“A binary file is a computer file that is not a text file.”</em>
-    <cite><br> ― <a href="http://www.linfo.org/binary_file.html">The Linux Information Project</a></cite>
+    <cite><br> ― <a href="http://www.linfo.org/binary_file">The Linux Information Project</a></cite>
 </aside>
 
 The Avro data serialization system provides a rich data structures in a compact, fast, binary data format.
-It is used in popular big data frameworks such as [Spark](https://spark.apache.org/), [Kafka](https://kafka.apache.org/), and [Hadoop](https://hadoop.apache.org/).
-AVRO is a row-based, schema-based format that allows defining a data schema using JSON. 
+It is used in popular big data frameworks such as [Spark](https://spark.apache.org), [Kafka](https://kafka.apache.org), and [Hadoop](https://hadoop.apache.org).
+AVRO is a row-based, schema-based format that allows defining a data schema using JSON.
 In the case of Java, the schema can be compiled into Java classes that can be used to read and write AVRO binary data.
-This way, developers can confidently work with data in their applications, knowing that it aligns with the defined schema and can be accurately interpreted by data consumers. 
+This way, developers can confidently work with data in their applications, knowing that it aligns with the defined schema and can be accurately interpreted by data consumers.
 The use of a data schema improves data reliability, interoperability, and processing efficiency.
 
 Here are some advantages of using Avro instead of other data file formats:
- 
+
 - **Schema Enforcement:** Avro provides robust schema enforcement capabilities, ensuring data validity and facilitating seamless data integration and processing. Schemas can be associated with the data or provided separately, guaranteeing that the dataset adheres to the specified schema and giving additional information about its structure, types, and formats. Avro's schema enforcement eases encryption/decryption of content, enhancing data security and integrity during storage and transmission.
 
 - **Schema Evolution:** Avro supports schema evolution, which allows changing data schemas over time while maintaining backward compatibility. Developers can add, remove, or modify fields in the schema without requiring all consumers or producers to be updated simultaneously. This flexibility is especially useful in scenarios where different components of a system are developed and deployed independently.
 
 <aside class="quote">
-    <em>“In Avro, integers are encoded using a variable-length zig-zag coding, which is efficient in terms of storage; whereas String lengths are encoded as long, followed by that many bytes of UTF-8 encoded character data.”</em> 
+    <em>“In Avro, integers are encoded using a variable-length zig-zag coding, which is efficient in terms of storage; whereas String lengths are encoded as long, followed by that many bytes of UTF-8 encoded character data.”</em>
 </aside>
 
 - **Compact Binary Format:** Avro uses a compact binary encoding, which results in smaller file sizes compared to other formats like JSON or XML. This makes Avro an efficient choice for data storage and transmission, reducing storage costs and improving performance.
@@ -96,7 +95,7 @@ Here are some advantages of using Avro instead of other data file formats:
 
 # How does it work?
 
-Avro works well in architectures implementing the [Producer-Consumer pattern](../blog/the-producer-consumer-pattern-in-java-made-easy.html).
+Avro works well in architectures implementing the [Producer-Consumer pattern](./blog/the-producer-consumer-pattern-in-java-made-easy).
 The producer manipulates and writes data to a file, and the consumer reads data from the file.
 This is a common pattern in Big Data and Streaming applications.
 
@@ -116,8 +115,7 @@ t --> f[Producer]
 f --> a
 ```
 
-
-# Creating the Avro schema 
+# Creating the Avro schema
 
 Avro schemas are defined using JSON.
 They can be defined in a separate file or embedded in the code.
@@ -216,7 +214,7 @@ Figure 1 shows the class diagram for the `Person` class:
 [//]: # (Person.png)
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-01-20/Person.png alt:"Class diagram for an object generated with Apache Avro." %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     <b>Figure 1.</b> Class diagram of the <code>Person</code> object generated with Apache Avro.
   </figcaption>
 </figure>
@@ -226,7 +224,7 @@ Figure 2 shows the auto-generated class members in the `Person` class :
 [//]: # (Person-Builder.png)
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2023/2023-01-20/Person-Builder.png alt:"TODO" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     <b>Figure 2.</b> Class members of the <code>Person</code> object generated with Apache Avro.
   </figcaption>
 </figure>
@@ -326,7 +324,7 @@ By leveraging the benefits of Apache Avro, developers can streamline their data 
 
 - [CSV vs Parquet vs Avro: Choosing the Right Tool for the Right Job](https://medium.com/ssense-tech/csv-vs-parquet-vs-avro-choosing-the-right-tool-for-the-right-job-79c9f56914a8)
 - [Big Data File Formats](https://blog.clairvoyantsoft.com/big-data-file-formats-3fb659903271)
-- [Comparaison of different file formats in Big Data](https://www.adaltas.com/en/2020/07/23/benchmark-study-of-different-file-format/)
+- [Comparaison of different file formats in Big Data](https://www.adaltas.com/en/2020/07/23/benchmark-study-of-different-file-format)
 
 # Footnotes
 

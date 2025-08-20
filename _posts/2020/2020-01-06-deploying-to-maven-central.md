@@ -17,11 +17,11 @@ published: true
 
 Maven Central is the de-facto repository for hosting software artifacts that compile to the JVM.
 It is one of the world’s largest and oldest archives of software libraries.
-In this post, I'll describe the process of releasing a new artifact in Maven Central following a step-by-step approach. 
+In this post, I'll describe the process of releasing a new artifact in Maven Central following a step-by-step approach.
 
 <figure class="jb_picture">
 {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2020/mdg.png alt: "Excerpt of 1% of the whole graph of Maven artifacts" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
 &#169; Excerpt of 1% of the Maven Dependency Graph of software artifacts. <a href="https://dl.acm.org/doi/10.1109/MSR.2019.00060">Source</a>.
 </figcaption>
 </figure>
@@ -33,7 +33,7 @@ First, you need to create a JIRA account and submit a ticket there requesting fo
 1.  [Create a JIRA account](https://issues.sonatype.org/secure/Signup!default.jspa)
 2.  [Create a New Project ticket](https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134)
 
-A staging repository is already configured for the requested GroupId, you need to find someone with a deployer role that comments on the ticket to verify your request. 
+A staging repository is already configured for the requested GroupId, you need to find someone with a deployer role that comments on the ticket to verify your request.
 Below is an example of a ticket that I created requesting a repository for the namespace `se.kth.castor`
 
 ![](../../img/posts/2020/sonatype_screeshot.png)
@@ -42,16 +42,16 @@ The ticked review is a manual process, it normally takes less than 2 business da
 
 # Configuring the POM
 
-After the approval of the ticket, you need to add additional information to the POM of the Maven project or module to be deployed. Follow the steps below exactly as they are. 
+After the approval of the ticket, you need to add additional information to the POM of the Maven project or module to be deployed. Follow the steps below exactly as they are.
 
-- Choose appropriate coordinates as explained [here](https://central.sonatype.org/pages/choosing-your-coordinates.html):
+- Choose appropriate coordinates as explained [here](https://central.sonatype.org/pages/choosing-your-coordinates):
 
 {% highlight xml linenos %}
 <groupId>com.example.applications</groupId>
 <artifactId>example-application</artifactId>
 <version>1.4.7</version>
 {% endhighlight %}
- 
+
 - Add your project name, description, and URL:
 
 {% highlight xml linenos %}
@@ -122,7 +122,7 @@ After the approval of the ticket, you need to add additional information to the 
 {% endhighlight %}
 
 - Add javadoc and sources attachments using the `maven-javadoc-plugin` and  `maven-source-plugin` :
- 
+
 {% highlight xml linenos %}
 <build>
   <plugins>
@@ -157,7 +157,7 @@ After the approval of the ticket, you need to add additional information to the 
 {% endhighlight %}
 
 - Add GPG signed components using the `maven-gpg-plugin`:
- 
+
 {% highlight xml linenos %}
 <build>
   <plugins>
@@ -179,7 +179,7 @@ After the approval of the ticket, you need to add additional information to the 
 </build>
 {% endhighlight %}
 
-- Follow [these instructions](https://central.sonatype.org/pages/working-with-pgp-signatures.html) to encrypt your artifact with [gpg2](https://linux.die.net/man/1/gpg2) and distribute your public key to a key server (e.g., [http://keys.gnupg.net](http://keys.gnupg.net)). Do not forget to choose a passphrase to protect your secret key. Then add your gpg credentials with your passphrase to your Maven`settings.xml` file locally and use the [Sonatype Nexus repository manager](https://oss.sonatype.org/) as the server :
+- Follow [these instructions](https://central.sonatype.org/pages/working-with-pgp-signatures) to encrypt your artifact with [gpg2](https://linux.die.net/man/1/gpg2) and distribute your public key to a key server (e.g., [http://keys.gnupg.net](http://keys.gnupg.net)). Do not forget to choose a passphrase to protect your secret key. Then add your gpg credentials with your passphrase to your Maven`settings.xml` file locally and use the [Sonatype Nexus repository manager](https://oss.sonatype.org/) as the server :
 
 {% highlight xml linenos %}
 <settings>
@@ -198,7 +198,7 @@ After the approval of the ticket, you need to add additional information to the 
 </settings>
 
 <servers>
-  <server> 
+  <server>
     <id>ossrh</id>
     <username>the_user_name</username>
     <password>the_password</password>
@@ -240,6 +240,6 @@ If you have any issue, let me know in the comments below. Happy deploying  :smil
 
 # References
 
-- [Apache Maven Official Instructions](https://maven.apache.org/repository/guide-central-repository-upload.html)
-- [OSSRH Guide](https://central.sonatype.org/pages/ossrh-guide.html)
+- [Apache Maven Official Instructions](https://maven.apache.org/repository/guide-central-repository-upload)
+- [OSSRH Guide](https://central.sonatype.org/pages/ossrh-guide)
 - [Tutorial on YouTube](https://www.youtube.com/watch?v=bxP9IuJbcDQ)

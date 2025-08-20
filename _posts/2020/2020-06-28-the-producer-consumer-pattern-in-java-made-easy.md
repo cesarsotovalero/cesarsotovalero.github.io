@@ -19,9 +19,9 @@ I see the usage of a recurring handy pattern for doing data collection and analy
 
 > “A `BlockingQueue` is a queue that additionally supports operations that wait for the queue to become non-empty when retrieving an element, and wait for space to become available in the queue when storing an element.”
 
-We have used this the Producer-Consumer pattern successfully to collect million of artifacts from Maven Central and storing them in a graph database. We have published our research tool, [maven-miner](https://github.com/diverse-project/maven-miner), and the collected data in a [research paper](https://ieeexplore.ieee.org/document/8816814). For this paper, we used [RabbitMQ](https://www.rabbitmq.com/) for message querying. In this post, I'll explain a more straightforward way to implement this pattern in Java using the [`BlockingQueue`](https://docs.oracle.com/javase/8/docs/api/?java/util/concurrent/BlockingQueue.html) data structure. The example is inspired by the excellent *Advanced Java Development* course by Ken Kousen. 
- 
-# The Item 
+We have used this the Producer-Consumer pattern successfully to collect million of artifacts from Maven Central and storing them in a graph database. We have published our research tool, [maven-miner](https://github.com/diverse-project/maven-miner), and the collected data in a [research paper](https://ieeexplore.ieee.org/document/8816814). For this paper, we used [RabbitMQ](https://www.rabbitmq.com/) for message querying. In this post, I'll explain a more straightforward way to implement this pattern in Java using the [`BlockingQueue`](https://docs.oracle.com/javase/8/docs/api/?java/util/concurrent/BlockingQueue) data structure. The example is inspired by the excellent *Advanced Java Development* course by Ken Kousen.
+
+# The Item
 
 Let us start with POJO called `Item`, which represent the object that we want to collect and process. Items are going to be produced and consumed by the `Producer` and `Consumer` classes, respectively.
 
@@ -111,7 +111,7 @@ public class Consumer implements Runnable {
 
 # The Client
 
-The `Client` class instantiates two `Producer`, two `Consumer`, and a `LinkedBlockingQueue` object. It makes a` FixedThreadPool`, which uses the `availableProcessors()` utility to use exactly the available processors in the system. Finally, the producers and consumers are executed. 
+The `Client` class instantiates two `Producer`, two `Consumer`, and a `LinkedBlockingQueue` object. It makes a` FixedThreadPool`, which uses the `availableProcessors()` utility to use exactly the available processors in the system. Finally, the producers and consumers are executed.
 
 
 {% highlight java linenos %}
@@ -134,7 +134,7 @@ public class ProducerConsumerDemo {
 }
 {% endhighlight %}
 
-Here's an except of the output: 
+Here's an except of the output:
 
 {% highlight text %}
 Producer 2 produced 0

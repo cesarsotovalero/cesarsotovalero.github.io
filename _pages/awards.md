@@ -1,5 +1,5 @@
 ---
-permalink: awards.html
+permalink: awards
 layout: page
 title: Awards
 subtitle: 🏆
@@ -15,7 +15,7 @@ published: true
 - [MSR Data Showcase Award](../files/certificates/MSR_Data_Showcase_Award_2019.pdf), _16th International Conference on Mining Software Repositories_, 2019
 - [WASP Certificate of Excellence](../files/certificates/WASP_award.pdf), _WASP Autonomous Systems II_, 2019
 - [:globe_with_meridians: PhD Scholarship](https://wasp-sweden.org/), _Awarded a Wallenberg AI, Autonomous Systems and Software Program PhD scholarship_, 2018
-- [<i class="fab fa-github"></i> 5st Place at CodRep: Machine Learning on Source Code Competition](https://github.com/ASSERT-KTH/CodRep#codrep-leaderboard-on-line-number-prediction), here's my [Tool](https://github.com/cesarsotovalero/CodRep-submission), 2018 
+- [<i class="fab fa-github"></i> 5st Place at CodRep: Machine Learning on Source Code Competition](https://github.com/ASSERT-KTH/CodRep#codrep-leaderboard-on-line-number-prediction), here's my [Tool](https://github.com/cesarsotovalero/CodRep-submission), 2018
 
 # Certificates
 
@@ -28,7 +28,7 @@ published: true
 - [**MSc in Computer Science**](../files/certificates/MSc_Degree_(certified)_eng.pdf), _Universidad Central "Marta Abreu" de Las Villas_, Cuba, 2016
 - [**BSc in Computer Science**](../files/certificates/BSc_Degree_Original.pdf), _Universidad Central "Marta Abreu" de Las Villas_, Cuba, 2013
 
---- 
+---
 
 # Gallery
 

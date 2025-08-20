@@ -25,22 +25,22 @@ published: true
 
 In academic circles, [peer reviewing](https://en.wikipedia.org/wiki/Scholarly_peer_review) is the act of assessing the quality of a research paper to determine if it's worth to be published in a journal or conference.
 Peer reviewers are supposed to be (human) experts in the field, and their opinions have direct influence on the final decision taken by the associated editor regarding accepting or rejecting a paper submission.
-During the last years, I've peer-reviewed [a good number](../service.html) of research papers submitted to top journals and conferences, mostly within the fields of Software Engineering, Applied Machine Learning, and Sports Sciences.
-As a PhD student, I've also played on the other side of the fence, submitting [my own papers](../publications.html) to similar venues and getting all kinds of positive and negative peer reviews in response.
+During the last years, I've peer-reviewed [a good number](./service) of research papers submitted to top journals and conferences, mostly within the fields of Software Engineering, Applied Machine Learning, and Sports Sciences.
+As a PhD student, I've also played on the other side of the fence, submitting [my own papers](./publications) to similar venues and getting all kinds of positive and negative peer reviews in response.
 I think this dual perspective has contributed to broadening my understanding of the peer review process.
 In hindsight, it's clear to me that there are many challenges to overcome in order to improve peer reviews for the benefit of the academic community.
 Specifically, I have noticed a large variance in the quality of many of the reviews I've had the chance to see.[^4]
-In this post, I share my personal approach when peer-reviewing research papers. 
+In this post, I share my personal approach when peer-reviewing research papers.
 I share my reviewer's flow, which I've polished over time in order to deliver a decent peer review within a reasonable amount of time, i.e., my goal is doing it fast and effectively.
 Whether you're new to peer reviewing or looking to refine your own approach, you'll ~~probably~~ find some practical tips on this article.
 Let's provide good feedback to authors so that they could enhance the quality of their papers!
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2023/2023-11-12/dansmuseet.jpg alt: "Reviews are a matter of personal taste." %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; Beauty and tidiness have always been a matter of personal taste. Photo taken at the <a href="https://maps.app.goo.gl/k3aDzTu7VhFGibBG9">Dansmuseet</a>, in Stockholm, Sweden.
   </figcaption>
-</figure> 
+</figure>
 
 # Understanding
 
@@ -77,7 +77,7 @@ Next, I describe what I look for in each of them.
 ## Quick Review
 
 <aside class="quote">
-    <em>“I spot a poorly written paper in 5 minutes or less. When this happens, I know the paper has really no chances to get accepted.”</em> 
+    <em>“I spot a poorly written paper in 5 minutes or less. When this happens, I know the paper has really no chances to get accepted.”</em>
 </aside>
 
 First, I print the paper just to confirm that it looks good.
@@ -106,7 +106,7 @@ In any case, a more detailed review follows.
 ## Detailed Review
 
 <aside class="quote">
-    <em>“I think the key to make good review is asking direct questions to the authors regarding specific sections of the paper.”</em> 
+    <em>“I think the key to make good review is asking direct questions to the authors regarding specific sections of the paper.”</em>
 </aside>
 
 The detailed review is the most time-consuming part of the process.
@@ -126,10 +126,10 @@ I use the following checklist to guide my review:
 If I can check all the boxes, then I would most likely recommend the paper for acceptance.
 Otherwise, I become very skeptical and start thinking about the arguments to justify my recommendation to reject it.
 
-# Bad vs. Good Reviews 
+# Bad vs. Good Reviews
 
 <aside class="quote">
-    <em>“I've observed that, in general, the better the journal, the better the submitted papers.”</em> 
+    <em>“I've observed that, in general, the better the journal, the better the submitted papers.”</em>
 </aside>
 
 I've seen a ton of bad reviews and a few good ones.
@@ -146,12 +146,12 @@ Here are some (not so obvious) characteristics of bad reviews:
 - The review clearly shows that the reviewer **didn't read** the paper at all. It throws a general chunk of generic text (this happens more often than you think).
 - The review is negatively **opinionated**. E.g., "_The paper is not good. The authors should have done a better job._" How? What specifically should they have done differently?
 - The review is **vague** and doesn't help to make the paper any better. E.g., "_Figure 3 is not clear._" Why? How can it be improved?
-- THe review is destructive instead of supportive. E.g., "_This paper makes no sense_." 
- 
+- THe review is destructive instead of supportive. E.g., "_This paper makes no sense_."
+
 Here's a **real example** of a bad review from one of the co-reviewers of one of the papers I've reviewed:
 
 ```plaintext
-Reviewer 1: 
+Reviewer 1:
 The article needs significant improvements in its writing,
 as it is more similar to a technical report than a scientific article.
 The article is written very superficially, with sections written in a
@@ -184,7 +184,7 @@ So I recommend using Google Docs or similar instead of PDFs to write your review
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "1px solid #808080" path: img/posts/2023/2023-11-12/jss-reviewer-portal.png alt: "Reviewer's form for the Journal of Systems and Software" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     Figure 1. Screenshot of the reviewer's form for the <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software">Journal of Systems and Software</a>.
   </figcaption>
 </figure>
@@ -243,7 +243,7 @@ accept, accept after minor revisions, major revision, or reject.
 
 Example:
 The paper is a valuable addition to the field of [field],
-with potential implications for [applications]. 
+with potential implications for [applications].
 I recommend acceptance after moderate revisions as outlined above.
 ```
 
@@ -253,7 +253,7 @@ When peer reviewing, I believe it is essential to provide balanced feedback by o
 It's also important to begin by recognizing the strengths of the work, which motivate the authors.
 I always make an effort to double-check that my feedback is clear and objective, backing points with citations and tyring to remain impartial.
 I treat the authors as "you" in my review, and I write in first-person pronoun "I" to make it more personal.
-This makes clear that I'm not a GPT chatbot but "an opinionated person" with a taste for good science. 
+This makes clear that I'm not a GPT chatbot but "an opinionated person" with a taste for good science.
 
 # Common Reviewer's Phrases (Bonus Section)
 
@@ -262,7 +262,7 @@ Here are some common phrases that I use when looking for nitpicking issues:
 - The sentence `X` is **cryptic**.
 - The paragraph `X` is **redundant**.
 - The word `X` is **unnecessary**.
-- The concept`X` is used before being clearly **introduced**. 
+- The concept`X` is used before being clearly **introduced**.
 - The paragraph `X` is **orphan**, merge with the previous one or extend.
 - The arguments in paragraph `X` are quite **subjective**, specify.
 - Add more concrete **examples** for `X` and `Y`.
@@ -282,7 +282,7 @@ In essence, the quality of peer review lies in balancing rigorous critique with 
 # External Resources
 
 - [:globe_with_meridians: Peer fortress: The scientific battlefield](https://matt.might.net/articles/peer-fortress/)
-- [:globe_with_meridians: Review a Research Paper: Constructive Critique in Five Steps](https://www.yegor256.com/2023/12/17/how-to-review-research-paper.html)
+- [:globe_with_meridians: Review a Research Paper: Constructive Critique in Five Steps](https://www.yegor256.com/2023/12/17/how-to-review-research-paper)
 - [:globe_with_meridians: How to Write a Peer Review: 12 things you need to know](https://clarivate.com/blog/how-to-write-a-peer-review-12-things-you-need-to-know/)
 
 # Footnotes

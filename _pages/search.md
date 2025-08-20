@@ -1,5 +1,5 @@
 ---
-permalink: search.html
+permalink: search
 layout: page
 title: Search
 description: Search this site

@@ -20,7 +20,7 @@ published: true
 
 Inversion of Control (IoC) is a programming principle.
 The idea of IoC is delegating the control of parts of our application to a framework that initializes some specific task for us.
-Dependency injection (DI) is a popular [design pattern](https://martinfowler.com/articles/injection.html) that applies the IoC principle.
+Dependency injection (DI) is a popular [design pattern](https://martinfowler.com/articles/injection) that applies the IoC principle.
 This pattern was made popular by web frameworks, and today it is widely adopted in enterprise Java applications.
 The DI pattern initializes and wires components from different application layers automatically.
 The first time I saw this pattern was in the Spring Framework.
@@ -30,7 +30,7 @@ These concepts are the backbone of modern enterprise Java frameworks.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/universitetet_small.jpg alt:"TODO" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; Creation is all about assembling and initializing existing knowledge. Photo taken at <a href="https://goo.gl/maps/jUmq4jTTe2P4go4g6">Universitetet</a>.
   </figcaption>
 </figure>
@@ -43,7 +43,6 @@ This allows us to avoid dealing with the data directly through **explicit object
 Instead, we deal with object composition.
 
 The following analogy explains the concept:
-
 
 > “Let's say that we have a meeting in a hotel.
 We have invited many people, so we have left out many jugs of water and many plastic cups.
@@ -72,21 +71,20 @@ In contrast, another way is to use the IoC principle.
 In this case, we initialize the `TextEditor` object with the desired `SpellChecker`.
 Thus, the `checkSpelling` task is delegated to the `TextEditor` object, which uses the `SpellChecker` object within the `getText()` method.
 
-
 {% highlight java linenos %}
 SpellChecker sc = new SpellChecker();
 TextEditor te = new TextEditor(sc);
 te.getText();
 {% endhighlight %}
 
-A more elegant way would be to use [object composition](https://en.wikipedia.org/wiki/Object_composition) to retrieve the text. 
+A more elegant way would be to use [object composition](https://en.wikipedia.org/wiki/Object_composition) to retrieve the text.
 Below is an example:
 
 {% highlight java linenos %}
 new SpellCheckedText(
   new TextEditor(
     new SpellChecker()
-  ) 
+  )
 );
 {% endhighlight %}
 
@@ -173,7 +171,7 @@ Injector inj = Guice.createInjector(
 );
 {% endhighlight %}
 
-As you can see, we do not need to use the `new` operator to instantiate `TextEditor` like we did before. 
+As you can see, we do not need to use the `new` operator to instantiate `TextEditor` like we did before.
 Instead, we should use the injector we just created.
 Here is an example of the application:
 
@@ -187,13 +185,13 @@ public class App {
 }
 {% endhighlight %}
 
-Google Guice automatically finds out that to instantiate a `TextEditor` it has to provide an argument for its constructor. 
+Google Guice automatically finds out that to instantiate a `TextEditor` it has to provide an argument for its constructor.
 For this, it uses an instance of class `SpanishSpellChecker`, which we instantiated in the injector.
 The goal of Guice is alleviating the need for factories and the use of `new` in your Java code.
 
 # DIC in Action: The Spring Framework
 
-[Spring](https://spring.io/) is currently the most popular Java web framework.
+[Spring](https://spring.io) is currently the most popular Java web framework.
 It heavily relies on the DI  pattern to wire up objects.
 The main advantage of using Spring is separating the object initialization and data wiring from the application business logic.
 In other words, Spring  “injects” objects into other objects or “dependencies.”
@@ -292,8 +290,8 @@ This makes it easier for developers to kickstart a project and swap the scope an
 
 # References
 
-- [Inversion of Control Containers and the Dependency Injection Pattern](https://martinfowler.com/articles/injection.html)
-- [How Does Inversion of Control Really Work?](https://www.yegor256.com/2017/05/10/inversion-of-control.html)
+- [Inversion of Control Containers and the Dependency Injection Pattern](https://martinfowler.com/articles/injection)
+- [How Does Inversion of Control Really Work?](https://www.yegor256.com/2017/05/10/inversion-of-control)
 - [Intro to Inversion of Control and Dependency Injection with Spring](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring)
 
 # Footnotes

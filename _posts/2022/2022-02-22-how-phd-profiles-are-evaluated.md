@@ -9,7 +9,7 @@ keywords:
   - academia,
   - computer science,
   - research qualification,
-  - research bibliometrics 
+  - research bibliometrics
 image: ../img/posts/2022/red_paint_cover.jpg
 share-img: ../img/posts/2022/red_paint_cover.jpg
 show-avatar: false
@@ -17,7 +17,7 @@ toc: true
 date: 2022/02/22
 author: cesarsotovalero
 published: true
---- 
+---
 
 Let's say that you just finished your PhD and have decided to stay in academia.[^1]
 Typically, the next move is applying for a ~~temporally~~ position as PostDoc at some good university.
@@ -33,7 +33,7 @@ Let's be prepared!
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/red_paint.jpg alt:"The academic arenas, where researchers give it all" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; The academic arenas, where <del>gladiators</del> researchers give it all. Photo from <a href="https://goo.gl/maps/j8GC4KtHEXoKxLpB8">Tekniska Högskolan station</a>.
   </figcaption>
 </figure>
@@ -75,7 +75,7 @@ For example, if you are into Theoretical Computer Science, then getting a large 
 This is true, especially when compared to other research fields, such as Machine Learning, where there is more opportunity to develop so-called “multidisciplinary research,” leading to more publications.
 
 The performance of researchers is tough to measure and evaluate.
-Having less publications does not necessarily mean that one is bad researcher, neither having a lot of publications is an indicator of excellence. 
+Having less publications does not necessarily mean that one is bad researcher, neither having a lot of publications is an indicator of excellence.
 Measuring performance of researchers an inherent problem of academia, and there is nothing we can do about it.
 
 Overall, most people agree that success in academia is mostly based on **prestige** and **networking**.
@@ -92,7 +92,7 @@ On the other hand, networking determines the chances to get well positioned by m
 These people are the already established professors you may contact in the future when seeking for academic job opportunities.
 Networking is typically performed at conferences and scientific events, when delivering technical talks, or by visiting other research departments.
 
-# Getting Prepared 
+# Getting Prepared
 
 There are no workarounds for getting tenured when choosing the academic career path.
 You have to go through the well-known process by working hard and being consistent.
@@ -101,8 +101,8 @@ There are three major evaluation layers, and the goal should be to pass them as 
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/bart_phd.png alt:"A PhD is not enough to become a university professor." %}
-  <figcaption class="stroke"> 
-    &#169; A PhD is not enough dude. Image created with <a href="https://www.ranzey.com/generators/bart/index.html">Ranzey's image generator</a>.
+  <figcaption class="stroke">
+    &#169; A PhD is not enough dude. Image created with <a href="https://www.ranzey.com/generators/bart/index">Ranzey's image generator</a>.
   </figcaption>
 </figure>
 
@@ -129,11 +129,13 @@ The evaluation of PostDoc candidates is typically done by experienced professors
 Look at some examples as follows.
 
 Qualification for Associate Professor in France:
+
 - Review done by the [CNU](https://conseil-national-des-universites.fr/cnu/#/) (Conseil national des universités), a national consultative and decision-making body (divided into 78 sections (Computer Science, Math, Philosophy, etc.)
 - Each section is composed of Associate Professors from French universities.
 - The Computer Science section currently has 97 members.
 
 Qualification for Associate Professor in Spain:
+
 - Review by governmental agencies: The National Agency for Quality Assessment ([ANECA](http://www.aneca.es/)) and regionals.
 - ANECA is an autonomous body whose aim is to provide external quality assurance for the Spanish Higher Education System and to contribute to its constant improvement through evaluation, certification and accreditation.
 - The European Association for Quality Assurance in Higher Education ([ENQA](https://www.enqa.eu/)).
@@ -145,11 +147,13 @@ You also need proof of your ability to attack funding from public institutions (
 Here are some examples of must-needed qualifications.
 
 Qualification for Tenured Professor in France:
+
 - Candidate sends the CV.
 - CNU Section computer science assigns reviewers.
 - The reviewers judge the quality of the PhD thesis, publications, and the number of teaching duties done.
 
 Qualification for Tenured Professor in Sweden:
+
 - [UKÄ](https://www.uka.se/) (Swedish Higher Education Authority) is an independent government agency in Sweden. Its operations comprise three main areas:
 - Quality assurance of higher education and research, and appraisal of the degree-awarding powers of public-sector higher education institutions.
 - Legal supervision of higher education.
@@ -171,8 +175,6 @@ I want to mention that researcher is somebody who actively does research, includ
 - _A PhD working in R&D at a company_
 
 Therefore, if you have a strong passion for research and don't like teaching, then there are other ways to be a researcher outside academia.
-
-
 
 # Conclusion
 
