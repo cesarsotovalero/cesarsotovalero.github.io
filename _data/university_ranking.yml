@@ -1,4 +1,5 @@
 kth:
-  name: "KTH Royal Institute of Technology"
-  rank: 78
-  source: "Times Higher Education"
+  name: KTH Royal Institute of Technology
+  rank: 039
+  source: QS World University Rankings
+  source_url: https://www.topuniversities.com/universities/kth-royal-institute-technology
