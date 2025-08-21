@@ -50,7 +50,7 @@ published: true
       {% endif %}
     {% endfor %}
     <h3 id="{{ range }}" class="linked-section">
-      <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;({{ posts_count }})
+      <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;({{ posts_count }} posts)
     </h3>
     <div class="post-list">
       {% for post in sorted_posts %}

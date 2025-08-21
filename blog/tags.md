@@ -51,7 +51,7 @@ description: "All the tags used in the blog posts written by Cesar Soto Valero"
 {%- for tag in tags_list -%}
     <h3 id="{{- tag -}}" class="linked-section">
         <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}} posts)
     </h3>
     <div class="post-list">
         {%- for post in site.tags[tag] -%}

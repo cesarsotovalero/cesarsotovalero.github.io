@@ -49,7 +49,7 @@ published: true
      {% endfor %}
      <h3 id="{{- year -}}" class="linked-section">
           <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-          &nbsp;{{- year -}}&nbsp;({{ videos_count }})
+          &nbsp;{{- year -}}&nbsp;({{ videos_count }} videos)
      </h3>
      <div class="post-list">
           {% for video in site.data.youtube-videos %}

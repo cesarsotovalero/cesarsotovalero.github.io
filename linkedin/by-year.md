@@ -48,7 +48,7 @@ published: true
      {% endfor %}
      <h3 id="{{- year -}}" class="linked-section">
           <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-          &nbsp;{{- year -}}&nbsp;({{ posts_count }})
+          &nbsp;{{- year -}}&nbsp;({{ posts_count }} posts)
      </h3>
      <div class="post-list">
           {% for post in site.data.linkedin-posts.data.posts %}
