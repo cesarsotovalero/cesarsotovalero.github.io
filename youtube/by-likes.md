@@ -51,7 +51,7 @@ published: true
     {% assign idx = forloop.index0 %}
     {% assign filtered_videos = videos_by_range[idx] %}
     <h3 id="{{ range }}" class="linked-section">
-      <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;({{ filtered_videos.size } videos)
+      <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;({{ filtered_videos.size }} videos)
     </h3>
     <div class="video-list">
       {% for video in filtered_videos %}
