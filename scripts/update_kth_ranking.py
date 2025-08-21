@@ -1,8 +1,8 @@
 # update_ranking.py
 
 import requests
-from bs4 import BeautifulSoup
 import yaml
+from bs4 import BeautifulSoup
 
 # URL of the university ranking page
 url = "https://www.topuniversities.com/universities/kth-royal-institute-technology"
@@ -17,7 +17,12 @@ rank_tag = soup.find(
 )
 
 if rank_tag:
-    rank = rank_tag.find("span", class_="rank-hash").next_sibling.strip()
+    # Use CSS selector to find the span with 'rank-hash'
+    rank_span = rank_tag.select_one("span.rank-hash")
+    if rank_span and rank_span.next_sibling:
+        rank = str(rank_span.next_sibling).strip()
+    else:
+        rank = "N/A"
 
     # Update the YAML data file
     ranking_data = {
