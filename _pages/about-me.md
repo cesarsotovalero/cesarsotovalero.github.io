@@ -42,11 +42,9 @@ I've created [a few open-source projects](./software), some with 250+ <i class="
 
 I hold a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se) (graduated in 2023).[^4]
 
-My PhD was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin).
+My PhD work was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin).
 
 My PhD was about software debloating,[^1] here's [my PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
-
-**Cool Fact:** {% include university_ranking.html %}
 
 I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
 
