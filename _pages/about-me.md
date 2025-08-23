@@ -8,11 +8,9 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 {% include social.html type="page" %}
 
-[//]: # (Profile to view: https://www.zeileis.org/)
-
-[//]: # (<code style="text-align: center; font-family:jetbrains_monoregular, courier new, serif; font-size: 18px; font-weight: lighter">)
-
-[//]: # ( <span class="type" style="text-align: center"></span>)
+[//]: # "Profile to view: https://www.zeileis.org/"
+[//]: # '<code style="text-align: center; font-family:jetbrains_monoregular, courier new, serif; font-size: 18px; font-weight: lighter">'
+[//]: # ' <span class="type" style="text-align: center"></span>'
 
 # TL;DR
 
@@ -46,7 +44,9 @@ My PhD work was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry)
 
 My PhD was about software debloating,[^1] here's [my PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
 
-I also hold a [BSc](../../files/certificates/BSc_Degree_(certified)_eng.pdf) and [MSc](../../files/certificates/MSc_Degree_(certified)_eng.pdf) in Computer Science.
+**Cool Fact:** {% include university_ranking.html %}
+
+I also hold a [BSc](<../../files/certificates/BSc_Degree_(certified)_eng.pdf>) and [MSc](<../../files/certificates/MSc_Degree_(certified)_eng.pdf>) in Computer Science.
 
 Here's a list of [my completed courses](./courses) (inc. MOOCs).
 
@@ -190,7 +190,7 @@ form.wj-contact input[type="submit"]:active {
 
 <br>
 
-👉 If you are a MSc student or researcher, I'm always [open to collaborations](./collaborations).
+👉 Have insights or research ideas? Please reach out, I'm always [open to collaborations](./collaborations).
 
 <p class="post-meta" style="margin-top: 60px;">
    <i class="fas fa-user-edit"></i>
@@ -200,5 +200,4 @@ form.wj-contact input[type="submit"]:active {
 # Footnotes
 
 [^1]: For more on these topics, see [my living review of software debloating papers](./software-debloating-papers), or consult [my list of software debloating tools](./software-debloating-tools).
-
 [^4]: My PhD was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.
