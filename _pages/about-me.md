@@ -44,8 +44,6 @@ My PhD work was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry)
 
 My PhD was about software debloating,[^1] here's [my PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
 
-**Cool Fact:** {% include university_ranking.html %}
-
 I also hold a [BSc](<../../files/certificates/BSc_Degree_(certified)_eng.pdf>) and [MSc](<../../files/certificates/MSc_Degree_(certified)_eng.pdf>) in Computer Science.
 
 Here's a list of [my completed courses](./courses) (inc. MOOCs).
