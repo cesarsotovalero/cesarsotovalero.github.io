@@ -1,7 +1,7 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "2lYYGCWQ5pMWNpQ3DdSXBy1cDIM",
+    "etag": "ZZgpJCg1ak_BJNWXOjZ8D6megnU",
     "id": "3s7xjI3g73w",
     "snippet": {
       "publishedAt": "2024-12-29T17:00:04Z",
@@ -69,6 +69,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "How GPTs are Shaping our Perception of Truth",
         "description": "How are AI models shaping our perception of truth in a digital world? In this video, we dive deep into how LLMs like GPTs influence what we believe to be true and where the boundaries of AI’s “knowledge” really lie. We will see why these models are powerful yet fallible, and what you can do to critically engage with AI-generated information. From “hallucinations” to biases and crowd-consensus effects, this video explores the threats behind letting these models shape (and sometimes distort) our understanding of reality and truth.\n\n00:00 - From Google to AI answers \n01:14 - Why GPTs are reshaping truth\n03:37 - How GPTs seem “intelligent”\n09:02 - The unexpected biases of GPTs\n10:28 - The crowdsource effect\n13:18 - Epistemic trust and AI’s truth\n16:51 - Guardrails and limitations\n18:15 - The potential risks of GPTs\n19:37 - Practical insights\n\n📺 WATCH NEXT\n\nhttps://youtu.be/SQY2IED6vFQ\n\nhttps://youtu.be/kw7fvHf4rDw\n\n🌍 RELATED CONTENT\n\n→ The article in ACM Qeue: \"GPTs and Hallucination: Why do large language models hallucinate?\" 🌐 https://queue.acm.org/detail.cfm?id=3688007\n\n→ The related paper: \"The Hallucinations Leaderboard – An Open Effort to Measure Hallucinations in Large Language Models\" 🌐 https://arxiv.org/pdf/2404.05904\n\nWHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AITruth #GPTModels #ArtificialIntelligence #AIHallucinations #TrustInAI"
@@ -85,7 +86,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "397",
+      "viewCount": "398",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -93,7 +94,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "-T97pTxn_LOV1P3UpRCB0JSA1a4",
+    "etag": "1DOsQDylG9QNJN3GIu1Myj_6Kd0",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -151,6 +152,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "Overwhelmed as a Developer? Here are 7 Science-Backed Insights",
         "description": "Ever wondered why skilled software developers often feel overwhelmed despite working in a structured, high-paying industry? In this video, we explore 7 unique types of overwhelm developers face, such as constant interruptions, complex technical challenges, and high-pressure deadlines. By the end of this video, you will learn not only why developers experience these struggles, but also how is that some of them turn this kind of stress into a productivity booster. \n\n⏰ TIMESTAMPS\n\n0:00 - The hidden struggles of developers\n1:59 - Causes of overwhelm in tech\n5:30 - 1. Communication overwhelm\n7:06 - 2. Disturbance overwhelm\n8:57 - 3. Organizational overwhelm\n10:35 - 4. Variety overwhelm\n11:47 - 5. Technical overwhelm\n14:01 - 6. Temporal overwhelm\n15:25 - 7. Positive overwhelm\n23:00 - Takeaways\n\n📺 WATCH NEXT\n\n→ https://youtu.be/y0mztKEUwzw\n\n🌍 RELATED CONTENT\n\n→ Read the article \"Overwhelmed Software Developers\", published in IEEE Computer 🌐https://arxiv.org/pdf/2406.04057\n\nWHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my  experiences and provide science-based strategies and tools to help you become a well-grounded computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#SoftwareDevelopment #ProductivityTips #DeveloperStruggles #Overwhelm #TechIndustry"
@@ -175,7 +177,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "aVuUrMRmPb3KLglwYb9aKaRA-xo",
+    "etag": "tth9St08lOyA6WDocRlAtjvGDa8",
     "id": "SQY2IED6vFQ",
     "snippet": {
       "publishedAt": "2024-12-14T22:45:00Z",
@@ -234,6 +236,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "Embrace AI in your Career and Life (there isn’t another way)",
         "description": "The rise of Artificial Intelligence (AI) is more than a tech trend. It is reshaping industries, jobs, and our entire society. In this video, we dive into the real impacts of AI on our lives, career paths, and future. We’ll trace AI’s parallels with past technological revolutions, from the industrial age to the digital era, and examine what makes AI different. Could this finally be the tool to liberate us from the soul-crushing 9-to-5 jobs, or are we trading one set of chains for another?\n\n⏰ TIMESTAMPS\n\n00:00 - Is AI Really the Future?\n01:45 - The Mirage of Technological Salvation\n03:53 - The Unfulfilled Promise of Computers\n05:40 - AI's Impact on Jobs and Skills\n07:47 - The Economics of Labor in the Age of AI\n08:50 - Embracing AI: Shift Your Mindset\n11:46 - The Future of Coding and AI\n13:23 - The Exciting Potential of AI in Health, Climate, and More\n15:36 - Shaping the AI Revolution Responsibly\n\n📺 WATCH NEXT\n\n→  https://youtu.be/kw7fvHf4rDw\n\n🌍 RELATED RESOURCES\n\n→ The \"Stanford AI Index Report 2024\" https://aiindex.stanford.edu/report\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#artificialintelligence #futureofwork #technology #automation"
@@ -258,7 +261,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "670WztFMvVA8vRkpM5zeGKdV5L0",
+    "etag": "T0LkhIPekFhqhohA145bOdsOyvc",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -315,6 +318,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "AI will NOT replace Software Engineers (for now)",
         "description": "AI systems  are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around AI replacing software engineers, are our jobs really at risk? In this video, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. We’ll discuss the potential of AI to assist in common development activities, and where it still falls short when it comes to creative problem-solving and human intuition. Welcome to the discussion 🧬 vs. 🤖 !!!\n\n⏰ TIMESTAMPS\n\n0:00 - AI’s impact on software engineering\n02:20 - Sensational headlines and misconceptions\n05:34 - The essence of software engineering\n09:19 - The value in the small human details\n12:12 - Can AI fully replace software engineers?\n14:23 - How AI can help in software engineering\n16:16 - Can AI replace junior engineers?\n18:12 - Final thoughts\n\n📺 WATCH NEXT\n\n→ https://youtu.be/DqL3-bnSCy0\n\n🌍 RELATED CONTENT\n\n→ The companion blog post: https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html\n\n→ Blog post: “Is There a Future for Software Engineers? The Impact of AI [2024]\" https://brainhub.eu/library/software-developer-age-of-ai\n\nWHO AM I❓\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AI #SoftwareEngineering #AIVsEngineers #TechCareer"
@@ -331,7 +335,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "566",
+      "viewCount": "567",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -339,7 +343,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "QkaE8jWmT2_p8QL7egNCGVui0No",
+    "etag": "JfB3qsCyotw_MxiMUz1hfSRZ478",
     "id": "GRd2nxNTZDI",
     "snippet": {
       "publishedAt": "2024-11-30T07:00:08Z",
@@ -397,6 +401,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "Speaking Imperfect English Can Transform Your Life",
         "description": "I  came from living in a small town in Cuba, where access to the most basic human needs was severely limited. One day, I took the challenge of teaching myself English and signed up for the IELTS test. Ten years later, I live in one of Europe’s most developed cities, where I pursued an academic career that was once totally beyond my imagination. In this video, I share my personal journey, how learning English led me to this kind of personal and professional growth, along with my struggles, and some of the moments that made it all worthwhile.\n\nFor non-native speakers: this video is not just about learning a second language, it's about breaking barriers and redefining your future!\n\n⏰ TIMESTAMPS\n\n00:00 – Intro\n02:22– Why English Is Important \n03:57– The Rise of English as The Language of Science\n07:28 – Deciding to Learn English (my story)\n12:31 – The IELTS Test\n16:13 – Open Opportunities Through English\n19:12 – 3 Ways to Improve Your English\n22:56 – Final Thoughts\n\n📺 RELATED VIDEOS\n\n→ https://youtu.be/N7pY8VAt6g4\n\n→ https://youtu.be/ZpILR21GWao\n\n🌍 RELATED CONTENT\n\n→ My blog post \"How I Beat the IELTS Academic With Just a Month of Self-Training\" https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html\n\n→ The Nature journal article \"A century of science boycotts\" https://www.nature.com/articles/d41586-022-01475-8\n\nWHO AM I?\n\nHi 👋 I’m César, a computer scientist and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#learningenglish #nonativespeakers #phdlife #academicjourney #IELTStips"
@@ -504,7 +509,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "UCRi30y97ny5nW_GCAxRIfUSIp0",
+    "etag": "E74tkiPomCzmsP0-5nu4vvQibqQ",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
@@ -559,6 +564,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "Learning Software Development Is Not a Sprint: Top Performers Are Built Over Time",
         "description": "So many books and courses promise that you can become a master of Java, C++, or Python in just a few days. But the truth is, becoming a proficient developer takes time, deliberate practice, and patience. This video debunks the myth of learning software development quickly. We will explore why rushing to learn software development can set you up for failure and why true expertise takes a long time to gain.\n\n⏰ TIMESTAMPS\n\n00:00 - Introduction\n02:10 - The rush to learn software development\n04:53 - Can we learn to code in a day?\n04:34 - The myth of instant expertise\n11:56 - Why deliberate practice matters \n14:56 - Learning from other developers\n17:35 - Long-term learning approach\n19:01 - Takeaways\n\n📺 WATCH NEXT\n\n→ \"Building & Upgrading a Killer Tech RÉSUMÉ\" 🔗https://youtu.be/-EYVzXoq15o?si=PtRIuB78ZDc5w9fo\n\n💡 RELATED CONTENT\n\n→ \"Teach Yourself Programming in Ten Years\" by Peter Norvig 🔗http://norvig.com/21-days.html\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero"
@@ -575,7 +581,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "466",
+      "viewCount": "467",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -583,7 +589,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "VVEpByzPjpox4bwL634Cq5Nk5Is",
+    "etag": "U8bM0wq9XijDyIYVlofI-dWphCI",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
@@ -633,6 +639,7 @@
       ],
       "categoryId": "26",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "Building & Upgrading a Killer Tech RÉSUMÉ",
         "description": "Want to learn the secrets to crafting a standout résumé that can secure your dream job in tech? Then you may want to learn from my mistakes. Whether you’re just entering the job market or looking to level up, this video breaks down the purpose of a computer scientist résumé, the common pitfalls job applicants usually make, and how to avoid them. Discover (or recap) how to structure your résumé for success, highlight your unique skills, and avoid the red flags that could cost you a dream job offer.\n\nIn case you wonder, here's my résumé 🔗 https://www.cesarsotovalero.net/files/CV/cv.pdf\n\n⏰ TIMESTAMPS\n\n00:00 Introduction\n01:54 Résumés and RPG games\n03:14 Targeting\n08:15 Structuring \n11:57 Skills\n14:15 Personal qualities\n15:29 Seven sins to avoid\n18:06 The future of résumés\n\n💡 RELATED CONTENT\n\n■ My blog post titled \"Building and Leveling Up a Computer Scientist Résumé\" 🔗 https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html\n\n■ The article \"The resume that got a software engineer a $300,000 job at Google\" 🔗 https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f\n\n■ The blog post \"Pimp Up Your Resume\" 🔗 https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#resumetips #resumewriting #jobapplications #itjobs"
@@ -657,7 +664,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "bPrXR3yYccdMunbVdpckrMijRO0",
+    "etag": "rPA2-w6FFzd3eqNG9xXZn1PskKE",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -718,15 +725,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12741",
-      "likeCount": "647",
+      "viewCount": "12745",
+      "likeCount": "646",
       "favoriteCount": "0",
       "commentCount": "295"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "iRSi8xlrlcmcwcOgRGfYvvxVk6M",
+    "etag": "N30nT7DiqZR0gTanJv-TC0uhAqc",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -771,6 +778,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "The Silent Crisis of Software Bloat",
         "description": "Software powers every aspect of our lives, from the apps on our phones to the complex systems running modern enterprises. But behind every screen, there's a growing problem. In this video, I dive deep into the causes, consequences, and possible solutions of software bloat. I'll dive into why modern software has ballooned to millions of lines of code, far surpassing the simplicity of early computing. As I reflect on my PhD research on this topic, we’ll uncover how software reuse, dependencies, and hardware evolution have led to the current situation. I’ll also share key insights from computer scientists like Niklaus Wirth, whose work from decades ago predicted much of what we see today.\n\n⏰ TIMESTAMPS\n\n00:00 - Intro\n00:25 - The problem of software bloat\n02:01 - The origins of software bloat\n03:44 - The causes of software bloat\n07:00 - Example of software bloat\n09:10 - The cost of software bloat\n10:50 - The legacy of Niklaus Wirth\n12:45 - Solutions and the path forward\n15:50 - A hopeful future?\n\n📺 WATCH NEXT\n\n■ \"Debloating Java Dependencies\" my PhD thesis defense about this topic 🔗https://youtu.be/Ub684G_aM5Q?si=QK7r-00QDwl4zLXc\n\n■ \"The Mess We're In\" by Joe Armstrong 🔗https://youtu.be/lKXe3HUG2l4\n\n■ \"Software Is Not Art Anymore\" by Dylan Beattie 🔗https://youtu.be/VA1eIVVsVhY?si=ra4k08IYdMGctSKP\n\n💡 RELATED CONTENT\n\n■  My blog post titled \"Why Debloating Third-Party Software?\" 🔗https://www.cesarsotovalero.net/blog/why-debloating-third-party-software.html\n\n■ The original article \"A Plea for Lean Software\" 🔗https://doi.ieeecomputersociety.org/10.1109/2.348001\n\n■ Related article \"Why Bloat Is Still Software’s Biggest Vulnerability\" 🔗https://spectrum.ieee.org/lean-software-development\n\n■ My curated list of papers about software bloat and software debloating: 🔗https://www.cesarsotovalero.net/software-debloating-papers.html\n\n🙂 WHO AM I?\n\nI’m César, a computer scientist, s oftware engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a grounded computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#softwarebloat #softwaredevelopment  #techexplained  #cleancode  #cybersecurity"
@@ -787,15 +795,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "623",
-      "likeCount": "45",
+      "viewCount": "626",
+      "likeCount": "47",
       "favoriteCount": "0",
-      "commentCount": "23"
+      "commentCount": "24"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "Hs1FAdZrGJR7M7CqmcoALEmAIqE",
+    "etag": "uaIw54xYUR0nmxhYcw7FmHHl4K8",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -832,6 +840,7 @@
       "channelTitle": "César Soto Valero",
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "My step-by-step framework to Peer-Review research papers like an “Expert”",
         "description": "During the last years, I’ve peer-reviewed more than 10 research papers submitted to top journals and conferences. As a PhD student, I’ve also played on the other side of the fence, submitting my own papers to similar venues and getting all kinds of positive and negative peer reviews in response. In this video, I share my personal approach to delivering efficient and effective peer reviews. Whether you're new to peer reviewing or looking to refine your process, this video covers practical strategies that can help you evaluate research papers with confidence and clarity.\n\n00:00 - Introduction\n01:31 - Understanding Peer-Review\n04:15 - Receiving an Invitation to Peer-Review\n05:25 - Quick Peer-Review\n08:11 - Detailed Peer-Review\n09:50 - Good vs. Bad Peer-Reviews\n11:47 - Peer-Reviewing Template\n12:31 - Importance of Effective Peer-Reviewing \n\nEXTERNAL RESOURCES\n\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html\n\n🎈 Here's the peer-review template that I use: https://tinyurl.com/46kxnjha\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#PeerReview #ResearchPapers #Academia"
@@ -856,7 +865,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "CkHOSt1J5pdkAmXWWEfY7fNYr-M",
+    "etag": "4vKb3ZIub1f7wH0cO2Ac1_YVDLE",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -893,6 +902,7 @@
       "channelTitle": "César Soto Valero",
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "Revisiting Ken Thompson’s Turing Award Lecture “Reflections on Trusting Trust”",
         "description": "Dive into the groundbreaking Turing Award lecture titled \"Reflections on Trusting Trust,\" where Ken Thompson presented one of the most chilling and famous ideas in cybersecurity history. Thompson demonstrated how a compiler could be modified to recognize its own code and reinsert a backdoor into its new versions. This kind of backdoor (a.k.a trojan horse compiler) is practically undetectable since it no longer appears in the source code.\n\nKey Takeaway: \"You cannot trust code that you did not create entirely yourself.\"\n\n00:00 - The problem of software trust\n00:54 - Thompson's famous claim\n01:51 - Historical context\n02:45 - Core idea behind this backdoor attack\n04:22 - Self-replicating code (a.k.a. quine)\n07:10 - Implications for cybersecurity \n08:45 - Supply chain attacks\n09:46 - Deeper questions\n10:54 - Echoes today\n\nRELATED RESOURCES\n\n🎈 Here's the original paper from 1984, \"Reflections on Trusting Trust\": https://doi.org/10.1145/358198.358210\n\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#Cybersecurity #KenThompson #TrustingTrust"
@@ -909,7 +919,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "407",
+      "viewCount": "411",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -917,7 +927,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Kec5PnIibaqSwNjJHN7HJIWtkTE",
+    "etag": "J16sjdcOGxWlavbkLxrckdY2IjA",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -961,6 +971,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "The Last Paper’s Myth: PhD Student Expectations vs. Reality at the End of a PhD",
         "description": "Feeling pressures when finishing your PhD? In this video, I dive into what I call \"the last paper's myth,\" a common situation faced by PhD students in their final year. In this video, I share my experience when navigating the expectations and realities when completing my PhD. I give you actionable insights on how to maintain work-life balance and achieve success at the end of the PhD.\n\n00:00 - Writing your thesis?\n02:00 - Expectations\n02:30 - Realities\n05:12 - The push for one more paper\n05:40 - The impact of pressure on PhD students\n07:03 - A conflict of interests\n08:33 - Strategies to counter the pressure\n10:32 - Similar situation in the corporate world\n11:15 - Conclusion and takeaways\n\nRELEVANT RESOURCES\n\n🎈 I wrote a blog post about this topic, you can read it here: 🔗 https://www.cesarsotovalero.net/blog/the-last-paper-myth.html\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog  \n👨‍💻 My GitHub: https://github.com/cesarsotovalero  \n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero  \n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#PhDLife #AcademicPressure #ThesisWriting #GradSchool #AcademicResearch"
@@ -985,7 +996,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "IXVIsK3qsyCFNIFSYM6u_TspQ8k",
+    "etag": "hLTZ9OKvfMIP5PVJPd3ec_aVo_E",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -1027,6 +1038,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "How to Overcome Writer's Block When Preparing a Research Paper",
         "description": "Struggling with writer's block? As a PhD in Computer Science, I've been there too. In this video, I share my personal experiences and strategies that helped me to overcome writer's block when writing my research papers. \n\n00:00 - My struggling with writer's block\n01:38 - Structuring a research paper\n04:30 - Adding figures and results\n08:22 - Paraphrasing recurrent content\n11:10 - Refining and editing later\n12:35 - Either writing or doing nothing\n14:41 - Imagining the finished task\n17:40 - It's just a draft :)\n\nRELATED RESOURCES\n\n🎈 I wrote a companion blog post about this topic, you can read it here: 🔗 https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html\n\n🎈 I got interviewed by a journalist from Nature about this topic, you can read the article here: 🔗 https://www.nature.com/articles/d41586-024-02013-4\n\n🎈 I mentioned Simon Peyton Jones’ talk \"How to write a great research paper,\" here's the link: 🔗 https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#WritersBlock #PhDLife #AcademicWriting"
@@ -1043,7 +1055,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "124",
+      "viewCount": "126",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1051,7 +1063,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "-owWOzTwcgFSw4QxIrT7NNWE6G8",
+    "etag": "evQWMnHT8vKXOyM8CQL2iwzVZcE",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -1088,10 +1100,12 @@
       "channelTitle": "César Soto Valero",
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "Preventing Software Supply Chain Attacks With Dependency Management Best Practices",
         "description": "Talk at SEB's Tech Day in Arenastaden Stockholm, September 2023\n\n# Takeaways\n\n* Software supply chain attacks are real.\n* There are ways to prevent and mitigate this particular threat.\n* You can start by knowing your dependencies, updating, and cleaning them.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwaredevelopment #vulnerabilities #dependencies"
-      }
+      },
+      "defaultAudioLanguage": "en"
     },
     "contentDetails": {
       "duration": "PT15M",
@@ -1103,7 +1117,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "162",
+      "viewCount": "163",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1111,7 +1125,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "H7J_GOWGqap7I50F1axpTcI6gNM",
+    "etag": "NtTWAGSXC2R1AhEVQdjlhsTXagQ",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -1148,6 +1162,7 @@
       "channelTitle": "César Soto Valero",
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "Debloating Java Dependencies",
         "description": "My PhD Defense\nJune 1st, 2023\n\nLink to the full PhD thesis: https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf\nLink to the slides: https://www.cesarsotovalero.net/files/thesis/slides/cesar-phd-defense.pptx\n\n# Summary\n\nSoftware systems have a natural tendency to grow in size and complexity. A part of this growth comes with the addition of new features or bug fixes, while another part is due to useless code that accumulates over time. This phenomenon, known as \"software bloat,\" increases with the practice of reusing software dependencies, which has exceeded the capacity of human developers to efficiently manage them. Software bloat in third-party dependencies presents a multifaceted challenge for application development, encompassing issues of security, performance, and maintenance. To address these issues, researchers have developed software debloating techniques that automatically remove unnecessary code.\n\nDespite significant progress has been made in the realm of software debloating, the pervasive issue of dependency bloat warrants special attention. In this thesis, we contribute to the field of software debloating by proposing novel techniques specifically targeting dependencies in the Java ecosystem. First, we investigate the growth of completely unused software dependencies, which we call \"bloated dependencies.''  We propose a technique to automatically detect and remove bloated dependencies in Java projects built with Maven. We empirically study the usage status of dependencies in the Maven Central repository and remove bloated dependencies in mature Java projects. We demonstrate that once a bloated dependency is detected, it can be safely removed as its future usage is unlikely.\n\nSecond, we focus on dependencies that are only partially used. We introduce a technique to specialize these dependencies in Java projects based on their actual usage. Our approach systematically identifies the subset of functionalities within each dependency that is sufficient to build the project and removes the rest. We demonstrate that our dependency specialization approach can halve the project classes to dependency classes ratio. Last, we assess the impact of debloating projects with respect to client applications that reuse them. We present a novel coverage-based debloating technique that determines which class members in Java libraries and their dependencies are necessary for their clients. Our debloating technique effectively decreases the size of debloated libraries while preserving the essential functionalities required to successfully build their clients.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#phdthesis #computerscience #softwareengineering #softwaredebloating"
@@ -1172,7 +1187,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "y2iC_JqtQw5m61_QrooTqDyoV1M",
+    "etag": "Jm_Yt_oreBu6UGO8EW7soPzy71Y",
     "id": "HXj2B8eHmt4",
     "snippet": {
       "publishedAt": "2022-10-16T20:05:21Z",
@@ -1216,6 +1231,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "Coverage-Based Debloating for Java Bytecode",
         "description": "Presentation at ESEC/FSE 2022.\n\nRead the paper https://dl.acm.org/doi/pdf/10.1145/3546948\nRead about the ESEC/FSE Conference Journal First Track https://2022.esec-fse.org/track/fse-2022-journal-first#programming \n\n# Summary\n\nSoftware bloat is code that is packaged in an application but is actually not necessary to run the application. The presence of software bloat is an issue for security, for performance, and for maintenance. In this paper, we introduce a novel technique for debloating, which we call coverage-based debloating. We implement the technique for one single language: Java bytecode. We leverage a combination of state-of-the-art Java bytecode coverage tools to precisely capture what parts of a project and its dependencies are used when running with a specific workload. Then, we automatically remove the parts that are not covered to generate a debloated version of the project. We succeed in debloating 211 library versions from a dataset of 94 unique open-source Java libraries. The debloated versions are syntactically correct and preserve their original behavior according to the workload. Our results indicate that 68.3% of the libraries’ bytecode and 20.3% of their total dependencies can be removed through coverage-based debloating.\n\nFor the first time in the literature on software debloating, we assess the utility of debloated libraries concerning client applications that reuse them. We select 988 client projects that either have a direct reference to the debloated library in their source code or which test suite covers at least one class of the libraries that we debloat. Our results show that 81.5% of the clients with at least one test that uses the library successfully compile and pass their test suite when the original library is replaced by its debloated version.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwaredebloating #codequality #dependencies"
@@ -1240,7 +1256,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "gQLi3Dl1TfyF90vtGBsgVhTxinU",
+    "etag": "wGjYRDb9TUasSRfccc3MclNXD-Y",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -1283,6 +1299,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "Seven Reasons to Do a PhD in Computer Science",
         "description": "Starting a PhD in Computer Science is a very serious decision that might change your life. \nIn this video, I explain seven pragmatic reasons to choose this particular career direction.\nRead the companion blog post: https://www.cesarsotovalero.net/blog/seven-reasons-to-go-for-a-phd-in-computer-science.html\n\n00:00 Intro\n00:53 Feed your intellectual curiosity\n03:54 Become a professional researcher\n06:41 Build a career network\n08:50 Set yourself apart from the competition\n11:05 Challenge yourself\n12:36 Own your work\n14:38 Emigrate!\n17:03 Outro \n\nMy Blog: https://www.cesarsotovalero.net\nMy Twitter: https://twitter.com/cesarsotovalero\nMy GitHub: https://github.com/cesarsotovalero\n\n#research #phdcareer #computerscience"
@@ -1307,7 +1324,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "3CvHLLb2YmImRls1kDZeGBzMIz8",
+    "etag": "7JzBprdFOhQBSWUxUiqRjJL-_RI",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -1349,6 +1366,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "The Software Supply Chain",
         "description": "Read the related blog post: https://www.cesarsotovalero.net/blog/the-software-supply-chain.html\n\n0:00 Introduction\n0:13 Problem definition\n1:15 People in the loop\n1:47 Problem & Solution\n2:01 Production environment\n4:02 Maintenance & Support\n5:55 Example\n6:44 Mitigation\n7:29 Conclusion\n\n# Summary\n\nThe software supply chain comprises all the technology involved in shipping a piece of code from development to its deployment in a production environment. Several actors and different technologies participate in this complex process, e.g., developers, IDEs, compilers, package managers, a so on. The success or failure of a software product depends largely on many external components that are not directly controlled by the organizations in charge of delivering software products to their clients. This situation poses several security and maintenance risks for both software suppliers and customers. Thereby, maintaining a secure and efficient software supply chain is critical today, where open-source has become ubiquitous in the software production landscape. In this video, I take a close look at this phenomenon from a software engineering perspective.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#cybersecurity #softwaredevelopment  #dependencies"
@@ -1373,7 +1391,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "05aNrAUbWoARAjPtML-HenpX8j8",
+    "etag": "iN19xuKDb5GLDpFvD13zzDQVuWo",
     "id": "3nptpGpaYws",
     "snippet": {
       "publishedAt": "2021-09-03T10:05:40Z",
@@ -1416,6 +1434,7 @@
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
       "localized": {
         "title": "The Quicksort Algorithm",
         "description": "My talk for the course \"Basic Communication and Teaching\" at KTH Royal Institute of Technology\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#teaching #algorithms #quicksort"
@@ -1432,7 +1451,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "105",
+      "viewCount": "108",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1507,7 +1526,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YjA_QuWDVTgTBaFJFBazzSKyw7U",
+    "etag": "y1WzpOOy5e3ixQ0RsCLEVrifDws",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -1567,7 +1586,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "267",
+      "viewCount": "268",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "11"
