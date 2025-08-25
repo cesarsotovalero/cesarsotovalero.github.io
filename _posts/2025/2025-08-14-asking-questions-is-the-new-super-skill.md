@@ -1,10 +1,10 @@
 ---
 layout: post
-title: When Answers are Cheap, Questions are Gold
-subtitle: Learning to ask is the new competitive edge
+title: Answers Are Cheap, Questions Are Gold.
+subtitle: In a world full of answers, be the one who asks better
 tags: ai
 description: |
-
+  In a world where knowledge is abundant, the ability to ask insightful questions is becoming increasingly valuable. I believe that mastering the art of questioning can unlock new opportunities and get the most of the current AI landscape. This post dives into techniques, patterns, and anti-patterns I've learned over time from top questioners. It covers real-world examples and best practices targeting both humans and AI alike.
 keywords:
   - job interviews
   - job applications
@@ -21,13 +21,13 @@ author: cesarsotovalero
 published: false
 ---
 
-I remember, a long time ago, when I was 10, I had only a few old books at home.
-The new ones either weren’t available or were too expensive for my narrow pocket.
-If I wanted to read good stuff back then, I had to walk to the local library and read on-site.
+I remember, in my infancy, I had access to only a few old books at home.
+The new ones either weren’t available or were too expensive to acquire.
+If I wanted to read good content back then, I had to walk to the local library and have it on-site.
 
-Ten years later, in my 20s, I observed that university professors had read a lot of books.
+Later on in my 20s, I observed that university professors had read a lot of books.[^3]
 They were respected for the sheer amount of knowledge they had accumulated over a lifetime.
-We valued professors because their knownledge and expertise were scarce.
+We valued professors because their knowledge and expertise were scarce.
 
 Now, in my 30s, reading books is not as trendy as before, and knowledge is available from anywhere.
 Getting access to information is cheaper than ever, and even the latest scientific advances move at lightspeed.
@@ -35,7 +35,7 @@ A curious 10-year-old today can access cutting-edge tools and learn from the lat
 
 More remarkably, AI has drastically changed the way we value knowledge in the last few years.
 Everyone can now prompt an AI assistant (like ChatGPT) for free and get almost instant answers to practically any imaginable question.
-I believe AI represents an optimization shift in the way we search for human knowledge.
+I believe AI represents an optimization milestone in the way we search for human knowledge.
 The impact could be even more than what the Google search engine did in the early days of the internet.
 
 AI has made answers abundant and general knowledge intuitively accessible.
@@ -88,7 +88,7 @@ The more questions you ask, the better prepared you will be for whatever is comi
     <cite><br> ― <a href="https://en.wikipedia.org/wiki/Charles_F._Kettering">CF Kettering</a></cite>
 </aside>
 
-Good questions have purpose and "make sense" in general.[^1]
+Good questions have purpose and "make sense" (in general).[^1]
 They are unambiguous, give just enough context, and set limits.
 
 Scope is reduced so that answer feel smaller.
@@ -97,9 +97,9 @@ As a rule of thumb, if a the question doesn’t make any difference to the argum
 
 There are three techniques to improve question formulation:
 
-- Aim, scope, and payoff (ASP)
-- Clarity, context, and constraints (3C)
-- Falsifiability and measurability (FM)
+* Aim, scope, and payoff (ASP)
+* Clarity, context, and constraints (3C)
+* Falsifiability and measurability (FM)
 
 ## Aim, Scope, Payoff
 
@@ -145,6 +145,10 @@ Quick rewrites:
 
 ## Falsifiability and Measurability
 
+<aside class="quote">
+    <em>“Good questions turn meetings into decisions, incidents into root causes, and hunches into hypotheses.”</em>
+</aside>
+
 Decisions stick when they survive an attempt to disprove them.
 Measurement turns opinion into feedback.
 The core idea is to phrase questions so answers can be tested. If it can’t be wrong, it can’t be right.
@@ -177,47 +181,24 @@ Reusable question patterns help you think more clearly, spot blind spots, and ge
 
 Here are eight you can borrow and use right away.
 
-1. First-principles (“What are the primitives?”)
+1. **First-principles** (“What are the primitives?”): Strip away jargon and complexity until you get to the most basic truths. From there, rebuild your understanding. This works because reality is easier to reason about than opinions.
 
-Strip away jargon and complexity until you get to the most basic truths. From there, rebuild your understanding.
-This works because reality is easier to reason about than opinions.
+2. **Inversion** (“How could this fail?”): Instead of only asking how to succeed, flip the question and look for ways it could go wrong. Anticipating failure is often the fastest way to avoid it.
 
-2. Inversion (“How could this fail?”)
+3. **Disconfirming evidence** (“What would prove me wrong?”): Ask what would make your current belief false. This keeps you from cherry-picking facts that only confirm your view.
 
-Instead of only asking how to succeed, flip the question and look for ways it could go wrong.
-Anticipating failure is often the fastest way to avoid it.
-
-3. Disconfirming evidence (“What would prove me wrong?”)
-
-Ask what would make your current belief false.
-This keeps you from cherry-picking facts that only confirm your view.
-
-4. Assumption audit (“What am I taking for granted?”)
-
-List the things you believe are true without checking.
+4. **Assumption audit** (“What am I taking for granted?”): List the things you believe are true without checking.
 Questioning assumptions often reveals the weakest part of your thinking.
 
-5. Constraint lens (“What if we had half the time/budget?”)
+5. **Constraint lens** (“What if we had half the time/budget?”): Imagine having fewer resources. Constraints force creativity, sharpen priorities, and surface shortcuts you might have missed.
 
-Imagine having fewer resources.
-Constraints force creativity, sharpen priorities, and surface shortcuts you might have missed.
-
-6. Comparative calibration (“Compared to what?”)
-
-Numbers and claims mean little without context.
+6. **Comparative calibration** (“Compared to what?”): Numbers and claims mean little without context.
 Always anchor them to a baseline, a competitor, or a past result.
 
-7. Decomposition (“Can we split this into 3 parts?”)
-
-Break a big problem into smaller, more manageable chunks.
+7. **Decomposition** (“Can we split this into 3 parts?”): Break a big problem into smaller, more manageable chunks.
 Solving each piece separately is often faster and less overwhelming.
 
-8. Time travel (pre-mortem/post-mortem)
-
-Jump forward in time. In a pre-mortem, imagine the project has failed and ask why.
-In a post-mortem, imagine it has succeeded and trace back the steps that led there.
-
-> Use questions to turn meetings into decisions, incidents into root causes, and hunches into hypotheses.
+8. **Time travel** (pre-mortem/post-mortem): Jump forward in time. In a pre-mortem, imagine the project has failed and ask why. In a post-mortem, imagine it has succeeded and trace back the steps that led there.
 
 # Anti-Patterns
 
@@ -226,54 +207,33 @@ They actively distort the truth or shut down useful discussion.
 
 Here are three common traps to avoid:
 
-1. Loaded and leading questions
+1. **Loaded and leading questions:** These questions sneak in assumptions or push the respondent toward a certain answer. For example, “Why is our onboarding so bad?” assumes it *is* bad. Instead, ask neutrally: “How does our onboarding compare to expectations?”
 
-These questions sneak in assumptions or push the respondent toward a certain answer.
-For example, “Why is our onboarding so bad?” assumes it *is* bad. Instead, ask neutrally: “How does our onboarding compare to expectations?”
+2. **Double-barreled and vague scope:** Two questions in one confuse people and muddy the answer.  “How do we improve onboarding and reduce churn?” is really two separate discussions. Similarly, asking with no clear scope, like “What’s the best database?”, leads to endless “it depends.” Split them and define the boundaries.
 
-2. Double-barreled and vague scope
+3. **Why-blame vs. how-fix framing:** Asking “Who messed this up?” shifts focus to defending reputations instead of solving problems. “How can we prevent this next time?” keeps the discussion forward-looking and solution-oriented.
 
-Two questions in one confuse people and muddy the answer.
- “How do we improve onboarding and reduce churn?” is really two separate discussions.
- Similarly, asking with no clear scope, like “What’s the best database?”, leads to endless “it depends.” Split them and define the boundaries.
-
-3. Why-blame vs. how-fix framing
-
-Asking “Who messed this up?” shifts focus to defending reputations instead of solving problems.
-“How can we prevent this next time?” keeps the discussion forward-looking and solution-oriented.
-
-4. Scope creep
-
-Two questions in one confuse people and muddy the answer.
-“How do we improve onboarding and reduce churn?” is really two separate discussions.
- Similarly, asking with no clear scope (like “What’s the best database?”) leads to endless “it depends.” Split them and define the boundaries.
+4. **Scope creep:** Two questions in one confuse people and muddy the answer. “How do we improve onboarding and reduce churn?” is really two separate discussions.  Similarly, asking with no clear scope (like “What’s the best database?”) leads to endless “it depends.” Split them and define the boundaries.
 
 # How to Train
 
-Build the muscle with quick, repeatable reps that sharpen clarity under constraints.
+For me, one of the best ways to learn the art of asking great questions is by listening to the best podcasters out there.
+Think about it for a second, their entire job revolves around asking the right questions at the right time.
 
-Use simple checklists and prompt structures to make good questioning your default.
+What I usually do is keep track of the best questions they ask (I even have a [Notion](https://www.notion.com/) template for this).
+I note down the exact wording, the follow-up questions, and even the flow of their thought process.
+Over time, this has helped me sharpen my own questioning skills a lot.
 
-One-page question checklist
+Here are some of my favorite podcasters who have an interview-first format:
 
-Interview prompts inspired by Lex/Tim/Steven
+* [The Diary Of A CEO](https://www.youtube.com/@TheDiaryofACEO)
+* [The Tim Ferriss Show](https://www.youtube.com/playlist?list=PLuu6fDad2eJyWPm9dQfuorm2uuYHBZDCB)
+* [The Lex Fridman Podcast](http://www.youtube.com/@lexfridman)
+* [The Joe Rogan Experience](https://www.youtube.com/@PowerfulJRE)
 
-AI co-pilot prompts for faster iteration
+# External Resources
 
-Deploy high-leverage questions this week and a mini-template to turn vague asks into action.
-
-Ten questions to use this week
-
-1. TODO
-2. TODO
-3. ...
-
-Recommended podcasts:
-
-- [The Tim Ferriss Show](https://www.youtube.com/playlist?list=PLuu6fDad2eJyWPm9dQfuorm2uuYHBZDCB)
-- [The Lex Fridman Podcast](http://www.youtube.com/@lexfridman)
-- [The Diary Of A CEO](https://www.youtube.com/@TheDiaryofACEO)
-- [The Joe Rogan Experience](https://www.youtube.com/@PowerfulJRE)
+- I read ["Who"](https://amzn.eu/d/3J43pVi) by [Geoff Smart](https://www.linkedin.com/in/drgeoffsmart/) some moons ago, based on 1300 hours of interviews with CEO’s on the hiring topic. NY times bestseller. Great questions and mental models. Recommended!
 
 # Footnotes
 
@@ -281,8 +241,4 @@ Recommended podcasts:
 
 [^2]: Note that in the case of humans, we tolerate less quality answers. In many cases, the exact answer is not as important as the method through which you came to that answer.
 
-# External Resources
-
-- Read ’Who’ by Geoff Smart some moons ago, based on 1300 hours of interviews with CEO’s on the hiring topic. NY times bestseller. Great questions and mental models. Recommeded!
-
-
+[^3]: Turns out I was on the right track when I was a child: reading was important!
