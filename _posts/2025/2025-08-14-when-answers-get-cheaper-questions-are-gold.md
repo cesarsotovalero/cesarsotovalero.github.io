@@ -1,10 +1,10 @@
 ---
 layout: post
 title: When Answers Get Cheaper, Questions Are Gold
-subtitle: In a world full of free knownledge, be the one who asks for the unknown
-tags: productivity
+subtitle: In a world full of free knowledge, be the one who asks for the unknown
+tags: career
 description: |
-  In a world where knowledge is abundant, the ability to ask insightful questions is becoming increasingly valuable. I believe that mastering the art of questioning can unlock new opportunities and get the most of the current AI landscape. This post dives into techniques, patterns, and anti-patterns I've learned over time from top questioners. It covers real-world examples and best practices targeting both humans and AI alike.
+  Knowledge is abundant now. The ability to ask insightful questions is becoming increasingly valuable. I believe that mastering the art of questioning can unlock new opportunities and get the most of the current AI landscape. This post dives into techniques, patterns, and anti-patterns I've learned over time from top questioners. It covers real-world examples and best practices targeting both humans and AI alike.
 keywords:
   - job interviews
   - job applications
@@ -225,14 +225,14 @@ Over time, this has helped me sharpen my own questioning skills (a lot).
 
 Here are some of my favorite podcasters who have an interview-first and long-content format:
 
-- [🎙 The Diary Of A CEO](https://www.youtube.com/@TheDiaryofACEO)
-- [🎙 The Tim Ferriss Show](https://open.spotify.com/show/5qSUyCrk9KR69lEiXbjwXM)
-- [🎙 The Lex Fridman Podcast](http://www.youtube.com/@lexfridman)
-- [🎙 The Joe Rogan Experience](https://www.youtube.com/@joerogan)
+1. [🎙 The Diary Of A CEO](https://www.youtube.com/@TheDiaryofACEO)
+2. [🎙 The Tim Ferriss Show](https://open.spotify.com/show/5qSUyCrk9KR69lEiXbjwXM)
+3. [🎙 The Lex Fridman Podcast](http://www.youtube.com/@lexfridman)
+4. [🎙 The Joe Rogan Experience](https://www.youtube.com/@joerogan)
 
 # Footnotes
 
-[^1]: I know, whether something “makes sense” is wildly subjective… but let’s at least agree it should make sense to the interviewee.
+[^1]: I know, whether something “makes sense” or not is wildly subjective… but let’s at least agree it should make sense to the interviewee.
 [^2]: We tend to tolerate lower-quality answers from humans than from AI. In many cases, it’s less about the _exact_ answer and more about the mental mechanism you used to get there.
 [^3]: Turns out my childhood instincts were correct: reading _was_ important!
 [^4]: I read ["Who"](https://amzn.eu/d/3J43pVi) by [Geoff Smart](https://www.linkedin.com/in/drgeoffsmart/) a few moons ago. It’s based on 1,300 hours of CEO interviews about hiring. NYT bestseller. Great questions and mental models. Recommended!
