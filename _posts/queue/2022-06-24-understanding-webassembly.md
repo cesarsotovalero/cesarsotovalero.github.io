@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Understanding WebAssembly
-subtitle: Is it the future of the web? 
-tags: webassembly
+subtitle: Is it the future of the web?
+tags: web
 description: TODO
 keywords:
   - web technologies,
@@ -20,10 +20,9 @@ published: false
 
 TODO
 
-
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/cheers_ascii.jpg alt:"ASCII art displayed on my terminal" %}
-  <figcaption class="stroke"> 
+  <figcaption class="stroke">
     &#169; Cheers! ASCII art displayed on my terminal. Try it installing <a href="https://github.com/TheZoraiz/ascii-image-converter">ascii-image-converter</a> and executing the command: <code class="language-bash highlighter-rouge">ascii-image-converter -C http://tinyurl.com/3jez5whs</code>.
   </figcaption>
 </figure>
@@ -32,9 +31,6 @@ TODO
 
 https://github.com/Jacarte/KTH-Licentiate-Thesis/blob/main/Lic-2.pdf
 
-
 # Conclusion
 
-
 # Footnotes
-
