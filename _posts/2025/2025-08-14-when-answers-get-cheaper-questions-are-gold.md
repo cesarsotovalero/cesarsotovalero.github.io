@@ -1,6 +1,6 @@
 ---
 layout: post
-title: When Answers Are Cheap, Questions Are Gold
+title: When Answers Get Cheaper, Questions Are Gold
 subtitle: In a world full of free knownledge, be the one who asks for the unknown
 tags: productivity
 description: |
