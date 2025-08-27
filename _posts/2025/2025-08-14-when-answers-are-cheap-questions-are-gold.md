@@ -18,7 +18,7 @@ toc: true
 mathjax: true
 date: 2025/08/14
 author: cesarsotovalero
-published: true
+published: false
 ---
 
 I remember, in my infancy, I had access to only a few old books at home.
