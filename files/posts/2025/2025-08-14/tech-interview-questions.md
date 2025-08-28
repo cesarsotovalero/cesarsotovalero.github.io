@@ -32,6 +32,10 @@
 * Tell me about a time when you overpromised and underdelivered.
 * What do you do if you realize you’re not going to meet a deadline?
 * Describe a time when you had to learn something complex in a very short period.
+* Tell me about a time you took unexpected initiative. Can you tell me about another?
+* What's the fastest you've shipped something?
+* What is a piece of critical feedback you've received that was hard to hear?
+* If you were the CEO of your previous company, what would you do differently?
 
 ## Leadership Questions
 
@@ -41,6 +45,7 @@
 * Based on that, how do you prioritize your time?
 * As you step into this position, what roles, skills, or personalities do you need around you to ensure success?
 * How do you build relationships and trust with people on your team?
+* Among the people you've worked with, who do you admire and why?
 
 ## Creative & Critical Thinking Questions
 
@@ -68,6 +73,7 @@
 * What energizes you at work?
 * What kind of work makes you lose track of time?
 * What are your weaknesses? (e.g., "If I were to complement you with another teammate, what skills or traits would balance yours?")
+* Vis a vis other smart, talented people with similar backgrounds, what are your strengths and weaknesses?
 * Which constructive feedback have you received more than once? Did you change based on it? Why or why not?
 * Tell me about something you recently changed your mind on.
 * What’s the boldest decision you’ve made in the past year that involved a leap of faith?
@@ -84,6 +90,16 @@
 * Could you walk me through the most important life and career choices that led you here?
 * Tell me something you believe to be true but most people would disagree with.
 * What gives you energy?
+* What’s the thing you’ve read that influenced you the most?
+* If I were to talk to people who have a low opinion of you, what would they say?
+* What are you good at?
+* What do you aspire to be the best in the world at?
+* How do you want people to describe you?
+* What is the most valuable lesson you've learned from a colleague?
+* What distinguishes someone who is good from someone who is exceptional in your role?
+* What’s the skill you need to improve on the most for this role?
+* What do you want to do with your life?
+* When was the last time you changed your mind about something important?
 
 ## Cultural Fit & Values
 
@@ -93,6 +109,8 @@
 * How will you continue developing your professional skills and knowledge?
 * Throw your résumé aside and tell me what makes you, you.
 * What’s something you’d be ecstatic about doing every day for the rest of your professional career?
+* What aspect of your previous company's culture would you like to bring to your next role, and what would you prefer to leave behind?
+* Who would instantly join us if you joined?
 
 ## Random & Fun Questions
 
@@ -101,6 +119,10 @@
 * What’s your favourite fruit? Then, explain why.
 * What question would you have wanted me to ask?
 * What is the worst question I could ask you, and why?
+* Describe your favorite week at work.
+* What are some things outside of work that you’re irrationally passionate about?
+* What do people get wrong about you on first impressions?
+* What’s the thing you’re the most proud of?
 
 # Questions to Ask the Employer
 
