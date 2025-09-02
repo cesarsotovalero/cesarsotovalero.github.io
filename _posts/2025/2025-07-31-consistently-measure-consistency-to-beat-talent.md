@@ -36,6 +36,10 @@ I came to the conclusion that I've just outworked my ~~now lazy~~ popular early 
 That's all.
 Period.
 
+<aside class="quote">
+    <em>“Raw talent is overrated. Persistence is underrated.”</em>
+</aside>
+
 From my experience, I can confidently say that consistency beats talent.
 Every, single, time.
 No matter how hard it seems, or how good they are.
