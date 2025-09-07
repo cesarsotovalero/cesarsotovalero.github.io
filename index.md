@@ -33,7 +33,7 @@ use-site-title: true
 
 <div class="list-filters">
   <a href="/blog/this-month" class="list-filter"> This Month ({{ current_month_post_count }})</a>
-  <a href="/blog/all-posts" class="list-filter">All ({{ published_posts.size }})</a>
+  <a href="/blog/all" class="list-filter">All ({{ published_posts.size }})</a>
   <a href="/blog/tags" class="list-filter">Tags ({{ unique_tags.size }})</a>
 </div>
 
