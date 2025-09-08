@@ -1,6 +1,6 @@
 {
   "kind": "youtube#channelListResponse",
-  "etag": "WZGbo-C3e8xF-2_axI9-LBiI9Q0",
+  "etag": "1tJhkuQ50m8mkccp_Fbdrxwr36c",
   "pageInfo": {
     "totalResults": 1,
     "resultsPerPage": 5
@@ -8,11 +8,11 @@
   "items": [
     {
       "kind": "youtube#channel",
-      "etag": "ra5Pr6jOmMORlvA8_COf72xxG_g",
+      "etag": "xv9eVZCQm35wJjqT_ki7dWMNQK4",
       "id": "UCR4rI98w6-MqYoCS6jR9LGg",
       "snippet": {
         "title": "C\u00e9sar Soto Valero",
-        "description": "I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals, and the real-world lessons I\u2019ve gained from over two decades of higher education, academic research, and industry experience.",
+        "description": "I specialize in simplifying complexity. I break down challenging software engineering and AI concepts into clear, practical insights that you can apply right away. My mission is to empower you with strong fundamentals and share the real-world lessons I\u2019ve gained from over two decades of higher education, academic research, and hands-on industry experience.\n",
         "customUrl": "@cesarsotovalero",
         "publishedAt": "2016-03-24T20:49:46Z",
         "thumbnails": {
@@ -34,13 +34,13 @@
         },
         "localized": {
           "title": "C\u00e9sar Soto Valero",
-          "description": "I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals, and the real-world lessons I\u2019ve gained from over two decades of higher education, academic research, and industry experience."
+          "description": "I specialize in simplifying complexity. I break down challenging software engineering and AI concepts into clear, practical insights that you can apply right away. My mission is to empower you with strong fundamentals and share the real-world lessons I\u2019ve gained from over two decades of higher education, academic research, and hands-on industry experience.\n"
         },
         "country": "SE"
       },
       "statistics": {
-        "viewCount": "18232",
-        "subscriberCount": "310",
+        "viewCount": "18275",
+        "subscriberCount": "311",
         "hiddenSubscriberCount": false,
         "videoCount": "22"
       }

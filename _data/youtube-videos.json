@@ -1,7 +1,7 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "ZZgpJCg1ak_BJNWXOjZ8D6megnU",
+    "etag": "C9uNwxRvatIPJ42qRG4xXBg5mnQ",
     "id": "3s7xjI3g73w",
     "snippet": {
       "publishedAt": "2024-12-29T17:00:04Z",
@@ -86,7 +86,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "398",
+      "viewCount": "403",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -94,7 +94,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "XTSAqvxJCLMpOkmjsJOw-OPFSag",
+    "etag": "WgxzPP50qWMgFX6ZejO6suo7Pss",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -169,7 +169,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "136",
+      "viewCount": "138",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -261,7 +261,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "T0LkhIPekFhqhohA145bOdsOyvc",
+    "etag": "ezEiqibkm5hHWzqW4HWusb17UVA",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -335,7 +335,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "567",
+      "viewCount": "568",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -426,7 +426,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ihYMvlU3U30YqWcvb0ZGQ9GqFfs",
+    "etag": "Z7Pv_gJUPIEOM1SFleJssJE7ezc",
     "id": "n1t3XEAyUgQ",
     "snippet": {
       "publishedAt": "2024-10-21T06:00:32Z",
@@ -501,7 +501,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "151",
+      "viewCount": "152",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -509,7 +509,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "E74tkiPomCzmsP0-5nu4vvQibqQ",
+    "etag": "aZg9IZbce6k5b-4W1c7RsUc-UC4",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
@@ -581,7 +581,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "467",
+      "viewCount": "468",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -664,7 +664,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "vEXJ_WJbH36hUXlWjsFz8qSTqWY",
+    "etag": "5GRc2T1ez-sDyaj7uOFloGs_6Z8",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -725,15 +725,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12748",
-      "likeCount": "646",
+      "viewCount": "12752",
+      "likeCount": "645",
       "favoriteCount": "0",
       "commentCount": "295"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "8l2FrLe0CtCIJGwg4jf4d0nCFkU",
+    "etag": "wNMFan4xHcxswtU_65kyFZ9d4C4",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -795,7 +795,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "632",
+      "viewCount": "645",
       "likeCount": "47",
       "favoriteCount": "0",
       "commentCount": "24"
@@ -865,7 +865,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KzQZFeKx5FFQb5PcGvZKgagCrMU",
+    "etag": "Yt82XagHvXpmQhWDZuWAiWt_KfY",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -919,7 +919,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "414",
+      "viewCount": "426",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1256,7 +1256,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "wGjYRDb9TUasSRfccc3MclNXD-Y",
+    "etag": "ubRh0eENOyqdzoDhnil3XY8evuY",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -1316,7 +1316,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "410",
+      "viewCount": "411",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "0"
