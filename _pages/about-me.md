@@ -32,7 +32,7 @@ My research efforts have been [recognized with awards](./awards).
 
 # Software
 
-I've created [a few open-source projects](./software), some with 250+ <i class="fas fa-star"></i> on GitHub.
+I've created [a few open-source projects](./software), some with 280+ <i class="fas fa-star"></i> on GitHub.
 
 # Education
 
