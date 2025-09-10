@@ -14,8 +14,6 @@ published: true
 
 # Author
 
-{% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
-
 I contribute to open-source software on <a href="https://github.com/cesarsotovalero"><i class="fab fa-github"></i></a> [GitHub](https://github.com/cesarsotovalero).[^1]
 Below is a list of software projects I have created.
 
@@ -37,9 +35,11 @@ Below is a list of software projects I have created.
     </div>
   </div>
 
+{% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
 
+In the past, I also contributed to Stack Overflow.
+Here's my profile: [César Soto Valero on Stack Overflow](https://stackoverflow.com/users/10480869/cesarsotovalero)
 
 [//]: # (see https://github.com/slarse/slarse/blob/master/README.md for more inspiration)
-
 
 [^1]: Unless otherwise specified on the project page, all of them are released under [MIT license](https://opensource.org/licenses/MIT).
