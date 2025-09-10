@@ -9,11 +9,11 @@ published: true
 
 # Past Events
 
-I've given talks at academic and industry conferences, workshops, and similar events.
+I've delivered talks since 2018 at academic and industry conferences, workshops, and similar events.
 
-If you want to invite me to speak at your event, please [read this](./talks/invite-me).
+If you want to invite me to speak at your next event, please [read this](./talks/invite-me).
 
-Below is a non-exhaustive list of my talks in reverse chronological order.
+Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 ## 2025
 

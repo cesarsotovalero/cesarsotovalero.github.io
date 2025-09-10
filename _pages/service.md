@@ -40,9 +40,10 @@ I've co-reviewed papers for the following journals and conferences:
 - [ICSE](https://conf.researchr.org/home/icse-2019), 2019
 - [ICST](https://www.es.mdh.se/icst2018), 2018
 
-I've served as a committee member for the following conferences:
+I've served as a Committee Member for the following conferences:
 
-- [IEEE Secure Development Conference (SecDev)](https://secdev.ieee.org/2024/program-committee/), where I peer-reviewed and discussed 4 papers, 2024 🖼️ [Recognition](../img/screenshots/SecDev2024.png)
+- [Jfokus 2026](https://www.jfokus.se/), where [I rated 300+](https://www.linkedin.com/posts/cesarsotovalero_jfokus-jfokus-callforspeakers-activity-7371260446370127873-KCXd) talks.
+- [IEEE Secure Development Conference (SecDev) 2024](https://secdev.ieee.org/2024/program-committee/), where I peer-reviewed and discussed 4 papers, 🖼️ [Recognition](../img/screenshots/SecDev2024.png)
 
 Also, my name is listed in the acknowledgments of the following papers:
 
@@ -63,7 +64,7 @@ I've supervised Master and Bachelor students in the following theses:
 
 I volunteered for the following events:
 
-- [Jfokus](https://www.jfokus.se/), **Volunteer**, February 2023 🖼️ [Picture](../img/pages/cesar/Jfokus2023.jpg)
+- [Jfokus 2023](https://www.jfokus.se/), **Volunteer**, February 2023 🖼️ [Picture](../img/pages/cesar/Jfokus2023.jpg)
 - [1st Continuous Integration (CI) Hackathon](https://hackathon.castor.kth.se/2019/), **Staff Member**, 2020 🖼️ [Recognition](../img/screenshots/travis-ci-hackaton.png)
 - [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), **Staff Member**, 2017 🖼️ [Recognition](../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.jpg)
 

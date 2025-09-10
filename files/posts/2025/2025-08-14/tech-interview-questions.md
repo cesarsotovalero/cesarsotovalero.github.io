@@ -144,3 +144,7 @@
 * What are the key goals and deliverables expected in the first few months?
 * What level of autonomy and decision-making authority does this position provide?
 * What’s one tip you wish you had known when you first started working here?
+* What are your expectations for me in this role?
+* Which are the more immediate projects I'll take on?
+* What are the biggest challenges that I might face in this position?
+* What learnings and developement opportunities will I have in this role?
