@@ -166,7 +166,7 @@ GEM
       ffi (~> 1.0)
     redcarpet (3.6.1)
     regexp_parser (2.10.0)
-    rexml (3.4.1)
+    rexml (3.4.2)
     rmagick (4.2.6)
     rouge (4.5.2)
     rubocop (1.75.8)
