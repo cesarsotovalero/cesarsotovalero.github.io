@@ -426,90 +426,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Z7Pv_gJUPIEOM1SFleJssJE7ezc",
-    "id": "n1t3XEAyUgQ",
-    "snippet": {
-      "publishedAt": "2024-10-21T06:00:32Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The AI Secret: Why Predictive Machine Learning Still Rules The Real World",
-      "description": "The buzz around AI has been skyrocketing, yet many misconceptions persist about its true capabilities today. This talk dives into lesser-known facts about AI, covering its origins, current real-world applications, and why predictive Machine Learning remains the most impactful AI technology. From AI's theoretical beginnings in 1943 to its practical applications in the financial sector, this talk will offer a fresh perspective on AI’s real-world value and its future.\n\nThis is a talk @ SEB Tech Day 2024\n\n⏰ TIMESTAMPS\n\n00:00 The AI hype is everywhere\n00:53 This AI stuff is very old\n02:11 A different world in 2010\n03:10 AI was not a thing 4 years ago\n05:18 The rise of Generative AI changed everything\n09:22 Demo with ChatGPT \n10:38 Misconceptions about Generative AI\n12:06 Example of fraud prevention systems\n14:07 Takeaways\n\n📺 WATCH NEXT\n\n→ My SEB's Tech Day 2023 talk https://youtu.be/7IoXciSucw4\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#artificialintelligence #generativeai #predictiveai #machinelearning",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/n1t3XEAyUgQ/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/n1t3XEAyUgQ/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/n1t3XEAyUgQ/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/n1t3XEAyUgQ/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/n1t3XEAyUgQ/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "generative ai",
-        "generative ai vs. predictive ai",
-        "ai in finance",
-        "machine learning for financial fraud prevention",
-        "generative ai in banks",
-        "generative ai limitations",
-        "generative ai is not perfect",
-        "financial sector ai applications",
-        "fraud prevention with ai",
-        "GhatGPT caveats",
-        "ChatGPT benchmarks",
-        "ChatGPT vs. Llama 3",
-        "AI for real",
-        "Deep Neural Networks",
-        "AI research applications",
-        "AI Misconceptions",
-        "Artificial Intelligence History",
-        "AI Myths",
-        "Future of AI"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "The AI Secret: Why Predictive Machine Learning Still Rules The Real World",
-        "description": "The buzz around AI has been skyrocketing, yet many misconceptions persist about its true capabilities today. This talk dives into lesser-known facts about AI, covering its origins, current real-world applications, and why predictive Machine Learning remains the most impactful AI technology. From AI's theoretical beginnings in 1943 to its practical applications in the financial sector, this talk will offer a fresh perspective on AI’s real-world value and its future.\n\nThis is a talk @ SEB Tech Day 2024\n\n⏰ TIMESTAMPS\n\n00:00 The AI hype is everywhere\n00:53 This AI stuff is very old\n02:11 A different world in 2010\n03:10 AI was not a thing 4 years ago\n05:18 The rise of Generative AI changed everything\n09:22 Demo with ChatGPT \n10:38 Misconceptions about Generative AI\n12:06 Example of fraud prevention systems\n14:07 Takeaways\n\n📺 WATCH NEXT\n\n→ My SEB's Tech Day 2023 talk https://youtu.be/7IoXciSucw4\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#artificialintelligence #generativeai #predictiveai #machinelearning"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT14M42S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "152",
-      "likeCount": "7",
-      "favoriteCount": "0",
-      "commentCount": "0"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "aZg9IZbce6k5b-4W1c7RsUc-UC4",
+    "etag": "bNBsimI9w_HVq9LDWJPZLO6nviw",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
@@ -581,7 +498,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "468",
+      "viewCount": "469",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -664,7 +581,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "kkcHPUVYYg-xF7AL0yeGEyGB9f0",
+    "etag": "HyQXbbXqgLU-Qv-YlP5Zot0g7gI",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -725,15 +642,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12753",
-      "likeCount": "645",
+      "viewCount": "12760",
+      "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "295"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "urUIfjem1YU_y-7ccv7ru2fNkso",
+    "etag": "WXgusOxPKL3XUfLFHkK31Zm4ELY",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -795,7 +712,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "650",
+      "viewCount": "654",
       "likeCount": "48",
       "favoriteCount": "0",
       "commentCount": "24"
@@ -865,7 +782,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KYTmAP4ZK5MEpjiu6f-KSL056z0",
+    "etag": "ywdgpM6rnSzvT2247uXxVn92Ps8",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -919,7 +836,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "429",
+      "viewCount": "433",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -996,7 +913,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Bvvn8Ut6gMABEKfdJZ9O57XFTjs",
+    "etag": "7DBb846A8dB692hCfblJWKQrDpg",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -1055,7 +972,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "128",
+      "viewCount": "129",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1063,69 +980,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "y95rZVThC5Lw9Pfej0rqLRanxCs",
-    "id": "7IoXciSucw4",
-    "snippet": {
-      "publishedAt": "2023-10-14T22:00:04Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Preventing Software Supply Chain Attacks With Dependency Management Best Practices",
-      "description": "Talk at SEB's Tech Day in Arenastaden Stockholm, September 2023\n\n# Takeaways\n\n* Software supply chain attacks are real.\n* There are ways to prevent and mitigate this particular threat.\n* You can start by knowing your dependencies, updating, and cleaning them.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwaredevelopment #vulnerabilities #dependencies",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/7IoXciSucw4/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/7IoXciSucw4/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/7IoXciSucw4/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/7IoXciSucw4/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/7IoXciSucw4/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "Preventing Software Supply Chain Attacks With Dependency Management Best Practices",
-        "description": "Talk at SEB's Tech Day in Arenastaden Stockholm, September 2023\n\n# Takeaways\n\n* Software supply chain attacks are real.\n* There are ways to prevent and mitigate this particular threat.\n* You can start by knowing your dependencies, updating, and cleaning them.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwaredevelopment #vulnerabilities #dependencies"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT15M",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "169",
-      "likeCount": "7",
-      "favoriteCount": "0",
-      "commentCount": "1"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "NtTWAGSXC2R1AhEVQdjlhsTXagQ",
+    "etag": "J2R7PQ6IRazJ3VmFmCrkaVbVFT8",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -1179,7 +1034,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "178",
+      "viewCount": "180",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1526,7 +1381,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8vTBO6QPsntIsBaAiqwSJStT3o0",
+    "etag": "E15RygLsOZJkwK-UJTYqQXWMXgs",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -1586,7 +1441,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "269",
+      "viewCount": "272",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "11"
