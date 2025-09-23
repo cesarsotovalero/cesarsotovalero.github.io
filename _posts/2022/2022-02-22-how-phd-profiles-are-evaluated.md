@@ -3,7 +3,7 @@ layout: post
 title: Staying in Academia&#58; How PhD Profiles are Evaluated?
 subtitle: An overview
 tags: science
-description: For those who decided to stay in academia, achieving a position as a tenured professor is not easy, to say the least. There are several evaluation layers to pass before reaching this position, so it is better to be prepared. Research profiles are be carefully evaluated before being accepted or rejected, so it is better for you to prepare well for what is coming.
+description: For those who decided to stay in academia, getting a position as a tenured professor is not easy, to say the least. There are several evaluation rounds to pass before even considering the posibility of reaching this position. Researchers' profiles are carefully evaluated before being accepted or rejected, so it is better for you to prepare well for what is coming.
 keywords:
   - career path,
   - academia,
