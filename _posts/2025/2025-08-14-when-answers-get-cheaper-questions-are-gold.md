@@ -1,7 +1,7 @@
 ---
 layout: post
 title: When Answers Get Cheaper, Questions Are Gold
-subtitle: In a world full of free knowledge, be the one who asks for the unknown
+subtitle: In a world full of free knowledge, be the one asking for the unknown
 tags: career
 description: |
   Knowledge is abundant now. The ability to ask insightful questions is becoming increasingly valuable. I believe that mastering the art of questioning can unlock new opportunities and get the most of the current AI landscape. This post dives into techniques, patterns, and anti-patterns I've learned over time from top questioners. It covers real-world examples and best practices targeting both humans and AI alike.
