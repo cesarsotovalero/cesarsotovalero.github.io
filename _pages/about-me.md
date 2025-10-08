@@ -26,7 +26,7 @@ More importantly, these are [his professional values](./my-professional-values).
 
 # Research
 
-César has [authored 30+ research papers](./publications) and [involved in academic services](./service).
+César has [authored 30+ research papers](./publications) and [got involved in academic services](./service).
 
 His research efforts have been [recognized with awards](./awards).
 
