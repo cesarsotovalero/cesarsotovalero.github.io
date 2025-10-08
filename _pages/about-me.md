@@ -14,51 +14,51 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 # TL;DR
 
-I'm a [computer scientist](./publications), [software engineer](./software), and [content creator](./blog).
+César is a [computer scientist](./publications), [software engineer](./software), and [content creator](./blog).
 
-I'm passionate about software, research, and education.
+Check out his [personal blog](https://www.cesarsotovalero.net/blog), [YouTube channel](https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg), or [follow on LinkedIn](https://www.linkedin.com/in/cesarsotovalero) where he shares insights to help engineers learn, build, and grow.
 
-Here's my one-page [résumé](../files/CV/cesar-resume.pdf).
+Here's his [one-page résumé](../files/CV/cesar-resume.pdf).
 
-Here're [my professional values](./my-professional-values).
+More importantly, these are [his professional values](./my-professional-values).
 
 **Current Job:** Data Scientist, working in [SEB](https://seb.se) since April 2023 <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
 
 # Research
 
-I've [authored 30+ research papers](./publications) and got [involved in academic services](./service).
+César has [authored 30+ research papers](./publications) and [involved in academic services](./service).
 
-My research efforts have been [recognized with awards](./awards).
+His research efforts have been [recognized with awards](./awards).
 
 # Software
 
-I've created [a few open-source projects](./software), some with 280+ <i class="fas fa-star"></i> on GitHub.
+César created [a few popular open-source projects](./software), some with 300+ <i class="fas fa-star"></i> on GitHub.
 
 # Education
 
 {% youtube Ub684G_aM5Q %}
 
-I hold a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se) (graduated in 2023).[^4]
+César earned a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se) (graduated in 2023).[^4]
 
-My PhD work was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin).
+His PhD work was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin).
 
-My PhD was about software debloating,[^1] here's [my PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf).
+The PhD was about software debloating,[^1] look at [his PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf) to know more.
 
-I also hold a [BSc](<../../files/certificates/BSc_Degree_(certified)_eng.pdf>) and [MSc](<../../files/certificates/MSc_Degree_(certified)_eng.pdf>) in Computer Science.
+He also hold a [BSc](<../../files/certificates/BSc_Degree_(certified)_eng.pdf>) and [MSc](<../../files/certificates/MSc_Degree_(certified)_eng.pdf>) in Computer Science.
 
-Here's a list of [my completed courses](./courses) (inc. MOOCs).
+More importantly, he's a lifelong learner, keeping a track of [his completed courses](./courses) (inc. MOOCs).
 
-A long time ago, I [participated in ACM-ICPC programming contests](./competitions).
+A long time ago, César [participated in ACM-ICPC programming contests](./competitions).
 
 # Misc
 
-Out of work, I enjoy quality time with my family, reading books, and [running](./races).
+Out of work, César enjoys quality time with his family, reading books, and [running](./races) (his current best time for 10K is 38:00).
 
-I like epic music. Some of my favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), and [Zack Hemsey](https://www.youtube.com/user/zackhemsey).
+He also likes epic music. Some of his favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), and [Zack Hemsey](https://www.youtube.com/user/zackhemsey).
 
-My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
+His very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
-# Contact Me
+# Contact Him
 
 <!--
      After implementing this contact form make sure
@@ -66,7 +66,7 @@ My very <span style="background-color:#042742;color:white;border-radius:4px;">&n
      2. you verify your form on formspree.io.
 -->
 
-You can email me using the form below:
+You can email César using the form below:
 
 <form id="contact-me" class="wj-contact" action="https://formspree.io/mrgqpknn" method="POST">
     <input type="text" name="email" placeholder="Your email goes here">
@@ -188,7 +188,7 @@ form.wj-contact input[type="submit"]:active {
 
 <br>
 
-👉 Have insights or research ideas? Please reach out, I'm always [open to collaborations](./collaborations).
+👉 Have insights or research ideas? Please reach out, César is always [open to collaborations](./collaborations).
 
 <p class="post-meta" style="margin-top: 60px;">
    <i class="fas fa-user-edit"></i>
@@ -197,5 +197,5 @@ form.wj-contact input[type="submit"]:active {
 
 # Footnotes
 
-[^1]: For more on these topics, see [my living review of software debloating papers](./software-debloating-papers), or consult [my list of software debloating tools](./software-debloating-tools).
-[^4]: My PhD was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.
+[^1]: For more on these topics, see [his living review of software debloating papers](./software-debloating-papers), or consult [his list of software debloating tools](./software-debloating-tools).
+[^4]: César's PhD was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.

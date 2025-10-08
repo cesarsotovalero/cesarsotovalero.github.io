@@ -42,7 +42,7 @@ I've co-reviewed papers for the following journals and conferences:
 
 I've served as a Committee Member for the following conferences:
 
-- [Jfokus 2026](https://www.jfokus.se/), where [I rated 300+](https://www.linkedin.com/posts/cesarsotovalero_jfokus-jfokus-callforspeakers-activity-7371260446370127873-KCXd) talks. 🖼️ [Recognition](../img/Jfokus2026-Program-Committee.jfif)
+- [Jfokus 2026](https://www.jfokus.se/), where [I rated 660+ talk proposals](https://www.linkedin.com/posts/cesarsotovalero_jfokus-jfokus-callforspeakers-activity-7371260446370127873-KCXd). 🖼️ [Recognition](../img/screenshots/Jfokus2026-Program-Committee.jfif)
 - [IEEE Secure Development Conference (SecDev) 2024](https://secdev.ieee.org/2024/program-committee/), where I peer-reviewed and discussed 4 papers, 🖼️ [Recognition](../img/screenshots/SecDev2024.png)
 
 Also, my name is listed in the acknowledgments of the following papers:
