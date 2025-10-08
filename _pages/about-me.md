@@ -38,13 +38,13 @@ César created [a few popular open-source projects](./software), some with 300+ 
 
 {% youtube Ub684G_aM5Q %}
 
-César earned a PhD in Computer Science from [KTH Royal Institute of Technology](https://kth.se) (graduated in 2023).[^4]
+César earned a PhD in Computer Science in 2023 from [KTH Royal Institute of Technology](https://kth.se).[^4]
 
 His PhD work was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin).
 
-The PhD was about software debloating,[^1] look at [his PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf) to know more.
+César's PhD was about software debloating,[^1] you can look at [his PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf) to know more.
 
-He also hold a [BSc](<../../files/certificates/BSc_Degree_(certified)_eng.pdf>) and [MSc](<../../files/certificates/MSc_Degree_(certified)_eng.pdf>) in Computer Science.
+He also holds a [BSc](<../../files/certificates/BSc_Degree_(certified)_eng.pdf>) and [MSc](<../../files/certificates/MSc_Degree_(certified)_eng.pdf>) in Computer Science.
 
 More importantly, he's a lifelong learner, keeping a track of [his completed courses](./courses) (inc. MOOCs).
 
@@ -52,7 +52,7 @@ A long time ago, César [participated in ACM-ICPC programming contests](./compet
 
 # Misc
 
-Out of work, César enjoys quality time with his family, reading books, and [running](./races) (his current best time for 10K is 38:00).
+Out of work, César enjoys spending quality time with his family, reading books, and [running](./races) (his current best time for 10K is 38:00).
 
 He also likes epic music. Some of his favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), and [Zack Hemsey](https://www.youtube.com/user/zackhemsey).
 
