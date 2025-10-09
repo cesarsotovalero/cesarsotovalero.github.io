@@ -32,7 +32,7 @@ His research efforts have been [recognized with awards](./awards).
 
 # Software
 
-César has created [a few popular open-source projects](./software), some with 300+ <i class="fas fa-star"></i> on GitHub.
+César has created [open-source projects](./software), some with 300+ <i class="fas fa-star"></i> on GitHub.
 
 # Education
 
