@@ -16,7 +16,7 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 César is a [computer scientist](./publications), [software engineer](./software), and [content creator](./blog).
 
-Check out his [personal blog](https://www.cesarsotovalero.net/blog), [YouTube channel](https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg), or [follow on LinkedIn](https://www.linkedin.com/in/cesarsotovalero) where he shares insights to help engineers learn, build, and grow.
+He shares insights to help engineers learn, build, and grow; check out his [blog](https://www.cesarsotovalero.net/blog), [YouTube channel](https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg), or connect with him on [LinkedIn](https://www.linkedin.com/in/cesarsotovalero).
 
 Here's his [one-page résumé](../files/CV/cesar-resume.pdf).
 
@@ -26,13 +26,13 @@ More importantly, these are [his professional values](./my-professional-values).
 
 # Research
 
-César has [authored 30+ research papers](./publications) and [got involved in academic services](./service).
+César has [authored 30+ research papers](./publications) and [been involved in academic services](./service).
 
 His research efforts have been [recognized with awards](./awards).
 
 # Software
 
-César created [a few popular open-source projects](./software), some with 300+ <i class="fas fa-star"></i> on GitHub.
+César has created [a few popular open-source projects](./software), some with 300+ <i class="fas fa-star"></i> on GitHub.
 
 # Education
 
@@ -40,19 +40,19 @@ César created [a few popular open-source projects](./software), some with 300+ 
 
 César earned a PhD in Computer Science in 2023 from [KTH Royal Institute of Technology](https://kth.se).[^4]
 
-His PhD work was supervised by [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin).
+His PhD work was supervised by Profs. [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin).
 
 César's PhD was about software debloating,[^1] you can look at [his PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf) to know more.
 
 He also holds a [BSc](<../../files/certificates/BSc_Degree_(certified)_eng.pdf>) and [MSc](<../../files/certificates/MSc_Degree_(certified)_eng.pdf>) in Computer Science.
 
-More importantly, he's a lifelong learner, keeping a track of [his completed courses](./courses) (inc. MOOCs).
+More importantly, he's a lifelong learner, keeping track of [his completed courses and MOOCs](./courses).
 
 A long time ago, César [participated in ACM-ICPC programming contests](./competitions).
 
 # Misc
 
-Out of work, César enjoys spending quality time with his family, reading books, and [running](./races) (his current best time for 10K is 38:00).
+Outside of work, César enjoys spending quality time with his family, reading books, and [running](./races) (his current best 10K time is 48:00).
 
 He also likes epic music. Some of his favorites are [Two Steps From Hell](https://www.youtube.com/watch?v=9O4_awEHh1g), [Hans Zimmer](https://www.youtube.com/watch?v=hHwqfT4mhfI), and [Zack Hemsey](https://www.youtube.com/user/zackhemsey).
 
