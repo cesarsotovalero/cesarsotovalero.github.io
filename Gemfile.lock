@@ -158,7 +158,7 @@ GEM
     public_suffix (6.0.2)
     pygments.rb (2.4.1)
     racc (1.8.1)
-    rack (2.2.16)
+    rack (2.2.20)
     rainbow (3.1.1)
     rake (13.3.0)
     rb-fsevent (0.11.2)
