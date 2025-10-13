@@ -1,6 +1,6 @@
 {
   "kind": "youtube#channelListResponse",
-  "etag": "6PatzgFRxvY_n_vRvXXlihzSuOw",
+  "etag": "Yak9UjB_9Sm2ADxpxe1mmMpfv5k",
   "pageInfo": {
     "totalResults": 1,
     "resultsPerPage": 5
@@ -8,11 +8,11 @@
   "items": [
     {
       "kind": "youtube#channel",
-      "etag": "TKwcgdYge5Bosw-6CUvIj0e3thk",
+      "etag": "ik66qLhDoC49EGpsymxc98douws",
       "id": "UCR4rI98w6-MqYoCS6jR9LGg",
       "snippet": {
         "title": "C\u00e9sar Soto Valero",
-        "description": "I specialize in simplifying complexity. I break down challenging software engineering and AI concepts into clear, practical insights that you can apply right away. My mission is to empower you with strong fundamentals and share the real-world lessons I\u2019ve gained from over two decades of higher education, academic research, and hands-on industry experience.\n",
+        "description": "C\u00e9sar traveled from Cuba to Sweden to pursue his life\u2019s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down AI & SW concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, C\u00e9sar shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, academic research, and the software industry.",
         "customUrl": "@cesarsotovalero",
         "publishedAt": "2016-03-24T20:49:46Z",
         "thumbnails": {
@@ -32,15 +32,16 @@
             "height": 800
           }
         },
+        "defaultLanguage": "en",
         "localized": {
           "title": "C\u00e9sar Soto Valero",
-          "description": "I specialize in simplifying complexity. I break down challenging software engineering and AI concepts into clear, practical insights that you can apply right away. My mission is to empower you with strong fundamentals and share the real-world lessons I\u2019ve gained from over two decades of higher education, academic research, and hands-on industry experience.\n"
+          "description": "C\u00e9sar traveled from Cuba to Sweden to pursue his life\u2019s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down AI & SW concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, C\u00e9sar shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, academic research, and the software industry."
         },
         "country": "SE"
       },
       "statistics": {
-        "viewCount": "18839",
-        "subscriberCount": "321",
+        "viewCount": "19028",
+        "subscriberCount": "326",
         "hiddenSubscriberCount": false,
         "videoCount": "23"
       }
