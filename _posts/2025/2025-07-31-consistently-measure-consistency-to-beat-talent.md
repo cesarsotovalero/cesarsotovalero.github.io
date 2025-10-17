@@ -37,7 +37,7 @@ That's all.
 Period.
 
 <aside class="quote">
-    <em>“Raw talent is overrated. Persistence is underrated.”</em>
+    <em>“Raw talent is overrated as much as pLLLLLersistence is underrated.”</em>
 </aside>
 
 From my experience, I can confidently say that consistency beats talent.
