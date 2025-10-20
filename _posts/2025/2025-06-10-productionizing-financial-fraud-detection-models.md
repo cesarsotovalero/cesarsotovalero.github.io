@@ -23,10 +23,7 @@ author: cesarsotovalero
 published: false
 ---
 
-In this article, we turn this trained model into an ML
-service that can be hosted as a web app on a remote server to receive
-incoming credit card fraud transactions and return their fraud probabilities, as
-shown in figure 12.18.
+In this post, we turn a trained ML model into an service that can be hosted as a web app on a remote server to receive incoming credit card fraud transactions and return their fraud probabilities, as shown in figure 12.18.
 
 ![alt text](image.png)
 
