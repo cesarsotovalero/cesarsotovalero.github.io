@@ -1,7 +1,96 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "gTXOFkPmFIWfat5Vdsq9hivj1Vc",
+    "etag": "1rCFZv6ZC-VXBcCHa6wOKW31xJM",
+    "id": "Hd04NJej9iE",
+    "snippet": {
+      "publishedAt": "2025-10-19T15:38:38Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "How AI Is Killing the Internet’s Business Model (And What Comes Next)",
+      "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Don’t forget to like, subscribe, and drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0?si=RSaC5qEPCfVRx3GX\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 GitHub: https://github.com/cesarsotovalero\n🧑‍💼 LinkedIn: https://www.linkedin.com/in/cesarsotovalero",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Hd04NJej9iE/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Hd04NJej9iE/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Hd04NJej9iE/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/Hd04NJej9iE/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/Hd04NJej9iE/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "internet business model",
+        "how AI is changing the internet",
+        "answer engines",
+        "AI economy",
+        "large language models",
+        "future of content creation",
+        "robots.txt",
+        "AI scraping",
+        "internet economy",
+        "digital economy",
+        "AI and SEO",
+        "SEO is dead",
+        "traffic monetization",
+        "content monetization",
+        "media business model",
+        "future of web",
+        "future of search",
+        "AI answer engines",
+        "creator economy",
+        "sustainable internet",
+        "content economy",
+        "how AI impacts creators",
+        "AI business model",
+        "AI and knowledge",
+        "AI and copyright"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "How AI Is Killing the Internet’s Business Model (And What Comes Next)",
+        "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Don’t forget to like, subscribe, and drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0?si=RSaC5qEPCfVRx3GX\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 GitHub: https://github.com/cesarsotovalero\n🧑‍💼 LinkedIn: https://www.linkedin.com/in/cesarsotovalero"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT18M32S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "27",
+      "likeCount": "8",
+      "favoriteCount": "0",
+      "commentCount": "2"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "csvJXbXxmpFQq6zDU_k_8uc-YiA",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -76,10 +165,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "529",
-      "likeCount": "24",
+      "viewCount": "629",
+      "likeCount": "29",
       "favoriteCount": "0",
-      "commentCount": "7"
+      "commentCount": "11"
     }
   },
   {
@@ -177,7 +266,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "v_5qxZTkLmn9fMDBgtr7s1lRlys",
+    "etag": "8OGFSYlk9tZ_ZGn0MYUCa6RtUv0",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -252,7 +341,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "146",
+      "viewCount": "147",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -260,7 +349,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "cn5zsLIU6j0nZK2mPCCr2IKcHj8",
+    "etag": "kolsXbhycV8r613UrvKGdMW-jrw",
     "id": "SQY2IED6vFQ",
     "snippet": {
       "publishedAt": "2024-12-14T22:45:00Z",
@@ -336,7 +425,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "161",
+      "viewCount": "162",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -344,7 +433,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "hds-8gHElvC9b6PvcHTBsyyGCaI",
+    "etag": "yME1u9ph1dhm2c3QO_PUEGTrfKQ",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -418,7 +507,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "570",
+      "viewCount": "571",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -747,7 +836,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "efzXGfqNTDIbgViUpDCoISbiTEI",
+    "etag": "B8AXP-GLydRL0oWXSZGeul3QbIo",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -808,7 +897,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12771",
+      "viewCount": "12777",
       "likeCount": "645",
       "favoriteCount": "0",
       "commentCount": "296"
@@ -816,7 +905,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "J4QTPuqjQ82Z-eZb3BNRGFirrAk",
+    "etag": "gCSe5V0KQ03bgpLvKhaJ8iiwPB8",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -878,7 +967,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "675",
+      "viewCount": "688",
       "likeCount": "51",
       "favoriteCount": "0",
       "commentCount": "25"
@@ -886,7 +975,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "d3C2ybAYbDX3hAkrP-YDgSxfOo4",
+    "etag": "hxDSmNEkLvnJm_KLDC_3ackKqUA",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -940,7 +1029,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "110",
+      "viewCount": "111",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -948,7 +1037,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "HgVCX1N0gdW2O4Ef2U-KgtA9jxA",
+    "etag": "U8VKFaUq2029wAfdfL5wB__116k",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -1002,15 +1091,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "528",
-      "likeCount": "21",
+      "viewCount": "567",
+      "likeCount": "22",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "1q3kThjCU1hlra16Lizgt0UpPT4",
+    "etag": "lnHIfdo95FUfVSORlEDC7NCb76U",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -1071,7 +1160,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "399",
+      "viewCount": "410",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1542,7 +1631,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "aF998Xx7haBQDtueiPlOvqRz1Zs",
+    "etag": "Dqn2ZYoSCkpcbrKKeMHGKrLhlpA",
     "id": "cePEl485E_s",
     "snippet": {
       "publishedAt": "2021-08-31T06:04:20Z",
@@ -1601,7 +1690,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "208",
+      "viewCount": "209",
       "likeCount": "13",
       "favoriteCount": "0",
       "commentCount": "0"
