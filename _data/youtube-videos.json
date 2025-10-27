@@ -1,13 +1,102 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "1rCFZv6ZC-VXBcCHa6wOKW31xJM",
+    "etag": "YOf10m2xE4Ein8Z-m5tPxXgCD0Y",
+    "id": "756pgcDQO5E",
+    "snippet": {
+      "publishedAt": "2025-10-26T13:46:09Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "How Scientists Fool Themselves: 5 Psychological Biases & Their Countermoves",
+      "description": "Most scientists believe psychological bias is something that happens to 𝘰𝘵𝘩𝘦𝘳 people. But in reality, it’s the invisible force shaping every hypothesis, experiment, and “significant result.” \n\nIn this video, we'll break down the 5 most dangerous biases in science. Along the way, you'll get tips to beat them before they wreck your research, your career, or your life.\n\n👉 Don’t forget to like, subscribe, and drop a comment with your thoughts.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n00:28 Optimism Bias\n03:57 Confirmation Bias\n08:26 Self-Serving Bias\n11:10 Sunk-Cost Fallacy\n15:01 Groupthink Bias\n19:02 Final Reflection\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎\n→ https://youtu.be/N7pY8VAt6g4",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/756pgcDQO5E/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/756pgcDQO5E/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/756pgcDQO5E/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/756pgcDQO5E/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/756pgcDQO5E/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "scientific bias",
+        "cognitive bias",
+        "confirmation bias",
+        "optimism bias",
+        "self serving bias",
+        "sunk cost fallacy",
+        "groupthink",
+        "psychology of science",
+        "research bias",
+        "bias in science",
+        "scientific thinking",
+        "how to think like a scientist",
+        "academic research",
+        "research integrity",
+        "cognitive traps",
+        "psychology for scientists",
+        "cesarsotovalero",
+        "science explained",
+        "cargo cult science",
+        "critical thinking",
+        "bias awareness",
+        "scientific mindset",
+        "scientific skepticism",
+        "research mistakes",
+        "scientific truth"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "How Scientists Fool Themselves: 5 Psychological Biases & Their Countermoves",
+        "description": "Most scientists believe psychological bias is something that happens to 𝘰𝘵𝘩𝘦𝘳 people. But in reality, it’s the invisible force shaping every hypothesis, experiment, and “significant result.” \n\nIn this video, we'll break down the 5 most dangerous biases in science. Along the way, you'll get tips to beat them before they wreck your research, your career, or your life.\n\n👉 Don’t forget to like, subscribe, and drop a comment with your thoughts.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n00:28 Optimism Bias\n03:57 Confirmation Bias\n08:26 Self-Serving Bias\n11:10 Sunk-Cost Fallacy\n15:01 Groupthink Bias\n19:02 Final Reflection\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎\n→ https://youtu.be/N7pY8VAt6g4"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT19M42S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "26",
+      "likeCount": "6",
+      "favoriteCount": "0",
+      "commentCount": "3"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "Hl-bTgtI4Gcjbl-VKRFfQ7TMXWw",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "How AI Is Killing the Internet’s Business Model (And What Comes Next)",
-      "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Don’t forget to like, subscribe, and drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0?si=RSaC5qEPCfVRx3GX\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 GitHub: https://github.com/cesarsotovalero\n🧑‍💼 LinkedIn: https://www.linkedin.com/in/cesarsotovalero",
+      "title": "How AI Is Killing the Internet Business Model (and what's next)",
+      "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0?si=RSaC5qEPCfVRx3GX\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 GitHub: https://github.com/cesarsotovalero\n🧑‍💼 LinkedIn: https://www.linkedin.com/in/cesarsotovalero",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/Hd04NJej9iE/default.jpg",
@@ -67,8 +156,8 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "How AI Is Killing the Internet’s Business Model (And What Comes Next)",
-        "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Don’t forget to like, subscribe, and drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0?si=RSaC5qEPCfVRx3GX\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 GitHub: https://github.com/cesarsotovalero\n🧑‍💼 LinkedIn: https://www.linkedin.com/in/cesarsotovalero"
+        "title": "How AI Is Killing the Internet Business Model (and what's next)",
+        "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0?si=RSaC5qEPCfVRx3GX\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 GitHub: https://github.com/cesarsotovalero\n🧑‍💼 LinkedIn: https://www.linkedin.com/in/cesarsotovalero"
       },
       "defaultAudioLanguage": "en"
     },
@@ -82,15 +171,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "27",
-      "likeCount": "8",
+      "viewCount": "107",
+      "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "2"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "csvJXbXxmpFQq6zDU_k_8uc-YiA",
+    "etag": "QLkFkbQdSlBstD_42DdgAHl3wLI",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -165,10 +254,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "629",
-      "likeCount": "29",
+      "viewCount": "717",
+      "likeCount": "34",
       "favoriteCount": "0",
-      "commentCount": "11"
+      "commentCount": "12"
     }
   },
   {
@@ -266,7 +355,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8OGFSYlk9tZ_ZGn0MYUCa6RtUv0",
+    "etag": "k8GL05SPAyoZNDJrx9JHZL_5Rh4",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -341,7 +430,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "147",
+      "viewCount": "149",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -433,12 +522,12 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "yME1u9ph1dhm2c3QO_PUEGTrfKQ",
+    "etag": "9KNJjdSJkVFc9d3n7VW_HmQQasQ",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "AI will NOT replace Software Engineers (for now)",
+      "title": "Why AI will NOT replace Software Engineers (for now)",
       "description": "AI systems  are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around AI replacing software engineers, are our jobs really at risk? In this video, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. We’ll discuss the potential of AI to assist in common development activities, and where it still falls short when it comes to creative problem-solving and human intuition. Welcome to the discussion 🧬 vs. 🤖 !!!\n\n⏰ TIMESTAMPS\n\n0:00 - AI’s impact on software engineering\n02:20 - Sensational headlines and misconceptions\n05:34 - The essence of software engineering\n09:19 - The value in the small human details\n12:12 - Can AI fully replace software engineers?\n14:23 - How AI can help in software engineering\n16:16 - Can AI replace junior engineers?\n18:12 - Final thoughts\n\n📺 WATCH NEXT\n\n→ https://youtu.be/DqL3-bnSCy0\n\n🌍 RELATED CONTENT\n\n→ The companion blog post: https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html\n\n→ Blog post: “Is There a Future for Software Engineers? The Impact of AI [2024]\" https://brainhub.eu/library/software-developer-age-of-ai\n\nWHO AM I❓\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AI #SoftwareEngineering #AIVsEngineers #TechCareer",
       "thumbnails": {
         "default": {
@@ -492,7 +581,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "AI will NOT replace Software Engineers (for now)",
+        "title": "Why AI will NOT replace Software Engineers (for now)",
         "description": "AI systems  are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around AI replacing software engineers, are our jobs really at risk? In this video, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. We’ll discuss the potential of AI to assist in common development activities, and where it still falls short when it comes to creative problem-solving and human intuition. Welcome to the discussion 🧬 vs. 🤖 !!!\n\n⏰ TIMESTAMPS\n\n0:00 - AI’s impact on software engineering\n02:20 - Sensational headlines and misconceptions\n05:34 - The essence of software engineering\n09:19 - The value in the small human details\n12:12 - Can AI fully replace software engineers?\n14:23 - How AI can help in software engineering\n16:16 - Can AI replace junior engineers?\n18:12 - Final thoughts\n\n📺 WATCH NEXT\n\n→ https://youtu.be/DqL3-bnSCy0\n\n🌍 RELATED CONTENT\n\n→ The companion blog post: https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html\n\n→ Blog post: “Is There a Future for Software Engineers? The Impact of AI [2024]\" https://brainhub.eu/library/software-developer-age-of-ai\n\nWHO AM I❓\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AI #SoftwareEngineering #AIVsEngineers #TechCareer"
       },
       "defaultAudioLanguage": "en"
@@ -507,7 +596,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "571",
+      "viewCount": "572",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -598,7 +687,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "x-sNalYub02wRbF3iaFNewcGh2c",
+    "etag": "6uSOJX6pQL2Ox1Ha31GrJfyTduM",
     "id": "n1t3XEAyUgQ",
     "snippet": {
       "publishedAt": "2024-10-21T06:00:32Z",
@@ -673,7 +762,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "154",
+      "viewCount": "156",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -761,7 +850,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "aD0S1XOWbhdsq0ZDakLWwym5XoU",
+    "etag": "ooOkr0W2UhlPC6Y9ATgJjHZSqnw",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
@@ -828,7 +917,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "138",
+      "viewCount": "141",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -836,7 +925,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "B8AXP-GLydRL0oWXSZGeul3QbIo",
+    "etag": "e3YEMMY2aZrT3CwVGiTpjEpO0bo",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -897,15 +986,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12777",
-      "likeCount": "645",
+      "viewCount": "12785",
+      "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "296"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "gCSe5V0KQ03bgpLvKhaJ8iiwPB8",
+    "etag": "4f3qi7kM1Nd_YvVBfiG8yrgxAlU",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -967,20 +1056,20 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "688",
-      "likeCount": "51",
+      "viewCount": "696",
+      "likeCount": "50",
       "favoriteCount": "0",
       "commentCount": "25"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "hxDSmNEkLvnJm_KLDC_3ackKqUA",
+    "etag": "k5Sth0pAyzWi9ZjZTYLvG0xRyX8",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "My step-by-step framework to Peer-Review research papers like an “Expert”",
+      "title": "How to Peer-Review Research Papers Like an “Expert”",
       "description": "During the last years, I’ve peer-reviewed more than 10 research papers submitted to top journals and conferences. As a PhD student, I’ve also played on the other side of the fence, submitting my own papers to similar venues and getting all kinds of positive and negative peer reviews in response. In this video, I share my personal approach to delivering efficient and effective peer reviews. Whether you're new to peer reviewing or looking to refine your process, this video covers practical strategies that can help you evaluate research papers with confidence and clarity.\n\n00:00 - Introduction\n01:31 - Understanding Peer-Review\n04:15 - Receiving an Invitation to Peer-Review\n05:25 - Quick Peer-Review\n08:11 - Detailed Peer-Review\n09:50 - Good vs. Bad Peer-Reviews\n11:47 - Peer-Reviewing Template\n12:31 - Importance of Effective Peer-Reviewing \n\nEXTERNAL RESOURCES\n\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html\n\n🎈 Here's the peer-review template that I use: https://tinyurl.com/46kxnjha\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#PeerReview #ResearchPapers #Academia",
       "thumbnails": {
         "default": {
@@ -1014,7 +1103,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "My step-by-step framework to Peer-Review research papers like an “Expert”",
+        "title": "How to Peer-Review Research Papers Like an “Expert”",
         "description": "During the last years, I’ve peer-reviewed more than 10 research papers submitted to top journals and conferences. As a PhD student, I’ve also played on the other side of the fence, submitting my own papers to similar venues and getting all kinds of positive and negative peer reviews in response. In this video, I share my personal approach to delivering efficient and effective peer reviews. Whether you're new to peer reviewing or looking to refine your process, this video covers practical strategies that can help you evaluate research papers with confidence and clarity.\n\n00:00 - Introduction\n01:31 - Understanding Peer-Review\n04:15 - Receiving an Invitation to Peer-Review\n05:25 - Quick Peer-Review\n08:11 - Detailed Peer-Review\n09:50 - Good vs. Bad Peer-Reviews\n11:47 - Peer-Reviewing Template\n12:31 - Importance of Effective Peer-Reviewing \n\nEXTERNAL RESOURCES\n\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html\n\n🎈 Here's the peer-review template that I use: https://tinyurl.com/46kxnjha\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#PeerReview #ResearchPapers #Academia"
       },
       "defaultAudioLanguage": "en"
@@ -1029,7 +1118,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "111",
+      "viewCount": "112",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1037,7 +1126,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "U8VKFaUq2029wAfdfL5wB__116k",
+    "etag": "2usP8dd1ZH146QiBQx1pDMu3YwU",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -1091,7 +1180,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "567",
+      "viewCount": "587",
       "likeCount": "22",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1168,7 +1257,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "d6E782CrP2MxrNFEja_vu4ueh0A",
+    "etag": "Bk4u_xzLPhiJO6Yx66jYT36WZ84",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -1227,7 +1316,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "130",
+      "viewCount": "133",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1235,7 +1324,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KF8-Iaj9GPCnDZsTTcA3BNX7JiU",
+    "etag": "3S2qFZVJavUCnyTpsBE1lrVT6fU",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -1289,7 +1378,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "175",
+      "viewCount": "178",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1297,7 +1386,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "-RWLfMDNTYgBkTusRhdVSdXBuC0",
+    "etag": "9pngcj67PktK4zgmDGQ8KwmyuVc",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -1351,7 +1440,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "185",
+      "viewCount": "186",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1428,7 +1517,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "E512Gb2tVyh2H7YuLZTxz01eoUI",
+    "etag": "cURVYRWVB2FLq_H7DFEQKcwunj4",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -1488,7 +1577,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "415",
+      "viewCount": "416",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1563,7 +1652,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "4FrawuxtkOlFxhEmHNS0qUkF3lg",
+    "etag": "sJniSlgKmH_6BbzPutBbWyqZ8UY",
     "id": "3nptpGpaYws",
     "snippet": {
       "publishedAt": "2021-09-03T10:05:40Z",
@@ -1623,7 +1712,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "111",
+      "viewCount": "112",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1631,7 +1720,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Dqn2ZYoSCkpcbrKKeMHGKrLhlpA",
+    "etag": "W3I92MG0RSg07i51V4O4a32jbcI",
     "id": "cePEl485E_s",
     "snippet": {
       "publishedAt": "2021-08-31T06:04:20Z",
@@ -1690,7 +1779,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "209",
+      "viewCount": "211",
       "likeCount": "13",
       "favoriteCount": "0",
       "commentCount": "0"
