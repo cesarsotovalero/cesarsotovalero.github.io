@@ -14,7 +14,7 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 # TL;DR
 
-César is a [computer scientist](./publications), [software engineer](./software), and [content creator](./blog).
+César is a [computer scientist](./publications) and [software engineer](./software).
 
 He's on a mission to help engineers learn, build, and grow faster. Check out his [personal blog](https://www.cesarsotovalero.net/blog), [YouTube channel](https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg), or connect with him on [LinkedIn](https://www.linkedin.com/in/cesarsotovalero).
 
