@@ -1,6 +1,6 @@
 {
   "kind": "youtube#channelListResponse",
-  "etag": "7-OiGUl5F70FG0Mr9CNZ-vW-w2I",
+  "etag": "hbIpKF6LPtw-dxkeT5hpYZS_8Og",
   "pageInfo": {
     "totalResults": 1,
     "resultsPerPage": 5
@@ -8,11 +8,11 @@
   "items": [
     {
       "kind": "youtube#channel",
-      "etag": "hbcMMoRfv07oPatLW7ovyX6GRq8",
+      "etag": "AN49dLuOOl04GhOu5tozeZOOg6U",
       "id": "UCR4rI98w6-MqYoCS6jR9LGg",
       "snippet": {
         "title": "C\u00e9sar Soto Valero",
-        "description": "C\u00e9sar traveled from Cuba to Sweden to pursue his life\u2019s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down AI & SW concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, C\u00e9sar shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, academic research, and the software industry.",
+        "description": "C\u00e9sar traveled from Cuba to Sweden to pursue his life\u2019s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down AI and software engineering concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, C\u00e9sar shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, academic research, and the software industry.\n\n\ud83d\udc49 If you like C\u00e9sar\u2019s channel, please help him out by sharing one of his videos with a friend. You can also support him through Ko-fi (link below). He really appreciates it!",
         "customUrl": "@cesarsotovalero",
         "publishedAt": "2016-03-24T20:49:46Z",
         "thumbnails": {
@@ -35,13 +35,13 @@
         "defaultLanguage": "en",
         "localized": {
           "title": "C\u00e9sar Soto Valero",
-          "description": "C\u00e9sar traveled from Cuba to Sweden to pursue his life\u2019s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down AI & SW concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, C\u00e9sar shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, academic research, and the software industry."
+          "description": "C\u00e9sar traveled from Cuba to Sweden to pursue his life\u2019s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down AI and software engineering concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, C\u00e9sar shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, academic research, and the software industry.\n\n\ud83d\udc49 If you like C\u00e9sar\u2019s channel, please help him out by sharing one of his videos with a friend. You can also support him through Ko-fi (link below). He really appreciates it!"
         },
         "country": "SE"
       },
       "statistics": {
-        "viewCount": "19455",
-        "subscriberCount": "334",
+        "viewCount": "19749",
+        "subscriberCount": "339",
         "hiddenSubscriberCount": false,
         "videoCount": "25"
       }
