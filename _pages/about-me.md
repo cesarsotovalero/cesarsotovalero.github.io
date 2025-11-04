@@ -46,7 +46,7 @@ César's PhD was about software debloating,[^1] you can look at [his PhD thesis]
 
 He also holds a [BSc](<../../files/certificates/BSc_Degree_(certified)_eng.pdf>) and [MSc](<../../files/certificates/MSc_Degree_(certified)_eng.pdf>) in Computer Science.
 
-More importantly, he's a lifelong learner, keeping track of [his completed courses and MOOCs](./courses).
+César is a lifelong learner, keeping track of [his completed courses and MOOCs](./courses).
 
 A long time ago, César [participated in ACM-ICPC programming contests](./competitions).
 
