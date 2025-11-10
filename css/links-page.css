@@ -1,0 +1,301 @@
+/* Links Page - Minimalist Card-Based Layout */
+
+/* Container */
+.links-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  position: relative;
+  font-family: "Concourse T3", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Share Icon - Top Left */
+.share-icon {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+}
+
+.share-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-background-color);
+  border: 1px solid var(--main-text-color);
+  border-radius: 50%;
+  color: var(--main-text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.share-icon a:hover {
+  background-color: var(--main-text-color);
+  color: var(--main-background-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.share-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--main-text-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.profile-photo:hover img {
+  filter: grayscale(0%);
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--main-text-color);
+  margin: 0 0 0.5rem 0;
+  font-family: "Concourse T6", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.profile-description {
+  font-size: 1rem;
+  color: var(--main-text-color);
+  opacity: 0.7;
+  margin: 0;
+  font-family: "Concourse T3", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 450px;
+  animation: fadeInUp 0.6s ease-out 0.2s backwards;
+}
+
+/* Individual Card */
+.link-card {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--main-background-color);
+  border: 2px solid var(--main-text-color);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--main-text-color);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.link-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 0%, rgba(143, 150, 206, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.link-card:hover::before {
+  opacity: 1;
+}
+
+.link-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-color: var(--link-decoration-color);
+}
+
+.link-card:active {
+  transform: translateY(-2px) scale(1.01);
+}
+
+/* Card Icon */
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-right: 1rem;
+  color: var(--main-text-color);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.link-card:hover .card-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.card-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Card Text */
+.card-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Concourse T4", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .links-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .share-icon {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .share-icon a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.25rem;
+  }
+
+  .profile-name {
+    font-size: 1.75rem;
+  }
+
+  .profile-description {
+    font-size: 0.9rem;
+  }
+
+  .cards-section {
+    max-width: 400px;
+  }
+
+  .link-card {
+    padding: 1rem 1.25rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .profile-name {
+    font-size: 1.5rem;
+  }
+
+  .profile-description {
+    font-size: 0.85rem;
+  }
+
+  .link-card {
+    padding: 0.875rem 1rem;
+  }
+
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.875rem;
+  }
+
+  .card-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .link-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .link-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .share-icon a {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .share-icon a:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Remove default link styles */
+.link-card,
+.share-icon a {
+  text-decoration: none !important;
+}
+
+.link-card:hover,
+.link-card:focus,
+.share-icon a:hover,
+.share-icon a:focus {
+  text-decoration: none !important;
+}
