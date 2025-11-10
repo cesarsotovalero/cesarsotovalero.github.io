@@ -213,58 +213,82 @@
   }
 
   .profile-photo {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 1.25rem;
   }
 
   .profile-name {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
 
   .profile-description {
-    font-size: 0.9rem;
+    font-size: 1.15rem;
   }
 
   .cards-section {
-    max-width: 400px;
+    max-width: 450px;
   }
 
   .link-card {
-    padding: 1rem 1.25rem;
+    padding: 1.375rem 1.5rem;
+  }
+
+  .card-icon {
+    width: 52px;
+    height: 52px;
+    margin-right: 1.125rem;
+  }
+
+  .card-icon svg {
+    width: 36px;
+    height: 36px;
   }
 
   .card-text {
-    font-size: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .flex-container-footer-copyright .copyright {
+    font-size: 0.85rem;
   }
 }
 
 @media only screen and (max-width: 450px) {
+  .profile-photo {
+    width: 110px;
+    height: 110px;
+  }
+
   .profile-name {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .profile-description {
-    font-size: 0.85rem;
+    font-size: 1.05rem;
   }
 
   .link-card {
-    padding: 0.875rem 1rem;
+    padding: 1.25rem 1.375rem;
   }
 
   .card-icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 0.875rem;
+    width: 48px;
+    height: 48px;
+    margin-right: 1rem;
   }
 
   .card-icon svg {
-    width: 28px;
-    height: 28px;
+    width: 34px;
+    height: 34px;
   }
 
   .card-text {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
+  }
+
+  .flex-container-footer-copyright .copyright {
+    font-size: 0.8rem;
   }
 }
 
