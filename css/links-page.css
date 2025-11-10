@@ -1,5 +1,10 @@
 /* Links Page - Minimalist Card-Based Layout */
 
+/* Body background override for links page */
+body {
+  background-color: #FFFFF6 !important;
+}
+
 /* Container */
 .links-container {
   min-height: 100vh;
@@ -7,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   position: relative;
   font-family: "Concourse T3", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -50,14 +55,14 @@
 /* Profile Section */
 .profile-section {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   animation: fadeInUp 0.6s ease-out;
 }
 
 .profile-photo {
   width: 140px;
   height: 140px;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 1rem;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--main-text-color);
@@ -87,7 +92,7 @@
   font-weight: bold;
   color: var(--main-text-color);
   margin: 0 0 0.5rem 0;
-  font-family: "Concourse T6", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Concourse T6 Tab", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: -0.5px;
 }
 
@@ -96,14 +101,15 @@
   color: var(--main-text-color);
   opacity: 0.7;
   margin: 0;
-  font-family: "Concourse T3", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Concourse T2", "Cambria", "Open Sans";
+  font-weight: 300;
 }
 
 /* Cards Section */
 .cards-section {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
   width: 100%;
   max-width: 500px;
   animation: fadeInUp 0.6s ease-out 0.2s backwards;
@@ -326,8 +332,8 @@
 
 /* Footer Copyright */
 .flex-container-footer-copyright {
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 1.5rem;
+  padding-top: 0;
   text-align: center;
   animation: fadeInUp 0.6s ease-out 0.4s backwards;
 }
