@@ -12,12 +12,24 @@ body {
   max-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem 1rem;
   position: relative;
   font-family: "Concourse T3", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
+}
+
+/* Content wrapper to keep profile and cards together */
+.links-container > :not(.flex-container-footer-copyright) {
+  flex-shrink: 1;
+}
+
+.flex-container-footer-copyright {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
 }
 
 /* Profile Section */

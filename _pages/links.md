@@ -51,5 +51,3 @@ description: "Links to social media and other details"
     </a>
   </div>
 </div>
-
-{% include footer-minimal.html %}
