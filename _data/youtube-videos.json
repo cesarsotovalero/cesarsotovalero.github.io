@@ -1,7 +1,7 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "UwVqgoBKR7lEmdp4aIY7dqqVkLU",
+    "etag": "eue72X6h9sHCbh18XXJ2nHURh2w",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
@@ -82,15 +82,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "158",
-      "likeCount": "15",
+      "viewCount": "173",
+      "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "3"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "j6q2GB0CBdTJyysQI7eA3ZawUa0",
+    "etag": "lkuJPnCI6mDAxxYSml1YbFI0Jw4",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -171,7 +171,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "122",
+      "viewCount": "139",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -179,12 +179,12 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qdyz7Z_avHfl0xerKz1ftB3_oUk",
+    "etag": "jbGE-UsSOnLChI9LLXS8pH74kJ8",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Why Fully Homomorphic Encryption Changes Everything",
+      "title": "Why Fully Homomorphic Encryption Is the Future of Private Computing",
       "description": "What if your data could stay encrypted even while being processed? That’s the promise of Fully Homomorphic Encryption (FHE), a breakthrough technology that could change the future of privacy, AI, and the internet itself.\n\nIn this video, I’ll break down FHE without drowning you in equations. Instead, I’ll focus on the core ideas:\n\n✓ What problem FHE solves\n✓ How it works (with simple examples and analogies)\n✓ Why it’s becoming a trending topic (with support from Microsoft, Google, and Apple)\n✓ The exciting future of a fully private internet\n\nAlong the way, we’ll explore:\n\n➤ Why traditional encryption fails when data is “in use”\n➤ Real-world breaches that show the problem\n➤ How lattice-based cryptography makes FHE quantum-resistant\n➤ Open-source tools like Microsoft SEAL and Google HEIR\n➤ Real applications already running today\n\nIf you’re curious about cryptography, AI, cloud security, or the future of private computing, this video will give you the big picture in a way that’s clear, practical, and thought-provoking.\n\n👉 Don’t forget to like, subscribe, and drop a comment with your thoughts.\n\n⏰ TIMESTAMPS\n0:00 Intro\n00:42 Why normal encryption isn’t enough\n02:10 The three stages of data\n03:17 The Achilles’ heel of modern security\n05:28 Basics of Cryptography\n6:50 Fully Homomorphic Encryption explained\n11:42 Lattice cryptography & quantum resistance\n14:33 Moore's Law of Fully Homomorphic Encryption\n16:35 Real-world applications (Microsoft, Google, Apple)\n17:12 OSS tools for Fully Homomorphic Encryption\n18:19 The future of private computing\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero",
       "thumbnails": {
         "default": {
@@ -239,7 +239,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "Why Fully Homomorphic Encryption Changes Everything",
+        "title": "Why Fully Homomorphic Encryption Is the Future of Private Computing",
         "description": "What if your data could stay encrypted even while being processed? That’s the promise of Fully Homomorphic Encryption (FHE), a breakthrough technology that could change the future of privacy, AI, and the internet itself.\n\nIn this video, I’ll break down FHE without drowning you in equations. Instead, I’ll focus on the core ideas:\n\n✓ What problem FHE solves\n✓ How it works (with simple examples and analogies)\n✓ Why it’s becoming a trending topic (with support from Microsoft, Google, and Apple)\n✓ The exciting future of a fully private internet\n\nAlong the way, we’ll explore:\n\n➤ Why traditional encryption fails when data is “in use”\n➤ Real-world breaches that show the problem\n➤ How lattice-based cryptography makes FHE quantum-resistant\n➤ Open-source tools like Microsoft SEAL and Google HEIR\n➤ Real applications already running today\n\nIf you’re curious about cryptography, AI, cloud security, or the future of private computing, this video will give you the big picture in a way that’s clear, practical, and thought-provoking.\n\n👉 Don’t forget to like, subscribe, and drop a comment with your thoughts.\n\n⏰ TIMESTAMPS\n0:00 Intro\n00:42 Why normal encryption isn’t enough\n02:10 The three stages of data\n03:17 The Achilles’ heel of modern security\n05:28 Basics of Cryptography\n6:50 Fully Homomorphic Encryption explained\n11:42 Lattice cryptography & quantum resistance\n14:33 Moore's Law of Fully Homomorphic Encryption\n16:35 Real-world applications (Microsoft, Google, Apple)\n17:12 OSS tools for Fully Homomorphic Encryption\n18:19 The future of private computing\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero"
       },
       "defaultAudioLanguage": "en"
@@ -254,8 +254,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "775",
-      "likeCount": "35",
+      "viewCount": "824",
+      "likeCount": "38",
       "favoriteCount": "0",
       "commentCount": "14"
     }
@@ -438,7 +438,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "kolsXbhycV8r613UrvKGdMW-jrw",
+    "etag": "yHn0OwZeVPeVeYAorzOOJwg7IT4",
     "id": "SQY2IED6vFQ",
     "snippet": {
       "publishedAt": "2024-12-14T22:45:00Z",
@@ -514,7 +514,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "162",
+      "viewCount": "163",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -522,7 +522,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Kn3vJnYLfkKOXDXXjb6m822XEA8",
+    "etag": "b0Y30dOOoGpk-shAUtpoaIr8qAw",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -596,7 +596,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "574",
+      "viewCount": "579",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -770,7 +770,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "SZJ4KOJ89NVMttZ-OIWCk-L_eZg",
+    "etag": "iyQcfgc41gEqRyrzwGB_emVqJfM",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
@@ -842,7 +842,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "470",
+      "viewCount": "471",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -925,7 +925,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qDgnsAtXUYoAuLjRHSqzE6q2ecI",
+    "etag": "FqWlf6CFDo9xrHqscJgvQbecUuQ",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -986,7 +986,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12796",
+      "viewCount": "12801",
       "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "296"
@@ -994,7 +994,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KB8wgppPveSC2BCZ9UENTBk6E90",
+    "etag": "w6nX45kO3RwXulMsxBqoMLIKEQU",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -1056,7 +1056,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "703",
+      "viewCount": "708",
       "likeCount": "50",
       "favoriteCount": "0",
       "commentCount": "25"
@@ -1064,7 +1064,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "k5Sth0pAyzWi9ZjZTYLvG0xRyX8",
+    "etag": "wzDLaIu6akZplexGbuhboXlfNGY",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -1118,7 +1118,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "112",
+      "viewCount": "113",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1126,7 +1126,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "JitgjywkBaPHz3LMqcj-KMEwf5E",
+    "etag": "_Le4YH4d0BLfkgRVmRMSARVGbTI",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -1180,15 +1180,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "613",
-      "likeCount": "24",
+      "viewCount": "637",
+      "likeCount": "25",
       "favoriteCount": "0",
-      "commentCount": "2"
+      "commentCount": "3"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "En-H90dc9Mp09Z3eM-8KeYSAjEA",
+    "etag": "ovmGwaR2yTv8-R8WjX_ThHkSatU",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -1249,7 +1249,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "412",
+      "viewCount": "413",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1257,7 +1257,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "H0jOB463jEmUi7IrMy4SVBt_swI",
+    "etag": "ti60E54DrRF1PDv3-OXl2XaLMRA",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -1316,7 +1316,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "134",
+      "viewCount": "136",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1386,7 +1386,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "9pngcj67PktK4zgmDGQ8KwmyuVc",
+    "etag": "6WFiizHJW-YN5bNztaHj1fL60os",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -1440,7 +1440,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "186",
+      "viewCount": "187",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1517,7 +1517,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "cURVYRWVB2FLq_H7DFEQKcwunj4",
+    "etag": "USmVchX4HSHeVZSq5FgqPEOtXK0",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -1577,7 +1577,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "416",
+      "viewCount": "417",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1585,7 +1585,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "tzrKJUs0BiUKI6SHKcH1x12TYyk",
+    "etag": "x42I81YdnQq5rxiR3dxERwLalyU",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -1644,7 +1644,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "205",
+      "viewCount": "207",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1787,7 +1787,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "7cc13AccoyAK1McndkkyKXptZHw",
+    "etag": "cjbUobrzT5cawhPbgKlzKpsJTAA",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -1847,7 +1847,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "275",
+      "viewCount": "277",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "11"
