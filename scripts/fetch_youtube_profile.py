@@ -26,7 +26,7 @@ def write_profile(data, out_path):
     # Ensure directory exists
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2)
+        json.dump(data, f, indent=2, ensure_ascii=False)
     print(f"Wrote YouTube profile metadata to {out_path}")
 
 
