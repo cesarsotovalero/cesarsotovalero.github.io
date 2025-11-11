@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1rem 10rem 1rem;
+  padding: 1rem 1rem 15rem 1rem;
   position: relative;
   box-sizing: border-box;
   width: 100%;
@@ -355,7 +355,7 @@ body {
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
   .links-container {
-    padding: 1rem 1rem 10rem 1rem;
+    padding: 1rem 1rem 15rem 1rem;
   }
 
   .share-icon {
@@ -419,7 +419,7 @@ body {
 
 @media only screen and (max-width: 450px) {
   .links-container {
-      padding: 1rem 1rem 10rem 1rem;
+      padding: 1rem 1rem 15rem 1rem;
   }
 
   .profile-photo {
