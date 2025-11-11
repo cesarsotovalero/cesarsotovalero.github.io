@@ -1,5 +1,10 @@
 /* Links Page - Minimalist Card-Based Layout */
 
+/* Prevent horizontal scroll on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
 /* Body background override for links page - with gradient */
 body {
   background: radial-gradient(ellipse at top, #FFFEF8, #FFFFF6) !important;
@@ -16,6 +21,10 @@ body {
   align-items: center;
   padding: 1rem 1rem 10rem 1rem;
   position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   overflow: hidden;
 }
 
@@ -43,6 +52,13 @@ body {
 #list-of-social-icons a,
 #list-of-social-icons img {
   opacity: 1; /* keep image visibility; container controls overall opacity */
+}
+
+#list-of-social-icons img,
+.links-container img,
+.links-container svg {
+  max-width: 100%;
+  height: auto;
 }
 
 #list-of-social-icons:hover {
@@ -262,9 +278,21 @@ body {
   fill: #0A66C2;
 }
 
+/* Match text color to LinkedIn on hover/active */
+.link-card[href*="linkedin"]:hover .card-text,
+.link-card[href*="linkedin"]:active .card-text {
+  color: #0A66C2;
+}
+
 /* YouTube brand color */
 .link-card[href*="youtube"]:hover .card-icon svg {
   fill: #FF0000;
+}
+
+/* Match text color to YouTube on hover/active */
+.link-card[href*="youtube"]:hover .card-text,
+.link-card[href*="youtube"]:active .card-text {
+  color: #FF0000;
 }
 
 /* GitHub brand color */
@@ -272,9 +300,21 @@ body {
   fill: #6e5494;
 }
 
+/* Match text color to GitHub on hover/active */
+.link-card[href*="github"]:hover .card-text,
+.link-card[href*="github"]:active .card-text {
+  color: #6e5494;
+}
+
 /* Blog accent color */
 .link-card[href*="blog"]:hover .card-icon svg {
   fill: #FF6B35;
+}
+
+/* Match text color to Blog on hover/active */
+.link-card[href*="blog"]:hover .card-text,
+.link-card[href*="blog"]:active .card-text {
+  color: #FF6B35;
 }
 
 /* About Me accent color */
@@ -282,6 +322,11 @@ body {
   fill: #006400;
 }
 
+/* Match text color to About Me on hover/active */
+.link-card[href*="about-me"]:hover .card-text,
+.link-card[href*="about-me"]:active .card-text {
+  color: #006400;
+}
 /* Card Text */
 .card-text {
   font-size: 2.5rem;
