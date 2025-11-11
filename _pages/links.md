@@ -3,31 +3,32 @@ layout: minimal
 title: Links
 permalink: /links.html
 subtitle: "César Soto Valero"
-description: "Links to social media and other details"
+description: "Links to his social media and other details"
 ---
 
 <link rel="stylesheet" href="/css/links-page.css">
 
 <div class="links-container">
+
   <!-- Profile Section -->
   <div class="profile-section">
     <div class="profile-photo">
       <img src="{{ site.avatar }}" alt="César Soto Valero">
     </div>
     <h1 class="profile-name">César Soto Valero</h1>
-    <p class="profile-description">Links to my social media and other details</p>
+    <p class="profile-description">Links to his social media and other details</p>
   </div>
 
   <!-- Cards Section -->
   <div class="cards-section" role="navigation" aria-label="Social media and profile links">
-    <!-- About Me Card -->
-    <a href="https://www.cesarsotovalero.net/about-me" class="link-card" target="_blank" rel="noopener noreferrer" aria-label="Visit my About Me page">
+    <!-- About Him Card -->
+    <a href="https://www.cesarsotovalero.net/about-me" class="link-card" target="_blank" rel="noopener noreferrer" aria-label="Visit his About Me page">
       <div class="card-icon" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
         </svg>
       </div>
-      <div class="card-text">About Me</div>
+      <div class="card-text">About Him</div>
     </a>
 
     <!-- LinkedIn Card -->
@@ -49,7 +50,6 @@ description: "Links to social media and other details"
       </div>
       <div class="card-text">YouTube Channel</div>
     </a>
+
   </div>
 </div>
-
-{% include footer-minimal.html %}

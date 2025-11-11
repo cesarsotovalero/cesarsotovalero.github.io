@@ -1,5 +1,5 @@
 .main-content {
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 footer.footer-min {
@@ -7,7 +7,7 @@ footer.footer-min {
   bottom: 0;
   width: 100%;
   padding: 3px;
-  background-color: #f5f5f5;
+  background-color: var(--footer-color);
   border-top: 1px solid #eeeeee;
   text-align: center;
 }

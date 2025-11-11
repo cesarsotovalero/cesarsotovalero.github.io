@@ -14,9 +14,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 10rem 1rem;
   position: relative;
-  font-family: "Concourse T3", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
 }
 
@@ -25,7 +24,31 @@ body {
   flex-shrink: 1;
 }
 
-.flex-container-footer-copyright {
+/* Top social icons */
+#list-of-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  list-style: none;
+  opacity: 0.5;
+}
+
+#list-of-social-icons li {
+  display: inline-flex;
+}
+
+#list-of-social-icons a,
+#list-of-social-icons img {
+  opacity: 1; /* keep image visibility; container controls overall opacity */
+}
+
+#list-of-social-icons:hover {
+  opacity: 0.5; /* prevent hover from increasing opacity via other styles */
+}
+.links-container .flex-container-footer-copyright {
   position: absolute;
   bottom: 1rem;
   left: 0;
@@ -35,14 +58,14 @@ body {
 /* Profile Section */
 .profile-section {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   animation: fadeInUp 0.6s ease-out;
   flex-shrink: 0;
 }
 
 .profile-photo {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   margin: 0 auto 0.75rem;
   border-radius: 50%;
   overflow: hidden;
@@ -50,6 +73,9 @@ body {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .profile-photo::after {
@@ -64,12 +90,6 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
-}
-
-.profile-photo:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  animation: pulse 2s ease-in-out infinite;
 }
 
 .profile-photo:hover::after {
@@ -99,28 +119,30 @@ body {
 
 /* Profile Name */
 .profile-name {
-  font-family: "Concourse T6 Tab", "Concourse T3", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.75rem;
-  font-weight: 600;
+  font-family: "Rouge Script", "Concourse T6", "Cambria", "Georgia", "Times New Roman", serif;
+  font-weight: bold;
+  letter-spacing: normal;
+  font-size: 4.75rem;
   color: var(--main-text-color);
   margin-bottom: 0.35rem;
 }
 
 /* Profile Description */
 .profile-description {
-  font-family: "Concourse T2", "Concourse T3", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-family: "Concourse T2", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
   color: var(--main-text-color);
-  opacity: 0.8;
+  opacity: 0.5;
+  color: var(--post-meta-index-color);
 }
 
 /* Cards Section */
 .cards-section {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 2.0rem;
   width: 100%;
-  max-width: 500px;
+  max-width: 420px;
   flex-shrink: 0;
 }
 
@@ -198,8 +220,7 @@ body {
 
 .link-card:hover {
   transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  border-color: var(--link-decoration-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
 .link-card:active {
@@ -230,9 +251,10 @@ body {
   transition: fill 0.3s ease;
 }
 
-/* Brand color accents on hover */
-.link-card:hover .card-icon svg {
-  filter: drop-shadow(0 0 8px currentColor);
+/* Slightly larger icon for About Me */
+.link-card[href*="about-me"] .card-icon svg {
+  width: 42px;
+  height: 42px;
 }
 
 /* LinkedIn brand color */
@@ -257,14 +279,14 @@ body {
 
 /* About Me accent color */
 .link-card[href*="about-me"]:hover .card-icon svg {
-  fill: #8F96CE;
+  fill: #006400;
 }
 
 /* Card Text */
 .card-text {
-  font-size: 1.375rem;
-  font-weight: 600;
-  font-family: "Concourse T4", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  font-family: "Equity Text A", "Concourse T3", " Cambria", " Open Sans";
+  opacity: 0.8;
   position: relative;
   z-index: 1;
 }
@@ -284,7 +306,7 @@ body {
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
   .links-container {
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem 10rem 1rem;
   }
 
   .share-icon {
@@ -298,21 +320,21 @@ body {
   }
 
   .profile-photo {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     margin-bottom: 1.25rem;
   }
 
   .profile-name {
-    font-size: 2.25rem;
+    font-size: 3.8rem;
   }
 
   .profile-description {
-    font-size: 1.15rem;
+    font-size: 2.6rem;
   }
 
   .cards-section {
-    max-width: 450px;
+    max-width: 400px;
   }
 
   .link-card {
@@ -330,27 +352,37 @@ body {
     height: 36px;
   }
 
+  /* Slightly larger icon for About Me (tablet) */
+  .link-card[href*="about-me"] .card-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
   .card-text {
-    font-size: 1.25rem;
+    font-size: 1.8rem;
   }
 
   .flex-container-footer-copyright .copyright {
-    font-size: 0.85rem;
+    font-size: 1.1rem;
   }
 }
 
 @media only screen and (max-width: 450px) {
+  .links-container {
+      padding: 1rem 1rem 10rem 1rem;
+  }
+
   .profile-photo {
-    width: 110px;
-    height: 110px;
+    width: 140px;
+    height: 140px;
   }
 
   .profile-name {
-    font-size: 2rem;
+    font-size: 4.5rem;
   }
 
   .profile-description {
-    font-size: 1.05rem;
+    font-size: 2.0rem;
   }
 
   .link-card {
@@ -364,16 +396,22 @@ body {
   }
 
   .card-icon svg {
-    width: 34px;
-    height: 34px;
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Slightly larger icon for About Me (mobile) */
+  .link-card[href*="about-me"] .card-icon svg {
+    width: 48px;
+    height: 48px;
   }
 
   .card-text {
-    font-size: 1.15rem;
+    font-size: 2.6rem;
   }
 
   .flex-container-footer-copyright .copyright {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -384,7 +422,7 @@ body {
   }
 
   .link-card:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
   }
 
   .share-icon a {
@@ -430,10 +468,12 @@ body {
 }
 
 .flex-container-footer-copyright .copyright {
-  font-size: 0.85rem;
   color: var(--main-text-color);
-  opacity: 0.6;
-  margin: 0;
-  font-family: "Concourse T3", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Concourse T2", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 20px;
+  line-height: 1.1;
   font-weight: 300;
+  opacity: 0.5;
 }
