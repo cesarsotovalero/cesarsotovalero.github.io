@@ -16,7 +16,7 @@ description: "Links to his social media and other details"
       <img src="{{ site.avatar }}" alt="César Soto Valero">
     </div>
     <h1 class="profile-name">César Soto Valero</h1>
-    <p class="profile-description">Links to his social media and other details</p>
+    <p class="profile-description">Helping engineers learn, build, and grow</p>
   </div>
 
   <!-- Cards Section -->

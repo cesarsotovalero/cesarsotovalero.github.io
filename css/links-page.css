@@ -199,6 +199,7 @@ body {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  justify-content: center;
 }
 
 /* Card divider lines */
@@ -253,7 +254,8 @@ body {
   margin-right: 1.25rem;
   color: var(--main-text-color);
   transition: all 0.3s ease;
-  position: relative;
+  position: absolute;
+  left: 1.25rem;
   z-index: 2;
 }
 
@@ -334,6 +336,8 @@ body {
   opacity: 0.8;
   position: relative;
   z-index: 1;
+  text-align: center;
+  flex: 1;
 }
 
 /* Animations */
@@ -390,6 +394,7 @@ body {
     width: 52px;
     height: 52px;
     margin-right: 1.125rem;
+    left: 1.5rem;
   }
 
   .card-icon svg {
@@ -438,6 +443,7 @@ body {
     width: 48px;
     height: 48px;
     margin-right: 1rem;
+    left: 1.375rem;
   }
 
   .card-icon svg {
