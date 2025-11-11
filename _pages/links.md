@@ -13,10 +13,10 @@ description: "Links to his social media and other details"
   <!-- Profile Section -->
   <div class="profile-section">
     <div class="profile-photo">
-      <img src="{{ site.avatar }}" alt="César Soto Valero">
+      <img src="/img/pages/cesar/cesar-Jfokus-2024-LinkedIn-profile.jpg" alt="César Soto Valero">
     </div>
     <h1 class="profile-name">César Soto Valero</h1>
-    <p class="profile-description">Helping engineers learn, build, and grow</p>
+    <p class="profile-description">Helping engineers learn, build, and grow.</p>
   </div>
 
   <!-- Cards Section -->
