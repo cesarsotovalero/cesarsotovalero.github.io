@@ -1,9 +1,9 @@
 ---
 layout: minimal
-title: Links
-permalink: /links.html
+title: Teaser
+permalink: /teaser.html
 subtitle: "César Soto Valero"
-description: "Links to his social media and other details"
+description: "Helping engineers learn, build, and grow."
 ---
 
 <link rel="stylesheet" href="/css/links-page.css">
