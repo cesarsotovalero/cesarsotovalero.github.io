@@ -7,15 +7,13 @@ description: List of competitive events where César Soto Valero has participate
 published: true
 ---
 
-# Disclosure
+# My Competitions
 
 <aside class="quote">
     <em>“I's not only having competitiveness but willingness, regardless of the circumstance you face, to never quit.”</em>
 </aside>
 
-I don't think I'm a competitive person, but sometimes it is worth it to put some pressure on myself by participating in competitive events, just to see what happens.
-
-# My Competitions
+I'm not a competitive person, but sometimes it is worth it to put some pressure on myself by participating in competitive events, just to see what happens.
 
 - [HackerRank](https://www.hackerrank.com/cesarsotovalero), **Occasional problem solver**, since 2017
 
