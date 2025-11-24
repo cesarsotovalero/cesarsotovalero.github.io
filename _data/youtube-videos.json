@@ -1,7 +1,94 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "9ElGqGRtIZHsChUM8t5_0Ehf9os",
+    "etag": "52FXEQAXae22xF061flFMBwVQQc",
+    "id": "AM6Us--nDRo",
+    "snippet": {
+      "publishedAt": "2025-11-22T13:59:31Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "Why LLMs Can’t Solve Complex Planning Problems",
+      "description": "In this video, we dive into one of the biggest misconceptions in AI today: the belief that Large Language Models (LLMS) like ChatGPT, Claude, and Gemini can solve optimization problems.\n\nPlanning problems (e.g., employee rostering, delivery route optimization, school timetabling, job-shop scheduling) live in a completely different universe from next-token prediction. These problems are NP-hard, combinatorial, and require actual search, not linguistic guesswork.\n\nYou’ll learn:\n\n1. Why LLMs fail spectacularly at real planning tasks, \n2. Why even “reasoning models” collapse under combinatorial explosion\n3. What kinds of tools are built for the job: mathematical optimization, constraint solvers, CPLEX, MiniZinc, meta-heuristics, Timefold, and more.\n\nMost importantly, you’ll see how to combine LLMs with solvers to build powerful hybrid AI systems where the LLM handles reasoning and structure, and the solver does the heavy lifting.\n\nIf you’re building AI systems or working in software engineering, this video will save you from one of the biggest traps in the current hype cycle.\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:50 What a planning problem really is\n04:29 What traditional optimization does differently\n06:45 Why LLMs break down on planning tasks\n13:31 The Hybrid Approach (LLM + Solver)\n15:25 When to use which tool\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎𝐒\n→ https://youtu.be/Hd04NJej9iE\n→ https://youtu.be/3s7xjI3g73w\n→ https://youtu.be/n1t3XEAyUgQ",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/AM6Us--nDRo/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/AM6Us--nDRo/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/AM6Us--nDRo/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/AM6Us--nDRo/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/AM6Us--nDRo/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "LLM planning",
+        "why llms fail",
+        "llm limitations",
+        "planning problems",
+        "optimization problems",
+        "mathematical optimization",
+        "np hard problems",
+        "constraint satisfaction",
+        "schedule optimization",
+        "routing optimization",
+        "vehicle routing problem",
+        "search algorithms",
+        "chatgpt limitations",
+        "claude limitations",
+        "gemini ai limitations",
+        "ai scheduling systems",
+        "ai route planning",
+        "real world ai problems",
+        "why ai fails",
+        "ai vs optimization",
+        "optimization solvers",
+        "ai for planning",
+        "llm reasoning limits"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "Why LLMs Can’t Solve Complex Planning Problems",
+        "description": "In this video, we dive into one of the biggest misconceptions in AI today: the belief that Large Language Models (LLMS) like ChatGPT, Claude, and Gemini can solve optimization problems.\n\nPlanning problems (e.g., employee rostering, delivery route optimization, school timetabling, job-shop scheduling) live in a completely different universe from next-token prediction. These problems are NP-hard, combinatorial, and require actual search, not linguistic guesswork.\n\nYou’ll learn:\n\n1. Why LLMs fail spectacularly at real planning tasks, \n2. Why even “reasoning models” collapse under combinatorial explosion\n3. What kinds of tools are built for the job: mathematical optimization, constraint solvers, CPLEX, MiniZinc, meta-heuristics, Timefold, and more.\n\nMost importantly, you’ll see how to combine LLMs with solvers to build powerful hybrid AI systems where the LLM handles reasoning and structure, and the solver does the heavy lifting.\n\nIf you’re building AI systems or working in software engineering, this video will save you from one of the biggest traps in the current hype cycle.\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:50 What a planning problem really is\n04:29 What traditional optimization does differently\n06:45 Why LLMs break down on planning tasks\n13:31 The Hybrid Approach (LLM + Solver)\n15:25 When to use which tool\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎𝐒\n→ https://youtu.be/Hd04NJej9iE\n→ https://youtu.be/3s7xjI3g73w\n→ https://youtu.be/n1t3XEAyUgQ"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT17M5S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "128",
+      "likeCount": "7",
+      "favoriteCount": "0",
+      "commentCount": "4"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "IiObB09knqbdisNh6uC_2ACKD34",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
@@ -82,15 +169,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "187",
-      "likeCount": "17",
+      "viewCount": "192",
+      "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "3"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "Wa2iMPDzFyj58tqhFkDMc5XaCm8",
+    "etag": "k7IVLMjoh8dXkBZJCjlQD06LTyg",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -171,7 +258,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "146",
+      "viewCount": "149",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -179,7 +266,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "mgflH9biDvU9AyiM_TYiGk4vJlE",
+    "etag": "I7EuhfnvlWXi-r8XCvD_dyyo-h0",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -254,10 +341,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "870",
-      "likeCount": "42",
+      "viewCount": "938",
+      "likeCount": "49",
       "favoriteCount": "0",
-      "commentCount": "14"
+      "commentCount": "16"
     }
   },
   {
@@ -355,7 +442,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qZxWHc9AzvyPSgM997168L6tbzo",
+    "etag": "ZxhSjrQLpjvrtSC-4Xhuml8OgZQ",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -430,7 +517,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "160",
+      "viewCount": "165",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -522,7 +609,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "b0Y30dOOoGpk-shAUtpoaIr8qAw",
+    "etag": "6xwQflWAoQYPE1tEzvVTgqdfr4A",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -596,7 +683,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "579",
+      "viewCount": "580",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -687,13 +774,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "RIwGBqfedl-bm45Kuf9ZG7XRX1E",
+    "etag": "zf5rnpgQZQrSl8JAiILRjjLpxj0",
     "id": "n1t3XEAyUgQ",
     "snippet": {
       "publishedAt": "2024-10-21T06:00:32Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "The AI Secret: Why Predictive Machine Learning Still Rules The Real World",
-      "description": "The buzz around AI has been skyrocketing, yet many misconceptions persist about its true capabilities today. This talk dives into lesser-known facts about AI, covering its origins, current real-world applications, and why predictive Machine Learning remains the most impactful AI technology. From AI's theoretical beginnings in 1943 to its practical applications in the financial sector, this talk will offer a fresh perspective on AI’s real-world value and its future.\n\nThis is a talk @ SEB Tech Day 2024\n\n⏰ TIMESTAMPS\n\n00:00 The AI hype is everywhere\n00:53 This AI stuff is very old\n02:11 A different world in 2010\n03:10 AI was not a thing 4 years ago\n05:18 The rise of Generative AI changed everything\n09:22 Demo with ChatGPT \n10:38 Misconceptions about Generative AI\n12:06 Example of fraud prevention systems\n14:07 Takeaways\n\n📺 WATCH NEXT\n\n→ My SEB's Tech Day 2023 talk https://youtu.be/7IoXciSucw4\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#artificialintelligence #generativeai #predictiveai #machinelearning",
+      "description": "The buzz around AI has been skyrocketing, yet many misconceptions persist about its true capabilities today. This talk dives into lesser-known facts about AI, covering its origins, current real-world applications, and why predictive Machine Learning remains the most impactful AI technology. From AI's theoretical beginnings in 1943 to its practical applications in the financial sector, this talk will offer a fresh perspective on AI’s real-world value and its future.\n\nThis is a talk @ SEB Tech Day 2024\n\n⏰ TIMESTAMPS\n00:00 The AI hype is everywhere\n00:53 This AI stuff is very old\n02:11 A different world in 2010\n03:10 AI was not a thing 4 years ago\n05:18 The rise of Generative AI changed everything\n09:22 Demo with ChatGPT \n10:38 Misconceptions about Generative AI\n12:06 Example of fraud prevention systems\n14:07 Takeaways\n\n📺 WATCH NEXT\n→ My SEB's Tech Day 2023 talk https://youtu.be/7IoXciSucw4\n\n🙂 WHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/n1t3XEAyUgQ/default.jpg",
@@ -748,7 +835,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "The AI Secret: Why Predictive Machine Learning Still Rules The Real World",
-        "description": "The buzz around AI has been skyrocketing, yet many misconceptions persist about its true capabilities today. This talk dives into lesser-known facts about AI, covering its origins, current real-world applications, and why predictive Machine Learning remains the most impactful AI technology. From AI's theoretical beginnings in 1943 to its practical applications in the financial sector, this talk will offer a fresh perspective on AI’s real-world value and its future.\n\nThis is a talk @ SEB Tech Day 2024\n\n⏰ TIMESTAMPS\n\n00:00 The AI hype is everywhere\n00:53 This AI stuff is very old\n02:11 A different world in 2010\n03:10 AI was not a thing 4 years ago\n05:18 The rise of Generative AI changed everything\n09:22 Demo with ChatGPT \n10:38 Misconceptions about Generative AI\n12:06 Example of fraud prevention systems\n14:07 Takeaways\n\n📺 WATCH NEXT\n\n→ My SEB's Tech Day 2023 talk https://youtu.be/7IoXciSucw4\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#artificialintelligence #generativeai #predictiveai #machinelearning"
+        "description": "The buzz around AI has been skyrocketing, yet many misconceptions persist about its true capabilities today. This talk dives into lesser-known facts about AI, covering its origins, current real-world applications, and why predictive Machine Learning remains the most impactful AI technology. From AI's theoretical beginnings in 1943 to its practical applications in the financial sector, this talk will offer a fresh perspective on AI’s real-world value and its future.\n\nThis is a talk @ SEB Tech Day 2024\n\n⏰ TIMESTAMPS\n00:00 The AI hype is everywhere\n00:53 This AI stuff is very old\n02:11 A different world in 2010\n03:10 AI was not a thing 4 years ago\n05:18 The rise of Generative AI changed everything\n09:22 Demo with ChatGPT \n10:38 Misconceptions about Generative AI\n12:06 Example of fraud prevention systems\n14:07 Takeaways\n\n📺 WATCH NEXT\n→ My SEB's Tech Day 2023 talk https://youtu.be/7IoXciSucw4\n\n🙂 WHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero"
       },
       "defaultAudioLanguage": "en"
     },
@@ -850,7 +937,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "wwg5qWuOVNZq3tEYbKCau81eFkI",
+    "etag": "ziBHxCfnlZEFDzXoX7Lcb2A8g7c",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
@@ -917,15 +1004,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "144",
-      "likeCount": "3",
+      "viewCount": "146",
+      "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "0"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "8iRhB2OxL_VYixseyehz5Ee1yG8",
+    "etag": "xBlDKhenTXYzDUHRbZ91tWd1TTk",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -986,7 +1073,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12803",
+      "viewCount": "12806",
       "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "296"
@@ -994,7 +1081,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5vKHPHV10dBDeyFG0aRiVMCD1lw",
+    "etag": "vEVKFUBrQcUJxiBVZm7P6NrY6P0",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -1056,7 +1143,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "717",
+      "viewCount": "721",
       "likeCount": "51",
       "favoriteCount": "0",
       "commentCount": "25"
@@ -1126,7 +1213,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "MpukT33a95elRA58NQatIJtkBbE",
+    "etag": "YJlpTzXQjCnGsGdcuPlYF-Ce7YM",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -1180,8 +1267,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "660",
-      "likeCount": "29",
+      "viewCount": "692",
+      "likeCount": "30",
       "favoriteCount": "0",
       "commentCount": "3"
     }
@@ -1386,7 +1473,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6WFiizHJW-YN5bNztaHj1fL60os",
+    "etag": "5X4qoTOAWFFdXfWpf8Z0vi32eSA",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -1440,7 +1527,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "187",
+      "viewCount": "190",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1585,7 +1672,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "x42I81YdnQq5rxiR3dxERwLalyU",
+    "etag": "GUbyKB35PUtw001EfRnRRSgAK2M",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -1644,7 +1731,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "207",
+      "viewCount": "211",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
