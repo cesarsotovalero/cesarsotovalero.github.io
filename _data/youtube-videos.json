@@ -1,7 +1,97 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "52FXEQAXae22xF061flFMBwVQQc",
+    "etag": "keN3_huguJnci05CU2zok_bWsM0",
+    "id": "-a6Pbv_yBWw",
+    "snippet": {
+      "publishedAt": "2025-11-29T07:55:26Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "The 7 AI Papers Behind Today’s Breakthroughs",
+      "description": "In this video, you'll learn about the 7 landmark research papers that shaped today’s AI breakthroughs (Word2Vec, Transformers, GPT, RLHF, Scaling Laws, RAG, and Chain-of-Thought).\n\nThis is the scientific story of how AI evolved:\n→ Why embeddings changed everything\n→ Why Transformers became the universal architecture\n→ How GPT introduced a new training paradigm\n→ Why human feedback became essential\n→ The surprising math behind scaling laws\n→ How retrieval solved hallucinations\n→ How Chain-of-Thought unlocked reasoning\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:35 Paper #1\n04:47 Paper #2\n08:12 Paper #3\n11:09 Paper #4\n13:50 Paper #5\n16:35 Paper #6\n19:37 Paper #7\n22:29 Closing\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/-a6Pbv_yBWw/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/-a6Pbv_yBWw/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/-a6Pbv_yBWw/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/-a6Pbv_yBWw/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/-a6Pbv_yBWw/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "AI research papers",
+        "Word2Vec",
+        "Transformers",
+        "Attention Is All You Need",
+        "GPT",
+        "Generative Pretraining",
+        "RLHF",
+        "Reinforcement Learning from Human Feedback",
+        "Scaling Laws",
+        "Kaplan scaling laws",
+        "Retrieval Augmented Generation",
+        "RAG",
+        "Chain of Thought",
+        "CoT prompting",
+        "AI breakthroughs",
+        "history of AI",
+        "evolution of AI models",
+        "machine learning milestones",
+        "deep learning papers",
+        "LLM research",
+        "neural networks",
+        "NLP evolution",
+        "AI reasoning",
+        "AI alignment",
+        "foundation models",
+        "modern AI timeline"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "The 7 AI Papers Behind Today’s Breakthroughs",
+        "description": "In this video, you'll learn about the 7 landmark research papers that shaped today’s AI breakthroughs (Word2Vec, Transformers, GPT, RLHF, Scaling Laws, RAG, and Chain-of-Thought).\n\nThis is the scientific story of how AI evolved:\n→ Why embeddings changed everything\n→ Why Transformers became the universal architecture\n→ How GPT introduced a new training paradigm\n→ Why human feedback became essential\n→ The surprising math behind scaling laws\n→ How retrieval solved hallucinations\n→ How Chain-of-Thought unlocked reasoning\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:35 Paper #1\n04:47 Paper #2\n08:12 Paper #3\n11:09 Paper #4\n13:50 Paper #5\n16:35 Paper #6\n19:37 Paper #7\n22:29 Closing\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT24M24S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "104",
+      "likeCount": "10",
+      "favoriteCount": "0",
+      "commentCount": "1"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "c1vBiXNSLzNha_GnjP8kWOjssZc",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -80,15 +170,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "128",
-      "likeCount": "7",
+      "viewCount": "247",
+      "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "IiObB09knqbdisNh6uC_2ACKD34",
+    "etag": "vS8NbMomkjgceUIHQNeBP5Cn9u0",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
@@ -169,7 +259,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "192",
+      "viewCount": "193",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -177,7 +267,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "k7IVLMjoh8dXkBZJCjlQD06LTyg",
+    "etag": "Q8m7XLWthNp0b4uJSHxZFM0Xuxc",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -258,7 +348,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "149",
+      "viewCount": "151",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -266,7 +356,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "I7EuhfnvlWXi-r8XCvD_dyyo-h0",
+    "etag": "YfDYFWGeigeyeqI8VCAFM7iQpeQ",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -341,8 +431,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "938",
-      "likeCount": "49",
+      "viewCount": "1043",
+      "likeCount": "52",
       "favoriteCount": "0",
       "commentCount": "16"
     }
@@ -442,7 +532,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ZxhSjrQLpjvrtSC-4Xhuml8OgZQ",
+    "etag": "TNvPsU9qOjQFOheiVmdMtkEvt38",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -517,7 +607,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "165",
+      "viewCount": "167",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -609,7 +699,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6xwQflWAoQYPE1tEzvVTgqdfr4A",
+    "etag": "PBA6DJKcy6vthMjWMIJWMbIPN3s",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -683,7 +773,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "580",
+      "viewCount": "585",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -691,7 +781,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Xs3Q6ZH7MqDH1YZJR2MVVTmnVqk",
+    "etag": "Gg-kjP_5f-jZuXD83uay954mDv4",
     "id": "GRd2nxNTZDI",
     "snippet": {
       "publishedAt": "2024-11-30T07:00:08Z",
@@ -766,7 +856,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "187",
+      "viewCount": "188",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -937,7 +1027,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ziBHxCfnlZEFDzXoX7Lcb2A8g7c",
+    "etag": "0xlTI-0buYH1Q8xE9Ft5RbhxNFA",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
@@ -1004,7 +1094,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "146",
+      "viewCount": "147",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1012,7 +1102,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "xBlDKhenTXYzDUHRbZ91tWd1TTk",
+    "etag": "-exXefC30lDgFa9Kv2sAATE6pFI",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -1073,7 +1163,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12806",
+      "viewCount": "12813",
       "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "296"
@@ -1081,7 +1171,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "vEVKFUBrQcUJxiBVZm7P6NrY6P0",
+    "etag": "6uYOLOs9Hc6AKqiFZj1gi7cSKkY",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -1143,8 +1233,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "721",
-      "likeCount": "51",
+      "viewCount": "735",
+      "likeCount": "52",
       "favoriteCount": "0",
       "commentCount": "25"
     }
@@ -1213,7 +1303,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YJlpTzXQjCnGsGdcuPlYF-Ce7YM",
+    "etag": "22_6SZzuvLddv2JV3bYThlOYc5c",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -1267,7 +1357,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "692",
+      "viewCount": "702",
       "likeCount": "30",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1275,7 +1365,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "-PWJs7RWsdti6FXfthrlfZRIsLM",
+    "etag": "2v5wJ83waafAnxPxa9Ebjv3hPjI",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -1336,7 +1426,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "417",
+      "viewCount": "418",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1344,7 +1434,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ti60E54DrRF1PDv3-OXl2XaLMRA",
+    "etag": "hHKuQGBAKGVKRjvsp84YKdaFMIo",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -1403,7 +1493,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "136",
+      "viewCount": "138",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1604,7 +1694,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "USmVchX4HSHeVZSq5FgqPEOtXK0",
+    "etag": "9e4okjiaxc7hxGZ6bwF_9kE4vAM",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -1664,7 +1754,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "417",
+      "viewCount": "419",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "0"
