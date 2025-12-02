@@ -42,7 +42,6 @@ Discuss the implications of your findings and how they contribute to the current
 Be sure to include diverse perspectives and address any conflicting data.
 Take a deep breath and work on this problem step-by-step.
 
-
 # IMAGE
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/img-placeholder.webp alt: "TODO" %}
