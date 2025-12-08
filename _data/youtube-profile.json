@@ -1,6 +1,6 @@
 {
   "kind": "youtube#channelListResponse",
-  "etag": "MWw6_t-kFDaPPG8AFdB6qsId6WE",
+  "etag": "HFUlv6lPb_-FYtVoBMjkoc3HcMI",
   "pageInfo": {
     "totalResults": 1,
     "resultsPerPage": 5
@@ -8,7 +8,7 @@
   "items": [
     {
       "kind": "youtube#channel",
-      "etag": "RDOjz_CumXP9DCFb8YxUPCVxYcM",
+      "etag": "CCHCpWtFOckOoGYLWY1wFiYYW98",
       "id": "UCR4rI98w6-MqYoCS6jR9LGg",
       "snippet": {
         "title": "César Soto Valero",
@@ -40,8 +40,8 @@
         "country": "SE"
       },
       "statistics": {
-        "viewCount": "20618",
-        "subscriberCount": "357",
+        "viewCount": "20881",
+        "subscriberCount": "363",
         "hiddenSubscriberCount": false,
         "videoCount": "27"
       }
