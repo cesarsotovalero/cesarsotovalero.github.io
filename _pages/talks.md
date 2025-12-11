@@ -17,8 +17,8 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 ## 2025
 
-- **Realtime Financial Fraud Detection with Modern Python**. Presented at [PyData Global 2025](https://pydata.org/global2025/). [Slides](../files/presentations/Realtime-Fraud-Detection-with-Modern-Python_Final%20(PyData%202025).pptx)
-- **From Ideas to APIs: Delivering Fast with Modern Python**. Presented at [PyData Global 2025](https://pydata.org/global2025/). [Slides](../files/presentations/From-Ideas-to-APIs-Delivering-Fast-with%20Modern-Python_Final%20(PyData%202025).pptx)
+- **Realtime Financial Fraud Detection with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Slides](../files/presentations/Realtime-Fraud-Detection-with-Modern-Python_Final%20(PyData%202025).pptx)
+- **From Ideas to APIs: Delivering Fast with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Slides](../files/presentations/From-Ideas-to-APIs-Delivering-Fast-with%20Modern-Python_Final%20(PyData%202025).pptx)
 - **My Bank Meets AI: Smarter Decisions Beyond Fancier Spreadsheets**. Presented at [AI-fokus](https://www.jfokus.se/ai-fokus), Stockholm, January 2026. [Video](https://youtu.be/kFPE9EcxhCs "video"){:target="\_blank"} [Slides](https://www.jfokus.se/aifokus25-preso/My-Bank-Meets-AI.pdf)
 
 ## 2024
