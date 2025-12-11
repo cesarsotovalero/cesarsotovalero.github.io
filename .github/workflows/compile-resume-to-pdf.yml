@@ -26,17 +26,6 @@ jobs:
         run: |
           python scripts/fetch_google_scholar.py
 
-      - name: Extract Google Scholar statistics and write LaTeX macros
-        run: |
-          CITEDBY=$(jq -r '.citedby' _data/google-scholar.json)
-          HINDEX=$(jq -r '.hindex' _data/google-scholar.json)
-
-          # Write to LaTeX macro file for use in cesar-resume.tex
-          echo "\\newcommand{\\citations}{$CITEDBY}" > files/CV/citations.tex
-          echo "\\newcommand{\\hindex}{$HINDEX}" >> files/CV/citations.tex
-
-          cat files/CV/citations.tex
-
       - name: Inject blog post count
         run: |
           # Count only Markdown posts with published: true in front matter
