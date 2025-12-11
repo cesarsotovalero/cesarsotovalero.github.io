@@ -22,16 +22,19 @@ def fetch_scholar_profile(author_id):
         dict: Author profile data including citedby and hindex
     """
     author = scholarly.search_author_id(author_id)
-    author_filled = scholarly.fill(author, sections=["basics"])
+    author_filled = scholarly.fill(author, sections=["basics", "indices"])
 
     # Extract relevant data
+    # The h-index and i10-index are in the citedby_table structure
+    citedby_table = author_filled.get("citedby_table", {})
+
     profile_data = {
         "author_id": author_id,
         "name": author_filled.get("name", ""),
         "affiliation": author_filled.get("affiliation", ""),
         "citedby": author_filled.get("citedby", 0),
-        "hindex": author_filled.get("hindex", 0),
-        "i10index": author_filled.get("i10index", 0),
+        "hindex": citedby_table.get("hindex", 0),
+        "i10index": citedby_table.get("i10index", 0),
         "interests": author_filled.get("interests", []),
         "url_picture": author_filled.get("url_picture", ""),
         "scholar_url": f"https://scholar.google.com/citations?user={author_id}",
