@@ -22,7 +22,14 @@ def fetch_scholar_profile(author_id):
         dict: Author profile data including citedby and hindex
     """
     author = scholarly.search_author_id(author_id)
+    if not author:
+        raise ValueError(f"Could not find author with ID: {author_id}")
+
     author_filled = scholarly.fill(author, sections=["basics", "indices"])
+    if not author_filled:
+        raise ValueError(
+            f"Could not fetch complete profile data for author ID: {author_id}"
+        )
 
     # Extract relevant data
     # The h-index and i10-index are at the top level of the author object
