@@ -81,7 +81,7 @@ def main():
             "author_id": author_id,
             "name": "César Soto-Valero",
             "affiliation": "",
-            "citedby": 0,
+            "citedby": 867,
             "hindex": 18,
             "i10index": 0,
             "interests": [],
