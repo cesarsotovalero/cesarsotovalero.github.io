@@ -25,16 +25,14 @@ def fetch_scholar_profile(author_id):
     author_filled = scholarly.fill(author, sections=["basics", "indices"])
 
     # Extract relevant data
-    # The h-index and i10-index are in the citedby_table structure
-    citedby_table = author_filled.get("citedby_table", {})
-
+    # The h-index and i10-index are at the top level of the author object
     profile_data = {
         "author_id": author_id,
         "name": author_filled.get("name", ""),
         "affiliation": author_filled.get("affiliation", ""),
-        "citedby": author_filled.get("citedby", 867),
-        "hindex": citedby_table.get("hindex", 18),
-        "i10index": citedby_table.get("i10index", 0),
+        "citedby": author_filled.get("citedby", 0),
+        "hindex": author_filled.get("hindex", 18),
+        "i10index": author_filled.get("i10index", 0),
         "interests": author_filled.get("interests", []),
         "url_picture": author_filled.get("url_picture", ""),
         "scholar_url": f"https://scholar.google.com/citations?user={author_id}",
@@ -70,7 +68,19 @@ def main():
         )
     except Exception as e:
         print(f"Error fetching Google Scholar profile: {e}", file=sys.stderr)
-        sys.exit(1)
+        print("Using default values for h-index and citations")
+        # Use default values if fetch fails
+        data = {
+            "author_id": author_id,
+            "name": "César Soto-Valero",
+            "affiliation": "",
+            "citedby": 0,
+            "hindex": 18,
+            "i10index": 0,
+            "interests": [],
+            "url_picture": "",
+            "scholar_url": f"https://scholar.google.com/citations?user={author_id}",
+        }
 
     # Determine output path relative to repo
     out_file = os.path.join(
