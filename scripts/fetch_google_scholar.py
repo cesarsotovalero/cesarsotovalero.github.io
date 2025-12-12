@@ -11,19 +11,6 @@ import sys
 from scholarly import scholarly
 
 
-#!/usr/bin/env python3
-"""
-Fetch Google Scholar author profile data and write as JSON to _data/google-scholar.json.
-Uses the scholarly library to retrieve citation count and h-index.
-"""
-
-import json
-import os
-import sys
-
-from scholarly import scholarly
-
-
 def fetch_scholar_profile(author_id):
     """
     Fetch Google Scholar profile data for the given author ID.
@@ -80,19 +67,7 @@ def main():
         )
     except Exception as e:
         print(f"Error fetching Google Scholar profile: {e}", file=sys.stderr)
-        print("Using default values for h-index and citations")
-        # Use default values if fetch fails
-        data = {
-            "author_id": author_id,
-            "name": "César Soto-Valero",
-            "affiliation": "",
-            "citedby": 867,
-            "hindex": 18,
-            "i10index": 0,
-            "interests": [],
-            "url_picture": "",
-            "scholar_url": f"https://scholar.google.com/citations?user={author_id}",
-        }
+        sys.exit(1)
 
     # Determine output path relative to repo
     out_file = os.path.join(
