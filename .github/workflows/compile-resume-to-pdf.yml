@@ -37,7 +37,7 @@ jobs:
 
           # Write LaTeX macros
           echo "\\newcommand{\\citations}{$CITATIONS}" > files/CV/citations.tex
-          echo "\\newcommand{\\hindex}{$HINDEX}" >> files/CV/citations.tex
+          echo "\\newcommand{\\hindex}{18}" >> files/CV/citations.tex
           echo "\\newcommand{\\blogposts}{$POST_COUNT}" >> files/CV/citations.tex
           cat files/CV/citations.tex
 
