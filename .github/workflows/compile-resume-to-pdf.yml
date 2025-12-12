@@ -26,10 +26,18 @@ jobs:
         run: |
           python scripts/fetch_google_scholar.py
 
-      - name: Inject blog post count
+      - name: Inject Google Scholar statistics and blog post count
         run: |
+          # Extract Google Scholar data
+          CITATIONS=$(jq -r '.citedby' _data/google-scholar.json)
+          HINDEX=$(jq -r '.hindex' _data/google-scholar.json)
+
           # Count only Markdown posts with published: true in front matter
           POST_COUNT=$(grep -R '^published:[[:space:]]*true' -l _posts --include '*.md' | wc -l)
+
+          # Write LaTeX macros
+          echo "\\newcommand{\\citations}{$CITATIONS}" > files/CV/citations.tex
+          echo "\\newcommand{\\hindex}{$HINDEX}" >> files/CV/citations.tex
           echo "\\newcommand{\\blogposts}{$POST_COUNT}" >> files/CV/citations.tex
           cat files/CV/citations.tex
 
