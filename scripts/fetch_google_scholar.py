@@ -11,6 +11,19 @@ import sys
 from scholarly import scholarly
 
 
+#!/usr/bin/env python3
+"""
+Fetch Google Scholar author profile data and write as JSON to _data/google-scholar.json.
+Uses the scholarly library to retrieve citation count and h-index.
+"""
+
+import json
+import os
+import sys
+
+from scholarly import scholarly
+
+
 def fetch_scholar_profile(author_id):
     """
     Fetch Google Scholar profile data for the given author ID.
@@ -22,23 +35,15 @@ def fetch_scholar_profile(author_id):
         dict: Author profile data including citedby and hindex
     """
     author = scholarly.search_author_id(author_id)
-    if not author:
-        raise ValueError(f"Could not find author with ID: {author_id}")
-
-    author_filled = scholarly.fill(author, sections=["basics", "indices"])
-    if not author_filled:
-        raise ValueError(
-            f"Could not fetch complete profile data for author ID: {author_id}"
-        )
+    author_filled = scholarly.fill(author, sections=["basics"])
 
     # Extract relevant data
-    # The h-index and i10-index are at the top level of the author object
     profile_data = {
         "author_id": author_id,
         "name": author_filled.get("name", ""),
         "affiliation": author_filled.get("affiliation", ""),
         "citedby": author_filled.get("citedby", 0),
-        "hindex": author_filled.get("hindex", 18),
+        "hindex": author_filled.get("hindex", 0),
         "i10index": author_filled.get("i10index", 0),
         "interests": author_filled.get("interests", []),
         "url_picture": author_filled.get("url_picture", ""),
