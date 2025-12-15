@@ -1,6 +1,6 @@
 {
   "kind": "youtube#channelListResponse",
-  "etag": "HFUlv6lPb_-FYtVoBMjkoc3HcMI",
+  "etag": "gkFkw-W2RkfmTUkFvw6RRasr9LQ",
   "pageInfo": {
     "totalResults": 1,
     "resultsPerPage": 5
@@ -8,11 +8,11 @@
   "items": [
     {
       "kind": "youtube#channel",
-      "etag": "CCHCpWtFOckOoGYLWY1wFiYYW98",
+      "etag": "qpDUbDoeWZTnN09Pz6r1LF-hoUw",
       "id": "UCR4rI98w6-MqYoCS6jR9LGg",
       "snippet": {
         "title": "César Soto Valero",
-        "description": "César traveled from Cuba to Sweden to pursue his life’s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down AI and software engineering concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, César shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, academic research, and the software industry.\n\n👉 If you like César’s channel, please help him out by sharing one of his videos with a friend. You can also support him through Ko-fi (link below). He really appreciates it!",
+        "description": "César traveled from Cuba to Sweden to pursue his life’s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down technical concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, César shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, research and development, and the software industry.\n\n👉 If you like César’s channel, please help him out by subscribing to the channel or sharing one of his videos with a friend. You can also support him through Ko-fi (link below). He really appreciates it!",
         "customUrl": "@cesarsotovalero",
         "publishedAt": "2016-03-24T20:49:46Z",
         "thumbnails": {
@@ -35,13 +35,13 @@
         "defaultLanguage": "en",
         "localized": {
           "title": "César Soto Valero",
-          "description": "César traveled from Cuba to Sweden to pursue his life’s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down AI and software engineering concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, César shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, academic research, and the software industry.\n\n👉 If you like César’s channel, please help him out by sharing one of his videos with a friend. You can also support him through Ko-fi (link below). He really appreciates it!"
+          "description": "César traveled from Cuba to Sweden to pursue his life’s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down technical concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, César shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, research and development, and the software industry.\n\n👉 If you like César’s channel, please help him out by subscribing to the channel or sharing one of his videos with a friend. You can also support him through Ko-fi (link below). He really appreciates it!"
         },
         "country": "SE"
       },
       "statistics": {
-        "viewCount": "20881",
-        "subscriberCount": "363",
+        "viewCount": "21163",
+        "subscriberCount": "373",
         "hiddenSubscriberCount": false,
         "videoCount": "27"
       }
