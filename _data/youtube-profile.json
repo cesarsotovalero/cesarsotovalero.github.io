@@ -1,6 +1,6 @@
 {
   "kind": "youtube#channelListResponse",
-  "etag": "gkFkw-W2RkfmTUkFvw6RRasr9LQ",
+  "etag": "HFdxoIp3zkP0CcD9CE68MBV3Iec",
   "pageInfo": {
     "totalResults": 1,
     "resultsPerPage": 5
@@ -8,7 +8,7 @@
   "items": [
     {
       "kind": "youtube#channel",
-      "etag": "qpDUbDoeWZTnN09Pz6r1LF-hoUw",
+      "etag": "BNUm6sjH5XzCgE4rwQE-nBoHm84",
       "id": "UCR4rI98w6-MqYoCS6jR9LGg",
       "snippet": {
         "title": "César Soto Valero",
@@ -17,17 +17,17 @@
         "publishedAt": "2016-03-24T20:49:46Z",
         "thumbnails": {
           "default": {
-            "url": "https://yt3.ggpht.com/VA1qa6qXRP07mVRur_JrfQ4x_MkmH3djuJ0o_ViS1hGMKV_91h9q0CXIvRQC-jURNj_95-cs=s88-c-k-c0x00ffffff-no-rj",
+            "url": "https://yt3.ggpht.com/LGAmnNLNNTclIm3-4QiH7ewHX74HS2BPDdUf4Hi4Vtfw2KJCCjzGdTpdvZ-WHYpX8Swbf_DPj-Y=s88-c-k-c0x00ffffff-no-rj",
             "width": 88,
             "height": 88
           },
           "medium": {
-            "url": "https://yt3.ggpht.com/VA1qa6qXRP07mVRur_JrfQ4x_MkmH3djuJ0o_ViS1hGMKV_91h9q0CXIvRQC-jURNj_95-cs=s240-c-k-c0x00ffffff-no-rj",
+            "url": "https://yt3.ggpht.com/LGAmnNLNNTclIm3-4QiH7ewHX74HS2BPDdUf4Hi4Vtfw2KJCCjzGdTpdvZ-WHYpX8Swbf_DPj-Y=s240-c-k-c0x00ffffff-no-rj",
             "width": 240,
             "height": 240
           },
           "high": {
-            "url": "https://yt3.ggpht.com/VA1qa6qXRP07mVRur_JrfQ4x_MkmH3djuJ0o_ViS1hGMKV_91h9q0CXIvRQC-jURNj_95-cs=s800-c-k-c0x00ffffff-no-rj",
+            "url": "https://yt3.ggpht.com/LGAmnNLNNTclIm3-4QiH7ewHX74HS2BPDdUf4Hi4Vtfw2KJCCjzGdTpdvZ-WHYpX8Swbf_DPj-Y=s800-c-k-c0x00ffffff-no-rj",
             "width": 800,
             "height": 800
           }
@@ -40,8 +40,8 @@
         "country": "SE"
       },
       "statistics": {
-        "viewCount": "21163",
-        "subscriberCount": "373",
+        "viewCount": "21349",
+        "subscriberCount": "376",
         "hiddenSubscriberCount": false,
         "videoCount": "27"
       }

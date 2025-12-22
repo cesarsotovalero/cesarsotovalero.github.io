@@ -1,12 +1,12 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "42vBfNCbSSon4z3V8ieluviSvm0",
+    "etag": "BixIKLoCGRvhi382L9JdoXNmv4c",
     "id": "-a6Pbv_yBWw",
     "snippet": {
       "publishedAt": "2025-11-29T07:55:26Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The 7 AI Papers Behind Today’s Breakthroughs",
+      "title": "The 7 Papers That Built Modern AI",
       "description": "In this video, you'll learn about the 7 landmark research papers that shaped today’s AI breakthroughs (Word2Vec, Transformers, GPT, RLHF, Scaling Laws, RAG, and Chain-of-Thought).\n\nThis is the scientific story of how AI evolved:\n→ Why embeddings changed everything\n→ Why Transformers became the universal architecture\n→ How GPT introduced a new training paradigm\n→ Why human feedback became essential\n→ The surprising math behind scaling laws\n→ How retrieval solved hallucinations\n→ How Chain-of-Thought unlocked reasoning\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:35 Paper #1\n04:47 Paper #2\n08:12 Paper #3\n11:09 Paper #4\n13:50 Paper #5\n16:35 Paper #6\n19:37 Paper #7\n22:29 Closing\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w",
       "thumbnails": {
         "default": {
@@ -68,7 +68,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "The 7 AI Papers Behind Today’s Breakthroughs",
+        "title": "The 7 Papers That Built Modern AI",
         "description": "In this video, you'll learn about the 7 landmark research papers that shaped today’s AI breakthroughs (Word2Vec, Transformers, GPT, RLHF, Scaling Laws, RAG, and Chain-of-Thought).\n\nThis is the scientific story of how AI evolved:\n→ Why embeddings changed everything\n→ Why Transformers became the universal architecture\n→ How GPT introduced a new training paradigm\n→ Why human feedback became essential\n→ The surprising math behind scaling laws\n→ How retrieval solved hallucinations\n→ How Chain-of-Thought unlocked reasoning\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:35 Paper #1\n04:47 Paper #2\n08:12 Paper #3\n11:09 Paper #4\n13:50 Paper #5\n16:35 Paper #6\n19:37 Paper #7\n22:29 Closing\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w"
       },
       "defaultAudioLanguage": "en"
@@ -83,15 +83,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "177",
-      "likeCount": "14",
+      "viewCount": "205",
+      "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "3"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "mfVkzJjvoc3b1UZ_AyESLboO2JM",
+    "etag": "w5KgNQ3MLgmM8iXFu3Tj6Wb_zR4",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -170,7 +170,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "450",
+      "viewCount": "487",
       "likeCount": "24",
       "favoriteCount": "0",
       "commentCount": "6"
@@ -178,7 +178,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "628ITq2iGGDZUqlhrgBXRU_RNLI",
+    "etag": "6J3eyak03w83nH-bvCzAaVOf8to",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
@@ -259,7 +259,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "195",
+      "viewCount": "196",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -267,13 +267,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "aaWWxCKRDTyEZy_2BSBFxorKuMg",
+    "etag": "veLrGP-4B5YBWclEfJp2auk7HWI",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "How AI Is Killing the Internet Business Model (and what's next)",
-      "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0?si=RSaC5qEPCfVRx3GX\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 GitHub: https://github.com/cesarsotovalero\n🧑‍💼 LinkedIn: https://www.linkedin.com/in/cesarsotovalero",
+      "title": "How AI Is Killing the Internet’s Business Model",
+      "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/Hd04NJej9iE/default.jpg",
@@ -333,8 +333,8 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "How AI Is Killing the Internet Business Model (and what's next)",
-        "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0?si=RSaC5qEPCfVRx3GX\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 GitHub: https://github.com/cesarsotovalero\n🧑‍💼 LinkedIn: https://www.linkedin.com/in/cesarsotovalero"
+        "title": "How AI Is Killing the Internet’s Business Model",
+        "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0"
       },
       "defaultAudioLanguage": "en"
     },
@@ -348,7 +348,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "157",
+      "viewCount": "160",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -356,7 +356,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "eCafS7f7Zt5_IkR-qt6UmwkTJ-4",
+    "etag": "tX_NZxedFmM3CWFs5Caro1iW5M4",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -431,8 +431,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1203",
-      "likeCount": "59",
+      "viewCount": "1273",
+      "likeCount": "61",
       "favoriteCount": "0",
       "commentCount": "16"
     }
@@ -532,7 +532,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "BDVvSGzSCYPoX4L7wcZmvc8Mmtw",
+    "etag": "bPgI0W3PVYGBG7nvj5FHC4q6sHE",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -607,7 +607,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "175",
+      "viewCount": "180",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -699,7 +699,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5w6T1Luc80mHfDdeCcajLlFwxe0",
+    "etag": "SLXbhgLB2eurUuLbt1w_8NdnGBE",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -773,7 +773,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "587",
+      "viewCount": "590",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -781,7 +781,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Gg-kjP_5f-jZuXD83uay954mDv4",
+    "etag": "jDblxw1Mqrpl8wvGnzM6T4WS-zA",
     "id": "GRd2nxNTZDI",
     "snippet": {
       "publishedAt": "2024-11-30T07:00:08Z",
@@ -856,7 +856,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "188",
+      "viewCount": "189",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -864,7 +864,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "t5M42EXb2d7_rlHDC-8Cdxrd21Y",
+    "etag": "qWXcg_eZ12TcBHXmky9dwnOSdpU",
     "id": "n1t3XEAyUgQ",
     "snippet": {
       "publishedAt": "2024-10-21T06:00:32Z",
@@ -939,7 +939,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "160",
+      "viewCount": "161",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -947,7 +947,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "BiAkNjeymUwWdiMwS261Yrupymk",
+    "etag": "bJNOqRM_8LJSgzDBy5ulpDuZt4k",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
@@ -1019,7 +1019,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "473",
+      "viewCount": "475",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1027,12 +1027,12 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "0xlTI-0buYH1Q8xE9Ft5RbhxNFA",
+    "etag": "fqB3CCPgWhBEuSoQgBf8z3F57eE",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "How to Craft a Résumé That Actually Gets You Hired in Tech",
+      "title": "Your Résumé Is Your Career Inventory",
       "description": "Want to learn the secrets to crafting a standout résumé that can secure your dream job in tech? Then you may want to learn from my mistakes. Whether you’re just entering the job market or looking to level up, this video breaks down the purpose of a computer scientist résumé, the common pitfalls job applicants usually make, and how to avoid them. Discover (or recap) how to structure your résumé for success, highlight your unique skills, and avoid the red flags that could cost you a dream job offer.\n\nIn case you wonder, here's my own résumé 🔗 https://www.cesarsotovalero.net/files/CV/cv.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:54 Résumés and RPG games\n03:14 Targeting\n08:15 Structuring \n11:57 Skills\n14:15 Personal qualities\n15:29 Seven sins to avoid\n18:06 The future of résumés\n\n💡 RELATED CONTENT\n\n➤ My blog post titled \"Building and Leveling Up a Computer Scientist Résumé\" 🔗 https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html\n\n➤ The article \"The resume that got a software engineer a $300,000 job at Google\" 🔗 https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f\n\n➤ The blog post \"Pimp Up Your Resume\" 🔗 https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html",
       "thumbnails": {
         "default": {
@@ -1079,7 +1079,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "How to Craft a Résumé That Actually Gets You Hired in Tech",
+        "title": "Your Résumé Is Your Career Inventory",
         "description": "Want to learn the secrets to crafting a standout résumé that can secure your dream job in tech? Then you may want to learn from my mistakes. Whether you’re just entering the job market or looking to level up, this video breaks down the purpose of a computer scientist résumé, the common pitfalls job applicants usually make, and how to avoid them. Discover (or recap) how to structure your résumé for success, highlight your unique skills, and avoid the red flags that could cost you a dream job offer.\n\nIn case you wonder, here's my own résumé 🔗 https://www.cesarsotovalero.net/files/CV/cv.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:54 Résumés and RPG games\n03:14 Targeting\n08:15 Structuring \n11:57 Skills\n14:15 Personal qualities\n15:29 Seven sins to avoid\n18:06 The future of résumés\n\n💡 RELATED CONTENT\n\n➤ My blog post titled \"Building and Leveling Up a Computer Scientist Résumé\" 🔗 https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html\n\n➤ The article \"The resume that got a software engineer a $300,000 job at Google\" 🔗 https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f\n\n➤ The blog post \"Pimp Up Your Resume\" 🔗 https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html"
       },
       "defaultAudioLanguage": "en"
@@ -1094,7 +1094,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "147",
+      "viewCount": "149",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1102,7 +1102,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "I7X0bz0M_CoBCEQ0c-J0IrY9IqU",
+    "etag": "JPiWDUjdZKwQKfI-kvbgiwZZIXc",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -1163,15 +1163,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12825",
-      "likeCount": "643",
+      "viewCount": "12834",
+      "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "296"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "3qSq-BM5BQWa5DiCnFDK0igjpNU",
+    "etag": "fWpeQWmECrWtrLn6VxPnFc2sEsE",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -1233,7 +1233,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "760",
+      "viewCount": "770",
       "likeCount": "53",
       "favoriteCount": "0",
       "commentCount": "25"
@@ -1241,7 +1241,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "mCPh0hmx9lXljp24DZJoyosXi7o",
+    "etag": "2_KTx6A5ev1dh-isBrs05hGgg0s",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -1295,7 +1295,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "119",
+      "viewCount": "121",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1303,7 +1303,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Ogw_ux-x4kyVYUWQd10ln3IWpZ4",
+    "etag": "uOAroN5L6FHBdEq9n1qZSFQ4z-U",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -1357,8 +1357,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "727",
-      "likeCount": "31",
+      "viewCount": "739",
+      "likeCount": "32",
       "favoriteCount": "0",
       "commentCount": "3"
     }
@@ -1563,7 +1563,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Gt_3ITIBVYoyt2c38CkEiR6VKc8",
+    "etag": "Mk4_SveFX77yaVLIgWtU2_se9Qk",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -1617,7 +1617,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "192",
+      "viewCount": "195",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1964,7 +1964,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "OzZ_4wKlyy9KlU9nRfy4fOYAk4A",
+    "etag": "rJW9_oo8ONKtGa2TARLrAzT5tC8",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -2024,7 +2024,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "278",
+      "viewCount": "279",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "11"
