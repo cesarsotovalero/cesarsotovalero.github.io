@@ -17,8 +17,10 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 ## 2025
 
-- **Real-time Financial Fraud Detection with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Slides](<../files/presentations/Realtime-Fraud-Detection-with-Modern-Python_Final%20(PyData%202025).pptx>)
-- **From Ideas to APIs: Delivering Fast with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Slides](<../files/presentations/From-Ideas-to-APIs-Delivering-Fast-with%20Modern-Python_Final%20(PyData%202025).pptx>)
+{% youtube nEg8T8doy64 %}
+
+- **Real-time Financial Fraud Detection with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Video](https://youtu.be/nEg8T8doy64 "video"){:target="\_blank"} [Slides](<../files/presentations/Realtime-Fraud-Detection-with-Modern-Python_Final%20(PyData%202025).pptx>)
+- **From Ideas to APIs: Delivering Fast with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Video](https://youtu.be/SIVhrtQzknQ "video"){:target="\_blank"} [Slides](<../files/presentations/From-Ideas-to-APIs-Delivering-Fast-with%20Modern-Python_Final%20(PyData%202025).pptx>)
 - **My Bank Meets AI: Smarter Decisions Beyond Fancier Spreadsheets**. Presented at [AI-fokus](https://www.jfokus.se/ai-fokus), Stockholm, January 2026. [Video](https://youtu.be/kFPE9EcxhCs "video"){:target="\_blank"} [Slides](https://www.jfokus.se/aifokus25-preso/My-Bank-Meets-AI.pdf)
 
 ## 2024
