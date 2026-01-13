@@ -43,7 +43,7 @@ So, in this post, I'll cover three things:
 
 Let’s dive in.
 
-# CREATIVITY ≠ PRODUCTIVITY (DEFAULT MODE NETWORK)
+# Creativity ≠ Productivity
 
 Recently, I put a lot effort to bully my brain into being creative.
 I treated creativity like productivity and assumed intensity would eventually pay off.
@@ -72,7 +72,7 @@ When I’m stuck, I stop trying harder and start making space.
 
 Then, I let the brain do what it does when nobody is watching.
 
-# FEED THE BLENDER (LIQUID NETWORKS)
+# Feed the Blender
 
 Here's the thing.
 Your brain is not a laser.
@@ -106,7 +106,7 @@ I believe the post-2022 internet is increasingly saturated with synthetic samene
 So the goal is not “consume more”, the goal is “consume with rarity as the intent.”
 Sometimes the best way to think differently is to stop drinking from the same firehose.
 
-# TRANSLATE AGGRESSIVELY (CONCEPTUAL BLENDING)
+# Translate Aggressively
 
 If you want a new idea, change the format.
 If your idea is written, read it out loud.
@@ -127,7 +127,7 @@ And the cleanest sideways move is often switching medium.
 Say it, sketch it, storyboard it, teach it.
 Your brain will do the connecting if you give it a new surface to connect on.
 
-# WALK AWAY TO WIN (THE INCUBATION EFFECT)
+# Walk Away to Win
 
 Some solutions only show up after you stop chasing them.
 That is not mystical.
@@ -147,7 +147,7 @@ Create small pockets of low-stimulation downtime.
 Then come back and do one concrete next step.
 Incubation is not procrastination if you return with intent.
 
-# FIGHT AN EVIL TWIN (COUNTERFACTUAL THINKING)
+# Fight an Evil Twin
 
 Here’s an exercise that is both effective and mildly ridiculous.
 Imagine an evil twin version of you.
@@ -167,7 +167,7 @@ Run tiny experiments instead of grand commitments.
 Creativity hates drama and loves iterations.
 If you can make it small, you can make it real.
 
-# TURN THE FAUCET ON (DIVERGENT THINKING)
+# Turn the Faucet On
 
 People kill creativity by demanding quality too early.
 At the start, the output is supposed to be bad.
@@ -187,7 +187,7 @@ Circle the three “least stupid” ideas.
 Improve one of them.
 Creativity is less a light bulb and more a faucet, and the first water is dirty.
 
-# CONSTRAINTS ARE ROCKET FUEL
+# Constraints Are Rocket Fuel
 
 “Unlimited freedom” is overrated.
 Constraints do two useful things: they exclude unhelpful options and they focus attention where novelty can happen.
@@ -207,10 +207,10 @@ When every option is cheap, commitment becomes the differentiator.
 Constraints create commitment by design.
 If you want a sharper mind, impose sharper edges.
 
-# CREATIVE FASTING (YOUR MIND NEEDS SILENCE TO HEAR ITSELF)
+# Creative Fasting
 
 Your mind can’t have its own thoughts if it’s always renting someone else’s.
-Once or twice a year, consider a **creative fast**.
+Once or twice a year, consider a creative fast.
 No news, no social media, no podcasts, minimal algorithmic feeds.
 Just enough quiet to notice what your brain does when it isn’t being constantly recruited.
 Think of it as intermittent fasting for attention.
@@ -228,7 +228,7 @@ If you feel “behind” when you unplug, good.
 That sensation is your dependency showing itself.
 Detach long enough to remember what you actually care about.
 
-# THE AI-ERA TWIST
+# The AI-Era Twist
 
 These days, AI can draft, remix, summarize, rephrase, storyboard, and iterate at industrial speed.
 So the scarce resource shifts.
@@ -242,7 +242,7 @@ Great for cutting wood.
 Terrible at deciding what house you should build.
 If you outsource the “why,” you will eventually dislike the “what.”
 
-# A SIMPLE DAILY PROTOCOL (15 MINUTES)
+# A 15 Minutes Protocol
 
 Creativity becomes practical when it becomes scheduled.
 Write the problem as a question (2 minutes).
@@ -263,7 +263,7 @@ Your brain learns the pattern: create, step away, return, choose.
 And over time, “creative” stops feeling like a personality trait.
 It becomes a practiced state.
 
-# FINAL THOUGHTS
+# Final Thoughts
 
 Creativity is not a talent.
 It’s a state you can reliably enter by managing your inputs, your boredom, and your fear of bad ideas.
@@ -279,7 +279,7 @@ Ask instead, “_What can I create that is worth automating toward?_”
 Because in an AI-saturated world, relevance does not come from output.
 It comes from taste, direction, and the courage to reframe the question.
 
-# FOOTNOTES
+# Footnotes
 
 [^1]: Background on PageRank: [Wikipedia](https://en.wikipedia.org/wiki/PageRank). Original sources: Lawrence Page et al., _The PageRank Citation Ranking: Bringing Order to the Web_ (Stanford) [link](https://ilpubs.stanford.edu/422/), and Brin & Page, _The Anatomy of a Large-Scale Hypertextual Web Search Engine_ (Google Research page) [link](https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/) (PDF mirror: [link](https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf)).
 [^2]: Baird et al. (2012), _Inspired by Distraction: Mind Wandering Facilitates Creative Incubation_ (PDF) [link](https://www.cmhp.ucsb.edu/sites/default/files/2018-12/Baird%20et%20al.%20%282012%29%20Inspired%20by%20distraction.pdf) (PubMed record: [link](https://pubmed.ncbi.nlm.nih.gov/22941876/)).
