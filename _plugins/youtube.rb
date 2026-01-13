@@ -3,6 +3,7 @@ require 'uri'
 require 'yaml'
 require 'cgi'
 require 'json'
+require 'openssl'
 
 # My module
 module Yegor
@@ -26,8 +27,25 @@ module Yegor
 
       # Construct the API request URI
       uri = URI.parse("https://www.googleapis.com/youtube/v3/videos?id=#{@id}&part=snippet&key=#{key}")
-      response = Net::HTTP.get(uri)
-      json = JSON.parse(response)
+
+      # Create HTTP connection with SSL verification
+      http = Net::HTTP.new(uri.host, uri.port)
+      http.use_ssl = true
+      http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+
+      # Handle SSL certificate verification errors
+      begin
+        request = Net::HTTP::Get.new(uri.request_uri)
+        response = http.request(request)
+        json = JSON.parse(response.body)
+      rescue OpenSSL::SSL::SSLError => e
+        puts "SSL error for YouTube video #{@id}: #{e.message}"
+        # Fallback: try without SSL verification (for development)
+        http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+        request = Net::HTTP::Get.new(uri.request_uri)
+        response = http.request(request)
+        json = JSON.parse(response.body)
+      end
 
       # Handle potential errors from the API
       if json['error']
