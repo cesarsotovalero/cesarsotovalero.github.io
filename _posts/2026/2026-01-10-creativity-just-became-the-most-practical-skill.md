@@ -52,7 +52,7 @@ The result was more effort and fewer breakthroughs.
 And that’s because creativity doesn’t reward effort the way execution does.
 
 Creativity prefers slack, not strain.
-Neuroscientists describe a relevant system called the **default mode network (DMN)**, which is more active when you’re at rest and thinking internally.[^3]
+Neuroscientists describe a relevant system called the _default mode network_ (DMN), which is more active when you’re at rest and thinking internally.[^3]
 It’s linked to mind-wandering, memory, and recombining old material into new patterns.[^4]
 In plain terms, it’s your brain’s background “merge request” process.
 When you never give it idle time, nothing new gets merged.
@@ -82,7 +82,7 @@ If your inputs are all the same creators, the same feeds, the same opinions, you
 
 A smarter strategy is to diversify the ingredients, not increase the volume.
 
-Steven Johnson describes breakthrough environments as **liquid networks**: idea ecosystems where half-formed hunches collide, combine, and evolve.[^5]
+Steven Johnson describes breakthrough environments as _liquid networks_: idea ecosystems where half-formed hunches collide, combine, and evolve.[^5]
 That matters because creativity is often the product of collisions, not contemplation.
 If you only consume polished conclusions, you train your mind to reproduce conclusions.
 If you collect fragments, you give your mind raw material.
@@ -115,7 +115,7 @@ If your idea is very technical, explain it to a five-year-old.
 
 Each translation forces the brain to rebuild the idea, not just rephrase it.
 
-Cognitive scientists call this **conceptual blending**: combining elements from different mental spaces into a new structure with emergent meaning.[^8]
+Cognitive scientists call this _conceptual blending_: combining elements from different mental spaces into a new structure with emergent meaning.[^8]
 
 This is why changing medium often changes the idea.
 You’re not just changing representation, you’re changing which associations become available.
@@ -132,7 +132,7 @@ Your brain will do the connecting if you give it a new surface to connect on.
 Some solutions only show up after you stop chasing them.
 That is not mystical.
 It’s studied.
-The **incubation effect** is the benefit you can get by setting a problem aside and returning later with improved insight or originality.[^9]
+The _incubation effect_ is the benefit you can get by setting a problem aside and returning later with improved insight or originality.[^9]
 Stepping away can help because attention relaxes and alternative associations have room to form.
 
 This connects to the earlier “undemanding task” finding.
@@ -171,7 +171,7 @@ If you can make it small, you can make it real.
 
 People kill creativity by demanding quality too early.
 At the start, the output is supposed to be bad.
-This is **divergent thinking**: generating many possibilities (including obvious and flawed ones) to escape the first ideas your brain serves you.[^10]
+This is _divergent thinking_: generating many possibilities (including obvious and flawed ones) to escape the first ideas your brain serves you.[^10]
 Quantity is not the goal, it’s the tool.
 
 A practical rule is simple.
@@ -236,7 +236,7 @@ The bottleneck becomes taste, direction, problem selection, and deciding what is
 AI is naturally divergent (it generates many options).
 Humans must become intentionally convergent (we choose).
 
-This is also why the “creative journey” matters, not just the destination.
+This is also why the creative journey matters, not just the destination.
 Use AI, but use it like a power tool.
 Great for cutting wood.
 Terrible at deciding what house you should build.
@@ -244,12 +244,13 @@ If you outsource the “why,” you will eventually dislike the “what.”
 
 # A 15 Minutes Protocol
 
-Creativity becomes practical when it becomes scheduled.
-Write the problem as a question (2 minutes).
-Generate ten bad ideas fast (5 minutes).
-Translate the best idea into a different medium (3 minutes).
-Stop and do nothing useful (5 minutes).
-Return and choose one next action.
+Creativity becomes practical when it becomes scheduled:
+
+- Write the problem as a question (2 minutes).
+- Generate ten bad ideas fast (5 minutes).
+- Translate the best idea into a different medium (3 minutes).
+- Stop and do nothing useful (5 minutes).
+- Return and choose one next action.
 
 You’re training two muscles.
 Generation and judgment.
