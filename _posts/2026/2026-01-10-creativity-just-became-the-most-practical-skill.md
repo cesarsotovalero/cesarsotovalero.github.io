@@ -24,53 +24,61 @@ published: true
 {% youtube pHqoIPAlOcw %}
 
 In 1996, Larry Page was a PhD student at Stanford.
-Most search engines at the time tried to read pages better (keywords, text parsing, on-page signals, and so on).
-Page tried something different and asked a different question: “_What if a page’s value is not mainly in its words, but in how many other pages point to it?_”
+That was the time of the nacient internet.
+Back then, most search engines were trying to read pages better.
+They were based on keywords, text parsing, on-page signals, and so on.
+But Larry tried something different.
+He asked a different question: “_What if a page’s value is not about the information it contains, but in how many other pages point to it?_”
 That reframing became the PageRank algorithm,[^1] a ranking system built on the web’s hyperlink graph (not just its text).
-It helped shape what later on became Google.
+The rest is hitory, PageRank helped shape what later on became the dominat search engine on the world-wide-web: Google.
 
-But this post is not about search.
-It’s about the engine behind human breakthroughs: creativity as perspective-shift.
-As we are now in AI era, in which AI can generate a thousand “good” outputs.
-However it still struggles to choose what is worth building and why.
-It's my believe that this selection function (taste, judgment, values) is where humans still keep their edge.
+But this post is not about the web or search engines.
+It’s about another engine.
+The engine behind human breakthroughs: creativity as perspective-shift.
+
+We are now in AI era, in which AI can generate thousands of ~~surprisingly~~ "good" outputs.
+However, AI still struggles to choose what is worth building, what is actually relevant, and why.
+It's my believe that this selection function (taste, judgment, values) is where humans still keep an edge over AI.
 
 So, in this post, I'll cover three things:
 
-1. Why creativity just became the most practical skill (because AI moved the goalposts).
-2. How creativity works (what research suggests is happening in the mind).
-3. How to grow it with simple, repeatable practices.
+1. Why creativity just became the most practical skill for humans.
+2. How creativity works according to what research suggests is happens in our minds.
+3. How you can grow your creativity with simple, repeatable practices.
 
-Let’s dive in.
+Let’s dive in!
 
 # Creativity ≠ Productivity
 
 Recently, I put a lot effort to bully my brain into being creative.
 I treated creativity like productivity and assumed intensity would eventually pay off.
-So I tried to focus harder, longer, and with more discipline.
+So I tried to focus harder, longer, and with more discipline than ever.
 The result was more effort and fewer breakthroughs.
-And that’s because creativity doesn’t reward effort the way execution does.
+
+Creativity doesn’t reward effort the way execution does.
 
 Creativity prefers slack, not strain.
-Neuroscientists describe a relevant system called the _default mode network_ (DMN), which is more active when you’re at rest and thinking internally.[^3]
-It’s linked to mind-wandering, memory, and recombining old material into new patterns.[^4]
-In plain terms, it’s your brain’s background “merge request” process.
+Neuroscientists describe a relevant system called the _default mode network_ (DMN), which becomes more active when you’re at rest and thinking internally.[^3]
+The DMN is linked to mind-wandering, memory, and our ability to recombining unrelated things into new patterns.[^4]
+
+In plain terms, the DMN your brain’s background “merge request” process.
 When you never give it idle time, nothing new gets merged.
 
-So my goal now is not “focus harder,” but “switch states.”
+So instead of “focus harder,” what I do is to “switch states.”
 
 One well-known study found that an undemanding task that allows the mind to wander can improve creative incubation compared to staying locked in.[^2]
+
 But this doesn’t mean boredom is magical.
 It means boredom is permissive, and your brain takes the permission seriously.
-Consequently, if you want originality, you have to stop supervising every thought.
+If you want originality, you the best way is to stop supervising every thought.
 
-When I’m stuck, I stop trying harder and start making space.
+Now when I’m stuck, I stop trying harder and start making space.
 
 - I walk without inputs (no phone, no podcast).
-- I do dishes.
+- I do dishes, clean the floor, or do something else.
 - I take the boring route home.
 
-Then, I let the brain do what it does when nobody is watching.
+Then, I let the brain do what it does when nobody is watching: wandering about things.
 
 # Feed the Blender
 
@@ -82,8 +90,9 @@ If your inputs are all the same creators, the same feeds, the same opinions, you
 
 A smarter strategy is to diversify the ingredients, not increase the volume.
 
-Steven Johnson describes breakthrough environments as _liquid networks_: idea ecosystems where half-formed hunches collide, combine, and evolve.[^5]
-That matters because creativity is often the product of collisions, not contemplation.
+[Steven Johnson](<https://en.wikipedia.org/wiki/Steven_Johnson_(author)>) describes breakthrough environments as _liquid networks_: idea ecosystems where half-formed hunches collide, combine, and evolve.[^5]
+
+This matters because creativity is often the product of collisions of new ideas, not contemplation of what's alrady known.
 If you only consume polished conclusions, you train your mind to reproduce conclusions.
 If you collect fragments, you give your mind raw material.
 This is how “random” insights become repeatable.
@@ -93,118 +102,140 @@ So build a liquid network on purpose.
 For example:
 
 - Watch a YouTube video with under 1K views (there are many of then in my [YouTube channel](https://youtube.com/@cesarsotovalero))
-- Read an essay from 2008.
-- Open a weird old book (history, biology, architecture).
-- Talk to someone outside your field and ask what they’re obsessing over.
+- Read an old essay from last century.
+- Open a weird old book from another field (history, biology, architecture).
+- Talk to someone outside your network and ask what they’re obsessing over.
 
-Most of it will be useless, and that’s the price of finding the one useful oddity.
-One strange idea can spark ten better ones.
+Most of it will be useless (that’s the price of finding the one useful oddity).
+But one strange idea can spark ten better ones.
 
-George Mack argues for hunting “anti-social proof” inputs (good ideas that haven’t been blessed by the algorithm yet).[^7]
+[George Mack](https://www.highagency.com/) argues for hunting “anti-social proof” inputs(good ideas that haven’t been blessed by the algorithm yet).[^7]
 
 I believe the post-2022 internet is increasingly saturated with synthetic sameness, so “new” is not the same thing as “novel.”
-So the goal is not “consume more”, the goal is “consume with rarity as the intent.”
-Sometimes the best way to think differently is to stop drinking from the same firehose.
+
+So the goal is definitely not “consume more”, the goal is “consume with rarity as the intent.”
+
+Cause sometimes the best way to think differently is to stop drinking from the same firehose.
 
 # Translate Aggressively
 
 If you want a new idea, change the format.
-If your idea is written, read it out loud.
-If your idea is visual, write it as prose.
-If your idea is very technical, explain it to a five-year-old.
+
+- If your idea is written, read it out loud.
+- If your idea is visual, write it as prose.
+- If your idea is very technical, explain it to a five-year-old.
 
 Each translation forces the brain to rebuild the idea, not just rephrase it.
 
-Cognitive scientists call this _conceptual blending_: combining elements from different mental spaces into a new structure with emergent meaning.[^8]
+Cognitive scientists call this _conceptual blending_:
+Combining elements from different mental spaces into a new structure with emergent meaning.[^8]
 
-This is why changing medium often changes the idea.
-You’re not just changing representation, you’re changing which associations become available.
-That is the whole point: new connections, not new adjectives.
+This is why changing the medium often changes the idea.
+With this technique, you’re not just changing representation, you’re changing which associations become available.
 
 So when you’re stuck, don’t think harder.
 Think sideways.
-And the cleanest sideways move is often switching medium.
+Switch the communication channel.
 Say it, sketch it, storyboard it, teach it.
 Your brain will do the connecting if you give it a new surface to connect on.
 
 # Walk Away to Win
 
 Some solutions only show up after you stop chasing them.
-That is not mystical.
-It’s studied.
+
 The _incubation effect_ is the benefit you can get by setting a problem aside and returning later with improved insight or originality.[^9]
 Stepping away can help because attention relaxes and alternative associations have room to form.
 
 This connects to the earlier “undemanding task” finding.
 Mind-wandering can facilitate creative incubation, especially after you’ve already done focused work.[^2]
-So yes, “shower thoughts” are a meme, but the mechanism is real enough to respect.
-You don’t need six showers, you need intervals where the brain is allowed to roam.
 
-Your best ideas often arrive when your brain stops auditioning for them.
-Take short walks.
-Do idle chores.
-Create small pockets of low-stimulation downtime.
+So yes, “shower thoughts” are a meme, but the mechanism is real enough to take it seriously.
+
+Your best ideas often arrive when your brain stops auditioning for them:
+
+- Take short walks.
+- Do idle chores.
+- Create small pockets of low-stimulation downtime.
+
 Then come back and do one concrete next step.
+
 Incubation is not procrastination if you return with intent.
 
 # Fight an Evil Twin
 
 Here’s an exercise that is both effective and mildly ridiculous.
+
 Imagine an evil twin version of you.
 Same skills, same knowledge.
 Their only job is to outthink you.
 What would they try that you’re too cautious to attempt?
 
-This is counterfactual thinking with a costume on.
+This is _counterfactual thinking_ with a costume on.
 By blaming risky ideas on your “evil twin,” you remove your ego from the room.
 No embarrassment, no fear of looking stupid, just experiments.
+
 George Mack describes this “evil twin” technique as a way to bypass your internal status police.[^7]
 And once ideas start flowing, you can switch back to being a responsible adult.
 
-Write down ten things your twin would do.
-Steal the best two.
-Run tiny experiments instead of grand commitments.
+You can try to:
+
+- Write down ten things your twin would do.
+- Steal the best two.
+- Run tiny experiments instead of grand commitments.
+
 Creativity hates drama and loves iterations.
+
 If you can make it small, you can make it real.
 
 # Turn the Faucet On
 
 People kill creativity by demanding quality too early.
+
 At the start, the output is supposed to be bad.
+
 This is _divergent thinking_: generating many possibilities (including obvious and flawed ones) to escape the first ideas your brain serves you.[^10]
 Quantity is not the goal, it’s the tool.
 
-A practical rule is simple.
-First pass: volume.
-Second pass: selection.
-Third pass: refinement.
+A practical order is:
+
+1. Volume.
+2. Selection.
+3. Refinement.
+
 If you judge too early, you stop the faucet before the clean water arrives.
 
 Try this once, seriously.
+
 Set a timer for ten minutes.
 Generate twenty ideas and do not evaluate.
 Circle the three “least stupid” ideas.
 Improve one of them.
+
 Creativity is less a light bulb and more a faucet, and the first water is dirty.
 
 # Constraints Are Rocket Fuel
 
 “Unlimited freedom” is overrated.
-Constraints do two useful things: they exclude unhelpful options and they focus attention where novelty can happen.
-Patricia Stokes argues that constraints can be a reliable source of breakthrough because they force you out of default patterns.[^11]
-Limits are not cages, they are search spaces.
 
-Use constraints deliberately.
-Write a full outline using only twelve sentences.
-Explain your idea without using your favorite buzzwords.
-Build the concept with one example, not ten.
-Draft in twenty minutes, then stop.
+Constraints do two useful things: they exclude unhelpful options and they focus attention where novelty can happen.
+
+[Patricia Stokes](<https://en.wikipedia.org/wiki/Patrick_Stokes_(businessman)>) argues that constraints can be a reliable source of breakthrough because they force you out of default patterns.[^11]
+
+Limits are not cages, they are search spaces:
+
+- Use constraints deliberately
+- Write a full outline using only twelve sentences.
+- Explain your idea without using your favorite buzzwords.
+- Build the concept with one example, not ten.
+- Draft in twenty minutes, then stop.
+
 Constraints make you choose, and choice is where originality starts.
 
 AI makes it tempting to expand forever.
 But expansion is not invention.
 When every option is cheap, commitment becomes the differentiator.
 Constraints create commitment by design.
+
 If you want a sharper mind, impose sharper edges.
 
 # Creative Fasting
