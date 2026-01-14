@@ -33,7 +33,7 @@ He asked a different question:
 
 “_What if a page’s value is not about the information it contains, but in how many other pages point to it?_”
 
-That reframing became the PageRank algorithm,[^1] a ranking system built on the web’s hyperlink graph (not just its text).
+That reframing became the [PageRank algorithm](https://en.wikipedia.org/wiki/PageRank), a ranking system built on the web’s hyperlink graph (not just its text).[^1]
 The rest is hitory, PageRank helped shape what later on became the dominat search engine and one of the most prominet companies in the wrold: Google.
 
 But this post is not about the history of web or search engines (I wrote [another post](./blog/the-evolution-of-the-web-from-html-to-webassembly) about it).
@@ -63,7 +63,7 @@ The result was more effort and fewer breakthroughs.
 Creativity doesn’t reward effort the way execution does.
 
 Creativity prefers slack, not strain.
-Neuroscientists describe a relevant system called the _default mode network_ (DMN), which becomes more active when you’re at rest and thinking internally.[^3]
+Neuroscientists describe a relevant system called the _Default Mode Network_ (DMN), which becomes more active when you’re at rest and thinking internally.[^3]
 The DMN is linked to mind-wandering, memory, and our ability to recombining unrelated things into new patterns.[^4]
 
 In plain terms, the DMN your brain’s background “merge request” process.
@@ -251,7 +251,7 @@ No news, no social media, no podcasts, minimal algorithmic feeds.
 Just enough quiet to notice what your brain does when it isn’t being constantly recruited.
 Think of it as intermittent fasting for attention.
 
-People often cite Japan’s [sakoku](https://en.wikipedia.org/wiki/Sakoku) policy as a metaphor for creative isolation (even though the historical reality was more nuanced than “total isolation”).[^12]
+People often cite Japan’s [sakoku](https://en.wikipedia.org/wiki/Sakoku) policy as a metaphor for creative isolation (even though the historical reality was more nuanced than “total isolation”).
 The point of the metaphor is not “isolation is good,” but “silence reveals signal.”
 There’s also a motivation angle: evaluation pressure and extrinsic incentives can undermine originality.
 Teresa Amabile’s classic piece explains how environments accidentally kill creativity by squeezing intrinsic motivation.[^13]
@@ -318,17 +318,15 @@ It comes from taste, direction, and the courage to reframe the question.
 
 # Footnotes
 
-[^1]: Background on PageRank: [Wikipedia](https://en.wikipedia.org/wiki/PageRank). Original sources: Lawrence Page et al., _The PageRank Citation Ranking: Bringing Order to the Web_ (Stanford) [link](https://ilpubs.stanford.edu/422/), and Brin & Page, _The Anatomy of a Large-Scale Hypertextual Web Search Engine_ (Google Research page) [link](https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/) (PDF mirror: [link](https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf)).
-[^2]: Baird et al. (2012), _Inspired by Distraction: Mind Wandering Facilitates Creative Incubation_ (PDF) [link](https://www.cmhp.ucsb.edu/sites/default/files/2018-12/Baird%20et%20al.%20%282012%29%20Inspired%20by%20distraction.pdf) (PubMed record: [link](https://pubmed.ncbi.nlm.nih.gov/22941876/)).
-[^3]: Raichle et al. (2001), _A Default Mode of Brain Function_ (PNAS) [link](https://www.pnas.org/doi/10.1073/pnas.98.2.676).
-[^4]: Buckner, Andrews-Hanna, & Schacter (2008), _The Brain’s Default Network: Anatomy, Function, and Relevance to Disease_ (Annals of the NY Academy of Sciences) [abstract](https://nyaspubs.onlinelibrary.wiley.com/doi/abs/10.1196/annals.1440.011).
-[^5]: Steven Johnson, “Where Good Ideas Come From” (TED) [link](https://ed.ted.com/best_of_web/EaMi6IZF).
-[^7]: George Mack, _How to be creative (without taking drugs)_ [link](https://essays.highagency.com/p/how-to-be-creative-without-taking).
-[^8]: Fauconnier & Turner (2003), _Conceptual Blending, Form and Meaning_ (PDF) [link](https://tecfa.unige.ch/tecfa/maltt/cofor-1/textes/Fauconnier-Turner03.pdf).
-[^9]: Sio & Ormerod (2009), _Does incubation enhance problem solving? A meta-analytic review_ (PDF mirror) [link](https://gwern.net/doc/psychology/writing/2009-sio.pdf).
-[^10]: APA Monitor, “The science behind creativity” (includes Guilford’s role and divergent thinking context) [link](https://www.apa.org/monitor/2022/04/cover-science-creativity).
-[^11]: Patricia D. Stokes, _Creativity from Constraints: The Psychology of Breakthrough_ (preview PDF) [link](https://api.pageplace.de/preview/DT0400.9780826197856_A26559201/preview-9780826197856_A26559201.pdf).
-[^12]: Britannica, “Sakoku” [link](https://www.britannica.com/topic/sakoku).
-[^13]: Teresa Amabile, _How to Kill Creativity_ (Harvard Business Review) [link](https://hbr.org/1998/09/how-to-kill-creativity) (PDF copy) [link](https://www.pickardlaws.com/myleadership/myfiles/rtdocs/hbr/HowToKillCreativityHBR0998.pdf).
-[^14]: Jettro Coenradie, _The Evolution of Creativity: Thriving in the Age of AI_ [link](https://www.luminis.eu/blog/the-evolution-of-creativity-thriving-in-the-age-of-ai/).
-[^15]: Margaret A. Boden, _The Creative Mind: Myths and Mechanisms_ (Taylor & Francis page) [link](https://www.taylorfrancis.com/books/mono/10.4324/9780203508527/creative-mind-margaret-boden).
+[^1]: Lawrence Page et al., [_The PageRank Citation Ranking: Bringing Order to the Web_ (Stanford)](https://ilpubs.stanford.edu/422/), and Brin & Page, [_The Anatomy of a Large-Scale Hypertextual Web Search Engine_ (Google Research page)](https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/) (PDF mirror: [PDF](https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf)).
+[^2]: Baird et al. (2012), [_Inspired by Distraction: Mind Wandering Facilitates Creative Incubation_ (PDF)](https://www.cmhp.ucsb.edu/sites/default/files/2018-12/Baird%20et%20al.%20%282012%29%20Inspired%20by%20distraction.pdf) (PubMed record: [PubMed](https://pubmed.ncbi.nlm.nih.gov/22941876/)).
+[^3]: Raichle et al. (2001), [_A Default Mode of Brain Function_ (PNAS)](https://www.pnas.org/doi/10.1073/pnas.98.2.676).
+[^4]: Buckner, Andrews-Hanna, & Schacter (2008), [_The Brain’s Default Network: Anatomy, Function, and Relevance to Disease_ (Annals of the NY Academy of Sciences, abstract)](https://nyaspubs.onlinelibrary.wiley.com/doi/abs/10.1196/annals.1440.011).
+[^5]: Steven Johnson, [“Where Good Ideas Come From” (TED)](https://ed.ted.com/best_of_web/EaMi6IZF).
+[^7]: George Mack, [_How to be creative (without taking drugs)_](https://essays.highagency.com/p/how-to-be-creative-without-taking).
+[^8]: Fauconnier & Turner (2003), [_Conceptual Blending, Form and Meaning_ (PDF)](https://tecfa.unige.ch/tecfa/maltt/cofor-1/textes/Fauconnier-Turner03.pdf).
+[^9]: Sio & Ormerod (2009), [_Does incubation enhance problem solving? A meta-analytic review_ (PDF mirror)](https://gwern.net/doc/psychology/writing/2009-sio.pdf).
+[^10]: APA Monitor, [“The science behind creativity” (includes Guilford’s role and divergent thinking context)](https://www.apa.org/monitor/2022/04/cover-science-creativity).
+[^11]: Patricia D. Stokes, [_Creativity from Constraints: The Psychology of Breakthrough_ (preview PDF)](https://api.pageplace.de/preview/DT0400.9780826197856_A26559201/preview-9780826197856_A26559201.pdf).
+[^13]: Teresa Amabile, [_How to Kill Creativity_ (Harvard Business Review)](https://hbr.org/1998/09/how-to-kill-creativity) (PDF copy: [PDF](https://www.pickardlaws.com/myleadership/myfiles/rtdocs/hbr/HowToKillCreativityHBR0998.pdf)).
+[^15]: Margaret A. Boden, [_The Creative Mind: Myths and Mechanisms_ (Taylor & Francis page)](https://www.taylorfrancis.com/books/mono/10.4324/9780203508527/creative-mind-margaret-boden).
