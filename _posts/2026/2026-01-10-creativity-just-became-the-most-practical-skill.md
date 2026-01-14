@@ -69,7 +69,7 @@ The DMN is linked to mind-wandering, memory, and our ability to recombining unre
 In plain terms, the DMN your brain’s background “merge request” process.
 When you never give it idle time, nothing new gets merged.
 
-So instead of “focus harder,” what I do is to “switch states.”
+So instead of focus harder, what I do is to switch states.
 
 One well-known study found that an undemanding task that allows the mind to wander can improve creative incubation compared to staying locked in.[^2]
 
@@ -91,7 +91,7 @@ Here's the thing.
 Your brain is not a laser.
 It’s more like a blender.
 What comes out depends on what goes in.
-If your inputs are all the same creators, the same feeds, the same opinions, your “creative” output becomes high-resolution _déjà vu_.
+If your inputs are all the same creators, the same feeds, the same opinions, your creative output becomes high-resolution _déjà vu_.
 
 A smarter strategy is to diversify the ingredients, not increase the volume.
 
@@ -114,11 +114,11 @@ For example:
 Most of it will be useless (that’s the price of finding the one useful oddity).
 But one strange idea can spark ten better ones.
 
-[George Mack](https://www.highagency.com/) argues for hunting “anti-social proof” inputs(good ideas that haven’t been blessed by the algorithm yet).[^7]
+[George Mack](https://www.highagency.com/) argues for hunting “anti-social proof” inputs (i.e., good ideas that haven’t been blessed by the algorithm yet).[^7]
 
-I believe the post-2022 internet is increasingly saturated with synthetic sameness, so “new” is not the same thing as “novel.”
+I believe the post-2022 internet is increasingly saturated with synthetic sameness, so new is not the same thing as novel.
 
-So the goal is definitely not “consume more”, the goal is “consume with rarity as the intent.”
+So the goal is definitely not consume more, the goal is consume with rarity as the intent.
 
 Cause sometimes the best way to think differently is to stop drinking from the same firehose.
 
@@ -151,8 +151,8 @@ Some solutions only show up after you stop chasing them.
 The _incubation effect_ is the benefit you can get by setting a problem aside and returning later with improved insight or originality.[^9]
 Stepping away can help because attention relaxes and alternative associations have room to form.
 
-This connects to the earlier “undemanding task” finding.
-Mind-wandering can facilitate creative incubation, especially after you’ve already done focused work.[^2]
+This connects to the earlier undemanding task finding.
+Mind-wandering can facilitate creative incubation, especially after you’ve already done focused work.
 
 So yes, “shower thoughts” are a meme, but the mechanism is real enough to take it seriously.
 
@@ -213,14 +213,14 @@ Try this once, seriously.
 
 Set a timer for ten minutes.
 Generate twenty ideas and do not evaluate.
-Circle the three “least stupid” ideas.
+Circle the three least stupid ideas.
 Improve one of them.
 
 Creativity is less a light bulb and more a faucet, and the first water is dirty.
 
 # Constraints Are Rocket Fuel
 
-“Unlimited freedom” is overrated.
+Unlimited freedom is overrated.
 
 Constraints do two useful things: they exclude unhelpful options and they focus attention where novelty can happen.
 
@@ -251,8 +251,8 @@ No news, no social media, no podcasts, minimal algorithmic feeds.
 Just enough quiet to notice what your brain does when it isn’t being constantly recruited.
 Think of it as intermittent fasting for attention.
 
-People often cite Japan’s [sakoku](https://en.wikipedia.org/wiki/Sakoku) policy as a metaphor for creative isolation (even though the historical reality was more nuanced than “total isolation”).
-The point of the metaphor is not “isolation is good,” but “silence reveals signal.”
+People often cite Japan’s [sakoku](https://en.wikipedia.org/wiki/Sakoku) policy as a metaphor for creative isolation (even though the historical reality was more nuanced than total isolation).
+The point of the metaphor is not isolation is good, but silence reveals signal.
 There’s also a motivation angle: evaluation pressure and extrinsic incentives can undermine originality.
 Teresa Amabile’s classic piece explains how environments accidentally kill creativity by squeezing intrinsic motivation.[^13]
 When nobody’s watching, your inner voice gets louder.
@@ -260,7 +260,7 @@ When nobody’s watching, your inner voice gets louder.
 A creative fast is not anti-technology.
 It’s pro-agency.
 It’s how you stop the algorithm from drafting your personality.
-If you feel “behind” when you unplug, good.
+If you feel behind when you unplug, good.
 That sensation is your dependency showing itself.
 Detach long enough to remember what you actually care about.
 
@@ -293,8 +293,14 @@ But creativity often means producing what is structurally and fundamentally new.
 Margaret Boden’s call this _transformational creativity_ (changing the rules of the game, not just the pieces).[^15]
 
 For now, that gap between “likely” and “new” is where humans still have an edge.
-So when everyone else asks, “_What can I automate?_”
-Ask instead, “_What can I create that is worth automating toward?_”
+
+So when everyone else asks:
+
+“_What can I automate?_”
+
+Ask instead:
+
+“_What can I create that is worth automating toward?_”
 
 Because in an AI-saturated world, relevance does not come from output.
 It comes from taste, direction, and the courage to reframe the question again, and again, and again.
