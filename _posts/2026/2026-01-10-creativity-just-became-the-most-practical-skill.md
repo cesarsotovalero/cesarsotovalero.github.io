@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Creativity Just Became the Most Practical Skill
-subtitle: Ad it could be ultimate human edge in the era of AI
+title: Why Creativity Just Became the Most Practical Skill
+subtitle: Is it the human edge in the era of AI?
 tags: career
 description: |
   In an AI-saturated world where execution is cheap, the scarce resource is original framing. This blog post explores how to treat creativity as a practical, trainable skill and how to build it with simple daily habits.
