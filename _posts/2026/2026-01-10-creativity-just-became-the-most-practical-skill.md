@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creativity Just Became the Most Practical Skill
-subtitle: Is it the ultimate human edge in the era of AI?
+subtitle: Ad it could be ultimate human edge in the era of AI
 tags: career
 description: |
   In an AI-saturated world where execution is cheap, the scarce resource is original framing. This blog post explores how to treat creativity as a practical, trainable skill and how to build it with simple daily habits.
@@ -24,20 +24,25 @@ published: true
 {% youtube pHqoIPAlOcw %}
 
 In 1996, Larry Page was a PhD student at Stanford.
-That was the time of the nacient internet.
-Back then, most search engines were trying to read pages better.
-They were based on keywords, text parsing, on-page signals, and so on.
+Just the right time and place to be a protagonist on the rise of the nacient internet.
+Back then, most search engines were trying to figure it out how to provide better ranking results automatically.
+They were all reading the content of webpages, using keywords, text parsing, in-page signals, and so on.
 But Larry tried something different.
-He asked a different question: “_What if a page’s value is not about the information it contains, but in how many other pages point to it?_”
+
+He asked a different question:
+
+“_What if a page’s value is not about the information it contains, but in how many other pages point to it?_”
+
 That reframing became the PageRank algorithm,[^1] a ranking system built on the web’s hyperlink graph (not just its text).
-The rest is hitory, PageRank helped shape what later on became the dominat search engine on the world-wide-web: Google.
+The rest is hitory, PageRank helped shape what later on became the dominat search engine and one of the most prominet companies in the wrold: Google.
 
-But this post is not about the web or search engines.
-It’s about another engine.
-The engine behind human breakthroughs: creativity as perspective-shift.
+But this post is not about the history of web or search engines (I wrote [another post](./blog/the-evolution-of-the-web-from-html-to-webassembly) about it).
+It’s about another kind of engine.
+The engine behind human breakthroughs, something we call: creativity as perspective-shift.
 
-We are now in AI era, in which AI can generate thousands of ~~surprisingly~~ "good" outputs.
-However, AI still struggles to choose what is worth building, what is actually relevant, and why.
+We are now in AI era.
+Right now, LLMs can generate thousands of ~~surprisingly~~ "good" outputs.
+However, they still struggles to choose what is worth building, what is actually relevant (and _why_).
 It's my believe that this selection function (taste, judgment, values) is where humans still keep an edge over AI.
 
 So, in this post, I'll cover three things:
@@ -95,7 +100,7 @@ A smarter strategy is to diversify the ingredients, not increase the volume.
 This matters because creativity is often the product of collisions of new ideas, not contemplation of what's alrady known.
 If you only consume polished conclusions, you train your mind to reproduce conclusions.
 If you collect fragments, you give your mind raw material.
-This is how “random” insights become repeatable.
+This is how random insights become repeatable.
 
 So build a liquid network on purpose.
 
