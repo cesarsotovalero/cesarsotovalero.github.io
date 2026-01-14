@@ -166,7 +166,7 @@ Then come back and do one concrete next step.
 
 Incubation is not procrastination if you return with intent.
 
-# Fight an Evil Twin
+# Fight Your Evil Twin
 
 Here’s an exercise that is both effective and mildly ridiculous.
 
@@ -264,20 +264,6 @@ If you feel “behind” when you unplug, good.
 That sensation is your dependency showing itself.
 Detach long enough to remember what you actually care about.
 
-# The AI-Era Twist
-
-These days, AI can draft, remix, summarize, rephrase, storyboard, and iterate at industrial speed.
-So the scarce resource shifts.
-The bottleneck becomes taste, direction, problem selection, and deciding what is worth making.
-AI is naturally divergent (it generates many options).
-Humans must become intentionally convergent (we choose).
-
-This is also why the creative journey matters, not just the destination.
-Use AI, but use it like a power tool.
-Great for cutting wood.
-Terrible at deciding what house you should build.
-If you outsource the “why,” you will eventually dislike the “what.”
-
 # A 15 Minutes Protocol
 
 Creativity becomes practical when it becomes scheduled:
@@ -288,33 +274,30 @@ Creativity becomes practical when it becomes scheduled:
 - Stop and do nothing useful (5 minutes).
 - Return and choose one next action.
 
-You’re training two muscles.
-Generation and judgment.
-AI can help with generation.
-You must own the judgment.
-That is the job security.
+This way, you’re training two muscles: generation and judgment.
+AI can help with generation, but you must own the judgment.
 
 Do this daily for a week.
-Not because it’s cute, but because it works by accumulation.
-Your brain learns the pattern: create, step away, return, choose.
-And over time, “creative” stops feeling like a personality trait.
-It becomes a practiced state.
+So your brain learns the pattern: create, step away, return, choose.
+And over time, the "creative state" will start becomina a practiced state.
 
 # Final Thoughts
 
 Creativity is not a talent.
-It’s a state you can reliably enter by managing your inputs, your boredom, and your fear of bad ideas.
-AI can produce what is statistically likely.
-But creativity often means producing what is structurally new.
-Margaret Boden’s work is useful here, especially her notion of transformational creativity (changing the rules of the game, not just the pieces).[^15]
 
-That gap between “likely” and “new” is where humans still live.
+It’s a _state_ you can reliably enter by managing your inputs, your boredom, and your fear of bad ideas.
 
+AI can now produce what is statistically likely.
+But creativity often means producing what is structurally and fundamentally new.
+
+Margaret Boden’s call this _transformational creativity_ (changing the rules of the game, not just the pieces).[^15]
+
+For now, that gap between “likely” and “new” is where humans still have an edge.
 So when everyone else asks, “_What can I automate?_”
 Ask instead, “_What can I create that is worth automating toward?_”
 
 Because in an AI-saturated world, relevance does not come from output.
-It comes from taste, direction, and the courage to reframe the question.
+It comes from taste, direction, and the courage to reframe the question again, and again, and again.
 
 # Footnotes
 
