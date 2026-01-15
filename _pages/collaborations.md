@@ -23,60 +23,6 @@ Whether you’re exploring similar questions or just curious about my work, feel
 
 Below is a list of research topics I'm especially excited to explore further.
 
-# List of Topics
-
-- [List of Topics](#list-of-topics)
-- [1. Debloat of mobile apps](#1-debloat-of-mobile-apps)
-    - [Motivation](#motivation)
-    - [Approach](#approach)
-    - [Validation](#validation)
-    - [References](#references)
-- [2. Automatic migration from Java \< 8 to Java 11 modular system](#2-automatic-migration-from-java--8-to-java-11-modular-system)
-    - [Motivation](#motivation-1)
-    - [Approach](#approach-1)
-    - [Validation](#validation-1)
-    - [References](#references-1)
-- [3. Identification of program hotpots by monitoring system calls](#3-identification-of-program-hotpots-by-monitoring-system-calls)
-    - [Motivation](#motivation-2)
-    - [Approach](#approach-2)
-    - [Validation](#validation-2)
-    - [References](#references-2)
-- [4. Automatic repair of dependency conflicts in Java](#4-automatic-repair-of-dependency-conflicts-in-java)
-    - [Motivation](#motivation-3)
-    - [Approach](#approach-3)
-    - [Validation](#validation-3)
-    - [References](#references-3)
-- [5. Feature-guided program debloating](#5-feature-guided-program-debloating)
-    - [Motivation](#motivation-4)
-    - [Approach](#approach-4)
-    - [Validation](#validation-4)
-    - [References](#references-4)
-- [6. Fine-grained specialization of JS libraries](#6-fine-grained-specialization-of-js-libraries)
-    - [Motivation](#motivation-5)
-    - [Approach](#approach-5)
-    - [Validation](#validation-5)
-    - [References](#references-5)
-- [7. Towards automatic untangling of APIs](#7-towards-automatic-untangling-of-apis)
-    - [Motivation](#motivation-6)
-    - [Approach](#approach-6)
-    - [Validation](#validation-6)
-    - [References](#references-6)
-- [8. Automatic Debloat of Bots Dependency Alerts](#8-automatic-debloat-of-bots-dependency-alerts)
-    - [Motivation](#motivation-7)
-    - [Approach](#approach-7)
-    - [Validation](#validation-7)
-    - [References](#references-7)
-- [9. Vulnerability Analysis Through Debloating](#9-vulnerability-analysis-through-debloating)
-    - [Motivation](#motivation-8)
-    - [Approach](#approach-8)
-    - [Validation](#validation-8)
-    - [References](#references-8)
-- [10. Automatic Debloating IaC Files](#10-automatic-debloating-iac-files)
-    - [Motivation](#motivation-9)
-    - [Approach](#approach-9)
-    - [Validation](#validation-9)
-    - [References](#references-9)
-
 # 1. Debloat of mobile apps
 
 ### Motivation
@@ -159,7 +105,7 @@ Select a set of Java applications and monitor their systems calls according to d
 
 The [Java class loading mechanism](https://docs.oracle.com/javase/tutorial/ext/basics/load) does not permit to have multiple classes with the same fully-qualified name in the classpath of an application. Consequently, Maven has to choose a single version for every dependency. The [Maven dependency resolution mechanism](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism) determines the library version that is nearest to the root of the dependency tree and "shadows" the other versions, i.e., the dependency tree will contain only one version per dependency.
 
-Currently, Maven triggers warnings on the console to alert developers if dependency conflicts exist in the project [1]. The occurrence of conflicting versions is an issue known as the JAR hell in the Java  ecosystems; and it is a best practice that developers solve them manually as soon as possible [2]. However, there is currently no tool to fix dependency conflicts at runtime in the Java ecosystem.
+Currently, Maven triggers warnings on the console to alert developers if dependency conflicts exist in the project [1]. The occurrence of conflicting versions is an issue known as the JAR hell in the Java ecosystems; and it is a best practice that developers solve them manually as soon as possible [2]. However, there is currently no tool to fix dependency conflicts at runtime in the Java ecosystem.
 
 ### Approach
 
@@ -207,7 +153,6 @@ We evaluate our approach by conducting case studies on removing cross-cutting fe
 
 [4] Eder, et al. ["Which Features Do My Users (Not) Use?"](https://dl-acm-org.focus.lib.kth.se/doi/10.1109/ICSME.2014.71). ICSME, 2014.
 
-
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
@@ -236,7 +181,6 @@ Our approach will be evaluated by conducting case studies of specializing in rea
 
 [3] Morales, Rodrigo, Rubén Saborido, and Yann-Gaël Guéhéneuc. ["MoMIT: Porting a JavaScript Interpreter on a Quarter Coin."](https://ieeexplore.ieee.org/document/8966499) IEEE Transactions on Software Engineering (2020).
 
-
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
@@ -263,7 +207,6 @@ We evaluate our approach by conducting case studies on real-world fat and popula
 
 [2] Ferreira Filho, João Bosco, Mathieu Acher, and Olivier Barais. ["Software unbundling: Challenges and perspectives".](https://link.springer.com/chapter/10.1007/978-3-319-46969-0_6) Transactions on Modularity and Composition I. Springer, Cham, 2016. 224-237.
 
-
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
@@ -280,7 +223,6 @@ However, in complex projects, developers might be overwhelmed by many dependency
 
 First, we mine GitHub projects in order to filter the commits that are related to dependency bots. Then, we analyze the difference between the vulnerable version of the dependency used, and the new one proposed by the bot. The goal is to determine if the code introduced in the new version is actually used by the project, i.e., if the dependency update is relevant for the project in particular.
 
-
 ### Validation
 
 For validation, we collect dependency related commits from open-source Java projects on GitHub, and analyze the dependency usage of the project with [DepClean](https://github.com/castor-software/depclean). We will report on the number of alerts that can be filtered out with our approach.
@@ -293,22 +235,18 @@ For validation, we collect dependency related commits from open-source Java proj
 
 [3] [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://arxiv.org/pdf/2001.07808.pdf)
 
-
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
-
-
 
 ---
 
 # 9. Vulnerability Analysis Through Debloating
-
 
 ### Motivation
 
 Software debloating has been fundamentally used to remove vulnerabilties by eliminating the unnecessary parts of the code [1, 3].
 In this context, the benefits of debloating for security are a side effect of removing code (i.e., less code potentially leads to fewer bugs and vulnerabilities).
 
-Existing software vulnerability assessment tools allow finding critical security bugs and provide feedback to developers using static analysis  (e.g., [Snyk](https://snyk.io/), [Dependabot](https://dependabot.com/)).
+Existing software vulnerability assessment tools allow finding critical security bugs and provide feedback to developers using static analysis (e.g., [Snyk](https://snyk.io/), [Dependabot](https://dependabot.com/)).
 These tools facilitate the localization of the vulnerable portions of code in the analyzed repository [2].
 However, developers lack a broader knowledge of what parts of their codebase are actually affected by the vulnerable code.
 They need to know the extent of vulnerability exposition in their codebase once a new CVE is released.
@@ -317,7 +255,7 @@ They need to know the extent of vulnerability exposition in their codebase once 
 
 The goal of this research project is to leverage software debloating techniques to determine which parts of the code are actually exposed to vulnerabilities.
 First, we will collect CVEs reports affecting real-world applications and examine the ratio of the codebase that is affected by the vulnerable code via reverted call-graph analysis.
-Second, we will debloat the rest of the application  (i.e., removing the used parts that are not affected by the CVEs) in order to get a better vision of the actual impact of the vulnerability.
+Second, we will debloat the rest of the application (i.e., removing the used parts that are not affected by the CVEs) in order to get a better vision of the actual impact of the vulnerability.
 Developers and practitioners will benefit from this information because they will be able to isolate the vulnerable parts for beter study and fixing.
 This will allows them to construct a mind-map of the relevance of the vulnerability, which will rapidly impact assessment and supports bug fixes.
 
@@ -328,7 +266,6 @@ Then, we will create a tool that receives as entry points the parts of the code 
 The tool then will provide information to developers about the vulnerable classes/methods/attributes affected.
 This information can be displayed in the browser, and feedback from developers related to the tool's usefulness will be collected as a qualitative validation.
 
-
 ### References
 
 [1] [CARVE: Practical Security-Focused Software Debloating Using Simple Feature Set Mappings](https://dl.acm.org/doi/abs/10.1145/3338502.3359764)
@@ -337,14 +274,11 @@ This information can be displayed in the browser, and feedback from developers r
 
 [3] [Less is More: Quantifying the Security Benefits of Debloating Web Applications](https://www.usenix.org/conference/usenixsecurity19/presentation/azad)
 
-
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
-
 
 ---
 
 # 10. Automatic Debloating IaC Files
-
 
 ### Motivation
 
@@ -378,7 +312,6 @@ We will quantify the resources saved through our automatic debloating mechanism.
 As a qualitative validation assessment, we will propose modifications to open-source projects on GitHub via pull requests.
 This is a fundamental outcome to validate the relevance of our approach.
 
-
 ### References
 
 [1] [New Directions for Container Debloating](https://dl.acm.org/doi/abs/10.1145/3141235.3141241)
@@ -391,8 +324,6 @@ This is a fundamental outcome to validate the relevance of our approach.
 
 [5] [Different Kind of Smells: Security Smells in Infrastructure as Code Scripts](https://ieeexplore.ieee.org/abstract/document/9388795)
 
-
 <div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 [^1]: See my list of [mining software repositories resources](./mining-software-repositories-resources).
-
