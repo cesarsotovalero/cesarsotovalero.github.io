@@ -196,12 +196,13 @@ If you can make it small, you can make it real.
 
 People kill creativity by demanding quality too early.
 
-At the start, the output is supposed to be bad.
+At the start, the output is supposed to be bad, and that's OK.
 
 This is _divergent thinking_: generating many possibilities (including obvious and flawed ones) to escape the first ideas your brain serves you.[^10]
+
 Quantity is not the goal, it’s the tool.
 
-A practical order is:
+A practical execution order is the following:
 
 1. Volume.
 2. Selection.
@@ -216,7 +217,7 @@ Generate twenty ideas and do not evaluate.
 Circle the three least stupid ideas.
 Improve one of them.
 
-Creativity is less a light bulb and more a faucet, and the first water is dirty.
+Creativity is less a light bulb and more a faucet, and the first water coming out is always dirty.
 
 # Constraints Are Rocket Fuel
 
@@ -246,6 +247,7 @@ If you want a sharper mind, impose sharper edges.
 # Creative Fasting
 
 Your mind can’t have its own thoughts if it’s always renting someone else’s.
+
 Once or twice a year, consider a creative fast.
 No news, no social media, no podcasts, minimal algorithmic feeds.
 Just enough quiet to notice what your brain does when it isn’t being constantly recruited.
@@ -253,13 +255,18 @@ Think of it as intermittent fasting for attention.
 
 People often cite Japan’s [sakoku](https://en.wikipedia.org/wiki/Sakoku) policy as a metaphor for creative isolation (even though the historical reality was more nuanced than total isolation).
 The point of the metaphor is not isolation is good, but silence reveals signal.
+
 There’s also a motivation angle: evaluation pressure and extrinsic incentives can undermine originality.
+
 Teresa Amabile’s classic piece explains how environments accidentally kill creativity by squeezing intrinsic motivation.[^13]
 When nobody’s watching, your inner voice gets louder.
 
-A creative fast is not anti-technology.
+Creative fastinf is not anti-technology mindset.
+
 It’s pro-agency.
+
 It’s how you stop the algorithm from drafting your personality.
+
 If you feel behind when you unplug, good.
 That sensation is your dependency showing itself.
 Detach long enough to remember what you actually care about.
