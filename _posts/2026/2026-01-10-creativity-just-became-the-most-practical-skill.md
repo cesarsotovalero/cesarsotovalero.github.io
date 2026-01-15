@@ -66,7 +66,7 @@ Creativity prefers slack, not strain.
 Neuroscientists describe a relevant system called the _Default Mode Network_ (DMN), which becomes more active when you’re at rest and thinking internally.[^3]
 The DMN is linked to mind-wandering, memory, and our ability to recombining unrelated things into new patterns.[^4]
 
-In plain terms, the DMN your brain’s background “merge request” process.
+In plain terms, the DMN is brain’s background “merge request” process.
 When you never give it idle time, nothing new gets merged.
 
 So instead of focus harder, what I do is to switch states.
@@ -318,7 +318,7 @@ It comes from taste, direction, and the courage to reframe the question again, a
 [^2]: Baird et al. (2012), [_Inspired by Distraction: Mind Wandering Facilitates Creative Incubation_ (PDF)](https://www.cmhp.ucsb.edu/sites/default/files/2018-12/Baird%20et%20al.%20%282012%29%20Inspired%20by%20distraction.pdf) (PubMed record: [PubMed](https://pubmed.ncbi.nlm.nih.gov/22941876/)).
 [^3]: Raichle et al. (2001), [_A Default Mode of Brain Function_ (PNAS)](https://www.pnas.org/doi/10.1073/pnas.98.2.676).
 [^4]: Buckner, Andrews-Hanna, & Schacter (2008), [_The Brain’s Default Network: Anatomy, Function, and Relevance to Disease_ (Annals of the NY Academy of Sciences, abstract)](https://nyaspubs.onlinelibrary.wiley.com/doi/abs/10.1196/annals.1440.011).
-[^5]: Steven Johnson, [“Where Good Ideas Come From” (TED)](https://ed.ted.com/best_of_web/EaMi6IZF).
+[^5]: Steven Johnson, [“_Where Good Ideas Come From_” (TED Talk)](https://ed.ted.com/best_of_web/EaMi6IZF).
 [^7]: George Mack, [_How to be creative (without taking drugs)_](https://essays.highagency.com/p/how-to-be-creative-without-taking).
 [^8]: Fauconnier & Turner (2003), [_Conceptual Blending, Form and Meaning_ (PDF)](https://tecfa.unige.ch/tecfa/maltt/cofor-1/textes/Fauconnier-Turner03.pdf).
 [^9]: Sio & Ormerod (2009), [_Does incubation enhance problem solving? A meta-analytic review_ (PDF mirror)](https://gwern.net/doc/psychology/writing/2009-sio.pdf).
