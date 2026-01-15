@@ -77,6 +77,8 @@ But this doesn’t mean boredom is magical.
 It means boredom is permissive, and your brain takes the permission seriously.
 If you want originality, you the best way is to stop supervising every thought.
 
+{% badge /img/badges/daniel.png 140 https://a.co/d/28tGFRS %}
+
 Now when I’m stuck, I stop trying harder and start making space.
 
 - I walk without inputs (no phone, no podcast).
@@ -94,6 +96,8 @@ What comes out depends on what goes in.
 If your inputs are all the same creators, the same feeds, the same opinions, your creative output becomes high-resolution _déjà vu_.
 
 A smarter strategy is to diversify the ingredients, not increase the volume.
+
+{% badge /img/badges/good-ideas.png 140 https://a.co/d/hgrcMMN %}
 
 [Steven Johnson](<https://en.wikipedia.org/wiki/Steven_Johnson_(author)>) describes breakthrough environments as _liquid networks_: idea ecosystems where half-formed hunches collide, combine, and evolve.[^5]
 
