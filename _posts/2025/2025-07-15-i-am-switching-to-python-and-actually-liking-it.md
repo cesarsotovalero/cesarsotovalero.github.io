@@ -21,6 +21,8 @@ author: cesarsotovalero
 published: true
 ---
 
+{% youtube SIVhrtQzknQ %}
+
 I started to code more in [Python](https://www.python.org/) around 6 months ago.
 Why?
 Because of AI, obviously.
@@ -77,30 +79,30 @@ Here's the typical structure of a project with a frontend-backend architecture (
 project/
 │
 ├── .github/ # GitHub Actions workflows for CI/CD pipelines
-│   ├── workflows/ # Directory containing YAML files for automated workflows
-│   └── dependabot.yml # Configuration for Dependabot to manage dependencies
+│ ├── workflows/ # Directory containing YAML files for automated workflows
+│ └── dependabot.yml # Configuration for Dependabot to manage dependencies
 │
 ├── .vscode/ # VSCode configuration for the project
-│   ├── launch.json # Debugging configurations for VSCode
-│   └── settings.json # Project-specific settings for VSCode
+│ ├── launch.json # Debugging configurations for VSCode
+│ └── settings.json # Project-specific settings for VSCode
 │
 ├── docs/ # Website and docs (a static SPA with MkDocs)
 │
 ├── project-api/ # Backend API for handling business logic and heavy processing
-│   ├── data/ # Directory for storing datasets or other static files
-│   ├── notebooks/ # Jupyter notebooks for quick (and dirty) experimentation and prototyping
-│   ├── tools/ # Utility scripts and tools for development or deployment
-│   ├── src/ # Source code for the backend application
-│   │   ├── app/ # Main application code
-│   │   └── tests/ # Unit tests for the backend
-│   │
-│   ├── .dockerignore # Specifies files to exclude from Docker builds
-│   ├── .python-version # Python version specification for pyenv
-│   ├── Dockerfile # Docker configuration for containerizing the backend
-│   ├── Makefile # Automation tasks for building, testing, and deploying
-│   ├── pyproject.toml # Python project configuration file
-│   ├── README.md # Documentation for the backend API
-│   └── uv.lock # Lock file for dependencies managed by UV
+│ ├── data/ # Directory for storing datasets or other static files
+│ ├── notebooks/ # Jupyter notebooks for quick (and dirty) experimentation and prototyping
+│ ├── tools/ # Utility scripts and tools for development or deployment
+│ ├── src/ # Source code for the backend application
+│ │ ├── app/ # Main application code
+│ │ └── tests/ # Unit tests for the backend
+│ │
+│ ├── .dockerignore # Specifies files to exclude from Docker builds
+│ ├── .python-version # Python version specification for pyenv
+│ ├── Dockerfile # Docker configuration for containerizing the backend
+│ ├── Makefile # Automation tasks for building, testing, and deploying
+│ ├── pyproject.toml # Python project configuration file
+│ ├── README.md # Documentation for the backend API
+│ └── uv.lock # Lock file for dependencies managed by UV
 │
 ├── project-ui/ # Frontend UI for the project (Next.js, React, etc.)
 │
@@ -133,29 +135,43 @@ It’s all I need to install and manage dependencies.
 Here are the core commands to set it up:
 
 {% highlight bash linenos %}
+
 # Install uv globally if not already installed
+
 curl -sSfL https://astral.sh/install.sh | sh
 
 # Initialize a new project (adds .gitignore, .python-version, pyproject.toml, etc.)
+
 uv init project-api
 
 # Add some dependencies into the project and update pyproject.toml
+
 uv add --dev pytest ruff pre-commit mkdocs gitleaks fastapi pydantic
 
 # Update the lock file with the latest versions of the dependencies
+
 # (this will also create a .venv in your project directory if it doesn't exist)
+
 uv sync
 
 # (Opt‑in) explicitly create or recreate a venv in a custom path:
+
 uv venv create .venv
 
 # Activate the .venv yourself
+
 # ──────────────────────────────────────────────
+
 # On macOS/Linux:
+
 source .venv/bin/activate
+
 # On Windows (PowerShell):
+
 .\.venv\Scripts\Activate.ps1
+
 # On Windows (cmd.exe):
+
 .\.venv\Scripts\activate.bat
 {% endhighlight %}
 
@@ -216,8 +232,8 @@ Here’s an illustrative example:
 from pydantic import BaseSettings
 
 class Settings(BaseSettings):
-    api_key: str
-    db_url: str
+api_key: str
+db_url: str
 
     class Config:
         env_file = ".env"
@@ -255,11 +271,11 @@ from dataclasses import dataclass
 
 @dataclass
 class Point:
-    x: int
-    y: int
+x: int
+y: int
 
 p = Point(1, 2)
-print(p)  # Output: Point(x=1, y=2)
+print(p) # Output: Point(x=1, y=2)
 {% endhighlight %}
 
 So goodbye boilerplate and cryptic code!
@@ -277,23 +293,18 @@ A typical workflow for `project-api` looks like this:
 name: CI-API
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+push:
+branches: - main
+pull_request:
+branches: - main
 
 jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Build Docker image
-        run: docker build -t project-api:ci ./project-api
-      - name: Run tests
-        run: docker run --rm project-api:ci pytest
+build-and-test:
+runs-on: ubuntu-latest
+steps: - name: Checkout code
+uses: actions/checkout@v3 - name: Build Docker image
+run: docker build -t project-api:ci ./project-api - name: Run tests
+run: docker run --rm project-api:ci pytest
 {% endhighlight %}
 
 Note that this workflow uses Docker to run the tests in an isolated environment.[^8]
@@ -311,10 +322,10 @@ version: 2
 updates:
 
 - package-ecosystem: "uv"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-{% endhighlight %}
+  directory: "/"
+  schedule:
+  interval: "weekly"
+  {% endhighlight %}
 
 ## Gitleaks
 
@@ -334,16 +345,16 @@ Here’s a sample `.pre-commit-config.yaml` file that I use:
 repos:
 
 - repo: <https://github.com/astral-sh/ruff-pre-commit>
-    rev: v0.12.3  # Ruff version.
-    hooks:
+  rev: v0.12.3 # Ruff version.
+  hooks:
   - id: ruff-check # Run the linter.
-        args: [ --fix ]
-  - id: ruff-format  # Run the formatter.
+    args: [ --fix ]
+  - id: ruff-format # Run the formatter.
 - repo: <https://github.com/gitleaks/gitleaks>
-    rev: v8.27.2
-    hooks:
+  rev: v8.27.2
+  hooks:
   - id: gitleaks
-{% endhighlight %}
+    {% endhighlight %}
 
 # Infrastructure Management
 
@@ -365,14 +376,14 @@ Here’s an extremely simple example of the `project-api` Makefile:
 DIR := . # project/project-api/Makefile
 
 test:
- uv run pytest
+uv run pytest
 
 format-fix:
- uv run ruff format $(DIR)
- uv run ruff check --select I --fix
+uv run ruff format $(DIR)
+uv run ruff check --select I --fix
 
 lint-fix:
- uv run ruff check --fix
+uv run ruff check --fix
 {% endhighlight %}
 
 Now, if I want to run the tests, I just run `make test`, and it executes `uv run pytest` in the current directory.
@@ -381,13 +392,13 @@ For the global project, I use the following `Makefile`:
 
 {% highlight plaintext linenos %}
 infrastructure-build:
- docker compose build
+docker compose build
 
 infrastructure-up:
- docker compose up --build -d
+docker compose up --build -d
 
 infrastructure-stop:
- docker compose stop
+docker compose stop
 {% endhighlight %}
 
 `make` is a powerful tool that can help you automate almost anything in your development workflow.
@@ -404,31 +415,25 @@ To fully grasp this concept, let’s take a look at a simple `docker-compose.yml
 {% highlight yaml linenos %}
 version: '3.8'
 services:
-  project-api:
-    build:
-      context: ./project-api
-      dockerfile: Dockerfile
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./project-api:/app
-    environment:
-      - ENV_VAR=value
-    networks:
-      - project-network
+project-api:
+build:
+context: ./project-api
+dockerfile: Dockerfile
+ports: - "8000:8000"
+volumes: - ./project-api:/app
+environment: - ENV_VAR=value
+networks: - project-network
 
-  project-ui:
-    build:
-      context: ./project-ui
-      dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
-    networks:
-      - project-network
+project-ui:
+build:
+context: ./project-ui
+dockerfile: Dockerfile
+ports: - "3000:3000"
+networks: - project-network
 
 networks:
-  project-network:
-    driver: bridge
+project-network:
+driver: bridge
 {% endhighlight %}
 
 In this file, we define two services: `project-api` and `project-ui`.
@@ -469,17 +474,10 @@ docker compose up --build -d
 # Footnotes
 
 [^1]: Don’t get me wrong, I understand there are cases where a multi-repo structure is necessary, like when multiple teams work on different parts of the project or when dependencies needs to be shared across projects.
-
 [^2]: A `pyproject.toml` file is similar to `package.json` in Node.js or `pom.xml` in Java.
-
 [^3]: If you know me, you know I used to be mostly a Java/JavaScript/R kind of guy.
-
 [^4]: For example, today [Jupyter](https://jupyter.org/) is bundled by almost every major cloud provider as the de facto tool for interactive data science and scientific computing.
-
 [^5]: I believe that aviding premature decomposition is a good idea. If a codebase is less than, say, 1/2 million LoC, then setting a network layer (like API calls) over it only would make maintenance a pain for ~~non-Amazon~~ rational developers.
-
 [^6]: By the way, I think every single project on GitHub should have its own website (it's extremely easy via [GitHub Pages](https://pages.github.com/)), so no excuses, sorry.
-
 [^7]: “Production-ready,” for me, means I can deploy the app to the cloud as-is, without needing to make a lot of infrastructure changes.
-
 [^8]: Using Docker for CI ensures parity with production environments, but it might add some cold-start overhead. You know... compromises, life is full of them.
