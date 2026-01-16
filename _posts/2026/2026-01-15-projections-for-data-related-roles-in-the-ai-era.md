@@ -28,7 +28,7 @@ published: true
 I worked as a data scientist in 2025.
 From what I can see, data-related roles might quietly mutate this year without an official memo.
 
-Today, machine learning models are faster to build and easier to replicate than ever before.
+Today, ML models are faster to build and easier to replicate than ever before.
 We have cloud infrastructure, mature libraries, and powerful AI code assistants.
 However, keeping models running in production (and tethered to real decisions) is harder than ever.
 Which means that these are the skills companies will pay for in 2026: owning production systems end to end.
@@ -45,20 +45,27 @@ Let’s dive in!
 
 # From Artifacts to Outcomes
 
-You'll probably not gonna get a email titled "tell me what system do you own or pack your desk", but you might already feel the shift in expectations.
-The interview questions are changing, the the job descriptions are changing, and performance metrics are changing.
-You deliver a model, then get asked about latency, drift, real-world performance, and whether the metric moved or misled.
+You'll probably not gonna get a email this year with something like "_Tell me what system do you own or start packing your desk_," but you might already feel the shift in expectations.
+The interview questions are changing, the the job descriptions are changing, and performance metrics are also not the same as before.
 
-Eventually, you realize the model artifact was never the deliverable.
+Today, you deliver a model, then get asked about latency, drift, real-world performance, and whether the metric moved or misled.
 
-In real-world machine learning, the model is a small part of the system.
+# SIDE QUOTE
+
+<aside class="quote">
+    <em>Eventually, you realize the model artifact was never the deliverable.”</em>
+</aside>
+
+In real-world MLg, the model is a small part of the system.
 Most production cost comes from the surrounding machinery.[^1]
-The first version ships fast, and the second version becomes a maintenance job.
-The scoreboard is not the model’s accuracy, but whether _business outcomes_ improved.
+The first version ships fast, but the subsequent versions became a maintenance job.
+The scoreboard is not the model’s accuracy, but whether _business outcomes_ improved or not.
 
-So the winning move changes: impact beats elegance and reliability beats cleverness.
+So the winning move have changed.
+Impact beats elegance and reliability beats cleverness.
 From artifacts to outcomes.
 A model you can’t operate is just a well-formatted opinion.
+A outcome that you deliver is a career booster.
 
 # Which Model Is The Best Now Matters The Less
 
