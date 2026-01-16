@@ -268,6 +268,6 @@ And it's my belief that owning systems end to end is that move.
 
 # Footnotes
 
-[^1]: D. Sculley et al., [[_Hidden Technical Debt in Machine Learning Systems_](https://papers.neurips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)] (NeurIPS 2015).
-[^2]: Aria Khademi et al., [_Model Monitoring and Robustness of In-Use ML Models: Quantifying Data Distribution Shifts Using Population Stability Index_](https://arxiv.org/abs/2302.00775) (arXiv 2023).
+[^1]: D. Sculley et al., [_Hidden Technical Debt in Machine Learning Systems_](https://papers.neurips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf), NeurIPS 2015.
+[^2]: Aria Khademi et al., [_Model Monitoring and Robustness of In-Use ML Models: Quantifying Data Distribution Shifts Using Population Stability Index_](https://arxiv.org/abs/2302.00775), arXiv 2023.
 [^5]: Article 26, [_Obligations of Deployers of High-Risk AI Systems_](https://artificialintelligenceact.eu/article/26/) (AI Act detail).
