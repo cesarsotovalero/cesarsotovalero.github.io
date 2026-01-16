@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Projections for Data-Related Roles in the AI Era
+title: Projections for Data-Related Roles in The AI Era
 subtitle: From Building Models to Owning Systems
 tags: career
 description: |
@@ -60,7 +60,7 @@ So the winning move changes: impact beats elegance and reliability beats clevern
 From artifacts to outcomes.
 A model you can’t operate is just a well-formatted opinion.
 
-# Which Model Is Best Matters Less
+# Which Model Is The Best Now Matters The Less
 
 Model training is no longer the bottleneck.
 Better defaults, [AutoML](https://www.automl.org/automl/), [awesome ML Python libraries](https://github.com/lukasmasuch/best-of-ml-python), and cheaper compute make "getting a model working" the easy part.
@@ -127,9 +127,9 @@ You fix the system:
 
 Six months later, retention improves by 8%, and you can prove causality. That's ownership. The model didn't change, the system did!
 
-## Define Success Before Architecture
+## Success Definition
 
-A metric that is observable and attributable is worth more than a sophisticated loss function.[^3]
+A metric that is observable and attributable is worth more than a sophisticated loss function.
 If you can’t articulate how your metric ties to a decision, you’re optimizing a shadow.
 Make the metric boring, then make it true.
 
@@ -140,27 +140,37 @@ Here's how:
 
 That is problem framing!
 
-## Data as a Product (Not a Byproduct)
+## Data as a Product
 
-Treat data like an interface with clear ownership, contracts, and checks.
+In most large companies, data is treated like an interface with clear ownership, contracts, and checks.
+
 Modern [data mesh thinking](https://en.wikipedia.org/wiki/Data_mesh) emphasizes delivering analytical data as a product with interfaces and ownership, not as a byproduct of engineering work.[^3]
-Better engineering around data often beats endless model tweaking.
+In my experience, better engineering around data often beats endless model tweaking.
 
 For me, it works well starting small: add schema contracts, simple checks that fail loudly, and lineage so "what changed?" becomes a quick answer, not a week-long hunt.
 That's what professionals call _reliability_, and it's a career booster.
 
 ## Testing and Production Readiness
 
-Many ML teams under-test because they over-believe. A principle from production ML readiness: "it works on my laptop" is not a phase of software development—it's a confession. A production-ready model has tests, monitors, rollback plans, and observability.
+Many ML teams under-test because they over-believe the capacity of their models.
 
-A model without monitoring is a demo. A pipeline without tests is a rumor. A system without rollback is an incident waiting for its calendar invite. Be the person who prevents that invite.
+A principle from production ML readiness: ["it works locally" is not a phase of software development](https://en.wikipedia.org/wiki/List_of_publications_in_data_science).
+Production-ready models have tests, monitoring, rollback plans, and observability.
 
-## Drift, Monitoring, and the Real World
+In the eyes of stakeholders, a model without monitoring is a demo, a pipeline without tests is a riss, and a system without rollback is an incident waiting for its calendar invite.
+As a data professional, be the person who prevents that invite.
 
-Reality changes, then your model follows, then your dashboard lies. Drift isn't an edge case; it's the default state of deployed systems.[^2]
+## Real World ML
+
+Reality changes, then your model follows, then your dashboard lies and the business gets a hit.
+[Concept drift](https://en.wikipedia.org/wiki/Concept_drift) is the default state of deployed systems.
 You need monitoring for input distributions, outputs, and business KPIs—and a playbook for what to do when drift hits.
 
-Here’s a tiny practical pattern: log predictions and the features that drove them. Track a drift signal per feature (e.g., PSI) with thresholds. Alert on change, not vibes. Then define a response.
+Here’s a tiny practical pattern: log predictions and the features that drove them.
+Track a drift signal per feature (e.g., [PSI](https://www.geeksforgeeks.org/data-science/population-stability-index-psi/)) with thresholds.
+Alert on change and define a response.
+
+Here's a simple PSI implementation in Python:
 
 {% highlight python linenos %}
 import numpy as np
@@ -180,47 +190,84 @@ quantiles[0], quantiles[-1] = -np.inf, np.inf
 
 {% endhighlight %}
 
-The point: measurable signal, threshold, and response. When drift hits, you're ready to act.
+The point: measurable signal, threshold, and response, so that when drift hits (and will do), you're ready to act.
 
 ## LLMs Add a New Failure Mode (Non-Determinism)
 
-LLMs make capability cheap and behavior slippery. Sampling settings like `temperature` exist because outputs vary across runs, which means your system can become probabilistic even when your code isn't. Once integrated, new failure modes appear: prompt regressions, silent output changes, and cost spikes. Treat prompts like code: version them, test them, and track both quality and cost.
+LLMs make capability cheap and behavior slippery.
+Nondeterminism is baked into the architecture: sampling settings like `temperature` exist because outputs vary across runs, even with identical inputs.
+Your system becomes probabilistic even when your code isn't.
+
+Once integrated, new failure modes appear:
+
+- **Prompt regressions:** A small wording change can flip the output.
+- **Silent degradation:** The model changes under you (version updates, temperature drift), and you don't notice until users complain.
+- **Cost spikes:** Token counts explode because the model got chattier or a prompt was rewritten poorly.
+
+Here's what helps:
+
+1. **Version prompts like code.** Store them in Git (not a Notion doc). Track changes, review diffs, and tie versions to deployments.
+2. **Test prompts systematically.** Use a fixed eval set with known inputs and expected outputs. Measure pass rate, not vibes.
+3. **Monitor output distributions.** Track length, sentiment, keyword frequency, any signal that catches behavioral drift before it cascades.
+4. **Track cost per call.** Set alerts when average token counts spike. LLMs are elastic infrastructure; cost is a signal, not just a bill.
+
+The pattern is the same as classic ML: make behavior observable, drift detectable, and regressions catchable.
+The difference is that LLMs fail in new ways, silent, stochastic, and expensive.
+So you add new defenses: prompt tests, output monitoring, and cost tracking.
+
+That's ownership in the LLM era.
 
 ## Governance Is Part of the Job
 
-If your system influences people, money, or risk, governance shows up. The European Union’s AI Act mandates quality, transparency, human oversight, and safety obligations for high-risk AI systems[^4]. Deployers are expected to monitor and log behavior, assign human oversight, and ensure input data relevance.[^5]
-Compliance isn't bureaucracy—it's insurance: auditability, explainability of intent, and clarity when things go wrong.
+If your system influences people, money, or risk, governance shows up.
 
-Write assumptions down; that’s where most disasters hide.
+The [European Union’s AI Act](https://en.wikipedia.org/wiki/Artificial_Intelligence_Act) mandates quality, transparency, human oversight, and safety obligations for high-risk AI systems.
+Deployers are expected to monitor and log behavior, assign human oversight, and ensure input data relevance.[^5]
+Compliance is insurance: auditability, explainability of intent, and clarity when things go wrong.
 
 # Role Shifts To Expect
 
-Analytics roles are becoming more decision-shaped. Dashboards are cheap once data is available, so value moves to interpretation and “what should we do next?” If you can’t recommend action, you’re doing archaeology.
+Here's how I see data-related roles evolving in 2026:
 
-Applied ML roles are becoming more end-to-end. The center of gravity shifts from model building to operating the full loop: definition, deployment, monitoring, and iteration. Accountability becomes the differentiator.
+- **Analytics roles** are becoming more decision-shaped. Dashboards are cheap once data is available, so value moves to interpretation and “what should we do next?” If you can’t recommend action, you’re doing archaeology.
 
-Research roles still exist, but they aren’t the default. Only a handful of organizations push the frontier; most companies are trying to turn capabilities into reliable products. That gap is widening, so pick your lane intentionally.
+- **Applied ML roles** are becoming more end-to-end. The center of gravity shifts from model building to operating the full loop: definition, deployment, monitoring, and iteration. Accountability becomes the differentiator.
 
-# Pragmatic Plan
+- **Research roles** still exist, but they aren’t the default. Only a handful of organizations push the frontier; most companies are trying to turn capabilities into reliable products. That gap is widening, so pick your lane intentionally.
 
-Optimize for ownership. Pick one production system and own the loop: define the metric, ship the pipeline, add monitoring, write a runbook, and measure impact. Ownership is the fastest teacher.
+# Career Advice
 
-Learn “just enough engineering.” You don’t need to become a backend polyglot. You do need deployment basics, monitoring, versioning, and incident response. Knowing how work ships turns you from “the data person” into “the person who makes things happen.”
+Optimize for ownership.
+Pick one production system and own the loop: define the metric, ship the pipeline, add monitoring, write a runbook, and measure impact.
+Ownership is the fastest teacher.
 
-Translate your work into business outcomes. Accuracy is interesting; outcomes are persuasive. Speak in revenue, cost, risk, retention, and customer experience. Then decision-makers stop seeing you as technical support, and start seeing you as a partner.
+Learn “just enough engineering.”
+You don’t need to become a backend polyglot.
+You do need deployment basics, monitoring, versioning, and incident response.
+Knowing how work ships turns you from “the data person” into “the person who makes things happen.”
+
+Translate your work into business outcomes.
+Accuracy is interesting; outcomes are persuasive.
+Speak in revenue, cost, risk, retention, and customer experience.
+Then decision-makers stop seeing you as technical support, and start seeing you as a partner.
 
 # Summary
 
-In 2026, the people who struggle aren't the ones missing the newest tool. They're the ones who stop at analysis and hand off reality. They ship a model, deliver a slide deck, and say "my part is done." Reality laughs and shifts the distribution.
+In 2026, the folks who struggle in data roles aren't the ones missing the newest tool.
+They're the ones who stop at analysis and hand off reality.
+They ship a model, deliver a slide deck, and say "I'm done."
+But reality laughs and shifts the distribution.
 
-The people who thrive do something simpler and rarer. They stay curious when systems get messy. They lean in when production contradicts the notebook. They care about outcomes, not artifacts. That's not data science fading—that's data science growing up.
+The people who thrive do something simpler and rarer.
+They stay curious when systems get messy.
+They lean in when production contradicts the notebook.
+They care about outcomes, not artifacts.
 
-When models become easy, owning the system becomes the job. See you in the next one.
+When building models become easier, shifting towards complexity becomes the right move.
+And it's my belief that owning systems end to end is that move.
 
 # Footnotes
 
 [^1]: D. Sculley et al., [[_Hidden Technical Debt in Machine Learning Systems_](https://papers.neurips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)] (NeurIPS 2015).
 [^2]: Aria Khademi et al., [_Model Monitoring and Robustness of In-Use ML Models: Quantifying Data Distribution Shifts Using Population Stability Index_](https://arxiv.org/abs/2302.00775) (arXiv 2023).
-[^3]: Wikipedia, [_List of publications in data science_](https://en.wikipedia.org/wiki/List_of_publications_in_data_science) (reference to large-scale ML practice).
-[^4]: Wikipedia, [_Artificial Intelligence Act_](https://en.wikipedia.org/wiki/Artificial_Intelligence_Act) (overview of high-risk AI governance).
 [^5]: Article 26, [_Obligations of Deployers of High-Risk AI Systems_](https://artificialintelligenceact.eu/article/26/) (AI Act detail).
