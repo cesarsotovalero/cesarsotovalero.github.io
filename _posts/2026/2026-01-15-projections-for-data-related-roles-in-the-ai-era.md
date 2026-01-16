@@ -50,13 +50,13 @@ The interview questions are changing, the the job descriptions are changing, and
 
 Today, you deliver a model, then get asked about latency, drift, real-world performance, and whether the metric moved or misled.
 
-# SIDE QUOTE
+# From Models to Systems
 
 <aside class="quote">
     <em>Eventually, you realize the model artifact was never the deliverable.”</em>
 </aside>
 
-In real-world MLg, the model is a small part of the system.
+In real-world ML, the model is a small part of the system.
 Most production cost comes from the surrounding machinery.[^1]
 The first version ships fast, but the subsequent versions became a maintenance job.
 The scoreboard is not the model’s accuracy, but whether _business outcomes_ improved or not.
