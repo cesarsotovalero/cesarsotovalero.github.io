@@ -179,12 +179,12 @@ Alert on change and define a response.
 
 Here's a simple PSI implementation in Python:
 
-{% highlight python linenos %}
+```python
 import numpy as np
 
 def psi(expected, actual, bins=10, eps=1e-6):
-quantiles = np.quantile(expected, np.linspace(0, 1, bins + 1))
-quantiles[0], quantiles[-1] = -np.inf, np.inf
+    quantiles = np.quantile(expected, np.linspace(0, 1, bins + 1))
+    quantiles[0], quantiles[-1] = -np.inf, np.inf
 
     def hist(x):
         counts, _ = np.histogram(x, bins=quantiles)
@@ -195,8 +195,7 @@ quantiles[0], quantiles[-1] = -np.inf, np.inf
     a = hist(actual)
 
     return np.sum((a - e) * np.log(a / e))
-
-{% endhighlight %}
+```
 
 The point: measurable signal, threshold, and response, so that when drift hits (and will do), you're ready to act.
 
