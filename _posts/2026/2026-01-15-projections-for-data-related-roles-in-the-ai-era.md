@@ -193,6 +193,7 @@ quantiles[0], quantiles[-1] = -np.inf, np.inf
 
     e = hist(expected)
     a = hist(actual)
+
     return np.sum((a - e) * np.log(a / e))
 
 {% endhighlight %}
