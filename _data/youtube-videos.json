@@ -1,13 +1,101 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "BfMOdXEte6GFJvvchjXgmMkgMUI",
+    "etag": "XOqCPSHNS2RpKGfD0jolgu4Ku-c",
+    "id": "maIBlxGubeI",
+    "snippet": {
+      "publishedAt": "2026-01-17T13:17:46Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "Will Spec-Driven Development Fix All Bugs?",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nAI can now write thousands of lines of code in seconds, and that's a big risk. In this video, I break down Spec-Driven Development (SDD), an approach where the specification becomes the real source of truth, and the code becomes a downstream artifact.\n\nYou’ll learn:\n\n1. Why most “AI bugs” are actually argument bugs, not logic bugs\n2. The three levels of SDD (and which one quietly traps engineering teams)\n3. When writing a spec saves months of rework, and when it just wastes time\n\nIf you’re building with GitHub Copilot, Claude Code, or any AI agent, this video will change how you think about prompts, requirements, and what “good engineering” actually means in a world of infinite code.\n\n00:00 Intro\n02:02 What Is Spec-Driven Development (SDD)?  \n02:46 Why SDD Now?\n04:08 How AI Agents Actually Fail (The Intern Problem)  \n05:41 The SDD Workflow\n08:05 The 3 Levels of SDD\n09:43 Where SDD Works and Where It Breaks \n11:20 The 3-Question Decision Checklist  \n12:11 Is SDD the Future or Just Waterfall 2.0?  \n\n#SoftwareEngineering  #AIDevelopment  #SpecDrivenDevelopment  #FutureOfSoftware   #AICoding",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/maIBlxGubeI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/maIBlxGubeI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/maIBlxGubeI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/maIBlxGubeI/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/maIBlxGubeI/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "spec driven development",
+        "ai coding",
+        "software engineering",
+        "system design",
+        "ai for developers",
+        "programming concepts",
+        "llm development",
+        "github copilot",
+        "claude ai",
+        "developer productivity",
+        "code quality",
+        "engineering leadership",
+        "tech strategy",
+        "future of software",
+        "software architecture",
+        "ai agents",
+        "prompt engineering",
+        "requirements engineering",
+        "agile vs waterfall",
+        "modern software development",
+        "building with ai",
+        "software best practices",
+        "developer workflow",
+        "spec-driven development"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "Will Spec-Driven Development Fix All Bugs?",
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nAI can now write thousands of lines of code in seconds, and that's a big risk. In this video, I break down Spec-Driven Development (SDD), an approach where the specification becomes the real source of truth, and the code becomes a downstream artifact.\n\nYou’ll learn:\n\n1. Why most “AI bugs” are actually argument bugs, not logic bugs\n2. The three levels of SDD (and which one quietly traps engineering teams)\n3. When writing a spec saves months of rework, and when it just wastes time\n\nIf you’re building with GitHub Copilot, Claude Code, or any AI agent, this video will change how you think about prompts, requirements, and what “good engineering” actually means in a world of infinite code.\n\n00:00 Intro\n02:02 What Is Spec-Driven Development (SDD)?  \n02:46 Why SDD Now?\n04:08 How AI Agents Actually Fail (The Intern Problem)  \n05:41 The SDD Workflow\n08:05 The 3 Levels of SDD\n09:43 Where SDD Works and Where It Breaks \n11:20 The 3-Question Decision Checklist  \n12:11 Is SDD the Future or Just Waterfall 2.0?  \n\n#SoftwareEngineering  #AIDevelopment  #SpecDrivenDevelopment  #FutureOfSoftware   #AICoding"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT13M37S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "350",
+      "likeCount": "8",
+      "favoriteCount": "0",
+      "commentCount": "4"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "KAlsQeEOVyaCTLIh7ZDba09Wkew",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Watch This If You Work as a Data Scientist in 2026",
-      "description": "Training a machine learning model is no longer the hard part. Keeping it useful, reliable, and valuable in the real world is. That’s where the impact is, and that’s where the paychecks will be.\n\nBy 2026, successful data professionals will move beyond model-centric thinking and take ownership of end-to-end systems and real-world outcomes. This video breaks down the quiet but fundamental shift happening across data science, machine learning, and analytics roles.\n\nYou’ll learn why delivering models or dashboards is no longer enough, how expectations are moving toward outcome accountability, and what it actually means to own a decision-making system in production. We explore how many “model problems” are really system problems caused by data quality issues, broken pipelines, shifting assumptions, or unexpected user behavior.\n\nThis video walks you through the mindset change from building artifacts to owning systems and offers five practical principles to stay relevant without burning out:\n\n→ Optimize for ownership, not tools (focus on the full lifecycle and real-world performance)\n→ Get comfortable with things breaking (failure analysis without ego is a core skill)\n→ Learn just enough engineering (deployment, monitoring, versioning, and reliability)\n→ Translate work into business impact (revenue, cost, risk, and user outcomes)\n→ Don’t chase titles, chase leverage (seek roles that shape decisions and systems)\n\n𝐓𝐢𝐦𝐞𝐬𝐭𝐚𝐦𝐩𝐬\n0:00 Intro\n01:07 The Quiet Shift in Expectations\n04:14 From Models to Decision Systems\n05:26 Career Advice for Data Scientists in 2026\n07:52 Why This Matters & Next Steps\n\n#DataScience #MachineLearning #MLOps #CareerAdvice #FutureOfData",
+      "title": "Data Science in 2026: From Building Models to Owning Systems",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nTraining a machine learning model is no longer the hard part. Keeping it useful, reliable, and valuable in the real world is. That’s where the impact is, and that’s where the paychecks will be.\n\nBy 2026, successful data professionals will move beyond model-centric thinking and take ownership of end-to-end systems and real-world outcomes. This video breaks down the quiet but fundamental shift happening across data science, machine learning, and analytics roles.\n\nYou’ll learn why delivering models or dashboards is no longer enough, how expectations are moving toward outcome accountability, and what it actually means to own a decision-making system in production. We explore how many “model problems” are really system problems caused by data quality issues, broken pipelines, shifting assumptions, or unexpected user behavior.\n\nThis video walks you through the mindset change from building artifacts to owning systems and offers five practical principles to stay relevant without burning out:\n\n→ Optimize for ownership, not tools (focus on the full lifecycle and real-world performance)\n→ Get comfortable with things breaking (failure analysis without ego is a core skill)\n→ Learn just enough engineering (deployment, monitoring, versioning, and reliability)\n→ Translate work into business impact (revenue, cost, risk, and user outcomes)\n→ Don’t chase titles, chase leverage (seek roles that shape decisions and systems)\n\n𝐓𝐢𝐦𝐞𝐬𝐭𝐚𝐦𝐩𝐬\n0:00 Intro\n01:07 The Quiet Shift in Expectations\n04:14 From Models to Decision Systems\n05:26 Career Advice for Data Scientists in 2026\n07:52 Why This Matters & Next Steps\n\n#DataScience #MachineLearning #MLOps #CareerAdvice #FutureOfData",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/U06hExVnVbw/default.jpg",
@@ -61,12 +149,12 @@
         "Real-world Machine Learning",
         "Business Impact Analysis"
       ],
-      "categoryId": "27",
+      "categoryId": "28",
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "Watch This If You Work as a Data Scientist in 2026",
-        "description": "Training a machine learning model is no longer the hard part. Keeping it useful, reliable, and valuable in the real world is. That’s where the impact is, and that’s where the paychecks will be.\n\nBy 2026, successful data professionals will move beyond model-centric thinking and take ownership of end-to-end systems and real-world outcomes. This video breaks down the quiet but fundamental shift happening across data science, machine learning, and analytics roles.\n\nYou’ll learn why delivering models or dashboards is no longer enough, how expectations are moving toward outcome accountability, and what it actually means to own a decision-making system in production. We explore how many “model problems” are really system problems caused by data quality issues, broken pipelines, shifting assumptions, or unexpected user behavior.\n\nThis video walks you through the mindset change from building artifacts to owning systems and offers five practical principles to stay relevant without burning out:\n\n→ Optimize for ownership, not tools (focus on the full lifecycle and real-world performance)\n→ Get comfortable with things breaking (failure analysis without ego is a core skill)\n→ Learn just enough engineering (deployment, monitoring, versioning, and reliability)\n→ Translate work into business impact (revenue, cost, risk, and user outcomes)\n→ Don’t chase titles, chase leverage (seek roles that shape decisions and systems)\n\n𝐓𝐢𝐦𝐞𝐬𝐭𝐚𝐦𝐩𝐬\n0:00 Intro\n01:07 The Quiet Shift in Expectations\n04:14 From Models to Decision Systems\n05:26 Career Advice for Data Scientists in 2026\n07:52 Why This Matters & Next Steps\n\n#DataScience #MachineLearning #MLOps #CareerAdvice #FutureOfData"
+        "title": "Data Science in 2026: From Building Models to Owning Systems",
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nTraining a machine learning model is no longer the hard part. Keeping it useful, reliable, and valuable in the real world is. That’s where the impact is, and that’s where the paychecks will be.\n\nBy 2026, successful data professionals will move beyond model-centric thinking and take ownership of end-to-end systems and real-world outcomes. This video breaks down the quiet but fundamental shift happening across data science, machine learning, and analytics roles.\n\nYou’ll learn why delivering models or dashboards is no longer enough, how expectations are moving toward outcome accountability, and what it actually means to own a decision-making system in production. We explore how many “model problems” are really system problems caused by data quality issues, broken pipelines, shifting assumptions, or unexpected user behavior.\n\nThis video walks you through the mindset change from building artifacts to owning systems and offers five practical principles to stay relevant without burning out:\n\n→ Optimize for ownership, not tools (focus on the full lifecycle and real-world performance)\n→ Get comfortable with things breaking (failure analysis without ego is a core skill)\n→ Learn just enough engineering (deployment, monitoring, versioning, and reliability)\n→ Translate work into business impact (revenue, cost, risk, and user outcomes)\n→ Don’t chase titles, chase leverage (seek roles that shape decisions and systems)\n\n𝐓𝐢𝐦𝐞𝐬𝐭𝐚𝐦𝐩𝐬\n0:00 Intro\n01:07 The Quiet Shift in Expectations\n04:14 From Models to Decision Systems\n05:26 Career Advice for Data Scientists in 2026\n07:52 Why This Matters & Next Steps\n\n#DataScience #MachineLearning #MLOps #CareerAdvice #FutureOfData"
       },
       "defaultAudioLanguage": "en"
     },
@@ -80,21 +168,21 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "7",
-      "likeCount": "2",
+      "viewCount": "49",
+      "likeCount": "7",
       "favoriteCount": "0",
-      "commentCount": "1"
+      "commentCount": "3"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "O0KjxxDaTGuhGuXFyc5Hs2uXY6g",
+    "etag": "ABc0hbvGMxMszwe4mDSRS4Ai6LQ",
     "id": "pHqoIPAlOcw",
     "snippet": {
       "publishedAt": "2026-01-08T09:44:25Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Why Creativity Just Became the Most Practical Skill",
-      "description": "In a world where AI can write, draw, and code... what’s left for humans? The answer may be creativity. The one skill machines (still) can’t automate.\n\nIn this video, we'll cover how creativity actually works, from the neuroscience of boredom to the weird habits that spark original ideas. You’ll learn practical ways to train your creative brain using insights from psychology, history, and a few late-night stories from people like Christopher Nolan and Aaron Sorkin. Backed by research from Daniel Kahneman, Mihaly Csikszentmihalyi, and Steven Johnson, this video could change the way you think about thinking.\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 – Intro\n01:21 – The Default Mode Network\n02:51 – Liquid Networks\n04:28 – Conceptual Blending\n05:25 – The Incubation Effect\n06:21 – Counterfactual Thinking\n07:09 – Divergent Thinking\n07:55 – Creative Fasting\n08:42 – Transformational Creativity\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nIn a world where AI can write, draw, and code... what’s left for humans? The answer may be creativity. The one skill machines (still) can’t automate.\n\nIn this video, we'll cover how creativity actually works, from the neuroscience of boredom to the weird habits that spark original ideas. You’ll learn practical ways to train your creative brain using insights from psychology, history, and a few late-night stories from people like Christopher Nolan and Aaron Sorkin. Backed by research from Daniel Kahneman, Mihaly Csikszentmihalyi, and Steven Johnson, this video could change the way you think about thinking.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 – Intro\n01:21 – The Default Mode Network\n02:51 – Liquid Networks\n04:28 – Conceptual Blending\n05:25 – The Incubation Effect\n06:21 – Counterfactual Thinking\n07:09 – Divergent Thinking\n07:55 – Creative Fasting\n08:42 – Transformational Creativity\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/pHqoIPAlOcw/default.jpg",
@@ -152,7 +240,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Why Creativity Just Became the Most Practical Skill",
-        "description": "In a world where AI can write, draw, and code... what’s left for humans? The answer may be creativity. The one skill machines (still) can’t automate.\n\nIn this video, we'll cover how creativity actually works, from the neuroscience of boredom to the weird habits that spark original ideas. You’ll learn practical ways to train your creative brain using insights from psychology, history, and a few late-night stories from people like Christopher Nolan and Aaron Sorkin. Backed by research from Daniel Kahneman, Mihaly Csikszentmihalyi, and Steven Johnson, this video could change the way you think about thinking.\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 – Intro\n01:21 – The Default Mode Network\n02:51 – Liquid Networks\n04:28 – Conceptual Blending\n05:25 – The Incubation Effect\n06:21 – Counterfactual Thinking\n07:09 – Divergent Thinking\n07:55 – Creative Fasting\n08:42 – Transformational Creativity\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nIn a world where AI can write, draw, and code... what’s left for humans? The answer may be creativity. The one skill machines (still) can’t automate.\n\nIn this video, we'll cover how creativity actually works, from the neuroscience of boredom to the weird habits that spark original ideas. You’ll learn practical ways to train your creative brain using insights from psychology, history, and a few late-night stories from people like Christopher Nolan and Aaron Sorkin. Backed by research from Daniel Kahneman, Mihaly Csikszentmihalyi, and Steven Johnson, this video could change the way you think about thinking.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 – Intro\n01:21 – The Default Mode Network\n02:51 – Liquid Networks\n04:28 – Conceptual Blending\n05:25 – The Incubation Effect\n06:21 – Counterfactual Thinking\n07:09 – Divergent Thinking\n07:55 – Creative Fasting\n08:42 – Transformational Creativity\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w"
       },
       "defaultAudioLanguage": "en"
     },
@@ -166,21 +254,21 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "55",
-      "likeCount": "4",
+      "viewCount": "119",
+      "likeCount": "6",
       "favoriteCount": "0",
-      "commentCount": "0"
+      "commentCount": "2"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "dZ2r2hwZbUPztaj5xe7N7CyPNR8",
+    "etag": "KsL3lQu__tNYfTvk5VEqmW8hgFk",
     "id": "-a6Pbv_yBWw",
     "snippet": {
       "publishedAt": "2025-11-29T07:55:26Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "The 7 Papers That Built Modern AI",
-      "description": "In this video, you'll learn about the 7 landmark research papers that shaped today’s AI breakthroughs (Word2Vec, Transformers, GPT, RLHF, Scaling Laws, RAG, and Chain-of-Thought).\n\nThis is the scientific story of how AI evolved:\n→ Why embeddings changed everything\n→ Why Transformers became the universal architecture\n→ How GPT introduced a new training paradigm\n→ Why human feedback became essential\n→ The surprising math behind scaling laws\n→ How retrieval solved hallucinations\n→ How Chain-of-Thought unlocked reasoning\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:35 Paper #1\n04:47 Paper #2\n08:12 Paper #3\n11:09 Paper #4\n13:50 Paper #5\n16:35 Paper #6\n19:37 Paper #7\n22:29 Closing\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nIn this video, you'll learn about the 7 landmark research papers that shaped today’s AI breakthroughs (Word2Vec, Transformers, GPT, RLHF, Scaling Laws, RAG, and Chain-of-Thought).\n\nThis is the scientific story of how AI evolved:\n→ Why embeddings changed everything\n→ Why Transformers became the universal architecture\n→ How GPT introduced a new training paradigm\n→ Why human feedback became essential\n→ The surprising math behind scaling laws\n→ How retrieval solved hallucinations\n→ How Chain-of-Thought unlocked reasoning\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:35 Paper #1\n04:47 Paper #2\n08:12 Paper #3\n11:09 Paper #4\n13:50 Paper #5\n16:35 Paper #6\n19:37 Paper #7\n22:29 Closing\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/-a6Pbv_yBWw/default.jpg",
@@ -242,7 +330,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "The 7 Papers That Built Modern AI",
-        "description": "In this video, you'll learn about the 7 landmark research papers that shaped today’s AI breakthroughs (Word2Vec, Transformers, GPT, RLHF, Scaling Laws, RAG, and Chain-of-Thought).\n\nThis is the scientific story of how AI evolved:\n→ Why embeddings changed everything\n→ Why Transformers became the universal architecture\n→ How GPT introduced a new training paradigm\n→ Why human feedback became essential\n→ The surprising math behind scaling laws\n→ How retrieval solved hallucinations\n→ How Chain-of-Thought unlocked reasoning\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:35 Paper #1\n04:47 Paper #2\n08:12 Paper #3\n11:09 Paper #4\n13:50 Paper #5\n16:35 Paper #6\n19:37 Paper #7\n22:29 Closing\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nIn this video, you'll learn about the 7 landmark research papers that shaped today’s AI breakthroughs (Word2Vec, Transformers, GPT, RLHF, Scaling Laws, RAG, and Chain-of-Thought).\n\nThis is the scientific story of how AI evolved:\n→ Why embeddings changed everything\n→ Why Transformers became the universal architecture\n→ How GPT introduced a new training paradigm\n→ Why human feedback became essential\n→ The surprising math behind scaling laws\n→ How retrieval solved hallucinations\n→ How Chain-of-Thought unlocked reasoning\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:35 Paper #1\n04:47 Paper #2\n08:12 Paper #3\n11:09 Paper #4\n13:50 Paper #5\n16:35 Paper #6\n19:37 Paper #7\n22:29 Closing\n\n📺 𝐖𝐀𝐓𝐂𝐇 𝐍𝐄𝐗𝐓\nhttps://www.youtube.com/watch?v=AM6Us--nDRo\nhttps://www.youtube.com/watch?v=Hd04NJej9iE\nhttps://www.youtube.com/watch?v=3s7xjI3g73w"
       },
       "defaultAudioLanguage": "en"
     },
@@ -256,7 +344,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "227",
+      "viewCount": "228",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -264,13 +352,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Q8cKVqfFanAbMnCTzFRPNUGjuhE",
+    "etag": "4Tqr-r-F_49mjYzHy6DDa0owzxc",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Why LLMs Can’t Solve Complex Planning Problems",
-      "description": "In this video, we dive into one of the biggest misconceptions in AI today: the belief that Large Language Models (LLMS) like ChatGPT, Claude, and Gemini can solve optimization problems.\n\nPlanning problems (e.g., employee rostering, delivery route optimization, school timetabling, job-shop scheduling) live in a completely different universe from next-token prediction. These problems are NP-hard, combinatorial, and require actual search, not linguistic guesswork.\n\nYou’ll learn:\n\n1. Why LLMs fail spectacularly at real planning tasks, \n2. Why even “reasoning models” collapse under combinatorial explosion\n3. What kinds of tools are built for the job: mathematical optimization, constraint solvers, CPLEX, MiniZinc, meta-heuristics, Timefold, and more.\n\nMost importantly, you’ll see how to combine LLMs with solvers to build powerful hybrid AI systems where the LLM handles reasoning and structure, and the solver does the heavy lifting.\n\nIf you’re building AI systems or working in software engineering, this video will save you from one of the biggest traps in the current hype cycle.\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:50 What a planning problem really is\n04:29 What traditional optimization does differently\n06:45 Why LLMs break down on planning tasks\n13:31 The Hybrid Approach (LLM + Solver)\n15:25 When to use which tool\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎𝐒\n→ https://youtu.be/Hd04NJej9iE\n→ https://youtu.be/3s7xjI3g73w\n→ https://youtu.be/n1t3XEAyUgQ",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nIn this video, we dive into one of the biggest misconceptions in AI today: the belief that Large Language Models (LLMS) like ChatGPT, Claude, and Gemini can solve optimization problems.\n\nPlanning problems (e.g., employee rostering, delivery route optimization, school timetabling, job-shop scheduling) live in a completely different universe from next-token prediction. These problems are NP-hard, combinatorial, and require actual search, not linguistic guesswork.\n\nYou’ll learn:\n\n1. Why LLMs fail spectacularly at real planning tasks, \n2. Why even “reasoning models” collapse under combinatorial explosion\n3. What kinds of tools are built for the job: mathematical optimization, constraint solvers, CPLEX, MiniZinc, meta-heuristics, Timefold, and more.\n\nMost importantly, you’ll see how to combine LLMs with solvers to build powerful hybrid AI systems where the LLM handles reasoning and structure, and the solver does the heavy lifting.\n\nIf you’re building AI systems or working in software engineering, this video will save you from one of the biggest traps in the current hype cycle.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:50 What a planning problem really is\n04:29 What traditional optimization does differently\n06:45 Why LLMs break down on planning tasks\n13:31 The Hybrid Approach (LLM + Solver)\n15:25 When to use which tool\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎𝐒\n→ https://youtu.be/Hd04NJej9iE\n→ https://youtu.be/3s7xjI3g73w\n→ https://youtu.be/n1t3XEAyUgQ",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/AM6Us--nDRo/default.jpg",
@@ -329,7 +417,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Why LLMs Can’t Solve Complex Planning Problems",
-        "description": "In this video, we dive into one of the biggest misconceptions in AI today: the belief that Large Language Models (LLMS) like ChatGPT, Claude, and Gemini can solve optimization problems.\n\nPlanning problems (e.g., employee rostering, delivery route optimization, school timetabling, job-shop scheduling) live in a completely different universe from next-token prediction. These problems are NP-hard, combinatorial, and require actual search, not linguistic guesswork.\n\nYou’ll learn:\n\n1. Why LLMs fail spectacularly at real planning tasks, \n2. Why even “reasoning models” collapse under combinatorial explosion\n3. What kinds of tools are built for the job: mathematical optimization, constraint solvers, CPLEX, MiniZinc, meta-heuristics, Timefold, and more.\n\nMost importantly, you’ll see how to combine LLMs with solvers to build powerful hybrid AI systems where the LLM handles reasoning and structure, and the solver does the heavy lifting.\n\nIf you’re building AI systems or working in software engineering, this video will save you from one of the biggest traps in the current hype cycle.\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:50 What a planning problem really is\n04:29 What traditional optimization does differently\n06:45 Why LLMs break down on planning tasks\n13:31 The Hybrid Approach (LLM + Solver)\n15:25 When to use which tool\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎𝐒\n→ https://youtu.be/Hd04NJej9iE\n→ https://youtu.be/3s7xjI3g73w\n→ https://youtu.be/n1t3XEAyUgQ"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nIn this video, we dive into one of the biggest misconceptions in AI today: the belief that Large Language Models (LLMS) like ChatGPT, Claude, and Gemini can solve optimization problems.\n\nPlanning problems (e.g., employee rostering, delivery route optimization, school timetabling, job-shop scheduling) live in a completely different universe from next-token prediction. These problems are NP-hard, combinatorial, and require actual search, not linguistic guesswork.\n\nYou’ll learn:\n\n1. Why LLMs fail spectacularly at real planning tasks, \n2. Why even “reasoning models” collapse under combinatorial explosion\n3. What kinds of tools are built for the job: mathematical optimization, constraint solvers, CPLEX, MiniZinc, meta-heuristics, Timefold, and more.\n\nMost importantly, you’ll see how to combine LLMs with solvers to build powerful hybrid AI systems where the LLM handles reasoning and structure, and the solver does the heavy lifting.\n\nIf you’re building AI systems or working in software engineering, this video will save you from one of the biggest traps in the current hype cycle.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n01:50 What a planning problem really is\n04:29 What traditional optimization does differently\n06:45 Why LLMs break down on planning tasks\n13:31 The Hybrid Approach (LLM + Solver)\n15:25 When to use which tool\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎𝐒\n→ https://youtu.be/Hd04NJej9iE\n→ https://youtu.be/3s7xjI3g73w\n→ https://youtu.be/n1t3XEAyUgQ"
       },
       "defaultAudioLanguage": "en"
     },
@@ -343,21 +431,21 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "536",
-      "likeCount": "26",
+      "viewCount": "581",
+      "likeCount": "28",
       "favoriteCount": "0",
       "commentCount": "6"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "sF2LHbB--Ipv9zuBGlCox9BrvKA",
+    "etag": "pcAEHRxOEORQkMPMov2bVIZx8H0",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "How Scientists Fool Themselves: 5 Psychological Biases & Their Countermoves",
-      "description": "Most scientists believe psychological bias is something that happens to 𝘰𝘵𝘩𝘦𝘳 people. But in reality, it’s the invisible force shaping every hypothesis, experiment, and “significant result.” \n\nIn this video, we'll break down the 5 most dangerous biases in science. Along the way, you'll get tips to beat them before they wreck your research, your career, or your life.\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n00:28 Optimism Bias\n03:57 Confirmation Bias\n08:26 Self-Serving Bias\n11:10 Sunk-Cost Fallacy\n15:01 Groupthink Bias\n19:02 Final Reflection\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎\n→ https://youtu.be/N7pY8VAt6g4",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nMost scientists believe psychological bias is something that happens to 𝘰𝘵𝘩𝘦𝘳 people. But in reality, it’s the invisible force shaping every hypothesis, experiment, and “significant result.” \n\nIn this video, we'll break down the 5 most dangerous biases in science. Along the way, you'll get tips to beat them before they wreck your research, your career, or your life.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n00:28 Optimism Bias\n03:57 Confirmation Bias\n08:26 Self-Serving Bias\n11:10 Sunk-Cost Fallacy\n15:01 Groupthink Bias\n19:02 Final Reflection\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎\n→ https://youtu.be/N7pY8VAt6g4",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/756pgcDQO5E/default.jpg",
@@ -418,7 +506,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "How Scientists Fool Themselves: 5 Psychological Biases & Their Countermoves",
-        "description": "Most scientists believe psychological bias is something that happens to 𝘰𝘵𝘩𝘦𝘳 people. But in reality, it’s the invisible force shaping every hypothesis, experiment, and “significant result.” \n\nIn this video, we'll break down the 5 most dangerous biases in science. Along the way, you'll get tips to beat them before they wreck your research, your career, or your life.\n\n👉 Don’t forget to like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n00:28 Optimism Bias\n03:57 Confirmation Bias\n08:26 Self-Serving Bias\n11:10 Sunk-Cost Fallacy\n15:01 Groupthink Bias\n19:02 Final Reflection\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎\n→ https://youtu.be/N7pY8VAt6g4"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nMost scientists believe psychological bias is something that happens to 𝘰𝘵𝘩𝘦𝘳 people. But in reality, it’s the invisible force shaping every hypothesis, experiment, and “significant result.” \n\nIn this video, we'll break down the 5 most dangerous biases in science. Along the way, you'll get tips to beat them before they wreck your research, your career, or your life.\n\n⏰ 𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n00:00 Intro\n00:28 Optimism Bias\n03:57 Confirmation Bias\n08:26 Self-Serving Bias\n11:10 Sunk-Cost Fallacy\n15:01 Groupthink Bias\n19:02 Final Reflection\n\n📺 𝐑𝐄𝐋𝐀𝐓𝐄𝐃 𝐕𝐈𝐃𝐄𝐎\n→ https://youtu.be/N7pY8VAt6g4"
       },
       "defaultAudioLanguage": "en"
     },
@@ -432,7 +520,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "200",
+      "viewCount": "201",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -440,13 +528,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "X37Acj-V9Zrt4yAoC9Vm4aGd4A0",
+    "etag": "Fcuvs0JDCgb-_H6D2S9S2ol8F9c",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "How AI Is Killing the Internet’s Business Model",
-      "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nAI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never a real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ What new business models could make the Internet sustainable again?\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/Hd04NJej9iE/default.jpg",
@@ -507,7 +595,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "How AI Is Killing the Internet’s Business Model",
-        "description": "AI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ what new business models could make the Internet sustainable again.\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n👉 Like, subscribe, or drop a comment with your thoughts if you liked this video.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nAI isn’t just disrupting jobs or generating hype, it’s quietly dismantling the economic engine of the open web. For 15+ years, the Internet ran on one currency: human attention. Creators published content, search engines delivered traffic, and businesses monetized clicks. But AI-driven answer engines are bypassing websites entirely, and that breaks the ads' industry that fuels the web. \n\nIn this video, we explore the consequences of this seismic shift: \n\n✓ Why traffic was never a real “value”. \n✓ How AI scrapers are draining the ecosystem.\n✓ What new business models could make the Internet sustainable again?\n\nBy the end, you’ll understand not only what’s at stake, but also how creators, companies, and users could redesign the digital economy before it collapses.\n\n⏰ TIMESTAMPS\n00:00 The Internet’s Business Model Was Built on Attention\n01:32 The Illusion of a “Free” Internet\n03:04 Traffic Is a Bad Proxy for Value\n04:23 From Search Engines to Answer Engines\n06:27 Robots, Scraping, and the Collapse of Trust\n08:39 Short-Term Pain: Media and Content Creators\n11:42 Toward a New Business Model\n13:25 The Swiss Cheese of Knowledge\n14:34 The Fairness Question\n16:20 A Possible Golden Age for the Internet\n17:24 Final Thoughts and Takeaways\n\n📺 RELATED VIDEO\n→ https://youtu.be/_zfN9wnPvU0"
       },
       "defaultAudioLanguage": "en"
     },
@@ -521,7 +609,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "165",
+      "viewCount": "170",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -529,13 +617,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "H9shIH9w9EB_UihQpavMLll84N4",
+    "etag": "WVMWOdcoVi2zHn6mWpOaKjHqDPQ",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Why Fully Homomorphic Encryption Is the Future of Private Computing",
-      "description": "What if your data could stay encrypted even while being processed? That’s the promise of Fully Homomorphic Encryption (FHE), a breakthrough technology that could change the future of privacy, AI, and the internet itself.\n\nIn this video, I’ll break down FHE without drowning you in equations. Instead, I’ll focus on the core ideas:\n\n✓ What problem FHE solves\n✓ How it works (with simple examples and analogies)\n✓ Why it’s becoming a trending topic (with support from Microsoft, Google, and Apple)\n✓ The exciting future of a fully private internet\n\nAlong the way, we’ll explore:\n\n➤ Why traditional encryption fails when data is “in use”\n➤ Real-world breaches that show the problem\n➤ How lattice-based cryptography makes FHE quantum-resistant\n➤ Open-source tools like Microsoft SEAL and Google HEIR\n➤ Real applications already running today\n\nIf you’re curious about cryptography, AI, cloud security, or the future of private computing, this video will give you the big picture in a way that’s clear, practical, and thought-provoking.\n\n👉 Don’t forget to like, subscribe, and drop a comment with your thoughts.\n\n⏰ TIMESTAMPS\n0:00 Intro\n00:42 Why normal encryption isn’t enough\n02:10 The three stages of data\n03:17 The Achilles’ heel of modern security\n05:28 Basics of Cryptography\n6:50 Fully Homomorphic Encryption explained\n11:42 Lattice cryptography & quantum resistance\n14:33 Moore's Law of Fully Homomorphic Encryption\n16:35 Real-world applications (Microsoft, Google, Apple)\n17:12 OSS tools for Fully Homomorphic Encryption\n18:19 The future of private computing\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nWhat if your data could stay encrypted even while being processed? That’s the promise of Fully Homomorphic Encryption (FHE), a breakthrough technology that could change the future of privacy, AI, and the internet itself.\n\nIn this video, I’ll break down FHE without drowning you in equations. Instead, I’ll focus on the core ideas:\n\n✓ What problem FHE solves\n✓ How it works (with simple examples and analogies)\n✓ Why it’s becoming a trending topic (with support from Microsoft, Google, and Apple)\n✓ The exciting future of a fully private internet\n\nAlong the way, we’ll explore:\n\n➤ Why traditional encryption fails when data is “in use”\n➤ Real-world breaches that show the problem\n➤ How lattice-based cryptography makes FHE quantum-resistant\n➤ Open-source tools like Microsoft SEAL and Google HEIR\n➤ Real applications already running today\n\nIf you’re curious about cryptography, AI, cloud security, or the future of private computing, this video will give you the big picture in a way that’s clear, practical, and thought-provoking.\n\n⏰ TIMESTAMPS\n0:00 Intro\n00:42 Why normal encryption isn’t enough\n02:10 The three stages of data\n03:17 The Achilles’ heel of modern security\n05:28 Basics of Cryptography\n6:50 Fully Homomorphic Encryption explained\n11:42 Lattice cryptography & quantum resistance\n14:33 Moore's Law of Fully Homomorphic Encryption\n16:35 Real-world applications (Microsoft, Google, Apple)\n17:12 OSS tools for Fully Homomorphic Encryption\n18:19 The future of private computing\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/RgzeESzBa4Y/default.jpg",
@@ -590,7 +678,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Why Fully Homomorphic Encryption Is the Future of Private Computing",
-        "description": "What if your data could stay encrypted even while being processed? That’s the promise of Fully Homomorphic Encryption (FHE), a breakthrough technology that could change the future of privacy, AI, and the internet itself.\n\nIn this video, I’ll break down FHE without drowning you in equations. Instead, I’ll focus on the core ideas:\n\n✓ What problem FHE solves\n✓ How it works (with simple examples and analogies)\n✓ Why it’s becoming a trending topic (with support from Microsoft, Google, and Apple)\n✓ The exciting future of a fully private internet\n\nAlong the way, we’ll explore:\n\n➤ Why traditional encryption fails when data is “in use”\n➤ Real-world breaches that show the problem\n➤ How lattice-based cryptography makes FHE quantum-resistant\n➤ Open-source tools like Microsoft SEAL and Google HEIR\n➤ Real applications already running today\n\nIf you’re curious about cryptography, AI, cloud security, or the future of private computing, this video will give you the big picture in a way that’s clear, practical, and thought-provoking.\n\n👉 Don’t forget to like, subscribe, and drop a comment with your thoughts.\n\n⏰ TIMESTAMPS\n0:00 Intro\n00:42 Why normal encryption isn’t enough\n02:10 The three stages of data\n03:17 The Achilles’ heel of modern security\n05:28 Basics of Cryptography\n6:50 Fully Homomorphic Encryption explained\n11:42 Lattice cryptography & quantum resistance\n14:33 Moore's Law of Fully Homomorphic Encryption\n16:35 Real-world applications (Microsoft, Google, Apple)\n17:12 OSS tools for Fully Homomorphic Encryption\n18:19 The future of private computing\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nWhat if your data could stay encrypted even while being processed? That’s the promise of Fully Homomorphic Encryption (FHE), a breakthrough technology that could change the future of privacy, AI, and the internet itself.\n\nIn this video, I’ll break down FHE without drowning you in equations. Instead, I’ll focus on the core ideas:\n\n✓ What problem FHE solves\n✓ How it works (with simple examples and analogies)\n✓ Why it’s becoming a trending topic (with support from Microsoft, Google, and Apple)\n✓ The exciting future of a fully private internet\n\nAlong the way, we’ll explore:\n\n➤ Why traditional encryption fails when data is “in use”\n➤ Real-world breaches that show the problem\n➤ How lattice-based cryptography makes FHE quantum-resistant\n➤ Open-source tools like Microsoft SEAL and Google HEIR\n➤ Real applications already running today\n\nIf you’re curious about cryptography, AI, cloud security, or the future of private computing, this video will give you the big picture in a way that’s clear, practical, and thought-provoking.\n\n⏰ TIMESTAMPS\n0:00 Intro\n00:42 Why normal encryption isn’t enough\n02:10 The three stages of data\n03:17 The Achilles’ heel of modern security\n05:28 Basics of Cryptography\n6:50 Fully Homomorphic Encryption explained\n11:42 Lattice cryptography & quantum resistance\n14:33 Moore's Law of Fully Homomorphic Encryption\n16:35 Real-world applications (Microsoft, Google, Apple)\n17:12 OSS tools for Fully Homomorphic Encryption\n18:19 The future of private computing\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. I break down complex software engineering and AI concepts into simple, practical insights. My mission is to empower you with the fundamentals and the real-world lessons I’ve gained from over two decades of higher education, academic research, and industry experience.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero"
       },
       "defaultAudioLanguage": "en"
     },
@@ -604,21 +692,21 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1396",
-      "likeCount": "66",
+      "viewCount": "1448",
+      "likeCount": "68",
       "favoriteCount": "0",
       "commentCount": "18"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "hhyFGi0NCjrjiDpkwB9f2LjeZYw",
+    "etag": "2BDsWCT4jsUWnLLG_BA5DyN7cKg",
     "id": "3s7xjI3g73w",
     "snippet": {
       "publishedAt": "2024-12-29T17:00:04Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "How GPTs are Shaping our Perception of Truth",
-      "description": "How are AI models shaping our perception of truth in a digital world? In this video, we dive deep into how LLMs like GPTs influence what we believe to be true and where the boundaries of AI’s “knowledge” really lie. We will see why these models are powerful yet fallible, and what you can do to critically engage with AI-generated information. From “hallucinations” to biases and crowd-consensus effects, this video explores the threats behind letting these models shape (and sometimes distort) our understanding of reality and truth.\n\n00:00 - From Google to AI answers \n01:14 - Why GPTs are reshaping truth\n03:37 - How GPTs seem “intelligent”\n09:02 - The unexpected biases of GPTs\n10:28 - The crowdsource effect\n13:18 - Epistemic trust and AI’s truth\n16:51 - Guardrails and limitations\n18:15 - The potential risks of GPTs\n19:37 - Practical insights\n\n📺 WATCH NEXT\n\nhttps://youtu.be/SQY2IED6vFQ\n\nhttps://youtu.be/kw7fvHf4rDw\n\n🌍 RELATED CONTENT\n\n→ The article in ACM Qeue: \"GPTs and Hallucination: Why do large language models hallucinate?\" 🌐 https://queue.acm.org/detail.cfm?id=3688007\n\n→ The related paper: \"The Hallucinations Leaderboard – An Open Effort to Measure Hallucinations in Large Language Models\" 🌐 https://arxiv.org/pdf/2404.05904\n\nWHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AITruth #GPTModels #ArtificialIntelligence #AIHallucinations #TrustInAI",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nHow are AI models shaping our perception of truth in a digital world? In this video, we dive deep into how LLMs like GPTs influence what we believe to be true and where the boundaries of AI’s “knowledge” really lie. We will see why these models are powerful yet fallible, and what you can do to critically engage with AI-generated information. From “hallucinations” to biases and crowd-consensus effects, this video explores the threats behind letting these models shape (and sometimes distort) our understanding of reality and truth.\n\n00:00 - From Google to AI answers \n01:14 - Why GPTs are reshaping truth\n03:37 - How GPTs seem “intelligent”\n09:02 - The unexpected biases of GPTs\n10:28 - The crowdsource effect\n13:18 - Epistemic trust and AI’s truth\n16:51 - Guardrails and limitations\n18:15 - The potential risks of GPTs\n19:37 - Practical insights\n\n📺 WATCH NEXT\nhttps://youtu.be/SQY2IED6vFQ\nhttps://youtu.be/kw7fvHf4rDw\n\n🌍 RELATED CONTENT\n→ The article in ACM Queue: \"GPTs and Hallucination: Why do large language models hallucinate?\" 🌐 https://queue.acm.org/detail.cfm?id=3688007\n→ The related paper: \"The Hallucinations Leaderboard – An Open Effort to Measure Hallucinations in Large Language Models\" 🌐 https://arxiv.org/pdf/2404.05904\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AITruth #GPTModels #ArtificialIntelligence #AIHallucinations #TrustInAI",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/3s7xjI3g73w/default.jpg",
@@ -683,7 +771,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "How GPTs are Shaping our Perception of Truth",
-        "description": "How are AI models shaping our perception of truth in a digital world? In this video, we dive deep into how LLMs like GPTs influence what we believe to be true and where the boundaries of AI’s “knowledge” really lie. We will see why these models are powerful yet fallible, and what you can do to critically engage with AI-generated information. From “hallucinations” to biases and crowd-consensus effects, this video explores the threats behind letting these models shape (and sometimes distort) our understanding of reality and truth.\n\n00:00 - From Google to AI answers \n01:14 - Why GPTs are reshaping truth\n03:37 - How GPTs seem “intelligent”\n09:02 - The unexpected biases of GPTs\n10:28 - The crowdsource effect\n13:18 - Epistemic trust and AI’s truth\n16:51 - Guardrails and limitations\n18:15 - The potential risks of GPTs\n19:37 - Practical insights\n\n📺 WATCH NEXT\n\nhttps://youtu.be/SQY2IED6vFQ\n\nhttps://youtu.be/kw7fvHf4rDw\n\n🌍 RELATED CONTENT\n\n→ The article in ACM Qeue: \"GPTs and Hallucination: Why do large language models hallucinate?\" 🌐 https://queue.acm.org/detail.cfm?id=3688007\n\n→ The related paper: \"The Hallucinations Leaderboard – An Open Effort to Measure Hallucinations in Large Language Models\" 🌐 https://arxiv.org/pdf/2404.05904\n\nWHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AITruth #GPTModels #ArtificialIntelligence #AIHallucinations #TrustInAI"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nHow are AI models shaping our perception of truth in a digital world? In this video, we dive deep into how LLMs like GPTs influence what we believe to be true and where the boundaries of AI’s “knowledge” really lie. We will see why these models are powerful yet fallible, and what you can do to critically engage with AI-generated information. From “hallucinations” to biases and crowd-consensus effects, this video explores the threats behind letting these models shape (and sometimes distort) our understanding of reality and truth.\n\n00:00 - From Google to AI answers \n01:14 - Why GPTs are reshaping truth\n03:37 - How GPTs seem “intelligent”\n09:02 - The unexpected biases of GPTs\n10:28 - The crowdsource effect\n13:18 - Epistemic trust and AI’s truth\n16:51 - Guardrails and limitations\n18:15 - The potential risks of GPTs\n19:37 - Practical insights\n\n📺 WATCH NEXT\nhttps://youtu.be/SQY2IED6vFQ\nhttps://youtu.be/kw7fvHf4rDw\n\n🌍 RELATED CONTENT\n→ The article in ACM Queue: \"GPTs and Hallucination: Why do large language models hallucinate?\" 🌐 https://queue.acm.org/detail.cfm?id=3688007\n→ The related paper: \"The Hallucinations Leaderboard – An Open Effort to Measure Hallucinations in Large Language Models\" 🌐 https://arxiv.org/pdf/2404.05904\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AITruth #GPTModels #ArtificialIntelligence #AIHallucinations #TrustInAI"
       },
       "defaultAudioLanguage": "en"
     },
@@ -705,13 +793,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "p1mg8efivFZSGJz6hxovmA9SQx0",
+    "etag": "8xKL7q9f-qwT5tWvPv9G8-EodXY",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Developer Burnout Explained (7 types of overwhelm and how to beat them)",
-      "description": "Why do so many skilled software developers feel overwhelmed even in structured, high-paying tech jobs?\n\nIn this video, we break down the 7 types of developer overwhelm you probably didn’t know existed. From endless meetings and constant context switching to technical complexity and time pressure, we’ll uncover what really drains developers and how some manage to turn that same stress into focus, creativity, and productivity.\n\nBy the end, you’ll understand not just why burnout happens in tech, but how to manage it before it manages you.\n\n⏰ TIMESTAMPS\n0:00 - The hidden struggles of developers  \n1:59 - Causes of overwhelm in tech  \n5:30 - 1. Communication overwhelm  \n7:06 - 2. Disturbance overwhelm  \n8:57 - 3. Organizational overwhelm  \n10:35 - 4. Variety overwhelm  \n11:47 - 5. Technical overwhelm  \n14:01 - 6. Temporal overwhelm  \n15:25 - 7. Positive overwhelm  \n23:00 - Takeaways  \n\n📺 WATCH NEXT\n→ https://youtu.be/y0mztKEUwzw\n\n🌍 RELATED CONTENT\n→ Read the article \"Overwhelmed Software Developers\", published in IEEE Computer 🌐https://arxiv.org/pdf/2406.04057",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nWhy do so many skilled software developers feel overwhelmed even in structured, high-paying tech jobs?\n\nIn this video, we break down the 7 types of developer overwhelm you probably didn’t know existed. From endless meetings and constant context switching to technical complexity and time pressure, we’ll uncover what really drains developers and how some manage to turn that same stress into focus, creativity, and productivity.\n\nBy the end, you’ll understand not just why burnout happens in tech, but how to manage it before it manages you.\n\n⏰ TIMESTAMPS\n0:00 - The hidden struggles of developers  \n1:59 - Causes of overwhelm in tech  \n5:30 - 1. Communication overwhelm  \n7:06 - 2. Disturbance overwhelm  \n8:57 - 3. Organizational overwhelm  \n10:35 - 4. Variety overwhelm  \n11:47 - 5. Technical overwhelm  \n14:01 - 6. Temporal overwhelm  \n15:25 - 7. Positive overwhelm  \n23:00 - Takeaways  \n\n📺 WATCH NEXT\n→ https://youtu.be/y0mztKEUwzw\n\n🌍 RELATED CONTENT\n→ Read the article \"Overwhelmed Software Developers\", published in IEEE Computer 🌐https://arxiv.org/pdf/2406.04057",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/c-JIlLList4/default.jpg",
@@ -766,7 +854,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Developer Burnout Explained (7 types of overwhelm and how to beat them)",
-        "description": "Why do so many skilled software developers feel overwhelmed even in structured, high-paying tech jobs?\n\nIn this video, we break down the 7 types of developer overwhelm you probably didn’t know existed. From endless meetings and constant context switching to technical complexity and time pressure, we’ll uncover what really drains developers and how some manage to turn that same stress into focus, creativity, and productivity.\n\nBy the end, you’ll understand not just why burnout happens in tech, but how to manage it before it manages you.\n\n⏰ TIMESTAMPS\n0:00 - The hidden struggles of developers  \n1:59 - Causes of overwhelm in tech  \n5:30 - 1. Communication overwhelm  \n7:06 - 2. Disturbance overwhelm  \n8:57 - 3. Organizational overwhelm  \n10:35 - 4. Variety overwhelm  \n11:47 - 5. Technical overwhelm  \n14:01 - 6. Temporal overwhelm  \n15:25 - 7. Positive overwhelm  \n23:00 - Takeaways  \n\n📺 WATCH NEXT\n→ https://youtu.be/y0mztKEUwzw\n\n🌍 RELATED CONTENT\n→ Read the article \"Overwhelmed Software Developers\", published in IEEE Computer 🌐https://arxiv.org/pdf/2406.04057"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nWhy do so many skilled software developers feel overwhelmed even in structured, high-paying tech jobs?\n\nIn this video, we break down the 7 types of developer overwhelm you probably didn’t know existed. From endless meetings and constant context switching to technical complexity and time pressure, we’ll uncover what really drains developers and how some manage to turn that same stress into focus, creativity, and productivity.\n\nBy the end, you’ll understand not just why burnout happens in tech, but how to manage it before it manages you.\n\n⏰ TIMESTAMPS\n0:00 - The hidden struggles of developers  \n1:59 - Causes of overwhelm in tech  \n5:30 - 1. Communication overwhelm  \n7:06 - 2. Disturbance overwhelm  \n8:57 - 3. Organizational overwhelm  \n10:35 - 4. Variety overwhelm  \n11:47 - 5. Technical overwhelm  \n14:01 - 6. Temporal overwhelm  \n15:25 - 7. Positive overwhelm  \n23:00 - Takeaways  \n\n📺 WATCH NEXT\n→ https://youtu.be/y0mztKEUwzw\n\n🌍 RELATED CONTENT\n→ Read the article \"Overwhelmed Software Developers\", published in IEEE Computer 🌐https://arxiv.org/pdf/2406.04057"
       },
       "defaultAudioLanguage": "en"
     },
@@ -780,7 +868,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "192",
+      "viewCount": "197",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -788,13 +876,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "sCNFf63FeRdWK0tYCeBxQXZJhGM",
+    "etag": "jl82_RQ7gcTgyq5asRqRHYVaiA0",
     "id": "SQY2IED6vFQ",
     "snippet": {
       "publishedAt": "2024-12-14T22:45:00Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Embrace AI in your Career and Life (there isn’t another way)",
-      "description": "The rise of Artificial Intelligence (AI) is more than a tech trend. It is reshaping industries, jobs, and our entire society. In this video, we dive into the real impacts of AI on our lives, career paths, and future. We’ll trace AI’s parallels with past technological revolutions, from the industrial age to the digital era, and examine what makes AI different. Could this finally be the tool to liberate us from the soul-crushing 9-to-5 jobs, or are we trading one set of chains for another?\n\n⏰ TIMESTAMPS\n\n00:00 - Is AI Really the Future?\n01:45 - The Mirage of Technological Salvation\n03:53 - The Unfulfilled Promise of Computers\n05:40 - AI's Impact on Jobs and Skills\n07:47 - The Economics of Labor in the Age of AI\n08:50 - Embracing AI: Shift Your Mindset\n11:46 - The Future of Coding and AI\n13:23 - The Exciting Potential of AI in Health, Climate, and More\n15:36 - Shaping the AI Revolution Responsibly\n\n📺 WATCH NEXT\n\n→  https://youtu.be/kw7fvHf4rDw\n\n🌍 RELATED RESOURCES\n\n→ The \"Stanford AI Index Report 2024\" https://aiindex.stanford.edu/report\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#artificialintelligence #futureofwork #technology #automation",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nThe rise of Artificial Intelligence (AI) is more than a tech trend. It is reshaping industries, jobs, and our entire society. In this video, we dive into the real impacts of AI on our lives, career paths, and future. We’ll trace AI’s parallels with past technological revolutions, from the Industrial Age to the digital era, and examine what makes AI distinct. Could this finally be the tool to liberate us from the soul-crushing 9-to-5 jobs, or are we trading one set of chains for another?\n\n⏰ TIMESTAMPS\n00:00 - Is AI Really the Future?\n01:45 - The Mirage of Technological Salvation\n03:53 - The Unfulfilled Promise of Computers\n05:40 - AI's Impact on Jobs and Skills\n07:47 - The Economics of Labor in the Age of AI\n08:50 - Embracing AI: Shift Your Mindset\n11:46 - The Future of Coding and AI\n13:23 - The Exciting Potential of AI in Health, Climate, and More\n15:36 - Shaping the AI Revolution Responsibly\n\n📺 WATCH NEXT\n→  https://youtu.be/kw7fvHf4rDw\n\n🌍 RELATED RESOURCES\n→ The \"Stanford AI Index Report 2024\" https://aiindex.stanford.edu/report\n\n🙂 WHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#artificialintelligence #futureofwork #technology #automation",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/SQY2IED6vFQ/default.jpg",
@@ -850,7 +938,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Embrace AI in your Career and Life (there isn’t another way)",
-        "description": "The rise of Artificial Intelligence (AI) is more than a tech trend. It is reshaping industries, jobs, and our entire society. In this video, we dive into the real impacts of AI on our lives, career paths, and future. We’ll trace AI’s parallels with past technological revolutions, from the industrial age to the digital era, and examine what makes AI different. Could this finally be the tool to liberate us from the soul-crushing 9-to-5 jobs, or are we trading one set of chains for another?\n\n⏰ TIMESTAMPS\n\n00:00 - Is AI Really the Future?\n01:45 - The Mirage of Technological Salvation\n03:53 - The Unfulfilled Promise of Computers\n05:40 - AI's Impact on Jobs and Skills\n07:47 - The Economics of Labor in the Age of AI\n08:50 - Embracing AI: Shift Your Mindset\n11:46 - The Future of Coding and AI\n13:23 - The Exciting Potential of AI in Health, Climate, and More\n15:36 - Shaping the AI Revolution Responsibly\n\n📺 WATCH NEXT\n\n→  https://youtu.be/kw7fvHf4rDw\n\n🌍 RELATED RESOURCES\n\n→ The \"Stanford AI Index Report 2024\" https://aiindex.stanford.edu/report\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#artificialintelligence #futureofwork #technology #automation"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nThe rise of Artificial Intelligence (AI) is more than a tech trend. It is reshaping industries, jobs, and our entire society. In this video, we dive into the real impacts of AI on our lives, career paths, and future. We’ll trace AI’s parallels with past technological revolutions, from the Industrial Age to the digital era, and examine what makes AI distinct. Could this finally be the tool to liberate us from the soul-crushing 9-to-5 jobs, or are we trading one set of chains for another?\n\n⏰ TIMESTAMPS\n00:00 - Is AI Really the Future?\n01:45 - The Mirage of Technological Salvation\n03:53 - The Unfulfilled Promise of Computers\n05:40 - AI's Impact on Jobs and Skills\n07:47 - The Economics of Labor in the Age of AI\n08:50 - Embracing AI: Shift Your Mindset\n11:46 - The Future of Coding and AI\n13:23 - The Exciting Potential of AI in Health, Climate, and More\n15:36 - Shaping the AI Revolution Responsibly\n\n📺 WATCH NEXT\n→  https://youtu.be/kw7fvHf4rDw\n\n🌍 RELATED RESOURCES\n→ The \"Stanford AI Index Report 2024\" https://aiindex.stanford.edu/report\n\n🙂 WHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#artificialintelligence #futureofwork #technology #automation"
       },
       "defaultAudioLanguage": "en"
     },
@@ -872,13 +960,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "uJJ2PdUPqzfL3qW1ci3b6disxMg",
+    "etag": "GKLbxrKQqSF1Ef3o9Pu-xnABxx8",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Why AI will NOT replace Software Engineers (for now)",
-      "description": "AI systems  are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around AI replacing software engineers, are our jobs really at risk? In this video, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. We’ll discuss the potential of AI to assist in common development activities, and where it still falls short when it comes to creative problem-solving and human intuition. Welcome to the discussion 🧬 vs. 🤖 !!!\n\n⏰ TIMESTAMPS\n\n0:00 - AI’s impact on software engineering\n02:20 - Sensational headlines and misconceptions\n05:34 - The essence of software engineering\n09:19 - The value in the small human details\n12:12 - Can AI fully replace software engineers?\n14:23 - How AI can help in software engineering\n16:16 - Can AI replace junior engineers?\n18:12 - Final thoughts\n\n📺 WATCH NEXT\n\n→ https://youtu.be/DqL3-bnSCy0\n\n🌍 RELATED CONTENT\n\n→ The companion blog post: https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html\n\n→ Blog post: “Is There a Future for Software Engineers? The Impact of AI [2024]\" https://brainhub.eu/library/software-developer-age-of-ai\n\nWHO AM I❓\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AI #SoftwareEngineering #AIVsEngineers #TechCareer",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nAI systems are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around AI replacing software engineers, are our jobs really at risk? In this video, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. We’ll discuss the potential of AI to assist in common development activities, and where it still falls short when it comes to creative problem-solving and human intuition. Welcome to the discussion 🧬 vs. 🤖 !!!\n\n⏰ TIMESTAMPS\n0:00 - AI’s impact on software engineering\n02:20 - Sensational headlines and misconceptions\n05:34 - The essence of software engineering\n09:19 - The value in the small human details\n12:12 - Can AI fully replace software engineers?\n14:23 - How AI can help in software engineering\n16:16 - Can AI replace junior engineers?\n18:12 - Final thoughts\n\n📺 WATCH NEXT\n→ https://youtu.be/DqL3-bnSCy0\n\n🌍 RELATED CONTENT\n→ The companion blog post: https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html\n→ Blog post: “Is There a Future for Software Engineers? The Impact of AI [2024]\" https://brainhub.eu/library/software-developer-age-of-ai\n\nWHO AM I\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AI #SoftwareEngineering #AIVsEngineers #TechCareer",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/kw7fvHf4rDw/default.jpg",
@@ -932,7 +1020,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Why AI will NOT replace Software Engineers (for now)",
-        "description": "AI systems  are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around AI replacing software engineers, are our jobs really at risk? In this video, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. We’ll discuss the potential of AI to assist in common development activities, and where it still falls short when it comes to creative problem-solving and human intuition. Welcome to the discussion 🧬 vs. 🤖 !!!\n\n⏰ TIMESTAMPS\n\n0:00 - AI’s impact on software engineering\n02:20 - Sensational headlines and misconceptions\n05:34 - The essence of software engineering\n09:19 - The value in the small human details\n12:12 - Can AI fully replace software engineers?\n14:23 - How AI can help in software engineering\n16:16 - Can AI replace junior engineers?\n18:12 - Final thoughts\n\n📺 WATCH NEXT\n\n→ https://youtu.be/DqL3-bnSCy0\n\n🌍 RELATED CONTENT\n\n→ The companion blog post: https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html\n\n→ Blog post: “Is There a Future for Software Engineers? The Impact of AI [2024]\" https://brainhub.eu/library/software-developer-age-of-ai\n\nWHO AM I❓\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AI #SoftwareEngineering #AIVsEngineers #TechCareer"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nAI systems are becoming more and more capable of performing complex cognitive tasks that were once thought to be uniquely human. In particular, LLMs are proven to be very good at writing code. With all the buzz around AI replacing software engineers, are our jobs really at risk? In this video, I dive deep into AI's current capabilities and how they stack up against the demands of real-world software development. We’ll discuss the potential of AI to assist in common development activities, and where it still falls short when it comes to creative problem-solving and human intuition. Welcome to the discussion 🧬 vs. 🤖 !!!\n\n⏰ TIMESTAMPS\n0:00 - AI’s impact on software engineering\n02:20 - Sensational headlines and misconceptions\n05:34 - The essence of software engineering\n09:19 - The value in the small human details\n12:12 - Can AI fully replace software engineers?\n14:23 - How AI can help in software engineering\n16:16 - Can AI replace junior engineers?\n18:12 - Final thoughts\n\n📺 WATCH NEXT\n→ https://youtu.be/DqL3-bnSCy0\n\n🌍 RELATED CONTENT\n→ The companion blog post: https://www.cesarsotovalero.net/blog/why-genai-will-not-replace-software-engineers-just-yet.html\n→ Blog post: “Is There a Future for Software Engineers? The Impact of AI [2024]\" https://brainhub.eu/library/software-developer-age-of-ai\n\nWHO AM I\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#AI #SoftwareEngineering #AIVsEngineers #TechCareer"
       },
       "defaultAudioLanguage": "en"
     },
@@ -954,13 +1042,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "jDblxw1Mqrpl8wvGnzM6T4WS-zA",
+    "etag": "xXJJL-kPcWOkFtrUlnpUCvhRfsw",
     "id": "GRd2nxNTZDI",
     "snippet": {
       "publishedAt": "2024-11-30T07:00:08Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Speaking Imperfect English Can Transform Your Life",
-      "description": "I  came from living in a small town in Cuba, where access to the most basic human needs was severely limited. One day, I took the challenge of teaching myself English and signed up for the IELTS test. Ten years later, I live in one of Europe’s most developed cities, where I pursued an academic career that was once totally beyond my imagination. In this video, I share my personal journey, how learning English led me to this kind of personal and professional growth, along with my struggles, and some of the moments that made it all worthwhile.\n\nFor non-native speakers: this video is not just about learning a second language, it's about breaking barriers and redefining your future!\n\n⏰ TIMESTAMPS\n\n00:00 – Intro\n02:22– Why English Is Important \n03:57– The Rise of English as The Language of Science\n07:28 – Deciding to Learn English (my story)\n12:31 – The IELTS Test\n16:13 – Open Opportunities Through English\n19:12 – 3 Ways to Improve Your English\n22:56 – Final Thoughts\n\n📺 RELATED VIDEOS\n\n→ https://youtu.be/N7pY8VAt6g4\n\n→ https://youtu.be/ZpILR21GWao\n\n🌍 RELATED CONTENT\n\n→ My blog post \"How I Beat the IELTS Academic With Just a Month of Self-Training\" https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html\n\n→ The Nature journal article \"A century of science boycotts\" https://www.nature.com/articles/d41586-022-01475-8\n\nWHO AM I?\n\nHi 👋 I’m César, a computer scientist and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#learningenglish #nonativespeakers #phdlife #academicjourney #IELTStips",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nI  came from living in a small town in Cuba, where access to the most basic human needs was severely limited. One day, I took the challenge of teaching myself English and signed up for the IELTS test. Ten years later, I live in one of Europe’s most developed cities, where I pursued an academic career that was once totally beyond my imagination. In this video, I share my personal journey, how learning English led me to this kind of personal and professional growth, along with my struggles, and some of the moments that made it all worthwhile.\n\nFor non-native speakers: this video is not just about learning a second language, it's about breaking barriers and redefining your future!\n\n⏰ TIMESTAMPS\n00:00 – Intro\n02:22– Why English Is Important \n03:57– The Rise of English as The Language of Science\n07:28 – Deciding to Learn English (my story)\n12:31 – The IELTS Test\n16:13 – Open Opportunities Through English\n19:12 – 3 Ways to Improve Your English\n22:56 – Final Thoughts\n\n📺 RELATED VIDEOS\n→ https://youtu.be/N7pY8VAt6g4\n→ https://youtu.be/ZpILR21GWao\n\n🌍 RELATED CONTENT\n→ My blog post \"How I Beat the IELTS Academic With Just a Month of Self-Training\" https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html\n→ The Nature journal article \"A century of science boycotts\" https://www.nature.com/articles/d41586-022-01475-8\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#learningenglish #nonativespeakers #phdlife #academicjourney #IELTStips",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/GRd2nxNTZDI/default.jpg",
@@ -1015,7 +1103,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Speaking Imperfect English Can Transform Your Life",
-        "description": "I  came from living in a small town in Cuba, where access to the most basic human needs was severely limited. One day, I took the challenge of teaching myself English and signed up for the IELTS test. Ten years later, I live in one of Europe’s most developed cities, where I pursued an academic career that was once totally beyond my imagination. In this video, I share my personal journey, how learning English led me to this kind of personal and professional growth, along with my struggles, and some of the moments that made it all worthwhile.\n\nFor non-native speakers: this video is not just about learning a second language, it's about breaking barriers and redefining your future!\n\n⏰ TIMESTAMPS\n\n00:00 – Intro\n02:22– Why English Is Important \n03:57– The Rise of English as The Language of Science\n07:28 – Deciding to Learn English (my story)\n12:31 – The IELTS Test\n16:13 – Open Opportunities Through English\n19:12 – 3 Ways to Improve Your English\n22:56 – Final Thoughts\n\n📺 RELATED VIDEOS\n\n→ https://youtu.be/N7pY8VAt6g4\n\n→ https://youtu.be/ZpILR21GWao\n\n🌍 RELATED CONTENT\n\n→ My blog post \"How I Beat the IELTS Academic With Just a Month of Self-Training\" https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html\n\n→ The Nature journal article \"A century of science boycotts\" https://www.nature.com/articles/d41586-022-01475-8\n\nWHO AM I?\n\nHi 👋 I’m César, a computer scientist and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#learningenglish #nonativespeakers #phdlife #academicjourney #IELTStips"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nI  came from living in a small town in Cuba, where access to the most basic human needs was severely limited. One day, I took the challenge of teaching myself English and signed up for the IELTS test. Ten years later, I live in one of Europe’s most developed cities, where I pursued an academic career that was once totally beyond my imagination. In this video, I share my personal journey, how learning English led me to this kind of personal and professional growth, along with my struggles, and some of the moments that made it all worthwhile.\n\nFor non-native speakers: this video is not just about learning a second language, it's about breaking barriers and redefining your future!\n\n⏰ TIMESTAMPS\n00:00 – Intro\n02:22– Why English Is Important \n03:57– The Rise of English as The Language of Science\n07:28 – Deciding to Learn English (my story)\n12:31 – The IELTS Test\n16:13 – Open Opportunities Through English\n19:12 – 3 Ways to Improve Your English\n22:56 – Final Thoughts\n\n📺 RELATED VIDEOS\n→ https://youtu.be/N7pY8VAt6g4\n→ https://youtu.be/ZpILR21GWao\n\n🌍 RELATED CONTENT\n→ My blog post \"How I Beat the IELTS Academic With Just a Month of Self-Training\" https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html\n→ The Nature journal article \"A century of science boycotts\" https://www.nature.com/articles/d41586-022-01475-8\n\nWHO AM I?\nHi 👋 I’m César, a computer scientist and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#learningenglish #nonativespeakers #phdlife #academicjourney #IELTStips"
       },
       "defaultAudioLanguage": "en"
     },
@@ -1120,13 +1208,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "AmQ8TX7qQ1z8m0FXV28_KUBru5E",
+    "etag": "GKpi19meXuF7jI-GejslJp4taus",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Learning Software Development Is Not a Sprint: Top Performers Are Built Over Time",
-      "description": "So many books and courses promise that you can become a master of Java, C++, or Python in just a few days. But the truth is, becoming a proficient developer takes time, deliberate practice, and patience. This video debunks the myth of learning software development quickly. We will explore why rushing to learn software development can set you up for failure and why true expertise takes a long time to gain.\n\n⏰ TIMESTAMPS\n\n00:00 - Introduction\n02:10 - The rush to learn software development\n04:53 - Can we learn to code in a day?\n04:34 - The myth of instant expertise\n11:56 - Why deliberate practice matters \n14:56 - Learning from other developers\n17:35 - Long-term learning approach\n19:01 - Takeaways\n\n📺 WATCH NEXT\n\n→ \"Building & Upgrading a Killer Tech RÉSUMÉ\" 🔗https://youtu.be/-EYVzXoq15o?si=PtRIuB78ZDc5w9fo\n\n💡 RELATED CONTENT\n\n→ \"Teach Yourself Programming in Ten Years\" by Peter Norvig 🔗http://norvig.com/21-days.html\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nSo many books and courses promise that you can become a master of Java, C++, or Python in just a few days. But the truth is, becoming a proficient developer takes time, deliberate practice, and patience. This video debunks the myth of learning software development quickly. We will explore why rushing to learn software development can set you up for failure and why true expertise takes a long time to gain.\n\n⏰ TIMESTAMPS\n00:00 - Introduction\n02:10 - The rush to learn software development\n04:53 - Can we learn to code in a day?\n04:34 - The myth of instant expertise\n11:56 - Why deliberate practice matters \n14:56 - Learning from other developers\n17:35 - Long-term learning approach\n19:01 - Takeaways\n\n📺 WATCH NEXT\n→ \"Building & Upgrading a Killer Tech RÉSUMÉ\" 🔗https://youtu.be/-EYVzXoq15o?si=PtRIuB78ZDc5w9fo\n\n💡 RELATED CONTENT\n→ \"Teach Yourself Programming in Ten Years\" by Peter Norvig 🔗http://norvig.com/21-days.html\n\n🙂 WHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/y0mztKEUwzw/default.jpg",
@@ -1178,7 +1266,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Learning Software Development Is Not a Sprint: Top Performers Are Built Over Time",
-        "description": "So many books and courses promise that you can become a master of Java, C++, or Python in just a few days. But the truth is, becoming a proficient developer takes time, deliberate practice, and patience. This video debunks the myth of learning software development quickly. We will explore why rushing to learn software development can set you up for failure and why true expertise takes a long time to gain.\n\n⏰ TIMESTAMPS\n\n00:00 - Introduction\n02:10 - The rush to learn software development\n04:53 - Can we learn to code in a day?\n04:34 - The myth of instant expertise\n11:56 - Why deliberate practice matters \n14:56 - Learning from other developers\n17:35 - Long-term learning approach\n19:01 - Takeaways\n\n📺 WATCH NEXT\n\n→ \"Building & Upgrading a Killer Tech RÉSUMÉ\" 🔗https://youtu.be/-EYVzXoq15o?si=PtRIuB78ZDc5w9fo\n\n💡 RELATED CONTENT\n\n→ \"Teach Yourself Programming in Ten Years\" by Peter Norvig 🔗http://norvig.com/21-days.html\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nSo many books and courses promise that you can become a master of Java, C++, or Python in just a few days. But the truth is, becoming a proficient developer takes time, deliberate practice, and patience. This video debunks the myth of learning software development quickly. We will explore why rushing to learn software development can set you up for failure and why true expertise takes a long time to gain.\n\n⏰ TIMESTAMPS\n00:00 - Introduction\n02:10 - The rush to learn software development\n04:53 - Can we learn to code in a day?\n04:34 - The myth of instant expertise\n11:56 - Why deliberate practice matters \n14:56 - Learning from other developers\n17:35 - Long-term learning approach\n19:01 - Takeaways\n\n📺 WATCH NEXT\n→ \"Building & Upgrading a Killer Tech RÉSUMÉ\" 🔗https://youtu.be/-EYVzXoq15o?si=PtRIuB78ZDc5w9fo\n\n💡 RELATED CONTENT\n→ \"Teach Yourself Programming in Ten Years\" by Peter Norvig 🔗http://norvig.com/21-days.html\n\n🙂 WHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero"
       },
       "defaultAudioLanguage": "en"
     },
@@ -1200,13 +1288,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "fqB3CCPgWhBEuSoQgBf8z3F57eE",
+    "etag": "HH0hqDqYjXV2UlhfGROgZGd_FYc",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Your Résumé Is Your Career Inventory",
-      "description": "Want to learn the secrets to crafting a standout résumé that can secure your dream job in tech? Then you may want to learn from my mistakes. Whether you’re just entering the job market or looking to level up, this video breaks down the purpose of a computer scientist résumé, the common pitfalls job applicants usually make, and how to avoid them. Discover (or recap) how to structure your résumé for success, highlight your unique skills, and avoid the red flags that could cost you a dream job offer.\n\nIn case you wonder, here's my own résumé 🔗 https://www.cesarsotovalero.net/files/CV/cv.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:54 Résumés and RPG games\n03:14 Targeting\n08:15 Structuring \n11:57 Skills\n14:15 Personal qualities\n15:29 Seven sins to avoid\n18:06 The future of résumés\n\n💡 RELATED CONTENT\n\n➤ My blog post titled \"Building and Leveling Up a Computer Scientist Résumé\" 🔗 https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html\n\n➤ The article \"The resume that got a software engineer a $300,000 job at Google\" 🔗 https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f\n\n➤ The blog post \"Pimp Up Your Resume\" 🔗 https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nWant to learn the secrets to crafting a standout résumé that can secure your dream job in tech? Then you may want to learn from my mistakes. Whether you’re just entering the job market or looking to level up, this video breaks down the purpose of a computer scientist résumé, the common pitfalls job applicants usually make, and how to avoid them. Discover (or recap) how to structure your résumé for success, highlight your unique skills, and avoid the red flags that could cost you a dream job offer.\n\nIn case you wonder, here's my own résumé 🔗 https://www.cesarsotovalero.net/files/CV/cv.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:54 Résumés and RPG games\n03:14 Targeting\n08:15 Structuring \n11:57 Skills\n14:15 Personal qualities\n15:29 Seven sins to avoid\n18:06 The future of résumés\n\n💡 RELATED CONTENT\n➤ My blog post titled \"Building and Leveling Up a Computer Scientist Résumé\" 🔗 https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html\n➤ The article \"The resume that got a software engineer a $300,000 job at Google\" 🔗 https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f\n➤ The blog post \"Pimp Up Your Resume\" 🔗 https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/-EYVzXoq15o/default.jpg",
@@ -1253,7 +1341,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Your Résumé Is Your Career Inventory",
-        "description": "Want to learn the secrets to crafting a standout résumé that can secure your dream job in tech? Then you may want to learn from my mistakes. Whether you’re just entering the job market or looking to level up, this video breaks down the purpose of a computer scientist résumé, the common pitfalls job applicants usually make, and how to avoid them. Discover (or recap) how to structure your résumé for success, highlight your unique skills, and avoid the red flags that could cost you a dream job offer.\n\nIn case you wonder, here's my own résumé 🔗 https://www.cesarsotovalero.net/files/CV/cv.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:54 Résumés and RPG games\n03:14 Targeting\n08:15 Structuring \n11:57 Skills\n14:15 Personal qualities\n15:29 Seven sins to avoid\n18:06 The future of résumés\n\n💡 RELATED CONTENT\n\n➤ My blog post titled \"Building and Leveling Up a Computer Scientist Résumé\" 🔗 https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html\n\n➤ The article \"The resume that got a software engineer a $300,000 job at Google\" 🔗 https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f\n\n➤ The blog post \"Pimp Up Your Resume\" 🔗 https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nWant to learn the secrets to crafting a standout résumé that can secure your dream job in tech? Then you may want to learn from my mistakes. Whether you’re just entering the job market or looking to level up, this video breaks down the purpose of a computer scientist résumé, the common pitfalls job applicants usually make, and how to avoid them. Discover (or recap) how to structure your résumé for success, highlight your unique skills, and avoid the red flags that could cost you a dream job offer.\n\nIn case you wonder, here's my own résumé 🔗 https://www.cesarsotovalero.net/files/CV/cv.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:54 Résumés and RPG games\n03:14 Targeting\n08:15 Structuring \n11:57 Skills\n14:15 Personal qualities\n15:29 Seven sins to avoid\n18:06 The future of résumés\n\n💡 RELATED CONTENT\n➤ My blog post titled \"Building and Leveling Up a Computer Scientist Résumé\" 🔗 https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html\n➤ The article \"The resume that got a software engineer a $300,000 job at Google\" 🔗 https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f\n➤ The blog post \"Pimp Up Your Resume\" 🔗 https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html"
       },
       "defaultAudioLanguage": "en"
     },
@@ -1275,13 +1363,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "cL3Knfi8DyrnPy5c8gQIRdOC3lk",
+    "etag": "602tIZ7VNv8aX_Rbi-0fd8-TT9M",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Cargo Cult in Computer Science: An Uncomfortable Truth for Researchers",
-      "description": "Have you ever heard about the reproducibility crisis in computer science research? In this video, we dive into Richard Feynman’s famous commencement speech about \"Cargo Cult Science\" and how it still impacts modern research. We’ll cover the traps of poor science, pseudoscience, and the academic pressures that lead researchers astray. You’ll learn how to make your research more rigorous, transparent, and reproducible while avoiding the common pitfalls that have plagued the scientific community for decades.\n\n⏰ TIMESTAMPS\n\n00:00 Introduction\n01:38 The Origins of Cargo Cult Science\n03:18 The Pseudoscience Take Over  \n05:47 The Current Reproducibility Crisis\n07:31 The Academic Trap\n09:09 The Seek of Scientific Rigor\n10:52 The Finding of Hope: Feynman’s Message\n\n📺 WATCH NEXT\n\nhttps://youtu.be/k31h3hoV-Us\n\nhttps://youtu.be/-3txwKTHe4Y\n\n💡 RELATED CONTENT\n\n🔗 My blog post titled \"The Not-So-Strange Case of Cargo Cult in Computer Science Research\" → https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html\n\n🔗 Feynman’s commencement speech → http://calteches.library.caltech.edu/51/2/CargoCult.pdf\n\n🔗 “Repeat, Reproduce, Replicate,” in ACM Queue → https://queue.acm.org/detail.cfm?id=3674499\n\n🔗 The mentioned article from 2014 “Measuring Reproducibility in Computer Systems Research” → https://cs.brown.edu/~sk/Memos/Examining-Reproducibility/measuring-tr.pdf\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#CargoCultScience #ReproducibilityCrisis #ComputerScienceResearch #Pseudoscience #ResearchBestPractices #EthicalResearch",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nHave you ever heard about the reproducibility crisis in computer science research? In this video, we dive into Richard Feynman’s famous commencement speech about \"Cargo Cult Science\" and how it still impacts modern research. We’ll cover the traps of poor science, pseudoscience, and the academic pressures that lead researchers astray. You’ll learn how to make your research more rigorous, transparent, and reproducible while avoiding the common pitfalls that have plagued the scientific community for decades.\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:38 The Origins of Cargo Cult Science\n03:18 The Pseudoscience Take Over  \n05:47 The Current Reproducibility Crisis\n07:31 The Academic Trap\n09:09 The Seek of Scientific Rigor\n10:52 The Finding of Hope: Feynman’s Message\n\n📺 WATCH NEXT\nhttps://youtu.be/k31h3hoV-Us\nhttps://youtu.be/-3txwKTHe4Y\n\n💡 RELATED CONTENT\n🔗 My blog post titled \"The Not-So-Strange Case of Cargo Cult in Computer Science Research\" → https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html\n🔗 Feynman’s commencement speech → http://calteches.library.caltech.edu/51/2/CargoCult.pdf\n🔗 “Repeat, Reproduce, Replicate,” in ACM Queue → https://queue.acm.org/detail.cfm?id=3674499\n🔗 The mentioned article from 2014 “Measuring Reproducibility in Computer Systems Research” → https://cs.brown.edu/~sk/Memos/Examining-Reproducibility/measuring-tr.pdf\n\n🙂 WHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#CargoCultScience #ReproducibilityCrisis #ComputerScienceResearch #Pseudoscience #ResearchBestPractices #EthicalResearch",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/N7pY8VAt6g4/default.jpg",
@@ -1322,7 +1410,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Cargo Cult in Computer Science: An Uncomfortable Truth for Researchers",
-        "description": "Have you ever heard about the reproducibility crisis in computer science research? In this video, we dive into Richard Feynman’s famous commencement speech about \"Cargo Cult Science\" and how it still impacts modern research. We’ll cover the traps of poor science, pseudoscience, and the academic pressures that lead researchers astray. You’ll learn how to make your research more rigorous, transparent, and reproducible while avoiding the common pitfalls that have plagued the scientific community for decades.\n\n⏰ TIMESTAMPS\n\n00:00 Introduction\n01:38 The Origins of Cargo Cult Science\n03:18 The Pseudoscience Take Over  \n05:47 The Current Reproducibility Crisis\n07:31 The Academic Trap\n09:09 The Seek of Scientific Rigor\n10:52 The Finding of Hope: Feynman’s Message\n\n📺 WATCH NEXT\n\nhttps://youtu.be/k31h3hoV-Us\n\nhttps://youtu.be/-3txwKTHe4Y\n\n💡 RELATED CONTENT\n\n🔗 My blog post titled \"The Not-So-Strange Case of Cargo Cult in Computer Science Research\" → https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html\n\n🔗 Feynman’s commencement speech → http://calteches.library.caltech.edu/51/2/CargoCult.pdf\n\n🔗 “Repeat, Reproduce, Replicate,” in ACM Queue → https://queue.acm.org/detail.cfm?id=3674499\n\n🔗 The mentioned article from 2014 “Measuring Reproducibility in Computer Systems Research” → https://cs.brown.edu/~sk/Memos/Examining-Reproducibility/measuring-tr.pdf\n\n🙂 WHO AM I?\n\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#CargoCultScience #ReproducibilityCrisis #ComputerScienceResearch #Pseudoscience #ResearchBestPractices #EthicalResearch"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nHave you ever heard about the reproducibility crisis in computer science research? In this video, we dive into Richard Feynman’s famous commencement speech about \"Cargo Cult Science\" and how it still impacts modern research. We’ll cover the traps of poor science, pseudoscience, and the academic pressures that lead researchers astray. You’ll learn how to make your research more rigorous, transparent, and reproducible while avoiding the common pitfalls that have plagued the scientific community for decades.\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:38 The Origins of Cargo Cult Science\n03:18 The Pseudoscience Take Over  \n05:47 The Current Reproducibility Crisis\n07:31 The Academic Trap\n09:09 The Seek of Scientific Rigor\n10:52 The Finding of Hope: Feynman’s Message\n\n📺 WATCH NEXT\nhttps://youtu.be/k31h3hoV-Us\nhttps://youtu.be/-3txwKTHe4Y\n\n💡 RELATED CONTENT\n🔗 My blog post titled \"The Not-So-Strange Case of Cargo Cult in Computer Science Research\" → https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html\n🔗 Feynman’s commencement speech → http://calteches.library.caltech.edu/51/2/CargoCult.pdf\n🔗 “Repeat, Reproduce, Replicate,” in ACM Queue → https://queue.acm.org/detail.cfm?id=3674499\n🔗 The mentioned article from 2014 “Measuring Reproducibility in Computer Systems Research” → https://cs.brown.edu/~sk/Memos/Examining-Reproducibility/measuring-tr.pdf\n\n🙂 WHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#CargoCultScience #ReproducibilityCrisis #ComputerScienceResearch #Pseudoscience #ResearchBestPractices #EthicalResearch"
       },
       "defaultAudioLanguage": "en"
     },
@@ -1336,7 +1424,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12843",
+      "viewCount": "12845",
       "likeCount": "645",
       "favoriteCount": "0",
       "commentCount": "296"
@@ -1344,13 +1432,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KfR8X50r8Cjvtgrk31eewtrSaas",
+    "etag": "3KIWDIipxRGzyUvY0ojIyw6Bsks",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "The Silent Crisis of Software Bloat",
-      "description": "Software powers every aspect of our lives, from the apps on our phones to the complex systems running modern enterprises. But behind every screen, there's a growing problem. In this video, I dive deep into the causes, consequences, and possible solutions of software bloat. I'll dive into why modern software has ballooned to millions of lines of code, far surpassing the simplicity of early computing. As I reflect on my PhD research on this topic, we’ll uncover how software reuse, dependencies, and hardware evolution have led to the current situation. I’ll also share key insights from computer scientists like Niklaus Wirth, whose work from decades ago predicted much of what we see today.\n\n⏰ TIMESTAMPS\n\n00:00 - Intro\n00:25 - The problem of software bloat\n02:01 - The origins of software bloat\n03:44 - The causes of software bloat\n07:00 - Example of software bloat\n09:10 - The cost of software bloat\n10:50 - The legacy of Niklaus Wirth\n12:45 - Solutions and the path forward\n15:50 - A hopeful future?\n\n📺 WATCH NEXT\n\n■ \"Debloating Java Dependencies\" my PhD thesis defense about this topic 🔗https://youtu.be/Ub684G_aM5Q?si=QK7r-00QDwl4zLXc\n\n■ \"The Mess We're In\" by Joe Armstrong 🔗https://youtu.be/lKXe3HUG2l4\n\n■ \"Software Is Not Art Anymore\" by Dylan Beattie 🔗https://youtu.be/VA1eIVVsVhY?si=ra4k08IYdMGctSKP\n\n💡 RELATED CONTENT\n\n■  My blog post titled \"Why Debloating Third-Party Software?\" 🔗https://www.cesarsotovalero.net/blog/why-debloating-third-party-software.html\n\n■ The original article \"A Plea for Lean Software\" 🔗https://doi.ieeecomputersociety.org/10.1109/2.348001\n\n■ Related article \"Why Bloat Is Still Software’s Biggest Vulnerability\" 🔗https://spectrum.ieee.org/lean-software-development\n\n■ My curated list of papers about software bloat and software debloating: 🔗https://www.cesarsotovalero.net/software-debloating-papers.html\n\n🙂 WHO AM I?\n\nI’m César, a computer scientist, s oftware engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a grounded computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#softwarebloat #softwaredevelopment  #techexplained  #cleancode  #cybersecurity",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nSoftware powers every aspect of our lives, from the apps on our phones to the complex systems running modern enterprises. But behind every screen, there's a growing problem. In this video, I dive deep into the causes, consequences, and possible solutions of software bloat. I'll dive into why modern software has ballooned to millions of lines of code, far surpassing the simplicity of early computing. As I reflect on my PhD research on this topic, we’ll uncover how software reuse, dependencies, and hardware evolution have led to the current situation. I’ll also share key insights from computer scientists like Niklaus Wirth, whose work from decades ago predicted much of what we see today.\n\n⏰ TIMESTAMPS\n00:00 - Intro\n00:25 - The problem of software bloat\n02:01 - The origins of software bloat\n03:44 - The causes of software bloat\n07:00 - Example of software bloat\n09:10 - The cost of software bloat\n10:50 - The legacy of Niklaus Wirth\n12:45 - Solutions and the path forward\n15:50 - A hopeful future?\n\n📺 WATCH NEXT\n■ \"Debloating Java Dependencies,\" my PhD thesis defense about this topic 🔗https://youtu.be/Ub684G_aM5Q?si=QK7r-00QDwl4zLXc\n■ \"The Mess We're In\" by Joe Armstrong 🔗https://youtu.be/lKXe3HUG2l4\n■ \"Software Is Not Art Anymore\" by Dylan Beattie 🔗https://youtu.be/VA1eIVVsVhY?si=ra4k08IYdMGctSKP\n\n💡 RELATED CONTENT\n■  My blog post titled \"Why Debloating Third-Party Software?\" 🔗https://www.cesarsotovalero.net/blog/why-debloating-third-party-software.html\n■ The original article \"A Plea for Lean Software\" 🔗https://doi.ieeecomputersociety.org/10.1109/2.348001\n■ Related article \"Why Bloat Is Still Software’s Biggest Vulnerability\" 🔗https://spectrum.ieee.org/lean-software-development\n■ My curated list of papers about software bloat and software debloating: 🔗https://www.cesarsotovalero.net/software-debloating-papers.html\n\n#softwarebloat #softwaredevelopment  #techexplained  #cleancode  #cybersecurity",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/DqL3-bnSCy0/default.jpg",
@@ -1392,7 +1480,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "The Silent Crisis of Software Bloat",
-        "description": "Software powers every aspect of our lives, from the apps on our phones to the complex systems running modern enterprises. But behind every screen, there's a growing problem. In this video, I dive deep into the causes, consequences, and possible solutions of software bloat. I'll dive into why modern software has ballooned to millions of lines of code, far surpassing the simplicity of early computing. As I reflect on my PhD research on this topic, we’ll uncover how software reuse, dependencies, and hardware evolution have led to the current situation. I’ll also share key insights from computer scientists like Niklaus Wirth, whose work from decades ago predicted much of what we see today.\n\n⏰ TIMESTAMPS\n\n00:00 - Intro\n00:25 - The problem of software bloat\n02:01 - The origins of software bloat\n03:44 - The causes of software bloat\n07:00 - Example of software bloat\n09:10 - The cost of software bloat\n10:50 - The legacy of Niklaus Wirth\n12:45 - Solutions and the path forward\n15:50 - A hopeful future?\n\n📺 WATCH NEXT\n\n■ \"Debloating Java Dependencies\" my PhD thesis defense about this topic 🔗https://youtu.be/Ub684G_aM5Q?si=QK7r-00QDwl4zLXc\n\n■ \"The Mess We're In\" by Joe Armstrong 🔗https://youtu.be/lKXe3HUG2l4\n\n■ \"Software Is Not Art Anymore\" by Dylan Beattie 🔗https://youtu.be/VA1eIVVsVhY?si=ra4k08IYdMGctSKP\n\n💡 RELATED CONTENT\n\n■  My blog post titled \"Why Debloating Third-Party Software?\" 🔗https://www.cesarsotovalero.net/blog/why-debloating-third-party-software.html\n\n■ The original article \"A Plea for Lean Software\" 🔗https://doi.ieeecomputersociety.org/10.1109/2.348001\n\n■ Related article \"Why Bloat Is Still Software’s Biggest Vulnerability\" 🔗https://spectrum.ieee.org/lean-software-development\n\n■ My curated list of papers about software bloat and software debloating: 🔗https://www.cesarsotovalero.net/software-debloating-papers.html\n\n🙂 WHO AM I?\n\nI’m César, a computer scientist, s oftware engineer, and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a grounded computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#softwarebloat #softwaredevelopment  #techexplained  #cleancode  #cybersecurity"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nSoftware powers every aspect of our lives, from the apps on our phones to the complex systems running modern enterprises. But behind every screen, there's a growing problem. In this video, I dive deep into the causes, consequences, and possible solutions of software bloat. I'll dive into why modern software has ballooned to millions of lines of code, far surpassing the simplicity of early computing. As I reflect on my PhD research on this topic, we’ll uncover how software reuse, dependencies, and hardware evolution have led to the current situation. I’ll also share key insights from computer scientists like Niklaus Wirth, whose work from decades ago predicted much of what we see today.\n\n⏰ TIMESTAMPS\n00:00 - Intro\n00:25 - The problem of software bloat\n02:01 - The origins of software bloat\n03:44 - The causes of software bloat\n07:00 - Example of software bloat\n09:10 - The cost of software bloat\n10:50 - The legacy of Niklaus Wirth\n12:45 - Solutions and the path forward\n15:50 - A hopeful future?\n\n📺 WATCH NEXT\n■ \"Debloating Java Dependencies,\" my PhD thesis defense about this topic 🔗https://youtu.be/Ub684G_aM5Q?si=QK7r-00QDwl4zLXc\n■ \"The Mess We're In\" by Joe Armstrong 🔗https://youtu.be/lKXe3HUG2l4\n■ \"Software Is Not Art Anymore\" by Dylan Beattie 🔗https://youtu.be/VA1eIVVsVhY?si=ra4k08IYdMGctSKP\n\n💡 RELATED CONTENT\n■  My blog post titled \"Why Debloating Third-Party Software?\" 🔗https://www.cesarsotovalero.net/blog/why-debloating-third-party-software.html\n■ The original article \"A Plea for Lean Software\" 🔗https://doi.ieeecomputersociety.org/10.1109/2.348001\n■ Related article \"Why Bloat Is Still Software’s Biggest Vulnerability\" 🔗https://spectrum.ieee.org/lean-software-development\n■ My curated list of papers about software bloat and software debloating: 🔗https://www.cesarsotovalero.net/software-debloating-papers.html\n\n#softwarebloat #softwaredevelopment  #techexplained  #cleancode  #cybersecurity"
       },
       "defaultAudioLanguage": "en"
     },
@@ -1406,21 +1494,21 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "805",
-      "likeCount": "54",
+      "viewCount": "825",
+      "likeCount": "56",
       "favoriteCount": "0",
-      "commentCount": "26"
+      "commentCount": "29"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "1Rtu9s8N2kqHhY1K5lwxbHnwHEM",
+    "etag": "AD5aHkzxlGTf4sXw-MBeBlnHniY",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "How to Peer-Review Research Papers Like an “Expert”",
-      "description": "During the last years, I’ve peer-reviewed more than 10 research papers submitted to top journals and conferences. As a PhD student, I’ve also played on the other side of the fence, submitting my own papers to similar venues and getting all kinds of positive and negative peer reviews in response. In this video, I share my personal approach to delivering efficient and effective peer reviews. Whether you're new to peer reviewing or looking to refine your process, this video covers practical strategies that can help you evaluate research papers with confidence and clarity.\n\n00:00 - Introduction\n01:31 - Understanding Peer-Review\n04:15 - Receiving an Invitation to Peer-Review\n05:25 - Quick Peer-Review\n08:11 - Detailed Peer-Review\n09:50 - Good vs. Bad Peer-Reviews\n11:47 - Peer-Reviewing Template\n12:31 - Importance of Effective Peer-Reviewing \n\nEXTERNAL RESOURCES\n\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html\n\n🎈 Here's the peer-review template that I use: https://tinyurl.com/46kxnjha\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#PeerReview #ResearchPapers #Academia",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nDuring the last few years, I’ve peer-reviewed more than 10 research papers submitted to top journals and conferences. As a PhD student, I’ve also played on the other side of the fence, submitting my own papers to similar venues and getting all kinds of positive and negative peer reviews in response. In this video, I share my personal approach to delivering efficient and effective peer reviews. Whether you're new to peer reviewing or looking to refine your process, this video covers practical strategies that can help you evaluate research papers with confidence and clarity.\n\n00:00 - Introduction\n01:31 - Understanding Peer-Review\n04:15 - Receiving an Invitation to Peer-Review\n05:25 - Quick Peer-Review\n08:11 - Detailed Peer-Review\n09:50 - Good vs. Bad Peer-Reviews\n11:47 - Peer-Reviewing Template\n12:31 - Importance of Effective Peer-Reviewing \n\nEXTERNAL RESOURCES\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html\n🎈 Here's the peer-review template that I use: https://tinyurl.com/46kxnjha\n\n#peerreviewed  #researchpapers  #academia",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/k31h3hoV-Us/default.jpg",
@@ -1454,7 +1542,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "How to Peer-Review Research Papers Like an “Expert”",
-        "description": "During the last years, I’ve peer-reviewed more than 10 research papers submitted to top journals and conferences. As a PhD student, I’ve also played on the other side of the fence, submitting my own papers to similar venues and getting all kinds of positive and negative peer reviews in response. In this video, I share my personal approach to delivering efficient and effective peer reviews. Whether you're new to peer reviewing or looking to refine your process, this video covers practical strategies that can help you evaluate research papers with confidence and clarity.\n\n00:00 - Introduction\n01:31 - Understanding Peer-Review\n04:15 - Receiving an Invitation to Peer-Review\n05:25 - Quick Peer-Review\n08:11 - Detailed Peer-Review\n09:50 - Good vs. Bad Peer-Reviews\n11:47 - Peer-Reviewing Template\n12:31 - Importance of Effective Peer-Reviewing \n\nEXTERNAL RESOURCES\n\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html\n\n🎈 Here's the peer-review template that I use: https://tinyurl.com/46kxnjha\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#PeerReview #ResearchPapers #Academia"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nDuring the last few years, I’ve peer-reviewed more than 10 research papers submitted to top journals and conferences. As a PhD student, I’ve also played on the other side of the fence, submitting my own papers to similar venues and getting all kinds of positive and negative peer reviews in response. In this video, I share my personal approach to delivering efficient and effective peer reviews. Whether you're new to peer reviewing or looking to refine your process, this video covers practical strategies that can help you evaluate research papers with confidence and clarity.\n\n00:00 - Introduction\n01:31 - Understanding Peer-Review\n04:15 - Receiving an Invitation to Peer-Review\n05:25 - Quick Peer-Review\n08:11 - Detailed Peer-Review\n09:50 - Good vs. Bad Peer-Reviews\n11:47 - Peer-Reviewing Template\n12:31 - Importance of Effective Peer-Reviewing \n\nEXTERNAL RESOURCES\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html\n🎈 Here's the peer-review template that I use: https://tinyurl.com/46kxnjha\n\n#peerreviewed  #researchpapers  #academia"
       },
       "defaultAudioLanguage": "en"
     },
@@ -1468,7 +1556,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "129",
+      "viewCount": "135",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1476,13 +1564,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6eNcNZHqROTeKoyxZ7aUssHBEYc",
+    "etag": "X52Yj1vbt_E6nS56ZKBNTO8oCnA",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Revisiting Ken Thompson’s Turing Award Lecture “Reflections on Trusting Trust”",
-      "description": "Dive into the groundbreaking Turing Award lecture titled \"Reflections on Trusting Trust,\" where Ken Thompson presented one of the most chilling and famous ideas in cybersecurity history. Thompson demonstrated how a compiler could be modified to recognize its own code and reinsert a backdoor into its new versions. This kind of backdoor (a.k.a trojan horse compiler) is practically undetectable since it no longer appears in the source code.\n\nKey Takeaway: \"You cannot trust code that you did not create entirely yourself.\"\n\n00:00 - The problem of software trust\n00:54 - Thompson's famous claim\n01:51 - Historical context\n02:45 - Core idea behind this backdoor attack\n04:22 - Self-replicating code (a.k.a. quine)\n07:10 - Implications for cybersecurity \n08:45 - Supply chain attacks\n09:46 - Deeper questions\n10:54 - Echoes today\n\nRELATED RESOURCES\n\n🎈 Here's the original paper from 1984, \"Reflections on Trusting Trust\": https://doi.org/10.1145/358198.358210\n\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#Cybersecurity #KenThompson #TrustingTrust",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nDive into the groundbreaking Turing Award lecture titled \"Reflections on Trusting Trust,\" where Ken Thompson presented one of the most chilling and famous ideas in cybersecurity history. Thompson demonstrated how a compiler could be modified to recognize its own code and reinsert a backdoor into its new versions. This kind of backdoor (a.k.a trojan horse compiler) is practically undetectable since it no longer appears in the source code.\n\nKey Takeaway: \"You cannot trust code that you did not create yourself.\"\n\n00:00 - The problem of software trust\n00:54 - Thompson's famous claim\n01:51 - Historical context\n02:45 - Core idea behind this backdoor attack\n04:22 - Self-replicating code (a.k.a. quine)\n07:10 - Implications for cybersecurity \n08:45 - Supply chain attacks\n09:46 - Deeper questions\n10:54 - Echoes today\n\nRELATED RESOURCES\n🎈 Here's the original paper from 1984, \"Reflections on Trusting Trust\": https://doi.org/10.1145/358198.358210\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html\n\n#cybersecurity  #KenThompson #TrustingTrust",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/jdnWhkgA_rM/default.jpg",
@@ -1516,7 +1604,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Revisiting Ken Thompson’s Turing Award Lecture “Reflections on Trusting Trust”",
-        "description": "Dive into the groundbreaking Turing Award lecture titled \"Reflections on Trusting Trust,\" where Ken Thompson presented one of the most chilling and famous ideas in cybersecurity history. Thompson demonstrated how a compiler could be modified to recognize its own code and reinsert a backdoor into its new versions. This kind of backdoor (a.k.a trojan horse compiler) is practically undetectable since it no longer appears in the source code.\n\nKey Takeaway: \"You cannot trust code that you did not create entirely yourself.\"\n\n00:00 - The problem of software trust\n00:54 - Thompson's famous claim\n01:51 - Historical context\n02:45 - Core idea behind this backdoor attack\n04:22 - Self-replicating code (a.k.a. quine)\n07:10 - Implications for cybersecurity \n08:45 - Supply chain attacks\n09:46 - Deeper questions\n10:54 - Echoes today\n\nRELATED RESOURCES\n\n🎈 Here's the original paper from 1984, \"Reflections on Trusting Trust\": https://doi.org/10.1145/358198.358210\n\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#Cybersecurity #KenThompson #TrustingTrust"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nDive into the groundbreaking Turing Award lecture titled \"Reflections on Trusting Trust,\" where Ken Thompson presented one of the most chilling and famous ideas in cybersecurity history. Thompson demonstrated how a compiler could be modified to recognize its own code and reinsert a backdoor into its new versions. This kind of backdoor (a.k.a trojan horse compiler) is practically undetectable since it no longer appears in the source code.\n\nKey Takeaway: \"You cannot trust code that you did not create yourself.\"\n\n00:00 - The problem of software trust\n00:54 - Thompson's famous claim\n01:51 - Historical context\n02:45 - Core idea behind this backdoor attack\n04:22 - Self-replicating code (a.k.a. quine)\n07:10 - Implications for cybersecurity \n08:45 - Supply chain attacks\n09:46 - Deeper questions\n10:54 - Echoes today\n\nRELATED RESOURCES\n🎈 Here's the original paper from 1984, \"Reflections on Trusting Trust\": https://doi.org/10.1145/358198.358210\n🎈 I wrote a blog post where you can read more about this topic: https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html\n\n#cybersecurity  #KenThompson #TrustingTrust"
       },
       "defaultAudioLanguage": "en"
     },
@@ -1530,7 +1618,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "779",
+      "viewCount": "801",
       "likeCount": "32",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1538,13 +1626,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Rdffx6_Jdc3G8uaeJPa1pAqrBrs",
+    "etag": "gbYlFh59ok30PiHgE39U1FR_6ho",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "The Last Paper’s Myth: PhD Student Expectations vs. Reality at the End of a PhD",
-      "description": "Feeling pressures when finishing your PhD? In this video, I dive into what I call \"the last paper's myth,\" a common situation faced by PhD students in their final year. In this video, I share my experience when navigating the expectations and realities when completing my PhD. I give you actionable insights on how to maintain work-life balance and achieve success at the end of the PhD.\n\n00:00 - Writing your thesis?\n02:00 - Expectations\n02:30 - Realities\n05:12 - The push for one more paper\n05:40 - The impact of pressure on PhD students\n07:03 - A conflict of interests\n08:33 - Strategies to counter the pressure\n10:32 - Similar situation in the corporate world\n11:15 - Conclusion and takeaways\n\nRELEVANT RESOURCES\n\n🎈 I wrote a blog post about this topic, you can read it here: 🔗 https://www.cesarsotovalero.net/blog/the-last-paper-myth.html\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog  \n👨‍💻 My GitHub: https://github.com/cesarsotovalero  \n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero  \n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#PhDLife #AcademicPressure #ThesisWriting #GradSchool #AcademicResearch",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nFeeling pressure when finishing your PhD? In this video, I dive into what I call \"the last paper's myth,\" a common situation faced by PhD students in their final year. In this video, I share my experience when navigating the expectations and realities of completing my PhD. I give you actionable insights on how to maintain work-life balance and achieve success at the end of the PhD.\n\n00:00 - Writing your thesis?\n02:00 - Expectations\n02:30 - Realities\n05:12 - The push for one more paper\n05:40 - The impact of pressure on PhD students\n07:03 - A conflict of interests\n08:33 - Strategies to counter the pressure\n10:32 - Similar situation in the corporate world\n11:15 - Conclusion and takeaways\n\nRELEVANT RESOURCES\n🎈 I wrote a blog post about this topic, you can read it here: 🔗 https://www.cesarsotovalero.net/blog/the-last-paper-myth.html\n\n#PhDLife #AcademicPressure #ThesisWriting #GradSchool #AcademicResearch",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/-3txwKTHe4Y/default.jpg",
@@ -1585,7 +1673,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "The Last Paper’s Myth: PhD Student Expectations vs. Reality at the End of a PhD",
-        "description": "Feeling pressures when finishing your PhD? In this video, I dive into what I call \"the last paper's myth,\" a common situation faced by PhD students in their final year. In this video, I share my experience when navigating the expectations and realities when completing my PhD. I give you actionable insights on how to maintain work-life balance and achieve success at the end of the PhD.\n\n00:00 - Writing your thesis?\n02:00 - Expectations\n02:30 - Realities\n05:12 - The push for one more paper\n05:40 - The impact of pressure on PhD students\n07:03 - A conflict of interests\n08:33 - Strategies to counter the pressure\n10:32 - Similar situation in the corporate world\n11:15 - Conclusion and takeaways\n\nRELEVANT RESOURCES\n\n🎈 I wrote a blog post about this topic, you can read it here: 🔗 https://www.cesarsotovalero.net/blog/the-last-paper-myth.html\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog  \n👨‍💻 My GitHub: https://github.com/cesarsotovalero  \n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero  \n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#PhDLife #AcademicPressure #ThesisWriting #GradSchool #AcademicResearch"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nFeeling pressure when finishing your PhD? In this video, I dive into what I call \"the last paper's myth,\" a common situation faced by PhD students in their final year. In this video, I share my experience when navigating the expectations and realities of completing my PhD. I give you actionable insights on how to maintain work-life balance and achieve success at the end of the PhD.\n\n00:00 - Writing your thesis?\n02:00 - Expectations\n02:30 - Realities\n05:12 - The push for one more paper\n05:40 - The impact of pressure on PhD students\n07:03 - A conflict of interests\n08:33 - Strategies to counter the pressure\n10:32 - Similar situation in the corporate world\n11:15 - Conclusion and takeaways\n\nRELEVANT RESOURCES\n🎈 I wrote a blog post about this topic, you can read it here: 🔗 https://www.cesarsotovalero.net/blog/the-last-paper-myth.html\n\n#PhDLife #AcademicPressure #ThesisWriting #GradSchool #AcademicResearch"
       },
       "defaultAudioLanguage": "en"
     },
@@ -1599,7 +1687,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "423",
+      "viewCount": "424",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1607,13 +1695,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qp6jMJPUpC45GrVo2uG3fwHEG5U",
+    "etag": "qJGHd6rRjsy1eNh4lqPKWmByH8w",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "How to Overcome Writer's Block When Preparing a Research Paper",
-      "description": "Struggling with writer's block? As a PhD in Computer Science, I've been there too. In this video, I share my personal experiences and strategies that helped me to overcome writer's block when writing my research papers. \n\n00:00 - My struggling with writer's block\n01:38 - Structuring a research paper\n04:30 - Adding figures and results\n08:22 - Paraphrasing recurrent content\n11:10 - Refining and editing later\n12:35 - Either writing or doing nothing\n14:41 - Imagining the finished task\n17:40 - It's just a draft :)\n\nRELATED RESOURCES\n\n🎈 I wrote a companion blog post about this topic, you can read it here: 🔗 https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html\n\n🎈 I got interviewed by a journalist from Nature about this topic, you can read the article here: 🔗 https://www.nature.com/articles/d41586-024-02013-4\n\n🎈 I mentioned Simon Peyton Jones’ talk \"How to write a great research paper,\" here's the link: 🔗 https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#WritersBlock #PhDLife #AcademicWriting",
+      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nStruggling with writer's block? As a PhD in Computer Science, I've been there too. In this video, I share my personal experiences and strategies that helped me to overcome writer's block when writing my research papers. \n\n00:00 - My struggle with writer's block\n01:38 - Structuring a research paper\n04:30 - Adding figures and results\n08:22 - Paraphrasing recurrent content\n11:10 - Refining and editing later\n12:35 - Either writing or doing nothing\n14:41 - Imagining the finished task\n17:40 - It's just a draft :)\n\nRELATED RESOURCES\n🎈 I wrote a companion blog post about this topic. You can read it here: 🔗 https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html\n🎈 I got interviewed by a journalist from Nature about this topic, you can read the article here: 🔗 https://www.nature.com/articles/d41586-024-02013-4\n🎈 I mentioned Simon Peyton Jones’ talk \"How to write a great research paper,\" here's the link: 🔗 https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper\n\n#writersblock  #phdlife  #academicwriting",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/TrYB4D_1flA/default.jpg",
@@ -1652,7 +1740,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "How to Overcome Writer's Block When Preparing a Research Paper",
-        "description": "Struggling with writer's block? As a PhD in Computer Science, I've been there too. In this video, I share my personal experiences and strategies that helped me to overcome writer's block when writing my research papers. \n\n00:00 - My struggling with writer's block\n01:38 - Structuring a research paper\n04:30 - Adding figures and results\n08:22 - Paraphrasing recurrent content\n11:10 - Refining and editing later\n12:35 - Either writing or doing nothing\n14:41 - Imagining the finished task\n17:40 - It's just a draft :)\n\nRELATED RESOURCES\n\n🎈 I wrote a companion blog post about this topic, you can read it here: 🔗 https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html\n\n🎈 I got interviewed by a journalist from Nature about this topic, you can read the article here: 🔗 https://www.nature.com/articles/d41586-024-02013-4\n\n🎈 I mentioned Simon Peyton Jones’ talk \"How to write a great research paper,\" here's the link: 🔗 https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper\n\nWHO AM I?\n\nHi 👋 I’m César, a lifelong learner and educator. On this channel, I share my PhD experiences and provide science-based strategies and tools to help you become a better computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero\n\n#WritersBlock #PhDLife #AcademicWriting"
+        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nStruggling with writer's block? As a PhD in Computer Science, I've been there too. In this video, I share my personal experiences and strategies that helped me to overcome writer's block when writing my research papers. \n\n00:00 - My struggle with writer's block\n01:38 - Structuring a research paper\n04:30 - Adding figures and results\n08:22 - Paraphrasing recurrent content\n11:10 - Refining and editing later\n12:35 - Either writing or doing nothing\n14:41 - Imagining the finished task\n17:40 - It's just a draft :)\n\nRELATED RESOURCES\n🎈 I wrote a companion blog post about this topic. You can read it here: 🔗 https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html\n🎈 I got interviewed by a journalist from Nature about this topic, you can read the article here: 🔗 https://www.nature.com/articles/d41586-024-02013-4\n🎈 I mentioned Simon Peyton Jones’ talk \"How to write a great research paper,\" here's the link: 🔗 https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper\n\n#writersblock  #phdlife  #academicwriting"
       },
       "defaultAudioLanguage": "en"
     },
@@ -1666,15 +1754,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "140",
-      "likeCount": "10",
+      "viewCount": "143",
+      "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "4"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "7VBjQVf39FXQnwozCNjKB323dxI",
+    "etag": "pw5iLcn18AsIVYJCv1Exbsv05eU",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -1728,8 +1816,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "180",
-      "likeCount": "7",
+      "viewCount": "183",
+      "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "1"
     }
@@ -1935,7 +2023,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qnMu0cnlLgU0ofea7A3vToiD3KQ",
+    "etag": "0KvCKuQadtRoLVqUNeWozGi12uA",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -1994,7 +2082,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "213",
+      "viewCount": "214",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2137,7 +2225,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "luDXF6omKsJxPfUuWhprshWi7o0",
+    "etag": "6OEsKoWqRVg8Lg0y7MlAWdQc_7E",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -2197,7 +2285,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "281",
+      "viewCount": "284",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "11"
