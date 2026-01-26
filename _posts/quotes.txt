@@ -14,6 +14,5 @@ https://github.com/oldratlee/hacker-quotes/blob/master/hacker-quotes.plugin.zsh
 
 "What is possible now that was not possible 10 years ago, and which might get harder 10 years from now? There are more opportunities in a less crowded landscape. There are more chances to grow if you're part of the rising tide. But, this requires pushing past the inevitable discomfort that comes from following a path that has little to no precedent."
 
-
 Doing hard things is the heart beat of my life, and I don’t 100% understand why, but it probably has something to do with me having not the best childhood.
 
