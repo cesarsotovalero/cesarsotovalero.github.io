@@ -54,10 +54,10 @@ jobs:
           VIDEO_COUNT=$(jq -r '.items[0].statistics.videoCount' _data/youtube-profile.json)
           VIEW_COUNT=$(jq -r '.items[0].statistics.viewCount' _data/youtube-profile.json)
           SUBS_COUNT=$(jq -r '.items[0].statistics.subscriberCount' _data/youtube-profile.json)
-          # Write LaTeX macros
-          echo "\\newcommand{\\youtubevideos}{$VIDEO_COUNT}" >> files/CV/citations.tex
-          echo "\\newcommand{\\ytViews}{$VIEW_COUNT}" >> files/CV/citations.tex
-          echo "\\newcommand{\\ytSubscribers}{$SUBS_COUNT}" >> files/CV/citations.tex
+          # Write LaTeX macros using renewcommand
+          echo "\\renewcommand{\\youtubevideos}{$VIDEO_COUNT}" >> files/CV/citations.tex
+          echo "\\renewcommand{\\ytViews}{$VIEW_COUNT}" >> files/CV/citations.tex
+          echo "\\renewcommand{\\ytSubscribers}{$SUBS_COUNT}" >> files/CV/citations.tex
           cat files/CV/citations.tex
 
       - name: Set up LaTeX

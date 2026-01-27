@@ -37,6 +37,15 @@
 }
 
 \newcommand\nospell[1]{#1}
+
+% Initial definitions for dynamic commands
+\newcommand{\citations}{0}
+\newcommand{\hindex}{0}
+\newcommand{\blogposts}{0}
+\newcommand{\youtubevideos}{0}
+\newcommand{\ytViews}{0}
+\newcommand{\ytSubscribers}{0}
+
 \AtBeginDocument{%
   \setlength{\topskip}{0mm}
   \setlength{\parindent}{0pt}
