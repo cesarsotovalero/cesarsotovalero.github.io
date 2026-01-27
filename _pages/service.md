@@ -9,11 +9,7 @@ published: true
 
 # Peer Reviews
 
-I've peer-reviewed papers for the following journals and conferences:
-
-<aside class="quote">
-        <em><a href="https://www.webofscience.com/wos/author/record/AAB-9333-2019">See my verified peer reviews in the Web of Science</a></em>
-</aside>
+Since 2017, I've peer-reviewed papers for the following journals:[^1]
 
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), January 2026 [Recognition](../files/certificates/2026_Certificate_JSS_Recognised.pdf)
 - [Springer Software Quality Journal](https://link.springer.com/journal/11219), January 2026 [Recognition](../files/certificates/2026_Springer_Software_Quality_Jan.pdf)
@@ -96,3 +92,7 @@ From 2019-2023, I worked as a teacher assistant (TA) for the following courses:
 11. [DA2210 Introduction to the Philosophy of Science and Research Methodology for Computer Scientists](https://www.kth.se/social/course/DA2210), given by [Linda Kann](http://www.csc.kth.se/~lk) at KTH, Fall 2019
 12. [:globe_with_meridians: WASP Software Engineering and Cloud Computing](https://wasp-sweden.org/graduate-school/courses/software-engineering-and-cloud-computing), given by [Martin Monperrus](https://www.monperrus.net/martin) & [Benoit Baudry](https://softwarediversity.eu) at KTH, Spring 2019
 13. [ID2211 Data Mining, Basic Course](https://www.kth.se/student/kurser/kurs/ID2211?l=en), given by [Sarunas Girdzijauskas](https://scholar-google-se.focus.lib.kth.se/citations?user=mhqpsO4AAAAJ&hl=en) at KTH, Spring 2019
+
+# Footnotes
+
+[^1]: Verified peer reviews are also visible by visiting [my profile in the Web of Science](https://www.webofscience.com/wos/author/record/AAB-9333-2019).
