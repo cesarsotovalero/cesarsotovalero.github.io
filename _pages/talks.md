@@ -15,6 +15,10 @@ If you want to invite me to speak at your next event, please [read this](./talks
 
 Below is a non-exhaustive list of my past talks in reverse chronological order.
 
+## 2026
+
+- **Fully Homomorphic Encryption and the Future of Trustworthy AI”**. Upcoming talk at [Data Innovation Summit](https://datainnovationsummit.com/region/nordics/), May 2026. [Talk Announcement](https://www.linkedin.com/posts/the-data-innovation-summit_disummit2030-dis2026x1-activity-7404107732695298048-FUac) {:target="\_blank"}
+
 ## 2025
 
 {% youtube nEg8T8doy64 %}
