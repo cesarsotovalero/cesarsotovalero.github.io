@@ -153,7 +153,7 @@ It’s about removing ambiguity before the agent starts making decisions for you
 
 A practical workflow looks like this:
 
-## 1) Requirements (the what)
+## Requirements
 
 Describe what the user experiences from the outside (not how the system works).
 
@@ -161,7 +161,7 @@ Example:
 
 > “When a user submits a support ticket, they receive a clear and empathetic response within five seconds. The response must reference their issue and suggest a concrete next step.”
 
-## 2) Design (the how, at a high level)
+## Design
 
 Define structure and boundaries.
 
@@ -175,7 +175,7 @@ Example:
 
 > “The agent can read the ticket text and query the internal FAQ. It cannot invent policies, promise refunds, or escalate issues on its own.”
 
-## 3) Tasks (the work)
+## Tasks
 
 Tasks must be explicit, sequential, and boring.
 
@@ -193,7 +193,7 @@ No “use best judgment.”
 Agents do exactly what you specify.
 Nothing more.
 
-## 4) Build (implementation plus automated verification)
+## Build
 
 Now you turn the spec into checks.
 Does the response reference the user’s issue?
