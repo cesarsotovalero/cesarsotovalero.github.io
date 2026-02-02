@@ -258,7 +258,7 @@ At that point, you reinvented a programming language.
 But fuzzier.
 And some of the loudest skepticism you’ll hear about SDD is basically this argument, stated more rudely.[^12]
 
-# The reality check (where SDD shines, where it bleeds)
+# The Reality Check
 
 ## 🟢 Green light
 
@@ -291,12 +291,12 @@ Here is an example of a simple spec verification in Java:
 {% highlight java linenos %}
 public final class SupportReplySpec {
 
-  // Spec constraint: keep responses short and reference the user's issue.
-  // This is not "AI evaluation." This is build gating.
-  public static void validate(String ticketText, String reply) {
-    if (reply == null || reply.isBlank()) {
-      throw new IllegalArgumentException("Reply must not be empty");
-    }
+// Spec constraint: keep responses short and reference the user's issue.
+// This is not "AI evaluation." This is build gating.
+public static void validate(String ticketText, String reply) {
+if (reply == null || reply.isBlank()) {
+throw new IllegalArgumentException("Reply must not be empty");
+}
 
     int wordCount = reply.trim().split("\\s+").length;
     if (wordCount > 120) {
@@ -320,7 +320,8 @@ public final class SupportReplySpec {
     if (overlaps < 2) {
       throw new IllegalArgumentException("Reply does not reference the user's issue enough");
     }
-  }
+
+}
 }
 {% endhighlight %}
 
