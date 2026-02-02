@@ -28,33 +28,33 @@ It will come from a missing sentence.
 
 Right now, developers are using AI agents to write code faster than they can actually read it.
 I’m doing it too!
-The latest models can generate thousands of lines in seconds.
-But that’s not the problem.
-The problem is that speed removes friction.
+The latest models can generate 1,000+ LoC in seconds.
+But that’s not the real problem.
+The problem is that speed removes _friction_.
 And friction used to be where _thinking_ happened.
 
 Recently, GitHub ran controlled experiments where developers using Copilot finished tasks faster (with numbers often quoted around “up to 55%”).[^1]
 And that sounds like a dream. Until you realize that speed without direction is just a faster way to reach the wrong place.
 In other studies, experienced developers got slower when AI increased review load, coordination cost, and rework.[^11]
-So the real question is not “Can AI write code?”
-It definitely can.
+So the real question is not “Can AI write production-ready code?”
+It definitely can!
 
 The question is:
 
 > “Can we keep AI speed without turning our systems into a high-throughput confusion factory?”
 
 That is where [Spec-Driven Development (SDD)](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html) shows up.
-The idea is simple: **write a clear, structured specification ("spec") before the code**, so that AI gets constraints instead of vibes.
+The idea is simple: **write a clear, structured specification ("spec") before the code**, so that AI gets directed in the right way and remain withing well defined constraints instead of "vibes."
 
-But I keep wondering:
+You many wonder:
 
 > Are we just reinventing [1990s Waterfall](https://en.wikipedia.org/wiki/Waterfall_model), but this time with an AI-powered engine on top?
 
-In this post, I’ll cover three things:
+In this post, I’ll cover 3 things:
 
-1. What SDD actually is (and why vague thinking is now your biggest technical liability).
-2. The three levels of SDD (and the specific one that quietly traps most teams).
-3. A practical checklist to decide which features deserve a real spec and which ones you should just build fast and move on.
+1. **What SDD actually is** and why vague thinking is now your biggest technical liability.
+2. **The three levels of SDD** and the specific one that quietly traps most teams.
+3. **A practical checklist** to decide which features deserve a real spec and which ones you should just build fast and move on.
 
 By the end, you’ll know whether SDD is a real shift in how software gets built, or just another heavyweight idea that sounds smart and wastes everyone’s time.
 
@@ -105,7 +105,7 @@ It removes the pause where thinking used to happen.
 When thinking disappears, ambiguity leaks straight into production.
 This is why some researchers now treat prompts as a form of requirements, and argue that classic requirements methods will become even more valuable in the generative era.[^4]
 
-Same problem →  Higher speed →  Bigger blast radius.
+Same problem → Higher speed → Bigger blast radius.
 
 # SDD vs Waterfall
 
