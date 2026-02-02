@@ -105,11 +105,7 @@ It removes the pause where thinking used to happen.
 When thinking disappears, ambiguity leaks straight into production.
 This is why some researchers now treat prompts as a form of requirements, and argue that classic requirements methods will become even more valuable in the generative era.[^4]
 
-Same problem.
-
-Higher speed.
-
-Bigger blast radius.
+Same problem →  Higher speed →  Bigger blast radius.
 
 # SDD vs Waterfall
 
@@ -148,10 +144,26 @@ When stakeholders are calm, when assumptions are visible, and when the codebase 
 # SDD as a Pipeline
 
 Spec-Driven Development is not about writing more documentation.
-
 It’s about removing ambiguity before the agent starts making decisions for you.
 
 A practical workflow looks like this:
+
+```mermaid
+%%{init: {'theme':'base'}}%%
+flowchart TB;
+
+S["Spec (requirements + constraints + edge cases)"] --> P["Plan (tasks)"]
+P --> I["Implementation (AI agent + humans)"]
+I --> T["Verification (tests, properties, gates)"]
+T -->|pass| M["Merge + Deploy"]
+T -->|fail| S
+
+subgraph "What changes with AI"
+S
+P
+T
+end
+```
 
 ## Requirements
 
@@ -164,11 +176,8 @@ Example:
 ## Design
 
 Define structure and boundaries.
-
 What information can the agent see?
-
 What tools can it use?
-
 What is it not allowed to do?
 
 Example:
@@ -203,23 +212,6 @@ That’s the whole loop.
 It is intentionally simple.
 Because when working with non-deterministic tools, simplicity is not a style choice.
 It’s a reliability strategy.
-
-```mermaid
-%%{init: {'theme':'base'}}%%
-flowchart TB;
-
-S["Spec (requirements + constraints + edge cases)"] --> P["Plan (tasks)"]
-P --> I["Implementation (AI agent + humans)"]
-I --> T["Verification (tests, properties, gates)"]
-T -->|pass| M["Merge + Deploy"]
-T -->|fail| S
-
-subgraph "What changes with AI"
-S
-P
-T
-end
-```
 
 # The Three Levels of SDD
 
