@@ -18,7 +18,7 @@ toc: true
 mathjax: false
 date: 2026/02/01
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 {% youtube maIBlxGubeI %}
