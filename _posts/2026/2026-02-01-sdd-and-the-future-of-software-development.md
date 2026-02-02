@@ -271,43 +271,32 @@ So yes, SDD needs tooling support, not moral superiority.
 And there’s another reason SDD is having a moment:
 AI-assisted development can increase duplication, churn, and architectural drift when you do not constrain the agent with explicit rules and boundaries.[^5][^6]
 
-Here is an example of a simple spec verification in Java:
+Here is an example of a simple spec verification in Python:
 
-{% highlight java linenos %}
-public final class SupportReplySpec {
+{% highlight python linenos %}
+import re
 
-// Spec constraint: keep responses short and reference the user's issue.
-// This is not "AI evaluation." This is build gating.
-public static void validate(String ticketText, String reply) {
-if (reply == null || reply.isBlank()) {
-throw new IllegalArgumentException("Reply must not be empty");
-}
+def validate_support_reply(ticket_text: str, reply: str) -> None:
+"""
+Spec constraint: keep responses short and reference the user's issue.
+This is not "AI evaluation." This is build gating.
+"""
+if not reply or not reply.strip():
+raise ValueError("Reply must not be empty")
 
-    int wordCount = reply.trim().split("\\s+").length;
-    if (wordCount > 120) {
-      throw new IllegalArgumentException("Reply must be <= 120 words (was " + wordCount + ")");
-    }
+    word_count = len(reply.split())
+    if word_count > 120:
+        raise ValueError(f"Reply must be <= 120 words (was {word_count})")
 
-    // Naive overlap check (good enough to catch obvious failures).
-    String[] ticketWords = ticketText.toLowerCase().split("\\W+");
-    String replyLower = reply.toLowerCase();
+    # Naive overlap check (good enough to catch obvious failures).
+    ticket_words = re.split(r'\W+', ticket_text.lower())
+    reply_lower = reply.lower()
 
-    int overlaps = 0;
-    for (String w : ticketWords) {
-      if (w.length() >= 5 && replyLower.contains(w)) {
-        overlaps++;
-        if (overlaps >= 2) {
-          break;
-        }
-      }
-    }
+    overlaps = sum(1 for w in ticket_words if len(w) >= 5 and w in reply_lower)
 
-    if (overlaps < 2) {
-      throw new IllegalArgumentException("Reply does not reference the user's issue enough");
-    }
+    if overlaps < 2:
+        raise ValueError("Reply does not reference the user's issue enough")
 
-}
-}
 {% endhighlight %}
 
 # When to Use SDD
