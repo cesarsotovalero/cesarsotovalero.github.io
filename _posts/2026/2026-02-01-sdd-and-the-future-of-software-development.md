@@ -216,7 +216,6 @@ It’s a reliability strategy.
 # The Three Levels of SDD
 
 Not all SDD looks the same.
-
 In practice, there are three levels:
 
 ## Level 1: Spec-First
@@ -321,13 +320,6 @@ Run this three-point check:
 
 In my opinion, the future isn’t “always spec-driven.”
 The future is spec-driven when being wrong is expensive.
-
-# External Resources
-
-- Thoughtworks Technology Radar: Spec-driven development (technique entry).[^3]
-- GitHub Spec Kit: spec-driven development toolkit.[^7]
-- Requirements engineering perspective: prompts as requirements.[^4]
-- Empirical signals on code quality drift and churn with AI assistance.[^5][^6]
 
 # Footnotes
 
