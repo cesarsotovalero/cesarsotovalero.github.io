@@ -111,7 +111,7 @@ Higher speed.
 
 Bigger blast radius.
 
-# SDD vs Waterfall (the real difference)
+# SDD vs Waterfall
 
 Yes, SDD feels like Waterfall, you are not crazy.
 They both say _“think before you build.”_
@@ -227,13 +227,13 @@ Not all SDD looks the same.
 
 In practice, there are three levels:
 
-## Level 1: Spec-First (spec as a thinking tool)
+## Level 1: Spec-First
 
 You write a spec to clarify your own thinking, use it to guide the agent, then move on.
 Perfect for MVPs and experiments.
 The spec is useful even if it dies tomorrow.
 
-## Level 2: Spec-Anchored (spec as a living contract)
+## Level 2: Spec-Anchored
 
 The spec is a living artifact.
 If the code changes, the spec must change.
@@ -243,22 +243,16 @@ This is also where most teams quietly fail.
 Not because they cannot write specs.
 Because they cannot keep them alive.
 
-## Level 3: Spec-as-Source (spec as the codebase)
+## Level 3: Spec-as-Source
 
 You edit the spec, and tooling regenerates the implementation.
 This is the low-code dream.
 Some newer tools and platforms point in this direction by making the spec the center of gravity.[^8]
 
-### My take (warning label)
+> ⚠️ My take: Level 3 is dangerous right now for complex systems. When the spec becomes the source of truth, the spec becomes the codebase.
+> Meaning if you cannot express intent precisely (and natural language is notoriously ambiguous), you are moving bugs upstream and making them look like prose. At that point, you reinvented a programming language. But fuzzier. And some of the loudest skepticism you’ll hear about SDD is basically this argument, stated more rudely.[^12]
 
-Level 3 is dangerous right now for complex systems.
-When the spec becomes the source of truth, the spec becomes the codebase.
-Meaning if you cannot express intent precisely (and natural language is notoriously ambiguous), you are moving bugs upstream and making them look like prose.
-At that point, you reinvented a programming language.
-But fuzzier.
-And some of the loudest skepticism you’ll hear about SDD is basically this argument, stated more rudely.[^12]
-
-# The Reality Check
+# Reality Check
 
 ## 🟢 Green light
 
