@@ -1,7 +1,160 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "mBjIALfGDSUdQ6-NXoPKa0cv-vM",
+    "etag": "SX3ByFrrPZnbwL5mExKjMFgmjKI",
+    "id": "4vltll8lO1g",
+    "snippet": {
+      "publishedAt": "2026-02-07T15:40:48Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "The Simple Architecture of AI Agents",
+      "description": "Building an AI agent is simpler than you think, but this simplicity hides a fundamental shift in software development. The real challenge is not the model, but the architecture you build around it.\n\nMost developers treat Large Language Models (LLMs) like any other API, leading them to build brittle, expensive toys. This guide reveals the professional mental model for agentic engineering: managing a stateless LLM inside a stateful loop that you control.\n\nYou'll learn: \n\n→ Why LLMs are stateless and how the illusion of conversation is created. \n\n→ The simple while loop structure that gives an AI agent memory and state. \n\n→ How to implement the Plan-Execute-Response cycle to give agents tools. \n\n→ The three core engineering challenges: context management, reliability, and cost.\n\nThis video is for software developers who want to move beyond simple API calls and understand the fundamental architecture required to build robust, production-ready AI agents.\n\nSubscribe 👉 https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg\n\n0:00 Intro\n02:07 The Illusion of Conversation\n04:35 The Core Loop\n07:11 The Power of Tools\n08:23 The Engineering Challenges\n11:08 Takeaways\n\n#AIAgents #AgenticEngineering #LLM #Python #ArtificialIntelligence #SoftwareDevelopment #AIExplained #DeveloperTutorial #AIArchitecture",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/4vltll8lO1g/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/4vltll8lO1g/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/4vltll8lO1g/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/4vltll8lO1g/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/4vltll8lO1g/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "AI agents",
+        "agentic engineering",
+        "large language models",
+        "LLM tool use",
+        "Python AI agent",
+        "build AI agent from scratch",
+        "stateful loop pattern",
+        "LLM context management",
+        "AI architecture",
+        "AI developer tutorial",
+        "stateless llm",
+        "autonomous agents",
+        "LLMs"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "The Simple Architecture of AI Agents",
+        "description": "Building an AI agent is simpler than you think, but this simplicity hides a fundamental shift in software development. The real challenge is not the model, but the architecture you build around it.\n\nMost developers treat Large Language Models (LLMs) like any other API, leading them to build brittle, expensive toys. This guide reveals the professional mental model for agentic engineering: managing a stateless LLM inside a stateful loop that you control.\n\nYou'll learn: \n\n→ Why LLMs are stateless and how the illusion of conversation is created. \n\n→ The simple while loop structure that gives an AI agent memory and state. \n\n→ How to implement the Plan-Execute-Response cycle to give agents tools. \n\n→ The three core engineering challenges: context management, reliability, and cost.\n\nThis video is for software developers who want to move beyond simple API calls and understand the fundamental architecture required to build robust, production-ready AI agents.\n\nSubscribe 👉 https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg\n\n0:00 Intro\n02:07 The Illusion of Conversation\n04:35 The Core Loop\n07:11 The Power of Tools\n08:23 The Engineering Challenges\n11:08 Takeaways\n\n#AIAgents #AgenticEngineering #LLM #Python #ArtificialIntelligence #SoftwareDevelopment #AIExplained #DeveloperTutorial #AIArchitecture"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT12M42S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "26",
+      "likeCount": "1",
+      "favoriteCount": "0",
+      "commentCount": "3"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "JjrLWn-QdQyuF2YqOc7R8c-Xdf4",
+    "id": "0JaJmRFn8NU",
+    "snippet": {
+      "publishedAt": "2026-02-02T19:55:58Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "Context Engineering: The #1 Skill for Building Reliable AI Agents",
+      "description": "Learn the principles of Context Engineering to build reliable AI agents by properly managing the LLM context window, a crucial skill for modern AI engineering.\n\nYour AI application works on simple tests but fails on complex tasks because it forgets instructions, gets confused, and its performance degrades. The problem is not the model, but how you feed it information. This is the core challenge of Context Engineering: actively managing an LLM's short-term memory to ensure it has the right information at the right time. A bigger context window is not a magic solution; mastering its management is the key to building robust and efficient AI systems.\n\nYou'll learn:\n\n→ The three silent killers of AI performance: Context Rot, Pollution, and Confusion.\n→ Why Context Compaction is a better first step than Summarization for context hygiene.\n→ The correct mental model for managing context in multi-agent systems.\n→ How to design a Hierarchical Action Space to prevent tool-related confusion.\n\nThis video is for software developers and AI engineers who are building LLM-powered applications and struggling with agent reliability and performance on complex, long-running tasks.\n\nSubscribe for more 👉 https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n01:57 Rot, Pollution, and Confusion\n04:32 Compaction and Summarization\n07:45 Multi-Agent Systems Done Right\n10:33 Building a Hierarchical Action Space\n13:11 Takeaways\n\n#contextengineering #aiagents  #aiengineering  #promptengineering  #systemdesign  #generativeai  #softwaredevelopment",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/0JaJmRFn8NU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/0JaJmRFn8NU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/0JaJmRFn8NU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/0JaJmRFn8NU/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/0JaJmRFn8NU/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "Context Engineering",
+        "AI Agent",
+        "LLM",
+        "Context Window",
+        "AI Reliability",
+        "AI Engineering",
+        "Multi-Agent Systems",
+        "Prompt Engineering",
+        "RAG",
+        "System Prompt",
+        "Agent Harness",
+        "LLM Performance"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "Context Engineering: The #1 Skill for Building Reliable AI Agents",
+        "description": "Learn the principles of Context Engineering to build reliable AI agents by properly managing the LLM context window, a crucial skill for modern AI engineering.\n\nYour AI application works on simple tests but fails on complex tasks because it forgets instructions, gets confused, and its performance degrades. The problem is not the model, but how you feed it information. This is the core challenge of Context Engineering: actively managing an LLM's short-term memory to ensure it has the right information at the right time. A bigger context window is not a magic solution; mastering its management is the key to building robust and efficient AI systems.\n\nYou'll learn:\n\n→ The three silent killers of AI performance: Context Rot, Pollution, and Confusion.\n→ Why Context Compaction is a better first step than Summarization for context hygiene.\n→ The correct mental model for managing context in multi-agent systems.\n→ How to design a Hierarchical Action Space to prevent tool-related confusion.\n\nThis video is for software developers and AI engineers who are building LLM-powered applications and struggling with agent reliability and performance on complex, long-running tasks.\n\nSubscribe for more 👉 https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n01:57 Rot, Pollution, and Confusion\n04:32 Compaction and Summarization\n07:45 Multi-Agent Systems Done Right\n10:33 Building a Hierarchical Action Space\n13:11 Takeaways\n\n#contextengineering #aiagents  #aiengineering  #promptengineering  #systemdesign  #generativeai  #softwaredevelopment"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT15M26S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "69",
+      "likeCount": "1",
+      "favoriteCount": "0",
+      "commentCount": "1"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "ai4lWd8MnrSAs0UNdOAFfvhUaMg",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -83,7 +236,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "67",
+      "viewCount": "75",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -91,7 +244,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "yiH8_5Kzc7gvDEaFAKaikYOn5RY",
+    "etag": "6ZqetBEQLz4Z8xUxL4ZaNOIPzjg",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -171,15 +324,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "735",
-      "likeCount": "22",
+      "viewCount": "903",
+      "likeCount": "24",
       "favoriteCount": "0",
       "commentCount": "6"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "aQce8PRzmI8-4-Gf8O5SrpvPj2s",
+    "etag": "E7AZ3E18Hj5xg8jovrr2kGaRUOs",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -258,8 +411,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "105",
-      "likeCount": "9",
+      "viewCount": "121",
+      "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "3"
     }
@@ -352,7 +505,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "g052mcg7OKx7H1h_cqS4q29f0v0",
+    "etag": "F8mjkEzWQ5dOIy4RAepVPAHXGJg",
     "id": "-a6Pbv_yBWw",
     "snippet": {
       "publishedAt": "2025-11-29T07:55:26Z",
@@ -434,15 +587,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "240",
-      "likeCount": "17",
+      "viewCount": "243",
+      "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "3"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "0FtVNByRWSH8MHcL0rLr33S-pj8",
+    "etag": "9g72keotDnhzkOeOujRw-LL1f7c",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -521,15 +674,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "623",
-      "likeCount": "29",
+      "viewCount": "644",
+      "likeCount": "30",
       "favoriteCount": "0",
       "commentCount": "6"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "HNIcEzAzQLU4t655XrKAODMwTgQ",
+    "etag": "kocFgfOdMcAfZrRGkm_NgKI4jow",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
@@ -610,7 +763,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "206",
+      "viewCount": "208",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -618,7 +771,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "tXY_yGjOJnAAzYh_N4FgP-4tK6Q",
+    "etag": "T_esdpzqSW8GWQbQwNg8RpGZ0qU",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -699,7 +852,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "179",
+      "viewCount": "181",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -707,7 +860,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "tshD_Sg5eSj65mR1kPYsE5JUywI",
+    "etag": "UfmlLdLs_1imL6Z-025AePy4RS4",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -782,10 +935,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1574",
-      "likeCount": "71",
+      "viewCount": "1630",
+      "likeCount": "74",
       "favoriteCount": "0",
-      "commentCount": "20"
+      "commentCount": "21"
     }
   },
   {
@@ -883,7 +1036,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "AtTdLTbC1xfZDU8k11yhb-KsThQ",
+    "etag": "6wYLAvu_1NJQm0zJ6gIotk_fNr0",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -958,7 +1111,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "205",
+      "viewCount": "209",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1050,7 +1203,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "lJuFVhX6BRpeqK6Tx00MurM5KNw",
+    "etag": "FExD_fm8yq_Lhd2tRx7EGFicNKI",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -1124,10 +1277,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "594",
+      "viewCount": "595",
       "likeCount": "19",
       "favoriteCount": "0",
-      "commentCount": "4"
+      "commentCount": "5"
     }
   },
   {
@@ -1215,7 +1368,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "skmDsb6euoMjhMxlzq-34ppARvw",
+    "etag": "xiiLojItS0vOZZhV7xWbyzOSQzM",
     "id": "n1t3XEAyUgQ",
     "snippet": {
       "publishedAt": "2024-10-21T06:00:32Z",
@@ -1290,7 +1443,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "163",
+      "viewCount": "164",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1378,7 +1531,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "HH0hqDqYjXV2UlhfGROgZGd_FYc",
+    "etag": "k5o2MJZ6djB7iwaKMM4b54bFGro",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
@@ -1445,7 +1598,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "149",
+      "viewCount": "150",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1453,7 +1606,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "7OqxvntlA27hT9WpbqzzUv5wACM",
+    "etag": "CR08twBpQDM8MXvXtSMHo5G9ZSY",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -1514,15 +1667,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12851",
-      "likeCount": "645",
+      "viewCount": "12854",
+      "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "296"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "cEshWKjtxve6Y3SoKLNG_6N65jI",
+    "etag": "8Yeehpn5FX_Anl5Qzr0bJ5n8lBM",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -1584,15 +1737,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "839",
-      "likeCount": "56",
+      "viewCount": "855",
+      "likeCount": "57",
       "favoriteCount": "0",
-      "commentCount": "30"
+      "commentCount": "32"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "X4CSdWQpEWGX4IvdhGvdZRuc4vw",
+    "etag": "s3DdrYBcaNwRBpKGRoEtTwlvXbs",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -1646,7 +1799,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "142",
+      "viewCount": "147",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1654,7 +1807,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "-Cj2ZGQqskZla5cgypE0F-oHZfo",
+    "etag": "lbyoqwfckJX0TbT7Ibvj3-YZL1w",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -1708,7 +1861,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "838",
+      "viewCount": "857",
       "likeCount": "32",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1716,7 +1869,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "EfkDr-pxfvQmxVS22Pxo2c2oKC0",
+    "etag": "sR8HlKmfSJsH3RJqvKLMOQe_jhI",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -1777,7 +1930,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "425",
+      "viewCount": "426",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1785,7 +1938,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Ar8J4f5Jp03SaO5Jm1U7ccjhnxQ",
+    "etag": "TW32cP03K5vfgM8S4E7YcCo97fk",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -1844,7 +1997,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "144",
+      "viewCount": "145",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -2045,7 +2198,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Nvq6ixFkeBTdVQVkP-TCAVuTKos",
+    "etag": "4CoMxP-OeuT373-JvJfFMf7ZXZE",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -2105,7 +2258,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "423",
+      "viewCount": "424",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2113,7 +2266,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "abiWjb9grk4R87CxQ72KQ_Yqzdw",
+    "etag": "klcQnhChMyb_Ye4QqpnNA657XAU",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -2172,7 +2325,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "215",
+      "viewCount": "216",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2315,7 +2468,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "7UOMHznjnyQj7HXgtFCVdRzAbko",
+    "etag": "kwS1qraAPSpWWoENS60-raGBdsQ",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -2375,7 +2528,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "285",
+      "viewCount": "286",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "11"
