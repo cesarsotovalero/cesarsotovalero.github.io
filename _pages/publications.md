@@ -11,8 +11,8 @@ published: true
 
 I'm the author of academic papers published in reputable journals and conferences.
 My work can be found in
-<a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="../img/pages/publications/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="../img/pages/publications/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="../img/pages/publications/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar); with ORCID  <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer"
-style="vertical-align:top;"><img src="../img/icons/orcid-color.svg" style="width:1em;margin-right:.3em;" alt="ORCID iD icon">0000-0003-0541-6411</a>.  The following is an updated list of my published work (in reverse chronological order).
+<a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="../img/pages/publications/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="../img/pages/publications/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="../img/pages/publications/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar); with ORCID <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer"
+style="vertical-align:top;"><img src="../img/icons/orcid-color.svg" style="width:1em;margin-right:.3em;" alt="ORCID iD icon">0000-0003-0541-6411</a>. The following is an updated list of my published work (in reverse chronological order).
 
 <!--
 <aside class="quote">
@@ -22,6 +22,16 @@ style="vertical-align:top;"><img src="../img/icons/orcid-color.svg" style="width
 -->
 
 Legend: <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px"> Conference; <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px"> Journal; <img alt="" title="Books and Theses" src="https://dblp.uni-trier.de/img/n.png" style="background: #f8c91f; width: 18px; height: 18px"> Thesis.
+
+# 2024
+
+- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px">
+  **Highly Available Blockchain Nodes With N-Version Design**.
+  Javier Ron, César Soto-Valero, Long Zhang, Benoit Baudry, and Martin Monperrus.
+  _IEEE Transactions on Dependable and Secure Computing_.
+  <a href="https://doi.org/10.1109/TDSC.2023.3346195"><i class="icon i-doi"></i> 10.1109/TDSC.2023.3346195</a>
+  <a href="https://arxiv.org/abs/2303.14438"><i class="icon i-arxiv"></i> Preprint</a>
+  [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/N-ETH)
 
 # 2023
 
@@ -50,15 +60,6 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   <a href="https://doi.org/10.1109/MSEC.2023.3302956"><i class="icon i-doi"></i> 10.1109/MSEC.2023.3302956</a>
   <a href="https://arxiv.org/abs/2303.11102"><i class="icon i-arxiv"></i> Preprint</a>
   [<i class="fab fa-github"></i> Experiments](https://github.com/chains-project/SBOM-2023)
-
-- <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px">
-  **Highly Available Blockchain Nodes With N-Version Design**.
-  Javier Ron, César Soto-Valero, Long Zhang, Benoit Baudry, and Martin Monperrus.
-  _IEEE Transactions on Dependable and Secure Computing_.
-  <a href="https://doi.org/10.1109/TDSC.2023.3346195"><i class="icon i-doi"></i> 10.1109/TDSC.2023.3346195</a>
-  <a href="https://arxiv.org/abs/2303.14438"><i class="icon i-arxiv"></i> Preprint</a>
-  [<i class="fab fa-github"></i> Experiments](https://github.com/ASSERT-KTH/N-ETH)
-
 
 # 2022
 
