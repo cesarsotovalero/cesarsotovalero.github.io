@@ -297,6 +297,8 @@ raise ValueError("Reply must not be empty")
     if overlaps < 2:
         raise ValueError("Reply does not reference the user's issue enough")
 
+---
+
 {% endhighlight %}
 
 # When to Use SDD
