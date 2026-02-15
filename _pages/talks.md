@@ -13,6 +13,8 @@ I've delivered talks since 2018 at academic and industry conferences, workshops,
 
 If you want to invite me to speak at your next event, please [read this](./talks/invite-me).
 
+Here's my [speaker bio](./bio).
+
 Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 ## 2026
