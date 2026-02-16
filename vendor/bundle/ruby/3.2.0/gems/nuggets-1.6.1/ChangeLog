@@ -1,0 +1,57 @@
+# markup: rd
+
+= Revision history for nuggets
+
+== 1.6.1 [2022-05-18]
+
+* Ruby 3.1 compatibility.
+
+== 1.6.0 [2018-07-12]
+
+* Added <tt>JSON.*_{multi,canonical}</tt>.
+
+== 1.5.0 [2016-04-19]
+
+* Added String#format.
+* Added String#highlight.
+* Dropped IO::NULL, available as File::NULL since Ruby 1.9.3.
+
+== 1.4.0 [2015-10-02]
+
+* Added File.open_file.
+* Added Array#extract_options.
+
+== 1.3.0 [2015-07-07]
+
+* Added <tt>Hash.{identity,array}</tt>.
+
+== 1.2.1 [2015-04-14]
+
+* Ruby Core compatibility for Enumerable#minmax etc. Issue #4 by @codez.
+
+== 1.2.0 [2015-03-13]
+
+* Extracted Nuggets::RubyMixin from Nuggets::Ruby.
+* Added Net::SSH::Connection::Session#exec_sudo.
+* Added Hash#deproc.
+
+== 1.1.0 [2014-11-26]
+
+* Nuggets::LogParser::Rails no longer <tt>eval</tt>s the params hash; set the
+  environment variable +NUGGETS_LOG_PARSER_RAILS_EVAL_PARAMS+ to restore this
+  behaviour.
+* Added Object#rescue_if and Object#rescue_unless.
+* Added JRuby variant of Process.ruby.
+
+== 1.0.1 [2014-08-27]
+
+* Added <tt>DATA.{consume,reposition,update}</tt>.
+* Added Module#query_attr.
+* Added Module#lazy_attr.
+* Added Integer#to_roman.
+* Added Numeric#signum_s.
+* Added Array#interpolate.
+
+== 1.0.0 [2014-06-20]
+
+* First release under new name. Formerly known as ruby-nuggets.

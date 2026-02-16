@@ -1,0 +1,45 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'json'
+require 'yaml'
+require File.expand_path('../../lib/jslint', __FILE__)
+
+config_file = File.expand_path('config/jslint.yml')
+if File.exist? config_file
+  config = YAML.load_file(config_file)['jslint']
+
+  options = config['options'] || {}
+  predefined = config['predefined'] || []
+  options['predef'] = predefined.map { |defs| defs.split(',') }.flatten.map(&:strip) unless predefined.empty?
+
+  options = config['options'].map do |option, value|
+    option = option.to_s.strip
+    case value
+    when true
+      "--#{option}"
+    when false
+      "--no-#{option}"
+    else
+      "--#{option}='#{value.to_json}'"
+    end
+  end
+else
+  file_name = ARGV.pop
+  options = ARGV.dup
+  ARGV.clear
+  ARGV.push(file_name)
+end
+
+command =  []
+if `which node`.empty?
+  command << ['java', '-jar', Jslint::RhinoJar]
+  command << ['-f', Jslint::Scripts[:json2]]
+  command << ['-f', Jslint::Scripts[:jslint]]
+  command << Jslint::Scripts[:rhino]
+else
+  command << ['node']
+  command << Jslint::Scripts[:node]
+end
+command << [ options, ARGV.first]
+command = command.flatten.join(' ')
+exec command
