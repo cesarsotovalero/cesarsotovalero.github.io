@@ -23,51 +23,74 @@ module Yegor
               File.exist?(path) ? YAML.safe_load(File.read(path))['youtube_api_key'] : nil
             end
 
-      return '<!-- No API key found -->' unless key  # Return error comment if no key is found
+      # Try API if key is available
+      if key
+        begin
+          snippet = fetch_snippet(key)
+          if snippet
+            puts "YouTube video #{@id} found: #{snippet['title']}"
+            return render_aside(
+              snippet['thumbnails']['medium']['url'],
+              CGI.escapeHTML(snippet['title']),
+              Time.parse(snippet['publishedAt']).strftime('%-d %B %Y')
+            )
+          end
+        rescue StandardError => e
+          puts "YouTube API error for #{@id}: #{e.message}"
+        end
+      else
+        puts "No YouTube API key found, using static fallback for #{@id}"
+      end
 
-      # Construct the API request URI
+      # Static fallback: use YouTube's public thumbnail URL (no API key needed)
+      render_aside(
+        "https://i.ytimg.com/vi/#{@id}/mqdefault.jpg",
+        'Watch on YouTube',
+        nil
+      )
+    end
+
+    private
+
+    def fetch_snippet(key)
       uri = URI.parse("https://www.googleapis.com/youtube/v3/videos?id=#{@id}&part=snippet&key=#{key}")
 
-      # Create HTTP connection with SSL verification
       http = Net::HTTP.new(uri.host, uri.port)
       http.use_ssl = true
       http.verify_mode = OpenSSL::SSL::VERIFY_PEER
 
-      # Handle SSL certificate verification errors
       begin
         request = Net::HTTP::Get.new(uri.request_uri)
         response = http.request(request)
         json = JSON.parse(response.body)
       rescue OpenSSL::SSL::SSLError => e
         puts "SSL error for YouTube video #{@id}: #{e.message}"
-        # Fallback: try without SSL verification (for development)
         http.verify_mode = OpenSSL::SSL::VERIFY_NONE
         request = Net::HTTP::Get.new(uri.request_uri)
         response = http.request(request)
         json = JSON.parse(response.body)
       end
 
-      # Handle potential errors from the API
       if json['error']
-        puts "Can't download YouTube video #{@id}, skipped: #{json['error']}"
-        return "<!-- YouTube video #{@id} skipped: #{json['error']['message']} -->"
+        puts "Can't download YouTube video #{@id}: #{json['error']['message']}"
+        return nil
       end
 
-      raise "YouTube video #{@id} not found" if json['items'].empty?
+      return nil if json['items'].nil? || json['items'].empty?
 
-      # Render the video snippet if found
-      item = json['items'][0]
-      snippet = item['snippet']
-      puts "YouTube video #{@id} found: #{snippet['title']}"
+      json['items'][0]['snippet']
+    end
+
+    def render_aside(thumbnail_url, title, date)
+      caption = date ? "#{title}; #{date}." : title
       "<aside class='youtube'>
         <a href='https://www.youtube.com/watch?v=#{@id}'><div class='box'>
-        <img src='#{snippet['thumbnails']['medium']['url']}' alt='YouTube video ##{@id}'/>
+        <img src='#{thumbnail_url}' alt='YouTube video ##{@id}'/>
         <div class='play'>
           <img src='/img/icons/youtube-play20px.svg' alt='Play Video' class='youtube-logo'>
         </div>
         </div></a>
-        <div>#{CGI.escapeHTML(snippet['title'])};
-        #{Time.parse(snippet['publishedAt']).strftime('%-d %B %Y')}.</div></aside>"
+        <div>#{caption}</div></aside>"
     end
   end
 end
