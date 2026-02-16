@@ -20,7 +20,7 @@ module Yegor
             else
               # Fall back to secrets.yml if the environment variable is not set
               path = File.expand_path('~/secrets.yml')
-              File.exist?(path) ? YAML.safe_load(File.open(path))['youtube_api_key'] : nil
+              File.exist?(path) ? YAML.safe_load(File.read(path))['youtube_api_key'] : nil
             end
 
       return '<!-- No API key found -->' unless key  # Return error comment if no key is found

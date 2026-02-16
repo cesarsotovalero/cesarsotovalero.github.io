@@ -1,6 +1,0 @@
-title: simple
-markdown: kramdown
-encoding: utf-8
-timezone: Europe/Moscow
-plugins:
-  - jekyll-plantuml
