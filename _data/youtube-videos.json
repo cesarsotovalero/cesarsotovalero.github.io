@@ -1,7 +1,83 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "F_jw0wx9mM1m0xiRpHEfGumwFBo",
+    "etag": "6RRUHQ8vvcHVdTf5s2PTwD2Ra0U",
+    "id": "iXxARSrgCKI",
+    "snippet": {
+      "publishedAt": "2026-02-20T19:59:19Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "How to Write Specs WITH Your AI Coding Assistant",
+      "description": "Writing detailed specs for an AI coding assistant often fails, leading to ignored instructions and hallucinated features. The problem is not your SPEC.md, it is the workflow. Instead of writing specs FOR your AI, you need a process to build specs WITH your AI, turning it from an unreliable tool into a reliable planning partner.\n\nIn this video, you'll learn:\n\n❶ How to start with a high-level vision and guide your AI to draft a detailed plan.\n❷ A \"Plan Mode\" technique to enforce planning before the AI writes a single line of code.\n❸ The method for using a SPEC.md file as a living anchor to solve the AI's memory problem.\n❹ How this workflow makes the AI a true design and architecture co-pilot.\n\nThis video is for software developers and engineers who use AI coding assistants and want a reliable workflow to prevent wasted work, buggy code, and endless rework.\n\nSubscribe 👉 https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n🎥 WATCH NEXT\n→ https://www.youtube.com/watch?v=OaN0u1bN1Qk\n→ https://www.youtube.com/watch?v=4vltll8lO1g\n→ https://www.youtube.com/watch?v=maIBlxGubeI\n\n0:00 Intro\n1:49 Principle 1\n4:30 Principle 2\n7:05 Principle 3\n9:30 Summary\n\n#SpecDrivenDevelopment #AIEngineering #AIForDevelopers #LLM #SoftwareDevelopment #DeveloperTools #CodingAI #PromptEngineering",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/iXxARSrgCKI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/iXxARSrgCKI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/iXxARSrgCKI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/iXxARSrgCKI/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/iXxARSrgCKI/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "Spec-Driven Development",
+        "AI coding assistant",
+        "AI engineering",
+        "write specs for AI",
+        "prompt engineering",
+        "LLM workflow",
+        "software development with AI",
+        "AI developer tools",
+        "AI code generation",
+        "SPEC.md",
+        "Plan Mode",
+        "AI pair programming"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "How to Write Specs WITH Your AI Coding Assistant",
+        "description": "Writing detailed specs for an AI coding assistant often fails, leading to ignored instructions and hallucinated features. The problem is not your SPEC.md, it is the workflow. Instead of writing specs FOR your AI, you need a process to build specs WITH your AI, turning it from an unreliable tool into a reliable planning partner.\n\nIn this video, you'll learn:\n\n❶ How to start with a high-level vision and guide your AI to draft a detailed plan.\n❷ A \"Plan Mode\" technique to enforce planning before the AI writes a single line of code.\n❸ The method for using a SPEC.md file as a living anchor to solve the AI's memory problem.\n❹ How this workflow makes the AI a true design and architecture co-pilot.\n\nThis video is for software developers and engineers who use AI coding assistants and want a reliable workflow to prevent wasted work, buggy code, and endless rework.\n\nSubscribe 👉 https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n🎥 WATCH NEXT\n→ https://www.youtube.com/watch?v=OaN0u1bN1Qk\n→ https://www.youtube.com/watch?v=4vltll8lO1g\n→ https://www.youtube.com/watch?v=maIBlxGubeI\n\n0:00 Intro\n1:49 Principle 1\n4:30 Principle 2\n7:05 Principle 3\n9:30 Summary\n\n#SpecDrivenDevelopment #AIEngineering #AIForDevelopers #LLM #SoftwareDevelopment #DeveloperTools #CodingAI #PromptEngineering"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT11M",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "37",
+      "likeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "1"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "v3zc8jsQJFkcbCTu7h7PmCZeloU",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -76,15 +152,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "16",
-      "likeCount": "2",
+      "viewCount": "50",
+      "likeCount": "5",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "btL4IMd3FqZZFCZJxonvv-gJ2B0",
+    "etag": "5qmOP8oys933pCnEgvPBfNPLFlY",
     "id": "4vltll8lO1g",
     "snippet": {
       "publishedAt": "2026-02-07T15:40:48Z",
@@ -153,7 +229,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "56",
+      "viewCount": "73",
       "likeCount": "1",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -161,12 +237,12 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Ld6uh2L2o2UOZI5BXDWewqhhSX4",
+    "etag": "ZE_iOqZyow-_Ukvu13aDYhxKjM0",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Context Engineering: The #1 Skill for Building Reliable AI Agents",
+      "title": "Why Your AI Agents’ Memory Needs Guardrails",
       "description": "Learn the principles of Context Engineering to build reliable AI agents by properly managing the LLM context window, a crucial skill for modern AI engineering.\n\nYour AI application works on simple tests but fails on complex tasks because it forgets instructions, gets confused, and its performance degrades. The problem is not the model, but how you feed it information. This is the core challenge of Context Engineering: actively managing an LLM's short-term memory to ensure it has the right information at the right time. A bigger context window is not a magic solution; mastering its management is the key to building robust and efficient AI systems.\n\nYou'll learn:\n\n→ The three silent killers of AI performance: Context Rot, Pollution, and Confusion.\n→ Why Context Compaction is a better first step than Summarization for context hygiene.\n→ The correct mental model for managing context in multi-agent systems.\n→ How to design a Hierarchical Action Space to prevent tool-related confusion.\n\nThis video is for software developers and AI engineers who are building LLM-powered applications and struggling with agent reliability and performance on complex, long-running tasks.\n\nSubscribe for more 👉 https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n01:57 Rot, Pollution, and Confusion\n04:32 Compaction and Summarization\n07:45 Multi-Agent Systems Done Right\n10:33 Building a Hierarchical Action Space\n13:11 Takeaways\n\n#contextengineering #aiagents  #aiengineering  #promptengineering  #systemdesign  #generativeai  #softwaredevelopment",
       "thumbnails": {
         "default": {
@@ -214,7 +290,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "Context Engineering: The #1 Skill for Building Reliable AI Agents",
+        "title": "Why Your AI Agents’ Memory Needs Guardrails",
         "description": "Learn the principles of Context Engineering to build reliable AI agents by properly managing the LLM context window, a crucial skill for modern AI engineering.\n\nYour AI application works on simple tests but fails on complex tasks because it forgets instructions, gets confused, and its performance degrades. The problem is not the model, but how you feed it information. This is the core challenge of Context Engineering: actively managing an LLM's short-term memory to ensure it has the right information at the right time. A bigger context window is not a magic solution; mastering its management is the key to building robust and efficient AI systems.\n\nYou'll learn:\n\n→ The three silent killers of AI performance: Context Rot, Pollution, and Confusion.\n→ Why Context Compaction is a better first step than Summarization for context hygiene.\n→ The correct mental model for managing context in multi-agent systems.\n→ How to design a Hierarchical Action Space to prevent tool-related confusion.\n\nThis video is for software developers and AI engineers who are building LLM-powered applications and struggling with agent reliability and performance on complex, long-running tasks.\n\nSubscribe for more 👉 https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n01:57 Rot, Pollution, and Confusion\n04:32 Compaction and Summarization\n07:45 Multi-Agent Systems Done Right\n10:33 Building a Hierarchical Action Space\n13:11 Takeaways\n\n#contextengineering #aiagents  #aiengineering  #promptengineering  #systemdesign  #generativeai  #softwaredevelopment"
       },
       "defaultAudioLanguage": "en"
@@ -229,7 +305,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "75",
+      "viewCount": "78",
       "likeCount": "1",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -237,7 +313,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "o-IBgZpGYLHUkkevKWh_lQExjdg",
+    "etag": "i5C3Qe0l96aQjNhJXVw5Pd71Tys",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -319,15 +395,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "85",
-      "likeCount": "3",
+      "viewCount": "110",
+      "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "8"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "--bHdy48vn9gLLAvclJD-0_PSaw",
+    "etag": "l-zkZJBr3i1by9rNQimaK2YCEnA",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -407,15 +483,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1041",
-      "likeCount": "24",
+      "viewCount": "1130",
+      "likeCount": "25",
       "favoriteCount": "0",
       "commentCount": "6"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "uxUXnmmOurfiu2hW5aUX0-JAaUU",
+    "etag": "07BJKsCTdLyjpU_0NYpx8Un7C-U",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -494,7 +570,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "126",
+      "viewCount": "131",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -502,7 +578,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "7NP-Blf5n27_SAkEyEPEzQhqxDQ",
+    "etag": "TXEAuH104QpUcU4eKdIh4EXrfuQ",
     "id": "pHqoIPAlOcw",
     "snippet": {
       "publishedAt": "2026-01-08T09:44:25Z",
@@ -580,7 +656,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "132",
+      "viewCount": "133",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -588,7 +664,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qNLQt9xU58wHPZDpsehucFfj_F0",
+    "etag": "Gm3TMEyusK_Y8F6LHYP1Sld96js",
     "id": "-a6Pbv_yBWw",
     "snippet": {
       "publishedAt": "2025-11-29T07:55:26Z",
@@ -670,7 +746,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "246",
+      "viewCount": "247",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -678,7 +754,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "_76UYoolY4fk93h3JezSKQufIPM",
+    "etag": "j3ZKelmiybmqSWqgfLOOT1EcG74",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -757,7 +833,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "667",
+      "viewCount": "710",
       "likeCount": "32",
       "favoriteCount": "0",
       "commentCount": "6"
@@ -854,7 +930,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "tCt0QGOdfdewqnm-jbho53ukz8w",
+    "etag": "ejT5UwWxe6a0wcJn_7ZKalTbPwg",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -935,7 +1011,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "185",
+      "viewCount": "189",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -943,7 +1019,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "zXpf6Mi635sPoXj5v-9gItfl2vw",
+    "etag": "2mvFbcjJRBHqV6IsW2XVtzyUwwE",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -1018,15 +1094,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1694",
-      "likeCount": "82",
+      "viewCount": "1743",
+      "likeCount": "83",
       "favoriteCount": "0",
       "commentCount": "21"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "rSMv_zYw7qM7tLF8K53KbEdio0c",
+    "etag": "X0ZcQStVTd7v_7S1OGjqLYqP0pw",
     "id": "3s7xjI3g73w",
     "snippet": {
       "publishedAt": "2024-12-29T17:00:04Z",
@@ -1111,7 +1187,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "412",
+      "viewCount": "413",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1119,7 +1195,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "bJoEkAezeaPx7rmZCkgM4wjiz1A",
+    "etag": "LWJ__SJ97pnYQRa-xnuJv8237c0",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -1194,7 +1270,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "219",
+      "viewCount": "223",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1286,7 +1362,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "g0cCtCM3J0eJop58Pm_B5gEAYDc",
+    "etag": "Pd41imr6DaLZJgQtY6Jw-T8cJ10",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -1360,7 +1436,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "597",
+      "viewCount": "599",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -1534,7 +1610,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "uWGYsSPCDy6AIXJ4jT4yIBivjiI",
+    "etag": "VI5-PsgscM1hQOoGeHQhh5CloCU",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
@@ -1606,7 +1682,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "477",
+      "viewCount": "478",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1689,7 +1765,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "l1g7RxpeszMfg89AQHlfbYdRhy0",
+    "etag": "XLSm3VLVdVb0WJyjNgapWpV7ras",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -1750,7 +1826,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12859",
+      "viewCount": "12865",
       "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "296"
@@ -1758,7 +1834,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "i8JpOPSjklX3Eqt91iZuA-QdZew",
+    "etag": "hDg_9Cwki7ZIhsmkglPiMujPicw",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -1820,15 +1896,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "869",
+      "viewCount": "894",
       "likeCount": "59",
       "favoriteCount": "0",
-      "commentCount": "32"
+      "commentCount": "34"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "Mml8fdhySw7klGbIBoVwOfEdEsc",
+    "etag": "vKtPNkGPwbZq_v6Cdf6XxYDazZc",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -1882,7 +1958,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "154",
+      "viewCount": "161",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1890,7 +1966,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "I1I7_Hjl7KuuNTK3TG8d5lo8dbk",
+    "etag": "KJPF6aEuY1Y-Srdsf7tBrNruYeA",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -1944,8 +2020,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "868",
-      "likeCount": "32",
+      "viewCount": "883",
+      "likeCount": "33",
       "favoriteCount": "0",
       "commentCount": "3"
     }
@@ -2021,7 +2097,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Z9JyN5VFsRo_400HKbYW8MZZBQk",
+    "etag": "dRn8LK_21SBwuSRg8VBXBIFkYd8",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -2080,15 +2156,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "146",
-      "likeCount": "11",
+      "viewCount": "152",
+      "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "-aRuuyvkHRdeDotNwhEA6xPpoqc",
+    "etag": "pR1PfZ0fgJl6hmXBub4HalF6U-8",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -2142,7 +2218,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "184",
+      "viewCount": "185",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -2349,7 +2425,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "klcQnhChMyb_Ye4QqpnNA657XAU",
+    "etag": "bgYFsJHuD3sts5yXUf8CTVh_Rec",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -2408,7 +2484,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "216",
+      "viewCount": "217",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2416,7 +2492,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "vjee97R5HvEDfw9n2XTA5DALlI8",
+    "etag": "AVfxHnBuCW3ppbch4-Yl3UU-Nq4",
     "id": "3nptpGpaYws",
     "snippet": {
       "publishedAt": "2021-09-03T10:05:40Z",
@@ -2476,7 +2552,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "113",
+      "viewCount": "114",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -2484,7 +2560,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "W3I92MG0RSg07i51V4O4a32jbcI",
+    "etag": "iLL2JTveXok5fBlInafVXnpEiEw",
     "id": "cePEl485E_s",
     "snippet": {
       "publishedAt": "2021-08-31T06:04:20Z",
@@ -2543,7 +2619,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "211",
+      "viewCount": "213",
       "likeCount": "13",
       "favoriteCount": "0",
       "commentCount": "0"
