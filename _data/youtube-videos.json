@@ -1,7 +1,84 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "6RRUHQ8vvcHVdTf5s2PTwD2Ra0U",
+    "etag": "3jP4Sw8mjyPf_hl2LE5RJTwIf_s",
+    "id": "s-s_jlTwCVE",
+    "snippet": {
+      "publishedAt": "2026-02-28T17:31:59Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "Solving the AI Privacy Problem with Federated Learning & Encrypted Agents",
+      "description": "Most AI models rely on massive, centralized datasets, which creates a significant privacy and security risk. This approach forces a false choice between building intelligent systems and protecting sensitive user data. But what if a model could learn from distributed information without ever seeing it? This is possible by combining decentralized training with advanced cryptographic methods.\n\nThis video covers: \n→ The critical flaws of centralized AI training and why it's unsustainable. \n→ How Federated Learning works: training models locally and aggregating updates globally. \n→ The role of Encrypted AI Agents and Homomorphic Encryption in securing model updates. \n→ A step-by-step example of how these technologies enable secure collaboration. \n→ The core architecture for building trustworthy and privacy-first AI systems.\n\nThis video is for AI engineers and developers who need to build powerful models on sensitive or regulated data without compromising user privacy or institutional security. It explains the practical framework for creating systems that are both intelligent and trustworthy.\n\n✨ Subscribe for practical insights on AI and software engineering that go beyond the hype:\nhttps://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 Resources: \n• https://youtu.be/RgzeESzBa4Y\n• TensorFlow Federated: https://www.tensorflow.org/federated \n• PySyft Framework: https://docs.openmined.org/en/latest/\n\n00:00 Intro\n01:19 The Problem with Centralized AI\n03:35 Federated Learning Explained\n06:29 Encrypted AI Agents & Security\n09:35 Privacy-Preserving AI in Action\n12:18 Summary\n\n#federatedlearning  #privacypreservingai  #EncryptedAI #HomomorphicEncryption #trustworthyai  #machinelearning  #dataprivacy  #aisecurity  #decentralizedai",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/s-s_jlTwCVE/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/s-s_jlTwCVE/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/s-s_jlTwCVE/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/s-s_jlTwCVE/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/s-s_jlTwCVE/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "Federated Learning",
+        "Encrypted AI Agents",
+        "Homomorphic Encryption",
+        "Privacy-Preserving AI",
+        "Trustworthy AI",
+        "Decentralized AI",
+        "AI Security",
+        "Machine Learning Privacy",
+        "Secure Aggregation",
+        "Data Privacy",
+        "GDPR AI",
+        "TensorFlow Federated",
+        "PySyft"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "Solving the AI Privacy Problem with Federated Learning & Encrypted Agents",
+        "description": "Most AI models rely on massive, centralized datasets, which creates a significant privacy and security risk. This approach forces a false choice between building intelligent systems and protecting sensitive user data. But what if a model could learn from distributed information without ever seeing it? This is possible by combining decentralized training with advanced cryptographic methods.\n\nThis video covers: \n→ The critical flaws of centralized AI training and why it's unsustainable. \n→ How Federated Learning works: training models locally and aggregating updates globally. \n→ The role of Encrypted AI Agents and Homomorphic Encryption in securing model updates. \n→ A step-by-step example of how these technologies enable secure collaboration. \n→ The core architecture for building trustworthy and privacy-first AI systems.\n\nThis video is for AI engineers and developers who need to build powerful models on sensitive or regulated data without compromising user privacy or institutional security. It explains the practical framework for creating systems that are both intelligent and trustworthy.\n\n✨ Subscribe for practical insights on AI and software engineering that go beyond the hype:\nhttps://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 Resources: \n• https://youtu.be/RgzeESzBa4Y\n• TensorFlow Federated: https://www.tensorflow.org/federated \n• PySyft Framework: https://docs.openmined.org/en/latest/\n\n00:00 Intro\n01:19 The Problem with Centralized AI\n03:35 Federated Learning Explained\n06:29 Encrypted AI Agents & Security\n09:35 Privacy-Preserving AI in Action\n12:18 Summary\n\n#federatedlearning  #privacypreservingai  #EncryptedAI #HomomorphicEncryption #trustworthyai  #machinelearning  #dataprivacy  #aisecurity  #decentralizedai"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT14M10S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "33",
+      "likeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "0"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "zTbIt1pqX_dKvpOwXnC9rdKA3QA",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -69,15 +146,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "37",
-      "likeCount": "2",
+      "viewCount": "81",
+      "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "v3zc8jsQJFkcbCTu7h7PmCZeloU",
+    "etag": "l3VAVdSXKf7PlbqOqjA8RiWTPTk",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -152,15 +229,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "50",
-      "likeCount": "5",
+      "viewCount": "80",
+      "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "5qmOP8oys933pCnEgvPBfNPLFlY",
+    "etag": "G7PewmyzlZ9RIGhGgyOTChPJx5E",
     "id": "4vltll8lO1g",
     "snippet": {
       "publishedAt": "2026-02-07T15:40:48Z",
@@ -229,15 +306,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "73",
-      "likeCount": "1",
+      "viewCount": "81",
+      "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "3"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "ZE_iOqZyow-_Ukvu13aDYhxKjM0",
+    "etag": "t2GLKcpq9O4TUHJdmHXvMcQd_Zc",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -305,7 +382,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "78",
+      "viewCount": "81",
       "likeCount": "1",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -313,7 +390,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "i5C3Qe0l96aQjNhJXVw5Pd71Tys",
+    "etag": "hnDPT24Kf0PKGqRGwmRF4hAWeuY",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -395,15 +472,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "110",
-      "likeCount": "4",
+      "viewCount": "119",
+      "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "8"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "l-zkZJBr3i1by9rNQimaK2YCEnA",
+    "etag": "sMXBAN618ICwTaVh28xII5Xf_Ys",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -483,7 +560,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1130",
+      "viewCount": "1193",
       "likeCount": "25",
       "favoriteCount": "0",
       "commentCount": "6"
@@ -491,7 +568,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "07BJKsCTdLyjpU_0NYpx8Un7C-U",
+    "etag": "6wcIInY7a5dN5PHLftJ_ApR4nNU",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -570,7 +647,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "131",
+      "viewCount": "134",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -578,7 +655,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "TXEAuH104QpUcU4eKdIh4EXrfuQ",
+    "etag": "i8LH_h8fihQjN2XG7oXC3cwQ2L0",
     "id": "pHqoIPAlOcw",
     "snippet": {
       "publishedAt": "2026-01-08T09:44:25Z",
@@ -656,7 +733,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "133",
+      "viewCount": "134",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -754,7 +831,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "j3ZKelmiybmqSWqgfLOOT1EcG74",
+    "etag": "1fVcJTRiGsZyttGivvJPsr4d19M",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -833,10 +910,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "710",
-      "likeCount": "32",
+      "viewCount": "726",
+      "likeCount": "33",
       "favoriteCount": "0",
-      "commentCount": "6"
+      "commentCount": "8"
     }
   },
   {
@@ -930,7 +1007,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ejT5UwWxe6a0wcJn_7ZKalTbPwg",
+    "etag": "X90kZ5S_P8OcpEpasKCEy0x0i6M",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -1011,7 +1088,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "189",
+      "viewCount": "193",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1019,7 +1096,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "2mvFbcjJRBHqV6IsW2XVtzyUwwE",
+    "etag": "M_N5prsOn4yQ-qHHb35nwhl-ISg",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -1094,8 +1171,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1743",
-      "likeCount": "83",
+      "viewCount": "1796",
+      "likeCount": "84",
       "favoriteCount": "0",
       "commentCount": "21"
     }
@@ -1195,7 +1272,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LWJ__SJ97pnYQRa-xnuJv8237c0",
+    "etag": "BrJbFRI8OjI9bN_BRZ7T0v2i3Nk",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -1270,7 +1347,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "223",
+      "viewCount": "231",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1834,7 +1911,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "hDg_9Cwki7ZIhsmkglPiMujPicw",
+    "etag": "-VqKgJXq47n0z7tyW3nD74FDWZ4",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -1896,7 +1973,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "894",
+      "viewCount": "898",
       "likeCount": "59",
       "favoriteCount": "0",
       "commentCount": "34"
@@ -1904,7 +1981,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "vKtPNkGPwbZq_v6Cdf6XxYDazZc",
+    "etag": "gYxDfgXB82WlXt76YMWDDuSByqo",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -1958,7 +2035,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "161",
+      "viewCount": "164",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1966,7 +2043,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KJPF6aEuY1Y-Srdsf7tBrNruYeA",
+    "etag": "cSdu7tOKXFEfZQk22M2N3jHOXLo",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -2020,15 +2097,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "883",
-      "likeCount": "33",
+      "viewCount": "894",
+      "likeCount": "34",
       "favoriteCount": "0",
       "commentCount": "3"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "fshQ-tEKiZlHP18zml_KwjCD27c",
+    "etag": "oSMJVgNB1KOTRQRSmdrk4OvbpQY",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -2089,7 +2166,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "427",
+      "viewCount": "428",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2226,7 +2303,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "hsgWrUQ3SN16ouWy1iOSuctFwUM",
+    "etag": "-DnDl0mJtr5BoEKTbd_X2ipzUeY",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -2280,7 +2357,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "197",
+      "viewCount": "198",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2560,7 +2637,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "iLL2JTveXok5fBlInafVXnpEiEw",
+    "etag": "VNltkBWvWQy7JwkZPGz3SCz2Pr8",
     "id": "cePEl485E_s",
     "snippet": {
       "publishedAt": "2021-08-31T06:04:20Z",
@@ -2619,7 +2696,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "213",
+      "viewCount": "214",
       "likeCount": "13",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2627,7 +2704,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "1A8lhfcmnSgMyIpKCSi5k2Y2W2Y",
+    "etag": "exuMwj1Z6g1hjroBvFisDTS-fJI",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -2687,7 +2764,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "286",
+      "viewCount": "287",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "11"
