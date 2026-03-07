@@ -148,3 +148,7 @@
 * Which are the more immediate projects I'll take on?
 * What are the biggest challenges that I might face in this position?
 * What learnings and developement opportunities will I have in this role?
+
+# AI Engineering
+
+* https://www.linkedin.com/posts/shantanuladhwe_many-wouldnt-like-this-if-im-hiring-for-share-7436009377125425152-wNPc
