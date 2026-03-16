@@ -1,6 +1,6 @@
 {
   "kind": "youtube#channelListResponse",
-  "etag": "GdC8ZqwgyrJkY0XXGmrLNpU9pIA",
+  "etag": "BjXqQpC6_6XtgFEVAMdbPJbN6Bc",
   "pageInfo": {
     "totalResults": 1,
     "resultsPerPage": 5
@@ -8,11 +8,11 @@
   "items": [
     {
       "kind": "youtube#channel",
-      "etag": "LikWw1kN1YIOZiZK7Y3EkPIpoRY",
+      "etag": "6C4stoZBiihwl46q_fxrWaAgN88",
       "id": "UCR4rI98w6-MqYoCS6jR9LGg",
       "snippet": {
         "title": "César Soto Valero",
-        "description": "César traveled from Cuba to Sweden to pursue his life’s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down technical concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, César shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, research and development, and the software industry.\n\n👉 If you like César’s channel, please help him out by subscribing to the channel or sharing one of his videos with a friend. You can also support him through Ko-fi (link below). He really appreciates it!",
+        "description": "I traveled from Cuba to Sweden to pursue my life’s dream and grind my way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along this path, I discovered my true passion: breaking down technical concepts into clear, practical insights that can be easily understood and applied right away.\n\nMy mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, I share both the fundamentals and the real-world lessons I’ve got from over two decades in higher education, research and development, and working in the software industry.\n\n👉 If you like this channel, you can help by subscribing or sharing one of my videos with a friend. You can also support me through Ko-fi (link below). I really appreciate it!",
         "customUrl": "@cesarsotovalero",
         "publishedAt": "2016-03-24T20:49:46Z",
         "thumbnails": {
@@ -35,13 +35,13 @@
         "defaultLanguage": "en",
         "localized": {
           "title": "César Soto Valero",
-          "description": "César traveled from Cuba to Sweden to pursue his life’s dream and grind his way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along the way, he discovered his true passion: breaking down technical concepts into clear, practical insights that can be easily understood and applied right away.\n\nHis mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, César shares both the fundamentals and the real-world lessons he has gained from over two decades in higher education, research and development, and the software industry.\n\n👉 If you like César’s channel, please help him out by subscribing to the channel or sharing one of his videos with a friend. You can also support him through Ko-fi (link below). He really appreciates it!"
+          "description": "I traveled from Cuba to Sweden to pursue my life’s dream and grind my way through a PhD in Computer Science, a journey that was all about simplifying complexity. Along this path, I discovered my true passion: breaking down technical concepts into clear, practical insights that can be easily understood and applied right away.\n\nMy mission today is to help engineers learn consistently, think deeply, and transform their careers. With this aim, I share both the fundamentals and the real-world lessons I’ve got from over two decades in higher education, research and development, and working in the software industry.\n\n👉 If you like this channel, you can help by subscribing or sharing one of my videos with a friend. You can also support me through Ko-fi (link below). I really appreciate it!"
         },
         "country": "SE"
       },
       "statistics": {
-        "viewCount": "24997",
-        "subscriberCount": "448",
+        "viewCount": "25323",
+        "subscriberCount": "451",
         "hiddenSubscriberCount": false,
         "videoCount": "36"
       }
