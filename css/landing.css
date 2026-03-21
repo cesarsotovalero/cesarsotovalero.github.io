@@ -4,6 +4,18 @@
    Uses site CSS variables for colors and dark mode.
    ============================================================ */
 
+/* ---------- Index subtitle override ---------- */
+.intro-header .page-heading .page-subheading {
+  font-size: 18px;
+  font-family: "Concourse T2", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 768px) {
+  .intro-header .page-heading .page-subheading {
+    font-size: 16px;
+  }
+}
+
 /* ---------- Hero ---------- */
 .index-hero {
   margin-bottom: 32px;
