@@ -7,7 +7,7 @@
 /* ---------- Index subtitle override ---------- */
 .intro-header .page-heading .page-subheading {
   font-size: 20px;
-  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Century Supra T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
 @media only screen and (max-width: 768px) {
@@ -16,9 +16,17 @@
   }
 }
 
+/* ---------- Reduce header whitespace on index ---------- */
+.intro-header .page-heading h1 {
+  margin-top: 0.5rem;
+}
+.intro-header .page-heading hr.small {
+  display: none;
+}
+
 /* ---------- Hero ---------- */
 .index-hero {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 .index-hero-content {
   display: flex;
@@ -55,8 +63,7 @@
   font-size: 1.15em;
   font-weight: bold;
   margin-bottom: 4px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid var(--panel-border-color);
+  padding-bottom: 0;
   color: var(--main-text-color);
 }
 
@@ -72,6 +79,7 @@
 .index-cards .youtube-video-title,
 .index-cards .linkedin-post-title {
   font-size: 0.95em;
+  font-weight: normal;
   margin-top: 4px;
   margin-bottom: 4px;
 }
