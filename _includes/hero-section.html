@@ -1,26 +1,19 @@
-<section class="landing-hero">
-   <div class="container">
-      <div class="hero-content">
-         <div class="hero-avatar">
-            <a href="{{ site.url }}">
-               <img src="{{ site.avatar | prepend: site.baseurl }}" alt="{{ site.author.name }}" class="avatar-img" />
-            </a>
-         </div>
-         <h1 class="hero-name">{{ site.title }}</h1>
-         <p class="hero-tagline">I'm into {Tech &cap; Science}</p>
-         <p class="hero-bio">
+<section class="index-hero">
+   <div class="index-hero-content">
+      <div class="index-hero-avatar">
+         <a href="{{ site.url }}">
+            <img src="{{ site.avatar | prepend: site.baseurl }}" alt="{{ site.author.name }}" />
+         </a>
+      </div>
+      <div class="index-hero-text">
+         <p>
             Computer scientist, software engineer, and content creator.
             I help engineers learn, build, and grow faster with AI.
             <br>
             PhD in Computer Science &middot; Data Scientist @ <a href="https://seb.se" target="_blank" rel="noopener noreferrer">SEB</a> &middot; Living in Sweden <img class="emoji" alt="🇸🇪" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="18" width="18">
          </p>
-         <div class="hero-social">
+         <div class="index-hero-social">
             {% include social.html type="page" %}
-         </div>
-         <div class="hero-cta">
-            <a href="/blog" class="btn btn-landing btn-primary-landing">Read my Blog</a>
-            <a href="https://www.youtube.com/{{ site.author.youtube }}" class="btn btn-landing btn-yt-landing" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
-            <a href="https://linkedin.com/in/{{ site.author.linkedin }}" class="btn btn-landing btn-li-landing" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
          </div>
       </div>
    </div>

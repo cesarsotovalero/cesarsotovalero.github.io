@@ -1,24 +1,21 @@
-{% assign post = site.posts.first %}
-{% if post %}
-<section class="landing-section">
-   <h2 class="landing-section-title"><i class="fas fa-pen-nib"></i> Latest Blog Post</h2>
-   <div class="landing-card landing-card-blog">
-      {% if post.image %}
-      <a href="{{ post.url | prepend: site.baseurl }}" class="landing-card-thumb-link">
-         <img src="{{ post.image }}" alt="{{ post.title }}" class="landing-card-thumb" loading="lazy">
-      </a>
-      {% endif %}
-      <div class="landing-card-body">
-         <h3 class="landing-card-title">
+{% if site.posts.size > 0 %}
+<section class="index-section">
+   <h2 class="index-section-title">Latest Posts</h2>
+   <ul class="index-list">
+      {% for post in site.posts limit:3 %}
+      <li class="index-list-item">
+         <div class="index-list-info">
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-         </h3>
-         {% if post.subtitle %}
-         <p class="landing-card-subtitle">{{ post.subtitle }}</p>
+            <span class="index-list-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+         </div>
+         {% if post.image %}
+         <a href="{{ post.url | prepend: site.baseurl }}" class="index-list-thumb">
+            <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+         </a>
          {% endif %}
-         <p class="landing-card-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-         <p class="landing-card-excerpt">{{ post.description | strip_html | truncatewords: 30 }}</p>
-      </div>
-   </div>
-   <p class="landing-see-all"><a href="/blog">See all posts &rarr;</a></p>
+      </li>
+      {% endfor %}
+   </ul>
+   <p class="index-see-all"><a href="/blog">See all posts &rarr;</a></p>
 </section>
 {% endif %}
