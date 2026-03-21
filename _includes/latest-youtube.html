@@ -2,19 +2,23 @@
 {% if videos.size > 0 %}
 <section class="index-section">
    <h2 class="index-section-title">Latest YouTube Videos</h2>
-   <ul class="index-list">
+   <div class="linkedin-posts-container post-preview index-cards">
       {% for video in videos limit:3 %}
-      <li class="index-list-item">
-         <div class="index-list-info">
-            <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" rel="noopener noreferrer">{{ video.snippet.title }}</a>
-            <span class="index-list-meta">{{ video.snippet.publishedAt | date: "%B %-d, %Y" }}</span>
+      <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" class="youtube-video-link">
+         <div class="youtube-video-card">
+            <div class="youtube-video-text">
+               <h3 class="youtube-video-title">{{ video.snippet.title }}</h3>
+               <p class="youtube-video-description">
+                  Published on {{ video.snippet.publishedAt | date: "%b %-d, %Y" }}
+               </p>
+            </div>
+            <div class="youtube-video-thumbnail">
+               <img src="{{ video.snippet.thumbnails.medium.url }}" alt="{{ video.snippet.title }}" loading="lazy">
+            </div>
          </div>
-         <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" rel="noopener noreferrer" class="index-list-thumb">
-            <img src="{{ video.snippet.thumbnails.medium.url }}" alt="{{ video.snippet.title }}" loading="lazy">
-         </a>
-      </li>
+      </a>
       {% endfor %}
-   </ul>
+   </div>
    <p class="index-see-all"><a href="/youtube" class="list-filter">See all videos &rarr;</a></p>
 </section>
 {% endif %}

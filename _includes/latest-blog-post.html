@@ -1,21 +1,25 @@
 {% if site.posts.size > 0 %}
 <section class="index-section">
    <h2 class="index-section-title">Latest Blog Posts</h2>
-   <ul class="index-list">
+   <div class="linkedin-posts-container post-preview index-cards">
       {% for post in site.posts limit:3 %}
-      <li class="index-list-item">
-         <div class="index-list-info">
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <span class="index-list-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+      <a href="{{ post.url | prepend: site.baseurl }}" class="linkedin-post-link">
+         <div class="linkedin-post-card">
+            <div class="linkedin-post-text">
+               <h3 class="linkedin-post-title">{{ post.title }}</h3>
+               <p class="linkedin-post-description">
+                  Posted on {{ post.date | date: "%b %-d, %Y" }}
+               </p>
+            </div>
+            {% if post.image %}
+            <div class="linkedin-post-thumbnail">
+               <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+            </div>
+            {% endif %}
          </div>
-         {% if post.image %}
-         <a href="{{ post.url | prepend: site.baseurl }}" class="index-list-thumb">
-            <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
-         </a>
-         {% endif %}
-      </li>
+      </a>
       {% endfor %}
-   </ul>
+   </div>
    <p class="index-see-all"><a href="/blog" class="list-filter">See all posts &rarr;</a></p>
 </section>
 {% endif %}

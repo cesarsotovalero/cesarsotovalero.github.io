@@ -2,21 +2,25 @@
 {% if li_posts.size > 0 %}
 <section class="index-section">
    <h2 class="index-section-title">Latest Posts on LinkedIn</h2>
-   <ul class="index-list">
+   <div class="linkedin-posts-container post-preview index-cards">
       {% for li_post in li_posts limit:3 %}
-      <li class="index-list-item">
-         <div class="index-list-info">
-            <a href="{{ li_post.url }}" target="_blank" rel="noopener noreferrer">{{ li_post.text | strip_newlines | truncatewords: 12 }}</a>
-            <span class="index-list-meta">{{ li_post.posted_at.date | date: "%B %-d, %Y" }}</span>
+      <a href="{{ li_post.url }}" target="_blank" class="linkedin-post-link">
+         <div class="linkedin-post-card">
+            <div class="linkedin-post-text">
+               <h3 class="linkedin-post-title">{{ li_post.text | strip_newlines | truncatewords: 15 }}</h3>
+               <p class="linkedin-post-description">
+                  Posted on {{ li_post.posted_at.date | date: "%b %-d, %Y" }}
+               </p>
+            </div>
+            {% if li_post.media.url %}
+            <div class="linkedin-post-thumbnail">
+               <img src="{{ li_post.media.url }}" alt="LinkedIn post" loading="lazy">
+            </div>
+            {% endif %}
          </div>
-         {% if li_post.media.url %}
-         <a href="{{ li_post.url }}" target="_blank" rel="noopener noreferrer" class="index-list-thumb">
-            <img src="{{ li_post.media.url }}" alt="LinkedIn post" loading="lazy">
-         </a>
-         {% endif %}
-      </li>
+      </a>
       {% endfor %}
-   </ul>
+   </div>
    <p class="index-see-all"><a href="/linkedin" class="list-filter">See all LinkedIn posts &rarr;</a></p>
 </section>
 {% endif %}
