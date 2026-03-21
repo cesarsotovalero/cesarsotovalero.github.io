@@ -48,14 +48,14 @@
 
 /* ---------- Sections ---------- */
 .index-section {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 .index-section-title {
   font-family: "Concourse T6 Tab", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.15em;
   font-weight: bold;
-  margin-bottom: 12px;
-  padding-bottom: 6px;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
   border-bottom: 1px solid var(--panel-border-color);
   color: var(--main-text-color);
 }
@@ -63,7 +63,7 @@
 /* ---------- Compact card overrides for index page ---------- */
 .index-cards {
   gap: 10px !important;
-  margin: 10px 0 !important;
+  margin: 4px 0 0 !important;
 }
 .index-cards .youtube-video-card,
 .index-cards .linkedin-post-card {
@@ -80,6 +80,10 @@
   font-size: 1.3rem;
   margin-bottom: 0;
 }
+.index-cards .youtube-video-thumbnail,
+.index-cards .linkedin-post-thumbnail {
+  justify-content: flex-end;
+}
 .index-cards .youtube-video-thumbnail img,
 .index-cards .linkedin-post-thumbnail img {
   max-height: 90px;
@@ -90,6 +94,10 @@
   .index-cards .linkedin-post-card {
     padding: 10px;
   }
+  .index-cards .youtube-video-thumbnail,
+  .index-cards .linkedin-post-thumbnail {
+    justify-content: center;
+  }
   .index-cards .youtube-video-thumbnail img,
   .index-cards .linkedin-post-thumbnail img {
     max-height: 140px;
@@ -98,7 +106,7 @@
 
 /* ---------- See all link ---------- */
 .index-see-all {
-  margin-top: 8px;
+  margin-top: 6px;
   margin-bottom: 0;
 }
 .index-see-all .list-filter {
