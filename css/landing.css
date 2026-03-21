@@ -127,17 +127,22 @@
 .index-see-all {
   margin-top: 8px;
   margin-bottom: 0;
-  font-size: 0.85em;
 }
-.index-see-all a {
+.index-see-all .list-filter {
+  font-family: "Concourse T3", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none !important;
+  border: 1px solid #777;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 6px;
   color: var(--main-text-color);
-  text-decoration: none;
-  opacity: 0.6;
 }
-.index-see-all a:hover {
-  opacity: 1;
-  text-decoration: underline;
-  text-decoration-color: var(--link-decoration-color);
+.index-see-all .list-filter:hover {
+  color: var(--main-background-color);
+  background: var(--button-background-color);
+}
 }
 
 /* ---------- Milestones ---------- */
