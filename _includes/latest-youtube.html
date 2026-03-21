@@ -1,0 +1,24 @@
+{% assign video = site.data.youtube-videos[0] %}
+{% if video %}
+<section class="landing-section">
+   <h2 class="landing-section-title"><i class="fab fa-youtube"></i> Latest YouTube Video</h2>
+   <div class="landing-card landing-card-video">
+      <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" rel="noopener noreferrer" class="landing-card-thumb-link">
+         <img src="{{ video.snippet.thumbnails.high.url }}" alt="{{ video.snippet.title }}" class="landing-card-thumb" loading="lazy">
+         <span class="play-overlay"><i class="fas fa-play-circle"></i></span>
+      </a>
+      <div class="landing-card-body">
+         <h3 class="landing-card-title">
+            <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" rel="noopener noreferrer">{{ video.snippet.title }}</a>
+         </h3>
+         <p class="landing-card-meta">
+            {{ video.snippet.publishedAt | date: "%B %-d, %Y" }}
+            &middot; {{ video.statistics.viewCount }} views
+            &middot; {{ video.statistics.likeCount }} likes
+         </p>
+         <p class="landing-card-excerpt">{{ video.snippet.description | strip_newlines | truncatewords: 30 }}</p>
+      </div>
+   </div>
+   <p class="landing-see-all"><a href="/youtube">See all videos &rarr;</a></p>
+</section>
+{% endif %}

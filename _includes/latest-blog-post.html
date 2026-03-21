@@ -1,0 +1,24 @@
+{% assign post = site.posts.first %}
+{% if post %}
+<section class="landing-section">
+   <h2 class="landing-section-title"><i class="fas fa-pen-nib"></i> Latest Blog Post</h2>
+   <div class="landing-card landing-card-blog">
+      {% if post.image %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="landing-card-thumb-link">
+         <img src="{{ post.image }}" alt="{{ post.title }}" class="landing-card-thumb" loading="lazy">
+      </a>
+      {% endif %}
+      <div class="landing-card-body">
+         <h3 class="landing-card-title">
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+         </h3>
+         {% if post.subtitle %}
+         <p class="landing-card-subtitle">{{ post.subtitle }}</p>
+         {% endif %}
+         <p class="landing-card-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+         <p class="landing-card-excerpt">{{ post.description | strip_html | truncatewords: 30 }}</p>
+      </div>
+   </div>
+   <p class="landing-see-all"><a href="/blog">See all posts &rarr;</a></p>
+</section>
+{% endif %}

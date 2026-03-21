@@ -1,0 +1,53 @@
+{% assign milestones = site.data.milestones %}
+{% if milestones.size > 0 %}
+<section class="landing-section landing-section-full">
+   <h2 class="landing-section-title"><i class="fas fa-road"></i> Milestones</h2>
+   <div class="milestones-timeline" id="milestones-timeline">
+      {% for milestone in milestones %}
+      <div class="milestone-item{% if forloop.index > 5 %} milestone-hidden{% endif %}">
+         <div class="milestone-icon">
+            <i class="{{ milestone.icon }}"></i>
+         </div>
+         <div class="milestone-content">
+            <span class="milestone-date">{{ milestone.date }}</span>
+            <h4 class="milestone-title">
+               {% if milestone.link %}
+               <a href="{{ milestone.link }}">{{ milestone.title }}</a>
+               {% else %}
+               {{ milestone.title }}
+               {% endif %}
+            </h4>
+            {% if milestone.description %}
+            <p class="milestone-desc">{{ milestone.description }}</p>
+            {% endif %}
+         </div>
+      </div>
+      {% endfor %}
+   </div>
+   {% if milestones.size > 5 %}
+   <div class="milestones-toggle-wrap">
+      <button class="btn btn-landing btn-sm-landing" id="milestones-toggle">
+         Show more <i class="fas fa-chevron-down"></i>
+      </button>
+   </div>
+   {% endif %}
+</section>
+
+<script>
+(function() {
+   var btn = document.getElementById('milestones-toggle');
+   if (!btn) return;
+   btn.addEventListener('click', function() {
+      var items = document.querySelectorAll('.milestone-hidden');
+      var isExpanded = btn.getAttribute('data-expanded') === 'true';
+      items.forEach(function(el) {
+         el.style.display = isExpanded ? 'none' : 'flex';
+      });
+      btn.setAttribute('data-expanded', String(!isExpanded));
+      btn.innerHTML = isExpanded
+         ? 'Show more <i class="fas fa-chevron-down"></i>'
+         : 'Show less <i class="fas fa-chevron-up"></i>';
+   });
+})();
+</script>
+{% endif %}

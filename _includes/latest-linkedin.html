@@ -1,0 +1,24 @@
+{% assign li_posts = site.data.linkedin-posts.data.posts %}
+{% assign li_post = li_posts[0] %}
+{% if li_post %}
+<section class="landing-section">
+   <h2 class="landing-section-title"><i class="fab fa-linkedin"></i> Latest LinkedIn Post</h2>
+   <div class="landing-card landing-card-linkedin">
+      {% if li_post.media.url %}
+      <a href="{{ li_post.url }}" target="_blank" rel="noopener noreferrer" class="landing-card-thumb-link">
+         <img src="{{ li_post.media.url }}" alt="LinkedIn post image" class="landing-card-thumb" loading="lazy">
+      </a>
+      {% endif %}
+      <div class="landing-card-body">
+         <p class="landing-card-excerpt landing-card-linkedin-text">{{ li_post.text | strip_newlines | truncatewords: 40 }}</p>
+         <p class="landing-card-meta">
+            {{ li_post.posted_at.date | date: "%B %-d, %Y" }}
+            &middot; {{ li_post.stats.total_reactions }} reactions
+            &middot; {{ li_post.stats.comments }} comments
+         </p>
+         <a href="{{ li_post.url }}" class="btn btn-landing btn-sm-landing" target="_blank" rel="noopener noreferrer">Read on LinkedIn &rarr;</a>
+      </div>
+   </div>
+   <p class="landing-see-all"><a href="/linkedin">See all LinkedIn posts &rarr;</a></p>
+</section>
+{% endif %}
