@@ -1,7 +1,7 @@
 {% assign videos = site.data.youtube-videos %}
 {% if videos.size > 0 %}
 <section class="index-section">
-   <h2 class="index-section-title">Latest Videos</h2>
+   <h2 class="index-section-title">Latest YouTube Videos</h2>
    <ul class="index-list">
       {% for video in videos limit:3 %}
       <li class="index-list-item">
@@ -15,6 +15,6 @@
       </li>
       {% endfor %}
    </ul>
-   <p class="index-see-all"><a href="/youtube">See all videos &rarr;</a></p>
+   <p class="index-see-all"><a href="/youtube" class="btn btn-primary tag-btn">See all videos &rarr;</a></p>
 </section>
 {% endif %}

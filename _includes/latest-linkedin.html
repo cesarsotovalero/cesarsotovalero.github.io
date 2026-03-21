@@ -1,7 +1,7 @@
 {% assign li_posts = site.data.linkedin-posts.data.posts %}
 {% if li_posts.size > 0 %}
 <section class="index-section">
-   <h2 class="index-section-title">Latest on LinkedIn</h2>
+   <h2 class="index-section-title">Latest Posts on LinkedIn</h2>
    <ul class="index-list">
       {% for li_post in li_posts limit:3 %}
       <li class="index-list-item">
@@ -17,6 +17,6 @@
       </li>
       {% endfor %}
    </ul>
-   <p class="index-see-all"><a href="/linkedin">See all LinkedIn posts &rarr;</a></p>
+   <p class="index-see-all"><a href="/linkedin" class="btn btn-primary tag-btn">See all LinkedIn posts &rarr;</a></p>
 </section>
 {% endif %}
