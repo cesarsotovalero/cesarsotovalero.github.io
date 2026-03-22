@@ -1,0 +1,27 @@
+{% assign li_posts = site.data.linkedin-posts.data.posts %}
+{% if li_posts.size > 0 %}
+<section class="index-section index-section--linkedin">
+   <div class="index-section-header">
+      <h2 class="index-section-title">Latest Posts on LinkedIn</h2>
+      <p class="index-see-all"><a href="/linkedin" class="list-filter">See all LinkedIn posts &rarr;</a></p>
+   </div>
+   <ul class="index-list">
+      {% for li_post in li_posts limit:3 %}
+      <li class="index-list-item">
+         <a href="{{ li_post.url }}" target="_blank">
+            {% if li_post.media.url %}
+            <img class="index-list-thumb" src="{{ li_post.media.url }}" alt="LinkedIn post" loading="lazy">
+            {% else %}
+            <div class="index-list-placeholder"><i class="fab fa-linkedin"></i></div>
+            {% endif %}
+            <div class="index-list-text">
+               <span class="index-list-title">{{ li_post.text | strip_newlines | truncatewords: 15 }}</span>
+               <span class="index-list-date">{{ li_post.posted_at.date | date: "%b %-d, %Y" }}</span>
+               <span class="index-list-stats"><i class="fas fa-thumbs-up"></i> {{ li_post.totalReactionCount | default: 0 }} · <i class="fas fa-comments"></i> {{ li_post.commentsCount | default: 0 }} · <i class="fas fa-retweet"></i> {{ li_post.repostsCount | default: 0 }}</span>
+            </div>
+         </a>
+      </li>
+      {% endfor %}
+   </ul>
+</section>
+{% endif %}

@@ -1,0 +1,28 @@
+{% assign projects = site.data.portfolio %}
+{% if projects.size > 0 %}
+<section class="index-section index-section--projects">
+   <div class="index-section-header">
+      <h2 class="index-section-title">Pet Projects</h2>
+      <p class="index-see-all"><a href="/software" class="list-filter">See all projects &rarr;</a></p>
+   </div>
+   <ul class="index-list">
+      {% for app in projects limit:3 %}
+      <li class="index-list-item">
+         <a href="{{ app.url }}" target="_blank">
+            <div class="index-list-logo">
+               <img src="/img/logos/{{ app.img }}" alt="{{ app.title }}" loading="lazy">
+            </div>
+            <div class="index-list-text">
+               <span class="index-list-title">{{ app.title }}</span>
+               <span class="index-list-date">{{ app.description }}</span>
+               <span class="index-list-stats">
+                  <img class="index-list-badge" src="//img.shields.io/github/stars/{{ app.stars }}" alt="GitHub stars">
+                  <img class="index-list-badge" src="//img.shields.io/github/forks/{{ app.stars }}" alt="GitHub forks">
+               </span>
+            </div>
+         </a>
+      </li>
+      {% endfor %}
+   </ul>
+</section>
+{% endif %}

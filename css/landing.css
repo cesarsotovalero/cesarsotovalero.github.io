@@ -1,0 +1,463 @@
+/* ============================================================
+   Index Page Styles — cesarsotovalero.net
+   Matches site fonts: Century Supra T4 (body), Concourse T6 Tab (headings)
+   Uses site CSS variables for colors and dark mode.
+   ============================================================ */
+
+/* ---------- Index subtitle override ---------- */
+.intro-header .page-heading .page-subheading {
+  font-size: 20px;
+  font-family: "Concourse T2", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 768px) {
+  .intro-header .page-heading .page-subheading {
+    font-size: 18px;
+  }
+}
+
+/* ---------- Reduce header whitespace on index ---------- */
+.intro-header .page-heading h1 {
+  margin-top: 0.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .intro-header .page-heading h1 {
+    margin-bottom: 4px;
+  }
+  .intro-header .page-heading .page-subheading {
+    margin-top: 0;
+  }
+}
+.intro-header .page-heading hr.small {
+  display: none;
+}
+
+/* ---------- Hero ---------- */
+.index-hero {
+  margin-bottom: 16px;
+  margin-top: -10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.index-hero a {
+  opacity: 0.55;
+  transition: opacity 0.2s ease;
+}
+.index-hero a:hover,
+.index-hero a:active {
+  opacity: 1;
+}
+.index-hero-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.index-hero-avatar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid var(--panel-border-color);
+}
+.index-hero-text p {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+.index-hero-social {
+  margin-top: 4px;
+}
+@media (max-width: 768px) {
+  .index-hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .index-hero {
+    text-align: center;
+  }
+}
+
+/* ---------- Sections ---------- */
+.index-section {
+  --section-accent: #777;
+  margin-bottom: 48px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* ---------- Section accent colors ---------- */
+.index-section--youtube  { --section-accent: #FF0000; }
+.index-section--blog     { --section-accent: #2563EB; }
+.index-section--linkedin { --section-accent: #0A66C2; }
+.index-section--podcast  { --section-accent: #8B5CF6; }
+.index-section--talks    { --section-accent: #E67E22; }
+.index-section--papers   { --section-accent: #059669; }
+.index-section--projects { --section-accent: #10B981; }
+
+/* ---------- Section header row ---------- */
+.index-section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+.index-section-header::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--panel-border-color);
+  order: 1;
+}
+.index-section-title {
+  font-family: "Concourse T6 Tab", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.15em;
+  font-weight: bold;
+  margin: 0;
+  color: var(--main-text-color);
+  flex-shrink: 0;
+}
+
+/* ---------- Card grid ---------- */
+.index-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.index-list-item {
+  margin-bottom: 0;
+}
+.index-list-item a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+  color: var(--main-text-color);
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  background-color: var(--card-background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+.index-list-item a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* ---------- Card thumbnail ---------- */
+.index-list-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+  filter: none;
+  transition: filter 0.3s ease;
+}
+.index-list-item a:hover .index-list-thumb {
+  filter: none;
+}
+/* Placeholder when no image */
+.index-list-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--panel-border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.index-list-placeholder i {
+  font-size: 2em;
+  color: var(--section-accent);
+  opacity: 0.4;
+}
+
+/* ---------- Project logo area (square logos) ---------- */
+.index-list-logo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--card-background-color);
+  padding: 0;
+}
+.index-list-logo img {
+  max-width: 75%;
+  max-height: 75%;
+  object-fit: contain;
+}
+
+/* ---------- GitHub badge in stats ---------- */
+.index-list-badge {
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+/* ---------- Card text area ---------- */
+.index-list-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 14px;
+}
+.index-list-title {
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.88em;
+  font-weight: bold;
+  line-height: 1.45;
+  text-decoration: none;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.index-list-item a:hover .index-list-title {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--main-text-color);
+}
+.index-list-date {
+  font-size: 1.5rem;
+  font-family: "Concourse T3", "Cambria", "Open Sans";
+  color: var(--post-meta-index-color);
+  margin-top: 6px;
+  line-height: 1.4;
+  text-align: center;
+}
+.index-list-stats {
+  font-size: 1.5rem;
+  font-family: "Concourse T3", "Cambria", "Open Sans";
+  color: var(--post-meta-index-color);
+  margin-top: 4px;
+  line-height: 1.4;
+  text-align: center;
+}
+.index-list-tag {
+  font-size: 1.5rem;
+}
+
+/* ---------- Dark-mode card overrides ---------- */
+html[data-theme="dark"] .index-list-item a {
+  border-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.03);
+}
+html[data-theme="dark"] .index-list-item a:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+html[data-theme="dark"] .index-list-placeholder {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+@media only screen and (max-width: 768px) {
+  /* Show header (avatar + name + subtitle) on mobile — overrides main.css hide */
+  .header-hiddable {
+    visibility: visible !important;
+    display: block !important;
+  }
+  .header-image .avatar-container {
+    width: 80px;
+  }
+  /* Card grid: single column on mobile */
+  .index-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .index-list-title {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+
+  .index-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .index-hero {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* Social icons: fit all in one row on small screens */
+  #list-of-social-icons {
+    margin-bottom: 28px;
+  }
+  #list-of-social-icons li {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  #list-of-social-icons img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+
+/* ---------- Social icon brand-color hover ---------- */
+#list-of-social-icons li img {
+  transition: filter 0.15s ease;
+}
+/* LinkedIn #0A66C2 */
+#list-of-social-icons li[data-brand="linkedin"]:hover img {
+  filter: invert(30%) sepia(98%) saturate(1794%) hue-rotate(192deg) brightness(91%) contrast(97%);
+}
+/* YouTube #FF0000 */
+#list-of-social-icons li[data-brand="youtube"]:hover img {
+  filter: invert(12%) sepia(97%) saturate(7404%) hue-rotate(2deg) brightness(104%) contrast(114%);
+}
+/* GitHub #333 – stays dark, subtle brighten */
+#list-of-social-icons li[data-brand="github"]:hover img {
+  filter: invert(20%) sepia(0%) saturate(0%) brightness(80%) contrast(100%);
+}
+/* X / Twitter #000 */
+#list-of-social-icons li[data-brand="x"]:hover img {
+  filter: invert(0%) brightness(0%);
+}
+/* StackOverflow #F48024 */
+#list-of-social-icons li[data-brand="stackoverflow"]:hover img {
+  filter: invert(52%) sepia(78%) saturate(1539%) hue-rotate(348deg) brightness(99%) contrast(93%);
+}
+/* ResearchGate #00CCBB */
+#list-of-social-icons li[data-brand="researchgate"]:hover img {
+  filter: invert(62%) sepia(68%) saturate(497%) hue-rotate(127deg) brightness(96%) contrast(101%);
+}
+/* Google Scholar #4285F4 */
+#list-of-social-icons li[data-brand="googlescholar"]:hover img {
+  filter: invert(42%) sepia(78%) saturate(2263%) hue-rotate(209deg) brightness(99%) contrast(93%);
+}
+/* DBLP #004F9F */
+#list-of-social-icons li[data-brand="dblp"]:hover img {
+  filter: invert(19%) sepia(94%) saturate(2894%) hue-rotate(205deg) brightness(79%) contrast(107%);
+}
+/* ORCID #A6CE39 */
+#list-of-social-icons li[data-brand="orcid"]:hover img {
+  filter: invert(74%) sepia(42%) saturate(570%) hue-rotate(38deg) brightness(95%) contrast(88%);
+}
+/* Gmail #EA4335 */
+#list-of-social-icons li[data-brand="gmail"]:hover img {
+  filter: invert(29%) sepia(95%) saturate(3048%) hue-rotate(349deg) brightness(96%) contrast(89%);
+}
+/* RSS #FFA500 */
+#list-of-social-icons li[data-brand="rss"]:hover img {
+  filter: invert(67%) sepia(90%) saturate(1300%) hue-rotate(359deg) brightness(101%) contrast(106%);
+}
+
+/* Tablet: 2-column grid */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .index-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- See all link (inside header row) ---------- */
+.index-see-all {
+  margin: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
+  order: 2;
+}
+.index-see-all .list-filter {
+  font-family: "Concourse T3", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  text-decoration: none !important;
+  color: #808080;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid #c0c0c0;
+  border-radius: 6px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.index-see-all .list-filter:hover {
+  color: var(--main-text-color);
+  border-color: var(--main-text-color);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* ---------- Milestones ---------- */
+.index-milestones {
+  position: relative;
+  padding-left: 32px;
+  overflow: hidden;
+}
+.index-milestones::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--panel-border-color);
+}
+.index-milestone {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  position: relative;
+}
+.index-milestone-hidden {
+  display: none;
+}
+.index-milestone-icon {
+  position: absolute;
+  left: -32px;
+  width: 22px;
+  height: 22px;
+  background: var(--button-background-color);
+  color: var(--main-background-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.55rem;
+  z-index: 1;
+}
+.index-milestone-body {
+  display: flex;
+  flex-direction: column;
+}
+.index-milestone-date {
+  font-size: 0.7em;
+  font-weight: bold;
+  opacity: 0.45;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.index-milestone-title {
+  font-size: 0.88em;
+  line-height: 1.45;
+}
+.index-milestone-title a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+.index-milestone-title a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--link-decoration-color);
+}
+
+/* ---------- Toggle button ---------- */
+.index-milestones-toggle {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+.index-milestones-toggle button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: 0.85em;
+  color: var(--main-text-color);
+  opacity: 0.6;
+  cursor: pointer;
+}
+.index-milestones-toggle button:hover {
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-color: var(--link-decoration-color);
+}

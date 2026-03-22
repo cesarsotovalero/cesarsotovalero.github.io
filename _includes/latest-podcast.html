@@ -1,0 +1,27 @@
+{% assign podcasts = site.data.podcasts %}
+{% if podcasts.size > 0 %}
+<section class="index-section index-section--podcast">
+   <div class="index-section-header">
+      <h2 class="index-section-title">Latest Podcasts</h2>
+      <p class="index-see-all"><a href="/podcasts" class="list-filter">See all podcasts &rarr;</a></p>
+   </div>
+   <ul class="index-list">
+      {% for podcast in podcasts limit:3 %}
+      <li class="index-list-item">
+         <a href="{{ podcast.url }}" target="_blank">
+            {% if podcast.image %}
+            <img class="index-list-thumb" src="{{ podcast.image }}" alt="{{ podcast.title }}" loading="lazy">
+            {% else %}
+            <div class="index-list-placeholder"><i class="fas fa-microphone-alt"></i></div>
+            {% endif %}
+            <div class="index-list-text">
+               <span class="index-list-title">{{ podcast.title }}</span>
+               <span class="index-list-date">{{ podcast.date | date: "%b %Y" }}</span>
+               <span class="index-list-stats"><i class="fas fa-microphone"></i> {{ podcast.host }}</span>
+            </div>
+         </a>
+      </li>
+      {% endfor %}
+   </ul>
+</section>
+{% endif %}

@@ -1,0 +1,70 @@
+# Milestones timeline - newest first
+# Each entry: date, icon (Font Awesome class or emoji), title, description (optional), link (optional)
+
+- date: "Mar 2026"
+  icon: "fas fa-video"
+  title: "36 YouTube videos published"
+  description: "Reached 36 videos and 450+ subscribers on my YouTube channel."
+  link: "https://www.youtube.com/@cesarsotovalero"
+
+- date: "Feb 2026"
+  icon: "fas fa-pen"
+  title: "New blog post on Spec-Driven Development"
+  description: "Published an article exploring SDD and the future of AI-assisted software development."
+  link: "/blog/sdd-and-the-future-of-software-development.html"
+
+- date: "Jan 2026"
+  icon: "fas fa-chart-line"
+  title: "Blog post on AI-era data roles"
+  description: "Wrote about projections for data-related roles in the AI era."
+  link: "/blog/projections-for-data-related-roles-in-the-ai-era.html"
+
+- date: "Jul 2025"
+  icon: "fas fa-microphone"
+  title: "First podcast appearance"
+  description: "Featured as a guest on the Developer Tech Talk podcast."
+  link: "/podcasts"
+
+- date: "Apr 2023"
+  icon: "fas fa-briefcase"
+  title: "Joined SEB as Data Scientist"
+  description: "Started working as a Data Scientist at SEB, one of the largest banks in Scandinavia."
+
+- date: "Jan 2023"
+  icon: "fas fa-graduation-cap"
+  title: "PhD in Computer Science"
+  description: "Earned my PhD from KTH Royal Institute of Technology in Stockholm, Sweden."
+  link: "https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf"
+
+- date: "2022"
+  icon: "fas fa-award"
+  title: "Best paper award at IEEE/ACM ASE"
+  description: "Research on software debloating recognized at a top software engineering conference."
+  link: "/publications"
+
+- date: "2021"
+  icon: "fas fa-code-branch"
+  title: "DepClean reaches 300+ GitHub stars"
+  description: "Open-source tool for removing unused Maven dependencies gained wide adoption."
+  link: "https://github.com/ASSERT-KTH/depclean"
+
+- date: "2020"
+  icon: "fas fa-file-alt"
+  title: "Published in IEEE TSE"
+  description: "Paper accepted in IEEE Transactions on Software Engineering, a top journal in the field."
+  link: "/publications"
+
+- date: "2018"
+  icon: "fas fa-plane-departure"
+  title: "Moved to Stockholm, Sweden"
+  description: "Relocated from Cuba to Sweden to pursue a PhD at KTH Royal Institute of Technology."
+
+- date: "2016"
+  icon: "fas fa-university"
+  title: "MSc in Computer Science"
+  description: "Completed a Master's degree in Computer Science focused on sports analytics."
+
+- date: "2012"
+  icon: "fas fa-laptop-code"
+  title: "Started career in software engineering"
+  description: "Began professional software development with 15+ years of experience since."

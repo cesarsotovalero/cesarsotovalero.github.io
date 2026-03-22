@@ -1,0 +1,50 @@
+- title: "Stop Stuffing Your LLM's Context Window"
+  event: "AI-fokus"
+  date: 2026-05-19
+  url: https://www.ai-fokus.se/
+  youtube_id:
+
+- title: "Fully Homomorphic Encryption and the Future of Trustworthy AI"
+  event: "Data Innovation Summit"
+  date: 2026-05-06
+  url: https://datainnovationsummit.com/region/nordics/
+  youtube_id:
+
+- title: "The Promise of Trustworthy AI"
+  event: "Voxxed Days Zürich"
+  date: 2026-03-24
+  url: https://vdz26.voxxeddays.ch/talk/?id=13851
+  youtube_id:
+
+- title: "Real-time Financial Fraud Detection with Modern Python"
+  event: "PyData Global"
+  date: 2025-12-04
+  published_at: 2026-01-09
+  url: https://youtu.be/nEg8T8doy64
+  youtube_id: nEg8T8doy64
+
+- title: "From Ideas to APIs: Delivering Fast with Modern Python"
+  event: "PyData Global"
+  date: 2025-12-04
+  published_at: 2026-01-09
+  url: https://youtu.be/SIVhrtQzknQ
+  youtube_id: SIVhrtQzknQ
+
+- title: "My Bank Meets AI: Smarter Decisions Beyond Fancier Spreadsheets"
+  event: "Jfokus"
+  date: 2025-01-01
+  published_at: 2025-06-16
+  url: https://youtu.be/kFPE9EcxhCs
+  youtube_id: kFPE9EcxhCs
+
+- title: "The AI Secret: Why Predictive Machine Learning Still Rules The Real World"
+  event: "SEB Tech Day"
+  date: 2024-10-01
+  url: https://youtu.be/n1t3XEAyUgQ
+  youtube_id: n1t3XEAyUgQ
+
+- title: "Dancing on Thin Ice - Leveraging Software Bill of Materials in Java"
+  event: "Jfokus"
+  date: 2024-02-01
+  url: https://youtu.be/Xn1ShZPrw2o
+  youtube_id: Xn1ShZPrw2o

@@ -14,3 +14,4 @@ ehthumbs.db
 .idea
 .jekyll-metadata
 .vscode/
+.playwright-mcp/

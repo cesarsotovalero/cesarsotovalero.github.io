@@ -59,6 +59,11 @@ module Yegor
       http.use_ssl = true
       http.verify_mode = OpenSSL::SSL::VERIFY_PEER
 
+      # Use system cert store and disable CRL checking to avoid LibreSSL issues on macOS
+      cert_store = OpenSSL::X509::Store.new
+      cert_store.set_default_paths
+      http.cert_store = cert_store
+
       begin
         request = Net::HTTP::Get.new(uri.request_uri)
         response = http.request(request)
