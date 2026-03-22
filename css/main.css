@@ -739,12 +739,7 @@ a[href$=".pptx"] {
 .header-image .avatar-container .avatar-img {
   width: 100%;
   border-radius: 50%;
-  filter: grayscale(100%);
   /*display: block;*/
-}
-
-.header-image .avatar-container .avatar-img:hover {
-  filter: grayscale(0%);
 }
 
 .avatar-img-small {
@@ -2641,7 +2636,7 @@ ul {
 
   #list-of-social-icons {
     margin-top: 10px;
-    text-align: left;
+    text-align: center;
   }
 }
 
