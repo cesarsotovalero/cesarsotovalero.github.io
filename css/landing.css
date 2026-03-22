@@ -20,6 +20,14 @@
 .intro-header .page-heading h1 {
   margin-top: 0.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .intro-header .page-heading h1 {
+    margin-bottom: 4px;
+  }
+  .intro-header .page-heading .page-subheading {
+    margin-top: 0;
+  }
+}
 .intro-header .page-heading hr.small {
   display: none;
 }
@@ -201,7 +209,7 @@
   padding: 12px 14px;
 }
 .index-list-title {
-  font-family: "Concourse T6 Tab", "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.88em;
   font-weight: bold;
   line-height: 1.45;
@@ -258,9 +266,6 @@ html[data-theme="dark"] .index-list-placeholder {
   .header-image .avatar-container {
     width: 80px;
   }
-  .intro-header .page-heading h1 {
-    font-size: 32px;
-  }
   /* Card grid: single column on mobile */
   .index-list {
     grid-template-columns: 1fr;
@@ -281,7 +286,7 @@ html[data-theme="dark"] .index-list-placeholder {
   }
   /* Social icons: fit all in one row on small screens */
   #list-of-social-icons {
-    margin-bottom: 8px;
+    margin-bottom: 28px;
   }
   #list-of-social-icons li {
     padding-left: 2px;

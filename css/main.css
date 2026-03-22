@@ -739,7 +739,14 @@ a[href$=".pptx"] {
 .header-image .avatar-container .avatar-img {
   width: 100%;
   border-radius: 50%;
-  /*display: block;*/
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.header-image .avatar-container .avatar-img:hover,
+.header-image .avatar-container .avatar-img:active {
+  filter: grayscale(0%);
 }
 
 .avatar-img-small {
