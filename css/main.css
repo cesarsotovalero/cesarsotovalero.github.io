@@ -661,7 +661,16 @@ a[href$=".pptx"] {
   z-index: 99;
   float: right;
   margin: 0;
-  padding: 10px 10px 0 10px;
+  padding: 12px 14px;
+  font-size: 22px;
+  min-width: 48px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .navbar-collapse {
@@ -706,6 +715,120 @@ a[href$=".pptx"] {
   display: inline-block;
   margin-bottom: 5px;
 }
+
+/* ===== Sliding Drawer Navigation (mobile) ===== */
+
+/* Hide desktop nav on mobile, show drawer toggle */
+@media only screen and (max-width: 767px) {
+  .navbar-desktop {
+    display: none;
+  }
+}
+
+/* Hide drawer toggle on desktop, show inline nav */
+@media only screen and (min-width: 768px) {
+  #drawer-toggle {
+    display: none;
+  }
+  .drawer-overlay,
+  .drawer-panel {
+    display: none;
+  }
+}
+
+/* Overlay backdrop */
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.drawer-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Slide-in panel */
+.drawer-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100%;
+  background: var(--main-background-color);
+  z-index: 1001;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+}
+.drawer-panel.open {
+  transform: translateX(0);
+}
+
+/* Close button */
+.drawer-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: var(--main-text-color);
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+/* Drawer nav list */
+.drawer-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 60px 24px 24px;
+}
+.drawer-nav-list li {
+  border-bottom: 1px solid var(--hover-col);
+}
+.drawer-nav-list li a {
+  display: block;
+  padding: 14px 0;
+  font-family: "Concourse T2", "Linux Biolinum Capitals", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.drawer-nav-list li a:hover,
+.drawer-nav-list li a:focus {
+  color: var(--main-background-color);
+  background: var(--main-text-color);
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+/* Nested children in drawer */
+.drawer-children {
+  list-style: none;
+  padding: 0 0 0 16px;
+  margin: 0;
+}
+.drawer-children li {
+  border-bottom: none;
+}
+.drawer-children li a {
+  font-size: 14px;
+  padding: 10px 0;
+  text-transform: none;
+  font-weight: 400;
+}
+
+/* ===== End Sliding Drawer ===== */
 
 .header-image .avatar-container {
   opacity: 1;
@@ -1366,6 +1489,13 @@ p.post-meta {
   text-decoration: underline;
   font-style: normal;
   text-decoration-thickness: 0.05em;
+}
+
+.post-preview .post-read-more:hover,
+.post-preview .post-read-more:focus {
+  color: var(--main-text-color);
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--link-decoration-color);
 }
 
 .post-preview a:hover {

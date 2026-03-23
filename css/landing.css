@@ -101,13 +101,6 @@
   margin-bottom: 16px;
   padding-bottom: 8px;
 }
-.index-section-header::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background-color: var(--panel-border-color);
-  order: 1;
-}
 .index-section-title {
   font-family: "Concourse T6 Tab", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.3em;
@@ -149,13 +142,14 @@
 
 /* ---------- Card thumbnail ---------- */
 .index-list-thumb {
-  width: calc(100% - 16px);
-  margin: 0 8px 8px 8px;
+  width: 100%;
+  margin: 0;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
   flex-shrink: 0;
-  border-radius: 8px;
+  border-radius: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   filter: none;
   transition: filter 0.3s ease;
 }
@@ -164,15 +158,15 @@
 }
 /* Placeholder when no image */
 .index-list-placeholder {
-  width: calc(100% - 16px);
-  margin: 0 8px 8px 8px;
+  width: 100%;
+  margin: 0;
   aspect-ratio: 16 / 9;
   background: var(--panel-border-color);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  border-radius: 8px;
+  border-radius: 0;
 }
 .index-list-placeholder i {
   font-size: 1.5em;
@@ -228,12 +222,13 @@
 }
 .index-list-item a:hover .index-list-title {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
   text-underline-offset: 3px;
-  text-decoration-color: var(--main-text-color);
+  text-decoration-color: var(--link-decoration-color);
 }
 .index-list-date {
   font-size: 1.25rem;
-  font-family: "Concourse T3", "Cambria", "Open Sans";
+  font-family: "Century Supra T4", "Cambria", "Open Sans";
   color: var(--post-meta-index-color);
   margin-top: 6px;
   line-height: 1.4;
@@ -282,6 +277,9 @@ html[data-theme="dark"] .index-list-placeholder {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+  .index-list-title {
+    font-size: 0.85em;
+  }
 
   .index-section {
     margin-left: 0;
@@ -291,21 +289,33 @@ html[data-theme="dark"] .index-list-placeholder {
     margin-left: 0;
     margin-right: 0;
   }
-  /* Social icons: fit all in one row on small screens */
+  /* Social icons: spread across full width in one row on mobile */
   #list-of-social-icons {
     margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   #list-of-social-icons li {
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 0;
+    padding-right: 0;
   }
   #list-of-social-icons img {
-    width: 18px !important;
-    height: 18px !important;
+    width: 24px !important;
+    height: 24px !important;
   }
 }
 
 /* ---------- Social icon brand-color hover ---------- */
+#list-of-social-icons li {
+  transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+#list-of-social-icons li:hover,
+#list-of-social-icons li:active {
+  transform: scale(1.2);
+}
 #list-of-social-icons li img {
   transition: filter 0.15s ease;
 }
@@ -363,27 +373,23 @@ html[data-theme="dark"] .index-list-placeholder {
 
 /* ---------- See all link (inside header row) ---------- */
 .index-see-all {
-  margin: 0;
+  margin: 0 0 0 auto;
   flex-shrink: 0;
   white-space: nowrap;
   order: 2;
 }
 .index-see-all .list-filter {
-  font-family: "Concourse T3", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Century Supra T4", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 13px;
-  text-decoration: none !important;
-  color: #808080;
+  font-style: normal;
+  color: var(--main-text-color);
+  text-decoration: underline;
+  text-decoration-thickness: 0.05em;
   white-space: nowrap;
-  display: inline-block;
-  padding: 4px 12px;
-  border: 1px solid #c0c0c0;
-  border-radius: 6px;
-  transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
 .index-see-all .list-filter:hover {
-  color: var(--main-text-color);
-  border-color: var(--main-text-color);
-  background: rgba(0, 0, 0, 0.04);
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--link-decoration-color);
 }
 
 /* ---------- Milestones ---------- */

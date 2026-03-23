@@ -2,7 +2,7 @@
 layout: post
 title: SDD and the Future of Software Development
 subtitle: Spec > Code ?
-tags: programming
+tags: coding
 description: |
   AI can now generate code faster than you can humanly read it. But that is not the problem. The problem is ambiguity moving at machine speed.   Spec-Driven Development (SDD) makes the specification (a.k.a, the "spec") the primary artifact so AI agents get constraints instead of vague requirements. This post explains what SDD is, why it is rising in popularity now, the three levels of SDD, where it works, where it breaks, and a practical checklist you can use right away.
 keywords:

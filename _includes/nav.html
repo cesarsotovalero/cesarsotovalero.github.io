@@ -1,4 +1,84 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <!-- Hamburger toggle (visible on mobile only via Bootstrap) -->
+   <button class="navbar-toggle" type="button" id="drawer-toggle" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+   </button>
 
+   <!-- Desktop: inline nav links (visible >= 768px) -->
+   <div class="navbar-desktop">
+      {% include navigation.html %}
+   </div>
+
+   <!-- Mobile: sliding drawer overlay + panel -->
+   <div class="drawer-overlay" id="drawer-overlay"></div>
+   <div class="drawer-panel" id="drawer-panel">
+      <button class="drawer-close" id="drawer-close" aria-label="Close navigation">
+         <i class="fas fa-times"></i>
+      </button>
+      <ul class="drawer-nav-list">
+         <li><a href="{{ site.url }}">Home</a></li>
+         {% for link in site.navbar-links %}
+            {% if link[1].first %}
+               <li>
+                  <a href="javascript:void(0)" class="drawer-parent">{{ link[0] }}</a>
+                  <ul class="drawer-children">
+                     {% for childlink in link[1] %}
+                        {% for linkparts in childlink %}
+                           {% for txt_url in linkparts %}
+                              <li><a href="{{ txt_url[1] }}">{{ txt_url[0] }}</a></li>
+                           {% endfor %}
+                        {% endfor %}
+                     {% endfor %}
+                  </ul>
+               </li>
+            {% else %}
+               {% capture before %}{{ link[1] | split: "://" | first }}{% endcapture %}
+               {% capture after %}{{ link[1] | split: "://" | last }}{% endcapture %}
+               {% if before != after and before == "http" or before == "https" %}
+                  <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+               {% else %}
+                  <li><a href="{{ site.baseurl }}/{{ link[1] }}">{{ link[0] }}</a></li>
+               {% endif %}
+            {% endif %}
+         {% endfor %}
+         <li>
+            <a href="#" id="theme-toggle" onclick="modeSwitcher(); return false;" style="cursor: pointer;"><i class="fas fa-adjust fa-lg"></i></a>
+         </li>
+      </ul>
+   </div>
+</nav>
+
+<script>
+(function() {
+   var toggle = document.getElementById('drawer-toggle');
+   var overlay = document.getElementById('drawer-overlay');
+   var panel = document.getElementById('drawer-panel');
+   var closeBtn = document.getElementById('drawer-close');
+
+   function openDrawer() {
+      panel.classList.add('open');
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+   }
+   function closeDrawer() {
+      panel.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+   }
+
+   if (toggle) toggle.addEventListener('click', openDrawer);
+   if (overlay) overlay.addEventListener('click', closeDrawer);
+   if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+
+   // Close on link click
+   var links = panel ? panel.querySelectorAll('a') : [];
+   for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function(e) {
+         if (!this.classList.contains('drawer-parent')) closeDrawer();
+      });
+   }
+})();
+</script>
 
 
 
