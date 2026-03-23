@@ -110,7 +110,7 @@
 }
 .index-section-title {
   font-family: "Concourse T6 Tab", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.15em;
+  font-size: 1.3em;
   font-weight: bold;
   margin: 0;
   color: var(--main-text-color);
@@ -123,8 +123,8 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
 .index-list-item {
   margin-bottom: 0;
@@ -149,11 +149,13 @@
 
 /* ---------- Card thumbnail ---------- */
 .index-list-thumb {
-  width: 100%;
+  width: calc(100% - 16px);
+  margin: 0 8px 8px 8px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
   flex-shrink: 0;
+  border-radius: 8px;
   filter: none;
   transition: filter 0.3s ease;
 }
@@ -162,29 +164,33 @@
 }
 /* Placeholder when no image */
 .index-list-placeholder {
-  width: 100%;
+  width: calc(100% - 16px);
+  margin: 0 8px 8px 8px;
   aspect-ratio: 16 / 9;
   background: var(--panel-border-color);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  border-radius: 8px;
 }
 .index-list-placeholder i {
-  font-size: 2em;
+  font-size: 1.5em;
   color: var(--section-accent);
   opacity: 0.4;
 }
 
 /* ---------- Project logo area (square logos) ---------- */
 .index-list-logo {
-  width: 100%;
+  width: calc(100% - 16px);
+  margin: 0 8px 8px 8px;
   aspect-ratio: 16 / 9;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   background: var(--card-background-color);
+  border-radius: 8px;
   padding: 0;
 }
 .index-list-logo img {
@@ -206,11 +212,11 @@
   min-width: 0;
   display: flex;
   flex-direction: column;
-  padding: 12px 14px;
+  padding: 8px 10px;
 }
 .index-list-title {
   font-family: "Concourse T4", "Linux Biolinum", "Cambria", "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.88em;
+  font-size: 0.76em;
   font-weight: bold;
   line-height: 1.45;
   text-decoration: none;
@@ -226,7 +232,7 @@
   text-decoration-color: var(--main-text-color);
 }
 .index-list-date {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: "Concourse T3", "Cambria", "Open Sans";
   color: var(--post-meta-index-color);
   margin-top: 6px;
@@ -234,7 +240,7 @@
   text-align: center;
 }
 .index-list-stats {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: "Concourse T3", "Cambria", "Open Sans";
   color: var(--post-meta-index-color);
   margin-top: 4px;
@@ -242,7 +248,7 @@
   text-align: center;
 }
 .index-list-tag {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 /* ---------- Dark-mode card overrides ---------- */
@@ -264,16 +270,17 @@ html[data-theme="dark"] .index-list-placeholder {
     display: block !important;
   }
   .header-image .avatar-container {
-    width: 80px;
+    width: 110px;
   }
-  /* Card grid: single column on mobile */
+  .header-image .avatar-container .avatar-img-border {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+  /* Card grid: two columns on mobile */
   .index-list {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  .index-list-title {
-    font-size: 24px;
-    line-height: 1.1;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .index-section {
@@ -347,10 +354,10 @@ html[data-theme="dark"] .index-list-placeholder {
   filter: invert(67%) sepia(90%) saturate(1300%) hue-rotate(359deg) brightness(101%) contrast(106%);
 }
 
-/* Tablet: 2-column grid */
+/* Tablet: 3-column grid */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .index-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

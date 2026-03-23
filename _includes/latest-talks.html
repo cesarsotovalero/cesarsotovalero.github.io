@@ -6,15 +6,15 @@
       <p class="index-see-all"><a href="https://www.youtube.com/playlist?list=PL_vMZ-qAAkU70am9FjTKV0f73ASs2578L" class="list-filter" target="_blank">See all talks &rarr;</a></p>
    </div>
    <ul class="index-list">
-      {% for talk in talks limit:3 %}
+      {% for talk in talks limit:4 %}
       <li class="index-list-item">
          <a href="https://www.youtube.com/watch?v={{ talk.youtube_id }}&list=PL_vMZ-qAAkU70am9FjTKV0f73ASs2578L" target="_blank">
-            <img class="index-list-thumb" src="https://img.youtube.com/vi/{{ talk.youtube_id }}/mqdefault.jpg" alt="{{ talk.title }}" loading="lazy">
             <div class="index-list-text">
                <span class="index-list-title">{{ talk.title }}</span>
-               <span class="index-list-date">{{ talk.published_at | date: "%b %-d, %Y" }}</span>
-               <span class="index-list-stats">{{ talk.event }}</span>
+               <span class="index-list-date">{{ talk.published_at | default: talk.date | date: "%b %-d, %Y" }}</span>
+               <span class="index-list-stats"><i class="fas fa-map-marker-alt"></i> {{ talk.event }}</span>
             </div>
+            <img class="index-list-thumb" src="https://img.youtube.com/vi/{{ talk.youtube_id }}/mqdefault.jpg" alt="{{ talk.title }}" loading="lazy">
          </a>
       </li>
       {% endfor %}

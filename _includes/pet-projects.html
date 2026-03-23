@@ -6,23 +6,44 @@
       <p class="index-see-all"><a href="/software" class="list-filter">See all projects &rarr;</a></p>
    </div>
    <ul class="index-list">
-      {% for app in projects limit:3 %}
+      {% for app in projects limit:4 %}
+      {% assign repo_slug = app.stars | split: "?" | first %}
       <li class="index-list-item">
          <a href="{{ app.url }}" target="_blank">
-            <div class="index-list-logo">
-               <img src="/img/logos/{{ app.img }}" alt="{{ app.title }}" loading="lazy">
-            </div>
             <div class="index-list-text">
                <span class="index-list-title">{{ app.title }}</span>
                <span class="index-list-date">{{ app.description }}</span>
                <span class="index-list-stats">
-                  <img class="index-list-badge" src="//img.shields.io/github/stars/{{ app.stars }}" alt="GitHub stars">
-                  <img class="index-list-badge" src="//img.shields.io/github/forks/{{ app.stars }}" alt="GitHub forks">
+                  <i class="fas fa-star"></i> <span class="gh-stars" data-repo="{{ repo_slug }}">–</span>
+                  &nbsp;·&nbsp;
+                  <i class="fas fa-code-branch"></i> <span class="gh-forks" data-repo="{{ repo_slug }}">–</span>
                </span>
+            </div>
+            <div class="index-list-logo">
+               <img src="/img/logos/{{ app.img }}" alt="{{ app.title }}" loading="lazy">
             </div>
          </a>
       </li>
       {% endfor %}
    </ul>
 </section>
+<script>
+(function () {
+  var stars = document.querySelectorAll('.gh-stars[data-repo]');
+  var forks = document.querySelectorAll('.gh-forks[data-repo]');
+  var repos = {};
+  stars.forEach(function (el) { repos[el.dataset.repo] = true; });
+  Object.keys(repos).forEach(function (repo) {
+    fetch('https://api.github.com/repos/' + repo)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data) return;
+        var fmt = function (n) { return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : String(n); };
+        document.querySelectorAll('.gh-stars[data-repo="' + repo + '"]').forEach(function (el) { el.textContent = fmt(data.stargazers_count); });
+        document.querySelectorAll('.gh-forks[data-repo="' + repo + '"]').forEach(function (el) { el.textContent = fmt(data.forks_count); });
+      })
+      .catch(function () {});
+  });
+}());
+</script>
 {% endif %}
