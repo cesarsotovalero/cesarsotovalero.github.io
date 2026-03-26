@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{yb}[21/4/2021 0.1.0 Template for my CV]
-\LoadClass[12pt]{article}
+\LoadClass[11pt]{article}
 \RequirePackage{xcolor}
   \definecolor{cesar-blue}{RGB}{1,38,56}
   \definecolor{cesar-green}{RGB}{0,0,139} % Define green color for links
