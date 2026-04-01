@@ -19,11 +19,15 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 ## 2026
 
+{% youtube 59EVOp8r0aw %}
+
 - **Stop Stuffing Your LLM's Context Window**. Upcoming talk at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026.
 
 - **Fully Homomorphic Encryption and the Future of Trustworthy AI**. Upcoming talk at [Data Innovation Summit](https://datainnovationsummit.com/region/nordics/), 6th May 2026. [Talk Announcement](https://www.linkedin.com/posts/the-data-innovation-summit_disummit2030-dis2026x1-activity-7404107732695298048-FUac)
 
-- **The Promise of Trustworthy AI**. Keynote at [Voxxed Days Zürich](https://vdz26.voxxeddays.ch/talk/?id=13851), 24th March 2026. [Slides](../files/talks/2026voxxed.pdf "pdf")
+- **The Promise of Trustworthy AI**. Keynote at [Voxxed Days Zürich](https://vdz26.voxxeddays.ch/talk/?id=13851), 24th March 2026. [Video](https://youtu.be/59EVOp8r0aw "video"){:target="\_blank"} [Slides](../files/talks/2026voxxed.pdf "pdf")
+
+https://youtu.be/59EVOp8r0aw
 
 ## 2025
 
