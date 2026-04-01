@@ -27,8 +27,6 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 - **The Promise of Trustworthy AI**. Keynote at [Voxxed Days Zürich](https://vdz26.voxxeddays.ch/talk/?id=13851), 24th March 2026. [Video](https://youtu.be/59EVOp8r0aw "video"){:target="\_blank"} [Slides](../files/talks/2026voxxed.pdf "pdf")
 
-https://youtu.be/59EVOp8r0aw
-
 ## 2025
 
 {% youtube nEg8T8doy64 %}
