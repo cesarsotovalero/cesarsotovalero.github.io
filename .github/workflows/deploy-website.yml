@@ -21,6 +21,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Python dependencies
+        run: pip install pyyaml
+
+      - name: Generate talks.yml from talks.md
+        run: python scripts/sync_talks_from_page.py
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:

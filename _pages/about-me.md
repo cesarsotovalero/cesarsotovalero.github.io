@@ -6,7 +6,11 @@ subtitle: 👨🏼‍💻
 description: César Soto Valero is a computer scientist, software engineer, and content creator.
 ---
 
+<link rel="stylesheet" href="/css/landing.css">
+
+<section class="index-hero">
 {% include social.html type="page" %}
+</section>
 
 [//]: # "Profile to view: https://www.zeileis.org/"
 [//]: # '<code style="text-align: center; font-family:jetbrains_monoregular, courier new, serif; font-size: 18px; font-weight: lighter">'
@@ -200,4 +204,5 @@ form.wj-contact input[type="submit"]:active {
 # Footnotes
 
 [^1]: For more on these topics, see [my living review of software debloating papers](./software-debloating-papers), or consult [my list of software debloating tools](./software-debloating-tools).
+
 [^4]: My PhD was generously funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org), funded by Knut and Alice Wallenberg Foundation.

@@ -1,50 +1,161 @@
-- title: "Stop Stuffing Your LLM's Context Window"
-  event: "AI-fokus"
-  date: 2026-05-19
+# AUTO-GENERATED from _pages/talks.md — do not edit manually.
+# Run: python3 scripts/sync_talks_from_page.py
+
+- title: Stop Stuffing Your LLM's Context Window
+  event: AI-fokus
+  date: '2026-05-19'
   url: https://www.ai-fokus.se/
   youtube_id:
-
-- title: "Fully Homomorphic Encryption and the Future of Trustworthy AI"
-  event: "Data Innovation Summit"
-  date: 2026-05-06
+- title: Fully Homomorphic Encryption and the Future of Trustworthy AI
+  event: Data Innovation Summit
+  date: '2026-05-06'
   url: https://datainnovationsummit.com/region/nordics/
   youtube_id:
-
-- title: "The Promise of Trustworthy AI"
-  event: "Voxxed Days Zürich"
-  date: 2026-03-24
-  url: https://youtu.be/59EVOp8r0aw
+- title: 'Moving Fast and Importing Things: The Software Supply Chain of Agentic AI'
+  event: 5th KTH Workshop on the Software Supply Chain
+  date: '2026-04-24'
+  url: https://chains.proj.kth.se/software-supply-chain-workshop-5.html
+  youtube_id:
+- title: The Promise of Trustworthy AI
+  event: Voxxed Days Zürich
+  date: '2026-03-24'
+  url: https://vdz26.voxxeddays.ch/talk/?id=13851
   youtube_id: 59EVOp8r0aw
-
-- title: "Real-time Financial Fraud Detection with Modern Python"
-  event: "PyData Global"
-  date: 2025-12-04
-  published_at: 2026-01-09
-  url: https://youtu.be/nEg8T8doy64
+- title: Real-time Financial Fraud Detection with Modern Python
+  event: PyData Global
+  date: '2025-12-01'
+  url: https://pydata.org/global2025/
   youtube_id: nEg8T8doy64
-
-- title: "From Ideas to APIs: Delivering Fast with Modern Python"
-  event: "PyData Global"
-  date: 2025-12-04
-  published_at: 2026-01-09
-  url: https://youtu.be/SIVhrtQzknQ
+- title: 'From Ideas to APIs: Delivering Fast with Modern Python'
+  event: PyData Global
+  date: '2025-12-01'
+  url: https://pydata.org/global2025/
   youtube_id: SIVhrtQzknQ
-
-- title: "My Bank Meets AI: Smarter Decisions Beyond Fancier Spreadsheets"
-  event: "Jfokus"
-  date: 2025-01-01
-  published_at: 2025-06-16
-  url: https://youtu.be/kFPE9EcxhCs
+- title: 'My Bank Meets AI: Smarter Decisions Beyond Fancier Spreadsheets'
+  event: AI-fokus
+  date: '2026-01-01'
+  url: https://www.jfokus.se/ai-fokus
   youtube_id: kFPE9EcxhCs
-
-- title: "The AI Secret: Why Predictive Machine Learning Still Rules The Real World"
-  event: "SEB Tech Day"
-  date: 2024-10-01
-  url: https://youtu.be/n1t3XEAyUgQ
+- title: 'The AI Secret: Why Predictive Machine Learning Still Rules The Real World'
+  event: SEB Tech Day
+  date: '2024-10-01'
   youtube_id: n1t3XEAyUgQ
-
-- title: "Dancing on Thin Ice - Leveraging Software Bill of Materials in Java"
-  event: "Jfokus"
-  date: 2024-02-01
-  url: https://youtu.be/Xn1ShZPrw2o
+- title: 'Dancing on Thin Ice: Leveraging Software Bill of Materials in Java'
+  event: Jfokus
+  date: '2024-02-01'
+  url: https://www.jfokus.se/talks/1661
   youtube_id: Xn1ShZPrw2o
+- title: Hand-In-Hand Live Coding Session With Github Copilot
+  event: SEB's main theater in Solna
+  date: '2024-04-01'
+  youtube_id:
+- title: Enhancing Semantic Search With RAG
+  event: SEB
+  date: '2024-03-01'
+  youtube_id:
+- title: Preventing Software Supply Chain Attacks With Dependency Management Best
+    Practices
+  event: SEB Tech Day
+  date: '2023-09-01'
+  youtube_id: 7IoXciSucw4
+- title: Debloating Java Dependencies
+  event: KTH
+  date: '2023-06-01'
+  youtube_id: Ub684G_aM5Q
+- title: Software Supply Chain Security
+  event: Digital Futures
+  date: '2023-06-01'
+  url: https://www.digitalfutures.kth.se/
+  youtube_id:
+- title: The Software Supply Chain of Crypto and Decentralization
+  event: 2nd Descentralized Camp Meetup
+  date: '2023-01-01'
+  url: https://www.meetup.com/decentralized-camp/events/290035869/
+  youtube_id:
+- title: Coverage-Based Debloating for Java Bytecode
+  event: ESEC/FSE
+  date: '2022-11-01'
+  youtube_id: HXj2B8eHmt4
+- title: Automatic Software Debloating
+  event: KTH
+  date: '2022-11-01'
+  youtube_id:
+- title: The Multibillion Dollar Software Supply Chain of Ethereum
+  event: 1st Workshop on the Software Supply Chain
+  date: '2022-10-01'
+  youtube_id:
+- title: Automatic Software Debloating
+  event: EECS Summer Event
+  date: '2022-06-01'
+  youtube_id:
+- title: 'Java is Going to the Moon: Native Images with GraalVM'
+  event: KTH
+  date: '2022-05-01'
+  youtube_id:
+- title: A Prime on Software Debloating
+  event: KTH
+  date: '2022-03-01'
+  youtube_id:
+- title: The Software Supply Chain of Enterprise Java Ethereum Nodes
+  event: KTH
+  date: '2022-01-01'
+  youtube_id:
+- title: 'DepClean: Automatically Revealing Bloated Software Dependencies in Maven
+    Projects'
+  event: FOSDEM
+  date: '2021-02-01'
+  youtube_id: 8SndbPMwdWE
+- title: The Software Production Landscape
+  event: KTH
+  date: '2021-09-01'
+  youtube_id:
+- title: A Longitudinal Analysis of Bloated Java Dependencies
+  event: ESEC/FSE
+  date: '2021-08-01'
+  youtube_id: cePEl485E_s
+- title: Automated Software Debloat
+  event: KTH
+  date: '2021-04-01'
+  youtube_id:
+- title: An Introduction to Bloat History Analysis
+  event: 20th ASSERT Software Engineering Workshop
+  date: '2020-11-01'
+  youtube_id:
+- title: Are Developers Willing to Remove Bloated Dependencies?
+  event: 13th ASSERT Software Engineering Workshop
+  date: '2020-01-01'
+  youtube_id:
+- title: Presentation for FDT3303
+  event: KTH
+  date: '2019-12-01'
+  youtube_id:
+- title: Do the Dependency Conflicts in My Project Matter?
+  event: 11th ASSERT Software Engineering Workshop
+  date: '2019-11-01'
+  youtube_id:
+- title: Taming Bloated Software Dependencies
+  event: SL
+  date: '2019-11-01'
+  url: https://sl.se/
+  youtube_id:
+- title: WASP Presentation
+  event: Nanyang Technological University
+  date: '2019-10-01'
+  youtube_id:
+- title: Studying Bloated Dependencies in the Maven Ecosystem
+  event: CASTOR Software Days
+  date: '2019-10-01'
+  youtube_id:
+- title: The Emergence of Software Diversity in Maven Central
+  event: 16th International Conference on Mining Software Repositories
+  date: '2019-05-01'
+  youtube_id:
+- title: Bloatware Mitigation and Analysis
+  event: 5th ASSERT Software Engineering Workshop
+  date: '2018-11-01'
+  youtube_id:
+- title: 'Mining Software Dependencies at Large Scale: A Preliminary Study on the
+    Maven Central Repository'
+  event: 4th ASSERT Software Engineering Workshop
+  date: '2018-09-01'
+  youtube_id:
