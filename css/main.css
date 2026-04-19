@@ -727,46 +727,68 @@ a[href$=".pptx"] {
 
 /* Hide drawer toggle on desktop, show inline nav */
 @media only screen and (min-width: 768px) {
-  #drawer-toggle {
+  .navbar-toggle[commandfor] {
     display: none;
   }
-  .drawer-overlay,
-  .drawer-panel {
+  dialog.drawer-panel {
     display: none;
   }
 }
 
-/* Overlay backdrop */
-.drawer-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-.drawer-overlay.open {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Slide-in panel */
-.drawer-panel {
+/* Dialog-based drawer panel */
+dialog.drawer-panel {
   position: fixed;
   top: 0;
   left: 0;
   width: 270px;
   height: 100%;
+  max-height: 100%;
+  max-width: 270px;
+  margin: 0;
+  padding: 0;
   background: var(--main-background-color);
-  z-index: 1001;
-  transform: translateX(-100%);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--main-text-color);
+  border: none;
   overflow-y: auto;
   box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateX(-100%);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    display 0.3s allow-discrete,
+    overlay 0.3s allow-discrete;
 }
-.drawer-panel.open {
+
+dialog.drawer-panel[open] {
+  opacity: 1;
   transform: translateX(0);
+}
+
+@starting-style {
+  dialog.drawer-panel[open] {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+dialog.drawer-panel::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    display 0.3s allow-discrete,
+    overlay 0.3s allow-discrete;
+}
+
+dialog.drawer-panel[open]::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  dialog.drawer-panel[open]::backdrop {
+    opacity: 0;
+  }
 }
 
 /* Close button */
@@ -2059,7 +2081,7 @@ pre {
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.5em;
-  font-family: "jetbrains_monoregular", sans-serif;
+  font-family: "jetbrains_monoregular", monospace;
   border: none;
   margin-bottom: 26px;
   font-weight: 400;
@@ -2070,13 +2092,13 @@ pre code {
 }
 
 pre .lineno {
-  font-family: operator_mono, jetbrains_monoregular;
+  font-family: operator_mono, jetbrains_monoregular, monospace;
   font-weight: 200;
 }
 
 code {
   background-color: var(--inline-code-color);
-  font-family: "jetbrains_monoregular", sans-serif;
+  font-family: "jetbrains_monoregular", monospace;
   font-size: 17px;
   color: var(--main-text-color);
   border-radius: 1px;
