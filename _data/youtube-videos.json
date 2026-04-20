@@ -1,7 +1,85 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "ceuFS1OE-TrRnks3L79qejEvKMY",
+    "etag": "l9gjbqz2r7SzZUt3ZjwvUzcpevk",
+    "id": "Avngm8d2X6I",
+    "snippet": {
+      "publishedAt": "2026-04-14T22:00:00Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "We Are All Probabilistic in the End",
+      "description": "Learn the essential mental model for software engineering with AI, moving beyond prompt engineering to fix why your Large Language Model assistant fails.\n\nWhen your AI assistant produces frustrating or unexpected code, the problem isn't just the prompt. We are using a mental model for a predictable compiler to manage a probabilistic teammate. This fundamental mismatch guarantees failure and burnout. Shifting your perspective can turn your AI collaborator into a powerful asset and even improve your human team's workflow by forcing you to create better systems.\n\nThis video covers: \n❶ Why the 'unreliable coworker' feeling you get from AI is actually a mental model problem. \n❷ How curating context is the key job to make an LLM effective, and why it's a gift to your human engineers. \n❸ The three critical differences between an LLM and a human (memory, judgment, and responsibility) that you cannot ignore. \n❹ The proven engineering practices that turn AI from a frustrating mess into a powerful collaborator.\n\nThis video is for software developers, engineers, and tech leaders who are frustrated by the inconsistent or unreliable results from AI coding tools. If you want a practical framework to make AI assistants genuinely useful, this is for you.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:43 The Unreliable Coworker Analogy\n2:59 Context Is Everything\n5:26 Where the Analogy Breaks\n7:42 The Effective Fix\n10:46 Takeaway\n\n#AIEngineering #LLM #SoftwareEngineering #AIassistant #MentalModel #DeveloperTools #CodingWithAI #AIStrategy",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "AI assistant",
+        "Large Language Models",
+        "LLM",
+        "software engineering",
+        "mental model",
+        "AI development",
+        "AI coding",
+        "probabilistic systems",
+        "AI strategy",
+        "developer productivity",
+        "AI integration",
+        "Context window",
+        "AI moral spillover",
+        "Sycophancy in LLM"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "We Are All Probabilistic in the End",
+        "description": "Learn the essential mental model for software engineering with AI, moving beyond prompt engineering to fix why your Large Language Model assistant fails.\n\nWhen your AI assistant produces frustrating or unexpected code, the problem isn't just the prompt. We are using a mental model for a predictable compiler to manage a probabilistic teammate. This fundamental mismatch guarantees failure and burnout. Shifting your perspective can turn your AI collaborator into a powerful asset and even improve your human team's workflow by forcing you to create better systems.\n\nThis video covers: \n❶ Why the 'unreliable coworker' feeling you get from AI is actually a mental model problem. \n❷ How curating context is the key job to make an LLM effective, and why it's a gift to your human engineers. \n❸ The three critical differences between an LLM and a human (memory, judgment, and responsibility) that you cannot ignore. \n❹ The proven engineering practices that turn AI from a frustrating mess into a powerful collaborator.\n\nThis video is for software developers, engineers, and tech leaders who are frustrated by the inconsistent or unreliable results from AI coding tools. If you want a practical framework to make AI assistants genuinely useful, this is for you.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:43 The Unreliable Coworker Analogy\n2:59 Context Is Everything\n5:26 Where the Analogy Breaks\n7:42 The Effective Fix\n10:46 Takeaway\n\n#AIEngineering #LLM #SoftwareEngineering #AIassistant #MentalModel #DeveloperTools #CodingWithAI #AIStrategy"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT12M21S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "40",
+      "likeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "2"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "fb7XTSzoZALWE95goVcL2jft_ak",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -79,15 +157,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "182",
-      "likeCount": "10",
+      "viewCount": "204",
+      "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "ROrmuah_qCddVyT0owGJd0wL-S4",
+    "etag": "Jvh0yrQhBPBJz7lZK-m_IpA_UZo",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -156,7 +234,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "156",
+      "viewCount": "166",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -164,7 +242,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "xXtlhMS-8VLcchSdvlL9e7Qn1aU",
+    "etag": "4qy0jDjvokJFNx-uYLlZs1J2WLQ",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -232,7 +310,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "275",
+      "viewCount": "312",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -240,7 +318,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "sYlBDp9yxnWbOXUMo3rVzTtWDOs",
+    "etag": "ypGljZVBFh7GsnQkZZHSx45ras4",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -315,15 +393,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "144",
-      "likeCount": "11",
+      "viewCount": "154",
+      "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "UlPYc95vqQq-3HHL3Vj70fnHcBw",
+    "etag": "Zg0Ib-ILHeoi7hjqPrLT-Bg0cW8",
     "id": "4vltll8lO1g",
     "snippet": {
       "publishedAt": "2026-02-07T15:40:48Z",
@@ -392,7 +470,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "97",
+      "viewCount": "99",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -400,7 +478,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5Nq4CTJ8nzlBJcwhfg-dVVNDHVo",
+    "etag": "AEyq3VyOkEw3zUc_RNBeYKjRbuA",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -468,7 +546,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "96",
+      "viewCount": "97",
       "likeCount": "1",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -476,7 +554,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "J2CK04b5I9kl5JZSKWTqjmy9QSY",
+    "etag": "LBXS9_ioLmwOLs0GAVEIxlBLZ1w",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -558,7 +636,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "180",
+      "viewCount": "186",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -566,7 +644,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5VBAfOKcYlkd5HLtYfQncq-6noo",
+    "etag": "t50NA1ohZZw4b_uBCUBIz5RohM0",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -646,15 +724,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2560",
-      "likeCount": "52",
+      "viewCount": "2747",
+      "likeCount": "56",
       "favoriteCount": "0",
       "commentCount": "9"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "W993UqHPBa4SjTe_N0sfeF_8kiY",
+    "etag": "fimLuTx0SV-jxRVOxuDPDpTUVm4",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -733,7 +811,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "170",
+      "viewCount": "171",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -827,7 +905,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "CDCAHQUJYPZ3dymvSNhSPvoYXQ4",
+    "etag": "8g-lXxptJfaJHhOpXs_AU-RxghM",
     "id": "-a6Pbv_yBWw",
     "snippet": {
       "publishedAt": "2025-11-29T07:55:26Z",
@@ -909,7 +987,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "269",
+      "viewCount": "271",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -917,7 +995,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "g7wXM6C1RVrUQ65cCMGgxqq1EBs",
+    "etag": "XfD13_I5pbnzis0ssE8rHiGS014",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -996,15 +1074,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "859",
-      "likeCount": "37",
+      "viewCount": "892",
+      "likeCount": "38",
       "favoriteCount": "0",
       "commentCount": "8"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "QEizOyhRfnrFaIRhDUIc_pJpKds",
+    "etag": "anu3qPp4xnvSsajizTo4jFa6mWM",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
@@ -1085,7 +1163,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "215",
+      "viewCount": "216",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1093,7 +1171,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YZz6NGZH4uOWNir174utQnbpnFA",
+    "etag": "JD2DKNc-M4BR3dEbJ2mI6ksOOr8",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -1174,7 +1252,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "208",
+      "viewCount": "211",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1182,7 +1260,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "OSSD-T5NNc1ExOnu5MlC86mHGKU",
+    "etag": "OEMDbRJBnaLVIS6CHbVpVMDYk7g",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -1257,8 +1335,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2129",
-      "likeCount": "99",
+      "viewCount": "2184",
+      "likeCount": "100",
       "favoriteCount": "0",
       "commentCount": "23"
     }
@@ -1358,7 +1436,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "XRjKy79haEs6qKcCN7SA0BjGuCc",
+    "etag": "sANRdXX67ch-G2xKZwsO1NnX4u8",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -1433,7 +1511,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "250",
+      "viewCount": "253",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1441,7 +1519,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "NO1hi9XR-Fsf-OXG2HENN4NO8Ic",
+    "etag": "Ar2Z_JKfW0gqt_wBrd-3NeenjVE",
     "id": "SQY2IED6vFQ",
     "snippet": {
       "publishedAt": "2024-12-14T22:45:00Z",
@@ -1517,7 +1595,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "167",
+      "viewCount": "168",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1607,7 +1685,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "d6DwWXEc-21mU8rGRt3gN3DOLDc",
+    "etag": "csbdoxpc1W7I7LXO7l3bo4O8Ou0",
     "id": "GRd2nxNTZDI",
     "snippet": {
       "publishedAt": "2024-11-30T07:00:08Z",
@@ -1682,7 +1760,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "192",
+      "viewCount": "193",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1690,7 +1768,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6O2GRNaOW8-YBNXxk1HXhzZrbyk",
+    "etag": "nBQxGjr-wfX7UlcqYEPHTWbKXUw",
     "id": "n1t3XEAyUgQ",
     "snippet": {
       "publishedAt": "2024-10-21T06:00:32Z",
@@ -1765,7 +1843,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "167",
+      "viewCount": "168",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1853,7 +1931,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "mcWCcnQJFFBdpVbk7ioW_6yTgYg",
+    "etag": "Kz-QjDPyXescM9ppqX7XrgkiF70",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
@@ -1920,7 +1998,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "153",
+      "viewCount": "154",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1928,7 +2006,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "eNFd6igTLm4EKo6vV2vBZmXUNWk",
+    "etag": "BM6C67Wa2VwWJJQORPQPmhSESwU",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -1997,7 +2075,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "SRWDzz_Ri_ZHcq9R5mO2TkADD-Y",
+    "etag": "fZ2-qMR6nRT_gEY6BfqTzzy2uP4",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -2059,7 +2137,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "941",
+      "viewCount": "945",
       "likeCount": "61",
       "favoriteCount": "0",
       "commentCount": "34"
@@ -2067,7 +2145,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "BBdPDjpVoz5zNy5zQF8waTicarQ",
+    "etag": "TmnviH60Lwmj62Ool5nHK7rCwyc",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -2121,7 +2199,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "201",
+      "viewCount": "205",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2129,7 +2207,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "NhYvr_kBTLgheyhFbhFBCLlCYTE",
+    "etag": "X8af5CuvYPLSNGHgXRtqBMsx1L8",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -2183,7 +2261,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "941",
+      "viewCount": "952",
       "likeCount": "33",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2260,7 +2338,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ym-uw8FDIhwqzrQGoDncid7IK9g",
+    "etag": "t7X249eps5pYP9QCpQqKr2TEhPI",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -2319,7 +2397,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "167",
+      "viewCount": "168",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -2327,7 +2405,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8g4WWUZuxNMKAw72QnIBuNiHdyQ",
+    "etag": "EJGK_o2M_MDJTHNx7ya2lCIjB-4",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -2381,7 +2459,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "194",
+      "viewCount": "195",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -2389,7 +2467,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "gE6ryagqdlfZU6J1poJmXaU2d6A",
+    "etag": "1J3oaG6EcOqB6v-g9Rf8AiGv6xM",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -2443,7 +2521,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "202",
+      "viewCount": "204",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2520,7 +2598,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6YW_B7vwD6zeQ0dsxbNxBNgusnY",
+    "etag": "yyVGmdOWgFB4O67xVfNpd3jZ9tE",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -2580,8 +2658,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "428",
-      "likeCount": "15",
+      "viewCount": "431",
+      "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "0"
     }
@@ -2655,7 +2733,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "N_cLnhIWBzIjiurif1cudmqamjU",
+    "etag": "QXh7Hdj80AcjeriD-yX74YmbOkc",
     "id": "3nptpGpaYws",
     "snippet": {
       "publishedAt": "2021-09-03T10:05:40Z",
@@ -2715,7 +2793,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "115",
+      "viewCount": "116",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "2"
