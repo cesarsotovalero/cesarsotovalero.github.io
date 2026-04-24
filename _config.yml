@@ -11,6 +11,7 @@ navbar-links:
   YouTube: "youtube"
   Podcasts: "podcasts"
   Talks: "talks"
+  Service: "service"
   About: "about-me"
 
 # Image to show in the navigation bar - image must be a square (width = height)
