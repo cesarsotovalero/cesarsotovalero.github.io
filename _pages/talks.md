@@ -7,7 +7,7 @@ subtitle: 📢
 published: true
 ---
 
-# Past Events
+# Past Talks
 
 I've delivered talks since 2018 at academic and industry conferences, workshops, and similar events.
 
@@ -22,11 +22,8 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 {% youtube 59EVOp8r0aw %}
 
 - **Stop Stuffing Your LLM's Context Window**. Upcoming talk at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026.
-
 - **Fully Homomorphic Encryption and the Future of Trustworthy AI**. Upcoming talk at [Data Innovation Summit](https://datainnovationsummit.com/region/nordics/), 6th May 2026. [Talk Announcement](https://www.linkedin.com/posts/the-data-innovation-summit_disummit2030-dis2026x1-activity-7404107732695298048-FUac)
-
 - **Moving Fast and Importing Things: The Software Supply Chain of Agentic AI**. Upcoming talk at the [5th KTH Workshop on the Software Supply Chain](https://chains.proj.kth.se/software-supply-chain-workshop-5.html), 24th April 2026. [Video](https://youtu.be/AfaOvAXFCmg "video"){:target="\_blank"} [Slides](../files/presentations/Moving_Fast_and_Importing_Things_LangGraph_Supply_Chain.pptx "pptx")
-
 - **The Promise of Trustworthy AI**. Keynote at [Voxxed Days Zürich](https://vdz26.voxxeddays.ch/talk/?id=13851), 24th March 2026. [Video](https://youtu.be/59EVOp8r0aw "video"){:target="\_blank"} [Slides](../files/talks/2026voxxed.pdf "pdf")
 
 ## 2025
@@ -60,11 +57,17 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 {% youtube HXj2B8eHmt4 %}
 
 - **Coverage-Based Debloating for Java Bytecode**. Presented at ESEC/FSE, Singapore, November 2022. [Video](https://youtu.be/HXj2B8eHmt4 "video")
+
 - **Automatic Software Debloating**. 80% PhD Seminar. Presented at KTH, November 2022. [Slides](../files/talks/80_percent_2022.pdf "pdf")
+
 - **The Multibillion Dollar Software Supply Chain of Ethereum**. Presented at _1st Workshop on the Software Supply Chain_, KTH, Sweden, October 2022. [Slides](https://docs.google.com/presentation/d/16yingW3HUNj6XmAfFFc_qz1bSI-ZRfV0/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
+
 - **Automatic Software Debloating**. Poster presented during _EECS Summer Event_, KTH, Sweden, June 2022. [Poster](../files/posters/poster-scs-48x36.pdf)
+
 - **Java is Going to the Moon: Native Images with GraalVM**. Presented at KTH, May 2022. [Slides](https://docs.google.com/presentation/d/1JDVerE77ZWLqwtWP430QXF1KTd4RhKoD/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
+
 - **A Prime on Software Debloating**. Presented at KTH, March 2022. [Slides](../files/talks/A_Prime_On_Software_Debloating.pdf "pdf")
+
 - **The Software Supply Chain of Enterprise Java Ethereum Nodes**. Presented at KTH, January 2022. [Slides](https://docs.google.com/presentation/d/1pZGJ_9X_mvOzaqlelQbSyPI9opo6V_e1/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
 
 ## 2021
@@ -72,25 +75,35 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 {% youtube 8SndbPMwdWE %}
 
 - **DepClean: Automatically Revealing Bloated Software Dependencies in Maven Projects**. Presented at FOSDEM, February 2021. [Video](https://youtu.be/8SndbPMwdWE "video")
+
 - **The Software Production Landscape**. Presented at KTH, September 2021. [Slides](../files/presentations/software-production-landscape.pptx)
+
 - **A Longitudinal Analysis of Bloated Java Dependencies**. Presented at ESEC/FSE, August 2021. [Video](https://youtu.be/cePEl485E_s "video")
+
 - **Automated Software Debloat**. 50% PhD Seminar. Presented at KTH, April 2021. [Slides](../files/talks/50percent_seminar_kth_2021.pdf "pdf")
 
 ## 2020
 
 - **An Introduction to Bloat History Analysis**. Presented at _20th ASSERT Software Engineering Workshop_, Stockholm, Sweden, November 2020. [Slides](https://docs.google.com/presentation/d/1cwBaOIJ2ZgGP62sCod_a_KrdhRg2puDlIkFKpjxPC6E/edit?usp=sharing)
+
 - **Are Developers Willing to Remove Bloated Dependencies?** Presented at _13th ASSERT Software Engineering Workshop_, Stockholm, Sweden, January 2020. [:globe_with_meridians: Slides](https://www.cesarsotovalero.net/presentations/assert-13th/#/)
 
 ## 2019
 
 - **Presentation for FDT3303**. Paper reading presented at KTH, Stockholm, December 2019. [Slides](https://docs.google.com/presentation/d/1KpB16Ibfn3yjxTIxeRPcmR4JcZn3aujEl2EThyOC88U/edit?usp=sharing)
+
 - **Do the Dependency Conflicts in My Project Matter?** Presented at _11th ASSERT Software Engineering Workshop_, Stockholm, Sweden, November 2019. [Slides](https://docs.google.com/presentation/d/17V5PBGj2n7dHrOmbtC0Tfzn_g6xX2mg2GFAWQtRapCY/edit?usp=sharing)
+
 - **Taming Bloated Software Dependencies**. Presented at [SL](https://sl.se/) Headquarter, Stockholm, November 2019. [Slides](https://docs.google.com/presentation/d/1C_-0rQHYvuz7RqPj0dlNhUkjYX1lm9y6gBRri4BTfxk/edit?usp=sharing)
+
 - **WASP Presentation**. Presented at _Nanyang Technological University_, Singapore, October 2019. [Slides](https://docs.google.com/presentation/d/1-B3YfX5xulYgq30IVhv0bLwPHFrtbaRbzZu61TA_U2k/edit?usp=sharing#slide=id.g655fad9d75_6_147)
+
 - **Studying Bloated Dependencies in the Maven Ecosystem**. Poster presented during _CASTOR Software Days_, KTH, Sweden, October 2019. [Slides](../files/posters/Castor-Software-Days-WASP-Poster.pdf)
+
 - **The Emergence of Software Diversity in Maven Central**. Presented at _16th International Conference on Mining Software Repositories_ (MSR), Montreal, Canada, May 2019. [:globe_with_meridians: Slides](https://dl.serveur-du-placard.ml/these/reveal.js-3.7.0/presentations/MSR2)
 
 ## 2018
 
 - **Bloatware Mitigation and Analysis**. Presented at _5th ASSERT Software Engineering Workshop_, Stockholm, Sweden, November 2018. [Slides](https://docs.google.com/presentation/d/1LYvt7fFdGf_VvdlD2XRHzUTfZZOqM55Wopw6IYM6PNQ/edit?usp=sharing)
+
 - **Mining Software Dependencies at Large Scale: A Preliminary Study on the Maven Central Repository**. Presented at _4th ASSERT Software Engineering Workshop_, Stockholm, Sweden, September 2018. [Slides](https://docs.google.com/document/d/1IMhDIJjDIT_KuFLYSa5agPMvbCA8klBCemSLZI4id04/edit?usp=sharing)
