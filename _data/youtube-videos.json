@@ -1,68 +1,80 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "l9gjbqz2r7SzZUt3ZjwvUzcpevk",
-    "id": "Avngm8d2X6I",
+    "etag": "lJAB2maIPPDUctf6jOpJV9C3rok",
+    "id": "AfaOvAXFCmg",
     "snippet": {
-      "publishedAt": "2026-04-14T22:00:00Z",
+      "publishedAt": "2026-04-25T20:00:40Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "We Are All Probabilistic in the End",
-      "description": "Learn the essential mental model for software engineering with AI, moving beyond prompt engineering to fix why your Large Language Model assistant fails.\n\nWhen your AI assistant produces frustrating or unexpected code, the problem isn't just the prompt. We are using a mental model for a predictable compiler to manage a probabilistic teammate. This fundamental mismatch guarantees failure and burnout. Shifting your perspective can turn your AI collaborator into a powerful asset and even improve your human team's workflow by forcing you to create better systems.\n\nThis video covers: \n❶ Why the 'unreliable coworker' feeling you get from AI is actually a mental model problem. \n❷ How curating context is the key job to make an LLM effective, and why it's a gift to your human engineers. \n❸ The three critical differences between an LLM and a human (memory, judgment, and responsibility) that you cannot ignore. \n❹ The proven engineering practices that turn AI from a frustrating mess into a powerful collaborator.\n\nThis video is for software developers, engineers, and tech leaders who are frustrated by the inconsistent or unreliable results from AI coding tools. If you want a practical framework to make AI assistants genuinely useful, this is for you.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:43 The Unreliable Coworker Analogy\n2:59 Context Is Everything\n5:26 Where the Analogy Breaks\n7:42 The Effective Fix\n10:46 Takeaway\n\n#AIEngineering #LLM #SoftwareEngineering #AIassistant #MentalModel #DeveloperTools #CodingWithAI #AIStrategy",
+      "title": "The Software Supply Chain of Agentic AI",
+      "description": "Agentic AI is changing how we build software, but it is also expanding the software supply chain in ways many teams underestimate.\n\nIn this talk at KTH, I explore the security and maintenance risks behind modern agentic AI frameworks from a user perspective. The key point is simple: it does not matter whether code is written by a human or an AI agent. Once it enters production, someone must maintain it, secure it, and take responsibility for it.\n\nI discuss how agentic AI systems introduce new layers of complexity: model registries, memory stores, tool calling, runtime execution, connectors, observability systems, cloud services, and transitive dependencies. These layers make the trust boundary much larger than the application code itself.\n\nUsing a real production Python project built with LangGraph and LangChain-related packages, I show how a small number of direct imports can pull in a much larger dependency graph. The result is a bigger blast radius, more integration surfaces, and new security concerns around prompt injection, state management, tool permissions, serialization, SQL injection, and runtime execution.\n\nThe talk also covers why accountability still matters in AI systems. As IBM warned back in 1979, a computer can never be held accountable. Even in the age of AI agents, humans remain responsible for design decisions, deployment practices, dependency choices, and production safety.\n\nKey topics covered:\n\n• Agentic AI frameworks and their role in modern applications\n• Software supply chain risks in AI systems\n• LangGraph, LangChain, LangSmith, and AI orchestration\n• Transitive dependencies and dependency graphs\n• Prompt injection and tool-based attacks\n• Memory, state, and persistence risks in AI agents\n• Why agent autonomy increases the attack surface\n• Practical recommendations for securing agentic AI systems\n• Why teams still need dependency pinning, isolation, monitoring, and automation\n\nMy main recommendation: treat agentic AI frameworks as production software infrastructure, not as magical wrappers around models. The magic is just code with better marketing.\n\nConnect with me: https://www.cesarsotovalero.net\n\nSubscribe to the channel: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n#agenticai  #aiagents  #aisecurity  #SoftwareSupplyChain #secureai  #SupplyChainSecurity, #LLMSecurity",
       "thumbnails": {
         "default": {
-          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/default.jpg",
+          "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/default.jpg",
           "width": 120,
           "height": 90
         },
         "medium": {
-          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/mqdefault.jpg",
+          "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/mqdefault.jpg",
           "width": 320,
           "height": 180
         },
         "high": {
-          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/hqdefault.jpg",
+          "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/hqdefault.jpg",
           "width": 480,
           "height": 360
         },
         "standard": {
-          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/sddefault.jpg",
+          "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/sddefault.jpg",
           "width": 640,
           "height": 480
         },
         "maxres": {
-          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/maxresdefault.jpg",
+          "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/maxresdefault.jpg",
           "width": 1280,
           "height": 720
         }
       },
       "channelTitle": "César Soto Valero",
       "tags": [
-        "AI assistant",
-        "Large Language Models",
-        "LLM",
+        "agentic AI",
+        "AI agents",
+        "software supply chain",
+        "AI security",
+        "software dependencies",
+        "LangGraph",
+        "LangChain",
+        "AI frameworks",
+        "LLM security",
+        "prompt injection",
+        "supply chain risk",
         "software engineering",
-        "mental model",
-        "AI development",
-        "AI coding",
-        "probabilistic systems",
-        "AI strategy",
-        "developer productivity",
-        "AI integration",
-        "Context window",
-        "AI moral spillover",
-        "Sycophancy in LLM"
+        "AI governance",
+        "AI risk management",
+        "model registries",
+        "AI observability",
+        "secure AI development",
+        "DevSecOps",
+        "software architecture",
+        "runtime security",
+        "package registries",
+        "dependency graph",
+        "vulnerability management",
+        "AI accountability",
+        "production AI systems",
+        "secure software development"
       ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "We Are All Probabilistic in the End",
-        "description": "Learn the essential mental model for software engineering with AI, moving beyond prompt engineering to fix why your Large Language Model assistant fails.\n\nWhen your AI assistant produces frustrating or unexpected code, the problem isn't just the prompt. We are using a mental model for a predictable compiler to manage a probabilistic teammate. This fundamental mismatch guarantees failure and burnout. Shifting your perspective can turn your AI collaborator into a powerful asset and even improve your human team's workflow by forcing you to create better systems.\n\nThis video covers: \n❶ Why the 'unreliable coworker' feeling you get from AI is actually a mental model problem. \n❷ How curating context is the key job to make an LLM effective, and why it's a gift to your human engineers. \n❸ The three critical differences between an LLM and a human (memory, judgment, and responsibility) that you cannot ignore. \n❹ The proven engineering practices that turn AI from a frustrating mess into a powerful collaborator.\n\nThis video is for software developers, engineers, and tech leaders who are frustrated by the inconsistent or unreliable results from AI coding tools. If you want a practical framework to make AI assistants genuinely useful, this is for you.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:43 The Unreliable Coworker Analogy\n2:59 Context Is Everything\n5:26 Where the Analogy Breaks\n7:42 The Effective Fix\n10:46 Takeaway\n\n#AIEngineering #LLM #SoftwareEngineering #AIassistant #MentalModel #DeveloperTools #CodingWithAI #AIStrategy"
+        "title": "The Software Supply Chain of Agentic AI",
+        "description": "Agentic AI is changing how we build software, but it is also expanding the software supply chain in ways many teams underestimate.\n\nIn this talk at KTH, I explore the security and maintenance risks behind modern agentic AI frameworks from a user perspective. The key point is simple: it does not matter whether code is written by a human or an AI agent. Once it enters production, someone must maintain it, secure it, and take responsibility for it.\n\nI discuss how agentic AI systems introduce new layers of complexity: model registries, memory stores, tool calling, runtime execution, connectors, observability systems, cloud services, and transitive dependencies. These layers make the trust boundary much larger than the application code itself.\n\nUsing a real production Python project built with LangGraph and LangChain-related packages, I show how a small number of direct imports can pull in a much larger dependency graph. The result is a bigger blast radius, more integration surfaces, and new security concerns around prompt injection, state management, tool permissions, serialization, SQL injection, and runtime execution.\n\nThe talk also covers why accountability still matters in AI systems. As IBM warned back in 1979, a computer can never be held accountable. Even in the age of AI agents, humans remain responsible for design decisions, deployment practices, dependency choices, and production safety.\n\nKey topics covered:\n\n• Agentic AI frameworks and their role in modern applications\n• Software supply chain risks in AI systems\n• LangGraph, LangChain, LangSmith, and AI orchestration\n• Transitive dependencies and dependency graphs\n• Prompt injection and tool-based attacks\n• Memory, state, and persistence risks in AI agents\n• Why agent autonomy increases the attack surface\n• Practical recommendations for securing agentic AI systems\n• Why teams still need dependency pinning, isolation, monitoring, and automation\n\nMy main recommendation: treat agentic AI frameworks as production software infrastructure, not as magical wrappers around models. The magic is just code with better marketing.\n\nConnect with me: https://www.cesarsotovalero.net\n\nSubscribe to the channel: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n#agenticai  #aiagents  #aisecurity  #SoftwareSupplyChain #secureai  #SupplyChainSecurity, #LLMSecurity"
       },
       "defaultAudioLanguage": "en"
     },
     "contentDetails": {
-      "duration": "PT12M21S",
+      "duration": "PT20M6S",
       "dimension": "2d",
       "definition": "hd",
       "caption": "true",
@@ -71,15 +83,94 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "40",
+      "viewCount": "26",
       "likeCount": "2",
       "favoriteCount": "0",
-      "commentCount": "2"
+      "commentCount": "0"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "fb7XTSzoZALWE95goVcL2jft_ak",
+    "etag": "-2uvUTxvqH3f6xthkYkQViGQE-M",
+    "id": "gxlFNuoFRPw",
+    "snippet": {
+      "publishedAt": "2026-04-21T12:45:57Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "Tracing the Thoughts of Claude: What Anthropic Found",
+      "description": "Deep dive into Claude's internal reasoning, interpretability research, and why its \"chain of thought\" can be a fabrication.\n\nWhen you ask an AI to explain its reasoning, it provides a step-by-step account that makes perfect sense. But new research from Anthropic shows this explanation is often a plausible story constructed after the fact. The model's real internal process is something else entirely, a collection of competing circuits we are only just beginning to understand.\n\nThis video covers:\n\n→ New interpretability techniques for looking inside a model's \"mind.\"\n\n→ How large language models like Claude think in abstract, language-independent concepts.\n\n→ Why an AI's \"chain of thought\" reasoning can be a complete fabrication.\n\n→ The counter-intuitive reason models hallucinate and how safety features can fail.\n\nThis video is for software engineers and AI practitioners who want to move beyond surface-level prompting and understand the internal mechanics of large language models to build more reliable systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Introduction\n1:48 A Microscope for AI\n4:34 Thinking Before Language\n7:13 The Deception of \"Show Your Work\"\n10:28 The Real Cause of Hallucinations\n8:55 Takeaways\n  \n#AI #Claude #Anthropic #Interpretability #LargeLanguageModels #MachineLearning #AIExplained #AISafety #ChainOfThought #LLM",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/gxlFNuoFRPw/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/gxlFNuoFRPw/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/gxlFNuoFRPw/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/gxlFNuoFRPw/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/gxlFNuoFRPw/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "AI interpretability",
+        "mechanistic interpretability",
+        "Anthropic Claude",
+        "large language models",
+        "LLM",
+        "chain of thought",
+        "AI reasoning",
+        "AI safety",
+        "AI hallucination",
+        "neural networks",
+        "how AI thinks",
+        "AI explained",
+        "software engineering",
+        "tracing LLMs",
+        "Anthropic Research Explained"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "Tracing the Thoughts of Claude: What Anthropic Found",
+        "description": "Deep dive into Claude's internal reasoning, interpretability research, and why its \"chain of thought\" can be a fabrication.\n\nWhen you ask an AI to explain its reasoning, it provides a step-by-step account that makes perfect sense. But new research from Anthropic shows this explanation is often a plausible story constructed after the fact. The model's real internal process is something else entirely, a collection of competing circuits we are only just beginning to understand.\n\nThis video covers:\n\n→ New interpretability techniques for looking inside a model's \"mind.\"\n\n→ How large language models like Claude think in abstract, language-independent concepts.\n\n→ Why an AI's \"chain of thought\" reasoning can be a complete fabrication.\n\n→ The counter-intuitive reason models hallucinate and how safety features can fail.\n\nThis video is for software engineers and AI practitioners who want to move beyond surface-level prompting and understand the internal mechanics of large language models to build more reliable systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Introduction\n1:48 A Microscope for AI\n4:34 Thinking Before Language\n7:13 The Deception of \"Show Your Work\"\n10:28 The Real Cause of Hallucinations\n8:55 Takeaways\n  \n#AI #Claude #Anthropic #Interpretability #LargeLanguageModels #MachineLearning #AIExplained #AISafety #ChainOfThought #LLM"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT15M19S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "629",
+      "likeCount": "13",
+      "favoriteCount": "0",
+      "commentCount": "6"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "VqIK4qgSKH-xcHil628AiotWSZM",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -157,7 +248,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "204",
+      "viewCount": "218",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -165,7 +256,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Jvh0yrQhBPBJz7lZK-m_IpA_UZo",
+    "etag": "cOUnOp5WzcMddrobbDUTHV0aJ7g",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -234,15 +325,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "166",
-      "likeCount": "8",
+      "viewCount": "174",
+      "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "5"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "4qy0jDjvokJFNx-uYLlZs1J2WLQ",
+    "etag": "T-zbm_m0P41NLcy9aSmChJFG0Rc",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -310,15 +401,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "312",
-      "likeCount": "9",
+      "viewCount": "359",
+      "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "2"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "ypGljZVBFh7GsnQkZZHSx45ras4",
+    "etag": "A6GwokIhJkRVbL7JnRsnAa-PDHI",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -393,7 +484,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "154",
+      "viewCount": "161",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -401,7 +492,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Zg0Ib-ILHeoi7hjqPrLT-Bg0cW8",
+    "etag": "04rBGUv5ymVlVsEvM7W5_jk71xo",
     "id": "4vltll8lO1g",
     "snippet": {
       "publishedAt": "2026-02-07T15:40:48Z",
@@ -470,7 +561,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "99",
+      "viewCount": "105",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -478,7 +569,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "AEyq3VyOkEw3zUc_RNBeYKjRbuA",
+    "etag": "LJbR8ex8cWefmg5RhjVh8k7eAZc",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -546,7 +637,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "97",
+      "viewCount": "98",
       "likeCount": "1",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -554,7 +645,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LBXS9_ioLmwOLs0GAVEIxlBLZ1w",
+    "etag": "s_yOL0L24AIkQ_esoLltzib_b10",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -636,7 +727,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "186",
+      "viewCount": "187",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -644,7 +735,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "t50NA1ohZZw4b_uBCUBIz5RohM0",
+    "etag": "40CPSp7kzJ-PpToUNd1EZiSg730",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -724,15 +815,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2747",
-      "likeCount": "56",
+      "viewCount": "2917",
+      "likeCount": "60",
       "favoriteCount": "0",
       "commentCount": "9"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "fimLuTx0SV-jxRVOxuDPDpTUVm4",
+    "etag": "xNrRUEK3jIQwr71MSx7or6lXSMw",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -811,7 +902,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "171",
+      "viewCount": "175",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -905,7 +996,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8g-lXxptJfaJHhOpXs_AU-RxghM",
+    "etag": "YMVO-cqKucVF_3ge8vE26kdd9WE",
     "id": "-a6Pbv_yBWw",
     "snippet": {
       "publishedAt": "2025-11-29T07:55:26Z",
@@ -987,7 +1078,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "271",
+      "viewCount": "273",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -995,7 +1086,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "XfD13_I5pbnzis0ssE8rHiGS014",
+    "etag": "iwoxDcMDckPJN8FgnqDjr1hwNfA",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -1074,7 +1165,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "892",
+      "viewCount": "906",
       "likeCount": "38",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -1260,7 +1351,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "OEMDbRJBnaLVIS6CHbVpVMDYk7g",
+    "etag": "YiAvfW6Np2-DLHqxNsGq0le9KYI",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -1335,8 +1426,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2184",
-      "likeCount": "100",
+      "viewCount": "2241",
+      "likeCount": "101",
       "favoriteCount": "0",
       "commentCount": "23"
     }
@@ -1436,7 +1527,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "sANRdXX67ch-G2xKZwsO1NnX4u8",
+    "etag": "LbRajs5xhLIUNs7lT1bRF5CKjcA",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -1511,7 +1602,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "253",
+      "viewCount": "256",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1519,7 +1610,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Ar2Z_JKfW0gqt_wBrd-3NeenjVE",
+    "etag": "Oy3F0PckU4yuxPe263Qs-Cn-E3U",
     "id": "SQY2IED6vFQ",
     "snippet": {
       "publishedAt": "2024-12-14T22:45:00Z",
@@ -1595,7 +1686,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "168",
+      "viewCount": "169",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1603,7 +1694,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "2Bg32ECBwDEMTA0txKGleWJ4Npk",
+    "etag": "HS4KEG1v2QjwZSTzbig3B91jINA",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -1677,7 +1768,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "609",
+      "viewCount": "611",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -1768,7 +1859,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nBQxGjr-wfX7UlcqYEPHTWbKXUw",
+    "etag": "sDcTonJawh8cbnjoEeL0d5LOnV8",
     "id": "n1t3XEAyUgQ",
     "snippet": {
       "publishedAt": "2024-10-21T06:00:32Z",
@@ -2006,7 +2097,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "BM6C67Wa2VwWJJQORPQPmhSESwU",
+    "etag": "yRCnGOyDxTvLVNlyRLqO7nFeKoA",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -2067,7 +2158,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12877",
+      "viewCount": "12878",
       "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "296"
@@ -2075,7 +2166,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "fZ2-qMR6nRT_gEY6BfqTzzy2uP4",
+    "etag": "ywbiVYyAwIeY8ohc-aUP-KYbRrI",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -2137,7 +2228,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "945",
+      "viewCount": "946",
       "likeCount": "61",
       "favoriteCount": "0",
       "commentCount": "34"
@@ -2145,7 +2236,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "TmnviH60Lwmj62Ool5nHK7rCwyc",
+    "etag": "ONyGGNrVz3IChmo0UrNpjxmN8KI",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -2193,13 +2284,13 @@
       "duration": "PT13M47S",
       "dimension": "2d",
       "definition": "hd",
-      "caption": "false",
+      "caption": "true",
       "licensedContent": false,
       "contentRating": {},
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "205",
+      "viewCount": "217",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2207,7 +2298,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "X8af5CuvYPLSNGHgXRtqBMsx1L8",
+    "etag": "aimblLYbgR4cdjuMXGruMuXRDO8",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -2261,7 +2352,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "952",
+      "viewCount": "960",
       "likeCount": "33",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2269,7 +2360,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "MizSfrK0SldnPUxJibutkjU_X_4",
+    "etag": "3YQZ3Ypv4Db1VqfecS1lA02lTNE",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -2330,7 +2421,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "433",
+      "viewCount": "436",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2338,7 +2429,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "t7X249eps5pYP9QCpQqKr2TEhPI",
+    "etag": "KO2-GzghE5zw_pcldR59S7grpb8",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -2397,7 +2488,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "168",
+      "viewCount": "175",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -2405,7 +2496,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "EJGK_o2M_MDJTHNx7ya2lCIjB-4",
+    "etag": "z2oRF92QqMfkZezC2_a7sbB3PwQ",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -2459,7 +2550,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "195",
+      "viewCount": "196",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -2467,7 +2558,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "1J3oaG6EcOqB6v-g9Rf8AiGv6xM",
+    "etag": "Yj8HtSJyPmnG84jSzdzOuDsp5Tc",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -2521,7 +2612,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "204",
+      "viewCount": "205",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2598,7 +2689,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "yyVGmdOWgFB4O67xVfNpd3jZ9tE",
+    "etag": "yDsiUMKxDW1HL1Nd1_NJEnSTs-I",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -2658,7 +2749,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "431",
+      "viewCount": "433",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2666,7 +2757,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "_geRC3MSmK7L-QqA__f2GSHbq88",
+    "etag": "V1g2YU0Eiido_pbvhOh9GzTiO3g",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -2725,7 +2816,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "221",
+      "viewCount": "224",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2733,7 +2824,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "QXh7Hdj80AcjeriD-yX74YmbOkc",
+    "etag": "kO9kQ9Ws5HOxDehxTlw-JMMuUCY",
     "id": "3nptpGpaYws",
     "snippet": {
       "publishedAt": "2021-09-03T10:05:40Z",
@@ -2793,7 +2884,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "116",
+      "viewCount": "118",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -2868,7 +2959,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nfPMCtjJHYMf8Wd_ia7uQUYJrRA",
+    "etag": "a7dqGZp4KonI6uk2gC1OEaR2qMg",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -2928,7 +3019,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "289",
+      "viewCount": "292",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "11"
