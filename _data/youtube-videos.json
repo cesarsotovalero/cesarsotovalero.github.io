@@ -1,7 +1,84 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "lJAB2maIPPDUctf6jOpJV9C3rok",
+    "etag": "jbX74TqmFqC93aaJc4IaC7wO4WQ",
+    "id": "rGspkFASp8k",
+    "snippet": {
+      "publishedAt": "2026-04-29T14:45:07Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "What If Superintelligence Is Social Instead of Singular?",
+      "description": "The future of AI is social, not singular, and getting this frame wrong will lead to fragile systems and failed governance.\n\nThe idea of a single, superintelligent mind bootstrapping itself to godlike power is an attractive story, but it's almost certainly wrong. This video argues that the next intelligence explosion isn't about one single super AI, but trillions of them, and why it has already started. \n\nThis video covers: \n\n→ Why major leaps in intelligence, both human and artificial, are always social.\n\n → How advanced LLMs create internal 'societies of thought' to improve reasoning. \n\n→ A new framework for AI alignment based on institutional design, not individual correction. \n\n→ How to shift from building bigger models to designing richer, multi-agent AI systems.\n\nThis video is for software engineers, AI researchers, and tech leaders who want to move beyond the hype and understand the architectural and governance shifts required to build the next generation of robust AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Introduction\n1:24 The Social Blueprint of Intelligence\n3:22 The Society Inside the Machine\n5:25 From Bigger Models to Richer Societies\n5:30 Takeaway: A New Paradigm for AI Design\n\n#ArtificialIntelligence #AISingularity #LLM #AIExplained #SoftwareEngineering #AIGovernance #MultiAgentSystems #DeepLearning #FutureOfAI",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/rGspkFASp8k/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/rGspkFASp8k/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/rGspkFASp8k/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/rGspkFASp8k/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/rGspkFASp8k/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "AI singularity",
+        "artificial intelligence",
+        "social intelligence",
+        "multi-agent systems",
+        "large language models",
+        "LLM",
+        "AI governance",
+        "AI alignment",
+        "AI safety",
+        "software engineering",
+        "DeepSeek",
+        "society of thought",
+        "future of AI"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "What If Superintelligence Is Social Instead of Singular?",
+        "description": "The future of AI is social, not singular, and getting this frame wrong will lead to fragile systems and failed governance.\n\nThe idea of a single, superintelligent mind bootstrapping itself to godlike power is an attractive story, but it's almost certainly wrong. This video argues that the next intelligence explosion isn't about one single super AI, but trillions of them, and why it has already started. \n\nThis video covers: \n\n→ Why major leaps in intelligence, both human and artificial, are always social.\n\n → How advanced LLMs create internal 'societies of thought' to improve reasoning. \n\n→ A new framework for AI alignment based on institutional design, not individual correction. \n\n→ How to shift from building bigger models to designing richer, multi-agent AI systems.\n\nThis video is for software engineers, AI researchers, and tech leaders who want to move beyond the hype and understand the architectural and governance shifts required to build the next generation of robust AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Introduction\n1:24 The Social Blueprint of Intelligence\n3:22 The Society Inside the Machine\n5:25 From Bigger Models to Richer Societies\n5:30 Takeaway: A New Paradigm for AI Design\n\n#ArtificialIntelligence #AISingularity #LLM #AIExplained #SoftwareEngineering #AIGovernance #MultiAgentSystems #DeepLearning #FutureOfAI"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT8M54S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "34",
+      "likeCount": "3",
+      "favoriteCount": "0",
+      "commentCount": "2"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "bAD-brXwh6yzyZM9GmygoRbakgM",
     "id": "AfaOvAXFCmg",
     "snippet": {
       "publishedAt": "2026-04-25T20:00:40Z",
@@ -83,15 +160,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "26",
+      "viewCount": "84",
       "likeCount": "2",
       "favoriteCount": "0",
-      "commentCount": "0"
+      "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "-2uvUTxvqH3f6xthkYkQViGQE-M",
+    "etag": "pLfjKZdQ6zjQ-kd-efyRZt-snCM",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -162,15 +239,93 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "629",
-      "likeCount": "13",
+      "viewCount": "764",
+      "likeCount": "15",
       "favoriteCount": "0",
-      "commentCount": "6"
+      "commentCount": "7"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "VqIK4qgSKH-xcHil628AiotWSZM",
+    "etag": "v5mryKoceZLvi8-okJ6HasIb2wE",
+    "id": "Avngm8d2X6I",
+    "snippet": {
+      "publishedAt": "2026-04-14T22:00:00Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "We Are All Probabilistic in the End",
+      "description": "Learn the essential mental model for software engineering with AI, moving beyond prompt engineering to fix why your Large Language Model assistant fails.\n\nWhen your AI assistant produces frustrating or unexpected code, the problem isn't just the prompt. We are using a mental model for a predictable compiler to manage a probabilistic teammate. This fundamental mismatch guarantees failure and burnout. Shifting your perspective can turn your AI collaborator into a powerful asset and even improve your human team's workflow by forcing you to create better systems.\n\nThis video covers: \n❶ Why the 'unreliable coworker' feeling you get from AI is actually a mental model problem. \n❷ How curating context is the key job to make an LLM effective, and why it's a gift to your human engineers. \n❸ The three critical differences between an LLM and a human (memory, judgment, and responsibility) that you cannot ignore. \n❹ The proven engineering practices that turn AI from a frustrating mess into a powerful collaborator.\n\nThis video is for software developers, engineers, and tech leaders who are frustrated by the inconsistent or unreliable results from AI coding tools. If you want a practical framework to make AI assistants genuinely useful, this is for you.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype:  https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:43 The Unreliable Coworker Analogy\n2:59 Context Is Everything\n5:26 Where the Analogy Breaks\n7:42 The Effective Fix\n10:46 Takeaway\n\n#AIEngineering #LLM #SoftwareEngineering #AIassistant #MentalModel #DeveloperTools #CodingWithAI #AIStrategy",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/Avngm8d2X6I/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "AI assistant",
+        "Large Language Models",
+        "LLM",
+        "software engineering",
+        "mental model",
+        "AI development",
+        "AI coding",
+        "probabilistic systems",
+        "AI strategy",
+        "developer productivity",
+        "AI integration",
+        "Context window",
+        "AI moral spillover",
+        "Sycophancy in LLM"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "We Are All Probabilistic in the End",
+        "description": "Learn the essential mental model for software engineering with AI, moving beyond prompt engineering to fix why your Large Language Model assistant fails.\n\nWhen your AI assistant produces frustrating or unexpected code, the problem isn't just the prompt. We are using a mental model for a predictable compiler to manage a probabilistic teammate. This fundamental mismatch guarantees failure and burnout. Shifting your perspective can turn your AI collaborator into a powerful asset and even improve your human team's workflow by forcing you to create better systems.\n\nThis video covers: \n❶ Why the 'unreliable coworker' feeling you get from AI is actually a mental model problem. \n❷ How curating context is the key job to make an LLM effective, and why it's a gift to your human engineers. \n❸ The three critical differences between an LLM and a human (memory, judgment, and responsibility) that you cannot ignore. \n❹ The proven engineering practices that turn AI from a frustrating mess into a powerful collaborator.\n\nThis video is for software developers, engineers, and tech leaders who are frustrated by the inconsistent or unreliable results from AI coding tools. If you want a practical framework to make AI assistants genuinely useful, this is for you.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype:  https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:43 The Unreliable Coworker Analogy\n2:59 Context Is Everything\n5:26 Where the Analogy Breaks\n7:42 The Effective Fix\n10:46 Takeaway\n\n#AIEngineering #LLM #SoftwareEngineering #AIassistant #MentalModel #DeveloperTools #CodingWithAI #AIStrategy"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT12M21S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "54",
+      "likeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "2"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "AKjHJ5h0pQLNTUdWmWmwT9KD5yU",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -248,15 +403,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "218",
-      "likeCount": "12",
+      "viewCount": "225",
+      "likeCount": "13",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "cOUnOp5WzcMddrobbDUTHV0aJ7g",
+    "etag": "7HZu2FofmRffws2vyYuVAOcj3mE",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -325,15 +480,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "174",
-      "likeCount": "9",
+      "viewCount": "187",
+      "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "5"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "T-zbm_m0P41NLcy9aSmChJFG0Rc",
+    "etag": "kw6afG9QinXTNCbXQ-_hrrkSKzo",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -401,15 +556,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "359",
-      "likeCount": "11",
+      "viewCount": "402",
+      "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "2"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "A6GwokIhJkRVbL7JnRsnAa-PDHI",
+    "etag": "Upp6VVoAuEupJxfxbkFc2nGqO9E",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -484,7 +639,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "161",
+      "viewCount": "169",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -492,7 +647,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "04rBGUv5ymVlVsEvM7W5_jk71xo",
+    "etag": "oOAruGvouknCjL9I2Jb06Imjc8U",
     "id": "4vltll8lO1g",
     "snippet": {
       "publishedAt": "2026-02-07T15:40:48Z",
@@ -561,7 +716,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "105",
+      "viewCount": "106",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -569,7 +724,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LJbR8ex8cWefmg5RhjVh8k7eAZc",
+    "etag": "lXVFDF7OS0e5qGJMxv8uVaaiL7M",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -637,15 +792,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "98",
-      "likeCount": "1",
+      "viewCount": "106",
+      "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "s_yOL0L24AIkQ_esoLltzib_b10",
+    "etag": "BBaD2uneNo9lh3wVC7H4WLc7GlY",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -727,7 +882,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "187",
+      "viewCount": "192",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -735,7 +890,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "40CPSp7kzJ-PpToUNd1EZiSg730",
+    "etag": "cnhJtjdX2uPAjcmUJx2HusPGEs0",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -815,15 +970,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2917",
-      "likeCount": "60",
+      "viewCount": "3050",
+      "likeCount": "65",
       "favoriteCount": "0",
       "commentCount": "9"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "xNrRUEK3jIQwr71MSx7or6lXSMw",
+    "etag": "g1Xt-7BgbiPHbBMnzCCCrz0yGYw",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -902,7 +1057,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "175",
+      "viewCount": "178",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -910,7 +1065,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nPS-bDGCKaAgAXwmeemPPHaKVjA",
+    "etag": "ByAp6RBQsstJTWIsWUsRThSfsYk",
     "id": "pHqoIPAlOcw",
     "snippet": {
       "publishedAt": "2026-01-08T09:44:25Z",
@@ -988,7 +1143,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "145",
+      "viewCount": "146",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -996,7 +1151,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YMVO-cqKucVF_3ge8vE26kdd9WE",
+    "etag": "X99GNXr2T8XlCQKxwGvlyqJunvM",
     "id": "-a6Pbv_yBWw",
     "snippet": {
       "publishedAt": "2025-11-29T07:55:26Z",
@@ -1078,7 +1233,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "273",
+      "viewCount": "276",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1086,7 +1241,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "iwoxDcMDckPJN8FgnqDjr1hwNfA",
+    "etag": "PnIB4NXS7dyNwldZNCTjScLZN7Q",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -1165,7 +1320,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "906",
+      "viewCount": "927",
       "likeCount": "38",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -1173,7 +1328,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "anu3qPp4xnvSsajizTo4jFa6mWM",
+    "etag": "d5PI6UKoTh92QTBViQmxVJ0EYfM",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
@@ -1254,7 +1409,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "216",
+      "viewCount": "217",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1262,7 +1417,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "JD2DKNc-M4BR3dEbJ2mI6ksOOr8",
+    "etag": "g_R9dpQpN9146xf1SfSLGJwCZkU",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -1343,7 +1498,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "211",
+      "viewCount": "212",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1351,7 +1506,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YiAvfW6Np2-DLHqxNsGq0le9KYI",
+    "etag": "ho_VXbuZ_HunpEqUeK9gtFEKyJk",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -1426,8 +1581,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2241",
-      "likeCount": "101",
+      "viewCount": "2286",
+      "likeCount": "104",
       "favoriteCount": "0",
       "commentCount": "23"
     }
@@ -1527,7 +1682,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LbRajs5xhLIUNs7lT1bRF5CKjcA",
+    "etag": "h47ylR2Ov7zc71nPNywLhb11BAM",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -1602,7 +1757,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "256",
+      "viewCount": "261",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1610,7 +1765,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Oy3F0PckU4yuxPe263Qs-Cn-E3U",
+    "etag": "qxL8uSF-mTEp5U3KuPaChWQXfSo",
     "id": "SQY2IED6vFQ",
     "snippet": {
       "publishedAt": "2024-12-14T22:45:00Z",
@@ -1694,7 +1849,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "HS4KEG1v2QjwZSTzbig3B91jINA",
+    "etag": "QMDFYkMuUrc0kEfTEKtma1AesBU",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -1768,7 +1923,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "611",
+      "viewCount": "613",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -1942,7 +2097,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "27UeepKUCtxAyxCFX4bXMpx_Bc8",
+    "etag": "0VFgjsuXTkxbT2fUB7cbZ88Rx2g",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
@@ -2014,7 +2169,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "478",
+      "viewCount": "479",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -2097,7 +2252,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "yRCnGOyDxTvLVNlyRLqO7nFeKoA",
+    "etag": "6ButBuomj-BRXyFDGQBwI_AIm2A",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -2158,7 +2313,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12878",
+      "viewCount": "12880",
       "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "296"
@@ -2166,7 +2321,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ywbiVYyAwIeY8ohc-aUP-KYbRrI",
+    "etag": "61boQACAnN486IMx13bx6kqlkU0",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -2228,7 +2383,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "946",
+      "viewCount": "951",
       "likeCount": "61",
       "favoriteCount": "0",
       "commentCount": "34"
@@ -2236,7 +2391,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ONyGGNrVz3IChmo0UrNpjxmN8KI",
+    "etag": "D_a_7_fGCscBSrWbRPi8HydYF2I",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -2290,7 +2445,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "217",
+      "viewCount": "219",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2298,7 +2453,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "aimblLYbgR4cdjuMXGruMuXRDO8",
+    "etag": "fKtjzi145DAwIRgJE4tqhErfTAg",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -2352,7 +2507,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "960",
+      "viewCount": "974",
       "likeCount": "33",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2360,7 +2515,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "3YQZ3Ypv4Db1VqfecS1lA02lTNE",
+    "etag": "27TehKsVM9fesDXG9I1owmAEFtU",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -2421,7 +2576,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "436",
+      "viewCount": "440",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2429,7 +2584,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KO2-GzghE5zw_pcldR59S7grpb8",
+    "etag": "ZPcsGnCYlDK_KBK_uIljVcC8tPE",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -2488,7 +2643,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "175",
+      "viewCount": "176",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -2496,7 +2651,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "z2oRF92QqMfkZezC2_a7sbB3PwQ",
+    "etag": "u0yQ23RXo8FzF_4QxFQXsama730",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -2558,7 +2713,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Yj8HtSJyPmnG84jSzdzOuDsp5Tc",
+    "etag": "dMh9c-zKTw4K325HvDcZFNoIOXU",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -2612,7 +2767,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "205",
+      "viewCount": "206",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2620,7 +2775,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "_sLvpNFOYp6sdevoqPf4JBtESOY",
+    "etag": "Gb6s-upz2-VeOqXZu9FHM5dgUEQ",
     "id": "HXj2B8eHmt4",
     "snippet": {
       "publishedAt": "2022-10-16T20:05:21Z",
@@ -2681,7 +2836,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "102",
+      "viewCount": "103",
       "likeCount": "5",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -2757,7 +2912,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "V1g2YU0Eiido_pbvhOh9GzTiO3g",
+    "etag": "1_6ZRZEuVlbdnkasGRCSKU-yrCs",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -2816,8 +2971,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "224",
-      "likeCount": "7",
+      "viewCount": "225",
+      "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
     }
@@ -2892,7 +3047,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "VNltkBWvWQy7JwkZPGz3SCz2Pr8",
+    "etag": "iwRmrz4oREeg_bw2HlgNwic4BBI",
     "id": "cePEl485E_s",
     "snippet": {
       "publishedAt": "2021-08-31T06:04:20Z",
@@ -2959,7 +3114,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "a7dqGZp4KonI6uk2gC1OEaR2qMg",
+    "etag": "lEqvnm7bJiIwEiKaNRs7gPoeDMA",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -3019,7 +3174,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "292",
+      "viewCount": "293",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "11"
