@@ -22,7 +22,7 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 {% youtube 59EVOp8r0aw %}
 
 - **Stop Stuffing Your LLM's Context Window**. Upcoming talk at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026.
-- **Fully Homomorphic Encryption and the Future of Trustworthy AI**. Upcoming talk at [Data Innovation Summit](https://datainnovationsummit.com/region/nordics/), 6th May 2026. [Talk Announcement](https://www.linkedin.com/posts/the-data-innovation-summit_disummit2030-dis2026x1-activity-7404107732695298048-FUac)
+- **Fully Homomorphic Encryption and the Future of Trustworthy AI**. Presented at [Data Innovation Summit](https://datainnovationsummit.com/region/nordics/), 6th May 2026. [Talk Announcement](https://www.linkedin.com/posts/the-data-innovation-summit_disummit2030-dis2026x1-activity-7404107732695298048-FUac), [Slides](../files/presentations/DIS2026_M7_CESAR.pptx "pptx")
 - **Moving Fast and Importing Things: The Software Supply Chain of Agentic AI**. Upcoming talk at the [5th KTH Workshop on the Software Supply Chain](https://chains.proj.kth.se/software-supply-chain-workshop-5.html), 24th April 2026. [Video](https://youtu.be/AfaOvAXFCmg "video"){:target="\_blank"} [Slides](../files/presentations/Moving_Fast_and_Importing_Things_LangGraph_Supply_Chain.pptx "pptx")
 - **The Promise of Trustworthy AI**. Keynote at [Voxxed Days Zürich](https://vdz26.voxxeddays.ch/talk/?id=13851), 24th March 2026. [Video](https://youtu.be/59EVOp8r0aw "video"){:target="\_blank"} [Slides](../files/talks/2026voxxed.pdf "pdf")
 
