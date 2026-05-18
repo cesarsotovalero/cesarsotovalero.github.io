@@ -21,7 +21,7 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 {% youtube 59EVOp8r0aw %}
 
-- **AI on-chain - Where do we see the real utility of Agentic Finance?** Upcoming talk at [Nordic Blockchain Conference (NBC2026)](https://www.nordicblockchain.com/conference-2026), 26th May 2026. [🖼️ Announcement](../img/talks/NBC26%20Speaker%20Graphics%20_%20César%20Soto%20Valero.png "png")
+- **AI on-chain - Where do we see the real utility of Agentic Finance?** Upcoming talk at [Nordic Blockchain Conference (NBC2026)](https://www.nordicblockchain.com/conference-2026), 26th May 2026. [🖼️ Announcement](https://www.linkedin.com/posts/nbc2026-share-7462126749573758976-36bF)
 
 - **Stop Stuffing Your LLM's Context Window**. Upcoming talk at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026.
 
