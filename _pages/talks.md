@@ -22,9 +22,13 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 {% youtube 59EVOp8r0aw %}
 
 - **AI on-chain - Where do we see the real utility of Agentic Finance?** Upcoming talk at [Nordic Blockchain Conference (NBC2026)](https://www.nordicblockchain.com/conference-2026), 26th May 2026. [🖼️ Announcement](../img/talks/NBC26%20Speaker%20Graphics%20_%20César%20Soto%20Valero.png "png")
+
 - **Stop Stuffing Your LLM's Context Window**. Upcoming talk at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026.
+
 - **Fully Homomorphic Encryption and the Future of Trustworthy AI**. Presented at [Data Innovation Summit](https://datainnovationsummit.com/region/nordics/), 6th May 2026. [Talk Announcement](https://www.linkedin.com/posts/the-data-innovation-summit_disummit2030-dis2026x1-activity-7404107732695298048-FUac), [Slides](../files/presentations/DIS2026_M7_CESAR.pptx "pptx")
+
 - **Moving Fast and Importing Things: The Software Supply Chain of Agentic AI**. Upcoming talk at the [5th KTH Workshop on the Software Supply Chain](https://chains.proj.kth.se/software-supply-chain-workshop-5.html), 24th April 2026. [Video](https://youtu.be/AfaOvAXFCmg "video"){:target="\_blank"} [Slides](../files/presentations/Moving_Fast_and_Importing_Things_LangGraph_Supply_Chain.pptx "pptx")
+
 - **The Promise of Trustworthy AI**. Keynote at [Voxxed Days Zürich](https://vdz26.voxxeddays.ch/talk/?id=13851), 24th March 2026. [Video](https://youtu.be/59EVOp8r0aw "video"){:target="\_blank"} [Slides](../files/talks/2026voxxed.pdf "pdf")
 
 ## 2025
@@ -32,7 +36,9 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 {% youtube nEg8T8doy64 %}
 
 - **Real-time Financial Fraud Detection with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Video](https://youtu.be/nEg8T8doy64 "video"){:target="\_blank"} [Slides](<../files/presentations/Realtime-Fraud-Detection-with-Modern-Python_Final%20(PyData%202025).pptx>)
+
 - **From Ideas to APIs: Delivering Fast with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Video](https://youtu.be/SIVhrtQzknQ "video"){:target="\_blank"} [Slides](<../files/presentations/From-Ideas-to-APIs-Delivering-Fast-with%20Modern-Python_Final%20(PyData%202025).pptx>)
+
 - **My Bank Meets AI: Smarter Decisions Beyond Fancier Spreadsheets**. Presented at [AI-fokus](https://www.jfokus.se/ai-fokus), Stockholm, January 2026. [Video](https://youtu.be/kFPE9EcxhCs "video"){:target="\_blank"} [Slides](https://www.jfokus.se/aifokus25-preso/My-Bank-Meets-AI.pdf)
 
 ## 2024
