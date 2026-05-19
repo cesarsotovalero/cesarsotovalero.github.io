@@ -23,11 +23,11 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 - **PLACEHOLDER**. Upcoming talk at SEB Tech Day, 3rd September 2026.
 
-- **AI on-chain: Where do we see the real utility of Agentic Finance?** Upcoming talk at [Nordic Blockchain Conference (NBC2026)](https://www.nordicblockchain.com/conference-2026), 26th May 2026. [🖼️ Announcement](https://www.linkedin.com/posts/nbc2026-share-7462126749573758976-36bF)
+- **AI on-chain: Where do we see the real utility of Agentic Finance?** Upcoming talk at [Nordic Blockchain Conference (NBC2026)](https://www.nordicblockchain.com/conference-2026), 26th May 2026. [Announcement](https://www.linkedin.com/posts/nbc2026-share-7462126749573758976-36bF)
 
-- **Stop Stuffing Your LLM's Context Window**. Upcoming talk at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026.
+- **Stop Stuffing Your LLM's Context Window**. Presented at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026. [Announcement](https://www.linkedin.com/posts/have-you-checked-out-the-lightning-talks-share-7452312233725906944-J365), [Slides](../files/presentations/AI-fokus2026.pdf "pdf")
 
-- **Fully Homomorphic Encryption and the Future of Trustworthy AI**. Presented at [Data Innovation Summit](https://datainnovationsummit.com/region/nordics/), 6th May 2026. [Talk Announcement](https://www.linkedin.com/posts/the-data-innovation-summit_disummit2030-dis2026x1-activity-7404107732695298048-FUac), [Slides](../files/presentations/DIS2026_M7_CESAR.pptx "pptx")
+- **Fully Homomorphic Encryption and the Future of Trustworthy AI**. Presented at [Data Innovation Summit](https://datainnovationsummit.com/region/nordics/), 6th May 2026. [Announcement](https://www.linkedin.com/posts/the-data-innovation-summit_disummit2030-dis2026x1-activity-7404107732695298048-FUac), [Slides](../files/presentations/DIS2026_M7_CESAR.pptx "pptx")
 
 - **Moving Fast and Importing Things: The Software Supply Chain of Agentic AI**. Upcoming talk at the [5th KTH Workshop on the Software Supply Chain](https://chains.proj.kth.se/software-supply-chain-workshop-5.html), 24th April 2026. [Video](https://youtu.be/AfaOvAXFCmg "video"){:target="\_blank"} [Slides](../files/presentations/Moving_Fast_and_Importing_Things_LangGraph_Supply_Chain.pptx "pptx")
 
@@ -65,7 +65,7 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 {% youtube HXj2B8eHmt4 %}
 
-- **Coverage-Based Debloating for Java Bytecode**. Presented at ESEC/FSE, Singapore, November 2022. [Video](https://youtu.be/HXj2B8eHmt4 "video")
+- **Coverage-Based Debloating for Java Bytecode**. Presented at ESEC/FSE, Singapore, November 2022. [Announcement](https://2022.esec-fse.org/details/fse-2022-journal-first/18/Coverage-Based-Debloating-for-Java-Bytecode), [Slides](../files/presentations/FSE'22.pptx "pptx"), [Video](https://youtu.be/HXj2B8eHmt4 "video")
 
 - **Automatic Software Debloating**. 80% PhD Seminar. Presented at KTH, November 2022. [Slides](../files/talks/80_percent_2022.pdf "pdf")
 
@@ -87,7 +87,7 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 - **The Software Production Landscape**. Presented at KTH, September 2021. [Slides](../files/presentations/software-production-landscape.pptx)
 
-- **A Longitudinal Analysis of Bloated Java Dependencies**. Presented at ESEC/FSE, August 2021. [Video](https://youtu.be/cePEl485E_s "video")
+- **A Longitudinal Analysis of Bloated Java Dependencies**. Presented at ESEC/FSE, August 2021. [Announcement](https://2021.esec-fse.org/details/fse-2021-papers/58/A-Longitudinal-Analysis-of-Bloated-Java-Dependencies), [Slides](../files/presentations/FSE'21.pptx "pptx"), [Video](https://youtu.be/cePEl485E_s "video")
 
 - **Automated Software Debloat**. 50% PhD Seminar. Presented at KTH, April 2021. [Slides](../files/talks/50percent_seminar_kth_2021.pdf "pdf")
 
@@ -109,7 +109,7 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 - **Studying Bloated Dependencies in the Maven Ecosystem**. Poster presented during _CASTOR Software Days_, KTH, Sweden, October 2019. [Slides](../files/posters/Castor-Software-Days-WASP-Poster.pdf)
 
-- **The Emergence of Software Diversity in Maven Central**. Presented at _16th International Conference on Mining Software Repositories_ (MSR), Montreal, Canada, May 2019. [:globe_with_meridians: Slides](https://dl.serveur-du-placard.ml/these/reveal.js-3.7.0/presentations/MSR2)
+- **The Emergence of Software Diversity in Maven Central**. Presented at _16th International Conference on Mining Software Repositories_ (MSR), Montreal, Canada, May 2019. [Announcement](https://2019.msrconf.org/details/msr-2019-papers/6/The-Emergence-of-Software-Diversity-in-Maven-Central)
 
 ## 2018
 
