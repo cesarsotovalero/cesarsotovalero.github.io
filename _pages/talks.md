@@ -25,11 +25,11 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 - **AI on-chain: Where do we see the real utility of Agentic Finance?** Upcoming talk at [Nordic Blockchain Conference (NBC2026)](https://www.nordicblockchain.com/conference-2026), 26th May 2026. [Announcement](https://www.linkedin.com/posts/nbc2026-share-7462126749573758976-36bF)
 
-- **Stop Stuffing Your LLM's Context Window**. Presented at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026. [Announcement](https://www.linkedin.com/posts/have-you-checked-out-the-lightning-talks-share-7452312233725906944-J365), [Slides](../files/presentations/AI-fokus2026.pdf "pdf")
+- **Stop Stuffing Your LLM's Context Window**. Presented at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026. [Announcement](https://www.linkedin.com/posts/have-you-checked-out-the-lightning-talks-share-7452312233725906944-J365), [Video](https://youtu.be/lo_QROedKqE "video"){:target="\_blank"}, [Slides](../files/presentations/AI-fokus2026.pdf "pdf")
 
 - **Fully Homomorphic Encryption and the Future of Trustworthy AI**. Presented at [Data Innovation Summit](https://datainnovationsummit.com/region/nordics/), 6th May 2026. [Announcement](https://www.linkedin.com/posts/the-data-innovation-summit_disummit2030-dis2026x1-activity-7404107732695298048-FUac), [Video](https://youtu.be/VO5gC3RakSk "video"){:target="\_blank"}, [Slides](../files/presentations/DIS2026_M7_CESAR.pptx "pptx")
 
-- **Moving Fast and Importing Things: The Software Supply Chain of Agentic AI**. Upcoming talk at the [5th KTH Workshop on the Software Supply Chain](https://chains.proj.kth.se/software-supply-chain-workshop-5.html), 24th April 2026. [Video](https://youtu.be/AfaOvAXFCmg "video"){:target="\_blank"} [Slides](../files/presentations/Moving_Fast_and_Importing_Things_LangGraph_Supply_Chain.pptx "pptx")
+- **Moving Fast and Importing Things: The Software Supply Chain of Agentic AI**. Presented at the [5th KTH Workshop on the Software Supply Chain](https://chains.proj.kth.se/software-supply-chain-workshop-5.html), 24th April 2026. [Video](https://youtu.be/AfaOvAXFCmg "video"){:target="\_blank"} [Slides](../files/presentations/Moving_Fast_and_Importing_Things_LangGraph_Supply_Chain.pptx "pptx")
 
 - **The Promise of Trustworthy AI**. Keynote at [Voxxed Days Zürich](https://vdz26.voxxeddays.ch/talk/?id=13851), 24th March 2026. [Video](https://youtu.be/59EVOp8r0aw "video"){:target="\_blank"} [Slides](../files/talks/2026voxxed.pdf "pdf")
 
