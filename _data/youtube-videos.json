@@ -1,12 +1,74 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "P4jSX75zSt_RrtUA-MTLNzHsTJY",
+    "etag": "nIj69-DvSDpU8u7IPUeZT-Kb96g",
+    "id": "VO5gC3RakSk",
+    "snippet": {
+      "publishedAt": "2026-05-24T14:46:16Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "Fully Homomorphic Encryption and the Future of Trustworthy AI, by César Soto Valero",
+      "description": "Data breaches are no longer a question of if but when. While encryption secures information at rest and in transit, the Achilles’ heel of modern AI remains: data must be decrypted to be used. This is where Fully Homomorphic Encryption (FHE) changes the game.\n\nIn this talk, I will demystify FHE and show how it enables AI and ML systems to compute directly on encrypted data without ever revealing underlying user information. With accelerating algorithmic breakthroughs and hardware support from giants like Microsoft and Google, FHE is moving from theory to practice, paving the way for privacy-preserving AI.\n\nAfter watching this talk, you will walk away with a clear understanding of why FHE is trending, how it technically works, and why it may redefine the future of a fully and truly private Internet.\n\nKey Takeaways:\n\n❶ Encryption is necessary but not sufficient → discover why protecting only data in transit and at rest leaves AI systems vulnerable.\n\n❷ How AI can compute on encrypted data → explore the principles of Fully Homomorphic Encryption and its real-world applications in AI and ML.\n\n❸ From buzzword to reality → understand how rapid advances in FHE (8× improvement per year) are bringing us closer to a future where most cloud-based AI will be fully privacy-preserving.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/VO5gC3RakSk/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/VO5gC3RakSk/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/VO5gC3RakSk/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/VO5gC3RakSk/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/VO5gC3RakSk/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "Fully Homomorphic Encryption and the Future of Trustworthy AI, by César Soto Valero",
+        "description": "Data breaches are no longer a question of if but when. While encryption secures information at rest and in transit, the Achilles’ heel of modern AI remains: data must be decrypted to be used. This is where Fully Homomorphic Encryption (FHE) changes the game.\n\nIn this talk, I will demystify FHE and show how it enables AI and ML systems to compute directly on encrypted data without ever revealing underlying user information. With accelerating algorithmic breakthroughs and hardware support from giants like Microsoft and Google, FHE is moving from theory to practice, paving the way for privacy-preserving AI.\n\nAfter watching this talk, you will walk away with a clear understanding of why FHE is trending, how it technically works, and why it may redefine the future of a fully and truly private Internet.\n\nKey Takeaways:\n\n❶ Encryption is necessary but not sufficient → discover why protecting only data in transit and at rest leaves AI systems vulnerable.\n\n❷ How AI can compute on encrypted data → explore the principles of Fully Homomorphic Encryption and its real-world applications in AI and ML.\n\n❸ From buzzword to reality → understand how rapid advances in FHE (8× improvement per year) are bringing us closer to a future where most cloud-based AI will be fully privacy-preserving."
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT17M20S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "8",
+      "likeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "0"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "xBlvMZwU4p43w9QPJk9LHE0u_8s",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The Quantum Threat to Our Financial Systems (Are We Ready?)",
+      "title": "Why Quantum's Real Threat to Finance Isn't Encryption",
       "description": "Discover why quantum computing's real threat to finance is identity and authentication, not just encryption, and learn how to build a quantum-ready stack.\n\nThe quantum threat to finance is not a distant, academic problem; it's an immediate engineering challenge. Most engineers are focused on the wrong risk. The danger isn't about breaking data vaults in the future; it's about dismantling the identity and authentication systems that authorize transactions and verify trust right now.\n\nThis video covers: \n\n→ Why the quantum threat targets the \"identity layer\" (PKI, digital signatures) and not the \"data vault\" (symmetric encryption).\n\n→ The four critical risk vectors for financial systems: data harvesting, signature forgery, platform debt, and performance bottlenecks.\n\n→ An architectural blueprint for a quantum-ready bank, emphasizing cryptographic inventory and agility.\n\n→ Practical first steps to start mapping your systems and preparing for migration to post-quantum cryptography (PQC).\n\nThis video is for software and AI engineers in the financial sector who build and maintain complex systems. It provides a clear, engineering-focused framework for tackling the quantum threat beyond the hype.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀: \n\n• Quantum frontiers may be closer than they appear: https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline \n\n• Bank for International Settlements (BIS) Research (Project FuSSE, Project Leap): https://postquantum.com/security-pqc/bis-leap-2-pqc-payments/\n\n• G7 Roadmap for Financial Sector Cyber Resilience: https://www.secureworld.io/industry-news/post-quantum-roadmap-financial\n\n0:00 Introduction\n1:21 The Identity Layer, \rNot the Vault\n4:30 Four Critical Risk Vectors \rfor Financial Systems\n7:43 The Blueprint for a \rQuantum-Ready Bank\n10:37 Takeaways\n\n#quantumcomputing  #postquantumcryptography  #finance  #cybersecurity  #fintech  #softwareengineering  #cryptography  #digitalidentity  #banking",
       "thumbnails": {
         "default": {
@@ -55,7 +117,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "The Quantum Threat to Our Financial Systems (Are We Ready?)",
+        "title": "Why Quantum's Real Threat to Finance Isn't Encryption",
         "description": "Discover why quantum computing's real threat to finance is identity and authentication, not just encryption, and learn how to build a quantum-ready stack.\n\nThe quantum threat to finance is not a distant, academic problem; it's an immediate engineering challenge. Most engineers are focused on the wrong risk. The danger isn't about breaking data vaults in the future; it's about dismantling the identity and authentication systems that authorize transactions and verify trust right now.\n\nThis video covers: \n\n→ Why the quantum threat targets the \"identity layer\" (PKI, digital signatures) and not the \"data vault\" (symmetric encryption).\n\n→ The four critical risk vectors for financial systems: data harvesting, signature forgery, platform debt, and performance bottlenecks.\n\n→ An architectural blueprint for a quantum-ready bank, emphasizing cryptographic inventory and agility.\n\n→ Practical first steps to start mapping your systems and preparing for migration to post-quantum cryptography (PQC).\n\nThis video is for software and AI engineers in the financial sector who build and maintain complex systems. It provides a clear, engineering-focused framework for tackling the quantum threat beyond the hype.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀: \n\n• Quantum frontiers may be closer than they appear: https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline \n\n• Bank for International Settlements (BIS) Research (Project FuSSE, Project Leap): https://postquantum.com/security-pqc/bis-leap-2-pqc-payments/\n\n• G7 Roadmap for Financial Sector Cyber Resilience: https://www.secureworld.io/industry-news/post-quantum-roadmap-financial\n\n0:00 Introduction\n1:21 The Identity Layer, \rNot the Vault\n4:30 Four Critical Risk Vectors \rfor Financial Systems\n7:43 The Blueprint for a \rQuantum-Ready Bank\n10:37 Takeaways\n\n#quantumcomputing  #postquantumcryptography  #finance  #cybersecurity  #fintech  #softwareengineering  #cryptography  #digitalidentity  #banking"
       },
       "defaultAudioLanguage": "en"
@@ -70,7 +132,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "45",
+      "viewCount": "57",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -78,7 +140,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qq-dkB1FS9LwPCmkRGnCsz5y-dE",
+    "etag": "ZcJ7oBtEW984ZgSuQwGQ4GtwrZg",
     "id": "ntRd1BOQO9Q",
     "snippet": {
       "publishedAt": "2026-05-08T16:52:33Z",
@@ -146,7 +208,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "65",
+      "viewCount": "69",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -154,7 +216,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "_S-3OsRqxep6h3MmH2AFhmmWgy4",
+    "etag": "arMnfiXhuKjG1JIhGkpOKqF1Nc8",
     "id": "rGspkFASp8k",
     "snippet": {
       "publishedAt": "2026-04-29T14:45:07Z",
@@ -231,7 +293,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "9PUXWcRYc2KFe8EfDiwxQCUKcps",
+    "etag": "lfCCxNxEGHEctczlKbCyqT52wbQ",
     "id": "AfaOvAXFCmg",
     "snippet": {
       "publishedAt": "2026-04-25T20:00:40Z",
@@ -313,7 +375,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "97",
+      "viewCount": "104",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -321,7 +383,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "iRYug9UxXQ9r6rRcUJcXyl4Mn-U",
+    "etag": "S5fmQEzDqh0D8RjjLPEFGO9L4Vg",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -392,8 +454,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "804",
-      "likeCount": "15",
+      "viewCount": "811",
+      "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "7"
     }
@@ -478,7 +540,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "40nXwRa2CwLAegP5rFJ-zHD6du4",
+    "etag": "-3BNXsNW30e-bS3cYjYxHZhCW6M",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -556,7 +618,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "240",
+      "viewCount": "242",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -564,7 +626,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "lSKx-sEEa6CxJ3PnkJXEsgb0xBo",
+    "etag": "REbequTgLjvDTOJs8AUs_c-HBbE",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -633,7 +695,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "215",
+      "viewCount": "225",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -641,7 +703,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "hs40At-uV9bgOuaJmAf6V8OMQnI",
+    "etag": "AWOF2MXRP7LlXWIYiBcRnKPuFfE",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -709,7 +771,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "484",
+      "viewCount": "526",
       "likeCount": "13",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -717,7 +779,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "dFsZwXyUyrs9NruIN7a9BEvKLU0",
+    "etag": "FK2byAAoVi8fPCej3g1_pGyEwTE",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -792,15 +854,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "172",
-      "likeCount": "12",
+      "viewCount": "183",
+      "likeCount": "13",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "8MajOKNDOIb3ncvikGnB8dGems4",
+    "etag": "r0hSnAsBLOkiiaeU5_gpbSINXm4",
     "id": "4vltll8lO1g",
     "snippet": {
       "publishedAt": "2026-02-07T15:40:48Z",
@@ -869,7 +931,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "110",
+      "viewCount": "111",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -953,7 +1015,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "AnBVap0oLrEQ0xyhQv_FYK0TFyw",
+    "etag": "IpKulBG0oTTNFiJl9eJ332nV9Xg",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -1035,7 +1097,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "204",
+      "viewCount": "210",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -1043,7 +1105,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "tS2FzOI0ab6petfrwMjznJHjUrk",
+    "etag": "_b1Rj-1EIAnZJM4W5lL8JOhjHRQ",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -1123,15 +1185,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "3371",
-      "likeCount": "67",
+      "viewCount": "3491",
+      "likeCount": "69",
       "favoriteCount": "0",
       "commentCount": "11"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "xz7Tem3lJzIG0ovxhd2-BgIRB4s",
+    "etag": "setbSG64yyPfpKnQ-SrNZgAtrrI",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -1210,7 +1272,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "183",
+      "viewCount": "189",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1218,7 +1280,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ByAp6RBQsstJTWIsWUsRThSfsYk",
+    "etag": "4Cw4XJ-PaI6wJSP8aIJCjHagFyE",
     "id": "pHqoIPAlOcw",
     "snippet": {
       "publishedAt": "2026-01-08T09:44:25Z",
@@ -1394,7 +1456,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "MgU6O-ILl9yPz5L5CBh_ITuVOIo",
+    "etag": "uTNUIqfjm4EhrV7ManYZp_DPd-E",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -1473,7 +1535,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "949",
+      "viewCount": "964",
       "likeCount": "39",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -1570,7 +1632,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "VB6UVHlQW1oaUcLh5izuUSyGSok",
+    "etag": "_RKY7IeuMMIEXyGBPfWHsiSIZY0",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -1651,7 +1713,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "213",
+      "viewCount": "216",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1659,7 +1721,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "jQJTPjqmGueeQhDGrtP30b3Dh74",
+    "etag": "rhn6NxWbqryqEZ4XdFiaWD4-iNg",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -1734,15 +1796,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2376",
-      "likeCount": "107",
+      "viewCount": "2425",
+      "likeCount": "108",
       "favoriteCount": "0",
       "commentCount": "25"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "ZTdo3rOCMPP2YIgajzXmL5TfcH0",
+    "etag": "pL2ePuUeIHZGggs9XPYGTW0NTGo",
     "id": "3s7xjI3g73w",
     "snippet": {
       "publishedAt": "2024-12-29T17:00:04Z",
@@ -1835,7 +1897,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "FuH5F5Bw7QG1b0MRY9fLJyuAwvU",
+    "etag": "BwExV8MKm9KRt7xdQ35INaemF6c",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -1910,7 +1972,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "265",
+      "viewCount": "266",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2002,7 +2064,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "EPDYJ0BSkDdAKK2TUU2iJ8rFU8s",
+    "etag": "sWMoS9siV1MmEU6jedsuTZXaEKE",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -2076,7 +2138,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "614",
+      "viewCount": "615",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -2167,7 +2229,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "sDcTonJawh8cbnjoEeL0d5LOnV8",
+    "etag": "ixIMXVkUT2keoKX-4xAW7VMN8Bg",
     "id": "n1t3XEAyUgQ",
     "snippet": {
       "publishedAt": "2024-10-21T06:00:32Z",
@@ -2242,7 +2304,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "168",
+      "viewCount": "169",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2405,7 +2467,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "gwBmpH32zlaDtMO96419bwH5alY",
+    "etag": "kc5nOu4Ih7MfVB8Vc5JmJYi0w2s",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -2466,7 +2528,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12888",
+      "viewCount": "12894",
       "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "296"
@@ -2474,7 +2536,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "uzhVsDSYbSOJYrQVxItdFuMrU20",
+    "etag": "51aomtLMIaxCTjvAPAceYlDuxiQ",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -2536,15 +2598,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "961",
-      "likeCount": "60",
+      "viewCount": "970",
+      "likeCount": "61",
       "favoriteCount": "0",
       "commentCount": "34"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "HCjEgiBRRyHztvKkWEPv-Fg7GyQ",
+    "etag": "2Z3OqEgFlBtyv3sMS58Ycvi9dQ0",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -2598,7 +2660,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "225",
+      "viewCount": "233",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2606,7 +2668,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "PWuue9OQX8QB81M_i3dgnpJ0iWs",
+    "etag": "JOJI7f6EfdPZe_E_-cfKUKdcYlo",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -2660,7 +2722,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "997",
+      "viewCount": "1009",
       "likeCount": "34",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2737,7 +2799,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "E6wLKKH86d6nT_ViqwB5Py5TAf8",
+    "etag": "AcYFCloKaXjM-8uqpGp53idejAQ",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -2796,7 +2858,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "180",
+      "viewCount": "181",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -2804,7 +2866,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "BzefczTJ7dzGrCVS9L3gVGfZsHY",
+    "etag": "H2UW4mHzvXEF1lZo2FsJaw0XmGg",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -2858,7 +2920,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "198",
+      "viewCount": "199",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -2928,7 +2990,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Glz1DrLAixcQ7aAgZkmB9g47Jfk",
+    "etag": "4KgN3bvOrxnWuyIURVVxmtR7uuw",
     "id": "HXj2B8eHmt4",
     "snippet": {
       "publishedAt": "2022-10-16T20:05:21Z",
@@ -2989,7 +3051,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "103",
+      "viewCount": "104",
       "likeCount": "5",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -3065,7 +3127,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "MAUUoSkFu2r_iF6Y0QEWX__YeD8",
+    "etag": "kV90dy7-WHym_uES4D0nr7bEDPw",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -3267,7 +3329,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "RyG501H8Vtj-hqN_ne4SgV5CMho",
+    "etag": "LF7tZLeFVf5WIto1ut3vujcREGk",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -3327,7 +3389,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "294",
+      "viewCount": "296",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "11"
