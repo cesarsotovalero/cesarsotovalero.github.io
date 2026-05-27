@@ -13,4 +13,4 @@ César Soto Valero is currently a Data Scientist at SEB Group. He has experience
 
 ---
 
-César has been seen as speaker at: **Jfokus**, **Data Innovation Summit**, **Voxxed Days Zürich**, **AI-fokus**, **FOSDEM**, **PyData Global**, **SEB Tech Day**, **Descentralized Camp Meetup**, **KTH Workshop on the Software Supply Chain**, and **ACM ESEC/FSE**.
+César has been seen as speaker at: **Jfokus**, **Data Innovation Summit**, **Voxxed Days Zürich**, **AI-fokus**, **FOSDEM**, **PyData Global**, **SEB Tech Day**, **Nordic Blockchain Conference**, **Descentralized Camp Meetup**, **KTH Workshop on the Software Supply Chain**, and **ACM's ESEC/FSE**.
