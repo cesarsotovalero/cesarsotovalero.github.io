@@ -1,7 +1,7 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "nIj69-DvSDpU8u7IPUeZT-Kb96g",
+    "etag": "pgywrZJeYRc2GigieDDU2ZHv5vQ",
     "id": "VO5gC3RakSk",
     "snippet": {
       "publishedAt": "2026-05-24T14:46:16Z",
@@ -55,15 +55,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "8",
+      "viewCount": "27",
       "likeCount": "2",
       "favoriteCount": "0",
-      "commentCount": "0"
+      "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "xBlvMZwU4p43w9QPJk9LHE0u_8s",
+    "etag": "8OPeyX8yo45WhE-NMdhOcj0RQLc",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
@@ -132,15 +132,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "57",
-      "likeCount": "2",
+      "viewCount": "62",
+      "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "ZcJ7oBtEW984ZgSuQwGQ4GtwrZg",
+    "etag": "GTv7W9sbQmNzrYNEEkeJBgHYWmU",
     "id": "ntRd1BOQO9Q",
     "snippet": {
       "publishedAt": "2026-05-08T16:52:33Z",
@@ -208,7 +208,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "69",
+      "viewCount": "70",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -293,7 +293,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "lfCCxNxEGHEctczlKbCyqT52wbQ",
+    "etag": "4mppO1S6PdYMi3wMlFNvos1boeE",
     "id": "AfaOvAXFCmg",
     "snippet": {
       "publishedAt": "2026-04-25T20:00:40Z",
@@ -375,7 +375,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "104",
+      "viewCount": "110",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -383,7 +383,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "S5fmQEzDqh0D8RjjLPEFGO9L4Vg",
+    "etag": "UmAlyPnWOcigj41p0nNyu0Utzi4",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -454,7 +454,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "811",
+      "viewCount": "813",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "7"
@@ -540,7 +540,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "-3BNXsNW30e-bS3cYjYxHZhCW6M",
+    "etag": "S1HMvMNs1jfI51H6lHTBd3k9vdE",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -618,7 +618,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "242",
+      "viewCount": "243",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -626,7 +626,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "REbequTgLjvDTOJs8AUs_c-HBbE",
+    "etag": "BLYiFHv1zAVdszR4BRQcTYfjJ5s",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -695,7 +695,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "225",
+      "viewCount": "231",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -703,7 +703,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "AWOF2MXRP7LlXWIYiBcRnKPuFfE",
+    "etag": "NqEWNOKjilCthkU48oOKoRfUYaA",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -771,7 +771,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "526",
+      "viewCount": "562",
       "likeCount": "13",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -779,7 +779,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "FK2byAAoVi8fPCej3g1_pGyEwTE",
+    "etag": "gz8xf-Zlm_oNzcKt8Va6Q5vglWk",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -854,15 +854,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "183",
-      "likeCount": "13",
+      "viewCount": "185",
+      "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "r0hSnAsBLOkiiaeU5_gpbSINXm4",
+    "etag": "fWEsgwPoHc7H2DCHX3IOS6qqq_Y",
     "id": "4vltll8lO1g",
     "snippet": {
       "publishedAt": "2026-02-07T15:40:48Z",
@@ -931,7 +931,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "111",
+      "viewCount": "117",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -939,7 +939,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "bhu2JAkNTd3S_BXlITh58cPp1wM",
+    "etag": "q66O9E4Cz9OKMGHJtBpvzca0Ogg",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -1007,7 +1007,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "113",
+      "viewCount": "114",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1015,7 +1015,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "IpKulBG0oTTNFiJl9eJ332nV9Xg",
+    "etag": "7JoefaqLKhb5w0P8u-7mAeCAI7E",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -1097,15 +1097,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "210",
+      "viewCount": "223",
       "likeCount": "8",
       "favoriteCount": "0",
-      "commentCount": "8"
+      "commentCount": "10"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "_b1Rj-1EIAnZJM4W5lL8JOhjHRQ",
+    "etag": "z2zqDHkDkY0_M4MYRET8qy27RrQ",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -1185,15 +1185,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "3491",
-      "likeCount": "69",
+      "viewCount": "3617",
+      "likeCount": "70",
       "favoriteCount": "0",
       "commentCount": "11"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "setbSG64yyPfpKnQ-SrNZgAtrrI",
+    "etag": "1JC2aAbYZ7g6V7VPXR0W6psmDms",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -1272,7 +1272,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "189",
+      "viewCount": "190",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1456,7 +1456,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "uTNUIqfjm4EhrV7ManYZp_DPd-E",
+    "etag": "VNo28fCKbFk9gP1K5aoO7PhfqCk",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -1535,7 +1535,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "964",
+      "viewCount": "969",
       "likeCount": "39",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -1632,7 +1632,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "_RKY7IeuMMIEXyGBPfWHsiSIZY0",
+    "etag": "mro-kuM3_EyVt8iIE9sa4k-lfps",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -1713,7 +1713,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "216",
+      "viewCount": "221",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1721,7 +1721,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "rhn6NxWbqryqEZ4XdFiaWD4-iNg",
+    "etag": "09DenkxntYFMKe5b5vkgMNHhQZQ",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -1796,10 +1796,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2425",
-      "likeCount": "108",
+      "viewCount": "2476",
+      "likeCount": "110",
       "favoriteCount": "0",
-      "commentCount": "25"
+      "commentCount": "27"
     }
   },
   {
@@ -1897,7 +1897,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "BwExV8MKm9KRt7xdQ35INaemF6c",
+    "etag": "uef8E-XH1INBZIq_CJSqX4ASHZU",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -1972,7 +1972,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "266",
+      "viewCount": "268",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2146,12 +2146,12 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "csbdoxpc1W7I7LXO7l3bo4O8Ou0",
+    "etag": "QwbK0S0uhXsvF4xh7k7w4o5YlKM",
     "id": "GRd2nxNTZDI",
     "snippet": {
       "publishedAt": "2024-11-30T07:00:08Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Speaking Imperfect English Can Transform Your Life",
+      "title": "How Speaking Imperfect English Can Transform Your Life",
       "description": "Learning English as a non-native speaker changed my life (IELTS, academia, career growth) from Cuba to Europe, plus practical tips to improve your English fast.\n\nI came from a small town in Cuba where access to basic needs was severely limited. One day I decided to teach myself English and signed up for the IELTS test. Ten years later, I live in one of Europe’s most developed cities, pursuing an academic and professional path that once felt impossible.\n\nThis video isn’t just about learning a second language. It’s about breaking barriers, expanding your options, and using English as leverage for education, research, and career growth (even when the odds are not on your side).\n\nYou’ll learn:\n→ Why English matters for opportunities (especially in science and academia)\n→ How English became the default language of research and global work\n→ My story of deciding to learn English (what worked and what didn’t)\n→ What the IELTS test was like and how I prepared\n→ Three practical ways to improve your English without burning out\n\nThis is for non-native speakers, students, and early-career professionals who feel blocked by language (and want a realistic roadmap that respects the struggle and still delivers results).\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Related video (1): https://youtu.be/N7pY8VAt6g4\n→ Related video (2): https://youtu.be/ZpILR21GWao\n→ Blog post (IELTS self-training): https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html\n→ Nature article (science boycotts): https://www.nature.com/articles/d41586-022-01475-8\n\n⏰ TIMESTAMPS\n00:00 – Intro\n02:22 – Why English Is Important\n03:57 – The Rise of English as The Language of Science\n07:28 – Deciding to Learn English (my story)\n12:31 – The IELTS Test\n16:13 – Open Opportunities Through English\n19:12 – 3 Ways to Improve Your English\n22:56 – Final Thoughts\n\n#LearningEnglish #NonNativeSpeakers #IELTS #AcademicJourney #PhDLife #LanguageLearning #EnglishTips #StudyAbroad",
       "thumbnails": {
         "default": {
@@ -2206,7 +2206,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "Speaking Imperfect English Can Transform Your Life",
+        "title": "How Speaking Imperfect English Can Transform Your Life",
         "description": "Learning English as a non-native speaker changed my life (IELTS, academia, career growth) from Cuba to Europe, plus practical tips to improve your English fast.\n\nI came from a small town in Cuba where access to basic needs was severely limited. One day I decided to teach myself English and signed up for the IELTS test. Ten years later, I live in one of Europe’s most developed cities, pursuing an academic and professional path that once felt impossible.\n\nThis video isn’t just about learning a second language. It’s about breaking barriers, expanding your options, and using English as leverage for education, research, and career growth (even when the odds are not on your side).\n\nYou’ll learn:\n→ Why English matters for opportunities (especially in science and academia)\n→ How English became the default language of research and global work\n→ My story of deciding to learn English (what worked and what didn’t)\n→ What the IELTS test was like and how I prepared\n→ Three practical ways to improve your English without burning out\n\nThis is for non-native speakers, students, and early-career professionals who feel blocked by language (and want a realistic roadmap that respects the struggle and still delivers results).\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Related video (1): https://youtu.be/N7pY8VAt6g4\n→ Related video (2): https://youtu.be/ZpILR21GWao\n→ Blog post (IELTS self-training): https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html\n→ Nature article (science boycotts): https://www.nature.com/articles/d41586-022-01475-8\n\n⏰ TIMESTAMPS\n00:00 – Intro\n02:22 – Why English Is Important\n03:57 – The Rise of English as The Language of Science\n07:28 – Deciding to Learn English (my story)\n12:31 – The IELTS Test\n16:13 – Open Opportunities Through English\n19:12 – 3 Ways to Improve Your English\n22:56 – Final Thoughts\n\n#LearningEnglish #NonNativeSpeakers #IELTS #AcademicJourney #PhDLife #LanguageLearning #EnglishTips #StudyAbroad"
       },
       "defaultAudioLanguage": "en"
@@ -2312,7 +2312,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "-nqaUloK1Y-DwosXm9qaASA2ZVU",
+    "etag": "g99HaHtIe3GA0ZFN4dm0cIwIER0",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
@@ -2384,7 +2384,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "480",
+      "viewCount": "481",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -2392,7 +2392,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Kz-QjDPyXescM9ppqX7XrgkiF70",
+    "etag": "HjeMiOyg9dzYN109DsqFiKAVx9w",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
@@ -2467,7 +2467,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "kc5nOu4Ih7MfVB8Vc5JmJYi0w2s",
+    "etag": "SNQuqvfiJiasyhg0B93XWmjnJcM",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -2528,7 +2528,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12894",
+      "viewCount": "12895",
       "likeCount": "644",
       "favoriteCount": "0",
       "commentCount": "296"
@@ -2536,7 +2536,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "51aomtLMIaxCTjvAPAceYlDuxiQ",
+    "etag": "p108wOdQjPhwqzLaRBk8o9U2xMg",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -2598,15 +2598,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "970",
-      "likeCount": "61",
+      "viewCount": "976",
+      "likeCount": "62",
       "favoriteCount": "0",
-      "commentCount": "34"
+      "commentCount": "33"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "2Z3OqEgFlBtyv3sMS58Ycvi9dQ0",
+    "etag": "dM-Bi-xxhgz2C8VycuOzT9rHYpU",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -2660,7 +2660,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "233",
+      "viewCount": "236",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2668,7 +2668,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "JOJI7f6EfdPZe_E_-cfKUKdcYlo",
+    "etag": "HYx0OBdjnfoAgDIJ7-RYQJGIgQQ",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -2722,7 +2722,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1009",
+      "viewCount": "1027",
       "likeCount": "34",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2730,7 +2730,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "b3yautSRegjZ9buyzSegZBqzFSA",
+    "etag": "TGIzu5DJS42fkWmQ4BFpHyjWAVA",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -2791,7 +2791,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "441",
+      "viewCount": "442",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2799,7 +2799,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "AcYFCloKaXjM-8uqpGp53idejAQ",
+    "etag": "kg5cYmm2UoTWpQfv7RBHel5QTkU",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -2858,7 +2858,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "181",
+      "viewCount": "183",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -2866,7 +2866,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "H2UW4mHzvXEF1lZo2FsJaw0XmGg",
+    "etag": "iKPNILvti306YIoQvL8GJc_eipI",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -2907,8 +2907,7 @@
       "localized": {
         "title": "Preventing Software Supply Chain Attacks With Dependency Management Best Practices",
         "description": "Talk at SEB's Tech Day in Arenastaden Stockholm, September 2023\n\n# Takeaways\n\n* Software supply chain attacks are real.\n* There are ways to prevent and mitigate this particular threat.\n* You can start by knowing your dependencies, updating, and cleaning them.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwaredevelopment #vulnerabilities #dependencies"
-      },
-      "defaultAudioLanguage": "en"
+      }
     },
     "contentDetails": {
       "duration": "PT15M",
@@ -2928,7 +2927,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "jGZeo9ICOSpI39xkRe3tRNV4r84",
+    "etag": "vYMkNebv6L00AQUH6PIWR6Cdj_8",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -2982,7 +2981,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "206",
+      "viewCount": "207",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
