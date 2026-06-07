@@ -40,7 +40,7 @@ I've co-reviewed papers for the following journals and conferences:
 
 I've served as a Committee Member for the following conferences:
 
-- [ACM SIGPLAN Onward! 2026](https://2026.splashcon.org/track/splash-2026-onward--papers), 🖼️ [Recognition](../img/screenshots/2026-splashcon-org-track-splash-2026-onward--papers-Call-for-Papers.jpg)
+- [ACM SIGPLAN Onward! 2026](https://2026.splashcon.org/track/splash-2026-onward--papers), where I peer-reviewed and discussed 6 papers, 🖼️ [Recognition](../img/screenshots/2026-splashcon-org-track-splash-2026-onward--papers-Call-for-Papers.jpg)
 - [1st International Workshop on Software Engineering for the GenAI Transformation (SEE-AIT) 2026](https://seeait.github.io/), 🖼️ [Recognition](../img/screenshots/SEE-AIT.jfif)
 - [Jfokus 2026](https://www.jfokus.se/), where [I rated 660+ talk proposals](https://www.linkedin.com/posts/cesarsotovalero_jfokus-jfokus-callforspeakers-activity-7371260446370127873-KCXd). 🖼️ [Recognition](../img/screenshots/Jfokus2026-Program-Committee.jfif)
 - [IEEE Secure Development Conference (SecDev) 2024](https://secdev.ieee.org/2024/program-committee/), where I peer-reviewed and discussed 4 papers, 🖼️ [Recognition](../img/screenshots/SecDev2024.png)
