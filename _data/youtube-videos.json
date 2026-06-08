@@ -1,7 +1,84 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "pgywrZJeYRc2GigieDDU2ZHv5vQ",
+    "etag": "u8VJ3hfP6p_88W00qWbo1qpbh3c",
+    "id": "Ikk2f0gEPuY",
+    "snippet": {
+      "publishedAt": "2026-06-06T19:11:28Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "How Markdown Accidentally Became the Language of AI",
+      "description": "How is that Markdown, a simple text format from 2004, became the secret language controlling the AI revolution and what it teaches us about good engineering?\n\nThe trillion-dollar AI industry, with its frontier models and world-changing ambitions, is controlled by a plain text format one guy made for his blog in 2004. This is a critical lesson in how resilient technologies are built and reveals a dangerous contradiction at the heart of the AI industry.\n\nThis video covers:\n\n❶ The surprising origin story of Markdown and the problem it solved for writers.\n❷ The core principles of openness and simplicity that made this format unstoppable.\n❸ The crucial lesson this holds for every AI engineer building today's systems.\n\nThis video is for AI engineers and developers who want to understand the foundational principles that make technology last, and how those lessons apply to building robust and human-centric AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n#markdown  #AIEngineering #PromptEngineering #TechHistory #OpenSource #SoftwareDevelopment #LLM #developertools",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Ikk2f0gEPuY/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Ikk2f0gEPuY/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Ikk2f0gEPuY/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/Ikk2f0gEPuY/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/Ikk2f0gEPuY/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "Markdown",
+        "AI",
+        "Artificial Intelligence",
+        "Prompt Engineering",
+        "Software Engineering",
+        "Tech History",
+        "John Gruber",
+        "Aaron Swartz",
+        "Open Source",
+        "Documentation",
+        "LLM",
+        "Large Language Models",
+        "Developer Tools"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "How Markdown Accidentally Became the Language of AI",
+        "description": "How is that Markdown, a simple text format from 2004, became the secret language controlling the AI revolution and what it teaches us about good engineering?\n\nThe trillion-dollar AI industry, with its frontier models and world-changing ambitions, is controlled by a plain text format one guy made for his blog in 2004. This is a critical lesson in how resilient technologies are built and reveals a dangerous contradiction at the heart of the AI industry.\n\nThis video covers:\n\n❶ The surprising origin story of Markdown and the problem it solved for writers.\n❷ The core principles of openness and simplicity that made this format unstoppable.\n❸ The crucial lesson this holds for every AI engineer building today's systems.\n\nThis video is for AI engineers and developers who want to understand the foundational principles that make technology last, and how those lessons apply to building robust and human-centric AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n#markdown  #AIEngineering #PromptEngineering #TechHistory #OpenSource #SoftwareDevelopment #LLM #developertools"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT10M44S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "51",
+      "likeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "0"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "0ZMDUxQa6_lx5KIDCDlgOwLY2ps",
     "id": "VO5gC3RakSk",
     "snippet": {
       "publishedAt": "2026-05-24T14:46:16Z",
@@ -55,7 +132,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "27",
+      "viewCount": "34",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -63,7 +140,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8OPeyX8yo45WhE-NMdhOcj0RQLc",
+    "etag": "EmS86qo5xGZbJB55lcz3arLsqoA",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
@@ -132,7 +209,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "62",
+      "viewCount": "66",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -293,97 +370,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "4mppO1S6PdYMi3wMlFNvos1boeE",
-    "id": "AfaOvAXFCmg",
-    "snippet": {
-      "publishedAt": "2026-04-25T20:00:40Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The Software Supply Chain of Agentic AI",
-      "description": "Agentic AI is changing how we build software, but it is also expanding the software supply chain in ways many teams underestimate.\n\nIn this talk at KTH, I explore the security and maintenance risks behind modern agentic AI frameworks from a user perspective. The key point is simple: it does not matter whether code is written by a human or an AI agent. Once it enters production, someone must maintain it, secure it, and take responsibility for it.\n\nI discuss how agentic AI systems introduce new layers of complexity: model registries, memory stores, tool calling, runtime execution, connectors, observability systems, cloud services, and transitive dependencies. These layers make the trust boundary much larger than the application code itself.\n\nUsing a real production Python project built with LangGraph and LangChain-related packages, I show how a small number of direct imports can pull in a much larger dependency graph. The result is a bigger blast radius, more integration surfaces, and new security concerns around prompt injection, state management, tool permissions, serialization, SQL injection, and runtime execution.\n\nThe talk also covers why accountability still matters in AI systems. As IBM warned back in 1979, a computer can never be held accountable. Even in the age of AI agents, humans remain responsible for design decisions, deployment practices, dependency choices, and production safety.\n\nKey topics covered:\n\n• Agentic AI frameworks and their role in modern applications\n• Software supply chain risks in AI systems\n• LangGraph, LangChain, LangSmith, and AI orchestration\n• Transitive dependencies and dependency graphs\n• Prompt injection and tool-based attacks\n• Memory, state, and persistence risks in AI agents\n• Why agent autonomy increases the attack surface\n• Practical recommendations for securing agentic AI systems\n• Why teams still need dependency pinning, isolation, monitoring, and automation\n\nMy main recommendation: treat agentic AI frameworks as production software infrastructure, not as magical wrappers around models. The magic is just code with better marketing.\n\nConnect with me: https://www.cesarsotovalero.net\n\nSubscribe to the channel: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n#agenticai  #aiagents  #aisecurity  #SoftwareSupplyChain #secureai  #SupplyChainSecurity, #LLMSecurity",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "agentic AI",
-        "AI agents",
-        "software supply chain",
-        "AI security",
-        "software dependencies",
-        "LangGraph",
-        "LangChain",
-        "AI frameworks",
-        "LLM security",
-        "prompt injection",
-        "supply chain risk",
-        "software engineering",
-        "AI governance",
-        "AI risk management",
-        "model registries",
-        "AI observability",
-        "secure AI development",
-        "DevSecOps",
-        "software architecture",
-        "runtime security",
-        "package registries",
-        "dependency graph",
-        "vulnerability management",
-        "AI accountability",
-        "production AI systems",
-        "secure software development"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "The Software Supply Chain of Agentic AI",
-        "description": "Agentic AI is changing how we build software, but it is also expanding the software supply chain in ways many teams underestimate.\n\nIn this talk at KTH, I explore the security and maintenance risks behind modern agentic AI frameworks from a user perspective. The key point is simple: it does not matter whether code is written by a human or an AI agent. Once it enters production, someone must maintain it, secure it, and take responsibility for it.\n\nI discuss how agentic AI systems introduce new layers of complexity: model registries, memory stores, tool calling, runtime execution, connectors, observability systems, cloud services, and transitive dependencies. These layers make the trust boundary much larger than the application code itself.\n\nUsing a real production Python project built with LangGraph and LangChain-related packages, I show how a small number of direct imports can pull in a much larger dependency graph. The result is a bigger blast radius, more integration surfaces, and new security concerns around prompt injection, state management, tool permissions, serialization, SQL injection, and runtime execution.\n\nThe talk also covers why accountability still matters in AI systems. As IBM warned back in 1979, a computer can never be held accountable. Even in the age of AI agents, humans remain responsible for design decisions, deployment practices, dependency choices, and production safety.\n\nKey topics covered:\n\n• Agentic AI frameworks and their role in modern applications\n• Software supply chain risks in AI systems\n• LangGraph, LangChain, LangSmith, and AI orchestration\n• Transitive dependencies and dependency graphs\n• Prompt injection and tool-based attacks\n• Memory, state, and persistence risks in AI agents\n• Why agent autonomy increases the attack surface\n• Practical recommendations for securing agentic AI systems\n• Why teams still need dependency pinning, isolation, monitoring, and automation\n\nMy main recommendation: treat agentic AI frameworks as production software infrastructure, not as magical wrappers around models. The magic is just code with better marketing.\n\nConnect with me: https://www.cesarsotovalero.net\n\nSubscribe to the channel: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n#agenticai  #aiagents  #aisecurity  #SoftwareSupplyChain #secureai  #SupplyChainSecurity, #LLMSecurity"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT20M6S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "110",
-      "likeCount": "2",
-      "favoriteCount": "0",
-      "commentCount": "1"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "UmAlyPnWOcigj41p0nNyu0Utzi4",
+    "etag": "5ZRm8TDK6B3Opw9HtvT_D87GtH4",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -454,7 +441,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "813",
+      "viewCount": "814",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "7"
@@ -540,7 +527,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "S1HMvMNs1jfI51H6lHTBd3k9vdE",
+    "etag": "vmbnfMzCNYJ900yroDns6H1-pUo",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -618,7 +605,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "243",
+      "viewCount": "244",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -626,7 +613,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "BLYiFHv1zAVdszR4BRQcTYfjJ5s",
+    "etag": "Ul1afELs5YVvs1GiTHI-z9HnSds",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -695,7 +682,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "231",
+      "viewCount": "238",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -703,7 +690,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "NqEWNOKjilCthkU48oOKoRfUYaA",
+    "etag": "ae2we6bAg6k9vMEZGlmrnlgpXgM",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -771,7 +758,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "562",
+      "viewCount": "582",
       "likeCount": "13",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -779,7 +766,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "gz8xf-Zlm_oNzcKt8Va6Q5vglWk",
+    "etag": "RDs3dujUCM9vSFPmw01BLggMCXI",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -854,7 +841,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "185",
+      "viewCount": "198",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -862,7 +849,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "fWEsgwPoHc7H2DCHX3IOS6qqq_Y",
+    "etag": "TtUT0chsNq1mNCI5KIDvcRnW0d4",
     "id": "4vltll8lO1g",
     "snippet": {
       "publishedAt": "2026-02-07T15:40:48Z",
@@ -922,7 +909,7 @@
       "defaultAudioLanguage": "en"
     },
     "contentDetails": {
-      "duration": "PT12M42S",
+      "duration": "PT12M43S",
       "dimension": "2d",
       "definition": "hd",
       "caption": "true",
@@ -931,7 +918,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "117",
+      "viewCount": "119",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -939,7 +926,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "q66O9E4Cz9OKMGHJtBpvzca0Ogg",
+    "etag": "EXS1_SeL5f2sNO8nWrDTvhiwxZE",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -998,7 +985,7 @@
       "defaultAudioLanguage": "en"
     },
     "contentDetails": {
-      "duration": "PT15M26S",
+      "duration": "PT15M27S",
       "dimension": "2d",
       "definition": "hd",
       "caption": "true",
@@ -1015,7 +1002,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "7JoefaqLKhb5w0P8u-7mAeCAI7E",
+    "etag": "St4IuW_Tpm0O0CilMYExlmJ25xU",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -1097,15 +1084,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "223",
-      "likeCount": "8",
+      "viewCount": "238",
+      "likeCount": "9",
       "favoriteCount": "0",
-      "commentCount": "10"
+      "commentCount": "11"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "z2zqDHkDkY0_M4MYRET8qy27RrQ",
+    "etag": "6RpTwKwA6FUCzGRFd3ACbylgJA0",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -1185,15 +1172,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "3617",
-      "likeCount": "70",
+      "viewCount": "3686",
+      "likeCount": "72",
       "favoriteCount": "0",
       "commentCount": "11"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "1JC2aAbYZ7g6V7VPXR0W6psmDms",
+    "etag": "3h2GNZshRRjc49G9Mg6MMZk5oxY",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -1272,7 +1259,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "190",
+      "viewCount": "193",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1280,7 +1267,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "4Cw4XJ-PaI6wJSP8aIJCjHagFyE",
+    "etag": "R-yKozGrECl60UJ8GdrfY64XpB8",
     "id": "pHqoIPAlOcw",
     "snippet": {
       "publishedAt": "2026-01-08T09:44:25Z",
@@ -1358,7 +1345,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "146",
+      "viewCount": "148",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1456,7 +1443,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "VNo28fCKbFk9gP1K5aoO7PhfqCk",
+    "etag": "SWhicf8vr1z_XlfMG1jcCMJXzsA",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -1535,7 +1522,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "969",
+      "viewCount": "975",
       "likeCount": "39",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -1632,7 +1619,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "mro-kuM3_EyVt8iIE9sa4k-lfps",
+    "etag": "_tU2qavqqCweeCzs1kJXDzHPZBE",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -1713,7 +1700,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "221",
+      "viewCount": "228",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1721,7 +1708,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "09DenkxntYFMKe5b5vkgMNHhQZQ",
+    "etag": "ANw_jbhsyhI4bFeAw2q7IX24DSQ",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -1796,7 +1783,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2476",
+      "viewCount": "2518",
       "likeCount": "110",
       "favoriteCount": "0",
       "commentCount": "27"
@@ -1804,100 +1791,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "pL2ePuUeIHZGggs9XPYGTW0NTGo",
-    "id": "3s7xjI3g73w",
-    "snippet": {
-      "publishedAt": "2024-12-29T17:00:04Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "How GPTs are Shaping our Perception of Truth",
-      "description": "How LLMs like GPT shape “truth” online (hallucinations, bias, crowd-consensus effects, epistemic trust) and how to think critically about AI-generated answers.\n\nSearch used to route you to sources. LLMs increasingly hand you conclusions. That convenience is exactly why they can reshape what you believe to be true, even when they’re wrong in confident and subtle ways.\n\nIn this video, we explore how GPT-style models influence perception of truth, where their “knowledge” really comes from, and why they’re powerful yet fallible. We’ll unpack hallucinations, bias, and the crowd-consensus effect, then end with practical habits for engaging with AI outputs without outsourcing your judgment.\n\nYou’ll learn:\n→ Why the shift from search to AI answers changes epistemic trust\n→ How LLMs can look intelligent while still being unreliable\n→ Where hallucinations come from (and why they’re not random glitches)\n→ The unexpected biases and consensus effects that distort outputs\n→ Practical ways to verify, cross-check, and use LLMs responsibly\n\nThis is for developers, students, knowledge workers, and anyone using AI daily who wants a clean mental model of what LLMs are (and aren’t) so you can rely on them without being quietly misled.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n⏰ TIMESTAMPS\n00:00 - From Google to AI answers \n01:14 - Why GPTs are reshaping truth \n03:37 - How GPTs seem “intelligent” \n09:02 - The unexpected biases of GPTs \n10:28 - The crowdsource effect \n13:18 - Epistemic trust and AI’s truth \n16:51 - Guardrails and limitations \n18:15 - The potential risks of GPTs \n19:37 - Practical insights\n\n📺 RESOURCES\n→ Watch next (1): https://youtu.be/SQY2IED6vFQ\n→ Watch next (2): https://youtu.be/kw7fvHf4rDw\n→ ACM Queue article (GPTs and hallucination): https://queue.acm.org/detail.cfm?id=3688007\n→ Paper (Hallucinations Leaderboard): https://arxiv.org/pdf/2404.05904\n\n#AITruth #ArtificialIntelligence #LLM #AIHallucinations #TrustInAI #CriticalThinking #GPT #DigitalLiteracy",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/3s7xjI3g73w/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/3s7xjI3g73w/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/3s7xjI3g73w/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/3s7xjI3g73w/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/3s7xjI3g73w/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "AI",
-        "GPT",
-        "LLMs",
-        "truth in AI",
-        "AI perception",
-        "AI-generated information",
-        "GPT hallucinations",
-        "AI biases",
-        "crowd consensus",
-        "digital truth",
-        "AI and knowledge",
-        "critical thinking",
-        "AI fallibility",
-        "truth distortion",
-        "AI threats",
-        "understanding AI",
-        "AI reality",
-        "language models",
-        "GPT influence",
-        "digital world",
-        "AI ethics",
-        "AI illusion of intelligence",
-        "AI is not real",
-        "GPT model biases",
-        "Machine Learning limita",
-        "ai errors",
-        "the threat of ai to humanity",
-        "Information issues",
-        "conspirance theory"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "How GPTs are Shaping our Perception of Truth",
-        "description": "How LLMs like GPT shape “truth” online (hallucinations, bias, crowd-consensus effects, epistemic trust) and how to think critically about AI-generated answers.\n\nSearch used to route you to sources. LLMs increasingly hand you conclusions. That convenience is exactly why they can reshape what you believe to be true, even when they’re wrong in confident and subtle ways.\n\nIn this video, we explore how GPT-style models influence perception of truth, where their “knowledge” really comes from, and why they’re powerful yet fallible. We’ll unpack hallucinations, bias, and the crowd-consensus effect, then end with practical habits for engaging with AI outputs without outsourcing your judgment.\n\nYou’ll learn:\n→ Why the shift from search to AI answers changes epistemic trust\n→ How LLMs can look intelligent while still being unreliable\n→ Where hallucinations come from (and why they’re not random glitches)\n→ The unexpected biases and consensus effects that distort outputs\n→ Practical ways to verify, cross-check, and use LLMs responsibly\n\nThis is for developers, students, knowledge workers, and anyone using AI daily who wants a clean mental model of what LLMs are (and aren’t) so you can rely on them without being quietly misled.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n⏰ TIMESTAMPS\n00:00 - From Google to AI answers \n01:14 - Why GPTs are reshaping truth \n03:37 - How GPTs seem “intelligent” \n09:02 - The unexpected biases of GPTs \n10:28 - The crowdsource effect \n13:18 - Epistemic trust and AI’s truth \n16:51 - Guardrails and limitations \n18:15 - The potential risks of GPTs \n19:37 - Practical insights\n\n📺 RESOURCES\n→ Watch next (1): https://youtu.be/SQY2IED6vFQ\n→ Watch next (2): https://youtu.be/kw7fvHf4rDw\n→ ACM Queue article (GPTs and hallucination): https://queue.acm.org/detail.cfm?id=3688007\n→ Paper (Hallucinations Leaderboard): https://arxiv.org/pdf/2404.05904\n\n#AITruth #ArtificialIntelligence #LLM #AIHallucinations #TrustInAI #CriticalThinking #GPT #DigitalLiteracy"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT21M44S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "417",
-      "likeCount": "12",
-      "favoriteCount": "0",
-      "commentCount": "2"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "uef8E-XH1INBZIq_CJSqX4ASHZU",
+    "etag": "RM_Rrgb3vuv21zDj3cpk_0NBsJY",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -1972,7 +1866,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "268",
+      "viewCount": "270",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -1980,7 +1874,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qxL8uSF-mTEp5U3KuPaChWQXfSo",
+    "etag": "2cW_WSS-w0DGk5OQX5CABlsb640",
     "id": "SQY2IED6vFQ",
     "snippet": {
       "publishedAt": "2024-12-14T22:45:00Z",
@@ -2015,28 +1909,6 @@
         }
       },
       "channelTitle": "César Soto Valero",
-      "tags": [
-        "ArtificialIntelligence",
-        "AIImpact",
-        "FutureOfWork",
-        "AIRevolution",
-        "TechTrends",
-        "AIAndSociety",
-        "FutureJobs",
-        "IndustrialRevolution",
-        "DigitalEra",
-        "TechnologyAndHumanity",
-        "AIInTheWorkplace",
-        "CareerFuture",
-        "TechEvolution",
-        "AIOpportunities",
-        "AIThreats",
-        "FutureOfSociety",
-        "TechLiberation",
-        "9To5Jobs",
-        "ArtificialIntelligenceExplained",
-        "AIParadoxes"
-      ],
       "categoryId": "28",
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
@@ -2057,9 +1929,9 @@
     },
     "statistics": {
       "viewCount": "169",
-      "likeCount": "3",
+      "likeCount": "0",
       "favoriteCount": "0",
-      "commentCount": "1"
+      "commentCount": "0"
     }
   },
   {
@@ -2142,1256 +2014,6 @@
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "5"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "QwbK0S0uhXsvF4xh7k7w4o5YlKM",
-    "id": "GRd2nxNTZDI",
-    "snippet": {
-      "publishedAt": "2024-11-30T07:00:08Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "How Speaking Imperfect English Can Transform Your Life",
-      "description": "Learning English as a non-native speaker changed my life (IELTS, academia, career growth) from Cuba to Europe, plus practical tips to improve your English fast.\n\nI came from a small town in Cuba where access to basic needs was severely limited. One day I decided to teach myself English and signed up for the IELTS test. Ten years later, I live in one of Europe’s most developed cities, pursuing an academic and professional path that once felt impossible.\n\nThis video isn’t just about learning a second language. It’s about breaking barriers, expanding your options, and using English as leverage for education, research, and career growth (even when the odds are not on your side).\n\nYou’ll learn:\n→ Why English matters for opportunities (especially in science and academia)\n→ How English became the default language of research and global work\n→ My story of deciding to learn English (what worked and what didn’t)\n→ What the IELTS test was like and how I prepared\n→ Three practical ways to improve your English without burning out\n\nThis is for non-native speakers, students, and early-career professionals who feel blocked by language (and want a realistic roadmap that respects the struggle and still delivers results).\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Related video (1): https://youtu.be/N7pY8VAt6g4\n→ Related video (2): https://youtu.be/ZpILR21GWao\n→ Blog post (IELTS self-training): https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html\n→ Nature article (science boycotts): https://www.nature.com/articles/d41586-022-01475-8\n\n⏰ TIMESTAMPS\n00:00 – Intro\n02:22 – Why English Is Important\n03:57 – The Rise of English as The Language of Science\n07:28 – Deciding to Learn English (my story)\n12:31 – The IELTS Test\n16:13 – Open Opportunities Through English\n19:12 – 3 Ways to Improve Your English\n22:56 – Final Thoughts\n\n#LearningEnglish #NonNativeSpeakers #IELTS #AcademicJourney #PhDLife #LanguageLearning #EnglishTips #StudyAbroad",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/GRd2nxNTZDI/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/GRd2nxNTZDI/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/GRd2nxNTZDI/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/GRd2nxNTZDI/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/GRd2nxNTZDI/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "ielts test",
-        "learn english",
-        "non native speaker",
-        "phd student",
-        "personal development",
-        "escape communism",
-        "science boitcots",
-        "manifesto of the ninety-three",
-        "why to learn english language",
-        "academic success stories",
-        "life as a phd student",
-        "exclusion of non english speakers in science",
-        "why english is hard to learn",
-        "tips to learn english",
-        "determination to learn a second language",
-        "motivation to learn",
-        "dunning kruger effect",
-        "where the success happens",
-        "fake it till you become it"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "How Speaking Imperfect English Can Transform Your Life",
-        "description": "Learning English as a non-native speaker changed my life (IELTS, academia, career growth) from Cuba to Europe, plus practical tips to improve your English fast.\n\nI came from a small town in Cuba where access to basic needs was severely limited. One day I decided to teach myself English and signed up for the IELTS test. Ten years later, I live in one of Europe’s most developed cities, pursuing an academic and professional path that once felt impossible.\n\nThis video isn’t just about learning a second language. It’s about breaking barriers, expanding your options, and using English as leverage for education, research, and career growth (even when the odds are not on your side).\n\nYou’ll learn:\n→ Why English matters for opportunities (especially in science and academia)\n→ How English became the default language of research and global work\n→ My story of deciding to learn English (what worked and what didn’t)\n→ What the IELTS test was like and how I prepared\n→ Three practical ways to improve your English without burning out\n\nThis is for non-native speakers, students, and early-career professionals who feel blocked by language (and want a realistic roadmap that respects the struggle and still delivers results).\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Related video (1): https://youtu.be/N7pY8VAt6g4\n→ Related video (2): https://youtu.be/ZpILR21GWao\n→ Blog post (IELTS self-training): https://www.cesarsotovalero.net/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training.html\n→ Nature article (science boycotts): https://www.nature.com/articles/d41586-022-01475-8\n\n⏰ TIMESTAMPS\n00:00 – Intro\n02:22 – Why English Is Important\n03:57 – The Rise of English as The Language of Science\n07:28 – Deciding to Learn English (my story)\n12:31 – The IELTS Test\n16:13 – Open Opportunities Through English\n19:12 – 3 Ways to Improve Your English\n22:56 – Final Thoughts\n\n#LearningEnglish #NonNativeSpeakers #IELTS #AcademicJourney #PhDLife #LanguageLearning #EnglishTips #StudyAbroad"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT24M13S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "193",
-      "likeCount": "9",
-      "favoriteCount": "0",
-      "commentCount": "4"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "ixIMXVkUT2keoKX-4xAW7VMN8Bg",
-    "id": "n1t3XEAyUgQ",
-    "snippet": {
-      "publishedAt": "2024-10-21T06:00:32Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The AI Secret: Why Predictive Machine Learning Still Rules The Real World",
-      "description": "The buzz around AI has been skyrocketing, yet many misconceptions persist about its true capabilities today. This talk dives into lesser-known facts about AI, covering its origins, current real-world applications, and why predictive Machine Learning remains the most impactful AI technology. From AI's theoretical beginnings in 1943 to its practical applications in the financial sector, this talk will offer a fresh perspective on AI’s real-world value and its future.\n\nThis is a talk @ SEB Tech Day 2024\n\n⏰ TIMESTAMPS\n00:00 The AI hype is everywhere\n00:53 This AI stuff is very old\n02:11 A different world in 2010\n03:10 AI was not a thing 4 years ago\n05:18 The rise of Generative AI changed everything\n09:22 Demo with ChatGPT \n10:38 Misconceptions about Generative AI\n12:06 Example of fraud prevention systems\n14:07 Takeaways\n\n📺 WATCH NEXT\n→ My SEB's Tech Day 2023 talk https://youtu.be/7IoXciSucw4\n\n🙂 WHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/n1t3XEAyUgQ/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/n1t3XEAyUgQ/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/n1t3XEAyUgQ/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/n1t3XEAyUgQ/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/n1t3XEAyUgQ/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "generative ai",
-        "generative ai vs. predictive ai",
-        "ai in finance",
-        "machine learning for financial fraud prevention",
-        "generative ai in banks",
-        "generative ai limitations",
-        "generative ai is not perfect",
-        "financial sector ai applications",
-        "fraud prevention with ai",
-        "GhatGPT caveats",
-        "ChatGPT benchmarks",
-        "ChatGPT vs. Llama 3",
-        "AI for real",
-        "Deep Neural Networks",
-        "AI research applications",
-        "AI Misconceptions",
-        "Artificial Intelligence History",
-        "AI Myths",
-        "Future of AI"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "The AI Secret: Why Predictive Machine Learning Still Rules The Real World",
-        "description": "The buzz around AI has been skyrocketing, yet many misconceptions persist about its true capabilities today. This talk dives into lesser-known facts about AI, covering its origins, current real-world applications, and why predictive Machine Learning remains the most impactful AI technology. From AI's theoretical beginnings in 1943 to its practical applications in the financial sector, this talk will offer a fresh perspective on AI’s real-world value and its future.\n\nThis is a talk @ SEB Tech Day 2024\n\n⏰ TIMESTAMPS\n00:00 The AI hype is everywhere\n00:53 This AI stuff is very old\n02:11 A different world in 2010\n03:10 AI was not a thing 4 years ago\n05:18 The rise of Generative AI changed everything\n09:22 Demo with ChatGPT \n10:38 Misconceptions about Generative AI\n12:06 Example of fraud prevention systems\n14:07 Takeaways\n\n📺 WATCH NEXT\n→ My SEB's Tech Day 2023 talk https://youtu.be/7IoXciSucw4\n\n🙂 WHO AM I?\nHi 👋 I’m César, a computer scientist, software engineer, and educator. On this channel, I share my professional experiences and provide science-based strategies and tools to help you become a great computer scientist.\n\n🌍 My Blog: https://www.cesarsotovalero.com/blog\n👨‍💻 My GitHub: https://github.com/cesarsotovalero\n🧑‍💼 My LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n🐦 My Twitter: https://twitter.com/cesarsotovalero"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT14M42S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "169",
-      "likeCount": "8",
-      "favoriteCount": "0",
-      "commentCount": "0"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "g99HaHtIe3GA0ZFN4dm0cIwIER0",
-    "id": "y0mztKEUwzw",
-    "snippet": {
-      "publishedAt": "2024-10-14T05:00:43Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Learning Software Development Is Not a Sprint: Top Performers Are Built Over Time",
-      "description": "Learning to code fast is a myth (Java, C++, Python), and real software engineering mastery comes from deliberate practice, patience, and a long-term learning strategy.\n\nSo many books and courses promise you can master Java, C++, or Python in a few days. The uncomfortable truth is that proficiency is built, not downloaded. Rushing doesn’t speed up learning. It mostly speeds up frustration, shallow knowledge, and burnout.\n\nIn this video, we debunk the “learn software development quickly” fantasy and explain why real expertise takes time. We’ll cover what deliberate practice actually means, why copying tutorials feels productive but often isn’t, and how to learn in a way that compounds over months and years.\n\nYou’ll learn:\n→ Why “learn to code in a day” sets you up for fragile skills\n→ The difference between familiarity and competence (and why it tricks you)\n→ How deliberate practice builds real ability (not just motivation)\n→ How learning from other developers accelerates progress the right way\n→ A long-term approach that makes coding feel easier over time\n\nThis is for beginners, self-taught developers, and early-career engineers who feel pressure to “catch up fast” and want a strategy that actually works (without the motivational poster lies).\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Watch next (résumé): https://youtu.be/-EYVzXoq15o?si=PtRIuB78ZDc5w9fo\n→ Peter Norvig (Teach Yourself Programming in Ten Years): http://norvig.com/21-days.html\n\n⏰ TIMESTAMPS\n00:00 - Introduction\n02:10 - The rush to learn software development\n04:53 - Can we learn to code in a day?\n04:34 - The myth of instant expertise\n11:56 - Why deliberate practice matters\n14:56 - Learning from other developers\n17:35 - Long-term learning approach\n19:01 - Takeaways\n\n#SoftwareEngineering #LearnToCode #Programming #DeliberatePractice #Java #Python #Cpp #CareerAdvice",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/y0mztKEUwzw/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/y0mztKEUwzw/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/y0mztKEUwzw/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/y0mztKEUwzw/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/y0mztKEUwzw/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "Coding bootcamp myth",
-        "Learn coding fast or slow",
-        "How long to become a developer",
-        "Learning to code the right way",
-        "Software development skills",
-        "Mastering coding skills",
-        "What makes a great developer?",
-        "Becoming a developer fast",
-        "Future of coding jobs",
-        "Job-ready coding skills",
-        "Deliberate practice in programming",
-        "Deep coding concepts",
-        "How to learn coding effectively",
-        "Learn to code from scratch",
-        "Coding bootcamp vs real experience",
-        "Should I learn coding in 2024?"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "Learning Software Development Is Not a Sprint: Top Performers Are Built Over Time",
-        "description": "Learning to code fast is a myth (Java, C++, Python), and real software engineering mastery comes from deliberate practice, patience, and a long-term learning strategy.\n\nSo many books and courses promise you can master Java, C++, or Python in a few days. The uncomfortable truth is that proficiency is built, not downloaded. Rushing doesn’t speed up learning. It mostly speeds up frustration, shallow knowledge, and burnout.\n\nIn this video, we debunk the “learn software development quickly” fantasy and explain why real expertise takes time. We’ll cover what deliberate practice actually means, why copying tutorials feels productive but often isn’t, and how to learn in a way that compounds over months and years.\n\nYou’ll learn:\n→ Why “learn to code in a day” sets you up for fragile skills\n→ The difference between familiarity and competence (and why it tricks you)\n→ How deliberate practice builds real ability (not just motivation)\n→ How learning from other developers accelerates progress the right way\n→ A long-term approach that makes coding feel easier over time\n\nThis is for beginners, self-taught developers, and early-career engineers who feel pressure to “catch up fast” and want a strategy that actually works (without the motivational poster lies).\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Watch next (résumé): https://youtu.be/-EYVzXoq15o?si=PtRIuB78ZDc5w9fo\n→ Peter Norvig (Teach Yourself Programming in Ten Years): http://norvig.com/21-days.html\n\n⏰ TIMESTAMPS\n00:00 - Introduction\n02:10 - The rush to learn software development\n04:53 - Can we learn to code in a day?\n04:34 - The myth of instant expertise\n11:56 - Why deliberate practice matters\n14:56 - Learning from other developers\n17:35 - Long-term learning approach\n19:01 - Takeaways\n\n#SoftwareEngineering #LearnToCode #Programming #DeliberatePractice #Java #Python #Cpp #CareerAdvice"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT19M46S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "481",
-      "likeCount": "18",
-      "favoriteCount": "0",
-      "commentCount": "2"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "HjeMiOyg9dzYN109DsqFiKAVx9w",
-    "id": "-EYVzXoq15o",
-    "snippet": {
-      "publishedAt": "2024-09-29T15:00:00Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Your Résumé Is Your Career Inventory",
-      "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nWant to learn the secrets to crafting a standout résumé that can secure your dream job in tech? Then you may want to learn from my mistakes. Whether you’re just entering the job market or looking to level up, this video breaks down the purpose of a computer scientist résumé, the common pitfalls job applicants usually make, and how to avoid them. Discover (or recap) how to structure your résumé for success, highlight your unique skills, and avoid the red flags that could cost you a dream job offer.\n\nIn case you wonder, here's my own résumé 🔗 https://www.cesarsotovalero.net/files/CV/cv.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:54 Résumés and RPG games\n03:14 Targeting\n08:15 Structuring \n11:57 Skills\n14:15 Personal qualities\n15:29 Seven sins to avoid\n18:06 The future of résumés\n\n💡 RELATED CONTENT\n➤ My blog post titled \"Building and Leveling Up a Computer Scientist Résumé\" 🔗 https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html\n➤ The article \"The resume that got a software engineer a $300,000 job at Google\" 🔗 https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f\n➤ The blog post \"Pimp Up Your Resume\" 🔗 https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/-EYVzXoq15o/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/-EYVzXoq15o/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/-EYVzXoq15o/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/-EYVzXoq15o/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/-EYVzXoq15o/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "compute science résumé",
-        "IT career growth",
-        "career path",
-        "applying for jobs",
-        "how to write a résumé",
-        "résumé tips",
-        "résumé writing tips",
-        "CV for computer scientist",
-        "résumé number pages",
-        "cs curriculum",
-        "computer science careers"
-      ],
-      "categoryId": "26",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "Your Résumé Is Your Career Inventory",
-        "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nWant to learn the secrets to crafting a standout résumé that can secure your dream job in tech? Then you may want to learn from my mistakes. Whether you’re just entering the job market or looking to level up, this video breaks down the purpose of a computer scientist résumé, the common pitfalls job applicants usually make, and how to avoid them. Discover (or recap) how to structure your résumé for success, highlight your unique skills, and avoid the red flags that could cost you a dream job offer.\n\nIn case you wonder, here's my own résumé 🔗 https://www.cesarsotovalero.net/files/CV/cv.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:54 Résumés and RPG games\n03:14 Targeting\n08:15 Structuring \n11:57 Skills\n14:15 Personal qualities\n15:29 Seven sins to avoid\n18:06 The future of résumés\n\n💡 RELATED CONTENT\n➤ My blog post titled \"Building and Leveling Up a Computer Scientist Résumé\" 🔗 https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html\n➤ The article \"The resume that got a software engineer a $300,000 job at Google\" 🔗 https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f\n➤ The blog post \"Pimp Up Your Resume\" 🔗 https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT19M41S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "154",
-      "likeCount": "4",
-      "favoriteCount": "0",
-      "commentCount": "0"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "SNQuqvfiJiasyhg0B93XWmjnJcM",
-    "id": "N7pY8VAt6g4",
-    "snippet": {
-      "publishedAt": "2024-09-22T14:00:29Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Cargo Cult in Computer Science: An Uncomfortable Truth for Researchers",
-      "description": "The reproducibility crisis in computer science explained through Feynman’s “Cargo Cult Science” (research rigor, pseudoscience traps, and practical steps for transparent, reproducible work).\n\nHave you ever heard about the reproducibility crisis in computer science research? In this video, we revisit Richard Feynman’s famous “Cargo Cult Science” message and why it still describes modern research failure modes with uncomfortable accuracy.\n\nWe break down how academic pressure, weak methodology, and “looks scientific” behaviors can lead to poor science and even pseudoscience. You’ll also get concrete guidance to make your work more rigorous, transparent, and reproducible (so your results survive contact with reality, not just peer review).\n\nYou’ll learn:\n→ What “Cargo Cult Science” really means and why it shows up in CS research\n→ How pseudoscience and bad incentives creep into legitimate labs\n→ Why reproducibility fails (data, code, environments, reporting, evaluation)\n→ The academic trap (publish pressure, novelty bias, and selective reporting)\n→ Practical steps to improve rigor, transparency, and reproducibility\n\nThis is for PhD students, researchers, and research-minded engineers who want their work to be trustworthy, repeatable, and genuinely useful (not just statistically significant).\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Watch next (1): https://youtu.be/k31h3hoV-Us\n→ Watch next (2): https://youtu.be/-3txwKTHe4Y\n→ My blog post (Cargo Cult in CS research): https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html\n→ Feynman’s commencement speech (PDF): http://calteches.library.caltech.edu/51/2/CargoCult.pdf\n→ ACM Queue (“Repeat, Reproduce, Replicate”): https://queue.acm.org/detail.cfm?id=3674499\n→ 2014 report (“Measuring Reproducibility in Computer Systems Research”): https://cs.brown.edu/~sk/Memos/Examining-Reproducibility/measuring-tr.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:38 The Origins of Cargo Cult Science\n03:18 The Pseudoscience Take Over\n05:47 The Current Reproducibility Crisis\n07:31 The Academic Trap\n09:09 The Seek of Scientific Rigor\n10:52 The Finding of Hope: Feynman’s Message\n\n#CargoCultScience #ReproducibilityCrisis #ComputerScienceResearch #ResearchBestPractices #ScientificRigor #Pseudoscience #EthicalResearch #OpenScience",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/N7pY8VAt6g4/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/N7pY8VAt6g4/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/N7pY8VAt6g4/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/N7pY8VAt6g4/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/N7pY8VAt6g4/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "ScienceReproducibility",
-        "CargoCultScience",
-        "ScientificIntegrity",
-        "OpenScience",
-        "ResearchEthics"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "Cargo Cult in Computer Science: An Uncomfortable Truth for Researchers",
-        "description": "The reproducibility crisis in computer science explained through Feynman’s “Cargo Cult Science” (research rigor, pseudoscience traps, and practical steps for transparent, reproducible work).\n\nHave you ever heard about the reproducibility crisis in computer science research? In this video, we revisit Richard Feynman’s famous “Cargo Cult Science” message and why it still describes modern research failure modes with uncomfortable accuracy.\n\nWe break down how academic pressure, weak methodology, and “looks scientific” behaviors can lead to poor science and even pseudoscience. You’ll also get concrete guidance to make your work more rigorous, transparent, and reproducible (so your results survive contact with reality, not just peer review).\n\nYou’ll learn:\n→ What “Cargo Cult Science” really means and why it shows up in CS research\n→ How pseudoscience and bad incentives creep into legitimate labs\n→ Why reproducibility fails (data, code, environments, reporting, evaluation)\n→ The academic trap (publish pressure, novelty bias, and selective reporting)\n→ Practical steps to improve rigor, transparency, and reproducibility\n\nThis is for PhD students, researchers, and research-minded engineers who want their work to be trustworthy, repeatable, and genuinely useful (not just statistically significant).\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Watch next (1): https://youtu.be/k31h3hoV-Us\n→ Watch next (2): https://youtu.be/-3txwKTHe4Y\n→ My blog post (Cargo Cult in CS research): https://www.cesarsotovalero.net/blog/the-not-so-strange-case-of-cargo-cult-in-computer-science-research.html\n→ Feynman’s commencement speech (PDF): http://calteches.library.caltech.edu/51/2/CargoCult.pdf\n→ ACM Queue (“Repeat, Reproduce, Replicate”): https://queue.acm.org/detail.cfm?id=3674499\n→ 2014 report (“Measuring Reproducibility in Computer Systems Research”): https://cs.brown.edu/~sk/Memos/Examining-Reproducibility/measuring-tr.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:38 The Origins of Cargo Cult Science\n03:18 The Pseudoscience Take Over\n05:47 The Current Reproducibility Crisis\n07:31 The Academic Trap\n09:09 The Seek of Scientific Rigor\n10:52 The Finding of Hope: Feynman’s Message\n\n#CargoCultScience #ReproducibilityCrisis #ComputerScienceResearch #ResearchBestPractices #ScientificRigor #Pseudoscience #EthicalResearch #OpenScience"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT11M41S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "12895",
-      "likeCount": "644",
-      "favoriteCount": "0",
-      "commentCount": "296"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "p108wOdQjPhwqzLaRBk8o9U2xMg",
-    "id": "DqL3-bnSCy0",
-    "snippet": {
-      "publishedAt": "2024-09-14T15:00:10Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The Silent Crisis of Software Bloat",
-      "description": "Software bloat explained (millions of lines of code, dependencies, reuse, hardware evolution) plus causes, real costs, and practical solutions inspired by Wirth and modern research.\n\nSoftware powers everything around us, but behind every polished UI there’s a growing problem: software bloat. Modern systems have ballooned to millions of lines of code, and it’s not just “developers being lazy”. It’s the compound effect of reuse, dependency sprawl, incentives, and hardware getting faster enough to hide the pain (until it doesn’t).\n\nIn this video, I break down the causes, consequences, and realistic solutions to software bloat. I also connect the dots to ideas that computer scientists like Niklaus Wirth warned about decades ago, and share lessons from my own PhD research on debloating and dependencies.\n\nYou’ll learn:\n→ Why software exploded in size (and why it keeps compounding)\n→ How reuse and third-party dependencies quietly create bloat\n→ Where hardware evolution masked inefficiency (and what it cost us)\n→ The real price of bloat (security, performance, maintenance, reliability)\n→ Practical paths forward (debloating, dependency discipline, lean design)\n\nThis is for software engineers, tech leads, security-minded developers, and anyone building systems at scale who wants to reduce complexity without pretending we can go back to 1975.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Watch next (PhD thesis defense, Debloating Java Dependencies): https://youtu.be/Ub684G_aM5Q?si=QK7r-00QDwl4zLXc\n→ Talk (Joe Armstrong, “The Mess We’re In”): https://youtu.be/lKXe3HUG2l4\n→ Talk (Dylan Beattie, “Software Is Not Art Anymore”): https://youtu.be/VA1eIVVsVhY?si=ra4k08IYdMGctSKP\n→ Blog post (Why Debloating Third-Party Software?): https://www.cesarsotovalero.net/blog/why-debloating-third-party-software.html\n→ Niklaus Wirth (A Plea for Lean Software): https://doi.ieeecomputersociety.org/10.1109/2.348001\n→ IEEE Spectrum (Why Bloat Is Still Software’s Biggest Vulnerability): https://spectrum.ieee.org/lean-software-development\n→ Curated papers (bloat and debloating): https://www.cesarsotovalero.net/software-debloating-papers.html\n\n⏰ TIMESTAMPS\n00:00 - Intro\n00:25 - The problem of software bloat\n02:01 - The origins of software bloat\n03:44 - The causes of software bloat\n07:00 - Example of software bloat\n09:10 - The cost of software bloat\n10:50 - The legacy of Niklaus Wirth\n12:45 - Solutions and the path forward\n15:50 - A hopeful future?\n\n#SoftwareBloat #SoftwareDevelopment #TechExplained #CleanCode #CyberSecurity #Dependencies #SoftwareArchitecture #EngineeringCulture",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/DqL3-bnSCy0/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/DqL3-bnSCy0/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/DqL3-bnSCy0/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/DqL3-bnSCy0/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/DqL3-bnSCy0/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "cybersecurity",
-        "software bloat",
-        "software engineering",
-        "software complexity",
-        "software maintenance in software engineering",
-        "big software problem"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "The Silent Crisis of Software Bloat",
-        "description": "Software bloat explained (millions of lines of code, dependencies, reuse, hardware evolution) plus causes, real costs, and practical solutions inspired by Wirth and modern research.\n\nSoftware powers everything around us, but behind every polished UI there’s a growing problem: software bloat. Modern systems have ballooned to millions of lines of code, and it’s not just “developers being lazy”. It’s the compound effect of reuse, dependency sprawl, incentives, and hardware getting faster enough to hide the pain (until it doesn’t).\n\nIn this video, I break down the causes, consequences, and realistic solutions to software bloat. I also connect the dots to ideas that computer scientists like Niklaus Wirth warned about decades ago, and share lessons from my own PhD research on debloating and dependencies.\n\nYou’ll learn:\n→ Why software exploded in size (and why it keeps compounding)\n→ How reuse and third-party dependencies quietly create bloat\n→ Where hardware evolution masked inefficiency (and what it cost us)\n→ The real price of bloat (security, performance, maintenance, reliability)\n→ Practical paths forward (debloating, dependency discipline, lean design)\n\nThis is for software engineers, tech leads, security-minded developers, and anyone building systems at scale who wants to reduce complexity without pretending we can go back to 1975.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Watch next (PhD thesis defense, Debloating Java Dependencies): https://youtu.be/Ub684G_aM5Q?si=QK7r-00QDwl4zLXc\n→ Talk (Joe Armstrong, “The Mess We’re In”): https://youtu.be/lKXe3HUG2l4\n→ Talk (Dylan Beattie, “Software Is Not Art Anymore”): https://youtu.be/VA1eIVVsVhY?si=ra4k08IYdMGctSKP\n→ Blog post (Why Debloating Third-Party Software?): https://www.cesarsotovalero.net/blog/why-debloating-third-party-software.html\n→ Niklaus Wirth (A Plea for Lean Software): https://doi.ieeecomputersociety.org/10.1109/2.348001\n→ IEEE Spectrum (Why Bloat Is Still Software’s Biggest Vulnerability): https://spectrum.ieee.org/lean-software-development\n→ Curated papers (bloat and debloating): https://www.cesarsotovalero.net/software-debloating-papers.html\n\n⏰ TIMESTAMPS\n00:00 - Intro\n00:25 - The problem of software bloat\n02:01 - The origins of software bloat\n03:44 - The causes of software bloat\n07:00 - Example of software bloat\n09:10 - The cost of software bloat\n10:50 - The legacy of Niklaus Wirth\n12:45 - Solutions and the path forward\n15:50 - A hopeful future?\n\n#SoftwareBloat #SoftwareDevelopment #TechExplained #CleanCode #CyberSecurity #Dependencies #SoftwareArchitecture #EngineeringCulture"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT17M44S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "976",
-      "likeCount": "62",
-      "favoriteCount": "0",
-      "commentCount": "33"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "dM-Bi-xxhgz2C8VycuOzT9rHYpU",
-    "id": "k31h3hoV-Us",
-    "snippet": {
-      "publishedAt": "2024-08-11T15:00:41Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "How to Peer-Review Research Papers Like an “Expert”",
-      "description": "How to peer-review research papers efficiently and fairly (journal and conference peer-review workflow, quick triage, detailed review, and a practical review template).\n\nOver the last few years, I’ve peer-reviewed 10+ papers for top journals and conferences (and I’ve also been on the receiving end of tough reviews as a PhD student). The biggest lesson is simple: great peer review is not about being harsh. It’s about being clear, useful, and reproducible in your judgment.\n\nIn this video, I share my personal approach to writing efficient and effective peer reviews. Whether you’re reviewing for the first time or refining your process, you’ll get a repeatable workflow for evaluating research with confidence, without wasting hours or turning the review into a vague opinion piece.\n\nYou’ll learn:\n→ How peer review actually works (roles, expectations, and what editors want)\n→ How to respond to a review invitation and quickly assess fit and scope\n→ A “quick review” triage method to spot fatal issues early\n→ A “detailed review” method that produces actionable feedback\n→ What makes a review good vs. bad (and how to avoid common reviewer mistakes)\n→ The peer-review template I use to stay fast, fair, and consistent\n\nThis is for PhD students, early-career researchers, and engineers reviewing academic papers who want a practical system for peer reviewing that helps authors improve and helps venues make better decisions.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Blog post (how I peer review papers): https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html\n→ Peer-review template: https://tinyurl.com/46kxnjha\n\n⏰ TIMESTAMPS\n00:00 - Introduction\n01:31 - Understanding Peer-Review\n04:15 - Receiving an Invitation to Peer-Review\n05:25 - Quick Peer-Review\n08:11 - Detailed Peer-Review\n09:50 - Good vs. Bad Peer-Reviews\n11:47 - Peer-Reviewing Template\n12:31 - Importance of Effective Peer-Reviewing\n\n#PeerReview #ResearchPapers #Academia #PhDLife #ScientificWriting #ResearchMethods #Publication #HigherEducation",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/k31h3hoV-Us/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/k31h3hoV-Us/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/k31h3hoV-Us/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/k31h3hoV-Us/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/k31h3hoV-Us/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "How to Peer-Review Research Papers Like an “Expert”",
-        "description": "How to peer-review research papers efficiently and fairly (journal and conference peer-review workflow, quick triage, detailed review, and a practical review template).\n\nOver the last few years, I’ve peer-reviewed 10+ papers for top journals and conferences (and I’ve also been on the receiving end of tough reviews as a PhD student). The biggest lesson is simple: great peer review is not about being harsh. It’s about being clear, useful, and reproducible in your judgment.\n\nIn this video, I share my personal approach to writing efficient and effective peer reviews. Whether you’re reviewing for the first time or refining your process, you’ll get a repeatable workflow for evaluating research with confidence, without wasting hours or turning the review into a vague opinion piece.\n\nYou’ll learn:\n→ How peer review actually works (roles, expectations, and what editors want)\n→ How to respond to a review invitation and quickly assess fit and scope\n→ A “quick review” triage method to spot fatal issues early\n→ A “detailed review” method that produces actionable feedback\n→ What makes a review good vs. bad (and how to avoid common reviewer mistakes)\n→ The peer-review template I use to stay fast, fair, and consistent\n\nThis is for PhD students, early-career researchers, and engineers reviewing academic papers who want a practical system for peer reviewing that helps authors improve and helps venues make better decisions.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Blog post (how I peer review papers): https://www.cesarsotovalero.net/blog/how-i-peer-review-research-papers.html\n→ Peer-review template: https://tinyurl.com/46kxnjha\n\n⏰ TIMESTAMPS\n00:00 - Introduction\n01:31 - Understanding Peer-Review\n04:15 - Receiving an Invitation to Peer-Review\n05:25 - Quick Peer-Review\n08:11 - Detailed Peer-Review\n09:50 - Good vs. Bad Peer-Reviews\n11:47 - Peer-Reviewing Template\n12:31 - Importance of Effective Peer-Reviewing\n\n#PeerReview #ResearchPapers #Academia #PhDLife #ScientificWriting #ResearchMethods #Publication #HigherEducation"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT13M47S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "236",
-      "likeCount": "8",
-      "favoriteCount": "0",
-      "commentCount": "3"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "HYx0OBdjnfoAgDIJ7-RYQJGIgQQ",
-    "id": "jdnWhkgA_rM",
-    "snippet": {
-      "publishedAt": "2024-08-04T15:00:50Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Revisiting Ken Thompson’s Turing Award Lecture “Reflections on Trusting Trust”",
-      "description": "Ken Thompson’s “Reflections on Trusting Trust” explained (Trojan Horse compilers, self-replicating backdoors, and why supply chain security breaks the “just read the source” myth).\n\nKen Thompson’s Turing Award lecture “Reflections on Trusting Trust” is one of the most chilling ideas in cybersecurity history: you can backdoor a compiler so it silently reinserts the backdoor into every future version of itself. The punchline is brutal. The source code can look clean while the binary stays compromised.\n\nIn this video, we walk through the core mechanism behind the Trojan Horse compiler attack, why it’s practically undetectable with source review alone, and how this connects to modern software supply chain threats.\n\nYou’ll learn:\n→ The real problem of software trust (source vs. binary)\n→ Thompson’s claim and why it still holds in 2026\n→ How the self-reinserting compiler backdoor works\n→ What quines (self-replicating code) have to do with the attack\n→ Why this is a supply chain nightmare (and what it implies today)\n\nThis is for software engineers, security practitioners, and anyone who thinks “open source means safe” who wants a sharper model of trust, compilers, and the limits of code review.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Original paper (1984, “Reflections on Trusting Trust”): https://doi.org/10.1145/358198.358210\n→ My blog post (deep dive): https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html\n\n⏰ TIMESTAMPS\n00:00 - The problem of software trust\n00:54 - Thompson's famous claim\n01:51 - Historical context\n02:45 - Core idea behind this backdoor attack\n04:22 - Self-replicating code (a.k.a. quine)\n07:10 - Implications for cybersecurity\n08:45 - Supply chain attacks\n09:46 - Deeper questions\n10:54 - Echoes today\n\n#Cybersecurity #KenThompson #TrustingTrust #SupplyChainSecurity #SoftwareSecurity #Compilers #SecureSoftware #Infosec",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/jdnWhkgA_rM/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/jdnWhkgA_rM/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/jdnWhkgA_rM/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/jdnWhkgA_rM/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/jdnWhkgA_rM/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "Revisiting Ken Thompson’s Turing Award Lecture “Reflections on Trusting Trust”",
-        "description": "Ken Thompson’s “Reflections on Trusting Trust” explained (Trojan Horse compilers, self-replicating backdoors, and why supply chain security breaks the “just read the source” myth).\n\nKen Thompson’s Turing Award lecture “Reflections on Trusting Trust” is one of the most chilling ideas in cybersecurity history: you can backdoor a compiler so it silently reinserts the backdoor into every future version of itself. The punchline is brutal. The source code can look clean while the binary stays compromised.\n\nIn this video, we walk through the core mechanism behind the Trojan Horse compiler attack, why it’s practically undetectable with source review alone, and how this connects to modern software supply chain threats.\n\nYou’ll learn:\n→ The real problem of software trust (source vs. binary)\n→ Thompson’s claim and why it still holds in 2026\n→ How the self-reinserting compiler backdoor works\n→ What quines (self-replicating code) have to do with the attack\n→ Why this is a supply chain nightmare (and what it implies today)\n\nThis is for software engineers, security practitioners, and anyone who thinks “open source means safe” who wants a sharper model of trust, compilers, and the limits of code review.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Original paper (1984, “Reflections on Trusting Trust”): https://doi.org/10.1145/358198.358210\n→ My blog post (deep dive): https://www.cesarsotovalero.net/blog/revisiting-ken-thompson-reflection-on-trusting-trust.html\n\n⏰ TIMESTAMPS\n00:00 - The problem of software trust\n00:54 - Thompson's famous claim\n01:51 - Historical context\n02:45 - Core idea behind this backdoor attack\n04:22 - Self-replicating code (a.k.a. quine)\n07:10 - Implications for cybersecurity\n08:45 - Supply chain attacks\n09:46 - Deeper questions\n10:54 - Echoes today\n\n#Cybersecurity #KenThompson #TrustingTrust #SupplyChainSecurity #SoftwareSecurity #Compilers #SecureSoftware #Infosec"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT11M37S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "1027",
-      "likeCount": "34",
-      "favoriteCount": "0",
-      "commentCount": "3"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "TGIzu5DJS42fkWmQ4BFpHyjWAVA",
-    "id": "-3txwKTHe4Y",
-    "snippet": {
-      "publishedAt": "2024-07-28T15:00:00Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The Last Paper’s Myth: PhD Student Expectations vs. Reality at the End of a PhD",
-      "description": "The “last paper” myth in the final PhD year explained (academic pressure, thesis expectations vs. reality, and practical strategies to protect balance and finish strong).\n\nFinishing a PhD often comes with a specific kind of pressure: “just one more paper.” It sounds reasonable. It can also quietly sabotage your final year by stretching timelines, draining motivation, and turning the finish line into a moving target.\n\nIn this video, I break down what I call the last paper’s myth, why it shows up in so many PhD programs, and how to navigate the expectations versus the realities of wrapping up your thesis. I also share actionable strategies to manage pressure, maintain work-life balance, and finish your PhD without sacrificing your health or your future.\n\nYou’ll learn:\n→ Why the “one more paper” push happens (and why it’s often a conflict of interests)\n→ The gap between end-of-PhD expectations and real-world constraints\n→ How pressure affects productivity, focus, and mental health near the finish line\n→ Practical strategies to counter the pressure and protect your timeline\n→ Why this pattern also shows up in corporate environments (and how to recognize it)\n\nThis is for PhD students in their final year (and early-career researchers) who feel stuck between “I should be done” and “I’m being asked for more,” and want a clearer way to decide what’s worth doing.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Blog post (The last paper myth): https://www.cesarsotovalero.net/blog/the-last-paper-myth.html\n\n⏰ TIMESTAMPS\n00:00 - Writing your thesis?\n02:00 - Expectations\n02:30 - Realities\n05:12 - The push for one more paper\n05:40 - The impact of pressure on PhD students\n07:03 - A conflict of interests\n08:33 - Strategies to counter the pressure\n10:32 - Similar situation in the corporate world\n11:15 - Conclusion and takeaways\n\n#PhDLife #AcademicPressure #ThesisWriting #GradSchool #AcademicResearch #PhDStudent #ResearchLife #WorkLifeBalance",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/-3txwKTHe4Y/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/-3txwKTHe4Y/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/-3txwKTHe4Y/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/-3txwKTHe4Y/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/-3txwKTHe4Y/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "PhDLife",
-        "AcademicPressure",
-        "ThesisWriting",
-        "GradSchool",
-        "AcademicResearch"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "The Last Paper’s Myth: PhD Student Expectations vs. Reality at the End of a PhD",
-        "description": "The “last paper” myth in the final PhD year explained (academic pressure, thesis expectations vs. reality, and practical strategies to protect balance and finish strong).\n\nFinishing a PhD often comes with a specific kind of pressure: “just one more paper.” It sounds reasonable. It can also quietly sabotage your final year by stretching timelines, draining motivation, and turning the finish line into a moving target.\n\nIn this video, I break down what I call the last paper’s myth, why it shows up in so many PhD programs, and how to navigate the expectations versus the realities of wrapping up your thesis. I also share actionable strategies to manage pressure, maintain work-life balance, and finish your PhD without sacrificing your health or your future.\n\nYou’ll learn:\n→ Why the “one more paper” push happens (and why it’s often a conflict of interests)\n→ The gap between end-of-PhD expectations and real-world constraints\n→ How pressure affects productivity, focus, and mental health near the finish line\n→ Practical strategies to counter the pressure and protect your timeline\n→ Why this pattern also shows up in corporate environments (and how to recognize it)\n\nThis is for PhD students in their final year (and early-career researchers) who feel stuck between “I should be done” and “I’m being asked for more,” and want a clearer way to decide what’s worth doing.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Blog post (The last paper myth): https://www.cesarsotovalero.net/blog/the-last-paper-myth.html\n\n⏰ TIMESTAMPS\n00:00 - Writing your thesis?\n02:00 - Expectations\n02:30 - Realities\n05:12 - The push for one more paper\n05:40 - The impact of pressure on PhD students\n07:03 - A conflict of interests\n08:33 - Strategies to counter the pressure\n10:32 - Similar situation in the corporate world\n11:15 - Conclusion and takeaways\n\n#PhDLife #AcademicPressure #ThesisWriting #GradSchool #AcademicResearch #PhDStudent #ResearchLife #WorkLifeBalance"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT12M26S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "442",
-      "likeCount": "11",
-      "favoriteCount": "0",
-      "commentCount": "3"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "kg5cYmm2UoTWpQfv7RBHel5QTkU",
-    "id": "TrYB4D_1flA",
-    "snippet": {
-      "publishedAt": "2024-07-21T16:00:32Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "How to Overcome Writer's Block When Preparing a Research Paper",
-      "description": "How to overcome writer’s block in academic writing (research papers, PhD workflow, drafting strategies, and practical tactics to finish without perfectionism).\n\nStruggling with writer’s block while writing research papers? I’ve been there too. The uncomfortable truth is that writer’s block is rarely a “lack of ideas”. It’s usually a workflow problem: starting from a blank page, aiming for perfection too early, and trying to write and edit at the same time.\n\nIn this video, I share the strategies that helped me push through writer’s block during my PhD in Computer Science. We’ll cover how to structure the paper early, write imperfect drafts on purpose, use figures and results to create momentum, and refine later when the raw material actually exists.\n\nYou’ll learn:\n→ A simple structure-first approach to start a research paper faster\n→ How adding figures and results early reduces blank-page paralysis\n→ How to paraphrase recurring content without getting stuck rewriting\n→ Why “draft first, refine later” is a productivity superpower\n→ A practical rule: either write something, or consciously do nothing\n→ Mental tricks that make the finished task feel real (and doable)\n\nThis is for PhD students, researchers, and academic writers who feel stuck in the loop of overthinking, procrastinating, and perfectionism and want a repeatable way to keep moving.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Companion blog post: https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html\n→ Nature interview/article: https://www.nature.com/articles/d41586-024-02013-4\n→ Simon Peyton Jones (How to write a great research paper): https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper\n\n⏰ TIMESTAMPS\n00:00 - My struggle with writer's block\n01:38 - Structuring a research paper\n04:30 - Adding figures and results\n08:22 - Paraphrasing recurrent content\n11:10 - Refining and editing later\n12:35 - Either writing or doing nothing\n14:41 - Imagining the finished task\n17:40 - It's just a draft :)\n\n#WritersBlock #PhDLife #AcademicWriting #ResearchPapers #WritingTips #GradSchool #Productivity #ScientificWriting",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/TrYB4D_1flA/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/TrYB4D_1flA/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/TrYB4D_1flA/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/TrYB4D_1flA/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/TrYB4D_1flA/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "WritersBlock",
-        "PhDLife",
-        "AcademicWriting"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "How to Overcome Writer's Block When Preparing a Research Paper",
-        "description": "How to overcome writer’s block in academic writing (research papers, PhD workflow, drafting strategies, and practical tactics to finish without perfectionism).\n\nStruggling with writer’s block while writing research papers? I’ve been there too. The uncomfortable truth is that writer’s block is rarely a “lack of ideas”. It’s usually a workflow problem: starting from a blank page, aiming for perfection too early, and trying to write and edit at the same time.\n\nIn this video, I share the strategies that helped me push through writer’s block during my PhD in Computer Science. We’ll cover how to structure the paper early, write imperfect drafts on purpose, use figures and results to create momentum, and refine later when the raw material actually exists.\n\nYou’ll learn:\n→ A simple structure-first approach to start a research paper faster\n→ How adding figures and results early reduces blank-page paralysis\n→ How to paraphrase recurring content without getting stuck rewriting\n→ Why “draft first, refine later” is a productivity superpower\n→ A practical rule: either write something, or consciously do nothing\n→ Mental tricks that make the finished task feel real (and doable)\n\nThis is for PhD students, researchers, and academic writers who feel stuck in the loop of overthinking, procrastinating, and perfectionism and want a repeatable way to keep moving.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Companion blog post: https://www.cesarsotovalero.net/blog/how-i-overcome-writer-block-when-preparing-a-research-paper.html\n→ Nature interview/article: https://www.nature.com/articles/d41586-024-02013-4\n→ Simon Peyton Jones (How to write a great research paper): https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper\n\n⏰ TIMESTAMPS\n00:00 - My struggle with writer's block\n01:38 - Structuring a research paper\n04:30 - Adding figures and results\n08:22 - Paraphrasing recurrent content\n11:10 - Refining and editing later\n12:35 - Either writing or doing nothing\n14:41 - Imagining the finished task\n17:40 - It's just a draft :)\n\n#WritersBlock #PhDLife #AcademicWriting #ResearchPapers #WritingTips #GradSchool #Productivity #ScientificWriting"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT18M4S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "true",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "183",
-      "likeCount": "14",
-      "favoriteCount": "0",
-      "commentCount": "4"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "iKPNILvti306YIoQvL8GJc_eipI",
-    "id": "7IoXciSucw4",
-    "snippet": {
-      "publishedAt": "2023-10-14T22:00:04Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Preventing Software Supply Chain Attacks With Dependency Management Best Practices",
-      "description": "Talk at SEB's Tech Day in Arenastaden Stockholm, September 2023\n\n# Takeaways\n\n* Software supply chain attacks are real.\n* There are ways to prevent and mitigate this particular threat.\n* You can start by knowing your dependencies, updating, and cleaning them.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwaredevelopment #vulnerabilities #dependencies",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/7IoXciSucw4/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/7IoXciSucw4/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/7IoXciSucw4/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/7IoXciSucw4/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/7IoXciSucw4/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "Preventing Software Supply Chain Attacks With Dependency Management Best Practices",
-        "description": "Talk at SEB's Tech Day in Arenastaden Stockholm, September 2023\n\n# Takeaways\n\n* Software supply chain attacks are real.\n* There are ways to prevent and mitigate this particular threat.\n* You can start by knowing your dependencies, updating, and cleaning them.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwaredevelopment #vulnerabilities #dependencies"
-      }
-    },
-    "contentDetails": {
-      "duration": "PT15M",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "199",
-      "likeCount": "8",
-      "favoriteCount": "0",
-      "commentCount": "1"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "vYMkNebv6L00AQUH6PIWR6Cdj_8",
-    "id": "Ub684G_aM5Q",
-    "snippet": {
-      "publishedAt": "2023-06-18T13:44:30Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Debloating Java Dependencies",
-      "description": "My PhD Defense\nJune 1st, 2023\n\nLink to the full PhD thesis: https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf\nLink to the slides: https://www.cesarsotovalero.net/files/thesis/slides/cesar-phd-defense.pptx\n\n# Summary\n\nSoftware systems have a natural tendency to grow in size and complexity. A part of this growth comes with the addition of new features or bug fixes, while another part is due to useless code that accumulates over time. This phenomenon, known as \"software bloat,\" increases with the practice of reusing software dependencies, which has exceeded the capacity of human developers to efficiently manage them. Software bloat in third-party dependencies presents a multifaceted challenge for application development, encompassing issues of security, performance, and maintenance. To address these issues, researchers have developed software debloating techniques that automatically remove unnecessary code.\n\nDespite significant progress has been made in the realm of software debloating, the pervasive issue of dependency bloat warrants special attention. In this thesis, we contribute to the field of software debloating by proposing novel techniques specifically targeting dependencies in the Java ecosystem. First, we investigate the growth of completely unused software dependencies, which we call \"bloated dependencies.''  We propose a technique to automatically detect and remove bloated dependencies in Java projects built with Maven. We empirically study the usage status of dependencies in the Maven Central repository and remove bloated dependencies in mature Java projects. We demonstrate that once a bloated dependency is detected, it can be safely removed as its future usage is unlikely.\n\nSecond, we focus on dependencies that are only partially used. We introduce a technique to specialize these dependencies in Java projects based on their actual usage. Our approach systematically identifies the subset of functionalities within each dependency that is sufficient to build the project and removes the rest. We demonstrate that our dependency specialization approach can halve the project classes to dependency classes ratio. Last, we assess the impact of debloating projects with respect to client applications that reuse them. We present a novel coverage-based debloating technique that determines which class members in Java libraries and their dependencies are necessary for their clients. Our debloating technique effectively decreases the size of debloated libraries while preserving the essential functionalities required to successfully build their clients.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#phdthesis #computerscience #softwareengineering #softwaredebloating",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/Ub684G_aM5Q/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/Ub684G_aM5Q/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/Ub684G_aM5Q/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/Ub684G_aM5Q/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/Ub684G_aM5Q/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "Debloating Java Dependencies",
-        "description": "My PhD Defense\nJune 1st, 2023\n\nLink to the full PhD thesis: https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf\nLink to the slides: https://www.cesarsotovalero.net/files/thesis/slides/cesar-phd-defense.pptx\n\n# Summary\n\nSoftware systems have a natural tendency to grow in size and complexity. A part of this growth comes with the addition of new features or bug fixes, while another part is due to useless code that accumulates over time. This phenomenon, known as \"software bloat,\" increases with the practice of reusing software dependencies, which has exceeded the capacity of human developers to efficiently manage them. Software bloat in third-party dependencies presents a multifaceted challenge for application development, encompassing issues of security, performance, and maintenance. To address these issues, researchers have developed software debloating techniques that automatically remove unnecessary code.\n\nDespite significant progress has been made in the realm of software debloating, the pervasive issue of dependency bloat warrants special attention. In this thesis, we contribute to the field of software debloating by proposing novel techniques specifically targeting dependencies in the Java ecosystem. First, we investigate the growth of completely unused software dependencies, which we call \"bloated dependencies.''  We propose a technique to automatically detect and remove bloated dependencies in Java projects built with Maven. We empirically study the usage status of dependencies in the Maven Central repository and remove bloated dependencies in mature Java projects. We demonstrate that once a bloated dependency is detected, it can be safely removed as its future usage is unlikely.\n\nSecond, we focus on dependencies that are only partially used. We introduce a technique to specialize these dependencies in Java projects based on their actual usage. Our approach systematically identifies the subset of functionalities within each dependency that is sufficient to build the project and removes the rest. We demonstrate that our dependency specialization approach can halve the project classes to dependency classes ratio. Last, we assess the impact of debloating projects with respect to client applications that reuse them. We present a novel coverage-based debloating technique that determines which class members in Java libraries and their dependencies are necessary for their clients. Our debloating technique effectively decreases the size of debloated libraries while preserving the essential functionalities required to successfully build their clients.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#phdthesis #computerscience #softwareengineering #softwaredebloating"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT48M33S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "207",
-      "likeCount": "8",
-      "favoriteCount": "0",
-      "commentCount": "0"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "4KgN3bvOrxnWuyIURVVxmtR7uuw",
-    "id": "HXj2B8eHmt4",
-    "snippet": {
-      "publishedAt": "2022-10-16T20:05:21Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Coverage-Based Debloating for Java Bytecode",
-      "description": "Presentation at ESEC/FSE 2022.\n\nRead the paper https://dl.acm.org/doi/pdf/10.1145/3546948\nRead about the ESEC/FSE Conference Journal First Track https://2022.esec-fse.org/track/fse-2022-journal-first#programming \n\n# Summary\n\nSoftware bloat is code that is packaged in an application but is actually not necessary to run the application. The presence of software bloat is an issue for security, for performance, and for maintenance. In this paper, we introduce a novel technique for debloating, which we call coverage-based debloating. We implement the technique for one single language: Java bytecode. We leverage a combination of state-of-the-art Java bytecode coverage tools to precisely capture what parts of a project and its dependencies are used when running with a specific workload. Then, we automatically remove the parts that are not covered to generate a debloated version of the project. We succeed in debloating 211 library versions from a dataset of 94 unique open-source Java libraries. The debloated versions are syntactically correct and preserve their original behavior according to the workload. Our results indicate that 68.3% of the libraries’ bytecode and 20.3% of their total dependencies can be removed through coverage-based debloating.\n\nFor the first time in the literature on software debloating, we assess the utility of debloated libraries concerning client applications that reuse them. We select 988 client projects that either have a direct reference to the debloated library in their source code or which test suite covers at least one class of the libraries that we debloat. Our results show that 81.5% of the clients with at least one test that uses the library successfully compile and pass their test suite when the original library is replaced by its debloated version.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwaredebloating #codequality #dependencies",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/HXj2B8eHmt4/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/HXj2B8eHmt4/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/HXj2B8eHmt4/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/HXj2B8eHmt4/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/HXj2B8eHmt4/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "software engineering",
-        "java bytecode",
-        "esec/fse",
-        "software debloating",
-        "java analysis"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "Coverage-Based Debloating for Java Bytecode",
-        "description": "Presentation at ESEC/FSE 2022.\n\nRead the paper https://dl.acm.org/doi/pdf/10.1145/3546948\nRead about the ESEC/FSE Conference Journal First Track https://2022.esec-fse.org/track/fse-2022-journal-first#programming \n\n# Summary\n\nSoftware bloat is code that is packaged in an application but is actually not necessary to run the application. The presence of software bloat is an issue for security, for performance, and for maintenance. In this paper, we introduce a novel technique for debloating, which we call coverage-based debloating. We implement the technique for one single language: Java bytecode. We leverage a combination of state-of-the-art Java bytecode coverage tools to precisely capture what parts of a project and its dependencies are used when running with a specific workload. Then, we automatically remove the parts that are not covered to generate a debloated version of the project. We succeed in debloating 211 library versions from a dataset of 94 unique open-source Java libraries. The debloated versions are syntactically correct and preserve their original behavior according to the workload. Our results indicate that 68.3% of the libraries’ bytecode and 20.3% of their total dependencies can be removed through coverage-based debloating.\n\nFor the first time in the literature on software debloating, we assess the utility of debloated libraries concerning client applications that reuse them. We select 988 client projects that either have a direct reference to the debloated library in their source code or which test suite covers at least one class of the libraries that we debloat. Our results show that 81.5% of the clients with at least one test that uses the library successfully compile and pass their test suite when the original library is replaced by its debloated version.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwaredebloating #codequality #dependencies"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT10M31S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "104",
-      "likeCount": "5",
-      "favoriteCount": "0",
-      "commentCount": "1"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "y2SRe0qPdCDEfbn5HtGy_1oHDlk",
-    "id": "IrFS2e-4gqU",
-    "snippet": {
-      "publishedAt": "2021-11-07T11:00:06Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Reasons to Do a PhD in Computer Science",
-      "description": "7 pragmatic reasons to pursue a PhD in Computer Science (research career, curiosity, networking, differentiation, personal growth, ownership, and global mobility).\n\nStarting a PhD in Computer Science is a serious decision that can reshape your life. It’s not just “more school”. It’s a multi-year commitment that trades short-term certainty for long-term leverage, if you know what you’re optimizing for.\n\nIn this video, I break down seven pragmatic reasons to choose this path, based on real incentives and real outcomes (not academic romance). If you’re on the fence, this will help you think clearly about what a PhD can unlock and what it will demand from you.\n\nYou’ll learn:\n→ How a PhD can feed intellectual curiosity in a structured way\n→ What it takes to become a professional researcher (beyond reading papers)\n→ How PhD life builds a career network that compounds for years\n→ Why the credential can differentiate you (when used strategically)\n→ How the challenge reshapes your confidence and problem-solving\n→ What it means to truly own your work and ideas\n→ How a PhD can increase mobility (including emigrating) through opportunity\n\nThis is for students, software engineers, and early-career professionals considering a PhD in CS who want practical reasons, real trade-offs, and a clearer decision framework.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Companion blog post (7 reasons for a PhD in CS): https://www.cesarsotovalero.net/blog/seven-reasons-to-go-for-a-phd-in-computer-science.html\n\n⏰ TIMESTAMPS\n00:00 - Intro\n00:53 - Feed your intellectual curiosity\n03:54 - Become a professional researcher\n06:41 - Build a career network\n08:50 - Set yourself apart from the competition\n11:05 - Challenge yourself\n12:36 - Own your work\n14:38 - Emigrate!\n17:03 - Outro\n\n#Research #PhDCareer #ComputerScience #PhDLife #AcademicCareer #ResearchSkills #GradSchool #CareerAdvice",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/IrFS2e-4gqU/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/IrFS2e-4gqU/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/IrFS2e-4gqU/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/IrFS2e-4gqU/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/IrFS2e-4gqU/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "Research",
-        "Ph.D.",
-        "Computer Science",
-        "Career"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "Reasons to Do a PhD in Computer Science",
-        "description": "7 pragmatic reasons to pursue a PhD in Computer Science (research career, curiosity, networking, differentiation, personal growth, ownership, and global mobility).\n\nStarting a PhD in Computer Science is a serious decision that can reshape your life. It’s not just “more school”. It’s a multi-year commitment that trades short-term certainty for long-term leverage, if you know what you’re optimizing for.\n\nIn this video, I break down seven pragmatic reasons to choose this path, based on real incentives and real outcomes (not academic romance). If you’re on the fence, this will help you think clearly about what a PhD can unlock and what it will demand from you.\n\nYou’ll learn:\n→ How a PhD can feed intellectual curiosity in a structured way\n→ What it takes to become a professional researcher (beyond reading papers)\n→ How PhD life builds a career network that compounds for years\n→ Why the credential can differentiate you (when used strategically)\n→ How the challenge reshapes your confidence and problem-solving\n→ What it means to truly own your work and ideas\n→ How a PhD can increase mobility (including emigrating) through opportunity\n\nThis is for students, software engineers, and early-career professionals considering a PhD in CS who want practical reasons, real trade-offs, and a clearer decision framework.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Companion blog post (7 reasons for a PhD in CS): https://www.cesarsotovalero.net/blog/seven-reasons-to-go-for-a-phd-in-computer-science.html\n\n⏰ TIMESTAMPS\n00:00 - Intro\n00:53 - Feed your intellectual curiosity\n03:54 - Become a professional researcher\n06:41 - Build a career network\n08:50 - Set yourself apart from the competition\n11:05 - Challenge yourself\n12:36 - Own your work\n14:38 - Emigrate!\n17:03 - Outro\n\n#Research #PhDCareer #ComputerScience #PhDLife #AcademicCareer #ResearchSkills #GradSchool #CareerAdvice"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT17M27S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "435",
-      "likeCount": "16",
-      "favoriteCount": "0",
-      "commentCount": "0"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "kV90dy7-WHym_uES4D0nr7bEDPw",
-    "id": "mp_jSfUACrs",
-    "snippet": {
-      "publishedAt": "2021-10-17T19:00:58Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The Software Supply Chain",
-      "description": "Read the related blog post: https://www.cesarsotovalero.net/blog/the-software-supply-chain.html\n\n0:00 Introduction\n0:13 Problem definition\n1:15 People in the loop\n1:47 Problem & Solution\n2:01 Production environment\n4:02 Maintenance & Support\n5:55 Example\n6:44 Mitigation\n7:29 Conclusion\n\n# Summary\n\nThe software supply chain comprises all the technology involved in shipping a piece of code from development to its deployment in a production environment. Several actors and different technologies participate in this complex process, e.g., developers, IDEs, compilers, package managers, a so on. The success or failure of a software product depends largely on many external components that are not directly controlled by the organizations in charge of delivering software products to their clients. This situation poses several security and maintenance risks for both software suppliers and customers. Thereby, maintaining a secure and efficient software supply chain is critical today, where open-source has become ubiquitous in the software production landscape. In this video, I take a close look at this phenomenon from a software engineering perspective.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#cybersecurity #softwaredevelopment  #dependencies",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/mp_jSfUACrs/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/mp_jSfUACrs/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/mp_jSfUACrs/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/mp_jSfUACrs/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/mp_jSfUACrs/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "software engineering",
-        "software supply chain",
-        "cybersecurity"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "The Software Supply Chain",
-        "description": "Read the related blog post: https://www.cesarsotovalero.net/blog/the-software-supply-chain.html\n\n0:00 Introduction\n0:13 Problem definition\n1:15 People in the loop\n1:47 Problem & Solution\n2:01 Production environment\n4:02 Maintenance & Support\n5:55 Example\n6:44 Mitigation\n7:29 Conclusion\n\n# Summary\n\nThe software supply chain comprises all the technology involved in shipping a piece of code from development to its deployment in a production environment. Several actors and different technologies participate in this complex process, e.g., developers, IDEs, compilers, package managers, a so on. The success or failure of a software product depends largely on many external components that are not directly controlled by the organizations in charge of delivering software products to their clients. This situation poses several security and maintenance risks for both software suppliers and customers. Thereby, maintaining a secure and efficient software supply chain is critical today, where open-source has become ubiquitous in the software production landscape. In this video, I take a close look at this phenomenon from a software engineering perspective.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#cybersecurity #softwaredevelopment  #dependencies"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT8M5S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "227",
-      "likeCount": "8",
-      "favoriteCount": "0",
-      "commentCount": "0"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "kO9kQ9Ws5HOxDehxTlw-JMMuUCY",
-    "id": "3nptpGpaYws",
-    "snippet": {
-      "publishedAt": "2021-09-03T10:05:40Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The Quicksort Algorithm",
-      "description": "My talk for the course \"Basic Communication and Teaching\" at KTH Royal Institute of Technology\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#teaching #algorithms #quicksort",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/3nptpGpaYws/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/3nptpGpaYws/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/3nptpGpaYws/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/3nptpGpaYws/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/3nptpGpaYws/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "quicksort",
-        "computer science",
-        "class",
-        "learning"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "The Quicksort Algorithm",
-        "description": "My talk for the course \"Basic Communication and Teaching\" at KTH Royal Institute of Technology\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#teaching #algorithms #quicksort"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT15M6S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "118",
-      "likeCount": "7",
-      "favoriteCount": "0",
-      "commentCount": "2"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "iwRmrz4oREeg_bw2HlgNwic4BBI",
-    "id": "cePEl485E_s",
-    "snippet": {
-      "publishedAt": "2021-08-31T06:04:20Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "A Longitudinal Analysis of Bloated Java Dependencies",
-      "description": "Presented at ESEC/FSE 2021.\n\nRead the paper https://dl.acm.org/doi/pdf/10.1145/3468264.3468589\nRead about the ESEC/FSE conference https://2021.esec-fse.org/track/fse-2021-papers\n\n# Summary of the paper\n\nWe study the evolution and impact of bloated dependencies in a single software ecosystem: Java/Maven. Bloated dependencies are third-party libraries that are packaged in the application binary but are not needed to run the application. We analyze the history of 435 Java projects. This historical data includes 48,469 distinct dependencies, which we study across a total of 31,515 versions of Maven dependency trees. Bloated dependencies steadily increase over time, and 89.2% of the direct dependencies that are bloated remain bloated in all subsequent versions of the studied projects. This empirical evidence suggests that developers can safely remove a bloated dependency. We further report novel insights regarding the unnecessary maintenance efforts induced by bloat. We find that 22% of dependency updates performed by developers are made on bloated dependencies, and that Dependabot suggests a similar ratio of updates on bloated dependencies.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwarebloat #dataanalysis #dependencies",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/cePEl485E_s/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/cePEl485E_s/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/cePEl485E_s/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/cePEl485E_s/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/cePEl485E_s/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "Java Dependencies",
-        "DepClean",
-        "Software"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "A Longitudinal Analysis of Bloated Java Dependencies",
-        "description": "Presented at ESEC/FSE 2021.\n\nRead the paper https://dl.acm.org/doi/pdf/10.1145/3468264.3468589\nRead about the ESEC/FSE conference https://2021.esec-fse.org/track/fse-2021-papers\n\n# Summary of the paper\n\nWe study the evolution and impact of bloated dependencies in a single software ecosystem: Java/Maven. Bloated dependencies are third-party libraries that are packaged in the application binary but are not needed to run the application. We analyze the history of 435 Java projects. This historical data includes 48,469 distinct dependencies, which we study across a total of 31,515 versions of Maven dependency trees. Bloated dependencies steadily increase over time, and 89.2% of the direct dependencies that are bloated remain bloated in all subsequent versions of the studied projects. This empirical evidence suggests that developers can safely remove a bloated dependency. We further report novel insights regarding the unnecessary maintenance efforts induced by bloat. We find that 22% of dependency updates performed by developers are made on bloated dependencies, and that Dependabot suggests a similar ratio of updates on bloated dependencies.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwarebloat #dataanalysis #dependencies"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT9M22S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "214",
-      "likeCount": "13",
-      "favoriteCount": "0",
-      "commentCount": "0"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "LF7tZLeFVf5WIto1ut3vujcREGk",
-    "id": "8SndbPMwdWE",
-    "snippet": {
-      "publishedAt": "2021-08-31T05:55:17Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Automatically Revealing Bloated Software Dependencies in Maven Projects",
-      "description": "Talk presented at FOSDEM 2021\n\nRead the related paper https://link.springer.com/content/pdf/10.1007/s10664-020-09914-8.pdf\nRead more about FOSDEM https://fosdem.org/2021\n\n# Summary \n\nThe talk introduces DepClean, an open-source tool we developed to automatically determine the presence of bloated dependencies in Maven artifacts. DepClean performs a deep static analysis of the dependency network and suggests direct and transitive dependencies to be removed or excluded. Given an application and its build file, DepClean collects the complete dependency tree (the list of dependencies declared in the pom.xml and transitive dependencies) and analyzes the bytecode of the artifact and all its dependencies to determine the presence of bloated dependencies. DepClean also generates a clean variant of the build file in which bloated dependencies are removed.\n\nThis talk focuses on one specific type of software dependency: bloated dependencies. They are libraries packaged with the application's compiled code but not necessary to build and execute the application. In other words, they are libraries declared as dependencies in a build file, which can be removed from the file, and the build still successfully passes. As a consequence of bloated dependencies, the binary file includes more code than necessary. An artificially large binary is an issue when the application is sent over the network (e.g., web applications) or is deployed on small devices (e.g., embedded systems). In addition, bloated dependencies embed vulnerable code that can be exploited while being actually useless for the application. Overall, bloated dependencies needlessly increase the difficulty of managing and evolving software applications.\n\nWe present our analysis of 9639 Java artifacts hosted on Maven Central, including 723444 dependency relationships. Our key result is as follows: 2,7% of the dependencies directly declared are bloated, 15,4% of the inherited dependencies are bloated, and 57% of the transitive dependencies of the studied artifacts are bloated. Based on these results, we distill and discuss two possible causes: the cascade of unwanted transitive dependencies induced by direct dependencies and the multi-module Maven projects' dependency heritage mechanism.\n\nOur qualitative assessment of DepClean involves 30 notable open-source projects. For each project, we used DepClean to generate a pom.xml file without bloated dependencies and submitted the changes as a pull request to the project. Notably, our work yielded 21 merged pull requests by open-source developers, and 140 bloated dependencies were removed. In summary, our results indicate that developers pay attention to their dependencies when they are notified of the problem, which stresses the need to engineer, i.e., analyze, maintain, and test POM files.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwarebloat #softwaredevelopment #dependencies",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/8SndbPMwdWE/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/8SndbPMwdWE/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/8SndbPMwdWE/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/8SndbPMwdWE/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/8SndbPMwdWE/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "Java",
-        "Software",
-        "Dependencies",
-        "Software Bloat"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "Automatically Revealing Bloated Software Dependencies in Maven Projects",
-        "description": "Talk presented at FOSDEM 2021\n\nRead the related paper https://link.springer.com/content/pdf/10.1007/s10664-020-09914-8.pdf\nRead more about FOSDEM https://fosdem.org/2021\n\n# Summary \n\nThe talk introduces DepClean, an open-source tool we developed to automatically determine the presence of bloated dependencies in Maven artifacts. DepClean performs a deep static analysis of the dependency network and suggests direct and transitive dependencies to be removed or excluded. Given an application and its build file, DepClean collects the complete dependency tree (the list of dependencies declared in the pom.xml and transitive dependencies) and analyzes the bytecode of the artifact and all its dependencies to determine the presence of bloated dependencies. DepClean also generates a clean variant of the build file in which bloated dependencies are removed.\n\nThis talk focuses on one specific type of software dependency: bloated dependencies. They are libraries packaged with the application's compiled code but not necessary to build and execute the application. In other words, they are libraries declared as dependencies in a build file, which can be removed from the file, and the build still successfully passes. As a consequence of bloated dependencies, the binary file includes more code than necessary. An artificially large binary is an issue when the application is sent over the network (e.g., web applications) or is deployed on small devices (e.g., embedded systems). In addition, bloated dependencies embed vulnerable code that can be exploited while being actually useless for the application. Overall, bloated dependencies needlessly increase the difficulty of managing and evolving software applications.\n\nWe present our analysis of 9639 Java artifacts hosted on Maven Central, including 723444 dependency relationships. Our key result is as follows: 2,7% of the dependencies directly declared are bloated, 15,4% of the inherited dependencies are bloated, and 57% of the transitive dependencies of the studied artifacts are bloated. Based on these results, we distill and discuss two possible causes: the cascade of unwanted transitive dependencies induced by direct dependencies and the multi-module Maven projects' dependency heritage mechanism.\n\nOur qualitative assessment of DepClean involves 30 notable open-source projects. For each project, we used DepClean to generate a pom.xml file without bloated dependencies and submitted the changes as a pull request to the project. Notably, our work yielded 21 merged pull requests by open-source developers, and 140 bloated dependencies were removed. In summary, our results indicate that developers pay attention to their dependencies when they are notified of the problem, which stresses the need to engineer, i.e., analyze, maintain, and test POM files.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#softwarebloat #softwaredevelopment #dependencies"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT28M56S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "296",
-      "likeCount": "12",
-      "favoriteCount": "0",
-      "commentCount": "11"
     }
   }
 ]
