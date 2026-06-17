@@ -20,7 +20,7 @@ description: César Soto Valero is a computer scientist, software engineer, and 
 
 I'm a [computer scientist](./publications) and hands-on [software engineer](./software).
 
-I'm on a mission to help engineers learn, build, and grow faster with AI.
+I'm on a mission to help engineers learn, build, and grow faster (now with AI).
 
 Check out my [personal blog](https://www.cesarsotovalero.net/blog), [YouTube channel](https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg), or connect with me on [LinkedIn](https://www.linkedin.com/in/cesarsotovalero).
 
