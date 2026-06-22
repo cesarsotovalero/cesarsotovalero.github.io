@@ -1,12 +1,89 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "9Bjd85vewAtY07XoRLEeQ3lO_Hs",
+    "etag": "EGuUUeMmpmnFzfykGjCQ3nLbRnI",
+    "id": "oLu-KGJ_x0E",
+    "snippet": {
+      "publishedAt": "2026-06-20T08:30:46Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "LLM Inference: Cost vs. Latency vs. Throughput",
+      "description": "Mastering LLM inference scaling requires a systematic approach to balancing the fundamental engineering trade-offs between cost, latency, and throughput.\n\nScaling large language models pushes you into a corner: increasing throughput spikes latency, clamping latency inflates GPU costs, and cutting costs hurts performance. This trilemma is the central challenge of LLM operations. Escaping it requires moving beyond simple horizontal scaling and understanding the stateful, memory-bound nature of AI hardware.\n\nThis video covers:\n→ The key engineering levers: quantization, parallelism, and batching.\n→ The four hidden dimensions of cost beyond just dollars per token.\n→ How to decide when to optimize for latency vs. throughput.\n→ A step-by-step framework for sizing and costing your deployment.\n\nThis guide is for AI engineers and ML practitioners tasked with deploying and scaling large language models in production. It provides a decision framework for building systems that are both powerful and cost-effective, avoiding common pitfalls like idle GPUs or performance bottlenecks.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:49 AI Engineering Decisions\n6:12 Cost Dimensions\n8:55 Latency-Bound vs. Throughput-Bound\n11:54 A Step-by-Step Decision Framework\n14:29 Takeaways\n\n#LLM #LLMOps #AIEngineering #GPU #Inference #Scalability #MLOps #LargeLanguageModels #CostOptimization",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/oLu-KGJ_x0E/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/oLu-KGJ_x0E/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/oLu-KGJ_x0E/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/oLu-KGJ_x0E/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/oLu-KGJ_x0E/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "LLM Inference",
+        "Scaling LLMs",
+        "GPU Cost",
+        "Latency vs Throughput",
+        "AI Engineering",
+        "LLMOps",
+        "Quantization",
+        "Parallelism",
+        "Batching",
+        "H100",
+        "vLLM",
+        "TensorRT-LLM",
+        "MLOps"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "LLM Inference: Cost vs. Latency vs. Throughput",
+        "description": "Mastering LLM inference scaling requires a systematic approach to balancing the fundamental engineering trade-offs between cost, latency, and throughput.\n\nScaling large language models pushes you into a corner: increasing throughput spikes latency, clamping latency inflates GPU costs, and cutting costs hurts performance. This trilemma is the central challenge of LLM operations. Escaping it requires moving beyond simple horizontal scaling and understanding the stateful, memory-bound nature of AI hardware.\n\nThis video covers:\n→ The key engineering levers: quantization, parallelism, and batching.\n→ The four hidden dimensions of cost beyond just dollars per token.\n→ How to decide when to optimize for latency vs. throughput.\n→ A step-by-step framework for sizing and costing your deployment.\n\nThis guide is for AI engineers and ML practitioners tasked with deploying and scaling large language models in production. It provides a decision framework for building systems that are both powerful and cost-effective, avoiding common pitfalls like idle GPUs or performance bottlenecks.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:49 AI Engineering Decisions\n6:12 Cost Dimensions\n8:55 Latency-Bound vs. Throughput-Bound\n11:54 A Step-by-Step Decision Framework\n14:29 Takeaways\n\n#LLM #LLMOps #AIEngineering #GPU #Inference #Scalability #MLOps #LargeLanguageModels #CostOptimization"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT15M29S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "47",
+      "likeCount": "1",
+      "favoriteCount": "0",
+      "commentCount": "1"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "1M7LcME5QKMKoFM4LboDMNa8Q-4",
     "id": "Ikk2f0gEPuY",
     "snippet": {
       "publishedAt": "2026-06-06T19:11:28Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "How Markdown Accidentally Became the Language of AI",
+      "title": "The $Trillion AI Industry Runs on Markdown",
       "description": "How is that Markdown, a simple text format from 2004, became the secret language controlling the AI revolution and what it teaches us about good engineering?\n\nThe trillion-dollar AI industry, with its frontier models and world-changing ambitions, is controlled by a plain text format one guy made for his blog in 2004. This is a critical lesson in how resilient technologies are built and reveals a dangerous contradiction at the heart of the AI industry.\n\nThis video covers:\n\n❶ The surprising origin story of Markdown and the problem it solved for writers.\n❷ The core principles of openness and simplicity that made this format unstoppable.\n❸ The crucial lesson this holds for every AI engineer building today's systems.\n\nThis video is for AI engineers and developers who want to understand the foundational principles that make technology last, and how those lessons apply to building robust and human-centric AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n#markdown  #AIEngineering #PromptEngineering #TechHistory #OpenSource #SoftwareDevelopment #LLM #developertools",
       "thumbnails": {
         "default": {
@@ -55,7 +132,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "How Markdown Accidentally Became the Language of AI",
+        "title": "The $Trillion AI Industry Runs on Markdown",
         "description": "How is that Markdown, a simple text format from 2004, became the secret language controlling the AI revolution and what it teaches us about good engineering?\n\nThe trillion-dollar AI industry, with its frontier models and world-changing ambitions, is controlled by a plain text format one guy made for his blog in 2004. This is a critical lesson in how resilient technologies are built and reveals a dangerous contradiction at the heart of the AI industry.\n\nThis video covers:\n\n❶ The surprising origin story of Markdown and the problem it solved for writers.\n❷ The core principles of openness and simplicity that made this format unstoppable.\n❸ The crucial lesson this holds for every AI engineer building today's systems.\n\nThis video is for AI engineers and developers who want to understand the foundational principles that make technology last, and how those lessons apply to building robust and human-centric AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n#markdown  #AIEngineering #PromptEngineering #TechHistory #OpenSource #SoftwareDevelopment #LLM #developertools"
       },
       "defaultAudioLanguage": "en"
@@ -70,7 +147,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "91",
+      "viewCount": "108",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -78,7 +155,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "UGOXNEB3CUPt-wbXEdt7R6zq-V8",
+    "etag": "riQcNedJGNJPS5MqEN2teO9kgIE",
     "id": "VO5gC3RakSk",
     "snippet": {
       "publishedAt": "2026-05-24T14:46:16Z",
@@ -132,7 +209,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "42",
+      "viewCount": "55",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -140,7 +217,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "GGHlGBE6YuAC9SqGmnRaW0AogfM",
+    "etag": "920pGnw26vjueS8M9vFGrMTImRc",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
@@ -209,7 +286,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "69",
+      "viewCount": "71",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -217,12 +294,12 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "GTv7W9sbQmNzrYNEEkeJBgHYWmU",
+    "etag": "Y_MUIEFXo1_yRAXzfbTBalm-Y14",
     "id": "ntRd1BOQO9Q",
     "snippet": {
       "publishedAt": "2026-05-08T16:52:33Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Job Interviews Reward Fractal Knowledge",
+      "title": "Job Interviews Reward Fractal Knowledge More Than You Think",
       "description": "Learn how to evolve your AI coding interview to hire senior software engineers who demonstrate deep system ownership and fractal knowledge, moving beyond LeetCode.\n\nThe rise of AI doesn't lower the bar for great engineers; it raises it. This shift forces us to rethink the traditional coding interview, moving the focus from rote memorization to true system ownership. But how can you tell the difference between someone who can generate code and someone who can own a reliable system at scale?\n\nThis video covers: \n\n→ What \"fractal knowledge\" is and why it's the most important signal for hiring senior engineers. \n\n→ How to transform system design interviews to reveal a candidate's true level of system ownership. \n\n→ A practical, AI-powered coding interview format that replaces LeetCode and mirrors real-world engineering tasks.\n\nThis video is for hiring managers and software engineers who are tired of LeetCode-style interviews and want a modern framework for identifying top talent in the age of AI.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Introduction\n1:22 The Signal: Fractal Knowledge\n4:07 System Design for Ownership\n6:23 The AI-Powered Coding Interview\n8:58 Takeaways\n\n#softwareengineering #codinginterview #ai #hiringnow #techcareers  #systemdesign #developer #engineeringmanager #leetcode",
       "thumbnails": {
         "default": {
@@ -270,7 +347,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "Job Interviews Reward Fractal Knowledge",
+        "title": "Job Interviews Reward Fractal Knowledge More Than You Think",
         "description": "Learn how to evolve your AI coding interview to hire senior software engineers who demonstrate deep system ownership and fractal knowledge, moving beyond LeetCode.\n\nThe rise of AI doesn't lower the bar for great engineers; it raises it. This shift forces us to rethink the traditional coding interview, moving the focus from rote memorization to true system ownership. But how can you tell the difference between someone who can generate code and someone who can own a reliable system at scale?\n\nThis video covers: \n\n→ What \"fractal knowledge\" is and why it's the most important signal for hiring senior engineers. \n\n→ How to transform system design interviews to reveal a candidate's true level of system ownership. \n\n→ A practical, AI-powered coding interview format that replaces LeetCode and mirrors real-world engineering tasks.\n\nThis video is for hiring managers and software engineers who are tired of LeetCode-style interviews and want a modern framework for identifying top talent in the age of AI.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Introduction\n1:22 The Signal: Fractal Knowledge\n4:07 System Design for Ownership\n6:23 The AI-Powered Coding Interview\n8:58 Takeaways\n\n#softwareengineering #codinginterview #ai #hiringnow #techcareers  #systemdesign #developer #engineeringmanager #leetcode"
       },
       "defaultAudioLanguage": "en"
@@ -370,7 +447,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "740n9TRwXte8nmEOa1LoJ7Mbkmo",
+    "etag": "wBbcOfoO3wXUdaw-QVvWhHaIZeY",
     "id": "AfaOvAXFCmg",
     "snippet": {
       "publishedAt": "2026-04-25T20:00:40Z",
@@ -452,7 +529,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "113",
+      "viewCount": "114",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -460,7 +537,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "9xBAcDSmtvcFtbEzfzkD2_7-bH4",
+    "etag": "ZhIwHjNlF-_F8KaQhH_yAQexQw0",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -531,10 +608,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "827",
+      "viewCount": "856",
       "likeCount": "17",
       "favoriteCount": "0",
-      "commentCount": "7"
+      "commentCount": "8"
     }
   },
   {
@@ -617,7 +694,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "TKi6aV4u8xfsECUkkyrVlyUfF9E",
+    "etag": "4uWEbgdlekBNTVq3jG7-fknxiVw",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -695,7 +772,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "248",
+      "viewCount": "255",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -703,12 +780,12 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "M9H7RtpPzCb_C9DkAcuWikaUZqI",
+    "etag": "2_OtEXpplbM7pzw4ulDwSOygmRI",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Solving the AI Privacy Problem with Federated Learning & Encrypted Agents",
+      "title": "Privacy Preserving AI with Federated Learning & Encrypted Agents",
       "description": "Most AI models rely on massive, centralized datasets, which creates a significant privacy and security risk. This approach forces a false choice between building intelligent systems and protecting sensitive user data. But what if a model could learn from distributed information without ever seeing it? This is possible by combining decentralized training with advanced cryptographic methods.\n\nThis video covers: \n→ The critical flaws of centralized AI training and why it's unsustainable. \n→ How Federated Learning works: training models locally and aggregating updates globally. \n→ The role of Encrypted AI Agents and Homomorphic Encryption in securing model updates. \n→ A step-by-step example of how these technologies enable secure collaboration. \n→ The core architecture for building trustworthy and privacy-first AI systems.\n\nThis video is for AI engineers and developers who need to build powerful models on sensitive or regulated data without compromising user privacy or institutional security. It explains the practical framework for creating systems that are both intelligent and trustworthy.\n\n✨ Subscribe for practical insights on AI and software engineering that go beyond the hype:\nhttps://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 Resources: \n• https://youtu.be/RgzeESzBa4Y\n• TensorFlow Federated: https://www.tensorflow.org/federated \n• PySyft Framework: https://docs.openmined.org/en/latest/\n\n00:00 Intro\n01:19 The Problem with Centralized AI\n03:35 Federated Learning Explained\n06:29 Encrypted AI Agents & Security\n09:35 Privacy-Preserving AI in Action\n12:18 Summary\n\n#federatedlearning  #privacypreservingai  #EncryptedAI #HomomorphicEncryption #trustworthyai  #machinelearning  #dataprivacy  #aisecurity  #decentralizedai",
       "thumbnails": {
         "default": {
@@ -757,7 +834,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "Solving the AI Privacy Problem with Federated Learning & Encrypted Agents",
+        "title": "Privacy Preserving AI with Federated Learning & Encrypted Agents",
         "description": "Most AI models rely on massive, centralized datasets, which creates a significant privacy and security risk. This approach forces a false choice between building intelligent systems and protecting sensitive user data. But what if a model could learn from distributed information without ever seeing it? This is possible by combining decentralized training with advanced cryptographic methods.\n\nThis video covers: \n→ The critical flaws of centralized AI training and why it's unsustainable. \n→ How Federated Learning works: training models locally and aggregating updates globally. \n→ The role of Encrypted AI Agents and Homomorphic Encryption in securing model updates. \n→ A step-by-step example of how these technologies enable secure collaboration. \n→ The core architecture for building trustworthy and privacy-first AI systems.\n\nThis video is for AI engineers and developers who need to build powerful models on sensitive or regulated data without compromising user privacy or institutional security. It explains the practical framework for creating systems that are both intelligent and trustworthy.\n\n✨ Subscribe for practical insights on AI and software engineering that go beyond the hype:\nhttps://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 Resources: \n• https://youtu.be/RgzeESzBa4Y\n• TensorFlow Federated: https://www.tensorflow.org/federated \n• PySyft Framework: https://docs.openmined.org/en/latest/\n\n00:00 Intro\n01:19 The Problem with Centralized AI\n03:35 Federated Learning Explained\n06:29 Encrypted AI Agents & Security\n09:35 Privacy-Preserving AI in Action\n12:18 Summary\n\n#federatedlearning  #privacypreservingai  #EncryptedAI #HomomorphicEncryption #trustworthyai  #machinelearning  #dataprivacy  #aisecurity  #decentralizedai"
       },
       "defaultAudioLanguage": "en"
@@ -772,20 +849,20 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "251",
-      "likeCount": "10",
+      "viewCount": "266",
+      "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "5"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "cqJfnp-4uB6YMHzIS2zLFdOmqCU",
+    "etag": "VYlDh6KljhNcvad2w5GqYTBsboI",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "How to Write Specs WITH Your AI Coding Assistant",
+      "title": "Write Specs AI Can't Misunderstand",
       "description": "Writing detailed specs for an AI coding assistant often fails, leading to ignored instructions and hallucinated features. The problem is not your SPEC.md, it is the workflow. Instead of writing specs FOR your AI, you need a process to build specs WITH your AI, turning it from an unreliable tool into a reliable planning partner.\n\nIn this video, you'll learn:\n\n❶ How to start with a high-level vision and guide your AI to draft a detailed plan.\n❷ A \"Plan Mode\" technique to enforce planning before the AI writes a single line of code.\n❸ The method for using a SPEC.md file as a living anchor to solve the AI's memory problem.\n❹ How this workflow makes the AI a true design and architecture co-pilot.\n\nThis video is for software developers and engineers who use AI coding assistants and want a reliable workflow to prevent wasted work, buggy code, and endless rework.\n\nSubscribe 👉 https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n🎥 WATCH NEXT\n→ https://www.youtube.com/watch?v=OaN0u1bN1Qk\n→ https://www.youtube.com/watch?v=4vltll8lO1g\n→ https://www.youtube.com/watch?v=maIBlxGubeI\n\n0:00 Intro\n1:49 Principle 1\n4:30 Principle 2\n7:05 Principle 3\n9:30 Summary\n\n#SpecDrivenDevelopment #AIEngineering #AIForDevelopers #LLM #SoftwareDevelopment #DeveloperTools #CodingAI #PromptEngineering",
       "thumbnails": {
         "default": {
@@ -833,7 +910,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "How to Write Specs WITH Your AI Coding Assistant",
+        "title": "Write Specs AI Can't Misunderstand",
         "description": "Writing detailed specs for an AI coding assistant often fails, leading to ignored instructions and hallucinated features. The problem is not your SPEC.md, it is the workflow. Instead of writing specs FOR your AI, you need a process to build specs WITH your AI, turning it from an unreliable tool into a reliable planning partner.\n\nIn this video, you'll learn:\n\n❶ How to start with a high-level vision and guide your AI to draft a detailed plan.\n❷ A \"Plan Mode\" technique to enforce planning before the AI writes a single line of code.\n❸ The method for using a SPEC.md file as a living anchor to solve the AI's memory problem.\n❹ How this workflow makes the AI a true design and architecture co-pilot.\n\nThis video is for software developers and engineers who use AI coding assistants and want a reliable workflow to prevent wasted work, buggy code, and endless rework.\n\nSubscribe 👉 https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n🎥 WATCH NEXT\n→ https://www.youtube.com/watch?v=OaN0u1bN1Qk\n→ https://www.youtube.com/watch?v=4vltll8lO1g\n→ https://www.youtube.com/watch?v=maIBlxGubeI\n\n0:00 Intro\n1:49 Principle 1\n4:30 Principle 2\n7:05 Principle 3\n9:30 Summary\n\n#SpecDrivenDevelopment #AIEngineering #AIForDevelopers #LLM #SoftwareDevelopment #DeveloperTools #CodingAI #PromptEngineering"
       },
       "defaultAudioLanguage": "en"
@@ -848,15 +925,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "610",
-      "likeCount": "13",
+      "viewCount": "657",
+      "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "2"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "lbOsfB50cIXuVSDusNlwe0DX05I",
+    "etag": "4QqvTclZlP2Nr6FrbUNz2TUId4Q",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -931,7 +1008,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "205",
+      "viewCount": "213",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1016,7 +1093,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "EXS1_SeL5f2sNO8nWrDTvhiwxZE",
+    "etag": "SOmTRbnJVcKKIY5ecbUoVQaKRA0",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -1084,7 +1161,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "114",
+      "viewCount": "115",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1092,7 +1169,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "rBc3Kz_IulSBYk0gKG51n1bGxfA",
+    "etag": "PIRCVU4I4Go0KcPhRfzDHu08fN4",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -1174,7 +1251,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "241",
+      "viewCount": "244",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "11"
@@ -1182,7 +1259,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "9C00R_QM_t-s-yYFEVZer40QuFQ",
+    "etag": "ewvJAWKYavbKwmreQTHh_UAeykU",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -1262,15 +1339,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "3751",
-      "likeCount": "73",
+      "viewCount": "4078",
+      "likeCount": "80",
       "favoriteCount": "0",
       "commentCount": "11"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "VKznrujT7j3A-6yc31LhAV-vGy0",
+    "etag": "bxRszJMHmcI-LkEa-q2ZYRP4BXI",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -1349,7 +1426,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "195",
+      "viewCount": "199",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1533,7 +1610,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "J-qnFDC6fYfb434_q2lmfwcLCEc",
+    "etag": "xOhrNgkrLmZm6y8Zo6ugpXxu0UM",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -1612,7 +1689,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "987",
+      "viewCount": "1000",
       "likeCount": "39",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -1620,7 +1697,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "979l6EgXBvbygz4YeuWVkGsXFwQ",
+    "etag": "SGwVZw8v7O6HjSIR9QJbMdYyNFQ",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
@@ -1701,7 +1778,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "219",
+      "viewCount": "220",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1798,7 +1875,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Uu2krA1g6DOwoWCDsKsMz673_ds",
+    "etag": "TkuZMD0hxJjcITdR_iHeRF2bHMY",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -1873,7 +1950,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2563",
+      "viewCount": "2617",
       "likeCount": "111",
       "favoriteCount": "0",
       "commentCount": "27"
@@ -1974,7 +2051,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "mv-1hsP9OGp9ErE1kPLihxpOXKg",
+    "etag": "wFQE9VoPZWDHA2I-jtTk-_yC014",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -2049,7 +2126,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "273",
+      "viewCount": "275",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2389,7 +2466,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "dwLo_ElhRwQ2G1GGHfzunPDDTp4",
+    "etag": "nx2EroVZ1OTy-_fHTuU9DuRr7Mk",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
@@ -2461,7 +2538,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "484",
+      "viewCount": "486",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -2469,12 +2546,12 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "HjeMiOyg9dzYN109DsqFiKAVx9w",
+    "etag": "xrIyIV6Z3PJBCQpseczboZ4WKHE",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Your Résumé Is Your Career Inventory",
+      "title": "How to Build and Level Up a Computer Scientist Résumé",
       "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nWant to learn the secrets to crafting a standout résumé that can secure your dream job in tech? Then you may want to learn from my mistakes. Whether you’re just entering the job market or looking to level up, this video breaks down the purpose of a computer scientist résumé, the common pitfalls job applicants usually make, and how to avoid them. Discover (or recap) how to structure your résumé for success, highlight your unique skills, and avoid the red flags that could cost you a dream job offer.\n\nIn case you wonder, here's my own résumé 🔗 https://www.cesarsotovalero.net/files/CV/cv.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:54 Résumés and RPG games\n03:14 Targeting\n08:15 Structuring \n11:57 Skills\n14:15 Personal qualities\n15:29 Seven sins to avoid\n18:06 The future of résumés\n\n💡 RELATED CONTENT\n➤ My blog post titled \"Building and Leveling Up a Computer Scientist Résumé\" 🔗 https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html\n➤ The article \"The resume that got a software engineer a $300,000 job at Google\" 🔗 https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f\n➤ The blog post \"Pimp Up Your Resume\" 🔗 https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html",
       "thumbnails": {
         "default": {
@@ -2521,7 +2598,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "Your Résumé Is Your Career Inventory",
+        "title": "How to Build and Level Up a Computer Scientist Résumé",
         "description": "👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\nWant to learn the secrets to crafting a standout résumé that can secure your dream job in tech? Then you may want to learn from my mistakes. Whether you’re just entering the job market or looking to level up, this video breaks down the purpose of a computer scientist résumé, the common pitfalls job applicants usually make, and how to avoid them. Discover (or recap) how to structure your résumé for success, highlight your unique skills, and avoid the red flags that could cost you a dream job offer.\n\nIn case you wonder, here's my own résumé 🔗 https://www.cesarsotovalero.net/files/CV/cv.pdf\n\n⏰ TIMESTAMPS\n00:00 Introduction\n01:54 Résumés and RPG games\n03:14 Targeting\n08:15 Structuring \n11:57 Skills\n14:15 Personal qualities\n15:29 Seven sins to avoid\n18:06 The future of résumés\n\n💡 RELATED CONTENT\n➤ My blog post titled \"Building and Leveling Up a Computer Scientist Résumé\" 🔗 https://www.cesarsotovalero.net/blog/building-and-leveling-up-a-computer-scientist-resume.html\n➤ The article \"The resume that got a software engineer a $300,000 job at Google\" 🔗 https://levelup.gitconnected.com/the-resume-that-got-a-software-engineer-a-300-000-job-at-google-8c5a1ecff40f\n➤ The blog post \"Pimp Up Your Resume\" 🔗 https://www.yegor256.com/2016/03/08/pimp-up-your-resume.html"
       },
       "defaultAudioLanguage": "en"
@@ -2544,7 +2621,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6_Tceu847O-1ES3qiYirqcPgHPE",
+    "etag": "YGwgMV_QUXEK958XgDz7SUCVPho",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -2605,15 +2682,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12901",
-      "likeCount": "644",
+      "viewCount": "12908",
+      "likeCount": "643",
       "favoriteCount": "0",
       "commentCount": "296"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "jXj-tAeCYvYB3sgSYl8wKpkgiyw",
+    "etag": "Z9Zsa152HKi_JmSMJPtzhYBD4Hg",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -2675,15 +2752,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "996",
-      "likeCount": "63",
+      "viewCount": "1007",
+      "likeCount": "64",
       "favoriteCount": "0",
       "commentCount": "33"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "QJvkR2Anw_1gJKCnVDUjBTWQ9ys",
+    "etag": "iqA767cv5sLzEe1w4abqktBw--o",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -2737,7 +2814,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "250",
+      "viewCount": "253",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2745,7 +2822,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "DCHUmDVIMU1E9TWsqBSj1vkPY_0",
+    "etag": "LNkrFcfjiygIXpxp-3nYlO2LuUI",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -2799,7 +2876,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1052",
+      "viewCount": "1057",
       "likeCount": "35",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2807,7 +2884,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "mr9uocbHkIzsuieR3bFOuJEAnEo",
+    "etag": "b--zGNfW04F0YkE6S4XywD4Stx4",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -2868,7 +2945,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "444",
+      "viewCount": "446",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2876,7 +2953,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LYVNIC6yjEU1c7XOqJREhwO6-qg",
+    "etag": "C68Tx1qyUSC1mPm-s5C2uo3z_X0",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -2935,7 +3012,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "186",
+      "viewCount": "189",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -2943,7 +3020,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "IkYSfNPeVKhlZQWlF48pGoldiSk",
+    "etag": "w2fbQm-BaUNX1hPUAnfLV16_v-Y",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -2996,7 +3073,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "200",
+      "viewCount": "202",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -3135,7 +3212,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "h2YV1EYiGgZstcIWCABtngHrywA",
+    "etag": "rkMs8WwlrngssIm_301Q9VODPBk",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -3195,7 +3272,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "437",
+      "viewCount": "438",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "0"
