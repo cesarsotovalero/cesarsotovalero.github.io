@@ -1,7 +1,85 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "EGuUUeMmpmnFzfykGjCQ3nLbRnI",
+    "etag": "gY4we4amtnFWkvFsPa9YthaDraY",
+    "id": "Wq4VX-9wzFo",
+    "snippet": {
+      "publishedAt": "2026-06-24T15:20:15Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "Why More AI-Generated Code Won't Make Us Faster",
+      "description": "Agentic development tools now enable engineers to generate prototypes, scripts, migrations, and tests at unprecedented speed. But... does this flood of code automatically translate into shipped value? Or does it expose a deeper, more painful bottleneck in your organization?\n\nThis is the core of the great engineering divergence. While AI makes code generation incredibly fast, true engineering productivity will be defined by an organization's ability to adapt its entire software delivery pipeline. This means a fundamental shift: less \"I'm writing code,\" more \"I'm directing work.\" Without adapted processes, this velocity becomes a liability, leading to bottlenecks in review, testing, and release. This is something already felt by teams embracing agentic tools.\n\nThis video covers:\n→ The true meaning of \"cheap code\" and why it's a double-edged sword.\n→ How Amdahl's Law reveals the hidden bottlenecks in your current processes.\n→ Concrete strategies to transform your pipeline for agentic development.\n\nThis video is for software engineers and engineering leaders grappling with the implications of AI-generated code and seeking to optimize their entire software delivery pipeline for true productivity.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n2:27 Code is Cheap, Value Isn't\n3:55 Amdahl's Law\n6:05 Agentic Development Pipeline\n8:25 Takeaways\n \n#AICode #EngineeringProductivity #AmdahlsLaw #AgenticDevelopment #SoftwareEngineering #TechTrends #DevOps #AIinSoftware #CodingFuture #PipelineOptimization",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Wq4VX-9wzFo/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Wq4VX-9wzFo/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Wq4VX-9wzFo/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/Wq4VX-9wzFo/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/Wq4VX-9wzFo/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "AI code",
+        "agentic development",
+        "engineering productivity",
+        "software delivery",
+        "Amdahl's Law",
+        "AI bottleneck",
+        "code generation",
+        "future of coding",
+        "DevOps",
+        "software pipeline",
+        "AI engineering",
+        "tech trends",
+        "developer tools",
+        "software architecture"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "Why More AI-Generated Code Won't Make Us Faster",
+        "description": "Agentic development tools now enable engineers to generate prototypes, scripts, migrations, and tests at unprecedented speed. But... does this flood of code automatically translate into shipped value? Or does it expose a deeper, more painful bottleneck in your organization?\n\nThis is the core of the great engineering divergence. While AI makes code generation incredibly fast, true engineering productivity will be defined by an organization's ability to adapt its entire software delivery pipeline. This means a fundamental shift: less \"I'm writing code,\" more \"I'm directing work.\" Without adapted processes, this velocity becomes a liability, leading to bottlenecks in review, testing, and release. This is something already felt by teams embracing agentic tools.\n\nThis video covers:\n→ The true meaning of \"cheap code\" and why it's a double-edged sword.\n→ How Amdahl's Law reveals the hidden bottlenecks in your current processes.\n→ Concrete strategies to transform your pipeline for agentic development.\n\nThis video is for software engineers and engineering leaders grappling with the implications of AI-generated code and seeking to optimize their entire software delivery pipeline for true productivity.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n2:27 Code is Cheap, Value Isn't\n3:55 Amdahl's Law\n6:05 Agentic Development Pipeline\n8:25 Takeaways\n \n#AICode #EngineeringProductivity #AmdahlsLaw #AgenticDevelopment #SoftwareEngineering #TechTrends #DevOps #AIinSoftware #CodingFuture #PipelineOptimization"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT9M24S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "35",
+      "likeCount": "3",
+      "favoriteCount": "0",
+      "commentCount": "2"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "LjqPiNdlLAzjmga04v8zr1gH16A",
     "id": "oLu-KGJ_x0E",
     "snippet": {
       "publishedAt": "2026-06-20T08:30:46Z",
@@ -70,7 +148,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "47",
+      "viewCount": "69",
       "likeCount": "1",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -78,7 +156,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "1M7LcME5QKMKoFM4LboDMNa8Q-4",
+    "etag": "c4GnL0rT7xXg8cydq-rWjznNHa8",
     "id": "Ikk2f0gEPuY",
     "snippet": {
       "publishedAt": "2026-06-06T19:11:28Z",
@@ -147,7 +225,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "108",
+      "viewCount": "124",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -155,7 +233,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "riQcNedJGNJPS5MqEN2teO9kgIE",
+    "etag": "eEt-TezkD1s95CTdpKRPHJ-F6pk",
     "id": "VO5gC3RakSk",
     "snippet": {
       "publishedAt": "2026-05-24T14:46:16Z",
@@ -209,7 +287,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "55",
+      "viewCount": "67",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -217,7 +295,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "920pGnw26vjueS8M9vFGrMTImRc",
+    "etag": "nYkdW_4q1Yc6fD1_ytOxCCb9uZ0",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
@@ -286,7 +364,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "71",
+      "viewCount": "74",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -294,7 +372,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Y_MUIEFXo1_yRAXzfbTBalm-Y14",
+    "etag": "LNUf3sYhUfE2Kocz4wrbyrXjZY8",
     "id": "ntRd1BOQO9Q",
     "snippet": {
       "publishedAt": "2026-05-08T16:52:33Z",
@@ -362,7 +440,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "70",
+      "viewCount": "72",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -370,7 +448,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5WOTHKWL_8G0Cpej2555xvAIvpk",
+    "etag": "QFhkKZog-oD8ilo2Zz50ygOJH2k",
     "id": "rGspkFASp8k",
     "snippet": {
       "publishedAt": "2026-04-29T14:45:07Z",
@@ -439,7 +517,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "37",
+      "viewCount": "38",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -537,7 +615,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ZhIwHjNlF-_F8KaQhH_yAQexQw0",
+    "etag": "fQQja8UY9NUNzfXAFnMeaDkjSoc",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -608,7 +686,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "856",
+      "viewCount": "865",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -694,7 +772,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "4uWEbgdlekBNTVq3jG7-fknxiVw",
+    "etag": "yRZYLzwndPxHPTiYQhPZ5_04SH4",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -772,15 +850,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "255",
-      "likeCount": "14",
+      "viewCount": "257",
+      "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "3"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "2_OtEXpplbM7pzw4ulDwSOygmRI",
+    "etag": "LXDYnqSFWgYKRFv91HZlXtHH0JU",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -849,7 +927,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "266",
+      "viewCount": "277",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -857,7 +935,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "VYlDh6KljhNcvad2w5GqYTBsboI",
+    "etag": "_v47TDddfNvbJTi5qAuxg8sa90Y",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -925,15 +1003,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "657",
-      "likeCount": "14",
+      "viewCount": "707",
+      "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "2"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "4QqvTclZlP2Nr6FrbUNz2TUId4Q",
+    "etag": "EJ7nUuP1dxa1C3W0Cm6F5C1CRG0",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -1008,7 +1086,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "213",
+      "viewCount": "221",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1016,7 +1094,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "TtUT0chsNq1mNCI5KIDvcRnW0d4",
+    "etag": "5PZr7bo_z7UFJoySgpHE9DZogDQ",
     "id": "4vltll8lO1g",
     "snippet": {
       "publishedAt": "2026-02-07T15:40:48Z",
@@ -1085,7 +1163,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "119",
+      "viewCount": "120",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1093,7 +1171,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "SOmTRbnJVcKKIY5ecbUoVQaKRA0",
+    "etag": "IYCvZGBG3faNhrK-ebB_YBkzCpg",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -1161,7 +1239,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "115",
+      "viewCount": "118",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1169,7 +1247,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "PIRCVU4I4Go0KcPhRfzDHu08fN4",
+    "etag": "ZzBH3b3xKBS4Bolc9e9NpOfoQF8",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -1251,7 +1329,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "244",
+      "viewCount": "247",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "11"
@@ -1259,7 +1337,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ewvJAWKYavbKwmreQTHh_UAeykU",
+    "etag": "ni-XEGU3AVTe8MTOfNjuxbp2aHg",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -1339,15 +1417,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "4078",
-      "likeCount": "80",
+      "viewCount": "4319",
+      "likeCount": "87",
       "favoriteCount": "0",
       "commentCount": "11"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "bxRszJMHmcI-LkEa-q2ZYRP4BXI",
+    "etag": "NRp5iVkvYbsgknrT1mEV73PReKI",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -1426,7 +1504,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "199",
+      "viewCount": "202",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1434,7 +1512,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "R-yKozGrECl60UJ8GdrfY64XpB8",
+    "etag": "q6LNMYpNLlD9q-OD-TB9FrPCkCc",
     "id": "pHqoIPAlOcw",
     "snippet": {
       "publishedAt": "2026-01-08T09:44:25Z",
@@ -1512,7 +1590,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "148",
+      "viewCount": "150",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1520,7 +1598,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "fPJyuhWIkRDI6gLmCwXovBRtLNY",
+    "etag": "zw0ZaDkssXK-diGx1roL7ZcEO0M",
     "id": "-a6Pbv_yBWw",
     "snippet": {
       "publishedAt": "2025-11-29T07:55:26Z",
@@ -1602,7 +1680,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "282",
+      "viewCount": "285",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1610,7 +1688,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "xOhrNgkrLmZm6y8Zo6ugpXxu0UM",
+    "etag": "YzXuG2ZEYSIu-oq-ztUQnTXF-XE",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -1689,8 +1767,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1000",
-      "likeCount": "39",
+      "viewCount": "1007",
+      "likeCount": "40",
       "favoriteCount": "0",
       "commentCount": "8"
     }
@@ -1786,7 +1864,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "01KhSF66hCSjaqjNnuSkj4QYBIQ",
+    "etag": "OuPLx_lRrrnl9k8-h4wd_40t-UI",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -1867,7 +1945,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "231",
+      "viewCount": "232",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -1875,7 +1953,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "TkuZMD0hxJjcITdR_iHeRF2bHMY",
+    "etag": "1nDfOC6pOL6FxylTrgbTqqiZ5nY",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -1950,15 +2028,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2617",
-      "likeCount": "111",
+      "viewCount": "2659",
+      "likeCount": "113",
       "favoriteCount": "0",
       "commentCount": "27"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "pL2ePuUeIHZGggs9XPYGTW0NTGo",
+    "etag": "naqxvCnOghzcxme22PDwk2RmcKQ",
     "id": "3s7xjI3g73w",
     "snippet": {
       "publishedAt": "2024-12-29T17:00:04Z",
@@ -2043,7 +2121,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "417",
+      "viewCount": "418",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -2051,7 +2129,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "wFQE9VoPZWDHA2I-jtTk-_yC014",
+    "etag": "BvKlakiIhtCPV-mRKPjjCNJ3N7I",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -2126,7 +2204,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "275",
+      "viewCount": "278",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -2466,7 +2544,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nx2EroVZ1OTy-_fHTuU9DuRr7Mk",
+    "etag": "i9SX1iFyDwz5a_L2um51iKrrGcQ",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
@@ -2538,7 +2616,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "486",
+      "viewCount": "487",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -2621,7 +2699,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YGwgMV_QUXEK958XgDz7SUCVPho",
+    "etag": "uxBC9ZgG7e6vkTRR_9Ffr91tT_Y",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -2682,7 +2760,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12908",
+      "viewCount": "12911",
       "likeCount": "643",
       "favoriteCount": "0",
       "commentCount": "296"
@@ -2690,7 +2768,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Z9Zsa152HKi_JmSMJPtzhYBD4Hg",
+    "etag": "acVwf9US2fmLvWquX1WipDhyDr4",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -2752,7 +2830,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1007",
+      "viewCount": "1019",
       "likeCount": "64",
       "favoriteCount": "0",
       "commentCount": "33"
@@ -2760,7 +2838,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "iqA767cv5sLzEe1w4abqktBw--o",
+    "etag": "qfP18H6TN4-SLIl0Ew02oGTg3AU",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -2814,7 +2892,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "253",
+      "viewCount": "261",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2822,7 +2900,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LNkrFcfjiygIXpxp-3nYlO2LuUI",
+    "etag": "6NWcpXip8dlExLNPAeiwqZYizz0",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -2876,7 +2954,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1057",
+      "viewCount": "1065",
       "likeCount": "35",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3280,7 +3358,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "BdNOjgzhpmSbppHKsCfw4UKtGBk",
+    "etag": "oKSmqikdU9lKTHOePsrBuMkOevc",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -3339,7 +3417,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "228",
+      "viewCount": "229",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -3482,7 +3560,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LF7tZLeFVf5WIto1ut3vujcREGk",
+    "etag": "NQJP1mrJxU3TyLoqjaIb7uGSzRI",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -3542,7 +3620,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "296",
+      "viewCount": "297",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "11"
