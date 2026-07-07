@@ -15,7 +15,7 @@ César Soto Valero is currently a Senior Data Scientist at SEB Group. He has exp
 
 ## Long Bio
 
-César is a Senior Data Scientist with a strong background combining academic research and hands-on industry experience.
+César is currently a Senior Data Scientist with a strong background combining academic research and hands-on industry experience.
 
 He's been at the forefront of developing innovative data-driven and AI-powered solutions. This includes:
 
