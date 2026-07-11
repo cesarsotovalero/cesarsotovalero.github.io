@@ -38,7 +38,7 @@ published: true
       </p>
     </div>
     <div class="youtube-video-thumbnail">
-      <img src="{{ video.snippet.thumbnails.medium.url }}" alt="Thumbnail for {{ video.snippet.title }}">
+      <img src="{{ video.snippet.thumbnails.medium.url }}" alt="Thumbnail for {{ video.snippet.title | escape }}">
     </div>
    </div>
   </a>
