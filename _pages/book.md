@@ -109,7 +109,7 @@ css:
       class="booking-cta"
       href="{{ booking.footer_cta.button_url | append: footer_cta_query_separator | append: 'utm_source=website&utm_medium=booking-page&utm_campaign=coaching-launch&utm_content=final-cta' }}"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
       data-offer="final-cta"
     >
       {{ booking.footer_cta.button_label }}
