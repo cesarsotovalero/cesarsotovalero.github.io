@@ -93,6 +93,7 @@ css:
   </section>
   {% endcomment %}
 
+  {% comment %}
   <section class="booking-section" aria-labelledby="booking-faq-title">
     <div class="booking-section-header">
       <h2 id="booking-faq-title">Policy and FAQ</h2>
@@ -107,6 +108,7 @@ css:
       {% endfor %}
     </div>
   </section>
+  {% endcomment %}
 
   <section class="booking-final-cta">
     <h2>{{ booking.footer_cta.title }}</h2>

@@ -120,21 +120,35 @@
 }
 
 .booking-cta {
-  display: inline-block;
+  display: block;
+  width: 100%;
   text-align: center;
   font-weight: 700;
+  font-size: 0.95rem;
   background: var(--button-background-color);
   color: var(--button-text-color);
   border: 1px solid var(--button-background-color);
   border-radius: 10px;
-  padding: 10px 14px;
+  padding: 12px 14px;
   text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.1s ease;
 }
 
 .booking-cta:hover,
 .booking-cta:focus {
   text-decoration: none;
-  opacity: 0.92;
+  opacity: 0.88;
+}
+
+.booking-cta:active {
+  transform: scale(0.96);
+  opacity: 0.75;
+}
+
+.booking-final-cta .booking-cta {
+  display: inline-block;
+  width: auto;
+  padding: 12px 28px;
 }
 
 .booking-card-small {
