@@ -301,7 +301,7 @@ body:has(.booking-page) {
   margin-top: 2px;
   padding: 12px 15px;
   border-radius: 10px;
-  border: 2px solid var(--button-background-color);
+  border: 2px solid var(--button-border-color, var(--panel-border-color));
   background: var(--button-background-color);
   color: var(--button-text-color) !important;
   text-align: center;
