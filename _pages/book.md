@@ -15,14 +15,23 @@ css:
 
 <section class="booking-page">
   <header class="booking-hero">
-    <div class="booking-hero-text">
-      <p class="booking-eyebrow">{{ booking.hero.eyebrow }}</p>
-      <h1>{{ booking.hero.title }}</h1>
-      <p class="booking-subtitle">{{ booking.hero.subtitle }}</p>
-      <p class="booking-note">{{ booking.hero.note }}</p>
-    </div>
     <div class="booking-hero-media">
       <img src="{{ booking.hero.image }}" alt="César Soto Valero profile picture" loading="lazy"/>
+    </div>
+    <div class="booking-hero-text">
+      <h1>{{ booking.hero.title }}</h1>
+      <p class="booking-subtitle">{{ booking.hero.subtitle }}</p>
+    </div>
+    <div class="booking-socials">
+      <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <img src="{{ site.baseurl }}/img/icons/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://www.youtube.com/{{ site.author.youtube }}" target="_blank" rel="noopener noreferrer" title="YouTube">
+        <img src="{{ site.baseurl }}/img/icons/youtube.svg" alt="YouTube" />
+      </a>
+      <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <img src="{{ site.baseurl }}/img/icons/github.svg" alt="GitHub" />
+      </a>
     </div>
   </header>
 
@@ -64,10 +73,10 @@ css:
     </div>
   </section>
 
+  {% comment %}
   <section class="booking-section" aria-labelledby="booking-testimonials-title">
     <div class="booking-section-header">
       <h2 id="booking-testimonials-title">Testimonials</h2>
-      <p>Replace these placeholders with your final testimonials before publishing.</p>
     </div>
 
     <div class="booking-testimonials">
@@ -82,7 +91,9 @@ css:
       {% endfor %}
     </div>
   </section>
+  {% endcomment %}
 
+  {% comment %}
   <section class="booking-section" aria-labelledby="booking-faq-title">
     <div class="booking-section-header">
       <h2 id="booking-faq-title">Policy and FAQ</h2>
@@ -97,7 +108,9 @@ css:
       {% endfor %}
     </div>
   </section>
+  {% endcomment %}
 
+  {% comment %}
   <section class="booking-final-cta">
     <h2>{{ booking.footer_cta.title }}</h2>
     <p>{{ booking.footer_cta.text }}</p>
@@ -115,6 +128,7 @@ css:
       {{ booking.footer_cta.button_label }}
     </a>
   </section>
+  {% endcomment %}
 </section>
 
 <script>
