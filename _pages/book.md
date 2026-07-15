@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: minimal
 title: Book a Session
 description: Book a one-to-one mentorship session, mock interview, or career advice session with César Soto Valero.
 keywords: booking, mentorship, mock interview, career advice, coaching
