@@ -1,5 +1,5 @@
-body:has(.booking-page) {
-  background-color: #FFFFF6;
+body {
+  background-color: var(--main-background-color);
 }
 
 .booking-page {
