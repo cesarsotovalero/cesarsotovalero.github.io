@@ -1,5 +1,12 @@
 name: Update YouTube Metadata
 
+permissions:
+  contents: write
+
+concurrency:
+  group: update-youtube-metadata
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "0 0 * * 1" # Runs every Monday at midnight UTC
@@ -39,5 +46,31 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add _data/youtube-videos.json _data/youtube-profile.json
-          git commit -m "chore: update YouTube data [skip ci]" || echo "No changes to commit"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "chore: update YouTube data [skip ci]"
+
+          branch_name="${GITHUB_REF_NAME}"
+
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:${branch_name}"; then
+              echo "Push succeeded"
+              exit 0
+            fi
+
+            echo "Push failed on attempt ${attempt}; rebasing on latest ${branch_name} and retrying..."
+            git fetch origin "${branch_name}"
+
+            if ! git rebase "origin/${branch_name}"; then
+              echo "Rebase failed due to conflicts; aborting run."
+              git rebase --abort || true
+              exit 1
+            fi
+          done
+
+          echo "Push failed after 3 attempts"
+          exit 1
