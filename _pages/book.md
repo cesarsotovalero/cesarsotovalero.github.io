@@ -48,7 +48,7 @@ css:
           class="booking-cta"
           href="{{ offer.booking_url | append: '?utm_source=website&utm_medium=booking-page&utm_campaign=coaching-launch&utm_content=' | append: offer.key }}"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           data-offer="{{ offer.key }}"
         >
           {{ offer.cta_label }}
