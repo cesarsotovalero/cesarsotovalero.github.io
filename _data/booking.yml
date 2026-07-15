@@ -5,8 +5,21 @@ hero:
   image: "/img/pages/cesar/cesar-profile-2024-200x200px.jpg"
 
 offers:
+  - key: "career-advice"
+    title: "Career Advice"
+    duration: "45 minutes"
+    price: "EUR 79"
+    description: "Have a specific decision, blocker, or dilemma? Get a focused answer and walk away knowing what to do next."
+    bullets:
+      - "Should I accept this offer? Should I switch fields? How do I negotiate?"
+      - "LinkedIn/Resume review with actionable edits"
+      - "Practical recommendations you can implement today"
+    cta_label: "Book career advice"
+    booking_url: "https://cal.com/cesarsotovalero/career-advice"
+    payment_note: "Payment is collected during booking."
+
   - key: "mentorship"
-    title: "1:1 Mentorship"
+    title: "1:1 Mentorship Session"
     duration: "60 minutes"
     price: "EUR 99"
     description: "Leave with a clear 30-day action plan tailored to your career goals - whether you're pivoting, job-hunting, or growing in your current role."
@@ -29,19 +42,6 @@ offers:
       - "Written follow-up with improvement priorities"
     cta_label: "Book mock interview"
     booking_url: "https://cal.com/cesarsotovalero/mock-interview"
-    payment_note: "Payment is collected during booking."
-
-  - key: "career-advice"
-    title: "Career Advice"
-    duration: "45 minutes"
-    price: "EUR 79"
-    description: "Have a specific decision, blocker, or dilemma? Get a focused answer and walk away knowing what to do next."
-    bullets:
-      - "Should I accept this offer? Should I switch fields? How do I negotiate?"
-      - "LinkedIn/Resume review with actionable edits"
-      - "Practical recommendations you can implement today"
-    cta_label: "Book career advice"
-    booking_url: "https://cal.com/cesarsotovalero/career-advice"
     payment_note: "Payment is collected during booking."
 
 testimonials:

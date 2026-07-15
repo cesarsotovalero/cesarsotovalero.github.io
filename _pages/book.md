@@ -69,6 +69,7 @@ css:
         </a>
       </div>
     </div>
+
   </header>
 
   <section class="booking-proof-strip" aria-label="Session guarantees">
@@ -101,7 +102,7 @@ css:
       <article class="booking-card" id="offer-{{ offer.key }}">
         <header class="booking-card-header">
           <h3>{{ offer.title }}</h3>
-          {% if offer.key == 'mock-interview' %}
+          {% if offer.key == 'mentorship' %}
           <span class="booking-card-badge">Most requested</span>
           {% endif %}
         </header>
@@ -134,9 +135,11 @@ css:
       </article>
       {% endfor %}
     </div>
+
   </section>
 
-  {% comment %}
+{% comment %}
+
   <section class="booking-section" aria-labelledby="booking-testimonials-title">
     <div class="booking-section-header">
       <h2 id="booking-testimonials-title">Testimonials</h2>
@@ -153,10 +156,12 @@ css:
       </blockquote>
       {% endfor %}
     </div>
+
   </section>
   {% endcomment %}
 
-  {% comment %}
+{% comment %}
+
   <section class="booking-section" aria-labelledby="booking-faq-title">
     <div class="booking-section-header">
       <h2 id="booking-faq-title">Policy and FAQ</h2>
@@ -170,10 +175,12 @@ css:
       </article>
       {% endfor %}
     </div>
+
   </section>
   {% endcomment %}
 
-  {% comment %}
+{% comment %}
+
   <section class="booking-final-cta">
     <h2>{{ booking.footer_cta.title }}</h2>
     <p>{{ booking.footer_cta.text }}</p>

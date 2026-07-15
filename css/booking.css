@@ -297,9 +297,9 @@
   margin-top: 2px;
   padding: 12px 15px;
   border-radius: 10px;
-  border: 1px solid var(--button-background-color);
+  border: 2px solid var(--button-border-color, #8a8a8a);
   background: var(--button-background-color);
-  color: var(--button-text-color) !important;
+  color: var(--button-text-color, #ffffff) !important;
   text-align: center;
   text-decoration: none !important;
   font-family: "Concourse T4", "Linux Biolinum", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -312,10 +312,16 @@
 .booking-cta:hover,
 .booking-cta:focus {
   text-decoration: none !important;
-  color: var(--button-text-color) !important;
+  color: var(--button-text-color, #ffffff) !important;
+  border-color: var(--button-text-color, #ffffff);
   opacity: 0.94;
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.18);
   transform: translateY(-1px);
+}
+
+.booking-cta:focus-visible {
+  outline: 3px solid var(--button-border-color, #8a8a8a);
+  outline-offset: 3px;
 }
 
 .booking-cta:active {

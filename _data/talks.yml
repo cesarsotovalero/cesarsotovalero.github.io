@@ -1,21 +1,30 @@
 # AUTO-GENERATED from _pages/talks.md — do not edit manually.
 # Run: python3 scripts/sync_talks_from_page.py
 
+- title: TBD
+  event: SEB Tech Day
+  date: '2026-09-03'
+  youtube_id:
+- title: 'AI on-chain: Where do we see the real utility of Agentic Finance?'
+  event: Nordic Blockchain Conference (NBC2026)
+  date: '2026-05-26'
+  url: https://www.nordicblockchain.com/conference/program
+  youtube_id: w8WiLLe6rIo
 - title: Stop Stuffing Your LLM's Context Window
   event: AI-fokus
   date: '2026-05-19'
   url: https://www.ai-fokus.se/
-  youtube_id:
+  youtube_id: lo_QROedKqE
 - title: Fully Homomorphic Encryption and the Future of Trustworthy AI
   event: Data Innovation Summit
   date: '2026-05-06'
   url: https://datainnovationsummit.com/region/nordics/
-  youtube_id:
+  youtube_id: VO5gC3RakSk
 - title: 'Moving Fast and Importing Things: The Software Supply Chain of Agentic AI'
   event: 5th KTH Workshop on the Software Supply Chain
   date: '2026-04-24'
   url: https://chains.proj.kth.se/software-supply-chain-workshop-5.html
-  youtube_id:
+  youtube_id: AfaOvAXFCmg
 - title: The Promise of Trustworthy AI
   event: Voxxed Days Zürich
   date: '2026-03-24'
@@ -73,8 +82,9 @@
   url: https://www.meetup.com/decentralized-camp/events/290035869/
   youtube_id:
 - title: Coverage-Based Debloating for Java Bytecode
-  event: ESEC/FSE
+  event: Announcement
   date: '2022-11-01'
+  url: https://2022.esec-fse.org/details/fse-2022-journal-first/18/Coverage-Based-Debloating-for-Java-Bytecode
   youtube_id: HXj2B8eHmt4
 - title: Automatic Software Debloating
   event: KTH
@@ -110,8 +120,9 @@
   date: '2021-09-01'
   youtube_id:
 - title: A Longitudinal Analysis of Bloated Java Dependencies
-  event: ESEC/FSE
+  event: Announcement
   date: '2021-08-01'
+  url: https://2021.esec-fse.org/details/fse-2021-papers/58/A-Longitudinal-Analysis-of-Bloated-Java-Dependencies
   youtube_id: cePEl485E_s
 - title: Automated Software Debloat
   event: KTH
