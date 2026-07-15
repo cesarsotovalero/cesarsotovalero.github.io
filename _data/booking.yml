@@ -1,0 +1,71 @@
+hero:
+  eyebrow: "Book a session"
+  title: "Work with Cesar 1:1"
+  subtitle: "Choose the format that best fits your goals and book instantly. Payment is handled during checkout via Stripe or PayPal."
+  image: "/img/pages/cesar/cesar-profile-2024-200x200px.jpg"
+  note: "Before launch, replace each booking URL below with your live Cal.com paid event URL."
+
+offers:
+  - key: "mentorship"
+    title: "One-to-One Mentorship and Career Guidance"
+    duration: "60 minutes"
+    price: "EUR 99"
+    description: "A focused session to review your goals, strategy, and next steps in your career."
+    bullets:
+      - "Career direction and positioning"
+      - "Action plan for the next 30-60 days"
+      - "Q&A tailored to your context"
+    cta_label: "Book mentorship"
+    booking_url: "https://cal.com/your-handle/mentorship"
+    payment_note: "Payment is collected during booking."
+
+  - key: "mock-interview"
+    title: "Mock Job Interview"
+    duration: "60 minutes"
+    price: "EUR 119"
+    description: "Practice a realistic interview flow and receive direct, actionable feedback."
+    bullets:
+      - "Interview simulation"
+      - "Strengths and gap analysis"
+      - "Targeted improvement checklist"
+    cta_label: "Book mock interview"
+    booking_url: "https://cal.com/your-handle/mock-interview"
+    payment_note: "Payment is collected during booking."
+
+  - key: "career-advice"
+    title: "Career Advice Session"
+    duration: "45 minutes"
+    price: "EUR 79"
+    description: "Get concise advice on a specific challenge, decision, or transition in your career."
+    bullets:
+      - "Decision support for your next move"
+      - "Resume and profile positioning guidance"
+      - "Practical recommendations"
+    cta_label: "Book career advice"
+    booking_url: "https://cal.com/your-handle/career-advice"
+    payment_note: "Payment is collected during booking."
+
+testimonials:
+  - quote: "Cesar gave me very concrete feedback and a clear action plan. I left the session knowing exactly what to do next."
+    author: "Client testimonial placeholder"
+    role: "Add role and company"
+  - quote: "The mock interview was practical and honest. It helped me identify blind spots quickly and improve my confidence."
+    author: "Client testimonial placeholder"
+    role: "Add role and company"
+  - quote: "Strong guidance, no fluff. The session helped me reframe my strategy and communicate my value better."
+    author: "Client testimonial placeholder"
+    role: "Add role and company"
+
+faq:
+  - question: "How do booking and payment work?"
+    answer: "Pick your session, choose a time slot, and complete payment in the booking flow."
+  - question: "Can I reschedule?"
+    answer: "Yes. Please use the rescheduling link in your confirmation email."
+  - question: "What is the cancellation policy?"
+    answer: "You can set your policy here before launch (for example, free cancellation up to 24 hours before the session)."
+
+footer_cta:
+  title: "Not sure which session to choose?"
+  text: "Start with a career advice session and we can decide the best next step together."
+  button_label: "Book career advice"
+  button_url: "https://cal.com/your-handle/career-advice"
