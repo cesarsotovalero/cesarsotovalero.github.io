@@ -6,7 +6,8 @@ body {
   max-width: 1120px;
   margin: 0 auto;
   padding: 28px 16px 56px;
-  font-size: 1.04rem;
+  font-family: "Century Supra T4", "Georgia", "Times New Roman", serif;
+  font-size: 16px;
 }
 
 .booking-hero {
@@ -46,8 +47,9 @@ body {
 
 .booking-eyebrow {
   margin: 0 0 6px;
-  font-family: "Concourse T4", "Linux Biolinum", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.94rem;
+  font-family: "Concourse T6 Tab", "Concourse T6", "Open Sans", sans-serif;
+  font-size: 0.78em;
+  font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   opacity: 0.75;
@@ -55,13 +57,15 @@ body {
 
 .booking-hero h1 {
   margin: 0 0 10px;
-  font-size: clamp(2.2rem, 3.2vw, 3rem);
+  font-family: "Concourse T6", "Concourse T4", "Open Sans", sans-serif;
+  font-size: clamp(2.2em, 4vw, 3.1em);
+  font-weight: 700;
   line-height: 1.1;
 }
 
 .booking-subtitle {
   margin: 0;
-  font-size: 1.18rem;
+  font-size: 1.18em;
   line-height: 1.65;
   color: var(--main-text-color);
   opacity: 0.92;
@@ -80,7 +84,7 @@ body {
   margin: 0;
   padding-left: 1.4em;
   line-height: 1.45;
-  font-size: 1.04rem;
+  font-size: 1em;
 }
 
 .booking-hero-highlights li::before {
@@ -121,8 +125,9 @@ body {
 }
 
 .booking-social-link span {
-  font-family: "Concourse T4", "Linux Biolinum", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.92rem;
+  font-family: "Concourse T4", "Open Sans", sans-serif;
+  font-size: 0.86em;
+  font-weight: 700;
   letter-spacing: 0.02em;
 }
 
@@ -161,13 +166,15 @@ body {
 
 .booking-proof-strip h2 {
   margin: 0 0 8px;
-  font-size: 1.14rem;
+  font-family: "Concourse T6", "Concourse T4", "Open Sans", sans-serif;
+  font-size: 1.08em;
+  font-weight: 700;
   line-height: 1.25;
 }
 
 .booking-proof-strip p {
   margin: 0;
-  font-size: 1.02rem;
+  font-size: 1.02em;
   line-height: 1.5;
   opacity: 0.9;
 }
@@ -182,12 +189,14 @@ body {
 
 .booking-section-header h2 {
   margin: 0 0 6px;
-  font-size: 1.72rem;
+  font-family: "Concourse T6", "Concourse T4", "Open Sans", sans-serif;
+  font-size: 1.75em;
+  font-weight: 700;
 }
 
 .booking-section-header p {
   margin: 0;
-  font-size: 1.08rem;
+  font-size: 1.08em;
   opacity: 0.9;
 }
 
@@ -245,7 +254,9 @@ body {
 
 .booking-card h3 {
   margin: 0;
-  font-size: 1.34rem;
+  font-family: "Concourse T6", "Concourse T4", "Open Sans", sans-serif;
+  font-size: 1.28em;
+  font-weight: 700;
   line-height: 1.25;
 }
 
@@ -255,21 +266,23 @@ body {
   border: 1px solid var(--panel-border-color);
   border-radius: 999px;
   padding: 4px 10px;
-  font-family: "Concourse T4", "Linux Biolinum", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.78rem;
+  font-family: "Concourse T6 Tab", "Concourse T6", "Open Sans", sans-serif;
+  font-size: 0.7em;
+  font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   white-space: nowrap;
   background: rgba(66, 103, 178, 0.14);
 }
 
-.booking-card-meta {
+.booking-card > .booking-card-meta {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
   margin: 0;
-  font-size: 1rem;
+  font-family: "Concourse T4", "Open Sans", sans-serif;
+  font-size: 0.86em;
   font-weight: 700;
   color: var(--heading-color);
   opacity: 0.9;
@@ -278,7 +291,7 @@ body {
 .booking-card > p {
   margin: 0;
   line-height: 1.55;
-  font-size: 1.06rem;
+  font-size: 1.06em;
 }
 
 .booking-card-benefits {
@@ -292,11 +305,13 @@ body {
 
 .booking-card-benefits li {
   margin: 0;
-  font-size: 1.02rem;
+  font-size: 0.98em;
 }
 
 .booking-cta {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   margin-top: 2px;
   padding: 12px 15px;
@@ -306,10 +321,11 @@ body {
   color: var(--button-text-color) !important;
   text-align: center;
   text-decoration: none !important;
-  font-family: "Concourse T4", "Linux Biolinum", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Concourse T6", "Concourse T4", "Open Sans", sans-serif;
+  font-size: 1.02em;
   font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.14);
   transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.2s ease;
 }
 
@@ -333,9 +349,10 @@ body {
   padding: 12px 28px;
 }
 
-.booking-card-small {
+.booking-card > .booking-card-small {
   margin: 0;
-  font-size: 0.9rem;
+  font-family: "Concourse T3", "Concourse T4", "Open Sans", sans-serif;
+  font-size: 0.78em;
   line-height: 1.35;
   opacity: 0.8;
 }
@@ -366,7 +383,7 @@ body {
 
 .booking-quote-role {
   display: block;
-  font-size: 0.98rem;
+  font-size: 0.98em;
   opacity: 0.85;
 }
 
@@ -383,7 +400,7 @@ body {
 .booking-faq-item h3 {
   margin-top: 0;
   margin-bottom: 6px;
-  font-size: 1.14rem;
+  font-size: 1.14em;
 }
 
 .booking-faq-item p {
@@ -475,7 +492,7 @@ body {
   }
 
   .booking-social-link span {
-    font-size: 0.86rem;
+    font-size: 0.82em;
   }
 }
 
