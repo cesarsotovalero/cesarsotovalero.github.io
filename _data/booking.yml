@@ -2,8 +2,7 @@ hero:
   eyebrow: "Book a session"
   title: "Work with César 1:1"
   subtitle: "Choose the format that best fits your goals and book instantly. Payment is handled during checkout via Stripe or PayPal."
-  image: "/img/pages/cesar/cesar-Jfokus-2024-LinkedIn-profile.jpg"
-  note: "Before launch, replace each booking URL below with your live Cal.com paid event URL."
+  image: "/img/pages/cesar/cesar-profile-2024-200x200px.jpg"
 
 offers:
   - key: "mentorship"
