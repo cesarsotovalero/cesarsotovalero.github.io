@@ -1,8 +1,8 @@
 hero:
   eyebrow: "Book a session"
-  title: "Work with Cesar 1:1"
+  title: "Work with César 1:1"
   subtitle: "Choose the format that best fits your goals and book instantly. Payment is handled during checkout via Stripe or PayPal."
-  image: "/img/pages/cesar/cesar-profile-2024-200x200px.jpg"
+  image: "/img/pages/cesar/cesar-Jfokus-2024-LinkedIn-profile.jpg"
   note: "Before launch, replace each booking URL below with your live Cal.com paid event URL."
 
 offers:
@@ -16,7 +16,7 @@ offers:
       - "Action plan for the next 30-60 days"
       - "Q&A tailored to your context"
     cta_label: "Book mentorship"
-    booking_url: "https://cal.com/your-handle/mentorship"
+    booking_url: "https://cal.com/cesarsotovalero/mentorship"
     payment_note: "Payment is collected during booking."
 
   - key: "mock-interview"
@@ -29,7 +29,7 @@ offers:
       - "Strengths and gap analysis"
       - "Targeted improvement checklist"
     cta_label: "Book mock interview"
-    booking_url: "https://cal.com/your-handle/mock-interview"
+    booking_url: "https://cal.com/cesarsotovalero/mock-interview"
     payment_note: "Payment is collected during booking."
 
   - key: "career-advice"
@@ -42,19 +42,19 @@ offers:
       - "Resume and profile positioning guidance"
       - "Practical recommendations"
     cta_label: "Book career advice"
-    booking_url: "https://cal.com/your-handle/career-advice"
+    booking_url: "https://cal.com/cesarsotovalero/career-advice"
     payment_note: "Payment is collected during booking."
 
 testimonials:
-  - quote: "Cesar gave me very concrete feedback and a clear action plan. I left the session knowing exactly what to do next."
-    author: "Client testimonial placeholder"
-    role: "Add role and company"
+  - quote: "César gave me very concrete feedback and a clear action plan. I left the session knowing exactly what to do next."
+    author: "Anonymous client"
+    role: "Data Scientist"
   - quote: "The mock interview was practical and honest. It helped me identify blind spots quickly and improve my confidence."
-    author: "Client testimonial placeholder"
-    role: "Add role and company"
+    author: "Anonymous client"
+    role: "Software Engineery"
   - quote: "Strong guidance, no fluff. The session helped me reframe my strategy and communicate my value better."
-    author: "Client testimonial placeholder"
-    role: "Add role and company"
+    author: "Anonymous client"
+    role: "Product Manager"
 
 faq:
   - question: "How do booking and payment work?"
@@ -68,4 +68,4 @@ footer_cta:
   title: "Not sure which session to choose?"
   text: "Start with a career advice session and we can decide the best next step together."
   button_label: "Book career advice"
-  button_url: "https://cal.com/your-handle/career-advice"
+  button_url: "https://cal.com/cesarsotovalero/career-advice"

@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: Book a Session
-description: Book a one-to-one mentorship session, mock interview, or career advice session with Cesar Soto Valero.
+description: Book a one-to-one mentorship session, mock interview, or career advice session with César Soto Valero.
 keywords: booking, mentorship, mock interview, career advice, coaching
 permalink: /book
 published: false
@@ -22,7 +22,7 @@ css:
       <p class="booking-note">{{ booking.hero.note }}</p>
     </div>
     <div class="booking-hero-media">
-      <img src="{{ booking.hero.image }}" alt="Cesar Soto Valero profile picture" loading="lazy"/>
+      <img src="{{ booking.hero.image }}" alt="César Soto Valero profile picture" loading="lazy"/>
     </div>
   </header>
 
