@@ -110,6 +110,7 @@ css:
   </section>
   {% endcomment %}
 
+  {% comment %}
   <section class="booking-final-cta">
     <h2>{{ booking.footer_cta.title }}</h2>
     <p>{{ booking.footer_cta.text }}</p>
@@ -127,6 +128,7 @@ css:
       {{ booking.footer_cta.button_label }}
     </a>
   </section>
+  {% endcomment %}
 </section>
 
 <script>
