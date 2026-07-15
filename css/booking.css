@@ -245,6 +245,18 @@ body {
   animation-delay: 0.1s;
 }
 
+.booking-card:nth-child(1) .booking-cta {
+  border-color: #0a8f7f;
+}
+
+.booking-card:nth-child(2) .booking-cta {
+  border-color: #4267b2;
+}
+
+.booking-card:nth-child(3) .booking-cta {
+  border-color: #b16326;
+}
+
 .booking-card-header {
   display: flex;
   justify-content: space-between;
