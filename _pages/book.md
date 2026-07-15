@@ -16,29 +16,80 @@ css:
 <section class="booking-page">
   <header class="booking-hero">
     <div class="booking-hero-media">
-      <img src="{{ booking.hero.image }}" alt="César Soto Valero profile picture" loading="lazy"/>
+      <img
+        src="{{ booking.hero.image }}"
+        alt="César Soto Valero profile picture"
+        width="176"
+        height="176"
+        loading="lazy"
+      />
     </div>
-    <div class="booking-hero-text">
+
+    <div class="booking-hero-content">
+      <p class="booking-eyebrow">{{ booking.hero.eyebrow }}</p>
       <h1>{{ booking.hero.title }}</h1>
       <p class="booking-subtitle">{{ booking.hero.subtitle }}</p>
-    </div>
-    <div class="booking-socials">
-      <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-        <img src="{{ site.baseurl }}/img/icons/linkedin.svg" alt="LinkedIn" />
-      </a>
-      <a href="https://www.youtube.com/{{ site.author.youtube }}" target="_blank" rel="noopener noreferrer" title="YouTube">
-        <img src="{{ site.baseurl }}/img/icons/youtube.svg" alt="YouTube" />
-      </a>
-      <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer" title="GitHub">
-        <img src="{{ site.baseurl }}/img/icons/github.svg" alt="GitHub" />
-      </a>
+
+      <ul class="booking-hero-highlights">
+        <li>Private one-to-one guidance tailored to your exact goals</li>
+        <li>Concrete, no-fluff recommendations you can apply immediately</li>
+        <li>Written follow-up so you leave with a clear execution plan</li>
+      </ul>
+
+      <div class="booking-socials" aria-label="Social links">
+        <a
+          class="booking-social-link"
+          href="https://linkedin.com/in/{{ site.author.linkedin }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
+        >
+          <img src="{{ site.baseurl }}/img/icons/linkedin.svg" alt="LinkedIn" width="18" height="18" />
+          <span>LinkedIn</span>
+        </a>
+        <a
+          class="booking-social-link"
+          href="https://www.youtube.com/{{ site.author.youtube }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="YouTube"
+        >
+          <img src="{{ site.baseurl }}/img/icons/youtube.svg" alt="YouTube" width="18" height="18" />
+          <span>YouTube</span>
+        </a>
+        <a
+          class="booking-social-link"
+          href="https://github.com/{{ site.author.github }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub"
+        >
+          <img src="{{ site.baseurl }}/img/icons/github.svg" alt="GitHub" width="18" height="18" />
+          <span>GitHub</span>
+        </a>
+      </div>
     </div>
   </header>
+
+  <section class="booking-proof-strip" aria-label="Session guarantees">
+    <article>
+      <h2>1:1 Sessions</h2>
+      <p>No group calls, no generic advice, no recycled feedback.</p>
+    </article>
+    <article>
+      <h2>45-60 Minutes</h2>
+      <p>Focused time to get unstuck and move forward with confidence.</p>
+    </article>
+    <article>
+      <h2>Actionable Follow-Up</h2>
+      <p>Leave with concrete next steps, priorities, and accountability.</p>
+    </article>
+  </section>
 
   <section class="booking-section" aria-labelledby="booking-offers-title">
     <div class="booking-section-header">
       <h2 id="booking-offers-title">Choose your session</h2>
-      <p>All sessions are one-to-one and include a direct, actionable follow-up.</p>
+      <p>Each session is designed to solve a different kind of career challenge.</p>
     </div>
 
     <div class="booking-grid">
@@ -48,10 +99,22 @@ css:
       {% assign offer_query_separator = '&' %}
       {% endif %}
       <article class="booking-card" id="offer-{{ offer.key }}">
-        <h3>{{ offer.title }}</h3>
-        <p class="booking-card-meta">{{ offer.duration }} · {{ offer.price }}</p>
+        <header class="booking-card-header">
+          <h3>{{ offer.title }}</h3>
+          {% if offer.key == 'mock-interview' %}
+          <span class="booking-card-badge">Most requested</span>
+          {% endif %}
+        </header>
+
+        <p class="booking-card-meta">
+          <span>{{ offer.duration }}</span>
+          <span aria-hidden="true">&bull;</span>
+          <span>{{ offer.price }}</span>
+        </p>
+
         <p>{{ offer.description }}</p>
-        <ul>
+
+        <ul class="booking-card-benefits">
           {% for bullet in offer.bullets %}
           <li>{{ bullet }}</li>
           {% endfor %}

@@ -9,7 +9,7 @@ offers:
     title: "1:1 Mentorship"
     duration: "60 minutes"
     price: "EUR 99"
-    description: "Leave with a clear 30-day action plan tailored to your career goals — whether you're pivoting, job-hunting, or growing in your current role."
+    description: "Leave with a clear 30-day action plan tailored to your career goals - whether you're pivoting, job-hunting, or growing in your current role."
     bullets:
       - "Personalized career roadmap with concrete next steps"
       - "Positioning strategy: how to stand out in your target market"
@@ -22,7 +22,7 @@ offers:
     title: "Mock Job Interview"
     duration: "60 minutes"
     price: "EUR 119"
-    description: "Simulate a real technical or behavioral interview and get honest, structured feedback on exactly where you're losing points — and how to fix it."
+    description: "Simulate a real technical or behavioral interview and get honest, structured feedback on exactly where you're losing points - and how to fix it."
     bullets:
       - "Realistic interview simulation (behavioral, system design, or coding)"
       - "Detailed strengths and gap analysis you can act on immediately"
