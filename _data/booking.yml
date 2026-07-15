@@ -16,7 +16,6 @@ offers:
       - "Direct feedback on your profile, resume, or approach"
     cta_label: "Book mentorship"
     booking_url: "https://cal.com/cesarsotovalero/mentorship"
-    payment_note: "Payment is collected during booking."
 
   - key: "mock-interview"
     title: "Mock Job Interview"
@@ -29,7 +28,6 @@ offers:
       - "Written follow-up with improvement priorities"
     cta_label: "Book mock interview"
     booking_url: "https://cal.com/cesarsotovalero/mock-interview"
-    payment_note: "Payment is collected during booking."
 
   - key: "career-advice"
     title: "Career Advice"
@@ -42,7 +40,6 @@ offers:
       - "Practical recommendations you can implement today"
     cta_label: "Book career advice"
     booking_url: "https://cal.com/cesarsotovalero/career-advice"
-    payment_note: "Payment is collected during booking."
 
 testimonials:
   - quote: "César gave me very concrete feedback and a clear action plan. I left the session knowing exactly what to do next."

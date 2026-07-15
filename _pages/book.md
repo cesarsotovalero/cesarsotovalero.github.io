@@ -129,8 +129,6 @@ css:
         >
           {{ offer.cta_label }}
         </a>
-
-        <p class="booking-card-small">{{ offer.payment_note }}</p>
       </article>
       {% endfor %}
     </div>
