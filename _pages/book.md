@@ -101,9 +101,13 @@ css:
   <section class="booking-final-cta">
     <h2>{{ booking.footer_cta.title }}</h2>
     <p>{{ booking.footer_cta.text }}</p>
+    {% assign footer_cta_query_separator = '?' %}
+    {% if booking.footer_cta.button_url contains '?' %}
+    {% assign footer_cta_query_separator = '&' %}
+    {% endif %}
     <a
       class="booking-cta"
-      href="{{ booking.footer_cta.button_url | append: '?utm_source=website&utm_medium=booking-page&utm_campaign=coaching-launch&utm_content=final-cta' }}"
+      href="{{ booking.footer_cta.button_url | append: footer_cta_query_separator | append: 'utm_source=website&utm_medium=booking-page&utm_campaign=coaching-launch&utm_content=final-cta' }}"
       target="_blank"
       rel="noopener"
       data-offer="final-cta"
