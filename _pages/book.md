@@ -34,6 +34,10 @@ css:
 
     <div class="booking-grid">
       {% for offer in booking.offers %}
+      {% assign offer_query_separator = '?' %}
+      {% if offer.booking_url contains '?' %}
+      {% assign offer_query_separator = '&' %}
+      {% endif %}
       <article class="booking-card" id="offer-{{ offer.key }}">
         <h3>{{ offer.title }}</h3>
         <p class="booking-card-meta">{{ offer.duration }} · {{ offer.price }}</p>
@@ -46,7 +50,7 @@ css:
 
         <a
           class="booking-cta"
-          href="{{ offer.booking_url | append: '?utm_source=website&utm_medium=booking-page&utm_campaign=coaching-launch&utm_content=' | append: offer.key }}"
+          href="{{ offer.booking_url | append: offer_query_separator | append: 'utm_source=website&utm_medium=booking-page&utm_campaign=coaching-launch&utm_content=' | append: offer.key }}"
           target="_blank"
           rel="noopener noreferrer"
           data-offer="{{ offer.key }}"
