@@ -1,7 +1,83 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "c7Tyueom8tL1t1g8zPnGa32yHps",
+    "etag": "RKbEcKcQtYvZNgZ2idLuOZg-OcA",
+    "id": "-322bwe4oNQ",
+    "snippet": {
+      "publishedAt": "2026-07-19T12:16:28Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "AI Superforecasters: Auditable Alpha or Pure Hype?",
+      "description": "AI superforecasters are revolutionizing financial markets with structured prediction models. They are already operating in high-stakes environments. Operating AI superforecasters isn't about asking a chatbot for stock tips; it's a far more structured and powerful approach to prediction.\n\nThis video covers:\n→ What an AI Superforecaster is (and how it differs from a simple chatbot).\n→ A real-world example: forecasting the winner of the 2026 FIFA World Cup.\n→ The promise of \"auditable alpha\" for financial and prediction markets.\n→ The hidden perils of automation bias and systemic risk from AI monoculture.\n\nThis video is for software developers, data scientists, and financial executives who need to understand the capabilities and risks of structured AI reasoning systems for high-stakes decision-making.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀:\n• Original Post by Astral Codex Ten: https://www.astralcodexten.com/p/the-ai-superforecasters-are-here\n• https://en.wikipedia.org/wiki/Superforecaster\n• https://en.wikipedia.org/wiki/Nate_Silver\n\n00:00 Intro\n02:09 What is an AI Superforecaster?\n05:40 Forecasting the 2026 FIFA World Cup\n09:18 The Promise: Auditable Alpha\n10:47 Hidden Risks of Automated Reason\n13:17 Takeaway\n\n#AISuperforecasting #ArtificialIntelligence #MachineLearning #Finance #StockMarket #Prediction #RiskManagement #AIExplained",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/-322bwe4oNQ/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/-322bwe4oNQ/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/-322bwe4oNQ/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/-322bwe4oNQ/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/-322bwe4oNQ/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "AI Superforecaster",
+        "AI prediction",
+        "financial modeling",
+        "quantitative finance",
+        "stock market AI",
+        "systemic risk",
+        "automation bias",
+        "large language models",
+        "LLM",
+        "auditable AI",
+        "AI agents",
+        "prediction markets"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "AI Superforecasters: Auditable Alpha or Pure Hype?",
+        "description": "AI superforecasters are revolutionizing financial markets with structured prediction models. They are already operating in high-stakes environments. Operating AI superforecasters isn't about asking a chatbot for stock tips; it's a far more structured and powerful approach to prediction.\n\nThis video covers:\n→ What an AI Superforecaster is (and how it differs from a simple chatbot).\n→ A real-world example: forecasting the winner of the 2026 FIFA World Cup.\n→ The promise of \"auditable alpha\" for financial and prediction markets.\n→ The hidden perils of automation bias and systemic risk from AI monoculture.\n\nThis video is for software developers, data scientists, and financial executives who need to understand the capabilities and risks of structured AI reasoning systems for high-stakes decision-making.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀:\n• Original Post by Astral Codex Ten: https://www.astralcodexten.com/p/the-ai-superforecasters-are-here\n• https://en.wikipedia.org/wiki/Superforecaster\n• https://en.wikipedia.org/wiki/Nate_Silver\n\n00:00 Intro\n02:09 What is an AI Superforecaster?\n05:40 Forecasting the 2026 FIFA World Cup\n09:18 The Promise: Auditable Alpha\n10:47 Hidden Risks of Automated Reason\n13:17 Takeaway\n\n#AISuperforecasting #ArtificialIntelligence #MachineLearning #Finance #StockMarket #Prediction #RiskManagement #AIExplained"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT15M48S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "21",
+      "likeCount": "2",
+      "favoriteCount": "0",
+      "commentCount": "1"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "vWcXm1SNQktKsuULBD8xp1YrlIA",
     "id": "oXu4iAhuM04",
     "snippet": {
       "publishedAt": "2026-07-09T17:30:19Z",
@@ -69,15 +145,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "67",
-      "likeCount": "1",
+      "viewCount": "88",
+      "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "ecgQxGUvXwbNNJ1wl4HMtGDm9rU",
+    "etag": "JsSDwLWvYuBzbuWWKBu_WtqA0Qg",
     "id": "t9pFgvFLxV0",
     "snippet": {
       "publishedAt": "2026-07-03T15:00:39Z",
@@ -145,7 +221,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "81",
+      "viewCount": "89",
       "likeCount": "1",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -153,7 +229,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "0SZnLErePZGQgpz6O8Rpk1hZcls",
+    "etag": "2GYmkgwAO3nqTSNA9PC_5y11USw",
     "id": "Wq4VX-9wzFo",
     "snippet": {
       "publishedAt": "2026-06-24T15:20:15Z",
@@ -223,7 +299,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "103",
+      "viewCount": "109",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -231,7 +307,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "bnOsJ3RrFuFRR8lxzvie75gIpJo",
+    "etag": "sbOibIkcqb_lyEopKnQ7z0pPMhg",
     "id": "oLu-KGJ_x0E",
     "snippet": {
       "publishedAt": "2026-06-20T08:30:46Z",
@@ -300,7 +376,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "172",
+      "viewCount": "184",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -308,12 +384,12 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "1NOANqECAc6epFpuarHDBb_AOGI",
+    "etag": "_0n4ell8qsi4-wAvC97j9k-cz0c",
     "id": "Ikk2f0gEPuY",
     "snippet": {
       "publishedAt": "2026-06-06T19:11:28Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The $Trillion AI Industry Runs on Markdown",
+      "title": "The $Trillion AI Industry Running on Markdown",
       "description": "How is that Markdown, a simple text format from 2004, became the secret language controlling the AI revolution and what it teaches us about good engineering?\n\nThe trillion-dollar AI industry, with its frontier models and world-changing ambitions, is controlled by a plain text format one guy made for his blog in 2004. This is a critical lesson in how resilient technologies are built and reveals a dangerous contradiction at the heart of the AI industry.\n\nThis video covers:\n\n❶ The surprising origin story of Markdown and the problem it solved for writers.\n❷ The core principles of openness and simplicity that made this format unstoppable.\n❸ The crucial lesson this holds for every AI engineer building today's systems.\n\nThis video is for AI engineers and developers who want to understand the foundational principles that make technology last, and how those lessons apply to building robust and human-centric AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n#markdown  #AIEngineering #PromptEngineering #TechHistory #OpenSource #SoftwareDevelopment #LLM #developertools",
       "thumbnails": {
         "default": {
@@ -362,7 +438,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "The $Trillion AI Industry Runs on Markdown",
+        "title": "The $Trillion AI Industry Running on Markdown",
         "description": "How is that Markdown, a simple text format from 2004, became the secret language controlling the AI revolution and what it teaches us about good engineering?\n\nThe trillion-dollar AI industry, with its frontier models and world-changing ambitions, is controlled by a plain text format one guy made for his blog in 2004. This is a critical lesson in how resilient technologies are built and reveals a dangerous contradiction at the heart of the AI industry.\n\nThis video covers:\n\n❶ The surprising origin story of Markdown and the problem it solved for writers.\n❷ The core principles of openness and simplicity that made this format unstoppable.\n❸ The crucial lesson this holds for every AI engineer building today's systems.\n\nThis video is for AI engineers and developers who want to understand the foundational principles that make technology last, and how those lessons apply to building robust and human-centric AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n#markdown  #AIEngineering #PromptEngineering #TechHistory #OpenSource #SoftwareDevelopment #LLM #developertools"
       },
       "defaultAudioLanguage": "en"
@@ -377,7 +453,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "132",
+      "viewCount": "136",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -385,7 +461,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "rOKgkuIK2dYe0r4hcIhgxuZTIPw",
+    "etag": "GhCGakGgO9uk-ugIeQgNBw8iuNI",
     "id": "VO5gC3RakSk",
     "snippet": {
       "publishedAt": "2026-05-24T14:46:16Z",
@@ -439,7 +515,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "89",
+      "viewCount": "91",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -447,7 +523,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "HvgUOUyMZzP_oueoS2zS8zIxnto",
+    "etag": "nyl4kyKXTfMHyyoNvHFaJi1q-iI",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
@@ -516,7 +592,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "79",
+      "viewCount": "83",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -600,13 +676,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "QFhkKZog-oD8ilo2Zz50ygOJH2k",
+    "etag": "Pws_iVB3643XFu5zuZnNyLkxdXs",
     "id": "rGspkFASp8k",
     "snippet": {
       "publishedAt": "2026-04-29T14:45:07Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "What If Superintelligence is Social Instead of Singular?",
-      "description": "The future of AI is social, not singular, and getting this frame wrong will lead to fragile systems and failed governance.\n\nThe idea of a single, superintelligent mind bootstrapping itself to godlike power is an attractive story, but it's almost certainly wrong. This video argues that the next intelligence explosion isn't about one single super AI, but trillions of them, and why it has already started. \n\nThis video covers: \n\n→ Why major leaps in intelligence, both human and artificial, are always social.\n\n → How advanced LLMs create internal 'societies of thought' to improve reasoning. \n\n→ A new framework for AI alignment based on institutional design, not individual correction. \n\n→ How to shift from building bigger models to designing richer, multi-agent AI systems.\n\nThis video is for software engineers, AI researchers, and tech leaders who want to move beyond the hype and understand the architectural and governance shifts required to build the next generation of robust AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Introduction\n1:24 The Social Blueprint of Intelligence\n3:22 The Society Inside the Machine\n5:25 From Bigger Models to Richer Societies\n5:30 Takeaway: A New Paradigm for AI Design\n\n#ArtificialIntelligence #AISingularity #LLM #AIExplained #SoftwareEngineering #AIGovernance #MultiAgentSystems #DeepLearning #FutureOfAI",
+      "title": "AI Superintelligence: Social or Singular?",
+      "description": "The future of AI is social, not singular, and getting this frame wrong will lead to fragile systems and failed governance.\n\nThe idea of a single, superintelligent mind bootstrapping itself to godlike power is an attractive story, but it's almost certainly wrong. This video argues that the next intelligence explosion isn't about one single super AI, but trillions of them, and why it has already started. \n\nThis video covers: \n→ Why major leaps in intelligence, both human and artificial, are always social.\n→ How advanced LLMs create internal 'societies of thought' to improve reasoning. \n→ A new framework for AI alignment based on institutional design, not individual correction. \n→ How to shift from building bigger models to designing richer, multi-agent AI systems.\n\nThis video is for software engineers, AI researchers, and tech leaders who want to move beyond the hype and understand the architectural and governance shifts required to build the next generation of robust AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Introduction\n1:24 The Social Blueprint of Intelligence\n3:22 The Society Inside the Machine\n5:25 From Bigger Models to Richer Societies\n5:30 Takeaway: A New Paradigm for AI Design\n\n#ArtificialIntelligence #AISingularity #LLM #AIExplained #SoftwareEngineering #AIGovernance #MultiAgentSystems #DeepLearning #FutureOfAI",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/rGspkFASp8k/default.jpg",
@@ -654,8 +730,8 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "What If Superintelligence is Social Instead of Singular?",
-        "description": "The future of AI is social, not singular, and getting this frame wrong will lead to fragile systems and failed governance.\n\nThe idea of a single, superintelligent mind bootstrapping itself to godlike power is an attractive story, but it's almost certainly wrong. This video argues that the next intelligence explosion isn't about one single super AI, but trillions of them, and why it has already started. \n\nThis video covers: \n\n→ Why major leaps in intelligence, both human and artificial, are always social.\n\n → How advanced LLMs create internal 'societies of thought' to improve reasoning. \n\n→ A new framework for AI alignment based on institutional design, not individual correction. \n\n→ How to shift from building bigger models to designing richer, multi-agent AI systems.\n\nThis video is for software engineers, AI researchers, and tech leaders who want to move beyond the hype and understand the architectural and governance shifts required to build the next generation of robust AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Introduction\n1:24 The Social Blueprint of Intelligence\n3:22 The Society Inside the Machine\n5:25 From Bigger Models to Richer Societies\n5:30 Takeaway: A New Paradigm for AI Design\n\n#ArtificialIntelligence #AISingularity #LLM #AIExplained #SoftwareEngineering #AIGovernance #MultiAgentSystems #DeepLearning #FutureOfAI"
+        "title": "AI Superintelligence: Social or Singular?",
+        "description": "The future of AI is social, not singular, and getting this frame wrong will lead to fragile systems and failed governance.\n\nThe idea of a single, superintelligent mind bootstrapping itself to godlike power is an attractive story, but it's almost certainly wrong. This video argues that the next intelligence explosion isn't about one single super AI, but trillions of them, and why it has already started. \n\nThis video covers: \n→ Why major leaps in intelligence, both human and artificial, are always social.\n→ How advanced LLMs create internal 'societies of thought' to improve reasoning. \n→ A new framework for AI alignment based on institutional design, not individual correction. \n→ How to shift from building bigger models to designing richer, multi-agent AI systems.\n\nThis video is for software engineers, AI researchers, and tech leaders who want to move beyond the hype and understand the architectural and governance shifts required to build the next generation of robust AI systems.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Introduction\n1:24 The Social Blueprint of Intelligence\n3:22 The Society Inside the Machine\n5:25 From Bigger Models to Richer Societies\n5:30 Takeaway: A New Paradigm for AI Design\n\n#ArtificialIntelligence #AISingularity #LLM #AIExplained #SoftwareEngineering #AIGovernance #MultiAgentSystems #DeepLearning #FutureOfAI"
       },
       "defaultAudioLanguage": "en"
     },
@@ -669,7 +745,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "38",
+      "viewCount": "39",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -767,7 +843,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "decqzSf_AAdOz9cV8fzxdo78wpA",
+    "etag": "bHRfVuJC74jt7-xa8TkbFUARzJY",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -838,7 +914,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "896",
+      "viewCount": "897",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "9"
@@ -846,13 +922,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YGQLDTyRLjFslRsG2IPeLjeNCoM",
+    "etag": "M1BdbO9mnLNh-_zdfDYYG8o2SoY",
     "id": "Avngm8d2X6I",
     "snippet": {
       "publishedAt": "2026-04-14T22:00:00Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "We Are All Probabilistic in the End",
-      "description": "Learn the essential mental model for software engineering with AI, moving beyond prompt engineering to fix why your Large Language Model assistant fails.\n\nWhen your AI assistant produces frustrating or unexpected code, the problem isn't just the prompt. We are using a mental model for a predictable compiler to manage a probabilistic teammate. This fundamental mismatch guarantees failure and burnout. Shifting your perspective can turn your AI collaborator into a powerful asset and even improve your human team's workflow by forcing you to create better systems.\n\nThis video covers: \n❶ Why the 'unreliable coworker' feeling you get from AI is actually a mental model problem. \n❷ How curating context is the key job to make an LLM effective, and why it's a gift to your human engineers. \n❸ The three critical differences between an LLM and a human (memory, judgment, and responsibility) that you cannot ignore. \n❹ The proven engineering practices that turn AI from a frustrating mess into a powerful collaborator.\n\nThis video is for software developers, engineers, and tech leaders who are frustrated by the inconsistent or unreliable results from AI coding tools. If you want a practical framework to make AI assistants genuinely useful, this is for you.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype:  https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:43 The Unreliable Coworker Analogy\n2:59 Context Is Everything\n5:26 Where the Analogy Breaks\n7:42 The Effective Fix\n10:46 Takeaway\n\n#AIEngineering #LLM #SoftwareEngineering #AIassistant #MentalModel #DeveloperTools #CodingWithAI #AIStrategy",
+      "title": "LLMs are Probabilistic Coworkers, not Deterministic Compilers",
+      "description": "When your AI assistant produces frustrating or unexpected code, the problem isn't just the prompt. We are using a mental model for a predictable compiler to manage a probabilistic teammate. This fundamental mismatch guarantees failure and burnout. Shifting your perspective can turn your AI collaborator into a powerful asset and even improve your human team's workflow by forcing you to create better systems.\n\nThis video covers: \n❶ Why the 'unreliable coworker' feeling you get from AI is actually a mental model problem. \n❷ How curating context is the key job to make an LLM effective, and why it's a gift to your human engineers. \n❸ The three critical differences between an LLM and a human (memory, judgment, and responsibility) that you cannot ignore. \n❹ The proven engineering practices that turn AI from a frustrating mess into a powerful collaborator.\n\nThis video is for software developers, engineers, and tech leaders who are frustrated by the inconsistent or unreliable results from AI coding tools. If you want a practical framework to make AI assistants genuinely useful, this is for you.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype:  https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:43 The Unreliable Coworker Analogy\n2:59 Context Is Everything\n5:26 Where the Analogy Breaks\n7:42 The Effective Fix\n10:46 Takeaway\n\n#AIEngineering #LLM #SoftwareEngineering #AIassistant #MentalModel #DeveloperTools #CodingWithAI #AIStrategy",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/Avngm8d2X6I/default.jpg",
@@ -901,8 +977,8 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "We Are All Probabilistic in the End",
-        "description": "Learn the essential mental model for software engineering with AI, moving beyond prompt engineering to fix why your Large Language Model assistant fails.\n\nWhen your AI assistant produces frustrating or unexpected code, the problem isn't just the prompt. We are using a mental model for a predictable compiler to manage a probabilistic teammate. This fundamental mismatch guarantees failure and burnout. Shifting your perspective can turn your AI collaborator into a powerful asset and even improve your human team's workflow by forcing you to create better systems.\n\nThis video covers: \n❶ Why the 'unreliable coworker' feeling you get from AI is actually a mental model problem. \n❷ How curating context is the key job to make an LLM effective, and why it's a gift to your human engineers. \n❸ The three critical differences between an LLM and a human (memory, judgment, and responsibility) that you cannot ignore. \n❹ The proven engineering practices that turn AI from a frustrating mess into a powerful collaborator.\n\nThis video is for software developers, engineers, and tech leaders who are frustrated by the inconsistent or unreliable results from AI coding tools. If you want a practical framework to make AI assistants genuinely useful, this is for you.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype:  https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:43 The Unreliable Coworker Analogy\n2:59 Context Is Everything\n5:26 Where the Analogy Breaks\n7:42 The Effective Fix\n10:46 Takeaway\n\n#AIEngineering #LLM #SoftwareEngineering #AIassistant #MentalModel #DeveloperTools #CodingWithAI #AIStrategy"
+        "title": "LLMs are Probabilistic Coworkers, not Deterministic Compilers",
+        "description": "When your AI assistant produces frustrating or unexpected code, the problem isn't just the prompt. We are using a mental model for a predictable compiler to manage a probabilistic teammate. This fundamental mismatch guarantees failure and burnout. Shifting your perspective can turn your AI collaborator into a powerful asset and even improve your human team's workflow by forcing you to create better systems.\n\nThis video covers: \n❶ Why the 'unreliable coworker' feeling you get from AI is actually a mental model problem. \n❷ How curating context is the key job to make an LLM effective, and why it's a gift to your human engineers. \n❸ The three critical differences between an LLM and a human (memory, judgment, and responsibility) that you cannot ignore. \n❹ The proven engineering practices that turn AI from a frustrating mess into a powerful collaborator.\n\nThis video is for software developers, engineers, and tech leaders who are frustrated by the inconsistent or unreliable results from AI coding tools. If you want a practical framework to make AI assistants genuinely useful, this is for you.\n\n▶ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype:  https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:43 The Unreliable Coworker Analogy\n2:59 Context Is Everything\n5:26 Where the Analogy Breaks\n7:42 The Effective Fix\n10:46 Takeaway\n\n#AIEngineering #LLM #SoftwareEngineering #AIassistant #MentalModel #DeveloperTools #CodingWithAI #AIStrategy"
       },
       "defaultAudioLanguage": "en"
     },
@@ -1010,7 +1086,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "AEnhUndZyPAF_hotib5AaYYGchY",
+    "etag": "pm07Ku8WUR1jLbUmonk59pDhmzU",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -1079,7 +1155,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "306",
+      "viewCount": "317",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -1087,7 +1163,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "MLgJrHRdAuoXdX6O5PCj7mEBz7c",
+    "etag": "gEqERJNmNZ4ZhFsvVqcsLXD5cIw",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -1155,7 +1231,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "777",
+      "viewCount": "794",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1163,7 +1239,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "oBTvpSyzC4qWH5EJxE-qgU02Tz8",
+    "etag": "esfoQaE5RQIexzaLrJSuJff3bSo",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -1238,7 +1314,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "253",
+      "viewCount": "258",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1323,7 +1399,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ftYzwI_IdPnunMhnuBWS1dpCbdw",
+    "etag": "XndDMhv6sGKKbWGbByQ2o4d3gTo",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -1391,7 +1467,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "121",
+      "viewCount": "124",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1399,7 +1475,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Eu_GA2jea3ZNSCi0c-PL6gnluWE",
+    "etag": "6jZGk8EnZOx0b66IRQNyykoYkm0",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -1481,7 +1557,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "253",
+      "viewCount": "254",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "11"
@@ -1489,7 +1565,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "wJ4yiiE2cGMap8yW5KP8Bw8x6zA",
+    "etag": "Hd_iyxmNekkbMbYRPyAsqN5uOQU",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -1569,8 +1645,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "4562",
-      "likeCount": "93",
+      "viewCount": "4587",
+      "likeCount": "95",
       "favoriteCount": "0",
       "commentCount": "13"
     }
@@ -1840,7 +1916,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "RQ3tzmvcCJVRyUdw7dW-Lkui4Oc",
+    "etag": "oqfs8XKk63Tga4gr_KCKU8z6LYg",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -1919,7 +1995,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1027",
+      "viewCount": "1031",
       "likeCount": "40",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -2016,7 +2092,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Wl9A-jXEicazAi9NI63GDa9IfFg",
+    "etag": "FkW3C3YITaz91_3apDQTBmpWZWc",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -2097,7 +2173,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "233",
+      "viewCount": "234",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -2105,7 +2181,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "boG9eduGtBR1O59WYXfWwyl7dE8",
+    "etag": "JqJRLVAYAY5Sg5JDcuFTjDs-8cM",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -2180,7 +2256,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2776",
+      "viewCount": "2791",
       "likeCount": "118",
       "favoriteCount": "0",
       "commentCount": "29"
@@ -2281,7 +2357,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6rjdQEPCB8cMJnhQDUDRpQ2ebMs",
+    "etag": "pvtqq_BkFL70hXg5tIRGYg4DfEQ",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -2356,7 +2432,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "288",
+      "viewCount": "289",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -2920,7 +2996,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "a06Py0R-OKTBIzFbUBULk3X0R8U",
+    "etag": "WMHV2kYyj6AYrETh57HetvxvEtM",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -2982,7 +3058,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1030",
+      "viewCount": "1037",
       "likeCount": "64",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -2990,7 +3066,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "0xfbtGA4Fg-qtC9o66DEU4OwZT0",
+    "etag": "KwQawDV_Rmw-EsuRrdzsbLTAvjM",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -3044,7 +3120,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "271",
+      "viewCount": "273",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3052,7 +3128,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "VNqnMmC9ZXKxWV5RlamEfxDaVGE",
+    "etag": "XVSv_Ctn3Vv8heB9ZDxDIFLcYtE",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -3106,7 +3182,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1102",
+      "viewCount": "1108",
       "likeCount": "38",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3183,7 +3259,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "vsGWGAzbxjkDRUomzJhWYrOzELc",
+    "etag": "QKrnKtESw6pStWYtZJ9pNyWJalE",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -3242,7 +3318,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "190",
+      "viewCount": "191",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -3311,7 +3387,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "1ljsUBizdtSpzm0Sy3UnaDF9byY",
+    "etag": "lWp709IQrSUpWjF_-RPtcVAICLQ",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -3365,7 +3441,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "208",
+      "viewCount": "210",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
