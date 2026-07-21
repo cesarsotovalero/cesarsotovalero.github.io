@@ -30,7 +30,7 @@ offers:
     booking_url: "https://cal.com/cesarsotovalero/mock-interview"
 
   - key: "career-advice"
-    title: "Career Advice"
+    title: "Career Guidance"
     duration: "45 minutes"
     price: "EUR 79"
     description: "Have a specific decision, blocker, or dilemma? Get a focused answer and walk away knowing what to do next."
@@ -38,7 +38,7 @@ offers:
       - "Should I accept this offer? Should I switch fields? How do I negotiate?"
       - "LinkedIn/Resume review with actionable edits"
       - "Practical recommendations you can implement today"
-    cta_label: "Book career advice"
+    cta_label: "Book career guidance"
     booking_url: "https://cal.com/cesarsotovalero/career-advice"
 
 testimonials:
