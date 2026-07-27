@@ -1,13 +1,87 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "RKbEcKcQtYvZNgZ2idLuOZg-OcA",
+    "etag": "pBUn158Ku5CAAYTOBuxPuiyEGEo",
+    "id": "NVpm5I2KSRE",
+    "snippet": {
+      "publishedAt": "2026-07-25T16:13:47Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "The Last Invention We'll Ever Need to Make",
+      "description": "Most technology degrades over time, but a new form of AI is being developed that does the opposite: it improves itself. This process, called Recursive Self-Improvement (RSI), allows an AI to rewrite its own code and accelerate its own development, a concept that could be the most important in technology today.\n\nThis video covers:\n→ What Recursive Self-Improvement (RSI) is and the simple breakthrough that made it possible.\n→ The \"breakeven point\": how we measure an AI's ability to improve itself with less human help.\n→ \"Ignition\": the critical moment an AI can produce a successor more capable than itself.\n→ Why RSI creates a new kind of history, running at the speed of compute, not human institutions.\n\nThis video is for anyone curious about the future of artificial intelligence who wants to understand the fundamental concepts that will drive the next wave of progress, beyond the surface-level hype.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀\n- https://en.wikipedia.org/wiki/Recursive_self-improvement\n- https://deepfa.ir/en/blog/self-improving-ai-models\n- https://www.mindstudio.ai/blog/what-is-recursive-self-improvement-ai-anthropic-rsi-report\n- https://thenextweb.com/news/anthropic-claude-recursive-self-improvement-code\n\n0:00 Introduction\n01:22 Recursive Self-Improvement (RSI)\n03:28 The Breakeven Point\n05:40 The Ignition of RSI\n07:38 A New Kind of History\n09:54 Key Takeaways\n\n#RecursiveSelfImprovement #AI #ArtificialIntelligence #TechExplained #AGI #MachineLearning #IntelligenceExplosion #FutureOfAI",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/NVpm5I2KSRE/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/NVpm5I2KSRE/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/NVpm5I2KSRE/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/NVpm5I2KSRE/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/NVpm5I2KSRE/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "Recursive Self-Improvement",
+        "RSI",
+        "Artificial Intelligence",
+        "AI Explained",
+        "Intelligence Explosion",
+        "Self-Improving AI",
+        "AGI",
+        "Future of AI",
+        "Andrej Karpathy",
+        "Machine Learning"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "The Last Invention We'll Ever Need to Make",
+        "description": "Most technology degrades over time, but a new form of AI is being developed that does the opposite: it improves itself. This process, called Recursive Self-Improvement (RSI), allows an AI to rewrite its own code and accelerate its own development, a concept that could be the most important in technology today.\n\nThis video covers:\n→ What Recursive Self-Improvement (RSI) is and the simple breakthrough that made it possible.\n→ The \"breakeven point\": how we measure an AI's ability to improve itself with less human help.\n→ \"Ignition\": the critical moment an AI can produce a successor more capable than itself.\n→ Why RSI creates a new kind of history, running at the speed of compute, not human institutions.\n\nThis video is for anyone curious about the future of artificial intelligence who wants to understand the fundamental concepts that will drive the next wave of progress, beyond the surface-level hype.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀\n- https://en.wikipedia.org/wiki/Recursive_self-improvement\n- https://deepfa.ir/en/blog/self-improving-ai-models\n- https://www.mindstudio.ai/blog/what-is-recursive-self-improvement-ai-anthropic-rsi-report\n- https://thenextweb.com/news/anthropic-claude-recursive-self-improvement-code\n\n0:00 Introduction\n01:22 Recursive Self-Improvement (RSI)\n03:28 The Breakeven Point\n05:40 The Ignition of RSI\n07:38 A New Kind of History\n09:54 Key Takeaways\n\n#RecursiveSelfImprovement #AI #ArtificialIntelligence #TechExplained #AGI #MachineLearning #IntelligenceExplosion #FutureOfAI"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT11M24S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "87",
+      "likeCount": "5",
+      "favoriteCount": "0",
+      "commentCount": "6"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "j9CAmyp2UDR3Bx1cn07hab99Qj4",
     "id": "-322bwe4oNQ",
     "snippet": {
       "publishedAt": "2026-07-19T12:16:28Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "AI Superforecasters: Auditable Alpha or Pure Hype?",
-      "description": "AI superforecasters are revolutionizing financial markets with structured prediction models. They are already operating in high-stakes environments. Operating AI superforecasters isn't about asking a chatbot for stock tips; it's a far more structured and powerful approach to prediction.\n\nThis video covers:\n→ What an AI Superforecaster is (and how it differs from a simple chatbot).\n→ A real-world example: forecasting the winner of the 2026 FIFA World Cup.\n→ The promise of \"auditable alpha\" for financial and prediction markets.\n→ The hidden perils of automation bias and systemic risk from AI monoculture.\n\nThis video is for software developers, data scientists, and financial executives who need to understand the capabilities and risks of structured AI reasoning systems for high-stakes decision-making.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀:\n• Original Post by Astral Codex Ten: https://www.astralcodexten.com/p/the-ai-superforecasters-are-here\n• https://en.wikipedia.org/wiki/Superforecaster\n• https://en.wikipedia.org/wiki/Nate_Silver\n\n00:00 Intro\n02:09 What is an AI Superforecaster?\n05:40 Forecasting the 2026 FIFA World Cup\n09:18 The Promise: Auditable Alpha\n10:47 Hidden Risks of Automated Reason\n13:17 Takeaway\n\n#AISuperforecasting #ArtificialIntelligence #MachineLearning #Finance #StockMarket #Prediction #RiskManagement #AIExplained",
+      "description": "AI superforecasters are revolutionizing financial markets with structured prediction models. They are already operating in high-stakes environments. Operating AI superforecasters isn't about asking a chatbot for stock tips; it's a far more structured and powerful approach to prediction.\n\nThis video covers:\n→ What an AI Superforecaster is (and how it differs from a simple chatbot).\n→ A real-world example: forecasting the winner of the 2026 FIFA World Cup.\n→ The promise of \"auditable alpha\" for financial and prediction markets.\n→ The hidden perils of automation bias and systemic risk from AI monoculture.\n\nThis video is for software developers, data scientists, and financial executives who need to understand the capabilities and risks of structured AI reasoning systems for high-stakes decision-making.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀:\n• Inspirational Post by Astral Codex Ten: https://www.astralcodexten.com/p/the-ai-superforecasters-are-here\n• https://en.wikipedia.org/wiki/Superforecaster\n• https://en.wikipedia.org/wiki/Nate_Silver\n\n00:00 Intro\n02:09 What is an AI Superforecaster?\n05:40 Forecasting the 2026 FIFA World Cup\n09:18 The Promise: Auditable Alpha\n10:47 Hidden Risks of Automated Reason\n13:17 Takeaway\n\n#AISuperforecasting #ArtificialIntelligence #MachineLearning #Finance #StockMarket #Prediction #RiskManagement #AIExplained",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/-322bwe4oNQ/default.jpg",
@@ -55,7 +129,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "AI Superforecasters: Auditable Alpha or Pure Hype?",
-        "description": "AI superforecasters are revolutionizing financial markets with structured prediction models. They are already operating in high-stakes environments. Operating AI superforecasters isn't about asking a chatbot for stock tips; it's a far more structured and powerful approach to prediction.\n\nThis video covers:\n→ What an AI Superforecaster is (and how it differs from a simple chatbot).\n→ A real-world example: forecasting the winner of the 2026 FIFA World Cup.\n→ The promise of \"auditable alpha\" for financial and prediction markets.\n→ The hidden perils of automation bias and systemic risk from AI monoculture.\n\nThis video is for software developers, data scientists, and financial executives who need to understand the capabilities and risks of structured AI reasoning systems for high-stakes decision-making.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀:\n• Original Post by Astral Codex Ten: https://www.astralcodexten.com/p/the-ai-superforecasters-are-here\n• https://en.wikipedia.org/wiki/Superforecaster\n• https://en.wikipedia.org/wiki/Nate_Silver\n\n00:00 Intro\n02:09 What is an AI Superforecaster?\n05:40 Forecasting the 2026 FIFA World Cup\n09:18 The Promise: Auditable Alpha\n10:47 Hidden Risks of Automated Reason\n13:17 Takeaway\n\n#AISuperforecasting #ArtificialIntelligence #MachineLearning #Finance #StockMarket #Prediction #RiskManagement #AIExplained"
+        "description": "AI superforecasters are revolutionizing financial markets with structured prediction models. They are already operating in high-stakes environments. Operating AI superforecasters isn't about asking a chatbot for stock tips; it's a far more structured and powerful approach to prediction.\n\nThis video covers:\n→ What an AI Superforecaster is (and how it differs from a simple chatbot).\n→ A real-world example: forecasting the winner of the 2026 FIFA World Cup.\n→ The promise of \"auditable alpha\" for financial and prediction markets.\n→ The hidden perils of automation bias and systemic risk from AI monoculture.\n\nThis video is for software developers, data scientists, and financial executives who need to understand the capabilities and risks of structured AI reasoning systems for high-stakes decision-making.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀:\n• Inspirational Post by Astral Codex Ten: https://www.astralcodexten.com/p/the-ai-superforecasters-are-here\n• https://en.wikipedia.org/wiki/Superforecaster\n• https://en.wikipedia.org/wiki/Nate_Silver\n\n00:00 Intro\n02:09 What is an AI Superforecaster?\n05:40 Forecasting the 2026 FIFA World Cup\n09:18 The Promise: Auditable Alpha\n10:47 Hidden Risks of Automated Reason\n13:17 Takeaway\n\n#AISuperforecasting #ArtificialIntelligence #MachineLearning #Finance #StockMarket #Prediction #RiskManagement #AIExplained"
       },
       "defaultAudioLanguage": "en"
     },
@@ -69,15 +143,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "21",
-      "likeCount": "2",
+      "viewCount": "120",
+      "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "vWcXm1SNQktKsuULBD8xp1YrlIA",
+    "etag": "F2DvMKYdwGB92p1iGh8tkZIsG28",
     "id": "oXu4iAhuM04",
     "snippet": {
       "publishedAt": "2026-07-09T17:30:19Z",
@@ -145,7 +219,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "88",
+      "viewCount": "114",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -153,7 +227,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "JsSDwLWvYuBzbuWWKBu_WtqA0Qg",
+    "etag": "iZaCKyMo-qcjfCBqEpdQ0uYiZ1E",
     "id": "t9pFgvFLxV0",
     "snippet": {
       "publishedAt": "2026-07-03T15:00:39Z",
@@ -221,15 +295,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "89",
-      "likeCount": "1",
+      "viewCount": "99",
+      "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "5"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "2GYmkgwAO3nqTSNA9PC_5y11USw",
+    "etag": "i2xNrycVrQpyqX-OIaNrtlxNNqo",
     "id": "Wq4VX-9wzFo",
     "snippet": {
       "publishedAt": "2026-06-24T15:20:15Z",
@@ -299,15 +373,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "109",
-      "likeCount": "4",
+      "viewCount": "129",
+      "likeCount": "5",
       "favoriteCount": "0",
       "commentCount": "2"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "sbOibIkcqb_lyEopKnQ7z0pPMhg",
+    "etag": "8jrzA4RG2VwenVZaqmIX7d9SUnM",
     "id": "oLu-KGJ_x0E",
     "snippet": {
       "publishedAt": "2026-06-20T08:30:46Z",
@@ -376,7 +450,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "184",
+      "viewCount": "200",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -384,7 +458,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "_0n4ell8qsi4-wAvC97j9k-cz0c",
+    "etag": "yZhKjrCu3VwiyMTdv5rP9-eu60A",
     "id": "Ikk2f0gEPuY",
     "snippet": {
       "publishedAt": "2026-06-06T19:11:28Z",
@@ -453,7 +527,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "136",
+      "viewCount": "138",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -461,7 +535,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "GhCGakGgO9uk-ugIeQgNBw8iuNI",
+    "etag": "hnIK_Trkb9pJMmWFI-BxMUPiC84",
     "id": "VO5gC3RakSk",
     "snippet": {
       "publishedAt": "2026-05-24T14:46:16Z",
@@ -515,7 +589,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "91",
+      "viewCount": "98",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -523,7 +597,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nyl4kyKXTfMHyyoNvHFaJi1q-iI",
+    "etag": "tT6GJTqeEDOEa86ES2wicgAwFas",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
@@ -592,7 +666,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "83",
+      "viewCount": "84",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -600,7 +674,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nqLgYcCQ3IptF4dc6ZkkOHbfNYw",
+    "etag": "tnSp2JFQ8CNS4zUsJ1ScjIxce38",
     "id": "ntRd1BOQO9Q",
     "snippet": {
       "publishedAt": "2026-05-08T16:52:33Z",
@@ -668,15 +742,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "76",
-      "likeCount": "3",
+      "viewCount": "77",
+      "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "2"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "Pws_iVB3643XFu5zuZnNyLkxdXs",
+    "etag": "22_KWs_kXOMmBT5PbfRcfV8RTXk",
     "id": "rGspkFASp8k",
     "snippet": {
       "publishedAt": "2026-04-29T14:45:07Z",
@@ -745,7 +819,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "39",
+      "viewCount": "40",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -843,7 +917,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "bHRfVuJC74jt7-xa8TkbFUARzJY",
+    "etag": "8TKfjItp3Wq1i2Hc9dLgpz3cHJA",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -914,7 +988,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "897",
+      "viewCount": "900",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "9"
@@ -922,7 +996,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "M1BdbO9mnLNh-_zdfDYYG8o2SoY",
+    "etag": "hGpWfCKwR9WRKk9XpKw8g5U3P9s",
     "id": "Avngm8d2X6I",
     "snippet": {
       "publishedAt": "2026-04-14T22:00:00Z",
@@ -992,7 +1066,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "54",
+      "viewCount": "55",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1000,7 +1074,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Q1Jgygf-4lELo987_hU3qCA8zy8",
+    "etag": "YaAHlXnCOkE9pLh4kNrJXnpufXI",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -1078,7 +1152,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "262",
+      "viewCount": "264",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1086,7 +1160,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "pm07Ku8WUR1jLbUmonk59pDhmzU",
+    "etag": "D8cts6wLoR0HiR1g3x54UQGjW2w",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -1155,7 +1229,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "317",
+      "viewCount": "324",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -1163,7 +1237,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "gEqERJNmNZ4ZhFsvVqcsLXD5cIw",
+    "etag": "YJGRb1kEzjGo8j0RuVKBo7hx5RE",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -1231,7 +1305,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "794",
+      "viewCount": "819",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1239,7 +1313,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "esfoQaE5RQIexzaLrJSuJff3bSo",
+    "etag": "17yZwqUruIINSQNXPSWBMvzXzHg",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -1314,7 +1388,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "258",
+      "viewCount": "265",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1399,7 +1473,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "XndDMhv6sGKKbWGbByQ2o4d3gTo",
+    "etag": "j0UKZJratgDEg07nyM5BN2LuSXE",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -1467,7 +1541,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "124",
+      "viewCount": "125",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1475,7 +1549,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6jZGk8EnZOx0b66IRQNyykoYkm0",
+    "etag": "5_M7-2gX-qgqORzOYoEXHHxOnls",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -1557,7 +1631,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "254",
+      "viewCount": "260",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "11"
@@ -1565,7 +1639,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Hd_iyxmNekkbMbYRPyAsqN5uOQU",
+    "etag": "ePE6gQCC-j9afR2VqV7To5M8rQ8",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -1645,8 +1719,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "4587",
-      "likeCount": "95",
+      "viewCount": "4631",
+      "likeCount": "97",
       "favoriteCount": "0",
       "commentCount": "13"
     }
@@ -1740,7 +1814,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Itcw5roUqzZASQqfQOwTp6MBye8",
+    "etag": "Y9SENa1qpL2LUuirYA0OFmgHtFA",
     "id": "pHqoIPAlOcw",
     "snippet": {
       "publishedAt": "2026-01-08T09:44:25Z",
@@ -1818,7 +1892,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "154",
+      "viewCount": "155",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1826,7 +1900,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "pOCz6uk9_fwme8pUcVA3SyIy718",
+    "etag": "umeCJzA8F78Kex6Or-pDYoXfPy4",
     "id": "-a6Pbv_yBWw",
     "snippet": {
       "publishedAt": "2025-11-29T07:55:26Z",
@@ -1908,7 +1982,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "288",
+      "viewCount": "289",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1916,7 +1990,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "oqfs8XKk63Tga4gr_KCKU8z6LYg",
+    "etag": "gi4mJUZM1JZ2RIis9epZL96XpDY",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -1995,7 +2069,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1031",
+      "viewCount": "1039",
       "likeCount": "40",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -2003,7 +2077,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "QY64_Pe6I9EOqVDao5-Ju3tOFjY",
+    "etag": "mvmkEropDPGMlEuF18Avpzam7UU",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
@@ -2084,7 +2158,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "224",
+      "viewCount": "225",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2181,7 +2255,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "JqJRLVAYAY5Sg5JDcuFTjDs-8cM",
+    "etag": "qMMXKYUB8V3J00kbSdbnW9DIxP8",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -2256,7 +2330,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2791",
+      "viewCount": "2828",
       "likeCount": "118",
       "favoriteCount": "0",
       "commentCount": "29"
@@ -2357,7 +2431,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "pvtqq_BkFL70hXg5tIRGYg4DfEQ",
+    "etag": "sAgsmiEzSmrfhnJA7Pfa-eqRe2Y",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -2432,7 +2506,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "289",
+      "viewCount": "291",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -2927,7 +3001,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6zycGsNdskbYF5FVOI8O1qIBuPA",
+    "etag": "eDRiuFm4Bs6wBHp_4g_AkZdVAZI",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -2989,14 +3063,14 @@
     },
     "statistics": {
       "viewCount": "12916",
-      "likeCount": "643",
+      "likeCount": "642",
       "favoriteCount": "0",
       "commentCount": "304"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "WMHV2kYyj6AYrETh57HetvxvEtM",
+    "etag": "eJXLS7ADPdeRqqLNyObsCozXWWY",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -3058,7 +3132,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1037",
+      "viewCount": "1045",
       "likeCount": "64",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -3066,7 +3140,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KwQawDV_Rmw-EsuRrdzsbLTAvjM",
+    "etag": "74saLSDTu-XYd-PuZetII2v0Ywk",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -3120,7 +3194,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "273",
+      "viewCount": "282",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3128,7 +3202,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "XVSv_Ctn3Vv8heB9ZDxDIFLcYtE",
+    "etag": "DHEaG8F1fptJIQfvW2CEK4tSDRg",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -3182,7 +3256,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1108",
+      "viewCount": "1126",
       "likeCount": "38",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3259,7 +3333,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "QKrnKtESw6pStWYtZJ9pNyWJalE",
+    "etag": "aD0YHrOay0RxrkSMzHRnCDh-qNg",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -3318,7 +3392,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "191",
+      "viewCount": "195",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -3653,7 +3727,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "kO9kQ9Ws5HOxDehxTlw-JMMuUCY",
+    "etag": "O7WIN7WoOhBZtckJLfJrfOmeXUE",
     "id": "3nptpGpaYws",
     "snippet": {
       "publishedAt": "2021-09-03T10:05:40Z",
@@ -3713,7 +3787,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "118",
+      "viewCount": "119",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "2"
