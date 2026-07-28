@@ -11,6 +11,7 @@ published: true
 
 Since 2017, I've peer-reviewed papers for the following journals:[^1]
 
+- [Springer Scientific Reports](https://www.nature.com/srep/), July 2026 [Recognition](../files/certificates/Reviewer%20Certificate%2028%20July%202026_Springer%20Scientific%20Reports.pdf)
 - [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), January 2026 [Recognition](../files/certificates/2026_Certificate_JSS_Recognised.pdf)
 - [Springer Software Quality Journal](https://link.springer.com/journal/11219), January 2026 [Recognition](../files/certificates/2026_Springer_Software_Quality_Jan.pdf)
 - [Springer Software Quality Journal](https://link.springer.com/journal/11219), July 2025 [Recognition](../files/certificates/2025_Springer_Software_Quality.pdf)
