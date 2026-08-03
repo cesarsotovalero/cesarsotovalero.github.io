@@ -1,12 +1,87 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "pBUn158Ku5CAAYTOBuxPuiyEGEo",
+    "etag": "YBbCE_iw-eyAyXtGnbmNNb-NMx4",
+    "id": "mZLdO8_Q2m8",
+    "snippet": {
+      "publishedAt": "2026-08-01T12:00:19Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "The Dawn of the AI Scientist",
+      "description": "What if an AI could not just answer our questions, but ask its own, design the experiments, and find the answers? This isn't science fiction. We're witnessing the dawn of the autonomous AI scientist, a system that represents a fundamental shift in how we discover new knowledge and accelerate progress.\n\nThis video covers:\n→ How a pipeline of specialized AI agents automates the research loop.\n→ The \"Experiment and Refine\" process using a tree search to code and debug.\n→ How an AI-generated paper was submitted to a conference and passed blind peer review.\n→ The concept of Recursive Self-Improvement and the risks of automated science.\n\nThis video is for anyone curious about the future of artificial intelligence and how it's moving beyond being a simple tool to become a collaborator in scientific discovery itself.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 ↓ \nhttps://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀:\n• https://www.nature.com/articles/s41586-026-10265-5\n• https://sakana.ai/ai-scientist-nature/\n• https://sakana.ai/ai-scientist-first-publication/\n• https://huggingface.co/papers/2504.08066\n• https://learnprompting.org/blog/ai-scientist-generates-its-first-peer-reviewed-scientific-publication\n\n0:00 Introduction\n2:05 The Automated Research Loop\n6:08 The Ultimate Test: Passing Peer Review\n8:35 The Future & Risks of AI-generated Science\n11:05 Key Takeaways\n\n#AIScientist #ArtificialIntelligence #ScientificMethod #Automation #Research #PeerReview #MachineLearning #FutureOfScience #AI",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/mZLdO8_Q2m8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/mZLdO8_Q2m8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/mZLdO8_Q2m8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/mZLdO8_Q2m8/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/mZLdO8_Q2m8/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "AI scientist",
+        "automated science",
+        "scientific discovery",
+        "peer review",
+        "AI research",
+        "machine learning",
+        "recursive self-improvement",
+        "AI ethics",
+        "future of science",
+        "AI agents",
+        "automated research"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "The Dawn of the AI Scientist",
+        "description": "What if an AI could not just answer our questions, but ask its own, design the experiments, and find the answers? This isn't science fiction. We're witnessing the dawn of the autonomous AI scientist, a system that represents a fundamental shift in how we discover new knowledge and accelerate progress.\n\nThis video covers:\n→ How a pipeline of specialized AI agents automates the research loop.\n→ The \"Experiment and Refine\" process using a tree search to code and debug.\n→ How an AI-generated paper was submitted to a conference and passed blind peer review.\n→ The concept of Recursive Self-Improvement and the risks of automated science.\n\nThis video is for anyone curious about the future of artificial intelligence and how it's moving beyond being a simple tool to become a collaborator in scientific discovery itself.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 ↓ \nhttps://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀:\n• https://www.nature.com/articles/s41586-026-10265-5\n• https://sakana.ai/ai-scientist-nature/\n• https://sakana.ai/ai-scientist-first-publication/\n• https://huggingface.co/papers/2504.08066\n• https://learnprompting.org/blog/ai-scientist-generates-its-first-peer-reviewed-scientific-publication\n\n0:00 Introduction\n2:05 The Automated Research Loop\n6:08 The Ultimate Test: Passing Peer Review\n8:35 The Future & Risks of AI-generated Science\n11:05 Key Takeaways\n\n#AIScientist #ArtificialIntelligence #ScientificMethod #Automation #Research #PeerReview #MachineLearning #FutureOfScience #AI"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT12M51S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "22",
+      "likeCount": "3",
+      "favoriteCount": "0",
+      "commentCount": "1"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "v7nRA89XKIVcXmz2Jp17s7pkj5M",
     "id": "NVpm5I2KSRE",
     "snippet": {
       "publishedAt": "2026-07-25T16:13:47Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The Last Invention We'll Ever Need to Make",
+      "title": "AI's Recursive Self-Improvement: The Last Invention We'll Ever Need to Make",
       "description": "Most technology degrades over time, but a new form of AI is being developed that does the opposite: it improves itself. This process, called Recursive Self-Improvement (RSI), allows an AI to rewrite its own code and accelerate its own development, a concept that could be the most important in technology today.\n\nThis video covers:\n→ What Recursive Self-Improvement (RSI) is and the simple breakthrough that made it possible.\n→ The \"breakeven point\": how we measure an AI's ability to improve itself with less human help.\n→ \"Ignition\": the critical moment an AI can produce a successor more capable than itself.\n→ Why RSI creates a new kind of history, running at the speed of compute, not human institutions.\n\nThis video is for anyone curious about the future of artificial intelligence who wants to understand the fundamental concepts that will drive the next wave of progress, beyond the surface-level hype.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀\n- https://en.wikipedia.org/wiki/Recursive_self-improvement\n- https://deepfa.ir/en/blog/self-improving-ai-models\n- https://www.mindstudio.ai/blog/what-is-recursive-self-improvement-ai-anthropic-rsi-report\n- https://thenextweb.com/news/anthropic-claude-recursive-self-improvement-code\n\n0:00 Introduction\n01:22 Recursive Self-Improvement (RSI)\n03:28 The Breakeven Point\n05:40 The Ignition of RSI\n07:38 A New Kind of History\n09:54 Key Takeaways\n\n#RecursiveSelfImprovement #AI #ArtificialIntelligence #TechExplained #AGI #MachineLearning #IntelligenceExplosion #FutureOfAI",
       "thumbnails": {
         "default": {
@@ -52,7 +127,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "The Last Invention We'll Ever Need to Make",
+        "title": "AI's Recursive Self-Improvement: The Last Invention We'll Ever Need to Make",
         "description": "Most technology degrades over time, but a new form of AI is being developed that does the opposite: it improves itself. This process, called Recursive Self-Improvement (RSI), allows an AI to rewrite its own code and accelerate its own development, a concept that could be the most important in technology today.\n\nThis video covers:\n→ What Recursive Self-Improvement (RSI) is and the simple breakthrough that made it possible.\n→ The \"breakeven point\": how we measure an AI's ability to improve itself with less human help.\n→ \"Ignition\": the critical moment an AI can produce a successor more capable than itself.\n→ Why RSI creates a new kind of history, running at the speed of compute, not human institutions.\n\nThis video is for anyone curious about the future of artificial intelligence who wants to understand the fundamental concepts that will drive the next wave of progress, beyond the surface-level hype.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀\n- https://en.wikipedia.org/wiki/Recursive_self-improvement\n- https://deepfa.ir/en/blog/self-improving-ai-models\n- https://www.mindstudio.ai/blog/what-is-recursive-self-improvement-ai-anthropic-rsi-report\n- https://thenextweb.com/news/anthropic-claude-recursive-self-improvement-code\n\n0:00 Introduction\n01:22 Recursive Self-Improvement (RSI)\n03:28 The Breakeven Point\n05:40 The Ignition of RSI\n07:38 A New Kind of History\n09:54 Key Takeaways\n\n#RecursiveSelfImprovement #AI #ArtificialIntelligence #TechExplained #AGI #MachineLearning #IntelligenceExplosion #FutureOfAI"
       },
       "defaultAudioLanguage": "en"
@@ -67,15 +142,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "87",
-      "likeCount": "5",
+      "viewCount": "135",
+      "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "6"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "j9CAmyp2UDR3Bx1cn07hab99Qj4",
+    "etag": "kYYKoinV0hJvIAI7jK0keQJHNjY",
     "id": "-322bwe4oNQ",
     "snippet": {
       "publishedAt": "2026-07-19T12:16:28Z",
@@ -143,7 +218,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "120",
+      "viewCount": "179",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -151,7 +226,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "F2DvMKYdwGB92p1iGh8tkZIsG28",
+    "etag": "N9C6KU03g0z5ft69PyJtlQ3XDb4",
     "id": "oXu4iAhuM04",
     "snippet": {
       "publishedAt": "2026-07-09T17:30:19Z",
@@ -219,7 +294,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "114",
+      "viewCount": "136",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -227,7 +302,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "iZaCKyMo-qcjfCBqEpdQ0uYiZ1E",
+    "etag": "lX5rU0K7sdQowLZ4Whn3V9Q8D60",
     "id": "t9pFgvFLxV0",
     "snippet": {
       "publishedAt": "2026-07-03T15:00:39Z",
@@ -295,15 +370,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "99",
-      "likeCount": "2",
+      "viewCount": "109",
+      "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "5"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "i2xNrycVrQpyqX-OIaNrtlxNNqo",
+    "etag": "DgfDCEVFWXBL3fQqMNcdX6Ler9s",
     "id": "Wq4VX-9wzFo",
     "snippet": {
       "publishedAt": "2026-06-24T15:20:15Z",
@@ -373,7 +448,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "129",
+      "viewCount": "132",
       "likeCount": "5",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -381,7 +456,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8jrzA4RG2VwenVZaqmIX7d9SUnM",
+    "etag": "co93b-GvMnwvSGZZrZd25QKdEX8",
     "id": "oLu-KGJ_x0E",
     "snippet": {
       "publishedAt": "2026-06-20T08:30:46Z",
@@ -450,7 +525,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "200",
+      "viewCount": "209",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -458,7 +533,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "yZhKjrCu3VwiyMTdv5rP9-eu60A",
+    "etag": "LyAsab0ipJmkTyYI97eyRJBJ-ro",
     "id": "Ikk2f0gEPuY",
     "snippet": {
       "publishedAt": "2026-06-06T19:11:28Z",
@@ -527,7 +602,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "138",
+      "viewCount": "141",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -535,7 +610,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "hnIK_Trkb9pJMmWFI-BxMUPiC84",
+    "etag": "K4Iy5pnUqkccjDXN7UCtxMS3wJs",
     "id": "VO5gC3RakSk",
     "snippet": {
       "publishedAt": "2026-05-24T14:46:16Z",
@@ -589,7 +664,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "98",
+      "viewCount": "115",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -597,7 +672,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "tT6GJTqeEDOEa86ES2wicgAwFas",
+    "etag": "otOSE37vDdfxzRbjzuf0VDi6FSI",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
@@ -666,7 +741,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "84",
+      "viewCount": "89",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -750,7 +825,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "22_KWs_kXOMmBT5PbfRcfV8RTXk",
+    "etag": "p91UVQef04tImpiw9oCE1lu6fkQ",
     "id": "rGspkFASp8k",
     "snippet": {
       "publishedAt": "2026-04-29T14:45:07Z",
@@ -827,7 +902,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "hjPfeF5halZWqaKZhxO720O96O8",
+    "etag": "YuYrCUPxEAHQfMN24U44DaFXfHE",
     "id": "AfaOvAXFCmg",
     "snippet": {
       "publishedAt": "2026-04-25T20:00:40Z",
@@ -909,7 +984,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "117",
+      "viewCount": "120",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -917,7 +992,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8TKfjItp3Wq1i2Hc9dLgpz3cHJA",
+    "etag": "Sbcdq_COf7dQyvpoIMYUvvO58rQ",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -988,7 +1063,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "900",
+      "viewCount": "904",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "9"
@@ -1074,7 +1149,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YaAHlXnCOkE9pLh4kNrJXnpufXI",
+    "etag": "woSVP8YEJ4RcaOTrOjkDmmyhSvA",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -1152,7 +1227,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "264",
+      "viewCount": "265",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1160,7 +1235,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "D8cts6wLoR0HiR1g3x54UQGjW2w",
+    "etag": "4hlF6IzmKfTBpg2atd4utOSNoag",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -1229,7 +1304,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "324",
+      "viewCount": "342",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -1237,7 +1312,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YJGRb1kEzjGo8j0RuVKBo7hx5RE",
+    "etag": "dC8k_Mt504YRr8jLjcsSZSeyXAM",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -1305,7 +1380,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "819",
+      "viewCount": "850",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1313,7 +1388,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "17yZwqUruIINSQNXPSWBMvzXzHg",
+    "etag": "hdEg2c1eVsTzegNnqKyECNBzHwo",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -1388,7 +1463,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "265",
+      "viewCount": "269",
       "likeCount": "14",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1549,7 +1624,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5_M7-2gX-qgqORzOYoEXHHxOnls",
+    "etag": "cIMDvXmZze2MxNMKgLObj8iXDmE",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -1631,7 +1706,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "260",
+      "viewCount": "261",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "11"
@@ -1639,7 +1714,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ePE6gQCC-j9afR2VqV7To5M8rQ8",
+    "etag": "9zN4oPcWuxzUt_ALHJfPrC9Y8kY",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -1719,15 +1794,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "4631",
-      "likeCount": "97",
+      "viewCount": "4759",
+      "likeCount": "100",
       "favoriteCount": "0",
       "commentCount": "13"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "HPHt2AV0ucDm491clFC7gyoptaw",
+    "etag": "z1IlsmH9NXRTP2FoM_JCwlGtLVM",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -1806,7 +1881,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "205",
+      "viewCount": "207",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -1990,7 +2065,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "gi4mJUZM1JZ2RIis9epZL96XpDY",
+    "etag": "0N-ItBXz9MY5Whfm8gW3hw9ibUQ",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -2069,7 +2144,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1039",
+      "viewCount": "1052",
       "likeCount": "40",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -2077,7 +2152,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "mvmkEropDPGMlEuF18Avpzam7UU",
+    "etag": "tjpZZd3Sv2dN0nmyRVyuqAqn1D8",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
@@ -2158,7 +2233,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "225",
+      "viewCount": "227",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2255,7 +2330,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qMMXKYUB8V3J00kbSdbnW9DIxP8",
+    "etag": "cnT3a8KD7O0UqjzdGsz0-Jk6jgU",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -2330,8 +2405,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2828",
-      "likeCount": "118",
+      "viewCount": "2861",
+      "likeCount": "120",
       "favoriteCount": "0",
       "commentCount": "29"
     }
@@ -2431,7 +2506,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "sAgsmiEzSmrfhnJA7Pfa-eqRe2Y",
+    "etag": "9vowiLpcWcttT85ku5sH_BGpvsc",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -2506,7 +2581,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "291",
+      "viewCount": "293",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -2846,7 +2921,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "X0q6REIWyK_rZzpygZpNK7eUnJY",
+    "etag": "8XLz-QQfkalO2jxinsYarnapjac",
     "id": "y0mztKEUwzw",
     "snippet": {
       "publishedAt": "2024-10-14T05:00:43Z",
@@ -2918,7 +2993,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "494",
+      "viewCount": "496",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -3070,7 +3145,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "eJXLS7ADPdeRqqLNyObsCozXWWY",
+    "etag": "EH4gIVvbwED8rOfxBtAWx9DWKuE",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -3132,15 +3207,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1045",
-      "likeCount": "64",
+      "viewCount": "1051",
+      "likeCount": "65",
       "favoriteCount": "0",
       "commentCount": "36"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "74saLSDTu-XYd-PuZetII2v0Ywk",
+    "etag": "zZKF1QLdxtvQ-gizCwIBy4wUlZU",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -3194,7 +3269,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "282",
+      "viewCount": "292",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3202,7 +3277,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "DHEaG8F1fptJIQfvW2CEK4tSDRg",
+    "etag": "N97bxdMFUHYynRkoskAFa68DolE",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -3256,7 +3331,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1126",
+      "viewCount": "1131",
       "likeCount": "38",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3264,7 +3339,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "wJuhyJsLX0252Z4YHvsMFFNMHuc",
+    "etag": "QoQ-kE83WUN2m1grRtLNalPJJ28",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -3325,7 +3400,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "447",
+      "viewCount": "448",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3333,7 +3408,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "aD0YHrOay0RxrkSMzHRnCDh-qNg",
+    "etag": "ZYsVVjLGf2CTxSlRCw5kJ2_d9BM",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -3392,7 +3467,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "195",
+      "viewCount": "197",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -3400,7 +3475,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "w2fbQm-BaUNX1hPUAnfLV16_v-Y",
+    "etag": "2A8KhZH8Sks759BUNnqZL5iL2Ws",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -3453,7 +3528,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "202",
+      "viewCount": "203",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -3592,7 +3667,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "bAxQY4Lff3qm4FOsuaIOOvvEcBY",
+    "etag": "Tq61Ip-oJ8BJOXLWDH9awLOm_nU",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -3652,7 +3727,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "446",
+      "viewCount": "447",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "1"
