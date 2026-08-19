@@ -87,7 +87,17 @@ jobs:
           git add files/CV/cesar-resume.pdf
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Update cesar-resume.pdf $(date -u +'%Y-%m-%d')"
-            git push
+            for i in 1 2 3; do
+              git pull --rebase origin "${GITHUB_REF_NAME}"
+              if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+                break
+              fi
+              if [ "$i" -eq 3 ]; then
+                echo "Failed to push after 3 attempts."
+                exit 1
+              fi
+              sleep 5
+            done
           else
             echo "No changes to commit."
           fi
