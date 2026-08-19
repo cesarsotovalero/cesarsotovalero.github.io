@@ -88,7 +88,10 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Update cesar-resume.pdf $(date -u +'%Y-%m-%d')"
             for i in 1 2 3; do
-              git pull --rebase origin "${GITHUB_REF_NAME}"
+              git pull --rebase origin "${GITHUB_REF_NAME}" || {
+                echo "Rebase failed. Aborting push."
+                exit 1
+              }
               if git push origin "HEAD:${GITHUB_REF_NAME}"; then
                 break
               fi
