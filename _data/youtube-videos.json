@@ -1,12 +1,149 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "ap1D3u7mH7b6OVJWOSDIuGzzt_k",
+    "etag": "fQPZbVyzKWRB3ptwfafw4LSZiFk",
+    "id": "OdJjEIthtzg",
+    "snippet": {
+      "publishedAt": "2026-08-21T22:00:09Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "DARK TOKENS: The Hidden Reason Inflating Your AI Subscription Bill",
+      "description": "Your AI agent bill is exploding, and it's not because of your prompts. Most of your AI bill is for tokens you never wrote, never read, and often cannot see. These \"dark tokens\" are are secretly inflating your LLM bill and can account for over 98% of your total cost, turning simple tasks into massive expenses. \n\nThis video covers:\n→ The three types of \"dark tokens\" that inflate your AI bill.\n→ How a simple bug fix can cost over 50,000 tokens.\n→ Why AI token costs scale quadratically, not linearly.\n→ How to find and measure these hidden costs yourself.\n\nThis video is for software developers and AI engineers who are struggling to understand and control the rapidly growing costs of LLMs and AI agents.\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲: Inspired by the original \"Dark Tokens\" post by Martin Monperrus: https://www.monperrus.net/martin/dark-tokens\n\n👇 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 (if you liked it) \nhttps://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n⏰ Timeline\n0:00 Intro\n1:20 Replay Tokens\n3:19 Scaffold & Reasoning Tokens\n5:50 Example: The 50,000 Token Bug Fix\n10:41 Conclusions\n\n#DarkTokens #AIEngineering #LLMCosts #Tokenomics #PromptEngineering #AI #LargeLanguageModels #SoftwareDevelopment",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/OdJjEIthtzg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/OdJjEIthtzg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/OdJjEIthtzg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/OdJjEIthtzg/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/OdJjEIthtzg/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "DARK TOKENS: The Hidden Reason Inflating Your AI Subscription Bill",
+        "description": "Your AI agent bill is exploding, and it's not because of your prompts. Most of your AI bill is for tokens you never wrote, never read, and often cannot see. These \"dark tokens\" are are secretly inflating your LLM bill and can account for over 98% of your total cost, turning simple tasks into massive expenses. \n\nThis video covers:\n→ The three types of \"dark tokens\" that inflate your AI bill.\n→ How a simple bug fix can cost over 50,000 tokens.\n→ Why AI token costs scale quadratically, not linearly.\n→ How to find and measure these hidden costs yourself.\n\nThis video is for software developers and AI engineers who are struggling to understand and control the rapidly growing costs of LLMs and AI agents.\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲: Inspired by the original \"Dark Tokens\" post by Martin Monperrus: https://www.monperrus.net/martin/dark-tokens\n\n👇 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 (if you liked it) \nhttps://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n⏰ Timeline\n0:00 Intro\n1:20 Replay Tokens\n3:19 Scaffold & Reasoning Tokens\n5:50 Example: The 50,000 Token Bug Fix\n10:41 Conclusions\n\n#DarkTokens #AIEngineering #LLMCosts #Tokenomics #PromptEngineering #AI #LargeLanguageModels #SoftwareDevelopment"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT13M13S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "109",
+      "likeCount": "6",
+      "favoriteCount": "0",
+      "commentCount": "3"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "dji_KpkEm_NFt4DdRf96vkgbtZM",
+    "id": "BvGnN4aQfA8",
+    "snippet": {
+      "publishedAt": "2026-08-17T16:28:39Z",
+      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
+      "title": "Why AI Makes YOU Faster And Your Company Slower",
+      "description": "Everyone feels faster with AI, yet team velocity stalls. This video is about this AI productivity paradox (i.e., the hidden cognitive tax imposed on teams when we optimize for individual output). The thing is that AI-generated code and documentation can create a \"cognitive Ponzi scheme,\" shifting the burden of verification and understanding from one writer to many reviewers, ultimately eroding trust and slowing down the entire development lifecycle.\n\nThis video covers:\n→ Why individual AI-driven speed doesn't translate to team velocity.\n→ The concept of a \"cognitive Ponzi scheme\" in software development.\n→ How AI-generated content creates a hidden tax on code reviewers.\n→ The one simple rule that ensures AI boosts, not hinders, your team.\n\nThis video is for software developers, AI engineers, and tech leads who are using AI tools to accelerate their work but sense that overall team progress is stagnating or even regressing.\n\n👇 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 (if you liked it) \nhttps://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n⏰ Timeline\n0:00 Intro\n1:25 The Productivity Illusion\n2:57 The Hidden Tax\n5:55 Understanding Is The Job\n7:03 Key Takeaways\n\n#AIProductivity #SoftwareEngineering #DeveloperVelocity #TeamProductivity #AIEthics #CodeReview #Programming #TechLeadership",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/BvGnN4aQfA8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/BvGnN4aQfA8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/BvGnN4aQfA8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/BvGnN4aQfA8/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/BvGnN4aQfA8/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "César Soto Valero",
+      "tags": [
+        "AI productivity",
+        "developer productivity",
+        "software engineering",
+        "team velocity",
+        "AI code generation",
+        "code review",
+        "cognitive load",
+        "technical debt",
+        "AI ethics",
+        "engineering management",
+        "developer tools"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "Why AI Makes YOU Faster And Your Company Slower",
+        "description": "Everyone feels faster with AI, yet team velocity stalls. This video is about this AI productivity paradox (i.e., the hidden cognitive tax imposed on teams when we optimize for individual output). The thing is that AI-generated code and documentation can create a \"cognitive Ponzi scheme,\" shifting the burden of verification and understanding from one writer to many reviewers, ultimately eroding trust and slowing down the entire development lifecycle.\n\nThis video covers:\n→ Why individual AI-driven speed doesn't translate to team velocity.\n→ The concept of a \"cognitive Ponzi scheme\" in software development.\n→ How AI-generated content creates a hidden tax on code reviewers.\n→ The one simple rule that ensures AI boosts, not hinders, your team.\n\nThis video is for software developers, AI engineers, and tech leads who are using AI tools to accelerate their work but sense that overall team progress is stagnating or even regressing.\n\n👇 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 (if you liked it) \nhttps://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n⏰ Timeline\n0:00 Intro\n1:25 The Productivity Illusion\n2:57 The Hidden Tax\n5:55 Understanding Is The Job\n7:03 Key Takeaways\n\n#AIProductivity #SoftwareEngineering #DeveloperVelocity #TeamProductivity #AIEthics #CodeReview #Programming #TechLeadership"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "contentDetails": {
+      "duration": "PT9M26S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "89",
+      "likeCount": "6",
+      "favoriteCount": "0",
+      "commentCount": "1"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "BeKXKBQVFiQ3rALxnMJwY6s2Q08",
     "id": "HTD9rLL3OAo",
     "snippet": {
       "publishedAt": "2026-08-11T20:45:13Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The Agentic Harness",
+      "title": "THE AGENT HARNESS: Isn’t Rocket Science",
       "description": "Most AI agent demos hide the messy, iterative process of failure and correction. This is why impressive prototypes collapse in production. They lack a robust \"harness,\" the underlying system that enables an AI to not just act, but to genuinely improve its own processes.\n\nThis video covers:\n→ Why the \"harness\" acts as a true operating system for intelligence.\n→ The 3 core design patterns: workflow automation, file system memory, and sub-agents.\n→ How optimization is evolving from prompts to the harness code itself.\n→ The single biggest bottleneck preventing truly autonomous, self-improving AI.\n\nThis video is for advanced AI engineers and researchers who want to build complex, reliable agentic systems that can learn and adapt to long-horizon tasks.\n\n0:00 Introduction\n1:03 The Agentic Harness\n3:55 Agentic System Engineering\n7:09 Takeaway\n\nRelated video: https://youtu.be/NVpm5I2KSRE\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀:\n• https://lilianweng.github.io/posts/2026-07-04-harness/\n• https://www.firecrawl.dev/blog/what-is-an-agent-harness\n• https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/introduction.html\n• https://www.databricks.com/blog/ai-harness\n\n#AIEngineering #RecursiveSelfImprovement #AIHarness #AgenticAI #SystemsEngineering #LLM #ArtificialIntelligence #MLOps #SoftwareArchitecture",
       "thumbnails": {
         "default": {
@@ -55,7 +192,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "The Agentic Harness",
+        "title": "THE AGENT HARNESS: Isn’t Rocket Science",
         "description": "Most AI agent demos hide the messy, iterative process of failure and correction. This is why impressive prototypes collapse in production. They lack a robust \"harness,\" the underlying system that enables an AI to not just act, but to genuinely improve its own processes.\n\nThis video covers:\n→ Why the \"harness\" acts as a true operating system for intelligence.\n→ The 3 core design patterns: workflow automation, file system memory, and sub-agents.\n→ How optimization is evolving from prompts to the harness code itself.\n→ The single biggest bottleneck preventing truly autonomous, self-improving AI.\n\nThis video is for advanced AI engineers and researchers who want to build complex, reliable agentic systems that can learn and adapt to long-horizon tasks.\n\n0:00 Introduction\n1:03 The Agentic Harness\n3:55 Agentic System Engineering\n7:09 Takeaway\n\nRelated video: https://youtu.be/NVpm5I2KSRE\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📚 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀:\n• https://lilianweng.github.io/posts/2026-07-04-harness/\n• https://www.firecrawl.dev/blog/what-is-an-agent-harness\n• https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/introduction.html\n• https://www.databricks.com/blog/ai-harness\n\n#AIEngineering #RecursiveSelfImprovement #AIHarness #AgenticAI #SystemsEngineering #LLM #ArtificialIntelligence #MLOps #SoftwareArchitecture"
       },
       "defaultAudioLanguage": "en"
@@ -70,7 +207,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "80",
+      "viewCount": "110",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -78,7 +215,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qjxriVGO6C15JorlCSAJTxMyBX4",
+    "etag": "5AGgDRAofagiuBa88GSaom5xjDg",
     "id": "mZLdO8_Q2m8",
     "snippet": {
       "publishedAt": "2026-08-01T12:00:19Z",
@@ -145,7 +282,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "111",
+      "viewCount": "135",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -153,7 +290,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "24gb88n_9aeFTwMgHmGAdLllqdg",
+    "etag": "YmRRk5X0OJqFFtBmf8KNfiwndqM",
     "id": "NVpm5I2KSRE",
     "snippet": {
       "publishedAt": "2026-07-25T16:13:47Z",
@@ -219,15 +356,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "210",
-      "likeCount": "14",
+      "viewCount": "224",
+      "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "6"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "r1DuVQ_l6ksI_C4rORp9yzq75MY",
+    "etag": "8T-BNN2kZ3ZV4N06ENx6lMMs5OA",
     "id": "-322bwe4oNQ",
     "snippet": {
       "publishedAt": "2026-07-19T12:16:28Z",
@@ -295,7 +432,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "203",
+      "viewCount": "210",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -303,7 +440,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ifr4MKUS5J0vECExmSW4G_-OyPw",
+    "etag": "TtFH9MM7BtvTgOxjKr0fv4auD44",
     "id": "oXu4iAhuM04",
     "snippet": {
       "publishedAt": "2026-07-09T17:30:19Z",
@@ -371,7 +508,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "154",
+      "viewCount": "157",
       "likeCount": "5",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -379,7 +516,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ffMe7sB0YWN-zPpMEI2RVJYcJ7w",
+    "etag": "Tg9ShOmfQ3pjT4q1eqQS61XOHZU",
     "id": "t9pFgvFLxV0",
     "snippet": {
       "publishedAt": "2026-07-03T15:00:39Z",
@@ -447,7 +584,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "111",
+      "viewCount": "112",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -455,7 +592,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "j2PXqfEqiYoYRvsUY8GcIUZpX30",
+    "etag": "nLf4YlCGjQ_IdL3H4sUftExP_dY",
     "id": "Wq4VX-9wzFo",
     "snippet": {
       "publishedAt": "2026-06-24T15:20:15Z",
@@ -525,7 +662,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "138",
+      "viewCount": "139",
       "likeCount": "5",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -533,12 +670,12 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Q_25YTJg_-1hjH1g5oshZVQl0Kc",
+    "etag": "lHWta5nFHl-Popm_mBJg084OA5g",
     "id": "oLu-KGJ_x0E",
     "snippet": {
       "publishedAt": "2026-06-20T08:30:46Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "LLM Inference: Cost vs. Latency vs. Throughput",
+      "title": "LLM’s INFERENCE: Cost vs. Latency vs. Throughput",
       "description": "Mastering LLM inference scaling requires a systematic approach to balancing the fundamental engineering trade-offs between cost, latency, and throughput.\n\nScaling large language models pushes you into a corner: increasing throughput spikes latency, clamping latency inflates GPU costs, and cutting costs hurts performance. This trilemma is the central challenge of LLM operations. Escaping it requires moving beyond simple horizontal scaling and understanding the stateful, memory-bound nature of AI hardware.\n\nThis video covers:\n→ The key engineering levers: quantization, parallelism, and batching.\n→ The four hidden dimensions of cost beyond just dollars per token.\n→ How to decide when to optimize for latency vs. throughput.\n→ A step-by-step framework for sizing and costing your deployment.\n\nThis guide is for AI engineers and ML practitioners tasked with deploying and scaling large language models in production. It provides a decision framework for building systems that are both powerful and cost-effective, avoiding common pitfalls like idle GPUs or performance bottlenecks.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:49 AI Engineering Decisions\n6:12 Cost Dimensions\n8:55 Latency-Bound vs. Throughput-Bound\n11:54 A Step-by-Step Decision Framework\n14:29 Takeaways\n\n#LLM #LLMOps #AIEngineering #GPU #Inference #Scalability #MLOps #LargeLanguageModels #CostOptimization",
       "thumbnails": {
         "default": {
@@ -587,7 +724,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "LLM Inference: Cost vs. Latency vs. Throughput",
+        "title": "LLM’s INFERENCE: Cost vs. Latency vs. Throughput",
         "description": "Mastering LLM inference scaling requires a systematic approach to balancing the fundamental engineering trade-offs between cost, latency, and throughput.\n\nScaling large language models pushes you into a corner: increasing throughput spikes latency, clamping latency inflates GPU costs, and cutting costs hurts performance. This trilemma is the central challenge of LLM operations. Escaping it requires moving beyond simple horizontal scaling and understanding the stateful, memory-bound nature of AI hardware.\n\nThis video covers:\n→ The key engineering levers: quantization, parallelism, and batching.\n→ The four hidden dimensions of cost beyond just dollars per token.\n→ How to decide when to optimize for latency vs. throughput.\n→ A step-by-step framework for sizing and costing your deployment.\n\nThis guide is for AI engineers and ML practitioners tasked with deploying and scaling large language models in production. It provides a decision framework for building systems that are both powerful and cost-effective, avoiding common pitfalls like idle GPUs or performance bottlenecks.\n\n✨ 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 for practical insights on AI and software engineering that go beyond the hype: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:49 AI Engineering Decisions\n6:12 Cost Dimensions\n8:55 Latency-Bound vs. Throughput-Bound\n11:54 A Step-by-Step Decision Framework\n14:29 Takeaways\n\n#LLM #LLMOps #AIEngineering #GPU #Inference #Scalability #MLOps #LargeLanguageModels #CostOptimization"
       },
       "defaultAudioLanguage": "en"
@@ -602,7 +739,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "240",
+      "viewCount": "256",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -610,7 +747,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5trqEUDhk2Zn-9PM7QxH0jaYAoE",
+    "etag": "289vDbJKcb2z7bwC6p-s6tfeT9Q",
     "id": "Ikk2f0gEPuY",
     "snippet": {
       "publishedAt": "2026-06-06T19:11:28Z",
@@ -679,7 +816,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "148",
+      "viewCount": "153",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -687,7 +824,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "coPCJOoPm94DmZBaKzYXViycTVI",
+    "etag": "GWMfBqXOGOosY696t7-17ZxyE8I",
     "id": "VO5gC3RakSk",
     "snippet": {
       "publishedAt": "2026-05-24T14:46:16Z",
@@ -741,7 +878,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "135",
+      "viewCount": "142",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -749,7 +886,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8z4rZE1kFLVCDWnrM-RxmxFJ3Iw",
+    "etag": "Z4eXIFjkYYn2LAn5GIjNguz_wto",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
@@ -818,7 +955,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "91",
+      "viewCount": "96",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -826,7 +963,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "tnSp2JFQ8CNS4zUsJ1ScjIxce38",
+    "etag": "zu3u_ypRHTIOzFJyXBgAnB71p8I",
     "id": "ntRd1BOQO9Q",
     "snippet": {
       "publishedAt": "2026-05-08T16:52:33Z",
@@ -894,7 +1031,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "77",
+      "viewCount": "79",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -902,7 +1039,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "zlfbF7uETV5EFZaYwGvjmVrKaOA",
+    "etag": "a7PhgIf6yHscugI3JTXcCde7YeU",
     "id": "rGspkFASp8k",
     "snippet": {
       "publishedAt": "2026-04-29T14:45:07Z",
@@ -971,8 +1108,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "43",
-      "likeCount": "3",
+      "viewCount": "44",
+      "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "2"
     }
@@ -1069,7 +1206,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "e-V-nk8MmC2eCoH7_HgQqJFt72I",
+    "etag": "x74rf5FdYLWxCe-XR3qCXugTVFE",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -1140,7 +1277,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "922",
+      "viewCount": "932",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "9"
@@ -1226,7 +1363,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "9tsvKxnuXOzFiR-zbaqyPSHoKBQ",
+    "etag": "qcO3rjNzoGle4vpy-BdGYiNJHyo",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -1304,7 +1441,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "270",
+      "viewCount": "274",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1312,7 +1449,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "A_FHHtFH3pT6wUBbFVlTyy24iF4",
+    "etag": "Ym0QyDuOy7iIBy1h280f-N6mXdQ",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -1381,7 +1518,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "377",
+      "viewCount": "391",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -1389,7 +1526,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "OKKrAEiqVQNO90v9aAhQ-cgGJ50",
+    "etag": "8URy1TVL1FWRQO7SRL_X9c6gBS0",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -1457,20 +1594,20 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "886",
-      "likeCount": "18",
+      "viewCount": "911",
+      "likeCount": "20",
       "favoriteCount": "0",
       "commentCount": "2"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "WwBTv6xufSlioFpVKeJcOAJZCBY",
+    "etag": "x5xyP0gQLU4xddB-M9vTcoWzqUk",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Agentic Design Patterns",
+      "title": "Agentic Design Patterns to Rule Them All",
       "description": "AI agentic patterns are direct extensions of the classic software design principles you already use. Ignoring these patterns leads to brittle, unpredictable AI applications that are impossible to debug, creating a mess of prompt chains and failing API calls. This video bridges that gap, showing you how to move from imperative commands to declarative goals.\n\nYou'll learn:\n\n❶ How classic software design patterns map directly to AI agent architecture.\n❷ The three foundational agentic patterns: Tool Use, Reflection, and Planning.\n❸ Multi-agent patterns for complex systems, including Delegation and Collaboration.\n❹ How to manage, debug, and deploy agents safely using AgentOps principles.\n\nThis video is for experienced software developers who want to move beyond simple prompt engineering and learn how to design, build, and manage robust, production-ready AI agentic systems.\n\nSubscribe 👉 https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:57 From Objects to Agents\n5:13 Foundational Patterns\n10:22 From Single Agents to Multi-Agent Systems\n13:41 AgentOps\n11:15 Summary\n\n📚 RESOURCES\n→ Stanford “Generative Agents” Paper: https://arxiv.org/abs/2304.03442\n→ LangChain Framework: https://www.langchain.com/\n→ crewAI Framework: https://www.crewai.com/\n→ AutoGPT Project: https://github.com/Significant-Gravitas/AutoGPT\n→ MetaGPT Framework: https://github.com/geekan/MetaGPT\n\n#aiagents #designpatterns  #softwarearchitecture  #aiengineering  #llm  #AgentOps #langchain  #softwaredevelopment  #artificialintelligence",
       "thumbnails": {
         "default": {
@@ -1525,7 +1662,7 @@
       "liveBroadcastContent": "none",
       "defaultLanguage": "en",
       "localized": {
-        "title": "Agentic Design Patterns",
+        "title": "Agentic Design Patterns to Rule Them All",
         "description": "AI agentic patterns are direct extensions of the classic software design principles you already use. Ignoring these patterns leads to brittle, unpredictable AI applications that are impossible to debug, creating a mess of prompt chains and failing API calls. This video bridges that gap, showing you how to move from imperative commands to declarative goals.\n\nYou'll learn:\n\n❶ How classic software design patterns map directly to AI agent architecture.\n❷ The three foundational agentic patterns: Tool Use, Reflection, and Planning.\n❸ Multi-agent patterns for complex systems, including Delegation and Collaboration.\n❹ How to manage, debug, and deploy agents safely using AgentOps principles.\n\nThis video is for experienced software developers who want to move beyond simple prompt engineering and learn how to design, build, and manage robust, production-ready AI agentic systems.\n\nSubscribe 👉 https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n0:00 Intro\n1:57 From Objects to Agents\n5:13 Foundational Patterns\n10:22 From Single Agents to Multi-Agent Systems\n13:41 AgentOps\n11:15 Summary\n\n📚 RESOURCES\n→ Stanford “Generative Agents” Paper: https://arxiv.org/abs/2304.03442\n→ LangChain Framework: https://www.langchain.com/\n→ crewAI Framework: https://www.crewai.com/\n→ AutoGPT Project: https://github.com/Significant-Gravitas/AutoGPT\n→ MetaGPT Framework: https://github.com/geekan/MetaGPT\n\n#aiagents #designpatterns  #softwarearchitecture  #aiengineering  #llm  #AgentOps #langchain  #softwaredevelopment  #artificialintelligence"
       },
       "defaultAudioLanguage": "en"
@@ -1540,8 +1677,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "288",
-      "likeCount": "14",
+      "viewCount": "294",
+      "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "1"
     }
@@ -1625,7 +1762,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "UgLw6M9TjnGCxrnZrlPbjCnPyKw",
+    "etag": "M7Uugic0puF4K1s833IedZNi2ko",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -1693,7 +1830,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "126",
+      "viewCount": "129",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1701,7 +1838,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5Aaa_ufTN4-UfbK-A3-1ZFOreAI",
+    "etag": "Bj_HSdefEUbRSQR8MUg_2HcbWrk",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -1784,14 +1921,14 @@
     },
     "statistics": {
       "viewCount": "265",
-      "likeCount": "9",
+      "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "11"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "Eq5TuF4MLKZc8GUJ3so3wy5OsPo",
+    "etag": "vyuP6pXO8Z-SOOO5OseybsM4DzE",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -1871,15 +2008,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "5144",
-      "likeCount": "109",
+      "viewCount": "5363",
+      "likeCount": "115",
       "favoriteCount": "0",
-      "commentCount": "15"
+      "commentCount": "17"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "JYNvLaSGAWGqAYEayCVWvpUC_tU",
+    "etag": "cyMSqXNONgKD-AgyLWG9_XKXhlA",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -1958,7 +2095,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "208",
+      "viewCount": "211",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -1966,7 +2103,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Y9SENa1qpL2LUuirYA0OFmgHtFA",
+    "etag": "nZJ-tyqLG2iG7Xi0iCe-jIjXdbc",
     "id": "pHqoIPAlOcw",
     "snippet": {
       "publishedAt": "2026-01-08T09:44:25Z",
@@ -2044,7 +2181,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "155",
+      "viewCount": "156",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2142,7 +2279,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "NqNmEoA6A6j_hgrf9LX-GhZ71Yg",
+    "etag": "jpnz-sIMwHvyA3F4_rpOtFlNNro",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -2221,7 +2358,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1069",
+      "viewCount": "1076",
       "likeCount": "40",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -2229,7 +2366,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ztg2to4dxh-EwGTyWL4Nkv6jC3c",
+    "etag": "v_rYyb8G6cCnT5VT3Kv6GnmLk5I",
     "id": "756pgcDQO5E",
     "snippet": {
       "publishedAt": "2025-10-26T13:46:09Z",
@@ -2310,7 +2447,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "230",
+      "viewCount": "232",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2318,7 +2455,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "FkW3C3YITaz91_3apDQTBmpWZWc",
+    "etag": "4tI-B2djOep_tSijtY45GUumNNY",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -2399,7 +2536,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "234",
+      "viewCount": "237",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -2407,7 +2544,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "7q0gFvIg5RBsiGUqBFsOgdHZ3is",
+    "etag": "lXeEBSvzwpdWT5KBRjltVjnZ_Is",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -2482,8 +2619,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2944",
-      "likeCount": "127",
+      "viewCount": "3018",
+      "likeCount": "131",
       "favoriteCount": "0",
       "commentCount": "30"
     }
@@ -2583,7 +2720,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ZctuLvEn4S-I9aJYguF3wZUyF2Q",
+    "etag": "IwvrHzEPiXVXMX-2Y82tF5MampA",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -2658,7 +2795,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "301",
+      "viewCount": "311",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -3153,7 +3290,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "3hcrS3NLU0yWtFy_AGZHaBjhSeY",
+    "etag": "8zL71ybxQx_cz1LwhRy6kE9HmmU",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -3214,7 +3351,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12929",
+      "viewCount": "12930",
       "likeCount": "642",
       "favoriteCount": "0",
       "commentCount": "304"
@@ -3222,7 +3359,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "VxA1xxdswgIsUcEOu7Y9YQa7NsA",
+    "etag": "CW3hVsywzO9jds7UF9NdZY3hS6M",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -3284,7 +3421,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1069",
+      "viewCount": "1074",
       "likeCount": "65",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -3292,7 +3429,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "0RTfFWcQr0ui6dqg5uyvVMab9sw",
+    "etag": "Ws7MxByLTSKjTE0DeCD5g822vmU",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -3346,7 +3483,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "304",
+      "viewCount": "305",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3354,7 +3491,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nbV2IVJiNHWKLvKLfQSyHJKKj6k",
+    "etag": "NL6Wno8_baPJuocDlrvGxUqYfTw",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -3408,8 +3545,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1146",
-      "likeCount": "38",
+      "viewCount": "1161",
+      "likeCount": "39",
       "favoriteCount": "0",
       "commentCount": "3"
     }
@@ -3485,7 +3622,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Yzj7gw0xrdv5MdqDboq0RXKz0gY",
+    "etag": "L2GLiPeaRk2-L_H27IyQjiQ4XsU",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -3544,7 +3681,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "198",
+      "viewCount": "199",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -3552,7 +3689,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "2A8KhZH8Sks759BUNnqZL5iL2Ws",
+    "etag": "Sol8Ma6ocyHJxzJR4m9kSwpnS2A",
     "id": "7IoXciSucw4",
     "snippet": {
       "publishedAt": "2023-10-14T22:00:04Z",
@@ -3605,7 +3742,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "203",
+      "viewCount": "204",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "1"
