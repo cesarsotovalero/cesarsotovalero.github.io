@@ -81,7 +81,7 @@ css:
       <p>Focused time to get unstuck and move forward with confidence.</p>
     </article>
     <article>
-      <h2>Actionable Follow-Up</h2>
+      <h2>Actionable Written Follow-Up</h2>
       <p>Leave with concrete next steps, priorities, and accountability.</p>
     </article>
   </section>
