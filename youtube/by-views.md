@@ -58,7 +58,7 @@ published: true
       {% assign in_range = false %}
       {% if range == "10K+" and views >= 10000 %}
        {% assign in_range = true %}
-      {% elsif range == "1K-9.9K" and views >= 1000 and views < 10000 %}
+      {% elsif range == "1K-9K" and views >= 1000 and views < 10000 %}
        {% assign in_range = true %}
       {% elsif range == "<1K" and views < 1000 %}
        {% assign in_range = true %}
