@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+# Gems extracted from Ruby stdlib in 3.4+/4.0
+gem 'csv'
+gem 'observer'
+gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
+
 # Jekyll gems
 gem 'jekyll', '4.3.2'
 gem 'jekyll-paginate'
