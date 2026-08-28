@@ -21,7 +21,7 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 {% youtube 59EVOp8r0aw %}
 
-- **TBD**. Upcoming talk at SEB Tech Day, 3rd September 2026.
+- **There’s No Such Thing as Free Intelligence: Tokenomics and the hidden cost of AI**. Upcoming talk at SEB Tech Day, 3rd September 2026.
 
 - **AI on-chain: Where do we see the real utility of Agentic Finance?** Panelist at [Nordic Blockchain Conference (NBC2026)](https://www.nordicblockchain.com/conference/program), 26th May 2026. [Announcement](https://www.linkedin.com/posts/nbc2026-share-7462126749573758976-36bF), [Video](https://youtu.be/w8WiLLe6rIo "video"){:target="\_blank"}
 
