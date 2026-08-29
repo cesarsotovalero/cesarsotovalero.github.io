@@ -135,6 +135,9 @@ function gba {
 }
 {% endhighlight %}
 
+Here's my full [`Profile.ps1`](../files/posts/2023/Profile.ps1) file.
+
+
 # WSL
 
 {% badge /img/badges/wsl-img.png 140 https://learn.microsoft.com/en-us/windows/wsl/ %}
