@@ -1,7 +1,7 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "fQPZbVyzKWRB3ptwfafw4LSZiFk",
+    "etag": "R_v5UjQqTvP-MUBe6ctH-kJB-aw",
     "id": "OdJjEIthtzg",
     "snippet": {
       "publishedAt": "2026-08-21T22:00:09Z",
@@ -33,6 +33,11 @@
           "url": "https://i.ytimg.com/vi/OdJjEIthtzg/maxresdefault.jpg",
           "width": 1280,
           "height": 720
+        },
+        "qhd": {
+          "url": "https://i.ytimg.com/vi/OdJjEIthtzg/qhddefault.jpg",
+          "width": 2560,
+          "height": 1440
         }
       },
       "channelTitle": "César Soto Valero",
@@ -55,15 +60,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "109",
-      "likeCount": "6",
+      "viewCount": "215",
+      "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "3"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "dji_KpkEm_NFt4DdRf96vkgbtZM",
+    "etag": "jJYfVDBgxgtMr-XKY0RWv5DqQ8k",
     "id": "BvGnN4aQfA8",
     "snippet": {
       "publishedAt": "2026-08-17T16:28:39Z",
@@ -95,6 +100,11 @@
           "url": "https://i.ytimg.com/vi/BvGnN4aQfA8/maxresdefault.jpg",
           "width": 1280,
           "height": 720
+        },
+        "qhd": {
+          "url": "https://i.ytimg.com/vi/BvGnN4aQfA8/qhddefault.jpg",
+          "width": 2560,
+          "height": 1440
         }
       },
       "channelTitle": "César Soto Valero",
@@ -130,7 +140,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "89",
+      "viewCount": "99",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -138,7 +148,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "BeKXKBQVFiQ3rALxnMJwY6s2Q08",
+    "etag": "mztHg1dHsOMdrlXmM_rpUbmMUI4",
     "id": "HTD9rLL3OAo",
     "snippet": {
       "publishedAt": "2026-08-11T20:45:13Z",
@@ -170,6 +180,11 @@
           "url": "https://i.ytimg.com/vi/HTD9rLL3OAo/maxresdefault.jpg",
           "width": 1280,
           "height": 720
+        },
+        "qhd": {
+          "url": "https://i.ytimg.com/vi/HTD9rLL3OAo/qhddefault.jpg",
+          "width": 2560,
+          "height": 1440
         }
       },
       "channelTitle": "César Soto Valero",
@@ -207,15 +222,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "110",
-      "likeCount": "4",
+      "viewCount": "159",
+      "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "0"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "5AGgDRAofagiuBa88GSaom5xjDg",
+    "etag": "S724blp1xAqgclQ1jFD6T1IhIvE",
     "id": "mZLdO8_Q2m8",
     "snippet": {
       "publishedAt": "2026-08-01T12:00:19Z",
@@ -247,6 +262,11 @@
           "url": "https://i.ytimg.com/vi/mZLdO8_Q2m8/maxresdefault.jpg",
           "width": 1280,
           "height": 720
+        },
+        "qhd": {
+          "url": "https://i.ytimg.com/vi/mZLdO8_Q2m8/qhddefault.jpg",
+          "width": 2560,
+          "height": 1440
         }
       },
       "channelTitle": "César Soto Valero",
@@ -282,7 +302,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "135",
+      "viewCount": "142",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -290,7 +310,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YmRRk5X0OJqFFtBmf8KNfiwndqM",
+    "etag": "wBBoCoeH1kAQTBVkwhyz8cm-KEY",
     "id": "NVpm5I2KSRE",
     "snippet": {
       "publishedAt": "2026-07-25T16:13:47Z",
@@ -322,6 +342,11 @@
           "url": "https://i.ytimg.com/vi/NVpm5I2KSRE/maxresdefault.jpg",
           "width": 1280,
           "height": 720
+        },
+        "qhd": {
+          "url": "https://i.ytimg.com/vi/NVpm5I2KSRE/qhddefault.jpg",
+          "width": 2560,
+          "height": 1440
         }
       },
       "channelTitle": "César Soto Valero",
@@ -356,7 +381,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "224",
+      "viewCount": "261",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "6"
@@ -364,7 +389,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8T-BNN2kZ3ZV4N06ENx6lMMs5OA",
+    "etag": "U5T33hwsvm0nEVJY_fqXz9EgU2w",
     "id": "-322bwe4oNQ",
     "snippet": {
       "publishedAt": "2026-07-19T12:16:28Z",
@@ -396,6 +421,11 @@
           "url": "https://i.ytimg.com/vi/-322bwe4oNQ/maxresdefault.jpg",
           "width": 1280,
           "height": 720
+        },
+        "qhd": {
+          "url": "https://i.ytimg.com/vi/-322bwe4oNQ/qhddefault.jpg",
+          "width": 2560,
+          "height": 1440
         }
       },
       "channelTitle": "César Soto Valero",
@@ -432,7 +462,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "210",
+      "viewCount": "216",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -440,7 +470,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "TtFH9MM7BtvTgOxjKr0fv4auD44",
+    "etag": "jNQKYc-0lLKN7LqDnSPCWvl-KSU",
     "id": "oXu4iAhuM04",
     "snippet": {
       "publishedAt": "2026-07-09T17:30:19Z",
@@ -472,6 +502,11 @@
           "url": "https://i.ytimg.com/vi/oXu4iAhuM04/maxresdefault.jpg",
           "width": 1280,
           "height": 720
+        },
+        "qhd": {
+          "url": "https://i.ytimg.com/vi/oXu4iAhuM04/qhddefault.jpg",
+          "width": 2560,
+          "height": 1440
         }
       },
       "channelTitle": "César Soto Valero",
@@ -508,7 +543,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "157",
+      "viewCount": "158",
       "likeCount": "5",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -516,7 +551,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Tg9ShOmfQ3pjT4q1eqQS61XOHZU",
+    "etag": "swOytRDZxB5qSmVNnK0MbZlKXFE",
     "id": "t9pFgvFLxV0",
     "snippet": {
       "publishedAt": "2026-07-03T15:00:39Z",
@@ -548,6 +583,11 @@
           "url": "https://i.ytimg.com/vi/t9pFgvFLxV0/maxresdefault.jpg",
           "width": 1280,
           "height": 720
+        },
+        "qhd": {
+          "url": "https://i.ytimg.com/vi/t9pFgvFLxV0/qhddefault.jpg",
+          "width": 2560,
+          "height": 1440
         }
       },
       "channelTitle": "César Soto Valero",
@@ -584,7 +624,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "112",
+      "viewCount": "117",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -670,7 +710,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "lHWta5nFHl-Popm_mBJg084OA5g",
+    "etag": "HtEWk-oRv8akIyxliNOAP-sdnlM",
     "id": "oLu-KGJ_x0E",
     "snippet": {
       "publishedAt": "2026-06-20T08:30:46Z",
@@ -739,7 +779,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "256",
+      "viewCount": "265",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -747,7 +787,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "289vDbJKcb2z7bwC6p-s6tfeT9Q",
+    "etag": "g7LE3WvIq220wagzk87MMDMpvxE",
     "id": "Ikk2f0gEPuY",
     "snippet": {
       "publishedAt": "2026-06-06T19:11:28Z",
@@ -816,7 +856,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "153",
+      "viewCount": "154",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -824,7 +864,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "GWMfBqXOGOosY696t7-17ZxyE8I",
+    "etag": "KB_ZfbPmgsnmbpFQ4X2L56D8Zjg",
     "id": "VO5gC3RakSk",
     "snippet": {
       "publishedAt": "2026-05-24T14:46:16Z",
@@ -878,7 +918,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "142",
+      "viewCount": "151",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -886,7 +926,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Z4eXIFjkYYn2LAn5GIjNguz_wto",
+    "etag": "LjuJiOUu2TufD0v6bW3B8c9-kiQ",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
@@ -955,7 +995,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "96",
+      "viewCount": "98",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1039,7 +1079,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "a7PhgIf6yHscugI3JTXcCde7YeU",
+    "etag": "jXjq1foLtNmPAnCOBpcE8crBlRM",
     "id": "rGspkFASp8k",
     "snippet": {
       "publishedAt": "2026-04-29T14:45:07Z",
@@ -1108,7 +1148,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "44",
+      "viewCount": "45",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1116,7 +1156,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "7bhi6eZWmhY3Rne4bmFxpUcTVAQ",
+    "etag": "n4sjvukkBROsylVJ59eFn604pHA",
     "id": "AfaOvAXFCmg",
     "snippet": {
       "publishedAt": "2026-04-25T20:00:40Z",
@@ -1148,6 +1188,11 @@
           "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/maxresdefault.jpg",
           "width": 1280,
           "height": 720
+        },
+        "qhd": {
+          "url": "https://i.ytimg.com/vi/AfaOvAXFCmg/qhddefault.jpg",
+          "width": 2560,
+          "height": 1440
         }
       },
       "channelTitle": "César Soto Valero",
@@ -1198,7 +1243,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "125",
+      "viewCount": "126",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1206,7 +1251,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "x74rf5FdYLWxCe-XR3qCXugTVFE",
+    "etag": "QuZ77548KmCMNVLOerkh4MZBJMs",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -1277,7 +1322,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "932",
+      "viewCount": "937",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "9"
@@ -1363,7 +1408,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qcO3rjNzoGle4vpy-BdGYiNJHyo",
+    "etag": "SiuHjIrM4TKBeP2abTHgScghjVY",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -1441,7 +1486,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "274",
+      "viewCount": "277",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1449,7 +1494,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Ym0QyDuOy7iIBy1h280f-N6mXdQ",
+    "etag": "tVGc_aA9LqhCZ5MwQZHDKcK8-XI",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -1518,7 +1563,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "391",
+      "viewCount": "408",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -1526,7 +1571,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8URy1TVL1FWRQO7SRL_X9c6gBS0",
+    "etag": "Jtji19vT4c8yNRjibkZgDR8vH0U",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -1594,7 +1639,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "911",
+      "viewCount": "929",
       "likeCount": "20",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1602,7 +1647,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "x5xyP0gQLU4xddB-M9vTcoWzqUk",
+    "etag": "WnQH6r-eqRh8Sv5pdtdv45kSyO0",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -1677,7 +1722,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "294",
+      "viewCount": "307",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1838,7 +1883,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Bj_HSdefEUbRSQR8MUg_2HcbWrk",
+    "etag": "P6wF26_2AI518324zLvbB2gkLgs",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -1920,7 +1965,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "265",
+      "viewCount": "268",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "11"
@@ -1928,7 +1973,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "vyuP6pXO8Z-SOOO5OseybsM4DzE",
+    "etag": "XgB4JGzlzDAPvc753mRMl6e-tD4",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -2008,15 +2053,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "5363",
-      "likeCount": "115",
+      "viewCount": "5724",
+      "likeCount": "121",
       "favoriteCount": "0",
-      "commentCount": "17"
+      "commentCount": "21"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "cyMSqXNONgKD-AgyLWG9_XKXhlA",
+    "etag": "hg6KLn320qyKguTnIhSnqzD8gCw",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -2095,7 +2140,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "211",
+      "viewCount": "214",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -2189,7 +2234,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "umeCJzA8F78Kex6Or-pDYoXfPy4",
+    "etag": "ckiblTjuVvpXbIRoZfhHDmkHqWY",
     "id": "-a6Pbv_yBWw",
     "snippet": {
       "publishedAt": "2025-11-29T07:55:26Z",
@@ -2271,7 +2316,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "289",
+      "viewCount": "290",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2279,7 +2324,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "jpnz-sIMwHvyA3F4_rpOtFlNNro",
+    "etag": "o3y2n3ujTGzFrgCPqhNVhpYt2Uo",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -2358,7 +2403,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1076",
+      "viewCount": "1077",
       "likeCount": "40",
       "favoriteCount": "0",
       "commentCount": "8"
@@ -2544,7 +2589,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "lXeEBSvzwpdWT5KBRjltVjnZ_Is",
+    "etag": "Byr9Gz9RTsc1v1vOtqdP3Vb4JFI",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -2619,7 +2664,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "3018",
+      "viewCount": "3091",
       "likeCount": "131",
       "favoriteCount": "0",
       "commentCount": "30"
@@ -2720,7 +2765,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "IwvrHzEPiXVXMX-2Y82tF5MampA",
+    "etag": "5hGwyAT-wl8pRmAzECn9FT9k_U4",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -2795,7 +2840,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "311",
+      "viewCount": "314",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -3215,7 +3260,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "JRqfCoC_vT32jfXGM7p8eHR4PXA",
+    "etag": "k_2wLdfs3invuvb0Ek3U6oRZBhI",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
@@ -3282,7 +3327,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "157",
+      "viewCount": "158",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -3290,7 +3335,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8zL71ybxQx_cz1LwhRy6kE9HmmU",
+    "etag": "Eo04mOVJGInQOB2rV7p-gVvu21I",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -3351,7 +3396,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12930",
+      "viewCount": "12931",
       "likeCount": "642",
       "favoriteCount": "0",
       "commentCount": "304"
@@ -3359,7 +3404,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "CW3hVsywzO9jds7UF9NdZY3hS6M",
+    "etag": "wfV7QpNnrmxxoWpC3RvxNs4TP1Y",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -3421,7 +3466,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1074",
+      "viewCount": "1087",
       "likeCount": "65",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -3429,7 +3474,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Ws7MxByLTSKjTE0DeCD5g822vmU",
+    "etag": "YePvkGT4XaKH7SC96DJzjKvT85Q",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -3483,7 +3528,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "305",
+      "viewCount": "309",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3491,7 +3536,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "NL6Wno8_baPJuocDlrvGxUqYfTw",
+    "etag": "9ry8q5Cyic8EBwrUwCMoiOR-okw",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -3545,7 +3590,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1161",
+      "viewCount": "1184",
       "likeCount": "39",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3622,7 +3667,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "L2GLiPeaRk2-L_H27IyQjiQ4XsU",
+    "etag": "ISeHSfxiTk_KaldTMusGGM70hng",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -3681,7 +3726,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "199",
+      "viewCount": "201",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -3812,7 +3857,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "4KgN3bvOrxnWuyIURVVxmtR7uuw",
+    "etag": "JQB3vJovVw1whbLutN2txH4NT2w",
     "id": "HXj2B8eHmt4",
     "snippet": {
       "publishedAt": "2022-10-16T20:05:21Z",
@@ -3873,7 +3918,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "104",
+      "viewCount": "105",
       "likeCount": "5",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -3881,7 +3926,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Tq61Ip-oJ8BJOXLWDH9awLOm_nU",
+    "etag": "bk8fDwWsMLLmFrapM4Tb5Fu8HOg",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -3941,7 +3986,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "447",
+      "viewCount": "448",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -4151,7 +4196,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nrta6DPBZYC5iThv_2gHn87-1_4",
+    "etag": "J0KgUp2CMQmE1LYWBvEUDqjQLmU",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
@@ -4211,7 +4256,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "299",
+      "viewCount": "300",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "11"
