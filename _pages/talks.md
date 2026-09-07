@@ -21,9 +21,9 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 {% youtube 59EVOp8r0aw %}
 
-- **There’s No Such Thing as Free Intelligence: Tokenomics and the hidden cost of AI**. Upcoming talk at SEB Tech Day, 3rd September 2026.
+- **There’s No Such Thing as Free Intelligence: Tokenomics and the hidden cost of AI**. Upcoming talk at _SEB Tech Day_, 3rd September 2026. [Slides](../files/presentations/Tokenomics_and_the_Hidden_Cost_of_AI.pptx "pptx")
 
-- **AI on-chain: Where do we see the real utility of Agentic Finance?** Panelist at [Nordic Blockchain Conference (NBC2026)](https://www.nordicblockchain.com/conference/program), 26th May 2026. [Announcement](https://www.linkedin.com/posts/nbc2026-share-7462126749573758976-36bF), [Video](https://youtu.be/w8WiLLe6rIo "video"){:target="\_blank"}
+- **AI on-chain: Where do we see the real utility of Agentic Finance?** Panelist at [Nordic Blockchain Conference)](https://www.nordicblockchain.com/conference/program), 26th May 2026. [Announcement](https://www.linkedin.com/posts/nbc2026-share-7462126749573758976-36bF), [Video](https://youtu.be/w8WiLLe6rIo "video"){:target="\_blank"}
 
 - **Stop Stuffing Your LLM's Context Window**. Presented at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026. [Announcement](https://www.linkedin.com/posts/have-you-checked-out-the-lightning-talks-share-7452312233725906944-J365), [Video](https://youtu.be/lo_QROedKqE "video"){:target="\_blank"}, [Slides](../files/presentations/AI-fokus2026.pdf "pdf")
 
