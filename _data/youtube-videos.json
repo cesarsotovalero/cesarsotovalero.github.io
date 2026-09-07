@@ -1,7 +1,7 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "R_v5UjQqTvP-MUBe6ctH-kJB-aw",
+    "etag": "DuE6KuTYaY4Ph8zqi4viXr-krUI",
     "id": "OdJjEIthtzg",
     "snippet": {
       "publishedAt": "2026-08-21T22:00:09Z",
@@ -60,7 +60,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "215",
+      "viewCount": "383",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -68,7 +68,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "jJYfVDBgxgtMr-XKY0RWv5DqQ8k",
+    "etag": "vPhNApCx_403-36IWSpOTFHUgs8",
     "id": "BvGnN4aQfA8",
     "snippet": {
       "publishedAt": "2026-08-17T16:28:39Z",
@@ -140,7 +140,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "99",
+      "viewCount": "109",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -148,7 +148,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "mztHg1dHsOMdrlXmM_rpUbmMUI4",
+    "etag": "eJ31xK9CoF8ak2NHLBiQhsrox6k",
     "id": "HTD9rLL3OAo",
     "snippet": {
       "publishedAt": "2026-08-11T20:45:13Z",
@@ -222,7 +222,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "159",
+      "viewCount": "170",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -230,7 +230,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "S724blp1xAqgclQ1jFD6T1IhIvE",
+    "etag": "vQuZrLcIaKSQ1rz9_e5kqb3V5WM",
     "id": "mZLdO8_Q2m8",
     "snippet": {
       "publishedAt": "2026-08-01T12:00:19Z",
@@ -302,7 +302,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "142",
+      "viewCount": "146",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -310,7 +310,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "wBBoCoeH1kAQTBVkwhyz8cm-KEY",
+    "etag": "vU1-y2cy00LteZewHb9H7qfY07k",
     "id": "NVpm5I2KSRE",
     "snippet": {
       "publishedAt": "2026-07-25T16:13:47Z",
@@ -381,15 +381,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "261",
-      "likeCount": "15",
+      "viewCount": "286",
+      "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "6"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "U5T33hwsvm0nEVJY_fqXz9EgU2w",
+    "etag": "5-5JswTsWJuKclCFFbYq2q25MRM",
     "id": "-322bwe4oNQ",
     "snippet": {
       "publishedAt": "2026-07-19T12:16:28Z",
@@ -462,8 +462,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "216",
-      "likeCount": "3",
+      "viewCount": "220",
+      "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
     }
@@ -551,7 +551,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "swOytRDZxB5qSmVNnK0MbZlKXFE",
+    "etag": "Wl2kJs17de9rxUtopxfygC5zVeY",
     "id": "t9pFgvFLxV0",
     "snippet": {
       "publishedAt": "2026-07-03T15:00:39Z",
@@ -624,7 +624,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "117",
+      "viewCount": "119",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -632,7 +632,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nLf4YlCGjQ_IdL3H4sUftExP_dY",
+    "etag": "gToJIxh-V5q-NVAGnrjs4SCO2XM",
     "id": "Wq4VX-9wzFo",
     "snippet": {
       "publishedAt": "2026-06-24T15:20:15Z",
@@ -702,7 +702,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "139",
+      "viewCount": "140",
       "likeCount": "5",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -710,7 +710,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "HtEWk-oRv8akIyxliNOAP-sdnlM",
+    "etag": "fKgsb4mNZGcjLOeWD36eVT7jNAM",
     "id": "oLu-KGJ_x0E",
     "snippet": {
       "publishedAt": "2026-06-20T08:30:46Z",
@@ -779,15 +779,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "265",
-      "likeCount": "6",
+      "viewCount": "285",
+      "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "1"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "g7LE3WvIq220wagzk87MMDMpvxE",
+    "etag": "6jFE4VYJIB7Rx_uPz_9ao9L6iGw",
     "id": "Ikk2f0gEPuY",
     "snippet": {
       "publishedAt": "2026-06-06T19:11:28Z",
@@ -856,15 +856,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "154",
+      "viewCount": "158",
       "likeCount": "4",
       "favoriteCount": "0",
-      "commentCount": "1"
+      "commentCount": "3"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "KB_ZfbPmgsnmbpFQ4X2L56D8Zjg",
+    "etag": "fXHKiq42YI0tGWItDLpWD-5kyQg",
     "id": "VO5gC3RakSk",
     "snippet": {
       "publishedAt": "2026-05-24T14:46:16Z",
@@ -918,7 +918,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "151",
+      "viewCount": "164",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -926,7 +926,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LjuJiOUu2TufD0v6bW3B8c9-kiQ",
+    "etag": "N7gw3obHaYPuCLlUilnrVLJ15jk",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
@@ -995,7 +995,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "98",
+      "viewCount": "102",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1251,7 +1251,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "QuZ77548KmCMNVLOerkh4MZBJMs",
+    "etag": "c0VCu9ma47hLPJe48ge4IURO_Zc",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -1322,7 +1322,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "937",
+      "viewCount": "941",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "9"
@@ -1494,7 +1494,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "tVGc_aA9LqhCZ5MwQZHDKcK8-XI",
+    "etag": "KTcYGPBgQYdbf7kmDAbKNApfHPs",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -1563,7 +1563,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "408",
+      "viewCount": "433",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -1571,7 +1571,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Jtji19vT4c8yNRjibkZgDR8vH0U",
+    "etag": "a2ktkTwb4olIJCw46xAWr5bf_vA",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -1639,7 +1639,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "929",
+      "viewCount": "948",
       "likeCount": "20",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1647,7 +1647,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "WnQH6r-eqRh8Sv5pdtdv45kSyO0",
+    "etag": "cTu-RhqvryqAz_m3bWcZa3bz26E",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -1722,8 +1722,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "307",
-      "likeCount": "15",
+      "viewCount": "323",
+      "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "1"
     }
@@ -1883,7 +1883,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "P6wF26_2AI518324zLvbB2gkLgs",
+    "etag": "AExdfkoyD3ykZ5NMNa2ccnDI3UQ",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -1965,7 +1965,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "268",
+      "viewCount": "272",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "11"
@@ -1973,7 +1973,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "XgB4JGzlzDAPvc753mRMl6e-tD4",
+    "etag": "HAZPbf2X9G-5f5gQCDD340H_kUo",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -2053,15 +2053,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "5724",
-      "likeCount": "121",
+      "viewCount": "6137",
+      "likeCount": "123",
       "favoriteCount": "0",
       "commentCount": "21"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "hg6KLn320qyKguTnIhSnqzD8gCw",
+    "etag": "pSiw0ZrnEtJSnH-toIr50s7YM28",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -2140,7 +2140,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "214",
+      "viewCount": "219",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -2148,7 +2148,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nZJ-tyqLG2iG7Xi0iCe-jIjXdbc",
+    "etag": "F_4_wDxCJM4h62S48zin3j1GCaA",
     "id": "pHqoIPAlOcw",
     "snippet": {
       "publishedAt": "2026-01-08T09:44:25Z",
@@ -2226,7 +2226,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "156",
+      "viewCount": "157",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2324,7 +2324,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "o3y2n3ujTGzFrgCPqhNVhpYt2Uo",
+    "etag": "qW0d1ipaCciglH4g40bNjdzhNL8",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -2403,10 +2403,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1077",
+      "viewCount": "1090",
       "likeCount": "40",
       "favoriteCount": "0",
-      "commentCount": "8"
+      "commentCount": "10"
     }
   },
   {
@@ -2500,7 +2500,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "4tI-B2djOep_tSijtY45GUumNNY",
+    "etag": "M4aaohMVjgoo-fktuJzJrD1gyLQ",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -2581,7 +2581,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "237",
+      "viewCount": "239",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -2589,7 +2589,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Byr9Gz9RTsc1v1vOtqdP3Vb4JFI",
+    "etag": "4PKXppyB97KK6nz84W-ROEyfZI4",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -2664,8 +2664,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "3091",
-      "likeCount": "131",
+      "viewCount": "3197",
+      "likeCount": "132",
       "favoriteCount": "0",
       "commentCount": "30"
     }
@@ -2765,7 +2765,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5hGwyAT-wl8pRmAzECn9FT9k_U4",
+    "etag": "mpIu4TsGtA-Rv9FsOZBsLvkZuRg",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -2840,7 +2840,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "314",
+      "viewCount": "320",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -2932,7 +2932,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "jt2OzFuo69zo7Iuoa3p9vsxiJng",
+    "etag": "NeRPUQqWJ7soicmPxMVou79bq0A",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -3006,7 +3006,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "616",
+      "viewCount": "617",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -3260,7 +3260,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "k_2wLdfs3invuvb0Ek3U6oRZBhI",
+    "etag": "lLKBanHPMYznDPGUUXpPt9O-eAQ",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
@@ -3327,7 +3327,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "158",
+      "viewCount": "159",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -3335,7 +3335,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Eo04mOVJGInQOB2rV7p-gVvu21I",
+    "etag": "PNWo9q2hHktCh6aWwMz9voTJXVM",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -3396,7 +3396,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12931",
+      "viewCount": "12934",
       "likeCount": "642",
       "favoriteCount": "0",
       "commentCount": "304"
@@ -3404,7 +3404,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "wfV7QpNnrmxxoWpC3RvxNs4TP1Y",
+    "etag": "I4MQ62xkfrzi4Eqi7XdLteftjAM",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -3466,7 +3466,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1087",
+      "viewCount": "1092",
       "likeCount": "65",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -3474,7 +3474,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YePvkGT4XaKH7SC96DJzjKvT85Q",
+    "etag": "t8eGDEIDDRWaEarYVVqyUv6WArU",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -3528,7 +3528,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "309",
+      "viewCount": "316",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3536,7 +3536,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "9ry8q5Cyic8EBwrUwCMoiOR-okw",
+    "etag": "pMmvZ7eR1sHEzQxaQO1dFdDuLvE",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -3590,7 +3590,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1184",
+      "viewCount": "1206",
       "likeCount": "39",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3667,7 +3667,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ISeHSfxiTk_KaldTMusGGM70hng",
+    "etag": "oQprtQE_ZQyuy9gv4EiTAugAboE",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -3726,7 +3726,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "201",
+      "viewCount": "202",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -3795,7 +3795,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "lWp709IQrSUpWjF_-RPtcVAICLQ",
+    "etag": "woRS7DE5FqtnlGa8T51dYPFP_Uw",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
@@ -3849,7 +3849,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "210",
+      "viewCount": "212",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -3922,209 +3922,6 @@
       "likeCount": "5",
       "favoriteCount": "0",
       "commentCount": "1"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "bk8fDwWsMLLmFrapM4Tb5Fu8HOg",
-    "id": "IrFS2e-4gqU",
-    "snippet": {
-      "publishedAt": "2021-11-07T11:00:06Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "Reasons to Do a PhD in Computer Science",
-      "description": "7 pragmatic reasons to pursue a PhD in Computer Science (research career, curiosity, networking, differentiation, personal growth, ownership, and global mobility).\n\nStarting a PhD in Computer Science is a serious decision that can reshape your life. It’s not just “more school”. It’s a multi-year commitment that trades short-term certainty for long-term leverage, if you know what you’re optimizing for.\n\nIn this video, I break down seven pragmatic reasons to choose this path, based on real incentives and real outcomes (not academic romance). If you’re on the fence, this will help you think clearly about what a PhD can unlock and what it will demand from you.\n\nYou’ll learn:\n→ How a PhD can feed intellectual curiosity in a structured way\n→ What it takes to become a professional researcher (beyond reading papers)\n→ How PhD life builds a career network that compounds for years\n→ Why the credential can differentiate you (when used strategically)\n→ How the challenge reshapes your confidence and problem-solving\n→ What it means to truly own your work and ideas\n→ How a PhD can increase mobility (including emigrating) through opportunity\n\nThis is for students, software engineers, and early-career professionals considering a PhD in CS who want practical reasons, real trade-offs, and a clearer decision framework.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Companion blog post (7 reasons for a PhD in CS): https://www.cesarsotovalero.net/blog/seven-reasons-to-go-for-a-phd-in-computer-science.html\n\n⏰ TIMESTAMPS\n00:00 - Intro\n00:53 - Feed your intellectual curiosity\n03:54 - Become a professional researcher\n06:41 - Build a career network\n08:50 - Set yourself apart from the competition\n11:05 - Challenge yourself\n12:36 - Own your work\n14:38 - Emigrate!\n17:03 - Outro\n\n#Research #PhDCareer #ComputerScience #PhDLife #AcademicCareer #ResearchSkills #GradSchool #CareerAdvice",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/IrFS2e-4gqU/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/IrFS2e-4gqU/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/IrFS2e-4gqU/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/IrFS2e-4gqU/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/IrFS2e-4gqU/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "Research",
-        "Ph.D.",
-        "Computer Science",
-        "Career"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "Reasons to Do a PhD in Computer Science",
-        "description": "7 pragmatic reasons to pursue a PhD in Computer Science (research career, curiosity, networking, differentiation, personal growth, ownership, and global mobility).\n\nStarting a PhD in Computer Science is a serious decision that can reshape your life. It’s not just “more school”. It’s a multi-year commitment that trades short-term certainty for long-term leverage, if you know what you’re optimizing for.\n\nIn this video, I break down seven pragmatic reasons to choose this path, based on real incentives and real outcomes (not academic romance). If you’re on the fence, this will help you think clearly about what a PhD can unlock and what it will demand from you.\n\nYou’ll learn:\n→ How a PhD can feed intellectual curiosity in a structured way\n→ What it takes to become a professional researcher (beyond reading papers)\n→ How PhD life builds a career network that compounds for years\n→ Why the credential can differentiate you (when used strategically)\n→ How the challenge reshapes your confidence and problem-solving\n→ What it means to truly own your work and ideas\n→ How a PhD can increase mobility (including emigrating) through opportunity\n\nThis is for students, software engineers, and early-career professionals considering a PhD in CS who want practical reasons, real trade-offs, and a clearer decision framework.\n\n👉 Subscribe for more: https://www.youtube.com/@cesarsotovalero?sub_confirmation=1\n\n📺 RESOURCES\n→ Companion blog post (7 reasons for a PhD in CS): https://www.cesarsotovalero.net/blog/seven-reasons-to-go-for-a-phd-in-computer-science.html\n\n⏰ TIMESTAMPS\n00:00 - Intro\n00:53 - Feed your intellectual curiosity\n03:54 - Become a professional researcher\n06:41 - Build a career network\n08:50 - Set yourself apart from the competition\n11:05 - Challenge yourself\n12:36 - Own your work\n14:38 - Emigrate!\n17:03 - Outro\n\n#Research #PhDCareer #ComputerScience #PhDLife #AcademicCareer #ResearchSkills #GradSchool #CareerAdvice"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT17M27S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "448",
-      "likeCount": "16",
-      "favoriteCount": "0",
-      "commentCount": "1"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "oKSmqikdU9lKTHOePsrBuMkOevc",
-    "id": "mp_jSfUACrs",
-    "snippet": {
-      "publishedAt": "2021-10-17T19:00:58Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The Software Supply Chain",
-      "description": "Read the related blog post: https://www.cesarsotovalero.net/blog/the-software-supply-chain.html\n\n0:00 Introduction\n0:13 Problem definition\n1:15 People in the loop\n1:47 Problem & Solution\n2:01 Production environment\n4:02 Maintenance & Support\n5:55 Example\n6:44 Mitigation\n7:29 Conclusion\n\n# Summary\n\nThe software supply chain comprises all the technology involved in shipping a piece of code from development to its deployment in a production environment. Several actors and different technologies participate in this complex process, e.g., developers, IDEs, compilers, package managers, a so on. The success or failure of a software product depends largely on many external components that are not directly controlled by the organizations in charge of delivering software products to their clients. This situation poses several security and maintenance risks for both software suppliers and customers. Thereby, maintaining a secure and efficient software supply chain is critical today, where open-source has become ubiquitous in the software production landscape. In this video, I take a close look at this phenomenon from a software engineering perspective.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#cybersecurity #softwaredevelopment  #dependencies",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/mp_jSfUACrs/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/mp_jSfUACrs/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/mp_jSfUACrs/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/mp_jSfUACrs/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/mp_jSfUACrs/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "software engineering",
-        "software supply chain",
-        "cybersecurity"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "The Software Supply Chain",
-        "description": "Read the related blog post: https://www.cesarsotovalero.net/blog/the-software-supply-chain.html\n\n0:00 Introduction\n0:13 Problem definition\n1:15 People in the loop\n1:47 Problem & Solution\n2:01 Production environment\n4:02 Maintenance & Support\n5:55 Example\n6:44 Mitigation\n7:29 Conclusion\n\n# Summary\n\nThe software supply chain comprises all the technology involved in shipping a piece of code from development to its deployment in a production environment. Several actors and different technologies participate in this complex process, e.g., developers, IDEs, compilers, package managers, a so on. The success or failure of a software product depends largely on many external components that are not directly controlled by the organizations in charge of delivering software products to their clients. This situation poses several security and maintenance risks for both software suppliers and customers. Thereby, maintaining a secure and efficient software supply chain is critical today, where open-source has become ubiquitous in the software production landscape. In this video, I take a close look at this phenomenon from a software engineering perspective.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#cybersecurity #softwaredevelopment  #dependencies"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT8M5S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "229",
-      "likeCount": "8",
-      "favoriteCount": "0",
-      "commentCount": "0"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "Ham2X-QIp6RsKQs02cu2AVfHDEU",
-    "id": "3nptpGpaYws",
-    "snippet": {
-      "publishedAt": "2021-09-03T10:05:40Z",
-      "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
-      "title": "The Quicksort Algorithm",
-      "description": "My talk for the course \"Basic Communication and Teaching\" at KTH Royal Institute of Technology\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#teaching #algorithms #quicksort",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/3nptpGpaYws/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/3nptpGpaYws/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/3nptpGpaYws/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/3nptpGpaYws/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/3nptpGpaYws/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "César Soto Valero",
-      "tags": [
-        "quicksort",
-        "computer science",
-        "class",
-        "learning"
-      ],
-      "categoryId": "28",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "en",
-      "localized": {
-        "title": "The Quicksort Algorithm",
-        "description": "My talk for the course \"Basic Communication and Teaching\" at KTH Royal Institute of Technology\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#teaching #algorithms #quicksort"
-      },
-      "defaultAudioLanguage": "en"
-    },
-    "contentDetails": {
-      "duration": "PT15M6S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "120",
-      "likeCount": "7",
-      "favoriteCount": "0",
-      "commentCount": "2"
     }
   },
   {
