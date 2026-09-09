@@ -27,7 +27,8 @@ Recently, a few friends kindly asked me to provide some feedback on their résum
 They are all Computer Science PhD graduates looking to land a new job in the tech industry.
 These people are the cream of the crop, so those résumés should look awesome, right?
 Well, not really.
-I still remember the first draft of my résumé, it was awful (I don't even have the guts to share it here, better looking at its [latest version](../files/CV/cv.pdf)).
+I still remember the first draft of my résumé, it was awful (I don't even have the guts to share it here, 
+better looking at its [latest version](../files/CV/cesar-resume.pdf)).
 I had no experience writing résumés back then, and it took me a while to understand how a great one looks like.
 Building an awesome résumé takes time, effort, and conscious planning.
 If you ask me now:
