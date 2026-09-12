@@ -21,7 +21,7 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 {% youtube 59EVOp8r0aw %}
 
-- **There’s No Such Thing as Free Intelligence: Tokenomics and the hidden cost of AI**. Upcoming talk at _SEB Tech Day_, 3rd September 2026. [Slides](../files/presentations/Tokenomics_and_the_Hidden_Cost_of_AI.pptx "pptx")
+- **There’s No Such Thing as Free Intelligence: Tokenomics and the hidden cost of AI**. Presented at _SEB Tech Day_, 3rd September 2026. [Video](https://youtu.be/Y_JX0C5sAEo "video"){:target="\_blank"}, [Slides](../files/presentations/Tokenomics_and_the_Hidden_Cost_of_AI.pptx "pptx")
 
 - **AI on-chain: Where do we see the real utility of Agentic Finance?** Panelist at [Nordic Blockchain Conference)](https://www.nordicblockchain.com/conference/program), 26th May 2026. [Announcement](https://www.linkedin.com/posts/nbc2026-share-7462126749573758976-36bF), [Video](https://youtu.be/w8WiLLe6rIo "video"){:target="\_blank"}
 
