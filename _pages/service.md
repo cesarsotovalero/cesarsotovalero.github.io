@@ -73,6 +73,7 @@ I volunteered for the following events:
 
 My work has been featured in the following media:
 
+- [WASP Alumni In Academia and Industry Interview](https://internal.wasp-sweden.org/networks-and-resources/wasp-career-program/), 2026 [Video](https://youtu.be/LvG3EenDWP4?si=80_Qx-kcx6wRd3ST&t=10 "video"){:target="\_blank"}
 - [:globe_with_meridians: "Twelve scientist-endorsed tips to get over writer’s block"](https://www.nature.com/articles/d41586-024-02013-4), I got interviewed by a journalist from Nature, 2024
 - [:globe_with_meridians: Unfold](https://rethread.art/projects/unfold), Nobel Week Lights, 2022
 - [:globe_with_meridians: KTH Intranet Interview](https://intra.kth.se/en/eecs/nyheter/grattis-till-vinsten-cesar-1.1112396), 2021
