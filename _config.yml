@@ -9,8 +9,9 @@ navbar-links:
   Blog: "blog"
   LinkedIn: "linkedin"
   YouTube: "youtube"
-  Podcasts: "podcasts"
+  Pods: "podcasts"
   Talks: "talks"
+  Papers: "publications"
   Service: "service"
   About: "about-me"
 
