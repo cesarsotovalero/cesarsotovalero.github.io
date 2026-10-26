@@ -102,7 +102,7 @@ css:
         <header class="booking-card-header">
           <h3>{{ offer.title }}</h3>
           {% if offer.key == 'mock-interview' %}
-          <span class="booking-card-badge">Most requested</span>
+          <span class="booking-card-badge">1:1</span>
           {% endif %}
         </header>
 

@@ -1,7 +1,7 @@
 hero:
   eyebrow: "Book a session"
   title: "Work with César 1:1"
-  subtitle: "I've helped engineers, researchers, and career-changers land roles at top tech companies. Get the same direct, no-fluff guidance in a private session."
+  subtitle: "I've helped engineers, organizations, researchers, and career-changers land roles at top tech companies. Get the same direct, no-fluff guidance in a private session."
   image: "/img/pages/cesar/cesar-profile-2024-200x200px.jpg"
 
 offers:
@@ -18,15 +18,15 @@ offers:
     booking_url: "https://cal.com/cesarsotovalero/mentorship"
 
   - key: "mock-interview"
-    title: "Mock Job Interview"
+    title: "AI Engineer Job Interview"
     duration: "60 minutes"
     price: "EUR 119"
-    description: "Simulate a real technical or behavioral interview and get honest, structured feedback on exactly where you're losing points - and how to fix it."
+    description: "Simulate a real AI engineer interview and get honest, structured feedback on exactly where you're losing points - and how to fix it."
     bullets:
-      - "Realistic interview simulation (behavioral, system design, or coding)"
+      - "Realistic AI engineer interview simulation (behavioral, system design, ML/AI architecture, or coding)"
       - "Detailed strengths and gap analysis you can act on immediately"
       - "Written follow-up with improvement priorities"
-    cta_label: "Book mock interview"
+    cta_label: "Book AI interview"
     booking_url: "https://cal.com/cesarsotovalero/mock-interview"
 
   - key: "career-advice"
