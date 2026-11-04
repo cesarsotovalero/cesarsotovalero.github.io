@@ -1,1 +1,35 @@
-sitemap: http://www.cesarsotovalero.net/sitemap.xml
+User-agent: *
+Allow: /
+Disallow: /_temp/
+
+# AI search, retrieval, and training crawlers are explicitly welcome
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: GoogleOther
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: Meta-ExternalAgent
+User-agent: Amazonbot
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+User-agent: CCBot
+User-agent: cohere-ai
+User-agent: YouBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# LLM-oriented index (llmstxt.org): https://www.cesarsotovalero.net/llms.txt
+# Full Markdown content: https://www.cesarsotovalero.net/llms-full.txt
+# Every post/page has a Markdown version at the same URL with .html replaced by .md
+
+Sitemap: https://www.cesarsotovalero.net/sitemap.xml

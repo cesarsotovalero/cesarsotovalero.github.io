@@ -188,6 +188,7 @@ exclude:
   - s3cfg.enc
   - uml
   - node_modules
+  - _site
   - run_jekyll.sh
   - tag_generator.py
   - .ruby-version
