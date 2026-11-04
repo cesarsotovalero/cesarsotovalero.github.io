@@ -1,0 +1,56 @@
+{% assign author = site.data.authors.cesarsotovalero %}
+{% assign person_id = site.url | append: '/#person' %}
+{% assign site_id = site.url | append: '/#website' %}
+{% capture person_json %}
+{
+  "@type": "Person",
+  "@id": "{{ person_id }}",
+  "name": "{{ author.name }}",
+  "url": "{{ site.url }}/about-me",
+  "image": "{{ site.url }}{{ author.photo }}",
+  "jobTitle": "Senior Data Scientist",
+  "description": "{{ site.data.authors.cesarsotovalero.name }} is a computer scientist, software engineer, and content creator with a PhD in Computer Science from KTH Royal Institute of Technology.",
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "KTH Royal Institute of Technology", "url": "https://www.kth.se" },
+  "knowsAbout": ["Software engineering", "Software supply chain", "Software debloating", "Java", "Artificial intelligence", "Data science"],
+  "sameAs": [
+    "https://github.com/{{ site.author.github }}",
+    "https://www.linkedin.com/in/{{ site.author.linkedin }}",
+    "https://www.youtube.com/{{ site.author.youtube }}",
+    "https://stackoverflow.com/users/{{ site.author.stackoverflow | split: '?' | first }}",
+    "https://twitter.com/{{ site.author.twitter }}",
+    "https://scholar.google.com/citations?user=jNBoowwAAAAJ"
+  ]
+}
+{% endcapture %}
+{% capture website_json %}
+{
+  "@type": "WebSite",
+  "@id": "{{ site_id }}",
+  "url": "{{ site.url }}/",
+  "name": "{{ site.title }}",
+  "description": "{{ site.description }}",
+  "inLanguage": "en",
+  "publisher": { "@id": "{{ person_id }}" },
+  "author": { "@id": "{{ person_id }}" }
+}
+{% endcapture %}
+{% capture post_json %}{% if page.layout == 'post' %},
+{
+  "@type": "BlogPosting",
+  "@id": "{{ site.url }}{{ page.url }}#article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: page.subtitle | strip | jsonify }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ site.url }}{{ page.url }}" },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  {% if page.image %}"image": "{{ page.image | replace: '../', '/' | absolute_url }}",{% endif %}
+  "keywords": {{ page.keywords | default: page.tags | jsonify }},
+  "inLanguage": "en",
+  "author": { "@id": "{{ person_id }}" },
+  "publisher": { "@id": "{{ person_id }}" },
+  "isPartOf": { "@id": "{{ site_id }}" }
+}{% endif %}{% endcapture %}
+<script type="application/ld+json">
+{ "@context": "https://schema.org", "@graph": [{{ person_json }},{{ website_json }}{{ post_json }}] }
+</script>

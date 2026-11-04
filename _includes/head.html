@@ -38,13 +38,13 @@
    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
 
    <!--   favicons -->
-   <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/redketchup/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/redketchup/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/redketchup/favicon-16x16.png">
-   <link rel="manifest" href="../img/favicon/redketchup/site.webmanifest">
+   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/redketchup/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/redketchup/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/redketchup/favicon-16x16.png">
+   <link rel="manifest" href="/img/favicon/redketchup/site.webmanifest">
 
    <!--   Source code CSS -->
-   <link id="code" rel="stylesheet" href="../css/pygment_highlights.css" />
+   <link id="code" rel="stylesheet" href="/css/pygment_highlights.css" />
 
    <!-- D3 -->
    <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -75,7 +75,7 @@
    </script>
 
    <!-- Generate anchors to link to every heading in a Jekyll blog post -->
-   <script src="../js/anchor.min.js"></script>
+   <script src="/js/anchor.min.js"></script>
 
    {% if site.tags != "" %}
 
@@ -121,7 +121,18 @@
    {% endif %}
 
 
-   {% seo title=false %}
+   {% capture seo_out %}{% seo title=false %}{% endcapture %}
+   {% comment %} Drop jekyll-seo-tag's JSON-LD; structured-data.html emits a richer, linked graph. {% endcomment %}
+   {% assign seo_parts = seo_out | split: '<script type="application/ld+json">' %}
+   {% assign seo_tail = seo_parts[1] | split: '</script>' %}
+   {{ seo_parts[0] }}{% for t in seo_tail offset: 1 %}{{ t }}{% unless forloop.last %}</script>{% endunless %}{% endfor %}
+   {% include structured-data.html %}
+
+   <link rel="alternate" type="application/feed+json" title="{{ site.title }}" href="{{ site.url }}/feed.json"/>
+   <link rel="alternate" type="text/plain" title="llms.txt" href="{{ site.url }}/llms.txt"/>
+   {% if page.url != '/' and page.url != '/404.html' and page.path contains '.md' %}
+   <link rel="alternate" type="text/markdown" href="{{ site.url }}{{ page.url | remove: '.html' }}.md"/>
+   {% endif %}
 
    <script
       type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
