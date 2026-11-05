@@ -15,7 +15,7 @@ image: ../img/posts/2023/2023-11-12/dansmuseet_cover.png
 share-img: ../img/posts/2023/2023-11-12/dansmuseet_cover.png
 show-avatar: false
 toc: true
-mathjax: false
+mathjax: true
 date: 2023/11/12
 author: cesarsotovalero
 published: true

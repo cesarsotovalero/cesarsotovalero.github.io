@@ -16,18 +16,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-module Jekyll
-  class RssFile < StaticFile
-    def write(dest)
-      FileUtils.copy_file(File.join(dest, 'feed.xml'), File.join(dest, 'rss'))
-      true
-    end
-  end
-  class ExtraGenerator < Generator
-    priority :low
-    safe true
-    def generate(site)
-      site.static_files << Jekyll::RssFile.new(site, site.dest, '', 'feed.xml')
-    end
-  end
+Jekyll::Hooks.register :site, :post_write do |site|
+  feed = File.join(site.dest, 'feed.xml')
+  rss = File.join(site.dest, 'rss')
+  FileUtils.copy_file(feed, rss) if File.exist?(feed)
 end
