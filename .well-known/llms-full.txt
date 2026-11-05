@@ -3,18 +3,4 @@ layout: null
 permalink: /.well-known/llms-full.txt
 sitemap: false
 ---
-# César Soto Valero — full content
-
-> Complete Markdown text of all blog posts on {{ site.url }}. Index: {{ site.url }}/llms.txt
-
-{% for post in site.posts %}
----
-
-# {{ post.title | strip }}
-
-URL: {{ site.url }}{{ post.url }}
-Date: {{ post.date | date: "%Y-%m-%d" }}
-{% if post.tags.size > 0 %}Tags: {{ post.tags | join: ", " }}
-{% endif %}
-{{ post.raw_markdown }}
-{% endfor %}
+{% include llms-full-body.txt %}

@@ -32,6 +32,7 @@
 {% endif %}
 
 
+{% if page.needs_mermaid %}
 <!-- Mermaid -->
 <script src="/js/mermaid.min.js"></script>
 <script>
@@ -43,3 +44,4 @@
     window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
   });
 </script>
+{% endif %}

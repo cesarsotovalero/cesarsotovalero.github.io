@@ -52,6 +52,15 @@ jobs:
           YOUTUBE_API_TOKEN: ${{ secrets.YOUTUBE_API_TOKEN }}
           GMAIL: ${{ secrets.CESAR_PERSONAL_GMAIL }}
 
+      - name: Validate generated site smoke checks
+        run: python3 scripts/validate_site_smoke.py
+
+      - name: Validate critical pages (internal links/images)
+        run: |
+          bundle exec htmlproofer ./_site/index.html --checks Links,Images --disable-external --allow-hash-href --ignore-empty-alt --ignore-empty-mailto --no-enforce-https --assume-extension .html
+          bundle exec htmlproofer ./_site/about-me.html --checks Links,Images --disable-external --allow-hash-href --ignore-empty-alt --ignore-empty-mailto --no-enforce-https --assume-extension .html
+          bundle exec htmlproofer ./_site/search.html --checks Links,Images --disable-external --allow-hash-href --ignore-empty-alt --ignore-empty-mailto --no-enforce-https --assume-extension .html
+
       - name: Install Minify
         run: |
           sudo apt-get update

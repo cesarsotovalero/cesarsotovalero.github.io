@@ -83,7 +83,7 @@
 
    {% if layout.common-googlefonts %}
    {% for font in layout.common-googlefonts %}
-   <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}"/>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ font }}"/>
    {% endfor %}
    {% endif %}
 
@@ -101,7 +101,7 @@
 
    {% if page.googlefonts %}
    {% for font in page.googlefonts %}
-   <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}"/>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ font }}"/>
    {% endfor %}
    {% endif %}
 
@@ -119,6 +119,7 @@
    <link rel="alternate" type="text/markdown" href="{{ site.url }}{{ page.url | remove: '.html' }}.md"/>
    {% endif %}
 
+   {% if page.needs_mathjax %}
    <script
       type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
    </script>
@@ -132,6 +133,7 @@
    </script>
    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
            type="text/javascript"></script>
+   {% endif %}
 
    <noscript>
       <style>

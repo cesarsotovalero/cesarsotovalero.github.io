@@ -52,7 +52,7 @@ My PhD work was supervised by Profs. [Benoit Baudry](https://www.kth.se/profile/
 
 My PhD was about software debloating,[^1] you can look at [my PhD thesis](https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf) to know more.
 
-I also hold a [BSc](<../../files/certificates/BSc_Degree_(certified)_eng.pdf>) and [MSc](<../../files/certificates/MSc_Degree_(certified)_eng.pdf>) in Computer Science.
+I also hold a BSc and MSc in Computer Science.
 
 I'm a lifelong learner, often [taking courses and MOOCs](./courses).
 
