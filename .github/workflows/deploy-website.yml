@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch: # allow manual re-runs from the Actions tab
 
 permissions:
   pages: write # allow deploy-pages to publish
@@ -16,13 +17,19 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-24.04
+    # A normal build takes ~5 min; fail fast instead of hanging for an hour.
+    timeout-minutes: 30
+    # Only the newest commit gets deployed, so cancel builds made obsolete by a newer push.
+    concurrency:
+      group: website-build-${{ github.ref }}
+      cancel-in-progress: true
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.x"
 
@@ -38,8 +45,37 @@ jobs:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: false # caching handled by the Jekyll action
 
-      - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y libmagickwand-dev
+      # One apt round-trip for everything the build needs (ImageMagick for rmagick /
+      # jekyll-responsive-image, minify for the post-build minification).
+      # Downloads are time-boxed and fall back to archive.ubuntu.com, because a stalled
+      # runner mirror previously hung this step for ~1h before failing with exit code 100.
+      - name: Install system packages (ImageMagick, minify)
+        timeout-minutes: 15
+        run: |
+          set -euo pipefail
+          # Skip man-db index rebuilds triggered by every package install.
+          echo 'man-db man-db/auto-update boolean false' | sudo debconf-set-selections
+          sudo rm -f /var/lib/man-db/auto-update
+
+          APT_OPTS=(-o Acquire::Retries=3 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 -o DPkg::Lock::Timeout=120)
+
+          # minify has no Recommends, so a single install is equivalent to the old two steps.
+          PACKAGES=(libmagickwand-dev minify)
+
+          download() {
+            sudo timeout 240 apt-get "${APT_OPTS[@]}" update -qq &&
+              sudo timeout 420 apt-get "${APT_OPTS[@]}" install --download-only --yes "${PACKAGES[@]}"
+          }
+
+          if ! download; then
+            echo "::warning::Default Ubuntu mirror failed; retrying with archive.ubuntu.com"
+            sudo sed -i 's|http://azure\.archive\.ubuntu\.com/ubuntu|http://archive.ubuntu.com/ubuntu|g' \
+              /etc/apt/sources.list.d/*.sources /etc/apt/sources.list 2>/dev/null || true
+            download
+          fi
+
+          # Everything is already downloaded, so installation needs no network.
+          sudo apt-get "${APT_OPTS[@]}" install --yes --no-download "${PACKAGES[@]}"
 
       - name: Build Jekyll site (with all plugins)
         uses: limjh16/jekyll-action-ts@v2
@@ -60,11 +96,6 @@ jobs:
           bundle exec htmlproofer ./_site/index.html --checks Links,Images --disable-external --allow-hash-href --ignore-empty-alt --ignore-empty-mailto --no-enforce-https --assume-extension .html
           bundle exec htmlproofer ./_site/about-me.html --checks Links,Images --disable-external --allow-hash-href --ignore-empty-alt --ignore-empty-mailto --no-enforce-https --assume-extension .html
           bundle exec htmlproofer ./_site/search.html --checks Links,Images --disable-external --allow-hash-href --ignore-empty-alt --ignore-empty-mailto --no-enforce-https --assume-extension .html
-
-      - name: Install Minify
-        run: |
-          sudo apt-get update
-          sudo apt-get install --no-install-recommends --yes minify
 
       - name: Minify HTML files
         run: |
@@ -104,6 +135,11 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    # Never cancel a deployment that is already in progress; queue the next one instead.
+    concurrency:
+      group: website-deploy
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: https://www.cesarsotovalero.net
