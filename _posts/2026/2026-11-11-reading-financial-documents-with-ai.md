@@ -21,7 +21,7 @@ toc: true
 mathjax: false
 date: 2026/11/11
 author: cesarsotovalero
-published: false
+published: true
 ---
 
 Every quarter, a corporate borrower sends its bank a PDF.
@@ -40,8 +40,8 @@ The leverage ratio looks healthy, the covenant passes, and nobody notices.
 </aside>
 
 Most document-AI demos show a chatbot answering questions about a PDF.
-That is useful, but it is not the problem banks have most of the time.
-The everyday problem is turning documents into **data**: values that flow into credit models, risk limits, and regulatory reports, where a near miss is a defect.
+That is nice, but it is not the problem banks have most of the time.
+The everyday problem is turning documents into **useful data** (i.e., values that flow into credit models, risk limits, and regulatory reports, where a near miss is a defect).
 Multimodal LLMs made the reading part dramatically easier.
 They did not make the *trusting* part any easier.
 
@@ -49,14 +49,14 @@ I have spent a good part of the last year building and comparing document ingest
 This post distills what I learned into a vendor-neutral guide for AI engineers.
 I'll cover:
 
-1. **Why financial documents are hard** for machines, and the specific traps that break naive pipelines.
+1. **Why financial documents are hard** for AI, and the specific traps that I've seen breaking real-world pipelines.
 2. **Retrieval vs. extraction:** the single decision that shapes everything else.
 3. **Three architecture archetypes**, from RAG to per-page extraction with proof, with Python code for the parts that matter.
 4. **How to measure quality** and how to pick the right archetype for your use case.
 
 # Why Financial Documents Are Hard
 
-A PDF is not a document in the way a human thinks of one.
+A PDF is not a document in the way you as a hu human thinks of one.
 It is a set of drawing instructions: put this glyph at these coordinates, draw a line from here to there, paint this image in that rectangle.
 There is no "table", no "row", no "column header".
 Those are things *you* see, because your brain groups the glyphs.
