@@ -14,8 +14,8 @@ keywords:
   - Structured output
   - Banking AI
   - PDF parsing
-image: ../img/posts/2026/2026-11-11/squared.jpg
-share-img: ../img/posts/2026/2026-11-11/cover.jpg
+image: ../img/posts/2026/2026-11-11/konstantinopel_squared.jpg
+share-img: ../img/posts/2026/2026-11-11/konstantinopel.jpg
 show-avatar: false
 toc: true
 mathjax: false
@@ -55,7 +55,7 @@ I'll cover:
 4. How to measure quality and how to pick the right archetype for your use case.
 
 <figure class="jb_picture">
-  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2026/2026-11-11/cover.jpg alt: "Bronze horse sculpture Konstantinopel (Hästen) by Sivert Lindblom at Blasieholmstorg, Stockholm" %}
+  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2026/2026-11-11/konstantinopel.jpg alt: "Bronze horse sculpture Konstantinopel (Hästen) by Sivert Lindblom at Blasieholmstorg, Stockholm" %}
   <figcaption class="stroke">
    &#169; A faithful copy is only as trustworthy as your ability to trace it back to the original. Photo taken at Blasieholmstorg, a historic square in central Stockholm, near Kungsträdgården. The bronze horse is <em>Konstantinopel (Hästen)</em>, created by Swedish artist <a href="https://en.wikipedia.org/wiki/Sivert_Lindblom">Sivert Lindblom</a> in 1989. It is a replica of one of the <a href="https://en.wikipedia.org/wiki/Horses_of_Saint_Mark">Horses of Saint Mark</a> in Venice, whose history traces back to Constantinople and the Fourth Crusade in 1204.
   </figcaption>
