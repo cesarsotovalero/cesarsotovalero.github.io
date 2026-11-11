@@ -63,8 +63,8 @@ I'll cover:
 
 # Why Financial Documents Are Hard
 
-A PDF is not a document in the way you as a human amy think of it.
-It is a set of drawing instructions: put this glyph at these coordinates, draw a line from here to there, paint this image in that rectangle etc..
+A PDF is not a document in the way you as a human may think of it.
+It is a set of drawing instructions: put this glyph at these coordinates, draw a line from here to there, paint this image in that rectangle, etc.
 There is no "table", no "row", no "column header".
 Those are things *you* see, because your brain groups the glyphs.
 
@@ -533,7 +533,7 @@ Before you ship, check the pipeline against this list:
 Multimodal LLMs turned financial document reading from a research problem into an API call.
 That is great news, and also a trap: it makes it easy to build a pipeline that is impressive in a demo and unaccountable in production.
 
-Here's the 5 core lessons from this post:
+Here are the 5 core lessons from this post:
 
 1. **Decide whether you retrieve or extract before you choose any tool.** They are different products with different failure modes.
 2. **Never store a number you cannot point to.** A quote is good; a page and a box are better.
