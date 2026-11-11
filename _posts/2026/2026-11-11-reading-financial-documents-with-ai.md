@@ -14,8 +14,8 @@ keywords:
   - Structured output
   - Banking AI
   - PDF parsing
-image: ../img/posts/2026/2026-11-11/TODO_cover.jpg
-share-img: ../img/posts/2026/2026-11-11/TODO_cover.jpg
+image: ../img/posts/2026/2026-11-11/squared.jpg
+share-img: ../img/posts/2026/2026-11-11/cover.jpg
 show-avatar: false
 toc: true
 mathjax: false
@@ -49,15 +49,22 @@ I have spent a good part of the last year building and comparing document ingest
 This post distills what I learned into a vendor-neutral guide for AI engineers.
 I'll cover:
 
-1. **Why financial documents are hard** for AI, and the specific traps that I've seen breaking real-world pipelines.
-2. **Retrieval vs. extraction:** the single decision that shapes everything else.
-3. **Three architecture archetypes**, from RAG to per-page extraction with proof, with Python code for the parts that matter.
-4. **How to measure quality** and how to pick the right archetype for your use case.
+1. Why financial documents are hard for AI, and the specific traps that I've seen breaking real-world pipelines.
+2. Retrieval vs. extraction: the single decision that shapes everything else.
+3. Three architecture archetypes, from RAG to per-page extraction with proof, with Python code for the parts that matter.
+4. How to measure quality and how to pick the right archetype for your use case.
+
+<figure class="jb_picture">
+  {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2026/2026-11-11/cover.jpg alt: "Bronze horse sculpture Konstantinopel (Hästen) by Sivert Lindblom at Blasieholmstorg, Stockholm" %}
+  <figcaption class="stroke">
+   &#169; A faithful copy is only as trustworthy as your ability to trace it back to the original. Photo taken at Blasieholmstorg, a historic square in central Stockholm, near Kungsträdgården. The bronze horse is <em>Konstantinopel (Hästen)</em>, created by Swedish artist <a href="https://en.wikipedia.org/wiki/Sivert_Lindblom">Sivert Lindblom</a> in 1989. It is a replica of one of the <a href="https://en.wikipedia.org/wiki/Horses_of_Saint_Mark">Horses of Saint Mark</a> in Venice, whose history traces back to Constantinople and the Fourth Crusade in 1204.
+  </figcaption>
+</figure>
 
 # Why Financial Documents Are Hard
 
-A PDF is not a document in the way you as a hu human thinks of one.
-It is a set of drawing instructions: put this glyph at these coordinates, draw a line from here to there, paint this image in that rectangle.
+A PDF is not a document in the way you as a human amy think of it.
+It is a set of drawing instructions: put this glyph at these coordinates, draw a line from here to there, paint this image in that rectangle etc..
 There is no "table", no "row", no "column header".
 Those are things *you* see, because your brain groups the glyphs.
 
@@ -156,7 +163,7 @@ They are patterns, and real systems often combine them.
   </figcaption>
 </figure>
 
-## A. Retrieve and Answer
+## Retrieve and Answer (A)
 
 This is the familiar RAG pipeline, with one twist that matters a lot in finance: spreadsheets take a different path.
 
@@ -184,7 +191,7 @@ Archetype A is cheap per question and scales to thousands of documents.
 Its limit is in the output: a number inside a prose answer is unverified text.
 If you need that number in a database, you need archetype B or C.
 
-## B. Whole-File Extraction with Evidence
+## Whole-File Extraction with Evidence (B)
 
 Archetype B sends the whole document to a multimodal model in one call and asks for a fixed list of metrics.
 The key idea is that the model must return **evidence** with every value: the page it read it from and a verbatim quote of the printed line.
@@ -321,7 +328,7 @@ Long reports strain attention, and models are known to use the middle of a long 
 Dense pages with dozens of values lose some of them.
 And a quote gives you a page, not a location on it, so a reviewer still has to hunt for the number.
 
-## C. Per-Page Extraction with Proof
+## Per-Page Extraction with Proof (C)
 
 Archetype C inverts the trade-off.
 Code renders every page as an image (around 200 dpi is a good default) and pairs it with that page's text layer.
@@ -523,10 +530,10 @@ Before you ship, check the pipeline against this list:
 
 # Conclusion
 
-Multimodal LLMs turned document reading from a research problem into an API call.
+Multimodal LLMs turned financial document reading from a research problem into an API call.
 That is great news, and also a trap: it makes it easy to build a pipeline that is impressive in a demo and unaccountable in production.
 
-If I had to compress this post into five lessons, they would be these:
+Here's the 5 core lessons from this post:
 
 1. **Decide whether you retrieve or extract before you choose any tool.** They are different products with different failure modes.
 2. **Never store a number you cannot point to.** A quote is good; a page and a box are better.
@@ -535,7 +542,7 @@ If I had to compress this post into five lessons, they would be these:
 5. **Measure wrong auto-approvals, not accuracy.** In finance, the expensive error is the confident one.
 
 The model will keep getting better.
-The need to prove where a number came from will not go away.
+However, the need to prove where a number came from will not go away anytime soon.
 
 # Footnotes
 
