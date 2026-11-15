@@ -5,43 +5,29 @@ gem 'csv'
 gem 'observer'
 gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
 
-# Jekyll gems
+# Jekyll and the plugins listed under `plugins:` in _config.yml
 gem 'jekyll', '4.3.2'
+gem 'jekyll-feed'
+gem 'jekyll-last-modified-at'
 gem 'jekyll-paginate'
-gem 'jekyll-sitemap'
-gem 'jekyll-tagging', git: 'https://github.com/pattex/jekyll-tagging', branch: 'master'
-gem 'jekyll-bits'
-gem 'jekyll-plantuml'
 gem 'jekyll-responsive-image'
 gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
 gem 'jekyll-toc'
-gem 'jekyll-mermaid'
-gem "jekyll-feed"
-gem 'jekyll-gist'
-
-# Non-jekyll gems
 gem 'jemoji'
-gem 'webrick'
-gem 'fastimage'
-gem 'rmagick'
-gem 'jslint'
-gem 'html-proofer'
+
+# Required by the custom plugins in _plugins/
+gem 'jekyll-plantuml'
+gem 'jekyll-tagging', git: 'https://github.com/pattex/jekyll-tagging', branch: 'master'
+gem 'nuggets'
+
+# Libraries used directly by the build
+gem 'json'
 gem 'kramdown'
 gem 'liquid'
-gem 'mail'
 gem 'nokogiri'
-gem 'nuggets'
-gem 'pygments.rb'
-gem 'rainbow'
-gem 'rake'
-gem 'redcarpet'
-gem 'rubocop'
-gem 'rubocop-rspec'
-gem 'sass'
-gem 'scss_lint'
-gem 'trollop'
-gem 'uuidtools'
-gem 'w3c_validators'
-gem "sprockets", "~> 3.7"
-gem 'json'
-gem 'jekyll-last-modified-at'
+gem 'rmagick' # jekyll-responsive-image
+
+# Local server and CI checks
+gem 'html-proofer'
+gem 'webrick'

@@ -9,6 +9,10 @@ cd "$(dirname "$0")"
 export RBENV_VERSION="3.4.4"
 eval "$(rbenv init -)"
 
+# File names with non-ASCII characters break the build under a non-UTF-8 locale.
+export LANG="${LANG:-en_US.UTF-8}"
+export LC_ALL="${LC_ALL:-$LANG}"
+
 # Pre-build scripts
 python3 scripts/tag_generator.py
 python3 scripts/sync_talks_from_page.py
