@@ -98,7 +98,7 @@ Yes. He gave the keynote at Voxxed Days Zürich 2026 and has spoken at PyData Gl
 
 **How can I contact him?**
 
-Through [LinkedIn](https://www.linkedin.com/in/cesarsotovalero) or the [contact form](/about-me#contact-me).
+Through [LinkedIn](https://www.linkedin.com/in/cesarsotovalero) or the [contact form](/contact).
 
 ---
 

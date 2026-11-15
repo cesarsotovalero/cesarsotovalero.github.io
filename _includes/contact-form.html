@@ -1,0 +1,70 @@
+{% comment %}
+  Accessible contact form, delivered by Formspree.
+  Works without JavaScript (plain POST); with JavaScript it submits in place and shows the result.
+  Parameters: topic (optional) preselects the topic, e.g. {% include contact-form.html topic="speaking" %}
+{% endcomment %}
+<form id="contact-form" class="contact-form" action="https://formspree.io/f/mrgqpknn" method="POST">
+   <div class="contact-field">
+      <label for="contact-name">Name</label>
+      <input id="contact-name" type="text" name="name" autocomplete="name" required>
+   </div>
+
+   <div class="contact-field">
+      <label for="contact-email">Email <span class="contact-hint">(so I can reply)</span></label>
+      <input id="contact-email" type="email" name="email" autocomplete="email" required>
+   </div>
+
+   <div class="contact-field">
+      <label for="contact-topic">Topic</label>
+      <select id="contact-topic" name="topic">
+         <option value="Speaking invitation"{% if include.topic == "speaking" %} selected{% endif %}>Speaking invitation</option>
+         <option value="Mentoring or advisory"{% if include.topic == "advisory" %} selected{% endif %}>Mentoring or advisory</option>
+         <option value="Research collaboration"{% if include.topic == "research" %} selected{% endif %}>Research collaboration</option>
+         <option value="Something else"{% unless include.topic %} selected{% endunless %}>Something else</option>
+      </select>
+   </div>
+
+   <div class="contact-field">
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message" name="message" rows="6" required></textarea>
+   </div>
+
+   <input type="hidden" name="_subject" value="New message from cesarsotovalero.net">
+   <input type="hidden" name="_next" value="{{ site.url }}/contact/thanks">
+   <!-- Honeypot: humans never see or fill this field. -->
+   <div class="contact-honeypot" aria-hidden="true">
+      <label for="contact-gotcha">Leave this field empty</label>
+      <input id="contact-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+   </div>
+
+   <button type="submit" class="contact-submit">Send message</button>
+   <p class="contact-privacy">Your message is delivered to my inbox through <a href="https://formspree.io/legal/privacy-policy">Formspree</a>. I only use your email address to reply.</p>
+   <p class="contact-status" role="status" aria-live="polite"></p>
+</form>
+
+<script>
+(function () {
+   var form = document.getElementById('contact-form');
+   if (!form || !window.fetch || !window.FormData) return;
+   var status = form.querySelector('.contact-status');
+   var button = form.querySelector('.contact-submit');
+   form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      button.disabled = true;
+      status.className = 'contact-status';
+      status.textContent = 'Sending…';
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+         .then(function (response) {
+            if (!response.ok) throw new Error(response.status);
+            form.reset();
+            status.className = 'contact-status contact-status--ok';
+            status.textContent = 'Thanks, your message is on its way. I will reply to the email address you gave.';
+         })
+         .catch(function () {
+            status.className = 'contact-status contact-status--error';
+            status.innerHTML = 'Sorry, the message could not be sent. Please try again, or reach me on <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>.';
+         })
+         .then(function () { button.disabled = false; });
+   });
+})();
+</script>

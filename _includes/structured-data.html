@@ -42,6 +42,11 @@
   "award": {{ profile.awards | jsonify }},
   "knowsAbout": {{ profile.expertise | jsonify }},
   "subjectOf": { "@type": "WebPage", "url": "{{ site.url }}/ai-for-finance", "name": "Applied AI for Finance" },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Speaking invitations, advisory, and research collaboration",
+    "url": "{{ site.url }}/contact"
+  },
   "sameAs": [
     "https://github.com/{{ site.author.github }}",
     "https://www.linkedin.com/in/{{ site.author.linkedin }}",
