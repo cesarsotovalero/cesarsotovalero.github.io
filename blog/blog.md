@@ -58,8 +58,8 @@ description: "Blog posts written by Cesar Soto Valero"
       <div class="post-entry-container">
          {% if post.image %}
          <div class="post-image" style="height: auto; width: auto;">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-               <img src="{{ post.image }}" alt="{{ post.image }}"> </a></div>
+            <a href="{{ post.url | prepend: site.baseurl }}" tabindex="-1" aria-hidden="true">
+               <img src="{{ post.image | thumbnail }}" alt="" loading="lazy" decoding="async"> </a></div>
          {% endif %}
          <div class="post-entry">
             {{ post.description | strip_html | xml_escape | truncatewords: site.excerpt_length }} {% assign excerpt_word_count = post.excerpt

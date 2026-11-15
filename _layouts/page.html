@@ -17,8 +17,11 @@ layout: base
 
 <!-- https://www.bryanbraun.com/anchorjs/ -->
 <script>
-   anchors.options = {
-      position: 'left'
-   };
-   anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
+   document.addEventListener('DOMContentLoaded', function () {
+      if (!window.anchors) return;
+      anchors.options = {
+         position: 'left'
+      };
+      anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
+   });
 </script>
