@@ -1,111 +1,75 @@
+{% comment %}
+  Profile links shown as icons. Each link has one accessible name (aria-label);
+  the icon itself is decorative (alt="").
+{% endcomment %}
+{% capture icon_attrs %}alt="" aria-hidden="true" width="24" height="24" style="width: 24px; height: 24px;"{% endcapture %}
 <ul class="list-inline text-center footer-links black-icons" id="list-of-social-icons">
 	{% if site.author.linkedin and site.footer-links-active.linkedin %}
 	<li data-brand="linkedin">
-		<a href="https://linkedin.com/in/{{ site.author.linkedin }}" style="color: black" title="My LinkedIn Profile">
-                                         <span aria-hidden="true" class="fa-stack fa">
-                                           <img alt="My LinkedIn Profile" src="{{ site.baseurl }}/img/icons/linkedin.svg" style="width: 24px; height: 24px;">
-                                         </span>
-			<span class="sr-only">LinkedIn</span>
+		<a href="https://linkedin.com/in/{{ site.author.linkedin }}" aria-label="LinkedIn" title="LinkedIn">
+			<img src="{{ site.baseurl }}/img/icons/linkedin.svg" {{ icon_attrs }}>
 		</a>
 	</li>
 	{% endif %}
 	{% if site.author.youtube and site.footer-links-active.youtube %}
 	<li data-brand="youtube">
-		<a href="https://www.youtube.com/{{ site.author.youtube }}" style="color: black" title="My YouTube Channel">
-                      <span aria-hidden="true" class="fa-stack fa">
-                           <img alt="My YouTube Channel" src="{{ site.baseurl }}/img/icons/youtube.svg" style="width: 24px; height: 24px;">
-                      </span>
-			<span class="sr-only">YouTube</span>
+		<a href="https://www.youtube.com/{{ site.author.youtube }}" aria-label="YouTube" title="YouTube">
+			<img src="{{ site.baseurl }}/img/icons/youtube.svg" {{ icon_attrs }}>
 		</a>
 	</li>
 	{% endif %}
 	{% if site.author.github and site.footer-links-active.github %}
 	<li data-brand="github">
-		<a href="https://github.com/{{ site.author.github }}" title="My GitHub Profile">
-              <span aria-hidden="true" class="fa-stack fa">
-                <img alt="My GitHub Profile" src="{{ site.baseurl }}/img/icons/github.svg" style="width: 24px; height: 24px;">
-              </span>
-			<span class="sr-only">GitHub</span>
+		<a href="https://github.com/{{ site.author.github }}" aria-label="GitHub" title="GitHub">
+			<img src="{{ site.baseurl }}/img/icons/github.svg" {{ icon_attrs }}>
 		</a>
 	</li>
 	{% endif %}
 	{% if site.author.twitter and site.footer-links-active.twitter %}
 	<li data-brand="x">
-		<a href="https://twitter.com/{{ site.author.twitter }}" style="color: black" title="My X profile">
-			<span aria-hidden="true" class="fa-stack fa">
-				<img alt="DBLP" src="{{ site.baseurl }}/img/icons/x.svg" style="width: 24px; height: 24px;">
-			</span>
+		<a href="https://twitter.com/{{ site.author.twitter }}" aria-label="X (Twitter)" title="X (Twitter)">
+			<img src="{{ site.baseurl }}/img/icons/x.svg" {{ icon_attrs }}>
 		</a>
 	</li>
 	{% endif %}
 	{% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
 	<li data-brand="stackoverflow">
-		<a href="https://stackoverflow.com/users/{{ site.author.stackoverflow}}" style="color: black" title="My StackOverflow Profile">
-                        <span aria-hidden="true" class="fa-stack fa">
-                          <img alt="StackOverflow" src="{{ site.baseurl }}/img/icons/stackoverflow.svg" style="width: 24px; height: 24px;">
-                        </span>
-			<span class="sr-only">StackOverflow</span>
+		<a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" aria-label="Stack Overflow" title="Stack Overflow">
+			<img src="{{ site.baseurl }}/img/icons/stackoverflow.svg" {{ icon_attrs }}>
 		</a>
 	</li>
 	{% endif %}
 	<li data-brand="researchgate">
-		<a href="https://www.researchgate.net/profile/Cesar_Soto-Valero" style="color: black" title="My ResearchGate Profile">
-			<span aria-hidden="true" class="fa-stack fa">
-				<img alt="ResearchGate" src="{{ site.baseurl }}/img/icons/researchgate.svg" style="width: 24px; height: 24px;">
-			</span>
+		<a href="https://www.researchgate.net/profile/Cesar_Soto-Valero" aria-label="ResearchGate" title="ResearchGate">
+			<img src="{{ site.baseurl }}/img/icons/researchgate.svg" {{ icon_attrs }}>
 		</a>
 	</li>
 	<li data-brand="googlescholar">
-		<a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en" style="color: black" title="My Google Scholar Profile">
-				<span aria-hidden="true" class="fa-stack fa">
-					<img alt="Google Scholar" src="{{ site.baseurl }}/img/icons/googlescholar.svg" style="width: 24px; height: 24px;">
-					<span class="sr-only">Google Scholar</span>
-				</span>
+		<a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en" aria-label="Google Scholar" title="Google Scholar">
+			<img src="{{ site.baseurl }}/img/icons/googlescholar.svg" {{ icon_attrs }}>
 		</a>
 	</li>
 	<li data-brand="dblp">
-		<a href="https://dblp.uni-trier.de/pers/s/Soto=Valero:C=eacute=sar.html" style="color: black" title="My dblp Profile">
-			<span aria-hidden="true" class="fa-stack fa">
-			<img alt="DBLP" src="{{ site.baseurl }}/img/icons/dblp.svg" style="width: 24px; height: 24px;">
-			<span class="sr-only">DBLP</span>
-			</span>
+		<a href="https://dblp.uni-trier.de/pers/s/Soto=Valero:C=eacute=sar.html" aria-label="dblp" title="dblp">
+			<img src="{{ site.baseurl }}/img/icons/dblp.svg" {{ icon_attrs }}>
 		</a>
 	</li>
 	<li data-brand="orcid">
-		<a href="https://orcid.org/0000-0003-0541-6411" style="color: black" title="My ORCID Id">
-			<span aria-hidden="true" class="fa-stack fa">
-			<img alt="ORCID" src="{{ site.baseurl }}/img/icons/orcid.svg" style="width: 24px; height: 24px;">
-			</span>
+		<a href="https://orcid.org/0000-0003-0541-6411" aria-label="ORCID" title="ORCID">
+			<img src="{{ site.baseurl }}/img/icons/orcid.svg" {{ icon_attrs }}>
 		</a>
 	</li>
-	{% if site.author.reddit and site.footer-links-active.reddit %}
-	<li data-brand="reddit">
-		<a href="https://reddit.com/u/{{ site.author.reddit }}" style="color: black" title="Reddit">
-              <span aria-hidden="true" class="fa-stack fa">
-                <i class="fa fa-circle fa-stack-1x"></i>
-                <i class="fa fa-reddit fa-stack-1x"></i>
-              </span>
-			<span class="sr-only">Reddit</span>
-		</a>
-	</li>
-	{% endif %}
 	{% if site.author.email and site.footer-links-active.email %}
 	<li data-brand="gmail">
-		<a href="mailto:{{ site.author.email }}" style="color: black" title="Email me">
-              <span aria-hidden="true" class="fa-stack fa">
-                <img alt="Gmail" src="{{ site.baseurl }}/img/icons/gmail.svg" style="width: 24px; height: 24px;">
-              </span>
-			<span class="sr-only">Email me</span>
+		<a href="mailto:{{ site.author.email }}" aria-label="Email" title="Email">
+			<img src="{{ site.baseurl }}/img/icons/gmail.svg" {{ icon_attrs }}>
 		</a>
 	</li>
 	{% endif %}
 	{% if site.footer-links-active.rss %}
 	<li data-brand="rss">
-		<a href="{{ '/feed.xml' | prepend: site.baseurl }}" style="color: black" title="RSS">
-              <span aria-hidden="true" class="fa-stack fa">
-                 <img alt="RSS" src="{{ site.baseurl }}/img/icons/rss.svg" style="width: 24px; height: 24px;">
-              </span>
-			<span class="sr-only">RSS</span>
+		<a href="{{ '/feed.xml' | prepend: site.baseurl }}" aria-label="RSS feed" title="RSS feed">
+			<img src="{{ site.baseurl }}/img/icons/rss.svg" {{ icon_attrs }}>
 		</a>
 	</li>
 	{% endif %}
