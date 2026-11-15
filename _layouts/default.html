@@ -23,9 +23,11 @@ common-js:
 
 <body>
 
+<a class="skip-link" href="#main">Skip to main content</a>
+
 {% include nav.html %}
 
-<div class="container main-content" role="main">
+<div class="container main-content" role="main" id="main" tabindex="-1">
   {{ content }}
 </div>
 

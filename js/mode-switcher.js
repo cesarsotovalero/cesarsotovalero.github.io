@@ -3,11 +3,21 @@ let theme = localStorage.getItem('theme');
 // For system default detection:
 let systemInitiatedDark = window.matchMedia('(prefers-color-scheme: dark)');
 
+// Update every toggle button (desktop navbar and mobile drawer): icon and pressed state.
+function updateToggles(dark) {
+   document.querySelectorAll('.theme-toggle').forEach(function (button) {
+      button.innerHTML = dark
+         ? '<i class="fas fa-sun fa-lg" aria-hidden="true"></i>'
+         : '<i class="fas fa-adjust fa-lg" aria-hidden="true"></i>';
+      button.setAttribute('aria-pressed', dark ? 'true' : 'false');
+   });
+}
+
 // Helper to set dark mode
 function setThemeToDark() {
    document.documentElement.setAttribute('data-theme', 'dark');
    localStorage.setItem('theme', 'dark');
-   document.getElementById("theme-toggle").innerHTML = "<i class=\"fas fa-sun fa-lg\"></i>";
+   updateToggles(true);
    setHighlightMode(true);
    reloadGiscus();
 }
@@ -16,7 +26,7 @@ function setThemeToDark() {
 function setThemeToLight() {
    document.documentElement.setAttribute('data-theme', 'light');
    localStorage.setItem('theme', 'light');
-   document.getElementById("theme-toggle").innerHTML = "<i class=\"fas fa-adjust fa-lg\"></i>";
+   updateToggles(false);
    setHighlightMode(false);
    reloadGiscus();
 }

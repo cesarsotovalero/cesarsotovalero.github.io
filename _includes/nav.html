@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main">
    <!-- Hamburger toggle (visible on mobile only via Bootstrap) -->
    <button class="navbar-toggle" type="button" commandfor="drawer-menu" command="show-modal" aria-label="Toggle navigation">
-      <span><i class="fas fa-bars"></i></span>
+      <span><i class="fas fa-bars" aria-hidden="true"></i></span>
    </button>
 
    <!-- Desktop: inline nav links (visible >= 768px) -->
@@ -12,7 +12,7 @@
    <!-- Mobile: dialog-based drawer (works without JS via invoker commands) -->
    <dialog class="drawer-panel" id="drawer-menu" closedby="any">
       <button class="drawer-close" type="button" commandfor="drawer-menu" command="close" aria-label="Close navigation">
-         <i class="fas fa-times"></i>
+         <i class="fas fa-times" aria-hidden="true"></i>
       </button>
       <ul class="drawer-nav-list">
          <li><a href="{{ site.url }}">Home</a></li>
@@ -41,7 +41,7 @@
             {% endif %}
          {% endfor %}
          <li>
-            <a href="#" id="theme-toggle" onclick="modeSwitcher(); return false;" style="cursor: pointer;"><i class="fas fa-adjust fa-lg"></i></a>
+            <button type="button" class="theme-toggle" onclick="modeSwitcher()" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode"><i class="fas fa-adjust fa-lg" aria-hidden="true"></i></button>
          </li>
       </ul>
    </dialog>

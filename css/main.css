@@ -334,7 +334,7 @@ em {
 
 .post-categories {
   /*background-color: gray;*/
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
   margin-right: 4px;
@@ -345,7 +345,7 @@ em {
 
 .post-categories-tags {
   /*background-color: gray;*/
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
   margin-right: 4px;
@@ -960,11 +960,11 @@ dialog.drawer-panel[open]::backdrop {
 }
 
 
-#theme-toggle:hover .fa-moon {
+.theme-toggle:hover .fa-moon {
   color: var(--main-background-color);
 }
 
-#theme-toggle:hover .fa-sun {
+.theme-toggle:hover .fa-sun {
   color: var(--main-text-color);
 }
 
@@ -1314,7 +1314,7 @@ footer .theme-by {
   font-size: 16px;
   line-height: 20px;
   text-align: left;
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-style: normal;
 }
 
@@ -1676,7 +1676,7 @@ p.post-meta {
 }
 
 #full-tags-list .tag-entry .entry-date {
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-size: 16px;
 }
 
@@ -2585,7 +2585,7 @@ ul {
 }
 
 .tag-code {
-  color: #808080;
+  color: var(--post-meta-index-color);
   border-radius: 6px;
   /*text-decoration: underline;*/
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -2750,7 +2750,7 @@ ul {
 }
 
 .blog-tags {
-  color: #808080;
+  color: var(--post-meta-index-color);
 }
 
 /* LAZINESS BLUR EFFECT FOR IMAGES */
@@ -3491,6 +3491,10 @@ a.btn {
 }
 
 #related-posts .title {
+  /* Same look as the former h4. */
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.2px;
   margin: 10px 0 10px 0;
   color: var(--main-text-color);
 }
@@ -4007,7 +4011,7 @@ html[data-theme="light"] {
   --navbar-color: #f0f0f0;
   --footer-color: #f0f0f0;
   --inline-code-color: #f0f0f0;
-  --post-meta-index-color: #808080;
+  --post-meta-index-color: #616161;
   --blockquote-color: darkgreen;
   /*--blockquote-background-color: #f1f1f1;*/
   --blockquote-background-color: #FFEDDE;
@@ -4087,4 +4091,85 @@ html[data-theme="dark"] #footnotediv {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
+}
+
+
+/* ---------- Accessibility ---------- */
+
+/* Skip link: hidden until focused with the keyboard. */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -100px;
+  z-index: 2000;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #042742;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 8px;
+  color: #fff;
+}
+
+/* The skip-link target receives focus programmatically; no outline needed there. */
+#main:focus {
+  outline: none;
+}
+
+/* Visible keyboard focus everywhere (Bootstrap 3's default is faint on the cream background). */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+  outline: 3px solid #4a7bd0;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Theme toggle is a <button>; make it look like the other navbar items.
+   Desktop: same height as the nav links (still above the 24px WCAG minimum).
+   Mobile drawer: 44px touch target. */
+.theme-toggle {
+  min-width: 32px;
+  min-height: 27px;
+  padding: 0 8px;
+  border: 0;
+  background: none;
+  color: var(--main-text-color);
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.drawer-nav-list .theme-toggle {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* "See all" links: larger touch target without changing their look. */
+.index-see-all a {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
