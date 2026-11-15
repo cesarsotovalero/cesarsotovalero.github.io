@@ -16,9 +16,10 @@ if (Test-Path $imPatch) {
 # Pre-build scripts (non-fatal)
 $env:PYTHONUTF8 = "1"
 $ErrorActionPreference = "Continue"
-python -m pip install pyyaml --quiet 2>$null
+python -m pip install pyyaml pillow --quiet 2>$null
 python scripts/tag_generator.py 2>$null
 python scripts/sync_talks_from_page.py 2>$null
+python scripts/make_thumbnails.py 2>$null
 $ErrorActionPreference = "Stop"
 
 # Kill any existing process on port 4000

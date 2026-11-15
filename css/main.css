@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 @import url("custom-fonts.css");
 
 /* --- General --- */
@@ -1080,7 +1078,7 @@ dialog.drawer-panel[open]::backdrop {
   margin-top: 1rem;
   border-top: 0.1875rem double #fff;
   padding-top: 1rem;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -1310,7 +1308,7 @@ footer .theme-by {
 }
 
 .highligher-rouge {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
@@ -1791,7 +1789,7 @@ p.post-meta {
   padding: 5px 10px;
   font-size: 11px;
   color: #EEE;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
   right: 0;
   bottom: 0;
   display: none;
@@ -2453,7 +2451,7 @@ input.gsc-input,
 }
 
 .general-button {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -2588,7 +2586,7 @@ ul {
   color: #808080;
   border-radius: 6px;
   /*text-decoration: underline;*/
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
 }
 
@@ -2801,7 +2799,7 @@ ul {
 
 /* gisqus */
 .giscus {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .firstcharacter {
@@ -4087,4 +4085,30 @@ html[data-theme="dark"] #footnotediv {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
+}
+
+/* Footer social links: static icons instead of third-party badge images. */
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 24px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  color: var(--main-text-color);
+}
+
+.footer-social img {
+  width: 20px;
+  height: 20px;
+  filter: invert(var(--media-icon-color));
 }
