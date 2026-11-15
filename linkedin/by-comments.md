@@ -4,6 +4,8 @@ permalink: /linkedin/by-comments
 title: LinkedIn Posts by Comments
 description: LinkedIn posts by César Soto Valero, sorted by number of comments.
 published: true
+sitemap: false
+noindex: true
 ---
 
 <!-- markdownlint-disable MD033 -->

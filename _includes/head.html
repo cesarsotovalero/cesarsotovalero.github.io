@@ -13,7 +13,19 @@
    <meta charset="utf-8"/>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-   <title>{{ page.title }}</title>
+   {% if page.url == "/" %}
+   {% assign doc_title = site.title | append: " · Applied AI for Finance" %}
+   {% elsif page.title and page.title contains site.title %}
+   {% assign doc_title = page.title %}
+   {% elsif page.title %}
+   {% assign doc_title = page.title | append: " · " | append: site.title %}
+   {% else %}
+   {% assign doc_title = site.title %}
+   {% endif %}
+   <title>{{ doc_title | strip_html | escape }}</title>
+   {% if page.noindex %}
+   <meta name="robots" content="noindex, follow">
+   {% endif %}
 
    {% if page.keywords %}
    <meta name="keywords" content="{{ page.keywords }}">
@@ -37,15 +49,7 @@
    <!-- D3 -->
    <script src="https://d3js.org/d3.v7.min.js"></script>
 
-   <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
-   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-107061705-1');
-   </script>
+   {% include analytics.html %}
 
 
    <!-- Generate anchors to link to every heading in a Jekyll blog post -->
@@ -97,6 +101,15 @@
 
    {% capture seo_out %}{% seo title=false %}{% endcapture %}
    {% comment %} Drop jekyll-seo-tag's JSON-LD; structured-data.html emits a richer, linked graph. {% endcomment %}
+   {% unless page.image %}
+   {% capture default_card %}<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="{{ site.url }}{{ site.social-card.image }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="{{ site.social-card.alt }}" />
+<meta property="twitter:image" content="{{ site.url }}{{ site.social-card.image }}" />{% endcapture %}
+   {% assign seo_out = seo_out | replace: '<meta name="twitter:card" content="summary" />', default_card %}
+   {% endunless %}
    {% assign seo_parts = seo_out | split: '<script type="application/ld+json">' %}
    {% assign seo_tail = seo_parts[1] | split: '</script>' %}
    {{ seo_parts[0] }}{% for t in seo_tail offset: 1 %}{{ t }}{% unless forloop.last %}</script>{% endunless %}{% endfor %}
