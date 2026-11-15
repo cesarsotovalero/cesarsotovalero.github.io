@@ -9,7 +9,7 @@ function setThemeToDark() {
    localStorage.setItem('theme', 'dark');
    document.getElementById("theme-toggle").innerHTML = "<i class=\"fas fa-sun fa-lg\"></i>";
    setHighlightMode(true);
-   loadGiscus();
+   reloadGiscus();
 }
 
 // Helper to set light mode
@@ -18,7 +18,12 @@ function setThemeToLight() {
    localStorage.setItem('theme', 'light');
    document.getElementById("theme-toggle").innerHTML = "<i class=\"fas fa-adjust fa-lg\"></i>";
    setHighlightMode(false);
-   loadGiscus();
+   reloadGiscus();
+}
+
+// Giscus comments are only loaded on posts, so the loader may not exist on this page.
+function reloadGiscus() {
+   if (typeof loadGiscus === "function") loadGiscus();
 }
 
 // Decide which theme to apply on initial load:
@@ -44,11 +49,11 @@ function setHighlightMode(darkMode) {
    const codeLineno = document.getElementsByClassName('lineno');
    if (!codeElement) return; // guard if codeElement not found
    if (darkMode) {
-      codeElement.href = "https://www.cesarsotovalero.net/css/pygment_highlights_dark.css";
-      codeLineno.href = "https://www.cesarsotovalero.net/css/pygment_highlights_dark.css";
+      codeElement.href = "/css/pygment_highlights_dark.css";
+      codeLineno.href = "/css/pygment_highlights_dark.css";
    } else {
-      codeElement.href = "https://www.cesarsotovalero.net/css/pygment_highlights.css";
-      codeLineno.href = "https://www.cesarsotovalero.net/css/pygment_highlights.css";
+      codeElement.href = "/css/pygment_highlights.css";
+      codeLineno.href = "/css/pygment_highlights.css";
    }
 }
 

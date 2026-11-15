@@ -15,3 +15,6 @@ ehthumbs.db
 .jekyll-metadata
 .vscode/
 .playwright-mcp/
+
+# node (CI smoke test)
+node_modules/
