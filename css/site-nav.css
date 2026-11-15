@@ -29,7 +29,7 @@ html {
 /* main.css gives every <li> a bottom margin; none of these lists want it. */
 .site-nav-links li,
 .site-drawer li,
-.section-nav li,
+.section-tabs li,
 .footer-sitemap li,
 .site-footer .footer-social li {
   margin: 0;
@@ -270,9 +270,9 @@ dialog.site-drawer {
   height: 44px;
 }
 
-/* ---------- Section tabs (pages of the current section) ---------- */
+/* ---------- Section tabs (pages of the current section). Not ".section-nav": jekyll-toc uses that class for the post TOC. ---------- */
 
-.section-nav {
+.section-tabs {
   clear: both; /* the page header leaves uncleared Bootstrap columns */
   max-width: 750px;
   margin: -10px auto 32px;
@@ -280,7 +280,7 @@ dialog.site-drawer {
   font-family: var(--nav-font);
 }
 
-.section-nav ul {
+.section-tabs ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -290,7 +290,7 @@ dialog.site-drawer {
   list-style: none;
 }
 
-.section-nav a {
+.section-tabs a {
   display: inline-block;
   padding: 7px 14px;
   border: 1px solid var(--panel-border-color);
@@ -301,12 +301,12 @@ dialog.site-drawer {
   text-decoration: none;
 }
 
-.section-nav a:hover {
+.section-tabs a:hover {
   border-color: var(--main-text-color);
   text-decoration: none;
 }
 
-.section-nav a[aria-current="page"] {
+.section-tabs a[aria-current="page"] {
   border-color: var(--nav-cta-bg);
   background: var(--nav-cta-bg);
   color: var(--nav-cta-fg);
