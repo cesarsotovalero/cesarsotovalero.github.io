@@ -5,15 +5,7 @@ description: "Applied AI for finance, AI engineering, and software research by C
 keywords: "applied AI for finance,investment banking,AI engineering,machine learning,software engineering,research,java,python"
 logo: https://www.cesarsotovalero.net/img/pages/cesar/avatar-icon-2024-stroke.png
 
-navbar-links:
-  Blog: "blog"
-  LinkedIn: "linkedin"
-  YouTube: "youtube"
-  Pods: "podcasts"
-  Talks: "talks"
-  Papers: "publications"
-  Service: "service"
-  About: "about-me"
+# The navbar, mobile menu, section tabs and footer sitemap are defined in _data/navigation.yml.
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar

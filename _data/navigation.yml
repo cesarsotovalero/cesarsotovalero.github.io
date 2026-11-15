@@ -1,0 +1,59 @@
+# Site navigation. One source for the navbar, the mobile menu, the section tabs shown
+# on section pages (_includes/section-nav.html), and the footer sitemap.
+#
+# sections:
+#   title: label in the navbar
+#   url:   where the navbar link goes
+#   match: URL prefixes that belong to the section (used to highlight it)
+#   pages: the section's pages, shown as tabs on those pages and in the footer
+sections:
+  - title: Blog
+    url: /blog
+    match: [/blog, /tag/, /linkedin]
+    pages:
+      - { title: Blog posts, url: /blog }
+      - { title: LinkedIn posts, url: /linkedin }
+      - { title: Posts by tag, url: /blog/tags }
+
+  - title: Talks
+    url: /talks
+    match: [/talks, /youtube, /podcasts, /bio]
+    pages:
+      - { title: Talks, url: /talks }
+      - { title: YouTube videos, url: /youtube }
+      - { title: Podcasts, url: /podcasts }
+      - { title: Speaker bio, url: /bio }
+      - { title: Invite me to speak, url: /talks/invite-me }
+
+  - title: Research
+    url: /publications
+    match: [/publications, /software, /service, /awards, /collaborations, /mining-software-repositories-resources]
+    pages:
+      - { title: Publications, url: /publications }
+      - { title: Software, url: /software }
+      - { title: Academic service, url: /service }
+      - { title: Awards, url: /awards }
+      - { title: Collaborations, url: /collaborations }
+
+  - title: About
+    url: /about-me
+    match: [/about-me, /ai-for-finance, /my-professional-values, /contact, /courses, /races, /competitions]
+    pages:
+      - { title: About me, url: /about-me }
+      - { title: AI for finance, url: /ai-for-finance }
+      - { title: Professional values, url: /my-professional-values }
+
+# Call-to-action button at the right of the navbar.
+cta:
+  title: Contact
+  url: /contact
+
+# Extra column in the footer sitemap.
+footer_contact:
+  title: Get in touch
+  pages:
+    - { title: Contact, url: /contact }
+    - { title: Book a session, url: /book }
+    - { title: Invite me to speak, url: /talks/invite-me }
+    - { title: Résumé (PDF), url: /files/CV/cesar-resume.pdf }
+    - { title: RSS feed, url: /feed.xml }

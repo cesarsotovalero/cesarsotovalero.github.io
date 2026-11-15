@@ -1,0 +1,17 @@
+{% comment %}
+  Tabs linking the pages of the current page's section (from _data/navigation.yml).
+  Shown only on pages listed in a section.
+{% endcomment %}
+{% for section in site.data.navigation.sections %}
+   {% assign in_section = section.pages | where: "url", page.url | first %}
+   {% if in_section %}
+<nav class="section-nav" aria-label="{{ section.title }} pages">
+   <ul>
+      {% for item in section.pages %}
+      <li><a href="{{ site.baseurl }}{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+   </ul>
+</nav>
+      {% break %}
+   {% endif %}
+{% endfor %}
