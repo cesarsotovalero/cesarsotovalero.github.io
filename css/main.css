@@ -211,6 +211,86 @@ a:focus {
   -webkit-text-decoration-color: var(--link-decoration-color);
 }
 
+/* ---------- Accessibility ---------- */
+
+/* Skip link: hidden until focused with the keyboard. */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -100px;
+  z-index: 2000;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #042742;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 8px;
+  color: #fff;
+}
+
+/* The skip-link target receives focus programmatically; no outline needed there. */
+#main:focus {
+  outline: none;
+}
+
+/* Visible keyboard focus everywhere (Bootstrap 3's default is faint on the cream background). */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+  outline: 3px solid #4a7bd0;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Theme toggle is a <button>; make it look like the other navbar items.
+   Desktop: same height as the nav links (still above the 24px WCAG minimum).
+   Mobile drawer: 44px touch target. */
+.theme-toggle {
+  min-width: 32px;
+  min-height: 27px;
+  padding: 0 8px;
+  border: 0;
+  background: none;
+  color: var(--main-text-color);
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.drawer-nav-list .theme-toggle {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* "See all" links: larger touch target without changing their look. */
+.index-see-all a {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   a {
     text-underline-offset: 4px;
@@ -4091,85 +4171,4 @@ html[data-theme="dark"] #footnotediv {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
-}
-
-
-/* ---------- Accessibility ---------- */
-
-/* Skip link: hidden until focused with the keyboard. */
-.skip-link {
-  position: absolute;
-  left: 8px;
-  top: -100px;
-  z-index: 2000;
-  padding: 10px 16px;
-  border-radius: 4px;
-  background: #042742;
-  color: #fff;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.skip-link:focus {
-  top: 8px;
-  color: #fff;
-}
-
-/* The skip-link target receives focus programmatically; no outline needed there. */
-#main:focus {
-  outline: none;
-}
-
-/* Visible keyboard focus everywhere (Bootstrap 3's default is faint on the cream background). */
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible,
-summary:focus-visible,
-[tabindex]:not([tabindex="-1"]):focus-visible {
-  outline: 3px solid #4a7bd0;
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-
-/* Theme toggle is a <button>; make it look like the other navbar items.
-   Desktop: same height as the nav links (still above the 24px WCAG minimum).
-   Mobile drawer: 44px touch target. */
-.theme-toggle {
-  min-width: 32px;
-  min-height: 27px;
-  padding: 0 8px;
-  border: 0;
-  background: none;
-  color: var(--main-text-color);
-  font: inherit;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.drawer-nav-list .theme-toggle {
-  min-width: 44px;
-  min-height: 44px;
-}
-
-/* "See all" links: larger touch target without changing their look. */
-.index-see-all a {
-  display: inline-block;
-  padding: 10px 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
