@@ -152,6 +152,12 @@ defaults:
       carbonads: true
       before-content: [carbonads.html]
 
+# Keep the search index (built by Pagefind after Jekyll) across `jekyll serve` rebuilds.
+keep_files:
+  - .git
+  - .svn
+  - pagefind
+
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
 link-tags: false
 

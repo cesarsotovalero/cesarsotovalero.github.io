@@ -5,6 +5,7 @@ title: Message sent
 subtitle: Thanks for getting in touch
 description: Your message to César Soto Valero has been sent.
 sitemap: false
+noindex: true
 ---
 
 Thanks, your message is on its way. I'll reply to the email address you gave.

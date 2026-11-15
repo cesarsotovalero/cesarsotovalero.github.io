@@ -4017,6 +4017,21 @@ pre .language-mermaid {
   color: var(--main-text-color);
 }
 
+/* LinkedIn/YouTube archive headings are h2 (right under the page h1); keep their previous h3 size. */
+.linkedin-post-title,
+.youtube-video-title,
+.linked-section {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 450px) {
+  .linkedin-post-title,
+  .youtube-video-title,
+  .linked-section {
+    font-size: 22px;
+  }
+}
+
 .youtube-video-description {
   font-size: 1.5rem;
   color: var(--post-meta-index-color);

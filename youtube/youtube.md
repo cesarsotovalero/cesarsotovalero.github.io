@@ -21,12 +21,12 @@ published: true
 
 {% assign sorted_videos = site.data.youtube-videos | sort: "snippet.publishedAt" | reverse %}
 
-<div class="linkedin-posts-container post-preview" style="margin-top: 20px;">
+<div class="linkedin-posts-container post-preview" style="margin-top: 20px;" data-batch="24">
   {% for video in sorted_videos %}
   <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" class="youtube-video-link">
    <div class="youtube-video-card">
     <div class="youtube-video-text">
-      <h3 class="youtube-video-title">{{ video.snippet.title }}</h3>
+      <h2 class="youtube-video-title">{{ video.snippet.title }}</h2>
       <p class="youtube-video-description">
        Published on {{ video.snippet.publishedAt | date: "%b %-d, %Y" }} ·
        {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
@@ -38,9 +38,11 @@ published: true
       </p>
     </div>
     <div class="youtube-video-thumbnail">
-      <img src="{{ video.snippet.thumbnails.medium.url }}" alt="Thumbnail for {{ video.snippet.title | escape }}">
+      <img src="{{ video.snippet.thumbnails.medium.url }}" alt="" loading="lazy" decoding="async">
     </div>
    </div>
   </a>
   {% endfor %}
 </div>
+
+{% include reveal-batches.html %}

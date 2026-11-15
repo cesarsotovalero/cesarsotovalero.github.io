@@ -51,9 +51,9 @@ noindex: true
       {% assign videos_count = videos_count | plus: 1 %}
     {% endif %}
    {% endfor %}
-   <h3 id="{{ range }}" class="linked-section">
+   <h2 id="{{ range }}" class="linked-section">
     <i class="fas fa-eye" aria-hidden="true"></i>&nbsp;{{ range }} ({{ videos_count }} videos)
-   </h3>
+   </h2>
    <div class="post-list">
     {% for video in sorted_videos %}
       {% assign views = video.statistics.viewCount | plus: 0 %}

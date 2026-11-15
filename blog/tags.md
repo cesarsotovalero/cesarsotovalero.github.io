@@ -3,6 +3,7 @@ layout: page
 permalink: /blog/tags
 title: Blog Posts by Tags
 description: "All the tags used in the blog posts written by Cesar Soto Valero"
+pagefind: false
 ---
 
 {% include subscribe.html %}

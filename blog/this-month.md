@@ -3,6 +3,7 @@ layout: page
 permalink: /blog/this-month
 title: Blog Posts This Month
 description: "All the blog posts written this month by Cesar Soto Valero"
+pagefind: false
 ---
 
 {% include subscribe.html %}

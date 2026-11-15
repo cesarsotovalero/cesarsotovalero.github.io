@@ -3,6 +3,7 @@ layout: page
 permalink: /blog/all
 title: Blog Posts by Year
 description: "All the blog posts written by Cesar Soto Valero"
+pagefind: false
 ---
 
 {% include subscribe.html %}

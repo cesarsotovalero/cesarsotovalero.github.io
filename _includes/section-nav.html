@@ -5,7 +5,7 @@
 {% for section in site.data.navigation.sections %}
    {% assign in_section = section.pages | where: "url", page.url | first %}
    {% if in_section %}
-<nav class="section-tabs" aria-label="{{ section.title }} pages">
+<nav class="section-tabs" data-pagefind-ignore aria-label="{{ section.title }} pages">
    <ul>
       {% for item in section.pages %}
       <li><a href="{{ site.baseurl }}{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>

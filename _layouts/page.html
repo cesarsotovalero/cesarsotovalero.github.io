@@ -8,7 +8,7 @@ layout: base
 
 {% include section-nav.html %}
 
-<div class="container" role="main" id="main" tabindex="-1">
+<div class="container" role="main" id="main" tabindex="-1"{% unless page.noindex or page.robots == "noindex" or page.pagefind == false %} data-pagefind-body{% endunless %}>
    <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
          {{ content }}
