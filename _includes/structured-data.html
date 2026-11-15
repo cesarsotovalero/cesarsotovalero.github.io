@@ -1,24 +1,55 @@
 {% assign author = site.data.authors.cesarsotovalero %}
+{% assign profile = site.data.profile %}
 {% assign person_id = site.url | append: '/#person' %}
 {% assign site_id = site.url | append: '/#website' %}
 {% capture person_json %}
 {
   "@type": "Person",
   "@id": "{{ person_id }}",
-  "name": "{{ author.name }}",
+  "name": {{ author.name | jsonify }},
+  "givenName": "César",
+  "familyName": "Soto Valero",
+  "honorificSuffix": "PhD",
   "url": "{{ site.url }}/about-me",
   "image": "{{ site.url }}{{ author.photo }}",
-  "jobTitle": "Senior Data Scientist",
-  "description": "{{ site.data.authors.cesarsotovalero.name }} is a computer scientist, software engineer, and content creator with a PhD in Computer Science from KTH Royal Institute of Technology.",
+  "jobTitle": {{ profile.job_title | jsonify }},
+  "description": {{ profile.summary | jsonify }},
+  "worksFor": {
+    "@type": "Organization",
+    "name": {{ profile.employer.name | jsonify }},
+    "legalName": {{ profile.employer.legal_name | jsonify }},
+    "url": {{ profile.employer.url | jsonify }},
+    "department": { "@type": "Organization", "name": {{ profile.division | jsonify }} }
+  },
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": {{ profile.job_title | jsonify }},
+    "description": {{ profile.career[0].description | jsonify }},
+    "occupationLocation": { "@type": "City", "name": {{ profile.location.city | jsonify }} },
+    "skills": {{ profile.expertise | join: ", " | jsonify }}
+  },
+  "workLocation": {
+    "@type": "Place",
+    "address": { "@type": "PostalAddress", "addressLocality": {{ profile.location.city | jsonify }}, "addressCountry": {{ profile.location.country_code | jsonify }} }
+  },
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "KTH Royal Institute of Technology", "url": "https://www.kth.se" },
-  "knowsAbout": ["Software engineering", "Software supply chain", "Software debloating", "Java", "Artificial intelligence", "Data science"],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "PhD in Computer Science",
+    "credentialCategory": "degree",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "KTH Royal Institute of Technology", "url": "https://www.kth.se" }
+  },
+  "award": {{ profile.awards | jsonify }},
+  "knowsAbout": {{ profile.expertise | jsonify }},
+  "subjectOf": { "@type": "WebPage", "url": "{{ site.url }}/ai-for-finance", "name": "Applied AI for Finance" },
   "sameAs": [
     "https://github.com/{{ site.author.github }}",
     "https://www.linkedin.com/in/{{ site.author.linkedin }}",
     "https://www.youtube.com/{{ site.author.youtube }}",
     "https://stackoverflow.com/users/{{ site.author.stackoverflow | split: '?' | first }}",
     "https://twitter.com/{{ site.author.twitter }}",
-    "https://scholar.google.com/citations?user=jNBoowwAAAAJ"
+    {{ profile.google_scholar | jsonify }},
+    "https://orcid.org/{{ profile.orcid }}"
   ]
 }
 {% endcapture %}
@@ -51,6 +82,18 @@
   "publisher": { "@id": "{{ person_id }}" },
   "isPartOf": { "@id": "{{ site_id }}" }
 }{% endif %}{% endcapture %}
+{% capture page_json %}{% if page.schema_type %},
+{
+  "@type": {{ page.schema_type | jsonify }},
+  "@id": "{{ site.url }}{{ page.url | remove: '.html' }}#webpage",
+  "url": "{{ site.url }}{{ page.url | remove: '.html' }}",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | strip | jsonify }},
+  {% if page.last_modified_at %}"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",{% endif %}
+  "inLanguage": "en",
+  "mainEntity": { "@id": "{{ person_id }}" },
+  "isPartOf": { "@id": "{{ site_id }}" }
+}{% endif %}{% endcapture %}
 <script type="application/ld+json">
-{ "@context": "https://schema.org", "@graph": [{{ person_json }},{{ website_json }}{{ post_json }}] }
+{ "@context": "https://schema.org", "@graph": [{{ person_json }},{{ website_json }}{{ post_json }}{{ page_json }}] }
 </script>

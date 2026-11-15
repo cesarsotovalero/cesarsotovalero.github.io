@@ -1,6 +1,12 @@
 # Milestones timeline - newest first
 # Each entry: date, icon (Font Awesome class or emoji), title, description (optional), link (optional)
 
+- date: "Sep 2026"
+  icon: "fas fa-briefcase"
+  title: "Moved to Investment Banking at SEB"
+  description: "After three years in Financial Crime Prevention, started driving AI solutions within SEB's Investment Banking division."
+  link: "/ai-for-finance"
+
 - date: "Mar 2026"
   icon: "fas fa-video"
   title: "36 YouTube videos published"

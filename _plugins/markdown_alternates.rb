@@ -30,6 +30,11 @@ module MarkdownAlternates
   end
 
   def self.html_to_markdown(text, site_url)
+    # Drop markup that carries no readable content: comments, scripts, styles, forms,
+    # and the "last modified" footer (its date is a Liquid expression).
+    text = text.gsub(/<!--.*?-->/m, '')
+    text = text.gsub(%r{<(script|style|form)\b[^>]*>.*?</\1>}m, '')
+    text = text.gsub(%r{<p class="post-meta"[^>]*>.*?</p>}m, '')
     text = text.gsub(%r{<figcaption[^>]*>(.*?)</figcaption>}m) { "\n_#{Regexp.last_match(1).gsub(/\s+/, ' ').strip}_\n" }
     text = text.gsub(%r{<iframe[^>]*src="https?://www\.youtube\.com/embed/([\w-]+)[^"]*"[^>]*>\s*</iframe>}m) do
       "[Watch on YouTube](https://www.youtube.com/watch?v=#{Regexp.last_match(1)})"
@@ -75,22 +80,32 @@ module MarkdownAlternates
     meta << "Summary: #{description}" unless description.empty?
     "#{meta.join("\n")}\n\n#{data['raw_markdown']}\n"
   end
+
+  # Pages whose body still contains Liquid after cleaning are dynamic listings
+  # (blog index, LinkedIn feed, ...) and get no Markdown twin.
+  def self.page_twin?(page)
+    return false unless %w[.md .markdown].include?(page.ext)
+    return false if page.url == '/' || page.url.end_with?('404.html') || page.data['published'] == false
+
+    !page.data['raw_markdown'].to_s.match?(/\{\{|\{%/)
+  end
 end
 
 %i[posts pages].each do |kind|
-  Jekyll::Hooks.register kind, :pre_render do |doc|
+  Jekyll::Hooks.register kind, :pre_render do |doc, payload|
     doc.data['raw_markdown'] = MarkdownAlternates.clean(doc.content, doc.site.config['url'])
+    # Lets templates advertise the Markdown twin only when one is actually written.
+    twin = kind == :posts || MarkdownAlternates.page_twin?(doc)
+    doc.data['markdown_alternate'] = twin
+    # A page's Liquid payload is a snapshot taken before this hook runs, so set it there too.
+    payload['page']['markdown_alternate'] = twin if payload && payload['page'].is_a?(Hash)
   end
 end
 
 Jekyll::Hooks.register :site, :post_write do |site|
   items = site.posts.docs.map { |p| [p, p.url, p.date] }
   site.pages.each do |pg|
-    next unless %w[.md .markdown].include?(pg.ext)
-    next if pg.url == '/' || pg.url.end_with?('404.html') || pg.data['published'] == false
-    next if pg.data['raw_markdown'].to_s.match?(/\{\{|\{%/) # dynamic listing pages
-
-    items << [pg, pg.url, nil]
+    items << [pg, pg.url, nil] if MarkdownAlternates.page_twin?(pg)
   end
 
   items.each do |doc, url, date|
