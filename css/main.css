@@ -4088,3 +4088,22 @@ html[data-theme="dark"] #footnotediv {
   width: 100%;
   margin: 0 auto;
 }
+
+/* Footer links to the contact paths, shown on every page. */
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 24px;
+  margin: 16px 0 8px;
+  font-size: 16px;
+}
+
+.footer-nav a {
+  display: inline-block;
+  padding: 10px 0;
+  color: var(--main-text-color);
+  text-decoration: underline;
+  text-decoration-color: var(--link-decoration-color);
+  text-underline-offset: 4px;
+}

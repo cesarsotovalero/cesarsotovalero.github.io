@@ -54,4 +54,5 @@ Every blog post and most pages are also available as Markdown by replacing `.htm
 - [RSS feed]({{ site.url }}/feed.xml)
 - [JSON feed]({{ site.url }}/feed.json)
 - [Sitemap]({{ site.url }}/sitemap.xml)
+- [Contact]({{ site.url }}/contact): Contact form, speaking invitations, and research collaborations
 - [Book a one-to-one session]({{ site.url }}/book): Career mentorship, AI engineer mock interview, or AI advisory session

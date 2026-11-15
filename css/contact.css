@@ -1,0 +1,147 @@
+/* Contact page and contact form. Colors come from the theme variables in main.css. */
+
+.contact-paths {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 16px;
+   margin: 24px 0 40px;
+   padding: 0;
+   list-style: none;
+}
+
+.contact-paths li {
+   margin: 0;
+}
+
+.contact-paths a {
+   display: block;
+   height: 100%;
+   padding: 18px 20px;
+   border: 1px solid var(--panel-border-color);
+   border-radius: 8px;
+   background: var(--card-background-color);
+   color: var(--main-text-color);
+   text-decoration: none;
+   transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.contact-paths a:hover,
+.contact-paths a:focus-visible {
+   border-color: var(--main-text-color);
+   transform: translateY(-2px);
+}
+
+.contact-paths strong {
+   display: block;
+   font-size: 1.05em;
+   margin-bottom: 4px;
+}
+
+.contact-paths span {
+   display: block;
+   font-size: 0.8em;
+   line-height: 1.5;
+   opacity: 0.85;
+}
+
+.contact-form {
+   max-width: 640px;
+   margin: 16px 0 32px;
+}
+
+.contact-field {
+   margin-bottom: 18px;
+}
+
+.contact-field label {
+   display: block;
+   margin-bottom: 6px;
+   font-size: 0.8em;
+   font-weight: 600;
+}
+
+.contact-hint {
+   font-weight: 400;
+   opacity: 0.75;
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+   width: 100%;
+   padding: 10px 12px;
+   border: 1px solid #767676;
+   border-radius: 6px;
+   background: var(--card-background-color);
+   color: var(--main-text-color);
+   font: inherit;
+   font-size: 18px;
+   line-height: 1.4;
+}
+
+.contact-field textarea {
+   resize: vertical;
+   min-height: 140px;
+}
+
+.contact-field input:focus-visible,
+.contact-field select:focus-visible,
+.contact-field textarea:focus-visible,
+.contact-submit:focus-visible {
+   outline: 3px solid #4a7bd0;
+   outline-offset: 2px;
+}
+
+.contact-honeypot {
+   position: absolute;
+   left: -10000px;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+}
+
+.contact-submit {
+   min-height: 44px;
+   padding: 10px 24px;
+   border: 0;
+   border-radius: 6px;
+   background: #042742;
+   color: #fff;
+   font-size: 17px;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+[data-theme="dark"] .contact-submit {
+   background: #e8edf3;
+   color: #042742;
+}
+
+.contact-submit:disabled {
+   opacity: 0.6;
+   cursor: progress;
+}
+
+.contact-privacy {
+   margin-top: 12px;
+   font-size: 0.7em;
+   opacity: 0.8;
+}
+
+.contact-status:empty {
+   display: none;
+}
+
+.contact-status {
+   padding: 10px 14px;
+   border-radius: 6px;
+   font-size: 0.8em;
+}
+
+.contact-status--ok {
+   background: rgba(46, 125, 50, 0.12);
+}
+
+.contact-status--error {
+   background: rgba(198, 40, 40, 0.12);
+}

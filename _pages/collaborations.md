@@ -19,7 +19,7 @@ I’m particularly eager to pursue research that:
 3. Challenges the conventional **"best practices"** of software engineering and rethinks them from first principles.
 
 I'm open to **collaborating with researchers**, mentoring students, or offering guidance on projects in these domains.
-Whether you’re exploring similar questions or just curious about my work, feel free to **get in touch via email** using [this form](../about-me#contact-me).
+Whether you’re exploring similar questions or just curious about my work, feel free to **get in touch via email** using [this form](/contact).
 
 Below is a list of research topics I'm especially excited to explore further.
 

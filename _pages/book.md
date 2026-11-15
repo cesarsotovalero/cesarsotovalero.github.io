@@ -121,7 +121,7 @@ css:
   <footer class="booking-footer">
     <p>
       Not sure which session fits?
-      <a href="{{ site.baseurl }}/about-me#contact-me">Send me a message</a> first.
+      <a href="{{ site.baseurl }}/contact">Send me a message</a> first.
     </p>
     <p class="booking-disclaimer">{{ booking.disclaimer }}</p>
   </footer>
