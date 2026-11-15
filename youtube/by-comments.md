@@ -4,6 +4,8 @@ permalink: /youtube/by-comments
 title: YouTube Videos by Comments
 description: YouTube videos created by César Soto Valero, sorted by number of comments.
 published: true
+sitemap: false
+noindex: true
 ---
 
 <!-- markdownlint-disable MD033 -->

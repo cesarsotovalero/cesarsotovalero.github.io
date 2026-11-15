@@ -4,6 +4,8 @@ permalink: /youtube/by-views
 title: YouTube Videos by Views
 description: YouTube videos created by César Soto Valero, sorted by number of views.
 published: true
+sitemap: false
+noindex: true
 ---
 
 <!-- markdownlint-disable MD033 -->

@@ -4,6 +4,8 @@ layout: page
 title: Search
 description: Search this site
 subtitle: 🔎
+sitemap: false
+noindex: true
 ---
 
 <div class="search">

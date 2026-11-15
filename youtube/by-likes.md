@@ -4,6 +4,8 @@ permalink: /youtube/by-likes
 title: YouTube Videos by Likes
 description: YouTube videos by César Soto Valero, sorted by number of likes.
 published: true
+sitemap: false
+noindex: true
 ---
 
 <!-- markdownlint-disable MD033 -->
