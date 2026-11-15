@@ -148,7 +148,7 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      show-avatar: true
+      show-avatar: false # the large portrait is shown on About (and the homepage) only
       carbonads: true
       before-content: [carbonads.html]
 

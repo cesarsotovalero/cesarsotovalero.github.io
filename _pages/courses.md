@@ -2,7 +2,7 @@
 permalink: courses
 layout: page
 title: Courses
-subtitle: 🎓
+subtitle: "Courses and MOOCs I've taken"
 description: List of courses completed by César Soto Valero.
 published: true
 ---

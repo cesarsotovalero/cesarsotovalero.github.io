@@ -2,7 +2,7 @@
 permalink: collaborations
 layout: page
 title: Collaborations
-subtitle: 🤝
+subtitle: "Research interests and how to work together"
 description: List of research topics of interest to César Soto Valero.
 published: true
 ---

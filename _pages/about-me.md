@@ -2,10 +2,11 @@
 permalink: about-me
 layout: page
 title: About Me
-subtitle: 👨🏼‍💻
+subtitle: "Applied AI for finance, research, and software engineering"
 description: César Soto Valero is a Lead Data Scientist at SEB working on applied AI for finance and investment banking. He holds a PhD in Computer Science from KTH and is a keynote speaker and open-source author.
 keywords: César Soto Valero, Lead Data Scientist, SEB, applied AI for finance, investment banking, PhD in Computer Science, KTH
 schema_type: ProfilePage
+show-avatar: true
 ---
 
 <link rel="stylesheet" href="/css/landing.css">

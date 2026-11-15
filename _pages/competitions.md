@@ -2,7 +2,7 @@
 permalink: competitions
 layout: page
 title: Competitions
-subtitle: 💪
+subtitle: "Programming contests and challenges"
 description: List of competitive events where César Soto Valero has participated.
 published: true
 ---

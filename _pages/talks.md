@@ -3,7 +3,7 @@ permalink: talks
 layout: page
 title: Talks
 description: Talks and presentations by César Soto Valero
-subtitle: 📢
+subtitle: "Conference talks, keynotes, and workshops since 2018"
 published: true
 ---
 
