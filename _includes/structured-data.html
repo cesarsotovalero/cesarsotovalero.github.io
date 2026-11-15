@@ -81,6 +81,15 @@
   "author": { "@id": "{{ person_id }}" },
   "publisher": { "@id": "{{ person_id }}" },
   "isPartOf": { "@id": "{{ site_id }}" }
+},
+{
+  "@type": "BreadcrumbList",
+  "@id": "{{ site.url }}{{ page.url }}#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ site.url }}/blog" },
+    { "@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": "{{ site.url }}{{ page.url }}" }
+  ]
 }{% endif %}{% endcapture %}
 {% capture page_json %}{% if page.schema_type %},
 {

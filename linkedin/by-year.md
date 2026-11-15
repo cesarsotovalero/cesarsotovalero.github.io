@@ -4,6 +4,8 @@ permalink: /linkedin/by-year
 title: LinkedIn Posts by Year
 description: All LinkedIn posts posted by César Soto Valero, organized by year.
 published: true
+sitemap: false
+noindex: true
 ---
 
 <!-- markdownlint-disable MD033 -->
