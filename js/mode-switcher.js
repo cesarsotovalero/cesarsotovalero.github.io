@@ -33,9 +33,11 @@ function setThemeToLight() {
    reloadGiscus();
 }
 
-// Giscus comments are only loaded on posts, so the loader may not exist on this page.
+// Re-render the comments in the new theme, but only if they are already on the page:
+// they load lazily when the reader scrolls near them (_includes/giscus.html).
 function reloadGiscus() {
-   if (typeof loadGiscus === "function") loadGiscus();
+   var container = document.getElementById("giscus-container");
+   if (typeof loadGiscus === "function" && container && container.hasChildNodes()) loadGiscus();
 }
 
 // Decide which theme to apply on initial load:

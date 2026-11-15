@@ -58,6 +58,13 @@ function serve() {
       page.removeAllListeners('pageerror');
       page.on('pageerror', e => errors.push(e.message));
       await page.goto(base + url, { waitUntil: 'load' });
+      // Scroll through the page: some scripts only run on scroll or when content comes into view.
+      await page.evaluate(async () => {
+        for (let y = 0; y < document.body.scrollHeight; y += 800) {
+          window.scrollTo(0, y);
+          await new Promise(resolve => setTimeout(resolve, 20));
+        }
+      });
       await page.waitForTimeout(300);
       const label = `${viewport.width}px ${url}`;
       if (errors.length) {

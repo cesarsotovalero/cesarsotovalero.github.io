@@ -57,3 +57,4 @@ footer_contact:
     - { title: Invite me to speak, url: /talks/invite-me }
     - { title: Résumé (PDF), url: /files/CV/cesar-resume.pdf }
     - { title: RSS feed, url: /feed.xml }
+    - { title: Privacy, url: /privacy }
