@@ -2,6 +2,16 @@
 
 > Complete Markdown text of all blog posts on {{ site.url }}. Index: {{ site.url }}/llms.txt
 
+## About the author
+
+{{ site.data.profile.summary }}
+
+- Current role: {{ site.data.profile.career[0].role }}, {{ site.data.profile.career[0].organization }} ({{ site.data.profile.career[0].period }})
+- Expertise: {{ site.data.profile.expertise | join: ", " }}
+- Profile and track record: {{ site.url }}/ai-for-finance.md
+- About: {{ site.url }}/about-me.md
+- LinkedIn: https://www.linkedin.com/in/{{ site.author.linkedin }}
+
 {% for post in site.posts %}
 ---
 

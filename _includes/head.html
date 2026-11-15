@@ -115,7 +115,7 @@
 
    <link rel="alternate" type="application/feed+json" title="{{ site.title }}" href="{{ site.url }}/feed.json"/>
    <link rel="alternate" type="text/markdown" title="llms.txt" href="{{ site.url }}/llms.txt"/>
-   {% if page.url != '/' and page.url != '/404.html' and page.path contains '.md' %}
+   {% if page.markdown_alternate %}
    <link rel="alternate" type="text/markdown" href="{{ site.url }}{{ page.url | remove: '.html' }}.md"/>
    {% endif %}
 

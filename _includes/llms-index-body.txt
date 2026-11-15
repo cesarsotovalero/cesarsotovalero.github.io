@@ -1,23 +1,43 @@
 # César Soto Valero
 
-> {{ site.data.authors.cesarsotovalero.name }} is a computer scientist, software engineer, and content creator. He completed a PhD in Computer Science at KTH Royal Institute of Technology (Sweden, 2023) and works as a Senior Data Scientist. He helps engineers and organizations learn, build, and grow faster with AI. Topics: software engineering, software supply chain and debloating, Java, AI, career growth.
+> {{ site.data.profile.summary }}
+
+{% assign profile = site.data.profile -%}
+- Current role: {{ profile.career[0].role }}, {{ profile.career[0].organization }} ({{ profile.career[0].period }})
+- Previously: {{ profile.career[1].role }}, {{ profile.career[1].organization }} ({{ profile.career[1].period }})
+- Location: {{ profile.location.city }}, {{ profile.location.country }}
+- Expertise: {{ profile.expertise | join: ", " }}
+- Education: {{ profile.education[0] }}
+{% for fact in profile.facts -%}
+- {{ fact }}
+{% endfor -%}
+- What sets him apart: {% for d in profile.differentiators %}({{ forloop.index }}) {{ d }} {% endfor %}
 
 Site: {{ site.url }}
 Author: {{ site.data.authors.cesarsotovalero.name }} ({{ site.url }}/about-me)
+LinkedIn: https://www.linkedin.com/in/{{ site.author.linkedin }}
 Full content for LLMs: {{ site.url }}/llms-full.txt
-Every blog post is also available as Markdown by replacing `.html` with `.md` in its URL.
+Every blog post and most pages are also available as Markdown by replacing `.html` with `.md` in the URL (or appending `.md` when there is no extension).
 
+## Applied AI for finance
+- [Applied AI for finance: profile, track record, and evidence]({{ site.url }}/ai-for-finance.md): Focus areas, career in financial services, talks, writing, and FAQ
+{% for item in profile.evidence -%}
+{%- assign first_char = item.url | slice: 0 -%}
+- [{{ item.title }}]({% if first_char == '/' %}{{ site.url }}{% endif %}{{ item.url }}): {{ item.kind }}{% if item.venue %}, {{ item.venue }}{% endif %}, {{ item.date }}. {{ item.note }}
+{% endfor %}
 ## About
-- [About me]({{ site.url }}/about-me): Biography, career, research and interests
-- [Speaker bio]({{ site.url }}/bio): Short bio for conferences
-- [Awards]({{ site.url }}/awards): Awards and certificates
+- [About me]({{ site.url }}/about-me.md): Biography, current role, research and interests
+- [Speaker bio]({{ site.url }}/bio.md): Short and long bio for conferences
+- [Awards]({{ site.url }}/awards.md): Awards, certificates, and academic degrees
+- [Professional values]({{ site.url }}/my-professional-values.md): How he works
+- [Résumé (PDF)]({{ site.url }}/files/CV/cesar-resume.pdf): One-page résumé
 
 ## Research and talks
-- [Publications]({{ site.url }}/publications): Academic papers
-- [Talks]({{ site.url }}/talks): Talks and presentations
-- [Podcasts]({{ site.url }}/podcasts): Podcast appearances
+- [Publications]({{ site.url }}/publications.md): Academic papers
+- [Talks]({{ site.url }}/talks.md): Talks and presentations, with videos and slides
+- [Podcasts]({{ site.url }}/podcasts.md): Podcast appearances
 - [Software]({{ site.url }}/software): Software projects and tools
-- [Academic service]({{ site.url }}/service): Reviewing and program-committee service
+- [Academic service]({{ site.url }}/service.md): Reviewing and program-committee service
 
 ## Blog posts
 {% for post in site.posts -%}

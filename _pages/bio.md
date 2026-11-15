@@ -11,11 +11,11 @@ published: true
 
 ## Short Bio
 
-César Soto Valero is currently a Senior Data Scientist at SEB Group. He has experience building and maintaining AI/ML systems serving millions of customers in real-time. César earned a PhD in Computer Science from KTH Royal Institute of Technology, where his research focused on developing novel low-level program analysis techniques to mitigate software bloat and improve the efficiency, security, and maintainability of large codebases. With a background spanning both academic research and industrial engineering, César bridges the gap between theory and practice by translating research breakthroughs into robust, production-grade software systems. He is passionate about engineering, AI, and the practical challenges of deploying scalable, reliable software solutions that serve real user needs.
+César Soto Valero is a Lead Data Scientist at SEB Group, where he drives AI solutions within the Investment Banking division. He previously spent three years in Financial Crime Prevention, building and maintaining AI/ML systems serving millions of customers in real-time. César earned a PhD in Computer Science from KTH Royal Institute of Technology, where his research focused on developing novel low-level program analysis techniques to mitigate software bloat and improve the efficiency, security, and maintainability of large codebases. With a background spanning both academic research and industrial engineering, César bridges the gap between theory and practice by translating research breakthroughs into robust, production-grade software systems. He is passionate about engineering, AI, and the practical challenges of deploying scalable, reliable software solutions that serve real user needs.
 
 ## Long Bio
 
-César is currently a Senior Data Scientist with a strong background combining academic research and hands-on industry experience.
+César is currently a Lead Data Scientist at SEB, working on applied AI for finance within the Investment Banking division, with a strong background combining academic research and hands-on industry experience.
 
 He's been at the forefront of developing innovative data-driven and AI-powered solutions. This includes:
 
@@ -23,7 +23,7 @@ He's been at the forefront of developing innovative data-driven and AI-powered s
 - Production & collaboration: Work closely with ML engineers to bring models into production while ensuring explainability and business relevance.
 - Expert support: Act as a subject matter expert in data investigations and support AI-driven decision-making across the organisation.
 
-César holds a PhD in Computer Science from KTH, where his research focused on advanced program analysis techniques. After joining SEB as a Data Engineer in Financial Crime Prevention, he transitioned into a Data Scientist role.
+César holds a PhD in Computer Science from KTH, where his research focused on advanced program analysis techniques. After joining SEB as a Data Engineer in Financial Crime Prevention in 2023, he transitioned into a Data Scientist role and, in September 2026, moved to the Investment Banking division.
 
 He brings hands-on experience in:
 

@@ -1,0 +1,184 @@
+# Professional profile: the single source of truth for how the site describes César
+# to search engines, AI agents, and recruiters.
+#
+# Used by:
+#   - _includes/structured-data.html  (JSON-LD Person on every page)
+#   - _includes/llms-index-body.txt   (/llms.txt)
+#   - _includes/llms-full-body.txt    (/llms-full.txt)
+#
+# Keep in sync with: the LinkedIn headline, files/CV/cesar-resume.tex,
+# _pages/about-me.md, _pages/bio.md and _pages/ai-for-finance.md.
+# Only list things that are public and verifiable through a link.
+
+job_title: Lead Data Scientist
+division: Investment Banking
+headline: "Lead Data Scientist at SEB · Applied AI for Finance · Investment Banking · PhD in Computer Science"
+
+employer:
+  name: SEB
+  legal_name: Skandinaviska Enskilda Banken AB
+  url: https://sebgroup.com
+  since: 2023-04
+
+location:
+  city: Stockholm
+  country: Sweden
+  country_code: SE
+
+# One-paragraph answer to "Who is César Soto Valero?" (third person, quotable).
+summary: >-
+  César Soto Valero is a Lead Data Scientist at SEB, one of the largest banks in the Nordics,
+  where he drives AI solutions within the Investment Banking division. He works on applied AI
+  for finance: financial document intelligence, agentic workflows, and evaluation of AI systems
+  in a regulated environment. He previously spent three years in Financial Crime Prevention at SEB,
+  building and maintaining real-time AI/ML systems used by millions of customers. He holds a PhD in
+  Computer Science from KTH Royal Institute of Technology (2023), has authored 30+ research papers
+  with 1,000+ citations, and is a keynote speaker and open-source author based in Stockholm, Sweden.
+
+# Short version for meta descriptions (keep under ~160 characters).
+short_summary: >-
+  Lead Data Scientist at SEB working on applied AI for finance and investment banking.
+  PhD in Computer Science (KTH), 30+ papers, keynote speaker.
+
+# What makes the profile distinctive (one sentence each).
+differentiators:
+  - "Research depth and production experience: a PhD and 30+ peer-reviewed papers, plus real-time AI/ML systems running in a bank."
+  - "Regulated-finance experience across two domains: three years in financial crime prevention, now investment banking."
+  - "A reliability-first approach to AI: evaluation, grounding, auditability, and software supply chain security."
+  - "Public, verifiable work: conference talks on video, long-form technical posts with code, and open-source tools."
+
+# Areas of expertise. Each one is backed by public material listed under `evidence`.
+expertise:
+  - Applied AI for finance
+  - AI in investment banking
+  - Financial document intelligence (Document AI)
+  - Retrieval-augmented generation (RAG) and GraphRAG
+  - AI agents and agentic workflows
+  - LLM evaluation (evals)
+  - Real-time financial fraud detection
+  - Financial crime prevention
+  - Machine learning in production
+  - Trustworthy AI and AI governance
+  - Software supply chain security
+  - Software engineering
+  - Python
+  - Java
+
+career:
+  - period: "September 2026 to present"
+    role: "Lead Data Scientist, Investment Banking division"
+    organization: SEB
+    description: "Drives AI solutions within the Investment Banking division."
+  - period: "April 2023 to August 2026"
+    role: "Data Engineer, then Data Scientist and Senior Data Scientist, Financial Crime Prevention"
+    organization: SEB
+    description: "Built and maintained real-time AI/ML systems for fraud detection, used by millions of customers."
+  - period: "2018 to 2023"
+    role: "PhD researcher in Computer Science"
+    organization: KTH Royal Institute of Technology
+    description: "Research on software debloating and the software supply chain, funded by WASP."
+
+education:
+  - "PhD in Computer Science, KTH Royal Institute of Technology, Sweden, 2023"
+  - "MSc in Computer Science, Universidad Central \"Marta Abreu\" de Las Villas, Cuba, 2016"
+  - "BSc in Computer Science, Universidad Central \"Marta Abreu\" de Las Villas, Cuba, 2013"
+
+awards:
+  - "ESEC/FSE Distinguished Paper Award, 2021"
+  - "MSR Data Showcase Award, 2021"
+  - "MSR Data Showcase Award, 2019"
+  - "WASP Certificate of Excellence, 2019"
+
+facts:
+  - "30+ research papers and 1,000+ citations on Google Scholar"
+  - "Keynote speaker at Voxxed Days Zürich 2026; speaker at PyData Global, Jfokus, AI-fokus, Data Innovation Summit, FOSDEM, and ESEC/FSE"
+  - "Author of DepClean, an open-source tool with 300+ GitHub stars"
+  - "17,000+ followers on LinkedIn, where he writes about applied AI for finance"
+
+orcid: 0000-0003-0541-6411
+google_scholar: https://scholar.google.com/citations?user=jNBoowwAAAAJ
+
+# Public work on AI for finance. `url` is absolute, or site-relative when it starts with "/".
+evidence:
+  - title: "Reading Financial Documents with AI"
+    kind: Blog post
+    date: 2026-11
+    url: /blog/reading-financial-documents-with-ai.md
+    note: "Retrieval vs. extraction for PDFs, slides, and spreadsheets in a bank, with three architectures and Python code."
+  - title: "From Classical ML to DNNs and GNNs for Real-Time Financial Fraud Detection"
+    kind: Blog post
+    date: 2025-04
+    url: /blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection.md
+    note: "Survey of state-of-the-art techniques for real-time transaction fraud detection."
+  - title: "Evaluation Metrics for Real-Time Financial Fraud Detection ML Models"
+    kind: Blog post
+    date: 2025-05
+    url: /blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models.md
+    note: "How to evaluate fraud detection models: precision, recall, AUC-PR, and operational trade-offs."
+  - title: "There's No Such Thing as Free Intelligence: Tokenomics and the Hidden Cost of AI"
+    kind: Talk
+    venue: SEB Tech Day
+    date: 2026-09
+    url: https://youtu.be/Y_JX0C5sAEo
+    note: "The economics of running AI at scale."
+  - title: "AI On-Chain: Where Do We See the Real Utility of Agentic Finance?"
+    kind: Panel
+    venue: Nordic Blockchain Conference
+    date: 2026-05
+    url: https://youtu.be/w8WiLLe6rIo
+    note: "Governance, verification, and security as the bottleneck for agentic automation in finance."
+  - title: "The Promise of Trustworthy AI"
+    kind: Keynote
+    venue: Voxxed Days Zürich
+    date: 2026-03
+    url: https://youtu.be/59EVOp8r0aw
+    note: "What it takes to trust AI systems in production."
+  - title: "My Bank Meets AI: Smarter Decisions Beyond Fancier Spreadsheets"
+    kind: Talk
+    venue: AI-fokus
+    date: 2026-01
+    url: https://youtu.be/kFPE9EcxhCs
+    note: "How a bank applies AI to real decisions."
+  - title: "Real-time Financial Fraud Detection with Modern Python"
+    kind: Talk
+    venue: PyData Global
+    date: 2025-12
+    url: https://youtu.be/nEg8T8doy64
+    note: "Techniques, metrics, and engineering behind fraud models in production."
+  - title: "The AI Secret: Why Predictive Machine Learning Still Rules The Real World"
+    kind: Talk
+    venue: SEB Tech Day
+    date: 2024-10
+    url: https://youtu.be/n1t3XEAyUgQ
+    note: "Why predictive ML still delivers most of the value in banking."
+  - title: "Agentic AI platform for credit risk assessment"
+    kind: Hackathon finalist
+    venue: 10th Global SEB Hackathon
+    date: 2026-03
+    url: https://www.linkedin.com/posts/cesarsotovalero_pitching-at-the-finals-of-the-10th-global-activity-7438227623257870336-BUp7
+    note: "Eight specialised agents with three human-in-the-loop checkpoints, checking GDPR Article 22 and EU AI Act compliance; built in three days."
+  - title: "Four multi-agent AI patterns for investment finance"
+    kind: LinkedIn post
+    date: 2026-10
+    url: https://www.linkedin.com/posts/cesarsotovalero_here-are-4-multi-agent-ai-patterns-for-investment-activity-7514180605731954688-hBLF
+    note: "Orchestrator-worker, hierarchical, blackboard, and market-based patterns, with their trade-offs."
+  - title: "GraphRAG for connecting financial documents"
+    kind: LinkedIn post
+    date: 2026-10
+    url: https://www.linkedin.com/posts/cesarsotovalero_the-most-valuable-ai-driven-insights-in-finance-activity-7513963765097279489-kxPU
+    note: "Why knowledge graphs plus retrieval matter when insights span several reports in investment banking."
+  - title: "Agentic workflows vs. AI agents in finance"
+    kind: LinkedIn post
+    date: 2026-09
+    url: https://www.linkedin.com/posts/cesarsotovalero_in-finance-many-valuable-use-cases-can-be-activity-7508122387452944384-jeIv
+    note: "Many valuable finance use cases need a predefined, validated workflow, not an autonomous agent."
+  - title: "Grounding is the main risk of financial agents"
+    kind: LinkedIn post
+    date: 2026-11
+    url: https://www.linkedin.com/posts/cesarsotovalero_financial-agents-often-produce-nice-looking-activity-7524411166778036224-H2SZ
+    note: "Notes on a benchmark that audits whether financial agents' claims are supported by evidence."
+  - title: "Seven papers on agentic AI for finance"
+    kind: LinkedIn post
+    date: 2026-01
+    url: https://www.linkedin.com/posts/cesarsotovalero_if-youre-into-agentic-ai-for-finance-these-activity-7413472253046145025-cFPv
+    note: "A ranked reading list with a note on why each paper matters."

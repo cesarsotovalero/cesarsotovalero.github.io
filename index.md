@@ -2,8 +2,8 @@
 layout: page
 title: César Soto Valero
 subtitle: "I help engineers and organizations learn, build, and grow faster with AI"
-keywords: César Soto Valero, research, software engineering, KTH, WASP Sweden, software technology, PhD in Computer Science
-description: César Soto Valero is a computer scientist, software engineer, and content creator. He completed a PhD at KTH Royal Institute of Technology in Sweden. César is passionate about science, technology, and education.
+keywords: César Soto Valero, Lead Data Scientist, SEB, applied AI for finance, investment banking, AI engineering, software engineering, research, KTH, PhD in Computer Science
+description: César Soto Valero is a Lead Data Scientist at SEB working on applied AI for finance and investment banking. He holds a PhD in Computer Science from KTH Royal Institute of Technology, has authored 30+ research papers, and is a keynote speaker and open-source author.
 use-site-title: true
 ---
 
