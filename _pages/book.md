@@ -1,96 +1,57 @@
 ---
 layout: minimal
-title: Book a Session
-description: Book a one-to-one mentorship session, mock interview, or career advice session with César Soto Valero.
-keywords: booking, mentorship, mock interview, career advice, coaching
+title: Book a session with César Soto Valero
+description: "Book a one-to-one session with César Soto Valero: career mentorship, an AI engineer mock interview, or an AI advisory session. From €79."
+keywords: book a session, mentorship, AI engineer mock interview, AI advisory, career advice, César Soto Valero
 permalink: /book
 published: true
 css:
+  - "/css/custom-fonts.css"
   - "/css/booking.css"
 ---
 
 <!-- markdownlint-disable MD033 -->
 
 {% assign booking = site.data.booking %}
+{% assign utm = 'utm_source=website&utm_medium=booking-page&utm_campaign=coaching-launch&utm_content=' %}
 
 <section class="booking-page">
-  <header class="booking-hero">
-    <div class="booking-hero-media">
-      <img
-        src="{{ booking.hero.image }}"
-        alt="César Soto Valero profile picture"
-        width="176"
-        height="176"
-        loading="lazy"
-      />
-    </div>
+  <nav class="booking-nav" aria-label="Site">
+    <a href="{{ site.baseurl }}/">&larr; cesarsotovalero.net</a>
+    <a href="{{ site.baseurl }}/about-me">About me</a>
+  </nav>
 
-    <div class="booking-hero-content">
+  <header class="booking-hero">
+    <div class="booking-hero-text">
       <p class="booking-eyebrow">{{ booking.hero.eyebrow }}</p>
       <h1>{{ booking.hero.title }}</h1>
       <p class="booking-subtitle">{{ booking.hero.subtitle }}</p>
-
-      <ul class="booking-hero-highlights">
-        <li>Private one-to-one guidance tailored to your exact goals</li>
-        <li>Concrete, no-fluff recommendations you can apply immediately</li>
-        <li>Written follow-up so you leave with a clear execution plan</li>
-      </ul>
-
-      <div class="booking-socials" aria-label="Social links">
-        <a
-          class="booking-social-link"
-          href="https://linkedin.com/in/{{ site.author.linkedin }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="LinkedIn"
-        >
-          <img src="{{ site.baseurl }}/img/icons/linkedin.svg" alt="LinkedIn" width="18" height="18" />
-          <span>LinkedIn</span>
-        </a>
-        <a
-          class="booking-social-link"
-          href="https://www.youtube.com/{{ site.author.youtube }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="YouTube"
-        >
-          <img src="{{ site.baseurl }}/img/icons/youtube.svg" alt="YouTube" width="18" height="18" />
-          <span>YouTube</span>
-        </a>
-        <a
-          class="booking-social-link"
-          href="https://github.com/{{ site.author.github }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="GitHub"
-        >
-          <img src="{{ site.baseurl }}/img/icons/github.svg" alt="GitHub" width="18" height="18" />
-          <span>GitHub</span>
-        </a>
+      <div class="booking-hero-actions">
+        <a class="booking-button" href="#sessions">{{ booking.hero.cta_label }}</a>
+        <span class="booking-price-hint">{{ booking.hero.price_hint }}</span>
       </div>
     </div>
+
+    <aside class="booking-host" aria-label="About your host">
+      <img
+        src="{{ booking.hero.image }}"
+        alt="Portrait of {{ booking.hero.name }}"
+        width="96"
+        height="96"
+      />
+      <div>
+        <p class="booking-host-name">{{ booking.hero.name }}</p>
+        <ul class="booking-host-credentials">
+          {% for item in booking.hero.credentials %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </aside>
   </header>
 
-  <section class="booking-proof-strip" aria-label="Session guarantees">
-    <article>
-      <h2>1:1 Sessions</h2>
-      <p>No group calls, no generic advice, no recycled feedback.</p>
-    </article>
-    <article>
-      <h2>45-60 Minutes</h2>
-      <p>Focused time to get unstuck and move forward with confidence.</p>
-    </article>
-    <article>
-      <h2>Actionable Written Follow-Up</h2>
-      <p>Leave with concrete next steps, priorities, and accountability.</p>
-    </article>
-  </section>
-
-  <section class="booking-section" aria-labelledby="booking-offers-title">
-    <div class="booking-section-header">
-      <h2 id="booking-offers-title">Choose your session</h2>
-      <p>Each session is designed to solve a different kind of career challenge.</p>
-    </div>
+  <section class="booking-section" id="sessions" aria-labelledby="booking-offers-title">
+    <h2 id="booking-offers-title">Choose a session</h2>
 
     <div class="booking-grid">
       {% for offer in booking.offers %}
@@ -99,20 +60,15 @@ css:
       {% assign offer_query_separator = '&' %}
       {% endif %}
       <article class="booking-card" id="offer-{{ offer.key }}">
-        <header class="booking-card-header">
-          <h3>{{ offer.title }}</h3>
-          {% if offer.key == 'mock-interview' %}
-          <span class="booking-card-badge">1:1</span>
-          {% endif %}
-        </header>
+        <h3>{{ offer.title }}</h3>
+        <p class="booking-card-audience">{{ offer.audience }}</p>
 
-        <p class="booking-card-meta">
-          <span>{{ offer.duration }}</span>
-          <span aria-hidden="true">&bull;</span>
-          <span>{{ offer.price }}</span>
+        <p class="booking-card-price">
+          <span class="booking-card-amount">{{ offer.price_label }}</span>
+          <span class="booking-card-duration">{{ offer.duration }}</span>
         </p>
 
-        <p>{{ offer.description }}</p>
+        <p class="booking-card-description">{{ offer.description }}</p>
 
         <ul class="booking-card-benefits">
           {% for bullet in offer.bullets %}
@@ -121,8 +77,8 @@ css:
         </ul>
 
         <a
-          class="booking-cta"
-          href="{{ offer.booking_url | append: offer_query_separator | append: 'utm_source=website&utm_medium=booking-page&utm_campaign=coaching-launch&utm_content=' | append: offer.key }}"
+          class="booking-button booking-cta"
+          href="{{ offer.booking_url | append: offer_query_separator | append: utm | append: offer.key }}"
           target="_blank"
           rel="noopener noreferrer"
           data-offer="{{ offer.key }}"
@@ -134,63 +90,69 @@ css:
     </div>
   </section>
 
-  {% comment %}
-  <section class="booking-section" aria-labelledby="booking-testimonials-title">
-    <div class="booking-section-header">
-      <h2 id="booking-testimonials-title">Testimonials</h2>
-    </div>
+  <section class="booking-section" aria-labelledby="booking-topics-title">
+    <h2 id="booking-topics-title">What you can ask me about</h2>
 
-    <div class="booking-testimonials">
-      {% for item in booking.testimonials %}
-      <blockquote class="booking-quote">
-        <p>"{{ item.quote }}"</p>
-        <footer>
-          <span class="booking-quote-author">{{ item.author }}</span>
-          <span class="booking-quote-role">{{ item.role }}</span>
-        </footer>
-      </blockquote>
+    <ul class="booking-topics">
+      {% for topic in booking.topics %}
+      <li>
+        <span class="booking-topic-title">{{ topic.title }}</span>
+        <span class="booking-topic-text">{{ topic.text }}</span>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
   </section>
-  {% endcomment %}
 
-  {% comment %}
-  <section class="booking-section" aria-labelledby="booking-faq-title">
-    <div class="booking-section-header">
-      <h2 id="booking-faq-title">Policy and FAQ</h2>
-    </div>
+  <section class="booking-section" aria-labelledby="booking-steps-title">
+    <h2 id="booking-steps-title">How it works</h2>
 
-    <div class="booking-faq">
-      {% for item in booking.faq %}
-      <article class="booking-faq-item">
-        <h3>{{ item.question }}</h3>
-        <p>{{ item.answer }}</p>
-      </article>
+    <ol class="booking-steps">
+      {% for step in booking.steps %}
+      <li>
+        <span class="booking-step-title">{{ step.title }}</span>
+        <span class="booking-step-text">{{ step.text }}</span>
+      </li>
       {% endfor %}
-    </div>
-  </section>
-  {% endcomment %}
+    </ol>
 
-  {% comment %}
-  <section class="booking-final-cta">
-    <h2>{{ booking.footer_cta.title }}</h2>
-    <p>{{ booking.footer_cta.text }}</p>
-    {% assign footer_cta_query_separator = '?' %}
-    {% if booking.footer_cta.button_url contains '?' %}
-    {% assign footer_cta_query_separator = '&' %}
-    {% endif %}
-    <a
-      class="booking-cta"
-      href="{{ booking.footer_cta.button_url | append: footer_cta_query_separator | append: 'utm_source=website&utm_medium=booking-page&utm_campaign=coaching-launch&utm_content=final-cta' }}"
-      target="_blank"
-      rel="noopener noreferrer"
-      data-offer="final-cta"
-    >
-      {{ booking.footer_cta.button_label }}
-    </a>
+    <p class="booking-note">{{ booking.reschedule_note }}</p>
   </section>
-  {% endcomment %}
+
+  <footer class="booking-footer">
+    <p>
+      Not sure which session fits?
+      <a href="{{ site.baseurl }}/about-me#contact-me">Send me a message</a> first.
+    </p>
+    <p class="booking-disclaimer">{{ booking.disclaimer }}</p>
+  </footer>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "One-to-one sessions with {{ booking.hero.name }}",
+  "url": "{{ site.url }}/book",
+  "itemListElement": [{% for offer in booking.offers %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "Service",
+        "name": {{ offer.title | jsonify }},
+        "description": {{ offer.description | jsonify }},
+        "provider": { "@id": "{{ site.url }}/#person" },
+        "offers": {
+          "@type": "Offer",
+          "price": "{{ offer.price }}",
+          "priceCurrency": {{ offer.currency | jsonify }},
+          "url": {{ offer.booking_url | jsonify }}
+        }
+      }
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
+</script>
 
 <script>
   (function () {
