@@ -266,8 +266,9 @@ plugins:
 
 toc:
   ordered_list: true
-  min_level: 1 # default: 1
-  max_level: 1 # default: 6
+  # Post sections are h2: _plugins/post_headings.rb shifts post headings down one level.
+  min_level: 2
+  max_level: 2
 
 # Optional. The default date format, used if none is specified in the tag.
 last-modified-at:
