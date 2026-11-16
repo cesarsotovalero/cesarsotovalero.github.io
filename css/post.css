@@ -84,104 +84,13 @@
   }
 }
 
-/* ---------- Author box ---------- */
-
-.post-author {
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
-  margin: 56px 0 32px;
-  padding: 28px;
-  border: 1px solid var(--panel-border-color);
-  border-radius: 12px;
-  background: var(--card-background-color);
-}
-
-.post-author-photo {
-  flex-shrink: 0;
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
-  object-fit: cover;
-  filter: grayscale(100%);
-}
-
-.post-author-eyebrow {
-  margin: 0 0 2px;
-  color: var(--post-meta-index-color);
-  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.post-author-name {
-  margin: 0 0 8px;
-  font-size: 26px;
-}
-
-.post-author-name a {
-  text-decoration: none;
-}
-
-.post-author-bio {
-  margin: 0 0 16px;
-  font-size: 19px;
-  line-height: 1.55;
-}
-
-.post-author-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.post-button,
-.post-button:hover,
-.post-button:focus {
-  display: inline-flex;
-  align-items: center;
-  min-height: 42px;
-  padding: 0 18px;
-  border: 1px solid var(--main-text-color);
-  border-radius: 6px;
-  color: var(--main-text-color);
-  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.post-button--primary,
-.post-button--primary:hover,
-.post-button--primary:focus {
-  border-color: #042742;
-  background: #042742;
-  color: #fff;
-}
-
-[data-theme="dark"] .post-button--primary,
-[data-theme="dark"] .post-button--primary:hover,
-[data-theme="dark"] .post-button--primary:focus {
-  border-color: #e8edf3;
-  background: #e8edf3;
-  color: #042742;
-}
-
-@media (max-width: 560px) {
-  .post-author {
-    flex-direction: column;
-    padding: 22px;
-  }
-}
-
 /* ---------- Previous / next posts ---------- */
 
 .post-pager {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin: 0 0 40px;
+  margin: 48px 0 40px;
 }
 
 .post-pager-link {
