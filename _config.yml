@@ -171,12 +171,22 @@ include:
 
 # Exclude these files from production site
 exclude:
+  # Font files: the site serves only the web fonts (.woff2/.woff). Keep the desktop
+  # font files, vendor demo pages and license documents off the public site.
+  - "fonts/*.ttf"
+  - "fonts/*.otf"
+  - "fonts/*.eot"
+  - "fonts/*.svg"
+  - "fonts/*.html"
+  - "fonts/*.pdf"
+  - "fonts/*specimen_files*"
   - CHANGELOG.md
   - CNAME
   - Dockerfile
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - NOTICE.md
   - README.md
   - Vagrantfile
   - Rakefile
