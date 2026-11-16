@@ -156,3 +156,26 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* Equity: italic and bold faces (the regular face is declared above). */
+@font-face {
+  font-display: swap;
+  font-family: 'Equity Text A';
+  src: url('/fonts/used-fonts/Equity/equity_text_a_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Equity Text A';
+  src: url('/fonts/used-fonts/Equity/equity_text_a_bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Equity Caps A';
+  src: url('/fonts/used-fonts/Equity/equity_caps_a_bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
