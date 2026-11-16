@@ -37,7 +37,7 @@
   padding: 12px 18px;
   border: 1px solid var(--panel-border-color);
   border-radius: 8px;
-  background: var(--card-background-color);
+  background: transparent;
   font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
   font-size: 17px;
 }
@@ -57,6 +57,11 @@
 .toc-inline-list li {
   margin: 0;
   padding: 3px 0;
+}
+
+.toc-inline-list li::marker {
+  color: var(--post-meta-index-color);
+  font-weight: 400;
 }
 
 .toc-inline-list a {
