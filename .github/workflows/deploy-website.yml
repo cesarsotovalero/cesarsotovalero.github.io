@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+  pull_request: # build and check every pull request; only pushes to master deploy
   workflow_dispatch: # allow manual re-runs from the Actions tab
 
 permissions:
@@ -136,6 +137,16 @@ jobs:
       - name: Create CNAME file
         run: echo 'www.cesarsotovalero.net' > _site/CNAME
 
+      # GitHub Pages documents a 1 GB limit for published sites.
+      - name: Report site size
+        run: |
+          size_mb=$(du -sm _site | cut -f1)
+          echo "Site size: ${size_mb} MB"
+          du -sm _site/* | sort -rn | head -5
+          if [ "$size_mb" -gt 1000 ]; then
+            echo "::warning::The built site is ${size_mb} MB; GitHub Pages documents a 1 GB limit."
+          fi
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -144,6 +155,7 @@ jobs:
   deploy:
     name: Deploy
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     # Never cancel a deployment that is already in progress; queue the next one instead.

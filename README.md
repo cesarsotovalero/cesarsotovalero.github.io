@@ -3,7 +3,36 @@
 [![Build](https://github.com/cesarsotovalero/cesarsotovalero.github.io/actions/workflows/deploy-website.yml/badge.svg)](https://github.com/cesarsotovalero/cesarsotovalero.github.io/actions/workflows/deploy-website.yml)
 
 This is the source code of [cesarsotovalero.net](https://www.cesarsotovalero.net), my personal website and blog.
-The repo contains a mess of HTML templates, Jekyll templates, blog posts and images, so it's been released under a dual license.
+The site is built with [Jekyll](https://jekyllrb.com) and deployed to GitHub Pages by [`.github/workflows/deploy-website.yml`](.github/workflows/deploy-website.yml) on every push to `master`. Pull requests are built and checked but not deployed.
+
+## Local development
+
+Requirements: Ruby (version in [`.ruby-version`](.ruby-version)), Bundler, Python 3, and ImageMagick (for `rmagick`, used by `jekyll-responsive-image`).
+
+```bash
+# macOS: brew install rbenv imagemagick   |   Ubuntu: sudo apt-get install libmagickwand-dev
+pip install pyyaml pillow
+./run_jekyll.sh          # macOS/Linux; run_jekyll.ps1 on Windows
+```
+
+`run_jekyll.sh` generates the data files the site needs (`_data/talks.yml`, tag pages, post thumbnails), installs the gems, and serves the site at <http://localhost:4000>.
+Build with a UTF-8 locale (`LANG=en_US.UTF-8` or `C.UTF-8`): some file names contain non-ASCII characters, and Jekyll and html-proofer fail on them otherwise.
+
+Where things live:
+
+| Path | Contents |
+|---|---|
+| `_posts/` | Blog posts (Markdown) |
+| `_pages/` | Standalone pages (About, Talks, Publications, ...) |
+| `_data/` | Site data: profile, navigation, talks, YouTube and LinkedIn exports |
+| `_layouts/`, `_includes/` | Templates |
+| `_plugins/` | Custom Jekyll plugins |
+| `css/`, `js/`, `img/`, `files/` | Static assets |
+| `scripts/` | Helper scripts used by the build and the scheduled workflows |
+
+## License
+
+The repo contains HTML templates, Jekyll templates, blog posts and images, so it's been released under a dual license.
 
 Everything here is available under a [Creative Commons Attribution NonCommercial ShareAlike license (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 This means you're free to copy it, modify it and share it, subject to the following restrictions:

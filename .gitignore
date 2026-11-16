@@ -11,6 +11,9 @@ img/thumbs/
 .DS_Store
 Thumbs.db
 ehthumbs.db
+~$*
+.~lock.*#
+__MACOSX/
 /.project
 
 .idea
