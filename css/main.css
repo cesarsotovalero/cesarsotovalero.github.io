@@ -2841,18 +2841,6 @@ ul {
   flex-shrink: 1;
 }
 
-.flex-container-footer-badges {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-.flex-container-footer-badges a {
-  padding: 0 7px 0 7px;
-  margin-bottom: 5px;
-}
-
 /* Footer social links: static icons instead of third-party badge images. */
 .footer-social {
   display: flex;
