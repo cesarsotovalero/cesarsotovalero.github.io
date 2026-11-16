@@ -270,3 +270,33 @@
   font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
 }
+
+/* ---------- Fixes: nothing sits on top of content ---------- */
+
+/* Copy button: in its own strip above the code, so it never covers a line. */
+.blog-post div.highlighter-rouge,
+.blog-post figure.highlight {
+  padding-top: 30px;
+}
+
+.code-copy {
+  top: 0;
+  right: 0;
+  border-bottom: 0;
+  border-radius: 6px 6px 0 0;
+  opacity: 1;
+}
+
+/* "Copy link": the icon sits beside the label (the icon-button style placed it on top). */
+.share-section .btn-copy-link {
+  height: 34px;
+  overflow: visible;
+}
+
+.share-section .btn-copy-link > :first-child {
+  position: static;
+  width: auto;
+  border-right: 0;
+  font-size: 1em;
+  line-height: 1;
+}

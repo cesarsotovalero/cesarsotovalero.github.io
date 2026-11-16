@@ -224,3 +224,61 @@
     aspect-ratio: 1;
   }
 }
+
+/* ---------- Round thumbnails, as on the earlier blog list ---------- */
+
+.blog-card a {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+}
+
+.blog-card img.thumb-round {
+  width: 84px;
+  height: 84px;
+  aspect-ratio: 1;
+}
+
+.blog-card-text {
+  padding: 0;
+}
+
+.blog-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.blog-row[hidden] {
+  display: none;
+}
+
+.blog-row-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.blog-row-thumb {
+  order: 2;
+  width: 64px;
+  height: 64px;
+}
+
+@media (max-width: 760px) {
+  .blog-card a {
+    flex-direction: row;
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .blog-card img.thumb-round {
+    width: 64px;
+    height: 64px;
+  }
+
+  .blog-row-thumb {
+    width: 52px;
+    height: 52px;
+  }
+}

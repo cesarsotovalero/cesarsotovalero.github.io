@@ -265,3 +265,32 @@
     padding: 28px 20px;
   }
 }
+
+/* ---------- Equity (serif) accents next to the Concourse headings ---------- */
+
+.home-eyebrow {
+  font-family: "Equity Caps A", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-transform: lowercase; /* Equity Caps draws lowercase as small capitals */
+}
+
+.home-role {
+  font-family: "Equity Text A", "Century Supra T4", Georgia, serif;
+  font-size: 21px;
+}
+
+.home-tagline {
+  font-family: "Equity Text A", "Century Supra T4", Georgia, serif;
+  font-style: italic;
+}
+
+.home-venues,
+.home-cta p {
+  font-family: "Equity Text A", "Century Supra T4", Georgia, serif;
+}
+
+.home-stats {
+  font-family: "Equity Text A", "Century Supra T4", Georgia, serif;
+}

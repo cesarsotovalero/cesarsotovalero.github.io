@@ -1,0 +1,191 @@
+/* Shared interface details, loaded last: links, pills and buttons, and phone layout.
+   One look for every page. */
+
+:root {
+  --accent: #042742;            /* brand navy */
+  --accent-soft: #e3eaf2;       /* selected and pressed surfaces */
+  --accent-soft-border: #a9bbcd;
+  --accent-text: #042742;
+}
+
+[data-theme="dark"] {
+  --accent-soft: #2e3a49;
+  --accent-soft-border: #5b6f85;
+  --accent-text: #e8edf3;
+}
+
+/* ---------- Links ----------
+   A thin line close to the text, in a soft tone of the text color; solid on hover.
+   (It used to sit 6px below the text in a different color, which read as a separate rule.) */
+
+a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: rgba(26, 26, 26, 0.35);
+  -webkit-text-decoration-color: rgba(26, 26, 26, 0.35);
+  text-decoration-color: color-mix(in srgb, currentColor 38%, transparent);
+  -webkit-text-decoration-color: color-mix(in srgb, currentColor 38%, transparent);
+  transition: text-decoration-color 0.12s ease;
+}
+
+a:hover,
+a:focus {
+  text-decoration-thickness: 1px;
+  text-decoration-color: currentColor;
+  -webkit-text-decoration-color: currentColor;
+}
+
+/* ---------- Pills (section tabs, blog topics, sort options) ----------
+   Selected and pressed states use a soft tint instead of a solid dark fill. */
+
+.section-tabs a[aria-current="page"],
+.blog-filters .blog-filter[aria-pressed="true"],
+[data-theme="dark"] .blog-filters .blog-filter[aria-pressed="true"] {
+  border-color: var(--accent-soft-border);
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+.section-tabs a:hover,
+.blog-filter:hover,
+.blog-filter-more:hover {
+  border-color: var(--accent-soft-border);
+  background: var(--accent-soft);
+}
+
+.section-tabs a:active,
+.blog-filter:active {
+  background: var(--accent-soft);
+}
+
+/* Sort options on the LinkedIn, YouTube and tag pages: same pill as everywhere else. */
+.list-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 6px;
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.list-filters .list-filter {
+  margin: 0;
+  padding: 5px 12px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 999px;
+  color: var(--main-text-color);
+  font-size: 15px;
+}
+
+.list-filters .list-filter.filter-selected,
+.list-filters .list-filter:hover,
+.list-filters .list-filter:active {
+  border-color: var(--accent-soft-border);
+  background: var(--accent-soft);
+  color: var(--accent-text);
+}
+
+/* ---------- Buttons: a gentle pressed state ---------- */
+
+.home-button:active,
+.post-button:active,
+.site-nav-cta:active,
+.contact-submit:active,
+.reveal-more:active {
+  transform: translateY(1px);
+  opacity: 0.85;
+}
+
+.home-button:not(.home-button--primary):hover,
+.post-button:not(.post-button--primary):hover,
+.reveal-more:hover {
+  border-color: var(--accent-soft-border);
+  background: var(--accent-soft);
+}
+
+.home-button:not(.home-button--primary),
+.post-button:not(.post-button--primary),
+.reveal-more {
+  border-color: var(--accent-soft-border);
+}
+
+/* No dark flash when tapping links and buttons on phones. */
+a,
+button {
+  -webkit-tap-highlight-color: rgba(4, 39, 66, 0.08);
+}
+
+/* ---------- Project cards on the Software page ---------- */
+
+.project-grid .index-list {
+  grid-template-columns: repeat(3, 1fr);
+  margin: 24px 0 32px;
+}
+
+/* ---------- Round thumbnails (blog index, related posts) ---------- */
+
+.thumb-round {
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.2s ease;
+}
+
+a:hover .thumb-round,
+.blog-row:hover .thumb-round {
+  filter: none;
+}
+
+/* ---------- Phones ---------- */
+
+@media (max-width: 760px) {
+  .project-grid .index-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Pull quotes: a full-width block instead of a narrow column beside the text. */
+  .blog-post .quote,
+  .quote {
+    float: none;
+    width: auto;
+    margin: 24px 0;
+    padding: 4px 0 4px 16px;
+    font-size: 21px;
+  }
+
+  /* Homepage: two cards per section are enough on a phone; "See all" leads to the rest. */
+  .landing-page .index-list > .index-list-item:nth-child(n + 3) {
+    display: none;
+  }
+
+  /* The profile row and venue list repeat what the menu and footer offer. */
+  .home-venues,
+  .home-profiles li:nth-child(n + 4) {
+    display: none;
+  }
+
+  /* Footer: the menu already lists every page; keep the contact column, social links and copyright. */
+  .footer-sitemap > .footer-column:not(:last-child) {
+    display: none;
+  }
+
+  .footer-sitemap {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-sitemap ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 18px;
+  }
+
+  /* Share row: fewer, larger targets. */
+  .share-section .btn-reddit,
+  .share-section .btn-hn {
+    display: none;
+  }
+}

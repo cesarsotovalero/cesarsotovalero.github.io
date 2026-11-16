@@ -41,7 +41,7 @@ pagefind: false
       <li class="blog-card">
          <a href="{{ post.url | relative_url }}">
             {% if post.image %}
-            <img src="{{ post.image | thumbnail }}" alt="" loading="lazy" decoding="async">
+            <img class="thumb-round" src="{{ post.image | thumbnail }}" alt="" width="84" height="84" loading="lazy" decoding="async">
             {% endif %}
             <span class="blog-card-text">
                <span class="blog-card-title">{{ post.title }}</span>
@@ -64,11 +64,16 @@ pagefind: false
          {% for post in year.items %}
          {% assign words = post.content | number_of_words %}
          <li class="blog-row" data-tags="{{ post.tags | join: ' ' }}">
+            {% if post.image %}
+            <img class="thumb-round blog-row-thumb" src="{{ post.image | thumbnail }}" alt="" width="64" height="64" loading="lazy" decoding="async">
+            {% endif %}
+            <div class="blog-row-text">
             <a class="blog-row-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
             {% if post.subtitle %}<span class="blog-row-subtitle">{{ post.subtitle }}</span>{% endif %}
             <span class="blog-meta">
                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time> · {% if words < 180 %}1{% else %}{{ words | divided_by: 180 }}{% endif %} min read{% for tag in post.tags %} · <a class="blog-row-tag" href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% endfor %}
             </span>
+            </div>
          </li>
          {% endfor %}
       </ul>
