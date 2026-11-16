@@ -19,7 +19,15 @@ show-avatar: true
 [//]: # '<code style="text-align: center; font-family:jetbrains_monoregular, courier new, serif; font-size: 18px; font-weight: lighter">'
 [//]: # ' <span class="type" style="text-align: center"></span>'
 
-# TL;DR
+## At a Glance
+
+- **Current job:** Lead Data Scientist in the Investment Banking division of [SEB](https://seb.se), where I've worked since April 2023 🇸🇪
+- **Based in:** Stockholm, Sweden
+- **Education:** PhD in Computer Science, [KTH Royal Institute of Technology](https://kth.se), 2023
+- **Résumé:** [one-page résumé (PDF)](/files/CV/cesar-resume.pdf)
+- **Contact:** [contact form](/contact), [LinkedIn](https://www.linkedin.com/in/cesarsotovalero), or [book a session](/book)
+
+## TL;DR
 
 I'm a Lead Data Scientist at [SEB](https://sebgroup.com), where I drive AI solutions within the Investment Banking division.
 
@@ -37,9 +45,13 @@ Here's my [one-page résumé](/files/CV/cesar-resume.pdf).
 
 More importantly, these are [my professional values](/my-professional-values).
 
-**Current Job:** Lead Data Scientist in the Investment Banking division of [SEB](https://seb.se), where I've worked since April 2023 <img class="emoji" title=":sweden:" alt=":sweden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20">.
+## Experience
 
-# Research
+- **September 2026 to present:** Lead Data Scientist, Investment Banking division, SEB. I drive AI solutions within the Investment Banking division.
+- **April 2023 to August 2026:** Data Engineer, then Data Scientist and Senior Data Scientist, Financial Crime Prevention, SEB. I built and maintained real-time AI/ML systems for fraud detection, used by millions of customers.
+- **2018 to 2023:** PhD researcher in Computer Science, KTH Royal Institute of Technology. Research on software debloating and the software supply chain, funded by WASP.
+
+## Research
 
 I've [authored 30+ research papers](/publications) and [been involved in academic services](/service).
 
@@ -47,11 +59,11 @@ My research efforts have been [recognized with awards](/awards).
 
 My work has received more than 1,000+ citations [on Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en).
 
-# Software
+## Software
 
-I've created [open-source projects](/software), some with 300+ <i class="fas fa-star"></i> on GitHub.
+I've created [open-source projects](/software), some with 300+ ★ on GitHub.
 
-# Education
+## Education
 
 {% youtube Ub684G_aM5Q %}
 
@@ -67,7 +79,7 @@ I'm a lifelong learner, often [taking courses and MOOCs](/courses).
 
 A long time ago, I [participated in ACM-ICPC programming contests](/competitions).
 
-# Misc
+## Misc
 
 Outside of work, I enjoy spending quality time with my family, reading books, and [running](/races) (my current best 10K time is 48:00).
 
@@ -75,12 +87,12 @@ I also like epic music. Some of my favorites are [Two Steps From Hell](https://w
 
 My very <span style="background-color:#042742;color:white;border-radius:4px;">&nbsp;dark blue&nbsp;</span> is `#042742`.
 
-# Contact Me
+## Contact Me
 
 The [contact page](/contact) has a form and explains how to [invite me to speak](/talks/invite-me), [book a session](/book), or propose a [research collaboration](/collaborations).
 You can also message me on [LinkedIn](https://www.linkedin.com/in/cesarsotovalero).
 
-<br>
+Find me on [LinkedIn](https://www.linkedin.com/in/cesarsotovalero), [GitHub](https://github.com/cesarsotovalero), [Google Scholar](https://scholar.google.com/citations?user=jNBoowwAAAAJ), [ORCID](https://orcid.org/0000-0003-0541-6411), and [YouTube](https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg).
 
 👉 Have insights or research ideas? Please reach out, I'm always [open to collaborations](/collaborations).
 
@@ -89,7 +101,7 @@ You can also message me on [LinkedIn](https://www.linkedin.com/in/cesarsotovaler
    This page was last modified on {{ page.last_modified_at | date: "%B %-d, %Y" }}
 </p>
 
-# Footnotes
+## Footnotes
 
 [^1]: For more on these topics, see [my living review of software debloating papers](/software-debloating-papers), or consult [my list of software debloating tools](/software-debloating-tools).
 
