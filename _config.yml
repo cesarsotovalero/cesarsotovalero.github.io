@@ -80,6 +80,8 @@ social:
 # Web analytics (see _includes/analytics.html). Loaded only in production builds.
 # provider: one of ga4, plausible, goatcounter. Empty = no analytics.
 # The old Universal Analytics property (UA-107061705-1) stopped collecting data in July 2023.
+# Google Analytics now runs through Google Tag Manager (`gtm` below), so keep provider empty:
+# setting both would count every visit twice.
 analytics:
   provider: ""
   ga4_measurement_id: ""   # e.g. "G-XXXXXXXXXX"
@@ -91,8 +93,9 @@ social-card:
   image: /img/social/default-card.jpg
   alt: "César Soto Valero, Lead Data Scientist at SEB, applied AI for finance"
 
-# Google Tag Manager ID
-#gtm: ""
+# Google Tag Manager container (see _includes/gtm_head.html). Loaded only in production builds.
+# The container sends page views to the GA4 property G-8N8KERHX47.
+gtm: "GTM-M6BRL28K"
 
 # Facebook App ID
 # fb_app_id: ""
