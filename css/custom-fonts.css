@@ -41,42 +41,6 @@
 
 @font-face {
   font-display: swap;
-  font-family: 'Century Supra T4';
-  src: url('/fonts/used-fonts/Century Supra/CenturySupraT4.woff2') format('woff2'),
-  url('/fonts/used-fonts/Century Supra/CenturySupraT4.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Century Supra T4';
-  src: url('/fonts/used-fonts/Century Supra/CenturySupraT4-Bold.woff2') format('woff2'),
-  url('/fonts/used-fonts/Century Supra/CenturySupraT4-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Century Supra C4';
-  src: url('/fonts/used-fonts/Century Supra/CenturySupraC4.woff2') format('woff2'),
-  url('/fonts/used-fonts/Century Supra/CenturySupraC4.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Century Supra C4';
-  src: url('/fonts/used-fonts/Century Supra/CenturySupraC4-Bold.woff2') format('woff2'),
-  url('/fonts/used-fonts/Century Supra/CenturySupraC4-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-display: swap;
   font-family: 'Equity Text A';
   src: url('/fonts/used-fonts/Equity/equity_text_a_regular-webfont.woff') format('woff'),
   url('/fonts/used-fonts/Equity/equity_text_a_regular-webfont.woff') format('woff');
@@ -158,6 +122,13 @@
 }
 
 /* Equity: italic and bold faces (the regular face is declared above). */
+@font-face {
+  font-display: swap;
+  font-family: 'Equity Text A';
+  src: url('/fonts/used-fonts/Equity/equity_text_a_bold_italic-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
 @font-face {
   font-display: swap;
   font-family: 'Equity Text A';

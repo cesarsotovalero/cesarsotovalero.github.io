@@ -10,49 +10,29 @@ pagefind: false
 
 {% assign posts = site.posts %}
 
-{% comment %} Tags sorted by number of posts: "007|java" sorts as text, so pad the counts. {% endcomment %}
+{% comment %} Tags by number of posts, ties by name. Keys like "991|java" sort as text, so they hold 999 minus the count, padded: an ascending sort then puts the most-used tags first and ties in alphabetical order. {% endcomment %}
 {% assign tag_counts = "" | split: "" %}
 {% for tag in site.tags %}
-  {% assign padded = tag[1].size | prepend: "000" | slice: -3, 3 %}
+  {% assign padded = 999 | minus: tag[1].size | prepend: "000" | slice: -3, 3 %}
   {% assign tag_entry = padded | append: "|" | append: tag[0] %}
   {% assign tag_counts = tag_counts | push: tag_entry %}
 {% endfor %}
-{% assign tag_counts = tag_counts | sort | reverse %}
+{% assign tag_counts = tag_counts | sort %}
 
-<p class="blog-intro">{{ posts.size }} posts on applied AI, software engineering, research, and careers, written since {{ posts.last.date | date: "%Y" }}.</p>
+<section class="blog-subscribe" aria-label="Newsletter">
+   {% include subscribe.html %}
+</section>
 
 <nav class="blog-filters" aria-label="Filter posts by topic">
    <ul>
       <li><a href="{{ site.baseurl }}/blog" class="blog-filter" data-tag="">All</a></li>
-      {% for entry in tag_counts limit: 10 %}
+      {% for entry in tag_counts %}
       {% assign parts = entry | split: "|" %}
-      <li><a href="{{ site.baseurl }}/tag/{{ parts[1] }}" class="blog-filter" data-tag="{{ parts[1] }}">{{ parts[1] }} <span class="blog-filter-count">{{ parts[0] | plus: 0 }}</span></a></li>
+      <li><a href="{{ site.baseurl }}/tag/{{ parts[1] }}" class="blog-filter" data-tag="{{ parts[1] }}"><i class="fas fa-tag" aria-hidden="true"></i>{{ parts[1] }} <span class="blog-filter-count">{{ 999 | minus: parts[0] }}</span></a></li>
       {% endfor %}
-      <li><a href="{{ site.baseurl }}/blog/tags" class="blog-filter-more">All tags &rarr;</a></li>
    </ul>
 </nav>
 <p class="blog-filter-status" role="status" aria-live="polite"></p>
-
-<section class="blog-latest" aria-labelledby="blog-latest-title">
-   <h2 id="blog-latest-title" class="blog-section-title">Latest</h2>
-   <ul class="blog-cards">
-      {% for post in posts limit: 3 %}
-      {% assign words = post.content | number_of_words %}
-      <li class="blog-card">
-         <a href="{{ post.url | relative_url }}">
-            {% if post.image %}
-            <img class="thumb-round" src="{{ post.image | thumbnail }}" alt="" width="84" height="84" loading="lazy" decoding="async">
-            {% endif %}
-            <span class="blog-card-text">
-               <span class="blog-card-title">{{ post.title }}</span>
-               {% if post.subtitle %}<span class="blog-card-subtitle">{{ post.subtitle }}</span>{% endif %}
-               <span class="blog-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> · {% if words < 180 %}1{% else %}{{ words | divided_by: 180 }}{% endif %} min read</span>
-            </span>
-         </a>
-      </li>
-      {% endfor %}
-   </ul>
-</section>
 
 <section class="blog-archive" aria-labelledby="blog-archive-title">
    <h2 id="blog-archive-title" class="blog-section-title">All posts</h2>
@@ -81,17 +61,12 @@ pagefind: false
    {% endfor %}
 </section>
 
-<section class="blog-subscribe" aria-label="Newsletter">
-   {% include subscribe.html %}
-</section>
-
 <script>
 // Filter the list in place. Without JavaScript the filters are links to the tag pages.
 (function () {
    var filters = document.querySelectorAll('.blog-filter');
    var rows = document.querySelectorAll('.blog-row');
    var years = document.querySelectorAll('.blog-year');
-   var latest = document.querySelector('.blog-latest');
    var status = document.querySelector('.blog-filter-status');
 
    function apply(tag, updateUrl) {
@@ -104,7 +79,6 @@ pagefind: false
       years.forEach(function (year) {
          year.hidden = !year.querySelector('.blog-row:not([hidden])');
       });
-      latest.hidden = !!tag;
       filters.forEach(function (filter) {
          filter.setAttribute('aria-pressed', filter.getAttribute('data-tag') === tag ? 'true' : 'false');
       });

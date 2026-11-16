@@ -130,6 +130,7 @@ html {
   min-height: 40px;
 }
 
+/* Outlined rather than filled, so it does not read as a selected item. */
 .site-nav-cta,
 .site-nav-cta:hover,
 .site-nav-cta:focus {
@@ -138,9 +139,10 @@ html {
   min-height: 40px;
   margin-left: 8px;
   padding: 0 18px;
+  border: 1px solid var(--accent-soft-border);
   border-radius: 6px;
-  background: var(--nav-cta-bg);
-  color: var(--nav-cta-fg);
+  background: transparent;
+  color: var(--accent-text);
   font-family: var(--nav-font);
   font-size: 17px;
   font-weight: 600;
@@ -148,7 +150,7 @@ html {
 }
 
 .site-nav-cta:hover {
-  opacity: 0.9;
+  background: var(--accent-soft);
 }
 
 /* The menu button only appears on small screens. */

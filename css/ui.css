@@ -49,8 +49,7 @@ a:focus {
 }
 
 .section-tabs a:hover,
-.blog-filter:hover,
-.blog-filter-more:hover {
+.blog-filter:hover {
   border-color: var(--accent-soft-border);
   background: var(--accent-soft);
 }
@@ -88,14 +87,58 @@ a:focus {
   color: var(--accent-text);
 }
 
-/* ---------- Buttons: a gentle pressed state ---------- */
+/* ---------- Buttons and pills: gentle motion ----------
+   Colors ease in on hover; buttons also rise 1px with a faint shadow (pills stay put, since a row
+   of moving chips looks busy). Pressing settles everything slightly smaller, and quickly. */
+
+.home-button,
+.site-nav-cta,
+.contact-submit,
+.reveal-more,
+.mailchimp-subscribe-section .button,
+.section-tabs a,
+.blog-filter,
+.list-filters .list-filter {
+  transition: background-color 0.15s ease-out, border-color 0.15s ease-out, color 0.15s ease-out,
+              text-decoration-color 0.15s ease-out, box-shadow 0.15s ease-out, transform 0.15s ease-out;
+}
+
+/* Only where a pointer can hover, so tapped buttons don't stay lifted on phones. */
+@media (hover: hover) {
+  .home-button:hover,
+  .site-nav-cta:hover,
+  .contact-submit:not(:disabled):hover,
+  .reveal-more:hover,
+  .mailchimp-subscribe-section .button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px -4px rgba(4, 39, 66, 0.35);
+  }
+}
 
 .home-button:active,
 .site-nav-cta:active,
-.contact-submit:active,
-.reveal-more:active {
-  transform: translateY(1px);
-  opacity: 0.85;
+.contact-submit:not(:disabled):active,
+.reveal-more:active,
+.mailchimp-subscribe-section .button:active,
+.section-tabs a:active,
+.blog-filter:active,
+.list-filters .list-filter:active {
+  transform: scale(0.98);
+  box-shadow: none;
+  transition-duration: 0.06s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-button,
+  .site-nav-cta,
+  .contact-submit,
+  .reveal-more,
+  .mailchimp-subscribe-section .button,
+  .section-tabs a,
+  .blog-filter,
+  .list-filters .list-filter {
+    transform: none !important;
+  }
 }
 
 .home-button:not(.home-button--primary):hover,

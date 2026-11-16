@@ -13,9 +13,9 @@ html {
 }
 
 body {
-  font-family: "Century Supra T4", "Georgia", "Times New Roman", serif;
+  font-family: "Equity Text A", "Georgia", "Times New Roman", serif;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 21px;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
   position: relative;
@@ -27,9 +27,10 @@ body {
   line-height: 1.7;
 }
 
+/* Equity reads smaller than its pixel size, so phones get 19px (not 18px). */
 @media only screen and (max-width: 450px) {
   body {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 
@@ -67,7 +68,7 @@ p a {
 article[role=main]>p:first-of-type:first-child::first-letter {
   font-size: 72px;
   line-height: 1;
-  font-family: "Century Supra C3";
+  font-family: "Equity Text A", Georgia, serif;
   font-weight: 400;
   float: left;
   padding-right: 12px;
@@ -333,7 +334,7 @@ footer {
 blockquote {
   color: var(--main-text-color);
   background-color: var(--blockquote-background-color);
-  font-size: 22px;
+  font-size: 21px;
   line-height: 1.5;
   font-weight: 400;
   border-left-color: var(--main-text-color);
@@ -1263,7 +1264,7 @@ dialog.drawer-panel[open]::backdrop {
   width: 100%;
   border-radius: 3px;
   margin-left: 4px;
-  font-family: "Concourse T6", "Century Supra C4", "Linux Biolinum";
+  font-family: "Concourse T6", "Linux Biolinum";
 }
 
 #mailchimp-subscribe-section-footer #mc-embedded-subscribe-footer {
@@ -1352,7 +1353,7 @@ footer {
 }
 
 footer a {
-  color: #404040;
+  color: inherit;
 }
 
 footer .list-inline {

@@ -41,7 +41,7 @@ body {
 .booking-page {
   --bk-display: "Concourse T6", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
   --bk-ui: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  --bk-body: "Century Supra T4", Georgia, "Times New Roman", serif;
+  --bk-body: "Equity Text A", Georgia, "Times New Roman", serif;
 
   max-width: 1040px;
   margin: 0 auto;

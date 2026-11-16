@@ -13,7 +13,6 @@ sections:
     pages:
       - { title: Blog posts, url: /blog }
       - { title: LinkedIn posts, url: /linkedin }
-      - { title: Posts by tag, url: /blog/tags }
 
   - title: Talks
     url: /talks

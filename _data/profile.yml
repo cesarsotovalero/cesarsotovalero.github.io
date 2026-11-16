@@ -90,10 +90,11 @@ awards:
   - "WASP Certificate of Excellence, 2019"
 
 # Headline numbers on the homepage (keep in sync with `facts`). The talk count is computed from _data/talks.yml.
+# Each stat links to where it can be verified.
 stats:
-  - { value: "30+", label: "research papers" }
-  - { value: "1,000+", label: "citations" }
-  - { value: "17,000+", label: "LinkedIn followers" }
+  - { value: "30+", label: "research papers", url: "/publications" }
+  - { value: "1,000+", label: "citations", url: "https://scholar.google.com/citations?user=jNBoowwAAAAJ" }
+  - { value: "17,000+", label: "LinkedIn followers", url: "https://www.linkedin.com/in/cesarsotovalero" }
 
 # Conferences shown on the homepage ("Spoken at ...").
 venues:

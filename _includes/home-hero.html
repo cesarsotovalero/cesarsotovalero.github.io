@@ -24,9 +24,10 @@
 <section class="home-proof" aria-label="Highlights">
    <ul class="home-stats">
       {% for stat in profile.stats %}
-      <li><strong>{{ stat.value }}</strong> {{ stat.label }}</li>
+      {% if stat.url contains "://" %}{% assign stat_href = stat.url %}{% else %}{% assign stat_href = site.baseurl | append: stat.url %}{% endif %}
+      <li><a href="{{ stat_href }}"><strong>{{ stat.value }}</strong> <span>{{ stat.label }}</span></a></li>
       {% endfor %}
-      <li><strong>{{ site.data.talks.size }}</strong> talks</li>
+      <li><a href="{{ site.baseurl }}/talks"><strong>{{ site.data.talks.size }}</strong> <span>talks</span></a></li>
    </ul>
-   <p class="home-venues">Spoken at {{ profile.venues | join: " &middot; " }}</p>
+   <p class="home-venues"><a class="home-venues-label" href="{{ site.baseurl }}/talks">Spoken at</a> {{ profile.venues | join: " &middot; " }}</p>
 </section>
