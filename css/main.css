@@ -2296,19 +2296,82 @@ td.gutter {
 }
 
 
-/* --- Social media sharing section --- */
+/* --- Post actions: Ko-fi button with quiet, round share icons beside it --- */
+
+.post-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+  margin-bottom: 20px;
+}
+
+.post-actions #share-section {
+  margin-bottom: 0;
+}
 
 #share-section {
   margin-bottom: 20px;
 }
 
 .share-section {
-  margin-bottom: 15px;
-  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.share-section a {
-  margin-right: 3px;
+.share-section li {
+  margin: 0;
+}
+
+.share-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--post-meta-index-color);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease, transform 0.15s ease;
+}
+
+.share-icon:hover,
+.share-icon:focus-visible {
+  color: var(--main-text-color);
+  border-color: currentColor;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.share-icon:active {
+  transform: scale(0.94);
+}
+
+.share-icon svg {
+  display: block;
+}
+
+.btn-copy-link .share-icon-check,
+.btn-copy-link.is-copied .share-icon-link {
+  display: none;
+}
+
+.btn-copy-link.is-copied .share-icon-check {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .share-icon {
+    transition: none;
+  }
 }
 
 /* --- Notification boxes --- */

@@ -222,10 +222,4 @@ a:hover .thumb-round,
     flex-wrap: wrap;
     gap: 0 18px;
   }
-
-  /* Share row: fewer, larger targets. */
-  .share-section .btn-reddit,
-  .share-section .btn-hn {
-    display: none;
-  }
 }

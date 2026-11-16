@@ -407,6 +407,16 @@ footer.site-footer {
   color: var(--post-meta-index-color);
 }
 
+@media (min-width: 768px) {
+  .site-footer .footer-social {
+    justify-content: center;
+  }
+
+  .site-footer .copyright {
+    text-align: center;
+  }
+}
+
 @media (max-width: 860px) {
   .footer-sitemap {
     grid-template-columns: repeat(2, minmax(0, 1fr));

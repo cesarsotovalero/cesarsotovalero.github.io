@@ -52,11 +52,6 @@ layout: base
 <aside class="container" aria-label="Share, related posts, and comments">
    <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-         <div class="flex-container-footer-badges">
-            {% if page.social-share %}
-            {% include social-share.html %}
-            {% endif %}
-         </div>
          {% include related-posts.html %}
          {% include giscus.html %}
       </div>
@@ -101,38 +96,19 @@ layout: base
          updateProgress();
       }
 
-      // Copy buttons: code blocks and the "Copy link" share button.
-      function copyText(text, button, doneLabel, label) {
-         if (!navigator.clipboard) return;
-         navigator.clipboard.writeText(text).then(function () {
-            button.querySelector('.copy-label').textContent = doneLabel;
-            setTimeout(function () { button.querySelector('.copy-label').textContent = label; }, 1500);
-         });
-      }
-
-      if (navigator.clipboard) {
-         // Fenced blocks render as div.highlighter-rouge, {% raw %}{% highlight %}{% endraw %} blocks as figure.highlight.
-         document.querySelectorAll('.blog-post div.highlighter-rouge, .blog-post figure.highlight').forEach(function (block) {
-            // Line-numbered blocks are tables: copy the code column only.
-            var code = block.querySelector('td.code pre, td.rouge-code pre') || block.querySelector('pre code') || block.querySelector('pre');
-            if (!code) return;
-            var button = document.createElement('button');
-            button.type = 'button';
-            button.className = 'code-copy';
-            button.innerHTML = '<span class="copy-label">Copy</span>';
-            button.setAttribute('aria-label', 'Copy code');
-            button.addEventListener('click', function () {
-               copyText(code.innerText.replace(/\n$/, ''), button, 'Copied', 'Copy');
-            });
-            block.appendChild(button);
-         });
-      }
-
+      // "Copy link" share button: swaps to a check mark for a moment.
       var copyLink = document.querySelector('.btn-copy-link');
-      if (copyLink) {
-         copyLink.querySelector('.btn-copy-link-label').classList.add('copy-label');
+      if (copyLink && navigator.clipboard) {
+         var copyLabel = copyLink.querySelector('.copy-label');
          copyLink.addEventListener('click', function () {
-            copyText(copyLink.getAttribute('data-url'), copyLink, 'Link copied', 'Copy link');
+            navigator.clipboard.writeText(copyLink.getAttribute('data-url')).then(function () {
+               copyLink.classList.add('is-copied');
+               copyLabel.textContent = 'Link copied';
+               setTimeout(function () {
+                  copyLink.classList.remove('is-copied');
+                  copyLabel.textContent = 'Copy link';
+               }, 1500);
+            });
          });
       }
    });

@@ -1,30 +1,30 @@
-<section class="share-section" aria-label="Share this post">
-   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}"
-      class="btn btn-my-icon btn-linkedin" title="Share on LinkedIn">
-      <span id="share-linkedin" class="fab fa-linkedin-in" aria-hidden="true"></span>
-      <span class="sr-only">Share on LinkedIn</span>
-   </a>
-
-   <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ page.url | absolute_url }}"
-      class="btn btn-my-icon btn-twitter" title="Share on X">
-      <span id="share-twitter" class="fab fa-twitter" aria-hidden="true"></span>
-      <span class="sr-only">Share on X</span>
-   </a>
-
-   <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}"
-      class="btn btn-my-icon btn-reddit" title="Share on Reddit">
-      <span class="fab fa-fw fa-reddit" aria-hidden="true"></span>
-      <span class="sr-only">Share on Reddit</span>
-   </a>
-
-   <a href="https://news.ycombinator.com/submitlink?u={{ page.url | absolute_url | url_encode }}&amp;t={{ page.title | url_encode }}"
-      class="btn btn-my-icon btn-hn" title="Share on Hacker News">
-      <i class="fab fa-hacker-news-square" aria-hidden="true"></i>
-      <span class="sr-only">Share on Hacker News</span>
-   </a>
-
-   <button type="button" class="btn btn-my-icon btn-copy-link" data-url="{{ page.url | absolute_url }}" title="Copy link">
-      <i class="fas fa-link" aria-hidden="true"></i>
-      <span class="btn-copy-link-label">Copy link</span>
-   </button>
-</section>
+{% assign share_url = page.url | absolute_url %}
+<ul class="share-section" aria-label="Share this post">
+   <li>
+      <a class="share-icon" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ share_url | url_encode }}" target="_blank" rel="noopener" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+         <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452z"/></svg>
+      </a>
+   </li>
+   <li>
+      <a class="share-icon" href="https://x.com/intent/post?text={{ page.title | url_encode }}&amp;url={{ share_url | url_encode }}" target="_blank" rel="noopener" aria-label="Share on X" title="Share on X">
+         <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+      </a>
+   </li>
+   <li>
+      <a class="share-icon" href="https://www.reddit.com/submit?url={{ share_url | url_encode }}&amp;title={{ page.title | url_encode }}" target="_blank" rel="noopener" aria-label="Share on Reddit" title="Share on Reddit">
+         <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false"><path fill="currentColor" d="M24 11.78a2.6 2.6 0 0 0-4.41-1.86 12.7 12.7 0 0 0-6.8-2.15l1.16-5.45 3.77.8a1.86 1.86 0 1 0 .2-.94l-4.2-.9a.48.48 0 0 0-.57.37l-1.29 6.08a12.8 12.8 0 0 0-6.9 2.14A2.6 2.6 0 1 0 2.1 14.1a5.1 5.1 0 0 0-.06.8c0 4.06 4.42 7.35 9.88 7.35s9.88-3.29 9.88-7.35a5.1 5.1 0 0 0-.06-.79A2.6 2.6 0 0 0 24 11.78ZM6.94 13.6a1.86 1.86 0 1 1 1.86 1.86 1.86 1.86 0 0 1-1.86-1.86Zm10.4 4.93c-1.27 1.27-3.7 1.37-4.41 1.37h-.02c-.71 0-3.14-.1-4.41-1.37a.48.48 0 0 1 .68-.68c.8.8 2.5 1.08 3.73 1.08h.02c1.23 0 2.94-.28 3.73-1.08a.48.48 0 0 1 .68.68Zm-.2-3.07a1.86 1.86 0 1 1 1.86-1.86 1.86 1.86 0 0 1-1.86 1.86Z"/></svg>
+      </a>
+   </li>
+   <li>
+      <a class="share-icon" href="https://news.ycombinator.com/submitlink?u={{ share_url | url_encode }}&amp;t={{ page.title | url_encode }}" target="_blank" rel="noopener" aria-label="Share on Hacker News" title="Share on Hacker News">
+         <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false"><path fill="currentColor" d="M5.4 3h2.2l4.4 8.3L16.4 3h2.2l-5.5 10.2V21h-2.2v-7.8z"/></svg>
+      </a>
+   </li>
+   <li>
+      <button type="button" class="share-icon btn-copy-link" data-url="{{ share_url }}" aria-label="Copy link" title="Copy link">
+         <svg class="share-icon-link" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+         <svg class="share-icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
+         <span class="sr-only copy-label" aria-live="polite">Copy link</span>
+      </button>
+   </li>
+</ul>
