@@ -18,11 +18,14 @@ pip install pyyaml pillow
 `run_jekyll.sh` generates the data files the site needs (`_data/talks.yml`, tag pages, post thumbnails), installs the gems, and serves the site at <http://localhost:4000>.
 Build with a UTF-8 locale (`LANG=en_US.UTF-8` or `C.UTF-8`): some file names contain non-ASCII characters, and Jekyll and html-proofer fail on them otherwise.
 
+Links to images, files and other pages are written from the site root (`/img/...`, `/files/...`, `/blog/...`), so they work from any page.
+
 Where things live:
 
 | Path | Contents |
 |---|---|
-| `_posts/` | Blog posts (Markdown) |
+| `_posts/<year>/` | Published blog posts (Markdown), named `YYYY-MM-DD-title.md` |
+| `_drafts/` | Unpublished posts and the post template; not built unless you run Jekyll with `--drafts` |
 | `_pages/` | Standalone pages (About, Talks, Publications, ...) |
 | `_data/` | Site data: profile, navigation, talks, YouTube and LinkedIn exports |
 | `_layouts/`, `_includes/` | Templates |

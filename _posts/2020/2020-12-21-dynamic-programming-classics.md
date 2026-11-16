@@ -6,8 +6,8 @@ tags: algorithms
 description: |
    Dynamic programming (DP) is one of the most basic and, at the same time, challenging programming paradigms. This post covers  its core concepts through two key strategies: memoization and tabulation. I use a series of representative problems (e.g., Fibonacci, Grid Traveler, and Can Sum) to demonstrate how these strategies simplify DP problems by breaking them down into smaller and reusable steps. The post includes detailed Java code examples for both approaches, guiding readers on how to solve classic algorithmic challenges efficiently.
 keywords: problems, dynamic programming, strategies
-image: ../img/posts/2020/circular_effect_cover.jpg
-share-img: ../img/2020/circular_effect_cover.jpg
+image: /img/posts/2020/circular_effect_cover.jpg
+share-img: /img/posts/2020/circular_effect_cover.jpg
 toc: false
 show-avatar: false
 author: cesarsotovalero

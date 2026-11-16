@@ -1,0 +1,46 @@
+{% comment %}
+  Open-source project cards (from _data/portfolio.yml) with live star and fork counts.
+  Parameters: limit (optional) = number of projects to show.
+{% endcomment %}
+{% assign projects = site.data.portfolio %}
+{% assign card_limit = include.limit | default: projects.size %}
+   <ul class="index-list">
+      {% for app in projects limit: card_limit %}
+      {% assign repo_slug = app.stars | split: "?" | first %}
+      <li class="index-list-item">
+         <a href="{{ app.url }}" target="_blank" rel="noopener">
+            <div class="index-list-text">
+               <span class="index-list-title">{{ app.title }}</span>
+               <span class="index-list-date">{{ app.description }}</span>
+               <span class="index-list-stats">
+                  <i class="fas fa-star" aria-hidden="true"></i> <span class="gh-stars" data-repo="{{ repo_slug }}">–</span>
+                  &nbsp;·&nbsp;
+                  <i class="fas fa-code-branch" aria-hidden="true"></i> <span class="gh-forks" data-repo="{{ repo_slug }}">–</span>
+               </span>
+            </div>
+            <div class="index-list-logo">
+               <img src="/img/logos/{{ app.img }}" alt="" loading="lazy">
+            </div>
+         </a>
+      </li>
+      {% endfor %}
+   </ul>
+<script>
+(function () {
+  var stars = document.querySelectorAll('.gh-stars[data-repo]');
+  var forks = document.querySelectorAll('.gh-forks[data-repo]');
+  var repos = {};
+  stars.forEach(function (el) { repos[el.dataset.repo] = true; });
+  Object.keys(repos).forEach(function (repo) {
+    fetch('https://api.github.com/repos/' + repo)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data) return;
+        var fmt = function (n) { return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : String(n); };
+        document.querySelectorAll('.gh-stars[data-repo="' + repo + '"]').forEach(function (el) { el.textContent = fmt(data.stargazers_count); });
+        document.querySelectorAll('.gh-forks[data-repo="' + repo + '"]').forEach(function (el) { el.textContent = fmt(data.forks_count); });
+      })
+      .catch(function () {});
+  });
+}());
+</script>

@@ -6,8 +6,8 @@ description: |
   Disqus has started forcing unwanted ads on free users, making it less appealing for bloggers and small businesses. This post explores open-source alternatives like Giscus, a GitHub-based commenting system that offers a lightweight, ad-free, and developer-friendly experience. Here is a guide on how to replace Disqus on your blog and set up Giscus to improve your site's performance and user experience (and more importantly, getting rid of those annoying ads).
 tags: github
 keywords: blog, comments, disqus, replace
-image: ../img/posts/2021/angry-emoji.jpg
-share-img: ../img/posts/2021/angry-emoji.jpg
+image: /img/posts/2021/angry-emoji.jpg
+share-img: /img/posts/2021/angry-emoji.jpg
 toc: true
 show-avatar: false
 author: cesarsotovalero
@@ -63,7 +63,7 @@ Luckly, there are great open-source alternatives to Disqus:
 
 # Setting Up Giscus
 
-[This blog](https://www.cesarsotovalero.net/blog) runs on GitHub pages, and [Jekyll](https://jekyllrb.com/) powers it.
+[This blog](/blog) runs on GitHub pages, and [Jekyll](https://jekyllrb.com/) powers it.
 By the way, please [give it a star](https://github.com/cesarsotovalero/cesarsotovalero.github.io) if you like it :smiley:.
 Jekyll is a static site generator created by one of the GitHub founders.
 The principal advantage of Jekyll is that I can deploy my website on GitHub completely free.
@@ -121,7 +121,7 @@ mr-2 {
 }
 {% endhighlight %}
 
-You can see my full customized CSS [here](https://www.cesarsotovalero.net/css/giscus-light.css).
+You can see my full customized CSS [here](/css/giscus-light.css).
 
 # Additional Configurations
 

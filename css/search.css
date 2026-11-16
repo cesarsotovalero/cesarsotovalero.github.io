@@ -1,0 +1,86 @@
+/* Search page: Pagefind UI themed with the site colors and fonts. */
+
+.site-search {
+  --pagefind-ui-scale: 0.9;
+  --pagefind-ui-primary: #042742;
+  --pagefind-ui-text: var(--main-text-color);
+  --pagefind-ui-background: var(--main-background-color);
+  --pagefind-ui-border: var(--panel-border-color);
+  --pagefind-ui-tag: var(--card-background-color);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 8px;
+  --pagefind-ui-font: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 40px;
+}
+
+[data-theme="dark"] .site-search {
+  --pagefind-ui-primary: #e8edf3;
+}
+
+.site-search .pagefind-ui__result-title a {
+  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+}
+
+.site-search .pagefind-ui__result-excerpt {
+  font-family: "Century Supra T4", Georgia, serif;
+}
+
+.site-search mark {
+  background: rgba(143, 150, 206, 0.35);
+  color: inherit;
+}
+
+/* Clear: a quiet text button centered in the field (with resetStyles off it kept the browser's boxy border). */
+.site-search .pagefind-ui__search-clear {
+  top: calc(32px * var(--pagefind-ui-scale)); /* middle of the field, which is 64px * scale tall */
+  right: 10px;
+  height: 36px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--post-meta-index-color);
+  font-size: 15px;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.site-search .pagefind-ui__search-clear:hover {
+  background: var(--accent-soft);
+  color: var(--accent-text);
+}
+
+.site-search .pagefind-ui__search-clear:focus-visible {
+  outline: 2px solid var(--accent-soft-border);
+  outline-offset: 2px;
+}
+
+/* Pagefind sets this inline to the button's width, assuming the button touches the edge;
+   reserve room for the inset button too, so typed text stops before it. */
+.site-search .pagefind-ui__search-input {
+  padding-right: 84px !important;
+}
+
+.search-fallback-form {
+  display: flex;
+  gap: 8px;
+}
+
+.search-fallback-form input[type="search"] {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #767676;
+  border-radius: 8px;
+  background: var(--card-background-color);
+  color: var(--main-text-color);
+  font-size: 18px;
+}
+
+.search-fallback-form button {
+  padding: 0 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #042742;
+  color: #fff;
+  font-size: 17px;
+}

@@ -1,0 +1,155 @@
+/* Blog post extras: reading progress, inline TOC, author box, previous/next links,
+   copy buttons. Colors use the theme variables in main.css. */
+
+/* ---------- Reading progress (just below the sticky navbar) ---------- */
+
+.reading-progress {
+  position: fixed;
+  top: var(--nav-height, 64px);
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  height: 3px;
+  pointer-events: none;
+  transition: transform 0.25s ease;
+}
+
+html.nav-hidden .reading-progress {
+  transform: translateY(calc(-1 * var(--nav-height, 64px)));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-progress {
+    transition: none;
+  }
+}
+
+.reading-progress-bar {
+  display: block;
+  height: 100%;
+  background: var(--link-decoration-color);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+/* ---------- Header meta: stay inside the text column ---------- */
+
+.post-heading .container.flex-container {
+  width: auto;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ---------- Inline TOC ("On this page"), for screens without the side TOC ---------- */
+
+.toc-inline {
+  margin: 0 0 36px;
+  padding: 12px 18px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 8px;
+  background: transparent;
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+}
+
+.toc-inline summary {
+  color: var(--main-text-color);
+  cursor: pointer;
+  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.toc-inline-list {
+  margin: 10px 0 4px;
+  padding-left: 24px;
+}
+
+.toc-inline-list li {
+  margin: 0;
+  padding: 3px 0;
+}
+
+.toc-inline-list li::marker {
+  color: var(--post-meta-index-color);
+  font-weight: 400;
+}
+
+.toc-inline-list a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.toc-inline-list a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--link-decoration-color);
+}
+
+/* main.css shows the fixed side TOC from 1526px up. */
+@media only screen and (min-width: 1526px) {
+  .toc-inline {
+    display: none;
+  }
+}
+
+/* ---------- Pull quotes: stay inside the viewport ---------- */
+
+@media only screen and (max-width: 1599px) {
+  .blog-post .quote {
+    margin-right: 0;
+  }
+}
+
+/* ---------- Previous / next posts ---------- */
+
+.post-pager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 48px 0 40px;
+}
+
+.post-pager-link {
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 8px;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.post-pager-link:hover {
+  border-color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.post-pager-link--next {
+  grid-column: 2;
+  text-align: right;
+}
+
+.post-pager-label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--post-meta-index-color);
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.post-pager-title {
+  display: block;
+  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+@media (max-width: 560px) {
+  .post-pager {
+    grid-template-columns: 1fr;
+  }
+
+  .post-pager-link--next {
+    grid-column: 1;
+  }
+}

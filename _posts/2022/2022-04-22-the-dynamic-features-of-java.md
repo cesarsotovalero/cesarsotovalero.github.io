@@ -11,8 +11,8 @@ keywords:
   - Java security,
   - Java usafe api,
   - Java dynamic analysis
-image: ../img/posts/2022/untamed_horse_cover.jpg
-share-img: ../img/posts/2022/untamed_horse_cover.jpg
+image: /img/posts/2022/untamed_horse_cover.jpg
+share-img: /img/posts/2022/untamed_horse_cover.jpg
 show-avatar: false
 toc: true
 date: 2022/04/22
@@ -24,7 +24,7 @@ The existence of dynamic features built-in within the language allows Java devel
 For example, using the [Java Reflection API](https://docs.oracle.com/javase/tutorial/reflect/), one can inspect and interact with otherwise static language constructs such as classes, fields, and methods, e.g., to instantiate objects, set fields and invoke methods.
 These dynamic language features are helpful, but their usage also hinders the accuracy of static analysis tools.
 This is due to the undecidability of resolving and analyzing code that is not reachable at compile time.
-As I mentioned in a [previous blog post](./blog/aot-vs-jit-compilation-in-java), the promising GraalVM compiler performs Ahead of Time Compilation (AOT) through static analysis on Java bytecode.
+As I mentioned in a [previous blog post](/blog/aot-vs-jit-compilation-in-java), the promising GraalVM compiler performs Ahead of Time Compilation (AOT) through static analysis on Java bytecode.
 However, the presence of dynamic features in most Java programs is a fundamental challenge for GraalVM.
 Consequently, recognizing these features is key to understand the current limitations of AOT.
 This blog post covers the fundamental dynamic features of Java and the reasons why they pose a significant challenge for GraalVM and static analysis tools in general.
@@ -555,7 +555,7 @@ However, the code will not compile if we remove it.
 
 Deserialization is a potentially dangerous operation.
 For example, the notable Apache [log4j](https://github.com/apache/logging-log4j2) library uses deserialization to read configuration files.
-This use of deserialization [was exploited]((https://nsfocusglobal.com/apache-log4j-deserialization-and-sql-injection-vulnerability-cve-2022-23302-cve-2022-23305-cve-2022-23307-alert/)) (CVE-2022-23302) in 2022, causing a global disturbance on most Java based systems.
+This use of deserialization [was exploited](https://nsfocusglobal.com/apache-log4j-deserialization-and-sql-injection-vulnerability-cve-2022-23302-cve-2022-23305-cve-2022-23307-alert/) (CVE-2022-23302) in 2022, causing a global disturbance on most Java based systems.
 
 As a rule of thumb, deserialization of untrusted data is inherently dangerous and should be avoided.
 Untrusted data should be carefully validated according to the "Serialization and Deserialization" section of the [Secure Coding Guidelines for Java SE](https://docs.oracle.com/pls/topic/lookup?ctx=javase16&id=secure_coding_guidelines_javase).

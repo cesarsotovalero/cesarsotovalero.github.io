@@ -6,8 +6,8 @@ tags: career
 description: |
   Teaching is an essential skill, whether you're a developer, researcher, or manager. In this post, I share my experience teaching the Quicksort algorithm using a blackboard. I highlight both the challenges and valuable lessons learned. From preparation tips to the importance of practice, my point is that honing your teaching abilities can enhance your communication skills and overall success in your professional career.
 keywords: teach, video, explanation, quicksort
-image: ../img/posts/2019/people_cover.png
-share-img: ../img/posts/2019/people_cover.png
+image: /img/posts/2019/people_cover.png
+share-img: /img/posts/2019/people_cover.png
 show-avatar: false
 author: cesarsotovalero
 date: 2019/2/14

@@ -10,8 +10,8 @@ keywords:
   - computer science,
   - research qualification,
   - research bibliometrics
-image: ../img/posts/2022/red_paint_cover.jpg
-share-img: ../img/posts/2022/red_paint_cover.jpg
+image: /img/posts/2022/red_paint_cover.jpg
+share-img: /img/posts/2022/red_paint_cover.jpg
 show-avatar: false
 toc: true
 date: 2022/02/22

@@ -4,6 +4,8 @@ permalink: /youtube/by-likes
 title: YouTube Videos by Likes
 description: YouTube videos by César Soto Valero, sorted by number of likes.
 published: true
+sitemap: false
+noindex: true
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -50,9 +52,9 @@ published: true
   {% for range in ranges_order %}
     {% assign idx = forloop.index0 %}
     {% assign filtered_videos = videos_by_range[idx] %}
-    <h3 id="{{ range }}" class="linked-section">
+    <h2 id="{{ range }}" class="linked-section">
       <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;({{ filtered_videos.size }} videos)
-    </h3>
+    </h2>
     <div class="video-list">
       {% for video in filtered_videos %}
         <div class="tag-entry">

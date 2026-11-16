@@ -2,7 +2,7 @@
 permalink: tools-windows
 layout: page
 title: Tools (Windows)
-subtitle: 🛠️
+subtitle: "The tools I use on Windows"
 description: List of software tools that I use on Windows.
 published: true
 ---

@@ -308,6 +308,20 @@ html[data-theme="dark"] .index-list-placeholder {
   }
 }
 
+/* Social icons on wider screens: one centered row with even spacing. */
+@media only screen and (min-width: 769px) {
+  #list-of-social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-left: 0;
+  }
+  #list-of-social-icons li {
+    padding: 0;
+  }
+}
+
 /* ---------- Social icon brand-color hover ---------- */
 #list-of-social-icons li {
   transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);

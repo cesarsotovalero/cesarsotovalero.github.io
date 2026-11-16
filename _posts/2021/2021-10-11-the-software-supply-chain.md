@@ -11,8 +11,8 @@ keywords:
   - continuous delivery,
   - software design,
   - cybersecurity,
-image: ../img/posts/2021/crane_cover.png
-share-img: ../img/posts/2021/crane_cover.png
+image: /img/posts/2021/crane_cover.png
+share-img: /img/posts/2021/crane_cover.png
 show-avatar: false
 toc: true
 date: 2021/10/11

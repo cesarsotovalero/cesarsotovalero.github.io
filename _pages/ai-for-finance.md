@@ -2,7 +2,7 @@
 permalink: ai-for-finance
 layout: page
 title: Applied AI for Finance
-subtitle: 🏦
+subtitle: "Document intelligence, agentic workflows, and AI evaluation in banking"
 description: César Soto Valero is a Lead Data Scientist at SEB working on applied AI for finance and investment banking. Focus areas, track record, talks, writing, and how to get in touch.
 keywords: César Soto Valero, applied AI for finance, AI in investment banking, financial document intelligence, agentic workflows, LLM evaluation, fraud detection, SEB, Lead Data Scientist
 schema_type: WebPage
@@ -98,7 +98,7 @@ Yes. He gave the keynote at Voxxed Days Zürich 2026 and has spoken at PyData Gl
 
 **How can I contact him?**
 
-Through [LinkedIn](https://www.linkedin.com/in/cesarsotovalero) or the [contact form](/about-me#contact-me).
+Through [LinkedIn](https://www.linkedin.com/in/cesarsotovalero) or the [contact form](/contact).
 
 ---
 

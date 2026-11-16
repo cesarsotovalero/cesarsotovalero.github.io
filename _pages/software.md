@@ -2,8 +2,10 @@
 permalink: software
 layout: page
 title: Software
-subtitle: 💻
+subtitle: "Open-source tools I've built"
 description: List of software projects created by César Soto Valero.
+css:
+  - "/css/landing.css"
 published: true
 ---
 
@@ -14,28 +16,12 @@ published: true
 
 # Pet Projects
 
-I contribute to open-source software on <a href="https://github.com/cesarsotovalero"><i class="fab fa-github"></i></a> [GitHub](https://github.com/cesarsotovalero).[^1]
+I contribute to open-source software on <a href="https://github.com/cesarsotovalero" aria-hidden="true" tabindex="-1"><i class="fab fa-github"></i></a> [GitHub](https://github.com/cesarsotovalero).[^1]
 Below is a list of software projects I have created.
 
-  <div id="portfolio">
-    <div id="tiles-big">
-      {% for app in site.data.portfolio %}
-	    <div class="tile">
-          <a class="applink" href="{{ app.url }}">
-            <img class="appimg" src="../img/logos/{{ app.img }}" />
-            <div class="apptitle">{{ app.title }}</div>
-            <div class="gh-stats">
-                <img class="gh-stat" src="//img.shields.io/github/stars/{{ app.stars }}" alt="GitHub stars">
-                <img class="gh-stat" src="//img.shields.io/github/forks/{{ app.stars }}" alt="GitHub stars">
-            </div>
-            <div class="appdesc">{{ app.description }}</div>
-          </a>
-        </div>
-	  {% endfor %}
-    </div>
-  </div>
-
-{% badge https://stackoverflow.com/users/flair/10480869.png with=200 https://stackoverflow.com/users/10480869/cesarsotovalero %}
+<div class="project-grid">
+{% include project-cards.html %}
+</div>
 
 In the past, I also contributed to Stack Overflow.
 Here's my profile: [César Soto Valero on Stack Overflow](https://stackoverflow.com/users/10480869/cesarsotovalero)

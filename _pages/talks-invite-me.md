@@ -3,7 +3,7 @@ permalink: /talks/invite-me
 layout: page
 title: Invite Me
 description: How to invite César Soto Valero to speak at your event.
-subtitle: 📢
+subtitle: "How to invite me to speak at your event"
 published: true
 ---
 
@@ -11,7 +11,7 @@ published: true
 
 I'm always grateful for opportunities to share my knowledge and experiences.
 
-If you'd like to have me at your event, feel free to contact me using [this form](../about-me#contact-me).
+If you'd like to have me at your event, feel free to contact me using [this form](/contact).
 
 I don't charge a speaking fee, but I kindly ask that you cover economy-class airfare and accommodation in a decent hotel if the talk is in-person.
 

@@ -1,0 +1,49 @@
+{% comment %}
+  Long lists: show the first `data-batch` items of each [data-batch] container and add a
+  "Show more" button. Without JavaScript every item is shown.
+{% endcomment %}
+<style>
+  .is-batched { display: none !important; }
+  .reveal-more {
+    display: block;
+    margin: 24px auto 40px;
+    min-height: 44px;
+    padding: 0 22px;
+    border: 1px solid var(--main-text-color);
+    border-radius: 6px;
+    background: none;
+    color: var(--main-text-color);
+    font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+</style>
+<script>
+(function () {
+   document.querySelectorAll('[data-batch]').forEach(function (container) {
+      var size = parseInt(container.getAttribute('data-batch'), 10) || 30;
+      var items = Array.prototype.slice.call(container.children);
+      if (items.length <= size) return;
+      var shown = size;
+      items.forEach(function (item, i) { if (i >= size) item.classList.add('is-batched'); });
+
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'reveal-more';
+      var label = function () { button.textContent = 'Show more (' + (items.length - shown) + ' left)'; };
+      label();
+      button.addEventListener('click', function () {
+         var next = Math.min(items.length, shown + size);
+         for (var i = shown; i < next; i++) items[i].classList.remove('is-batched');
+         var first = items[shown];
+         shown = next;
+         // Keyboard and screen reader users continue from the first new item.
+         var target = first.matches('a, button') ? first : first.querySelector('a, button');
+         if (target) target.focus();
+         if (shown >= items.length) button.remove(); else label();
+      });
+      container.parentNode.insertBefore(button, container.nextSibling);
+   });
+})();
+</script>

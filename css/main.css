@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 @import url("custom-fonts.css");
 
 /* --- General --- */
@@ -32,6 +30,33 @@ body {
 @media only screen and (max-width: 450px) {
   body {
     font-size: 18px;
+  }
+}
+
+/* Long-form reading text in posts and pages uses Equity; everything else keeps its font.
+   Markdown output has no classes, so classed elements (widgets, cards, lists) are left alone. */
+.blog-post :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li),
+.container[role=main]:not(.main-content) :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li) {
+  font-family: "Equity Text A", "Georgia", "Times New Roman", serif;
+}
+
+/* Equity's bold looks heavy, so bold text in the reading text keeps Century Supra. */
+.blog-post :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li) :where(strong, b),
+.container[role=main]:not(.main-content) :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li) :where(strong, b) {
+  font-family: "Century Supra T4", "Georgia", "Times New Roman", serif;
+}
+
+/* Footnotes keep their own smaller size. */
+.blog-post :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li, .footnotes *),
+.container[role=main]:not(.main-content) :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li, .footnotes *) {
+  font-size: 21px;
+}
+
+/* Equity reads smaller than its pixel size, so phones get 19px (not 18px). */
+@media only screen and (max-width: 450px) {
+  .blog-post :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li, .footnotes *),
+  .container[role=main]:not(.main-content) :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li, .footnotes *) {
+    font-size: 19px;
   }
 }
 
@@ -69,7 +94,7 @@ p a {
 article[role=main]>p:first-of-type:first-child::first-letter {
   font-size: 72px;
   line-height: 1;
-  font-family: "Century Supra C3";
+  font-family: "Equity Text A", Georgia, serif;
   font-weight: 400;
   float: left;
   padding-right: 12px;
@@ -93,13 +118,6 @@ h6 {
   /*text-transform: capitalize;*/
 }
 
-.blog-post {
-  counter-reset: h1counter h2counter h3counter h4counter;
-}
-
-.blog-post {
-  counter-reset: h1counter;
-}
 
 h1 {
   margin-top: 40px;
@@ -109,16 +127,6 @@ h1 {
   font-size: 36px;
 }
 
-.blog-post h1 {
-  counter-reset: h2counter;
-}
-
-.blog-post h1:before {
-  counter-increment: h1counter;
-  content: counter(h1counter) ".\00a0\00a0";
-  font-size: 32px;
-  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 
 @media only screen and (max-width: 450px) {
 
@@ -128,10 +136,6 @@ h1 {
     font-size: 28px;
   }
 
-  .blog-post h1:before {
-    content: counter(h1counter) ".\0000a0";
-    font-size: 26px;
-  }
 }
 
 h2 {
@@ -142,17 +146,6 @@ h2 {
   font-size: 28px;
 }
 
-.blog-post h2 {
-  counter-reset: h3counter;
-}
-
-
-.blog-post h2:before {
-  counter-increment: h2counter;
-  content: counter(h1counter) "." counter(h2counter) ".\00a0\00a0";
-  font-size: 24px;
-  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 
 
 @media only screen and (max-width: 450px) {
@@ -163,11 +156,6 @@ h2 {
     font-size: 22px;
   }
 
-  .blog-post h2:before h3:before {
-    counter-increment: h2counter;
-    content: counter(h1counter) "." counter(h2counter) ".\0000a0";
-    font-size: 20px;
-  }
 }
 
 h3 {
@@ -177,11 +165,6 @@ h3 {
   counter-reset: h4counter;
 }
 
-.blog-post h3:before {
-  counter-increment: h3counter;
-  content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) ".\00a0\00a0";
-  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 
 
 @media only screen and (max-width: 450px) {
@@ -192,6 +175,74 @@ h3 {
     font-size: 22px;
   }
 
+}
+
+/* Post sections. The post title is the only h1 (see _plugins/post_headings.rb),
+   so sections start at h2; they keep the sizes the h1-h3 sections had before.
+   Numbering: 1. / 1.1. / 1.1.1. */
+.blog-post {
+  counter-reset: h2counter h3counter h4counter;
+}
+
+.blog-post h2 {
+  font-size: 36px;
+  counter-reset: h3counter;
+}
+
+.blog-post h2:before {
+  counter-increment: h2counter;
+  content: counter(h2counter) ".\00a0\00a0";
+  font-size: 32px;
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.blog-post h3 {
+  font-size: 28px;
+  counter-reset: h4counter;
+}
+
+.blog-post h3:before {
+  counter-increment: h3counter;
+  content: counter(h2counter) "." counter(h3counter) ".\00a0\00a0";
+  font-size: 24px;
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.blog-post h4 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  letter-spacing: -0.25px;
+  font-size: 24px;
+}
+
+.blog-post h4:before {
+  counter-increment: h4counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".\00a0\00a0";
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* "Footnotes" is not a numbered section. */
+.blog-post h2#footnotes:before {
+  content: none;
+  counter-increment: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .blog-post h2 {
+    margin-top: 25px;
+    font-size: 28px;
+  }
+
+  .blog-post h2:before {
+    content: counter(h2counter) ".\00a0";
+    font-size: 26px;
+  }
+
+  .blog-post h3,
+  .blog-post h4 {
+    margin-top: 20px;
+    font-size: 22px;
+  }
 }
 
 a {
@@ -209,6 +260,86 @@ a:focus {
   text-decoration-thickness: 0.1em;
   text-decoration-color: var(--link-decoration-color);
   -webkit-text-decoration-color: var(--link-decoration-color);
+}
+
+/* ---------- Accessibility ---------- */
+
+/* Skip link: hidden until focused with the keyboard. */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -100px;
+  z-index: 2000;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #042742;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 8px;
+  color: #fff;
+}
+
+/* The skip-link target receives focus programmatically; no outline needed there. */
+#main:focus {
+  outline: none;
+}
+
+/* Visible keyboard focus everywhere (Bootstrap 3's default is faint on the cream background). */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+  outline: 3px solid #4a7bd0;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Theme toggle is a <button>; make it look like the other navbar items.
+   Desktop: same height as the nav links (still above the 24px WCAG minimum).
+   Mobile drawer: 44px touch target. */
+.theme-toggle {
+  min-width: 32px;
+  min-height: 27px;
+  padding: 0 8px;
+  border: 0;
+  background: none;
+  color: var(--main-text-color);
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.drawer-nav-list .theme-toggle {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* "See all" links: larger touch target without changing their look. */
+.index-see-all a {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -229,7 +360,7 @@ footer {
 blockquote {
   color: var(--main-text-color);
   background-color: var(--blockquote-background-color);
-  font-size: 22px;
+  font-size: 21px;
   line-height: 1.5;
   font-weight: 400;
   border-left-color: var(--main-text-color);
@@ -334,7 +465,7 @@ em {
 
 .post-categories {
   /*background-color: gray;*/
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
   margin-right: 4px;
@@ -345,7 +476,7 @@ em {
 
 .post-categories-tags {
   /*background-color: gray;*/
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
   margin-right: 4px;
@@ -960,11 +1091,11 @@ dialog.drawer-panel[open]::backdrop {
 }
 
 
-#theme-toggle:hover .fa-moon {
+.theme-toggle:hover .fa-moon {
   color: var(--main-background-color);
 }
 
-#theme-toggle:hover .fa-sun {
+.theme-toggle:hover .fa-sun {
   color: var(--main-text-color);
 }
 
@@ -1080,7 +1211,7 @@ dialog.drawer-panel[open]::backdrop {
   margin-top: 1rem;
   border-top: 0.1875rem double #fff;
   padding-top: 1rem;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -1248,7 +1379,7 @@ footer {
 }
 
 footer a {
-  color: #404040;
+  color: inherit;
 }
 
 footer .list-inline {
@@ -1310,11 +1441,11 @@ footer .theme-by {
 }
 
 .highligher-rouge {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-style: normal;
 }
 
@@ -1676,7 +1807,7 @@ p.post-meta {
 }
 
 #full-tags-list .tag-entry .entry-date {
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-size: 16px;
 }
 
@@ -1791,7 +1922,7 @@ p.post-meta {
   padding: 5px 10px;
   font-size: 11px;
   color: #EEE;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
   right: 0;
   bottom: 0;
   display: none;
@@ -2165,19 +2296,82 @@ td.gutter {
 }
 
 
-/* --- Social media sharing section --- */
+/* --- Post actions: Ko-fi button with quiet, round share icons beside it --- */
+
+.post-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+  margin-bottom: 20px;
+}
+
+.post-actions #share-section {
+  margin-bottom: 0;
+}
 
 #share-section {
   margin-bottom: 20px;
 }
 
 .share-section {
-  margin-bottom: 15px;
-  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.share-section a {
-  margin-right: 3px;
+.share-section li {
+  margin: 0;
+}
+
+.share-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--post-meta-index-color);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease, transform 0.15s ease;
+}
+
+.share-icon:hover,
+.share-icon:focus-visible {
+  color: var(--main-text-color);
+  border-color: currentColor;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.share-icon:active {
+  transform: scale(0.94);
+}
+
+.share-icon svg {
+  display: block;
+}
+
+.btn-copy-link .share-icon-check,
+.btn-copy-link.is-copied .share-icon-link {
+  display: none;
+}
+
+.btn-copy-link.is-copied .share-icon-check {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .share-icon {
+    transition: none;
+  }
 }
 
 /* --- Notification boxes --- */
@@ -2363,6 +2557,11 @@ input.gsc-input,
   padding: 4px 10px;
 }
 
+/* Profile icons follow the theme (dark icons on light, light icons on dark). */
+#list-of-social-icons img {
+  filter: invert(var(--media-icon-color));
+}
+
 .fa-stack {
   img {
     filter: invert(var(--media-icon-color));
@@ -2453,7 +2652,7 @@ input.gsc-input,
 }
 
 .general-button {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -2585,10 +2784,10 @@ ul {
 }
 
 .tag-code {
-  color: #808080;
+  color: var(--post-meta-index-color);
   border-radius: 6px;
   /*text-decoration: underline;*/
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
 }
 
@@ -2652,6 +2851,32 @@ ul {
 .flex-container-footer-badges a {
   padding: 0 7px 0 7px;
   margin-bottom: 5px;
+}
+
+/* Footer social links: static icons instead of third-party badge images. */
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 24px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  color: var(--main-text-color);
+}
+
+.footer-social img {
+  width: 20px;
+  height: 20px;
+  filter: invert(var(--media-icon-color));
 }
 
 .quote {
@@ -2750,7 +2975,7 @@ ul {
 }
 
 .blog-tags {
-  color: #808080;
+  color: var(--post-meta-index-color);
 }
 
 /* LAZINESS BLUR EFFECT FOR IMAGES */
@@ -2801,7 +3026,7 @@ ul {
 
 /* gisqus */
 .giscus {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .firstcharacter {
@@ -3429,11 +3654,15 @@ a.btn {
 }
 
 
-/* Hide the header */
+/* Page titles stay visible on phones, in a smaller size. */
 @media screen and (max-width: 450px) {
-  .header-hiddable {
-    visibility: hidden;
-    display: none;
+  .header-hiddable .page-heading h1 {
+    margin-top: 0;
+    font-size: 38px;
+  }
+
+  .header-hiddable .page-heading .page-subheading {
+    font-size: 19px;
   }
 }
 
@@ -3491,6 +3720,10 @@ a.btn {
 }
 
 #related-posts .title {
+  /* Same look as the former h4. */
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.2px;
   margin: 10px 0 10px 0;
   color: var(--main-text-color);
 }
@@ -3883,6 +4116,21 @@ pre .language-mermaid {
   color: var(--main-text-color);
 }
 
+/* LinkedIn/YouTube archive headings are h2 (right under the page h1); keep their previous h3 size. */
+.linkedin-post-title,
+.youtube-video-title,
+.linked-section {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 450px) {
+  .linkedin-post-title,
+  .youtube-video-title,
+  .linked-section {
+    font-size: 22px;
+  }
+}
+
 .youtube-video-description {
   font-size: 1.5rem;
   color: var(--post-meta-index-color);
@@ -4007,7 +4255,7 @@ html[data-theme="light"] {
   --navbar-color: #f0f0f0;
   --footer-color: #f0f0f0;
   --inline-code-color: #f0f0f0;
-  --post-meta-index-color: #808080;
+  --post-meta-index-color: #616161;
   --blockquote-color: darkgreen;
   /*--blockquote-background-color: #f1f1f1;*/
   --blockquote-background-color: #FFEDDE;

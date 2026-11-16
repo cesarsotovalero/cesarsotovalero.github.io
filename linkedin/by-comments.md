@@ -4,6 +4,8 @@ permalink: /linkedin/by-comments
 title: LinkedIn Posts by Comments
 description: LinkedIn posts by César Soto Valero, sorted by number of comments.
 published: true
+sitemap: false
+noindex: true
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -47,10 +49,10 @@ published: true
       {% assign posts_count = posts_count | plus: 1 %}
     {% endif %}
    {% endfor %}
-   <h3 id="{{ range }}" class="linked-section">
+   <h2 id="{{ range }}" class="linked-section">
     <i class="fas fa-comments" aria-hidden="true"></i>
     &nbsp;{{ range }}&nbsp;({{ posts_count }} posts)
-   </h3>
+   </h2>
    <div class="post-list">
     {% for post in sorted_posts %}
       {% assign comments = post.commentsCount | default: 0 %}

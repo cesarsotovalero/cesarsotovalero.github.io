@@ -2,12 +2,10 @@
 permalink: bio
 layout: page
 title: Speaker Bio
-subtitle: "César Soto Valero"
+subtitle: "Short and long versions for event organizers"
 description: "César's speaker bio for conferences"
 published: true
 ---
-
-# 🌎
 
 ## Short Bio
 

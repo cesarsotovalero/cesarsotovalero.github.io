@@ -11,8 +11,8 @@ keywords:
   - software engineering research
   - academic publishing
   - scholarly communication
-image: ../img/posts/2023/2023-11-12/dansmuseet_cover.png
-share-img: ../img/posts/2023/2023-11-12/dansmuseet_cover.png
+image: /img/posts/2023/2023-11-12/dansmuseet_cover.png
+share-img: /img/posts/2023/2023-11-12/dansmuseet_cover.png
 show-avatar: false
 toc: true
 mathjax: true
@@ -25,8 +25,8 @@ published: true
 
 In academic circles, [peer reviewing](https://en.wikipedia.org/wiki/Scholarly_peer_review) is the act of assessing the quality of a research paper to determine if it's worth to be published in a journal or conference.
 Peer reviewers are supposed to be (human) experts in the field, and their opinions have direct influence on the final decision taken by the associated editor regarding accepting or rejecting a paper submission.
-During the last years, I've peer-reviewed [a good number](./service) of research papers submitted to top journals and conferences, mostly within the fields of Software Engineering, Applied Machine Learning, and Sports Sciences.
-As a PhD student, I've also played on the other side of the fence, submitting [my own papers](./publications) to similar venues and getting all kinds of positive and negative peer reviews in response.
+During the last years, I've peer-reviewed [a good number](/service) of research papers submitted to top journals and conferences, mostly within the fields of Software Engineering, Applied Machine Learning, and Sports Sciences.
+As a PhD student, I've also played on the other side of the fence, submitting [my own papers](/publications) to similar venues and getting all kinds of positive and negative peer reviews in response.
 I think this dual perspective has contributed to broadening my understanding of the peer review process.
 In hindsight, it's clear to me that there are many challenges to overcome in order to improve peer reviews for the benefit of the academic community.
 Specifically, I have noticed a large variance in the quality of many of the reviews I've had the chance to see.[^4]

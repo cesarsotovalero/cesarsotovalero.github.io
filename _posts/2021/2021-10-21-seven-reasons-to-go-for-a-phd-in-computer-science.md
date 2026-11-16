@@ -11,8 +11,8 @@ keywords:
   - professional life,
   - life in academia,
   - opportunity,
-image: ../img/posts/2021/rabbit_cover.jpg
-share-img: ../img/posts/2021/rabbit_cover.jpg
+image: /img/posts/2021/rabbit_cover.jpg
+share-img: /img/posts/2021/rabbit_cover.jpg
 show-avatar: false
 toc: true
 date: 2021/10/21
@@ -119,7 +119,7 @@ Others will become prestigious professors, and a very few of them will make sign
 
 # Set Yourself Apart From The Competition
 
-You probably want to be [more than just a programmer](./blog/hermit-programmers-are-dead), and that's great.
+You probably want to be [more than just a programmer](/blog/hermit-programmers-are-dead), and that's great.
 The PhD journey will arm you with a set of technical and non-technical skills to satisfy this ambition.
 There are many good developers out there, but a PhD teaches you how to methodically solve complex problems, write well, and communicate with others.
 Professional recruiters know very well that candidates with this combination of talents are not very common in the job market.
@@ -128,7 +128,7 @@ Professional recruiters know very well that candidates with this combination of 
     <em>“Your value in the market will be higher.”</em>
 </aside>
 
-If you succeed to graduate [you have been battle-tested](./blog/book-review-the-phd-grind).
+If you succeed to graduate [you have been battle-tested](/blog/book-review-the-phd-grind).
 You have learned how to organize a research agenda and formulate specific research questions.
 A PhD prepares you well to ask questions with a high level of abstraction, and probably you will be able to approach projects from a more holistic perspective than others.
 These ~~soft~~ skills are difficult to learn and can only be acquired through experience.

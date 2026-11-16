@@ -6,8 +6,8 @@ tags: java
 keywords: package manager, Java, ecosystem, software
 description: |
   Deploying to Maven Central is essential for sharing Java libraries with the world. In this post, I provide a detailed, step-by-step guide on how to deploy a software artifact to Maven Central, covering everything from setting up a Sonatype account to configuring POM files. By following this tutorial, you'll be able to streamline your deployment process and ensure your libraries are available for reuse to all developers out there.
-image: ../img/posts/2020/maven_journey_cover.png
-share-img: ../img/posts/2020/maven_journey_cover.png
+image: /img/posts/2020/maven_journey_cover.png
+share-img: /img/posts/2020/maven_journey_cover.png
 show-avatar: false
 toc: true
 author: cesarsotovalero
@@ -36,7 +36,7 @@ First, you need to create a JIRA account and submit a ticket there requesting fo
 A staging repository is already configured for the requested GroupId, you need to find someone with a deployer role that comments on the ticket to verify your request.
 Below is an example of a ticket that I created requesting a repository for the namespace `se.kth.castor`
 
-![](../../img/posts/2020/sonatype_screeshot.png)
+![](/img/posts/2020/sonatype_screeshot.png)
 
 The ticked review is a manual process, it normally takes less than 2 business days.
 

@@ -2,114 +2,114 @@
 layout: base
 ---
 
-<!--<nav class="navbar-fixed-top navbar-custom">-->
-<!--   <div class="container-fluid">-->
-<!--      {% include navigation.html %}-->
-<!--   </div>-->
-<!--</nav>-->
+<link rel="stylesheet" href="/css/post.css">
+
+<div class="reading-progress" aria-hidden="true"><span class="reading-progress-bar"></span></div>
 
 {% include header.html type="post" %}
 
 <div class="container">
    <div class="row">
-      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
-         <article role="main" class="blog-post">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+         {% if page.toc %}
+         {% comment %} The fixed side TOC (header.html) only fits on wide screens; this one is for the others. {% endcomment %}
+         {% capture inline_toc %}{{ content | toc_only }}{% endcapture %}
+         {% if inline_toc != "" %}
+         <details class="toc-inline">
+            <summary>On this page</summary>
+            {{ inline_toc | replace: 'id="toc" class="section-nav"', 'class="toc-inline-list"' }}
+         </details>
+         {% endif %}
+         {% endif %}
+
+         <article role="main" class="blog-post" id="main" tabindex="-1" data-pagefind-body>
             {{ content }}
-
-
          </article>
 
-         <!--      <span class="post-categories">[-->
-         <!--					  {% for tag in page.tags %}-->
-         <!--						{% capture tag_name %}{{ tag }}{% endcapture %}-->
-         <!--						<img src="../img/tag-solid.svg" style="width:1em" alt="tag">-->
-         <!--						<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>-->
-         <!--					  {% endfor %}-->
-         <!--					]</span>-->
 
-         <ul class="pager blog-pager">
+         {% if page.previous.url or page.next.url %}
+         <nav class="post-pager" aria-label="Previous and next posts">
             {% if page.previous.url %}
-            <li class="previous">
-               <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-            </li>
+            <a class="post-pager-link post-pager-link--prev" href="{{ page.previous.url | relative_url }}" rel="prev">
+               <span class="post-pager-label">&larr; Previous post</span>
+               <span class="post-pager-title">{{ page.previous.title }}</span>
+            </a>
             {% endif %}
             {% if page.next.url %}
-            <li class="next">
-               <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-            </li>
+            <a class="post-pager-link post-pager-link--next" href="{{ page.next.url | relative_url }}" rel="next">
+               <span class="post-pager-label">Next post &rarr;</span>
+               <span class="post-pager-title">{{ page.next.title }}</span>
+            </a>
             {% endif %}
-         </ul>
-         <br>
+         </nav>
+         {% endif %}
       </div>
    </div>
 </div>
 
-<!-- https://www.bryanbraun.com/anchorjs/ -->
-<script>
-   anchors.options = {
-      position: 'left'
-   };
-   anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
-</script>
-
-
 <!-- Giscus comments -->
 {% if page.comments %}
-<div class="container">
+<aside class="container" aria-label="Share, related posts, and comments">
    <div class="row">
-      <!--      <div class="col-lg-12 col-md-12 col-sm-12">-->
-      <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-1" style="padding-right: 15px;">
-         <div class="flex-container-footer-badges">
-            {% if page.social-share %}
-            {% include social-share.html %}
-            {% endif %}
-         </div>
-         <!--      <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
          {% include related-posts.html %}
          {% include giscus.html %}
       </div>
    </div>
-</div>
+</aside>
 {% endif %}
 
-
-<!--
-Sticky Table of Contents with Scrolling Active States
-https://css-tricks.com/sticky-table-of-contents-with-scrolling-active-states/
--->
 <script>
-   window.addEventListener('DOMContentLoaded', () => {
-      const observer = new IntersectionObserver(entries => {
-         entries.forEach(entry => {
-            const id = entry.target.getAttribute('id');
-            if (entry.intersectionRatio > 0) {
-               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.add('active');
-            } else {
-               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.remove('active');
-            }
+   document.addEventListener('DOMContentLoaded', function () {
+      // Heading anchors (https://www.bryanbraun.com/anchorjs/). Post sections start at h2.
+      if (window.anchors) {
+         anchors.options = { position: 'left' };
+         anchors.add('.blog-post h2', '.blog-post h3', '.blog-post h4');
+      }
+
+      // Side TOC: highlight the sections in view
+      // (https://css-tricks.com/sticky-table-of-contents-with-scrolling-active-states/).
+      if ('IntersectionObserver' in window) {
+         var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+               var link = document.querySelector('#toc li a[href="#' + CSS.escape(entry.target.id) + '"]');
+               if (link) link.parentElement.classList.toggle('active', entry.intersectionRatio > 0);
+            });
          });
-      });
+         document.querySelectorAll('.blog-post h2[id]').forEach(function (section) {
+            observer.observe(section);
+         });
+      }
 
-      // Track all sections that have an `id` applied
-      document.querySelectorAll('h1[id]').forEach((section) => {
-         observer.observe(section);
-      });
+      // Reading progress bar under the navbar.
+      var bar = document.querySelector('.reading-progress-bar');
+      var article = document.getElementById('main');
+      if (bar && article) {
+         var updateProgress = function () {
+            var rect = article.getBoundingClientRect();
+            var total = rect.height - window.innerHeight;
+            var progress = total > 0 ? Math.min(1, Math.max(0, -rect.top / total)) : 1;
+            bar.style.transform = 'scaleX(' + progress + ')';
+         };
+         window.addEventListener('scroll', updateProgress, { passive: true });
+         window.addEventListener('resize', updateProgress);
+         updateProgress();
+      }
 
-      // Track all sections that have an `id` applied
-      document.querySelectorAll('h2[id]').forEach((section) => {
-         observer.observe(section);
-      });
-
+      // "Copy link" share button: swaps to a check mark for a moment.
+      var copyLink = document.querySelector('.btn-copy-link');
+      if (copyLink && navigator.clipboard) {
+         var copyLabel = copyLink.querySelector('.copy-label');
+         copyLink.addEventListener('click', function () {
+            navigator.clipboard.writeText(copyLink.getAttribute('data-url')).then(function () {
+               copyLink.classList.add('is-copied');
+               copyLabel.textContent = 'Link copied';
+               setTimeout(function () {
+                  copyLink.classList.remove('is-copied');
+                  copyLabel.textContent = 'Copy link';
+               }, 1500);
+            });
+         });
+      }
    });
 </script>
-
-
-
-
-
-
-
-
-
-
-

@@ -6,7 +6,7 @@ subtitle: List of resources
 published: true
 description: List of resources related to mining software repositories.
 keywords: mining software data,GitHub projects,software engineering
-image: ../img/pages/software-debloating-papers/debloating.png
+image: /img/pages/software-debloating-papers/debloating.png
 ---
 
 <!--
@@ -19,7 +19,7 @@ image: ../img/pages/software-debloating-papers/debloating.png
 
 - <a href="https://github.com/diverse-project/maven-miner"><i class="fab fa-github"></i></a> [maven-miner](https://github.com/diverse-project/maven-miner/wiki) Mines Maven Central and creates a global dependency graph.
 
-- <a href="https://github.com/src-d/engine"><i class="fab fa-github"></i></a> [source{d} Engine](href="https://github.com/src-d/engine) Powerful language-agnostic analysis of your source code and git history.
+- <a href="https://github.com/src-d/engine"><i class="fab fa-github"></i></a> [source{d} Engine](https://github.com/src-d/engine) Powerful language-agnostic analysis of your source code and git history.
 
 - <a href="https://github.com/RepoReapers/reaper"><i class="fab fa-github"></i></a> [reaper](https://github.com/RepoReapers/reaper) Calculate the score of a repository based on best engineering practices.
 

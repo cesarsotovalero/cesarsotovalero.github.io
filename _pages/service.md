@@ -1,8 +1,8 @@
 ---
 permalink: service
 layout: page
-title: Services
-subtitle: 🙋
+title: Academic Service
+subtitle: "Peer reviews for journals and conferences"
 description: A list of academic services provided by César Soto Valero
 published: true
 ---
@@ -11,25 +11,25 @@ published: true
 
 Since 2017, I've peer-reviewed papers for the following journals:[^1]
 
-- [WIREs Data Mining and Knowledge Discovery](https://wires.onlinelibrary.wiley.com/journal/19424795), October 2026 🖼️ [Proof](../files/certificates/Email_from_WIREs_Data_Mining_and_Knowledge_Discovery.png)
-- [Springer International Journal of Data Science and Analytics](https://link.springer.com/journal/41060), September 2026 [Recognition](../files/certificates/2026_Reviewer_Certificate_28_September_2026.pdf)
-- [Springer Scientific Reports](https://www.nature.com/srep/), July 2026 [Recognition](../files/certificates/Reviewer%20Certificate%2028%20July%202026_Springer%20Scientific%20Reports.pdf)
-- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), January 2026 [Recognition](../files/certificates/2026_Certificate_JSS_Recognised.pdf)
-- [Springer Software Quality Journal](https://link.springer.com/journal/11219), January 2026 [Recognition](../files/certificates/2026_Springer_Software_Quality_Jan.pdf)
-- [Springer Software Quality Journal](https://link.springer.com/journal/11219), July 2025 [Recognition](../files/certificates/2025_Springer_Software_Quality.pdf)
-- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), October 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
-- [Information Processing & Management](https://www.sciencedirect.com/journal/information-processing-and-management), June 2024 [Recognition](../files/certificates/2024_IPM_Reviewer_Certificate.pdf)
-- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), May 2024 [Recognition](../files/certificates/2024_JSS_Reviewer_Certificate.pdf)
-- [Springer Discover Artificial Intelligence](https://link.springer.com/journal/44163), May 2024 [Recognition](../files/certificates/2024_DAI_Reviewer_Certificate.pdf)
-- [PeerJ Computer Science](https://peerj.com/computer-science/), 2024 🖼️ [Proof](../files/certificates/PeerJ_CS_Reviewer.png)
-- [SoftwareX](https://www.journals.elsevier.com/softwarex), December 2023 [Recognition](../files/certificates/2023_Certificate_SOFTX_Recognised.pdf)
+- [WIREs Data Mining and Knowledge Discovery](https://wires.onlinelibrary.wiley.com/journal/19424795), October 2026 🖼️ [Proof](/files/certificates/Email_from_WIREs_Data_Mining_and_Knowledge_Discovery.png)
+- [Springer International Journal of Data Science and Analytics](https://link.springer.com/journal/41060), September 2026 [Recognition](/files/certificates/2026_Reviewer_Certificate_28_September_2026.pdf)
+- [Springer Scientific Reports](https://www.nature.com/srep/), July 2026 [Recognition](/files/certificates/Reviewer%20Certificate%2028%20July%202026_Springer%20Scientific%20Reports.pdf)
+- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), January 2026 [Recognition](/files/certificates/2026_Certificate_JSS_Recognised.pdf)
+- [Springer Software Quality Journal](https://link.springer.com/journal/11219), January 2026 [Recognition](/files/certificates/2026_Springer_Software_Quality_Jan.pdf)
+- [Springer Software Quality Journal](https://link.springer.com/journal/11219), July 2025 [Recognition](/files/certificates/2025_Springer_Software_Quality.pdf)
+- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), October 2024 [Recognition](/files/certificates/2024_JSS_Reviewer_Certificate.pdf)
+- [Information Processing & Management](https://www.sciencedirect.com/journal/information-processing-and-management), June 2024 [Recognition](/files/certificates/2024_IPM_Reviewer_Certificate.pdf)
+- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software), May 2024 [Recognition](/files/certificates/2024_JSS_Reviewer_Certificate.pdf)
+- [Springer Discover Artificial Intelligence](https://link.springer.com/journal/44163), May 2024 [Recognition](/files/certificates/2024_DAI_Reviewer_Certificate.pdf)
+- [PeerJ Computer Science](https://peerj.com/computer-science/), 2024 🖼️ [Proof](/files/certificates/PeerJ_CS_Reviewer.png)
+- [SoftwareX](https://www.journals.elsevier.com/softwarex), December 2023 [Recognition](/files/certificates/2023_Certificate_SOFTX_Recognised.pdf)
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2023
 - [Springer Empirical Software Engineering](https://www.springer.com/journal/10664), 2022
 - [International Journal of Computer Science in Sport](https://sciendo.com/journal/IJCSS), 2021
-- [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021 [Recognition](../files/certificates/2021_JBA_Reviewer_Certificate.pdf)
+- [Journal of Business Analytics](https://www.tandfonline.com/toc/tjba20/current), 2021 [Recognition](/files/certificates/2021_JBA_Reviewer_Certificate.pdf)
 - [Concurrency and Computation: Practice and Experience](https://onlinelibrary.wiley.com/journal/15320634), 2019
 - [Journal of Sports Sciences](https://www.tandfonline.com/toc/rjsp20/current), 2018
-- [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), May 2017 [Recognition](../files/certificates/SMR_Certificate.pdf)
+- [Journal of Software: Evolution and Process](https://onlinelibrary.wiley.com/journal/20477481), May 2017 [Recognition](/files/certificates/SMR_Certificate.pdf)
 
 I've co-reviewed papers for the following journals and conferences:
 
@@ -43,10 +43,10 @@ I've co-reviewed papers for the following journals and conferences:
 
 I've served as a Committee Member for the following conferences:
 
-- [ACM SIGPLAN Onward! 2026](https://2026.splashcon.org/track/splash-2026-onward--papers), where I peer-reviewed and discussed 6 papers, 🖼️ [Recognition](../img/screenshots/2026-splashcon-org-track-splash-2026-onward--papers-Call-for-Papers.jpg)
-- [1st International Workshop on Software Engineering for the GenAI Transformation (SEE-AIT) 2026](https://seeait.github.io/), 🖼️ [Recognition](../img/screenshots/SEE-AIT.jfif)
-- [Jfokus 2026](https://www.jfokus.se/), where [I rated 660+ talk proposals](https://www.linkedin.com/posts/cesarsotovalero_jfokus-jfokus-callforspeakers-activity-7371260446370127873-KCXd). 🖼️ [Recognition](../img/screenshots/Jfokus2026-Program-Committee.jfif)
-- [IEEE Secure Development Conference (SecDev) 2024](https://secdev.ieee.org/2024/program-committee/), where I peer-reviewed and discussed 4 papers, 🖼️ [Recognition](../img/screenshots/SecDev2024.png)
+- [ACM SIGPLAN Onward! 2026](https://2026.splashcon.org/track/splash-2026-onward--papers), where I peer-reviewed and discussed 6 papers, 🖼️ [Recognition](/img/screenshots/2026-splashcon-org-track-splash-2026-onward--papers-Call-for-Papers.jpg)
+- [1st International Workshop on Software Engineering for the GenAI Transformation (SEE-AIT) 2026](https://seeait.github.io/), 🖼️ [Recognition](/img/screenshots/SEE-AIT.jfif)
+- [Jfokus 2026](https://www.jfokus.se/), where [I rated 660+ talk proposals](https://www.linkedin.com/posts/cesarsotovalero_jfokus-jfokus-callforspeakers-activity-7371260446370127873-KCXd). 🖼️ [Recognition](/img/screenshots/Jfokus2026-Program-Committee.jfif)
+- [IEEE Secure Development Conference (SecDev) 2024](https://secdev.ieee.org/2024/program-committee/), where I peer-reviewed and discussed 4 papers, 🖼️ [Recognition](/img/screenshots/SecDev2024.png)
 
 Also, my name is listed in the acknowledgments of the following papers:
 
@@ -58,7 +58,7 @@ I've supervised Master and Bachelor students in the following theses:
 
 1. "Detecting Semantic Changes in Dependency Updates Using Dynamic Analysis," [Leonard Sebastian Husmann](https://www.linkedin.com/in/leonard-husmann/), **Master Thesis**, KTH 2024 [PDF](https://kth.diva-portal.org/smash/get/diva2:1985091/FULLTEXT01.pdf)
 2. "Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests," [Jacob Jernestål](https://www.linkedin.com/in/jacobjernestaal/), **Bachelor Thesis**, Mid Sweden University 2024 [PDF](https://www.diva-portal.org/smash/get/diva2:1877917/FULLTEXT01.pdf)
-3. "The State of Software Diversity in the Software Supply Chain of Ethereum Clients," [Noak Jönsson](), **Bachelor Thesis**, KTH 2022 [PDF](../files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf)
+3. "The State of Software Diversity in the Software Supply Chain of Ethereum Clients," Noak Jönsson, **Bachelor Thesis**, KTH 2022 [PDF](/files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf)
 4. "Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes," [Martin Sköld](https://www.linkedin.com/in/martin-sk%C3%B6ld-73b254155/), **Master Thesis**, KTH 2020 [PDF](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf)
 5. "Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning," [Gustaf Halvardsson](https://www.linkedin.com/in/gustafhalvardsson/) and [Johanna Peterson](https://www.linkedin.com/in/johannamariapeterson/), **Bachelor Thesis**, KTH 2020 [PDF](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf)
 6. "Análisis de La Actividad Competitiva en el Juego de Polo Acuático," [Pascalina Stanislas-Inglis](https://www.linkedin.com/in/pascalina-stanislas-inglis-702636102/). **Bachelor Thesis**, UCLV 2014 [PDF](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf)
@@ -67,15 +67,15 @@ I've supervised Master and Bachelor students in the following theses:
 
 I volunteered for the following events:
 
-- [Jfokus 2023](https://www.jfokus.se/), **Volunteer**, February 2023 🖼️ [Picture](../img/pages/cesar/Jfokus2023.jpg)
-- [1st Continuous Integration (CI) Hackathon](https://hackathon.castor.kth.se/2019/), **Staff Member**, 2020 🖼️ [Recognition](../img/screenshots/travis-ci-hackaton.png)
-- [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), **Staff Member**, 2017 🖼️ [Recognition](../files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.jpg)
+- [Jfokus 2023](https://www.jfokus.se/), **Volunteer**, February 2023 🖼️ [Picture](/img/pages/cesar/Jfokus2023.jpg)
+- [1st Continuous Integration (CI) Hackathon](https://hackathon.castor.kth.se/2019/), **Staff Member**, 2020 🖼️ [Recognition](/img/screenshots/travis-ci-hackaton.png)
+- [ACM-ICPC International Collegiate Programming Contest](https://coj-forum.uci.cu/viewforum.php?f=97), **Staff Member**, 2017 🖼️ [Recognition](/files/certificates/2017_CertificateStaff_Caribbean_Finals_419972.jpg)
 
 # Outreach
 
 My work has been featured in the following media:
 
-- [WASP Alumni In Academia and Industry Interview](https://internal.wasp-sweden.org/networks-and-resources/wasp-career-program/), 2026 [Video](https://youtu.be/LvG3EenDWP4?si=80_Qx-kcx6wRd3ST&t=10 "video"){:target="\_blank"} [Slides](../files/presentations/WASP_Alumni_in_Academia_and_Industry.pptx "pptx")
+- [WASP Alumni In Academia and Industry Interview](https://internal.wasp-sweden.org/networks-and-resources/wasp-career-program/), 2026 [Video](https://youtu.be/LvG3EenDWP4?si=80_Qx-kcx6wRd3ST&t=10 "video"){:target="\_blank"} [Slides](/files/presentations/WASP_Alumni_in_Academia_and_Industry.pptx "pptx")
 - [:globe_with_meridians: Sharing insights about my PhD journey at the WASP Winter Conference](https://lnkd.in/p/dj7vJQ5T), 2025
 - [:globe_with_meridians: "Twelve scientist-endorsed tips to get over writer’s block"](https://www.nature.com/articles/d41586-024-02013-4), I got interviewed by a journalist from Nature, 2024
 - [:globe_with_meridians: Unfold](https://rethread.art/projects/unfold), Nobel Week Lights, 2022

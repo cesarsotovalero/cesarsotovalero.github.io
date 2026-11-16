@@ -6,8 +6,8 @@ tags: career
 description: |
   The era of the lone, isolated programmer is coming to an end. With the rise of cloud computing, AI, and automation, programmers must evolve into versatile software engineers, embracing collaboration, communication, and a broader skill set. This post explores why programmers who don't diversify their skills or adapt to new technologies will be left behind in a rapidly changing industry.
 keywords: programmers, dead, artificial intelligence, machine learning
-image: ../img/posts/2021/ladybug_cover.jpg
-share-img: ../img/posts/2021/ladybug_cover.jpg
+image: /img/posts/2021/ladybug_cover.jpg
+share-img: /img/posts/2021/ladybug_cover.jpg
 toc: true
 author: cesarsotovalero
 show-avatar: false

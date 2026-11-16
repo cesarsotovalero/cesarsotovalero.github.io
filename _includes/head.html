@@ -1,14 +1,5 @@
 <head>
 
-   <!-- Google AdSense -->
-   <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-   <script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-       google_ad_client: "ca-pub-5117167560601752",
-       enable_page_level_ads: true
-     });
-   </script>-->
-
    <script>
       (function() {
          let theme = localStorage.getItem('theme');
@@ -21,8 +12,20 @@
 
    <meta charset="utf-8"/>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-   <title>{{ page.title }}</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% if page.url == "/" %}
+   {% assign doc_title = site.title | append: " · Applied AI for Finance" %}
+   {% elsif page.title and page.title contains site.title %}
+   {% assign doc_title = page.title %}
+   {% elsif page.title %}
+   {% assign doc_title = page.title | append: " · " | append: site.title %}
+   {% else %}
+   {% assign doc_title = site.title %}
+   {% endif %}
+   <title>{{ doc_title | strip_html | escape }}</title>
+   {% if page.noindex %}
+   <meta name="robots" content="noindex, follow">
+   {% endif %}
 
    {% if page.keywords %}
    <meta name="keywords" content="{{ page.keywords }}">
@@ -30,11 +33,6 @@
 
    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ site.url }}/feed.xml"/>
 
-   <!--  <link href="/css/fontawesome/css/all.css" rel="stylesheet">-->
-<!--   <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linux-biolinum" type="text/css"/>-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
 
    <!--   favicons -->
    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/redketchup/apple-touch-icon.png">
@@ -45,22 +43,22 @@
    <!--   Source code CSS -->
    <link id="code" rel="stylesheet" href="/css/pygment_highlights.css" />
 
-   <!-- D3 -->
-   <script src="https://d3js.org/d3.v7.min.js"></script>
+   <!-- Fonts used above the fold: start downloading them before the CSS is parsed. -->
+   <link rel="preload" href="/fonts/used-fonts/Century%20Supra/CenturySupraT4.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="/fonts/used-fonts/Equity/equity_text_a_regular-webfont.woff" as="font" type="font/woff" crossorigin>
+   <link rel="preload" href="/fonts/used-fonts/Concourse/Concourse%20T2%20Regular.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="/fonts/used-fonts/Concourse/Concourse%20T6%20Tab%20Regular.woff2" as="font" type="font/woff2" crossorigin>
 
-   <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061705-1"></script>
-   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+   {% if page.needs_d3 %}
+   <!-- D3: only on pages that set needs_d3 in their front matter. -->
+   <script defer src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+   {% endif %}
 
-      gtag('config', 'UA-107061705-1');
-   </script>
+   {% include analytics.html %}
 
 
    <!-- Generate anchors to link to every heading in a Jekyll blog post -->
-   <script src="/js/anchor.min.js"></script>
+   <script defer src="/js/anchor.min.js"></script>
 
    {% if site.tags != "" %}
 
@@ -108,6 +106,15 @@
 
    {% capture seo_out %}{% seo title=false %}{% endcapture %}
    {% comment %} Drop jekyll-seo-tag's JSON-LD; structured-data.html emits a richer, linked graph. {% endcomment %}
+   {% unless page.image %}
+   {% capture default_card %}<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="{{ site.url }}{{ site.social-card.image }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="{{ site.social-card.alt }}" />
+<meta property="twitter:image" content="{{ site.url }}{{ site.social-card.image }}" />{% endcapture %}
+   {% assign seo_out = seo_out | replace: '<meta name="twitter:card" content="summary" />', default_card %}
+   {% endunless %}
    {% assign seo_parts = seo_out | split: '<script type="application/ld+json">' %}
    {% assign seo_tail = seo_parts[1] | split: '</script>' %}
    {{ seo_parts[0] }}{% for t in seo_tail offset: 1 %}{{ t }}{% unless forloop.last %}</script>{% endunless %}{% endfor %}
@@ -119,20 +126,18 @@
    <link rel="alternate" type="text/markdown" href="{{ site.url }}{{ page.url | remove: '.html' }}.md"/>
    {% endif %}
 
+   {% comment %} needs_mathjax is set per page by _plugins/content_feature_flags.rb. MathJax is self-hosted. {% endcomment %}
    {% if page.needs_mathjax %}
-   <script
-      type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+   <script>
+      window.MathJax = {
+         tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            processEscapes: true,
+            tags: 'all'
+         }
+      };
    </script>
-   <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
-   </script>
-   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-           type="text/javascript"></script>
+   <script defer src="/js/mathjax/tex-chtml.js"></script>
    {% endif %}
 
    <noscript>

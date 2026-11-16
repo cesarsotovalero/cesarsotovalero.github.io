@@ -1,14 +1,77 @@
 ---
 layout: default
-title: 404 - Page not found
+title: Page not found
 permalink: /404.html
-description: "Whoops, this page doesn't exist."
+description: "This page doesn't exist or has moved."
+sitemap: false
+noindex: true
 ---
 
-<div class="text-center">
-  <h1>Whoops, this page doesn't exist.</h1>
-  <h1>Move along (404 error)</h1>
-  <br/>
+<div class="not-found">
+   <p class="not-found-code" aria-hidden="true">404</p>
+   <h1>Page not found</h1>
+   <p class="not-found-text">The page you're looking for doesn't exist or has moved. Try searching for it:</p>
 
-  <img src="{{ site.baseurl }}/img/pages/404/404-southpark.jpg" alt="404 Respect my authority and get out of here!" />
+   <form class="not-found-search" action="{{ site.baseurl }}/search" method="get" role="search">
+      <label for="not-found-query" class="sr-only">Search this site</label>
+      <input id="not-found-query" type="search" name="q" placeholder="Search posts and pages" autocomplete="off">
+      <button type="submit">Search</button>
+   </form>
+
+   <p class="not-found-links">
+      Or go to the <a href="{{ site.baseurl }}/">homepage</a>, the <a href="{{ site.baseurl }}/blog">blog</a>,
+      the <a href="{{ site.baseurl }}/talks">talks</a>, or <a href="{{ site.baseurl }}/contact">get in touch</a>.
+   </p>
 </div>
+
+<style>
+   .not-found {
+      max-width: 640px;
+      margin: 40px auto 80px;
+      text-align: center;
+   }
+
+   .not-found-code {
+      margin: 0;
+      color: var(--post-meta-index-color);
+      font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1;
+   }
+
+   .not-found h1 {
+      margin: 8px 0 16px;
+   }
+
+   .not-found-search {
+      display: flex;
+      gap: 8px;
+      margin: 24px 0;
+   }
+
+   .not-found-search input {
+      flex: 1;
+      min-width: 0;
+      padding: 10px 14px;
+      border: 1px solid #767676;
+      border-radius: 8px;
+      background: var(--card-background-color);
+      color: var(--main-text-color);
+      font-size: 18px;
+   }
+
+   .not-found-search button {
+      padding: 0 20px;
+      border: 0;
+      border-radius: 8px;
+      background: #042742;
+      color: #fff;
+      font-size: 17px;
+   }
+
+   [data-theme="dark"] .not-found-search button {
+      background: #e8edf3;
+      color: #042742;
+   }
+</style>

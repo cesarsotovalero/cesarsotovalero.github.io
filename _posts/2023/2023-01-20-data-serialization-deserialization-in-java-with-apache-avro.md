@@ -9,8 +9,8 @@ keywords:
   - data engineering,
   - serialization and deserialization,
   - data formats for big data,
-image: ../img/posts/2023/2023-01-20/sparrow-cover.jpg
-share-img: ../img/posts/2023/2023-01-20/sparrow-cover.jpg
+image: /img/posts/2023/2023-01-20/sparrow-cover.jpg
+share-img: /img/posts/2023/2023-01-20/sparrow-cover.jpg
 show-avatar: false
 toc: true
 date: 2023/01/20
@@ -34,7 +34,7 @@ I'll cover the main features of Avro and why/when/how to use it for serialize an
 
 Different data formats excel in specific use cases, such as business intelligence, network communication, web applications, batch processing, or stream processing.
 Understanding their strengths and leveraging their specific features is essential when choosing one or the other.
-Making an informed decision is a major concern of developers, and of [software architects](./blog/what-does-it-take-to-become-a-software-architect) and data engineers in particular.
+Making an informed decision is a major concern of developers, and of [software architects](/blog/what-does-it-take-to-become-a-software-architect) and data engineers in particular.
 
 {% badge ../img/posts/2023/2023-01-20/apache-avro-logo-icon.png 140 https://avro.apache.org/ %}
 
@@ -95,7 +95,7 @@ Here are some advantages of using Avro instead of other data file formats:
 
 # How does it work?
 
-Avro works well in architectures implementing the [Producer-Consumer pattern](./blog/the-producer-consumer-pattern-in-java-made-easy).
+Avro works well in architectures implementing the [Producer-Consumer pattern](/blog/the-producer-consumer-pattern-in-java-made-easy).
 The producer manipulates and writes data to a file, and the consumer reads data from the file.
 This is a common pattern in Big Data and Streaming applications.
 

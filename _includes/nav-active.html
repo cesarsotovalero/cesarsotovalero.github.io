@@ -1,0 +1,13 @@
+{% comment %}
+  Sets `nav_active` to true when the current page belongs to include.section
+  (its URL starts with one of the section's `match` prefixes).
+{% endcomment %}
+{% assign nav_active = false %}
+{% for prefix in include.section.match %}
+  {% assign prefix_size = prefix | size %}
+  {% assign url_head = page.url | slice: 0, prefix_size %}
+  {% if url_head == prefix %}
+    {% assign nav_active = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}

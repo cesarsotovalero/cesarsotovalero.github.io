@@ -1,0 +1,236 @@
+/* Blog index: newsletter, topic filters and the archive by year. */
+
+/* ---------- Newsletter: one compact line above the filters ---------- */
+
+.blog-subscribe {
+  margin: 0 0 24px;
+}
+
+/* The shared include styles the heading like a button; here it is plain text. */
+.blog-subscribe .call-to-subscribe {
+  display: block;
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  cursor: auto;
+  transform: none;
+}
+
+@media (max-width: 500px) {
+  .blog-subscribe .call-to-subscribe {
+    font-size: 16px;
+  }
+}
+
+.blog-subscribe #mailchimp-subscribe-section-footer {
+  width: auto;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.blog-subscribe .mailchimp-subscribe-section .row {
+  display: flex;
+  gap: 8px;
+}
+
+.blog-subscribe .mailchimp-subscribe-section .row > div {
+  flex: 0 0 auto;
+  float: none;
+  width: auto;
+  max-width: none;
+  padding: 0;
+}
+
+.blog-subscribe .mailchimp-subscribe-section .row > div:first-child {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.blog-subscribe .mailchimp-subscribe-section .email,
+.blog-subscribe .mailchimp-subscribe-section .button {
+  height: 38px;
+  margin: 0;
+  border: 1px solid var(--accent-soft-border);
+  border-radius: 19px;
+  font-size: 15px;
+}
+
+.blog-subscribe .mailchimp-subscribe-section .email {
+  padding: 0 16px;
+  background: transparent;
+  color: var(--main-text-color);
+}
+
+.blog-subscribe #mailchimp-subscribe-section-footer #mc-embedded-subscribe-footer {
+  width: auto;
+  padding: 0 18px;
+  background: transparent;
+  color: var(--accent-text);
+}
+
+.blog-subscribe #mailchimp-subscribe-section-footer #mc-embedded-subscribe-footer:hover,
+.blog-subscribe #mailchimp-subscribe-section-footer #mc-embedded-subscribe-footer:focus {
+  background: var(--accent-soft);
+  color: var(--accent-text);
+}
+
+/* ---------- Topic filters ---------- */
+
+.blog-filters ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-filters li {
+  margin: 0;
+}
+
+.blog-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 999px;
+  color: var(--main-text-color);
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.blog-filter:hover {
+  border-color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.blog-filter[aria-pressed="true"] {
+  border-color: #042742;
+  background: #042742;
+  color: #fff;
+}
+
+[data-theme="dark"] .blog-filter[aria-pressed="true"] {
+  border-color: #e8edf3;
+  background: #e8edf3;
+  color: #042742;
+}
+
+.blog-filter .fa-tag,
+.blog-filter-count {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.blog-filter-status {
+  min-height: 1.5em;
+  margin: 12px 0 0;
+  text-align: center;
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* ---------- Sections ---------- */
+
+.blog-section-title {
+  margin: 32px 0 16px;
+  font-size: 26px;
+}
+
+.blog-meta {
+  display: block;
+  color: var(--post-meta-index-color);
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ---------- Archive ---------- */
+
+.blog-year-title {
+  margin: 28px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--panel-border-color);
+  font-size: 22px;
+}
+
+.blog-rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-row {
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--panel-border-color);
+}
+
+.blog-row:last-child {
+  border-bottom: 0;
+}
+
+.blog-row-title {
+  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.blog-row-title:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--link-decoration-color);
+}
+
+.blog-row-subtitle {
+  display: block;
+  margin-top: 2px;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.blog-row .blog-meta {
+  margin-top: 4px;
+}
+
+.blog-row-tag {
+  color: var(--post-meta-index-color);
+}
+
+/* ---------- Round thumbnails, as on the earlier blog list ---------- */
+
+.blog-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.blog-row[hidden] {
+  display: none;
+}
+
+.blog-row-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.blog-row-thumb {
+  order: 2;
+  width: 64px;
+  height: 64px;
+}
+
+@media (max-width: 760px) {
+  .blog-row-thumb {
+    width: 52px;
+    height: 52px;
+  }
+}

@@ -1,51 +1,49 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-   <!-- Hamburger toggle (visible on mobile only via Bootstrap) -->
-   <button class="navbar-toggle" type="button" commandfor="drawer-menu" command="show-modal" aria-label="Toggle navigation">
-      <span><i class="fas fa-bars"></i></span>
-   </button>
+{% assign nav = site.data.navigation %}
+<div class="site-header">
+   <nav class="site-nav" aria-label="Main">
+      <a class="site-brand" href="{{ site.baseurl }}/"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ site.author.name }}</a>
 
-   <!-- Desktop: inline nav links (visible >= 768px) -->
-   <div class="navbar-desktop">
-      {% include navigation.html %}
-   </div>
-
-   <!-- Mobile: dialog-based drawer (works without JS via invoker commands) -->
-   <dialog class="drawer-panel" id="drawer-menu" closedby="any">
-      <button class="drawer-close" type="button" commandfor="drawer-menu" command="close" aria-label="Close navigation">
-         <i class="fas fa-times"></i>
-      </button>
-      <ul class="drawer-nav-list">
-         <li><a href="{{ site.url }}">Home</a></li>
-         {% for link in site.navbar-links %}
-            {% if link[1].first %}
-               <li>
-                  <a href="javascript:void(0)" class="drawer-parent">{{ link[0] }}</a>
-                  <ul class="drawer-children">
-                     {% for childlink in link[1] %}
-                        {% for linkparts in childlink %}
-                           {% for txt_url in linkparts %}
-                              <li><a href="{{ txt_url[1] }}">{{ txt_url[0] }}</a></li>
-                           {% endfor %}
-                        {% endfor %}
-                     {% endfor %}
-                  </ul>
-               </li>
-            {% else %}
-               {% capture before %}{{ link[1] | split: "://" | first }}{% endcapture %}
-               {% capture after %}{{ link[1] | split: "://" | last }}{% endcapture %}
-               {% if before != after and before == "http" or before == "https" %}
-                  <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
-               {% else %}
-                  <li><a href="{{ site.baseurl }}/{{ link[1] }}">{{ link[0] }}</a></li>
-               {% endif %}
-            {% endif %}
-         {% endfor %}
+      <ul class="site-nav-links">
+         {% for section in nav.sections %}
+         {% include nav-active.html section=section %}
          <li>
-            <a href="#" id="theme-toggle" onclick="modeSwitcher(); return false;" style="cursor: pointer;"><i class="fas fa-adjust fa-lg"></i></a>
+            <a href="{{ site.baseurl }}{{ section.url }}" class="{% if nav_active %}is-active{% endif %}"{% if page.url == section.url %} aria-current="page"{% endif %}>{{ section.title }}</a>
          </li>
+         {% endfor %}
       </ul>
+
+      <div class="site-nav-actions">
+         <a class="site-nav-icon" href="{{ site.baseurl }}/search" aria-label="Search" title="Search">{% include icon.html name="search" %}</a>
+         <button type="button" class="theme-toggle site-nav-icon" onclick="modeSwitcher()" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode">{% include icon.html name="moon" %}</button>
+         <a class="site-nav-cta" href="{{ site.baseurl }}{{ nav.cta.url }}"{% if page.url == nav.cta.url %} aria-current="page"{% endif %}>{{ nav.cta.title }}</a>
+         <button type="button" class="site-nav-menu site-nav-icon" commandfor="drawer-menu" command="show-modal" aria-label="Open menu" aria-haspopup="dialog">{% include icon.html name="menu" %}</button>
+      </div>
+   </nav>
+
+   <!-- Mobile menu: a native dialog, which works without JavaScript in browsers that support invoker commands. -->
+   <dialog class="drawer-panel site-drawer" id="drawer-menu" closedby="any" aria-label="Menu">
+      <button class="drawer-close site-nav-icon" type="button" commandfor="drawer-menu" command="close" aria-label="Close menu">{% include icon.html name="close" %}</button>
+      <ul class="site-drawer-sections">
+         <li><a class="site-drawer-section" href="{{ site.baseurl }}/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
+         {% for section in nav.sections %}
+         {% include nav-active.html section=section %}
+         <li>
+            <a class="site-drawer-section{% if nav_active %} is-active{% endif %}" href="{{ site.baseurl }}{{ section.url }}">{{ section.title }}</a>
+            <ul class="site-drawer-pages">
+               {% for item in section.pages %}
+               <li><a href="{{ site.baseurl }}{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+               {% endfor %}
+            </ul>
+         </li>
+         {% endfor %}
+      </ul>
+      <div class="site-drawer-actions">
+         <a class="site-nav-cta" href="{{ site.baseurl }}{{ nav.cta.url }}">{{ nav.cta.title }}</a>
+         <a class="site-nav-icon" href="{{ site.baseurl }}/search" aria-label="Search" title="Search">{% include icon.html name="search" %}</a>
+         <button type="button" class="theme-toggle site-nav-icon" onclick="modeSwitcher()" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode">{% include icon.html name="moon" %}</button>
+      </div>
    </dialog>
-</nav>
+</div>
 
 <!-- Polyfill for browsers without invoker command support -->
 <script>
@@ -53,7 +51,6 @@
    var menu = document.getElementById('drawer-menu');
    if (!menu) return;
 
-   // Polyfill invoker commands for older browsers
    var buttons = document.querySelectorAll('[commandfor="drawer-menu"]');
    for (var i = 0; i < buttons.length; i++) {
       buttons[i].addEventListener('click', function(e) {
@@ -67,30 +64,44 @@
       });
    }
 
-   // Close on nav link click
+   // Close the menu when a link inside it is followed.
    var links = menu.querySelectorAll('a');
-   for (var i = 0; i < links.length; i++) {
-      links[i].addEventListener('click', function() {
-         if (!this.classList.contains('drawer-parent')) menu.close();
-      });
+   for (var j = 0; j < links.length; j++) {
+      links[j].addEventListener('click', function() { menu.close(); });
    }
 })();
+
+// Hide the header while scrolling down and show it again on scroll up.
+(function() {
+   var root = document.documentElement;
+   var header = document.querySelector('.site-header');
+   if (!header) return;
+
+   var lastY = window.scrollY;
+   var ticking = false;
+   var THRESHOLD = 8;
+
+   function update() {
+      ticking = false;
+      var y = window.scrollY;
+      var delta = y - lastY;
+      if (y <= header.offsetHeight) {
+         root.classList.remove('nav-hidden');
+      } else if (delta > THRESHOLD) {
+         root.classList.add('nav-hidden');
+      } else if (delta < -THRESHOLD) {
+         root.classList.remove('nav-hidden');
+      } else {
+         return;
+      }
+      lastY = y;
+   }
+
+   window.addEventListener('scroll', function() {
+      if (!ticking) {
+         ticking = true;
+         window.requestAnimationFrame(update);
+      }
+   }, { passive: true });
+})();
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

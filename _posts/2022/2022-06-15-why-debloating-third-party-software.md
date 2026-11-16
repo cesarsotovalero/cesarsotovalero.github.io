@@ -10,8 +10,8 @@ keywords:
   - security,
   - vulnerabilities,
   - software engineering
-image: ../img/posts/2022/2022-06-15/satyr-cover.jpg
-share-img: ../img/posts/2022/2022-06-15/satyr-cover.jpg
+image: /img/posts/2022/2022-06-15/satyr-cover.jpg
+share-img: /img/posts/2022/2022-06-15/satyr-cover.jpg
 show-avatar: false
 toc: true
 date: 2022/06/15
@@ -21,13 +21,13 @@ published: true
 
 {% youtube DqL3-bnSCy0 %}
 
-Most software applications today are built using third-party libraries and frameworks that together constitute the application's [software supply chain](./blog/the-software-supply-chain).
+Most software applications today are built using third-party libraries and frameworks that together constitute the application's [software supply chain](/blog/the-software-supply-chain).
 These libraries are often large and complex pieces of engineering, with many features and functionalities to support a wide range of use cases.
 Consequently, most applications only use a small subset of these features.
 This means that **the majority of the code in software libraries is actually unnecessary** from the perspective of the application that is using them.
 This excess of code is a security risk, as third-party code could contain dormant vulnerabilities that can be exploited by cyber-attackers.
 One way to mitigate this risk is by debloating the software through the removal of unnecessary features and components.
-This article explores the benefits of [debloating software libraries based on the actual usage](./blog/diversity-driven-software-debloat), and discusses how this strategy can enhance the security of applications reliant on third-party libraries. Using the recent Log4j security vulnerability as a case study, this article discusses how debloating could have diminished the impact of such incident.
+This article explores the benefits of [debloating software libraries based on the actual usage](/blog/diversity-driven-software-debloat), and discusses how this strategy can enhance the security of applications reliant on third-party libraries. Using the recent Log4j security vulnerability as a case study, this article discusses how debloating could have diminished the impact of such incident.
 
 <figure class="jb_picture">
   {% responsive_image path: img/posts/2022/2022-06-15/satyr.jpg alt:"TODO" %}
@@ -114,7 +114,7 @@ The Log4j vulnerability brought to light the dangers from the excess of code and
 A library as pervasive as Log4j having a critical flaw suggests that even well-maintained codebases can contain dormant vulnerabilities, especially in rarely used features.
 This incident underscores the importance of taking care of the software supply chain of applications by removing or disabling code that is not necessary for its correct functionality.
 
-[Software debloating](./software-debloating-papers) is a technique that allows organizations to reduce the attack surface of their applications by removing unnecessary features and components.
+[Software debloating](/software-debloating-papers) is a technique that allows organizations to reduce the attack surface of their applications by removing unnecessary features and components.
 The idea is simple: if parts of a library or software aren't present, they can't be exploited.
 Based on this premise, fewer components and lines of code in a software product can lead to fewer vulnerabilities, as there is fewer points for an attacker to target.
 
@@ -134,7 +134,7 @@ The following are the three most common approaches, and how they might have help
 
 - **Principle**: Detect and remove unused code without executing it.
 - **Advantages**: As there is no need to run the software, it is usually faster than dynamic analysis so it can be integrated into build processes.
-- **Challenges**: Over-approximation might lead to removing code that's actually needed or under-approximation might leave more code than necessary. Static analysis is particularly [challenging for dynamic languages like Java](./blog/the-dynamic-features-of-java), where code is loaded at runtime.
+- **Challenges**: Over-approximation might lead to removing code that's actually needed or under-approximation might leave more code than necessary. Static analysis is particularly [challenging for dynamic languages like Java](/blog/the-dynamic-features-of-java), where code is loaded at runtime.
 - **How it could have helped**: By using tools like [ProGuard](https://en.wikipedia.org/wiki/ProGuard) for Java, which can identify and remove unused classes, fields, methods, and attributes from compiled applications, most applications could have removed the `JndiLookup`  class from the classpath.
 
 ## **Dynamic Analysis-Based Debloating**
@@ -159,7 +159,7 @@ It emphasizes the security benefits of minimizing codebases and removing unused 
 Ideally, **developers should ship to production only what is actually necessary for a given application or service**, thereby reducing its overall attack surface.
 In our increasingly security-conscious world, using code debloating techniques might shift from being an optional code minimization technique to becoming a critical security measure. With debloating in place,  future incidents like the Log4j vulnerability will be prevented.
 
-**UPDATE:** If you want to learn more about software debloating in Java, I wrote my PhD thesis on this subject, check it out [here](../files/thesis/cesar-fulltext.pdf).
+**UPDATE:** If you want to learn more about software debloating in Java, I wrote my PhD thesis on this subject, check it out [here](/files/thesis/cesar-fulltext.pdf).
 
 # References
 

@@ -6,7 +6,9 @@ layout: base
    {% include header.html type="page" %}
 </div>
 
-<div class="container" role="main">
+{% include section-nav.html %}
+
+<div class="container" role="main" id="main" tabindex="-1"{% unless page.noindex or page.robots == "noindex" or page.pagefind == false %} data-pagefind-body{% endunless %}>
    <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
          {{ content }}
@@ -16,11 +18,12 @@ layout: base
 
 
 <!-- https://www.bryanbraun.com/anchorjs/ -->
-{% if page.subtitle != 'Computer Scientist' %}
 <script>
-   anchors.options = {
-      position: 'left'
-   };
-   anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
+   document.addEventListener('DOMContentLoaded', function () {
+      if (!window.anchors) return;
+      anchors.options = {
+         position: 'left'
+      };
+      anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
+   });
 </script>
-{% endif %}

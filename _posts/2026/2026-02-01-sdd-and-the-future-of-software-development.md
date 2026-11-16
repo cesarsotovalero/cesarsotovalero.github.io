@@ -11,8 +11,8 @@ keywords:
   - Requirements engineering
   - Software architecture
   - Developer productivity
-image: ../img/posts/2026/2026-02-01/red-letters-plus-engine-machine.jpg
-share-img: ../img/posts/2026/2026-02-01/red-letters-plus-engine-machine.jpg
+image: /img/posts/2026/2026-02-01/red-letters-plus-engine-machine.jpg
+share-img: /img/posts/2026/2026-02-01/red-letters-plus-engine-machine.jpg
 show-avatar: false
 toc: true
 mathjax: false

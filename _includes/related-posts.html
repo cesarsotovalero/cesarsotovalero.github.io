@@ -88,13 +88,13 @@
         <a href="{{ post.url | prepend: site.baseurl }}">
           <div class="panel-body">
             <div class="text-left">
-              <h4 class="title" data-toc-skip>{{ post.title }}</h4>
+              <h3 class="title" data-toc-skip>{{ post.title }}</h3>
               <div class="date" style="margin-bottom: 0px;">
                 Posted on {{ post.date | date: "%B %-d, %Y" }}
               </div>
             </div>
             {% if post.image %}
-            <img src="{{ post.image }}" alt="{{ post.title }}">
+            <img src="{{ post.image | thumbnail }}" alt="" loading="lazy" decoding="async">
             {% endif %}
           </div>
         </a>

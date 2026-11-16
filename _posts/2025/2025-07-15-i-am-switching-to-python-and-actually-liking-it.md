@@ -11,8 +11,8 @@ keywords:
   - vscode
   - productivity
   - tools
-image: ../img/posts/2025/2025-07-15/wall-stones_cover.JPG
-share-img: ../img/posts/2025/2025-07-15/wall-stones_cover.JPG
+image: /img/posts/2025/2025-07-15/wall-stones_cover.JPG
+share-img: /img/posts/2025/2025-07-15/wall-stones_cover.JPG
 show-avatar: false
 toc: true
 mathjax: true
@@ -32,7 +32,7 @@ Yep, that sneaky one.
 
 I had used Python before, but only for small scripts.
 For example, [this script](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/scripts/fetch_all_youtube_videos.py) scrapes metadata from all videos on [my YouTube channel](https://www.youtube.com/channel/UCR4rI98w6-MqYoCS6jR9LGg).
-The metadata is dumped as [a JSON file](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/_data/youtube-videos.json) that I use to nicely display statistics of the videos [on this static page](https://www.cesarsotovalero.net/youtube).
+The metadata is dumped as [a JSON file](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/_data/youtube-videos.json) that I use to nicely display statistics of the videos [on this static page](/youtube).
 As you can [see here](https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/1fb2efe0577719a72fdf7d5bdf2a8d4d51ee58c5/.github/workflows/update-youtube-videos.yml), this little script runs in solo mode every Monday via GitHub Actions.
 Doing this kind of thing in Python is just way more convenient than, say, using Batch.
 Not only because the syntax is more human-friendly, but also because the Python interpreter is natively integrated in all Unix distros.

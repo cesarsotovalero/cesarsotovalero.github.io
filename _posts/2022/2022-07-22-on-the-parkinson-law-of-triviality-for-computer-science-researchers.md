@@ -9,8 +9,8 @@ keywords:
   - procrastination in research,
   - time management,
   - productivity
-image: ../img/posts/2022/whitman_cover.jpg
-share-img: ../img/posts/2022/whitman_cover.jpg
+image: /img/posts/2022/whitman_cover.jpg
+share-img: /img/posts/2022/whitman_cover.jpg
 show-avatar: false
 toc: true
 date: 2022/07/22
@@ -20,7 +20,7 @@ published: true
 
 The [Parkinson’s Law of Triviality](https://en.wikipedia.org/wiki/Law_of_triviality) is a real thing (more on this later).
 And for Computer Science researchers, it is part of everyday life.
-As [we know](./blog/seven-reasons-to-go-for-a-phd-in-computer-science), research is a very time-consuming activity.
+As [we know](/blog/seven-reasons-to-go-for-a-phd-in-computer-science), research is a very time-consuming activity.
 There are uncertain tasks that typically take a lot ~~of time~~ to complete.
 This state of things often fuels procrastination and slows progress down to the minimum, making the research harder to complete.
 Certainty, researcher are always busy working hard, doing tasks, having meetings, creating reports, and looking at deadlines.
@@ -42,7 +42,7 @@ Parkinson's Law (also known as **bikeshedding**)[^1] states that **work expands 
 The term was coined as a metaphor by [Cyril Northcote Parkinson](https://en.wikipedia.org/wiki/C._Northcote_Parkinson)'s and stated in 1957.
 Parkinson's argues that people within an organization typically give disproportionate weight to trivial issues.
 For example, while it can be fun and engaging to discuss what the title of a paper should be (everyone has an opinion), this is a form of procrastination.
-Let me said again, our job as researchers is to produce [research artifacts](./blog/how-do-i-track-the-progress-of-my-research-projects), not to generate never-ending discussion.
+Let me said again, our job as researchers is to produce [research artifacts](/blog/how-do-i-track-the-progress-of-my-research-projects), not to generate never-ending discussion.
 As [Marc Andreessen](https://en.wikipedia.org/wiki/Marc_Andreessen) wrote: “we will be judged by what we (and our code) have done, not the meta-discussion that went on around it.”
 So the next time you feel yourself getting drawn into a protracted “what name should it be” discussion, consider stop it, and see if you can produce some research artifact instead.
 

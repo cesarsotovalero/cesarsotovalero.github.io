@@ -6,7 +6,7 @@ subtitle: Living literature review
 description: A living review of articles related to "program debloating" and "software debloating."
 tags: debloating
 keywords: software debloat,living review,survey,software engineering
-image: ../img/pages/software-debloating-papers/debloating.png
+image: /img/pages/software-debloating-papers/debloating.png
 ---
 
 This is a [living review](https://en.wikipedia.org/wiki/Living_review) of articles related to "program debloating" and "software debloating."

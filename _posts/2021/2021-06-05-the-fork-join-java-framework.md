@@ -6,8 +6,8 @@ tags: java
 description: |
   The Fork/Join framework in Java simplifies parallel programming by allowing developers to leverage multiple processor cores without manually managing threads. This post introduces the key concepts of this framework, including task splitting (fork) and result combining (join). I also provide practical examples using RecursiveAction and RecursiveTask for parallelizing tasks. By utilizing this framework, developers can boost application performance and streamline the implementation of parallel algorithms.
 keywords: recursion, Java, parallel, fork, join
-image: ../img/posts/2021/night_tree_cover.jpg
-share-img: ../img/posts/2021/night_tree_cover.jpg
+image: /img/posts/2021/night_tree_cover.jpg
+share-img: /img/posts/2021/night_tree_cover.jpg
 toc: true
 show-avatar: false
 author: cesarsotovalero

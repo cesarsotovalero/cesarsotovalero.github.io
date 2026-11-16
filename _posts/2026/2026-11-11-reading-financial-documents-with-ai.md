@@ -14,8 +14,8 @@ keywords:
   - Structured output
   - Banking AI
   - PDF parsing
-image: ../img/posts/2026/2026-11-11/konstantinopel_squared.jpg
-share-img: ../img/posts/2026/2026-11-11/konstantinopel.jpg
+image: /img/posts/2026/2026-11-11/konstantinopel_squared.jpg
+share-img: /img/posts/2026/2026-11-11/konstantinopel.jpg
 show-avatar: false
 toc: true
 mathjax: false

@@ -5,7 +5,7 @@ title: Software Debloating Talks
 subtitle: Living talks list
 description: A living list of talks related to software debloating and software specialization.
 keywords: software debloat,GitHub projects,software engineering
-image: ../img/pages/software-debloating-papers/debloating.png
+image: /img/pages/software-debloating-papers/debloating.png
 ---
 
 This is a [living review](https://en.wikipedia.org/wiki/Living_review) of talks related to software debloating and software specialization.

@@ -1,0 +1,33 @@
+{% assign profile = site.data.profile %}
+<section class="home-hero" aria-labelledby="home-title">
+   <div class="home-hero-text">
+      <p class="home-eyebrow">Applied AI for finance</p>
+      <h1 id="home-title" class="home-title">{{ site.author.name }}</h1>
+      <p class="home-role">{{ profile.job_title }} &middot; PhD in Computer Science</p>
+      <p class="home-tagline">I help engineers and organizations learn, build, and grow faster with AI.</p>
+      <div class="home-actions">
+         <a class="home-button home-button--primary" href="{{ site.baseurl }}/contact">Get in touch</a>
+         <a class="home-button" href="{{ site.baseurl }}/talks/invite-me">Invite me to speak</a>
+      </div>
+      <ul class="home-profiles">
+         <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><img src="{{ site.baseurl }}/img/icons/linkedin.svg" alt="" width="20" height="20">LinkedIn</a></li>
+         <li><a href="https://www.youtube.com/{{ site.author.youtube }}"><img src="{{ site.baseurl }}/img/icons/youtube.svg" alt="" width="20" height="20">YouTube</a></li>
+         <li><a href="https://github.com/{{ site.author.github }}"><img src="{{ site.baseurl }}/img/icons/github.svg" alt="" width="20" height="20">GitHub</a></li>
+         <li><a href="{{ profile.google_scholar }}"><img src="{{ site.baseurl }}/img/icons/googlescholar.svg" alt="" width="20" height="20">Google Scholar</a></li>
+      </ul>
+   </div>
+   <div class="home-hero-portrait">
+      <img src="{{ site.avatar }}" alt="Portrait of {{ site.author.name }}" width="400" height="400">
+   </div>
+</section>
+
+<section class="home-proof" aria-label="Highlights">
+   <ul class="home-stats">
+      {% for stat in profile.stats %}
+      {% if stat.url contains "://" %}{% assign stat_href = stat.url %}{% else %}{% assign stat_href = site.baseurl | append: stat.url %}{% endif %}
+      <li><a href="{{ stat_href }}"><strong>{{ stat.value }}</strong> <span>{{ stat.label }}</span></a></li>
+      {% endfor %}
+      <li><a href="{{ site.baseurl }}/talks"><strong>{{ site.data.talks.size }}</strong> <span>talks</span></a></li>
+   </ul>
+   <p class="home-venues"><a class="home-venues-label" href="{{ site.baseurl }}/talks">Spoken at</a> {{ profile.venues | join: " &middot; " }}</p>
+</section>

@@ -10,8 +10,8 @@ keywords:
   - writing techniques,
   - scientific paper,
   - PhD's habits
-image: ../img/posts/2021/stalking_monster.jpg
-share-img: ../img/posts/2021/stalking_monster_cover.jpg
+image: /img/posts/2021/stalking_monster.jpg
+share-img: /img/posts/2021/stalking_monster_cover.jpg
 show-avatar: false
 toc: true
 date: 2021/11/07
@@ -26,7 +26,7 @@ This problem is known as writer's block, and most academics suffer from it in on
 I've dealt with this invisible monster on many occasions, and each victory has taught me how to overcome it better.
 If you have been there, too, you should know that understanding the particular characteristics of a research paper and breaking down the writing process into small pieces is key to success.
 Over time, I've developed my own set of strategies to fight writer's block, which I share in this post.
-So, let me tell you about the tricks I've learned through these years of continuous struggling [writing academic papers](./publications).
+So, let me tell you about the tricks I've learned through these years of continuous struggling [writing academic papers](/publications).
 I hope you find them useful as well.
 
 <figure class="jb_picture">
@@ -43,7 +43,7 @@ The idea of sitting down and writing a full academic paper from scratch is overw
 As brilliantly explained by [Simon Peyton Jones](https://en.wikipedia.org/wiki/Simon_Peyton_Jones), a [great research paper](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/) has a well-defined structure.
 So, the first step when attempting to break the ice is creating an outline for every section.
 
-I like to start by writing all headings and subheadings and adding [author notes](./blog/use-custom-latex-macros-to-boost-your-writing-productivity.html#inserting-author-notes) to highlight the information that will go under each of them.
+I like to start by writing all headings and subheadings and adding [author notes](/blog/use-custom-latex-macros-to-boost-your-writing-productivity.html#inserting-author-notes) to highlight the information that will go under each of them.
 Here's a typical example of an initial outline, in LaTeX, for a conference paper belonging to the field of software engineering:
 
 {% highlight latex linenos %}

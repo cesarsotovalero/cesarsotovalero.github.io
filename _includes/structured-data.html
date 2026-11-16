@@ -42,6 +42,11 @@
   "award": {{ profile.awards | jsonify }},
   "knowsAbout": {{ profile.expertise | jsonify }},
   "subjectOf": { "@type": "WebPage", "url": "{{ site.url }}/ai-for-finance", "name": "Applied AI for Finance" },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Speaking invitations, advisory, and research collaboration",
+    "url": "{{ site.url }}/contact"
+  },
   "sameAs": [
     "https://github.com/{{ site.author.github }}",
     "https://www.linkedin.com/in/{{ site.author.linkedin }}",
@@ -81,6 +86,15 @@
   "author": { "@id": "{{ person_id }}" },
   "publisher": { "@id": "{{ person_id }}" },
   "isPartOf": { "@id": "{{ site_id }}" }
+},
+{
+  "@type": "BreadcrumbList",
+  "@id": "{{ site.url }}{{ page.url }}#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ site.url }}/blog" },
+    { "@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": "{{ site.url }}{{ page.url }}" }
+  ]
 }{% endif %}{% endcapture %}
 {% capture page_json %}{% if page.schema_type %},
 {

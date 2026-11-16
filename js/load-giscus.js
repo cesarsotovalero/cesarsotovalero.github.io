@@ -9,7 +9,7 @@ function loadGiscus() {
    // 3) Pick the right theme URL
    const userTheme = localStorage.getItem("theme");
    const giscusTheme = (userTheme === "dark")
-      ? "https://www.cesarsotovalero.net/css/giscus-dark.css"
+      ? "https://www.cesarsotovalero.net/css/giscus-dark.css" // giscus.app fetches the theme, so it must be an absolute URL
       : "https://www.cesarsotovalero.net/css/giscus-light.css";
 
    // 4) Re-create the <script> tag with the chosen theme

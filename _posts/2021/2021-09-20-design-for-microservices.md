@@ -10,8 +10,8 @@ keywords:
   - software architect,
   - software design,
   - architectural characteristics,
-image: ../img/posts/2021/clouds_cover.png
-share-img: ../img/posts/2021/clouds_cover.png
+image: /img/posts/2021/clouds_cover.png
+share-img: /img/posts/2021/clouds_cover.png
 show-avatar: false
 toc: true
 date: 2021/09/20
