@@ -18,8 +18,8 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: 48px;
-  padding: 24px 0 40px;
+  gap: 40px;
+  padding: 28px 0 24px;
 }
 
 .home-eyebrow {
@@ -36,22 +36,22 @@
   margin: 0 0 12px;
   color: var(--main-text-color);
   font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.5px;
 }
 
 .home-role {
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.4;
 }
 
 .home-tagline {
   max-width: 34em;
-  margin: 0 0 28px;
+  margin: 0 0 20px;
   font-size: 22px;
   line-height: 1.6;
 }
@@ -67,8 +67,8 @@
 .home-button:focus {
   display: inline-flex;
   align-items: center;
-  min-height: 46px;
-  padding: 0 22px;
+  min-height: 42px;
+  padding: 0 20px;
   border: 1px solid var(--main-text-color);
   border-radius: 6px;
   color: var(--main-text-color);
@@ -102,7 +102,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 4px 20px;
-  margin: 24px 0 0;
+  margin: 14px 0 0;
   padding: 0;
   list-style: none;
   font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
@@ -136,8 +136,8 @@
 
 .home-hero-portrait img {
   display: block;
-  width: 240px;
-  height: 240px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   filter: grayscale(100%);
@@ -147,8 +147,8 @@
 /* ---------- Highlights ---------- */
 
 .home-proof {
-  margin: 0 0 56px;
-  padding: 20px 0;
+  margin: 0 0 36px;
+  padding: 12px 0;
   border-top: 1px solid var(--panel-border-color);
   border-bottom: 1px solid var(--panel-border-color);
   font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
@@ -158,11 +158,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 12px 24px;
+  gap: 8px 24px;
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .home-stats li {
@@ -170,17 +170,18 @@
 }
 
 .home-stats strong {
-  display: block;
+  display: inline;
+  margin-right: 4px;
   font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .home-venues {
-  margin: 16px 0 0;
+  margin: 6px 0 0;
   color: var(--post-meta-index-color);
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* ---------- Closing call to action ---------- */
@@ -218,8 +219,8 @@
 
   .home-hero {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding-top: 8px;
+    gap: 14px;
+    padding-top: 20px;
     text-align: center;
   }
 
@@ -229,12 +230,12 @@
   }
 
   .home-hero-portrait img {
-    width: 140px;
-    height: 140px;
+    width: 104px;
+    height: 104px;
   }
 
   .home-title {
-    font-size: 40px;
+    font-size: 34px;
   }
 
   .home-role {
