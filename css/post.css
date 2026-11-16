@@ -43,6 +43,7 @@
 }
 
 .toc-inline summary {
+  color: var(--main-text-color);
   cursor: pointer;
   font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
