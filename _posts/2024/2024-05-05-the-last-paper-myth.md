@@ -11,8 +11,8 @@ keywords:
   - misconceptions about research papers
   - relationship with academic supervisor
   - academic labor
-image: ../img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png
-share-img: ../img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png
+image: /img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png
+share-img: /img/posts/2024/2024-05-05/aspuden-metro-terminal-cover.png
 show-avatar: false
 toc: true
 mathjax: false
@@ -56,7 +56,7 @@ So let's start by discussing expectations.
 
 # Expectations
 
-For most PhD students, the doctoral journey is envisioned as a quest for [knowledge and further professional opportunities](./blog/seven-reasons-to-go-for-a-phd-in-computer-science).
+For most PhD students, the doctoral journey is envisioned as a quest for [knowledge and further professional opportunities](/blog/seven-reasons-to-go-for-a-phd-in-computer-science).
 It's a personal challenge, where intellectual curiosity meets the rigorous demands of [scientific research](https://en.wikipedia.org/wiki/Scientific_method).
 This idyllic vision of fulfilled scientists, however, has evolved dramatically over the last years.
 The modern high education system is currently shaped by the dual pressures of squeezing a little more out of the public money pipeline, and ranking high in [global publication metrics](https://www.topuniversities.com/university-subject-rankings/engineering-technology) to get more money in return.[^1]
@@ -78,7 +78,7 @@ The need to take a break after years of hard work seemed like a priority to me.
 By that time, I had the expectation that my primary task was to synthesize my research into a thesis and call it all done.
 I guess this hope is shared among most PhD students in their final round.
 Honestly, I was in a comfortable position.
-Having published [a few papers](./publications) targeting a single knowledge gap, I felt that I had done a _real_ PhD.
+Having published [a few papers](/publications) targeting a single knowledge gap, I felt that I had done a _real_ PhD.
 These papers were the core of my scientific contributions.
 They seemed to push the boundaries of human knowledge just the necessary little bit.
 In such a position, after five years of struggles with the whole process, it was reasonable for me to assume that **I should now focus only on writing my thesis**.

@@ -6,8 +6,8 @@ description: |
   I recently passed the IELTS academic test, and it was not easy. This blog post dives deep into the strategies that helped me to complete every section of the exam (listening, reading, writing, and speaking) and beating the greatest enemy: time. I discovered that mastering the test structure and engaging in relentless practice really made a big difference to my score, though I was not really good at English.
 tags: career
 keywords: learn english, international test, language test
-image: ../img/posts/2017/IELTS.jpg
-share-img: ../img/posts/2017/IELTS.jpg
+image: /img/posts/2017/IELTS.jpg
+share-img: /img/posts/2017/IELTS.jpg
 show-avatar: false
 toc: true
 author: cesarsotovalero

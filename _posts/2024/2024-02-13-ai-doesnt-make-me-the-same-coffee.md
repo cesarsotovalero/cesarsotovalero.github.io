@@ -11,8 +11,8 @@ keywords:
   - synthetic art
   - software engineering
   - machine learning
-image: ../img/posts/2024/2024-02-13/manual-coffee-making-process-cover.jpg
-share-img: ../img/posts/2024/2024-02-13/manual-coffee-making-process-cover.jpg
+image: /img/posts/2024/2024-02-13/manual-coffee-making-process-cover.jpg
+share-img: /img/posts/2024/2024-02-13/manual-coffee-making-process-cover.jpg
 show-avatar: false
 toc: true
 date: 2024/02/13
@@ -45,7 +45,7 @@ The main topic of the conference was the latest advances in AI and the impact of
 I noticed a general acceptance of the huge potential of AI, and the many ways in which it could/would make everything more efficient for developers.
 For many of us, it looks like writing code, testing, deploying, documenting, or just creating any kind of digital content will be AI-assisted in the coming years.
 So, there's a [notable concern](https://youtu.be/rENT1fDR69I?si=pH27Skp26xXGGp2D) regarding the future market need for human developers.
-Honestly, I find the mere question [freaking scary](../blog/surviving-the-ai-revolution-as-a-software-engineer), not only because I'm a developer myself, but also because I believe that coding is a pretty advanced skill.
+Honestly, I find the mere question [freaking scary](/blog/surviving-the-ai-revolution-as-a-software-engineer), not only because I'm a developer myself, but also because I believe that coding is a pretty advanced skill.
 
 <aside class="quote">
     <em>“Coding is among the latest skills nurtured by our modern civilization.”</em>
@@ -102,7 +102,7 @@ From a technological perspective, AI's scalability is taken for granted.
 
 AI models, like Large Language Models (LLMs), have absorbed the entirety of humanity's open knowledge and learned from it.
 Unlike earlier machine learning techniques, they have begun to generate new knowledge from our existing internet corpus.
-The potential of these new models [is simply astounding](./blog/prompting-is-all-we-need).
+The potential of these new models [is simply astounding](/blog/prompting-is-all-we-need).
 They are already being utilized to tackle problems that were once considered exceedingly challenging.
 
 Here are just three examples of applied AI that already impress me:

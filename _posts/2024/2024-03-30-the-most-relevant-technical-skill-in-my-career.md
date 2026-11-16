@@ -11,8 +11,8 @@ keywords:
   - software engineering
   - exploratory data analysis
   - research
-image: ../img/posts/2024/2024-03-30/paint-cover.jpg
-share-img: ../img/posts/2024/2024-03-30/paint-cover.jpg
+image: /img/posts/2024/2024-03-30/paint-cover.jpg
+share-img: /img/posts/2024/2024-03-30/paint-cover.jpg
 show-avatar: false
 toc: true
 date: 2024/03/30
@@ -97,7 +97,7 @@ This preliminary step ensures that the solution is effectively tailored to the i
 # EDA: The Ubiquitous Technical Skill
 
 I've been practicing EDA for over 12 years now.
-I began dealing with data during my undergraduate studies in Computer Science, and later when working on my [PhD](../files/thesis/cesar-fulltext.pdf).
+I began dealing with data during my undergraduate studies in Computer Science, and later when working on my [PhD](/files/thesis/cesar-fulltext.pdf).
 Interestingly, I've done it not because I particularly enjoy it (which I do), but because it was essential for my research.
 On the other hand, working as a software developer now, my data analysis skills have opened doors to new opportunities to showcase my research abilities.
 The two following section focus this journey.
@@ -133,9 +133,9 @@ I've no doubts that having high-quality EDA and convincing tables and figures wa
     <em>“EDA is essential for reproducible science, allowing other researchers to understand, replicate, and validate the findings.”</em>
 </aside>
 
-Later during my PhD, I switched to [empirical software engineering research](./blog/empirical-software-engineering-research-is-harder-than-you-think).
+Later during my PhD, I switched to [empirical software engineering research](/blog/empirical-software-engineering-research-is-harder-than-you-think).
 Soon, I realized that software is data as well, so EDA was critical to help me understand different phenomenons occurring in large software ecosystems.
-I started working on "[software debloating](./blog/why-debloating-third-party-software)," and collected a massive amount of data representing the relationships between Java dependencies.
+I started working on "[software debloating](/blog/why-debloating-third-party-software)," and collected a massive amount of data representing the relationships between Java dependencies.
 For example, I used EDA to find out which dependencies are the most bloated, which are the most used, and which are the most popular in the Java Maven ecosystem.
 
 In conclusion, during all my academic career, the scale of the experiments and complexity of the data increased, but the importance of EDA remained the same.
@@ -346,4 +346,4 @@ Have you ever thought about it?
 
 [^3]: I recommend reading the latest papers published in the [Journal of Statistical Software](https://www.jstatsoft.org/index) and the [Journal of Machine Learning Research](https://www.jmlr.org/).
 
-[^4]: I've peer-reviewed [quite a few](./service) research papers, almost none of them include the code used to generate the figures in the paper.
+[^4]: I've peer-reviewed [quite a few](/service) research papers, almost none of them include the code used to generate the figures in the paper.

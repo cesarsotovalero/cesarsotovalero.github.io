@@ -6,8 +6,8 @@ tags: science
 keywords: research, industry, collaboration
 description: |
   Presenting research work to industrial engineers is essential for the sustainability of the whole research business. In this post, I emphasize the need for researchers to engage more actively with the local industry by sharing their findings, fostering collaborations, and addressing industry-relevant challenges. By doing so, researchers can demonstrate the practical value of their work, encourage investment, and create a symbiotic relationship that benefits both academia and industry.
-image: ../img/posts/2020/skates_cover.jpg
-share-img: ../img/posts/2020/skates_cover.jpg
+image: /img/posts/2020/skates_cover.jpg
+share-img: /img/posts/2020/skates_cover.jpg
 show-avatar: false
 author: cesarsotovalero
 toc: true

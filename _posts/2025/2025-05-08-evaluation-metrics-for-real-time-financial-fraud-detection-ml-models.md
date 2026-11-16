@@ -11,8 +11,8 @@ keywords:
   - machine learning
   - deep learning
   - survey
-image: ../img/posts/2025/2025-05-08/kungstradgarden_cover.jpg
-share-img: ../img/posts/2025/2025-05-08/kungstradgarden_cover.jpg
+image: /img/posts/2025/2025-05-08/kungstradgarden_cover.jpg
+share-img: /img/posts/2025/2025-05-08/kungstradgarden_cover.jpg
 show-avatar: false
 toc: true
 mathjax: true
@@ -21,7 +21,7 @@ author: cesarsotovalero
 published: true
 ---
 
-After training a machine learning model for [real-time financial fraud detection](./blog/real-time-financial-fraud-detection), the next step is to evaluate its performance.
+After training a machine learning model for [real-time financial fraud detection](/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection), the next step is to evaluate its performance.
 Fraud detection models face unique challenges during evaluation.
 Two examples are (1) class imbalance and (2) the different costs of false positives vs. false negatives.
 Class imbalance means that the model doesn't have enough fraudulent transactions to learn from, as they are rare compared to legitimate ones.

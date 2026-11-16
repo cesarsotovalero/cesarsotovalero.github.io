@@ -6,8 +6,8 @@ description: |
   Philip Guo's "The PhD Grind" offers a candid, unfiltered account of his PhD journey in Computer Science. The book provides  invaluable insights into the challenges, failures, and personal growth that come with pursuing a doctorate. This review highlights my reflections after reading it. I paid special attention to the emotional highs and lows, the struggle for research success, and the importance of resilience. Whether you're considering a PhD or are already in the grind, this book is a must-read for understanding the reality behind the academic pursuit.
 tags: science
 keywords: research, PhD, book
-image: ../img/posts/2021/phd_grind_cover.png
-share-img: ../img/posts/2021/phd_grind_cover.png
+image: /img/posts/2021/phd_grind_cover.png
+share-img: /img/posts/2021/phd_grind_cover.png
 toc: true
 show-avatar: false
 author: cesarsotovalero

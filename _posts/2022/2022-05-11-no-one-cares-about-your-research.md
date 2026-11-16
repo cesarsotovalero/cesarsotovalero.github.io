@@ -10,8 +10,8 @@ keywords:
   - Research paper,
   - Paper rejection,
   - Academic career 
-image: ../img/posts/2022/park_paint_cover.jpg
-share-img: ../img/posts/2022/park_paint_cover.jpg
+image: /img/posts/2022/park_paint_cover.jpg
+share-img: /img/posts/2022/park_paint_cover.jpg
 show-avatar: false
 toc: true
 date: 2022/05/11
@@ -26,7 +26,7 @@ I only came to this realization after a while.
 Once you get it, then you will start looking at your PhD journey with different eyes.
 I believe that acquiring self-awareness of this fact is crucial.
 It facilitates enjoying **the process** of making science without paying too much attention to its actual impact and relevance.
-At the end of the day, a PhD [is all about the journey](../blog/book-review-the-phd-grind), not the destination.
+At the end of the day, a PhD [is all about the journey](/blog/book-review-the-phd-grind), not the destination.
 This post tells you about the importance of fully embracing this mindset!
 
 
@@ -40,7 +40,7 @@ This post tells you about the importance of fully embracing this mindset!
 # A Comfortable Truth
 
 **Doing good research is about pushing the limits of human knowledge**, [little by little](https://matt.might.net/articles/phd-school-in-pictures/).
-For PhD students, it is a very necessary training before aspiring to [become a professional researcher](../blog/seven-reasons-to-go-for-a-phd-in-computer-science).
+For PhD students, it is a very necessary training before aspiring to [become a professional researcher](/blog/seven-reasons-to-go-for-a-phd-in-computer-science).
 PhD students are primarily constrained by time.
 Unfortunately, there is not an infinite amount of time to complete a PhD program.
 Moreover, research involves doing many things besides writing research papers.
@@ -83,7 +83,7 @@ If they get really interested in what someone is doing, then they will read the 
 Therefore, presentation-driven stress is futile.
 So don't be stressed at all.
 
-Finally, several universities include [PhD courses](../courses#doctoral-courses) in their curriculums.
+Finally, several universities include [PhD courses](/courses#doctoral-courses-completed) in their curriculums.
 Students must pass these kinds of courses in order to accumulate a certain number of "credits."
 There is no workaround, as this is part of the requirements to get a PhD[^3]
 Fortunately, no one cares about your performance on these courses!
@@ -171,7 +171,7 @@ But this is very far from being true.
 In practice, no one actually cares about a particular research paper unless it has her name on it.
 This is a comfortable truth.
 
-As I said [before](../blog/seven-reasons-to-go-for-a-phd-in-computer-science), it is the training and skill set you gain through the hard research labor what really matters.
+As I said [before](/blog/seven-reasons-to-go-for-a-phd-in-computer-science), it is the training and skill set you gain through the hard research labor what really matters.
 It is the journey and the people that you meet what that gives the real value and meaning to do a PhD
 So, forget about the number of papers you have or if you fail to say something in a presentation.
 In any case, I can assure you that no one will ever care about it!

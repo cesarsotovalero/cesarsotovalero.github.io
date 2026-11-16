@@ -11,8 +11,8 @@ keywords:
   - computer science research,
   - PhD life,
   - writing research papers
-image: ../img/posts/2023/2023-03-10/initial_whiteboarding_cover.jpg
-share-img: ../img/posts/2023/2023-03-10/initial_whiteboarding_cover.jpg
+image: /img/posts/2023/2023-03-10/initial_whiteboarding_cover.jpg
+share-img: /img/posts/2023/2023-03-10/initial_whiteboarding_cover.jpg
 show-avatar: false
 toc: true
 date: 2023/03/10

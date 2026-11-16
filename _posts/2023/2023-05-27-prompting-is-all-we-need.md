@@ -11,8 +11,8 @@ keywords:
   - AI,
   - software engineering,
   - productivity
-image: ../img/posts/2023/2023-05-27/pino_pizza-cover.jpg
-share-img: ../img/posts/2023/2023-05-27/pino_pizza-cover.jpg
+image: /img/posts/2023/2023-05-27/pino_pizza-cover.jpg
+share-img: /img/posts/2023/2023-05-27/pino_pizza-cover.jpg
 show-avatar: false
 toc: true
 date: 2023/05/27
@@ -57,7 +57,7 @@ They could understand complex systems written in COBOL (such as those for financ
 But that was a long time ago when software was still [eating the world](https://a16z.com/why-software-is-eating-the-world/).
 Nowadays, software is everywhere.
 It already [ate the world](https://www.wsj.com/articles/software-ate-the-world-and-soon-it-will-write-itself-11607037000?reflink=desktopwebshare_permalink) and digested it.
-Sometimes resulting in [a mess](./blog/why-debloating-third-party-software) that we still have to clean up.
+Sometimes resulting in [a mess](/blog/why-debloating-third-party-software) that we still have to clean up.
 Anyway, its output is indispensable, just like salt for our food.
 In every industry, in every company, in every home, software is a necessary ingredient.
 So the crew of software cookers has grown at a rapid speed.
@@ -92,7 +92,7 @@ Once trained, the model can generate meaningful text responses to a given **prom
 Interestingly, it appears that [code generation](https://dl.acm.org/doi/pdf/10.1145/3545945.3569759) is one of the most simple tasks for these models.
 So we developers are not as special as we thought, ouch.
 In other words, AI can write reasonably good code faster and cheaper than us.
-But this article is not about AI replacing developers (I wrote about it [here](./blog/surviving- the-ai-revolution-as-a-software-engineer)).
+But this article is not about AI replacing developers (I wrote about it [here](/blog/surviving-the-ai-revolution-as-a-software-engineer)).
 I believe that the price of every single line of code will decrease its value dramatically in the coming years.
 It's [supply and demand](https://en.wikipedia.org/wiki/Supply_and_demand), there's nothing we can do about it.
 

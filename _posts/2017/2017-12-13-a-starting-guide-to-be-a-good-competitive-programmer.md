@@ -10,8 +10,8 @@ keywords:
   - competitive programming
   - algorithms
   - personal experience
-image: ../img/posts/2017/competitive_programming_brain.png
-share-img: ../img/posts/2017/competitive_programming_brain.png
+image: /img/posts/2017/competitive_programming_brain.png
+share-img: /img/posts/2017/competitive_programming_brain.png
 show-avatar: false
 toc: true
 author: cesarsotovalero
@@ -124,7 +124,7 @@ Sometimes other aspects (e.g., soft-skills) are more important than technical sk
 The ACM-ICPC contest is just an excellent way to learn to program and acquire a good algorithmic mindset.
 
 <figure class="jb_picture">
-    <img src="../img/posts/2017/ACM-ICPC.jpg" 
+    <img src="/img/posts/2017/ACM-ICPC.jpg" 
     alt="At UCLV, 2018"
     longdesc="#c13e1390" />
     <figcaption class="stroke">

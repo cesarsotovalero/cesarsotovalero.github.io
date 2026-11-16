@@ -11,8 +11,8 @@ keywords:
   - knowledge management,
   - intelligent collaboration tools,
   - open-source management
-image: ../img/posts/2022/plane_paint_cover.jpg
-share-img: ../img/posts/2022/plane_paint_cover.jpg
+image: /img/posts/2022/plane_paint_cover.jpg
+share-img: /img/posts/2022/plane_paint_cover.jpg
 show-avatar: false
 toc: true
 mathjax: true
@@ -61,7 +61,7 @@ Consequently, accurately estimating the bus factor is not an easy endeavor.
 
 The bus factor is a sound human-based metric to assess the resilience of a software project.
 However, translating the bus factor definition into a bus factor estimation algorithm is nontrivial.
-Existing algorithms for bus factor estimation collect the distribution of information in the project from the [Git](./blog/git-fundamentals) version control system.
+Existing algorithms for bus factor estimation collect the distribution of information in the project from the [Git](/blog/git-fundamentals) version control system.
 Smaller values of the bus factor lead to higher risks for a project.
 Larger values correspond to a relatively even distribution of knowledge, so the departure of a team member would have a lesser impact.
 

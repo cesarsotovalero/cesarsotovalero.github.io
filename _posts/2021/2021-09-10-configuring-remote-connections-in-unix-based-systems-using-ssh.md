@@ -10,8 +10,8 @@ keywords:
   - rsa key,
   - open-ssh tutorial,
   - terminal remote access
-image: ../img/posts/2021/metro_station_cover.jpg
-share-img: ../img/posts/2021/metro_station_cover.jpg
+image: /img/posts/2021/metro_station_cover.jpg
+share-img: /img/posts/2021/metro_station_cover.jpg
 show-avatar: false
 toc: true
 date: 2021/09/10
@@ -43,7 +43,7 @@ brew install openssh
 
 The SSH protocol uses industry-standard robust encryption algorithms, like AES, to secure communication between the involved parties.
 In addition, the protocol uses hashing algorithms, such as SHA-2, to ensure the integrity of the data transmitted.
-You can read more about encryption and hashing in [this article](./blog/encoding-encryption-hashing-and-obfuscation-in-java).
+You can read more about encryption and hashing in [this article](/blog/encoding-encryption-hashing-and-obfuscation-in-java).
 
 > “OpenSSH is the premier connectivity tool for remote login with the SSH protocol. It encrypts all traffic to eliminate eavesdropping, connection hijacking, and other attacks. In addition, OpenSSH provides a large suite of secure tunneling capabilities, several authentication methods, and sophisticated configuration options.”
 

@@ -45,7 +45,7 @@ Select a set of Android applications for which we have the source code and that 
 
 [3] Bruno Gois Mateus and Matias Martinez. [An empirical study on quality of Android applications written in Kotlin language](https://arxiv.org/pdf/1808.00025.pdf).
 
-<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+<div align="right"> <a href="#" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -71,7 +71,7 @@ Select a set of Java applications for which we have the source code that compile
 
 [3] [https://www.baeldung.com/java-9-modularity](https://www.baeldung.com/java-9-modularity)
 
-<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+<div align="right"> <a href="#" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -89,13 +89,13 @@ We start by monitoring the system calls triggered when exercising distinct regio
 
 ### Validation
 
-Select a set of Java applications and monitor their systems calls according to different workloads. System calls can be obtained with [`strace`](https://strace.io). Then, implement a tool to debloat the application based on the results of the system calls monitoring (see examples of deboating tools [here](https://www.cesarsotovalero.net/software-debloating-tools)).
+Select a set of Java applications and monitor their systems calls according to different workloads. System calls can be obtained with [`strace`](https://strace.io). Then, implement a tool to debloat the application based on the results of the system calls monitoring (see examples of deboating tools [here](/software-debloating-tools)).
 
 ### References
 
 [1] [http://man7.org/linux/man-pages/man2/syscalls.2](http://man7.org/linux/man-pages/man2/syscalls.2)
 
-<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+<div align="right"> <a href="#" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -123,7 +123,7 @@ Select a set of open-source projects that use Maven and have dependency conflict
 
 [3] Macho, Christian, Shane McIntosh, and Martin Pinzger. ["Automatically repairing dependency-related build breakage"](https://ieeexplore.ieee.org/abstract/document/8330201/). SANER, 2018.
 
-<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+<div align="right"> <a href="#" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -153,7 +153,7 @@ We evaluate our approach by conducting case studies on removing cross-cutting fe
 
 [4] Eder, et al. ["Which Features Do My Users (Not) Use?"](https://dl-acm-org.focus.lib.kth.se/doi/10.1109/ICSME.2014.71). ICSME, 2014.
 
-<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+<div align="right"> <a href="#" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -181,7 +181,7 @@ Our approach will be evaluated by conducting case studies of specializing in rea
 
 [3] Morales, Rodrigo, Rubén Saborido, and Yann-Gaël Guéhéneuc. ["MoMIT: Porting a JavaScript Interpreter on a Quarter Coin."](https://ieeexplore.ieee.org/document/8966499) IEEE Transactions on Software Engineering (2020).
 
-<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+<div align="right"> <a href="#" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -199,7 +199,7 @@ We'll explore the possibilities of automatically untangling libraries into two o
 
 ### Validation
 
-We evaluate our approach by conducting case studies on real-world fat and popular multi-purpose libraries (e.g., [guava](https://github.com/google/guava), [jcabi-immutable](jcabi-immutable), [weka](https://www.cs.waikato.ac.nz/ml/weka)), with a special focus on user acceptance. In other words, we plan to propose the reuse of smaller pieces of the library to their users.
+We evaluate our approach by conducting case studies on real-world fat and popular multi-purpose libraries (e.g., [guava](https://github.com/google/guava), [jcabi-immutable](https://github.com/jcabi/jcabi-immutable), [weka](https://www.cs.waikato.ac.nz/ml/weka)), with a special focus on user acceptance. In other words, we plan to propose the reuse of smaller pieces of the library to their users.
 
 ### References
 
@@ -207,7 +207,7 @@ We evaluate our approach by conducting case studies on real-world fat and popula
 
 [2] Ferreira Filho, João Bosco, Mathieu Acher, and Olivier Barais. ["Software unbundling: Challenges and perspectives".](https://link.springer.com/chapter/10.1007/978-3-319-46969-0_6) Transactions on Modularity and Composition I. Springer, Cham, 2016. 224-237.
 
-<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+<div align="right"> <a href="#" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -235,7 +235,7 @@ For validation, we collect dependency related commits from open-source Java proj
 
 [3] [A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem](https://arxiv.org/pdf/2001.07808.pdf)
 
-<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+<div align="right"> <a href="#" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -274,7 +274,7 @@ This information can be displayed in the browser, and feedback from developers r
 
 [3] [Less is More: Quantifying the Security Benefits of Debloating Web Applications](https://www.usenix.org/conference/usenixsecurity19/presentation/azad)
 
-<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+<div align="right"> <a href="#" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
 ---
 
@@ -324,6 +324,6 @@ This is a fundamental outcome to validate the relevance of our approach.
 
 [5] [Different Kind of Smells: Security Smells in Infrastructure as Code Scripts](https://ieeexplore.ieee.org/abstract/document/9388795)
 
-<div align="right"> <a href="#list-of-topics" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
+<div align="right"> <a href="#" onclick="scrollToTop();return false">Back to Top &uarr;</a></div>
 
-[^1]: See my list of [mining software repositories resources](./mining-software-repositories-resources).
+[^1]: See my list of [mining software repositories resources](/mining-software-repositories-resources).

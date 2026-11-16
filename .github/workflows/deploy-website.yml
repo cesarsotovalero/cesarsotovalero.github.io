@@ -102,11 +102,18 @@ jobs:
           npx playwright install --with-deps chromium
           node scripts/check_console_errors.js _site
 
-      - name: Validate critical pages (internal links/images)
+      # Every page: internal links, anchors and images. Downloads, font demos and the
+      # standalone visualizations are not site pages and are skipped.
+      - name: Check internal links and images on the whole site
+        env:
+          LANG: C.UTF-8
+          LC_ALL: C.UTF-8
         run: |
-          bundle exec htmlproofer ./_site/index.html --checks Links,Images --disable-external --allow-hash-href --ignore-empty-alt --ignore-empty-mailto --no-enforce-https --assume-extension .html
-          bundle exec htmlproofer ./_site/about-me.html --checks Links,Images --disable-external --allow-hash-href --ignore-empty-alt --ignore-empty-mailto --no-enforce-https --assume-extension .html
-          bundle exec htmlproofer ./_site/search.html --checks Links,Images --disable-external --allow-hash-href --ignore-empty-alt --ignore-empty-mailto --no-enforce-https --assume-extension .html
+          bundle exec htmlproofer ./_site \
+            --checks Links,Images --disable-external --allow-hash-href \
+            --ignore-empty-alt --ignore-empty-mailto --no-enforce-https --assume-extension .html \
+            --ignore-files "/\/fonts\//,/\/files\//,/\/visualizations\//,/\/asciinema\//,/\/pagefind\//" \
+            --ignore-urls "/\/presentations\/assert-13th/"
 
       - name: Minify HTML files
         run: |

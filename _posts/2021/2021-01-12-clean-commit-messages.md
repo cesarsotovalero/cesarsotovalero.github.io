@@ -10,8 +10,8 @@ keywords:
   - GitHub
   - Commit messages
   - Gitmoji
-image: ../img/posts/2021/2021-01-12/station_signs_cover.jpg
-share-img: ../img/posts/2021/2021-01-12/station_signs_cover.jpg
+image: /img/posts/2021/2021-01-12/station_signs_cover.jpg
+share-img: /img/posts/2021/2021-01-12/station_signs_cover.jpg
 show-avatar: false
 toc: true
 date: 2021/01/12

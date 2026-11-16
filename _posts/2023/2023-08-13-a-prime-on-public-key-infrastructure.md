@@ -12,8 +12,8 @@ keywords:
   - public key infrastructure,
   - java,
   - web of trust
-image: ../img/posts/2023/2023-08-13/dark_well-cover.jpg
-share-img: ../img/posts/2023/2023-08-13/dark_well-cover.jpg
+image: /img/posts/2023/2023-08-13/dark_well-cover.jpg
+share-img: /img/posts/2023/2023-08-13/dark_well-cover.jpg
 show-avatar: false
 toc: true
 mathjax: true

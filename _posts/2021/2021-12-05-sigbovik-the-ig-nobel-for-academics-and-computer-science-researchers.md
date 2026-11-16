@@ -6,8 +6,8 @@ tags: sarcasm
 description: |
   The SIGBOVIK humor-filled conference is the most disruptive Computer Science academic conference I've ever seen. This exceptional venue allows demystifying complicated concepts through sarcasm and mockery while getting away from the rigors of standard academic research.
 keywords: SIGBOVIK,silly ideas,research parodies,computer science,conference,academia
-image: ../img/posts/2021/splatter_cover.png
-share-img: ../img/posts/2021/splatter.png
+image: /img/posts/2021/splatter_cover.png
+share-img: /img/posts/2021/splatter.png
 show-avatar: false
 toc: true
 date: 2021/12/05
@@ -57,7 +57,7 @@ I think this is one of the principal values of SIGBOVIK: demystifying complicate
 I often pick a paper there ~~when I'm on the toilet~~, and if I'm not able to understand the joke, it inspires me to learn more about it.
 And it is worth mentioning that learning inspired by curiosity is very effective.
 
-If you're a researcher, then you should know that being active seeking the best medium for research outreach and professional networking are [strategic activities](./blog/seven-reasons-to-go-for-a-phd-in-computer-science).
+If you're a researcher, then you should know that being active seeking the best medium for research outreach and professional networking are [strategic activities](/blog/seven-reasons-to-go-for-a-phd-in-computer-science).
 In the academic world, this involves having a good level of personal charm and the intellectual abilities to drive an exciting conversation with talented people who are often experts in very niche domains.
 It turns out that having a paper published in the SIGBOVIK proceedings can open the door to becoming not only a competent researcher but a fun one too.
 
@@ -78,7 +78,7 @@ This humor-filled conference contained several opportunities for those who want 
   </figcaption>
 </figure>
 
-- **“DollarCoin: A Cryptocurrency With Proof-Of-Dollar”** In this paper, the authors present DollarCoin, a new cryptocurrency, as an alternative to Bitcoin. DollarCoin is mined, or generated, by burning a $1 bill, while taking a video of the burning process in a specified manner. In his paper, the author proves that burning the bill in this specified manner ensures that the currency cannot be forged or double spent. During the paper's presentation, it was a demonstration of this process of generating a DollarCoin, taking a dollar bill out of ones pocket and lighting it on fire. Unsurprisingly, this demonstration led to a great deal of amusement among the audience. <img src="../img/posts/2021/dollarcoin.png" height="40" border="0" alt="Comand">
+- **“DollarCoin: A Cryptocurrency With Proof-Of-Dollar”** In this paper, the authors present DollarCoin, a new cryptocurrency, as an alternative to Bitcoin. DollarCoin is mined, or generated, by burning a $1 bill, while taking a video of the burning process in a specified manner. In his paper, the author proves that burning the bill in this specified manner ensures that the currency cannot be forged or double spent. During the paper's presentation, it was a demonstration of this process of generating a DollarCoin, taking a dollar bill out of ones pocket and lighting it on fire. Unsurprisingly, this demonstration led to a great deal of amusement among the audience. <img src="/img/posts/2021/dollarcoin.png" height="40" border="0" alt="Comand">
 
 - **“Pikachu, Domosaur, and Other Monolexical Languages”** Many complicated techniques have been introduced to aid in computer processing of natural languages. While this is generally considered to be a difficult task, many approaches have ignored the prevalent class of monolexical languages, or languages that consist of a single word. In this paper, the authors present some desirable properties of such languages and apply techniques for common NLP tasks to demonstrate their value.
 
@@ -96,7 +96,7 @@ But just in case you were too lazy to make your own searching, [here is my compe
 
 # Conclusion
 
-Academic research is a [very serious endeavor](./blog/book-review-the-phd-grind).
+Academic research is a [very serious endeavor](/blog/book-review-the-phd-grind).
 As a result, most academics at some point of their career need to find a way to decompress from the daily pressures.
 That’s what I believe SIGBOVIK aims for: a way to escape from the rigor of standard academic research.
 Being part of this creative an unconventional community is definitely a plus, as good sense of humor as distinguished many of the bright minds.

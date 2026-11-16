@@ -11,8 +11,8 @@ keywords:
   - software engineer résumé
   - résumé advice for computer science professionals
   - résumé tips for research scientists
-image: ../img/posts/2024/2024-01-12/hero_cover.jpg
-share-img: ../img/posts/2024/2024-01-12/hero_cover.jpg
+image: /img/posts/2024/2024-01-12/hero_cover.jpg
+share-img: /img/posts/2024/2024-01-12/hero_cover.jpg
 show-avatar: false
 toc: true
 mathjax: true
@@ -28,7 +28,7 @@ They are all Computer Science PhD graduates looking to land a new job in the tec
 These people are the cream of the crop, so those résumés should look awesome, right?
 Well, not really.
 I still remember the first draft of my résumé, it was awful (I don't even have the guts to share it here, 
-better looking at its [latest version](../files/CV/cesar-resume.pdf)).
+better looking at its [latest version](/files/CV/cesar-resume.pdf)).
 I had no experience writing résumés back then, and it took me a while to understand how a great one looks like.
 Building an awesome résumé takes time, effort, and conscious planning.
 If you ask me now:
@@ -196,7 +196,7 @@ Instead, I would try to narrow down and focus into something more specific, such
 This role specification not only makes the résumé appear more polished but also positions the person as a premium candidate in her niche.
 The more specific the description of the skills and experiences are, the more chances to stand out in a crowded job market and be perceived as a valuable asset.
 
-Technical hiring managers understand the value of [personal projects](./software) on GitHub, but don't expect other people do.
+Technical hiring managers understand the value of [personal projects](/software) on GitHub, but don't expect other people do.
 
 I believe that having own projects is still undervalued in the market.
 A popular personal project means that the person has done something herself.
@@ -254,7 +254,7 @@ Something related as "human qualities."
 
 When it comes to highlighting personal qualities on a résumé, it's important to strike the right tone.
 
-It's better not to praise ourselves excessively or come across [acting pretentiously](./blog/some-things-to-remember-before-acting-pretentiously).
+It's better not to praise ourselves excessively or come across [acting pretentiously](/blog/some-things-to-remember-before-acting-pretentiously).
 It's far more effective to speak with modesty and let the achievements and experiences speak for themselves.
 Only if asked, include testimonials or references from colleagues and mentors who can vouch for our skills and character.
 This third-party validation often carries more weight than self-praise and provides a more credible and balanced view of our professional persona.
@@ -283,7 +283,7 @@ Alongside the picture, provide links to your accomplishments.
 Whether it’s a link to a published paper, a successful project, or a professional profile, these links serve as concrete evidence of our achievements.
 However, I would advise against listing MOOC courses, as we would just decrease or value or discrediting ourselves.
 While they are excellent for personal growth, mentioning them on our résumé might detract from your formal education and professional experience.
-I only keep [my own list of online MOOCs](./courses) for myself, so I can come back to them later.
+I only keep [my own list of online MOOCs](/courses) for myself, so I can come back to them later.
 
 ## Passions
 
