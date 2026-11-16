@@ -4,6 +4,8 @@ permalink: /youtube/by-year
 title: YouTube Videos by Year
 description: YouTube videos created by César Soto Valero, organized by year.
 published: true
+sitemap: false
+noindex: true
 ---
 
 <!-- markdownlint-disable MD033 -->

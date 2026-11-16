@@ -1,0 +1,27 @@
+{% comment %}
+  Web analytics, configured with `analytics:` in _config.yml. Loaded only in production builds.
+  Set `provider` to one of: ga4, plausible, goatcounter. Leave it empty to load nothing.
+{% endcomment %}
+{% assign analytics = site.analytics %}
+{% if jekyll.environment == "production" and analytics.provider and analytics.provider != "" %}
+   {% case analytics.provider %}
+   {% when "ga4" %}
+   {% if analytics.ga4_measurement_id and analytics.ga4_measurement_id != "" %}
+   <script async src="https://www.googletagmanager.com/gtag/js?id={{ analytics.ga4_measurement_id }}"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ analytics.ga4_measurement_id }}');
+   </script>
+   {% endif %}
+   {% when "plausible" %}
+   {% if analytics.plausible_domain and analytics.plausible_domain != "" %}
+   <script defer data-domain="{{ analytics.plausible_domain }}" src="https://plausible.io/js/script.js"></script>
+   {% endif %}
+   {% when "goatcounter" %}
+   {% if analytics.goatcounter_code and analytics.goatcounter_code != "" %}
+   <script data-goatcounter="https://{{ analytics.goatcounter_code }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+   {% endif %}
+   {% endcase %}
+{% endif %}

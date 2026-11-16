@@ -4,6 +4,8 @@ permalink: /linkedin/by-reactions
 title: LinkedIn Posts by Reactions
 description: LinkedIn posts by César Soto Valero, sorted by number of reactions.
 published: true
+sitemap: false
+noindex: true
 ---
 
 <!-- markdownlint-disable MD033 -->
