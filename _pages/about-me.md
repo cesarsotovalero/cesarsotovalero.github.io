@@ -9,18 +9,28 @@ schema_type: ProfilePage
 show-avatar: true
 ---
 
-I'm a Lead Data Scientist at [SEB](https://sebgroup.com), where I drive AI solutions within the Investment Banking division.
+<link rel="stylesheet" href="/css/landing.css">
 
-My focus is [applied AI for finance](/ai-for-finance): reading financial documents with LLMs, building agentic workflows, and evaluating AI systems so a bank can trust them.
+<section class="index-hero">
+{% include social.html type="page" %}
+</section>
+
+I'm a Lead Data Scientist at [SEB](https://sebgroup.com), one of the largest banks in the Nordics, where I drive AI solutions within the Investment Banking division.
+
+I've worked with data science and machine learning for more than a decade, first in research and now in production, where a wrong number is worse than no number. My focus is [applied AI for finance](/ai-for-finance).
+
+At SEB, I have:
+
+- **Built real-time AI/ML systems for fraud detection** in Financial Crime Prevention, serving millions of customers under strict latency constraints.
+- **Taken models from idea to production**, working as a data engineer, data scientist, senior data scientist, and now lead: exploring complex datasets, designing features and models, and shipping them with ML engineers while keeping them explainable.
+- **Applied LLMs to financial documents**, getting reliable data out of quarterly reports, credit memos, broker research, and spreadsheets.
+- **Designed agentic workflows and multi-agent systems**, including an agentic AI platform for credit risk assessment that reached the finals of the 10th Global SEB Hackathon.
+- **Evaluated AI systems so a bank can trust them**, treating grounding, auditability, and governance as part of the build.
+- **Acted as a subject matter expert**, supporting AI-driven decisions across the organisation and presenting at SEB Tech Day three times.
 
 I'm also a computer scientist and a hands-on software engineer, on a mission to help engineers learn, build, and grow faster (now with AI).
 
 I'm based in Stockholm, Sweden 🇸🇪. Here's my [one-page résumé](/files/CV/cesar-resume.pdf) and, more importantly, [my professional values](/my-professional-values).
-
-## Experience
-
-- **September 2026 to present:** Lead Data Scientist, Investment Banking division, SEB.
-- **April 2023 to August 2026:** Data Engineer, then Data Scientist and Senior Data Scientist, Financial Crime Prevention, SEB. I built and maintained real-time AI/ML systems for fraud detection, used by millions of customers.
 
 ## Education
 
@@ -34,7 +44,9 @@ I'm a lifelong learner, often [taking courses and MOOCs](/courses).
 
 ## Research and Open Source
 
-I've [authored 30+ research papers](/publications), with 1,000+ citations [on Google Scholar](https://scholar.google.com/citations?user=jNBoowwAAAAJ), [recognized with awards](/awards), and I've [been involved in academic services](/service).
+I've [authored 30+ research papers](/publications) in peer-reviewed journals and conferences, with 1,000+ citations [on Google Scholar](https://scholar.google.com/citations?user=jNBoowwAAAAJ).
+
+My research has been [recognized with awards](/awards), including an ACM SIGSOFT Distinguished Paper Award, and I've [been involved in academic services](/service).
 
 I've created [open-source projects](/software), some with 300+ ★ on [GitHub](https://github.com/cesarsotovalero).
 
