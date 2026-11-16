@@ -193,7 +193,7 @@
 /* Small capitals, like the eyebrow above the name. */
 .home-stats span,
 .home-venues-label {
-  font-family: "Equity Caps A", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Century Supra C4", "Century Supra T4", Georgia, serif;
   font-size: 15px;
   letter-spacing: 0.05em;
   text-transform: lowercase;
@@ -329,16 +329,16 @@
 }
 
 .home-role {
-  font-family: "Equity Text A", Georgia, serif;
+  font-family: "Equity Text A", "Century Supra T4", Georgia, serif;
   font-size: 21px;
 }
 
 .home-tagline {
-  font-family: "Equity Text A", Georgia, serif;
+  font-family: "Equity Text A", "Century Supra T4", Georgia, serif;
   font-style: italic;
 }
 
 .home-venues,
 .home-cta p {
-  font-family: "Equity Text A", Georgia, serif;
+  font-family: "Equity Text A", "Century Supra T4", Georgia, serif;
 }

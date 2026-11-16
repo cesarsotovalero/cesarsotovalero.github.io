@@ -13,9 +13,9 @@ html {
 }
 
 body {
-  font-family: "Equity Text A", "Georgia", "Times New Roman", serif;
+  font-family: "Century Supra T4", "Georgia", "Times New Roman", serif;
   font-weight: lighter;
-  font-size: 21px;
+  font-size: 22px;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
   position: relative;
@@ -27,9 +27,29 @@ body {
   line-height: 1.7;
 }
 
-/* Equity reads smaller than its pixel size, so phones get 19px (not 18px). */
 @media only screen and (max-width: 450px) {
   body {
+    font-size: 18px;
+  }
+}
+
+/* Long-form reading text in posts and pages uses Equity; everything else keeps its font.
+   Markdown output has no classes, so classed elements (widgets, cards, lists) are left alone. */
+.blog-post :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li),
+.container[role=main]:not(.main-content) :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li) {
+  font-family: "Equity Text A", "Georgia", "Times New Roman", serif;
+}
+
+/* Footnotes keep their own smaller size. */
+.blog-post :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li, .footnotes *),
+.container[role=main]:not(.main-content) :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li, .footnotes *) {
+  font-size: 21px;
+}
+
+/* Equity reads smaller than its pixel size, so phones get 19px (not 18px). */
+@media only screen and (max-width: 450px) {
+  .blog-post :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li, .footnotes *),
+  .container[role=main]:not(.main-content) :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li, .footnotes *) {
     font-size: 19px;
   }
 }
@@ -1264,7 +1284,7 @@ dialog.drawer-panel[open]::backdrop {
   width: 100%;
   border-radius: 3px;
   margin-left: 4px;
-  font-family: "Concourse T6", "Linux Biolinum";
+  font-family: "Concourse T6", "Century Supra C4", "Linux Biolinum";
 }
 
 #mailchimp-subscribe-section-footer #mc-embedded-subscribe-footer {

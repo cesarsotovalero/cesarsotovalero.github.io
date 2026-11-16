@@ -230,6 +230,7 @@ dialog.site-drawer {
   display: block;
   padding: 6px 0;
   color: var(--main-text-color);
+  font-family: "Concourse T6 Tab", var(--nav-font);
   font-size: 22px;
   font-weight: 600;
   text-decoration: none;
