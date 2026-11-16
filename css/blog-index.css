@@ -1,7 +1,7 @@
 /* Blog index: topic filters, latest posts, archive by year. */
 
 .blog-intro {
-  margin: 0 0 14px;
+  margin: 0 0 20px;
   text-align: center;
   color: var(--post-meta-index-color);
   font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
@@ -29,13 +29,13 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  min-height: 32px;
-  padding: 0 12px;
+  min-height: 36px;
+  padding: 0 14px;
   border: 1px solid var(--panel-border-color);
   border-radius: 999px;
   color: var(--main-text-color);
   font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-decoration: none;
 }
 
@@ -67,8 +67,8 @@
 }
 
 .blog-filter-status {
-  min-height: 0;
-  margin: 8px 0 0;
+  min-height: 1.5em;
+  margin: 12px 0 0;
   text-align: center;
   font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -77,8 +77,8 @@
 /* ---------- Sections ---------- */
 
 .blog-section-title {
-  margin: 20px 0 12px;
-  font-size: 24px;
+  margin: 32px 0 16px;
+  font-size: 26px;
 }
 
 .blog-meta {
