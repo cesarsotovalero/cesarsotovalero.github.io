@@ -96,6 +96,10 @@ def main() -> int:
         ['<meta name="description"', 'rel="canonical"', 'application/ld+json'],
     )
 
+    # A Google tag (Tag Manager or gtag.js) on the pages must be disclosed on the privacy page.
+    if "googletagmanager.com" in (SITE / "index.html").read_text(encoding="utf-8"):
+        assert_contains(SITE / "privacy.html", ["Google Analytics"])
+
     assert_contains(
         SITE / "robots.txt",
         ["Sitemap: https://www.cesarsotovalero.net/sitemap.xml", "Allow: /llms.txt"],

@@ -91,7 +91,6 @@ a:focus {
 /* ---------- Buttons: a gentle pressed state ---------- */
 
 .home-button:active,
-.post-button:active,
 .site-nav-cta:active,
 .contact-submit:active,
 .reveal-more:active {
@@ -100,14 +99,12 @@ a:focus {
 }
 
 .home-button:not(.home-button--primary):hover,
-.post-button:not(.post-button--primary):hover,
 .reveal-more:hover {
   border-color: var(--accent-soft-border);
   background: var(--accent-soft);
 }
 
 .home-button:not(.home-button--primary),
-.post-button:not(.post-button--primary),
 .reveal-more {
   border-color: var(--accent-soft-border);
 }
