@@ -35,10 +35,13 @@ jobs:
           python-version: "3.x"
 
       - name: Install Python dependencies
-        run: pip install pyyaml
+        run: pip install pyyaml pillow
 
       - name: Generate talks.yml from talks.md
         run: python scripts/sync_talks_from_page.py
+
+      - name: Generate post cover thumbnails
+        run: python scripts/make_thumbnails.py
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1

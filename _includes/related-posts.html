@@ -94,7 +94,7 @@
               </div>
             </div>
             {% if post.image %}
-            <img src="{{ post.image }}" alt="{{ post.title }}">
+            <img src="{{ post.image | thumbnail }}" alt="" loading="lazy" decoding="async">
             {% endif %}
           </div>
         </a>
