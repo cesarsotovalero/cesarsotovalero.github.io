@@ -11,8 +11,8 @@ published: true
 
 I'm the author of academic papers published in reputable journals and conferences.
 My work can be found in
-<a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="../img/pages/publications/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="../img/pages/publications/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="../img/pages/publications/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar); with ORCID <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer"
-style="vertical-align:top;"><img src="../img/icons/orcid-color.svg" style="width:1em;margin-right:.3em;" alt="ORCID iD icon">0000-0003-0541-6411</a>. The following is an updated list of my published work (in reverse chronological order).
+<a href="https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en"><img src="/img/pages/publications/google.png" height="20" border="0" alt="View César Soto-Valero's publications on Google Scholar"></a> [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) , <a href="https://www.researchgate.net/profile/Cesar_Soto-Valero"><img src="/img/pages/publications/researchgate.png" height="20" border="0" alt="View César Soto-Valero's publications on Researchgate"></a> [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero), and <a href="https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar"><img src="/img/pages/publications/dblp.jpg" height="20" border="0" alt="View César Soto-Valero's publications on dblp computer science bibliography"></a>[dblp](https://dblp.uni-trier.de/pers/hd/s/Soto=Valero:C=eacute=sar); with ORCID <a href="https://orcid.org/0000-0003-0541-6411" target="orcid.widget" rel="noopener noreferrer"
+style="vertical-align:top;"><img src="/img/icons/orcid-color.svg" style="width:1em;margin-right:.3em;" alt="ORCID iD icon">0000-0003-0541-6411</a>. The following is an updated list of my published work (in reverse chronological order).
 
 <!--
 <aside class="quote">
@@ -49,8 +49,8 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   César Soto-Valero.
   _Doctoral Thesis in Computer Science_.
   KTH Royal Institute of Technology, Department of Software and Computer Systems, June 2023.
-  <a href="../files/thesis/cesar-fulltext.pdf">Text</a>
-  <a href="../files/thesis/slides/cesar-phd-defense.pptx">Slides</a>
+  <a href="/files/thesis/cesar-fulltext.pdf">Text</a>
+  <a href="/files/thesis/slides/cesar-phd-defense.pptx">Slides</a>
   <a href="https://youtu.be/Ub684G_aM5Q">Video</a>
 
 - <img alt="journal" title="Journal Articles" src="https://dblp.uni-trier.de/img/n.png" style="background: #c32b72; width: 18px; height: 18px">
@@ -91,7 +91,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
 # 2021
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px">
-  <img alt="award" title="ACM SIGSOFT Distinguished Paper Award" src="../../img/pages/publications/award.png" height="30px">
+  <img alt="award" title="ACM SIGSOFT Distinguished Paper Award" src="/img/pages/publications/award.png" height="30px">
   **A Longitudinal Analysis of Bloated Java Dependencies**.
   César Soto-Valero, Thomas Durieux, and Benoit Baudry.
   _Proceeding of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE), Athens, Greece_.
@@ -101,7 +101,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   <a href="https://youtu.be/cePEl485E_s">Video</a>
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px">
-  <img alt="award" title="Data Showcase Award" src="../../img/pages/publications/award.png" height="30px">
+  <img alt="award" title="Data Showcase Award" src="/img/pages/publications/award.png" height="30px">
   **DUETS: A Dataset of Reproducible Pairs of Java Library-Clients**.
   Thomas Durieux, César Soto-Valero, and Benoit Baudry.
   _18th International Conference on Mining Software Repositories (MSR), Madrid, Spain_.
@@ -162,7 +162,7 @@ Legend: <img alt="conference" title="Conference and Workshop Papers" src="https:
   [<i class="fab fa-github"></i> Experiments](https://github.com/cesarsotovalero/msr-2019)
 
 - <img alt="conference" title="Conference and Workshop Papers" src="https://dblp.uni-trier.de/img/n.png" style="background: #196ca3; width: 18px; height: 18px">
-  <img alt="award" title="Data Showcase Award" src="../../img/pages/publications/award.png" height="30px">
+  <img alt="award" title="Data Showcase Award" src="/img/pages/publications/award.png" height="30px">
   **The Maven Dependency Graph: a Temporal Graph-based Representation of Maven Central**.
   Amine Benelallam, Nicolas Harrand, César Soto-Valero, Benoit Baudry, and Olivier Barais.
   _16th International Conference on Mining Software Repositories (MSR), Montreal, Canada, 2019_.

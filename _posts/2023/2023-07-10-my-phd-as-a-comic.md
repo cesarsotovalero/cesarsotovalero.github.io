@@ -9,8 +9,8 @@ keywords:
   - use comics for research,
   - communicating research,
   - delivering technical content,
-image: ../img/posts/2023/2023-07-10/comic-cover.jpg
-share-img: ../img/posts/2023/2023-07-10/comic-cover.jpg
+image: /img/posts/2023/2023-07-10/comic-cover.jpg
+share-img: /img/posts/2023/2023-07-10/comic-cover.jpg
 show-avatar: false
 toc: true
 date: 2023/07/10
@@ -20,7 +20,7 @@ published: true
 
 Doing ~~good~~ science is hard.
 Communicating science is even harder because it requires a larger doses of creativity.
-I learned during my 5 years as a PhD student that art visuals and stories are excellent ways to [communicate scientific ideas and results](./blog/how-to-give-a-great-technical-presentation).
+I learned during my 5 years as a PhD student that art visuals and stories are excellent ways to [communicate scientific ideas and results](/blog/how-to-give-a-great-technical-presentation).
 But using art as a form of expression is not easy, specially when dealing with complex technical content.
 Nevertheless, it is worth the effort.
 This is something I experienced at the end of my PhD journey.
@@ -44,7 +44,7 @@ Along the time, I meet many talented and creative software artists, and even sha
 
 By being exposed to they work, I learned that art is a powerful tool for making science resonate with hearts and minds.
 One day, I was talking with [Maria Kling](https://www.linkedin.com/in/maria-euler-art-science-design), and she suggested me to create a comic to explain my PhD thesis in a fun and engaging way.
-We had a few meetings where I explained the content of [my PhD thesis](../files/thesis/cesar-fulltext.pdf).
+We had a few meetings where I explained the content of [my PhD thesis](/files/thesis/cesar-fulltext.pdf).
 Explaining software concepts to software artists is easy, as many of them are great coders.
 
 The picture above shows the output of the first meeting.
@@ -55,7 +55,7 @@ The goal was to create a comic to show the usefulness of these software tools: [
 
 # The Result
 
-The full comic in PDF form is available [here](../files/thesis/phd-comic/comicfoldprintpagesreorderedadjusted.pdf).
+The full comic in PDF form is available [here](/files/thesis/phd-comic/comicfoldprintpagesreorderedadjusted.pdf).
 More details as follows.
 
 ## First Contribution
@@ -116,7 +116,7 @@ I believe that the field of Computer Science could benefit from digital creation
     <em>“Science communication isn't just key, it's essential. It unlocks funding, boosts outreach, and serves as both an introduction and justification of research to society.”</em>
 </aside>
 
-At the end of my PhD journey, the research contributions and companion tools that I developed became more than [code](./software), experiments, and [papers](./publications).
+At the end of my PhD journey, the research contributions and companion tools that I developed became more than [code](/software), experiments, and [papers](/publications).
 They took on a life of their own thanks to the great work of the software artists who used their talents to turn it all into a comic.
 In the story, I'm a character in a grand tale using DepClean, DepTrim, and JDBL to enter a never-ending battle against code bloat in Java applications.
 

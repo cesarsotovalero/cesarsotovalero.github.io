@@ -11,8 +11,8 @@ keywords:
   - GenAI vs. engineers
   - tech career
   - ai
-image: ../img/posts/2024/2024-08-19/armillary-sphere_cover.jpg
-share-img: ../img/posts/2024/2024-08-19/armillary-sphere_cover.jpg
+image: /img/posts/2024/2024-08-19/armillary-sphere_cover.jpg
+share-img: /img/posts/2024/2024-08-19/armillary-sphere_cover.jpg
 show-avatar: false
 toc: true
 mathjax: false
@@ -111,9 +111,9 @@ Here are some key limitations of GenAI in the context of software engineering:
 Let's take software architecture as an example.
 A GenAI model can suggest patterns or frameworks based on existing designs.
 However, defining the architecture for a mission-critical system that has not been done before and for which there is not available training data is a task that requires human extrapolation (e.g., balancing scalability, performance, and security).
-This is because [architecture](./blog/what-does-it-take-to-become-a-software-architect) is not just about choosing the right tools or patterns, it’s about understanding the problem space, anticipating future needs, and making informed trade-offs decisions.
+This is because [architecture](/blog/what-does-it-take-to-become-a-software-architect) is not just about choosing the right tools or patterns, it’s about understanding the problem space, anticipating future needs, and making informed trade-offs decisions.
 
-As I mentioned in a [previous blog post](./blog/ai-doesnt-make-me-the-same-coffee), GenAI powered tools are not a silver bullet.
+As I mentioned in a [previous blog post](/blog/ai-doesnt-make-me-the-same-coffee), GenAI powered tools are not a silver bullet.
 They are exceptional at _augmentation_ of human capabilities rather than outright replacement.
 They can speed up repetitive tasks, such as generation of boilerplate code, fix well-known bugs or code smells, or doing basic refactorings, but lack the capacity for _strategic thinking_ or _long-term planning_.
 Besides, getting code written so easily feels somehow like cheating, which decreases the _perceived value_ of the resulting output.
@@ -186,7 +186,7 @@ If you misunderstand a customer need, you end up solving the wrong problem.
 Misinterpret a functional requirement, and you will end up designing a system that’s overkill, or worse, one that under-delivers.
 
 For example, imagine you’re tasked with building a real-time messaging system for a customer support team handling thousands of chats per day concurrently.
-The natural assumption might be to scale up with advanced [microservices](./blog/design-for-microservices) and expensive infrastructure to ensure immediate response times.
+The natural assumption might be to scale up with advanced [microservices](/blog/design-for-microservices) and expensive infrastructure to ensure immediate response times.
 But in the prototyping phase, a more practical solution could involve implementing a simple queuing system to handle chat overflow during peak hours, reducing the need for costly infrastructure while keeping the user experience intact.
 
 <figure class="jb_picture">
@@ -304,7 +304,7 @@ It should be to delegate the tasks that GenAI can efficiently handle, and moving
 
 So, keep pushing yourself.
 Don’t get too comfortable with the easy tasks and just delegate those to GenAI systems.
-Focus on learning [the skills](./blog/surviving-the-ai-revolution-as-a-software-engineer) that only humans can master.
+Focus on learning [the skills](/blog/surviving-the-ai-revolution-as-a-software-engineer) that only humans can master.
 
 # Final Thoughts
 

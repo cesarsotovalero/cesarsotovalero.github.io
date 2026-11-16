@@ -125,6 +125,7 @@
    <link rel="alternate" type="text/markdown" href="{{ site.url }}{{ page.url | remove: '.html' }}.md"/>
    {% endif %}
 
+   {% comment %} needs_mathjax is set per page by _plugins/content_feature_flags.rb. MathJax is self-hosted. {% endcomment %}
    {% if page.needs_mathjax %}
    <script>
       window.MathJax = {
@@ -135,7 +136,7 @@
          }
       };
    </script>
-   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+   <script defer src="/js/mathjax/tex-chtml.js"></script>
    {% endif %}
 
    <noscript>

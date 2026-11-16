@@ -13,8 +13,8 @@ keywords:
   - GenAI capabilities
   - AI common pitfalls
   - AI misuse
-image: ../img/posts/2024/2024-11-17/twisted-revolver_cover.jpg
-share-img: ../img/posts/2024/2024-11-17/twisted-revolver_cover.jpg
+image: /img/posts/2024/2024-11-17/twisted-revolver_cover.jpg
+share-img: /img/posts/2024/2024-11-17/twisted-revolver_cover.jpg
 show-avatar: false
 toc: true
 mathjax: false
@@ -23,7 +23,7 @@ author: cesarsotovalero
 published: true
 ---
 
-{% badge /img/badges/Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg 140 <https://commons.wikimedia.org/wiki/File:NMA.0039209_Emigration._Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg> %}
+{% badge /img/badges/Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg 140 https://commons.wikimedia.org/wiki/File:NMA.0039209_Emigration._Svenskar_i_Amerika._Guldvaskare_vid_Black_Foots_River,_Montana.jpg %}
 
 The AI fever has been around for a while now (4 years as I can count).
 It reminds me of the [gold rush](https://en.wikipedia.org/wiki/Gold_rush) and subsequent [Californian Dream](https://en.wikipedia.org/wiki/California_Dream) from the 19th century.
@@ -51,7 +51,7 @@ Obviously, whenever there is a new technology, there is a wave of startups tryin
 Do you remember the blockchain hype 10 years ago?
 I can't forget about the many crypto millionaires that emerged from it (especially because I wasn't one of them).
 
-I'm now convinced that GenAI is a powerful tech (much broader than blockchain) that can [transform whole industries](./blog/surviving-the-ai-revolution-as-a-software-engineer) and create new new ones.
+I'm now convinced that GenAI is a powerful tech (much broader than blockchain) that can [transform whole industries](/blog/surviving-the-ai-revolution-as-a-software-engineer) and create new new ones.
 GenAI will first optimize existing processes and then transform them.
 First, everything related to handling paperwork and repetitive tasks is going to be completely automated (and that's actually good because these boring tasks were not meant for humans in the first place anyway).
 Second, GenAI creates new opportunities for everyone, including artists and creators, to express themselves in ways that were not possible before.

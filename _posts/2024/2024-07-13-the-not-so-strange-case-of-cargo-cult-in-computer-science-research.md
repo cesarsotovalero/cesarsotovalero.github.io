@@ -11,8 +11,8 @@ keywords:
   - academic crisis
   - fake science
   - lack of research trust
-image: ../img/posts/2024/2024-07-13/vortice-art_cover.webp
-share-img: ../img/posts/2024/2024-07-13/vortice-art_cover.webp
+image: /img/posts/2024/2024-07-13/vortice-art_cover.webp
+share-img: /img/posts/2024/2024-07-13/vortice-art_cover.webp
 show-avatar: false
 toc: true
 mathjax: false
@@ -141,12 +141,12 @@ Running the software with the exact same configurations, memory, operating syste
 Solutions like Docker help, but what guarantees do we have that Docker will still exist in the next 20 or 30 years?
 
 For the time being, it's unlikely that conferences will require researchers to submit their hardware along with their software.
-However, as scientists, we can take reproducibility as one of the key deciding factors when [peer-reviewing research papers](./blog/how-i-peer-review-research-papers).
+However, as scientists, we can take reproducibility as one of the key deciding factors when [peer-reviewing research papers](/blog/how-i-peer-review-research-papers).
 The more we value reproducibility when deciding if accepting or rejecting a paper, the more we will see a change in the way reproducible research is conducted.
 
 ## The Academic Trap
 
-The [pressure to publish](./blog/the-last-paper-myth), combined with rapid progress of the computer science field, has distorted priorities, leading to publications at any cost.
+The [pressure to publish](/blog/the-last-paper-myth), combined with rapid progress of the computer science field, has distorted priorities, leading to publications at any cost.
 
 This has given rise to widespread academic misconduct, including paper mills, where existing research is haphazardly combined to create seemingly new results that might get published somewhere, even if not in top-tier journals.
 In fields like medicine, this pressure has become so severe that entire bodies of research [have been retracted](https://doi.org/10.4103%2F0019-5545.82529) after being exposed as based on faulty or fraudulent data.
@@ -169,7 +169,7 @@ Here are some ways in which it could manifest:
 - **Reinventing the wheel**: Sometimes, due to a lack of thorough literature review or out of a desire to claim novelty, researchers might end up replicating existing studies without adding real value or new insights. This has happened many times, for example, the concept of `MapReduce` is credited to Google, but the concepts behind where published [decades before](https://doi.org/10.1145/129888.129894) by researchers from the fields of parallel databases and functional programming.
 - **Over-reliance on tools and frameworks**: It’s not uncommon to see studies where advanced tools or algorithms are used without a proper understanding of their underlying principles or limitations, simply because they are popular or well-regarded. Think about deep learning and the fact that [we don't really know ](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) how these black-boxed complex neural networks actually operate to deliver their results.
 
-Having navigated [the rocky terrains](./blog/my-phd-as-a-comic) of doing a PhD, I’ve experienced firsthand the challenges that push even the well-intentioned scientist towards these pitfalls.
+Having navigated [the rocky terrains](/blog/my-phd-as-a-comic) of doing a PhD, I’ve experienced firsthand the challenges that push even the well-intentioned scientist towards these pitfalls.
 The pressure to "publish or perish" and the fierce competition for grants can sometimes blur the lines between rigorous investigation and the rush to produce novel results.
 
 Moreover, the lack of a good work-life balance, the anxiety of job (in)security in academia, and the often solitary nature of deep research can exacerbate these issues.
@@ -194,7 +194,7 @@ Here are some key points:
 
 - **Education and awareness**: Early career researchers especially need guidance on the ethical dimensions of scientific research, including the importance of rigorous, unbiased experimental design and the pitfalls of cargo cult science.
 - **Encouraging reproducibility**: As I mentioned before, journals and conferences should promote and reward the replication of studies and the sharing of negative results to counteract the bias towards only publishing positive findings. For example, by increasing acceptance rates or creating especial [artifact and data showcase tracks](https://2024.msrconf.org/track/msr-2024-data-and-tool-showcase-track) in conferences (e.g., as in the _International Conference of Mining Software Repositories_).
-- **Institutional support**: Universities and funding bodies must recognize the pressures leading to these practices and offer support systems to encourage quality over quantity. For example, having a tenure and promotion criteria [that value the impact of research](./blog/how-phd-profiles-are-evaluated) over mere publication metrics.
+- **Institutional support**: Universities and funding bodies must recognize the pressures leading to these practices and offer support systems to encourage quality over quantity. For example, having a tenure and promotion criteria [that value the impact of research](/blog/how-phd-profiles-are-evaluated) over mere publication metrics.
 - **Community and collaboration**: Fostering a more collaborative rather than competitive environment helps researchers share methods, findings, and validations more openly, reducing the isolation that allure taking unethical shortcuts.
 
 So, it ultimately comes down to establishing mechanisms or systems that promote rigorous science by adhering to well-established principles, such as careful experimentation, critical analysis, reproducibility, and transparency.

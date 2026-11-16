@@ -13,8 +13,8 @@ keywords:
   - model governance
   - data mesh
   - model cards
-image: ../img/posts/2026/2026-01-15/fatbursparken.jpg
-share-img: ../img/posts/2026/2026-01-15/fatbursparken.jpg
+image: /img/posts/2026/2026-01-15/fatbursparken.jpg
+share-img: /img/posts/2026/2026-01-15/fatbursparken.jpg
 show-avatar: false
 toc: true
 mathjax: true
@@ -105,8 +105,8 @@ In practice, ownership spans five surfaces:
 If you ignore any one of them, the system will eventually ignore you back.
 Because for most real-world sytems the model is a component, not the whole product.
 
-For example, if you build [a financial fraud detection model](./blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection) but ignore data quality, you’ll get garbage in and garbage out.
-If you ignore monitoring, you’ll miss drift and degrade [key evaluation metrics](./blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models) silently.
+For example, if you build [a financial fraud detection model](/blog/from-classical-ml-to-dnns-and-gnns-for-real-time-financial-fraud-detection) but ignore data quality, you’ll get garbage in and garbage out.
+If you ignore monitoring, you’ll miss drift and degrade [key evaluation metrics](/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models) silently.
 This could lead to lost revenue, regulatory fines, or customer churn.
 
 So the overall system is the product.

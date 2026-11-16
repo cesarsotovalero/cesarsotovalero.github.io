@@ -9,8 +9,8 @@ keywords:
   - public speaking,
   - delivering technical content,
   - insights from an speaker
-image: ../img/posts/2023/2023-06-22/circus-cover.jpg
-share-img: ../img/posts/2023/2023-06-22/circus-cover.jpg
+image: /img/posts/2023/2023-06-22/circus-cover.jpg
+share-img: /img/posts/2023/2023-06-22/circus-cover.jpg
 show-avatar: false
 toc: true
 mathjax: true
@@ -23,7 +23,7 @@ Public speaking has never been my forte.
 As a child, I often preferred blending into the crowd rather than standing out.[^1]
 However, I've since realized that in the pursuit of professional excellence, there is no way to avoid the public eye.
 Talent and hard work don't really matter if I can't properly package and present my work to the masses.
-I recently [defended my PhD thesis](https://youtu.be/Ub684G_aM5Q),[^2] so I want to take this time to reflect on what I've learned while delivering a few [technical talks](./talks).
+I recently [defended my PhD thesis](https://youtu.be/Ub684G_aM5Q),[^2] so I want to take this time to reflect on what I've learned while delivering a few [technical talks](/talks).
 Upon reflection, I notice that the last 5 years of PhD have made me go from shaky voice and incoherent ramblings, to the point in which it looks like I'm confident at public speaking.
 In this article, I sit over the shoulders of giants to tell you about some of the tricks I've learned from my own experience and also from great speakers.
 I'll walk you through some effective strategies for technical presentations.
@@ -277,7 +277,7 @@ Here's an example:
 | Maintaining large codebases | To develop and integrate AI-powered tools into the software development process to automatically suggest how to isolate pieces of code and repackage them as independent components (a.k.a libraries). | We need to 1) choose the right AI technique giving the problem's constraints, 2) specify when to split the codebase, 3) build the system, 4) showcase a PoC of such a system, and 5) ~~optionally~~ enumerate your contributions |
 
 Be prepared to have a good list of interesting problems.
-For example, [here](./collaborations) is a list of research topics that I've compiled.
+For example, [here](/collaborations) is a list of research topics that I've compiled.
 
 # How to Finish
 

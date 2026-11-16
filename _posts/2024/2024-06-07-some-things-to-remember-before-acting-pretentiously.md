@@ -11,8 +11,8 @@ keywords:
   - professional humility
   - motivational thoughts from a PhD in Computer Science
   - academic research as a life changer
-image: ../img/posts/2024/2024-06-07/remember-your-roots_cover.jpg
-share-img: ../img/posts/2024/2024-06-07/remember-your-roots_cover.jpg
+image: /img/posts/2024/2024-06-07/remember-your-roots_cover.jpg
+share-img: /img/posts/2024/2024-06-07/remember-your-roots_cover.jpg
 show-avatar: false
 toc: true
 mathjax: false
@@ -148,13 +148,13 @@ Remember how easy it is to get off track these days. It is especially easy when 
 
 Remember that there is a whole global system built around transforming your time into profit. Sadly, some of the most brilliant minds of your time are working hard to find clever ways to monetize your attention. _It's good to focus on consuming less and creating more._
 
-Remember when you decided to take that hard [English test](./blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training) that drilled down your pocket. You had only enough money for one attempt. You met that private English teacher that day, and he told you that you needed one or two years to have a chance at passing. Yet, you studied intensively for one month alone and passed the test with the bare minimum. Some people underestimate the power of self-determination. _So don’t let the perception of others affect your willingness to achieve great things._
+Remember when you decided to take that hard [English test](/blog/how-i-beat-the-ielts-academic-with-just-a-month-of-self-training) that drilled down your pocket. You had only enough money for one attempt. You met that private English teacher that day, and he told you that you needed one or two years to have a chance at passing. Yet, you studied intensively for one month alone and passed the test with the bare minimum. Some people underestimate the power of self-determination. _So don’t let the perception of others affect your willingness to achieve great things._
 
 Remember again how bad you are as a programmer. You still don’t know how to implement a deep neural network. And despite that, somehow you managed to deliver acceptable code when the need and pressure were high enough. _It seems that people get superpowers for a short time when under heavy pressure._
 
 # Opportunities
 
-Remember that it was only after (and never before) you worked really hard to get out of [the dictatorship](./blog/the-cuban-revolution-explained) that real opportunities arose. You shouldn’t waste time and energy complaining about what you cannot control. _Taking action is absolutely necessary to make things happen._
+Remember that it was only after (and never before) you worked really hard to get out of [the dictatorship](/blog/the-cuban-revolution-explained) that real opportunities arose. You shouldn’t waste time and energy complaining about what you cannot control. _Taking action is absolutely necessary to make things happen._
 
 Remember how lucky you were to get that PhD student position. You worked hard to get there, yes, but ultimately it was a mix of luck and the help of other people that led you there. _Especially, do not forget about all those who were much more talented than you but weren’t so lucky._
 

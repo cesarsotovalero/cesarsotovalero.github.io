@@ -9,8 +9,8 @@ keywords:
   - Java programming,
   - Design patterns,
   - Inversion of control
-image: ../img/posts/2022/universitetet_cover.png
-share-img: ../img/posts/2022/universitetet_cover.png
+image: /img/posts/2022/universitetet_cover.png
+share-img: /img/posts/2022/universitetet_cover.png
 show-avatar: false
 toc: true
 date: 2022/04/12

@@ -9,8 +9,8 @@ keywords:
   - java bytecode execution,
   - how the JVM works,
   - understanding the JVM
-image: ../img/posts/2022/statue_cover.jpg
-share-img: ../img/posts/2022/statue_cover.jpg
+image: /img/posts/2022/statue_cover.jpg
+share-img: /img/posts/2022/statue_cover.jpg
 show-avatar: false
 toc: true
 date: 2022/10/20
@@ -20,7 +20,7 @@ published: true
 
 If you are reading this post it's likely that you already know how to ~~write Java~~ code.
 That's very good for you, I think everyone should know how to code these days (in the same way everyone should know about basic math operations such as +, -, *, and / even though we all have calculators).
-In a [previous post](./blog/aot-vs-jit-compilation-in-java), I wrote about how Java code is first "compiled" to bytecode and later interpreted and **executed** by the JVM.
+In a [previous post](/blog/aot-vs-jit-compilation-in-java), I wrote about how Java code is first "compiled" to bytecode and later interpreted and **executed** by the JVM.
 However, I didn't explained how the JVM actually perform the bytecode execution.
 The aim of this article is to fill this gap.
 I going to answer the question: What happens when clicking the "execute" button on your favorite IDE?

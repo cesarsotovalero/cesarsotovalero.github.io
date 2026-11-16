@@ -6,8 +6,8 @@ tags: sarcasm
 keywords: communication, email
 description: |
   Effective academic emailing is a skill every researcher and supervisor needs to master. In this post, I introduce a template-based approach to streamline email communication, enhancing productivity while maintaining professionalism. From initial introductions to assigning tasks and offering feedback, these templates will make managing the flood of academic emails a breeze.
-image: ../img/posts/2020/word_cloud_cover.jpg
-share-img: ../img/posts/2020/word_cloud_cover.jpg
+image: /img/posts/2020/word_cloud_cover.jpg
+share-img: /img/posts/2020/word_cloud_cover.jpg
 show-avatar: false
 toc: true
 author: cesarsotovalero

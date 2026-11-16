@@ -6,8 +6,8 @@ tags: github
 description: |
   This blog post explains how to use Asciinema to create and share beautiful terminal recordings, particularly for enhancing README files on GitHub. It walks through the steps of recording a terminal session with Asciinema, converting the CAST file into a GIF using asciicast2gif for Markdown compatibility, and embedding the recording in web pages using the Asciinema player. The tutorial provides practical commands and examples, making it easy for users to integrate terminal screencasts into their projects.
 keywords: asciinema, readme, improvement, video
-image: ../img/posts/2021/asciinema_cover.jpg
-share-img: ../img/posts/2021/asciinema_cover.jpg
+image: /img/posts/2021/asciinema_cover.jpg
+share-img: /img/posts/2021/asciinema_cover.jpg
 toc: true
 show-avatar: false
 author: cesarsotovalero
@@ -26,9 +26,9 @@ This post will show you step-by-step how to use asciinema to generate beautiful 
 
 First, let's see the help page of asciinema using the wonderful [tldr](https://github.com/tldr-pages/tldr) project:
 
-<link rel="stylesheet" type="text/css" href="../../css/asciinema-player.css"/>
+<link rel="stylesheet" type="text/css" href="/css/asciinema-player.css"/>
 <div id="tldr_asciinema.rec" class="asciinema-player-div"></div>
-<script src="../../js/asciinema-player.min.js"></script>
+<script src="/js/asciinema-player.min.js"></script>
 <script> 
    AsciinemaPlayer.create('../asciinema/tldr_asciinema.rec', document.getElementById('tldr_asciinema.rec'), {
       loop: true,

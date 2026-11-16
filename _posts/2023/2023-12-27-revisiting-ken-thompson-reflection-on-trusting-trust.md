@@ -11,8 +11,8 @@ keywords:
   - Trojan horse
   - Self-replicating code
   - Understanding software supply chain attacks
-image: ../img/posts/2023/2023-12-27/cross_t_centralen_cover.jpg
-share-img: ../img/posts/2023/2023-12-27/cross_t_centralen_cover.jpg
+image: /img/posts/2023/2023-12-27/cross_t_centralen_cover.jpg
+share-img: /img/posts/2023/2023-12-27/cross_t_centralen_cover.jpg
 show-avatar: false
 toc: true
 mathjax: false
@@ -243,7 +243,7 @@ As software complexity increases, so does the sophistication of these attacks.
 Each new feature added to our applications can expand the attack surface, making security an ever-moving target.
 
 In most discussions about cybersecurity I've seen, the focus is mostly on the malicious actors who exploit vulnerabilities in the systems.
-The [software supply chain](../blog/the-software-supply-chain),[^3] in particular, has become a primary target for attackers.
+The [software supply chain](/blog/the-software-supply-chain),[^3] in particular, has become a primary target for attackers.
 Large-scale attacks on software repositories and package managers are becoming treading because of its scale and consequences.
 
 Ken Thompson’s seminal 1984 Turing Award lecture made us ask deep questions:

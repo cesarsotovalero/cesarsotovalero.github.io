@@ -5,8 +5,8 @@ subtitle: My methodology based on the weekly delivery of verifiable artifacts
 tags: science
 description: Academic research is a demanding activity in constant change and evolution. Consequently, tracking the progress of a research project is challenging. This post describes my methodology to address this particular problem.
 keywords: research artifact,verifiable artifacts,scientific career,research methodology,PhD student
-image: ../img/posts/2022/globe_cover.jpg
-share-img: ../img/posts/2022/globe_cover.jpg
+image: /img/posts/2022/globe_cover.jpg
+share-img: /img/posts/2022/globe_cover.jpg
 show-avatar: false
 toc: true
 date: 2022/01/17
@@ -15,7 +15,7 @@ published: true
 ---
 
 Academic research is a very intense and mentally demanding activity subject to constant change and evolution.
-At the beginning of a research project, there is often [no clear path](./blog/book-review-the-phd-grind) to follow.
+At the beginning of a research project, there is often [no clear path](/blog/book-review-the-phd-grind) to follow.
 Consequently, researchers have to figure out a good plan to take in order to achieve their objectives.
 But a research project typically lasts between 3 and 12 months, so there is no infinite ~~money~~ time, and progress should be made and reported consistently.
 This situation usually creates tension and a sense of urgency that most researchers have to live with.
@@ -54,7 +54,7 @@ So, it is not clear what results constitute real progress and what do not.
 </aside>
 
 [//]: # (Practical explanation of the problem)
-Supervisors are typically very busy people. They don’t have the time to analyze all the details of an investigation. Students, on the other hand, are more excited about moving fast because they have more pressure to show up the progress being made. However, research is an iterative process. The goal and scope of an investigation may change over time. This can cause some inexperienced students to feel like they are making something wrong or simply lose their motivation and initial enthusiasm. For example, it is very common to suffer from [writer's block](./blog/how-i-overcome-writer-block-when-preparing-a-research-paper) or imposter syndrome.
+Supervisors are typically very busy people. They don’t have the time to analyze all the details of an investigation. Students, on the other hand, are more excited about moving fast because they have more pressure to show up the progress being made. However, research is an iterative process. The goal and scope of an investigation may change over time. This can cause some inexperienced students to feel like they are making something wrong or simply lose their motivation and initial enthusiasm. For example, it is very common to suffer from [writer's block](/blog/how-i-overcome-writer-block-when-preparing-a-research-paper) or imposter syndrome.
 
 <aside class="quote">
     <em>“Imposter syndrome is a concept describing individuals who are marked by an inability to internalize their accomplishments and a persistent fear of being exposed as a fraud.”</em>
@@ -162,7 +162,7 @@ Good questions are those whose responses consist of a simple “yes” or “no�
 # My Results So Far
 
 This approach has proved to work very well for me so far.
-From a student's position, I have been able to make [substantial progress](./publications) in my research career. As a supervisor, the Friday reports help me to sync quickly on the research topic and guide the student more effectively, which has resulted in some successful [research projects](./service).
+From a student's position, I have been able to make [substantial progress](/publications) in my research career. As a supervisor, the Friday reports help me to sync quickly on the research topic and guide the student more effectively, which has resulted in some successful [research projects](/service).
 
 # References
 

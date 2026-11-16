@@ -12,8 +12,8 @@ keywords:
   - deep learning
   - survey
   - transaction monitoring
-image: ../img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg
-share-img: ../img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg
+image: /img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg
+share-img: /img/posts/2025/2025-04-03/justitiabrunnen_cover.jpg
 show-avatar: false
 toc: true
 mathjax: true

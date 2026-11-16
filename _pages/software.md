@@ -22,11 +22,11 @@ Below is a list of software projects I have created.
       {% for app in site.data.portfolio %}
 	    <div class="tile">
           <a class="applink" href="{{ app.url }}">
-            <img class="appimg" src="../img/logos/{{ app.img }}" />
+            <img class="appimg" src="/img/logos/{{ app.img }}" alt="" />
             <div class="apptitle">{{ app.title }}</div>
             <div class="gh-stats">
-                <img class="gh-stat" src="//img.shields.io/github/stars/{{ app.stars }}" alt="GitHub stars">
-                <img class="gh-stat" src="//img.shields.io/github/forks/{{ app.stars }}" alt="GitHub stars">
+                <img class="gh-stat" src="https://img.shields.io/github/stars/{{ app.stars }}" alt="GitHub stars">
+                <img class="gh-stat" src="https://img.shields.io/github/forks/{{ app.stars }}" alt="GitHub stars">
             </div>
             <div class="appdesc">{{ app.description }}</div>
           </a>

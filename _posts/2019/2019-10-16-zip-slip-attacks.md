@@ -6,8 +6,8 @@ tags: security
 description: |
    The Zip Slip vulnerability is a serious security flaw that exploits unprotected file extraction to perform directory traversal attacks. In this post, I explain how malicious archives exploit weak validation in extraction code, potentially allowing attackers to overwrite sensitive files and execute commands. I also provide an example of the vulnerability in Java, along with a guide for setting up and preventing these attacks in your code.
 keywords: software attack, vulnerability
-image: ../img/posts/2019/zipper_cover.jpg
-share-img: ../img/posts/2019/zipper_cover.jpg
+image: /img/posts/2019/zipper_cover.jpg
+share-img: /img/posts/2019/zipper_cover.jpg
 show-avatar: false
 toc: true
 author: cesarsotovalero

@@ -6,8 +6,8 @@ tags: java
 keywords: Java, producer/consumer, design patterns
 description: |
     The Producer-Consumer pattern is a powerful design strategy used to decouple the production of data from its processing, enabling parallelism and efficient data handling. This post is about how to implement this pattern in Java using the BlockingQueue interface, allowing for easy, thread-safe coordination between producers and consumers. This guide walks through a real-world example, demonstrating how to produce and consume data in parallel with minimal synchronization complexity.
-image: ../img/posts/2020/java_design_patterns_cover.jpg
-share-img: ../img/posts/2020/java_design_patterns_cover.jpg
+image: /img/posts/2020/java_design_patterns_cover.jpg
+share-img: /img/posts/2020/java_design_patterns_cover.jpg
 show-avatar: false
 toc: true
 author: cesarsotovalero

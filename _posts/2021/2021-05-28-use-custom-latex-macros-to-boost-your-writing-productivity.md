@@ -6,8 +6,8 @@ tags: latex
 description: |
   In this blog post, I describe how I use LaTeX macros to boost my writing productivity by automating repetitive tasks such as formatting and number computations. I explain how to create custom commands for common tasks like abbreviations, author notes, formatting and computing numbers, percentages, and ratios, as well as embedding small bar charts within documents. This post also demonstrates how to execute Python scripts within LaTeX documents, offering a powerful way to dynamically update content and automate parts of the writing process.
 keywords: latex, macros, productivity, tutorials
-image: ../img/posts/2021/snail_cover.jpg
-share-img: ../img/posts/2021/snail_cover.jpg
+image: /img/posts/2021/snail_cover.jpg
+share-img: /img/posts/2021/snail_cover.jpg
 toc: true
 show-avatar: false
 author: cesarsotovalero
@@ -96,7 +96,7 @@ I often find very useful defining the `\cesar` and `\todo` commands in all my do
 {% endraw %}
 {% endhighlight %}
 
-For example, the `\cesar{An author note}` produces <img src="../img/posts/2021/authornote.png" height="18" border="0" alt="Comand">, whereas `\todo{A todo note}` produces <img src="../img/posts/2021/todonote.png" height="18" border="0" alt="Comand">.
+For example, the `\cesar{An author note}` produces <img src="/img/posts/2021/authornote.png" height="18" border="0" alt="Comand">, whereas `\todo{A todo note}` produces <img src="/img/posts/2021/todonote.png" height="18" border="0" alt="Comand">.
 
 # Formatting Numbers
 
@@ -236,9 +236,9 @@ A nice way to compare percentages in a graphical manner (especially in tables), 
 {% endhighlight %}
 
 Note that you can use this command in three different flavors:
-- `\ChartSmall[x]{80}{155}` produces <img src="../img/posts/2021/smallshart1.png" height="18" border="0" alt="Comand">
-- `\ChartSmall[q]{80}{155}` produces <img src="../img/posts/2021/smallshart2.png" height="20" border="0" alt="Comand">
-- `\ChartSmall[p]{80}{155}` produces <img src="../img/posts/2021/smallshart3.png" height="20" border="0" alt="Comand">
+- `\ChartSmall[x]{80}{155}` produces <img src="/img/posts/2021/smallshart1.png" height="18" border="0" alt="Comand">
+- `\ChartSmall[q]{80}{155}` produces <img src="/img/posts/2021/smallshart2.png" height="20" border="0" alt="Comand">
+- `\ChartSmall[p]{80}{155}` produces <img src="/img/posts/2021/smallshart3.png" height="20" border="0" alt="Comand">
 
 # Executing Python Scripts in a LaTeX Document 
 
@@ -287,5 +287,5 @@ The output is as following:
 
 LaTeX is not only an awesome tool to create beautiful documents.
 It also provides packages to format and compute numeric values as variables.
-I've used all the custom commands presented in this post to ease the writing process of [my research papers](https://www.cesarsotovalero.net/publications).
+I've used all the custom commands presented in this post to ease the writing process of [my research papers](/publications).
 Since then, dealing with numeric values and percentages has never been easier.

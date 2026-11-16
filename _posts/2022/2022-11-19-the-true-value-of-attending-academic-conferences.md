@@ -10,8 +10,8 @@ keywords:
   - ESEC/FSE experience,
   - research in software engineering,
   - phd life
-image: ../img/posts/2022/fse_cover.jpg
-share-img: ../img/posts/2022/fse_cover.jpg
+image: /img/posts/2022/fse_cover.jpg
+share-img: /img/posts/2022/fse_cover.jpg
 show-avatar: false
 toc: true
 date: 2022/11/19
@@ -87,7 +87,7 @@ At ESEC/FSE, I was able to talk with many researchers from different countries a
 I could not have had such a great experience if I had attended this conference online.
 
 On the other hand, science is perceived today as a competitive endeavor.
-As I've mentioned [before](./blog/how-phd-profiles-are-evaluated), the impact of researchers is often measured by their number of publications and citations in Google Scholar.
+As I've mentioned [before](/blog/how-phd-profiles-are-evaluated), the impact of researchers is often measured by their number of publications and citations in Google Scholar.
 This is unfortunate, but there is not much we can do about it.
 Fortunately, participating at conferences allows us forget about it for a while, and to perceive science as a collaborative endeavor instead.
 

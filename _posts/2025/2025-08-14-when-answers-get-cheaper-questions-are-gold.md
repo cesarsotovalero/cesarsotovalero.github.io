@@ -11,8 +11,8 @@ keywords:
   - behavioral inteview
   - technical inteview
   - job search
-image: ../img/posts/2025/2025-08-14/artpiece-triangle-in-metro-station_cover.jpg
-share-img: ../img/posts/2025/2025-08-14/artpiece-triangle-in-metro-station_cover.jpg
+image: /img/posts/2025/2025-08-14/artpiece-triangle-in-metro-station_cover.jpg
+share-img: /img/posts/2025/2025-08-14/artpiece-triangle-in-metro-station_cover.jpg
 show-avatar: false
 toc: true
 mathjax: true
@@ -56,7 +56,7 @@ Today, I see myself doing a conscious effort at becoming better at the art of as
 This post is about techniques, patterns and anti-patterns I’ve learned over time from this practice.
 Let's dive in!
 
-👉 Check out my compilation of [Job Interview Questions](../files/posts/2025/2025-08-14/tech-interview-questions.md).[^4]
+👉 Check out my compilation of [Job Interview Questions](/files/posts/2025/2025-08-14/tech-interview-questions.md).[^4]
 
 # When to Ask Questions?
 

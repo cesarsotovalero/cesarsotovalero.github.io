@@ -9,8 +9,8 @@ keywords:
   - beautiful Windows terminal,
   - Oh-my-posh,
   - beautiful prompt
-image: ../img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water_cover.png
-share-img: ../img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water_cover.png
+image: /img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water_cover.png
+share-img: /img/posts/2023/2023-10-13/bill-gates-drinks-faeces-water_cover.png
 show-avatar: false
 toc: true
 date: 2023/10/13
@@ -21,7 +21,7 @@ published: true
 I went back to using Windows lately in my current job.[^2]
 But let's be honest, I don't enjoy the change.[^1]
 Anyway, I've to deal with it to do my job right.
-One of the things that I miss the most from my previous setup is my nice [macOS terminal customizations](./blog/my-ultimate-terminal-customizations-for-macos).
+One of the things that I miss the most from my previous setup is my nice [macOS terminal customizations](/blog/my-ultimate-terminal-customizations-for-macos).
 To my knowledge, the Windows native terminal is far behind compared to its Unix counterparts.
 However, with some tweaks and extra tools, I manage to tweak the horrendous `C:\WINDOWS\system32\CMD` into something nicer in terms of L&F and functionality.
 In this blog post, I describe the tools I use to resemble my macOS terminal customizations on Windows.
@@ -135,7 +135,7 @@ function gba {
 }
 {% endhighlight %}
 
-Here's my full [`Profile.ps1`](../files/posts/2023/Profile.ps1) file.
+Here's my full [`Profile.ps1`](/files/posts/2023/Profile.ps1) file.
 
 
 # WSL

@@ -11,8 +11,8 @@ keywords:
     - Tutorial
 description: |
   Deploying a Spring Boot application to Google Cloud Platform (GCP) offers a streamlined way to bring your Java app to life on the web. This post is a step-by-step guide to deploying your application using both Google App Engine and Compute Engine. Whether you're looking for simplicity with App Engine or more control using Compute Engine, this tutorial covers the essential steps to get your Spring Boot app running on GCP, with scalable infrastructure and cost-effective resources.
-image: ../img/posts/2020/2020-07-02/heroes-cover.jpg
-share-img: ../img/posts/2020/2020-07-02/heroes-cover.jpg
+image: /img/posts/2020/2020-07-02/heroes-cover.jpg
+share-img: /img/posts/2020/2020-07-02/heroes-cover.jpg
 show-avatar: false
 toc: true
 author: cesarsotovalero

@@ -11,8 +11,8 @@ keywords:
   - web technologies past and present
   - frontend development
   - javascript
-image: ../img/posts/2024/2024-04-27/infinite-park-cover.jpg
-share-img: ../img/posts/2024/2024-04-27/infinite-park-cover.jpg
+image: /img/posts/2024/2024-04-27/infinite-park-cover.jpg
+share-img: /img/posts/2024/2024-04-27/infinite-park-cover.jpg
 show-avatar: false
 toc: true
 mathjax: false
@@ -281,7 +281,7 @@ end
 ```
 
 The pattern has proven to be incredibly robust over time, despite the processing overhead associated with generating dynamic content in the server (especially under heavy traffic workloads).
-The rise of [microservices and serverless architectures](./blog/design-for-microservices) has further refined server-side rendering, allowing developers to build scalable, efficient web applications.
+The rise of [microservices and serverless architectures](/blog/design-for-microservices) has further refined server-side rendering, allowing developers to build scalable, efficient web applications.
 Today, developers rely on [HTTP cookies](https://en.wikipedia.org/wiki/HTTP_cookie), sessions, and databases to store user data.
 Web technologies like PHP, ASP, Ruby on Rails, Node.js, WordPress, and ASP.NET Core have all embraced server-side rendering due to its powerful capabilities.
 
@@ -665,7 +665,7 @@ JavaScript is (still) the predominant scripting language in modern web browsers.
 However, it has significant limitations due to its inherent language characteristics.
 For example, each JavaScript engine must parse and recompile the code at runtime, which induces substantial overhead and contributing to lengthy website load times.
 Additionally, JavaScript's lack of memory isolation poses security risks by potentially allowing the extraction of information from other processes.
-[As I mentioned before](../blog/the-evolution-of-the-web-from-html-to-webassembly.html#java-applets-and-plugins), attempts to replace or supplement JavaScript with other languages, such as Java Applets, Microsoft ActiveX, and Silverlight, have historically failed due to security concerns and lack of community consensus among browser vendors.
+[As I mentioned before](/blog/the-evolution-of-the-web-from-html-to-webassembly.html#java-applets-and-plugins), attempts to replace or supplement JavaScript with other languages, such as Java Applets, Microsoft ActiveX, and Silverlight, have historically failed due to security concerns and lack of community consensus among browser vendors.
 
 <aside class="quote">
     <em>“WebAssembly is the latest attempt to reduce the pervasiveness of JavaScript on the web.”</em>

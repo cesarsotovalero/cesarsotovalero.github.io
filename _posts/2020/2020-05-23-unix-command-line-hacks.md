@@ -6,8 +6,8 @@ tags: devops
 keywords: unix, command line, scripts, tools
 description: |
   Mastering the Unix command line can drastically boost your productivity and efficiency in software development. In this post, I share a collection of personal notes from the edX course "Unix Tools: Data, Software, and Production Engineering." This guide covers essential command-line tricks, from process automation to data manipulation, that every developer and DevOps engineer should know.
-image: ../img/posts/2020/unix_course_cover.jpg
-share-img: ../img/posts/2020/unix_course_cover.jpg
+image: /img/posts/2020/unix_course_cover.jpg
+share-img: /img/posts/2020/unix_course_cover.jpg
 show-avatar: false
 toc: false
 author: cesarsotovalero

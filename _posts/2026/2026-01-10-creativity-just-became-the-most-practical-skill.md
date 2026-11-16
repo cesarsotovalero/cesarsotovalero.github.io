@@ -11,8 +11,8 @@ keywords:
   - productivity
   - divergent thinking
   - default mode network
-image: ../img/posts/2026/2026-01-10/art-ribbon.jpg
-share-img: ../img/posts/2026/2026-01-10/art-ribbon.jpg
+image: /img/posts/2026/2026-01-10/art-ribbon.jpg
+share-img: /img/posts/2026/2026-01-10/art-ribbon.jpg
 show-avatar: false
 toc: true
 mathjax: true
@@ -36,7 +36,7 @@ He asked a different question:
 That reframing became the [PageRank algorithm](https://en.wikipedia.org/wiki/PageRank), a ranking system built on the web’s hyperlink graph (not just its text).[^1]
 The rest is hitory, PageRank helped shape what later on became the dominat search engine and one of the most prominet companies in the wrold: Google.
 
-But this post is not about the history of web or search engines (I wrote [another post](./blog/the-evolution-of-the-web-from-html-to-webassembly) about it).
+But this post is not about the history of web or search engines (I wrote [another post](/blog/the-evolution-of-the-web-from-html-to-webassembly) about it).
 It’s about another kind of engine.
 The engine behind human breakthroughs, something we call: creativity as perspective-shift.
 

@@ -10,8 +10,8 @@ keywords:
   - software architect,
   - software architect job description,
   - software architect salary
-image: ../img/posts/2021/metro_in_stadium_cover.jpg
-share-img: ../img/posts/2021/metro_in_stadium_cover.jpg
+image: /img/posts/2021/metro_in_stadium_cover.jpg
+share-img: /img/posts/2021/metro_in_stadium_cover.jpg
 show-avatar: false
 toc: true
 author: cesarsotovalero
@@ -20,7 +20,7 @@ published: true
 ---
 
 Programmers and software engineers are in high demand today.
-In particular, those programmers who [adapt to the new technological challenges and evolve their skills](./blog/hermit-programmers-are-dead) are more likely to grow professionally.
+In particular, those programmers who [adapt to the new technological challenges and evolve their skills](/blog/hermit-programmers-are-dead) are more likely to grow professionally.
 A natural career path for experienced engineers to push forward their lifework is transitioning towards a software architect role.
 In a software project, the software architect is the person who has the authority to makes the technical decisions of its architecture and stay responsible for them.
 It doesn't matter how big or small a software project is (or company); the software architect is a key person for the future of the project.

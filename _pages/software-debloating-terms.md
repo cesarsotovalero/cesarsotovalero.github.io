@@ -6,7 +6,7 @@ subtitle: A list of related terms
 description: A list of terms related to software debloating and software specialization.
 tags: debloating
 keywords: software debloating,living review,survey,software engineering
-image: ../img/pages/software-debloating-papers/debloating.png
+image: /img/pages/software-debloating-papers/debloating.png
 ---
 
 <!-- Carbon ads -->

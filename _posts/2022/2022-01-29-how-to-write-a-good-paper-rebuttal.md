@@ -5,8 +5,8 @@ subtitle: A practical guide
 tags: science
 description: My conference paper was rejected. Is it worth writing a rebuttal? This post answers this question and presents practical guidelines to write an excellent rebuttal.
 keywords: academia,conference rebuttal,research paper,experience share,paper rejection
-image: ../img/posts/2022/maxwell_cover.jpg
-share-img: ../img/posts/2022/maxwell_cover.jpg
+image: /img/posts/2022/maxwell_cover.jpg
+share-img: /img/posts/2022/maxwell_cover.jpg
 show-avatar: false
 toc: true
 date: 2022/01/29

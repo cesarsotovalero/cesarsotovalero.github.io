@@ -9,8 +9,8 @@ keywords:
   - computer science research,
   - live after the PhD,
   - job seeking
-image: ../img/posts/2023/2023-03-10/subway_in_red_cover.jpg
-share-img: ../img/posts/2023/2023-03-10/subway_in_red_cover.jpg
+image: /img/posts/2023/2023-03-10/subway_in_red_cover.jpg
+share-img: /img/posts/2023/2023-03-10/subway_in_red_cover.jpg
 show-avatar: false
 toc: true
 date: 2023/02/14
@@ -54,7 +54,7 @@ For PhD students, to be the smallest fish in the food chain can create a lot of 
 
 Financial considerations also play a significant role in the decision to stay or leave academia.
 [PhD salaries for Computer Science students in Sweden](https://academicpositions.com/career-advice/professor-salaries-sweden) are notably lower than those offered by tech companies such as Spotify, Klarna, Telia, or Ericsson.
-In addition, as a PhD student, you may be required to take on [additional responsibilities](./service) that are not directly related to your research, such as teaching, handling workshops, and supervising Master's students.
+In addition, as a PhD student, you may be required to take on [additional responsibilities](/service) that are not directly related to your research, such as teaching, handling workshops, and supervising Master's students.
 In contrast, a career in tech at one of the big companies mentioned before (after graduating in Computer Science) can easily double the salary of a PhD student which much less work overload, making it an attractive alternative.
 
 <aside class="quote">
@@ -97,7 +97,7 @@ Some companies do it on-site, while others do it remotely.
 The only way to do well in this kind of interviews is to practice a lot.
 I would recommend solving at least 30 problems before applying for a job.
 
-I used to participate in [competitive programming](https://en.wikipedia.org/wiki/Competitive_programming) contests [when I was an undergraduate student](./blog/a-starting-guide-to-be-a-good-competitive-programmer).
+I used to participate in [competitive programming](https://en.wikipedia.org/wiki/Competitive_programming) contests [when I was an undergraduate student](/blog/a-starting-guide-to-be-a-good-competitive-programmer).
 So, I was familiar with this kind of problem and just need a few weeks of preparation to revive my dormant skills.
 Still, I solved around 30 problems before applying for a job.
 If you're not familiar with these kinds of problems, you probably need at least one month to prepare yourself.
@@ -123,7 +123,7 @@ The requirements are usually not clear upfront, so your task is to ask questions
 Overall, the main goal of the interviewer is to determine if you have **ground knowledge** about how large software systems work and **experience** at working with such systems.
 
 To be honest, I initially found myself unfamiliar with the intricacies of designing complex, real-world software systems.
-As a researcher, my expertise was more rooted in the realm of algorithms, data structures, and [open-source software development](./software).
+As a researcher, my expertise was more rooted in the realm of algorithms, data structures, and [open-source software development](/software).
 So, my abilities were applied to projects which much smaller scale.
 For me, expanding my knowledge to encompass large, multi-faceted software systems required some learning curve.
 I dedicated a couple of weeks to self-study about practical applications to grasp the complexities and interrelationships inherent to these kinds of systems.
@@ -169,7 +169,7 @@ First, I recommend having a clear idea of your desired technical role, and then 
 For PhD students and researchers, the most common roles are: Software Engineer, Machine Learning Engineer, and Data Scientist.
 Then, you need to find the companies that have open positions for such roles.
 Just pick a company and search for the "Careers" section on their website.
-In my opinion, one of the best [career paths for researchers](./blog/how-phd-profiles-are-evaluated.html#other-career-paths-for-researchers) is to work in an R&D department at a big company.
+In my opinion, one of the best [career paths for researchers](/blog/how-phd-profiles-are-evaluated.html#other-career-paths-for-researchers) is to work in an R&D department at a big company.
 
 I use [Glassdoor](https://www.glassdoor.com) to check out salaries and reviews of companies. Then, I use [LinkedIn](https://www.linkedin.com) to find recruiters and people that work in those companies. I "cold message" them asking for details about open positions. I also applied directly to the job offers that I find interesting and let recruiters known about my applications directly via chat. **I believe the human factor is key to getting an interview**. Being professional and polite is super important, thus I always thank the recruiters for their time and support.
 
