@@ -6,7 +6,7 @@ gem 'observer'
 gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
 
 # Jekyll and the plugins listed under `plugins:` in _config.yml
-gem 'jekyll', '4.3.2'
+gem 'jekyll', '4.3.4'
 gem 'jekyll-feed'
 gem 'jekyll-last-modified-at'
 gem 'jekyll-paginate'
