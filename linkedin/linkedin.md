@@ -18,12 +18,12 @@ published: true
   <a href="/linkedin/by-comments" class="list-filter">By Comments</a>
 </div>
 
-<div class="linkedin-posts-container post-preview">
+<div class="linkedin-posts-container post-preview" data-batch="30">
   {% for post in site.data.linkedin-posts.data.posts %}
   <a href="{{ post.url }}" target="_blank" class="linkedin-post-link">
    <div class="linkedin-post-card">
     <div class="linkedin-post-text">
-      <h3 class="linkedin-post-title">{{ post.text | truncatewords: 15 }}</h3>
+      <h2 class="linkedin-post-title">{{ post.text | truncatewords: 15 }}</h2>
       <p class="linkedin-post-description">
        Posted on {{ post.posted_at.date | date: "%b %-d, %Y" }}
       </p>
@@ -45,12 +45,12 @@ published: true
     {% if post_media %}
     <div class="linkedin-post-thumbnail">
       {% if post.media and post.media.type == 'video' %}
-      <video controls>
+      <video controls preload="none">
        <source src="{{ post_media }}" type="video/mp4">
        Your browser does not support the video tag.
       </video>
       {% else %}
-      <img src="{{ post_media }}" alt="LinkedIn Post Image">
+      <img src="{{ post_media }}" alt="" loading="lazy" decoding="async">
       {% endif %}
     </div>
     {% endif %}
@@ -59,3 +59,5 @@ published: true
   </a>
   {% endfor %}
 </div>
+
+{% include reveal-batches.html %}

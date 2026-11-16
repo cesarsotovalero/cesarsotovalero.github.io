@@ -2,7 +2,7 @@
 permalink: podcasts
 layout: page
 title: Podcasts
-subtitle: "🎙 &#119070;&#119083;&#119042;"
+subtitle: "Podcast episodes I've joined as a guest"
 description: List of podcasts where César Soto Valero has participated.
 published: true
 ---

@@ -2,72 +2,48 @@
 permalink: search
 layout: page
 title: Search
-description: Search this site
-subtitle: 🔎
+description: Search the blog posts and pages of César Soto Valero's website.
+subtitle: Blog posts, talks, research, and pages
 sitemap: false
 noindex: true
+css:
+  - "/pagefind/pagefind-ui.css"
+  - "/css/search.css"
 ---
 
-<div class="search">
-   <form method="get" action="https://www.google.com/search">
+<div id="search" class="site-search"></div>
+
+<!-- Shown when the search index is unavailable (JavaScript off, or a local build without Pagefind). -->
+<div id="search-fallback" class="search-fallback" hidden>
+   <p>Search with Google instead:</p>
+   <form method="get" action="https://www.google.com/search" class="search-fallback-form">
       <input name="sitesearch" value="cesarsotovalero.net" type="hidden"/>
-      <div class="search-container">
-         <input type="text" id="search-query" class="field field-text"
-                onfocus="document.querySelector('.google').style.visibility = 'visible';"
-                name="q" placeholder="Search..." autocomplete="off"/>
-         <button type="submit" class="google" title="Search in this site via Google">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-               <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-            </svg>
-         </button>
-      </div>
+      <label for="search-query" class="sr-only">Search this site</label>
+      <input type="search" id="search-query" name="q" placeholder="Search..." autocomplete="off"/>
+      <button type="submit">Search</button>
    </form>
 </div>
+<noscript>
+   <style>#search-fallback { display: block !important; }</style>
+</noscript>
 
-<style>
-.search {
-   max-width: 600px;
-   margin: 0 auto;
-   padding: 20px;
-}
-
-.search-container {
-   position: relative;
-   display: flex;
-   align-items: center;
-}
-
-.field-text {
-   width: 100%;
-   padding: 12px 50px 12px 15px;
-   border: 2px solid #ddd;
-   border-radius: 25px;
-   font-size: 16px;
-   outline: none;
-   transition: border-color 0.3s ease;
-}
-
-.field-text:focus {
-   border-color: #007bff;
-}
-
-.google {
-   position: absolute;
-   right: 5px;
-   background: none;
-   border: none;
-   cursor: pointer;
-   padding: 8px;
-   border-radius: 50%;
-   visibility: hidden;
-   transition: background-color 0.3s ease;
-}
-
-.google:hover {
-   background-color: #f0f0f0;
-}
-
-.google svg {
-   color: #666;
-}
-</style>
+<script src="/pagefind/pagefind-ui.js" defer onerror="document.getElementById('search-fallback').hidden = false"></script>
+<script>
+// The index in /pagefind/ is built after Jekyll by Pagefind (see .github/workflows/deploy-website.yml).
+window.addEventListener('DOMContentLoaded', function () {
+   if (!window.PagefindUI) {
+      document.getElementById('search-fallback').hidden = false;
+      return;
+   }
+   var ui = new PagefindUI({
+      element: '#search',
+      showSubResults: true,
+      showImages: false,
+      resetStyles: false,
+      autofocus: true,
+      translations: { placeholder: 'Search posts and pages' }
+   });
+   var query = new URLSearchParams(location.search).get('q');
+   if (query) ui.triggerSearch(query);
+});
+</script>

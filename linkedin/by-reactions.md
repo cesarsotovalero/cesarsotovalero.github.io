@@ -51,9 +51,9 @@ noindex: true
         {% assign posts_count = posts_count | plus: 1 %}
       {% endif %}
     {% endfor %}
-    <h3 id="{{ range }}" class="linked-section">
+    <h2 id="{{ range }}" class="linked-section">
       <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;({{ posts_count }} posts)
-    </h3>
+    </h2>
     <div class="post-list">
       {% for post in sorted_posts %}
         {% assign in_range = false %}

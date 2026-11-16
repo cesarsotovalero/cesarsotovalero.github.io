@@ -89,6 +89,21 @@ awards:
   - "MSR Data Showcase Award, 2019"
   - "WASP Certificate of Excellence, 2019"
 
+# Headline numbers on the homepage (keep in sync with `facts`). The talk count is computed from _data/talks.yml.
+stats:
+  - { value: "30+", label: "research papers" }
+  - { value: "1,000+", label: "citations" }
+  - { value: "17,000+", label: "LinkedIn followers" }
+
+# Conferences shown on the homepage ("Spoken at ...").
+venues:
+  - Jfokus
+  - FOSDEM
+  - PyData Global
+  - Data Innovation Summit
+  - Voxxed Days Zürich
+  - ESEC/FSE
+
 facts:
   - "30+ research papers and 1,000+ citations on Google Scholar"
   - "Keynote speaker at Voxxed Days Zürich 2026; speaker at PyData Global, Jfokus, AI-fokus, Data Innovation Summit, FOSDEM, and ESEC/FSE"

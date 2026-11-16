@@ -48,10 +48,10 @@ noindex: true
                 {% assign posts_count = posts_count | plus: 1 %}
           {% endif %}
      {% endfor %}
-     <h3 id="{{- year -}}" class="linked-section">
+     <h2 id="{{- year -}}" class="linked-section">
           <i class="fas fa-calendar-alt" aria-hidden="true"></i>
           &nbsp;{{- year -}}&nbsp;({{ posts_count }} posts)
-     </h3>
+     </h2>
      <div class="post-list">
           {% for post in site.data.linkedin-posts.data.posts %}
           {% assign post_year = post.posted_at.date | date: "%Y" %}

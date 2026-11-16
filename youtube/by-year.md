@@ -49,10 +49,10 @@ noindex: true
                 {% assign videos_count = videos_count | plus: 1 %}
           {% endif %}
      {% endfor %}
-     <h3 id="{{- year -}}" class="linked-section">
+     <h2 id="{{- year -}}" class="linked-section">
           <i class="fas fa-calendar-alt" aria-hidden="true"></i>
           &nbsp;{{- year -}}&nbsp;({{ videos_count }} videos)
-     </h3>
+     </h2>
      <div class="post-list">
           {% for video in site.data.youtube-videos %}
           {% assign video_year = video.snippet.publishedAt | date: "%Y" %}

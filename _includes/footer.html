@@ -1,34 +1,35 @@
-<footer>
-   <div class="container beautiful-jekyll-footer">
-      <div class="row">
-         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div style="text-align: center">
-
-               <ul class="footer-social">
-                  <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><img src="{{ site.baseurl }}/img/icons/linkedin.svg" alt="" width="20" height="20">Connect on LinkedIn</a></li>
-                  <li><a href="https://www.youtube.com/{{ site.author.youtube }}"><img src="{{ site.baseurl }}/img/icons/youtube.svg" alt="" width="20" height="20">Subscribe on YouTube</a></li>
-                  <li><a href="https://github.com/{{ site.author.github }}"><img src="{{ site.baseurl }}/img/icons/github.svg" alt="" width="20" height="20">Follow on GitHub</a></li>
-               </ul>
-            </div>
-
-            <nav class="footer-nav" aria-label="Get in touch">
-               <a href="{{ site.baseurl }}/contact">Contact</a>
-               <a href="{{ site.baseurl }}/book">Book a session</a>
-               <a href="{{ site.baseurl }}/talks/invite-me">Invite me to speak</a>
-               <a href="{{ site.baseurl }}/about-me">About</a>
-               <a href="{{ site.baseurl }}/feed.xml">RSS</a>
-            </nav>
-
-            <div class="flex-container-footer-copyright">
-               <p class="copyright text-muted">
-                  &copy; {{ site.author.name }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;{{ site.time | date: '%Y' }}
-               </p>
-            </div>
-
-
+{% assign nav = site.data.navigation %}
+<footer class="site-footer">
+   <div class="site-footer-inner">
+      <nav class="footer-sitemap" aria-label="Site map">
+         {% for section in nav.sections %}
+         <div class="footer-column">
+            <h2 class="footer-heading"><a href="{{ site.baseurl }}{{ section.url }}">{{ section.title }}</a></h2>
+            <ul>
+               {% for item in section.pages %}
+               <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+               {% endfor %}
+            </ul>
          </div>
-      </div>
+         {% endfor %}
+         <div class="footer-column">
+            <h2 class="footer-heading">{{ nav.footer_contact.title }}</h2>
+            <ul>
+               {% for item in nav.footer_contact.pages %}
+               <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+               {% endfor %}
+            </ul>
+         </div>
+      </nav>
+
+      <ul class="footer-social">
+         <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><img src="{{ site.baseurl }}/img/icons/linkedin.svg" alt="" width="20" height="20">Connect on LinkedIn</a></li>
+         <li><a href="https://www.youtube.com/{{ site.author.youtube }}"><img src="{{ site.baseurl }}/img/icons/youtube.svg" alt="" width="20" height="20">Subscribe on YouTube</a></li>
+         <li><a href="https://github.com/{{ site.author.github }}"><img src="{{ site.baseurl }}/img/icons/github.svg" alt="" width="20" height="20">Follow on GitHub</a></li>
+      </ul>
+
+      <p class="copyright">
+         &copy; {{ site.author.name }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;2018&ndash;{{ site.time | date: '%Y' }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="{{ site.baseurl }}/privacy">Privacy</a>
+      </p>
    </div>
 </footer>
-
-

@@ -3,7 +3,7 @@ permalink: /talks/invite-me
 layout: page
 title: Invite Me
 description: How to invite César Soto Valero to speak at your event.
-subtitle: 📢
+subtitle: "How to invite me to speak at your event"
 published: true
 ---
 

@@ -1,0 +1,272 @@
+/* Blog post extras: reading progress, inline TOC, author box, previous/next links,
+   copy buttons. Colors use the theme variables in main.css. */
+
+/* ---------- Reading progress (just below the sticky navbar) ---------- */
+
+.reading-progress {
+  position: fixed;
+  top: var(--nav-height, 64px);
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  height: 3px;
+  pointer-events: none;
+}
+
+.reading-progress-bar {
+  display: block;
+  height: 100%;
+  background: var(--link-decoration-color);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+/* ---------- Header meta: stay inside the text column ---------- */
+
+.post-heading .container.flex-container {
+  width: auto;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ---------- Inline TOC ("On this page"), for screens without the side TOC ---------- */
+
+.toc-inline {
+  margin: 0 0 36px;
+  padding: 12px 18px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 8px;
+  background: var(--card-background-color);
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+}
+
+.toc-inline summary {
+  color: var(--main-text-color);
+  cursor: pointer;
+  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.toc-inline-list {
+  margin: 10px 0 4px;
+  padding-left: 24px;
+}
+
+.toc-inline-list li {
+  margin: 0;
+  padding: 3px 0;
+}
+
+.toc-inline-list a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.toc-inline-list a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--link-decoration-color);
+}
+
+/* main.css shows the fixed side TOC from 1526px up. */
+@media only screen and (min-width: 1526px) {
+  .toc-inline {
+    display: none;
+  }
+}
+
+/* ---------- Pull quotes: stay inside the viewport ---------- */
+
+@media only screen and (max-width: 1599px) {
+  .blog-post .quote {
+    margin-right: 0;
+  }
+}
+
+/* ---------- Author box ---------- */
+
+.post-author {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin: 56px 0 32px;
+  padding: 28px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 12px;
+  background: var(--card-background-color);
+}
+
+.post-author-photo {
+  flex-shrink: 0;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.post-author-eyebrow {
+  margin: 0 0 2px;
+  color: var(--post-meta-index-color);
+  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.post-author-name {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+.post-author-name a {
+  text-decoration: none;
+}
+
+.post-author-bio {
+  margin: 0 0 16px;
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.post-author-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.post-button,
+.post-button:hover,
+.post-button:focus {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid var(--main-text-color);
+  border-radius: 6px;
+  color: var(--main-text-color);
+  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.post-button--primary,
+.post-button--primary:hover,
+.post-button--primary:focus {
+  border-color: #042742;
+  background: #042742;
+  color: #fff;
+}
+
+[data-theme="dark"] .post-button--primary,
+[data-theme="dark"] .post-button--primary:hover,
+[data-theme="dark"] .post-button--primary:focus {
+  border-color: #e8edf3;
+  background: #e8edf3;
+  color: #042742;
+}
+
+@media (max-width: 560px) {
+  .post-author {
+    flex-direction: column;
+    padding: 22px;
+  }
+}
+
+/* ---------- Previous / next posts ---------- */
+
+.post-pager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 0 0 40px;
+}
+
+.post-pager-link {
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 8px;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.post-pager-link:hover {
+  border-color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.post-pager-link--next {
+  grid-column: 2;
+  text-align: right;
+}
+
+.post-pager-label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--post-meta-index-color);
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.post-pager-title {
+  display: block;
+  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+@media (max-width: 560px) {
+  .post-pager {
+    grid-template-columns: 1fr;
+  }
+
+  .post-pager-link--next {
+    grid-column: 1;
+  }
+}
+
+/* ---------- Copy buttons ---------- */
+
+.blog-post div.highlighter-rouge,
+.blog-post figure.highlight {
+  position: relative;
+}
+
+.code-copy {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+  padding: 4px 10px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 6px;
+  background: var(--main-background-color);
+  color: var(--main-text-color);
+  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.code-copy:hover,
+.code-copy:focus-visible {
+  opacity: 1;
+}
+
+.share-section .btn-copy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: auto;
+  padding: 0 12px;
+  border: 1px solid var(--panel-border-color);
+  background: none;
+  color: var(--main-text-color);
+  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+}

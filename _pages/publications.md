@@ -2,7 +2,7 @@
 permalink: publications
 layout: page
 title: Publications
-subtitle: 📰
+subtitle: "Peer-reviewed papers, theses, and preprints"
 description: List of academic papers published by César Soto Valero.
 published: true
 ---

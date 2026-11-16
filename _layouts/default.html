@@ -2,12 +2,11 @@
 common-css:
 - "/css/bootstrap.min.css"
 - "/css/main.css"
-- "/css/academicons.css"
+- "/css/site-nav.css"
 common-ext-css:
-- "https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+- "/css/fontawesome/css/all.min.css" # self-hosted Font Awesome Free 5.12.0
 common-js:
-- "/js/jquery-1.11.2.min.js"
-- "/js/bootstrap.min.js"
+- "/js/jquery-3.7.1.min.js"
 - "/js/main.js"
 - "/js/flowtype.js"
 - "/js/scroll-to-top.js"
@@ -20,9 +19,11 @@ common-js:
 
 <body>
 
+<a class="skip-link" href="#main">Skip to main content</a>
+
 {% include nav.html %}
 
-<div class="container main-content" role="main">
+<div class="container main-content" role="main" id="main" tabindex="-1">
   {{ content }}
 </div>
 

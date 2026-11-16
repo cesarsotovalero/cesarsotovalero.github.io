@@ -1,0 +1,14 @@
+{% assign profile = site.data.profile %}
+<section class="post-author" aria-labelledby="post-author-name">
+   <img class="post-author-photo" src="{{ site.avatar }}" alt="" width="88" height="88" loading="lazy" decoding="async">
+   <div class="post-author-text">
+      <p class="post-author-eyebrow">Written by</p>
+      <h2 id="post-author-name" class="post-author-name"><a href="{{ site.baseurl }}/about-me">{{ site.author.name }}</a></h2>
+      <p class="post-author-bio">{{ profile.short_summary }}</p>
+      <div class="post-author-actions">
+         <a class="post-button post-button--primary" href="{{ site.baseurl }}/contact">Get in touch</a>
+         <a class="post-button" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">Follow on LinkedIn</a>
+         <a class="post-button" href="{{ site.baseurl }}/book">Book a session</a>
+      </div>
+   </div>
+</section>

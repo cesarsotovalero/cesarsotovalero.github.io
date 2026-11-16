@@ -12,7 +12,7 @@
 
    <meta charset="utf-8"/>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    {% if page.url == "/" %}
    {% assign doc_title = site.title | append: " · Applied AI for Finance" %}
    {% elsif page.title and page.title contains site.title %}
@@ -33,9 +33,6 @@
 
    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ site.url }}/feed.xml"/>
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
 
    <!--   favicons -->
    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/redketchup/apple-touch-icon.png">

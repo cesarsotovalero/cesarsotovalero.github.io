@@ -2,7 +2,7 @@
 permalink: races
 layout: page
 title: Races
-subtitle: 🏃
+subtitle: "Results of my running races in Stockholm"
 description: Table of results in races of César Soto Valero.
 published: true
 ---

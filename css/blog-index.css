@@ -1,0 +1,226 @@
+/* Blog index: topic filters, latest posts, archive by year. */
+
+.blog-intro {
+  margin: 0 0 20px;
+  text-align: center;
+  color: var(--post-meta-index-color);
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* ---------- Topic filters ---------- */
+
+.blog-filters ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-filters li {
+  margin: 0;
+}
+
+.blog-filter,
+.blog-filter-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 999px;
+  color: var(--main-text-color);
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.blog-filter:hover,
+.blog-filter-more:hover {
+  border-color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.blog-filter[aria-pressed="true"] {
+  border-color: #042742;
+  background: #042742;
+  color: #fff;
+}
+
+[data-theme="dark"] .blog-filter[aria-pressed="true"] {
+  border-color: #e8edf3;
+  background: #e8edf3;
+  color: #042742;
+}
+
+.blog-filter-count {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.blog-filter-more {
+  border-style: dashed;
+}
+
+.blog-filter-status {
+  min-height: 1.5em;
+  margin: 12px 0 0;
+  text-align: center;
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* ---------- Sections ---------- */
+
+.blog-section-title {
+  margin: 32px 0 16px;
+  font-size: 26px;
+}
+
+.blog-meta {
+  display: block;
+  color: var(--post-meta-index-color);
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ---------- Latest posts ---------- */
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-card {
+  margin: 0;
+}
+
+.blog-card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 10px;
+  background: var(--card-background-color);
+  color: var(--main-text-color);
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.blog-card a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.35);
+}
+
+.blog-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.blog-card a:hover img {
+  filter: none;
+}
+
+.blog-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px 16px;
+}
+
+.blog-card-title {
+  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.blog-card-subtitle {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* ---------- Archive ---------- */
+
+.blog-year-title {
+  margin: 28px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--panel-border-color);
+  font-size: 22px;
+}
+
+.blog-rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-row {
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--panel-border-color);
+}
+
+.blog-row:last-child {
+  border-bottom: 0;
+}
+
+.blog-row-title {
+  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.blog-row-title:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--link-decoration-color);
+}
+
+.blog-row-subtitle {
+  display: block;
+  margin-top: 2px;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.blog-row .blog-meta {
+  margin-top: 4px;
+}
+
+.blog-row-tag {
+  color: var(--post-meta-index-color);
+}
+
+.blog-subscribe {
+  margin-top: 48px;
+}
+
+@media (max-width: 760px) {
+  .blog-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-card a {
+    flex-direction: row;
+  }
+
+  .blog-card img {
+    width: 112px;
+    aspect-ratio: 1;
+  }
+}

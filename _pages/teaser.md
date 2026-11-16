@@ -4,6 +4,8 @@ title: Teaser
 permalink: /teaser.html
 subtitle: "César Soto Valero"
 description: "Helping engineers learn, build, and grow."
+googlefonts:
+  - "Rouge+Script&display=swap"
 ---
 
 <link rel="stylesheet" href="/css/links-page.css">

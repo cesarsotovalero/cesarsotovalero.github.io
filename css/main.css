@@ -91,13 +91,6 @@ h6 {
   /*text-transform: capitalize;*/
 }
 
-.blog-post {
-  counter-reset: h1counter h2counter h3counter h4counter;
-}
-
-.blog-post {
-  counter-reset: h1counter;
-}
 
 h1 {
   margin-top: 40px;
@@ -107,16 +100,6 @@ h1 {
   font-size: 36px;
 }
 
-.blog-post h1 {
-  counter-reset: h2counter;
-}
-
-.blog-post h1:before {
-  counter-increment: h1counter;
-  content: counter(h1counter) ".\00a0\00a0";
-  font-size: 32px;
-  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 
 @media only screen and (max-width: 450px) {
 
@@ -126,10 +109,6 @@ h1 {
     font-size: 28px;
   }
 
-  .blog-post h1:before {
-    content: counter(h1counter) ".\0000a0";
-    font-size: 26px;
-  }
 }
 
 h2 {
@@ -140,17 +119,6 @@ h2 {
   font-size: 28px;
 }
 
-.blog-post h2 {
-  counter-reset: h3counter;
-}
-
-
-.blog-post h2:before {
-  counter-increment: h2counter;
-  content: counter(h1counter) "." counter(h2counter) ".\00a0\00a0";
-  font-size: 24px;
-  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 
 
 @media only screen and (max-width: 450px) {
@@ -161,11 +129,6 @@ h2 {
     font-size: 22px;
   }
 
-  .blog-post h2:before h3:before {
-    counter-increment: h2counter;
-    content: counter(h1counter) "." counter(h2counter) ".\0000a0";
-    font-size: 20px;
-  }
 }
 
 h3 {
@@ -175,11 +138,6 @@ h3 {
   counter-reset: h4counter;
 }
 
-.blog-post h3:before {
-  counter-increment: h3counter;
-  content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) ".\00a0\00a0";
-  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 
 
 @media only screen and (max-width: 450px) {
@@ -190,6 +148,74 @@ h3 {
     font-size: 22px;
   }
 
+}
+
+/* Post sections. The post title is the only h1 (see _plugins/post_headings.rb),
+   so sections start at h2; they keep the sizes the h1-h3 sections had before.
+   Numbering: 1. / 1.1. / 1.1.1. */
+.blog-post {
+  counter-reset: h2counter h3counter h4counter;
+}
+
+.blog-post h2 {
+  font-size: 36px;
+  counter-reset: h3counter;
+}
+
+.blog-post h2:before {
+  counter-increment: h2counter;
+  content: counter(h2counter) ".\00a0\00a0";
+  font-size: 32px;
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.blog-post h3 {
+  font-size: 28px;
+  counter-reset: h4counter;
+}
+
+.blog-post h3:before {
+  counter-increment: h3counter;
+  content: counter(h2counter) "." counter(h3counter) ".\00a0\00a0";
+  font-size: 24px;
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.blog-post h4 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  letter-spacing: -0.25px;
+  font-size: 24px;
+}
+
+.blog-post h4:before {
+  counter-increment: h4counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".\00a0\00a0";
+  font-family: "Concourse T4", "Linux Biolinum Capitals", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* "Footnotes" is not a numbered section. */
+.blog-post h2#footnotes:before {
+  content: none;
+  counter-increment: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .blog-post h2 {
+    margin-top: 25px;
+    font-size: 28px;
+  }
+
+  .blog-post h2:before {
+    content: counter(h2counter) ".\00a0";
+    font-size: 26px;
+  }
+
+  .blog-post h3,
+  .blog-post h4 {
+    margin-top: 20px;
+    font-size: 22px;
+  }
 }
 
 a {
@@ -207,6 +233,86 @@ a:focus {
   text-decoration-thickness: 0.1em;
   text-decoration-color: var(--link-decoration-color);
   -webkit-text-decoration-color: var(--link-decoration-color);
+}
+
+/* ---------- Accessibility ---------- */
+
+/* Skip link: hidden until focused with the keyboard. */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -100px;
+  z-index: 2000;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #042742;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 8px;
+  color: #fff;
+}
+
+/* The skip-link target receives focus programmatically; no outline needed there. */
+#main:focus {
+  outline: none;
+}
+
+/* Visible keyboard focus everywhere (Bootstrap 3's default is faint on the cream background). */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+  outline: 3px solid #4a7bd0;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Theme toggle is a <button>; make it look like the other navbar items.
+   Desktop: same height as the nav links (still above the 24px WCAG minimum).
+   Mobile drawer: 44px touch target. */
+.theme-toggle {
+  min-width: 32px;
+  min-height: 27px;
+  padding: 0 8px;
+  border: 0;
+  background: none;
+  color: var(--main-text-color);
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.drawer-nav-list .theme-toggle {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* "See all" links: larger touch target without changing their look. */
+.index-see-all a {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -332,7 +438,7 @@ em {
 
 .post-categories {
   /*background-color: gray;*/
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
   margin-right: 4px;
@@ -343,7 +449,7 @@ em {
 
 .post-categories-tags {
   /*background-color: gray;*/
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
   margin-right: 4px;
@@ -958,11 +1064,11 @@ dialog.drawer-panel[open]::backdrop {
 }
 
 
-#theme-toggle:hover .fa-moon {
+.theme-toggle:hover .fa-moon {
   color: var(--main-background-color);
 }
 
-#theme-toggle:hover .fa-sun {
+.theme-toggle:hover .fa-sun {
   color: var(--main-text-color);
 }
 
@@ -1312,7 +1418,7 @@ footer .theme-by {
   font-size: 16px;
   line-height: 20px;
   text-align: left;
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-style: normal;
 }
 
@@ -1674,7 +1780,7 @@ p.post-meta {
 }
 
 #full-tags-list .tag-entry .entry-date {
-  color: #808080;
+  color: var(--post-meta-index-color);
   font-size: 16px;
 }
 
@@ -2361,6 +2467,11 @@ input.gsc-input,
   padding: 4px 10px;
 }
 
+/* Profile icons follow the theme (dark icons on light, light icons on dark). */
+#list-of-social-icons img {
+  filter: invert(var(--media-icon-color));
+}
+
 .fa-stack {
   img {
     filter: invert(var(--media-icon-color));
@@ -2583,7 +2694,7 @@ ul {
 }
 
 .tag-code {
-  color: #808080;
+  color: var(--post-meta-index-color);
   border-radius: 6px;
   /*text-decoration: underline;*/
   font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2774,7 +2885,7 @@ ul {
 }
 
 .blog-tags {
-  color: #808080;
+  color: var(--post-meta-index-color);
 }
 
 /* LAZINESS BLUR EFFECT FOR IMAGES */
@@ -3453,11 +3564,15 @@ a.btn {
 }
 
 
-/* Hide the header */
+/* Page titles stay visible on phones, in a smaller size. */
 @media screen and (max-width: 450px) {
-  .header-hiddable {
-    visibility: hidden;
-    display: none;
+  .header-hiddable .page-heading h1 {
+    margin-top: 0;
+    font-size: 38px;
+  }
+
+  .header-hiddable .page-heading .page-subheading {
+    font-size: 19px;
   }
 }
 
@@ -3515,6 +3630,10 @@ a.btn {
 }
 
 #related-posts .title {
+  /* Same look as the former h4. */
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.2px;
   margin: 10px 0 10px 0;
   color: var(--main-text-color);
 }
@@ -3907,6 +4026,21 @@ pre .language-mermaid {
   color: var(--main-text-color);
 }
 
+/* LinkedIn/YouTube archive headings are h2 (right under the page h1); keep their previous h3 size. */
+.linkedin-post-title,
+.youtube-video-title,
+.linked-section {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 450px) {
+  .linkedin-post-title,
+  .youtube-video-title,
+  .linked-section {
+    font-size: 22px;
+  }
+}
+
 .youtube-video-description {
   font-size: 1.5rem;
   color: var(--post-meta-index-color);
@@ -4031,7 +4165,7 @@ html[data-theme="light"] {
   --navbar-color: #f0f0f0;
   --footer-color: #f0f0f0;
   --inline-code-color: #f0f0f0;
-  --post-meta-index-color: #808080;
+  --post-meta-index-color: #616161;
   --blockquote-color: darkgreen;
   /*--blockquote-background-color: #f1f1f1;*/
   --blockquote-background-color: #FFEDDE;
@@ -4111,23 +4245,4 @@ html[data-theme="dark"] #footnotediv {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
-}
-
-/* Footer links to the contact paths, shown on every page. */
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4px 24px;
-  margin: 16px 0 8px;
-  font-size: 16px;
-}
-
-.footer-nav a {
-  display: inline-block;
-  padding: 10px 0;
-  color: var(--main-text-color);
-  text-decoration: underline;
-  text-decoration-color: var(--link-decoration-color);
-  text-underline-offset: 4px;
 }

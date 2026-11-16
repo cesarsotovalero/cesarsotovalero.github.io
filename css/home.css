@@ -1,0 +1,266 @@
+/* Homepage: hero, highlights, and closing call to action.
+   The card sections (.index-section) are styled in landing.css. */
+
+.landing-page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.landing-page .index-section {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ---------- Hero ---------- */
+
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 48px;
+  padding: 24px 0 40px;
+}
+
+.home-eyebrow {
+  margin: 0 0 8px;
+  color: var(--post-meta-index-color);
+  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.home-title {
+  margin: 0 0 12px;
+  color: var(--main-text-color);
+  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+.home-role {
+  margin: 0 0 16px;
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+.home-tagline {
+  max-width: 34em;
+  margin: 0 0 28px;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.home-button,
+.home-button:hover,
+.home-button:focus {
+  display: inline-flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 0 22px;
+  border: 1px solid var(--main-text-color);
+  border-radius: 6px;
+  color: var(--main-text-color);
+  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-button:hover {
+  background: rgba(127, 127, 127, 0.1);
+}
+
+.home-button--primary,
+.home-button--primary:hover,
+.home-button--primary:focus {
+  border-color: #042742;
+  background: #042742;
+  color: #fff;
+}
+
+[data-theme="dark"] .home-button--primary,
+[data-theme="dark"] .home-button--primary:hover,
+[data-theme="dark"] .home-button--primary:focus {
+  border-color: #e8edf3;
+  background: #e8edf3;
+  color: #042742;
+}
+
+.home-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.home-profiles li {
+  margin: 0;
+}
+
+.home-profiles a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.home-profiles a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--link-decoration-color);
+  text-underline-offset: 4px;
+}
+
+.home-profiles img {
+  width: 20px;
+  height: 20px;
+  filter: invert(var(--media-icon-color));
+}
+
+.home-hero-portrait img {
+  display: block;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  box-shadow: 0 0 0 6px var(--main-background-color), 0 0 0 7px var(--panel-border-color);
+}
+
+/* ---------- Highlights ---------- */
+
+.home-proof {
+  margin: 0 0 56px;
+  padding: 20px 0;
+  border-top: 1px solid var(--panel-border-color);
+  border-bottom: 1px solid var(--panel-border-color);
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+}
+
+.home-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+}
+
+.home-stats li {
+  margin: 0;
+}
+
+.home-stats strong {
+  display: block;
+  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-venues {
+  margin: 16px 0 0;
+  color: var(--post-meta-index-color);
+  font-size: 16px;
+}
+
+/* ---------- Closing call to action ---------- */
+
+.home-cta {
+  margin: 24px 0 16px;
+  padding: 40px;
+  border-radius: 12px;
+  background: var(--card-background-color);
+  border: 1px solid var(--panel-border-color);
+  text-align: center;
+}
+
+.home-cta h2 {
+  margin: 0 0 8px;
+  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 32px;
+}
+
+.home-cta p {
+  max-width: 36em;
+  margin: 0 auto 24px;
+}
+
+.home-cta .home-actions {
+  justify-content: center;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 760px) {
+  .landing-page {
+    padding: 0 16px;
+  }
+
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-top: 8px;
+    text-align: center;
+  }
+
+  .home-hero-portrait {
+    order: -1;
+    justify-self: center;
+  }
+
+  .home-hero-portrait img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .home-title {
+    font-size: 40px;
+  }
+
+  .home-role {
+    font-size: 18px;
+  }
+
+  .home-tagline {
+    font-size: 19px;
+  }
+
+  .home-actions,
+  .home-profiles {
+    justify-content: center;
+  }
+
+  .home-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+
+  .home-venues {
+    text-align: center;
+  }
+
+  .home-cta {
+    padding: 28px 20px;
+  }
+}

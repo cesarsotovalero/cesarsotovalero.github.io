@@ -3,9 +3,8 @@ layout: page
 permalink: /blog/this-month
 title: Blog Posts This Month
 description: "All the blog posts written this month by Cesar Soto Valero"
+pagefind: false
 ---
-
-{% include subscribe.html %}
 
 {% assign current_month_name = 'now' | date: "%B" %}
 {% assign current_year = 'now' | date: "%Y" %}
@@ -31,12 +30,6 @@ description: "All the blog posts written this month by Cesar Soto Valero"
 {% assign all_tags = all_tags | concat: post.tags %}
 {% endfor %}
 {% assign unique_tags = all_tags | uniq %}
-
-<div class="list-filters">
-   <a href="/blog/this-month" class="list-filter"> This Month ({{ current_month_post_count }})</a>
-   <a href="/blog/all" class="list-filter">All ({{ published_posts.size }})</a>
-   <a href="/blog/tags" class="list-filter">Tags ({{ unique_tags.size }})</a>
-</div>
 
 <div id="full-tags-list">
    <h3 id="{{- current_year -}}" class="linked-section">

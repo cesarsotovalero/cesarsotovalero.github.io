@@ -2,7 +2,7 @@
 permalink: software
 layout: page
 title: Software
-subtitle: 💻
+subtitle: "Open-source tools I've built"
 description: List of software projects created by César Soto Valero.
 published: true
 ---

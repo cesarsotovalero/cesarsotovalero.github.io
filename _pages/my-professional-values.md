@@ -2,7 +2,7 @@
 permalink: my-professional-values
 layout: page
 title: My Professional Values
-subtitle: 💼
+subtitle: "The work and environment I'm looking for"
 description: Professional values of César Soto Valero.
 published: true
 ---

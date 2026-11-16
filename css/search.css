@@ -1,0 +1,55 @@
+/* Search page: Pagefind UI themed with the site colors and fonts. */
+
+.site-search {
+  --pagefind-ui-scale: 0.9;
+  --pagefind-ui-primary: #042742;
+  --pagefind-ui-text: var(--main-text-color);
+  --pagefind-ui-background: var(--main-background-color);
+  --pagefind-ui-border: var(--panel-border-color);
+  --pagefind-ui-tag: var(--card-background-color);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 8px;
+  --pagefind-ui-font: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 40px;
+}
+
+[data-theme="dark"] .site-search {
+  --pagefind-ui-primary: #e8edf3;
+}
+
+.site-search .pagefind-ui__result-title a {
+  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+}
+
+.site-search .pagefind-ui__result-excerpt {
+  font-family: "Century Supra T4", Georgia, serif;
+}
+
+.site-search mark {
+  background: rgba(143, 150, 206, 0.35);
+  color: inherit;
+}
+
+.search-fallback-form {
+  display: flex;
+  gap: 8px;
+}
+
+.search-fallback-form input[type="search"] {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #767676;
+  border-radius: 8px;
+  background: var(--card-background-color);
+  color: var(--main-text-color);
+  font-size: 18px;
+}
+
+.search-fallback-form button {
+  padding: 0 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #042742;
+  color: #fff;
+  font-size: 17px;
+}
