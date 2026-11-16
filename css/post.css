@@ -11,6 +11,17 @@
   z-index: 1001;
   height: 3px;
   pointer-events: none;
+  transition: transform 0.25s ease;
+}
+
+html.nav-hidden .reading-progress {
+  transform: translateY(calc(-1 * var(--nav-height, 64px)));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-progress {
+    transition: none;
+  }
 }
 
 .reading-progress-bar {

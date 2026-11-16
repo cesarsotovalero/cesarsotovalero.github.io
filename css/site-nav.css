@@ -44,6 +44,18 @@ html {
   background: var(--navbar-color);
   border-bottom: 1px solid var(--nav-border);
   margin-bottom: 30px; /* same space below the bar as the previous navbar */
+  transition: transform 0.25s ease;
+}
+
+/* Slides out of view while scrolling down (toggled in nav.html); keyboard focus brings it back. */
+html.nav-hidden .site-header:not(:focus-within) {
+  transform: translateY(-100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
 }
 
 .site-nav {

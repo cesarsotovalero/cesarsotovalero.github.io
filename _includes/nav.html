@@ -70,4 +70,38 @@
       links[j].addEventListener('click', function() { menu.close(); });
    }
 })();
+
+// Hide the header while scrolling down and show it again on scroll up.
+(function() {
+   var root = document.documentElement;
+   var header = document.querySelector('.site-header');
+   if (!header) return;
+
+   var lastY = window.scrollY;
+   var ticking = false;
+   var THRESHOLD = 8;
+
+   function update() {
+      ticking = false;
+      var y = window.scrollY;
+      var delta = y - lastY;
+      if (y <= header.offsetHeight) {
+         root.classList.remove('nav-hidden');
+      } else if (delta > THRESHOLD) {
+         root.classList.add('nav-hidden');
+      } else if (delta < -THRESHOLD) {
+         root.classList.remove('nav-hidden');
+      } else {
+         return;
+      }
+      lastY = y;
+   }
+
+   window.addEventListener('scroll', function() {
+      if (!ticking) {
+         ticking = true;
+         window.requestAnimationFrame(update);
+      }
+   }, { passive: true });
+})();
 </script>

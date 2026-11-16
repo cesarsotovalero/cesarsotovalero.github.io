@@ -40,6 +40,12 @@ body {
   font-family: "Equity Text A", "Georgia", "Times New Roman", serif;
 }
 
+/* Equity's bold looks heavy, so bold text in the reading text keeps Century Supra. */
+.blog-post :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li) :where(strong, b),
+.container[role=main]:not(.main-content) :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li) :where(strong, b) {
+  font-family: "Century Supra T4", "Georgia", "Times New Roman", serif;
+}
+
 /* Footnotes keep their own smaller size. */
 .blog-post :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li, .footnotes *),
 .container[role=main]:not(.main-content) :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li, .footnotes *) {
