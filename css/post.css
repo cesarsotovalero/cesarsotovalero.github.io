@@ -153,3 +153,16 @@ html.nav-hidden .reading-progress {
     grid-column: 1;
   }
 }
+
+/* ---------- Header tags: each one opens the blog list filtered by that topic ---------- */
+
+.blog-tags .post-tag {
+  color: inherit;
+}
+
+/* ---------- Diagrams: a soft frame from the theme instead of a hard gray line ---------- */
+
+.blog-post img[style*="border"] {
+  border-color: var(--panel-border-color) !important; /* overrides the inline 1px #808080 */
+  border-radius: 8px;
+}

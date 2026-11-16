@@ -4265,7 +4265,7 @@ html[data-theme="light"] {
   --main-text-color: hsl(0, 0%, 10%);
   --main-link-color: #012639;
   --link-decoration-color: #8F96CE;
-  --footnote-link-color: blue;
+  --footnote-link-color: var(--main-link-color);
   --button-background-color: #444;
   --panel-border-color: #f1f1f1;
   --panel-box-shadow: rgba(234, 234, 234, 0.7686274509803922);
@@ -4287,7 +4287,7 @@ html[data-theme="dark"] {
   --main-text-color: hsl(0, 0%, 85%);
   --main-link-color: hsl(0, 0%, 100%);
   --link-decoration-color: #8F96CE;
-  --footnote-link-color: lightblue;
+  --footnote-link-color: var(--main-link-color);
   --button-background-color: hsl(0, 0%, 99%);
   --panel-border-color: rgb(53, 53, 60);
   --panel-bg: rgb(39, 40, 43);

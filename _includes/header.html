@@ -135,7 +135,7 @@
                               <!-- <a href="/tag/{{ tag }}">{{ tag }}</a>-->
                                  {% endfor %}
                               {% else %}
-                                 {{ page.tags | join: ", " }}
+                                 {% for tag in page.tags %}<a class="post-tag" href="{{ site.baseurl }}/blog?tag={{ tag | url_encode }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
                               {% endif %}
                         </span>
                         </div>
