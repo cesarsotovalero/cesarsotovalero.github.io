@@ -84,13 +84,17 @@ jobs:
           enable_cache: true # caches vendor/bundle for speed
           prettier: false # skip extra formatting
         env:
-          GISCUS_DATA_REPO_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
-          GISCUS_GISCUS_DATA_CATEGORY_ID: ${{ secrets.GISCUS_DATA_REPO_ID }}
           YOUTUBE_API_TOKEN: ${{ secrets.YOUTUBE_API_TOKEN }}
           GMAIL: ${{ secrets.CESAR_PERSONAL_GMAIL }}
 
       - name: Validate generated site smoke checks
         run: python3 scripts/validate_site_smoke.py
+
+      - name: Check pages for JavaScript errors
+        run: |
+          npm install --no-save --no-package-lock playwright@1.49.1
+          npx playwright install --with-deps chromium
+          node scripts/check_console_errors.js _site
 
       - name: Validate critical pages (internal links/images)
         run: |

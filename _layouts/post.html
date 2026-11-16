@@ -82,11 +82,10 @@ https://css-tricks.com/sticky-table-of-contents-with-scrolling-active-states/
       const observer = new IntersectionObserver(entries => {
          entries.forEach(entry => {
             const id = entry.target.getAttribute('id');
-            if (entry.intersectionRatio > 0) {
-               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.add('active');
-            } else {
-               document.querySelector(`#toc li a[href="#${id}"]`).parentElement.classList.remove('active');
-            }
+            // Only headings listed in the TOC have a link; skip the others.
+            const link = document.querySelector(`#toc li a[href="#${CSS.escape(id)}"]`);
+            if (!link) return;
+            link.parentElement.classList.toggle('active', entry.intersectionRatio > 0);
          });
       });
 
