@@ -2315,6 +2315,10 @@ td.gutter {
 }
 
 .share-section {
+  --share-bg: #ecebe4;
+  --share-bg-hover: #dddcd3;
+  --share-fg: #6e6e6e;
+  --share-fg-hover: #1a1a1a;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -2323,32 +2327,51 @@ td.gutter {
   list-style: none;
 }
 
+[data-theme="dark"] .share-section {
+  --share-bg: #33363d;
+  --share-bg-hover: #42464f;
+  --share-fg: #a9adb5;
+  --share-fg-hover: #f2f2f2;
+}
+
 .share-section li {
+  display: flex; /* keeps every circle on the same line, whatever its icon */
   margin: 0;
+}
+
+.share-icon,
+.share-icon:hover,
+.share-icon:focus,
+.share-icon:visited {
+  text-decoration: none;
 }
 
 .share-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  flex: none;
+  width: 36px;
+  height: 36px;
   padding: 0;
-  border: 1px solid var(--panel-border-color);
+  border: 0;
   border-radius: 50%;
-  background: transparent;
-  color: var(--post-meta-index-color);
+  background: var(--share-bg);
+  color: var(--share-fg);
+  line-height: 0;
   cursor: pointer;
-  opacity: 0.8;
-  transition: color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease, transform 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
 }
 
 .share-icon:hover,
 .share-icon:focus-visible {
-  color: var(--main-text-color);
-  border-color: currentColor;
-  opacity: 1;
-  text-decoration: none;
+  background: var(--share-bg-hover);
+  color: var(--share-fg-hover);
+}
+
+.share-icon:focus-visible {
+  outline: 2px solid var(--share-fg-hover);
+  outline-offset: 2px;
 }
 
 .share-icon:active {
