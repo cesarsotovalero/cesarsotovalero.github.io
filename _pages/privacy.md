@@ -20,7 +20,10 @@ See the [GitHub General Privacy Statement](https://docs.github.com/site-policy/p
 # Analytics
 
 {% assign analytics = site.analytics %}
-{% if analytics.provider and analytics.provider != "" %}
+{% if site.gtm and site.gtm != "" %}
+The site measures visits with Google Analytics, loaded through Google Tag Manager ([how Google uses this data](https://policies.google.com/technologies/partner-sites)).
+Google Analytics sets its own cookies (`_ga` and `_ga_*`) to tell visitors and visits apart.
+{% elsif analytics.provider and analytics.provider != "" %}
 The site measures visits with {% case analytics.provider %}{% when "ga4" %}Google Analytics{% when "plausible" %}Plausible Analytics{% when "goatcounter" %}GoatCounter{% else %}{{ analytics.provider }}{% endcase %}.
 {% else %}
 The site doesn't use any analytics service at the moment.
