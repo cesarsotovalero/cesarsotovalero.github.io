@@ -193,6 +193,7 @@
 .blog-row-subtitle {
   display: block;
   margin-top: 2px;
+  font-family: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
   font-size: 17px;
   line-height: 1.4;
 }
@@ -203,6 +204,11 @@
 
 .blog-row-tag {
   color: var(--post-meta-index-color);
+}
+
+.blog-row-tag .fa-tag {
+  font-size: 0.8em;
+  opacity: 0.7;
 }
 
 /* ---------- Round thumbnails, as on the earlier blog list ---------- */

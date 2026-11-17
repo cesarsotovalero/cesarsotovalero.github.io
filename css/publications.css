@@ -7,6 +7,8 @@
 .pub-profiles {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 4px 20px;
   margin: 0 0 28px;
   padding: 0;
@@ -130,20 +132,76 @@
   margin: 0;
 }
 
-.pub-links a {
-  display: inline-block;
-  padding: 2px 10px;
+/* `li a[href]` outranks main.css's per-URL icon rules, whose background icon is replaced by ::before below. */
+.pub-links li a[href] {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 10px 2px 8px;
   border: 1px solid var(--panel-border-color);
   border-radius: 6px;
+  background-image: none;
   color: var(--main-text-color);
   font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   text-decoration: none;
 }
 
-.pub-links a:hover,
-.pub-links a:focus-visible {
+/* Icons: full-color logos use background-image; one-color logos use a mask filled with currentColor
+   (or a brand color), so they stay visible in dark mode. Generic link icon is the fallback. */
+.pub-links a::before {
+  content: "";
+  flex: none;
+  width: 16px;
+  height: 16px;
+  background: currentColor;
+  -webkit-mask: url(/img/icons/link.svg) center / contain no-repeat;
+  mask: url(/img/icons/link.svg) center / contain no-repeat;
+}
+
+.pub-links a[href^="https://github.com/"]::before {
+  -webkit-mask-image: url(/img/icons/github.svg);
+  mask-image: url(/img/icons/github.svg);
+}
+
+.pub-links a[href^="https://medium.com/"]::before {
+  -webkit-mask-image: url(/img/icons/medium.svg);
+  mask-image: url(/img/icons/medium.svg);
+}
+
+.pub-links a[href^="https://arxiv.org/"]::before {
+  background: #b31b1b;
+  -webkit-mask-image: url(/img/icons/academicons-1.9.4/svg/arxiv.svg);
+  mask-image: url(/img/icons/academicons-1.9.4/svg/arxiv.svg);
+}
+
+.pub-links a[href*="doi.org/"]::before,
+.pub-links a[href*="zenodo.org/"]::before,
+.pub-links a[href$=".pdf"]::before,
+.pub-links a[href$=".pptx"]::before,
+.pub-links a[href^="https://youtu.be/"]::before,
+.pub-links a[href^="https://docs.google.com/"]::before {
+  width: 18px;
+  height: 18px;
+  background: url(/img/icons/DOI_logo.svg) center / contain no-repeat;
+  -webkit-mask: none;
+  mask: none;
+}
+
+.pub-links a[href$=".pdf"]::before { background-image: url(/img/icons/pdf20px.svg); }
+.pub-links a[href$=".pptx"]::before { background-image: url(/img/icons/pptx20px.svg); }
+.pub-links a[href^="https://youtu.be/"]::before { background-image: url(/img/icons/youtube-play20px.svg); }
+.pub-links a[href^="https://docs.google.com/"]::before { background-image: url(/img/icons/docs20px.svg); }
+
+/* Zenodo records and Zenodo DOIs (10.5281/zenodo.*). */
+.pub-links a[href*="zenodo.org/"]::before,
+.pub-links a[href*="10.5281/zenodo"]::before {
+  background-image: url(/img/icons/zenodo.svg);
+}
+
+.pub-links li a[href]:hover,
+.pub-links li a[href]:focus-visible {
   border-color: var(--accent-soft-border, var(--main-text-color));
-  background: var(--accent-soft, transparent);
+  background-color: var(--accent-soft, transparent);
   text-decoration: none;
 }

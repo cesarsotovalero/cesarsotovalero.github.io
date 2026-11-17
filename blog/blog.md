@@ -51,7 +51,7 @@ pagefind: false
             <a class="blog-row-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
             {% if post.subtitle %}<span class="blog-row-subtitle">{{ post.subtitle }}</span>{% endif %}
             <span class="blog-meta">
-               <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time> · {% if words < 180 %}1{% else %}{{ words | divided_by: 180 }}{% endif %} min read{% for tag in post.tags %} · <a class="blog-row-tag" href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% endfor %}
+               <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time> · {% if words < 180 %}1{% else %}{{ words | divided_by: 180 }}{% endif %} min read{% for tag in post.tags %} · <a class="blog-row-tag" href="{{ site.baseurl }}/tag/{{ tag }}"><i class="fas fa-tag" aria-hidden="true"></i> {{ tag }}</a>{% endfor %}
             </span>
             </div>
          </li>
