@@ -104,10 +104,11 @@
    min-height: 44px;
    padding: 10px 24px;
    border: 0;
-   border-radius: 6px;
+   border-radius: 999px;
    background: #042742;
    color: #fff;
-   font-size: 17px;
+   font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+   font-size: 18px;
    font-weight: 600;
    cursor: pointer;
 }
