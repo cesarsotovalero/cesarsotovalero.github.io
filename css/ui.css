@@ -233,6 +233,34 @@ footer.site-footer {
     margin-top: 32px;
   }
 
+  /* Post header: the Ko-fi button and the share icons on one line. */
+  .post-actions {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .post-actions #share-section {
+    flex: none;
+  }
+
+  #share-section a.kofi-button {
+    padding: 2px 10px !important;
+  }
+
+  .post-actions .share-section {
+    gap: 5px;
+    min-width: 0;
+  }
+
+  .post-actions .share-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .post-actions .share-icon svg {
+    transform: scale(0.88);
+  }
+
   /* Page header: a little more air between the subtitle and the section tabs. */
   .section-tabs {
     margin-top: 4px;
@@ -275,5 +303,21 @@ footer.site-footer {
     display: flex;
     flex-wrap: wrap;
     gap: 0 18px;
+  }
+}
+
+/* Very narrow phones (360px): slightly smaller share circles so they still fit beside the Ko-fi button. */
+@media (max-width: 374px) {
+  .post-actions .share-section {
+    gap: 4px;
+  }
+
+  .post-actions .share-icon {
+    width: 27px;
+    height: 27px;
+  }
+
+  .post-actions .share-icon svg {
+    transform: scale(0.8);
   }
 }
