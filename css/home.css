@@ -191,8 +191,7 @@
 }
 
 /* Small capitals, like the eyebrow above the name. */
-.home-stats span,
-.home-venues-label {
+.home-stats span {
   font-family: "Century Supra C4", "Century Supra T4", Georgia, serif;
   font-size: 15px;
   letter-spacing: 0.05em;
@@ -211,29 +210,15 @@
 }
 
 @media (hover: hover) {
-  .home-stats a:hover span,
-  .home-venues-label:hover {
+  .home-stats a:hover span {
     color: var(--main-text-color);
     text-decoration-color: var(--link-decoration-color);
   }
 }
 
-.home-stats a:focus-visible span,
-.home-venues-label:focus-visible {
+.home-stats a:focus-visible span {
   color: var(--main-text-color);
   text-decoration-color: var(--link-decoration-color);
-}
-
-.home-venues {
-  margin: 18px 0 0;
-  color: var(--post-meta-index-color);
-  font-size: 17px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.home-venues-label {
-  margin-right: 6px;
 }
 
 /* ---------- Closing call to action ---------- */
@@ -338,7 +323,6 @@
   font-style: italic;
 }
 
-.home-venues,
 .home-cta p {
   font-family: "Equity Text A", "Century Supra T4", Georgia, serif;
 }

@@ -252,8 +252,7 @@ footer.site-footer {
     display: none;
   }
 
-  /* The profile row and venue list repeat what the menu and footer offer. */
-  .home-venues,
+  /* The profile row repeats what the menu and footer offer. */
   .home-profiles li:nth-child(n + 4) {
     display: none;
   }
