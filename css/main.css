@@ -605,60 +605,69 @@ a[href^="https://www.webofscience.com"] {
   padding-left: 30px;
 }
 
-/* File and video links: one family of thin line icons in the link's own color,
-   so they stay quiet and follow the light and dark themes. Only inside page content. */
+/* File and video links: solid icons (Font Awesome Free, and the YouTube logo used in the footer),
+   filled with the link's own color so they follow the light and dark themes. Only inside page content. */
 :where(#main) a:where(:not(.pub-links a)):is([href$=".pdf"], [href$=".pptx"], [href$=".ppt"], [href$=".doc"], [href$=".docx"],
   [href$=".png"], [href$=".jpg"], [href$=".jpeg"], [href$=".gif"], [href$=".webp"], [href$=".jfif"],
   [href^="https://docs.google.com/"], [href^="https://youtu.be/"], [href^="https://mirrors.dotsrc.org/fosdem/"])::before {
   content: "";
   display: inline-block;
-  width: 0.95em;
-  height: 0.95em;
+  width: 1em;
+  height: 1em;
   margin-right: 0.3em;
-  vertical-align: -0.12em;
+  vertical-align: -0.14em;
   background-color: currentColor;
-  opacity: 0.6;
-  -webkit-mask: url(/img/icons/mono/file-text.svg) center / contain no-repeat;
-  mask: url(/img/icons/mono/file-text.svg) center / contain no-repeat;
+  -webkit-mask: url(/img/icons/solid/file-lines.svg) center / contain no-repeat;
+  mask: url(/img/icons/solid/file-lines.svg) center / contain no-repeat;
+}
+
+:where(#main) a:where(:not(.pub-links a))[href$=".pdf"]::before {
+  -webkit-mask-image: url(/img/icons/solid/file-pdf.svg);
+  mask-image: url(/img/icons/solid/file-pdf.svg);
 }
 
 :where(#main) a:where(:not(.pub-links a)):is([href$=".pptx"], [href$=".ppt"], [href^="https://docs.google.com/presentation/"])::before {
-  -webkit-mask-image: url(/img/icons/mono/presentation.svg);
-  mask-image: url(/img/icons/mono/presentation.svg);
+  -webkit-mask-image: url(/img/icons/solid/file-powerpoint.svg);
+  mask-image: url(/img/icons/solid/file-powerpoint.svg);
+}
+
+:where(#main) a:where(:not(.pub-links a)):is([href$=".doc"], [href$=".docx"], [href^="https://docs.google.com/document/"])::before {
+  -webkit-mask-image: url(/img/icons/solid/file-word.svg);
+  mask-image: url(/img/icons/solid/file-word.svg);
 }
 
 :where(#main) a:where(:not(.pub-links a)):is([href$=".png"], [href$=".jpg"], [href$=".jpeg"], [href$=".gif"], [href$=".webp"], [href$=".jfif"])::before {
-  -webkit-mask-image: url(/img/icons/mono/image.svg);
-  mask-image: url(/img/icons/mono/image.svg);
+  -webkit-mask-image: url(/img/icons/solid/file-image.svg);
+  mask-image: url(/img/icons/solid/file-image.svg);
 }
 
 :where(#main) a:where(:not(.pub-links a)):is([href^="https://youtu.be/"], [href^="https://mirrors.dotsrc.org/fosdem/"])::before {
-  -webkit-mask-image: url(/img/icons/mono/video.svg);
-  mask-image: url(/img/icons/mono/video.svg);
+  width: 1.15em;
+  -webkit-mask-image: url(/img/icons/solid/youtube.svg);
+  mask-image: url(/img/icons/solid/youtube.svg);
 }
 
-/* Color emoji used as link icons (globe, link, picture, books) get the same line icons. */
+/* Color emoji used as link icons (globe, link, picture, books) get the same solid icons. */
 :where(#main) a:has(> img.emoji:is([title=":globe_with_meridians:"], [title=":link:"], [title=":framed_picture:"], [title=":books:"]))::before {
   content: "";
   display: inline-block;
-  width: 0.95em;
-  height: 0.95em;
+  width: 1em;
+  height: 1em;
   margin-right: 0.1em;
-  vertical-align: -0.12em;
+  vertical-align: -0.14em;
   background-color: currentColor;
-  opacity: 0.6;
-  -webkit-mask: url(/img/icons/mono/link.svg) center / contain no-repeat;
-  mask: url(/img/icons/mono/link.svg) center / contain no-repeat;
+  -webkit-mask: url(/img/icons/solid/link.svg) center / contain no-repeat;
+  mask: url(/img/icons/solid/link.svg) center / contain no-repeat;
 }
 
 :where(#main) a:has(> img.emoji[title=":framed_picture:"])::before {
-  -webkit-mask-image: url(/img/icons/mono/image.svg);
-  mask-image: url(/img/icons/mono/image.svg);
+  -webkit-mask-image: url(/img/icons/solid/file-image.svg);
+  mask-image: url(/img/icons/solid/file-image.svg);
 }
 
 :where(#main) a:has(> img.emoji[title=":books:"])::before {
-  -webkit-mask-image: url(/img/icons/mono/file-text.svg);
-  mask-image: url(/img/icons/mono/file-text.svg);
+  -webkit-mask-image: url(/img/icons/solid/book.svg);
+  mask-image: url(/img/icons/solid/book.svg);
 }
 
 #main a > img.emoji:is([title=":globe_with_meridians:"], [title=":link:"], [title=":framed_picture:"], [title=":books:"]) {
