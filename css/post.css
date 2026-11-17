@@ -160,9 +160,27 @@ html.nav-hidden .reading-progress {
   color: inherit;
 }
 
-/* ---------- Diagrams: a soft frame from the theme instead of a hard gray line ---------- */
+/* ---------- Footnote markers: the site's soft link underline, so they read as links ---------- */
+
+.blog-post a.footnote {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  text-decoration-color: color-mix(in srgb, currentColor 38%, transparent);
+}
+
+.blog-post a.footnote:hover,
+.blog-post a.footnote:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+/* ---------- Diagrams: a soft warm frame instead of a hard gray line ---------- */
 
 .blog-post img[style*="border"] {
-  border-color: var(--panel-border-color) !important; /* overrides the inline 1px #808080 */
+  border-color: #dcd9cc !important; /* overrides the inline 1px #808080 */
   border-radius: 8px;
+}
+
+[data-theme="dark"] .blog-post img[style*="border"] {
+  border-color: #4a4d55 !important;
 }
