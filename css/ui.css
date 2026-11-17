@@ -233,6 +233,21 @@ footer.site-footer {
     margin-top: 32px;
   }
 
+  /* "On this page" box: a slimmer closed bar (post.css loads later, hence details.toc-inline). */
+  details.toc-inline {
+    padding: 6px 14px;
+    font-size: 16px;
+  }
+
+  details.toc-inline > summary {
+    line-height: 1.5;
+  }
+
+  details.toc-inline > summary::after {
+    border-top-width: 8px;
+    border-inline-width: 6px;
+  }
+
   /* Post header: the Ko-fi button and the share icons on one line. */
   .post-actions {
     flex-wrap: nowrap;
