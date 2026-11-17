@@ -233,6 +233,11 @@ footer.site-footer {
     margin-top: 32px;
   }
 
+  /* Page header: a little more air between the subtitle and the section tabs. */
+  .section-tabs {
+    margin-top: 4px;
+  }
+
   .project-grid .index-list {
     grid-template-columns: repeat(2, 1fr);
   }
