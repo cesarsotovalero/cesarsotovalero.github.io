@@ -10,7 +10,7 @@ Don't copy or reuse them from this repository.
 | Operator Mono (typeface by Hoefler&Co) | `fonts/used-fonts/Operator Mono/` | Commercial typeface licensed to the site's author; not covered by this repository's license |
 | Other typefaces under `fonts/` (Gelica, Inter, Special Elite, and the families in `fonts/unused-fonts/`) | `fonts/` | Licensed to the site's author or under their own open licenses; not covered by this repository's license |
 | JetBrains Mono | `fonts/used-fonts/JetBrainsMono/` | SIL Open Font License 1.1 (`OFL.txt`) |
-| Font Awesome Free 5.12.0 | `css/fontawesome/` (or `use.fontawesome.com`) | Icons CC BY 4.0, fonts SIL OFL 1.1, code MIT (`css/fontawesome/LICENSE.txt`) |
+| Font Awesome Free 5.12.0, and 6.7.2 SVG icons | `css/fontawesome/`, `img/icons/solid/` (except `youtube.svg`) | Icons CC BY 4.0, fonts SIL OFL 1.1, code MIT (`css/fontawesome/LICENSE.txt`) |
 | JavaScript and CSS libraries (jQuery, Bootstrap 3, anchor.js, lazysizes, Mermaid, D3, asciinema-player, ...) | `js/`, `css/` | Their own licenses, mostly MIT; see the header of each file |
 | Logos of conferences, publishers, universities and companies | `img/` | Trademarks of their respective owners |
 | Published papers and certificates | `files/` | Copyright of their publishers or issuers |

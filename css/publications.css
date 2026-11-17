@@ -184,20 +184,20 @@
   mask: none;
 }
 
-/* Files and videos: the same one-color line icons as the rest of the site. */
+/* Files and videos: the same solid icons as the rest of the site. */
 .pub-links a[href$=".pdf"]::before {
-  -webkit-mask-image: url(/img/icons/mono/file-text.svg);
-  mask-image: url(/img/icons/mono/file-text.svg);
+  -webkit-mask-image: url(/img/icons/solid/file-pdf.svg);
+  mask-image: url(/img/icons/solid/file-pdf.svg);
 }
 
 .pub-links a:is([href$=".pptx"], [href^="https://docs.google.com/"])::before {
-  -webkit-mask-image: url(/img/icons/mono/presentation.svg);
-  mask-image: url(/img/icons/mono/presentation.svg);
+  -webkit-mask-image: url(/img/icons/solid/file-powerpoint.svg);
+  mask-image: url(/img/icons/solid/file-powerpoint.svg);
 }
 
 .pub-links a[href^="https://youtu.be/"]::before {
-  -webkit-mask-image: url(/img/icons/mono/video.svg);
-  mask-image: url(/img/icons/mono/video.svg);
+  -webkit-mask-image: url(/img/icons/solid/youtube.svg);
+  mask-image: url(/img/icons/solid/youtube.svg);
 }
 
 /* Zenodo records and Zenodo DOIs (10.5281/zenodo.*). */
