@@ -34,8 +34,7 @@ pagefind: false
 </nav>
 <p class="blog-filter-status" role="status" aria-live="polite"></p>
 
-<section class="blog-archive" aria-labelledby="blog-archive-title">
-   <h2 id="blog-archive-title" class="blog-section-title">All posts</h2>
+<section class="blog-archive">
    {% assign by_year = posts | group_by_exp: "post", "post.date | date: '%Y'" %}
    {% for year in by_year %}
    <div class="blog-year">

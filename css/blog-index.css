@@ -139,11 +139,6 @@
 
 /* ---------- Sections ---------- */
 
-.blog-section-title {
-  margin: 32px 0 16px;
-  font-size: 26px;
-}
-
 .blog-meta {
   display: block;
   color: var(--post-meta-index-color);
