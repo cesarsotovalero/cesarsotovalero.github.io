@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: landing
 title: Book a session with César Soto Valero
 description: "Book a one-to-one session with César Soto Valero: career mentorship, an AI engineer mock interview, or an AI advisory session. From €79."
 keywords: book a session, mentorship, AI engineer mock interview, AI advisory, career advice, César Soto Valero
@@ -16,11 +16,6 @@ css:
 {% assign utm = 'utm_source=website&utm_medium=booking-page&utm_campaign=coaching-launch&utm_content=' %}
 
 <section class="booking-page">
-  <nav class="booking-nav" aria-label="Site">
-    <a href="{{ site.baseurl }}/">&larr; cesarsotovalero.net</a>
-    <a href="{{ site.baseurl }}/about-me">About me</a>
-  </nav>
-
   <header class="booking-hero">
     <div class="booking-hero-text">
       <p class="booking-eyebrow">{{ booking.hero.eyebrow }}</p>

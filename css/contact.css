@@ -18,23 +18,43 @@
    height: 100%;
    padding: 18px 20px;
    border: 1px solid var(--panel-border-color);
-   border-radius: 8px;
+   border-radius: 10px;
    background: var(--card-background-color);
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
    color: var(--main-text-color);
    text-decoration: none;
-   transition: border-color 0.15s ease, transform 0.15s ease;
+   transition: border-color 0.15s ease, background-color 0.15s ease,
+               box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .contact-paths a:hover,
 .contact-paths a:focus-visible {
-   border-color: var(--main-text-color);
+   border-color: var(--accent-soft-border);
+   background: var(--accent-soft);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
    transform: translateY(-2px);
 }
 
 .contact-paths strong {
-   display: block;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
    font-size: 1.05em;
    margin-bottom: 4px;
+}
+
+.contact-paths strong .fa-arrow-right {
+   flex-shrink: 0;
+   font-size: 0.8em;
+   opacity: 0.6;
+   transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.contact-paths a:hover strong .fa-arrow-right,
+.contact-paths a:focus-visible strong .fa-arrow-right {
+   opacity: 1;
+   transform: translateX(3px);
 }
 
 .contact-paths span {
@@ -42,6 +62,15 @@
    font-size: 0.8em;
    line-height: 1.5;
    opacity: 0.85;
+}
+
+html[data-theme="dark"] .contact-paths a {
+   box-shadow: none;
+}
+
+html[data-theme="dark"] .contact-paths a:hover,
+html[data-theme="dark"] .contact-paths a:focus-visible {
+   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .contact-form {
@@ -87,7 +116,8 @@
 .contact-field input:focus-visible,
 .contact-field select:focus-visible,
 .contact-field textarea:focus-visible,
-.contact-submit:focus-visible {
+.contact-submit:focus-visible,
+.contact-paths a:focus-visible {
    outline: 3px solid #4a7bd0;
    outline-offset: 2px;
 }
@@ -104,10 +134,11 @@
    min-height: 44px;
    padding: 10px 24px;
    border: 0;
-   border-radius: 6px;
+   border-radius: 999px;
    background: #042742;
    color: #fff;
-   font-size: 17px;
+   font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+   font-size: 18px;
    font-weight: 600;
    cursor: pointer;
 }

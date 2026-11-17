@@ -14,19 +14,19 @@ I read every message. Pick the option that fits best, or write to me directly wi
 <ul class="contact-paths">
    <li>
       <a href="/talks/invite-me">
-         <strong>Invite me to speak</strong>
+         <strong>Invite me to speak <i class="fas fa-arrow-right" aria-hidden="true"></i></strong>
          <span>Conferences, meetups, and company events. What to include in your invitation.</span>
       </a>
    </li>
    <li>
       <a href="/book">
-         <strong>Book a session</strong>
+         <strong>Book a session <i class="fas fa-arrow-right" aria-hidden="true"></i></strong>
          <span>Career mentorship, AI engineer mock interviews, or AI advisory. From €79.</span>
       </a>
    </li>
    <li>
       <a href="/collaborations">
-         <strong>Collaborate on research</strong>
+         <strong>Collaborate on research <i class="fas fa-arrow-right" aria-hidden="true"></i></strong>
          <span>Software engineering, supply chain security, and applied AI for finance.</span>
       </a>
    </li>

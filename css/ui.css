@@ -180,9 +180,64 @@ a:hover .thumb-round,
   filter: none;
 }
 
+/* ---------- Space above the footer: the same as the space below the navbar ----------
+   The footer keeps a fixed margin, and the last block of each page drops its own
+   bottom margin or padding, so the gap no longer depends on which element ends the page. */
+
+footer.site-footer {
+  margin-top: 48px;
+}
+
+.container > .row > [class*="col-"] > :last-child,
+.container > .row > [class*="col-"] > :last-child > :last-child,
+.container > .row > [class*="col-"] > :last-child > :last-child > :last-child,
+.landing-page > :last-child,
+.booking-page > :last-child {
+  margin-bottom: 0;
+}
+
+/* Deeper endings: footnotes (ol > li > p) and the related-post cards under a post. */
+.footnotes:last-child ol,
+.footnotes:last-child li:last-child,
+.footnotes:last-child li:last-child > p:last-child,
+#related-posts .col-sm-4:last-child .panel,
+.not-found > :last-child {
+  margin-bottom: 0;
+}
+
+#related-posts:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  /* Side by side, the related-post cards need no space below them. */
+  #related-posts .panel {
+    margin-bottom: 0;
+  }
+}
+
+.blog-row:last-child,
+.pub:last-child,
+.booking-footer {
+  padding-bottom: 0;
+}
+
+.landing-page .booking-page {
+  padding-bottom: 0;
+}
+
 /* ---------- Phones ---------- */
 
 @media (max-width: 760px) {
+  footer.site-footer {
+    margin-top: 32px;
+  }
+
+  /* Page header: a little more air between the subtitle and the section tabs. */
+  .section-tabs {
+    margin-top: 4px;
+  }
+
   .project-grid .index-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -202,8 +257,7 @@ a:hover .thumb-round,
     display: none;
   }
 
-  /* The profile row and venue list repeat what the menu and footer offer. */
-  .home-venues,
+  /* The profile row repeats what the menu and footer offer. */
   .home-profiles li:nth-child(n + 4) {
     display: none;
   }
