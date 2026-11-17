@@ -371,10 +371,13 @@ html {
 
 /* --- Footer --- */
 
+/* Reset the site-footer styles that main.css applies to every <footer>. */
 .booking-footer {
-  padding-top: 32px;
+  padding: 32px 0 0;
   margin-top: 52px;
   border-top: 1px solid var(--bk-line);
+  font-size: inherit;
+  background-color: transparent;
 }
 
 .booking-disclaimer {
