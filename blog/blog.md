@@ -38,7 +38,7 @@ pagefind: false
    {% assign by_year = posts | group_by_exp: "post", "post.date | date: '%Y'" %}
    {% for year in by_year %}
    <div class="blog-year">
-      <h3 class="blog-year-title">{{ year.name }}</h3>
+      <h3 class="blog-year-title">{{ year.name }} ({{ year.size }})</h3>
       <ul class="blog-rows">
          {% for post in year.items %}
          {% assign words = post.content | number_of_words %}

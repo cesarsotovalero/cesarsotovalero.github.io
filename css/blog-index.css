@@ -165,7 +165,6 @@
 .blog-row {
   margin: 0;
   padding: 12px 0;
-  border-bottom: 1px solid var(--panel-border-color);
 }
 
 .blog-row:last-child {
