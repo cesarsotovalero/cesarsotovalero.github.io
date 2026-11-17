@@ -176,11 +176,7 @@
 }
 
 .pub-links a[href*="doi.org/"]::before,
-.pub-links a[href*="zenodo.org/"]::before,
-.pub-links a[href$=".pdf"]::before,
-.pub-links a[href$=".pptx"]::before,
-.pub-links a[href^="https://youtu.be/"]::before,
-.pub-links a[href^="https://docs.google.com/"]::before {
+.pub-links a[href*="zenodo.org/"]::before {
   width: 18px;
   height: 18px;
   background: url(/img/icons/DOI_logo.svg) center / contain no-repeat;
@@ -188,10 +184,21 @@
   mask: none;
 }
 
-.pub-links a[href$=".pdf"]::before { background-image: url(/img/icons/pdf20px.svg); }
-.pub-links a[href$=".pptx"]::before { background-image: url(/img/icons/pptx20px.svg); }
-.pub-links a[href^="https://youtu.be/"]::before { background-image: url(/img/icons/youtube-play20px.svg); }
-.pub-links a[href^="https://docs.google.com/"]::before { background-image: url(/img/icons/docs20px.svg); }
+/* Files and videos: the same one-color line icons as the rest of the site. */
+.pub-links a[href$=".pdf"]::before {
+  -webkit-mask-image: url(/img/icons/mono/file-text.svg);
+  mask-image: url(/img/icons/mono/file-text.svg);
+}
+
+.pub-links a:is([href$=".pptx"], [href^="https://docs.google.com/"])::before {
+  -webkit-mask-image: url(/img/icons/mono/presentation.svg);
+  mask-image: url(/img/icons/mono/presentation.svg);
+}
+
+.pub-links a[href^="https://youtu.be/"]::before {
+  -webkit-mask-image: url(/img/icons/mono/video.svg);
+  mask-image: url(/img/icons/mono/video.svg);
+}
 
 /* Zenodo records and Zenodo DOIs (10.5281/zenodo.*). */
 .pub-links a[href*="zenodo.org/"]::before,
