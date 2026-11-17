@@ -34,24 +34,23 @@ pagefind: false
 </nav>
 <p class="blog-filter-status" role="status" aria-live="polite"></p>
 
-<section class="blog-archive" aria-labelledby="blog-archive-title">
-   <h2 id="blog-archive-title" class="blog-section-title">All posts</h2>
+<section class="blog-archive">
    {% assign by_year = posts | group_by_exp: "post", "post.date | date: '%Y'" %}
    {% for year in by_year %}
    <div class="blog-year">
-      <h3 class="blog-year-title">{{ year.name }}</h3>
+      <h3 class="blog-year-title">{{ year.name }} ({{ year.size }})</h3>
       <ul class="blog-rows">
          {% for post in year.items %}
          {% assign words = post.content | number_of_words %}
          <li class="blog-row" data-tags="{{ post.tags | join: ' ' }}">
             {% if post.image %}
-            <img class="thumb-round blog-row-thumb" src="{{ post.image | thumbnail }}" alt="" width="64" height="64" loading="lazy" decoding="async">
+            <img class="thumb-round blog-row-thumb" src="{{ post.image | thumbnail }}" alt="" width="80" height="80" loading="lazy" decoding="async">
             {% endif %}
             <div class="blog-row-text">
             <a class="blog-row-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
             {% if post.subtitle %}<span class="blog-row-subtitle">{{ post.subtitle }}</span>{% endif %}
             <span class="blog-meta">
-               <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time> · {% if words < 180 %}1{% else %}{{ words | divided_by: 180 }}{% endif %} min read{% for tag in post.tags %} · <a class="blog-row-tag" href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% endfor %}
+               <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time> · {% if words < 180 %}1{% else %}{{ words | divided_by: 180 }}{% endif %} min read{% for tag in post.tags %} · <a class="blog-row-tag" href="{{ site.baseurl }}/tag/{{ tag }}"><i class="fas fa-tag" aria-hidden="true"></i> {{ tag }}</a>{% endfor %}
             </span>
             </div>
          </li>

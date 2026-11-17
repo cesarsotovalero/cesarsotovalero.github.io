@@ -152,11 +152,11 @@ html.nav-hidden .site-header:not(:focus-within) {
   margin-left: 8px;
   padding: 0 18px;
   border: 1px solid var(--accent-soft-border);
-  border-radius: 6px;
+  border-radius: 999px;
   background: transparent;
   color: var(--accent-text);
-  font-family: var(--nav-font);
-  font-size: 17px;
+  font-family: "Concourse T4", "Helvetica Neue", Helvetica, Arial, sans-serif; /* the same as .home-button */
+  font-size: 18px;
   font-weight: 600;
   text-decoration: none;
 }

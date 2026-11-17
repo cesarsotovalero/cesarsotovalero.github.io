@@ -25,13 +25,13 @@ published: true
 ---
 
 Every quarter, a corporate borrower sends its bank a PDF.
-Somewhere around page 12, there is a small table with a number in brackets: **(486)**.
+Somewhere around page 12, there is a small table with a number in brackets: `(486)`.
 That is EBITDA, in thousands of euros, and it is negative.
 A credit analyst copies it into a spreadsheet, recomputes net debt to EBITDA, and checks the result against the covenant in the loan agreement.
 If the ratio breaches the threshold, the bank and the borrower are about to have a difficult conversation.
 
 Now imagine an AI system reads that PDF instead.
-It sees "(486)" and stores `486`.
+It sees "`(486)`" and stores `486`.
 The sign has flipped.
 The leverage ratio looks healthy, the covenant passes, and nobody notices.
 
@@ -41,7 +41,7 @@ The leverage ratio looks healthy, the covenant passes, and nobody notices.
 
 Most document-AI demos show a chatbot answering questions about a PDF.
 That is nice, but it is not the problem banks have most of the time.
-The everyday problem is turning documents into **useful data** (i.e., values that flow into credit models, risk limits, and regulatory reports, where a near miss is a defect).
+The everyday problem is turning documents into useful data (i.e., values that flow into credit models, risk limits, and regulatory reports, where a near miss is a defect).
 Multimodal LLMs made the reading part dramatically easier.
 They did not make the *trusting* part any easier.
 
@@ -57,7 +57,7 @@ I'll cover:
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2026/2026-11-11/konstantinopel.jpg alt: "Bronze horse sculpture Konstantinopel (Hästen) by Sivert Lindblom at Blasieholmstorg, Stockholm" %}
   <figcaption class="stroke">
-   &#169; A faithful copy is only as trustworthy as your ability to trace it back to the original. Photo taken at Blasieholmstorg, a historic square in central Stockholm, near Kungsträdgården. The bronze horse is <em>Konstantinopel (Hästen)</em>, created by Swedish artist <a href="https://en.wikipedia.org/wiki/Sivert_Lindblom">Sivert Lindblom</a> in 1989. It is a replica of one of the <a href="https://en.wikipedia.org/wiki/Horses_of_Saint_Mark">Horses of Saint Mark</a> in Venice, whose history traces back to Constantinople and the Fourth Crusade in 1204.
+   &#169; A faithful copy is only as trustworthy as your ability to trace it back to the original. Photo taken at Blasieholmstorg, a historic square in central Stockholm, near Kungsträdgården. The bronze horse is Konstantinopel (Hästen), created by Swedish artist <a href="https://en.wikipedia.org/wiki/Sivert_Lindblom">Sivert Lindblom</a> in 1989. It is a replica of one of the <a href="https://en.wikipedia.org/wiki/Horses_of_Saint_Mark">Horses of Saint Mark</a> in Venice, whose history traces back to Constantinople and the Fourth Crusade in 1204.
   </figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ For spreadsheets, structure recovery is mostly deterministic code: finding heade
 **3a. Make it findable.**
 Split the content into chunks, embed each chunk, and store the vectors with their page numbers.
 At query time, retrieve the top *k* chunks and rerank them.
-This is retrieval-augmented generation (RAG)[^7].
+This is retrieval-augmented generation (RAG).[^7]
 
 **3b. Make it trustworthy.**
 Ask a model for typed fields through a schema the API enforces, then check every value in code against the source.
@@ -145,9 +145,9 @@ In banking terms, the split usually looks like this:
 - **Extract:** financial spreading for credit analysis, covenant monitoring, KYC data capture, term-sheet terms into a booking system, anything that feeds a model or a regulatory report.
 
 Regulators care about the second category.
-BCBS 239 asks banks to produce risk data that is accurate, complete, and traceable to its source[^8].
-Model risk guidance such as the Federal Reserve's SR 11-7 expects models (and an LLM extracting inputs to a credit model qualifies as part of the model) to be validated and monitored[^9].
-And if your use case involves the creditworthiness of individuals, the EU AI Act classifies it as high-risk[^10].
+BCBS 239 asks banks to produce risk data that is accurate, complete, and traceable to its source.[^8]
+Model risk guidance such as the Federal Reserve's SR 11-7 expects models (and an LLM extracting inputs to a credit model qualifies as part of the model) to be validated and monitored.[^9]
+And if your use case involves the creditworthiness of individuals, the EU AI Act classifies it as high-risk.[^10]
 "The LLM said so" will not survive any of those conversations.
 
 # Three Ingestion Archetypes
@@ -179,7 +179,7 @@ On the text side, a few details separate a good pipeline from a demo:
 - **Keep provenance in metadata.** Every chunk carries its document id, page, and section. Without it, you cannot cite, and an answer without a citation is an opinion.
 - **Chunk by structure, not by character count.** Split on sections and keep tables whole when you can. A table cut in half produces numbers without headers.
 - **Use hybrid search.** Embeddings are weak at exact tokens such as ISINs, covenant names, or "Q3 2025". Combine vector search with a keyword index, over-fetch a few times *k*, and let a cross-encoder rerank.
-- **Consider retrieving pages, not text.** For visually rich documents, ColPali-style models embed page images directly and skip OCR at retrieval time[^11].
+- **Consider retrieving pages, not text.** For visually rich documents, ColPali-style models embed page images directly and skip OCR at retrieval time.[^11]
 
 On the spreadsheet side, embedding cells is a mistake.
 A question like "what was the total exposure to the retail sector?" needs a `SUM`, not a similarity search.
@@ -194,7 +194,7 @@ If you need that number in a database, you need archetype B or C.
 ## Whole-File Extraction with Evidence (B)
 
 Archetype B sends the whole document to a multimodal model in one call and asks for a fixed list of metrics.
-The key idea is that the model must return **evidence** with every value: the page it read it from and a verbatim quote of the printed line.
+The key idea is that the model must return *evidence* with every value: the page it read it from and a verbatim quote of the printed line.
 Code then checks the evidence.
 
 <figure class="jb_picture">
@@ -205,7 +205,7 @@ Code then checks the evidence.
 </figure>
 
 Start with a strict schema.
-Modern LLM APIs can enforce a JSON schema at decoding time, so the response always parses[^12].
+Modern LLM APIs can enforce a JSON schema at decoding time, so the response always parses.[^12]
 With Pydantic[^13], the schema and the validator are the same object:
 
 {% highlight python linenos %}
@@ -243,7 +243,7 @@ extraction = Extraction.model_validate_json(response.text)
 {% endhighlight %}
 
 Notice what the schema does *not* contain: margins, ratios, growth rates.
-**The model reads; Python does the arithmetic.**
+The model reads; Python does the arithmetic.
 Every derived number is computed in code from extracted inputs, so it is reproducible and testable.
 
 A schema guarantees the *shape* of the answer, not its truth.
@@ -313,7 +313,7 @@ First, every tier below `EXACT` still requires the figure itself, in any of its 
 Second, the search starts on the cited page and then tries every other page: if the figure is found elsewhere, the page reference is corrected rather than discarded.
 The tier multiplies the model's self-reported confidence, which on its own is poorly calibrated and should never be the only signal.
 
-After grounding, deterministic **rules** cap confidence and attach a note: a value outside a plausible range, a big jump against last period, current equal to prior, a wrong currency, gross profit that does not equal revenue minus cost of sales.
+After grounding, deterministic rules cap confidence and attach a note: a value outside a plausible range, a big jump against last period, current equal to prior, a wrong currency, gross profit that does not equal revenue minus cost of sales.
 
 Only then does the expensive part run, and only for doubtful values.
 Code cuts a mini-PDF containing just the cited pages, and a *second* model is asked a narrow question: "what is printed for this metric and period?"
@@ -324,7 +324,7 @@ Most documents never need the second call.
 
 Archetype B is elegant and cheap: one call for all the figures, with evidence for each.
 Its weaknesses come from that same single call.
-Long reports strain attention, and models are known to use the middle of a long context less reliably than its edges[^14].
+Long reports strain attention, and models are known to use the middle of a long context less reliably than its edges.[^14]
 Dense pages with dozens of values lose some of them.
 And a quote gives you a page, not a location on it, so a reviewer still has to hunt for the number.
 
@@ -333,7 +333,7 @@ And a quote gives you a page, not a location on it, so a reviewer still has to h
 Archetype C inverts the trade-off.
 Code renders every page as an image (around 200 dpi is a good default) and pairs it with that page's text layer.
 Each page goes to the model in its own call, so the model sees the page at full resolution and the calls run in parallel.
-The model returns each value **as printed**, plus a bounding box around it.
+The model returns each value as printed, plus a bounding box around it.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-11/07-page-to-proof.drawio.svg" alt="Archetype C: a page image with a highlighted EBITDA cell, the JSON the model returns with value_as_printed and box_2d, and the code checks that map the box to PDF points and look for the printed figure and its label, producing grounded, figure_only, not_found or no_text_layer." width="100%" style="border: 1px solid #808080;">
@@ -345,7 +345,7 @@ The model returns each value **as printed**, plus a bounding box around it.
 Asking for the value *as printed* (`"(486)"`, not `-486`) matters.
 It keeps reading separate from interpretation, so sign, scale, and locale are applied by code you can test.
 
-Gemini, for example, returns boxes as `[ymin, xmin, ymax, xmax]` normalised to a 0–1000 grid[^15].
+Gemini, for example, returns boxes as `[ymin, xmin, ymax, xmax]` normalised to a 0–1000 grid.[^15]
 Because the grid is relative to the image, mapping it back to PDF coordinates only needs the page size, regardless of the rendering resolution.
 With PyMuPDF[^1]:
 
@@ -399,7 +399,7 @@ So archetype C stacks several independent checks between a reading and the datab
 4. **Rules.** Sign conventions, magnitude against history, period and scale consistency, sums that must add up, and exactly one value per metric and period.
 5. **Confidence threshold.** Necessary, never sufficient.
 
-The most important property is in the caption: **fail closed**.
+The most important property is in the caption: *fail closed*.
 A check that did not run counts as failed.
 A cross-read that times out sends the value to review instead of letting it through.
 The review queue is not an afterthought; it is a product.
@@ -414,7 +414,7 @@ For documents where a wrong number moves money, I think that is the right trade.
 Do not send spreadsheets through a PDF pipeline.
 Converting a workbook to images throws away the one advantage it has: the values are already data.
 
-If the spreadsheet follows a **fixed template**, as many borrower reporting packs and regulatory templates do, skip the AI at run time entirely.
+If the spreadsheet follows a *fixed template*, as many borrower reporting packs and regulatory templates do, skip the AI at run time entirely.
 Use a model (or an analyst) once to propose a cell map, review it, version it, and let code read it every time:
 
 {% highlight python linenos %}
@@ -436,11 +436,11 @@ def read_template(path: str) -> dict[str, tuple[float | None, str]]:
     return out
 {% endhighlight %}
 
-One caveat: `data_only=True` returns the values Excel cached the last time the file was saved[^16].
+One caveat: `data_only=True` returns the values Excel cached the last time the file was saved.[^16]
 A workbook generated by a script and never opened in Excel has no cached values, so formulas come back as `None`.
 Treat `None` as "not computed", never as zero.
 
-If the spreadsheet is **free-form**, detect the tables in code (title rows, merged headers, several tables per sheet) and use archetype A's SQL path for questions, or have a model map the detected tables to your schema once per layout.
+If the spreadsheet is *free-form*, detect the tables in code (title rows, merged headers, several tables per sheet) and use archetype A's SQL path for questions, or have a model map the detected tables to your schema once per layout.
 Either way, every value keeps a `Sheet!Cell` reference, which is the spreadsheet equivalent of a page and a box.
 
 # Measuring Quality

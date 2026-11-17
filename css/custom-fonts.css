@@ -4,8 +4,7 @@
 @font-face {
   font-display: swap;
   font-family: 'jetbrains_monoregular';
-  src: url('/fonts/used-fonts/JetBrainsMono/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2'),
-  url('/fonts/used-fonts/JetBrainsMono/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/JetBrainsMono/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,8 +13,7 @@
 @font-face {
   font-display: swap;
   font-family: 'jetbrains_monoregular';
-  src: url('/fonts/used-fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2'),
-  url('/fonts/used-fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2');
   font-weight: 200;
   font-style: italic;
 }
@@ -24,8 +22,7 @@
 @font-face {
   font-display: swap;
   font-family: 'operator_mono';
-  src: url('/fonts/used-fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2'),
-  url('/fonts/used-fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Operator Mono/OperatorMono-LightItalic.woff2') format('woff2');
   font-weight: 200;
   font-style: italic;
 }
@@ -33,8 +30,7 @@
 @font-face {
   font-display: swap;
   font-family: 'operator_mono';
-  src: url('/fonts/used-fonts/Operator Mono/OperatorMono-Light.woff2') format('woff2'),
-  url('/fonts/used-fonts/Operator Mono/OperatorMono-Light.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Operator Mono/OperatorMono-Light.woff2') format('woff2');
   font-weight: 200;
   font-style: normal;
 }
@@ -78,8 +74,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Equity Text A';
-  src: url('/fonts/used-fonts/Equity/equity_text_a_regular-webfont.woff') format('woff'),
-  url('/fonts/used-fonts/Equity/equity_text_a_regular-webfont.woff') format('woff');
+  src: url('/fonts/used-fonts/Equity/equity_text_a_regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -87,8 +82,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Equity Caps A';
-  src: url('/fonts/used-fonts/Equity/equity_caps_a_regular-webfont.woff') format('woff'),
-  url('/fonts/used-fonts/Equity/equity_caps_a_regular-webfont.woff') format('woff');
+  src: url('/fonts/used-fonts/Equity/equity_caps_a_regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -97,8 +91,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Concourse T6 Tab';
-  src: url('/fonts/used-fonts/Concourse/Concourse T6 Tab Regular.woff2') format('woff2'),
-  url('/fonts/used-fonts/Concourse/Concourse T6 Tab Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse T6 Tab Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -106,8 +99,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Concourse T6';
-  src: url('/fonts/used-fonts/Concourse/Concourse T6 Regular.woff2') format('woff2'),
-  url('/fonts/used-fonts/Concourse/Concourse T6 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse T6 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -115,8 +107,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Concourse T4';
-  src: url('/fonts/used-fonts/Concourse/Concourse T4 Regular.woff2') format('woff2'),
-  url('/fonts/used-fonts/Concourse/Concourse T4 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse T4 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -124,8 +115,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Concourse C4';
-  src: url('/fonts/used-fonts/Concourse/Concourse C4 Regular.woff2') format('woff2'),
-  url('/fonts/used-fonts/Concourse/Concourse C4 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse C4 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -133,8 +123,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Concourse T3';
-  src: url('/fonts/used-fonts/Concourse/Concourse T3 Regular.woff2') format('woff2'),
-  url('/fonts/used-fonts/Concourse/Concourse T3 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse T3 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -142,8 +131,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Concourse T2';
-  src: url('/fonts/used-fonts/Concourse/Concourse T2 Regular.woff2') format('woff2'),
-  url('/fonts/used-fonts/Concourse/Concourse T2 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse T2 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -151,8 +139,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Concourse C3';
-  src: url('/fonts/used-fonts/Concourse/Concourse C3 Regular.woff2') format('woff2'),
-  url('/fonts/used-fonts/Concourse/Concourse C3 Regular.woff2') format('woff2');
+  src: url('/fonts/used-fonts/Concourse/Concourse C3 Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
