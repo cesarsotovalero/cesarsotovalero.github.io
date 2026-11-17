@@ -3746,12 +3746,28 @@ a.btn {
 /* The Ko-fi widget injects Quicksand bold with !important; the ID outranks its `a.kofi-button` rule.
    Concourse T4 ships only a regular weight, so bold is dropped to avoid faux-bold. */
 #share-section a.kofi-button {
+  display: inline-flex !important; /* centers the cup and the label vertically and horizontally */
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 40px;
   min-width: 0;
-  padding: 2px 14px !important;
+  padding: 0 14px !important;
+  line-height: 1 !important;
   border-radius: 999px !important; /* a pill, like the site's other buttons */
   box-shadow: none !important;
   font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif !important;
   font-weight: normal !important;
+}
+
+#share-section .kofitext {
+  display: inline-flex !important;
+  align-items: center;
+  line-height: 1 !important;
+}
+
+#share-section .kofiimg {
+  margin: 0 6px 0 0 !important;
 }
 
 /* The widget's wrapper has a minimum width wider than the button, which left a gap before the share icons. */
