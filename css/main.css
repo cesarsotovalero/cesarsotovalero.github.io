@@ -3748,8 +3748,15 @@ a.btn {
 #share-section a.kofi-button {
   min-width: 0;
   padding: 2px 14px !important;
+  border-radius: 999px !important; /* a pill, like the site's other buttons */
+  box-shadow: none !important;
   font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif !important;
   font-weight: normal !important;
+}
+
+/* The widget's wrapper has a minimum width wider than the button, which left a gap before the share icons. */
+#share-section .btn-container {
+  min-width: 0 !important;
 }
 
 
