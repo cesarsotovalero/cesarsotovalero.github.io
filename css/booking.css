@@ -135,8 +135,7 @@ html {
   padding: 24px;
   border: 1px solid var(--bk-line);
   border-radius: 14px;
-  background: var(--bk-surface);
-  box-shadow: var(--bk-shadow);
+  background: var(--bk-accent-soft); /* a tinted panel, not a plain white card like the session cards below */
 }
 
 .booking-host img {
@@ -147,6 +146,8 @@ html {
   border-radius: 50%;
   object-fit: cover;
   filter: grayscale(100%); /* the same portrait treatment as the homepage */
+  border: 3px solid var(--bk-surface);
+  box-shadow: var(--bk-shadow);
 }
 
 .booking-host-name {
