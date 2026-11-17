@@ -245,14 +245,8 @@ footer.site-footer {
 
   /* The same 30px height as the share circles. */
   #share-section a.kofi-button {
-    box-sizing: border-box;
     height: 30px;
-    padding: 2px 12px !important;
-    line-height: 26px !important;
-  }
-
-  #share-section .kofitext {
-    line-height: 26px !important;
+    padding: 0 12px !important;
   }
 
   .post-actions .share-section {
@@ -331,10 +325,5 @@ footer.site-footer {
 
   #share-section a.kofi-button {
     height: 27px;
-    line-height: 23px !important;
-  }
-
-  #share-section .kofitext {
-    line-height: 23px !important;
   }
 }
