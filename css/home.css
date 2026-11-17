@@ -171,10 +171,6 @@
   margin: 0;
 }
 
-.home-stats li + li {
-  border-left: 1px solid var(--panel-border-color);
-}
-
 .home-stats a {
   display: block;
   padding: 4px 12px;
@@ -227,8 +223,6 @@
   margin: 24px 0 16px;
   padding: 40px;
   border-radius: 12px;
-  background: var(--card-background-color);
-  border: 1px solid var(--panel-border-color);
   text-align: center;
 }
 
@@ -291,11 +285,6 @@
   .home-stats {
     grid-template-columns: 1fr 1fr;
     row-gap: 16px;
-  }
-
-  /* 2×2: only the right-hand cells keep a divider. */
-  .home-stats li:nth-child(odd) {
-    border-left: 0;
   }
 
   .home-cta {

@@ -225,13 +225,13 @@
 
 .blog-row-thumb {
   order: 2;
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
 }
 
 @media (max-width: 760px) {
   .blog-row-thumb {
-    width: 52px;
-    height: 52px;
+    width: 64px;
+    height: 64px;
   }
 }

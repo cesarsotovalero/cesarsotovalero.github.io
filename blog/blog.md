@@ -44,7 +44,7 @@ pagefind: false
          {% assign words = post.content | number_of_words %}
          <li class="blog-row" data-tags="{{ post.tags | join: ' ' }}">
             {% if post.image %}
-            <img class="thumb-round blog-row-thumb" src="{{ post.image | thumbnail }}" alt="" width="64" height="64" loading="lazy" decoding="async">
+            <img class="thumb-round blog-row-thumb" src="{{ post.image | thumbnail }}" alt="" width="80" height="80" loading="lazy" decoding="async">
             {% endif %}
             <div class="blog-row-text">
             <a class="blog-row-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
