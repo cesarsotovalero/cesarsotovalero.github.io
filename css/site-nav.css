@@ -188,8 +188,16 @@ html.nav-hidden .site-header:not(:focus-within) {
 
   .site-nav-menu {
     display: inline-flex;
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
+    margin-right: -4px; /* keeps the icon's right edge on the page gutter */
+  }
+
+  /* A larger menu icon (and the matching close icon) for an easier tap. */
+  .site-nav-menu .icon,
+  .drawer-close .icon {
+    width: 26px;
+    height: 26px;
   }
 
   .site-brand,
