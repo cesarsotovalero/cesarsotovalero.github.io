@@ -30,7 +30,7 @@ At SEB, I have:
 
 I'm also a computer scientist and a hands-on software engineer, on a mission to help engineers learn, build, and grow faster (now with AI).
 
-I'm based in Stockholm, Sweden 🇸🇪. Here's my [one-page résumé](/files/CV/cesar-resume.pdf) and, more importantly, [my professional values](/my-professional-values).
+I'm based in Stockholm, Sweden. Here's my [one-page résumé](/files/CV/cesar-resume.pdf) and, more importantly, [my professional values](/my-professional-values).
 
 ## Education
 
