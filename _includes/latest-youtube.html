@@ -1,5 +1,5 @@
 {% assign videos = site.data.youtube-videos %}
-{% comment %} Videos already shown under "Latest Talks" are skipped, by id or by title. {% endcomment %}
+{% comment %} Videos already shown under "Latest Live Talks" are skipped, by id or by title. {% endcomment %}
 {% assign shown_talks = site.data.talks | where_exp: "t", "t.youtube_id != '' and t.youtube_id" %}
 {% capture shown_ids %}{% for t in shown_talks limit:4 %}|{{ t.youtube_id }}|{% endfor %}{% endcapture %}
 {% capture shown_titles %}{% for t in shown_talks limit:4 %}|{{ t.title | slice: 0, 25 | downcase }}|{% endfor %}{% endcapture %}
