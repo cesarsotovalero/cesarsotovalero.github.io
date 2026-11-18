@@ -27,6 +27,6 @@
       {% if stat.url contains "://" %}{% assign stat_href = stat.url %}{% else %}{% assign stat_href = site.baseurl | append: stat.url %}{% endif %}
       <li><a href="{{ stat_href }}"><strong>{{ stat.value }}</strong> <span>{{ stat.label }}</span></a></li>
       {% endfor %}
-      <li><a href="{{ site.baseurl }}/talks"><strong>{{ site.data.talks.size }}</strong> <span>talks</span></a></li>
+      <li><a href="{{ site.baseurl }}/talks"><strong>{{ site.data.talks.size }}</strong> <span>live talks</span></a></li>
    </ul>
 </section>
