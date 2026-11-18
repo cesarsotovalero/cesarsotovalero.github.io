@@ -2076,11 +2076,20 @@ p.post-meta {
   margin-bottom: 26px;
 }
 
+/* A normal text block with the checkbox in the left margin. (As a flex row, every inline
+   piece of the text, such as a `code` span, became its own column and the line broke apart.) */
 .task-list-item {
-  display: flex;
-  align-items: flex-start;
-  /* Align items at the top */
+  position: relative;
   margin-bottom: 10px;
+  padding-left: 50px;
+}
+
+.task-list .task-list-item > .task-list-item-checkbox {
+  position: absolute;
+  left: 20px;
+  top: 0.3em;
+  top: calc((1lh - 20px) / 2); /* centered on the first line where `lh` is supported */
+  margin: 0;
 }
 
 .task-list-item-checkbox {
