@@ -153,3 +153,112 @@ html.nav-hidden .reading-progress {
     grid-column: 1;
   }
 }
+
+/* --- Image zoom (js/image-zoom.js) --- */
+
+.img-zoom-wrap {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  cursor: zoom-in;
+  line-height: 0;
+  vertical-align: top;
+}
+
+.img-zoom-wrap:focus-visible {
+  outline: 2px solid var(--main-text-color, #404040);
+  outline-offset: 3px;
+}
+
+.img-zoom-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  pointer-events: none;
+}
+
+.img-zoom-wrap:hover .img-zoom-icon,
+.img-zoom-wrap:focus-visible .img-zoom-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* No hover on touch screens: keep a faint hint visible. */
+@media (hover: none) {
+  .img-zoom-icon {
+    width: 28px;
+    height: 28px;
+    opacity: 0.7;
+    transform: scale(1);
+  }
+}
+
+html.img-zoom-open {
+  overflow: hidden;
+}
+
+.img-zoom-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  overflow: auto;
+  padding: 2vh 2vw;
+  background: rgba(0, 0, 0, 0.88);
+  cursor: zoom-out;
+  animation: img-zoom-fade 0.15s ease;
+}
+
+.img-zoom-overlay[hidden] {
+  display: none;
+}
+
+.img-zoom-image {
+  flex: none;
+  margin: auto;
+  max-width: none;
+  background: #fff;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+.img-zoom-close {
+  position: fixed;
+  z-index: 1;
+  top: 12px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 28px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.img-zoom-close:hover,
+.img-zoom-close:focus-visible {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes img-zoom-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .img-zoom-overlay { animation: none; }
+  .img-zoom-icon { transition: none; }
+}
