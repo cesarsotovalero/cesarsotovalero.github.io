@@ -26,8 +26,16 @@ jobs:
       cancel-in-progress: true
 
     steps:
+      # The build never reads fonts/unused-fonts (1.3 GB of the 2.8 GB working tree), so a
+      # partial, sparse checkout skips downloading it.
       - name: Checkout repository
         uses: actions/checkout@v7
+        with:
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/fonts/unused-fonts/
 
       - name: Set up Python
         uses: actions/setup-python@v7
@@ -49,12 +57,26 @@ jobs:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: false # caching handled by the Jekyll action
 
-      # One apt round-trip for everything the build needs (ImageMagick for rmagick /
-      # jekyll-responsive-image, minify for the post-build minification).
-      # Downloads are time-boxed and fall back to archive.ubuntu.com, because a stalled
-      # runner mirror previously hung this step for ~1h before failing with exit code 100.
+      # ImageMagick (for rmagick / jekyll-responsive-image) and minify (post-build minification).
+      # The .deb files are cached per runner image, so most builds install them without touching
+      # the Ubuntu mirrors, which sometimes stall for 10-20 minutes.
+      - name: Identify the runner image
+        id: runner-image
+        run: echo "id=${ImageOS:-unknown}-${ImageVersion:-unknown}" >> "$GITHUB_OUTPUT"
+
+      - name: Restore cached system packages
+        id: apt-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/apt-debs
+          key: apt-debs-${{ steps.runner-image.outputs.id }}-libmagickwand-dev-minify-v1
+
+      # On a cache miss, downloads are time-boxed and fall back to archive.ubuntu.com, because a
+      # stalled runner mirror previously hung this step for ~1h before failing with exit code 100.
       - name: Install system packages (ImageMagick, minify)
         timeout-minutes: 15
+        env:
+          CACHE_HIT: ${{ steps.apt-cache.outputs.cache-hit }}
         run: |
           set -euo pipefail
           # Skip man-db index rebuilds triggered by every package install.
@@ -71,15 +93,20 @@ jobs:
               sudo timeout 420 apt-get "${APT_OPTS[@]}" install --download-only --yes "${PACKAGES[@]}"
           }
 
-          if ! download; then
-            echo "::warning::Default Ubuntu mirror failed; retrying with archive.ubuntu.com"
-            sudo sed -i 's|http://azure\.archive\.ubuntu\.com/ubuntu|http://archive.ubuntu.com/ubuntu|g' \
-              /etc/apt/sources.list.d/*.sources /etc/apt/sources.list 2>/dev/null || true
-            download
+          if [ "$CACHE_HIT" != "true" ]; then
+            if ! download; then
+              echo "::warning::Default Ubuntu mirror failed; retrying with archive.ubuntu.com"
+              sudo sed -i 's|http://azure\.archive\.ubuntu\.com/ubuntu|http://archive.ubuntu.com/ubuntu|g' \
+                /etc/apt/sources.list.d/*.sources /etc/apt/sources.list 2>/dev/null || true
+              download
+            fi
+            mkdir -p ~/apt-debs
+            cp /var/cache/apt/archives/*.deb ~/apt-debs/
           fi
 
-          # Everything is already downloaded, so installation needs no network.
-          sudo apt-get "${APT_OPTS[@]}" install --yes --no-download "${PACKAGES[@]}"
+          # Install from the local .deb files: no network needed.
+          cd ~/apt-debs
+          sudo apt-get "${APT_OPTS[@]}" install --yes --no-download ./*.deb
 
       - name: Build Jekyll site (with all plugins)
         uses: limjh16/jekyll-action-ts@v2
@@ -96,10 +123,16 @@ jobs:
       - name: Validate generated site smoke checks
         run: python3 scripts/validate_site_smoke.py
 
+      # GitHub's Ubuntu runners ship Google Chrome, so Playwright drives it instead of downloading
+      # its own Chromium and its system libraries (another apt round-trip that could stall).
       - name: Check pages for JavaScript errors
         run: |
           npm install --no-save --no-package-lock playwright@1.49.1
-          npx playwright install --with-deps chromium
+          if command -v google-chrome >/dev/null 2>&1; then
+            export PLAYWRIGHT_CHANNEL=chrome
+          else
+            npx playwright install --with-deps chromium
+          fi
           node scripts/check_console_errors.js _site
 
       # Every page: internal links, anchors and images. Downloads, font demos and the
