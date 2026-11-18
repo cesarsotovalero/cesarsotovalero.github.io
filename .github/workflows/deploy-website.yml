@@ -52,18 +52,19 @@ jobs:
           bundler-cache: false # caching handled by the Jekyll action
 
       # ImageMagick (for rmagick / jekyll-responsive-image) and minify (post-build minification).
-      # The .deb files are cached per runner image, so most builds install them without touching
-      # the Ubuntu mirrors, which sometimes stall for 10-20 minutes.
+      # The .deb files are cached per OS and month, so most builds install them without touching
+      # the Ubuntu mirrors, which sometimes stall for 10-20 minutes. (GitHub runs several image
+      # versions at once, so the exact image version would make the cache miss most of the time.)
       - name: Identify the runner image
         id: runner-image
-        run: echo "id=${ImageOS:-unknown}-${ImageVersion:-unknown}" >> "$GITHUB_OUTPUT"
+        run: echo "id=${ImageOS:-unknown}-$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
 
       - name: Restore cached system packages
         id: apt-cache
         uses: actions/cache@v4
         with:
           path: ~/apt-debs
-          key: apt-debs-${{ steps.runner-image.outputs.id }}-libmagickwand-dev-minify-v1
+          key: apt-debs-${{ steps.runner-image.outputs.id }}-libmagickwand-dev-minify-v2
 
       # Cache hit: install the cached .deb files with dpkg, offline (apt itself would consult its
       # stale package index and try to download). Cache miss, or if that fails: the mirrors, with
@@ -92,9 +93,17 @@ jobs:
           install_from_cache() {
             [ "$CACHE_HIT" = "true" ] || return 1
             cd ~/apt-debs || return 1
-            # A second pass settles packages whose dependencies came later in the first one.
-            { sudo env DEBIAN_FRONTEND=noninteractive dpkg -i ./*.deb > /dev/null ||
-              sudo env DEBIAN_FRONTEND=noninteractive dpkg -i ./*.deb > /dev/null; } || return 1
+            # Only packages the image lacks, so a cached file never replaces a newer installed one.
+            local debs=() deb name
+            for deb in ./*.deb; do
+              name=$(dpkg-deb -f "$deb" Package) || return 1
+              [ "$(dpkg-query -W -f='${db:Status-Abbrev}' "$name" 2>/dev/null)" = "ii " ] || debs+=("$deb")
+            done
+            if [ "${#debs[@]}" -gt 0 ]; then
+              # A second pass settles packages whose dependencies came later in the first one.
+              { sudo env DEBIAN_FRONTEND=noninteractive dpkg -i "${debs[@]}" > /dev/null ||
+                sudo env DEBIAN_FRONTEND=noninteractive dpkg -i "${debs[@]}" > /dev/null; } || return 1
+            fi
             # Every package must be fully installed ("ii"), not just unpacked.
             for p in "${PACKAGES[@]}"; do
               [ "$(dpkg-query -W -f='${db:Status-Abbrev}' "$p" 2>/dev/null)" = "ii " ] || return 1
@@ -124,7 +133,6 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true # caches vendor/bundle for speed
-          prettier: false # skip extra formatting
         env:
           YOUTUBE_API_TOKEN: ${{ secrets.YOUTUBE_API_TOKEN }}
           GMAIL: ${{ secrets.CESAR_PERSONAL_GMAIL }}
