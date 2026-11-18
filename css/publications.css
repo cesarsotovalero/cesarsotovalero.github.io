@@ -122,7 +122,7 @@
 .pub-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 6px 20px;
   margin: 10px 0 0;
   padding: 0;
   list-style: none;
@@ -133,13 +133,13 @@
 }
 
 /* `li a[href]` outranks main.css's per-URL icon rules, whose background icon is replaced by ::before below. */
+/* Plain links with an icon (no button frame); the label is underlined on hover. */
 .pub-links li a[href] {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 2px 10px 2px 8px;
-  border: 1px solid var(--panel-border-color);
-  border-radius: 6px;
+  padding: 2px 0;
+  border: 0;
   background-image: none;
   color: var(--main-text-color);
   font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
@@ -208,7 +208,8 @@
 
 .pub-links li a[href]:hover,
 .pub-links li a[href]:focus-visible {
-  border-color: var(--accent-soft-border, var(--main-text-color));
-  background-color: var(--accent-soft, transparent);
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: currentColor;
 }
