@@ -26,16 +26,10 @@ jobs:
       cancel-in-progress: true
 
     steps:
-      # The build never reads fonts/unused-fonts (1.3 GB of the 2.8 GB working tree), so a
-      # partial, sparse checkout skips downloading it.
+      # A plain shallow checkout. (A partial, sparse checkout that skipped fonts/unused-fonts was
+      # tried and was slower: git then downloads file contents in one on-demand batch, ~100s vs ~60s.)
       - name: Checkout repository
         uses: actions/checkout@v7
-        with:
-          filter: blob:none
-          sparse-checkout-cone-mode: false
-          sparse-checkout: |
-            /*
-            !/fonts/unused-fonts/
 
       - name: Set up Python
         uses: actions/setup-python@v7
