@@ -2084,12 +2084,14 @@ p.post-meta {
   padding-left: 50px;
 }
 
+/* The checkbox sits in the first line itself (the negative left margin pulls it into the
+   padding, so the text still starts at 50px). Aligned to the middle of the letters, between
+   the lowercase and the capitals, it lines up with the text at any font size. */
 .task-list .task-list-item > .task-list-item-checkbox {
-  position: absolute;
-  left: 20px;
-  top: 0.3em;
-  top: calc((1lh - 20px) / 2); /* centered on the first line where `lh` is supported */
-  margin: 0;
+  display: inline-block;
+  margin: 0 10px 0 -30px;
+  vertical-align: middle;
+  top: -0.08em;
 }
 
 .task-list-item-checkbox {
