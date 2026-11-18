@@ -238,6 +238,34 @@ footer.site-footer {
   border-bottom: 1px solid var(--panel-border-color);
 }
 
+/* ---------- Cards (LinkedIn posts, YouTube videos, homepage and Software cards) ----------
+   A faint border and a soft shadow instead of a hard #ccc line, in both themes. */
+
+:root {
+  --card-border: rgba(0, 0, 0, 0.08);
+  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --card-shadow-hover: 0 8px 20px -10px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] {
+  --card-border: rgba(255, 255, 255, 0.07);
+  --card-shadow: none;
+  --card-shadow-hover: 0 8px 20px -10px rgba(0, 0, 0, 0.6);
+}
+
+.linkedin-post-card,
+.youtube-video-card,
+.index-list .index-list-item a {
+  border-color: var(--card-border);
+  box-shadow: var(--card-shadow);
+}
+
+.linkedin-post-card:hover,
+.youtube-video-card:hover,
+.index-list .index-list-item a:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
 /* ---------- Phones ---------- */
 
 @media (max-width: 760px) {
