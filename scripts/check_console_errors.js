@@ -47,7 +47,8 @@ function serve() {
 
   const server = serve();
   const base = `http://localhost:${server.address().port}`;
-  const browser = await chromium.launch();
+  // PLAYWRIGHT_CHANNEL=chrome uses an installed Google Chrome instead of Playwright's own Chromium.
+  const browser = await chromium.launch(process.env.PLAYWRIGHT_CHANNEL ? { channel: process.env.PLAYWRIGHT_CHANNEL } : {});
   let failures = 0;
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
     const context = await browser.newContext({ viewport });

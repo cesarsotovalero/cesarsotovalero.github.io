@@ -26,6 +26,8 @@ jobs:
       cancel-in-progress: true
 
     steps:
+      # A plain shallow checkout. (A partial, sparse checkout that skipped fonts/unused-fonts was
+      # tried and was slower: git then downloads file contents in one on-demand batch, ~100s vs ~60s.)
       - name: Checkout repository
         uses: actions/checkout@v7
 
@@ -49,12 +51,29 @@ jobs:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: false # caching handled by the Jekyll action
 
-      # One apt round-trip for everything the build needs (ImageMagick for rmagick /
-      # jekyll-responsive-image, minify for the post-build minification).
-      # Downloads are time-boxed and fall back to archive.ubuntu.com, because a stalled
-      # runner mirror previously hung this step for ~1h before failing with exit code 100.
+      # ImageMagick (for rmagick / jekyll-responsive-image) and minify (post-build minification).
+      # The .deb files are cached per OS and month, so most builds install them without touching
+      # the Ubuntu mirrors, which sometimes stall for 10-20 minutes. (GitHub runs several image
+      # versions at once, so the exact image version would make the cache miss most of the time.)
+      - name: Identify the runner image
+        id: runner-image
+        run: echo "id=${ImageOS:-unknown}-$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+
+      - name: Restore cached system packages
+        id: apt-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/apt-debs
+          key: apt-debs-${{ steps.runner-image.outputs.id }}-libmagickwand-dev-minify-v2
+
+      # Cache hit: install the cached .deb files with dpkg, offline (apt itself would consult its
+      # stale package index and try to download). Cache miss, or if that fails: the mirrors, with
+      # time-boxed downloads and a fallback to archive.ubuntu.com, because a stalled runner mirror
+      # previously hung this step for ~1h before failing with exit code 100.
       - name: Install system packages (ImageMagick, minify)
         timeout-minutes: 15
+        env:
+          CACHE_HIT: ${{ steps.apt-cache.outputs.cache-hit }}
         run: |
           set -euo pipefail
           # Skip man-db index rebuilds triggered by every package install.
@@ -68,24 +87,52 @@ jobs:
 
           download() {
             sudo timeout 240 apt-get "${APT_OPTS[@]}" update -qq &&
-              sudo timeout 420 apt-get "${APT_OPTS[@]}" install --download-only --yes "${PACKAGES[@]}"
+              sudo timeout 420 apt-get "${APT_OPTS[@]}" install --download-only --fix-broken --yes "${PACKAGES[@]}"
           }
 
-          if ! download; then
-            echo "::warning::Default Ubuntu mirror failed; retrying with archive.ubuntu.com"
-            sudo sed -i 's|http://azure\.archive\.ubuntu\.com/ubuntu|http://archive.ubuntu.com/ubuntu|g' \
-              /etc/apt/sources.list.d/*.sources /etc/apt/sources.list 2>/dev/null || true
-            download
-          fi
+          install_from_cache() {
+            [ "$CACHE_HIT" = "true" ] || return 1
+            cd ~/apt-debs || return 1
+            # Only packages the image lacks, so a cached file never replaces a newer installed one.
+            local debs=() deb name
+            for deb in ./*.deb; do
+              name=$(dpkg-deb -f "$deb" Package) || return 1
+              [ "$(dpkg-query -W -f='${db:Status-Abbrev}' "$name" 2>/dev/null)" = "ii " ] || debs+=("$deb")
+            done
+            if [ "${#debs[@]}" -gt 0 ]; then
+              # A second pass settles packages whose dependencies came later in the first one.
+              { sudo env DEBIAN_FRONTEND=noninteractive dpkg -i "${debs[@]}" > /dev/null ||
+                sudo env DEBIAN_FRONTEND=noninteractive dpkg -i "${debs[@]}" > /dev/null; } || return 1
+            fi
+            # Every package must be fully installed ("ii"), not just unpacked.
+            for p in "${PACKAGES[@]}"; do
+              [ "$(dpkg-query -W -f='${db:Status-Abbrev}' "$p" 2>/dev/null)" = "ii " ] || return 1
+            done
+          }
 
-          # Everything is already downloaded, so installation needs no network.
-          sudo apt-get "${APT_OPTS[@]}" install --yes --no-download "${PACKAGES[@]}"
+          if install_from_cache; then
+            echo "Installed ${PACKAGES[*]} from the package cache."
+          else
+            if [ "$CACHE_HIT" = "true" ]; then
+              echo "::warning::Cached packages did not install; using the Ubuntu mirrors"
+            fi
+            if ! download; then
+              echo "::warning::Default Ubuntu mirror failed; retrying with archive.ubuntu.com"
+              sudo sed -i 's|http://azure\.archive\.ubuntu\.com/ubuntu|http://archive.ubuntu.com/ubuntu|g' \
+                /etc/apt/sources.list.d/*.sources /etc/apt/sources.list 2>/dev/null || true
+              download
+            fi
+            # Everything is already downloaded, so installation needs no network.
+            sudo apt-get "${APT_OPTS[@]}" install --yes --no-download --fix-broken "${PACKAGES[@]}"
+            # Keep the downloaded files for the next builds on this runner image.
+            mkdir -p ~/apt-debs
+            cp /var/cache/apt/archives/*.deb ~/apt-debs/ 2>/dev/null || true
+          fi
 
       - name: Build Jekyll site (with all plugins)
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true # caches vendor/bundle for speed
-          prettier: false # skip extra formatting
         env:
           YOUTUBE_API_TOKEN: ${{ secrets.YOUTUBE_API_TOKEN }}
           GMAIL: ${{ secrets.CESAR_PERSONAL_GMAIL }}
@@ -96,10 +143,16 @@ jobs:
       - name: Validate generated site smoke checks
         run: python3 scripts/validate_site_smoke.py
 
+      # GitHub's Ubuntu runners ship Google Chrome, so Playwright drives it instead of downloading
+      # its own Chromium and its system libraries (another apt round-trip that could stall).
       - name: Check pages for JavaScript errors
         run: |
           npm install --no-save --no-package-lock playwright@1.49.1
-          npx playwright install --with-deps chromium
+          if command -v google-chrome >/dev/null 2>&1; then
+            export PLAYWRIGHT_CHANNEL=chrome
+          else
+            npx playwright install --with-deps chromium
+          fi
           node scripts/check_console_errors.js _site
 
       # Every page: internal links, anchors and images. Downloads, font demos and the
