@@ -226,6 +226,18 @@ footer.site-footer {
   padding-bottom: 0;
 }
 
+/* ---------- Collapsible boxes ("On this page" and others) ----------
+   main.css draws the open/close arrow in a fixed near-black, which vanishes on the dark background. */
+
+[data-theme="dark"] summary::after {
+  border-top-color: var(--main-text-color);
+}
+
+/* The same file draws a 2px near-white rule under an open summary; on the dark background it glares. */
+[data-theme="dark"] details[open] > summary {
+  border-bottom: 1px solid var(--panel-border-color);
+}
+
 /* ---------- Phones ---------- */
 
 @media (max-width: 760px) {
