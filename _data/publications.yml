@@ -37,8 +37,10 @@
   year: 2023
   type: thesis
   links:
-  - label: PDF
+  - label: Full text
     url: /files/thesis/cesar-fulltext.pdf
+  - label: Kappa (KTH)
+    url: "https://kth.diva-portal.org/smash/get/diva2:1755964/FULLTEXT03.pdf"
   - label: Slides
     url: /files/thesis/slides/cesar-phd-defense.pptx
   - label: Video
