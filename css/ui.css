@@ -383,7 +383,9 @@ footer.site-footer {
   }
 }
 
-/* ---------- "Let's connect on LinkedIn" button (LinkedIn pages) ---------- */
+/* ---------- Call-to-action buttons: LinkedIn and YouTube pages ----------
+   One pill shape; each variant sets its brand colors. The label is white on a
+   dark-enough brand color, so the same button works on light and dark pages. */
 
 .connect-cta {
   display: flex;
@@ -391,19 +393,17 @@ footer.site-footer {
   margin: 0 0 28px;
 }
 
-.btn-linkedin-connect {
-  --li-blue: #0a66c2;
-  --li-blue-dark: #004182;
+.btn-cta {
   display: inline-flex;
   align-items: center;
   gap: 12px;
   min-height: 52px;
   padding: 6px 22px 6px 6px;
   border-radius: 999px;
-  background: linear-gradient(180deg, #1574d4 0%, var(--li-blue) 100%);
+  background: linear-gradient(180deg, var(--cta-top) 0%, var(--cta-base) 100%);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    0 8px 20px -8px rgba(10, 102, 194, 0.65);
+    0 8px 20px -8px var(--cta-glow);
   color: #fff;
   font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
@@ -413,29 +413,29 @@ footer.site-footer {
   transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
 }
 
-.btn-linkedin-connect:hover,
-.btn-linkedin-connect:focus-visible {
-  background: linear-gradient(180deg, var(--li-blue) 0%, var(--li-blue-dark) 100%);
+.btn-cta:hover,
+.btn-cta:focus-visible {
+  background: linear-gradient(180deg, var(--cta-base) 0%, var(--cta-dark) 100%);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.14),
-    0 14px 28px -10px rgba(10, 102, 194, 0.75);
+    0 14px 28px -10px var(--cta-glow-strong);
   color: #fff;
   text-decoration: none;
   transform: translateY(-2px);
 }
 
-.btn-linkedin-connect:active {
-  box-shadow: 0 4px 10px -6px rgba(10, 102, 194, 0.7);
+.btn-cta:active {
+  box-shadow: 0 4px 10px -6px var(--cta-glow-strong);
   transform: translateY(0);
 }
 
-.btn-linkedin-connect:focus-visible {
-  outline: 3px solid #70b5f9;
+.btn-cta:focus-visible {
+  outline: 3px solid var(--cta-ring);
   outline-offset: 3px;
 }
 
-/* The logo sits in a white disc at the start of the pill. */
-.btn-linkedin-logo {
+/* The brand logo sits in a white disc at the start of the pill. */
+.btn-cta-logo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -444,36 +444,68 @@ footer.site-footer {
   height: 40px;
   border-radius: 50%;
   background: #fff;
-  color: var(--li-blue);
+  color: var(--cta-base);
   font-size: 20px;
 }
 
-.btn-linkedin-arrow {
+/* Social-icon rules in main.css color .fa-youtube and make it jump on hover; not in here. */
+.btn-cta .btn-cta-logo i,
+.btn-cta .btn-cta-logo i:hover {
+  color: inherit;
+  transform: none;
+  transition: none;
+}
+
+.btn-cta-arrow {
   font-size: 0.8em;
   opacity: 0.85;
   transition: transform 0.18s ease;
 }
 
-.btn-linkedin-connect:hover .btn-linkedin-arrow,
-.btn-linkedin-connect:focus-visible .btn-linkedin-arrow {
+.btn-cta:hover .btn-cta-arrow,
+.btn-cta:focus-visible .btn-cta-arrow {
   transform: translateX(4px);
 }
 
-[data-theme="dark"] .btn-linkedin-connect {
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    0 8px 22px -8px rgba(10, 102, 194, 0.9);
+/* LinkedIn blue: white text contrast 5.6:1. */
+.btn-cta-linkedin {
+  --cta-top: #1574d4;
+  --cta-base: #0a66c2;
+  --cta-dark: #004182;
+  --cta-glow: rgba(10, 102, 194, 0.65);
+  --cta-glow-strong: rgba(10, 102, 194, 0.75);
+  --cta-ring: #70b5f9;
+}
+
+/* YouTube red, a shade deeper than #ff0000 so white text reads well: contrast 5.9:1. */
+.btn-cta-youtube {
+  --cta-top: #e81c1c;
+  --cta-base: #cc0000;
+  --cta-dark: #990000;
+  --cta-glow: rgba(204, 0, 0, 0.55);
+  --cta-glow-strong: rgba(204, 0, 0, 0.7);
+  --cta-ring: #ff8a8a;
+}
+
+/* On dark pages the glow carries more of the lift. */
+[data-theme="dark"] .btn-cta-linkedin {
+  --cta-glow: rgba(10, 102, 194, 0.9);
+}
+
+[data-theme="dark"] .btn-cta-youtube {
+  --cta-glow: rgba(230, 0, 0, 0.8);
+  --cta-glow-strong: rgba(230, 0, 0, 0.9);
 }
 
 @media (max-width: 450px) {
-  .btn-linkedin-connect {
+  .btn-cta {
     min-height: 48px;
     gap: 10px;
     padding-right: 18px;
     font-size: 16px;
   }
 
-  .btn-linkedin-logo {
+  .btn-cta-logo {
     width: 36px;
     height: 36px;
     font-size: 18px;
@@ -481,15 +513,15 @@ footer.site-footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .btn-linkedin-connect,
-  .btn-linkedin-arrow {
+  .btn-cta,
+  .btn-cta-arrow {
     transition: none;
   }
 
-  .btn-linkedin-connect:hover,
-  .btn-linkedin-connect:focus-visible,
-  .btn-linkedin-connect:hover .btn-linkedin-arrow,
-  .btn-linkedin-connect:focus-visible .btn-linkedin-arrow {
+  .btn-cta:hover,
+  .btn-cta:focus-visible,
+  .btn-cta:hover .btn-cta-arrow,
+  .btn-cta:focus-visible .btn-cta-arrow {
     transform: none;
   }
 }
