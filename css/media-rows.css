@@ -1,6 +1,13 @@
 /* YouTube and LinkedIn indexes: the blog's row layout (css/blog-index.css)
    with a rounded-rectangle thumbnail on the right. */
 
+/* Thumbnails sit at the top of the row, level with the title. */
+.row-thumb-link,
+.row-thumb-empty {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
 .row-thumb-link {
   order: 2;
   flex-shrink: 0;
