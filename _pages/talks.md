@@ -21,25 +21,25 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 {% youtube 59EVOp8r0aw %}
 
-- **There’s No Such Thing as Free Intelligence: Tokenomics and the Hidden Cost of AI**. Presented at _SEB Tech Day_, 3rd September 2026. [Video](https://youtu.be/Y_JX0C5sAEo "video"){:target="\_blank"}, [Slides](/files/presentations/Tokenomics_and_the_Hidden_Cost_of_AI.pptx "pptx")
+- **There’s No Such Thing as Free Intelligence: Tokenomics and the Hidden Cost of AI**. Presented at _SEB Tech Day_, 3rd September 2026. [Video](https://youtu.be/Y_JX0C5sAEo "video"){:target="\_blank"}, [Slides](/files/talks/2026_tokenomics-and-the-hidden-cost-of-ai_seb-tech-day_cesar-soto-valero.pptx "pptx")
 
 - **AI On-Chain: Where Do We See the Real Utility of Agentic Finance?** Panelist at [Nordic Blockchain Conference](https://www.nordicblockchain.com/conference/program), 26th May 2026. [Announcement](https://www.linkedin.com/posts/nbc2026-share-7462126749573758976-36bF), [Video](https://youtu.be/w8WiLLe6rIo "video"){:target="\_blank"}
 
-- **Stop Stuffing Your LLM's Context Window**. Presented at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026. [Announcement](https://www.linkedin.com/posts/have-you-checked-out-the-lightning-talks-share-7452312233725906944-J365), [Video](https://youtu.be/lo_QROedKqE "video"){:target="\_blank"}, [Slides](/files/presentations/AI-fokus2026.pdf "pdf")
+- **Stop Stuffing Your LLM's Context Window**. Presented at [AI-fokus](https://www.ai-fokus.se/), 19th May 2026. [Announcement](https://www.linkedin.com/posts/have-you-checked-out-the-lightning-talks-share-7452312233725906944-J365), [Video](https://youtu.be/lo_QROedKqE "video"){:target="\_blank"}, [Slides](/files/talks/2026_stop-stuffing-your-llms-context-window_ai-fokus_cesar-soto-valero.pdf "pdf")
 
-- **Fully Homomorphic Encryption and the Future of Trustworthy AI**. Presented at [Data Innovation Summit](https://datainnovationsummit.com/region/nordics/), 6th May 2026. [Announcement](https://www.linkedin.com/posts/the-data-innovation-summit_disummit2030-dis2026x1-activity-7404107732695298048-FUac), [Video](https://youtu.be/VO5gC3RakSk "video"){:target="\_blank"}, [Slides](/files/presentations/DIS2026_M7_CESAR.pptx "pptx")
+- **Fully Homomorphic Encryption and the Future of Trustworthy AI**. Presented at [Data Innovation Summit](https://datainnovationsummit.com/region/nordics/), 6th May 2026. [Announcement](https://www.linkedin.com/posts/the-data-innovation-summit_disummit2030-dis2026x1-activity-7404107732695298048-FUac), [Video](https://youtu.be/VO5gC3RakSk "video"){:target="\_blank"}, [Slides](/files/talks/2026_fully-homomorphic-encryption-and-the-future-of-trustworthy-ai_data-innovation-summit_cesar-soto-valero.pptx "pptx")
 
-- **Moving Fast and Importing Things: The Software Supply Chain of Agentic AI**. Presented at the [5th KTH Workshop on the Software Supply Chain](https://chains.proj.kth.se/software-supply-chain-workshop-5.html), 24th April 2026. [Video](https://youtu.be/AfaOvAXFCmg "video"){:target="\_blank"} [Slides](/files/presentations/Moving_Fast_and_Importing_Things_LangGraph_Supply_Chain.pptx "pptx")
+- **Moving Fast and Importing Things: The Software Supply Chain of Agentic AI**. Presented at the [5th KTH Workshop on the Software Supply Chain](https://chains.proj.kth.se/software-supply-chain-workshop-5.html), 24th April 2026. [Video](https://youtu.be/AfaOvAXFCmg "video"){:target="\_blank"} [Slides](/files/talks/2026_moving-fast-and-importing-things-the-software-supply-chain-of-agentic-ai_kth-software-supply-chain-workshop_cesar-soto-valero.pptx "pptx")
 
-- **The Promise of Trustworthy AI**. Keynote at [Voxxed Days Zürich](https://vdz26.voxxeddays.ch/talk/?id=13851), 24th March 2026. [Video](https://youtu.be/59EVOp8r0aw "video"){:target="\_blank"} [Slides](/files/talks/2026voxxed.pdf "pdf")
+- **The Promise of Trustworthy AI**. Keynote at [Voxxed Days Zürich](https://vdz26.voxxeddays.ch/talk/?id=13851), 24th March 2026. [Video](https://youtu.be/59EVOp8r0aw "video"){:target="\_blank"} [Slides](/files/talks/2026_the-promise-of-trustworthy-ai_voxxed-days-zurich_cesar-soto-valero.pdf "pdf")
 
 ## 2025
 
 {% youtube nEg8T8doy64 %}
 
-- **Real-time Financial Fraud Detection with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Video](https://youtu.be/nEg8T8doy64 "video"){:target="\_blank"} [Slides](</files/presentations/Realtime-Fraud-Detection-with-Modern-Python_Final%20(PyData%202025).pptx>)
+- **Real-time Financial Fraud Detection with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Video](https://youtu.be/nEg8T8doy64 "video"){:target="\_blank"} [Slides](/files/talks/2025_real-time-financial-fraud-detection-with-modern-python_pydata-global_cesar-soto-valero.pptx)
 
-- **From Ideas to APIs: Delivering Fast with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Video](https://youtu.be/SIVhrtQzknQ "video"){:target="\_blank"} [Slides](</files/presentations/From-Ideas-to-APIs-Delivering-Fast-with%20Modern-Python_Final%20(PyData%202025).pptx>)
+- **From Ideas to APIs: Delivering Fast with Modern Python**. Presented at [PyData Global](https://pydata.org/global2025/), December 2025. [Video](https://youtu.be/SIVhrtQzknQ "video"){:target="\_blank"} [Slides](/files/talks/2025_from-ideas-to-apis-delivering-fast-with-modern-python_pydata-global_cesar-soto-valero.pptx)
 
 - **My Bank Meets AI: Smarter Decisions Beyond Fancier Spreadsheets**. Presented at [AI-fokus](https://www.jfokus.se/ai-fokus), Stockholm, January 2026. [Video](https://youtu.be/kFPE9EcxhCs "video"){:target="\_blank"} [Slides](https://www.jfokus.se/aifokus25-preso/My-Bank-Meets-AI.pdf)
 
@@ -47,17 +47,17 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 {% youtube Xn1ShZPrw2o %}
 
-- **The AI Secret: Why Predictive Machine Learning Still Rules The Real World**. Presented at _SEB Tech Day_ in Arenastaden Stockholm, October 2024. [Video](https://youtu.be/n1t3XEAyUgQ?si=3WKO3XZC_b_epmfo "video") [Slides](/files/presentations/The AI Secret - Why Predictive ML Still Rules the Real World.pptx)
+- **The AI Secret: Why Predictive Machine Learning Still Rules The Real World**. Presented at _SEB Tech Day_ in Arenastaden Stockholm, October 2024. [Video](https://youtu.be/n1t3XEAyUgQ?si=3WKO3XZC_b_epmfo "video") [Slides](/files/talks/2024_the-ai-secret-why-predictive-machine-learning-still-rules-the-real-world_seb-tech-day_cesar-soto-valero.pptx)
 - **Dancing on Thin Ice: Leveraging Software Bill of Materials in Java**. Presented at [Jfokus](https://www.jfokus.se/talks/1661), Stockholm, February 2024. [Video](https://youtu.be/Xn1ShZPrw2o?si=sP5U0PATsrdHmwK1 "video"){:target="\_blank"} [Slides](https://www.jfokus.se/jfokus24-preso/Dancing-on-Thin-Ice--Leveraging-Software-Bill-of-Materials-in-Java.pdf)
-- **Hand-In-Hand Live Coding Session With Github Copilot**. Presented at SEB's main theater in Solna, Stockholm, April 2024. [:globe_with_meridians: Post](https://www.linkedin.com/posts/cesarsotovalero_seb-sebtech-ai-activity-7185295533308002305-oRFv) [Slides](/files/presentations/hand-in-hand-live-coding-session-with-github-copilot.pptx)
-- **Enhancing Semantic Search With RAG**. Presented at SEB, Stockholm, March 2024. [Slides](/files/presentations/enhancing-semantic-search-with-rag.pptx)
+- **Hand-In-Hand Live Coding Session With Github Copilot**. Presented at SEB's main theater in Solna, Stockholm, April 2024. [:globe_with_meridians: Post](https://www.linkedin.com/posts/cesarsotovalero_seb-sebtech-ai-activity-7185295533308002305-oRFv) [Slides](/files/talks/2024_hand-in-hand-live-coding-session-with-github-copilot_seb_cesar-soto-valero.pptx)
+- **Enhancing Semantic Search With RAG**. Presented at SEB, Stockholm, March 2024. [Slides](/files/talks/2024_enhancing-semantic-search-with-rag_seb_cesar-soto-valero.pptx)
 
 ## 2023
 
 {% youtube 7IoXciSucw4 %}
 
 - **Preventing Software Supply Chain Attacks With Dependency Management Best Practices**. Presented at _SEB Tech Day_ in Arenastaden Stockholm, September 2023. [Video](https://youtu.be/7IoXciSucw4?si=CiANlBQtgmibmWci "video")
-- **Debloating Java Dependencies**. PhD defense presented at KTH, June 2023. [Video](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw "video") [Slides](/files/thesis/slides/cesar-phd-defense.pptx)
+- **Debloating Java Dependencies**. PhD defense presented at KTH, June 2023. [Video](https://youtu.be/Ub684G_aM5Q?si=5Ow61XFEGmtP9ZZw "video") [Slides](/files/thesis/slides/2023_debloating-java-dependencies_kth-phd-defense_cesar-soto-valero.pptx)
 - **Software Supply Chain Security**. Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [Digital Futures](https://www.digitalfutures.kth.se/) in KTH, Sponsored by the [Swedish National Hacking Team](https://snht.se/) and [Cparta Cyber Defense](https://www.cparta.se/), June 2023. [Slides](https://docs.google.com/presentation/d/1ki5KITPSciccI1Qdh3wb7GOjdw8jq-CFbY-mvXLUv2c/edit?usp=sharing)
 - **The Software Supply Chain of Crypto and Decentralization**. Presented with [Martin Monperrus](https://www.monperrus.net/martin/) at [_2nd Descentralized Camp Meetup_](https://www.meetup.com/decentralized-camp/events/290035869/), Developers Bay, January 2023. [Slides](https://docs.google.com/presentation/d/14A3n_ZT13ealkTVUNnchS7pE03vOL6cDIQpiIZghuHY/edit?usp=sharing)
 
@@ -65,17 +65,17 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 {% youtube HXj2B8eHmt4 %}
 
-- **Coverage-Based Debloating for Java Bytecode**. Presented at ESEC/FSE, Singapore, November 2022. [Announcement](https://2022.esec-fse.org/details/fse-2022-journal-first/18/Coverage-Based-Debloating-for-Java-Bytecode), [Slides](/files/presentations/FSE'22.pptx "pptx"), [Video](https://youtu.be/HXj2B8eHmt4 "video")
+- **Coverage-Based Debloating for Java Bytecode**. Presented at ESEC/FSE, Singapore, November 2022. [Announcement](https://2022.esec-fse.org/details/fse-2022-journal-first/18/Coverage-Based-Debloating-for-Java-Bytecode), [Slides](/files/talks/2022_coverage-based-debloating-for-java-bytecode_esec-fse_cesar-soto-valero.pptx "pptx"), [Video](https://youtu.be/HXj2B8eHmt4 "video")
 
-- **Automatic Software Debloating**. 80% PhD Seminar. Presented at KTH, November 2022. [Slides](/files/talks/80_percent_2022.pdf "pdf")
+- **Automatic Software Debloating**. 80% PhD Seminar. Presented at KTH, November 2022. [Slides](/files/talks/2022_automatic-software-debloating_kth-80-percent-seminar_cesar-soto-valero.pdf "pdf")
 
 - **The Multibillion Dollar Software Supply Chain of Ethereum**. Presented at _1st Workshop on the Software Supply Chain_, KTH, Sweden, October 2022. [Slides](https://docs.google.com/presentation/d/16yingW3HUNj6XmAfFFc_qz1bSI-ZRfV0/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
 
-- **Automatic Software Debloating**. Poster presented during _EECS Summer Event_, KTH, Sweden, June 2022. [Poster](/files/posters/poster-scs-48x36.pdf)
+- **Automatic Software Debloating**. Poster presented during _EECS Summer Event_, KTH, Sweden, June 2022. [Poster](/files/posters/2022_automatic-software-debloating-poster_kth-eecs-summer-event_cesar-soto-valero.pdf)
 
 - **Java is Going to the Moon: Native Images with GraalVM**. Presented at KTH, May 2022. [Slides](https://docs.google.com/presentation/d/1JDVerE77ZWLqwtWP430QXF1KTd4RhKoD/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
 
-- **A Prime on Software Debloating**. Presented at KTH, March 2022. [Slides](/files/talks/A_Prime_On_Software_Debloating.pdf "pdf")
+- **A Prime on Software Debloating**. Presented at KTH, March 2022. [Slides](/files/talks/2022_a-prime-on-software-debloating_kth_cesar-soto-valero.pdf "pdf")
 
 - **The Software Supply Chain of Enterprise Java Ethereum Nodes**. Presented at KTH, January 2022. [Slides](https://docs.google.com/presentation/d/1pZGJ_9X_mvOzaqlelQbSyPI9opo6V_e1/edit?usp=sharing&ouid=117859204590242341300&rtpof=true&sd=true)
 
@@ -85,11 +85,11 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 - **DepClean: Automatically Revealing Bloated Software Dependencies in Maven Projects**. Presented at FOSDEM, February 2021. [Video](https://youtu.be/8SndbPMwdWE "video")
 
-- **The Software Production Landscape**. Presented at KTH, September 2021. [Slides](/files/presentations/software-production-landscape.pptx)
+- **The Software Production Landscape**. Presented at KTH, September 2021. [Slides](/files/talks/2021_the-software-production-landscape_kth_cesar-soto-valero.pptx)
 
-- **A Longitudinal Analysis of Bloated Java Dependencies**. Presented at ESEC/FSE, August 2021. [Announcement](https://2021.esec-fse.org/details/fse-2021-papers/58/A-Longitudinal-Analysis-of-Bloated-Java-Dependencies), [Slides](/files/presentations/FSE'21.pptx "pptx"), [Video](https://youtu.be/cePEl485E_s "video")
+- **A Longitudinal Analysis of Bloated Java Dependencies**. Presented at ESEC/FSE, August 2021. [Announcement](https://2021.esec-fse.org/details/fse-2021-papers/58/A-Longitudinal-Analysis-of-Bloated-Java-Dependencies), [Slides](/files/talks/2021_a-longitudinal-analysis-of-bloated-java-dependencies_esec-fse_cesar-soto-valero.pptx "pptx"), [Video](https://youtu.be/cePEl485E_s "video")
 
-- **Automated Software Debloat**. 50% PhD Seminar. Presented at KTH, April 2021. [Slides](/files/talks/50percent_seminar_kth_2021.pdf "pdf")
+- **Automated Software Debloat**. 50% PhD Seminar. Presented at KTH, April 2021. [Slides](/files/talks/2021_automated-software-debloat_kth-50-percent-seminar_cesar-soto-valero.pdf "pdf")
 
 ## 2020
 
@@ -107,7 +107,7 @@ Below is a non-exhaustive list of my past talks in reverse chronological order.
 
 - **WASP Presentation**. Presented at _Nanyang Technological University_, Singapore, October 2019. [Slides](https://docs.google.com/presentation/d/1-B3YfX5xulYgq30IVhv0bLwPHFrtbaRbzZu61TA_U2k/edit?usp=sharing#slide=id.g655fad9d75_6_147)
 
-- **Studying Bloated Dependencies in the Maven Ecosystem**. Poster presented during _CASTOR Software Days_, KTH, Sweden, October 2019. [Slides](/files/posters/Castor-Software-Days-WASP-Poster.pdf)
+- **Studying Bloated Dependencies in the Maven Ecosystem**. Poster presented during _CASTOR Software Days_, KTH, Sweden, October 2019. [Slides](/files/posters/2019_studying-bloated-dependencies-in-the-maven-ecosystem-poster_castor-software-days-kth_cesar-soto-valero.pdf)
 
 - **The Emergence of Software Diversity in Maven Central**. Presented at _16th International Conference on Mining Software Repositories_ (MSR), Montreal, Canada, May 2019. [Announcement](https://2019.msrconf.org/details/msr-2019-papers/6/The-Emergence-of-Software-Diversity-in-Maven-Central)
 

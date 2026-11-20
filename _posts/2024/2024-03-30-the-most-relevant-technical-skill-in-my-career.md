@@ -97,7 +97,7 @@ This preliminary step ensures that the solution is effectively tailored to the i
 # EDA: The Ubiquitous Technical Skill
 
 I've been practicing EDA for over 12 years now.
-I began dealing with data during my undergraduate studies in Computer Science, and later when working on my [PhD](/files/thesis/cesar-fulltext.pdf).
+I began dealing with data during my undergraduate studies in Computer Science, and later when working on my [PhD](/files/thesis/2023_debloating-java-dependencies_kth-phd-thesis_cesar-soto-valero.pdf).
 Interestingly, I've done it not because I particularly enjoy it (which I do), but because it was essential for my research.
 On the other hand, working as a software developer now, my data analysis skills have opened doors to new opportunities to showcase my research abilities.
 The two following section focus this journey.

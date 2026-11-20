@@ -14,9 +14,9 @@ Here are the results of some of my races in Stockholm.
 
 | Race           | Year | Distance | Time     | Proof                                                                                           |
 |----------------|------|----------|----------|-------------------------------------------------------------------------------------------------|
-| [Midnattsloppet](https://midnattsloppet.com) | 2025 | 10 km    | 00:48:57 | [:link: Link](https://tinyurl.com/ya5b8zef) [Diplom](files/certificates/Midnattsloppet_Diplom_2025.pdf) |
-| [Midnattsloppet](https://midnattsloppet.com) | 2024 | 10 km    | 00:50:01 | [:link: Link](https://tinyurl.com/ya5b8zef) [Diplom](files/certificates/Midnattsloppet_Diplom_2024.pdf)                         |
+| [Midnattsloppet](https://midnattsloppet.com) | 2025 | 10 km    | 00:48:57 | [:link: Link](https://tinyurl.com/ya5b8zef) [Diplom](files/certificates/2025_midnattsloppet-diploma_midnattsloppet_cesar-soto-valero.pdf) |
+| [Midnattsloppet](https://midnattsloppet.com) | 2024 | 10 km    | 00:50:01 | [:link: Link](https://tinyurl.com/ya5b8zef) [Diplom](files/certificates/2024_midnattsloppet-diploma_midnattsloppet_cesar-soto-valero.pdf)                         |
 | [Blodomloppet](https://blodomloppet.se/)   | 2024 | 10 km    | 00:48:00 | [:link: Link](https://www.racetimer.se/sv/runner/show/8704624?layout=racetimer&race_id=6034) [Screenshot](files/certificates/Blodomloppet-Result-2024.png)    |
 | [Blodomloppet](https://blodomloppet.se/)   | 2023 | 10 km    | 00:52:27 | [:link: Link](https://www.racetimer.se/sv/runner/show/8204163?layout=blodomloppet&race_id=5627) [Screenshot](files/certificates/Blodomloppet-Result-2023.png)) |
-| [Midnattsloppet](https://midnattsloppet.com) | 2022 | 10 km    | 00:52:28 | [:link: Link](https://tinyurl.com/ya5b8zef) [Diplom](files/certificates/Midnattsloppet_Diplom_2022.pdf) |
+| [Midnattsloppet](https://midnattsloppet.com) | 2022 | 10 km    | 00:52:28 | [:link: Link](https://tinyurl.com/ya5b8zef) [Diplom](files/certificates/2022_midnattsloppet-diploma_midnattsloppet_cesar-soto-valero.pdf) |
 {: .border-bottom-on-table }

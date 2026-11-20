@@ -44,7 +44,7 @@ Along the time, I meet many talented and creative software artists, and even sha
 
 By being exposed to they work, I learned that art is a powerful tool for making science resonate with hearts and minds.
 One day, I was talking with [Maria Kling](https://www.linkedin.com/in/maria-euler-art-science-design), and she suggested me to create a comic to explain my PhD thesis in a fun and engaging way.
-We had a few meetings where I explained the content of [my PhD thesis](/files/thesis/cesar-fulltext.pdf).
+We had a few meetings where I explained the content of [my PhD thesis](/files/thesis/2023_debloating-java-dependencies_kth-phd-thesis_cesar-soto-valero.pdf).
 Explaining software concepts to software artists is easy, as many of them are great coders.
 
 The picture above shows the output of the first meeting.
@@ -55,7 +55,7 @@ The goal was to create a comic to show the usefulness of these software tools: [
 
 # The Result
 
-The full comic in PDF form is available [here](/files/thesis/phd-comic/comicfoldprintpagesreorderedadjusted.pdf).
+The full comic in PDF form is available [here](/files/thesis/phd-comic/2023_phd-comic-foldable-print-pages_cesar-soto-valero.pdf).
 More details as follows.
 
 ## First Contribution

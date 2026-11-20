@@ -38,11 +38,11 @@
   type: thesis
   links:
   - label: Full text
-    url: /files/thesis/cesar-fulltext.pdf
+    url: /files/thesis/2023_debloating-java-dependencies_kth-phd-thesis_cesar-soto-valero.pdf
   - label: Kappa (KTH)
     url: "https://kth.diva-portal.org/smash/get/diva2:1755964/FULLTEXT03.pdf"
   - label: Slides
-    url: /files/thesis/slides/cesar-phd-defense.pptx
+    url: /files/thesis/slides/2023_debloating-java-dependencies_kth-phd-defense_cesar-soto-valero.pptx
   - label: Video
     url: "https://youtu.be/Ub684G_aM5Q"
 
@@ -166,6 +166,8 @@
     url: "https://dx.doi.org/10.1016/j.jss.2020.110645"
   - label: Tool
     url: "https://github.com/ASSERT-KTH/decompilercmp"
+  - label: Text
+    url: /files/publications/2020_java-decompiler-diversity-and-its-application-to-meta-decompilation_jss_cesar-soto-valero.pdf
 
 - title: "Evaluation of the Bilateral Function in Para-athletes with Spastic Hemiplegia: a Model-based Clustering Approach"
   authors: "Raúl Reina, David Barbado, César Soto-Valero, José M. Sarabia, and Alba Roldán"
@@ -175,6 +177,8 @@
   links:
   - label: DOI
     url: "https://dx.doi.org/10.1016/j.jsams.2020.01.003"
+  - label: Text
+    url: /files/publications/2020_evaluation-of-the-bilateral-function-in-para-athletes-with-spastic-hemiplegia_jsams_cesar-soto-valero.pdf
 
 - title: Pronóstico de las Condiciones del Ganado Vacuno en Cuba a Través de Modelos ARIMA
   authors: "Ismabel María Domínguez-Hurtado, and César Soto-Valero"
@@ -245,6 +249,8 @@
   links:
   - label: DOI
     url: "https://doi.org/10.1080/23742917.2018.1483876"
+  - label: Text
+    url: /files/publications/2018_empirical-study-of-malware-diversity-in-major-android-markets_journal-of-cyber-security-technology_cesar-soto-valero.pdf
 
 - title: Detection and Analysis of Behavioral T-patterns in Debugging Activities
   authors: "César Soto-Valero, Yohan Bourcier, and Benoit Baudry"
@@ -254,6 +260,8 @@
   links:
   - label: DOI
     url: "https://dx.doi.org/10.1145/3196398.3196452"
+  - label: Text
+    url: /files/publications/2018_detection-and-analysis-of-behavioral-t-patterns-in-debugging-activities_msr_cesar-soto-valero.pdf
 
 - title: Application of Machine Learning Methods for Analyzing and Predicting Sport Outcomes
   authors: César Soto-Valero
@@ -263,6 +271,8 @@
   links:
   - label: DOI
     url: "https://dx.doi.org/10.47197/retos.v0i34.58506"
+  - label: Text
+    url: /files/publications/2018_application-of-machine-learning-methods-for-analyzing-and-predicting-sport-outcomes_retos_cesar-soto-valero.pdf
 
 - title: Some Notes on Software Diversification and Test Amplification Using Machine Learning Methods
   authors: César Soto-Valero
@@ -272,6 +282,8 @@
   links:
   - label: DOI
     url: "https://dx.doi.org/10.13140/RG.2.2.34270.54083"
+  - label: Text
+    url: /files/publications/2017_some-notes-on-software-diversification-and-test-amplification_technical-report_cesar-soto-valero.pdf
 
 - title: "A Predictive Model for Analyzing the Starting Pitchers' Performance Using Time Series Classification Methods"
   authors: "César Soto-Valero, Mabel González, and Irvin Pérez"
@@ -281,6 +293,8 @@
   links:
   - label: DOI
     url: "https://dx.doi.org/10.1080/24748668.2017.1354544"
+  - label: Text
+    url: /files/publications/2017_a-predictive-model-for-analyzing-the-starting-pitchers-performance_ijpas_cesar-soto-valero.pdf
 
 - title: "A Gaussian Mixture Clustering Model for Characterizing Football Players Using the EA Sports' FIFA Video Game System"
   authors: César Soto-Valero
@@ -290,6 +304,8 @@
   links:
   - label: DOI
     url: "https://dx.doi.org/10.5232/ricyde2017.04904"
+  - label: Text
+    url: /files/publications/2017_a-gaussian-mixture-clustering-model-for-characterizing-football-players_ricyde_cesar-soto-valero.pdf
 
 - title: Predictive Models Applied to Baseball
   authors: César Soto-Valero
@@ -300,6 +316,8 @@
   links:
   - label: DOI
     url: "https://dx.doi.org/10.13140/RG.2.2.14806.65600"
+  - label: Text
+    url: /files/publications/2016_predictive-models-applied-to-baseball_uclv-master-thesis_cesar-soto-valero.pdf
 
 - title: "Predicting Win-Loss Outcomes in MLB Regular Season Games: A Comparative Study Using Data Mining Methods"
   authors: César Soto-Valero
@@ -309,6 +327,8 @@
   links:
   - label: DOI
     url: "https://dx.doi.org/10.1515/ijcss-2016-0007"
+  - label: Text
+    url: /files/publications/2016_predicting-win-loss-outcomes-in-mlb-regular-season-games_ijcss_cesar-soto-valero.pdf
 
 - title: "ACI-Polo: Sistema Computacional para el Análisis de la Actividad Competitiva Individual en Juegos de Polo Acuático"
   authors: "César Soto-Valero, Irvin Pérez, Mabel González, and Alexander de la Celda"
@@ -318,6 +338,8 @@
   links:
   - label: Paper
     url: "https://rcci.uci.cu/?journal=rcci&page=article&op=view&path%5B%5D=1099"
+  - label: Text
+    url: /files/publications/2016_aci-polo-sistema-computacional-para-el-analisis-de-la-actividad-competitiva_rcci_cesar-soto-valero.pdf
 
 - title: Paquete para la Clasificación de Series Temporales en Weka
   authors: César Soto-Valero and Mabel González
@@ -327,6 +349,8 @@
   links:
   - label: Paper
     url: "http://www.informaticahabana.cu/es/node/1630"
+  - label: Text
+    url: /files/publications/2016_paquete-para-la-clasificacion-de-series-temporales-en-weka_cci-la-habana_cesar-soto-valero.pdf
 
 - title: Sabermetrics and New Trends in the Statistical Analysis of Baseball
   authors: César Soto-Valero and Mabel González
@@ -336,6 +360,8 @@
   links:
   - label: DOI
     url: "https://dx.doi.org/10.47197/retos.v0i28.34826"
+  - label: Text
+    url: /files/publications/2015_sabermetrics-and-new-trends-in-the-statistical-analysis-of-baseball_retos_cesar-soto-valero.pdf
 
 - title: Propuesta de Ejercicios para Mejorar la Efectividad de las Habilidades Defensivas en Boxeadores Juveniles
   authors: "María S. Ibarra-Vargas, César Soto-Valero, Yasiel Martínez-Díaz, and R. Felipe Heredia-Torres"
@@ -345,6 +371,8 @@
   links:
   - label: Paper
     url: "http://www.reefd.es/index.php/reefd/article/view/115"
+  - label: Text
+    url: /files/publications/2015_propuesta-de-ejercicios-para-mejorar-la-efectividad-de-las-habilidades-defensivas_reefd_cesar-soto-valero.pdf
 
 - title: Minería de Datos para Series Temporales
   authors: Mabel González and César Soto-Valero
@@ -364,3 +392,5 @@
   links:
   - label: Paper
     url: "https://dspace.uclv.edu.cu/handle/123456789/1935"
+  - label: Text
+    url: /files/publications/2013_mineria-de-datos-para-series-temporales-en-weka_uclv-bachelor-thesis_cesar-soto-valero.pdf

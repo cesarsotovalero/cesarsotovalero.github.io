@@ -71,7 +71,7 @@ In the following, I will divide each section of the test into parts and give sug
 # Listening
 
 The Listening Test takes between 30 minutes.
-You have 20 minutes to listen to a recording and 10 minutes to transfer your answers to the [Listening Answer Sheet](https://cesarsotovalero.github.io/files/IELTS_Listening_Answer_Sheet.pdf).
+You have 20 minutes to listen to a recording and 10 minutes to transfer your answers to the [Listening Answer Sheet](/files/posts/2017/2017-10-26/IELTS_Listening_Answer_Sheet.pdf).
 The sheet has 4 sections, with 40 questions in total.
 You need to answer all the questions as you listen to the recording.
 The recording is not paused at any time, and you hear it only once.
@@ -107,7 +107,7 @@ As I said before, time is your greatest enemy.
 In the Listening Test, you don’t need to worry about time, but the Reading Test is a different story.
 You need to manage it very carefully yourself.
 Be smart, due to the progression in level of difficulty, spend 15 minutes on the first passage, 20 minutes on the second, and 25 on the last one.
-In each passage, set aside 2 minutes to copy your answers to the [Reading Answer Sheet](https://cesarsotovalero.github.io/files/IELTS_Reading_Answer_Sheet.pdf).
+In each passage, set aside 2 minutes to copy your answers to the [Reading Answer Sheet](/files/posts/2017/2017-10-26/IELTS_Reading_Answer_Sheet.pdf).
 
 Here is a list of tips and tricks I learned during my training for the reading test:
 
@@ -139,7 +139,7 @@ The second task is to write an essay on a given topic, present and justify an op
 
 The essay is the most crucial part of the Writing Test (it counts for nearly 70% of the score).
 Writing the report must not take you more than 20 minutes, so there will be 40 minutes left for the essay.
-You will receive two [Writing Answer Sheets](https://cesarsotovalero.github.io/files/IELTS_Writing_Answer_Sheet.pdf) to write on.
+You will receive two [Writing Answer Sheets](/files/posts/2017/2017-10-26/IELTS_Writing_Answer_Sheet.pdf) to write on.
 Keep your writing neat, clean, and nice-looking.
 Leave a blank line between paragraphs and don't write in the margins of the Answer Sheet.
 Don't make a mess even if you have made a mistake; erase it as fast as you can.
@@ -183,7 +183,7 @@ In the end, the examiner might ask you a couple of additional questions.
 In the third subpart of the test, you discuss it with the examiner.
 The topic is somehow related to the one from section two, but it is about more abstract ideas.
 You have to express and justify your opinions.
-Speaking performance is evaluated according to a set of [Speaking Band Descriptors](https://cesarsotovalero.github.io/files/IELTS_Speaking_Band_Descriptors.pdf) you should know.
+Speaking performance is evaluated according to a set of [Speaking Band Descriptors](/files/posts/2017/2017-10-26/IELTS_Speaking_Band_Descriptors.pdf) you should know.
 
 Here is a list of general tips and tricks I learned during my training for the Speaking Test:
 

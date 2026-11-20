@@ -1,1 +1,0 @@
-My publications to date.

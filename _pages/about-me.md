@@ -36,7 +36,7 @@ I'm based in Stockholm, Sweden. Here's my [one-page résumé](/files/CV/cesar-re
 
 From 2018 to 2023, I did my PhD in Computer Science at [KTH Royal Institute of Technology](https://kth.se), supervised by Profs. [Benoit Baudry](https://www.kth.se/profile/baudry) and [Martin Monperrus](https://www.monperrus.net/martin), and funded by the [Wallenberg Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org).
 
-My [PhD thesis](/files/thesis/cesar-fulltext.pdf) is about software debloating: see the [defense video](https://youtu.be/Ub684G_aM5Q), my [living review of papers](/software-debloating-papers), and my [list of tools](/software-debloating-tools).
+My [PhD thesis](/files/thesis/2023_debloating-java-dependencies_kth-phd-thesis_cesar-soto-valero.pdf) is about software debloating: see the [defense video](https://youtu.be/Ub684G_aM5Q), my [living review of papers](/software-debloating-papers), and my [list of tools](/software-debloating-tools).
 
 I also hold a BSc and MSc in Computer Science, and a long time ago I [participated in ACM-ICPC programming contests](/competitions).
 

@@ -153,13 +153,13 @@ The following are the three most common approaches, and how they might have help
 
 # Conclusion
 
-{% badge ../files/thesis/thesis_first_page.png 140 ../files/thesis/cesar-fulltext.pdf %}
+{% badge ../files/thesis/thesis_first_page.png 140 ../files/thesis/2023_debloating-java-dependencies_kth-phd-thesis_cesar-soto-valero.pdf %}
 The Log4j vulnerability offers a poignant lesson on the latent dangers of reusing third-party code.
 It emphasizes the security benefits of minimizing codebases and removing unused features from dependencies.
 Ideally, **developers should ship to production only what is actually necessary for a given application or service**, thereby reducing its overall attack surface.
 In our increasingly security-conscious world, using code debloating techniques might shift from being an optional code minimization technique to becoming a critical security measure. With debloating in place,  future incidents like the Log4j vulnerability will be prevented.
 
-**UPDATE:** If you want to learn more about software debloating in Java, I wrote my PhD thesis on this subject, check it out [here](/files/thesis/cesar-fulltext.pdf).
+**UPDATE:** If you want to learn more about software debloating in Java, I wrote my PhD thesis on this subject, check it out [here](/files/thesis/2023_debloating-java-dependencies_kth-phd-thesis_cesar-soto-valero.pdf).
 
 # References
 
