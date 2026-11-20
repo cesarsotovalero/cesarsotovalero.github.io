@@ -26,8 +26,6 @@ jobs:
       cancel-in-progress: true
 
     steps:
-      # A plain shallow checkout. (A partial, sparse checkout that skipped fonts/unused-fonts was
-      # tried and was slower: git then downloads file contents in one on-demand batch, ~100s vs ~60s.)
       - name: Checkout repository
         uses: actions/checkout@v7
 

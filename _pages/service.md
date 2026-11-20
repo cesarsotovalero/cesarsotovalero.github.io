@@ -56,12 +56,12 @@ Also, my name is listed in the acknowledgments of the following papers:
 
 I've supervised Master and Bachelor students in the following theses:
 
-1. "Detecting Semantic Changes in Dependency Updates Using Dynamic Analysis," [Leonard Sebastian Husmann](https://www.linkedin.com/in/leonard-husmann/), **Master Thesis**, KTH 2024 [PDF](https://kth.diva-portal.org/smash/get/diva2:1985091/FULLTEXT01.pdf)
-2. "Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests," [Jacob Jernestål](https://www.linkedin.com/in/jacobjernestaal/), **Bachelor Thesis**, Mid Sweden University 2024 [PDF](https://www.diva-portal.org/smash/get/diva2:1877917/FULLTEXT01.pdf)
-3. "The State of Software Diversity in the Software Supply Chain of Ethereum Clients," Noak Jönsson, **Bachelor Thesis**, KTH 2022 [PDF](/files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf)
-4. "Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes," [Martin Sköld](https://www.linkedin.com/in/martin-sk%C3%B6ld-73b254155/), **Master Thesis**, KTH 2020 [PDF](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf)
-5. "Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning," [Gustaf Halvardsson](https://www.linkedin.com/in/gustafhalvardsson/) and [Johanna Peterson](https://www.linkedin.com/in/johannamariapeterson/), **Bachelor Thesis**, KTH 2020 [PDF](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf)
-6. "Análisis de La Actividad Competitiva en el Juego de Polo Acuático," [Pascalina Stanislas-Inglis](https://www.linkedin.com/in/pascalina-stanislas-inglis-702636102/). **Bachelor Thesis**, UCLV 2014 [PDF](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf)
+1. "Detecting Semantic Changes in Dependency Updates Using Dynamic Analysis," [Leonard Sebastian Husmann](https://www.linkedin.com/in/leonard-husmann/), **Master Thesis**, KTH 2024 [Text](https://kth.diva-portal.org/smash/get/diva2:1985091/FULLTEXT01.pdf)
+2. "Evolving Trends in the Adoption and Effectiveness of Dependabot Security Pull Requests," [Jacob Jernestål](https://www.linkedin.com/in/jacobjernestaal/), **Bachelor Thesis**, Mid Sweden University 2024 [Text](https://www.diva-portal.org/smash/get/diva2:1877917/FULLTEXT01.pdf)
+3. "The State of Software Diversity in the Software Supply Chain of Ethereum Clients," Noak Jönsson, **Bachelor Thesis**, KTH 2022 [Text](/files/publications/The_State_Of_Software_Diversity_In_The_Software_Supply_Chain.pdf)
+4. "Using NLP Techniques for Log Analysis to Recommend Activities for Troubleshooting Processes," [Martin Sköld](https://www.linkedin.com/in/martin-sk%C3%B6ld-73b254155/), **Master Thesis**, KTH 2020 [Text](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf)
+5. "Interpretation of Swedish Sign Language Based on a Small Data Set using Convolutional Neural Networks and Transfer Learning," [Gustaf Halvardsson](https://www.linkedin.com/in/gustafhalvardsson/) and [Johanna Peterson](https://www.linkedin.com/in/johannamariapeterson/), **Bachelor Thesis**, KTH 2020 [Text](http://www.diva-portal.org/smash/get/diva2:1449866/FULLTEXT01.pdf)
+6. "Análisis de La Actividad Competitiva en el Juego de Polo Acuático," [Pascalina Stanislas-Inglis](https://www.linkedin.com/in/pascalina-stanislas-inglis-702636102/). **Bachelor Thesis**, UCLV 2014 [Text](http://dspace.uclv.edu.cu/bitstream/handle/123456789/6788/Tesis%20Pascalina%20Stanislas%20Final.pdf)
 
 # Volunteer
 
