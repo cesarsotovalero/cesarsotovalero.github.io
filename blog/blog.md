@@ -102,3 +102,4 @@ pagefind: false
    apply(initial, false);
 })();
 </script>
+<script src="/js/filter-row.js" defer></script>

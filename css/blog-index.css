@@ -236,3 +236,36 @@
     height: 64px;
   }
 }
+
+/* ---------- Phones: the topics scroll sideways in one row ----------
+   Wrapped, they filled the whole first screen before any post. The row runs to the screen edges, and
+   fades out at the right edge to show that there is more. */
+
+@media (max-width: 760px) {
+  .blog-filters ul {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 0 -15px;
+    padding: 2px 15px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-padding: 0 15px;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent);
+  }
+
+  .blog-filters ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .blog-filters li {
+    flex: none;
+  }
+
+  /* Scrolled to the end: no fade over the last topic. */
+  .blog-filters ul.is-scrolled-end {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
