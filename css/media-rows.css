@@ -43,3 +43,8 @@
     border-radius: 8px;
   }
 }
+
+/* Keep each metric's icon and value on the same line. */
+.meta-item {
+  white-space: nowrap;
+}

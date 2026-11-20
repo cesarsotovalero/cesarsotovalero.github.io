@@ -29,9 +29,9 @@
       <a class="blog-row-title" href="{{ post.url }}" target="_blank" rel="noopener">{{ post.text | truncatewords: 15 }}</a>
       <span class="blog-meta">
         <time datetime="{{ post.posted_at.date | date_to_xmlschema }}">{{ post.posted_at.date | date: li_date_format }}</time>
-        · <i class="fas fa-thumbs-up" aria-hidden="true"></i> Reactions: {{ post.totalReactionCount | default: 0 }}
-        · <i class="fas fa-comments" aria-hidden="true"></i> Comments: {{ post.commentsCount | default: 0 }}
-        · <i class="fas fa-retweet" aria-hidden="true"></i> Repost: {{ post.repostsCount | default: 0 }}
+        · <span class="meta-item"><i class="fas fa-thumbs-up" aria-hidden="true"></i> Reactions: {{ post.totalReactionCount | default: 0 }}</span>
+        · <span class="meta-item"><i class="fas fa-comments" aria-hidden="true"></i> Comments: {{ post.commentsCount | default: 0 }}</span>
+        · <span class="meta-item"><i class="fas fa-retweet" aria-hidden="true"></i> Repost: {{ post.repostsCount | default: 0 }}</span>
       </span>
     </div>
   </li>
