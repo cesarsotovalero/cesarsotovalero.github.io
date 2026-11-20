@@ -13,7 +13,7 @@
    {% endif %}
    <div class="home-featured-text">
       <p class="home-kicker">Latest essay</p>
-      <h2 class="home-featured-title" id="home-featured-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <h2 class="home-featured-title" id="home-featured-title" style="view-transition-name: post-{{ post.slug | slugify }}"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       {% if post.subtitle %}<p class="home-featured-subtitle">{{ post.subtitle }}</p>{% endif %}
       {% if post.description %}<p class="home-featured-excerpt">{{ post.description | strip_html | strip_newlines | truncatewords: 34 }}</p>{% endif %}
       <p class="blog-meta">

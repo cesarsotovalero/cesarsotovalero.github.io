@@ -47,7 +47,7 @@ pagefind: false
             <img class="thumb-round blog-row-thumb" src="{{ post.image | thumbnail }}" alt="" width="80" height="80" loading="lazy" decoding="async">
             {% endif %}
             <div class="blog-row-text">
-            <a class="blog-row-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <a class="blog-row-title" href="{{ post.url | relative_url }}" style="view-transition-name: post-{{ post.slug | slugify }}">{{ post.title }}</a>
             {% if post.subtitle %}<span class="blog-row-subtitle">{{ post.subtitle }}</span>{% endif %}
             <span class="blog-meta">
                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time> · {% if words < 180 %}1{% else %}{{ words | divided_by: 180 }}{% endif %} min read{% for tag in post.tags %} · <a class="blog-row-tag" href="{{ site.baseurl }}/tag/{{ tag }}"><i class="fas fa-tag" aria-hidden="true"></i> {{ tag }}</a>{% endfor %}

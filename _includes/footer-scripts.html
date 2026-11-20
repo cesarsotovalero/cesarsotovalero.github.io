@@ -45,3 +45,30 @@
   });
 </script>
 {% endif %}
+
+{% comment %}
+  Instant navigation (Speculation Rules, Chrome and Edge): a page on this site is fetched when the pointer
+  rests on its link, and fully rendered when the link is pressed, so it usually opens at once. Other
+  browsers ignore this. Excluded: files, feeds, search index, heavy visualizations, new-tab and download
+  links, and the blog topic filters (handled in the page).
+{% endcomment %}
+<script type="speculationrules">
+{
+  "prefetch": [{
+    "where": { "and": [
+      { "href_matches": "/*" },
+      { "not": { "href_matches": ["/files/*", "/pagefind/*", "/visualizations/*", "/asciinema/*", "/*.pdf", "/*.xml", "/*.json", "/*.txt"] } },
+      { "not": { "selector_matches": "[target=_blank], [download], [rel~=nofollow], .blog-filter" } }
+    ]},
+    "eagerness": "moderate"
+  }],
+  "prerender": [{
+    "where": { "and": [
+      { "href_matches": "/*" },
+      { "not": { "href_matches": ["/files/*", "/pagefind/*", "/visualizations/*", "/asciinema/*", "/*.pdf", "/*.xml", "/*.json", "/*.txt"] } },
+      { "not": { "selector_matches": "[target=_blank], [download], [rel~=nofollow], .blog-filter" } }
+    ]},
+    "eagerness": "conservative"
+  }]
+}
+</script>

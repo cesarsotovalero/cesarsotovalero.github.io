@@ -105,9 +105,25 @@ html.nav-hidden .site-header:not(:focus-within) {
   text-decoration: none;
 }
 
-/* Current section: underlined. */
+/* Current section: underlined. The line is its own element so that, between pages, it can slide from
+   the old section to the new one (view-transition-name in ui.css). */
+.site-nav-links a {
+  position: relative;
+}
+
 .site-nav-links a.is-active {
-  border-bottom-color: var(--main-text-color);
+  border-bottom-color: transparent;
+}
+
+.site-nav-links a.is-active::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background: var(--main-text-color);
+  view-transition-name: nav-underline;
 }
 
 .site-nav-actions {
