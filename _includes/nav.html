@@ -13,7 +13,7 @@
       </ul>
 
       <div class="site-nav-actions">
-         <a class="site-nav-icon" href="{{ site.baseurl }}/search" aria-label="Search" title="Search">{% include icon.html name="search" %}</a>
+         <a class="site-nav-icon site-nav-search" href="{{ site.baseurl }}/search" aria-label="Search" title="Search">{% include icon.html name="search" %}<kbd class="site-nav-kbd" aria-hidden="true">⌘K</kbd></a>
          <button type="button" class="theme-toggle site-nav-icon" onclick="modeSwitcher()" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode">{% include icon.html name="moon" %}</button>
          <a class="site-nav-cta" href="{{ site.baseurl }}{{ nav.cta.url }}"{% if page.url == nav.cta.url %} aria-current="page"{% endif %}>{{ nav.cta.title }}</a>
          <button type="button" class="site-nav-menu site-nav-icon" commandfor="drawer-menu" command="show-modal" aria-label="Open menu" aria-haspopup="dialog">{% include icon.html name="menu" %}</button>

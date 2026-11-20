@@ -707,3 +707,263 @@ a:focus:not(:focus-visible),
 button:focus:not(:focus-visible) {
   outline: none;
 }
+
+/* ---------- Command palette (js/command-palette.js, _includes/command-palette.html) ---------- */
+
+:root {
+  --cmdk-bg: #fffffb;
+  --cmdk-border: rgba(0, 0, 0, 0.1);
+  --cmdk-shadow: 0 28px 70px -20px rgba(4, 39, 66, 0.35), 0 2px 8px rgba(4, 39, 66, 0.08);
+}
+
+[data-theme="dark"] {
+  --cmdk-bg: #262a31;
+  --cmdk-border: rgba(255, 255, 255, 0.1);
+  --cmdk-shadow: 0 28px 70px -20px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* The shortcut, shown next to the search icon on wide screens with a mouse. */
+.site-nav-kbd {
+  display: none;
+}
+
+@media (min-width: 1100px) and (pointer: fine) {
+  .site-nav-search {
+    gap: 8px;
+    width: auto;
+    height: 36px;
+    padding: 0 6px 0 10px;
+    border: 1px solid var(--nav-border);
+    border-radius: 999px;
+  }
+
+  .site-nav-kbd {
+    display: inline-block;
+    padding: 1px 6px;
+    border: 1px solid var(--nav-border);
+    border-radius: 6px;
+    background: transparent;
+    box-shadow: none;
+    color: var(--post-meta-index-color);
+    font-family: var(--font-ui);
+    font-size: var(--fs-min);
+    line-height: 1.4;
+  }
+}
+
+.cmdk {
+  width: min(640px, calc(100vw - 32px));
+  max-width: none;
+  max-height: min(580px, calc(100vh - 96px));
+  margin: 12vh auto auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--cmdk-border);
+  border-radius: 14px;
+  background: var(--cmdk-bg);
+  box-shadow: var(--cmdk-shadow);
+  color: var(--main-text-color);
+  font-family: var(--font-ui);
+}
+
+.cmdk[open] {
+  display: flex;
+  flex-direction: column;
+  animation: cmdk-in 140ms ease-out;
+}
+
+.cmdk::backdrop {
+  background: rgba(12, 16, 22, 0.32);
+  backdrop-filter: blur(2px);
+}
+
+@keyframes cmdk-in {
+  from { opacity: 0; transform: translateY(-6px) scale(0.985); }
+}
+
+.cmdk-field {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px 12px 18px;
+  border-bottom: 1px solid var(--cmdk-border);
+}
+
+.cmdk-icon {
+  flex: none;
+  opacity: 0.55;
+}
+
+.cmdk-input {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: inherit;
+  font-family: var(--font-ui);
+  font-size: 19px;
+  line-height: 1.3;
+}
+
+/* The open palette already shows where focus is; no extra ring around its field. */
+.cmdk .cmdk-input:focus,
+.cmdk .cmdk-input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.cmdk-input::placeholder {
+  color: var(--post-meta-index-color);
+  opacity: 1;
+}
+
+.cmdk-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.cmdk-close {
+  flex: none;
+  padding: 2px 8px;
+  border: 1px solid var(--cmdk-border);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--post-meta-index-color);
+  font-family: var(--font-ui);
+  font-size: var(--fs-min);
+  cursor: pointer;
+}
+
+.cmdk-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 4px 8px 10px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.cmdk-group {
+  padding: 14px 10px 6px;
+  color: var(--post-meta-index-color);
+  font-family: var(--font-caps);
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: lowercase; /* Equity Caps draws lowercase as small capitals */
+}
+
+.cmdk-note {
+  padding: 4px 10px 10px;
+  color: var(--post-meta-index-color);
+  font-size: var(--fs-meta);
+}
+
+.cmdk-option,
+.cmdk-option:hover,
+.cmdk-option:focus {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  column-gap: 16px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cmdk-option[aria-selected="true"] {
+  background: var(--accent-soft);
+}
+
+.cmdk-title {
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.cmdk-hint {
+  grid-row: 1;
+  grid-column: 2;
+  color: var(--post-meta-index-color);
+  font-size: var(--fs-min);
+  white-space: nowrap;
+}
+
+.cmdk-excerpt {
+  display: -webkit-box;
+  grid-column: 1 / -1;
+  margin-top: 2px;
+  overflow: hidden;
+  color: var(--post-meta-index-color);
+  font-size: var(--fs-meta);
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.cmdk-excerpt mark {
+  padding: 0;
+  background: none;
+  color: var(--main-text-color);
+  font-weight: 600;
+}
+
+/* Read out by screen readers ("5 results"), not shown. */
+.cmdk-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.cmdk-help {
+  flex: none;
+  margin: 0;
+  padding: 10px 18px;
+  border-top: 1px solid var(--cmdk-border);
+  color: var(--post-meta-index-color);
+  font-size: var(--fs-min);
+}
+
+.cmdk-help span {
+  margin: 0 4px;
+}
+
+.cmdk-help kbd {
+  padding: 0 5px;
+  border: 1px solid var(--cmdk-border);
+  border-radius: 4px;
+  background: transparent;
+  box-shadow: none;
+  color: inherit;
+  font-family: var(--font-ui);
+  font-size: var(--fs-min);
+}
+
+@media (pointer: coarse) {
+  .cmdk-help {
+    display: none;
+  }
+}
+
+/* Phones: a full-screen sheet. */
+@media (max-width: 600px) {
+  .cmdk {
+    width: 100vw;
+    height: 100dvh;
+    max-height: none;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cmdk[open] {
+    animation: none;
+  }
+}

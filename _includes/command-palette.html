@@ -1,0 +1,37 @@
+{% comment %}
+  Command palette (js/command-palette.js): opens with Cmd/Ctrl+K, "/" or the search icon.
+  Its pages come from _data/navigation.yml, so they follow the menu. Without JavaScript the
+  dialog never opens and the search icon still links to /search.
+{% endcomment %}
+{% assign nav = site.data.navigation %}
+<dialog class="cmdk" id="cmdk" aria-label="Search and commands" closedby="any">
+   <div class="cmdk-field">
+      <svg class="cmdk-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input class="cmdk-input" type="search" placeholder="Search posts, talks and pages, or jump to…" autocomplete="off" spellcheck="false"
+             role="combobox" aria-expanded="true" aria-controls="cmdk-list" aria-autocomplete="list" aria-label="Search or jump to">
+      <button class="cmdk-close" type="button" aria-label="Close">esc</button>
+   </div>
+   <div class="cmdk-list" id="cmdk-list" role="listbox" aria-label="Results"></div>
+   <p class="cmdk-status" role="status" aria-live="polite"></p>
+   <p class="cmdk-help" aria-hidden="true"><kbd>↑</kbd> <kbd>↓</kbd> to move <span>·</span> <kbd>↵</kbd> to open <span>·</span> <kbd>esc</kbd> to close</p>
+</dialog>
+<script type="application/json" id="cmdk-data">
+{
+  "pages": [
+    { "title": "Home", "group": "Pages", "url": "{{ site.baseurl }}/" }
+    {%- for section in nav.sections -%}{%- for item in section.pages -%},
+    { "title": {{ item.title | jsonify }}, "group": {{ section.title | jsonify }}, "url": {{ item.url | prepend: site.baseurl | jsonify }} }
+    {%- endfor -%}{%- endfor -%}
+    {%- for item in nav.footer_contact.pages -%},
+    { "title": {{ item.title | jsonify }}, "group": {{ nav.footer_contact.title | jsonify }}, "url": {{ item.url | prepend: site.baseurl | jsonify }} }
+    {%- endfor %}
+  ],
+  "links": [
+    { "title": "LinkedIn", "url": {{ "https://www.linkedin.com/in/" | append: site.author.linkedin | jsonify }} },
+    { "title": "YouTube", "url": {{ "https://www.youtube.com/" | append: site.author.youtube | jsonify }} },
+    { "title": "GitHub", "url": {{ "https://github.com/" | append: site.author.github | jsonify }} },
+    { "title": "Google Scholar", "url": {{ site.data.profile.google_scholar | jsonify }} }
+  ]
+}
+</script>
+<script src="{{ site.baseurl }}/js/command-palette.js" defer></script>
