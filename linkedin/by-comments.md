@@ -6,6 +6,9 @@ description: LinkedIn posts by César Soto Valero, sorted by number of comments.
 published: true
 sitemap: false
 noindex: true
+css:
+  - "/css/blog-index.css"
+  - "/css/media-rows.css"
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -20,64 +23,38 @@ noindex: true
   <a href="/linkedin/by-comments" class="list-filter">By Comments</a>
 </div>
 
-{% assign sorted_posts = site.data.linkedin-posts.data.posts | sort: "commentsCount" | reverse %}
+{% assign sorted_posts = published_posts | sort: "commentsCount" | reverse %}
 {% assign ranges_order = "100+,10-99,<10" | split: "," %}
+{% assign posts_by_range = "" | split: "" %}
+{% for range in ranges_order %}
+  {% assign filtered = "" | split: "" %}
+  {% for post in sorted_posts %}
+    {% assign n = post.commentsCount | default: 0 %}
+    {% if range == "100+" and n >= 100 %}
+      {% assign filtered = filtered | push: post %}
+    {% elsif range == "10-99" and n >= 10 and n < 100 %}
+      {% assign filtered = filtered | push: post %}
+    {% elsif range == "<10" and n < 10 %}
+      {% assign filtered = filtered | push: post %}
+    {% endif %}
+  {% endfor %}
+  {% assign posts_by_range = posts_by_range | push: filtered %}
+{% endfor %}
 
-<!-- Comments cloud -->
+<!-- Jump to a range -->
 <div class="tag-list">
   {% for range in ranges_order %}
-   <a href="#{{ range }}" class="btn btn-primary tag-btn">
-    <i class="fas fa-comments" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;
-   </a>
+  <a href="#{{ range }}" class="btn btn-primary tag-btn"><i class="fas fa-comments" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;</a>
   {% endfor %}
 </div>
 
-<div id="full-tags-list">
+<section class="blog-archive media-archive">
   {% for range in ranges_order %}
-   {% assign posts_count = 0 %}
-   {% for post in sorted_posts %}
-    {% assign comments = post.commentsCount | default: 0 %}
-    {% assign in_range = false %}
-    {% if range == "100+" and comments >= 100 %}
-      {% assign in_range = true %}
-    {% elsif range == "10-99" and comments >= 10 and comments < 100 %}
-      {% assign in_range = true %}
-    {% elsif range == "<10" and comments < 10 %}
-      {% assign in_range = true %}
-    {% endif %}
-    {% if in_range %}
-      {% assign posts_count = posts_count | plus: 1 %}
-    {% endif %}
-   {% endfor %}
-   <h2 id="{{ range }}" class="linked-section">
-    <i class="fas fa-comments" aria-hidden="true"></i>
-    &nbsp;{{ range }}&nbsp;({{ posts_count }} posts)
-   </h2>
-   <div class="post-list">
-    {% for post in sorted_posts %}
-      {% assign comments = post.commentsCount | default: 0 %}
-      {% assign in_range = false %}
-      {% if range == "100+" and comments >= 100 %}
-       {% assign in_range = true %}
-      {% elsif range == "10-99" and comments >= 10 and comments < 100 %}
-       {% assign in_range = true %}
-      {% elsif range == "<10" and comments < 10 %}
-       {% assign in_range = true %}
-      {% endif %}
-      {% if in_range %}
-       <div class="tag-entry">
-        <a href="{{ post.url }}" target="_blank">{{ post.text | truncatewords: 15 }}</a>
-        <div class="entry-date">
-          <time datetime="{{ post.posted_at.date }}">{{ post.posted_at.date | date: "%b %-d, %Y" }}</time>
-          <span class="post-stats">
-           · <i class="fas fa-comments" aria-hidden="true"></i> {{ post.commentsCount | default: 0 }}
-           · <i class="fas fa-thumbs-up" aria-hidden="true"></i> {{ post.totalReactionCount | default: 0 }}
-           · <i class="fas fa-retweet" aria-hidden="true"></i> {{ post.repostsCount | default: 0 }}
-          </span>
-        </div>
-       </div>
-      {% endif %}
-    {% endfor %}
-   </div>
+  {% assign filtered_posts = posts_by_range[forloop.index0] %}
+  <div class="blog-year">
+    <h2 id="{{ range }}" class="blog-year-title"><i class="fas fa-comments" aria-hidden="true"></i> {{ range }} ({{ filtered_posts.size }})</h2>
+    {% include linkedin-rows.html posts=filtered_posts %}
+  </div>
   {% endfor %}
-</div>
+</section>
+<!-- markdownlint-enable MD033 -->
