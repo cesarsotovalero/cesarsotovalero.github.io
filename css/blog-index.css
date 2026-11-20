@@ -171,7 +171,9 @@
   border-bottom: 0;
 }
 
+/* A block, so a title that wraps keeps its own tight leading instead of the paragraph's. */
 .blog-row-title {
+  display: block;
   font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
   font-size: 20px;
   font-weight: 700;

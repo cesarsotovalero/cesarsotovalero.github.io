@@ -1,0 +1,26 @@
+{% comment %}
+  The latest blog post, given the room of a magazine lead: cover, title, subtitle, a short excerpt and the reading time.
+{% endcomment %}
+{% assign post = site.posts.first %}
+{% if post %}
+{% assign words = post.content | number_of_words %}
+<section class="home-featured" aria-labelledby="home-featured-title">
+   {% if post.image %}
+   {% assign cover_small = post.image | thumbnail %}
+   <a class="home-featured-media" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ cover_small }}" srcset="{{ cover_small }} 480w, {{ post.image }} 650w" sizes="(max-width: 760px) calc(100vw - 32px), 400px" alt="" width="400" height="400" loading="lazy" decoding="async">
+   </a>
+   {% endif %}
+   <div class="home-featured-text">
+      <p class="home-kicker">Latest essay</p>
+      <h2 class="home-featured-title" id="home-featured-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {% if post.subtitle %}<p class="home-featured-subtitle">{{ post.subtitle }}</p>{% endif %}
+      {% if post.description %}<p class="home-featured-excerpt">{{ post.description | strip_html | strip_newlines | truncatewords: 34 }}</p>{% endif %}
+      <p class="blog-meta">
+         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+         · {% if words < 180 %}1{% else %}{{ words | divided_by: 180 }}{% endif %} min read{% for tag in post.tags %} · <a class="blog-row-tag" href="{{ site.baseurl }}/tag/{{ tag }}"><i class="fas fa-tag" aria-hidden="true"></i> {{ tag }}</a>{% endfor %}
+      </p>
+      <a class="home-link" href="{{ post.url | relative_url }}">Read the essay <span class="home-button-arrow" aria-hidden="true">&rarr;</span></a>
+   </div>
+</section>
+{% endif %}

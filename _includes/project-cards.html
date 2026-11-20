@@ -25,22 +25,4 @@
       </li>
       {% endfor %}
    </ul>
-<script>
-(function () {
-  var stars = document.querySelectorAll('.gh-stars[data-repo]');
-  var forks = document.querySelectorAll('.gh-forks[data-repo]');
-  var repos = {};
-  stars.forEach(function (el) { repos[el.dataset.repo] = true; });
-  Object.keys(repos).forEach(function (repo) {
-    fetch('https://api.github.com/repos/' + repo)
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (data) {
-        if (!data) return;
-        var fmt = function (n) { return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : String(n); };
-        document.querySelectorAll('.gh-stars[data-repo="' + repo + '"]').forEach(function (el) { el.textContent = fmt(data.stargazers_count); });
-        document.querySelectorAll('.gh-forks[data-repo="' + repo + '"]').forEach(function (el) { el.textContent = fmt(data.forks_count); });
-      })
-      .catch(function () {});
-  });
-}());
-</script>
+<script src="/js/github-stats.js" defer></script>

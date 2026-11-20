@@ -1,0 +1,161 @@
+{% comment %}
+  "Recent work": one section with tabs instead of a grid of cards per content type. Every panel uses the
+  row layout of the blog, YouTube and LinkedIn lists (css/blog-index.css and css/media-rows.css).
+  Without JavaScript the tabs stay hidden and all panels show, each under its own heading.
+{% endcomment %}
+{% assign work_talks = site.data.talks | where_exp: "t", "t.youtube_id != '' and t.youtube_id" %}
+
+{% comment %} Videos: the latest four that are not already among the talks shown, matched by id or title. {% endcomment %}
+{% capture shown_ids %}{% for t in work_talks limit:4 %}|{{ t.youtube_id }}|{% endfor %}{% endcapture %}
+{% capture shown_titles %}{% for t in work_talks limit:4 %}|{{ t.title | slice: 0, 25 | downcase }}|{% endfor %}{% endcapture %}
+{% assign work_videos = "" | split: "" %}
+{% for video in site.data.youtube-videos %}
+   {% capture video_id %}|{{ video.id }}|{% endcapture %}
+   {% capture video_title %}|{{ video.snippet.title | slice: 0, 25 | downcase }}|{% endcapture %}
+   {% if shown_ids contains video_id or shown_titles contains video_title %}{% continue %}{% endif %}
+   {% assign work_videos = work_videos | push: video %}
+   {% if work_videos.size == 4 %}{% break %}{% endif %}
+{% endfor %}
+
+<section class="home-work" id="home-work" aria-labelledby="home-work-title">
+   <div class="home-work-header">
+      <h2 class="home-section-title" id="home-work-title">Recent work</h2>
+      <div class="home-tabs" role="tablist" aria-labelledby="home-work-title" hidden>
+         <button type="button" class="home-tab" role="tab" id="tab-writing" aria-controls="panel-writing" aria-selected="true">Writing</button>
+         <button type="button" class="home-tab" role="tab" id="tab-talks" aria-controls="panel-talks" aria-selected="false" tabindex="-1">Talks</button>
+         <button type="button" class="home-tab" role="tab" id="tab-videos" aria-controls="panel-videos" aria-selected="false" tabindex="-1">Videos</button>
+         <button type="button" class="home-tab" role="tab" id="tab-research" aria-controls="panel-research" aria-selected="false" tabindex="-1">Research</button>
+         <button type="button" class="home-tab" role="tab" id="tab-software" aria-controls="panel-software" aria-selected="false" tabindex="-1">Software</button>
+      </div>
+   </div>
+
+   <div class="home-panel" role="tabpanel" id="panel-writing" aria-labelledby="tab-writing" tabindex="0">
+      <h3 class="home-panel-title">Writing</h3>
+      <ul class="blog-rows">
+         {% for post in site.posts offset:1 limit:4 %}
+         {% assign words = post.content | number_of_words %}
+         <li class="blog-row">
+            {% if post.image %}<img class="thumb-round blog-row-thumb" src="{{ post.image | thumbnail }}" alt="" width="80" height="80" loading="lazy" decoding="async">{% endif %}
+            <div class="blog-row-text">
+               <a class="blog-row-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+               {% if post.subtitle %}<span class="blog-row-subtitle">{{ post.subtitle }}</span>{% endif %}
+               <span class="blog-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> · {% if words < 180 %}1{% else %}{{ words | divided_by: 180 }}{% endif %} min read</span>
+            </div>
+         </li>
+         {% endfor %}
+      </ul>
+      <p class="home-panel-more"><a class="home-link" href="{{ site.baseurl }}/blog">All {{ site.posts.size }} essays <span class="home-button-arrow" aria-hidden="true">&rarr;</span></a></p>
+   </div>
+
+   <div class="home-panel" role="tabpanel" id="panel-talks" aria-labelledby="tab-talks" tabindex="0">
+      <h3 class="home-panel-title">Talks</h3>
+      <ul class="blog-rows">
+         {% for talk in work_talks limit:4 %}
+         {% capture talk_url %}https://www.youtube.com/watch?v={{ talk.youtube_id }}&list=PL_vMZ-qAAkU70am9FjTKV0f73ASs2578L{% endcapture %}
+         <li class="blog-row">
+            <a class="row-thumb-link" href="{{ talk_url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+               <img class="thumb-rect row-thumb" src="https://img.youtube.com/vi/{{ talk.youtube_id }}/mqdefault.jpg" alt="" width="128" height="72" loading="lazy" decoding="async">
+            </a>
+            <div class="blog-row-text">
+               <a class="blog-row-title" href="{{ talk_url }}" target="_blank" rel="noopener">{{ talk.title }}</a>
+               <span class="blog-meta"><time datetime="{{ talk.published_at | default: talk.date }}">{{ talk.published_at | default: talk.date | date: "%b %-d, %Y" }}</time> · <i class="fas fa-map-marker-alt" aria-hidden="true"></i>&nbsp;{{ talk.event }}</span>
+            </div>
+         </li>
+         {% endfor %}
+      </ul>
+      <p class="home-panel-more"><a class="home-link" href="{{ site.baseurl }}/talks">All {{ site.data.talks.size }} talks <span class="home-button-arrow" aria-hidden="true">&rarr;</span></a></p>
+   </div>
+
+   <div class="home-panel" role="tabpanel" id="panel-videos" aria-labelledby="tab-videos" tabindex="0">
+      <h3 class="home-panel-title">Videos</h3>
+      {% include youtube-rows.html videos=work_videos %}
+      <p class="home-panel-more"><a class="home-link" href="{{ site.baseurl }}/youtube">All {{ site.data.youtube-videos.size }} videos <span class="home-button-arrow" aria-hidden="true">&rarr;</span></a></p>
+   </div>
+
+   <div class="home-panel" role="tabpanel" id="panel-research" aria-labelledby="tab-research" tabindex="0">
+      <h3 class="home-panel-title">Research</h3>
+      <ul class="blog-rows">
+         {% for paper in site.data.selected-papers %}
+         <li class="blog-row">
+            <a class="row-thumb-link" href="{{ paper.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+               <img class="thumb-rect row-thumb row-thumb--paper" src="{{ paper.thumb }}" alt="" width="128" height="72" loading="lazy" decoding="async">
+            </a>
+            <div class="blog-row-text">
+               <a class="blog-row-title" href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>
+               <span class="blog-meta">{{ paper.venue }} · <i class="fas {{ paper.icon }}" aria-hidden="true"></i>&nbsp;{{ paper.note }}</span>
+            </div>
+         </li>
+         {% endfor %}
+      </ul>
+      <p class="home-panel-more"><a class="home-link" href="{{ site.baseurl }}/publications">All publications <span class="home-button-arrow" aria-hidden="true">&rarr;</span></a></p>
+   </div>
+
+   <div class="home-panel" role="tabpanel" id="panel-software" aria-labelledby="tab-software" tabindex="0">
+      <h3 class="home-panel-title">Software</h3>
+      <ul class="blog-rows">
+         {% for app in site.data.portfolio limit:4 %}
+         {% assign repo_slug = app.stars | split: "?" | first %}
+         <li class="blog-row">
+            <a class="row-thumb-link" href="{{ app.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+               <img class="thumb-rect row-thumb row-thumb--logo" src="/img/logos/{{ app.img }}" alt="" width="72" height="72" loading="lazy" decoding="async">
+            </a>
+            <div class="blog-row-text">
+               <a class="blog-row-title" href="{{ app.url }}" target="_blank" rel="noopener">{{ app.title }}</a>
+               <span class="blog-row-subtitle">{{ app.description }}</span>
+               <span class="blog-meta"><span class="meta-item"><i class="fas fa-star" aria-hidden="true"></i> <span class="gh-stars" data-repo="{{ repo_slug }}">–</span> stars</span> · <span class="meta-item"><i class="fas fa-code-branch" aria-hidden="true"></i> <span class="gh-forks" data-repo="{{ repo_slug }}">–</span> forks</span></span>
+            </div>
+         </li>
+         {% endfor %}
+      </ul>
+      <p class="home-panel-more"><a class="home-link" href="{{ site.baseurl }}/software">All {{ site.data.portfolio.size }} projects <span class="home-button-arrow" aria-hidden="true">&rarr;</span></a></p>
+   </div>
+</section>
+
+<script>
+// Tabs (WAI-ARIA pattern): arrow keys, Home and End move between tabs; the choice is kept for the visit.
+(function () {
+   var root = document.getElementById('home-work');
+   if (!root) return;
+   var list = root.querySelector('[role="tablist"]');
+   var tabs = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'));
+   var panels = tabs.map(function (tab) { return document.getElementById(tab.getAttribute('aria-controls')); });
+   var statsLoaded = false;
+
+   function select(index, moveFocus) {
+      tabs.forEach(function (tab, i) {
+         var on = i === index;
+         tab.setAttribute('aria-selected', on ? 'true' : 'false');
+         tab.tabIndex = on ? 0 : -1;
+         panels[i].hidden = !on;
+      });
+      if (moveFocus) tabs[index].focus();
+      try { sessionStorage.setItem('home-tab', tabs[index].id); } catch (e) {}
+      // GitHub star counts are fetched only when someone opens the Software tab.
+      if (tabs[index].id === 'tab-software' && !statsLoaded) {
+         statsLoaded = true;
+         var script = document.createElement('script');
+         script.src = '/js/github-stats.js';
+         document.body.appendChild(script);
+      }
+   }
+
+   tabs.forEach(function (tab, i) {
+      tab.addEventListener('click', function () { select(i, false); });
+      tab.addEventListener('keydown', function (event) {
+         var next = null;
+         if (event.key === 'ArrowRight') next = (i + 1) % tabs.length;
+         else if (event.key === 'ArrowLeft') next = (i - 1 + tabs.length) % tabs.length;
+         else if (event.key === 'Home') next = 0;
+         else if (event.key === 'End') next = tabs.length - 1;
+         if (next !== null) { event.preventDefault(); select(next, true); }
+      });
+   });
+
+   root.classList.add('is-tabbed');
+   list.hidden = false;
+   var saved = null;
+   try { saved = sessionStorage.getItem('home-tab'); } catch (e) {}
+   var start = tabs.findIndex(function (tab) { return tab.id === saved; });
+   select(start > -1 ? start : 0, false);
+})();
+</script>

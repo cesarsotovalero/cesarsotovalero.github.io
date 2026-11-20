@@ -1,0 +1,25 @@
+# Papers featured on the home page (Research tab). The full list is on /publications.
+- title: A Longitudinal Analysis of Bloated Java Dependencies
+  venue: ESEC/FSE 2021
+  note: ACM SIGSOFT Distinguished Paper Award
+  icon: fa-award
+  url: https://dx.doi.org/10.1145/3468264.3468589
+  thumb: /img/papers/thumbs/fse2021.jpg
+- title: A Comprehensive Study of Bloated Dependencies in the Maven Ecosystem
+  venue: EMSE 2021
+  note: Empirical Software Engineering
+  icon: fa-book
+  url: https://dx.doi.org/10.1007/s10664-020-09914-8
+  thumb: /img/papers/thumbs/emse2021.jpg
+- title: Coverage-Based Debloating for Java Bytecode
+  venue: ACM TOSEM 2022
+  note: ACM Transactions on Software Engineering and Methodology
+  icon: fa-book
+  url: https://doi.org/10.1145/3546948
+  thumb: /img/papers/thumbs/tosem2022.jpg
+- title: Automatic Specialization of Third-Party Java Dependencies
+  venue: IEEE TSE 2023
+  note: IEEE Transactions on Software Engineering
+  icon: fa-book
+  url: https://doi.org/10.1109/TSE.2023.3324950
+  thumb: /img/papers/thumbs/tse2023.jpg
