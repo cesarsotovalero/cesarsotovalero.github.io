@@ -1,0 +1,37 @@
+/* YouTube index: the blog's row layout (css/blog-index.css) with a rounded-rectangle thumbnail. */
+
+.youtube-row-thumb-link {
+  order: 2;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.thumb-rect {
+  flex-shrink: 0;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.2s ease;
+}
+
+.blog-row:hover .thumb-rect {
+  filter: none;
+}
+
+.youtube-row-thumb {
+  width: 128px;
+  height: 72px;
+}
+
+.youtube-archive .blog-meta .fas {
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
+@media (max-width: 760px) {
+  .youtube-row-thumb {
+    width: 96px;
+    height: 54px;
+    border-radius: 8px;
+  }
+}
