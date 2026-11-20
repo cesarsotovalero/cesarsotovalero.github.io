@@ -1,6 +1,7 @@
 ---
 permalink: talks
 layout: page
+title_list: true
 title: Talks
 description: Talks and presentations by César Soto Valero
 subtitle: "Conference talks, keynotes, and workshops since 2018"

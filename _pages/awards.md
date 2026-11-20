@@ -1,6 +1,7 @@
 ---
 permalink: awards
 layout: page
+title_list: true
 title: Awards
 subtitle: "Awards and recognition for my research"
 description: List of awards and certificates of César Soto Valero.

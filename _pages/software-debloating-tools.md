@@ -1,6 +1,7 @@
 ---
 permalink: software-debloating-tools
 layout: page
+title_list: true
 title: Software debloating tools
 subtitle: Living tooling list
 description: A living list of tools for program debloating and software specialization.

@@ -1,6 +1,7 @@
 ---
 permalink: competitions
 layout: page
+title_list: true
 title: Competitions
 subtitle: "Programming contests and challenges"
 description: List of competitive events where César Soto Valero has participated.

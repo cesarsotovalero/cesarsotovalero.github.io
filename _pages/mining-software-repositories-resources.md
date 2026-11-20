@@ -1,6 +1,7 @@
 ---
 permalink: mining-software-repositories-resources
 layout: page
+title_list: true
 title: Mining software repositories
 subtitle: List of resources
 published: true

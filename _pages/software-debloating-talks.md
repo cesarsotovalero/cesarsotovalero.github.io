@@ -1,6 +1,7 @@
 ---
 permalink: software-debloating-talks
 layout: page
+title_list: true
 title: Software Debloating Talks
 subtitle: Living talks list
 description: A living list of talks related to software debloating and software specialization.

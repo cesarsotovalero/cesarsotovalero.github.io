@@ -1,6 +1,7 @@
 ---
 permalink: service
 layout: page
+title_list: true
 title: Academic Service
 subtitle: "Peer reviews for journals and conferences"
 description: A list of academic services provided by César Soto Valero

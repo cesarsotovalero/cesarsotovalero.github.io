@@ -1,6 +1,7 @@
 ---
 permalink: podcasts
 layout: page
+title_list: true
 title: Podcasts
 subtitle: "Podcast episodes I've joined as a guest"
 description: List of podcasts where César Soto Valero has participated.

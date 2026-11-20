@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Century Supra T4", "Georgia", "Times New Roman", serif;
+  font-family: "Equity Text A", "Georgia", "Times New Roman", serif;
   font-weight: lighter;
   font-size: 22px;
   text-rendering: optimizeLegibility;
@@ -39,7 +39,8 @@ body {
   font-family: "Equity Text A", "Georgia", "Times New Roman", serif;
 }
 
-/* Blog posts use Century Supra T4 for their reading text instead of Equity. */
+/* Blog posts use Century Supra T4 instead of Equity (the site default). */
+.blog-post,
 .blog-post :where(p, li, dd, dt, figcaption):not([class]):not(svg *, table *, details *, [class] > li) {
   font-family: "Century Supra T4", "Georgia", "Times New Roman", serif;
 }
@@ -120,6 +121,16 @@ h6 {
   font-feature-settings: "kern";
   font-weight: bold;
   /*text-transform: capitalize;*/
+}
+
+/* Item titles in bullet lists on pages with `title_list: true` (talks, podcasts, courses, ...). */
+.title-list ul > li > strong:first-child,
+.title-list ul > li > p:first-child > strong:first-child,
+.title-list ul > li > a:first-child,
+.title-list ul > li > p:first-child > a:first-child,
+.title-list ul > li > a:first-child:has(> i) + a,
+.title-list ul > li > p:first-child > a:first-child:has(> i) + a {
+  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
 }
 
 
