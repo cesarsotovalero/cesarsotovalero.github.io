@@ -6,7 +6,7 @@ description: List of YouTube videos created by César Soto Valero.
 published: true
 css:
   - "/css/blog-index.css"
-  - "/css/youtube-index.css"
+  - "/css/media-rows.css"
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -24,7 +24,7 @@ css:
 
 {% assign sorted_videos = site.data.youtube-videos | sort: "snippet.publishedAt" | reverse %}
 
-<section class="blog-archive youtube-archive">
+<section class="blog-archive media-archive">
   {% assign by_year = sorted_videos | group_by_exp: "video", "video.snippet.publishedAt | date: '%Y'" %}
   {% for year in by_year %}
   <div class="blog-year">

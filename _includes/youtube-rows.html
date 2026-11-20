@@ -1,15 +1,15 @@
 {% comment %}
   YouTube videos as blog-style rows: title, metrics below it, rounded-rectangle thumbnail on the right.
   Parameters: videos (list from site.data.youtube-videos), date_format (optional, default "%b %-d, %Y").
-  The page needs css/blog-index.css and css/youtube-index.css.
+  The page needs css/blog-index.css and css/media-rows.css.
 {% endcomment %}
 {% assign yt_date_format = include.date_format | default: "%b %-d, %Y" %}
 <ul class="blog-rows">
   {% for video in include.videos %}
   {% assign views = video.statistics.viewCount | plus: 0 %}
   <li class="blog-row">
-    <a class="youtube-row-thumb-link" href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-      <img class="thumb-rect youtube-row-thumb" src="{{ video.snippet.thumbnails.medium.url }}" alt="" width="128" height="72" loading="lazy" decoding="async">
+    <a class="row-thumb-link" href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+      <img class="thumb-rect row-thumb" src="{{ video.snippet.thumbnails.medium.url }}" alt="" width="128" height="72" loading="lazy" decoding="async">
     </a>
     <div class="blog-row-text">
       <a class="blog-row-title" href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" rel="noopener">{{ video.snippet.title }}</a>

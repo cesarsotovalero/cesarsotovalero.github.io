@@ -8,7 +8,7 @@ sitemap: false
 noindex: true
 css:
   - "/css/blog-index.css"
-  - "/css/youtube-index.css"
+  - "/css/media-rows.css"
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -34,7 +34,7 @@ css:
   {% endfor %}
 </div>
 
-<section class="blog-archive youtube-archive">
+<section class="blog-archive media-archive">
   {% for year in by_year %}
   <div class="blog-year">
     <h2 id="{{ year.name }}" class="blog-year-title"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ year.name }} ({{ year.size }})</h2>

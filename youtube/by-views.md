@@ -8,7 +8,7 @@ sitemap: false
 noindex: true
 css:
   - "/css/blog-index.css"
-  - "/css/youtube-index.css"
+  - "/css/media-rows.css"
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -49,7 +49,7 @@ css:
   {% endfor %}
 </div>
 
-<section class="blog-archive youtube-archive">
+<section class="blog-archive media-archive">
   {% for range in ranges_order %}
   {% assign filtered_videos = videos_by_range[forloop.index0] %}
   <div class="blog-year">

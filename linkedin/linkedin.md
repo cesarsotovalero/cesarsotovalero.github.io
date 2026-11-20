@@ -4,6 +4,9 @@ permalink: linkedin
 title: LinkedIn Posts
 description: LinkedIn posts posted by César Soto Valero.
 published: true
+css:
+  - "/css/blog-index.css"
+  - "/css/media-rows.css"
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -18,46 +21,14 @@ published: true
   <a href="/linkedin/by-comments" class="list-filter">By Comments</a>
 </div>
 
-<div class="linkedin-posts-container post-preview" data-batch="30">
-  {% for post in site.data.linkedin-posts.data.posts %}
-  <a href="{{ post.url }}" target="_blank" class="linkedin-post-link">
-   <div class="linkedin-post-card">
-    <div class="linkedin-post-text">
-      <h2 class="linkedin-post-title">{{ post.text | truncatewords: 15 }}</h2>
-      <p class="linkedin-post-description">
-       Posted on {{ post.posted_at.date | date: "%b %-d, %Y" }}
-      </p>
-      <p class="linkedin-post-stats">
-       <span><i class="fas fa-thumbs-up"></i> Reactions: {{ post.totalReactionCount | default: 0 }}</span> |
-       <span><i class="fas fa-comments"></i> Comments: {{ post.commentsCount | default: 0 }}</span> |
-       <span><i class="fas fa-retweet"></i> Repost: {{ post.repostsCount | default: 0 }}</span>
-      </p>
-    </div>
-    {% assign media_folder = '/assets/images/linkedin/' | append: post.posted_at.timestamp | append: '/' %}
-    {% assign post_media = nil %}
-    {% for file in site.static_files %}
-      {% if file.path contains media_folder %}
-       {% assign post_media = file.path %}
-       {% break %}
-      {% endif %}
-    {% endfor %}
+{% assign by_year = published_posts | group_by_exp: "post", "post.posted_at.date | date: '%Y'" %}
 
-    {% if post_media %}
-    <div class="linkedin-post-thumbnail">
-      {% if post.media and post.media.type == 'video' %}
-      <video controls preload="none">
-       <source src="{{ post_media }}" type="video/mp4">
-       Your browser does not support the video tag.
-      </video>
-      {% else %}
-      <img src="{{ post_media }}" alt="" loading="lazy" decoding="async">
-      {% endif %}
-    </div>
-    {% endif %}
-   </div>
-
-  </a>
+<section class="blog-archive media-archive">
+  {% for year in by_year %}
+  <div class="blog-year">
+    <h3 class="blog-year-title">{{ year.name }} ({{ year.size }})</h3>
+    {% include linkedin-rows.html posts=year.items date_format="%b %-d" %}
+  </div>
   {% endfor %}
-</div>
-
-{% include reveal-batches.html %}
+</section>
+<!-- markdownlint-enable MD033 -->

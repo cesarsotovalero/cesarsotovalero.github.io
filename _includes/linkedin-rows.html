@@ -1,0 +1,39 @@
+{% comment %}
+  LinkedIn posts as blog-style rows: start of the text as title, metrics below it, and the
+  post's image (or video frame) as a rounded-rectangle thumbnail on the right; empty if none.
+  Parameters: posts (list from site.data.linkedin-posts.data.posts), date_format (optional, default "%b %-d, %Y").
+  The page needs css/blog-index.css and css/media-rows.css.
+
+  Media lives in /assets/images/linkedin/<timestamp>/ as files without extensions. A video
+  post has either a still image plus the MP4 (the still sorts first) or the MP4 alone.
+{% endcomment %}
+{% assign li_date_format = include.date_format | default: "%b %-d, %Y" %}
+{% assign li_media = site.static_files | where_exp: "f", "f.path contains '/assets/images/linkedin/'" | map: "path" | sort %}
+<ul class="blog-rows">
+  {% for post in include.posts %}
+  {% assign li_folder = '/assets/images/linkedin/' | append: post.posted_at.timestamp | append: '/' %}
+  {% assign li_files = li_media | where_exp: "p", "p contains li_folder" %}
+  <li class="blog-row">
+    {% if li_files.size > 0 %}
+    <a class="row-thumb-link" href="{{ post.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+      {% if post.media.type == 'video' and li_files.size == 1 %}
+      <video class="thumb-rect row-thumb" src="{{ li_files[0] }}#t=0.1" preload="metadata" muted playsinline></video>
+      {% else %}
+      <img class="thumb-rect row-thumb" src="{{ li_files[0] }}" alt="" width="128" height="72" loading="lazy" decoding="async">
+      {% endif %}
+    </a>
+    {% else %}
+    <span class="row-thumb row-thumb-empty" aria-hidden="true"></span>
+    {% endif %}
+    <div class="blog-row-text">
+      <a class="blog-row-title" href="{{ post.url }}" target="_blank" rel="noopener">{{ post.text | truncatewords: 15 }}</a>
+      <span class="blog-meta">
+        <time datetime="{{ post.posted_at.date | date_to_xmlschema }}">{{ post.posted_at.date | date: li_date_format }}</time>
+        · <i class="fas fa-thumbs-up" aria-hidden="true"></i> Reactions: {{ post.totalReactionCount | default: 0 }}
+        · <i class="fas fa-comments" aria-hidden="true"></i> Comments: {{ post.commentsCount | default: 0 }}
+        · <i class="fas fa-retweet" aria-hidden="true"></i> Repost: {{ post.repostsCount | default: 0 }}
+      </span>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

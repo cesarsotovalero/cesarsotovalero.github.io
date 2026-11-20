@@ -1,6 +1,7 @@
-/* YouTube index: the blog's row layout (css/blog-index.css) with a rounded-rectangle thumbnail. */
+/* YouTube and LinkedIn indexes: the blog's row layout (css/blog-index.css)
+   with a rounded-rectangle thumbnail on the right. */
 
-.youtube-row-thumb-link {
+.row-thumb-link {
   order: 2;
   flex-shrink: 0;
   line-height: 0;
@@ -18,18 +19,25 @@
   filter: none;
 }
 
-.youtube-row-thumb {
+.row-thumb {
+  display: block;
   width: 128px;
   height: 72px;
 }
 
-.youtube-archive .blog-meta .fas {
+/* Rows without media keep the space, so titles line up. */
+.row-thumb-empty {
+  order: 2;
+  flex-shrink: 0;
+}
+
+.media-archive .blog-meta .fas {
   font-size: 0.85em;
   opacity: 0.7;
 }
 
 @media (max-width: 760px) {
-  .youtube-row-thumb {
+  .row-thumb {
     width: 96px;
     height: 54px;
     border-radius: 8px;
