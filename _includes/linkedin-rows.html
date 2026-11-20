@@ -19,7 +19,7 @@
       {% if post.media.type == 'video' and li_files.size == 1 %}
       <video class="thumb-rect row-thumb" src="{{ li_files[0] }}#t=0.1" preload="metadata" muted playsinline></video>
       {% else %}
-      <img class="thumb-rect row-thumb" src="{{ li_files[0] }}" alt="" width="128" height="72" loading="lazy" decoding="async">
+      <img class="thumb-rect row-thumb" src="{{ li_files[0] | thumbnail }}" alt="" width="128" height="72" loading="lazy" decoding="async">
       {% endif %}
     </a>
     {% else %}

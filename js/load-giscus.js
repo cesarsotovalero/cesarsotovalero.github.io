@@ -6,8 +6,8 @@ function loadGiscus() {
    // 2) Clear out any old Giscus instance
    giscusContainer.innerHTML = "";
 
-   // 3) Pick the right theme URL
-   const userTheme = localStorage.getItem("theme");
+   // 3) Pick the right theme URL: the page's current theme (a saved choice, or the system setting).
+   const userTheme = document.documentElement.getAttribute("data-theme");
    const giscusTheme = (userTheme === "dark")
       ? "https://www.cesarsotovalero.net/css/giscus-dark.css" // giscus.app fetches the theme, so it must be an absolute URL
       : "https://www.cesarsotovalero.net/css/giscus-light.css";

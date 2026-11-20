@@ -3,7 +3,7 @@
 
 Post covers (the `image:` front matter field) are used as small thumbnails on the
 blog index, the homepage, and in related posts, but the originals are often
-1-2 MB. This script writes a 480 px wide WebP copy of each cover under
+1-2 MB. The images of LinkedIn posts get small copies too (img/thumbs/linkedin/). This script writes a 480 px wide WebP copy of each cover under
 img/thumbs/ (git-ignored). The `thumbnail` Liquid filter in
 _plugins/thumbnail_filter.rb uses the copy when it exists and falls back to the
 original otherwise, so the site still builds without running this script.
@@ -65,7 +65,37 @@ def main() -> int:
             im.save(dst, "WEBP", quality=80, method=6)
         made += 1
     print(f"Thumbnails: {made} created, {skipped} up to date, {missing} missing sources.")
+    linkedin_thumbnails()
     return 0
+
+
+LINKEDIN = ROOT / "assets" / "images" / "linkedin"
+LINKEDIN_WIDTH = 320  # shown at 128 px wide on the LinkedIn lists: sharp on 2x screens
+
+
+def linkedin_thumbnails() -> None:
+    """Small WebP copies of the LinkedIn post images (assets/images/linkedin/<post>/<file>, no
+    extension) at img/thumbs/linkedin/<post>/<file>.webp. Videos are skipped: Pillow can't open them."""
+    made = skipped = videos = 0
+    for src in sorted(LINKEDIN.glob("*/*")):
+        if not src.is_file():
+            continue
+        dst = OUT / "linkedin" / src.parent.name / (src.name + ".webp")
+        if dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
+            skipped += 1
+            continue
+        try:
+            with Image.open(src) as im:
+                im.seek(0)  # first frame of animated GIFs
+                im = im.convert("RGBA" if im.mode in ("RGBA", "LA", "P") else "RGB")
+                if im.width > LINKEDIN_WIDTH:
+                    im = im.resize((LINKEDIN_WIDTH, round(im.height * LINKEDIN_WIDTH / im.width)), Image.LANCZOS)
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                im.save(dst, "WEBP", quality=78, method=6)
+                made += 1
+        except Exception:
+            videos += 1
+    print(f"LinkedIn thumbnails: {made} created, {skipped} up to date, {videos} not images (videos).")
 
 
 if __name__ == "__main__":

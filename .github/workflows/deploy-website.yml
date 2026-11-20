@@ -35,12 +35,12 @@ jobs:
           python-version: "3.x"
 
       - name: Install Python dependencies
-        run: pip install pyyaml pillow
+        run: pip install pyyaml pillow fonttools brotli
 
       - name: Generate talks.yml from talks.md
         run: python scripts/sync_talks_from_page.py
 
-      - name: Generate post cover thumbnails
+      - name: Generate thumbnails (post covers and LinkedIn images)
         run: python scripts/make_thumbnails.py
 
       - name: Set up Ruby
@@ -134,6 +134,11 @@ jobs:
         env:
           YOUTUBE_API_TOKEN: ${{ secrets.YOUTUBE_API_TOKEN }}
           GMAIL: ${{ secrets.CESAR_PERSONAL_GMAIL }}
+
+      # Keep only the Font Awesome icons the pages use (CSS and fonts: about 217 KB -> 10 KB).
+      # Never fails the deploy: on any error the original files stay.
+      - name: Trim Font Awesome to the icons in use
+        run: python scripts/trim_fontawesome.py _site
 
       - name: Build the search index (Pagefind)
         run: npx -y pagefind@1.3.0 --site _site

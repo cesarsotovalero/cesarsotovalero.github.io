@@ -1,71 +1,57 @@
-// this script requires jQuery
-$(document).ready(function() {
-    Footnotes.setup();
-});
+// Footnote previews: hovering (or focusing) a footnote reference shows the note in a small box next to it.
+// Plain JavaScript; the look is in css/main.css (#footnotediv).
+(function () {
+  'use strict';
 
-var Footnotes = {
-    footnotetimeout: false,
-    setup: function() {
-        var footnotelinks = $("a[rel='footnote']")
+  var hideTimer = null;
+  var box = null;
 
-        footnotelinks.unbind('mouseover',Footnotes.footnoteover);
-        footnotelinks.unbind('mouseout',Footnotes.footnoteoout);
+  function remove() {
+    if (box) box.remove();
+    box = null;
+  }
 
-        footnotelinks.bind('mouseover',Footnotes.footnoteover);
-        footnotelinks.bind('mouseout',Footnotes.footnoteoout);
-    },
-    footnoteover: function() {
-        clearTimeout(Footnotes.footnotetimeout);
-        $('#footnotediv').stop();
-        $('#footnotediv').remove();
+  function scheduleRemove() {
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(remove, 100);
+  }
 
-        var id = $(this).attr('href').substr(1);
-        var position = $(this).offset();
+  function show(link) {
+    clearTimeout(hideTimer);
+    remove();
+    var id = decodeURIComponent((link.getAttribute('href') || '').slice(1));
+    var note = id && document.getElementById(id);
+    if (!note) return;
 
-        var div = $(document.createElement('div'));
-        div.attr('id','footnotediv');
-        div.bind('mouseover',Footnotes.divover);
-        div.bind('mouseout',Footnotes.footnoteoout);
+    box = document.createElement('div');
+    box.id = 'footnotediv';
+    box.setAttribute('role', 'note');
+    box.innerHTML = note.innerHTML;
+    box.querySelectorAll('.reversefootnote, a[rev="footnote"]').forEach(function (back) { back.remove(); });
+    box.addEventListener('mouseover', function () { clearTimeout(hideTimer); });
+    box.addEventListener('mouseout', scheduleRemove);
+    document.body.appendChild(box);
 
-        var el = document.getElementById(id);
-        div.html($(el).html());
-        div.find("a[rev='footnote']").remove();
+    // Below the reference, kept inside the window; above it when there is no room below.
+    var rect = link.getBoundingClientRect();
+    var left = rect.left + window.scrollX;
+    var maxLeft = window.scrollX + document.documentElement.clientWidth - box.offsetWidth - 8;
+    if (left > maxLeft) left = Math.max(window.scrollX + 8, maxLeft);
+    var top = rect.top + window.scrollY + 20;
+    if (rect.top + 20 + box.offsetHeight > window.innerHeight) top = rect.top + window.scrollY - box.offsetHeight - 15;
+    box.style.left = left + 'px';
+    box.style.top = top + 'px';
+  }
 
-        div.css({
-            position:'absolute',
-            width:'20em',
-            'max-width': '300px',
-            background:'#F7F6EE',
-            border:'solid 1px',
-            'font-size':'90%',
-            'font-family': "Equity Text A",
-            'line-height':1.4,
-            '-moz-border-radius':'.5em',
-            '-webkit-border-radius':'.5em',
-            'border-radius':'.5em',
-            opacity: 1,
-            'z-index': 9999
-        });
-        $(document.body).append(div);
+  function setup() {
+    document.querySelectorAll('a[rel="footnote"]').forEach(function (link) {
+      link.addEventListener('mouseover', function () { show(link); });
+      link.addEventListener('mouseout', scheduleRemove);
+      link.addEventListener('focus', function () { show(link); });
+      link.addEventListener('blur', scheduleRemove);
+    });
+  }
 
-        var left = position.left;
-        if(left + div.outerWidth() > $(window).width() + $(window).scrollLeft())
-            left = $(window).width() - div.outerWidth() + $(window).scrollLeft();
-        var top = position.top+20;
-        if(top + div.height() > $(window).height() + $(window).scrollTop())
-            top = position.top - div.height() - 15;
-        div.css({
-            left:left,
-            top:top
-        });
-    },
-    footnoteoout: function() {
-        Footnotes.footnotetimeout = setTimeout(function() {
-            $('#footnotediv').remove();
-        },100);
-    },
-    divover: function() {
-        clearTimeout(Footnotes.footnotetimeout);
-        $('#footnotediv').stop();
-    }
-} 
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup);
+  else setup();
+})();

@@ -967,3 +967,51 @@ button:focus:not(:focus-visible) {
     animation: none;
   }
 }
+
+/* ---------- Dark theme ---------- */
+
+/* Header and footer in the same charcoal family as the page, a step darker (they were navy). */
+html[data-theme="dark"] {
+  --navbar-color: #1a1c21;
+  --footer-color: #1a1c21;
+}
+
+/* Photos and diagrams a little dimmer, so white backgrounds don't glare; full brightness on hover
+   for thumbnails. Images still blurred while loading (lazysizes blur-up) keep their blur, and small
+   icons (/img/icons/, inverted by their own filter in dark mode) are left alone. */
+html[data-theme="dark"] :is(.blog-post, .container[role="main"]) :is(p, figure, li, td) img:not([src*="/icons/"]):not(.blur-up:not(.lazyloaded)) {
+  filter: brightness(0.86);
+}
+
+html[data-theme="dark"] .thumb-rect,
+html[data-theme="dark"] .thumb-round,
+html[data-theme="dark"] .home-featured-media img {
+  filter: grayscale(100%) brightness(0.86);
+}
+
+/* Theme switch: the new theme spreads in a circle from the toggle (js/mode-switcher.js). During the
+   switch nothing else animates, and the page-transition names stay out of it. */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition: none !important;
+}
+
+html.theme-transition *,
+html.theme-transition *::after {
+  view-transition-name: none !important;
+}
+
+html.theme-transition::view-transition-old(root) {
+  animation: none;
+}
+
+html.theme-transition::view-transition-new(root) {
+  animation: theme-reveal 520ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes theme-reveal {
+  from { clip-path: circle(0 at var(--reveal-x) var(--reveal-y)); }
+  to { clip-path: circle(var(--reveal-r) at var(--reveal-x) var(--reveal-y)); }
+}

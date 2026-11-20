@@ -4437,9 +4437,19 @@ html[data-theme="dark"] {
   --paginator-border-color: #444;
 }
 
+/* Footnote preview box (js/popup-footnotes.js). */
 #footnotediv {
+  position: absolute;
+  z-index: 9999;
+  width: 20em;
+  max-width: 300px;
+  border: 1px solid #000;
+  border-radius: 0.5em;
+  background: #F7F6EE;
   color: #000;
-  border-color: #000;
+  font-family: "Equity Text A", Georgia, serif;
+  font-size: 90%;
+  line-height: 1.4;
 }
 
 html[data-theme="dark"] #footnotediv {
