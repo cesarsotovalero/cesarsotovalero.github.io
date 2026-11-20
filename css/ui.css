@@ -525,3 +525,119 @@ footer.site-footer {
     transform: none;
   }
 }
+
+/* ---------- Typography system ----------
+   One scale for the whole site. Each size grows smoothly from phones (390px wide) to desktops
+   (1280px) instead of jumping at breakpoints: clamp(phone size, fluid middle, desktop size).
+   Faces: Concourse T6 Tab for headings, Concourse T2/T4 for interface text, Equity for reading text
+   outside posts and Century Supra inside posts (bold reading text stays Century Supra on purpose,
+   see main.css), and Equity Caps for small capitals. */
+
+:root {
+  --font-display: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  --font-ui: "Concourse T2", "Helvetica Neue", Arial, sans-serif;
+  --font-caps: "Equity Caps A", Georgia, serif;
+
+  --fs-min: 14px;                                     /* nothing smaller: counts, fine print */
+  --fs-meta: 15px;                                    /* dates, reading time, metrics */
+  --fs-h3: clamp(22px, 21.1px + 0.22vw, 24px);
+  --fs-h2: clamp(22px, 19.4px + 0.67vw, 28px);
+  --fs-h1: clamp(28px, 24.5px + 0.9vw, 36px);        /* also numbered post sections */
+  --fs-title: clamp(32px, 27.6px + 1.12vw, 42px);    /* post titles */
+  --fs-display: clamp(40px, 33px + 1.8vw, 56px);     /* the name on the home page */
+  --fs-page-title: clamp(38px, 23.1px + 3.82vw, 72px);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+/* Page and post titles: one heading face (the Tab cut of Concourse T6 also used everywhere else, so
+   pages no longer download Concourse T6 just for this line). */
+.intro-header .page-heading h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-page-title);
+}
+
+.intro-header .post-heading h1 {
+  font-size: var(--fs-title);
+}
+
+/* Numbered post sections; the numbers stay a step smaller than the words. */
+.blog-post h2 {
+  font-size: var(--fs-h1);
+}
+
+.blog-post h2:before {
+  font-size: 0.89em;
+}
+
+.blog-post h3 {
+  font-size: var(--fs-h2);
+}
+
+.blog-post h3:before {
+  font-size: 0.86em;
+}
+
+.blog-post h4 {
+  font-size: var(--fs-h3);
+}
+
+/* The short rule between page title and subtitle (a theme leftover) showed on some pages only. */
+.page-heading hr.small {
+  display: none;
+}
+
+/* Headlines break into lines of similar length; paragraphs avoid a lone last word. */
+h1, h2, h3, h4,
+.blog-row-title,
+.blog-row-subtitle,
+.page-subheading,
+.post-subheading,
+.home-title,
+.home-tagline,
+.home-featured-title,
+.home-featured-subtitle,
+.post-pager-title {
+  text-wrap: balance;
+}
+
+p, li, dd, figcaption, blockquote {
+  text-wrap: pretty;
+}
+
+/* Figures line up in lists of dates and counts (Concourse has tabular figures). */
+.blog-meta,
+.post-meta,
+.list-filters,
+.blog-filter-count,
+.home-stats,
+.index-list-stats,
+time {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Quotation marks of pull quotes hang outside the text edge where supported (Safari). */
+.blog-post .quote,
+blockquote {
+  hanging-punctuation: first last;
+}
+
+/* Minimum size for small print (page stylesheets set their own at the source). */
+.youtube {
+  font-size: max(var(--fs-min), 0.75em);
+}
+
+/* Tags in list meta are links, but read as labels: underlined only on hover. */
+.blog-row-tag {
+  text-decoration: none;
+}
+
+.blog-row-tag:hover {
+  text-decoration: underline;
+}

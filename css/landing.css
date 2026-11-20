@@ -227,7 +227,7 @@
   text-decoration-color: var(--link-decoration-color);
 }
 .index-list-date {
-  font-size: 1.25rem;
+  font-size: 1.4rem; /* 14px: Bootstrap sets the root size to 10px */
   font-family: "Equity Text A", "Cambria", "Open Sans";
   color: var(--post-meta-index-color);
   margin-top: 6px;
@@ -235,7 +235,7 @@
   text-align: center;
 }
 .index-list-stats {
-  font-size: 1.25rem;
+  font-size: 1.4rem; /* 14px: Bootstrap sets the root size to 10px */
   font-family: "Concourse T3", "Cambria", "Open Sans";
   color: var(--post-meta-index-color);
   margin-top: 4px;
@@ -394,7 +394,7 @@ html[data-theme="dark"] .index-list-placeholder {
 }
 .index-see-all .list-filter {
   font-family: "Equity Text A", "Linux Biolinum", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   color: var(--main-text-color);
   text-decoration: underline;

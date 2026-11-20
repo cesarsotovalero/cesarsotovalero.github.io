@@ -98,7 +98,7 @@ html {
 
 .booking-eyebrow {
   font-family: var(--bk-ui);
-  font-size: 0.78em;
+  font-size: max(14px, 0.78em);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--bk-muted);
@@ -384,7 +384,7 @@ html {
 .booking-disclaimer {
   margin-top: 10px !important;
   font-family: var(--bk-ui);
-  font-size: 0.8em;
+  font-size: max(14px, 0.8em);
   color: var(--bk-muted);
 }
 

@@ -173,7 +173,7 @@ html[data-theme="dark"] .contact-paths a:focus-visible {
 
 .contact-privacy {
    margin-top: 12px;
-   font-size: 0.7em;
+   font-size: max(14px, 0.7em);
    opacity: 0.8;
 }
 

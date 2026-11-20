@@ -85,7 +85,7 @@
   background: var(--accent-soft, transparent);
   color: var(--accent-text, var(--main-text-color));
   font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.02em;
   vertical-align: 2px;

@@ -35,8 +35,8 @@
 .home-title {
   margin: 0 0 12px;
   color: var(--main-text-color);
-  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  font-size: 56px;
+  font-family: var(--font-display);
+  font-size: var(--fs-display);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.5px;
@@ -242,11 +242,11 @@
   line-height: 1.2;
 }
 
-/* Small capitals, like the eyebrow above the name. */
+/* Small capitals in Equity Caps, the same face as the eyebrow above the name. */
 .home-stats span {
-  font-family: "Century Supra C4", "Century Supra T4", Georgia, serif;
+  font-family: var(--font-caps);
   font-size: 15px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   text-transform: lowercase;
   color: var(--post-meta-index-color);
   text-decoration: underline;
@@ -319,10 +319,6 @@
   .home-hero-portrait img {
     width: 140px;
     height: 140px;
-  }
-
-  .home-title {
-    font-size: 40px;
   }
 
   .home-role {
@@ -489,8 +485,8 @@
 
 .home-featured-title {
   margin: 0 0 10px;
-  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  font-size: 38px;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 23.6px + 1.12vw, 38px);
   font-weight: 700;
   line-height: 1.12;
   letter-spacing: -0.3px;
@@ -549,8 +545,8 @@
 
 .home-section-title {
   margin: 0;
-  font-family: "Concourse T6 Tab", "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  font-size: 30px;
+  font-family: var(--font-display);
+  font-size: clamp(26px, 24.2px + 0.45vw, 30px);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -646,10 +642,6 @@
     gap: 32px;
   }
 
-  .home-featured-title {
-    font-size: 32px;
-  }
-
   .home-panel .blog-rows {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -667,20 +659,12 @@
     border-radius: 12px;
   }
 
-  .home-featured-title {
-    font-size: 28px;
-  }
-
   .home-featured-subtitle {
     font-size: 19px;
   }
 
   .home-featured-excerpt {
     font-size: 18px;
-  }
-
-  .home-section-title {
-    font-size: 26px;
   }
 
   /* The tabs scroll sideways in one row instead of wrapping. */
