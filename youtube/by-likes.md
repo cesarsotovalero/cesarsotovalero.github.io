@@ -6,6 +6,9 @@ description: YouTube videos by César Soto Valero, sorted by number of likes.
 published: true
 sitemap: false
 noindex: true
+css:
+  - "/css/blog-index.css"
+  - "/css/youtube-index.css"
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -27,50 +30,32 @@ noindex: true
 {% for range in ranges_order %}
   {% assign filtered = "" | split: "" %}
   {% for video in sorted_videos %}
-    {% assign likes = video.statistics.likeCount | plus: 0 %}
-    {% if range == "100+" and likes >= 100 %}
+    {% assign n = video.statistics.likeCount | plus: 0 %}
+    {% if range == "100+" and n >= 100 %}
       {% assign filtered = filtered | push: video %}
-    {% elsif range == "10-99" and likes >= 10 and likes < 100 %}
+    {% elsif range == "10-99" and n >= 10 and n < 100 %}
       {% assign filtered = filtered | push: video %}
-    {% elsif range == "<10" and likes < 10 %}
+    {% elsif range == "<10" and n < 10 %}
       {% assign filtered = filtered | push: video %}
     {% endif %}
   {% endfor %}
   {% assign videos_by_range = videos_by_range | push: filtered %}
 {% endfor %}
 
-<!-- Likes cloud -->
+<!-- Jump to a range -->
 <div class="tag-list">
   {% for range in ranges_order %}
-     <a href="#{{ range }}" class="btn btn-primary tag-btn">
-        <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;
-     </a>
+  <a href="#{{ range }}" class="btn btn-primary tag-btn"><i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;</a>
   {% endfor %}
 </div>
 
-<div id="full-tags-list">
+<section class="blog-archive youtube-archive">
   {% for range in ranges_order %}
-    {% assign idx = forloop.index0 %}
-    {% assign filtered_videos = videos_by_range[idx] %}
-    <h2 id="{{ range }}" class="linked-section">
-      <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;({{ filtered_videos.size }} videos)
-    </h2>
-    <div class="video-list">
-      {% for video in filtered_videos %}
-        <div class="tag-entry">
-          <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank">{{ video.snippet.title | truncatewords: 15 }}</a>
-          <div class="entry-date">
-            <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: "%B %-d, %Y" }}</time>
-            <span class="video-stats">
-              · <i class="fas fa-eye"></i> {% assign views = video.statistics.viewCount | plus: 0 %}{% if views >= 1000 %}{{ views | divided_by: 1000 }}K{% else %}{{ views | number_with_delimiter }}{% endif %}
-              · <i class="fas fa-thumbs-up"></i> {{ video.statistics.likeCount | number_with_delimiter }}
-              · <i class="fas fa-comment"></i> {{ video.statistics.commentCount | number_with_delimiter }}
-              · <i class="fas fa-clock"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
-            </span>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+  {% assign filtered_videos = videos_by_range[forloop.index0] %}
+  <div class="blog-year">
+    <h2 id="{{ range }}" class="blog-year-title"><i class="fas fa-thumbs-up" aria-hidden="true"></i> {{ range }} ({{ filtered_videos.size }})</h2>
+    {% include youtube-rows.html videos=filtered_videos %}
+  </div>
   {% endfor %}
-</div>
-<!-- markdownlint-enable MD033 MD041 MD022 -->
+</section>
+<!-- markdownlint-enable MD033 -->

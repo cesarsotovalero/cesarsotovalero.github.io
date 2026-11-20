@@ -29,26 +29,7 @@ css:
   {% for year in by_year %}
   <div class="blog-year">
     <h3 class="blog-year-title">{{ year.name }} ({{ year.size }})</h3>
-    <ul class="blog-rows">
-      {% for video in year.items %}
-      {% assign views = video.statistics.viewCount | plus: 0 %}
-      <li class="blog-row">
-        <a class="youtube-row-thumb-link" href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <img class="thumb-rect youtube-row-thumb" src="{{ video.snippet.thumbnails.medium.url }}" alt="" width="128" height="72" loading="lazy" decoding="async">
-        </a>
-        <div class="blog-row-text">
-          <a class="blog-row-title" href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank" rel="noopener">{{ video.snippet.title }}</a>
-          <span class="blog-meta">
-            <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: "%b %-d" }}</time>
-            · <i class="fas fa-clock" aria-hidden="true"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
-            · <i class="fas fa-eye" aria-hidden="true"></i> {% if views >= 1000 %}{{ views | divided_by: 1000 }}K{% else %}{{ views | number_with_delimiter }}{% endif %} views
-            · <i class="fas fa-thumbs-up" aria-hidden="true"></i> {{ video.statistics.likeCount | number_with_delimiter }} likes
-            · <i class="fas fa-comments" aria-hidden="true"></i> {{ video.statistics.commentCount | number_with_delimiter }} comments
-          </span>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
+    {% include youtube-rows.html videos=year.items date_format="%b %-d" %}
   </div>
   {% endfor %}
 </section>

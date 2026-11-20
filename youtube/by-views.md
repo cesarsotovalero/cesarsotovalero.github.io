@@ -6,6 +6,9 @@ description: YouTube videos created by César Soto Valero, sorted by number of v
 published: true
 sitemap: false
 noindex: true
+css:
+  - "/css/blog-index.css"
+  - "/css/youtube-index.css"
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -21,66 +24,38 @@ noindex: true
   <a href="/youtube/by-comments" class="list-filter">By Comments</a>
 </div>
 
-{% comment %} Begin updated Views cloud and grouping block {% endcomment %}
 {% assign sorted_videos = site.data.youtube-videos | sort: "statistics.viewCount" | reverse %}
 {% assign ranges_order = "10K+,1K-9K,<1K" | split: "," %}
+{% assign videos_by_range = "" | split: "" %}
+{% for range in ranges_order %}
+  {% assign filtered = "" | split: "" %}
+  {% for video in sorted_videos %}
+    {% assign n = video.statistics.viewCount | plus: 0 %}
+    {% if range == "10K+" and n >= 10000 %}
+      {% assign filtered = filtered | push: video %}
+    {% elsif range == "1K-9K" and n >= 1000 and n < 10000 %}
+      {% assign filtered = filtered | push: video %}
+    {% elsif range == "<1K" and n < 1000 %}
+      {% assign filtered = filtered | push: video %}
+    {% endif %}
+  {% endfor %}
+  {% assign videos_by_range = videos_by_range | push: filtered %}
+{% endfor %}
 
-<!-- Views cloud -->
+<!-- Jump to a range -->
 <div class="tag-list">
   {% for range in ranges_order %}
-   <a href="#{{ range }}" class="btn btn-primary tag-btn">
-    <i class="fas fa-eye" aria-hidden="true"></i>&nbsp;{{ range }}
-   </a>
+  <a href="#{{ range }}" class="btn btn-primary tag-btn"><i class="fas fa-eye" aria-hidden="true"></i>&nbsp;{{ range }}&nbsp;</a>
   {% endfor %}
 </div>
 
-<div id="full-tags-list" style="margin-top: 20px;">
+<section class="blog-archive youtube-archive">
   {% for range in ranges_order %}
-   {% assign videos_count = 0 %}
-   {% for video in sorted_videos %}
-    {% assign views = video.statistics.viewCount | plus: 0 %}
-    {% assign in_range = false %}
-    {% if range == "10K+" and views >= 10000 %}
-      {% assign in_range = true %}
-    {% elsif range == "1K-9K" and views >= 1000 and views < 10000 %}
-      {% assign in_range = true %}
-    {% elsif range == "<1K" and views < 1000 %}
-      {% assign in_range = true %}
-    {% endif %}
-    {% if in_range %}
-      {% assign videos_count = videos_count | plus: 1 %}
-    {% endif %}
-   {% endfor %}
-   <h2 id="{{ range }}" class="linked-section">
-    <i class="fas fa-eye" aria-hidden="true"></i>&nbsp;{{ range }} ({{ videos_count }} videos)
-   </h2>
-   <div class="post-list">
-    {% for video in sorted_videos %}
-      {% assign views = video.statistics.viewCount | plus: 0 %}
-      {% assign in_range = false %}
-      {% if range == "10K+" and views >= 10000 %}
-       {% assign in_range = true %}
-      {% elsif range == "1K-9K" and views >= 1000 and views < 10000 %}
-       {% assign in_range = true %}
-      {% elsif range == "<1K" and views < 1000 %}
-       {% assign in_range = true %}
-      {% endif %}
-      {% if in_range %}
-       <div class="tag-entry">
-        <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank">{{ video.snippet.title }}</a>
-        <div class="entry-date">
-          <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: "%B %-d, %Y" }}</time>
-          <span class="post-stats">
-           · <i class="fas fa-eye"></i> {% assign views = video.statistics.viewCount | plus: 0 %}{% if views >= 1000 %}{{ views | divided_by: 1000 }}K{% else %}{{ views | number_with_delimiter }}{% endif %}
-           · <i class="fas fa-thumbs-up"></i> {{ video.statistics.likeCount | number_with_delimiter }}
-           · <i class="fas fa-comment"></i> {{ video.statistics.commentCount | number_with_delimiter }}
-           · <i class="fas fa-clock"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
-          </span>
-        </div>
-       </div>
-      {% endif %}
-    {% endfor %}
-   </div>
+  {% assign filtered_videos = videos_by_range[forloop.index0] %}
+  <div class="blog-year">
+    <h2 id="{{ range }}" class="blog-year-title"><i class="fas fa-eye" aria-hidden="true"></i> {{ range }} ({{ filtered_videos.size }})</h2>
+    {% include youtube-rows.html videos=filtered_videos %}
+  </div>
   {% endfor %}
-</div>
-{% comment %} End updated Views cloud and grouping block {% endcomment %}
+</section>
+<!-- markdownlint-enable MD033 -->

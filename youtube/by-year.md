@@ -6,6 +6,9 @@ description: YouTube videos created by César Soto Valero, organized by year.
 published: true
 sitemap: false
 noindex: true
+css:
+  - "/css/blog-index.css"
+  - "/css/youtube-index.css"
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -21,56 +24,22 @@ noindex: true
   <a href="/youtube/by-comments" class="list-filter">By Comments</a>
 </div>
 
-{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-{% assign years_list = "" | split: "" %}
-{% for video in site.data.youtube-videos %}
-{% assign video_year = video.snippet.publishedAt | date: "%Y" %}
-{% unless years_list contains video_year %}
-{% assign years_list = years_list | push: video_year %}
-{% endunless %}
-{% endfor %}
-{% assign years_list = years_list | sort %}
+{% assign sorted_videos = site.data.youtube-videos | sort: "snippet.publishedAt" | reverse %}
+{% assign by_year = sorted_videos | group_by_exp: "video", "video.snippet.publishedAt | date: '%Y'" %}
 
-<!-- Years cloud -->
+<!-- Jump to a year -->
 <div class="tag-list">
-     {% for year in years_list %}
-     <a href="#{{- year -}}" class="btn btn-primary tag-btn"><i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;{{- year -}} &nbsp;</a>
-     {% endfor %}
+  {% for year in by_year %}
+  <a href="#{{ year.name }}" class="btn btn-primary tag-btn"><i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;{{ year.name }}&nbsp;</a>
+  {% endfor %}
 </div>
 
-{% assign reverse_years_list = years_list | reverse %}
-
-<div id="full-tags-list" style="margin-top: 20px;">
-     {% for year in reverse_years_list %}
-     {% assign videos_count = 0 %}
-     {% for video in site.data.youtube-videos %}
-          {% assign video_year = video.snippet.publishedAt | date: "%Y" %}
-          {% if video_year == year %}
-                {% assign videos_count = videos_count | plus: 1 %}
-          {% endif %}
-     {% endfor %}
-     <h2 id="{{- year -}}" class="linked-section">
-          <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-          &nbsp;{{- year -}}&nbsp;({{ videos_count }} videos)
-     </h2>
-     <div class="post-list">
-          {% for video in site.data.youtube-videos %}
-          {% assign video_year = video.snippet.publishedAt | date: "%Y" %}
-          {% if video_year == year %}
-          <div class="tag-entry">
-                <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank">{{ video.snippet.title }}</a>
-                <div class="entry-date">
-                     <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: date_format }}</time>
-                     <span class="post-stats">
-                          · <i class="fas fa-eye"></i> {% assign views = video.statistics.viewCount | plus: 0 %}{% if views >= 1000 %}{{ views | divided_by: 1000 }}K{% else %}{{ views | number_with_delimiter }}{% endif %}
-                          · <i class="fas fa-thumbs-up"></i> {{ video.statistics.likeCount | number_with_delimiter }}
-                          · <i class="fas fa-comment"></i> {{ video.statistics.commentCount | number_with_delimiter }}
-                          · <i class="fas fa-clock"></i> {{ video.contentDetails.duration | replace: "PT", "" | replace: "H", "h " | replace: "M", "m " | replace: "S", "s" }}
-                     </span>
-                </div>
-          </div>
-          {% endif %}
-          {% endfor %}
-     </div>
-     {% endfor %}
-</div>
+<section class="blog-archive youtube-archive">
+  {% for year in by_year %}
+  <div class="blog-year">
+    <h2 id="{{ year.name }}" class="blog-year-title"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ year.name }} ({{ year.size }})</h2>
+    {% include youtube-rows.html videos=year.items date_format="%b %-d" %}
+  </div>
+  {% endfor %}
+</section>
+<!-- markdownlint-enable MD033 -->
