@@ -6,6 +6,10 @@ title: Talks
 description: Talks and presentations by César Soto Valero
 subtitle: "Conference talks, keynotes, and workshops since 2018"
 published: true
+talk_rows: true # each talk shows as a row with its thumbnail (_plugins/talk_rows.rb)
+css:
+  - "/css/blog-index.css"
+  - "/css/media-rows.css"
 ---
 
 # Past Talks

@@ -55,3 +55,37 @@
 .meta-item {
   white-space: nowrap;
 }
+
+/* ---------- Talks page (_plugins/talk_rows.rb) ----------
+   Under each title: the details, then the talk's links (video, slides, announcement) as small pills. */
+
+.talk-row .blog-meta a {
+  color: inherit;
+}
+
+.talk-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.talk-link,
+.talk-link:hover,
+.talk-link:focus {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 11px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 999px;
+  color: var(--main-text-color);
+  font-family: var(--font-ui);
+  font-size: var(--fs-min);
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.talk-link:hover {
+  border-color: var(--accent-soft-border);
+  background: var(--accent-soft);
+}
