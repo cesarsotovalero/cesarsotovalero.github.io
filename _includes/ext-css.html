@@ -1,8 +1,8 @@
 {% if include.css.sri %}
   <link href="{{ include.css.href }}" rel="stylesheet" integrity="{{ include.css.sri }}" crossorigin="anonymous">
 {% elsif include.css contains "fontawesome" %}
-  <link rel="stylesheet" href="{{ include.css }}" media="print" onload="this.media='all'" />
-  <noscript><link rel="stylesheet" href="{{ include.css }}" /></noscript>
+  <link rel="stylesheet" href="{{ include.css }}?v={{ site.time | date: '%s' }}" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="{{ include.css }}?v={{ site.time | date: '%s' }}" /></noscript>
 {% elsif include.css.href %}
   <link rel="stylesheet" href="{{ include.css.href }}" />
 {% else %}

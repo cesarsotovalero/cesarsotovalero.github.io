@@ -85,4 +85,4 @@ css:
       });
    })();
 </script>
-<script src="/js/filter-row.js" defer></script>
+<script src="/js/filter-row.js?v={{ site.time | date: '%s' }}" defer></script>

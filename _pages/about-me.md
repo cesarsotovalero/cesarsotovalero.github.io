@@ -9,7 +9,7 @@ schema_type: ProfilePage
 show-avatar: true
 ---
 
-<link rel="stylesheet" href="/css/landing.css">
+<link rel="stylesheet" href="/css/landing.css?v={{ site.time | date: '%s' }}">
 
 <section class="index-hero">
 {% include social.html type="page" %}

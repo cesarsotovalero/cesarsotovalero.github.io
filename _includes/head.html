@@ -76,7 +76,7 @@
 
    {% if layout.common-css %}
    {% for css in layout.common-css %}
-   <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}"/>
+   <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}?v={{ site.time | date: '%s' }}"/>
    {% endfor %}
    {% endif %}
 
@@ -94,7 +94,7 @@
 
    {% if page.css %}
    {% for css in page.css %}
-   <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}"/>
+   <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}?v={{ site.time | date: '%s' }}"/>
    {% endfor %}
    {% endif %}
 

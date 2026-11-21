@@ -1115,6 +1115,13 @@ html.theme-transition::view-transition-new(root) {
   transform: translateX(3px);
 }
 
+/* Arrows drawn as SVG (the fonts have no up-right arrow; iPhones would show the emoji instead). */
+.home-button-arrow svg {
+  display: block;
+  width: 0.62em;
+  height: 0.62em;
+}
+
 .home-button:hover .home-button-arrow--down,
 .home-button:focus-visible .home-button-arrow--down {
   transform: translateY(2px);

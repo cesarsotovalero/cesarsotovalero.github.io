@@ -76,7 +76,7 @@ css:
           target="_blank"
           rel="noopener noreferrer"
           data-offer="{{ offer.key }}"
-        >{{ offer.cta_label }} <span class="home-button-arrow home-button-arrow--external" aria-hidden="true">&nearr;</span><span class="sr-only"> (opens Cal.com in a new tab)</span></a>
+        >{{ offer.cta_label }} <span class="home-button-arrow home-button-arrow--external" aria-hidden="true"><svg viewBox="3.5 3.5 9 9" width="12" height="12" focusable="false"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr-only"> (opens Cal.com in a new tab)</span></a>
       </article>
       {% endfor %}
     </div>

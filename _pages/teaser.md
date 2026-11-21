@@ -8,7 +8,7 @@ googlefonts:
   - "Rouge+Script&display=swap"
 ---
 
-<link rel="stylesheet" href="/css/links-page.css">
+<link rel="stylesheet" href="/css/links-page.css?v={{ site.time | date: '%s' }}">
 
 <div class="links-container">
 
