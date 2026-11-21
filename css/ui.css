@@ -384,8 +384,8 @@ footer.site-footer {
 }
 
 /* ---------- Call-to-action buttons: LinkedIn and YouTube pages ----------
-   One pill shape; each variant sets its brand colors. The label is white on a
-   dark-enough brand color, so the same button works on light and dark pages. */
+   Quiet, like the site's other pills: a soft outline, navy text and the logo in a tinted disc. A logo
+   takes its brand color only on hover, the way photos on the site turn from gray to color. */
 
 .connect-cta {
   display: flex;
@@ -397,55 +397,64 @@ footer.site-footer {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  min-height: 52px;
-  padding: 6px 22px 6px 6px;
+  min-height: 48px;
+  padding: 5px 20px 5px 5px;
+  border: 1px solid var(--accent-soft-border);
   border-radius: 999px;
-  background: linear-gradient(180deg, var(--cta-top) 0%, var(--cta-base) 100%);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    0 8px 20px -8px var(--cta-glow);
-  color: #fff;
+  background: transparent;
+  color: var(--accent-text);
   font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  transition: background-color 0.15s ease-out, box-shadow 0.15s ease-out, transform 0.15s ease-out;
 }
 
 .btn-cta:hover,
 .btn-cta:focus-visible {
-  background: linear-gradient(180deg, var(--cta-base) 0%, var(--cta-dark) 100%);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.14),
-    0 14px 28px -10px var(--cta-glow-strong);
-  color: #fff;
+  background: var(--accent-soft);
+  color: var(--accent-text);
   text-decoration: none;
-  transform: translateY(-2px);
+}
+
+/* Rises a pixel like the other buttons, only where a pointer can hover. */
+@media (hover: hover) {
+  .btn-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px -4px rgba(4, 39, 66, 0.35);
+  }
 }
 
 .btn-cta:active {
-  box-shadow: 0 4px 10px -6px var(--cta-glow-strong);
-  transform: translateY(0);
+  box-shadow: none;
+  transform: scale(0.98);
+  transition-duration: 0.06s;
 }
 
 .btn-cta:focus-visible {
-  outline: 3px solid var(--cta-ring);
+  outline: 2px solid var(--accent-soft-border);
   outline-offset: 3px;
 }
 
-/* The brand logo sits in a white disc at the start of the pill. */
 .btn-cta-logo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background: #fff;
-  color: var(--cta-base);
-  font-size: 20px;
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  font-size: 18px;
+  transition: background-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+.btn-cta:hover .btn-cta-logo,
+.btn-cta:focus-visible .btn-cta-logo {
+  background: var(--main-background-color);
+  color: var(--cta-brand);
 }
 
 /* Social-icon rules in main.css color .fa-youtube and make it jump on hover; not in here. */
@@ -458,57 +467,44 @@ footer.site-footer {
 
 .btn-cta-arrow {
   font-size: 0.8em;
-  opacity: 0.85;
-  transition: transform 0.18s ease;
+  opacity: 0.7;
+  transition: transform 0.15s ease-out;
 }
 
 .btn-cta:hover .btn-cta-arrow,
 .btn-cta:focus-visible .btn-cta-arrow {
-  transform: translateX(4px);
+  transform: translateX(3px);
 }
 
-/* LinkedIn blue: white text contrast 5.6:1. */
+/* Brand colors, shown on hover only; lighter tints in dark mode. */
 .btn-cta-linkedin {
-  --cta-top: #1574d4;
-  --cta-base: #0a66c2;
-  --cta-dark: #004182;
-  --cta-glow: rgba(10, 102, 194, 0.65);
-  --cta-glow-strong: rgba(10, 102, 194, 0.75);
-  --cta-ring: #70b5f9;
+  --cta-brand: #0a66c2;
 }
 
-/* YouTube red, a shade deeper than #ff0000 so white text reads well: contrast 5.9:1. */
 .btn-cta-youtube {
-  --cta-top: #e81c1c;
-  --cta-base: #cc0000;
-  --cta-dark: #990000;
-  --cta-glow: rgba(204, 0, 0, 0.55);
-  --cta-glow-strong: rgba(204, 0, 0, 0.7);
-  --cta-ring: #ff8a8a;
+  --cta-brand: #cc0000;
 }
 
-/* On dark pages the glow carries more of the lift. */
 [data-theme="dark"] .btn-cta-linkedin {
-  --cta-glow: rgba(10, 102, 194, 0.9);
+  --cta-brand: #70b5f9;
 }
 
 [data-theme="dark"] .btn-cta-youtube {
-  --cta-glow: rgba(230, 0, 0, 0.8);
-  --cta-glow-strong: rgba(230, 0, 0, 0.9);
+  --cta-brand: #ff6b6b;
 }
 
 @media (max-width: 450px) {
   .btn-cta {
-    min-height: 48px;
+    min-height: 46px;
     gap: 10px;
     padding-right: 18px;
     font-size: 16px;
   }
 
   .btn-cta-logo {
-    width: 36px;
-    height: 36px;
-    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    font-size: 17px;
   }
 }
 
