@@ -6,7 +6,6 @@ keywords: book a session, mentorship, AI engineer mock interview, AI advisory, c
 permalink: /book
 published: true
 css:
-  - "/css/custom-fonts.css"
   - "/css/booking.css"
 ---
 
@@ -22,7 +21,7 @@ css:
       <h1>{{ booking.hero.title }}</h1>
       <p class="booking-subtitle">{{ booking.hero.subtitle }}</p>
       <div class="booking-hero-actions">
-        <a class="booking-button" href="#sessions">{{ booking.hero.cta_label }}</a>
+        <a class="home-button home-button--primary" href="#sessions">{{ booking.hero.cta_label }} <span class="home-button-arrow home-button-arrow--down" aria-hidden="true">&darr;</span></a>
         <span class="booking-price-hint">{{ booking.hero.price_hint }}</span>
       </div>
     </div>
@@ -72,30 +71,15 @@ css:
         </ul>
 
         <a
-          class="booking-button booking-cta"
+          class="home-button home-button--primary booking-cta"
           href="{{ offer.booking_url | append: offer_query_separator | append: utm | append: offer.key }}"
           target="_blank"
           rel="noopener noreferrer"
           data-offer="{{ offer.key }}"
-        >
-          {{ offer.cta_label }}
-        </a>
+        >{{ offer.cta_label }} <span class="home-button-arrow home-button-arrow--external" aria-hidden="true">&nearr;</span><span class="sr-only"> (opens Cal.com in a new tab)</span></a>
       </article>
       {% endfor %}
     </div>
-  </section>
-
-  <section class="booking-section" aria-labelledby="booking-topics-title">
-    <h2 id="booking-topics-title">What you can ask me about</h2>
-
-    <ul class="booking-topics">
-      {% for topic in booking.topics %}
-      <li>
-        <span class="booking-topic-title">{{ topic.title }}</span>
-        <span class="booking-topic-text">{{ topic.text }}</span>
-      </li>
-      {% endfor %}
-    </ul>
   </section>
 
   <section class="booking-section" aria-labelledby="booking-steps-title">
@@ -112,6 +96,20 @@ css:
 
     <p class="booking-note">{{ booking.reschedule_note }}</p>
   </section>
+
+  <section class="booking-section" aria-labelledby="booking-topics-title">
+    <h2 id="booking-topics-title">What you can ask me about</h2>
+
+    <ul class="booking-topics">
+      {% for topic in booking.topics %}
+      <li>
+        <span class="booking-topic-title">{{ topic.title }}</span>
+        <span class="booking-topic-text">{{ topic.text }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
 
   <footer class="booking-footer">
     <p>

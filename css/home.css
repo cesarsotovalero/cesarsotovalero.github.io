@@ -62,94 +62,11 @@
   gap: 12px;
 }
 
-.home-button,
-.home-button:hover,
-.home-button:focus {
-  display: inline-flex;
-  align-items: center;
-  min-height: 46px;
-  padding: 0 22px;
-  border: 1px solid var(--main-text-color);
-  border-radius: 999px;
-  color: var(--main-text-color);
-  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-}
+/* The buttons (.home-button, .home-button--primary, .home-link) are in ui.css: other pages use them too. */
 
-.home-button:hover {
-  background: rgba(127, 127, 127, 0.1);
-}
-
-/* The one main action: solid navy (light text on dark navy in light mode, the reverse in dark mode).
-   Selected pills elsewhere use a soft tint, so a solid fill here reads as "the button", not "selected". */
-.home-button--primary,
-.home-button--primary:focus {
-  gap: 10px;
-  border-color: var(--accent);
-  background: var(--accent);
-  color: #fff;
-}
-
-.home-button--primary:hover {
-  border-color: #0b3a5e;
-  background: #0b3a5e;
-  color: #fff;
-}
-
-[data-theme="dark"] .home-button--primary,
-[data-theme="dark"] .home-button--primary:focus {
-  border-color: #e8edf3;
-  background: #e8edf3;
-  color: #042742;
-}
-
-[data-theme="dark"] .home-button--primary:hover {
-  border-color: #fff;
-  background: #fff;
-  color: #042742;
-}
-
-.home-button--primary:focus-visible,
-.home-link:focus-visible,
 .home-tab:focus-visible {
   outline: 2px solid var(--accent-soft-border);
   outline-offset: 3px;
-}
-
-/* A quieter action: text with an arrow that moves on hover. */
-.home-link,
-.home-link:hover,
-.home-link:focus {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 46px;
-  padding: 0 6px;
-  color: var(--main-text-color);
-  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.home-link:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--link-decoration-color);
-  text-underline-offset: 5px;
-}
-
-.home-button-arrow {
-  display: inline-block;
-  transition: transform 0.18s ease;
-}
-
-.home-button:hover .home-button-arrow,
-.home-link:hover .home-button-arrow,
-.home-button:focus-visible .home-button-arrow,
-.home-link:focus-visible .home-button-arrow {
-  transform: translateX(3px);
 }
 
 .home-profiles {

@@ -1,5 +1,6 @@
 /* Booking page (/book), inside the site's navbar and footer (landing layout).
-   Its own colour tokens match the site's light and dark themes. */
+   Surfaces and lines are its own; accents and buttons are the site's (ui.css), so the page uses no
+   colors of its own: the buttons are the site's pills (.home-button--primary). */
 
 :root {
   --bk-bg: #fffff6;
@@ -7,10 +8,8 @@
   --bk-text: #1a1a1a;
   --bk-muted: #5c6470;
   --bk-line: #e3e1d3;
-  --bk-accent: #012639;
-  --bk-on-accent: #ffffff;
-  --bk-accent-soft: #e9eef1;
-  --bk-check: #0a7d6f;
+  --bk-accent-soft: var(--accent-soft);
+  --bk-check: var(--accent-text);
   --bk-shadow: 0 1px 2px rgba(1, 38, 57, 0.06), 0 8px 24px rgba(1, 38, 57, 0.06);
 }
 
@@ -20,10 +19,6 @@ html[data-theme="dark"] {
   --bk-text: #e2e2e2;
   --bk-muted: #a3a9b2;
   --bk-line: #3b3f47;
-  --bk-accent: #8ac8ff;
-  --bk-on-accent: #0d1b26;
-  --bk-accent-soft: #2f3640;
-  --bk-check: #5fd0bf;
   --bk-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
@@ -67,21 +62,21 @@ html {
   letter-spacing: -0.01em;
 }
 
-.booking-page a {
+.booking-page a:not(.home-button) {
   color: var(--bk-text);
   text-decoration: underline;
   text-decoration-color: var(--bk-muted);
   text-underline-offset: 3px;
 }
 
-.booking-page a:hover,
-.booking-page a:focus {
+.booking-page a:not(.home-button):hover,
+.booking-page a:not(.home-button):focus {
   color: var(--bk-text);
   text-decoration-color: var(--bk-text);
 }
 
-.booking-page a:focus-visible {
-  outline: 3px solid var(--bk-accent);
+.booking-page a:not(.home-button):focus-visible {
+  outline: 2px solid var(--accent-soft-border);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -96,11 +91,12 @@ html {
   padding: 24px 0 56px; /* the same top spacing as the homepage hero */
 }
 
+/* Small capitals, like the eyebrow on the home page. */
 .booking-eyebrow {
-  font-family: var(--bk-ui);
-  font-size: max(14px, 0.78em);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-family: var(--font-caps);
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: lowercase; /* Equity Caps draws lowercase as small capitals */
   color: var(--bk-muted);
 }
 
@@ -168,37 +164,12 @@ html {
   margin-top: 4px;
 }
 
-/* --- Buttons --- */
+/* --- Buttons: the site's pills (ui.css) --- */
 
-.booking-page .booking-button {
-  display: inline-flex;
-  align-items: center;
+.booking-card .home-button {
   justify-content: center;
-  padding: 12px 22px;
-  border: 1px solid var(--bk-accent);
-  border-radius: 8px;
-  background: var(--bk-accent);
-  color: var(--bk-on-accent);
-  font-family: var(--bk-ui);
-  font-size: 0.94em;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-  text-align: center;
-  text-decoration: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.booking-page .booking-button:hover,
-.booking-page .booking-button:focus {
-  color: var(--bk-on-accent);
-  text-decoration: none;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(1, 38, 57, 0.22);
-}
-
-.booking-page .booking-button:active {
-  transform: translateY(0);
-  box-shadow: none;
+  width: 100%;
+  margin-top: 26px;
 }
 
 /* --- Sections --- */
@@ -300,11 +271,6 @@ html {
   top: 0;
   color: var(--bk-check);
   font-family: var(--bk-ui);
-}
-
-.booking-card .booking-button {
-  width: 100%;
-  margin-top: 26px;
 }
 
 /* --- Topics --- */
@@ -443,23 +409,10 @@ html {
     grid-template-columns: 1fr;
     gap: 22px;
   }
-
-  .booking-hero-actions .booking-button {
-    flex: 1 1 auto;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-
-  .booking-page .booking-button {
-    transition: none;
-  }
-
-  .booking-page .booking-button:hover,
-  .booking-page .booking-button:focus {
-    transform: none;
   }
 }

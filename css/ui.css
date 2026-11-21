@@ -1019,3 +1019,121 @@ html.theme-transition::view-transition-new(root) {
   from { clip-path: circle(0 at var(--reveal-x) var(--reveal-y)); }
   to { clip-path: circle(var(--reveal-r) at var(--reveal-x) var(--reveal-y)); }
 }
+
+/* ---------- Buttons ----------
+   The site's pill buttons, used on the home page, the booking page and elsewhere: .home-button
+   (outlined), .home-button--primary (the one main action, solid) and .home-link (a quiet text action).
+   An arrow in .home-button-arrow moves on hover: right, down for jumps within the page, up-right for
+   links that open another site. */
+
+.home-button,
+.home-button:hover,
+.home-button:focus {
+  display: inline-flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 0 22px;
+  border: 1px solid var(--main-text-color);
+  border-radius: 999px;
+  color: var(--main-text-color);
+  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-button:hover {
+  background: rgba(127, 127, 127, 0.1);
+}
+
+/* The one main action: solid navy (light text on dark navy in light mode, the reverse in dark mode).
+   Selected pills elsewhere use a soft tint, so a solid fill here reads as "the button", not "selected". */
+.home-button--primary,
+.home-button--primary:focus {
+  gap: 10px;
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.home-button--primary:hover {
+  border-color: #0b3a5e;
+  background: #0b3a5e;
+  color: #fff;
+}
+
+[data-theme="dark"] .home-button--primary,
+[data-theme="dark"] .home-button--primary:focus {
+  border-color: #e8edf3;
+  background: #e8edf3;
+  color: #042742;
+}
+
+[data-theme="dark"] .home-button--primary:hover {
+  border-color: #fff;
+  background: #fff;
+  color: #042742;
+}
+
+.home-button--primary:focus-visible,
+.home-link:focus-visible {
+  outline: 2px solid var(--accent-soft-border);
+  outline-offset: 3px;
+}
+
+/* A quieter action: text with an arrow that moves on hover. */
+.home-link,
+.home-link:hover,
+.home-link:focus {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 0 6px;
+  color: var(--main-text-color);
+  font-family: "Concourse T4", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--link-decoration-color);
+  text-underline-offset: 5px;
+}
+
+.home-button-arrow {
+  display: inline-block;
+  transition: transform 0.18s ease;
+}
+
+.home-button:hover .home-button-arrow,
+.home-link:hover .home-button-arrow,
+.home-button:focus-visible .home-button-arrow,
+.home-link:focus-visible .home-button-arrow {
+  transform: translateX(3px);
+}
+
+.home-button:hover .home-button-arrow--down,
+.home-button:focus-visible .home-button-arrow--down {
+  transform: translateY(2px);
+}
+
+.home-button:hover .home-button-arrow--external,
+.home-button:focus-visible .home-button-arrow--external {
+  transform: translate(2px, -2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-button-arrow {
+    transition: none;
+  }
+
+  .home-button:hover .home-button-arrow,
+  .home-link:hover .home-button-arrow,
+  .home-button:focus-visible .home-button-arrow,
+  .home-link:focus-visible .home-button-arrow {
+    transform: none;
+  }
+}
