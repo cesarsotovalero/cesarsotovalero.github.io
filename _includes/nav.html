@@ -69,6 +69,52 @@
    for (var j = 0; j < links.length; j++) {
       links[j].addEventListener('click', function() { menu.close(); });
    }
+
+   // A tap on the dimmed page beside the menu closes it (browsers without closedby="any", such as Safari).
+   menu.addEventListener('click', function(e) {
+      if (e.target !== menu) return;
+      var r = menu.getBoundingClientRect();
+      if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) menu.close();
+   });
+
+   // Swipe left to close. The menu follows the finger (and the backdrop fades with it); letting go past a
+   // third of its width, or after a quick flick, closes it, otherwise it slides back. Vertical swipes
+   // still scroll the menu (touch-action: pan-y in site-nav.css).
+   var drag = null;
+   menu.addEventListener('touchstart', function(e) {
+      drag = e.touches.length === 1
+         ? { x: e.touches[0].clientX, y: e.touches[0].clientY, time: Date.now(), dx: 0, horizontal: null }
+         : null;
+   }, { passive: true });
+
+   menu.addEventListener('touchmove', function(e) {
+      if (!drag) return;
+      var dx = e.touches[0].clientX - drag.x;
+      var dy = e.touches[0].clientY - drag.y;
+      if (drag.horizontal === null) {
+         if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+         drag.horizontal = Math.abs(dx) > Math.abs(dy);
+         if (drag.horizontal) menu.classList.add('is-dragging');
+      }
+      if (!drag.horizontal) return;
+      drag.dx = Math.min(0, dx);
+      menu.style.transform = 'translateX(' + drag.dx + 'px)';
+      menu.style.setProperty('--drag', Math.min(1, -drag.dx / menu.offsetWidth).toFixed(3));
+   }, { passive: true });
+
+   function release() {
+      var d = drag;
+      drag = null;
+      if (!d || !d.horizontal) return;
+      var flick = d.dx < -40 && -d.dx / Math.max(1, Date.now() - d.time) > 0.5;
+      // Back to the stylesheet: from where the finger left it, the menu eases shut or back open.
+      menu.classList.remove('is-dragging');
+      menu.style.transform = '';
+      menu.style.removeProperty('--drag');
+      if (d.dx < -menu.offsetWidth / 3 || flick) menu.close();
+   }
+   menu.addEventListener('touchend', release);
+   menu.addEventListener('touchcancel', release);
 })();
 
 // Hide the header while scrolling down and show it again on scroll up.

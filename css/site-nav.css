@@ -238,6 +238,17 @@ dialog.site-drawer {
   max-width: min(320px, 88vw);
   padding: 64px 24px 32px;
   font-family: var(--nav-font);
+  touch-action: pan-y; /* vertical swipes scroll the menu; horizontal ones close it (nav.html) */
+}
+
+/* While a finger drags the menu, it follows without easing and the backdrop fades with it. */
+dialog.site-drawer.is-dragging {
+  transition: none;
+}
+
+dialog.site-drawer.is-dragging::backdrop {
+  transition: none;
+  opacity: calc(1 - var(--drag, 0));
 }
 
 .site-drawer .drawer-close {
