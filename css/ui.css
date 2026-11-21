@@ -728,22 +728,30 @@ button:focus:not(:focus-visible) {
     gap: 8px;
     width: auto;
     height: 36px;
-    padding: 0 6px 0 10px;
+    padding: 0 12px 0 10px;
     border: 1px solid var(--nav-border);
     border-radius: 999px;
   }
 
+  /* The hint is a quiet gray label: no box around it, no link underline. */
+  .site-nav-search,
+  .site-nav-search:hover,
+  .site-nav-search:focus {
+    text-decoration: none;
+  }
+
   .site-nav-kbd {
     display: inline-block;
-    padding: 1px 6px;
-    border: 1px solid var(--nav-border);
-    border-radius: 6px;
-    background: transparent;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
     box-shadow: none;
     color: var(--post-meta-index-color);
+    opacity: 0.8;
     font-family: var(--font-ui);
     font-size: var(--fs-min);
-    line-height: 1.4;
+    line-height: 1;
   }
 }
 
