@@ -241,6 +241,11 @@ dialog.site-drawer {
   touch-action: pan-y; /* vertical swipes scroll the menu; horizontal ones close it (nav.html) */
 }
 
+/* The menu itself takes focus when opened by touch or mouse (nav.html): no ring around the panel. */
+dialog.site-drawer:focus {
+  outline: none;
+}
+
 /* While a finger drags the menu, it follows without easing and the backdrop fades with it. */
 dialog.site-drawer.is-dragging {
   transition: none;

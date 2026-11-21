@@ -21,7 +21,7 @@
    </nav>
 
    <!-- Mobile menu: a native dialog, which works without JavaScript in browsers that support invoker commands. -->
-   <dialog class="drawer-panel site-drawer" id="drawer-menu" closedby="any" aria-label="Menu">
+   <dialog class="drawer-panel site-drawer" id="drawer-menu" closedby="any" aria-label="Menu" tabindex="-1">
       <button class="drawer-close site-nav-icon" type="button" commandfor="drawer-menu" command="close" aria-label="Close menu">{% include icon.html name="close" %}</button>
       <ul class="site-drawer-sections">
          <li><a class="site-drawer-section" href="{{ site.baseurl }}/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
@@ -58,6 +58,9 @@
          var cmd = this.getAttribute('command');
          if (cmd === 'show-modal') {
             menu.showModal();
+            // Opened by touch or mouse: focus the menu itself rather than its close button, which would
+            // otherwise show a focus ring. Opened from the keyboard (detail 0), the close button keeps focus.
+            if (e.detail !== 0) menu.focus({ preventScroll: true });
          } else if (cmd === 'close') {
             menu.close();
          }
