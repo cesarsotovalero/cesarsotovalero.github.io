@@ -1,7 +1,7 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "ykxpIvd-RP3TEdWnHcn8WJUdrBQ",
+    "etag": "baYdeaAZmDr73sen-ITznImRtTo",
     "id": "Y_JX0C5sAEo",
     "snippet": {
       "publishedAt": "2026-09-10T04:59:45Z",
@@ -55,7 +55,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "429",
+      "viewCount": "439",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -63,7 +63,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "psvvbiysnfUYAT9e16fvOTYO-XQ",
+    "etag": "QxXDMn3zWDLRLEQPqJdLtMwxV7A",
     "id": "OdJjEIthtzg",
     "snippet": {
       "publishedAt": "2026-08-21T22:00:09Z",
@@ -122,7 +122,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "742",
+      "viewCount": "749",
       "likeCount": "13",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -130,7 +130,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8_CJldePFK8FvFcWOqsfqfqyQ7M",
+    "etag": "yngusmiVQw_pY7eof8mNCTazxsI",
     "id": "BvGnN4aQfA8",
     "snippet": {
       "publishedAt": "2026-08-17T16:28:39Z",
@@ -202,7 +202,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "136",
+      "viewCount": "139",
       "likeCount": "7",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -292,7 +292,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YCH5PMN4ncJA2MkKXXmoag4xfAs",
+    "etag": "KDgQQJIPx7qk6dIhFOFLRmL1uno",
     "id": "mZLdO8_Q2m8",
     "snippet": {
       "publishedAt": "2026-08-01T12:00:19Z",
@@ -364,7 +364,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "158",
+      "viewCount": "161",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -372,7 +372,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "z__BN2NfVnf4LmEVknX1COCibJw",
+    "etag": "YhMkKlb8kASaX4eZQkjmgLXz1Hc",
     "id": "NVpm5I2KSRE",
     "snippet": {
       "publishedAt": "2026-07-25T16:13:47Z",
@@ -443,7 +443,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "574",
+      "viewCount": "588",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "6"
@@ -451,7 +451,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6LiYR_VshQIjRXe0_4bSkZt-pcs",
+    "etag": "lp507VY4_ex0ozSA81_ttNjjkoQ",
     "id": "-322bwe4oNQ",
     "snippet": {
       "publishedAt": "2026-07-19T12:16:28Z",
@@ -524,7 +524,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "253",
+      "viewCount": "255",
       "likeCount": "6",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -613,7 +613,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "p46dENWJWpgVVzUpXFY-St9R748",
+    "etag": "d9rj3DeoxRjKteIG6vVJ30Vx1jQ",
     "id": "t9pFgvFLxV0",
     "snippet": {
       "publishedAt": "2026-07-03T15:00:39Z",
@@ -686,7 +686,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "123",
+      "viewCount": "124",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -694,7 +694,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "tUHMlxs1BWh0hR-7ARigMu4yidc",
+    "etag": "MOaimATNKWAjABVkmlzbBKT0bhk",
     "id": "Wq4VX-9wzFo",
     "snippet": {
       "publishedAt": "2026-06-24T15:20:15Z",
@@ -772,7 +772,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ypAXUEU38GX2VuGf2EF07ClDbgQ",
+    "etag": "h9EzFan183Eai5GQUYFmp4QMOiE",
     "id": "oLu-KGJ_x0E",
     "snippet": {
       "publishedAt": "2026-06-20T08:30:46Z",
@@ -841,7 +841,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "454",
+      "viewCount": "467",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -849,7 +849,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "r_IYaMrEBkGL2XChchWLJKJawCk",
+    "etag": "824bQX9ZYaPiTI9jJf8jMRGGhHA",
     "id": "Ikk2f0gEPuY",
     "snippet": {
       "publishedAt": "2026-06-06T19:11:28Z",
@@ -918,7 +918,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "201",
+      "viewCount": "203",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -926,7 +926,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Cc5jTWkpcTY0NiK-WAC9gZZalyA",
+    "etag": "4IMt-lAZqjUhGTyiqPeQ0cyI2BA",
     "id": "VO5gC3RakSk",
     "snippet": {
       "publishedAt": "2026-05-24T14:46:16Z",
@@ -980,7 +980,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "236",
+      "viewCount": "244",
       "likeCount": "2",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -988,7 +988,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "lo3mbaomVjlSdSkzfrgcDyDKIrg",
+    "etag": "jySmO902a-DJ8zVrVqYHU_tC1zw",
     "id": "g-k_CXuPkpA",
     "snippet": {
       "publishedAt": "2026-05-14T09:07:40Z",
@@ -1057,7 +1057,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "121",
+      "viewCount": "125",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1141,7 +1141,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "wRcymm_zaEJ0ig8B9Mn13lQQlBE",
+    "etag": "ZoqWOwW4O7m87mOPrXqOwV_oZNQ",
     "id": "rGspkFASp8k",
     "snippet": {
       "publishedAt": "2026-04-29T14:45:07Z",
@@ -1210,7 +1210,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "50",
+      "viewCount": "51",
       "likeCount": "4",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1218,7 +1218,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "dFiRMhp-QrBY-I66R0u2zUfSgBc",
+    "etag": "xLoVmi2OyxiSWK8qUKE8N-MofLM",
     "id": "AfaOvAXFCmg",
     "snippet": {
       "publishedAt": "2026-04-25T20:00:40Z",
@@ -1305,7 +1305,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "137",
+      "viewCount": "138",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1313,7 +1313,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Fm7Ia3M08J4HO6vfLwHwyAyqFZY",
+    "etag": "0Ao91ssh-Z2K4_QXiIZ0vGUI_M8",
     "id": "gxlFNuoFRPw",
     "snippet": {
       "publishedAt": "2026-04-21T12:45:57Z",
@@ -1384,7 +1384,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "992",
+      "viewCount": "994",
       "likeCount": "18",
       "favoriteCount": "0",
       "commentCount": "9"
@@ -1392,7 +1392,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qPRxhPbNYSYYJN87i331N-GxILM",
+    "etag": "HWqxakoyvQqrc8v3Efz8xFPlqhg",
     "id": "Avngm8d2X6I",
     "snippet": {
       "publishedAt": "2026-04-14T22:00:00Z",
@@ -1462,7 +1462,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "66",
+      "viewCount": "67",
       "likeCount": "3",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1470,7 +1470,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "-6h2lOVUeLOdO5YHPRIm-SBt6_E",
+    "etag": "4ebpI2WJKgexcGvvtvsdgbYikeY",
     "id": "zyEWaN66ljE",
     "snippet": {
       "publishedAt": "2026-04-06T12:31:09Z",
@@ -1548,7 +1548,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "298",
+      "viewCount": "300",
       "likeCount": "15",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -1556,7 +1556,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "tMVbMODBRJJhsFq6yWlkPZTH3Fc",
+    "etag": "s5MbmFk2qNJdU58hrs9i6TQ08K0",
     "id": "s-s_jlTwCVE",
     "snippet": {
       "publishedAt": "2026-02-28T17:31:59Z",
@@ -1625,15 +1625,15 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "519",
-      "likeCount": "16",
+      "viewCount": "528",
+      "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "5"
     }
   },
   {
     "kind": "youtube#video",
-    "etag": "rGjb04lLwuXJOSJxVgSpyCw-SsI",
+    "etag": "w76iNo7VzIRa7CxrTErDnWnFvlE",
     "id": "iXxARSrgCKI",
     "snippet": {
       "publishedAt": "2026-02-20T19:59:19Z",
@@ -1701,7 +1701,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1138",
+      "viewCount": "1143",
       "likeCount": "23",
       "favoriteCount": "0",
       "commentCount": "2"
@@ -1709,7 +1709,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "oCCZUAstC-bhlZvVu63_6nF6LaE",
+    "etag": "NgC0Toh1Nmpg8wqwpwred4dKlFE",
     "id": "OaN0u1bN1Qk",
     "snippet": {
       "publishedAt": "2026-02-14T17:35:03Z",
@@ -1784,7 +1784,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "445",
+      "viewCount": "451",
       "likeCount": "19",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -1869,7 +1869,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "4UBrJhlJ1xj2P0LDcYyvVIwjhfs",
+    "etag": "cHqL8zLTsUC_u7wmzgEVXtJZcDw",
     "id": "0JaJmRFn8NU",
     "snippet": {
       "publishedAt": "2026-02-02T19:55:58Z",
@@ -1945,7 +1945,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "L3Ke1HmkAIiTrrmHcE_yiuin0OA",
+    "etag": "WzJuFsFcP5WvyXJFFabFFLwWa3s",
     "id": "cCh5GKsipAM",
     "snippet": {
       "publishedAt": "2026-01-24T13:42:15Z",
@@ -2027,7 +2027,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "280",
+      "viewCount": "281",
       "likeCount": "10",
       "favoriteCount": "0",
       "commentCount": "11"
@@ -2035,7 +2035,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "vBd0YL1hepWI9iIYed7fsYs5krI",
+    "etag": "zmgqCkrQ7DODgnvBuN756mLef-8",
     "id": "maIBlxGubeI",
     "snippet": {
       "publishedAt": "2026-01-17T13:17:46Z",
@@ -2115,7 +2115,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "7627",
+      "viewCount": "7661",
       "likeCount": "134",
       "favoriteCount": "0",
       "commentCount": "23"
@@ -2123,7 +2123,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KXDSXxAtRenzthiMpdjqLjqGI0E",
+    "etag": "ixyPcXxOvZzB2xtjegCAVYvyDzQ",
     "id": "U06hExVnVbw",
     "snippet": {
       "publishedAt": "2026-01-11T08:25:06Z",
@@ -2202,7 +2202,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "236",
+      "viewCount": "237",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "5"
@@ -2296,7 +2296,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "9vMWw6t44_tXGAXfOrm3zteDx_w",
+    "etag": "ag6cYSJt44ZdBduN9Wwpe0-P36U",
     "id": "-a6Pbv_yBWw",
     "snippet": {
       "publishedAt": "2025-11-29T07:55:26Z",
@@ -2378,7 +2378,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "298",
+      "viewCount": "299",
       "likeCount": "17",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -2386,7 +2386,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "UT-g1mUWbDPUW7IidKUcRK-ovAI",
+    "etag": "tnwyJZjAjbHkaRVKUFJxMZU0wK0",
     "id": "AM6Us--nDRo",
     "snippet": {
       "publishedAt": "2025-11-22T13:59:31Z",
@@ -2465,8 +2465,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1170",
-      "likeCount": "42",
+      "viewCount": "1183",
+      "likeCount": "43",
       "favoriteCount": "0",
       "commentCount": "11"
     }
@@ -2562,7 +2562,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "yvxZBxeGI87dY7_u9zZ_VbmBeg4",
+    "etag": "kDh7ecl-ToU8ZviY8aR8gZmIu0I",
     "id": "Hd04NJej9iE",
     "snippet": {
       "publishedAt": "2025-10-19T15:38:38Z",
@@ -2643,7 +2643,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "258",
+      "viewCount": "259",
       "likeCount": "12",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -2651,7 +2651,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "CYmwVKkk3zBLSeI7byxhIcXGAzo",
+    "etag": "DChdocq8rvf4G5B6buczpxW3wC8",
     "id": "RgzeESzBa4Y",
     "snippet": {
       "publishedAt": "2025-09-22T05:09:32Z",
@@ -2726,8 +2726,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "3966",
-      "likeCount": "144",
+      "viewCount": "4068",
+      "likeCount": "146",
       "favoriteCount": "0",
       "commentCount": "32"
     }
@@ -2827,7 +2827,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "WHHR9UJbgeGCs8B2VDOhvejq5Pk",
+    "etag": "eG-8q1Kq3o5dv869LJ1xLb3hFI0",
     "id": "c-JIlLList4",
     "snippet": {
       "publishedAt": "2024-12-22T21:00:18Z",
@@ -2902,7 +2902,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "337",
+      "viewCount": "338",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -2910,7 +2910,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "kmmQsa64p52MfW3YvBleYW4RCfs",
+    "etag": "HNDnz-AWZSklEMD81fwQV_XL8EI",
     "id": "SQY2IED6vFQ",
     "snippet": {
       "publishedAt": "2024-12-14T22:45:00Z",
@@ -2994,7 +2994,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "L9WuMqXNyJy3eFwrk5lZ_wO4x4c",
+    "etag": "PIhohaFPhW-lTHs1ixR_O8f-c0I",
     "id": "kw7fvHf4rDw",
     "snippet": {
       "publishedAt": "2024-12-07T15:20:00Z",
@@ -3159,7 +3159,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "32zLJ7Z_wMhkVcdygNFWwIG1vtY",
+    "etag": "1aM9jJT7saHr2z_jPz_2fiUyjSI",
     "id": "n1t3XEAyUgQ",
     "snippet": {
       "publishedAt": "2024-10-21T06:00:32Z",
@@ -3322,7 +3322,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Pv_ddOCb9NamH2aYB5icKn_3VJc",
+    "etag": "udqUgD6lRDpKjdWUXIQBGkncA7A",
     "id": "-EYVzXoq15o",
     "snippet": {
       "publishedAt": "2024-09-29T15:00:00Z",
@@ -3397,7 +3397,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nmP4DuYazKGsgkF3uprKO_MpfVE",
+    "etag": "0LW0Ub7vDJ8NAMTeKuGPZZ1daN0",
     "id": "N7pY8VAt6g4",
     "snippet": {
       "publishedAt": "2024-09-22T14:00:29Z",
@@ -3458,7 +3458,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "12960",
+      "viewCount": "12961",
       "likeCount": "641",
       "favoriteCount": "0",
       "commentCount": "304"
@@ -3466,7 +3466,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "FZvsRpY94yvn96Zn1LOSbsdreBo",
+    "etag": "h1o-pxX-wWvMcIzBCtmwctJ4RO4",
     "id": "DqL3-bnSCy0",
     "snippet": {
       "publishedAt": "2024-09-14T15:00:10Z",
@@ -3528,7 +3528,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1244",
+      "viewCount": "1248",
       "likeCount": "65",
       "favoriteCount": "0",
       "commentCount": "37"
@@ -3536,7 +3536,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "w3u6t0Q3yzVMMNPAezkZY5BpNds",
+    "etag": "55KHwASVJ1uCvCgwGfl9shz31hg",
     "id": "k31h3hoV-Us",
     "snippet": {
       "publishedAt": "2024-08-11T15:00:41Z",
@@ -3590,7 +3590,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "377",
+      "viewCount": "384",
       "likeCount": "9",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3598,7 +3598,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "f_V-1FujeKvrn23Mo6iOOt74H7Q",
+    "etag": "2775KBzrr0B5fgJauA6sz1ykOv0",
     "id": "jdnWhkgA_rM",
     "snippet": {
       "publishedAt": "2024-08-04T15:00:50Z",
@@ -3652,7 +3652,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1432",
+      "viewCount": "1442",
       "likeCount": "43",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3660,7 +3660,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "OiWABlBlCSzl15pQd5XzuhDh6D8",
+    "etag": "KeAThEri-vSR4AFavtnbwWOpbvw",
     "id": "-3txwKTHe4Y",
     "snippet": {
       "publishedAt": "2024-07-28T15:00:00Z",
@@ -3721,7 +3721,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "463",
+      "viewCount": "464",
       "likeCount": "11",
       "favoriteCount": "0",
       "commentCount": "3"
@@ -3729,7 +3729,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "hkCUldU18wlFBnqLeH36IfFbrXE",
+    "etag": "YQAO9WdxFLbD_IlexjLx99XgJUo",
     "id": "TrYB4D_1flA",
     "snippet": {
       "publishedAt": "2024-07-21T16:00:32Z",
@@ -3788,7 +3788,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "239",
+      "viewCount": "242",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "4"
@@ -3857,13 +3857,13 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8sInjJRzmuxrufUaBeS31uLkJaE",
+    "etag": "FRDsgkZh7fRFSwCj_KFYTkX_nOU",
     "id": "Ub684G_aM5Q",
     "snippet": {
       "publishedAt": "2023-06-18T13:44:30Z",
       "channelId": "UCR4rI98w6-MqYoCS6jR9LGg",
       "title": "Debloating Java Dependencies",
-      "description": "My PhD Defense\nJune 1st, 2023\n\nLink to the full PhD thesis: https://www.cesarsotovalero.net/files/thesis/2023_debloating-java-dependencies_kth-phd-thesis_cesar-soto-valero.pdf\nLink to the slides: https://www.cesarsotovalero.net/files/thesis/slides/cesar-phd-defense.pptx\n\n# Summary\n\nSoftware systems have a natural tendency to grow in size and complexity. A part of this growth comes with the addition of new features or bug fixes, while another part is due to useless code that accumulates over time. This phenomenon, known as \"software bloat,\" increases with the practice of reusing software dependencies, which has exceeded the capacity of human developers to efficiently manage them. Software bloat in third-party dependencies presents a multifaceted challenge for application development, encompassing issues of security, performance, and maintenance. To address these issues, researchers have developed software debloating techniques that automatically remove unnecessary code.\n\nDespite significant progress has been made in the realm of software debloating, the pervasive issue of dependency bloat warrants special attention. In this thesis, we contribute to the field of software debloating by proposing novel techniques specifically targeting dependencies in the Java ecosystem. First, we investigate the growth of completely unused software dependencies, which we call \"bloated dependencies.''  We propose a technique to automatically detect and remove bloated dependencies in Java projects built with Maven. We empirically study the usage status of dependencies in the Maven Central repository and remove bloated dependencies in mature Java projects. We demonstrate that once a bloated dependency is detected, it can be safely removed as its future usage is unlikely.\n\nSecond, we focus on dependencies that are only partially used. We introduce a technique to specialize these dependencies in Java projects based on their actual usage. Our approach systematically identifies the subset of functionalities within each dependency that is sufficient to build the project and removes the rest. We demonstrate that our dependency specialization approach can halve the project classes to dependency classes ratio. Last, we assess the impact of debloating projects with respect to client applications that reuse them. We present a novel coverage-based debloating technique that determines which class members in Java libraries and their dependencies are necessary for their clients. Our debloating technique effectively decreases the size of debloated libraries while preserving the essential functionalities required to successfully build their clients.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#phdthesis #computerscience #softwareengineering #softwaredebloating",
+      "description": "My PhD Defense\nJune 1st, 2023\n\nLink to the full PhD thesis: https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf\nLink to the slides: https://www.cesarsotovalero.net/files/thesis/slides/cesar-phd-defense.pptx\n\n# Summary\n\nSoftware systems have a natural tendency to grow in size and complexity. A part of this growth comes with the addition of new features or bug fixes, while another part is due to useless code that accumulates over time. This phenomenon, known as \"software bloat,\" increases with the practice of reusing software dependencies, which has exceeded the capacity of human developers to efficiently manage them. Software bloat in third-party dependencies presents a multifaceted challenge for application development, encompassing issues of security, performance, and maintenance. To address these issues, researchers have developed software debloating techniques that automatically remove unnecessary code.\n\nDespite significant progress has been made in the realm of software debloating, the pervasive issue of dependency bloat warrants special attention. In this thesis, we contribute to the field of software debloating by proposing novel techniques specifically targeting dependencies in the Java ecosystem. First, we investigate the growth of completely unused software dependencies, which we call \"bloated dependencies.''  We propose a technique to automatically detect and remove bloated dependencies in Java projects built with Maven. We empirically study the usage status of dependencies in the Maven Central repository and remove bloated dependencies in mature Java projects. We demonstrate that once a bloated dependency is detected, it can be safely removed as its future usage is unlikely.\n\nSecond, we focus on dependencies that are only partially used. We introduce a technique to specialize these dependencies in Java projects based on their actual usage. Our approach systematically identifies the subset of functionalities within each dependency that is sufficient to build the project and removes the rest. We demonstrate that our dependency specialization approach can halve the project classes to dependency classes ratio. Last, we assess the impact of debloating projects with respect to client applications that reuse them. We present a novel coverage-based debloating technique that determines which class members in Java libraries and their dependencies are necessary for their clients. Our debloating technique effectively decreases the size of debloated libraries while preserving the essential functionalities required to successfully build their clients.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#phdthesis #computerscience #softwareengineering #softwaredebloating",
       "thumbnails": {
         "default": {
           "url": "https://i.ytimg.com/vi/Ub684G_aM5Q/default.jpg",
@@ -3897,7 +3897,7 @@
       "defaultLanguage": "en",
       "localized": {
         "title": "Debloating Java Dependencies",
-        "description": "My PhD Defense\nJune 1st, 2023\n\nLink to the full PhD thesis: https://www.cesarsotovalero.net/files/thesis/2023_debloating-java-dependencies_kth-phd-thesis_cesar-soto-valero.pdf\nLink to the slides: https://www.cesarsotovalero.net/files/thesis/slides/cesar-phd-defense.pptx\n\n# Summary\n\nSoftware systems have a natural tendency to grow in size and complexity. A part of this growth comes with the addition of new features or bug fixes, while another part is due to useless code that accumulates over time. This phenomenon, known as \"software bloat,\" increases with the practice of reusing software dependencies, which has exceeded the capacity of human developers to efficiently manage them. Software bloat in third-party dependencies presents a multifaceted challenge for application development, encompassing issues of security, performance, and maintenance. To address these issues, researchers have developed software debloating techniques that automatically remove unnecessary code.\n\nDespite significant progress has been made in the realm of software debloating, the pervasive issue of dependency bloat warrants special attention. In this thesis, we contribute to the field of software debloating by proposing novel techniques specifically targeting dependencies in the Java ecosystem. First, we investigate the growth of completely unused software dependencies, which we call \"bloated dependencies.''  We propose a technique to automatically detect and remove bloated dependencies in Java projects built with Maven. We empirically study the usage status of dependencies in the Maven Central repository and remove bloated dependencies in mature Java projects. We demonstrate that once a bloated dependency is detected, it can be safely removed as its future usage is unlikely.\n\nSecond, we focus on dependencies that are only partially used. We introduce a technique to specialize these dependencies in Java projects based on their actual usage. Our approach systematically identifies the subset of functionalities within each dependency that is sufficient to build the project and removes the rest. We demonstrate that our dependency specialization approach can halve the project classes to dependency classes ratio. Last, we assess the impact of debloating projects with respect to client applications that reuse them. We present a novel coverage-based debloating technique that determines which class members in Java libraries and their dependencies are necessary for their clients. Our debloating technique effectively decreases the size of debloated libraries while preserving the essential functionalities required to successfully build their clients.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#phdthesis #computerscience #softwareengineering #softwaredebloating"
+        "description": "My PhD Defense\nJune 1st, 2023\n\nLink to the full PhD thesis: https://www.cesarsotovalero.net/files/thesis/cesar-fulltext.pdf\nLink to the slides: https://www.cesarsotovalero.net/files/thesis/slides/cesar-phd-defense.pptx\n\n# Summary\n\nSoftware systems have a natural tendency to grow in size and complexity. A part of this growth comes with the addition of new features or bug fixes, while another part is due to useless code that accumulates over time. This phenomenon, known as \"software bloat,\" increases with the practice of reusing software dependencies, which has exceeded the capacity of human developers to efficiently manage them. Software bloat in third-party dependencies presents a multifaceted challenge for application development, encompassing issues of security, performance, and maintenance. To address these issues, researchers have developed software debloating techniques that automatically remove unnecessary code.\n\nDespite significant progress has been made in the realm of software debloating, the pervasive issue of dependency bloat warrants special attention. In this thesis, we contribute to the field of software debloating by proposing novel techniques specifically targeting dependencies in the Java ecosystem. First, we investigate the growth of completely unused software dependencies, which we call \"bloated dependencies.''  We propose a technique to automatically detect and remove bloated dependencies in Java projects built with Maven. We empirically study the usage status of dependencies in the Maven Central repository and remove bloated dependencies in mature Java projects. We demonstrate that once a bloated dependency is detected, it can be safely removed as its future usage is unlikely.\n\nSecond, we focus on dependencies that are only partially used. We introduce a technique to specialize these dependencies in Java projects based on their actual usage. Our approach systematically identifies the subset of functionalities within each dependency that is sufficient to build the project and removes the rest. We demonstrate that our dependency specialization approach can halve the project classes to dependency classes ratio. Last, we assess the impact of debloating projects with respect to client applications that reuse them. We present a novel coverage-based debloating technique that determines which class members in Java libraries and their dependencies are necessary for their clients. Our debloating technique effectively decreases the size of debloated libraries while preserving the essential functionalities required to successfully build their clients.\n\nMy Blog: https://www.cesarsotovalero.net/blog\nMy GitHub: https://github.com/cesarsotovalero\nMy Twitter: https://twitter.com/cesarsotovalero\nMy LinkedIn: https://www.linkedin.com/in/cesarsotovalero\n\n#phdthesis #computerscience #softwareengineering #softwaredebloating"
       },
       "defaultAudioLanguage": "en"
     },
@@ -3911,7 +3911,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "214",
+      "viewCount": "215",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -3988,7 +3988,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "voQHIGw7YZorT7IoS9nEB5_XCp4",
+    "etag": "Znr99Jqa8R0hdPpQeGX2vQogwv0",
     "id": "IrFS2e-4gqU",
     "snippet": {
       "publishedAt": "2021-11-07T11:00:06Z",
@@ -4048,7 +4048,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "454",
+      "viewCount": "455",
       "likeCount": "16",
       "favoriteCount": "0",
       "commentCount": "1"
@@ -4056,7 +4056,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Cu1Ju3Z9HHr4bOH1iAwG-S_gZHg",
+    "etag": "ly1m0oDbjX_3tPU-qWga14HoES0",
     "id": "mp_jSfUACrs",
     "snippet": {
       "publishedAt": "2021-10-17T19:00:58Z",
@@ -4115,7 +4115,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "233",
+      "viewCount": "234",
       "likeCount": "8",
       "favoriteCount": "0",
       "commentCount": "0"
@@ -4258,7 +4258,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "-elRmQI-MMD3qV4JXL-G6qAu2xc",
+    "etag": "TO6Bc2KUcYw_WkI6FU1rb0vI7BY",
     "id": "8SndbPMwdWE",
     "snippet": {
       "publishedAt": "2021-08-31T05:55:17Z",
