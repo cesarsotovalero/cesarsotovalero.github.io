@@ -293,12 +293,12 @@ Scanned packs (a quarter of the total) have an error rate of about 15%, against 
 ## Is It the Page or the Reader?
 
 The four buckets hide a distinction that matters for what you do next.
-Some doubt comes from the **page**: the scan is blurry, the table is cut off, the pack is incomplete.
+Some doubt comes from the *page*: the scan is blurry, the table is cut off, the pack is incomplete.
 Statisticians call this *aleatoric* uncertainty.
 No amount of modeling will remove it.
 The right response is often to reject the document and ask for a better copy.
 
-Other doubt comes from the **reader**: the template has never been seen, the layout is unusual, the language is unfamiliar.
+Other doubt comes from the *reader*: the template has never been seen, the layout is unusual, the language is unfamiliar.
 This is *epistemic* uncertainty, and it shrinks with data.
 The right response is to route the value to review and make sure the reviewed result ends up in the training and calibration data.
 
@@ -597,10 +597,10 @@ The trees learn what "missing" means from data, which is much safer than filling
 
 The scorer outputs a number between 0 and 1.
 It is not yet a probability you can put into Chow's rule.
-A **calibrated** score is one where the number means what it says: among all values with a score of 0.99, about 99% are right; among all values with a score of 0.9, about 90% are right.
+A *calibrated* score is one where the number means what it says: among all values with a score of 0.99, about 99% are right; among all values with a score of 0.9, about 90% are right.
 It's the weather forecaster's property from the history section, applied to numbers in a PDF.
 
-The way to check it is a **reliability diagram**: bin the held-out values by predicted probability, and plot the observed share of correct values in each bin against the average prediction.
+The way to check it is a *reliability diagram*: bin the held-out values by predicted probability, and plot the observed share of correct values in each bin against the average prediction.
 A calibrated score sits on the diagonal.
 
 <figure class="jb_picture">
@@ -705,7 +705,7 @@ Third, at high error costs, the whole exercise saves little; a confidence layer 
 
 In practice, the cost of an error is not one number.
 A wrong EBITDA in a covenant test can hide a breach and delay a conversation the bank needed to have; a wrong headcount in an analytics table costs almost nothing.
-That's why I group fields into **tiers** by the cost of an undetected error and give each tier its own threshold.
+That's why I group fields into *tiers* by the cost of an undetected error and give each tier its own threshold.
 In the simulation, tier 1 holds the four covenant inputs, tier 2 four values used in credit memos, and tier 3 four values used for analytics.
 Ask the business for the cost of an error per tier.
 A range is fine; the shape of Figure 9 makes the answer robust to rough estimates.
@@ -720,7 +720,7 @@ The promise I want to be able to make sounds like this:
 > With 95% confidence, at most 0.3% of the tier-1 values we auto-approve are wrong.
 
 That sentence has two numbers: the target error rate (0.3%) and the confidence that we meet it (95%).
-To back it up, you need an **upper bound** on the error rate among the values a threshold accepts, not just the observed rate.
+To back it up, you need an *upper bound* on the error rate among the values a threshold accepts, not just the observed rate.
 The classic tool is the Clopper–Pearson bound for a binomial proportion:[^28] if you accepted $$n$$ values and found $$k$$ errors, the true error rate is below the bound with the confidence you chose.
 
 A useful special case is the *rule of three*: if you observe zero errors in $$n$$ values, the 95% upper bound is about $$3/n$$.[^29]
@@ -801,7 +801,7 @@ The family has grown well beyond prediction sets.
 *Conformal risk control* bounds the expected value of any monotone loss, such as the error rate among accepted values.[^31]
 For language models, *conformal abstention* uses the same idea to decide when an LLM should answer or say "I don't know," with a bound on the hallucination rate,[^32] and *conformal factuality* removes claims from a generated text until the remainder is correct with high probability.[^33]
 
-All of these rest on the same assumption: **exchangeability**.
+All of these rest on the same assumption: *exchangeability*.
 Roughly, the new documents must look like the calibration documents, in the statistical sense of being drawn from the same process.
 That is the fine print of every guarantee in this post.
 A new template, a new model version, or a wave of documents from a new market breaks it.
@@ -893,7 +893,7 @@ I gave the twelve simulated fields realistic names.
 
 | Value                  | Tier | What the signals said                                                                                             |     p | Decision                    | Truth                          |
 |------------------------|:----:|-------------------------------------------------------------------------------------------------------------------|------:|-----------------------------|--------------------------------|
-| EBITDA                 |  1   | Grounded exactly, rules pass, but the blind cross-read **disagrees**                                              | 0.966 | Review: below 0.9955        | Correct; the second reader erred |
+| EBITDA                 |  1   | Grounded exactly, rules pass, but the blind cross-read *disagrees*                                              | 0.966 | Review: below 0.9955        | Correct; the second reader erred |
 | Net debt               |  1   | Every signal agrees                                                                                               | 0.998 | Auto-approve                | Correct                        |
 | Interest expense       |  1   | Every signal agrees                                                                                               | 0.999 | Auto-approve                | Correct                        |
 | Total equity           |  1   | Every signal agrees                                                                                               | 0.997 | Auto-approve                | Correct                        |
@@ -965,7 +965,7 @@ Everything so far assumes that a value sent to review gets *reviewed*.
 That assumption is the weakest link in most human-in-the-loop systems, and it fails in a predictable way.
 
 People who supervise automation tend to over-trust it.
-The research literature calls this **automation bias**: the tendency to accept a machine's suggestion without checking it properly, which gets stronger as the machine gets more reliable and the operator gets busier.[^37]
+The research literature calls this *automation bias*: the tendency to accept a machine's suggestion without checking it properly, which gets stronger as the machine gets more reliable and the operator gets busier.[^37]
 It is well enough established that the EU AI Act names it explicitly: providers of high-risk systems must enable the people who oversee them to stay aware of their tendency to over-rely on the system's output.[^38]
 A review step that rubber-stamps whatever the model said provides the *appearance* of oversight with none of the substance.
 So the review interface is not a detail; it's a control.
@@ -981,12 +981,12 @@ So the review interface is not a detail; it's a control.
 
 There are two basic ways to review an extracted value.
 
-In **confirm mode**, the reviewer sees the model's value next to the highlighted page and clicks "correct" or "edit."
+In *confirm mode*, the reviewer sees the model's value next to the highlighted page and clicks "correct" or "edit."
 It is fast, and it is what most tools do by default.
 Its weakness is that the value on the screen anchors the reviewer.
 When the model is right 99% of the time, "correct" becomes a reflex.
 
-In **blind mode**, the reviewer sees the page with the box highlighted, but not the model's value, and types what they read.
+In *blind mode*, the reviewer sees the page with the box highlighted, but not the model's value, and types what they read.
 Code compares the two.
 A match is approved; a mismatch goes to a second reviewer or an adjudicator.
 It is slower, because typing is work, but it turns the reviewer into a genuinely independent second reader.
@@ -1022,11 +1022,11 @@ Audits must therefore be blind, and they need canaries.
 ## Canaries
 
 Airport security has a technique for exactly this problem.
-**Threat image projection** inserts pre-recorded images of threat items into the X-ray images of real bags, so that screeners regularly encounter targets and the system can measure whether they catch them.
+*Threat image projection* inserts pre-recorded images of threat items into the X-ray images of real bags, so that screeners regularly encounter targets and the system can measure whether they catch them.
 Regulators in many countries mandate it,[^41] and the data is used to assess the performance of individual screeners.[^42]
 
 The same idea works for review queues.
-A **canary** is a value that the system knows is wrong, injected into the queue on purpose.
+A *canary* is a value that the system knows is wrong, injected into the queue on purpose.
 To make canaries useful:
 
 - **Make them realistic.** Generate them from values a person has already confirmed, using the failure modes of Figure 5: flip the sign, swap a digit, take last year's column, scale by 1,000. A canary that looks like a canary only measures canary detection.
@@ -1070,14 +1070,14 @@ It's tempting to use them for everything, including measuring how well the syste
 But they only exist for values the scorer *doubted*.
 You never see a review label for a value that was auto-approved, which is precisely the population whose error rate you need to know.
 
-This is known as the **selective labels problem**: when a decision determines which outcomes get observed, the observed outcomes can't evaluate the decision.[^45]
+This is known as the *selective labels problem*: when a decision determines which outcomes get observed, the observed outcomes can't evaluate the decision.[^45]
 It shows up in lending (you only see defaults for loans you approved), and it shows up here.
 Review labels are excellent for training the next scorer, because they are rich in hard cases.
 They are useless for estimating the wrong auto-approval rate.
 
 ## Random Audits Are the Only Meter
 
-To measure the error rate among auto-approved values, you need to look at a **random sample** of them, re-keyed blind, with canaries mixed in.
+To measure the error rate among auto-approved values, you need to look at a *random sample* of them, re-keyed blind, with canaries mixed in.
 Random means drawn with a known probability, independent of the score.
 If you sample some strata more heavily than others (tier 1 at 2%, tier 3 at 0.5%, say), weight each audited value by the inverse of its sampling probability when you combine them; that's the Horvitz–Thompson estimator, and it keeps the estimate unbiased.[^46]
 Simpler still: report each stratum separately and never pool them.
@@ -1152,10 +1152,10 @@ Keeping the promise is mostly about noticing when its assumptions break, and rea
 ## Automation Is a Level, Not a Switch
 
 I find it useful to manage automation as a small state machine, like Figure 14, rather than as a switch that is on or off.
-A new pipeline starts in **shadow** mode: the model runs, people do all the work, and the system collects labels.
-In **assist** mode, the model pre-fills and every value is reviewed (tier-1 values blind); this is where the scorer and calibrator are trained.
-**Partial** automation starts only when a threshold has been certified on held-out data and someone accountable has signed off.
-**Straight-through** processing of whole documents comes last, after audits have confirmed the error rate for long enough to trust it.
+A new pipeline starts in *shadow* mode: the model runs, people do all the work, and the system collects labels.
+In *assist* mode, the model pre-fills and every value is reviewed (tier-1 values blind); this is where the scorer and calibrator are trained.
+*Partial* automation starts only when a threshold has been certified on held-out data and someone accountable has signed off.
+*Straight-through* processing of whole documents comes last, after audits have confirmed the error rate for long enough to trust it.
 
 The asymmetry is the point.
 Moving up a level requires evidence, a person, and time.
@@ -1169,7 +1169,7 @@ Change any of them and the certificate expires.
 This sounds pedantic until a provider ships a "minor" model update that changes how the model formats negative numbers, and your sign rules start firing on half the values.
 
 So treat the bundle (extraction model and prompt versions, scorer, calibrator, thresholds) as one versioned artifact.
-A new bundle runs in **shadow** next to the current one, on the same documents, and goes through certification on fresh labels before it makes a single decision.
+A new bundle runs in *shadow* next to the current one, on the same documents, and goes through certification on fresh labels before it makes a single decision.
 The comparison is also informative: if the new bundle auto-approves very different values than the old one at a similar coverage, you want to know why before switching.
 
 ## What to Monitor
@@ -1187,7 +1187,7 @@ These are the monitors I'd put on the first dashboard, roughly in order of how e
 ## Should the Threshold Adapt by Itself?
 
 There is an elegant line of research on thresholds that adjust online.
-**Adaptive conformal inference** nudges the threshold after each observed outcome so that the long-run error rate stays on target even when the data distribution shifts.[^49]
+*Adaptive conformal inference* nudges the threshold after each observed outcome so that the long-run error rate stays on target even when the data distribution shifts.[^49]
 It is a beautiful idea, and I'd use it as an *early warning*: if the adaptive threshold drifts away from the certified one, something has changed.
 
 I wouldn't let it move the production threshold on its own.
