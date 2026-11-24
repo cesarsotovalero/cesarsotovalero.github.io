@@ -36,6 +36,8 @@ That sentence is worth a lot.
 It tells you exactly where to spend your attention.
 An analyst who is right 98% of the time but never tells you which 2% are wrong forces you to re-check everything they hand in.
 
+
+
 <aside class="quote">
     <em>“A model that never says ‘I don’t know’ has to be checked every time it says anything.”</em>
 </aside>
@@ -65,7 +67,7 @@ In this post, I'll cover:
 4. How to design the human side: review modes, canaries, and random audits.
 5. How to keep the promise in production, and what supervisors will ask about it.
 
-{% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2026/2026-12-01/cover.jpg alt: "A statue of a seated figure, caught mid-thought, hand resting under its chin" %}
+{% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2026/2026-12-01/cover.jpg alt: "A small carved stone face with a curly mane and a mustache, set into a rough granite wall" %}
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-12-01/01-confidence-layer.drawio.svg" alt="The confidence layer: an extraction produces signals; a scorer combines them; calibration turns the score into a probability; a decision compares it with a certified threshold per tier. Values that pass are auto-approved and stored with lineage; the rest go to a review queue with a reason, or are rejected when the document is unusable. Review decisions, random audits of auto-approvals, and canaries become labels, which feed an offline step that trains, calibrates, and certifies a new versioned release, and a monitoring step that can lower the automation level." width="100%" style="border: 1px solid #808080;">
