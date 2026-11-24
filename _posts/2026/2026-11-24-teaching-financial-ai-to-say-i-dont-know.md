@@ -43,8 +43,6 @@ An analyst who is right 98% of the time but never tells you which 2% are wrong f
   </figcaption>
 </figure>
 
-
-
 <aside class="quote">
     <em>“A model that never says ‘I don’t know’ has to be checked every time it says anything.”</em>
 </aside>
