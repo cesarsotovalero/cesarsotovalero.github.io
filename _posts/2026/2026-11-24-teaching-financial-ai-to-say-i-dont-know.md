@@ -4,7 +4,7 @@ title: Teaching Financial AI to Say “I Don’t Know”
 subtitle: Calibration, abstention, and guaranteed thresholds for document extraction
 tags: ai
 description: |
-  An AI system that reads financial documents will make mistakes. What matters is whether it knows which ones. This post is about the confidence layer: the part of a document extraction pipeline that decides which values can be trusted without a human check. It explains why abstention is a feature, how extraction fails confidently, which signals predict errors, how to turn them into calibrated probabilities, how to choose a threshold with a statistical guarantee, and how to design review queues, audits, and monitoring around it (with Python code).
+  An AI system that reads financial documents will make mistakes. What matters is whether it knows which ones. This post is about the confidence layer: the part of a document extraction pipeline that decides which values can be trusted without a human check. It explains why abstention is a feature, how extraction fails confidently, which signals predict errors, how to turn them into calibrated probabilities, how to choose a threshold with a statistical guarantee, and how to design review queues, audits, and monitoring around it.
 keywords:
   - Selective prediction
   - Abstention
@@ -62,7 +62,7 @@ Some of those values are covenant inputs, where an error can hide a breach.
 Others feed analytics, where an error is annoying but cheap.
 
 To make every claim in this post checkable, I built a simulation: 24,000 synthetic compliance packs with 12 values each (288,000 values in total), with realistic error types, and the signals a real pipeline would produce for each value.
-All the code in this post is tested against it, and every chart marked as simulated comes from it.
+Every chart and number marked as simulated comes from it.
 The numbers are illustrative, not a benchmark.
 The mechanics are exactly what I would run on real data.
 
@@ -123,37 +123,11 @@ These are the terms I'll use for the rest of the post:
 - **Straight-through processing (STP).** The share of *documents* that flow through with no human touch. It is always lower than coverage, for the reason in Figure 2.
 - **Risk–coverage curve.** Sort all values from most to least confident. For every cut-off, plot coverage against WAR. This curve is the most useful single picture of a confidence layer.[^2] [^3]
 
-The curve is easy to compute:
-
-{% highlight python linenos %}
-import numpy as np
-
-def risk_coverage(confidence: np.ndarray, correct: np.ndarray):
-    """Coverage and selective risk for every threshold, most confident first."""
-    order = np.argsort(-confidence, kind="stable")
-    wrong = 1 - correct[order]
-    accepted = np.arange(1, len(order) + 1)
-    return accepted / len(order), np.cumsum(wrong) / accepted
-
-
-def aurc(confidence: np.ndarray, correct: np.ndarray) -> float:
-    """Area under the risk-coverage curve: lower is better."""
-    coverage, risk = risk_coverage(confidence, correct)
-    return float(np.trapezoid(risk, coverage))
-
-
-def coverage_at_risk(confidence: np.ndarray, correct: np.ndarray, target: float) -> float:
-    """Largest coverage whose empirical selective risk stays at or below the target."""
-    coverage, risk = risk_coverage(confidence, correct)
-    ok = risk <= target
-    return float(coverage[ok].max()) if ok.any() else 0.0
-{% endhighlight %}
-
-`risk_coverage` returns one point per possible threshold.
-`aurc` integrates the curve into a single number (the area under the risk–coverage curve), which is a good way to compare scorers across all thresholds at once.[^4]
+Two numbers summarize the curve.
+The area under it compares scorers across all thresholds at once.
 But a bank doesn't operate at all thresholds.
 It operates at one.
-So the number I look at first is `coverage_at_risk`: *at the risk I can accept, how much can I automate?*
+So the number I look at first is *coverage at risk*: at the risk I can accept, how much can I automate?
 
 ## Ranking Beats Accuracy
 
@@ -183,7 +157,7 @@ Answering it requires a confidence score worth ranking by, and that is exactly t
 ## Chow’s Rule: Abstaining Has a Price, and So Does Guessing
 
 The decision to abstain is an economic one, and it has a clean answer that is older than most of us.
-In 1970, C. K. Chow derived the optimal rule for a recognition system that is allowed to refuse.[^5]
+In 1970, C. K. Chow derived the optimal rule for a recognition system that is allowed to refuse.[^4]
 Translated to our setting: let $$c_r$$ be the cost of a human review and $$c_e$$ the cost of a wrong value that nobody catches.
 If $$p$$ is the probability that the value is correct, trusting it costs $$(1 - p) \cdot c_e$$ on average, and reviewing it costs $$c_r$$.
 So you should auto-approve when:
@@ -218,31 +192,31 @@ That is good news: it means they are well understood, and that a model validator
 </figure>
 
 The story starts with the weather.
-In 1950, Glenn Brier proposed a score for probability forecasts: the average squared difference between the forecast probability and what actually happened.[^6]
+In 1950, Glenn Brier proposed a score for probability forecasts: the average squared difference between the forecast probability and what actually happened.[^5]
 A forecaster who says 90% and is wrong pays far more than one who said 60%.
-Weather services have verified their forecasts this way for decades, and studies of US precipitation forecasts found that forecasters could state probabilities reliably: on days with a 70% forecast, it rained about 70% of the time.[^7]
-Statisticians later formalized that property as *calibration*,[^8] and the reliability diagram I use later in this post comes from the same tradition of forecast verification.
+Weather services have verified their forecasts this way for decades, and studies of US precipitation forecasts found that forecasters could state probabilities reliably: on days with a 70% forecast, it rained about 70% of the time.
+Statisticians later formalized that property as *calibration*, and the reliability diagram I use later in this post comes from the same tradition of forecast verification.
 
 The reject option itself was invented for the exact problem of this post.
-In 1957, Chow described a character recognition system that refuses to classify a character when it isn't sure enough, and in 1970 he worked out the optimal trade-off between errors and rejections.[^9] [^5]
+In 1957, Chow described a character recognition system that refuses to classify a character when it isn't sure enough, and in 1970 he worked out the optimal trade-off between errors and rejections.[^4]
 Machines reading printed text and declining to guess: that was the original use case.
 
 Around 2000, machine learning learned to turn arbitrary classifier scores into probabilities.
-Platt scaling fits a sigmoid to the scores; isotonic regression fits any monotone step function.[^10] [^11]
+Platt scaling fits a sigmoid to the scores; isotonic regression fits any monotone step function.[^6]
 Both are still the workhorses of calibration in production.
 
 Then came the guarantees.
-Conformal prediction showed how to wrap any model with error guarantees that hold without assumptions about the model, as long as the future looks like the calibration data in a precise sense.[^12]
+Conformal prediction showed how to wrap any model with error guarantees that hold without assumptions about the model, as long as the future looks like the calibration data in a precise sense.[^7]
 Selective classification formalized the trade-off between coverage and risk,[^2] and in 2017 Geifman and El-Yaniv showed how to pick a threshold for a deep network so that the risk of the accepted predictions stays below a target with high probability.[^3]
 The certification code in this post follows that recipe.
-In 2021, *Learn then Test* generalized it to almost any tunable parameter.[^13]
+In 2021, *Learn then Test* generalized it to almost any tunable parameter.[^8]
 
-The same year as Geifman and El-Yaniv's paper, Guo and colleagues showed that modern neural networks are much more overconfident than older, smaller ones, and that a one-parameter fix (temperature scaling) recovers most of the calibration.[^14]
+The same year as Geifman and El-Yaniv's paper, Guo and colleagues showed that modern neural networks are much more overconfident than older, smaller ones, and that a one-parameter fix (temperature scaling) recovers most of the calibration.[^9]
 The pattern repeated with language models.
-Large pretrained models turned out to be reasonably calibrated on multiple-choice questions when asked in the right format,[^15] but post-training for chat made calibration worse,[^16] and the confidence that models *state in words* tends to be overconfident.[^17]
+Large pretrained models turned out to be reasonably calibrated on multiple-choice questions when asked in the right format,[^10] but post-training for chat made calibration worse, and the confidence that models *state in words* tends to be overconfident.[^11]
 
 The latest results pull in two directions.
-Reasoning models express better-calibrated confidence than their non-reasoning counterparts (strictly better in 33 of 36 settings in one study),[^18] yet in a benchmark of 20 frontier models, reasoning fine-tuning made models *worse* at abstaining on unanswerable questions, by 24% on average.[^19]
+Reasoning models tend to express better-calibrated confidence, yet reasoning fine-tuning can make models *worse* at abstaining on questions that have no answer.
 And OpenAI researchers argued that hallucinations persist largely because training and evaluation reward guessing over admitting uncertainty.[^1]
 
 Put together, the state of the art in one sentence is this: newer models describe their uncertainty better, but they are not more willing to act on it.
@@ -329,48 +303,20 @@ A few changes to the extraction call make "I don't know" cheap for the model to 
 **Give it a way out in the schema.**
 If the output schema demands a number for every field, the model will produce a number for every field.
 Structured outputs are very good at enforcing shapes, including the shape that leaves no room for doubt.
-So make every value optional, and add a status with a small, fixed set of reasons:
-
-{% highlight python linenos %}
-from enum import Enum
-
-from pydantic import BaseModel, model_validator
-
-class Status(str, Enum):
-    FOUND = "found"
-    NOT_FOUND = "not_found"   # the pack does not contain this value
-    ILLEGIBLE = "illegible"   # printed, but cannot be read reliably
-    AMBIGUOUS = "ambiguous"   # more than one plausible candidate (e.g., restated)
-
-
-class Reading(BaseModel):
-    metric: str                               # from a fixed dictionary
-    status: Status
-    value_as_printed: str | None = None       # "(486)": sign and scale are applied in code
-    page: int | None = None
-    candidates: list[str] = []                # filled only when status is AMBIGUOUS
-
-    @model_validator(mode="after")
-    def evidence_matches_status(self):
-        if (self.status == Status.FOUND) != (self.value_as_printed is not None):
-            raise ValueError("a value is required if and only if the status is 'found'")
-        if self.status == Status.FOUND and self.page is None:
-            raise ValueError("a found value needs a page")
-        return self
-{% endhighlight %}
-
-The validator enforces the obvious invariants: a value exists if and only if the status is `found`, and a found value must say which page it came from.
+So make every value optional, and give each one a status with a small, fixed set of reasons: *found*, *not found* (the pack doesn't contain it), *illegible* (printed, but can't be read reliably), or *ambiguous* (more than one plausible candidate, such as an original and a restated figure).
+A found value must come with the value exactly as printed, say `(486)`, and the page it came from; sign and scale are applied later in code.
+A value that isn't found must not have a value at all.
+The schema validator enforces both rules.
 Each status leads somewhere different.
-`not_found` triggers a completeness check on the pack (is a page missing, or does this borrower not report capital expenditure?).
-`illegible` is a page problem, so the document is a candidate for rejection.
-`ambiguous` goes to review with all the candidates on screen, which is exactly what a reviewer needs when a pack contains both the original and the restated figure.
+*Not found* triggers a completeness check on the pack (is a page missing, or does this borrower not report capital expenditure?).
+*Illegible* is a page problem, so the document is a candidate for rejection.
+*Ambiguous* goes to review with all the candidates on screen, which is exactly what a reviewer needs when a pack contains both the original and the restated figure.
 
 **Say that abstaining is acceptable, and that guessing costs more.**
 State it in the instructions: a missing value is better than a guessed one.
 Kalai and colleagues propose that evaluations state an explicit confidence target in their instructions: a wrong answer costs points, "I don't know" costs nothing, so guessing only pays above the stated confidence.[^1]
 The same wording works in an extraction prompt.
 Prompting helps, but it isn't a cure.
-The AbstentionBench study found that a carefully written system prompt improves abstention in practice without fixing the underlying weakness.[^19]
 
 **Ask for evidence, so absence becomes visible.**
 In the last post, every value came with a page and a quote or a box.
@@ -408,41 +354,23 @@ Figure 6 is the map I use.
 **Self-reported confidence.**
 You can ask the model for a confidence between 0 and 1 next to every value, and in the last post I did.
 It is free, and it is better than nothing.
-But studies of verbalized confidence find that the numbers models state in words tend to be overconfident,[^17] and in practice they cluster at a few round values (0.9, 0.95, 1.0).
-Post-trained models are an interesting exception: their stated confidence can be better calibrated than their token probabilities,[^20] and reasoning models do better still.[^18]
+But studies of verbalized confidence find that the numbers models state in words tend to be overconfident,[^11] and in practice they cluster at a few round values (0.9, 0.95, 1.0).
+Post-trained models and reasoning models do somewhat better, but not well enough to decide on their own.
 I treat it as a weak feature and never as a decision.
 
 **Token log-probabilities.**
 Some APIs return the log-probability of every generated token.
 For extraction, the interesting tokens are the ones that spell the value, not the JSON around it, and the most informative statistic is the *minimum*: one uncertain digit is enough to make the whole number wrong.
-The function below finds the value inside the generated tokens and summarizes its log-probabilities:
-
-{% highlight python linenos %}
-def value_logprob_features(tokens: list[str], logprobs: list[float] | None,
-                           value_text: str) -> dict[str, float | None]:
-    """Log-prob features of the tokens that spell the extracted value."""
-    text, starts = "", []
-    for tok in tokens:
-        starts.append(len(text))
-        text += tok
-    i = text.find(value_text)
-    if not logprobs or i < 0:
-        return {"min_logprob": None, "mean_logprob": None}  # missing is a signal too
-    end = i + len(value_text)
-    span = [lp for s, tok, lp in zip(starts, tokens, logprobs) if s < end and s + len(tok) > i]
-    return {"min_logprob": min(span), "mean_logprob": sum(span) / len(span)}
-{% endhighlight %}
-
 Two details matter.
-First, a value spread over several tokens (`(`, `48`, `6`, `)`) must be matched by character offsets, not token by token.
-Second, when log-probabilities are not available, the function returns `None`, not zero.
+First, a value spread over several tokens (`(`, `48`, `6`, `)`) must be located by character offsets, not token by token.
+Second, when log-probabilities are not available, the feature must be recorded as *missing*, not as zero.
 A missing signal is information, and it must never be confused with a confident one.
-This happens more than you'd think: OpenAI's API, for example, rejects log-probability requests for its reasoning models.[^21]
+This happens more than you'd think: not every API exposes log-probabilities, and some providers don't offer them for their reasoning models.
 So the scorer must work with and without this feature, and the decision to auto-approve must not quietly depend on it.
 
 **Self-consistency.**
 Ask the same question several times with sampling and measure agreement.
-For open-ended answers this is a powerful idea,[^22] and its refined version (clustering answers by meaning, "semantic entropy") is one of the better hallucination detectors in the literature.[^23]
+For open-ended answers this is a powerful idea,[^12] and its refined version (clustering answers by meaning, "semantic entropy") is one of the better hallucination detectors in the literature.[^13]
 For number extraction, I find it disappointing for the cost.
 If the model misreads a blurry digit, it tends to misread it the same way five times.
 Agreement among samples of one model measures stability, not correctness.
@@ -453,7 +381,7 @@ Agreement among samples of one model measures stability, not correctness.
 A *different* model reads the same row and column without seeing the first answer, and code compares the two values.
 In the simulation, it is the strongest single signal, and it is especially good against misreads and invented values.
 Its weakness is that models share blind spots.
-A large study of more than 350 LLMs found that when two models are both wrong, they often give the *same* wrong answer (60% of the time on one leaderboard dataset), and that more accurate models have *more* correlated errors, even across providers.[^24]
+A large study of more than 350 LLMs found that when two models are both wrong, they often give the *same* wrong answer (60% of the time on one leaderboard dataset), and that more accurate models have *more* correlated errors, even across providers.[^14]
 Agreement between two strong models is good evidence, but it is not independence.
 A wrong-cell error, where both models are drawn to the same misleading column, is precisely the case where they tend to agree.
 
@@ -535,62 +463,27 @@ The cleaner design is a small learned model that turns the signals into one numb
 
 I use gradient-boosted trees for the scorer.
 They handle missing values natively, they capture interactions (a failed rule matters more on a scanned page), they train in seconds, and they can be constrained to behave in ways a validator can check.
-Here is the whole thing:
-
-{% highlight python linenos %}
-import pandas as pd
-from sklearn.ensemble import HistGradientBoostingClassifier
-from sklearn.model_selection import GroupShuffleSplit
-
-FEATURES = {  # feature -> monotone direction with respect to P(correct)
-    "grounding": +1,           # NONE=0 < FUZZY=1 < NUMERIC=2 < EXACT=3
-    "cross_read_agrees": +1,   # a different model, reading blind
-    "rules_failed": -1,        # accounting identities, sums, sign conventions
-    "min_logprob": +1,         # NaN when the model does not expose log-probs
-    "history_absz": -1,        # NaN for borrowers without history
-    "verbal_conf": 0,          # the model's own number: a weak feature, nothing more
-    "doc_quality": +1,
-    "scanned": -1,
-    "template_seen": +1,
-    "tier": 0,
-}
-
-
-def split_by_borrower(df: pd.DataFrame, seed: int = 0):
-    """Train / calibration / test, with every borrower in exactly one split."""
-    gss = GroupShuffleSplit(n_splits=1, test_size=0.5, random_state=seed)
-    train_idx, rest_idx = next(gss.split(df, groups=df["borrower"]))
-    rest = df.iloc[rest_idx]
-    cal_idx, test_idx = next(gss.split(rest, groups=rest["borrower"]))
-    return df.iloc[train_idx], rest.iloc[cal_idx], rest.iloc[test_idx]
-
-
-def train_scorer(train: pd.DataFrame) -> HistGradientBoostingClassifier:
-    scorer = HistGradientBoostingClassifier(
-        learning_rate=0.05, max_iter=500, max_leaf_nodes=31, l2_regularization=1.0,
-        monotonic_cst=list(FEATURES.values()), early_stopping=True, random_state=0,
-    )
-    return scorer.fit(train[list(FEATURES)], train["correct"])
-{% endhighlight %}
+The inputs are the signals from the previous section: the grounding tier, whether the blind cross-read agrees, the number of failed accounting rules, the minimum log-probability, the distance from the borrower's history, the model's own confidence, and a few document features (quality, scanned or digital, known template, tier).
+The target is whether the value was right.
 
 Three design choices deserve a comment.
 
 **Monotone constraints.**
-The `FEATURES` dictionary declares, for every signal, the direction in which it is allowed to move the score.[^25]
+For every signal, I declare the direction in which it is allowed to move the score.
 A better grounding tier can never *lower* the probability of being right, and a failed rule can never raise it.
 Without constraints, a flexible model will happily learn spurious patterns from a few thousand labels, like "values with exact grounding *and* a failed rule are fine," because that happened to be true in the training data.
 With constraints, the scorer's behavior matches what a domain expert would expect, and you can explain each signal's role in one sentence.
-The model's self-reported confidence gets a `0`: it can be used, but the scorer is not forced to trust it.
+The model's self-reported confidence gets no direction: it can be used, but the scorer is not forced to trust it.
 
 **Grouped splits.**
 A borrower's packs share a template, a layout, an accountant, and often the same mistakes.
 If one quarter of a borrower is in training and the next quarter is in test, the test score measures memory, not generalization.
-`split_by_borrower` keeps every borrower in exactly one split.[^26]
+So the split is by borrower: every borrower lands in exactly one of training, calibration, or test.
 In the simulation, that means about 5,900 borrowers with four packs each, divided into training (50%), calibration (25%), and test (25%).
 In a real portfolio, I'd also split by *time*: train on older quarters, calibrate and test on newer ones, because that is how the system will be used.
 
 **Missing stays missing.**
-Log-probabilities and history arrive as `NaN` when they don't exist.
+Log-probabilities and history arrive as missing values when they don't exist.
 The trees learn what "missing" means from data, which is much safer than filling with zeros (a "perfect" log-probability) or with averages.
 
 ## What Calibration Means
@@ -618,49 +511,17 @@ The usual summary statistic, the expected calibration error (ECE), is 0.032 for 
 There are three standard ways to calibrate a score:
 
 - **Platt scaling** fits a sigmoid with two parameters. It is robust with little data, but it can only fix distortions that look like a sigmoid.
-- **Isotonic regression** fits any non-decreasing step function. It is more flexible but overfits small samples; scikit-learn's guide recommends it once there are more than about a thousand calibration examples.[^10] [^27]
-- **Temperature scaling** divides a neural network's logits by one learned constant.[^14] It is the right tool when you calibrate a network's own outputs, not a separate scorer like mine.
+- **Isotonic regression** fits any non-decreasing step function. It is more flexible but overfits small samples; scikit-learn's guide recommends it once there are more than about a thousand calibration examples.[^15]
+- **Temperature scaling** divides a neural network's logits by one learned constant.[^9] It is the right tool when you calibrate a network's own outputs, not a separate scorer like mine.
 
-With tens of thousands of labeled values per release, I use isotonic regression, fitted on the calibration split, separately for each segment that behaves differently:
-
-{% highlight python linenos %}
-import numpy as np
-import pandas as pd
-from sklearn.isotonic import IsotonicRegression
-
-class SegmentCalibrator:
-    """One isotonic map per segment (e.g. scanned vs. digital), fitted on held-out data."""
-
-    def __init__(self, segment: str):
-        self.segment, self.maps = segment, {}
-
-    def fit(self, frame: pd.DataFrame, raw: np.ndarray, correct: np.ndarray):
-        for seg in frame[self.segment].unique():
-            m = (frame[self.segment] == seg).to_numpy()
-            iso = IsotonicRegression(y_min=0.0, y_max=1.0, out_of_bounds="clip")
-            self.maps[seg] = iso.fit(raw[m], correct[m])
-        return self
-
-    def predict(self, frame: pd.DataFrame, raw: np.ndarray) -> np.ndarray:
-        p = np.zeros_like(raw)  # unseen segment -> 0 -> routed to review (fail closed)
-        for seg, iso in self.maps.items():
-            m = (frame[self.segment] == seg).to_numpy()
-            p[m] = iso.predict(raw[m])
-        return p
-
-
-def expected_calibration_error(p: np.ndarray, correct: np.ndarray, bins: int = 10) -> float:
-    """Weighted mean |accuracy - confidence| over equal-mass bins."""
-    chunks = np.array_split(np.argsort(p), bins)
-    return float(sum(len(c) / len(p) * abs(correct[c].mean() - p[c].mean()) for c in chunks))
-{% endhighlight %}
+With tens of thousands of labeled values per release, I use isotonic regression, fitted on the calibration split, separately for each segment that behaves differently.
 
 Why per segment?
 Because a scanned page and a digital page with the same raw score are not equally likely to be right, and a single calibration curve averages them into something true for neither.
 In the simulation, I calibrate digital and scanned values separately.
 In a real system, I'd consider segments for document type, language, and template family, each with enough labeled values to fit a curve.
 
-Note the first line of `predict`: a segment that was never seen during calibration gets a probability of zero.
+One rule matters here: a segment that was never seen during calibration gets a probability of zero.
 That's not pessimism; it's the system saying "I have no evidence about this kind of document," which routes every value from it to review.
 This is the confidence layer failing closed.
 
@@ -721,47 +582,22 @@ The promise I want to be able to make sounds like this:
 
 That sentence has two numbers: the target error rate (0.3%) and the confidence that we meet it (95%).
 To back it up, you need an *upper bound* on the error rate among the values a threshold accepts, not just the observed rate.
-The classic tool is the Clopper–Pearson bound for a binomial proportion:[^28] if you accepted $$n$$ values and found $$k$$ errors, the true error rate is below the bound with the confidence you chose.
+The classic tool is the Clopper–Pearson bound for a binomial proportion:[^16] if you accepted $$n$$ values and found $$k$$ errors, the true error rate is below the bound with the confidence you chose.
 
-A useful special case is the *rule of three*: if you observe zero errors in $$n$$ values, the 95% upper bound is about $$3/n$$.[^29]
+A useful special case is the *rule of three*: if you observe zero errors in $$n$$ values, the 95% upper bound is about $$3/n$$.
 Zero errors in 3,000 values supports a claim of "below 0.1%."
 Zero errors in 300 supports only "below 1%," however clean the sample looked.
 
-The certification code checks a fixed grid of candidate thresholds, from strict to lenient, and keeps the most lenient one whose upper bound still meets the target:
-
-{% highlight python linenos %}
-import numpy as np
-from scipy.stats import beta
-
-def upper_bound(errors: int, n: int, delta: float = 0.05) -> float:
-    """One-sided Clopper-Pearson upper bound on an error rate."""
-    if n == 0 or errors >= n:
-        return 1.0
-    return float(beta.ppf(1 - delta, errors + 1, n - errors))
-
-
-GRID = 1 - np.geomspace(1e-4, 0.2, 25)  # candidate thresholds, fixed before looking at data
-
-
-def certify_threshold(p_cal: np.ndarray, correct_cal: np.ndarray, alpha: float,
-                      delta: float = 0.05, grid: np.ndarray = GRID) -> dict | None:
-    """Most permissive threshold whose wrong-auto-approval rate is <= alpha with
-    probability >= 1 - delta. Each candidate is tested at delta / len(grid)."""
-    level, best = delta / len(grid), None
-    for t in np.sort(grid)[::-1]:                     # strict -> lenient
-        accepted = p_cal >= t
-        n, errors = int(accepted.sum()), int((correct_cal[accepted] == 0).sum())
-        if n and upper_bound(errors, n, level) <= alpha:
-            best = {"threshold": float(t), "coverage": n / len(p_cal), "errors": errors, "n": n}
-    return best  # None: nothing can be certified, so nothing is automated
-{% endhighlight %}
+Certification checks a fixed grid of 25 candidate thresholds, from strict to lenient.
+For each one, it counts the accepted values and the errors among them on the calibration split, computes the upper bound, and keeps the most lenient threshold whose bound still meets the target.
+If no threshold qualifies, nothing is certified, and nothing in that tier is automated.
 
 Two details make this correct rather than merely plausible.
 
 **The grid is fixed before looking at the data.**
 If you scan every possible threshold and pick the best-looking one, you are testing hundreds of hypotheses and reporting the luckiest, and the 95% stops being 95%.
-`certify_threshold` tests 25 candidates fixed in advance and splits the error budget among them (each test runs at 0.05/25, a Bonferroni correction), so the 95% holds simultaneously for all of them.
-This is the recipe of *selection with guaranteed risk*,[^3] and an instance of the more general *Learn then Test* framework, which also offers sharper procedures than Bonferroni.[^13]
+Certification tests 25 candidates fixed in advance and splits the error budget among them (each test runs at 0.05/25, a Bonferroni correction), so the 95% holds simultaneously for all of them.
+This is the recipe of *selection with guaranteed risk*,[^3] and an instance of the more general *Learn then Test* framework, which also offers sharper procedures than Bonferroni.[^8]
 I start with Bonferroni because it is the version I can explain to a validator on a whiteboard.
 
 **Certification uses its own data.**
@@ -796,10 +632,9 @@ That room is not an accident: the bound is conservative by design, and the guara
 
 ## Where Conformal Prediction Fits
 
-If you have read about conformal prediction, you may recognize the structure: hold out calibration data, compute a statistic on it, and set a threshold so that a guarantee holds for new data.[^30]
+If you have read about conformal prediction, you may recognize the structure: hold out calibration data, compute a statistic on it, and set a threshold so that a guarantee holds for new data.[^17]
 The family has grown well beyond prediction sets.
-*Conformal risk control* bounds the expected value of any monotone loss, such as the error rate among accepted values.[^31]
-For language models, *conformal abstention* uses the same idea to decide when an LLM should answer or say "I don't know," with a bound on the hallucination rate,[^32] and *conformal factuality* removes claims from a generated text until the remainder is correct with high probability.[^33]
+Its extensions bound the error rate among accepted values directly, and recent work applies the same idea to decide when a language model should answer or say "I don't know."
 
 All of these rest on the same assumption: *exchangeability*.
 Roughly, the new documents must look like the calibration documents, in the statistical sense of being drawn from the same process.
@@ -829,42 +664,14 @@ It also turns a vague debate ("are we ready to automate scans?") into a concrete
 
 A threshold is just a number until something acts on it.
 The routing function is where the confidence layer meets the rest of the pipeline, and it is the part I'd want a validator to read first.
-It should be short, boring, and impossible to misread:
-
-{% highlight python linenos %}
-from dataclasses import dataclass
-
-@dataclass(frozen=True)
-class Policy:
-    thresholds: dict[int, float]                     # per tier, certified on calibration data
-    required: tuple[str, ...] = ("grounding", "cross_read_agrees", "rules_failed")
-
-
-def route(value: dict, p_correct: float | None, policy: Policy) -> tuple[str, str]:
-    """Return (decision, reason). Anything unusual goes to a person."""
-    missing = [s for s in policy.required if value.get(s) is None]
-    if missing:
-        return "review", f"missing signal: {', '.join(missing)}"
-    if p_correct is None or not 0.0 <= p_correct <= 1.0:
-        return "review", "no valid confidence score"
-    threshold = policy.thresholds.get(value["tier"])
-    if threshold is None:
-        return "review", f"no certified threshold for tier {value['tier']}"
-    if p_correct < threshold:
-        return "review", f"p={p_correct:.4f} below tier-{value['tier']} threshold {threshold:.4f}"
-    return "auto_approve", "passed all checks"
-
-
-def route_document(decisions: list[tuple[str, str]], tiers: list[int]) -> str:
-    """A document flows straight through only if every tier-1 value was auto-approved."""
-    tier1 = [d for (d, _), t in zip(decisions, tiers) if t == 1]
-    return "straight_through" if all(d == "auto_approve" for d in tier1) else "needs_review"
-{% endhighlight %}
+It should be short, boring, and impossible to misread.
+Mine checks four things in order: are all the required signals present (grounding, cross-read, accounting rules)? Is the probability a valid number between 0 and 1? Does the value's tier have a certified threshold? Does the probability clear it?
+A single "no" sends the value to review; four "yes" answers auto-approve it.
 
 The design choices are the same ones I argued for in the last post, now applied to confidence.
 
 **Every decision comes with a reason.**
-The function never returns a bare "no."
+The router never returns a bare "no."
 It returns *why*: a missing signal, an invalid score, no certified threshold for the tier, or a probability below the bar (with both numbers).
 The reason travels with the value into the review queue, into the audit log, and into the monitoring dashboards.
 "Why is this value here?" is the first question every reviewer asks, and the answer should be on the screen.
@@ -877,11 +684,11 @@ In the simulation, a tier-1 value with a probability of 0.999 but no cross-read 
 The scorer may know how to handle missing features, but the *policy* shouldn't auto-approve on evidence it was told to require.
 
 **The policy is a frozen, versioned object.**
-`Policy` is immutable, and in production it is loaded from the same bundle as the scorer and the calibrator.
+The thresholds are immutable, and in production it is loaded from the same bundle as the scorer and the calibrator.
 A threshold without the scorer it was certified for is meaningless, and the code shouldn't make it possible to mix them.
 
 **Documents are routed after values.**
-`route_document` lets a pack flow straight through only if *every* tier-1 value was auto-approved.
+A pack flows straight through only if *every* tier-1 value was auto-approved.
 This is where Figure 2 comes back: in the simulation, 81% of values are auto-approved, but only 43% of packs pass straight through, because each pack has four tier-1 values and all four must clear the strictest threshold.
 When someone asks why automation "only" reaches 43%, that is the answer, and the lever is the tier-1 threshold, not the average.
 
@@ -941,7 +748,7 @@ Not all doubtful values are equally urgent.
 I sort by materiality times doubt: a covenant input with a probability of 0.9 comes before an analytics value with 0.5, and anything blocking a covenant test comes first.
 
 **Capacity.**
-Queues obey Little's law: the average number of items waiting equals the arrival rate times the average time each one waits.[^34]
+Queues obey Little's law: the average number of items waiting equals the arrival rate times the average time each one waits.
 Suppose (illustratively) the bank receives 400 packs a day with 12 values each.
 At 81% coverage, about 900 values a day go to review.
 At 20 seconds per value, that's 5 reviewer-hours a day, and if each value should wait half a day on average, about 450 values sit in the queue at any time.
@@ -949,7 +756,7 @@ Compliance packs arrive in waves after each reporting date, so plan for the peak
 
 **Who reviews what.**
 Not every reviewer is equally good at every task.
-The research on *learning to defer* treats the human as part of the model and decides whom to send each case to, taking their skills into account.[^35] [^36]
+The research on *learning to defer* treats the human as part of the model and decides whom to send each case to, taking their skills into account.
 The practical version is simpler: route scans to people who are good with scans, route new templates to people who can update the template library, and measure each queue separately.
 
 **Never let the queue move the threshold.**
@@ -965,8 +772,8 @@ Everything so far assumes that a value sent to review gets *reviewed*.
 That assumption is the weakest link in most human-in-the-loop systems, and it fails in a predictable way.
 
 People who supervise automation tend to over-trust it.
-The research literature calls this *automation bias*: the tendency to accept a machine's suggestion without checking it properly, which gets stronger as the machine gets more reliable and the operator gets busier.[^37]
-It is well enough established that the EU AI Act names it explicitly: providers of high-risk systems must enable the people who oversee them to stay aware of their tendency to over-rely on the system's output.[^38]
+The research literature calls this *automation bias*: the tendency to accept a machine's suggestion without checking it properly, which gets stronger as the machine gets more reliable and the operator gets busier.[^18]
+It is well enough established that the EU AI Act names it explicitly: providers of high-risk systems must enable the people who oversee them to stay aware of their tendency to over-rely on the system's output.[^19]
 A review step that rubber-stamps whatever the model said provides the *appearance* of oversight with none of the substance.
 So the review interface is not a detail; it's a control.
 
@@ -994,7 +801,7 @@ It is slower, because typing is work, but it turns the reviewer into a genuinely
 This is not a new debate.
 It is the old question of how to check manually entered data, and it has been studied in controlled experiments.
 In one, 195 participants were randomly assigned to single entry, visual checking (comparing the entry against the paper), or double entry (typing everything twice and resolving mismatches).
-Double entry produced significantly fewer errors, and visual checking was not significantly better than doing no checking at all.[^39]
+Double entry produced significantly fewer errors, and visual checking was not significantly better than doing no checking at all.
 Confirm mode is visual checking with a nicer interface.
 
 So I use both modes, deliberately:
@@ -1006,7 +813,7 @@ So I use both modes, deliberately:
 
 There is a second, subtler effect.
 Humans are much worse at finding things that are rare.
-In visual search experiments, observers looking for targets that appeared in only a small fraction of trials missed them far more often than when the same targets were common.[^40]
+In visual search experiments, observers looking for targets that appeared in only a small fraction of trials missed them far more often than when the same targets were common.[^20]
 Airport security has known this for a long time: real threats are so rare that screeners would otherwise almost never see one.
 
 The confidence layer helps here, and it's an argument I rarely hear for it.
@@ -1023,7 +830,7 @@ Audits must therefore be blind, and they need canaries.
 
 Airport security has a technique for exactly this problem.
 *Threat image projection* inserts pre-recorded images of threat items into the X-ray images of real bags, so that screeners regularly encounter targets and the system can measure whether they catch them.
-Regulators in many countries mandate it,[^41] and the data is used to assess the performance of individual screeners.[^42]
+Regulators in many countries mandate it, and the data is used to assess the performance of individual screeners.
 
 The same idea works for review queues.
 A *canary* is a value that the system knows is wrong, injected into the queue on purpose.
@@ -1046,7 +853,7 @@ A number invites anchoring ("0.97, probably fine").
 A reason invites a check, because it tells the reviewer what to look at.
 
 Finally, attention is a finite resource, and checking long sequences of mostly correct items wears it down.
-Classic vigilance experiments found that people's detection rates in monotonous monitoring tasks drop noticeably after about half an hour,[^43] and later work showed that sustained attention is hard mental work, not a passive state.[^44]
+Classic vigilance experiments found that people's detection rates in monotonous monitoring tasks drop noticeably after about half an hour, and sustained attention is hard mental work, not a passive state.
 Short sessions, breaks, and mixing review modes are not perks.
 They are part of the error budget.
 
@@ -1070,7 +877,7 @@ It's tempting to use them for everything, including measuring how well the syste
 But they only exist for values the scorer *doubted*.
 You never see a review label for a value that was auto-approved, which is precisely the population whose error rate you need to know.
 
-This is known as the *selective labels problem*: when a decision determines which outcomes get observed, the observed outcomes can't evaluate the decision.[^45]
+This is known as the *selective labels problem*: when a decision determines which outcomes get observed, the observed outcomes can't evaluate the decision.[^21]
 It shows up in lending (you only see defaults for loans you approved), and it shows up here.
 Review labels are excellent for training the next scorer, because they are rich in hard cases.
 They are useless for estimating the wrong auto-approval rate.
@@ -1079,27 +886,12 @@ They are useless for estimating the wrong auto-approval rate.
 
 To measure the error rate among auto-approved values, you need to look at a *random sample* of them, re-keyed blind, with canaries mixed in.
 Random means drawn with a known probability, independent of the score.
-If you sample some strata more heavily than others (tier 1 at 2%, tier 3 at 0.5%, say), weight each audited value by the inverse of its sampling probability when you combine them; that's the Horvitz–Thompson estimator, and it keeps the estimate unbiased.[^46]
+If you sample some strata more heavily than others (tier 1 at 2%, tier 3 at 0.5%, say), weight each audited value by the inverse of its sampling probability when you combine them; that's the Horvitz–Thompson estimator, and it keeps the estimate unbiased.
 Simpler still: report each stratum separately and never pool them.
 
 How many audits do you need?
 The same upper bound that certified the threshold answers this question in reverse.
-For a target rate and a number of errors you expect to find, it returns the smallest sample that still lets you claim the target with 95% confidence:
-
-{% highlight python linenos %}
-def audit_sample_size(alpha: float, max_errors: int = 0, delta: float = 0.05) -> int:
-    """Smallest n such that finding at most `max_errors` wrong values among n randomly
-    audited auto-approvals certifies a rate below alpha with confidence 1 - delta."""
-    lo, hi = max_errors + 1, 16
-    while upper_bound(max_errors, hi, delta) > alpha:
-        hi *= 2
-    while lo < hi:
-        mid = (lo + hi) // 2
-        lo, hi = (mid + 1, hi) if upper_bound(max_errors, mid, delta) > alpha else (lo, mid)
-    return lo
-{% endhighlight %}
-
-`audit_sample_size` reuses `upper_bound` from the certification snippet and searches for the smallest sample size by bisection.
+For a target rate and a number of errors you expect to find, it gives the smallest sample that still lets you claim the target with 95% confidence.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/13-audit-sample-size.svg" alt="Log-log chart of the number of randomly audited auto-approvals needed to certify a wrong auto-approval rate below a target with 95% confidence, for zero, one, and two wrong values found. At a 0.1% target: 2,995, 4,742, and 6,294 audited values. The required sample falls in proportion to the target: about 300, 473, and 628 at 1%." width="100%" style="border: 1px solid #808080;">
@@ -1124,7 +916,7 @@ The gold set from the last post (reference documents whose values were confirmed
 Two caveats.
 It is curated, so it is not representative of production, and it should never be used to estimate production error rates.
 And it contains errors of its own.
-Even famous machine learning benchmarks do: one study found label errors in at least 3.3% of the test examples on average, across ten popular datasets.[^47]
+Even famous machine learning benchmarks do: one study found label errors in at least 3.3% of the test examples on average, across ten popular datasets.[^22]
 If your gold set was keyed once, by one person, in confirm mode, assume it has errors.
 Key it twice, blind, and adjudicate every disagreement.
 
@@ -1177,7 +969,7 @@ The comparison is also informative: if the new bundle auto-approves very differe
 These are the monitors I'd put on the first dashboard, roughly in order of how early they warn you:
 
 - **Signal availability.** The share of values with each signal present. If log-probabilities suddenly go missing after a provider update, or the cross-read starts timing out, the policy fails closed, but you want to know before the review queue explodes.
-- **Score distribution.** Compare this week's distribution of calibrated probabilities with the calibration data, per tier and segment. A shift doesn't prove the calibration is broken, but it says the population has moved. Methods for detecting such dataset shift are well studied, and simple two-sample tests on the scores go a long way.[^48]
+- **Score distribution.** Compare this week's distribution of calibrated probabilities with the calibration data, per tier and segment. A shift doesn't prove the calibration is broken, but it says the population has moved. Methods for detecting such dataset shift are well studied, and simple two-sample tests on the scores go a long way.
 - **Coverage.** A drop in coverage costs money. A *jump* in coverage without a release is more worrying: the documents got easier, or a signal got stuck on "everything is fine." Treat an unexplained rise as an alarm, not as good news.
 - **Reasons mix.** The distribution of review reasons. A new top reason ("missing signal: grounding") usually points to a broken component, not to harder documents.
 - **Audited WAR, with its bound.** Per tier and segment, the observed error rate in random audits *and* its upper bound. Alert on the bound crossing the target, not on a single bad week.
@@ -1187,7 +979,7 @@ These are the monitors I'd put on the first dashboard, roughly in order of how e
 ## Should the Threshold Adapt by Itself?
 
 There is an elegant line of research on thresholds that adjust online.
-*Adaptive conformal inference* nudges the threshold after each observed outcome so that the long-run error rate stays on target even when the data distribution shifts.[^49]
+*Adaptive conformal inference* nudges the threshold after each observed outcome so that the long-run error rate stays on target even when the data distribution shifts.[^23]
 It is a beautiful idea, and I'd use it as an *early warning*: if the adaptive threshold drifts away from the certified one, something has changed.
 
 I wouldn't let it move the production threshold on its own.
@@ -1219,26 +1011,26 @@ Three frameworks are worth knowing.
 
 **The EU AI Act.**
 Article 14 requires high-risk AI systems to be designed so that people can oversee them effectively.
-Among other things, the people assigned to oversight must be able to understand the system's capacities and limitations, stay aware of automation bias, interpret its output correctly, decide not to use it or override it, and stop it.[^38]
-Article 15 requires that the system's levels of accuracy, and the metrics used to measure them, be declared in its instructions for use.[^50]
+Among other things, the people assigned to oversight must be able to understand the system's capacities and limitations, stay aware of automation bias, interpret its output correctly, decide not to use it or override it, and stop it.[^19]
+Article 15 requires that the system's levels of accuracy, and the metrics used to measure them, be declared in its instructions for use.[^24]
 A certified wrong auto-approval rate per tier, with its confidence level and the period it was measured on, is exactly such a metric.
 
 Is document extraction high-risk under the Act?
-The list in Annex III includes AI systems used to evaluate the creditworthiness of natural persons.[^51]
+The list in Annex III includes AI systems used to evaluate the creditworthiness of natural persons.[^25]
 Covenant monitoring for corporate borrowers is generally not on it.
 An extraction step that feeds a creditworthiness assessment of a person (income from payslips for a mortgage, for example) may well be part of a system that is.
-After the Digital Omnibus on AI, the obligations for these stand-alone high-risk systems apply from 2 December 2027.[^52]
+After the Digital Omnibus on AI, the obligations for these stand-alone high-risk systems apply from 2 December 2027.
 Even where the Act doesn't apply, I find Article 14 a good design specification for any human-in-the-loop system.
 
 **BCBS 239.**
-The Basel principles for risk data, which I cited in the last post for lineage, have a principle on accuracy and integrity: risk data should be accurate and reliable, and aggregated on a largely automated basis to minimize the probability of errors.[^53]
+The Basel principles for risk data, which I cited in the last post for lineage, have a principle on accuracy and integrity: risk data should be accurate and reliable, and aggregated on a largely automated basis to minimize the probability of errors.[^26]
 Note the tension in that sentence.
 Automation is expected, *because* it reduces errors.
 A confidence layer is how you automate without giving up the ability to show that the automated part is accurate.
 
 **Model risk management.**
 In the last post, I cited the Federal Reserve's SR 11-7.
-In April 2026, it was superseded by SR 26-2, issued jointly by the US banking agencies.[^54]
+In April 2026, it was superseded by SR 26-2, issued jointly by the US banking agencies.[^27]
 Two details of the new guidance are directly relevant.
 First, it says explicitly that generative and agentic AI models are novel and rapidly evolving, and are therefore not within its scope.
 Second, it defines a model as a complex quantitative method that applies statistical, economic, or financial theory to turn input data into quantitative estimates.
@@ -1301,104 +1093,50 @@ Our systems should learn the same thing.
 
 [^3]: Yonatan Geifman and Ran El-Yaniv, [_Selective Classification for Deep Neural Networks_](https://arxiv.org/abs/1705.08500) (NeurIPS, 2017).
 
-[^4]: Yonatan Geifman, Guy Uziel, and Ran El-Yaniv, [_Bias-Reduced Uncertainty Estimation for Deep Neural Classifiers_](https://arxiv.org/abs/1805.08206) (ICLR, 2019).
+[^4]: C. K. Chow, [_On Optimum Recognition Error and Reject Tradeoff_](https://doi.org/10.1109/TIT.1970.1054406) (IEEE Transactions on Information Theory, 1970).
 
-[^5]: C. K. Chow, [_On Optimum Recognition Error and Reject Tradeoff_](https://doi.org/10.1109/TIT.1970.1054406) (IEEE Transactions on Information Theory, 1970).
+[^5]: Glenn W. Brier, [_Verification of Forecasts Expressed in Terms of Probability_](https://doi.org/10.1175/1520-0493%281950%29078%3C0001%3AVOFEIT%3E2.0.CO%3B2) (Monthly Weather Review, 1950).
 
-[^6]: Glenn W. Brier, [_Verification of Forecasts Expressed in Terms of Probability_](https://doi.org/10.1175/1520-0493%281950%29078%3C0001%3AVOFEIT%3E2.0.CO%3B2) (Monthly Weather Review, 1950).
+[^6]: Bianca Zadrozny and Charles Elkan, [_Transforming Classifier Scores into Accurate Multiclass Probability Estimates_](https://doi.org/10.1145/775047.775151) (KDD, 2002).
 
-[^7]: Allan H. Murphy and Robert L. Winkler, [_Reliability of Subjective Probability Forecasts of Precipitation and Temperature_](https://doi.org/10.2307/2346866) (Journal of the Royal Statistical Society, Series C, 1977).
+[^7]: Vladimir Vovk, Alexander Gammerman, and Glenn Shafer, [_Algorithmic Learning in a Random World_](https://doi.org/10.1007/b106715) (Springer, 2005).
 
-[^8]: Morris H. DeGroot and Stephen E. Fienberg, [_The Comparison and Evaluation of Forecasters_](https://doi.org/10.2307/2987588) (The Statistician, 1983).
+[^8]: Anastasios N. Angelopoulos et al., [_Learn then Test: Calibrating Predictive Algorithms to Achieve Risk Control_](https://arxiv.org/abs/2110.01052) (arXiv, 2021).
 
-[^9]: C. K. Chow, [_An Optimum Character Recognition System Using Decision Functions_](https://doi.org/10.1109/TEC.1957.5222035) (IRE Transactions on Electronic Computers, 1957).
+[^9]: Chuan Guo et al., [_On Calibration of Modern Neural Networks_](https://arxiv.org/abs/1706.04599) (ICML, 2017).
 
-[^10]: scikit-learn, [_Probability calibration_](https://scikit-learn.org/stable/modules/calibration.html) (User Guide).
+[^10]: Saurav Kadavath et al., [_Language Models (Mostly) Know What They Know_](https://arxiv.org/abs/2207.05221) (arXiv, 2022).
 
-[^11]: Bianca Zadrozny and Charles Elkan, [_Transforming Classifier Scores into Accurate Multiclass Probability Estimates_](https://doi.org/10.1145/775047.775151) (KDD, 2002).
+[^11]: Miao Xiong et al., [_Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs_](https://arxiv.org/abs/2306.13063) (ICLR, 2024).
 
-[^12]: Vladimir Vovk, Alexander Gammerman, and Glenn Shafer, [_Algorithmic Learning in a Random World_](https://doi.org/10.1007/b106715) (Springer, 2005).
+[^12]: Xuezhi Wang et al., [_Self-Consistency Improves Chain of Thought Reasoning in Language Models_](https://arxiv.org/abs/2203.11171) (ICLR, 2023).
 
-[^13]: Anastasios N. Angelopoulos et al., [_Learn then Test: Calibrating Predictive Algorithms to Achieve Risk Control_](https://arxiv.org/abs/2110.01052) (arXiv, 2021).
+[^13]: Sebastian Farquhar et al., [_Detecting Hallucinations in Large Language Models Using Semantic Entropy_](https://doi.org/10.1038/s41586-024-07421-0) (Nature, 2024).
 
-[^14]: Chuan Guo et al., [_On Calibration of Modern Neural Networks_](https://arxiv.org/abs/1706.04599) (ICML, 2017).
+[^14]: Elliot Kim et al., [_Correlated Errors in Large Language Models_](https://arxiv.org/abs/2506.07962) (ICML, 2025).
 
-[^15]: Saurav Kadavath et al., [_Language Models (Mostly) Know What They Know_](https://arxiv.org/abs/2207.05221) (arXiv, 2022).
+[^15]: Alexandru Niculescu-Mizil and Rich Caruana, [_Predicting Good Probabilities with Supervised Learning_](https://doi.org/10.1145/1102351.1102430) (ICML, 2005).
 
-[^16]: OpenAI, [_GPT-4 Technical Report_](https://arxiv.org/abs/2303.08774) (arXiv, 2023).
+[^16]: C. J. Clopper and E. S. Pearson, [_The Use of Confidence or Fiducial Limits Illustrated in the Case of the Binomial_](https://doi.org/10.1093/biomet/26.4.404) (Biometrika, 1934).
 
-[^17]: Miao Xiong et al., [_Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs_](https://arxiv.org/abs/2306.13063) (ICLR, 2024).
+[^17]: Anastasios N. Angelopoulos and Stephen Bates, [_A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification_](https://arxiv.org/abs/2107.07511) (arXiv, 2021).
 
-[^18]: Dongkeun Yoon et al., [_Reasoning Models Better Express Their Confidence_](https://arxiv.org/abs/2505.14489) (NeurIPS, 2025).
+[^18]: Raja Parasuraman and Dietrich H. Manzey, [_Complacency and Bias in Human Use of Automation: An Attentional Integration_](https://doi.org/10.1177/0018720810376055) (Human Factors, 2010).
 
-[^19]: Polina Kirichenko et al., [_AbstentionBench: Reasoning LLMs Fail on Unanswerable Questions_](https://arxiv.org/abs/2506.09038) (NeurIPS Datasets and Benchmarks, 2025).
+[^19]: European Union, [_Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 14: Human Oversight_](https://artificialintelligenceact.eu/article/14/) (2024).
 
-[^20]: Katherine Tian et al., [_Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from Language Models Fine-Tuned with Human Feedback_](https://arxiv.org/abs/2305.14975) (EMNLP, 2023).
+[^20]: Jeremy M. Wolfe, Todd S. Horowitz, and Naomi M. Kenner, [_Rare Items Often Missed in Visual Searches_](https://doi.org/10.1038/435439a) (Nature, 2005).
 
-[^21]: OpenAI Developer Community, [_GPT 5.2 LogProbs support removed?_](https://community.openai.com/t/gpt-5-2-logprobs-support-removed/1378114) (forum thread quoting the API error, 2025).
+[^21]: Himabindu Lakkaraju et al., [_The Selective Labels Problem: Evaluating Algorithmic Predictions in the Presence of Unobservables_](https://doi.org/10.1145/3097983.3098066) (KDD, 2017).
 
-[^22]: Xuezhi Wang et al., [_Self-Consistency Improves Chain of Thought Reasoning in Language Models_](https://arxiv.org/abs/2203.11171) (ICLR, 2023).
+[^22]: Curtis G. Northcutt, Anish Athalye, and Jonas Mueller, [_Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks_](https://arxiv.org/abs/2103.14749) (NeurIPS Datasets and Benchmarks, 2021).
 
-[^23]: Sebastian Farquhar et al., [_Detecting Hallucinations in Large Language Models Using Semantic Entropy_](https://doi.org/10.1038/s41586-024-07421-0) (Nature, 2024).
+[^23]: Isaac Gibbs and Emmanuel Candès, [_Adaptive Conformal Inference Under Distribution Shift_](https://arxiv.org/abs/2106.00170) (NeurIPS, 2021).
 
-[^24]: Elliot Kim et al., [_Correlated Errors in Large Language Models_](https://arxiv.org/abs/2506.07962) (ICML, 2025).
+[^24]: European Union, [_Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 15: Accuracy, Robustness and Cybersecurity_](https://artificialintelligenceact.eu/article/15/) (2024).
 
-[^25]: scikit-learn, [_Monotonic constraints (histogram-based gradient boosting)_](https://scikit-learn.org/stable/modules/ensemble.html#monotonic-constraints) (User Guide).
+[^25]: European Union, [_Regulation (EU) 2024/1689 (Artificial Intelligence Act), Annex III_](https://artificialintelligenceact.eu/annex/3/) (2024).
 
-[^26]: scikit-learn, [_GroupShuffleSplit_](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupShuffleSplit.html) (API Reference).
+[^26]: Basel Committee on Banking Supervision, [_Principles for effective risk data aggregation and risk reporting (BCBS 239)_](https://www.bis.org/publ/bcbs239.pdf) (BIS, 2013).
 
-[^27]: Alexandru Niculescu-Mizil and Rich Caruana, [_Predicting Good Probabilities with Supervised Learning_](https://doi.org/10.1145/1102351.1102430) (ICML, 2005).
-
-[^28]: C. J. Clopper and E. S. Pearson, [_The Use of Confidence or Fiducial Limits Illustrated in the Case of the Binomial_](https://doi.org/10.1093/biomet/26.4.404) (Biometrika, 1934).
-
-[^29]: James A. Hanley and Abby Lippman-Hand, [_If Nothing Goes Wrong, Is Everything All Right? Interpreting Zero Numerators_](https://doi.org/10.1001/jama.1983.03330370053031) (JAMA, 1983).
-
-[^30]: Anastasios N. Angelopoulos and Stephen Bates, [_A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification_](https://arxiv.org/abs/2107.07511) (arXiv, 2021).
-
-[^31]: Anastasios N. Angelopoulos et al., [_Conformal Risk Control_](https://arxiv.org/abs/2208.02814) (ICLR, 2024).
-
-[^32]: Yasin Abbasi-Yadkori et al., [_Mitigating LLM Hallucinations via Conformal Abstention_](https://arxiv.org/abs/2405.01563) (arXiv, 2024).
-
-[^33]: Christopher Mohri and Tatsunori Hashimoto, [_Language Models with Conformal Factuality Guarantees_](https://arxiv.org/abs/2402.10978) (ICML, 2024).
-
-[^34]: John D. C. Little, [_A Proof for the Queuing Formula: L = λW_](https://doi.org/10.1287/opre.9.3.383) (Operations Research, 1961).
-
-[^35]: David Madras, Toniann Pitassi, and Richard Zemel, [_Predict Responsibly: Improving Fairness and Accuracy by Learning to Defer_](https://arxiv.org/abs/1711.06664) (NeurIPS, 2018).
-
-[^36]: Hussein Mozannar and David Sontag, [_Consistent Estimators for Learning to Defer to an Expert_](https://arxiv.org/abs/2006.01862) (ICML, 2020).
-
-[^37]: Raja Parasuraman and Dietrich H. Manzey, [_Complacency and Bias in Human Use of Automation: An Attentional Integration_](https://doi.org/10.1177/0018720810376055) (Human Factors, 2010).
-
-[^38]: European Union, [_Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 14: Human Oversight_](https://artificialintelligenceact.eu/article/14/) (2024).
-
-[^39]: Kimberly A. Barchard and Larry A. Pace, [_Preventing Human Error: The Impact of Data Entry Methods on Data Accuracy and Statistical Results_](https://doi.org/10.1016/j.chb.2011.04.004) (Computers in Human Behavior, 2011).
-
-[^40]: Jeremy M. Wolfe, Todd S. Horowitz, and Naomi M. Kenner, [_Rare Items Often Missed in Visual Searches_](https://doi.org/10.1038/435439a) (Nature, 2005).
-
-[^41]: Robin Riz à Porta, Yanik Sterchi, and Adrian Schwaninger, [_How Realistic Is Threat Image Projection for X-ray Baggage Screening?_](https://doi.org/10.3390/s22062220) (Sensors, 2022).
-
-[^42]: Franziska Hofer and Adrian Schwaninger, [_Using Threat Image Projection Data for Assessing Individual Screener Performance_](https://doi.org/10.2495/SAFE050411) (WIT Transactions on the Built Environment, 2005).
-
-[^43]: N. H. Mackworth, [_The Breakdown of Vigilance during Prolonged Visual Search_](https://doi.org/10.1080/17470214808416738) (Quarterly Journal of Experimental Psychology, 1948).
-
-[^44]: Joel S. Warm, Raja Parasuraman, and Gerald Matthews, [_Vigilance Requires Hard Mental Work and Is Stressful_](https://doi.org/10.1518/001872008X312152) (Human Factors, 2008).
-
-[^45]: Himabindu Lakkaraju et al., [_The Selective Labels Problem: Evaluating Algorithmic Predictions in the Presence of Unobservables_](https://doi.org/10.1145/3097983.3098066) (KDD, 2017).
-
-[^46]: D. G. Horvitz and D. J. Thompson, [_A Generalization of Sampling Without Replacement from a Finite Universe_](https://doi.org/10.1080/01621459.1952.10483446) (Journal of the American Statistical Association, 1952).
-
-[^47]: Curtis G. Northcutt, Anish Athalye, and Jonas Mueller, [_Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks_](https://arxiv.org/abs/2103.14749) (NeurIPS Datasets and Benchmarks, 2021).
-
-[^48]: Stephan Rabanser, Stephan Günnemann, and Zachary C. Lipton, [_Failing Loudly: An Empirical Study of Methods for Detecting Dataset Shift_](https://arxiv.org/abs/1810.11953) (NeurIPS, 2019).
-
-[^49]: Isaac Gibbs and Emmanuel Candès, [_Adaptive Conformal Inference Under Distribution Shift_](https://arxiv.org/abs/2106.00170) (NeurIPS, 2021).
-
-[^50]: European Union, [_Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 15: Accuracy, Robustness and Cybersecurity_](https://artificialintelligenceact.eu/article/15/) (2024).
-
-[^51]: European Union, [_Regulation (EU) 2024/1689 (Artificial Intelligence Act), Annex III_](https://artificialintelligenceact.eu/annex/3/) (2024).
-
-[^52]: Orrick, [_EU AI Act Update: Digital Omnibus Finalizes 8 Compliance Changes_](https://www.orrick.com/en/Insights/2026/05/EUs-Digital-Omnibus-on-AI-7-Key-Changes-You-Need-to-Know) (2026).
-
-[^53]: Basel Committee on Banking Supervision, [_Principles for effective risk data aggregation and risk reporting (BCBS 239)_](https://www.bis.org/publ/bcbs239.pdf) (BIS, 2013).
-
-[^54]: Board of Governors of the Federal Reserve System, [_SR 26-2: Revised Guidance on Model Risk Management_](https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm) (2026).
+[^27]: Board of Governors of the Federal Reserve System, [_SR 26-2: Revised Guidance on Model Risk Management_](https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm) (2026).
