@@ -3,7 +3,7 @@
 {% endcomment %}
 {% assign post = site.posts.first %}
 {% if post %}
-{% assign words = post.content | number_of_words %}
+{% assign words = post.content | body_word_count %}
 <section class="home-featured" aria-labelledby="home-featured-title">
    {% if post.image %}
    {% assign cover_small = post.image | thumbnail %}

@@ -41,7 +41,7 @@ pagefind: false
       <h3 class="blog-year-title">{{ year.name }} ({{ year.size }})</h3>
       <ul class="blog-rows">
          {% for post in year.items %}
-         {% assign words = post.content | number_of_words %}
+         {% assign words = post.content | body_word_count %}
          <li class="blog-row" data-tags="{{ post.tags | join: ' ' }}">
             {% if post.image %}
             <img class="thumb-round blog-row-thumb" src="{{ post.image | thumbnail }}" alt="" width="80" height="80" loading="lazy" decoding="async">

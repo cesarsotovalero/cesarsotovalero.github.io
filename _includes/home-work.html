@@ -33,7 +33,7 @@
       <h3 class="home-panel-title">Writing</h3>
       <ul class="blog-rows">
          {% for post in site.posts offset:1 limit:4 %}
-         {% assign words = post.content | number_of_words %}
+         {% assign words = post.content | body_word_count %}
          <li class="blog-row">
             {% if post.image %}<img class="thumb-round blog-row-thumb" src="{{ post.image | thumbnail }}" alt="" width="80" height="80" loading="lazy" decoding="async">{% endif %}
             <div class="blog-row-text">
