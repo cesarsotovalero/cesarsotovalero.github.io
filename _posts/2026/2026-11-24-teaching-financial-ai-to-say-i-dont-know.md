@@ -44,18 +44,24 @@ An analyst who is right 98% of the time but never tells you which 2% are wrong f
     <em>"A model that never says 'I don't know' has to be checked every time it says anything."</em>
 </aside>
 
-Large language models are not good at saying "I don't know."
+LLMs are not good at saying "I don't know."
 Most benchmarks give zero points for an honest abstention and some points for a lucky guess, so guessing wins.[^1]
 What works is a *confidence layer* around the model: independent signals, a small scorer that combines them, a calibration step that turns the score into a real probability, a threshold with a statistical guarantee, and a review process designed for the moments when the answer is "I don't know."
 
 I'll keep the running example from the last post: covenant monitoring.
-Every quarter, a corporate borrower sends a compliance pack; the system extracts a dozen values (EBITDA, net debt, interest expense, and so on), code computes the ratios, and the ratios are tested against the loan agreement's covenants.
+Every quarter, a corporate borrower sends a compliance pack. The system extracts a dozen values (EBITDA, net debt, interest expense, and so on), code computes the ratios, and the ratios are tested against the loan agreement's covenants.
 Some values are covenant inputs, where an error can hide a breach; others feed analytics, where an error is cheap.
 
 To make every claim checkable, I built a simulation: 24,000 synthetic compliance packs with 12 values each (288,000 values), with realistic error types and the signals a real pipeline would produce.
 Every chart and number marked as simulated comes from it; the mechanics are what I would run on real data.
 
-In this post: why abstention is a feature and how to measure it; how extraction fails *confidently* and which signals catch which failures; how to turn signals into a calibrated probability and a threshold you can promise; how to design the human side (review modes, canaries, audits); and how to keep the promise in production, including what supervisors will ask about it.
+In this post:
+
+- Why abstention is a feature and how to measure it
+- How extraction fails *confidently* and which signals catch which failures
+- How to turn signals into a calibrated probability and a threshold you can promise
+- How to design the human side (review modes, canaries, audits)
+- How to keep the promise in production, including what supervisors will ask about it
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/01-confidence-layer.drawio.svg" alt="The confidence layer: an extraction produces signals; a scorer combines them; calibration turns the score into a probability; a decision compares it with a certified threshold per tier. Values that pass are auto-approved and stored with lineage; the rest go to a review queue with a reason, or are rejected when the document is unusable. Review decisions, random audits of auto-approvals, and canaries become labels, which feed an offline step that trains, calibrates, and certifies a new versioned release, and a monitoring step that can lower the automation level." width="100%" style="border: 1px solid #808080;">
@@ -69,7 +75,7 @@ In this post: why abstention is a feature and how to measure it; how extraction 
 Most document pipelines in banks start with 100% review: the model pre-fills every value, and a person checks all of them.
 That is safe, and also where most projects stall, since the bank now pays for a model *and* the same checking as before.
 
-Automation only pays off when you can skip checks, and to skip one you need to know which values don't need it — a different question from "how accurate is the model?", and the one this post answers.
+Automation only pays off when you can skip checks, and to skip one you need to know which values don't need it, which is a different question from "how accurate is the model?", and the one this post answers.
 
 ## The Arithmetic of Many Fields
 
@@ -85,7 +91,7 @@ If errors are independent, the chance that *every* value is right is 0.995 to th
 </figure>
 
 So roughly one pack in five has a wrong number somewhere, and you can't tell which.
-Trusting a whole document lets it through; reviewing it means checking 40 values to find one — the decision has to happen at the level of individual values: *can this go into the database without a person looking at it?*
+Trusting a whole document lets it through, reviewing it means checking 40 values to find one, the decision has to happen at the level of individual values: *can this go into the database without a person looking at it?*
 
 ## A Vocabulary for Abstention
 
@@ -149,7 +155,7 @@ That same year, Guo and colleagues showed modern neural networks are far more ov
 The pattern repeated with language models: pretrained models are reasonably calibrated on multiple-choice questions,[^10] but post-training for chat makes calibration worse, and confidence *stated in words* tends to be overconfident.[^11]
 The latest results pull in two directions: reasoning models express better-calibrated confidence, yet reasoning fine-tuning can make abstention worse, and OpenAI researchers argue hallucination persists because training and evaluation reward guessing over admitting uncertainty.[^1]
 
-In one sentence: newer models describe their uncertainty better, but are no more willing to act on it, which is why I don't leave the decision to abstain to the model — it belongs to a layer you own, test, and version.
+In one sentence: newer models describe their uncertainty better, but are no more willing to act on it, which is why I don't leave the decision to abstain to the model (it belongs to a layer you own, test, and version).
 
 # How Extraction Fails Confidently
 
@@ -183,7 +189,7 @@ Some doubt comes from the *page* (a blurry scan: *aleatoric* uncertainty, which 
 Other doubt comes from the *reader* (an unseen template: *epistemic* uncertainty, which shrinks with data, so the right response is to route to review and feed the result into training).
 A good confidence layer keeps the two apart, since the fixes differ.
 
-Token-level confidence measures how sure the model is about *the characters it wrote*; extraction errors are mostly about *where it looked* and *what the characters mean* — a model can be perfectly certain it copied "486," and perfectly wrong that "486" is this year's EBITDA.
+Token-level confidence measures how sure the model is about *the characters it wrote*; extraction errors are mostly about *where it looked* and *what the characters mean* (a model can be perfectly certain it copied "486," and perfectly wrong that "486" is this year's EBITDA).
 
 <aside class="quote">
     <em>"Fluency is not accuracy. The model is most confident when it copies the wrong number perfectly."</em>
@@ -219,7 +225,7 @@ A confidence layer is only as good as the evidence it combines: a panel of imper
 
 ## The Model's Own View
 
-**Self-reported confidence** (a 0–1 number) is free and better than nothing, but tends to be overconfident[^11] and clusters at a few round values — a weak feature, never a decision.
+**Self-reported confidence** (a 0–1 number) is free and better than nothing, but tends to be overconfident[^11] and clusters at a few round values (a weak feature, never a decision).
 **Token log-probabilities**, where available, are informative (one uncertain digit is enough to make the whole number wrong) but must be recorded as *missing*, never zero, when an API doesn't expose them.
 **Self-consistency** (sampling repeatedly) is a strong hallucination detector for open-ended answers,[^12] [^13] but disappointing for number extraction, since a misread digit tends to repeat the same way: it measures stability, not correctness.
 
