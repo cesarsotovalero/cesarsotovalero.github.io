@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Teaching Financial AI to Say “I Don’t Know”
+title: Teaching Financial AI Agents to Say “I Don’t Know”
 subtitle: Calibration, abstention, and guaranteed thresholds for document extraction
 tags: ai
 description: |
@@ -24,16 +24,13 @@ author: cesarsotovalero
 published: true
 ---
 
-In my [previous post](/blog/reading-financial-documents-with-ai), I described three ways to build pipelines that read financial documents with AI.
-The figure I care most about in that post is a stack of trust layers: a schema, grounding on the page, a blind cross-read by a second model, accounting rules, and, at the very bottom, a confidence threshold.
-I gave that last layer a single line: *"necessary, never sufficient"*.
+In my [previous post](/blog/reading-financial-documents-with-ai), I described three ways to build pipelines that read financial documents with AI, with a stack of trust layers ending, at the bottom, in a confidence threshold.
+I gave that layer a single line: *"necessary, never sufficient"*.
 This post is about that line.
 
 Think about the best junior credit analyst you have worked with.
 It was probably not the one who never made mistakes.
 It was the one who knocked on your door and said: "I'm not sure about this number. The scan is blurry, and it doesn't match last quarter."
-That sentence is worth a lot.
-It tells you exactly where to spend your attention.
 An analyst who is right 98% of the time but never tells you which 2% are wrong forces you to re-check everything they hand in.
 
 <figure class="jb_picture">
@@ -44,387 +41,206 @@ An analyst who is right 98% of the time but never tells you which 2% are wrong f
 </figure>
 
 <aside class="quote">
-    <em>“A model that never says ‘I don’t know’ has to be checked every time it says anything.”</em>
+    <em>"A model that never says 'I don't know' has to be checked every time it says anything."</em>
 </aside>
 
 Large language models are not good at saying "I don't know."
-Part of the reason is how they are trained and graded: most benchmarks give zero points for an honest abstention and some points for a lucky guess, so guessing wins.[^1]
-Asking the model nicely to admit uncertainty helps a little, but it doesn't fix the incentive.
-What does work is building a *confidence layer* around the model: a set of independent signals, a small scorer that combines them, a calibration step that turns the score into a real probability, and a threshold that comes with a statistical guarantee.
-Plus the part most teams forget: a review process designed for the moments when the answer is "I don't know."
+Most benchmarks give zero points for an honest abstention and some points for a lucky guess, so guessing wins.[^1]
+What works is a *confidence layer* around the model: independent signals, a small scorer that combines them, a calibration step that turns the score into a real probability, a threshold with a statistical guarantee, and a review process designed for the moments when the answer is "I don't know."
 
 I'll keep the running example from the last post: covenant monitoring.
-Every quarter, a corporate borrower sends a compliance pack.
-The system extracts a dozen values from it (EBITDA, net debt, interest expense, and so on), code computes the ratios, and the ratios are tested against the covenants in the loan agreement.
-Some of those values are covenant inputs, where an error can hide a breach.
-Others feed analytics, where an error is annoying but cheap.
+Every quarter, a corporate borrower sends a compliance pack; the system extracts a dozen values (EBITDA, net debt, interest expense, and so on), code computes the ratios, and the ratios are tested against the loan agreement's covenants.
+Some values are covenant inputs, where an error can hide a breach; others feed analytics, where an error is cheap.
 
-To make every claim in this post checkable, I built a simulation: 24,000 synthetic compliance packs with 12 values each (288,000 values in total), with realistic error types, and the signals a real pipeline would produce for each value.
-Every chart and number marked as simulated comes from it.
-The numbers are illustrative, not a benchmark.
-The mechanics are exactly what I would run on real data.
+To make every claim checkable, I built a simulation: 24,000 synthetic compliance packs with 12 values each (288,000 values), with realistic error types and the signals a real pipeline would produce.
+Every chart and number marked as simulated comes from it; the mechanics are what I would run on real data.
 
-In this post, I'll cover:
-
-1. Why abstention is a feature, and how to measure a system that is allowed to say "I don't know."
-2. How extraction fails *confidently*, and which signals catch which failures.
-3. How to turn those signals into a calibrated probability, and how to choose a threshold you can make a promise about.
-4. How to design the human side: review modes, canaries, and random audits.
-5. How to keep the promise in production, and what supervisors will ask about it.
+In this post: why abstention is a feature and how to measure it; how extraction fails *confidently* and which signals catch which failures; how to turn signals into a calibrated probability and a threshold you can promise; how to design the human side (review modes, canaries, audits); and how to keep the promise in production, including what supervisors will ask about it.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/01-confidence-layer.drawio.svg" alt="The confidence layer: an extraction produces signals; a scorer combines them; calibration turns the score into a probability; a decision compares it with a certified threshold per tier. Values that pass are auto-approved and stored with lineage; the rest go to a review queue with a reason, or are rejected when the document is unusable. Review decisions, random audits of auto-approvals, and canaries become labels, which feed an offline step that trains, calibrates, and certifies a new versioned release, and a monitoring step that can lower the automation level." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 1. The confidence layer. Signals from the extraction are combined into a score, calibrated into a probability, and compared with a certified threshold for the value's tier. Everything else goes to people, with a reason. Reviews, audits, and canaries become labels that retrain, recalibrate, and recertify the layer. Each box is a section of this post.
+    Figure 1. The confidence layer: signals are combined into a score, calibrated into a probability, and compared with a certified threshold per tier. Everything else goes to people, with a reason, and becomes labels that retrain and recertify the layer.
   </figcaption>
 </figure>
 
-# Why “I Don’t Know” Is a Feature
+# Why "I Don't Know" Is a Feature
 
-Most document pipelines in banks start their life with 100% review.
-The model pre-fills the values, and a person checks every one of them.
-That is safe.
-It is also where most projects stall, because the bank now pays for a model *and* for the same amount of checking as before.
+Most document pipelines in banks start with 100% review: the model pre-fills every value, and a person checks all of them.
+That is safe, and also where most projects stall, since the bank now pays for a model *and* the same checking as before.
 
-Automation only pays off when you can skip checks.
-And to skip a check, you need to know which values don't need one.
-That is a different question from "how accurate is the model?", and it's the question this post is about.
+Automation only pays off when you can skip checks, and to skip one you need to know which values don't need it — a different question from "how accurate is the model?", and the one this post answers.
 
 ## The Arithmetic of Many Fields
 
-Start with a simple calculation.
-Suppose the extractor gets each value right 99.5% of the time, which is excellent.
-A full set of financial statements easily has 40 values that matter.
-If errors are independent, the chance that *every* value in the pack is right is 0.995 to the power of 40, or about 82%.
+Suppose the extractor is right 99.5% of the time, which is excellent.
+A set of financial statements easily has 40 values that matter.
+If errors are independent, the chance that *every* value is right is 0.995 to the power of 40, or about 82%.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/02-many-fields.svg" alt="Line chart. Share of documents in which every value is correct, as a function of the number of values extracted per document, for per-value accuracy of 99.9%, 99.5%, and 99.0%. At 40 values: 96.1%, 81.8%, and 66.9%. At 100 values: 90%, 61%, and 37%." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 2. The arithmetic of many fields. At 99.5% accuracy per value, roughly one 40-value pack in five contains at least one wrong number. You can't tell which pack, so a decision at the document level either reviews everything or trusts too much.
+    Figure 2. The arithmetic of many fields. At 99.5% accuracy per value, roughly one 40-value pack in five contains at least one wrong number, and you can't tell which.
   </figcaption>
 </figure>
 
-So roughly one pack in five has at least one wrong number somewhere.
-If the only choice is to trust or review a *whole document*, you are stuck: trusting the pack means letting that wrong number through, and reviewing it means checking 40 values to find one.
-The decision has to happen at the level of individual values.
-For each value, the system must answer one question: *can this go into the database without a person looking at it?*
+So roughly one pack in five has a wrong number somewhere, and you can't tell which.
+Trusting a whole document lets it through; reviewing it means checking 40 values to find one — the decision has to happen at the level of individual values: *can this go into the database without a person looking at it?*
 
 ## A Vocabulary for Abstention
 
-A system that may decline to answer needs its own metrics.
-Accuracy alone won't do, because accuracy doesn't care which answers you chose to trust.
-These are the terms I'll use for the rest of the post:
+- **Coverage.** The share of values auto-approved; the automation rate.
+- **Wrong auto-approval rate (WAR).** The share of auto-approved values that are wrong (*selective risk* in the literature).
+- **Abstention.** Routing a value to review, or a document back, instead of trusting it.
+- **Straight-through processing (STP).** The share of *documents* with no human touch, always lower than coverage, for the reason above.
+- **Risk–coverage curve.** Sort values by confidence and plot coverage against WAR at every cut-off: the single most useful picture of a confidence layer.[^2] [^3]
 
-- **Coverage.** The share of values the system auto-approves. The rest are routed to people. Coverage is your automation rate.
-- **Wrong auto-approval rate (WAR).** The share of auto-approved values that are wrong. In the literature, this is called *selective risk*. In the last post, I called it the bank's real risk metric.
-- **Abstention.** The system's "I don't know": a value is routed to review (or the document is sent back) instead of being trusted. In the literature, you'll also see *rejection* or *deferral*.
-- **Straight-through processing (STP).** The share of *documents* that flow through with no human touch. It is always lower than coverage, for the reason in Figure 2.
-- **Risk–coverage curve.** Sort all values from most to least confident. For every cut-off, plot coverage against WAR. This curve is the most useful single picture of a confidence layer.[^2] [^3]
-
-Two numbers summarize the curve.
-The area under it compares scorers across all thresholds at once.
-But a bank doesn't operate at all thresholds.
-It operates at one.
-So the number I look at first is *coverage at risk*: at the risk I can accept, how much can I automate?
+The number I look at first is *coverage at risk*: at the risk I can accept, how much can I automate?
 
 ## Ranking Beats Accuracy
 
-Here is a result that surprises people.
-Take two extractors.
-Extractor A is right 98% of the time, but its confidence scores barely separate its right answers from its wrong ones.
-Extractor B is right only 95% of the time, but its confidence scores separate right from wrong very well.
-Which one should the bank use?
+Take two extractors: A is right 98% of the time, but its confidence scores barely separate right from wrong; B is right only 95%, but separates them well.
+Which should the bank use?
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/03-two-extractors.svg" alt="Line chart of wrong auto-approval rate against coverage for two hypothetical extractors. Extractor A, 98% accurate with poor ranking (AUROC 0.70), reaches the 0.5% target at only 14% coverage. Extractor B, 95% accurate with good ranking (AUROC 0.97), stays near zero until about 80% coverage and reaches the 0.5% target at 86% coverage." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 3. Accuracy is not the point; knowing which answers are wrong is. Extractor A is more accurate, but it can auto-approve only 14% of values at a 0.5% wrong auto-approval rate. Extractor B makes more mistakes, but it knows where they are, and it can auto-approve 86% at the same risk. Two hypothetical extractors with binormal confidence scores.
+    Figure 3. Accuracy is not the point; knowing which answers are wrong is. Extractor A auto-approves only 14% of values at 0.5% WAR; extractor B, less accurate but better ranked, auto-approves 86% at the same risk.
   </figcaption>
 </figure>
 
-Extractor B, by a mile.
-At a target of 0.5% wrong auto-approvals, A can automate 14% of the values and B can automate 86%.
-What separates them is *ranking*: the probability that a random correct value gets a higher score than a random wrong one.
-That probability is the AUROC, which I covered for fraud models in [an earlier post](/blog/evaluation-metrics-for-real-time-financial-fraud-detection-ml-models).
-For a confidence layer, it matters more than accuracy, because the whole job is to put the wrong values at the bottom of the list.
+B, by a mile: at a target of 0.5% wrong auto-approvals, A can automate 14% of values and B can automate 86%.
+What separates them is *ranking*, the probability a random correct value scores higher than a random wrong one (AUROC), which matters more than accuracy here, since the job is to put wrong values at the bottom of the list.
+So "how accurate is your extractor?" is the wrong question for a vendor; ask instead "what coverage do you get at 0.5% WAR on my documents?"
 
-This is why "how accurate is your extractor?" is the wrong question to ask a vendor.
-A better one is "what coverage do you get at 0.5% WAR on my documents?"
-Answering it requires a confidence score worth ranking by, and that is exactly the part many products don't have.
+## Chow's Rule: Abstaining Has a Price, and So Does Guessing
 
-## Chow’s Rule: Abstaining Has a Price, and So Does Guessing
-
-The decision to abstain is an economic one, and it has a clean answer that is older than most of us.
-In 1970, C. K. Chow derived the optimal rule for a recognition system that is allowed to refuse.[^4]
-Translated to our setting: let $$c_r$$ be the cost of a human review and $$c_e$$ the cost of a wrong value that nobody catches.
-If $$p$$ is the probability that the value is correct, trusting it costs $$(1 - p) \cdot c_e$$ on average, and reviewing it costs $$c_r$$.
-So you should auto-approve when:
+Abstention is an economic decision with a clean, old answer: in 1970, C. K. Chow derived the optimal rule for a recognition system allowed to refuse.[^4]
+Let $$c_r$$ be the cost of a human review and $$c_e$$ the cost of a wrong value nobody catches; if $$p$$ is the probability the value is correct, auto-approve when:
 
 $$p > 1 - \frac{c_r}{c_e}$$
 
-With a review that costs €4 and an undetected error that costs €1,000, the bar is 0.996: the value must be right at least 996 times out of 1,000 before it is cheaper to trust it than to look at it.
-If an error costs €200, the bar drops to 0.98.
-If it costs €5,000, it rises to 0.9992.
+With a €4 review and a €1,000 undetected error, the bar is 0.996; at €200 it drops to 0.98, at €5,000 it rises to 0.9992.
 
-Notice what the rule assumes: that $$p$$ is a *real probability*.
-If the system says 0.999 for values that are right 99% of the time, the rule silently approves values it was supposed to send to people.
-That's why calibration, which I cover later, is not a nice-to-have.
-It's what makes the threshold mean anything.
+The rule assumes $$p$$ is a *real* probability: if the system says 0.999 for values right only 99% of the time, it silently approves values meant for people, which is why calibration, covered later, is what makes the threshold mean anything.
+A go-around is a normal, blameless option for pilots, never a failure; an abstention should feel the same way inside your system.
+The failure is the confident wrong number nobody looked at.
 
-Pilots have a useful habit here.
-On every approach, a go-around is a normal, trained, and blameless option.
-Nobody gets in trouble for aborting a landing that didn't look right; people get in trouble for landing anyway.
-An abstention should feel the same way inside your system: routine, cheap, logged, and never treated as a failure.
-The failure is the confident wrong number that nobody looked at.
+# A Short History of Knowing What You Don't Know
 
-# A Short History of Knowing What You Don’t Know
-
-None of the ideas in this post are new.
-That is good news: it means they are well understood, and that a model validator can find textbooks about them.
+None of the ideas here are new, which is good news: a validator can find textbooks about them.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/04-timeline.drawio.svg" alt="Timeline from 1950 to 2025 in four eras. Rejecting at a cost: 1950 Brier score, 1957 reject option for optical character recognition (Chow), 1970 error–reject trade-off (Chow). Calibrated probabilities: 1983 calibrated forecasters, 1999 Platt scaling, 2002 isotonic calibration. Guarantees: 2005 conformal prediction, 2010 selective classification, 2017 overconfident modern networks and temperature scaling, 2017 selection with guaranteed risk, 2021 Learn then Test. Language models: 2022–23 LMs mostly know what they know and post-training hurts calibration, 2024 conformal factuality and semantic entropy, 2025 evaluations reward guessing and reasoning can hurt abstention." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 4. Seventy years of teaching machines to abstain. Reject options, calibration, and distribution-free guarantees all predate LLMs by decades. What is new is applying them to a reader that can be confidently wrong in fluent language.
+    Figure 4. Seventy years of teaching machines to abstain. Reject options, calibration, and distribution-free guarantees all predate LLMs by decades.
   </figcaption>
 </figure>
 
-The story starts with the weather.
-In 1950, Glenn Brier proposed a score for probability forecasts: the average squared difference between the forecast probability and what actually happened.[^5]
-A forecaster who says 90% and is wrong pays far more than one who said 60%.
-Weather services have verified their forecasts this way for decades, and studies of US precipitation forecasts found that forecasters could state probabilities reliably: on days with a 70% forecast, it rained about 70% of the time.
-Statisticians later formalized that property as *calibration*, and the reliability diagram I use later in this post comes from the same tradition of forecast verification.
+The story starts with the weather: in 1950, Glenn Brier proposed scoring probability forecasts by the squared difference between the forecast and what happened,[^5] later formalized as *calibration*, the idea behind the reliability diagram used later in this post.
 
-The reject option itself was invented for the exact problem of this post.
-In 1957, Chow described a character recognition system that refuses to classify a character when it isn't sure enough, and in 1970 he worked out the optimal trade-off between errors and rejections.[^4]
-Machines reading printed text and declining to guess: that was the original use case.
+The reject option was invented for the same problem: in 1957 Chow described a character recognizer that refuses to classify when unsure, and in 1970 worked out the optimal trade-off between errors and rejections.[^4]
+Around 2000, machine learning learned to turn classifier scores into probabilities (Platt scaling fits a sigmoid, isotonic regression fits any monotone step function),[^6] both still production workhorses.
 
-Around 2000, machine learning learned to turn arbitrary classifier scores into probabilities.
-Platt scaling fits a sigmoid to the scores; isotonic regression fits any monotone step function.[^6]
-Both are still the workhorses of calibration in production.
+Then came the guarantees: conformal prediction wraps any model with error guarantees that hold without model assumptions, as long as the future looks like the calibration data.[^7]
+Selective classification formalized the coverage–risk trade-off,[^2] and in 2017 Geifman and El-Yaniv showed how to pick a threshold so the risk of accepted predictions stays below a target with high probability,[^3] the recipe this post's certification follows; in 2021, *Learn then Test* generalized it to almost any tunable parameter.[^8]
 
-Then came the guarantees.
-Conformal prediction showed how to wrap any model with error guarantees that hold without assumptions about the model, as long as the future looks like the calibration data in a precise sense.[^7]
-Selective classification formalized the trade-off between coverage and risk,[^2] and in 2017 Geifman and El-Yaniv showed how to pick a threshold for a deep network so that the risk of the accepted predictions stays below a target with high probability.[^3]
-The certification code in this post follows that recipe.
-In 2021, *Learn then Test* generalized it to almost any tunable parameter.[^8]
+That same year, Guo and colleagues showed modern neural networks are far more overconfident than older ones, and that temperature scaling recovers most of the calibration.[^9]
+The pattern repeated with language models: pretrained models are reasonably calibrated on multiple-choice questions,[^10] but post-training for chat makes calibration worse, and confidence *stated in words* tends to be overconfident.[^11]
+The latest results pull in two directions: reasoning models express better-calibrated confidence, yet reasoning fine-tuning can make abstention worse, and OpenAI researchers argue hallucination persists because training and evaluation reward guessing over admitting uncertainty.[^1]
 
-The same year as Geifman and El-Yaniv's paper, Guo and colleagues showed that modern neural networks are much more overconfident than older, smaller ones, and that a one-parameter fix (temperature scaling) recovers most of the calibration.[^9]
-The pattern repeated with language models.
-Large pretrained models turned out to be reasonably calibrated on multiple-choice questions when asked in the right format,[^10] but post-training for chat made calibration worse, and the confidence that models *state in words* tends to be overconfident.[^11]
-
-The latest results pull in two directions.
-Reasoning models tend to express better-calibrated confidence, yet reasoning fine-tuning can make models *worse* at abstaining on questions that have no answer.
-And OpenAI researchers argued that hallucinations persist largely because training and evaluation reward guessing over admitting uncertainty.[^1]
-
-Put together, the state of the art in one sentence is this: newer models describe their uncertainty better, but they are not more willing to act on it.
-That's why I don't leave the decision to abstain to the model.
-It belongs to a layer you own, test, and version.
+In one sentence: newer models describe their uncertainty better, but are no more willing to act on it, which is why I don't leave the decision to abstain to the model — it belongs to a layer you own, test, and version.
 
 # How Extraction Fails Confidently
 
-Before choosing signals, it helps to be precise about how extraction goes wrong.
-Almost every wrong value falls into one of four buckets.
-What they have in common is that the model is usually *sure* of what it wrote.
+Almost every wrong value falls into one of four buckets, and in each the model is usually *sure* of what it wrote.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/05-confident-and-wrong.drawio.svg" alt="Four panels. Wrong cell: the page shows EBITDA 512 for 2026 and 486 for 2025; the model returns 486 for 2026 with confidence 0.97; it is caught by a column header check, a current-not-equal-prior rule, and sometimes a blind cross-read; grounding passes because 486 is printed. Misread scan: net debt 1,836 is read as 1,886 with confidence 0.95; caught by grounding against OCR, a disagreeing cross-read, and the rule gross debt minus cash; one token has a low log-probability. Sign or scale: EBITDA printed as (486) in EUR thousands is returned as 486 with confidence 0.99; caught by reading as printed and converting in code, the rule EBITDA equals EBIT plus depreciation and amortization, and history; log-probabilities are high. Not printed: capital expenditure is in a note that is not included; the model returns 1,250 with confidence 0.90; caught by grounding finding no match, a cross-read returning null, and a schema that allows not found." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 5. Four ways to be confidently wrong. In each case, the model is sure about the characters it produced. The mistake is in where they came from or what they mean, which is exactly what token-level confidence cannot see.
+    Figure 5. Four ways to be confidently wrong. In each case the model is sure about the characters it produced; the mistake is in where they came from or what they mean.
   </figcaption>
 </figure>
 
-**1. Wrong cell.**
-The number is printed on the page, and every digit is copied correctly, but it came from the wrong place: last year's column, the parent company instead of the group, the quarter instead of the year to date.
-This is the most common error on clean digital documents, and the most dangerous one for naive grounding, because "is this number on the page?" returns yes.
-What catches it is a check of the *layout*: the column header above the value, the row label next to it, and a rule that flags a current value equal to the prior one.
+**1. Wrong cell.** Every digit is correct, but from the wrong place: last year's column, the parent company, the wrong period.
+It's the most common error on clean digital documents and the most dangerous for naive grounding ("is this number on the page?" returns yes).
+A *layout* check (column header, row label, current-not-equal-prior rule) catches it.
 
-**2. Misread.**
-A blurry 3 becomes an 8; a 1 loses its serif and becomes a 7.
-This dominates on scanned pages.
-Here, the model's internals sometimes help: the probability of the token that spells the uncertain digit is often lower than the rest.
-But the overall answer still reads fluently, so a confidence number for the whole answer stays high.
+**2. Misread.** A blurry 3 becomes an 8, dominating on scans; the answer still reads fluently, so confidence stays high.
 A second reader, OCR-based grounding, and arithmetic (net debt = gross debt − cash) catch most of these.
 
-**3. Sign or scale.**
-The model copies `(486)` as `486`, or misses the "EUR thousands" line at the top of the table and stores 486 instead of 486,000.
-The digits are right, so every token-level signal says "very sure."
-The meaning is wrong.
-The fix from the last post still applies: let the model read values *as printed* and let code apply sign and scale.
-Rules and history catch what slips through: EBITDA must equal operating profit plus depreciation and amortization, and a value that jumps by a factor of 1,000 from last quarter is not a business event.
+**3. Sign or scale.** The model copies `(486)` as `486`, or misses an "EUR thousands" header: every token-level signal says "very sure," but the meaning is wrong.
+Reading values *as printed* and applying sign and scale in code, plus accounting identities and history, catch what slips through.
 
-**4. Not printed.**
-The pack doesn't contain the value (capital expenditure lives in a note that wasn't included), and the model produces a plausible number anyway.
-This is the classic hallucination, and it is the most dangerous case because there is nothing on the page to point at.
-It is also the easiest to catch *if* you look: grounding finds no match anywhere, a blind cross-read returns null or a different number, and a schema that explicitly allows "not found" gives the model a way out.
+**4. Not printed.** The pack doesn't contain the value and the model invents a plausible one anyway, the classic hallucination, most dangerous since there's nothing on the page to point at.
+It's easiest to catch *if you look*: grounding finds no match, a cross-read returns null, and a schema allowing "not found" gives the model a way out.
 
-In the simulation, I mirrored this mix.
-About 35% of wrong values come from the wrong cell, 32% are misreads, 19% are sign or scale errors, and 15% are not printed at all.
-Scanned packs (a quarter of the total) have an error rate of about 15%, against 3% for digital ones.
+In the simulation, about 35% of wrong values are wrong-cell, 32% misreads, 19% sign or scale, and 15% not printed; scanned packs (a quarter of the total) have a 15% error rate, against 3% for digital ones.
 
 ## Is It the Page or the Reader?
 
-The four buckets hide a distinction that matters for what you do next.
-Some doubt comes from the *page*: the scan is blurry, the table is cut off, the pack is incomplete.
-Statisticians call this *aleatoric* uncertainty.
-No amount of modeling will remove it.
-The right response is often to reject the document and ask for a better copy.
+Some doubt comes from the *page* (a blurry scan: *aleatoric* uncertainty, which no modeling removes, so the right response is often to reject the document).
+Other doubt comes from the *reader* (an unseen template: *epistemic* uncertainty, which shrinks with data, so the right response is to route to review and feed the result into training).
+A good confidence layer keeps the two apart, since the fixes differ.
 
-Other doubt comes from the *reader*: the template has never been seen, the layout is unusual, the language is unfamiliar.
-This is *epistemic* uncertainty, and it shrinks with data.
-The right response is to route the value to review and make sure the reviewed result ends up in the training and calibration data.
-
-A good confidence layer keeps the two apart.
-A low score caused by a terrible scan and a low score caused by a new template should not end up in the same queue with the same reason, because the fixes are different.
-
-## Why the Model’s Own Confidence Misses These
-
-There is a simple reason why the model's self-assessment fails on exactly these errors.
-Token-level confidence measures how sure the model is about *the characters it wrote*, given what it saw.
-Extraction errors are mostly about *where it looked* and *what the characters mean*.
-A model can be perfectly certain that it is copying "486", and perfectly wrong that "486" is this year's EBITDA in euros.
+Token-level confidence measures how sure the model is about *the characters it wrote*; extraction errors are mostly about *where it looked* and *what the characters mean* — a model can be perfectly certain it copied "486," and perfectly wrong that "486" is this year's EBITDA.
 
 <aside class="quote">
-    <em>“Fluency is not accuracy. The model is most confident when it copies the wrong number perfectly.”</em>
+    <em>"Fluency is not accuracy. The model is most confident when it copies the wrong number perfectly."</em>
 </aside>
 
-This doesn't mean the model's confidence is useless.
-It means it is *one* signal among several, and a weak one for the errors that matter most.
-The confidence layer is built from signals that look at the value from different angles.
+This doesn't make the model's confidence useless; it makes it one weak signal among several.
 
 # Let the Model Say It First
 
-The confidence layer doesn't replace asking the model to abstain.
-It complements it.
-A few changes to the extraction call make "I don't know" cheap for the model to say, and they turn its abstentions into signals that code can act on.
+The confidence layer doesn't replace asking the model to abstain; it complements it, with a few changes that make "I don't know" cheap to say and turn abstentions into signals code can act on.
 
-**Give it a way out in the schema.**
-If the output schema demands a number for every field, the model will produce a number for every field.
-Structured outputs are very good at enforcing shapes, including the shape that leaves no room for doubt.
-So make every value optional, and give each one a status with a small, fixed set of reasons: *found*, *not found* (the pack doesn't contain it), *illegible* (printed, but can't be read reliably), or *ambiguous* (more than one plausible candidate, such as an original and a restated figure).
-A found value must come with the value exactly as printed, say `(486)`, and the page it came from; sign and scale are applied later in code.
-A value that isn't found must not have a value at all.
-The schema validator enforces both rules.
-Each status leads somewhere different.
-*Not found* triggers a completeness check on the pack (is a page missing, or does this borrower not report capital expenditure?).
-*Illegible* is a page problem, so the document is a candidate for rejection.
-*Ambiguous* goes to review with all the candidates on screen, which is exactly what a reviewer needs when a pack contains both the original and the restated figure.
+**Give it a way out in the schema.** Make every value optional with a status (*found*, *not found*, *illegible*, or *ambiguous*), with a found value carrying the number exactly as printed plus its page, sign and scale applied later in code.
+Each status routes differently: *not found* triggers a completeness check, *illegible* is a rejection candidate, *ambiguous* goes to review with all candidates on screen.
 
-**Say that abstaining is acceptable, and that guessing costs more.**
-State it in the instructions: a missing value is better than a guessed one.
-Kalai and colleagues propose that evaluations state an explicit confidence target in their instructions: a wrong answer costs points, "I don't know" costs nothing, so guessing only pays above the stated confidence.[^1]
-The same wording works in an extraction prompt.
-Prompting helps, but it isn't a cure.
+**Say abstaining is acceptable, and guessing costs more.** A missing value beats a guessed one: an explicit confidence target (a wrong answer costs points, "I don't know" costs nothing) makes guessing only pay above that confidence,[^1] and the same wording works in an extraction prompt, though prompting alone isn't a cure.
 
-**Ask for evidence, so absence becomes visible.**
-In the last post, every value came with a page and a quote or a box.
-That requirement does double duty here: a value without evidence is something code can detect, and an invented value usually comes with evidence that doesn't check out.
-A hallucination is hard to catch when there is nothing to verify.
-Requiring evidence creates something to verify.
+**Ask for evidence, so absence becomes visible.** Requiring a page and a quote for every value, as in the last post, makes a value without evidence detectable.
 
-**Believe abstentions; don't trust their absence.**
-Treat the model's abstentions asymmetrically.
-When it says a value is illegible or not found, take it at its word: that value should not be auto-approved, whatever the other signals say.
-When it *doesn't* abstain, that tells you much less, for all the reasons in the previous section.
-In the routing policy, an abstention is a hard stop; in the scorer, the lack of one is just another weak feature.
+**Believe abstentions; don't trust their absence.** Treat an "illegible" or "not found" as a hard stop; when the model *doesn't* abstain, the scorer treats its silence as just another weak feature.
 
-**Put unanswerable cases in your gold set.**
-This one is easy to miss.
-If every field in your evaluation set exists and is legible, then every prompt change that makes the model abstain *less* will look like an improvement, because it gets a few more values right and is never penalized for guessing.
-That's the benchmark problem Kalai and colleagues describe, reproduced inside your own team.
-Include packs where values are genuinely missing, pages that are illegible, and tables with a restated column, and score a correct "not found" as a correct answer.
+**Put unanswerable cases in your gold set.** Any prompt change that makes the model abstain *less* looks like an improvement unless the set includes genuinely missing values and illegible pages, scoring a correct "not found" as correct.
 
 # Where Confidence Comes From
 
-A confidence layer is only as good as the evidence it combines.
-The useful mental model is a panel of imperfect witnesses: each one sees part of the scene, each one has blind spots, and the blind spots are in different places.
-Figure 6 is the map I use.
+A confidence layer is only as good as the evidence it combines: a panel of imperfect witnesses, each seeing part of the scene, with blind spots in different places.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/06-signal-map.drawio.svg" alt="Table of signals against error types. Self-reported confidence is weak on all four error types and free. Token log-probabilities are weak on wrong cell and partial on the others, free, but not exposed by every API. Self-consistency is weak on wrong cell and sign or scale and partial on misread and not printed, costs N extra calls, and repeats the same misreading. A blind cross-read by another model is partial on wrong cell and sign or scale and strong on misread and not printed, costs one extra call, and models share blind spots. Layout checks are strong on wrong cell. Grounding is strong on misread and not printed. Accounting rules are strong on sign or scale. Borrower history is strong on sign or scale. Document quality and template only shift the prior." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 6. Which signal catches which error. No row is strong everywhere, and the strong cells are spread across different rows. That is the whole argument for combining signals instead of picking the best one.
+    Figure 6. Which signal catches which error. No row is strong everywhere, and the strong cells are spread across different rows, the argument for combining signals.
   </figcaption>
 </figure>
 
-## The Model’s Own View
+## The Model's Own View
 
-**Self-reported confidence.**
-You can ask the model for a confidence between 0 and 1 next to every value, and in the last post I did.
-It is free, and it is better than nothing.
-But studies of verbalized confidence find that the numbers models state in words tend to be overconfident,[^11] and in practice they cluster at a few round values (0.9, 0.95, 1.0).
-Post-trained models and reasoning models do somewhat better, but not well enough to decide on their own.
-I treat it as a weak feature and never as a decision.
-
-**Token log-probabilities.**
-Some APIs return the log-probability of every generated token.
-For extraction, the interesting tokens are the ones that spell the value, not the JSON around it, and the most informative statistic is the *minimum*: one uncertain digit is enough to make the whole number wrong.
-Two details matter.
-First, a value spread over several tokens (`(`, `48`, `6`, `)`) must be located by character offsets, not token by token.
-Second, when log-probabilities are not available, the feature must be recorded as *missing*, not as zero.
-A missing signal is information, and it must never be confused with a confident one.
-This happens more than you'd think: not every API exposes log-probabilities, and some providers don't offer them for their reasoning models.
-So the scorer must work with and without this feature, and the decision to auto-approve must not quietly depend on it.
-
-**Self-consistency.**
-Ask the same question several times with sampling and measure agreement.
-For open-ended answers this is a powerful idea,[^12] and its refined version (clustering answers by meaning, "semantic entropy") is one of the better hallucination detectors in the literature.[^13]
-For number extraction, I find it disappointing for the cost.
-If the model misreads a blurry digit, it tends to misread it the same way five times.
-Agreement among samples of one model measures stability, not correctness.
+**Self-reported confidence** (a 0–1 number) is free and better than nothing, but tends to be overconfident[^11] and clusters at a few round values — a weak feature, never a decision.
+**Token log-probabilities**, where available, are informative (one uncertain digit is enough to make the whole number wrong) but must be recorded as *missing*, never zero, when an API doesn't expose them.
+**Self-consistency** (sampling repeatedly) is a strong hallucination detector for open-ended answers,[^12] [^13] but disappointing for number extraction, since a misread digit tends to repeat the same way: it measures stability, not correctness.
 
 ## A Second Reader
 
-**Blind cross-read.**
-A *different* model reads the same row and column without seeing the first answer, and code compares the two values.
-In the simulation, it is the strongest single signal, and it is especially good against misreads and invented values.
-Its weakness is that models share blind spots.
-A large study of more than 350 LLMs found that when two models are both wrong, they often give the *same* wrong answer (60% of the time on one leaderboard dataset), and that more accurate models have *more* correlated errors, even across providers.[^14]
-Agreement between two strong models is good evidence, but it is not independence.
-A wrong-cell error, where both models are drawn to the same misleading column, is precisely the case where they tend to agree.
+A *blind cross-read* has a different model read the same cell without seeing the first answer; in the simulation it's the strongest single signal, especially against misreads and invented values.
+Its weakness: models share blind spots.
+A study of 350+ LLMs found that when two models are both wrong, they often give the *same* wrong answer, and more accurate models have *more* correlated errors.[^14]
+Agreement between two strong models is good evidence, but not independence, and is exactly where wrong-cell errors tend to occur.
 
-## Evidence on the Page
+## Evidence on the Page and in the Numbers
 
-**Layout and grounding.**
-This is the code from archetype C in the last post: is the value printed inside the box the model pointed to, is its row label next to it, and is the column header the right period?
-Grounding (printed in the box) is strong against misreads and invented values.
-The layout check (right row, right column) is what catches wrong-cell errors, the one failure that grounding alone waves through.
-Both are deterministic, cheap, and easy to explain to an auditor.
-
-## The Rules of Accounting
-
-Financial statements are full of identities, and identities are free error detectors.
-Assets equal liabilities plus equity.
-Subtotals equal the sum of their lines.
-Net debt equals gross debt minus cash.
-EBITDA equals operating profit plus depreciation and amortization.
-Signs follow conventions: interest expense is a cost, and revenue is not negative.
-A value that breaks an identity is not necessarily wrong (the *other* value in the identity may be the wrong one), but the pair deserves a look.
-The limitation is coverage: in the simulation, 8 of the 12 fields take part in at least one rule, and the other 4 get no help from this signal at all.
-
-## History and Context
-
-**The borrower's own history.**
-Compare each value with the same borrower's previous quarters, as a z-score or a ratio.
-A thousand-fold jump is almost always a scale error.
-But a legitimate business event (an acquisition, a write-down) also looks like an outlier, so history is a reason to review, never proof of an error.
-New borrowers have no history, which is, again, a missing signal and not a reassuring one.
-
-**Document context.**
-Whether the page is scanned, the image quality, and whether the template has been seen before don't point at a specific value.
-They shift the *base rate*: on a blurry scan of an unfamiliar template, every value is more likely to be wrong.
-The scorer should know that.
-
-**Process signals.**
-How the answer was produced is evidence too.
-A value that needed two retries, a JSON repair, or a fallback model is not the same as one that came back cleanly on the first call.
-Log every one of these events and feed the useful ones to the scorer.
-They also make great monitoring metrics later.
+**Layout and grounding**, from archetype C in the last post (is the value printed inside the box, is its row label next to it, the column header the right period) is strong against misreads and invented values, and catches wrong-cell errors, the one failure grounding alone waves through.
+**Accounting identities** give free error detectors: assets equal liabilities plus equity, subtotals equal their lines, net debt equals gross debt minus cash, EBITDA equals operating profit plus depreciation and amortization.
+A broken identity doesn't prove which value is wrong, but the pair deserves a look; in the simulation, 8 of 12 fields take part in at least one rule.
+**History and context**: comparing a value with the borrower's previous quarters catches scale errors, but a legitimate event (an acquisition, a write-down) also looks like an outlier, so history is a reason to review, never proof of error, and new borrowers have none.
+Document context (scanned or digital, known template) shifts the *base rate* rather than pointing at a value; process signals (retries, JSON repairs, fallback models) are evidence too.
 
 ## What Combining Buys You
 
-Here is what the simulation says when you use each signal alone, compared with all of them combined by the scorer of the next section.
-The coverage column is the share of values you could auto-approve while keeping the observed wrong auto-approval rate at or below 0.5% on the test set.
+Here is what the simulation says when you use each signal alone, compared with all of them combined by the scorer below; coverage is the share auto-approvable while keeping the observed wrong auto-approval rate at or below 0.5%.
 
 | Signal (simulated, test set)                        | AUROC | Coverage at 0.5% WAR |
 |-----------------------------------------------------|------:|---------------------:|
@@ -434,190 +250,109 @@ The coverage column is the share of values you could auto-approve while keeping 
 | Blind cross-read agrees                             |  0.82 |                 0.0% |
 | All signals, learned scorer with calibration        |  0.98 |                  88% |
 
-No single signal can isolate a group of values clean enough to meet a 0.5% target.
-Even when the cross-read agrees, a few percent of those values are still wrong (mostly wrong-cell errors where both readers fell into the same trap), and you can't separate them further with that signal alone.
-The log-probability looks weak overall, but that is partly because it is missing for 40% of the simulated documents: where the model exposes it, its AUROC is 0.85.
-Combined, the signals cover each other's blind spots, and the share of values you can automate jumps from almost nothing to 88%.
-
-That is the main lesson of this section.
-Don't look for the best signal.
-Look for signals that fail in *different* places.
+No single signal isolates a group of values clean enough to meet a 0.5% target; even cross-read agreement leaves a few percent wrong, mostly wrong-cell errors where both readers fell into the same trap.
+Combined, the signals cover each other's blind spots and coverage jumps to 88%.
+Don't look for the best signal; look for signals that fail in *different* places.
 
 # From Signals to a Probability
 
-Combining signals sounds like a job for hand-written rules: "auto-approve if grounded and the cross-read agrees and no rule fails."
-That works on day one, and I'd start there.
-It breaks down quickly, though, because the rules multiply, they interact, and nobody can say what probability of being right a given combination corresponds to.
-The cleaner design is a small learned model that turns the signals into one number, followed by a calibration step that makes the number mean something.
+Hand-written rules work on day one, but break down as they multiply and interact, with nobody able to say what probability a combination corresponds to.
+The cleaner design: a small learned model that turns signals into one number, followed by calibration that makes the number mean something.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/07-confidence-engine.drawio.svg" alt="Two lanes. Offline, once per release of the extraction model, prompt, or scorer: labeled values from the gold set, reviews, and random audits are split by borrower into train, calibration, and test; the scorer is trained as boosted trees with monotone constraints; an isotonic map per segment is fitted on the calibration split; thresholds are certified per tier with an upper bound below the target; and all three parts are released as one versioned policy bundle. A note says the test split is used once at the end to report coverage and wrong auto-approvals per tier. Online, for every extracted value: signals become features with missing signals kept missing; the same trees produce a score; the segment&#x27;s map produces a probability; route() checks that signals are present and that the probability clears the tier threshold, then auto-approves or sends the value to review with the reason. Dashed arrows show that the online path uses the same versions as the offline path." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 7. Inside the confidence engine. Everything that decides is learned offline on labeled data, released as one versioned bundle, and applied online without changes. Fit, calibration, certification, and testing each use their own data.
+    Figure 7. Inside the confidence engine. Everything that decides is learned offline on labeled data, released as one versioned bundle, and applied online without changes.
   </figcaption>
 </figure>
 
 ## The Scorer
 
-I use gradient-boosted trees for the scorer.
-They handle missing values natively, they capture interactions (a failed rule matters more on a scanned page), they train in seconds, and they can be constrained to behave in ways a validator can check.
-The inputs are the signals from the previous section: the grounding tier, whether the blind cross-read agrees, the number of failed accounting rules, the minimum log-probability, the distance from the borrower's history, the model's own confidence, and a few document features (quality, scanned or digital, known template, tier).
-The target is whether the value was right.
+I use gradient-boosted trees: they handle missing values natively, capture interactions, train in seconds, and can be constrained in ways a validator can check.
+Inputs are the signals above plus document features; the target is whether the value was right.
 
-Three design choices deserve a comment.
-
-**Monotone constraints.**
-For every signal, I declare the direction in which it is allowed to move the score.
-A better grounding tier can never *lower* the probability of being right, and a failed rule can never raise it.
-Without constraints, a flexible model will happily learn spurious patterns from a few thousand labels, like "values with exact grounding *and* a failed rule are fine," because that happened to be true in the training data.
-With constraints, the scorer's behavior matches what a domain expert would expect, and you can explain each signal's role in one sentence.
-The model's self-reported confidence gets no direction: it can be used, but the scorer is not forced to trust it.
-
-**Grouped splits.**
-A borrower's packs share a template, a layout, an accountant, and often the same mistakes.
-If one quarter of a borrower is in training and the next quarter is in test, the test score measures memory, not generalization.
-So the split is by borrower: every borrower lands in exactly one of training, calibration, or test.
-In the simulation, that means about 5,900 borrowers with four packs each, divided into training (50%), calibration (25%), and test (25%).
-In a real portfolio, I'd also split by *time*: train on older quarters, calibrate and test on newer ones, because that is how the system will be used.
-
-**Missing stays missing.**
-Log-probabilities and history arrive as missing values when they don't exist.
-The trees learn what "missing" means from data, which is much safer than filling with zeros (a "perfect" log-probability) or with averages.
+Three choices matter.
+**Monotone constraints**: a better grounding tier can never *lower* the score, and a failed rule can never raise it, so the scorer can't learn spurious patterns from a few thousand labels.
+**Grouped splits**: a borrower's packs share a template and often the same mistakes, so every borrower lands in exactly one of training, calibration, or test (about 5,900 borrowers split 50/25/25); in a real portfolio I'd also split by time.
+**Missing stays missing**: the trees learn what "missing" means from data, far safer than filling with zeros or averages.
 
 ## What Calibration Means
 
-The scorer outputs a number between 0 and 1.
-It is not yet a probability you can put into Chow's rule.
-A *calibrated* score is one where the number means what it says: among all values with a score of 0.99, about 99% are right; among all values with a score of 0.9, about 90% are right.
-It's the weather forecaster's property from the history section, applied to numbers in a PDF.
-
-The way to check it is a *reliability diagram*: bin the held-out values by predicted probability, and plot the observed share of correct values in each bin against the average prediction.
-A calibrated score sits on the diagonal.
+The scorer's output is not yet a probability for Chow's rule.
+A *calibrated* score is one where, among values scored 0.9, about 90% really are right, the weather forecaster's property applied to a PDF.
+The check is a *reliability diagram*: bin held-out values by predicted probability and plot the observed correct share; a calibrated score sits on the diagonal.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/08-reliability.svg" alt="Reliability diagram on held-out simulated values. The learned scorer with isotonic calibration follows the diagonal closely from 62% to 100%. The model&#x27;s self-reported confidence falls far below the diagonal: when it says 85%, it is right 42% of the time; when it says 90%, it is right 74% of the time; at 95% it is right 93% of the time; at 100% it is right 98% of the time." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 8. Self-reported confidence vs. a calibrated scorer (simulated). When the model says 90%, it is right 74% of the time. The calibrated scorer can be read as a probability. The bins narrow near 100% on purpose: that is where thresholds live.
+    Figure 8. Self-reported confidence vs. a calibrated scorer (simulated). When the model says 90%, it is right 74% of the time; the calibrated scorer can be read as a probability.
   </figcaption>
 </figure>
 
-In the simulation, the model's self-reported confidence says "1.0" for 61% of all values, and those values are right 98% of the time.
-That sounds fine until you put it into Chow's rule: a "certain" value that is wrong one time in fifty is far below the bar of 0.996 from the earlier example.
-The calibrated scorer, on the other hand, stays on the diagonal all the way into the tail.
-The usual summary statistic, the expected calibration error (ECE), is 0.032 for the self-reported confidence and 0.0011 for the calibrated scorer.
+In the simulation, the model's self-reported confidence says "1.0" for 61% of values, right only 98% of the time, far below the 0.996 bar from Chow's rule.
+The calibrated scorer stays on the diagonal into the tail (expected calibration error 0.0011 vs. 0.032).
 
-There are three standard ways to calibrate a score:
+Three standard methods: **Platt scaling** fits a two-parameter sigmoid, robust with little data but limited in shape.
+**Isotonic regression** fits any non-decreasing step function, more flexible but needs more data (past roughly a thousand examples).[^15]
+**Temperature scaling** divides a network's own logits by one learned constant,[^9] the right tool for calibrating a network's own outputs, not a separate scorer.
 
-- **Platt scaling** fits a sigmoid with two parameters. It is robust with little data, but it can only fix distortions that look like a sigmoid.
-- **Isotonic regression** fits any non-decreasing step function. It is more flexible but overfits small samples; scikit-learn's guide recommends it once there are more than about a thousand calibration examples.[^15]
-- **Temperature scaling** divides a neural network's logits by one learned constant.[^9] It is the right tool when you calibrate a network's own outputs, not a separate scorer like mine.
-
-With tens of thousands of labeled values per release, I use isotonic regression, fitted on the calibration split, separately for each segment that behaves differently.
-
-Why per segment?
-Because a scanned page and a digital page with the same raw score are not equally likely to be right, and a single calibration curve averages them into something true for neither.
-In the simulation, I calibrate digital and scanned values separately.
-In a real system, I'd consider segments for document type, language, and template family, each with enough labeled values to fit a curve.
-
-One rule matters here: a segment that was never seen during calibration gets a probability of zero.
-That's not pessimism; it's the system saying "I have no evidence about this kind of document," which routes every value from it to review.
-This is the confidence layer failing closed.
-
-A word of honesty about the scorer itself.
-Gradient boosting trained with log-loss is often close to calibrated on data that looks like its training data, and in the simulation the raw scorer was already good (ECE 0.0015 before calibration).
-The calibration step earns its keep elsewhere: it is fitted on data the scorer never saw, it can be refitted without retraining the scorer, and it adapts to each segment.
+With tens of thousands of labels, I use isotonic regression, fitted separately per segment (digital vs. scanned): a scanned page and a digital page with the same raw score aren't equally likely to be right, and one curve averages them into something true for neither.
+A segment never seen in calibration gets probability zero, routing every value from it to review.
 
 ## Calibration in the Tail
 
-ECE has a blind spot that matters here.
-It is an average over all values, and most values are easy.
-A scorer can have a tiny ECE and still be off exactly where you care: above 0.99, where the thresholds sit.
-Being off by half a percentage point at 0.5 is irrelevant; being off by half a percentage point at 0.996 doubles your error rate.
-
-So I always look at the reliability diagram with narrow bins near 1, as in Figure 8, and I check the number of values in each of those bins.
-If the top bins have a few hundred values, the calibration there is a guess.
-That observation leads directly to the next question: if the probability itself is estimated from limited data, how do you choose a threshold you can stand behind?
+Expected calibration error is an average over all values, and most values are easy.
+A scorer can have a tiny overall error and still be off exactly where thresholds sit, above 0.99, where half a point of error doubles your real error rate.
+So I always check the reliability diagram with narrow bins near 1, and the number of values in each: if the top bins hold only a few hundred, the calibration there is a guess.
 
 # Choosing the Threshold
 
-With a calibrated probability for every value, one decision is left: where to draw the line.
-There are two ways to think about it, and a bank needs both.
-The first is economic: which threshold minimizes the total cost?
-The second is about risk: which threshold lets you make a promise about the error rate, and keep it?
+With a calibrated probability for every value, one decision remains: where to draw the line.
+A bank needs both an economic answer and a risk answer.
 
 ## Option 1: Price It
 
-Chow's rule from earlier gives the threshold directly from two costs.
-Figure 9 shows what it means for the whole portfolio of simulated values: the expected cost of every possible policy, relative to reviewing everything.
+Chow's rule gives the threshold directly from two costs.
+Figure 9 shows the expected cost of every policy across the simulated portfolio, relative to reviewing everything.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/09-expected-cost.svg" alt="Expected cost of a policy relative to reviewing every value, as a function of coverage, for three costs of an undetected error with a review cost of 4 euros. At 200 euros per error, the minimum is at 82% coverage and 31% of the cost of full review. At 1,000 euros, the minimum is at 64% coverage and 58% of the cost. At 5,000 euros, the minimum is at 23% coverage and 91% of the cost. Beyond the minimum, each curve rises steeply above the cost of reviewing everything." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 9. The cheapest threshold depends on what an error costs (simulated). With a €4 review, automation cuts total cost to 31% if an undetected error costs €200, but only to 91% if it costs €5,000. Past the minimum, every curve climbs fast: automating too much is more expensive than not automating at all.
+    Figure 9. The cheapest threshold depends on what an error costs (simulated): automation cuts total cost to 31% at €200 per error, but only to 91% at €5,000.
   </figcaption>
 </figure>
 
-Three things stand out.
-First, the optimal coverage moves a lot with the cost of an error: from 82% of values at €200 per error, to 64% at €1,000, to 23% at €5,000.
-Second, the curves are flat near their minimum and very steep after it, so erring on the side of *less* automation is cheap, and erring on the side of more is expensive.
-Third, at high error costs, the whole exercise saves little; a confidence layer is not magic, and for some fields the honest answer is "review them all."
+The optimal coverage moves a lot with the cost of an error: 82% of values at €200 per error, 64% at €1,000, 23% at €5,000.
+The curves are flat near their minimum and steep after it, so under-automating is cheap and over-automating is expensive; at high error costs the whole exercise saves little.
 
-In practice, the cost of an error is not one number.
-A wrong EBITDA in a covenant test can hide a breach and delay a conversation the bank needed to have; a wrong headcount in an analytics table costs almost nothing.
-That's why I group fields into *tiers* by the cost of an undetected error and give each tier its own threshold.
-In the simulation, tier 1 holds the four covenant inputs, tier 2 four values used in credit memos, and tier 3 four values used for analytics.
-Ask the business for the cost of an error per tier.
-A range is fine; the shape of Figure 9 makes the answer robust to rough estimates.
+Since the cost of an error isn't one number (a wrong covenant EBITDA matters far more than a wrong headcount), I group fields into *tiers* by the cost of an undetected error and certify a threshold per tier (tier 1 covenant inputs, tier 2 credit-memo values, tier 3 analytics).
 
 ## Option 2: Promise It
 
-A risk officer will rarely ask what the threshold costs.
-They will ask what you can *promise*.
-And "the scorer says 0.996" is not a promise; it's an estimate from finite data.
-The promise I want to be able to make sounds like this:
+A risk officer rarely asks what the threshold costs; they ask what you can *promise*.
+"The scorer says 0.996" is an estimate from finite data, not a promise like:
 
 > With 95% confidence, at most 0.3% of the tier-1 values we auto-approve are wrong.
 
-That sentence has two numbers: the target error rate (0.3%) and the confidence that we meet it (95%).
-To back it up, you need an *upper bound* on the error rate among the values a threshold accepts, not just the observed rate.
-The classic tool is the Clopper–Pearson bound for a binomial proportion:[^16] if you accepted $$n$$ values and found $$k$$ errors, the true error rate is below the bound with the confidence you chose.
+That needs an *upper bound* on the error rate among accepted values, not just the observed rate.
+The classic tool is the Clopper–Pearson bound for a binomial proportion:[^16] with $$n$$ accepted values and $$k$$ errors, the true rate is below the bound at the chosen confidence.
+A useful special case, the *rule of three*: zero errors in $$n$$ values gives a 95% upper bound of about $$3/n$$, so zero in 3,000 supports "below 0.1%," and zero in 300 only "below 1%."
 
-A useful special case is the *rule of three*: if you observe zero errors in $$n$$ values, the 95% upper bound is about $$3/n$$.
-Zero errors in 3,000 values supports a claim of "below 0.1%."
-Zero errors in 300 supports only "below 1%," however clean the sample looked.
+Certification checks 25 candidate thresholds, computing the upper bound on the calibration split for each, and keeps the most lenient one whose bound still meets the target; if none qualifies, nothing is certified and nothing in that tier is automated.
 
-Certification checks a fixed grid of 25 candidate thresholds, from strict to lenient.
-For each one, it counts the accepted values and the errors among them on the calibration split, computes the upper bound, and keeps the most lenient threshold whose bound still meets the target.
-If no threshold qualifies, nothing is certified, and nothing in that tier is automated.
-
-Two details make this correct rather than merely plausible.
-
-**The grid is fixed before looking at the data.**
-If you scan every possible threshold and pick the best-looking one, you are testing hundreds of hypotheses and reporting the luckiest, and the 95% stops being 95%.
-Certification tests 25 candidates fixed in advance and splits the error budget among them (each test runs at 0.05/25, a Bonferroni correction), so the 95% holds simultaneously for all of them.
-This is the recipe of *selection with guaranteed risk*,[^3] and an instance of the more general *Learn then Test* framework, which also offers sharper procedures than Bonferroni.[^8]
-I start with Bonferroni because it is the version I can explain to a validator on a whiteboard.
-
-**Certification uses its own data.**
-The thresholds are certified on the calibration split, and the numbers I report come from the test split, which nothing else has touched.
-Reusing the scorer's training data for certification would make every bound optimistic.
-
-Figure 10 shows what the promise costs.
+Two details matter: **the grid is fixed before looking at the data** (scanning every threshold and picking the best-looking one tests hundreds of hypotheses and reports the luckiest, so certification splits the error budget across the 25 fixed candidates, each at 0.05/25, a Bonferroni correction, so the 95% holds simultaneously for all of them)[^3] — *Learn then Test* offers sharper procedures,[^8] but Bonferroni is the version I can explain to a validator on a whiteboard — and **certification uses its own data**: thresholds are certified on the calibration split, and reported numbers come from the untouched test split.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/10-threshold-guarantee.svg" alt="Wrong auto-approval rate against coverage on simulated calibration data, with a 0.2% target. The observed rate stays below 0.2% up to 66% coverage. The upper bound at each of the 25 candidate thresholds lies above the observed curve, and the most lenient threshold whose bound stays below the target gives 43% coverage." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 10. A guarantee costs coverage (simulated). Picking the threshold where the observed rate hits the 0.2% target would automate 66% of the values. Requiring the upper bound to stay below the target automates 43%. The gap is the price of a promise you can defend.
+    Figure 10. A guarantee costs coverage (simulated). The threshold where the observed rate hits target would automate 66%; requiring the upper bound to clear it automates 43%.
   </figcaption>
 </figure>
 
-With a single global target of 0.2%, the observed error rate on the calibration data stays under the target up to 66% coverage.
-A naive threshold placed there would only be right on average: on the next batch of documents, the real rate would land above 0.2% about half the time, and probably more often, because the best-looking point on a noisy curve is an optimistic one.
-The certified threshold automates 43%: 30,398 accepted values with 36 errors (0.12%), whose upper bound is just under 0.2%.
-The 23 points of coverage between the two are not waste.
-They are the margin that turns an estimate into a commitment.
+With a single global target of 0.2%, the observed error rate stays under target up to 66% coverage, but a threshold placed there is right only on average, and the next batch would exceed 0.2% about half the time.
+The certified threshold, requiring the upper bound to clear the target, automates 43% instead (30,398 values, 36 errors, 0.12%, bound just under 0.2%); the missing 23 points of coverage are the price of a promise you can defend.
 
-With one threshold per tier, the simulated system looks like this on the untouched test split:
+With one threshold per tier, the simulated system on the untouched test split:
 
 | Tier (simulated)        | Target WAR | Certified threshold | Coverage on test | Observed WAR on test |
 |-------------------------|-----------:|--------------------:|-----------------:|---------------------:|
@@ -625,76 +360,35 @@ With one threshold per tier, the simulated system looks like this on the untouch
 | 2: credit memo values   |       0.5% |              0.9841 |              81% |                0.30% |
 | 3: analytics values     |       1.0% |              0.9437 |              91% |                0.83% |
 
-Overall, 81% of the values are auto-approved, and every tier stays below its target, with room to spare in tiers 1 and 2.
-That room is not an accident: the bound is conservative by design, and the guarantee is only worth something if it holds on bad days too.
+Overall, 81% of the values are auto-approved, with every tier inside its target.
 
 ## Where Conformal Prediction Fits
 
-If you have read about conformal prediction, you may recognize the structure: hold out calibration data, compute a statistic on it, and set a threshold so that a guarantee holds for new data.[^17]
-The family has grown well beyond prediction sets.
-Its extensions bound the error rate among accepted values directly, and recent work applies the same idea to decide when a language model should answer or say "I don't know."
-
-All of these rest on the same assumption: *exchangeability*.
-Roughly, the new documents must look like the calibration documents, in the statistical sense of being drawn from the same process.
-That is the fine print of every guarantee in this post.
-A new template, a new model version, or a wave of documents from a new market breaks it.
-I'll come back to that in the section on production.
+This is the structure of conformal prediction: hold out calibration data, compute a statistic on it, and set a threshold so a guarantee holds for new data.[^17]
+All of it rests on *exchangeability* — new documents must look like the calibration ones, statistically; a new template, model version, or market wave breaks that, which I return to in the production section.
 
 ## Averages Hide Segments
 
-There is a second piece of fine print, and it's easy to miss.
-The guarantee is about the *average* over everything in a tier.
-In the simulation, tier 3 met its 1% target overall (0.83%).
-But inside tier 3, the auto-approved values from scanned documents were wrong 1.9% of the time, almost double the target, while digital ones were at 0.55%.
-Nothing was broken.
-The math promised an average, and it delivered an average.
+The guarantee is about the *average* over a tier.
+In the simulation, tier 3 met its 1% target overall (0.83%), but inside it scanned auto-approvals were wrong 1.9% of the time, almost double target, against 0.55% for digital; nothing was broken, the math promised an average and delivered one.
 
-If scanned documents matter on their own (and in a bank, a segment often has its own owner, process, or regulatory angle), you must certify them on their own, with one threshold per tier *and* segment.
-In the simulation, that has a sobering effect: with about 6,000 calibration values per tier for scans, no threshold can be certified for scanned documents at all.
-The observed error rates are fine, but there isn't enough data to prove it at 95% confidence.
-Value-level automation drops from 81% to 67%, and every scanned value goes to people.
+If a segment matters on its own, it must be certified on its own.
+With about 6,000 calibration values per tier for scans, no threshold can be certified for scanned documents at all, and value-level automation drops from 81% to 67% as every scanned value goes to people — turning a vague debate ("are we ready to automate scans?") into a concrete plan for how many labeled scans to collect.
 
-I like this result.
-It is the confidence layer saying "I don't know" about an entire segment, and it is the right answer until you have labeled enough scans.
-It also turns a vague debate ("are we ready to automate scans?") into a concrete plan: how many labeled scanned values do we need for a certificate, and how long will it take to collect them?
-
-# The “I Don’t Know” Path
+# The "I Don't Know" Path
 
 A threshold is just a number until something acts on it.
-The routing function is where the confidence layer meets the rest of the pipeline, and it is the part I'd want a validator to read first.
-It should be short, boring, and impossible to misread.
-Mine checks four things in order: are all the required signals present (grounding, cross-read, accounting rules)? Is the probability a valid number between 0 and 1? Does the value's tier have a certified threshold? Does the probability clear it?
-A single "no" sends the value to review; four "yes" answers auto-approve it.
+The routing function should be short, boring, and impossible to misread: are the required signals present? Is the probability valid? Does the tier have a certified threshold? Does it clear it?
+One "no" sends the value to review; four "yes" answers auto-approve it.
 
-The design choices are the same ones I argued for in the last post, now applied to confidence.
-
-**Every decision comes with a reason.**
-The router never returns a bare "no."
-It returns *why*: a missing signal, an invalid score, no certified threshold for the tier, or a probability below the bar (with both numbers).
-The reason travels with the value into the review queue, into the audit log, and into the monitoring dashboards.
-"Why is this value here?" is the first question every reviewer asks, and the answer should be on the screen.
-
-**Anything unusual fails closed.**
-If a required signal is missing (the cross-read timed out, the grounding step crashed), the value goes to review, whatever its score.
-If the score is outside 0 to 1, it goes to review.
-If a tier has no certified threshold, because the certification found nothing it could promise, every value in that tier goes to review.
-In the simulation, a tier-1 value with a probability of 0.999 but no cross-read result is routed with the reason `missing signal: cross_read_agrees`.
-The scorer may know how to handle missing features, but the *policy* shouldn't auto-approve on evidence it was told to require.
-
-**The policy is a frozen, versioned object.**
-The thresholds are immutable, and in production it is loaded from the same bundle as the scorer and the calibrator.
-A threshold without the scorer it was certified for is meaningless, and the code shouldn't make it possible to mix them.
-
-**Documents are routed after values.**
-A pack flows straight through only if *every* tier-1 value was auto-approved.
-This is where Figure 2 comes back: in the simulation, 81% of values are auto-approved, but only 43% of packs pass straight through, because each pack has four tier-1 values and all four must clear the strictest threshold.
-When someone asks why automation "only" reaches 43%, that is the answer, and the lever is the tier-1 threshold, not the average.
+**Every decision comes with a reason** that travels into the queue, the audit log, and the dashboards.
+**Anything unusual fails closed**: a missing signal, an out-of-range score, or a tier with no certified threshold all route to review regardless of the score.
+**The policy is a frozen, versioned object**, loaded from the same bundle as the scorer and calibrator.
+**Documents are routed after values**: a pack flows straight through only if *every* tier-1 value was auto-approved — this is Figure 2 again: 81% of values are auto-approved, but only 43% of packs pass straight through, since each pack has four tier-1 values and all must clear the strictest threshold.
 
 ## One Pack, End to End
 
-To make this concrete, here is one pack from the simulated test set, followed through the layer.
-It is a clean digital document from a known template, the kind you would expect to sail through.
-I gave the twelve simulated fields realistic names.
+Here is one simulated pack followed through the layer, a clean digital document from a known template, the kind expected to sail through.
 
 | Value                  | Tier | What the signals said                                                                                             |     p | Decision                    | Truth                          |
 |------------------------|:----:|-------------------------------------------------------------------------------------------------------------------|------:|-----------------------------|--------------------------------|
@@ -706,338 +400,154 @@ I gave the twelve simulated fields realistic names.
 | Dividends paid         |  3   | Numeric match on the page, cross-read agrees, no rule covers it; self-reported confidence 1.0                     | 0.966 | Auto-approve: above 0.9437  | Wrong: last year's column      |
 | Six other values       | 2–3  | Every signal agrees                                                                                               |  ≥0.996 | Auto-approve              | Correct                        |
 
-Three things happen in this one pack, and together they summarize the post.
-
-The operating cash flow error is caught easily.
-The model was 95% sure of itself, but three independent signals disagreed with it, and the scorer gave it essentially no chance of being right.
-That is the confidence layer working as intended.
-
-EBITDA goes to review even though it is correct, because the second reader got it wrong.
-That's the price of caution: a reviewer will re-key it blind, the two readings will match, and the value goes through with a label that says the cross-reader erred, which is useful training data.
-And because EBITDA is a tier-1 value, the whole pack waits for that review instead of flowing straight through.
-
-The dividends value is the interesting one.
-It has *the same* calibrated probability as EBITDA, 0.966, and gets the opposite decision, because it sits in tier 3, where an error is cheap and the threshold is lower.
-And it is wrong: a wrong-cell error where both readers took last year's figure, and no accounting rule covers the field.
-This is not a bug.
-It is what a 1% error budget looks like from the inside: about one auto-approved tier-3 value in a hundred will be wrong, and this is one of them.
-If that is not acceptable for dividends, the answer is to move the field to a stricter tier, or to add a layout check that confirms the column header, not to hope the next pack is luckier.
+Three things happen here, and together they summarize the post.
+The operating cash flow error is caught easily: the model was 95% sure, but three signals disagreed, and the scorer gave it essentially no chance.
+EBITDA goes to review even though it's correct, because the second reader disagreed (the price of caution), and the whole pack waits since it's tier 1.
+The dividends value shares EBITDA's 0.966 probability but gets the opposite decision, since tier 3's threshold is lower, and it's wrong, a wrong-cell error no accounting rule covers.
+That's what a 1% error budget looks like from the inside; if that's unacceptable for dividends, move the field to a stricter tier rather than hope the next pack is luckier.
 
 ## Three Outcomes, Not Two
 
-It is tempting to think of abstention as a binary: approve or review.
-In practice, I need three outcomes.
-
-1. **Auto-approve.** The value is stored with its full lineage: page, box, both readings, the probability, and the policy version.
-2. **Review.** A person decides, with the evidence and the reason on screen.
-3. **Reject.** The *document* is unusable (illegible, incomplete, the wrong period), and the right action is to ask the borrower for a better copy.
-
-The third outcome matters because of the distinction between page problems and reader problems.
-Sending a blurry scan to a reviewer just moves the guessing from a model to a person.
-A reviewer facing an illegible number, with no easy way to escalate, is likely to type a best guess.
-So make rejection a first-class button.
+Abstention isn't binary: I need three outcomes: **auto-approve** (stored with full lineage), **review** (a person decides, with evidence and reason on screen), and **reject** (the document is unusable; the right action is asking the borrower for a better copy).
+Rejection matters because sending a blurry scan to a reviewer just moves the guessing from a model to a person.
 
 ## The Queue Is a Product
 
-Once abstention is routine, the review queue becomes a production system with its own design questions.
+Once abstention is routine, the review queue is a production system with its own design questions.
 
-**Priority.**
-Not all doubtful values are equally urgent.
-I sort by materiality times doubt: a covenant input with a probability of 0.9 comes before an analytics value with 0.5, and anything blocking a covenant test comes first.
-
-**Capacity.**
-Queues obey Little's law: the average number of items waiting equals the arrival rate times the average time each one waits.
-Suppose (illustratively) the bank receives 400 packs a day with 12 values each.
-At 81% coverage, about 900 values a day go to review.
-At 20 seconds per value, that's 5 reviewer-hours a day, and if each value should wait half a day on average, about 450 values sit in the queue at any time.
-Compliance packs arrive in waves after each reporting date, so plan for the peak, not the average.
-
-**Who reviews what.**
-Not every reviewer is equally good at every task.
-The research on *learning to defer* treats the human as part of the model and decides whom to send each case to, taking their skills into account.
-The practical version is simpler: route scans to people who are good with scans, route new templates to people who can update the template library, and measure each queue separately.
-
-**Never let the queue move the threshold.**
-When the queue overflows at quarter-end, someone will suggest lowering the threshold "just for this week."
-Don't.
-The threshold is a risk decision with a certificate behind it; the queue length is an operations problem.
-If capacity is short, the answers are more reviewers, a longer service level, or a smarter priority, not a weaker promise.
-I'd put this rule in writing before the first peak, because nobody makes good risk decisions at 6 p.m. on the last day of a reporting cycle.
+**Priority**: sort by materiality times doubt, with anything blocking a covenant test first.
+**Capacity**: queues obey Little's law; (illustratively) 400 packs a day with 12 values each, at 81% coverage, puts about 900 values a day into review, 5 reviewer-hours at 20 seconds each, with about 450 values in the queue at a half-day target wait.
+**Who reviews what**: route scans to people good with scans, new templates to people who can update the template library, and measure each queue separately.
+**Never let the queue move the threshold**: a queue overflow is an operations problem, solved with more reviewers or priority, never a weaker promise.
 
 # Designing the Human Side
 
-Everything so far assumes that a value sent to review gets *reviewed*.
-That assumption is the weakest link in most human-in-the-loop systems, and it fails in a predictable way.
-
-People who supervise automation tend to over-trust it.
-The research literature calls this *automation bias*: the tendency to accept a machine's suggestion without checking it properly, which gets stronger as the machine gets more reliable and the operator gets busier.[^18]
-It is well enough established that the EU AI Act names it explicitly: providers of high-risk systems must enable the people who oversee them to stay aware of their tendency to over-rely on the system's output.[^19]
-A review step that rubber-stamps whatever the model said provides the *appearance* of oversight with none of the substance.
-So the review interface is not a detail; it's a control.
+Everything so far assumes a value sent to review gets *reviewed*, the weakest link in most human-in-the-loop systems.
+People who supervise automation tend to over-trust it: the literature calls this *automation bias*, which gets stronger as the machine gets more reliable and the operator gets busier.[^18]
+The EU AI Act names it explicitly, requiring that overseers of high-risk systems stay aware of their tendency to over-rely on the system.[^19]
+A review step that rubber-stamps the model's output gives the *appearance* of oversight with none of the substance.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/11-review-modes.drawio.svg" alt="Three panels. Confirm mode: the reviewer sees the page crop with the value highlighted and the model&#x27;s reading, minus 486, and clicks Correct or Edit; fast, but the shown value anchors the reviewer, and the better the system gets the less people look; use for low-tier values and high-volume queues. Blind mode: the reviewer types EBITDA as printed without seeing the model&#x27;s value; code compares the two; a match approves, a mismatch goes to a second reviewer; slower but independent; use for tier-1 values, new templates, and audits. Canaries: a generator takes confirmed values and breaks them by flipping the sign, swapping a digit, or using last year&#x27;s column, and injects them into 1 to 2% of queue items; caught canaries show the reviewer is looking; missed ones are counted per reviewer; a note explains threat image projection in airport security; canaries never reach the database." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 11. Two ways to review a value, and a way to know reviewers are still looking. Confirm mode is fast but invites anchoring. Blind mode is slower but turns the reviewer into an independent second reader. Canaries measure whether the human layer still works.
+    Figure 11. Confirm mode is fast but invites anchoring; blind mode is slower but turns the reviewer into an independent second reader; canaries measure whether the human layer still works.
   </figcaption>
 </figure>
 
 ## Confirm or Re-Key
 
-There are two basic ways to review an extracted value.
-
-In *confirm mode*, the reviewer sees the model's value next to the highlighted page and clicks "correct" or "edit."
-It is fast, and it is what most tools do by default.
-Its weakness is that the value on the screen anchors the reviewer.
-When the model is right 99% of the time, "correct" becomes a reflex.
-
-In *blind mode*, the reviewer sees the page with the box highlighted, but not the model's value, and types what they read.
-Code compares the two.
-A match is approved; a mismatch goes to a second reviewer or an adjudicator.
-It is slower, because typing is work, but it turns the reviewer into a genuinely independent second reader.
-
-This is not a new debate.
-It is the old question of how to check manually entered data, and it has been studied in controlled experiments.
-In one, 195 participants were randomly assigned to single entry, visual checking (comparing the entry against the paper), or double entry (typing everything twice and resolving mismatches).
-Double entry produced significantly fewer errors, and visual checking was not significantly better than doing no checking at all.
-Confirm mode is visual checking with a nicer interface.
-
-So I use both modes, deliberately:
-
-- **Blind mode** for tier-1 values, for new templates, and for every random audit.
-- **Confirm mode** for low-tier values where speed matters more and an occasional miss is cheap.
+In *confirm mode*, the reviewer sees the model's value next to the page and clicks correct or edit: fast, but the value anchors the reviewer, and "correct" becomes a reflex.
+In *blind mode*, the reviewer sees only the page and types what they read, and code compares the two: slower, but a genuinely independent second reader.
+This mirrors controlled experiments on manually entered data: double entry produced significantly fewer errors than visual checking, which was no better than no checking at all.
+So I use **blind mode** for tier-1 values, new templates, and every random audit, and **confirm mode** where speed matters more and an occasional miss is cheap.
 
 ## The Prevalence Trap
 
-There is a second, subtler effect.
-Humans are much worse at finding things that are rare.
-In visual search experiments, observers looking for targets that appeared in only a small fraction of trials missed them far more often than when the same targets were common.[^20]
-Airport security has known this for a long time: real threats are so rare that screeners would otherwise almost never see one.
-
-The confidence layer helps here, and it's an argument I rarely hear for it.
-By routing only doubtful values to people, it *concentrates* errors in the review queue.
-In the simulation, 5.7% of all values are wrong, but 27% of the values in the review queue are wrong, and those 19% of values that go to review contain 93% of all the errors.
-A reviewer who knows that one value in four is wrong looks differently from one who knows that one in twenty is.
-
-But the same logic works against you in the random audits.
-Audited values are drawn from the *auto-approved* ones, where the error rate is a fraction of a percent.
-That is the worst possible setting for human attention: a reviewer can audit hundreds of correct values in a row.
-Audits must therefore be blind, and they need canaries.
+Humans are much worse at finding rare things: in visual search experiments, targets appearing in only a small fraction of trials are missed far more often than common ones.[^20]
+The confidence layer helps here: by routing only doubtful values to people, it *concentrates* errors in the queue.
+In the simulation, 5.7% of all values are wrong, but 27% of queued values are wrong, and 19% of values sent to review contain 93% of all errors.
+The same logic works against you in random audits, though: audited values come from the auto-approved pool, where the error rate is tiny, so audits must be blind, and they need canaries.
 
 ## Canaries
 
-Airport security has a technique for exactly this problem.
-*Threat image projection* inserts pre-recorded images of threat items into the X-ray images of real bags, so that screeners regularly encounter targets and the system can measure whether they catch them.
-Regulators in many countries mandate it, and the data is used to assess the performance of individual screeners.
-
-The same idea works for review queues.
-A *canary* is a value that the system knows is wrong, injected into the queue on purpose.
-To make canaries useful:
-
-- **Make them realistic.** Generate them from values a person has already confirmed, using the failure modes of Figure 5: flip the sign, swap a digit, take last year's column, scale by 1,000. A canary that looks like a canary only measures canary detection.
-- **Keep them rare but steady.** One or two percent of the items is enough to measure a catch rate per reviewer over a few weeks without wasting much time.
-- **Give feedback.** Tell the reviewer when they catch or miss a canary. Feedback is part of what keeps people engaged, and it turns the canary into training.
-- **Make them impossible to store.** A canary must never reach the database. Tag it at creation, filter it before every write, and test that filter like any other control. A canary that leaks into a covenant test is a self-inflicted incident.
-
-The canary catch rate is the metric that tells you whether the human layer of your system is working.
-If it drops, the labels coming out of the review queue are no longer trustworthy, and neither is anything you trained or certified on them.
+Airport security's *threat image projection* inserts pre-recorded threat images into real bags so screeners regularly encounter targets and their catch rate can be measured; a *canary* does the same for review queues, a value the system knows is wrong, injected on purpose.
+To make canaries useful: **make them realistic** (generate from confirmed values using the failure modes of Figure 5); **keep them rare but steady** (1–2% of items); **give feedback** when caught or missed; and **make them impossible to store**, tagged and filtered before every write.
+The canary catch rate tells you whether the human layer is still working.
 
 ## What the Reviewer Should See
 
-Should the reviewer see the model's probability?
-My answer is no.
-Show the *reason* and the *evidence* instead: "cross-read disagrees: 1,836 vs. 1,886," "fails rule: net debt ≠ gross debt − cash," "no text layer; value read from a scan."
-A number invites anchoring ("0.97, probably fine").
-A reason invites a check, because it tells the reviewer what to look at.
-
-Finally, attention is a finite resource, and checking long sequences of mostly correct items wears it down.
-Classic vigilance experiments found that people's detection rates in monotonous monitoring tasks drop noticeably after about half an hour, and sustained attention is hard mental work, not a passive state.
-Short sessions, breaks, and mixing review modes are not perks.
-They are part of the error budget.
+Not the model's probability, which invites anchoring ("0.97, probably fine"); show the *reason* and the *evidence* instead ("cross-read disagrees: 1,836 vs. 1,886"), which invites a check.
+Attention is finite: detection rates in monotonous monitoring drop noticeably after about half an hour, so short sessions and mixing review modes are part of the error budget, not a perk.
 
 # Where the Truth Comes From
 
-Every number in this post (the calibration curves, the certified thresholds, the error rates) depends on labels: values that someone confirmed as right or wrong.
-In a simulation, the truth is free.
-In production, it has to be collected, and *how* it is collected decides what it can tell you.
+Every number in this post depends on labels: values someone confirmed as right or wrong.
+In a simulation, truth is free; in production it must be collected, and *how* decides what it can tell you.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/12-sources-of-truth.drawio.svg" alt="Values in production pass a threshold decision. Auto-approved values are sampled for a random audit with a known sampling rate and blind re-keying, which gives an unbiased estimate of wrong auto-approvals. Doubtful values go to the review queue, producing reviewer decisions: plenty of labels, all from the doubtful side, good for training but not for measuring the error rate of auto-approvals. Canaries, known-wrong values injected into the review queue, measure the reviewers rather than the model. A gold set of reference documents keyed twice feeds offline evaluation, a stable yardstick that is curated and has label errors of its own. Downstream corrections, such as restatements and analyst fixes, are late and partial: an alarm rather than a meter." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 12. Where labels come from, and what each source can tell you. Only random audits measure the error rate of what was auto-approved. Every other source is biased in a known direction, which is fine as long as you use it for the right job.
+    Figure 12. Where labels come from. Only random audits measure the error rate of what was auto-approved; every other source is biased in a known direction.
   </figcaption>
 </figure>
 
 ## Review Decisions Are Biased by Design
 
-The review queue produces the most labels by far.
-It's tempting to use them for everything, including measuring how well the system performs.
-But they only exist for values the scorer *doubted*.
-You never see a review label for a value that was auto-approved, which is precisely the population whose error rate you need to know.
-
-This is known as the *selective labels problem*: when a decision determines which outcomes get observed, the observed outcomes can't evaluate the decision.[^21]
-It shows up in lending (you only see defaults for loans you approved), and it shows up here.
-Review labels are excellent for training the next scorer, because they are rich in hard cases.
-They are useless for estimating the wrong auto-approval rate.
+Review labels are the most abundant, but they only exist for values the scorer *doubted*, never for auto-approved ones, which is exactly the population whose error rate you need.
+This is the *selective labels problem*:[^21] when a decision determines which outcomes get observed, the observed outcomes can't evaluate the decision.
+Review labels are excellent for training the next scorer, useless for estimating the wrong auto-approval rate.
 
 ## Random Audits Are the Only Meter
 
-To measure the error rate among auto-approved values, you need to look at a *random sample* of them, re-keyed blind, with canaries mixed in.
-Random means drawn with a known probability, independent of the score.
-If you sample some strata more heavily than others (tier 1 at 2%, tier 3 at 0.5%, say), weight each audited value by the inverse of its sampling probability when you combine them; that's the Horvitz–Thompson estimator, and it keeps the estimate unbiased.
-Simpler still: report each stratum separately and never pool them.
-
-How many audits do you need?
-The same upper bound that certified the threshold answers this question in reverse.
-For a target rate and a number of errors you expect to find, it gives the smallest sample that still lets you claim the target with 95% confidence.
+Measuring the auto-approved error rate needs a *random* sample, re-keyed blind, with canaries mixed in.
+If strata are sampled at different rates, weight each by the inverse sampling probability (Horvitz–Thompson), or report each stratum separately.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/13-audit-sample-size.svg" alt="Log-log chart of the number of randomly audited auto-approvals needed to certify a wrong auto-approval rate below a target with 95% confidence, for zero, one, and two wrong values found. At a 0.1% target: 2,995, 4,742, and 6,294 audited values. The required sample falls in proportion to the target: about 300, 473, and 628 at 1%." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 13. How many audits does a guarantee need? To claim a wrong auto-approval rate below 0.1% with 95% confidence, you need about 3,000 clean audited values; each wrong value you find raises the bar by roughly another 1,500 to 1,750. Exact Clopper–Pearson calculation.
+    Figure 13. To claim a wrong auto-approval rate below 0.1% with 95% confidence, you need about 3,000 clean audited values; each wrong value found raises the bar by roughly 1,500 to 1,750 more.
   </figcaption>
 </figure>
 
-The numbers are sobering, and they are worth showing to stakeholders early.
-To claim "below 0.1%" with 95% confidence, you need about 3,000 audited values without a single error.
-Find one error, and you need about 4,700; find two, about 6,300.
-At a target of 1%, the same claims need about 300, 470, and 630.
-The required sample scales roughly with one over the target, so every halving of the target doubles the audit bill.
-
-That makes audits a planning item, not an afterthought.
-I'd ask for audit capacity in the right currency: not "2% of volume," but "3,000 tier-1 values per quarter," because that is what the claim needs regardless of volume.
-And the claim you make in the model documentation should be the one your audit budget can support.
+The same upper bound that certifies a threshold tells you the sample size you need: about 3,000 clean audited values to claim "below 0.1%" with 95% confidence; find one error and you need about 4,700, find two, about 6,300.
+At a 1% target the numbers are about 300, 470, and 630; every halved target roughly doubles the audit bill.
+Ask for audit capacity in the right currency, "3,000 tier-1 values per quarter," not "2% of volume."
 
 ## The Gold Set Has Errors Too
 
-The gold set from the last post (reference documents whose values were confirmed by people) is the stable yardstick for comparing versions offline.
-Two caveats.
-It is curated, so it is not representative of production, and it should never be used to estimate production error rates.
-And it contains errors of its own.
-Even famous machine learning benchmarks do: one study found label errors in at least 3.3% of the test examples on average, across ten popular datasets.[^22]
-If your gold set was keyed once, by one person, in confirm mode, assume it has errors.
-Key it twice, blind, and adjudicate every disagreement.
+The gold set from the last post is a stable yardstick for comparing versions offline, but it's curated (never use it to estimate production error rates) and has errors of its own: one study found label errors in at least 3.3% of test examples across ten popular ML benchmarks.[^22]
+If it was keyed once, by one person, assume it has errors; key it twice, blind, and adjudicate disagreements.
 
 ## Corrections From Downstream
 
-The last source is the one that arrives on its own: a borrower restates last quarter, an analyst corrects a value in the credit memo, a covenant calculation gets challenged.
-Each of these is a free audit result.
-But they are late, and they are biased toward errors that someone happened to notice, which are usually the big ones.
-Treat them as a smoke alarm, not a meter: every hit deserves a root-cause analysis (which signal should have caught it, and why didn't it?), but the count tells you little about the rate.
+Restatements and analyst corrections are free audit results that arrive on their own, but late and biased toward the errors someone happened to notice.
+Treat them as a smoke alarm, not a meter: every hit deserves a root-cause analysis, but the count tells you little about the rate.
 
 # Keeping the Promise in Production
 
-A certified threshold is a promise about documents that look like the calibration data.
-Production is where that stops being true.
-New borrowers arrive, templates change, a provider updates the extraction model behind the same API name, and a market downturn changes what "normal" values look like.
-Keeping the promise is mostly about noticing when its assumptions break, and reacting in a way that fails closed.
+A certified threshold promises something about documents that look like the calibration data.
+Production is where that stops being true: new borrowers, changed templates, a provider updating the model behind the same API, a market shift.
+Keeping the promise means noticing when its assumptions break, and reacting by failing closed.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-24/14-automation-levels.drawio.svg" alt="Four automation levels in a row. Level 0, shadow: the model runs and people do all the work while labels are collected. Level 1, assist: every value is reviewed, tier-1 values blind, and the scorer is trained and calibrated. Level 2, partial: values above a certified threshold are auto-approved while random audits and canaries run. Level 3, straight-through: a document flows through when every tier-1 value is auto-approved, with daily audits. Green promotion arrows require enough labels per tier and segment, a threshold certified on held-out data with sign-off, and audits that confirm the rate for several weeks. Red demotion arrows are triggered by a drop in extraction quality, a drift alarm, an audit failure or rising canary misses, and a tier-1 audit failure or a coverage jump. A new model, prompt, template, or scorer version sends the system back to level 1 until thresholds are certified again, and a stop button lets anyone accountable send everything to people from any level." width="100%" style="border: 1px solid #808080;">
   <figcaption class="stroke">
-    Figure 14. Automation levels: earned slowly, lost fast. Promotion needs evidence and a sign-off; demotion is automatic. Any change to the extraction model, prompt, template, or scorer expires the certificate, and a stop button can send everything to people at any time.
+    Figure 14. Automation levels are earned slowly and lost fast: promotion needs evidence and sign-off, demotion is automatic, and a stop button can send everything to people at any time.
   </figcaption>
 </figure>
 
 ## Automation Is a Level, Not a Switch
 
-I find it useful to manage automation as a small state machine, like Figure 14, rather than as a switch that is on or off.
-A new pipeline starts in *shadow* mode: the model runs, people do all the work, and the system collects labels.
-In *assist* mode, the model pre-fills and every value is reviewed (tier-1 values blind); this is where the scorer and calibrator are trained.
-*Partial* automation starts only when a threshold has been certified on held-out data and someone accountable has signed off.
-*Straight-through* processing of whole documents comes last, after audits have confirmed the error rate for long enough to trust it.
+I manage automation as a state machine: *shadow* (model runs, people do all the work, labels collected), *assist* (model pre-fills, every value reviewed, tier-1 blind), *partial* (starts once a threshold is certified and someone accountable signs off), and *straight-through* (last, after audits confirm the error rate long enough to trust it).
+Moving up requires evidence, a person, and time; moving down is automatic and immediate — that's failing closed at the system level.
 
-The asymmetry is the point.
-Moving up a level requires evidence, a person, and time.
-Moving down is automatic, immediate, and needs nobody's permission.
-That is what failing closed looks like at the level of the whole system.
-
-## The Certificate Belongs to a Version
-
-The threshold was certified for a specific scorer, a specific calibrator, a specific extraction model, and a specific prompt, on a specific population of documents.
-Change any of them and the certificate expires.
-This sounds pedantic until a provider ships a "minor" model update that changes how the model formats negative numbers, and your sign rules start firing on half the values.
-
-So treat the bundle (extraction model and prompt versions, scorer, calibrator, thresholds) as one versioned artifact.
-A new bundle runs in *shadow* next to the current one, on the same documents, and goes through certification on fresh labels before it makes a single decision.
-The comparison is also informative: if the new bundle auto-approves very different values than the old one at a similar coverage, you want to know why before switching.
+A threshold is certified for a specific scorer, calibrator, extraction model, prompt, and document population; change any of them and the certificate expires, so the whole bundle is versioned: a new bundle runs in shadow next to the current one and is recertified on fresh labels before deciding anything.
 
 ## What to Monitor
 
-These are the monitors I'd put on the first dashboard, roughly in order of how early they warn you:
+Roughly in order of how early they warn you: **signal availability** (did a provider silently drop log-probabilities?), **score distribution** (vs. calibration data, per tier), **coverage** (a drop costs money; a jump is a bigger worry), **reasons mix** (a new top reason usually means a broken component), **audited WAR with its bound**, **canary catch rate**, and **override rate** (near-zero may mean miscalibration).
 
-- **Signal availability.** The share of values with each signal present. If log-probabilities suddenly go missing after a provider update, or the cross-read starts timing out, the policy fails closed, but you want to know before the review queue explodes.
-- **Score distribution.** Compare this week's distribution of calibrated probabilities with the calibration data, per tier and segment. A shift doesn't prove the calibration is broken, but it says the population has moved. Methods for detecting such dataset shift are well studied, and simple two-sample tests on the scores go a long way.
-- **Coverage.** A drop in coverage costs money. A *jump* in coverage without a release is more worrying: the documents got easier, or a signal got stuck on "everything is fine." Treat an unexplained rise as an alarm, not as good news.
-- **Reasons mix.** The distribution of review reasons. A new top reason ("missing signal: grounding") usually points to a broken component, not to harder documents.
-- **Audited WAR, with its bound.** Per tier and segment, the observed error rate in random audits *and* its upper bound. Alert on the bound crossing the target, not on a single bad week.
-- **Canary catch rate.** Per reviewer and per queue. If it falls, the labels coming out of review are suspect.
-- **Override rate.** How often reviewers change the value, per reason. A reason with a near-zero override rate is sending reviewers values that are almost always right; it may be miscalibrated, or the threshold for that segment may be too strict.
-
-## Should the Threshold Adapt by Itself?
-
-There is an elegant line of research on thresholds that adjust online.
-*Adaptive conformal inference* nudges the threshold after each observed outcome so that the long-run error rate stays on target even when the data distribution shifts.[^23]
-It is a beautiful idea, and I'd use it as an *early warning*: if the adaptive threshold drifts away from the certified one, something has changed.
-
-I wouldn't let it move the production threshold on its own.
-In a bank, a threshold is a documented risk decision with a certificate, a validator, and an owner.
-A threshold that silently retunes itself every day is a different kind of object, and it would need a different kind of governance.
-The state machine in Figure 14 gives the same protection with less novelty: when the evidence says the promise is at risk, the system drops a level and people take over until a new certificate exists.
+*Adaptive conformal inference* can nudge a threshold after each outcome to keep the long-run error rate on target as data shifts.[^23]
+I'd use it as an *early warning* rather than to move the production threshold itself: that's a documented risk decision with an owner, and the state machine above gives the same protection without the novelty.
 
 # What the Layer Costs
 
-A confidence layer is not free, and it is better to put the bill on the table before the first steering meeting than after.
-These are the line items I'd budget for:
+Budget for: **model calls** (the blind cross-read roughly doubles calls for values it covers); **labels** (thousands per tier, collected from day one in shadow mode); **audits** (roughly 3,000 blind re-keyed values per tier and period for "below 0.1%"); **reviewers** (sized for the peak); and **engineering** (versioned bundles, shadow deployments, a blind-mode review interface, and the monitors above).
 
-- **Model calls.** The blind cross-read is the most expensive signal: it roughly doubles the model calls for the values it covers. If that's too much, run it on tier-1 values only and accept lower coverage elsewhere. Self-consistency multiplies calls further, which is one more reason to be selective about it for extraction.
-- **Labels for calibration and certification.** The certificate needs thousands of labeled values per tier, and per segment if segments matter on their own. In the simulation, 6,000 labeled scanned values per tier were not enough for a single certificate. Labeling is the long pole, so start collecting in shadow mode, on day one.
-- **Audits.** Roughly 3,000 blind re-keyed values per tier and period for a claim of "below 0.1%," as in Figure 13. That's a standing cost, not a project cost.
-- **Reviewers.** The queue from the routing section, sized for the peak with Little's law, plus the time spent on canaries.
-- **Engineering.** Versioned bundles, shadow deployments, a review interface with blind mode, and the monitors from the previous section. None of it is hard, but all of it has to exist before the first auto-approval.
-
-Against that, put the savings.
-In the simulation, the layer auto-approves 81% of values with every tier inside its error target, and Figure 9 shows total costs falling to between 31% and 91% of full review, depending on what an error costs.
-The other benefit is harder to price, and I'd argue it matters more: for the first time, the bank can state an error rate for its automated data with a confidence level attached, and back it with evidence.
-That's what turns an AI pilot into a system a risk function can sign off.
+In the simulation, the layer auto-approves 81% of values with every tier inside target, and total costs fall to between 31% and 91% of full review depending on what an error costs.
+The harder-to-price benefit: the bank can state an error rate for its automated data with a confidence level attached, and back it with evidence.
 
 # What Supervisors Will Ask
 
-A confidence layer is, among other things, a very good answer to the questions a supervisor or a model validator will ask about an AI system that reads documents.
-Three frameworks are worth knowing.
-(As usual, this is an engineer's reading of them, not legal advice.)
+A confidence layer is a good answer to what a supervisor or model validator will ask about an AI system that reads documents (an engineer's reading, not legal advice).
 
-**The EU AI Act.**
-Article 14 requires high-risk AI systems to be designed so that people can oversee them effectively.
-Among other things, the people assigned to oversight must be able to understand the system's capacities and limitations, stay aware of automation bias, interpret its output correctly, decide not to use it or override it, and stop it.[^19]
-Article 15 requires that the system's levels of accuracy, and the metrics used to measure them, be declared in its instructions for use.[^24]
-A certified wrong auto-approval rate per tier, with its confidence level and the period it was measured on, is exactly such a metric.
+**The EU AI Act** requires, in Article 14, that high-risk systems let people oversee them effectively and stay aware of automation bias;[^19] Article 15 requires declaring accuracy levels and the metrics used to measure them,[^24] a certified wrong auto-approval rate per tier being exactly such a metric.
+Covenant monitoring for corporate borrowers is generally not on Annex III's high-risk list,[^25] but an extraction step feeding a creditworthiness assessment may well be in scope from 2 December 2027, after the Digital Omnibus.
 
-Is document extraction high-risk under the Act?
-The list in Annex III includes AI systems used to evaluate the creditworthiness of natural persons.[^25]
-Covenant monitoring for corporate borrowers is generally not on it.
-An extraction step that feeds a creditworthiness assessment of a person (income from payslips for a mortgage, for example) may well be part of a system that is.
-After the Digital Omnibus on AI, the obligations for these stand-alone high-risk systems apply from 2 December 2027.
-Even where the Act doesn't apply, I find Article 14 a good design specification for any human-in-the-loop system.
+**BCBS 239**'s principles on risk data require accuracy and reliability achieved on a *largely automated* basis;[^26] a confidence layer is how you automate without losing the ability to show the automated part is accurate.
 
-**BCBS 239.**
-The Basel principles for risk data, which I cited in the last post for lineage, have a principle on accuracy and integrity: risk data should be accurate and reliable, and aggregated on a largely automated basis to minimize the probability of errors.[^26]
-Note the tension in that sentence.
-Automation is expected, *because* it reduces errors.
-A confidence layer is how you automate without giving up the ability to show that the automated part is accurate.
-
-**Model risk management.**
-In the last post, I cited the Federal Reserve's SR 11-7.
-In April 2026, it was superseded by SR 26-2, issued jointly by the US banking agencies.[^27]
-Two details of the new guidance are directly relevant.
-First, it says explicitly that generative and agentic AI models are novel and rapidly evolving, and are therefore not within its scope.
-Second, it defines a model as a complex quantitative method that applies statistical, economic, or financial theory to turn input data into quantitative estimates.
-
-Put those together and you get a nice irony.
-The LLM that reads the documents may sit outside the guidance.
-The confidence scorer, a gradient-boosted classifier that estimates the probability that a value is correct, fits the definition of a model squarely.
-The component that decides when to trust the AI is the one that looks most like a classic bank model, and it should be validated like one: conceptual soundness (monotone constraints help), ongoing monitoring, and outcomes analysis (the random audits).
-SR 26-2 is US guidance, but European banks' model risk practices share the same vocabulary, and a validator anywhere will ask the same questions.
+**Model risk management**: the Federal Reserve's SR 11-7 was superseded in April 2026 by SR 26-2.[^27]
+It excludes generative and agentic AI as novel, but defines a model as a method applying statistical theory to turn data into quantitative estimates — the confidence scorer fits that definition squarely, and should be validated like a classic bank model: conceptual soundness, ongoing monitoring, and outcomes analysis via random audits.
 
 Here is how the pieces of this post map to what these frameworks ask for:
 
@@ -1066,12 +576,10 @@ Before letting a confidence layer approve anything on its own, check it against 
 
 # Conclusion
 
-LLMs made reading financial documents cheap.
-They did not make *trusting* what they read any cheaper, and the instinct to fix that with a better model or a cleverer prompt misses where the problem lives.
-A system that cannot say "I don't know" has to be checked every time it says anything, so all the value of automation hides in the values you can safely skip.
-Finding those values is a measurement problem, and it has a well-understood toolbox: signals, a scorer, calibration, certified thresholds, and humans in a loop that is designed rather than assumed.
+LLMs made reading financial documents cheap, not trusting what they read, and the instinct to fix that with a better model or cleverer prompt misses where the problem lives.
+A system that cannot say "I don't know" has to be checked every time it says anything, so all the value of automation hides in the values you can safely skip — a measurement problem with a well-understood toolbox: signals, a scorer, calibration, certified thresholds, and humans in a loop that is designed rather than assumed.
 
-Here are the 5 core lessons from this post:
+Five core lessons:
 
 1. **Rank before you threshold.** A model that knows when it is wrong beats a more accurate one that doesn't. Measure coverage at your target risk, not accuracy.
 2. **Never trust a single signal, least of all the model's own opinion.** Combine evidence that fails in different places: a second reader, grounding, layout, accounting rules, and history.
@@ -1079,8 +587,7 @@ Here are the 5 core lessons from this post:
 4. **Design the "I don't know" path.** Reasons on screen, blind review where it matters, canaries to measure the reviewers, and a reject button for pages nobody can read.
 5. **Measure with random audits, and fail closed.** Only random audits tell you the error rate of what you automated. When the evidence weakens, automation should step down by itself.
 
-The best junior analysts learn early that "I'm not sure about this one" is not an admission of weakness.
-It's what makes everything else they say worth trusting.
+The best junior analysts learn early that "I'm not sure about this one" is not an admission of weakness; it's what makes everything else they say worth trusting.
 Our systems should learn the same thing.
 
 # Footnotes
