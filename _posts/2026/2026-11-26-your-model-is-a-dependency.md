@@ -39,7 +39,7 @@ It is the strangest one we have adopted (no source code, no semantic versioning,
 </aside>
 
 The running example is the covenant pipeline from [my post on reading financial documents](/blog/reading-financial-documents-with-ai), which extracts values like EBITDA and net debt from borrowers' quarterly reports.
-I'll cover what such a pipeline really depends on, six habits from the software supply chain (pin, test, inventory, debloat, verify, and exit) with code you can adapt, and why banks should adopt them now.
+I'll cover what such a pipeline really depends on, six habits from the software supply chain (pin, test, inventory, debloat, verify, and exit) with code you can adapt, and why financial institutions should adopt them ASAP.
 
 <figure class="jb_picture">
   {% responsive_image width: "100%" border: "0px solid #808080" path: img/posts/2026/2026-11-26/rail-network-map.jpg alt: "Detail of the Stockholm rail network map, with metro, commuter rail, and light rail lines converging on T-Centralen" %}
@@ -52,7 +52,7 @@ I'll cover what such a pipeline really depends on, six habits from the software 
 
 On paper, the covenant pipeline has one dependency: "the model."
 Figure 1 shows the real graph.
-As in any package manager, there are **direct** dependencies, which you choose and can pin, and **transitive** ones, which arrive with them.
+As in any package manager, there are *direct* dependencies, which you choose and can pin, and *transitive* ones, which arrive with them.
 
 <figure class="jb_picture">
   <img src="/img/posts/2026/2026-11-26/01-dependency-closure.drawio.svg" alt="Dependency graph of an LLM application. Direct dependencies (prompt and output schema, agent tools, retrieval index, LLM) can be pinned. Transitive ones (embedding model, serving stack, weights and training data, region and jurisdiction) arrive with them, each with a documented failure mode." width="100%" style="border: 1px solid #808080;">
