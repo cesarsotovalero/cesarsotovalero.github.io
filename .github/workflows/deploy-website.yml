@@ -59,7 +59,7 @@ jobs:
 
       - name: Restore cached system packages
         id: apt-cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/apt-debs
           key: apt-debs-${{ steps.runner-image.outputs.id }}-libmagickwand-dev-minify-v2
